@@ -1,0 +1,102 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-02-17",
+ "id": "g55-51818",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51818",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45117"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes January 20, 2026, Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens? Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 260217-007)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA: (Explanatory documents include a resolution.) A. Roger Joiner v. City & County of San Francisco, Superior Ct. Case No. CGC-24- 612168 filed 2/6/2024 for $27,500. Lawsuit involving allegations that SFMTA violated fair employment laws resulting in economic damages. B. Anderson, Sweeney, et al v. CCSF, US District Court Case No. 3:20-cv-01149, filed 2/13/2020 to authorize $190,000 of a $2,000,000 class action fund approved by the MTA Board on November 18, 2025 to resolve the individual settlement with SFMTA employee Devon Anderson for general damages and backpay. Lawsuit involving allegations that the city discriminated in violation of the Uniformed Services Employment and Reemployment Rights Act and the California Military and Veterans Code, and violated the City’s Annual Salary Ordinance. The settlement includes the opportunity for members of the class to purchase service credit for military leave and would authorize the City Attorney’s Office to use the funds to resolve individual and class claims. RESOLUTION No. 260217-007",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260217-007)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving Tow-Away No Stopping zones and a new transit boarding island on Evans Avenue between Rankin Street and Quint Street to modify the interim travel- lane changes and bikeways implemented as part of the Evans Avenue Quick-Build Project in 2022, following removal of temporary construction staging for the completed San Francisco Public Utilities Commission (SFPUC) Headworks facility",
+   "text": "Approving Tow-Away No Stopping zones and a new transit boarding island on Evans Avenue between Rankin Street and Quint Street to modify the interim travel- lane changes and bikeways implemented as part of the Evans Avenue Quick-Build Project in 2022, following removal of temporary construction staging for the completed San Francisco Public Utilities Commission (SFPUC) Headworks facility: (Explanatory documents include a staff report and resolution.) A. ESTABLISH – TOW-AWAY NOT STOPPING ANYTIME i. Evans Avenue, south side, from Rankin Street to 193 feet easterly ii. Evans Avenue, south side, from 483 feet to 678 feet east of Rankin 4 iii. Evans Avenue, north side, from 40 feet to 220 feet west of Rankin Street B. RESCIND – BUS POLE STOP i. Evans Avenue, south side, west of Quint Street C. ESTABLISH – TRANSIT BOARDING ISLAND i. Evans Avenue, south side, 578 feet to 628 feet east of Rankin Street RESOLUTION No. 260217-008",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260217-008)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director of Transportation to execute Grant No. 2025-11 with the Roberts Foundation to accept and expend a $50,000 workforce development planning grant from the Foundation's IGNITE Fund to support the SFMTA Youth Career Pathways into the Trades program, which includes a mutual indemnification clause, as a condition of funding.",
+   "text": "Authorizing the Director of Transportation to execute Grant No. 2025-11 with the Roberts Foundation to accept and expend a $50,000 workforce development planning grant from the Foundation's IGNITE Fund to support the SFMTA Youth Career Pathways into the Trades program, which includes a mutual indemnification clause, as a condition of funding. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260217-009 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260217-009)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding a Fiscal Year 2027 – Fiscal Year 2031 Capital Improvement Program Update"
+  },
+  {
+   "no": "12",
+   "title": "Authorizing the Director of Transportation to execute the Fourth Amendment to SFMTA Contract No. 2018-48 with Universal Protection Service, LP",
+   "decision": "ADOPTED — 7 ayes (Resolution 260217-010)"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote to whether to go into Closed Session",
+   "decision": "ADOPTED — 7 ayes (Resolution 260217-011)"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session CLOSED SESSION"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

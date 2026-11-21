@@ -1,0 +1,3216 @@
+{
+ "generated": "2026-11-11",
+ "since": "2010-01-01",
+ "windows": {
+  "engineering order": "since 2010-01-01",
+  "SFMTA Board": "since 2010-01-01",
+  "Board of Supervisors": "2019\u20132026",
+  "SFPUC Commission": "2021-01-26 to 2026-10-13",
+  "SFMTA engineering hearing (every item, by name)": "2019-08-16 to 2026-10-30",
+  "SFMTA Board of Directors (every item, by name)": "2019-01-15 to 2026-10-29",
+  "Board of Supervisors (every item, by name)": "2019-01-07 to 2026-11-12",
+  "SFPUC Commission (every item, by name)": "2019-01-22 to 2026-11-10",
+  "Public Works Commission (every item, by name)": "2022-07-28 to 2026-10-22",
+  "SFCTA Board (every item, by name)": "2019-01-29 to 2026-11-10",
+  "Recreation and Park Commission (every item, by name)": "2019-01-17 to 2026-10-15"
+ },
+ "means": {
+  "concerns a street this project will open": "concerns a street this project will open",
+  "the Board of Supervisors has legislated on this street": "the Board of Supervisors has legislated on this street"
+ },
+ "grades": {
+  "exact": "the record names the project in words",
+  "strong": "the record names a program and this project's street, and the project is that program's by name",
+  "probable": "a contract award on the project's streets for its kind of work, in its dates"
+ },
+ "counts": {
+  "records": 633,
+  "unmatched": 124,
+  "jobsWithRecord": 79
+ },
+ "byDotmapsId": {
+  "13175": [
+   {
+    "date": "2024-10-17",
+    "kind": "pwc",
+    "item": "5",
+    "title": "13th Street Safety Improvement Project \u2013 Contract Award Staff Recommendation: Award 13th Street Safety Improvement Project, Sourcing Event ID No. 0000007339, to NTK Construction, Inc in the amount of ",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "13th St Safety Improvement Project",
+     "named as \u201c13th st safety improvement project\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8179": [
+   {
+    "date": "2024-11-12",
+    "kind": "sfpuc",
+    "item": "7a",
+    "title": "Award Contract No. WW-729, Various Locations Sewer Replacement No. 17, to the responsible bidder that submitted the lowest responsive bid, J. Flores Construction Company, Inc",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=47629",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 17",
+     "named as \u201cww729\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "8136": [
+   {
+    "date": "2024-12-10",
+    "kind": "sfpuc",
+    "item": "7c",
+    "title": "Award Contract No. WD-2875, 8-Inch and 12-Inch Ductile Iron Water Main and Sewer Replacement on Grand View Avenue from Clipper Street to Romain Street, and Various Area Streets, to the responsible bid",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/12.10.2024_M.pdf",
+    "decision": "approve Consent Calendar Items 7a through 7g",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Hoffman Avenue Sewer Replacement (JV w PUC WD-2875)",
+     "named as \u201cwd2875\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "31562": [
+   {
+    "date": "2026-02-18",
+    "kind": "pwdelegated",
+    "item": "1000032343",
+    "title": "Various Locations Pavement Renovation No.68: Extend contract duration by 50 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/Feb%2026%2C%202026/Item%202_PWC%20Delegated%20Contract%20Approvals%202-18-26.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 68",
+     "named as \u201cvarious locations pavement renovation no 68\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2024-03-11",
+    "kind": "pwc",
+    "item": "6",
+    "title": "Various Locations Pavement Renovation No. 68 - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45620",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 68",
+     "named as \u201cvarious locations pavement renovation no 68\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8138": [
+   {
+    "date": "2025-06-24",
+    "kind": "sfpuc",
+    "item": "7b",
+    "title": "Award Contract No. WW-730, Various Locations Sewer Replacement No. 18 to A. Ruiz Construction Co. & Associates, Inc., in the amount of $7,745,522 and with a duration of 480 consecutive calendar days (",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/6.24.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 18",
+     "named as \u201cww730\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "31716": [
+   {
+    "date": "2025-09-09",
+    "kind": "sfpuc",
+    "item": "6b",
+    "title": "Award Contract No. WW-790, Evans Ave. and Mariposa St. Outfalls Improvements, to the responsible bidder that submitted the lowest responsive bid, Pullman SST, Inc., in the amount of $2,576,348, with a",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/9.9.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "probable",
+    "matchedOn": [
+     "evans ave",
+     "mariposa st",
+     "an award for sewer and water work"
+    ],
+    "means": "the SFPUC Commission awarded a contract for this kind of work on this project's streets, in its dates"
+   }
+  ],
+  "9116": [
+   {
+    "date": "2026-04-28",
+    "kind": "sfpuc",
+    "item": "7c",
+    "title": "Award Contract No. WD-2920, Water Main and Sewer Replacement on Moraga, Noriega, and Ortega Streets from 8th to 11th Avenue and Various Side Streets, to the responsible bidder that submitted the lowes",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/4.28.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "WD-2920: 8-inch Ductile Iron Water Main Replacement on Moraga, Noriega, and Ortega Streets from 11th to 7th Ave. and Various Side Streets",
+     "named as \u201cwd2920\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "11711": [
+   {
+    "date": "2025-09-23",
+    "kind": "sfpuc",
+    "item": "6c",
+    "title": "Award Contract No. WW-793, Brannan Street Outfall Improvements, to the responsible bidder that submitted the lowest responsive bid, R&S Construction Management, Inc., in the contract amount of $3,318,",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/9.23.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Brannan Street Outfall Improvements",
+     "named as \u201cbrannan st outfall improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "22687": [
+   {
+    "date": "2025-04-01",
+    "kind": "board",
+    "item": "11",
+    "title": "Approving the Oak Street Quick-Build Project to improve transportation safety and connectivity, including the establishment of a new Class IV separated bikeway on Oak Street between Stanyan and Baker ",
+    "url": "https://www.sfmta.com/node/43617",
+    "decision": "ADOPTED \u2014 7 ayes (Resolution 250401-029)",
+    "grade": "exact",
+    "matchedOn": [
+     "Oak Street Quick-Build Project",
+     "named as \u201coak st quick build project\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "63617": [
+   {
+    "date": "2026-02-24",
+    "kind": "sfpuc",
+    "item": "6d",
+    "title": "Approve an increase of 389 calendar days (approximately one year and one month) to the duration contingency for Contract No. WW-543, Southeast Water Pollution Control Plant HVAC and Mechanical Upgrade",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/2.24.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Southeast Plant HVAC and Mechanical Upgrades",
+     "named as \u201cww543\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "54815": [
+   {
+    "date": "2026-07-10",
+    "kind": "pwdelegated",
+    "item": "1000034522",
+    "title": "Transit U Improvements Project: Extend contract duration by 360 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/July%2023%2C%202026/Item%203_PWC%20Delegated%20Contracts%20Report%202026-7-10.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Transit U Improvement Project",
+     "named as \u201ctransit u improvements project\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2024-10-17",
+    "kind": "pwc",
+    "item": "4b",
+    "title": "Transit U Improvement Project \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Transit U Improvement Project",
+     "named as \u201ctransit u improvement project\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "23957": [
+   {
+    "date": "2026-10-22",
+    "kind": "pwdelegated",
+    "item": "1000034721",
+    "title": "Various Locations Pavement Renovation No.71A & Sewer Replacement: Extend contract duration by 140 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/Oct%2022%202026/Item%203_PW%20Delegated%20Approvals%20Report%202026-10-22%20r.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 71A",
+     "named as \u201cvarious locations pavement renovation no 71a\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2024-10-28",
+    "kind": "pwc",
+    "item": "6",
+    "title": "Various Locations Pavement Renovation No. 71A and Sewer Replacement Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47447",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 71A",
+     "named as \u201cvarious locations pavement renovation no 71a\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8066": [
+   {
+    "date": "2026-10-15",
+    "kind": "recpark",
+    "item": "8",
+    "title": "BUCHANAN STREET MALL - CONTRACT AMENDMENT",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53359",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2026-09-17",
+    "kind": "recpark",
+    "item": "5K",
+    "title": "BUCHANAN STREET MALL RENOVATION PROJECT - CONTRACT AMENDMENT",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53175",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2026-03-19",
+    "kind": "recpark",
+    "item": "9",
+    "title": "BUCHANAN STREET MALL MEMORY WALK - PHASE 1 ART CONCEPT DESIGN",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52036",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2025-02-20",
+    "kind": "recpark",
+    "item": "5H",
+    "title": "BUCHANAN STREET MALL RENOVATION PROJECT - MOU WITH SFPUC",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=48758",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2024-12-19",
+    "kind": "recpark",
+    "item": "10",
+    "title": "BUCHANAN STREET MALL RENOVATION PROJECT \u2013 CONTRACT AWARD",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=48175",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2024-09-03",
+    "kind": "supervisors",
+    "item": "240642",
+    "title": "Resolution retroactively authorizing the Recreation and Park Department to accept and expend up to $8,124,800 in grant funding from the National Park Service through the California Department of Parks",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6717182&GUID=7A9CBACE-AF47-4A9C-8C77-54B7DF2150BD&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2024-07-31",
+    "kind": "supervisors",
+    "item": "240642",
+    "title": "Resolution retroactively authorizing the Recreation and Park Department to accept and expend up to $8,124,800 in grant funding from the National Park Service through the California Department of Parks",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6717182&GUID=7A9CBACE-AF47-4A9C-8C77-54B7DF2150BD&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2024-06-04",
+    "kind": "supervisors",
+    "item": "240642",
+    "title": "Resolution retroactively authorizing the Recreation and Park Department to accept and expend up to $8,124,800 in grant funding from the National Park Service through the California Department of Parks",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6717182&GUID=7A9CBACE-AF47-4A9C-8C77-54B7DF2150BD&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2023-09-21",
+    "kind": "recpark",
+    "item": "10",
+    "title": "BUCHANAN STREET MALL \u2013 MEMORY WALK STATUS UPDATE",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=44508",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2021-12-16",
+    "kind": "recpark",
+    "item": "5f",
+    "title": "BUCHANAN STREET MALL AND INDIA BASIN PROJECTS \u2013 SPECIFIED GRANT ACCEPT AND EXPEND",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=40120",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2021-06-17",
+    "kind": "recpark",
+    "item": "5C",
+    "title": "BUCHANAN STREET MALL \u2013 GRANT AGREEEMENT AND ACCEPT AND EXPEND",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38812",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2021-04-15",
+    "kind": "recpark",
+    "item": "5f",
+    "title": "BUCHANAN STREET MALL PARK IMPROVEMENTS PROJECT \u2013 GRANT APPLICATION, ACCEPT AND",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38264",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2020-10-30",
+    "kind": "hearing",
+    "item": "11",
+    "title": "ESTABLISH - TOW-AWAY NO STOPPING ANYTIME ESTABLISH - SIDEWALK EXTENSION (6 FEET) Golden Gate Avenue, north and south sides, from 25 feet west of Buchanan Street to 20 feet east of Buchanan Street (tot",
+    "url": "https://www.sfmta.com/media/24382/download?inline",
+    "decision": "Approved by the City Traffic Engineer to forward to the SFMTA Board for approval and implementation. Environmental clearance has been issued.",
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2020-04-16",
+    "kind": "recpark",
+    "item": "5F",
+    "title": "BUCHANAN STREET MALL \u2013 CONCEPTUAL DESIGN",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=35610",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2019-11-21",
+    "kind": "recpark",
+    "item": "9",
+    "title": "BUCHANAN STREET MALL \u2013 CONCEPT DESIGN",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34576",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2019-02-21",
+    "kind": "recpark",
+    "item": "5D",
+    "title": "BUCHANAN STREET MALL - TRUST FOR PUBLIC LAND GRANT ACCEPTANCE AND AGREEMENT",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=32476",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   }
+  ],
+  "31138": [
+   {
+    "date": "2026-01-08",
+    "kind": "pwc",
+    "item": "4c",
+    "title": "Various Locations Pavement Renovation No. 85 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51491",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement (JV VL PR No 85)",
+     "named as \u201cvarious locations pavement renovation no 85\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "31772": [
+   {
+    "date": "2026-01-08",
+    "kind": "pwc",
+    "item": "4c",
+    "title": "Various Locations Pavement Renovation No. 85 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51491",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 85",
+     "named as \u201cvarious locations pavement renovation no 85\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8112": [
+   {
+    "date": "2025-05-13",
+    "kind": "sfpuc",
+    "item": "7e",
+    "title": "Award Contract No. WW-727R, Various Locations Sewer Replacement No. 16, to the responsible bidder that submitted the lowest responsive bid, Michael O'Shaughnessy Construction, Inc., in the amount of $",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/5.13.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 16",
+     "named as \u201cww727r\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2025-02-25",
+    "kind": "sfpuc",
+    "item": "7b",
+    "title": "Award Contract No. WW-727, Various Locations Sewer Replacement No. 16, to the responsible bidder that submitted the lowest responsive bid, Precision Engineering, Inc., in the amount of $8,702,449 and ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/2.25.2025_M.pdf",
+    "decision": "approve Consent Calendar Item Nos. 7a and 7c",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 16",
+     "named as \u201cvarious locations sewer replacement no 16\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "31770": [
+   {
+    "date": "2025-05-13",
+    "kind": "sfpuc",
+    "item": "7e",
+    "title": "Award Contract No. WW-727R, Various Locations Sewer Replacement No. 16, to the responsible bidder that submitted the lowest responsive bid, Michael O'Shaughnessy Construction, Inc., in the amount of $",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/5.13.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - Sewer Lead - Various Locations Sewer Replacement No 16 (WW-727)",
+     "named as \u201cvarious locations sewer replacement no 16\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2025-02-25",
+    "kind": "sfpuc",
+    "item": "7b",
+    "title": "Award Contract No. WW-727, Various Locations Sewer Replacement No. 16, to the responsible bidder that submitted the lowest responsive bid, Precision Engineering, Inc., in the amount of $8,702,449 and ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/2.25.2025_M.pdf",
+    "decision": "approve Consent Calendar Item Nos. 7a and 7c",
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - Sewer Lead - Various Locations Sewer Replacement No 16 (WW-727)",
+     "named as \u201cww727\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "15063": [
+   {
+    "date": "2025-05-13",
+    "kind": "sfpuc",
+    "item": "7d",
+    "title": "Award Contract No. WW-757R, Laguna, Howard, and Mission Creek Combined Sewer Discharge Improvements, to the responsible bidder that submitted the lowest responsive bid, Pullman SST, Inc., in the amoun",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/5.13.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "probable",
+    "matchedOn": [
+     "howard st",
+     "laguna st",
+     "an award for sewer and water work"
+    ],
+    "means": "the SFPUC Commission awarded a contract for this kind of work on this project's streets, in its dates"
+   }
+  ],
+  "25813": [
+   {
+    "date": "2026-05-01",
+    "kind": "pwdelegated",
+    "item": "1000034722",
+    "title": "8th St., Clay St., and Leavenworth St. Pavement Renovation and Sewer Replacement: Extend contract duration by 185 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%2014%202026/Item%204_PWC%20Delegated%20Contract%20Approvals%202026-5-1.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "8th, Beale, Clay, Leavenworth and Main Streets Sewer Replacement (JV w 8th St, Clay St and Leavenworth St Pavement Renovation)",
+     "named as \u201c8th st clay st and leavenworth st pavement renovation\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2026-04-09",
+    "kind": "pwc",
+    "item": "4j",
+    "title": "8th Street, Clay Street, and Leavenworth Street Pavement Renovation and Sewer Replacement - Contract Modification",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52156",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "8th, Beale, Clay, Leavenworth and Main Streets Sewer Replacement (JV w 8th St, Clay St and Leavenworth St Pavement Renovation)",
+     "named as \u201c8th st clay st and leavenworth st pavement renovation\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   },
+   {
+    "date": "2024-10-28",
+    "kind": "pwc",
+    "item": "8",
+    "title": "8th Street, Clay Street, and Leavenworth Street Pavement Renovation and Sewer Replacement - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47447",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "8th, Beale, Clay, Leavenworth and Main Streets Sewer Replacement (JV w 8th St, Clay St and Leavenworth St Pavement Renovation)",
+     "named as \u201c8th st clay st and leavenworth st pavement renovation\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "25819": [
+   {
+    "date": "2026-05-01",
+    "kind": "pwdelegated",
+    "item": "1000034722",
+    "title": "8th St., Clay St., and Leavenworth St. Pavement Renovation and Sewer Replacement: Extend contract duration by 185 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%2014%202026/Item%204_PWC%20Delegated%20Contract%20Approvals%202026-5-1.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
+     "named as \u201c8th st clay st and leavenworth st pavement renovation and sewer replacement\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2026-04-09",
+    "kind": "pwc",
+    "item": "4j",
+    "title": "8th Street, Clay Street, and Leavenworth Street Pavement Renovation and Sewer Replacement - Contract Modification",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52156",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
+     "named as \u201c8th st clay st and leavenworth st pavement renovation and sewer replacement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   },
+   {
+    "date": "2024-10-28",
+    "kind": "pwc",
+    "item": "8",
+    "title": "8th Street, Clay Street, and Leavenworth Street Pavement Renovation and Sewer Replacement - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47447",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
+     "named as \u201c8th st clay st and leavenworth st pavement renovation and sewer replacement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8188": [
+   {
+    "date": "2025-11-13",
+    "kind": "pwc",
+    "item": "4e",
+    "title": "Various Locations Pavement Renovation No. 80 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51133",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 80 and Sewer Replacement",
+     "named as \u201cvarious locations pavement renovation no 80 and sewer replacement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "10153": [
+   {
+    "date": "2026-10-08",
+    "kind": "pwc",
+    "item": "5c",
+    "title": "Powell Street Safety Project - Contract No. 1000033787 - Contract Modification",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53329",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "MTA Powell Street Safety Project",
+     "named as \u201cpowell st safety project\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   },
+   {
+    "date": "2026-04-01",
+    "kind": "pwdelegated",
+    "item": "1000033787",
+    "title": "Powell Street Safety Project: Extend contract duration by 200 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/April%209%202026/Item%202_PWC%20Delegated%20Contracts%20report%202026-4-1.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "MTA Powell Street Safety Project",
+     "named as \u201cpowell st safety project\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2024-07-22",
+    "kind": "pwc",
+    "item": "4g",
+    "title": "Powell Street Safety Project - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46601",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "MTA Powell Street Safety Project",
+     "named as \u201cpowell st safety project\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8113": [
+   {
+    "date": "2025-09-25",
+    "kind": "pwc",
+    "item": "4d",
+    "title": "Various Locations Pavement Renovation No. 81 and Sewer Replacement \u2013 Contract Award to Esquivel Grading & Paving, Inc in the amount of $5,083,488.31",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50818",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 81 and Sewer Replacement",
+     "named as \u201cvarious locations pavement renovation no 81 and sewer replacement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "52909": [
+   {
+    "date": "2024-12-03",
+    "kind": "supervisors",
+    "item": "241045",
+    "title": "Resolution authorizing the San Francsico Public Works to accept and expend an earmark grant of $500,000 from the 2023 California State Budget to fund the construction of the Havelock Pedestrian Bridge",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6904476&GUID=CB5692D4-B711-443E-9781-4CB14AF82852&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Havelock Pedestrian Bridge - Sidewalk Improvements",
+     "named as \u201chavelock pedestrian bridge\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2024-11-20",
+    "kind": "supervisors",
+    "item": "241045",
+    "title": "Resolution authorizing the San Francsico Public Works to accept and expend an earmark grant of $500,000 from the 2023 California State Budget to fund the construction of the Havelock Pedestrian Bridge",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6904476&GUID=CB5692D4-B711-443E-9781-4CB14AF82852&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Havelock Pedestrian Bridge - Sidewalk Improvements",
+     "named as \u201chavelock pedestrian bridge\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2024-10-22",
+    "kind": "supervisors",
+    "item": "241045",
+    "title": "Resolution authorizing the San Francsico Public Works to accept and expend an earmark grant of $500,000 from the 2023 California State Budget to fund the construction of the Havelock Pedestrian Bridge",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6904476&GUID=CB5692D4-B711-443E-9781-4CB14AF82852&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Havelock Pedestrian Bridge - Sidewalk Improvements",
+     "named as \u201chavelock pedestrian bridge\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   }
+  ],
+  "31417": [
+   {
+    "date": "2026-02-12",
+    "kind": "pwc",
+    "item": "4c",
+    "title": "Various Locations Curb Ramps No. 18 \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51787",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Curb Ramps No 18",
+     "named as \u201cvarious locations curb ramps no 18\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "7992": [
+   {
+    "date": "2026-07-14",
+    "kind": "sfpuc",
+    "item": "13",
+    "title": "Approve an increase of 545 calendar days to the existing duration contingency for Contract No. WW-709R",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.14.2026_M_0.pdf",
+    "decision": "approve Item 13",
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - Sewer Lead - Various Locations Sewer Replacement No 13 (WW-709)",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2025-06-10",
+    "kind": "sfpuc",
+    "item": "9",
+    "title": "Approve an increase of 365 calendar days to the duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc.",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/6.10.2025_M.pdf",
+    "decision": "approve Item 9",
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - Sewer Lead - Various Locations Sewer Replacement No 13 (WW-709)",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-06-25",
+    "kind": "sfpuc",
+    "item": "6g",
+    "title": "Approve an increase of 324 calendar days to the duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc., for a revised contract ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/June%2025%20Approved%20Minutes_1.pdf",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - Sewer Lead - Various Locations Sewer Replacement No 13 (WW-709)",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2022-10-11",
+    "kind": "sfpuc",
+    "item": "11b",
+    "title": "Contract No. WW-709R, Various Locations Sewer Replacement No. 13",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42215",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - Sewer Lead - Various Locations Sewer Replacement No 13 (WW-709)",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "8067": [
+   {
+    "date": "2026-07-14",
+    "kind": "sfpuc",
+    "item": "13",
+    "title": "Approve an increase of 545 calendar days to the existing duration contingency for Contract No. WW-709R",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.14.2026_M_0.pdf",
+    "decision": "approve Item 13",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 13",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2025-06-10",
+    "kind": "sfpuc",
+    "item": "9",
+    "title": "Approve an increase of 365 calendar days to the duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc.",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/6.10.2025_M.pdf",
+    "decision": "approve Item 9",
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 13",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-06-25",
+    "kind": "sfpuc",
+    "item": "6g",
+    "title": "Approve an increase of 324 calendar days to the duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc., for a revised contract ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/June%2025%20Approved%20Minutes_1.pdf",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 13",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2022-10-11",
+    "kind": "sfpuc",
+    "item": "11b",
+    "title": "Contract No. WW-709R, Various Locations Sewer Replacement No. 13",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42215",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement No 13",
+     "named as \u201cvarious locations sewer replacement no 13\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "8781": [
+   {
+    "date": "2026-02-24",
+    "kind": "sfpuc",
+    "item": "6c",
+    "title": "Award Contract No. WD-2923, 24-Inch Water Main Rehabilitation from University Mound Reservoir South to 3rd Street, to the responsible bidder that submitted the lowest responsive bid, Cratus, Inc., in ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/2.24.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "WD-2923 (formerly WD-2764): 24-inch Water Main Rehabilitation from University Mound Reservoir to 3rd St",
+     "named as \u201cwd2923\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "26063": [
+   {
+    "date": "2025-11-13",
+    "kind": "pwc",
+    "item": "4d",
+    "title": "Various Locations Pavement Renovation No. 78 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51133",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement (JV VL PR No 78)",
+     "named as \u201cvarious locations pavement renovation no 78\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "31525": [
+   {
+    "date": "2025-11-13",
+    "kind": "pwc",
+    "item": "4d",
+    "title": "Various Locations Pavement Renovation No. 78 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51133",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 78",
+     "named as \u201cvarious locations pavement renovation no 78\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "31771": [
+   {
+    "date": "2026-02-26",
+    "kind": "pwc",
+    "item": "4b",
+    "title": "Various Locations Pavement Renovation No. 77 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51884",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 77",
+     "named as \u201cvarious locations pavement renovation no 77\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "63610": [
+   {
+    "date": "2026-02-26",
+    "kind": "pwc",
+    "item": "4b",
+    "title": "Various Locations Pavement Renovation No. 77 and Sewer Replacement \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51884",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement (JV VL PR No 77)",
+     "named as \u201cvarious locations pavement renovation no 77\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "66036": [
+   {
+    "date": "2023-03-17",
+    "kind": "hearing",
+    "item": "14",
+    "title": "ESTABLISH \u2013 SPEED CUSHIONS A. Cayuga Avenue, between Santa Ynez Avenue and San Juan Avenue (1 3-lump speed cushion) B. Cayuga Avenue, between San Juan Avenue and Santa Rosa Avenue (2 3-lump speed cush",
+    "url": "https://www.sfmta.com/media/35278/download?inline",
+    "decision": null,
+    "grade": "strong",
+    "matchedOn": [
+     "1 shared block on cayuga ave"
+    ],
+    "means": "concerns a street this project will open"
+   }
+  ],
+  "28223": [
+   {
+    "date": "2024-03-05",
+    "kind": "board",
+    "item": "13",
+    "title": "Approving various parking and traffic modifications along the K Ingleside line on Ocean Avenue as part of the K Ingleside Rapid Project and amending Transportation Code",
+    "url": "https://www.sfmta.com/node/29927",
+    "decision": "ADOPTED \u2014 7 ayes (Resolution 240305-021)",
+    "grade": "exact",
+    "matchedOn": [
+     "PW - K Ingleside Rapid Project",
+     "named as \u201ck ingleside rapid\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "42259": [
+   {
+    "date": "2021-07-13",
+    "kind": "sfpuc",
+    "item": "12",
+    "title": "Authorize the General Manager to execute Memoranda of Understanding No-4453 and No-4454 with San Francisco Public Works (SFPW) for the San Francisco Public Utilities Commission\u2019s use of a portion of S",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2013%20Approved%20Minutes.pdf",
+    "decision": "approve Consent Calendar item 12",
+    "grade": "exact",
+    "matchedOn": [
+     "Kansas-Marin Streets Sewer Improvements",
+     "named as \u201ckansas and marin streets sewer improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "31440": [
+   {
+    "date": "2024-06-25",
+    "kind": "sfpuc",
+    "item": "10",
+    "title": "Award Contract No. WW-720, As-Needed Main Sewer Replacement No. 10, to the responsible bidder that submitted the lowest responsive bid, Mitchell Engineering",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/June%2025%20Approved%20Minutes_1.pdf",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW As Needed Main Sewer Replacement No 10",
+     "named as \u201cas needed main sewer replacement no 10\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "8141": [
+   {
+    "date": "2025-05-22",
+    "kind": "pwc",
+    "item": "5",
+    "title": "Various Locations Pavement Renovation No. 69 - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49978",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement (JV VL PR No 69)",
+     "named as \u201cvarious locations pavement renovation no 69\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8985": [
+   {
+    "date": "2026-04-09",
+    "kind": "pwc",
+    "item": "4c",
+    "title": "Various Locations Pavement Renovation No. 90 and Sewer Replacement",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52156",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 90",
+     "named as \u201cvarious locations pavement renovation no 90\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "25817": [
+   {
+    "date": "2025-05-22",
+    "kind": "pwc",
+    "item": "5",
+    "title": "Various Locations Pavement Renovation No. 69 - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49978",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 69",
+     "named as \u201cvarious locations pavement renovation no 69\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "28035": [
+   {
+    "date": "2026-04-09",
+    "kind": "pwc",
+    "item": "4c",
+    "title": "Various Locations Pavement Renovation No. 90 and Sewer Replacement",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52156",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement (JV VL PR No 90)",
+     "named as \u201cvarious locations pavement renovation no 90\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "27422": [
+   {
+    "date": "2026-07-28",
+    "kind": "sfpuc",
+    "item": "5a",
+    "title": "Award Contract No. WW-765, Various Locations Sewer Replacement No. 23, to the responsible bidder that submitted the lowest responsive bid, Michael O\u2019Shaughnessy Construction, Inc., in the amount of $2",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.28.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Sewer Replacement No 23",
+     "named as \u201cww765\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "31539": [
+   {
+    "date": "2026-06-18",
+    "kind": "pwc",
+    "item": "8e",
+    "title": "Japantown Buchanan Mall/Osaka Way Pedestrian Plaza Renovation - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52657",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Japantown Buchanan Mall",
+     "named as \u201cjapantown buchanan mall\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "22964": [
+   {
+    "date": "2024-03-05",
+    "kind": "board",
+    "item": "13",
+    "title": "Approving various parking and traffic modifications along the K Ingleside line on Ocean Avenue as part of the K Ingleside Rapid Project and amending Transportation Code",
+    "url": "https://www.sfmta.com/node/29927",
+    "decision": "ADOPTED \u2014 7 ayes (Resolution 240305-021)",
+    "grade": "exact",
+    "matchedOn": [
+     "K Ingleside Rapid Project",
+     "named as \u201ck ingleside rapid\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "22965": [
+   {
+    "date": "2024-02-06",
+    "kind": "board",
+    "item": "11",
+    "title": "Amending Transportation Code, Division II, Section 601, to designate full-time transit-only areas on San Jose Avenue; and approving traffic and parking modifications related to the M Ocean View Transi",
+    "url": "https://www.sfmta.com/node/29694",
+    "decision": "ADOPTED \u2014 7 ayes (Resolution 240206-012)",
+    "grade": "exact",
+    "matchedOn": [
+     "M Ocean View Transit and Safety Project",
+     "named as \u201cm ocean view transit and safety\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2023-11-21",
+    "kind": "board",
+    "item": "13",
+    "title": "Presentation and discussion regarding the M Ocean View Transit and Safety Project",
+    "url": "https://www.sfmta.com/node/29271",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "M Ocean View Transit and Safety Project",
+     "named as \u201cm ocean view transit and safety\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "26874": [
+   {
+    "date": "2026-09-22",
+    "kind": "supervisors",
+    "item": "260906",
+    "title": "Motion directing the Clerk of the Board to prepare findings related to reversing the Planning Commission\u2019s certification of the Final Environmental Impact Report prepared for the proposed Pacific Gas ",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8216169&GUID=103E8B61-2CE3-4DE1-823C-E2C7C57AE717&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PG&E Power Asset Acquisition",
+     "named as \u201cpg and e power asset acquisition\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-09-22",
+    "kind": "supervisors",
+    "item": "260905",
+    "title": "Motion conditionally reversing the Planning Commission\u2019s certification of the Final Environmental Impact Report prepared for the proposed Pacific Gas and Electric (PG&E) Power Asset Acquisition Projec",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8216155&GUID=4EB91F07-6C20-431C-8298-5BE141E9648B&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PG&E Power Asset Acquisition",
+     "named as \u201cpg and e power asset acquisition\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-09-22",
+    "kind": "supervisors",
+    "item": "260904",
+    "title": "Motion affirming the Planning Commission\u2019s certification of the Final Environmental Impact Report prepared for the proposed Pacific Gas and Electric (PG&E) Power Asset Acquisition Project.",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8216140&GUID=793901B7-310A-4C4E-B343-4D3CD4E96D73&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PG&E Power Asset Acquisition",
+     "named as \u201cpg and e power asset acquisition\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-09-22",
+    "kind": "supervisors",
+    "item": "260903",
+    "title": "Hearing of persons interested in or objecting to the certification of a Final Environmental Impact Report for the proposed Pacific Gas and Electric (PG&E) Power Asset Acquisition project (Assessor\u2019s P",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8172695&GUID=4FB2F2CF-F424-4591-849F-B78A3FDC4CC3&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PG&E Power Asset Acquisition",
+     "named as \u201cpg and e power asset acquisition\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2022-01-11",
+    "kind": "supervisors",
+    "item": "220024",
+    "title": "Motion that the Board of Supervisors convene in closed session on February 1, 2022, pursuant to California Government Code, Section 54956.9(a), and San Francisco Administrative Code, Section 67.10(d)(",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5374663&GUID=61CB055F-D093-465D-B509-D0AE3166B9CB&Options=&Search=",
+    "decision": "APPROVED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PG&E Power Asset Acquisition",
+     "named as \u201cpg and e power asset acquisition\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2022-01-04",
+    "kind": "supervisors",
+    "item": "220024",
+    "title": "Motion that the Board of Supervisors convene in closed session on February 1, 2022, pursuant to California Government Code, Section 54956.9(a), and San Francisco Administrative Code, Section 67.10(d)(",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5374663&GUID=61CB055F-D093-465D-B509-D0AE3166B9CB&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PG&E Power Asset Acquisition",
+     "named as \u201cpg and e power asset acquisition\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   }
+  ],
+  "63320": [
+   {
+    "date": "2026-10-08",
+    "kind": "pwc",
+    "item": "6",
+    "title": "Powell Street Improvement Project - Contract ID No. 1000938033 - Contract Modification",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53329",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Powell Street Improvement Project",
+     "named as \u201cpowell st improvement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   },
+   {
+    "date": "2026-06-02",
+    "kind": "supervisors",
+    "item": "260514",
+    "title": "Resolution authorizing the Department of Public Works to accept and expend a grant in the amount of up to $14,500,000 from the San Francisco Downtown Development Corporation, a California nonprofit pu",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8030238&GUID=1725692D-0782-431A-81BF-154F7D8303A1&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Powell Street Improvement Project",
+     "named as \u201cpowell st improvement\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2026-05-27",
+    "kind": "supervisors",
+    "item": "260514",
+    "title": "Resolution authorizing the Department of Public Works to accept and expend a grant in the amount of up to $14,500,000 from the San Francisco Downtown Development Corporation, a California nonprofit pu",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8030238&GUID=1725692D-0782-431A-81BF-154F7D8303A1&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Powell Street Improvement Project",
+     "named as \u201cpowell st improvement\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2026-05-12",
+    "kind": "supervisors",
+    "item": "260514",
+    "title": "Resolution authorizing the Department of Public Works to accept and expend a grant in the amount of up to $14,500,000 from the San Francisco Downtown Development Corporation, a California nonprofit pu",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8030238&GUID=1725692D-0782-431A-81BF-154F7D8303A1&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Powell Street Improvement Project",
+     "named as \u201cpowell st improvement\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-03-12",
+    "kind": "pwc",
+    "item": "4b",
+    "title": "Powell Street Improvement Project Engineering Professional Services \u2013 Sole Source Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51979",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Powell Street Improvement Project",
+     "named as \u201cpowell st improvement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   },
+   {
+    "date": "2026-02-26",
+    "kind": "pwc",
+    "item": "5",
+    "title": "Powell Street Improvement Project CM/GC - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51884",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Powell Street Improvement Project",
+     "named as \u201cpowell st improvement\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "9769": [
+   {
+    "date": "2024-09-24",
+    "kind": "sfpuc",
+    "item": "7e",
+    "title": "Award Contract No. WW-755, Sunnydale Pump Station Safety Improvements, to Anvil Builders, Inc., to address water intrusion, health and safety conditions, and security issues at the Sunnydale Pump Stat",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/September%2024%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Sunnydale Pump Station Safety Improvements",
+     "named as \u201csunnydale pump station safety improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "31365": [
+   {
+    "date": "2026-04-30",
+    "kind": "pwc",
+    "item": "5b",
+    "title": "Contract No. 35 Traffic Signal Upgrades \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52314",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Contract 35 Traffic Signal Upgrade",
+     "named as \u201ccontract no 35 traffic signal\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8153": [
+   {
+    "date": "2026-07-23",
+    "kind": "pwc",
+    "item": "5b",
+    "title": "Various Locations Pavement Renovation No. 82 and Sewer Replacement Rebid \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52913",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Various Locations Pavement Renovation No 82",
+     "named as \u201cvarious locations pavement renovation no 82\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "26428": [
+   {
+    "date": "2026-07-23",
+    "kind": "pwc",
+    "item": "5b",
+    "title": "Various Locations Pavement Renovation No. 82 and Sewer Replacement Rebid \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52913",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Various Locations Sewer Replacement (JV VL PR No 82)",
+     "named as \u201cvarious locations pavement renovation no 82\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8514": [
+   {
+    "date": "2026-04-30",
+    "kind": "pwc",
+    "item": "5b",
+    "title": "Contract No. 35 Traffic Signal Upgrades \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52314",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 35: Traffic Signal Modifications",
+     "named as \u201ccontract no 35 traffic signal\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "9108": [
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "23",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL Mary Street, Mint Street, and Mission Street 23(b). ESTABLISH \u2013 RED ZONE Mission Street, south side, from Mary Street to 10 feet westerly 23(c). ESTABLISH \u2013 WHITE ZONE, PASS",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "22",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL Alemany Boulevard and Cotter Street 22(b). RESCIND \u2013 RIGHT TURN ONLY Cotter Street, eastbound and westbound, at Alemany Boulevard (Supervisor District 11) (Approvable by the",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "21",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 41st Avenue and Lincoln Way 21(b). ESTABLISH \u2013 TRAFFIC ISLAND Lincoln Way center median island, from 41st Avenue to 15 feet easterly (extends existing median island west fro",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "20",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 39th Avenue and Fulton Street 20(b). ESTABLISH \u2013 RED ZONE 39th Avenue, west side, from Fulton Street to 15 feet northerly (removes 1 parking space) (Supervisor District 1) (",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "19",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL Cesar Chavez Street and Florida Street 19(b). ESTABLISH \u2013 RED ZONE Florida Street, east side, from Cesar Chavez Street to 10 feet southerly (Supervisor District 9) (Approvab",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "17",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 28th Street and Guerrero Street 17(b). ESTABLISH \u2013 TRAFFIC ISLAND Guerrero Street center median island, from 28th Street to 18 feet southerly Guerrero Street center median i",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "16",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 10th Avenue and Lincoln Way (Approvable by the City Traffic Engineer) 16(b). ESTABLISH \u2013 CROSSWALK CLOSURE Crossing Lincoln Way, east side, at 10th Avenue (in conjunction wi",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Items 16(a) and 16(c) approved by the City Traffic Engineer for implementation. Item 16(b) approved by the City Traffic Engineer to forward to the SFMTA Board f",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "15",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 4th Avenue and Fulton Street 15(b). ESTABLISH \u2013 RED ZONE 4th Avenue, west side, from Fulton Street to 10 feet northerly 15(c). ESTABLISH \u2013 TOW-AWAY, NO STOPPING EXCEPT PERMI",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "14",
+    "title": "ESTABLISH \u2013 RECTANGULAR RAPID FLASHING BEACON (RRFB) 4th Street and Mission Rock Street (Supervisor District 6) (Approvable by the City Traffic Engineer) Jarrett Hornbostel, [staff email removed \u2014 see",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "13",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 4th Street and Long Bridge Street (Supervisor District 6) (Approvable by the City Traffic Engineer) Jarrett Hornbostel, [staff email removed \u2014 see the order]",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66: New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "10148": [
+   {
+    "date": "2026-09-24",
+    "kind": "pwc",
+    "item": "5c",
+    "title": "Union Street Pavement Renovation and Sewer Replacement",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53238",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Union Street Pavement Renovation",
+     "named as \u201cunion st pavement renovation\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "25811": [
+   {
+    "date": "2026-01-13",
+    "kind": "sfpuc",
+    "item": "7a",
+    "title": "Award Contract No. WD-2921, Water Main and Sewer Replacement on Palou, Quesada, and Revere Avenues from 3rd Street to Griffith Street, to the responsible bidder that submitted the lowest responsive bi",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/1.13.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "WD-2921 8- and 12-inch Ductile Iron Water Main Replacement on Palou, Quesada, and Revere Ave from 3rd St to Griffith St",
+     "named as \u201cwd2921\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "36768": [
+   {
+    "date": "2026-01-13",
+    "kind": "sfpuc",
+    "item": "7a",
+    "title": "Award Contract No. WD-2921, Water Main and Sewer Replacement on Palou, Quesada, and Revere Avenues from 3rd Street to Griffith Street, to the responsible bidder that submitted the lowest responsive bi",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/1.13.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "8 & 12-Inch Ductile Iron Water Main Replacement on Palou, Quesada and Revere From 3rd St to Griffith St",
+     "named as \u201cwd2921\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "63616": [
+   {
+    "date": "2023-05-05",
+    "kind": "pwc",
+    "item": "6",
+    "title": "As-Needed Citywide Pavement Preservation Contract 5 (General As-neededContract G23) \u2013 Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43600",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "As Needed Citywide Pavement Preservation Contract 5 (General As-Needed Contract G23)",
+     "named as \u201cas needed citywide pavement preservation contract 5\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "16520": [
+   {
+    "date": "2021-07-27",
+    "kind": "sfpuc",
+    "item": "9c",
+    "title": "Approve the selection of McMillen Jacobs Associates and award Agreement No. PRO.0164, Engineering Services to support SFPUC engineering services in the design of the proposed Lower Alemany Area Stormw",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2027%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar Item 9a",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Stormwater Improvements - Alemany Shaft",
+     "named as \u201clower alemany area stormwater improvement\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "67699": [
+   {
+    "date": "2026-09-17",
+    "kind": "recpark",
+    "item": "5H",
+    "title": "PORTSMOUTH SQUARE IMPROVEMENT PROJECT - CONTRACT AMENDMENT",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53175",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvement\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2026-06-09",
+    "kind": "supervisors",
+    "item": "260452",
+    "title": "Resolution retroactively authorizing the Recreation and Park Department to accept and expend a grant from the California Natural Resources Agency in the amount of $1,000,000 for the General Fund Speci",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8000224&GUID=7D18898A-A497-4A90-9320-538DE260185F&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvement\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2026-05-27",
+    "kind": "supervisors",
+    "item": "260452",
+    "title": "Resolution retroactively authorizing the Recreation and Park Department to accept and expend a grant from the California Natural Resources Agency in the amount of $1,000,000 for the General Fund Speci",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8000224&GUID=7D18898A-A497-4A90-9320-538DE260185F&Options=&Search=",
+    "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING NEW TITLE Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvement\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2026-04-28",
+    "kind": "supervisors",
+    "item": "260452",
+    "title": "Resolution retroactively authorizing the Recreation and Park Department to accept and expend a grant from the California Natural Resources Agency in the amount of $1,000,000 for the General Fund Speci",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8000224&GUID=7D18898A-A497-4A90-9320-538DE260185F&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvement\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-03-19",
+    "kind": "recpark",
+    "item": "5D",
+    "title": "PORTSMOUTH SQUARE IMPROVEMENT PROJECT - GRANT APPLICATION, ACCEPT AND EXPEND AND GRANT CONTRACT",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52036",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvement\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2026-02-19",
+    "kind": "recpark",
+    "item": "7",
+    "title": "PORTSMOUTH SQUARE IMPROVEMENT PROJECT - CONTRACT AWARD",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=51836",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvement\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2020-06-09",
+    "kind": "supervisors",
+    "item": "200589",
+    "title": "Resolution finding that the proposed Portsmouth Square Improvements project is fiscally feasible and responsible under Administrative Code, Chapter 29.",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4554145&GUID=38CB28AA-1042-43BA-BDF9-81AE62248B25&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvements\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-06-02",
+    "kind": "supervisors",
+    "item": "200589",
+    "title": "Resolution finding that the proposed Portsmouth Square Improvements project is fiscally feasible and responsible under Administrative Code, Chapter 29.",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4554145&GUID=38CB28AA-1042-43BA-BDF9-81AE62248B25&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Portsmouth Square Improvement Project",
+     "named as \u201cportsmouth square improvements\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   }
+  ],
+  "25215": [
+   {
+    "date": "2025-10-14",
+    "kind": "sfpuc",
+    "item": "7e",
+    "title": "Award professional services Contract No. PRO.0271, Harrison/Treat Box Sewer Construction Management Staff Augmentation Services, to Jacobs-Avila, a Joint Venture, in the amount not to exceed $4,985,00",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/10.14.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "FASIP Harrison/Treat Box Sewer and Connecting Auxiliary Sewers 37\u201d Waterline Relocation",
+     "named as \u201charrison treat box sewer\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "50488": [
+   {
+    "date": "2026-04-28",
+    "kind": "sfpuc",
+    "item": "7c",
+    "title": "Award Contract No. WD-2920, Water Main and Sewer Replacement on Moraga, Noriega, and Ortega Streets from 8th to 11th Avenue and Various Side Streets, to the responsible bidder that submitted the lowes",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/4.28.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "11th Ave and Noriega St Sewer Replacement (JV WD-2920)",
+     "named as \u201cwd2920\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "67346": [
+   {
+    "date": "2026-04-28",
+    "kind": "sfpuc",
+    "item": "7c",
+    "title": "Award Contract No. WD-2920, Water Main and Sewer Replacement on Moraga, Noriega, and Ortega Streets from 8th to 11th Avenue and Various Side Streets, to the responsible bidder that submitted the lowes",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/4.28.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Joint - SFWD Lead - WD-2920",
+     "named as \u201cwd2920\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "54404": [
+   {
+    "date": "2026-10-06",
+    "kind": "supervisors",
+    "item": "260956",
+    "title": "Resolution approving and authorizing the General Manager of the San Francisco Public Utilities Commission to execute a Project Specific Maintenance Agreement, at no cost, for a term effective upon app",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8191095&GUID=1C6B74A0-43A0-4ACD-8E88-A0067FAC6645&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris)",
+     "named as \u201cpump station security upgrades\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-09-30",
+    "kind": "supervisors",
+    "item": "260956",
+    "title": "Resolution approving and authorizing the General Manager of the San Francisco Public Utilities Commission to execute a Project Specific Maintenance Agreement, at no cost, for a term effective upon app",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8191095&GUID=1C6B74A0-43A0-4ACD-8E88-A0067FAC6645&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris)",
+     "named as \u201cpump station security upgrades\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2026-09-01",
+    "kind": "supervisors",
+    "item": "260956",
+    "title": "Resolution approving and authorizing the General Manager of the San Francisco Public Utilities Commission to execute a Project Specific Maintenance Agreement, at no cost, for a term effective upon app",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8191095&GUID=1C6B74A0-43A0-4ACD-8E88-A0067FAC6645&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris)",
+     "named as \u201cpump station security upgrades\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-07-14",
+    "kind": "sfpuc",
+    "item": "12",
+    "title": "Authorize the General Manager to execute a no-cost Project Specific Maintenance Agreement with the State of California",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.14.2026_M_0.pdf",
+    "decision": "approve Item 12",
+    "grade": "exact",
+    "matchedOn": [
+     "Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris)",
+     "named as \u201cpump station security upgrades\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2026-05-26",
+    "kind": "sfpuc",
+    "item": "6b",
+    "title": "Award Contract No. WW-780, Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris), to the responsible bidder that submitted the lowest responsive bid, Cal State Constructo",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/5.26.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris)",
+     "named as \u201cpump station security upgrades\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "8055": [
+   {
+    "date": "2025-01-28",
+    "kind": "sfpuc",
+    "item": "12",
+    "title": "Approve an increase of $350,000 to the cost contingency and an increase of 140 calendar days to the duration contingency for Contract No. WW-719A, Folsom Area Stormwater Improvements \u2013 SOMA and Missio",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/1.28.2025_M.pdf",
+    "decision": "approve Item 12",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-09-24",
+    "kind": "sfpuc",
+    "item": "9",
+    "title": "Installment Sale Agreement to secure a Clean Water State Revolving Fund Loan for the Wastewater Enterprise Folsom Area Stormwater Improvement Project Phase 2",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/September%2024%20Approved%20Minutes.pdf",
+    "decision": "approve agenda item 8 and 9",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-05-28",
+    "kind": "sfpuc",
+    "item": "7d",
+    "title": "Approve an increase of 90 calendar days to the duration contingency for Contract No. WW-719A, Folsom Area Stormwater Improvements",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/May%2028%20Approved%20Minutes.pdf",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-03-26",
+    "kind": "sfpuc",
+    "item": "5d",
+    "title": "Wastewater Enterprise Quarterly Report including Southeast Area Major Projects Update and Biosolids and Headworks",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/March%2026%20Approved%20Minutes.pdf",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2023-09-26",
+    "kind": "sfpuc",
+    "item": "5h",
+    "title": "Ratify correction to Resolution No. 23-0096, approved on May 9, 2023, to increase the construction duration for Contract No. WW-719A, Folsom Area Stormwater Improvements",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/September%2026%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2023-07-25",
+    "kind": "supervisors",
+    "item": "230752",
+    "title": "Resolution approving Modification No. 5 to the Folsom Area Stormwater Improvement Project, Contract No. PRO.0101, Tunnel Engineering Services, with McMillen Jacobs Associates/Stantec, Joint Venture, t",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6264350&GUID=4552A5D8-52F2-455F-93B2-BF9DF5D92AE6&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2023-07-19",
+    "kind": "supervisors",
+    "item": "230752",
+    "title": "Resolution approving Modification No. 5 to the Folsom Area Stormwater Improvement Project, Contract No. PRO.0101, Tunnel Engineering Services, with McMillen Jacobs Associates/Stantec, Joint Venture, t",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6264350&GUID=4552A5D8-52F2-455F-93B2-BF9DF5D92AE6&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2023-06-27",
+    "kind": "supervisors",
+    "item": "230752",
+    "title": "Resolution approving Modification No. 5 to the Folsom Area Stormwater Improvement Project, Contract No. PRO.0101, Tunnel Engineering Services, with McMillen Jacobs Associates/Stantec, Joint Venture, t",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6264350&GUID=4552A5D8-52F2-455F-93B2-BF9DF5D92AE6&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2023-06-13",
+    "kind": "sfpuc",
+    "item": "7",
+    "title": "Modify Contract No. PRO.0101, Tunnel Engineering Services of the Folsom Area Stormwater Improvement Project, with McMillen Jacobs Associates/Stantec, Joint Venture, to increase the Contract amount by ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/June%2013%20Approved%20Minutes.pdf",
+    "decision": "approve Item 7",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2023-05-09",
+    "kind": "sfpuc",
+    "item": "6g",
+    "title": "Award Contract No. WW-719A, Folsom Area Stormwater Improvements \u2013 SOMA and Mission Districts Sewer Replacement, to the responsible bidder that submitted the lowest responsive bid, Mitchell Engineering",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/May%209%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2023-05-09",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": "FINALLY PASSED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2023-05-02",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": "PASSED ON FIRST READING Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2023-04-26",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2023-04-12",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2023-04-11",
+    "kind": "sfpuc",
+    "item": "5d",
+    "title": "Approve Amendment No. 4 to Contract No. PRO.0101, Tunnel Engineering Services for the Folsom Area Stormwater Improvements Project, with McMillen Jacobs Associates/ Stantec, Joint Venture",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/April%2011%20Approved%20Minutes.pdf",
+    "decision": "continued",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2023-04-11",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2023-03-28",
+    "kind": "sfpuc",
+    "item": "9",
+    "title": "Recommend that the Board of Supervisors adopt a Special Ordinance that will allow the SFPUC to enter into Cooperative Agreements with Caltrans to perform engineering design review, constructability re",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/March%2028%20Approved%20Minutes.pdf",
+    "decision": "approve item 9",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement projects\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2021-11-09",
+    "kind": "sfpuc",
+    "item": "10",
+    "title": "Approve Project No. CWWSIPFCDB14, Folsom Area Stormwater Improvements Project, and authorize the General Manager to implement the Project in compliance with the Charter and applicable law, subject to ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/November%209%20Approved%20Amended%20Minutes.pdf",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvements project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2021-08-10",
+    "kind": "sfpuc",
+    "item": "9",
+    "title": "Tunnel Engineering Services for the Folsom Area Stormwater Improvement Project with McMillen Jacobs Associates/Stantec",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/August%2010%20Approved%20Minutes.pdf",
+    "decision": "approve Item 9",
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2020-08-25",
+    "kind": "sfpuc",
+    "item": "16",
+    "title": "Approve Amendment No. 2 to Agreement No. PRO.0101, Tunnel Engineering Services for the Folsom Area Stormwater Improvement Project for an amount not-to-exceed $9,700,000",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36461",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+     "named as \u201cfolsom area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "8784": [
+   {
+    "date": "2026-06-23",
+    "kind": "sfpuc",
+    "item": "7c",
+    "title": "Award Contract No. WD-2780, 8-Inch Ductile Iron Water Main Replacement and Sewer Replacement on 21st St. from Eureka St. to Church St. and on Hill St. from Castro St. to Church St. and Various Side St",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/6.23.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "WD-2780 8-inch and 12-inch Water Main Replacement on 21st Street from Eureka to Castro Streets and Hill Street from Castro to Church Streets",
+     "named as \u201cwd2780\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "56315": [
+   {
+    "date": "2026-10-08",
+    "kind": "pwc",
+    "item": "5d",
+    "title": "Harvey Milk Plaza Improvements Project Architecture and Engineering Professional Services - Sole Source Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53329",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Harvey Milk Plaza Improvements",
+     "named as \u201charvey milk plaza improvements\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "8027": [
+   {
+    "date": "2025-07-24",
+    "kind": "pwc",
+    "item": "7",
+    "title": "Transbay Howard Streetscape Project, Sourcing Event ID No: 0000003295, to Esquivel Grading & Paving, Inc. in the amount of $19,501,403.08",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50499",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "PW Transbay Howard Streetscape Project",
+     "named as \u201ctransbay howard streetscape project\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "31731": [
+   {
+    "date": "2023-05-05",
+    "kind": "hearing",
+    "item": "4",
+    "title": "ESTABLISH \u2013 RED ZONE A. 25th Avenue, east side, from California Street to 20 feet southerly B. 25th Avenue, west side, from Clement Street to 20 feet northerly C. Beverly Street, east side, from Hollo",
+    "url": "https://www.sfmta.com/media/36054/download?inline",
+    "decision": "Approved by the City Traffic Engineer to forward to the SFMTA Board for final approval and implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "PW 29 Sunset Improvement Project Phase 1",
+     "named as \u201c29 sunset improvement project phase 1\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "8730": [
+   {
+    "date": "2026-06-09",
+    "kind": "sfpuc",
+    "item": "6b",
+    "title": "Award Contract No. WW-668, Upper Yosemite Creek Daylighting Project, to Bauman Landscape and Construction Inc., to construct green infrastructure and restore right of way and public access areas withi",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/6.9.2023_M_0.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Upper Yosemite Creek Daylighting",
+     "named as \u201cupper yosemite creek daylighting\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2025-07-08",
+    "kind": "sfpuc",
+    "item": "6b",
+    "title": "Approve and adopt the San Francisco Public Utilities Commission General Manager\u2019s finding that Environmental Passive Integrated Conveyance Total Water Solution, Inc",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.8.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "Upper Yosemite Creek Daylighting",
+     "named as \u201cupper yosemite creek daylighting\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "33655": [
+   {
+    "date": "2025-06-24",
+    "kind": "sfcta",
+    "item": "7",
+    "title": "I-280 Southbound Ocean Ave Off-Ramp Improvement Project Update",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50283",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "I-280 Southbound Ocean Avenue Off-Ramp Project",
+     "named as \u201ci 280 southbound ocean ave off ramp\u201d"
+    ],
+    "means": "the SFCTA Board acted on this project by name"
+   }
+  ],
+  "34243": [
+   {
+    "date": "2026-04-28",
+    "kind": "supervisors",
+    "item": "260342",
+    "title": "Resolution approving and authorizing the Director of Property, on behalf of the City\u2019s Department of Public Health (\u201cDPH\u201d), to amend the lease of a portion of real property, located 845 Jackson Street",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7964618&GUID=2E609C0A-97A8-4079-9869-419DADF9C47A&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Chinatown Public Health Center",
+     "named as \u201cchinatown public health center\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2026-04-22",
+    "kind": "supervisors",
+    "item": "260342",
+    "title": "Resolution approving and authorizing the Director of Property, on behalf of the City\u2019s Department of Public Health (\u201cDPH\u201d), to amend the lease of a portion of real property, located 845 Jackson Street",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7964618&GUID=2E609C0A-97A8-4079-9869-419DADF9C47A&Options=&Search=",
+    "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING NEW TITLE Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Chinatown Public Health Center",
+     "named as \u201cchinatown public health center\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2026-04-07",
+    "kind": "supervisors",
+    "item": "260342",
+    "title": "Resolution approving and authorizing the Director of Property, on behalf of the City\u2019s Department of Public Health (\u201cDPH\u201d), to amend the lease of a portion of real property, located 845 Jackson Street",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7964618&GUID=2E609C0A-97A8-4079-9869-419DADF9C47A&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Chinatown Public Health Center",
+     "named as \u201cchinatown public health center\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2026-03-12",
+    "kind": "pwc",
+    "item": "5",
+    "title": "Chinatown Public Health Center Renovation [Citywide PLA] - Contract Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51979",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Chinatown Public Health Center",
+     "named as \u201cchinatown public health center\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "52354": [
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "23",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL Mary Street, Mint Street, and Mission Street 23(b). ESTABLISH \u2013 RED ZONE Mission Street, south side, from Mary Street to 10 feet westerly 23(c). ESTABLISH \u2013 WHITE ZONE, PASS",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "22",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL Alemany Boulevard and Cotter Street 22(b). RESCIND \u2013 RIGHT TURN ONLY Cotter Street, eastbound and westbound, at Alemany Boulevard (Supervisor District 11) (Approvable by the",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "21",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 41st Avenue and Lincoln Way 21(b). ESTABLISH \u2013 TRAFFIC ISLAND Lincoln Way center median island, from 41st Avenue to 15 feet easterly (extends existing median island west fro",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "20",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 39th Avenue and Fulton Street 20(b). ESTABLISH \u2013 RED ZONE 39th Avenue, west side, from Fulton Street to 15 feet northerly (removes 1 parking space) (Supervisor District 1) (",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "19",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL Cesar Chavez Street and Florida Street 19(b). ESTABLISH \u2013 RED ZONE Florida Street, east side, from Cesar Chavez Street to 10 feet southerly (Supervisor District 9) (Approvab",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "17",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 28th Street and Guerrero Street 17(b). ESTABLISH \u2013 TRAFFIC ISLAND Guerrero Street center median island, from 28th Street to 18 feet southerly Guerrero Street center median i",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "16",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 10th Avenue and Lincoln Way (Approvable by the City Traffic Engineer) 16(b). ESTABLISH \u2013 CROSSWALK CLOSURE Crossing Lincoln Way, east side, at 10th Avenue (in conjunction wi",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Items 16(a) and 16(c) approved by the City Traffic Engineer for implementation. Item 16(b) approved by the City Traffic Engineer to forward to the SFMTA Board f",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "15",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 4th Avenue and Fulton Street 15(b). ESTABLISH \u2013 RED ZONE 4th Avenue, west side, from Fulton Street to 10 feet northerly 15(c). ESTABLISH \u2013 TOW-AWAY, NO STOPPING EXCEPT PERMI",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "14",
+    "title": "ESTABLISH \u2013 RECTANGULAR RAPID FLASHING BEACON (RRFB) 4th Street and Mission Rock Street (Supervisor District 6) (Approvable by the City Traffic Engineer) Jarrett Hornbostel, [staff email removed \u2014 see",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2022-10-21",
+    "kind": "hearing",
+    "item": "13",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 4th Street and Long Bridge Street (Supervisor District 6) (Approvable by the City Traffic Engineer) Jarrett Hornbostel, [staff email removed \u2014 see the order]",
+    "url": "https://www.sfmta.com/media/33275/download?inline",
+    "decision": "Approved by the City Traffic Engineer for implementation.",
+    "grade": "exact",
+    "matchedOn": [
+     "Contract 66 New Traffic Signals",
+     "named as \u201ccontract 66 new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "22962": [
+   {
+    "date": "2026-07-23",
+    "kind": "pwc",
+    "item": "7",
+    "title": "San Francisco Municipal Transportation Agency Parking Enforcement Headquarters CM/GC - Contract Modification",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52913",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "SFMTA Parking Enforcement Headquarters",
+     "named as \u201cparking enforcement headquarters\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   },
+   {
+    "date": "2026-01-05",
+    "kind": "pwdelegated",
+    "item": "1000031461",
+    "title": "Construction Manager / General Contractor (CM/GC) for SFMTA Parking Enforcement Headquarters Project: Extend contract duration by 151 calendar days",
+    "url": "https://sfpublicworks.org/sites/default/files/Commissions/Jan%2022%202026/Item%202_PWC%20SASC%20Delegated%20Approval%20Report%201-5-26.pdf",
+    "decision": "Contract change approved by the Director",
+    "grade": "exact",
+    "matchedOn": [
+     "SFMTA Parking Enforcement Headquarters",
+     "named as \u201cparking enforcement headquarters\u201d"
+    ],
+    "means": "the Director of Public Works approved a change to this project's contract under the Public Works Commission's delegation, and reported it to the Commission"
+   },
+   {
+    "date": "2023-11-03",
+    "kind": "pwc",
+    "item": "7",
+    "title": "San Francisco Municipal Transportation Agency Parking Enforcement Headquarters Construction (CM/GC) Contract \u2013 Award",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44822",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "SFMTA Parking Enforcement Headquarters",
+     "named as \u201cparking enforcement headquarters\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "51215": [
+   {
+    "date": "2025-10-03",
+    "kind": "hearing",
+    "item": "7",
+    "title": "ESTABLISH \u2013 TRAFFIC SIGNAL 45th Avenue and Lincoln Way La Playa, Lincoln Way, and Martin Luther King Jr. Drive (Approvable by the City Traffic Engineer) 7(b). ESTABLISH \u2013 CROSSWALK CLOSURE Crossing Li",
+    "url": "https://www.sfmta.com/media/43533/download?inline",
+    "decision": "Clarified approval paths. Items 7(a) and 7(c) approved by the City Traffic Engineer for implementation. Item 7(b) approved by the City Traffic Engineer to forwa",
+    "grade": "exact",
+    "matchedOn": [
+     "Lincoln Way New Traffic Signals",
+     "named as \u201clincoln way new traffic signals\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ],
+  "25694": [
+   {
+    "date": "2025-10-14",
+    "kind": "sfpuc",
+    "item": "7e",
+    "title": "Award professional services Contract No. PRO.0271, Harrison/Treat Box Sewer Construction Management Staff Augmentation Services, to Jacobs-Avila, a Joint Venture, in the amount not to exceed $4,985,00",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/10.14.2025_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "FASIP Harrison/Treat Box Sewer and Connecting Auxiliary Sewers",
+     "named as \u201charrison treat box sewer\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "56976": [
+   {
+    "date": "2026-10-13",
+    "kind": "sfpuc",
+    "item": "13",
+    "title": "Authorize the General Manager to request approval from the Board of Supervisors to accept and expend grant funds of up to $5,000,000 from the U.S. Environmental Protection Agency USEPA",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/10.13.2026_M.pdf",
+    "decision": "approve Item 13",
+    "grade": "exact",
+    "matchedOn": [
+     "Outer Mission Green Nodes",
+     "named as \u201couter mission green nodes\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "58285": [
+   {
+    "date": "2025-05-06",
+    "kind": "supervisors",
+    "item": "250247",
+    "title": "Resolution approving and authorizing the General Manager of the San Francisco Public Utilities Commission to execute Amendment No. 3 to Contract No. PRO.0092, Engineering Services for South Ocean Beac",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7264523&GUID=EFBD8ACB-CA48-49D9-A5E9-BCEAF5E5A47C&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2025-04-30",
+    "kind": "supervisors",
+    "item": "250247",
+    "title": "Resolution approving and authorizing the General Manager of the San Francisco Public Utilities Commission to execute Amendment No. 3 to Contract No. PRO.0092, Engineering Services for South Ocean Beac",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7264523&GUID=EFBD8ACB-CA48-49D9-A5E9-BCEAF5E5A47C&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2025-03-25",
+    "kind": "supervisors",
+    "item": "250247",
+    "title": "Resolution approving and authorizing the General Manager of the San Francisco Public Utilities Commission to execute Amendment No. 3 to Contract No. PRO.0092, Engineering Services for South Ocean Beac",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7264523&GUID=EFBD8ACB-CA48-49D9-A5E9-BCEAF5E5A47C&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2025-03-11",
+    "kind": "sfpuc",
+    "item": "12",
+    "title": "Approve an increase of $2,000,000 to the cost contingency and an increase of 1,095 calendar days to the duration contingency for Contract No. WW-714, Ocean Beach Climate Change Adaptation, Short-term ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/3.11.2025_M.pdf",
+    "decision": "approve Item 12",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2025-03-11",
+    "kind": "sfpuc",
+    "item": "11",
+    "title": "Approve Amendment No. 3 to Contract No. PRO.0092, Engineering Services for South Ocean Beach Coastal Erosion and Wastewater Infrastructure Protection, with Moffatt & Nichol-AGS Joint Venture, increasi",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/3.11.2025_M.pdf",
+    "decision": "approve Item 11",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-05-14",
+    "kind": "supervisors",
+    "item": "231075",
+    "title": "Ordinance amending the Park Code to close the Great Highway Extension, beginning at Sloat Boulevard and extending south for a distance of approximately 3,317 feet, to vehicles to allow for a multi-use",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6388557&GUID=A0D196D5-D057-47CE-8C71-9E06DF72532A&Options=&Search=",
+    "decision": "FINALLY PASSED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2024-05-07",
+    "kind": "supervisors",
+    "item": "231075",
+    "title": "Ordinance amending the Park Code to close the Great Highway Extension, beginning at Sloat Boulevard and extending south for a distance of approximately 3,317 feet, to vehicles to allow for a multi-use",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6388557&GUID=A0D196D5-D057-47CE-8C71-9E06DF72532A&Options=&Search=",
+    "decision": "PASSED ON FIRST READING Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2024-04-29",
+    "kind": "supervisors",
+    "item": "231075",
+    "title": "Ordinance amending the Park Code to close the Great Highway Extension, beginning at Sloat Boulevard and extending south for a distance of approximately 3,317 feet, to vehicles to allow for a multi-use",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6388557&GUID=A0D196D5-D057-47CE-8C71-9E06DF72532A&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors' Land Use and Transportation Committee acted on this project by name"
+   },
+   {
+    "date": "2023-10-19",
+    "kind": "recpark",
+    "item": "9",
+    "title": "OCEAN BEACH CLIMATE CHANGE ADAPTATION PROJECT \u2013 CEQA, CONCEPTUAL DESIGN, ROADWAY RECOMMENDATION AND MOU WITH SFPUC",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=44703",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
+   {
+    "date": "2023-10-17",
+    "kind": "supervisors",
+    "item": "231075",
+    "title": "Ordinance amending the Park Code to close the Great Highway Extension, beginning at Sloat Boulevard and extending south for a distance of approximately 3,317 feet, to vehicles to allow for a multi-use",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6388557&GUID=A0D196D5-D057-47CE-8C71-9E06DF72532A&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2023-10-10",
+    "kind": "sfpuc",
+    "item": "8",
+    "title": "Approve the Ocean Beach Climate Change Adaptation Project, Long-Term Improvements, a multi-city-department project led by the San Francisco Public Utilities Commission; authorize staff to proceed with",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/October%2010%20Approved%20Minutes.pdf",
+    "decision": "approve Item 8",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2021-07-27",
+    "kind": "sfpuc",
+    "item": "9b",
+    "title": "Approve the plans and specifications, and award Contract No. WW-714, Ocean Beach Climate Change Adaptation, Short-term Erosion Mitigation, in the amount of $3,134,000, and with a duration of 1,095 con",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2027%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar Item 9a",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2021-07-13",
+    "kind": "sfpuc",
+    "item": "8h",
+    "title": "Approve the plans and specifications, and award Contract No. WW-714, Ocean Beach Climate Change Adaptation, Short-term Erosion Mitigation, in the amount of $3,134,000, and with a duration of 1,095 con",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2013%20Approved%20Minutes.pdf",
+    "decision": "approve Consent Calendar, excluding 8h",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2021-04-13",
+    "kind": "sfpuc",
+    "item": "12",
+    "title": "Approve Amendment No. 2 to Agreement No. PRO.0092, Engineering Services for South Ocean Beach Coastal Erosion and Wastewater Protection, with Moffatt and AGS Joint Venture",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/April%2013%20Approved%20Minutes.pdf",
+    "decision": "approve Consent Calendar item 12",
+    "grade": "exact",
+    "matchedOn": [
+     "Ocean Beach Climate Change Adaptation Project",
+     "named as \u201cocean beach climate change adaptation\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "21630": [
+   {
+    "date": "2022-01-11",
+    "kind": "supervisors",
+    "item": "220029",
+    "title": "Pursuant to Charter, Sections 2.103 and 3.100(7), and Administrative Code, Section 2.11, the Mayor shall discuss the following eligible topic submitted from the Supervisor representing District 1.  Th",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5372799&GUID=23B2A589-9AEC-40E1-8A78-F8333BD0B970&FullText=1",
+    "decision": "Filed",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors heard an item naming this project, with no decision on it"
+   },
+   {
+    "date": "2021-08-03",
+    "kind": "board",
+    "item": "11",
+    "title": "Designating four corridors as Slow Streets to extend beyond the COVID-19 Emergency Designating four corridors as Slow Streets to extend beyond the COVID-19 Emergency",
+    "url": "https://www.sfmta.com/node/24823",
+    "decision": "ADOPTED \u2014 7 ayes",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the record names this project"
+   },
+   {
+    "date": "2020-09-29",
+    "kind": "supervisors",
+    "item": "201027",
+    "title": "Motion directing the Clerk of the Board to prepare findings reversing the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets Phase 3 Project is s",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4642585&GUID=866940EA-6DE4-436F-85A0-B8AC643DB45B&Options=&Search=",
+    "decision": "TABLED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-29",
+    "kind": "supervisors",
+    "item": "201026",
+    "title": "Motion conditionally reversing the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets Phase 3 Project is statutorily and categorically exempt fro",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4642584&GUID=5DCA4687-C35C-4AE1-A458-2F9B493FE8EA&Options=&Search=",
+    "decision": "TABLED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-29",
+    "kind": "supervisors",
+    "item": "201025",
+    "title": "Motion affirming the determination by the Planning Department that the Municipal Transportation Agency's Slow Streets Phase 3 Project is statutorily and categorically exempt from environmental review.",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4642583&GUID=AB43F854-C6B3-4C42-8E2E-0C3FA141AA4C&Options=&Search=",
+    "decision": "APPROVED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-29",
+    "kind": "supervisors",
+    "item": "201024",
+    "title": "Hearing of persons interested in or objecting to the determination of exemption from environmental review under the California Environmental Quality Act issued a Statutory and Categorical Exemption by",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4632252&GUID=1940F7AF-16EF-4655-9FA1-2D306EC548FB&Options=&Search=",
+    "decision": "HEARD AND FILED",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-22",
+    "kind": "supervisors",
+    "item": "201027",
+    "title": "Motion directing the Clerk of the Board to prepare findings reversing the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets Phase 3 Project is s",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4642585&GUID=866940EA-6DE4-436F-85A0-B8AC643DB45B&Options=&Search=",
+    "decision": "CONTINUED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-22",
+    "kind": "supervisors",
+    "item": "201026",
+    "title": "Motion conditionally reversing the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets Phase 3 Project is statutorily and categorically exempt fro",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4642584&GUID=5DCA4687-C35C-4AE1-A458-2F9B493FE8EA&Options=&Search=",
+    "decision": "CONTINUED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-22",
+    "kind": "supervisors",
+    "item": "201025",
+    "title": "Motion affirming the determination by the Planning Department that the Municipal Transportation Agency's Slow Streets Phase 3 Project is statutorily and categorically exempt from environmental review.",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4642583&GUID=AB43F854-C6B3-4C42-8E2E-0C3FA141AA4C&Options=&Search=",
+    "decision": "CONTINUED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-22",
+    "kind": "supervisors",
+    "item": "201024",
+    "title": "Hearing of persons interested in or objecting to the determination of exemption from environmental review under the California Environmental Quality Act issued a Statutory and Categorical Exemption by",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4632252&GUID=1940F7AF-16EF-4655-9FA1-2D306EC548FB&Options=&Search=",
+    "decision": "CONTINUED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-01",
+    "kind": "supervisors",
+    "item": "200886",
+    "title": "Motion directing the Clerk of the Board to prepare findings reversing the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets, Phase 1 project is ",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4625639&GUID=28048055-3CB6-47BC-96FB-45A93E8768F5&Options=&Search=",
+    "decision": "TABLED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-01",
+    "kind": "supervisors",
+    "item": "200885",
+    "title": "Motion conditionally reversing the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets, Phase 1 project is statutorily exempt from environmental r",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4625638&GUID=A3A30D90-2CDF-4312-904A-7D886119CBC2&Options=&Search=",
+    "decision": "TABLED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-01",
+    "kind": "supervisors",
+    "item": "200884",
+    "title": "Motion affirming the determination by the Planning Department that the proposed Municipal Transportation Agency's Slow Streets, Phase 1 project is statutorily exempt from environmental review.",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4625637&GUID=4835F546-75BE-4387-9576-126D318F16D2&Options=&Search=",
+    "decision": "APPROVED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2020-09-01",
+    "kind": "supervisors",
+    "item": "200883",
+    "title": "Hearing of persons interested in or objecting to the determination of statutory exemption from environmental review under the California Environmental Quality Act, by the Planning Department on April ",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4615096&GUID=928953C0-1EC8-4312-8B13-9BBD8FE7AFB1&Options=&Search=",
+    "decision": "HEARD AND FILED",
+    "grade": "exact",
+    "matchedOn": [
+     "Slow Streets",
+     "named as \u201cslow streets\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   }
+  ],
+  "8711": [
+   {
+    "date": "2026-07-14",
+    "kind": "sfpuc",
+    "item": "9",
+    "title": "Authorize the General Manager to execute an Installment Sale Agreement to secure a Clean Water State Revolving Fund Loan for the Lower Alemany Area Stormwater Improvement Project",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.14.2026_M_0.pdf",
+    "decision": "approve Item 9",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-09-10",
+    "kind": "supervisors",
+    "item": "240753",
+    "title": "Resolution approving Amendment No. 2 to Contract No. PRO.0164, Engineering Services for the Lower Alemany Area Stormwater Improvement Project, between the City, acting by and through the San Francisco",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6772091&GUID=6455DD3C-4D63-4EAC-8017-8DB86DE6D56C&Options=&Search=",
+    "decision": "ADOPTED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2024-09-04",
+    "kind": "supervisors",
+    "item": "240753",
+    "title": "Resolution approving Amendment No. 2 to Contract No. PRO.0164, Engineering Services for the Lower Alemany Area Stormwater Improvement Project, between the City, acting by and through the San Francisco",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6772091&GUID=6455DD3C-4D63-4EAC-8017-8DB86DE6D56C&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2024-07-16",
+    "kind": "supervisors",
+    "item": "240753",
+    "title": "Resolution approving Amendment No. 2 to Contract No. PRO.0164, Engineering Services for the Lower Alemany Area Stormwater Improvement Project, between the City, acting by and through the San Francisco",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6772091&GUID=6455DD3C-4D63-4EAC-8017-8DB86DE6D56C&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2024-06-25",
+    "kind": "sfpuc",
+    "item": "12",
+    "title": "Approve Amendment No. 2 to Contract No. PRO.0164, Engineering Services for the Lower Alemany Area Stormwater Improvement Project with McMillen Jacobs Associates",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/June%2025%20Approved%20Minutes_1.pdf",
+    "decision": "continued",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2024-01-23",
+    "kind": "sfpuc",
+    "item": "7a",
+    "title": "Amend Contract No. PRO.0164, Engineering Services for the Lower Alemany Area Stormwater Improvement Project",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/January%2023%20APPROVED%20Minutes.pdf",
+    "decision": "approve items 7a through 7i",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2023-05-09",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": "FINALLY PASSED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2023-05-02",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": "PASSED ON FIRST READING Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors acted on this project by name"
+   },
+   {
+    "date": "2023-04-26",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": "RECOMMENDED Pass",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors' Budget and Finance Committee acted on this project by name"
+   },
+   {
+    "date": "2023-04-12",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2023-04-11",
+    "kind": "supervisors",
+    "item": "230349",
+    "title": "Ordinance exempting from requirements of the Administrative Code and the Environment Code two agreements between the San Francisco Public Utilities Commission and the California Department of Transpor",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6120121&GUID=8D88E9F4-6DAC-4FD9-A1C6-BB6F739B1104&Options=&Search=",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the Board of Supervisors had an item naming this project on its agenda, with no action that day"
+   },
+   {
+    "date": "2021-07-27",
+    "kind": "sfpuc",
+    "item": "9c",
+    "title": "Approve the selection of McMillen Jacobs Associates and award Agreement No. PRO.0164, Engineering Services to support SFPUC engineering services in the design of the proposed Lower Alemany Area Stormw",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2027%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar Item 9a",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
+    "date": "2021-01-26",
+    "kind": "sfpuc",
+    "item": "10a",
+    "title": "Approve the selection of McMillen Jacobs Associates and award Agreement No. PRO.0164, Engineering Services for the proposed Lower Alemany Area Stormwater Improvement Project",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/January%2026%20Approved%20Minutes.pdf",
+    "decision": "approve the Consent Calendar items 10b through 10e",
+    "grade": "exact",
+    "matchedOn": [
+     "Lower Alemany Area Stormwater Improvement Project",
+     "named as \u201clower alemany area stormwater improvement project\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "32362": [
+   {
+    "date": "2024-01-16",
+    "kind": "board",
+    "item": "10.4",
+    "title": "Adopting a resolution of local support for programming Regional Measure 3 (RM3) bridge toll funds in the amount of $33,209,000 for three SFMTA projects: (1) 40\u2019 / 60\u2019 hybrid bus procurement for $27,01",
+    "url": "https://www.sfmta.com/node/29620",
+    "decision": "ADOPTED \u2014 6 ayes (Resolution 240116-004)",
+    "grade": "exact",
+    "matchedOn": [
+     "Kirkland Bus Yard Electrification Project",
+     "named as \u201ckirkland bus yard electrification\u201d"
+    ],
+    "means": "the record names this project"
+   }
+  ]
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-06-28",
+ "id": "g55-41582",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41582",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26707"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting SPECIAL CALENDAR",
+   "decision": "ADOPTED — 4 ayes (Resolution 220628-059)"
+  },
+  {
+   "no": "4a",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the Transport Workers Union (TWU), Local 250-A (9163) for Transit Operators"
+  },
+  {
+   "no": "4b",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the Transport Workers Union (TWU), Local 250-A (9132) for Transit Fare Inspectors"
+  },
+  {
+   "no": "4c",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the Transport Workers Union (TWU), Local 250-A (7410) for Automotive Service Workers"
+  },
+  {
+   "no": "4d",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the Transport Workers Union (TWU), Local 200 setting wages, benefits and working conditions for represented employees for the term July 1, 2022"
+  },
+  {
+   "no": "4e",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the International Brotherhood of Electrical Workers (IBEW), Local 6 setting wages, benefits and working conditions for represented employees"
+  },
+  {
+   "no": "4f",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the International Association of Machinists and Aerospace Workers (IAM), Local 1414"
+  },
+  {
+   "no": "4g",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the Service Employees’ International Union (SEIU), Local 1021"
+  },
+  {
+   "no": "4h",
+   "title": "Adopting a successor Memorandum of Understanding (MOU) between the SFMTA and the Municipal Executives Association (MEA) setting wages, benefits and working conditions for represented employees for the term July 1, 2022"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

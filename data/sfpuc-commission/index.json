@@ -1,0 +1,1297 @@
+{
+ "body": "sfpuc-commission",
+ "name": "SFPUC Commission",
+ "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+ "generated": "2026-11-11",
+ "since": "2019-01-01",
+ "range": [
+  "2019-01-22",
+  "2026-11-10"
+ ],
+ "listed": 182,
+ "held": 182,
+ "mirrored": 181,
+ "missing": 1,
+ "missingShare": 0.0055,
+ "items": 5054,
+ "notes": [
+  "Agendas from SFGovTV's Granicus view 22; decisions from the minutes on sfpuc.gov (scripts/sfpuc-commission.py), which start 2021-01-26."
+ ],
+ "meetings": [
+  {
+   "date": "2019-01-22",
+   "id": "g22-32242",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32242",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-02-12",
+   "id": "g22-32394",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32394",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-12",
+   "id": "g22-32631",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32631",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-26",
+   "id": "g22-32770",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32770",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-09",
+   "id": "g22-32844",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32844",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-23",
+   "id": "g22-32965",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32965",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-14",
+   "id": "g22-33134",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33134",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-28",
+   "id": "g22-33257",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33257",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-11",
+   "id": "g22-33381",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33381",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-25",
+   "id": "g22-33545",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33545",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-07-23",
+   "id": "g22-33705",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33705",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-08-13",
+   "id": "g22-33809",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33809",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-08-27",
+   "id": "g22-33880",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33880",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-10",
+   "id": "g22-33957",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33957",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-08",
+   "id": "g22-34217",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34217",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-22",
+   "id": "g22-34347",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34347",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-12",
+   "id": "g22-34475",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34475",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-26",
+   "id": "g22-34608",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34608",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-10",
+   "id": "g22-34685",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34685",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-14",
+   "id": "g22-34912",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34912",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-28",
+   "id": "g22-35016",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35016",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-11",
+   "id": "g22-35151",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35151",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-25",
+   "id": "g22-35272",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35272",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-03-10",
+   "id": "g22-35411",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35411",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-14",
+   "id": "g22-35593",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35593",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-28",
+   "id": "g22-35666",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35666",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-05-12",
+   "id": "g22-35745",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35745",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-05-26",
+   "id": "g22-35821",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35821",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-09",
+   "id": "g22-35904",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35904",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-23",
+   "id": "g22-36004",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36004",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-14",
+   "id": "g22-36159",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36159",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-28",
+   "id": "g22-36277",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36277",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-08-25",
+   "id": "g22-36461",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36461",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-08",
+   "id": "g22-36546",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36546",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-22",
+   "id": "g22-36673",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36673",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-13",
+   "id": "g22-36836",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36836",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-27",
+   "id": "g22-36961",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36961",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-10",
+   "id": "g22-37039",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37039",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-30",
+   "id": "g22-37186",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37186",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-08",
+   "id": "g22-37250",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37250",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-22",
+   "id": "g22-37391",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37391",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-26",
+   "id": "g22-37637",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37637",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-05",
+   "id": "g22-37735",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37735",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-09",
+   "id": "g22-37749",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37749",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-23",
+   "id": "g22-37881",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37881",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-09",
+   "id": "g22-37980",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37980",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-23",
+   "id": "g22-38108",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38108",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-26",
+   "id": "g22-38154",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38154",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-13",
+   "id": "g22-38238",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38238",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-16",
+   "id": "g22-38311",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38311",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-27",
+   "id": "g22-38416",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38416",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-11",
+   "id": "g22-38501",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38501",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-25",
+   "id": "g22-38627",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38627",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-08",
+   "id": "g22-38710",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38710",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-11",
+   "id": "g22-38758",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38758",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-13",
+   "id": "g22-38951",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38951",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-16",
+   "id": "g22-38991",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38991",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-27",
+   "id": "g22-39070",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39070",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-04",
+   "id": "g22-39132",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39132",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-10",
+   "id": "g22-39164",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39164",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-19",
+   "id": "g22-39225",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39225",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-24",
+   "id": "g22-39240",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39240",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-14",
+   "id": "g22-39355",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39355",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-17",
+   "id": "g22-39389",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39389",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-28",
+   "id": "g22-39463",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39463",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-12",
+   "id": "g22-39557",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39557",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-26",
+   "id": "g22-39718",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39718",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-29",
+   "id": "g22-39751",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39751",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-09",
+   "id": "g22-39822",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39822",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-23",
+   "id": "g22-39954",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39954",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-12-14",
+   "id": "g22-40102",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40102",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-07",
+   "id": "g22-40236",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40236",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-11",
+   "id": "g22-40256",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40256",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-14",
+   "id": "g22-40290",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40290",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-20",
+   "id": "g22-40332",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40332",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-25",
+   "id": "g22-40377",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40377",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-08",
+   "id": "g22-40498",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40498",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-22",
+   "id": "g22-40623",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40623",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-08",
+   "id": "g22-40717",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40717",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-22",
+   "id": "g22-40849",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40849",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-12",
+   "id": "g22-40992",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40992",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-26",
+   "id": "g22-41120",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41120",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-10",
+   "id": "g22-41232",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41232",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-24",
+   "id": "g22-41357",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41357",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-14",
+   "id": "g22-41486",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41486",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-28",
+   "id": "g22-41581",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41581",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-07-12",
+   "id": "g22-41642",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41642",
+   "outcome": "empty",
+   "reason": "agenda parsed to no items (none)"
+  },
+  {
+   "date": "2022-08-23",
+   "id": "g22-41900",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41900",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-13",
+   "id": "g22-42011",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42011",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-27",
+   "id": "g22-42112",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42112",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-11",
+   "id": "g22-42215",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42215",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-24",
+   "id": "g22-42343",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42343",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-08",
+   "id": "g22-42439",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42439",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-13",
+   "id": "g22-42650",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42650",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-10",
+   "id": "g22-42740",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42740",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-24",
+   "id": "g22-42842",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42842",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-30",
+   "id": "g22-42884",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42884",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-14",
+   "id": "g22-43008",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43008",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-28",
+   "id": "g22-43091",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43091",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-14",
+   "id": "g22-43182",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43182",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-28",
+   "id": "g22-43281",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43281",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-11",
+   "id": "g22-43369",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43369",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-25",
+   "id": "g22-43513",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43513",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-09",
+   "id": "g22-43617",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43617",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-23",
+   "id": "g22-43743",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43743",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-13",
+   "id": "g22-43907",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43907",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-27",
+   "id": "g22-43993",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43993",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-08",
+   "id": "g22-44225",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44225",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-22",
+   "id": "g22-44289",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44289",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-20",
+   "id": "g22-44496",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44496",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-26",
+   "id": "g22-44526",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44526",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-10",
+   "id": "g22-44615",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44615",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-24",
+   "id": "g22-44737",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44737",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-14",
+   "id": "g22-44888",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44888",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-28",
+   "id": "g22-44938",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44938",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-12",
+   "id": "g22-45049",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45049",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-09",
+   "id": "g22-45152",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45152",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-22",
+   "id": "g22-45247",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45247",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-23",
+   "id": "g22-45260",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45260",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-26",
+   "id": "g22-45285",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45285",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-29",
+   "id": "g22-45287",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45287",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-02",
+   "id": "g22-45316",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45316",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-13",
+   "id": "g22-45426",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45426",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-27",
+   "id": "g22-45528",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45528",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-12",
+   "id": "g22-45628",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45628",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-26",
+   "id": "g22-45738",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45738",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-09",
+   "id": "g22-45843",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45843",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-23",
+   "id": "g22-45949",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45949",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-14",
+   "id": "g22-46138",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46138",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-28",
+   "id": "g22-46242",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46242",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-11",
+   "id": "g22-46331",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46331",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-25",
+   "id": "g22-46442",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46442",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-08-13",
+   "id": "g22-46696",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46696",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-08-27",
+   "id": "g22-46777",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46777",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-10",
+   "id": "g22-46861",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=46861",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-24",
+   "id": "g22-47001",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=47001",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-22",
+   "id": "g22-47353",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=47353",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-12",
+   "id": "g22-47629",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=47629",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-10",
+   "id": "g22-47997",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=47997",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-14",
+   "id": "g22-48401",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=48401",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-28",
+   "id": "g22-48519",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=48519",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-11",
+   "id": "g22-48664",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=48664",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-25",
+   "id": "g22-48800",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=48800",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-11",
+   "id": "g22-49069",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=49069",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-25",
+   "id": "g22-49267",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=49267",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-08",
+   "id": "g22-49452",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=49452",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-13",
+   "id": "g22-49848",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=49848",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-27",
+   "id": "g22-50002",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50002",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-10",
+   "id": "g22-50186",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50186",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-24",
+   "id": "g22-50290",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50290",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-08",
+   "id": "g22-50351",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50351",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-22",
+   "id": "g22-50482",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50482",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-09",
+   "id": "g22-50691",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50691",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-23",
+   "id": "g22-50805",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50805",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-14",
+   "id": "g22-50934",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50934",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-28",
+   "id": "g22-51038",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51038",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-10",
+   "id": "g22-51114",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51114",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-09",
+   "id": "g22-51315",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51315",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-12",
+   "id": "g22-51546",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51546",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-13",
+   "id": "g22-51553",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51553",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-23",
+   "id": "g22-51642",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51642",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-27",
+   "id": "g22-51665",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51665",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-29",
+   "id": "g22-51688",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51688",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-05",
+   "id": "g22-51742",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51742",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-10",
+   "id": "g22-51763",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51763",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-24",
+   "id": "g22-51858",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51858",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-10",
+   "id": "g22-51952",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51952",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-24",
+   "id": "g22-52065",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52065",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-14",
+   "id": "g22-52186",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52186",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-28",
+   "id": "g22-52290",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52290",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-12",
+   "id": "g22-52397",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52397",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-26",
+   "id": "g22-52501",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52501",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-09",
+   "id": "g22-52590",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52590",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-23",
+   "id": "g22-52702",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52702",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-14",
+   "id": "g22-52844",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52844",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-28",
+   "id": "g22-52942",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52942",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-08",
+   "id": "g22-53114",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53114",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-13",
+   "id": "g22-53341",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53341",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-23",
+   "id": "g22-53422",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53422",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-27",
+   "id": "g22-53441",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53441",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-05",
+   "id": "g22-53497",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53497",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-10",
+   "id": "g22-53539",
+   "committee": "SFPUC Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53539",
+   "outcome": "mirrored"
+  }
+ ]
+}

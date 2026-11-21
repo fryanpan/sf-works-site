@@ -1,0 +1,59 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2025-06-10",
+ "id": "g24-50181",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50181",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Minutes of the May 20, 2025 Meeting"
+  },
+  {
+   "no": "3",
+   "title": "Community Advisory Committee Report"
+  },
+  {
+   "no": "4",
+   "title": "State and Federal Legislation Update"
+  },
+  {
+   "no": "5",
+   "title": "Adopt the Proposed Fiscal Year 2025/26 Budget and Work Program"
+  },
+  {
+   "no": "6",
+   "title": "Authorize to Execute a 20-Year Lease with the City and County of San Francisco?s Real Estate Department for Office Space Located at 1455 Market St, in an Amount Not to Exceed $1,126,597 for the First Year"
+  },
+  {
+   "no": "7",
+   "title": "SFMTA Muni Metro Core Capacity Planning Study Update"
+  },
+  {
+   "no": "8",
+   "title": "Internal Accounting Report, Investment Report, and Debt Expenditure Report for the Nine Months Ending March 31, 2025"
+  },
+  {
+   "no": "9",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "10",
+   "title": "Public Comment"
+  },
+  {
+   "no": "11",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

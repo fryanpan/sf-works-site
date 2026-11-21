@@ -1,0 +1,108 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2019-02-12",
+ "id": "g22-32394",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32394",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of January 22, 2019"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Other Commission Business"
+  },
+  {
+   "no": "7",
+   "title": "2017-2018 Annual Financial Statements (KPMG)"
+  },
+  {
+   "no": "8",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "9",
+   "title": "Update on State Water Board’s Bay-Delta Plan Amendment and Voluntary Agreement Negotiations"
+  },
+  {
+   "no": "10a",
+   "title": "Approve an increase of 136 calendar days to the existing 26-day construction contract duration contingency forContract No. WD-2742, 16-Inch Ductile Iron Water Main Replacement on 7th Street from Townsend to 16th Street"
+  },
+  {
+   "no": "10b",
+   "title": "Approve an increase of 340 consecutive calendar days to the existing 60-day construction contract duration contingency for Oceanside Water Pollution Control Plant Door and Building 930 Exterior and Awning Improvements"
+  },
+  {
+   "no": "10c",
+   "title": "Approve an increase of 69 consecutive calendar days to the existing 54-day construction duration contingency for Various Locations Sewer Replacement and Pavement Renovation No.1"
+  },
+  {
+   "no": "10d",
+   "title": "Approve an increase of 45 consecutive calendar days to the existing 120-day construction duration contingency for Various Locations Sewer Replacement and Pavement Renovation No. 4"
+  },
+  {
+   "no": "10e",
+   "title": "Accept work performed by Ranger Pipelines Inc., for Marin Street Sewer Replacement, for a total contract amount of $4,999,681 and a total contract duration of 491 consecutive calendar days"
+  },
+  {
+   "no": "11",
+   "title": "Discussion of proposed amendment to Rule 6 of the San Francisco Public Utilities Commission’s Rules of Order"
+  },
+  {
+   "no": "12",
+   "title": "Approve Amendment No. 4 to Construction Management Service – Calaveras Dam Replacement Project, with Black and Veatch Corporation."
+  },
+  {
+   "no": "13",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel"
+  },
+  {
+   "no": "15",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "27",
+   "title": "Announcement Following Closed Session"
+  },
+  {
+   "no": "28",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "29",
+   "title": "Other New Business"
+  },
+  {
+   "no": "30",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

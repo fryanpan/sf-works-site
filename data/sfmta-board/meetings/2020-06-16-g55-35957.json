@@ -1,0 +1,111 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-06-16",
+ "id": "g55-35957",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35957",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22073"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - June 2, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Authorizing the Director to issue RFP’s for procurement of Single- and Multi-Space Parking Meter Hardware and Associated Systems",
+   "decision": "ADOPTED — 4 ayes (Resolution 200616-052)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving Amendment with Fehr & Peers and an amendment with Kittelson and Associates, for environmental and transportation analysis",
+   "decision": "ADOPTED — 4 ayes (Resolution 200616-053)"
+  },
+  {
+   "no": "10.3",
+   "title": "Honoring Malcolm Heinicke’s significant and lasting contributions to public transportation in San Francisco",
+   "decision": "ADOPTED — 4 ayes (Resolution 200616-054)"
+  },
+  {
+   "no": "11",
+   "title": "Consenting to the Balboa Reservoir Project Development Agreement and making environmental review findings",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Approving a parking protected bikeway and parking and traffic modifications as part of the Valencia Street Improvement Project",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Amending Transportation Code to designate a Muni and Golden Gate Transit lane, at all times, on Beale Street, from Market St to Natoma St",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Authorizing the Director to execute Next Generation Customer Information System",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Approving the SFMTA’s Public Transportation Agency Safety Plan",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "16",
+   "title": "Discussion and vote to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "17",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

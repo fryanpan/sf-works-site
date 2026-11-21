@@ -1,0 +1,34 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-04-16",
+ "id": "g22-38311",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38311",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/April%2016%20Special%20Mtg%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Presentations on Green and Grey Infrastructure for Stormwater Management and Flood Resilience",
+   "text": "Presentations on Green and Grey Infrastructure for Stormwater Management and Flood Resilience: SFPUC Staff Presentations on (i) Overview of San Francisco’s historic watersheds, combined stormwater/sewer system, and development of the five-year storm Level of Service and (ii) SFPUC’s capital improvement projects, policies and programs for stormwater management and flood resilience Stephen Robinson, Director of Wastewater Capital Programs, thanked everyone for their attendance and reviewed the workshop agenda (1) overview of San Francisco’s historic watersheds, combined stormwater/sewer system, and development of the five- year storm Level-of-Service (LOS), (2) SFPUC’s capital improvement projects, policies, and programs for stormwater management and flood resilience, and (3) Perspectives from other municipalities on green and grey infrastructure (Philadelphia Water Department, DC Water, City of New York, Department of Environmental Protection, and City of Portland, Oregon). He reviewed San Francisco’s historic watersheds, which were once full of creeks and SFPUC SPECIAL MEETING MINUTES – APRIL 16, 2021 2 marshes. He noted San Francisco’s combined sewer system is 100 years old, has 1,000 miles of pipes, three treatment plants, and 27 pump stations. He discussed flooding challenges and stated that flooding can occur with a large storm event that exceeds capacity of a drainage system and that SFPUC’s approach is to identify neighborhoods with the highest flood risk to prioritize "
+  },
+  {
+   "no": "4",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

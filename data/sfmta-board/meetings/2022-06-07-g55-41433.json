@@ -1,0 +1,33 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-06-07",
+ "id": "g55-41433",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41433",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26710"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Supplemental Director’s Report - Disclosure of Conformed Labor Agreements"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

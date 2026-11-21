@@ -1,0 +1,1226 @@
+==============================================================================
+Office of the Mayor, Department of Technology, Office of the City Administrator, Office of Contract Administration
+2025-08-11
+https://api.sf.gov/documents/44218/AI_Consolidated_Responses.pdf
+==============================================================================
+
+O FFI CE O F THE M AYO R                                                                DANIEL LURIE
+S AN F RA NCI S CO                                                                             M AYO R
+
+
+
+   August 11, 2025
+
+   The Honorable Rochelle C. East
+   Presiding Judge, Superior Court of California, County of San Francisco
+   400 McAllister Street, Room 008
+   San Francisco, CA 94102-4512
+
+   Dear Judge East,
+
+   In accordance with Penal Code 933 and 933.05, the following is in response to the 2024-2025
+   Civil Grand Jury Report, Techs in the City -Government’s Opportunity to Seize the AI Moment. We would
+   like to thank the members of the 2024-2025 Civil Grand Jury for their interest in the City’s
+   technology portfolio, management structure, and service implementation.
+
+   We agree with the core elements of the Jury’s findings, particularly regarding the need to aggressively
+   deploy AI technologies to City departments and employees. The City has launched one of the largest
+   public-sector generative AI rollouts in the country, making Microsoft Copilot Chat available to
+   30,000 City employees. This builds on a successful pilot with over 2,000 staff that demonstrated
+   meaningful time savings through the use of AI assistant tools. We’re also piloting targeted AI
+   solutions to improve service delivery in areas like 311 response times and language translation, and
+   are committed to expanding the use of AI technology across the City in the months and years ahead.
+
+   Additionally, we agree with the Jury’s findings on the federated management structure of technology
+   within the City, and its effects on the deployment and procurement of emerging technologies.
+   The Office the Mayor, the Committee on Information Technology (COIT), and the Department of
+   Technology (DT) are currently working to consolidate IT resources, update technology purchase
+   and cost analysis processes, and identify opportunities for synergistic technology acquisition across
+   departments that do not typically work together. The scope of this work is ambitious; we are
+   committed to meaningful change but will need time to coordinate a transformation of this size.
+
+   We do, however, disagree with the Jury’s perspective regarding the Committee on Information
+   Technology (COIT) and its committee leadership. While COIT membership is established through
+   the administrative code, and officially is composed of mostly department heads, the individuals
+   doing the work are talented and experienced CIOs, including DT, MTA, the SFPUC, DPH, and
+   other large city agencies. Their leadership and expertise are paramount in ensuring effective
+   implementation of any technology plan. We will continue to work to strengthen and maximize
+   coordination and leadership through the COIT process.
+
+   The City takes these findings and recommendations very seriously and is committed to rapidly
+   expanding the role of AI technology and streamlining technology resources to improve city services
+   and employee efficiency.
+
+   Detailed responses from the Mayor’s Office, Office of the City Administrator, Office of
+   Contract Administration, and Department of Technology are attached.
+
+                                1 DR. CARLTON B. GOODLETT PLACE, ROOM 200
+                                   SAN FRANCISCO, CALIFORNIA 94102-4681
+Sincerely,
+
+
+
+
+Daniel Lurie
+Mayor
+
+
+
+                                    for
+Carmen Chu
+City Administrator, Office of the City Administrator
+
+
+
+
+Sailaja Kurella
+Office of Contract Administration
+
+
+
+
+                              for
+Michael Makstman
+Director, Department of Technology
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+                                                                                     Response                        Response Text
+                                                                                 Agree with the     No explanation needed
+                                                               Respondent
+                                                                                 finding
+  #                         Finding                            Assigned by
+                                                                                 Disagree,          Specify portion disputed and reason
+                                                                  CGJ
+                                                                                 partially
+                                                                                 Disagree, wholly   Specify disputation and reason
+ F1    Concerns over the potential risks of AI have led       MYR, ADM,          Agree with the
+       to an overly cautious approach toward emerging         DT                 finding
+       technology. The city risks missing opportunities
+       to harness new technology to improve
+       governance and delivery of services to citizens.
+ F2    Governance of technology in the city is                MYR, ADM,          Agree with the
+       hindered because of a federated management             DT                 finding
+       structure across departments. Such hindrance
+       has slowed or impaired the ability of the city to
+       efficiently identify, pilot, test, and deploy
+       emerging technologies.
+ F3    Procurement of technology in the city is               MYR, DT,           Agree with the
+       hindered because of a federated management             OCA                finding
+       structure across departments. This hinders the
+       ability to find and implement useful, scalable AI
+       and emerging technology solutions, and presents
+       risks to enforcing quality, standardization,
+       privacy and interoperability.
+ F4    The Committee on Information Technology                MYR                Disagree, wholly   The members of the Committee on Information
+       (COIT) is comprised mostly of non-technical                                                  Technology are appointed through the
+       leaders and has insufficient authority and                                                   administrative code, and represent department
+       influence over departments’ technology plans.                                                leadership to ensure buy-in. However, the
+       As a result, it is falling short of its objective to                                         individuals that routinely attend COIT and relevant
+       streamline ICT policy and roadmapping in San                                                 subcommittees are departmental CIOs or other
+       Francisco, which threatens current and emerging                                              technical leads and have the relevant content and
+       technology initiatives alike.                                                                expertise to advise on the COIT agenda. The
+                                                                             1
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+                                                                         Committee makes recommendations and can set
+                                                                         policy; individual departments appropriately make
+                                                                         their own procurement decisions in collaboration
+                                                                         with the Mayor's Budget Office and OCA.
+
+
+
+
+                                                                     2
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+
+
+                                                                               Response                        Response Text
+                                                                          Has been              Summary regarding implemented action
+                                                                          implemented
+                                                        Respondent        Will be               Timeframe for implementation
+   #                 Recommendation                     Assigned by       implemented
+                                                           CGJ            Requires further      Explain scope and parameter of analysis,
+                                                                          analysis              timeframe (should not exceed 6-months)
+                                                                          Will not be           Explain thereof
+                                                                          implemented
+ R1.1   By September 30, 2025, the mayor should           MYR             Has not yet been      The Office of Emerging Technologies, in
+ [for   direct DT to produce a comprehensive AI                           implemented but       collaboration with COIT, is working to develop an
+ F1]    strategy — to be published by June 30, 2026                       will be               AI strategy that will reflect the proposed items.
+        — outlining near- and long-term                                   implemented in the    Specific human resource needs are likely to be
+        implementation targets for incorporating AI                       future                deferred to the budget process rather than the
+        into city systems and services. The strategy                                            strategy document.
+        should include guidance on infrastructure, data
+        sharing, ethics, pilot programs and
+        performance evaluation, training and human
+        resource needs.
+ R1.2   By December 31, 2025, the city administrator      ADM, DT         Will not be           DT and DataSF are actively advancing data
+ [for   and DT should produce a report examining the                      implemented           governance and modernizing our data architecture
+ F1]    current data governance and data architecture                     because it is not     to ensure the City’s readiness for generative AI
+        of the city, identifying areas of concern or lack                 warranted or is not   applications. DataSF and COIT are leading efforts
+        of readiness for compatibility with the future                    reasonable            to substantially revise the Data Management
+        implementation of generative AI applications                                            Policy for use in AI applications, and are
+        such as Microsoft Copilot or other similar                                              onboarding City departments onto a Unified Data
+        applications that would be able to utilize access                                       Platform powered by Snowflake to enable cross-
+        to internal city data to find information,                                              departmental data integrations and analysis.
+        produce insights and make inferences.
+
+
+                                                                      3
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+ R1.3   By December 31, 2025, DT should put forward DT                   Will not be        DT will continue to monitor and evaluate City
+ [for   a plan outlining i) the forecasted demand for                    implemented        employee usage, demand, and the effectiveness of
+ F1]    Microsoft Copilot, ChatGPT, or other                             because it is not  Microsoft Copilot, ChatGPT, and other generative
+        generative AI licenses for city workers and ii)                  warranted or is notAI tools, and consider this in our proposed FY 26-
+        potential sustainable financing sources,                         reasonable         27 budget. Our team will negotiate cost-effective
+        including requests from the general fund, to be                                     licenses for required AI tools, explore
+        submitted in the next budget cycle.                                                 opportunities for potential grant funding or
+                                                                                            partnerships, and collaborate with the Mayor's
+                                                                                            Budget Office to identify sustainable financing
+                                                                                            sources. However, budgetary decisions are made
+                                                                                            on a Citywide basis through work with the
+                                                                                            Mayor's Office and Board of Supervisors.
+ R1.4   As part of completing the legislatively          DT              Has not yet been   The Department of Technology, in coordination
+ [for   mandated AI inventory per Chapter 22J (due                       implemented but    with COIT, will work to develop a framework for
+ F1]    January 19, 2026), DT should work with                           will be            evaluating the value of an ongoing AI investment
+        departments to produce public reporting on the                   implemented in the or tool toward achieving a cost-effective service
+        city’s website with agreed upon key                              future             delivery goal. This may not be a KPI model in
+        performance indicators (KPIs) for piloted AI                                        particular. Individual departments will ultimately
+        technology identified in the AI inventory, as                                       be responsible for determining the effectiveness of
+        well as establish a cost/benefit framework                                          AI technology.
+        based on identified KPIs. Software pilots
+        should have productivity measurements, and
+        hardware pilots should be measured against
+        status quo metrics for problems they seek to
+        address.
+ R1.5   By December 31, 2025, DT should establish a      DT              Has been              DT has engaged in significant employee training
+ [for   program to identify AI champions in city                         implemented           and has fostered an internal GenAI community of
+ F1]    government departments, “train the trainer”                                            over 3,300 staff members to encourage peer-to-
+        programs, and broader education opportunities                                          peer learning and experimentation. Through our
+        for city employees. This could be managed by                                           recent ChatGPT pilot, we delivered over 50 hours
+        city employees or in partnership with local                                            of AI-focused workshops, webinars, and
+                                                                                               hackathons, reaching more than 4,000 city staff.
+
+                                                                     4
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+        higher education institutions or private sector                                     We have also partnered with the nonprofit
+        organizations.                                                                      InnovateUS to deploy specialized AI courses
+                                                                                            accessible to all city employees via DHR’s
+                                                                                            SFLearning Portal. Over the next 6-12 months, we
+                                                                                            will expand and enhance our citywide AI training.
+                                                                                            We plan to organize an "AI Day" to highlight
+                                                                                            practical use cases, showcase available tools, and
+                                                                                            generate interest in emerging AI opportunities
+                                                                                            among city leaders and staff.
+ R1.6   By September 30, 2025, the CIO should           DT               Has been           Both the CIO and Emerging Technologies
+ [for   designate the emerging technologies director as                  implemented        Director actively engage with the GovAI
+ F1]    the formal ambassador from SF to the GovAI                                          coalition, and they will continue to involve
+        coalition and should appoint other                                                  relevant DT staff in these activities.
+        representatives to the coalition at their
+        discretion. They should work to attend all
+        formal gatherings of the coalition and report
+        periodically on findings from their
+        involvement in the coalition that could improve
+        AI implementation in San Francisco’s
+        government.
+ R2.1   By December 31, 2025, the mayor and city        MYR, ADM         Requires further   The Mayor's Office is working with the City
+ [for   administrator should adopt a plan for unifying                   analysis           Administrator, Department of Technology, Digital
+ F2]    more technology-related organizations within                                        Services, DataSF and others to review and analyze
+        DT, including digital services and other                                            the City's IT governance and delivery structure.
+        technology functions under the city                                                 The City expects to make recommendations to
+        administrator.                                                                      improve efficient service delivery by Spring 2026.
+
+ R2.2   By December 31, 2025, the mayor’s office        MYR              Has not yet been   See answer 2.1
+ [for   should undertake a review of current IT                          implemented but
+ F2]    headcount in departments outside of the city                     will be
+        administrator and adopt a plan for unifying IT                   implemented in the
+        resourcing within DT, including but not limited                  future
+
+                                                                     5
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+        to relocating IT job classifications to DT and
+        reallocating departmental assignment of IT
+        resources.
+ R2.3   The mayor should mandate that departmental         MYR, DT       Has been              Mayor Lurie has prioritized inter-departmental
+ [for   CIOs and other IT leaders be required to meet                    implemented           collaboration in his first 6 months. This
+ F2]    with DT leadership in a regular structured                                             collaboration continues to happen both through
+        forum, hosted and organized by DT, to                                                  the COIT process and in direct work between DT
+        collaborate with DT leadership on IT                                                   and its peer departments.
+        initiatives, roadmaps and other matters. These
+        meetings should begin by September 30, 2025.
+ R3.1   By June 30, 2026, the mayor and CIO should         MYR, DT       Will not be           The Office of Contract Administration has a
+ [for   jointly conduct a detailed review and adopt                      implemented           robust procurement review process, which in
+ F3]    new procurement guidelines for city                              because it is not     many cases includes a technology and
+        department technology purchasing such that                       warranted or is not   surveillance review. OCA and DT may work to
+        technology that meets certain criteria (cost,                    reasonable            update that process to ensure that AI tools are
+        strategic relevance, overall risk level) should                                        procured responsibly and intentionally without
+        be prioritized, purchased and implemented                                              additional administrative burden.
+        through DT in accordance with the ICT plan,
+        as affirmed by DT. The CIO and emerging
+        technologies director should have the ability to
+        definitively reject purchases deemed
+        incompatible with ICT policy or vendor
+        strategy, and/or propose alternative purchases
+        that are better aligned with ICT strategy.
+        Purchase orders with vendors deemed not
+        compatible with ICT objectives should be
+        cancelled.
+ R3.2   By June 30, 2026, the emerging technologies        DT, OCA       Will not be           See answer 3.1
+ [for   director, in partnership with the CIO and OCA,                   implemented
+ F3]    should complete a review and update of                           because it is not
+        policies and resources to facilitate procurement                 warranted or is not
+        of emerging technology that meets city                           reasonable
+
+                                                                     6
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+        standards and objectives. This may include
+        drafting new vendor standards for AI-related
+        technology procurement (addressing model
+        training, privacy, etc.), template vendor
+        contracts specific to AI technology, and the
+        negotiation of enterprise agreements with AI
+        vendors who meet city ICT standards.
+ R3.3   As part of completing the legislatively        DT                Will not be           See answer 3.1
+ [for   mandated AI inventory (due January 19, 2026),                    implemented
+ F3]    DT should provide procurement                                    because it is not
+        recommendations specifying whether                               warranted or is not
+        identified technologies should continue to be                    reasonable
+        purchased, and/or moved to a different vendor.
+ R3.4   By September 30, 2025, the mayor should        MYR               Has been           The City has established robust forums that fulfill
+ [for   issue guidance to all departments mandating                      implemented        the intent of this recommendation through existing
+ F3]    both that i) departmental procurement leads                                         governance structures. The Committee on
+        should be required to attend a regular forum                                        Information Technology (COIT) and its Budget &
+        with DT to discuss technology procurement                                           Performance Subcommittee meet regularly,
+        goals and initiatives, and ii) DT host such                                         providing a structured platform for technology
+        forums on a regular (monthly, quarterly,                                            leadership and city leadership to discuss
+        semiannual) basis.                                                                  technology procurement goals, initiatives, and
+                                                                                            strategic priorities. DT also hosts a biannual
+                                                                                            Citywide Technology Procurement Forums for
+                                                                                            department procurement leads and CIOs.
+ R3.5   By June 30, 2026, the emerging technologies       DT             Has not yet been   COIT and DT agree with this recommendation.
+ [for   director and CIO should submit a formal report                   implemented but    DT has made significant progress implementing
+ F3]    to COIT (or a successor body) recommending                       will be            the Chapter 22J reporting requirements and will
+        updates to the 22 AI inventory questions                         implemented in the use this practical experience to inform potential
+        outlined in recent legislation, with the aim of                  future             changes to the reporting process. DT will seek to
+        streamlining the inventory process.                                                 submit recommended updates to the Chapter 22J
+                                                                                            process to COIT by Jun 30, 2026 and COIT will
+                                                                                            review the recommendations after submission.
+
+                                                                     7
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+ R4.1   By June 30, 2026, the city should enact an      MYR              Will not be           The City Administrator disagrees with this
+ [for   ordinance amending the Administrative Code                       implemented           recommendation. COIT serves a vital role,
+ F4]    to eliminate COIT and centralize a replacement                   because it is not     providing independent oversight, strategic
+        advisory body under DT. This ordinance could                     warranted or is not   guidance, and cross-departmental coordination for
+        be enacted through the customary legislative                     reasonable            the city's technology initiatives. COIT also
+        process established in the Charter. In the                                             provides a forum for consensus building on
+        alternative, by December 31, 2025, the mayor                                           technology policy and brings visibility to
+        and the board of supervisors should each                                               technology planning and funding decisions. This
+        recommend to the Commission Streamlining                                               important function would benefit from enhanced
+        Task Force (established by Proposition E,                                              authority, clearer mandate definition, and
+        November 2024) that it include COIT in an                                              improved resource allocation. We recommend
+        ordinance the Task Force would introduce to                                            focusing on structural improvements to increase
+        eliminate certain commissions.                                                         COIT's effectiveness rather than dissolution.
+ R4.2   By December 31, 2025, the mayor should          MYR              Has been              The Committee on Information Technology
+ [for   mandate that all departments produce a                           implemented           already publishes a coordinated technology
+ F4]    technology roadmap in a form and substance to                                          roadmap in the form of its annual Information and
+        be agreed with DT, which would include                                                 Communications Technology (ICT) Plan. The
+        departmental technology initiatives as well as                                         Mayor has asked COIT to update this roadmap to
+        automation goals and potential applications for                                        include additional accountability measures.
+        AI and emerging technology. Roadmaps that
+        contain milestones and deadlines for major
+        initiatives should be submitted to DT and
+        refreshed on an annual basis.
+ R4.3   By December 31, 2025, the city should pass an MYR                Has not yet been      The City supports this recommendation and will
+ [for   ordinance amending the Administrative Code                       implemented but       begin the necessary steps to implement the
+ F4]    to create a permanent seat on COIT for the                       will be               creation of a permanent seat on COIT for the
+        emerging technologies director, pending its                      implemented in the    emerging technologies director. Implementation
+        action related to Recommendation 4.1.                            future                will require amending Section 22A.3 of the
+                                                                                               Administrative Code, which currently defines
+                                                                                               COIT's membership composition, to formally add
+                                                                                               the emerging technologies director as a voting
+                                                                                               member of the committee. COIT will work with
+
+                                                                     8
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+                                                                         the City Attorney's Office to draft the necessary
+                                                                         ordinance amendments and aims to introduce the
+                                                                         legislation to the Board of Supervisors well in
+                                                                         advance of December 31, 2025, to allow for
+                                                                         sufficient time for the legislative process to be
+                                                                         completed.
+
+
+
+
+                                                                     9
+
+
+==============================================================================
+Board of Supervisors, Resolution 454-25, File 250648
+2025-09-30
+https://sfbos.org/sites/default/files/r0454-25.pdf
+==============================================================================
+
+                                                AMENDED IN COMMITTEE
+                                                      9/18/2025
+      FILE NO. 250648                                               RESOLUTION NO. 454-25
+
+
+ 1   [Board Response - Civil Grand Jury Report - Techs in the City: Government's Opportunity to
+     Seize the Al Moment]
+ 2
+
+ 3
+     Resolution responding to the Presiding Judge of the Superior Court on the findings
+ 4
+     and recommendations contained in the 2024-2025 Civil Grand Jury Report, entitled
+ 5
+     "Techs in the City: Government's Opportunity to Seize the Al Moment;" and urging the
+ 6
+     Mayor to cause the implementation of accepted findings and recommendations
+ 7
+     through his department heads and through the development of the annual budget.
+ 8
+
+ 9
+             WHEREAS, Under California Penal Code, Section 933 et seq., the Board of
+10
+     Supervisors must respond, within 90 days of receipt, to the Presiding Judge of the Superior
+11
+     Court on the findings and recommendations contained in Civil Grand Jury Reports; and
+12
+             WHEREAS, In accordance with California Penal Code, Section 933.05(c), if a finding or
+13
+     recommendation of the Civil Grand Jury addresses budgetary or personnel matters of a
+14
+     county agency or a department headed by an elected officer, the agency or department head
+15
+     and the Board of Supervisors shall respond if requested by the Civil Grand Jury, but the
+16
+     response of the Board of Supervisors shall address only budgetary or personnel matters over
+17
+     which it has some decision making authority; and
+18
+             WHEREAS, Under San Francisco Administrative Code, Section 2.1 0(a), the Board of
+19
+     Supervisors must conduct a public hearing by a committee to consider a final report of the
+20
+     findings and recommendations submitted, and notify the current foreperson and immediate
+21
+     past foreperson of the Civil Grand Jury when such hearing is scheduled; and
+22
+             WHEREAS, In accordance with San Francisco Administrative Code, Section 2.10(b),
+23
+     the Controller must report to the Board of Supervisors on the implementation of
+24
+
+25
+
+
+
+
+     Government Audit and Oversight Committee
+     BOARD OF SUPERVISORS                                                                       Page 1
+ 1   recommendations that pertain to fiscal matters that were considered at a public hearing held
+
+ 2   by a Board of Supervisors Committee; and
+
+ 3           WHEREAS, The 2024-2025 Civil Grand Jury Report, entitled "Techs in the City:
+
+ 4   Government's Opportunity to Seize the Al Moment" ("Report") is on file with the Clerk of the
+
+ 5   Board of Supervisors in File No. 250647, which is hereby declared to be a part of this
+
+ 6   Resolution as if set forth fully herein; and
+
+ 7           WHEREAS, The Civil Grand Jury has requested that the Board of Supervisors respond
+
+ 8   to Finding No. F4, as well as Recommendation Nos. R4.1 and R4.3, contained in the subject
+
+ 9   Report; and
+
+1O           WHEREAS, Finding No. F4 states: "The Committee on Information Technology (COIT)
+
+11   is comprised mostly of non-technical leaders and has insufficient authority and influence over
+
+12   departments' technology plans. As a result, it is falling short of its objective to streamline ICT
+
+13   policy and roadmapping in San Francisco, which threatens current and emerging technology
+
+14   initiatives alike;" and
+
+15           WHEREAS, Recommendation No. R4.1 states: "By June 30, 2026, the city should
+
+16   enact an ordinance amending the Administrative Code to eliminate COIT and centralize a
+
+17   replacement advisory body under OT. This ordinance could be enacted through the customary
+
+18   legislative process established in the Charter. In the alternative, by December 31, 2025, the
+
+19   mayor and the board of supervisors should each recommend to the Commission Streamlining
+
+20   Task Force (established by Proposition E, November 2024) that it include COIT in an
+
+21   ordinance the Task Force would introduce to eliminate certain commissions;" and
+
+22           WHEREAS, Recommendation No. R4.3 states: "By December 31, 2025, the city
+
+23   should pass an ordinance amending the Administrative Code to create a permanent seat on
+
+24   COIT for the emerging technologies director, pending its action related to
+
+25   Recommendation 4.1 ;" and
+
+
+
+
+     Government Audit and Oversight Committee
+     BOARD OF SUPERVISORS                                                                         Page 2
+ 1           WHEREAS, In accordance with California Penal Code, Section 933.05(c), the Board of
+
+ 2   Supervisors must respond, within 90 days of receipt, to the Presiding Judge of the Superior
+
+ 3   Court on Finding No. F4, as well as Recommendation Nos. R4.1 and R4.3 contained in the
+
+ 4   subject Report; now, therefore, be it
+
+ 5           RESOLVED, That the Board of Supervisors reports to the Presiding Judge of the
+
+ 6   Superior Court that they partially disagree with Finding No. F4 for the following reasons:
+
+ 7   members of COIT are appointed through the administrative code, and the individuals that
+
+ 8   routinely attend COIT and relevant subcommittees are departmental CIOs or other technical
+
+ 9   leads. Furthermore, COIT already publishes a coordinated technology roadmap in the form of
+
+10   its annual Information and Communications Technology (ICT) Plan; and, be it
+
+11           FURTHER RESOLVED, That the Board of Supervisors reports that Recommendation
+
+12   No. R4.1 will not be implemented because it is unwarranted or unreasonable for the following
+
+13   reasons: COIT plays a valuable role in coordinating citywide IT projects and expenditures.
+
+14   Rather than eliminating COIT, we recommend focusing on structural improvements, such as
+
+15   clearer mandate definition, regular engagement with the Board of Supervisors to report on ICT
+
+16   policy goals, and enhanced authority to set standards for the deployment and procurement of
+
+17   emerging technologies; and, be it
+
+18           FURTHER RESOLVED, That the Board of Supervisors reports that Recommendation
+
+19   No. R4.3 has not yet been implemented but will be implemented by December 31, 2025; and,
+
+20   be it
+
+21           FURTHER RESOLVED, That the Board of Supervisors urges the Mayor to cause the
+
+22   implementation of the accepted findings and recommendations through his department heads
+
+23   and through the development of the annual budget.
+
+24
+
+25
+
+
+
+
+     Government Audit and Oversight Committee
+     BOARD OF SUPERVISORS                                                                         Page 3
+                                               City and County of San Francisco                            City Hall
+                                                                                                1 Dr. Carlton B. Goodlett Place
+                                                                 Tails                          San Francisco, CA 94102-4689
+
+                                                             Resolution
+
+
+            File Number:                250648                              Date Passed:    September 30, 2025
+
+            Resolution responding to the Presiding Judge of the Superior Court on the findings and
+            recommendations contained in the 2024-2025 Civil Grand Jury Report, entitled "Techs in the City -
+            Government's Opportunity to Seize the Al Moment;" and urging the Mayor to cause the implementation
+            of accepted findings and recommendations through his department heads and through the development
+            of the annual budget.
+
+
+                         September 18, 2025 Government Audit and Oversight Committee - AMENDED, AN
+                         AMENDMENT OF THE WHOLE BEARING SAME TITLE
+
+                         September 18, 2025 Government Audit and Oversight Committee - RECOMMENDED AS
+                         AMENDED
+
+                         September 30, 2025 Board of Supervisors - ADOPTED
+                                        Ayes: 11 - Chan, Chen, Dorsey, Engardio, Fielder, Mahmood, Mandelman, Melgar,
+                                        Sauter, Sherrill and Walton
+
+
+                           File No. 250648                                I hereby certify that the foregoing
+                                                                          Resolution was ADOPTED on 9/30/2025 by
+                                                                          the Board of Supervisors of the City and
+                                                                          County of San Francisco.
+
+
+
+
+                                  Unsigned                                           10/10/2025
+                                       Daniel Lurie                                  Date Approved
+                                         Mayor
+
+
+
+
+City a11d Cou11ty of Sa11 Fra11cisco                             Page I                           Pri11ted at 12:21 pm 011 10/1/25
+I hereby certify that the foregoing resolution, not being signed by the Mayor within the time limit as set
+forth in Section 3.103 of the Charter, or time waived pursuant to Board Rule 2.14.2, became effective
+without his approval in accordance with the provision of said Section 3.103 of the Charter or Board Rule
+2.14.2.
+
+
+                                                                     10/10/2025
+          J;Y£,~
+             ,f_Angela-                                                  Date
+              Clerk of the Board
+
+
+
+
+File No. 250648
+
+
+==============================================================================
+Board of Supervisors
+2025-10-24
+https://api.sf.gov/documents/46588/Techs_in_the_City_Report__Response_BOS_102425.pdf
+==============================================================================
+
+                                                AMENDED IN COMMITTEE
+                                                      9/18/2025
+      FILE NO. 250648                                               RESOLUTION NO. 454-25
+
+
+ 1   [Board Response - Civil Grand Jury Report - Techs in the City: Government's Opportunity to
+     Seize the Al Moment]
+ 2
+
+ 3
+     Resolution responding to the Presiding Judge of the Superior Court on the findings
+ 4
+     and recommendations contained in the 2024-2025 Civil Grand Jury Report, entitled
+ 5
+     "Techs in the City: Government's Opportunity to Seize the Al Moment;" and urging the
+ 6
+     Mayor to cause the implementation of accepted findings and recommendations
+ 7
+     through his department heads and through the development of the annual budget.
+ 8
+
+ 9
+             WHEREAS, Under California Penal Code, Section 933 et seq., the Board of
+10
+     Supervisors must respond, within 90 days of receipt, to the Presiding Judge of the Superior
+11
+     Court on the findings and recommendations contained in Civil Grand Jury Reports; and
+12
+             WHEREAS, In accordance with California Penal Code, Section 933.05(c), if a finding or
+13
+     recommendation of the Civil Grand Jury addresses budgetary or personnel matters of a
+14
+     county agency or a department headed by an elected officer, the agency or department head
+15
+     and the Board of Supervisors shall respond if requested by the Civil Grand Jury, but the
+16
+     response of the Board of Supervisors shall address only budgetary or personnel matters over
+17
+     which it has some decision making authority; and
+18
+             WHEREAS, Under San Francisco Administrative Code, Section 2.1 0(a), the Board of
+19
+     Supervisors must conduct a public hearing by a committee to consider a final report of the
+20
+     findings and recommendations submitted, and notify the current foreperson and immediate
+21
+     past foreperson of the Civil Grand Jury when such hearing is scheduled; and
+22
+             WHEREAS, In accordance with San Francisco Administrative Code, Section 2.10(b),
+23
+     the Controller must report to the Board of Supervisors on the implementation of
+24
+
+25
+
+
+
+
+     Government Audit and Oversight Committee
+     BOARD OF SUPERVISORS                                                                       Page 1
+ 1   recommendations that pertain to fiscal matters that were considered at a public hearing held
+
+ 2   by a Board of Supervisors Committee; and
+
+ 3           WHEREAS, The 2024-2025 Civil Grand Jury Report, entitled "Techs in the City:
+
+ 4   Government's Opportunity to Seize the Al Moment" ("Report") is on file with the Clerk of the
+
+ 5   Board of Supervisors in File No. 250647, which is hereby declared to be a part of this
+
+ 6   Resolution as if set forth fully herein; and
+
+ 7           WHEREAS, The Civil Grand Jury has requested that the Board of Supervisors respond
+
+ 8   to Finding No. F4, as well as Recommendation Nos. R4.1 and R4.3, contained in the subject
+
+ 9   Report; and
+
+1O           WHEREAS, Finding No. F4 states: "The Committee on Information Technology (COIT)
+
+11   is comprised mostly of non-technical leaders and has insufficient authority and influence over
+
+12   departments' technology plans. As a result, it is falling short of its objective to streamline ICT
+
+13   policy and roadmapping in San Francisco, which threatens current and emerging technology
+
+14   initiatives alike;" and
+
+15           WHEREAS, Recommendation No. R4.1 states: "By June 30, 2026, the city should
+
+16   enact an ordinance amending the Administrative Code to eliminate COIT and centralize a
+
+17   replacement advisory body under OT. This ordinance could be enacted through the customary
+
+18   legislative process established in the Charter. In the alternative, by December 31, 2025, the
+
+19   mayor and the board of supervisors should each recommend to the Commission Streamlining
+
+20   Task Force (established by Proposition E, November 2024) that it include COIT in an
+
+21   ordinance the Task Force would introduce to eliminate certain commissions;" and
+
+22           WHEREAS, Recommendation No. R4.3 states: "By December 31, 2025, the city
+
+23   should pass an ordinance amending the Administrative Code to create a permanent seat on
+
+24   COIT for the emerging technologies director, pending its action related to
+
+25   Recommendation 4.1 ;" and
+
+
+
+
+     Government Audit and Oversight Committee
+     BOARD OF SUPERVISORS                                                                         Page 2
+ 1           WHEREAS, In accordance with California Penal Code, Section 933.05(c), the Board of
+
+ 2   Supervisors must respond, within 90 days of receipt, to the Presiding Judge of the Superior
+
+ 3   Court on Finding No. F4, as well as Recommendation Nos. R4.1 and R4.3 contained in the
+
+ 4   subject Report; now, therefore, be it
+
+ 5           RESOLVED, That the Board of Supervisors reports to the Presiding Judge of the
+
+ 6   Superior Court that they partially disagree with Finding No. F4 for the following reasons:
+
+ 7   members of COIT are appointed through the administrative code, and the individuals that
+
+ 8   routinely attend COIT and relevant subcommittees are departmental CIOs or other technical
+
+ 9   leads. Furthermore, COIT already publishes a coordinated technology roadmap in the form of
+
+10   its annual Information and Communications Technology (ICT) Plan; and, be it
+
+11           FURTHER RESOLVED, That the Board of Supervisors reports that Recommendation
+
+12   No. R4.1 will not be implemented because it is unwarranted or unreasonable for the following
+
+13   reasons: COIT plays a valuable role in coordinating citywide IT projects and expenditures.
+
+14   Rather than eliminating COIT, we recommend focusing on structural improvements, such as
+
+15   clearer mandate definition, regular engagement with the Board of Supervisors to report on ICT
+
+16   policy goals, and enhanced authority to set standards for the deployment and procurement of
+
+17   emerging technologies; and, be it
+
+18           FURTHER RESOLVED, That the Board of Supervisors reports that Recommendation
+
+19   No. R4.3 has not yet been implemented but will be implemented by December 31, 2025; and,
+
+20   be it
+
+21           FURTHER RESOLVED, That the Board of Supervisors urges the Mayor to cause the
+
+22   implementation of the accepted findings and recommendations through his department heads
+
+23   and through the development of the annual budget.
+
+24
+
+25
+
+
+
+
+     Government Audit and Oversight Committee
+     BOARD OF SUPERVISORS                                                                         Page 3
+                                               City and County of San Francisco                            City Hall
+                                                                                                1 Dr. Carlton B. Goodlett Place
+                                                                 Tails                          San Francisco, CA 94102-4689
+
+                                                             Resolution
+
+
+            File Number:                250648                              Date Passed:    September 30, 2025
+
+            Resolution responding to the Presiding Judge of the Superior Court on the findings and
+            recommendations contained in the 2024-2025 Civil Grand Jury Report, entitled "Techs in the City -
+            Government's Opportunity to Seize the Al Moment;" and urging the Mayor to cause the implementation
+            of accepted findings and recommendations through his department heads and through the development
+            of the annual budget.
+
+
+                         September 18, 2025 Government Audit and Oversight Committee - AMENDED, AN
+                         AMENDMENT OF THE WHOLE BEARING SAME TITLE
+
+                         September 18, 2025 Government Audit and Oversight Committee - RECOMMENDED AS
+                         AMENDED
+
+                         September 30, 2025 Board of Supervisors - ADOPTED
+                                        Ayes: 11 - Chan, Chen, Dorsey, Engardio, Fielder, Mahmood, Mandelman, Melgar,
+                                        Sauter, Sherrill and Walton
+
+
+                           File No. 250648                                I hereby certify that the foregoing
+                                                                          Resolution was ADOPTED on 9/30/2025 by
+                                                                          the Board of Supervisors of the City and
+                                                                          County of San Francisco.
+
+
+
+
+                                  Unsigned                                           10/10/2025
+                                       Daniel Lurie                                  Date Approved
+                                         Mayor
+
+
+
+
+City a11d Cou11ty of Sa11 Fra11cisco                             Page I                           Pri11ted at 12:21 pm 011 10/1/25
+I hereby certify that the foregoing resolution, not being signed by the Mayor within the time limit as set
+forth in Section 3.103 of the Charter, or time waived pursuant to Board Rule 2.14.2, became effective
+without his approval in accordance with the provision of said Section 3.103 of the Charter or Board Rule
+2.14.2.
+
+
+                                                                     10/10/2025
+          J;Y£,~
+             ,f_Angela-                                                  Date
+              Clerk of the Board
+
+
+
+
+File No. 250648
+O FFI CE O F THE M AYO R                                                                DANIEL LURIE
+S AN F RA NCI S CO                                                                             M AYO R
+
+
+
+   August 11, 2025
+
+   The Honorable Rochelle C. East
+   Presiding Judge, Superior Court of California, County of San Francisco
+   400 McAllister Street, Room 008
+   San Francisco, CA 94102-4512
+
+   Dear Judge East,
+
+   In accordance with Penal Code 933 and 933.05, the following is in response to the 2024-2025
+   Civil Grand Jury Report, Techs in the City -Government’s Opportunity to Seize the AI Moment. We would
+   like to thank the members of the 2024-2025 Civil Grand Jury for their interest in the City’s
+   technology portfolio, management structure, and service implementation.
+
+   We agree with the core elements of the Jury’s findings, particularly regarding the need to aggressively
+   deploy AI technologies to City departments and employees. The City has launched one of the largest
+   public-sector generative AI rollouts in the country, making Microsoft Copilot Chat available to
+   30,000 City employees. This builds on a successful pilot with over 2,000 staff that demonstrated
+   meaningful time savings through the use of AI assistant tools. We’re also piloting targeted AI
+   solutions to improve service delivery in areas like 311 response times and language translation, and
+   are committed to expanding the use of AI technology across the City in the months and years ahead.
+
+   Additionally, we agree with the Jury’s findings on the federated management structure of technology
+   within the City, and its effects on the deployment and procurement of emerging technologies.
+   The Office the Mayor, the Committee on Information Technology (COIT), and the Department of
+   Technology (DT) are currently working to consolidate IT resources, update technology purchase
+   and cost analysis processes, and identify opportunities for synergistic technology acquisition across
+   departments that do not typically work together. The scope of this work is ambitious; we are
+   committed to meaningful change but will need time to coordinate a transformation of this size.
+
+   We do, however, disagree with the Jury’s perspective regarding the Committee on Information
+   Technology (COIT) and its committee leadership. While COIT membership is established through
+   the administrative code, and officially is composed of mostly department heads, the individuals
+   doing the work are talented and experienced CIOs, including DT, MTA, the SFPUC, DPH, and
+   other large city agencies. Their leadership and expertise are paramount in ensuring effective
+   implementation of any technology plan. We will continue to work to strengthen and maximize
+   coordination and leadership through the COIT process.
+
+   The City takes these findings and recommendations very seriously and is committed to rapidly
+   expanding the role of AI technology and streamlining technology resources to improve city services
+   and employee efficiency.
+
+   Detailed responses from the Mayor’s Office, Office of the City Administrator, Office of
+   Contract Administration, and Department of Technology are attached.
+
+                                1 DR. CARLTON B. GOODLETT PLACE, ROOM 200
+                                   SAN FRANCISCO, CALIFORNIA 94102-4681
+Sincerely,
+
+
+
+
+Daniel Lurie
+Mayor
+
+
+
+                                    for
+Carmen Chu
+City Administrator, Office of the City Administrator
+
+
+
+
+Sailaja Kurella
+Office of Contract Administration
+
+
+
+
+                              for
+Michael Makstman
+Director, Department of Technology
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+                                                                                     Response                        Response Text
+                                                                                 Agree with the     No explanation needed
+                                                               Respondent
+                                                                                 finding
+  #                         Finding                            Assigned by
+                                                                                 Disagree,          Specify portion disputed and reason
+                                                                  CGJ
+                                                                                 partially
+                                                                                 Disagree, wholly   Specify disputation and reason
+ F1    Concerns over the potential risks of AI have led       MYR, ADM,          Agree with the
+       to an overly cautious approach toward emerging         DT                 finding
+       technology. The city risks missing opportunities
+       to harness new technology to improve
+       governance and delivery of services to citizens.
+ F2    Governance of technology in the city is                MYR, ADM,          Agree with the
+       hindered because of a federated management             DT                 finding
+       structure across departments. Such hindrance
+       has slowed or impaired the ability of the city to
+       efficiently identify, pilot, test, and deploy
+       emerging technologies.
+ F3    Procurement of technology in the city is               MYR, DT,           Agree with the
+       hindered because of a federated management             OCA                finding
+       structure across departments. This hinders the
+       ability to find and implement useful, scalable AI
+       and emerging technology solutions, and presents
+       risks to enforcing quality, standardization,
+       privacy and interoperability.
+ F4    The Committee on Information Technology                MYR                Disagree, wholly   The members of the Committee on Information
+       (COIT) is comprised mostly of non-technical                                                  Technology are appointed through the
+       leaders and has insufficient authority and                                                   administrative code, and represent department
+       influence over departments’ technology plans.                                                leadership to ensure buy-in. However, the
+       As a result, it is falling short of its objective to                                         individuals that routinely attend COIT and relevant
+       streamline ICT policy and roadmapping in San                                                 subcommittees are departmental CIOs or other
+       Francisco, which threatens current and emerging                                              technical leads and have the relevant content and
+       technology initiatives alike.                                                                expertise to advise on the COIT agenda. The
+                                                                             1
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+                                                                         Committee makes recommendations and can set
+                                                                         policy; individual departments appropriately make
+                                                                         their own procurement decisions in collaboration
+                                                                         with the Mayor's Budget Office and OCA.
+
+
+
+
+                                                                     2
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+
+
+                                                                               Response                        Response Text
+                                                                          Has been              Summary regarding implemented action
+                                                                          implemented
+                                                        Respondent        Will be               Timeframe for implementation
+   #                 Recommendation                     Assigned by       implemented
+                                                           CGJ            Requires further      Explain scope and parameter of analysis,
+                                                                          analysis              timeframe (should not exceed 6-months)
+                                                                          Will not be           Explain thereof
+                                                                          implemented
+ R1.1   By September 30, 2025, the mayor should           MYR             Has not yet been      The Office of Emerging Technologies, in
+ [for   direct DT to produce a comprehensive AI                           implemented but       collaboration with COIT, is working to develop an
+ F1]    strategy — to be published by June 30, 2026                       will be               AI strategy that will reflect the proposed items.
+        — outlining near- and long-term                                   implemented in the    Specific human resource needs are likely to be
+        implementation targets for incorporating AI                       future                deferred to the budget process rather than the
+        into city systems and services. The strategy                                            strategy document.
+        should include guidance on infrastructure, data
+        sharing, ethics, pilot programs and
+        performance evaluation, training and human
+        resource needs.
+ R1.2   By December 31, 2025, the city administrator      ADM, DT         Will not be           DT and DataSF are actively advancing data
+ [for   and DT should produce a report examining the                      implemented           governance and modernizing our data architecture
+ F1]    current data governance and data architecture                     because it is not     to ensure the City’s readiness for generative AI
+        of the city, identifying areas of concern or lack                 warranted or is not   applications. DataSF and COIT are leading efforts
+        of readiness for compatibility with the future                    reasonable            to substantially revise the Data Management
+        implementation of generative AI applications                                            Policy for use in AI applications, and are
+        such as Microsoft Copilot or other similar                                              onboarding City departments onto a Unified Data
+        applications that would be able to utilize access                                       Platform powered by Snowflake to enable cross-
+        to internal city data to find information,                                              departmental data integrations and analysis.
+        produce insights and make inferences.
+
+
+                                                                      3
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+ R1.3   By December 31, 2025, DT should put forward DT                   Will not be        DT will continue to monitor and evaluate City
+ [for   a plan outlining i) the forecasted demand for                    implemented        employee usage, demand, and the effectiveness of
+ F1]    Microsoft Copilot, ChatGPT, or other                             because it is not  Microsoft Copilot, ChatGPT, and other generative
+        generative AI licenses for city workers and ii)                  warranted or is notAI tools, and consider this in our proposed FY 26-
+        potential sustainable financing sources,                         reasonable         27 budget. Our team will negotiate cost-effective
+        including requests from the general fund, to be                                     licenses for required AI tools, explore
+        submitted in the next budget cycle.                                                 opportunities for potential grant funding or
+                                                                                            partnerships, and collaborate with the Mayor's
+                                                                                            Budget Office to identify sustainable financing
+                                                                                            sources. However, budgetary decisions are made
+                                                                                            on a Citywide basis through work with the
+                                                                                            Mayor's Office and Board of Supervisors.
+ R1.4   As part of completing the legislatively          DT              Has not yet been   The Department of Technology, in coordination
+ [for   mandated AI inventory per Chapter 22J (due                       implemented but    with COIT, will work to develop a framework for
+ F1]    January 19, 2026), DT should work with                           will be            evaluating the value of an ongoing AI investment
+        departments to produce public reporting on the                   implemented in the or tool toward achieving a cost-effective service
+        city’s website with agreed upon key                              future             delivery goal. This may not be a KPI model in
+        performance indicators (KPIs) for piloted AI                                        particular. Individual departments will ultimately
+        technology identified in the AI inventory, as                                       be responsible for determining the effectiveness of
+        well as establish a cost/benefit framework                                          AI technology.
+        based on identified KPIs. Software pilots
+        should have productivity measurements, and
+        hardware pilots should be measured against
+        status quo metrics for problems they seek to
+        address.
+ R1.5   By December 31, 2025, DT should establish a      DT              Has been              DT has engaged in significant employee training
+ [for   program to identify AI champions in city                         implemented           and has fostered an internal GenAI community of
+ F1]    government departments, “train the trainer”                                            over 3,300 staff members to encourage peer-to-
+        programs, and broader education opportunities                                          peer learning and experimentation. Through our
+        for city employees. This could be managed by                                           recent ChatGPT pilot, we delivered over 50 hours
+        city employees or in partnership with local                                            of AI-focused workshops, webinars, and
+                                                                                               hackathons, reaching more than 4,000 city staff.
+
+                                                                     4
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+        higher education institutions or private sector                                     We have also partnered with the nonprofit
+        organizations.                                                                      InnovateUS to deploy specialized AI courses
+                                                                                            accessible to all city employees via DHR’s
+                                                                                            SFLearning Portal. Over the next 6-12 months, we
+                                                                                            will expand and enhance our citywide AI training.
+                                                                                            We plan to organize an "AI Day" to highlight
+                                                                                            practical use cases, showcase available tools, and
+                                                                                            generate interest in emerging AI opportunities
+                                                                                            among city leaders and staff.
+ R1.6   By September 30, 2025, the CIO should           DT               Has been           Both the CIO and Emerging Technologies
+ [for   designate the emerging technologies director as                  implemented        Director actively engage with the GovAI
+ F1]    the formal ambassador from SF to the GovAI                                          coalition, and they will continue to involve
+        coalition and should appoint other                                                  relevant DT staff in these activities.
+        representatives to the coalition at their
+        discretion. They should work to attend all
+        formal gatherings of the coalition and report
+        periodically on findings from their
+        involvement in the coalition that could improve
+        AI implementation in San Francisco’s
+        government.
+ R2.1   By December 31, 2025, the mayor and city        MYR, ADM         Requires further   The Mayor's Office is working with the City
+ [for   administrator should adopt a plan for unifying                   analysis           Administrator, Department of Technology, Digital
+ F2]    more technology-related organizations within                                        Services, DataSF and others to review and analyze
+        DT, including digital services and other                                            the City's IT governance and delivery structure.
+        technology functions under the city                                                 The City expects to make recommendations to
+        administrator.                                                                      improve efficient service delivery by Spring 2026.
+
+ R2.2   By December 31, 2025, the mayor’s office        MYR              Has not yet been   See answer 2.1
+ [for   should undertake a review of current IT                          implemented but
+ F2]    headcount in departments outside of the city                     will be
+        administrator and adopt a plan for unifying IT                   implemented in the
+        resourcing within DT, including but not limited                  future
+
+                                                                     5
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+        to relocating IT job classifications to DT and
+        reallocating departmental assignment of IT
+        resources.
+ R2.3   The mayor should mandate that departmental         MYR, DT       Has been              Mayor Lurie has prioritized inter-departmental
+ [for   CIOs and other IT leaders be required to meet                    implemented           collaboration in his first 6 months. This
+ F2]    with DT leadership in a regular structured                                             collaboration continues to happen both through
+        forum, hosted and organized by DT, to                                                  the COIT process and in direct work between DT
+        collaborate with DT leadership on IT                                                   and its peer departments.
+        initiatives, roadmaps and other matters. These
+        meetings should begin by September 30, 2025.
+ R3.1   By June 30, 2026, the mayor and CIO should         MYR, DT       Will not be           The Office of Contract Administration has a
+ [for   jointly conduct a detailed review and adopt                      implemented           robust procurement review process, which in
+ F3]    new procurement guidelines for city                              because it is not     many cases includes a technology and
+        department technology purchasing such that                       warranted or is not   surveillance review. OCA and DT may work to
+        technology that meets certain criteria (cost,                    reasonable            update that process to ensure that AI tools are
+        strategic relevance, overall risk level) should                                        procured responsibly and intentionally without
+        be prioritized, purchased and implemented                                              additional administrative burden.
+        through DT in accordance with the ICT plan,
+        as affirmed by DT. The CIO and emerging
+        technologies director should have the ability to
+        definitively reject purchases deemed
+        incompatible with ICT policy or vendor
+        strategy, and/or propose alternative purchases
+        that are better aligned with ICT strategy.
+        Purchase orders with vendors deemed not
+        compatible with ICT objectives should be
+        cancelled.
+ R3.2   By June 30, 2026, the emerging technologies        DT, OCA       Will not be           See answer 3.1
+ [for   director, in partnership with the CIO and OCA,                   implemented
+ F3]    should complete a review and update of                           because it is not
+        policies and resources to facilitate procurement                 warranted or is not
+        of emerging technology that meets city                           reasonable
+
+                                                                     6
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+        standards and objectives. This may include
+        drafting new vendor standards for AI-related
+        technology procurement (addressing model
+        training, privacy, etc.), template vendor
+        contracts specific to AI technology, and the
+        negotiation of enterprise agreements with AI
+        vendors who meet city ICT standards.
+ R3.3   As part of completing the legislatively        DT                Will not be           See answer 3.1
+ [for   mandated AI inventory (due January 19, 2026),                    implemented
+ F3]    DT should provide procurement                                    because it is not
+        recommendations specifying whether                               warranted or is not
+        identified technologies should continue to be                    reasonable
+        purchased, and/or moved to a different vendor.
+ R3.4   By September 30, 2025, the mayor should        MYR               Has been           The City has established robust forums that fulfill
+ [for   issue guidance to all departments mandating                      implemented        the intent of this recommendation through existing
+ F3]    both that i) departmental procurement leads                                         governance structures. The Committee on
+        should be required to attend a regular forum                                        Information Technology (COIT) and its Budget &
+        with DT to discuss technology procurement                                           Performance Subcommittee meet regularly,
+        goals and initiatives, and ii) DT host such                                         providing a structured platform for technology
+        forums on a regular (monthly, quarterly,                                            leadership and city leadership to discuss
+        semiannual) basis.                                                                  technology procurement goals, initiatives, and
+                                                                                            strategic priorities. DT also hosts a biannual
+                                                                                            Citywide Technology Procurement Forums for
+                                                                                            department procurement leads and CIOs.
+ R3.5   By June 30, 2026, the emerging technologies       DT             Has not yet been   COIT and DT agree with this recommendation.
+ [for   director and CIO should submit a formal report                   implemented but    DT has made significant progress implementing
+ F3]    to COIT (or a successor body) recommending                       will be            the Chapter 22J reporting requirements and will
+        updates to the 22 AI inventory questions                         implemented in the use this practical experience to inform potential
+        outlined in recent legislation, with the aim of                  future             changes to the reporting process. DT will seek to
+        streamlining the inventory process.                                                 submit recommended updates to the Chapter 22J
+                                                                                            process to COIT by Jun 30, 2026 and COIT will
+                                                                                            review the recommendations after submission.
+
+                                                                     7
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+ R4.1   By June 30, 2026, the city should enact an      MYR              Will not be           The City Administrator disagrees with this
+ [for   ordinance amending the Administrative Code                       implemented           recommendation. COIT serves a vital role,
+ F4]    to eliminate COIT and centralize a replacement                   because it is not     providing independent oversight, strategic
+        advisory body under DT. This ordinance could                     warranted or is not   guidance, and cross-departmental coordination for
+        be enacted through the customary legislative                     reasonable            the city's technology initiatives. COIT also
+        process established in the Charter. In the                                             provides a forum for consensus building on
+        alternative, by December 31, 2025, the mayor                                           technology policy and brings visibility to
+        and the board of supervisors should each                                               technology planning and funding decisions. This
+        recommend to the Commission Streamlining                                               important function would benefit from enhanced
+        Task Force (established by Proposition E,                                              authority, clearer mandate definition, and
+        November 2024) that it include COIT in an                                              improved resource allocation. We recommend
+        ordinance the Task Force would introduce to                                            focusing on structural improvements to increase
+        eliminate certain commissions.                                                         COIT's effectiveness rather than dissolution.
+ R4.2   By December 31, 2025, the mayor should          MYR              Has been              The Committee on Information Technology
+ [for   mandate that all departments produce a                           implemented           already publishes a coordinated technology
+ F4]    technology roadmap in a form and substance to                                          roadmap in the form of its annual Information and
+        be agreed with DT, which would include                                                 Communications Technology (ICT) Plan. The
+        departmental technology initiatives as well as                                         Mayor has asked COIT to update this roadmap to
+        automation goals and potential applications for                                        include additional accountability measures.
+        AI and emerging technology. Roadmaps that
+        contain milestones and deadlines for major
+        initiatives should be submitted to DT and
+        refreshed on an annual basis.
+ R4.3   By December 31, 2025, the city should pass an MYR                Has not yet been      The City supports this recommendation and will
+ [for   ordinance amending the Administrative Code                       implemented but       begin the necessary steps to implement the
+ F4]    to create a permanent seat on COIT for the                       will be               creation of a permanent seat on COIT for the
+        emerging technologies director, pending its                      implemented in the    emerging technologies director. Implementation
+        action related to Recommendation 4.1.                            future                will require amending Section 22A.3 of the
+                                                                                               Administrative Code, which currently defines
+                                                                                               COIT's membership composition, to formally add
+                                                                                               the emerging technologies director as a voting
+                                                                                               member of the committee. COIT will work with
+
+                                                                     8
+Techs in the City: Government’s Opportunity to Seize the AI Moment
+
+FY 2024-2025 Civil Grand Jury Report
+
+                                                                         the City Attorney's Office to draft the necessary
+                                                                         ordinance amendments and aims to introduce the
+                                                                         legislation to the Board of Supervisors well in
+                                                                         advance of December 31, 2025, to allow for
+                                                                         sufficient time for the legislative process to be
+                                                                         completed.
+
+
+
+
+                                                                     9

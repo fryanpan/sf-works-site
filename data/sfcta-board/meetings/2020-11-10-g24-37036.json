@@ -1,0 +1,63 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2020-11-10",
+ "id": "g24-37036",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37036",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "CAC Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the October 27, 2020 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Appoint One Member to the Citizens Advisory Committee"
+  },
+  {
+   "no": "5",
+   "title": "Allocate $745,651 in Prop K Sales Tax Funds for Three Requests"
+  },
+  {
+   "no": "6",
+   "title": "Adopt the Portsmouth Square Community Based Transportation Plan Final Report"
+  },
+  {
+   "no": "7",
+   "title": "Walk San Francisco’s Congestion Pricing Outreach"
+  },
+  {
+   "no": "8",
+   "title": "Major Capital Project Update – Better Market Street"
+  },
+  {
+   "no": "9",
+   "title": "Internal Accounting Report, Investment Report, and Debt Expenditure Report for the Three Months Ending September 30, 2020"
+  },
+  {
+   "no": "10",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "11",
+   "title": "Public Comment"
+  },
+  {
+   "no": "12",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

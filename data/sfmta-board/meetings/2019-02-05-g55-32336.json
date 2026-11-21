@@ -1,0 +1,89 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-02-05",
+ "id": "g55-32336",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32336",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/15677"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting.",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report For discussion only"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (Resolution 190205-009)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the following traffic modifications",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.3",
+   "title": "Amending the SFMTA Board of Directors’ Rules of Order to change the titles used for officers of the board to “chair” and “vice chair”",
+   "decision": "ADOPTED — 6 ayes (Resolution 190205-011)"
+  },
+  {
+   "no": "11",
+   "title": "Approving parking and traffic restrictions on Felton Street, Bowdoin Street, Woolsey Street, and University Street",
+   "decision": "ADOPTED — 2 ayes, 4 nays"
+  },
+  {
+   "no": "12",
+   "title": "Approving overnight parking restrictions on a portion of Napoleon Street",
+   "decision": "ADOPTED — 4 ayes, 1 nay"
+  },
+  {
+   "no": "12a",
+   "title": "ESTABLISH – NO PARKING, 12:01 AM to 6 AM EVERY DAY",
+   "decision": "ADOPTED — 4 ayes, 1 nay"
+  },
+  {
+   "no": "13",
+   "title": "Authorizing the Director to submit a request to the Board of Supervisors for a Budget Amendment and Supplemental Appropriation of $38.1 million for Fiscal Year 2019",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

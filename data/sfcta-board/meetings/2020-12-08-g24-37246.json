@@ -1,0 +1,55 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2020-12-08",
+ "id": "g24-37246",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37246",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the November 17, 2020 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Adopt the 15 Third Bus Study Final Report [NTIP Planning]"
+  },
+  {
+   "no": "5",
+   "title": "Allocate $16,878,202 in Prop K Sales Tax Funds and $234,005 in Prop AA Vehicle Registration Fee Funds, with Conditions, for Five Requests"
+  },
+  {
+   "no": "6",
+   "title": "Approve $1 million in Former Central Freeway Parcel Revenues for the Page Street Neighborway Project"
+  },
+  {
+   "no": "7",
+   "title": "Appropriate $550,000 in Prop K Funds for the Downtown San Francisco Congestion Pricing Study Other Items"
+  },
+  {
+   "no": "8",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

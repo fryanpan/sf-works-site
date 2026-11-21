@@ -1,0 +1,74 @@
+<h1>About the housing data</h1>
+<p class="lede">This page explains how every figure on <a href="/housing">the housing page</a> was made: what each one counts, which record it comes from, and where that record runs out.</p>
+
+<h2 id="issues">The biggest data issues</h2>
+<p>Each item names the figure it moves and the direction.</p>
+<ol class="issues">
+<li><strong>The permitted half of the Housing Balance is not published.</strong> <a href="{{ s103Url }}">§103</a> counted affordable units that are finished plus affordable units holding a site or building permit. <a href="https://data.sf.gov/d/xdht-4php">Housing Production</a> carries completions only: every one of its records has a completion date. <span class="moves">Moves: the balance, in either direction. In Report No. 20 the permitted half had a lower affordable share ({{ r20PermittedAffordable }} of {{ r20PermittedNet }}, {{ r20PermittedShare }}%) than the completed half ({{ r20CompletedShare }}%), so adding it would not have raised the figure. What does lower it is subtracting the lost units from the smaller, completed-only denominator: Planning's own numbers, completed half only, give {{ r20Balance }}% against its published {{ withoutPublicHousing }}%.</span></li>
+<li><strong>Protected units lost are stood in for by eviction notices.</strong> Planning's count also came from the Rent Board (<a href="{{ reportUrl }}">Report No. 20</a>, Table 1A note 5: "This information is collected from the Rent Board"), but it is smaller than the public <a href="https://data.sf.gov/d/5cei-gny5">eviction notice table</a> gives on the same four grounds: {{ r20Lost }} for {{ r20From }} to {{ r20To }} against {{ oursLost }} notices here, with Ellis Act {{ r20Ellis }} against {{ oursEllis }}. Planning may count units rather than notices or drop rescinded notices; the report does not say. This page subtracts {{ protectedUnitsLost }} notices for {{ periodStart }} to {{ periodEnd }}. <span class="moves">Moves: the balance, up if Planning's rule were applied; on Planning's window the two counts differ by {{ oursBalance }}% against {{ r20Balance }}% (<a href="#planning">the comparison</a>).</span></li>
+<li><strong>The city's own figure is frozen.</strong> <a href="{{ reportUrl }}">Housing Balance Report No. 20</a>, April 2025, covering {{ period }}, read {{ withoutPublicHousing }}% without public housing and {{ withPublicHousing }}% with it. No later report exists. <span class="moves">Moves: nothing on this page; it is the comparison figure.</span></li>
+<li><strong>The state's permit counts stop at the last calendar year.</strong> They are assembled from reports filed each April under <a href="{{ gc65400Url }}">Government Code §65400(a)(2)(H)</a>, so a permit issued since {{ aprThrough }} is not counted, and a count rises when a late report is accepted. That end date is the filing calendar, not a field in the state's file, and has not been checked against the city's own report. <span class="moves">Moves: every SB 423 figure, upward only.</span></li>
+<li><strong>A demolished rent-controlled unit is counted on both sides.</strong> §103 takes net new units, so the {{ negativeNetRows }} completions with negative net ({{ negativeNetUnits }} units demolished or merged) already lower the denominator; the {{ demolitionNotices }} demolition eviction notices are then subtracted from the numerator too. <span class="moves">Moves: the balance, down by at most {{ demolitionNotices }} units of numerator.</span></li>
+<li><strong>Eviction notices fell by two thirds in 2020.</strong> Notices on the four grounds were {{ lost2019 }} in 2019, then {{ lost2020 }} in 2020 and {{ lost2021 }} in 2021. The pandemic limits on no-fault evictions are the most likely reason; this page has not checked that against the Rent Board's annual reports. <span class="moves">Moves: the lost-units total, down; losses in those years may be deferred rather than avoided.</span></li>
+<li><strong>{{ partialYear }} is a part year.</strong> Housing Production reaches {{ productionThrough }}, so {{ partialYear }} holds a fraction of a year's completions and its share is not comparable. It is left out of the chart. <span class="moves">Moves: nothing shown; it would move the last point of the year chart.</span></li>
+</ol>
+
+<h2 id="asks">What we ask the city for</h2>
+<ol class="asks">
+<li><strong>Planning Department:</strong> publish the permitted-unit series behind the Housing Balance, so the calculation §103 required can be reproduced by anyone. The department still holds it; it no longer has to publish it.</li>
+<li><strong>Planning Department:</strong> publish the rule that turned {{ oursLost }} Rent Board notices into {{ r20Lost }} units removed from protected status in Report No. 20, so the subtraction can be reproduced.</li>
+<li><strong>Board of Supervisors:</strong> if the {{ floor }}% floor is no longer the city's standard, say what replaced it. §103 was repealed while its own trigger read below the floor on one of the two calculations it required.</li>
+</ol>
+
+<h2 id="method">How each figure was made</h2>
+<p class="verdict-note">Produced by <code>site/scripts/collect-housing.mjs</code> in the SF Works repository, from the datasets named below, read {{ queriedAt }}.</p>
+
+<h3 id="floor">What the floor was supposed to do</h3>
+<p><a href="{{ s103Url }}">Planning Code §103</a> required Planning to publish the Cumulative Housing Balance every April and October. If it fell below {{ floor }}% in any year, the Mayor's Office of Housing had to determine what funding would bring the city back above it, and the Mayor had to submit a strategy to the Board of Supervisors. The Board held an annual hearing each April.</p>
+<p>§103 required the balance two ways, with and without public housing replacement units, and the trigger clause named only "the Cumulative Housing Balance" without saying which. The last report read {{ withoutPublicHousing }}% one way and {{ withPublicHousing }}% the other. <a href="{{ repealUrl }}">Ordinance 137-26</a> repealed §103 with that question open.</p>
+
+<h3 id="balance">The {{ balance }}% balance</h3>
+<p>§103(c)(1) defined the balance as affordable units at or below 120% of area median income, minus protected units lost, divided by total net new housing units, over ten years. This page computes it for {{ periodStart }} to {{ periodEnd }} from completed units only:</p>
+<div class="scroll"><table>
+  <tbody>
+    <tr><td>Affordable units completed</td><td class="num">{{ affordableUnits }}</td></tr>
+    <tr><td>Protected units lost, on the four grounds §103 names</td><td class="num">−{{ protectedUnitsLost }}</td></tr>
+    <tr><td>All net new units completed</td><td class="num">{{ netNewUnits }}</td></tr>
+    <tr><td><strong>Completed-only balance</strong></td><td class="num"><strong>{{ balance }}%</strong></td></tr>
+  </tbody>
+</table></div>
+<p>The figure is not the Cumulative Housing Balance and is not the city's. It is missing the permitted units §103 counted and substitutes eviction notices for Planning's record of protected units lost. Quote it as a recomputation from open data covering {{ periodStart }} to {{ periodEnd }}, with the city's {{ withoutPublicHousing }}% beside it. It is the only balance figure that still updates.</p>
+
+<h3 id="planning">The same window as Planning's last report</h3>
+<p><a href="{{ reportUrl }}">Report No. 20</a> covers {{ r20From }} Q1 to {{ r20To }} Q4. Recomputing that window from the two datasets gives the figures beside Planning's, completed half only.</p>
+<div class="scroll"><table>
+  <thead><tr><th></th><th class="num">Planning, Table 1A and 8</th><th class="num">This page, same years</th></tr></thead>
+  <tbody>
+    <tr><td>Affordable units completed</td><td class="num">{{ r20Affordable }}</td><td class="num">{{ oursAffordable }}</td></tr>
+    <tr><td>Protected units lost</td><td class="num">−{{ r20Lost }}</td><td class="num">−{{ oursLost }}</td></tr>
+    <tr><td>of which owner move-in</td><td class="num">{{ r20Omi }}</td><td class="num">{{ oursOmi }}</td></tr>
+    <tr><td>of which Ellis Act</td><td class="num">{{ r20Ellis }}</td><td class="num">{{ oursEllis }}</td></tr>
+    <tr><td>Net new units completed</td><td class="num">{{ r20Net }}</td><td class="num">{{ oursNet }}</td></tr>
+    <tr><td><strong>Completed-only balance</strong></td><td class="num"><strong>{{ r20Balance }}%</strong></td><td class="num"><strong>{{ oursBalance }}%</strong></td></tr>
+  </tbody>
+</table></div>
+<p>The denominators agree within half a percent. The affordable numerator is lower here, and the losses are higher, and neither gap is explained in the report. Planning's published {{ withoutPublicHousing }}% adds the permitted half to both numerator and denominator.</p>
+
+<h3 id="by-year">Affordable and market-rate completions by year</h3>
+<p>Affordable homes were {{ firstAffordableShare }}% of completions in {{ firstYear }} and {{ lastAffordableShare }}% in {{ lastYear }}. Both halves moved: affordable completions went from {{ firstAffordable }} to {{ lastAffordable }}, and market-rate completions from {{ firstMarketRate }} to {{ lastMarketRate }}.</p>
+<p>Affordable units are placed in the year of the project's latest completion date. The dataset also carries MOHCD's own <code>bmr_reporting_year</code>, which moves some units between years for projects that finished in stages; the ten-year total is the same, and the largest single-year difference is {{ bmrGapYear }}, {{ bmrGapCompletion }} by completion date against {{ bmrGapBmr }} by reporting year.</p>
+<p>Which half carried the rise depends on the start year. Had market-rate building stayed at its {{ firstYear }} level and only the affordable half grown, the share would be {{ shareIfAffordableOnly }}%. Had the affordable half stayed flat and only market-rate building fallen, it would be {{ shareIfMarketOnly }}%. From {{ firstYear }}, the affordable half is the larger part of the change. Start instead from {{ pivotYear }}, the year after market-rate completions peaked at {{ marketRatePeak }} in {{ marketRatePeakYear }}, and the affordable half moves only from {{ pivotAffordable }} to {{ lastAffordable }} while market-rate building falls from {{ pivotMarketRate }} to {{ lastMarketRate }}. On that window the market-rate fall is most of the rise. A claim about the trend has to say which year it starts from.</p>
+{{# yearTable }}
+
+<h3 id="housing-element">Completions against the Housing Element</h3>
+<p>The <a href="https://sfplanning.org/housing-element-2022-update">2022 Housing Element</a> commits to {{ total }} homes by {{ endYear }}, {{ affordable }} affordable. Completions are counted from January {{ startYear }} in <a href="https://data.sf.gov/d/xdht-4php">Housing Production</a>. The state does not measure the city on completions: it measures permits issued, reported each April under <a href="{{ gc65400Url }}">Government Code §65400(a)(2)(H)</a>.</p>
+
+<h3 id="sb423">The state's {{ checkYear }} checkpoint</h3>
+<p>Every other Bay Area city is measured twice per housing cycle, at the midpoint and the end, so the first reading on 2023 to 2031 arrives in 2027. San Francisco is measured every year because <a href="{{ sb423Url }}">SB 423 (Wiener, 2023)</a> added one sentence to <a href="{{ gc65913Url }}">Government Code §65913.4(m)(12)(B)</a>:</p>
+<blockquote><p>Notwithstanding subparagraph (A), "reporting period" means annually for the City and County of San Francisco.</p></blockquote>
+<p>The bar rises an eighth of the allocation for each year of the cycle, under <a href="https://www.hcd.ca.gov/sites/default/files/docs/planning-and-community/smap-determination-methodology.pdf">the state's determination methodology</a>, so the {{ checkYear }} reading asks for {{ sharePct }}% in each income category. Permits issued come from the <a href="https://data.ca.gov/dataset/rhna-progress-report">6th Cycle RHNA Progress Report</a>, through {{ aprThrough }}. The allocation column sums to {{ total }}, and its three lower-income rows to {{ affordable }}, the two figures the Housing Element commits to.</p>
+{{# sb423Table }}
+<p>A city short of its allocation in the above-moderate category, or in either of the two lowest, must approve qualifying projects ministerially: no discretionary hearing, no conditional use, no appeal on the merits. San Francisco has been in that position since June 2024, the state's first annual determination. Clearing {{ sharePct }}% in above-moderate by {{ checkYear }} would take {{ aboveShortBy }} more permits, {{ aboveModerateMultiple }} times what the city has permitted in that category since the cycle opened. The annual provision did not raise what the city owes; it moved the first consequence from 2027 to 2024.</p>
+
+<h3 id="by-district">By supervisor district</h3>
+<p>Each completed project in <a href="https://data.sf.gov/d/xdht-4php">Housing Production</a> carries a supervisor district. Each eviction notice carries one too. The district balance is affordable homes minus notices on the four grounds, over net new homes, {{ periodStart }} to {{ periodEnd }}, the same formula as the citywide figure. A district where notices outnumber affordable completions reads below zero.</p>

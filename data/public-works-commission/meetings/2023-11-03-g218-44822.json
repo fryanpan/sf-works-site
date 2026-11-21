@@ -1,0 +1,72 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-11-03",
+ "id": "g218-44822",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44822",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary Informational"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the October 20, 2023 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "6th Street Pedestrian Safety Project, Contract 1000015023 – Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "Folsom Streetscape Project – Federal Aid Project – Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "San Francisco Municipal Transportation Agency Parking Enforcement Headquarters Construction (CM/GC) Contract – Award"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Hiring Report"
+  },
+  {
+   "no": "9",
+   "title": "Street Vending Regulations – Recommend Amendments"
+  },
+  {
+   "no": "10",
+   "title": "Public Works Commission Rules of Order – Amendment Action"
+  },
+  {
+   "no": "11",
+   "title": "Public Works Commission 2024 Meeting Calendar Action"
+  },
+  {
+   "no": "12",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "13",
+   "title": "General Public Comment – Continued from Item 3 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

@@ -1,0 +1,74 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-06-28",
+ "id": "g55-46470",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46470",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/39935"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Adopting various labor agreements",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4A",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the Transport Workers Union, Local 250-A (9163) for Transit Operators for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4B",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the Transport Workers Union, Local 250-A (9132) for Transit Fare Inspectors, for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4C",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the Transport Workers Union, Local 250-A (7410) for Automotive Service Workers, for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4D",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the Transport Workers Union, Local 200 for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4E",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the International Brotherhood of Electrical Workers, Local 6 for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4F",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the International Association of Machinists and Aerospace Workers, Local 1414 for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4G",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the Service Employees’ International Union, Local 1021 for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  },
+  {
+   "no": "4H",
+   "title": "Adopting a successor Memorandum of Understanding between the SFMTA and the Municipal Executives Association for represented employees for the term July 1, 2024 to June 30, 2027",
+   "decision": "ADOPTED — 5 ayes (Resolution 240618-072)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

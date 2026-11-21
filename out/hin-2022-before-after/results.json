@@ -1,0 +1,468 @@
+{
+ "data": {
+  "hin2022_corrected_miles": 121.5,
+  "hin2022_fetched_on": "2026-11-18",
+  "hin2022_nodes": 1859,
+  "hin2022_segments": 2388,
+  "ubvf-ztfx": {
+   "fetched_on": "2026-11-18",
+   "first": "2005-01-01",
+   "last": "2026-08-31",
+   "rows": 66384
+  }
+ },
+ "quality_log": [
+  "PASS HIN 2022 layer rows >= 2,000 (2388)",
+  "PASS HIN 2022 corrected miles 100-200 (121.5)",
+  "INFO HIN 2022: 2388 segments, 1859 nodes, 121.5 corrected miles, fetched 2026-11-18",
+  "PASS HIN segments in street centerline: 100.0%",
+  "PASS crash rows >= 60,000 (66384)",
+  "PASS crash dates 2005-01-01 to 2026-08-31 cover the after window",
+  "PASS placeable crashes: 0.13% unplaced",
+  "INFO crashes: 66383 cases, 66295 placed, 88 unplaced"
+ ],
+ "results": {
+  "all_vs_main_streets_off_hin": {
+   "comp_after": 554,
+   "comp_before": 1063,
+   "comp_change": 0.042,
+   "comp_places_with_crash": 965,
+   "hin_after": 1939,
+   "hin_before": 3573,
+   "hin_change": 0.085,
+   "hin_per_year_after": 1939.0,
+   "hin_per_year_before": 1786.5,
+   "hin_places_with_crash": 2028,
+   "net_boot95": [
+    -0.075,
+    0.168
+   ],
+   "net_change": 0.041,
+   "net_poisson95": [
+    -0.073,
+    0.17
+   ]
+  },
+  "all_vs_rest_of_city": {
+   "comp_after": 1259,
+   "comp_before": 2275,
+   "comp_change": 0.107,
+   "comp_places_with_crash": 2421,
+   "hin_after": 1939,
+   "hin_before": 3573,
+   "hin_change": 0.085,
+   "hin_per_year_after": 1939.0,
+   "hin_per_year_before": 1786.5,
+   "hin_places_with_crash": 2028,
+   "net_boot95": [
+    -0.099,
+    0.072
+   ],
+   "net_change": -0.019,
+   "net_poisson95": [
+    -0.102,
+    0.071
+   ]
+  },
+  "all_vs_rest_of_city_approaches_on_hin": {
+   "comp_after": 1088,
+   "comp_before": 2033,
+   "comp_change": 0.07,
+   "comp_places_with_crash": 2191,
+   "hin_after": 2110,
+   "hin_before": 3815,
+   "hin_change": 0.106,
+   "hin_per_year_after": 2110.0,
+   "hin_per_year_before": 1907.5,
+   "hin_places_with_crash": 2321,
+   "net_boot95": [
+    -0.056,
+    0.128
+   ],
+   "net_change": 0.033,
+   "net_poisson95": [
+    -0.056,
+    0.132
+   ]
+  },
+  "fatal_or_severe_vs_main_streets_off_hin": {
+   "comp_after": 36,
+   "comp_before": 83,
+   "comp_change": -0.133,
+   "comp_places_with_crash": 113,
+   "hin_after": 179,
+   "hin_before": 355,
+   "hin_change": 0.008,
+   "hin_per_year_after": 179.0,
+   "hin_per_year_before": 177.5,
+   "hin_places_with_crash": 436,
+   "net_boot95": [
+    -0.249,
+    0.805
+   ],
+   "net_change": 0.163,
+   "net_poisson95": [
+    -0.244,
+    0.788
+   ]
+  },
+  "fatal_or_severe_vs_rest_of_city": {
+   "comp_after": 96,
+   "comp_before": 179,
+   "comp_change": 0.073,
+   "comp_places_with_crash": 260,
+   "hin_after": 179,
+   "hin_before": 355,
+   "hin_change": 0.008,
+   "hin_per_year_after": 179.0,
+   "hin_per_year_before": 177.5,
+   "hin_places_with_crash": 436,
+   "net_boot95": [
+    -0.296,
+    0.29
+   ],
+   "net_change": -0.06,
+   "net_poisson95": [
+    -0.308,
+    0.277
+   ]
+  },
+  "intersection_and_approaches_vs_rest": {
+   "comp_after": 665,
+   "comp_before": 1324,
+   "comp_change": 0.005,
+   "comp_places_with_crash": 1264,
+   "hin_after": 2110,
+   "hin_before": 3815,
+   "hin_change": 0.106,
+   "hin_per_year_after": 2110.0,
+   "hin_per_year_before": 1907.5,
+   "hin_places_with_crash": 2321,
+   "net_boot95": [
+    -0.008,
+    0.227
+   ],
+   "net_change": 0.101,
+   "net_poisson95": [
+    -0.011,
+    0.226
+   ]
+  },
+  "intersection_vs_main_streets_off_hin": {
+   "comp_after": 330,
+   "comp_before": 699,
+   "comp_change": -0.056,
+   "comp_places_with_crash": 559,
+   "hin_after": 1384,
+   "hin_before": 2633,
+   "hin_change": 0.051,
+   "hin_per_year_after": 1384.0,
+   "hin_per_year_before": 1316.5,
+   "hin_places_with_crash": 1184,
+   "net_boot95": [
+    -0.039,
+    0.307
+   ],
+   "net_change": 0.113,
+   "net_poisson95": [
+    -0.038,
+    0.289
+   ]
+  },
+  "intersection_vs_rest_of_city": {
+   "comp_after": 665,
+   "comp_before": 1324,
+   "comp_change": 0.005,
+   "comp_places_with_crash": 1264,
+   "hin_after": 1384,
+   "hin_before": 2633,
+   "hin_change": 0.051,
+   "hin_per_year_after": 1384.0,
+   "hin_per_year_before": 1316.5,
+   "hin_places_with_crash": 1184,
+   "net_boot95": [
+    -0.07,
+    0.167
+   ],
+   "net_change": 0.047,
+   "net_poisson95": [
+    -0.066,
+    0.172
+   ]
+  },
+  "intersection_vs_rest_of_city_after_is_build_year": {
+   "comp_after": 681,
+   "comp_before": 1324,
+   "comp_change": 0.029,
+   "comp_places_with_crash": 1253,
+   "hin_after": 1266,
+   "hin_before": 2633,
+   "hin_change": -0.038,
+   "hin_per_year_after": 1266.0,
+   "hin_per_year_before": 1316.5,
+   "hin_places_with_crash": 1163,
+   "net_boot95": [
+    -0.165,
+    0.052
+   ],
+   "net_change": -0.065,
+   "net_poisson95": [
+    -0.166,
+    0.048
+   ]
+  },
+  "intersection_vs_rest_of_city_before_is_2023_24_only": {
+   "comp_after": 665,
+   "comp_before": 682,
+   "comp_change": -0.025,
+   "comp_places_with_crash": 982,
+   "hin_after": 1384,
+   "hin_before": 1362,
+   "hin_change": 0.016,
+   "hin_per_year_after": 1384.0,
+   "hin_per_year_before": 1362.0,
+   "hin_places_with_crash": 1011,
+   "net_boot95": [
+    -0.092,
+    0.192
+   ],
+   "net_change": 0.042,
+   "net_poisson95": [
+    -0.085,
+    0.187
+   ]
+  },
+  "pedestrian_vs_main_streets_off_hin": {
+   "comp_after": 83,
+   "comp_before": 190,
+   "comp_change": -0.126,
+   "comp_places_with_crash": 234,
+   "hin_after": 400,
+   "hin_before": 778,
+   "hin_change": 0.028,
+   "hin_per_year_after": 400.0,
+   "hin_per_year_before": 389.0,
+   "hin_places_with_crash": 774,
+   "net_boot95": [
+    -0.095,
+    0.592
+   ],
+   "net_change": 0.177,
+   "net_poisson95": [
+    -0.115,
+    0.565
+   ]
+  },
+  "pedestrian_vs_rest_of_city": {
+   "comp_after": 236,
+   "comp_before": 463,
+   "comp_change": 0.019,
+   "comp_places_with_crash": 610,
+   "hin_after": 400,
+   "hin_before": 778,
+   "hin_change": 0.028,
+   "hin_per_year_after": 400.0,
+   "hin_per_year_before": 389.0,
+   "hin_places_with_crash": 774,
+   "net_boot95": [
+    -0.176,
+    0.229
+   ],
+   "net_change": 0.009,
+   "net_poisson95": [
+    -0.172,
+    0.229
+   ]
+  },
+  "placebo_all_vs_main_streets_off_hin": {
+   "comp_after": 524,
+   "comp_before": 539,
+   "comp_change": -0.028,
+   "comp_places_with_crash": 704,
+   "hin_after": 1844,
+   "hin_before": 1729,
+   "hin_change": 0.067,
+   "hin_per_year_after": 1844.0,
+   "hin_per_year_before": 1729.0,
+   "hin_places_with_crash": 1634,
+   "net_boot95": [
+    -0.044,
+    0.257
+   ],
+   "net_change": 0.097,
+   "net_poisson95": [
+    -0.043,
+    0.258
+   ]
+  },
+  "placebo_all_vs_rest_of_city": {
+   "comp_after": 1145,
+   "comp_before": 1130,
+   "comp_change": 0.013,
+   "comp_places_with_crash": 1697,
+   "hin_after": 1844,
+   "hin_before": 1729,
+   "hin_change": 0.067,
+   "hin_per_year_after": 1844.0,
+   "hin_per_year_before": 1729.0,
+   "hin_places_with_crash": 1634,
+   "net_boot95": [
+    -0.051,
+    0.175
+   ],
+   "net_change": 0.053,
+   "net_poisson95": [
+    -0.053,
+    0.169
+   ]
+  }
+ },
+ "windows": {
+  "after": [
+   "2025-09",
+   "2026-08"
+  ],
+  "before": [
+   "2022-09",
+   "2024-08"
+  ],
+  "build": [
+   "2024-09",
+   "2025-08"
+  ],
+  "placebo_after": [
+   "2023-09",
+   "2024-08"
+  ],
+  "placebo_before": [
+   "2022-09",
+   "2023-08"
+  ]
+ },
+ "year_to_year_noise_intersections": {
+  "sd_of_log_ratio": 0.092,
+  "steps": [
+   -0.021,
+   0.006,
+   0.065,
+   -0.054,
+   0.078,
+   0.131,
+   -0.16,
+   0.009
+  ],
+  "years": "2015-16 to 2023-24 consecutive steps"
+ },
+ "yearly": [
+  {
+   "hin": 1945,
+   "hin_intersection": 1452,
+   "hin_intersection_share": 0.661,
+   "hin_share": 0.608,
+   "main_off_hin": 643,
+   "rest_intersection": 745,
+   "rest_of_city": 1252,
+   "year": "2015-16"
+  },
+  {
+   "hin": 2088,
+   "hin_intersection": 1541,
+   "hin_intersection_share": 0.656,
+   "hin_share": 0.6,
+   "main_off_hin": 685,
+   "rest_intersection": 808,
+   "rest_of_city": 1391,
+   "year": "2016-17"
+  },
+  {
+   "hin": 2016,
+   "hin_intersection": 1462,
+   "hin_intersection_share": 0.657,
+   "hin_share": 0.612,
+   "main_off_hin": 611,
+   "rest_intersection": 762,
+   "rest_of_city": 1278,
+   "year": "2017-18"
+  },
+  {
+   "hin": 2082,
+   "hin_intersection": 1522,
+   "hin_intersection_share": 0.671,
+   "hin_share": 0.627,
+   "main_off_hin": 613,
+   "rest_intersection": 745,
+   "rest_of_city": 1241,
+   "year": "2018-19"
+  },
+  {
+   "hin": 1729,
+   "hin_intersection": 1307,
+   "hin_intersection_share": 0.659,
+   "hin_share": 0.597,
+   "main_off_hin": 549,
+   "rest_intersection": 676,
+   "rest_of_city": 1167,
+   "year": "2019-20"
+  },
+  {
+   "hin": 1627,
+   "hin_intersection": 1250,
+   "hin_intersection_share": 0.676,
+   "hin_share": 0.619,
+   "main_off_hin": 471,
+   "rest_intersection": 600,
+   "rest_of_city": 1001,
+   "year": "2020-21"
+  },
+  {
+   "hin": 1825,
+   "hin_intersection": 1400,
+   "hin_intersection_share": 0.702,
+   "hin_share": 0.643,
+   "main_off_hin": 474,
+   "rest_intersection": 594,
+   "rest_of_city": 1014,
+   "year": "2021-22"
+  },
+  {
+   "hin": 1729,
+   "hin_intersection": 1271,
+   "hin_intersection_share": 0.664,
+   "hin_share": 0.605,
+   "main_off_hin": 539,
+   "rest_intersection": 642,
+   "rest_of_city": 1130,
+   "year": "2022-23"
+  },
+  {
+   "hin": 1844,
+   "hin_intersection": 1362,
+   "hin_intersection_share": 0.666,
+   "hin_share": 0.617,
+   "main_off_hin": 524,
+   "rest_intersection": 682,
+   "rest_of_city": 1145,
+   "year": "2023-24"
+  },
+  {
+   "hin": 1761,
+   "hin_intersection": 1266,
+   "hin_intersection_share": 0.65,
+   "hin_share": 0.594,
+   "main_off_hin": 565,
+   "rest_intersection": 681,
+   "rest_of_city": 1202,
+   "year": "2024-25"
+  },
+  {
+   "hin": 1939,
+   "hin_intersection": 1384,
+   "hin_intersection_share": 0.675,
+   "hin_share": 0.606,
+   "main_off_hin": 554,
+   "rest_intersection": 665,
+   "rest_of_city": 1259,
+   "year": "2025-26"
+  }
+ ]
+}

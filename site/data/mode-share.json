@@ -1,0 +1,189 @@
+{
+ "generated": "2026-11-10",
+ "acsRead": "2026-11-10",
+ "surveys": [
+  {
+   "year": 2015,
+   "url": "https://www.sfmta.com/media/5698/download?inline",
+   "page": 5,
+   "walk": 25,
+   "bike": 2,
+   "transit": 24,
+   "privateAuto": 47,
+   "tnc": 2,
+   "share": 51
+  },
+  {
+   "year": 2017,
+   "url": "https://www.sfmta.com/media/9328/download?inline",
+   "page": 5,
+   "walk": 25,
+   "bike": 2,
+   "transit": 26,
+   "privateAuto": 43,
+   "tnc": 4,
+   "share": 53
+  },
+  {
+   "year": 2019,
+   "url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2020/01/sfmta_travel_decision_survey_2019.pdf",
+   "page": 5,
+   "walk": 22,
+   "bike": 2,
+   "transit": 22,
+   "privateAuto": 48,
+   "tnc": 5,
+   "share": 46
+  },
+  {
+   "year": 2021,
+   "url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2022/04/sfmta_td2021_rpt_v2.pdf",
+   "page": 5,
+   "walk": 24,
+   "bike": 3,
+   "transit": 10,
+   "privateAuto": 61,
+   "tnc": 2,
+   "share": 37
+  }
+ ],
+ "commute": [
+  {
+   "year": 2015,
+   "share": 52.6,
+   "bike": 4.6,
+   "bikeOfWorkers": 4.3,
+   "car": 44.5,
+   "home": 6.2,
+   "workers": 497133,
+   "url": "https://data.census.gov/table/ACSDT1Y2015.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2016,
+   "share": 52.6,
+   "bike": 4.1,
+   "bikeOfWorkers": 3.9,
+   "car": 43.1,
+   "home": 6.4,
+   "workers": 500469,
+   "url": "https://data.census.gov/table/ACSDT1Y2016.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2017,
+   "share": 53.6,
+   "bike": 3.3,
+   "bikeOfWorkers": 3.1,
+   "car": 41.6,
+   "home": 7.2,
+   "workers": 523364,
+   "url": "https://data.census.gov/table/ACSDT1Y2017.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2018,
+   "share": 53.8,
+   "bike": 4.5,
+   "bikeOfWorkers": 4.2,
+   "car": 41.5,
+   "home": 6.3,
+   "workers": 524742,
+   "url": "https://data.census.gov/table/ACSDT1Y2018.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2019,
+   "share": 57.3,
+   "bike": 4.1,
+   "bikeOfWorkers": 3.8,
+   "car": 37.8,
+   "home": 7.4,
+   "workers": 526022,
+   "url": "https://data.census.gov/table/ACSDT1Y2019.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2021,
+   "share": 37.0,
+   "bike": 4.0,
+   "bikeOfWorkers": 2.1,
+   "car": 57.9,
+   "home": 45.6,
+   "workers": 438943,
+   "url": "https://data.census.gov/table/ACSDT1Y2021.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2022,
+   "share": 44.0,
+   "bike": 5.1,
+   "bikeOfWorkers": 3.4,
+   "car": 52.0,
+   "home": 32.5,
+   "workers": 465181,
+   "url": "https://data.census.gov/table/ACSDT1Y2022.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2023,
+   "share": 47.4,
+   "bike": 4.7,
+   "bikeOfWorkers": 3.5,
+   "car": 48.6,
+   "home": 24.4,
+   "workers": 460397,
+   "url": "https://data.census.gov/table/ACSDT1Y2023.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2024,
+   "share": 49.5,
+   "bike": 4.8,
+   "bikeOfWorkers": 3.8,
+   "car": 46.2,
+   "home": 21.4,
+   "workers": 468430,
+   "url": "https://data.census.gov/table/ACSDT1Y2024.B08301?g=050XX00US06075"
+  },
+  {
+   "year": 2025,
+   "share": 48.9,
+   "bike": 4.7,
+   "bikeOfWorkers": 3.7,
+   "car": 47.6,
+   "home": 20.4,
+   "workers": 458120,
+   "url": "https://data.census.gov/table/ACSDT1Y2025.B08301?g=050XX00US06075"
+  }
+ ],
+ "target": {
+  "share": 80,
+  "year": 2030,
+  "climate": {
+   "words": "By 2030, 80% of trips taken by low-carbon modes",
+   "source": "San Francisco Climate Action Plan 2021, Executive Summary",
+   "url": "https://www.sfcta.org/sites/default/files/2022-01/Item%2011%20-%20Climate%20Action%20Plan%20Executive%20Summary.pdf",
+   "page": 5,
+   "read": "2026-09-24"
+  },
+  "sfmta": {
+   "words": "SFMTA's Strategic Objective 2.2 Key Performance Indicator (80% Sustainable Mode Share)",
+   "counts": "walking, bicycling, and public transit",
+   "source": "SFMTA Travel Decisions Survey 2019",
+   "url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2020/01/sfmta_travel_decision_survey_2019.pdf",
+   "page": 3,
+   "read": "2026-09-24"
+  },
+  "update": {
+   "source": "San Francisco Climate Action Plan, Updated Sector Goals & Current Status (SF Environment, March 2026)",
+   "url": "https://www.sfenvironment.org/files/2026-03/Item%2008.%20SF%20CAP%20Update%20Sector%20Goals%20%26%20Current%20Status.pdf",
+   "old": "By 2030, 80% of trips taken by low carbon modes such as walking, biking, transit, and shared EVs.",
+   "new": "By 2030, achieve a 25% reduction in per-capita vehicle miles traveled",
+   "vmt2019": 12.4,
+   "vmtSep2025": 12,
+   "vmtGoal": 9.3,
+   "read": "2026-09-24"
+  }
+ },
+ "weekly": {
+  "share": 29,
+  "daily": 10,
+  "words": "29% of people bike or roll every week for commute, shopping, recreational, and social trips",
+  "source": "San Francisco Biking and Rolling Plan (2025), p. 12, from its Resident Preference Survey (Appendix K)",
+  "read": "2026-09-24"
+ },
+ "note": "Survey shares are the reports' rounded figures summed; commute shares leave out people who worked from home."
+}

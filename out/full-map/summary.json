@@ -1,0 +1,1006 @@
+{
+ "note": "Residents of populated 2020 census blocks. within: residents whose nearest destination of the type is at most N minutes away by the mode (walk, bike and transit from the block's street frontage); transit is Muni or walking, whichever is faster, on SFMTA's late-August 2026 schedule (departures 2026-08-26T08:00:00, 60-minute window). muni_beats_walking: residents for whom Muni is faster than walking to the type's nearest point and gets them there in N minutes or less. muni_within_quarter_mile: residents with a stop within 1,320 ft on foot where one route comes every N minutes or better in the period (Bryan, 2026-10-23: \"One route\"); its all_routes field counts every route at the stop together. any_stop_within_quarter_mile: a stop with any service on the day.",
+ "residents": 873965,
+ "blocks": 5133,
+ "transit": "included",
+ "mode_labels": {
+  "walk": "Walking",
+  "bike": "Low-stress bike",
+  "transit": "Muni or walking, whichever is faster",
+  "car": "Car"
+ },
+ "within": {
+  "commercial": {
+   "walk": {
+    "15": {
+     "residents": 861548,
+     "share": 98.6
+    },
+    "30": {
+     "residents": 869143,
+     "share": 99.4
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 865665,
+     "share": 99.1
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 863029,
+     "share": 98.7
+    },
+    "30": {
+     "residents": 872960,
+     "share": 99.9
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 871218,
+     "share": 99.7
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "elementary": {
+   "walk": {
+    "15": {
+     "residents": 802012,
+     "share": 91.8
+    },
+    "30": {
+     "residents": 870934,
+     "share": 99.7
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 836037,
+     "share": 95.7
+    },
+    "30": {
+     "residents": 870934,
+     "share": 99.7
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 838411,
+     "share": 95.9
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 871218,
+     "share": 99.7
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "grocery": {
+   "walk": {
+    "15": {
+     "residents": 782407,
+     "share": 89.5
+    },
+    "30": {
+     "residents": 869572,
+     "share": 99.5
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 800203,
+     "share": 91.6
+    },
+    "30": {
+     "residents": 872633,
+     "share": 99.8
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 817230,
+     "share": 93.5
+    },
+    "30": {
+     "residents": 873518,
+     "share": 99.9
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 873965,
+     "share": 100.0
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "high": {
+   "walk": {
+    "15": {
+     "residents": 481841,
+     "share": 55.1
+    },
+    "30": {
+     "residents": 796634,
+     "share": 91.2
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 600556,
+     "share": 68.7
+    },
+    "30": {
+     "residents": 852033,
+     "share": 97.5
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 577039,
+     "share": 66.0
+    },
+    "30": {
+     "residents": 869973,
+     "share": 99.5
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 872417,
+     "share": 99.8
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "library": {
+   "walk": {
+    "15": {
+     "residents": 466366,
+     "share": 53.4
+    },
+    "30": {
+     "residents": 822628,
+     "share": 94.1
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 607117,
+     "share": 69.5
+    },
+    "30": {
+     "residents": 853172,
+     "share": 97.6
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 581296,
+     "share": 66.5
+    },
+    "30": {
+     "residents": 868918,
+     "share": 99.4
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 871054,
+     "share": 99.7
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "major_park": {
+   "walk": {
+    "15": {
+     "residents": 594728,
+     "share": 68.0
+    },
+    "30": {
+     "residents": 830778,
+     "share": 95.1
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 707252,
+     "share": 80.9
+    },
+    "30": {
+     "residents": 873241,
+     "share": 99.9
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 669032,
+     "share": 76.6
+    },
+    "30": {
+     "residents": 873953,
+     "share": 100.0
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 873965,
+     "share": 100.0
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "middle": {
+   "walk": {
+    "15": {
+     "residents": 729400,
+     "share": 83.5
+    },
+    "30": {
+     "residents": 867203,
+     "share": 99.2
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 788105,
+     "share": 90.2
+    },
+    "30": {
+     "residents": 870934,
+     "share": 99.7
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 783398,
+     "share": 89.6
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 871218,
+     "share": 99.7
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  },
+  "park": {
+   "walk": {
+    "15": {
+     "residents": 871599,
+     "share": 99.7
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   },
+   "bike": {
+    "15": {
+     "residents": 872528,
+     "share": 99.8
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   },
+   "transit": {
+    "15": {
+     "residents": 872868,
+     "share": 99.9
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   },
+   "car": {
+    "15": {
+     "residents": 873965,
+     "share": 100.0
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  }
+ },
+ "muni_beats_walking": {
+  "commercial": {
+   "15": {
+    "residents": 10813,
+    "share": 1.2
+   },
+   "30": {
+    "residents": 15952,
+    "share": 1.8
+   }
+  },
+  "elementary": {
+   "15": {
+    "residents": 62952,
+    "share": 7.2
+   },
+   "30": {
+    "residents": 76373,
+    "share": 8.7
+   }
+  },
+  "grocery": {
+   "15": {
+    "residents": 74625,
+    "share": 8.5
+   },
+   "30": {
+    "residents": 107664,
+    "share": 12.3
+   }
+  },
+  "high": {
+   "15": {
+    "residents": 127903,
+    "share": 14.6
+   },
+   "30": {
+    "residents": 332853,
+    "share": 38.1
+   }
+  },
+  "library": {
+   "15": {
+    "residents": 152436,
+    "share": 17.4
+   },
+   "30": {
+    "residents": 354652,
+    "share": 40.6
+   }
+  },
+  "major_park": {
+   "15": {
+    "residents": 109058,
+    "share": 12.5
+   },
+   "30": {
+    "residents": 246457,
+    "share": 28.2
+   }
+  },
+  "middle": {
+   "15": {
+    "residents": 88069,
+    "share": 10.1
+   },
+   "30": {
+    "residents": 130344,
+    "share": 14.9
+   }
+  },
+  "park": {
+   "15": {
+    "residents": 15180,
+    "share": 1.7
+   },
+   "30": {
+    "residents": 15513,
+    "share": 1.8
+   }
+  }
+ },
+ "muni_within_quarter_mile": {
+  "am": {
+   "5": {
+    "residents": 165701,
+    "share": 19.0
+   },
+   "10": {
+    "residents": 766669,
+    "share": 87.7
+   },
+   "all_routes": {
+    "5": {
+     "residents": 491760,
+     "share": 56.3
+    },
+    "10": {
+     "residents": 802249,
+     "share": 91.8
+    }
+   }
+  },
+  "midday": {
+   "5": {
+    "residents": 69070,
+    "share": 7.9
+   },
+   "10": {
+    "residents": 690340,
+    "share": 79.0
+   },
+   "all_routes": {
+    "5": {
+     "residents": 455688,
+     "share": 52.1
+    },
+    "10": {
+     "residents": 778058,
+     "share": 89.0
+    }
+   }
+  },
+  "evening": {
+   "5": {
+    "residents": 0,
+    "share": 0.0
+   },
+   "10": {
+    "residents": 481091,
+    "share": 55.0
+   },
+   "all_routes": {
+    "5": {
+     "residents": 215586,
+     "share": 24.7
+    },
+    "10": {
+     "residents": 672270,
+     "share": 76.9
+    }
+   }
+  }
+ },
+ "any_stop_within_quarter_mile": {
+  "residents": 871472,
+  "share": 99.7
+ },
+ "scenarios": {
+  "tthird": {
+   "label": "T Third every 5 minutes, Sunnydale to Chinatown in about 35 minutes (assumed)",
+   "ruling": "Bryan, 2026-10-23: \"Add it\" (docs/decisions/access-map.md)",
+   "file": "out/full-map/transit-tthird.json",
+   "note": "Muni or walking, whichever is faster, with the scenario's feed in place of SFMTA's; every number in assumptions is assumed, not measured. within: residents within N minutes. gains: per type, residents and blocks whose time is lower than the base map's (faster), higher (slower), or newly within 15 or 30 minutes. faster_by_zip: the faster residents and blocks per type by 2020 ZIP Code Tabulation Area (by the block's interior point; null for the few blocks whose point falls in no ZCTA).",
+   "assumptions": {
+    "end_to_end_min": {
+     "assumption": true,
+     "value": 35.0,
+     "why": "Sunnydale to Chinatown in about 35 minutes (the feed's peak trips take 45 to 48), roughly what full signal priority would give"
+    },
+    "headway_min": {
+     "assumption": true,
+     "value": 5,
+     "why": "a T every 5 minutes all day, both directions (the feed runs every 10 in the AM peak)"
+    },
+    "pattern": {
+     "assumption": true,
+     "value": "every trip full length; the feed's short turns removed"
+    },
+    "scaling": {
+     "assumption": true,
+     "value": "proportional",
+     "why": "every stop-to-stop time and dwell scaled by end_to_end_min over the template's duration"
+    },
+    "span": {
+     "assumption": true,
+     "value": "the feed's first to last T departure that day, per direction"
+    }
+   },
+   "within": {
+    "commercial": {
+     "15": {
+      "residents": 863029,
+      "share": 98.7
+     },
+     "30": {
+      "residents": 872960,
+      "share": 99.9
+     }
+    },
+    "elementary": {
+     "15": {
+      "residents": 838808,
+      "share": 96.0
+     },
+     "30": {
+      "residents": 871218,
+      "share": 99.7
+     }
+    },
+    "grocery": {
+     "15": {
+      "residents": 820980,
+      "share": 93.9
+     },
+     "30": {
+      "residents": 873518,
+      "share": 99.9
+     }
+    },
+    "high": {
+     "15": {
+      "residents": 577260,
+      "share": 66.1
+     },
+     "30": {
+      "residents": 870584,
+      "share": 99.6
+     }
+    },
+    "library": {
+     "15": {
+      "residents": 587490,
+      "share": 67.2
+     },
+     "30": {
+      "residents": 868918,
+      "share": 99.4
+     }
+    },
+    "major_park": {
+     "15": {
+      "residents": 674969,
+      "share": 77.2
+     },
+     "30": {
+      "residents": 873953,
+      "share": 100.0
+     }
+    },
+    "middle": {
+     "15": {
+      "residents": 785813,
+      "share": 89.9
+     },
+     "30": {
+      "residents": 871218,
+      "share": 99.7
+     }
+    },
+    "park": {
+     "15": {
+      "residents": 872868,
+      "share": 99.9
+     },
+     "30": {
+      "residents": 873965,
+      "share": 100.0
+     }
+    }
+   },
+   "gains": {
+    "commercial": {
+     "faster": {
+      "residents": 12,
+      "blocks": 1
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    },
+    "elementary": {
+     "faster": {
+      "residents": 6037,
+      "blocks": 41
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 397,
+      "blocks": 3
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    },
+    "grocery": {
+     "faster": {
+      "residents": 9666,
+      "blocks": 64
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 3750,
+      "blocks": 24
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    },
+    "high": {
+     "faster": {
+      "residents": 15827,
+      "blocks": 58
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 221,
+      "blocks": 5
+     },
+     "newly_within_30": {
+      "residents": 611,
+      "blocks": 1
+     }
+    },
+    "library": {
+     "faster": {
+      "residents": 23406,
+      "blocks": 143
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 6194,
+      "blocks": 37
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    },
+    "major_park": {
+     "faster": {
+      "residents": 26556,
+      "blocks": 131
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 5937,
+      "blocks": 37
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    },
+    "middle": {
+     "faster": {
+      "residents": 13397,
+      "blocks": 62
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 2415,
+      "blocks": 20
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    },
+    "park": {
+     "faster": {
+      "residents": 609,
+      "blocks": 4
+     },
+     "slower": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_15": {
+      "residents": 0,
+      "blocks": 0
+     },
+     "newly_within_30": {
+      "residents": 0,
+      "blocks": 0
+     }
+    }
+   },
+   "faster_by_zip": {
+    "94102": {
+     "elementary": {
+      "residents": 48,
+      "blocks": 2
+     },
+     "library": {
+      "residents": 107,
+      "blocks": 4
+     },
+     "major_park": {
+      "residents": 2248,
+      "blocks": 12
+     }
+    },
+    "94103": {
+     "elementary": {
+      "residents": 1165,
+      "blocks": 4
+     },
+     "library": {
+      "residents": 2005,
+      "blocks": 7
+     },
+     "major_park": {
+      "residents": 4317,
+      "blocks": 16
+     }
+    },
+    "94105": {
+     "library": {
+      "residents": 686,
+      "blocks": 1
+     },
+     "major_park": {
+      "residents": 2793,
+      "blocks": 6
+     }
+    },
+    "94107": {
+     "elementary": {
+      "residents": 3229,
+      "blocks": 15
+     },
+     "grocery": {
+      "residents": 4446,
+      "blocks": 24
+     },
+     "high": {
+      "residents": 5343,
+      "blocks": 29
+     },
+     "library": {
+      "residents": 7121,
+      "blocks": 31
+     },
+     "major_park": {
+      "residents": 8117,
+      "blocks": 36
+     },
+     "middle": {
+      "residents": 1280,
+      "blocks": 6
+     }
+    },
+    "94108": {
+     "library": {
+      "residents": 17,
+      "blocks": 3
+     },
+     "major_park": {
+      "residents": 1431,
+      "blocks": 11
+     }
+    },
+    "94124": {
+     "commercial": {
+      "residents": 12,
+      "blocks": 1
+     },
+     "elementary": {
+      "residents": 1480,
+      "blocks": 18
+     },
+     "grocery": {
+      "residents": 2470,
+      "blocks": 22
+     },
+     "high": {
+      "residents": 818,
+      "blocks": 6
+     },
+     "library": {
+      "residents": 11926,
+      "blocks": 93
+     },
+     "major_park": {
+      "residents": 5516,
+      "blocks": 36
+     },
+     "middle": {
+      "residents": 3846,
+      "blocks": 28
+     },
+     "park": {
+      "residents": 609,
+      "blocks": 4
+     }
+    },
+    "94133": {
+     "major_park": {
+      "residents": 1079,
+      "blocks": 5
+     }
+    },
+    "94134": {
+     "elementary": {
+      "residents": 115,
+      "blocks": 2
+     },
+     "grocery": {
+      "residents": 2570,
+      "blocks": 17
+     },
+     "high": {
+      "residents": 463,
+      "blocks": 4
+     },
+     "major_park": {
+      "residents": 1055,
+      "blocks": 9
+     },
+     "middle": {
+      "residents": 2766,
+      "blocks": 18
+     }
+    },
+    "94158": {
+     "grocery": {
+      "residents": 180,
+      "blocks": 1
+     },
+     "high": {
+      "residents": 9203,
+      "blocks": 19
+     },
+     "library": {
+      "residents": 1541,
+      "blocks": 3
+     },
+     "middle": {
+      "residents": 5505,
+      "blocks": 10
+     }
+    },
+    "94188": {
+     "library": {
+      "residents": 3,
+      "blocks": 1
+     }
+    }
+   }
+  }
+ },
+ "bike_check_furth_lts1": {
+  "note": "Residents within N minutes riding School Trips' all-ages network plus every street and path Mekuria, Furth and Nixon's tables rate LTS 1 from OSM tags (scripts/full-map-lts.py). A check on the LTS 1 reading, not a figure of its own.",
+  "within": {
+   "commercial": {
+    "15": {
+     "residents": 871121,
+     "share": 99.7
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "elementary": {
+    "15": {
+     "residents": 870696,
+     "share": 99.6
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "grocery": {
+    "15": {
+     "residents": 872472,
+     "share": 99.8
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   },
+   "high": {
+    "15": {
+     "residents": 862808,
+     "share": 98.7
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   },
+   "library": {
+    "15": {
+     "residents": 863348,
+     "share": 98.8
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "major_park": {
+    "15": {
+     "residents": 855123,
+     "share": 97.8
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   },
+   "middle": {
+    "15": {
+     "residents": 868717,
+     "share": 99.4
+    },
+    "30": {
+     "residents": 871218,
+     "share": 99.7
+    }
+   },
+   "park": {
+    "15": {
+     "residents": 873965,
+     "share": 100.0
+    },
+    "30": {
+     "residents": 873965,
+     "share": 100.0
+    }
+   }
+  }
+ }
+}

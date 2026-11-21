@@ -1,0 +1,57 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-05-19",
+ "id": "g218-43710",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43710",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair Informational"
+  },
+  {
+   "no": "2",
+   "title": "Commission Secretary’s Report Informational"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters Regular Items for Consideration"
+  },
+  {
+   "no": "6",
+   "title": "Various Locations Pavement Renovation No. 58 & Sewer Replacement – Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "Project Spotlight – Chinatown Branch Library Informational Presentation"
+  },
+  {
+   "no": "8",
+   "title": "Director and Secretary Review Briefing Informational"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment – Continued from Item 2 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2,
+ "consentUnread": "Granicus indexes this meeting's consent calendar as one point, and no posted agenda or minutes with its lettered items was found on Granicus or sfpublicworks.org's commission calendar page."
+}

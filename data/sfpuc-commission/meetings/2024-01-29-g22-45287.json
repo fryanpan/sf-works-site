@@ -1,0 +1,43 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2024-01-29",
+ "id": "g22-45287",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45287",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/January%2029%20Budget%20Meeting%20APPROVED%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Summary of Budget Hearing Questions",
+   "text": "Summary of Budget Hearing Questions None"
+  },
+  {
+   "no": "4",
+   "title": "Water Enterprise and Hetch Hetchy Water"
+  },
+  {
+   "no": "4a",
+   "title": "FY 2024-25 and FY 2025-26 Operating and Capital Budgets, and 10-Year Capital Plan",
+   "text": "FY 2024-25 and FY 2025-26 Operating and Capital Budgets, and 10-Year Capital Plan Steve Ritchie, Assistant General Manager (AGM) Water Enterprise began with a review of the spanning water system and indicated the Hetch Hetchy Regional Water System supplies high-quality drinking water to more than 2.7 million residents and businesses throughout the San Francisco Bay Area. Of the 26 wholesale customers, 21 rely on the regional system for more than 60% of their drinking water supply. He displayed a map detailing the fault lines throughout the system. He stated the youngest dam in the system is 59 years old and that the system is storage-driven"
+  },
+  {
+   "no": "5",
+   "title": "Motion to continue meeting to a Special Meeting noticed for Friday, February 2, 2024"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

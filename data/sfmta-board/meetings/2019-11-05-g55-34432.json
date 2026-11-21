@@ -1,0 +1,94 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-11-05",
+ "id": "g55-34432",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34432",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/20667"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting.",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes -October 15, 2019 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 191105-133)"
+  },
+  {
+   "no": "10.2",
+   "title": "Adopting a Resolution of Support for the New Flyer Midlife Overhaul Phase III Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 191105-134)",
+   "severed": true
+  },
+  {
+   "no": "11",
+   "title": "Approving the SFMTA’s 2019 Title VI Program Update",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Amending Division II of the Transportation Code to establish a definition of Shared Mobility Device Service",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Authorizing the Director to execute Contracts to procure three 40-foot, low floor, battery-electric buses",
+   "decision": "ADOPTED — 2 ayes, 4 nays"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session."
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in closed session."
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

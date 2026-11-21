@@ -1,0 +1,106 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-05-19",
+ "id": "g55-52461",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52461",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45450"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes May 5, 2026 Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 260519-038)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or that will be available in payment of the following claims against the SFMTA or for the City to accept funds based on a collection effort",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or that will be available in payment of the following claims against the SFMTA or for the City to accept funds based on a collection effort (Explanatory documents include a resolution): A. CSAA/Interinsurance Exchange Automobile Club / Apryl Casares, Collection No. C26-0216, for $33,208.70 (City to Receive). Collection involving allegations of property damage to City. RESOLUTION No. 260519-038",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260519-038)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications (The Planning Department has found that Items A-C are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.): A. ESTABLISH – RESIDENTIAL PERMIT PARKING AREA J (Eligibility only, no signs) Stanyan Street, east side, between Page Street and Haight Street (650 and 670-672 Stanyan only) B. ESTABLISH – RESIDENTIAL PERMIT PARKING AREA G (Eligibility only, no signs) Post Street, both sides, between Franklin Street and Gough Street C. ESTABLISH – RESIDENTIAL PERMIT PARKING AREA J (Eligibility only, no signs) 17th Street, north side, between Clayton Street and Roosevelt Way RESOLUTION No. 260519-039",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260519-039)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving parking restrictions to create a parking space for the exclusive use of San Francisco Adult Probation Department (SFAPD) permitted vehicles on the west side of 6th Street between Brannan Street and Bryant Street and amending Division II of",
+   "text": "Approving parking restrictions to create a parking space for the exclusive use of San Francisco Adult Probation Department (SFAPD) permitted vehicles on the west side of 6th Street between Brannan Street and Bryant Street and amending Division II of 4 the Transportation Code to revise parking restrictions on 6th Street. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260519-040 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260519-040)"
+  },
+  {
+   "no": "11",
+   "title": "Approving parking and traffic modifications, including bus stop upgrades, pedestrian safety improvements and relocation and consolidation of closely spaced bus stops, 29 Sunset Improvement Project",
+   "decision": "ADOPTED — 7 ayes (Resolution 260519-041)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Fiscal Year 2025-2026 9 month Financial Update"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 6 ayes (Resolution 260519-042)"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

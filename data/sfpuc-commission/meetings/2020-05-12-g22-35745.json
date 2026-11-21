@@ -1,0 +1,104 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-05-12",
+ "id": "g22-35745",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35745",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of April 28, 2020"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Update on SFPUC Operations During COVID-19 Emergency"
+  },
+  {
+   "no": "7",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "8",
+   "title": "Consent Calendar"
+  },
+  {
+   "no": "8a",
+   "title": "Approve plans and specifications, and award Contract No. HH-1001, Moccasin Reservoir Perimeter Security Fence"
+  },
+  {
+   "no": "8b",
+   "title": "Approve increase of approximately eight months to existing contract duration contingency for Contract No. WW-667, Mariposa Dry Weather Pump Station Improvements"
+  },
+  {
+   "no": "9",
+   "title": "Amendment No. 3 to Agreement Nos. CS-192A&B, Technical Review - Calaveras Dam, with Erik Kollgaard (CS-192A) and I.M. Idriss (CS-192B)"
+  },
+  {
+   "no": "10",
+   "title": "Amendment No. 2 to Agreement No. CS-310, Electronic Bill Presentment and Payment Services, with KUBRA Data Transfer, Ltd."
+  },
+  {
+   "no": "11",
+   "title": "Amendment No. 3 to Agreement No. CS-382A, Calaveras Dam Technical Advisory Panel, with Gabriel Fernandez"
+  },
+  {
+   "no": "12",
+   "title": "Selection of Bureau Veritas North America, Inc. (Bureau Veritas); award Agreement No. PUC.PRO.0112, As-Needed Inspection, Testing, and Surveillance Services"
+  },
+  {
+   "no": "13",
+   "title": "Award of a Green Infrastructure Grant to Holy Trinity Greek Orthodox Church (Holy Trinity)"
+  },
+  {
+   "no": "14",
+   "title": "Disbursement of $358,075 in remaining grant funds under the Green Infrastructure Grant awarded to the San Francisco Unified School District"
+  },
+  {
+   "no": "15",
+   "title": "Water Supply Assessment for the proposed San Francisco Gateway Project"
+  },
+  {
+   "no": "16",
+   "title": "Settlement of Unlitigated Claim, U-Save Plumbing, $46,648.39"
+  },
+  {
+   "no": "17",
+   "title": "Settlement of Unlitigated Claim, State Farm Insurance Company, $34,495.14"
+  },
+  {
+   "no": "18",
+   "title": "Settlement of Lawsuit, Sandra Hernandez, et al., $214,000"
+  },
+  {
+   "no": "19",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

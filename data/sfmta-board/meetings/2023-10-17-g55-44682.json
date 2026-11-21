@@ -1,0 +1,108 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-10-17",
+ "id": "g55-44682",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44682",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/29106"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of October 3, 2023, Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Go Local Marketing Campaign"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - State Legislative Update"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Twin Peaks Tunnel Inspection Update"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Funding Update"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 7 ayes, 4 nays (Resolution 231017-081)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 7 ayes (Resolution 231017-081)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "decision": "ADOPTED — 7 ayes; part A severed (Resolution 231017-082)"
+  },
+  {
+   "no": "10.3",
+   "title": "Amending Transportation Code, Division II, Section 801 for permit parking on Hyde Street",
+   "decision": "ADOPTED — 7 ayes (Resolution 231017-083)"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code, Division II, Section 601, to designate a full-time transit-only area on Hyde Street between Eddy and McAllister streets; and approving various traffic and parking modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 231017-084)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Muni Service update"
+  },
+  {
+   "no": "13",
+   "title": "Amending Transportation Code Division II, Section 601, to designate full-time Transit-Only areas on San Jose Avenue between Ocean Avenue and Cotter Street and approving various parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 231017-085)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

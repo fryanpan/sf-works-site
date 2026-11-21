@@ -1,0 +1,1026 @@
+{
+ "note": "Distance curve for where each school's students live, written by tools/school-trips/school-gravity.py. f(x) = (x + d0)^-alpha exp(-beta x), x = straight-line miles / the school's reach.",
+ "fit": {
+  "alpha": 1.8332,
+  "beta": 0.0,
+  "d0": 0.1,
+  "loss": 6.0029,
+  "got": {
+   "under1": 50.82,
+   "1to2": 22.91,
+   "over2": 26.28,
+   "meanMi": 1.44
+  },
+  "target": {
+   "under1": 50.6,
+   "1to2": 21.5,
+   "over2": 27.8,
+   "meanMi": 1.4
+  },
+  "targetSrc": {
+   "bands": {
+    "url": "https://www.sfcta.org/sites/default/files/2024-07/SF_School_Access_Plan_Report_2023-05-04_FINAL.pdf",
+    "label": "SFCTA, San Francisco School Access Plan, May 2023, p. 16, Fig. 5",
+    "tag": "[primary — read 2026-10-08]"
+   },
+   "mean": {
+    "url": "https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20(FINAL%2C%208.28.26).pdf",
+    "label": "SFUSD, School Reorganization Study Session #2, 2026-09-01, simulation baseline",
+    "tag": "[primary — read 2026-10-01]"
+   }
+  },
+  "withoutReach": {
+   "under1": 50.85,
+   "1to2": 22.97,
+   "over2": 26.19,
+   "meanMi": 1.44
+  },
+  "schools": 72,
+  "students": 22235,
+  "unplaced": [
+   "\"Nonpublic, Nonsectarian Schools\""
+  ],
+  "rpsMatched": 70
+ },
+ "assume": {
+  "levelStretch": {
+   "elementary": 1.0,
+   "middle": 1.5,
+   "high": 2.0
+  },
+  "choiceStretch": 2.0,
+  "rpsPower": 0.5,
+  "rpsClip": [
+   0.25,
+   2.0
+  ],
+  "entry": {
+   "elementary": "K",
+   "middle": "6",
+   "high": "9"
+  }
+ },
+ "rpsMedian": {
+  "elementary": 3.94,
+  "middle": 2.86,
+  "high": 3.7
+ },
+ "inputs": {
+  "cde": {
+   "year": "2025-26",
+   "url": "https://www3.cde.ca.gov/demo-downloads/census/cdenroll2526.txt",
+   "read": "2026-10-08",
+   "tag": "[primary — read 2026-10-08]"
+  },
+  "rps": {
+   "year": 2026,
+   "label": "Main Round 2026 Transitional Grade Requests per Seat",
+   "url": "https://drive.google.com/file/d/1RQganxiIDdJFKLLnOTa2rl6vzMHHLUW_/view",
+   "via": "https://www.sfusd.edu/schools/enroll/student-assignment-policy/annual-assignment-highlights",
+   "read": "2026-10-08",
+   "tag": "[primary — read 2026-10-08]"
+  }
+ },
+ "reach": {
+  "38684780102103": {
+   "high": {
+    "rps": 3.73,
+    "rpsSchool": "Jordan (June) HS",
+    "stretch": 2.007
+   }
+  },
+  "38684780111427": {
+   "elementary": {
+    "rps": 5.14,
+    "rpsSchool": "Feinstein (Dianne) ES",
+    "stretch": 1.142
+   }
+  },
+  "38684780120386": {
+   "elementary": {
+    "rps": 4.98,
+    "rpsSchool": "Chinese Immersion School at DeAvila ES",
+    "stretch": 1.124
+   }
+  },
+  "38684780123117": {
+   "elementary": {
+    "rps": 6.14,
+    "rpsSchool": "SF Public Montessori ES",
+    "stretch": 1.248
+   }
+  },
+  "38684780132241": {
+   "middle": {
+    "rps": 3.53,
+    "rpsSchool": "Brown Jr. (Willie) MS",
+    "stretch": 1.668
+   }
+  },
+  "38684783830197": {
+   "high": {
+    "rps": 0.05,
+    "rpsSchool": "Independence HS",
+    "stretch": 0.5
+   }
+  },
+  "38684783830205": {
+   "high": {
+    "rps": 5.9,
+    "rpsSchool": "Wallenberg (Raoul) HS",
+    "stretch": 2.525
+   }
+  },
+  "38684783830254": {
+   "high": {
+    "rps": 2.47,
+    "rpsSchool": "Burton (Phillip and Sala) HS",
+    "stretch": 1.634
+   }
+  },
+  "38684783830288": {
+   "high": {
+    "rps": 4.83,
+    "rpsSchool": "Balboa HS",
+    "stretch": 2.284
+   }
+  },
+  "38684783830403": {
+   "high": {
+    "rps": 2.22,
+    "rpsSchool": "Marshall (Thurgood) HS",
+    "stretch": 1.549
+   }
+  },
+  "38684783831765": {
+   "high": {
+    "rps": 2.79,
+    "rpsSchool": "Galileo HS",
+    "stretch": 1.736
+   }
+  },
+  "38684783833241": {
+   "high": {
+    "rps": 4.24,
+    "rpsSchool": "Lincoln (Abraham) HS",
+    "stretch": 2.14
+   }
+  },
+  "38684783833407": {
+   "high": {
+    "rps": 3.28,
+    "rpsSchool": "Lowell HS",
+    "stretch": 1.882
+   }
+  },
+  "38684783834082": {
+   "high": {
+    "rps": 3.7,
+    "rpsSchool": "Mission HS",
+    "stretch": 1.999
+   }
+  },
+  "38684783834769": {
+   "high": {
+    "rps": 2.48,
+    "rpsSchool": "O'Connell (John) HS",
+    "stretch": 1.637
+   }
+  },
+  "38684783839081": {
+   "high": {
+    "rps": 3.87,
+    "rpsSchool": "Washington (George) HS",
+    "stretch": 2.045
+   }
+  },
+  "38684786040695": {
+   "elementary": {
+    "rps": 5.61,
+    "rpsSchool": "Alamo ES",
+    "stretch": 1.193
+   }
+  },
+  "38684786040703": {
+   "elementary": {
+    "rps": 8.22,
+    "rpsSchool": "Alvarado ES",
+    "stretch": 1.444
+   }
+  },
+  "38684786040737": {
+   "elementary": {
+    "rps": 6.11,
+    "rpsSchool": "Argonne ES",
+    "stretch": 1.245
+   }
+  },
+  "38684786040752": {
+   "elementary": {
+    "rps": 0.88,
+    "rpsSchool": "Carmichael (Bessie) K-8",
+    "stretch": 0.472
+   },
+   "middle": {
+    "rps": 0.94,
+    "rpsSchool": "Carmichael (Bessie) K-8",
+    "stretch": 0.861
+   }
+  },
+  "38684786040760": {
+   "elementary": {
+    "rps": 1.05,
+    "rpsSchool": "Harte (Bret) ES",
+    "stretch": 0.516
+   }
+  },
+  "38684786040778": {
+   "elementary": {
+    "rps": 2.55,
+    "rpsSchool": "Bryant ES",
+    "stretch": 0.804
+   }
+  },
+  "38684786040828": {
+   "elementary": {
+    "rps": 10.33,
+    "rpsSchool": "Clarendon ES",
+    "stretch": 1.619
+   }
+  },
+  "38684786040836": {
+   "elementary": {
+    "rps": 1.59,
+    "rpsSchool": "Cleveland ES",
+    "stretch": 0.635
+   }
+  },
+  "38684786040851": {
+   "elementary": {
+    "rps": 5.32,
+    "rpsSchool": "Sloat (Commodore) ES",
+    "stretch": 1.162
+   }
+  },
+  "38684786040877": {
+   "elementary": {
+    "rps": 1.53,
+    "rpsSchool": "Lau (Gordon J) ES",
+    "stretch": 0.623
+   }
+  },
+  "38684786040893": {
+   "elementary": {
+    "rps": 5.8,
+    "rpsSchool": "Webster (Daniel) ES",
+    "stretch": 1.213
+   }
+  },
+  "38684786040919": {
+   "elementary": {
+    "rps": 10.41,
+    "rpsSchool": "Milk (Harvey) Civil Right ES",
+    "stretch": 1.625
+   }
+  },
+  "38684786040943": {
+   "elementary": {
+    "rps": 1.81,
+    "rpsSchool": "Taylor (Edward R) ES",
+    "stretch": 0.678
+   }
+  },
+  "38684786040950": {
+   "elementary": {
+    "rps": 1.11,
+    "rpsSchool": "El Dorado ES",
+    "stretch": 0.531
+   }
+  },
+  "38684786040968": {
+   "elementary": {
+    "rps": 3.0,
+    "rpsSchool": "Cobb (Dr William L) ES",
+    "stretch": 0.872
+   }
+  },
+  "38684786040984": {
+   "elementary": {
+    "rps": 3.99,
+    "rpsSchool": "Huerta (Dolores) ES",
+    "stretch": 1.006
+   }
+  },
+  "38684786041008": {
+   "elementary": {
+    "rps": 4.49,
+    "rpsSchool": "Key (Francis Scott) ES",
+    "stretch": 1.067
+   }
+  },
+  "38684786041016": {
+   "elementary": {
+    "rps": 7.98,
+    "rpsSchool": "McCoppin (Frank) ES",
+    "stretch": 1.423
+   }
+  },
+  "38684786041040": {
+   "elementary": {
+    "rps": 3.54,
+    "rpsSchool": "Garfield ES",
+    "stretch": 0.947
+   }
+  },
+  "38684786041065": {
+   "elementary": {
+    "rps": 11.38,
+    "rpsSchool": "Peabody (George) ES",
+    "stretch": 1.699
+   }
+  },
+  "38684786041073": {
+   "elementary": {
+    "rps": 4.0,
+    "rpsSchool": "Glen Park ES",
+    "stretch": 1.007
+   }
+  },
+  "38684786041115": {
+   "elementary": {
+    "rps": 7.3,
+    "rpsSchool": "Grattan ES",
+    "stretch": 1.361
+   }
+  },
+  "38684786041123": {
+   "elementary": {
+    "rps": 1.5,
+    "rpsSchool": "Guadalupe ES",
+    "stretch": 0.617
+   }
+  },
+  "38684786041131": {
+   "elementary": {
+    "rps": 2.65,
+    "rpsSchool": "Wo (Yick) ES",
+    "stretch": 0.82
+   }
+  },
+  "38684786041149": {
+   "elementary": {
+    "rps": 2.2,
+    "rpsSchool": "Chavez (Cesar) ES",
+    "stretch": 0.747
+   }
+  },
+  "38684786041156": {
+   "elementary": {
+    "rps": 1.56,
+    "rpsSchool": "Hillcrest ES",
+    "stretch": 0.629
+   }
+  },
+  "38684786041206": {
+   "elementary": {
+    "rps": 2.36,
+    "rpsSchool": "Parker (Jean) ES",
+    "stretch": 0.774
+   }
+  },
+  "38684786041230": {
+   "elementary": {
+    "rps": 4.16,
+    "rpsSchool": "Jefferson ES",
+    "stretch": 1.027
+   }
+  },
+  "38684786041255": {
+   "elementary": {
+    "rps": 1.82,
+    "rpsSchool": "Muir (John) ES",
+    "stretch": 0.679
+   }
+  },
+  "38684786041271": {
+   "elementary": {
+    "rps": 6.27,
+    "rpsSchool": "Ortega (Jose) ES",
+    "stretch": 1.261
+   }
+  },
+  "38684786041289": {
+   "elementary": {
+    "rps": 2.41,
+    "rpsSchool": "Serra (Junipero) ES",
+    "stretch": 0.782
+   }
+  },
+  "38684786041305": {
+   "elementary": {
+    "rps": 6.17,
+    "rpsSchool": "Lafayette ES",
+    "stretch": 1.251
+   }
+  },
+  "38684786041321": {
+   "elementary": {
+    "rps": 3.38,
+    "rpsSchool": "Lakeshore ES",
+    "stretch": 0.926
+   }
+  },
+  "38684786041339": {
+   "elementary": {
+    "rps": 9.33,
+    "rpsSchool": "Lawton K-8",
+    "stretch": 1.538
+   },
+   "middle": {
+    "rps": 9.43,
+    "rpsSchool": "Lawton K-8",
+    "stretch": 2.726
+   }
+  },
+  "38684786041347": {
+   "elementary": {
+    "rps": 4.52,
+    "rpsSchool": "Flynn (Leonard R) ES",
+    "stretch": 1.071
+   }
+  },
+  "38684786041362": {
+   "elementary": {
+    "rps": 1.46,
+    "rpsSchool": "Longfellow ES",
+    "stretch": 0.608
+   }
+  },
+  "38684786041412": {
+   "elementary": {
+    "rps": 2.41,
+    "rpsSchool": "Marshall ES",
+    "stretch": 0.782
+   }
+  },
+  "38684786041420": {
+   "elementary": {
+    "rps": 7.02,
+    "rpsSchool": "McKinley ES",
+    "stretch": 1.334
+   }
+  },
+  "38684786041438": {
+   "elementary": {
+    "rps": 4.97,
+    "rpsSchool": "Miraloma ES",
+    "stretch": 1.123
+   }
+  },
+  "38684786041446": {
+   "elementary": {
+    "rps": 3.94,
+    "rpsSchool": "Monroe ES",
+    "stretch": 1.0
+   }
+  },
+  "38684786041487": {
+   "elementary": {
+    "rps": 1.78,
+    "rpsSchool": "Revere (Paul) K-8",
+    "stretch": 0.672
+   },
+   "middle": {
+    "rps": 0.94,
+    "rpsSchool": "Revere (Paul) K-8",
+    "stretch": 0.861
+   }
+  },
+  "38684786041503": {
+   "elementary": {
+    "rps": 2.98,
+    "rpsSchool": "Parks (Rosa) ES",
+    "stretch": 0.869
+   }
+  },
+  "38684786041511": {
+   "elementary": {
+    "rps": 1.08,
+    "rpsSchool": "Redding ES",
+    "stretch": 0.523
+   }
+  },
+  "38684786041529": {
+   "elementary": {
+    "rps": 6.48,
+    "rpsSchool": "Stevenson (Robert Louis) ES",
+    "stretch": 1.282
+   }
+  },
+  "38684786041545": {
+   "elementary": {
+    "rps": 3.17,
+    "rpsSchool": "Sanchez ES",
+    "stretch": 0.897
+   }
+  },
+  "38684786041560": {
+   "elementary": {
+    "rps": 0.95,
+    "rpsSchool": "Sheridan ES",
+    "stretch": 0.491
+   }
+  },
+  "38684786041578": {
+   "elementary": {
+    "rps": 3.38,
+    "rpsSchool": "Sherman ES",
+    "stretch": 0.926
+   }
+  },
+  "38684786041586": {
+   "elementary": {
+    "rps": 1.5,
+    "rpsSchool": "Malcolm X Academy ES",
+    "stretch": 0.617
+   }
+  },
+  "38684786041594": {
+   "elementary": {
+    "rps": 2.31,
+    "rpsSchool": "Spring Valley Science ES",
+    "stretch": 0.765
+   }
+  },
+  "38684786041602": {
+   "elementary": {
+    "rps": 4.09,
+    "rpsSchool": "King (Thomas Starr) ES",
+    "stretch": 1.018
+   }
+  },
+  "38684786041610": {
+   "elementary": {
+    "rps": 4.1,
+    "rpsSchool": "Sunnyside ES",
+    "stretch": 1.02
+   }
+  },
+  "38684786041644": {
+   "elementary": {
+    "rps": 7.5,
+    "rpsSchool": "Sutro ES",
+    "stretch": 1.379
+   }
+  },
+  "38684786041685": {
+   "elementary": {
+    "rps": 7.0,
+    "rpsSchool": "Ulloa ES",
+    "stretch": 1.332
+   }
+  },
+  "38684786041701": {
+   "elementary": {
+    "rps": 1.82,
+    "rpsSchool": "Visitacion Valley ES",
+    "stretch": 0.679
+   }
+  },
+  "38684786041727": {
+   "elementary": {
+    "rps": 8.73,
+    "rpsSchool": "West Portal ES",
+    "stretch": 1.488
+   }
+  },
+  "38684786059828": {
+   "middle": {
+    "rps": 4.18,
+    "rpsSchool": "Giannini (A.P.) MS",
+    "stretch": 1.815
+   }
+  },
+  "38684786059844": {
+   "middle": {
+    "rps": 1.98,
+    "rpsSchool": "Francisco MS",
+    "stretch": 1.249
+   }
+  },
+  "38684786059851": {
+   "middle": {
+    "rps": 4.27,
+    "rpsSchool": "Hoover (Herbert) MS",
+    "stretch": 1.834
+   }
+  },
+  "38684786059869": {
+   "middle": {
+    "rps": 1.89,
+    "rpsSchool": "Denman (James) MS",
+    "stretch": 1.22
+   }
+  },
+  "38684786059885": {
+   "middle": {
+    "rps": 1.87,
+    "rpsSchool": "King Jr (Dr Martin L) MS",
+    "stretch": 1.214
+   }
+  },
+  "38684786059901": {
+   "middle": {
+    "rps": 5.08,
+    "rpsSchool": "Roosevelt MS",
+    "stretch": 2.001
+   }
+  },
+  "38684786059919": {
+   "middle": {
+    "rps": 1.46,
+    "rpsSchool": "Visitacion Valley MS",
+    "stretch": 1.073
+   }
+  },
+  "38684786062020": {
+   "middle": {
+    "rps": 3.71,
+    "rpsSchool": "Aptos MS",
+    "stretch": 1.71
+   }
+  },
+  "38684786062038": {
+   "middle": {
+    "rps": 2.86,
+    "rpsSchool": "Everett MS",
+    "stretch": 1.501
+   }
+  },
+  "38684786062046": {
+   "elementary": {
+    "rps": 2.51,
+    "rpsSchool": "Buena Vista Horace Mann K-8",
+    "stretch": 0.798
+   },
+   "middle": {
+    "rps": 1.18,
+    "rpsSchool": "Buena Vista Horace Mann K-8",
+    "stretch": 0.964
+   }
+  },
+  "38684786062053": {
+   "middle": {
+    "rps": 2.65,
+    "rpsSchool": "Lick (James) MS",
+    "stretch": 1.445
+   }
+  },
+  "38684786062061": {
+   "middle": {
+    "rps": 2.23,
+    "rpsSchool": "Marina MS",
+    "stretch": 1.326
+   }
+  },
+  "38684786062079": {
+   "middle": {
+    "rps": 3.81,
+    "rpsSchool": "Presidio MS",
+    "stretch": 1.733
+   }
+  },
+  "38684786089775": {
+   "elementary": {
+    "rps": 7.68,
+    "rpsSchool": "Rooftop K-8",
+    "stretch": 1.396
+   },
+   "middle": {
+    "rps": 5.2,
+    "rpsSchool": "Rooftop K-8",
+    "stretch": 2.024
+   }
+  },
+  "38684786093488": {
+   "elementary": {
+    "rps": 2.21,
+    "rpsSchool": "SF Community K-8",
+    "stretch": 0.749
+   },
+   "middle": {
+    "rps": 3.7,
+    "rpsSchool": "SF Community K-8",
+    "stretch": 1.707
+   }
+  },
+  "38684786093496": {
+   "elementary": {
+    "rps": 0.86,
+    "rpsSchool": "Carver (Dr George W) ES",
+    "stretch": 0.467
+   }
+  },
+  "38684786097919": {
+   "elementary": {
+    "rps": 9.18,
+    "rpsSchool": "New Traditions ES",
+    "stretch": 1.526
+   }
+  },
+  "38684786099154": {
+   "elementary": {
+    "rps": 2.2,
+    "rpsSchool": "Moscone (George R) ES",
+    "stretch": 0.747
+   }
+  },
+  "38684786102479": {
+   "elementary": {
+    "rps": 7.59,
+    "rpsSchool": "Lilienthal (Claire) K-8",
+    "stretch": 1.387
+   },
+   "middle": {
+    "rps": 5.5,
+    "rpsSchool": "Lilienthal (Claire) K-8",
+    "stretch": 2.082
+   }
+  },
+  "38684786104673": {
+   "elementary": {
+    "rps": 0.91,
+    "rpsSchool": "Drew (Dr Charles) College Preparatory Academy ES",
+    "stretch": 0.48
+   }
+  },
+  "38684786113245": {
+   "elementary": {
+    "rps": 7.36,
+    "rpsSchool": "Yu (Alice Fong) K-8",
+    "stretch": 1.366
+   },
+   "middle": {
+    "rps": 1.52,
+    "rpsSchool": "Yu (Alice Fong) K-8",
+    "stretch": 1.094
+   }
+  },
+  "38684786113252": {
+   "elementary": {
+    "rps": 2.34,
+    "rpsSchool": "Chin (John Yehall) ES",
+    "stretch": 0.77
+   }
+  },
+  "38684786113997": {
+   "elementary": {
+    "rps": 10.57,
+    "rpsSchool": "Sunset ES",
+    "stretch": 1.637
+   }
+  },
+  "38684786115901": {
+   "elementary": {
+    "rps": 1.06,
+    "rpsSchool": "Tenderloin Community ES",
+    "stretch": 0.518
+   }
+  }
+ },
+ "zipCheck": {
+  "source": {
+   "url": "https://public.tableau.com/app/profile/san.francisco.unified.school.district/viz/SFUSDPublicDataDashboard2025-26/Story1",
+   "read": "2026-10-08",
+   "tag": "[primary — read 2026-10-08]"
+  },
+  "zcta": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/PUMA_TAD_TAZ_UGA_ZCTA/MapServer/7",
+  "schools": {
+   "balboa|high": {
+    "rows": [
+     {
+      "zip": "94112",
+      "count": 516,
+      "dashboard": 43.2,
+      "model": 59.3
+     },
+     {
+      "zip": "94134",
+      "count": 192,
+      "dashboard": 16.1,
+      "model": 7.1
+     },
+     {
+      "zip": "94124",
+      "count": 182,
+      "dashboard": 15.2,
+      "model": 3.4
+     },
+     {
+      "zip": "94110",
+      "count": 79,
+      "dashboard": 6.6,
+      "model": 4.6
+     },
+     {
+      "zip": "94132",
+      "count": 57,
+      "dashboard": 4.8,
+      "model": 3.2
+     }
+    ],
+    "enrolled": 1195,
+    "modelTop": [
+     "94112",
+     "94134",
+     "94127",
+     "94131",
+     "94110"
+    ],
+    "sameTop5": 3,
+    "top5Dashboard": 85.9,
+    "top5Model": 77.6
+   },
+   "burton|high": {
+    "rows": [
+     {
+      "zip": "94134",
+      "count": 299,
+      "dashboard": 29.5,
+      "model": 48.9
+     },
+     {
+      "zip": "94124",
+      "count": 274,
+      "dashboard": 27.0,
+      "model": 18.7
+     },
+     {
+      "zip": "94112",
+      "count": 263,
+      "dashboard": 25.9,
+      "model": 11.3
+     },
+     {
+      "zip": "94110",
+      "count": 52,
+      "dashboard": 5.1,
+      "model": 6.7
+     },
+     {
+      "zip": "94132",
+      "count": 33,
+      "dashboard": 3.3,
+      "model": 1.0
+     }
+    ],
+    "enrolled": 1014,
+    "modelTop": [
+     "94134",
+     "94124",
+     "94112",
+     "94110",
+     "94131"
+    ],
+    "sameTop5": 4,
+    "top5Dashboard": 90.8,
+    "top5Model": 86.6
+   },
+   "carmichael|elementary": {
+    "rows": [
+     {
+      "zip": "94103",
+      "count": 166,
+      "dashboard": 47.4,
+      "model": 31.4
+     },
+     {
+      "zip": "94102",
+      "count": 31,
+      "dashboard": 8.9,
+      "model": 12.1
+     },
+     {
+      "zip": "94105",
+      "count": 22,
+      "dashboard": 6.3,
+      "model": 4.2
+     },
+     {
+      "zip": "94124",
+      "count": 21,
+      "dashboard": 6.0,
+      "model": 4.0
+     },
+     {
+      "zip": "94158",
+      "count": 21,
+      "dashboard": 6.0,
+      "model": 7.5
+     }
+    ],
+    "enrolled": 350,
+    "modelTop": [
+     "94103",
+     "94102",
+     "94107",
+     "94158",
+     "94110"
+    ],
+    "sameTop5": 3,
+    "top5Dashboard": 74.6,
+    "top5Model": 59.2
+   },
+   "carmichael|middle": {
+    "rows": [
+     {
+      "zip": "94103",
+      "count": 68,
+      "dashboard": 38.2,
+      "model": 30.9
+     },
+     {
+      "zip": "94102",
+      "count": 24,
+      "dashboard": 13.5,
+      "model": 12.7
+     },
+     {
+      "zip": "94124",
+      "count": 20,
+      "dashboard": 11.2,
+      "model": 2.5
+     },
+     {
+      "zip": "94158",
+      "count": 14,
+      "dashboard": 7.9,
+      "model": 3.1
+     },
+     {
+      "zip": "94107",
+      "count": 11,
+      "dashboard": 6.2,
+      "model": 8.1
+     }
+    ],
+    "enrolled": 178,
+    "modelTop": [
+     "94103",
+     "94102",
+     "94110",
+     "94107",
+     "94109"
+    ],
+    "sameTop5": 3,
+    "top5Dashboard": 77.0,
+    "top5Model": 57.3
+   },
+   "june-jordan|high": {
+    "rows": [
+     {
+      "zip": "94112",
+      "count": 68,
+      "dashboard": 41.0,
+      "model": 47.8
+     },
+     {
+      "zip": "94124",
+      "count": 34,
+      "dashboard": 20.5,
+      "model": 6.2
+     },
+     {
+      "zip": "94110",
+      "count": 14,
+      "dashboard": 8.4,
+      "model": 6.3
+     },
+     {
+      "zip": "94134",
+      "count": 14,
+      "dashboard": 8.4,
+      "model": 19.9
+     },
+     {
+      "zip": "94132",
+      "count": 11,
+      "dashboard": 6.6,
+      "model": 1.9
+     }
+    ],
+    "enrolled": 166,
+    "modelTop": [
+     "94112",
+     "94134",
+     "94110",
+     "94124",
+     "94131"
+    ],
+    "sameTop5": 4,
+    "top5Dashboard": 84.9,
+    "top5Model": 82.1
+   }
+  }
+ }
+}

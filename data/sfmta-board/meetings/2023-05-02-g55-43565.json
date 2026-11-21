@@ -1,0 +1,87 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-05-02",
+ "id": "g55-43565",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43565",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/28134"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes • April 18, 2023, Regular Meeting",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes (Resolution 230502-035)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 5 ayes (Resolution 230502-035)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "decision": "ADOPTED — 5 ayes (Resolution 230502-036)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and Discussion on the 2023 SFMTA Community Survey Results and related feedback from riders and the general public"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 5 ayes (Resolution 230502-037)"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

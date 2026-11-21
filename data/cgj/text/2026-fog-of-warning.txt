@@ -1,0 +1,1037 @@
+FOG OF WARNING
+San Francisco’s Warning System That Warns but Doesn't Inform
+
+
+
+
+            June 18, 2026
+            City and County of San Francisco
+            2025–2026 Civil Grand Jury
+ABOUT THE SF CIVIL GRAND JURY
+The San Francisco Civil Grand Jury (the “Jury”) is a government oversight panel of
+nineteen San Francisco citizens who volunteer for one year. Each Jury determines
+which local government entities within San Francisco it will investigate. The Jury
+cannot investigate disputes between private parties, criminal activity, or activities
+outside its jurisdiction, which is the government of the City and County of San
+Francisco (“City”) and any other local governments within San Francisco city limits.
+
+The Jury publishes public reports with findings and recommendations based on its
+investigations.
+
+Read more about the San Francisco Civil Grand Jury
+https://www.sf.gov/departments--civil-grand-jury.
+
+2025–2026 Civil Grand Jurors
+
+Brian Adam                                     Maryann Hrichak
+
+Allyson Eddy Bravmann                          Gary Hsueh
+
+Rick Carell                                    Joanna Karlinsky
+
+Robert J. Chansler                             Margaret Keane
+
+Ed Cooper Foreperson                            Julia Molla
+
+Niket Desai                                  Robert Page
+
+Stan Feinsod Foreperson Pro Tempore             Dustin Palmer
+
+Joe Ferrero                                   William L. Pierog
+
+Mira Foster                                 Barbara Savitz
+
+                                              Tracy Wymer
+
+
+This report is issued by the Grand Jury with the exception of one juror who was
+recused because of a current or recent connection with an entity whose actions
+might be relevant to this report. This juror was excluded from all parts of the
+investigation, discussion, and deliberations related to this report, and from the
+writing and approval of the report.
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                      2
+TABLE OF CONTENTS
+
+ABOUT THE CIVIL GRAND JURY
+
+SUMMARY
+
+BACKGROUND
+
+     THE PEOPLE AND HAZARDS OF SAN FRANCISCO
+
+     HOW THE CITY ALERTS THE PUBLIC
+
+     WHY ALERT MESSAGE CONTENT MATTERS
+
+ANALYSIS
+
+     SAN FRANCISCO’S ALERTS, MEASURED
+
+     WHAT HAPPENS AFTER THE DANGER PASSES
+
+     REACHING THE PEOPLE WHO NEED TO HEAR IT
+
+FINDINGS AND RECOMMENDATIONS
+
+     FINDINGS
+
+     RECOMMENDATIONS
+
+NOTES
+
+METHODOLOGY
+
+GLOSSARY
+
+APPENDIX
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026       3
+SUMMARY
+      “There’s something happening here. What it is ain’t
+      exactly clear.”
+                                                       – Buffalo Springfield
+
+
+San Francisco has approximately 828,000 residents, welcomes more than 23 million
+visitors annually, and absorbs over 200,000 daily commuters. Many of its residents
+speak a language at home other than English. The city faces earthquakes, tsunamis,
+flooding, wildfires (and smoke from remote fires), severe weather, and
+infrastructure failures — hazards that can compound without warning.
+
+The city relies on digital channels to warn the public during emergencies: Wireless
+Emergency Alerts, AlertSF, the Emergency Alert System, social media, and
+field-based notification through police and fire. The San Francisco Department of
+Emergency Management (DEM) operates a Watch Center that maintains protocols
+for 38 incident types, coordinates directly with police, fire, and other city
+departments, and can communicate with first responders through hardened radio
+infrastructure, even when digital systems fail.
+
+DEM staff undergo monthly proficiency tests and bi-weekly training exercises on
+the alerting platform. The department conducts structured internal reviews after
+major incidents to identify and act on operational improvements.
+
+The gaps this report identifies are not in capability, but in the standards and
+processes that govern how that capability is used. This report focuses on
+AlertSF, the system DEM describes as the foundational element of the city's
+opt-in alerting.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                        4
+The Civil Grand Jury found that:
+
+   1. City-originated emergency messages do not consistently include the five
+       critical content elements — source, hazard, location, guidance, and time —
+       that research has shown are necessary for the public to take protective
+       action. The Jury's review of every publicly accessible AlertSF message found
+       that none contained all five elements. No citywide standard requires their
+       inclusion.
+   2. Written criteria do not exist for when Wireless Emergency Alerts (WEA), sent
+       to all nearby cell phones, should be used across the majority of the 38
+       incident types the Watch Center handles. In the absence of criteria, WEA
+       decisions are made case-by-case. The December 2024 tsunami WEA alert
+       was sent citywide despite affecting only coastal zones.
+   3. The city's alerting protocols do not include closure procedures for any
+       incident type. Every standard closure message follows the same pattern —
+       "the incident has been resolved" — without communicating what changed,
+       what actions can stop, or when the resolution occurred.
+   4. The city's primary opt-in alerting system (AlertSF) reaches a fraction of the
+       people present in San Francisco on any given day. While WEA alerts reach all
+       compatible phones regardless of enrollment, WEA cannot deliver the
+       sustained information needed during extended incidents.
+   5. The resources dedicated to AlertSF do not match the system's stated
+       importance. The promotional budget is not a dedicated line item, no
+       standing strategy exists for reaching visitors and commuters, and no
+       unified public destination exists for emergency information during an
+       incident.
+
+The Jury recommends that:
+
+   1. DEM adopts a Citywide Emergency Messaging Standard requiring all
+       city-originated messages to include the five content elements, with
+       requirements for multilingual delivery and a pre-send review step.
+   2. DEM adopts written criteria for when Wireless Emergency Alerts are
+       warranted across all applicable incident types.
+   3. DEM establishes a formal post-alert closure policy requiring a follow-up
+       message for every incident type for which an initial alert is issued.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                     5
+   4. DEM develops a dedicated audience growth strategy for AlertSF, including a
+       standing approach to reaching visitors and commuters.
+   5. The Mayor and Board of Supervisors determine the appropriate resources for
+       AlertSF, based on analysis done by DEM.
+   6. DEM establishes a consistent, mobile-first, multilingual public
+       destination for emergency updates referenced across all alert channels.
+
+Residents and visitors can sign up for AlertSF by texting their ZIP code to 888-777 or
+visiting alertsf.org.
+
+
+
+BACKGROUND
+The People and Hazards of San Francisco
+San Francisco has approximately 828,000 residents, but the number of people in
+the city on any given day is considerably larger.1 It is residents, commuters, and
+visitors, layered on top of one another and turning over constantly. More than
+200,000 commuters arrive on a typical workday, and more than 23 million visitors
+pass through annually.2 3 Recent examples of events drawing large numbers of
+visitors to the city include Super Bowl LX (2026), NBA All-Star Weekend (2025),
+APEC (2023), Dreamforce, Fleet Week, and Pride. Many of the people in the city at
+any given moment may not know its geography, its emergency systems, or the
+agencies responsible for public safety. An alert that works for a lifelong resident
+does not automatically work for the person standing next to them.
+
+About 18% of San Francisco’s residents do not speak English well.4 The city's
+Language Access Ordinance designates threshold languages for which city agencies
+must provide translation and interpretation: Chinese, Spanish, and Filipino, with
+Vietnamese newly added in 2026.5 An emergency message in English, using local
+shorthand or referencing locally familiar landmarks, may be unintelligible to a
+substantial portion of residents and visitors.
+
+The hazards the city faces are varied and can compound. Earthquake, tsunami,
+wildfire smoke, flooding, severe weather, infrastructure failure, and hazardous
+materials incidents are all present in the city's risk profile; a single event can trigger
+several simultaneously. An earthquake may produce a tsunami. A storm may cause
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                         6
+flooding and power outages in the same hour. Among major global cities, few
+approach this level of complexity. Japan's national J-Alert system broadcasts
+emergency warnings in five languages for a comparable mix of risks.6 Los Angeles
+shares the wildfire and multilingual dimensions. New York matches the density and
+visitor volume. What distinguishes San Francisco is the overlap of coastal, hillside,
+wildland, and urban-core risks across 47 square miles.
+
+How the City Alerts the Public
+Three terms recur throughout this report. An alert is a notification to be
+distributed. A message is the content of that notification: the words on a phone
+screen, or a television or radio broadcast. A channel is the delivery method: the
+technology that carries a message from sender to recipient’s email, phone alerts or
+broadcast program interruptions.
+
+THE WATCH CENTER
+
+The Department of Emergency Management operates the Watch Center at 1011
+Turk Street.7 The Watch Center is the operations hub where decisions are made
+about when to alert the public, what to say, and which channels to use. It is the
+nerve center that dispatches alerts on appropriate channels and coordinates the
+city's emergency communications with other departments and agencies.
+
+The Watch Center is staffed daily from 6:00 AM to 10:00 PM, with an on-call Duty
+Officer available overnight. Watch Center specialists monitor public safety
+conditions across the city and coordinate with police, fire, public health, transit,
+and other city departments. The Watch Center maintains protocols for 38 distinct
+incident types, from structure fires and hazardous materials releases to tsunami
+warnings and citywide power outages. These protocols specify notification chains,
+agency contacts, and escalation sequences for each type.
+
+The Watch Center communicates with the San Francisco Police Department (SFPD),
+the San Francisco Fire Department (SFFD), and other city agencies through
+dedicated radio infrastructure. In a catastrophic scenario where power fails, phone
+networks fail, and internet service drops, the Watch Center can still reach
+responders in the field via two-way radio. During a prolonged power outage, when
+cellular devices lose battery charge and digital alerts can no longer reach the
+public, the Watch Center's ability to coordinate field-based notification through
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                      7
+police and fire services provides communications that do not depend on anyone
+having a charged phone. This capability provides resilience independent of the
+digital channels the public sees. Most residents are unaware it exists.
+
+ALERTING CHANNELS
+
+The city's alerting channels fall into three categories: broadcast systems that reach
+people without requiring any prior action, an opt-in system that requires
+registration, and supplemental channels that amplify or extend the reach of the
+first two.
+
+Broadcast systems. Wireless Emergency Alerts (WEA) is the most powerful channel
+available to the city. WEA messages are sent to all compatible cell phones within a
+defined geographic area; no registration or opt-in is required. Messages can be
+geographically targeted to specific zones and are limited to 360 characters. WEA is
+reserved for imminent threats and is not built to carry sustained, detailed
+information across the duration of an extended incident. DEM sends WEAs through
+Federal Emergency Management Agency’s Integrated Public Alert and Warning
+System (IPAWS) and adheres to FEMA guidance in addition to its own internal
+protocols.8 Also available to DEM, the Emergency Alert System (EAS) interrupts
+television and radio broadcasts with emergency information and is reserved for the
+most severe events.
+
+Opt-in system. AlertSF is the city's primary opt-in alerting system. Residents and
+visitors who register receive alerts via text message, email, or phone call, targeted
+by ZIP code. Because AlertSF requires registration, it can only reach people who
+have signed up. The implementation of AlertSF is the commercial software platform
+Everbridge Nixle, which is also DEM's connection to IPAWS for sending WEA alerts.
+AlertSF is one of several notification systems operated by city agencies; residents
+may also receive alerts from SFMTA, BART, 311, and other services through separate
+platforms with different triggering criteria.
+
+Supplemental channels. DEM's External Affairs team maintains social media
+accounts (including @SF_emergency on X and Instagram), posts to Nextdoor and
+Facebook, and publishes information on sf.gov/ReadySF. Social media platforms
+surface content to users based on past engagement patterns, which means
+emergency messages from official accounts may not appear prominently to users
+who have not previously followed or interacted with those accounts. Critical
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                     8
+messages compete with other content for visibility, and misleading or inaccurate
+information can spread alongside official updates or outpace them entirely. DEM's
+own internal after action review of the December 2024 tsunami event documented
+that inaccurate information was shared across social media and from neighboring
+jurisdictions during the event.
+
+In urgent situations, DEM coordinates with SFPD and SFFD to notify the public
+through emergency vehicles, loudspeakers, and door-to-door contact. In San
+Francisco emergency services terminology, Code 3 designates an emergency
+response that activates lights and sirens. SFFD deployed Code 3 during the
+December 2024 tsunami warning to supplement digital alerts in coastal zones.
+SFPD and SFFD do not have direct access to the AlertSF platform; they amplify
+alerts through their own agency channels and field operations.
+
+
+ANALYSIS
+Why Alert Message Content Matters
+San Francisco's hazard environment means that residents, visitors, and commuters
+may receive emergency messages about a variety of fundamentally different types
+of danger. A tsunami requires moving to higher ground. A fire requires avoiding an
+area. A power outage requires different precautions entirely. In a city where more
+than 23 million visitors cycle through annually and nearly half of residents speak a
+language at home other than English, each message has to be self-contained. The
+reader may have no prior context about the city's geography, emergency systems,
+or even the agency sending the alert. This is equally true for people with access and
+functional needs, those who depend on assistive technology, have limited mobility,
+or require information in alternative formats, for whom message clarity is not a
+convenience but a necessity.
+
+Researchers studying emergency communication have focused on precisely this
+kind of environment for more than thirty years. Their work has identified five
+content elements that increase the likelihood of timely protective action.9 A
+message that contains all five elements is considered "complete.”
+
+   ● Source: Who is sending this message? Is the responsible agency identified?
+      Do I recognize it to be authoritative?
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                     9
+   ● Hazard: What is the danger? Is the threat description specific enough that I
+      understand the risk?
+   ● Location: Where does this apply? Am I affected?
+   ● Guidance: Are specific instructions provided? What should I do?
+   ● Time: For how long? When will the situation end? When and how should I
+      check for updates?
+
+When people receive an incomplete message, they do not sit still. They call 911.
+They check social media. They text friends. They look out the window. Those
+searches take time, and in an earthquake, tsunami, or active threat, it’s time they
+may not have. This well-documented behavior is called milling.9 10 Complete
+messages reduce milling and the delay between receiving a warning message and
+taking effective action. This has been documented in San Francisco. For example,
+after the December 2024 tsunami warning, DEM's internal review documented
+exactly this behavior: the public did not know what to do when they received the
+alert or whether it was legitimate, resulting in a surge of calls to 911, 311, and fire
+stations. The five-element framework is the established diagnostic tool for
+understanding why that happens and how to prevent it.
+
+In a national study of more than 6,000 emergency alerts sent between 2012 and
+2022, fewer than 8.5% contained all five elements.11 The finding was published in
+peer-reviewed research and cited in testimony before the U.S. House of
+Representatives in December 2025.12 The challenge is not unique to San Francisco.
+Researchers have also established that what happens after an alert matters as much
+as the alert itself. When people are told to evacuate, shelter in place, or avoid an
+area, they need to be told when they can stop. Effective post-alert messages explain
+what changed, what actions can cease, and confirm that the danger has passed.13
+Without that follow-up, people remain in an uncertain state, continuing to shelter
+when they do not need to, avoiding areas that are safe, or losing trust in the system
+because it issued a directive and never closed the loop.
+
+THE ALL-HAZARDS MESSAGING LIBRARY
+
+DEM maintains a library of pre-scripted message content in English, Chinese,
+Spanish, Filipino, and Vietnamese for use across incident types. The library contains
+the message content that goes into messages from AlertSF. Protocols described
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                            10
+above govern when to send those messages and through which channels; content
+and decision criteria are separate systems.
+
+TRAINING AND CONTINUOUS IMPROVEMENT
+
+DEM staff participate in regular training on alerting protocols and platform
+operations. DEM conducts monthly tests of IPAWS procedures and bi-weekly
+training sessions led by an internal alert warning specialist. These sessions walk
+through hypothetical scenarios using the Everbridge platform, drafting and routing
+alerts and stopping just short of a live public send. When a new weekly Duty Officer
+shift rotates on, the Watch Center offers refresher training to maintain proficiency,
+recognizing that after-hours officers may go for extended periods between live
+alert activations.
+
+After major incidents, city departments conduct structured internal reviews to
+document what happened, identify what worked and what did not, and track
+operational changes. DEM follows this practice.
+
+DEM also participates in regional coordination through the Urban Areas Security
+Initiative (UASI) and has engaged with neighboring Bay Area jurisdictions on joint
+alerting initiatives.
+
+
+San Francisco's Alerts, Measured
+The Jury reviewed 329 messages publicly accessible through the AlertSF events
+page on the Everbridge platform, covering October 2024 through April 2026.14 Each
+message was scored against the five-element framework described in the
+Background. Full methodology and results appear in the Appendix.
+
+Not a single message in the 329-message archive contained all five elements at full
+presence. The rate at which messages contained all five elements at least partially
+present, was 6.5%.14 The national rate, measured across more than 6,000 alerts
+over a decade, is 8.5%. San Francisco is below that rate.11
+
+This finding does not describe a system in disrepair. DEM is a capable operation
+running without the standards that would tell it what "complete" looks like. The
+Watch Center maintains detailed protocols for 38 incident types. Staff undergo
+monthly IPAWS proficiency tests and bi-weekly scenario-based training on the
+Everbridge platform. DEM conducts structured post-incident reviews and acts on
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                       11
+what it learns. The multi-channel approach provides multiple pathways to reach
+the public, and the Watch Center's hardened radio infrastructure allows field
+coordination to continue even when digital channels go dark, a capability that
+proved its value during the city’s December 2025 power outage affecting nearly
+one-third of the city's neighborhoods.15 The all-hazards messaging library, with
+pre-scripted content in five languages including Vietnamese as of 2026, reflects a
+deliberate investment in multilingual readiness. Staffing aligns with actual demand:
+96% of AlertSF messages during the review period were sent during Watch Center
+operating hours.14
+
+The question this report addresses is whether the standards and processes that
+guide DEM are set up to consistently deliver what the public needs, across incident
+types, channels, and audiences. The findings that follow apply to the city's digital
+alerting system as it operates today.
+
+WHERE THE GAPS ARE
+
+The element most consistently absent from AlertSF messages is time. In 85% of
+messages, there is no time information at all.14 People are told to avoid an area or
+take shelter, but not when they can expect the situation to end, when to check
+back, or how long to maintain protective actions.
+
+The source element is never fully identified in standard templates. Every message
+begins with "ALERTSF," the name of the system, not the name of the responsible
+agency. A visitor receiving a message from "ALERTSF" has no way to determine what
+authority stands behind it. Fewer than 5% of messages name the actual agency
+involved.14
+
+Appearing in 94% of messages, location is the most represented element, reflecting
+a template structure that requires operators to enter an intersection or block
+range. Guidance is present in nearly all messages at 98%, though without a closure
+standard, most resolution messages still default to status-only language.14
+
+THE TEMPLATE PROBLEM
+
+Most AlertSF messages are not written from scratch. They follow pre-built
+templates where an operator fills in a location and hazard type. The templates
+themselves determine whether a message will be complete before anyone types a
+word.
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                         12
+Four templates account for more than half of all alert messages in the playbook
+archive. All four are structurally incomplete.14 The template does not include a time
+element, and the closure templates do not include action-focused guidance. This
+means the incompleteness is systemic. It is not a matter of operators making
+mistakes under pressure. The templates produce incomplete messages by default.
+
+The completeness gap is compounded by message truncation across delivery
+channels. AlertSF delivers messages in two formats: a full text version averaging 320
+characters and an SMS version averaging 99 characters, with a maximum of 138
+characters.14 The SMS version, which is what most subscribers actually see on their
+phone, is substantially shorter than the full text and may omit content that is
+present in the longer version.
+
+The Jury also observed eight types of errors in the archive — doubled text, a
+missing template field, a wrong location requiring a subsequent correction, and a
+sentence cut off mid-word — the kind of mistakes a pre-send review step exists to
+catch.14
+
+WHEN DEM GETS IT RIGHT
+
+The best messages in the archive prove that DEM already knows how to compose
+near-complete alerts. The Treasure Island power outage series includes specific
+affected streets, the responsible utility, estimated restoration times, protective
+actions during and after the outage, and multilingual links. In July 2025, the tsunami
+advisory referenced the National Tsunami Warning Center as an authoritative
+source, explained the triggering earthquake, highlighted affected areas, and
+provided an expected arrival time.14
+
+DEM composed these messages for higher-stakes situations where more effort
+went into content. The question is whether that level of quality should depend on
+the severity of the individual event or whether a standard should ensure
+consistency across all messages. When DEM sends a complete, well-structured first
+message, other city departments and media outlets can reference and amplify an
+authoritative source.
+
+MULTILINGUAL DELIVERY
+
+Not all messages in the archive include multilingual translations, although the
+all-hazards messaging library contains pre-scripted content in five languages.
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                      13
+DEM's own internal review of DEM’s response to the July 2025 tsunami threat found
+that draft messaging was "not fully vetted or translated," creating a need for rush
+translation during the event. A messaging standard that includes multilingual
+delivery requirements would ensure that translation is part of the standard
+workflow rather than an afterthought during live incidents.
+
+CHANNEL-SELECTION DECISIONS
+
+The standards gap extends beyond message content to when the most powerful
+channel is used. DEM's protocols specify WEA as a channel for only two of 38
+incident types. For all other incident types, decisions to use WEA are delegated to
+the on-duty manager with no written thresholds.
+
+The city’s response to the December 2024 tsunami threat illustrates the
+consequence. DEM sent a WEA to the entire city, though the tsunami inundation
+zone covers only coastal areas. Residents and visitors miles from any coast received
+a tsunami warning on their phones. DEM's internal review documented the
+confusion this created.
+
+While WEA messages reach the widest audiences, “alert fatigue” is a documented
+risk, and DEM has recognized this risk. What a messaging standard should address
+is not only what messages say but the criteria for when the most intrusive channel
+is appropriate, so that these decisions are guided by consistent thresholds rather
+than momentary case-by-case judgment.
+
+THE PROTOCOLS GAP
+
+DEM's Watch Center protocols specify which available Everbridge message
+template to use for each incident type but contain no criteria for message content
+quality or completeness. The protocols the Jury reviewed do not reference a
+content standard, or any equivalent framework, for what a message should contain
+to be effective. They govern when to alert and which template to use. They do not
+govern what the message should say.
+
+No citywide standard requires the inclusion of the five content elements across all
+channels and incident types. Without this standard, message quality depends on
+the individual template and the individual operator rather than on a consistent
+institutional requirement.
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                        14
+What Happens After the Danger Passes
+When a city tells its residents to evacuate a neighborhood, avoid an intersection, or
+shelter in place, it has issued a directive that changes people's behavior. People
+alter their routes, cancel plans, or stay indoors. What information should residents
+receive when the threat has passed?
+
+Research on post-alert communication identifies three components of effective
+closure: what changed, what the recipient can now do, and the operational status of
+the prior alert. Effective closure includes all three.13 A message that says only "the
+incident has been resolved" provides status but nothing else. The Watch Center
+protocols the Jury reviewed contain no closure procedures for any of the 38
+incident types. The only reference to post-alert messaging appears in the tsunami
+protocol, which notes that the National Tsunami Warning Center will not issue a
+follow-up WEA cancellation and that DEM "may consider" sending its own. "May
+consider" is permissive, not mandatory.
+
+The AlertSF message archive confirms the gap in practice. Every standard closure
+message follows the same pattern: "The incident in the area of [LOCATION] has
+been resolved."14 This tells the recipient that something ended. It does not say what
+the original hazard was, whether it is safe to return, what actions can stop, or when
+the resolution occurred. A person who missed — or never received — the initial
+alert and receives only the closure message learns that an unnamed incident at a
+named location has ended, with no context for what happened or what they should
+do differently.
+
+Closure messages are a different category than alerts. An alert calls for action. A
+closure releases that call. Sending closures does not contribute to alert fatigue.
+They resolve it. Failing to close the loop leaves people in an uncertain state longer
+than necessary.
+
+The practical consequences are not hypothetical. After the city’s December 2025
+power outage, which affected nearly one-third of the city, the Board of Supervisors
+cited communication failures.15 DEM's internal review of that event documented
+misinformation filling the gap on social media and from neighboring jurisdictions
+when official follow-up did not arrive.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                          15
+No formal closure procedure exists for any incident type. The decision to issue a
+follow-up message, and what that message says, is left to the individual judgment of
+Watch Center staff during each incident.
+
+
+Reaching the People Who Need to Hear It
+AlertSF reaches a fraction of the people present in San Francisco on any given day.
+DEM reports approximately 106,000 total AlertSF subscribers, though this figure
+includes inactive accounts and those to whom delivery has failed. The currently
+active subscriber base is smaller. DEM has cited approximately 40,000 text and
+34,000 online subscribers. The department does not have sufficient information
+about its subscribers to determine how many are San Francisco residents and how
+many are visitors.
+
+The resources dedicated to growing AlertSF's audience do not match the system's
+stated importance. The annual budget for promoting AlertSF is not a dedicated line
+item but is drawn from a shared resource pool, amounting to an estimated $20,000
+to $30,000 annually with no dedicated paid media. DEM's own leadership has
+identified expanded Watch Center coverage as its top operational priority, ahead of
+audience growth or additional alerting tools. For a system DEM describes as
+foundational to the city's emergency communication, the current investment is
+difficult to reconcile with that description.
+
+WEA reaches everyone with a compatible phone, no registration required. Claims
+that the majority of San Franciscans "won't receive any alerts" because they are not
+enrolled in AlertSF are incorrect. WEA delivers alerts to all compatible devices in
+the affected area regardless of enrollment. The limitation is different. WEA is
+reserved for imminent threats. It cannot deliver the sustained, detailed information
+that an opt-in system can. During the December 2025 power outage, the city
+needed to communicate transit alternatives, resource center locations, and
+multi-day service disruptions — information that WEA's 360-character limit and
+imminent-threat restriction cannot support.15 AlertSF and WEA serve different
+purposes and are not substitutes for one another.
+
+Over the 18-month period covered by this report, an AlertSF subscriber received an
+average of approximately four messages per week, about 17 per month (these are
+not necessarily sent to all subscribers). On 71% of days, no alerts were sent at all.14
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                       16
+These are AlertSF messages only. Subscribers to other city services such as transit
+alerts or 311 updates may receive additional notifications through separate systems.
+The volume is well within a reasonable alerting cadence and does not support a
+concern that increasing enrollment would overwhelm subscribers.
+
+The consequence of limited reach became visible during recent incidents. DEM's
+own internal review documented that misinformation spread across social media
+and from neighboring jurisdictions during the December 2024 tsunami threat,
+filling the information gap left when the authoritative source does not reach most
+of the affected population.
+
+DEM HAS DEMONSTRATED IT CAN DO THIS
+
+DEM can build effective audience outreach when it commits resources to a specific
+effort. For Super Bowl LX in February 2026, DEM coordinated a regional visitor
+campaign with the NFL, airport kiosks, and hotel distribution. Visitors were
+encouraged to register for alerts specific to the event. The campaign resulted in
+852 opt-ins. A similar effort for three weekends of Golden Gate Park concerts last
+summer received 1,486 registrations. DEM also convened a regional workshop to
+revive the Joint Information System across 12 Bay Area counties and volunteered to
+lead it.
+
+These initiatives demonstrate capability. But 852 sign-ups from a Super Bowl that
+drew tens of thousands of visitors to the city illustrates the scale of the distance
+between what DEM can do and what the system currently achieves. The efforts are
+event-specific and produce modest enrollment. They do not create standing
+infrastructure for ongoing audience growth. A visitor who arrives the week after
+the Super Bowl has no equivalent on-ramp to the alerting system.
+
+There is also no consistent, mobile-first, multilingual public destination — a single
+URL that all channels can point to for more information during an emergency.
+During the December 2025 power outage, messages referenced multiple URLs.14 A
+unified public destination would reduce confusion and give every message a
+consistent place to send people for updates.
+
+A system DEM calls the foundation of the city's emergency communication should
+be resourced to match that claim, with a dedicated approach to audience growth, a
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                       17
+standing strategy for reaching visitors and commuters, and a public destination
+that all channels reference.
+
+
+FINDINGS AND RECOMMENDATIONS
+FINDINGS
+F1: Five content elements — source, hazard, location, guidance, and time — are
+necessary in a public alert for the public to take timely protective action.
+
+F2: City-originated emergency messages do not consistently include these five
+content elements.
+
+F3: No citywide standard requires inclusion of these five content elements across
+city alerting channels.
+
+F4: The Watch Center's protocols contain no criteria for message content quality.
+
+F5: For most emergency incident types, there exist no written criteria that govern
+when Wireless Emergency Alerts, the City's most powerful channel, should be used,
+leaving the decision to the discretion of the Watch Center's on-duty manager.
+
+F6: The absence of written criteria means that decisions about when to use the
+most intrusive channel available to the city are made case-by-case, without the
+benefit of consistent thresholds developed in advance.
+
+F7: The city's emergency alerting protocols do not include closure procedures for
+any of the 38 incident types covered by Watch Center protocols.
+
+F8: Standard closure messages do not communicate what changed, what actions
+can stop, or when the resolution occurred.
+
+F9: Research has established that effective post-alert communication requires
+three components: resolution, action guidance, and status.
+
+F10: The absence of formal incident closure procedures means that the decision to
+issue a follow-up message, and what it says, is left to individual judgment.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                      18
+F11: The city's primary opt-in alerting system reaches a small fraction of the
+people present in San Francisco on any given day.
+
+F12: Wireless Emergency Alerts cannot deliver the sustained information an opt-in
+system like AlertSF provides during extended incidents.
+
+F13: DEM has demonstrated ability to build effective audience outreach through
+event-specific campaigns, but these efforts have not become standing
+infrastructure.
+
+F14: The resources dedicated to growing and maintaining AlertSF do not reflect the
+system's stated operational role as the foundation of the city's opt-in alerting.
+
+F15: No standing strategy exists for reaching visitors or commuters beyond
+event-specific campaigns.
+
+F16: No unified, mobile-first, multilingual public destination exists for emergency
+information.
+
+
+RECOMMENDATIONS
+R1: By 1 January 2028, the Department of Emergency Management should adopt a
+Citywide Emergency Messaging Standard that requires all city-originated
+emergency messages, across AlertSF, WEA, EAS, and social media channels, to
+include the five content elements: source, hazard, location, guidance, and time. The
+standard should include content requirements for both initial alerts and closure
+messages, requirements for multilingual delivery consistent with the City's
+Language Access Ordinance, and a pre-send review step.
+
+R2: By 1 January 2028, the Department of Emergency Management should adopt
+written criteria defining when Wireless Emergency Alerts are warranted across all
+38 incident types the Watch Center handles. The criteria should address hazard
+severity, geographic scope, time sensitivity, and interaction with all other available
+channels.
+
+R3: By 1 January 2028, the Department of Emergency Management should require
+a closure or follow-up message for every incident type for which an initial alert is
+issued. Closure messages should communicate what changed, what protective
+actions can stop, and when the resolution occurred.
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                        19
+R4: By 1 January 2028, the Department of Emergency Management should develop
+a dedicated audience growth strategy for AlertSF, including a standing approach to
+reaching visitors and commuters beyond event-specific campaigns. The strategy
+should include measurable enrollment targets and a regular reporting cadence to
+the Mayor and Board of Supervisors.
+
+R5: By 1 January 2028, the Department of Emergency Management should publish
+a study setting forth what it would take to fully resource the audience growth
+strategy developed for AlertSF under Recommendation R4.
+
+R6: By 1 July 2028, the Mayor and Board of Supervisors should determine whether
+to resource AlertSF to the extent set forth in DEM's study and, if not, determine
+what steps would be necessary for an AlertSF growth strategy.
+
+R7: By 1 January 2028, the Department of Emergency Management should
+establish a consistent, mobile-first, multilingual public destination for emergency
+updates that is referenced across all alert channels and serves as the authoritative
+source for the public during and after an incident.
+
+
+REQUIRED AND INVITED RESPONSES
+The following responses are required pursuant to California Penal Code Sections
+933 and 933.05.
+
+Required Respondent                         Findings        Recommendations
+Mayor of San Francisco                      F2–F8, F10–F16   R1–R7
+
+Board of Supervisors                        F14, F15, F16    R6
+
+
+Invited Respondent                          Findings        Recommendations
+SF Department of Emergency Management          F1–F16          R1–R5, R7
+
+SF Police Department                        F1, F2, F3      R1
+
+SF Fire Department                          F1, F2, F3      R1
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                     20
+NOTES
+1 U.S. Census Bureau. "American Community Survey 2024 1-Year Estimates." Table
+B01003. census.gov. Population: 827,526.
+
+2 Metropolitan Transportation Commission. "Commute Patterns." Vital Signs,
+vitalsigns.mtc.ca.gov/indicators/commute-patterns. Net commuter inflow to San
+Francisco: more than 200,000 per day. Based on U.S. Census Bureau, American
+Community Survey 2016–2020 PUMS, the most recent county-to-county commute
+flow data available.
+
+3 San Francisco Travel Association. "San Francisco Travel Announces 2025 Tourism
+Forecast and 2024 Results." sftravel.com, 20 Mar. 2025.
+sftravel.com/media/press-release/san-francisco-travel-announces-2025-tourism
+-forecast-2024-results.
+
+4 U.S. Census Bureau. "American Community Survey 2024 1-Year Estimates." Table
+S1601, Language Spoken at Home.
+data.census.gov/table/ACSST1Y2024.S1601?g=160XX00US0667000. 43.9% of San
+Francisco residents age 5 and over speak a language other than English at home.
+
+5 City and County of San Francisco. Language Access Ordinance. San
+Francisco Administrative Code, Chapter 91.
+
+6 Centre for Public Impact. "J-Alert: Disaster Warning Technology in Japan."
+centreforpublicimpact.org/public-impact-fundamentals/j-alert-disaster-war
+ning-technology-in-japan.
+
+7 San Francisco Department of Emergency Management. "About."
+sf.gov/departments/department-emergency-management.
+
+8 Federal Emergency Management Agency. "Integrated Public Alert and Warning
+System (IPAWS)."
+fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-sy
+stem.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                    21
+9 Mileti, Dennis S., and John H. Sorensen. Communication of Emergency Public
+Warnings: A Social Science Perspective and State-of-the-Art Assessment.
+ORNL-6609. Oak Ridge National Laboratory, 1990. osti.gov/biblio/6137387.
+
+10 Wood, M. M., Mileti, D. S., Bean, H., Liu, B. F., Sutton, J., and Madden, S. "Milling
+and Public Warnings." Environment and Behavior, vol. 50, no. 5, 2018, pp. 535–566.
+doi.org/10.1177/0013916517709561.
+
+11 Olson, M. K., Sutton, J., Cain, L. B., and Waugh, N. "A Decade of Wireless
+Emergency Alerts: A Longitudinal Assessment of Message Content and
+Completeness." Journal of Contingencies and Crisis Management, vol. 32, no. 1,
+2024, e12518. doi.org/10.1111/1468-5973.12518.
+
+12 Sutton, Jeannette. Written Testimony before the U.S. House Committee on
+Energy and Commerce, Subcommittee on Communications and Technology. 16
+Dec. 2025.
+congress.gov/119/meeting/house/118762/witnesses/HHRG-119-IF16-Wstate-Sutto
+nJ-20251216.pdf.
+
+13 Sutton, J., Cain, L. B., Waugh, N., and Olson, M. K. "Message canceled, orders
+lifted: An examination of post-alert messages sent as wireless emergency alerts."
+International Journal of Disaster Risk Reduction, vol. 101, Feb. 2024, 104250.
+doi.org/10.1016/j.ijdrr.2024.104250.
+
+14 AlertSF Health, alertsf.health. Statistics in this report reflect the dataset as of
+April 14, 2026 (329 alerts spanning October 1, 2024 through April 14, 2026).
+Underlying data and per-message scores are publicly available at
+alertsf.health/alerts.json. Methodology and scoring rules are at
+alertsf.health/codebook.
+
+15 San Francisco Board of Supervisors, Public Safety and Neighborhood Services
+Committee. Hearing on December 2025 power outages. 12 Feb. 2026.
+sfgov.legistar.com/LegislationDetail.aspx?ID=7798863&GUID=ED703E1B-CEFF-4C6
+F-9362-D4282929064B.
+
+16 Bat Phone image (Glossary): 2025–2026 San Francisco Civil Grand Jury.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                           22
+METHODOLOGY
+The Jury investigated San Francisco's public alert and warning systems from
+October 2025 through April 2026. In conducting this investigation, the Jury:
+
+   ● Interviewed individuals in the San Francisco government whose work
+      touches on the city's public alert and warning systems. Also consulted an
+      academic researcher who has worked on emergency warning
+      communication, and a practitioner with operational expertise in public safety
+      information systems.
+
+   ● Reviewed DEM operational documents, including Watch Center protocols
+      covering 38 incident types, a post-incident after action report, and
+      correspondence regarding the Outdoor Public Warning System and regional
+      coordination. Also reviewed Board of Supervisors resolutions, vendor
+      documentation, federal IPAWS guidance, Congressional testimony, and media
+      reporting from local and national outlets.
+
+   ● Reviewed published academic research on emergency warning
+      communication, including longitudinal studies of Wireless Emergency Alert
+      content, experimental research on message completeness, and post-alert
+      communication. This research informed the analytical framework applied in
+      the investigation and provided a national baseline for comparison.
+
+   ● Conducted a systematic review of every emergency message publicly
+      accessible through the AlertSF events page on the Everbridge platform at the
+      time of review, scoring each against a five-element completeness framework
+      derived from the Warning Response Model. The complete scoring criteria,
+      per-message results, and underlying dataset are published at AlertSF.Health
+      for independent verification.
+
+   ● Used commercially available AI tools to assist with locating publicly available
+      documents, reviewing published academic literature, and analyzing publicly
+      accessible AlertSF message data. All findings, scoring judgments, and
+      recommendations reflect the Jury's own assessment.
+
+The Jury was not able to review every internal document DEM maintains; additional
+standards or training materials may exist beyond what was provided. The message
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                     23
+analysis covers what was publicly displayed on the Everbridge events page during
+the evaluation period and may not capture every message sent through the system.
+
+
+GLOSSARY
+311 — San Francisco's non-emergency customer service line for city information
+and service requests.
+
+Access and functional needs — People who need specific accommodations during
+an emergency: those with disabilities, limited mobility, medical equipment
+dependence, cognitive or sensory impairments, or language barriers.
+
+AlertSF — The city's opt-in emergency alerting system, run by DEM on the
+Everbridge platform. Subscribers get notifications by text, email, or phone call,
+targeted by ZIP code. To sign up, text your ZIP code to 888-777 or visit alertsf.org.
+
+All-clear — The follow-up communication that tells people the danger has passed
+and they can stop sheltering, evacuating, or avoiding an area. This report uses
+"closure" for the broader concept; "all-clear" is what most people would call it.
+
+BART — Bay Area Rapid Transit. Regional rail system serving San Francisco and the
+East and South Bay. BART operates its own notification system separate from
+AlertSF.
+
+Bat Phone — A private wired telephone exchange that enables
+communications among the emergency command center and
+select department offices.16
+
+CAP — Common Alerting Protocol. The data format that lets a single alert flow
+through IPAWS to WEA, EAS, and other channels at once.
+
+Cell broadcast — How WEAs actually get to your phone. Unlike a text message, a
+cell broadcast goes to every compatible device in a geographic area simultaneously
+— no phone number, no registration. This is why your phone can scream at you
+even though you never signed up for anything.
+
+Code 3 — Standard San Francisco emergency services terminology for an
+emergency response with lights and sirens activated. SFFD used Code 3 as a field
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                          24
+notification method during the December 2024 tsunami, driving through coastal
+neighborhoods with lights and sirens to supplement digital alerts.
+
+DEM — San Francisco Department of Emergency Management.
+
+DPW — San Francisco Department of Public Works. Responsible for maintenance
+and removal of physical infrastructure including remnant siren hardware.
+
+Duty Officer — The DEM staff member on call overnight (10 PM to 6 AM) when the
+Watch Center is closed.
+
+EAS — Emergency Alert System. Interrupts TV and radio with emergency
+information. Reserved for the most severe events.
+
+Everbridge — Commercial mass notification platform on which AlertSF runs.
+Acquired Nixle, the community notification system many agencies previously used.
+The public-facing AlertSF events page is hosted on Everbridge.
+
+FEMA — Federal Emergency Management Agency. Runs IPAWS.
+
+IPAWS — Integrated Public Alert and Warning System. FEMA's federal platform for
+distributing alerts — the pipeline that connects local agencies like DEM to channels
+like WEA and EAS.
+
+Milling — The gap between getting a warning and actually doing something about
+it. People mill when a message doesn't give them enough information — they call
+911, check X (formerly Twitter), text friends, or look out the window. Complete
+messages shorten this delay. Incomplete messages make it worse.
+
+NWS — National Weather Service. Issues weather alerts and warnings. When an
+AlertSF message says "The National Weather Service has issued a Flash Flood
+Warning," the NWS is the originating authority.
+
+OPWS — Outdoor Public Warning System. San Francisco's siren network — the
+Tuesday noon test that ran for decades. Taken offline December 2019 over
+cybersecurity vulnerabilities. Still offline.
+
+Opt-in / Opt-out — Opt-in means you signed up (AlertSF). If you don't register, you
+don't get the messages. Opt-out means you receive messages by default (WEA). You
+can disable some WEA categories in your phone settings, but not all of them.
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                    25
+SFFD — San Francisco Fire Department.
+
+SFMTA — San Francisco Municipal Transportation Agency; operates Muni.
+
+SFPD — San Francisco Police Department.
+
+SFPUC — San Francisco Public Utilities Commission. Responsible for the city’s
+water, power and sewer.
+
+ShakeAlert — The USGS earthquake early warning system that delivers automated
+alerts to mobile devices when shaking is detected. The speed requirement for
+earthquake alerts exceeds what any human-operated system can achieve;
+ShakeAlert is referenced in the context of sirens' inability to serve this function.
+
+Threshold languages — Languages in which San Francisco's Language Access
+Ordinance requires city agencies to offer services. Currently five: English, Chinese,
+Spanish, Filipino, Vietnamese.
+
+UASI — Urban Areas Security Initiative. Federal grant program for regional
+emergency preparedness; DEM coordinates with other Bay Area jurisdictions
+through UASI.
+
+Warning Response Model — Five things a warning message should contain: who's
+sending it (source), what the danger is (hazard), where it applies (location), what to
+do (guidance), and how long (time). The framework goes back to Mileti and
+Sorensen in 1990, and has since been validated across earthquakes, tsunamis,
+tornadoes, wildfires, and other hazards.
+
+Watch Center — DEM's nerve center at 1011 Turk Street. Staffed 6 AM to 10 PM,
+seven days a week. Monitors conditions, coordinates with SFFD, SFMTA, SFPD, and
+the city’s Department of Public Health, and decides when and how to alert the
+public. Overnight, a Duty Officer covers from home.
+
+WEA — Wireless Emergency Alert. Short messages pushed directly to cell phones in
+a defined geographic area — no signup needed. Limited to 360 characters.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                       26
+APPENDIX
+This snapshot from AlertSF.Health is current as of April 14, 2026. For the most
+up-to-date information and data, which may supersede the content of this report,
+please refer to the website directly.
+
+
+
+
+FOG OF WARNING · SAN FRANCISCO CIVIL GRAND JURY · 2025–2026                 27

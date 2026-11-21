@@ -1,0 +1,107 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-06-04",
+ "id": "g55-46276",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46276",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/39571"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report (For Discussion Only)"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-057)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-057)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the Second Amendment to add operation of the Music Concourse Garage",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-058)"
+  },
+  {
+   "no": "11",
+   "title": "SFMTA Board of Directors approve various SFMTA Policy and Procedure Reforms",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-060)"
+  },
+  {
+   "no": "11A",
+   "title": "Amendments and updates to the SFMTA Board of Directors Rules of Order changing",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-060)"
+  },
+  {
+   "no": "11B",
+   "title": "Amendments and updates to the SFMTA Contract Approval Delegation and Requirements Policy",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-060)"
+  },
+  {
+   "no": "11C",
+   "title": "Amendments and updates to the SFMTA Advertising Policy to revise the advertising standards",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-060)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding the West Portal Station Safety and Community Space Improvements Project"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote to invoke the attorney-client privilege and conduct a closed session conference",
+   "decision": "ADOPTED — 6 ayes (Resolution 240604-063)"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

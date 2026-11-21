@@ -1,0 +1,102 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-02-04",
+ "id": "g55-35077",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35077",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21292"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-011)"
+  },
+  {
+   "no": "10.1A",
+   "title": "RESCIND – BUS ZONE",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-011)"
+  },
+  {
+   "no": "10.1B",
+   "title": "ESTABLISH – METERED PARKING",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-011)"
+  },
+  {
+   "no": "10.1C",
+   "title": "RESCIND – BUS ZONE",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-011)"
+  },
+  {
+   "no": "10.1D",
+   "title": "ESTABLISH – TRANSIT BOARDING ISLAND",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-011)"
+  },
+  {
+   "no": "10.1E",
+   "title": "ESTABLISH – TOW-AWAY, NO STOPPING EXCEPT PERMITTED CAR SHARE VEHICLES",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-011)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending the Transportation Code, Division II, Section 801",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-012)"
+  },
+  {
+   "no": "10.2A",
+   "title": "ESTABLISH – TOW-AWAY, NO STOPPING ANYTIME EXCEPT VEHICLES DISPLAYING A PERMIT ISSUED BY THE SFMTA, AT ALL TIMES",
+   "decision": "ADOPTED — 7 ayes (Resolution 200204-012)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding Embarcadero traffic safety"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

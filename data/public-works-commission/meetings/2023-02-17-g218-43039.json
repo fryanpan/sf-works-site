@@ -1,0 +1,60 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-02-17",
+ "id": "g218-43039",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43039",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Commission Secretary’s Report"
+  },
+  {
+   "no": "2",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Adopt findings under the State Urgency Legislation - Consideration of action to allow hybrid in-person meetings during the COVID-19 Emergency"
+  },
+  {
+   "no": "4b",
+   "title": "Adopt the Corrected Minutes from the January 20, 2023 Meeting"
+  },
+  {
+   "no": "4c",
+   "title": "Adopt the Minutes from the February 3, 2023 Meeting"
+  },
+  {
+   "no": "5",
+   "title": "General As-Needed Contract G24 Concrete Slicing - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Public Works Director Hiring Update"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment - Continued from Item 2 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

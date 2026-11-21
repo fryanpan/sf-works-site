@@ -1,0 +1,103 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-04-21",
+ "id": "g55-52249",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52249",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45347"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes April 7, 2026, Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 260421-028)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications (The Planning Department has found that Items A-M are exempt from the California 3 Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.): A. ESTABLISH RESCIND – YELLOW METERED ZONE, COMMERCIAL LOADING, 7 AM TO 6 PM, MONDAY THROUGH SATURDAY, Leavenworth Street, east side, from 28 feet to 68 feet north of McAllister Street (two spaces). B. RESCIND – FARMERS MARKET PERMIT PARKING ONLY, 6 AM TO 9:30 AM, WEDNESDAY, VEHICLES WITH PERMITS EXEMPT FROM METERS ON WEDNESDAY, Leavenworth Street, east side, from 68 feet to 209 feet north of McAllister Street (six spaces). C. RESCIND – WHITE ZONE, PASSENGER LOADING, 7 AM TO 6 PM, MONDAY THROUGH SATURDAY, Leavenworth Street, east side, from 209 feet to 249 feet north of McAllister Street (40 feet). D. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME, Leavenworth Street, east side, from Golden Gate Avenue to McAllister Street. E. RESCIND – GENERAL METERED PARKING, 7 AM TO 6 PM, MONDAY THROUGH SATURDAY, Leavenworth Street, west side, from 104 feet to 260 feet north of Golden Gate Avenue (six spaces). F. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME, Leavenworth Street, west side, from Turk Street to 172 feet southerly. G. RESCIND – YELLOW METERED ZONE,",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260421-028)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending Transportation Code Division II to streamline sections listing vehicle weight restrictions, commercial passenger vehicle restrictions, transit-only lanes, and speed limits, in order to save SFMTA staff time and resources and to make other conforming changes; and transferring the existing $108 fine for stopping, standing or parking in an area of the street designated for public transit buses, such as transit-only-lanes, from a violation of Transportation Code Section 7.2.39 to a violation of California Vehicle Code Section 22500(m).",
+   "text": "Amending Transportation Code Division II to streamline sections listing vehicle weight restrictions, commercial passenger vehicle restrictions, transit-only lanes, and speed limits, in order to save SFMTA staff time and resources and to make other conforming changes; and transferring the existing $108 fine for stopping, standing or parking in an area of the street designated for public transit buses, such as transit-only-lanes, from a violation of Transportation Code Section 7.2.39 to a violation of California Vehicle Code Section 22500(m). (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260421-029",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260421-029)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding Job Vacancy Reporting"
+  },
+  {
+   "no": "12",
+   "title": "Capital Improvement Program and Consolidated Budget",
+   "decision": "ADOPTED — 7 ayes (Resolution 260421-030)"
+  },
+  {
+   "no": "13",
+   "title": "Bayview Community Shuttle Contract Amendments",
+   "decision": "ADOPTED — 7 ayes (Resolution 260421-032)"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

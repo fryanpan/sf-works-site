@@ -1,0 +1,37 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-04-12",
+ "id": "g55-40990",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40990",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26307"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting RECESS SPECIAL MEETING AND CONVENE CLOSED SESSION"
+  },
+  {
+   "no": "4",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "5",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,499 @@
+{
+  "read": "2026-09-29",
+  "how": "Post titles and URLs from web searches restricted to sfbike.org, run 2026-09-29. sfbike.org answers scripted requests with a Cloudflare 403, so the posts themselves were not opened; each `claim` paraphrases the search engine's summary of the post and carries [web search — verify]. `nodes` are the SFMTA project pages (sfmta.com/node/<id>) the post is about, chosen by hand from out/sfmta-projects/projects.json by project name and street; an empty list means no SFMTA project in that mirror matches.",
+  "queries": [
+    "sfbike.org victory SFMTA Board approves bike lanes",
+    "sfbike.org quick-build protected bike lane installed win",
+    "sfbike.org Oak Street quick-build 2027",
+    "sfbike.org Safe School Connections program bike",
+    "San Francisco Bicycle Coalition \"we won\" bike lane 2025",
+    "sfbike.org year in review wins 2024 2025 protected bike lanes",
+    "sfbike.org approved protected bike lanes Embarcadero Townsend Howard Market Street car-free",
+    "sfbike.org Slow Streets permanent approved Lake Street Page Street Sanchez",
+    "sfbike.org JFK Drive car-free Great Highway Sunset Dunes win",
+    "sfbike.org new bike lanes completed Bayview Excelsior Mission Tenderloin 2023 2024",
+    "sfbike.org Valencia center-running bike lane Brotherhood Way 20th Avenue Arguello approved",
+    "sfbike.org 2026 bike lane approved SFMTA Board",
+    "sfbike.org 2025 win quick-build approved Sloat Brotherhood Alemany Bosworth Jefferson Arguello",
+    "sfbike.org Masonic Avenue protected bike lanes complete Twin Peaks Arguello Golden Gate Park bikeway",
+    "sfbike.org Mission Bay Blvd bike lanes Terry Francois 3rd Street quick-build Indiana Street bikeway"
+  ],
+  "wins": [
+    {
+      "id": "valencia-2018",
+      "title": "Breaking: Protected Bike Lanes on Valencia Approved",
+      "url": "https://sfbike.org/news/breaking-protected-bike-lanes-on-valencia-approved/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved protected bike lanes on Valencia, Market to 15th, December 2018",
+      "streets": [
+        "VALENCIA ST"
+      ],
+      "nodes": [
+        "15731"
+      ]
+    },
+    {
+      "id": "valencia-curbside",
+      "title": "Parking-protected curbside bike lanes are coming to Valencia Street",
+      "url": "https://sfbike.org/news/parking-protected-curbside-bike-lanes-are-coming-to-valencia-street/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved parking-protected curbside lanes on Valencia, 15th to 23rd",
+      "streets": [
+        "VALENCIA ST"
+      ],
+      "nodes": [
+        "15731"
+      ]
+    },
+    {
+      "id": "17th-2017",
+      "title": "Victory on 17th Street",
+      "url": "https://sfbike.org/news/victory-on-17th-street/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved protected bike lanes on 17th, Church to Sanchez, November 2017",
+      "streets": [
+        "17TH ST"
+      ],
+      "nodes": [
+        "219"
+      ]
+    },
+    {
+      "id": "turk",
+      "title": "Victory for the Tenderloin",
+      "url": "https://sfbike.org/news/victory-for-the-tenderloin/",
+      "kind": "approved",
+      "claim": "Protected bike lanes approved on Turk, Market to Polk, the Tenderloin's first",
+      "streets": [
+        "TURK ST"
+      ],
+      "nodes": [
+        "851"
+      ]
+    },
+    {
+      "id": "folsom-2017",
+      "title": "Protected Bike Lanes Approved for Folsom",
+      "url": "https://sfbike.org/news/protected-bike-lanes-approved-for-folsom/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved protected bike lanes on Folsom, 11th to 5th, October 2017",
+      "streets": [
+        "FOLSOM ST"
+      ],
+      "nodes": [
+        "20169",
+        "381"
+      ]
+    },
+    {
+      "id": "second-street",
+      "title": "Second Street Raised Bike Lanes Approved!",
+      "url": "https://sfbike.org/news/second-street-raised-bike-lanes-approved/",
+      "kind": "approved",
+      "claim": "Raised bike lanes approved on Second Street",
+      "streets": [
+        "2ND ST"
+      ],
+      "nodes": [
+        "1204"
+      ]
+    },
+    {
+      "id": "upper-market",
+      "title": "Victory for Safety on Upper Market",
+      "url": "https://sfbike.org/news/victory-on-upper-market/",
+      "kind": "approved",
+      "claim": "Safety changes approved on Upper Market",
+      "streets": [
+        "MARKET ST"
+      ],
+      "nodes": [
+        "994"
+      ],
+      "note": "SFMTA's page says a parking-protected bikeway went in on Market between Octavia and Duboce in 2018-2019; the bike page credits this project with none of its blocks."
+    },
+    {
+      "id": "page-street-2019",
+      "title": "A Huge Victory for Page Street",
+      "url": "https://sfbike.org/news/a-huge-victory-for-page-street/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved traffic diversion on Page Street at Divisadero",
+      "streets": [
+        "PAGE ST"
+      ],
+      "nodes": [
+        "19953",
+        "slow:pagestreet"
+      ]
+    },
+    {
+      "id": "page-lake-merced",
+      "title": "Page Street and Lake Merced QB approved!",
+      "url": "https://sfbike.org/news/page-street-and-lake-merced-qb-approved/",
+      "kind": "approved",
+      "claim": "SFMTA Board made Page a permanent Slow Street and approved the Lake Merced Quick-Build",
+      "streets": [
+        "PAGE ST",
+        "LAKE MERCED BLVD"
+      ],
+      "nodes": [
+        "19953",
+        "slow:pagestreet",
+        "24472"
+      ]
+    },
+    {
+      "id": "oak-qb",
+      "title": "Oak Street Quick-Build approved by the SFMTA Board!",
+      "url": "https://sfbike.org/news/oak-street-quick-build-approved-by-the-sfmta-board/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved a protected bike lane on Oak along the Panhandle, April 2025; later posts report delays",
+      "streets": [
+        "OAK ST"
+      ],
+      "nodes": [
+        "28565"
+      ],
+      "note": "The post's search summary says Stanyan to Van Ness; planned.json's nine Oak blocks and SFMTA's page run Stanyan to Baker, so the post and the city's page disagree on the east end."
+    },
+    {
+      "id": "golden-gate-ave",
+      "title": "Golden Gate Ave., Tenderloin's First East-West Bike Lane, Approved",
+      "url": "https://sfbike.org/news/golden-gate-ave-tenderloins-first-east-west-bike-lane-approved/",
+      "kind": "approved",
+      "claim": "Golden Gate Avenue bike lane approved",
+      "streets": [
+        "GOLDEN GATE AVE"
+      ],
+      "nodes": [
+        "21263"
+      ]
+    },
+    {
+      "id": "bayshore-qb",
+      "title": "Bayshore Boulevard Quick-Build Construction Has Begun!",
+      "url": "https://sfbike.org/news/bayshore-boulevard-quick-build-construction-has-begun/",
+      "kind": "built",
+      "claim": "Construction from August 2023: signs and markings, then posts and a concrete median, Flower to Cortland",
+      "streets": [
+        "BAYSHORE BLVD"
+      ],
+      "nodes": [
+        "22025"
+      ]
+    },
+    {
+      "id": "seventh-qb",
+      "title": "Quick-Build Protected Bike Lane on Seventh",
+      "url": "https://sfbike.org/news/quick-build-protected-bike-lane-on-seventh/",
+      "kind": "built",
+      "claim": "Quick-build protected bike lane on Seventh Street",
+      "streets": [
+        "7TH ST"
+      ],
+      "nodes": [
+        "653"
+      ]
+    },
+    {
+      "id": "soma-qbs",
+      "title": "SoMa Quick-Builds Near Completion",
+      "url": "https://sfbike.org/news/soma-quick-builds-near-completion/",
+      "kind": "built",
+      "claim": "Quick-builds under construction on Fifth, Seventh, Eighth and Folsom",
+      "streets": [
+        "5TH ST",
+        "7TH ST",
+        "8TH ST",
+        "FOLSOM ST"
+      ],
+      "nodes": [
+        "653",
+        "20169"
+      ]
+    },
+    {
+      "id": "beach-qb",
+      "title": "Protected bike lanes coming to Beach Street",
+      "url": "https://sfbike.org/news/protected-bike-lanes-coming-to-beach-street/",
+      "kind": "approved",
+      "claim": "Protected bike lanes coming to Beach Street",
+      "streets": [
+        "BEACH ST"
+      ],
+      "nodes": [
+        "28896"
+      ]
+    },
+    {
+      "id": "bayview-evans",
+      "title": "Bike Lanes and Art Come Together in the Bayview",
+      "url": "https://sfbike.org/news/bike-lanes-and-art-come-together-in-the-bayview/",
+      "kind": "built",
+      "claim": "The Bayview's first quick-build finished April 3: a protected lane by the bay joining Evans, Hunters Point Boulevard and Innes",
+      "streets": [
+        "EVANS AVE",
+        "HUNTERS POINT BLVD",
+        "INNES AVE"
+      ],
+      "nodes": [
+        "22078"
+      ]
+    },
+    {
+      "id": "sloat-completed",
+      "title": "Sloat Blvd Quick-Build completed!",
+      "url": "https://sfbike.org/news/sloat-blvd-quick-build-completed/",
+      "kind": "built",
+      "claim": "Two-way protected bike lane on Sloat, 47th Avenue to Skyline, approved July 2023, construction from spring 2025; the post's title says completed",
+      "streets": [
+        "SLOAT BLVD"
+      ],
+      "nodes": [
+        "26728"
+      ]
+    },
+    {
+      "id": "great-highway-extension",
+      "title": "A new car-free space coming to the Great Highway Extension",
+      "url": "https://sfbike.org/news/a-new-car-free-space-coming-to-the-great-highway-extension/",
+      "kind": "approved",
+      "claim": "Car-free space on the Great Highway Extension",
+      "streets": [
+        "GREAT HWY HWY"
+      ],
+      "nodes": []
+    },
+    {
+      "id": "howard",
+      "title": "BREAKING: Howard Street protected bike lanes approved",
+      "url": "https://sfbike.org/news/breaking-howard-street-protected-bike-lanes-approved/",
+      "kind": "approved",
+      "claim": "Howard protected bike lanes approved, Sixth to 11th; SFMTA committed to extend past Moscone to Third",
+      "streets": [
+        "HOWARD ST"
+      ],
+      "nodes": [
+        "20166",
+        "381",
+        "24302"
+      ]
+    },
+    {
+      "id": "car-free-market",
+      "title": "We Won a Car-Free Market",
+      "url": "https://sfbike.org/news/we-won-a-car-free-market/",
+      "kind": "approved",
+      "claim": "SFMTA Board approved Better Market Street: private cars restricted, protected bike lanes planned",
+      "streets": [
+        "MARKET ST"
+      ],
+      "nodes": [
+        "939"
+      ]
+    },
+    {
+      "id": "townsend",
+      "title": "Townsend, Howard, Valencia on the Horizon",
+      "url": "https://sfbike.org/news/townsend-howard-valencia-on-the-horizon/",
+      "kind": "approved",
+      "claim": "Protected bike lane on Townsend, Fourth to Eighth",
+      "streets": [
+        "TOWNSEND ST"
+      ],
+      "nodes": [
+        "1102"
+      ]
+    },
+    {
+      "id": "north-embarcadero",
+      "title": "Funding approved for bike projects on northern Embarcadero & Jefferson St",
+      "url": "https://sfbike.org/news/funding-approved-for-bike-projects-on-northern-embarcadero-jefferson-st/",
+      "kind": "funded",
+      "claim": "SFCTA Prop L funding, May 13 2025: the northbound Embarcadero lane, Bay to Chestnut, upgraded to a protected lane by September 2027",
+      "streets": [
+        "THE EMBARCADERO"
+      ],
+      "nodes": [],
+      "note": "The Central Embarcadero Safety Project (node 752) runs Broadway to Brannan, south of this stretch; its page says the Northern Embarcadero, north of Broadway, gets a smaller quick-build and the Embarcadero Connectivity Plan study in 2026. The Embarcadero 2020 Quick-Build Projects (node 21903) cover other stretches. The mirror has no page for Bay to Chestnut."
+    },
+    {
+      "id": "jefferson",
+      "title": "Funding approved for bike projects on northern Embarcadero & Jefferson St",
+      "url": "https://sfbike.org/news/funding-approved-for-bike-projects-on-northern-embarcadero-jefferson-st/",
+      "kind": "funded",
+      "claim": "SFCTA Prop L funding, May 13 2025: bike connections on Jefferson, Hyde to Powell, by March 2026",
+      "streets": [
+        "JEFFERSON ST"
+      ],
+      "nodes": [
+        "44133"
+      ],
+      "note": "SFMTA's project page now dates near-term implementation to winter 2026/27 and mid-term design to 2027, later than the post's March 2026."
+    },
+    {
+      "id": "slow-streets-permanent",
+      "title": "The road to a permanent network of Slow Streets",
+      "url": "https://sfbike.org/news/the-road-to-a-permanent-network-of-slow-streets/",
+      "kind": "approved",
+      "claim": "Page, Sanchez and Shotwell first considered for permanent Slow Streets",
+      "streets": [
+        "SANCHEZ ST",
+        "SHOTWELL ST",
+        "LAKE ST"
+      ],
+      "nodes": [
+        "27620",
+        "27619",
+        "24767"
+      ]
+    },
+    {
+      "id": "car-free-jfk",
+      "title": "How we won a permanent Car-Free JFK Drive and what's to come",
+      "url": "https://sfbike.org/news/how-we-won-a-permanent-car-free-jfk-drive-and-whats-to-come/",
+      "kind": "approved",
+      "claim": "JFK Drive in Golden Gate Park kept closed to private cars",
+      "streets": [
+        "JOHN F KENNEDY DR"
+      ],
+      "nodes": [
+        "24645"
+      ]
+    },
+    {
+      "id": "sunset-dunes",
+      "title": "New park on the Great Highway officially opening April 12, 2025!",
+      "url": "https://sfbike.org/news/new-park-on-the-great-highway-officially-opening-april-12-2025/",
+      "kind": "built",
+      "claim": "Upper Great Highway opened as a car-free park, April 12 2025",
+      "streets": [
+        "GREAT HWY HWY"
+      ],
+      "nodes": [
+        "27583"
+      ],
+      "note": "The Great Highway blocks were already drawn as a path in 2015, the map's first year, and the page credits no project with a block built by then."
+    },
+    {
+      "id": "wiggle",
+      "title": "Victory for the Wiggle!",
+      "url": "https://sfbike.org/news/victory-for-the-wiggle/",
+      "kind": "approved",
+      "claim": "Wiggle improvements approved",
+      "streets": [
+        "SCOTT ST",
+        "FELL ST",
+        "OAK ST",
+        "DUBOCE AVE"
+      ],
+      "nodes": [
+        "807"
+      ]
+    },
+    {
+      "id": "goodlett",
+      "title": "Ride the new protected bike lanes in front of City Hall today!",
+      "url": "https://sfbike.org/news/ride-the-new-protected-bike-lanes-in-front-of-city-hall-today/",
+      "kind": "built",
+      "claim": "Protected lanes on Dr. Carlton B. Goodlett Place close a gap in the Polk separated lanes, Market to Pine",
+      "streets": [
+        "DR CARLTON B GOODLETT PL",
+        "POLK ST"
+      ],
+      "nodes": [
+        "40860"
+      ]
+    },
+    {
+      "id": "masonic",
+      "title": "Long-Awaited Masonic Avenue Completion!",
+      "url": "https://sfbike.org/news/long-awaited-masonic-avenue-completion/",
+      "kind": "built",
+      "claim": "Raised bike lanes on Masonic, Panhandle to Geary, unveiled summer 2018",
+      "streets": [
+        "MASONIC AVE"
+      ],
+      "nodes": [
+        "853"
+      ]
+    },
+    {
+      "id": "arguello-buffered",
+      "title": "New Bike Lane Connects Arguello and Masonic",
+      "url": "https://sfbike.org/news/new-bike-lane-connects-arguello-and-masonic/",
+      "kind": "built",
+      "claim": "Buffered bike lane on Arguello, Golden Gate Park to the Presidio",
+      "streets": [
+        "ARGUELLO BLVD"
+      ],
+      "nodes": [],
+      "note": "The SFMTA mirror's Arguello Safety Project (node 28373) is a later, unbuilt quick-build, not this lane, so no node is given."
+    },
+    {
+      "id": "third-street-qb",
+      "title": "Ride to Opening Day on the new 3rd Street bike lane",
+      "url": "https://sfbike.org/news/ride-to-opening-day-on-the-new-3rd-street-bike-lane/",
+      "kind": "built",
+      "claim": "3rd Street quick-build lane opened, linking the ballpark, Mission Bay and the Berry Street lane",
+      "streets": [
+        "3RD ST"
+      ],
+      "nodes": [
+        "28710"
+      ]
+    },
+    {
+      "id": "mission-bay",
+      "title": "Bicycle improvements coming to Mission Bay",
+      "url": "https://sfbike.org/news/bicycle-improvements-coming-to-mission-bay/",
+      "kind": "approved",
+      "claim": "Posts on the Mission Bay Drive lanes, 7th Street to the traffic circle, before the school opens in August 2026",
+      "streets": [
+        "MISSION BAY DR",
+        "MISSION BAY BLVD NORTH",
+        "MISSION BAY BLVD SOUTH"
+      ],
+      "nodes": [
+        "44135"
+      ]
+    },
+    {
+      "id": "hairball",
+      "title": "Untangling the Hairball",
+      "url": "https://sfbike.org/news/untangling-the-hairball/",
+      "kind": "built",
+      "claim": "Bike paths through the Cesar Chavez / Potrero / Bayshore interchange",
+      "streets": [
+        "CESAR CHAVEZ ST",
+        "POTRERO AVE",
+        "BAYSHORE BLVD"
+      ],
+      "nodes": [
+        "1110"
+      ]
+    },
+    {
+      "id": "polk",
+      "title": "A New Year Deserves a New, Safe Polk Street",
+      "url": "https://sfbike.org/news/a-new-year-deserves-a-new-safe-polk-street/",
+      "kind": "built",
+      "claim": "Polk Street redesign with separated lanes",
+      "streets": [
+        "POLK ST"
+      ],
+      "nodes": [
+        "1202"
+      ]
+    },
+    {
+      "id": "safe-school-connections",
+      "title": "The SFMTA needs to hear from you about the Safe Schools Connections Program",
+      "url": "https://sfbike.org/news/the-sfmta-needs-to-hear-from-you-about-the-safe-schools-connections-program/",
+      "kind": "program",
+      "claim": "SFMTA's Safe School Connections program, before the SFMTA Board in September 2026; the Coalition's School Streets post describes School Street demonstration days at six or more schools in the 2026-27 school year",
+      "streets": [],
+      "nodes": []
+    }
+  ]
+}

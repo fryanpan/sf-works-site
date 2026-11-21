@@ -1,0 +1,99 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2022-02-17",
+ "id": "g91-40596",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=40596",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll call"
+  },
+  {
+   "no": "2",
+   "title": "Continuation of Remote Meetings"
+  },
+  {
+   "no": "3",
+   "title": "President’s Report (discussion only)"
+  },
+  {
+   "no": "4",
+   "title": "General Manager’s Report (discussion only)"
+  },
+  {
+   "no": "5",
+   "title": "General Public Comment - up to 15 minutes – this item will be continued to item 13"
+  },
+  {
+   "no": "6",
+   "title": "Consent Calendar (action item)"
+  },
+  {
+   "no": "6a",
+   "title": "Minutes"
+  },
+  {
+   "no": "6b",
+   "title": "San Francisco Zoological Society Animal Transactions"
+  },
+  {
+   "no": "6c",
+   "title": "Acceptance of Grants"
+  },
+  {
+   "no": "6d",
+   "title": "Greenagers Outdoor Equity Grant Program Application"
+  },
+  {
+   "no": "8",
+   "title": "Recreation and Park Department fy22-23 and fy23-24 Budget Overview"
+  },
+  {
+   "no": "7",
+   "title": "San Francisco Zoo"
+  },
+  {
+   "no": "9",
+   "title": "Merced Heights Playground Lower Lawn Terrace Renovation – Award of Contract"
+  },
+  {
+   "no": "11",
+   "title": "921 O’Farrell Street – Shadow on John Macaulay Park"
+  },
+  {
+   "no": "10",
+   "title": "350 Ocean Avenue – Shadow on Balboa Park"
+  },
+  {
+   "no": "12",
+   "title": "Fillmore Turk Mini park – Approval of Construction Contract Termination"
+  },
+  {
+   "no": "13",
+   "title": "General Public Comment – Continued from Item 5 if necessary"
+  },
+  {
+   "no": "14",
+   "title": "Commissioners’ Matters"
+  },
+  {
+   "no": "15",
+   "title": "New Business/Agenda Setting (discussion only)"
+  },
+  {
+   "no": "16",
+   "title": "Communications (discussion only)"
+  },
+  {
+   "no": "17",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "rec-park-commission"
+}

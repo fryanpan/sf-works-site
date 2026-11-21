@@ -1,0 +1,131 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-06-18",
+ "id": "g55-33459",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33459",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/19822"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Making environmental review findings and approving the following traffic modifications",
+   "text": "Making environmental review findings and approving the following traffic modifications: A. ESTABLISH – GENERAL METERED PARKING, 9AM TO 6PM, MONDAY THROUGH SATURDAY – 6th Street, both sides, between Folsom Street and Brannan Street. B. ESTABLISH – METERED YELLOW COMMERCIAL LOADING ZONE, 9AM TO 6PM, MONDAY THROUGH SATURDAY – 6th Street, west side from 115 feet to 145 feet north of Brannan Street. C. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA AA – Godeus Street between Mission Street and Coleridge Street; The residents of Godeus Street have \"No Parking Any Time\" on both sides of the street. D. ESTABLISH-RESIDENTIAL PERMIT PARKING, AREA I – Folsom Street, both sides, between 20th Street and 21st Street. E. ESTABLISH- BIKE LANES (CLASS II BIKEWAY); Alemany Boulevard, northbound, from Niagara Avenue to Geneva Avenue; Alemany Boulevard, southbound, from Seneca Avenue to 65 feet southerly. F. ESTABLISH- RED ZONES – 46th Avenue, west side, from Judah Street to 29 feet northerly 46th Avenue, east side, from Judah Street to 24 feet southerly. G. ESTABLISH - LEFT LANE MUST TURN LEFT– Silver Avenue, eastbound, at Bayshore Blvd. H. ESTABLISH - BUS ZONE – Silver Avenue, south side, from Bayshore Blvd. to 90 feet easterly. I. ESTABLISH – RED ZONE – Fell Street, north side, from Stanyan Street to 23 feet easterly; Fell Street, south side, from Stanyan Street to 90 feet easterly. J. RESCIND TOW AWAY NO STOPPING 9AM to 7PM EVERYDAY – Fell Street, north side, from Stanyan Street to 120 feet eas",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-067)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director to approve a program of projects, to execute the required Certifications and Assurances for all transit projects funded by the Low Carbon Transit Operations Program for Fiscal Year 2019 and making environmental review findings.",
+   "text": "Authorizing the Director to approve a program of projects, to execute the required Certifications and Assurances for all transit projects funded by the Low Carbon Transit Operations Program for Fiscal Year 2019 and making environmental review findings. (Explanatory documents include a staff report, program, certifications, environmental review findings and resolution.) RESOLUTION 190618-068",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-068)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving Contract No. SFMTA-2019-49, West Portal Optimization and Crossover Activation Services, with Thales Transport and Security, Inc. for a term of 12 months and a contract amount not to exceed $6,260,000 to provide ATCS system engineering and configuration, software updates, testing services, and equipment to implement train control for a new crossover in the Twin Peaks Tunnel, to improve service for the West Portal shuttle.",
+   "text": "Approving Contract No. SFMTA-2019-49, West Portal Optimization and Crossover Activation Services, with Thales Transport and Security, Inc. for a term of 12 months and a contract amount not to exceed $6,260,000 to provide ATCS system engineering and configuration, software updates, testing services, and equipment to implement train control for a new crossover in the Twin Peaks Tunnel, to improve service for the West Portal shuttle. (Explanatory documents include a staff report, resolution and contract.) RESOLUTION 190618-069",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-069)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute Agreement No. 2019-63, Administration of Capital Funding for the Bay Area Rapid Transit/Muni Market Street Entrance Modernization Project, with the San Francisco Bay Area Rapid Transit District, to fund half of the cost of installing canopies over the four Bay Area Rapid Transit/Muni station entrances on Market Street with proceeds from the sale of the second and future issuances of 2014 General Obligation Bonds, in an amount not to exceed $45,000,000, and for a term beginning as of February 1, 2018 and making environmental review findings.",
+   "text": "Authorizing the Director to execute Agreement No. 2019-63, Administration of Capital Funding for the Bay Area Rapid Transit/Muni Market Street Entrance Modernization Project, with the San Francisco Bay Area Rapid Transit District, to fund half of the cost of installing canopies over the four Bay Area Rapid Transit/Muni station entrances on Market Street with proceeds from the sale of the second and future issuances of 2014 General Obligation Bonds, in an amount not to exceed $45,000,000, and for a term beginning as of February 1, 2018 and making environmental review findings. (Explanatory documents include a staff report, resolution, findings and agreement.) RESOLUTION 190618-070",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-070)"
+  },
+  {
+   "no": "10.5",
+   "title": "Authorizing the Director to execute an agreement with Pacific Gas and Electric Company indemnifying PG&E from any claims (other than claims arising from PG&E’s gross negligence or willful misconduct) resulting from the boring and installation of electrical conduits underneath the SFMTA track right-of-way at the intersection of 2nd and King Streets.",
+   "text": "Authorizing the Director to execute an agreement with Pacific Gas and Electric Company indemnifying PG&E from any claims (other than claims arising from PG&E’s gross negligence or willful misconduct) resulting from the boring and installation of electrical conduits underneath the SFMTA track right-of-way at the intersection of 2nd and King Streets. (Explanatory documents include a staff report, resolution and agreement.) RESOLUTION 190618-071",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-071)"
+  },
+  {
+   "no": "10.6",
+   "title": "Authorizing the Director to execute Modification No. 4 to Contract No. 1236R, Third Street Light Rail Project Mission Bay Loop, with Mitchell Engineering, to increase the Contract amount by $827,381.36, for a total Contract amount not to exceed $7,220,169.80.",
+   "text": "Authorizing the Director to execute Modification No. 4 to Contract No. 1236R, Third Street Light Rail Project Mission Bay Loop, with Mitchell Engineering, to increase the Contract amount by $827,381.36, for a total Contract amount not to exceed $7,220,169.80. (Explanatory documents include a staff report, resolution, financial plan and modification.) RESOLUTION 190618-072",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-072)"
+  },
+  {
+   "no": "10.7",
+   "title": "Authorizing the Director to submit property owner ballots for the Sutter Stockton and Ellis O’Farrell Garage parcels and the subsurface-easement parcel #APN 0327-024 to vote to approve the renewal of the Union Square Business Improvement District, for a term of ten years and an annual property tax assessment of $100,328, subject to annual increases.",
+   "text": "Authorizing the Director to submit property owner ballots for the Sutter Stockton and Ellis O’Farrell Garage parcels and the subsurface-easement parcel #APN 0327-024 to vote to approve the renewal of the Union Square Business Improvement District, for a term of ten years and an annual property tax assessment of $100,328, subject to annual increases. (Explanatory documents include a staff report, resolution and management plan.) RESOLUTION 190618-073",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-073)"
+  },
+  {
+   "no": "10.8",
+   "title": "Authorizing the Director to submit property owner ballots for the Performing Arts Garage parcels to vote to support the renewal of the Civic Center Community Benefit District, for a term of 15 years and an annual property tax assessment not to exceed $28,054, subject to annual increases.",
+   "text": "Authorizing the Director to submit property owner ballots for the Performing Arts Garage parcels to vote to support the renewal of the Civic Center Community Benefit District, for a term of 15 years and an annual property tax assessment not to exceed $28,054, subject to annual increases. (Explanatory documents include a staff report, resolution and management plan.) RESOLUTION 190618-074",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 190618-074)"
+  },
+  {
+   "no": "11",
+   "title": "Designating a transit only lane on Folsom Street and other environmental reviews and parking and traffic modifications in association with the Folsom-Howard Streetscape Project",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding the ConnectSFprogram’s recent Statement of Needs."
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

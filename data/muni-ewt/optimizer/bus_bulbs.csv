@@ -1,0 +1,366 @@
+stop_id,stop_name,lat,lon,kind,routes,source,source_id
+390,19th Ave&Holloway Ave NE-FS/BB,37.721190,-122.475153,bulb,28 28R 29 91,DataSF i28k-bkz6 (type+name),390
+3084,Broadway&Montgomery St SW-NS/BB,37.798134,-122.403960,bulb,12,DataSF i28k-bkz6 (name),3084
+3113,3rd St&Bayview St SW-FS/BB,37.732200,-122.391731,bulb,91 TBUS,DataSF i28k-bkz6 (name),3113
+3114,3rd St&Brannan St. E-MB/BB,37.779285,-122.393185,bulb,15 30 45 91 TBUS,DataSF i28k-bkz6 (type+name),3114
+3134,3rd St&La Salle Ave NE-FS/BB,37.737213,-122.389803,bulb,54 91 TBUS,DataSF i28k-bkz6 (name),3134
+3135,3rd St&Kirkwood Ave SW-FS/BB,37.737927,-122.389619,bulb,54 91 TBUS,DataSF i28k-bkz6 (name),3135
+3143,3rd St&Oakdale Ave SW-FS/BB,37.734787,-122.390721,bulb,54 91 TBUS,DataSF i28k-bkz6 (name),3143
+3145,3rd St&Revere Ave S-NS/BB,37.732250,-122.391460,bulb,91 TBUS,DataSF i28k-bkz6 (name),3145
+3161,4th St&Market St S-FS/BB,37.785527,-122.405675,bulb,5 8 8AX 8BX 15 30 45 91 TBUS,DataSF i28k-bkz6 (name),3161
+3191,7th St&Brannan St N-FS/BB,37.773266,-122.403367,bulb,19,DataSF i28k-bkz6 (name),3191
+3192,7th St&Folsom St N-FS/SI,37.776864,-122.407904,island,19 27,DataSF i28k-bkz6 (name),3192
+3194,7th St&Howard St E-NS/SI,37.777935,-122.409222,island,19 27,DataSF i28k-bkz6 (name),3194
+3196,7th St&Market St S-NS/SI,37.780309,-122.412395,island,19,DataSF i28k-bkz6 (type+name),3196
+3203,8th St&Brannan St W-FS/BI,37.771179,-122.405386,island,19,DataSF i28k-bkz6 (name),3203
+3206,8th St&Harrison St S-FS/BI,37.773536,-122.408376,island,19,DataSF i28k-bkz6 (name),3206
+3291,16th St&Mission St NE-NS/BZ,37.765152,-122.419611,bulb,22 55,SFMTA project document,https://www.sfmta.com/media/29381/download
+3293,16th St&Mission St SW-NS/BZ,37.764983,-122.419835,bulb,22 55,SFMTA project document,https://www.sfmta.com/media/29381/download
+3295,16th St&Potrero Ave NW-FS/BZ,37.765800,-122.407624,bulb,22 33 55,SFMTA project document,https://www.sfmta.com/media/29381/download
+3311,17th St&Castro St NE-NS/SI,37.762576,-122.434979,island,F FBUS,DataSF i28k-bkz6 (type+name),3311
+3354,19th Ave&Eucalyptus Dr SW-FS-BB,37.730813,-122.475012,bulb,28 28R 91,DataSF i28k-bkz6 (name),3354
+3355,19th Ave&Eucalyptus Dr NE-FS/BB,37.731300,-122.474759,bulb,28 28R 91,DataSF i28k-bkz6 (name),3355
+3358,19th Ave&Holloway Ave NW-NS/SI,37.721342,-122.475245,island,M,DataSF i28k-bkz6 (name),3358
+3359,19th Ave&Irving St NW-NS/BB,37.763680,-122.477310,bulb,28 91,DataSF i28k-bkz6 (name),3359
+3364,19th Ave&Judah St NE-FS/BB,37.761770,-122.476955,bulb,28 28R 91,DataSF i28k-bkz6 (name),3364
+3365,19th Ave&Judah St SW-FS/BB,37.761400,-122.477110,bulb,28 28R 91,DataSF i28k-bkz6 (name),3365
+3368,19th Ave&Lawton St NE-FS/BB,37.758076,-122.476633,bulb,28 91,DataSF i28k-bkz6 (name),3368
+3369,19th Ave&Lawton St SW-FS/BB,37.757889,-122.476782,bulb,28 91,DataSF i28k-bkz6 (name),3369
+3371,19th Ave&Lincoln Way SW-FS/BB,37.765375,-122.477404,bulb,28 28R 91,DataSF i28k-bkz6 (name),3371
+3374,19th Ave&Noriega St NE-FS/BB,37.754320,-122.476368,bulb,28 28R 91,DataSF i28k-bkz6 (name),3374
+3375,19th Ave&Noriega St SW-FS/BB,37.753920,-122.476530,bulb,28 28R 91,DataSF i28k-bkz6 (name),3375
+3379,19th Ave&Ortega St NE-FS/BB,37.752720,-122.476190,bulb,28 91,DataSF i28k-bkz6 (name),3379
+3380,19th Ave&Ortega St SW-FS/BB,37.752060,-122.476400,bulb,28 91,DataSF i28k-bkz6 (name),3380
+3384,19th Ave&Quintara St SW-FS/BB,37.748300,-122.476140,bulb,28 28R 91,DataSF i28k-bkz6 (name),3384
+3388,19th Ave&Rivera St NE-FS/BB,37.747152,-122.475834,bulb,28 91,DataSF i28k-bkz6 (name),3388
+3389,19th Ave&Rivera St SW-FS/BB,37.746470,-122.476010,bulb,28 91,DataSF i28k-bkz6 (name),3389
+3394,19th Ave&Taraval St NE-FS/BB,37.743310,-122.475540,bulb,28 28R 91,DataSF i28k-bkz6 (name),3394
+3395,19th Ave&Taraval St SW-FS/BB,37.742586,-122.475737,bulb,28 28R 91,DataSF i28k-bkz6 (name),3395
+3398,19th Ave&Vicente St NE-FS/BB,37.739546,-122.475310,bulb,28 91,DataSF i28k-bkz6 (name),3398
+3403,19th Ave&Winston Dr NW-NS/SI,37.727017,-122.474937,island,M,DataSF i28k-bkz6 (name),3403
+3460,24th St&Church St NE-NS/BB,37.751778,-122.427327,bulb,48,DataSF i28k-bkz6 (type+name),3460
+3513,Wisconsin St&25th St SE-NS/BB,37.752038,-122.398388,bulb,19 48,DataSF i28k-bkz6 (name),3513
+3741,Bryant St&21ST St SW-FS/BB,37.757400,-122.409610,bulb,27,DataSF i28k-bkz6 (type+name),3741
+3742,Bryant St&22ND St NE-FS/BB,37.756210,-122.409420,bulb,27,DataSF i28k-bkz6 (type+name),3742
+3745,Bryant St&23RD St SW-FS/BB,37.754150,-122.409320,bulb,27,DataSF i28k-bkz6 (type+name),3745
+3814,Bush St&Leavenworth St SE-FS/BB,37.789308,-122.415035,bulb,27,DataSF i28k-bkz6 (name),3814
+3824,California St&6TH Ave NW-FS/BB,37.785069,-122.464641,bulb,1 1X 28R,DataSF i28k-bkz6 (name),3824
+3927,Cabrillo St&La Playa NE-NS/SI,37.773562,-122.509980,island,5 5R 31,DataSF i28k-bkz6 (type+name),3927
+3931,Cesar Chavez St&Folsom St NW-FS/BB,37.748340,-122.413980,bulb,12 27,DataSF i28k-bkz6 (name),3931
+3935,Cesar Chavez St&Mission St NW-FS/BB,37.748234,-122.418369,bulb,12,DataSF i28k-bkz6 (name),3935
+3936,Cesar Chavez St&South Van Ness Ave NE-NS/BB,37.748305,-122.415756,bulb,12 27,DataSF i28k-bkz6 (name),3936
+3984,Church St&16TH St NW-NS/SI,37.764621,-122.428722,island,22 J,DataSF i28k-bkz6 (type+name),3984
+3985,Church St&16TH St SE-NS/SI,37.764382,-122.428609,island,J,DataSF i28k-bkz6 (type+name),3985
+3987,Church St&18TH St NW-NS/SI,37.761467,-122.428416,island,J,DataSF i28k-bkz6 (name),3987
+3995,Church St&24TH St NW-NS/SI,37.751800,-122.427497,island,J,DataSF i28k-bkz6 (type+name),3995
+3996,Church St&24TH St SE-NS/SI,37.751591,-122.427350,island,J,DataSF i28k-bkz6 (type+name),3996
+3999,Church St&29TH St SE-NS/SI,37.743587,-122.426585,island,J,DataSF i28k-bkz6 (type+name),3999
+4004,Church St&Day St SW-FS/SI,37.742811,-122.426654,island,J,DataSF i28k-bkz6 (type+name),4004
+4005,Church St&Duboce Ave NW-NS/BZ,37.769499,-122.429167,island,22 NOWL,DataSF i28k-bkz6 (type),4005
+4006,Church St&Duboce Ave SE-NS/SI,37.769302,-122.429087,island,J,DataSF i28k-bkz6 (type+name),4006
+4128,Connecticut St&25TH St SE-NS/BB,37.752287,-122.396482,bulb,19,DataSF i28k-bkz6 (name),4128
+4257,Geary Blvd&6TH Ave NE-FS/BB,37.781090,-122.464492,bulb,38 38R,DataSF i28k-bkz6 (type+name),4257
+4293,Geary Blvd&Divisadero St NE-NS/BB,37.783428,-122.439366,bulb,38 38R,DataSF i28k-bkz6 (type+name),4293
+4294,Geary Blvd&Divisadero St SW-NS/BB,37.783178,-122.439572,bulb,38 38R,DataSF i28k-bkz6 (name),4294
+4301,Geary St&Kearny St NW-FS/BB,37.787997,-122.403656,bulb,38 38R,DataSF i28k-bkz6 (name),4301
+4303,Geary St&Leavenworth St NW-FS/BB,37.786556,-122.414971,bulb,38 38R,DataSF i28k-bkz6 (name),4303
+4314,Castro St&18TH St SE-NS/BB,37.760836,-122.434934,bulb,24,DataSF i28k-bkz6 (type+name),4314
+4315,Castro St&18TH St SW-FS/BB,37.760863,-122.435048,bulb,24 35,DataSF i28k-bkz6 (type+name),4315
+4334,Castro St&Market St SW-FS/BB,37.762397,-122.435266,bulb,24 35,DataSF i28k-bkz6 (type+name),4334
+4447,Duboce Ave&Church St NW-FS/SI,37.769472,-122.429408,island,N NBUS,DataSF i28k-bkz6 (type+name),4447
+4448,Duboce Ave&Church St SW-NS/SI,37.769409,-122.429400,island,N,DataSF i28k-bkz6 (type+name),4448
+4501,The Embarcadero&Bay St E-FS/SI,37.806945,-122.406278,island,F FBUS LOWL,DataSF i28k-bkz6 (type+name),4501
+4502,The Embarcadero&Bay St NW-NS/SI,37.806629,-122.406030,island,F FBUS LOWL,DataSF i28k-bkz6 (name),4502
+4503,The Embarcadero&Broadway NE-FS/SI,37.799552,-122.397869,island,F FBUS LOWL,DataSF i28k-bkz6 (type+name),4503
+4504,The Embarcadero&Broadway SW-FS/SI,37.798901,-122.397434,island,F FBUS LOWL,DataSF i28k-bkz6 (type+name),4504
+4506,The Embarcadero&Brannan St S-FS/SI,37.784359,-122.388138,island,N,DataSF i28k-bkz6 (type+name),4506
+4509,The Embarcadero&Folsom St S-FS/SI,37.790481,-122.389692,island,K L M N,DataSF i28k-bkz6 (type+name),4509
+4510,Embarcadero Folsom St N-NS/SI,37.790749,-122.389841,island,K L M N,DataSF i28k-bkz6 (name),4510
+4513,The Embarcadero&Ferry Term E-MB/SI,37.794890,-122.393552,island,F FBUS LOWL,DataSF i28k-bkz6 (name),4513
+4515,The Embarcadero&Greenwich St SE,37.803263,-122.401113,island,F FBUS LOWL,DataSF i28k-bkz6 (type),4515
+4516,The Embarcadero&Greenwich St SW,37.802960,-122.401029,island,F FBUS LOWL,DataSF i28k-bkz6 (type),4516
+4517,The Embarcadero&Green St NE-FS/SI,37.801264,-122.399369,island,F FBUS LOWL,DataSF i28k-bkz6 (type+name),4517
+4518,The Embarcadero&Green St SW-FS/SI,37.800605,-122.398920,island,F FBUS LOWL,DataSF i28k-bkz6 (type+name),4518
+4529,The Embarcadero&Sansome St SW-FS,37.805022,-122.403314,island,F FBUS LOWL,DataSF i28k-bkz6 (type),4529
+4530,PIER 39,37.808351,-122.410287,island,39 F FBUS LOWL,DataSF i28k-bkz6 (type),4530
+4532,The Embarcadero&Washington St NE,37.797085,-122.395670,island,F FBUS LOWL,DataSF i28k-bkz6 (type),4532
+4534,The Embarcadero&Washington St SW,37.796355,-122.395181,island,F FBUS LOWL,DataSF i28k-bkz6 (type),4534
+4655,Folsom St&1ST St E-FS/BB,37.787316,-122.394326,bulb,12,DataSF i28k-bkz6 (name),4655
+4657,Folsom St&3RD St E-FS/SI,37.783873,-122.398684,island,12,DataSF i28k-bkz6 (name),4657
+4675,Folsom St&22ND St NE-FS/BB,37.755951,-122.414332,bulb,12,DataSF i28k-bkz6 (name),4675
+4676,Folsom St&22ND St SW-FS/BB,37.755460,-122.414481,bulb,12,DataSF i28k-bkz6 (name),4676
+4677,Folsom St&24TH St NE-FS/BB,37.752757,-122.414024,bulb,12,DataSF i28k-bkz6 (name),4677
+4725,Fremont St&Market St E-NS/SI,37.791645,-122.398151,island,5 5R 7 38 38R,DataSF i28k-bkz6 (type+name),4725
+4729,Marina Blvd&Laguna St SW-NS-BZ,37.805118,-122.432185,island,43,DataSF i28k-bkz6 (type),4729
+4760,Geary Blvd&Scott St NE-MB/BB,37.783847,-122.437761,bulb,38,DataSF i28k-bkz6 (type+name),4760
+4766,Geary St&Stockton St NE-NS/BB,37.787633,-122.406568,bulb,38 38R,DataSF i28k-bkz6 (type+name),4766
+4768,Geary Blvd&Van Ness Ave NW-FS/BB,37.785745,-122.421575,bulb,38 38R,DataSF i28k-bkz6 (name),4768
+4787,Glen Park Station E-NS/SI,37.732525,-122.433416,island,J,DataSF i28k-bkz6 (type+name),4787
+4788,Glen Park Station W-FS/SI,37.732401,-122.433855,island,J,DataSF i28k-bkz6 (type+name),4788
+4862,Leavenworth St&Bush St SE-NS/BB,37.789151,-122.415272,bulb,27,DataSF i28k-bkz6 (name),4862
+4868,Leavenworth St&Pine St SE-NS/BB,37.790159,-122.415479,bulb,27,DataSF i28k-bkz6 (name),4868
+4869,Leavenworth St&Post St SE-NS/BB,37.787313,-122.414875,bulb,27,DataSF i28k-bkz6 (name),4869
+4871,Leavenworth St&Sutter St SE-NS/BB,37.788252,-122.415090,bulb,27,DataSF i28k-bkz6 (name),4871
+4950,Haight St&Divisadero St NW-FS/BB,37.771293,-122.437373,bulb,7 NOWL,DataSF i28k-bkz6 (name),4950
+4952,Haight St&Fillmore St NW-FS/BB,37.772140,-122.430760,bulb,7 NOWL,DataSF i28k-bkz6 (name),4952
+4953,Haight St&Fillmore St SE-FS/BB,37.772095,-122.430347,bulb,7,DataSF i28k-bkz6 (name),4953
+4958,Haight St&Masonic Ave SE-FS/BB,37.770196,-122.445292,bulb,7 NOWL,DataSF i28k-bkz6 (name),4958
+4962,Haight St&Stanyan St NE-NS/BB,37.769331,-122.452845,bulb,7 33,DataSF i28k-bkz6 (name),4962
+4963,Haight St&Stanyan St SE-FS/BB,37.769170,-122.453075,bulb,7 33,DataSF i28k-bkz6 (name),4963
+4992,Hayes St&Divisadero St SW-NS/BB,37.774898,-122.437911,bulb,6,DataSF i28k-bkz6 (name),4992
+5042,Hudson Ave&Ardath Ct NW-MB/BB,37.734537,-122.383000,bulb,54,DataSF i28k-bkz6 (type+name),5042
+5193,Judah St&9th Ave NW-FS/SI,37.762227,-122.466688,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5193
+5194,Judah St&9th Ave SW-NS/SI,37.762139,-122.466312,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5194
+5195,Judah St&12th Ave NE-NS/SI,37.762069,-122.469324,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5195
+5196,Judah St&12th Ave SW-NS/SI,37.761988,-122.469526,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5196
+5197,Judah St&15th Ave SW-NS/SI,37.761848,-122.472777,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5197
+5198,Judah St&16th Ave N-MI/SI,37.761940,-122.473632,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5198
+5199,Judah St&19th Ave NE-NS/SI,37.761743,-122.476921,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5199
+5200,Judah St&19th Ave SW-NS/SI,37.761655,-122.477194,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5200
+5201,Judah St&22nd Ave SE-FS/SI,37.761534,-122.479855,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5201
+5202,Judah St&23rd Ave NE-NS/SI,37.761547,-122.481164,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5202
+5203,Judah St&25th Ave NE-NS/SI,37.761452,-122.483300,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5203
+5204,Judah St&25th Ave SW-NS/SI,37.761373,-122.483560,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5204
+5205,Judah St&28th Ave NE-NS/SI,37.761310,-122.486510,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5205
+5206,Judah St&28th Ave SW-NS/SI,37.761232,-122.486763,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5206
+5207,Judah St&31st Ave NE-NS/SI,37.761172,-122.489719,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5207
+5208,Judah St&31st Ave SE-FS/SI,37.761105,-122.489500,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5208
+5209,Judah St&34th Ave NE-NS/SI,37.761028,-122.492930,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5209
+5210,Judah St&34th Ave SW-NS/SI,37.760955,-122.493199,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5210
+5211,Judah St&40th Ave NE-NS/SI,37.760743,-122.499359,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5211
+5212,Judah St&40th Ave SE-FS/SI,37.760679,-122.499154,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5212
+5213,Judah St&43rd Ave NE-NS/SI,37.760598,-122.502574,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5213
+5214,Judah St&43rd Ave SW-NS/SI,37.760518,-122.502839,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5214
+5215,Judah St&46th Ave NE-NS/SI,37.760493,-122.505832,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5215
+5216,Judah St&46th Ave SW-NS/SI,37.760392,-122.506064,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5216
+5224,Judah St&Sunset Blvd NE-NS/SI,37.760917,-122.495668,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5224
+5225,Judah St&Sunset Blvd SW-NS/SI,37.760845,-122.495805,island,N NBUS NOWL,DataSF i28k-bkz6 (type+name),5225
+5234,King St&2nd St S-FS/SI,37.779720,-122.389872,island,N,DataSF i28k-bkz6 (type+name),5234
+5237,King St&2nd St W-NS/SI,37.779621,-122.389824,island,N,DataSF i28k-bkz6 (type+name),5237
+5239,King St&4th St S-FS/SI,37.776269,-122.394173,island,N,DataSF i28k-bkz6 (type+name),5239
+5240,King St&4th St W-NS/SI,37.776269,-122.394082,island,N,DataSF i28k-bkz6 (type+name),5240
+5257,Laguna St&Chestnut St NW-NS/BB,37.801513,-122.431418,bulb,43,DataSF i28k-bkz6 (name),5257
+5336,Main St&Market St NE-MB/BB,37.792530,-122.395670,bulb,12 14 14R,DataSF i28k-bkz6 (name),5336
+5418,METRO TERMINAL-NS/SI,37.721809,-122.447425,island,J K M,DataSF i28k-bkz6 (type+name),5418
+5422,Monterey Blvd&Baden St NE-NS/BB,37.731668,-122.439635,bulb,23 36,DataSF i28k-bkz6 (type+name),5422
+5552,Mission St&16th St SW-FS/BB,37.764804,-122.419737,bulb,14 14R 33 49 714,DataSF i28k-bkz6 (type+name),5552
+5561,Mission St&22nd St NE-FS/BB,37.755820,-122.418710,bulb,14 49,DataSF i28k-bkz6 (type+name),5561
+5562,Mission St&22nd St SW-FS/BB,37.755170,-122.418800,bulb,14 49,DataSF i28k-bkz6 (type+name),5562
+5565,Mission St&24th St NE-FS/BB,37.752356,-122.418401,bulb,14 14R 49 714,DataSF i28k-bkz6 (name),5565
+5566,Mission St&24th St SW-FS/BB,37.751964,-122.418528,bulb,14 14R 49 714,DataSF i28k-bkz6 (name),5566
+5571,Mission St&30th St NE-FS/BB,37.742408,-122.421945,bulb,14 14R 36 49,DataSF i28k-bkz6 (type+name),5571
+5572,Mission St&30th St NW-NS/BB,37.742417,-122.421991,bulb,14 14R 49,DataSF i28k-bkz6 (type+name),5572
+5584,Mission St&Cortland Ave NW-NS/BB,37.741079,-122.422874,bulb,14 49,DataSF i28k-bkz6 (type+name),5584
+5585,Mission St&Evergreen St E-FS/BB,37.707410,-122.456530,bulb,14 14R,DataSF i28k-bkz6 (type+name),5585
+5592,Mission St&Geneva Ave W-FS/BB,37.716455,-122.441149,bulb,14 14R,DataSF i28k-bkz6 (name),5592
+5593,Mission St&Geneva Ave E-FS/BB,37.716642,-122.440782,bulb,14 14R,DataSF i28k-bkz6 (name),5593
+5594,Mission St&Goethe St N-NS/BB,37.707360,-122.457080,bulb,14 14R,DataSF i28k-bkz6 (type+name),5594
+5610,Mission St&Persia Ave E-FS/BZ,37.723380,-122.435680,bulb,14 14R,SFMTA project document,https://www.sfmta.com/media/18520/download
+5616,Mission St&Persia Ave NW-NS/BZ,37.723263,-122.435971,bulb,14 14R,SFMTA project document,https://www.sfmta.com/media/18520/download
+5626,Mission St&Valencia St W-FS/BB,37.745080,-122.420300,bulb,14 36 49,DataSF i28k-bkz6 (type+name),5626
+5639,Market St&2nd St N-NS/SI,37.789353,-122.401306,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5639
+5640,Market St&3rd St S-NS/SI,37.787525,-122.403519,island,9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5640
+5643,Market St&4th St S-NS/SI,37.785705,-122.405847,island,9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5643
+5645,Market St&5th St S-NS/SI,37.783886,-122.408141,island,9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5645
+5647,Market St&6th St S-NS/SI,37.782102,-122.410400,island,9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5647
+5650,Market St&7th St S-NS/SI,37.780363,-122.412613,island,9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5650
+5651,Market St&8th St S-NS/SI,37.778606,-122.414826,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5651
+5652,Market St&9th St S-NS/SI,37.777410,-122.416340,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5652
+5654,Market St&16th St W-FS/BZ,37.763910,-122.433660,bulb,37 KBUS LOWL,DataSF i28k-bkz6 (type),5654
+5655,Market St&5th St North N-NS/SI,37.784082,-122.407992,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5655
+5656,Market St&7th St North N-NS/SI,37.780568,-122.412441,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5656
+5657,Market St&Battery St N-NS/SI,37.791110,-122.399069,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5657
+5659,Market St&Buchanan St N-NS/SI,37.769786,-122.426149,island,F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5659
+5661,Market St&Church St N-NS/SI,37.767705,-122.428778,island,F FBUS KBUS LOWL,DataSF i28k-bkz6 (type+name),5661
+5662,Market St&Church St SW-NS/SI,37.767250,-122.429214,island,F FBUS,DataSF i28k-bkz6 (type+name),5662
+5667,Market St&Castro St E-NS/SB,37.763022,-122.434979,island,37 KBUS LOWL,DataSF i28k-bkz6 (type),5667
+5668,Market St&Dolores St S-NS/SI,37.768880,-122.427103,island,F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5668
+5672,Market St&Gough St N-NS/SI,37.773269,-122.421768,island,F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5672
+5673,Market St&Gough St S-NS/SI,37.772875,-122.421991,island,F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5673
+5675,Market St&Guerrero St S-NS/SI,37.770570,-122.424971,island,F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5675
+5676,Market St&Hyde St N-NS/SI,37.779105,-122.414379,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (name),5676
+5678,Market St&Kearny St N-NS/SI,37.787730,-122.403370,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5678
+5680,Market St&Larkin St N-NS/SI,37.777598,-122.416236,island,7 9 9R F FBUS KBUS LOWL NBUS,DataSF i28k-bkz6 (type+name),5680
+5681,Market St&Laguna St N-NS/SI,37.770953,-122.424666,island,F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5681
+5682,Market St&Main St S-NS/SI,37.792984,-122.396627,island,F FBUS,DataSF i28k-bkz6 (type+name),5682
+5685,Market St&New Montgomery St NS/SI,37.788613,-122.402163,island,9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5685
+5686,Market St&Noe St N-NS/SI,37.764489,-122.432812,island,F FBUS,DataSF i28k-bkz6 (type+name),5686
+5687,Market St&Noe St S-NS/SI,37.763958,-122.433323,island,37 F FBUS KBUS LOWL,DataSF i28k-bkz6 (type+name),5687
+5690,Market St&Sanchez St N-NS/SI,37.766185,-122.430707,island,F FBUS KBUS LOWL,DataSF i28k-bkz6 (type+name),5690
+5691,Market St&Sanchez St S-NS/SI,37.765689,-122.431140,island,37 FBUS KBUS LOWL,DataSF i28k-bkz6 (name),5691
+5692,Market St & South Van Ness Ave S-N/SI,37.775056,-122.419321,island,7 F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5692
+5694,Market St&Stockton St N-NS/SI,37.785777,-122.405859,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5694
+5695,Market St&Taylor St N-NS/SI,37.782316,-122.410228,island,7 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5695
+5696,Market St&Van Ness Ave N-NS/SI,37.775198,-122.419252,island,7 F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),5696
+5705,Masonic Ave&Fulton St SW-FS/SI,37.775577,-122.446553,island,43,DataSF i28k-bkz6 (name),5705
+5710,Masonic Ave&Geary Blvd SW-FS/SI,37.782144,-122.447573,island,43,DataSF i28k-bkz6 (name),5710
+5718,Masonic Ave&Turk St NE-FS/SI,37.778771,-122.447000,island,43,DataSF i28k-bkz6 (name),5718
+5779,Ocean Ave&Aptos Ave E-NS/SI,37.728285,-122.467561,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5779
+5780,Ocean Ave&Aptos Ave W-NS/SI,37.728383,-122.467871,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5780
+5784,City College Pedestrian Bridge N-MB,37.723040,-122.451448,island,K,DataSF i28k-bkz6 (type),5784
+5785,City College Pedestrian Bridge SW,37.722947,-122.450866,island,K,DataSF i28k-bkz6 (type),5785
+5787,Ocean Ave&Dorado Ter NE-NS,37.724957,-122.461059,island,91 K KBUS,DataSF i28k-bkz6 (type),5787
+5788,Ocean Ave&Fairfield Way NW-FS/SI,37.726008,-122.464072,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5788
+5793,Ocean Ave&Jules Ave SW-NS/SI,37.724955,-122.461390,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5793
+5794,Ocean Ave&Lee St NE-NS/SI,37.723459,-122.453999,island,29 91 K KBUS,DataSF i28k-bkz6 (type+name),5794
+5797,Ocean Ave&Miramar Ave NE-NS/SI,37.724387,-122.458077,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5797
+5798,Ocean Ave&Miramar Ave SW-NS/SI,37.724262,-122.458306,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5798
+5806,Ocean Ave&San Leandro Way E-NS/SI,37.729989,-122.469097,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5806
+5807,Ocean Ave&San Leandro Way W-NS/SI,37.729945,-122.469475,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5807
+5808,Ocean Ave&Victoria St SW-NS/SI,37.726029,-122.464337,island,91 K KBUS,DataSF i28k-bkz6 (type+name),5808
+5810,O'Farrell St&Grant Ave S-MB/BB,37.786642,-122.405629,bulb,38 38R,DataSF i28k-bkz6 (type+name),5810
+5818,O'Farrell St&Van Ness Ave SW-NS/BZ,37.784657,-122.421415,bulb,38 38R,DataSF i28k-bkz6 (type),5818
+5926,City College Terminal NW-FS/SI,37.723718,-122.452590,island,8 8BX 49,DataSF i28k-bkz6 (name),5926
+5996,Polk St&Pine St SW-FS/BB,37.789359,-122.420530,bulb,19,DataSF i28k-bkz6 (type+name),5996
+6000,Polk St&Sacramento St W-MB/BB,37.791929,-122.421057,bulb,19,DataSF i28k-bkz6 (type+name),6000
+6002,Polk St&Sutter St SW-FS/BB,37.787663,-122.420210,bulb,19,DataSF i28k-bkz6 (type+name),6002
+6007,Polk St&Washington St W-MB/BB,37.793695,-122.421411,bulb,19 27,DataSF i28k-bkz6 (type+name),6007
+6019,Post St&Kearny St S-MB/BB,37.788960,-122.402739,bulb,2,DataSF i28k-bkz6 (type+name),6019
+6072,Powell St&Post St SE-NS/SI,37.788195,-122.408299,island,PH PM,DataSF i28k-bkz6 (name),6072
+6119,SF General Hospital E-MB/BB,37.755413,-122.406472,bulb,9 9R 33 90,DataSF i28k-bkz6 (name),6119
+6125,Post St&Grant Ave S-MB/BB,37.788550,-122.405990,bulb,2,DataSF i28k-bkz6 (type+name),6125
+6262,San Jose Ave&Geneva Ave SW-FS/SI,37.720096,-122.447196,island,M,DataSF i28k-bkz6 (type+name),6262
+6266,San Jose Ave&Lakeview Ave S-NS/SI,37.716083,-122.450435,island,M,DataSF i28k-bkz6 (name),6266
+6269,San Jose Ave&Niagara Ave S-NS/SI,37.719421,-122.447654,island,M,DataSF i28k-bkz6 (name),6269
+6274,San Jose Ave&Ocean Ave NW-NS/SI,37.723085,-122.444699,island,J,DataSF i28k-bkz6 (type+name),6274
+6275,San Jose Ave&Ocean Ave SE-NS/SI,37.722862,-122.444790,island,J,DataSF i28k-bkz6 (type+name),6275
+6277,San Jose Ave&Randall St S-NS/SI,37.739741,-122.424157,island,J,DataSF i28k-bkz6 (type+name),6277
+6280,San Jose Ave&Randall St W-FS/SI,37.739385,-122.424320,island,J,DataSF i28k-bkz6 (type+name),6280
+6284,San Jose Ave&Santa Rosa Ave E-FS/SI,37.728991,-122.439922,island,J,DataSF i28k-bkz6 (name),6284
+6285,San Jose Ave&Santa Rosa Ave N-NS/SI,37.728996,-122.440016,island,J,DataSF i28k-bkz6 (type+name),6285
+6287,San Jose Ave&Santa Ynez Ave N-NS/SI,37.725877,-122.442359,island,J,DataSF i28k-bkz6 (type+name),6287
+6288,San Jose Ave&Santa Ynez Ave S-NS/SI,37.725681,-122.442442,island,J,DataSF i28k-bkz6 (type+name),6288
+6347,San Jose Ave&Geneva Ave-FS/SI,37.720524,-122.446657,island,,DataSF i28k-bkz6 (type+name),6347
+6355,San Bruno Ave&Bacon St NE-FS/BZ,37.727970,-122.403670,bulb,8 8AX 9 9R 90,SFMTA project document,https://www.sfmta.com/node/917
+6357,San Bruno Ave&Bacon St W-FS/BZ,37.727540,-122.403680,bulb,8 8AX 9 9R 90,SFMTA project document,https://www.sfmta.com/node/917
+6364,San Bruno Ave&Silver Ave E-NS/BZ,37.732020,-122.405350,bulb,8 8AX 9 9R 90,SFMTA project document,https://www.sfmta.com/node/917
+6367,San Bruno Ave&Thornton Ave E-NS/BZ,37.730260,-122.404620,bulb,8 8AX 9 90,SFMTA project document,https://www.sfmta.com/node/917
+6475,Spear &Market St S-FS/BB,37.793400,-122.395280,bulb,2 9 9R 12 KBUS,DataSF i28k-bkz6 (type+name),6475
+6503,Saint Francis Circle NW-NS/SI,37.734807,-122.471618,island,91 K KBUS M,DataSF i28k-bkz6 (type+name),6503
+6511,Stockton St&Clay St E-MB/BB,37.793810,-122.407790,bulb,30 45 91,DataSF i28k-bkz6 (type+name),6511
+6516,Stockton St&Geary St NW-NS/SI,37.787704,-122.406729,island,8 8AX 8BX 15 30 45 91 TBUS,DataSF i28k-bkz6 (type+name),6516
+6520,Stockton St&Pacific Ave E-MB/BB,37.796306,-122.408295,bulb,30 45 91,DataSF i28k-bkz6 (type+name),6520
+6521,Stockton St&Pacific Ave W-MB/BB,37.797160,-122.408620,bulb,8 8AX 8BX 30 45 91,DataSF i28k-bkz6 (type+name),6521
+6522,Stockton St&Sacramento St W-MB/BB,37.793480,-122.407880,bulb,8 8AX 8BX 30 45 91,DataSF i28k-bkz6 (type+name),6522
+6523,Stockton St&Sutter St NE-FS/BB,37.790130,-122.407050,bulb,30 45 91 TBUS,DataSF i28k-bkz6 (type+name),6523
+6524,Stockton St&Sutter St NW-NS/BB,37.789970,-122.407160,bulb,8 8AX 8BX 30 45 91,DataSF i28k-bkz6 (type+name),6524
+6526,Stockton St&Washington St MB W-BB,37.794707,-122.408118,bulb,8 8AX 8BX 30 45 91 TBUS,DataSF i28k-bkz6 (type+name),6526
+6615,Taraval St&17th Ave SE-FS/SI,37.743131,-122.473306,island,L LOWL,DataSF i28k-bkz6 (name),6615
+6616,Taraval St&19th Ave NE-NS/SI,37.743110,-122.475444,island,L LOWL,DataSF i28k-bkz6 (name),6616
+6617,Taraval St&19th Ave SW-NS/SI,37.742971,-122.475821,island,L LOWL,DataSF i28k-bkz6 (name),6617
+6619,Taraval St&22nd Ave SE-FS/SI,37.742890,-122.478426,island,L LOWL,DataSF i28k-bkz6 (type+name),6619
+6620,Taraval St&23rd Ave NW-FS/SI,37.742872,-122.480450,island,L LOWL,DataSF i28k-bkz6 (type+name),6620
+6622,Taraval St&26th Ave NE-NS/SI,37.742777,-122.483083,island,L LOWL,DataSF i28k-bkz6 (name),6622
+6623,Taraval St&26th Ave SW-NS/SI,37.742683,-122.483385,island,L LOWL,DataSF i28k-bkz6 (name),6623
+6626,Taraval St&30th Ave NE-NS/SI,37.742588,-122.487337,island,L LOWL,DataSF i28k-bkz6 (name),6626
+6627,Taraval St&30th Ave SW-NS/SI,37.742494,-122.487681,island,L LOWL,DataSF i28k-bkz6 (name),6627
+6628,Taraval St&32nd Ave NE-NS/SI,37.742491,-122.489505,island,L LOWL,DataSF i28k-bkz6 (name),6628
+6629,Taraval St&32nd Ave SW-NS/SI,37.742402,-122.489801,island,L LOWL,DataSF i28k-bkz6 (name),6629
+6632,Taraval St&40th Ave NE-NS/SI,37.742124,-122.498055,island,L LOWL,DataSF i28k-bkz6 (name),6632
+6633,Taraval St&40th Ave SW-NS/SI,37.741990,-122.498316,island,L LOWL,DataSF i28k-bkz6 (name),6633
+6634,Taraval St&42nd Ave NE-NS/SI,37.742021,-122.500202,island,L LOWL,DataSF i28k-bkz6 (name),6634
+6635,Taraval St&42nd Ave SW-NS/SI,37.741900,-122.500461,island,L LOWL,DataSF i28k-bkz6 (name),6635
+6636,Taraval St&44th Ave NE-NS/SI,37.741924,-122.502346,island,L LOWL,DataSF i28k-bkz6 (name),6636
+6637,Taraval St&44th Ave SW-NS/SI,37.741804,-122.502606,island,L LOWL,DataSF i28k-bkz6 (name),6637
+6638,Taraval St&46th Ave NE-NS/SI,37.741823,-122.504490,island,L LOWL,DataSF i28k-bkz6 (name),6638
+6640,Taraval St&Sunset Blvd NE-NS/SI,37.742287,-122.494361,island,L LOWL,DataSF i28k-bkz6 (type+name),6640
+6641,Taraval St&Sunset Blvd SW-NS/SI,37.742188,-122.494510,island,L LOWL,DataSF i28k-bkz6 (type+name),6641
+6695,Townsend St&4th St SW-NS/BB,37.776582,-122.395491,bulb,45 NBUS NOWL,DataSF i28k-bkz6 (name),6695
+6898,West Portal Ave&14th Ave S-NS/SI,37.737859,-122.469042,island,91 K KBUS M,DataSF i28k-bkz6 (type+name),6898
+6999,7th St&Bryant St N-FS/BB,37.774587,-122.405005,bulb,19,DataSF i28k-bkz6 (name),6999
+7024,Folsom St&2ND St E-NS/BI,37.785461,-122.396780,island,12,DataSF i28k-bkz6 (type+name),7024
+7036,Ocean Ave&Geneva Ave SW-NS/SI,37.723031,-122.452453,island,29 91 KBUS,DataSF i28k-bkz6 (type+name),7036
+7065,19th Ave&Holloway Ave NE-FS/SI,37.721342,-122.475176,island,M,DataSF i28k-bkz6 (type+name),7065
+7073,Church St&Market St SE-NS/SI,37.767509,-122.428927,island,22 J,DataSF i28k-bkz6 (type+name),7073
+7109,Saint Francis Circle NE-FS/SI,37.734825,-122.471446,island,K M,DataSF i28k-bkz6 (name),7109
+7113,Ocean Ave&Junipero Serra Blvd NE-NS,37.731628,-122.471707,island,K,DataSF i28k-bkz6 (type),7113
+7114,Junipero Serra Blvd&Ocean Ave NW-NS/SI,37.731271,-122.471818,island,K,DataSF i28k-bkz6 (type+name),7114
+7123,Market St&Sanchez St-NS/SI,37.765632,-122.431216,island,F,DataSF i28k-bkz6 (type+name),7123
+7125,West Portal Ave&14th Ave N-NS/SI,37.738064,-122.468984,island,91 K KBUS M,DataSF i28k-bkz6 (type+name),7125
+7142,California St&Van Ness Ave NE-FS/SI,37.790412,-122.422238,island,CA,DataSF i28k-bkz6 (name),7142
+7145,The Embarcadero&Brannan St S-NS/SI,37.784627,-122.387977,island,N,DataSF i28k-bkz6 (name),7145
+7166,4th Street & King Street SE-NS/SI,37.776278,-122.393864,island,T,DataSF i28k-bkz6 (type+name),7166
+7252,Sunset Tunnel East Portal NE-NS/SI,37.769357,-122.433557,island,N,DataSF i28k-bkz6 (name),7252
+7264,Market St&1st St S-NS/SI,37.790940,-122.399195,island,2 9 9R F FBUS KBUS LOWL NBUS NOWL,DataSF i28k-bkz6 (type+name),7264
+7301,O'Farrell St&Taylor St S-MB/BB,37.785850,-122.411980,bulb,38 38R,DataSF i28k-bkz6 (name),7301
+7312,Folsom St&24TH St SW-FS/BB,37.752444,-122.414128,bulb,12 67,DataSF i28k-bkz6 (name),7312
+7318,Sunset Tunnel East Portal SE-FS/SI,37.769285,-122.433511,island,N,DataSF i28k-bkz6 (name),7318
+7342,3rd St&Paul Ave SW-FS/SI,37.722199,-122.395782,island,T,DataSF i28k-bkz6 (type+name),7342
+7343,3rd St&Carroll Ave NE-FS/SI,37.725491,-122.394222,island,T,DataSF i28k-bkz6 (type+name),7343
+7344,3rd St&Carrol Ave SW-FS/SI,37.725241,-122.394394,island,T,DataSF i28k-bkz6 (type+name),7344
+7345,3rd St&Van Dyke Ave NE-FS/SI,37.729291,-122.392604,island,T,DataSF i28k-bkz6 (type+name),7345
+7346,3rd St&Williams Ave SW-FS/SI,37.729211,-122.392684,island,T,DataSF i28k-bkz6 (type+name),7346
+7347,3rd St&Gilman Ave NE-FS/SI,37.722449,-122.395610,island,T,DataSF i28k-bkz6 (type+name),7347
+7352,3rd St&Evans Ave NE-FS/SI,37.742726,-122.387920,island,T,DataSF i28k-bkz6 (type+name),7352
+7353,3rd St&Marin St SE-NS/SI,37.748999,-122.387445,island,T,DataSF i28k-bkz6 (type+name),7353
+7354,3rd St&23rd St NE-FS/SI,37.755414,-122.388001,island,T,DataSF i28k-bkz6 (type+name),7354
+7355,3rd St&20th St NE-FS/SI,37.760518,-122.388558,island,T,DataSF i28k-bkz6 (type+name),7355
+7356,UCSF Medical Center (Mariposa) OB NE-FS/SI,37.764391,-122.388853,island,T,DataSF i28k-bkz6 (type+name),7356
+7357,UCSF / Chase Center (16th Street) SE-NS/SI,37.768504,-122.389182,island,T,DataSF i28k-bkz6 (type+name),7357
+7358,3rd St&Mission Rock St NE-FS,37.772984,-122.389683,island,T,DataSF i28k-bkz6 (type),7358
+7359,3rd St&Mission Rock St SW-FS,37.772832,-122.389717,island,T,DataSF i28k-bkz6 (type),7359
+7360,UCSF / Chase Center (16th Street) SW-FS/SI,37.768237,-122.389366,island,T,DataSF i28k-bkz6 (type+name),7360
+7361,UCSF Medical Center (Mariposa) IB,37.764239,-122.388865,island,T,DataSF i28k-bkz6 (type),7361
+7362,3rd St&20th St SW-FS/SI,37.760367,-122.388593,island,T,DataSF i28k-bkz6 (type+name),7362
+7363,3rd St&23rd St SW-FS/SI,37.755263,-122.388047,island,T,DataSF i28k-bkz6 (type+name),7363
+7364,3rd St&Marin St NW-NS/SI,37.749097,-122.387525,island,T,DataSF i28k-bkz6 (type+name),7364
+7365,3rd St&Evans Ave SW-FS/SI,37.742727,-122.388034,island,T,DataSF i28k-bkz6 (type+name),7365
+7394,3rd St&Le Conte Ave S-FS/SI,37.718640,-122.397697,island,T,DataSF i28k-bkz6 (name),7394
+7395,Bayshore Blvd&Arleta Ave/Blanken Ave N-NS/SI,37.712253,-122.402316,island,T,DataSF i28k-bkz6 (name),7395
+7397,4th Street & King Street S-FS/SI,37.776135,-122.393829,island,T,DataSF i28k-bkz6 (name),7397
+7399,Bayshore Blvd&Arleta Ave/Blanken Ave N-FS/SI,37.712226,-122.402339,island,T,DataSF i28k-bkz6 (name),7399
+7400,3rd St&Le Conte Ave S-NS/SI,37.718809,-122.397468,island,T,DataSF i28k-bkz6 (name),7400
+7401,3rd St&Revere/Shafter S-NS/SI,37.732262,-122.391502,island,T,DataSF i28k-bkz6 (name),7401
+7402,3rd St&Oakdale/Palou N-FS/SI,37.734358,-122.390836,island,T,DataSF i28k-bkz6 (name),7402
+7449,19th Ave& Winston Dr NE-FS/SI,37.727195,-122.474846,island,M,DataSF i28k-bkz6 (name),7449
+7551,Cesar Chavez St&Mission St SE-FS/BB,37.748100,-122.418082,bulb,12 27,DataSF i28k-bkz6 (name),7551
+7592,Cesar Chavez St&Valencia St SE-FS/BB,37.748056,-122.420064,bulb,27 36,DataSF i28k-bkz6 (name),7592
+7622,5th St&Brannan St S-MB/SI,37.776244,-122.398524,island,45,DataSF i28k-bkz6 (name),7622
+7732,Folsom St&20TH ST SW-FS-BB,37.758762,-122.414789,bulb,12,DataSF i28k-bkz6 (name),7732
+7733,Folsom St&20TH St NE-FS/BB,37.758985,-122.414617,bulb,12,DataSF i28k-bkz6 (name),7733
+7750,Cesar Chavez St&Florida St NE-NS/BB,37.748374,-122.409558,bulb,27,DataSF i28k-bkz6 (name),7750
+7761,16th St& Rhode Island St SW-NS/SI,37.765994,-122.402856,bulb,22 55,DataSF i28k-bkz6 (name); SFMTA project document,7761; https://www.sfmta.com/projects/project-reports/218
+7762,16th St& Wisconsin St SW-NS/SI,37.766198,-122.399911,bulb,22 55,DataSF i28k-bkz6 (name); SFMTA project document,7762; https://www.sfmta.com/projects/project-reports/218
+7763,16th St& Missouri St SE-FS/BZ,37.766384,-122.397023,bulb,22,SFMTA project document,https://www.sfmta.com/projects/project-reports/218
+7769,16th Street & Wisconsin St NW-FS/BZ,37.766287,-122.399842,bulb,22 55,SFMTA project document,https://www.sfmta.com/projects/project-reports/218
+7770,16th Street & Rhode Island St NW-FS/BZ,37.766110,-122.402822,bulb,22 55,SFMTA project document,https://www.sfmta.com/projects/project-reports/218
+7842,Daly City Bart Station W-FS/SI,37.706273,-122.468632,island,14R 58,DataSF i28k-bkz6 (name),7842
+7854,Geary Blvd&Arguello Blvd NW-FS/BB,37.781313,-122.458955,bulb,38 38R,DataSF i28k-bkz6 (name),7854
+7859,Duboce Ave&Church St ADA Only NE-NS/SI,37.769463,-122.429122,island,,DataSF i28k-bkz6 (name),7859
+7862,Broadway&Sansome St SW-NS/BB,37.798392,-122.402343,bulb,12,DataSF i28k-bkz6 (name),7862
+7879,4th St&Brannan NE-FS/SI,37.778403,-122.396590,island,T,DataSF i28k-bkz6 (name),7879
+7886,Bayshore Blvd&Flower St NE-NS/SI,37.742377,-122.405609,island,9 9R 23 90,DataSF i28k-bkz6 (name),7886
+7887,201 Bayshore Blvd E-MB/BB,37.744616,-122.404187,bulb,9 90,DataSF i28k-bkz6 (name),7887
+7888,Bayshore Blvd&Oakdale Ave SW-FS/BB,37.743046,-122.405402,bulb,9 9R 90,DataSF i28k-bkz6 (name),7888
+7918,Transit Center Bay 27 S-MB/SI,37.789920,-122.396150,island,25,DataSF i28k-bkz6 (name),7918
+7945,Mission & Fremont S-NS/SI,37.790261,-122.396788,island,14 14R,DataSF i28k-bkz6 (name),7945
+7948,Transit Center Bay 29 S-MB/SI,37.789990,-122.396050,island,25,DataSF i28k-bkz6 (name),7948
+7960,Townsend St&7th St S-MB/SI,37.771142,-122.402383,island,19,DataSF i28k-bkz6 (name),7960
+7993,Essex St&Folsom St E-FS/BI,37.786228,-122.395564,island,12,DataSF i28k-bkz6 (name),7993
+7995,Spear St&Folsom St SW-NS/BB,37.790187,-122.391217,bulb,12,DataSF i28k-bkz6 (name),7995
+7996,Irving St&8th Ave SW-NS/BB,37.764038,-122.465428,bulb,N NBUS NOWL,DataSF i28k-bkz6 (name),7996
+8002,Folsom St&Beale St N-MB/BI,37.788404,-122.393259,island,12,DataSF i28k-bkz6 (name),8002
+8024,Mason St - Tunnel Top Park NS NE/BB,37.804289,-122.454166,bulb,30,DataSF i28k-bkz6 (name),8024
+8059,Church St&Market St SW-FS/SI,37.767286,-122.429053,island,22 J,DataSF i28k-bkz6 (name),8059
+8088,South Van Ness Ave&Market St NS-S/SI,37.775100,-122.419240,island,49 90,DataSF i28k-bkz6 (name),8088
+8089,Van Ness Ave&McAllister St NS-S/SI,37.780035,-122.420224,island,49 90,DataSF i28k-bkz6 (name),8089
+8090,Van Ness Ave&Eddy St NS-S/SI,37.782854,-122.420785,island,49 90,DataSF i28k-bkz6 (name),8090
+8091,Van Ness Ave&Geary Blvd NS-S/SI,37.785647,-122.421368,island,49 90,DataSF i28k-bkz6 (name),8091
+8092,Van Ness Ave&Bush St NS-S/SI,37.788449,-122.421918,island,49 90,DataSF i28k-bkz6 (name),8092
+8093,Van Ness Ave& Clay St NS-S/SI,37.792134,-122.422661,island,49 90,DataSF i28k-bkz6 (name),8093
+8094,Van Ness Ave&Pacific St NS-S/SI,37.794784,-122.423199,island,49 90,DataSF i28k-bkz6 (name),8094
+8095,Van Ness Ave&Vallejo St FS-N/SI,37.796801,-122.423600,island,49 90,DataSF i28k-bkz6 (name),8095
+8096,Van Ness Ave&Union St NS-S/SI,37.798514,-122.423955,island,49 90,DataSF i28k-bkz6 (name),8096
+8097,Van Ness Ave&Union St NS-N/SI,37.798576,-122.424035,island,49 90,DataSF i28k-bkz6 (name),8097
+8098,Van Ness Ave&Vallejo St NS-N/SI,37.796720,-122.423657,island,49 90,DataSF i28k-bkz6 (name),8098
+8099,Van Ness Ave&Jackson St NS-N/SI,37.793963,-122.423096,island,49 90,DataSF i28k-bkz6 (name),8099
+8100,Van Ness Ave&Sacramento St NS-N/SI,37.791313,-122.422570,island,49 90,DataSF i28k-bkz6 (name),8100
+8101,Van Ness Ave&Sutter St NS-N/SI,37.787574,-122.421780,island,49 90,DataSF i28k-bkz6 (name),8101
+8102,Van Ness Ave&O'Farrell St NS-N/SI,37.784782,-122.421208,island,49 90,DataSF i28k-bkz6 (name),8102
+8103,Van Ness Ave&Eddy St NS-N/SI,37.782917,-122.420865,island,49 90,DataSF i28k-bkz6 (name),8103
+8104,Van Ness Ave&McAllister St NS-N/SI,37.780097,-122.420304,island,49 90,DataSF i28k-bkz6 (name),8104
+8105,Van Ness Ave&Market St NS-N/SI,37.775172,-122.419309,island,49 90,DataSF i28k-bkz6 (name),8105
+8121,Seven Seas St&Bruton St N-FS/SI,37.819770,-122.371338,island,25,DataSF i28k-bkz6 (type+name),8121
+8122,Seven Seas St&Bruton St S-FS/SI,37.819101,-122.371090,island,25,DataSF i28k-bkz6 (name),8122
+8149,Seven Seas Ave & Johnson ST W-FS/BB,37.821962,-122.372982,bulb,25,DataSF i28k-bkz6 (type+name),8149
+8150,Crissy Field Terminal S/BB,37.802755,-122.461705,bulb,30,DataSF i28k-bkz6 (name),8150

@@ -1,0 +1,91 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2025-12-18",
+ "id": "g91-51412",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=51412",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "PRESIDENT’S REPORT"
+  },
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGER’S REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "5a",
+   "title": "MINUTES - Discussion and possible action to approve the minutes of the November 20, 2025 regular Commission meeting"
+  },
+  {
+   "no": "5b",
+   "title": "SAN FRANCISCO ZOOLOGICAL SOCIETY ANIMAL TRANSACTIONS"
+  },
+  {
+   "no": "6",
+   "title": "SAN FRANCISCO ZOO - Presentation and discussion only to update the Commission on operational and management issues at the San Francisco"
+  },
+  {
+   "no": "7",
+   "title": "GENERAL MANAGER SEARCH UPDATE"
+  },
+  {
+   "no": "8",
+   "title": "TURF STANDARDS - UPDATE Presentation and discussion to update the Recreation and Park Commission on RPD’s synthetic turf management program"
+  },
+  {
+   "no": "9",
+   "title": "FY24-25 PARK EVALUATIONS REPORT"
+  },
+  {
+   "no": "10",
+   "title": "TREASURE ISLAND / YERBA BUENA ISLAND PARKS - TIDA FY27-FY31 MEMORANDUM OF AGREEMENT"
+  },
+  {
+   "no": "11",
+   "title": "RECREATION AND PARK COMMISSION BYLAWS - AMENDMENT"
+  },
+  {
+   "no": "12",
+   "title": "ELECTION OF OFFICERS"
+  },
+  {
+   "no": "13",
+   "title": "GENERAL PUBLIC COMMENT - CONTINUED FROM ITEM 4 IF NECESSARY"
+  },
+  {
+   "no": "14",
+   "title": "COMMISSIONERS’ MATTERS"
+  },
+  {
+   "no": "15",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "16",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "17",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

@@ -1,0 +1,116 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-06-23",
+ "id": "g22-36004",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36004",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of June 9, 2020"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5c",
+   "title": "Water Enterprise Environmental Stewardship Implementation Report"
+  },
+  {
+   "no": "5d",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Update on SFPUC Operations During COVID-19 Emergency"
+  },
+  {
+   "no": "6b",
+   "title": "Quarterly Audit and Performance Review Report"
+  },
+  {
+   "no": "7",
+   "title": "Bay Area Water Supply Conservation Agency Update"
+  },
+  {
+   "no": "8",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "9",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "9a",
+   "title": "Approve execution of an Attestation of Veracity for the SFPUC’s CleanPowerSF Program 2019 Power Source Disclosure (PSD) Report"
+  },
+  {
+   "no": "9b",
+   "title": "Approve execution of an Attestation of Veracity for the SFPUC’s Hetch Hetchy Power 2019 Power Source Disclosure (PSD) Report"
+  },
+  {
+   "no": "9c",
+   "title": "Approve the plans and specifications, and award Oceanside Water Pollution Control Plant Egg-Shaped Digester Interior Liner Rehabilitation in the amount of $2,461,000"
+  },
+  {
+   "no": "10",
+   "title": "Balboa Reservoir - adopt a finding declaring as surplus to its utility needs, property owned by the City and County of SF, under the jurisdiction of the SFPUC"
+  },
+  {
+   "no": "11",
+   "title": "Approve Amendment within the Alameda Creek Watershed, a sub-project of the Calaveras Dam Replacement Project, with URS Corporation"
+  },
+  {
+   "no": "12",
+   "title": "Confirm and clarify existing Commission policy that CleanPowerSF will not procure specified sources of nuclear energy as part of its energy portfolio to serve its retail customers"
+  },
+  {
+   "no": "13",
+   "title": "Approve the terms and conditions of, and seek approval by the Board of Supervisors and Mayor to execute, the First Amendment to the deed between the Koret Foundation and City"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and possible action to adopt a resolution directing SFPUC staff to work with the Modesto Irrigation District and Turlock Irrigation District"
+  },
+  {
+   "no": "15",
+   "title": "Approve the Water Supply Assessment for the proposed 900 7th Street Project"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

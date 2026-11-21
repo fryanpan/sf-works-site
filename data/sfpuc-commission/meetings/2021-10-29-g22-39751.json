@@ -1,0 +1,55 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-10-29",
+ "id": "g22-39751",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39751",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/October%2029%20Special%20Meeting%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Climate Change and the Regional Water System"
+  },
+  {
+   "no": "3a",
+   "title": "San Francisco Public Utilities Commission Staff Presentation",
+   "decision": "continued",
+   "text": "San Francisco Public Utilities Commission Staff Presentation Ellen Levin, Deputy Manager, Water Enterprise, began with a review of the agenda and introduced the panel members: Alexis Dufour, Water Resources Engineer, Hydrology and Water Systems Group, David Behar, SFPUC Climate Program Director, and Dr. Casey Brown, University of Massachusetts, Amherst. She provided a timeline of the history of the Climate Change Analysis, 2005 thorough 2020; and the WSIP Climate Change Analysis (the change in snowline that would result from the projected rise in temperature of 3 degrees Celsius between 2020 and 2050). Deputy Manager Levin reviewed sensitivity of the Upper Tuolumne River Flow to Climate Change scenarios, indicating (1) it was a joint study with the Turlock Irrigation District; (2) up to +5 degrees Celsius and -15% perception changes were studied in 18 climate scenarios; (3) climate change effects will be most serous in dry years; (4) snow accumulation is reduced and snow melts earlier in the spring; (5) the distribution of runoff will shift, with winter and early spring runoff increasing and late spring and summer runoff decreasing; and (6) while temperature increases alone have an effect, the most significant effects are seen when temperature increases and precipitation decreases"
+  },
+  {
+   "no": "3b",
+   "title": "Bay Area Water Supply and Conservation Agency Questions/Comments",
+   "decision": "continued",
+   "text": "Bay Area Water Supply and Conservation Agency (BAWSCA)Questions/Comments Nicole Sandkulla, BAWSCA CEO, thanked the Commission for the workshop and the presenters for the information. She stated that BAWSCA supports the work to evaluate long-term impacts of climate change on the Regional Water System and supports the investment in the Long-Term Vulnerability Assessment. She stated that moving forward it is important that the information be used to inform planning to ensure water system reliability and for alternative studies. She expressed hope that the information will be used on the Design Drought and for evaluation of Alternative Water Supplies. Mr. Dufour responded to CEO Sandkulla’s question as to whether vulnerability factors in the assessment are connected"
+  },
+  {
+   "no": "3c",
+   "title": "Non-Governmental Organization Questions/Comments",
+   "decision": "continued",
+   "text": "Non-Governmental Organization Questions/Comments Peter Drekmeier, Policy Director, Tuolumne River Trust, asked (1) if the model results are based on the Design Drought. Mr. Dufour stated they have not provided the results of the Design Drought, but rather results of plausible droughts; and (2) where the baseline demand figure of 227 came from. Mr. Dufour and Ms. Levine provided response. Brief discussion ensued. Dr. Brown stated that the study is not making conclusions as to what is happening to mean participation and that the range is broad, and that it can increase or decrease. Mr. Drekmeier discussed slide 39 (Upcountry Watersheds) and asked if there was an understanding of the Raker Act. Ms. Levin indicated everyone is aware of the Raker Act and the Fourth Agreement. Dr. Brown confirmed his knowledge of the Raker Act and stated that the final report will provide more in-depth information and discussed the charts in question. Ms. Levin stated that the full study needs to be reviewed when available as there is variability not seen in the slides. VP Ajami"
+  },
+  {
+   "no": "4",
+   "title": "Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

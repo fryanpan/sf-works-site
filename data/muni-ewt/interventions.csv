@@ -1,0 +1,193 @@
+line,date,type,description,source_url,date_precision
+30,2019-02-19,transit_lane,Approved: 3rd St Transit and Safety Project (King to Mission) relocated transit-only lane and boarding islands,https://www.sfmta.com/projects/third-street-transit-and-safety-project,day
+45,2019-02-19,transit_lane,Approved: 3rd St Transit and Safety Project (King to Mission) relocated transit-only lane and boarding islands,https://www.sfmta.com/projects/third-street-transit-and-safety-project,day
+27,2019-04-16,quick_build_package,Approved: 27 Bryant Transit Reliability Project (5th/Market to Jackson/Van Ness) (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/18953,day
+27,2019-08,quick_build_package,27 Bryant Transit Reliability Project implementation began (Phase I service changes and pedestrian safety),https://www.sfmta.com/projects/27-bryant-transit-reliability-project,month
+14,2019-09-17,quick_build_package,Approved: Mission/Geneva Safety Project (Outer Mission),https://www.sfmta.com/projects/mission-geneva-safety-project,day
+30,2019-09-21,boarding_islands_bulbs,3rd St Transit and Safety Phase I construction began (relocated transit lane and boarding islands),https://www.sfmta.com/projects/third-street-transit-and-safety-project,day
+45,2019-09-21,boarding_islands_bulbs,3rd St Transit and Safety Phase I construction began (relocated transit lane and boarding islands),https://www.sfmta.com/projects/third-street-transit-and-safety-project,day
+30,2019-10-01,transit_lane,Approved: extend 4th St transit-only lane from Howard to Folsom (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/20435,day
+45,2019-10-01,transit_lane,Approved: extend 4th St transit-only lane from Howard to Folsom (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/20435,day
+10,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+12,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+14,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+19,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+2,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+30,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+31,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+38,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+5,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+6,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+7,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+9,2020-01-29,other,Car-free Market St quick-build: private vehicles barred eastbound 10th to Main and westbound Steuart to Van Ness,https://www.sfmta.com/blog/car-free-market-street-starts-january-29,day
+ALL,2020-02-18,stop_consolidation,Approved: tow-away zones and add/remove/modify bus zones on eight Muni Forward corridors and ten Transit Delay Hot Spots (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/21389,day
+30,2020-03-03,transit_lane,Approved: new transit-only lanes on Powell St between Ellis and Geary (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/21478,day
+45,2020-03-03,transit_lane,Approved: new transit-only lanes on Powell St between Ellis and Geary (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/21478,day
+30,2020-03-17,transit_lane,Approved: transit-only lane on Townsend St west of 3rd St (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/21477,day
+45,2020-03-17,transit_lane,Approved: transit-only lane on Townsend St west of 3rd St (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/21477,day
+ALL,2020-03-17,service_cut,COVID: most express routes and E streetcar discontinued; cable cars and F replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+CABLE,2020-03-17,service_cut,COVID: cable car service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+28R,2020-03-30,service_cut,COVID: Rapid route temporarily discontinued,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+38R,2020-03-30,service_cut,COVID: Rapid route temporarily discontinued,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+5R,2020-03-30,service_cut,COVID: Rapid route temporarily discontinued,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+9R,2020-03-30,service_cut,COVID: Rapid route temporarily discontinued,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+ALL,2020-03-30,service_cut,COVID: all Rapid routes except 14R discontinued; all Muni Metro lines replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+J,2020-03-30,rail_closure,COVID: Metro rail service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+K,2020-03-30,rail_closure,COVID: Metro rail service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+L,2020-03-30,rail_closure,COVID: Metro rail service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+M,2020-03-30,rail_closure,COVID: Metro rail service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+N,2020-03-30,rail_closure,COVID: Metro rail service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+T,2020-03-30,rail_closure,COVID: Metro rail service replaced by buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+ALL,2020-04-08,service_cut,COVID: service reduced to temporary Core Service Network of 17 lines,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+12,2020-04-25,service_increase,COVID restoration: route restored (some as shortened routes),https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+28,2020-04-25,service_increase,COVID restoration: route restored (some as shortened routes),https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+5,2020-04-25,service_increase,COVID restoration: route restored (some as shortened routes),https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+M,2020-05-04,service_increase,M returns as partial bus Community Shuttle Balboa Park to West Portal,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+9R,2020-05-16,service_increase,9R San Bruno Rapid reinstated,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+14,2020-06,quick_build_package,Mission/Geneva quick-build implemented (Outer Mission; page says summer 2020),https://www.sfmta.com/projects/mission-geneva-safety-project,quarter
+19,2020-06,transit_lane,TETL: temporary transit lanes began on 7th St Townsend to Mission (page says summer 2020),https://www.sfmta.com/projects/19-polk-7th-and-8th-streets-temporary-emergency-transit-lanes,quarter
+30,2020-06-13,service_increase,COVID restoration: route restored (some as shortened routes),https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+43,2020-06-13,service_increase,COVID restoration: route restored (some as shortened routes),https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+7,2020-06-13,service_increase,COVID restoration: route restored (some as shortened routes),https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+ALL,2020-06-30,transit_lane,Approved: initial Temporary Emergency Transit Lanes (Transportation Code Sec. 602) (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/22206,day
+14,2020-08,transit_lane,TETL: full-time transit lanes on Mission St in SoMa (11th to 1st) implementation began,https://www.sfmta.com/projects/mission-street-soma-temporary-emergency-transit-lanes,month
+ALL,2020-08-22,rail_opening,Subway reopened; Metro restored with temporary J K L routes and subway shuttle,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+ALL,2020-08-25,rail_closure,Subway closed again for repairs; Metro reverted to buses,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+19,2020-10,transit_lane,TETL: transit lanes on 8th St Market to Bryant,https://www.sfmta.com/projects/19-polk-7th-and-8th-streets-temporary-emergency-transit-lanes,month
+38,2020-11,transit_lane,TETL: Geary Blvd (Richmond) emergency transit lanes installation began; completed Feb 2021,https://www.sfmta.com/projects/38-geary-temporary-emergency-transit-lanes,month
+J,2020-12-19,rail_opening,J Church surface rail route restored,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+T,2021-01,transit_lane,TETL: 4th St Bridge transit lanes (Berry to Channel) installed shortly after Jan 2021 approval,https://www.sfmta.com/projects/4th-street-bridge-temporary-emergency-transit-lanes,month
+ALL,2021-01-19,transit_lane,Approved: transit-only lane on Market St and lower speed limit Franklin to Steuart (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/23552,day
+1,2021-01-23,service_increase,Extra 1 California short service California/Presidio to Clay/Drumm,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+14,2021-01-23,service_increase,Extra 14 Mission service and higher frequency,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+22,2021-01-23,route_change,22 eastern end moved via 16th St and 3rd St to Mission Bay; 55 Dogpatch replaces old segment,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+27,2021-01-23,route_change,27 Bryant restored in full on modified route using 7th and 8th St emergency transit lanes,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+30,2021-01-23,route_change,30 Stockton short line Caltrain to Van Ness/North Point,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+33,2021-01-23,service_increase,33 Ashbury/18th St full route restored as trolley coach,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+38,2021-01-23,service_increase,Higher 38 Geary frequency weekdays and weekends,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+43,2021-01-23,route_change,43 Masonic extended to California and Masonic,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+5,2021-01-23,service_increase,Extra 5 Fulton short service 8th Ave to Transit Center,https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+T,2021-01-23,rail_opening,T Third rail Sunnydale to Embarcadero (buses after 8 pm for subway maintenance),https://www.sfmta.com/blog/muni-expands-service-access-equity-neighborhoods-january,day
+43,2021-04,transit_lane,"TETL: lanes on Presidio Ave, Masonic, Woodside, Bosworth plus Masonic left-turn bans",https://www.sfmta.com/projects/43-masonic-and-44-oshaughnessy-temporary-emergency-transit-lanes,month
+44,2021-04,transit_lane,"TETL: lanes on Presidio Ave, Masonic, Woodside, Bosworth plus Masonic left-turn bans",https://www.sfmta.com/projects/43-masonic-and-44-oshaughnessy-temporary-emergency-transit-lanes,month
+ALL,2021-05-15,rail_opening,Subway stations Embarcadero to West Portal reopened,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+K,2021-05-15,rail_opening,N Judah and KT Ingleside-Third rail service restarted,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+N,2021-05-15,rail_opening,N Judah and KT Ingleside-Third rail service restarted,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+T,2021-05-15,rail_opening,N Judah and KT Ingleside-Third rail service restarted,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+1,2021-06,transit_lane,"TETL: temporary transit lanes on California, Clay and Sacramento",https://www.sfmta.com/projects/1-california-temporary-emergency-transit-lanes,month
+14,2021-06-15,transit_lane,Mission St SoMa full-time transit lanes (1st to 11th) made permanent (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/24489,day
+38,2021-07-20,transit_lane,Geary Blvd (Richmond) emergency transit lanes made permanent (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/24594,day
+CABLE,2021-08,service_increase,Cable cars return for free public test rides on all three lines,https://www.sfmta.com/blog/celebrating-148-years-cable-cars-san-francisco,month
+12,2021-08-14,route_change,12 Folsom extended (long) and new 12 short pattern,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+14,2021-08-14,service_increase,Frequency returns to about every 8-10 min,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+28,2021-08-14,service_increase,28 19th Ave full route Daly City BART to Van Ness/North Point restored,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+31,2021-08-14,service_increase,31 Balboa restored on modified route Cabrillo/La Playa to 5th/Market,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+38R,2021-08-14,service_increase,Frequency returns to about every 8-10 min,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+5R,2021-08-14,service_increase,5R Fulton Rapid full route restored weekdays every 10 min,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+9,2021-08-14,service_increase,Frequency returns to about every 8-10 min,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+9R,2021-08-14,service_increase,9R San Bruno Rapid upsized to 60-ft buses every 8-10 min,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+ALL,2021-08-14,service_increase,18 routes restored/expanded; Owl network restored; key bus lines to midnight,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+M,2021-08-14,rail_opening,M Ocean View full rail service Balboa Park to Embarcadero restored,https://www.sfmta.com/blog/what-expect-when-muni-service-expanded-august-14,day
+28,2021-09,transit_lane,Lombard St temporary HOV lanes (Van Ness to Lyon) completed (page says fall 2021),https://www.sfmta.com/projects/park-presidio-lombard-temporary-hov-lanes,quarter
+CABLE,2021-09-04,service_increase,Cable cars return to revenue service,https://www.sfmta.com/blog/celebrating-148-years-cable-cars-san-francisco,day
+T,2021-09-21,transit_lane,4th St (Berry to Channel) full-time transit-only area made permanent; project page says 2021-09-07 (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/24962,day
+38,2021-10-20,quick_build_package,"Geary Rapid Project (Stanyan to Van Ness) ribbon cutting; date from video title, page says completed fall 2021",https://www.sfmta.com/projects/geary-rapid-project,day
+38R,2021-10-20,quick_build_package,"Geary Rapid Project (Stanyan to Van Ness) ribbon cutting; date from video title, page says completed fall 2021",https://www.sfmta.com/projects/geary-rapid-project,day
+27,2021-12-07,route_change,Approved: 27 Bryant modified route made permanent,https://www.sfmta.com/projects/27-bryant-transit-reliability-project,day
+1,2022-01-18,transit_lane,1 California transit lanes made permanent (except Clay Stockton-Grant),https://www.sfmta.com/projects/1-california-temporary-emergency-transit-lanes,day
+19,2022-01-18,transit_lane,7th and 8th St full-time transit lanes made permanent,https://www.sfmta.com/projects/19-polk-7th-and-8th-streets-temporary-emergency-transit-lanes,day
+27,2022-01-18,transit_lane,7th and 8th St full-time transit lanes made permanent,https://www.sfmta.com/projects/19-polk-7th-and-8th-streets-temporary-emergency-transit-lanes,day
+43,2022-01-18,transit_lane,Masonic/Presidio/Bosworth emergency lanes made permanent (Woodside lane not),https://www.sfmta.com/projects/43-masonic-and-44-oshaughnessy-temporary-emergency-transit-lanes,day
+44,2022-01-18,transit_lane,Masonic/Presidio/Bosworth emergency lanes made permanent (Woodside lane not),https://www.sfmta.com/projects/43-masonic-and-44-oshaughnessy-temporary-emergency-transit-lanes,day
+ALL,2022-02-19,service_increase,All Metro rail lines extended to midnight daily,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+J,2022-02-19,route_change,J Church extended from Balboa Park back to Embarcadero,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+28,2022-03,transit_lane,Park Presidio temporary HOV lanes (Lincoln to Lake) completed (page says spring 2022),https://www.sfmta.com/projects/park-presidio-lombard-temporary-hov-lanes,quarter
+49,2022-04-01,transit_lane,Van Ness BRT opens: center-running transit lanes Mission to Lombard,https://www.sfmta.com/blog/brt-service-van-ness-begin-tomorrow,day
+30,2022-04-16,service_increase,30 Stockton short route added alongside the 30,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+8,2022-04-16,service_increase,Weekday 8AX and 8BX Bayshore Express returned,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+9R,2022-04-16,service_cut,9R frequency from every 10 to every 12 min,https://www.sfmta.com/project-updates/covid-19-related-service-changes,day
+14,2022-05,red_paint,Red colorization of Mission St SoMa lanes (11th to 1st) began mid-May,https://sfmta.com/notices/red-colorization-transit-lanes-mission-street-soma,month
+2,2022-07-09,service_increase,2 Sutter restored (shortened) Presidio/California to Ferry Plaza,https://www.sfmta.com/node/26650,day
+28,2022-07-09,route_change,28 extended to Powell and Beach (Fisherman's Wharf),https://www.sfmta.com/node/26650,day
+29,2022-07-09,service_increase,29 weekday frequency 10 to 9 min,https://www.sfmta.com/node/26650,day
+43,2022-07-09,service_increase,43 full pre-pandemic route restored to Fort Mason,https://www.sfmta.com/node/26650,day
+45,2022-07-09,service_increase,45 weekday frequency 12 to 10 min,https://www.sfmta.com/node/26650,day
+49,2022-07-09,route_change,49 full pre-pandemic route restored ending Van Ness/North Point,https://www.sfmta.com/node/26650,day
+6,2022-07-09,service_increase,6 Haight/Parnassus full pre-pandemic route restored,https://www.sfmta.com/node/26650,day
+L,2022-07-09,route_change,L Taraval Bus shortened to Zoo-West Portal; weekday frequency 10 to 8 min,https://www.sfmta.com/node/26650,day
+28,2022-09-06,transit_lane,Approved: three-year extension of Lombard/Park Presidio HOV pilot,https://www.sfmta.com/projects/park-presidio-lombard-temporary-hov-lanes,day
+T,2022-11-19,rail_opening,Central Subway opens (free weekend service),https://www.sfmta.com/blog/brief-history-t-third-part-2-1980s-2023,day
+28,2023-01-07,service_increase,Service added to reduce crowding,https://www.sfmta.com/travel-updates/january-7-2023-service-changes,day
+38R,2023-01-07,service_increase,Service added to reduce crowding,https://www.sfmta.com/travel-updates/january-7-2023-service-changes,day
+6,2023-01-07,service_increase,6 runs until midnight daily (was 10 pm),https://www.sfmta.com/travel-updates/january-7-2023-service-changes,day
+K,2023-01-07,route_change,K split from T; runs Balboa Park to Embarcadero,https://www.sfmta.com/travel-updates/january-7-2023-service-changes,day
+T,2023-01-07,rail_opening,T Third full service Sunnydale to Chinatown-Rose Pak via Central Subway; leaves King/Embarcadero/Market,https://www.sfmta.com/travel-updates/january-7-2023-service-changes,day
+29,2023-06-06,stop_consolidation,"Approved: 29 Sunset Phase One stop consolidation, bus stop upgrades, TSP (western segment) (Board minutes; read via repo mirror data/sfmta-board)",https://www.sfmta.com/node/28364,day
+1,2023-06-10,service_increase,1 short pattern restored weekdays 7 am-6 pm,https://www.sfmta.com/blog/more-muni-service-changes-coming-june-10,day
+28,2023-06-10,service_increase,28 peak 10 to 9 min and midday 12 to 10 min,https://www.sfmta.com/blog/more-muni-service-changes-coming-june-10,day
+30,2023-06-10,service_increase,30 evening Presidio service seven days,https://www.sfmta.com/blog/more-muni-service-changes-coming-june-10,day
+38R,2023-06-10,service_increase,38R weekday frequency 7 to 6 min,https://www.sfmta.com/blog/more-muni-service-changes-coming-june-10,day
+44,2023-06-10,service_increase,44 weekday frequency 12 to 10 min,https://www.sfmta.com/blog/more-muni-service-changes-coming-june-10,day
+38,2023-08-15,transit_lane,Approved: Geary Blvd Improvement Project (34th Ave to Stanyan) incl. quick-build bus lanes (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/28766,day
+14R,2023-08-19,service_increase,14R earlier morning service from 6 am,https://www.sfmta.com/blog/new-muni-service-changes-start-saturday-august-19,day
+19,2023-08-19,route_change,19 southern terminal moved to Donahue and Innes (Hunters Point Shipyard),https://www.sfmta.com/blog/new-muni-service-changes-start-saturday-august-19,day
+28,2023-08-19,service_cut,28 weekday peak frequency 10 to 12 min all day,https://www.sfmta.com/blog/new-muni-service-changes-start-saturday-august-19,day
+29,2023-08-19,stop_consolidation,29 Sunset Phase One quick-build: 11 stops removed each direction,https://www.sfmta.com/blog/new-muni-service-changes-start-saturday-august-19,day
+31,2023-08-19,route_change,31 extended to 4th and Townsend (Caltrain) weekdays,https://www.sfmta.com/blog/new-muni-service-changes-start-saturday-august-19,day
+28R,2023-08-21,service_increase,28R 19th Ave Rapid returns weekdays 7 am-7 pm every 12 min to Daly City BART,https://www.sfmta.com/blog/new-muni-service-changes-start-saturday-august-19,day
+38,2023-09,transit_lane,Geary Blvd Improvement Project quick-build installed (fall 2023 per page),https://www.sfmta.com/projects/geary-boulevard-improvement-project,quarter
+19,2023-10-03,transit_lane,Approved: full-time transit-only area on Hyde St McAllister to Market (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/28993,day
+27,2023-10-03,transit_lane,Approved: full-time transit-only area on Hyde St McAllister to Market (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/28993,day
+19,2023-10-17,transit_lane,Approved: full-time transit-only area on Hyde St Eddy to McAllister (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/29106,day
+27,2023-10-17,transit_lane,Approved: full-time transit-only area on Hyde St Eddy to McAllister (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/29106,day
+J,2023-10-17,transit_lane,Approved: full-time transit-only areas on San Jose Ave Ocean to Cotter (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/29106,day
+24,2024-01-20,service_increase,Weekday frequency increase plus targeted school or peak trips,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+28,2024-01-20,service_increase,Weekend frequency to 13 min,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+29,2024-01-20,service_increase,Weekday frequency increase plus targeted school or peak trips,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+33,2024-01-20,service_cut,Weekday 15 to 20 min,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+38R,2024-01-20,service_increase,Weekday frequency increase plus targeted school or peak trips,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+44,2024-01-20,service_increase,Weekday frequency increase plus targeted school or peak trips,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+49,2024-01-20,service_increase,Weekday frequency increase plus targeted school or peak trips,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+5,2024-01-20,service_cut,Weekday 10 to 12 min each (combined 4.5 to 6 min),https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+5R,2024-01-20,service_cut,Weekday 10 to 12 min each (combined 4.5 to 6 min),https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+9,2024-01-20,service_cut,Weekday 10 to 12 min,https://www.sfmta.com/travel-updates/muni-service-changes-january-20-2024,day
+M,2024-02-06,transit_lane,Approved: M Ocean View project incl. San Jose Ave transit-only areas (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/29694,day
+K,2024-03-05,quick_build_package,Approved: K Ingleside Rapid Project on Ocean Ave (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/29927,day
+K,2024-07-16,transit_lane,Approved: Muni-only transit lanes on West Portal Ave (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/40203,day
+L,2024-07-16,transit_lane,Approved: Muni-only transit lanes on West Portal Ave (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/40203,day
+M,2024-07-16,transit_lane,Approved: Muni-only transit lanes on West Portal Ave (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/40203,day
+L,2024-09-28,rail_opening,L Taraval trains return after Segment B construction,https://www.sfmta.com/projects/l-taraval-improvement-project,day
+22,2025-01,red_paint,Red transit lanes installed on 16th St (page says early 2025),https://www.sfmta.com/projects/16th-street-improvement-project,quarter
+24,2025-02-01,service_cut,Midday weekday (10 am-1 pm) frequency cut (24: 10 to 12; 38: 8 to 10; 43: 12 to 15),https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+29,2025-02-01,other,Most Sunset Blvd stops moved to the far side of intersections,https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+38,2025-02-01,service_cut,Midday weekday (10 am-1 pm) frequency cut (24: 10 to 12; 38: 8 to 10; 43: 12 to 15),https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+43,2025-02-01,service_cut,Midday weekday (10 am-1 pm) frequency cut (24: 10 to 12; 38: 8 to 10; 43: 12 to 15),https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+5,2025-02-01,stop_consolidation,One inbound downtown stop discontinued,https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+5R,2025-02-01,stop_consolidation,One inbound downtown stop discontinued,https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+K,2025-02-01,service_cut,One-car trains on weekends,https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+M,2025-02-01,service_cut,One-car trains on weekends,https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+30,2025-03-15,route_change,30 Stockton short shortened to end at Stockton and Sutter,https://www.sfmta.com/travel-updates/muni-service-changes-february-1-2025,day
+31,2025-06-21,route_change,Budget cut: daily turns back at Cyril Magnin and Market,https://www.sfmta.com/ja/node/43977,day
+43,2025-06-21,stop_consolidation,Two pairs of outbound stops consolidated (Naples/Rolph; Curtis/Prague),https://www.sfmta.com/ja/node/43977,day
+5,2025-06-21,route_change,Budget cut: weekdays 7 am-7 pm turns back at McAllister/Jones; skips Market St,https://www.sfmta.com/ja/node/43977,day
+6,2025-06-21,route_change,6 and 21 merged into 6 Hayes-Parnassus; Haight St and Market St segments dropped,https://www.sfmta.com/ja/node/43977,day
+7,2025-06-21,service_increase,7 daily service extended 5 am to midnight,https://www.sfmta.com/ja/node/43977,day
+9,2025-06-21,route_change,Budget cut: weekdays 7 am-7 pm turns back at 11th and Market,https://www.sfmta.com/ja/node/43977,day
+ALL,2025-11-18,enforcement_camera,Approved: RFP for Next Generation Transit Lane and Bus Stop Enforcement System (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/44732,day
+K,2026-01-13,other,Red transit-only lanes on Ocean Ave paused (had been planned for Jan 2026),https://www.sfmta.com/index%2Ephp/project-updates/next-steps-ocean-avenue-transit-lanes-and-k-ingleside-rapid-project,day
+14,2026-02-14,service_cut,Weekend frequency 7 to 8 min,https://www.sfmta.com/travel-updates/muni-service-changes-effective-february-14-2026,day
+5,2026-02-14,service_increase,Weekend frequency 10 to 7 min,https://www.sfmta.com/travel-updates/muni-service-changes-effective-february-14-2026,day
+5R,2026-02-14,service_increase,Busy-time frequency 10 to 8 min,https://www.sfmta.com/travel-updates/muni-service-changes-effective-february-14-2026,day
+5,2026-03-05,boarding_islands_bulbs,"Fulton St safety and transit project completion announced (bus bulbs, bus pads, signals)",https://www.sfmta.com/index%2Ephp/press-releases/press-release-supervisor-connie-chan-and-sfmta-celebrate-completion-fulton-street-safety-and-transit-project,day
+5R,2026-03-05,boarding_islands_bulbs,"Fulton St safety and transit project completion announced (bus bulbs, bus pads, signals)",https://www.sfmta.com/index%2Ephp/press-releases/press-release-supervisor-connie-chan-and-sfmta-celebrate-completion-fulton-street-safety-and-transit-project,day
+8,2026-03-17,boarding_islands_bulbs,Approved: improved and expanded bus boarding areas in Visitacion Valley (Board minutes; read via repo mirror data/sfmta-board),https://www.sfmta.com/node/45255,day
+14,2026-06-06,service_increase,Late-night 14 trips added about 10:15 pm to 1:15 am,https://www.sfmta.com/en/node/45428,day
+5R,2026-06-06,other,Schedule change to shorten gaps (no added buses),https://www.sfmta.com/en/node/45428,day
+1,2026-08-29,service_increase,Every 9 min instead of 10; 4-5 min Presidio to downtown,https://www.sfmta.com/node/45708,day
+22,2026-08-29,service_increase,"Added capacity; SFMTA's notice gives no trip counts",https://www.sfmta.com/node/45708,day
+28R,2026-08-29,route_change,28R serves 19th Ave and Eucalyptus with new stop near Lowell HS,https://www.sfmta.com/node/45708,day
+29,2026-08-29,service_increase,"Added capacity; SFMTA's notice gives no trip counts",https://www.sfmta.com/node/45708,day
+38R,2026-08-29,service_increase,Added AM peak capacity,https://www.sfmta.com/node/45708,day
+49,2026-08-29,service_increase,Added AM peak capacity,https://www.sfmta.com/node/45708,day
+5R,2026-08-29,service_increase,All trips 60-ft buses every 10 min,https://www.sfmta.com/node/45708,day
+N,2026-08-29,service_increase,Peak every 9 min instead of 10,https://www.sfmta.com/node/45708,day

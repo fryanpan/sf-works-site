@@ -1,0 +1,121 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-03-24",
+ "id": "g22-52065",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52065",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/3.24.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of March 10, 2026",
+   "decision": "approve the Minutes of March 10, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve Amendment No. 1 to Contract No. PRO.0229, Emergency Planning, Response, Training and Technical Support, with AECOM Technical Services, Inc., increasing the contract duration by five years, for a total contract duration of nine years, with no change to the contract amount, for project continuity of several emergency planning projects in the Plan Update Schedule that require consultant support. (Flynn)",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": null,
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Award professional services Contract No. PRO.0286, As-Needed Technical Support Services for Electrical Distribution Systems, to E2 Consulting Engineers, Inc., in the amount not-to-exceed $5,000,000 and with a duration of five years",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0040",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Accept work performed by M Squared Construction, Inc., under Contract No. WD-2874, 8- and 16-Inch Ductile Iron Water Main Replacement on Joost Avenue from Ridgewood Avenue to Congo Street and Various Side Streets; approve Modification No. 7 (Final) decreasing the contract amount by $1,030,562, with no change to the contract duration, for a total contract amount of $6,276,367 and a total contract duration of 745 consecutive calendar days (approximately two years and one month), to adjust the final contract amount to the value of actual contract quantities completed; and authorize final payment to the contractor",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0041",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Award Contract No. WW-789R, Southeast Water Pollution Control Plant 516 and 516A Sodium Bisulfite Storage Tanks and Fill Station, to the responsible bidder that submitted the lowest responsive bid, Western Water Constructors, Inc., in the amount of $12,190,000 and with a duration of 910 consecutive calendar days (approximately two years and six months), to replace the aging sodium bisulfite tanks and ancillary system and construct the new system closer to the chemical injection point. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA), pursuant to San Francisco Administrative Code Section 31.04(h). The San Francisco Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on the determination to make its decision on this action",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0042",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Award a lease for approximately 3.092 acres of Parcel No. 122 (Assessor’s Parcel No. 97-84-029) located in the City of San Jose to Tasman Zanker San Jose, LLC",
+   "decision": "approve Item 7",
+   "resolution": "26-0043",
+   "text": "Award a lease for approximately 3.092 acres of Parcel No. 122 (Assessor’s Parcel No. 97-84-029) located in the City of San Jose to Tasman Zanker San Jose, LLC, for an initial annual $348,152.89 base rent and a term of 11 years, subject to approval by the Board of Supervisors under Charter Section 9.118"
+  },
+  {
+   "no": "8",
+   "title": "Approve Modification No. 3 to Contract No. DB-126, Wastewater Enterprise Distributed Control System Upgrades",
+   "decision": "approve Item 8",
+   "resolution": "26-0044",
+   "text": "Approve Modification No. 3 to Contract No. DB-126, Wastewater Enterprise Distributed Control System Upgrades, with Emerson Process Management Power & Water Solutions, Inc., increasing the contract amount by $35,500,000, for a total not- to-exceed contract amount of $83,050,600, with no change to the contract duration, to enable the Design-Builder to provide services at Treasure Island and Yerba Buena Island facilities and integrate them into the new system-wide Distributed Control System, to continue providing the necessary system replacement, upgrade, and support services at all San Francisco Public Utilities Commission Wastewater facilities, and to continue coordinating with other ongoing Sewer System Improvement Program capital projects that are being implemented simultaneously within the same facilities"
+  },
+  {
+   "no": "9",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "10",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "12",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed CLOSED SESSION",
+   "decision": "assert the attorney-client privilege",
+   "resolution": "26-0039"
+  },
+  {
+   "no": "13",
+   "title": "Report following Closed Session",
+   "text": "Report following Closed Session President Arce reported that the Commission recommends the Board of Supervisors approve the settlements referenced under Item 12"
+  },
+  {
+   "no": "14",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a).",
+   "decision": "not to disclose the discussion during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

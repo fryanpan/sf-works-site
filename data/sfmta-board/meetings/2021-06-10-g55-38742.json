@@ -1,0 +1,33 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-06-10",
+ "id": "g55-38742",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38742",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/24488"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "CALL TO ORDER"
+  },
+  {
+   "no": "2",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "3",
+   "title": "GREAT HIGHWAY – UPDATE ON CURRENT USE AND PILOT PROJECT DEVELOPMENT"
+  },
+  {
+   "no": "4",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

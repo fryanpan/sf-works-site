@@ -1,0 +1,125 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-05-26",
+ "id": "g22-52501",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52501",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/5.26.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of April 28, May 12, 2026",
+   "decision": "approve the Minutes of April 28 and May 12, 2026",
+   "text": "Approval of the Minutes of April 28 and May 12, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager (discussion only)"
+  },
+  {
+   "no": "5a",
+   "title": "Quarterly Audit and Performance Review Report FY 2025-26 (Q3)"
+  },
+  {
+   "no": "5b",
+   "title": "Quarterly Budgetary Status Report FY 2025-26 (Q3)"
+  },
+  {
+   "no": "5c",
+   "title": "2015 Power Bonds Refunding Results"
+  },
+  {
+   "no": "5d",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve and Authorize the General Manager to execute the First Amendment to the Joint Exercise of Powers Agreement for Sewer Service with the City of Brisbane and Guadalupe Valley Municipal Improvement District, retroactively increasing the duration of the agreement by the earlier of December 31, 2027, or until the execution of a new long-term agreement, with no other changes to the agreement, subject to Board of Supervisors and Mayor approval",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0079",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Award Contract No. WW-780, Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris), to the responsible bidder that submitted the lowest responsive bid, Cal State Constructors, Inc., in the amount of $3,228,014, and with a duration of 510 consecutive calendar days (approximately one year and five months), to provide electrical and physical security upgrades to the Cesar Chavez Pump Station, Griffith Street Pump Station, Channel Pump Station, and Merlin Morris Pump Station, within the City and County of San Francisco. The Planning Department has determined that the Project is exempt from the California Environmental Quality Act (CEQA). This action constitutes the Approval Action for the Project for the purposes of the CEQA pursuant to San Francisco Administrative Code Section 31.04(h). The Commission will rely on the determination of the Planning Department to make its decision on this action",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0080",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-105, General Building (B License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, with Rubecon General Contracting, Inc., to increase the contract not- to-exceed amount by $2,500,000, and increase the contract duration by three years, for a revised not-to-exceed contract amount of $7,500,000 and a total contract duration of five years, to provide additional capacity and time for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0081",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Approve the terms and conditions and authorize Purchase and Sale Agreement and Easement Deed with Associated Limousine Operators of San Francisco, Inc.",
+   "decision": "approve Item 7",
+   "resolution": "26-0082",
+   "text": "Approve the terms and conditions and authorize the General Manager and/or City’s Director of Property to execute a Purchase and Sale Agreement and Easement Deed with Associated Limousine Operators of San Francisco, Inc., for the acquisition of an approximately 4,500-square-foot Sewer Tunnel Easement and an approximately 3,400-square-foot Restricted Development Easement on and across property located at 1398 Bryant Street, San Francisco, California, designated as a portion of San Francisco Assessor’s Parcel 3923-002, for $1,454,926, subject to Board of Supervisors and Mayor approval"
+  },
+  {
+   "no": "8",
+   "title": "Approve an increase of 418 calendar days to the existing duration contingency for Contract No. HH-1005, San Joaquin Pipeline Valve and Safe Entry Improvements",
+   "decision": "approve Item 8",
+   "resolution": "26-0083",
+   "text": "Approve an increase of 418 calendar days to the existing duration contingency for Contract No. HH-1005, San Joaquin Pipeline Valve and Safe Entry Improvements: Phase 1A, with Sierra Mountain Construction, Inc., for a revised duration limit of 1,506 consecutive calendar days (approximately four years), with no change to the contract amount, to allow additional time for evaluation and coordination associated with the Phase 2 knife gate valves procured under this contract and closeout activities"
+  },
+  {
+   "no": "9",
+   "title": "Approve an increase of $15,000,000 to the existing cost contingency for Contract No. HH-1000R, Mountain Tunnel Improvements Project, with Mountain Tunnel Constructors, Inc.",
+   "decision": "approve Item 9",
+   "resolution": "26-0084",
+   "text": "Approve an increase of $15,000,000 to the existing cost contingency for Contract No. HH-1000R, Mountain Tunnel Improvements Project, with Mountain Tunnel Constructors, Inc., for a revised cost limit of $165,173,126, to address additional costs resulting from a delayed start and earlier end to Outage No. 5 in 2025-26, delayed initial commissioning of the Flow Control Facility due to design changes to critical electrical equipment, delayed final project commissioning due to additional work required from the descoping of South Fork, and anticipated additional costs to resolve outstanding potential change orders, with no change to the contract duration limit"
+  },
+  {
+   "no": "10",
+   "title": "Approve an increase of 360 calendar days to the existing duration contingency for Contract No. WD-2895, San Francisco Zoo Recycled Water",
+   "decision": "approve Item 10",
+   "resolution": "26-0085",
+   "text": "Approve an increase of 360 calendar days to the existing duration contingency for Contract No. WD-2895, San Francisco Zoo Recycled Water, with Basset Engineering, for a revised duration limit of 1,030 consecutive calendar days (approximately two years and ten months), with no change to the contract amount, to allow for the completion of the San Francisco Zoo Recycled Water Project, which is delayed due to the additional time required for manufacturing and procurement of long-lead electrical power metering equipment"
+  },
+  {
+   "no": "11",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "12",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "13",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

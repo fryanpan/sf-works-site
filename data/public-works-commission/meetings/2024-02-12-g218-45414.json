@@ -1,0 +1,96 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-02-12",
+ "id": "g218-45414",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45414",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the January 22, 2024 Special Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Minutes from the January 22, 2024 Special Meeting of the Public Works Commission in a joint session with the Sanitation and Streets Commission"
+  },
+  {
+   "no": "4c",
+   "title": "San Francisco City Hall Elevator Modernization – Contract Modification"
+  },
+  {
+   "no": "4d",
+   "title": "Adult Immunization & Travel Clinic Relocation- Contract Award"
+  },
+  {
+   "no": "4e",
+   "title": "One South Van Ness Second Floor Restroom Renovation – Contract Modification"
+  },
+  {
+   "no": "4f",
+   "title": "As-Needed Architectural Services for Health Facilities No. 3, Contract ID 1000024344 – Contract Modification"
+  },
+  {
+   "no": "4g",
+   "title": "As-Needed Civil Engineering Services No. 4, Contract ID 1000025103 – Contract Modification"
+  },
+  {
+   "no": "4h",
+   "title": "As-Needed Structural Engineering Services No. 3, Contract ID 1000025070 – Contract Modification"
+  },
+  {
+   "no": "5",
+   "title": "Geary Rapid East of Van Ness, Contract No. 1000009581 – Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "Furniture, Fixtures & Equipment Management Services for 2016 Public Health and Safety Bond Program, Contract ID 1000005894 - Contract Modification"
+  },
+  {
+   "no": "7",
+   "title": "Division of Building Design and Construction Presentation"
+  },
+  {
+   "no": "8",
+   "title": "Department of Public Works Fiscal Year 2024-2025 and Fiscal Year 2025-2026 Operating and Capital Budget and Priorities"
+  },
+  {
+   "no": "9",
+   "title": "Racial Equity Action Plan Update"
+  },
+  {
+   "no": "10",
+   "title": "Capital Project Update – Upper Market Corridor Safety Improvements Project Presentation"
+  },
+  {
+   "no": "11",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "12",
+   "title": "General Public Comment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

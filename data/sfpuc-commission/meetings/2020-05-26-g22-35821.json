@@ -1,0 +1,128 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-05-26",
+ "id": "g22-35821",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35821",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of May 12, 2020"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5c",
+   "title": "Annual Schedule of Rates and Charges for Non-Municipal, Residential, Commercial Electric Service"
+  },
+  {
+   "no": "5d",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "5e",
+   "title": "Water System Improvement Program Status of Construction Change Orders"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Update on SFPUC Operations During COVID-19 Emergency"
+  },
+  {
+   "no": "7",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "8",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "8a",
+   "title": "Accept work performed by Anvil Builders Inc for Contract No. WD-2713 48-Inch Diameter Water Main Replacement on Putnam Street from Peralta Avenue to Cortland Avenue"
+  },
+  {
+   "no": "8b",
+   "title": "Accept work performed by Shaw Pipelines, Inc. for Contract No. WW-637 Various Locations Sewer Replacement and Pavement Renovation No. 5, approve Modification No. 3, increasing the contract amount by $133,286"
+  },
+  {
+   "no": "8c",
+   "title": "Approve an increase in the amount of $3,682,329 to the existing contract cost contingency and an increase of 50 calendar days to the existing contract duration contingency for Contract No. WW-686, As-Needed Spot Sewer Repair"
+  },
+  {
+   "no": "8d",
+   "title": "Approve an increase of $174,740 to the existing contract cost contingency for Contract No. WW-695, As-Needed Sewer Cleaning and Inspection FY20"
+  },
+  {
+   "no": "9",
+   "title": "Approve Amendment No. 3 to Agreement No. CS-109, Specialized Engineering Services, Recycled Water Projects, with Kennedy Jenks Consultants, Inc./Bahman Sheikh Water Reuse Consulting/Water Resources Engineering, Inc. a Joint Venture, to provide additional technical and engineering services in support of the Westside Recycled Water Project; and authorize the General Manager to execute this amendment, increasing the contract amount by $2,500,000"
+  },
+  {
+   "no": "10",
+   "title": "Public Hearing: Adopt a new schedule of Hetch Hetchy Power Enterprise General Use Municipal Electricity Service Rates for Fiscal Years 2020-21 and 2021-22"
+  },
+  {
+   "no": "11",
+   "title": "Retroactively authorize the General Manager’s implementation on May 12, 2020 of a temporary emergency bill discount for certain San Francisco Public Utilities Commission residential customers who have been financially impacted by the COVID-19 emergency"
+  },
+  {
+   "no": "12",
+   "title": "Authorize the General Manager to negotiate and execute a Memorandum of Understanding with the Public Works Department, Municipal Transportation Agency, Fire Department, and Port Commission, regarding and the authority a Use District and approve amendments to the Mission Rock Infrastructure Plan"
+  },
+  {
+   "no": "13",
+   "title": "Authorize the General Manager to negotiate and execute a Memorandum of Understanding with the Port Commission, San Francisco Public Works, the San Francisco Municipal Transportation Agency, and the San Francisco Fire Department regarding each department’s operations and maintenance of public improvements at the Pier 70 Special Use District"
+  },
+  {
+   "no": "14",
+   "title": "Public comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel CLOSED SESSION"
+  },
+  {
+   "no": "18",
+   "title": "Announcement following Closed Session"
+  },
+  {
+   "no": "19",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "20",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

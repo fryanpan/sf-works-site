@@ -1,0 +1,145 @@
+{
+ "month": "2023-02",
+ "timetable": "511 bundled GTFS",
+ "scheduled_time": "timetable stop_times at the trip and stop",
+ "timetable_feed_dates": [
+  "20230202",
+  "20230215"
+ ],
+ "observed_feed_dates": [
+  [
+   "20230202",
+   "20230201",
+   "20230202",
+   689985
+  ],
+  [
+   "20230215",
+   "20230203",
+   "20230214",
+   4044323
+  ]
+ ],
+ "rows_first_stops_out": 4610793,
+ "rows_matched": 4610793,
+ "matched_share": 1.0,
+ "matched_share_by_date": [
+  [
+   "20230201",
+   1.0,
+   9578
+  ],
+  [
+   "20230202",
+   1.0,
+   9578
+  ],
+  [
+   "20230203",
+   1.0,
+   9578
+  ],
+  [
+   "20230204",
+   1.0,
+   8052
+  ],
+  [
+   "20230205",
+   1.0,
+   8052
+  ],
+  [
+   "20230206",
+   1.0,
+   9578
+  ],
+  [
+   "20230207",
+   1.0,
+   9578
+  ],
+  [
+   "20230208",
+   1.0,
+   9610
+  ],
+  [
+   "20230209",
+   1.0,
+   9610
+  ],
+  [
+   "20230210",
+   1.0,
+   9610
+  ],
+  [
+   "20230211",
+   1.0,
+   8084
+  ],
+  [
+   "20230212",
+   1.0,
+   8084
+  ],
+  [
+   "20230213",
+   1.0,
+   9610
+  ],
+  [
+   "20230214",
+   1.0,
+   9610
+  ]
+ ],
+ "dates_without_timetable": [],
+ "fails": [],
+ "first_stops": {
+  "n": 115628,
+  "early_sf": 0.0004,
+  "late_sf": 0.0756,
+  "exactly_on_schedule": 0.4525
+ },
+ "last_stops": {
+  "n": 114539,
+  "early_sf": 0.1914,
+  "late_sf": 0.5009,
+  "exactly_on_schedule": 0.001
+ },
+ "unmatched_dropped_after_cleaning": 0,
+ "hourly_join": {
+  "timepoint_rows": 587810,
+  "no_block": 0,
+  "excluded_block": 826,
+  "kept": 586984
+ },
+ "all_hours_sf": {
+  "n": 586984,
+  "early_sf": 211588,
+  "late_sf": 82458
+ },
+ "scored_both": {
+  "n": 29439,
+  "s511_differs_share": 0.0,
+  "vs_timetable": {
+   "on_time": 73.42,
+   "late": 12.06,
+   "early": 14.52
+  },
+  "vs_511": {
+   "on_time": 73.42,
+   "late": 12.06,
+   "early": 14.52
+  }
+ },
+ "scored": {
+  "n": 29439,
+  "early": 4276,
+  "late": 3550,
+  "early_sf": 8170,
+  "late_sf": 4479
+ }
+}

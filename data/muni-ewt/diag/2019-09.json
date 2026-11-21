@@ -1,0 +1,13 @@
+{
+ "month": "2019-09",
+ "sched_rows": 11830265,
+ "obs_rows": 10532138,
+ "obs_rows_matched_stops": 10220404,
+ "sched_rows_matched_stops": 11697437,
+ "line_days_dropped": 139,
+ "outage_bins": [],
+ "stop_dirs_multi": 33,
+ "routes_sched": 84,
+ "routes_obs": 79,
+ "routes_both": 79
+}

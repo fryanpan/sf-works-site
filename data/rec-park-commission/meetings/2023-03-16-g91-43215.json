@@ -1,0 +1,79 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2023-03-16",
+ "id": "g91-43215",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=43215",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "2",
+   "title": "PRESIDENT’S REPORT"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGER’S REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT - UP TO 15 MINUTES ? THIS ITEM WILL BE CONTINUED TO ITEM 13"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6",
+   "title": "SAN FRANCISCO ZOO"
+  },
+  {
+   "no": "7",
+   "title": "JACKSON PLAYGROUND – CONCEPTUAL DESIGN"
+  },
+  {
+   "no": "9",
+   "title": "INDIA BASIN UPDATE / EQUITABLE DEVELOPMENT PLAN"
+  },
+  {
+   "no": "10",
+   "title": "DISTRICT 10 PARKS AND RECREATION UPDATES"
+  },
+  {
+   "no": "11",
+   "title": "2023 RACIAL EQUITY ACTION PLAN NEW PROGRESS REPORT UPDATE"
+  },
+  {
+   "no": "8",
+   "title": "98 FRANKLIN STREET ? SHADOW ON PAGE & LAGUNA MINI PARK, PATRICIA?S GREEN, KOSHLAND PARK, 11 TH AND NATOMA FUTURE PARK SITE AND HAYES VALLEY PLAYGROUND"
+  },
+  {
+   "no": "12",
+   "title": "GENERAL PUBLIC COMMENT ? CONTINUED FROM ITEM 4 IF NECESSARY"
+  },
+  {
+   "no": "13",
+   "title": "COMMISSIONERS’ MATTERS"
+  },
+  {
+   "no": "14",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "15",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "16",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

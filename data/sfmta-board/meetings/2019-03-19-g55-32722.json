@@ -1,0 +1,87 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-03-19",
+ "id": "g55-32722",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32722",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/18817"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes-March 5, 2019 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members-Motion regarding protecting cyclists on Howard Street",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report -Update on Vision Zero-Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the following parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 190319-031)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving Amendment No. 2 to Agreement No. SFMTA – 2011/12-25, As-Needed Specialized Engineering Services for Rail Vehicle Projects",
+   "decision": "ADOPTED — 7 ayes (Resolution 190319-032)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the SFMTA Fiscal Year 2018 financial statements"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding transit service"
+  },
+  {
+   "no": "13",
+   "title": "Approving Contract Modification No. 14 to Contract No. 1240, Radio System Replacement Project Design Build Services",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Approving Contract No. 2018-49, As-Needed Professional Services, with Conduent Transport Solutions",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "15",
+   "title": "ADJOURN"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

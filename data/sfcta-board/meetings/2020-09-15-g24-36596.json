@@ -1,0 +1,71 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2020-09-15",
+ "id": "g24-36596",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36596",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "CAC Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the August 25, 2020 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Appoint One Member to the Citizens Advisory Committee"
+  },
+  {
+   "no": "5",
+   "title": "SFMTA Rail Service Update"
+  },
+  {
+   "no": "7",
+   "title": "Program $4,308,164 in Prop AA Vehicle Registration Fee Funds to Three Projects and Amend the 2017 Prop AA Strategic Plan"
+  },
+  {
+   "no": "8",
+   "title": "Allocate $10,645,271 and Appropriate $60,000 in Prop K Sales Tax Funds, and Allocate $3,664,159 in Prop AA Vehicle Registration Fee Funds, for Nine Requests"
+  },
+  {
+   "no": "9",
+   "title": "Adopt the Alemany Corridor Safety Project Final Report [NTIP Planning]"
+  },
+  {
+   "no": "10",
+   "title": "Adopt the Proposed Fiscal Year 2020/21 Budget and Work Program"
+  },
+  {
+   "no": "11",
+   "title": "Execute Contract Renewals and Options for Various Annual Professional Services in an Amount Not to Exceed $7,075,000"
+  },
+  {
+   "no": "12",
+   "title": "Approve the Revised Procurement Policy and Travel, Conference, Training and Business Expense Reimbursement Policy Other Items"
+  },
+  {
+   "no": "13",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "14",
+   "title": "Public Comment"
+  },
+  {
+   "no": "15",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

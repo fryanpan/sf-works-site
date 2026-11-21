@@ -1,0 +1,79 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2024-11-21",
+ "id": "g91-47785",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=47785",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "5A",
+   "title": "MINUTES: October 2024 Commission meeting"
+  },
+  {
+   "no": "5B",
+   "title": "SAN FRANCISCO ZOOLOGICAL SOCIETY ANIMAL TRANSACTIONS"
+  },
+  {
+   "no": "5C",
+   "title": "ACCEPTANCE OF GRANTS"
+  },
+  {
+   "no": "6",
+   "title": "SAN FRANCISCO ZOO"
+  },
+  {
+   "no": "7",
+   "title": "SAN FRANCISCO CONSERVATION CORPS – SOLE SOURCE CONTRACT AWARD"
+  },
+  {
+   "no": "8",
+   "title": "JACKSON PLAYGROUND IMPROVEMENT PROJECT ? DONOR RECOGNITION PLAN"
+  },
+  {
+   "no": "9",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "10",
+   "title": "COMMISSIONERS’ MATTERS"
+  },
+  {
+   "no": "11",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "12",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "13",
+   "title": "ADJOURNMENT."
+  },
+  {
+   "no": "2",
+   "title": "PRESIDENT’S REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGER’S REPORT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

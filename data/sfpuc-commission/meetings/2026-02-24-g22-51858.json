@@ -1,0 +1,159 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-02-24",
+ "id": "g22-51858",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51858",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/2.24.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of: January 12, 2026; January 23, 2026; January 29, 2026; February 5, 2026; February 10, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5A",
+   "title": "Quarterly Audit and Performance Review Report",
+   "text": "Quarterly Audit and Performance Review Report Nancy Hom, Chief Financial Officer and Assistant General Manager –"
+  },
+  {
+   "no": "5B",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve Amendment No. 2 to Contract No. CS-1253, Power Optimization Tool, with NextEra Analytics Solutions, LLC, increasing the contract amount by $1,636,512, for a total not-to-exceed contract amount of $2,524,512, with no change to the contract duration of three years, for continued compliance with the California Independent System Operator’s energy market rules and additional critical battery optimization tools and software for six additional CleanPowerSF battery storage facilities",
+   "parent": "CONSENT CALENDAR",
+   "decision": "continued",
+   "resolution": "26-0026",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Approve an increase of $378,800 to the cost contingency and 158 calendar days to the duration contingency for Contract No. WW-740, Various Large Diameter Sewer Inspection No. 2, with Pipe and Plant Solutions, Inc., for a revised cost limit of $4,420,500, and a revised duration limit of 625 calendar days (approximately one year and nine months), to provide additional time and funding for inspections of additional sewer assets",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0027",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Award Contract No. WD-2923, 24-Inch Water Main Rehabilitation from University Mound Reservoir South to 3rd Street, to the responsible bidder that submitted the lowest responsive bid, Cratus, Inc., in the amount of $10,186,831 and with a duration of 501 consecutive calendar days (approximately one year and five months), to rehabilitate a 90 year old water transmission line in the Portola and Bay View Districts of San Francisco. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA), pursuant to San Francisco Administrative Code Section 31.04(h). The Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on the determination to make its decision on this action",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0028",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Approve an increase of 389 calendar days (approximately one year and one month) to the duration contingency for Contract No. WW-543, Southeast Water Pollution Control Plant HVAC and Mechanical Upgrades, with Cal State Constructors, Inc., for a revised duration limit of 1,478 calendar days (approximately four years and one month), to address electrical equipment procurement, mechanical, and structural work delays in repairing process equipment, with no change to the contract amount",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0029",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Authorize the General Manager to seek Board of Supervisors approval to extend the authority for streamlined customer installation of electric infrastructure",
+   "decision": "approve Item 7",
+   "resolution": "26-0030",
+   "text": "Authorize the General Manager to seek Board of Supervisors approval to extend the authority in Section 99.5 of the Administrative Code for streamlined customer installation of electric infrastructure. This authority would allow the San Francisco Public Utilities Commission to contract to purchase from a customer electric utility facilities that the San Francisco Public Utilities Commission would otherwise be required to install, subject to specified conditions. Catherine Spaulding, Deputy Assistant General Manager, Power Planning &"
+  },
+  {
+   "no": "8",
+   "title": "Adopt findings and approve the Project Participation and Share Agreement and the Buyer Liability Pass-Through Agreement",
+   "decision": "approve Item 8",
+   "resolution": "26-0031",
+   "text": "Adopt findings pursuant to the California Environmental Quality Act; and approve the Project Participation and Share Agreement and the Buyer Liability Pass- Through Agreement so that CleanPowerSF may participate in California Community Power’s procurement of the Willow Rock Long-Duration Storage Project; authorize the General Manager to execute the agreements on behalf of the CleanPowerSF program with total contract costs not-to-exceed $75,900,000 for a delivery term of twenty (20) years commencing with commercial operation of the projects; and authorize the General Manager to seek approval from the Board of Supervisors to execute the agreements, to the extent required"
+  },
+  {
+   "no": "9",
+   "title": "Approve modifications to the San Francisco Public Utilities Commission Green Infrastructure Grant Program Guidelines",
+   "decision": "approve Item 9",
+   "resolution": "26-0032",
+   "text": "Approve modifications to the San Francisco Public Utilities Commission Green Infrastructure Grant Program Guidelines, to raise the maximum cost per acre of impervious surface area managed by grant-funded projects from $1,035,000 to $1,120,000 to account for inflation, and revise program eligibility criteria and other program requirements; and authorize the General Manager to increase the maximum grant award per project and the maximum cost per acre of impervious area managed based on escalation using the San Francisco Annual Infrastructure Construction Cost Inflation Estimate (SF AICCIE) or equivalent methodology for cost escalation, and to approve nonmaterial changes to the Green Infrastructure Grant Program Guidelines"
+  },
+  {
+   "no": "10",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "10A",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "10B",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "10C",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "10D",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "10E",
+   "title": "Annual Water Pipeline Assessment"
+  },
+  {
+   "no": "11",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "12",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion on whether to assert the attorney-client privilege",
+   "decision": "assert the attorney-client privilege",
+   "resolution": "26-0033",
+   "text": "Motion on whether to assert the attorney-client privilege regarding the matters listed below:"
+  },
+  {
+   "no": "14",
+   "title": "Report following Closed Session",
+   "text": "Report following Closed Session President Arce reported that the Commission recommends the Board of Supervisors approve the settlement referenced under Item 13: The People of the State of California v. City and County of San Francisco"
+  },
+  {
+   "no": "15",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session",
+   "decision": "not to disclose",
+   "text": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

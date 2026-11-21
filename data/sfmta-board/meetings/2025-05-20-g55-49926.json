@@ -1,0 +1,125 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2025-05-20",
+ "id": "g55-49926",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49926",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/43926"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes April 22, 2025, Special Meeting and May 6, 2025, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report Automated Speed Enforcement Update, Event report-backsm and Other agency updates"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA (Explanatory documents include a resolution): A. Wang Yun Wong, Unlitigated Claim No. C24-005 for $88,220.11 (City to receive). Claim involving allegations of property damage to City property. B. State Farm & CSAA, Unlitigated Claim No. C25-0264 for $100,000 (City to receive). Claim involving allegations of property damage to City property. RESOLUTION No. 250520-045",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 250520-045)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items A-F are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.) 4 A. ESTABLISH – BUS ZONE, Lombard Street, north side, from 71 feet to 100 feet east of Lyon Street. B. ESTABLISH – NO PARKING ANY TIME, Judah Street, north side, from 37th Avenue to 20 feet westerly. C. RESCIND – TOW-AWAY, NO PARKING AT ANY TIME, ESTABLISH – GENERAL METERED PARKING, NO TIME LIMIT, 9 AM TO 10 PM, MONDAY THROUGH SATURDAY, Owens Street, west side, between Nelson Rising Lane and Gene Friend Way. D. ESTABLISH – BLUE ZONE, ACCESSIBLE PARKING, AT ALL TIMES, Owens Street, west side, from 15 feet to 40 feet south of Nelson Rising Lane. E. ESTABLISH – RED ZONE, Owens Street, west side, from Nelson Rising Lane to 15 feet southerly, Owens Street, west side, from 180 feet to 190 feet south of Nelson Rising Lane, Owens Street, west side, from Gene Friend Way to 10 feet northerly. F. ESTABLISH – GENERAL LOADING ZONE, 5 MINUTE TIME LIMIT, 7 AM TO 7 PM, MONDAY THROUGH FRIDAY, Owens Street, west side, from 40 feet to 160 feet south of Nelson Rising Lane, Owens Street, west side, from 10 feet to 170 feet north of Gene Friend Way. RESOLUTION No.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 250520-046)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving a Roadway Shared Spaces street closure application by a community benefit district for Otsego Avenue between Ocean and Onondaga avenues, Sunday, May 25, 2025, through Sunday, April 26, 2026, 12 pm to 9 pm, every fourth Sunday of each month; and making environmental review findings.",
+   "text": "Approving a Roadway Shared Spaces street closure application by a community benefit district for Otsego Avenue between Ocean and Onondaga avenues, Sunday, May 25, 2025, through Sunday, April 26, 2026, 12 pm to 9 pm, every fourth Sunday of each month; and making environmental review findings. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 250520-047 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 250520-047)"
+  },
+  {
+   "no": "11",
+   "title": "To authorize the Director of Transportation to establish the Taxi Upfront Fare Program as a permanent program",
+   "decision": "ADOPTED — 6 ayes (Resolution 250520-048)"
+  },
+  {
+   "no": "12",
+   "title": "Authorizing the Director of Transportation to execute Contracts with Arcadis U.S. ParkMobile, LLC and related Services for a total amount not to exceed $8.37 million per agreement",
+   "decision": "ADOPTED — 7 ayes (Resolution 250520-049)"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a Streets Division Quarterly Update."
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding a Financial Update."
+  },
+  {
+   "no": "15",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel.",
+   "decision": "ADOPTED — 7 ayes (Resolution 250520-050)"
+  },
+  {
+   "no": "15a",
+   "title": "CLOSED SESSION",
+   "decision": "ADOPTED — 7 ayes (Resolution 250520-050)"
+  },
+  {
+   "no": "16",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "17",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "18",
+   "title": "ADJOURN"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

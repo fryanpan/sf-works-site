@@ -1,0 +1,94 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2025-10-21",
+ "id": "g55-50991",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50991",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/44616"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes October 7, 2025, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens? Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA: (Explanatory documents include a resolution.) A. Damon Burris and State Farm Mutual Automobile Insurance Company, Unlitigated Claim No. C25-0354 for $29,394.91 (City to receive). Claim involving allegations of property damage to City property. RESOLUTION No. 251021-096",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 251021-096)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "text": "Approving various routine parking and traffic modifications and making environmental review findings: (The Planning Department has found that Items A-D are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.) A. RESCIND – PART-TIME BUS ZONE, MONDAY THROUGH FRIDAY, 6 AM TO 7 PM Jackson Street, north side, from 125 feet to 162 feet west of Fillmore Street. B. RESCIND – 2-HOUR PARKING, 8 AM TO 6 PM, MONDAY THROUGH FRIDAY, EXCEPT FOR VEHICLES WITH AREA G PERMITS, ESTABLISH – GENERAL METERED PARKING, 4-HOUR TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, Bush Street, north side, from Fillmore Street to 110 feet westerly, Bush Street, south side, from 20 feet to 150 feet west of Fillmore Street. C. ESTABLISH – GENERAL METERED PARKING, NO TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, San Bruno Avenue, east side, from 20 feet south of Division Street to Alameda Street, San Bruno Avenue, west side, from 20 feet north of Alameda Street to Division Street. D. ESTABLISH – GENERAL METERED PARKING, NO TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, Utah Street, east side, from 20 feet south of Alameda Street to 15th Street. RESOLUTION No. 251021-097 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 251021-097)"
+  },
+  {
+   "no": "11",
+   "title": "Local support for the allocation of Regional Measure 3 bridge toll funds in the amount of $42,392,692 for the Potrero Yard Modernization Project",
+   "decision": "ADOPTED — 5 ayes (Resolution 251021-098)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding the Fiscal Year 2027-2031 Capital Improvement Program"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session CLOSED SESSION"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 4 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

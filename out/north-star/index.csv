@@ -1,0 +1,394 @@
+street,from,to,existing,north_star,new,upgrade
+2nd St,Market,Townsend,Separated / Protected,Separated,N,Y
+3rd Ave,Lincoln,Hugo,Class III,Shared,N,Y
+3rd St Bridge,Islais Creek Trail,Cargo,None,Separated,Y,N
+4th St,Channel,Mission Bay N,Lanes,Undecided,N,Y
+4th St,Mission Bay N,Mission Bay S,Separated,Separated,N,Y
+4th St,Mission Bay S,16th St,Lanes,Undecided,N,Y
+4th St,16th St,Mariposa,Path,Path,N,N
+5th Ave,Lincoln,Hugo,Class III,Undecided,N,N
+5th St,Market,Townsend,Separated,Separated,N,Y
+6th Ave,Lincoln,Kirkham,Class II / Class III,Undecided,N,N
+7th Ave,Lincoln,Kirkham,Class III,Shared,N,Y
+7th St,Market,16th St,Protected,Separated,N,N
+8th Ave,Lake,JFK,Class III,Shared,N,Y
+8th St,Market,Townsend,Protected,Separated,N,N
+11th St,Market,Division,Class II / Separated,Separated,N,Y
+12th Ave,Lincoln,Lawton,Slow Street,Slow Street,N,N
+15th Ave,Lake,Cabrillo,Class III,Shared,N,N
+16th St,Missouri,Terry A Francois,Separated,Separated,N,Y
+17th St,Corbett,Market,Class II / Class III,Shared,N,Y
+17th St,Castro,Sanchez,Class III,Undecided,N,Y
+17th St,Sanchez,Church,Protected,Separated,N,N
+17th St,Church,Valencia,Lanes,Undecided,N,Y
+17th St,Valencia,Harrison,Lanes,Undecided,N,N
+17th St,Harrison,Bryant,Separated,Separated,N,N
+17th St,Bryant,Potrero,Lanes / Separated,Undecided,N,N
+17th St,Potrero,Mississipi,Lanes / Separated,Separated,N,Y
+19th Ave,Beverly,Randolph,Class III,Shared,N,Y
+19th St,Eureka,Church,None,Shared,Y,N
+20th Ave,Lincoln,Wawona,Neighborway,Shared,N,N
+20th Ave,Sloat,Stonestown,Class III,Shared,N,Y
+20th St,Shotwell,Potrero,Slow Street,Slow Street,N,N
+22nd Ave,Cabrillo,Fulton,None,Shared,Y,N
+22nd St,Indiana,Minnesota,None,Shared,Y,N
+22nd St,Chattanooga,Potrero,Class III,Undecided,N,Y
+23rd Ave,Lake,Cabrillo,Slow Street,Slow Street,N,N
+23rd St,Eureka,Sanchez,None / Class III,Shared,N,Y
+23rd St,Potrero,Kansas,Lanes,Shared,N,Y
+23rd st,Indiana,Illinois,None / Class III,Shared,N,Y
+28th Ave,Lincoln,Vicente,Class III,Shared,N,Y
+30th Ave,El Camino Del Mar,Clement,Class III,Shared,N,N
+30th Ave,Cabrillo,Fulton,Class III,Shared,N,N
+30th St,Sanchez,Church,Class III,Shared,N,Y
+34th Ave,Clement,Cabrillo,Class III,Shared,N,N
+34th Ave,Lincoln,Sloat,Class III,Shared,N,Y
+36th Ave,Cabrillo,Fulton,Class III,Shared,N,N
+41st Ave,Lincoln,Vicente,Class III,Shared,N,Y
+42nd Ave,Clement,Point Lobos,Class III,Shared,N,N
+43rd Ave,Cabrillo,Fulton,Class III,Shared,N,N
+47th Ave,Cabrillo,Fulton,Class III,Undecided,N,N
+47th Ave,Lincoln,Vicente,Class III,Shared,N,Y
+Agnon,Crescent,Justin,None,Shared,Y,N
+Alabama,Mullen,Cesar Chavez,None,Shared,Y,N
+Alana,Executive Park,Harney,None,Shared,Y,N
+Alemany,Brotherhood,Sagamore,Class III,Separated,N,Y
+Alemany,Sickles,Rousseau,Lanes,None,N,Y
+Alemany,Rousseau,Congdon,Separated,Separated,N,Y
+Alemany EB,Congdon,Putnam,Protected,Separated,N,Y
+Alemany EB,Putnam,Bayshore,Separated,Separated,N,Y
+Alemany WB,Congdon,Ellsworth,Lanes,Separated,N,Y
+Alemany WB,Ellsworth,Putnam,Lanes,Undecided,N,Y
+Alemany WB,Putnam,Bayshore,Separated,Separated,N,Y
+Alhambra,Scott,Cervantes,Class III,Shared,N,Y
+Anderson,Eugenia,Bernal Heights,None,Shared,Y,N
+Anza,30th Ave,Masonic,Lanes,Shared,N,Y
+Aquatic Park Path,Van Ness,Jefferson,Path,Path,N,Y
+Arelious Walker,Gilman,Carroll,Class III,Separated,N,Y
+Arguello,Presidio,GGP,Lanes,Separated,N,Y
+Arlington,Wilder,Roanoke,None / Class III,Shared,N,Y
+Arlington,Roanoke,Randall,Slow Street,Slow Street,N,Y
+Ashbury,Page,Clayton,Class III,Shared,N,Y
+Ashton,Urbano,Holloway,None,Shared,Y,N
+Athens,Naples,Rolph,Class III,Shared,N,Y
+Avila,Marina,Alhambra,None,Shared,Y,N
+Baker,Golden Gate,Fell,Lanes,Shared,N,Y
+Balboa,La Playa,Great Highway,Class III,Shared,N,N
+Ballpark Path,Embarcadero,3rd St,Path,Path,N,N
+Barneveld,Gaven,Silver,None,Shared,Y,N
+Battery,Embarcadero,Market,Separated,Separated,N,Y
+Bay,Fillmore,Laguna,Separated,Separated,N,N
+Bayshore,Paul,Silver,Class II / Separated,Separated,N,Y
+Bayshore,Silver,Oakdale,Protected,Separated,N,Y
+Beach,Polk,Hyde,Class III,Separated,N,Y
+Beale,Market,Howard,Separated,Separated,N,Y
+Beale,Howard,Folsom,None,Separated,Y,N
+Beale,Folsom,Bryant,Lanes,Separated,N,Y
+Bernal Heights,Anderson,Bradford,None,Shared,Y,N
+Berry,3rd St,4th St,Separated,Separated,N,N
+Beverly,Holloway,19th Ave,Class III,Shared,N,Y
+Blanken,Bayshore,Executive Park,Class III,Shared,N,Y
+Bocana,Holly Park,Eugenia,None,Shared,Y,N
+Bosworth,O'Shaughnessy,Glen Canyon Trailhead,None,Shared,Y,N
+Brannan,8th St,7th St,Separated,Separated,N,N
+Brewster,Rutledge,Mullen,None,Shared,Y,N
+Brotherhood,Lake Merced,Alemany,Separated,Separated,N,Y
+Brunswick,---,Newton,Class III,Shared,N,Y
+Cabrillo,49th Ave,45th Ave,Lanes,Shared,N,Y
+Cabrillo,45th Ave,23rd Ave,Slow Street,Slow Street,N,N
+Cabrillo,23rd Ave,Arguello,Lanes,Shared,N,Y
+Cabrillo,La Playa,Great Highway,Path,Path,N,N
+Cambridge,John F Shelley,St Mary's Park Footbridge,None,Shared,Y,N
+Development,,,None,Separated,Y,N
+Cargo,3rd St,Jennings,Protected,Separated,N,N
+Carroll,Keith,Arelious Walker,Class III,Shared,N,Y
+Cayuga,Naglee,Rousseau,Slow Street,Slow Street,N,N
+Cervantes,Alhambra,Fillmore,Class II / Class III,Shared,N,Y
+Cesar Chavez,Guerrero,Valencia,Lanes,Shared,N,Y
+Cesar Chavez,Bayshore,I-280,Separated,Separated,N,Y
+Cesar Chavez,I-280,Illinois,Class II / Class III,Separated,N,Y
+Underpass,,,Path,Path,N,N
+Chain of Lakes Path (West),Fulton,Chain of Lakes Dr E,Path,Path,N,Y
+Channel,Mission Bay,4th St,Class III,Separated,N,Y
+Chattanooga,Jersey,22nd St,Class III,Shared,N,Y
+Chenery,Elk,Diamond,None / Class III,Shared,N,Y
+Church,Hermann,Duboce,Class III,Shared,N,Y
+Circular,Hearst,Monterey,Class III,Separated,N,Y
+Claremont,Kensington,Portola,Class II / Class III,Shared,N,Y
+Clarendon,Twin Peaks,Clayton,Class III,Undecided,N,Y
+Clay,Arguello,Steiner,Slow Street,Slow Street,N,N
+Clay,Steiner,Webster,Class III,Shared,N,Y
+Clayton,Ashbury,Corbett,Class III,Undecided,N,Y
+Clayton,Parnassus,Ashbury,Class III,Shared,N,Y
+Clement,48th Ave,30th Ave,Class III,Shared,N,N
+Clipper,Portola,Douglass,Class II / Separated,Separated,N,Y
+Clipper,Douglass,Sanchez,Class III,Shared,N,N
+Congdon,Alemany,Alemany,Lanes,Separated,N,Y
+Connecticut,17th St,20th St,None,Shared,Y,N
+Corbett,Market,17th St,Class III,Shared,N,Y
+Coso / Stoneman,Elsie,Folsom,None,Shared,Y,N
+Crescent,Murray,Putnam,Class III,Shared,N,Y
+De Long,---,San Jose,Class III,Shared,N,Y
+Dewey,Laguna Honda,Taraval,Lanes,Shared,N,Y
+Diamond,23rd St,Clipper,Class III,Shared,N,Y
+Division,Folsom,Townsend,Separated,Separated,N,N
+Drumm,Washington,Jackson,None,Shared,Y,N
+Duboce / 13th St,Market,Folsom,None,Separated,Y,N
+Duboce,Sanchez,Church,Protected,Separated,N,N
+Duboce Path,Church,Market,Path,Path,N,N
+Duncan,Guerrero,Valencia,Class III,Shared,N,Y
+El Camino del Mar,Lands End,Presidio,Class II / Class III,Shared,N,N
+Ellsworth,Bernal Heights,Eugenia,None,Shared,Y,N
+Elsie,Eugenia,Coso,None,Shared,Y,N
+Embarcadero,Jefferson,Broadway,Lanes,Separated,N,Y
+Embarcadero,Broadway,Harrison,Protected,Separated,N,Y
+Embarcadero,Harrison,King,Lanes,Separated,N,Y
+Esmerelda / Franconia,Bradford,Rutledge,None,Shared,Y,N
+Euclid,Arguello,Presidio,Lanes,Shared,N,N
+Eugenia,Elsie,Gates,None,Shared,Y,N
+Eureka,17th St,23rd St,Class III,Shared,N,N
+Evans,Cesar Chavez,Hunters Point,Class II / Separated,Separated,N,Y
+Evelyn,Portola,Teresita,None,Shared,Y,N
+Executive Park,Blanken,Alana,Class III,Shared,N,Y
+Existing GGP Paths,,,Path,Path,N,N
+Farallones,Orizaba,Cayuga Park,None,Shared,Y,N
+Fell,Stanyan,Scott,Protected,Separated,N,N
+Flood,Gennessee,Foerster,None,Shared,Y,N
+Foerster,Hearst,Flood,None,Shared,Y,N
+Foerster,Teresita,Hearst,Class III,Shared,N,Y
+Folsom,Cesar Chavez,Stoneman,Class III,Shared,N,Y
+Folsom,Division,12th St,Lanes,Separated,N,Y
+Folsom,12th St,Embarcadero,Separated,Separated,N,Y
+Font,Lake Merced,Holloway,Class III,Separated,N,Y
+Forest Side,Taraval,Vicente,Class III,Shared,N,Y
+Fort Mason Path,Laguna,Van Ness,Path,Path,N,N
+Francisco,Laguna,Polk,Lanes,Shared,N,Y
+Francisco,Lyon,Scott,Class III,Shared,N,Y
+Frida Kahlo,Ocean,Judson,Separated,Separated,N,Y
+Front,Pacific,Jackson,Lanes,Shared,N,Y
+Funston,Cabrillo,Fulton,Class III,Shared,N,N
+Gaven,Alemany,San Bruno,None,Shared,Y,N
+Geary,Masonic,Presidio,None,Separated,Y,N
+Gellert,Ocean,Middlefield,Class III,Shared,N,Y
+Geneva,Prague,Santos,Class II / Class III,Shared,N,Y
+Girard,Silver,Olmstead,None,Shared,Y,N
+Glen Canyon Path,Bosworth,Elk,Path,Path,N,N
+Golden Gate,Parker,Divisadero,Slow Street,Slow Street,N,N
+Golden Gate,Polk,Market,Separated,Separated,N,N
+Great Highway,Balboa,Fulton,Lanes,Separated,N,Y
+Great Highway,Fulton,Lincoln,Lanes,Separated,N,Y
+Great Highway,Fulton,Lincoln,Path,Path,N,N
+Great Highway,Lincoln,Sloat,Path,Path,N,Y
+Great Highway,Sloat,Skyline,None,Path,Y,N
+Green,Octavia,Polk,Class III,Shared,N,Y
+Greenwich,Lyon,Fillmore,Class III,Undecided,N,Y
+Greenwich,Fillmore,Larkin,Class III,Shared,N,Y
+Guerrero,San Jose,Cesar Chavez,Lanes,Separated,N,Y
+Hairball,,,Lanes / Protected,Separated,N,Y
+Harney,Alana,Hunters Point,Class III,Separated,N,Y
+Harold,Holloway,Grafton,None,Shared,Y,N
+Havelock,W,San Jose,None,Path / Shared,Y,N
+Hearst,Ridgewood,Baden,Slow Street,Slow Street,N,N
+Hearst,Baden,Circular,Class III,Separated,N,Y
+Holloway,Junipero Serra,Ashton,Lanes,Shared,N,Y
+Holloway,Ashton,Harrold,Class III,Shared,N,Y
+Holloway,Font,Junipero Serra,Lanes,Separated,N,Y
+Holly Park,Murray,Bocana,None,Shared,Y,N
+Howard,11th St,Embarcadero,Separated,Separated,N,Y
+Hudson,Newhall,Mendell,None,Shared,Y,N
+Hugo,7th Ave,3rd Ave,Class III,Shared,N,Y
+Development,,,None,Separated,Y,N
+Huron,Sickles,Ottawa,None,Shared,Y,N
+Hyde,Jefferson,Beach,None,Separated,Y,N
+Illinois,23rd St,Cargo,Lanes,Separated,N,Y
+Illinois,20th St,23rd St,Lanes,Undecided,N,Y
+Illinois,Mariposa,20th St,Lanes,Separated,N,Y
+Indiana,22nd St,23rd St,Class III,Shared,N,Y
+Indiana,23rd St,25th St,Class III,Separated,N,Y
+Indiana,25th St,Islais Creek Trail,Class III,Shared,N,Y
+Innes,Hunters Point,Donahue,Class III,Separated,N,Y
+Islais Creek Trail,Cesar Chavez,3rd St,Path,Path,N,Y
+Jackson,Montgomery,Front,None,Shared,Y,N
+Jefferson,Hyde,Powell,Class III,Undecided,N,Y
+Jennings,Cargo,Evans,None,Separated,Y,N
+Jersey,Diamond,Chattanooga,Class III,Shared,N,Y
+JFK,Transverse,30th Ave,Class III,Separated,N,Y
+John F Shelley,Mansell,Mansell,None / Class III,Shared,N,Y
+John Muir,Skyline,Lake Merced,Separated,Separated,N,Y
+Judson,Frida Kahlo,Foerster,Separated,Separated,N,Y
+Junipero Serra,Portola,Holloway,None / Class III,Shared,N,Y
+Justin,Agnon,Benton,None,Shared,Y,N
+Kansas,23rd St,26th St,Lanes,Shared,N,N
+Kansas,17th St,Mariposa,None,Shared,Y,N
+Kansas,16th St,17th St,Lanes,Shared,N,Y
+Kansas / Henry Adams,Division,16th St,Class III,Shared,N,Y
+Kezar,Lincoln,Stanyan,Path,Path,N,N
+Kirkham,Great Highway,6th Ave,Lanes,Shared,N,Y
+La Playa,Balboa,Fulton,Class III,Shared,N,N
+Laguna,Bay,Fancisco,Class III,Shared,N,Y
+Laguna Honda,Kirkham,Dewey,Separated,Separated,N,Y
+Laguna Honda,Dewey,Portola,Lanes,Shared,N,Y
+Lake,28th Ave,Arguello,Slow Street,Slow Street,N,N
+Lake,30th Ave,28th Ave,Class III,Shared,N,N
+Lake Merced,,,Path,Path,N,Y
+Lake Merced,Skyline,Vidal,None,Separated,Y,N
+Lake Merced,Brotherhood,John Muir,None,Separated,Y,N
+Lakeshore,Sloat,Sunset,Class III,Shared,N,N
+Lee,Ocean,Holloway,Class II / Class III,Shared,N,Y
+Leese,Richland,Crescent,None,Shared,Y,N
+Lyell,Arlington,Alemany,Lanes,Shared,N,N
+Lyon,Turk,Haight,Slow Street,Slow Street,N,N
+Lyon,Francisco,Greenwich,Class II / Class III,Shared,N,Y
+Mansell,Brazil,Visitacion,Path,Path,N,Y
+Mansell,Visitacion,San Bruno,Lanes,Separated,N,Y
+Marina Blvd Path,Mason,Laguna,Path,Path,N,N
+Mariposa,Kansas,Pennsylvania,Class III,Shared,N,Y
+Mariposa,Pennsylvania,Illinois,Class III,Separated,N,Y
+Market,17th St,Duboce,Lanes,Separated,N,Y
+Market,Duboce,8th St,Separated,Separated,N,Y
+Market,8th St,Steuart,Class III,Shared,N,Y
+Martin Luther King Jr,Lincoln,Chain of Lakes Dr E,Car-free,Car-free,N,Y
+Martin Luther King Jr,Chain of Lakes Dr E,Middle,Separated,Separated,N,Y
+Masonic,Geary,Page,Separated,Separated,N,N
+McClaren Park,,,Paths,Paths,N,Y
+McKinnon,Phelps,Newhall,None,Shared,Y,N
+Merrill,Gaven,Silver,None,Shared,Y,N
+Middle,Martin Luther King Jr,Metson,Separated,Separated,N,N
+Middle,Metson,Overlock,Car-free,Car-free,N,N
+Minnesota,Mariposa,22nd St,Slow Street,Slow Street,N,N
+Mission Bay Blvd N,Mission Bay Dr,Terry A Francois,Class III,Undecided,N,Y
+Mission Bay Blvd S,Mission Bay Dr,Terry A Francois,Class III,Undecided,N,Y
+Mission Bay Dr,7th St,Mission Bay Blvd,Class III,Separated,N,Y
+Mississippi,16th St,Mariposa,Lanes,Separated,N,Y
+Missouri,16th St,17th St,None,Shared,Y,N
+Moncada,Junipero Serra,Urbano,None,Shared,Y,N
+Monterey,Santa Clara,Ridgewood,Class III,Shared,N,Y
+Monterey EB,Circular,San Jose,Separated,Separated,N,Y
+Monterey WB,Circular,San Jose,Class III,Separated,N,Y
+Montgomery,Pacific,Jackson,None,Shared,Y,N
+Mt Vernon,Harold,San Jose,None,Shared,Y,N
+Mullen,Brewster,Alabama,None,Shared,Y,N
+Multimodal Corridor,Evans,Carroll,None / Class III,Shared,N,Y
+Murray,Crescent,Holly Park,Class III,Shared,N,Y
+Newhall,Hudson,Innes,None,Shared,Y,N
+Newhall,McKinnon,Oakdale,None,Shared,Y,N
+Niagara,San Jose,Mission,None,Shared,Y,N
+Oak,Stanyan,Scott,None,Separated,Y,N
+Oakdale,Bayshore,Loomis,Lanes,Separated,N,Y
+Oakdale,Loomis,Phelps,Lanes,Separated,N,Y
+Oakdale,Newhall,Lane,None / Class II,Shared,N,Y
+Ocean,Sunset,19th Ave,Lanes,Shared,N,Y
+Ocean,19th Ave,Junipero Serra,None,Shared,Y,N
+Octavia Blvd,Francisco,Green,Class III,Shared,N,Y
+Octavia St E,Market,Hayes,Class III,Shared,N,Y
+Octavia St W,Market,Hayes,Class III,Shared,N,Y
+Olmstead,Girard,San Bruno,None,Shared,Y,N
+Ortega,Great Highway,17th Ave,Lanes,Shared,N,Y
+O'Shaughnessy,Portola,Bosworth,Class III / Separated,Separated,N,Y
+Other GGP connections,,,,Undecided,N,N
+Otis / McCoppin,Valencia,Van Ness,Lanes,Shared,N,Y
+Ottawa,Huron,Cayuga,Class III,Shared,N,Y
+Overlook,Middle,Transverse,Car-free,Car-free,N,N
+Owens,Mission Bay,16th St,None,Separated,Y,N
+Pacific,Front,Columbus,None,Shared,Y,N
+Pacific,Webster,Powell,Class III,Shared,N,Y
+Page,Stanyan,Market,Slow Street,Slow Street,N,N
+Panhandle Path,Stanyan,Baker,Path,Path,N,N
+Park Merced Development,,,None,Undecided,Y,N
+Parnassus               7th,Ave,Clayton,Class III,None,N,N
+Path around Hunters Point I,nnes,Harney,None,Path,Y,N
+Path through Stern Grove,Wawona,Sloat,Path,Path,N,Y
+Paul,San Bruno,Bayshore,Lanes,Separated,N,Y
+Pedestrian Bridge over 280,Circular,San Jose,Path,Undecided,N,Y
+Phelps,Bayshore,Williams,None,Shared,Y,N
+Phelps,Innes,McKinnon,Class III,Shared,N,Y
+Plymouth,Monterey,Sagamore,None,Shared,Y,N
+Point Lobos,46th Ave,42nd Ave,Class III,Shared,N,N
+Point Lobos,48th Ave,46th Ave,Lanes,Shared,N,N
+Point Lobos,48th Ave,Balboa,Lanes,Separated,N,Y
+Polk,Market,Pine,Separated,Separated,N,N
+Polk,Green,Beach,Lanes,Undecided,N,N
+Portola,Junipero Serra,Sydney,Class II / Class III,Shared,N,Y
+Portola,Ulloa,Market,Lanes / Separated,Separated,N,Y
+Post,Van Ness,Market,Class III,Undecided,N,N
+Potrero,Division,Cesar Chavez,Lanes,Separated,N,Y
+Development,,,None,Undecided,Y,N
+Presidio,Pacific,Geary,Class III,Undecided,N,Y
+Quesada,3rd St,Hawes,None,Shared,Y,N
+Randall,Arlington,Church,None,Shared,Y,N
+Randolph,19th Ave,Orizaba,None,Shared,Y,N
+Richland,Arlington,Murray,Class III,Shared,N,Y
+Ridgewood,Monterey,Hearst,None,Shared,Y,N
+Rivera,Great Highway,24th Ave,None,Shared,Y,N
+Rivera,22nd Ave,20th Ave,None,Shared,Y,N
+Rolph,Mission,Prague,None,Shared,Y,N
+Rutledge,Franconia,Brewster,None,Shared,Y,N
+Sagamore,Brotherhood/Alemany,Sickles,Lanes,Shared,N,Y
+San Bruno,Woolsey,Mansell,Class III,Shared,N,Y
+San Bruno,Mansell,Somerset,Lanes,Shared,N,Y
+San Bruno,Somerset,Bayshore,Class III,Shared,N,Y
+San Jose,Mt Vernon,Niagara,None,Shared,Y,N
+San Jose,Monterey,Guerrero,Separated / Protected,Separated,N,Y
+San Juan,San Jose,Mission,None,Shared,Y,N
+Sanchez,23rd St,30th St,Slow Street,Slow Street,N,N
+Sanchez,Duboce,Market,Class III,Shared,N,Y
+Sansome,Embarcadero,Broadway,Lanes,Separated,N,Y
+Santa Clara,Portola,Monterey,Class III,Shared,N,N
+Scott,Alhambra,Greenwich,None,Shared,Y,N
+Scott,Grove,Haight,Class III,Shared,N,Y
+SF State,,,Path / Class III,Undecided,N,N
+Shotwell,14th St,Cesar Chavez,Slow Street,Slow Street,N,N
+Sickles,San Jose,Huron,Class II / Class III,Shared,N,Y
+Silliman,Cambridge,Girard,None,Shared,Y,N
+Skyline,Sloat,Lake Merced,Class III,Separated,N,Y
+Skyline,Lake Merced,John Muir,Path / Class III,Separated,N,Y
+Skyline,John Muir,---,Class III,Separated,N,Y
+Sloat,Great Highway,Skyline,Lanes,Separated,N,Y
+Sloat,Skyline,21st Ave,Lanes,Protected,N,N
+Sloat,21st Ave,19th Ave,Class III,Separated,N,Y
+Sloat,19th Ave,Portola,Class III,Shared,N,Y
+Somerset,Karen,Silver,Slow Street,Slow Street,N,N
+St Charles,Randolph,Niantic,Class III,Shared,N,Y
+Alemany,Benton,Cambridge,Path,Path,N,N
+Steiner,Greenwich,California,Class III,Undecided,N,Y
+Stonestown Development,,,Class III,Separated,N,Y
+Sunnydale Development,,,None,Undecided,Y,N
+Sutter,Polk,Market,Class III,Undecided,N,Y
+Taraval,Dewey,Forest Side,Lanes,Shared,N,N
+Teresita,Evelyn,Foerster,None,Shared,Y,N
+Terry A Francois,3rd St,Illinois,Protected,Separated,N,N
+Theresa,San Jose,Cayuga,None,Shared,Y,N
+Tiffany,Safeway Parking Lot,Duncan,Class III,Shared,N,Y
+Townsend,8th St,4th St,Separated / Protected,Separated,N,Y
+Townsend,4th St,2nd St,Lanes,Undecided,N,Y
+Townsend,2nd St,Embarcadero,Class III,Shared,N,Y
+Transverse,Martin Luther King Jr,Crossover,Class III,Separated,N,Y
+Turk,Arguello,Masonic,Lanes,Separated,N,Y
+Turk,Polk,Market,Separated,Separated,N,N
+Twin Peaks,Portola,---,Class III,Shared,N,Y
+Twin Peaks,,,Path,Path,N,N
+Twin Peaks,Clarendon,---,Class III,Undecided,N,Y
+Ulloa,Claremont,Sydney / Portola,Class III,Shared,N,Y
+University,Silliman,Woolsey,None,Shared,Y,N
+Urbano,Moncada,Ashton,None,Shared,Y,N
+Valencia,Market,23rd St,Separated,Separated,N,Y
+Valencia,23rd St,Duncan,Lanes,Separated,N,Y
+Van Ness,Beach,Bay,None,Separated,Y,N
+Vermont / 26th St,Kansas,Cesar Chavez,Class III,Shared,N,Y
+Vicente,Great Highway,Portola,Lanes,Shared,N,Y
+Vidal,Lake Merced Path,Lake Merced Path,None,Shared,Y,N
+Virginia,Elsie,Safeway Parking Lot,None,Shared,Y,N
+Visitacion,Mansell,Hahn,None,Separated,Y,N
+Washington,Embarcadero,Drumm,Protected,Separated,N,N
+Wawona,21st Ave,20th Ave,Class III,Shared,N,Y
+Webster,Broadway,Pacific,Class III,None,N,Y
+Webster,Pacific,Clay,Class III,Shared,N,Y
+Webster,Clay,California,None,Undecided,Y,N
+Webster,Grove,Hermann,Class III,Shared,N,Y
+Westgate / Cerritos,Monterey,Junipero Serra,None / Class III,Shared,N,Y
+Wiggle,Scott,Duboce,Class III,Shared,N,Y
+Wilder,Diamond,Arlington,None,Shared,Y,N
+Williams,Phelps,3rd St,None,Shared,Y,N
+Winston,Lake Merced,Junipero Serra,Class II / Class III,Separated,N,Y
+Woolsey,University,San Bruno,None,Shared,Y,N
+Yerba Buena,Santa Clara,Monterey,None,Shared,Y,N

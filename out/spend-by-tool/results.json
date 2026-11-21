@@ -1,0 +1,1191 @@
+{
+ "about": "SFMTA Streets and Signals capital lines, adopted budgets FY2022-FY2026 (five fiscal years), by tool. Budgets, not spending. Built by tools/street-safety/spend-by-tool.py.",
+ "chart": [
+  {
+   "k": "Corridor projects",
+   "lab": "$95.4M",
+   "v": 95.4
+  },
+  {
+   "k": "New, upgraded signals",
+   "lab": "$56.7M",
+   "v": 56.7
+  },
+  {
+   "k": "Bikeway projects",
+   "lab": "$34.0M",
+   "v": 34.0
+  },
+  {
+   "k": "Quick-build (mixed)",
+   "lab": "$33.5M",
+   "v": 33.5
+  },
+  {
+   "k": "Slow Streets",
+   "lab": "$19.2M",
+   "v": 19.2
+  },
+  {
+   "k": "CBTP projects",
+   "lab": "$11.5M",
+   "v": 11.5
+  },
+  {
+   "k": "New humps, cushions, tables",
+   "lab": "$8.3M",
+   "v": 8.3
+  },
+  {
+   "k": "School walk audits (mixed)",
+   "lab": "$8.2M",
+   "v": 8.2
+  },
+  {
+   "k": "Community Response (mixed)",
+   "lab": "$4.7M",
+   "v": 4.7
+  },
+  {
+   "k": "Flashing beacons",
+   "lab": "$3.4M",
+   "v": 3.4
+  },
+  {
+   "k": "WalkFirst (mixed)",
+   "lab": "$3.1M",
+   "v": 3.1
+  },
+  {
+   "k": "Other point devices",
+   "lab": "$1.6M",
+   "v": 1.6
+  },
+  {
+   "k": "Signal retiming",
+   "lab": "$1.2M",
+   "v": 1.2
+  },
+  {
+   "k": "Daylighting",
+   "lab": "$0.5M",
+   "v": 0.5
+  },
+  {
+   "k": "Bulb-outs",
+   "lab": "$0.5M",
+   "v": 0.5
+  },
+  {
+   "k": "Low-traffic cells, 20 mph zones",
+   "lab": "$0, no line",
+   "v": 0.0
+  }
+ ],
+ "documents": {
+  "FY2021-2025 CIP": "https://www.sfmta.com/media/21935/download",
+  "FY2023-2027 CIP": "https://www.sfmta.com/media/33065/download?inline",
+  "FY2025-2029 CIP": "https://www.sfmta.com/media/39080/download"
+ },
+ "footnotes": [
+  "Signals: the parse puts $6.0M too much in FY21 and $4.0M too little in FY22 against SFMTA's totals; the fund codes on SG060 and SG063 rows say FY21, so the misplaced line is not found. If the $4.0M belongs in FY22, Signals FY22-26 is about $60.7M, not $56.7M.",
+  "Streets FY23 and FY24 parse $2.2M and $2.5M under SFMTA's totals; the missing lines are not located.",
+  "SG106 Tenderloin Signal Upgrade parses about $1.9M above its FY23-24 figure in the CIP text."
+ ],
+ "fy22_26_attributed_to_named_lines": 298178612,
+ "fy22_26_not_attributed_to_a_line": 9238164,
+ "fy22_26_reserves": 27419708,
+ "fy22_26_sfmta_program_total": 334836484,
+ "groups": [
+  {
+   "by_year": {
+    "2021": 42342336,
+    "2022": 38768742,
+    "2023": 14539599,
+    "2024": 3358865,
+    "2025": 14320999,
+    "2026": 24416747
+   },
+   "fy22_26": 95404952,
+   "key": "corridors",
+   "label": "Corridor and streetscape projects",
+   "lines": [
+    {
+     "fy22_26": 30166288,
+     "id": "ST080",
+     "name": "Folsom Streetscape"
+    },
+    {
+     "fy22_26": 13257604,
+     "id": "ST314",
+     "name": "Bayview Multimodal"
+    },
+    {
+     "fy22_26": 11764014,
+     "id": "ST316",
+     "name": "Howard Streetscape"
+    },
+    {
+     "fy22_26": 11216686,
+     "id": "ST158",
+     "name": "Mission Street Excelsior"
+    },
+    {
+     "fy22_26": 8000000,
+     "id": "ST053",
+     "name": "6th Street Streetscape"
+    },
+    {
+     "fy22_26": 7576128,
+     "id": "ST273",
+     "name": "Central Embarcadero Enhancement Project"
+    },
+    {
+     "fy22_26": 3100000,
+     "id": "ST052",
+     "name": "5th Street Corridor Improvements"
+    },
+    {
+     "fy22_26": 2250000,
+     "id": "ST239",
+     "name": "Ocean Beach Master Plan - Sloat/Great Highway"
+    },
+    {
+     "fy22_26": 1340000,
+     "id": "ST315",
+     "name": "Brotherhood Alemany Safety Improvement Project (BASIP)"
+    },
+    {
+     "fy22_26": 1210000,
+     "id": "ST183",
+     "name": "Ocean Avenue Safety Improvements"
+    },
+    {
+     "fy22_26": 1083787,
+     "id": "ST059",
+     "name": "Cesar Chavez/Bayshore/Potrero"
+    },
+    {
+     "fy22_26": 1000000,
+     "id": "STNew SoMa Arterial Traffic Calming",
+     "name": "SoMa Arterial Traffic Calming"
+    },
+    {
+     "fy22_26": 1000000,
+     "id": "STNew Golden Gate Greenway",
+     "name": "Golden Gate Greenway"
+    },
+    {
+     "fy22_26": 1000000,
+     "id": "STNew 5th Street Streetscape",
+     "name": "5th Street Streetscape"
+    },
+    {
+     "fy22_26": 900445,
+     "id": "ST181",
+     "name": "Lake Merced Pedestrian Safety"
+    },
+    {
+     "fy22_26": 300000,
+     "id": "STNew Cesar Chavez/Bayshore/Potrero Long-Term",
+     "name": "Cesar Chavez/Bayshore/Potrero Long-Term"
+    },
+    {
+     "fy22_26": 240000,
+     "id": "ST235",
+     "name": "Brannan Street Streetscape"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 20681248,
+    "2022": 20518229,
+    "2023": 14210114,
+    "2024": 8161485,
+    "2025": 9947923,
+    "2026": 3900000
+   },
+   "fy22_26": 56737751,
+   "key": "signals",
+   "label": "New and upgraded signals",
+   "lines": [
+    {
+     "fy22_26": 14573229,
+     "id": "SG089",
+     "name": "Western Addition Area - Traffic Signal Upgrades"
+    },
+    {
+     "fy22_26": 12531923,
+     "id": "SG106",
+     "name": "Tenderloin Signal Upgrade"
+    },
+    {
+     "fy22_26": 8750000,
+     "id": "SG062",
+     "name": "Contract 66: New Traffic Signals"
+    },
+    {
+     "fy22_26": 6449000,
+     "id": "SG060",
+     "name": "Contract 35: Traffic Signal Modifications"
+    },
+    {
+     "fy22_26": 2778091,
+     "id": "SG063",
+     "name": "Contract 36: Traffic Signal Modifications"
+    },
+    {
+     "fy22_26": 2350000,
+     "id": "ST201",
+     "name": "Geneva Avenue Traffic Signals"
+    },
+    {
+     "fy22_26": 1990000,
+     "id": "SG017",
+     "name": "Program: Traffic Signal Hardware Replacement"
+    },
+    {
+     "fy22_26": 1790000,
+     "id": "SG015",
+     "name": "Traffic Signal Visibility Upgrades"
+    },
+    {
+     "fy22_26": 1500000,
+     "id": "SG133",
+     "name": "Contract 37 Traffic Signal Modification"
+    },
+    {
+     "fy22_26": 1300000,
+     "id": "SG011",
+     "name": "Program: City Coordination Opportunities: New Traffic Signals"
+    },
+    {
+     "fy22_26": 1100000,
+     "id": "SG111",
+     "name": "Contract 67: New Traffic Signals"
+    },
+    {
+     "fy22_26": 1000000,
+     "id": "SGNew Accessible Pedestrian Signals",
+     "name": "Accessible Pedestrian Signals"
+    },
+    {
+     "fy22_26": 416000,
+     "id": "SGNew Tenderloin Conduits",
+     "name": "Tenderloin Conduits"
+    },
+    {
+     "fy22_26": 209508,
+     "id": "SG072",
+     "name": "3rd Street Video Detection Replacement"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 5266000,
+    "2022": 8616687,
+    "2023": 8429100,
+    "2024": 3175000,
+    "2025": 6651208,
+    "2026": 7113000
+   },
+   "fy22_26": 33984995,
+   "key": "bikeways",
+   "label": "Bikeway projects (separated lanes, bike signals, spot fixes)",
+   "lines": [
+    {
+     "fy22_26": 8100000,
+     "id": "STNew Active Communities Plan Implementation Program",
+     "name": "Active Communities Plan Implementation Program"
+    },
+    {
+     "fy22_26": 7512000,
+     "id": "ST165",
+     "name": "Valencia Street Bikeway Implementation Plan"
+    },
+    {
+     "fy22_26": 5741008,
+     "id": "ST177",
+     "name": "13th St Protected Bike Lanes"
+    },
+    {
+     "fy22_26": 3411562,
+     "id": "ST045",
+     "name": "Program: Citywide Bike Spot Improvements"
+    },
+    {
+     "fy22_26": 3184125,
+     "id": "ST026",
+     "name": "Program: Bicycle Traffic Signal Upgrades"
+    },
+    {
+     "fy22_26": 1250000,
+     "id": "ST295",
+     "name": "Tenderloin Protected Intersections"
+    },
+    {
+     "fy22_26": 1200000,
+     "id": "ST169",
+     "name": "Terry Francois Boulevard Bikeway Improvements"
+    },
+    {
+     "fy22_26": 1113000,
+     "id": "ST266",
+     "name": "Program: Bike Traffic Signal Upgrades"
+    },
+    {
+     "fy22_26": 1000000,
+     "id": "STNew Market Street Cycling Improvements",
+     "name": "Market Street Cycling Improvements"
+    },
+    {
+     "fy22_26": 487066,
+     "id": "STNew Active Communities Spot Improvements",
+     "name": "Active Communities Spot Improvements"
+    },
+    {
+     "fy22_26": 400000,
+     "id": "STNew Active Communities Plan Golden Gate Park Access",
+     "name": "Active Communities Plan Golden Gate Park Access"
+    },
+    {
+     "fy22_26": 250000,
+     "id": "STNew Active Communities Plan Mansell Streetscape",
+     "name": "Active Communities Plan Mansell Streetscape"
+    },
+    {
+     "fy22_26": 250000,
+     "id": "STNew Active Communities Implementation Sloat",
+     "name": "Active Communities Implementation Sloat"
+    },
+    {
+     "fy22_26": 50000,
+     "id": "STNew Active Communities Plan 7th Ave Bikeway Link",
+     "name": "Active Communities Plan 7th Ave Bikeway Link"
+    },
+    {
+     "fy22_26": 36234,
+     "id": "STNew Active Communities Bikeway Enhancements",
+     "name": "Active Communities Bikeway Enhancements"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 6432000,
+    "2022": 5570000,
+    "2023": 8441000,
+    "2024": 8441000,
+    "2025": 6486371,
+    "2026": 4533925
+   },
+   "fy22_26": 33472296,
+   "key": "quickbuild",
+   "label": "Quick-build programs (mixed)",
+   "lines": [
+    {
+     "fy22_26": 28419697,
+     "id": "ST240",
+     "name": "Program: Citywide Vision Zero Quick Build"
+    },
+    {
+     "fy22_26": 5052599,
+     "id": "ST241",
+     "name": "Program: Tenderloin Vision Zero Quick Build"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 7309362,
+    "2022": 9892806,
+    "2023": 3293031,
+    "2024": 5196882,
+    "2025": 2575000,
+    "2026": 6461989
+   },
+   "fy22_26": 27419708,
+   "key": "reserve",
+   "label": "Reserves (left out)",
+   "lines": [
+    {
+     "fy22_26": 19394571,
+     "id": "ST000",
+     "name": "Reserve Streets"
+    },
+    {
+     "fy22_26": 6885137,
+     "id": "SG000",
+     "name": "Reserve Traffic Signals"
+    },
+    {
+     "fy22_26": 1140000,
+     "id": "ST247",
+     "name": "Other Reserve"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 1550000,
+    "2022": 3025375,
+    "2023": 5400000,
+    "2024": 6655000,
+    "2025": 3287000,
+    "2026": 862500
+   },
+   "fy22_26": 19229875,
+   "key": "slow",
+   "label": "Slow Streets and neighborways",
+   "lines": [
+    {
+     "fy22_26": 13137500,
+     "id": "ST025",
+     "name": "Slow Streets Implementation"
+    },
+    {
+     "fy22_26": 2867000,
+     "id": "ST071",
+     "name": "Page Street Neighborway (Webster to Stanyan)"
+    },
+    {
+     "fy22_26": 1600375,
+     "id": "ST031",
+     "name": "Program: Citywide Neighborway"
+    },
+    {
+     "fy22_26": 1425000,
+     "id": "ST088",
+     "name": "Page Street Neighborway (Market to Webster)"
+    },
+    {
+     "fy22_26": 200000,
+     "id": "ST262",
+     "name": "District 4 Neighbor ways"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 1072349,
+    "2022": 2280000,
+    "2023": 4805000,
+    "2024": 3208420,
+    "2025": 100000,
+    "2026": 1100000
+   },
+   "fy22_26": 11493420,
+   "key": "area",
+   "label": "Area plans (CBTPs)",
+   "lines": [
+    {
+     "fy22_26": 8160000,
+     "id": "ST195",
+     "name": "Bayview CBTP Implementation"
+    },
+    {
+     "fy22_26": 2908420,
+     "id": "ST246",
+     "name": "Visitacion Valley CBTP"
+    },
+    {
+     "fy22_26": 425000,
+     "id": "ST197",
+     "name": "Bayview CBTP Near Term Implementation"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 4983375,
+    "2022": 2358375,
+    "2023": 1104413,
+    "2024": 932288,
+    "2025": 2422427,
+    "2026": 1938056
+   },
+   "fy22_26": 8755559,
+   "key": "other",
+   "label": "Other (TDM, education, evaluation, enforcement, signs)",
+   "lines": [
+    {
+     "fy22_26": 1470000,
+     "id": "SG018",
+     "name": "Program: Traffic Sign Replacement"
+    },
+    {
+     "fy22_26": 1313483,
+     "id": "SG103",
+     "name": "Automated Photo Enforcement"
+    },
+    {
+     "fy22_26": 980875,
+     "id": "ST039",
+     "name": "Program: Streets Coordination Improvements"
+    },
+    {
+     "fy22_26": 712000,
+     "id": "ST256",
+     "name": "Safe Routes to School Non- Infrastructure Project"
+    },
+    {
+     "fy22_26": 708125,
+     "id": "ST244",
+     "name": "Safe Streets Evaluation Program"
+    },
+    {
+     "fy22_26": 690000,
+     "id": "ST236",
+     "name": "Business TDM"
+    },
+    {
+     "fy22_26": 449076,
+     "id": "ST248",
+     "name": "Vision Zero SF Motorcycle Safety Program"
+    },
+    {
+     "fy22_26": 350000,
+     "id": "ST255",
+     "name": "Place Based Planning Program"
+    },
+    {
+     "fy22_26": 350000,
+     "id": "ST249",
+     "name": "Existing Residents Transportation Demand Management"
+    },
+    {
+     "fy22_26": 320000,
+     "id": "ST252",
+     "name": "Transportation Demand Management (TDM) for"
+    },
+    {
+     "fy22_26": 312000,
+     "id": "ST257",
+     "name": "Comprehensive Employee TDM Program"
+    },
+    {
+     "fy22_26": 300000,
+     "id": "ST243",
+     "name": "Residents TDM"
+    },
+    {
+     "fy22_26": 200000,
+     "id": "STNew Vision Zero Education and Communications",
+     "name": "Vision Zero Education and Communications"
+    },
+    {
+     "fy22_26": 200000,
+     "id": "STNew Side Show Deterrence",
+     "name": "Side Show Deterrence"
+    },
+    {
+     "fy22_26": 200000,
+     "id": "ST270",
+     "name": "NTIP Program Support"
+    },
+    {
+     "fy22_26": 200000,
+     "id": "ST254",
+     "name": "Travel Decision Survey"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 1950000,
+    "2022": 2013375,
+    "2023": 2150300,
+    "2024": 2165000,
+    "2025": 818000,
+    "2026": 1199000
+   },
+   "fy22_26": 8345675,
+   "key": "humps",
+   "label": "New speed humps, cushions, tables",
+   "lines": [
+    {
+     "fy22_26": 4054300,
+     "id": "ST028",
+     "name": "Program: Annual Application-Based Traffic Calming"
+    },
+    {
+     "fy22_26": 2274375,
+     "id": "ST043",
+     "name": "Program: Proactive Local Traffic Calming Track"
+    },
+    {
+     "fy22_26": 2017000,
+     "id": "ST264",
+     "name": "Application-Based Residential Traffic Calming Program"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 1300000,
+    "2022": 1342251,
+    "2023": 1300000,
+    "2024": 1300000,
+    "2025": 2250000,
+    "2026": 2000000
+   },
+   "fy22_26": 8192251,
+   "key": "schools",
+   "label": "School walk audits (mixed)",
+   "lines": [
+    {
+     "fy22_26": 7942251,
+     "id": "ST042",
+     "name": "Program: Traffic Improvements Around Schools"
+    },
+    {
+     "fy22_26": 250000,
+     "id": "STNew Mission Bay School Access",
+     "name": "Mission Bay School Access"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 2034520,
+    "2022": 1211871,
+    "2023": 1193404,
+    "2024": 2465748,
+    "2025": 1582766,
+    "2026": 1119000
+   },
+   "fy22_26": 7572789,
+   "key": "bike_other",
+   "label": "Other bike programs",
+   "lines": [
+    {
+     "fy22_26": 3704927,
+     "id": "ST048",
+     "name": "Program: Short-term Bike Parking"
+    },
+    {
+     "fy22_26": 1418000,
+     "id": "ST041",
+     "name": "Program: Bike Facility Maintenance"
+    },
+    {
+     "fy22_26": 1175054,
+     "id": "ST253",
+     "name": "Bicycle Outreach and Education"
+    },
+    {
+     "fy22_26": 1129070,
+     "id": "ST250",
+     "name": "Bike to Work Day"
+    },
+    {
+     "fy22_26": 145738,
+     "id": "ST245",
+     "name": "Citywide Bike Plan"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 1100000,
+    "2022": 1100000,
+    "2023": 550000,
+    "2024": 750000,
+    "2025": 1100000,
+    "2026": 1166000
+   },
+   "fy22_26": 4666000,
+   "key": "community",
+   "label": "Community Response (mixed)",
+   "lines": [
+    {
+     "fy22_26": 4666000,
+     "id": "ST038",
+     "name": "Program: Community Response Implementation"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 600000,
+    "2022": 600000,
+    "2023": 750000,
+    "2024": 798000,
+    "2025": 1000000,
+    "2026": 250000
+   },
+   "fy22_26": 3398000,
+   "key": "beacons",
+   "label": "Flashing beacons (RRFB)",
+   "lines": [
+    {
+     "fy22_26": 3398000,
+     "id": "ST122",
+     "name": "Rectangular Rapid Flashing Beacons"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 772500,
+    "2022": 797606,
+    "2023": 772000,
+    "2024": 772000,
+    "2025": 400000,
+    "2026": 400000
+   },
+   "fy22_26": 3141606,
+   "key": "ped_mixed",
+   "label": "WalkFirst pedestrian program (mixed)",
+   "lines": [
+    {
+     "fy22_26": 3141606,
+     "id": "ST040",
+     "name": "Program: Quick & Effective Pedestrian Safety"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 280000,
+    "2022": 289100,
+    "2023": 111770,
+    "2024": 117207,
+    "2025": 680071,
+    "2026": 374500
+   },
+   "fy22_26": 1572648,
+   "key": "point_other",
+   "label": "Other point devices (hump replacement after paving, roundabouts, left-turn calming, radar signs)",
+   "lines": [
+    {
+     "fy22_26": 724500,
+     "id": "STNew Roundabout Enhancements",
+     "name": "Roundabout Enhancements"
+    },
+    {
+     "fy22_26": 562298,
+     "id": "ST203",
+     "name": "Program: Annual Traffic Calming Removal and Replacement"
+    },
+    {
+     "fy22_26": 185850,
+     "id": "ST037",
+     "name": "Program: Speed Radar Sign Installation"
+    },
+    {
+     "fy22_26": 100000,
+     "id": "ST272",
+     "name": "Program: Vision Zero Left Turn"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 900000,
+    "2022": 1190000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "fy22_26": 1190000,
+   "key": "retiming",
+   "label": "Signal retiming",
+   "lines": [
+    {
+     "fy22_26": 1190000,
+     "id": "SG104",
+     "name": "Vision Zero Signal Retiming"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 520795,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "fy22_26": 520795,
+   "key": "daylighting",
+   "label": "Daylighting",
+   "lines": [
+    {
+     "fy22_26": 520795,
+     "id": "ST185",
+     "name": "Citywide Daylighting"
+    }
+   ]
+  },
+  {
+   "by_year": {
+    "2021": 3850000,
+    "2022": 500000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "fy22_26": 500000,
+   "key": "bulbs",
+   "label": "Bulb-outs and painted safety zones",
+   "lines": [
+    {
+     "fy22_26": 500000,
+     "id": "ST115",
+     "name": "Permanent Painted Safety Zone Conversion"
+    }
+   ]
+  }
+ ],
+ "hump_devices_fy22_26": {
+  "blocks_treated": 446,
+  "blocks_treated_by_classcode": {
+   "0": 1,
+   "4": 37,
+   "5": 405,
+   "None": 3
+  },
+  "blocks_treated_residential_active_accepted": 400,
+  "by_fiscal_year": {
+   "2022": {
+    "cushion": 82,
+    "hump": 103,
+    "table": 4
+   },
+   "2023": {
+    "cushion": 28,
+    "hump": 10,
+    "table": 5
+   },
+   "2024": {
+    "cushion": 199,
+    "hump": 29
+   },
+   "2025": {
+    "cushion": 47,
+    "hump": 16,
+    "table": 6
+   },
+   "2026": {
+    "cushion": 137,
+    "hump": 8,
+    "table": 53
+   }
+  },
+  "by_program": {
+   "App-Based": 501,
+   "other programs": 226
+  },
+  "data_as_of": "2026-05-23",
+  "note": "Complete raised devices by state fiscal year of install (July to June), counting `units`; FY2026 runs to the data date. Blocks: centerline classcode 5 (residential), active and accepted; treated blocks on other classes (mostly 4, collectors) are counted in blocks_treated_by_classcode and left out of the residential share. Budgets and installs are different cohorts (a budget year pays for devices built later), so dividing one by the other is not a unit cost.",
+  "residential_blocks_active_accepted": 9451,
+  "total": {
+   "cushion": 493,
+   "hump": 166,
+   "table": 68
+  }
+ },
+ "point_fixes_floor": {
+  "groups": [
+   "New speed humps, cushions, tables",
+   "Other point devices (hump replacement after paving, roundabouts, left-turn calming, radar signs)",
+   "Flashing beacons (RRFB)",
+   "Daylighting",
+   "Bulb-outs and painted safety zones",
+   "Signal retiming"
+  ],
+  "note": "A floor: quick-build, WalkFirst, school audits and Community Response also buy point fixes but can't be split. The ride-hail money may overlap the CIP's hump lines; unchecked.",
+  "share_of_attributed": 0.052,
+  "share_of_sfmta_total": 0.046,
+  "usd": 15527118,
+  "with_ride_hail_share_of_sfmta_total": 0.077,
+  "with_ride_hail_usd": 26687118
+ },
+ "quality_log": [
+  "PASS every CIP line maps to a tool group (unmapped: [])",
+  "PASS line ids unique",
+  "PASS Streets FY2023 parsed $51.09M within 10% of SFMTA's $53.30M",
+  "PASS Streets FY2024 parsed $34.78M within 10% of SFMTA's $37.30M",
+  "PASS Streets FY2025 parsed $42.76M within 10% of SFMTA's $42.76M",
+  "PASS Streets FY2026 parsed $51.72M within 10% of SFMTA's $51.72M",
+  "PASS Streets FY21+FY22 parsed $157.94M within 10% of SFMTA's $157.94M",
+  "PASS Signals FY2023 parsed $16.48M within 10% of SFMTA's $16.50M",
+  "PASS Signals FY2024 parsed $12.72M within 10% of SFMTA's $13.20M",
+  "PASS Signals FY2025 parsed $10.86M within 10% of SFMTA's $10.86M",
+  "PASS Signals FY2026 parsed $5.11M within 10% of SFMTA's $5.11M",
+  "PASS Signals FY21+FY22 parsed $44.56M within 10% of SFMTA's $42.56M",
+  "PASS non-reserve lines hold 89% of SFMTA's FY22-26 total",
+  "PASS abhw-ffzx row_id unique (1686 rows)",
+  "INFO Complete raised rows in 2021-2026 with no install month, left out: 3",
+  "PASS active, accepted residential blocks (classcode 5) counted: 9451",
+  "PASS every cited study has a row in studies.json (missing: [])"
+ ],
+ "reconciliation_musd": {
+  "Signals 2021": {
+   "gap": -6.0,
+   "parsed": 24.48,
+   "sfmta": 18.48
+  },
+  "Signals 2022": {
+   "gap": 4.002,
+   "parsed": 20.078,
+   "sfmta": 24.08
+  },
+  "Signals 2023": {
+   "gap": 0.021,
+   "parsed": 16.479,
+   "sfmta": 16.5
+  },
+  "Signals 2024": {
+   "gap": 0.482,
+   "parsed": 12.718,
+   "sfmta": 13.2
+  },
+  "Signals 2025": {
+   "gap": 0.0,
+   "parsed": 10.861,
+   "sfmta": 10.86135
+  },
+  "Signals 2026": {
+   "gap": 0.0,
+   "parsed": 5.11,
+   "sfmta": 5.110056
+  },
+  "Streets 2021": {
+   "gap": -0.003,
+   "parsed": 77.943,
+   "sfmta": 77.94
+  },
+  "Streets 2022": {
+   "gap": 0.004,
+   "parsed": 79.996,
+   "sfmta": 80.0
+  },
+  "Streets 2023": {
+   "gap": 2.208,
+   "parsed": 51.092,
+   "sfmta": 53.3
+  },
+  "Streets 2024": {
+   "gap": 2.521,
+   "parsed": 34.779,
+   "sfmta": 37.3
+  },
+  "Streets 2025": {
+   "gap": 0.0,
+   "parsed": 42.76,
+   "sfmta": 42.760416
+  },
+  "Streets 2026": {
+   "gap": 0.0,
+   "parsed": 51.725,
+   "sfmta": 51.724662
+  }
+ },
+ "ride_hail_hump_money_outside_cip": {
+  "note": "SFCTA ride-hail tax list (July 2025 board) allocates $11.16M to the application-based calming program, FY21-FY25 cycles; not in the CIP's ST028/ST264 rows, which list Prop K and Prop B only. Overlap unchecked. Per notes/street-safety-2026-11/2026-11-12-top-spot-fixes.md.",
+  "usd": 11160000
+ },
+ "tools": [
+  {
+   "area": "Speeds fall at the device and for about 400 ft past it, not before it (Iowa 2002, SMS 2)",
+   "cost_kind": "Two SFCTA requests: the Visitacion Valley proactive engineer's estimate (2021) and the FY22 application cycle allocation; the gap is design, outreach and program overhead",
+   "cost_src": "notes/street-safety-2026-10/2026-10-22-calming-costs.md",
+   "group": "humps",
+   "group_budget_fy22_26": 8345675,
+   "injury": "New York, 1,226 sites against later-treated sites: pedestrians hurt OR 0.91 (0.80 to 1.02). CMF 134: 0.5, 3 stars",
+   "key": "hump",
+   "speed": "See area",
+   "studies": [
+    "roberts-2025-nyc-speed-humps",
+    "iowa-2002-temporary-humps",
+    "layfield-parry-1998-trl312",
+    "fhwa-cmf-134-speed-humps"
+   ],
+   "tool": "Speed hump (round top)",
+   "unit_cost": "$15,517 to $37,169 a device all-in",
+   "volume": "About 24% less traffic on humped or cushioned UK roads (TRL 312, SMS 2)"
+  },
+  {
+   "area": "As a hump",
+   "cost_kind": "Same SFCTA requests; they price humps, cushions and tables alike",
+   "cost_src": "calming-costs note",
+   "group": "humps",
+   "group_budget_fy22_26": 8345675,
+   "injury": "No graded crash study of cushions",
+   "key": "cushion",
+   "speed": "Mean and 85th percentile 17 and 22 mph at cushions, 2 to 7 mph above humps (TRL 312, SMS 2)",
+   "studies": [
+    "layfield-parry-1998-trl312"
+   ],
+   "tool": "Speed cushion",
+   "unit_cost": "As a hump",
+   "volume": "About 24% less traffic (2% to 48%), as humps (TRL 312)"
+  },
+  {
+   "area": "Its own block, or one crossing",
+   "cost_kind": "Same SFCTA requests",
+   "cost_src": "calming-costs note",
+   "group": "humps",
+   "group_budget_fy22_26": 8345675,
+   "injury": "No graded study separates tables from humps",
+   "key": "table",
+   "speed": "No graded study separates tables from humps",
+   "studies": [],
+   "tool": "Speed table or raised crosswalk",
+   "unit_cost": "As a hump",
+   "volume": "No graded study"
+  },
+  {
+   "area": "One crossing",
+   "cost_kind": "Planning estimate",
+   "cost_src": "SFCTA Vision Zero Quick-Build Pre-Planning Study, 2023, Table 4",
+   "group": "ped_mixed",
+   "group_budget_fy22_26": 3141606,
+   "injury": "SF school crosswalks repainted yellow ladder: 37% fewer collisions (13% to 60%), CMF 0.63, 4 stars",
+   "key": "crosswalk",
+   "speed": "Not a speed tool",
+   "studies": [
+    "feldman-2010-sf-school-crosswalks"
+   ],
+   "tool": "Ladder (continental) crosswalk",
+   "unit_cost": "$4,000 to $6,000 a crosswalk",
+   "volume": "None"
+  },
+  {
+   "area": "One crossing",
+   "cost_kind": "One SF allocation request (Monterey Blvd, FY2024/25)",
+   "cost_src": "notes/school-crossing-beacons-signs-2026-10",
+   "group": "beacons",
+   "group_budget_fy22_26": 3398000,
+   "injury": "FHWA 2025: not significant against uncontrolled crossings except a possible rise in rear-end crashes (unrated)",
+   "key": "rrfb",
+   "speed": "Not a speed tool",
+   "studies": [
+    "fhwa-2025-rrfb"
+   ],
+   "tool": "Flashing beacon (RRFB)",
+   "unit_cost": "$50,000 a beacon",
+   "volume": "None"
+  },
+  {
+   "area": "One corner, the 20 ft before the crosswalk",
+   "cost_kind": "Planning estimate. No published SF cost for hardening with posts",
+   "cost_src": "SFCTA Pre-Planning Study Table 4",
+   "group": "daylighting",
+   "group_budget_fy22_26": 520795,
+   "injury": "New York, 189 hardened intersections: 0.14 fewer pedestrians hurt per intersection a year (about 32%). Signs only, 567 intersections: no change",
+   "key": "daylight",
+   "speed": "Not measured",
+   "studies": [
+    "nycdot-2025-daylighting"
+   ],
+   "tool": "Daylighting",
+   "unit_cost": "$1,072 to $2,605 an intersection in paint and signs",
+   "volume": "None"
+  },
+  {
+   "area": "One corner",
+   "cost_kind": "SFMTA published range",
+   "cost_src": "notes/curb-extensions-2026-10 What We Know",
+   "group": "bulbs",
+   "group_budget_fy22_26": 500000,
+   "injury": "Philadelphia, 94 against 269 planned: 13% fewer crashes (35% fewer to 18% more); pedestrians about no change",
+   "key": "bulb",
+   "speed": "Not measured",
+   "studies": [
+    "guerra-2026-philadelphia-bulbouts"
+   ],
+   "tool": "Concrete bulb-out",
+   "unit_cost": "$50,000 to $300,000 a corner",
+   "volume": "None"
+  },
+  {
+   "area": "One intersection",
+   "cost_kind": "Planning estimate",
+   "cost_src": "SFCTA Pre-Planning Study Table 4",
+   "group": "retiming",
+   "group_budget_fy22_26": 1190000,
+   "injury": "CMF 0.86 on injury crashes (unrated; Clearinghouse page not opened)",
+   "key": "lpi",
+   "speed": "Not a speed tool",
+   "studies": [
+    "fhwa-cmf-9911-lpi"
+   ],
+   "tool": "Early walk signal (LPI)",
+   "unit_cost": "$5,000 a signal",
+   "volume": "None"
+  },
+  {
+   "area": "A corridor, and the network it completes",
+   "cost_kind": "Five SFMTA Board project budgets",
+   "cost_src": "data/school-budget/unit-costs.json",
+   "group": "bikeways",
+   "group_budget_fy22_26": 33984995,
+   "injury": "Cycle tracks: about one ninth the injury odds of a major street with parking (OR 0.11)",
+   "key": "bikeway",
+   "speed": "Not a speed tool",
+   "studies": [
+    "teschke-2012"
+   ],
+   "tool": "Separated bikeway",
+   "unit_cost": "$0.89M to $2.39M a mile as quick-build",
+   "volume": "Not graded"
+  },
+  {
+   "area": "A corridor of 1 to 2 miles",
+   "cost_kind": "SFMTA Board staff report and a Prop L request",
+   "cost_src": "calming-costs note",
+   "group": "slow",
+   "group_budget_fy22_26": 19229875,
+   "injury": "No graded study",
+   "key": "slow",
+   "speed": "No graded study",
+   "studies": [],
+   "tool": "Slow Street",
+   "unit_cost": "$200,000 to $238,000 a mile permanent",
+   "volume": "No graded study"
+  },
+  {
+   "area": "A corridor",
+   "cost_kind": "Planning estimate",
+   "cost_src": "SFCTA Pre-Planning Study Table 7",
+   "group": "quickbuild",
+   "group_budget_fy22_26": 33472296,
+   "injury": "SFMTA 2024: all collisions -2%, pedestrian -32%, no comparison (unrated). New York road diets: injuries -17% (unrated)",
+   "key": "quickbuild",
+   "speed": "Not graded",
+   "studies": [
+    "sfmta-2024-safe-streets-evaluation",
+    "nycdot-2023-vision-zero-sips"
+   ],
+   "tool": "Quick-build corridor",
+   "unit_cost": "$400,000 a mile for one treatment; $1.71M a mile for the full bundle",
+   "volume": "Not graded"
+  },
+  {
+   "area": "A neighborhood of about 0.4 square miles, and its boundary streets",
+   "cost_kind": "Planning estimate from the circulation plans What We Know doc",
+   "cost_src": "notes/circulation-plans-2026-10 What We Know",
+   "group": "cells",
+   "group_budget_fy22_26": 0,
+   "injury": "London LTNs: injuries inside -35% (29% to 40%), boundary -2% (read from the abstract). London 20 mph zones: casualties -42%. European cost-benefit: area-wide calming not cost-effective at European build costs",
+   "key": "cell",
+   "speed": "Not graded",
+   "studies": [
+    "furlong-2025-ltn-injuries",
+    "grundy-2009",
+    "daniels-2019-safetycube-cba"
+   ],
+   "tool": "Low-traffic cell or 20 mph zone (area-wide)",
+   "unit_cost": "About $0.75M a square kilometer (0.39 sq mi) cell",
+   "volume": "Not graded"
+  }
+ ]
+}

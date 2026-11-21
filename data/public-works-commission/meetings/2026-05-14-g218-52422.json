@@ -1,0 +1,64 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-05-14",
+ "id": "g218-52422",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52422",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes"
+  },
+  {
+   "no": "2",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the April 30, 2026 Meeting"
+  },
+  {
+   "no": "5b",
+   "title": "As-Needed Environmental Planning Services 2024"
+  },
+  {
+   "no": "5c",
+   "title": "As-Needed Mechanical Engineering Services No. 3"
+  },
+  {
+   "no": "5d",
+   "title": "As-Needed Structural Engineering Services No. 3"
+  },
+  {
+   "no": "6",
+   "title": "Shared Spaces Program Overview"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment - Continued from Item 4, if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

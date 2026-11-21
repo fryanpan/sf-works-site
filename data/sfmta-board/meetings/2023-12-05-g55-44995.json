@@ -1,0 +1,86 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-12-05",
+ "id": "g55-44995",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44995",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/29498"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes November 21, 2023, Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes (Resolution 231205-100)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 231205-100)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director of Transportation to execute Contract Modification No. 1 to Contract No. 1318, Woods Facility Rehabilitation",
+   "severed": true
+  },
+  {
+   "no": "11",
+   "title": "Authorizing the Director of Transportation to execute Contract No. SFMTA-2024-20 with ETC Institute (ETC) to conduct the 2024 Muni Onboard Survey",
+   "decision": "ADOPTED — 6 ayes (Resolution 231205-101)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion on the Fiscal Year 2022-2023 Financial Update"
+  },
+  {
+   "no": "13",
+   "title": "Transportation 2050 Program Initiatives and Capital Needs and Requirements"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion on the legal responsibilities of the SFMTA Board of Directors"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

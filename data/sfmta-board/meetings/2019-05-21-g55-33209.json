@@ -1,0 +1,133 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-05-21",
+ "id": "g55-33209",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33209",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/19229"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - May 7, 2019 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: - Update on transit service including LRV4 design solutions - Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the following traffic modifications",
+   "text": "Approving the following traffic modifications: A. ESTABLISH – STOP SIGN – Lyon Street, northbound, at Turk Boulevard. B. ESTABLISH – NO PARKING, 6 AM TO 8 AM, MONDAYS – Minnesota Street, west side, from 440 feet to 449 feet north of 22nd Street. C. ESTABLISH – STOP SIGNS – Cabrillo Street, eastbound and westbound, at 20th Avenue. D. ESTABLISH – RED ZONES – Judson Avenue, south side, from Foerster Street to 53 feet easterly; Judson Avenue, south side, from Foerster Street to 20 feet westerly; Judson Avenue, south side, from west Gennessee Street curb line to 29 feet easterly; and Judson Avenue, south side, from Gennessee Street to 20 feet westerly. E. ESTABLISH – TOW AWAY, NO PARKING ANYTIME – California Street, south side, from 16th Avenue to 40 feet easterly. (Explanatory documents include a staff report and resolution. For every parking and traffic modification that received a categorical exemption, the proposed action is the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code.) RESOLUTION 190514-050",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 190514-050)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director to file a claim with the Metropolitan Transportation Commission for allocation of operating assistance from Transportation Development Act, State Transit Assistance, AB1107 One-Half Cent Sales Tax, and Regional Measure 2 funds for Fiscal Year 2020 to support the operating budget.",
+   "text": "Authorizing the Director to file a claim with the Metropolitan Transportation Commission for allocation of operating assistance from Transportation Development Act, State Transit Assistance, AB1107 One-Half Cent Sales Tax, and Regional Measure 2 funds for Fiscal Year 2020 to support the operating budget. (Explanatory documents include a staff report and resolution. The proposed action is the Approval Action as defined by S.F. Administrative Code Chapter 31.) RESOLUTION 190514-051",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 190514-051)"
+  },
+  {
+   "no": "10.3",
+   "title": "Adopting a Resolution of Local Support for the 6th Street Pedestrian Safety Project, to be funded in part from a 2019 Regional ATP Cycle 4 grant in the amount of up to $6,000,000 from the Metropolitan Transportation Commission and making environmental review findings.",
+   "text": "Adopting a Resolution of Local Support for the 6th Street Pedestrian Safety Project, to be funded in part from a 2019 Regional ATP Cycle 4 grant in the amount of up to $6,000,000 from the Metropolitan Transportation Commission and making environmental review findings. (Explanatory documents include a staff report, environmental documents and resolution.) RESOLUTION 190514-052",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 190514-052)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to accept and expend up to $486,169 in Fiscal Year 2020 Transportation Development Act, Article 3 funds for Vision Zero Bike and Pedestrian Improvements.",
+   "text": "Authorizing the Director to accept and expend up to $486,169 in Fiscal Year 2020 Transportation Development Act, Article 3 funds for Vision Zero Bike and Pedestrian Improvements. (Explanatory documents include a staff report, and resolution.) RESOLUTION 190514-053",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 190514-053)"
+  },
+  {
+   "no": "10.5",
+   "title": "Approving the Fourth Amendment to Agreement No. CS-159, an Intergovernmental Agreement between the Transbay Joint Powers Authority and the San Francisco Municipal Transportation Agency, to reallocate funding within existing task budgets and extend the term of the Agreement from June 30, 2018 to December 31, 2019 at no additional cost.",
+   "text": "Approving the Fourth Amendment to Agreement No. CS-159, an Intergovernmental Agreement between the Transbay Joint Powers Authority and the San Francisco Municipal Transportation Agency, to reallocate funding within existing task budgets and extend the term of the Agreement from June 30, 2018 to December 31, 2019 at no additional cost. (Explanatory documents include a staff report, agreement and resolution.) RESOLUTION 190514-054 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 190514-054)"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code to designate a Muni- and Taxi-only lane on West Portal Ave, northbound, from Vicente Street to Ulloa Street",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Approving modifications associated with the 54 Felton Project: (A) MUNI FLAG STOP - Naples Street; (B) MUNI FLAG STOP - Moscow Street; (C) NO PARKING ANY TIME - Moscow Street; (D) RED ZONE - Persia St ; (E) STOP SIGNS -",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Discussion as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "13a",
+   "title": "RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "13b",
+   "title": "CLOSED SESSION: (3) Hale Guerra vs. CCSF, Superior Ct; (4) Conference with Labor Negotiator; (5) Hiring a Dir of Transportation",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

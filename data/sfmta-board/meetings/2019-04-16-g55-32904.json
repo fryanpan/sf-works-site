@@ -1,0 +1,124 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-04-16",
+ "id": "g55-32904",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32904",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/18953"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: April 2, 2019 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Update on transit service"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Making environmental review findings and approving traffic modifications",
+   "decision": "ADOPTED — 5 ayes (Resolution 190416-038)"
+  },
+  {
+   "no": "10.2",
+   "title": "Execute a funding agreement with FOCIL-MB for the design and construction of traffic signals at three locations on Terry Francois Boulevard in Mission Bay",
+   "decision": "ADOPTED — 5 ayes (Resolution 190416-039)"
+  },
+  {
+   "no": "10.3",
+   "title": "Retroactively execute Contract No. SFMTA-2018-59 between the SFMTA and moovel North America, LLC to provide mobile ticketing services and related web hosting services",
+   "decision": "ADOPTED — 5 ayes (Resolution 190416-040)"
+  },
+  {
+   "no": "10.4",
+   "title": "Approving the permitted commuter shuttle bus zone modification to remain in effect for the duration of Commuter Shuttle Program",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding Powered Scooter Share Mid-Pilot Evaluation findings"
+  },
+  {
+   "no": "12",
+   "title": "Amending the Transportation Code, Division II, to modify existing Stationless Bicycle Share Permit Program requirements",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Approving parking and traffic modifications along Sansome, Battery, Vallejo, and Davis streets between Lombard Street and Jackson Street associated with the Sansome and Battery Connections",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding the SFMTA’s plan for Chase Center events"
+  },
+  {
+   "no": "15",
+   "title": "Amending the Transportation Code Division II Section 405 to expand the South Embarcadero Special Event Parking Area to include blocks in the vicinity of the Chase Center",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "16",
+   "title": "Approving various parking and traffic modifications along the 27 Bryant route from Cyril Magnin (5th Street) at Market to Jackson Street at Van Ness as part of the 27 Bryant Transit Reliability Project",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "17",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

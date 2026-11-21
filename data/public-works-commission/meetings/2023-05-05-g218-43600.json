@@ -1,0 +1,108 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-05-05",
+ "id": "g218-43600",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43600",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair"
+  },
+  {
+   "no": "2",
+   "title": "Commission Secretary’s Report Informational"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Adopt Minutes from the April 17, 2023 Special Meeting"
+  },
+  {
+   "no": "5b",
+   "title": "Adopt Minutes from the April 21, 2023 Regular Meeting"
+  },
+  {
+   "no": "5c",
+   "title": "As-Needed Architectural Services for Health Facilities No. 3, Contract ID 1000024343 – Contract Modification"
+  },
+  {
+   "no": "5d",
+   "title": "As-Needed Sediment Characterization and Coastal Engineering Consultation Services (ASQ 2022) with Northgate-AGS Joint Venture - Contract Award"
+  },
+  {
+   "no": "5e",
+   "title": "As-Needed Sediment Characterization and Coastal Engineering Consultation Services (ASQ 2022) with Anchor QEA, LLC - Contract Award"
+  },
+  {
+   "no": "5f",
+   "title": "As-Needed Sediment Characterization and Coastal EngineeringConsultation Services (ASQ 2022) with NewFields Companies LLC - Contract Award"
+  },
+  {
+   "no": "5g",
+   "title": "As-Needed Environmental Consulting Services, Contract ID 1000017854 –Contract Modification"
+  },
+  {
+   "no": "5h",
+   "title": "Job Order Contract - J44 General Building Services Contract No.1000013086 – Contract Modification"
+  },
+  {
+   "no": "5i",
+   "title": "Job Order Contract -J55 General Building Services – Contract Award"
+  },
+  {
+   "no": "5j",
+   "title": "Job Order Contract – J56 General Building Services – Contract Award"
+  },
+  {
+   "no": "5k",
+   "title": "Job Order Contract - J59 General Engineering Services - Contract Award"
+  },
+  {
+   "no": "5l",
+   "title": "Job Order Contract – J60 General Building Services – Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "As-Needed Citywide Pavement Preservation Contract 5 (General As-neededContract G23) – Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "Racial Equity Action Plan Update Informational Presentation"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Director Hiring Update Informational Attachment"
+  },
+  {
+   "no": "9",
+   "title": "Director and Secretary Review Briefing Informational"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

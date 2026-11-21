@@ -1,0 +1,318 @@
+{
+ "generated": "2026-11-11",
+ "year": 2026,
+ "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
+ "centerlines": {
+  "dataset": "https://data.sf.gov/d/3psu-pn9h",
+  "queried": "2026-11-11"
+ },
+ "projects": [
+  {
+   "node": "45035",
+   "name": "Winston Drive Quick-Build Project",
+   "page": "https://www.sfmta.com/node/45035",
+   "phase": "Completed",
+   "page_edited": "2026-11-10",
+   "year": 2026,
+   "quote": "This project has been completed as of October 2026",
+   "class": "CLASS IV",
+   "matched_by": "streets",
+   "blocks": [
+    {
+     "cnn": "13689000",
+     "street": "WINSTON DR",
+     "from": "BUCKINGHAM WAY",
+     "to": "LAKE MERCED BLVD",
+     "pts": [
+      [
+       -122.478698,
+       37.728211
+      ],
+      [
+       -122.479275,
+       37.728553
+      ],
+      [
+       -122.479793,
+       37.728551
+      ],
+      [
+       -122.480262,
+       37.728337
+      ],
+      [
+       -122.48148,
+       37.727336
+      ],
+      [
+       -122.481932,
+       37.727113
+      ],
+      [
+       -122.483864,
+       37.72702
+      ]
+     ]
+    }
+   ],
+   "lines": [
+    [
+     [
+      -122.483969,
+      37.72702
+     ],
+     [
+      -122.481909,
+      37.727122
+     ],
+     [
+      -122.481544,
+      37.7273
+     ],
+     [
+      -122.480106,
+      37.728445
+     ],
+     [
+      -122.479752,
+      37.728539
+     ],
+     [
+      -122.479484,
+      37.728556
+     ],
+     [
+      -122.479076,
+      37.728471
+     ],
+     [
+      -122.478915,
+      37.72836
+     ],
+     [
+      -122.478808,
+      37.728276
+     ],
+     [
+      -122.478765,
+      37.728225
+     ]
+    ]
+   ]
+  },
+  {
+   "node": "1110",
+   "name": "Cesar Chavez/Potrero Ave/Bayshore Blvd Intersection Improvements (The Hairball)",
+   "page": "https://www.sfmta.com/node/1110",
+   "phase": "Completed",
+   "page_edited": "2026-05-12",
+   "year": 2026,
+   "quote": "Implementation was completed in early 2026",
+   "class": "CLASS IV",
+   "matched_by": "cnns",
+   "blocks": [
+    {
+     "cnn": "2799102",
+     "street": "BAY SHORE BLVD",
+     "from": "HWY 101 S OFF RAMP",
+     "to": "JERROLD AVE",
+     "pts": [
+      [
+       -122.403497,
+       37.748994
+      ],
+      [
+       -122.403625,
+       37.748669
+      ],
+      [
+       -122.403656,
+       37.748355
+      ],
+      [
+       -122.403615,
+       37.748113
+      ],
+      [
+       -122.403561,
+       37.747762
+      ]
+     ]
+    }
+   ],
+   "lines": [
+    [
+     [
+      -122.405865,
+      37.750858
+     ],
+     [
+      -122.405457,
+      37.75012
+     ],
+     [
+      -122.405039,
+      37.749594
+     ],
+     [
+      -122.404266,
+      37.74984
+     ],
+     [
+      -122.40182,
+      37.74967
+     ],
+     [
+      -122.401702,
+      37.749229
+     ],
+     [
+      -122.403097,
+      37.749187
+     ],
+     [
+      -122.403386,
+      37.747762
+     ],
+     [
+      -122.403032,
+      37.747363
+     ],
+     [
+      -122.403397,
+      37.74693
+     ],
+     [
+      -122.404191,
+      37.746913
+     ],
+     [
+      -122.403934,
+      37.747948
+     ],
+     [
+      -122.404438,
+      37.748373
+     ],
+     [
+      -122.405639,
+      37.748873
+     ],
+     [
+      -122.406712,
+      37.748593
+     ],
+     [
+      -122.406927,
+      37.749
+     ],
+     [
+      -122.405672,
+      37.749314
+     ],
+     [
+      -122.406347,
+      37.750646
+     ],
+     [
+      -122.405865,
+      37.750858
+     ]
+    ]
+   ]
+  },
+  {
+   "node": "28896",
+   "name": "Beach Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28896",
+   "phase": "Implementation / Construction",
+   "page_edited": "2026-08-12",
+   "year": 2026,
+   "quote": "Construction for the Beach Street Quick-Build Project is substantially complete",
+   "class": "CLASS IV",
+   "matched_by": "cnns",
+   "blocks": [
+    {
+     "cnn": "2848000",
+     "street": "BEACH ST",
+     "from": "POLK ST",
+     "to": "END: 900-999 BLOCK",
+     "pts": [
+      [
+       -122.423845,
+       37.806222
+      ],
+      [
+       -122.424854,
+       37.806091
+      ]
+     ]
+    },
+    {
+     "cnn": "2847000",
+     "street": "BEACH ST",
+     "from": "LARKIN ST",
+     "to": "POLK ST",
+     "pts": [
+      [
+       -122.422196,
+       37.806436
+      ],
+      [
+       -122.423845,
+       37.806222
+      ]
+     ]
+    },
+    {
+     "cnn": "2846000",
+     "street": "BEACH ST",
+     "from": "HYDE ST",
+     "to": "LARKIN ST",
+     "pts": [
+      [
+       -122.42056,
+       37.806658
+      ],
+      [
+       -122.422196,
+       37.806436
+      ]
+     ]
+    },
+    {
+     "cnn": "2845000",
+     "street": "BEACH ST",
+     "from": "COLUMBUS AVE",
+     "to": "HYDE ST",
+     "pts": [
+      [
+       -122.419577,
+       37.80678
+      ],
+      [
+       -122.42056,
+       37.806658
+      ]
+     ]
+    }
+   ],
+   "lines": [
+    [
+     [
+      -122.423845,
+      37.806222
+     ],
+     [
+      -122.409055,
+      37.80812
+     ],
+     [
+      -122.40906,
+      37.808111
+     ]
+    ]
+   ]
+  }
+ ]
+}

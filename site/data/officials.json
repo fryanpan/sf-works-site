@@ -1,0 +1,39 @@
+{
+  "asOf": "2026-10-06",
+  "note": "Hand-kept. Each name and address was read on the official's own page on sf.gov on the asOf date (sfbos.org now redirects to sf.gov). To update: open each url, change name or email, and set asOf. The email is the contact address the page itself publishes: each supervisor's office inbox, and the Mayor's 'Contact the Mayor' address.",
+  "board": {
+    "name": "Board of Supervisors",
+    "url": "https://www.sf.gov/departments--board-supervisors",
+    "clerkEmail": "Board.of.Supervisors@sfgov.org",
+    "findYourSupervisor": "https://sfplanninggis.org/sffind/"
+  },
+  "mayor": {
+    "name": "Daniel Lurie",
+    "title": "Mayor",
+    "email": "daniel.lurie@sfgov.org",
+    "url": "https://www.sf.gov/departments--office-mayor",
+    "photo": {
+      "file": "official-daniel-lurie.jpg",
+      "by": "Office of the Mayor, City and County of San Francisco",
+      "licence": "Public domain (PD-CAGov)",
+      "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov",
+      "url": "https://commons.wikimedia.org/wiki/File:Daniel_Lurie_Mayoral_Photo.jpg",
+      "original": "https://www.sf.gov/profile/daniel-lurie",
+      "read": "2026-10-06"
+    }
+  },
+  "photoNote": "Each photo is the official's official portrait as hosted on Wikimedia Commons, where every one is marked public domain under PD-CAGov; 'original' is the city page Commons names as its source. Cropped square and resized to 96 by 96 (shown at 48) into site/data/photos/official-*.jpg. 'read' is the date the Commons file page and its licence were checked.",
+  "supervisors": [
+    {"district": 1, "name": "Connie Chan", "email": "ChanStaff@sfgov.org", "url": "https://www.sf.gov/district-1-supervisor-connie-chan", "photo": {"file": "official-connie-chan.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Connie_Chan_2023.jpg", "original": "https://sfbos.org/roster-members", "read": "2026-10-06"}},
+    {"district": 2, "name": "Stephen Sherrill", "email": "SherrillStaff@sfgov.org", "url": "https://www.sf.gov/district-2-supervisor-stephen-sherrill", "photo": {"file": "official-stephen-sherrill.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Stephen_Sherrill,_2025.jpg", "original": "https://sfbos.org/supervisor-sherrill-district-2", "read": "2026-10-06"}},
+    {"district": 3, "name": "Danny Sauter", "email": "SauterStaff@sfgov.org", "url": "https://www.sf.gov/district-3-supervisor-danny-sauter", "photo": {"file": "official-danny-sauter.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Danny_Sauter,_2025.jpg", "original": "https://sfbos.org/supervisor-sauter-district-3", "read": "2026-10-06"}},
+    {"district": 4, "name": "Alan Wong", "email": "WongStaff@sfgov.org", "url": "https://www.sf.gov/district-4-supervisor-alan-wong", "photo": {"file": "official-alan-wong.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Alan_Wong,_2026.jpg", "original": "https://sfbos.org/supervisor-wong-district-4", "read": "2026-10-06"}},
+    {"district": 5, "name": "Bilal Mahmood", "email": "MahmoodStaff@sfgov.org", "url": "https://www.sf.gov/district-5-supervisor-bilal-mahmood", "photo": {"file": "official-bilal-mahmood.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Bilal_Mahmood,_2025.jpg", "original": "https://sfbos.org/supervisor-mahmood-district-5", "read": "2026-10-06"}},
+    {"district": 6, "name": "Matt Dorsey", "email": "DorseyStaff@sfgov.org", "url": "https://www.sf.gov/district-6-supervisor-matt-dorsey", "photo": {"file": "official-matt-dorsey.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Matt_Dorsey,_2022.jpg", "original": "https://sfbos.org/supervisor-dorsey-district-6", "read": "2026-10-06"}},
+    {"district": 7, "name": "Myrna Melgar", "email": "MelgarStaff@sfgov.org", "url": "https://www.sf.gov/district-7-supervisor-myrna-melgar", "photo": {"file": "official-myrna-melgar.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Myrna_Melgar,_2025.jpg", "original": "https://sfbos.org/roster-members", "read": "2026-10-06"}},
+    {"district": 8, "name": "Rafael Mandelman", "email": "MandelmanStaff@sfgov.org", "url": "https://www.sf.gov/district-8-supervisor-rafael-mandelman", "role": "President of the Board", "photo": {"file": "official-rafael-mandelman.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Rafael_Mandelman,_2025.jpg", "original": "https://sfbos.org/roster-members", "read": "2026-10-06"}},
+    {"district": 9, "name": "Jackie Fielder", "email": "FielderStaff@sfgov.org", "url": "https://www.sf.gov/district-9-supervisor-jackie-fielder", "photo": {"file": "official-jackie-fielder.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Jackie_Fielder,_2025.jpg", "original": "https://sfbos.org/supervisor-fielder-district-9", "read": "2026-10-06"}},
+    {"district": 10, "name": "Shamann Walton", "email": "WaltonStaff@sfgov.org", "url": "https://www.sf.gov/district-10-supervisor-shamann-walton", "photo": {"file": "official-shamann-walton.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Shamann_Walton,_2025.jpg", "original": "https://sfbos.org/roster-members", "read": "2026-10-06"}},
+    {"district": 11, "name": "Chyanne Chen", "email": "ChenStaff@sfgov.org", "url": "https://www.sf.gov/district-11-supervisor-chyanne-chen", "photo": {"file": "official-chyanne-chen.jpg", "by": "San Francisco Board of Supervisors", "licence": "Public domain (PD-CAGov)", "licenceUrl": "https://commons.wikimedia.org/wiki/Template:PD-CAGov", "url": "https://commons.wikimedia.org/wiki/File:Chyanne_Chen,_2025.jpg", "original": "https://sfbos.org/supervisor-chen-district-11", "read": "2026-10-06"}}
+  ]
+}

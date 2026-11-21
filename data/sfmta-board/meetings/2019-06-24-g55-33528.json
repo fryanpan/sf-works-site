@@ -1,0 +1,83 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-06-24",
+ "id": "g55-33528",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33528",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/19823"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting.",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Communications"
+  },
+  {
+   "no": "5",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "6",
+   "title": "Adopting and implementing the decision and award of the Arbitration Board, establishing a successor Memorandum of Understanding with the Service Employees’ International Union, Local 1021",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "7",
+   "title": "Adopting and implementing a successor Memorandum of Understanding with the Transport Workers Union Local 250A for Transit Operators",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "8",
+   "title": "Adopting and implementing a successor Memorandum of Understanding with the Transport Workers Union Local 250-A, Automotive Service Workers",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "9",
+   "title": "Adopting and implementing a successor Memorandum of Understanding with the Transport Workers Union Local 250A, Transit Fare Inspector",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10",
+   "title": "Adopting and implementing a successor Memorandum of Understandingbetween the SFMTA and International Association of Machinists, Local 1414",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "11",
+   "title": "Adopting and implementing the decision andaward of the Arbitration Board, establishinga successor Memorandum of Understanding with the Transport Workers Union, Local 200",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Adopting and implementing the decision and award of the Arbitration Board establishinga successor Memorandum of Understanding between the SFMTA and the International Brotherhood of Electrical Workers, Local 6",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Adopting and implementing a successor Memorandum of Understanding (MOU) between the SFMTA and the Municipal Executives Association (MEA)",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA:A.Latrice Millard vs. CCSF",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

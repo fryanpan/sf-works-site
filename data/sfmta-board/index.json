@@ -1,0 +1,1318 @@
+{
+ "body": "sfmta-board",
+ "name": "SFMTA Board of Directors",
+ "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+ "generated": "2026-11-10",
+ "since": "2019-01-01",
+ "range": [
+  "2019-01-15",
+  "2026-10-29"
+ ],
+ "listed": 185,
+ "held": 185,
+ "mirrored": 184,
+ "missing": 1,
+ "missingShare": 0.0054,
+ "items": 3694,
+ "notes": [
+  "Agendas from SFGovTV's Granicus view 55; dispositions from the minutes on https://www.sfmta.com/resolutions-legislation, which reach back to the 2018-12-18 meeting; a consent calendar the agenda index lacks, or holds only in part, gets its other items from the minutes."
+ ],
+ "meetings": [
+  {
+   "date": "2019-01-15",
+   "id": "g55-32179",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32179",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-02-05",
+   "id": "g55-32336",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32336",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-02-19",
+   "id": "g55-32444",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32444",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-05",
+   "id": "g55-32579",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32579",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-19",
+   "id": "g55-32722",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32722",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-02",
+   "id": "g55-32798",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32798",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-16",
+   "id": "g55-32904",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32904",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-07",
+   "id": "g55-33056",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33056",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-21",
+   "id": "g55-33209",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33209",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-04",
+   "id": "g55-33300",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33300",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-18",
+   "id": "g55-33459",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33459",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-24",
+   "id": "g55-33528",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33528",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-07-16",
+   "id": "g55-33690",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33690",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-08-20",
+   "id": "g55-33849",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33849",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-03",
+   "id": "g55-33908",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33908",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-17",
+   "id": "g55-34019",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-01",
+   "id": "g55-34140",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34140",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-15",
+   "id": "g55-34267",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34267",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-05",
+   "id": "g55-34432",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34432",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-19",
+   "id": "g55-34545",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34545",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-03",
+   "id": "g55-34633",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34633",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-07",
+   "id": "g55-34833",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34833",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-21",
+   "id": "g55-34963",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34963",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-04",
+   "id": "g55-35077",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35077",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-18",
+   "id": "g55-35216",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35216",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-03-03",
+   "id": "g55-35350",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35350",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-03-17",
+   "id": "g55-35455",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35455",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-07",
+   "id": "g55-35553",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35553",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-21",
+   "id": "g55-35627",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35627",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-05-19",
+   "id": "g55-35789",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35789",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-02",
+   "id": "g55-35853",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35853",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-16",
+   "id": "g55-35957",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35957",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-30",
+   "id": "g55-36060",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36060",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-21",
+   "id": "g55-36234",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36234",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-31",
+   "id": "g55-36301",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36301",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-08-05",
+   "id": "g55-36324",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36324",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-08-18",
+   "id": "g55-36392",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36392",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-01",
+   "id": "g55-36497",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36497",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-15",
+   "id": "g55-36603",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36603",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-06",
+   "id": "g55-36790",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36790",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-20",
+   "id": "g55-36888",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36888",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-03",
+   "id": "g55-37000",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37000",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-17",
+   "id": "g55-37088",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37088",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-01",
+   "id": "g55-37192",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37192",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-15",
+   "id": "g55-37330",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37330",
+   "outcome": "empty",
+   "reason": "agenda parsed to no items (none)"
+  },
+  {
+   "date": "2021-01-05",
+   "id": "g55-37420",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37420",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-19",
+   "id": "g55-37583",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37583",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-02",
+   "id": "g55-37697",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37697",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-03",
+   "id": "g55-37716",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37716",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-16",
+   "id": "g55-37803",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37803",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-02",
+   "id": "g55-37925",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37925",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-16",
+   "id": "g55-38042",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38042",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-06",
+   "id": "g55-38180",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38180",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-20",
+   "id": "g55-38331",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38331",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-04",
+   "id": "g55-38460",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38460",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-18",
+   "id": "g55-38563",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38563",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-01",
+   "id": "g55-38659",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38659",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-10",
+   "id": "g55-38742",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38742",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-15",
+   "id": "g55-38784",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38784",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-30",
+   "id": "g55-38904",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38904",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-20",
+   "id": "g55-39013",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39013",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-03",
+   "id": "g55-39121",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39121",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-17",
+   "id": "g55-39201",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39201",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-07",
+   "id": "g55-39293",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39293",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-21",
+   "id": "g55-39409",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39409",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-05",
+   "id": "g55-39512",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39512",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-19",
+   "id": "g55-39641",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39641",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-02",
+   "id": "g55-39767",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39767",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-16",
+   "id": "g55-39879",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39879",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-12-07",
+   "id": "g55-40026",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-12-21",
+   "id": "g55-40177",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40177",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-18",
+   "id": "g55-40310",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40310",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-01",
+   "id": "g55-40434",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40434",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-02",
+   "id": "g55-40448",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40448",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-15",
+   "id": "g55-40561",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40561",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-01",
+   "id": "g55-40666",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40666",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-10",
+   "id": "g55-40743",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40743",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-15",
+   "id": "g55-40787",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40787",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-05",
+   "id": "g55-40930",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40930",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-12",
+   "id": "g55-40990",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40990",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-19",
+   "id": "g55-41055",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41055",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-03",
+   "id": "g55-41179",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41179",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-17",
+   "id": "g55-41302",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41302",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-31",
+   "id": "g55-41387",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41387",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-07",
+   "id": "g55-41431",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41431",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-07",
+   "id": "g55-41433",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41433",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-21",
+   "id": "g55-41529",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41529",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-28",
+   "id": "g55-41582",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41582",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-07-19",
+   "id": "g55-41711",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41711",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-08-02",
+   "id": "g55-41807",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41807",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-06",
+   "id": "g55-41957",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41957",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-20",
+   "id": "g55-42068",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42068",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-04",
+   "id": "g55-42171",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42171",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-18",
+   "id": "g55-42280",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42280",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-01",
+   "id": "g55-42391",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42391",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-15",
+   "id": "g55-42479",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42479",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-06",
+   "id": "g55-42575",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42575",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-13",
+   "id": "g55-42649",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42649",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-17",
+   "id": "g55-42781",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42781",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-07",
+   "id": "g55-42946",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42946",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-21",
+   "id": "g55-43051",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43051",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-07",
+   "id": "g55-43132",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43132",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-21",
+   "id": "g55-43240",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43240",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-04",
+   "id": "g55-43296",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43296",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-18",
+   "id": "g55-43435",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43435",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-02",
+   "id": "g55-43565",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43565",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-16",
+   "id": "g55-43675",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43675",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-06",
+   "id": "g55-43846",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43846",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-20",
+   "id": "g55-43955",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43955",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-30",
+   "id": "g55-44022",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-18",
+   "id": "g55-44110",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44110",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-01",
+   "id": "g55-44196",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44196",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-15",
+   "id": "g55-44245",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44245",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-05",
+   "id": "g55-44346",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44346",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-19",
+   "id": "g55-44488",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44488",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-03",
+   "id": "g55-44580",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44580",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-17",
+   "id": "g55-44682",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44682",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-07",
+   "id": "g55-44841",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44841",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-21",
+   "id": "g55-44926",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44926",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-05",
+   "id": "g55-44995",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44995",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-16",
+   "id": "g55-45212",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45212",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-30",
+   "id": "g55-45295",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45295",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-06",
+   "id": "g55-45352",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45352",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-20",
+   "id": "g55-45486",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45486",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-05",
+   "id": "g55-45581",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45581",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-19",
+   "id": "g55-45681",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45681",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-02",
+   "id": "g55-45798",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45798",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-16",
+   "id": "g55-45887",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45887",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-07",
+   "id": "g55-46069",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46069",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-21",
+   "id": "g55-46200",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46200",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-04",
+   "id": "g55-46276",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46276",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-13",
+   "id": "g55-46370",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46370",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-18",
+   "id": "g55-46399",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46399",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-28",
+   "id": "g55-46470",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46470",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-16",
+   "id": "g55-46548",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46548",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-08-06",
+   "id": "g55-46675",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46675",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-03",
+   "id": "g55-46804",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46804",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-17",
+   "id": "g55-46929",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46929",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-01",
+   "id": "g55-47051",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47051",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-15",
+   "id": "g55-47214",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47214",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-06",
+   "id": "g55-47583",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47583",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-19",
+   "id": "g55-47734",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47734",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-03",
+   "id": "g55-47879",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47879",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-17",
+   "id": "g55-48142",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=48142",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-21",
+   "id": "g55-48457",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=48457",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-04",
+   "id": "g55-48581",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=48581",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-18",
+   "id": "g55-48739",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=48739",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-04",
+   "id": "g55-48934",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=48934",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-18",
+   "id": "g55-49159",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49159",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-01",
+   "id": "g55-49384",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49384",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-15",
+   "id": "g55-49516",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49516",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-22",
+   "id": "g55-49588",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49588",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-06",
+   "id": "g55-49751",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49751",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-20",
+   "id": "g55-49926",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49926",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-03",
+   "id": "g55-50120",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50120",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-17",
+   "id": "g55-50250",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50250",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-15",
+   "id": "g55-50409",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50409",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-08-05",
+   "id": "g55-50544",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50544",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-02",
+   "id": "g55-50645",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50645",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-16",
+   "id": "g55-50755",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50755",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-07",
+   "id": "g55-50899",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50899",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-21",
+   "id": "g55-50991",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50991",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-04",
+   "id": "g55-51072",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51072",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-18",
+   "id": "g55-51178",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51178",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-02",
+   "id": "g55-51258",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51258",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-16",
+   "id": "g55-51390",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51390",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-06",
+   "id": "g55-51449",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51449",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-20",
+   "id": "g55-51602",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51602",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-03",
+   "id": "g55-51720",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51720",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-17",
+   "id": "g55-51818",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51818",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-03",
+   "id": "g55-51910",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51910",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-17",
+   "id": "g55-52012",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52012",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-07",
+   "id": "g55-52132",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52132",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-21",
+   "id": "g55-52249",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52249",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-05",
+   "id": "g55-52340",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52340",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-19",
+   "id": "g55-52461",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52461",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-02",
+   "id": "g55-52548",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52548",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-16",
+   "id": "g55-52640",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52640",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-21",
+   "id": "g55-52900",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52900",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-08-04",
+   "id": "g55-52975",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52975",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-01",
+   "id": "g55-53087",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53087",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-05",
+   "id": "g55-53297",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53297",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-06",
+   "id": "g55-53309",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53309",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-20",
+   "id": "g55-53391",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53391",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-29",
+   "id": "g55-53464",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53464",
+   "outcome": "mirrored"
+  }
+ ]
+}

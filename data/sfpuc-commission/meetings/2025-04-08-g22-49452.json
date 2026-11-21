@@ -1,0 +1,117 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2025-04-08",
+ "id": "g22-49452",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=49452",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/4.8.2025_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of March 25, 2025",
+   "decision": "approve the minutes of March 25, 2025"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events andAnnouncements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided. REGULAR CALENDAR"
+  },
+  {
+   "no": "6",
+   "title": "Public Hearing to approve the Ultra-High Efficiency Toilet Rebate Program and adopt Rules and Regulations by issuing rebates to customers who purchase and install Premium certified ultra-high efficiency toilets",
+   "decision": "approve Item 6",
+   "resolution": "25-0058",
+   "text": "Public Hearing to approve the Ultra-High Efficiency Toilet Rebate Program and adopt Rules and Regulations to allow the San Francisco Public Utilities Commission to continue to promote indoor water efficiency in its retail service area, by issuing rebates to customers who purchase and install U.S. Environmental Protection Agency WaterSense, Maximum Performance tested Premium certified ultra-high efficiency toilets to replace existing toilets with a maximum rated flush volume of 1.1 gallons per flush"
+  },
+  {
+   "no": "7",
+   "title": "Public Hearing to consider the adoption of (1) rates of the San Francisco Public UtilitiesCommission Power Enterprise for Hetch Hetchy Power service (2) revision of existing fees for rental of certain facilities to hold",
+   "decision": "approve Item 7",
+   "resolution": "25-0059",
+   "text": "Public Hearing to consider the adoption of (1) rates of the San Francisco Public Utilities Commission Power Enterprise for Hetch Hetchy Power service, to be effective with meter readings beginning on or after July 1, 2025 and (2) revision of existing fees for rental of certain facilities beginning May 1, 2025 and updated on July 1, 2026. Separately, SFPUC staff are proposing to hold CleanPowerSF rates flat for Fiscal Year (FY) 2025-26. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA) pursuant to San Francisco Administrative Code section 31.04(h). The Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on that determination to make its decision on this action"
+  },
+  {
+   "no": "8",
+   "title": "Approve Southeast Community Center Digital Equity Operator Grant Program revisions and authorize the General Manager to execute a grant agreement under the revised Grant program",
+   "decision": "approve Item 8",
+   "resolution": "25-0060",
+   "text": "Approve Southeast Community Center Digital Equity Operator Grant Program revisions to increase the annual grant award to a total not-to-exceed amount of $200,000; and authorize the General Manager to execute a grant agreement under the revised Grant program. Elise Washington, Community Benefits and Youth Workforce Senior Administrative"
+  },
+  {
+   "no": "9",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "9a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "9b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "9c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "9d",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "9e",
+   "title": "Power Quarterly Report on Delegated Authority Contracts Pursuant to Administrative Codesection 21.43",
+   "text": "Power Quarterly Report on Delegated Authority Contracts Pursuant to Administrative Code section 21.43"
+  },
+  {
+   "no": "10",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) SFPUC APRIL 8, 2025 MEETING MINUTES No items were initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "Public Comment on the matter to be addressed during Closed Session"
+  },
+  {
+   "no": "12",
+   "title": "Motion on whether to assert the attorney-client privilege CLOSED SESSION"
+  },
+  {
+   "no": "13",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session SFPUC APRIL 8, 2025 MEETING MINUTES President Stacy stated that the Commission recommends the Board of Supervisors approve the settlement referenced under Item 12"
+  },
+  {
+   "no": "14",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session",
+   "decision": "not to disclose",
+   "text": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  },
+  {
+   "no": "15",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

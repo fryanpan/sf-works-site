@@ -1,0 +1,109 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-03-05",
+ "id": "g55-32579",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32579",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/18616"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting.",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report -Special Recognition- Update on Vision Zero -Commemoration of Rosa Parks -Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available",
+   "decision": "ADOPTED — 7 ayes (Resolution 190305-025)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the following traffic modifications:A.ESTABLISH – BLUE ZONE, DISABLED PARKING ONLY, AT ALL TIMES",
+   "decision": "ADOPTED — 7 ayes (Resolution 190305-026)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute a Lease Termination Agreement with Tad’s Inc.",
+   "decision": "ADOPTED — 7 ayes (Resolution 190305-027)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute a Commercial Lease Agreement with Tad’s Inc. for retail space, located at 44 Ellis Stree",
+   "decision": "ADOPTED — 7 ayes (Resolution 190305-028)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Bike Share community outreach process."
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding Light Rail Vehicle procurement Phase II upgrades."
+  },
+  {
+   "no": "13",
+   "title": "Awarding Contract No. 1306, L Taraval Improvement Project - SF Zoo to Sunset Boulevard",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege Closed Session",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session."
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in closed session."
+  },
+  {
+   "no": "17",
+   "title": "ADJOURN"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

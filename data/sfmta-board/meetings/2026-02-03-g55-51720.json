@@ -1,0 +1,49 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-02-03",
+ "id": "g55-51720",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51720",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45181"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Introduction and Opening Remarks"
+  },
+  {
+   "no": "5",
+   "title": "Presentation and discussion regarding a citywide economic overview and agency budget overview"
+  },
+  {
+   "no": "6",
+   "title": "Presentation and discussion regarding planning scenarios for regional and local funding measure outcomes"
+  },
+  {
+   "no": "7",
+   "title": "Presentation and panel discussion regarding SFMTA budget outreach and community feedback"
+  },
+  {
+   "no": "8",
+   "title": "Closing Remarks"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

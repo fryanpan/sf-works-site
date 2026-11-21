@@ -1,0 +1,4383 @@
+{
+ "excluded_unbuilt": [
+  {
+   "node": "18897",
+   "name": "Active Beale Street",
+   "phase": null,
+   "page": "https://www.sfmta.com/node/18897"
+  },
+  {
+   "node": "28373",
+   "name": "Arguello Safety Project",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/28373"
+  },
+  {
+   "node": "29974",
+   "name": "Bayview Community Pathway",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/29974"
+  },
+  {
+   "node": "44134",
+   "name": "Bosworth/Monterey Connections Quick-Build Project",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/44134"
+  },
+  {
+   "node": "752",
+   "name": "Central Embarcadero Safety Project",
+   "phase": null,
+   "page": "https://www.sfmta.com/node/752"
+  },
+  {
+   "node": "30111",
+   "name": "Cesar Chavez Bikeway Improvements Project",
+   "phase": "Detailed Design",
+   "page": "https://www.sfmta.com/node/30111"
+  },
+  {
+   "node": "44133",
+   "name": "Jefferson Street Quick-Build Project",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/44133"
+  },
+  {
+   "node": "27339",
+   "name": "Main Street Streetscape Project",
+   "phase": "Detailed Design",
+   "page": "https://www.sfmta.com/node/27339"
+  },
+  {
+   "node": "27617",
+   "name": "Noe Slow Street and Duboce Triangle Planning Study",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/27617"
+  },
+  {
+   "node": "19953",
+   "name": "Page Slow Street",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/19953"
+  },
+  {
+   "node": "28582",
+   "name": "Sutter Street Quick-Build Project",
+   "phase": "Planning",
+   "page": "https://www.sfmta.com/node/28582"
+  }
+ ],
+ "generated": "2026-11-10",
+ "years": [
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "rule": "A block that became all-ages after 2015 is attributed to an SFMTA project when exactly one project's published line geometry covers the block and SFMTA tags the project Bike or its page lists bicycle infrastructure improvements; when several cover it, the one whose name is the block's street, or, when that project's page dates its work to other years, the one whose page dates work to the block's year. A project SFMTA lists in planning or design counts only when its page says the work is complete. The block's year must fall within a year of the years the project's own page dates its construction or installation to. A Slow Street with no project line goes to SFMTA's page for that street, or to a stand-in named from the Slow Streets dataset. Area (polygon) projects are excluded. A resident, school or branch is attributed to the project of the block that first brought it within 0.25 miles.",
+ "residents_basis": "Census 2020 block population (pop20), at the block's interior point",
+ "miles_basis": "Row miles per direction row, the Biking and Rolling Plan's unit, as written by tools/bike-network/bike-network-history.py",
+ "baseline": {
+  "miles": 134.5,
+  "segments": 512,
+  "residents": 552805,
+  "schools": 100,
+  "libraries": 12
+ },
+ "gained": {
+  "miles": 98.9,
+  "segments": 731
+ },
+ "attributed": {
+  "miles": 65.2,
+  "segments": 481,
+  "projects": 66
+ },
+ "unattributed": {
+  "miles": 33.6,
+  "segments": 250,
+  "no_project_on_block": {
+   "miles": 28.1,
+   "segments": 204
+  },
+  "more_than_one_project_on_block": {
+   "miles": 5.5,
+   "segments": 46,
+   "pairs": [
+    [
+     "7th Street and 8th Street Safety Projects / Folsom-Howard Streetscape Project",
+     7
+    ],
+    [
+     "Folsom Street Quick-Build Project / Folsom-Howard Streetscape Project / Second Street Improvement Project",
+     4
+    ],
+    [
+     "Folsom Street Quick-Build Project / Folsom-Howard Streetscape Project",
+     4
+    ],
+    [
+     "13th Street Safety Project / Division/13th Street Safety Project",
+     2
+    ],
+    [
+     "Better Market Street / Raised Bikeway Demonstration Project",
+     2
+    ],
+    [
+     "Better Market Street / Valencia Bikeway Improvements",
+     2
+    ],
+    [
+     "7th Street and 8th Street Safety Projects / Mission Bay Blvd Quick-Build Project",
+     2
+    ],
+    [
+     "Alemany Bikeway Project / Alemany Interchange Bike Lanes Project",
+     2
+    ]
+   ]
+  },
+  "residents": 103873,
+  "schools": 40,
+  "libraries": 6
+ },
+ "outside_build_years": {
+  "17th Street Bicycle Safety Project": [
+   {
+    "street": "SANCHEZ ST",
+    "year": 2024,
+    "miles": 0.22
+   }
+  ],
+  "23rd Avenue Slow Street": [
+   {
+    "street": "23RD AVE",
+    "year": 2016,
+    "miles": 0.26
+   }
+  ],
+  "7th Street and 8th Street Safety Projects": [
+   {
+    "street": "MISSISSIPPI ST",
+    "year": 2025,
+    "miles": 0.18
+   }
+  ],
+  "Alemany Interchange Bike Lanes Project": [
+   {
+    "street": "SAN BRUNO AVE",
+    "year": 2021,
+    "miles": 0.03
+   },
+   {
+    "street": "SAN BRUNO AVE",
+    "year": 2021,
+    "miles": 0.03
+   },
+   {
+    "street": "SAN BRUNO AVE",
+    "year": 2021,
+    "miles": 0.05
+   }
+  ],
+  "Clay Slow Street": [
+   {
+    "street": "ARGUELLO BLVD",
+    "year": 2016,
+    "miles": 0.08
+   }
+  ],
+  "Golden Gate Park Access and Safety Program": [
+   {
+    "street": "TRANSVERSE DR",
+    "year": 2025,
+    "miles": 0.16
+   },
+   {
+    "street": "TRANSVERSE DR",
+    "year": 2025,
+    "miles": 0.1
+   }
+  ],
+  "Hearst Avenue Slow Street": [
+   {
+    "street": "HEARST AVE",
+    "year": 2016,
+    "miles": 0.25
+   }
+  ],
+  "Indiana Street Bikeway Project": [
+   {
+    "street": "INDIANA ST",
+    "year": 2023,
+    "miles": 0.17
+   }
+  ],
+  "Lake Slow Street": [
+   {
+    "street": "ARGUELLO BLVD",
+    "year": 2016,
+    "miles": 0.04
+   },
+   {
+    "street": "ARGUELLO BLVD",
+    "year": 2016,
+    "miles": 0.13
+   }
+  ],
+  "Masonic Avenue Streetscape Project": [
+   {
+    "street": "FELL ST",
+    "year": 2020,
+    "miles": 0.09
+   }
+  ],
+  "Panhandle Social Distancing and Safety Project": [
+   {
+    "street": "FELL ST",
+    "year": 2017,
+    "miles": 0.07
+   },
+   {
+    "street": "FELL ST",
+    "year": 2017,
+    "miles": 0.09
+   }
+  ],
+  "Sansome and Battery Connections Project": [
+   {
+    "street": "THE EMBARCADERO",
+    "year": 2024,
+    "miles": 0.11
+   }
+  ],
+  "Second Street Improvement Project": [
+   {
+    "street": "2ND ST",
+    "year": 2016,
+    "miles": 0.07
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.11
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.16
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.08
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.05
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.03
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.04
+   },
+   {
+    "street": "2ND ST",
+    "year": 2021,
+    "miles": 0.04
+   }
+  ],
+  "Terry Francois Boulevard Quick-Build": [
+   {
+    "street": "03RD ST",
+    "year": 2026,
+    "miles": 0.07
+   }
+  ],
+  "Turk Street Safety Project": [
+   {
+    "street": "POLK ST",
+    "year": 2022,
+    "miles": 0.03
+   }
+  ],
+  "Wiggle Neighborhood Green Corridor": [
+   {
+    "street": "PAGE ST",
+    "year": 2020,
+    "miles": 0.18
+   }
+  ]
+ },
+ "mileBasis": "per direction of travel",
+ "projects": [
+  {
+   "node": "slow:cayugaavenue",
+   "name": "Cayuga Avenue Slow Street",
+   "page": "https://data.sf.gov/d/hkz3-itiu",
+   "phase": null,
+   "stand_in": true,
+   "teaser": null,
+   "image": null,
+   "thumb": null,
+   "types": [
+    "Bike"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "3817000",
+    "3818000",
+    "3819000",
+    "3820000",
+    "3821000",
+    "3822000",
+    "3823000",
+    "3824000",
+    "3825000",
+    "3826000",
+    "3827000",
+    "3828000",
+    "3829000",
+    "3830000",
+    "3831000",
+    "3832000",
+    "3833000",
+    "3834000",
+    "3835000",
+    "3836000",
+    "3837000",
+    "3838000",
+    "3839000",
+    "3840000",
+    "3841000",
+    "3842000",
+    "3843000",
+    "3844000",
+    "3845000",
+    "3846000",
+    "3847000",
+    "3848000",
+    "3849000",
+    "P:-122.44941,37.71425|-122.44982,37.71392"
+   ],
+   "facilities": {
+    "S": 3.61
+   },
+   "added": {
+    "S": 3.61
+   },
+   "upgraded": {},
+   "miles": 3.61,
+   "segments": 34,
+   "years": [
+    2023,
+    2023
+   ],
+   "dated_by": "layer",
+   "residents": 880,
+   "schools": [
+    "City Arts & Leadership Academy",
+    "Leadership High"
+   ],
+   "libraries": [],
+   "streets": [
+    "CAYUGA AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2023,
+     "miles": 3.61,
+     "lon": -122.4396,
+     "lat": 37.72325
+    }
+   ]
+  },
+  {
+   "node": "21212",
+   "name": "Anza Street Bike Lanes Project",
+   "page": "https://www.sfmta.com/node/21212",
+   "phase": "Planning",
+   "stand_in": false,
+   "teaser": "Making cycling safer in the Richmond District",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/02/img_4849_vs2.jpg?itok=LbbAfcoR",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/02/img_4849_vs2.jpg?itok=LbbAfcoR",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "2305000",
+    "2308000",
+    "2309000",
+    "2311000",
+    "2318000",
+    "2319000",
+    "2320000",
+    "2321000",
+    "2322000",
+    "2323000",
+    "2324000",
+    "2325000",
+    "2326000",
+    "2327000",
+    "2328000",
+    "2329000",
+    "2330000",
+    "2331000",
+    "2332000",
+    "2333000",
+    "2335000",
+    "2336000",
+    "2337000",
+    "2338000",
+    "2339000",
+    "2340000",
+    "2341000",
+    "2342000",
+    "2343000",
+    "2346000"
+   ],
+   "facilities": {
+    "2c": 3.19,
+    "3b": 0.07,
+    "3c": 0.17
+   },
+   "added": {
+    "2c": 3.19,
+    "3b": 0.07,
+    "3c": 0.17
+   },
+   "upgraded": {},
+   "miles": 3.35,
+   "segments": 30,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 822,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "ANZA ST"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 3.35,
+     "lon": -122.47059,
+     "lat": 37.77891
+    }
+   ]
+  },
+  {
+   "node": "1128",
+   "name": "20th Avenue Neighborway Project",
+   "page": "https://www.sfmta.com/node/1128",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Making walking and biking safer in your neighborhood",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/20th_ave_photo_1.jpg?itok=ptT4nm7w",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/20th_ave_photo_1.jpg?itok=ptT4nm7w",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "1005000",
+    "1006000",
+    "1007000",
+    "1008000",
+    "1010000",
+    "1012000",
+    "1013000",
+    "1014000",
+    "1015000",
+    "1017000",
+    "1018000",
+    "1019000"
+   ],
+   "facilities": {
+    "2c": 1.68,
+    "3b": 0.13,
+    "3c": 1.29
+   },
+   "added": {},
+   "upgraded": {
+    "2c": 1.68,
+    "3b": 0.13,
+    "3c": 1.29
+   },
+   "miles": 2.97,
+   "segments": 12,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "layer",
+   "residents": 4119,
+   "schools": [
+    "St. Cecilia Elementary"
+   ],
+   "libraries": [
+    "Parkside Branch Library"
+   ],
+   "streets": [
+    "20TH AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 2.97,
+     "lon": -122.47727,
+     "lat": 37.75031
+    }
+   ]
+  },
+  {
+   "node": "24645",
+   "name": "Golden Gate Park Access and Safety Program",
+   "page": "https://www.sfmta.com/node/24645",
+   "phase": "Legislated",
+   "stand_in": false,
+   "teaser": "SFMTA and Rec Park are updating the Golden Gate Park car-free route within Golden Gate Park to: eliminate non-park traffic (cut-through), improve traffic safety, improve park access and improve the park experience for all users, especially those with high barriers to access.",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/11/210622_recreation_streets_27.jpg?itok=BjC-Oo38",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/11/210622_recreation_streets_27.jpg?itok=BjC-Oo38",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11998000",
+    "12238000",
+    "7540000",
+    "8933000",
+    "9006000"
+   ],
+   "facilities": {
+    "1": 2.95
+   },
+   "added": {
+    "1": 0.28
+   },
+   "upgraded": {
+    "1": 2.67
+   },
+   "miles": 2.95,
+   "segments": 5,
+   "years": [
+    2021,
+    2022
+   ],
+   "dated_by": "page",
+   "residents": 97,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "JOHN F KENNEDY DR",
+    "MARTIN LUTHER KING JR DR",
+    "STOW LAKE DR",
+    "BERNICE RODGERS WAY"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 1.45,
+     "lon": -122.47689,
+     "lat": 37.77153
+    },
+    {
+     "year": 2022,
+     "miles": 1.5,
+     "lon": -122.48985,
+     "lat": 37.76811
+    }
+   ]
+  },
+  {
+   "node": "slow:pagestreet",
+   "name": "Page Street Slow Street",
+   "page": "https://data.sf.gov/d/hkz3-itiu",
+   "phase": null,
+   "stand_in": true,
+   "teaser": null,
+   "image": null,
+   "thumb": null,
+   "types": [
+    "Bike"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "10170000",
+    "10171000",
+    "10172000",
+    "10173000",
+    "10174000",
+    "10175000",
+    "10179000",
+    "10180000",
+    "10181000",
+    "10182000",
+    "10183000",
+    "10184000",
+    "10185000",
+    "10186000",
+    "10187000",
+    "10188000"
+   ],
+   "facilities": {
+    "2c": 0.36,
+    "3b": 2.46,
+    "4": 0.1,
+    "S": 2.92
+   },
+   "added": {},
+   "upgraded": {
+    "2c": 0.36,
+    "3b": 2.46,
+    "4": 0.1,
+    "S": 2.92
+   },
+   "miles": 2.92,
+   "segments": 16,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "layer",
+   "residents": 372,
+   "schools": [
+    "Chinese Immersion School at DeAvila",
+    "Lycee Francais de San Francisco (Ashbury)"
+   ],
+   "libraries": [],
+   "streets": [
+    "PAGE ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 2.92,
+     "lon": -122.43951,
+     "lat": 37.77191
+    }
+   ]
+  },
+  {
+   "node": "27619",
+   "name": "Shotwell Slow Street",
+   "page": "https://www.sfmta.com/node/27619",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/pavement_markings.jpg?itok=39pubmxs",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/pavement_markings.jpg?itok=39pubmxs",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11832000",
+    "11833000",
+    "11834000",
+    "11835000",
+    "11836000",
+    "11837000",
+    "11838000",
+    "11839000",
+    "11840000",
+    "11841000",
+    "11842000",
+    "11843000",
+    "11844000"
+   ],
+   "facilities": {
+    "S": 2.81
+   },
+   "added": {
+    "S": 2.81
+   },
+   "upgraded": {},
+   "miles": 2.81,
+   "segments": 13,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 70,
+   "schools": [
+    "Buena Vista/ Horace Mann K-8"
+   ],
+   "libraries": [],
+   "streets": [
+    "SHOTWELL ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 2.81,
+     "lon": -122.41566,
+     "lat": 37.75756
+    }
+   ]
+  },
+  {
+   "node": "653",
+   "name": "7th Street and 8th Street Safety Projects",
+   "page": "https://www.sfmta.com/node/653",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Bringing quick-build traffic safety improvements to SoMa",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/04/210917_7th_st_16_0.jpg?itok=GgfYAgbd",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/04/210917_7th_st_16_0.jpg?itok=GgfYAgbd",
+   "types": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "12665000",
+    "366001",
+    "368000",
+    "373000",
+    "374000",
+    "374001",
+    "375000",
+    "376000",
+    "377000",
+    "378000",
+    "379000",
+    "381000",
+    "382000",
+    "383000",
+    "384000",
+    "404000",
+    "405000",
+    "406000",
+    "407000",
+    "410000",
+    "413000",
+    "414000",
+    "415000",
+    "415001",
+    "415002",
+    "416000",
+    "417000",
+    "701001"
+   ],
+   "facilities": {
+    "2b": 0.12,
+    "2c": 0.06,
+    "3c": 0.12,
+    "4": 2.46
+   },
+   "added": {
+    "4": 0.07
+   },
+   "upgraded": {
+    "2b": 0.12,
+    "2c": 0.06,
+    "3c": 0.12,
+    "4": 2.39
+   },
+   "miles": 2.64,
+   "segments": 28,
+   "years": [
+    2017,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 947,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "7TH ST",
+    "8TH ST",
+    "TOWNSEND ST",
+    "07TH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2017,
+     "miles": 0.27,
+     "lon": -122.41099,
+     "lat": 37.7773
+    },
+    {
+     "year": 2018,
+     "miles": 0.93,
+     "lon": -122.405,
+     "lat": 37.77226
+    },
+    {
+     "year": 2019,
+     "miles": 0.89,
+     "lon": -122.3979,
+     "lat": 37.76883
+    },
+    {
+     "year": 2020,
+     "miles": 0.49,
+     "lon": -122.40424,
+     "lat": 37.77343
+    },
+    {
+     "year": 2021,
+     "miles": 0.07,
+     "lon": -122.39627,
+     "lat": 37.76647
+    }
+   ]
+  },
+  {
+   "node": "27612",
+   "name": "Clay Slow Street",
+   "page": "https://www.sfmta.com/node/27612",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/clay.jpg?itok=STbOaJjj",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/clay.jpg?itok=STbOaJjj",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "4113000",
+    "4114000",
+    "4115000",
+    "4116000",
+    "4117000",
+    "4118000",
+    "4119000",
+    "4120000",
+    "4121000",
+    "4122000",
+    "4123000",
+    "4124000",
+    "4125000",
+    "4126000"
+   ],
+   "facilities": {
+    "3b": 2.35,
+    "S": 2.6
+   },
+   "added": {
+    "S": 0.25
+   },
+   "upgraded": {
+    "3b": 2.35,
+    "S": 2.35
+   },
+   "miles": 2.6,
+   "segments": 14,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 9969,
+   "schools": [
+    "Cobb (William L.) Elementary",
+    "Drew School",
+    "San Francisco University High School",
+    "San Francisco Waldorf School",
+    "Town School for Boys"
+   ],
+   "libraries": [
+    "Presidio Branch Library"
+   ],
+   "streets": [
+    "CLAY ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 2.6,
+     "lon": -122.44844,
+     "lat": 37.78891
+    }
+   ]
+  },
+  {
+   "node": "381",
+   "name": "Folsom-Howard Streetscape Project",
+   "page": "https://www.sfmta.com/node/381",
+   "phase": "Current",
+   "stand_in": false,
+   "teaser": "Improving Transportation Safety and Access in SoMa",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/01/folsom_st_parking_protected_bike_lane_at_7th.jpg?itok=LZ1Ue8zC",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/01/folsom_st_parking_protected_bike_lane_at_7th.jpg?itok=LZ1Ue8zC",
+   "types": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "5666000",
+    "5667000",
+    "5668000",
+    "5669000",
+    "5670000",
+    "5671000",
+    "5672000",
+    "5673000",
+    "5674000",
+    "5675000",
+    "5676000",
+    "5677000",
+    "5678000",
+    "5679000",
+    "5680000",
+    "5681000",
+    "5682000",
+    "5683000",
+    "7042000",
+    "7043000",
+    "7044000",
+    "7045000",
+    "7046000",
+    "7047000",
+    "7048000",
+    "7049000",
+    "7050000",
+    "7051000",
+    "7052000",
+    "7053000",
+    "7054000",
+    "7055000",
+    "7056000"
+   ],
+   "facilities": {
+    "2b": 0.09,
+    "4": 2.33
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.09,
+    "4": 2.33
+   },
+   "miles": 2.33,
+   "segments": 33,
+   "years": [
+    2018,
+    2026
+   ],
+   "dated_by": "page",
+   "residents": 145,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "FOLSOM ST",
+    "HOWARD ST"
+   ],
+   "by_year": [
+    {
+     "year": 2018,
+     "miles": 2.09,
+     "lon": -122.41068,
+     "lat": 37.77527
+    },
+    {
+     "year": 2019,
+     "miles": 0.11,
+     "lon": -122.40716,
+     "lat": 37.77974
+    },
+    {
+     "year": 2026,
+     "miles": 0.13,
+     "lon": -122.40625,
+     "lat": 37.778
+    }
+   ]
+  },
+  {
+   "node": "15731",
+   "name": "Valencia Bikeway Improvements",
+   "page": "https://www.sfmta.com/node/15731",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Making Valencia Street safer for all",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2018/02/180131_valencia_07.jpg?itok=-AzHuApY",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2018/02/180131_valencia_07.jpg?itok=-AzHuApY",
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "13058000",
+    "13059000",
+    "13060000",
+    "13061000",
+    "13062000",
+    "13063000",
+    "13064000",
+    "13065000",
+    "13066000",
+    "13067000",
+    "13068000",
+    "13069000",
+    "13070000",
+    "13071000"
+   ],
+   "facilities": {
+    "4": 1.78
+   },
+   "added": {},
+   "upgraded": {
+    "4": 1.78
+   },
+   "miles": 1.78,
+   "segments": 14,
+   "years": [
+    2023,
+    2023
+   ],
+   "dated_by": "page",
+   "residents": 266,
+   "schools": [],
+   "libraries": [
+    "Mission Branch Library"
+   ],
+   "streets": [
+    "VALENCIA ST"
+   ],
+   "by_year": [
+    {
+     "year": 2023,
+     "miles": 1.78,
+     "lon": -122.42137,
+     "lat": 37.75958
+    }
+   ]
+  },
+  {
+   "node": "1092",
+   "name": "8th Avenue Neighborway Project",
+   "page": "https://www.sfmta.com/node/1092",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/09/8th_ave_at_balboa.jpg?itok=vpIXSDH5",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/09/8th_ave_at_balboa.jpg?itok=vpIXSDH5",
+   "types": [
+    "All",
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "387000",
+    "388000",
+    "390000",
+    "391000",
+    "392000",
+    "393000",
+    "394000"
+   ],
+   "facilities": {
+    "1": 0.11,
+    "3c": 1.56
+   },
+   "added": {},
+   "upgraded": {
+    "1": 0.11,
+    "3c": 1.56
+   },
+   "miles": 1.67,
+   "segments": 7,
+   "years": [
+    2019,
+    2022
+   ],
+   "dated_by": "layer",
+   "residents": 2033,
+   "schools": [
+    "Nativity",
+    "Stella Maris Academy",
+    "Zion Lutheran School"
+   ],
+   "libraries": [
+    "Richmond Branch Library"
+   ],
+   "streets": [
+    "8TH AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.52,
+     "lon": -122.46622,
+     "lat": 37.77808
+    },
+    {
+     "year": 2020,
+     "miles": 1.03,
+     "lon": -122.46629,
+     "lat": 37.77905
+    },
+    {
+     "year": 2022,
+     "miles": 0.11,
+     "lon": -122.46582,
+     "lat": 37.77261
+    }
+   ]
+  },
+  {
+   "node": "21264",
+   "name": "Terry Francois Boulevard Quick-Build",
+   "page": "https://www.sfmta.com/node/21264",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving bicycling connections to the Chase Center and waterfront",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/08/191001_tfrancois_blvd-after_04_1.jpg?itok=ozudHj-h",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/08/191001_tfrancois_blvd-after_04_1.jpg?itok=ozudHj-h",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "12532001",
+    "12532002",
+    "12532003",
+    "12532004",
+    "12532005",
+    "12532006",
+    "12532007",
+    "15048000",
+    "183000",
+    "2953000"
+   ],
+   "facilities": {
+    "4": 1.59
+   },
+   "added": {
+    "4": 0.17
+   },
+   "upgraded": {
+    "4": 1.42
+   },
+   "miles": 1.59,
+   "segments": 10,
+   "years": [
+    2019,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 1676,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "TERRY FRANCOIS ST",
+    "3RD ST",
+    "BERRY ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 1.35,
+     "lon": -122.38666,
+     "lat": 37.76796
+    },
+    {
+     "year": 2020,
+     "miles": 0.24,
+     "lon": -122.39246,
+     "lat": 37.77598
+    }
+   ]
+  },
+  {
+   "node": "27620",
+   "name": "Sanchez Slow Street",
+   "page": "https://www.sfmta.com/node/27620",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211210_slow_sts_13.jpg?itok=KlBHn6T8",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211210_slow_sts_13.jpg?itok=KlBHn6T8",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11527000",
+    "11528000",
+    "11529000",
+    "11530000",
+    "11531000",
+    "11532000",
+    "11533000",
+    "11534000",
+    "11535000",
+    "11536000",
+    "11537000",
+    "11538000",
+    "11539000",
+    "11540000"
+   ],
+   "facilities": {
+    "3b": 1.22,
+    "S": 1.55
+   },
+   "added": {
+    "S": 0.33
+   },
+   "upgraded": {
+    "3b": 1.22,
+    "S": 1.22
+   },
+   "miles": 1.55,
+   "segments": 14,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 2989,
+   "schools": [
+    "Lick (James) Middle",
+    "Mission Education Center"
+   ],
+   "libraries": [],
+   "streets": [
+    "SANCHEZ ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 1.55,
+     "lon": -122.42923,
+     "lat": 37.74719
+    }
+   ]
+  },
+  {
+   "node": "1122",
+   "name": "Vicente Street Bicycle and Pedestrian Safety Project",
+   "page": "https://www.sfmta.com/node/1122",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving safety on Vicente Street",
+   "image": "https://www.sfmta.com/files/teaser-images/2017/08/Ortega_Street_bike_lane.png",
+   "thumb": null,
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "13253000",
+    "13258000",
+    "13259000",
+    "13260000",
+    "13261000",
+    "13262000",
+    "13264000",
+    "13265000",
+    "13269000",
+    "13270000",
+    "13271000",
+    "13272000",
+    "13273000",
+    "13274000"
+   ],
+   "facilities": {
+    "2c": 1.52,
+    "3b": 0.06
+   },
+   "added": {},
+   "upgraded": {
+    "2c": 1.52,
+    "3b": 0.06
+   },
+   "miles": 1.52,
+   "segments": 14,
+   "years": [
+    2017,
+    2017
+   ],
+   "dated_by": "page",
+   "residents": 3279,
+   "schools": [
+    "Edgewood Community School",
+    "Feinstein (Dianne) Elementary",
+    "St. Gabriel Elementary School"
+   ],
+   "libraries": [],
+   "streets": [
+    "VICENTE ST"
+   ],
+   "by_year": [
+    {
+     "year": 2017,
+     "miles": 1.52,
+     "lon": -122.49712,
+     "lat": 37.73837
+    }
+   ]
+  },
+  {
+   "node": "1032",
+   "name": "Twin Peaks Figure 8 Redesign Project",
+   "page": "https://www.sfmta.com/node/1032",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/09/160817_twpks_09_hero_0.jpg?itok=V_--n44v",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/09/160817_twpks_09_hero_0.jpg?itok=V_--n44v",
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "12768000",
+    "12770000",
+    "12771000",
+    "P:-122.44717,37.75201|-122.44804,37.75081",
+    "P:-122.44717,37.75401|-122.44707,37.75299"
+   ],
+   "facilities": {
+    "1": 1.5
+   },
+   "added": {
+    "1": 1.5
+   },
+   "upgraded": {},
+   "miles": 1.5,
+   "segments": 5,
+   "years": [
+    2016,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 1941,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "TWIN PEAKS BLVD"
+   ],
+   "by_year": [
+    {
+     "year": 2016,
+     "miles": 0.64,
+     "lon": -122.44705,
+     "lat": 37.75229
+    },
+    {
+     "year": 2021,
+     "miles": 0.86,
+     "lon": -122.44656,
+     "lat": 37.75535
+    }
+   ]
+  },
+  {
+   "node": "1146",
+   "name": "5th Street Improvement Project",
+   "page": "https://www.sfmta.com/node/1146",
+   "phase": null,
+   "stand_in": false,
+   "teaser": "Improving safety of all modes that travel along this corridor",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/5th_street_photo_for_web.jpg?itok=ub7_--TB",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/5th_street_photo_for_web.jpg?itok=ub7_--TB",
+   "types": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "12663000",
+    "289000",
+    "290000",
+    "291000",
+    "292000",
+    "293000",
+    "294000",
+    "295000",
+    "296000",
+    "297000",
+    "300001",
+    "300002",
+    "300003",
+    "301000",
+    "302000",
+    "303000",
+    "304000",
+    "307000"
+   ],
+   "facilities": {
+    "3b": 0.08,
+    "4": 1.5
+   },
+   "added": {},
+   "upgraded": {
+    "3b": 0.08,
+    "4": 1.5
+   },
+   "miles": 1.5,
+   "segments": 18,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 534,
+   "schools": [
+    "Five Keys Adult School (SF Sheriff's)",
+    "Five Keys Charter (SF Sheriff's)",
+    "Five Keys Independence HS (SF Sheriff's)"
+   ],
+   "libraries": [],
+   "streets": [
+    "5TH ST",
+    "TOWNSEND ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 1.5,
+     "lon": -122.40172,
+     "lat": 37.77894
+    }
+   ]
+  },
+  {
+   "node": "24767",
+   "name": "Lake Slow Street",
+   "page": "https://www.sfmta.com/node/24767",
+   "phase": null,
+   "stand_in": false,
+   "teaser": "Lake Slow Street",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/lake_street_webpage.jpg?itok=3hIrXgNt",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/lake_street_webpage.jpg?itok=3hIrXgNt",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "8009000",
+    "8013000",
+    "8014000",
+    "8017000",
+    "8018000",
+    "8019000",
+    "8020000",
+    "8021000",
+    "8022000",
+    "8032000",
+    "8034000",
+    "8037000"
+   ],
+   "facilities": {
+    "2b": 1.15,
+    "3b": 0.08,
+    "S": 1.24
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 1.15,
+    "3b": 0.08,
+    "S": 1.24
+   },
+   "miles": 1.24,
+   "segments": 12,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 355,
+   "schools": [
+    "Sutro Elementary"
+   ],
+   "libraries": [],
+   "streets": [
+    "LAKE ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 1.24,
+     "lon": -122.47242,
+     "lat": 37.78631
+    }
+   ]
+  },
+  {
+   "node": "853",
+   "name": "Masonic Avenue Streetscape Project",
+   "page": "https://www.sfmta.com/node/853",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Enjoy your new Masonic Avenue!",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/rendering_masonic_and_turk_st_option2.jpg?itok=_ixqWquB",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/rendering_masonic_and_turk_st_option2.jpg?itok=_ixqWquB",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "8843101",
+    "8843201",
+    "8844101",
+    "8845101",
+    "8845201",
+    "8847000",
+    "8848000",
+    "8849000",
+    "8850000",
+    "8851000"
+   ],
+   "facilities": {
+    "2c": 0.2,
+    "4": 0.93
+   },
+   "added": {},
+   "upgraded": {
+    "2c": 0.2,
+    "4": 0.93
+   },
+   "miles": 1.13,
+   "segments": 10,
+   "years": [
+    2018,
+    2018
+   ],
+   "dated_by": "page",
+   "residents": 1460,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "MASONIC AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2018,
+     "miles": 1.13,
+     "lon": -122.44672,
+     "lat": 37.77705
+    }
+   ]
+  },
+  {
+   "node": "27618",
+   "name": "Somerset Slow Street",
+   "page": "https://www.sfmta.com/node/27618",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/pavement_markings_crop_0.jpg?itok=oy6fuFCA",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/pavement_markings_crop_0.jpg?itok=oy6fuFCA",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11966000",
+    "11967000",
+    "11968000",
+    "11969000",
+    "11970000",
+    "11971000",
+    "11972000"
+   ],
+   "facilities": {
+    "S": 1.12
+   },
+   "added": {
+    "S": 1.12
+   },
+   "upgraded": {},
+   "miles": 1.12,
+   "segments": 7,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 3964,
+   "schools": [
+    "Alta Vista School",
+    "Taylor (Edward R.) Elementary"
+   ],
+   "libraries": [],
+   "streets": [
+    "SOMERSET ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 1.12,
+     "lon": -122.40765,
+     "lat": 37.72684
+    }
+   ]
+  },
+  {
+   "node": "27615",
+   "name": "Lyon Slow Street",
+   "page": "https://www.sfmta.com/node/27615",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/lyon.jpg?itok=7TUWAYGq",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/lyon.jpg?itok=7TUWAYGq",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "8554000",
+    "8555000",
+    "8556000",
+    "8557000",
+    "8558000",
+    "8559000",
+    "8560000",
+    "8561000"
+   ],
+   "facilities": {
+    "S": 1.05
+   },
+   "added": {
+    "S": 1.05
+   },
+   "upgraded": {},
+   "miles": 1.05,
+   "segments": 8,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "LYON ST"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 1.05,
+     "lon": -122.44299,
+     "lat": 37.77554
+    }
+   ]
+  },
+  {
+   "node": "27602",
+   "name": "12th Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27602",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211210_slow_sts_02.jpg?itok=ekPd3eeP",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211210_slow_sts_02.jpg?itok=ekPd3eeP",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "527000",
+    "528000",
+    "529000",
+    "530000"
+   ],
+   "facilities": {
+    "S": 1.04
+   },
+   "added": {
+    "S": 1.04
+   },
+   "upgraded": {},
+   "miles": 1.04,
+   "segments": 4,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 1203,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "12TH AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 1.04,
+     "lon": -122.46933,
+     "lat": 37.76111
+    }
+   ]
+  },
+  {
+   "node": "26728",
+   "name": "Sloat Blvd Quick-Build Project",
+   "page": "https://www.sfmta.com/node/26728",
+   "phase": "Legislated",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2026-04/Sloat%20at%20Zoo.jpeg?itok=JUVBaVdJ",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2026-04/Sloat%20at%20Zoo.jpeg?itok=JUVBaVdJ",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11960101",
+    "11961202",
+    "11962101",
+    "11963101",
+    "11964101"
+   ],
+   "facilities": {
+    "2b": 0.67,
+    "4": 1.03
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.67,
+    "4": 1.03
+   },
+   "miles": 1.03,
+   "segments": 5,
+   "years": [
+    2025,
+    2025
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "SLOAT BLVD"
+   ],
+   "by_year": [
+    {
+     "year": 2025,
+     "miles": 1.03,
+     "lon": -122.50221,
+     "lat": 37.73495
+    }
+   ]
+  },
+  {
+   "node": "23813",
+   "name": "Battery/Sansome Quick-Build Project",
+   "page": "https://www.sfmta.com/node/23813",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2024/01/230425_batteryst-after_20.jpg?itok=TkbNb2TM",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2024/01/230425_batteryst-after_20.jpg?itok=TkbNb2TM",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "2752000",
+    "2753000",
+    "2754000",
+    "2755000",
+    "2756000",
+    "2757000",
+    "2758000",
+    "2759000",
+    "2760000",
+    "2761000",
+    "2762000"
+   ],
+   "facilities": {
+    "4": 1.02
+   },
+   "added": {
+    "4": 0.5
+   },
+   "upgraded": {
+    "4": 0.52
+   },
+   "miles": 1.02,
+   "segments": 11,
+   "years": [
+    2023,
+    2023
+   ],
+   "dated_by": "page",
+   "residents": 2067,
+   "schools": [
+    "Lee (Edwin and Anita) Newcomer"
+   ],
+   "libraries": [],
+   "streets": [
+    "BATTERY ST"
+   ],
+   "by_year": [
+    {
+     "year": 2023,
+     "miles": 1.02,
+     "lon": -122.40039,
+     "lat": 37.79533
+    }
+   ]
+  },
+  {
+   "node": "807",
+   "name": "Wiggle Neighborhood Green Corridor",
+   "page": "https://www.sfmta.com/node/807",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "The SFMTA&#039;s goal for the Wiggle Neighborhood Green Corridor is to create a route that is comfortable and safe for all who walk, bike, and live along the Wiggle",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2018/04/img_8884_2.jpg?itok=3TG-uLsF",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2018/04/img_8884_2.jpg?itok=3TG-uLsF",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "10176000",
+    "10177000",
+    "10418000",
+    "12116000",
+    "12117000",
+    "12118000",
+    "13363000",
+    "13364000",
+    "5450000"
+   ],
+   "facilities": {
+    "3c": 0.91,
+    "4": 0.09,
+    "S": 0.36
+   },
+   "added": {},
+   "upgraded": {
+    "3c": 0.91,
+    "4": 0.09,
+    "S": 0.36
+   },
+   "miles": 1.0,
+   "segments": 9,
+   "years": [
+    2016,
+    2017
+   ],
+   "dated_by": "page",
+   "residents": 1216,
+   "schools": [
+    "Muir (John) Elementary"
+   ],
+   "libraries": [],
+   "streets": [
+    "STEINER ST",
+    "PAGE ST",
+    "WALLER ST",
+    "PIERCE ST"
+   ],
+   "by_year": [
+    {
+     "year": 2016,
+     "miles": 0.17,
+     "lon": -122.43168,
+     "lat": 37.76985
+    },
+    {
+     "year": 2017,
+     "miles": 0.83,
+     "lon": -122.43433,
+     "lat": 37.77207
+    }
+   ]
+  },
+  {
+   "node": "27614",
+   "name": "Hearst Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27614",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/hearst.jpg?itok=maYDwUCJ",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/hearst.jpg?itok=maYDwUCJ",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "6863000",
+    "6864000",
+    "6865000",
+    "6867000"
+   ],
+   "facilities": {
+    "3c": 0.75,
+    "S": 1.0
+   },
+   "added": {
+    "S": 0.25
+   },
+   "upgraded": {
+    "3c": 0.75,
+    "S": 0.75
+   },
+   "miles": 1.0,
+   "segments": 4,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 701,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "HEARST AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 1.0,
+     "lon": -122.44828,
+     "lat": 37.73069
+    }
+   ]
+  },
+  {
+   "node": "slow:20thstreet",
+   "name": "20th Street Slow Street",
+   "page": "https://data.sf.gov/d/hkz3-itiu",
+   "phase": null,
+   "stand_in": true,
+   "teaser": null,
+   "image": null,
+   "thumb": null,
+   "types": [
+    "Bike"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "1044000",
+    "1045000",
+    "1046000",
+    "1047000",
+    "1048000",
+    "1049000",
+    "1050000",
+    "1051000",
+    "1052000"
+   ],
+   "facilities": {
+    "S": 0.97
+   },
+   "added": {
+    "S": 0.97
+   },
+   "upgraded": {},
+   "miles": 0.97,
+   "segments": 9,
+   "years": [
+    2023,
+    2023
+   ],
+   "dated_by": "layer",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "20TH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2023,
+     "miles": 0.97,
+     "lon": -122.41186,
+     "lat": 37.75907
+    }
+   ]
+  },
+  {
+   "node": "27467",
+   "name": "Frida Kahlo Way Quick-Build Project",
+   "page": "https://www.sfmta.com/node/27467",
+   "phase": "Legislated",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2024-08/PXL_20240822_234042886_0.jpg?itok=YXl4iaSj",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2024-08/PXL_20240822_234042886_0.jpg?itok=YXl4iaSj",
+   "types": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "10390000",
+    "7689000"
+   ],
+   "facilities": {
+    "2b": 0.07,
+    "3b": 0.29,
+    "4": 0.97
+   },
+   "added": {
+    "4": 0.25
+   },
+   "upgraded": {
+    "2b": 0.07,
+    "3b": 0.29,
+    "4": 0.72
+   },
+   "miles": 0.97,
+   "segments": 2,
+   "years": [
+    2024,
+    2024
+   ],
+   "dated_by": "page",
+   "residents": 148,
+   "schools": [
+    "Lick-Wilmerding High School"
+   ],
+   "libraries": [],
+   "streets": [
+    "FRIDA KAHLO WAY",
+    "JUDSON AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2024,
+     "miles": 0.97,
+     "lon": -122.45206,
+     "lat": 37.728
+    }
+   ]
+  },
+  {
+   "node": "1305",
+   "name": "Northbound San Jose Avenue and I-280 Off-Ramp Road Diet Pilot Project",
+   "page": "https://www.sfmta.com/node/1305",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/teaser-images/2017/08/140612_San%20Jose%20Ave_54%20%281%29.jpg",
+   "thumb": null,
+   "types": [
+    "All",
+    "Bike"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11439101",
+    "11439201"
+   ],
+   "facilities": {
+    "4": 0.91
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.91
+   },
+   "miles": 0.91,
+   "segments": 2,
+   "years": [
+    2017,
+    2017
+   ],
+   "dated_by": "page",
+   "residents": 1960,
+   "schools": [
+    "Huerta (Dolores) Elementary"
+   ],
+   "libraries": [],
+   "streets": [
+    "SAN JOSE AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2017,
+     "miles": 0.91,
+     "lon": -122.42499,
+     "lat": 37.73781
+    }
+   ]
+  },
+  {
+   "node": "27608",
+   "name": "Arlington Slow Street",
+   "page": "https://www.sfmta.com/node/27608",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211214_slow_sts_04.jpg?itok=hdzvzlYb",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211214_slow_sts_04.jpg?itok=hdzvzlYb",
+   "types": [],
+   "bike_from_page": false,
+   "blocks": [
+    "2447000",
+    "2448000",
+    "2449000",
+    "2450000",
+    "2451000",
+    "2452000",
+    "2453000"
+   ],
+   "facilities": {
+    "S": 0.9
+   },
+   "added": {
+    "S": 0.9
+   },
+   "upgraded": {},
+   "miles": 0.9,
+   "segments": 7,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "ARLINGTON ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.9,
+     "lon": -122.42716,
+     "lat": 37.73684
+    }
+   ]
+  },
+  {
+   "node": "17912",
+   "name": "Sansome and Battery Connections Project",
+   "page": "https://www.sfmta.com/node/17912",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/12/img_2640.jpg?itok=ljs1goGz",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/12/img_2640.jpg?itok=ljs1goGz",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11561000",
+    "12559201",
+    "13080000",
+    "2769000",
+    "4609000",
+    "4610000"
+   ],
+   "facilities": {
+    "2b": 0.16,
+    "2c": 0.51,
+    "4": 0.3
+   },
+   "added": {
+    "2c": 0.51,
+    "4": 0.14
+   },
+   "upgraded": {
+    "2b": 0.16,
+    "4": 0.16
+   },
+   "miles": 0.82,
+   "segments": 6,
+   "years": [
+    2019,
+    2019
+   ],
+   "dated_by": "page",
+   "residents": 208,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "DAVIS ST",
+    "SANSOME ST",
+    "THE EMBARCADERO",
+    "VALLEJO ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.82,
+     "lon": -122.40084,
+     "lat": 37.80154
+    }
+   ]
+  },
+  {
+   "node": "22078",
+   "name": "Evans Avenue Quick-Build",
+   "page": "https://www.sfmta.com/node/22078",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Making biking, walking, and connecting to the 19 Polk between Cesar Chavez and 3rd streets safer.",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/12/221110_evans-after_86.jpg?itok=tV_5mFa4",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/12/221110_evans-after_86.jpg?itok=tV_5mFa4",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "5336000",
+    "5337000",
+    "5338000",
+    "5339000",
+    "5340000",
+    "5341000"
+   ],
+   "facilities": {
+    "2b": 0.26,
+    "3b": 0.1,
+    "4": 0.77
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.26,
+    "3b": 0.1,
+    "4": 0.77
+   },
+   "miles": 0.77,
+   "segments": 6,
+   "years": [
+    2022,
+    2022
+   ],
+   "dated_by": "page",
+   "residents": 74,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "EVANS AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2022,
+     "miles": 0.77,
+     "lon": -122.39459,
+     "lat": 37.74669
+    }
+   ]
+  },
+  {
+   "node": "21903",
+   "name": "The Embarcadero 2020 Quick-Build Projects",
+   "page": "https://www.sfmta.com/node/21903",
+   "phase": "Project Evaluation",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/06/140506_429_muni.jpg?itok=K9J7a-9P",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/06/140506_429_muni.jpg?itok=K9J7a-9P",
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "12551102",
+    "12551202",
+    "12552101"
+   ],
+   "facilities": {
+    "2c": 0.13,
+    "4": 0.61
+   },
+   "added": {},
+   "upgraded": {
+    "2c": 0.13,
+    "4": 0.61
+   },
+   "miles": 0.74,
+   "segments": 3,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "THE EMBARCADERO"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.74,
+     "lon": -122.39159,
+     "lat": 37.79266
+    }
+   ]
+  },
+  {
+   "node": "1102",
+   "name": "Townsend Corridor Improvement Project",
+   "page": "https://www.sfmta.com/node/1102",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving safety and access on Townsend Street",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/09/img_20200915_143535_hero.jpg?itok=yOVH5lns",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/09/img_20200915_143535_hero.jpg?itok=yOVH5lns",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "12664000",
+    "12666000"
+   ],
+   "facilities": {
+    "4": 0.69
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.69
+   },
+   "miles": 0.69,
+   "segments": 2,
+   "years": [
+    2018,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 1268,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "TOWNSEND ST"
+   ],
+   "by_year": [
+    {
+     "year": 2018,
+     "miles": 0.34,
+     "lon": -122.39943,
+     "lat": 37.77357
+    },
+    {
+     "year": 2020,
+     "miles": 0.34,
+     "lon": -122.40388,
+     "lat": 37.77006
+    }
+   ]
+  },
+  {
+   "node": "851",
+   "name": "Turk Street Safety Project",
+   "page": "https://www.sfmta.com/node/851",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/teaser-images/2017/08/Turk%20Photo_0.PNG",
+   "thumb": null,
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "10554000",
+    "12716000",
+    "12717000",
+    "12718000",
+    "12719000",
+    "12720000",
+    "12721000",
+    "12722000"
+   ],
+   "facilities": {
+    "4": 0.69
+   },
+   "added": {
+    "4": 0.56
+   },
+   "upgraded": {
+    "4": 0.13
+   },
+   "miles": 0.69,
+   "segments": 8,
+   "years": [
+    2018,
+    2019
+   ],
+   "dated_by": "page",
+   "residents": 5711,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "TURK ST",
+    "POLK ST"
+   ],
+   "by_year": [
+    {
+     "year": 2018,
+     "miles": 0.46,
+     "lon": -122.41564,
+     "lat": 37.78259
+    },
+    {
+     "year": 2019,
+     "miles": 0.23,
+     "lon": -122.41482,
+     "lat": 37.78324
+    }
+   ]
+  },
+  {
+   "node": "45035",
+   "name": "Winston Drive Quick-Build Project",
+   "page": "https://www.sfmta.com/node/45035",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2026-11/IMG_2485.jpg?itok=FSkA-iM6",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2026-11/IMG_2485.jpg?itok=FSkA-iM6",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "13689000"
+   ],
+   "facilities": {
+    "4": 0.66
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.66
+   },
+   "miles": 0.66,
+   "segments": 1,
+   "years": [
+    2026,
+    2026
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "WINSTON DR"
+   ],
+   "by_year": [
+    {
+     "year": 2026,
+     "miles": 0.66,
+     "lon": -122.48026,
+     "lat": 37.72834
+    }
+   ]
+  },
+  {
+   "node": "1204",
+   "name": "Second Street Improvement Project",
+   "page": "https://www.sfmta.com/node/1204",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/10/190731_2nd_st_50_after.jpg?itok=pE7vs8kP",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/10/190731_2nd_st_50_after.jpg?itok=pE7vs8kP",
+   "types": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "130000",
+    "131000",
+    "132000",
+    "133000",
+    "134000",
+    "135000",
+    "136000",
+    "7034000",
+    "7035000"
+   ],
+   "facilities": {
+    "4": 0.64
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.64
+   },
+   "miles": 0.64,
+   "segments": 9,
+   "years": [
+    2019,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 135,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "2ND ST",
+    "HOWARD ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.56,
+     "lon": -122.39876,
+     "lat": 37.78718
+    },
+    {
+     "year": 2020,
+     "miles": 0.08,
+     "lon": -122.39876,
+     "lat": 37.78639
+    }
+   ]
+  },
+  {
+   "node": "1202",
+   "name": "Polk Streetscape Project",
+   "page": "https://www.sfmta.com/node/1202",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving safety for all road users on Polk Street",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/09/polk_at_geary_north.jpg?itok=hLI-MgXO",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/09/polk_at_geary_north.jpg?itok=hLI-MgXO",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "10550000",
+    "10555000",
+    "10556000",
+    "10557000",
+    "10558000",
+    "10559000",
+    "10560000",
+    "10561000",
+    "10562000",
+    "10563000",
+    "10564000",
+    "10565000",
+    "10567000",
+    "10568000"
+   ],
+   "facilities": {
+    "2b": 0.3,
+    "4": 0.62
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.3,
+    "4": 0.62
+   },
+   "miles": 0.62,
+   "segments": 14,
+   "years": [
+    2019,
+    2019
+   ],
+   "dated_by": "page",
+   "residents": 16895,
+   "schools": [
+    "Redding Elementary",
+    "Sacred Heart Cathedral Preparatory"
+   ],
+   "libraries": [],
+   "streets": [
+    "POLK ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.62,
+     "lon": -122.41971,
+     "lat": 37.78576
+    }
+   ]
+  },
+  {
+   "node": "28173",
+   "name": "SoMa Slow Streets",
+   "page": "https://www.sfmta.com/node/28173",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/teaser-images/2023/05/soma_slow_street.png",
+   "thumb": null,
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "11089000",
+    "12374000",
+    "3008000",
+    "3009000",
+    "8116000",
+    "8117000",
+    "8588000"
+   ],
+   "facilities": {
+    "S": 0.6
+   },
+   "added": {
+    "S": 0.6
+   },
+   "upgraded": {},
+   "miles": 0.6,
+   "segments": 7,
+   "years": [
+    2022,
+    2022
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "BONIFACIO ST",
+    "LAPU-LAPU ST",
+    "RIZAL ST",
+    "TANDANG SORA"
+   ],
+   "by_year": [
+    {
+     "year": 2022,
+     "miles": 0.6,
+     "lon": -122.39935,
+     "lat": 37.78222
+    }
+   ]
+  },
+  {
+   "node": "1134",
+   "name": "Brannan Street Safety Project",
+   "page": "https://www.sfmta.com/node/1134",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Bringing safety improvements for all road users on Brannan Street",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/03/img_20191003_082831.jpg?itok=fSyeAkU7",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/03/img_20191003_082831.jpg?itok=fSyeAkU7",
+   "types": [
+    "All",
+    "Bike",
+    "Muni",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "305000",
+    "306000",
+    "3071000",
+    "3088001",
+    "3088002"
+   ],
+   "facilities": {
+    "2b": 0.17,
+    "2c": 0.13,
+    "3b": 0.13,
+    "4": 0.45
+   },
+   "added": {
+    "2b": 0.17,
+    "2c": 0.13,
+    "3b": 0.13,
+    "4": 0.17
+   },
+   "upgraded": {
+    "4": 0.28
+   },
+   "miles": 0.58,
+   "segments": 5,
+   "years": [
+    2019,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "BRANNAN ST",
+    "5TH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.3,
+     "lon": -122.39781,
+     "lat": 37.77731
+    },
+    {
+     "year": 2020,
+     "miles": 0.28,
+     "lon": -122.39841,
+     "lat": 37.77629
+    }
+   ]
+  },
+  {
+   "node": "slow:noestreet",
+   "name": "Noe Street Slow Street",
+   "page": "https://data.sf.gov/d/hkz3-itiu",
+   "phase": null,
+   "stand_in": true,
+   "teaser": null,
+   "image": null,
+   "thumb": null,
+   "types": [
+    "Bike"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "9607000",
+    "9608000",
+    "9609000",
+    "9610000"
+   ],
+   "facilities": {
+    "S": 0.57
+   },
+   "added": {
+    "S": 0.57
+   },
+   "upgraded": {},
+   "miles": 0.57,
+   "segments": 4,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "layer",
+   "residents": 289,
+   "schools": [
+    "McKinley Elementary"
+   ],
+   "libraries": [],
+   "streets": [
+    "NOE ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.57,
+     "lon": -122.43332,
+     "lat": 37.76653
+    }
+   ]
+  },
+  {
+   "node": "27603",
+   "name": "23rd Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27603",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/wechat_image_202208181548056.jpg?itok=UgaZFB9r",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/wechat_image_202208181548056.jpg?itok=UgaZFB9r",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "1211000",
+    "1213000"
+   ],
+   "facilities": {
+    "3b": 0.26,
+    "3c": 0.27,
+    "S": 0.52
+   },
+   "added": {},
+   "upgraded": {
+    "3b": 0.26,
+    "3c": 0.27,
+    "S": 0.52
+   },
+   "miles": 0.52,
+   "segments": 2,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "23RD AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.52,
+     "lon": -122.48273,
+     "lat": 37.78205
+    }
+   ]
+  },
+  {
+   "node": "1075",
+   "name": "Bryant Street Bike Network Improvement Project",
+   "page": "https://www.sfmta.com/node/1075",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "The SFMTA is proposing to upgrade Bryant Street between Division and 17th Streets in coordination with repaving with new bike facilities and streamlined Muni stops.",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/img_5646.jpg?itok=xs_k_9eb",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/img_5646.jpg?itok=xs_k_9eb",
+   "types": [
+    "Bike"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "3305000",
+    "787000",
+    "788000"
+   ],
+   "facilities": {
+    "2c": 0.18,
+    "4": 0.32
+   },
+   "added": {
+    "2c": 0.18
+   },
+   "upgraded": {
+    "4": 0.32
+   },
+   "miles": 0.5,
+   "segments": 3,
+   "years": [
+    2017,
+    2018
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "17TH ST",
+    "BRYANT ST"
+   ],
+   "by_year": [
+    {
+     "year": 2017,
+     "miles": 0.18,
+     "lon": -122.41036,
+     "lat": 37.76431
+    },
+    {
+     "year": 2018,
+     "miles": 0.32,
+     "lon": -122.41068,
+     "lat": 37.76429
+    }
+   ]
+  },
+  {
+   "node": "28896",
+   "name": "Beach Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28896",
+   "phase": "Implementation / Construction",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/09/230828_beachst-before_12.jpg?itok=NGmEVBPo",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/09/230828_beachst-before_12.jpg?itok=NGmEVBPo",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "2845000",
+    "2846000",
+    "2847000",
+    "2848000"
+   ],
+   "facilities": {
+    "4": 0.45
+   },
+   "added": {
+    "4": 0.45
+   },
+   "upgraded": {},
+   "miles": 0.45,
+   "segments": 4,
+   "years": [
+    2026,
+    2026
+   ],
+   "dated_by": "page",
+   "residents": 61,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "BEACH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2026,
+     "miles": 0.45,
+     "lon": -122.42263,
+     "lat": 37.80638
+    }
+   ]
+  },
+  {
+   "node": "939",
+   "name": "Better Market Street",
+   "page": "https://www.sfmta.com/node/939",
+   "phase": "Current",
+   "stand_in": false,
+   "teaser": null,
+   "image": null,
+   "thumb": null,
+   "types": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Taxi",
+    "Quick-Build",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "2863000",
+    "3419000",
+    "8756101",
+    "8758202",
+    "9874001"
+   ],
+   "facilities": {
+    "2c": 0.02,
+    "3b": 0.07,
+    "4": 0.42
+   },
+   "added": {
+    "4": 0.31
+   },
+   "upgraded": {
+    "2c": 0.02,
+    "3b": 0.07,
+    "4": 0.11
+   },
+   "miles": 0.44,
+   "segments": 5,
+   "years": [
+    2019,
+    2023
+   ],
+   "dated_by": "page",
+   "residents": 6,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "MARKET ST",
+    "OCTAVIA ST",
+    "BEALE ST",
+    "BUSH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.1,
+     "lon": -122.42329,
+     "lat": 37.77219
+    },
+    {
+     "year": 2020,
+     "miles": 0.28,
+     "lon": -122.39888,
+     "lat": 37.78904
+    },
+    {
+     "year": 2023,
+     "miles": 0.07,
+     "lon": -122.39949,
+     "lat": 37.79133
+    }
+   ]
+  },
+  {
+   "node": "28356",
+   "name": "Alemany Boulevard (Ellsworth to Justin Drive/Congdon) Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28356",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2025-08/250715_Alemany_Bike-After_19.jpg?itok=35ibAtRr",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2025-08/250715_Alemany_Bike-After_19.jpg?itok=35ibAtRr",
+   "types": [
+    "Quick-Build"
+   ],
+   "bike_from_page": true,
+   "blocks": [
+    "2157203",
+    "2186000"
+   ],
+   "facilities": {
+    "4": 0.38
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.38
+   },
+   "miles": 0.38,
+   "segments": 2,
+   "years": [
+    2025,
+    2025
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "ALEMANY BLVD"
+   ],
+   "by_year": [
+    {
+     "year": 2025,
+     "miles": 0.38,
+     "lon": -122.42295,
+     "lat": 37.73193
+    }
+   ]
+  },
+  {
+   "node": "17131",
+   "name": "Alemany Interchange Bike Lanes Project",
+   "page": "https://www.sfmta.com/node/17131",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "The Alemany Interchange Bike Lanes project will add protected bikeways to both directions of Alemany Boulevard through the US 101/I-280 interchange, and a southbound buffered bike lane on San Bruno from Alemany Boulevard to Silver Avenue.",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/06/img_20170727_133215580.jpg?itok=4MPnSdpM",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/06/img_20170727_133215580.jpg?itok=4MPnSdpM",
+   "types": [
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "2153000",
+    "2154000",
+    "2155000",
+    "7210000",
+    "7210001"
+   ],
+   "facilities": {
+    "4": 0.37
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.37
+   },
+   "miles": 0.37,
+   "segments": 5,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "ALEMANY BLVD",
+    "INDUSTRIAL ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.37,
+     "lon": -122.40817,
+     "lat": 37.7365
+    }
+   ]
+  },
+  {
+   "node": "16577",
+   "name": "Indiana Street Bikeway Project",
+   "page": "https://www.sfmta.com/node/16577",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Providing a better bike connection on Indiana Street",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2024/01/img_0891_0.jpg?itok=NUA68Ge2",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2024/01/img_0891_0.jpg?itok=NUA68Ge2",
+   "types": [
+    "Bike",
+    "Quick-Build"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "7198000"
+   ],
+   "facilities": {
+    "4": 0.36
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.36
+   },
+   "miles": 0.36,
+   "segments": 1,
+   "years": [
+    2019,
+    2019
+   ],
+   "dated_by": "page",
+   "residents": 584,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "INDIANA ST"
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "miles": 0.36,
+     "lon": -122.39069,
+     "lat": 37.75345
+    }
+   ]
+  },
+  {
+   "node": "20650",
+   "name": "Bayview CBTP Quick-Build Projects",
+   "page": "https://www.sfmta.com/node/20650",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving mobility and safety in a culturally rich community",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/11/hero_collage.png?itok=XFr6ajPG",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2019/11/hero_collage.png?itok=XFr6ajPG",
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "5329000",
+    "5330201"
+   ],
+   "facilities": {
+    "4": 0.36
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.36
+   },
+   "miles": 0.36,
+   "segments": 2,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "layer",
+   "residents": 298,
+   "schools": [
+    "Rise University Preparatory"
+   ],
+   "libraries": [],
+   "streets": [
+    "EVANS AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 0.36,
+     "lon": -122.37952,
+     "lat": 37.73795
+    }
+   ]
+  },
+  {
+   "node": "27609",
+   "name": "Cabrillo Slow Street",
+   "page": "https://www.sfmta.com/node/27609",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/cabrillo.jpg?itok=ncXEM9T6",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/cabrillo.jpg?itok=ncXEM9T6",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "3491000",
+    "3508000",
+    "3509000"
+   ],
+   "facilities": {
+    "2b": 0.23,
+    "3b": 0.12,
+    "S": 0.35
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.23,
+    "3b": 0.12,
+    "S": 0.35
+   },
+   "miles": 0.35,
+   "segments": 3,
+   "years": [
+    2020,
+    2023
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "CABRILLO ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.23,
+     "lon": -122.50307,
+     "lat": 37.77357
+    },
+    {
+     "year": 2023,
+     "miles": 0.12,
+     "lon": -122.48433,
+     "lat": 37.77444
+    }
+   ]
+  },
+  {
+   "node": "24778",
+   "name": "Golden Gate Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/24778",
+   "phase": null,
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211210_slow_sts_01.jpg?itok=YiUwwz9E",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/01/211210_slow_sts_01.jpg?itok=YiUwwz9E",
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "6283000",
+    "6284000",
+    "8846000"
+   ],
+   "facilities": {
+    "2b": 0.2,
+    "4": 0.13,
+    "S": 0.2
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.2,
+    "4": 0.13,
+    "S": 0.2
+   },
+   "miles": 0.33,
+   "segments": 3,
+   "years": [
+    2018,
+    2023
+   ],
+   "dated_by": "layer",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "GOLDEN GATE AVE",
+    "MASONIC AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2018,
+     "miles": 0.13,
+     "lon": -122.44685,
+     "lat": 37.77767
+    },
+    {
+     "year": 2023,
+     "miles": 0.2,
+     "lon": -122.44977,
+     "lat": 37.7773
+    }
+   ]
+  },
+  {
+   "node": "1012",
+   "name": "Division/13th Street Safety Project",
+   "page": "https://www.sfmta.com/node/1012",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving safety, comfort, and access for people walking and biking!<br />",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/161129_division_st_15.jpg?itok=dzdC5Rng",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/161129_division_st_15.jpg?itok=dzdC5Rng",
+   "types": [
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "4842000",
+    "4843000",
+    "4844000",
+    "549101"
+   ],
+   "facilities": {
+    "4": 0.28
+   },
+   "added": {
+    "4": 0.06
+   },
+   "upgraded": {
+    "4": 0.22
+   },
+   "miles": 0.28,
+   "segments": 4,
+   "years": [
+    2016,
+    2017
+   ],
+   "dated_by": "page",
+   "residents": 2661,
+   "schools": [
+    "Life Learning Academy Charter"
+   ],
+   "libraries": [],
+   "streets": [
+    "DIVISION ST",
+    "13TH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2016,
+     "miles": 0.22,
+     "lon": -122.40626,
+     "lat": 37.7695
+    },
+    {
+     "year": 2017,
+     "miles": 0.06,
+     "lon": -122.41412,
+     "lat": 37.76952
+    }
+   ]
+  },
+  {
+   "node": "1267",
+   "name": "Laurel Heights/Jordan Park Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/1267",
+   "phase": "Implementation / Construction",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/teaser-images/2018/02/euclid_at_parker.png",
+   "thumb": null,
+   "types": [
+    "Bike",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "2420000",
+    "2421000"
+   ],
+   "facilities": {
+    "2c": 0.26
+   },
+   "added": {},
+   "upgraded": {
+    "2c": 0.26
+   },
+   "miles": 0.26,
+   "segments": 2,
+   "years": [
+    2016,
+    2016
+   ],
+   "dated_by": "layer",
+   "residents": 276,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "ARGUELLO BLVD"
+   ],
+   "by_year": [
+    {
+     "year": 2016,
+     "miles": 0.26,
+     "lon": -122.45903,
+     "lat": 37.78361
+    }
+   ]
+  },
+  {
+   "node": "44135",
+   "name": "Mission Bay Blvd Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44135",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2026-11/261026_MB_Blvd-After_banner.jpg?itok=dQlqUxS2",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2026-11/261026_MB_Blvd-After_banner.jpg?itok=dQlqUxS2",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "15023102",
+    "15023203"
+   ],
+   "facilities": {
+    "4": 0.26
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.26
+   },
+   "miles": 0.26,
+   "segments": 2,
+   "years": [
+    2026,
+    2026
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "MISSION BAY DR"
+   ],
+   "by_year": [
+    {
+     "year": 2026,
+     "miles": 0.26,
+     "lon": -122.39722,
+     "lat": 37.77005
+    }
+   ]
+  },
+  {
+   "node": "2082",
+   "name": "Upper Clipper Street Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/2082",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improvements and paving coming to Upper Clipper Street",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/clipper-looking-down-1_0.jpg?itok=y8oRAnMt",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/08/clipper-looking-down-1_0.jpg?itok=y8oRAnMt",
+   "types": [
+    "Bike",
+    "Muni"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "4218000",
+    "4219000"
+   ],
+   "facilities": {
+    "4": 0.25
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.25
+   },
+   "miles": 0.25,
+   "segments": 2,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 700,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "CLIPPER ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.25,
+     "lon": -122.44332,
+     "lat": 37.74738
+    }
+   ]
+  },
+  {
+   "node": "40860",
+   "name": "Dr. Carlton B. Goodlett Place Quick-Build Project",
+   "page": "https://www.sfmta.com/node/40860",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": null,
+   "thumb": null,
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "10549000"
+   ],
+   "facilities": {
+    "4": 0.25
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.25
+   },
+   "miles": 0.25,
+   "segments": 1,
+   "years": [
+    2024,
+    2024
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "POLK ST"
+   ],
+   "by_year": [
+    {
+     "year": 2024,
+     "miles": 0.25,
+     "lon": -122.4186,
+     "lat": 37.78026
+    }
+   ]
+  },
+  {
+   "node": "28710",
+   "name": "3rd Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28710",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2024/05/240424_3rd_bikeway_19.jpg?itok=qLPZ5cRv",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2024/05/240424_3rd_bikeway_19.jpg?itok=qLPZ5cRv",
+   "types": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "180000",
+    "181000"
+   ],
+   "facilities": {
+    "4": 0.25
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.25
+   },
+   "miles": 0.25,
+   "segments": 2,
+   "years": [
+    2024,
+    2024
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "3RD ST"
+   ],
+   "by_year": [
+    {
+     "year": 2024,
+     "miles": 0.25,
+     "lon": -122.39152,
+     "lat": 37.77787
+    }
+   ]
+  },
+  {
+   "node": "219",
+   "name": "17th Street Bicycle Safety Project",
+   "page": "https://www.sfmta.com/node/219",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Working to improve safety for all road users on 17th Street between Church and Sanchez",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/07/150930_muni_misc_38-3.jpg?itok=mkrv1BRI",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2017/07/150930_muni_misc_38-3.jpg?itok=mkrv1BRI",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "805000"
+   ],
+   "facilities": {
+    "4": 0.24
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.24
+   },
+   "miles": 0.24,
+   "segments": 1,
+   "years": [
+    2018,
+    2018
+   ],
+   "dated_by": "page",
+   "residents": 559,
+   "schools": [],
+   "libraries": [
+    "Eureka Valley/Harvey Milk Memorial Library"
+   ],
+   "streets": [
+    "17TH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2018,
+     "miles": 0.24,
+     "lon": -122.43073,
+     "lat": 37.76275
+    }
+   ]
+  },
+  {
+   "node": "22025",
+   "name": "Bayshore Boulevard Quick-Build Project",
+   "page": "https://www.sfmta.com/node/22025",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/10/230926_bayshore-after_10.jpg?itok=IRN4jSWI",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/10/230926_bayshore-after_10.jpg?itok=IRN4jSWI",
+   "types": [
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "bike_from_page": true,
+   "blocks": [
+    "2800101",
+    "2801101",
+    "2801102",
+    "2801103"
+   ],
+   "facilities": {
+    "2b": 0.08,
+    "4": 0.23
+   },
+   "added": {},
+   "upgraded": {
+    "2b": 0.08,
+    "4": 0.23
+   },
+   "miles": 0.23,
+   "segments": 4,
+   "years": [
+    2023,
+    2023
+   ],
+   "dated_by": "page",
+   "residents": 116,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "BAYSHORE BLVD"
+   ],
+   "by_year": [
+    {
+     "year": 2023,
+     "miles": 0.23,
+     "lon": -122.40646,
+     "lat": 37.74001
+    }
+   ]
+  },
+  {
+   "node": "21852",
+   "name": "Panhandle Social Distancing and Safety Project",
+   "page": "https://www.sfmta.com/node/21852",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/05/img_1519_for_website.jpg?itok=Q5_6zanr",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2020/05/img_1519_for_website.jpg?itok=Q5_6zanr",
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "5453000",
+    "5459000"
+   ],
+   "facilities": {
+    "4": 0.18
+   },
+   "added": {
+    "4": 0.18
+   },
+   "upgraded": {},
+   "miles": 0.18,
+   "segments": 2,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "FELL ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.18,
+     "lon": -122.44741,
+     "lat": 37.7728
+    }
+   ]
+  },
+  {
+   "node": "20169",
+   "name": "Folsom Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/20169",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Improving Safety and Comfort on Folsom",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/12/img_20210224_083817.jpg?itok=NfheY9L_",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/12/img_20210224_083817.jpg?itok=NfheY9L_",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "5661000"
+   ],
+   "facilities": {
+    "4": 0.17
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.17
+   },
+   "miles": 0.17,
+   "segments": 1,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "FOLSOM ST"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 0.17,
+     "lon": -122.39893,
+     "lat": 37.78379
+    }
+   ]
+  },
+  {
+   "node": "24472",
+   "name": "Lake Merced Quick-Build Project",
+   "page": "https://www.sfmta.com/node/24472",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2025-02/Cyclist%20in%20completed%20bikeway%20Lake%20Merced.jpg?itok=hakWjMTI",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/images/2025-02/Cyclist%20in%20completed%20bikeway%20Lake%20Merced.jpg?itok=hakWjMTI",
+   "types": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "P:-122.48477,37.71482|-122.48489,37.71720"
+   ],
+   "facilities": {
+    "1": 0.17
+   },
+   "added": {
+    "1": 0.17
+   },
+   "upgraded": {},
+   "miles": 0.17,
+   "segments": 1,
+   "years": [
+    2024,
+    2024
+   ],
+   "dated_by": "page",
+   "residents": 503,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "LAKE MERCED BLVD"
+   ],
+   "by_year": [
+    {
+     "year": 2024,
+     "miles": 0.17,
+     "lon": -122.48497,
+     "lat": 37.71663
+    }
+   ]
+  },
+  {
+   "node": "20166",
+   "name": "Howard Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/20166",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "Ensuring a safer travel environment for all moving along Howard Street between 3rd Street and the Embarcadero",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/03/210304_soma_bike_25.jpg?itok=vMKaSM2Q",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/03/210304_soma_bike_25.jpg?itok=vMKaSM2Q",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "7032000",
+    "7037000"
+   ],
+   "facilities": {
+    "4": 0.15
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.15
+   },
+   "miles": 0.15,
+   "segments": 2,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "HOWARD ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.15,
+     "lon": -122.39849,
+     "lat": 37.78659
+    }
+   ]
+  },
+  {
+   "node": "24302",
+   "name": "Transbay Howard Streetscape Improvement Project",
+   "page": "https://www.sfmta.com/node/24302",
+   "phase": "Implementation / Construction",
+   "stand_in": false,
+   "teaser": null,
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/06/210304_soma_bike_29.jpg?itok=gIIuz2ev",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/06/210304_soma_bike_29.jpg?itok=gIIuz2ev",
+   "types": [
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "7033000"
+   ],
+   "facilities": {
+    "4": 0.15
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.15
+   },
+   "miles": 0.15,
+   "segments": 1,
+   "years": [
+    2020,
+    2020
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "HOWARD ST"
+   ],
+   "by_year": [
+    {
+     "year": 2020,
+     "miles": 0.15,
+     "lon": -122.39793,
+     "lat": 37.78704
+    }
+   ]
+  },
+  {
+   "node": "26713",
+   "name": "17th Street Quick-Build",
+   "page": "https://www.sfmta.com/node/26713",
+   "phase": "Project Evaluation",
+   "stand_in": false,
+   "teaser": "Bringing quick-build traffic safety improvements to Potrero Hill",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/07/img_1303.jpg?itok=fATCJQbQ",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2022/07/img_1303.jpg?itok=fATCJQbQ",
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "779000"
+   ],
+   "facilities": {
+    "4": 0.11
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.11
+   },
+   "miles": 0.11,
+   "segments": 1,
+   "years": [
+    2024,
+    2024
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "17TH ST"
+   ],
+   "by_year": [
+    {
+     "year": 2024,
+     "miles": 0.11,
+     "lon": -122.4016,
+     "lat": 37.76484
+    }
+   ]
+  },
+  {
+   "node": "24436",
+   "name": "Jones Street Quick-Build",
+   "page": "https://www.sfmta.com/node/24436",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "The Jones Street Quick-Build will build off COVID-19 response work and propose adjustable, reversible traffic safety improvements that prioritize the safety for the most vulnerable roadway users.",
+   "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/12/211118_jones-before_07.jpg?itok=gTNr5os4",
+   "thumb": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2021/12/211118_jones-before_07.jpg?itok=gTNr5os4",
+   "types": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "6260000"
+   ],
+   "facilities": {
+    "4": 0.09
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.09
+   },
+   "miles": 0.09,
+   "segments": 1,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "GOLDEN GATE AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 0.09,
+     "lon": -122.41387,
+     "lat": 37.78186
+    }
+   ]
+  },
+  {
+   "node": "21263",
+   "name": "Golden Gate Avenue Quick-Build",
+   "page": "https://www.sfmta.com/node/21263",
+   "phase": "Completed",
+   "stand_in": false,
+   "teaser": "The Golden Gate Avenue Quick-Build project aims to improve comfort and safety for those walking and biking along Golden Gate Avenue.",
+   "image": "https://www.sfmta.com/files/images/2026-07/cropped%20for%20web%20hero%20photo.jpg",
+   "thumb": null,
+   "types": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "bike_from_page": false,
+   "blocks": [
+    "6261000",
+    "6262000"
+   ],
+   "facilities": {
+    "4": 0.09
+   },
+   "added": {},
+   "upgraded": {
+    "4": 0.09
+   },
+   "miles": 0.09,
+   "segments": 2,
+   "years": [
+    2021,
+    2021
+   ],
+   "dated_by": "page",
+   "residents": 0,
+   "schools": [],
+   "libraries": [],
+   "streets": [
+    "GOLDEN GATE AVE"
+   ],
+   "by_year": [
+    {
+     "year": 2021,
+     "miles": 0.09,
+     "lon": -122.41509,
+     "lat": 37.7817
+    }
+   ]
+  }
+ ],
+ "unnamed_runs": [
+  {
+   "name": "Ocean Avenue",
+   "year": 2016,
+   "miles": 1.7,
+   "lon": -122.48314,
+   "lat": 37.73238
+  },
+  {
+   "name": "Mansell Street",
+   "year": 2017,
+   "miles": 1.28,
+   "lon": -122.41671,
+   "lat": 37.71841
+  },
+  {
+   "name": "Martin Luther King Jr Drive",
+   "year": 2018,
+   "miles": 1.26,
+   "lon": -122.50425,
+   "lat": 37.76503
+  },
+  {
+   "name": "2nd Street",
+   "year": 2021,
+   "miles": 0.96,
+   "lon": -122.39318,
+   "lat": 37.78272
+  },
+  {
+   "name": "Minnesota Street",
+   "year": 2020,
+   "miles": 0.88,
+   "lon": -122.39043,
+   "lat": 37.76011
+  },
+  {
+   "name": "Folsom Street",
+   "year": 2020,
+   "miles": 0.87,
+   "lon": -122.39319,
+   "lat": 37.78832
+  },
+  {
+   "name": "Valencia Street",
+   "year": 2019,
+   "miles": 0.83,
+   "lon": -122.42228,
+   "lat": 37.76903
+  },
+  {
+   "name": "Bayshore Boulevard",
+   "year": 2017,
+   "miles": 0.72,
+   "lon": -122.40498,
+   "lat": 37.73573
+  },
+  {
+   "name": "17th Street",
+   "year": 2018,
+   "miles": 0.72,
+   "lon": -122.4073,
+   "lat": 37.76449
+  },
+  {
+   "name": "Brotherhood Way",
+   "year": 2021,
+   "miles": 0.7,
+   "lon": -122.46609,
+   "lat": 37.7124
+  },
+  {
+   "name": "Hunters Point Boulevard",
+   "year": 2021,
+   "miles": 0.61,
+   "lon": -122.37687,
+   "lat": 37.73464
+  },
+  {
+   "name": "Laguna Honda Boulevard",
+   "year": 2017,
+   "miles": 0.55,
+   "lon": -122.46314,
+   "lat": 37.75276
+  },
+  {
+   "name": "17th Street",
+   "year": 2017,
+   "miles": 0.53,
+   "lon": -122.3987,
+   "lat": 37.76501
+  },
+  {
+   "name": "34th Avenue",
+   "year": 2023,
+   "miles": 0.52,
+   "lon": -122.49306,
+   "lat": 37.76096
+  },
+  {
+   "name": "Folsom Street",
+   "year": 2021,
+   "miles": 0.51,
+   "lon": -122.40154,
+   "lat": 37.78172
+  },
+  {
+   "name": "The Embarcadero",
+   "year": 2018,
+   "miles": 0.51,
+   "lon": -122.39541,
+   "lat": 37.79669
+  },
+  {
+   "name": "Arguello Boulevard",
+   "year": 2016,
+   "miles": 0.51,
+   "lon": -122.45888,
+   "lat": 37.78146
+  },
+  {
+   "name": "Bowling Green Drive",
+   "year": 2018,
+   "miles": 0.5,
+   "lon": -122.4595,
+   "lat": 37.76901
+  }
+ ],
+ "sources": {
+  "project_geometry": {
+   "name": "SFMTA project layer, live from its ArcGIS service, matched to blocks by tools/projects/project-blocks.py",
+   "generated": "2026-11-10",
+   "tolerances_m": {
+    "point": 25.0,
+    "line": 15.0,
+    "ring": 10.0
+   }
+  },
+  "network": {
+   "name": "SFMTA bikeway layer (ArcGIS Bicycle/bicycle, layer 0)",
+   "url": "https://services.sfmta.com/arcgis/rest/services/Bicycle/bicycle/FeatureServer/0",
+   "queried": "2026-11-10",
+   "geometry_queried": "2026-11-10"
+  },
+  "reach": {
+   "schools": {
+    "source": "CDE Public Schools and Districts data file, 2025-10-05, via Internet Archive",
+    "url": "https://web.archive.org/web/20251005140551id_/https://www.cde.ca.gov/SchoolDirectory/report?rid=dl1&tp=xlsx&ict=Y",
+    "queried": "2026-09-22"
+   },
+   "libraries": {
+    "source": "DataSF City Facilities, department Public Library, minus Library Support Services",
+    "dataset": "https://data.sf.gov/d/nc68-ngbr",
+    "queried": "2026-09-22"
+   },
+   "blocks": {
+    "source": "DataSF Census 2020: Blocks for San Francisco, pop20 and interior point",
+    "dataset": "https://data.sf.gov/d/p2fw-hsrv",
+    "queried": "2026-09-22",
+    "blocks": 5986,
+    "total": 873965
+   }
+  }
+ }
+}

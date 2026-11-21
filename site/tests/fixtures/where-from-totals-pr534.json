@@ -1,0 +1,251 @@
+{
+"about": "Each SF neighborhood's weekday cars as the zone-shaded where-from view of PR #534 (commit 1fc58881) showed them: [arriving, leaving, through, inside]. Coming from was arriving + through, Going to leaving + through, Both all three. site/tests/safety-map-test.mjs checks the bubbles still add to these.",
+"totals": {
+"Bayview Hunters Point": [
+48547,
+48793,
+43751,
+6802
+],
+"Bernal Heights": [
+24788,
+24863,
+94069,
+1032
+],
+"Castro/Upper Market": [
+25678,
+25285,
+91555,
+911
+],
+"Chinatown": [
+13532,
+12855,
+47224,
+402
+],
+"Excelsior": [
+32261,
+32163,
+33324,
+1906
+],
+"Financial District/South Beach": [
+83843,
+83990,
+67778,
+8496
+],
+"Glen Park": [
+11750,
+11665,
+76232,
+226
+],
+"Golden Gate Park": [
+1676,
+1671,
+172050,
+2
+],
+"Haight Ashbury": [
+17967,
+18140,
+99126,
+588
+],
+"Hayes Valley": [
+38906,
+39545,
+160357,
+1725
+],
+"Inner Richmond": [
+21495,
+21686,
+73690,
+1129
+],
+"Inner Sunset": [
+29884,
+30559,
+84380,
+1637
+],
+"Japantown": [
+6381,
+6469,
+66579,
+50
+],
+"Lakeshore": [
+31718,
+27060,
+81389,
+2122
+],
+"Lincoln Park": [
+4770,
+4825,
+371,
+1
+],
+"Lone Mountain/USF": [
+28269,
+28596,
+95353,
+1580
+],
+"Marina": [
+26105,
+26495,
+55661,
+1752
+],
+"McLaren Park": [
+1331,
+1338,
+9653,
+4
+],
+"Mission": [
+81198,
+82247,
+139428,
+9151
+],
+"Mission Bay": [
+23299,
+23668,
+71063,
+894
+],
+"Nob Hill": [
+15913,
+15613,
+77487,
+445
+],
+"Noe Valley": [
+23797,
+23898,
+71292,
+980
+],
+"North Beach": [
+13127,
+13499,
+30719,
+513
+],
+"Oceanview/Merced/Ingleside": [
+21198,
+21285,
+121471,
+932
+],
+"Outer Mission": [
+23112,
+23142,
+110624,
+1043
+],
+"Outer Richmond": [
+36480,
+36593,
+42369,
+4992
+],
+"Pacific Heights": [
+24378,
+24463,
+84077,
+998
+],
+"Portola": [
+16636,
+16598,
+44904,
+700
+],
+"Potrero Hill": [
+24636,
+24532,
+32950,
+1042
+],
+"Presidio": [
+9154,
+9262,
+8686,
+341
+],
+"Presidio Heights": [
+13658,
+13778,
+52004,
+463
+],
+"Russian Hill": [
+11910,
+12049,
+47710,
+295
+],
+"Seacliff": [
+1610,
+1666,
+7591,
+27
+],
+"South of Market": [
+66780,
+68349,
+162190,
+4689
+],
+"Sunset/Parkside": [
+63520,
+64008,
+43353,
+14950
+],
+"Tenderloin": [
+24725,
+24811,
+122483,
+738
+],
+"Treasure Island": [
+2348,
+2436,
+0,
+54
+],
+"Twin Peaks": [
+6337,
+6292,
+44214,
+61
+],
+"Visitacion Valley": [
+13694,
+13790,
+13252,
+589
+],
+"West of Twin Peaks": [
+46331,
+46587,
+121068,
+4167
+],
+"Western Addition": [
+21984,
+23262,
+143987,
+696
+]
+}
+}

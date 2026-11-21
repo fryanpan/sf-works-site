@@ -1,0 +1,96 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-01-06",
+ "id": "g55-51449",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51449",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/44925"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - December 16, 2025, Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens? Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be simple or routine and will be acted upon by a single vote",
+   "decision": "ADOPTED — 7 ayes (Resolution 260106-001)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA (Explanatory documents include a resolution): A. Ericka Hurd, et al. v. City and County of San Francisco, et al., Superior Ct. Case No. CGC-23-611235 filed 12/21/2023 for $90,000. Lawsuit involving allegations of personal injury from operator negligence (Plaintiffs' vehicle and revenue vehicle). B. CSAA Insurance Exchange and Reynaldo Hilario, Unlitigated Claim No. C26- 0010 for $30,911.14 (SFMTA to receive). Claim involving allegations of property damage to City property. RESOLUTION No. 260106-001",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260106-001)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items A-C are exempt from the California Environmental Quality Act [CEQA]. The proposed action is the Approval Action for Item A as defined by San Francisco Administrative Code Chapter 31. Explanatory documents include a staff report and resolution.) A. ESTABLISH – PERPENDICULAR PARKING, Chumasero Drive, east side, from Galindo Avenue to 157 feet northerly. B. RESCIND – TOW-AWAY, NO STOPPING, EXCEPT PERMITTED CAR SHARE, Cole Street, west side, from 20 feet to 62 feet north of Carl Street. C. ESTABLISH – TOW-AWAY, NO STOPPING, EXCEPT PERMITTED CAR SHARE, Frederick Street, north side, from Cole Street to 36 feet westerly. RESOLUTION No. 260106-002 4",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260106-002)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving a Roadway Shared Spaces street closure application for Golden Gate Avenue between Leavenworth and Jones streets, Wednesday, January 7, 2026, through Thursday, January 7, 2027, 6 am to 6 pm, daily; and making environmental review findings.",
+   "text": "Approving a Roadway Shared Spaces street closure application for Golden Gate Avenue between Leavenworth and Jones streets, Wednesday, January 7, 2026, through Thursday, January 7, 2027, 6 am to 6 pm, daily; and making environmental review findings. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260106-003 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260106-003)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding an overview of recent and future efforts to implement SFMTA efficiencies and other cost reduction initiatives"
+  },
+  {
+   "no": "12",
+   "title": "Authorizing the Director of Transportation to execute the Tenth Amendment to Contract No. SFMTA-2016-17, to extend the Contract for a two-year period",
+   "decision": "ADOPTED — 7 ayes (Resolution 260106-004)"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a Transit Division Quarterly Update"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

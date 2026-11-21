@@ -1,0 +1,93 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-12-21",
+ "id": "g55-40177",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40177",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/25588"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - December 7, 2021 Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (on motion to sever Item 10.1 and continue the item to a future meeting)",
+   "severed": true
+  },
+  {
+   "no": "10.2",
+   "title": "Implement parking restrictions except for City-owned San Francisco Police Department vehicles displaying SFMTA permits along Santiago Street",
+   "decision": "ADOPTED — 6 ayes (Resolution 211221-148)"
+  },
+  {
+   "no": "10.3",
+   "title": "Establish a special event rate retroactive to November 26, 2021, for Sutter-Stockton Garage, the Ellis-O’Farrell Garage, and the Union Square Garage",
+   "decision": "ADOPTED — 6 ayes (Resolution 211221-149)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Transportation Sales Tax Reauthorization"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 6 ayes, 1 nay"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in closed session",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

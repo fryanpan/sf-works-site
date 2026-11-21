@@ -1,0 +1,68 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-02-12",
+ "id": "g218-51787",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51787",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications - Earthquake Safety and Emergency Response Bond Program Update – Dec. 2025"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the January 8, 2026 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Minutes from the January 22, 2026 Joint Meeting of the Public Works Commission with the Sanitation and Streets Commission"
+  },
+  {
+   "no": "4c",
+   "title": "Various Locations Curb Ramps No. 18 – Contract Award"
+  },
+  {
+   "no": "4d",
+   "title": "General As-Needed GAN21 Tree Services Contract 1000035550 – Contract Modification"
+  },
+  {
+   "no": "4e",
+   "title": "General As-Needed GAN25 Tree Services Contract 1000035551 – Contract Modification"
+  },
+  {
+   "no": "4f",
+   "title": "Job Order Construction JOC-J66 General Building Services [Micro-LBE Set-Aside] – Contract Award"
+  },
+  {
+   "no": "4g",
+   "title": "Job Order Construction JOC-J67 General Engineering Services [Micro-LBE Set-Aside] – Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Department of Public Works Fiscal Year 2026-2027 and Fiscal Year 2027-2028 Operating and Capital Budget and Priorities"
+  },
+  {
+   "no": "6",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "7",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

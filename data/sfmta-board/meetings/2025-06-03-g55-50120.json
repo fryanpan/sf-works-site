@@ -1,0 +1,86 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2025-06-03",
+ "id": "g55-50120",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=50120",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/43990"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: May 20, 2025, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens? Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 7 ayes (Resolution 250603-051)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving a Roadway Shared Spaces street closure application by a local business for Maiden Lane between Kearny Street and Grant Avenue, Tuesday, June 3, 2025, through Wednesday, June 3, 2026; 4 pm to 10 pm, each Monday through Friday; 2 pm to 10 pm, each Saturday and Sunday; and making environmental review findings.",
+   "text": "Approving a Roadway Shared Spaces street closure application by a local business for Maiden Lane between Kearny Street and Grant Avenue, Tuesday, June 3, 2025, through Wednesday, June 3, 2026; 4 pm to 10 pm, each Monday through Friday; 2 pm to 10 pm, each Saturday and Sunday; and making environmental review findings. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 250603-052",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 250603-052)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 250603-051)"
+  },
+  {
+   "no": "10.3",
+   "title": "Supporting the renewal of Dogpatch and Northwest Potrero Hill Green Benefit District (GBD)",
+   "decision": "ADOPTED — 7 ayes (Resolution 250603-053)"
+  },
+  {
+   "no": "11",
+   "title": "Raise the Mobile Parking Payment Convenience Fee from $0.10 to $0.35, with provisions for increases up to $0.39",
+   "decision": "ADOPTED — 7 ayes (Resolution 250603-054)"
+  },
+  {
+   "no": "12",
+   "title": "State Budget and Regional Revenue Measure Update"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

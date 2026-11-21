@@ -1,0 +1,102 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-04-19",
+ "id": "g55-41055",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41055",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26308"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of April 5, 2022 Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 5 ayes (Resolution 220419-032)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment",
+   "decision": "ADOPTED — 5 ayes (Resolution 220419-032)"
+  },
+  {
+   "no": "10.2",
+   "title": "Adopting the Muni Service Equity Strategy Report for Fiscal Years 2023 and 2024",
+   "decision": "ADOPTED — 5 ayes (Resolution 220419-033)"
+  },
+  {
+   "no": "11",
+   "title": "Amending the Transportation Code, Division II, Section 702 to reduce the speed limit from 25 miles per hour to 20 miles per hour",
+   "decision": "ADOPTED — 7 ayes (Resolution 220419-034)"
+  },
+  {
+   "no": "12a",
+   "title": "Approving the SFMTA’s Fiscal Year 2023-2027 Capital Improvement Program in the amount of $2.6 billion"
+  },
+  {
+   "no": "12b",
+   "title": "Approving various actions related to the SFMTA two-year Fiscal Year (FY) 2023 and 2024 Budget including approving the SFMTA FY 2023 and FY 2024 Operating Budget and the Capital Budget"
+  },
+  {
+   "no": "13",
+   "title": "Authorizing the Director to execute Contract No. SFMTA-2022-13, for Parking Meter Coin and Parking Data Collection Services, with LAZ Parking California",
+   "decision": "ADOPTED — 6 ayes (Resolution 220419-037)"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session",
+   "decision": "NO ACTION"
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in closed session",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

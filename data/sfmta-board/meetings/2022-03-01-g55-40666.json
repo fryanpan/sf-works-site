@@ -1,0 +1,134 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-03-01",
+ "id": "g55-40666",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40666",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/25952"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes February 15, 2022 – Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7a",
+   "title": "Vision Zero Update"
+  },
+  {
+   "no": "7b",
+   "title": "Embarcadero Bikeway Update"
+  },
+  {
+   "no": "7c",
+   "title": "GO Bond Update"
+  },
+  {
+   "no": "7d",
+   "title": "Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-014)"
+  },
+  {
+   "no": "10a",
+   "title": "Rosa Flores v. CCSF, Superior Ct. #CGC20586568 filed on 9/15/20 for $60,000",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-014)"
+  },
+  {
+   "no": "10b",
+   "title": "Anna Mims v. CCSF, Superior Ct. #CGC18572263 filed 12/20/18 for $35,000",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-014)"
+  },
+  {
+   "no": "10c",
+   "title": "Allison Winter v. CCSF, Superior Ct. #CGC19581511 filed on 12/13/19 for $9,999.99",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-014)"
+  },
+  {
+   "no": "10d",
+   "title": "Deirdre Coyle v. CCSF, Superior Ct. #CGC19578368 filed on 8/13/19 for $7,500",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-014)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-015)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Amendment No. 4 to Contract No. CPT 660 with Brookville Equipment Inc., to extend the term of the contract from 7.5 years",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-016)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute the Predevelopment Agreement for the Potrero Yard Modernization Project",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-017)",
+   "severed": true
+  },
+  {
+   "no": "11",
+   "title": "Authorizing the Director to execute Contract No. SFMTA-2021-05-FTA with Complete Coach Works, to perform Mid-Life Overhaul services",
+   "decision": "ADOPTED — 7 ayes (Resolution 220301-018)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding the Office of Racial Equity and Belonging Racial Equity Update"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in closed session",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

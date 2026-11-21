@@ -1,0 +1,188 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2022-08-23",
+ "id": "g22-41900",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=41900",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Adopt renewed findings under State Urgency Legislation to allow hybrid in-person meetings during the COVID-19 Emergency"
+  },
+  {
+   "no": "4",
+   "title": "Approval of the Minutes of July 12, 2022"
+  },
+  {
+   "no": "5",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "6",
+   "title": "Communications"
+  },
+  {
+   "no": "6a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "6b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "6c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "6d",
+   "title": "Capital Budgeting and Planning – Update on Project Deliverability Assessment"
+  },
+  {
+   "no": "6e",
+   "title": "CleanPowerSF 2022 Integrated Resource Plan, Communications and Outreach Plan"
+  },
+  {
+   "no": "6f",
+   "title": "Contaminants of Emerging Concern in San Francisco Drinking Water, 2022 Draft Report"
+  },
+  {
+   "no": "6g",
+   "title": "O’Shaughnessy Dam Reservation Quarterly Report"
+  },
+  {
+   "no": "6h",
+   "title": "San Francisco Public Utilities Commission’s Citizens’ Advisory Committee Resolution in Support of Electric Grid Reliability on Treasure Island"
+  },
+  {
+   "no": "6i",
+   "title": "Water System Improvement Program Status of Construction Change Orders"
+  },
+  {
+   "no": "7",
+   "title": "Workshop on Planning for Drought: The SFPUC Design Drought as a Stress Test for the Hetch Hetchy Regional Water System"
+  },
+  {
+   "no": "8",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "8a",
+   "title": "Quarterly Audit and Performance Review Report"
+  },
+  {
+   "no": "8b",
+   "title": "Quarterly Budget Status Report"
+  },
+  {
+   "no": "8c",
+   "title": "Water Enterprise Capital Improvement Quarterly Report"
+  },
+  {
+   "no": "8d",
+   "title": "Water System Improvement Program Quarterly Report"
+  },
+  {
+   "no": "8e",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements"
+  },
+  {
+   "no": "9",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "10a",
+   "title": "Approve the novation of Contract HH-1000R, Mountain Tunnel Improvement Project"
+  },
+  {
+   "no": "10b",
+   "title": "Approve the plans and specifications, and award Contract No. HH-1006, San Joaquin Pipeline Valve and Safe Entry Improvements Phase 1B"
+  },
+  {
+   "no": "10c",
+   "title": "Award Job Order Contract No. JOC-90, General Engineering (A-License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties"
+  },
+  {
+   "no": "10d",
+   "title": "Approve an increase of 100 calendar days to the contract duration contingency for Contract No. WD-2616, 8-Inch Ductile Iron Water Main Replacement"
+  },
+  {
+   "no": "10e",
+   "title": "Accept work performed by M Squared Construction, Inc., under Contract No. WD-2693, 8-Inch and 12-Inch Ductile Iron Water Main Replacement"
+  },
+  {
+   "no": "10f",
+   "title": "Approve the novation of Contract WD-2851(I), 525 Golden Gate Avenue As-needed Mechanical Systems Inspection, Maintenance, and Repairs (2019-2021)"
+  },
+  {
+   "no": "10g",
+   "title": "Approve an increase of 280 consecutive calendar days to the contract duration contingency for Auxiliary Water Supply System Clarendon Supply 2019, with Mitchell Engineering"
+  },
+  {
+   "no": "10h",
+   "title": "Approve an increase of 165 calendar days to the contract duration contingency for Southeast Water Pollution Control Plant 042-Seismic Retrofit and Rehabilitation, with Western Water Constructors"
+  },
+  {
+   "no": "10i",
+   "title": "Approve the plans and specifications and award Contract No. WW-731, Various Locations Brick Sewer Improvements, in the amount of $10,542,103"
+  },
+  {
+   "no": "10j",
+   "title": "Approve the novation of existing “Agreement Maintenance and Repair and Upgrades of Sentinel UV Disinfection System” from current contractor Calgon Carbon UV Technologies to De Nora Water Technologies"
+  },
+  {
+   "no": "11",
+   "title": "Authorize a Joint Funding Agreement with the USGS for an amount contributed by the SFPUC not-to-exceed $ 2,837,770 and with a duration of six years"
+  },
+  {
+   "no": "12",
+   "title": "Approve the General Manager’s determination that negotiations with the bidder are warranted for Contract No. DB-132, New Treasure Island Wastewater Treatment Plant Project"
+  },
+  {
+   "no": "13",
+   "title": "Granting license agreements to Far Western Anthropological Research Group, Inc., Cinnabar Video Productions, and the Muwekma Ohlone Tribe rights for \"Time Has Many Voices\""
+  },
+  {
+   "no": "14",
+   "title": "Public comment on the matter to be addressed during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matter listed below as Conference with Legal Counsel"
+  },
+  {
+   "no": "16",
+   "title": "CLOSED SESSION: CONFERENCE WITH LEGAL COUNSEL"
+  },
+  {
+   "no": "17",
+   "title": "Announcement following Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "19",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

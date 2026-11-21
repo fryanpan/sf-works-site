@@ -1,0 +1,98 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-11-19",
+ "id": "g55-47734",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47734",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/41953"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes (Resolution 241119-126)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA (Explanatory documents include a resolution): A. Marsha Loquita Darden, Unlitigated Claim No. C22-0209 for $34,397.73 (City to receive). Claim involving allegations of property damage to City property. RESOLUTION No. 241119-126",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 241119-126)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking- and traffic modifications",
+   "text": "Approving various routine parking- and traffic modifications: (The Planning Department has found that Items A-B are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code. Explanatory documents include a staff report and resolution.) A. ESTABLISH – RESIDENTIAL PERMIT PARKING AREA H, ESTABLISH – 2–HOUR PARKING, MON-FRI FROM 8 AM TO 6 PM EXCEPT FOR VEHICLES WITH AREA H PERMITS North side of the 300 block of Eucalyptus Drive between 20th Avenue and 22nd Avenue, 300 block of Eucalyptus Drive. B. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA C 600 block of Geary Street between Leavenworth Street and Jones Street. C. ESTABLISH – GENERAL METERED PARKING, 2-HOUR TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, 26th Avenue, west side, from 29 feet to 100 feet north of Geary Boulevard. 4 D. ESTABLISH – BUS ZONE, Lower Great Highway, west side, from 122 feet to 162 feet north of Rivera Street, North Point Street, south side, from 80 feet to 120 feet west of Stockon Street. E. RESCIND – 10-MINUTE PARKING, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY ESTABLISH – BUS ZONE, Frederick Street, north side, from 77 feet to 97 feet west of Stanyan Street. F. ESTABLISH – TOW AWAY, NO STOPPING ANY TIME, Jerrold Avenue, south side, from 246 feet to 346 feet west of Toland Street, Toland Str",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (on motion to amend Item 10.2D to remove “North Point Street, south side, from 80 feet to 120 feet west of Stockton Street” and approve as amended) (Resolution 241119-127)"
+  },
+  {
+   "no": "11",
+   "title": "Approving the SFMTA’s 2025 Legislative Program",
+   "decision": "ADOPTED — 6 ayes (Resolution 241119-128)"
+  },
+  {
+   "no": "12",
+   "title": "Approving a side-running protected bikeway and parking and traffic modifications on Valencia Street between 15th and 23rd streets and side streets",
+   "decision": "ADOPTED — 6 ayes (Resolution 241119-129)"
+  },
+  {
+   "no": "13",
+   "title": "Approving a Roadway Shared Spaces Closure of Hayes Street between Gough and Octavia streets, 4 pm to 10 pm each Friday and 10 am to 10 pm each Saturday from November 22, 2024, through Saturday, November 22, 2025",
+   "decision": "ADOPTED — 6 ayes (Resolution 241119-130)"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding the Biking and Rolling Plan"
+  },
+  {
+   "no": "15",
+   "title": "Presentation and discussion regarding a Muni Winter Service Update"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

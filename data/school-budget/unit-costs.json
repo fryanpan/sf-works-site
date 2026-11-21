@@ -1,0 +1,42 @@
+{
+ "note": "Dollar cost per centerline mile of street made all-ages, by facility type, in millions of dollars. Read by scripts/school-budget-strategies.py (central, to rank picks by children per dollar) and scripts/school-budget-value.py (low, central, high, to cost each strategy). Budgets at approval, not final spending; dollar years differ by source and are not adjusted except where 'why' says so. No SFMTA or SFCTA unit-cost table by facility type was found.",
+ "read": "2026-10-01",
+ "types": {
+  "separated": {
+   "label": "Separated bike lane, quick-build (paint, posts, some concrete)",
+   "applies_to": "North Star blocks drawn Separated; any block on a collector, arterial or other non-residential street that a school link or off-plan pick upgrades",
+   "low": 0.89, "central": 1.5, "high": 2.39,
+   "source": "Five SFMTA quick-build budgets at Board approval, design and construction, per corridor (centerline) mile: 17th St $0.89M, Mid-Valencia $1.38M, Winston Dr $1.51M, Frida Kahlo Way $1.57M, Beach St $1.61M; Mid-Valencia $2.39M with its stated unfunded $900,000. Per-mile figures derived (budget / length). Table and links in notes/bike-network-2026-09/2026-09-29-brp-gap-areas.md.",
+   "tag": "[primary — read 2026-09-29]",
+   "why": "Central is the median of the five (rounded). High is Mid-Valencia with escalation. A concrete build costs far more: the Central Embarcadero memo gives $8-12M for about half a mile ($16-24M/mi); not used, since the plan and SFMTA's recent bikeways are quick-builds."
+  },
+  "calmed": {
+   "label": "Traffic-calmed shared street (Slow Street or neighborway: diverters, humps, signs, stencils)",
+   "applies_to": "North Star blocks drawn Shared; residential blocks (DataSF 3psu-pn9h classcode 5, or 0) a school link or off-plan pick upgrades",
+   "low": 0.2, "central": 0.25, "high": 0.65,
+   "source": "SFMTA Board, 2022-12-06, Item 14 (Slow Streets Program), staff report printed p. 13: 'Slow Street improvements generally consist of lower-cost spot treatments such as traffic calming elements, signs, and pavement stencils, with an average cost of implementation of approximately $200,000 per mile.' https://www.sfmta.com/reports/12-6-22-mtab-item-14-tc-amendment-slow-streets-program. High: Bushell et al., Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, 2013, printed p. 12: bicycle boulevards 'typically range from approximately $200,000 to $650,000 each', https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+   "tag": "[primary — read 2026-10-01]",
+   "why": "Low is SFMTA's 2022 average. Central adds about 25% for 2022 to 2026 prices and for diverters a busier street would need [assumption]. High takes UNC's upper per-project figure as per mile, a project being about a mile [assumption]. The staff report does not say centerline or directional; a Slow Street is one street, so read as centerline [inference — mine]."
+  },
+  "path": {
+   "label": "New shared-use path, or a walk path off any street made rideable",
+   "applies_to": "North Star blocks drawn Shared-use Path; walk edges on no street centerline that a school link upgrades",
+   "low": 0.39, "central": 0.72, "high": 6.43,
+   "source": "Bushell et al. 2013 (above), Path table, 'Multi-Use Trail - Paved', per mile, 2012 dollars: median $261,000, average $481,140, maximum $4,288,520 (42 observations), PDF p. 26.",
+   "tag": "[primary — read 2026-10-01]",
+   "why": "No SF per-mile figure. Peer figures times 1.5 for 2012 to 2026 prices [assumption]: low the median, central the average, high the maximum."
+  },
+  "car_free": {
+   "label": "Car-free street (an existing road closed to through traffic)",
+   "applies_to": "North Star blocks drawn Car-free",
+   "low": 0.6, "central": 0.8, "high": 1.0,
+   "source": "Sunset Dunes, about 2 miles of the Upper Great Highway, reported at $1.2M to $1.97M: secondary reporting only.",
+   "tag": "[web search — verify]",
+   "why": "No primary SF figure. The plan's Car-free blocks are a small share of any strategy's miles, so this range moves no total much."
+  }
+ },
+ "per_link_fixed_musd": {
+  "value": 0.15, "high": 0.25,
+  "why": "Sensitivity only, not in the central costs. A short school link built as its own project carries planning and design that a per-mile rate spreads over a longer corridor: 17th St's $615,000 included $210,000 that was not construction (notes/bike-network-2026-09/2026-09-29-brp-gap-areas.md). [assumption]"
+ }
+}

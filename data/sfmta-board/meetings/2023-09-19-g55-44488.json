@@ -1,0 +1,85 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-09-19",
+ "id": "g55-44488",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44488",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/28915"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - September 5, 2023, Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the San Francisco Municipal Transportation Agency Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 6 ayes (Resolution 230919-076)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes; part A severed"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code, Division II, Article 1100, Section 1124(b)(5) to authorize the Director of Transportation to extend the Taxi Upfront Fare Pilot Program to a date no later than June 30, 2025",
+   "decision": "ADOPTED — 6 ayes (Resolution 230919-077)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding an Active Communities Plan update"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

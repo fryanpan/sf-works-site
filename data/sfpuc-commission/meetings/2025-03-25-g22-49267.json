@@ -1,0 +1,131 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2025-03-25",
+ "id": "g22-49267",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=49267",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/3.25.2025_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of March 11, 2025",
+   "decision": "approve the minutes of March 11, 2025"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager (discussion only)"
+  },
+  {
+   "no": "5a",
+   "title": "Wastewater Enterprise Quarterly Report Including Southeast Area Major Projects Update including Biosolids and Headworks) for Q2",
+   "text": "Wastewater Enterprise Quarterly Report Including Southeast Area Major Projects Update (including Biosolids and Headworks) for Q2"
+  },
+  {
+   "no": "5b",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided"
+  },
+  {
+   "no": "6",
+   "title": "Bay Area Water Supply and Conservation Agency Report"
+  },
+  {
+   "no": "7",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "7a",
+   "title": "Approve an increase of $1,100,000 to the cost contingency for Contract No. WW-753,Hayes Valley Sewer Improvements, with Precision Engineering, Inc",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0052",
+   "text": "Approve an increase of $1,100,000 to the cost contingency for Contract No. WW- 753, Hayes Valley Sewer Improvements, with Precision Engineering, Inc., for a revised cost limit amount of $13,026,557, to use an alternate resin for cured-in-place liners along the final segments of large diameter sewers to minimize community impacts and to replenish cost contingencies, with no change to the contract duration"
+  },
+  {
+   "no": "7b",
+   "title": "Award Contract No. WD-2901, San Andreas Pipeline 3 – Drainage & Erosion Repair at Junipero Serra Park",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0053",
+   "text": "Award Contract No. WD-2901, San Andreas Pipeline 3 – Drainage & Erosion Repair at Junipero Serra Park, in the amount of $1,192,500, and with a duration of 360 consecutive calendar days, to the responsible bidder submitting the lowest responsive bid, JDB & Sons Construction, Inc., to divert stormwater and repair erosion adjacent to the San Francisco Public Utilities Commission’s easement for the San Andreas Pipelines in Junipero Serra Park within San Mateo County"
+  },
+  {
+   "no": "8",
+   "title": "Award PRO.0297, SFPUC Customer Administrative Services Community Choice Aggregation Program, to Calpine Community Energy, for an amount not-to-exceed $17,000,000",
+   "decision": "approve Item 8",
+   "resolution": "25-0054",
+   "text": "Award PRO.0297, SFPUC Customer Administrative Services Community Choice Aggregation Program, to Calpine Community Energy, for an amount not-to-exceed $17,000,000 and with a duration of three years, to provide meter data management, billing, and customer care services, subject to Board of Supervisors approval under Charter Section 9.118"
+  },
+  {
+   "no": "9",
+   "title": "Approve Amendment No. 5 to Contract No. CS-247(R), Customer and Administrative Services for Community Choice Aggregation Program, with Calpine Energy Solutions LLC, in the amount of $1,192,500",
+   "decision": "approve Item 9",
+   "resolution": "25-0055",
+   "text": "Approve Amendment No. 5 to Contract No. CS-247(R), Customer and Administrative Services for Community Choice Aggregation Program, with Calpine Energy Solutions LLC, increasing the contract amount by $500,000 and extending the contract duration by three months, to continue managing meter data, billing, and providing customer care support for the CleanPowerSF program, for a total not-to-exceed amount of $35,245,425 and total duration of nine years and nine months, and authorize the General Manager to seek Board of Supervisors approval for a future amendment, if needed to ensure continuity of operations while a new multi-year service contract is established, to SFPUC MARCH 25, 2025 MEETING MINUTES Page 3 of 5 increase the contract amount by an additional $2,700,000 and extend the contract duration by an additional six months, for a total not-to-exceed amount of $37,895,426 and a total agreement duration of ten years and one month"
+  },
+  {
+   "no": "10",
+   "title": "Approve Amendment No. 1 Engineering Services for Transmission Pipelines, PRO.0168.A, Engineering Services for Transmission Pipelines with AECOM Technical Services, Inc. increasing the contract amount by $7,000,000",
+   "decision": "approve Item 10",
+   "resolution": "25-0056",
+   "text": "Approve Amendment No. 1 to Contract No. PRO.0168.A, Engineering Services for Transmission Pipelines, PRO.0168.A, Engineering Services for Transmission Pipelines with AECOM Technical Services, Inc., to increasing the contract amount by $7,000,000, to provide additional engineering design and support services for transmission pipeline capital improvement projects funded by the Hetch Hetchy Water Capital Improvement Program, for a total not-to-exceed contract amount of $14,000,000, with no change to the contract duration, to provide additional engineering design and support services for transmission pipeline capital improvement projects funded by the Hetch Hetchy Water Capital Improvement Program, subject to Board of Supervisors approval under Charter Section 9.118"
+  },
+  {
+   "no": "11",
+   "title": "Approve Amendment No. 1 Contract No. PRO.0182, Electrical Engineering Services for the Hetch Hetchy Region, with AECOM Technical Services, Inc., increasing the contract amount by 2800000",
+   "decision": "approve Item 11",
+   "resolution": "25-0057",
+   "text": "Approve Amendment No. 1 to Contract No. PRO.0182, Electrical Engineering Services for the Hetch Hetchy Region, with AECOM Technical Services, Inc., increasing the contract amount by $2,800,000, and extending the contract duration by one year, to continue providing engineering design and support services for electrical engineering planning, design, and engineering support during construction services for the San Francisco Public Utilities Commission Hetch Hetchy Capital Improvement Programs for switchyards, substations, powerhouses, and other related facilities associated with the Hetch Hetchy system, for a total not-to-exceed contract amount of $8,800,000 and a total contract duration of nine years"
+  },
+  {
+   "no": "12",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "12a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "12b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "12c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "12d",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "12e",
+   "title": "2009 Water Supply Agreement Quarterly Update"
+  },
+  {
+   "no": "13",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only)"
+  },
+  {
+   "no": "14",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

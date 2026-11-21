@@ -1,0 +1,88 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-05-19",
+ "id": "g55-35789",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35789",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21932"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of April 21, 2020 Regular Meeting"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the San Francisco Municipal Transportation Agency Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 5 ayes (Resolution 200519-044)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director to file a claim with the Metropolitan Transportation Commission for allocation of operating assistance for Fiscal Year 2021",
+   "decision": "ADOPTED — 5 ayes (Resolution 200519-045)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to accept and expend up to $608,000 in Fiscal Year 2021 Transportation Development Act Article 3 funds for the San Francisco Active Communities Plan",
+   "decision": "ADOPTED — 5 ayes (Resolution 200519-046)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute unilateral Modification No. 10 to Van Ness Corridor Transit Improvement Project for additional costs related to modifications",
+   "decision": "ADOPTED — 5 ayes (Resolution 200519-047)"
+  },
+  {
+   "no": "10.5",
+   "title": "Appointing Steve Heminger to the Bond Oversight Committee, effective June 1, 2020",
+   "decision": "ADOPTED — 5 ayes (Resolution 200519-048)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the SFMTA’s Covid-19 Recovery and Restart Planning process"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

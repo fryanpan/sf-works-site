@@ -1,0 +1,71 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2025-03-20",
+ "id": "g91-49242",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=49242",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "2",
+   "title": "PRESIDENT’S REPORT"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGER’S REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6",
+   "title": "SAN FRANCISCO ZOO"
+  },
+  {
+   "no": "7",
+   "title": "DISTRICT 9 PARK UPDATE"
+  },
+  {
+   "no": "8",
+   "title": "22ND STREET PATHWAY STAIRS ACCEPT AND EXPEND"
+  },
+  {
+   "no": "9",
+   "title": "PALEGA RECREATION CENTER – REVOCABLE PERMIT FOR ARTS COMMISSION"
+  },
+  {
+   "no": "10",
+   "title": "GENERAL PUBLIC COMMENT – CONTINUED FROM ITEM 4 IF NECESSARY"
+  },
+  {
+   "no": "11",
+   "title": "COMMISSIONERS’ MATTERS"
+  },
+  {
+   "no": "12",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "13",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "14",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

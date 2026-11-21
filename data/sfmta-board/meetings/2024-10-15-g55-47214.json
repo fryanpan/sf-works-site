@@ -1,0 +1,104 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-10-15",
+ "id": "g55-47214",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47214",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10a",
+   "title": "ESTABLISH – RESIDENTIAL PERMIT PARKING AREA C – 900 block of Post Street"
+  },
+  {
+   "no": "10b",
+   "title": "ESTABLISH – RESIDENTIAL PERMIT PARKING AREA H – 2500 block of Ocean"
+  },
+  {
+   "no": "11",
+   "title": "Approving an all-way stop sign at Church and 28th streets and transit stop relocation changes along Church Street between Clipper and 28th streets"
+  },
+  {
+   "no": "11a",
+   "title": "ESTABLISH - STOP SIGN - Church Street, northbound and southbound, at 28th Street"
+  },
+  {
+   "no": "11b",
+   "title": "ESTABLISH - RED ZONE - Church Street, west side, from 28th Street to 20 feet"
+  },
+  {
+   "no": "11c",
+   "title": "RESCIND - FLAG STOP – Church Street, northbound and southbound, at Clipper"
+  },
+  {
+   "no": "11d",
+   "title": "ESTABLISH - FLAG STOP - Church Street, northbound and southbound, at 26th Street;"
+  },
+  {
+   "no": "12",
+   "title": "Approving Contract No. SFMTA-2022-40 FTA with Hitachi Rail GTS USA for design, furnishment, system implementation, support and related services for a Communications-"
+  },
+  {
+   "no": "13",
+   "title": "Approving Contract No. SFMTA-2024-62-LOC with Verra Mobility for the implementation and operation of an Automated Speed Enforcement Pilot Program"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding a Transportation 2050 Programmatic Update, Fare Compliance Update, and the Joint Development Program Goals and Policy"
+  },
+  {
+   "no": "15",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session"
+  },
+  {
+   "no": "16",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "17",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

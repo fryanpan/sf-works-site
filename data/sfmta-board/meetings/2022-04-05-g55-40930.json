@@ -1,0 +1,121 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-04-05",
+ "id": "g55-40930",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40930",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26219"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-024)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-024)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-025)"
+  },
+  {
+   "no": "10.3",
+   "title": "Adopting a resolution making findings pursuant to AB361 to allow for continued remote meetings due to the COVID-19 pandemic",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-026)"
+  },
+  {
+   "no": "10.4",
+   "title": "Approving three contracts for as-needed consulting services for public outreach and engagement each contract not to exceed $3,025,000 and a term of five years",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-027)",
+   "severed": true
+  },
+  {
+   "no": "10.5",
+   "title": "Authorizing the Director or designee to execute a side letter with the San Francisco Building Trades Council to extend the Citywide Project Labor Agreement",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-028)"
+  },
+  {
+   "no": "10.6",
+   "title": "Authorize the Director to execute a Memorandum of Understanding between the SFMTA and San Francisco Public Works",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-029)"
+  },
+  {
+   "no": "11",
+   "title": "Amending the Transportation Code to expand the Taxi Upfront Fare Pilot Program",
+   "decision": "ADOPTED — 6 ayes (Resolution 220405-030)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion of the Muni Service Equity Strategy Report for Fiscal Years 2022 and 2023"
+  },
+  {
+   "no": "13a",
+   "title": "Presentation and discussion regarding the San Francisco Municipal Transportation Agency’s Fiscal Year 2021-2025 Capital Improvement Program in the amount of $2.6 billion for 157 projects"
+  },
+  {
+   "no": "13b",
+   "title": "Public hearing, presentation and discussion of the Fiscal Year (FY) 2021 and FY 2022 Operating and Capital Budget including use of fund balance; authorizing changes to various fines, fees, fares, rates, and charges"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 5 ayes (Resolution 220405-031)"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in closed session",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

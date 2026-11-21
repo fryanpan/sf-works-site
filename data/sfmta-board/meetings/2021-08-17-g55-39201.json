@@ -1,0 +1,56 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-08-17",
+ "id": "g55-39201",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39201",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Communications"
+  },
+  {
+   "no": "5",
+   "title": "Presentation and discussion regarding Transportation 2050 including an update on ConnectSF"
+  },
+  {
+   "no": "6",
+   "title": "Approving the responses on behalf of the SFMTA and the Board of Directors."
+  },
+  {
+   "no": "7",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d)"
+  },
+  {
+   "no": "8",
+   "title": "Announcement of Closed Session."
+  },
+  {
+   "no": "9",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  },
+  {
+   "no": "10",
+   "title": "ADJOURN"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

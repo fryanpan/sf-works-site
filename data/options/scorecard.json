@@ -1,0 +1,3109 @@
+{
+ "_about": "One record per option for safer, more convenient trips: the toolkit-matrix block's scorecard. Each figure is read from the option's What We Know research, with its provenance tag. A null figure is not measured: never estimated to fill the row. Site copy: site/data/options/scorecard.json, by tools/toolkit/build-scorecard-site.py. Fields: grade (the Maryland scale level or why there is none), search (a search the limit cut short), studies (rows in data/evidence/studies.json), method (the methods row). cost.tied_to_miles means the low miles go with the low cost, because more money buys more miles. vmt_reduction.rank_on_central ranks and charts a row on its central figure alone. short is the chart label.",
+ "_read": "2026-11-06",
+ "_cost_basis": {
+  "spread_years": 10,
+  "text": "Cost a year: running cost plus build cost spread over 10 years. One basis for every option, used for the chart's x axis and the Top asks ranking. The 12-month cell trial and the one-off e-bike pilot (spread_years 1) count their whole cost in that year."
+ },
+ "_mode_shift_base": {
+  "daily_person_trips": 4460000,
+  "text": "Counts of people who stop being driven become citywide car share points at two trips each a school day or workday, against 4.46 million daily person trips to, from and within SF. The note doesn't say whether that is a weekday or a seven-day average, and school-day trips run about 180 days a year, so the points are an upper bound.",
+  "tag": "[primary — read 2026-11-04, per note]"
+ },
+ "_land_sq_mi": {
+  "value": 47.14
+ },
+ "_dropped": {
+  "downtown-congestion-pricing": "Merged into road-pricing: the 2026-11-05 road pricing note covers the same $6.50 cordon and supersedes it.",
+  "connected-bike-network-comfort-standard": "Merged into protected-bike-network: same method (D1). Its comfort standard is how that network gets built. Its own 1.7M to 47.7M miles, at about $15M a year, rest on an assumed share of riders from cars and are in that row's note."
+ },
+ "_intro": "Our estimates, not measurements, researched October 31 to November 6, 2026.",
+ "_base": {
+  "title": "SFMTA's 2019 Travel Decisions Survey",
+  "url": "https://sfmta.com/media/20810/download"
+ },
+ "_view_notes": {
+  "mode": "An upper limit, counting two trips a school day or workday per person, out of daily trips to, from and within SF.",
+  "injury": "Each change counts different injuries: everyone hurt, only deaths and severe injuries, or only children. Citywide changes are spread over SF's 47 square miles."
+ },
+ "_sources_note": "“No estimate” means we have none, and we don't guess one. Study grades (Maryland scale) run 1 (weakest) to 5 (randomized) and rate the study, not its fit to SF. Existing money says whether a budget or grant's own rule covers the change.",
+ "options": [
+  {
+   "id": "aftercare-transportation",
+   "name": "Rides to aftercare",
+   "way": "Pooled afternoon bus or van circuit from school to aftercare (3 pm leg); ranked pilot is one circuit linking three schools, about 40 children a day",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "children moved to a yellow bus (per child only, valued at about $160 a child a year); vans and ride-service cars counted at $0; no SF total of injuries avoided stated",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 80000,
+     "high": 80000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine] (half of School Access Plan p. 46 \"~$160,000 per year\" per yellow bus [primary — read 2026-10-31])"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFCTA School Access Plan (2023) recommends DCYF issue a Notice of Funding Availability for nonprofits providing transportation that supports aftercare (p. 42); DCYF's 2024-29 RFP did not include one. Recommended, not funded.",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "DCYF funded the Mission Van Collaborative 2002 to 2004 (about 400 youth a year, now defunct); SFUSD buses carry Rooftop and JBBP West students to off-site programs; DCYF payment records show no ride contracts since 2009; no pilot, hearing or vote found.",
+    "opposed_by": [],
+    "tag": "[primary — read 2026-10-31]; group positions [web search — verify]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": null
+  },
+  {
+   "id": "circulation-plans",
+   "name": "Circulation plan, one cell",
+   "way": "One low-traffic cell of residential streets (about 1 square km) with turn bans, one-way loops and planters/passable filters; ranked summary: 'Low-traffic cells with turn bans, loops and planters'",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[primary — read 2026-10-20, carried]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[primary — read 2026-10-31]",
+    "search": "done",
+    "grade": "SMS 2"
+   },
+   "injuries_avoided_per_year": {
+    "low": 0.29,
+    "central": 0.58,
+    "high": 0.66,
+    "whose": "all people hurt inside one cell, cell outside an Equity Priority Community (EPC cell: 1.06, range 0.53 to 1.22); boundary change taken as zero in central",
+    "tag": "[inference — mine]",
+    "studies": [
+     "furlong-2025-ltn-injuries"
+    ]
+   },
+   "per_sq_mi": {
+    "value": 1.5,
+    "low": 0.751,
+    "high": 1.71,
+    "area_sq_mi": 0.386,
+    "tag": "[inference — mine] [inference — mine: ÷ area]"
+   },
+   "cost": {
+    "one_time": {
+     "low": 310000,
+     "high": 790000
+    },
+    "yearly": {
+     "low": 20000,
+     "high": 50000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "asked",
+    "plan": null,
+    "asked_by": [
+     {
+      "group": "Kid Safe SF",
+      "ask_id": null
+     },
+     {
+      "group": "Walk SF",
+      "ask_id": "ask-0013"
+     },
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": "ask-0015"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "No area-wide circulation plan; SFMTA's District 8-funded Duboce Triangle circulation study is 'not a project that will lead to changes on the street'; of 16 Slow Streets evaluated only three met Board targets; voters kept JFK car-free (Prop J 2022) and rejected Prop G (2026, preliminary); District 4 voted about 64% against Prop K and recalled its supervisor.",
+    "opposed_by": [
+     "Prop I (2022) and Prop G (2026) campaigns",
+     "SFFD (Turk Street 2017 precedent)",
+     "neighbors on parallel streets (Lake Street, Minnesota)",
+     "drivers losing access (Duboce survey)",
+     "ACLU California Action, EFF, Oakland Privacy (camera-gate bills AB 645, AB 917)",
+     "D1, D3, D10, D11 supervisors voted against JFK"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "street-closures",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-muni-baseline",
+      "name": "Municipal Railway Baseline (General Fund transfer)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-parking-traffic-baseline",
+      "name": "Parking and Traffic Baseline (General Fund transfer)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py street-closures]"
+   },
+   "method": "B2",
+   "short": "Circulation plan"
+  },
+  {
+   "id": "citywide-driving-charges",
+   "name": "Citywide 5-cent-a-mile charge",
+   "way": "A state law letting SF add its own per-mile rate (5 cents a mile modeled) on a state road charge meter, covering every SF street",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": 65700000,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": "Not rechecked"
+   },
+   "injuries_avoided_per_year": {
+    "low": 37,
+    "central": null,
+    "high": 300,
+    "whose": "all people hurt or killed in SF crashes, assumed to fall in step with driving (base about 3,720 a year)",
+    "tag": "[inference — mine]",
+    "studies": [
+     "comandon-boarnet-2025-distance-charges"
+    ]
+   },
+   "per_sq_mi": {
+    "area_sq_mi": 47.14,
+    "value": null,
+    "low": 0.7849,
+    "high": 6.364,
+    "tag": "[inference — mine: citywide change, ÷ area]"
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 6000000,
+     "high": 16000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]",
+    "no_setup_priced": true
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SF Climate Action Plan 2021, strategy TLU.3, climate plan paragraph): TLU.3-1 'by 2026, study and implement the appropriate pricing policies'; TLU.3-2(b) advocate for state legislation incl. 'application of road user charges'. The note says the 2026 date has passed without a pricing policy. Also Plan Bay Area 2050+ T5 regional per-mile fee, a study pathway only.",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "No bill for a citywide charge exists; the SFCTA Board backed the AB 1421 per-mile study (Res. 26-43, March 2026), which was later pulled; SF's road-pricing bills AB 1543 (2007) and AB 1605 (2019) were vetoed, and AB 981 (Treasure Island, 2008) is law but its toll has not started.",
+    "opposed_by": [
+     "Assembly Republicans on AB 1421 (Budget vice chair David Tangipa)",
+     "Governor Newsom's office (would not sign a mileage tax)",
+     "San Mateo County officials (against SFCTA's 2010 county-line charge)"
+    ],
+    "tag": "[primary — read 2026-10-31] / [secondary — verify] / [web search — verify]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "A13",
+   "short": "5-cent-a-mile charge"
+  },
+  {
+   "id": "curb-extensions",
+   "name": "Bulb-outs at school crossings",
+   "way": "Bulb-outs and refuge islands at school crossings: as costed and recommended, quick-build corners (paint, posts, low curbs or side islands) at the 50 school-zone intersections with the most people hurt walking (200 corners), built by August 2028, concrete where they hold up",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[unretrieved — verify]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": null,
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "people hurt walking (all ages) at school-zone intersections; the benefit-cost working is in dollars of injury value, not counts of people",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 2000000,
+     "high": 5000000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Safe School Connections draft approach (Sept 2026) lists \"bulbouts, raised crosswalks, painted safety zones and flashing beacons\" for School Connector streets, but commits no money, no site list and no corner count; Board adoption expected late 2026 or early 2027. Not at the ranked scale (50 worst corners by injuries).",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": null
+     },
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": "ask-0035"
+     },
+     {
+      "group": "Kid Safe SF",
+      "ask_id": "ask-0036"
+     },
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0037"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SF adds about 4 painted safety zones a year near schools (93 of 2,236 school-area intersections have one) and publishes no bulbout count; the SFMTA Board approved school bulbouts at E.R. Taylor Elementary in 2014 over Fire Department protest, and the 2024 Kirkham Street midblock choker cut speeds 1 mph and was removed after community feedback.",
+    "opposed_by": [
+     "San Francisco Fire Department (2013 to 2015) [secondary — verify]",
+     "Firefighters' union and North Beach merchants (2015) [secondary — verify]",
+     "Neighbors over parking, deliveries and garage access (17 of 58 non-bus-bulb engineering hearing items, 2019 to 2026)",
+     "Some Kirkham Street neighbors (choker, 2026)"
+    ],
+    "tag": "[DataSF vtn2-q8ky — queried 2026-10-31]; [primary — read 2026-10-31]; Fire Department and union history [secondary — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "crossings",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "state-rmra-sb1",
+      "name": "State road repair money (SB 1, RMRA)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py crossings]"
+   },
+   "method": null
+  },
+  {
+   "id": "daylighting",
+   "name": "Daylighting, posts at the worst corners",
+   "way": "Posts in the 20 feet before a crosswalk at the 250 worst corners",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "search": "cut short",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "pedestrians (people walking hurt at intersections); biking injuries left out of the benefit math",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 2000000,
+     "high": 4500000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine] (unit cost backed out of an SFCTA District 5 package, [primary — read 2026-10-31])"
+   },
+   "status": {
+    "state": "asked",
+    "plan": "No adopted or draft plan names the 250-corner scope. Res. 437-25 (Street Safety Act, adopted 2025-09-16) only 'urges' SFMTA to develop a hardened daylighting plan for the High Injury Network by December 2026; SFMTA told the Civil Grand Jury it began one in July 2025, none published as of 2026-10-31. SFMTA's 2026-06-17 release targets 'approximately 50 new painted safety zones annually' (16 built in 2025)",
+    "asked_by": [
+     {
+      "group": "California Walks and CalBike",
+      "ask_id": null
+     },
+     {
+      "group": "Streets For All SF",
+      "ask_id": null
+     },
+     {
+      "group": "Walk SF, SF Bicycle Coalition and Streets Forward",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SF has 286 painted safety zones (paint and posts) built 2014 to 2025, about 24 a year and 16 in 2025, against SFMTA's 'approximately 50' a year target; the Board urged a hardened HIN plan by December 2026 (Res. 437-25), SFMTA says it began one in July 2025 but none is published, and SF's only tested daylighting result (Tenderloin, paint) shows no clear drop for people walking.",
+    "opposed_by": [
+     "Supervisor Wong and Sunset shop owners, on parking loss from daylighting generally [secondary — verify]",
+     "Repeal AB 413 petition, 3,036 signatures, on parking loss",
+     "Fire Department, for bulb-outs (Irving Street 2014), not posts specifically"
+    ],
+    "tag": "[DataSF vtn2-q8ky — queried 2026-10-31]; [Legistar — read 2026-10-31]; [primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "daylighting",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "state-rmra-sb1",
+      "name": "State road repair money (SB 1, RMRA)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py daylighting]"
+   },
+   "method": null
+  },
+  {
+   "id": "e-bike-incentives-bike-share",
+   "name": "E-bike vouchers, 5,000 at $1,000",
+   "way": "Income-tested e-bike vouchers handed out by lottery at Climate Roadmap CR-2.2 size (5,000 at $1,000), plus bike share stations in District 10's low-income tracts",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": null,
+    "annual_miles_high": 640000,
+    "tag": "[inference — mine]",
+    "studies": [
+     "wsdot-2025-ebike-lottery",
+     "anderson-hong-jacobs-2026-sweden-ebike"
+    ],
+    "grade": "SMS 5 for the lottery, weak for miles"
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "No injuries avoided; the benefit-cost working counts added crash cost per extra owner (-$465, -$410 or -$290)",
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 5750000,
+     "high": 7500000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Climate Roadmap action CR-2.2 'Subsidize E-bikes' (a plan, unfunded); E-Bike Incentive Fund, Admin Code §10.100-66 (Ordinance 268-24), with no appropriation; Mayor announced 60 new bike share stations for 2026",
+    "asked_by": [
+     {
+      "group": "eBikeSF campaign",
+      "ask_id": null
+     },
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": null
+     },
+     {
+      "group": "SF Transit Riders, Livable City, Streets for All SF and five others",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "The Board passed the fund ordinance (Ordinance 268-24) but no budget line funds it, and the Mayor's proposed 2026-27 budget cuts SF Environment's General Fund money 40%; SFPUC's Electrify My Ride gave 1,000 $1,000 coupons in 2025, gone 'in just a few hours'; bike share is Lyft's exclusive MTC contract to July 2032.",
+    "opposed_by": [
+     "Lime (against the Lyft renewal)",
+     "Supervisors Wong, Sherrill, Dorsey, Sauter raise e-bike safety (File 261029)"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "maybe",
+    "idea": "e-bikes-bike-share",
+    "sources": [
+     {
+      "id": "sfmta-revenue-bonds",
+      "name": "SFMTA revenue bonds",
+      "fit": "maybe"
+     },
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "maybe"
+     },
+     {
+      "id": "sfmta-parking-fines",
+      "name": "Parking fines",
+      "fit": "maybe"
+     },
+     {
+      "id": "state-sta",
+      "name": "State Transit Assistance",
+      "fit": "maybe"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py e-bikes-bike-share]"
+   },
+   "method": "D3",
+   "short": "E-bike vouchers"
+  },
+  {
+   "id": "e-bikes-for-frequent-drivers",
+   "name": "Six-month e-bike loans for frequent drivers, 300 riders",
+   "way": "Six month employer loan with a $300 buy-out, City staff first, drawn by lottery, for people who drive alone most days",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 263000,
+     "high": 1316000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]",
+    "spread_years": 1
+   },
+   "status": {
+    "state": "ignored",
+    "plan": null,
+    "asked_by": [],
+    "tag": "[inference — mine]"
+   },
+   "readiness": {
+    "sf_record": "This way is our own pick. SF Environment ran a delivery e-bike pilot, and every e-bike money bill read drew no registered opposition.",
+    "opposed_by": [
+     "eBikeSF and Streets Forward want any incentive open to all residents, on the E-Bike Incentive Fund"
+    ],
+    "tag": "[primary — read 2026-11-05, per note]; [inference — mine]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "e-bikes-bike-share",
+    "sources": [
+     {
+      "id": "access-line-tax",
+      "name": "Access Line Tax (Prop O, 2008; replaced the 911 Emergency Response Fee)",
+      "fit": "yes"
+     },
+     {
+      "id": "sugary-drinks-tax",
+      "name": "Sugary Drinks Distributor Tax (Prop V, 2016)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py e-bikes-bike-share]"
+   },
+   "method": "D4",
+   "short": "Six-month e-bike loans"
+  },
+  {
+   "id": "family-zoning-housing",
+   "name": "Family homes on upzoned corridors",
+   "way": "Fund family-sized affordable homes on the Family Zoning Plan's upzoned corridors (benefit-cost working: 40% of the Controller's forecast homes affordable, 170 to 293 affordable homes a year)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": null,
+    "annual_miles_high": 2300000,
+    "tag": "[inference — mine]",
+    "grade": "Weak, nearest SMS 1 to 2",
+    "studies": [
+     "cervero-2006-tod",
+     "spears-boarnet-expo-line"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": 0,
+    "central": 0.3,
+    "high": 0.6,
+    "whose": "children (SFUSD students in plan homes) hurt in cars, at year 10; upper bound, walking and biking risk of switchers not netted out",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 51000000,
+     "high": 88000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine], from [primary — read 2026-10-31] Budget and Legislative Analyst per-home cost",
+    "tied_to_miles": true
+   },
+   "status": {
+    "state": "asked",
+    "plan": null,
+    "asked_by": [
+     {
+      "group": "Council of Community Housing Organizations",
+      "ask_id": "ask-0114"
+     },
+     {
+      "group": "Race and Equity in All Planning Coalition",
+      "ask_id": "ask-0109"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "The Board finally passed the Family Zoning Plan (Ord. 245-25) on 2025-12-09, in effect 2026-01-12; voters passed Prop C raising Housing Trust Fund spending with 80.27% on 2026-11-03 (preliminary, uncertified); only 17% of MOHCD's 6,389-home affordable pipeline is in Districts 2, 4 and 7 and none in District 1.",
+    "opposed_by": [],
+    "tag": "[Legistar — read 2026-10-31]; Prop C [web search — verify]; [DataSF aaxw-2cb8 — queried 2026-10-31]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "E7",
+   "short": "Family homes"
+  },
+  {
+   "id": "housing-near-jobs-and-transit",
+   "name": "Start approved housing projects, per 10,000 homes",
+   "way": "Start the 47,444 homes with Planning's approval and no building permit application, starting with a date in Freedom West",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 800000000,
+     "high": 4200000000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "Housing Element, 82,069 homes by 2031",
+    "asked_by": [
+     {
+      "group": "Race and Equity in All Planning Coalition",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "Ordinance 136-26 made a 67% fee cut permanent in August 2026. No opponent on record yet for start dates.",
+    "opposed_by": [],
+    "tag": "[primary — read 2026-11-06, per note]; [inference — mine]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "E1, E2"
+  },
+  {
+   "id": "low-traffic-cells",
+   "name": "Low traffic cell trial, 12 months",
+   "way": "One 12 to 18 month trial of turn bans and soft diverters (posts, paint, signs) as one set on one residential street and its side streets, adopted by SFMTA Board resolution with end date and keep/stop rules (no ranked-summary entry; the WWK's recommendation)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 98000,
+    "annual_miles_central": 425000,
+    "annual_miles_high": 784000,
+    "tag": "[inference — mine]",
+    "grade": "SMS 3",
+    "studies": [
+     "goodman-2023-lambeth"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": null
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 190000,
+     "high": 260000
+    },
+    "yearly": {
+     "low": 20000,
+     "high": 50000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[secondary — repo note, verify; inference — mine]",
+    "spread_years": 1
+   },
+   "status": {
+    "state": "asked",
+    "plan": null,
+    "asked_by": [
+     {
+      "group": "Kid Safe SF",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SF has pieces and no cell: SFMTA paused Noe's diverter in 2024 after a few neighbors objected; Page Street went permanent (3,360 to 1,120 vehicles a day); Capp/Shotwell barriers extended to 2027-09-30 with the Board-requested evaluation never run; West Portal lost five of eight turn restrictions; voters kept JFK and the Great Highway closed.",
+    "opposed_by": [
+     "Noe Street neighbors (2024 diverter pause)",
+     "Mission Merchants (Capp/Shotwell)",
+     "West Portal and Mission Street merchants",
+     "Valencia's VAMANOS",
+     "Prop I backers",
+     "SFFD (Turk 2017 precedent)"
+    ],
+    "tag": "[secondary — read 2026-11-05, per note]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "street-closures",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-muni-baseline",
+      "name": "Municipal Railway Baseline (General Fund transfer)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-parking-traffic-baseline",
+      "name": "Parking and Traffic Baseline (General Fund transfer)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py street-closures]"
+   },
+   "method": "B1",
+   "short": "Low traffic cells"
+  },
+  {
+   "id": "lower-speed-limits",
+   "name": "20 mph school zones",
+   "way": "20 mph on business streets, safety corridors and school zones (signs street by street under AB 43, plus the adopted 20 mph school zones)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": null
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[primary — read 2026-10-31]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "all people killed or severely injured (KSI), all modes; the notes say no figure is split by child or pedestrian",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 500000,
+     "high": 3700000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine] (school total, from the lever cost note [per repo note]); SFMTA $5-6M program [primary — read 2026-10-31]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Board Res. 260721-056 (2026-07-21) adopted citywide 20 mph school zone limits; the Mayor commits to phase out 25 mph school zone limits at more than 230 schools by 2028. Business and safety corridors: an ongoing SFMTA program with 112 corridors done, remaining eligible streets not listed.",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": "ask-0006"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA Board has lowered 112 corridors since 2021, usually on the consent calendar with no speaker opposing a limit at the four votes read, and adopted 20 mph school zones 2026-07-21 (five ayes, one absent, no speaker against); its nine measured corridors showed no change in median speed and SF has never checked injuries.",
+    "opposed_by": [
+     "AB 43 opponents at the state level: police unions, traffic-ticket defense lawyers, ACLU California Action, Western Center on Law & Poverty [unretrieved — verify]",
+     "National Motorists Association (opposed AB 382) [unretrieved — verify]",
+     "Unnamed letter senders asking the Supervisors for an outside cost review of every speed limit reduction [unretrieved — verify]"
+    ],
+    "tag": "[primary — read 2026-10-31] for SF votes; opponents [unretrieved — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "traffic-calming",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     },
+     {
+      "id": "fed-hsip",
+      "name": "Federal Highway Safety Improvement Program (Caltrans local HSIP calls)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py traffic-calming]"
+   },
+   "method": "B7"
+  },
+  {
+   "id": "main-street-quick-build",
+   "name": "Main street quick-builds",
+   "way": "SFMTA finishes quick-build work (paint, posts, signs, signal timing) on the last 50 untreated High Injury Network miles and brings it to about 130 more main street miles over five years, nearest schools first",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": null
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": null,
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": 1.5,
+    "central": null,
+    "high": 13.1,
+    "whose": "fatal or severe collisions (hospital-linked, TransBase), not people",
+    "tag": "[inference — mine]",
+    "studies": [
+     "sfmta-2024-safe-streets-evaluation",
+     "nycdot-2023-vision-zero-sips"
+    ]
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 51000000,
+     "high": 61000000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "Board of Supervisors' Street Safety Act resolution (10-0): SFMTA should plan the network's redesign 'by December 2026', adopted by the SFMTA Board as its commitment in January 2026; Mayor's Street Safety Initiative (no mileage). Finished pace under 9 miles a year, so not done at ranked scale.",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": "ask-0009"
+     },
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": "ask-0010"
+     },
+     {
+      "group": "Livable City",
+      "ask_id": "ask-0011"
+     },
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0012"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA reports no finished-mile pace (85 miles 2014 to 2023 'completed or are in planning or construction'); on 31 tested corridors all injuries and KSI show no measurable drop, people walking within two blocks -12% (could be chance); Mayor's 2025 directive 'No new money or positions'; merchants cut back Polk (2015) and West Portal (2024); Valencia CEQA appeal rejected January 2025.",
+    "opposed_by": [
+     "Merchants (Polk 2015, West Portal 2024, Valencia appeal)",
+     "Mayor's 2025 no-new-positions directive (budget)"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": null,
+   "short": "Main streets"
+  },
+  {
+   "id": "muni-for-students",
+   "name": "Muni for students",
+   "way": "Extra Muni buses at school bell times (trippers and more service on lines past schools), with ambassadors and transit training; scored at the School Trips model's 25% more school-hour service",
+   "mode_shift_pts": {
+    "low": 0.00543,
+    "central": 0.0163,
+    "high": 0.0452,
+    "tag": "[inference — mine] (School Trips model, goal paths note section 4) [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]",
+    "studies": [
+     "litman-2025-transit-elasticities"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "students who switch, as car passengers (valued at about $30 per switching student a year; no count of injuries avoided stated)",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 5700000,
+     "high": 9400000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine] (bus hour $301.60 [primary — read 2026-10-31]; curriculum cost School Access Plan p. 40 [primary — read 2026-10-31])"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Safe School Connections Draft Approach (September 2026) lists \"School Peak Service and School Tripper Service\" and \"Muni Ambassadors\", with no target; final approach to the SFMTA Board late 2026 or early 2027. About 20 afternoon trippers already run at 15 or 16 middle and high schools, none elementary.",
+    "asked_by": [
+     {
+      "group": "SF Transit Riders",
+      "ask_id": null
+     },
+     {
+      "group": "SF Youth Commission",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "Trippers run today (about 20 afternoon trips, criteria unpublished); Lowell has asked for one since at least 2017; the Youth Commission asked for expansion in 2024; four tripper routes were on SFMTA's cut list until Prop H and the Regional Transit Measure passed November 3, 2026 (preliminary, uncertified); MTAP was a possible cut in a 2024 draft; one Muni field trip in 2024-25.",
+    "opposed_by": [],
+    "tag": "[Legistar — read 2026-10-31]; [primary — read 2026-10-31]; election result [web search — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "fares",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "access-line-tax",
+      "name": "Access Line Tax (Prop O, 2008; replaced the 911 Emergency Response Fee)",
+      "fit": "yes"
+     },
+     {
+      "id": "sugary-drinks-tax",
+      "name": "Sugary Drinks Distributor Tax (Prop V, 2016)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfmta-half",
+      "name": "Traffic Congestion Mitigation Tax, SFMTA half (Prop D 2019)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py fares]"
+   },
+   "method": null
+  },
+  {
+   "id": "muni-service-frequency-span-redesign",
+   "name": "Muni every 10 minutes on 21 lines",
+   "way": "Every 10 minutes, every day, 6 am to 1 am on the 21 main lines, after a Board standard naming lines, hours and days",
+   "mode_shift_pts": {
+    "low": 0.038,
+    "central": null,
+    "high": 0.291,
+    "tag": "[inference — mine]",
+    "grade": "Assumed, no SMS",
+    "studies": [
+     "handy-carb-transit-service"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 54000000,
+     "high": 84000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "asked",
+    "plan": null,
+    "asked_by": [
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0079"
+     },
+     {
+      "group": "Muni Now, Muni Forever",
+      "ask_id": "ask-0087"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "Voters passed Prop H (72.79%) and the regional measure (77.91% in SF) on preliminary counts, but about $10M a year of it goes to service. SFMTA's service evaluation is due this fall.",
+    "opposed_by": [],
+    "tag": "[web search — verify]; [primary — read 2026-11-05]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "transit-service",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-fines",
+      "name": "Parking fines",
+      "fit": "yes"
+     },
+     {
+      "id": "state-sta",
+      "name": "State Transit Assistance",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-meters",
+      "name": "Parking meters",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py transit-service]"
+   },
+   "method": "C1, C2",
+   "short": "Muni every 10 min."
+  },
+  {
+   "id": "muni-speed-corridor-priority",
+   "name": "Stop changes on the 1 and 22",
+   "way": "About 43 stop changes on the 1 California and 22 Fillmore, with named trips per hour in the Board resolution",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 172000,
+     "high": 344000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA's quick-builds on the 1 and 22, funded by Prop L ($710,948 allocated, Resolution 26-33)",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "A supervisor undid a Board vote on one stop in 2018, and the City Traffic Engineer held back another in March 2026 after complaints about hills.",
+    "opposed_by": [
+     "Neighbors on seniors' short trips on the 22"
+    ],
+    "tag": "[web search — verify]; [primary — read 2026-11-05]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "transit-speed",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-fines",
+      "name": "Parking fines",
+      "fit": "yes"
+     },
+     {
+      "id": "state-sta",
+      "name": "State Transit Assistance",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-meters",
+      "name": "Parking meters",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py transit-speed]"
+   },
+   "method": "C7"
+  },
+  {
+   "id": "parking-at-home",
+   "name": "No street parking permits for new buildings",
+   "way": "SFMTA Board publishes permits by area and building, then pilots a bar on residential street permits for new buildings of more than 20 homes in Permit Areas C, A, Y, G and S",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine] / [secondary — verify, per note]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "no tag on the line in the note",
+    "search": "cut short",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "not estimated; the lane was judged on car share and VMT per person, not injuries",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "ignored",
+    "plan": "No adopted plan. SFMTA's 2017 RPP report said 'Pursue' for denying permits in dense oversold areas (Option 1.7), but its 2018 deck listed excluding 'all new development' as 'not pursued'.",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "Of 292 permit-eligibility items heard since August 2019, 289 went forward to the SFMTA Board and none was refused; no SF attempt to bar or cap permits reached a vote; the nearest proxy, the 2025 building parking caps, passed the Supervisors 6 to 4.",
+    "opposed_by": [
+     "YIMBY Law and two co-plaintiffs (suing over the 2025 building parking caps, a related way)"
+    ],
+    "tag": "[primary — read 2026-11-05, counts mine] / [secondary — verify, per note]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "pricing-parking",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-residential-permits",
+      "name": "Residential parking permit fees",
+      "fit": "yes"
+     },
+     {
+      "id": "fed-carbon-reduction",
+      "name": "Federal Carbon Reduction Program (through MTC)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-muni-baseline",
+      "name": "Municipal Railway Baseline (General Fund transfer)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py pricing-parking]"
+   },
+   "method": "A4",
+   "short": "No street parking permits for new buildings"
+  },
+  {
+   "id": "parking-pricing",
+   "name": "Demand meter pricing",
+   "way": "Set meter prices by demand from payment data, citywide (SFpark's rule: +$0.25/hr on blocks at 80%+ occupancy, -$0.25 below 60%, about quarterly, all ~26,078 meters)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[primary — read 2026-10-31]",
+    "search": "done",
+    "grade": "SMS 3"
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "all people injured on SF streets (citywide average injury cost per vehicle mile); the note gives only a dollar value, about $1.6M a year scaled to all meters ($0.40M a year in the pilot), not a count of injuries",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 250000,
+     "high": 1000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine], scaled from SFMTA's $171,800/yr (2014 dollars) estimate [primary — read 2026-10-31]"
+   },
+   "status": {
+    "state": "done",
+    "plan": "SFMTA 2017 parking pricing policy (rule runs citywide about every quarter on payment data); SFMTA FY2026-27/FY2027-28 budget adds another $0.25 citywide increase in FY27-28",
+    "asked_by": [
+     {
+      "group": "SF Transit Riders",
+      "ask_id": null
+     },
+     {
+      "group": "Livable City",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFpark (2011-13 pilot) became citywide policy in 2017 and runs about quarterly on payment data; the SFMTA Board raised every meter $0.25 by 7 to 0 on 2025-04-15 (Res. 250415-034) and budgeted another $0.25 for FY2027-28, but in the July 2026 adjustment half of 12,946 rate slots had no usable reading so their price did not move.",
+    "opposed_by": [],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "pricing-parking",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-residential-permits",
+      "name": "Residential parking permit fees",
+      "fit": "yes"
+     },
+     {
+      "id": "fed-carbon-reduction",
+      "name": "Federal Carbon Reduction Program (through MTC)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-muni-baseline",
+      "name": "Municipal Railway Baseline (General Fund transfer)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py pricing-parking]"
+   },
+   "method": "A9"
+  },
+  {
+   "id": "protected-bike-network",
+   "name": "Protected bike network, 154 miles",
+   "way": "Build the all-ages bikeways as one connected, dated network within a quarter mile of every resident (whole network at once, Seville pace, about 40 street miles a year, at quick-build prices)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[secondary — repo note, verify]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": null,
+    "annual_miles_high": 17000000,
+    "tag": "[inference — mine]",
+    "grade": "SMS 3",
+    "studies": [
+     "keall-2018-new-zealand"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": 2.6,
+    "central": 5.2,
+    "high": 10.4,
+    "whose": "bicyclists killed or severely injured (assumed 5%/10%/20% network cut; pedestrians and drivers left out)",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": 0.11,
+    "low": 0.0552,
+    "high": 0.221,
+    "area_sq_mi": 47.14,
+    "tag": "[inference — mine] [inference — mine: ÷ area]"
+   },
+   "cost": {
+    "one_time": {
+     "low": 71000000,
+     "high": 243000000
+    },
+    "yearly": {
+     "low": 500000,
+     "high": 3000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Biking and Rolling Plan (adopted 2025-03-04), North Star network; the plan says no 'serious timeline' is possible and sets no date",
+    "asked_by": [
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": "ask-0024"
+     },
+     {
+      "group": "Kid Safe SF",
+      "ask_id": "ask-0025"
+     },
+     {
+      "group": "Livable City",
+      "ask_id": "ask-0026"
+     },
+     {
+      "group": "People Protected",
+      "ask_id": "ask-0007"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "At today's pace (2.9 street miles a year 2022-2026) the rest takes about 33 to 60 years; SFMTA's draft to June 2027 commits 3 miles protected, 6 upgraded, 3 of 19 Slow Streets to standard; plan says staff 'are already at capacity'; merchants won a cut block on Polk (2015) and a smaller West Portal plan (2024); SFFD had protection dropped on Turk (2017).",
+    "opposed_by": [
+     "Merchants (Polk 2015, Valencia 2024, West Portal 2024)",
+     "SFFD (Turk 2017)",
+     "Sunset Merchants Association (No on G; calm-street/park version)"
+    ],
+    "tag": "[secondary — repo notes, verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "separated-bikeways",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "state-rmra-sb1",
+      "name": "State road repair money (SB 1, RMRA)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py separated-bikeways]"
+   },
+   "method": "D1",
+   "short": "Bike network"
+  },
+  {
+   "id": "road-diets",
+   "name": "Road diets",
+   "way": "Four lanes to three with a center turn lane, or a lane given to bikes or buses; priced at SF scale as paint on about half the 107 multi-lane High Injury Network miles (about 54 miles)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": null
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": null,
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "Stated in dollars only at program scale (all people hurt on multi-lane HIN streets): central $54M a year, high $137M, low 0 (0% effect). Single street: California Street about 5 injury crashes a year avoided (1.2 to 11.4).",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 5000000,
+     "high": 48000000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Speed Management Plan, restating the 2021 Vision Zero Action Strategy: slow HIN speeds by \"changing travel lanes (road diets)\" (no street list or mileage)",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "About three lane removals in 144 engineering hearings since 2019; of five SF removals tested only California Street shows a clear injury drop; Franklin's lane cut dropped 2022, 6th Street lost its bike lane 2018, West Portal scaled back 2024, Sutter paused 2025, Ocean Avenue paused January 2026; VAMANOS lost its Valencia CEQA appeal 2025.",
+    "opposed_by": [
+     "Hotel Council and Chamber (6th Street)",
+     "West Portal merchants",
+     "Ocean Avenue merchants",
+     "Sutter (loading, parking, emergency access)",
+     "SFFD (Turk 2017)",
+     "VAMANOS (Valencia)"
+    ],
+    "tag": "[secondary — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "traffic-calming",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     },
+     {
+      "id": "fed-hsip",
+      "name": "Federal Highway Safety Improvement Program (Caltrans local HSIP calls)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py traffic-calming]"
+   },
+   "method": "B3"
+  },
+  {
+   "id": "road-pricing",
+   "name": "Downtown congestion charge",
+   "way": "A state law change exempting an SF downtown cordon from Vehicle Code §9400.8, and a voter-approved charge: $6.50 per peak entry on SFCTA's 2021 design",
+   "mode_shift_pts": {
+    "low": 0.4,
+    "central": 0.85,
+    "high": 1.3,
+    "tag": "[inference — mine]",
+    "studies": [
+     "comandon-boarnet-2025-road-pricing",
+     "eliasson-2014-stockholm"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 33000000,
+    "annual_miles_central": 67000000,
+    "annual_miles_high": 112000000,
+    "tag": "[inference — mine]",
+    "grade": "SMS 2",
+    "studies": [
+     "mta-2025-cbd-tolling",
+     "borjesson-2012-stockholm",
+     "comandon-boarnet-2025-road-pricing"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": 0,
+    "central": 21,
+    "high": 31,
+    "whose": "all people hurt in the zone during charging hours (from the downtown note; the road-pricing lane left injuries out on purpose)",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 90000000,
+     "high": 150000000
+    },
+    "yearly": {
+     "low": 39000000,
+     "high": 47000000
+    },
+    "yearly_includes_one_time": true,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SF Climate Action Plan 2021, strategy TLU.3, climate plan paragraph): TLU.3-1 'by 2026, study and implement the appropriate pricing policies'; TLU.3-2(b) advocate for state legislation incl. 'application of road user charges'. The note says the 2026 date has passed without a pricing policy. SFCTA's FY 2026/27 work program does not mention the downtown study.",
+    "asked_by": [
+     {
+      "group": "SPUR",
+      "ask_id": null
+     },
+     {
+      "group": "TransForm and Greenlining",
+      "ask_id": null
+     },
+     {
+      "group": "Walk SF",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "Treasure Island fee (AB 981, 2008) is law but not started; the 2010 cordon study was not adopted; AB 3059 (2018) died; AB 1605 (2019) was vetoed; the SFCTA downtown study is paused with no Board item since 2020-12-15; the 2019 ride-hail tax is the one charge in force; no elected SF official has endorsed a cordon.",
+    "opposed_by": [
+     "Human Rights Commission roundtable (2020)",
+     "SF Chamber of Commerce (2020)",
+     "Supervisor Mandelman (2025)",
+     "Bayview residents (transit first)",
+     "San Mateo officials (2010)",
+     "Governors Schwarzenegger and Newsom (vetoes)"
+    ],
+    "tag": "[primary — read 2026-10-31 and 2026-11-05, per note] / [secondary — verify]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "A11",
+   "short": "Congestion charge"
+  },
+  {
+   "id": "school-assignment-distance",
+   "name": "School assignment closer to home",
+   "way": "Guarantee each entering child a seat at the nearest (attendance-area) school from 2028-29, with choice only to citywide programs",
+   "mode_shift_pts": {
+    "low": 0.00184,
+    "central": 0.0114,
+    "high": 0.0404,
+    "tag": "[inference — mine] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": 2500000,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": "Not rechecked"
+   },
+   "injuries_avoided_per_year": {
+    "low": 0,
+    "central": 0.4,
+    "high": 1,
+    "whose": "children (net of new walkers' own risk); adults not counted",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": 0.00849,
+    "low": 0.0,
+    "high": 0.0212,
+    "area_sq_mi": 47.14,
+    "tag": "[inference — mine] [inference — mine: ÷ area]"
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[unretrieved — verify]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFUSD Board of Education direction vote 2026-10-13 (5-2), \"a direction, not the final policy\"; final vote 2027-04-13. Backed by Board of Supervisors resolution File 260891 (passed committee 3-0 on 2026-10-22). SFUSD is a school district, not a City department.",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SFUSD's Board voted 5-2 on 2026-10-13 for a guaranteed neighborhood seat from 2028-29, with the final vote on 2027-04-13, and the Supervisors' supporting resolution, File 260891, passed committee 3-0 on 2026-10-22.",
+    "opposed_by": [
+     "Commissioners Fisher and Ray (voted no)",
+     "SF Parents (backed Option B)",
+     "Parents for Public Schools",
+     "Coleman Advocates"
+    ],
+    "tag": "[primary — read 2026-10-31]; vote count and opponents [secondary — verify] (SF Standard)"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   }
+  },
+  {
+   "id": "school-bike-connections",
+   "name": "Bike links to schools",
+   "way": "Link each K-12 school to protected lanes and calmed streets: door links in SFMTA's cheapest-first order, 40 miles linking 176 schools (the ranked summary's '40 miles and $23.4M')",
+   "mode_shift_pts": {
+    "low": 0.000448,
+    "central": 0.0013,
+    "high": 0.00242,
+    "tag": "[inference — mine], from [secondary — repo output, verify] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]",
+    "studies": [
+     "mcdonald-2014"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "Not stated as a yearly count. Treated blocks carry 32 children hurt (6 KSI) and 373 all-age walk/bike victims (50 KSI) in five years; assumed cuts 20/40/55% (children) and 10/20/40% (all-age walk and bike)",
+    "tag": "[DataSF nwes-mmgh — queried 2026-10-21, computed 2026-10-31]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 15300000,
+     "high": 50700000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[secondary — repo output, verify]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Safe School Connections Draft Approach (September 2026), to link all 249 K-12 schools; SFMTA Board to approve the final approach 'Late 2026/Early 2027'; no budget named",
+    "asked_by": [
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": "ask-0035"
+     },
+     {
+      "group": "Kid Safe SF",
+      "ask_id": "ask-0036"
+     },
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0037"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "37 schools (~15%) connected as of July 2026, full build 'could take up to 10 years'; the only funded line ($9.98M) covers about 75 school-door links; at the SFMTA Board on 2026-09-01 the Coalition, Walk SF, Streets For All and SF Transit Riders backed it and asked for funding and dated goals; speed humps pass 94% at engineering hearings, bike lanes 92% with concern noted in half.",
+    "opposed_by": [
+     "Geary merchants (2023 parking delay)",
+     "Taraval merchants (2018 parking)"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "separated-bikeways",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "state-rmra-sb1",
+      "name": "State road repair money (SB 1, RMRA)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py separated-bikeways]"
+   },
+   "method": null,
+   "short": "Bike links"
+  },
+  {
+   "id": "school-buses",
+   "name": "19 more school buses",
+   "way": "Add yellow buses for TK to 8th graders who live far away (benefit-cost working uses SFUSD's costed scenario: 19 more buses, 1,520 new riders, $4.5M a year; the WWK recommends starting with a 5-bus, ~400-seat lottery pilot)",
+   "mode_shift_pts": {
+    "low": 0.0103,
+    "central": 0.03,
+    "high": 0.0435,
+    "tag": "[inference — mine] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]",
+    "studies": [
+     "wsp-2009-mybus"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 460000,
+    "annual_miles_central": 460000,
+    "annual_miles_high": 930000,
+    "tag": "[inference — mine]",
+    "studies": [
+     "wsp-2009-mybus"
+    ],
+    "grade": "Not rechecked"
+   },
+   "injuries_avoided_per_year": {
+    "low": 0.04,
+    "central": 0.4,
+    "high": 1.76,
+    "whose": "children (school riders), injuries a year avoided by moving from adult-driven car to school bus; severity unknown. Deaths about 0.003 a year in the same working",
+    "tag": "[primary — read 2026-10-13]",
+    "studies": [
+     "trb-2002-sr269"
+    ]
+   },
+   "per_sq_mi": {
+    "value": 0.00849,
+    "low": 0.000849,
+    "high": 0.0373,
+    "area_sq_mi": 47.14,
+    "tag": "[primary — read 2026-10-13] [inference — mine: ÷ area]"
+   },
+   "cost": {
+    "one_time": {
+     "low": 0,
+     "high": 0
+    },
+    "yearly": {
+     "low": 4500000,
+     "high": 4500000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-13] (yearly); [inference — mine] (no one-time cost)"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SF School Access Plan (SFCTA, 2023-05-04), p. 42: SFUSD-costed 19 more buses for 1,520 riders, which the WWK says have \"no identified source of funding\"; SFUSD's 2023 Transportation Service Plan proposed 10 more buses \"subject to change based on the availability of funding provided by the State\". Adoption status of the School Access Plan not stated in these notes",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SFUSD cut its general-education fleet from 44 buses to 25 in 2010-11, backed off further cuts proposed in December 2024 and December 2025 (its 2025-12-16 draft fiscal plan lists \"Elimination of General Education Transportation\", $5M a year), and the Supervisors have passed nothing on SFUSD buses (Legistar 2021-2026).",
+    "opposed_by": [],
+    "tag": "[primary — read 2026-10-31]; Legistar search [Legistar — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "School",
+   "short": "School buses"
+  },
+  {
+   "id": "school-crossing-beacons-signs",
+   "name": "Ladder crosswalks at schools",
+   "way": "Ladder crosswalks, signs and beacons at uncontrolled school crossings (WWK recommendation: yellow ladder crosswalks and stop lines at the roughly 380 school intersections with none on record; red hybrid beacon or refuge island at multilane uncontrolled school crossings once listed)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": null
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": null,
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": 0.07,
+    "central": 0.135,
+    "high": 0.2,
+    "whose": "children hurt at uncontrolled school crosswalks in bell hours, citywide (ladder crosswalk 37% effect applied); the benefit-cost working itself counts injury value in dollars for all ages, not injury counts",
+    "tag": "[inference — mine]",
+    "studies": [
+     "feldman-2010-sf-school-crosswalks"
+    ]
+   },
+   "per_sq_mi": {
+    "value": 0.00286,
+    "low": 0.00148,
+    "high": 0.00424,
+    "area_sq_mi": 47.14,
+    "tag": "[inference — mine] [inference — mine: ÷ area]"
+   },
+   "cost": {
+    "one_time": {
+     "low": 4700000,
+     "high": 4700000
+    },
+    "yearly": {
+     "low": 900000,
+     "high": 900000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-31] for the $3,070 unit cost (Bushell 2013 Table 19); scale is [inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Continental Crosswalks goal (ladder crosswalks everywhere, yellow near schools); RRFB program ST122 in the adopted FY2025-29 SFMTA Capital Improvement Program, $7,714,933 from Prop B, plus $2M of speed camera revenue; draft Safe School Connections lists flashing beacons in its toolkit (adoption expected late 2026 or early 2027)",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SFMTA added 300 ladder crosswalks and 1 beacon in January to March 2026, while WalkFirst took ten beacons from design in spring 2021 to December 2025; 25 beacon items at 15 engineering hearings since 2020 were all approved.",
+    "opposed_by": [
+     "National Motorists Association (opposed AB 382's wide school zones, relevant to school signs)",
+     "Unnamed neighbors objecting to parking lost to beacon red zones (hearings 2024-09-20, 2025-03-21) and one unspecified comment in opposition (2026-06-26)",
+     "A budget caller at the SFMTA Board 2026-09-01 worried about cuts to transit (not an organized group)"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "crossings",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "state-rmra-sb1",
+      "name": "State road repair money (SB 1, RMRA)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py crossings]"
+   },
+   "method": null,
+   "short": "Ladder crosswalks"
+  },
+  {
+   "id": "school-drop-off",
+   "name": "Drop-off curb fixes",
+   "way": "Keep parent cars off the gate block at the bells: curb fix (loading zone, red curb, no stopping at the bells) at the 97 SFUSD schools with published bells, plus a weekly parking officer visit",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[primary — read 2026-10-31]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "children under 18 walking or biking within 600 ft of a school in its bell windows (baseline 20 hurt over four school years at 207 schools, about 5 a year); the benefit-cost working values the benefit in dollars per school a year, not as injuries avoided",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 194000,
+     "high": 1940000
+    },
+    "yearly": {
+     "low": 238000,
+     "high": 325000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine, multiplying the rows above]; officer pay from [DataSF 88g8-5mnd — queried 2026-10-31]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFCTA School Access Plan (adopted by SFCTA Resolution 23-51): Tier 1 item, owner SFMTA, citywide drop-off guidance under $100,000. No public record it was written. The plan item is guidance, not the gate-block no-stopping rule itself.",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "Since August 2019 SFMTA's engineering hearings carried 54 school-day curb items, nearly all approved and 1 disapproved, but no SF order bans parent stopping on a school block at the bells or moves the zone off it, and the School Access Plan's drop-off guidance was never written.",
+    "opposed_by": [
+     "Neighbors objecting to parking loss at SFMTA school-zone hearings (12th Ave, School of the Arts, North Point, 30th St, Chenery St; Chestnut preschool zone)"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": null
+  },
+  {
+   "id": "school-placemaking",
+   "name": "School placemaking",
+   "way": "Sponsor planters, murals and seating at the school door (Community Corners planters and murals on daylit corners near schools)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "people walking or biking within 350 ft of a school (the $100,000-a-school injury value at stake); no injury count avoided is stated, only an assumed 0% to 5% share and a $0 to $2,500 a year benefit per corner",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 1000,
+     "high": 10000
+    },
+    "yearly": {
+     "low": 80000,
+     "high": 110000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]; staff 0.55 FTE [primary — read 2026-10-31]; salary [inference — mine: assumed salary]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Safe School Connections Draft Approach (September 2026) lists \"Placemaking elements\" (gathering spaces, decorative streetscapes, seating, nature/garden spaces) with no budget; goes to the SFMTA Board late 2026/early 2027. The sponsor mechanism, Community Corners (Transportation Code §919, adopted 2026-06-16), already exists but is not a school program and has no registration list.",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": null
+     },
+     {
+      "group": "Streets Forward",
+      "ask_id": null
+     },
+     {
+      "group": "California Walks",
+      "ask_id": null
+     },
+     {
+      "group": "CalBike",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA Board adopted Community Corners as a two-year pilot on 2026-06-16 (expires about July 2028 unless extended); its one pilot corner, on Cortland Avenue, measured nothing, and no Safe School Connections placemaking has reached any school.",
+    "opposed_by": [],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": null
+  },
+  {
+   "id": "school-streets",
+   "name": "School Streets at all 249 schools",
+   "way": "Close the school block to through cars at the bells, with two paid gate staff per school",
+   "mode_shift_pts": {
+    "low": 0.0,
+    "central": 0.134,
+    "high": 0.246,
+    "tag": "[inference — mine] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]",
+    "studies": [
+     "patterson-2025",
+     "dowling-2025-bradford"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": 2315700,
+    "annual_miles_high": 4282800,
+    "tag": "[inference — mine]",
+    "studies": [
+     "patterson-2025",
+     "dowling-2025-bradford"
+    ],
+    "grade": "Not rechecked",
+    "rank_on_central": true
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "children walking or biking near the school in bell windows",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 1494000,
+     "high": 7968000
+    },
+    "yearly": {
+     "low": 7470000,
+     "high": 12848400
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Safe School Connections Draft Approach (September 2026) lists School Streets in its toolkit with no site, count or budget; to the SFMTA Board late 2026/early 2027",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SF has one daily School Street, Elm Street at Tenderloin Community School, run by neighbors since April 2021 and approved by the SFMTA Board on 2025-11-18; its permit ends 2026-12-04 with a three-year renewal in review, and up to six SF Bicycle Coalition/Civic Joy demonstration afternoons are planned for 2026-27.",
+    "opposed_by": [
+     "SFMTA engineers, on removing parking at Elm Street (2023)",
+     "SFMTA's Safe School Connections early partners: 'Ensuring that resources are not taken from existing programs'"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "street-closures",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-muni-baseline",
+      "name": "Municipal Railway Baseline (General Fund transfer)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-parking-traffic-baseline",
+      "name": "Parking and Traffic Baseline (General Fund transfer)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py street-closures]"
+   },
+   "method": "School",
+   "short": "School Street"
+  },
+  {
+   "id": "school-transportation-coordinators",
+   "name": "Walking group coordinators, 10 schools",
+   "way": "A paid coordinator running daily walking and Muni groups at 10 schools",
+   "mode_shift_pts": {
+    "low": 0.0,
+    "central": 0.000538,
+    "high": 0.00148,
+    "tag": "[inference — mine] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]",
+    "studies": [
+     "johnson-2024"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": 3300,
+    "annual_miles_high": 12700,
+    "tag": "[inference — mine]",
+    "grade": "SMS 3",
+    "studies": [
+     "mendoza-2009-seattle",
+     "johnson-2024"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "pedestrians of all ages within a quarter mile of the median audited school; the benefit is stated as a share of injury value in dollars, not as injuries avoided",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 500000,
+     "high": 1000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFCTA School Access Plan (adopted by SFCTA Resolution 23-51): site-level transportation coordinator pilot (p. 44 'less than $100,000 for a single school site'; Table 4 '$100,000 – $250,000'), no public record of action. The audit half is already done at 10 schools a year with Prop L construction money (SFCTA Resolution 26-23).",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA has audited up to ten schools a year since 2019-20 (38 schools) and all 12 hearing items naming an audit passed, but SFCTA held $1,753,646 of 2025-26 construction money on reserve pending backlog progress, staff told the SFMTA Board 'We would conduct the same number of audits', and no paid coordinator exists.",
+    "opposed_by": [],
+    "tag": "[primary — read 2026-10-31]; SFMTA Board remarks [transcript, machine — verify against video]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": null,
+   "short": "Walking groups"
+  },
+  {
+   "id": "speed-cameras",
+   "name": "Corridor and mobile speed cameras",
+   "way": "Move beyond SF's 33 single fixed camera spots to corridor and mobile cameras on the High Injury Network (WWK: 'For SF, the research points to moving beyond single spots'; recommendation 'Allow corridor and mobile cameras'). The newest notes make this concrete as a state-law change: a signed list of HIN sites, up to thousands, with mobile cameras assigned at random each day, Queensland-style, each counting once against a raised cap.",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": null
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": null,
+    "search": "cut short",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "not estimated for the corridor/mobile scope",
+    "tag": null
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-30] for the current-program figures"
+   },
+   "status": {
+    "state": "asked",
+    "plan": "No adopted or draft City plan for corridor or mobile cameras. Board Resolution 408-26 (File 260499, 10-1, 2026-07-14) only 'supports exploring changes to State law ... including increasing the number of allowable speed camera locations, with priority given to corridors on the High Injury Network'; SFMTA 'expects to advocate for expansion of the program to incrementally increase the number of camera locations' (18-month report, p. 4). State law already allows mobile units from about March 2027 (§22426(f)) but caps SF at 33 systems.",
+    "asked_by": [
+     {
+      "group": "Walk SF",
+      "ask_id": "ask-0006"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SF's first camera went live 2025-03-20 and all 33 locations pass the AB 645 18-month test (10+ mph-over speeding down 84%); the Board adopted Resolution 408-26 supporting more locations 10-1 on 2026-07-14 (Walton no) and the Mayor returned it unsigned; SB 1279 (2026) added two Long Beach cameras while the Assembly Transportation Committee said the Legislature 'should wait for data'; any site move needs community review and an SFMTA Board vote.",
+    "opposed_by": [
+     "ACLU California Action",
+     "Electronic Frontier Foundation",
+     "Oakland Privacy",
+     "Anti Police-Terror Project",
+     "Black Lives Matter California",
+     "California Teamsters Public Affairs Council",
+     "National Motorists Association",
+     "Safer Streets LA",
+     "Western States Trucking Association",
+     "Human Rights Watch",
+     "Peace Officers Research Association of California (PORAC)",
+     "Supervisor Walton (lone no vote on Resolution 408-26)",
+     "Cal Walks (named in the WWK as an equity critic)"
+    ],
+    "tag": "[primary — read 2026-10-31] / [Legistar — read 2026-10-31] / [primary — read 2026-11-02]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "B13"
+  },
+  {
+   "id": "speed-humps",
+   "name": "Speed humps by injury rank",
+   "way": "Humps and raised crossings placed by injury ranking, area by area (whole areas ranked by injuries, about 100 devices a year)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": null
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[unretrieved — verify] (the note says no study counted traffic arriving on parallel streets)",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": 0.08,
+    "central": 0.27,
+    "high": 0.4,
+    "whose": "all people killed or seriously injured on local (non-HIN residential) streets, per 100 devices, each year they stand; the same row gives all people hurt as 1.0 / 2.5 / 4.5",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 1600000,
+     "high": 3700000
+    },
+    "yearly": {
+     "low": 57000,
+     "high": 74000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-31] for unit costs; [inference — mine] for program totals and upkeep"
+   },
+   "status": {
+    "state": "asked",
+    "plan": "None adopted. Board Res. 437-25 (Street Safety Act, 2025-09-16, non-binding) §1.g urges SFMTA to release by December 2026 a plan to replace the application program with a proactive approach; SFMTA's program page says it is working on a 'proactive, data-driven and equitable' program, news expected 2027; SFMTA's December 2025 draft criteria instead brought back a 50% block petition. One proactive area pilot (Visitacion Valley and Portola, 54 devices) reached staff review 2026-09-01.",
+    "asked_by": [
+     {
+      "group": "Walk San Francisco",
+      "ask_id": null
+     },
+     {
+      "group": "Kid Safe SF / Streets For All SF",
+      "ask_id": null
+     },
+     {
+      "group": "Senior & Disability Action, SF Bay Area Families for Safe Streets, SF Bicycle Coalition, Community Living Campaign, Chinatown TRIP, OWL San Francisco",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA closed applications on 2025-07-01 citing costs, demand and budget; the Supervisors urged a proactive plan 10 to 0 in Res. 437-25; SFMTA's December 2025 draft brought back a block petition and the plan is now promised for 2027; 48 of 466 hearing items for raised devices since 2019 drew recorded opposition; the Visitacion Valley and Portola area pilot reached staff review in September 2026.",
+    "opposed_by": [
+     "San Francisco Fire Department (practical veto through design review; prefers cushions over humps since 2016)",
+     "California Professional Firefighters (sponsored AB 612 on fire consultation)",
+     "AAA Northern California, Nevada & Utah (backed AB 612)",
+     "California Labor Federation (backed AB 612)",
+     "'Amend or Pause' form-letter senders on the Street Safety Act (about 313, organizer unnamed; asked for an outside cost-benefit review of speed humps)",
+     "Supervisor Wong backed the block petition (a check on a city-picked list, not on humps)"
+    ],
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "traffic-calming",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     },
+     {
+      "id": "fed-hsip",
+      "name": "Federal Highway Safety Improvement Program (Caltrans local HSIP calls)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py traffic-calming]"
+   },
+   "method": "B12"
+  },
+  {
+   "id": "srts-education-encouragement",
+   "name": "Safe Routes education",
+   "way": "Walking school buses, bike trains and safety classes under one SFMTA contract (the current program mix, $2.0M a year)",
+   "mode_shift_pts": {
+    "low": 0.0,
+    "central": 0.0119,
+    "high": null,
+    "tag": "[inference — mine] [inference — mine: count × 2 trips a school day or workday ÷ 4.46M daily person trips × 100]",
+    "studies": [
+     "mcdonald-2014"
+    ]
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": null,
+    "annual_miles_high": 28800,
+    "tag": "[inference — mine]",
+    "grade": "SMS 2 to 3",
+    "studies": [
+     "atkins-2010-england-tsi",
+     "mtc-2016-safe-routes"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "school-related child (5 to 18) pedestrian and bicyclist injuries",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 2000000,
+     "high": 2000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "status": {
+    "state": "done",
+    "plan": "Running now under SFMTA Resolution 230516-041 (2023); continuation of $5,843,000 OBAG 4 plus $851,400 Prop L recommended by SFCTA Resolution 26-52 (2026-04-28), award by MTC early 2027; program redesign via SFMTA RFP in fall 2026",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SFMTA Board approved the current contract 4 to 0 in 2023 (one bidder); the SFCTA Board voted 9 to 0 on 2026-04-28 to recommend $5,843,000 of OBAG 4 and 10 to 0 on 2026-09-22 on nominations; in 2017 the Supervisors kept the program when SFCTA staff proposed moving its money into street work.",
+    "opposed_by": [
+     "Two unnamed speakers opposed the 2023 contract at the SFMTA Board, reasons not recorded"
+    ],
+    "tag": "[primary — read 2026-10-31, carried]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": null,
+   "short": "Safe Routes"
+  },
+  {
+   "id": "street-space",
+   "name": "Bus lanes that take a moving lane",
+   "way": "Bus lanes that take a moving lane on two corridors in SFMTA's approved list, Geary west of Stanyan and 16th Street",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA's 2023 list of approved projects for 2024 to 2028",
+    "asked_by": [
+     {
+      "group": "SF Transit Riders",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA paused Ocean Avenue's approved lanes on 2026-01-13 without a vote. Voters kept JFK Drive car-free in 2022 and the Great Highway closed in 2026.",
+    "opposed_by": [
+     "Ocean Avenue Association",
+     "Chinatown Merchants United"
+    ],
+    "tag": "[primary — read 2026-10-31, per repo note]; [secondary — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "transit-speed",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-fines",
+      "name": "Parking fines",
+      "fit": "yes"
+     },
+     {
+      "id": "state-sta",
+      "name": "State Transit Assistance",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-meters",
+      "name": "Parking meters",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py transit-speed]"
+   },
+   "method": "B3, C4"
+  },
+  {
+   "id": "subway-rail-expansion",
+   "name": "Geary/19th Avenue subway",
+   "way": "Full Geary/19th Avenue subway, opening in the 2040s",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": null,
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 20000000000,
+     "high": 30000000000
+    },
+    "yearly": {
+     "low": 400000000,
+     "high": 450000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "Geary/19th Avenue Subway and Regional Connections Study, adopted by SFCTA 2026-06-23 (R26-64); it recommends more planning, not building",
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SFCTA adopted the study report 8 to 0, three absent. Nothing on the table pays for a tunnel. Central Subway ran $375M over and four years late.",
+    "opposed_by": [
+     "SaveMUNI",
+     "GrowSF",
+     "Livable City's Tom Radulovich"
+    ],
+    "tag": "[primary — read 2026-11-05]; [secondary — verify]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "C13"
+  },
+  {
+   "id": "traffic-circles-diverters",
+   "name": "Diverters near schools",
+   "way": "Posts-and-signs diverters on side streets near schools that ask",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[secondary — repo note, primary read 2026-10-31]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": "[inference — mine]",
+    "search": "done",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "all road users on local streets (the working gives USDOT injury value in dollars a year per local mile, not a count of injuries)",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 200000,
+     "high": 238000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-31] ($200,000, SFMTA staff report 2022-12-06 p. 13); [primary — read 2026-10-22] ($238,000, SFCTA CAC memo Sept 2025, via calming costs note); upkeep [unretrieved — verify]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "SFMTA Safe School Connections Draft Approach (Sept 2026) lists \"Traffic diverters\" in its physical toolkit for School Connectors; final approach to the SFMTA Board late 2026/early 2027, first connectors identified through 2027. Names no school, street or budget line.",
+    "asked_by": [
+     {
+      "group": "SF Bicycle Coalition",
+      "ask_id": "ask-0035"
+     },
+     {
+      "group": "Kid Safe SF",
+      "ask_id": "ask-0036"
+     },
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0037"
+     },
+     {
+      "group": "Walk SF",
+      "ask_id": "ask-0013"
+     },
+     {
+      "group": "Livable City",
+      "ask_id": "ask-0016"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SF already runs posts or concrete 'EXCEPT BICYCLES' diverters on Shotwell (by Cesar Chavez Elementary, approved 2021-09-03, 870 to 600 cars a day), Cayuga (by Balboa High, approved 2023-03-17), Page, Minnesota, Golden Gate and Sanchez (hearing 8 for, 3 against); Lake (2022) and Noe (2024) diverters were dropped before a hearing; the Page Street CEQA appeal lost 11 to 0 in 2020; no installed diverter found removed.",
+    "opposed_by": [
+     "Drivers (Duboce Triangle meeting on Noe, 2024) [secondary — verify]",
+     "Event groups, which moved Shotwell's 24th Street diverter a block",
+     "OpenLakeStreet (Lake Street concrete diverters) [unretrieved — verify]",
+     "Coalition for Adequate Review (CEQA appeal of the Page Street pilot, 2019-2020, lost 11 to 0)"
+    ],
+    "tag": "[primary — read 2026-10-31, hearing mirror]; Lake/Noe drop [secondary — verify] in the WWK summary table, [primary — read 2026-10-31] in its SF Now table; Page appeal [Legistar — read 2026-10-31]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "traffic-calming",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "state-huta-gas-tax",
+      "name": "State gas tax (Highway Users Tax Account)",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfcta-half",
+      "name": "Traffic Congestion Mitigation Tax, street safety half (Prop D 2019)",
+      "fit": "yes"
+     },
+     {
+      "id": "fed-hsip",
+      "name": "Federal Highway Safety Improvement Program (Caltrans local HSIP calls)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py traffic-calming]"
+   },
+   "method": null
+  },
+  {
+   "id": "transit-fare-cuts",
+   "name": "Free Muni for low-income adults, per 1,000 enrolled",
+   "way": "Free Muni fares for enrolled low-income adults (at or below twice the poverty line), priced per 1,000 enrolled",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[primary — read 2026-10-31]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 0,
+    "annual_miles_central": 264000,
+    "annual_miles_high": 530000,
+    "tag": "[inference — mine]",
+    "studies": [
+     "chizeck-mbonu-2025-pittsburgh"
+    ],
+    "grade": "Not rechecked"
+   },
+   "injuries_avoided_per_year": {
+    "low": 0.1,
+    "central": null,
+    "high": 0.6,
+    "whose": "all people hurt in SF crashes, per 1,000 enrolled, scaled from car miles removed",
+    "tag": "[inference — mine]",
+    "studies": [
+     "chizeck-mbonu-2025-pittsburgh"
+    ]
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 300000,
+     "high": 300000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "ignored",
+    "plan": null,
+    "asked_by": []
+   },
+   "readiness": {
+    "sf_record": "SF already spends $27.4M a year on free and half fares (Free Muni for seniors and people with disabilities, Free Muni for All Youth, Lifeline, Access Pass, Clipper START half fare); the 2013 free youth pilot found 'no discernible change in the use of private vehicles to and from school'; no proposal for free fares for low-income adults found.",
+    "opposed_by": [
+     "California Transit Association and Governor Newsom (2022 free youth bill AB 1919, no funding source)"
+    ],
+    "tag": "[primary — read 2026-10-31] / [secondary — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "fares",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "tcmt-sfmta-half",
+      "name": "Traffic Congestion Mitigation Tax, SFMTA half (Prop D 2019)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-muni-baseline",
+      "name": "Municipal Railway Baseline (General Fund transfer)",
+      "fit": "yes"
+     },
+     {
+      "id": "gf-parking-traffic-baseline",
+      "name": "Parking and Traffic Baseline (General Fund transfer)",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py fares]"
+   },
+   "method": "F3",
+   "short": "Free Muni, low income"
+  },
+  {
+   "id": "transit-frequency",
+   "name": "More frequent Muni, seven lines",
+   "way": "Run Muni more often, mainly evenings and weekends: the WWK's ask is the T, 8, 29, 1, 5, 38 and 38R every 10 minutes all week (7 am to 10 pm, seven days)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 67000,
+    "annual_miles_central": null,
+    "annual_miles_high": 549000,
+    "tag": "[inference — mine]",
+    "grade": "SMS 3 at best",
+    "studies": [
+     "hammes-2016-sweden-bus"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "all people hurt in SF crashes; per $1M a year of added service, not at the seven-line scope",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 5000000,
+     "high": 10000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]",
+    "tied_to_miles": true
+   },
+   "status": {
+    "state": "asked",
+    "plan": null,
+    "asked_by": [
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0079"
+     },
+     {
+      "group": "Hayes Valley Neighborhood Association",
+      "ask_id": "ask-0080"
+     },
+     {
+      "group": "Muni Now, Muni Forever",
+      "ask_id": "ask-0087"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "Voters passed Prop H with 72.79% on 2026-11-03 (preliminary, uncertified); SFMTA plans about $10M a year of it for service and about $150M for the deficit, set in the budget amendment due by 2027-05-01; Supervisors voted 9 to 2 in 2021 urging full service restoration, and the 2022 network ran the 5, 2 and 49 more often.",
+    "opposed_by": [
+     "SF Republican Party (Prop H a 'blank check')",
+     "Connected SF",
+     "Business League",
+     "SF Taxpayers Association"
+    ],
+    "tag": "[web search — verify] (election result); [primary — read 2026-10-31] (voter guide, budget deck); 2021 vote [secondary — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "transit-service",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-fines",
+      "name": "Parking fines",
+      "fit": "yes"
+     },
+     {
+      "id": "state-sta",
+      "name": "State Transit Assistance",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-meters",
+      "name": "Parking meters",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py transit-service]"
+   },
+   "method": "C2",
+   "short": "More frequent Muni"
+  },
+  {
+   "id": "transit-lanes-signal-priority",
+   "name": "Transit lanes and signal priority",
+   "way": "Red lanes and green-light (signal) priority on Muni's busiest lines; the priced, recommended part is signal priority (a 20-signal corridor; the 53 signals the city inventory marks as planned)",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": null,
+    "annual_miles_central": null,
+    "annual_miles_high": null,
+    "tag": null,
+    "search": "cut short",
+    "grade": null
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "none priced for signal priority; the only priced injury change is Van Ness (all people, injury crashes, no age field)",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": {
+     "low": 520000,
+     "high": 1800000
+    },
+    "yearly": null,
+    "yearly_includes_one_time": false,
+    "tag": "[primary — read 2026-10-31] for the per-intersection price; totals [inference — mine]"
+   },
+   "status": {
+    "state": "planned",
+    "plan": "Muni Forward: 8 Bayshore, 29 Sunset, 30 Stockton, 38 Geary, J, K, M in detailed design; SFMTA signal inventory (DataSF ybh5-27n2) marks 53 more signals planned for priority (486 of 1,290 signals already have it)",
+    "asked_by": [
+     {
+      "group": "SPUR",
+      "ask_id": "ask-0074"
+     },
+     {
+      "group": "SF Transit Riders",
+      "ask_id": "ask-0075"
+     },
+     {
+      "group": "Streets for People",
+      "ask_id": "ask-0068"
+     },
+     {
+      "group": "Faster Safer Geary",
+      "ask_id": "ask-0060"
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "SFMTA Board approved Geary lanes with 5 ayes in 2023 and Ocean Avenue with 7 ayes in 2024, then paused Ocean Avenue on 2026-01-13 for a supervisors' working group; 10 of nearly 13 miles of the 2020 emergency lanes were permanent by February 2022, and the one CEQA appeal against them lost.",
+    "opposed_by": [
+     "Ocean Avenue Association",
+     "Chinatown Merchants United",
+     "Geary, Mission and Ocean Avenue corridor merchants",
+     "Supervisor Connie Chan (Geary, 2023 letter)",
+     "ACLU-led coalition and EFF (bus lane cameras, 2021)"
+    ],
+    "tag": "[primary — read 2026-10-31]; Chan letter, appeal and Ocean Avenue group names [secondary — verify]"
+   },
+   "money": {
+    "fit": "yes",
+    "idea": "transit-speed",
+    "sources": [
+     {
+      "id": "sfmta-transit-fares",
+      "name": "Muni fares",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-fines",
+      "name": "Parking fines",
+      "fit": "yes"
+     },
+     {
+      "id": "state-sta",
+      "name": "State Transit Assistance",
+      "fit": "yes"
+     },
+     {
+      "id": "sfmta-parking-meters",
+      "name": "Parking meters",
+      "fit": "yes"
+     }
+    ],
+    "tag": "[inference — mine: read from scripts/funding-for-idea.py transit-speed]"
+   },
+   "method": "C4, C9"
+  },
+  {
+   "id": "workplace-parking",
+   "name": "Workplace parking cash-out, enforced",
+   "way": "The Supervisors pass an ordinance enforcing the state parking cash-out law (Health and Safety Code §43845) with a yearly counts-only filing, plus audit letters in lottery order",
+   "mode_shift_pts": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "tag": "[ACS 2024 B08519 — queried 2026-11-05, per note; inference — mine]"
+   },
+   "vmt_reduction": {
+    "annual_miles_low": 2000000,
+    "annual_miles_central": null,
+    "annual_miles_high": 16000000,
+    "tag": "[inference — mine]",
+    "grade": "SMS 2",
+    "studies": [
+     "shoup-1997-cash-out"
+    ]
+   },
+   "injuries_avoided_per_year": {
+    "low": null,
+    "central": null,
+    "high": null,
+    "whose": "not estimated for the program; the equity note gives only about $2,070 a year of injury value per commuter who stops driving 10 miles each way, as context",
+    "tag": "[inference — mine]"
+   },
+   "per_sq_mi": {
+    "value": null
+   },
+   "cost": {
+    "one_time": null,
+    "yearly": {
+     "low": 600000,
+     "high": 1000000
+    },
+    "yearly_includes_one_time": false,
+    "tag": "[inference — mine]"
+   },
+   "status": {
+    "state": "asked",
+    "plan": "None for enforcement. Planning's TDM Program (Planning Code §169) has an optional cash-out measure, PKG-3, for new buildings only.",
+    "asked_by": [
+     {
+      "group": "Livable City",
+      "ask_id": null
+     }
+    ]
+   },
+   "readiness": {
+    "sf_record": "No SF ordinance, case or compliance count found; the state says 'very few agencies have enforced' the law; voters rejected a parking tax rise (Prop E) 67% to 33% in 2006 and the Board tabled a 2010 parking tax.",
+    "opposed_by": [
+     "California Business Properties Association (opposed 2022 AB 2206 until the landlord duty came out)",
+     "BOMA SF and the Mayor's office (fought the 2010 parking tax)",
+     "Parking operators and Teamsters Local 665 (2006 Prop E)",
+     "California Nurses Association and TWU Local 250-A (staff parking charges)"
+    ],
+    "tag": "[primary — read 2026-11-05, per note] / [secondary — verify] / [web search — verify]"
+   },
+   "money": {
+    "fit": "unknown",
+    "idea": null,
+    "sources": []
+   },
+   "method": "A1",
+   "short": "Parking cash-out"
+  }
+ ]
+}

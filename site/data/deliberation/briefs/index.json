@@ -1,0 +1,174 @@
+[
+ {
+  "id": "CA-1",
+  "jurisdiction": "CA",
+  "label": "Proposition 1",
+  "title": "Authorizes Bonds for Housing Affordability Programs. Legislative Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-2",
+  "jurisdiction": "CA",
+  "label": "Proposition 2",
+  "title": "Increases State’s Rainy Day Fund. Legislative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-3",
+  "jurisdiction": "CA",
+  "label": "Proposition 3",
+  "title": "Provides Permanent Funding for Schools and Health Care by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-4",
+  "jurisdiction": "CA",
+  "label": "Proposition 4",
+  "title": "Repeals Prohibition Against Public Funding of Election Campaigns. Legislative Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-5",
+  "jurisdiction": "CA",
+  "label": "Proposition 5",
+  "title": "Changes Recall Election Process for Statewide Officers. Legislative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-37",
+  "jurisdiction": "CA",
+  "label": "Proposition 37",
+  "title": "Creates Loan Program for Middle-Income Buyers of Qualified New Homes. Initiative Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-38",
+  "jurisdiction": "CA",
+  "label": "Proposition 38",
+  "title": "Authorizes Bonds for Immunology Medical Research. Initiative Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-39",
+  "jurisdiction": "CA",
+  "label": "Proposition 39",
+  "title": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-40",
+  "jurisdiction": "CA",
+  "label": "Proposition 40",
+  "title": "Imposes One-Time Tax on Certain Taxpayers. Initiative Constitutional Amendment and Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-41",
+  "jurisdiction": "CA",
+  "label": "Proposition 41",
+  "title": "Prohibits New State Taxes That Exclude Revenues from State Spending Limit. Requires Audits for New State Special Taxes. Initiative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-42",
+  "jurisdiction": "CA",
+  "label": "Proposition 42",
+  "title": "Prohibits New State Personal Property Taxes and Certain Retroactive State Taxes. Initiative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-43",
+  "jurisdiction": "CA",
+  "label": "Proposition 43",
+  "title": "Limits Voters’ Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-44",
+  "jurisdiction": "CA",
+  "label": "Proposition 44",
+  "title": "Requires Community Health Clinics Spend 90% of Revenue on Program Services. Initiative Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "CA-45",
+  "jurisdiction": "CA",
+  "label": "Proposition 45",
+  "title": "Modifies Environmental Review for Certain Projects. Initiative Statute.",
+  "kind": "card"
+ },
+ {
+  "id": "SF-A",
+  "jurisdiction": "SF",
+  "label": "Proposition A",
+  "title": "Charter Changes Affecting Various City Departments and Commissions"
+ },
+ {
+  "id": "SF-B",
+  "jurisdiction": "SF",
+  "label": "Proposition B",
+  "title": "Establishing a Municipal Finance Corporation and a Public Bank"
+ },
+ {
+  "id": "SF-C",
+  "jurisdiction": "SF",
+  "label": "Proposition C",
+  "title": "Contributions to the Housing Trust Fund",
+  "kind": "card"
+ },
+ {
+  "id": "SF-D",
+  "jurisdiction": "SF",
+  "label": "Proposition D",
+  "title": "Changes to Ballot Measure Process",
+  "kind": "card"
+ },
+ {
+  "id": "SF-E",
+  "jurisdiction": "SF",
+  "label": "Proposition E",
+  "title": "City Administrator’s Authority and Changes to City Contracting",
+  "kind": "card"
+ },
+ {
+  "id": "SF-F",
+  "jurisdiction": "SF",
+  "label": "Proposition F",
+  "title": "Changes to Executive Branch Management",
+  "kind": "card"
+ },
+ {
+  "id": "SF-G",
+  "jurisdiction": "SF",
+  "label": "Proposition G",
+  "title": "Allowing Private Vehicles on the Upper Great Highway in Sunset Dunes Park"
+ },
+ {
+  "id": "SF-H",
+  "jurisdiction": "SF",
+  "label": "Proposition H",
+  "title": "Parcel Tax to Fund Muni Operations",
+  "kind": "card"
+ },
+ {
+  "id": "SF-I",
+  "jurisdiction": "SF",
+  "label": "Proposition I",
+  "title": "Changes to Real Property Transfer Tax",
+  "kind": "card"
+ },
+ {
+  "id": "SF-J",
+  "jurisdiction": "SF",
+  "label": "Proposition J",
+  "title": "Removal of Foreclosure Exemption for Real Property Transfer Tax"
+ },
+ {
+  "id": "SF-RTM",
+  "jurisdiction": "SF",
+  "label": "Measure RTM",
+  "title": "Regional Transit Measure",
+  "region": "Bay Area",
+  "kind": "card"
+ }
+]

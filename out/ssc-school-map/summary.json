@@ -1,0 +1,36 @@
+{
+ "georeference": {
+  "median_residual_m": 31.7,
+  "pairs": 140
+ },
+ "icons_read": {
+  "beyond": 68,
+  "on-existing": 34,
+  "on-potential": 54,
+  "one-block-existing": 34,
+  "one-block-potential": 42
+ },
+ "icons_read_total": 232,
+ "map": "https://www.sfmta.com/files/images/2026-08/School%20Connectivity%20Map.jpg",
+ "matched_to_an_sfmta_icon": 185,
+ "our_open_schools": 221,
+ "sfmta_dashed_pixels_with_none_of_our_counted_lines_within_40m": 0.342,
+ "sfmta_dashed_pixels_with_none_of_our_lines_within_40m": 0.247,
+ "steps_on_our_221": {
+  "straight_134m_our_counted_network": 125,
+  "straight_160m_our_counted_network": 138,
+  "straight_160m_plus_L3_undecided": 149,
+  "straight_160m_sfmta_drawn_network": 161,
+  "walk_440ft_our_counted_network": 110
+ },
+ "straight_line_threshold_agreement_with_sfmta_groups": {
+  "100": 0.67,
+  "120": 0.789,
+  "140": 0.87,
+  "160": 0.881,
+  "180": 0.892,
+  "200": 0.876,
+  "220": 0.849,
+  "240": 0.811
+ }
+}

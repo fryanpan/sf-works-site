@@ -1,0 +1,72 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2022-11-14",
+ "id": "g218-42468",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42468",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "3a",
+   "title": "Adopt Minutes from the November 4, 2022 Meeting Minutes"
+  },
+  {
+   "no": "3b",
+   "title": "General As-Needed G13 Sidewalk Inspection and Repair Program –Increase of Construction Cost and Duration Contingencies"
+  },
+  {
+   "no": "3c",
+   "title": "Adopt findings under the State Urgency Legislation – Consideration of action to allow hybrid in-person meetings during the COVID-19 Emergency"
+  },
+  {
+   "no": "4",
+   "title": "Upper Market Corridor Safety Improvements Project – Increase to Construction Duration Contingency"
+  },
+  {
+   "no": "5",
+   "title": "Project and Construction Management System Software – Award Professional Services Contract"
+  },
+  {
+   "no": "6",
+   "title": "San Francisco Police Department Traffic Company and Forensic Services Division – Increase to Construction Duration Contingency"
+  },
+  {
+   "no": "7",
+   "title": "Overview of Building Design and Construction Bureau of Construction Management"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Commission Rules of Order"
+  },
+  {
+   "no": "9",
+   "title": "Public Works Director Hiring Update Informational"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

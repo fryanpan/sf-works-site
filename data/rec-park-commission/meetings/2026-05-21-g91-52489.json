@@ -1,0 +1,67 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2026-05-21",
+ "id": "g91-52489",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52489",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "2",
+   "title": "PRESIDENTS REPORT"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGERS REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT - UP TO 15 MINUTES THIS ITEM WILL BE CONTINUED TO ITEM 9"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6",
+   "title": "SAN FRANCISCO ZOO"
+  },
+  {
+   "no": "7",
+   "title": "MARINA YACHT HARBOR DREDGING OPEN SPACE FUND CONTINGENCY RESERVE ALLOCATION"
+  },
+  {
+   "no": "8",
+   "title": "EMBARCADERO PLAZA AND SUE BIERMAN PARK GRANT AGREEMENT, ACCEPTANCE OF FUNDS AND GRANT AMENDMENT"
+  },
+  {
+   "no": "9",
+   "title": "GENERAL PUBLIC COMMENT CONTINUED FROM ITEM 4 IF NECESSARY"
+  },
+  {
+   "no": "10",
+   "title": "COMMISSIONERS MATTERS"
+  },
+  {
+   "no": "11",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "12",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "13",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

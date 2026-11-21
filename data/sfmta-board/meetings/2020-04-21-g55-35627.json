@@ -1,0 +1,106 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-04-21",
+ "id": "g55-35627",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35627",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21843"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Donna Merlino vs. CCSF, Superior Ct. #CGC18572243 filed on 12/19/18 for $5,000 B. Francis Smith vs. CCSF, Superior Ct. #CGC18566419 filed on 5/9/18 for $6,000 C. Guanxin Huang vs. CCSF, Superior Ct. #CGC18566630 filed on 5/17/18 for $17,000 (Explanatory documents include a resolution.) RESOLUTION 200421-038",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 200421-038)"
+  },
+  {
+   "no": "10.2",
+   "title": "Awarding Contract No. 1295R, Muni Metro System Rail Grinding Services – Phase 1 to Harsco Metro Rail, to perform rail grinding services inside the Muni subway tunnels and the Duboce Portal, for a total amount not to exceed $3,244,800, and a term of 548 days to substantial completion.",
+   "text": "Awarding Contract No. 1295R, Muni Metro System Rail Grinding Services – Phase 1 to Harsco Metro Rail, to perform rail grinding services inside the Muni subway tunnels and the Duboce Portal, for a total amount not to exceed $3,244,800, and a term of 548 days to substantial completion. (Explanatory documents include a staff report, financial plan and resolution. The proposed action is the Approval Action as defined by S.F. Administrative Code Chapter 31.) 4 RESOLUTION 200421-039",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 200421-039)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director or his designee, to approve a program of projects, to execute the required Certifications and Assurances for all transit projects funded by the Low Carbon Transit Operations Program for Fiscal Year 2020.",
+   "text": "Authorizing the Director or his designee, to approve a program of projects, to execute the required Certifications and Assurances for all transit projects funded by the Low Carbon Transit Operations Program for Fiscal Year 2020. (Explanatory documents include a staff report, program, certifications, assurances and resolution. The proposed action is the Approval Action as defined by S.F. Administrative Code Chapter 31.) RESOLUTION 200421-040",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 200421-040)"
+  },
+  {
+   "no": "10.4",
+   "title": "Finding that Twin Peaks Boulevard, eastern alignment, from Christmas Tree Point Road to the southern end of the “Figure 8” roadway is no longer needed for vehicular traffic pursuant to California Vehicle Code Section 21101; and approving permanently closing Twin Peaks Boulevard to vehicular traffic except for bicycles and emergency vehicles, and changing the one-way direction of Twin Peaks Boulevard, western alignment, from Christmas Tree Point Road to the northern end of the “Figure 8” roadway to two-way as follows",
+   "text": "Finding that Twin Peaks Boulevard, eastern alignment, from Christmas Tree Point Road to the southern end of the “Figure 8” roadway is no longer needed for vehicular traffic pursuant to California Vehicle Code Section 21101; and approving permanently closing Twin Peaks Boulevard to vehicular traffic except for bicycles and emergency vehicles, and changing the one-way direction of Twin Peaks Boulevard, western alignment, from Christmas Tree Point Road to the northern end of the “Figure 8” roadway to two-way as follows: A. ESTABLISH - ROAD CLOSURE, EXCEPT, BICYCLES AND EMERGENCY VEHICLES - Twin Peaks Boulevard, eastern alignment, from Christmas Tree Point Road to 1,700 feet southerly B. ESTABLISH - TWO-WAY STREET - Twin Peaks Boulevard, western alignment, from Christmas Tree Point Road to 1,500 feet southerly. (Explanatory documents include a staff report, modifications, plan, rendering, report and resolution. The proposed action is the Approval Action as defined by S.F. Administrative Code Chapter 31.)",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "severed": true,
+   "decision": "ADOPTED — 7 ayes (Resolution 200421-041)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding transit service"
+  },
+  {
+   "no": "12",
+   "title": "Adopting the FY 2021-2025 Capital Improvement Program",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Approving the San Francisco Municipal Transportation Agency FY2021 and FY2022 Operating Budget",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

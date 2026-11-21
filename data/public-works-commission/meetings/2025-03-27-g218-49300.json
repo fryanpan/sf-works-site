@@ -1,0 +1,62 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-03-27",
+ "id": "g218-49300",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49300",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
+  "postedAgenda": "https://sfpublicworks.org/sites/default/files/Commissions/March%2027%202025/2025-3-27%20PW%20Commission%20Agenda%20v325.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the March 13, 2025 Meeting of the Public Works Commission",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4b",
+   "title": "As-Needed Civil Engineering Services No. 4, Contract ID 1000025104 - Contract Modification",
+   "text": "As-Needed Civil Engineering Services No. 4, Contract ID 1000025104 - Contract Modification Staff Recommendation: Approve Modification No. 3 to As-Needed Civil Engineering Services No. 4, Contract ID 1000025104 with Kennedy Jenks Consultants, Inc. / AGS, Inc. JV (KJ/AGS JV) to increase the not-to-exceed contract amount by $1,500,000 for a new not-to-exceed amount of $4,500,000.",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "5",
+   "title": "San Francisco Fire Department Division of Training Construction Manager/General Contractor – Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "San Francisco Arts Commission African American Arts Cultural Complex and Mission Cultural Center for Latino Arts Seismic Improvement Projects – Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

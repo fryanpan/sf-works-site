@@ -1,0 +1,26 @@
+{
+ "generated": "2026-10-06",
+ "source": {
+  "name": "SFMTA On-Street Parking Census",
+  "id": "9ivs-nf5y",
+  "url": "https://data.sf.gov/d/9ivs-nf5y",
+  "data_as_of": "2024-06-17",
+  "queried": "2026-09-28",
+  "rows": 14346,
+  "segments": 12497,
+  "spaces": 275339,
+  "surveyed": [
+   "2010",
+   "2014"
+  ]
+ },
+ "residents": 830275,
+ "share": {
+  "quarter": 99.7,
+  "block": 99.6,
+  "2blocks": 99.7,
+  "1000ft": 99.7
+ },
+ "median_feet": 0,
+ "method": "Walking distance along the street network (lib/walknet.py) from each census block's interior point to the nearest street segment with one or more on-street spaces."
+}

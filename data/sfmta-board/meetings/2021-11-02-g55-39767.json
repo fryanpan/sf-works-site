@@ -1,0 +1,125 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-11-02",
+ "id": "g55-39767",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39767",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/25228"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes, October 19, 2021 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Special Recognition"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Vaccination Update"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Teresa Piccirillo v. CCSF, Superior Ct. #CGC-20-58676 filed on 9/24/2020 for $12,500 (Explanatory documents include a resolution.) RESOLUTION 211102-126",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 211102-126)"
+  },
+  {
+   "no": "10a",
+   "title": "Payment of the claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 211102-127)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Modification No. 3 to Contract No. 1309R, Muni Metro East – Boiler and HVAC Rehabilitation Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 211102-128)"
+  },
+  {
+   "no": "10.4",
+   "title": "Approving Modification No. 2 to Contract No. 2020-61-FHWA, for the Connected Corridor Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 211102-129)"
+  },
+  {
+   "no": "10.5",
+   "title": "Adopting findings under the State Emergency Services Act (AB 361) to allow remote meetings during the COVID-19 emergency",
+   "decision": "ADOPTED — 6 ayes (Resolution 211102-130)"
+  },
+  {
+   "no": "11",
+   "title": "Endorsing the City’s 2021 Vision Zero Action Strategy, directing staff to move forward in four areas to advance Vision Zero",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Transportation 2050 and the 2022 Muni Reliability and Street Safety Improvement General Obligation Bond"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

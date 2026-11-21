@@ -1,0 +1,51 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2022-11-08",
+ "id": "g24-42433",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42433",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Minutes of the October 25, 2022 Meeting"
+  },
+  {
+   "no": "3",
+   "title": "Community Advisory Committee Report"
+  },
+  {
+   "no": "4",
+   "title": "Appoint Two Members to the Community Advisory Committee"
+  },
+  {
+   "no": "5",
+   "title": "Allocate $941,758, in Prop K Funds and Appropriate $175,516, with Conditions, for Five Requests"
+  },
+  {
+   "no": "6",
+   "title": "Execute Contract Renewals and Options for Various Professional Services in an Amount Not to Exceed $1,025,000 Other Items"
+  },
+  {
+   "no": "7",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "8",
+   "title": "Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

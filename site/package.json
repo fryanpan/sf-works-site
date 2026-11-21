@@ -1,0 +1,28 @@
+{
+  "name": "sf-works-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "check": "node scripts/check-assumptions.mjs --quiet && node scripts/check-figures.mjs && node scripts/check-studies.mjs && node scripts/check-public.mjs && node scripts/check-versions.mjs && node scripts/page-dates.mjs --check && python3 ../tools/grand-juries/build-cgj-site.py --check && python3 ../tools/toolkit/build-scorecard-site.py --check && node tests/school-trips-plan-test.mjs && node tests/school-trips-wedges-test.mjs && node tests/school-trips-page-test.mjs && node tests/injury-view-test.mjs && node tests/safety-map-test.mjs && node tests/map-gestures-test.mjs && node tests/footnotes-test.mjs && node tests/md-pages-test.mjs && node tests/page-versions-test.mjs && node tests/page-dates-test.mjs && { P=${SF_WORKS_PY:-$HOME/.venvs/sf-works-geo/bin/python}; if [ -x \"$P\" ]; then \"$P\" ../tools/school-trips/school-segments-ip-test.py; else echo \"warning: no Python at $P (set SF_WORKS_PY), so school-segments-ip-test.py was skipped\"; fi; }",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run check && npm run build && wrangler deploy",
+    "deploy-docs": "node scripts/deploy-docs.mjs",
+    "check-rendered-docs": "node scripts/check-rendered-docs.mjs",
+    "new-version": "node scripts/new-version.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "dependencies": {
+    "@claude-workspaces/components": "file:vendor/claude-workspaces-components-0.3.0.tgz",
+    "@observablehq/plot": "0.6.17",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "astro": "7.3.5",
+    "js-yaml": "4.3.2",
+    "linkedom": "0.18.13",
+    "marked": "16.4.2"
+  }
+}

@@ -1,0 +1,299 @@
+{
+ "source": "libraries",
+ "key": "branches",
+ "fetched_on": "2026-09-22",
+ "meta": {
+  "source": "DataSF City Facilities, department Public Library, minus Library Support Services",
+  "dataset": "https://data.sf.gov/d/nc68-ngbr",
+  "closures": {
+   "Mission Branch Library": {
+    "closed_from": 2020,
+    "reopens": null,
+    "source": "https://sfpl.org/releases/2022/06/13/san-francisco-public-library-opens-new-temporary-library-site-mission-saturday"
+   }
+  },
+  "not_counted": "SFPL Book Stop kiosks (Treasure Island, Dogpatch, Sunnydale) and the Mission temporary site"
+ },
+ "records": [
+  {
+   "name": "Ocean View Branch Library",
+   "facility_id": "1200.0",
+   "address": "345 RANDOLPH ST",
+   "lat": 37.71413776700007,
+   "lon": -122.46597082599999,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Bernal Heights Branch Library",
+   "facility_id": "179.0",
+   "address": "500 CORTLAND AVE",
+   "lat": 37.73885128400008,
+   "lon": -122.41610523099996,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Excelsior Branch Library",
+   "facility_id": "651.0",
+   "address": "4400 MISSION ST",
+   "lat": 37.72713052100005,
+   "lon": -122.43331540999998,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Potrero Branch Library",
+   "facility_id": "1326.0",
+   "address": "1616 20TH ST",
+   "lat": 37.760135940000055,
+   "lon": -122.39766410099998,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Visitacion Valley Branch Library",
+   "facility_id": "1821.0",
+   "address": "201 LELAND AVE",
+   "lat": 37.71245320600008,
+   "lon": -122.40788422599996,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Mission Bay Library",
+   "facility_id": "1113.0",
+   "address": "960 4TH ST",
+   "lat": 37.775369728000044,
+   "lon": -122.39309738399999,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Ortega Branch Library",
+   "facility_id": "1213.0",
+   "address": "3223 ORTEGA ST",
+   "lat": 37.75122405800005,
+   "lon": -122.49810319699998,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Ingleside Branch",
+   "facility_id": "896.0",
+   "address": "1298 OCEAN AVE",
+   "lat": 37.72405708700006,
+   "lon": -122.45626482999995,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Chinatown Branch Library",
+   "facility_id": "465.0",
+   "address": "1135 POWELL ST",
+   "lat": 37.79523887500005,
+   "lon": -122.41008249499998,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Merced Branch Library",
+   "facility_id": "1093.0",
+   "address": "155 WINSTON DR",
+   "lat": 37.72659366900007,
+   "lon": -122.47449376899999,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Sunset Branch Library",
+   "facility_id": "1682.0",
+   "address": "1305 18TH AVE",
+   "lat": 37.76334875500004,
+   "lon": -122.47631075399994,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Mission Branch Library",
+   "facility_id": "1117.0",
+   "address": "300 BARTLETT ST",
+   "lat": 37.75196896600005,
+   "lon": -122.41982646399998,
+   "closed_from": 2020,
+   "reopens": null,
+   "closure_source": "https://sfpl.org/releases/2022/06/13/san-francisco-public-library-opens-new-temporary-library-site-mission-saturday"
+  },
+  {
+   "name": "Golden Gate Valley Branch Library",
+   "facility_id": "815.0",
+   "address": "1801 GREEN ST",
+   "lat": 37.796788830000025,
+   "lon": -122.429023471,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Richmond Branch Library",
+   "facility_id": "1404.0",
+   "address": "351 9TH AVE",
+   "lat": 37.78184424500006,
+   "lon": -122.46809920399994,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Eureka Valley/Harvey Milk Memorial Library",
+   "facility_id": "648.0",
+   "address": "1 JOSE SARRIA CT",
+   "lat": 37.76406037000004,
+   "lon": -122.43188171699995,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Park Branch Library",
+   "facility_id": "1228.0",
+   "address": "1833 PAGE ST",
+   "lat": 37.770135518000075,
+   "lon": -122.45100115999998,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Anna E. Waden Branch Library (Bayview)",
+   "facility_id": "127.0",
+   "address": "5075 3RD ST",
+   "lat": 37.732484671000066,
+   "lon": -122.39108620099995,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Noe Valley Branch Library",
+   "facility_id": "1184.0",
+   "address": "451 JERSEY ST",
+   "lat": 37.75022804200006,
+   "lon": -122.43509024199994,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Marina Branch Library",
+   "facility_id": "1053.0",
+   "address": "1890 CHESTNUT ST",
+   "lat": 37.801373632000036,
+   "lon": -122.43413566499999,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Western Addition Branch Library",
+   "facility_id": "1858.0",
+   "address": "1550 SCOTT ST",
+   "lat": 37.784118524000064,
+   "lon": -122.43748930299995,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Glen Park Branch Library",
+   "facility_id": "808.0",
+   "address": "2825 DIAMOND ST",
+   "lat": 37.733980204000034,
+   "lon": -122.43383315499995,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Anza Branch Library",
+   "facility_id": "128.0",
+   "address": "550 37TH AVE",
+   "lat": 37.77856950700004,
+   "lon": -122.49725809499995,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Parkside Branch Library",
+   "facility_id": "1246.0",
+   "address": "1200 TARAVAL ST",
+   "lat": 37.74316235800006,
+   "lon": -122.47934506399997,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Main Library",
+   "facility_id": "1044.0",
+   "address": "100 LARKIN ST",
+   "lat": 37.779081776000055,
+   "lon": -122.41615205,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Portola Library",
+   "facility_id": "1320.0",
+   "address": "380 BACON ST",
+   "lat": 37.727114209000035,
+   "lon": -122.40636172399996,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "West Portal Branch Library",
+   "facility_id": "1853.0",
+   "address": "190 LENOX WAY",
+   "lat": 37.74137018500005,
+   "lon": -122.46614395199998,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "North Beach Branch Library",
+   "facility_id": "1188.0",
+   "address": "850 COLUMBUS AVE",
+   "lat": 37.80253081500007,
+   "lon": -122.41313485899997,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  },
+  {
+   "name": "Presidio Branch Library",
+   "facility_id": "1340.0",
+   "address": "3150 SACRAMENTO ST",
+   "lat": 37.788910970000074,
+   "lon": -122.44485234499996,
+   "closed_from": null,
+   "reopens": null,
+   "closure_source": null
+  }
+ ]
+}

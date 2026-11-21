@@ -1,0 +1,167 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2025-06-10",
+ "id": "g22-50186",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50186",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/6.10.2025_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of May 27, 2025",
+   "decision": "approve the minutes of May 27, 2025"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Quarterly Audit and Performance Review Report",
+   "text": "Quarterly Audit and Performance Review Report Nancy Hom, Chief Financial Officer and Business Services Assistant General"
+  },
+  {
+   "no": "5b",
+   "title": "Water Enterprise Capital Improvement Program Quarterly (Q3) Report"
+  },
+  {
+   "no": "5c",
+   "title": "Water System Improvement Program Quarterly (Q3) Report"
+  },
+  {
+   "no": "5d",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided. SFPUC JUNE 10, 2025 MEETING MINUTES"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve an increase of 203 calendar days (approximately seven months) to the duration contingency for Contract No. WD-2895, San Francisco Zoo Recycled Water, with Basset Engineering, for a revised duration limit of 670 consecutive calendar days (approximately one year and 10 months), with no change to the contract amount, to allow for the completion of the project which is delayed due to the additional time required for manufacturing and procurement of long-lead electrical equipment",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0089",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Approve Amendment No. 3 to Contract No. PRO.0073, Treasure Island Wastewater Treatment Plant & Recycled Water Facility Engineering Services, with Carollo Engineers, Inc., increasing the contract duration by one year and eight months, to continue providing engineering support during construction, owner advisor’s expertise in reviewing start-up and testing plans and recommending optimization of the new Treasure Island Wastewater Treatment Plant being designed and construction under Contract No. DB-132, New Treasure Island Wastewater Treatment Plant, for a total contract duration of eight years and eight months, with no change to the contract amount",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0090",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Award Job Order Contract No. JOC-111, General Engineering (A-License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of four years, to the responsible bidder that submitted the lowest responsive bid, GSW Construction Inc., to perform A-licensed general engineering construction work on San Francisco Public Utilities Commission systems and operations in the San Francisco Bay Area",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0091",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Adopt the 2025 Wildfire Mitigation Plan and authorize the SFPUC General Manager to file the Plan with the California Office of Energy Infrastructure Safety Wildfire Safety Advisory Board on or before July 1, 2025",
+   "decision": "approve Item 7",
+   "resolution": "25-0092",
+   "text": "Adopt the 2025 Wildfire Mitigation Plan (WMP) and authorize the SFPUC General Manager to file the Plan with the California Office of Energy Infrastructure Safety (OEIS) Wildfire Safety Advisory Board (WSAB) on or before July 1, 2025"
+  },
+  {
+   "no": "8",
+   "title": "Approve Modification No. 1 to Contract No. WD-2879R, City Distribution Division Campus at 2000 Marin Street Project, with Clark Construction Group",
+   "decision": "approve Item 8",
+   "resolution": "25-0093",
+   "text": "Approve Modification No. 1 to Contract No. WD-2879R, City Distribution Division Campus at 2000 Marin Street Project, with Clark Construction Group (Construction Manager/General Contractor), increasing the contract amount by $45,384,136, for a total contract amount of $305,834,818, with no change to the contract duration, and with a total contract cost limit of $329,213,132, to add the recently bid-out subcontractor trade packages, with an increased amount to address escalation of construction cost between the original issuance of the Request For Proposal in June 2021 and the issuance of Notice-To-Proceed for construction in August 2024, as well as impacts related to current market conditions. Shelby Campbell, Wastewater Enterprise and WE Buildings and Facilities – Senior"
+  },
+  {
+   "no": "9",
+   "title": "Approve an increase of 365 calendar days to the duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc.",
+   "decision": "approve Item 9",
+   "resolution": "25-0094",
+   "text": "Approve an increase of 365 calendar days to the duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc., for a revised duration limit of 1,195 consecutive calendar days (approximately three years and four months), due to additional time needed to complete existing lateral service pipeline replacements and connections to the newly installed main sewer pipeline, with no change to the contract amount or amount contingency"
+  },
+  {
+   "no": "10",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "10a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "10b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "10c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "10d",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "10e",
+   "title": "CleanPowerSF Quarterly Report"
+  },
+  {
+   "no": "10f",
+   "title": "Quarterly Report to the Board of Supervisors on the Status of Applications to PG&E for Electric Service",
+   "text": "Quarterly Report to the Board of Supervisors on the Status of Applications to PG&E SFPUC JUNE 10, 2025 MEETING MINUTES for Electric Service"
+  },
+  {
+   "no": "10g",
+   "title": "Hetch Hetchy Capital Improvement Program Quarterly (Q3) Report"
+  },
+  {
+   "no": "11",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "12",
+   "title": "Public Comment on the matters to be addressed during Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters in Closed Session CLOSED SESSION",
+   "decision": "assert the attorney-client privilege",
+   "resolution": "25-0095"
+  },
+  {
+   "no": "14",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session President Stacy stated that the Commission recommends the Board of Supervisors SFPUC JUNE 10, 2025 MEETING MINUTES approve the settlement referenced under Item 13"
+  },
+  {
+   "no": "15",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a).",
+   "decision": "not to disclose"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

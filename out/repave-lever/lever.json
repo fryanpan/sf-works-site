@@ -1,0 +1,3423 @@
+{
+ "generated": "2026-11-11",
+ "mileBasis": "per direction of travel",
+ "sources": {
+  "pci": {
+   "id": "78va-8dhi",
+   "tag": "[DataSF 78va-8dhi \u2014 queried 2026-11-10]",
+   "queried": "2026-11-10",
+   "rows": 307554,
+   "blocks": 18398,
+   "repaveEvents": 24794,
+   "repavedBlocks": 16226,
+   "lightEvents": 3743,
+   "undatedTreatments": 70,
+   "widenedEventsAdded": 1172,
+   "columns": [
+    ":@computed_region_26cr_cadq",
+    ":@computed_region_6qbp_sg9q",
+    ":@computed_region_ajp5_b2md",
+    ":@computed_region_jwn9_ihcz",
+    ":@computed_region_qgnn_b9vv",
+    "cnn",
+    "from_street",
+    "functional_class",
+    "latitude",
+    "line",
+    "longitude",
+    "pci_change_date",
+    "pci_score",
+    "point",
+    "street_accepted_for_maintenance",
+    "street_name",
+    "to_street",
+    "treatment_or_survey",
+    "x",
+    "y"
+   ],
+   "hasTreatmentTypeColumn": false
+  },
+  "moratorium": {
+   "tag": "[DataSF 5wbp-dwzt \u2014 queried 2026-11-10]",
+   "queried": "2026-11-10",
+   "rows": 3378,
+   "window": [
+    "2021-11-02",
+    "2026-10-16"
+   ],
+   "lockedBlocks": 2529,
+   "lockedWithRepaveWithin400Days": 2528,
+   "repavedBlocksInWindow": 2810,
+   "repavedBlocksInWindowLocked": 2522,
+   "lightTreatedBlocksInWindow": 554,
+   "lightTreatedBlocksInWindowLocked": 0,
+   "blocksWithTwoLockDates": 0,
+   "unlockedRepavedFirst60Days": 17,
+   "unlockedRepavedStreets": [
+    "Valencia St",
+    "Fillmore St",
+    "Kirkham St",
+    "Hazelwood Ave"
+   ]
+  },
+  "layer": {
+   "tag": "[SFMTA ArcGIS Bicycle/bicycle layer 0 \u2014 queried 2026-11-10]",
+   "queried": "2026-11-10",
+   "rows": 5481,
+   "lastEdited": "2026-10-19"
+  },
+  "snapshots": {
+   "tag": "[web.archive.org captures of DataSF ygmz-vaxd \u2014 read 2026-09-22]",
+   "captures": [
+    "2021-03-25",
+    "2022-12-09",
+    "2024-03-31",
+    "2025-12-08",
+    "2026-02-15",
+    "2026-04-05"
+   ],
+   "releases": [
+    "2021-03-25",
+    "2022-12-09",
+    "2024-03-23",
+    "2025-06-17",
+    "2026-02-14",
+    "2026-04-04"
+   ],
+   "loadedAt": "2026-04-04",
+   "wayback": [
+    "20210325171932",
+    "20221209021723",
+    "20240331194201",
+    "20251208144027",
+    "20260215091752",
+    "20260405114850"
+   ]
+  },
+  "feed": {
+   "id": "btxj-k9uh",
+   "tag": "[DataSF btxj-k9uh \u2014 queried 2026-11-11]",
+   "queried": "2026-11-11",
+   "rows": 7541,
+   "completedRows": 5
+  },
+  "centerlines": {
+   "id": "3psu-pn9h",
+   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
+   "queried": "2026-11-11",
+   "blocks": {
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
+    "queried": "2026-11-11",
+    "all": 17176,
+    "active": 16378,
+    "accepted": 13190
+   },
+   "pciIdsNotInCenterlines": 4209,
+   "pciIdsNotInCenterlinesNamedIntersection": 4207,
+   "pciIdsInCenterlines": 14189
+  }
+ },
+ "plan": {
+  "tag": "[Biking and Rolling Plan, March 2025, North Star map \u2014 traced 2026-09-29]",
+  "blocks": 3077,
+  "rated": 2886,
+  "unrated": 191,
+  "milesUnit": "per direction of travel, as the plan's 472 miles (printed p. 20) are counted, times the share of each block the plan draws",
+  "miles": 458.5,
+  "partialBlocks": 72,
+  "directions": {
+   "rule": "A plan block's miles are the block's miles per direction of travel, times the part of it the plan draws where the plan's line stops partway along it: the sum of its bikeway layer rows' own lengths where the layer carries it, else its centerline length once where the street centerline's oneway flag is F or T, else twice.",
+   "blocks_by_basis": {
+    "centerline two-way": 1674,
+    "layer rows": 3866,
+    "centerline one-way": 614
+   },
+   "layer": {
+    "queried": "2026-11-10"
+   },
+   "centerlines": {
+    "id": "3psu-pn9h",
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
+    "queried": "2026-11-11"
+   }
+  }
+ },
+ "years": [
+  {
+   "year": 1948,
+   "blocks": 1,
+   "miles": 0.24,
+   "milesShort": 0.0,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.24,
+   "blocks_by_grade": {
+    "later": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1949,
+   "blocks": 3,
+   "miles": 0.63,
+   "milesShort": 0.63,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 3
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1950,
+   "blocks": 6,
+   "miles": 0.43,
+   "milesShort": 0.31,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.12,
+   "blocks_by_grade": {
+    "short": 5,
+    "later": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1951,
+   "blocks": 5,
+   "miles": 0.97,
+   "milesShort": 0.72,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.25,
+   "blocks_by_grade": {
+    "short": 3,
+    "later": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1952,
+   "blocks": 28,
+   "miles": 2.47,
+   "milesShort": 1.15,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.32,
+   "blocks_by_grade": {
+    "short": 12,
+    "later": 16
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1953,
+   "blocks": 6,
+   "miles": 0.59,
+   "milesShort": 0.59,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 6
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1954,
+   "blocks": 17,
+   "miles": 2.06,
+   "milesShort": 1.36,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.7,
+   "blocks_by_grade": {
+    "short": 11,
+    "later": 6
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1955,
+   "blocks": 5,
+   "miles": 0.45,
+   "milesShort": 0.32,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.13,
+   "blocks_by_grade": {
+    "short": 4,
+    "later": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1956,
+   "blocks": 8,
+   "miles": 0.76,
+   "milesShort": 0.49,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.26,
+   "blocks_by_grade": {
+    "later": 2,
+    "short": 6
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1957,
+   "blocks": 7,
+   "miles": 0.88,
+   "milesShort": 0.88,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 7
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1958,
+   "blocks": 7,
+   "miles": 1.02,
+   "milesShort": 1.02,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 7
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1959,
+   "blocks": 4,
+   "miles": 0.56,
+   "milesShort": 0.22,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.34,
+   "blocks_by_grade": {
+    "short": 2,
+    "later": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1960,
+   "blocks": 20,
+   "miles": 2.65,
+   "milesShort": 2.11,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.54,
+   "blocks_by_grade": {
+    "later": 4,
+    "short": 16
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1961,
+   "blocks": 5,
+   "miles": 0.78,
+   "milesShort": 0.48,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.29,
+   "blocks_by_grade": {
+    "short": 3,
+    "later": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1962,
+   "blocks": 20,
+   "miles": 2.85,
+   "milesShort": 2.11,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.73,
+   "blocks_by_grade": {
+    "later": 5,
+    "short": 15
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1963,
+   "blocks": 9,
+   "miles": 1.63,
+   "milesShort": 1.28,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.35,
+   "blocks_by_grade": {
+    "later": 2,
+    "short": 7
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1964,
+   "blocks": 20,
+   "miles": 2.24,
+   "milesShort": 1.69,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.55,
+   "blocks_by_grade": {
+    "short": 16,
+    "later": 4
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1965,
+   "blocks": 23,
+   "miles": 3.66,
+   "milesShort": 2.21,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.45,
+   "blocks_by_grade": {
+    "later": 9,
+    "short": 14
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1966,
+   "blocks": 15,
+   "miles": 2.4,
+   "milesShort": 2.03,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.36,
+   "blocks_by_grade": {
+    "later": 2,
+    "short": 13
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1967,
+   "blocks": 21,
+   "miles": 2.71,
+   "milesShort": 2.06,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.65,
+   "blocks_by_grade": {
+    "short": 17,
+    "later": 4
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1968,
+   "blocks": 19,
+   "miles": 2.65,
+   "milesShort": 2.48,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.18,
+   "blocks_by_grade": {
+    "short": 18,
+    "later": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1969,
+   "blocks": 32,
+   "miles": 5.07,
+   "milesShort": 4.19,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.88,
+   "blocks_by_grade": {
+    "short": 24,
+    "later": 8
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1970,
+   "blocks": 26,
+   "miles": 3.79,
+   "milesShort": 3.79,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 26
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1971,
+   "blocks": 15,
+   "miles": 2.78,
+   "milesShort": 2.58,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.2,
+   "blocks_by_grade": {
+    "later": 2,
+    "short": 13
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1972,
+   "blocks": 12,
+   "miles": 1.73,
+   "milesShort": 1.41,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.31,
+   "blocks_by_grade": {
+    "later": 3,
+    "short": 9
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1973,
+   "blocks": 15,
+   "miles": 2.36,
+   "milesShort": 1.89,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.47,
+   "blocks_by_grade": {
+    "short": 11,
+    "later": 4
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1974,
+   "blocks": 8,
+   "miles": 1.17,
+   "milesShort": 1.03,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.14,
+   "blocks_by_grade": {
+    "short": 6,
+    "later": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1975,
+   "blocks": 10,
+   "miles": 1.62,
+   "milesShort": 1.36,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.26,
+   "blocks_by_grade": {
+    "later": 1,
+    "short": 9
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1976,
+   "blocks": 12,
+   "miles": 1.48,
+   "milesShort": 1.23,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.25,
+   "blocks_by_grade": {
+    "short": 10,
+    "later": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1977,
+   "blocks": 38,
+   "miles": 4.75,
+   "milesShort": 2.98,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.77,
+   "blocks_by_grade": {
+    "short": 24,
+    "later": 14
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1978,
+   "blocks": 24,
+   "miles": 3.37,
+   "milesShort": 2.22,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.15,
+   "blocks_by_grade": {
+    "short": 13,
+    "later": 11
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1979,
+   "blocks": 15,
+   "miles": 2.68,
+   "milesShort": 2.21,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.47,
+   "blocks_by_grade": {
+    "later": 4,
+    "short": 11
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1980,
+   "blocks": 17,
+   "miles": 2.43,
+   "milesShort": 1.93,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.13,
+   "milesLater": 0.37,
+   "blocks_by_grade": {
+    "short": 13,
+    "undated": 1,
+    "later": 3
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1981,
+   "blocks": 24,
+   "miles": 3.81,
+   "milesShort": 3.29,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.52,
+   "blocks_by_grade": {
+    "short": 20,
+    "later": 4
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1982,
+   "blocks": 37,
+   "miles": 6.13,
+   "milesShort": 4.13,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 2.0,
+   "blocks_by_grade": {
+    "short": 24,
+    "later": 13
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1983,
+   "blocks": 74,
+   "miles": 9.79,
+   "milesShort": 5.73,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 4.07,
+   "blocks_by_grade": {
+    "later": 34,
+    "short": 40
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1984,
+   "blocks": 48,
+   "miles": 5.66,
+   "milesShort": 1.23,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 4.43,
+   "blocks_by_grade": {
+    "later": 38,
+    "short": 10
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1985,
+   "blocks": 58,
+   "miles": 8.59,
+   "milesShort": 5.72,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 2.87,
+   "blocks_by_grade": {
+    "later": 21,
+    "short": 37
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1986,
+   "blocks": 144,
+   "miles": 20.91,
+   "milesShort": 13.9,
+   "milesReceived": 0.0,
+   "milesAlready": 0.12,
+   "milesUndated": 0.0,
+   "milesLater": 6.89,
+   "blocks_by_grade": {
+    "later": 44,
+    "short": 99,
+    "already": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1987,
+   "blocks": 185,
+   "miles": 23.08,
+   "milesShort": 14.7,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 8.37,
+   "blocks_by_grade": {
+    "short": 113,
+    "later": 72
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1988,
+   "blocks": 29,
+   "miles": 3.62,
+   "milesShort": 2.56,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.06,
+   "blocks_by_grade": {
+    "short": 21,
+    "later": 8
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1989,
+   "blocks": 27,
+   "miles": 3.26,
+   "milesShort": 1.93,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.33,
+   "blocks_by_grade": {
+    "short": 18,
+    "later": 9
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1990,
+   "blocks": 46,
+   "miles": 6.74,
+   "milesShort": 2.13,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 4.61,
+   "blocks_by_grade": {
+    "later": 27,
+    "short": 19
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1991,
+   "blocks": 35,
+   "miles": 4.74,
+   "milesShort": 3.43,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.3,
+   "blocks_by_grade": {
+    "short": 27,
+    "later": 8
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1992,
+   "blocks": 111,
+   "miles": 14.7,
+   "milesShort": 8.59,
+   "milesReceived": 0.0,
+   "milesAlready": 0.23,
+   "milesUndated": 0.05,
+   "milesLater": 5.84,
+   "blocks_by_grade": {
+    "short": 67,
+    "later": 41,
+    "undated": 1,
+    "already": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1993,
+   "blocks": 63,
+   "miles": 8.69,
+   "milesShort": 7.18,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.51,
+   "blocks_by_grade": {
+    "short": 43,
+    "later": 20
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1994,
+   "blocks": 96,
+   "miles": 11.22,
+   "milesShort": 8.31,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 2.91,
+   "blocks_by_grade": {
+    "later": 25,
+    "short": 71
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1995,
+   "blocks": 85,
+   "miles": 10.2,
+   "milesShort": 5.92,
+   "milesReceived": 0.47,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 3.82,
+   "blocks_by_grade": {
+    "short": 46,
+    "later": 35,
+    "received": 4
+   },
+   "receivedStreets": [
+    "Cabrillo St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1996,
+   "blocks": 144,
+   "miles": 26.08,
+   "milesShort": 12.21,
+   "milesReceived": 1.15,
+   "milesAlready": 0.71,
+   "milesUndated": 4.41,
+   "milesLater": 7.6,
+   "blocks_by_grade": {
+    "short": 77,
+    "later": 48,
+    "received": 10,
+    "already": 6,
+    "undated": 3
+   },
+   "receivedStreets": [
+    "Lake St",
+    "Cabrillo St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1997,
+   "blocks": 91,
+   "miles": 12.95,
+   "milesShort": 9.29,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.05,
+   "milesLater": 3.62,
+   "blocks_by_grade": {
+    "short": 72,
+    "later": 18,
+    "undated": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1998,
+   "blocks": 45,
+   "miles": 7.31,
+   "milesShort": 6.27,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.05,
+   "blocks_by_grade": {
+    "later": 8,
+    "short": 37
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 1999,
+   "blocks": 34,
+   "miles": 3.98,
+   "milesShort": 1.91,
+   "milesReceived": 0.0,
+   "milesAlready": 1.89,
+   "milesUndated": 0.0,
+   "milesLater": 0.18,
+   "blocks_by_grade": {
+    "short": 17,
+    "already": 16,
+    "later": 1
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2000,
+   "blocks": 96,
+   "miles": 11.42,
+   "milesShort": 6.22,
+   "milesReceived": 0.9,
+   "milesAlready": 0.72,
+   "milesUndated": 0.0,
+   "milesLater": 3.57,
+   "blocks_by_grade": {
+    "short": 51,
+    "later": 31,
+    "already": 7,
+    "received": 7
+   },
+   "receivedStreets": [
+    "Folsom St",
+    "7th St",
+    "Geneva Ave"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2001,
+   "blocks": 57,
+   "miles": 10.61,
+   "milesShort": 4.03,
+   "milesReceived": 0.18,
+   "milesAlready": 0.36,
+   "milesUndated": 2.13,
+   "milesLater": 3.9,
+   "blocks_by_grade": {
+    "later": 24,
+    "short": 26,
+    "already": 2,
+    "received": 1,
+    "undated": 4
+   },
+   "receivedStreets": [
+    "Francisco St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2002,
+   "blocks": 34,
+   "miles": 4.3,
+   "milesShort": 3.48,
+   "milesReceived": 0.28,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.55,
+   "blocks_by_grade": {
+    "short": 25,
+    "received": 3,
+    "later": 6
+   },
+   "receivedStreets": [
+    "Fell St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2003,
+   "blocks": 42,
+   "miles": 5.62,
+   "milesShort": 5.43,
+   "milesReceived": 0.19,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 41,
+    "received": 1
+   },
+   "receivedStreets": [
+    "Golden Gate Ave"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2004,
+   "blocks": 37,
+   "miles": 5.85,
+   "milesShort": 4.2,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 1.65,
+   "blocks_by_grade": {
+    "later": 15,
+    "short": 22
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2005,
+   "blocks": 66,
+   "miles": 10.03,
+   "milesShort": 5.77,
+   "milesReceived": 0.1,
+   "milesAlready": 0.03,
+   "milesUndated": 0.0,
+   "milesLater": 4.14,
+   "blocks_by_grade": {
+    "short": 59,
+    "already": 1,
+    "received": 1,
+    "later": 5
+   },
+   "receivedStreets": [
+    "Bay Shore Blvd"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2006,
+   "blocks": 18,
+   "miles": 2.59,
+   "milesShort": 1.8,
+   "milesReceived": 0.35,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.44,
+   "blocks_by_grade": {
+    "later": 5,
+    "received": 3,
+    "short": 10
+   },
+   "receivedStreets": [
+    "Vicente St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2007,
+   "blocks": 19,
+   "miles": 3.08,
+   "milesShort": 2.76,
+   "milesReceived": 0.0,
+   "milesAlready": 0.31,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 17,
+    "already": 2
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2008,
+   "blocks": 96,
+   "miles": 13.81,
+   "milesShort": 8.97,
+   "milesReceived": 0.0,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 4.84,
+   "blocks_by_grade": {
+    "later": 37,
+    "short": 59
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2009,
+   "blocks": 77,
+   "miles": 9.09,
+   "milesShort": 4.5,
+   "milesReceived": 1.33,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 3.26,
+   "blocks_by_grade": {
+    "later": 34,
+    "received": 16,
+    "short": 27
+   },
+   "receivedStreets": [
+    "5th St",
+    "Scott St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2010,
+   "blocks": 111,
+   "miles": 12.94,
+   "milesShort": 8.61,
+   "milesReceived": 0.44,
+   "milesAlready": 0.72,
+   "milesUndated": 0.0,
+   "milesLater": 3.17,
+   "blocks_by_grade": {
+    "short": 72,
+    "later": 29,
+    "received": 4,
+    "already": 6
+   },
+   "receivedStreets": [
+    "Battery St",
+    "Sanchez St",
+    "3rd St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2011,
+   "blocks": 103,
+   "miles": 16.04,
+   "milesShort": 8.02,
+   "milesReceived": 0.0,
+   "milesAlready": 0.52,
+   "milesUndated": 4.54,
+   "milesLater": 2.96,
+   "blocks_by_grade": {
+    "short": 64,
+    "later": 32,
+    "undated": 4,
+    "already": 3
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2012,
+   "blocks": 127,
+   "miles": 15.83,
+   "milesShort": 7.82,
+   "milesReceived": 0.67,
+   "milesAlready": 3.39,
+   "milesUndated": 0.14,
+   "milesLater": 3.82,
+   "blocks_by_grade": {
+    "later": 42,
+    "short": 50,
+    "already": 28,
+    "received": 6,
+    "undated": 1
+   },
+   "receivedStreets": [
+    "17th St",
+    "Duboce Ave",
+    "Howard St",
+    "Lee Ave"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2013,
+   "blocks": 115,
+   "miles": 24.18,
+   "milesShort": 9.26,
+   "milesReceived": 1.97,
+   "milesAlready": 3.85,
+   "milesUndated": 6.38,
+   "milesLater": 2.71,
+   "blocks_by_grade": {
+    "short": 64,
+    "later": 20,
+    "received": 11,
+    "already": 17,
+    "undated": 3
+   },
+   "receivedStreets": [
+    "Bay Shore Blvd",
+    "Point Lobos Ave"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2014,
+   "blocks": 99,
+   "miles": 13.7,
+   "milesShort": 6.02,
+   "milesReceived": 0.54,
+   "milesAlready": 4.69,
+   "milesUndated": 0.0,
+   "milesLater": 2.45,
+   "blocks_by_grade": {
+    "later": 11,
+    "short": 38,
+    "already": 44,
+    "received": 6
+   },
+   "receivedStreets": [
+    "Polk St",
+    "Cesar Chavez St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2015,
+   "blocks": 112,
+   "miles": 15.37,
+   "milesShort": 11.42,
+   "milesReceived": 2.95,
+   "milesAlready": 0.81,
+   "milesUndated": 0.0,
+   "milesLater": 0.19,
+   "blocks_by_grade": {
+    "later": 2,
+    "already": 6,
+    "short": 76,
+    "received": 28
+   },
+   "receivedStreets": [
+    "Ocean Ave",
+    "Bay St",
+    "Oakdale Ave"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2016,
+   "blocks": 92,
+   "miles": 10.7,
+   "milesShort": 7.88,
+   "milesReceived": 0.78,
+   "milesAlready": 1.4,
+   "milesUndated": 0.0,
+   "milesLater": 0.64,
+   "blocks_by_grade": {
+    "short": 67,
+    "already": 11,
+    "later": 7,
+    "received": 7
+   },
+   "receivedStreets": [
+    "Vicente St",
+    "Fell St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2017,
+   "blocks": 91,
+   "miles": 11.97,
+   "milesShort": 9.34,
+   "milesReceived": 1.2,
+   "milesAlready": 0.44,
+   "milesUndated": 0.0,
+   "milesLater": 0.98,
+   "blocks_by_grade": {
+    "later": 2,
+    "short": 80,
+    "received": 4,
+    "already": 5
+   },
+   "receivedStreets": [
+    "San Jose Ave",
+    "Potrero Ave",
+    "Vicente St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2018,
+   "blocks": 101,
+   "miles": 13.19,
+   "milesShort": 8.79,
+   "milesReceived": 2.24,
+   "milesAlready": 0.3,
+   "milesUndated": 0.0,
+   "milesLater": 1.85,
+   "blocks_by_grade": {
+    "short": 59,
+    "later": 14,
+    "received": 26,
+    "already": 2
+   },
+   "receivedStreets": [
+    "Polk St",
+    "Masonic Ave"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2019,
+   "blocks": 81,
+   "miles": 15.86,
+   "milesShort": 8.77,
+   "milesReceived": 1.32,
+   "milesAlready": 4.83,
+   "milesUndated": 0.0,
+   "milesLater": 0.95,
+   "blocks_by_grade": {
+    "later": 6,
+    "short": 59,
+    "already": 3,
+    "received": 13
+   },
+   "receivedStreets": [
+    "2nd St",
+    "Brannan St",
+    "Clipper St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2020,
+   "blocks": 57,
+   "miles": 7.65,
+   "milesShort": 4.52,
+   "milesReceived": 2.53,
+   "milesAlready": 0.55,
+   "milesUndated": 0.0,
+   "milesLater": 0.06,
+   "blocks_by_grade": {
+    "later": 1,
+    "short": 30,
+    "received": 24,
+    "already": 2
+   },
+   "receivedStreets": [
+    "2nd St",
+    "Folsom St",
+    "Anza St",
+    "Townsend St"
+   ],
+   "snapshotAgree": 0,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2021,
+   "blocks": 42,
+   "miles": 6.78,
+   "milesShort": 4.33,
+   "milesReceived": 0.0,
+   "milesAlready": 0.83,
+   "milesUndated": 0.0,
+   "milesLater": 1.62,
+   "blocks_by_grade": {
+    "short": 23,
+    "later": 12,
+    "already": 7
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 39,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 2,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2022,
+   "blocks": 69,
+   "miles": 8.83,
+   "milesShort": 8.21,
+   "milesReceived": 0.62,
+   "milesAlready": 0.0,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 65,
+    "received": 4
+   },
+   "receivedStreets": [
+    "Evans Ave"
+   ],
+   "snapshotAgree": 69,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 4,
+   "layerReceivedWhereSnapshotsExist": 4
+  },
+  {
+   "year": 2023,
+   "blocks": 44,
+   "miles": 6.42,
+   "milesShort": 4.97,
+   "milesReceived": 0.0,
+   "milesAlready": 1.46,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 36,
+    "already": 8
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 44,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2024,
+   "blocks": 79,
+   "miles": 11.34,
+   "milesShort": 8.07,
+   "milesReceived": 0.25,
+   "milesAlready": 3.03,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "already": 23,
+    "short": 55,
+    "received": 1
+   },
+   "receivedStreets": [
+    "Dr Carlton B Goodlett Pl"
+   ],
+   "snapshotAgree": 79,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 1,
+   "layerReceivedWhereSnapshotsExist": 1
+  },
+  {
+   "year": 2025,
+   "blocks": 85,
+   "miles": 10.13,
+   "milesShort": 6.55,
+   "milesReceived": 0.0,
+   "milesAlready": 3.57,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 57,
+    "already": 28
+   },
+   "receivedStreets": [],
+   "snapshotAgree": 85,
+   "snapshotDisagree": 0,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 0
+  },
+  {
+   "year": 2026,
+   "blocks": 62,
+   "miles": 7.39,
+   "milesShort": 1.89,
+   "milesReceived": 0.94,
+   "milesAlready": 4.55,
+   "milesUndated": 0.0,
+   "milesLater": 0.0,
+   "blocks_by_grade": {
+    "short": 21,
+    "already": 37,
+    "received": 4
+   },
+   "receivedStreets": [
+    "Folsom St",
+    "Winston Dr"
+   ],
+   "snapshotAgree": 58,
+   "snapshotDisagree": 4,
+   "snapshotReceived": 0,
+   "layerReceivedWhereSnapshotsExist": 4
+  }
+ ],
+ "lever": [
+  {
+   "reading": "low",
+   "definition": "Separated and Shared-use Path corridors, 2021\u20132025",
+   "years": [
+    2021,
+    2025
+   ],
+   "milesPerYear": 1.38,
+   "perYear": {
+    "2021": 1.28,
+    "2022": 1.32,
+    "2023": 0.62,
+    "2024": 1.07,
+    "2025": 2.63
+   }
+  },
+  {
+   "reading": "mid-recent",
+   "definition": "all rated corridors, 2021\u20132025",
+   "years": [
+    2021,
+    2025
+   ],
+   "milesPerYear": 6.43,
+   "perYear": {
+    "2021": 4.33,
+    "2022": 8.21,
+    "2023": 4.97,
+    "2024": 8.07,
+    "2025": 6.55
+   }
+  },
+  {
+   "reading": "mid-long",
+   "definition": "Separated and Shared-use Path corridors, 2010\u20132025",
+   "years": [
+    2010,
+    2025
+   ],
+   "milesPerYear": 1.67,
+   "perYear": {
+    "2010": 1.58,
+    "2011": 1.14,
+    "2012": 2.92,
+    "2013": 2.15,
+    "2014": 0.31,
+    "2015": 0.81,
+    "2016": 0.11,
+    "2017": 4.92,
+    "2018": 1.28,
+    "2019": 4.17,
+    "2020": 0.41,
+    "2021": 1.28,
+    "2022": 1.32,
+    "2023": 0.62,
+    "2024": 1.07,
+    "2025": 2.63
+   }
+  },
+  {
+   "reading": "high",
+   "definition": "all rated corridors, 2010\u20132025",
+   "years": [
+    2010,
+    2025
+   ],
+   "milesPerYear": 7.66,
+   "perYear": {
+    "2010": 8.61,
+    "2011": 8.02,
+    "2012": 7.82,
+    "2013": 9.26,
+    "2014": 6.02,
+    "2015": 11.42,
+    "2016": 7.88,
+    "2017": 9.34,
+    "2018": 8.79,
+    "2019": 8.77,
+    "2020": 4.52,
+    "2021": 4.33,
+    "2022": 8.21,
+    "2023": 4.97,
+    "2024": 8.07,
+    "2025": 6.55
+   }
+  }
+ ],
+ "builtRate": {
+  "from": "2021-03-25",
+  "to": "2026-04-04",
+  "years": 5.03,
+  "planMilesNewlyMet": 21.89,
+  "milesPerYear": 4.36
+ },
+ "intervals": {
+  "recordSpan": [
+   "1947-11-01",
+   "2026-10-30"
+  ],
+  "cuts": {
+   "plan blocks, accepted streets, 2010\u20132025": {
+    "blocks": 2525,
+    "perYear": 90.8,
+    "cycleYears": 27.8
+   },
+   "plan blocks, accepted streets, 2021\u20132025": {
+    "blocks": 2525,
+    "perYear": 68.8,
+    "cycleYears": 36.7
+   },
+   "plan blocks, accepted streets, 2012\u20132018 (Road Repaving and Street Safety Bond years)": {
+    "blocks": 2525,
+    "perYear": 107.9,
+    "cycleYears": 23.4
+   },
+   "plan blocks, all, 2010\u20132025": {
+    "blocks": 3077,
+    "perYear": 92.1,
+    "cycleYears": 33.4
+   },
+   "plan blocks, all, widened repave definition, 2010\u20132025": {
+    "blocks": 3077,
+    "perYear": 96.4,
+    "cycleYears": 31.9
+   },
+   "plan blocks the plan draws Separated, accepted, 2010\u20132025": {
+    "blocks": 759,
+    "perYear": 23.4,
+    "cycleYears": 32.4
+   },
+   "plan blocks on arterials, accepted, 2010\u20132025": {
+    "blocks": 978,
+    "perYear": 32.6,
+    "cycleYears": 30.0
+   },
+   "plan blocks on collectors, accepted, 2010\u20132025": {
+    "blocks": 386,
+    "perYear": 16.6,
+    "cycleYears": 23.3
+   },
+   "plan blocks on residential streets, accepted, 2010\u20132025": {
+    "blocks": 1148,
+    "perYear": 41.6,
+    "cycleYears": 27.6
+   },
+   "city blocks, accepted streets, 2010\u20132025": {
+    "blocks": 13190,
+    "perYear": 435.2,
+    "cycleYears": 30.3
+   },
+   "city blocks, accepted streets, widened repave definition, 2010\u20132025": {
+    "blocks": 13190,
+    "perYear": 462.2,
+    "cycleYears": 28.5
+   },
+   "city blocks, accepted streets, 2012\u20132018": {
+    "blocks": 13190,
+    "perYear": 487.7,
+    "cycleYears": 27.0
+   },
+   "city arterials, accepted, 2010\u20132025": {
+    "blocks": 3480,
+    "perYear": 121.9,
+    "cycleYears": 28.5
+   },
+   "city arterials, accepted, widened repave definition, 2010\u20132025": {
+    "blocks": 3480,
+    "perYear": 128.8,
+    "cycleYears": 27.0
+   },
+   "city collectors, accepted, 2010\u20132025": {
+    "blocks": 1391,
+    "perYear": 52.0,
+    "cycleYears": 26.8
+   },
+   "city residential streets, accepted, 2010\u20132025": {
+    "blocks": 8094,
+    "perYear": 261.2,
+    "cycleYears": 31.0
+   }
+  },
+  "gapAllBlocks": {
+   "gaps": 8319,
+   "droppedUnderOneYear": 249,
+   "medianYears": 26.2,
+   "p25": 19.6,
+   "p75": 34.9
+  },
+  "gapPlanBlocks": {
+   "gaps": 1657,
+   "droppedUnderOneYear": 31,
+   "medianYears": 26.1,
+   "p25": 19.3,
+   "p75": 33.7
+  },
+  "gapPlanBlocksSince1990": {
+   "gaps": 582,
+   "droppedUnderOneYear": 30,
+   "medianYears": 21.1,
+   "p25": 14.8,
+   "p75": 26.0
+  },
+  "planBlocks": 3077,
+  "planBlocksEverRepaved": 2434,
+  "planBlocksRepavedSince2000": 1996,
+  "planBlocksRepavedSince2010": 1507,
+  "planBlocksRepavedPerYear2010to2025": 92.1,
+  "planBlocksRepavedPerYear2021to2025": 69.4,
+  "impliedPlanCycleYears": 33.4,
+  "impliedPlanCycleYearsRecent": 44.3,
+  "cityBlocks": {
+   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
+   "queried": "2026-11-11",
+   "all": 17176,
+   "active": 16378,
+   "accepted": 13190
+  },
+  "cityBlocksRepavedPerYear2010to2025": 438.4,
+  "cityIntersectionsRepavedPerYear2010to2025": 207.5,
+  "repavedBlocks2010to2025AcceptedShare": 0.993,
+  "impliedCityCycleYears": {
+   "all": 39.2,
+   "active": 37.4,
+   "accepted": 30.1
+  },
+  "planBlocksAccepted": 2525,
+  "planBlocksByYear": {
+   "2000": 96,
+   "2001": 76,
+   "2002": 36,
+   "2003": 45,
+   "2004": 37,
+   "2005": 70,
+   "2006": 23,
+   "2007": 21,
+   "2008": 97,
+   "2009": 78,
+   "2010": 119,
+   "2011": 103,
+   "2012": 143,
+   "2013": 116,
+   "2014": 99,
+   "2015": 114,
+   "2016": 93,
+   "2017": 91,
+   "2018": 111,
+   "2019": 81,
+   "2020": 57,
+   "2021": 49,
+   "2022": 71,
+   "2023": 45,
+   "2024": 90,
+   "2025": 92,
+   "2026": 77
+  },
+  "cityBlocksByYear": {
+   "2000": 360,
+   "2001": 314,
+   "2002": 224,
+   "2003": 296,
+   "2004": 198,
+   "2005": 351,
+   "2006": 225,
+   "2007": 330,
+   "2008": 328,
+   "2009": 314,
+   "2010": 385,
+   "2011": 363,
+   "2012": 442,
+   "2013": 547,
+   "2014": 394,
+   "2015": 613,
+   "2016": 401,
+   "2017": 426,
+   "2018": 612,
+   "2019": 484,
+   "2020": 377,
+   "2021": 360,
+   "2022": 304,
+   "2023": 382,
+   "2024": 470,
+   "2025": 454,
+   "2026": 339
+  }
+ },
+ "openings": [
+  {
+   "year": 2017,
+   "agency": "Public Works",
+   "blocks": 1,
+   "miles": 0.79,
+   "milesShort": 0.79,
+   "blocksAlsoRepavedSameOrNextYear": 0
+  },
+  {
+   "year": 2023,
+   "agency": "Public Works",
+   "blocks": 9,
+   "miles": 1.39,
+   "milesShort": 1.39,
+   "blocksAlsoRepavedSameOrNextYear": 0
+  },
+  {
+   "year": 2024,
+   "agency": "Public Works",
+   "blocks": 14,
+   "miles": 1.75,
+   "milesShort": 1.75,
+   "blocksAlsoRepavedSameOrNextYear": 0
+  },
+  {
+   "year": 2025,
+   "agency": "Public Works",
+   "blocks": 46,
+   "miles": 3.94,
+   "milesShort": 1.89,
+   "blocksAlsoRepavedSameOrNextYear": 4
+  },
+  {
+   "year": 2026,
+   "agency": "Public Works",
+   "blocks": 98,
+   "miles": 14.53,
+   "milesShort": 9.85,
+   "blocksAlsoRepavedSameOrNextYear": 1
+  }
+ ],
+ "openingAgencies": {
+  "SF DPW IDC - Streets & Highways": 128,
+  "SF DPW IDC - Hydraulic": 39,
+  "SF DPW BDC - Architecture": 11,
+  "SF DPW BDC - Building Project Management": 1
+ },
+ "sinceAdoption": {
+  "from": "2025-03-04",
+  "blocks": [
+   {
+    "cnn": "8550000",
+    "date": "2025-03-04",
+    "street": "Lyell St",
+    "facility": "Shared",
+    "miles": 0.0649,
+    "grade": "already"
+   },
+   {
+    "cnn": "7093000",
+    "date": "2025-03-20",
+    "street": "Hunters Point Blvd",
+    "facility": "Separated",
+    "miles": 0.1687,
+    "grade": "already"
+   },
+   {
+    "cnn": "7094000",
+    "date": "2025-03-20",
+    "street": "Hunters Point Blvd",
+    "facility": "Separated",
+    "miles": 0.1236,
+    "grade": "already"
+   },
+   {
+    "cnn": "7095000",
+    "date": "2025-03-20",
+    "street": "Hunters Point Blvd",
+    "facility": "Separated",
+    "miles": 0.32,
+    "grade": "already"
+   },
+   {
+    "cnn": "7254000",
+    "date": "2025-03-20",
+    "street": "Innes Ave",
+    "facility": "Separated",
+    "miles": 0.2513,
+    "grade": "short"
+   },
+   {
+    "cnn": "7255000",
+    "date": "2025-03-20",
+    "street": "Innes Ave",
+    "facility": "Separated",
+    "miles": 0.1183,
+    "grade": "short"
+   },
+   {
+    "cnn": "7256000",
+    "date": "2025-03-20",
+    "street": "Innes Ave",
+    "facility": "Separated",
+    "miles": 0.0901,
+    "grade": "short"
+   },
+   {
+    "cnn": "12142000",
+    "date": "2025-03-27",
+    "street": "Steiner St",
+    "facility": "Undecided",
+    "miles": 0.1222,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "12143000",
+    "date": "2025-03-27",
+    "street": "Steiner St",
+    "facility": "Undecided",
+    "miles": 0.1233,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "13058000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1135,
+    "grade": "already"
+   },
+   {
+    "cnn": "13059000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1114,
+    "grade": "already"
+   },
+   {
+    "cnn": "13060000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.2241,
+    "grade": "already"
+   },
+   {
+    "cnn": "13061000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.0531,
+    "grade": "already"
+   },
+   {
+    "cnn": "13062000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.0468,
+    "grade": "already"
+   },
+   {
+    "cnn": "13063000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1217,
+    "grade": "already"
+   },
+   {
+    "cnn": "13064000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.2217,
+    "grade": "already"
+   },
+   {
+    "cnn": "13065000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.101,
+    "grade": "already"
+   },
+   {
+    "cnn": "13066000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.121,
+    "grade": "already"
+   },
+   {
+    "cnn": "13067000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1106,
+    "grade": "already"
+   },
+   {
+    "cnn": "13068000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1107,
+    "grade": "already"
+   },
+   {
+    "cnn": "13069000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1109,
+    "grade": "already"
+   },
+   {
+    "cnn": "13070000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.1118,
+    "grade": "already"
+   },
+   {
+    "cnn": "13071000",
+    "date": "2025-04-14",
+    "street": "Valencia St",
+    "facility": "Separated",
+    "miles": 0.2206,
+    "grade": "already"
+   },
+   {
+    "cnn": "8954000",
+    "date": "2025-04-15",
+    "street": "Mendell St",
+    "facility": "Shared",
+    "miles": 0.2257,
+    "grade": "short"
+   },
+   {
+    "cnn": "6259000",
+    "date": "2025-05-13",
+    "street": "Golden Gate Ave",
+    "facility": "Separated",
+    "miles": 0.1066,
+    "grade": "already"
+   },
+   {
+    "cnn": "2733000",
+    "date": "2025-05-21",
+    "street": "Barneveld Ave",
+    "facility": "Shared",
+    "miles": 0.0797,
+    "grade": "short"
+   },
+   {
+    "cnn": "7877000",
+    "date": "2025-05-21",
+    "street": "Kirkham St",
+    "facility": "Shared",
+    "miles": 0.1171,
+    "grade": "already"
+   },
+   {
+    "cnn": "7878000",
+    "date": "2025-05-21",
+    "street": "Kirkham St",
+    "facility": "Shared",
+    "miles": 0.1172,
+    "grade": "already"
+   },
+   {
+    "cnn": "3247000",
+    "date": "2025-07-21",
+    "street": "Brunswick St",
+    "facility": "Shared",
+    "miles": 0.0582,
+    "grade": "short"
+   },
+   {
+    "cnn": "3248000",
+    "date": "2025-07-21",
+    "street": "Brunswick St",
+    "facility": "Shared",
+    "miles": 0.0598,
+    "grade": "short"
+   },
+   {
+    "cnn": "3249000",
+    "date": "2025-07-21",
+    "street": "Brunswick St",
+    "facility": "Shared",
+    "miles": 0.0584,
+    "grade": "short"
+   },
+   {
+    "cnn": "3250000",
+    "date": "2025-07-21",
+    "street": "Brunswick St",
+    "facility": "Shared",
+    "miles": 0.0599,
+    "grade": "short"
+   },
+   {
+    "cnn": "5640000",
+    "date": "2025-07-23",
+    "street": "Foerster St",
+    "facility": "Shared",
+    "miles": 0.1115,
+    "grade": "short"
+   },
+   {
+    "cnn": "3626000",
+    "date": "2025-07-25",
+    "street": "Cambridge St",
+    "facility": "Shared",
+    "miles": 0.173,
+    "grade": "short"
+   },
+   {
+    "cnn": "10142000",
+    "date": "2025-07-31",
+    "street": "Pacific Ave",
+    "facility": "Shared",
+    "miles": 0.0389,
+    "grade": "short"
+   },
+   {
+    "cnn": "10143000",
+    "date": "2025-07-31",
+    "street": "Pacific Ave",
+    "facility": "Shared",
+    "miles": 0.1425,
+    "grade": "short"
+   },
+   {
+    "cnn": "10144000",
+    "date": "2025-07-31",
+    "street": "Pacific Ave",
+    "facility": "Shared",
+    "miles": 0.0911,
+    "grade": "short"
+   },
+   {
+    "cnn": "10145000",
+    "date": "2025-07-31",
+    "street": "Pacific Ave",
+    "facility": "Shared",
+    "miles": 0.0914,
+    "grade": "short"
+   },
+   {
+    "cnn": "10146000",
+    "date": "2025-07-31",
+    "street": "Pacific Ave",
+    "facility": "Shared",
+    "miles": 0.1823,
+    "grade": "short"
+   },
+   {
+    "cnn": "11715000",
+    "date": "2025-07-31",
+    "street": "Scott St",
+    "facility": "Shared",
+    "miles": 0.1367,
+    "grade": "short"
+   },
+   {
+    "cnn": "7471000",
+    "date": "2025-08-25",
+    "street": "Jennings St",
+    "facility": "Separated",
+    "miles": 0.2611,
+    "grade": "short"
+   },
+   {
+    "cnn": "2190000",
+    "date": "2025-09-04",
+    "street": "Alhambra St",
+    "facility": "Shared",
+    "miles": 0.2345,
+    "grade": "short"
+   },
+   {
+    "cnn": "8019000",
+    "date": "2025-09-15",
+    "street": "Lake St",
+    "facility": "Shared",
+    "miles": 0.1172,
+    "grade": "already"
+   },
+   {
+    "cnn": "8025000",
+    "date": "2025-09-15",
+    "street": "Lake St",
+    "facility": "Shared",
+    "miles": 0.1172,
+    "grade": "already"
+   },
+   {
+    "cnn": "8026000",
+    "date": "2025-09-15",
+    "street": "Lake St",
+    "facility": "Shared",
+    "miles": 0.117,
+    "grade": "already"
+   },
+   {
+    "cnn": "8027000",
+    "date": "2025-09-15",
+    "street": "Lake St",
+    "facility": "Shared",
+    "miles": 0.1171,
+    "grade": "already"
+   },
+   {
+    "cnn": "10909000",
+    "date": "2025-09-23",
+    "street": "Randall St",
+    "facility": "Shared",
+    "miles": 0.1179,
+    "grade": "short"
+   },
+   {
+    "cnn": "10910000",
+    "date": "2025-09-23",
+    "street": "Randall St",
+    "facility": "Shared",
+    "miles": 0.1142,
+    "grade": "short"
+   },
+   {
+    "cnn": "11011002",
+    "date": "2025-09-23",
+    "street": "Richland Ave",
+    "facility": "Shared L3",
+    "miles": 0.2486,
+    "grade": "short"
+   },
+   {
+    "cnn": "13520000",
+    "date": "2025-09-23",
+    "street": "Webster St",
+    "facility": "Shared",
+    "miles": 0.0652,
+    "grade": "short"
+   },
+   {
+    "cnn": "13521000",
+    "date": "2025-09-23",
+    "street": "Webster St",
+    "facility": "Shared",
+    "miles": 0.0651,
+    "grade": "short"
+   },
+   {
+    "cnn": "2189000",
+    "date": "2025-09-23",
+    "street": "Alhambra St",
+    "facility": "Shared",
+    "miles": 0.0971,
+    "grade": "short"
+   },
+   {
+    "cnn": "4770000",
+    "date": "2025-09-23",
+    "street": "Diamond St",
+    "facility": "Shared",
+    "miles": 0.0351,
+    "grade": "short"
+   },
+   {
+    "cnn": "6887000",
+    "date": "2025-09-23",
+    "street": "Hermann St",
+    "facility": "Shared",
+    "miles": 0.0884,
+    "grade": "short"
+   },
+   {
+    "cnn": "393000",
+    "date": "2025-10-03",
+    "street": "8th Ave",
+    "facility": "Shared",
+    "miles": 0.2593,
+    "grade": "short"
+   },
+   {
+    "cnn": "12741000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.106,
+    "grade": "short"
+   },
+   {
+    "cnn": "12742000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0975,
+    "grade": "short"
+   },
+   {
+    "cnn": "12743000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0982,
+    "grade": "short"
+   },
+   {
+    "cnn": "12744000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0982,
+    "grade": "short"
+   },
+   {
+    "cnn": "12745000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0983,
+    "grade": "short"
+   },
+   {
+    "cnn": "12746000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0982,
+    "grade": "short"
+   },
+   {
+    "cnn": "12747000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.1054,
+    "grade": "short"
+   },
+   {
+    "cnn": "12748000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.1045,
+    "grade": "short"
+   },
+   {
+    "cnn": "12749000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0981,
+    "grade": "short"
+   },
+   {
+    "cnn": "12750000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0922,
+    "grade": "short"
+   },
+   {
+    "cnn": "12751000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.0897,
+    "grade": "short"
+   },
+   {
+    "cnn": "12752000",
+    "date": "2025-10-09",
+    "street": "Turk Blvd",
+    "facility": "Separated",
+    "miles": 0.1903,
+    "grade": "short"
+   },
+   {
+    "cnn": "3689000",
+    "date": "2025-10-29",
+    "street": "Cardenas Ave",
+    "facility": "Shared-use Path",
+    "miles": 0.1157,
+    "grade": "short"
+   },
+   {
+    "cnn": "7087000",
+    "date": "2025-10-29",
+    "street": "Hugo St",
+    "facility": "Shared",
+    "miles": 0.1172,
+    "grade": "short"
+   },
+   {
+    "cnn": "7703000",
+    "date": "2025-10-29",
+    "street": "Junipero Serra Blvd",
+    "facility": "Shared",
+    "miles": 0.0997,
+    "grade": "short"
+   },
+   {
+    "cnn": "4654000",
+    "date": "2025-11-10",
+    "street": "De Long St",
+    "facility": "Shared",
+    "miles": 0.1635,
+    "grade": "short"
+   },
+   {
+    "cnn": "13267000",
+    "date": "2025-12-02",
+    "street": "Vicente St",
+    "facility": "Shared",
+    "miles": 0.1174,
+    "grade": "already"
+   },
+   {
+    "cnn": "13268000",
+    "date": "2025-12-02",
+    "street": "Vicente St",
+    "facility": "Shared",
+    "miles": 0.1157,
+    "grade": "already"
+   },
+   {
+    "cnn": "322000",
+    "date": "2025-12-02",
+    "street": "6th Ave",
+    "facility": "Undecided",
+    "miles": 0.1295,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "11072000",
+    "date": "2025-12-08",
+    "street": "Rivera St",
+    "facility": "Shared",
+    "miles": 0.1174,
+    "grade": "short"
+   },
+   {
+    "cnn": "1629000",
+    "date": "2025-12-10",
+    "street": "29th St",
+    "facility": "Shared L3",
+    "miles": 0.0758,
+    "grade": "already"
+   },
+   {
+    "cnn": "6998101",
+    "date": "2025-12-10",
+    "street": "Holloway Ave",
+    "facility": "Separated",
+    "miles": 0.2366,
+    "grade": "short"
+   },
+   {
+    "cnn": "6998202",
+    "date": "2025-12-10",
+    "street": "Holloway Ave",
+    "facility": "Separated",
+    "miles": 0.0347,
+    "grade": "short"
+   },
+   {
+    "cnn": "7622000",
+    "date": "2025-12-10",
+    "street": "Juan Bautista Cir",
+    "facility": "Shared",
+    "miles": 0.0277,
+    "grade": "short"
+   },
+   {
+    "cnn": "7623000",
+    "date": "2025-12-10",
+    "street": "Juan Bautista Cir",
+    "facility": "Shared",
+    "miles": 0.0211,
+    "grade": "short"
+   },
+   {
+    "cnn": "7625000",
+    "date": "2025-12-10",
+    "street": "Juan Bautista Cir",
+    "facility": "Shared",
+    "miles": 0.0208,
+    "grade": "short"
+   },
+   {
+    "cnn": "7626000",
+    "date": "2025-12-10",
+    "street": "Juan Bautista Cir",
+    "facility": "Shared",
+    "miles": 0.028,
+    "grade": "short"
+   },
+   {
+    "cnn": "7627000",
+    "date": "2025-12-10",
+    "street": "Juan Bautista Cir",
+    "facility": "Shared",
+    "miles": 0.0277,
+    "grade": "short"
+   },
+   {
+    "cnn": "7628000",
+    "date": "2025-12-10",
+    "street": "Juan Bautista Cir",
+    "facility": "Shared",
+    "miles": 0.0219,
+    "grade": "short"
+   },
+   {
+    "cnn": "10768000",
+    "date": "2025-12-16",
+    "street": "Presidio Ave",
+    "facility": "Undecided",
+    "miles": 0.1302,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10769000",
+    "date": "2025-12-16",
+    "street": "Presidio Ave",
+    "facility": "Undecided",
+    "miles": 0.1305,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10770000",
+    "date": "2025-12-16",
+    "street": "Presidio Ave",
+    "facility": "Undecided",
+    "miles": 0.143,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "4997000",
+    "date": "2025-12-19",
+    "street": "Duncan St",
+    "facility": "Shared",
+    "miles": 0.1476,
+    "grade": "short"
+   },
+   {
+    "cnn": "6199000",
+    "date": "2025-12-19",
+    "street": "Girard St",
+    "facility": "Shared",
+    "miles": 0.1742,
+    "grade": "short"
+   },
+   {
+    "cnn": "5682000",
+    "date": "2026-01-05",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0937,
+    "grade": "already"
+   },
+   {
+    "cnn": "5678000",
+    "date": "2026-01-06",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.239,
+    "grade": "already"
+   },
+   {
+    "cnn": "5679000",
+    "date": "2026-01-06",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0948,
+    "grade": "already"
+   },
+   {
+    "cnn": "5680000",
+    "date": "2026-01-06",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0925,
+    "grade": "already"
+   },
+   {
+    "cnn": "5681000",
+    "date": "2026-01-06",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0919,
+    "grade": "already"
+   },
+   {
+    "cnn": "6599000",
+    "date": "2026-01-16",
+    "street": "Mrs. Jackson Way",
+    "facility": "Undecided",
+    "miles": 0.2326,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "4072000",
+    "date": "2026-03-04",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.196,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "4074000",
+    "date": "2026-03-04",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.0682,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "13681000",
+    "date": "2026-03-06",
+    "street": "Winston Dr",
+    "facility": "Separated",
+    "miles": 0.0352,
+    "grade": "short"
+   },
+   {
+    "cnn": "13682000",
+    "date": "2026-03-06",
+    "street": "Winston Dr",
+    "facility": "Separated",
+    "miles": 0.1059,
+    "grade": "short"
+   },
+   {
+    "cnn": "13683000",
+    "date": "2026-03-06",
+    "street": "Winston Dr",
+    "facility": "Separated",
+    "miles": 0.0969,
+    "grade": "short"
+   },
+   {
+    "cnn": "13684000",
+    "date": "2026-03-06",
+    "street": "Winston Dr",
+    "facility": "Separated",
+    "miles": 0.0755,
+    "grade": "short"
+   },
+   {
+    "cnn": "13689000",
+    "date": "2026-03-06",
+    "street": "Winston Dr",
+    "facility": "Separated",
+    "miles": 0.6561,
+    "grade": "received"
+   },
+   {
+    "cnn": "2312000",
+    "date": "2026-03-06",
+    "street": "Anza St",
+    "facility": "Shared",
+    "miles": 0.1042,
+    "grade": "already"
+   },
+   {
+    "cnn": "2313000",
+    "date": "2026-03-06",
+    "street": "Anza St",
+    "facility": "Shared",
+    "miles": 0.1149,
+    "grade": "already"
+   },
+   {
+    "cnn": "8009000",
+    "date": "2026-03-06",
+    "street": "Lake St",
+    "facility": "Shared",
+    "miles": 0.123,
+    "grade": "already"
+   },
+   {
+    "cnn": "4069000",
+    "date": "2026-03-23",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.1264,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "4070000",
+    "date": "2026-03-23",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.0707,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "4071000",
+    "date": "2026-03-23",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.2874,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "8285000",
+    "date": "2026-03-30",
+    "street": "Leese St",
+    "facility": "Shared L3",
+    "miles": 0.1118,
+    "grade": "short"
+   },
+   {
+    "cnn": "12881000",
+    "date": "2026-04-06",
+    "street": "University St",
+    "facility": "Shared",
+    "miles": 0.1742,
+    "grade": "short"
+   },
+   {
+    "cnn": "11879000",
+    "date": "2026-04-28",
+    "street": "Silliman St",
+    "facility": "Shared",
+    "miles": 0.1135,
+    "grade": "short"
+   },
+   {
+    "cnn": "13403000",
+    "date": "2026-05-15",
+    "street": "Washington St",
+    "facility": "Separated",
+    "miles": 0.1764,
+    "grade": "already"
+   },
+   {
+    "cnn": "11071000",
+    "date": "2026-06-16",
+    "street": "Rivera St",
+    "facility": "Shared",
+    "miles": 0.1172,
+    "grade": "short"
+   },
+   {
+    "cnn": "8023000",
+    "date": "2026-07-21",
+    "street": "Lake St",
+    "facility": "Shared",
+    "miles": 0.1234,
+    "grade": "already"
+   },
+   {
+    "cnn": "5660000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.171,
+    "grade": "already"
+   },
+   {
+    "cnn": "5661000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.1725,
+    "grade": "already"
+   },
+   {
+    "cnn": "5662000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.2229,
+    "grade": "already"
+   },
+   {
+    "cnn": "5663000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.1214,
+    "grade": "already"
+   },
+   {
+    "cnn": "5664000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.3439,
+    "grade": "already"
+   },
+   {
+    "cnn": "5665000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.1613,
+    "grade": "received"
+   },
+   {
+    "cnn": "5666000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.1828,
+    "grade": "already"
+   },
+   {
+    "cnn": "5667000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0827,
+    "grade": "received"
+   },
+   {
+    "cnn": "5668000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0441,
+    "grade": "received"
+   },
+   {
+    "cnn": "5669000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0445,
+    "grade": "already"
+   },
+   {
+    "cnn": "5670000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0449,
+    "grade": "already"
+   },
+   {
+    "cnn": "5671000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0431,
+    "grade": "already"
+   },
+   {
+    "cnn": "5672000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0846,
+    "grade": "already"
+   },
+   {
+    "cnn": "5673000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0834,
+    "grade": "already"
+   },
+   {
+    "cnn": "5674000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0717,
+    "grade": "already"
+   },
+   {
+    "cnn": "5675000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0156,
+    "grade": "already"
+   },
+   {
+    "cnn": "5676000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0825,
+    "grade": "already"
+   },
+   {
+    "cnn": "5677000",
+    "date": "2026-07-27",
+    "street": "Folsom St",
+    "facility": "Separated",
+    "miles": 0.0898,
+    "grade": "already"
+   },
+   {
+    "cnn": "10627000",
+    "date": "2026-07-28",
+    "street": "Post St",
+    "facility": "Undecided",
+    "miles": 0.1715,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10631000",
+    "date": "2026-07-28",
+    "street": "Post St",
+    "facility": "Undecided",
+    "miles": 0.0714,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10632000",
+    "date": "2026-07-28",
+    "street": "Post St",
+    "facility": "Undecided",
+    "miles": 0.0207,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10633000",
+    "date": "2026-07-28",
+    "street": "Post St",
+    "facility": "Undecided",
+    "miles": 0.0227,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10634000",
+    "date": "2026-07-28",
+    "street": "Post St",
+    "facility": "Undecided",
+    "miles": 0.0683,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "10635000",
+    "date": "2026-07-28",
+    "street": "Post St",
+    "facility": "Undecided",
+    "miles": 0.1816,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "6553000",
+    "date": "2026-07-28",
+    "street": "Grove St",
+    "facility": "Shared",
+    "miles": 0.1821,
+    "grade": "already"
+   },
+   {
+    "cnn": "6554000",
+    "date": "2026-07-28",
+    "street": "Grove St",
+    "facility": "Shared",
+    "miles": 0.1841,
+    "grade": "already"
+   },
+   {
+    "cnn": "4980000",
+    "date": "2026-08-11",
+    "street": "Duboce Ave",
+    "facility": "Separated",
+    "miles": 0.0856,
+    "grade": "short"
+   },
+   {
+    "cnn": "4981000",
+    "date": "2026-08-11",
+    "street": "Duboce Ave",
+    "facility": "Separated",
+    "miles": 0.0741,
+    "grade": "short"
+   },
+   {
+    "cnn": "4982000",
+    "date": "2026-08-11",
+    "street": "Duboce Ave",
+    "facility": "Separated",
+    "miles": 0.0833,
+    "grade": "short"
+   },
+   {
+    "cnn": "4983000",
+    "date": "2026-08-11",
+    "street": "Duboce Ave",
+    "facility": "Separated",
+    "miles": 0.19,
+    "grade": "short"
+   },
+   {
+    "cnn": "3469000",
+    "date": "2026-08-31",
+    "street": "Cabrillo St",
+    "facility": "Shared",
+    "miles": 0.1173,
+    "grade": "already"
+   },
+   {
+    "cnn": "7992101",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.0446,
+    "grade": "short"
+   },
+   {
+    "cnn": "7992201",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.0135,
+    "grade": "already"
+   },
+   {
+    "cnn": "7992202",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.0724,
+    "grade": "already"
+   },
+   {
+    "cnn": "7993000",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.0691,
+    "grade": "already"
+   },
+   {
+    "cnn": "7994000",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.0745,
+    "grade": "already"
+   },
+   {
+    "cnn": "7995000",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.1165,
+    "grade": "already"
+   },
+   {
+    "cnn": "7996000",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.1095,
+    "grade": "already"
+   },
+   {
+    "cnn": "7997101",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.0532,
+    "grade": "short"
+   },
+   {
+    "cnn": "7997201",
+    "date": "2026-08-31",
+    "street": "Laguna Honda Blvd",
+    "facility": "Shared",
+    "miles": 0.1065,
+    "grade": "already"
+   },
+   {
+    "cnn": "4065000",
+    "date": "2026-09-03",
+    "street": "Claremont Blvd",
+    "facility": "Shared",
+    "miles": 0.1363,
+    "grade": "already"
+   },
+   {
+    "cnn": "12656000",
+    "date": "2026-10-07",
+    "street": "Townsend St",
+    "facility": "Undecided",
+    "miles": 0.0831,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "12657000",
+    "date": "2026-10-07",
+    "street": "Townsend St",
+    "facility": "Undecided",
+    "miles": 0.177,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "12658000",
+    "date": "2026-10-07",
+    "street": "Townsend St",
+    "facility": "Undecided",
+    "miles": 0.0832,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "12666000",
+    "date": "2026-10-07",
+    "street": "Townsend St",
+    "facility": "Separated",
+    "miles": 0.343,
+    "grade": "already"
+   },
+   {
+    "cnn": "12667000",
+    "date": "2026-10-07",
+    "street": "Townsend St",
+    "facility": "Separated",
+    "miles": 0.0356,
+    "grade": "short"
+   },
+   {
+    "cnn": "2468000",
+    "date": "2026-10-07",
+    "street": "Cesar Chavez St",
+    "facility": "Separated",
+    "miles": 0.1011,
+    "grade": "short"
+   },
+   {
+    "cnn": "2469000",
+    "date": "2026-10-07",
+    "street": "Cesar Chavez St",
+    "facility": "Separated",
+    "miles": 0.1063,
+    "grade": "short"
+   },
+   {
+    "cnn": "2470000",
+    "date": "2026-10-07",
+    "street": "Cesar Chavez St",
+    "facility": "Separated",
+    "miles": 0.1044,
+    "grade": "short"
+   },
+   {
+    "cnn": "4840000",
+    "date": "2026-10-07",
+    "street": "Division St",
+    "facility": "Separated",
+    "miles": 0.0209,
+    "grade": "short"
+   },
+   {
+    "cnn": "4841000",
+    "date": "2026-10-07",
+    "street": "Division St",
+    "facility": "Separated",
+    "miles": 0.0656,
+    "grade": "short"
+   },
+   {
+    "cnn": "2191000",
+    "date": "2026-10-29",
+    "street": "Alhambra St",
+    "facility": "Shared",
+    "miles": 0.0948,
+    "grade": "short"
+   }
+  ]
+ }
+}

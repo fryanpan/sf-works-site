@@ -1,0 +1,694 @@
+{
+ "body": "rec-park-commission",
+ "name": "Recreation and Park Commission",
+ "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91",
+ "generated": "2026-11-10",
+ "since": "2019-01-01",
+ "range": [
+  "2019-01-17",
+  "2026-10-15"
+ ],
+ "listed": 96,
+ "held": 96,
+ "mirrored": 96,
+ "missing": 0,
+ "missingShare": 0.0,
+ "items": 2224,
+ "notes": [
+  "Items carry titles only. Granicus does not publish the vote."
+ ],
+ "meetings": [
+  {
+   "date": "2019-01-17",
+   "id": "g91-32209",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=32209",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-02-21",
+   "id": "g91-32476",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=32476",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-21",
+   "id": "g91-32751",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=32751",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-18",
+   "id": "g91-32939",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=32939",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-16",
+   "id": "g91-33162",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=33162",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-20",
+   "id": "g91-33496",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=33496",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-07-18",
+   "id": "g91-33682",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=33682",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-08-15",
+   "id": "g91-33823",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=33823",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-19",
+   "id": "g91-34065",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34065",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-17",
+   "id": "g91-34304",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34304",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-17",
+   "id": "g91-34306",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34306",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-21",
+   "id": "g91-34576",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34576",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-19",
+   "id": "g91-34781",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34781",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-16",
+   "id": "g91-34942",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34942",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-20",
+   "id": "g91-35239",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=35239",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-16",
+   "id": "g91-35610",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=35610",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-05-21",
+   "id": "g91-35805",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=35805",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-18",
+   "id": "g91-35982",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=35982",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-16",
+   "id": "g91-36190",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=36190",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-08-20",
+   "id": "g91-36428",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=36428",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-22",
+   "id": "g91-36926",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=36926",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-19",
+   "id": "g91-37127",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=37127",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-17",
+   "id": "g91-37355",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=37355",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-21",
+   "id": "g91-37590",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=37590",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-18",
+   "id": "g91-37830",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=37830",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-18",
+   "id": "g91-38068",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38068",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-15",
+   "id": "g91-38264",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38264",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-20",
+   "id": "g91-38594",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38594",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-17",
+   "id": "g91-38812",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38812",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-15",
+   "id": "g91-38973",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=38973",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-19",
+   "id": "g91-39224",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=39224",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-16",
+   "id": "g91-39376",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=39376",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-21",
+   "id": "g91-39670",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=39670",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-18",
+   "id": "g91-39907",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=39907",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-12-16",
+   "id": "g91-40120",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=40120",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-20",
+   "id": "g91-40334",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=40334",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-17",
+   "id": "g91-40596",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=40596",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-17",
+   "id": "g91-40814",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=40814",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-21",
+   "id": "g91-41078",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=41078",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-19",
+   "id": "g91-41323",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=41323",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-16",
+   "id": "g91-41512",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=41512",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-07-21",
+   "id": "g91-41740",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=41740",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-08-18",
+   "id": "g91-41881",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=41881",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-15",
+   "id": "g91-42035",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=42035",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-20",
+   "id": "g91-42314",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=42314",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-17",
+   "id": "g91-42515",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=42515",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-15",
+   "id": "g91-42672",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=42672",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-19",
+   "id": "g91-42799",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=42799",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-16",
+   "id": "g91-43027",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=43027",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-16",
+   "id": "g91-43215",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=43215",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-20",
+   "id": "g91-43470",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=43470",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-18",
+   "id": "g91-43698",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=43698",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-15",
+   "id": "g91-43926",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=43926",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-20",
+   "id": "g91-44131",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=44131",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-17",
+   "id": "g91-44262",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=44262",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-21",
+   "id": "g91-44508",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=44508",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-19",
+   "id": "g91-44703",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=44703",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-14",
+   "id": "g91-45118",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45118",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-21",
+   "id": "g91-45117",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45117",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-18",
+   "id": "g91-45232",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45232",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-15",
+   "id": "g91-45459",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45459",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-21",
+   "id": "g91-45719",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45719",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-18",
+   "id": "g91-45912",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45912",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-09",
+   "id": "g91-46100",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46100",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-16",
+   "id": "g91-46160",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46160",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-20",
+   "id": "g91-46409",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46409",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-18",
+   "id": "g91-46588",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46588",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-08-15",
+   "id": "g91-46709",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46709",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-19",
+   "id": "g91-46958",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46958",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-17",
+   "id": "g91-47282",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=47282",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-21",
+   "id": "g91-47785",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=47785",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-19",
+   "id": "g91-48175",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=48175",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-16",
+   "id": "g91-48429",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=48429",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-20",
+   "id": "g91-48758",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=48758",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-20",
+   "id": "g91-49242",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=49242",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-09",
+   "id": "g91-49472",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=49472",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-17",
+   "id": "g91-49547",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=49547",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-15",
+   "id": "g91-49885",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=49885",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-09",
+   "id": "g91-50166",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=50166",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-17",
+   "id": "g91-50442",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=50442",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-17",
+   "id": "g91-50446",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=50446",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-08-21",
+   "id": "g91-50614",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=50614",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-18",
+   "id": "g91-50774",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=50774",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-16",
+   "id": "g91-50955",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=50955",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-20",
+   "id": "g91-51202",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=51202",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-18",
+   "id": "g91-51412",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=51412",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-15",
+   "id": "g91-51579",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=51579",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-19",
+   "id": "g91-51836",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=51836",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-19",
+   "id": "g91-52036",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52036",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-16",
+   "id": "g91-52213",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52213",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-17",
+   "id": "g91-52221",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52221",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-21",
+   "id": "g91-52489",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52489",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-18",
+   "id": "g91-52659",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52659",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-16",
+   "id": "g91-52870",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=52870",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-17",
+   "id": "g91-53175",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53175",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-15",
+   "id": "g91-53359",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53359",
+   "outcome": "mirrored"
+  }
+ ]
+}

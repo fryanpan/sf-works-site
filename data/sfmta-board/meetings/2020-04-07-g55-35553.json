@@ -1,0 +1,103 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-04-07",
+ "id": "g55-35553",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35553",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21729"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the following traffic modifications",
+   "text": "Approving the following traffic modifications: A. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME ― Mission Street, west side, from Admiral Avenue to 18 feet northerly; Geneva Avenue, south side, from Athens Street to 22 feet easterly; Geneva Avenue, south side, from Moscow Street to 147 feet easterly. B. ESTABLISH – RED ZONE ― Mission Street, east side, from Seneca Avenue northern crosswalk to 17 feet southerly; Geneva Avenue, north side, from Prague Street western crosswalk to 20 feet east of Prague Street. C. ESTABLISH – GENERAL METERED PARKING, 2-HOUR TIME LIMIT, 8 AM TO 6 PM, MONDAY THROUGH SATURDAY ― France Avenue, north side, from 20 feet to 82 feet east of Mission Street; France Avenue, south side, from 4 feet to 82 feet east of Mission Street. D. ESTABLISH – GENERAL METERED PARKING, 2-HOUR TIME LIMIT, 8 AM TO 6 PM, MONDAY THROUGH SATURDAY ― London Street, west side, from 10 feet to 70 feet north of Geneva Avenue. E. ESTABLISH – 2-HOUR PARKING, 8 AM TO 6 PM, MONDAY THROUGH SATURDAY ― London Street, west side, from Amazon Avenue to 100 feet north of Geneva Avenue. F. ESTABLISH – WHITE PASSENGER LOADING ZONE, DURING POSTED EVENTS ― Mission Street, east side, from Seneca Avenue to 44 feet northerly. G. ESTABLISH – BUS ZONE ― Mission Street, west side, from Ocean Avenue to Persia Avenue, Geneva Avenue, north side, from Naples Street to 101 feet westerly. H. ESTABLISH – NO LEFT TURN, ANY TIME ― Mission Street southbound onto Ney Street. I. RESCIND – METERED GREEN ZONE, 15-MINUT",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 200407-034)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the SFMTA to use a joint development procurement method for the Potrero Yard Modernization Project.",
+   "text": "Authorizing the SFMTA to use a joint development procurement method for the Potrero Yard Modernization Project. (Explanatory documents include a staff report and resolution.)",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "severed": true,
+   "decision": "ADOPTED — 7 ayes (Resolution 200407-035)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving the elimination of the 83X Mid-Market Express and the Title VI Service Equity Analysis of the impacts of eliminating the 83X Mid-Market Express Service.",
+   "text": "Approving the elimination of the 83X Mid-Market Express and the Title VI Service Equity Analysis of the impacts of eliminating the 83X Mid-Market Express Service. (Explanatory documents include a staff report, resolution and analysis. The proposed action is the Approval Action as defined by S.F. Administrative Code Chapter 31.) RESOLUTION 200407-036",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 200407-036)"
+  },
+  {
+   "no": "10.4",
+   "title": "Adopting the Muni Equity Strategy Report for Fiscal Years 2021 and 2022.",
+   "text": "Adopting the Muni Equity Strategy Report for Fiscal Years 2021 and 2022. (Explanatory documents include a staff report, resolution and report.) RESOLUTION 200407-037 No public comment",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 200407-037)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the San Francisco Municipal Transportation Agency’s Fiscal Year 2021-2025"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion of theFY 2021 and FY 2022 Operating and Capital Budget"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "13",
+   "title": "CLOSED SESSION"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

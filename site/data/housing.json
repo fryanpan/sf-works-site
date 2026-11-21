@@ -1,0 +1,379 @@
+{
+ "queriedAt": "2026-09-23",
+ "validThrough": {
+  "date": "2025-12-31",
+  "limitedBy": "HCD permit counts, from Annual Progress Reports",
+  "why": "The state's permit counts are assembled from reports filed each April for the previous calendar year, so they stop at the end of that year. A permit issued since then is not in the SB 423 figures, however recently the file was published.",
+  "sources": [
+   {
+    "label": "HCD permit counts, from Annual Progress Reports",
+    "through": "2025-12-31",
+    "binding": true
+   },
+   {
+    "label": "Housing Production",
+    "through": "2026-09-11",
+    "binding": false
+   },
+   {
+    "label": "Eviction Notices",
+    "through": "2026-09-16",
+    "binding": false
+   }
+  ]
+ },
+ "coverage": {
+  "production": {
+   "through": "2026-09-11",
+   "published": null,
+   "observed": "2026-09-11"
+  },
+  "evictions": {
+   "through": "2026-09-16",
+   "published": "2026-09-22",
+   "observed": "2026-09-16"
+  },
+  "apr": "2025-12-31"
+ },
+ "period": {
+  "start": 2016,
+  "end": 2025
+ },
+ "floor": 33,
+ "official": {
+  "report": "Housing Balance Report No. 20",
+  "published": "2025-04",
+  "period": "2015 Q1 – 2024 Q4",
+  "withoutPublicHousing": 24.9,
+  "withPublicHousing": 33.5
+ },
+ "recomputed": {
+  "balance": 19.9,
+  "affordableUnits": 9924,
+  "protectedUnitsLost": 2648,
+  "netNewUnits": 36645,
+  "permitted": null,
+  "coversCompletedHalfOnly": true
+ },
+ "byDistrict": [
+  {
+   "district": 1,
+   "net": 630,
+   "affordable": 102,
+   "lost": 349,
+   "affordableShare": 16.2,
+   "balance": -39.2
+  },
+  {
+   "district": 2,
+   "net": 1632,
+   "affordable": 154,
+   "lost": 136,
+   "affordableShare": 9.4,
+   "balance": 1.1
+  },
+  {
+   "district": 3,
+   "net": 1231,
+   "affordable": 464,
+   "lost": 136,
+   "affordableShare": 37.7,
+   "balance": 26.6
+  },
+  {
+   "district": 4,
+   "net": 471,
+   "affordable": 142,
+   "lost": 339,
+   "affordableShare": 30.1,
+   "balance": -41.8
+  },
+  {
+   "district": 5,
+   "net": 3364,
+   "affordable": 920,
+   "lost": 107,
+   "affordableShare": 27.3,
+   "balance": 24.2
+  },
+  {
+   "district": 6,
+   "net": 19244,
+   "affordable": 4441,
+   "lost": 113,
+   "affordableShare": 23.1,
+   "balance": 22.5
+  },
+  {
+   "district": 7,
+   "net": 611,
+   "affordable": 109,
+   "lost": 154,
+   "affordableShare": 17.8,
+   "balance": -7.4
+  },
+  {
+   "district": 8,
+   "net": 1144,
+   "affordable": 221,
+   "lost": 309,
+   "affordableShare": 19.3,
+   "balance": -7.7
+  },
+  {
+   "district": 9,
+   "net": 2230,
+   "affordable": 956,
+   "lost": 438,
+   "affordableShare": 42.9,
+   "balance": 23.2
+  },
+  {
+   "district": 10,
+   "net": 4917,
+   "affordable": 2011,
+   "lost": 220,
+   "affordableShare": 40.9,
+   "balance": 36.4
+  },
+  {
+   "district": 11,
+   "net": 1171,
+   "affordable": 404,
+   "lost": 346,
+   "affordableShare": 34.5,
+   "balance": 5
+  }
+ ],
+ "lostByYear": [
+  {
+   "year": 2016,
+   "lost": 569
+  },
+  {
+   "year": 2017,
+   "lost": 503
+  },
+  {
+   "year": 2018,
+   "lost": 399
+  },
+  {
+   "year": 2019,
+   "lost": 333
+  },
+  {
+   "year": 2020,
+   "lost": 118
+  },
+  {
+   "year": 2021,
+   "lost": 118
+  },
+  {
+   "year": 2022,
+   "lost": 238
+  },
+  {
+   "year": 2023,
+   "lost": 98
+  },
+  {
+   "year": 2024,
+   "lost": 122
+  },
+  {
+   "year": 2025,
+   "lost": 150
+  }
+ ],
+ "demolitions": {
+  "notices": 110,
+  "negativeNetRows": 399,
+  "negativeNetUnits": 1099
+ },
+ "report20": {
+  "from": 2015,
+  "to": 2024,
+  "affordableCompleted": 10413,
+  "affordablePermitted": 13669,
+  "protectedUnitsLost": 2722,
+  "netCompleted": 36380,
+  "netPermitted": 49366,
+  "lostByGround": {
+   "owner_move_in": 2535,
+   "ellis_act_withdrawal": 116,
+   "demolition": 68,
+   "condo_conversion": 3
+  },
+  "lostByDistrict": {
+   "1": 357,
+   "2": 191,
+   "3": 131,
+   "4": 341,
+   "5": 225,
+   "6": 78,
+   "7": 149,
+   "8": 340,
+   "9": 376,
+   "10": 226,
+   "11": 308
+  },
+  "recomputed": {
+   "affordable": 8802,
+   "net": 36216,
+   "lost": 3145,
+   "lostByGround": {
+    "owner_move_in": 1872,
+    "condo_conversion": 48,
+    "demolition": 172,
+    "ellis_act_withdrawal": 1053
+   },
+   "balance": 15.6
+  },
+  "completedOnlyBalance": 21.1
+ },
+ "byYear": [
+  {
+   "year": 2016,
+   "net": 2917,
+   "affordable": 562,
+   "affordableByBmrYear": 562,
+   "marketRate": 2355,
+   "affordableShare": 19.3
+  },
+  {
+   "year": 2017,
+   "net": 5325,
+   "affordable": 1180,
+   "affordableByBmrYear": 1180,
+   "marketRate": 4145,
+   "affordableShare": 22.2
+  },
+  {
+   "year": 2018,
+   "net": 3618,
+   "affordable": 757,
+   "affordableByBmrYear": 807,
+   "marketRate": 2861,
+   "affordableShare": 20.9
+  },
+  {
+   "year": 2019,
+   "net": 4218,
+   "affordable": 1102,
+   "affordableByBmrYear": 1238,
+   "marketRate": 3116,
+   "affordableShare": 26.1
+  },
+  {
+   "year": 2020,
+   "net": 4865,
+   "affordable": 587,
+   "affordableByBmrYear": 730,
+   "marketRate": 4278,
+   "affordableShare": 12.1
+  },
+  {
+   "year": 2021,
+   "net": 5590,
+   "affordable": 1520,
+   "affordableByBmrYear": 1209,
+   "marketRate": 4070,
+   "affordableShare": 27.2
+  },
+  {
+   "year": 2022,
+   "net": 2651,
+   "affordable": 780,
+   "affordableByBmrYear": 928,
+   "marketRate": 1871,
+   "affordableShare": 29.4
+  },
+  {
+   "year": 2023,
+   "net": 2963,
+   "affordable": 895,
+   "affordableByBmrYear": 729,
+   "marketRate": 2068,
+   "affordableShare": 30.2
+  },
+  {
+   "year": 2024,
+   "net": 1464,
+   "affordable": 757,
+   "affordableByBmrYear": 977,
+   "marketRate": 707,
+   "affordableShare": 51.7
+  },
+  {
+   "year": 2025,
+   "net": 3034,
+   "affordable": 1784,
+   "affordableByBmrYear": 1564,
+   "marketRate": 1250,
+   "affordableShare": 58.8
+  },
+  {
+   "year": 2026,
+   "net": 362,
+   "affordable": 283,
+   "affordableByBmrYear": 283,
+   "marketRate": 79,
+   "affordableShare": 78.2
+  }
+ ],
+ "sb423": {
+  "planningPeriod": "01/31/2023 - 01/31/2031",
+  "checkYear": 2027,
+  "eighths": 4,
+  "sharePct": 50,
+  "aprYear": 2026,
+  "categories": [
+   {
+    "label": "Very low",
+    "permitted": 1685,
+    "rhna": 20867,
+    "pct": 8.1,
+    "needBy": 10434,
+    "shortBy": 8749
+   },
+   {
+    "label": "Low",
+    "permitted": 1215,
+    "rhna": 12014,
+    "pct": 10.1,
+    "needBy": 6007,
+    "shortBy": 4792
+   },
+   {
+    "label": "Moderate",
+    "permitted": 971,
+    "rhna": 13717,
+    "pct": 7.1,
+    "needBy": 6859,
+    "shortBy": 5888
+   },
+   {
+    "label": "Above moderate",
+    "permitted": 2215,
+    "rhna": 35471,
+    "pct": 6.2,
+    "needBy": 17736,
+    "shortBy": 15521
+   }
+  ],
+  "permittedTotal": 6086,
+  "rhnaTotal": 82069
+ },
+ "housingElement": {
+  "total": 82069,
+  "affordable": 46598,
+  "startYear": 2023,
+  "endYear": 2031,
+  "netCompleted": 7823,
+  "affordableCompleted": 3719,
+  "shareOfTarget": 9.5,
+  "shareOfAffordableTarget": 8
+ }
+}

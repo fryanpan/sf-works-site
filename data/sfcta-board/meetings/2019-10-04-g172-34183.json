@@ -1,0 +1,51 @@
+{
+ "committee": "Transportation Authority Vision Zero Committee",
+ "date": "2019-10-04",
+ "id": "g172-34183",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=34183",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=172"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Minutes of the June 27, 2019 Meeting"
+  },
+  {
+   "no": "3",
+   "title": "Vision Zero Progress Report"
+  },
+  {
+   "no": "4",
+   "title": "San Francisco Police Department Report"
+  },
+  {
+   "no": "5",
+   "title": "Vision Zero Legislative Update"
+  },
+  {
+   "no": "6",
+   "title": "2018 Severe Injuries Report"
+  },
+  {
+   "no": "7",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "8",
+   "title": "Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

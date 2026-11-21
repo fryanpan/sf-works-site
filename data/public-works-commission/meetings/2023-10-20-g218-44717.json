@@ -1,0 +1,108 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-10-20",
+ "id": "g218-44717",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44717",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the October 6, 2023 Regular Meeting - Adopt"
+  },
+  {
+   "no": "4b",
+   "title": "Job Order Contract – J57 General Engineering Services – Contract Award"
+  },
+  {
+   "no": "4c",
+   "title": "Job Order Contract – J61 General Engineering Services – Contract Award"
+  },
+  {
+   "no": "4d",
+   "title": "Job Order Contract – J62 General Building Services – Contract Award"
+  },
+  {
+   "no": "4e",
+   "title": "Job Order Contract – J63 Electrical [Industrial] Services (Rebid) – Contract Award"
+  },
+  {
+   "no": "4f",
+   "title": "As-needed Architectural Services No. 3 – Contract Modification"
+  },
+  {
+   "no": "4g",
+   "title": "As-needed Electrical Engineering No. 4 – Contract Award"
+  },
+  {
+   "no": "4h",
+   "title": "As-needed Electrical Engineering No. 4 – Contract Award"
+  },
+  {
+   "no": "4i",
+   "title": "As-needed Electrical Engineering No. 4 – Contract Award"
+  },
+  {
+   "no": "4j",
+   "title": "As-needed Electrical Engineering No. 5 – Contract Award"
+  },
+  {
+   "no": "4k",
+   "title": "Summer Youth Workforce Development Grant – Contract Modification"
+  },
+  {
+   "no": "5",
+   "title": "Operations Division – Central Operations Overview"
+  },
+  {
+   "no": "6",
+   "title": "Public Works Commission Annual Overview"
+  },
+  {
+   "no": "7",
+   "title": "Public Works Commission 2024 Meeting Calendar"
+  },
+  {
+   "no": "8",
+   "title": "Closed Session - Conference with Legal Counsel regarding existing litigation"
+  },
+  {
+   "no": "9",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "10",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to SF Administrative Code Section 67.12(a)"
+  },
+  {
+   "no": "11",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "12",
+   "title": "General Public Comment – Continued from Item 3 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

@@ -1,0 +1,556 @@
+{
+"fetched_on": "2026-09-30",
+"meta": {
+"source": "DataSF Health Care Facilities",
+"dataset": "https://data.sf.gov/d/jhsu-2pka",
+"rows_updated": "2021-08-14"
+},
+"records": [
+{
+"id": "0",
+"name": "California Pacific Med Ctr-california East",
+"type": "General Acute Care Hospital",
+"lat": 37.787402,
+"lon": -122.453549
+},
+{
+"id": "1",
+"name": "California Pacific Med Ctr-california West",
+"type": "General Acute Care Hospital",
+"lat": 37.786144,
+"lon": -122.455912
+},
+{
+"id": "2",
+"name": "California Pacific Med Ctr-davies Campus",
+"type": "General Acute Care Hospital",
+"lat": 37.769054,
+"lon": -122.435818
+},
+{
+"id": "3",
+"name": "California Pacific Med Ctr-pacific Campus",
+"type": "General Acute Care Hospital",
+"lat": 37.791424,
+"lon": -122.431038
+},
+{
+"id": "4",
+"name": "California Pacific Medical Center - St. Luke's Campus",
+"type": "General Acute Care Hospital",
+"lat": 37.748043,
+"lon": -122.421249
+},
+{
+"id": "5",
+"name": "Chinese Hospital",
+"type": "General Acute Care Hospital",
+"lat": 37.795662,
+"lon": -122.409172
+},
+{
+"id": "6",
+"name": "Kaiser Fnd Hosp - San Francisco",
+"type": "General Acute Care Hospital",
+"lat": 37.782683,
+"lon": -122.443707
+},
+{
+"id": "7",
+"name": "Laguna Honda Hospital And Rehabilitation Center",
+"type": "General Acute Care Hospital",
+"lat": 37.747626,
+"lon": -122.458718
+},
+{
+"id": "8",
+"name": "San Francisco General Hospital",
+"type": "General Acute Care Hospital",
+"lat": 37.756064,
+"lon": -122.40772
+},
+{
+"id": "9",
+"name": "St. Francis Memorial Hospital",
+"type": "General Acute Care Hospital",
+"lat": 37.789568,
+"lon": -122.417066
+},
+{
+"id": "10",
+"name": "St. Mary's Medical Center, San Francisco",
+"type": "General Acute Care Hospital",
+"lat": 37.773804,
+"lon": -122.454407
+},
+{
+"id": "11",
+"name": "Ucsf Medical Center",
+"type": "General Acute Care Hospital",
+"lat": 37.763367,
+"lon": -122.458567
+},
+{
+"id": "12",
+"name": "Ucsf Medical Center At Mount Zion",
+"type": "General Acute Care Hospital",
+"lat": 37.784777,
+"lon": -122.439726
+},
+{
+"id": "13",
+"name": "On Lok 30th Street Community Center",
+"type": "Community Clinic",
+"lat": 37.742153,
+"lon": -122.425108
+},
+{
+"id": "14",
+"name": "Ahf Healthcare Center - San Francisco",
+"type": "Community Clinic",
+"lat": 37.779187,
+"lon": -122.407791
+},
+{
+"id": "15",
+"name": "Baart Market Clinic",
+"type": "Community Clinic",
+"lat": 37.780217,
+"lon": -122.412791
+},
+{
+"id": "16",
+"name": "Baart Turk Street Clinic",
+"type": "Community Clinic",
+"lat": 37.782463,
+"lon": -122.416347
+},
+{
+"id": "17",
+"name": "Chinese Community Health Services",
+"type": "Community Clinic",
+"lat": 37.753413,
+"lon": -122.489275
+},
+{
+"id": "18",
+"name": "Chinese Hospital's Excelsior Health Services",
+"type": "Community Clinic",
+"lat": 37.715826,
+"lon": -122.439401
+},
+{
+"id": "19",
+"name": "Curry Senior Center",
+"type": "Community Clinic",
+"lat": 37.782671,
+"lon": -122.414582
+},
+{
+"id": "20",
+"name": "Drug Detoxification, Rehab And After Care Svs. Prog.",
+"type": "Free Clinic",
+"lat": 37.770295,
+"lon": -122.448703
+},
+{
+"id": "21",
+"name": "First Resort",
+"type": "Community Clinic",
+"lat": 37.789348,
+"lon": -122.407783
+},
+{
+"id": "22",
+"name": "Glide Health Services",
+"type": "Community Clinic",
+"lat": 37.785095,
+"lon": -122.41165
+},
+{
+"id": "23",
+"name": "Haight Ashbury Free Medical Clinic",
+"type": "Free Clinic",
+"lat": 37.770192,
+"lon": -122.44858
+},
+{
+"id": "24",
+"name": "Haight Ashbury Integrated Care Center",
+"type": "Community Clinic",
+"lat": 37.769484,
+"lon": -122.419917
+},
+{
+"id": "25",
+"name": "Institute On Aging",
+"type": "Community Clinic",
+"lat": 37.782468,
+"lon": -122.448343
+},
+{
+"id": "26",
+"name": "Instituto Familiar De La Raza - Outpatient",
+"type": "Community Clinic",
+"lat": 37.750344,
+"lon": -122.418196
+},
+{
+"id": "27",
+"name": "Lifeways Pace At The Coronet",
+"type": "Community Clinic",
+"lat": 37.781234,
+"lon": -122.457668
+},
+{
+"id": "28",
+"name": "Lyon-martin Womens Health Services",
+"type": "Community Clinic",
+"lat": 37.772402,
+"lon": -122.422812
+},
+{
+"id": "29",
+"name": "Merriouns Psychological Institute",
+"type": "Community Clinic",
+"lat": 37.785182,
+"lon": -122.422044
+},
+{
+"id": "30",
+"name": "Mission Neighborhood Health Center",
+"type": "Community Clinic",
+"lat": 37.764728,
+"lon": -122.416353
+},
+{
+"id": "31",
+"name": "Mission Neighborhood Health Center - Valencia Clinic",
+"type": "Community Clinic",
+"lat": 37.747,
+"lon": -122.42008
+},
+{
+"id": "32",
+"name": "Mission Neighborhood Health Ctr.-excelsior Clinic",
+"type": "Community Clinic",
+"lat": 37.726682,
+"lon": -122.433377
+},
+{
+"id": "33",
+"name": "Mission Neighborhood Resource Center",
+"type": "Community Clinic",
+"lat": 37.764034,
+"lon": -122.418555
+},
+{
+"id": "34",
+"name": "Native American Health Center",
+"type": "Community Clinic",
+"lat": 37.764117,
+"lon": -122.418665
+},
+{
+"id": "35",
+"name": "North East Medical Services",
+"type": "Community Clinic",
+"lat": 37.799897,
+"lon": -122.409025
+},
+{
+"id": "36",
+"name": "North East Medical Services - Noriega",
+"type": "Community Clinic",
+"lat": 37.754128,
+"lon": -122.4794
+},
+{
+"id": "37",
+"name": "North East Medical Services - San Bruno Avenue",
+"type": "Community Clinic",
+"lat": 37.729088,
+"lon": -122.40426
+},
+{
+"id": "38",
+"name": "North East Medical Services-leland Avenue",
+"type": "Community Clinic",
+"lat": 37.711827,
+"lon": -122.405249
+},
+{
+"id": "39",
+"name": "On Lok Senior Health Services",
+"type": "Community Clinic",
+"lat": 37.798467,
+"lon": -122.403856
+},
+{
+"id": "40",
+"name": "On Lok Senior Health Services - Bush St",
+"type": "Community Clinic",
+"lat": 37.788823,
+"lon": -122.419046
+},
+{
+"id": "41",
+"name": "On Lok Senior Health Services - Powell",
+"type": "Community Clinic",
+"lat": 37.797884,
+"lon": -122.410373
+},
+{
+"id": "42",
+"name": "On Lok Senior Health Services-mission Center",
+"type": "Community Clinic",
+"lat": 37.72674,
+"lon": -122.433294
+},
+{
+"id": "43",
+"name": "Planned Parenthood Golden Gate",
+"type": "Community Clinic",
+"lat": 37.782763,
+"lon": -122.421546
+},
+{
+"id": "44",
+"name": "Planned Parenthood San Francisco Center",
+"type": "Community Clinic",
+"lat": 37.746119,
+"lon": -122.420124
+},
+{
+"id": "45",
+"name": "Richmond Maxi-center",
+"type": "Community Clinic",
+"lat": 37.775757,
+"lon": -122.497614
+},
+{
+"id": "46",
+"name": "San Francisco Free Clinic",
+"type": "Free Clinic",
+"lat": 37.784588,
+"lon": -122.470091
+},
+{
+"id": "47",
+"name": "South Of Market Health Center",
+"type": "Community Clinic",
+"lat": 37.777661,
+"lon": -122.408886
+},
+{
+"id": "48",
+"name": "St. Anthony Medical Clinic",
+"type": "Free Clinic",
+"lat": 37.781977,
+"lon": -122.413172
+},
+{
+"id": "49",
+"name": "St. James Infirmary",
+"type": "Community Clinic",
+"lat": 37.775618,
+"lon": -122.415577
+},
+{
+"id": "50",
+"name": "St. Luke's Health Care Center - Adult Clinic",
+"type": "Community Clinic",
+"lat": 37.747567,
+"lon": -122.420234
+},
+{
+"id": "51",
+"name": "St. Luke's Health Care Center - Pediatric Clinic",
+"type": "Community Clinic",
+"lat": 37.747567,
+"lon": -122.420234
+},
+{
+"id": "52",
+"name": "St. Luke's Health Care Center - Women's Clinic",
+"type": "Community Clinic",
+"lat": 37.747567,
+"lon": -122.420234
+},
+{
+"id": "53",
+"name": "Asian & Pacific Islander Wellness Center",
+"type": "Community Clinic",
+"lat": 37.783587,
+"lon": -122.41919
+},
+{
+"id": "54",
+"name": "Woman's Community Clinic/tides Center",
+"type": "Community Clinic",
+"lat": 37.786524,
+"lon": -122.433383
+},
+{
+"id": "55",
+"name": "Castro-mission Health Center",
+"type": "Community Health Network",
+"lat": 37.762718,
+"lon": -122.431841
+},
+{
+"id": "56",
+"name": "Children's Health Center At Sfgh",
+"type": "Community Health Network",
+"lat": 37.75578,
+"lon": -122.406196
+},
+{
+"id": "57",
+"name": "Chinatown Health Center",
+"type": "Community Health Network",
+"lat": 37.796931,
+"lon": -122.411772
+},
+{
+"id": "58",
+"name": "Family Health Center At Sfgh",
+"type": "Community Health Network",
+"lat": 37.756903,
+"lon": -122.406632
+},
+{
+"id": "59",
+"name": "General Medical Clinic At Sfgh",
+"type": "Community Health Network",
+"lat": 37.75578,
+"lon": -122.406196
+},
+{
+"id": "60",
+"name": "Maxine Hall Health Center",
+"type": "Community Health Network",
+"lat": 37.781938,
+"lon": -122.435869
+},
+{
+"id": "61",
+"name": "Ocean Park Health Center",
+"type": "Community Health Network",
+"lat": 37.762381,
+"lon": -122.482495
+},
+{
+"id": "62",
+"name": "Potrero Hill Health Center",
+"type": "Community Health Network",
+"lat": 37.754271,
+"lon": -122.398735
+},
+{
+"id": "63",
+"name": "Silver Avenue Family Health Center",
+"type": "Community Health Network",
+"lat": 37.732227,
+"lon": -122.406517
+},
+{
+"id": "64",
+"name": "Southeast Health Center",
+"type": "Community Health Network",
+"lat": 37.72591,
+"lon": -122.392467
+},
+{
+"id": "65",
+"name": "3rd Street Youth Center & Clinic",
+"type": "Community Health Network",
+"lat": 37.730862,
+"lon": -122.392201
+},
+{
+"id": "66",
+"name": "San Francisco City Clinic",
+"type": "Community Health Network",
+"lat": 37.776044,
+"lon": -122.407029
+},
+{
+"id": "67",
+"name": "Adult Immunization & Travel Clinic",
+"type": "Community Health Network",
+"lat": 37.778384,
+"lon": -122.418696
+},
+{
+"id": "68",
+"name": "Breast & Cervical Cancer Services",
+"type": "Community Health Network",
+"lat": 37.775878,
+"lon": -122.419356
+},
+{
+"id": "69",
+"name": "Housing And Urban Health Clinic",
+"type": "Community Health Network",
+"lat": 37.784138,
+"lon": -122.411542
+},
+{
+"id": "70",
+"name": "Tom Waddell Health Center",
+"type": "Community Health Network",
+"lat": 37.777978,
+"lon": -122.418539
+},
+{
+"id": "71",
+"name": "Women's Health Center",
+"type": "Community Health Network",
+"lat": 37.756174,
+"lon": -122.406595
+},
+{
+"id": "72",
+"name": "Balboa Teen Health Center",
+"type": "Community Health Network",
+"lat": 37.72207,
+"lon": -122.439829
+},
+{
+"id": "73",
+"name": "Cole Street Clinic",
+"type": "Community Health Network",
+"lat": 37.769992,
+"lon": -122.450374
+},
+{
+"id": "74",
+"name": "Larkin Street Medical Clinic",
+"type": "Community Health Network",
+"lat": 37.787942,
+"lon": -122.419122
+},
+{
+"id": "75",
+"name": "Special Programs For Youth",
+"type": "Community Health Network",
+"lat": 37.745717,
+"lon": -122.452267
+},
+{
+"id": "76",
+"name": "Mission Neighborhood Health Centers-lpc",
+"type": "Community Health Network",
+"lat": 37.771258,
+"lon": -122.419489
+},
+{
+"id": "77",
+"name": "North East Medical Services-taraval",
+"type": "Community Health Network",
+"lat": 37.742408,
+"lon": -122.491041
+}
+]
+}

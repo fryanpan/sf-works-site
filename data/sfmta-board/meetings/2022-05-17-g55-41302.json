@@ -1,0 +1,78 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-05-17",
+ "id": "g55-41302",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41302",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26487"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - May 3, 2022 Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 220517-043)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of claims against the SFMTA",
+   "decision": "ADOPTED — 7 ayes (Resolution 220517-043)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications:",
+   "decision": "ADOPTED — 7 ayes (Resolution 220517-044)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director or designee to execute and file a claim with the Metropolitan Transportation Commission for allocation of operating assistance from Transportation Development Act, State Transit Assistance",
+   "decision": "ADOPTED — 7 ayes (Resolution 220517-045)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding Summer 2022 Service Changes"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

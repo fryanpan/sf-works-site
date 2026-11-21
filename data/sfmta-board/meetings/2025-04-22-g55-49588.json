@@ -1,0 +1,49 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2025-04-22",
+ "id": "g55-49588",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=49588",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/43859"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Introduction and Opening Remarks"
+  },
+  {
+   "no": "5",
+   "title": "Presentation and discussion on a citywide economic overview and agency budget context and background"
+  },
+  {
+   "no": "6",
+   "title": "Presentation and discussion on the Muni Funding Working Group (MFWG) Revenue and Cost Cutting Packages"
+  },
+  {
+   "no": "7",
+   "title": "Presentation and panel discussion of the MFWG Packages."
+  },
+  {
+   "no": "8",
+   "title": "Presentation and discussion on the budget process, schedule, and next steps"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

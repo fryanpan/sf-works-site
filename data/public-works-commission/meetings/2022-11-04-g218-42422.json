@@ -1,0 +1,64 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2022-11-04",
+ "id": "g218-42422",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42422",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "3a",
+   "title": "Adopt Minutes from the October 21, 2022 Meeting"
+  },
+  {
+   "no": "3b",
+   "title": "911 Call Center Renovation – Construction Contract Award"
+  },
+  {
+   "no": "4",
+   "title": "San Francisco Police Department Traffic Company and Forensic Services Division – Increase to Construction Duration Contingency"
+  },
+  {
+   "no": "5",
+   "title": "Overview of Building Design and Construction Bureau of Architecture"
+  },
+  {
+   "no": "6",
+   "title": "Overview of Building Design and Construction Bureau of Landscape Architecture"
+  },
+  {
+   "no": "7",
+   "title": "Public Works Commission Rules of Order"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Department Director Hiring Update"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

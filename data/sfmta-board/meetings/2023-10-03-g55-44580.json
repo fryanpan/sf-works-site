@@ -1,0 +1,104 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-10-03",
+ "id": "g55-44580",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44580",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/28993"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes • September 19, 2023, Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes (Resolution 231003-078)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items B-D are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed action is the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code. Explanatory documents include a staff report and resolution.) A. ESTABLISH – SHARED SPACES ROAD CLOSURE Fulton Street between Hyde and Larkin streets, Wednesday, October 4, 2023, through Saturday, August 31, 2024, 24-hours, daily. B. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA U 860 Folsom Street. C. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA I – 3218-3220 17th Street. D. RESCIND – UNMETERED MOTORCYCLE PARKING – ESTABLISH – 2-HOUR PARKING, 9 AM TO 5 PM, MONDAY THROUGH FRIDAY, EXCEPT AREA U PERMITS – Clara Street, south side, from 317 to 337 feet east of 5th Street (20- foot zone) Clara Street, south side, from 361 to 390 feet east of 5th Street. E. ESTABLISH – TOW-AWAY, NO STOPPING ANYTIME ESTABLISH – SIDEWALK WIDENING – Illinois Street, northeast side, from 20th Street to 40 feet north (6- wide bulb-out), Illinois Street, southeast side, from 20th Street to 40 feet south (6-wide bulb-out), Illinois Street, southeast side, from 22nd Street to 40 feet south. F. ESTABLISH – METERED GENERAL PARKING, NO TIME LIMIT, 8AM TO 10PM, MONDAY THROUGH SUNDAY – 22nd Street, south side, from 53 feet to 453 feet east of Illinois",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code Division II, Section 601, to designate a full-time transit-only area on Hyde Street between McAllister and Market streets",
+   "decision": "ADOPTED — 6 ayes (Resolution 231003-079)"
+  },
+  {
+   "no": "11A",
+   "title": "ESTABLISH – BUS AND TAXI ONLY LANE – Hyde Street, southbound, from McAllister Street to Market Street",
+   "decision": "ADOPTED — 6 ayes (Resolution 231003-079)"
+  },
+  {
+   "no": "11B",
+   "title": "ESTABLISH – TOW-AWAY NO STOPPING ANYTIME – Hyde Street, west side, from Fulton Street to Grove Street",
+   "decision": "ADOPTED — 6 ayes (Resolution 231003-079)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Vision Zero update"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 5 ayes (Resolution 231003-080)"
+  },
+  {
+   "no": "3",
+   "title": "Pursuant to Government Code Section 54956.9(d)(1) and (d)(2) and the Administrative Code Section 67.8 (a)(3) and 67.10(d)(1) and (2), the SFMTA Board of Directors will meet in Closed Session CONFERENCE WITH LEGAL COUNSEL"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 4 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

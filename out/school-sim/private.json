@@ -1,0 +1,133 @@
+{
+ "source": "data/school-sim/private-schools.json",
+ "totals": {
+  "carried": 14,
+  "carriedStudents": 4194,
+  "droppedStudents": 139,
+  "parochial": 24,
+  "schools": 106,
+  "students": 24178
+ },
+ "reach": {
+  "elementary": 4.346,
+  "middle": 3.876,
+  "high": 19.646
+ },
+ "reachCal": {
+  "elementary": 4.0,
+  "middle": 2.5,
+  "high": 10.0
+ },
+ "reference": {
+  "elementary": {
+   "schools": [
+    "Buena Vista/ Horace Mann K-8",
+    "Carmichael (Bessie)/FEC",
+    "Chinese Immersion School at DeAvila",
+    "Huerta (Dolores) Elementary",
+    "Lawton Alternative",
+    "Lee (Edwin and Anita) Newcomer",
+    "Lilienthal (Claire) Elementary",
+    "Marshall Elementary",
+    "Mission Education Center",
+    "Revere (Paul) Elementary",
+    "Rooftop Elementary",
+    "San Francisco Community Alternative",
+    "San Francisco Public Montessori",
+    "Yu (Alice Fong) Elementary"
+   ],
+   "meanMi": 2.034
+  },
+  "middle": {
+   "schools": [
+    "Buena Vista/ Horace Mann K-8",
+    "Carmichael (Bessie)/FEC",
+    "Lawton Alternative",
+    "Lilienthal (Claire) Elementary",
+    "Revere (Paul) Elementary",
+    "Rooftop Elementary",
+    "San Francisco Community Alternative",
+    "Yu (Alice Fong) Elementary"
+   ],
+   "meanMi": 1.965
+  },
+  "high": {
+   "schools": [
+    "\"Asawa (Ruth) SF Sch of the Arts, A Public School\"",
+    "Academy (The)- SF @McAteer",
+    "Balboa High",
+    "Burton (Phillip and Sala) Academic High",
+    "Downtown High",
+    "Galileo High",
+    "Jordan (June) School for Equity",
+    "Lincoln (Abraham) High",
+    "Lowell High",
+    "Marshall (Thurgood) High",
+    "Mission High",
+    "O'Connell (John) High",
+    "S.F. International High",
+    "Wallenberg (Raoul) Traditional High",
+    "Washington (George) High",
+    "Wells (Ida B.) High"
+   ],
+   "meanMi": 2.605
+  }
+ },
+ "distanceCheck": {
+  "elementary": {
+   "privateMeanMi": 1.876,
+   "referenceMeanMi": 2.034,
+   "tol": 0.15
+  },
+  "middle": {
+   "privateMeanMi": 1.811,
+   "referenceMeanMi": 1.965,
+   "tol": 0.15
+  },
+  "high": {
+   "privateMeanMi": 2.417,
+   "referenceMeanMi": 2.605,
+   "tol": 0.15
+  }
+ },
+ "lengths": {
+  "elementary": {
+   "students": 9889,
+   "under1": 34.7,
+   "1to2": 26.6,
+   "over2": 38.6,
+   "meanMi": 1.876
+  },
+  "elementary|parochial": {
+   "students": 2965,
+   "under1": 36.7,
+   "1to2": 26.0,
+   "over2": 37.2,
+   "meanMi": 1.84
+  },
+  "elementary|private": {
+   "students": 6924,
+   "under1": 33.9,
+   "1to2": 26.9,
+   "over2": 39.2,
+   "meanMi": 1.891
+  },
+  "high": {
+   "students": 8431,
+   "under1": 18.4,
+   "1to2": 26.8,
+   "over2": 54.8,
+   "meanMi": 2.417
+  },
+  "middle": {
+   "students": 5858,
+   "under1": 35.8,
+   "1to2": 27.7,
+   "over2": 36.5,
+   "meanMi": 1.811
+  }
+ },
+ "assignErr": 4.957274900651862e-16,
+ "modeShares": "Assumed: no published source gives private-school students' modes by distance (SFCTA 2016 Table 3 pools every school type). A private student chooses by the SFUSD model at its own trip times, with each grade's SFUSD-calibrated constants, so its mode shares are SFUSD's baseline at the same distance and times. That includes the walk limit and the yellow-bus rule (TK-8 over 2 miles), which SFUSD runs for its own students only.",
+ "note": "Private schools' students placed by their own doubly constrained model (private_gravity) beside the SFUSD and charter one, at the reach of SFUSD's citywide schools at each level; every citywide figure counts them. Checks against published figures (Fig. 5, Stanford, the home ZIPs, the tally) stay SFUSD's own."
+}

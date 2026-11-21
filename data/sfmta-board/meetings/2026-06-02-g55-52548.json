@@ -1,0 +1,102 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-06-02",
+ "id": "g55-52548",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52548",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45511"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes May 19, 2026 Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 260602-043)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications (The Planning Department has found that Items A-H are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.): A. RESCIND – 25 MPH SPEED LIMIT, ESTABLISH – 20 MPH SPEED LIMIT, Taraval Street between Lower Great Highway and 26th Avenue. B. RESCIND – 35 MPH SPEED LIMIT, ESTABLISH – 30 MPH SPEED LIMIT, Evans Avenue between Cesar Chavez Street and Hunters Point Boulevard. C. RESCIND – 25 MPH SPEED LIMIT, ESTABLISH – 20 MPH SPEED LIMIT, Market Street between Octavia Boulevard and Franklin Street. D. ESTABLISH – 20 MPH SPEED LIMIT, Mason Street between Washington Street and Columbus Avenue. E. ESTABLISH – 15 MPH SPEED LIMIT, 20th Street between Shotwell Street and Potrero Avenue. F. ESTABLISH – 15 MPH SPEED LIMIT, Page Street between Stanyan and Franklin Streets. G. ESTABLISH – 15 MPH SPEED LIMIT, Sanchez Street between 23rd and 30th Streets. H. ESTABLISH – RESIDENTIAL PERMIT PARKING AREA I (Eligibility only, no signs), Mission Street, both sides, between 15th Street and 16th Street. RESOLUTION No. 260602-043 4",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260602-043)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the San Francisco Municipal Transportation Agency’s 2026 Public Transportation Agency Safety Plan (PTASP).",
+   "text": "Approving the San Francisco Municipal Transportation Agency’s 2026 Public Transportation Agency Safety Plan (PTASP). (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260602-044",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260602-044)"
+  },
+  {
+   "no": "10.3",
+   "title": "Recommending and requesting that the Board of Supervisors authorize the Director of Transportation to enter into a loan agreement with the Metropolitan Transportation Commission as lender for a maximum principal amount of $200 million for SFMTA public transit operations pursuant to Assembly Bill 117.",
+   "text": "Recommending and requesting that the Board of Supervisors authorize the Director of Transportation to enter into a loan agreement with the Metropolitan Transportation Commission as lender for a maximum principal amount of $200 million for SFMTA public transit operations pursuant to Assembly Bill 117. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260602-045",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260602-045)"
+  },
+  {
+   "no": "11",
+   "title": "Approving the expansion of Pay or Permit Parking throughout Residential Parking Permit Area HV in Hayes Valley",
+   "decision": "ADOPTED — 7 ayes (Resolution 260602-046)"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel. RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 7 ayes (Resolution 260602-047)"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,63 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2022-09-13",
+ "id": "g24-42008",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42008",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Resolution Making Findings to Allow Teleconferenced Meetings"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the July 26, 2022 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Community Advisory Committee Report"
+  },
+  {
+   "no": "5",
+   "title": "Appoint One Member to the Community Advisory Committee"
+  },
+  {
+   "no": "6",
+   "title": "State and Federal Legislation Update"
+  },
+  {
+   "no": "7",
+   "title": "Adopt San Francisco’s One Bay Area Grant Cycle 3 Project Nominations"
+  },
+  {
+   "no": "8",
+   "title": "Allocate $4,412,805 in Prop K Funds and $324,000 in Prop AA Funds, with Conditions, for Four Requests"
+  },
+  {
+   "no": "9",
+   "title": "San Francisco Transportation Plan Update"
+  },
+  {
+   "no": "10",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "11",
+   "title": "Public Comment"
+  },
+  {
+   "no": "12",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

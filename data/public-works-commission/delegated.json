@@ -1,0 +1,831 @@
+{
+ "body": "public-works-commission",
+ "what": "Contracts the Director of Public Works approved under the Commission's Contract Approval Delegation Policy, as listed in the delegated contract reports attached to the Commission's agendas.",
+ "parser": 2,
+ "source": "https://sfpublicworks.org/about/public-works-commission-calendar",
+ "notes": [
+  "A row's date is its report's: the approval is dated no later than that, and the report does not give the approval's own date.",
+  "The calendar page lists agendas from 2025 on; earlier reports, if any were attached, are not linked from anything this script reads."
+ ],
+ "agendas": [
+  {
+   "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
+   "meeting": "2024-10-17",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/2025-1-9%20PW%20Commission%20Agenda%20v19%20Updated_0.pdf",
+   "meeting": "2025-01-09",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Item%202_Public%20Works%20Delegated%20Contracts%20Report%2012-20-24.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/2025-1-23%20PW%20SAS%20Special%20Joint%20Meeting%20Agenda%20v121.pdf",
+   "meeting": "2025-01-23",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/2025-2-13%20PW%20Commission%20Agenda%20v212_0.pdf",
+   "meeting": "2025-02-13",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Item%202_Public%20Works%20Delegated%20Contracts%20Report%202-10-25.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Feb%2027%202025/2025-2-27%20PW%20Commission%20Agenda%20v228.pdf",
+   "meeting": "2025-02-27",
+   "reports": []
+  },
+  {
+   "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49153",
+   "meeting": "2025-03-13",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Mar%2013%202025/Item%202_Delegated%20Contracts%20Report%202025-3-13.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Mar%2013%202025/2025-3-13%20PW%20Commission%20Agenda%20v312.pdf",
+   "meeting": "2025-03-13",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Mar%2013%202025/Item%202_Delegated%20Contracts%20Report%202025-3-13.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/March%2027%202025/2025-3-27%20PW%20Commission%20Agenda%20v325.pdf",
+   "meeting": "2025-03-27",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/April%2010%202025/2025-4-10%20PW%20Commission%20Agenda%20v49.pdf",
+   "meeting": "2025-04-10",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/April%2010%202025/Item%202_PWC%20Delegated%20Contracts%20Report%202025-4-3.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%208%202025/2025-5-8%20PW%20Commission%20Agenda%20v54.pdf",
+   "meeting": "2025-05-08",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/May%208%202025/Item%202_Public%20Works%20Delegated%20Contracts%202025-5-1.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%2022%2C%202025/2025-5-22%20PW%20Commission%20Agenda%20v521.pdf",
+   "meeting": "2025-05-22",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Jun%2012%2C%202025/2025-6-12%20PW%20Commission%20Agenda%20v611b.pdf",
+   "meeting": "2025-06-12",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Jun%2012%2C%202025/Item%202_Delegated%20Contracts%20Report%206-05-25.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/June%2026%202025/2025-6-26%20PW%20Commission%20Agenda%20v624.pdf",
+   "meeting": "2025-06-26",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/July%2024%2C%202025/2025-7-24%20PW%20Commission%20Agenda%20v723.pdf",
+   "meeting": "2025-07-24",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/July%2024%2C%202025/Item%202_PWC%20Delegated%20Contracts%202025-7-3.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Sept%2011%2C%202025/2025-9-11%20PW%20Commission%20Agenda%20Amended%20v911b.pdf",
+   "meeting": "2025-09-11",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Sept%2011%2C%202025/Item%202_Delegated%20approvals%20Period%209-1-25.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Sept%2011%2C%202025/2025-9-25%20PW%20Commission%20Agenda%20v922.pdf",
+   "meeting": "2025-09-25",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/October%2023%2C%202025/2025-10-23%20PW%20Commission%20Agenda%20v1016.pdf",
+   "meeting": "2025-10-23",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Dec%2011%202025/2025-12-11%20PW%20Commission%20Amended%20Agenda%20v1210b.pdf",
+   "meeting": "2025-12-11",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Dec%2011%202025/Item%202_PWC%20Delegated%20Approvals%20Report%2012-4-25.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/January%208%202026/2026-1-8%20PW%20Commission%20Agenda%20v17c.pdf",
+   "meeting": "2026-01-08",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Jan%2022%202026/2026-1-22%20PW%20SAS%20Special%20Joint%20Meeting%20Agenda%20Amended%20v121.pdf",
+   "meeting": "2026-01-22",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Jan%2022%202026/Item%202_PWC%20SASC%20Delegated%20Approval%20Report%201-5-26.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Feb%2012%2C%202026/2026-2-12%20PW%20Commission%20Agenda%20v212.pdf",
+   "meeting": "2026-02-12",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Feb%2026%2C%202026/2026-2-26%20PW%20Commission%20Agenda%20v225.pdf",
+   "meeting": "2026-02-26",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Feb%2026%2C%202026/Item%202_PWC%20Delegated%20Contract%20Approvals%202-18-26.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/March%2012%202026/2026-3-12%20PW%20Commission%20Agenda%20v310.pdf",
+   "meeting": "2026-03-12",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/April%209%202026/2026-4-9%20PW%20Commission%20Agenda%20v49.pdf",
+   "meeting": "2026-04-09",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/April%209%202026/Item%202_PWC%20Delegated%20Contracts%20report%202026-4-1.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/April%2030%2C%202026/2026-4-30%20PW%20Commission%20Agenda%20v429.pdf",
+   "meeting": "2026-04-30",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%2014%202026/2026-5-14%20PW%20Commission%20Agenda%20v511.pdf",
+   "meeting": "2026-05-14",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/May%2014%202026/Item%204_PWC%20Delegated%20Contract%20Approvals%202026-5-1.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/July%2023%2C%202026/2026-7-23%20PW%20Commission%20Agenda%20v722c.pdf",
+   "meeting": "2026-07-23",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/July%2023%2C%202026/Item%203_PWC%20Delegated%20Contracts%20Report%202026-7-10.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/September%2024%2C%202026/2026-9-24%20PW%20Commission%20Agenda%20v922b.pdf",
+   "meeting": "2026-09-24",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Sept%2010%2C%202026/Item%203_PWC%20Delegated%20Contracts%20Report%202026-9-10.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/October%208%202026/2026-10-8%20PW%20Commission%20Agenda%20v108b.pdf",
+   "meeting": "2026-10-08",
+   "reports": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Oct%2022%202026/2026-10-22%20PW%20Commission%20Agenda%20v1019.pdf",
+   "meeting": "2026-10-22",
+   "reports": [
+    "https://sfpublicworks.org/sites/default/files/Commissions/Oct%2022%202026/Item%203_PW%20Delegated%20Approvals%20Report%202026-10-22%20r.pdf"
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf",
+   "meeting": "2026-11-12",
+   "reports": []
+  }
+ ],
+ "reports": [
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Item%202_Public%20Works%20Delegated%20Contracts%20Report%2012-20-24.pdf",
+   "file": "Item 2_Public Works Delegated Contracts Report 12-20-24.pdf",
+   "meetings": [
+    "2025-01-09"
+   ],
+   "date": "2024-12-20",
+   "printedDate": "2024-12-20",
+   "fileDate": "2024-12-20",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000028742",
+     "section": "Construction",
+     "title": "General As-Needed Contract G24 Concrete Slicing",
+     "request": "Extend contract duration by 1,095 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000023486",
+     "section": "Construction",
+     "title": "Job Order Contract No. J51 Electrical Services [Industrial]",
+     "request": "Extend contract duration by 110 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032190",
+     "section": "Construction",
+     "title": "Adult Immunization & Travel Clinic Relocation",
+     "request": "Extend contract duration by 116 calendar days and add $22K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000027351",
+     "section": "Construction",
+     "title": "Western Addition Traffic Signals Phase 1",
+     "request": "Extend contract duration by 181 calendar days and add $90K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000027820",
+     "section": "Construction",
+     "title": "Mission Branch Library Renovation",
+     "request": "Extend contract duration by 102 calendar days and add $400K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000030368",
+     "section": "Construction",
+     "title": "Various Location Pavement Renovation No. 63 & Sewer Repair",
+     "request": "Extend contract duration by 82 calendar days and add $28K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000028800",
+     "section": "Construction",
+     "title": "190 9th Street Energy Heating Ventilation and Air Conditioning Upgrade",
+     "request": "Extend contract duration by 57 calendar days and add $46K.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Item%202_Public%20Works%20Delegated%20Contracts%20Report%202-10-25.pdf",
+   "file": "Item 2_Public Works Delegated Contracts Report 2-10-25.pdf",
+   "meetings": [
+    "2025-02-13"
+   ],
+   "date": "2025-02-10",
+   "printedDate": "2025-02-10",
+   "fileDate": "2025-02-10",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000028742",
+     "section": "Construction",
+     "title": "General As-Needed Contract G24 Concrete Slicing",
+     "request": "Extend contract duration by 1,095 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000023486",
+     "section": "Construction",
+     "title": "Job Order Contract No. J51 Electrical Services [Industrial]",
+     "request": "Extend contract duration by 110 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032190",
+     "section": "Construction",
+     "title": "Adult Immunization & Travel Clinic Relocation",
+     "request": "Extend contract duration by 116 calendar days and add $22K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000027351",
+     "section": "Construction",
+     "title": "Western Addition Traffic Signals Phase 1",
+     "request": "Extend contract duration by 181 calendar days and add $90K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000027820",
+     "section": "Construction",
+     "title": "Mission Branch Library Renovation",
+     "request": "Extend contract duration by 102 calendar days and add $400K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000030368",
+     "section": "Construction",
+     "title": "Various Location Pavement Renovation No. 63 & Sewer Repair",
+     "request": "Extend contract duration by 82 calendar days and add $28K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000028800",
+     "section": "Construction",
+     "title": "190 9th Street Energy Heating Ventilation and Air Conditioning Upgrade",
+     "request": "Extend contract duration by 57 calendar days and add $46K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000012553",
+     "section": "Construction",
+     "title": "Better Market Street Phase 1",
+     "request": "Extend contract duration by 150 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000027927",
+     "section": "Construction",
+     "title": "Fire Stations 37 & 44 Generator Replacement",
+     "request": "Extend contract duration by 190 calendar days and add $37K.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000017356",
+     "section": "Construction",
+     "title": "Richmond Residential Streets Pavement Renovation & Sewer Replacement",
+     "request": "Extend contract duration by 408 calendar days and add $175K",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Mar%2013%202025/Item%202_Delegated%20Contracts%20Report%202025-3-13.pdf",
+   "file": "Item 2_Delegated Contracts Report 2025-3-13.pdf",
+   "meetings": [
+    "2025-03-13"
+   ],
+   "date": "2025-03-13",
+   "printedDate": "2025-03-07",
+   "fileDate": "2025-03-13",
+   "datesDisagree": true,
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000028073",
+     "section": "Construction",
+     "title": "Castro Station Elevator",
+     "request": "Extend contract duration by 200 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/April%2010%202025/Item%202_PWC%20Delegated%20Contracts%20Report%202025-4-3.pdf",
+   "file": "Item 2_PWC Delegated Contracts Report 2025-4-3.pdf",
+   "meetings": [
+    "2025-04-10"
+   ],
+   "date": "2025-04-03",
+   "printedDate": "2025-04-03",
+   "fileDate": "2025-04-03",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000027927",
+     "section": "Construction",
+     "title": "Fire Stations 37 & 44 Generator Replacement",
+     "request": "Extend contract duration by 90 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000030248",
+     "section": "Construction",
+     "title": "Hall Of Justice Elevator Modernization Project",
+     "request": "Extend contract duration by 318 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000000887",
+     "section": "Professional Services",
+     "title": "Design and Environmental Services for the Islais Creek Bridge Rehabilitation Project",
+     "request": "Extend contract duration by 76 calendar days",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032845",
+     "section": "Professional Services",
+     "title": "Emergency ZSFG Building 2 Chillers, Boilers and Cooling Tower Replacement Project",
+     "request": "Extend contract duration by 365 calendar days",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%208%202025/Item%202_Public%20Works%20Delegated%20Contracts%202025-5-1.pdf",
+   "file": "Item 2_Public Works Delegated Contracts 2025-5-1.pdf",
+   "meetings": [
+    "2025-05-08"
+   ],
+   "date": "2025-05-01",
+   "printedDate": "2025-05-01",
+   "fileDate": "2025-05-01",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000032190",
+     "section": "Construction",
+     "title": "AITC Immunization & Travel Clinic Relocation",
+     "request": "Extend contract duration by 55 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032021",
+     "section": "Construction",
+     "title": "Hunters Point, Central Waterfront, and Potrero Hill Area Streets Pavement Renovation and Sewer Replacement",
+     "request": "Extend contract duration by 90 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Jun%2012%2C%202025/Item%202_Delegated%20Contracts%20Report%206-05-25.pdf",
+   "file": "Item 2_Delegated Contracts Report 6-05-25.pdf",
+   "meetings": [
+    "2025-06-12"
+   ],
+   "date": "2025-06-05",
+   "printedDate": "2025-05-05",
+   "fileDate": "2025-06-05",
+   "datesDisagree": true,
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000023090",
+     "section": "Construction",
+     "title": "Alemany Interchange Improvements Phase 2",
+     "request": "Extend contract duration by 606 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000026753",
+     "section": "Construction",
+     "title": "One South Van Ness Second Floor Restroom Renovation",
+     "request": "Extend contract duration by 413 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032071",
+     "section": "Construction",
+     "title": "PW Various Locations Pavement Renovation No. 67A",
+     "request": "Extend contract duration by 328 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000025860",
+     "section": "Professional Services",
+     "title": "As-Needed Geotechnical Engineering Services No.3",
+     "request": "Rate escalation only",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/July%2024%2C%202025/Item%202_PWC%20Delegated%20Contracts%202025-7-3.pdf",
+   "file": "Item 2_PWC Delegated Contracts 2025-7-3.pdf",
+   "meetings": [
+    "2025-07-24"
+   ],
+   "date": "2025-07-03",
+   "printedDate": null,
+   "fileDate": "2025-07-03",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000012553",
+     "section": "Construction",
+     "title": "PW Better Market Street Phase 1",
+     "request": "Extend contract duration by 158 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000016533",
+     "section": "Construction",
+     "title": "PW SFPL Main Library Fire Alarm Control",
+     "request": "Extend contract duration by 1,003 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000025105",
+     "section": "Professional Services",
+     "title": "As-Needed Civil Engineering Services No. 4",
+     "request": "Rate escalation only",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Sept%2011%2C%202025/Item%202_Delegated%20approvals%20Period%209-1-25.pdf",
+   "file": "Item 2_Delegated approvals Period 9-1-25.pdf",
+   "meetings": [
+    "2025-09-11"
+   ],
+   "date": "2025-09-01",
+   "printedDate": null,
+   "fileDate": "2025-09-01",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000028800",
+     "section": "Construction",
+     "title": "190 9th Street Energy Efficiency, HVAC Upgrades & Photovoltaic Panels",
+     "request": "Extend contract duration by 121 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032190",
+     "section": "Construction",
+     "title": "AITC Immunization & Travel Clinic Relocation",
+     "request": "Extend contract duration by 62 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000027351",
+     "section": "Construction",
+     "title": "Western Addition Area Traffic Signal Upgrades: Phase 1",
+     "request": "Extend contract duration by 150 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Dec%2011%202025/Item%202_PWC%20Delegated%20Approvals%20Report%2012-4-25.pdf",
+   "file": "Item 2_PWC Delegated Approvals Report 12-4-25.pdf",
+   "meetings": [
+    "2025-12-11"
+   ],
+   "date": "2025-12-04",
+   "printedDate": "2025-12-04",
+   "fileDate": "2025-12-04",
+   "empty": true,
+   "rows": []
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Jan%2022%202026/Item%202_PWC%20SASC%20Delegated%20Approval%20Report%201-5-26.pdf",
+   "file": "Item 2_PWC SASC Delegated Approval Report 1-5-26.pdf",
+   "meetings": [
+    "2026-01-22"
+   ],
+   "date": "2026-01-05",
+   "printedDate": "2026-01-05",
+   "fileDate": "2026-01-05",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000034991",
+     "section": "Construction",
+     "title": "Various Locations Curb Ramps No.17",
+     "request": "Extend contract duration by 90 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000031461",
+     "section": "Construction",
+     "title": "Construction Manager / General Contractor (CM/GC) for SFMTA Parking Enforcement Headquarters Project",
+     "request": "Extend contract duration by 151 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035183",
+     "section": "Professional Services",
+     "title": "As-Needed Civil Engineering Services No. 4",
+     "request": "Rate escalation only",
+     "action": "modification"
+    },
+    {
+     "contract": "1000025104",
+     "section": "Professional Services",
+     "title": "As-Needed Civil Engineering Services No. 4",
+     "request": "Rate escalation only",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Feb%2026%2C%202026/Item%202_PWC%20Delegated%20Contract%20Approvals%202-18-26.pdf",
+   "file": "Item 2_PWC Delegated Contract Approvals 2-18-26.pdf",
+   "meetings": [
+    "2026-02-26"
+   ],
+   "date": "2026-02-18",
+   "printedDate": "2026-02-18",
+   "fileDate": "2026-02-18",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000036262",
+     "section": "Construction",
+     "title": "SFFD Fire Station 9 Roofing Replacement",
+     "request": "Extend contract duration by 116 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000032343",
+     "section": "Construction",
+     "title": "Various Locations Pavement Renovation No.68",
+     "request": "Extend contract duration by 50 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/April%209%202026/Item%202_PWC%20Delegated%20Contracts%20report%202026-4-1.pdf",
+   "file": "Item 2_PWC Delegated Contracts report 2026-4-1.pdf",
+   "meetings": [
+    "2026-04-09"
+   ],
+   "date": "2026-04-01",
+   "printedDate": "2026-05-01",
+   "fileDate": "2026-04-01",
+   "datesDisagree": true,
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000035437",
+     "section": "Construction",
+     "title": "Sacramento Street and Sansome Street",
+     "request": "Extend contract duration by 60 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035753",
+     "section": "Construction",
+     "title": "Southeast Health Center Phase 3 Renovation",
+     "request": "Extend contract duration by 111 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000033787",
+     "section": "Construction",
+     "title": "Powell Street Safety Project",
+     "request": "Extend contract duration by 200 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035223",
+     "section": "Construction",
+     "title": "ZSFG Building 5 Inpatient Adolescent Behavioral Health Services (BHS) Early Demo",
+     "request": "Extend contract duration by 140 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000034940",
+     "section": "Professional Services",
+     "title": "As-Needed Environmental Consulting Services 2025",
+     "request": "Subcontractors addition only",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035610",
+     "section": "Professional Services",
+     "title": "As-Needed Project Controls & Construction Management",
+     "request": "Subcontractors addition only",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/May%2014%202026/Item%204_PWC%20Delegated%20Contract%20Approvals%202026-5-1.pdf",
+   "file": "Item 4_PWC Delegated Contract Approvals 2026-5-1.pdf",
+   "meetings": [
+    "2026-05-14"
+   ],
+   "date": "2026-05-01",
+   "printedDate": "2026-05-01",
+   "fileDate": "2026-05-01",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000035157",
+     "section": "Construction",
+     "title": "South Sunset Clubhouse Renovation",
+     "request": "Extend contract duration by 33 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035556",
+     "section": "Construction",
+     "title": "San Francisco Animal Care Tenant Improvement",
+     "request": "Extend contract duration by 68 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035085",
+     "section": "Construction",
+     "title": "PW 4th St Bulbouts",
+     "request": "Extend contract duration by 200 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000034722",
+     "section": "Construction",
+     "title": "8th St., Clay St., and Leavenworth St. Pavement Renovation and Sewer Replacement",
+     "request": "Extend contract duration by 185 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/July%2023%2C%202026/Item%203_PWC%20Delegated%20Contracts%20Report%202026-7-10.pdf",
+   "file": "Item 3_PWC Delegated Contracts Report 2026-7-10.pdf",
+   "meetings": [
+    "2026-07-23"
+   ],
+   "date": "2026-07-10",
+   "printedDate": "2026-07-10",
+   "fileDate": "2026-07-10",
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000032190",
+     "section": "Construction",
+     "title": "AITC Immunization and Travel Clinic",
+     "request": "Extend contract duration by 395 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000034522",
+     "section": "Construction",
+     "title": "Transit U Improvements Project",
+     "request": "Extend contract duration by 360 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Sept%2010%2C%202026/Item%203_PWC%20Delegated%20Contracts%20Report%202026-9-10.pdf",
+   "file": "Item 3_PWC Delegated Contracts Report 2026-9-10.pdf",
+   "meetings": [
+    "2026-09-24"
+   ],
+   "date": "2026-09-10",
+   "printedDate": "2026-09-04",
+   "fileDate": "2026-09-10",
+   "datesDisagree": true,
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000037774",
+     "section": "Construction",
+     "title": "Pier 80 M&R Roof Replacement",
+     "request": "Extend contract duration by 45 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000013710",
+     "section": "Construction",
+     "title": "Southeast Health Center Expansion & Behavioral Health Integration Project Phase 2",
+     "request": "Extend contract duration by 1,110 calendar days.",
+     "action": "modification"
+    }
+   ]
+  },
+  {
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Oct%2022%202026/Item%203_PW%20Delegated%20Approvals%20Report%202026-10-22%20r.pdf",
+   "file": "Item 3_PW Delegated Approvals Report 2026-10-22 r.pdf",
+   "meetings": [
+    "2026-10-22"
+   ],
+   "date": "2026-10-22",
+   "printedDate": "2026-10-14",
+   "fileDate": "2026-10-22",
+   "datesDisagree": true,
+   "empty": false,
+   "rows": [
+    {
+     "contract": "1000034721",
+     "section": "Construction",
+     "title": "Various Locations Pavement Renovation No.71A & Sewer Replacement",
+     "request": "Extend contract duration by 140 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000036536",
+     "section": "Construction",
+     "title": "War Memorial Opera House Roof Replacement",
+     "request": "Extend contract duration by 52 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000034216",
+     "section": "Construction",
+     "title": "Market And Octavia Living Alleyways Phase 1A",
+     "request": "Extend contract duration by 218 calendar days.",
+     "action": "modification"
+    },
+    {
+     "contract": "1000035437",
+     "section": "Construction",
+     "title": "Sacramento Street and Sansome Street Improvements",
+     "request": "Extend contract duration by 77 calendar days.",
+     "action": "modification"
+    }
+   ]
+  }
+ ],
+ "unread": [],
+ "meetingsWithNoAgendaRead": [
+  "2024-10-28",
+  "2024-11-08",
+  "2024-11-25",
+  "2024-12-09",
+  "2025-07-10",
+  "2025-11-13",
+  "2026-06-18"
+ ]
+}

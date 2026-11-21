@@ -1,0 +1,45 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-08-19",
+ "id": "g22-39225",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=39225",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/August%2019%20Special%20Meeting%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "4",
+   "title": "Consider public employee appointment/hiring for the position of General Manager of the San Francisco Public Utilities Commission; and Conference with Labor Negotiator, Unrepresented Employee",
+   "text": "Pursuant to Government Code Section 54957(b) and San Francisco Administrative Code Section 67.10(b), to consider public employee appointment/hiring for the position of General Manager of the San Francisco Public Utilities Commission; and Pursuant to Government Code Sections 54954.5(f) and 54957.6, and San Francisco Administrative Code Section 67.8(a)(5) and Section 67.10(e)(1). Conference with Labor Negotiator, Unrepresented Employee City Negotiator Commission President Sophie Maxwell Unrepresented Employee General Manager, San Francisco Public Utilities Commission Anticipated issues under negotiation:"
+  },
+  {
+   "no": "3",
+   "title": "Public comment on matter to be addressed during Closed Session"
+  },
+  {
+   "no": "5",
+   "title": "Announcement following Closed Session.",
+   "text": "Announcement following Closed Session President Maxwell announced there was not reportable action"
+  },
+  {
+   "no": "6",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session",
+   "decision": "not to disclose",
+   "text": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

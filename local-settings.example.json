@@ -1,0 +1,8 @@
+{
+  "_about": "Copy to local-settings.json (gitignored) and fill in what you use; every key is optional. Environment variables of the same name win. Keys are described in lib/settings.py.",
+  "GCP_PROJECT": "",
+  "RT_ARCHIVE_BUCKET": "",
+  "ALERT_REPO": "",
+  "BOARD_DOCS": {},
+  "SFBIKE_CHECK_DOC": ""
+}

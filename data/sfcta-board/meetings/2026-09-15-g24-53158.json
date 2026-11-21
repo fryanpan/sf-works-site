@@ -1,0 +1,55 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2026-09-15",
+ "id": "g24-53158",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=53158",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Minutes of the July 28, 2026 Meeting"
+  },
+  {
+   "no": "3",
+   "title": "Community Advisory Committee Report"
+  },
+  {
+   "no": "4",
+   "title": "Appoint Abigail Pantoja as the District 11 Representative to the Community Advisory Committee"
+  },
+  {
+   "no": "5",
+   "title": "State and Federal Legislation Update"
+  },
+  {
+   "no": "6",
+   "title": "Allocate $22,500,000 in Prop L Funds, with Conditions, to the Transbay Joint Powers Authority for The Portal Project Engineering Phase Activities Starting October 1, 2026"
+  },
+  {
+   "no": "7",
+   "title": "Adopt San Francisco’s One Bay Area Grant Cycle 4 Project Nominations"
+  },
+  {
+   "no": "8",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

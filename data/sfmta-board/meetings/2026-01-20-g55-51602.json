@@ -1,0 +1,94 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-01-20",
+ "id": "g55-51602",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51602",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45054"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes January 6, 2026, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report (For discussion only)"
+  },
+  {
+   "no": "6a",
+   "title": "Transit Updates"
+  },
+  {
+   "no": "6b",
+   "title": "Streets Updates"
+  },
+  {
+   "no": "6c",
+   "title": "Legislative Updates"
+  },
+  {
+   "no": "6d",
+   "title": "Events and Ongoing Activities"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "8a",
+   "title": "Election of SFMTA Board Chair and Vice Chair",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR All matters listed hereunder constitute a Consent Calendar, are considered to be simple or routine by the San Francisco Municipal Transportation Agency Board of Directors",
+   "decision": "ADOPTED — 7 ayes (Resolution 260120-005)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications: (The proposed parking and traffic modifications have been reviewed pursuant to the California Environmental Quality Act [CEQA]. The proposed action is the Approval Action for Items A-F as defined by S.F. Administrative Code Chapter 31. Explanatory documents include a staff report and resolution.) A. RESCIND – TOW-AWAY, NO STOPPING, 7 AM TO 9 AM, EXCEPT SATURDAY AND SUNDAY, Prague Street, east side, from Geneva Avenue to South Hill Boulevard. B. RESCIND – WHITE ZONE, PASSENGER LOADING, 7 AM TO 10 PM, DAILY, Jones Street, east side, from 88 feet to 132 feet north of McAllister Street. C. RESCIND – WHITE ZONE, PASSENGER LOADING, AT ALL TIMES, Jones Street, east side, from Golden Gate Avenue to 131 feet southerly. D. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME, Jones Street, east side, from Golden Gate Avenue to 175 feet southerly. E. RESCIND – BUS ZONE, 24th Street, north side, from Castro Street to 65 feet westerly. F. ESTABLISH – YELLOW METERED ZONE, COMMERCIAL LOADING, 30-MINUTE TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, 24th Street, north side, from 13 feet to 65 feet west of Castro Street. G. RESCIND – TOW-AWAY, NO STOPPING, EXCEPT PERMITTED CAR SHARE, Bartlett Street, east side, from 3 feet to 20 feet south of 26th Street. H. ESTABLISH – TOW-AWAY, NO STOPPING, EXCEPT PERMITTED CAR SHARE, Bartlett Street, east side, from 20 feet to 37 feet south of 26th Street. I. ESTABLISH – RED ZONE, Bartlett Street, east",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 260120-005)"
+  },
+  {
+   "no": "11",
+   "title": "REGULAR CALENDAR Taking various actions related to San Francisco’s Street Safety Initiative",
+   "decision": "ADOPTED — 7 ayes (Resolution 437-25)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding an overview of Muni’s Service Equity Strategy"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

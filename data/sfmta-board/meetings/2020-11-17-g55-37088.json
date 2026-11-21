@@ -1,0 +1,114 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-11-17",
+ "id": "g55-37088",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37088",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/23020"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: November 3, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of claims against the SFMTA",
+   "decision": "ADOPTED — 4 ayes (Resolution 201117-096)"
+  },
+  {
+   "no": "10.2",
+   "title": "Making environmental review findings and approving parking and traffic modifications",
+   "decision": "ADOPTED — 4 ayes (Resolution 201117-097)"
+  },
+  {
+   "no": "10.3",
+   "title": "Contract SFMTA-2020-48 with Jacobs Engineering Group, Contract SFMTA-2020-49 with STV and Contract SFMTA-2020-50 with WSP USA to provide as-needed specialized consulting services",
+   "decision": "ADOPTED — 4 ayes (Resolution 201117-098)"
+  },
+  {
+   "no": "10.4",
+   "title": "Contract 2020-14, FTA As-Needed Intelligent Transportation Systems & Contract 2020-15, FTA Small Business Enterprise Set-Aside As-Needed Intelligent Transportation Systems with Auriga Corporation",
+   "decision": "ADOPTED — 4 ayes (Resolution 201117-099)"
+  },
+  {
+   "no": "10.5",
+   "title": "Contract 2020-11 with Auriga Corporation, Contract 2020-12 with Diamond Technology, and Contract 2020-13 with Parsons Transportation Group for As-Needed IT and ITS Engineering Services",
+   "decision": "ADOPTED — 4 ayes (Resolution 201117-100)"
+  },
+  {
+   "no": "10.6",
+   "title": "Establishing meeting schedule for 2021 for meetings of the SFMTA Board of Directors/Parking Authority Commission and the Policy and Governance Committee",
+   "decision": "ADOPTED — 4 ayes (Resolution 201117-101)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation, discussion and possible action regarding the SFMTA’s draft Racial Equity Action Plan"
+  },
+  {
+   "no": "12",
+   "title": "Presentation, discussion and possible action regarding the SFMTA’s quarterly Human Resources report including the Blanding Report"
+  },
+  {
+   "no": "13",
+   "title": "Encouraging the Metropolitan Transportation Commission to amend Strategy EN7: Institute Telecommuting Mandates for Major Office-Based Employers; and reiterating support for the Plan Bay Area 2050 Guiding Principles",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

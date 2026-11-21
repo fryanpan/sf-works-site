@@ -1,0 +1,115 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-12-07",
+ "id": "g55-40026",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40026",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/25443"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of November 16, 2021 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the following parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 211207-139)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the traffic modification to reduce the speed limit from 25 miles per hour to 20 miles per hour on portions of seven streets in the City",
+   "decision": "ADOPTED — 6 ayes (Resolution 211207-140)"
+  },
+  {
+   "no": "10.3",
+   "title": "Amending the Transportation Code to reduce the Trial Courts Courthouse Construction fee for parking violations",
+   "decision": "ADOPTED — 6 ayes (Resolution 211207-141)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to issue a Request for Proposals to solicit proposals from parking management companies for two contracts",
+   "decision": "ADOPTED — 6 ayes (Resolution 211207-142)"
+  },
+  {
+   "no": "10.5",
+   "title": "Authorizing the Director to issue a Request for Proposals to solicit proposals from parking management companies for two contracts",
+   "decision": "ADOPTED — 6 ayes (Resolution 211207-143)"
+  },
+  {
+   "no": "10.6",
+   "title": "Authorizing the Director to issue a Request for Proposals for Parking Meter Coin and Data Collections services, to rank proposals, and to negotiate a contract for coin collection and related services",
+   "severed": true
+  },
+  {
+   "no": "10.7",
+   "title": "Adopting findings to allow remote meetings during the COVID-19 emergency",
+   "decision": "ADOPTED — 6 ayes (Resolution 211207-145)"
+  },
+  {
+   "no": "11",
+   "title": "Urging the Board of Supervisors to Place the $400 Million Transportation Improvement, Muni Reliability, and Street Safety General Obligation Bond on the June 2022 ballot",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  },
+  {
+   "no": "12",
+   "title": "Approving the Title VI Service Equity Analysis for the proposed Municipal Railway route and service changes to be made in Winter 2022",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,72 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-11-06",
+ "id": "g55-47583",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=47583",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "5",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "6",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the San Francisco Municipal Transportation Agency Board of Directors"
+  },
+  {
+   "no": "6.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA"
+  },
+  {
+   "no": "6.1A",
+   "title": "Qunde Feng v. Pablo Reyes, et al., SF Superior Ct. Case No. CGC-21-597341 filed 12/28/2021 for $100,000. Lawsuit involving allegations of personal injury from operator negligence"
+  },
+  {
+   "no": "6.2",
+   "title": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items A-E are exempt from the California Environmental Quality Act"
+  },
+  {
+   "no": "6.3",
+   "title": "Approving Contract No. SFMTA-2025-11-LOC with Conduent Inc. for software design and implementation services to upgrade the Computer Aided Dispatch and Automatic Vehicle Location system"
+  },
+  {
+   "no": "6.4",
+   "title": "Approving Contract Modification No. 4 to the Agreement for Design Review, Software, Implementation and Testing Services for an Advanced Train Control System for the Central Subway, Contract No. 1266-2"
+  },
+  {
+   "no": "7",
+   "title": "Presentation and discussion regarding a Muni Forward Program Update"
+  },
+  {
+   "no": "8",
+   "title": "Presentation and discussion regarding a Portal Project Update"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

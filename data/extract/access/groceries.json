@@ -1,0 +1,1257 @@
+{
+"fetched_on": "2026-09-30",
+"meta": {
+"source": "OpenStreetMap via Overpass, shop=supermarket|grocery|greengrocer",
+"osm_base": "2026-09-30T14:06:34Z",
+"licence": "ODbL",
+"clip": "SF bounding box, south of 37.7081 N dropped"
+},
+"records": [
+{
+"osm": "node/1002186270",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.79009,
+"lon": -122.423414
+},
+{
+"osm": "node/10057579916",
+"name": "Island Cove Market",
+"shop": "supermarket",
+"lat": 37.826391,
+"lon": -122.370447
+},
+{
+"osm": "node/10311776854",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.774613,
+"lon": -122.465134
+},
+{
+"osm": "node/10610255658",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.729066,
+"lon": -122.476323
+},
+{
+"osm": "node/10679932192",
+"name": "J and S Produce",
+"shop": "greengrocer",
+"lat": 37.729625,
+"lon": -122.404566
+},
+{
+"osm": "node/10749443734",
+"name": "Chong Hing Supermarket",
+"shop": "greengrocer",
+"lat": 37.796589,
+"lon": -122.408561
+},
+{
+"osm": "node/10794112885",
+"name": "Royal Market",
+"shop": "supermarket",
+"lat": 37.780275,
+"lon": -122.476748
+},
+{
+"osm": "node/11050120814",
+"name": "El Rio Produce",
+"shop": "greengrocer",
+"lat": 37.782233,
+"lon": -122.483084
+},
+{
+"osm": "node/11064507175",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.796904,
+"lon": -122.398542
+},
+{
+"osm": "node/11162304805",
+"name": "Fruit Barn",
+"shop": "supermarket",
+"lat": 37.724727,
+"lon": -122.459482
+},
+{
+"osm": "node/11330110153",
+"name": "All Fresh Market",
+"shop": "supermarket",
+"lat": 37.724573,
+"lon": -122.458761
+},
+{
+"osm": "node/11705132475",
+"name": "Golden Gate Market & Produce",
+"shop": "grocery",
+"lat": 37.783209,
+"lon": -122.41428
+},
+{
+"osm": "node/11817396086",
+"name": "SOMA Produce",
+"shop": "greengrocer",
+"lat": 37.780658,
+"lon": -122.408585
+},
+{
+"osm": "node/11897570031",
+"name": "Chaat Corner Indian Grocery",
+"shop": "supermarket",
+"lat": 37.783578,
+"lon": -122.398918
+},
+{
+"osm": "node/11950809144",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.778118,
+"lon": -122.426427
+},
+{
+"osm": "node/11974004195",
+"name": "Wo Chong Company",
+"shop": "greengrocer",
+"lat": 37.794917,
+"lon": -122.407627
+},
+{
+"osm": "node/11990617962",
+"name": "Hop Hing Market",
+"shop": "greengrocer",
+"lat": 37.796982,
+"lon": -122.408646
+},
+{
+"osm": "node/1205120785",
+"name": "Super Save",
+"shop": "supermarket",
+"lat": 37.736763,
+"lon": -122.389719
+},
+{
+"osm": "node/1213823254",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.770999,
+"lon": -122.407737
+},
+{
+"osm": "node/1221102760",
+"name": "Aguila de Oro",
+"shop": "greengrocer",
+"lat": 37.730629,
+"lon": -122.392032
+},
+{
+"osm": "node/12522217330",
+"name": "Samiramis Imports",
+"shop": "supermarket",
+"lat": 37.749218,
+"lon": -122.418351
+},
+{
+"osm": "node/12522217331",
+"name": "La Loma Produce",
+"shop": "greengrocer",
+"lat": 37.751437,
+"lon": -122.418575
+},
+{
+"osm": "node/12816926991",
+"name": "Produce Land",
+"shop": "greengrocer",
+"lat": 37.794248,
+"lon": -122.405929
+},
+{
+"osm": "node/12863374035",
+"name": "Mission Food Center",
+"shop": "supermarket",
+"lat": 37.759213,
+"lon": -122.419276
+},
+{
+"osm": "node/12900454244",
+"name": "Epicurean Trader",
+"shop": "greengrocer",
+"lat": 37.765293,
+"lon": -122.432112
+},
+{
+"osm": "node/12947723694",
+"name": "Noriega Market",
+"shop": "greengrocer",
+"lat": 37.753771,
+"lon": -122.490127
+},
+{
+"osm": "node/13069359115",
+"name": "Luke's Local",
+"shop": "supermarket",
+"lat": 37.764612,
+"lon": -122.466251
+},
+{
+"osm": "node/13311274107",
+"name": "Ha Mini Mart",
+"shop": "supermarket",
+"lat": 37.794371,
+"lon": -122.406434
+},
+{
+"osm": "node/13461244801",
+"name": "Mi Rancho Supermarket",
+"shop": "grocery",
+"lat": 37.724932,
+"lon": -122.39481
+},
+{
+"osm": "node/1350484814",
+"name": "Le Beau Market",
+"shop": "supermarket",
+"lat": 37.792884,
+"lon": -122.416234
+},
+{
+"osm": "node/13608214526",
+"name": "El Chavo Supermercado",
+"shop": "greengrocer",
+"lat": 37.723641,
+"lon": -122.436526
+},
+{
+"osm": "node/13702967501",
+"name": "Mike's Market",
+"shop": "grocery",
+"lat": 37.736387,
+"lon": -122.398396
+},
+{
+"osm": "node/13710411302",
+"name": "Cordova Market - Grocery, Meat, Produce, Liquor & Craft Beer",
+"shop": "grocery",
+"lat": 37.713573,
+"lon": -122.436484
+},
+{
+"osm": "node/13765472818",
+"name": "El Chico Produce #4",
+"shop": "greengrocer",
+"lat": 37.752581,
+"lon": -122.411245
+},
+{
+"osm": "node/13768550399",
+"name": "Indian Spices and Grocery",
+"shop": "supermarket",
+"lat": 37.755257,
+"lon": -122.420274
+},
+{
+"osm": "node/13951064003",
+"name": "Fresh Start #1",
+"shop": "supermarket",
+"lat": 37.754205,
+"lon": -122.40613
+},
+{
+"osm": "node/1478520948",
+"name": "Bi-Rite Market",
+"shop": "supermarket",
+"lat": 37.796547,
+"lon": -122.421707
+},
+{
+"osm": "node/1512000860",
+"name": "Courtney's Produce",
+"shop": "greengrocer",
+"lat": 37.767252,
+"lon": -122.435473
+},
+{
+"osm": "node/1924130352",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.723798,
+"lon": -122.454681
+},
+{
+"osm": "node/2047570604",
+"name": "Casa Guadalupe",
+"shop": "supermarket",
+"lat": 37.749213,
+"lon": -122.418034
+},
+{
+"osm": "node/2050131394",
+"name": "Valencia Farmers Market",
+"shop": "supermarket",
+"lat": 37.752238,
+"lon": -122.420527
+},
+{
+"osm": "node/2054075845",
+"name": "Mi Tienda Supermarket",
+"shop": "greengrocer",
+"lat": 37.724559,
+"lon": -122.435104
+},
+{
+"osm": "node/2054109940",
+"name": "Casa Lucas",
+"shop": "greengrocer",
+"lat": 37.725308,
+"lon": -122.434138
+},
+{
+"osm": "node/2059226347",
+"name": "San Bruno Supermarket",
+"shop": "supermarket",
+"lat": 37.73039,
+"lon": -122.405106
+},
+{
+"osm": "node/2059477223",
+"name": "La Loma Produce",
+"shop": "greengrocer",
+"lat": 37.727847,
+"lon": -122.403466
+},
+{
+"osm": "node/2069159598",
+"name": "Valencia Whole Foods",
+"shop": "supermarket",
+"lat": 37.757021,
+"lon": -122.420861
+},
+{
+"osm": "node/2071312174",
+"name": "Kum Luen",
+"shop": "greengrocer",
+"lat": 37.797483,
+"lon": -122.408732
+},
+{
+"osm": "node/2072581631",
+"name": "Sun Sun Produce",
+"shop": "greengrocer",
+"lat": 37.798525,
+"lon": -122.410354
+},
+{
+"osm": "node/2074158419",
+"name": "7th and Clement Market",
+"shop": "greengrocer",
+"lat": 37.78306,
+"lon": -122.46508
+},
+{
+"osm": "node/2078333126",
+"name": "Buddies Market",
+"shop": "supermarket",
+"lat": 37.734623,
+"lon": -122.433712
+},
+{
+"osm": "node/2130264969",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.805481,
+"lon": -122.41379
+},
+{
+"osm": "node/2184767720",
+"name": "Nijiya Market",
+"shop": "supermarket",
+"lat": 37.785255,
+"lon": -122.431032
+},
+{
+"osm": "node/2184790554",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.790769,
+"lon": -122.41793
+},
+{
+"osm": "node/2220082604",
+"name": "New Russian Hill Market",
+"shop": "supermarket",
+"lat": 37.795977,
+"lon": -122.414902
+},
+{
+"osm": "node/2338835471",
+"name": "Green Earth",
+"shop": "supermarket",
+"lat": 37.777716,
+"lon": -122.43816
+},
+{
+"osm": "node/2479681841",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.768743,
+"lon": -122.427065
+},
+{
+"osm": "node/2641796593",
+"name": "Grocery Outlet",
+"shop": "supermarket",
+"lat": 37.741579,
+"lon": -122.405368
+},
+{
+"osm": "node/2667574537",
+"name": "Five Markets",
+"shop": "supermarket",
+"lat": 37.752943,
+"lon": -122.408716
+},
+{
+"osm": "node/2693004231",
+"name": "Frank's Liquors",
+"shop": "supermarket",
+"lat": 37.769421,
+"lon": -122.450545
+},
+{
+"osm": "node/2698387925",
+"name": "Golden Farmer Market",
+"shop": "supermarket",
+"lat": 37.790205,
+"lon": -122.420782
+},
+{
+"osm": "node/293632937",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.776778,
+"lon": -122.394071
+},
+{
+"osm": "node/3148123214",
+"name": "Pang Kee Bargain Market",
+"shop": "supermarket",
+"lat": 37.797906,
+"lon": -122.408542
+},
+{
+"osm": "node/3148123215",
+"name": "Sun Kau Shing Co., Inc.",
+"shop": "supermarket",
+"lat": 37.798411,
+"lon": -122.408638
+},
+{
+"osm": "node/332787306",
+"name": "Calmart",
+"shop": "supermarket",
+"lat": 37.786265,
+"lon": -122.452805
+},
+{
+"osm": "node/3376135508",
+"name": "Sutter Fine Foods",
+"shop": "supermarket",
+"lat": 37.788423,
+"lon": -122.416568
+},
+{
+"osm": "node/3482822177",
+"name": "La Rancho Market",
+"shop": "supermarket",
+"lat": 37.752364,
+"lon": -122.414289
+},
+{
+"osm": "node/3522837920",
+"name": "KJ Produce Market",
+"shop": "greengrocer",
+"lat": 37.764366,
+"lon": -122.46225
+},
+{
+"osm": "node/3524458050",
+"name": "6001 California Market (Appel & Dietrich)",
+"shop": "supermarket",
+"lat": 37.783906,
+"lon": -122.481967
+},
+{
+"osm": "node/3564521986",
+"name": "Good Luck Market",
+"shop": "supermarket",
+"lat": 37.742766,
+"lon": -122.479296
+},
+{
+"osm": "node/3641710571",
+"name": "Harvest Urban Market",
+"shop": "supermarket",
+"lat": 37.776487,
+"lon": -122.411637
+},
+{
+"osm": "node/3850073315",
+"name": "Gus's Community Market",
+"shop": "supermarket",
+"lat": 37.763978,
+"lon": -122.412823
+},
+{
+"osm": "node/3857827557",
+"name": "Rubin's Market",
+"shop": "supermarket",
+"lat": 37.749437,
+"lon": -122.413623
+},
+{
+"osm": "node/3864557016",
+"name": "Gus's Market",
+"shop": "greengrocer",
+"lat": 37.770138,
+"lon": -122.447747
+},
+{
+"osm": "node/389404007",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.78115,
+"lon": -122.399779
+},
+{
+"osm": "node/3969574176",
+"name": "Kiki Supermarket",
+"shop": "supermarket",
+"lat": 37.795529,
+"lon": -122.410025
+},
+{
+"osm": "node/3993039687",
+"name": "Vegefarm @ San Francisco",
+"shop": "greengrocer",
+"lat": 37.763582,
+"lon": -122.479763
+},
+{
+"osm": "node/4017211397",
+"name": "Dong Hing Supermarket",
+"shop": "greengrocer",
+"lat": 37.796971,
+"lon": -122.408352
+},
+{
+"osm": "node/4017211398",
+"name": "Huaxing Produce Inc.",
+"shop": "greengrocer",
+"lat": 37.796818,
+"lon": -122.408318
+},
+{
+"osm": "node/4017220288",
+"name": "J & L Vegi Supermarket",
+"shop": "supermarket",
+"lat": 37.797093,
+"lon": -122.408668
+},
+{
+"osm": "node/4018792599",
+"name": "Mi Duo Duo Market",
+"shop": "greengrocer",
+"lat": 37.763197,
+"lon": -122.482745
+},
+{
+"osm": "node/4018792716",
+"name": "Irving Seafood Market",
+"shop": "greengrocer",
+"lat": 37.763531,
+"lon": -122.480925
+},
+{
+"osm": "node/4018792796",
+"name": "New Wing Cheung Store",
+"shop": "greengrocer",
+"lat": 37.763284,
+"lon": -122.480772
+},
+{
+"osm": "node/4018980288",
+"name": "New Asia Market",
+"shop": "supermarket",
+"lat": 37.796867,
+"lon": -122.407988
+},
+{
+"osm": "node/4101128318",
+"name": "Produce",
+"shop": "greengrocer",
+"lat": 37.797063,
+"lon": -122.406242
+},
+{
+"osm": "node/4106910655",
+"name": "VeggieLand Market",
+"shop": "greengrocer",
+"lat": 37.795712,
+"lon": -122.408407
+},
+{
+"osm": "node/4113464697",
+"name": "Casa Guadalupe",
+"shop": "supermarket",
+"lat": 37.748334,
+"lon": -122.418331
+},
+{
+"osm": "node/4117790314",
+"name": "Mi Tierra Market",
+"shop": "greengrocer",
+"lat": 37.764592,
+"lon": -122.419447
+},
+{
+"osm": "node/416779714",
+"name": "Marina Supermarket",
+"shop": "supermarket",
+"lat": 37.800022,
+"lon": -122.441613
+},
+{
+"osm": "node/4173566690",
+"name": "Casa Maria",
+"shop": "supermarket",
+"lat": 37.753871,
+"lon": -122.416268
+},
+{
+"osm": "node/4218361464",
+"name": "City Discount Meat & Grocery Market",
+"shop": "supermarket",
+"lat": 37.760336,
+"lon": -122.41941
+},
+{
+"osm": "node/4322166628",
+"name": "Produce Market",
+"shop": "greengrocer",
+"lat": 37.765132,
+"lon": -122.420782
+},
+{
+"osm": "node/4349255905",
+"name": "Balboa Produce Market",
+"shop": "greengrocer",
+"lat": 37.775558,
+"lon": -122.497881
+},
+{
+"osm": "node/4548821705",
+"name": "Mi Pueblito Market",
+"shop": "supermarket",
+"lat": 37.752836,
+"lon": -122.418345
+},
+{
+"osm": "node/4564626093",
+"name": "Grocery Outlet",
+"shop": "supermarket",
+"lat": 37.779749,
+"lon": -122.487636
+},
+{
+"osm": "node/459504817",
+"name": "Mollie Stone's",
+"shop": "supermarket",
+"lat": 37.760666,
+"lon": -122.436559
+},
+{
+"osm": "node/4611731078",
+"name": "La Mission Market",
+"shop": "greengrocer",
+"lat": 37.763607,
+"lon": -122.419328
+},
+{
+"osm": "node/4613804468",
+"name": "City Produce",
+"shop": "greengrocer",
+"lat": 37.779844,
+"lon": -122.407532
+},
+{
+"osm": "node/4614039301",
+"name": "Tai Hing Market",
+"shop": "greengrocer",
+"lat": 37.797573,
+"lon": -122.40815
+},
+{
+"osm": "node/4625007238",
+"name": "Chung Hing Produce Co.",
+"shop": "greengrocer",
+"lat": 37.796602,
+"lon": -122.409965
+},
+{
+"osm": "node/4625016641",
+"name": "Gold Coin Trading Co",
+"shop": "greengrocer",
+"lat": 37.796621,
+"lon": -122.409735
+},
+{
+"osm": "node/4625108173",
+"name": "Jackson Market",
+"shop": "supermarket",
+"lat": 37.794899,
+"lon": -122.414947
+},
+{
+"osm": "node/4625169865",
+"name": "VJ Grocery",
+"shop": "grocery",
+"lat": 37.793376,
+"lon": -122.412688
+},
+{
+"osm": "node/4625224087",
+"name": "",
+"shop": "grocery",
+"lat": 37.798533,
+"lon": -122.432557
+},
+{
+"osm": "node/4630226706",
+"name": "New California Market",
+"shop": "supermarket",
+"lat": 37.784026,
+"lon": -122.47882
+},
+{
+"osm": "node/4631891265",
+"name": "Mi Reyna Market",
+"shop": "grocery",
+"lat": 37.785731,
+"lon": -122.414517
+},
+{
+"osm": "node/4637210183",
+"name": "J H Grocery and Liquor",
+"shop": "supermarket",
+"lat": 37.794474,
+"lon": -122.418255
+},
+{
+"osm": "node/4661543003",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.76433,
+"lon": -122.402724
+},
+{
+"osm": "node/4693634740",
+"name": "Gus's Community Market",
+"shop": "supermarket",
+"lat": 37.774272,
+"lon": -122.391412
+},
+{
+"osm": "node/4704557447",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.785398,
+"lon": -122.405629
+},
+{
+"osm": "node/4852448016",
+"name": "Falletti Foods",
+"shop": "supermarket",
+"lat": 37.773314,
+"lon": -122.43894
+},
+{
+"osm": "node/5352315990",
+"name": "Golden Natural Foods",
+"shop": "greengrocer",
+"lat": 37.768885,
+"lon": -122.429265
+},
+{
+"osm": "node/5834929886",
+"name": "Downtown Grocery",
+"shop": "greengrocer",
+"lat": 37.78388,
+"lon": -122.412192
+},
+{
+"osm": "node/5998482888",
+"name": "23rd and Mission Produce",
+"shop": "greengrocer",
+"lat": 37.753706,
+"lon": -122.418738
+},
+{
+"osm": "node/612767884",
+"name": "JW & L Market",
+"shop": "supermarket",
+"lat": 37.798674,
+"lon": -122.409002
+},
+{
+"osm": "node/6167357459",
+"name": "",
+"shop": "greengrocer",
+"lat": 37.757475,
+"lon": -122.413615
+},
+{
+"osm": "node/6314144278",
+"name": "Woori Food Market",
+"shop": "greengrocer",
+"lat": 37.78376,
+"lon": -122.432654
+},
+{
+"osm": "node/632815535",
+"name": "West Portal Produce Market",
+"shop": "greengrocer",
+"lat": 37.738704,
+"lon": -122.468484
+},
+{
+"osm": "node/6469314085",
+"name": "Woodlands Market",
+"shop": "supermarket",
+"lat": 37.789034,
+"lon": -122.39198
+},
+{
+"osm": "node/6486931285",
+"name": "New World Market",
+"shop": "supermarket",
+"lat": 37.780109,
+"lon": -122.480107
+},
+{
+"osm": "node/6791585433",
+"name": "Olive",
+"shop": "grocery",
+"lat": 37.783158,
+"lon": -122.462431
+},
+{
+"osm": "node/6791676306",
+"name": "New Lien Hing Supermarket",
+"shop": "greengrocer",
+"lat": 37.783107,
+"lon": -122.463564
+},
+{
+"osm": "node/6833462297",
+"name": "Yin Xing Food Company",
+"shop": "greengrocer",
+"lat": 37.782747,
+"lon": -122.46644
+},
+{
+"osm": "node/7418043292",
+"name": "Silver Produce",
+"shop": "greengrocer",
+"lat": 37.73026,
+"lon": -122.404555
+},
+{
+"osm": "node/761762694",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.726593,
+"lon": -122.476207
+},
+{
+"osm": "node/8140177640",
+"name": "Luke's Local",
+"shop": "supermarket",
+"lat": 37.797229,
+"lon": -122.43527
+},
+{
+"osm": "node/8663867589",
+"name": "H Mart",
+"shop": "supermarket",
+"lat": 37.710398,
+"lon": -122.46765
+},
+{
+"osm": "node/904141569",
+"name": "Starco Mart",
+"shop": "grocery",
+"lat": 37.778617,
+"lon": -122.408846
+},
+{
+"osm": "node/9147266528",
+"name": "Gus's Community Market",
+"shop": "supermarket",
+"lat": 37.75287,
+"lon": -122.503437
+},
+{
+"osm": "node/9794184321",
+"name": "Boss Supermarket",
+"shop": "supermarket",
+"lat": 37.753446,
+"lon": -122.491286
+},
+{
+"osm": "node/9925676928",
+"name": "Guzman Produce Market",
+"shop": "greengrocer",
+"lat": 37.714974,
+"lon": -122.44207
+},
+{
+"osm": "relation/21226959",
+"name": "Good Life Grocery",
+"shop": "supermarket",
+"lat": 37.7389,
+"lon": -122.416722
+},
+{
+"osm": "relation/3585039",
+"name": "Andronico's Community Market",
+"shop": "supermarket",
+"lat": 37.764142,
+"lon": -122.471169
+},
+{
+"osm": "way/1156829796",
+"name": "Andronico's",
+"shop": "supermarket",
+"lat": 37.78222,
+"lon": -122.49306
+},
+{
+"osm": "way/1378825464",
+"name": "Lucky",
+"shop": "supermarket",
+"lat": 37.733042,
+"lon": -122.489454
+},
+{
+"osm": "way/151183375",
+"name": "Foods Co",
+"shop": "supermarket",
+"lat": 37.729743,
+"lon": -122.398821
+},
+{
+"osm": "way/169204245",
+"name": "Rainbow Grocery Coop",
+"shop": "supermarket",
+"lat": 37.769061,
+"lon": -122.415074
+},
+{
+"osm": "way/170845442",
+"name": "Smart & Final",
+"shop": "supermarket",
+"lat": 37.782288,
+"lon": -122.465175
+},
+{
+"osm": "way/194906343",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.752019,
+"lon": -122.430905
+},
+{
+"osm": "way/219058329",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.754188,
+"lon": -122.488855
+},
+{
+"osm": "way/219059013",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.772537,
+"lon": -122.509354
+},
+{
+"osm": "way/219059390",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.731241,
+"lon": -122.450051
+},
+{
+"osm": "way/219071301",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.743569,
+"lon": -122.438946
+},
+{
+"osm": "way/219072560",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.76911,
+"lon": -122.428321
+},
+{
+"osm": "way/228246796",
+"name": "Whole Foods Market",
+"shop": "supermarket",
+"lat": 37.769553,
+"lon": -122.452795
+},
+{
+"osm": "way/231656266",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.743251,
+"lon": -122.422452
+},
+{
+"osm": "way/256912288",
+"name": "Miraloma Market",
+"shop": "supermarket",
+"lat": 37.74378,
+"lon": -122.453695
+},
+{
+"osm": "way/258157226",
+"name": "Casa Lucas Market",
+"shop": "greengrocer",
+"lat": 37.752946,
+"lon": -122.410642
+},
+{
+"osm": "way/25821952",
+"name": "Foods Co",
+"shop": "supermarket",
+"lat": 37.767624,
+"lon": -122.416119
+},
+{
+"osm": "way/260194579",
+"name": "Arguello Market",
+"shop": "supermarket",
+"lat": 37.775653,
+"lon": -122.458144
+},
+{
+"osm": "way/260967541",
+"name": "Chef Bowl, Inc.",
+"shop": "supermarket",
+"lat": 37.798289,
+"lon": -122.409948
+},
+{
+"osm": "way/261292750",
+"name": "Bi-Rite Market",
+"shop": "supermarket",
+"lat": 37.774803,
+"lon": -122.437487
+},
+{
+"osm": "way/26135377",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.80445,
+"lon": -122.432831
+},
+{
+"osm": "way/263224863",
+"name": "Mollie Stone's",
+"shop": "supermarket",
+"lat": 37.788553,
+"lon": -122.434522
+},
+{
+"osm": "way/264202048",
+"name": "Roxie’s Market & Deli",
+"shop": "supermarket",
+"lat": 37.760478,
+"lon": -122.46638
+},
+{
+"osm": "way/264371887",
+"name": "Haight Street Market",
+"shop": "supermarket",
+"lat": 37.770204,
+"lon": -122.447631
+},
+{
+"osm": "way/264645161",
+"name": "Luke's Local",
+"shop": "supermarket",
+"lat": 37.765053,
+"lon": -122.449537
+},
+{
+"osm": "way/273331515",
+"name": "Bryan's Grocery",
+"shop": "supermarket",
+"lat": 37.786454,
+"lon": -122.450848
+},
+{
+"osm": "way/273538398",
+"name": "El Ahorro Market",
+"shop": "supermarket",
+"lat": 37.741476,
+"lon": -122.422834
+},
+{
+"osm": "way/273575865",
+"name": "El Chavo",
+"shop": "supermarket",
+"lat": 37.744705,
+"lon": -122.420889
+},
+{
+"osm": "way/274847458",
+"name": "Apple Land Inc. Produce",
+"shop": "greengrocer",
+"lat": 37.782554,
+"lon": -122.468521
+},
+{
+"osm": "way/276546465",
+"name": "Mollie Stone's",
+"shop": "supermarket",
+"lat": 37.744743,
+"lon": -122.452308
+},
+{
+"osm": "way/276623337",
+"name": "22nd & Irving Market",
+"shop": "supermarket",
+"lat": 37.763181,
+"lon": -122.48055
+},
+{
+"osm": "way/276814493",
+"name": "25th Irving Market",
+"shop": "supermarket",
+"lat": 37.763014,
+"lon": -122.484088
+},
+{
+"osm": "way/277743066",
+"name": "Canyon Market",
+"shop": "supermarket",
+"lat": 37.734069,
+"lon": -122.43382
+},
+{
+"osm": "way/277861419",
+"name": "Other Avenues Grocery Co-op",
+"shop": "supermarket",
+"lat": 37.760676,
+"lon": -122.504353
+},
+{
+"osm": "way/278909610",
+"name": "Parkside Farmers Market",
+"shop": "supermarket",
+"lat": 37.742981,
+"lon": -122.472261
+},
+{
+"osm": "way/288678028",
+"name": "Sunset Super",
+"shop": "supermarket",
+"lat": 37.738092,
+"lon": -122.497375
+},
+{
+"osm": "way/28941473",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.743434,
+"lon": -122.474116
+},
+{
+"osm": "way/289560462",
+"name": "Grocery Outlet",
+"shop": "supermarket",
+"lat": 37.708499,
+"lon": -122.406003
+},
+{
+"osm": "way/290044336",
+"name": "Grocery Outlet",
+"shop": "supermarket",
+"lat": 37.731046,
+"lon": -122.409058
+},
+{
+"osm": "way/290616523",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.71993,
+"lon": -122.438978
+},
+{
+"osm": "way/293604057",
+"name": "Safeway",
+"shop": "supermarket",
+"lat": 37.766878,
+"lon": -122.409297
+},
+{
+"osm": "way/32611756",
+"name": "Luke's Local Grocery",
+"shop": "supermarket",
+"lat": 37.799672,
+"lon": -122.408784
+},
+{
+"osm": "way/34323155",
+"name": "Trader Joe's",
+"shop": "supermarket",
+"lat": 37.783389,
+"lon": -122.447839
+},
+{
+"osm": "way/42916777",
+"name": "Chef'Store",
+"shop": "supermarket",
+"lat": 37.770524,
+"lon": -122.418439
+},
+{
+"osm": "way/503144637",
+"name": "Manila Oriental Market",
+"shop": "supermarket",
+"lat": 37.730323,
+"lon": -122.428984
+},
+{
+"osm": "way/503427028",
+"name": "Grocery Outlet",
+"shop": "supermarket",
+"lat": 37.753123,
+"lon": -122.415864
+},
+{
+"osm": "way/624596716",
+"name": "Richmond New May Wah Supermarket",
+"shop": "supermarket",
+"lat": 37.782599,
+"lon": -122.466956
+}
+]
+}

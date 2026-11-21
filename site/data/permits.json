@@ -1,0 +1,690 @@
+{
+ "queriedAt": "2026-09-21",
+ "cutoff": "2025-01-01",
+ "validThrough": {
+  "date": "2026-03-25",
+  "limitedBy": "Filings with a full observation window",
+  "why": "A first review counts here only once it has finished, and every filing year is measured on the same 180-day window. Filings after this date have not had that window yet, so the recent end of the series is still filling and will move.",
+  "sources": [
+   {
+    "label": "Filings with a full observation window",
+    "through": "2026-03-25",
+    "binding": true
+   },
+   {
+    "label": "Plan Review Details",
+    "through": "2026-09-20",
+    "binding": false
+   },
+   {
+    "label": "PermitSF Records",
+    "through": "2026-09-21",
+    "binding": false
+   }
+  ]
+ },
+ "coverage": {
+  "planReview": {
+   "through": "2026-09-20",
+   "published": "2026-09-21",
+   "observed": "2026-09-20"
+  },
+  "permitsf": {
+   "through": "2026-09-21",
+   "published": "2026-09-21",
+   "observed": "2026-09-21"
+  }
+ },
+ "onlineSystem": {
+  "targetBizDays": 2,
+  "targetedTypeCount": 5,
+  "allTypes": 9,
+  "withTarget": {
+   "n": 3877,
+   "p50": 4,
+   "p75": 9,
+   "p90": 20,
+   "max": 139,
+   "overTargetPct": 70.2
+  },
+  "types": [
+   {
+    "type": "Doors, siding, windows permit",
+    "targeted": true,
+    "n": 1417,
+    "p50": 4,
+    "p75": 6,
+    "p90": 13,
+    "max": 99,
+    "overTargetPct": 67.6
+   },
+   {
+    "type": "Reroofing permit",
+    "targeted": true,
+    "n": 970,
+    "p50": 2,
+    "p75": 3,
+    "p90": 7,
+    "max": 49,
+    "overTargetPct": 35.6
+   },
+   {
+    "type": "Fire alarm permit",
+    "targeted": true,
+    "n": 893,
+    "p50": 8,
+    "p75": 15,
+    "p90": 35,
+    "max": 139,
+    "overTargetPct": 93.6
+   },
+   {
+    "type": "Fire sprinkler permit",
+    "targeted": true,
+    "n": 568,
+    "p50": 9,
+    "p75": 17,
+    "p90": 38,
+    "max": 119,
+    "overTargetPct": 97.4
+   },
+   {
+    "type": "Special event intake form",
+    "targeted": false,
+    "n": 467,
+    "p50": 2,
+    "p75": 2,
+    "p90": 3,
+    "max": 55,
+    "overTargetPct": null
+   },
+   {
+    "type": "Plumbing and mechanical permit",
+    "targeted": false,
+    "n": 205,
+    "p50": 1,
+    "p75": 3,
+    "p90": 3,
+    "max": 25,
+    "overTargetPct": null
+   },
+   {
+    "type": "Electrical permit (standard)",
+    "targeted": false,
+    "n": 202,
+    "p50": 1,
+    "p75": 2,
+    "p90": 4,
+    "max": 8,
+    "overTargetPct": null
+   },
+   {
+    "type": "Sign or awning permit",
+    "targeted": true,
+    "n": 29,
+    "p50": 19,
+    "p75": 30,
+    "p90": 44,
+    "max": 54,
+    "overTargetPct": 100
+   },
+   {
+    "type": "Kitchen or bath remodeling permit",
+    "targeted": false,
+    "n": 21,
+    "p50": 1,
+    "p75": 2,
+    "p90": 3,
+    "max": 3,
+    "overTargetPct": null
+   }
+  ]
+ },
+ "planReview": {
+  "targetDays": 30,
+  "cohortWindowDays": 180,
+  "cohorts": [
+   {
+    "year": 2014,
+    "filed": 12030,
+    "kept": 6798,
+    "keptPct": 57,
+    "queue": {
+     "n": 6798,
+     "p50": 13,
+     "p75": 54,
+     "p90": 106,
+     "max": 179
+    },
+    "review": {
+     "n": 6798,
+     "p50": 12,
+     "p75": 42,
+     "p90": 89,
+     "max": 180
+    }
+   },
+   {
+    "year": 2015,
+    "filed": 14545,
+    "kept": 8333,
+    "keptPct": 57,
+    "queue": {
+     "n": 8333,
+     "p50": 22,
+     "p75": 77,
+     "p90": 120,
+     "max": 180
+    },
+    "review": {
+     "n": 8333,
+     "p50": 13,
+     "p75": 43,
+     "p90": 92,
+     "max": 180
+    }
+   },
+   {
+    "year": 2016,
+    "filed": 15130,
+    "kept": 8241,
+    "keptPct": 54,
+    "queue": {
+     "n": 8241,
+     "p50": 20,
+     "p75": 66,
+     "p90": 119,
+     "max": 180
+    },
+    "review": {
+     "n": 8241,
+     "p50": 13,
+     "p75": 48,
+     "p90": 97,
+     "max": 180
+    }
+   },
+   {
+    "year": 2017,
+    "filed": 15055,
+    "kept": 7956,
+    "keptPct": 53,
+    "queue": {
+     "n": 7956,
+     "p50": 22,
+     "p75": 69,
+     "p90": 113,
+     "max": 179
+    },
+    "review": {
+     "n": 7956,
+     "p50": 14,
+     "p75": 50,
+     "p90": 99,
+     "max": 180
+    }
+   },
+   {
+    "year": 2018,
+    "filed": 14309,
+    "kept": 7790,
+    "keptPct": 54,
+    "queue": {
+     "n": 7790,
+     "p50": 31,
+     "p75": 80,
+     "p90": 125,
+     "max": 179
+    },
+    "review": {
+     "n": 7790,
+     "p50": 12,
+     "p75": 43,
+     "p90": 93,
+     "max": 180
+    }
+   },
+   {
+    "year": 2019,
+    "filed": 15042,
+    "kept": 7847,
+    "keptPct": 52,
+    "queue": {
+     "n": 7847,
+     "p50": 28,
+     "p75": 74,
+     "p90": 116,
+     "max": 180
+    },
+    "review": {
+     "n": 7847,
+     "p50": 9,
+     "p75": 46,
+     "p90": 94,
+     "max": 180
+    }
+   },
+   {
+    "year": 2020,
+    "filed": 10192,
+    "kept": 4410,
+    "keptPct": 43,
+    "queue": {
+     "n": 4410,
+     "p50": 19,
+     "p75": 67,
+     "p90": 116,
+     "max": 179
+    },
+    "review": {
+     "n": 4410,
+     "p50": 21,
+     "p75": 62,
+     "p90": 113,
+     "max": 178
+    }
+   },
+   {
+    "year": 2021,
+    "filed": 10002,
+    "kept": 4288,
+    "keptPct": 43,
+    "queue": {
+     "n": 4288,
+     "p50": 14,
+     "p75": 56,
+     "p90": 117,
+     "max": 178
+    },
+    "review": {
+     "n": 4288,
+     "p50": 26,
+     "p75": 70,
+     "p90": 120,
+     "max": 180
+    }
+   },
+   {
+    "year": 2022,
+    "filed": 9704,
+    "kept": 4322,
+    "keptPct": 45,
+    "queue": {
+     "n": 4322,
+     "p50": 9,
+     "p75": 51,
+     "p90": 101,
+     "max": 180
+    },
+    "review": {
+     "n": 4322,
+     "p50": 22,
+     "p75": 73,
+     "p90": 122,
+     "max": 180
+    }
+   },
+   {
+    "year": 2023,
+    "filed": 6940,
+    "kept": 4918,
+    "keptPct": 71,
+    "queue": {
+     "n": 4918,
+     "p50": 10,
+     "p75": 49,
+     "p90": 106,
+     "max": 180
+    },
+    "review": {
+     "n": 4918,
+     "p50": 19,
+     "p75": 47,
+     "p90": 88,
+     "max": 180
+    }
+   },
+   {
+    "year": 2024,
+    "filed": 5062,
+    "kept": 4471,
+    "keptPct": 88,
+    "queue": {
+     "n": 4471,
+     "p50": 1,
+     "p75": 4,
+     "p90": 41,
+     "max": 168
+    },
+    "review": {
+     "n": 4471,
+     "p50": 13,
+     "p75": 28,
+     "p90": 49,
+     "max": 174
+    }
+   },
+   {
+    "year": 2025,
+    "filed": 7749,
+    "kept": 7185,
+    "keptPct": 93,
+    "queue": {
+     "n": 7185,
+     "p50": 0,
+     "p75": 1,
+     "p90": 4,
+     "max": 179
+    },
+    "review": {
+     "n": 7185,
+     "p50": 13,
+     "p75": 29,
+     "p90": 45,
+     "max": 176
+    }
+   },
+   {
+    "year": 2026,
+    "filed": 6107,
+    "kept": 5018,
+    "keptPct": 82,
+    "queue": {
+     "n": 5018,
+     "p50": 0,
+     "p75": 1,
+     "p90": 5,
+     "max": 167
+    },
+    "review": {
+     "n": 5018,
+     "p50": 14,
+     "p75": 31,
+     "p90": 50,
+     "max": 167
+    }
+   }
+  ],
+  "firstReviews": 12270,
+  "unfinished": 1077,
+  "negatives": 1079,
+  "minPerStation": 100,
+  "stations": [
+   {
+    "station": "PAD-STR",
+    "department": "Department of Building Inspection",
+    "n": 821,
+    "queue": {
+     "n": 821,
+     "p50": 1,
+     "p75": 1,
+     "p90": 9,
+     "max": 291
+    },
+    "review": {
+     "n": 821,
+     "p50": 34,
+     "p75": 47,
+     "p90": 54,
+     "max": 328
+    },
+    "overTargetPct": 65.7
+   },
+   {
+    "station": "BLDG",
+    "department": "Department of Building Inspection",
+    "n": 1760,
+    "queue": {
+     "n": 1760,
+     "p50": 1,
+     "p75": 1,
+     "p90": 5,
+     "max": 303
+    },
+    "review": {
+     "n": 1760,
+     "p50": 34,
+     "p75": 48,
+     "p90": 57,
+     "max": 437
+    },
+    "overTargetPct": 61
+   },
+   {
+    "station": "DPW-BUF",
+    "department": "Public Works",
+    "n": 796,
+    "queue": {
+     "n": 796,
+     "p50": 1,
+     "p75": 1,
+     "p90": 5,
+     "max": 287
+    },
+    "review": {
+     "n": 796,
+     "p50": 30,
+     "p75": 41,
+     "p90": 50,
+     "max": 96
+    },
+    "overTargetPct": 59.4
+   },
+   {
+    "station": "MECH",
+    "department": "Department of Building Inspection",
+    "n": 1272,
+    "queue": {
+     "n": 1272,
+     "p50": 1,
+     "p75": 1,
+     "p90": 4,
+     "max": 224
+    },
+    "review": {
+     "n": 1272,
+     "p50": 23,
+     "p75": 33,
+     "p90": 43,
+     "max": 92
+    },
+    "overTargetPct": 34.3
+   },
+   {
+    "station": "CP-ZOC",
+    "department": "Planning Department",
+    "n": 1224,
+    "queue": {
+     "n": 1224,
+     "p50": 1,
+     "p75": 1,
+     "p90": 5,
+     "max": 226
+    },
+    "review": {
+     "n": 1224,
+     "p50": 7,
+     "p75": 23,
+     "p90": 48,
+     "max": 372
+    },
+    "overTargetPct": 23.8
+   },
+   {
+    "station": "SFFD",
+    "department": "Fire Department",
+    "n": 2134,
+    "queue": {
+     "n": 2134,
+     "p50": 0,
+     "p75": 1,
+     "p90": 4,
+     "max": 299
+    },
+    "review": {
+     "n": 2134,
+     "p50": 8,
+     "p75": 20,
+     "p90": 59,
+     "max": 217
+    },
+    "overTargetPct": 20.7
+   },
+   {
+    "station": "HEALTH-MH",
+    "department": "Department of Public Health",
+    "n": 186,
+    "queue": {
+     "n": 186,
+     "p50": 0,
+     "p75": 1,
+     "p90": 18,
+     "max": 156
+    },
+    "review": {
+     "n": 186,
+     "p50": 2,
+     "p75": 7,
+     "p90": 12,
+     "max": 48
+    },
+    "overTargetPct": 9.1
+   },
+   {
+    "station": "SFPUC-PRG",
+    "department": "Public Utilities Commission",
+    "n": 143,
+    "queue": {
+     "n": 143,
+     "p50": 0,
+     "p75": 2,
+     "p90": 5,
+     "max": 178
+    },
+    "review": {
+     "n": 143,
+     "p50": 14,
+     "p75": 20,
+     "p90": 26,
+     "max": 32
+    },
+    "overTargetPct": 9.1
+   },
+   {
+    "station": "SFFD-HQ",
+    "department": "Fire Department",
+    "n": 254,
+    "queue": {
+     "n": 254,
+     "p50": 0,
+     "p75": 1,
+     "p90": 2,
+     "max": 200
+    },
+    "review": {
+     "n": 254,
+     "p50": 7,
+     "p75": 15,
+     "p90": 22,
+     "max": 59
+    },
+    "overTargetPct": 8.3
+   },
+   {
+    "station": "MECH-E",
+    "department": "Department of Building Inspection",
+    "n": 805,
+    "queue": {
+     "n": 805,
+     "p50": 0,
+     "p75": 0,
+     "p90": 3,
+     "max": 234
+    },
+    "review": {
+     "n": 805,
+     "p50": 8,
+     "p75": 13,
+     "p90": 19,
+     "max": 74
+    },
+    "overTargetPct": 6.3
+   },
+   {
+    "station": "DPW-BSM",
+    "department": "Public Works",
+    "n": 1335,
+    "queue": {
+     "n": 1335,
+     "p50": 0,
+     "p75": 1,
+     "p90": 4,
+     "max": 249
+    },
+    "review": {
+     "n": 1335,
+     "p50": 4,
+     "p75": 7,
+     "p90": 13,
+     "max": 207
+    },
+    "overTargetPct": 4.8
+   },
+   {
+    "station": "SFPUC",
+    "department": "Public Utilities Commission",
+    "n": 1288,
+    "queue": {
+     "n": 1288,
+     "p50": 1,
+     "p75": 1,
+     "p90": 4,
+     "max": 258
+    },
+    "review": {
+     "n": 1288,
+     "p50": 9,
+     "p75": 14,
+     "p90": 19,
+     "max": 128
+    },
+    "overTargetPct": 3.7
+   }
+  ],
+  "everyShownDesk": {
+   "n": 12018,
+   "queue": {
+    "n": 12018,
+    "p50": 0,
+    "p75": 1,
+    "p90": 4,
+    "max": 303
+   },
+   "review": {
+    "n": 12018,
+    "p50": 13,
+    "p75": 30,
+    "p90": 48,
+    "max": 437
+   },
+   "overTargetPct": 28.8
+  }
+ },
+ "stateBenchmarks": [
+  {
+   "label": "Completeness determination",
+   "days": 15,
+   "cite": "§65913.3(b)(1)(A)"
+  },
+  {
+   "label": "Review complete, 25 units or fewer",
+   "days": 30,
+   "cite": "§65913.3(c)(1)(B)"
+  },
+  {
+   "label": "Review complete, 26 units or more",
+   "days": 60,
+   "cite": "§65913.3(c)(2)(B)"
+  }
+ ]
+}

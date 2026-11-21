@@ -1,0 +1,84 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-09-20",
+ "id": "g55-42068",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42068",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26972"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - September 6, 2022 Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7a",
+   "title": "Director’s Report - Vision Zero Update"
+  },
+  {
+   "no": "7b",
+   "title": "Director’s Report - Central Subway Project Update"
+  },
+  {
+   "no": "7c",
+   "title": "Director’s Report - Muni Safety Equity Initiative Update"
+  },
+  {
+   "no": "7d",
+   "title": "Director’s Report - Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10A",
+   "title": "Approving contract for operation and management of parking facilities to LAZ Parking California, LLC; and approving contract for operation and management of parking facilities to IMCO Parking, LLC"
+  },
+  {
+   "no": "10B",
+   "title": "Approving contract for operation and management of parking facilities to LAZ Parking California, LLC; and approving contract for operation and management of parking facilities to IMCO Parking, LLC"
+  },
+  {
+   "no": "11",
+   "title": "Approving Contract No. SFMTA-2022-31 to provide workers’ compensation claims administration services to Intercare Holdings Insurance Services, Inc",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

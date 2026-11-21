@@ -1,0 +1,6963 @@
+{
+ "read": "2026-10-01",
+ "source": {
+  "2022-23": "https://web.archive.org/web/20221004124058/https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2022-23",
+  "2023-24": "https://web.archive.org/web/20230929142713/https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2023-24",
+  "2024-25": "https://web.archive.org/web/20240812141433/https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2024-25",
+  "2025-26": "https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2025-26"
+ },
+ "years": {
+  "2022-23": [
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "413",
+    "name": "Alamo ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "420",
+    "name": "Alvarado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "435",
+    "name": "Argonne ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "456",
+    "name": "Bryant ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "625",
+    "name": "Carver (Dr George W) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "603",
+    "name": "Chavez (Cesar) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "872",
+    "name": "Chin (John Yehall) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "509",
+    "name": "CIS at DeAvila ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "478",
+    "name": "Clarendon ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "481",
+    "name": "Cleveland ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "525",
+    "name": "Cobb (Dr William L) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "537",
+    "name": "Dolores Huerta",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "507",
+    "name": "Drew (Dr Charles) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "521",
+    "name": "El Dorado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "539",
+    "name": "Feinstein (Dianne) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "680",
+    "name": "Flynn (Leonard R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "562",
+    "name": "Garfield ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "575",
+    "name": "Glen Park ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "589",
+    "name": "Grattan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "593",
+    "name": "Guadalupe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "453",
+    "name": "Harte (Bret) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "614",
+    "name": "Hillcrest ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "644",
+    "name": "Jefferson ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "544",
+    "name": "Key (Francis Scott) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "838",
+    "name": "King (Thomas Starr) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "664",
+    "name": "Lafayette ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "670",
+    "name": "Lakeshore ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "490",
+    "name": "Lau (Gordon J) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "476",
+    "name": "Lee, Edwin and Anita Newcomer School",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "691",
+    "name": "Longfellow ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "830",
+    "name": "Malcolm X Academy ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "714",
+    "name": "Marshall ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "549",
+    "name": "McCoppin (Frank) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "718",
+    "name": "McKinley ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "505",
+    "name": "Milk (Harvey) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "722",
+    "name": "Miraloma ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "724",
+    "name": "Mission Education Center ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "729",
+    "name": "Monroe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "723",
+    "name": "Moscone (George R) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "650",
+    "name": "Muir (John) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "735",
+    "name": "New Traditions ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "746",
+    "name": "Ortega (Jose) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "638",
+    "name": "Parker (Jean) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "786",
+    "name": "Parks (Rosa) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "569",
+    "name": "Peabody (George) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "790",
+    "name": "Redding ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "816",
+    "name": "Sanchez ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "656",
+    "name": "Serra (Junipero) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "814",
+    "name": "SF Public Montessori ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "820",
+    "name": "Sheridan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "823",
+    "name": "Sherman ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "488",
+    "name": "Sloat (Commodore) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "834",
+    "name": "Spring Valley Science ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "782",
+    "name": "Stevenson (Robert Louis) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "842",
+    "name": "Sunnyside ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "750",
+    "name": "Sunset ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "848",
+    "name": "Sutro ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "513",
+    "name": "Taylor (Edward R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "859",
+    "name": "Tenderloin ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "862",
+    "name": "Ulloa ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "867",
+    "name": "Visitacion Valley ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "497",
+    "name": "Webster (Daniel) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "876",
+    "name": "West Portal ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "801",
+    "name": "Wo (Yick) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "618",
+    "name": "Buena Vista Horace Mann 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "618",
+    "name": "Buena Vista Horace Mann K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "449",
+    "name": "Bessie Carmichael 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "449",
+    "name": "Bessie Carmichael K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "676",
+    "name": "Lawton 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "676",
+    "name": "Lawton K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "479",
+    "name": "Lilienthal 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "479",
+    "name": "Lilienthal K-5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "760",
+    "name": "Revere 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "760",
+    "name": "Revere K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "796",
+    "name": "Rooftop 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "796",
+    "name": "Rooftop K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "493",
+    "name": "SF Community 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "493",
+    "name": "SF Community K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "485",
+    "name": "Yu (Alice Fong) 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "485",
+    "name": "Yu (Alice Fong) K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "431",
+    "name": "Aptos MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "858",
+    "name": "Brown Jr. (Willie) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "632",
+    "name": "Denman (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "529",
+    "name": "Everett MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "546",
+    "name": "Francisco MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "404",
+    "name": "Giannini (A.P.) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "607",
+    "name": "Hoover (Herbert) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "710",
+    "name": "King Jr (Dr Martin L) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "634",
+    "name": "Lick (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "708",
+    "name": "Marina MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "778",
+    "name": "Presidio MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "797",
+    "name": "Roosevelt MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "868",
+    "name": "Visitacion Valley MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      795
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 795,
+    "end": 950,
+    "id": "815",
+    "name": "Asawa (Ruth) SOTA HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      810
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 810,
+    "end": 950,
+    "id": "439",
+    "name": "Balboa HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "439",
+    "name": "Balboa HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 940,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      750
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 750,
+    "end": 910,
+    "id": "742",
+    "name": "Downtown High School",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      890
+     ],
+     [
+      3,
+      890
+     ]
+    ],
+    "early_day": "Wed, Thu",
+    "early_end": 890,
+    "end": 950,
+    "id": "559",
+    "name": "Galileo HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      830
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 830,
+    "end": null,
+    "id": "743",
+    "name": "Ida B. Wells HS",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      765
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 765,
+    "end": 860,
+    "id": "466",
+    "name": "Independence High School",
+    "section": "High Schools",
+    "start": 620
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      835
+     ],
+     [
+      3,
+      910
+     ]
+    ],
+    "early_day": "Wed, Thu",
+    "early_end": null,
+    "end": 950,
+    "id": "757",
+    "name": "Jordan (June) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      885
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 885,
+    "end": 950,
+    "id": "405",
+    "name": "Lincoln (Abraham) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 940,
+    "id": "697",
+    "name": "Lowell HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "697",
+    "name": "Lowell HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      875
+     ],
+     [
+      3,
+      920
+     ]
+    ],
+    "early_day": "Wed, Thu",
+    "early_end": null,
+    "end": 945,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      1,
+      890
+     ],
+     [
+      3,
+      890
+     ]
+    ],
+    "early_day": "Tue, Thu",
+    "early_end": 890,
+    "end": 953,
+    "id": "725",
+    "name": "Mission HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "725",
+    "name": "Mission HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "651",
+    "name": "O'Connell (John) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "651",
+    "name": "O'Connell (John) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      825
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 825,
+    "end": 950,
+    "id": "621",
+    "name": "SF International HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "621",
+    "name": "SF International HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "832",
+    "name": "The Academy - SF @ McAteer HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      815
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 815,
+    "end": 950,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      885
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 885,
+    "end": 940,
+    "id": "571",
+    "name": "Washington (George) HS",
+    "section": "High Schools",
+    "start": 520
+   }
+  ],
+  "2023-24": [
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "413",
+    "name": "Alamo ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "420",
+    "name": "Alvarado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "435",
+    "name": "Argonne ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "456",
+    "name": "Bryant ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "625",
+    "name": "Carver (Dr George W) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "603",
+    "name": "Chavez (Cesar) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "872",
+    "name": "Chin (John Yehall) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "509",
+    "name": "CIS at DeAvila ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "478",
+    "name": "Clarendon ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "481",
+    "name": "Cleveland ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "525",
+    "name": "Cobb (Dr William L) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "537",
+    "name": "Dolores Huerta",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "507",
+    "name": "Drew (Dr Charles) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "521",
+    "name": "El Dorado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "539",
+    "name": "Feinstein (Dianne) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "680",
+    "name": "Flynn (Leonard R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "562",
+    "name": "Garfield ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "575",
+    "name": "Glen Park ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "589",
+    "name": "Grattan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "593",
+    "name": "Guadalupe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "453",
+    "name": "Harte (Bret) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "614",
+    "name": "Hillcrest ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "644",
+    "name": "Jefferson ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "544",
+    "name": "Key (Francis Scott) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "838",
+    "name": "King (Thomas Starr) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "664",
+    "name": "Lafayette ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "670",
+    "name": "Lakeshore ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "490",
+    "name": "Lau (Gordon J) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "476",
+    "name": "Lee, Edwin and Anita Newcomer School",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "691",
+    "name": "Longfellow ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "830",
+    "name": "Malcolm X Academy ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "714",
+    "name": "Marshall ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "549",
+    "name": "McCoppin (Frank) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "718",
+    "name": "McKinley ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "505",
+    "name": "Milk (Harvey) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "722",
+    "name": "Miraloma ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "724",
+    "name": "Mission Education Center ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "729",
+    "name": "Monroe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "723",
+    "name": "Moscone (George R) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "650",
+    "name": "Muir (John) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "735",
+    "name": "New Traditions ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "746",
+    "name": "Ortega (Jose) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "638",
+    "name": "Parker (Jean) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "786",
+    "name": "Parks (Rosa) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "569",
+    "name": "Peabody (George) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "790",
+    "name": "Redding ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "816",
+    "name": "Sanchez ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "656",
+    "name": "Serra (Junipero) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "814",
+    "name": "SF Public Montessori ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "820",
+    "name": "Sheridan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "823",
+    "name": "Sherman ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "488",
+    "name": "Sloat (Commodore) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "834",
+    "name": "Spring Valley Science ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "782",
+    "name": "Stevenson (Robert Louis) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "842",
+    "name": "Sunnyside ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "750",
+    "name": "Sunset ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "848",
+    "name": "Sutro ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "513",
+    "name": "Taylor (Edward R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "859",
+    "name": "Tenderloin ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "862",
+    "name": "Ulloa ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "867",
+    "name": "Visitacion Valley ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "497",
+    "name": "Webster (Daniel) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "876",
+    "name": "West Portal ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "801",
+    "name": "Wo (Yick) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "618",
+    "name": "Buena Vista Horace Mann 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "618",
+    "name": "Buena Vista Horace Mann K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "449",
+    "name": "Bessie Carmichael 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "449",
+    "name": "Bessie Carmichael K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "676",
+    "name": "Lawton 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "676",
+    "name": "Lawton K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "479",
+    "name": "Lilienthal 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "479",
+    "name": "Lilienthal K-5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "760",
+    "name": "Revere 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "760",
+    "name": "Revere K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "796",
+    "name": "Rooftop 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "796",
+    "name": "Rooftop K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "493",
+    "name": "SF Community 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "493",
+    "name": "SF Community K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "485",
+    "name": "Yu (Alice Fong) 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "485",
+    "name": "Yu (Alice Fong) K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "431",
+    "name": "Aptos MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "858",
+    "name": "Brown Jr. (Willie) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "632",
+    "name": "Denman (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "529",
+    "name": "Everett MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "546",
+    "name": "Francisco MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "404",
+    "name": "Giannini (A.P.) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "607",
+    "name": "Hoover (Herbert) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "710",
+    "name": "King Jr (Dr Martin L) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "634",
+    "name": "Lick (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "708",
+    "name": "Marina MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "778",
+    "name": "Presidio MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "797",
+    "name": "Roosevelt MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "868",
+    "name": "Visitacion Valley MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      860
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 860,
+    "end": 935,
+    "id": "815",
+    "name": "Asawa (Ruth) SOTA HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      810
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 810,
+    "end": 950,
+    "id": "439",
+    "name": "Balboa HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "439",
+    "name": "Balboa HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 940,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      750
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 750,
+    "end": 910,
+    "id": "742",
+    "name": "Downtown High School",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 855,
+    "end": 945,
+    "id": "559",
+    "name": "Galileo HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      830
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 830,
+    "end": null,
+    "id": "743",
+    "name": "Ida B. Wells HS",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      765
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 765,
+    "end": 860,
+    "id": "466",
+    "name": "Independence High School",
+    "section": "High Schools",
+    "start": 620
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      795
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 795,
+    "end": 950,
+    "id": "757",
+    "name": "Jordan (June) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      885
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 885,
+    "end": 950,
+    "id": "405",
+    "name": "Lincoln (Abraham) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 940,
+    "id": "697",
+    "name": "Lowell HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "697",
+    "name": "Lowell HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      875
+     ],
+     [
+      3,
+      920
+     ]
+    ],
+    "early_day": "Wed, Thu",
+    "early_end": null,
+    "end": 945,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      882
+     ],
+     [
+      3,
+      882
+     ]
+    ],
+    "early_day": "Wed, Thu",
+    "early_end": 882,
+    "end": 959,
+    "id": "725",
+    "name": "Mission HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "725",
+    "name": "Mission HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "651",
+    "name": "O'Connell (John) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "651",
+    "name": "O'Connell (John) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      825
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 825,
+    "end": 950,
+    "id": "621",
+    "name": "SF International HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "621",
+    "name": "SF International HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "832",
+    "name": "The Academy - SF @ McAteer HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      815
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 815,
+    "end": 950,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      885
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 885,
+    "end": 940,
+    "id": "571",
+    "name": "Washington (George) HS",
+    "section": "High Schools",
+    "start": 520
+   }
+  ],
+  "2024-25": [
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "413",
+    "name": "Alamo ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "420",
+    "name": "Alvarado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "435",
+    "name": "Argonne ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "456",
+    "name": "Bryant ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "625",
+    "name": "Carver (Dr George W) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "603",
+    "name": "Chavez (Cesar) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "872",
+    "name": "Chin (John Yehall) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "509",
+    "name": "CIS at DeAvila ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "478",
+    "name": "Clarendon ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "481",
+    "name": "Cleveland ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "525",
+    "name": "Cobb (Dr William L) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "537",
+    "name": "Dolores Huerta",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "507",
+    "name": "Drew (Dr Charles) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "521",
+    "name": "El Dorado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "539",
+    "name": "Feinstein (Dianne) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "680",
+    "name": "Flynn (Leonard R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "562",
+    "name": "Garfield ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "575",
+    "name": "Glen Park ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "589",
+    "name": "Grattan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "593",
+    "name": "Guadalupe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "453",
+    "name": "Harte (Bret) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "614",
+    "name": "Hillcrest ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "644",
+    "name": "Jefferson ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "544",
+    "name": "Key (Francis Scott) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "838",
+    "name": "King (Thomas Starr) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "664",
+    "name": "Lafayette ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "670",
+    "name": "Lakeshore ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "490",
+    "name": "Lau (Gordon J) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "476",
+    "name": "Lee, Edwin and Anita Newcomer School",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "691",
+    "name": "Longfellow ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "830",
+    "name": "Malcolm X Academy ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "714",
+    "name": "Marshall ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "549",
+    "name": "McCoppin (Frank) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "718",
+    "name": "McKinley ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "505",
+    "name": "Milk (Harvey) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "722",
+    "name": "Miraloma ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "724",
+    "name": "Mission Education Center ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "729",
+    "name": "Monroe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "723",
+    "name": "Moscone (George R) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "650",
+    "name": "Muir (John) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "735",
+    "name": "New Traditions ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "746",
+    "name": "Ortega (Jose) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "638",
+    "name": "Parker (Jean) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "786",
+    "name": "Parks (Rosa) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "569",
+    "name": "Peabody (George) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "790",
+    "name": "Redding ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "816",
+    "name": "Sanchez ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "656",
+    "name": "Serra (Junipero) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "814",
+    "name": "SF Public Montessori ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "820",
+    "name": "Sheridan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "823",
+    "name": "Sherman ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "488",
+    "name": "Sloat (Commodore) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "834",
+    "name": "Spring Valley Science ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "782",
+    "name": "Stevenson (Robert Louis) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "842",
+    "name": "Sunnyside ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "750",
+    "name": "Sunset ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "848",
+    "name": "Sutro ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "513",
+    "name": "Taylor (Edward R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "859",
+    "name": "Tenderloin ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "862",
+    "name": "Ulloa ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "867",
+    "name": "Visitacion Valley ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "497",
+    "name": "Webster (Daniel) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "876",
+    "name": "West Portal ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "801",
+    "name": "Wo (Yick) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "618",
+    "name": "Buena Vista Horace Mann 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "618",
+    "name": "Buena Vista Horace Mann K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "449",
+    "name": "Bessie Carmichael 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "449",
+    "name": "Bessie Carmichael K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "676",
+    "name": "Lawton 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "676",
+    "name": "Lawton K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "479",
+    "name": "Lilienthal 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "479",
+    "name": "Lilienthal K-5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "760",
+    "name": "Revere 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "760",
+    "name": "Revere K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "796",
+    "name": "Rooftop 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "796",
+    "name": "Rooftop K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "493",
+    "name": "SF Community 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "493",
+    "name": "SF Community K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "485",
+    "name": "Yu (Alice Fong) 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "485",
+    "name": "Yu (Alice Fong) K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "431",
+    "name": "Aptos MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "858",
+    "name": "Brown Jr. (Willie) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "632",
+    "name": "Denman (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "529",
+    "name": "Everett MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "546",
+    "name": "Francisco MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "404",
+    "name": "Giannini (A.P.) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "607",
+    "name": "Hoover (Herbert) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "710",
+    "name": "King Jr (Dr Martin L) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "634",
+    "name": "Lick (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "708",
+    "name": "Marina MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "778",
+    "name": "Presidio MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "797",
+    "name": "Roosevelt MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "868",
+    "name": "Visitacion Valley MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      860
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 860,
+    "end": 935,
+    "id": "815",
+    "name": "Asawa (Ruth) SOTA HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      810
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 810,
+    "end": 950,
+    "id": "439",
+    "name": "Balboa HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "439",
+    "name": "Balboa HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 940,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      750
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 750,
+    "end": 915,
+    "id": "742",
+    "name": "Downtown High School",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 870,
+    "end": 940,
+    "id": "559",
+    "name": "Galileo HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      830
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 830,
+    "end": null,
+    "id": "743",
+    "name": "Ida B. Wells HS",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      765
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 765,
+    "end": 860,
+    "id": "466",
+    "name": "Independence High School",
+    "section": "High Schools",
+    "start": 620
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      795
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 795,
+    "end": 950,
+    "id": "757",
+    "name": "Jordan (June) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      875
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 875,
+    "end": 945,
+    "id": "405",
+    "name": "Lincoln (Abraham) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 870,
+    "end": 940,
+    "id": "697",
+    "name": "Lowell HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "697",
+    "name": "Lowell HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 947,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      863
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 863,
+    "end": 940,
+    "id": "725",
+    "name": "Mission HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "725",
+    "name": "Mission HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "651",
+    "name": "O'Connell (John) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "651",
+    "name": "O'Connell (John) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      825
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 825,
+    "end": 950,
+    "id": "621",
+    "name": "SF International HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "621",
+    "name": "SF International HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "832",
+    "name": "The Academy - SF @ McAteer HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      850
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 850,
+    "end": 945,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      885
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 885,
+    "end": 945,
+    "id": "571",
+    "name": "Washington (George) HS",
+    "section": "High Schools",
+    "start": 520
+   }
+  ],
+  "2025-26": [
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "413",
+    "name": "Alamo ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "420",
+    "name": "Alvarado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "435",
+    "name": "Argonne ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "456",
+    "name": "Bryant ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "625",
+    "name": "Carver (Dr George W) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "603",
+    "name": "Chavez (Cesar) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "872",
+    "name": "Chin (John Yehall) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "509",
+    "name": "CIS at DeAvila ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "478",
+    "name": "Clarendon ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "481",
+    "name": "Cleveland ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "525",
+    "name": "Cobb (Dr William L) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "537",
+    "name": "Dolores Huerta",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "507",
+    "name": "Drew (Dr Charles) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "521",
+    "name": "El Dorado ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "539",
+    "name": "Feinstein (Dianne) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "680",
+    "name": "Flynn (Leonard R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "562",
+    "name": "Garfield ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "575",
+    "name": "Glen Park ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "589",
+    "name": "Grattan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "593",
+    "name": "Guadalupe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "453",
+    "name": "Harte (Bret) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "614",
+    "name": "Hillcrest ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "644",
+    "name": "Jefferson ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "544",
+    "name": "Key (Francis Scott) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "838",
+    "name": "King (Thomas Starr) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "664",
+    "name": "Lafayette ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "670",
+    "name": "Lakeshore ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "490",
+    "name": "Lau (Gordon J) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "476",
+    "name": "Lee, Edwin and Anita Newcomer School",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "691",
+    "name": "Longfellow ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "830",
+    "name": "Malcolm X Academy ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "714",
+    "name": "Marshall ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "549",
+    "name": "McCoppin (Frank) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "718",
+    "name": "McKinley ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "505",
+    "name": "Milk (Harvey) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "722",
+    "name": "Miraloma ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "724",
+    "name": "Mission Education Center ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "729",
+    "name": "Monroe ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "723",
+    "name": "Moscone (George R) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "650",
+    "name": "Muir (John) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "735",
+    "name": "New Traditions ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "746",
+    "name": "Ortega (Jose) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "638",
+    "name": "Parker (Jean) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "786",
+    "name": "Parks (Rosa) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "569",
+    "name": "Peabody (George) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "790",
+    "name": "Redding ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "816",
+    "name": "Sanchez ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "656",
+    "name": "Serra (Junipero) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "814",
+    "name": "SF Public Montessori ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "820",
+    "name": "Sheridan ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "823",
+    "name": "Sherman ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "488",
+    "name": "Sloat (Commodore) ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "834",
+    "name": "Spring Valley Science ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "782",
+    "name": "Stevenson (Robert Louis) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "842",
+    "name": "Sunnyside ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "750",
+    "name": "Sunset ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "848",
+    "name": "Sutro ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "513",
+    "name": "Taylor (Edward R) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "859",
+    "name": "Tenderloin ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "862",
+    "name": "Ulloa ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      820
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 820,
+    "end": 895,
+    "id": "867",
+    "name": "Visitacion Valley ES",
+    "section": "Elementary Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "497",
+    "name": "Webster (Daniel) ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      770
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 770,
+    "end": 845,
+    "id": "876",
+    "name": "West Portal ES",
+    "section": "Elementary Schools",
+    "start": 470
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "801",
+    "name": "Wo (Yick) ES",
+    "section": "Elementary Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "618",
+    "name": "Buena Vista Horace Mann 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "618",
+    "name": "Buena Vista Horace Mann K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "449",
+    "name": "Bessie Carmichael 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "449",
+    "name": "Bessie Carmichael K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "676",
+    "name": "Lawton 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "676",
+    "name": "Lawton K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "479",
+    "name": "Lilienthal 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "479",
+    "name": "Lilienthal K-5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "760",
+    "name": "Revere 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "760",
+    "name": "Revere K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "796",
+    "name": "Rooftop 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "796",
+    "name": "Rooftop K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "493",
+    "name": "SF Community 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "493",
+    "name": "SF Community K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "485",
+    "name": "Yu (Alice Fong) 6-8",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 870,
+    "end": 945,
+    "id": "485",
+    "name": "Yu (Alice Fong) K5",
+    "section": "K-8 Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "431",
+    "name": "Aptos MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "858",
+    "name": "Brown Jr. (Willie) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "632",
+    "name": "Denman (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "529",
+    "name": "Everett MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "546",
+    "name": "Francisco MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "404",
+    "name": "Giannini (A.P.) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "607",
+    "name": "Hoover (Herbert) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "710",
+    "name": "King Jr (Dr Martin L) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "634",
+    "name": "Lick (James) MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "708",
+    "name": "Marina MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "778",
+    "name": "Presidio MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "797",
+    "name": "Roosevelt MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      855
+     ]
+    ],
+    "early_day": "Wednesday",
+    "early_end": 855,
+    "end": 960,
+    "id": "868",
+    "name": "Visitacion Valley MS",
+    "section": "Middle Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      860
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 860,
+    "end": 935,
+    "id": "815",
+    "name": "Asawa (Ruth) SOTA HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      810
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 810,
+    "end": 950,
+    "id": "439",
+    "name": "Balboa HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "439",
+    "name": "Balboa HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 940,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "764",
+    "name": "Burton (Phillip & Sala) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      750
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 750,
+    "end": 915,
+    "id": "742",
+    "name": "Downtown High School",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 870,
+    "end": 940,
+    "id": "559",
+    "name": "Galileo HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      830
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 830,
+    "end": null,
+    "id": "743",
+    "name": "Ida B. Wells HS",
+    "section": "High Schools",
+    "start": 570
+   },
+   {
+    "early_by_day": [
+     [
+      4,
+      765
+     ]
+    ],
+    "early_day": "Fri",
+    "early_end": 765,
+    "end": 860,
+    "id": "466",
+    "name": "Independence High School",
+    "section": "High Schools",
+    "start": 620
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      795
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 795,
+    "end": 950,
+    "id": "757",
+    "name": "Jordan (June) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      875
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 875,
+    "end": 945,
+    "id": "405",
+    "name": "Lincoln (Abraham) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      870
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 870,
+    "end": 940,
+    "id": "697",
+    "name": "Lowell HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "697",
+    "name": "Lowell HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      865
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 865,
+    "end": 947,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "853",
+    "name": "Marshall (Thurgood) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      863
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 863,
+    "end": 940,
+    "id": "725",
+    "name": "Mission HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "725",
+    "name": "Mission HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "651",
+    "name": "O'Connell (John) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "651",
+    "name": "O'Connell (John) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      825
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 825,
+    "end": 950,
+    "id": "621",
+    "name": "SF International HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "621",
+    "name": "SF International HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      830
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 830,
+    "end": 945,
+    "id": "832",
+    "name": "The Academy - SF @ McAteer HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      850
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 850,
+    "end": 945,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [],
+    "early_day": null,
+    "early_end": null,
+    "end": 860,
+    "id": "785",
+    "name": "Wallenberg (Raoul) HS (Access)",
+    "section": "High Schools",
+    "start": 520
+   },
+   {
+    "early_by_day": [
+     [
+      2,
+      885
+     ]
+    ],
+    "early_day": "Wed",
+    "early_end": 885,
+    "end": 945,
+    "id": "571",
+    "name": "Washington (George) HS",
+    "section": "High Schools",
+    "start": 520
+   }
+  ]
+ }
+}

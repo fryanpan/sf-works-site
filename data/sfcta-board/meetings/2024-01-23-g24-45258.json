@@ -1,0 +1,47 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2024-01-23",
+ "id": "g24-45258",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45258",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the January 9, 2024 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Consent Agenda - Final Approval Accept the Audit Report for the Fiscal Year Ended June 30, 2023"
+  },
+  {
+   "no": "5",
+   "title": "[Final Approval on First Appearance] Adopt 2023 Annual Report"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "7",
+   "title": "Public Comment"
+  },
+  {
+   "no": "8",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

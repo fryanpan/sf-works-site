@@ -1,0 +1,100 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-06-16",
+ "id": "g218-43938",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43938",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair"
+  },
+  {
+   "no": "2",
+   "title": "Commission Secretary’s Report"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the June 2, 2023 Regular Meeting - Adopt"
+  },
+  {
+   "no": "5b",
+   "title": "As-Needed Audio/Visual, Telecom, IT, Security, and Acoustical Design Consulting Services No. 1 - Contract Award"
+  },
+  {
+   "no": "5c",
+   "title": "As-Needed Audio/Visual, Telecom, IT, Security, and Acoustical Design Consulting Services No. 1 - Contract Award"
+  },
+  {
+   "no": "5d",
+   "title": "As-Needed Audio/Visual, Telecom, IT, Security, and Acoustical Design Consulting Services No. 1 - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Pit-Stop Workforce Development #1 - Grant Award"
+  },
+  {
+   "no": "7",
+   "title": "Castro Health Center Renovations - Contract Modification"
+  },
+  {
+   "no": "8",
+   "title": "Building Design and Construction - Bureau of Project Controls and Services"
+  },
+  {
+   "no": "9",
+   "title": "Closed Session - Conference with Legal Counsel regarding existing litigation"
+  },
+  {
+   "no": "10",
+   "title": "Announcements following Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "12",
+   "title": "Maxine Hall Health Center Renovation - Contract Modification"
+  },
+  {
+   "no": "13",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "14",
+   "title": "Closed Session - Public Works Director Performance Evaluation"
+  },
+  {
+   "no": "15",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion Regarding Whether to Disclose the Discussions during Closed Session"
+  },
+  {
+   "no": "17",
+   "title": "General Public Comment - Continued from Item 3 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

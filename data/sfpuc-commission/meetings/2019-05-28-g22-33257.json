@@ -1,0 +1,128 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2019-05-28",
+ "id": "g22-33257",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33257",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of May 14, 2019"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "5b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5c",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "7",
+   "title": "Other Commission Business"
+  },
+  {
+   "no": "8",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "8a",
+   "title": "Accept work performed by Big Valley Electric for Contract No. HH-988R, Kirkwood Penstock Short Term Risk Reduction Measures; approve Modification No. 4 (Final)"
+  },
+  {
+   "no": "8b",
+   "title": "Approve Modification No. 1 to Job Order Contract, JOC-68, Micro-LBE, Landscaping (C-27 License) for San Francisco"
+  },
+  {
+   "no": "8c",
+   "title": "Approve the plans and specifications, and award Contract No. WD-2614, 8-Inch Ductile Iron Water Main Replacement"
+  },
+  {
+   "no": "8d",
+   "title": "Approve an increase of $819,475 to the existing contract cost contingency for Contract No. WW-656"
+  },
+  {
+   "no": "9",
+   "title": "Memorandum of Agreement with the City of Mountain View"
+  },
+  {
+   "no": "10",
+   "title": "Adopt a finding of surplus property for an easement reserved to the San Francisco Public Utilities Commission"
+  },
+  {
+   "no": "11",
+   "title": "Approve Amendment No. 4 to Agreement No. CS-991"
+  },
+  {
+   "no": "12",
+   "title": "Adopt the proposed Wholesale Revenue Requirement and rate schedule for FYE 2020"
+  },
+  {
+   "no": "13",
+   "title": "Approve Water Supply Assessment for the proposed 655 4th Street Project"
+  },
+  {
+   "no": "14",
+   "title": "Approve the Water Supply Assessment for the proposed 88 Bluxome StreetProject"
+  },
+  {
+   "no": "15",
+   "title": "Approve the Water Supply Assessment for the proposed Balboa ReservoirProject"
+  },
+  {
+   "no": "16",
+   "title": "Approve the Revised Water Supply Assessment for the proposed 598 Brannan Street Project"
+  },
+  {
+   "no": "17",
+   "title": "Approve the Revised Water Supply Assessment for the proposed 630-698 Brannan Street (Flower Mart) Project"
+  },
+  {
+   "no": "18",
+   "title": "Workshop: Overview of the Sewer System Improvement Program"
+  },
+  {
+   "no": "19",
+   "title": "Authorize the General Manager to designate specifications for Contract No. WW-647R 20-24. Closed Session"
+  },
+  {
+   "no": "25",
+   "title": "New Business"
+  },
+  {
+   "no": "26",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

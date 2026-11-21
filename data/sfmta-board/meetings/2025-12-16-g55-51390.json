@@ -1,0 +1,91 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2025-12-16",
+ "id": "g55-51390",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51390",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/44857"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - December 2, 2025, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items A-B are exempt from the California Environmental Quality Act [CEQA]. The proposed action is the Approval Action for Item A as defined by San Francisco Administrative Code Chapter 31. Explanatory documents include a staff report and resolution.) A. ESTABLISH – TOW AWAY, NO STOPPING ANY TIME (FOR SIDEWALK WIDENING), 4th Street, west side, between Mission Street and Minna Street. B. ESTABLISH – CROSSWALK CLOSURE, Crossing Lincoln Way, east side, at 45th Avenue. RESOLUTION No. 251216-119 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 251216-119)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding Enterprise Revenue and Fare Policy Options"
+  },
+  {
+   "no": "12",
+   "title": "Authorizing the Director of Transportation to execute Contract No. SFMTA-2025-21-FTA with Gillig LLC",
+   "decision": "ADOPTED — 6 ayes (Resolution 251216-120)"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote a closed session",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session CLOSED SESSION"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

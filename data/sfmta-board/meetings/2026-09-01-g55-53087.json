@@ -1,0 +1,106 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-09-01",
+ "id": "g55-53087",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53087",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45884"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes August 4, 2026 Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes (Resolution 260901-071)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications (The Planning Department has found that Items A-K are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.): A. ESTABLISH – 20 MPH SPEED LIMIT, 5th Street between Market and Townsend Streets. B. RESCIND – 25 MPH SPEED LIMIT, ESTABLISH – 20 MPH SPEED LIMIT, 6th Street between Market and Brannan Streets. C. ESTABLISH – GENERAL METERED PARKING, 4-HOUR TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, 3rd Street, east side, from La Salle Avenue to McKinnon Avenue. D. ESTABLISH – PERPENDICULAR PARKING, La Salle Avenue, north side, from 3rd Street to Newhall Street, La Salle Avenue, north side, from Newhall Street to Phelps Street. E. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME, 25th Street, south side, from Pennsylvania Avenue to 75 feet westerly. F. RESCIND - 25 MPH SPEED LIMIT, ESTABLISH - 20 MPH SPEED LIMIT Townsend Street between Division Street and the Embarcadero. G. RESCIND - 25 MPH SPEED LIMIT, ESTABLISH - 20 MPH SPEED LIMIT, North 4 Point Street between Van Ness Avenue and the Embarcadero. H. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME, Gennessee Street, east side, from 30 feet to 80 feet south of Monterey Boulevard (extends existing 30- foot TANS",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 260901-071)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director of Transportation or designee to execute the agreement between the SFMTA and the San Francisco Bay Area Rapid Transit District (BART) for the Embarcadero Station Escalator Rehabilitation Construction Project that details the roles and responsibilities of each agency during the rehabilitation of the SFMTA’s escalators that connect the Muni platform to the mezzanine.",
+   "text": "Authorizing the Director of Transportation or designee to execute the agreement between the SFMTA and the San Francisco Bay Area Rapid Transit District (BART) for the Embarcadero Station Escalator Rehabilitation Construction Project that details the roles and responsibilities of each agency during the rehabilitation of the SFMTA’s escalators that connect the Muni platform to the mezzanine. (Explanatory documents include a staff report and resolution.) Item 10.2 was continued and will be heard at a future meeting. No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "11",
+   "title": "Authorizing the SFMTA to pursue five one-year exemptions from the California Air Resources Board covering calendar years 2027 through 2031",
+   "decision": "ADOPTED — 6 ayes (Resolution 260901-072)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding the Safe Schools Connection Program"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a Transit Division Quarterly Update"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding a State Legislation Overview"
+  },
+  {
+   "no": "15",
+   "title": "Discussion and vote pursuant to Administrative Code Section as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 6 ayes (Resolution 260901-073)"
+  },
+  {
+   "no": "16",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "17",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "parser": 4,
+ "body": "sfmta-board"
+}

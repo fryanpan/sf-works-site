@@ -1,0 +1,79 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2024-07-18",
+ "id": "g91-46588",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=46588",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "2",
+   "title": "PRESIDENT’S REPORT"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGER’S REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "5A",
+   "title": "MINUTES: May and June 2024 Commission meetings"
+  },
+  {
+   "no": "5B",
+   "title": "SAN FRANCISCO ZOOLOGICAL SOCIETY ANIMAL TRANSACTIONS"
+  },
+  {
+   "no": "5C",
+   "title": "INDIA BASIN WATERFRONT PARK – CONTRACT AMENDMENT"
+  },
+  {
+   "no": "5D",
+   "title": "SAN FRANCISCO ZOO - FISCAL YEAR 2024-2025 BUDGET"
+  },
+  {
+   "no": "6",
+   "title": "SAN FRANCISCO ZOO"
+  },
+  {
+   "no": "7",
+   "title": "11TH AND NATOMA PARK - NAMING (“Rachele Sullivan Park,” “Tim Figueras Park,” or “Joanna Fraguli Park.”)"
+  },
+  {
+   "no": "8",
+   "title": "GENERAL PUBLIC COMMENT – CONTINUED FROM ITEM 4 IF NECESSARY"
+  },
+  {
+   "no": "9",
+   "title": "COMMISSIONERS’ MATTERS"
+  },
+  {
+   "no": "10",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "11",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "12",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

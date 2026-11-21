@@ -1,0 +1,171 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2025-10-14",
+ "id": "g22-50934",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50934",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/10.14.2025_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Annual Election of Officers - elect a President and Vice President of the San Francisco Public Utilities Commission (SFPUC)",
+   "decision": "approve Commission Vice President Arce for Commission President",
+   "text": "Annual Election of Officers: Discussion and possible action to elect a President and Vice President of the San Francisco Public Utilities Commission (SFPUC), each to serve a one-year term, in accordance with the SFPUC City and County of San Francisco Rules of Order, Rule 6. President Stacy explained the process for the election of officers and opened public comment for the election of the Commission President"
+  },
+  {
+   "no": "4",
+   "title": "Approval of the Minutes of September 23, 2025",
+   "decision": "continue the Minutes of September 23, 2025 to the next Commission"
+  },
+  {
+   "no": "5",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6A",
+   "title": "SFPUC Capital Project Delivery Methods",
+   "text": "SFPUC Capital Project Delivery Methods General Manager Herrera commented on his discussion with former President Stacy relating to commissioner requests from the September 23, 2025 Commission meeting, shared that requested information will be provided in a series arrangement, and Item"
+  },
+  {
+   "no": "6B",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided"
+  },
+  {
+   "no": "7",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "7a",
+   "title": "Authorize the General Manager of the San Francisco Public Utilities Commission to designate Emerson Process Management Power & Water Solutions, Inc., as the sole source subcontractor to supply equipment and provide services for the distributed process control system specified in the Request for Proposals for Wastewater Enterprise Design-Build Contract No. DB-141, Southeast Water Pollution Control Plant Nutrient Reduction, to match other products in use and ensure system-wide consistency, in conformance with San Francisco Administrative Code Section 6.73(e) and California Public Contract Code Section 3400(c)(2)",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0143",
+   "from": "minutes"
+  },
+  {
+   "no": "7b",
+   "title": "Approve Modification No. 3 to Job Order Contract No. JOC-90, General Engineering (A-License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, with GSW Construction, Inc., to increase the contract duration by one year, for a total contract duration of four years, with no change to the contract amount, to provide additional time for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0144",
+   "from": "minutes"
+  },
+  {
+   "no": "7c",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-101, General Engineering (A License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, with Fontenoy Engineering, to increase the contract not-to-exceed amount by $2,500,000, for a revised not-to-exceed contract amount of $7,500,000, and to increase the contract duration by three years, for a total contract duration of five years, to provide additional time and capacity for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0145",
+   "from": "minutes"
+  },
+  {
+   "no": "7d",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-108, General Engineering (A-License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, with Anvil Builders, Inc., to increase the contract not-to-exceed amount by $2,500,000, for a revised not-to-exceed contract amount of $7,500,000, and to increase the contract duration by three years, for a total contract duration of five years, to provide additional time and capacity for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0146",
+   "from": "minutes"
+  },
+  {
+   "no": "7e",
+   "title": "Award professional services Contract No. PRO.0271, Harrison/Treat Box Sewer Construction Management Staff Augmentation Services, to Jacobs-Avila, a Joint Venture, in the amount not to exceed $4,985,000 and with a duration of 40 months (three years and four months), to augment construction management services for public work Contract No. WW-719CR, Folsom Area Stormwater Improvements – Harrison/Treat Box Sewers and Connecting Auxiliary Sewers",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0147",
+   "from": "minutes"
+  },
+  {
+   "no": "7f",
+   "title": "Correct Resolution No. 25-0065 (May 13, 2025), to increase the construction duration for Contract No. WW-757R, Laguna, Howard, and Mission Creek Combined Sewer Discharge Improvements, by 60 consecutive calendar days to match the total contract duration of 570 consecutive calendar days stated in Addendum No. 6 to the Bid Specifications for Contract No. WW-757R, Laguna, Howard, and Mission Creek Combined Sewer Discharge Improvements, with no change to the contract amount",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0148",
+   "from": "minutes"
+  },
+  {
+   "no": "8",
+   "title": "Authorize the General Manager to consent to the Development Agreement and adopt findings pursuant to the California Environmental Quality Act (CEQA)",
+   "decision": "approve Item 8",
+   "resolution": "25-0149",
+   "text": "Authorize the General Manager to consent, on behalf of the San Francisco Public Utilities Commission, to the Development Agreement between the City and County of San Francisco and Prologis L.P., a Delaware limited partnership, as it relates to matters under the SFPUC’s jurisdiction; and adopt findings pursuant to the California Environmental Quality Act (CEQA) and a Mitigation and Monitoring and Reporting Program"
+  },
+  {
+   "no": "9",
+   "title": "Approve the revised terms and conditions and authorize the General Manager to execute a Purchase and Sale Agreement and Easement Deeds with Sunol Glen Unified School District",
+   "decision": "approve Item 9",
+   "resolution": "25-0150",
+   "text": "Approve the revised terms and conditions and authorize the General Manager to execute a Purchase and Sale Agreement and Easement Deeds with Sunol Glen Unified School District for the acquisition of a 4,008-square-foot easement for an underground water pipeline and associated appurtenances and a 34,834-square-foot temporary construction easement on and across a portion of Alameda County Assessor’s Parcel No. 096-0155- 004-01, located at 11601 Main Street, Sunol, California, for $35,000, subject to Board of Supervisors and Mayor approval"
+  },
+  {
+   "no": "10",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "10A",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "10B",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "10C",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "10D",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "11",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "12",
+   "title": "Public Comment on the matters to be addressed during Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion on whether to assert the attorney-client privilege",
+   "decision": "assert the attorney-client privilege",
+   "resolution": "25-0151",
+   "text": "Motion on whether to assert the attorney-client privilege regarding the matters listed below:"
+  },
+  {
+   "no": "14",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session President Arce stated that the Commission recommends the Board of Supervisors approve the settlement referenced under Item 13"
+  },
+  {
+   "no": "15",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session",
+   "decision": "not to disclose",
+   "text": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

@@ -1,0 +1,117 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-05-03",
+ "id": "g55-41179",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41179",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26373"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: April 12, 2022 Special Meeting, and April 19, 2022 Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 220503-038)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Inna Kovaleva v. CCSF, Superior Ct. #CGC-19-576679 filed 6/13/2019 for $30,000. (Explanatory documents include a resolution.) RESOLUTION No. 220503-038",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 220503-038)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "text": "Approving various routine parking and traffic modifications and making environmental review findings: 7 A. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA N, ESTABLISH - 2-HOUR PARKING, 9 AM TO 6 PM, MONDAY THROUGH FRIDAY, EXCEPT VEHICLES WITH AREA N PERMITS, Anza Street, both sides, between 9th and 10th Avenue. B. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA S, ESTABLISH - 2-HOUR PARKING, BOTH SIDES, 8 AM TO 9 PM, MONDAY THROUGH FRIDAY, EXCEPT VEHICLES WITH AREA S PERMIT, Upper Terrace, both sides, between Masonic Avenue and Buena Vista Avenue East. C. ESTABLISH – PERPENDICULAR PARKING, Divisadero Street, west side, from Vallejo Street to 100 feet north of Broadway. (Explanatory documents include a staff report and resolution. For every parking and traffic modification that received a categorical exemption, the proposed action is the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code.) RESOLUTION No. 220503-039",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 220503-039)"
+  },
+  {
+   "no": "10.3",
+   "title": "Adopting a resolution making findings pursuant to AB361 to allow for continued remote meetings due to the COVID-19 pandemic.",
+   "text": "Adopting a resolution making findings pursuant to AB361 to allow for continued remote meetings due to the COVID-19 pandemic. (Explanatory documents include a resolution.) RESOLUTION No. 220503-040",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 220503-040)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director or his designee to execute the Restricted Grant Agreement with the California Department of Transportation (Caltrans) for the award of $1,824,328 for the SoMa Transit Gardens Connection project; and providing assurances that the SFMTA will comply with Caltrans policies.",
+   "text": "Authorizing the Director or his designee to execute the Restricted Grant Agreement with the California Department of Transportation (Caltrans) for the award of $1,824,328 for the SoMa Transit Gardens Connection project; and providing assurances that the SFMTA will comply with Caltrans policies. (Explanatory documents include a staff and resolution.) RESOLUTION No. 220503-041",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 220503-041)"
+  },
+  {
+   "no": "10.5",
+   "title": "Authorizing the Director to issue with the Department of Human Resources a joint Request for Proposals No. SFMTA-2022-31 for workers’ compensation claims third- party administration services, to solicit and evaluate proposals from qualified services providers, and negotiate a contract with the highest ranked proposer, which staff will present to the SFMTA Board of Directors and the Board of Supervisors for their respective approvals.",
+   "text": "Authorizing the Director to issue with the Department of Human Resources a joint Request for Proposals No. SFMTA-2022-31 for workers’ compensation claims third- party administration services, to solicit and evaluate proposals from qualified services providers, and negotiate a contract with the highest ranked proposer, which staff will present to the SFMTA Board of Directors and the Board of Supervisors for their respective approvals. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 220503-042 No public comment. 8",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 220503-042)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion on ridership, Van Ness Bus Rapid Transit preliminary performance, Muni Metro Modernization, Subway Renewal and Fix it Week: Early Metro Maintenance Closure outcomes"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in closed session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

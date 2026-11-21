@@ -1,0 +1,104 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-09-15",
+ "id": "g218-44446",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44446",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the September 1, 2023 Regular Meeting"
+  },
+  {
+   "no": "4b",
+   "title": "As-needed Waterproofing Consulting Services – Interactive Resources, Inc"
+  },
+  {
+   "no": "4c",
+   "title": "As-needed Waterproofing Consulting Services – Walker Consultants, Inc"
+  },
+  {
+   "no": "4d",
+   "title": "As-needed Waterproofing Consulting Services – McGinnis Chen Associates, Inc"
+  },
+  {
+   "no": "4e",
+   "title": "As-needed Waterproofing Consulting Services – Aquatech Consultancy, Inc"
+  },
+  {
+   "no": "4f",
+   "title": "As-needed Waterproofing Consulting Services – Allana Buick & Bers, Inc"
+  },
+  {
+   "no": "4g",
+   "title": "Laguna Honda Hospital and Rehabilitation Center Main Sewer Replacement Project"
+  },
+  {
+   "no": "4h",
+   "title": "Alemany Interchange Improvements Phase 2"
+  },
+  {
+   "no": "4i",
+   "title": "Pedestrian Safety Improvements Various"
+  },
+  {
+   "no": "4j",
+   "title": "San Francisco Rent Board Tenant Improvement"
+  },
+  {
+   "no": "6",
+   "title": "Sunset Boulevard Pavement Renovation – Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "Various Locations Pavement Renovation No. 61 & Sewer Renovation – Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Operations Division – Bureau of Building and Street Repair Overview"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "9",
+   "title": "Closed Session – Public Works Director Hiring"
+  },
+  {
+   "no": "10",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "12",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

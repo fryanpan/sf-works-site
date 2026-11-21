@@ -1,0 +1,2303 @@
+{
+ "generated": "2026-11-11",
+ "mileBasis": "per direction of travel",
+ "years": [
+  2015,
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "rows": [
+  {
+   "year": 2015,
+   "network_miles": 440.7,
+   "all_ages_miles": 130.0,
+   "network_centerline_miles": 228.5,
+   "all_ages_centerline_miles": 64.1,
+   "all_ages_strict_miles": 85.3,
+   "all_ages_bikeway_miles": 130.0,
+   "slow_street_miles_on_bikeway_blocks": 0.0,
+   "slow_street_miles_not_in_bikeway_layer": 0,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 0.0,
+   "slow_street_miles_all_rows": 0,
+   "all_ages_by_bci_class_ii_miles": 39.2,
+   "all_ages_by_bci_class_iii_miles": 5.5,
+   "class_iii_calm_street_no_calming_miles": 53.6,
+   "class_iv_miles": 10.7,
+   "class_i_miles": 74.6,
+   "class_iv_centerline_miles": 7.7,
+   "class_iv_miles_with_no_install_year": 0.0,
+   "slow_street_centerline_miles": 0,
+   "blocks_all_ages": 512,
+   "rows": 5122,
+   "miles_class_unknown": 54.5,
+   "miles_class_unknown_all_ages_later": 31.5,
+   "class_iv_miles_with_install_before_2014": 9.9,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.3,
+   "retired_block_all_ages_miles": 0.6,
+   "blocks": 2720,
+   "residents_within_reach": 531918,
+   "residents_total": 840763,
+   "resident_share": 0.6327,
+   "population_basis": "ACS 2011–2015 block-group totals, spread over 2010 blocks by their 2010 census shares",
+   "schools_within_reach": 84,
+   "schools_total": 197,
+   "school_share": 0.4264,
+   "libraries_within_reach": 12,
+   "libraries_total": 28,
+   "library_share": 0.4286,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 531918,
+     "resident_share": 0.6327,
+     "schools_within_reach": 84,
+     "school_share": 0.4264,
+     "libraries_within_reach": 12,
+     "library_share": 0.4286
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 261342,
+     "resident_share": 0.3108,
+     "schools_within_reach": 29,
+     "school_share": 0.1472,
+     "libraries_within_reach": 1,
+     "library_share": 0.0357
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 419507,
+     "resident_share": 0.499,
+     "schools_within_reach": 59,
+     "school_share": 0.2995,
+     "libraries_within_reach": 10,
+     "library_share": 0.3571
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 458366,
+     "resident_share": 0.5452,
+     "schools_within_reach": 65,
+     "school_share": 0.3299,
+     "libraries_within_reach": 10,
+     "library_share": 0.3571
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
+   "tier": "INSTALL_YR only",
+   "network_notes": {
+    "undated install, assumed present": 566,
+    "class unknown before a later upgrade": 443
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2016,
+   "network_miles": 443.6,
+   "all_ages_miles": 135.0,
+   "network_centerline_miles": 230.2,
+   "all_ages_centerline_miles": 66.9,
+   "all_ages_strict_miles": 86.4,
+   "all_ages_bikeway_miles": 135.0,
+   "slow_street_miles_on_bikeway_blocks": 0.0,
+   "slow_street_miles_not_in_bikeway_layer": 0,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 0.0,
+   "slow_street_miles_all_rows": 0,
+   "all_ages_by_bci_class_ii_miles": 42.0,
+   "all_ages_by_bci_class_iii_miles": 6.7,
+   "class_iii_calm_street_no_calming_miles": 54.3,
+   "class_iv_miles": 11.3,
+   "class_i_miles": 75.1,
+   "class_iv_centerline_miles": 8.1,
+   "class_iv_miles_with_no_install_year": 0.0,
+   "slow_street_centerline_miles": 0,
+   "blocks_all_ages": 558,
+   "rows": 5176,
+   "miles_class_unknown": 44.1,
+   "miles_class_unknown_all_ages_later": 29.7,
+   "class_iv_miles_with_install_before_2014": 10.3,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.0,
+   "blocks": 2749,
+   "residents_within_reach": 563079,
+   "residents_total": 850282,
+   "resident_share": 0.6622,
+   "population_basis": "ACS 2012–2016 block-group totals, spread over 2010 blocks by their 2010 census shares",
+   "schools_within_reach": 91,
+   "schools_total": 197,
+   "school_share": 0.4619,
+   "libraries_within_reach": 12,
+   "libraries_total": 28,
+   "library_share": 0.4286,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 563079,
+     "resident_share": 0.6622,
+     "schools_within_reach": 91,
+     "school_share": 0.4619,
+     "libraries_within_reach": 12,
+     "library_share": 0.4286
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 284191,
+     "resident_share": 0.3342,
+     "schools_within_reach": 31,
+     "school_share": 0.1574,
+     "libraries_within_reach": 1,
+     "library_share": 0.0357
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 448847,
+     "resident_share": 0.5279,
+     "schools_within_reach": 66,
+     "school_share": 0.335,
+     "libraries_within_reach": 10,
+     "library_share": 0.3571
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 486062,
+     "resident_share": 0.5716,
+     "schools_within_reach": 72,
+     "school_share": 0.3655,
+     "libraries_within_reach": 10,
+     "library_share": 0.3571
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
+   "tier": "INSTALL_YR only",
+   "network_notes": {
+    "undated install, assumed present": 566,
+    "class unknown before a later upgrade": 361
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2017,
+   "network_miles": 447.7,
+   "all_ages_miles": 145.0,
+   "network_centerline_miles": 233.1,
+   "all_ages_centerline_miles": 74.3,
+   "all_ages_strict_miles": 92.1,
+   "all_ages_bikeway_miles": 145.0,
+   "slow_street_miles_on_bikeway_blocks": 0.0,
+   "slow_street_miles_not_in_bikeway_layer": 0,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 0.0,
+   "slow_street_miles_all_rows": 0,
+   "all_ages_by_bci_class_ii_miles": 44.8,
+   "all_ages_by_bci_class_iii_miles": 8.1,
+   "class_iii_calm_street_no_calming_miles": 53.3,
+   "class_iv_miles": 15.8,
+   "class_i_miles": 76.3,
+   "class_iv_centerline_miles": 12.0,
+   "class_iv_miles_with_no_install_year": 0.0,
+   "slow_street_centerline_miles": 0,
+   "blocks_all_ages": 638,
+   "rows": 5221,
+   "miles_class_unknown": 31.4,
+   "miles_class_unknown_all_ages_later": 23.3,
+   "class_iv_miles_with_install_before_2014": 14.4,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.0,
+   "blocks": 2777,
+   "residents_within_reach": 587283,
+   "residents_total": 864263,
+   "resident_share": 0.6795,
+   "population_basis": "ACS 2013–2017 block-group totals, spread over 2010 blocks by their 2010 census shares",
+   "schools_within_reach": 103,
+   "schools_total": 200,
+   "school_share": 0.515,
+   "libraries_within_reach": 13,
+   "libraries_total": 28,
+   "library_share": 0.4643,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 587283,
+     "resident_share": 0.6795,
+     "schools_within_reach": 103,
+     "school_share": 0.515,
+     "libraries_within_reach": 13,
+     "library_share": 0.4643
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 308021,
+     "resident_share": 0.3564,
+     "schools_within_reach": 35,
+     "school_share": 0.175,
+     "libraries_within_reach": 1,
+     "library_share": 0.0357
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 475672,
+     "resident_share": 0.5504,
+     "schools_within_reach": 73,
+     "school_share": 0.365,
+     "libraries_within_reach": 10,
+     "library_share": 0.3571
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 515887,
+     "resident_share": 0.5969,
+     "schools_within_reach": 81,
+     "school_share": 0.405,
+     "libraries_within_reach": 10,
+     "library_share": 0.3571
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
+   "tier": "INSTALL_YR only",
+   "network_notes": {
+    "undated install, assumed present": 566,
+    "class unknown before a later upgrade": 252
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2018,
+   "network_miles": 448.1,
+   "all_ages_miles": 154.4,
+   "network_centerline_miles": 233.6,
+   "all_ages_centerline_miles": 80.5,
+   "all_ages_strict_miles": 98.1,
+   "all_ages_bikeway_miles": 154.4,
+   "slow_street_miles_on_bikeway_blocks": 0.0,
+   "slow_street_miles_not_in_bikeway_layer": 0,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 0.0,
+   "slow_street_miles_all_rows": 0,
+   "all_ages_by_bci_class_ii_miles": 45.4,
+   "all_ages_by_bci_class_iii_miles": 10.9,
+   "class_iii_calm_street_no_calming_miles": 50.6,
+   "class_iv_miles": 21.6,
+   "class_i_miles": 76.4,
+   "class_iv_centerline_miles": 16.7,
+   "class_iv_miles_with_no_install_year": 1.4,
+   "slow_street_centerline_miles": 0,
+   "blocks_all_ages": 721,
+   "rows": 5227,
+   "miles_class_unknown": 23.3,
+   "miles_class_unknown_all_ages_later": 17.1,
+   "class_iv_miles_with_install_before_2014": 18.5,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.0,
+   "blocks": 2783,
+   "residents_within_reach": 605009,
+   "residents_total": 870044,
+   "resident_share": 0.6954,
+   "population_basis": "ACS 2014–2018 block-group totals, spread over 2010 blocks by their 2010 census shares",
+   "schools_within_reach": 105,
+   "schools_total": 203,
+   "school_share": 0.5172,
+   "libraries_within_reach": 14,
+   "libraries_total": 28,
+   "library_share": 0.5,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 605009,
+     "resident_share": 0.6954,
+     "schools_within_reach": 105,
+     "school_share": 0.5172,
+     "libraries_within_reach": 14,
+     "library_share": 0.5
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 330672,
+     "resident_share": 0.3801,
+     "schools_within_reach": 40,
+     "school_share": 0.197,
+     "libraries_within_reach": 1,
+     "library_share": 0.0357
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 498352,
+     "resident_share": 0.5728,
+     "schools_within_reach": 77,
+     "school_share": 0.3793,
+     "libraries_within_reach": 11,
+     "library_share": 0.3929
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 537452,
+     "resident_share": 0.6177,
+     "schools_within_reach": 84,
+     "school_share": 0.4138,
+     "libraries_within_reach": 11,
+     "library_share": 0.3929
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
+   "tier": "INSTALL_YR only",
+   "network_notes": {
+    "undated install, assumed present": 566,
+    "class unknown before a later upgrade": 173
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2019,
+   "network_miles": 454.5,
+   "all_ages_miles": 162.5,
+   "network_centerline_miles": 237.6,
+   "all_ages_centerline_miles": 85.5,
+   "all_ages_strict_miles": 104.9,
+   "all_ages_bikeway_miles": 162.5,
+   "slow_street_miles_on_bikeway_blocks": 0.0,
+   "slow_street_miles_not_in_bikeway_layer": 0,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 0.0,
+   "slow_street_miles_all_rows": 0,
+   "all_ages_by_bci_class_ii_miles": 46.2,
+   "all_ages_by_bci_class_iii_miles": 11.4,
+   "class_iii_calm_street_no_calming_miles": 51.2,
+   "class_iv_miles": 28.4,
+   "class_i_miles": 76.4,
+   "class_iv_centerline_miles": 21.1,
+   "class_iv_miles_with_no_install_year": 2.1,
+   "slow_street_centerline_miles": 0,
+   "blocks_all_ages": 793,
+   "rows": 5322,
+   "miles_class_unknown": 13.3,
+   "miles_class_unknown_all_ages_later": 10.5,
+   "class_iv_miles_with_install_before_2014": 24.2,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2844,
+   "residents_within_reach": 631180,
+   "residents_total": 874961,
+   "resident_share": 0.7214,
+   "population_basis": "ACS 2015–2019 block-group totals, spread over 2010 blocks by their 2010 census shares",
+   "schools_within_reach": 111,
+   "schools_total": 207,
+   "school_share": 0.5362,
+   "libraries_within_reach": 15,
+   "libraries_total": 28,
+   "library_share": 0.5357,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 631180,
+     "resident_share": 0.7214,
+     "schools_within_reach": 111,
+     "school_share": 0.5362,
+     "libraries_within_reach": 15,
+     "library_share": 0.5357
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 351086,
+     "resident_share": 0.4013,
+     "schools_within_reach": 43,
+     "school_share": 0.2077,
+     "libraries_within_reach": 1,
+     "library_share": 0.0357
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 520664,
+     "resident_share": 0.5951,
+     "schools_within_reach": 80,
+     "school_share": 0.3865,
+     "libraries_within_reach": 12,
+     "library_share": 0.4286
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 565987,
+     "resident_share": 0.6469,
+     "schools_within_reach": 87,
+     "school_share": 0.4203,
+     "libraries_within_reach": 12,
+     "library_share": 0.4286
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
+   "tier": "INSTALL_YR only",
+   "network_notes": {
+    "undated install, assumed present": 566,
+    "class unknown before a later upgrade": 92
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2020,
+   "network_miles": 456.7,
+   "all_ages_miles": 210.6,
+   "network_centerline_miles": 239.1,
+   "all_ages_centerline_miles": 111.4,
+   "all_ages_strict_miles": 155.3,
+   "all_ages_bikeway_miles": 174.8,
+   "slow_street_miles_on_bikeway_blocks": 8.2,
+   "slow_street_miles_not_in_bikeway_layer": 6.9,
+   "pandemic_slow_street_miles": 20.77,
+   "pandemic_slow_street_blocks": 154,
+   "slow_street_all_ages_miles": 35.85,
+   "slow_street_miles_all_rows": 21.8,
+   "all_ages_by_bci_class_ii_miles": 43.3,
+   "all_ages_by_bci_class_iii_miles": 12.1,
+   "class_iii_calm_street_no_calming_miles": 44.3,
+   "class_iv_miles": 36.4,
+   "class_i_miles": 76.5,
+   "class_iv_centerline_miles": 26.7,
+   "class_iv_miles_with_no_install_year": 2.1,
+   "slow_street_centerline_miles": 10.9,
+   "blocks_all_ages": 1142,
+   "rows": 5351,
+   "miles_class_unknown": 1.6,
+   "miles_class_unknown_all_ages_later": 1.6,
+   "class_iv_miles_with_install_before_2014": 30.6,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2863,
+   "residents_within_reach": 704102,
+   "residents_total": 873965,
+   "resident_share": 0.8056,
+   "population_basis": "Census 2020 block counts (PL 94-171)",
+   "schools_within_reach": 147,
+   "schools_total": 206,
+   "school_share": 0.7136,
+   "libraries_within_reach": 20,
+   "libraries_total": 27,
+   "library_share": 0.7407,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 704102,
+     "resident_share": 0.8056,
+     "schools_within_reach": 147,
+     "school_share": 0.7136,
+     "libraries_within_reach": 20,
+     "library_share": 0.7407
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 447465,
+     "resident_share": 0.512,
+     "schools_within_reach": 61,
+     "school_share": 0.2961,
+     "libraries_within_reach": 8,
+     "library_share": 0.2963
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 616814,
+     "resident_share": 0.7058,
+     "schools_within_reach": 111,
+     "school_share": 0.5388,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 651023,
+     "resident_share": 0.7449,
+     "schools_within_reach": 121,
+     "school_share": 0.5874,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 211,
+   "reach_without_dropped_slow_streets": {
+    "quarter": {
+     "residents_within_reach": 667707,
+     "schools_within_reach": 131,
+     "libraries_within_reach": 17,
+     "resident_share": 0.764
+    },
+    "block": {
+     "residents_within_reach": 406386,
+     "schools_within_reach": 51,
+     "libraries_within_reach": 5,
+     "resident_share": 0.465
+    },
+    "2blocks": {
+     "residents_within_reach": 571025,
+     "schools_within_reach": 99,
+     "libraries_within_reach": 17,
+     "resident_share": 0.6534
+    },
+    "1000ft": {
+     "residents_within_reach": 609187,
+     "schools_within_reach": 110,
+     "libraries_within_reach": 17,
+     "resident_share": 0.697
+    }
+   },
+   "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
+   "tier": "INSTALL_YR only",
+   "network_notes": {
+    "undated install, assumed present": 566,
+    "class unknown before a later upgrade": 3
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2021,
+   "network_miles": 463.3,
+   "all_ages_miles": 224.8,
+   "network_centerline_miles": 242.7,
+   "all_ages_centerline_miles": 118.4,
+   "all_ages_strict_miles": 166.2,
+   "all_ages_bikeway_miles": 185.4,
+   "slow_street_miles_on_bikeway_blocks": 8.9,
+   "slow_street_miles_not_in_bikeway_layer": 9.2,
+   "pandemic_slow_street_miles": 21.2,
+   "pandemic_slow_street_blocks": 156,
+   "slow_street_all_ages_miles": 39.35,
+   "slow_street_miles_all_rows": 25.3,
+   "all_ages_by_bci_class_ii_miles": 46.3,
+   "all_ages_by_bci_class_iii_miles": 12.2,
+   "class_iii_calm_street_no_calming_miles": 43.2,
+   "class_iv_miles": 41.1,
+   "class_i_miles": 78.6,
+   "class_iv_centerline_miles": 30.1,
+   "class_iv_miles_with_no_install_year": 3.0,
+   "slow_street_centerline_miles": 12.7,
+   "blocks_all_ages": 1226,
+   "rows": 5452,
+   "miles_class_unknown": 0,
+   "miles_class_unknown_all_ages_later": 0,
+   "class_iv_miles_with_install_before_2014": 33.8,
+   "presidio_network_miles": 50.9,
+   "presidio_all_ages_miles": 25.5,
+   "other_no_cnn_path_network_miles": 27.8,
+   "other_no_cnn_path_all_ages_miles": 27.7,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2920,
+   "residents_within_reach": 705220,
+   "residents_total": 865933,
+   "resident_share": 0.8144,
+   "population_basis": "ACS 2017–2021 block-group totals, spread over 2020 blocks by their 2020 census shares",
+   "schools_within_reach": 150,
+   "schools_total": 208,
+   "school_share": 0.7212,
+   "libraries_within_reach": 21,
+   "libraries_total": 27,
+   "library_share": 0.7778,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 705220,
+     "resident_share": 0.8144,
+     "schools_within_reach": 150,
+     "school_share": 0.7212,
+     "libraries_within_reach": 21,
+     "library_share": 0.7778
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 465050,
+     "resident_share": 0.5371,
+     "schools_within_reach": 64,
+     "school_share": 0.3077,
+     "libraries_within_reach": 8,
+     "library_share": 0.2963
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 624160,
+     "resident_share": 0.7208,
+     "schools_within_reach": 115,
+     "school_share": 0.5529,
+     "libraries_within_reach": 20,
+     "library_share": 0.7407
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 656566,
+     "resident_share": 0.7582,
+     "schools_within_reach": 125,
+     "school_share": 0.601,
+     "libraries_within_reach": 20,
+     "library_share": 0.7407
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 213,
+   "reach_without_dropped_slow_streets": {
+    "quarter": {
+     "residents_within_reach": 666376,
+     "schools_within_reach": 134,
+     "libraries_within_reach": 18,
+     "resident_share": 0.7695
+    },
+    "block": {
+     "residents_within_reach": 420862,
+     "schools_within_reach": 54,
+     "libraries_within_reach": 5,
+     "resident_share": 0.486
+    },
+    "2blocks": {
+     "residents_within_reach": 575085,
+     "schools_within_reach": 103,
+     "libraries_within_reach": 18,
+     "resident_share": 0.6641
+    },
+    "1000ft": {
+     "residents_within_reach": 611438,
+     "schools_within_reach": 114,
+     "libraries_within_reach": 18,
+     "resident_share": 0.7061
+    }
+   },
+   "network_basis": "bracketed by captures 2021-03-25 and 2022-12-09; changes inside the gap dated by UPDATE_YR where present",
+   "tier": "archived snapshots",
+   "network_notes": {
+    "undated install, assumed present": 565,
+    "INSTALL_YR predates a snapshot that lacks the block": 50,
+    "class changed between snapshots with no UPDATE_YR": 4,
+    "present earlier, gone later: counted through Y": 1
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2022,
+   "network_miles": 460.8,
+   "all_ages_miles": 204.7,
+   "network_centerline_miles": 241.5,
+   "all_ages_centerline_miles": 108.5,
+   "all_ages_strict_miles": 148.0,
+   "all_ages_bikeway_miles": 185.9,
+   "slow_street_miles_on_bikeway_blocks": 8.9,
+   "slow_street_miles_not_in_bikeway_layer": 9.8,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 18.75,
+   "slow_street_miles_all_rows": 25.9,
+   "all_ages_by_bci_class_ii_miles": 45.2,
+   "all_ages_by_bci_class_iii_miles": 11.5,
+   "class_iii_calm_street_no_calming_miles": 41.3,
+   "class_iv_miles": 40.7,
+   "class_i_miles": 81.4,
+   "class_iv_centerline_miles": 29.8,
+   "class_iv_miles_with_no_install_year": 3.0,
+   "slow_street_centerline_miles": 13.0,
+   "blocks_all_ages": 1089,
+   "rows": 5444,
+   "miles_class_unknown": 0,
+   "miles_class_unknown_all_ages_later": 0,
+   "class_iv_miles_with_install_before_2014": 33.2,
+   "presidio_network_miles": 50.8,
+   "presidio_all_ages_miles": 25.4,
+   "other_no_cnn_path_network_miles": 27.9,
+   "other_no_cnn_path_all_ages_miles": 27.6,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2917,
+   "residents_within_reach": 659451,
+   "residents_total": 851036,
+   "resident_share": 0.7749,
+   "population_basis": "ACS 2018–2022 block-group totals, spread over 2020 blocks by their 2020 census shares",
+   "schools_within_reach": 138,
+   "schools_total": 209,
+   "school_share": 0.6603,
+   "libraries_within_reach": 19,
+   "libraries_total": 27,
+   "library_share": 0.7037,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 659451,
+     "resident_share": 0.7749,
+     "schools_within_reach": 138,
+     "school_share": 0.6603,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 417801,
+     "resident_share": 0.4909,
+     "schools_within_reach": 54,
+     "school_share": 0.2584,
+     "libraries_within_reach": 6,
+     "library_share": 0.2222
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 569241,
+     "resident_share": 0.6689,
+     "schools_within_reach": 107,
+     "school_share": 0.512,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 605602,
+     "resident_share": 0.7116,
+     "schools_within_reach": 118,
+     "school_share": 0.5646,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "bracketed by captures 2022-12-09 and 2024-03-31; changes inside the gap dated by UPDATE_YR where present",
+   "tier": "archived snapshots",
+   "network_notes": {
+    "undated install, assumed present": 555,
+    "INSTALL_YR predates a snapshot that lacks the block": 7,
+    "class changed between snapshots with no UPDATE_YR": 1
+   },
+   "pandemic_dropped_miles": 21.2
+  },
+  {
+   "year": 2023,
+   "network_miles": 463.3,
+   "all_ages_miles": 216.0,
+   "network_centerline_miles": 242.6,
+   "all_ages_centerline_miles": 114.3,
+   "all_ages_strict_miles": 158.4,
+   "all_ages_bikeway_miles": 192.6,
+   "slow_street_miles_on_bikeway_blocks": 9.0,
+   "slow_street_miles_not_in_bikeway_layer": 14.4,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 23.38,
+   "slow_street_miles_all_rows": 31.4,
+   "all_ages_by_bci_class_ii_miles": 44.5,
+   "all_ages_by_bci_class_iii_miles": 13.1,
+   "class_iii_calm_street_no_calming_miles": 39.6,
+   "class_iv_miles": 45.3,
+   "class_i_miles": 81.8,
+   "class_iv_centerline_miles": 32.2,
+   "class_iv_miles_with_no_install_year": 3.0,
+   "slow_street_centerline_miles": 15.7,
+   "blocks_all_ages": 1179,
+   "rows": 5476,
+   "miles_class_unknown": 0,
+   "miles_class_unknown_all_ages_later": 0,
+   "class_iv_miles_with_install_before_2014": 36.3,
+   "presidio_network_miles": 50.8,
+   "presidio_all_ages_miles": 25.4,
+   "other_no_cnn_path_network_miles": 27.9,
+   "other_no_cnn_path_all_ages_miles": 27.6,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2930,
+   "residents_within_reach": 663970,
+   "residents_total": 836321,
+   "resident_share": 0.7939,
+   "population_basis": "ACS 2019–2023 block-group totals, spread over 2020 blocks by their 2020 census shares",
+   "schools_within_reach": 144,
+   "schools_total": 209,
+   "school_share": 0.689,
+   "libraries_within_reach": 19,
+   "libraries_total": 27,
+   "library_share": 0.7037,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 663970,
+     "resident_share": 0.7939,
+     "schools_within_reach": 144,
+     "school_share": 0.689,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 432507,
+     "resident_share": 0.5172,
+     "schools_within_reach": 59,
+     "school_share": 0.2823,
+     "libraries_within_reach": 6,
+     "library_share": 0.2222
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 580774,
+     "resident_share": 0.6944,
+     "schools_within_reach": 112,
+     "school_share": 0.5359,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 613973,
+     "resident_share": 0.7341,
+     "schools_within_reach": 122,
+     "school_share": 0.5837,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "bracketed by captures 2022-12-09 and 2024-03-31; changes inside the gap dated by UPDATE_YR where present",
+   "tier": "archived snapshots",
+   "network_notes": {
+    "undated install, assumed present": 555,
+    "INSTALL_YR predates a snapshot that lacks the block": 7,
+    "class changed between snapshots with no UPDATE_YR": 2
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2024,
+   "network_miles": 472.2,
+   "all_ages_miles": 226.1,
+   "network_centerline_miles": 245.2,
+   "all_ages_centerline_miles": 117.9,
+   "all_ages_strict_miles": 168.1,
+   "all_ages_bikeway_miles": 203.0,
+   "slow_street_miles_on_bikeway_blocks": 8.8,
+   "slow_street_miles_not_in_bikeway_layer": 14.4,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 23.13,
+   "slow_street_miles_all_rows": 31.4,
+   "all_ages_by_bci_class_ii_miles": 44.6,
+   "all_ages_by_bci_class_iii_miles": 13.5,
+   "class_iii_calm_street_no_calming_miles": 39.4,
+   "class_iv_miles": 50.5,
+   "class_i_miles": 86.2,
+   "class_iv_centerline_miles": 35.2,
+   "class_iv_miles_with_no_install_year": 3.0,
+   "slow_street_centerline_miles": 15.7,
+   "blocks_all_ages": 1202,
+   "rows": 5526,
+   "miles_class_unknown": 0,
+   "miles_class_unknown_all_ages_later": 0,
+   "class_iv_miles_with_install_before_2014": 37.8,
+   "presidio_network_miles": 50.8,
+   "presidio_all_ages_miles": 25.4,
+   "other_no_cnn_path_network_miles": 27.9,
+   "other_no_cnn_path_all_ages_miles": 27.8,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2946,
+   "residents_within_reach": 667406,
+   "residents_total": 830235,
+   "resident_share": 0.8039,
+   "population_basis": "ACS 2020–2024 block-group totals, spread over 2020 blocks by their 2020 census shares",
+   "schools_within_reach": 151,
+   "schools_total": 218,
+   "school_share": 0.6927,
+   "libraries_within_reach": 20,
+   "libraries_total": 27,
+   "library_share": 0.7407,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 667406,
+     "resident_share": 0.8039,
+     "schools_within_reach": 151,
+     "school_share": 0.6927,
+     "libraries_within_reach": 20,
+     "library_share": 0.7407
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 434395,
+     "resident_share": 0.5232,
+     "schools_within_reach": 63,
+     "school_share": 0.289,
+     "libraries_within_reach": 7,
+     "library_share": 0.2593
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 584601,
+     "resident_share": 0.7041,
+     "schools_within_reach": 120,
+     "school_share": 0.5505,
+     "libraries_within_reach": 20,
+     "library_share": 0.7407
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 617448,
+     "resident_share": 0.7437,
+     "schools_within_reach": 130,
+     "school_share": 0.5963,
+     "libraries_within_reach": 20,
+     "library_share": 0.7407
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "bracketed by captures 2024-03-31 and 2025-12-08; changes inside the gap dated by UPDATE_YR where present",
+   "tier": "archived snapshots",
+   "network_notes": {
+    "undated install, assumed present": 555,
+    "class changed between snapshots with no UPDATE_YR": 6,
+    "INSTALL_YR predates a snapshot that lacks the block": 2,
+    "present earlier, gone later: counted through Y": 9
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2025,
+   "network_miles": 471.8,
+   "all_ages_miles": 228.3,
+   "network_centerline_miles": 244.4,
+   "all_ages_centerline_miles": 119.2,
+   "all_ages_strict_miles": 169.8,
+   "all_ages_bikeway_miles": 205.4,
+   "slow_street_miles_on_bikeway_blocks": 8.5,
+   "slow_street_miles_not_in_bikeway_layer": 14.4,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 22.89,
+   "slow_street_miles_all_rows": 31.4,
+   "all_ages_by_bci_class_ii_miles": 44.5,
+   "all_ages_by_bci_class_iii_miles": 14.0,
+   "class_iii_calm_street_no_calming_miles": 38.5,
+   "class_iv_miles": 52.2,
+   "class_i_miles": 86.2,
+   "class_iv_centerline_miles": 36.3,
+   "class_iv_miles_with_no_install_year": 3.1,
+   "slow_street_centerline_miles": 15.7,
+   "blocks_all_ages": 1213,
+   "rows": 5518,
+   "miles_class_unknown": 0,
+   "miles_class_unknown_all_ages_later": 0,
+   "class_iv_miles_with_install_before_2014": 39.3,
+   "presidio_network_miles": 50.8,
+   "presidio_all_ages_miles": 25.4,
+   "other_no_cnn_path_network_miles": 27.9,
+   "other_no_cnn_path_all_ages_miles": 27.8,
+   "retired_block_network_miles": 2.7,
+   "retired_block_all_ages_miles": 1.3,
+   "blocks": 2937,
+   "residents_within_reach": 666647,
+   "residents_total": 830235,
+   "resident_share": 0.803,
+   "population_basis": "ACS 2020–2024 block-group totals, spread over 2020 blocks by their 2020 census shares; the 2020–2024 ACS is the latest released, so 2025 is held at it",
+   "schools_within_reach": 152,
+   "schools_total": 221,
+   "school_share": 0.6878,
+   "libraries_within_reach": 19,
+   "libraries_total": 27,
+   "library_share": 0.7037,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 666647,
+     "resident_share": 0.803,
+     "schools_within_reach": 152,
+     "school_share": 0.6878,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 434921,
+     "resident_share": 0.5239,
+     "schools_within_reach": 64,
+     "school_share": 0.2896,
+     "libraries_within_reach": 8,
+     "library_share": 0.2963
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 583999,
+     "resident_share": 0.7034,
+     "schools_within_reach": 121,
+     "school_share": 0.5475,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 616894,
+     "resident_share": 0.743,
+     "schools_within_reach": 131,
+     "school_share": 0.5928,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "bracketed by captures 2025-12-08 and 2026-02-15; changes inside the gap dated by UPDATE_YR where present",
+   "tier": "archived snapshots",
+   "network_notes": {
+    "undated install, assumed present": 555,
+    "class changed between snapshots with no UPDATE_YR": 1
+   },
+   "pandemic_dropped_miles": 0.0
+  },
+  {
+   "year": 2026,
+   "network_miles": 473.4,
+   "all_ages_miles": 232.3,
+   "network_centerline_miles": 244.5,
+   "all_ages_centerline_miles": 120.9,
+   "all_ages_strict_miles": 175.2,
+   "all_ages_bikeway_miles": 209.4,
+   "slow_street_miles_on_bikeway_blocks": 8.5,
+   "slow_street_miles_not_in_bikeway_layer": 14.4,
+   "pandemic_slow_street_miles": 0.0,
+   "pandemic_slow_street_blocks": 0,
+   "slow_street_all_ages_miles": 22.89,
+   "slow_street_miles_all_rows": 31.4,
+   "all_ages_by_bci_class_ii_miles": 42.8,
+   "all_ages_by_bci_class_iii_miles": 14.2,
+   "class_iii_calm_street_no_calming_miles": 37.7,
+   "class_iv_miles": 57.0,
+   "class_i_miles": 86.9,
+   "class_iv_centerline_miles": 38.3,
+   "class_iv_miles_with_no_install_year": 3.2,
+   "slow_street_centerline_miles": 15.7,
+   "blocks_all_ages": 1236,
+   "rows": 5558,
+   "miles_class_unknown": 0,
+   "miles_class_unknown_all_ages_later": 0,
+   "class_iv_miles_with_install_before_2014": 42.1,
+   "presidio_network_miles": 50.8,
+   "presidio_all_ages_miles": 25.4,
+   "other_no_cnn_path_network_miles": 28.5,
+   "other_no_cnn_path_all_ages_miles": 28.0,
+   "retired_block_network_miles": 2.9,
+   "retired_block_all_ages_miles": 1.5,
+   "blocks": 2948,
+   "residents_within_reach": 664340,
+   "residents_total": 830235,
+   "resident_share": 0.8002,
+   "population_basis": "ACS 2020–2024 block-group totals, spread over 2020 blocks by their 2020 census shares; the 2020–2024 ACS is the latest released, so 2026 is held at it",
+   "schools_within_reach": 153,
+   "schools_total": 221,
+   "school_share": 0.6923,
+   "libraries_within_reach": 19,
+   "libraries_total": 27,
+   "library_share": 0.7037,
+   "reach_by_threshold": {
+    "quarter": {
+     "metres": 402.3,
+     "residents_within_reach": 664340,
+     "resident_share": 0.8002,
+     "schools_within_reach": 153,
+     "school_share": 0.6923,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "block": {
+     "metres": 134.1,
+     "residents_within_reach": 435984,
+     "resident_share": 0.5251,
+     "schools_within_reach": 65,
+     "school_share": 0.2941,
+     "libraries_within_reach": 8,
+     "library_share": 0.2963
+    },
+    "2blocks": {
+     "metres": 268.2,
+     "residents_within_reach": 582069,
+     "resident_share": 0.7011,
+     "schools_within_reach": 122,
+     "school_share": 0.552,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    },
+    "1000ft": {
+     "metres": 304.8,
+     "residents_within_reach": 614870,
+     "resident_share": 0.7406,
+     "schools_within_reach": 132,
+     "school_share": 0.5973,
+     "libraries_within_reach": 19,
+     "library_share": 0.7037
+    }
+   },
+   "dropped_slow_street_blocks_in_reach": 0,
+   "reach_without_dropped_slow_streets": null,
+   "network_basis": "live layer as of 2026-11-10 (year to date)",
+   "tier": "current",
+   "network_notes": {
+    "undated install, assumed present": 556
+   },
+   "pandemic_dropped_miles": 0.0
+  }
+ ],
+ "sources": {
+  "network": {
+   "name": "SFMTA bikeway layer (ArcGIS Bicycle/bicycle, layer 0)",
+   "url": "https://services.sfmta.com/arcgis/rest/services/Bicycle/bicycle/FeatureServer/0",
+   "queried": "2026-11-10",
+   "geometry_queried": "2026-11-10"
+  },
+  "snapshots": [
+   {
+    "captured": "2021-03-25",
+    "kind": "archive",
+    "url": "https://web.archive.org/web/20210325171932id_/https://data.sfgov.org/api/views/ygmz-vaxd/rows.csv?accessType=DOWNLOAD",
+    "data_loaded_at": null,
+    "fetched": "2026-09-22",
+    "blocks": 2870,
+    "rows": 5358,
+    "row_miles": 457.0,
+    "centerline_miles": 239.3,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": null
+   },
+   {
+    "captured": "2022-12-09",
+    "kind": "archive",
+    "url": "https://web.archive.org/web/20221209021723id_/https://data.sfgov.org/api/views/ygmz-vaxd/rows.csv?accessType=DOWNLOAD",
+    "data_loaded_at": null,
+    "fetched": "2026-09-22",
+    "blocks": 2920,
+    "rows": 5454,
+    "row_miles": 463.8,
+    "centerline_miles": 242.7,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": null
+   },
+   {
+    "captured": "2024-03-31",
+    "kind": "archive",
+    "url": "https://web.archive.org/web/20240331194201id_/https://data.sfgov.org/api/views/ygmz-vaxd/rows.csv?accessType=DOWNLOAD",
+    "data_loaded_at": "03/23/2024 10:05:16 AM",
+    "fetched": "2026-09-22",
+    "blocks": 2944,
+    "rows": 5517,
+    "row_miles": 471.2,
+    "centerline_miles": 245.0,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": null
+   },
+   {
+    "captured": "2025-12-08",
+    "kind": "archive",
+    "url": "https://web.archive.org/web/20251208144027id_/https://data.sfgov.org/api/views/ygmz-vaxd/rows.csv?accessType=DOWNLOAD",
+    "data_loaded_at": "06/17/2025 01:45:07 PM",
+    "fetched": "2026-09-22",
+    "blocks": 2937,
+    "rows": 5511,
+    "row_miles": 471.1,
+    "centerline_miles": 244.4,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": null
+   },
+   {
+    "captured": "2026-02-15",
+    "kind": "archive",
+    "url": "https://web.archive.org/web/20260215091752id_/https://data.sfgov.org/api/views/ygmz-vaxd/rows.csv?accessType=DOWNLOAD",
+    "data_loaded_at": "02/14/2026 10:25:54 AM",
+    "fetched": "2026-09-22",
+    "blocks": 2937,
+    "rows": 5518,
+    "row_miles": 471.8,
+    "centerline_miles": 244.4,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": null
+   },
+   {
+    "captured": "2026-04-05",
+    "kind": "archive",
+    "url": "https://web.archive.org/web/20260405114850id_/https://data.sfgov.org/api/views/ygmz-vaxd/rows.csv?accessType=DOWNLOAD",
+    "data_loaded_at": "04/04/2026 10:30:27 AM",
+    "fetched": "2026-09-22",
+    "blocks": 2944,
+    "rows": 5526,
+    "row_miles": 472.1,
+    "centerline_miles": 244.7,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": null
+   },
+   {
+    "captured": "2026-11-10",
+    "kind": "live",
+    "url": "https://services.sfmta.com/arcgis/rest/services/Bicycle/bicycle/FeatureServer/0",
+    "data_loaded_at": null,
+    "fetched": "2026-11-10",
+    "blocks": 2948,
+    "rows": 5558,
+    "row_miles": 473.4,
+    "centerline_miles": 244.5,
+    "blocks_filled_through_gap": 0,
+    "row_miles_LENGTH_column": 474.2,
+    "row_miles_LENGTH_FT_column": 470.9
+   }
+  ],
+  "bci": {
+   "name": "2023 Draft Bike Comfort Index, Toole Design / SFMTA",
+   "url": "https://services6.arcgis.com/bom7L4u7y1k0qkF1/arcgis/rest/services/Bike_Comfort_Index_Score/FeatureServer/4",
+   "queried": "2026-10-04",
+   "segments": 15280,
+   "field": "bci",
+   "threshold": 80,
+   "bikeway_blocks_with_a_score": 2807,
+   "bikeway_blocks_with_cnn": 2852,
+   "combined_is_directional_minimum_segments": 13192,
+   "directional_sensitivity": {
+    "class_ii_iii_rows_that_flip": 194,
+    "miles": 16.1,
+    "note": "live Class II/III rows whose verdict changes under bci_ft or bci_tf in place of the combined bci"
+   },
+   "unscored": {
+    "bikeway_blocks_with_class_ii_iii_rows": 31,
+    "rows": 50,
+    "miles": 2.7,
+    "note": "Class II/III rows on bikeway blocks with no BCI score; counted as not qualifying"
+   },
+   "note": "one 2023 snapshot, labelled draft; held fixed for every year"
+  },
+  "calming": {
+   "mid_block": {
+    "id": "abhw-ffzx",
+    "url": "https://data.sfgov.org/d/abhw-ffzx",
+    "queried": "2026-09-23",
+    "rows": 1686
+   },
+   "intersection": {
+    "id": "bp3t-bd4t",
+    "url": "https://data.sfgov.org/d/bp3t-bd4t",
+    "queried": "2026-09-23",
+    "rows": 355
+   },
+   "centerlines": {
+    "id": "3psu-pn9h",
+    "queried": "2026-11-11"
+   }
+  },
+  "slow_streets": {
+   "name": "Slow Streets",
+   "dataset": "https://data.sf.gov/d/hkz3-itiu",
+   "queried": "2026-09-28",
+   "implemented_segments": 218,
+   "undated_segments_counted_from": 2022,
+   "undated_segments": 7
+  },
+  "population": {
+   "2010_blocks": {
+    "source": "TIGERweb tigerWMS_Census2010 layer 18 (Census Blocks), POP100 and interior point",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/tigerWMS_Census2010/MapServer/18/query",
+    "queried": "2026-09-22",
+    "blocks": 7386,
+    "total": 805235
+   },
+   "2020_blocks": {
+    "source": "DataSF Census 2020: Blocks for San Francisco, pop20 and interior point",
+    "dataset": "https://data.sf.gov/d/p2fw-hsrv",
+    "queried": "2026-09-22",
+    "blocks": 5986,
+    "total": 873965
+   },
+   "acs5_block_groups": {
+    "source": "ACS 5-year B01003 total population by block group, via data.census.gov table API (no key)",
+    "queried": "2026-09-22",
+    "totals": {
+     "2015": 840763,
+     "2016": 850282,
+     "2017": 864263,
+     "2018": 870044,
+     "2019": 874961,
+     "2020": 874784,
+     "2021": 865933,
+     "2022": 851036,
+     "2023": 836321,
+     "2024": 830235
+    }
+   }
+  },
+  "schools": {
+   "source": "CDE Public Schools and Districts data file, 2025-10-05, via Internet Archive",
+   "url": "https://web.archive.org/web/20251005140551id_/https://www.cde.ca.gov/SchoolDirectory/report?rid=dl1&tp=xlsx&ict=Y",
+   "queried": "2026-09-22",
+   "open_now_charters": 14,
+   "open_now_county_community": 1,
+   "open_now_total": 221,
+   "open_now_public": 120,
+   "open_now_private": 101,
+   "private": {
+    "source": "DataSF Schools, active private schools of the types Elementary School (Private), High Schools (Private), K-12 Schools (Private)",
+    "dataset": "https://data.sf.gov/d/7e7j-59qk",
+    "queried": "2026-09-29",
+    "active_rows": 109,
+    "counted": 101,
+    "same_as_a_cde_school": [
+     "Cornerstone Academy-Silver Campus"
+    ],
+    "location_redacted": [
+     "Andrews family home school",
+     "Sovereign Private School"
+    ],
+    "note": "the dataset lists active schools only, so a private school that closed earlier is missing from earlier years"
+   },
+   "sf_rows": 266,
+   "counted_types": [
+    "Alternative Schools of Choice",
+    "Continuation High Schools",
+    "County Community",
+    "Elemen Schools In 1 School Dist. (Public)",
+    "Elementary Schools (Public)",
+    "High Schools (Public)",
+    "Intermediate/Middle Schools (Public)",
+    "Junior High Schools (Public)",
+    "Juvenile Court Schools",
+    "K-12 Schools (Public)",
+    "Opportunity Schools",
+    "Special Education Schools (Public)"
+   ],
+   "skipped_by_type": {
+    "No Data": 10,
+    "Other County Or District Programs": 3,
+    "Youth Authority Facilities": 1,
+    "Preschool": 12,
+    "Adult Education Centers": 7,
+    "ROC/ROP": 1
+   },
+   "counted_type_but_no_coordinates_or_open_date": 102,
+   "of_those_open_in_window": [
+    "Gateway to College"
+   ],
+   "virtual_schools_included": 0,
+   "cross_check": {
+    "dataset": "https://data.sf.gov/d/7e7j-59qk",
+    "active_public_schools": 125,
+    "queried": "2026-11-05",
+    "note": "DataSF's Schools lists active schools only, so it cannot date closures"
+   }
+  },
+  "libraries": {
+   "source": "DataSF City Facilities, department Public Library, minus Library Support Services",
+   "dataset": "https://data.sf.gov/d/nc68-ngbr",
+   "queried": "2026-09-22",
+   "branches_including_main": 28,
+   "closures": {
+    "Mission Branch Library": {
+     "closed_from": 2020,
+     "reopens": null,
+     "source": "https://sfpl.org/releases/2022/06/13/san-francisco-public-library-opens-new-temporary-library-site-mission-saturday"
+    }
+   },
+   "not_counted": "SFPL Book Stop kiosks (Treasure Island, Dogpatch, Sunnydale) and the Mission temporary site"
+  },
+  "reported": {
+   "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
+   "generated": "2026-11-11",
+   "projects": [
+    {
+     "node": "45035",
+     "name": "Winston Drive Quick-Build Project",
+     "page": "https://www.sfmta.com/node/45035",
+     "year": 2026,
+     "class": "CLASS IV",
+     "quote": "This project has been completed as of October 2026",
+     "blocks_upgraded": 1,
+     "row_miles_upgraded": 0.66,
+     "blocks_added": 0,
+     "row_miles_added": 0.0
+    },
+    {
+     "node": "1110",
+     "name": "Cesar Chavez/Potrero Ave/Bayshore Blvd Intersection Improvements (The Hairball)",
+     "page": "https://www.sfmta.com/node/1110",
+     "year": 2026,
+     "class": "CLASS IV",
+     "quote": "Implementation was completed in early 2026",
+     "blocks_upgraded": 0,
+     "row_miles_upgraded": 0.0,
+     "blocks_added": 0,
+     "row_miles_added": 0.0
+    },
+    {
+     "node": "28896",
+     "name": "Beach Street Quick-Build Project",
+     "page": "https://www.sfmta.com/node/28896",
+     "year": 2026,
+     "class": "CLASS IV",
+     "quote": "Construction for the Beach Street Quick-Build Project is substantially complete",
+     "blocks_upgraded": 0,
+     "row_miles_upgraded": 0.0,
+     "blocks_added": 0,
+     "row_miles_added": 0.0
+    }
+   ]
+  }
+ },
+ "reach_thresholds": [
+  {
+   "id": "quarter",
+   "metres": 402.336,
+   "label": "Quarter mile",
+   "short": "a quarter mile",
+   "basis": "the plan's distance (printed p. 24; Appendix G)"
+  },
+  {
+   "id": "block",
+   "metres": 134.112,
+   "label": "1 block",
+   "short": "about one block (440 feet)",
+   "basis": "one typical San Francisco block"
+  },
+  {
+   "id": "2blocks",
+   "metres": 268.224,
+   "label": "2 blocks",
+   "short": "about two blocks (880 feet)",
+   "basis": "two typical San Francisco blocks"
+  },
+  {
+   "id": "1000ft",
+   "metres": 304.8,
+   "label": "1,000 feet",
+   "short": "1,000 feet",
+   "basis": "the distance the post uses for Montreal's ITDP figure (ITDP Atlas of Sustainable City Transport, 300 m)"
+  }
+ ],
+ "default_reach": "quarter",
+ "block_source": {
+  "measured_ft": 416,
+  "used_ft": 440,
+  "tracts": 240,
+  "blocks": 12984,
+  "read": "2026-11-10",
+  "url": "https://data.sfgov.org/d/3psu-pn9h",
+  "census_url": "https://data.sfgov.org/d/p2fw-hsrv",
+  "script": "scripts/sf-block-length.py",
+  "source": "DataSF street centerlines (3psu-pn9h) and Census 2020 blocks (p2fw-hsrv)",
+  "rounding": "one block is taken as 440 feet and two as 880, Bryan's figures; the measured typical block is 416 feet"
+ },
+ "reached_earlier_out_latest": {
+  "quarter": {
+   "year": 2026,
+   "blocks": 242,
+   "residents_2020": 34782,
+   "schools": [
+    "Bertrand D Hsu American & Chinese Bicultural Academy",
+    "Cleveland Elementary",
+    "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
+    "Downtown High",
+    "Jewish Community High School of the Bay",
+    "King (Thomas Starr) Elementary",
+    "Milk (Harvey) Civil Rights Elementary",
+    "Monroe Elementary",
+    "Revere (Paul) Elementary",
+    "S.F. County Special Education",
+    "San Francisco Public Montessori",
+    "The Hamlin School",
+    "Webster (Daniel) Elementary"
+   ],
+   "libraries": [
+    "Bernal Heights Branch Library",
+    "Potrero Branch Library",
+    "West Portal Branch Library"
+   ]
+  },
+  "block": {
+   "year": 2026,
+   "blocks": 276,
+   "residents_2020": 41376,
+   "schools": [
+    "Bertrand D Hsu American & Chinese Bicultural Academy",
+    "Giannini (A.P.) Middle",
+    "Holy Name Elementary",
+    "Live Oak School",
+    "Monroe Elementary",
+    "Revere (Paul) Elementary",
+    "S.F. County Special Education",
+    "San Francisco Community Alternative",
+    "St. Gabriel Elementary School",
+    "St. John the Evangelist",
+    "Webster (Daniel) Elementary"
+   ],
+   "libraries": [
+    "Ortega Branch Library",
+    "Potrero Branch Library"
+   ]
+  },
+  "2blocks": {
+   "year": 2026,
+   "blocks": 307,
+   "residents_2020": 44192,
+   "schools": [
+    "Bertrand D Hsu American & Chinese Bicultural Academy",
+    "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
+    "Downtown High",
+    "Monroe Elementary",
+    "Revere (Paul) Elementary",
+    "S.F. County Special Education",
+    "S.F. International High",
+    "San Francisco Community Alternative",
+    "San Francisco Public Montessori",
+    "St. John the Evangelist",
+    "The Hamlin School",
+    "Webster (Daniel) Elementary"
+   ],
+   "libraries": [
+    "Bernal Heights Branch Library",
+    "Potrero Branch Library",
+    "West Portal Branch Library"
+   ]
+  },
+  "1000ft": {
+   "year": 2026,
+   "blocks": 272,
+   "residents_2020": 39230,
+   "schools": [
+    "Bertrand D Hsu American & Chinese Bicultural Academy",
+    "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
+    "Downtown High",
+    "Monroe Elementary",
+    "Revere (Paul) Elementary",
+    "S.F. County Special Education",
+    "S.F. International High",
+    "San Francisco Community Alternative",
+    "San Francisco Public Montessori",
+    "The Hamlin School",
+    "Webster (Daniel) Elementary"
+   ],
+   "libraries": [
+    "Bernal Heights Branch Library",
+    "Potrero Branch Library",
+    "West Portal Branch Library"
+   ]
+  }
+ },
+ "no_cnn_paths": 87,
+ "include_presidio": true,
+ "retired_block_streets": [
+  "Chain of Lakes Dr",
+  "Hunters Point Ex",
+  "Jamestown Ave",
+  "Terry Francois St",
+  "Twin Peaks Blvd"
+ ],
+ "default_definition": "plan",
+ "plan_comparison_2024": {
+  "year": 2024,
+  "plan_reported_share": 0.8,
+  "plan_reported_epc_share": 0.71,
+  "ours_plan_definition_share": 0.8039,
+  "gap_points": -0.4,
+  "plan_source": "Biking and Rolling Plan, printed p. 24, and Appendix G, Toole Design connectivity memo, 2024-02-13 [primary — read 2026-09-22]",
+  "network_miles": {
+   "ours_2024": 472.2,
+   "ours_latest": 473.4,
+   "plan_p20": 472
+  },
+  "protected_miles": {
+   "ours_2024_class_iv": 50.5,
+   "ours_latest_class_iv": 57.0,
+   "plan_p20": 41,
+   "ours_2024_class_iv_centerline": 35.2,
+   "ours_2024_class_iv_with_no_install_year": 3.0,
+   "ours_2021_class_iv": 41.1,
+   "live_class_iv_contraflow_miles": 7.9,
+   "note": "Counted once per block the 2024 figure falls below 41, so the unit does not explain the gap. Class IV row miles reached 41.0 at the end of 2021, the plan's figure exactly, and 42.1 in 2022, so a row sum taken from the layer as it stood in 2021 or 2022 gives the plan's number. The most consistent reading is that the plan's 41 was counted before its 2024 connectivity memo and not updated; SFMTA's May 2026 blog figure of 50 separated miles matches the layer's row sum for 2024. [inference — mine]"
+  },
+  "slow_street_miles": {
+   "ours_2024_both_directions": 31.4,
+   "dataset_centerline": 15.7,
+   "plan_p20": 32,
+   "note": "dataset_centerline is the sum of the implemented segments' own geometry, one length per segment"
+  },
+  "car_free_miles": {
+   "ours": null,
+   "plan_p20": 7,
+   "note": "the bikeway layer has no car-free class; JFK Promenade and the Great Highway are Class I rows"
+  },
+  "epc_comparison": "not computed: no equity priority communities layer is catalogued in this repo (DataSF search 2026-09-22 found none)",
+  "likely_causes": [],
+  "tag": "[inference — mine]"
+ },
+ "disagreements": {
+  "published_vs_centerline": {
+   "sfmta_published": {
+    "miles": 470,
+    "separated_miles": 50,
+    "source": "https://www.sfmta.com/blog/safety-upgrades-make-difference-bike-ridership-rise",
+    "date": "2026-05-28"
+   },
+   "plan_printed": {
+    "miles": 472,
+    "miles_2010": 302,
+    "protected_miles": 41,
+    "slow_street_miles": 32,
+    "car_free_miles": 7,
+    "source": "https://www.sfmta.com/media/41810/download",
+    "page": 20,
+    "read": "2026-09-22"
+   },
+   "layer_row_sum_LENGTH": {
+    "miles": 474.2,
+    "class_iv_miles": 57.1,
+    "class_iv_contraflow_miles": 7.9,
+    "queried": "2026-11-10"
+   },
+   "single_row_two_way_blocks": {
+    "blocks": 300,
+    "row_miles": 26.4,
+    "by_class": {
+     "CLASS IV": 52,
+     "CLASS II": 119,
+     "CLASS III": 122,
+     "CLASS I": 7
+    },
+    "note": "live blocks held as one row marked DIRECT=2W; counted once, as the plan's row sum counts them"
+   },
+   "layer_row_sum_LENGTH_FT": {
+    "miles": 470.9,
+    "queried": "2026-11-10"
+   },
+   "layer_row_geometry": {
+    "miles": 473.4,
+    "rows": 5558,
+    "queried": "2026-11-10"
+   },
+   "layer_centerline": {
+    "miles_from_geometry": 244.5,
+    "blocks": 2948,
+    "queried": "2026-11-10"
+   },
+   "used": "row miles: every direction row's length from its geometry, summed, which is how the plan's 472 is counted. The layer holds one row per direction of travel on most blocks, so a two-way street with a lane each way counts twice."
+  },
+  "schools_active_count": {
+   "cde_archive_open_on_2026-09-01": 221,
+   "datasf_7e7j-59qk_active_public": 125,
+   "used": "CDE archive, because it carries closure dates; DataSF's count includes preschools, adult schools and other types this table leaves out"
+  }
+ },
+ "method": {
+  "definitions": {
+   "plan": "The Biking and Rolling Plan's high-quality test (printed p. 24; Appendix G, Toole Design connectivity memo of 2024-02-13): Class I, Class IV and Slow Streets; Class II with Bike Comfort Index above 80; Class III with traffic calming and BCI above 80. A direction row qualifies by its own class; a Class II or III row qualifies when its block's 2023 Draft BCI (bci) clears 80. BCI is one 2023 snapshot held fixed for every year. A Class III row also needs traffic calming on its block by that year, read from DataSF abhw-ffzx (mid-block) and bp3t-bd4t (intersection devices at either end of the block); class_iii_calm_street_no_calming_miles is what that condition removes.",
+   "strict": "Class I, Class IV and Slow Street rows only, no BCI test. Written as all_ages_strict_miles; no page shows it.",
+   "default": "plan"
+  },
+  "all_ages": {
+   "classes": [
+    "CLASS I",
+    "CLASS IV"
+   ],
+   "bci_classes": [
+    "CLASS II",
+    "CLASS III"
+   ],
+   "bci_threshold": 80,
+   "slow_streets": true,
+   "per_row": true,
+   "rule": "A direction row is all-ages when it is CLASS I or CLASS IV, or CLASS II or CLASS III on a block whose BCI is above 80, or on an implemented Slow Street from its install year. A block is within reach of a point when any of its rows qualifies."
+  },
+  "year_state": "A block's class in year Y is its class in the nearest archived copy captured after the end of Y, unless UPDATE_YR says the change came after Y, in which case it is the class in the nearest earlier copy, or unknown when there is none. A block exists in Y when INSTALL_YR is Y or earlier, or blank. A block in the earlier copy and gone from the later one is counted through Y.",
+  "miles": "Row miles, the plan's unit: every direction row's length, summed, so a two-way street with a lane each way counts twice. A live row is measured from its own line geometry (equirectangular projection about 37.76 N); an archived row on a block still in the layer at the live layer's mean row length for that block, since the archived exports keep no geometry for those; an archived row on a block since dropped from its own geometry. Slow Street blocks outside the bikeway layer count their length 2 times. Centreline miles, one length per block, are written beside every row-mile figure. Off-street paths with no CNN (Presidio trails, Golden Gate Park, Kirkham, SFSU and other paths) are keyed by their endpoints and counted; the Presidio's are also shown separately.",
+  "gap_fill": "A block present in an earlier and a later capture but missing from one between is carried through the gap with its earlier record.",
+  "timing": "Network state is the end of the year (or the latest capture for the current year); schools and libraries are counted as open on 09-01 of the year.",
+  "reach": "Walking distance along OpenStreetMap's walk network (OSMnx's walk filter plus cycle paths; see site/data/bike-history/walk-reach.json for the copy read) from the census block's interior point, the school's CDE coordinate or the branch's City Facilities coordinate to the nearest all-ages line, at most 0.25 miles by default; the point joins the network at the nearest street or path in a straight line, and a line is reached where it passes within 20 m of a walkable way (scripts/walknet.py). reach_thresholds names the shorter distances the overview also offers. The lines reached include the pandemic Slow Street blocks SFMTA dropped in December 2022, from their corridor's install year through 2021, as the miles do (reach_without_dropped_slow_streets on each row gives the figures without them).",
+  "reach_thresholds": "Four distances, the plan's quarter mile (402 m) by default, one and two city blocks (440 and 880 feet), and 1000 feet, about the 300 m walk to a protected bikeway the ITDP Atlas of Sustainable City Transport measures. The population-weighted average block, intersection to intersection on the street centerline over 240 tracts, is 416 feet (scripts/sf-block-length.py, https://data.sfgov.org/d/3psu-pn9h, read 2026-11-10), so one block is taken as 440 feet and two as 880, Bryan's figures; the measured typical block is 416 feet. Each row's reach_by_threshold carries the six reach figures at each.",
+  "population_denominator": "Every block in San Francisco County, including Treasure Island and the Farallones.",
+  "school_denominator": "K-12 schools: public schools of the counted types (see sources.schools) open on 09-01 of the year, by CDE OpenDate and ClosedDate, plus DataSF's active private elementary, high and K-12 schools from their open_date (a private school that closed earlier is missing). Charter schools are included (14 of the 221 open in 2026), as is the County Community school run in the county jail (1).",
+  "library_denominator": "SFPL branches plus the Main Library in City Facilities, minus branches closed for renovation that year.",
+  "count_date": "09-01",
+  "reach_miles": 0.25,
+  "start_year": 2015
+ },
+ "limits": [
+  "Before 2021-03-25 no archived copy of the layer exists. Years 2015–2020 rest on INSTALL_YR alone: a block installed before 2021 and removed before the first capture is invisible, a block whose class was upgraded with no UPDATE_YR is credited with its later class in every year back to its install, and 23% of the live layer's miles carry no INSTALL_YR at all and are assumed present throughout. Treat network miles in those years as a floor.",
+  "All-ages miles before 2021 carry an uncertainty band of about ±32 miles in 2015, from two opposite errors. 54.5 miles have an unknown class in 2015 because UPDATE_YR is later and there is no earlier capture, and 31.5 of those are all-ages today, so the figure may be low by up to that much. In the other direction, 9.9 miles of CLASS IV are credited to 2015 by an INSTALL_YR of 2013 or earlier, before Caltrans defined Class IV (2014), so on those rows INSTALL_YR dates the street's first bikeway rather than the separated lane, and the figure may be high by up to that much. [inference — mine]",
+  "Between captures a change is dated by UPDATE_YR when the row carries one; otherwise it is credited to the year before the later capture. The 2022-12-09 to 2024-03-31 and 2024-03-31 to 2025-12-08 gaps are the widest.",
+  "Population for years other than 2020 is an ACS 5-year block-group estimate spread across blocks by census shares, so it is a five-year average, not a point count, and block-level shares are held at the nearest census. 2025 and 2026 are held at the 2020–2024 ACS, the latest released.",
+  "The Slow Streets dataset was last loaded 2024-01-18 and carries no removal dates; the pandemic-era Slow Streets that were dropped in 2022 are not in it, and 7 segments (the SoMa streets) carry no install date and are counted from 2022. The dropped corridors are traced from SFMTA's 2020 and 2021 Board reports (scripts/lib/slow_corridors.py) and counted in the all-ages miles and the reach from their install year through 2021: 213 blocks, 21.2 all-ages miles in 2021 that no other all-ages line covered, adding 4.2 points of residents within a quarter mile in 2020. The reports give each corridor's extent as approved; where a corridor went in shorter, these years are high by the difference.",
+  "The CDE directory is the 2025-10-05 archive capture, so schools opened or closed after that date are missing. School coordinates are CDE's; most schools closed before 2015 carry none, and the one school open in the window without one (Gateway to College, closed 2016) is left out.",
+  "Library closures are entered by hand from SFPL's pages; only the Mission Branch's renovation closure is recorded. The system-wide COVID closure of March 2020 to May 2021 is not treated as a closure.",
+  "The map lights a point in exactly the years it is within reach, so a point reached only through a dropped Slow Street or a removed bikeway goes grey when it went. In 2026, 242 blocks (34,782 residents at the 2020 count) and 3 branches that were within a quarter mile of an all-ages line in an earlier year are not."
+ ],
+ "planned": {
+  "generated": "2026-11-11",
+  "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
+  "rows": [
+   {
+    "year": 2026,
+    "all_ages_miles": 233.0,
+    "added_miles": 0.8,
+    "residents_total": 830235,
+    "schools_total": 221,
+    "libraries_total": 27,
+    "reach_by_threshold": {
+     "quarter": {
+      "metres": 402.3,
+      "residents_within_reach": 664340,
+      "resident_share": 0.8002,
+      "schools_within_reach": 153,
+      "school_share": 0.6923,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "block": {
+      "metres": 134.1,
+      "residents_within_reach": 435987,
+      "resident_share": 0.5251,
+      "schools_within_reach": 65,
+      "school_share": 0.2941,
+      "libraries_within_reach": 8,
+      "library_share": 0.2963
+     },
+     "2blocks": {
+      "metres": 268.2,
+      "residents_within_reach": 582069,
+      "resident_share": 0.7011,
+      "schools_within_reach": 122,
+      "school_share": 0.552,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "1000ft": {
+      "metres": 304.8,
+      "residents_within_reach": 614870,
+      "resident_share": 0.7406,
+      "schools_within_reach": 132,
+      "school_share": 0.5973,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     }
+    },
+    "projects": [
+     {
+      "node": "20936",
+      "name": "13th Street Safety Project",
+      "page": "https://www.sfmta.com/node/20936",
+      "quote": "2025 - 2026 Construction Pending"
+     },
+     {
+      "node": "381",
+      "name": "Folsom Streetscape Project",
+      "page": "https://www.sfmta.com/node/381",
+      "quote": "Construction: 2024 to 2026"
+     }
+    ]
+   },
+   {
+    "year": 2027,
+    "all_ages_miles": 234.5,
+    "added_miles": 1.5,
+    "residents_total": 830235,
+    "schools_total": 221,
+    "libraries_total": 27,
+    "reach_by_threshold": {
+     "quarter": {
+      "metres": 402.3,
+      "residents_within_reach": 664340,
+      "resident_share": 0.8002,
+      "schools_within_reach": 153,
+      "school_share": 0.6923,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "block": {
+      "metres": 134.1,
+      "residents_within_reach": 435987,
+      "resident_share": 0.5251,
+      "schools_within_reach": 65,
+      "school_share": 0.2941,
+      "libraries_within_reach": 8,
+      "library_share": 0.2963
+     },
+     "2blocks": {
+      "metres": 268.2,
+      "residents_within_reach": 582069,
+      "resident_share": 0.7011,
+      "schools_within_reach": 122,
+      "school_share": 0.552,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "1000ft": {
+      "metres": 304.8,
+      "residents_within_reach": 614870,
+      "resident_share": 0.7406,
+      "schools_within_reach": 132,
+      "school_share": 0.5973,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     }
+    },
+    "projects": [
+     {
+      "node": "30111",
+      "name": "Cesar Chavez Bikeway Improvements Project",
+      "page": "https://www.sfmta.com/node/30111",
+      "quote": "Early 2027 Construction Pending"
+     },
+     {
+      "node": "27339",
+      "name": "Main Street Streetscape Project",
+      "page": "https://www.sfmta.com/node/27339",
+      "quote": "Predicted Completion 2027"
+     },
+     {
+      "node": "28565",
+      "name": "Oak Street Quick-Build Project",
+      "page": "https://www.sfmta.com/node/28565",
+      "quote": "Summer 2026 - early 2027 Implementation"
+     }
+    ]
+   },
+   {
+    "year": 2028,
+    "all_ages_miles": 236.0,
+    "added_miles": 1.4,
+    "residents_total": 830235,
+    "schools_total": 221,
+    "libraries_total": 27,
+    "reach_by_threshold": {
+     "quarter": {
+      "metres": 402.3,
+      "residents_within_reach": 664340,
+      "resident_share": 0.8002,
+      "schools_within_reach": 153,
+      "school_share": 0.6923,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "block": {
+      "metres": 134.1,
+      "residents_within_reach": 435987,
+      "resident_share": 0.5251,
+      "schools_within_reach": 65,
+      "school_share": 0.2941,
+      "libraries_within_reach": 8,
+      "library_share": 0.2963
+     },
+     "2blocks": {
+      "metres": 268.2,
+      "residents_within_reach": 582069,
+      "resident_share": 0.7011,
+      "schools_within_reach": 122,
+      "school_share": 0.552,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "1000ft": {
+      "metres": 304.8,
+      "residents_within_reach": 614870,
+      "resident_share": 0.7406,
+      "schools_within_reach": 132,
+      "school_share": 0.5973,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     }
+    },
+    "projects": [
+     {
+      "node": "24302",
+      "name": "Transbay Howard Streetscape Improvement Project",
+      "page": "https://www.sfmta.com/node/24302",
+      "quote": "2026 - 2028 Construction"
+     },
+     {
+      "node": "752",
+      "name": "Central Embarcadero Safety Project",
+      "page": "https://www.sfmta.com/node/752",
+      "quote": "2026-2028 Construction Pending"
+     }
+    ]
+   },
+   {
+    "year": 2029,
+    "all_ages_miles": 237.0,
+    "added_miles": 1.0,
+    "residents_total": 830235,
+    "schools_total": 221,
+    "libraries_total": 27,
+    "reach_by_threshold": {
+     "quarter": {
+      "metres": 402.3,
+      "residents_within_reach": 664340,
+      "resident_share": 0.8002,
+      "schools_within_reach": 153,
+      "school_share": 0.6923,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "block": {
+      "metres": 134.1,
+      "residents_within_reach": 435987,
+      "resident_share": 0.5251,
+      "schools_within_reach": 65,
+      "school_share": 0.2941,
+      "libraries_within_reach": 8,
+      "library_share": 0.2963
+     },
+     "2blocks": {
+      "metres": 268.2,
+      "residents_within_reach": 582069,
+      "resident_share": 0.7011,
+      "schools_within_reach": 122,
+      "school_share": 0.552,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     },
+     "1000ft": {
+      "metres": 304.8,
+      "residents_within_reach": 614870,
+      "resident_share": 0.7406,
+      "schools_within_reach": 132,
+      "school_share": 0.5973,
+      "libraries_within_reach": 19,
+      "library_share": 0.7037
+     }
+    },
+    "projects": [
+     {
+      "node": "381",
+      "name": "Howard Streetscape Project",
+      "page": "https://www.sfmta.com/node/381",
+      "quote": "Construction: 2026 to 2029"
+     }
+    ]
+   }
+  ],
+  "uncounted": [
+   {
+    "node": "44135",
+    "name": "Mission Bay Blvd Quick-Build Project",
+    "page": "https://www.sfmta.com/node/44135",
+    "year": 2026,
+    "quote": "This project is complete as of as of August 2026",
+    "why": "posts on an existing lane; the page gives no cross streets"
+   },
+   {
+    "node": "2403",
+    "name": "Mission / Geneva Safety Project",
+    "page": "https://www.sfmta.com/node/2403",
+    "year": 2026,
+    "quote": "Fall 2022 - Early 2026 Full Project Construction Pending",
+    "why": "\"bike lane connectivity upgrades\" on Geneva, no bikeway type named"
+   },
+   {
+    "node": "1146",
+    "name": "5th Street Improvement Project",
+    "page": "https://www.sfmta.com/node/1146",
+    "year": null,
+    "quote": "once funding is secured",
+    "why": "separated bikeway named, no date: construction \"once funding is secured\""
+   },
+   {
+    "node": "21212",
+    "name": "Anza Street Bike Lanes Project",
+    "page": "https://www.sfmta.com/node/21212",
+    "year": null,
+    "quote": "Summer 2021 Construction Pending",
+    "why": "date passed, page not updated"
+   },
+   {
+    "node": "18897",
+    "name": "Active Beale Street",
+    "page": "https://www.sfmta.com/node/18897",
+    "year": null,
+    "quote": "Summer & Winter 2020 Construction Pending",
+    "why": "date passed, page not updated"
+   },
+   {
+    "node": "44134",
+    "name": "Bosworth/Monterey Connections Quick-Build Project",
+    "page": "https://www.sfmta.com/node/44134",
+    "year": 2027,
+    "quote": "Late 2027 Construction Pending",
+    "why": "no bikeway type named"
+   },
+   {
+    "node": "44133",
+    "name": "Jefferson Street Quick-Build Project",
+    "page": "https://www.sfmta.com/node/44133",
+    "year": 2027,
+    "quote": "2027 Final Construction Pending",
+    "why": "no bikeway type named"
+   },
+   {
+    "node": "29974",
+    "name": "Bayview Community Pathway",
+    "page": "https://www.sfmta.com/node/29974",
+    "year": 2028,
+    "quote": "2028 Construction Pending",
+    "why": "no bikeway type named"
+   },
+   {
+    "node": "19953",
+    "name": "Page Slow Street",
+    "page": "https://www.sfmta.com/node/19953",
+    "year": null,
+    "quote": "2027+ Construction Pending",
+    "why": "improvements to be decided"
+   },
+   {
+    "node": "28373",
+    "name": "Arguello Safety Project",
+    "page": "https://www.sfmta.com/node/28373",
+    "year": 2027,
+    "quote": "Spring 2027 Implementation Pending",
+    "why": "targeted intersection work on the existing bike lanes; no new bikeway named"
+   },
+   {
+    "node": "28582",
+    "name": "Sutter Street Quick-Build Project",
+    "page": "https://www.sfmta.com/node/28582",
+    "year": null,
+    "quote": "the SFMTA has decided to pause the project",
+    "why": "paused"
+   },
+   {
+    "node": "43636",
+    "name": "Brotherhood-Alemany Quick-Build Project",
+    "page": "https://www.sfmta.com/node/43636",
+    "year": 2026,
+    "quote": "2026 Implementation Pending",
+    "why": "no bikeway type named"
+   },
+   {
+    "node": "45074",
+    "name": "Innes Avenue Quick-Build Project",
+    "page": "https://www.sfmta.com/node/45074",
+    "year": 2027,
+    "quote": "Project Implementation Late 2026 - 2027 Pending",
+    "why": "work on existing bike lanes; no new bikeway named"
+   },
+   {
+    "node": "24645",
+    "name": "Golden Gate Park Access and Safety Program",
+    "page": "https://www.sfmta.com/node/24645",
+    "year": null,
+    "quote": "Spring 2022 Implementation & Evaluation Pending",
+    "why": "no bikeway type named on the page; its only date has passed"
+   },
+   {
+    "node": "917",
+    "name": "San Bruno Ave Multimodal Improvement Project",
+    "page": "https://www.sfmta.com/node/917",
+    "year": null,
+    "quote": "Bike Lanes between Mansell and Dwight (future date to be determined)",
+    "why": "bike lanes named, no date"
+   },
+   {
+    "node": "44339",
+    "name": "8 Bayshore: Visitacion Valley Stop Improvements",
+    "page": "https://www.sfmta.com/node/44339",
+    "year": null,
+    "quote": "A boarding island on Geneva Avenue with a protected bike lane would also be added",
+    "why": "protected bike lane at one boarding island named, no date"
+   }
+  ]
+ },
+ "departed_rows": [
+  {
+   "oid": 341,
+   "departed": "2026-11-10",
+   "cnn": "10223000",
+   "street": "PALOU AVE",
+   "from": "NEWHALL ST",
+   "to": "3RD ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 413,
+   "departed": "2026-11-10",
+   "cnn": "10216000",
+   "street": "PALOU AVE",
+   "from": "CRISP RD",
+   "to": "GRIFFITH ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 587,
+   "departed": "2026-11-10",
+   "cnn": "10218000",
+   "street": "PALOU AVE",
+   "from": "HAWES ST",
+   "to": "INGALLS ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 1184,
+   "departed": "2026-11-10",
+   "cnn": "10223000",
+   "street": "PALOU AVE",
+   "from": "NEWHALL ST",
+   "to": "3RD ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 1427,
+   "departed": "2026-11-10",
+   "cnn": "10220000",
+   "street": "PALOU AVE",
+   "from": "JENNINGS ST",
+   "to": "KEITH ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 2212,
+   "departed": "2026-11-10",
+   "cnn": "10224000",
+   "street": "PALOU AVE",
+   "from": "PHELPS ST",
+   "to": "NEWHALL ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 2786,
+   "departed": "2026-11-10",
+   "cnn": "10218000",
+   "street": "PALOU AVE",
+   "from": "HAWES ST",
+   "to": "INGALLS ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 2843,
+   "departed": "2026-11-10",
+   "cnn": "10217000",
+   "street": "PALOU AVE",
+   "from": "CRISP RD",
+   "to": "HAWES ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 2857,
+   "departed": "2026-11-10",
+   "cnn": "10220000",
+   "street": "PALOU AVE",
+   "from": "JENNINGS ST",
+   "to": "KEITH ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 3076,
+   "departed": "2026-11-10",
+   "cnn": "10217000",
+   "street": "PALOU AVE",
+   "from": "CRISP RD",
+   "to": "HAWES ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 3159,
+   "departed": "2026-11-10",
+   "cnn": "10222000",
+   "street": "PALOU AVE",
+   "from": "LANE ST",
+   "to": "3RD ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 3934,
+   "departed": "2026-11-10",
+   "cnn": "10221000",
+   "street": "PALOU AVE",
+   "from": "KEITH ST",
+   "to": "LANE ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 4344,
+   "departed": "2026-11-10",
+   "cnn": "10224000",
+   "street": "PALOU AVE",
+   "from": "PHELPS ST",
+   "to": "NEWHALL ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 4392,
+   "departed": "2026-11-10",
+   "cnn": "10219000",
+   "street": "PALOU AVE",
+   "from": "INGALLS ST",
+   "to": "JENNINGS ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 4411,
+   "departed": "2026-11-10",
+   "cnn": "10222000",
+   "street": "PALOU AVE",
+   "from": "LANE ST",
+   "to": "3RD ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 4628,
+   "departed": "2026-11-10",
+   "cnn": "10221000",
+   "street": "PALOU AVE",
+   "from": "KEITH ST",
+   "to": "LANE ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 5056,
+   "departed": "2026-11-10",
+   "cnn": "10219000",
+   "street": "PALOU AVE",
+   "from": "INGALLS ST",
+   "to": "JENNINGS ST",
+   "class": "CLASS III"
+  },
+  {
+   "oid": 5164,
+   "departed": "2026-11-10",
+   "cnn": "10216000",
+   "street": "PALOU AVE",
+   "from": "CRISP RD",
+   "to": "GRIFFITH ST",
+   "class": "CLASS III"
+  }
+ ]
+}

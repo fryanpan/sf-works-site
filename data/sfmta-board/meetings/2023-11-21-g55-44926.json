@@ -1,0 +1,120 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-11-21",
+ "id": "g55-44926",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44926",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/29271"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes, 1 nay (Resolution 231121-093)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: (Explanatory documents include a resolution.) A. Mattie J. Bess v. CCSF, Superior Ct. Case No. CGC-22-602882 filed 11/10/22 for $7,500. Lawsuit involving allegations of personal injury from operator negligence (revenue vehicle and passenger). RESOLUTION No. 231121-093",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 231121-093)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "text": "Approving various routine parking and traffic modifications and making environmental review findings: (The Planning Department has found that Items [A- K] are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed action is the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code. Explanatory documents include a staff report and resolution.) A. ESTABLISH – CLASS IV BIKEWAY – Church Street, southbound, from Market Street to 200 feet southerly. B. ESTABLISH – CLASS IV BIKEWAY Bayshore Boulevard, northbound, east side, between Jerrold Avenue and Marin Street Cesar Chavez Street, eastbound, south side, between Vermont Street and Kansas Street. C. ESTABLISH – YIELD SIGN – Bayshore Boulevard, northbound, at southbound U.S. 101 Off-Ramp. D. ESTABLISH – NO RIGHT TURN ON RED – Cesar Chavez Street, eastbound, at Kansas Street, Cesar Chavez Street, westbound, at Kansas Street, Kansas Street, northbound, at Cesar Chavez Street. E. ESTABLISH – RED ZONE – Marin Street, south side, from 19 feet to 39 feet east of Bayshore Boulevard. F. ESTABLISH – SPEED CUSHION – Bayshore Boulevard, midblock, approximately 145 feet north of Marin Street. 6 G. ESTABLISH – RAISED CROSSWALK – Bayshore Boulevard, midblock, between Marin Street and Cesar Chavez Street at existing uncontrolled crosswalk. H. ESTABLISH - RESIDENTIAL PERMIT PARKING AREA U – 921 Howard Street. I. ESTABLIS",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes; parts A, B, R severed and voted separately: ADOPTED — 5 ayes, 1 nay (Resolution 231121-094)"
+  },
+  {
+   "no": "10.3",
+   "title": "Establishing the 2024 SFMTA Board of Directors and Parking Authority Commission meeting schedule.",
+   "text": "Establishing the 2024 SFMTA Board of Directors and Parking Authority Commission meeting schedule. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 231121-095",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 231121-095)"
+  },
+  {
+   "no": "10.4",
+   "title": "Adopting a resolution of local support for programming Regional Measure 3 (RM3) bridge toll funds in the amount of $22,593,096 for three SFMTA projects: (1) the Potrero Modernization Project for $3,503,055; (2) the Presidio Modernization",
+   "text": "Adopting a resolution of local support for programming Regional Measure 3 (RM3) bridge toll funds in the amount of $22,593,096 for three SFMTA projects: (1) the Potrero Modernization Project for $3,503,055; (2) the Presidio Modernization 11 Project for $12,594,945; and (3) the Light Rail Vehicle Procurement for $6,495,096; and providing assurances that the SFMTA will comply with Metropolitan Transportation Commission policies. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 231121-096",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 231121-096)"
+  },
+  {
+   "no": "10.5",
+   "title": "Adopting a resolution of local support for a pending $1,493,564 grant that the SFMTA has been awarded by the Metropolitan Transportation Commission’s (MTC) Local Parking Management Program Implementation program for the San Francisco Pay or Permit Parking Expansion Project; and providing assurances that the SFMTA will comply with MTC policies associated with receipt of these funds.",
+   "text": "Adopting a resolution of local support for a pending $1,493,564 grant that the SFMTA has been awarded by the Metropolitan Transportation Commission’s (MTC) Local Parking Management Program Implementation program for the San Francisco Pay or Permit Parking Expansion Project; and providing assurances that the SFMTA will comply with MTC policies associated with receipt of these funds. (The proposed action is the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code. Explanatory documents include a staff report and resolution.) RESOLUTION No. 231121-097",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 231121-097)"
+  },
+  {
+   "no": "10.6",
+   "title": "Adopting a resolution of local support for the programming of State Transportation Improvement Program (STIP) funds in the amount of $53,521,000 for the New Flyer Midlife Overhaul project; and providing assurances to comply with Metropolitan Transportation Commission policies.",
+   "text": "Adopting a resolution of local support for the programming of State Transportation Improvement Program (STIP) funds in the amount of $53,521,000 for the New Flyer Midlife Overhaul project; and providing assurances to comply with Metropolitan Transportation Commission policies. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 231121-098",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 231121-098)"
+  },
+  {
+   "no": "11",
+   "title": "Approving the SFMTA’s 2024 Legislative Program",
+   "decision": "ADOPTED — 6 ayes (Resolution 231121-099)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Muni Forward Program update"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding the M Ocean View Transit and Safety Project"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

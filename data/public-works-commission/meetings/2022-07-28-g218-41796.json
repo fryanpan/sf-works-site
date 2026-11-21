@@ -1,0 +1,56 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2022-07-28",
+ "id": "g218-41796",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=41796",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "CALL TO ORDER"
+  },
+  {
+   "no": "2",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "3",
+   "title": "WELCOME AND INTRODUCTIONS"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "5",
+   "title": "Proposition B Commissions Establishment and Roles"
+  },
+  {
+   "no": "6",
+   "title": "Commission Meeting Schedules"
+  },
+  {
+   "no": "7",
+   "title": "Department Overview"
+  },
+  {
+   "no": "8",
+   "title": "General Administration Division Overview"
+  },
+  {
+   "no": "9",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "10",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

@@ -1,0 +1,95 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-02-06",
+ "id": "g55-45352",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45352",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/29694"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: January 16, 2024, Regular Meeting",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Lunar New Year Update"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Waterfront Flood Study Draft Plan Update"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Board Workshop Report Back"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes (Resolution 240206-009)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 240206-009)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving Class II bikeways (bicycle lanes) on Treasure Island and on Yerba Buena Island",
+   "decision": "ADOPTED — 6 ayes (Resolution 240206-010)"
+  },
+  {
+   "no": "10.3",
+   "title": "Amending Transportation Code, Division II, Section 702 to reduce the speed limit on seven City street segments",
+   "decision": "ADOPTED — 6 ayes (Resolution 240206-011)"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code, Division II, Section 601, to designate full-time transit-only areas on San Jose Avenue; and approving traffic and parking modifications related to the M Ocean View Transit and Safety Projec",
+   "decision": "ADOPTED — 7 ayes (Resolution 240206-012)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

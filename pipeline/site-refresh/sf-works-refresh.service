@@ -1,0 +1,16 @@
+# The daily site refresh on the cloud VM: pipeline/site-refresh/run.sh, which refreshes every source behind
+# sf-works.org, rebuilds what changed, and ships the change through a pull request. Installed by vm-setup.sh, which
+# writes the clone's path into WorkingDirectory and ExecStart. Settings that name private infrastructure (the Muni
+# archive's bucket and project, the alert repo) come from ~/.config/sf-works/env, kept on the VM only.
+[Unit]
+Description=SF Works daily site data refresh
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/sf-works-site
+EnvironmentFile=-%h/.config/sf-works/env
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/bin/bash %h/sf-works-site/pipeline/site-refresh/run.sh
+Nice=10
+TimeoutStartSec=5h

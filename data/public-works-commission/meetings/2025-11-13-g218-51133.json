@@ -1,0 +1,83 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-11-13",
+ "id": "g218-51133",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51133",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
+  "postedAgenda": "https://sfpublicworks.org/sites/default/files/Commissions/Dec%2011%202025/2025-11-13%20PWC%20Minutes%20approved%202025-12-11.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the July 24, 2025 Meeting of the Public Works Commission",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4b",
+   "title": "As-Needed Waterproofing Services No. 4, Contract ID 1000030139 – Contract Modification",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4c",
+   "title": "War Memorial Opera House Elevator Modernization – Contract Award",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4d",
+   "title": "Various Locations Pavement Renovation No. 78 and Sewer Replacement – Contract Award",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4e",
+   "title": "Various Locations Pavement Renovation No. 80 and Sewer Replacement – Contract Award",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "5",
+   "title": "Capital Project Update"
+  },
+  {
+   "no": "6",
+   "title": "Public Works Commission Annual Report"
+  },
+  {
+   "no": "7",
+   "title": "Commission Meeting Calendar for 2026"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

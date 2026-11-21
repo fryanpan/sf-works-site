@@ -1,0 +1,98 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-01-21",
+ "id": "g55-34963",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34963",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21201"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - January 7, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members - Election of SFMTA Board Chairman and Vice Chairman pursuant to SFMTA Rules of Order",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes, 1 nay"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Mark Own McGuire vs. CCSF, Superior Ct. #CGC18569636 filed on 9/11/18 for $1,600 B. Charles Mandler vs. CCSF, Superior Ct. #CGC18565756 filed on 4/13/18 for $9,999 C. Raul Vazquez vs. CCSF, Superior Ct. #CGC18567035 filed on 6/7/18 for $12,500 D. Jonathan Hill vs. CCSF, Superior Ct. #CGC18568358 filed on 7/24/18 for $25,000 E. Margarita Lopez De Boxerbaum vs. CCSF, Superior Ct. #CGC18567441 filed on 6/20/18 for $150,000 (Explanatory documents include a resolution.) RESOLUTION 200121-007",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 200121-007)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending Transportation Code, Division II, Section 702 to modify speed limits and approving speed limit modifications as follows",
+   "text": "Amending Transportation Code, Division II, Section 702 to modify speed limits and approving speed limit modifications as follows: A. REDUCE - FROM 30 MPH TO 25 MPH SPEED LIMIT – Bush Street, between Presidio Avenue and Battery Street; Pine Street, between Market Street and Presidio Avenue; Fulton 5 Street, between Stanyan Street and Arguello Boulevard; Golden Gate Avenue, between Divisadero Street and Van Ness Avenue; and Twin Peaks Boulevard, between Panorama Drive and Palo Alto Avenue. (Explanatory documents include a staff report and resolution. The proposed actions are Approval Actions as defined by S.F. Administrative Code Chapter 31.)",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "severed": true,
+   "decision": "ADOPTED — 5 ayes, 1 nay (Resolution 200121-008)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the recommendations of the San Francisco Muni Reliability Working Group"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding transit service"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding the Building Progress Program"
+  },
+  {
+   "no": "14",
+   "title": "Authorizing the Director to execute Amendment #2 with Hatch Associates Consultants to add as-needed tasks",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Authorizing the Director to execute Amendment #1 with SWCA Environmental Consultants to increase the contract amount by $1,000,000 for additional services",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

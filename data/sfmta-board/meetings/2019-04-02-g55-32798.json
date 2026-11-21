@@ -1,0 +1,93 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-04-02",
+ "id": "g55-32798",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=32798",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/18790"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: March 19, 2019 Regular Meeting and March 26, 2019 Special Closed Session"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Special Recognition, LRV procurement and financing, Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Genetrix Guevarra vs. CCSF, Superior Ct. #CGC17560410 filed on 7/26/17 for $7,500 B. Chong Min Moon vs. CCSF, Superior Ct. #CGC16551398 filed on 4/8/16 for $86,000.01 (Explanatory documents include a resolution.) RESOLUTION 190402-035",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 190402-035)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending the Transportation Code, Division II, Section 801 to expand parking restrictions along 24th Avenue and add pre-existing parking restrictions on Eddy and Jones Streets and approving the parking restriction to extend the SFPD vehicle only parking zone fronting Taraval Police Station along 24th Avenue as follows",
+   "text": "Amending the Transportation Code, Division II, Section 801 to expand parking restrictions along 24th Avenue and add pre-existing parking restrictions on Eddy and Jones Streets and approving the parking restriction to extend the SFPD vehicle only parking zone fronting Taraval Police Station along 24th Avenue as follows: 5 A. ESTABLISH – NO PARKING, ALL TIMES, EXCEPT CITY-OWNED SAN FRANCISCO POLICE DEPARTMENT VEHICLES DISPLAYING A PERMIT ISSUED BY THE SFMTA – 24th Avenue, east side, from 205 feet to 371 feet south of Santiago Street. (Explanatory documents include a staff report, amendment and resolution. The proposed action is the Approval Action as defined by the S.F. Administrative Code Chapter 31. RESOLUTION 190402-036 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 190402-036)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Vision Zero High Injury Network and a policy for Quick-Build Vision Zero projects"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

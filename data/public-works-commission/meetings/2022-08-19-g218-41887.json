@@ -1,0 +1,68 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2022-08-19",
+ "id": "g218-41887",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=41887",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Adopt the Public Works Commission Rules of Order"
+  },
+  {
+   "no": "4",
+   "title": "Election of the Public Works Commission Chair and Vice Chair"
+  },
+  {
+   "no": "5",
+   "title": "Adopt the Public Works Commission Regular Calendar of Meetings"
+  },
+  {
+   "no": "6",
+   "title": "Adopt findings under the State Urgency Legislation"
+  },
+  {
+   "no": "7",
+   "title": "Adopt Minutes form the July 28, 2022 Joint Meeting"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Public Works Department Contracts"
+  },
+  {
+   "no": "10",
+   "title": "Commission Responsibilities Under Proposition B"
+  },
+  {
+   "no": "11",
+   "title": "Public Works Department Budget"
+  },
+  {
+   "no": "12",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "13",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

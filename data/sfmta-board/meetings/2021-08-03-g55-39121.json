@@ -1,0 +1,115 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-08-03",
+ "id": "g55-39121",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39121",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/24823"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - July 20, 2021 Regular Meeting",
+   "decision": "APPROVED"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Special Recognition"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Update on Vision Zero"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Making environmental review findings and approving the following parking and traffic modifications",
+   "text": "Making environmental review findings and approving the following parking and traffic modifications: A. ESTABLISH – CROSSWALK – Columbus Avenue at Green Street and Stockton Street, connecting northeast and southwest corners. B. ESTABLISH – NO LEFT TURN – Columbus Avenue, northbound, at Stockton Street and at 4 Beach Blanket Babylon Boulevard, Columbus Avenue, southbound, at Stockton Street and at Green Street. C. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME – ESTABLISH – SIDEWALK WIDENING, Italy Avenue, south side, from Mission Street to 20 feet easterly. D. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME – ESTABLISH – SIDEWALK WIDENING, Mission Street, west side, from 401 feet to 497 feet south of Onondaga Avenue. 1. ESTABLISH – NO RIGHT TURN ON RED, Mission Street, northbound, at Admiral Avenue/Ney Street. (Explanatory documents include a staff report and resolution. For every parking and traffic modification that received a categorical exemption, the proposed action is the Approval Action as defined by S.F. Administrative Code Chapter 31.) RESOLUTION 210803-093",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 210803-093)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director to enter into an agreement with ZS Associates to accept a gift of pro bono professional services to develop data dashboards to support the SFMTA’s participation in proceedings held by the California Public Utilities Commission in its administration of the statewide transportation network companies (TNC) Access for All Program; the equivalent cost of the professional services is estimated at $99,840.",
+   "text": "Authorizing the Director to enter into an agreement with ZS Associates to accept a gift of pro bono professional services to develop data dashboards to support the SFMTA’s participation in proceedings held by the California Public Utilities Commission in its administration of the statewide transportation network companies (TNC) Access for All Program; the equivalent cost of the professional services is estimated at $99,840. (Explanatory documents include a staff report and resolution.) RESOLUTION 210803-094",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 210803-094)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving the responses on behalf of the SFMTA and the Board of Directors to the findings and recommendations in the June 2021 Grand Jury Report regarding the Van Ness Corridor Transit Improvement Project and authorizing the Director to make non-material modifications necessary prior to submission.",
+   "text": "Approving the responses on behalf of the SFMTA and the Board of Directors to the findings and recommendations in the June 2021 Grand Jury Report regarding the Van Ness Corridor Transit Improvement Project and authorizing the Director to make non-material modifications necessary prior to submission. (Explanatory documents include a staff report and resolution.) The item was continued to a future meeting.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "CONTINUED"
+  },
+  {
+   "no": "11",
+   "title": "Designating four corridors as Slow Streets to extend beyond the COVID-19 Emergency",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Authorizing the Director to execute Contract Modification No. 9 to Contract No. 2013-19 to update and enhance Vehicle equipment",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Authorizing the Director to execute Contract Modification No. 10 to Contract No. 2013-19 to exercise an option to procure 30 additional new light rail vehicles",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Authorizing the Director to execute Modification No. 13 to Contract No. 1289 for direct costs related to various design changes",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Presentation and discussion regarding a Human Resources and Office of Race, Equity and Inclusion update"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

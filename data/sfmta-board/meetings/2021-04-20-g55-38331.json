@@ -1,0 +1,131 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-04-20",
+ "id": "g55-38331",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38331",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/24027"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of April 6, 2021 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-048)"
+  },
+  {
+   "no": "10.2",
+   "title": "Making environmental review findings and approving the following parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-049)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Contract No SFMTA 2021-03, Parking Meter Maintenance Agreement with IPS Group for Services and Parts Support for Single-Space Parking Meters",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-050)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute Contract No SFMTA 2021-04, Parking Paystation Maintenance Agreement, with MacKay Meters for Service Fees, Support and Parts for Multi-Space Paystations",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-051)"
+  },
+  {
+   "no": "10.5",
+   "title": "Authorizing the Director to execute the Second Amendment to Contract No SFMTA 2014-13 Agreement for Advertising on SFMTA Vehicles and Other Property with Intersection Media",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-052)"
+  },
+  {
+   "no": "10.6",
+   "title": "Authorizing the Director to execute Amendment No 3 to Contract No 1312, Grant and Cooperative Agreement between the Metropolitan Transportation Commission and the CCSF",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-053)"
+  },
+  {
+   "no": "10.7",
+   "title": "Authorizing the Director to execute Amendment No 4 to Contract No CS-149, Professional Program Management and Construction Management Services for the Central Subway Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-054)"
+  },
+  {
+   "no": "10.8",
+   "title": "Authorizing the Director to approve a program of projects, to execute the required Certifications and Assurances with the California Department of Transportation for all transit projects",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-055)"
+  },
+  {
+   "no": "10.9",
+   "title": "Authorizing the Director to execute Modification No 3 to Contract No 1304, Muni Metro System King Street Substation Upgrade",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-056)"
+  },
+  {
+   "no": "10.10",
+   "title": "Adopting a Records Retention and Destruction Policy and Schedule of Records dated April 20, 2021",
+   "decision": "ADOPTED — 6 ayes (Resolution 210420-057)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the SFMTA’s budget and financial status"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding transit service including a Muni Forward update"
+  },
+  {
+   "no": "13",
+   "title": "Amending Transportation Code, Division II, Section 602 to designate various transit only areas",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Amending the Transportation Code, Division II, Section 602 to designate temporary part-time transit/HOV lanes limited to HOVs, including buses, vehicles carrying two or more people, and other vehicles as part of the Pa",
+   "decision": "ADOPTED — 5 ayes, 1 nay"
+  },
+  {
+   "no": "15",
+   "title": "Authorizing the Director to execute Contract No SFMTA 2021-06 with Nova Bus, to procure three 40-foot low floor battery electric buses",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

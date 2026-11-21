@@ -1,0 +1,101 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-05-05",
+ "id": "g55-52340",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52340",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45417"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes April 21, 2026, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes (Resolution 260505-034)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA: (Explanatory documents include a resolution.) A. CSAA Insurance Exchange and Crystal Caraway, Unlitigated Claim No. C26-0038 for $50,000 (City to receive). Claim involving allegations of property damage to City property. RESOLUTION No. 260505-034",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 260505-034)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications (The Planning Department has found that Items A-B are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.): A. ESTABLISH – GENERAL METERED PARKING, 4-HOUR TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, Carl Street, north side, from 10 feet to 86 feet west of Cole Street. B. ESTABLISH – GENERAL METERED PARKING, 4-HOUR TIME LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY, Cole Street, east side, from 20 feet to 45 feet south of Parnassus Avenue. RESOLUTION No. 260505-035",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 260505-035)"
+  },
+  {
+   "no": "10.3",
+   "title": "Suspending the requirement in the Transportation Code, Division II, Section 916(a)(2) that the terms of the Powered Scooter Share Permit Program (Program) be up to two years and authorizing the Director of Transportation to issue one or more extensions of the duration of the current Program permits up to an additional two years to June 30, 2028.",
+   "text": "Suspending the requirement in the Transportation Code, Division II, Section 916(a)(2) that the terms of the Powered Scooter Share Permit Program (Program) be up to two years and authorizing the Director of Transportation to issue one or more extensions of the duration of the current Program permits up to an additional two years to June 30, 2028. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 260505-036 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 260505-036)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding a Transit Division Quarterly Update"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION",
+   "decision": "ADOPTED — 6 ayes, 1 nay (Resolution 260505-037)"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

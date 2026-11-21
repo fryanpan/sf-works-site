@@ -1,0 +1,2785 @@
+{
+ "bbox": "-122.52,37.70,-122.35,37.84",
+ "found": 48,
+ "kept": 40,
+ "rules": {
+  "am_hours": [
+   7,
+   8
+  ],
+  "daylight_months": [
+   4,
+   9
+  ],
+  "dead_share": 0.25,
+  "level_drop": 0.5,
+  "max_dead": 0.1,
+  "min_days": 20,
+  "min_season_days": 5,
+  "min_uptime": 0.5,
+  "one_side_share": 0.02,
+  "peak_days": "Tue to Thu, holidays left out",
+  "pm_hours": [
+   16,
+   17,
+   18
+  ],
+  "split_min_days": 10,
+  "vehicles": "car + heavy + night, both directions"
+ },
+ "segments": [
+  {
+   "candidate_days": 144,
+   "car_lft": 187503,
+   "car_rgt": 348266,
+   "daily": 2405,
+   "daily_counted": 2288,
+   "daylight_days": 78,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 110,
+   "full_days_daylight": 71,
+   "hours": 9179,
+   "id": "9000004855",
+   "kept": 1,
+   "last": "2026-10-08",
+   "line": [
+    [
+     -122.460422,
+     37.786874
+    ],
+    [
+     -122.461494,
+     37.786825
+    ]
+   ],
+   "peak": 271.0,
+   "peak_daylight": 243.0,
+   "peak_q1": 212.5,
+   "peak_q3": 305.0,
+   "peak_share": 0.1127,
+   "peak_share_daylight": 0.11,
+   "pm_share": 0.12,
+   "seasons": {
+    "fall": 22,
+    "spring": 39,
+    "summer": 38,
+    "winter": 30
+   },
+   "side_share": 0.35,
+   "split": [
+    [
+     "2026-10-13",
+     "2026-11-17",
+     15,
+     55.2
+    ]
+   ],
+   "valid_days": 129,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 73,
+   "car_lft": 242408,
+   "car_rgt": 214106,
+   "daylight_days": 51,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-02-03",
+   "flags": [],
+   "hours": 8985,
+   "id": "9000004947",
+   "kept": 1,
+   "last": "2026-10-14",
+   "line": [
+    [
+     -122.465776,
+     37.786631
+    ],
+    [
+     -122.464707,
+     37.78668
+    ]
+   ],
+   "peak": 309.9,
+   "peak_daylight": 302.5,
+   "peak_q1": 255.6,
+   "peak_q3": 344.8,
+   "pm_share": 0.12,
+   "seasons": {
+    "fall": 17,
+    "spring": 25,
+    "summer": 22,
+    "winter": 9
+   },
+   "side_share": 0.469,
+   "valid_days": 73,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 58,
+   "car_lft": 44581,
+   "car_rgt": 21026,
+   "daily": 700,
+   "daily_counted": 666,
+   "daylight_days": 6,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-04-16",
+   "dead_days": 1,
+   "dead_share": 0.017,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 56,
+   "hours": 4092,
+   "id": "9000004990",
+   "kept": 1,
+   "last": "2026-04-16",
+   "line": [
+    [
+     -122.467652,
+     37.782806
+    ],
+    [
+     -122.467682,
+     37.783215
+    ],
+    [
+     -122.467787,
+     37.784673
+    ]
+   ],
+   "peak": 68.0,
+   "peak_daylight": 48.0,
+   "peak_q1": 47.0,
+   "peak_q3": 82.5,
+   "peak_share": 0.0972,
+   "pm_share": 0.81,
+   "seasons": {
+    "fall": 4,
+    "spring": 19,
+    "winter": 34
+   },
+   "side_share": 0.3205,
+   "valid_days": 57,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 69,
+   "car_lft": 26255,
+   "car_rgt": 22682,
+   "daily": 548,
+   "daily_counted": 509,
+   "daylight_days": 19,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-05-13",
+   "dead_days": 1,
+   "dead_share": 0.026,
+   "fail": [],
+   "first": "2026-02-11",
+   "flags": [
+    "split"
+   ],
+   "full_days": 31,
+   "full_days_daylight": 15,
+   "hours": 4751,
+   "id": "9000005025",
+   "kept": 1,
+   "last": "2026-05-13",
+   "line": [
+    [
+     -122.446593,
+     37.730706
+    ],
+    [
+     -122.444315,
+     37.730716
+    ]
+   ],
+   "peak": 61.0,
+   "peak_daylight": 60.0,
+   "peak_q1": 47.8,
+   "peak_q3": 70.0,
+   "peak_share": 0.1113,
+   "peak_share_daylight": 0.1071,
+   "pm_share": 0.11,
+   "seasons": {
+    "spring": 31,
+    "winter": 7
+   },
+   "side_share": 0.4635,
+   "split": [
+    [
+     "2025-11-19",
+     "2025-12-11",
+     10,
+     2.1
+    ],
+    [
+     "2025-12-16",
+     "2026-01-15",
+     10,
+     3.4
+    ],
+    [
+     "2026-01-20",
+     "2026-02-10",
+     10,
+     4.4
+    ]
+   ],
+   "valid_days": 38,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 136,
+   "car_lft": 191699,
+   "car_rgt": 151663,
+   "daily": 1806,
+   "daily_counted": 1790,
+   "daylight_days": 65,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-08-27",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-01-20",
+   "flags": [
+    "split"
+   ],
+   "full_days": 91,
+   "full_days_daylight": 65,
+   "hours": 9097,
+   "id": "9000005030",
+   "kept": 1,
+   "last": "2026-08-27",
+   "line": [
+    [
+     -122.466847,
+     37.786583
+    ],
+    [
+     -122.465776,
+     37.786631
+    ]
+   ],
+   "peak": 194.0,
+   "peak_daylight": 191.0,
+   "peak_q1": 152.0,
+   "peak_q3": 223.0,
+   "peak_share": 0.1074,
+   "peak_share_daylight": 0.1056,
+   "pm_share": 0.81,
+   "seasons": {
+    "spring": 39,
+    "summer": 39,
+    "winter": 13
+   },
+   "side_share": 0.4417,
+   "split": [
+    [
+     "2025-11-19",
+     "2026-01-15",
+     20,
+     55.2
+    ],
+    [
+     "2026-01-28",
+     "2026-02-05",
+     5,
+     58.0
+    ],
+    [
+     "2026-09-01",
+     "2026-10-14",
+     10,
+     55.0
+    ],
+    [
+     "2026-10-15",
+     "2026-11-17",
+     10,
+     14.4
+    ]
+   ],
+   "valid_days": 91,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 8,
+   "car_lft": 3266,
+   "car_rgt": 3579,
+   "daylight_days": 3,
+   "dead_days": 3,
+   "dead_share": 0.375,
+   "fail": [
+    "38% of days dead",
+    "one season",
+    "5 valid days"
+   ],
+   "first": "2026-07-16",
+   "flags": [
+    "spread"
+   ],
+   "hours": 2686,
+   "id": "9000005033",
+   "kept": 0,
+   "last": "2026-11-12",
+   "line": [
+    [
+     -122.435571,
+     37.766536
+    ],
+    [
+     -122.435692,
+     37.766529
+    ],
+    [
+     -122.436764,
+     37.766464
+    ],
+    [
+     -122.436858,
+     37.766466
+    ],
+    [
+     -122.437163,
+     37.766454
+    ]
+   ],
+   "peak": 38.0,
+   "peak_q1": 16.1,
+   "peak_q3": 51.0,
+   "pm_share": 0.8,
+   "seasons": {
+    "fall": 2,
+    "summer": 3
+   },
+   "side_share": 0.4771,
+   "valid_days": 5,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 139,
+   "car_lft": 51486,
+   "car_rgt": 56644,
+   "daily": 532,
+   "daily_counted": 521,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 133,
+   "full_days_daylight": 75,
+   "hours": 8485,
+   "id": "9000005038",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.437937,
+     37.725078
+    ],
+    [
+     -122.438272,
+     37.724456
+    ],
+    [
+     -122.438437,
+     37.724191
+    ]
+   ],
+   "peak": 57.0,
+   "peak_daylight": 53.0,
+   "peak_q1": 48.0,
+   "peak_q3": 65.0,
+   "peak_share": 0.1072,
+   "peak_share_daylight": 0.1054,
+   "pm_share": 0.87,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 24
+   },
+   "side_share": 0.4761,
+   "valid_days": 139,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 36,
+   "car_lft": 66103,
+   "car_rgt": 41508,
+   "daily": 2153,
+   "daily_counted": 2154,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "winter only"
+   ],
+   "full_days": 16,
+   "hours": 3058,
+   "id": "9000005106",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.427266,
+     37.78208
+    ],
+    [
+     -122.427211,
+     37.782087
+    ],
+    [
+     -122.427122,
+     37.782098
+    ],
+    [
+     -122.425922,
+     37.782251
+    ]
+   ],
+   "peak": 247.0,
+   "peak_q1": 208.5,
+   "peak_q3": 306.3,
+   "peak_share": 0.1147,
+   "pm_share": 0.72,
+   "seasons": {
+    "fall": 10,
+    "winter": 26
+   },
+   "side_share": 0.3857,
+   "valid_days": 36,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 145,
+   "car_lft": 108959,
+   "car_rgt": 99127,
+   "daily": 812,
+   "daily_counted": 825,
+   "daylight_days": 76,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-29",
+   "dead_days": 1,
+   "dead_share": 0.007,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 133,
+   "full_days_daylight": 66,
+   "hours": 9093,
+   "id": "9000005191",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.464707,
+     37.78668
+    ],
+    [
+     -122.464586,
+     37.785002
+    ]
+   ],
+   "peak": 76.0,
+   "peak_daylight": 71.5,
+   "peak_q1": 66.0,
+   "peak_q3": 92.8,
+   "peak_share": 0.0936,
+   "peak_share_daylight": 0.0927,
+   "pm_share": 0.88,
+   "seasons": {
+    "fall": 35,
+    "spring": 37,
+    "summer": 39,
+    "winter": 33
+   },
+   "side_share": 0.4764,
+   "valid_days": 144,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 23,
+   "car_lft": 18590,
+   "car_rgt": 21107,
+   "daily": 1200,
+   "daily_counted": 1278,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [
+    "13 valid days"
+   ],
+   "first": "2025-11-19",
+   "flags": [
+    "split",
+    "winter only"
+   ],
+   "full_days": 10,
+   "hours": 4744,
+   "id": "9000005230",
+   "kept": 0,
+   "last": "2025-12-18",
+   "line": [
+    [
+     -122.480329,
+     37.778368
+    ],
+    [
+     -122.480464,
+     37.780231
+    ]
+   ],
+   "peak": 138.0,
+   "peak_q1": 120.5,
+   "peak_q3": 156.5,
+   "peak_share": 0.115,
+   "pm_share": 1.0,
+   "seasons": {
+    "fall": 4,
+    "winter": 9
+   },
+   "side_share": 0.4683,
+   "split": [
+    [
+     "2025-12-23",
+     "2026-04-28",
+     10,
+     22.1
+    ]
+   ],
+   "valid_days": 13,
+   "zero_days": 3
+  },
+  {
+   "candidate_days": 123,
+   "car_lft": 58488,
+   "car_rgt": 56560,
+   "daily": 657,
+   "daily_counted": 680,
+   "daylight_days": 56,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 6,
+   "dead_share": 0.054,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 89,
+   "full_days_daylight": 50,
+   "hours": 8389,
+   "id": "9000005232",
+   "kept": 1,
+   "last": "2026-10-20",
+   "line": [
+    [
+     -122.429193,
+     37.746763
+    ],
+    [
+     -122.429063,
+     37.746771
+    ],
+    [
+     -122.427129,
+     37.746893
+    ],
+    [
+     -122.427112,
+     37.746893
+    ],
+    [
+     -122.427011,
+     37.7469
+    ],
+    [
+     -122.426992,
+     37.746901
+    ]
+   ],
+   "peak": 59.5,
+   "peak_daylight": 52.0,
+   "peak_q1": 49.8,
+   "peak_q3": 81.0,
+   "peak_share": 0.0906,
+   "peak_share_daylight": 0.087,
+   "pm_share": 0.74,
+   "seasons": {
+    "fall": 21,
+    "spring": 32,
+    "summer": 22,
+    "winter": 31
+   },
+   "side_share": 0.4916,
+   "split": [
+    [
+     "2026-10-21",
+     "2026-11-17",
+     11,
+     15.8
+    ]
+   ],
+   "valid_days": 106,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 51,
+   "car_lft": 185057,
+   "car_rgt": 128190,
+   "daily": 1659,
+   "daily_counted": 1778,
+   "daylight_days": 24,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-03",
+   "dead_days": 3,
+   "dead_share": 0.059,
+   "fail": [],
+   "first": "2025-11-20",
+   "flags": [],
+   "full_days": 29,
+   "full_days_daylight": 19,
+   "hours": 6167,
+   "id": "9000005311",
+   "kept": 1,
+   "last": "2026-09-03",
+   "line": [
+    [
+     -122.504638,
+     37.741781
+    ],
+    [
+     -122.504639,
+     37.741796
+    ],
+    [
+     -122.504645,
+     37.741883
+    ],
+    [
+     -122.504647,
+     37.741903
+    ],
+    [
+     -122.504759,
+     37.743512
+    ],
+    [
+     -122.504769,
+     37.743645
+    ]
+   ],
+   "peak": 211.8,
+   "peak_daylight": 177.0,
+   "peak_q1": 176.5,
+   "peak_q3": 245.0,
+   "peak_share": 0.1277,
+   "peak_share_daylight": 0.1347,
+   "pm_share": 0.92,
+   "seasons": {
+    "fall": 2,
+    "spring": 8,
+    "summer": 18,
+    "winter": 20
+   },
+   "side_share": 0.4092,
+   "valid_days": 48,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 88,
+   "car_lft": 38676,
+   "car_rgt": 31874,
+   "daily": 483,
+   "daily_counted": 472,
+   "daylight_days": 72,
+   "daylight_first": "2026-04-07",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-04-07",
+   "flags": [],
+   "full_days": 51,
+   "full_days_daylight": 44,
+   "hours": 6612,
+   "id": "9000005336",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.429423,
+     37.749158
+    ],
+    [
+     -122.429415,
+     37.74908
+    ],
+    [
+     -122.429355,
+     37.748457
+    ],
+    [
+     -122.429346,
+     37.748362
+    ]
+   ],
+   "peak": 48.0,
+   "peak_daylight": 44.0,
+   "peak_q1": 39.0,
+   "peak_q3": 59.8,
+   "peak_share": 0.0994,
+   "peak_share_daylight": 0.0966,
+   "pm_share": 0.75,
+   "seasons": {
+    "fall": 30,
+    "spring": 21,
+    "summer": 37
+   },
+   "side_share": 0.4518,
+   "valid_days": 88,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 92,
+   "car_lft": 76094,
+   "car_rgt": 69196,
+   "daily": 1830,
+   "daily_counted": 1891,
+   "daylight_days": 21,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-06-24",
+   "dead_days": 11,
+   "dead_share": 0.159,
+   "fail": [
+    "16% of days dead"
+   ],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 57,
+   "full_days_daylight": 21,
+   "hours": 6033,
+   "id": "9000005347",
+   "kept": 0,
+   "last": "2026-06-24",
+   "line": [
+    [
+     -122.405596,
+     37.724468
+    ],
+    [
+     -122.40461,
+     37.724725
+    ]
+   ],
+   "peak": 189.0,
+   "peak_daylight": 195.0,
+   "peak_q1": 164.1,
+   "peak_q3": 215.2,
+   "peak_share": 0.1033,
+   "peak_share_daylight": 0.1033,
+   "pm_share": 0.83,
+   "seasons": {
+    "fall": 4,
+    "spring": 25,
+    "summer": 8,
+    "winter": 21
+   },
+   "side_share": 0.4763,
+   "split": [
+    [
+     "2025-12-11",
+     "2025-12-23",
+     5,
+     39.2
+    ],
+    [
+     "2026-05-12",
+     "2026-05-27",
+     8,
+     30.8
+    ],
+    [
+     "2026-06-25",
+     "2026-07-16",
+     10,
+     0.0
+    ]
+   ],
+   "valid_days": 58,
+   "zero_days": 8
+  },
+  {
+   "candidate_days": 6,
+   "car_lft": 376,
+   "car_rgt": 2520,
+   "daily": 521,
+   "daily_counted": 476,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [
+    "6 valid days"
+   ],
+   "first": "2025-11-19",
+   "flags": [
+    "winter only"
+   ],
+   "full_days": 5,
+   "hours": 838,
+   "id": "9000005365",
+   "kept": 0,
+   "last": "2025-12-04",
+   "line": [
+    [
+     -122.427624,
+     37.737269
+    ],
+    [
+     -122.426426,
+     37.738047
+    ],
+    [
+     -122.426076,
+     37.738358
+    ]
+   ],
+   "peak": 90.0,
+   "peak_q1": 69.5,
+   "peak_q3": 116.2,
+   "peak_share": 0.1729,
+   "pm_share": 0.83,
+   "seasons": {
+    "fall": 4,
+    "winter": 2
+   },
+   "side_share": 0.1299,
+   "valid_days": 6,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 72,
+   "car_lft": 141934,
+   "car_rgt": 24814,
+   "daily": 2177,
+   "daily_counted": 2245,
+   "daylight_days": 25,
+   "daylight_first": "2026-07-07",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-07-07",
+   "flags": [
+    "split"
+   ],
+   "full_days": 17,
+   "full_days_daylight": 12,
+   "hours": 8224,
+   "id": "9000005474",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.406932,
+     37.749745
+    ],
+    [
+     -122.406969,
+     37.749818
+    ],
+    [
+     -122.40702,
+     37.749919
+    ],
+    [
+     -122.407036,
+     37.749953
+    ],
+    [
+     -122.407043,
+     37.749992
+    ],
+    [
+     -122.40717,
+     37.751321
+    ]
+   ],
+   "peak": 189.0,
+   "peak_daylight": 183.0,
+   "peak_q1": 156.5,
+   "peak_q3": 208.0,
+   "peak_share": 0.0868,
+   "peak_share_daylight": 0.0854,
+   "pm_share": 0.86,
+   "seasons": {
+    "fall": 22,
+    "summer": 14
+   },
+   "side_share": 0.1488,
+   "split": [
+    [
+     "2025-11-19",
+     "2026-05-27",
+     36,
+     3.5
+    ]
+   ],
+   "valid_days": 36,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 148,
+   "car_lft": 269174,
+   "car_rgt": 556569,
+   "daily": 5176,
+   "daily_counted": 5182,
+   "daylight_days": 56,
+   "daylight_first": "2026-04-08",
+   "daylight_last": "2026-08-18",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-04-08",
+   "flags": [
+    "split"
+   ],
+   "full_days": 55,
+   "full_days_daylight": 55,
+   "hours": 9185,
+   "id": "9000005491",
+   "kept": 1,
+   "last": "2026-08-18",
+   "line": [
+    [
+     -122.458718,
+     37.785749
+    ],
+    [
+     -122.458071,
+     37.785832
+    ]
+   ],
+   "peak": 470.5,
+   "peak_daylight": 470.5,
+   "peak_q1": 420.2,
+   "peak_q3": 543.0,
+   "peak_share": 0.0909,
+   "peak_share_daylight": 0.0909,
+   "pm_share": 0.98,
+   "seasons": {
+    "spring": 23,
+    "summer": 33
+   },
+   "side_share": 0.326,
+   "split": [
+    [
+     "2025-11-19",
+     "2025-12-23",
+     14,
+     83.6
+    ],
+    [
+     "2026-01-06",
+     "2026-02-12",
+     18,
+     33.8
+    ],
+    [
+     "2026-02-17",
+     "2026-03-12",
+     12,
+     0.0
+    ],
+    [
+     "2026-03-17",
+     "2026-04-07",
+     10,
+     114.4
+    ],
+    [
+     "2026-08-19",
+     "2026-09-09",
+     10,
+     141.1
+    ],
+    [
+     "2026-09-10",
+     "2026-10-01",
+     10,
+     51.9
+    ],
+    [
+     "2026-10-06",
+     "2026-11-17",
+     18,
+     4.8
+    ]
+   ],
+   "valid_days": 56,
+   "zero_days": 4
+  },
+  {
+   "candidate_days": 105,
+   "car_lft": 62787,
+   "car_rgt": 58140,
+   "daily": 565,
+   "daily_counted": 671,
+   "daylight_days": 61,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 1,
+   "dead_share": 0.01,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 39,
+   "full_days_daylight": 19,
+   "hours": 8637,
+   "id": "9000005516",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.390441,
+     37.760284
+    ],
+    [
+     -122.390274,
+     37.758504
+    ]
+   ],
+   "peak": 50.5,
+   "peak_daylight": 44.0,
+   "peak_q1": 37.2,
+   "peak_q3": 70.5,
+   "peak_share": 0.0894,
+   "peak_share_daylight": 0.0663,
+   "pm_share": 0.41,
+   "seasons": {
+    "fall": 26,
+    "spring": 28,
+    "summer": 30,
+    "winter": 20
+   },
+   "side_share": 0.4808,
+   "valid_days": 104,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 145,
+   "car_lft": 5468,
+   "car_rgt": 5409,
+   "daily": 117,
+   "daily_counted": 90,
+   "daylight_days": 0,
+   "dead_days": 1,
+   "dead_share": 0.333,
+   "fail": [
+    "33% of days dead",
+    "2 valid days"
+   ],
+   "first": "2025-11-20",
+   "flags": [
+    "split",
+    "winter only"
+   ],
+   "full_days": 1,
+   "hours": 9185,
+   "id": "9000005517",
+   "kept": 0,
+   "last": "2025-11-25",
+   "line": [
+    [
+     -122.390573,
+     37.761653
+    ],
+    [
+     -122.390583,
+     37.761748
+    ],
+    [
+     -122.390631,
+     37.762242
+    ],
+    [
+     -122.390691,
+     37.762851
+    ],
+    [
+     -122.390692,
+     37.762868
+    ],
+    [
+     -122.390698,
+     37.762926
+    ]
+   ],
+   "peak": 6.5,
+   "peak_q1": 5.0,
+   "peak_q3": 8.0,
+   "peak_share": 0.0556,
+   "pm_share": 1.0,
+   "seasons": {
+    "fall": 2
+   },
+   "side_share": 0.4973,
+   "split": [
+    [
+     "2025-12-03",
+     "2025-12-18",
+     7,
+     1.2
+    ],
+    [
+     "2025-12-23",
+     "2026-11-17",
+     135,
+     0.0
+    ]
+   ],
+   "valid_days": 2,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 110,
+   "car_lft": 80824,
+   "car_rgt": 123987,
+   "daily": 1146,
+   "daily_counted": 1183,
+   "daylight_days": 45,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-29",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 80,
+   "full_days_daylight": 30,
+   "hours": 8978,
+   "id": "9000005718",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.426603,
+     37.742897
+    ],
+    [
+     -122.426585,
+     37.742898
+    ],
+    [
+     -122.426484,
+     37.742904
+    ],
+    [
+     -122.42646,
+     37.742906
+    ],
+    [
+     -122.424529,
+     37.743022
+    ],
+    [
+     -122.424399,
+     37.74303
+    ]
+   ],
+   "peak": 103.5,
+   "peak_daylight": 95.0,
+   "peak_q1": 91.0,
+   "peak_q3": 118.0,
+   "peak_share": 0.0903,
+   "peak_share_daylight": 0.0861,
+   "pm_share": 0.51,
+   "seasons": {
+    "fall": 21,
+    "spring": 32,
+    "summer": 17,
+    "winter": 34
+   },
+   "side_share": 0.3946,
+   "split": [
+    [
+     "2026-03-17",
+     "2026-03-26",
+     6,
+     1.6
+    ]
+   ],
+   "valid_days": 104,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 66,
+   "car_lft": 217829,
+   "car_rgt": 339367,
+   "daily": 5461,
+   "daily_counted": 5519,
+   "daylight_days": 18,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-05-14",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 40,
+   "hours": 4770,
+   "id": "9000005731",
+   "kept": 1,
+   "last": "2026-05-14",
+   "line": [
+    [
+     -122.443005,
+     37.725061
+    ],
+    [
+     -122.442949,
+     37.7251
+    ],
+    [
+     -122.442826,
+     37.725188
+    ],
+    [
+     -122.442587,
+     37.725457
+    ],
+    [
+     -122.442376,
+     37.725708
+    ],
+    [
+     -122.44239,
+     37.725769
+    ],
+    [
+     -122.442395,
+     37.725793
+    ]
+   ],
+   "peak": 515.0,
+   "peak_daylight": 526.0,
+   "peak_q1": 465.0,
+   "peak_q3": 556.0,
+   "peak_share": 0.0943,
+   "pm_share": 0.24,
+   "seasons": {
+    "fall": 3,
+    "spring": 31,
+    "winter": 32
+   },
+   "side_share": 0.3909,
+   "valid_days": 66,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 61919,
+   "car_rgt": 51601,
+   "daily": 743,
+   "daily_counted": 732,
+   "daylight_days": 78,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 3,
+   "dead_share": 0.022,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 131,
+   "full_days_daylight": 73,
+   "hours": 9182,
+   "id": "9000005826",
+   "kept": 1,
+   "last": "2026-10-21",
+   "line": [
+    [
+     -122.40616,
+     37.77809
+    ],
+    [
+     -122.406261,
+     37.778169
+    ],
+    [
+     -122.406627,
+     37.778456
+    ]
+   ],
+   "peak": 58.0,
+   "peak_daylight": 47.0,
+   "peak_q1": 43.0,
+   "peak_q3": 76.8,
+   "peak_share": 0.0781,
+   "peak_share_daylight": 0.0718,
+   "pm_share": 0.9,
+   "seasons": {
+    "fall": 27,
+    "spring": 39,
+    "summer": 38,
+    "winter": 32
+   },
+   "side_share": 0.4546,
+   "split": [
+    [
+     "2026-10-22",
+     "2026-11-17",
+     10,
+     16.6
+    ]
+   ],
+   "valid_days": 136,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 2213446,
+   "car_rgt": 1419917,
+   "daily": 14091,
+   "daily_counted": 14169,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 143,
+   "full_days_daylight": 74,
+   "hours": 9161,
+   "id": "9000006079",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.438633,
+     37.731543
+    ],
+    [
+     -122.438492,
+     37.731543
+    ],
+    [
+     -122.437952,
+     37.731543
+    ],
+    [
+     -122.437728,
+     37.73154
+    ],
+    [
+     -122.437472,
+     37.731539
+    ]
+   ],
+   "peak": 1085.0,
+   "peak_daylight": 1101.0,
+   "peak_q1": 1003.5,
+   "peak_q3": 1171.5,
+   "peak_share": 0.077,
+   "peak_share_daylight": 0.0794,
+   "pm_share": 0.85,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.3908,
+   "valid_days": 149,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 60007,
+   "car_rgt": 58906,
+   "daily": 464,
+   "daily_counted": 470,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 144,
+   "full_days_daylight": 77,
+   "hours": 9190,
+   "id": "9000006120",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.408071,
+     37.727811
+    ],
+    [
+     -122.408539,
+     37.728947
+    ],
+    [
+     -122.408564,
+     37.729006
+    ]
+   ],
+   "peak": 49.0,
+   "peak_daylight": 45.0,
+   "peak_q1": 39.0,
+   "peak_q3": 63.0,
+   "peak_share": 0.1057,
+   "peak_share_daylight": 0.1026,
+   "pm_share": 0.57,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.4954,
+   "valid_days": 149,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 139494,
+   "car_rgt": 179607,
+   "daily": 1253,
+   "daily_counted": 1220,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 1,
+   "dead_share": 0.007,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 140,
+   "full_days_daylight": 74,
+   "hours": 9092,
+   "id": "9000006237",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.433426,
+     37.767461
+    ],
+    [
+     -122.43342,
+     37.7674
+    ],
+    [
+     -122.433378,
+     37.766965
+    ],
+    [
+     -122.433357,
+     37.766741
+    ],
+    [
+     -122.43335,
+     37.76667
+    ]
+   ],
+   "peak": 141.0,
+   "peak_daylight": 135.0,
+   "peak_q1": 96.2,
+   "peak_q3": 183.0,
+   "peak_share": 0.1125,
+   "peak_share_daylight": 0.1083,
+   "pm_share": 0.53,
+   "seasons": {
+    "fall": 36,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.4371,
+   "valid_days": 148,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 82605,
+   "car_rgt": 83222,
+   "daily": 663,
+   "daily_counted": 664,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 142,
+   "full_days_daylight": 73,
+   "hours": 9190,
+   "id": "9000006441",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.428431,
+     37.735856
+    ],
+    [
+     -122.427156,
+     37.736685
+    ]
+   ],
+   "peak": 77.0,
+   "peak_daylight": 74.0,
+   "peak_q1": 67.0,
+   "peak_q3": 87.0,
+   "peak_share": 0.1161,
+   "peak_share_daylight": 0.1078,
+   "pm_share": 0.91,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.4981,
+   "valid_days": 149,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 20,
+   "car_lft": 38577,
+   "car_rgt": 35548,
+   "daily": 2697,
+   "daily_counted": 2661,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "winter only"
+   ],
+   "full_days": 20,
+   "hours": 1937,
+   "id": "9000006818",
+   "kept": 1,
+   "last": "2026-01-15",
+   "line": [
+    [
+     -122.42714,
+     37.748494
+    ],
+    [
+     -122.427163,
+     37.748493
+    ],
+    [
+     -122.427265,
+     37.748487
+    ],
+    [
+     -122.427287,
+     37.748485
+    ],
+    [
+     -122.429216,
+     37.74837
+    ],
+    [
+     -122.429346,
+     37.748362
+    ]
+   ],
+   "peak": 311.5,
+   "peak_q1": 274.0,
+   "peak_q3": 349.5,
+   "peak_share": 0.1155,
+   "pm_share": 0.95,
+   "seasons": {
+    "fall": 4,
+    "winter": 16
+   },
+   "side_share": 0.4796,
+   "valid_days": 20,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 161050,
+   "car_rgt": 166462,
+   "daily": 2361,
+   "daily_counted": 2372,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 1,
+   "dead_share": 0.009,
+   "fail": [],
+   "first": "2026-02-18",
+   "flags": [
+    "split"
+   ],
+   "full_days": 112,
+   "full_days_daylight": 77,
+   "hours": 9180,
+   "id": "9000007079",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.41253,
+     37.759035
+    ],
+    [
+     -122.412658,
+     37.759026
+    ],
+    [
+     -122.413509,
+     37.758977
+    ],
+    [
+     -122.413553,
+     37.758973
+    ],
+    [
+     -122.413619,
+     37.758971
+    ]
+   ],
+   "peak": 229.0,
+   "peak_daylight": 235.0,
+   "peak_q1": 197.0,
+   "peak_q3": 263.0,
+   "peak_share": 0.097,
+   "peak_share_daylight": 0.095,
+   "pm_share": 0.67,
+   "seasons": {
+    "fall": 32,
+    "spring": 39,
+    "summer": 39,
+    "winter": 5
+   },
+   "side_share": 0.4917,
+   "split": [
+    [
+     "2025-11-19",
+     "2025-12-11",
+     10,
+     22.6
+    ],
+    [
+     "2025-12-16",
+     "2026-02-17",
+     23,
+     42.5
+    ]
+   ],
+   "valid_days": 115,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 103,
+   "car_lft": 127565,
+   "car_rgt": 107837,
+   "daily": 1393,
+   "daily_counted": 1487,
+   "daylight_days": 78,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 1,
+   "dead_share": 0.01,
+   "fail": [],
+   "first": "2026-03-10",
+   "flags": [],
+   "full_days": 86,
+   "full_days_daylight": 67,
+   "hours": 6545,
+   "id": "9000008324",
+   "kept": 1,
+   "last": "2026-11-12",
+   "line": [
+    [
+     -122.505383,
+     37.737072
+    ],
+    [
+     -122.505442,
+     37.737916
+    ],
+    [
+     -122.505448,
+     37.738003
+    ]
+   ],
+   "peak": 119.0,
+   "peak_daylight": 122.5,
+   "peak_q1": 95.8,
+   "peak_q3": 151.5,
+   "peak_share": 0.0854,
+   "peak_share_daylight": 0.0875,
+   "pm_share": 0.41,
+   "seasons": {
+    "fall": 28,
+    "spring": 36,
+    "summer": 38
+   },
+   "side_share": 0.4581,
+   "valid_days": 102,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 134,
+   "car_lft": 270897,
+   "car_rgt": 168326,
+   "daily": 3830,
+   "daily_counted": 3776,
+   "daylight_days": 16,
+   "daylight_first": "2026-04-02",
+   "daylight_last": "2026-05-07",
+   "dead_days": 1,
+   "dead_share": 0.015,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 61,
+   "full_days_daylight": 16,
+   "hours": 8555,
+   "id": "9000008325",
+   "kept": 1,
+   "last": "2026-05-07",
+   "line": [
+    [
+     -122.506464,
+     37.737958
+    ],
+    [
+     -122.506478,
+     37.738056
+    ],
+    [
+     -122.506714,
+     37.739816
+    ]
+   ],
+   "peak": 393.0,
+   "peak_daylight": 315.5,
+   "peak_q1": 334.5,
+   "peak_q3": 428.0,
+   "peak_share": 0.1026,
+   "peak_share_daylight": 0.1017,
+   "pm_share": 0.53,
+   "seasons": {
+    "fall": 4,
+    "spring": 29,
+    "winter": 33
+   },
+   "side_share": 0.3832,
+   "split": [
+    [
+     "2026-05-12",
+     "2026-10-22",
+     67,
+     0.0
+    ]
+   ],
+   "valid_days": 66,
+   "zero_days": 57
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 166218,
+   "car_rgt": 155853,
+   "daily": 1305,
+   "daily_counted": 1352,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [
+    "split"
+   ],
+   "full_days": 129,
+   "full_days_daylight": 76,
+   "hours": 9190,
+   "id": "9000008453",
+   "kept": 1,
+   "last": "2026-10-21",
+   "line": [
+    [
+     -122.40794,
+     37.75931
+    ],
+    [
+     -122.40712,
+     37.759362
+    ],
+    [
+     -122.407018,
+     37.759369
+    ]
+   ],
+   "peak": 125.5,
+   "peak_daylight": 135.0,
+   "peak_q1": 112.2,
+   "peak_q3": 144.8,
+   "peak_share": 0.0962,
+   "peak_share_daylight": 0.0933,
+   "pm_share": 0.94,
+   "seasons": {
+    "fall": 26,
+    "spring": 39,
+    "summer": 39,
+    "winter": 28
+   },
+   "side_share": 0.4839,
+   "split": [
+    [
+     "2025-11-26",
+     "2025-12-11",
+     7,
+     37.0
+    ],
+    [
+     "2026-10-22",
+     "2026-11-17",
+     10,
+     34.5
+    ]
+   ],
+   "valid_days": 132,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 134,
+   "car_lft": 56216,
+   "car_rgt": 65225,
+   "daily": 542,
+   "daily_counted": 528,
+   "daylight_days": 68,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 131,
+   "full_days_daylight": 68,
+   "hours": 8534,
+   "id": "9000008898",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.443145,
+     37.776236
+    ],
+    [
+     -122.443321,
+     37.777115
+    ]
+   ],
+   "peak": 52.0,
+   "peak_daylight": 47.5,
+   "peak_q1": 43.0,
+   "peak_q3": 61.2,
+   "peak_share": 0.0959,
+   "peak_share_daylight": 0.0863,
+   "pm_share": 0.39,
+   "seasons": {
+    "fall": 36,
+    "spring": 32,
+    "summer": 32,
+    "winter": 34
+   },
+   "side_share": 0.4629,
+   "valid_days": 134,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 39502,
+   "car_rgt": 48424,
+   "daily": 374,
+   "daily_counted": 381,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 147,
+   "full_days_daylight": 78,
+   "hours": 9190,
+   "id": "9000008899",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.495807,
+     37.738429
+    ],
+    [
+     -122.495677,
+     37.736564
+    ]
+   ],
+   "peak": 40.0,
+   "peak_daylight": 39.0,
+   "peak_q1": 36.4,
+   "peak_q3": 45.9,
+   "peak_share": 0.107,
+   "peak_share_daylight": 0.1055,
+   "pm_share": 0.86,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.4493,
+   "valid_days": 149,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 607175,
+   "car_rgt": 458592,
+   "daily": 4514,
+   "daily_counted": 4472,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 143,
+   "full_days_daylight": 74,
+   "hours": 9166,
+   "id": "9000009466",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.427755,
+     37.754901
+    ],
+    [
+     -122.427762,
+     37.754977
+    ],
+    [
+     -122.427829,
+     37.755689
+    ]
+   ],
+   "peak": 446.0,
+   "peak_daylight": 428.0,
+   "peak_q1": 370.5,
+   "peak_q3": 484.0,
+   "peak_share": 0.0988,
+   "peak_share_daylight": 0.0932,
+   "pm_share": 0.28,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.4303,
+   "valid_days": 149,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 10,
+   "car_lft": 37680,
+   "car_rgt": 60376,
+   "daily": 5746,
+   "daily_counted": 5754,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [
+    "10 valid days"
+   ],
+   "first": "2025-11-20",
+   "flags": [
+    "winter only"
+   ],
+   "full_days": 4,
+   "hours": 965,
+   "id": "9000009959",
+   "kept": 0,
+   "last": "2025-12-17",
+   "line": [
+    [
+     -122.450164,
+     37.766737
+    ],
+    [
+     -122.450073,
+     37.76675
+    ],
+    [
+     -122.449101,
+     37.766872
+    ]
+   ],
+   "peak": 571.2,
+   "peak_q1": 510.2,
+   "peak_q3": 606.2,
+   "peak_share": 0.0994,
+   "pm_share": 1.0,
+   "seasons": {
+    "fall": 3,
+    "winter": 7
+   },
+   "side_share": 0.3843,
+   "valid_days": 10,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 124,
+   "car_lft": 59733,
+   "car_rgt": 62591,
+   "daily": 581,
+   "daily_counted": 589,
+   "daylight_days": 74,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-17",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 117,
+   "full_days_daylight": 70,
+   "hours": 7500,
+   "id": "9000009961",
+   "kept": 1,
+   "last": "2026-09-17",
+   "line": [
+    [
+     -122.413373,
+     37.738985
+    ],
+    [
+     -122.413417,
+     37.739059
+    ],
+    [
+     -122.413397,
+     37.739286
+    ],
+    [
+     -122.413316,
+     37.740292
+    ]
+   ],
+   "peak": 56.0,
+   "peak_daylight": 54.0,
+   "peak_q1": 51.2,
+   "peak_q3": 63.0,
+   "peak_share": 0.0964,
+   "peak_share_daylight": 0.0947,
+   "pm_share": 0.73,
+   "seasons": {
+    "fall": 13,
+    "spring": 39,
+    "summer": 39,
+    "winter": 33
+   },
+   "side_share": 0.4883,
+   "valid_days": 124,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 116,
+   "car_lft": 3719402,
+   "car_rgt": 23456,
+   "daily": 17581,
+   "daily_counted": 18426,
+   "daylight_days": 78,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-12-04",
+   "flags": [
+    "one side"
+   ],
+   "full_days": 108,
+   "full_days_daylight": 73,
+   "hours": 7164,
+   "id": "9000009987",
+   "kept": 1,
+   "last": "2026-10-29",
+   "line": [
+    [
+     -122.45062,
+     37.771472
+    ],
+    [
+     -122.450536,
+     37.771483
+    ],
+    [
+     -122.450171,
+     37.77153
+    ],
+    [
+     -122.448973,
+     37.771682
+    ]
+   ],
+   "peak": 1624.5,
+   "peak_daylight": 1588.5,
+   "peak_q1": 1427.5,
+   "peak_q3": 1815.2,
+   "peak_share": 0.0924,
+   "peak_share_daylight": 0.0915,
+   "pm_share": 0.03,
+   "seasons": {
+    "fall": 27,
+    "spring": 39,
+    "summer": 38,
+    "winter": 12
+   },
+   "side_share": 0.0063,
+   "valid_days": 116,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 149,
+   "car_lft": 879842,
+   "car_rgt": 947863,
+   "daily": 6190,
+   "daily_counted": 6105,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 145,
+   "full_days_daylight": 77,
+   "hours": 8810,
+   "id": "9000009991",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.459412,
+     37.788385
+    ],
+    [
+     -122.459477,
+     37.789308
+    ]
+   ],
+   "peak": 598.0,
+   "peak_daylight": 600.0,
+   "peak_q1": 560.5,
+   "peak_q3": 641.5,
+   "peak_share": 0.0966,
+   "peak_share_daylight": 0.0967,
+   "pm_share": 0.95,
+   "seasons": {
+    "fall": 37,
+    "spring": 39,
+    "summer": 39,
+    "winter": 34
+   },
+   "side_share": 0.4814,
+   "valid_days": 149,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 79,
+   "car_lft": 196101,
+   "car_rgt": 77850,
+   "daily": 1843,
+   "daily_counted": 1868,
+   "daylight_days": 28,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-06-03",
+   "dead_days": 1,
+   "dead_share": 0.013,
+   "fail": [],
+   "first": "2025-11-19",
+   "flags": [],
+   "full_days": 77,
+   "full_days_daylight": 28,
+   "hours": 4784,
+   "id": "9000009992",
+   "kept": 1,
+   "last": "2026-06-03",
+   "line": [
+    [
+     -122.473445,
+     37.773063
+    ],
+    [
+     -122.47358,
+     37.77493
+    ]
+   ],
+   "peak": 197.7,
+   "peak_daylight": 192.0,
+   "peak_q1": 186.9,
+   "peak_q3": 217.7,
+   "peak_share": 0.1073,
+   "peak_share_daylight": 0.1048,
+   "pm_share": 0.33,
+   "seasons": {
+    "fall": 4,
+    "spring": 38,
+    "summer": 2,
+    "winter": 34
+   },
+   "side_share": 0.2842,
+   "valid_days": 78,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 92,
+   "car_lft": 32299,
+   "car_rgt": 21231,
+   "daily": 420,
+   "daily_counted": 424,
+   "daylight_days": 32,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 2,
+   "dead_share": 0.022,
+   "fail": [],
+   "first": "2025-11-25",
+   "flags": [],
+   "full_days": 83,
+   "full_days_daylight": 30,
+   "hours": 5523,
+   "id": "9000010042",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.419718,
+     37.739762
+    ],
+    [
+     -122.419661,
+     37.73985
+    ],
+    [
+     -122.418929,
+     37.740975
+    ],
+    [
+     -122.418897,
+     37.741012
+    ]
+   ],
+   "peak": 42.0,
+   "peak_daylight": 37.5,
+   "peak_q1": 34.0,
+   "peak_q3": 49.5,
+   "peak_share": 0.0999,
+   "peak_share_daylight": 0.0919,
+   "pm_share": 0.54,
+   "seasons": {
+    "fall": 33,
+    "spring": 30,
+    "summer": 3,
+    "winter": 24
+   },
+   "side_share": 0.3966,
+   "valid_days": 90,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 90,
+   "car_lft": 57779,
+   "car_rgt": 23484,
+   "daily": 1575,
+   "daily_counted": 1538,
+   "daylight_days": 65,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-22",
+   "dead_days": 4,
+   "dead_share": 0.044,
+   "fail": [],
+   "first": "2026-01-20",
+   "flags": [],
+   "full_days": 68,
+   "full_days_daylight": 57,
+   "hours": 6431,
+   "id": "9000010369",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.410356,
+     37.782207
+    ],
+    [
+     -122.410403,
+     37.782194
+    ],
+    [
+     -122.410479,
+     37.782173
+    ],
+    [
+     -122.410529,
+     37.782139
+    ],
+    [
+     -122.41063,
+     37.78206
+    ],
+    [
+     -122.411717,
+     37.781205
+    ]
+   ],
+   "peak": 106.5,
+   "peak_daylight": 105.0,
+   "peak_q1": 89.8,
+   "peak_q3": 116.2,
+   "peak_share": 0.0676,
+   "peak_share_daylight": 0.0643,
+   "pm_share": 0.99,
+   "seasons": {
+    "fall": 9,
+    "spring": 29,
+    "summer": 36,
+    "winter": 12
+   },
+   "side_share": 0.289,
+   "valid_days": 86,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 123,
+   "car_lft": 281832,
+   "car_rgt": 204225,
+   "daily": 2627,
+   "daily_counted": 2635,
+   "daylight_days": 72,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-01-13",
+   "flags": [],
+   "full_days": 110,
+   "full_days_daylight": 62,
+   "hours": 7424,
+   "id": "9000010405",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.450473,
+     37.77339
+    ],
+    [
+     -122.449481,
+     37.773517
+    ],
+    [
+     -122.449445,
+     37.773522
+    ],
+    [
+     -122.449349,
+     37.773534
+    ]
+   ],
+   "peak": 274.0,
+   "peak_daylight": 270.0,
+   "peak_q1": 225.0,
+   "peak_q3": 328.0,
+   "peak_share": 0.1043,
+   "peak_share_daylight": 0.106,
+   "pm_share": 0.93,
+   "seasons": {
+    "fall": 31,
+    "spring": 38,
+    "summer": 34,
+    "winter": 20
+   },
+   "side_share": 0.4202,
+   "valid_days": 123,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 7,
+   "car_lft": 28620,
+   "car_rgt": 35664,
+   "daily": 8285,
+   "daily_counted": 8310,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [
+    "7 valid days"
+   ],
+   "first": "2026-01-29",
+   "flags": [
+    "winter only"
+   ],
+   "full_days": 7,
+   "hours": 425,
+   "id": "9000010509",
+   "kept": 0,
+   "last": "2026-02-12",
+   "line": [
+    [
+     -122.414628,
+     37.738886
+    ],
+    [
+     -122.414716,
+     37.738895
+    ],
+    [
+     -122.415162,
+     37.738939
+    ]
+   ],
+   "peak": 691.0,
+   "peak_q1": 658.0,
+   "peak_q3": 742.0,
+   "peak_share": 0.0834,
+   "pm_share": 0.57,
+   "seasons": {
+    "winter": 7
+   },
+   "side_share": 0.4452,
+   "valid_days": 7,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 111,
+   "car_lft": 1288701,
+   "car_rgt": 2169,
+   "daily": 6809,
+   "daily_counted": 6773,
+   "daylight_days": 79,
+   "daylight_first": "2026-04-01",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-03-03",
+   "flags": [
+    "one side"
+   ],
+   "full_days": 109,
+   "full_days_daylight": 79,
+   "hours": 6362,
+   "id": "9000010661",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.457496,
+     37.731036
+    ],
+    [
+     -122.457809,
+     37.730965
+    ],
+    [
+     -122.457987,
+     37.730924
+    ],
+    [
+     -122.458107,
+     37.730903
+    ],
+    [
+     -122.458244,
+     37.730886
+    ],
+    [
+     -122.458403,
+     37.73087
+    ]
+   ],
+   "peak": 640.0,
+   "peak_daylight": 609.0,
+   "peak_q1": 557.0,
+   "peak_q3": 696.0,
+   "peak_share": 0.094,
+   "peak_share_daylight": 0.0912,
+   "pm_share": 0.31,
+   "seasons": {
+    "fall": 33,
+    "spring": 39,
+    "summer": 39
+   },
+   "side_share": 0.0017,
+   "valid_days": 111,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 95,
+   "car_lft": 309740,
+   "car_rgt": 389126,
+   "daily": 4406,
+   "daily_counted": 4382,
+   "daylight_days": 76,
+   "daylight_first": "2026-04-07",
+   "daylight_last": "2026-09-30",
+   "dead_days": 1,
+   "dead_share": 0.011,
+   "fail": [],
+   "first": "2026-04-07",
+   "flags": [],
+   "full_days": 87,
+   "full_days_daylight": 69,
+   "hours": 5416,
+   "id": "9000010981",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.429987,
+     37.762808
+    ],
+    [
+     -122.428651,
+     37.762889
+    ],
+    [
+     -122.428638,
+     37.76289
+    ],
+    [
+     -122.42861,
+     37.762893
+    ],
+    [
+     -122.428546,
+     37.762896
+    ],
+    [
+     -122.428527,
+     37.762897
+    ]
+   ],
+   "peak": 378.5,
+   "peak_daylight": 388.0,
+   "peak_q1": 331.0,
+   "peak_q3": 418.2,
+   "peak_share": 0.0859,
+   "peak_share_daylight": 0.0855,
+   "pm_share": 0.73,
+   "seasons": {
+    "fall": 32,
+    "spring": 24,
+    "summer": 38
+   },
+   "side_share": 0.4432,
+   "valid_days": 94,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 45,
+   "car_lft": 67948,
+   "car_rgt": 110844,
+   "daily": 2252,
+   "daily_counted": 2330,
+   "daylight_days": 26,
+   "daylight_first": "2026-08-04",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-08-04",
+   "flags": [],
+   "full_days": 44,
+   "full_days_daylight": 25,
+   "hours": 2637,
+   "id": "9000011788",
+   "kept": 1,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.465681,
+     37.754723
+    ],
+    [
+     -122.465672,
+     37.754608
+    ],
+    [
+     -122.465559,
+     37.752991
+    ],
+    [
+     -122.46555,
+     37.752856
+    ]
+   ],
+   "peak": 241.0,
+   "peak_daylight": 244.0,
+   "peak_q1": 217.7,
+   "peak_q3": 263.7,
+   "peak_share": 0.107,
+   "peak_share_daylight": 0.1022,
+   "pm_share": 0.76,
+   "seasons": {
+    "fall": 33,
+    "summer": 12
+   },
+   "side_share": 0.38,
+   "valid_days": 45,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 32,
+   "car_lft": 14024,
+   "car_rgt": 10584,
+   "daily": 502,
+   "daily_counted": 458,
+   "daylight_days": 19,
+   "daylight_first": "2026-08-11",
+   "daylight_last": "2026-09-30",
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [],
+   "first": "2026-08-11",
+   "flags": [],
+   "full_days": 29,
+   "full_days_daylight": 16,
+   "hours": 1833,
+   "id": "9000011835",
+   "kept": 1,
+   "last": "2026-10-29",
+   "line": [
+    [
+     -122.410503,
+     37.720519
+    ],
+    [
+     -122.409519,
+     37.720779
+    ]
+   ],
+   "peak": 64.5,
+   "peak_daylight": 70.0,
+   "peak_q1": 53.2,
+   "peak_q3": 80.2,
+   "peak_share": 0.1285,
+   "peak_share_daylight": 0.1313,
+   "pm_share": 0.19,
+   "seasons": {
+    "fall": 24,
+    "summer": 8
+   },
+   "side_share": 0.4301,
+   "valid_days": 32,
+   "zero_days": 0
+  },
+  {
+   "candidate_days": 8,
+   "car_lft": 38898,
+   "car_rgt": 29885,
+   "daily": 5378,
+   "daily_counted": 5479,
+   "daylight_days": 0,
+   "dead_days": 0,
+   "dead_share": 0.0,
+   "fail": [
+    "one season",
+    "8 valid days"
+   ],
+   "first": "2026-10-28",
+   "flags": [],
+   "full_days": 8,
+   "hours": 525,
+   "id": "9000012395",
+   "kept": 0,
+   "last": "2026-11-17",
+   "line": [
+    [
+     -122.422921,
+     37.801564
+    ],
+    [
+     -122.422824,
+     37.801577
+    ],
+    [
+     -122.422121,
+     37.80167
+    ]
+   ],
+   "peak": 470.0,
+   "peak_q1": 456.5,
+   "peak_q3": 482.0,
+   "peak_share": 0.0874,
+   "pm_share": 0.12,
+   "seasons": {
+    "fall": 8
+   },
+   "side_share": 0.4345,
+   "valid_days": 8,
+   "zero_days": 0
+  }
+ ],
+ "source": "Telraam API v1 (telraam-api.net), traffic_snapshot and per-hour traffic reports; sources/telraam.md",
+ "window": [
+  "2025-11-19",
+  "2026-11-19"
+ ]
+}

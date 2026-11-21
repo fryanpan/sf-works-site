@@ -1,0 +1,1154 @@
+{
+ "note": "School Trips' uncertainty table: one row per model input and causal link, with its source or \"judgment\", its low and high, and the data test it passed. site/scripts/check-assumptions.mjs fails on a row with no source, low or high, and reruns the All Changes headline at each row's low and high to print its share. param names the makeCityModel P.assume key (or cost.<COSTS key>, or case for the sim's three cases); rerun is light (the page's model reruns it), alone (the change's own low and high from makeCityModel's alone(), standing in for a rerun), sim (needs scripts/school-sim.py, not rerun here) or none (a measured figure). studies are ids in data/evidence/studies.json. Edit by hand; it is the record.",
+ "headline": "All Changes in the sim's central case, year 10 (site/src/school-trips-inputs.mjs)",
+ "flagShare": 0.3333333333333333,
+ "rows": [
+  {
+   "id": "bike_case",
+   "label": "The network's bike shift: the sim's Low, Central and High cases, year 10",
+   "kind": "causal",
+   "levers": [
+    "connector",
+    "seg",
+    "safer_crossings",
+    "ebike"
+   ],
+   "value": 1,
+   "low": 0,
+   "high": 2,
+   "unit": "case (0 Low, 1 Central, 2 High)",
+   "source": "tools/school-trips/school-sim.py's three cases: High is the PCT's Go Dutch shift, Low a shift sized to Cambridge's 14% of commutes at 87% coverage, Central halfway between, our assumption. Bryan, 2026-10-18: \"Use middle end and show low to high range\"",
+   "studies": [],
+   "dataTest": "none: the 2019 to 2025 back-cast (plan V2) is the test, run in the sim",
+   "rerun": "light",
+   "param": "case",
+   "note": "Kids hurt stay at each change's central in this rerun; the cases move cars and costs."
+  },
+  {
+   "id": "school_street_pts",
+   "label": "School Street: fall in TK-5 single-family car share",
+   "kind": "input",
+   "levers": [
+    "school_street"
+   ],
+   "value": 2.7,
+   "low": 0,
+   "high": 5.3,
+   "unit": "car share points",
+   "source": "Patterson et al. 2025, 5.40-point drop less its 2.68 points of park-and-stride, which SF's Travel Tally counts as driven",
+   "studies": [
+    "patterson-2025",
+    "dowling-2025-bradford",
+    "tfl-2021-school-streets"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "ss_pts"
+  },
+  {
+   "id": "safer_crossings_pts",
+   "label": "Safety upgrades: rise in TK-8 walking and biking share",
+   "kind": "input",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 3.3,
+   "low": 0,
+   "high": 6.3,
+   "unit": "points",
+   "source": "McDonald et al. 2014, p. 160; low from Austin STREETS; high from McDonald's p-value",
+   "studies": [
+    "mcdonald-2014",
+    "austin-streets-2025"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "xing_pts"
+  },
+  {
+   "id": "walking_bus_pts",
+   "label": "Walking school bus: fall in TK-5 single-family car share, school-wide",
+   "kind": "input",
+   "levers": [
+    "walking_bus"
+   ],
+   "value": 0.37,
+   "low": 0,
+   "high": 1,
+   "unit": "car share points",
+   "source": "Johnson et al. 2024's 9.04 points among about 18 enrolled kids a school, spread over an SF TK-5 school of about 330; low 0 from El Monte's paid program",
+   "studies": [
+    "johnson-2024",
+    "el-monte-2018",
+    "mendoza-2009-seattle"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "wb_pts"
+  },
+  {
+   "id": "carpool_share",
+   "label": "Carpool matching: share of driven students who move to a two-family carpool",
+   "kind": "input",
+   "levers": [
+    "carpool"
+   ],
+   "value": 0.005,
+   "low": 0.002,
+   "high": 0.01,
+   "unit": "share of driven students",
+   "source": "Contra Costa SchoolPool's match requests from 0.45% of students, about 0.8% of driven students at SF's car share",
+   "studies": [
+    "contra-costa-schoolpool-2003"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "pool_share"
+  },
+  {
+   "id": "muni_pts",
+   "label": "Free Muni for caregivers: rise in Muni share among TK-8 students over half a mile from school",
+   "kind": "input",
+   "levers": [
+    "caregiver_muni"
+   ],
+   "value": 1,
+   "low": 0,
+   "high": 3,
+   "unit": "points",
+   "source": "judgment",
+   "studies": [
+    "chizeck-mbonu-2025-pittsburgh"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "muni_pts",
+   "note": "Pittsburgh's randomized trial cut low-income adults' daily car-trip chance 2.9 points and didn't change trips with children, so 1 point is our judgment with Pittsburgh near the top."
+  },
+  {
+   "id": "muni_car_frac",
+   "label": "Free Muni: share of new riders who leave a single-family car",
+   "kind": "input",
+   "levers": [
+    "caregiver_muni"
+   ],
+   "value": 0.8845,
+   "low": 0.7,
+   "high": 1.0,
+   "unit": "share",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "muni_car_frac",
+   "rangeBasis": "judgment, set for this log; the model gives no range",
+   "note": "The central is the far TK-8 students' own split of single-family car, carpool and bike."
+  },
+  {
+   "id": "yellow_bus_takeup",
+   "label": "School shuttle loops: driven kids who ride instead",
+   "kind": "input",
+   "levers": [
+    "yellow_bus"
+   ],
+   "value": 0.64,
+   "low": 0.58,
+   "high": 0.7,
+   "unit": "tally points (about 479 kids a point)",
+   "source": "Denver's Success Express loops, 8.9% to 10.7% of eligible students, so 640 riders (580 to 700) of SF's 6,500 TK-8 students over 2 miles (School Access Plan p. 42); 48% previously driven, MyBus's 64% weighted by SF's grades. Bryan chose loop take-up on 2026-10-15",
+   "studies": [
+    "wsp-2009-mybus",
+    "denver-success-express"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "alone",
+   "reread": {
+    "date": "2026-10-15",
+    "finding": "Reread 2026-10-15 in the uncertainty-log grading pass. The 1,520 filled seats rested on Denver's conventional routes, not its loops, and the 44% did not reproduce from MyBus. Bryan chose loop take-up the same day: 640 riders, 48% previously driven. Both evidence rows stay SMS 1."
+   }
+  },
+  {
+   "id": "travel_tracker_pts",
+   "label": "Daily travel tracker: fall in TK-5 car share",
+   "kind": "input",
+   "levers": [
+    "travel_tracker"
+   ],
+   "value": 1.8,
+   "low": 0,
+   "high": 3.5,
+   "unit": "car share points",
+   "source": "Living Streets WOW in Scotland: 2.5 and 5 points after three years, times the 71% of schools that keep it up",
+   "studies": [
+    "wow-scotland-2023",
+    "living-streets-wtso-2025"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "tracker_pts"
+  },
+  {
+   "id": "curb_restriction_pts",
+   "label": "Bell-time curb restriction: fall in TK-5 car share",
+   "kind": "input",
+   "levers": [
+    "curb_restriction"
+   ],
+   "value": 0,
+   "low": 0,
+   "high": 1,
+   "unit": "car share points",
+   "source": "Dundee's before and after, which moved drivers to park and stride, counted as driven in SF's tally",
+   "studies": [
+    "dundee-2011",
+    "angus-liff-2024"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "curb_pts"
+  },
+  {
+   "id": "bike_bus_pts",
+   "label": "Bike bus: fall in car share at the e-bike gate's schools",
+   "kind": "input",
+   "levers": [
+    "bike_bus"
+   ],
+   "value": 0.3,
+   "low": 0,
+   "high": 3,
+   "unit": "car share points",
+   "source": "judgment",
+   "studies": [
+    "simon-i-mas-2024",
+    "mendoza-2017"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "bikebus_pts",
+   "note": "No study has a car outcome; the points are paired with the route's program and cost."
+  },
+  {
+   "id": "ecargo_rate",
+   "label": "E-cargo bike month: share of driving trial families out of the car a year later",
+   "kind": "input",
+   "levers": [
+    "ecargo_month"
+   ],
+   "value": 0.1,
+   "low": 0.03,
+   "high": 0.2,
+   "unit": "share of driving families",
+   "source": "ELEVATE (10 of 49 households bought one within a year); no comparison group",
+   "studies": [
+    "elevate-2025",
+    "ukri-eliveable-2026"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "ecargo_rate"
+  },
+  {
+   "id": "assign_effect",
+   "label": "SFUSD assignment: tally points the adopted option moves at full effect",
+   "kind": "input",
+   "levers": [
+    "assign"
+   ],
+   "value": 1.3,
+   "low": 0.1,
+   "high": 2.2,
+   "unit": "tally points",
+   "source": "SFUSD Study Session #2: Stanford's average elementary distance 1.40 miles today, 1.06 under Neighborhood + Citywide Programs; the range is our judgment",
+   "studies": [],
+   "dataTest": "Stanford distance check in city.json (stanfordCheck): the model's K-5 trips run longer than Stanford's, failing a 0.05-mile tolerance",
+   "rerun": "alone"
+  },
+  {
+   "id": "signs_effect",
+   "label": "15/20 mph school zone limits: share of kids hurt in the 500 ft zone, in the limit's hours, spared",
+   "kind": "causal",
+   "levers": [
+    "calm"
+   ],
+   "value": 0.1,
+   "low": 0.05,
+   "high": 0.25,
+   "unit": "share",
+   "source": "Kokka et al. 2024 (Edinburgh, 10% fewer casualties); high from Wales's 20 mph default (26.2%)",
+   "studies": [
+    "kokka-2024",
+    "wales-20mph-2025",
+    "elvik-2009-speed"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "signs_effect",
+   "reread": {
+    "date": "2026-10-16",
+    "finding": "Reread at 39% of the kids hurt headline (kokka-2024, elvik-2009-speed, wales-20mph-2025). The central 10% holds: Edinburgh measured 10% fewer casualties (95% CI 0% to 19%) from a signs-only limit that moved mean speed 1.3 mph, and Elvik's injured-people exponent of 1.4 gives 5% to 10% at a 1 to 2 mph drop, the size a part-day school zone limit can expect. The 25% high is the weak end: it comes from Wales's first year, with no control group and a 3.8 mph mean speed drop, graded a size mismatch. Edinburgh's own interval would put the high at 19%."
+   }
+  },
+  {
+   "id": "traffic_share",
+   "label": "Fewer school cars cut kids hurt near schools: school cars' share of bell-time traffic on residential streets",
+   "kind": "causal",
+   "levers": [
+    "injury_model"
+   ],
+   "value": 0.05,
+   "low": 0,
+   "high": 0.25,
+   "unit": "share of traffic",
+   "source": "Elvik and Bjornskau's square-root link of crashes to traffic; the share is our inference from the bell-hour check",
+   "studies": [
+    "elvik-bjornskau-2017-volume"
+   ],
+   "dataTest": "passed: DataSF injury crashes within 600 ft of a school at its bells were 290 against 288 expected at the city's clock (ratio 1.01, 0.89 to 1.12), which caps the high at 25%",
+   "rerun": "light",
+   "param": "traffic_share"
+  },
+  {
+   "id": "main_traffic",
+   "label": "Fewer school cars on main streets: share of the residential cut that applies",
+   "kind": "causal",
+   "levers": [
+    "injury_model"
+   ],
+   "value": 0.1,
+   "low": 0.05,
+   "high": 0.25,
+   "unit": "share",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "main_traffic",
+   "rangeBasis": "judgment, set for this log; the model gives no range"
+  },
+  {
+   "id": "risk_walk",
+   "label": "A kid who walks instead of riding in a car: own-risk change per trip",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "school_street",
+    "safer_crossings",
+    "travel_tracker",
+    "curb_restriction"
+   ],
+   "value": -0.5,
+   "low": -1,
+   "high": 0,
+   "unit": "1 minus walk risk over car risk",
+   "source": "Lavoie et al. 2014 (per km), applied per trip",
+   "studies": [
+    "lavoie-2014",
+    "schofield-2008"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "gain_walk",
+   "note": "Risk per trip, not per mile: the switch replaces a trip, and a school walk is shorter than the drive it replaces."
+  },
+  {
+   "id": "risk_bike",
+   "label": "A kid who bikes on ordinary streets instead of a car: own-risk change per trip",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "bike_switch",
+    "bike_bus",
+    "ecargo_month"
+   ],
+   "value": -2,
+   "low": -4,
+   "high": -1,
+   "unit": "1 minus bike risk over car risk",
+   "source": "Lavoie et al. 2014 (per km), applied per trip",
+   "studies": [
+    "lavoie-2014",
+    "schofield-2008"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "gain_bike"
+  },
+  {
+   "id": "risk_sepbike",
+   "label": "A kid who bikes on an e-bike voucher instead of a car: own-risk change per trip",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "ebike"
+   ],
+   "value": -1,
+   "low": -2,
+   "high": -0.5,
+   "unit": "1 minus bike risk over car risk",
+   "source": "half the ordinary-street excess: our judgment, with no child e-bike injury study",
+   "studies": [
+    "lavoie-2014"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "gain_sepbike"
+  },
+  {
+   "id": "risk_track",
+   "label": "A kid who bikes on a new bikeway set's protected lanes: their risk against a major street with parked cars and no bike lane",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "seg"
+   ],
+   "value": 0.11,
+   "low": 0.02,
+   "high": 0.54,
+   "unit": "adjusted odds ratio",
+   "source": "Teschke et al. 2012, cycle tracks; the ordinary-street bike risk stands in for the major street, our inference",
+   "studies": [
+    "teschke-2012",
+    "lavoie-2014"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "or_track"
+  },
+  {
+   "id": "risk_calmbike",
+   "label": "A kid who bikes on a calmed or shared street (safety upgrades, School Connectors, a bikeway set's other miles): their risk against a major street with parked cars and no bike lane",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "safer_crossings",
+    "connector",
+    "seg"
+   ],
+   "value": 0.51,
+   "low": 0.31,
+   "high": 0.84,
+   "unit": "adjusted odds ratio",
+   "source": "Teschke et al. 2012, local streets; the ordinary-street bike risk stands in for the major street, our inference",
+   "studies": [
+    "teschke-2012",
+    "lavoie-2014"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "or_local"
+  },
+  {
+   "id": "risk_bus",
+   "label": "A kid on a yellow bus instead of a car: own-risk change per trip",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "yellow_bus"
+   ],
+   "value": 0.75,
+   "low": 0.65,
+   "high": 0.8,
+   "unit": "1 minus bus risk over car risk",
+   "source": "TRB Special Report 269, 2002",
+   "studies": [
+    "trb-2002-sr269"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "gain_bus"
+  },
+  {
+   "id": "risk_muni",
+   "label": "A kid on Muni instead of a car: own-risk change per trip",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "caregiver_muni"
+   ],
+   "value": 0.15,
+   "low": 0,
+   "high": 0.25,
+   "unit": "1 minus Muni risk over car risk",
+   "source": "Morency et al. 2018 (bus occupants hurt 3.7 times less often per km), less the walk to the stop: our judgment",
+   "studies": [
+    "morency-2018"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "gain_muni"
+  },
+  {
+   "id": "risk_walking_bus",
+   "label": "A supervised walker instead of a car: own-risk change per trip",
+   "kind": "causal",
+   "levers": [
+    "injury_model",
+    "walking_bus"
+   ],
+   "value": 0,
+   "low": -0.5,
+   "high": 0.3,
+   "unit": "1 minus risk ratio",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "gain_wb"
+  },
+  {
+   "id": "xeff_walk",
+   "label": "Safety upgrades: share of kids hurt walking within the reach spared",
+   "kind": "causal",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 0.4,
+   "low": 0.2,
+   "high": 0.55,
+   "unit": "share",
+   "source": "Barcelona Safe Routes (0.57 against 1.05), DiMaggio and Li 2013 (44% fewer), NYC DOT curb extensions",
+   "studies": [
+    "perez-2023-barcelona",
+    "dimaggio-li-2013",
+    "nycdot-2019-safety-treatments"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "xeff_walk"
+  },
+  {
+   "id": "xeff_bike",
+   "label": "Safety upgrades: share of kids hurt biking or on a scooter within the reach spared",
+   "kind": "causal",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 0.25,
+   "low": 0,
+   "high": 0.4,
+   "unit": "share",
+   "source": "judgment from the pooled walking-and-biking figures (18 states 0.77)",
+   "studies": [
+    "dimaggio-frangos-li-2016-cdc",
+    "texas-pooled-0-86"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "xeff_bike"
+  },
+  {
+   "id": "xeff_car",
+   "label": "Safety upgrades: share of kids hurt in a car within the reach spared",
+   "kind": "causal",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 0.12,
+   "low": 0,
+   "high": 0.25,
+   "unit": "share",
+   "source": "judgment from leading pedestrian intervals (FHWA CMF 9911, 0.86) and NYC DOT's 10% to 13.5%; low 0 since beacons may add rear-end crashes",
+   "studies": [
+    "fhwa-cmf-9911-lpi",
+    "nycdot-2019-safety-treatments",
+    "fhwa-2025-rrfb"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "xeff_car"
+  },
+  {
+   "id": "xoff",
+   "label": "Safety upgrades outside the studied school-travel hours: share of the measured effect",
+   "kind": "causal",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 0.5,
+   "low": 0,
+   "high": 1,
+   "unit": "share",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "xoff",
+   "rangeBasis": "the natural bounds: none to all of the effect"
+  },
+  {
+   "id": "calm_effect",
+   "label": "Calmed residential streets: share of kids hurt there spared",
+   "kind": "causal",
+   "levers": [
+    "safer_crossings",
+    "seg"
+   ],
+   "value": 0.4,
+   "low": 0.2,
+   "high": 0.55,
+   "unit": "share",
+   "source": "Grundy et al. 2009, London 20 mph zones",
+   "studies": [
+    "grundy-2009"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "calm_effect"
+  },
+  {
+   "id": "assign_hurt",
+   "label": "SFUSD assignment: kids hurt a year spared at full effect",
+   "kind": "causal",
+   "levers": [
+    "assign"
+   ],
+   "value": 0.4,
+   "low": 0,
+   "high": 1,
+   "unit": "kids hurt a year",
+   "source": "our estimate: car miles cut 13.6% net of new walkers' risk",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "assign_hurt"
+  },
+  {
+   "id": "injury_base",
+   "label": "Kids 5 to 18 hurt on SF weekdays, 6 am to 6 pm, a year",
+   "kind": "input",
+   "levers": [
+    "injury_model"
+   ],
+   "value": 106.75,
+   "low": 106.75,
+   "high": 106.75,
+   "unit": "kids hurt a year",
+   "source": "DataSF crash victims, 2021-22 to 2024-25 (https://data.sfgov.org/d/nwes-mmgh)",
+   "studies": [],
+   "dataTest": "a count of the city's own records; the 4 school years are the window",
+   "rerun": "none",
+   "rangeBasis": "a measured count, no range"
+  },
+  {
+   "id": "bell_share",
+   "label": "Share of child walking and biking crashes within 600 ft on school days that fell at bell hours",
+   "kind": "input",
+   "levers": [
+    "injury_model"
+   ],
+   "value": 0.2675,
+   "low": 0.2675,
+   "high": 0.2675,
+   "unit": "share",
+   "source": "DataSF crashes (https://data.sfgov.org/d/ubvf-ztfx), 65 of 243",
+   "studies": [],
+   "dataTest": "a count of the city's own records",
+   "rerun": "none",
+   "rangeBasis": "a measured share, no range"
+  },
+  {
+   "id": "cost_schoolStreet",
+   "label": "Cost: School Street activation",
+   "kind": "cost",
+   "levers": [
+    "school_street"
+   ],
+   "value": 30000,
+   "low": 13500,
+   "high": 60000,
+   "unit": "$ a school a year",
+   "source": "SFMTA crossing guards at $56 an hour loaded, two staff, 1.5 hours a day, 180 days",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.schoolStreet"
+  },
+  {
+   "id": "cost_ssSetup",
+   "label": "Cost: School Street set-up",
+   "kind": "cost",
+   "levers": [
+    "school_street"
+   ],
+   "value": 17000,
+   "low": 6000,
+   "high": 32000,
+   "unit": "$ a school, once",
+   "source": "Hampshire Cabinet, 2024-02-06, para 18",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.ssSetup"
+  },
+  {
+   "id": "cost_walkingBus",
+   "label": "Cost: Walking school bus",
+   "kind": "cost",
+   "levers": [
+    "walking_bus"
+   ],
+   "value": 25000,
+   "low": 5000,
+   "high": 60000,
+   "unit": "$ a school a year",
+   "source": "paid leaders as in Johnson et al. 2024's trial; volunteer low; Cordoba's paid daily bus high",
+   "studies": [
+    "johnson-2024",
+    "perez-martin-2018-cordoba"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.walkingBus",
+   "reread": {
+    "date": "2026-10-22",
+    "finding": "Reread 2026-10-22 at 35% of the yearly cost headline, once the private schools joined the run: the $25,000 to $60,000 swing adds $5.7M a year, so about 163 schools carry the program. The high reproduces from Perez-Martin et al. 2018 (perez-martin-2018-cordoba): EUR 8,350 over 59 days at EUR 13 an hour is about 11 monitor hours a day, and at $30 an hour for 180 days that is $58,800. The central $25,000 and the volunteer low of $5,000 have no cost figure behind them in the rows they cite: johnson-2024 records the trial's effect but no cost, so the central is our judgment and stays one."
+   }
+  },
+  {
+   "id": "cost_saferCrossings",
+   "label": "Cost: Safety upgrades for walking, one block",
+   "kind": "cost",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 200000,
+   "low": 60000,
+   "high": 400000,
+   "unit": "$ a school, once",
+   "source": "SF's ~$60,000 walk audits (School Access Plan p. 46) to Monterey Boulevard's $290,000 construction line",
+   "studies": [
+    "austin-streets-2025"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.saferCrossings",
+   "reread": {
+    "date": "2026-10-15",
+    "finding": "Reread in the uncertainty-log grading pass (austin-streets-2025). The sources disagree on the high: the cost note takes $400,000 a school from Austin's STREETS program, the one study that found no walking or biking gain, while the About page sets the range from SF's ~$60,000 walk audits to Monterey Boulevard's $290,000. The central $200,000 sits inside both; the high should be one source, and it needs Bryan's ruling."
+   }
+  },
+  {
+   "id": "cost_calmStreets",
+   "label": "Cost: Calming residential streets near schools",
+   "kind": "cost",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 10,
+   "low": 5,
+   "high": 20,
+   "unit": "$M once, citywide",
+   "source": "Bryan's budget, 2026-10-13",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.calmStreets"
+  },
+  {
+   "id": "cost_calmPerSchool",
+   "label": "Cost: School zone signs",
+   "kind": "cost",
+   "levers": [
+    "calm"
+   ],
+   "value": 7500,
+   "low": 2000,
+   "high": 16000,
+   "unit": "$ a school, once",
+   "source": "SFMTA 2012 school speed zones, $361,700 for about 803 signs at 181 schools",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.calmPerSchool"
+  },
+  {
+   "id": "cost_busPerRider",
+   "label": "Cost: School shuttle loops",
+   "kind": "cost",
+   "levers": [
+    "yellow_bus"
+   ],
+   "value": 3000,
+   "low": 2050,
+   "high": 3400,
+   "unit": "$ a rider a year",
+   "source": "SFUSD's $8.6M for 19 buses and 1,520 riders (School Access Plan p. 42); PPSSF for the high",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.busPerRider"
+  },
+  {
+   "id": "cost_muniPerRider",
+   "label": "Cost: Free Muni for caregivers",
+   "kind": "cost",
+   "levers": [
+    "caregiver_muni"
+   ],
+   "value": 860,
+   "low": 504,
+   "high": 1026,
+   "unit": "$ a rider a year",
+   "source": "SFMTA fares from 2025-07-01: $86 monthly pass, ten months",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.muniPerRider"
+  },
+  {
+   "id": "cost_carpool",
+   "label": "Cost: Carpool matching",
+   "kind": "cost",
+   "levers": [
+    "carpool"
+   ],
+   "value": 150000,
+   "low": 100000,
+   "high": 250000,
+   "unit": "$ a year citywide",
+   "source": "School Access Plan p. 29",
+   "studies": [
+    "contra-costa-schoolpool-2003"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.carpool"
+  },
+  {
+   "id": "cost_ebike",
+   "label": "Cost: E-bike voucher",
+   "kind": "cost",
+   "levers": [
+    "ebike"
+   ],
+   "value": 1500,
+   "low": 1000,
+   "high": 2000,
+   "unit": "$ a voucher, once",
+   "source": "our estimate above Denver's 2022 rebates of $840 to $990",
+   "studies": [
+    "denver-ebike-2022-cost"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.ebike"
+  },
+  {
+   "id": "cost_ebikeProgram",
+   "label": "Cost: E-bike program",
+   "kind": "cost",
+   "levers": [
+    "ebike"
+   ],
+   "value": 150000,
+   "low": 100000,
+   "high": 200000,
+   "unit": "$ a year citywide",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.ebikeProgram"
+  },
+  {
+   "id": "cost_travelTracker",
+   "label": "Cost: Daily travel tracker",
+   "kind": "cost",
+   "levers": [
+    "travel_tracker"
+   ],
+   "value": 5000,
+   "low": 2000,
+   "high": 15000,
+   "unit": "$ a school a year",
+   "source": "Living Streets Scotland, about 2,500 pounds a school in 2022-23, without staff time",
+   "studies": [
+    "wow-scotland-2023"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.travelTracker"
+  },
+  {
+   "id": "cost_curbRestriction",
+   "label": "Cost: Bell-time curb restriction",
+   "kind": "cost",
+   "levers": [
+    "curb_restriction"
+   ],
+   "value": 5000,
+   "low": 2000,
+   "high": 20000,
+   "unit": "$ a school, once",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.curbRestriction"
+  },
+  {
+   "id": "cost_bikeBus",
+   "label": "Cost: Bike bus",
+   "kind": "cost",
+   "levers": [
+    "bike_bus"
+   ],
+   "value": 4500,
+   "low": 0,
+   "high": 23000,
+   "unit": "$ a route a year",
+   "source": "our estimate, paired with the effect: volunteer $0, weekly chaperones $4,500, daily paid $23,000",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.bikeBus"
+  },
+  {
+   "id": "cost_ecargoTrial",
+   "label": "Cost: E-cargo bike month trial",
+   "kind": "cost",
+   "levers": [
+    "ecargo_month"
+   ],
+   "value": 400,
+   "low": 190,
+   "high": 900,
+   "unit": "$ a family trial",
+   "source": "Wombi rental rates; Merri-bek's trials ran the same design",
+   "studies": [
+    "merri-bek-2023",
+    "psu-ebike-libraries-2025"
+   ],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.ecargoTrial"
+  },
+  {
+   "id": "cost_ecargoProgram",
+   "label": "Cost: E-cargo bike month staff",
+   "kind": "cost",
+   "levers": [
+    "ecargo_month"
+   ],
+   "value": 150000,
+   "low": 100000,
+   "high": 200000,
+   "unit": "$ a year citywide",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.ecargoProgram"
+  },
+  {
+   "id": "cost_connectorSep",
+   "label": "Cost: School Connector on a main street",
+   "kind": "cost",
+   "levers": [
+    "connector",
+    "seg"
+   ],
+   "value": 1.5,
+   "low": 1.0,
+   "high": 2.5,
+   "unit": "$M a mile",
+   "source": "median of five SFMTA quick-build bikeway budgets at Board approval",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.connectorSep",
+   "rangeBasis": "judgment, set for this log; the source gives no range"
+  },
+  {
+   "id": "cost_connectorCalm",
+   "label": "Cost: School Connector on a residential street",
+   "kind": "cost",
+   "levers": [
+    "connector",
+    "seg"
+   ],
+   "value": 0.25,
+   "low": 0.2,
+   "high": 0.72,
+   "unit": "$M a mile",
+   "source": "SFMTA Slow Streets at about $200,000 a mile plus 25%; high a new shared-use path's $0.72M (FHWA 2013, raised 50%)",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "light",
+   "param": "cost.connectorCalm"
+  },
+  {
+   "id": "gap_ft",
+   "label": "Bike switch test: longest gap off the all-ages network",
+   "kind": "input",
+   "levers": [
+    "bike_switch"
+   ],
+   "value": 1000,
+   "low": 500,
+   "high": 1500,
+   "unit": "feet",
+   "source": "Bryan's rule, 2026-10-08",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "sim",
+   "rangeBasis": "judgment, set for this log"
+  },
+  {
+   "id": "within_min",
+   "label": "Bike switch test: the bike within this many minutes of the car",
+   "kind": "input",
+   "levers": [
+    "bike_switch"
+   ],
+   "value": 5,
+   "low": 0,
+   "high": 10,
+   "unit": "minutes",
+   "source": "Bryan's rule, 2026-10-08",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "sim",
+   "rangeBasis": "judgment, set for this log"
+  },
+  {
+   "id": "ebike_faster",
+   "label": "E-bike ride faster than a bike by",
+   "kind": "input",
+   "levers": [
+    "ebike"
+   ],
+   "value": 0.15,
+   "low": 0.1,
+   "high": 0.25,
+   "unit": "share of riding time",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "sim",
+   "rangeBasis": "judgment, set for this log"
+  },
+  {
+   "id": "beta_min",
+   "label": "Mode choice: utility per minute",
+   "kind": "input",
+   "levers": [
+    "bike_switch",
+    "assign"
+   ],
+   "value": -0.07,
+   "low": -0.1,
+   "high": -0.04,
+   "unit": "per minute",
+   "source": "judgment",
+   "studies": [],
+   "dataTest": "passed in part: K-5 car share by walking distance against SFCTA's 2016 Child Transportation Survey (46%, 61%, 59%), with -0.04 and -0.10 shown beside it in validation.json",
+   "rerun": "sim",
+   "rangeBasis": "the two other values validation.json shows"
+  },
+  {
+   "id": "car_speed",
+   "label": "Car speed on the routed network",
+   "kind": "input",
+   "levers": [
+    "bike_switch"
+   ],
+   "value": 13.4,
+   "low": 13.4,
+   "high": 13.4,
+   "unit": "mph",
+   "source": "SFCTA INRIX, Sept 2026, 8-9 AM median",
+   "studies": [],
+   "dataTest": "passed: Google Routes at the bell, 500 trips, fit drive minutes 1.68 + 0.955x",
+   "rerun": "sim",
+   "rangeBasis": "a measured median; the Google fit corrects it"
+  },
+  {
+   "id": "bike_speed",
+   "label": "Bike speed",
+   "kind": "input",
+   "levers": [
+    "bike_switch"
+   ],
+   "value": 8.5,
+   "low": 8.5,
+   "high": 8.5,
+   "unit": "mph",
+   "source": "fit to Google Routes, 500 trips",
+   "studies": [],
+   "dataTest": "passed: Google Routes fit bike minutes 1.07 + 1.175x",
+   "rerun": "sim",
+   "rangeBasis": "a fitted value"
+  },
+  {
+   "id": "busy_crossing",
+   "label": "A route crossing a 4-lane or 35 mph street with no signal is broken",
+   "kind": "causal",
+   "levers": [
+    "bike_switch"
+   ],
+   "value": 4,
+   "low": 4,
+   "high": 6,
+   "unit": "lanes",
+   "source": "Bryan's design rule, 2026-10-14; parents name crossings as their top worry (43% in California's Safe Routes surveys)",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "sim",
+   "rangeBasis": "judgment, set for this log"
+  },
+  {
+   "id": "calm_zone_ft",
+   "label": "Calming reach from the school grounds",
+   "kind": "input",
+   "levers": [
+    "safer_crossings"
+   ],
+   "value": 660,
+   "low": 660,
+   "high": 660,
+   "unit": "feet",
+   "source": "Bryan, 2026-10-13",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "sim",
+   "rangeBasis": "a design choice, no range"
+  },
+  {
+   "id": "bus_today",
+   "label": "SFUSD general-education yellow bus riders today",
+   "kind": "input",
+   "levers": [
+    "yellow_bus"
+   ],
+   "value": 2000,
+   "low": 2000,
+   "high": 2000,
+   "unit": "riders",
+   "source": "SFCTA School Access Plan, May 2023, p. 42",
+   "studies": [],
+   "dataTest": "none: no SF data tests this input",
+   "rerun": "sim",
+   "rangeBasis": "a published count"
+  },
+  {
+   "id": "tally_car_share",
+   "label": "Single-family car share of school trips today, four tally grades",
+   "kind": "input",
+   "levers": [
+    "injury_model",
+    "bike_switch"
+   ],
+   "value": 48.6,
+   "low": 48.6,
+   "high": 48.6,
+   "unit": "%",
+   "source": "SF Safe Routes to School Travel Tally 2024-25",
+   "studies": [],
+   "dataTest": "passed: the model is calibrated to the tally's car share by grade (validation.json)",
+   "rerun": "sim",
+   "rangeBasis": "a measured share"
+  }
+ ]
+}

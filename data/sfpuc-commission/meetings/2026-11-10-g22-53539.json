@@ -1,0 +1,80 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-11-10",
+ "id": "g22-53539",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53539",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-11-11",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of October 27, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Water Enterprise Capital Improvement Program Quarterly Q1 Report FY 2026-27"
+  },
+  {
+   "no": "5b",
+   "title": "Water System Improvement Program Quarterly Q1 Report FY 2026-27"
+  },
+  {
+   "no": "5c",
+   "title": "Wastewater Capital Programs Quarterly Q1 Report FY 2026-27"
+  },
+  {
+   "no": "5d",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "7",
+   "title": "Update on General Manager Selection Process"
+  },
+  {
+   "no": "8",
+   "title": "Approve Alternative B_2 as SFPUC’s preferred configuration for further planning of the Warnerville-Newark Transmission Expansion Project WaNTEP"
+  },
+  {
+   "no": "9",
+   "title": "ward Contract No. HH-1020, Moccasin Dam and Reservoir Long-Term Improvements to the highest-ranked consisting of Myers & Sons Construction, LLC, and Sukut Construction, LLC"
+  },
+  {
+   "no": "10",
+   "title": "Communications"
+  },
+  {
+   "no": "11",
+   "title": "Items initiated by Commissioners"
+  },
+  {
+   "no": "12",
+   "title": "Adjournment"
+  }
+ ],
+ "parser": 2,
+ "body": "sfpuc-commission"
+}

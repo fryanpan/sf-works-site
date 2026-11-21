@@ -1,0 +1,4550 @@
+{
+ "source": "slow-streets",
+ "key": "segments",
+ "fetched_on": "2026-09-28",
+ "meta": {
+  "dataset": "https://data.sf.gov/d/hkz3-itiu"
+ },
+ "records": [
+  {
+   "cnn": "10182000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.0914229,
+   "pts": [
+    [
+     -122.442188,
+     37.771571
+    ],
+    [
+     -122.443836,
+     37.771358
+    ]
+   ]
+  },
+  {
+   "cnn": "10188000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09267360000000001,
+   "pts": [
+    [
+     -122.452055,
+     37.770313
+    ],
+    [
+     -122.453593,
+     37.770117
+    ],
+    [
+     -122.453726,
+     37.770098
+    ]
+   ]
+  },
+  {
+   "cnn": "10187000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09132473,
+   "pts": [
+    [
+     -122.450408,
+     37.770519
+    ],
+    [
+     -122.452055,
+     37.770313
+    ]
+   ]
+  },
+  {
+   "cnn": "10185000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09115887,
+   "pts": [
+    [
+     -122.447123,
+     37.770935
+    ],
+    [
+     -122.448768,
+     37.770731
+    ]
+   ]
+  },
+  {
+   "cnn": "10178000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09269755,
+   "pts": [
+    [
+     -122.435563,
+     37.772418
+    ],
+    [
+     -122.437235,
+     37.772204
+    ]
+   ]
+  },
+  {
+   "cnn": "10181000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09101249,
+   "pts": [
+    [
+     -122.440546,
+     37.771779
+    ],
+    [
+     -122.442188,
+     37.771571
+    ]
+   ]
+  },
+  {
+   "cnn": "10177000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.0909215,
+   "pts": [
+    [
+     -122.433922,
+     37.77262
+    ],
+    [
+     -122.435563,
+     37.772418
+    ]
+   ]
+  },
+  {
+   "cnn": "10176000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.0910429,
+   "pts": [
+    [
+     -122.43228,
+     37.772829
+    ],
+    [
+     -122.433922,
+     37.77262
+    ]
+   ]
+  },
+  {
+   "cnn": "10175000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09153844,
+   "pts": [
+    [
+     -122.430629,
+     37.773039
+    ],
+    [
+     -122.43228,
+     37.772829
+    ]
+   ]
+  },
+  {
+   "cnn": "10174000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09087306,
+   "pts": [
+    [
+     -122.42899,
+     37.773248
+    ],
+    [
+     -122.430629,
+     37.773039
+    ]
+   ]
+  },
+  {
+   "cnn": "10173000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09051676,
+   "pts": [
+    [
+     -122.427357,
+     37.773455
+    ],
+    [
+     -122.42899,
+     37.773248
+    ]
+   ]
+  },
+  {
+   "cnn": "10171000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09719908000000001,
+   "pts": [
+    [
+     -122.423947,
+     37.773889
+    ],
+    [
+     -122.4257,
+     37.773666
+    ]
+   ]
+  },
+  {
+   "cnn": "10180000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09134196,
+   "pts": [
+    [
+     -122.438899,
+     37.77199
+    ],
+    [
+     -122.440546,
+     37.771779
+    ]
+   ]
+  },
+  {
+   "cnn": "10179000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.0922854,
+   "pts": [
+    [
+     -122.437235,
+     37.772204
+    ],
+    [
+     -122.438899,
+     37.77199
+    ]
+   ]
+  },
+  {
+   "cnn": "10172000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.0918807,
+   "pts": [
+    [
+     -122.4257,
+     37.773666
+    ],
+    [
+     -122.427357,
+     37.773455
+    ]
+   ]
+  },
+  {
+   "cnn": "10183000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09420766,
+   "pts": [
+    [
+     -122.443836,
+     37.771358
+    ],
+    [
+     -122.445535,
+     37.771142
+    ]
+   ]
+  },
+  {
+   "cnn": "10184000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.08807328,
+   "pts": [
+    [
+     -122.445535,
+     37.771142
+    ],
+    [
+     -122.447123,
+     37.770935
+    ]
+   ]
+  },
+  {
+   "cnn": "10186000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.09093994,
+   "pts": [
+    [
+     -122.448768,
+     37.770731
+    ],
+    [
+     -122.450408,
+     37.770519
+    ]
+   ]
+  },
+  {
+   "cnn": "10170000",
+   "street": "PAGE ST",
+   "extents": "Stanyan to Gough",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.08537657,
+   "pts": [
+    [
+     -122.422407,
+     37.774085
+    ],
+    [
+     -122.423947,
+     37.773889
+    ]
+   ]
+  },
+  {
+   "cnn": "8014000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.058470760000000004,
+   "pts": [
+    [
+     -122.464693,
+     37.78667
+    ],
+    [
+     -122.46576,
+     37.786627
+    ]
+   ]
+  },
+  {
+   "cnn": "8037000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.030319600000000002,
+   "pts": [
+    [
+     -122.48814,
+     37.785612
+    ],
+    [
+     -122.488201,
+     37.785535
+    ],
+    [
+     -122.488316,
+     37.785329
+    ],
+    [
+     -122.488325,
+     37.785206
+    ]
+   ]
+  },
+  {
+   "cnn": "8018000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.058598120000000004,
+   "pts": [
+    [
+     -122.468975,
+     37.786483
+    ],
+    [
+     -122.470044,
+     37.786437
+    ]
+   ]
+  },
+  {
+   "cnn": "8027000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05863556,
+   "pts": [
+    [
+     -122.477644,
+     37.78608
+    ],
+    [
+     -122.478714,
+     37.786031
+    ]
+   ]
+  },
+  {
+   "cnn": "8036000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.04681459,
+   "pts": [
+    [
+     -122.487286,
+     37.785649
+    ],
+    [
+     -122.48814,
+     37.785612
+    ]
+   ]
+  },
+  {
+   "cnn": "8029000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05890429,
+   "pts": [
+    [
+     -122.479786,
+     37.785983
+    ],
+    [
+     -122.48086,
+     37.785934
+    ]
+   ]
+  },
+  {
+   "cnn": "8023000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.061824290000000004,
+   "pts": [
+    [
+     -122.473255,
+     37.786288
+    ],
+    [
+     -122.474383,
+     37.786238
+    ]
+   ]
+  },
+  {
+   "cnn": "8013000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05897355,
+   "pts": [
+    [
+     -122.463618,
+     37.786722
+    ],
+    [
+     -122.464693,
+     37.78667
+    ]
+   ]
+  },
+  {
+   "cnn": "8020000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05872356,
+   "pts": [
+    [
+     -122.471115,
+     37.786387
+    ],
+    [
+     -122.472185,
+     37.786333
+    ]
+   ]
+  },
+  {
+   "cnn": "8011000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.058972,
+   "pts": [
+    [
+     -122.461471,
+     37.786816
+    ],
+    [
+     -122.462547,
+     37.786768
+    ]
+   ]
+  },
+  {
+   "cnn": "8017000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05901181,
+   "pts": [
+    [
+     -122.467898,
+     37.786533
+    ],
+    [
+     -122.468975,
+     37.786483
+    ]
+   ]
+  },
+  {
+   "cnn": "8010000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.058482280000000005,
+   "pts": [
+    [
+     -122.460404,
+     37.786866
+    ],
+    [
+     -122.461471,
+     37.786816
+    ]
+   ]
+  },
+  {
+   "cnn": "8024000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.06148561,
+   "pts": [
+    [
+     -122.474383,
+     37.786238
+    ],
+    [
+     -122.475504,
+     37.786181
+    ]
+   ]
+  },
+  {
+   "cnn": "8012000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05872935,
+   "pts": [
+    [
+     -122.462547,
+     37.786768
+    ],
+    [
+     -122.463618,
+     37.786722
+    ]
+   ]
+  },
+  {
+   "cnn": "8026000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.0586022,
+   "pts": [
+    [
+     -122.476575,
+     37.786128
+    ],
+    [
+     -122.477644,
+     37.78608
+    ]
+   ]
+  },
+  {
+   "cnn": "8030000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05861713,
+   "pts": [
+    [
+     -122.48086,
+     37.785934
+    ],
+    [
+     -122.481929,
+     37.785884
+    ]
+   ]
+  },
+  {
+   "cnn": "8009000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.06164755,
+   "pts": [
+    [
+     -122.45928,
+     37.786914
+    ],
+    [
+     -122.460404,
+     37.786866
+    ]
+   ]
+  },
+  {
+   "cnn": "8028000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05877752,
+   "pts": [
+    [
+     -122.478714,
+     37.786031
+    ],
+    [
+     -122.479786,
+     37.785983
+    ]
+   ]
+  },
+  {
+   "cnn": "8022000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.03449345,
+   "pts": [
+    [
+     -122.472626,
+     37.786315
+    ],
+    [
+     -122.473255,
+     37.786288
+    ]
+   ]
+  },
+  {
+   "cnn": "8035000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05825536,
+   "pts": [
+    [
+     -122.486224,
+     37.785697
+    ],
+    [
+     -122.487286,
+     37.785649
+    ]
+   ]
+  },
+  {
+   "cnn": "8015000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.058738780000000004,
+   "pts": [
+    [
+     -122.46576,
+     37.786627
+    ],
+    [
+     -122.465922,
+     37.786608
+    ],
+    [
+     -122.46683,
+     37.786568
+    ]
+   ]
+  },
+  {
+   "cnn": "8016000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05856662,
+   "pts": [
+    [
+     -122.46683,
+     37.786568
+    ],
+    [
+     -122.466949,
+     37.786576
+    ],
+    [
+     -122.467898,
+     37.786533
+    ]
+   ]
+  },
+  {
+   "cnn": "8034000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05898373,
+   "pts": [
+    [
+     -122.485148,
+     37.785746
+    ],
+    [
+     -122.486224,
+     37.785697
+    ]
+   ]
+  },
+  {
+   "cnn": "8033000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05856019,
+   "pts": [
+    [
+     -122.48408,
+     37.785795
+    ],
+    [
+     -122.485148,
+     37.785746
+    ]
+   ]
+  },
+  {
+   "cnn": "8032000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05890833,
+   "pts": [
+    [
+     -122.483005,
+     37.785835
+    ],
+    [
+     -122.48408,
+     37.785795
+    ]
+   ]
+  },
+  {
+   "cnn": "8031000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05897031,
+   "pts": [
+    [
+     -122.481929,
+     37.785884
+    ],
+    [
+     -122.483005,
+     37.785835
+    ]
+   ]
+  },
+  {
+   "cnn": "8025000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.05874853,
+   "pts": [
+    [
+     -122.475504,
+     37.786181
+    ],
+    [
+     -122.476575,
+     37.786128
+    ]
+   ]
+  },
+  {
+   "cnn": "8021000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.02414244,
+   "pts": [
+    [
+     -122.472185,
+     37.786333
+    ],
+    [
+     -122.472626,
+     37.786315
+    ]
+   ]
+  },
+  {
+   "cnn": "8019000",
+   "street": "LAKE ST",
+   "extents": "28th Avenue to Arguello Boulevard",
+   "status": "Implemented",
+   "phase": "1",
+   "install_date": "2020-04-30",
+   "len_mi": 0.058714050000000004,
+   "pts": [
+    [
+     -122.470044,
+     37.786437
+    ],
+    [
+     -122.471115,
+     37.786387
+    ]
+   ]
+  },
+  {
+   "cnn": "6278000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.09100856,
+   "pts": [
+    [
+     -122.441866,
+     37.7783
+    ],
+    [
+     -122.443507,
+     37.778089
+    ]
+   ]
+  },
+  {
+   "cnn": "6277000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.09162146,
+   "pts": [
+    [
+     -122.440213,
+     37.778511
+    ],
+    [
+     -122.441866,
+     37.7783
+    ]
+   ]
+  },
+  {
+   "cnn": "6279000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.09133498,
+   "pts": [
+    [
+     -122.443507,
+     37.778089
+    ],
+    [
+     -122.445156,
+     37.777887
+    ]
+   ]
+  },
+  {
+   "cnn": "6280000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.09375834,
+   "pts": [
+    [
+     -122.445156,
+     37.777887
+    ],
+    [
+     -122.446846,
+     37.777669
+    ]
+   ]
+  },
+  {
+   "cnn": "1216000",
+   "street": "23RD AVE",
+   "extents": "Lake to Cabrillo",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.12886334,
+   "pts": [
+    [
+     -122.482318,
+     37.7764
+    ],
+    [
+     -122.482184,
+     37.774534
+    ]
+   ]
+  },
+  {
+   "cnn": "1215000",
+   "street": "23RD AVE",
+   "extents": "Lake to Cabrillo",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.12869759,
+   "pts": [
+    [
+     -122.482453,
+     37.778263
+    ],
+    [
+     -122.482318,
+     37.7764
+    ]
+   ]
+  },
+  {
+   "cnn": "1214000",
+   "street": "23RD AVE",
+   "extents": "Lake to Cabrillo",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.13308875,
+   "pts": [
+    [
+     -122.482592,
+     37.780189
+    ],
+    [
+     -122.482453,
+     37.778263
+    ]
+   ]
+  },
+  {
+   "cnn": "1213000",
+   "street": "23RD AVE",
+   "extents": "Lake to Cabrillo",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.13349741,
+   "pts": [
+    [
+     -122.482735,
+     37.782122
+    ],
+    [
+     -122.482592,
+     37.780189
+    ]
+   ]
+  },
+  {
+   "cnn": "1212000",
+   "street": "23RD AVE",
+   "extents": "Lake to Cabrillo",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.12832081,
+   "pts": [
+    [
+     -122.48287,
+     37.783979
+    ],
+    [
+     -122.482735,
+     37.782122
+    ]
+   ]
+  },
+  {
+   "cnn": "1211000",
+   "street": "23RD AVE",
+   "extents": "Lake to Cabrillo",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-09",
+   "len_mi": 0.12817089,
+   "pts": [
+    [
+     -122.483005,
+     37.785835
+    ],
+    [
+     -122.48287,
+     37.783979
+    ]
+   ]
+  },
+  {
+   "cnn": "11843000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11060507,
+   "pts": [
+    [
+     -122.415014,
+     37.750837
+    ],
+    [
+     -122.414861,
+     37.749238
+    ]
+   ]
+  },
+  {
+   "cnn": "11833000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11221078,
+   "pts": [
+    [
+     -122.416549,
+     37.766871
+    ],
+    [
+     -122.416388,
+     37.765249
+    ]
+   ]
+  },
+  {
+   "cnn": "11841000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11022423,
+   "pts": [
+    [
+     -122.41532,
+     37.754034
+    ],
+    [
+     -122.415172,
+     37.75244
+    ]
+   ]
+  },
+  {
+   "cnn": "11840000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.1107056,
+   "pts": [
+    [
+     -122.415473,
+     37.755634
+    ],
+    [
+     -122.41532,
+     37.754034
+    ]
+   ]
+  },
+  {
+   "cnn": "11839000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11054842000000001,
+   "pts": [
+    [
+     -122.415626,
+     37.757232
+    ],
+    [
+     -122.415473,
+     37.755634
+    ]
+   ]
+  },
+  {
+   "cnn": "11835000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11072850000000001,
+   "pts": [
+    [
+     -122.416227,
+     37.763635
+    ],
+    [
+     -122.416078,
+     37.762034
+    ]
+   ]
+  },
+  {
+   "cnn": "11842000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11086952,
+   "pts": [
+    [
+     -122.415172,
+     37.75244
+    ],
+    [
+     -122.415014,
+     37.750837
+    ]
+   ]
+  },
+  {
+   "cnn": "11838000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.1105163,
+   "pts": [
+    [
+     -122.415779,
+     37.75883
+    ],
+    [
+     -122.415626,
+     37.757232
+    ]
+   ]
+  },
+  {
+   "cnn": "11837000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11085939,
+   "pts": [
+    [
+     -122.415929,
+     37.760433
+    ],
+    [
+     -122.415779,
+     37.75883
+    ]
+   ]
+  },
+  {
+   "cnn": "11836000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.1107012,
+   "pts": [
+    [
+     -122.416078,
+     37.762034
+    ],
+    [
+     -122.415929,
+     37.760433
+    ]
+   ]
+  },
+  {
+   "cnn": "11834000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.1116835,
+   "pts": [
+    [
+     -122.416388,
+     37.765249
+    ],
+    [
+     -122.416227,
+     37.763635
+    ]
+   ]
+  },
+  {
+   "cnn": "11832000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.11068323000000001,
+   "pts": [
+    [
+     -122.416707,
+     37.768471
+    ],
+    [
+     -122.416549,
+     37.766871
+    ]
+   ]
+  },
+  {
+   "cnn": "11844000",
+   "street": "SHOTWELL ST",
+   "extents": "14th St to Cesar Chavez",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.07447908,
+   "pts": [
+    [
+     -122.414861,
+     37.749238
+    ],
+    [
+     -122.414824,
+     37.748851
+    ],
+    [
+     -122.414975,
+     37.748783
+    ],
+    [
+     -122.414919,
+     37.748231
+    ]
+   ]
+  },
+  {
+   "cnn": "11539000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.055407660000000004,
+   "pts": [
+    [
+     -122.428883,
+     37.743565
+    ],
+    [
+     -122.428806,
+     37.742764
+    ]
+   ]
+  },
+  {
+   "cnn": "11537000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05548335,
+   "pts": [
+    [
+     -122.429037,
+     37.745165
+    ],
+    [
+     -122.428959,
+     37.744363
+    ]
+   ]
+  },
+  {
+   "cnn": "11532000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05502842,
+   "pts": [
+    [
+     -122.429423,
+     37.749158
+    ],
+    [
+     -122.429346,
+     37.748362
+    ]
+   ]
+  },
+  {
+   "cnn": "11531000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05579342,
+   "pts": [
+    [
+     -122.4295,
+     37.749965
+    ],
+    [
+     -122.429423,
+     37.749158
+    ]
+   ]
+  },
+  {
+   "cnn": "11527000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05509005,
+   "pts": [
+    [
+     -122.429808,
+     37.753158
+    ],
+    [
+     -122.429731,
+     37.752362
+    ]
+   ]
+  },
+  {
+   "cnn": "11530000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05516179,
+   "pts": [
+    [
+     -122.429577,
+     37.750762
+    ],
+    [
+     -122.4295,
+     37.749965
+    ]
+   ]
+  },
+  {
+   "cnn": "11534000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05543994,
+   "pts": [
+    [
+     -122.42927,
+     37.747564
+    ],
+    [
+     -122.429193,
+     37.746763
+    ]
+   ]
+  },
+  {
+   "cnn": "11533000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05518113,
+   "pts": [
+    [
+     -122.429346,
+     37.748362
+    ],
+    [
+     -122.42927,
+     37.747564
+    ]
+   ]
+  },
+  {
+   "cnn": "11528000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05470814,
+   "pts": [
+    [
+     -122.429731,
+     37.752362
+    ],
+    [
+     -122.429659,
+     37.751571
+    ]
+   ]
+  },
+  {
+   "cnn": "11536000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.0549781,
+   "pts": [
+    [
+     -122.429116,
+     37.74596
+    ],
+    [
+     -122.429037,
+     37.745165
+    ]
+   ]
+  },
+  {
+   "cnn": "11540000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05535528,
+   "pts": [
+    [
+     -122.428806,
+     37.742764
+    ],
+    [
+     -122.428729,
+     37.741964
+    ]
+   ]
+  },
+  {
+   "cnn": "11538000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05518937,
+   "pts": [
+    [
+     -122.428959,
+     37.744363
+    ],
+    [
+     -122.428883,
+     37.743565
+    ]
+   ]
+  },
+  {
+   "cnn": "11535000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.05553317,
+   "pts": [
+    [
+     -122.429193,
+     37.746763
+    ],
+    [
+     -122.429155,
+     37.74636
+    ],
+    [
+     -122.429116,
+     37.74596
+    ]
+   ]
+  },
+  {
+   "cnn": "11529000",
+   "street": "SANCHEZ ST",
+   "extents": "23rd St to 30th St",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-05-19",
+   "len_mi": 0.055964480000000004,
+   "pts": [
+    [
+     -122.429659,
+     37.751571
+    ],
+    [
+     -122.429577,
+     37.750762
+    ]
+   ]
+  },
+  {
+   "cnn": "11969000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.08712814,
+   "pts": [
+    [
+     -122.408052,
+     37.7278
+    ],
+    [
+     -122.407556,
+     37.726599
+    ]
+   ]
+  },
+  {
+   "cnn": "11967000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.0870832,
+   "pts": [
+    [
+     -122.409044,
+     37.730203
+    ],
+    [
+     -122.408549,
+     37.729003
+    ]
+   ]
+  },
+  {
+   "cnn": "11970000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.08712809,
+   "pts": [
+    [
+     -122.407556,
+     37.726599
+    ],
+    [
+     -122.407056,
+     37.7254
+    ]
+   ]
+  },
+  {
+   "cnn": "11972000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.04630771,
+   "pts": [
+    [
+     -122.406553,
+     37.724194
+    ],
+    [
+     -122.406287,
+     37.723557
+    ]
+   ]
+  },
+  {
+   "cnn": "11966000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.07637902,
+   "pts": [
+    [
+     -122.409478,
+     37.731255
+    ],
+    [
+     -122.409044,
+     37.730203
+    ]
+   ]
+  },
+  {
+   "cnn": "11968000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.08732573,
+   "pts": [
+    [
+     -122.408549,
+     37.729003
+    ],
+    [
+     -122.408052,
+     37.7278
+    ]
+   ]
+  },
+  {
+   "cnn": "11971000",
+   "street": "SOMERSET ST",
+   "extents": "Silver to Woolsey",
+   "status": "Implemented",
+   "phase": "2",
+   "install_date": "2020-06-01",
+   "len_mi": 0.08760629,
+   "pts": [
+    [
+     -122.407056,
+     37.7254
+    ],
+    [
+     -122.406553,
+     37.724194
+    ]
+   ]
+  },
+  {
+   "cnn": "3498000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.0587854,
+   "pts": [
+    [
+     -122.490651,
+     37.774143
+    ],
+    [
+     -122.491723,
+     37.774094
+    ]
+   ]
+  },
+  {
+   "cnn": "3511000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.0584994,
+   "pts": [
+    [
+     -122.50458,
+     37.773505
+    ],
+    [
+     -122.505647,
+     37.773456
+    ]
+   ]
+  },
+  {
+   "cnn": "3503000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05852959,
+   "pts": [
+    [
+     -122.496015,
+     37.773898
+    ],
+    [
+     -122.497082,
+     37.773849
+    ]
+   ]
+  },
+  {
+   "cnn": "3501000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05871917,
+   "pts": [
+    [
+     -122.493868,
+     37.773996
+    ],
+    [
+     -122.494939,
+     37.773947
+    ]
+   ]
+  },
+  {
+   "cnn": "3500000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05842167,
+   "pts": [
+    [
+     -122.492802,
+     37.774045
+    ],
+    [
+     -122.493868,
+     37.773996
+    ]
+   ]
+  },
+  {
+   "cnn": "3499000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05916959,
+   "pts": [
+    [
+     -122.491723,
+     37.774094
+    ],
+    [
+     -122.492802,
+     37.774045
+    ]
+   ]
+  },
+  {
+   "cnn": "3497000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05877512,
+   "pts": [
+    [
+     -122.489579,
+     37.774192
+    ],
+    [
+     -122.490651,
+     37.774143
+    ]
+   ]
+  },
+  {
+   "cnn": "3496000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05887681,
+   "pts": [
+    [
+     -122.488506,
+     37.774241
+    ],
+    [
+     -122.489579,
+     37.774192
+    ]
+   ]
+  },
+  {
+   "cnn": "3495000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05879311,
+   "pts": [
+    [
+     -122.487434,
+     37.77429
+    ],
+    [
+     -122.488506,
+     37.774241
+    ]
+   ]
+  },
+  {
+   "cnn": "3494000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.058414020000000004,
+   "pts": [
+    [
+     -122.486368,
+     37.774339
+    ],
+    [
+     -122.487434,
+     37.77429
+    ]
+   ]
+  },
+  {
+   "cnn": "3493000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05874838,
+   "pts": [
+    [
+     -122.485297,
+     37.774388
+    ],
+    [
+     -122.486368,
+     37.774339
+    ]
+   ]
+  },
+  {
+   "cnn": "3492000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05874533,
+   "pts": [
+    [
+     -122.484226,
+     37.774437
+    ],
+    [
+     -122.485297,
+     37.774388
+    ]
+   ]
+  },
+  {
+   "cnn": "3502000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05901886,
+   "pts": [
+    [
+     -122.494939,
+     37.773947
+    ],
+    [
+     -122.496015,
+     37.773898
+    ]
+   ]
+  },
+  {
+   "cnn": "3509000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05885853,
+   "pts": [
+    [
+     -122.502435,
+     37.773604
+    ],
+    [
+     -122.503508,
+     37.773554
+    ]
+   ]
+  },
+  {
+   "cnn": "3508000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05881069,
+   "pts": [
+    [
+     -122.501362,
+     37.773653
+    ],
+    [
+     -122.502435,
+     37.773604
+    ]
+   ]
+  },
+  {
+   "cnn": "3507000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05902474,
+   "pts": [
+    [
+     -122.500286,
+     37.773702
+    ],
+    [
+     -122.501362,
+     37.773653
+    ]
+   ]
+  },
+  {
+   "cnn": "3506000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05853394,
+   "pts": [
+    [
+     -122.499219,
+     37.773751
+    ],
+    [
+     -122.500286,
+     37.773702
+    ]
+   ]
+  },
+  {
+   "cnn": "3504000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05850511,
+   "pts": [
+    [
+     -122.497082,
+     37.773849
+    ],
+    [
+     -122.498149,
+     37.7738
+    ]
+   ]
+  },
+  {
+   "cnn": "3505000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05862988,
+   "pts": [
+    [
+     -122.498149,
+     37.7738
+    ],
+    [
+     -122.499219,
+     37.773751
+    ]
+   ]
+  },
+  {
+   "cnn": "3510000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-20",
+   "len_mi": 0.05876583,
+   "pts": [
+    [
+     -122.503508,
+     37.773554
+    ],
+    [
+     -122.50458,
+     37.773505
+    ]
+   ]
+  },
+  {
+   "cnn": "4121000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09115765,
+   "pts": [
+    [
+     -122.448836,
+     37.788857
+    ],
+    [
+     -122.45048,
+     37.788647
+    ]
+   ]
+  },
+  {
+   "cnn": "4119000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.07705037,
+   "pts": [
+    [
+     -122.445758,
+     37.789248
+    ],
+    [
+     -122.447148,
+     37.789071
+    ]
+   ]
+  },
+  {
+   "cnn": "4118000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09083017,
+   "pts": [
+    [
+     -122.444119,
+     37.789457
+    ],
+    [
+     -122.445758,
+     37.789248
+    ]
+   ]
+  },
+  {
+   "cnn": "4117000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09104227000000001,
+   "pts": [
+    [
+     -122.442476,
+     37.789663
+    ],
+    [
+     -122.444119,
+     37.789457
+    ]
+   ]
+  },
+  {
+   "cnn": "4116000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09258193,
+   "pts": [
+    [
+     -122.440806,
+     37.789872
+    ],
+    [
+     -122.442476,
+     37.789663
+    ]
+   ]
+  },
+  {
+   "cnn": "4115000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09251172,
+   "pts": [
+    [
+     -122.439136,
+     37.790081
+    ],
+    [
+     -122.440806,
+     37.789872
+    ]
+   ]
+  },
+  {
+   "cnn": "4114000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09097574,
+   "pts": [
+    [
+     -122.437495,
+     37.790292
+    ],
+    [
+     -122.439136,
+     37.790081
+    ]
+   ]
+  },
+  {
+   "cnn": "4113000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09125014000000001,
+   "pts": [
+    [
+     -122.435849,
+     37.790502
+    ],
+    [
+     -122.437495,
+     37.790292
+    ]
+   ]
+  },
+  {
+   "cnn": "4120000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09355781,
+   "pts": [
+    [
+     -122.447148,
+     37.789071
+    ],
+    [
+     -122.448836,
+     37.788857
+    ]
+   ]
+  },
+  {
+   "cnn": "4126000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.12558468,
+   "pts": [
+    [
+     -122.457058,
+     37.787809
+    ],
+    [
+     -122.459324,
+     37.787521
+    ]
+   ]
+  },
+  {
+   "cnn": "4125000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09084423,
+   "pts": [
+    [
+     -122.455419,
+     37.788018
+    ],
+    [
+     -122.457058,
+     37.787809
+    ]
+   ]
+  },
+  {
+   "cnn": "4124000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09148348,
+   "pts": [
+    [
+     -122.453769,
+     37.788228
+    ],
+    [
+     -122.455419,
+     37.788018
+    ]
+   ]
+  },
+  {
+   "cnn": "4123000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.0910513,
+   "pts": [
+    [
+     -122.452126,
+     37.788437
+    ],
+    [
+     -122.453769,
+     37.788228
+    ]
+   ]
+  },
+  {
+   "cnn": "4122000",
+   "street": "CLAY ST",
+   "extents": "Arguello to Steiner",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.09125385,
+   "pts": [
+    [
+     -122.45048,
+     37.788647
+    ],
+    [
+     -122.452126,
+     37.788437
+    ]
+   ]
+  },
+  {
+   "cnn": "9609000",
+   "street": "NOE ST",
+   "extents": "Duboce to 18th St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-09-29",
+   "len_mi": 0.0553602,
+   "pts": [
+    [
+     -122.433332,
+     37.766662
+    ],
+    [
+     -122.433255,
+     37.765862
+    ]
+   ]
+  },
+  {
+   "cnn": "9607000",
+   "street": "NOE ST",
+   "extents": "Duboce to 18th St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-09-29",
+   "len_mi": 0.11874241,
+   "pts": [
+    [
+     -122.433572,
+     37.769178
+    ],
+    [
+     -122.433408,
+     37.767462
+    ]
+   ]
+  },
+  {
+   "cnn": "9608000",
+   "street": "NOE ST",
+   "extents": "Duboce to 18th St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-09-29",
+   "len_mi": 0.05530149,
+   "pts": [
+    [
+     -122.433408,
+     37.767462
+    ],
+    [
+     -122.433332,
+     37.766662
+    ]
+   ]
+  },
+  {
+   "cnn": "9610000",
+   "street": "NOE ST",
+   "extents": "Duboce to 18th St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-09-29",
+   "len_mi": 0.05540135,
+   "pts": [
+    [
+     -122.433255,
+     37.765862
+    ],
+    [
+     -122.433179,
+     37.765061
+    ]
+   ]
+  },
+  {
+   "cnn": "2451000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.09013336,
+   "pts": [
+    [
+     -122.427156,
+     37.736685
+    ],
+    [
+     -122.428429,
+     37.735857
+    ]
+   ]
+  },
+  {
+   "cnn": "2450000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.11642173,
+   "pts": [
+    [
+     -122.42551,
+     37.737754
+    ],
+    [
+     -122.427156,
+     37.736685
+    ]
+   ]
+  },
+  {
+   "cnn": "2449000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.03389611,
+   "pts": [
+    [
+     -122.425278,
+     37.738209
+    ],
+    [
+     -122.42551,
+     37.737754
+    ]
+   ]
+  },
+  {
+   "cnn": "2448000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.05965418,
+   "pts": [
+    [
+     -122.42487,
+     37.739011
+    ],
+    [
+     -122.425278,
+     37.738209
+    ]
+   ]
+  },
+  {
+   "cnn": "2447000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.0620578,
+   "pts": [
+    [
+     -122.424503,
+     37.73986
+    ],
+    [
+     -122.424819,
+     37.739076
+    ],
+    [
+     -122.42487,
+     37.739011
+    ]
+   ]
+  },
+  {
+   "cnn": "2453000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.04986642,
+   "pts": [
+    [
+     -122.428994,
+     37.735485
+    ],
+    [
+     -122.429699,
+     37.735027
+    ]
+   ]
+  },
+  {
+   "cnn": "2452000",
+   "street": "ARLINGTON ST",
+   "extents": "Roanoke to Randall",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-11-29",
+   "len_mi": 0.04019646,
+   "pts": [
+    [
+     -122.428429,
+     37.735857
+    ],
+    [
+     -122.428994,
+     37.735485
+    ]
+   ]
+  },
+  {
+   "cnn": "9054000",
+   "street": "MINNESOTA ST",
+   "extents": "Mariposa to 22nd St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.08809255,
+   "pts": [
+    [
+     -122.390698,
+     37.762926
+    ],
+    [
+     -122.390573,
+     37.761652
+    ]
+   ]
+  },
+  {
+   "cnn": "9053000",
+   "street": "MINNESOTA ST",
+   "extents": "Mariposa to 22nd St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.08817504,
+   "pts": [
+    [
+     -122.390817,
+     37.764201
+    ],
+    [
+     -122.390698,
+     37.762926
+    ]
+   ]
+  },
+  {
+   "cnn": "9055000",
+   "street": "MINNESOTA ST",
+   "extents": "Mariposa to 22nd St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.08494059,
+   "pts": [
+    [
+     -122.390573,
+     37.761652
+    ],
+    [
+     -122.390454,
+     37.760424
+    ]
+   ]
+  },
+  {
+   "cnn": "9056000",
+   "street": "MINNESOTA ST",
+   "extents": "Mariposa to 22nd St",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2020-10-05",
+   "len_mi": 0.17970914000000002,
+   "pts": [
+    [
+     -122.390454,
+     37.760424
+    ],
+    [
+     -122.39021,
+     37.757826
+    ]
+   ]
+  },
+  {
+   "cnn": "3834000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04251203,
+   "pts": [
+    [
+     -122.439765,
+     37.722069
+    ],
+    [
+     -122.440109,
+     37.721517
+    ]
+   ]
+  },
+  {
+   "cnn": "3833000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.05114299,
+   "pts": [
+    [
+     -122.43935,
+     37.722733
+    ],
+    [
+     -122.439765,
+     37.722069
+    ]
+   ]
+  },
+  {
+   "cnn": "3832000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.06680042,
+   "pts": [
+    [
+     -122.438809,
+     37.723601
+    ],
+    [
+     -122.43935,
+     37.722733
+    ]
+   ]
+  },
+  {
+   "cnn": "3831000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.01588853,
+   "pts": [
+    [
+     -122.438684,
+     37.723809
+    ],
+    [
+     -122.438809,
+     37.723601
+    ]
+   ]
+  },
+  {
+   "cnn": "3830000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.09773488,
+   "pts": [
+    [
+     -122.437934,
+     37.725094
+    ],
+    [
+     -122.438272,
+     37.724469
+    ],
+    [
+     -122.438684,
+     37.723809
+    ]
+   ]
+  },
+  {
+   "cnn": "3825000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.035127610000000004,
+   "pts": [
+    [
+     -122.434219,
+     37.730227
+    ],
+    [
+     -122.434472,
+     37.730117
+    ],
+    [
+     -122.434677,
+     37.729889
+    ]
+   ]
+  },
+  {
+   "cnn": "3824000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.021144470000000002,
+   "pts": [
+    [
+     -122.433854,
+     37.730328
+    ],
+    [
+     -122.434219,
+     37.730227
+    ]
+   ]
+  },
+  {
+   "cnn": "3821000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04800327,
+   "pts": [
+    [
+     -122.431393,
+     37.731009
+    ],
+    [
+     -122.432221,
+     37.73078
+    ]
+   ]
+  },
+  {
+   "cnn": "3820000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04724561,
+   "pts": [
+    [
+     -122.430578,
+     37.731235
+    ],
+    [
+     -122.431393,
+     37.731009
+    ]
+   ]
+  },
+  {
+   "cnn": "3819000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04710893,
+   "pts": [
+    [
+     -122.429766,
+     37.73146
+    ],
+    [
+     -122.430578,
+     37.731235
+    ]
+   ]
+  },
+  {
+   "cnn": "3818000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04720171,
+   "pts": [
+    [
+     -122.428953,
+     37.731685
+    ],
+    [
+     -122.429766,
+     37.73146
+    ]
+   ]
+  },
+  {
+   "cnn": "3817000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04914596,
+   "pts": [
+    [
+     -122.42819,
+     37.732013
+    ],
+    [
+     -122.428347,
+     37.731853
+    ],
+    [
+     -122.428953,
+     37.731685
+    ]
+   ]
+  },
+  {
+   "cnn": "3823000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04752329,
+   "pts": [
+    [
+     -122.433035,
+     37.730555
+    ],
+    [
+     -122.433854,
+     37.730328
+    ]
+   ]
+  },
+  {
+   "cnn": "3849000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.05113245,
+   "pts": [
+    [
+     -122.448742,
+     37.714773
+    ],
+    [
+     -122.449406,
+     37.714251
+    ]
+   ]
+  },
+  {
+   "cnn": "3847000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04364939,
+   "pts": [
+    [
+     -122.44751,
+     37.715742
+    ],
+    [
+     -122.448076,
+     37.715297
+    ]
+   ]
+  },
+  {
+   "cnn": "3846000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.0436213,
+   "pts": [
+    [
+     -122.446945,
+     37.716187
+    ],
+    [
+     -122.44751,
+     37.715742
+    ]
+   ]
+  },
+  {
+   "cnn": "3843000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.044095050000000004,
+   "pts": [
+    [
+     -122.444706,
+     37.717995
+    ],
+    [
+     -122.445246,
+     37.717521
+    ]
+   ]
+  },
+  {
+   "cnn": "3842000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04322641,
+   "pts": [
+    [
+     -122.444191,
+     37.71847
+    ],
+    [
+     -122.444706,
+     37.717995
+    ]
+   ]
+  },
+  {
+   "cnn": "3841000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.041657730000000004,
+   "pts": [
+    [
+     -122.443696,
+     37.718929
+    ],
+    [
+     -122.444191,
+     37.71847
+    ]
+   ]
+  },
+  {
+   "cnn": "3836000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.05784876,
+   "pts": [
+    [
+     -122.440473,
+     37.720934
+    ],
+    [
+     -122.440701,
+     37.720568
+    ],
+    [
+     -122.440947,
+     37.720184
+    ]
+   ]
+  },
+  {
+   "cnn": "3835000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04486612,
+   "pts": [
+    [
+     -122.440109,
+     37.721517
+    ],
+    [
+     -122.440473,
+     37.720934
+    ]
+   ]
+  },
+  {
+   "cnn": "3829000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.15581254,
+   "pts": [
+    [
+     -122.436805,
+     37.727168
+    ],
+    [
+     -122.437934,
+     37.725094
+    ]
+   ]
+  },
+  {
+   "cnn": "3828000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.11928039,
+   "pts": [
+    [
+     -122.43575,
+     37.728671
+    ],
+    [
+     -122.436372,
+     37.727964
+    ],
+    [
+     -122.436805,
+     37.727168
+    ]
+   ]
+  },
+  {
+   "cnn": "3827000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.05293562,
+   "pts": [
+    [
+     -122.435196,
+     37.7293
+    ],
+    [
+     -122.43575,
+     37.728671
+    ]
+   ]
+  },
+  {
+   "cnn": "3826000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04960652,
+   "pts": [
+    [
+     -122.434677,
+     37.729889
+    ],
+    [
+     -122.435196,
+     37.7293
+    ]
+   ]
+  },
+  {
+   "cnn": "3840000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.045826280000000004,
+   "pts": [
+    [
+     -122.443086,
+     37.719383
+    ],
+    [
+     -122.443696,
+     37.718929
+    ]
+   ]
+  },
+  {
+   "cnn": "3839000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.03354373,
+   "pts": [
+    [
+     -122.442552,
+     37.719621
+    ],
+    [
+     -122.443086,
+     37.719383
+    ]
+   ]
+  },
+  {
+   "cnn": "3838000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.06524816,
+   "pts": [
+    [
+     -122.441401,
+     37.719865
+    ],
+    [
+     -122.442552,
+     37.719621
+    ]
+   ]
+  },
+  {
+   "cnn": "3837000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.03320247,
+   "pts": [
+    [
+     -122.440947,
+     37.720184
+    ],
+    [
+     -122.441401,
+     37.719865
+    ]
+   ]
+  },
+  {
+   "cnn": "3822000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04724706,
+   "pts": [
+    [
+     -122.432221,
+     37.73078
+    ],
+    [
+     -122.433035,
+     37.730555
+    ]
+   ]
+  },
+  {
+   "cnn": "3850000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.03219944,
+   "pts": [
+    [
+     -122.449406,
+     37.714251
+    ],
+    [
+     -122.449823,
+     37.713923
+    ]
+   ]
+  },
+  {
+   "cnn": "3848000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.05134908,
+   "pts": [
+    [
+     -122.448076,
+     37.715297
+    ],
+    [
+     -122.448742,
+     37.714773
+    ]
+   ]
+  },
+  {
+   "cnn": "3845000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.08761294,
+   "pts": [
+    [
+     -122.445808,
+     37.71708
+    ],
+    [
+     -122.446945,
+     37.716187
+    ]
+   ]
+  },
+  {
+   "cnn": "3844000",
+   "street": "CAYUGA AVE",
+   "extents": "Naglee to Rousseau",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-07-31",
+   "len_mi": 0.04325614,
+   "pts": [
+    [
+     -122.445246,
+     37.717521
+    ],
+    [
+     -122.445808,
+     37.71708
+    ]
+   ]
+  },
+  {
+   "cnn": "530000",
+   "street": "12TH AVE",
+   "extents": "Lincoln Way to Lawton",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-19",
+   "len_mi": 0.12893746,
+   "pts": [
+    [
+     -122.469263,
+     37.760171
+    ],
+    [
+     -122.469131,
+     37.758304
+    ]
+   ]
+  },
+  {
+   "cnn": "529000",
+   "street": "12TH AVE",
+   "extents": "Lincoln Way to Lawton",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-19",
+   "len_mi": 0.1287155,
+   "pts": [
+    [
+     -122.469392,
+     37.762034
+    ],
+    [
+     -122.469263,
+     37.760171
+    ]
+   ]
+  },
+  {
+   "cnn": "528000",
+   "street": "12TH AVE",
+   "extents": "Lincoln Way to Lawton",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-19",
+   "len_mi": 0.12860386000000001,
+   "pts": [
+    [
+     -122.469522,
+     37.763896
+    ],
+    [
+     -122.469392,
+     37.762034
+    ]
+   ]
+  },
+  {
+   "cnn": "527000",
+   "street": "12TH AVE",
+   "extents": "Lincoln Way to Lawton",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-19",
+   "len_mi": 0.13032322,
+   "pts": [
+    [
+     -122.469654,
+     37.765783
+    ],
+    [
+     -122.469522,
+     37.763896
+    ]
+   ]
+  },
+  {
+   "cnn": "6866000",
+   "street": "HEARST AVE",
+   "extents": "Ridgewood Avenue to Baden Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-26",
+   "len_mi": 0.12490988,
+   "pts": [
+    [
+     -122.44886,
+     37.73069
+    ],
+    [
+     -122.451141,
+     37.730681
+    ]
+   ]
+  },
+  {
+   "cnn": "6865000",
+   "street": "HEARST AVE",
+   "extents": "Ridgewood Avenue to Baden Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-26",
+   "len_mi": 0.12527275000000002,
+   "pts": [
+    [
+     -122.446573,
+     37.730699
+    ],
+    [
+     -122.44886,
+     37.73069
+    ]
+   ]
+  },
+  {
+   "cnn": "6862000",
+   "street": "HEARST AVE",
+   "extents": "Ridgewood Avenue to Baden Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-26",
+   "len_mi": 0.12479903,
+   "pts": [
+    [
+     -122.439737,
+     37.730733
+    ],
+    [
+     -122.442016,
+     37.730722
+    ]
+   ]
+  },
+  {
+   "cnn": "6864000",
+   "street": "HEARST AVE",
+   "extents": "Ridgewood Avenue to Baden Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-26",
+   "len_mi": 0.12462016000000001,
+   "pts": [
+    [
+     -122.444298,
+     37.730708
+    ],
+    [
+     -122.446573,
+     37.730699
+    ]
+   ]
+  },
+  {
+   "cnn": "6863000",
+   "street": "HEARST AVE",
+   "extents": "Ridgewood Avenue to Baden Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-26",
+   "len_mi": 0.12504267,
+   "pts": [
+    [
+     -122.442016,
+     37.730722
+    ],
+    [
+     -122.444298,
+     37.730708
+    ]
+   ]
+  },
+  {
+   "cnn": "6867000",
+   "street": "HEARST AVE",
+   "extents": "Ridgewood Avenue to Baden Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-26",
+   "len_mi": 0.12421946,
+   "pts": [
+    [
+     -122.451141,
+     37.730681
+    ],
+    [
+     -122.453409,
+     37.730672
+    ]
+   ]
+  },
+  {
+   "cnn": "8561000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06627735,
+   "pts": [
+    [
+     -122.443507,
+     37.778089
+    ],
+    [
+     -122.443699,
+     37.779038
+    ]
+   ]
+  },
+  {
+   "cnn": "8560000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06458562,
+   "pts": [
+    [
+     -122.443321,
+     37.777164
+    ],
+    [
+     -122.443507,
+     37.778089
+    ]
+   ]
+  },
+  {
+   "cnn": "8559000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06553826,
+   "pts": [
+    [
+     -122.443132,
+     37.776226
+    ],
+    [
+     -122.443321,
+     37.777164
+    ]
+   ]
+  },
+  {
+   "cnn": "8558000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06498636,
+   "pts": [
+    [
+     -122.442945,
+     37.775296
+    ],
+    [
+     -122.443132,
+     37.776226
+    ]
+   ]
+  },
+  {
+   "cnn": "8557000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06543881,
+   "pts": [
+    [
+     -122.442755,
+     37.774359
+    ],
+    [
+     -122.442945,
+     37.775296
+    ]
+   ]
+  },
+  {
+   "cnn": "8556000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06529172,
+   "pts": [
+    [
+     -122.442565,
+     37.773424
+    ],
+    [
+     -122.442755,
+     37.774359
+    ]
+   ]
+  },
+  {
+   "cnn": "8554000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06521053,
+   "pts": [
+    [
+     -122.441998,
+     37.770638
+    ],
+    [
+     -122.442188,
+     37.771571
+    ]
+   ]
+  },
+  {
+   "cnn": "8555000",
+   "street": "LYON ST",
+   "extents": "Turk Street to Haight Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "2021-07-06",
+   "len_mi": 0.06520191,
+   "pts": [
+    [
+     -122.442188,
+     37.771571
+    ],
+    [
+     -122.442378,
+     37.772504
+    ]
+   ]
+  },
+  {
+   "cnn": "1198000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.03488715,
+   "pts": [
+    [
+     -122.424823,
+     37.755075
+    ],
+    [
+     -122.425457,
+     37.755029
+    ]
+   ]
+  },
+  {
+   "cnn": "1199000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.06460517,
+   "pts": [
+    [
+     -122.425457,
+     37.755029
+    ],
+    [
+     -122.426634,
+     37.754962
+    ]
+   ]
+  },
+  {
+   "cnn": "1182000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.0516355,
+   "pts": [
+    [
+     -122.409433,
+     37.755998
+    ],
+    [
+     -122.410373,
+     37.755942
+    ]
+   ]
+  },
+  {
+   "cnn": "1183000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.04938302,
+   "pts": [
+    [
+     -122.410373,
+     37.755942
+    ],
+    [
+     -122.411273,
+     37.755888
+    ]
+   ]
+  },
+  {
+   "cnn": "1184000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.05080747,
+   "pts": [
+    [
+     -122.411273,
+     37.755888
+    ],
+    [
+     -122.412198,
+     37.755833
+    ]
+   ]
+  },
+  {
+   "cnn": "1185000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.06019815,
+   "pts": [
+    [
+     -122.412198,
+     37.755833
+    ],
+    [
+     -122.413294,
+     37.755766
+    ]
+   ]
+  },
+  {
+   "cnn": "1186000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.0600551,
+   "pts": [
+    [
+     -122.413294,
+     37.755766
+    ],
+    [
+     -122.414388,
+     37.755699
+    ]
+   ]
+  },
+  {
+   "cnn": "1187000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.05961935,
+   "pts": [
+    [
+     -122.414388,
+     37.755699
+    ],
+    [
+     -122.415473,
+     37.755634
+    ]
+   ]
+  },
+  {
+   "cnn": "1188000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.06004185,
+   "pts": [
+    [
+     -122.415473,
+     37.755634
+    ],
+    [
+     -122.416567,
+     37.755568
+    ]
+   ]
+  },
+  {
+   "cnn": "1189000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.05998628,
+   "pts": [
+    [
+     -122.416567,
+     37.755568
+    ],
+    [
+     -122.417659,
+     37.755502
+    ]
+   ]
+  },
+  {
+   "cnn": "1190000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.05977929,
+   "pts": [
+    [
+     -122.417659,
+     37.755502
+    ],
+    [
+     -122.418748,
+     37.755437
+    ]
+   ]
+  },
+  {
+   "cnn": "1191000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.06099917,
+   "pts": [
+    [
+     -122.418748,
+     37.755437
+    ],
+    [
+     -122.419858,
+     37.755366
+    ]
+   ]
+  },
+  {
+   "cnn": "1192000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.060767510000000004,
+   "pts": [
+    [
+     -122.419858,
+     37.755366
+    ],
+    [
+     -122.420964,
+     37.755295
+    ]
+   ]
+  },
+  {
+   "cnn": "1193000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.02586426,
+   "pts": [
+    [
+     -122.420964,
+     37.755295
+    ],
+    [
+     -122.421435,
+     37.755268
+    ]
+   ]
+  },
+  {
+   "cnn": "1194000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.09583423,
+   "pts": [
+    [
+     -122.421435,
+     37.755268
+    ],
+    [
+     -122.423181,
+     37.75517
+    ]
+   ]
+  },
+  {
+   "cnn": "1195000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.03163413,
+   "pts": [
+    [
+     -122.423181,
+     37.75517
+    ],
+    [
+     -122.423757,
+     37.755137
+    ]
+   ]
+  },
+  {
+   "cnn": "1196000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.02923964,
+   "pts": [
+    [
+     -122.423757,
+     37.755137
+    ],
+    [
+     -122.42429,
+     37.755106
+    ]
+   ]
+  },
+  {
+   "cnn": "1197000",
+   "street": "22ND ST",
+   "extents": "Bryant to Chattanooga",
+   "status": "Planned",
+   "phase": null,
+   "install_date": null,
+   "len_mi": 0.02925921,
+   "pts": [
+    [
+     -122.42429,
+     37.755106
+    ],
+    [
+     -122.424823,
+     37.755075
+    ]
+   ]
+  },
+  {
+   "cnn": "1044000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.05453857,
+   "pts": [
+    [
+     -122.406947,
+     37.759365
+    ],
+    [
+     -122.40794,
+     37.759305
+    ]
+   ]
+  },
+  {
+   "cnn": "1045000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.05292136,
+   "pts": [
+    [
+     -122.40794,
+     37.759305
+    ],
+    [
+     -122.408904,
+     37.759247
+    ]
+   ]
+  },
+  {
+   "cnn": "1046000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.047578010000000004,
+   "pts": [
+    [
+     -122.408904,
+     37.759247
+    ],
+    [
+     -122.40977,
+     37.759194
+    ]
+   ]
+  },
+  {
+   "cnn": "1047000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.05427913,
+   "pts": [
+    [
+     -122.40977,
+     37.759194
+    ],
+    [
+     -122.410759,
+     37.759134
+    ]
+   ]
+  },
+  {
+   "cnn": "1048000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.045101590000000004,
+   "pts": [
+    [
+     -122.410759,
+     37.759134
+    ],
+    [
+     -122.41158,
+     37.759084
+    ]
+   ]
+  },
+  {
+   "cnn": "1049000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.050581350000000004,
+   "pts": [
+    [
+     -122.41158,
+     37.759084
+    ],
+    [
+     -122.412501,
+     37.759028
+    ]
+   ]
+  },
+  {
+   "cnn": "1050000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.060339500000000004,
+   "pts": [
+    [
+     -122.412501,
+     37.759028
+    ],
+    [
+     -122.4136,
+     37.758962
+    ]
+   ]
+  },
+  {
+   "cnn": "1051000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.05987074,
+   "pts": [
+    [
+     -122.4136,
+     37.758962
+    ],
+    [
+     -122.41469,
+     37.758896
+    ]
+   ]
+  },
+  {
+   "cnn": "1052000",
+   "street": "20TH ST",
+   "extents": "Shotwell to Potrero",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.05981505,
+   "pts": [
+    [
+     -122.41469,
+     37.758896
+    ],
+    [
+     -122.415779,
+     37.75883
+    ]
+   ]
+  },
+  {
+   "cnn": "6286000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.04922315,
+   "pts": [
+    [
+     -122.451346,
+     37.77709
+    ],
+    [
+     -122.452234,
+     37.776976
+    ]
+   ]
+  },
+  {
+   "cnn": "6287000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.052936250000000004,
+   "pts": [
+    [
+     -122.452234,
+     37.776976
+    ],
+    [
+     -122.453188,
+     37.776853
+    ]
+   ]
+  },
+  {
+   "cnn": "6281000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.05299977,
+   "pts": [
+    [
+     -122.446846,
+     37.777669
+    ],
+    [
+     -122.447802,
+     37.777546
+    ]
+   ]
+  },
+  {
+   "cnn": "6282000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.04886285,
+   "pts": [
+    [
+     -122.447802,
+     37.777546
+    ],
+    [
+     -122.448683,
+     37.777433
+    ]
+   ]
+  },
+  {
+   "cnn": "6283000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.0492171,
+   "pts": [
+    [
+     -122.448683,
+     37.777433
+    ],
+    [
+     -122.449571,
+     37.777319
+    ]
+   ]
+  },
+  {
+   "cnn": "6284000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.04920953,
+   "pts": [
+    [
+     -122.449571,
+     37.777319
+    ],
+    [
+     -122.450458,
+     37.777205
+    ]
+   ]
+  },
+  {
+   "cnn": "6285000",
+   "street": "GOLDEN GATE AVE",
+   "extents": "Masonic to Parker",
+   "status": "Implemented",
+   "phase": null,
+   "install_date": "2023-02-28",
+   "len_mi": 0.04924257,
+   "pts": [
+    [
+     -122.450458,
+     37.777205
+    ],
+    [
+     -122.451346,
+     37.77709
+    ]
+   ]
+  },
+  {
+   "cnn": "3490000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-12-05",
+   "len_mi": 0.058723080000000004,
+   "pts": [
+    [
+     -122.482184,
+     37.774534
+    ],
+    [
+     -122.483255,
+     37.774486
+    ]
+   ]
+  },
+  {
+   "cnn": "3491000",
+   "street": "CABRILLO ST",
+   "extents": "23rd Ave to 45th Ave",
+   "status": "Implemented",
+   "phase": "3",
+   "install_date": "2023-12-05",
+   "len_mi": 0.05874071,
+   "pts": [
+    [
+     -122.483255,
+     37.774486
+    ],
+    [
+     -122.484326,
+     37.774437
+    ]
+   ]
+  },
+  {
+   "cnn": "3009000",
+   "street": "BONIFACIO ST",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.037395120000000004,
+   "pts": [
+    [
+     -122.399833,
+     37.782213
+    ],
+    [
+     -122.399349,
+     37.782596
+    ]
+   ]
+  },
+  {
+   "cnn": "8117000",
+   "street": "LAPU-LAPU ST",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.03632042,
+   "pts": [
+    [
+     -122.398879,
+     37.782224
+    ],
+    [
+     -122.399349,
+     37.782596
+    ]
+   ]
+  },
+  {
+   "cnn": "11089000",
+   "street": "RIZAL ST",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.07114262,
+   "pts": [
+    [
+     -122.399802,
+     37.781498
+    ],
+    [
+     -122.398879,
+     37.782224
+    ]
+   ]
+  },
+  {
+   "cnn": "8116000",
+   "street": "LAPU-LAPU ST",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.04157657,
+   "pts": [
+    [
+     -122.398341,
+     37.781799
+    ],
+    [
+     -122.398879,
+     37.782224
+    ]
+   ]
+  },
+  {
+   "cnn": "8588000",
+   "street": "MABINI ST",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.04196202,
+   "pts": [
+    [
+     -122.400374,
+     37.782645
+    ],
+    [
+     -122.399833,
+     37.782213
+    ]
+   ]
+  },
+  {
+   "cnn": "3008000",
+   "street": "BONIFACIO ST",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.03360109,
+   "pts": [
+    [
+     -122.400268,
+     37.78187
+    ],
+    [
+     -122.399833,
+     37.782213
+    ]
+   ]
+  },
+  {
+   "cnn": "12374000",
+   "street": "TANDANG SORA",
+   "extents": "Harrison Street to Folsom Street",
+   "status": "Implemented",
+   "phase": "4",
+   "install_date": "1899-12-29",
+   "len_mi": 0.03617282,
+   "pts": [
+    [
+     -122.400268,
+     37.78187
+    ],
+    [
+     -122.399802,
+     37.781498
+    ]
+   ]
+  }
+ ]
+}

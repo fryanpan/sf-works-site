@@ -1,0 +1,72 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-02-27",
+ "id": "g218-48837",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48837",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the February 13, 2025 Meeting"
+  },
+  {
+   "no": "4b",
+   "title": "As-Needed Geotechnical Engineering Services No. 3, Contract ID 1000025862 – Contract Modification"
+  },
+  {
+   "no": "4c",
+   "title": "Animal Care and Control Tenant Improvement – Contract Award"
+  },
+  {
+   "no": "4d",
+   "title": "Architectural and Engineering Team led by an Executive Architect for a New Fire Training Facility, Contract ID 100026403 – Contract Modification"
+  },
+  {
+   "no": "4e",
+   "title": "Trashcan Steam Cleaning Workforce Development – Community Youth Center San Francisco – Grant Modification"
+  },
+  {
+   "no": "5",
+   "title": "San Francisco Public Works Human Resources Update"
+  },
+  {
+   "no": "6",
+   "title": "Capital Project Update: Folsom Streetscape"
+  },
+  {
+   "no": "7",
+   "title": "Capital Project Update: Ingleside Police Station"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment Adjournment"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

@@ -1,0 +1,76 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-11-03",
+ "id": "g55-37000",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37000",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: October 20, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving parking and traffic modifications to remain in effect until 120 days after the COVID-19 Emergency"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending the Transportation Code to implement parking restrictions along Eddy Street and Jones Street"
+  },
+  {
+   "no": "10.3",
+   "title": "Approve Amendment to the Contract with Insurance Brokerage Services to provide excess liability insurance for the Central Subway Project"
+  },
+  {
+   "no": "10.4",
+   "title": "Appointing Christine Silva to the position of Executive Secretary to the SFMTA Board of Directors -- effective November 4, 2020"
+  },
+  {
+   "no": "11",
+   "title": "Transit Service Presentation"
+  },
+  {
+   "no": "12",
+   "title": "Awarding Contract to Arcadis U.S., for procurement of software, equipment and services to support the traffic safety pilot project Connected Vision Zero Corridor Proof of Concept Project"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

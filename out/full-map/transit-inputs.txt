@@ -1,0 +1,7 @@
+gtfs_url https://muni-gtfs.apps.sfmta.com/data/muni_gtfs-current.zip
+gtfs_sha256 69572de4529dd3b7848e11258df5ea2aef1b36611d953d84fe0170075dbab910
+gtfs_fetched 2026-11-11
+osm https://download.geofabrik.de/north-america/us/california/norcal-latest.osm.pbf
+osm_timestamp 2026-11-10T21:21:39Z
+r5py 1.1.7
+openjdk version "21.0.13" 2026-10-20 LTS

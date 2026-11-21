@@ -1,0 +1,63 @@
+{
+  "note": "How SFUSD students get to school, from SF Safe Routes to School's biennial Travel Tally. Car shares are the 2024-25 Annual Report's (p. 41 bar chart; 48.6% from its p. 40 pie). Bike shares carry the most precise figure any report prints: 2019-20 is printed only as a whole 1% (2019-20 Evaluation Highlights; 2020-21 report; 2024-25 report p. 41); 2022-23 is 1.1% (2023-24 report, Fig. 1, p. 36); 2024-25 is 2.0% (2024-25 report, p. 40 pie). Each tally sits at the date it was taken: the 2020-21 report says the 2019-20 tally 'The last time this survey was conducted was in Fall 2019'; the 2023-24 report announced the 2024-25 tally for fall 2024; no report dates the 2022-23 tally, which sits at fall 2022, two years before the next, as the tally is biennial [inference]. Read 2026-10-07. Walk and transit are the 2024-25 report's (p. 41 bar chart; 18.1% and 26.8% from its p. 40 pie). Its transit counts Muni and the yellow school bus together (pp. 4-5).",
+  "series": [
+    {
+      "label": "2019-20",
+      "date": 2019.8,
+      "car": 47,
+      "bike": 1,
+      "bikeText": "1%",
+      "walk": 24,
+      "transit": 25
+    },
+    {
+      "label": "2022-23",
+      "date": 2022.8,
+      "car": 52,
+      "bike": 1.1,
+      "bikeText": "1.1%",
+      "walk": 17,
+      "transit": 25
+    },
+    {
+      "label": "2024-25",
+      "date": 2024.8,
+      "car": 48.6,
+      "bike": 2.0,
+      "bikeText": "2.0%",
+      "walk": 18.1,
+      "transit": 26.8
+    }
+  ],
+  "goal": {
+    "year": 2030,
+    "share": 30,
+    "from": 48,
+    "fromYear": 2018
+  },
+  "report": {
+    "name": "SF Safe Routes to School 2024-25 Annual Report",
+    "url": "https://www.sfsaferoutes.org/documents/2026/SFSRTS_Report_final_spreads_low_res.pdf",
+    "pages": "40-41"
+  },
+  "offTrack": {
+    "words": "currently not on track",
+    "name": "2023-24 report",
+    "url": "https://www.sfsaferoutes.org/wp-content/uploads/2025/02/SFSRTS_Report_2324_digital_low_res_pages_1_31_25.pdf",
+    "page": 37
+  },
+  "dates": {
+    "name": "2020-21 Evaluation Report",
+    "url": "https://www.sfsaferoutes.org/documents/2026/SRTS_20.21EvalReport_Final_Spreads.pdf"
+  },
+  "goalSource": {
+    "name": "SFMTA staff report, July 2022",
+    "url": "https://www.sfmta.com/reports/7-19-22-mtab-item-104-contract-amendment-safe-routes-school",
+    "page": 3
+  },
+  "repeal": {
+    "ordinance": "59-26",
+    "file": "260177",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7933666&GUID=FBEC8581-1F91-4488-A32F-5037BB44D70D&FullText=1"
+  }
+}

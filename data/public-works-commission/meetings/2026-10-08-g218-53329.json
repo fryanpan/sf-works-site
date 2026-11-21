@@ -1,0 +1,76 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-10-08",
+ "id": "g218-53329",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53329",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes"
+  },
+  {
+   "no": "2",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the September 24, 2026 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "5b",
+   "title": "Mission SoMa Improvements and Pavement Renovation - Contract Award"
+  },
+  {
+   "no": "5c",
+   "title": "Powell Street Safety Project - Contract No. 1000033787 - Contract Modification"
+  },
+  {
+   "no": "5d",
+   "title": "Harvey Milk Plaza Improvements Project Architecture and Engineering Professional Services - Sole Source Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Powell Street Improvement Project - Contract ID No. 1000938033 - Contract Modification"
+  },
+  {
+   "no": "7",
+   "title": "Streetscape Program Update"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Commission Annual Report 2025-26"
+  },
+  {
+   "no": "9",
+   "title": "Public Works Commission Meeting Calendar for 2027"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment - Continued from Item 4, if necessary"
+  }
+ ],
+ "parser": 2,
+ "body": "public-works-commission"
+}

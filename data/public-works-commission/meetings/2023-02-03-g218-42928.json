@@ -1,0 +1,68 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-02-03",
+ "id": "g218-42928",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42928",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Commission Secretary’s Report Informational"
+  },
+  {
+   "no": "2",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Adopt Minutes from the January 20, 2023 Meeting"
+  },
+  {
+   "no": "4b",
+   "title": "CJ2 Kitchen Renovation, Project Contract 1000015026 - Contract Modification"
+  },
+  {
+   "no": "4c",
+   "title": "Various Locations Curb Ramps and Sub-Sidewalk Basements FY21-22 - Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Department of Public Works Fiscal Year 2023-2024 and Fiscal Year 2024-2025 Operating Budget and Priorities"
+  },
+  {
+   "no": "6",
+   "title": "Trashcan Steam Cleaning Grant Agreement - Modification"
+  },
+  {
+   "no": "7",
+   "title": "Infrastructure Design and Construction Bureau of Street-use and Mapping Performance Measure Report"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Director Hiring Update Informational"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment - Continued from Item 2 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

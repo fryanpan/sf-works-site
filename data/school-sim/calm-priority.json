@@ -1,0 +1,1325 @@
+{
+ "calmFt": 660,
+ "kidsNear": 364,
+ "kidsUnmatchedStreet": 17,
+ "order": [
+  {
+   "cds": "38684786104673",
+   "kids": 15,
+   "name": "Drew (Charles) College Preparatory Academy",
+   "residentialKids": 3
+  },
+  {
+   "cds": "38684786059885",
+   "kids": 8,
+   "name": "King Jr. (Martin Luther) Academic Middle",
+   "residentialKids": 4
+  },
+  {
+   "cds": "38684786040752",
+   "kids": 8,
+   "name": "Carmichael (Bessie)/FEC",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041347",
+   "kids": 7,
+   "name": "Flynn (Leonard R.) Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684780101337",
+   "kids": 7,
+   "name": "KIPP Bayview Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780119958",
+   "kids": 7,
+   "name": "Academy (The)- SF @McAteer",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981666",
+   "kids": 7,
+   "name": "St. Anthony\u2013Immaculate Conception",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783833241",
+   "kids": 6,
+   "name": "Lincoln (Abraham) High",
+   "residentialKids": 3
+  },
+  {
+   "cds": "38684780127530",
+   "kids": 5,
+   "name": "KIPP San Francisco College Preparatory",
+   "residentialKids": 5
+  },
+  {
+   "cds": "38684783830288",
+   "kids": 5,
+   "name": "Balboa High",
+   "residentialKids": 3
+  },
+  {
+   "cds": "38684783834769",
+   "kids": 5,
+   "name": "O'Connell (John) High",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786112601",
+   "kids": 5,
+   "name": "Creative Arts Charter",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684787019417",
+   "kids": 5,
+   "name": "Arise Educational Center",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786059851",
+   "kids": 5,
+   "name": "Hoover (Herbert) Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786115901",
+   "kids": 5,
+   "name": "Tenderloin Community",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786168959",
+   "kids": 5,
+   "name": "Aloha Micro Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684787104466",
+   "kids": 5,
+   "name": "De Marillac Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040836",
+   "kids": 4,
+   "name": "Cleveland Elementary",
+   "residentialKids": 4
+  },
+  {
+   "cds": "38684786041446",
+   "kids": 4,
+   "name": "Monroe Elementary",
+   "residentialKids": 4
+  },
+  {
+   "cds": "38684786113245",
+   "kids": 4,
+   "name": "Yu (Alice Fong) Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786980718",
+   "kids": 4,
+   "name": "San Francisco Adventist School",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684780101352",
+   "kids": 4,
+   "name": "KIPP San Francisco Bay Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780107300",
+   "kids": 4,
+   "name": "City Arts & Leadership Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783831765",
+   "kids": 4,
+   "name": "Galileo High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041701",
+   "kids": 4,
+   "name": "Visitacion Valley Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786062046",
+   "kids": 4,
+   "name": "Buena Vista/ Horace Mann K-8",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786093488",
+   "kids": 4,
+   "name": "San Francisco Community Alternative",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786161921",
+   "kids": 4,
+   "name": "TCS",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981195",
+   "kids": 4,
+   "name": "The International School of San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684787096514",
+   "kids": 4,
+   "name": "Children's Day School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786133763",
+   "kids": 3,
+   "name": "Cornerstone Academy\u2013Cambridge Campus",
+   "residentialKids": 3
+  },
+  {
+   "cds": "38684786981336",
+   "kids": 3,
+   "name": "Kittredge School",
+   "residentialKids": 3
+  },
+  {
+   "cds": "38684786062061",
+   "kids": 3,
+   "name": "Marina Middle",
+   "residentialKids": 2
+  },
+  {
+   "cds": "38684786980734",
+   "kids": 3,
+   "name": "School of the Epiphany",
+   "residentialKids": 2
+  },
+  {
+   "cds": "38684786041362",
+   "kids": 3,
+   "name": "Longfellow Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786204762",
+   "kids": 3,
+   "name": "San Francisco Friends School",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684783830403",
+   "kids": 3,
+   "name": "Marshall (Thurgood) High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783833407",
+   "kids": 3,
+   "name": "Lowell High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783834082",
+   "kids": 3,
+   "name": "Mission High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040778",
+   "kids": 3,
+   "name": "Bryant Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040851",
+   "kids": 3,
+   "name": "Sloat (Commodore) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040919",
+   "kids": 3,
+   "name": "Milk (Harvey) Civil Rights Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040984",
+   "kids": 3,
+   "name": "Huerta (Dolores) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041073",
+   "kids": 3,
+   "name": "Glen Park Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041503",
+   "kids": 3,
+   "name": "Parks (Rosa) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786059844",
+   "kids": 3,
+   "name": "Francisco Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786059869",
+   "kids": 3,
+   "name": "Denman (James) Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786059901",
+   "kids": 3,
+   "name": "Roosevelt Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786062038",
+   "kids": 3,
+   "name": "Everett Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786093496",
+   "kids": 3,
+   "name": "Carver (George Washington) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786150254",
+   "kids": 3,
+   "name": "Proof School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786162598",
+   "kids": 3,
+   "name": "Stella Maris Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786909600",
+   "kids": 3,
+   "name": "Meadows-livingstone school",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939615",
+   "kids": 3,
+   "name": "ICA Cristo Rey Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939649",
+   "kids": 3,
+   "name": "Lick-Wilmerding High School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980585",
+   "kids": 3,
+   "name": "Saint Monica School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786999379",
+   "kids": 3,
+   "name": "Sterne School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684787095755",
+   "kids": 3,
+   "name": "San Francisco City Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780123505",
+   "kids": 2,
+   "name": "Mission Preparatory",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786040760",
+   "kids": 2,
+   "name": "Harte (Bret) Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786980601",
+   "kids": 2,
+   "name": "St. Paul's",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786980676",
+   "kids": 2,
+   "name": "St. Vincent de Paul School",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684780102103",
+   "kids": 2,
+   "name": "Jordan (June) School for Equity",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780111427",
+   "kids": 2,
+   "name": "Feinstein (Dianne) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830205",
+   "kids": 2,
+   "name": "Wallenberg (Raoul) Traditional High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830254",
+   "kids": 2,
+   "name": "Burton (Phillip and Sala) Academic High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830437",
+   "kids": 2,
+   "name": "Gateway High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040877",
+   "kids": 2,
+   "name": "Lau (Gordon J.) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041016",
+   "kids": 2,
+   "name": "McCoppin (Frank) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041149",
+   "kids": 2,
+   "name": "Chavez (Cesar) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041255",
+   "kids": 2,
+   "name": "Muir (John) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041412",
+   "kids": 2,
+   "name": "Marshall Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041545",
+   "kids": 2,
+   "name": "Sanchez Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041578",
+   "kids": 2,
+   "name": "Sherman Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786059828",
+   "kids": 2,
+   "name": "Giannini (A.P.) Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786062020",
+   "kids": 2,
+   "name": "Aptos Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786097919",
+   "kids": 2,
+   "name": "New Traditions Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786099154",
+   "kids": 2,
+   "name": "Moscone (George R.) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786139463",
+   "kids": 2,
+   "name": "San Francisco High School of the Arts",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786143952",
+   "kids": 2,
+   "name": "San Francisco Schoolhouse",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786144034",
+   "kids": 2,
+   "name": "Presidio Knolls School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786156640",
+   "kids": 2,
+   "name": "Stratford School San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786159156",
+   "kids": 2,
+   "name": "Stratford School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786162549",
+   "kids": 2,
+   "name": "German International School of Silicon Valley",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786170120",
+   "kids": 2,
+   "name": "Eclipse Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786906176",
+   "kids": 2,
+   "name": "Lakeside Presbyterian Center for Children",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786938930",
+   "kids": 2,
+   "name": "Urban School of San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980692",
+   "kids": 2,
+   "name": "San Francisco Christian School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980874",
+   "kids": 2,
+   "name": "West Portal Lutheran School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040703",
+   "kids": 1,
+   "name": "Alvarado Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786041487",
+   "kids": 1,
+   "name": "Revere (Paul) Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786041586",
+   "kids": 1,
+   "name": "Malcolm X Academy",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786089775",
+   "kids": 1,
+   "name": "Rooftop Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786135651",
+   "kids": 1,
+   "name": "Stratford School",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786140099",
+   "kids": 1,
+   "name": "Alta Vista School",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786140974",
+   "kids": 1,
+   "name": "Red Bridge",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786903165",
+   "kids": 1,
+   "name": "Cornerstone Academy-Silver Campus",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786981559",
+   "kids": 1,
+   "name": "Our Lady of the Visitacion Elementary",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684786981765",
+   "kids": 1,
+   "name": "St. Gabriel Elementary School",
+   "residentialKids": 1
+  },
+  {
+   "cds": "38684780120386",
+   "kids": 1,
+   "name": "Chinese Immersion School at DeAvila",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780123117",
+   "kids": 1,
+   "name": "San Francisco Public Montessori",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780123265",
+   "kids": 1,
+   "name": "Gateway Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830031",
+   "kids": 1,
+   "name": "Wells (Ida B.) High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830429",
+   "kids": 1,
+   "name": "Life Learning Academy Charter",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783839081",
+   "kids": 1,
+   "name": "Washington (George) High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041008",
+   "kids": 1,
+   "name": "Key (Francis Scott) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041065",
+   "kids": 1,
+   "name": "Peabody (George) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041115",
+   "kids": 1,
+   "name": "Grattan Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041230",
+   "kids": 1,
+   "name": "Jefferson Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041305",
+   "kids": 1,
+   "name": "Lafayette Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041321",
+   "kids": 1,
+   "name": "Lakeshore Alternative Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041339",
+   "kids": 1,
+   "name": "Lawton Alternative",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041420",
+   "kids": 1,
+   "name": "McKinley Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041511",
+   "kids": 1,
+   "name": "Redding Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041529",
+   "kids": 1,
+   "name": "Stevenson (Robert Louis) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041560",
+   "kids": 1,
+   "name": "Sheridan Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041594",
+   "kids": 1,
+   "name": "Spring Valley Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041610",
+   "kids": 1,
+   "name": "Sunnyside Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041644",
+   "kids": 1,
+   "name": "Sutro Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786062053",
+   "kids": 1,
+   "name": "Lick (James) Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786062079",
+   "kids": 1,
+   "name": "Presidio Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786089569",
+   "kids": 1,
+   "name": "Lee (Edwin and Anita) Newcomer",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786102479",
+   "kids": 1,
+   "name": "Lilienthal (Claire) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786113252",
+   "kids": 1,
+   "name": "Chin (John Yehall) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786113997",
+   "kids": 1,
+   "name": "Sunset Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786130090",
+   "kids": 1,
+   "name": "Katherine Michiels School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786144257",
+   "kids": 1,
+   "name": "La Scuola International School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786151310",
+   "kids": 1,
+   "name": "Millennium School of San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786152565",
+   "kids": 1,
+   "name": "The Brandeis School of San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786154702",
+   "kids": 1,
+   "name": "My City School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786158539",
+   "kids": 1,
+   "name": "San Francisco Islamic School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786168728",
+   "kids": 1,
+   "name": "The Dahlia School of San Francisco Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786205652",
+   "kids": 1,
+   "name": "Presidio Hill School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786930572",
+   "kids": 1,
+   "name": "Adda Clevenger School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939698",
+   "kids": 1,
+   "name": "San Francisco University High School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939722",
+   "kids": 1,
+   "name": "St. Ignatius College Preparatory",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786965586",
+   "kids": 1,
+   "name": "Cathedral School for Boys",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980619",
+   "kids": 1,
+   "name": "St. Peter's School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980643",
+   "kids": 1,
+   "name": "St. Stephen School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980726",
+   "kids": 1,
+   "name": "San Francisco School, The",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980833",
+   "kids": 1,
+   "name": "Town School for Boys",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980890",
+   "kids": 1,
+   "name": "Zion Lutheran School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981682",
+   "kids": 1,
+   "name": "Saint Brigid Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981716",
+   "kids": 1,
+   "name": "Mission Dolores Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38769270132183",
+   "kids": 1,
+   "name": "The New School of San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780119875",
+   "kids": 0,
+   "name": "S.F. International High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684780132241",
+   "kids": 0,
+   "name": "Brown Jr. (Willie L) Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830064",
+   "kids": 0,
+   "name": "Downtown High",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684783830387",
+   "kids": 0,
+   "name": "\"Asawa (Ruth) SF Sch of the Arts, A Public School\"",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040695",
+   "kids": 0,
+   "name": "Alamo Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040737",
+   "kids": 0,
+   "name": "Argonne Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040828",
+   "kids": 0,
+   "name": "Clarendon Alternative Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040893",
+   "kids": 0,
+   "name": "Webster (Daniel) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040935",
+   "kids": 0,
+   "name": "Thomas Edison Charter Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040943",
+   "kids": 0,
+   "name": "Taylor (Edward R.) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040950",
+   "kids": 0,
+   "name": "El Dorado Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786040968",
+   "kids": 0,
+   "name": "Cobb (William L.) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041040",
+   "kids": 0,
+   "name": "Garfield Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041123",
+   "kids": 0,
+   "name": "Guadalupe Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041131",
+   "kids": 0,
+   "name": "Yick Wo Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041156",
+   "kids": 0,
+   "name": "Hillcrest Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041206",
+   "kids": 0,
+   "name": "Parker (Jean) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041271",
+   "kids": 0,
+   "name": "Ortega (Jose) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041289",
+   "kids": 0,
+   "name": "Serra (Junipero) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041438",
+   "kids": 0,
+   "name": "Miraloma Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041602",
+   "kids": 0,
+   "name": "King (Thomas Starr) Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041685",
+   "kids": 0,
+   "name": "Ulloa Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786041727",
+   "kids": 0,
+   "name": "West Portal Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786059919",
+   "kids": 0,
+   "name": "Visitacion Valley Middle",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786089585",
+   "kids": 0,
+   "name": "Mission Education Center",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786138176",
+   "kids": 0,
+   "name": "The Bay School of San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786139893",
+   "kids": 0,
+   "name": "St. John the Evangelist",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786142079",
+   "kids": 0,
+   "name": "Brightworks School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786143440",
+   "kids": 0,
+   "name": "Fusion Academy San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786146054",
+   "kids": 0,
+   "name": "San Francisco Pacific Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786146344",
+   "kids": 0,
+   "name": "Kahlon Family Services School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786146369",
+   "kids": 0,
+   "name": "Lycee Francais de San Francisco (Ashbury)",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786152532",
+   "kids": 0,
+   "name": "Rise University Preparatory",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786154439",
+   "kids": 0,
+   "name": "Mission Montessori",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786158372",
+   "kids": 0,
+   "name": "Donum Dei Classical Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786158596",
+   "kids": 0,
+   "name": "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786168041",
+   "kids": 0,
+   "name": "Chinese American International School- 19th Ave Campus",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786169163",
+   "kids": 0,
+   "name": "Terra San Francisco School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786169445",
+   "kids": 0,
+   "name": "Acad\u00e9mique International Secondaire des Examens et Certifications",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786169627",
+   "kids": 0,
+   "name": "Nativity",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786170146",
+   "kids": 0,
+   "name": "Brilliant Microschool",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786170153",
+   "kids": 0,
+   "name": "Bertrand D Hsu American & Chinese Bicultural Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786170278",
+   "kids": 0,
+   "name": "Lavenia Rochelle Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786170740",
+   "kids": 0,
+   "name": "Enlighten Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786170989",
+   "kids": 0,
+   "name": "The Neos Bayview Academy",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786172357",
+   "kids": 0,
+   "name": "Alpha School San Francisco",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786200554",
+   "kids": 0,
+   "name": "Jewish Community High School of the Bay",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786203384",
+   "kids": 0,
+   "name": "Wen Jian Ying",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786206007",
+   "kids": 0,
+   "name": "Bais Menacham Yeshiva Day School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786905913",
+   "kids": 0,
+   "name": "Synergy School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786907927",
+   "kids": 0,
+   "name": "San Francisco Waldorf School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786908917",
+   "kids": 0,
+   "name": "Edgewood Community School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786913123",
+   "kids": 0,
+   "name": "KZV Armenian School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786915748",
+   "kids": 0,
+   "name": "San Francisco Day School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939557",
+   "kids": 0,
+   "name": "Drew School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939607",
+   "kids": 0,
+   "name": "Hillwood Academic Day",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939664",
+   "kids": 0,
+   "name": "Lycee Francais de San Francisco (Ortega)",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939730",
+   "kids": 0,
+   "name": "Archbishop Riordan High School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786939748",
+   "kids": 0,
+   "name": "Sacred Heart Cathedral Preparatory",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980627",
+   "kids": 0,
+   "name": "St. Philip School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980650",
+   "kids": 0,
+   "name": "St. Thomas More",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786980684",
+   "kids": 0,
+   "name": "Sts. Peter and Paul Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981278",
+   "kids": 0,
+   "name": "Holy Name Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981328",
+   "kids": 0,
+   "name": "Katherine Delmar Burke School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981377",
+   "kids": 0,
+   "name": "Live Oak School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981500",
+   "kids": 0,
+   "name": "Ecole Notre Dame Des Victoires",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981658",
+   "kids": 0,
+   "name": "St. Anne School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981674",
+   "kids": 0,
+   "name": "St. Brendan Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981690",
+   "kids": 0,
+   "name": "St. Cecilia Elementary",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981740",
+   "kids": 0,
+   "name": "St. Finn Barr Catholic School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786981773",
+   "kids": 0,
+   "name": "St James School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684786997829",
+   "kids": 0,
+   "name": "The Hamlin School",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38684787044605",
+   "kids": 0,
+   "name": "Eureka Learning Center",
+   "residentialKids": 0
+  },
+  {
+   "cds": "38771310137307",
+   "kids": 0,
+   "name": "KIPP Bayview Elementary",
+   "residentialKids": 0
+  }
+ ],
+ "residentialKids": 58,
+ "rule": "kids 5 to 18 injured or killed on a weekday, 6 am to 6 pm, August 1 to May 31, school years 2015-16 to 2024-25, within 660 ft of the school's grounds",
+ "source": "[DataSF nwes-mmgh \u2014 queried 2026-10-13]",
+ "years": 10
+}

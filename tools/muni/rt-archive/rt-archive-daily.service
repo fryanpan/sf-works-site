@@ -1,0 +1,11 @@
+# Yesterday's quality check, then compaction of every finished day that passed (check.py, compact.py --pending).
+[Unit]
+Description=511 realtime archive: daily check and Parquet compaction
+
+[Service]
+EnvironmentFile=-%h/.config/sf-works/env
+Type=oneshot
+ExecStart=-%h/.venvs/rt-archive/bin/python %h/rt-archive/bin/check.py
+ExecStart=%h/.venvs/rt-archive/bin/python %h/rt-archive/bin/compact.py --pending
+Nice=10
+TimeoutStartSec=2h

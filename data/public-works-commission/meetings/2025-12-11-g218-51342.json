@@ -1,0 +1,80 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-12-11",
+ "id": "g218-51342",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51342",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "1",
+   "title": "Announcements"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the November 13, 2025 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "As-Needed Pavement Preservation No. 7"
+  },
+  {
+   "no": "5",
+   "title": "Permitting and Inspections Software with Clariti Cloud"
+  },
+  {
+   "no": "6",
+   "title": "Public Works Department Performance Report"
+  },
+  {
+   "no": "7",
+   "title": "Public Works Indirect Cost Plan"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Commission Capital Construction Contract Tracking Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Works Commission Election of Officers"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "12",
+   "title": "Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

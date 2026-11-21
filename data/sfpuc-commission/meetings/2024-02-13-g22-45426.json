@@ -1,0 +1,108 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2024-02-13",
+ "id": "g22-45426",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45426",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager (discussion only)"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Award Contract No. PRO.0163(R), Engineering Services for the Emergency Firefighting Water System and City’s Water Distribution System"
+  },
+  {
+   "no": "6b",
+   "title": "Award Contract No. WD-2893, Sunol Valley Chemical Facility Improvements, to the responsible bidder that submitted the lowest responsive bid, Anvil Builders Inc"
+  },
+  {
+   "no": "6c",
+   "title": "Award Contract No. WD-2895, San Francisco Zoo Recycled Water Project submitted the lowest responsive bid, Basset Engineering"
+  },
+  {
+   "no": "6d",
+   "title": "Award Contract No. WW-749, Channel Pump Station Bar Screen Replacement that submitted the lowest responsive bid, Western Water Constructors"
+  },
+  {
+   "no": "7",
+   "title": "Approve the Umbrella Memorandum of Understanding between San Francisco Public Utilities Commission and the San Francisco Unified School District"
+  },
+  {
+   "no": "8",
+   "title": "Consider and possible action to adopt the San Francisco Public Utilities Commission Biennial Operating Budget including the Revenue"
+  },
+  {
+   "no": "9",
+   "title": "Consider and possible action to adopt the San Francisco PUC Two-Year Capital Budget consisting of $1,784,912,774 for FY 2024-25 and $1,792,439,721 for FY 2025-26"
+  },
+  {
+   "no": "10",
+   "title": "Consider and possible action to adopt the San Francisco PUC 10-Year Capital Plan for FY 2024-25 through FY 2033-34 totaling $11,811,605,094."
+  },
+  {
+   "no": "11",
+   "title": "Public hearing to consider and possible action to adopt the San Francisco Public Utilities Commission 10-Year Financial Plan for FY 2024-25 through FY 2033-34."
+  },
+  {
+   "no": "12",
+   "title": "Communications"
+  },
+  {
+   "no": "13",
+   "title": "Items initiated by Commissioners"
+  },
+  {
+   "no": "14",
+   "title": "Public Comment on the matter to be addressed during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matter listed below"
+  },
+  {
+   "no": "16",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "17",
+   "title": "Announcement following Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  },
+  {
+   "no": "19",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

@@ -1,0 +1,95 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-10-20",
+ "id": "g55-36888",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36888",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22829"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: October 6, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Amending the Transportation Code, to implement parking restrictions on Bryant Street except for City-owned San Francisco Police Department vehicles displaying a permit",
+   "decision": "ADOPTED — 5 ayes (Resolution 201020-085)"
+  },
+  {
+   "no": "10.2",
+   "title": "Request that the Metropolitan Transportation Commission program $1,127,352 in funds available under its Lifeline Transportation Program for the Essential Trip Card Program",
+   "decision": "ADOPTED — 5 ayes (Resolution 201020-086)"
+  },
+  {
+   "no": "10.3",
+   "title": "Contract Modification No. 2 to Contract No. 1247R, Presidio Bus Lifts - Presidio Trolley Coach Facility – Presidio Bus Lifts, for no additional cost and no extension",
+   "decision": "ADOPTED — 5 ayes (Resolution 201020-087)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Vision Zero program, including recent efforts and progress toward achieving San Francisco’s Vision Zero goal"
+  },
+  {
+   "no": "12",
+   "title": "Approving Modification No. 133 to Contract No. 1300, Third Street Light Rail Program Phase 2 - Central Subway Stations, Surface, Track and Systems",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

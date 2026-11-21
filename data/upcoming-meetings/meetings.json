@@ -1,0 +1,425 @@
+{
+ "generated": "2026-11-10",
+ "windowDays": 90,
+ "sources": [
+  {
+   "id": "sfmta",
+   "name": "SFMTA meetings and events",
+   "listing": "https://www.sfmta.com/meetings-events",
+   "status": "read",
+   "meetings": 15,
+   "withAgenda": 1
+  },
+  {
+   "id": "bos",
+   "name": "Board of Supervisors and its committees",
+   "listing": "https://sfgov.legistar.com/Calendar.aspx",
+   "status": "read",
+   "meetings": 1,
+   "withAgenda": 1
+  },
+  {
+   "id": "pwc",
+   "name": "Public Works Commission",
+   "listing": "https://sfpublicworks.org/about/public-works-commission-calendar",
+   "status": "read",
+   "meetings": 1,
+   "withAgenda": 1
+  },
+  {
+   "id": "sfpuc",
+   "name": "SFPUC Commission",
+   "listing": "https://www.sfpuc.gov/about-us/boards-commissions-committees/sfpuc-commission/agendas-minutes-resolutions-log",
+   "status": "read",
+   "meetings": 0,
+   "withAgenda": 0
+  }
+ ],
+ "gaps": [
+  {
+   "body": "San Francisco County Transportation Authority Board",
+   "why": "sfcta.org answers 403 to a script, and SFGovTV's Granicus lists a meeting only once it is held"
+  },
+  {
+   "body": "Public Works director's hearings",
+   "why": "sfpublicworks.org publishes no listing of them a script can read"
+  },
+  {
+   "body": "Recreation and Park Commission",
+   "why": "not read: its agendas name parks, not street projects"
+  }
+ ],
+ "meetings": [
+  {
+   "source": "bos",
+   "kind": "supervisors",
+   "body": "Public Safety and Neighborhood Services Committee",
+   "date": "2026-11-12",
+   "time": "10:00 AM",
+   "title": "Public Safety and Neighborhood Services Committee, 11/12/2026",
+   "url": "https://sfgov.legistar.com/MeetingDetail.aspx?ID=1461861&GUID=E9C038E3-C29F-4BAC-9188-3B603F943476&Options=info|&Search=",
+   "agenda": "https://sfgov.legistar.com/View.ashx?M=A&ID=1461861&GUID=E9C038E3-C29F-4BAC-9188-3B603F943476",
+   "items": [
+    {
+     "no": "261000",
+     "title": "Hearing to consider that the issuance of a Type-42 on-sale beer and wine liquor license to MCELENEY, FEARGHAL doing business as Bark 77, located at 77 Cambon Drive (District 7), will serve the public convenience or necessity of the City and County of San Francisco.",
+     "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8203527&GUID=5076B6DB-1370-434C-8505-2676B06A6443&Options=&Search=",
+     "type": "Hearing"
+    },
+    {
+     "no": "260894",
+     "title": "Hearing on the rise of rental scams targeting prospective tenants and property owners in San Francisco, including fraudulent listings, fake landlords, unauthorized subletting schemes, and unauthorized use of legitimate listings; and requesting the Police Department, District Attorney's Office, Rent Board, Mayor's Office of Housing and Community Development, Department of Homelessness and Supportive Housing, and Office of the Treasurer and Tax Collector to report.",
+     "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8156772&GUID=DA660F59-4FF6-4EE0-9309-60EE855B44EC&Options=&Search=",
+     "type": "Hearing"
+    },
+    {
+     "no": "260696",
+     "title": "Hearing on the City's enforcement efforts on illegal dumping; and requesting the Department of Public Works to report.",
+     "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8069910&GUID=30B2F02F-5F0C-4509-B883-C9B85DD20969&Options=&Search=",
+     "type": "Hearing"
+    },
+    {
+     "no": "261171",
+     "title": "Ordinance amending the Health Code to reduce the time an animal impounded in the City animal shelter operated by the Animal Care and Control Department (ACC) must be held before being deemed abandoned; reduce the time before an animal is deemed abandoned by its owner after being delivered to ACC because the owner is unable to care for it; modify the rules concerning mandatory sterilization of pit bulls; require a person who wishes to breed dogs in the City to obtain a permit from ACC and setting the permit fee at $200; allow ACC to sterilize all dogs impounded in the City animal shelter, subject to certain exceptions; and to require ACC to report certain information concerning the impact of these amendments to the Board of Supervisors and the Mayor.",
+     "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8304812&GUID=9FE2A8BC-53C4-42A2-9105-2758EE3D705E&Options=&Search=",
+     "type": "Ordinance"
+    }
+   ],
+   "projectPages": [],
+   "id": "bos:2026-11-12:1461861",
+   "agendaPosted": true
+  },
+  {
+   "source": "pwc",
+   "kind": "pwc",
+   "body": "Public Works Commission",
+   "date": "2026-11-12",
+   "time": null,
+   "title": "Public Works Commission, 2026-11-12",
+   "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf",
+   "agenda": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf",
+   "items": [
+    {
+     "no": "1",
+     "title": "Call to Order, Roll Call and Agenda Changes",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "2",
+     "title": "Announcements by Chair, Commissioners and Secretary Informational • Contract Tracking Report • Media Clippings",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "3",
+     "title": "Director’s Report and Communications Informational • As-Needed Contracts Report",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "4",
+     "title": "General Public Comment Informational Members of the public may address the Commission(s) on topics that are within the subject matter of the Commission(s) but are not part of this agenda. Comments specific to an item on the agenda may be heard when that item is considered. Members of the public may address the Commission for up to three minutes. General Public Comment may be continued to the end of the agenda if speakers exceed 15 minutes of General Public Comment.",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "5",
+     "title": "Consent Calendar of Routine Matters All items listed on the consent calendar are considered routine by the Commission and may be acted upon together by a single vote of the Commission. There will be no separate discussion of these items unless a member of the Commission, the public or staff requests individual consideration. In that case, the item will be removed from the consent calendar and considered individually at this or a future hearing.",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "6",
+     "title": "1660 Mission Health Recovery and Connection Center Project, Contract No. 1000039076 – Contract Modification Action • Staff Recommendation: Approve modification of Contract No. 1000039076 - 1660 Mission Health Recovery and Connection Center with Charles Pankow Builders, to award the design and construction phases of the contract and increase the contract value by $59,908,630 for a new not-to-exceed amount of $60,766,900 and a total contract duration of 820 consecutive calendar days. On October 22, 2026, the Planning Department determined that the work to be performed under the contract is exempt from CEQA as a Class 32 categorical exemption (CEQA Guidelines Section 15332) as described in the determination contained in the Commission's files for this contract. Approval of this contract would constitute the Approval Action for the project as defined in San Francisco Administrative Code Chap",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "7",
+     "title": "Capital Project Update – Street Resurfacing Program Informational • Presentation",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "8",
+     "title": "November 3rd Ballot Results Discussion Informational • Ballot Measures",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "9",
+     "title": "New Business Initiated by Commissioners Informational",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "10",
+     "title": "General Public Comment – Continued from Item 4, if necessary Informational",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "11",
+     "title": "Closed Session – Conference with Legal Counsel Regarding Existing Litigation – Rodriguez Action • Pursuant to Government Code Section 54956.9(d)(1) and Administrative Code Section 67.10(d)(1), the San Francisco Public Works Commission will meet in Closed Session to discuss and consider taking action on the following attorney-client matter: proposed settlement of a complaint filed, Juliani Rodriguez v. City and County of San Francisco (San Francisco Superior Court Case Number CGC-24-616427, filed July 16, 2024), involving injuries plaintiff suffered on a City crosswalk, with the City to pay plaintiff $375,000 in exchange for a full and final release, subject to final approval by the Board of Supervisors. • Resolution",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "12",
+     "title": "Announcements Following Closed Session Informational",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    },
+    {
+     "no": "13",
+     "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a). Action",
+     "url": "https://sfpublicworks.org/sites/default/files/Commissions/Nov%2012%202026/2026-11-12%20PW%20Commission%20Agenda%20v119a.pdf"
+    }
+   ],
+   "projectPages": [],
+   "id": "pwc:2026-11-12:2026-11-12-20pw-20commission-20agenda-20v119a",
+   "agendaPosted": true
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA ISCOTT",
+   "date": "2026-11-12",
+   "time": "9:00am",
+   "title": "ISCOTT Meeting 1627",
+   "url": "https://www.sfmta.com/calendar/iscott-meeting-1627",
+   "agenda": "https://www.sfmta.com/media/50446/download?inline",
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-11-12:iscott-meeting-1627",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "hearing",
+   "body": "SFMTA engineering public hearing",
+   "date": "2026-11-13",
+   "time": "10:00am",
+   "title": "Engineering Public Hearing Meeting, November 13, 2026",
+   "url": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-13-2026",
+   "agenda": "https://www.sfmta.com/media/50423/download?inline",
+   "items": [
+    {
+     "no": "1",
+     "title": "ESTABLISH – ONE-WAY STREET Quint Street, eastbound, between Thomas Avenue and Maddux Avenue west property line (Supervisor District 10) (Requires approval by the SFMTA Board) Simon Qin",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    },
+    {
+     "no": "2",
+     "title": "ESTABLISH – RAISED CROSSWALK Lake Street at 5th Avenue (east leg) (Supervisor District 1) (Approvable by the City Traffic Engineer) Ellen Robinson",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    },
+    {
+     "no": "3",
+     "title": "ESTABLISH - SPEED HUMPS Pomona Street, between Thornton Avenue and Bay View Street (2 speed humps) Flora Street, between Thornton Avenue and Bay View Street (2 speed humps) (Supervisor District 10) (Approvable by the City Traffic Engineer) Jeffrey Banks",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    },
+    {
+     "no": "4",
+     "title": "ESTABLISH - SPEED HUMPS Cherry Street, between Clay Street and Sacramento Street (1 speed hump) Clay Street, between Arguello Boulevard and Cherry Street (2 speed humps) (Supervisor District 2) (Approvable by the City Traffic Engineer) Jeffrey Banks",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    },
+    {
+     "no": "13",
+     "title": "ESTABLISH – NO TURN ON RED All signalized intersection approaches where jointly i) a NO TURN ON RED regulation does not currently exists, and ii) where the turn conflicts with any marked pedestrian crosswalk, and iii) within the area bounded by a point where the northerly line of Broadway meets the easterly line of The Embarcadero, thence northwesterly along the northeasterly line of Embarcadero to the westerly line of Taylor St, thence southerly along the westerly line of Taylor Street to the northerly line of Jefferson Street, thence westerly along the northerly line of Jefferson Street to the westerly line of Hyde Street, thence southerly along the westerly line of Hyde Street to the northerly line of Beach Street, thence westerly along the northerly line of Beach Street to the westerly line of Polk Street, thence southerly along the westerly line of Polk Street to the northerly line",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    },
+    {
+     "no": "14",
+     "title": "ESTABLISH – NO STOPPING, EXCEPT BICYCLES ESTABLISH – BIKESHARE STATION Beach Street, north side, from 37 feet to 126 feet east of Polk Street (in the bike lane buffer) (Supervisor District 2) (Approvable by the City Traffic Engineer) 6 SAN FRANCISCO MUNICIPAL TRANSPORTATION AGENCY Order # 7062 FOR PUBLIC HEARING",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    },
+    {
+     "no": "15",
+     "title": "ESTABLISH – NO STOPPING, EXCEPT BICYCLES ESTABLISH – BIKESHARE STATION Mason Street, west side, from 30 feet to 130 feet south of Ellis Street (Supervisor District 5) (Approvable by the City Traffic Engineer)",
+     "url": "https://www.sfmta.com/media/50423/download?inline"
+    }
+   ],
+   "projectPages": [],
+   "id": "sfmta:2026-11-13:engineering-public-hearing-meeting-november-13-2026",
+   "agendaPosted": true
+  },
+  {
+   "source": "sfmta",
+   "kind": "board",
+   "body": "SFMTA Board of Directors",
+   "date": "2026-11-17",
+   "time": "1:00pm",
+   "title": "Board of Directors Meeting, November 17, 2026",
+   "url": "https://www.sfmta.com/calendar/board-directors-meeting-november-17-2026",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-11-17:board-directors-meeting-november-17-2026",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA Geary Boulevard Improvement Project Office Hours",
+   "date": "2026-11-17",
+   "time": "2:00pm",
+   "title": "Geary Boulevard Improvement Project Office Hours",
+   "url": "https://www.sfmta.com/calendar/geary-boulevard-improvement-project-office-hours-0",
+   "agenda": null,
+   "items": [],
+   "projectPages": [
+    "https://www.sfmta.com/projects/geary-boulevard-improvement-project"
+   ],
+   "id": "sfmta:2026-11-17:geary-boulevard-improvement-project-office-hours-0",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA Final Gallery Tour of SFMTA Photo Archive Exhibit",
+   "date": "2026-11-18",
+   "time": "5:00pm",
+   "title": "Final Gallery Tour of SFMTA Photo Archive Exhibit",
+   "url": "https://www.sfmta.com/calendar/final-gallery-tour-sfmta-photo-archive-exhibit",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-11-18:final-gallery-tour-sfmta-photo-archive-exhibit",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-committee",
+   "body": "SFMTA Administration, Operations, and Customer Service Committee (AOCSC)",
+   "date": "2026-11-19",
+   "time": "4:00pm",
+   "title": "Administration, Operations, and Customer Service Committee (AOCSC) regular meeting, November 19, 2026",
+   "url": "https://www.sfmta.com/calendar/administration-operations-and-customer-service-committee-aocsc-regular-meeting-november-19-2026",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-11-19:administration-operations-and-customer-service-committee-aocsc-regular-meeting-n",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "board",
+   "body": "SFMTA Board of Directors",
+   "date": "2026-12-01",
+   "time": "1:00pm",
+   "title": "Board of Directors Meeting, December 1, 2026",
+   "url": "https://www.sfmta.com/calendar/board-directors-meeting-december-1-2026",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-01:board-directors-meeting-december-1-2026",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA Muni Skate Night at the Holiday Ice Rink in Union Square",
+   "date": "2026-12-02",
+   "time": "7:00pm",
+   "title": "Muni Skate Night at the Holiday Ice Rink in Union Square",
+   "url": "https://www.sfmta.com/calendar/muni-skate-night-holiday-ice-rink-union-square",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-02:muni-skate-night-holiday-ice-rink-union-square",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-cac",
+   "body": "SFMTA Citizens' Advisory Council",
+   "date": "2026-12-03",
+   "time": "5:30pm",
+   "title": "Citizens' Advisory Council (CAC) regular meeting, December 3, 2026",
+   "url": "https://www.sfmta.com/calendar/citizens-advisory-council-cac-regular-meeting-december-3-2026",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-03:citizens-advisory-council-cac-regular-meeting-december-3-2026",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA ISCOTT",
+   "date": "2026-12-03",
+   "time": "9:00am",
+   "title": "ISCOTT Meeting 1628",
+   "url": "https://www.sfmta.com/calendar/iscott-meeting-1628",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-03:iscott-meeting-1628",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA Opening Reception for SFMTA & Letterform Archive Exhibit",
+   "date": "2026-12-05",
+   "time": "6:00pm",
+   "title": "Opening Reception for SFMTA & Letterform Archive Exhibit",
+   "url": "https://www.sfmta.com/calendar/opening-reception-sfmta-letterform-archive-exhibit",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-05:opening-reception-sfmta-letterform-archive-exhibit",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA Embarcadero Connectivity Plan Open House - Chinatown",
+   "date": "2026-12-08",
+   "time": "6:00pm",
+   "title": "Embarcadero Connectivity Plan Open House - Chinatown",
+   "url": "https://www.sfmta.com/calendar/embarcadero-connectivity-plan-open-house-chinatown-0",
+   "agenda": null,
+   "items": [],
+   "projectPages": [
+    "https://www.sfmta.com/projects/embarcadero-connectivity-plan"
+   ],
+   "id": "sfmta:2026-12-08:embarcadero-connectivity-plan-open-house-chinatown-0",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA Embarcadero Connectivity Plan Open House - South Beach",
+   "date": "2026-12-09",
+   "time": "6:00pm",
+   "title": "Embarcadero Connectivity Plan Open House - South Beach",
+   "url": "https://www.sfmta.com/calendar/embarcadero-connectivity-plan-open-house-south-beach-0",
+   "agenda": null,
+   "items": [],
+   "projectPages": [
+    "https://www.sfmta.com/projects/embarcadero-connectivity-plan"
+   ],
+   "id": "sfmta:2026-12-09:embarcadero-connectivity-plan-open-house-south-beach-0",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "board",
+   "body": "SFMTA Board of Directors",
+   "date": "2026-12-15",
+   "time": "1:00pm",
+   "title": "Board of Directors Meeting, December 15, 2026",
+   "url": "https://www.sfmta.com/calendar/board-directors-meeting-december-15-2026",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-15:board-directors-meeting-december-15-2026",
+   "agendaPosted": false
+  },
+  {
+   "source": "sfmta",
+   "kind": "sfmta-event",
+   "body": "SFMTA ISCOTT",
+   "date": "2026-12-17",
+   "time": "9:00am",
+   "title": "ISCOTT Meeting 1629",
+   "url": "https://www.sfmta.com/calendar/iscott-meeting-1629",
+   "agenda": null,
+   "items": [],
+   "projectPages": [],
+   "id": "sfmta:2026-12-17:iscott-meeting-1629",
+   "agendaPosted": false
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-10-28",
+ "id": "g218-47447",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47447",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the October 17, 2024 Special Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Safer Taylor - Contract Modification"
+  },
+  {
+   "no": "4c",
+   "title": "Phase I - Streetscape Infrastructure - Transbay Block 3 Park and Streetscape Project Contract Award"
+  },
+  {
+   "no": "4d",
+   "title": "Master As-Needed Agreement M21 Tree Services -The Davey Tree Expert Company Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Various Locations Pavement Renovation No.67B, Sewer Replacement, and Overhead Contact System Local Isolation - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Various Locations Pavement Renovation No. 71A and Sewer Replacement Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "Various Locations Pavement Renovation No. 74 and Sewer Replacement - Contract Award"
+  },
+  {
+   "no": "8",
+   "title": "8th Street, Clay Street, and Leavenworth Street Pavement Renovation and Sewer Replacement - Contract Award"
+  },
+  {
+   "no": "9",
+   "title": "Capital Project Update -Transbay Joint Powers Authority’s (TJPA) The Portal Project Presentation"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment - Continued from Item 3 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

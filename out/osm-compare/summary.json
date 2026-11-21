@@ -1,0 +1,478 @@
+{
+  "generated": "2026-11-11",
+  "sfmtaTag": "[DataSF ygmz-vaxd \u2014 queried 2026-11-10]",
+  "osmDate": "2026-11-11",
+  "toleranceM": 25.0,
+  "blocks": 2828,
+  "verdicts": {
+    "sfmta-higher": 78,
+    "agree": 2190,
+    "no-osm-record": 333,
+    "osm-higher": 223,
+    "unmatchable": 4
+  },
+  "osmOnlyWays": 343,
+  "unnamedOsmWays": 556,
+  "byStreet": {
+    "07TH ST": {
+      "osm-higher": 1,
+      "agree": 2
+    },
+    "11TH ST": {
+      "agree": 9,
+      "osm-higher": 1
+    },
+    "14TH ST": {
+      "no-osm-record": 2,
+      "osm-higher": 3,
+      "agree": 15
+    },
+    "15TH AVE": {
+      "agree": 9,
+      "osm-higher": 1
+    },
+    "16TH ST": {
+      "agree": 13,
+      "osm-higher": 2
+    },
+    "17TH ST": {
+      "agree": 34,
+      "osm-higher": 4,
+      "sfmta-higher": 4
+    },
+    "20TH AVE": {
+      "agree": 14,
+      "no-osm-record": 5,
+      "osm-higher": 1
+    },
+    "29TH ST": {
+      "osm-higher": 1,
+      "agree": 1
+    },
+    "2ND ST": {
+      "agree": 17,
+      "osm-higher": 1,
+      "no-osm-record": 2
+    },
+    "4TH ST": {
+      "agree": 11,
+      "osm-higher": 2,
+      "sfmta-higher": 1
+    },
+    "7TH AVE": {
+      "agree": 5,
+      "osm-higher": 1
+    },
+    "7TH ST": {
+      "agree": 9,
+      "no-osm-record": 8,
+      "osm-higher": 1,
+      "sfmta-higher": 1
+    },
+    "8TH AVE": {
+      "agree": 7,
+      "sfmta-higher": 1
+    },
+    "ALEMANY BLVD": {
+      "agree": 43,
+      "osm-higher": 2,
+      "no-osm-record": 1
+    },
+    "ARGUELLO BLVD": {
+      "agree": 19,
+      "osm-higher": 6
+    },
+    "ARLINGTON ST": {
+      "osm-higher": 1
+    },
+    "BAKER ST": {
+      "osm-higher": 1,
+      "agree": 5
+    },
+    "BATTERY CAULFIELD RD": {
+      "osm-higher": 2
+    },
+    "BATTERY ST": {
+      "agree": 18,
+      "osm-higher": 1
+    },
+    "BAYSHORE BLVD": {
+      "agree": 27,
+      "osm-higher": 1,
+      "no-osm-record": 1
+    },
+    "BEALE ST": {
+      "no-osm-record": 2,
+      "sfmta-higher": 1,
+      "agree": 2
+    },
+    "BERNICE RODGERS WAY": {
+      "sfmta-higher": 1
+    },
+    "BOSWORTH ST": {
+      "agree": 9,
+      "osm-higher": 7,
+      "sfmta-higher": 1
+    },
+    "BRANNAN ST": {
+      "agree": 19,
+      "osm-higher": 2
+    },
+    "BROADWAY ST": {
+      "agree": 15,
+      "no-osm-record": 6,
+      "osm-higher": 2
+    },
+    "CABRILLO ST": {
+      "sfmta-higher": 3,
+      "agree": 39,
+      "osm-higher": 3
+    },
+    "CARGO WAY": {
+      "sfmta-higher": 1,
+      "no-osm-record": 1
+    },
+    "CENTRAL MAGAZINE RD": {
+      "sfmta-higher": 1
+    },
+    "CERVANTES BLVD": {
+      "sfmta-higher": 1
+    },
+    "CESAR CHAVEZ ST": {
+      "agree": 32,
+      "sfmta-higher": 7,
+      "osm-higher": 2
+    },
+    "CLIPPER ST": {
+      "agree": 5,
+      "sfmta-higher": 2
+    },
+    "CRESCENT AVE": {
+      "agree": 13,
+      "osm-higher": 1
+    },
+    "CRISSY FIELD AVE": {
+      "osm-higher": 2
+    },
+    "DIVISION ST": {
+      "agree": 5,
+      "osm-higher": 3
+    },
+    "DUBOCE AVE": {
+      "osm-higher": 2,
+      "agree": 3
+    },
+    "EL CAMINO DEL MAR": {
+      "osm-higher": 2,
+      "agree": 10,
+      "no-osm-record": 1
+    },
+    "EUCLID AVE": {
+      "agree": 11,
+      "osm-higher": 1
+    },
+    "EVANS AVE": {
+      "osm-higher": 3,
+      "agree": 14
+    },
+    "GENEVA AVE": {
+      "agree": 29,
+      "osm-higher": 3
+    },
+    "GORGAS  AVE": {
+      "agree": 1,
+      "osm-higher": 2
+    },
+    "GREAT HWY HWY": {
+      "agree": 4,
+      "sfmta-higher": 2,
+      "osm-higher": 1,
+      "no-osm-record": 1
+    },
+    "GROVE ST": {
+      "osm-higher": 1,
+      "agree": 8
+    },
+    "HAGIWARA TEA GARDEN DR": {
+      "sfmta-higher": 1
+    },
+    "HARRISON ST": {
+      "agree": 20,
+      "no-osm-record": 1,
+      "osm-higher": 2,
+      "sfmta-higher": 1
+    },
+    "HOLLOWAY AVE": {
+      "agree": 31,
+      "osm-higher": 2
+    },
+    "HOWARD ST": {
+      "agree": 28,
+      "osm-higher": 1
+    },
+    "ILLINOIS ST": {
+      "agree": 10,
+      "sfmta-higher": 3,
+      "osm-higher": 1
+    },
+    "INDIANA ST": {
+      "agree": 10,
+      "sfmta-higher": 1
+    },
+    "INDUSTRIAL ST": {
+      "agree": 2,
+      "osm-higher": 1,
+      "no-osm-record": 1
+    },
+    "JERROLD AVE": {
+      "osm-higher": 1,
+      "agree": 2
+    },
+    "JOHN MUIR DR": {
+      "sfmta-higher": 1
+    },
+    "JUDAH ST": {
+      "agree": 1,
+      "sfmta-higher": 1
+    },
+    "KANSAS ST": {
+      "agree": 4,
+      "osm-higher": 1
+    },
+    "KING ST": {
+      "sfmta-higher": 1,
+      "agree": 1
+    },
+    "KIRKHAM ST": {
+      "osm-higher": 16,
+      "agree": 29
+    },
+    "LAGUNA ST": {
+      "no-osm-record": 1,
+      "agree": 2,
+      "sfmta-higher": 1
+    },
+    "LAKE ST": {
+      "agree": 30,
+      "osm-higher": 1
+    },
+    "LINCOLN BLVD": {
+      "agree": 22,
+      "osm-higher": 13,
+      "no-osm-record": 4
+    },
+    "LINCOLN WY": {
+      "osm-higher": 3
+    },
+    "LYON ST": {
+      "agree": 2,
+      "osm-higher": 1
+    },
+    "MACALLA RD": {
+      "sfmta-higher": 4
+    },
+    "MANSELL ST": {
+      "no-osm-record": 4,
+      "agree": 20,
+      "sfmta-higher": 2,
+      "osm-higher": 2
+    },
+    "MARINE DR DR": {
+      "sfmta-higher": 1
+    },
+    "MARKET ST": {
+      "agree": 44,
+      "osm-higher": 8
+    },
+    "MARTIN LUTHER KING JR DR": {
+      "agree": 2,
+      "no-osm-record": 2,
+      "sfmta-higher": 3,
+      "osm-higher": 2
+    },
+    "MASON ST": {
+      "sfmta-higher": 7,
+      "no-osm-record": 1
+    },
+    "MASONIC AVE": {
+      "agree": 10,
+      "no-osm-record": 1,
+      "osm-higher": 1,
+      "sfmta-higher": 2
+    },
+    "MC ALLISTER ST": {
+      "agree": 15,
+      "no-osm-record": 5,
+      "osm-higher": 2
+    },
+    "MC COPPIN ST": {
+      "osm-higher": 2,
+      "agree": 2
+    },
+    "MISSION BAY DR": {
+      "sfmta-higher": 2
+    },
+    "MISSION ST": {
+      "osm-higher": 2
+    },
+    "MISSISSIPPI ST": {
+      "agree": 1,
+      "osm-higher": 1
+    },
+    "MONTEREY BLVD": {
+      "agree": 29,
+      "osm-higher": 3
+    },
+    "MUSIC CONCOURSE DR": {
+      "sfmta-higher": 1
+    },
+    "NORTH POINT ST": {
+      "osm-higher": 1,
+      "agree": 11
+    },
+    "OCEAN AVE": {
+      "agree": 64,
+      "osm-higher": 2
+    },
+    "OCTAVIA ST": {
+      "agree": 23,
+      "osm-higher": 5,
+      "sfmta-higher": 1
+    },
+    "OTIS ST": {
+      "osm-higher": 1,
+      "agree": 1
+    },
+    "OVERLOOK DR": {
+      "sfmta-higher": 1
+    },
+    "PAGE ST": {
+      "osm-higher": 9,
+      "agree": 11,
+      "sfmta-higher": 1
+    },
+    "PARK BLVD": {
+      "osm-higher": 2,
+      "agree": 5,
+      "no-osm-record": 1
+    },
+    "PARNASSUS AVE": {
+      "agree": 5,
+      "osm-higher": 7
+    },
+    "PAUL AVE": {
+      "osm-higher": 6,
+      "agree": 1
+    },
+    "POINT LOBOS AVE": {
+      "agree": 7,
+      "no-osm-record": 1,
+      "osm-higher": 1
+    },
+    "POLK ST": {
+      "agree": 38,
+      "osm-higher": 3
+    },
+    "PORTOLA DR": {
+      "agree": 24,
+      "osm-higher": 4,
+      "sfmta-higher": 1
+    },
+    "POST ST": {
+      "no-osm-record": 16,
+      "agree": 17,
+      "osm-higher": 1
+    },
+    "POTRERO AVE": {
+      "agree": 17,
+      "sfmta-higher": 1
+    },
+    "PRESIDIO BLVD": {
+      "osm-higher": 10,
+      "no-osm-record": 9,
+      "agree": 1
+    },
+    "PUTNAM ST": {
+      "sfmta-higher": 1,
+      "agree": 1
+    },
+    "SAINT CHARLES AVE": {
+      "sfmta-higher": 1,
+      "agree": 3
+    },
+    "SAN BRUNO AVE": {
+      "sfmta-higher": 2,
+      "agree": 20,
+      "no-osm-record": 1,
+      "osm-higher": 2
+    },
+    "SAN JOSE AVE": {
+      "agree": 17,
+      "osm-higher": 4
+    },
+    "SANCHEZ ST": {
+      "agree": 15,
+      "osm-higher": 2
+    },
+    "SANSOME ST": {
+      "agree": 15,
+      "sfmta-higher": 1
+    },
+    "SCOTT ST": {
+      "agree": 5,
+      "osm-higher": 2
+    },
+    "SKYLINE BLVD": {
+      "no-osm-record": 6,
+      "sfmta-higher": 1
+    },
+    "SLOAT BLVD": {
+      "osm-higher": 2,
+      "agree": 28,
+      "no-osm-record": 1
+    },
+    "THE EMBARCADERO": {
+      "agree": 8,
+      "osm-higher": 7
+    },
+    "TIFFANY AVE": {
+      "osm-higher": 1,
+      "agree": 1
+    },
+    "TOWNSEND ST": {
+      "agree": 11,
+      "osm-higher": 3
+    },
+    "VALENCIA ST": {
+      "agree": 25,
+      "osm-higher": 2
+    },
+    "VALLEJO ST": {
+      "agree": 1,
+      "sfmta-higher": 1,
+      "no-osm-record": 1,
+      "osm-higher": 1
+    },
+    "VICENTE ST": {
+      "agree": 33,
+      "osm-higher": 1,
+      "sfmta-higher": 6
+    },
+    "WASHINGTON BLVD": {
+      "agree": 6,
+      "osm-higher": 3
+    },
+    "WASHINGTON ST": {
+      "no-osm-record": 2,
+      "sfmta-higher": 1
+    },
+    "WEBSTER ST": {
+      "agree": 26,
+      "osm-higher": 3
+    },
+    "WEDEMEYER ST": {
+      "osm-higher": 2,
+      "no-osm-record": 1
+    }
+  }
+}

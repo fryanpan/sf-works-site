@@ -1,0 +1,953 @@
+{
+ "source": {
+  "url": "https://go.boarddocs.com/ca/sfusd/Board.nsf/files/CP9V3Z7ED3D0/$file/2023-02-19%20SFUSD%202023%20FMP%20FINAL.pdf",
+  "title": "SFUSD 2023 Facilities Master Plan, appendix: enrolment (October 2021) and centrally set capacity (2022-23) by school",
+  "parser": "scripts/family-zoning-students.py fmp_capacity()"
+ },
+ "schools": [
+  {
+   "program": "MS",
+   "address": "3151 Ortega Street",
+   "enrollment_2021": 1178,
+   "capacity_2022_23": 1199,
+   "name": "A.P. Giannini Middle School",
+   "spare": 21
+  },
+  {
+   "program": "HS",
+   "address": "2162 24th Avenue",
+   "enrollment_2021": 1920,
+   "capacity_2022_23": 2046,
+   "name": "Abraham Lincoln High School",
+   "spare": 126
+  },
+  {
+   "program": "ES",
+   "address": "250 23rd Avenue",
+   "enrollment_2021": 435,
+   "capacity_2022_23": 413,
+   "name": "Alamo Elementary School",
+   "spare": -22
+  },
+  {
+   "program": "ES",
+   "address": "1541 12th Avenue",
+   "enrollment_2021": 586,
+   "capacity_2022_23": 594,
+   "name": "Alice Fong Yu Alternative School",
+   "spare": 8
+  },
+  {
+   "program": "ES",
+   "address": "625 Douglass Street",
+   "enrollment_2021": 472,
+   "capacity_2022_23": 518,
+   "name": "Alvarado Elementary School",
+   "spare": 46
+  },
+  {
+   "program": "MS",
+   "address": "105 Aptos Avenue",
+   "enrollment_2021": 855,
+   "capacity_2022_23": 904,
+   "name": "Aptos Middle School",
+   "spare": 49
+  },
+  {
+   "program": "EES",
+   "address": "750 - 16th Avenue",
+   "enrollment_2021": 71,
+   "capacity_2022_23": 70,
+   "name": "Argonne Early Education School",
+   "spare": -1
+  },
+  {
+   "program": "ES",
+   "address": "680 18th Avenue",
+   "enrollment_2021": 389,
+   "capacity_2022_23": 398,
+   "name": "Argonne Elementary School",
+   "spare": 9
+  },
+  {
+   "program": "HS",
+   "address": "1000 Cayuga Avenue",
+   "enrollment_2021": 1262,
+   "capacity_2022_23": 1296,
+   "name": "Balboa High School",
+   "spare": 34
+  },
+  {
+   "program": "ES",
+   "address": "375 7th Street",
+   "enrollment_2021": 401,
+   "capacity_2022_23": 478,
+   "name": "Bessie Carmichael Elementary School",
+   "spare": 77
+  },
+  {
+   "program": "MS",
+   "address": "824 Harrison Street",
+   "enrollment_2021": 191,
+   "capacity_2022_23": 198,
+   "name": "Bessie Carmichael Middle School",
+   "spare": 7
+  },
+  {
+   "program": "ES",
+   "address": "1035 Gilman Avenue",
+   "enrollment_2021": 268,
+   "capacity_2022_23": 323,
+   "name": "Bret Harte Elementary School",
+   "spare": 55
+  },
+  {
+   "program": "ES",
+   "address": "2641 25th Street",
+   "enrollment_2021": 270,
+   "capacity_2022_23": 316,
+   "name": "Bryant Elementary School",
+   "spare": 46
+  },
+  {
+   "program": "ES",
+   "address": "3351 23rd Street",
+   "enrollment_2021": 591,
+   "capacity_2022_23": 618,
+   "name": "Buena Vista Horace Mann Community School",
+   "spare": 27
+  },
+  {
+   "program": "ES",
+   "address": "825 Shotwell Street",
+   "enrollment_2021": 443,
+   "capacity_2022_23": 463,
+   "name": "Cesar Chavez Elementary School",
+   "spare": 20
+  },
+  {
+   "program": "ES",
+   "address": "1250 Waller Street",
+   "enrollment_2021": 370,
+   "capacity_2022_23": 396,
+   "name": "Chinese Immersion School at DeAvila",
+   "spare": 26
+  },
+  {
+   "program": "ES",
+   "address": "3950 Sacramento Street",
+   "enrollment_2021": 235,
+   "capacity_2022_23": 252,
+   "name": "Claire Lilienthal Alternative School - Madison",
+   "spare": 17
+  },
+  {
+   "program": "ES",
+   "address": "3630 Divisadero Street",
+   "enrollment_2021": 410,
+   "capacity_2022_23": 405,
+   "name": "Claire Lilienthal Alternative School - Winfield Scott",
+   "spare": -5
+  },
+  {
+   "program": "ES",
+   "address": "500 Clarendon Ave",
+   "enrollment_2021": 511,
+   "capacity_2022_23": 542,
+   "name": "Clarendon Alternative Elementary School",
+   "spare": 31
+  },
+  {
+   "program": "ES",
+   "address": "455 Athens Street",
+   "enrollment_2021": 318,
+   "capacity_2022_23": 396,
+   "name": "Cleveland Elementary School",
+   "spare": 78
+  },
+  {
+   "program": "ES",
+   "address": "50 Darien Way",
+   "enrollment_2021": 371,
+   "capacity_2022_23": 395,
+   "name": "Commodore Sloat Elementary School",
+   "spare": 24
+  },
+  {
+   "program": "EES",
+   "address": "1 Trenton Street",
+   "enrollment_2021": 92,
+   "capacity_2022_23": 110,
+   "name": "Commodore Stockton Early Education School",
+   "spare": 18
+  },
+  {
+   "program": "ES",
+   "address": "465 Missouri Street",
+   "enrollment_2021": 341,
+   "capacity_2022_23": 382,
+   "name": "Daniel Webster Elementary School",
+   "spare": 41
+  },
+  {
+   "program": "ES",
+   "address": "2550 25th Avenue",
+   "enrollment_2021": 406,
+   "capacity_2022_23": 421,
+   "name": "Dianne Feinstein Elementary School",
+   "spare": 15
+  },
+  {
+   "program": "ES",
+   "address": "65 Chenery Street",
+   "enrollment_2021": 345,
+   "capacity_2022_23": 384,
+   "name": "Dolores Huerta Elementary School",
+   "spare": 39
+  },
+  {
+   "program": "HS",
+   "address": "693 Vermont Street",
+   "enrollment_2021": 134,
+   "capacity_2022_23": 225,
+   "name": "Downtown High School",
+   "spare": 91
+  },
+  {
+   "program": "ES",
+   "address": "50 Pomona Street",
+   "enrollment_2021": 186,
+   "capacity_2022_23": 270,
+   "name": "Dr. Charles Drew College Preparatory Academy",
+   "spare": 84
+  },
+  {
+   "program": "ES",
+   "address": "1360 Oakdale Avenue",
+   "enrollment_2021": 107,
+   "capacity_2022_23": 139,
+   "name": "Dr. George Washington Carver Elementary School",
+   "spare": 32
+  },
+  {
+   "program": "MS",
+   "address": "350 Girard Street",
+   "enrollment_2021": 400,
+   "capacity_2022_23": 457,
+   "name": "Dr. Martin Luther King, Jr. Academic Middle School",
+   "spare": 57
+  },
+  {
+   "program": "ES",
+   "address": "2725 California Street",
+   "enrollment_2021": 156,
+   "capacity_2022_23": 192,
+   "name": "Dr. William L. Cobb Elementary School",
+   "spare": 36
+  },
+  {
+   "program": "ES",
+   "address": "423 Burrows Street",
+   "enrollment_2021": 641,
+   "capacity_2022_23": 689,
+   "name": "E.R. Taylor Elementary School",
+   "spare": 48
+  },
+  {
+   "program": "ES",
+   "address": "657 Merchant Street",
+   "enrollment_2021": 30,
+   "capacity_2022_23": 72,
+   "name": "Edwin and Anita Lee Newcomer School",
+   "spare": 42
+  },
+  {
+   "program": "ES",
+   "address": "70 Delta Street",
+   "enrollment_2021": 126,
+   "capacity_2022_23": 184,
+   "name": "El Dorado Elementary School",
+   "spare": 58
+  },
+  {
+   "program": "MS",
+   "address": "450 Church Street",
+   "enrollment_2021": 598,
+   "capacity_2022_23": 637,
+   "name": "Everett Middle School",
+   "spare": 39
+  },
+  {
+   "program": "ES",
+   "address": "1530 43rd Avenue",
+   "enrollment_2021": 543,
+   "capacity_2022_23": 582,
+   "name": "Francis Scott Key Elementary School",
+   "spare": 39
+  },
+  {
+   "program": "MS",
+   "address": "2190 Powell Street",
+   "enrollment_2021": 548,
+   "capacity_2022_23": 566,
+   "name": "Francisco Middle School",
+   "spare": 18
+  },
+  {
+   "program": "ES",
+   "address": "651 6th Avenue",
+   "enrollment_2021": 198,
+   "capacity_2022_23": 243,
+   "name": "Frank McCoppin Elementary School",
+   "spare": 45
+  },
+  {
+   "program": "HS",
+   "address": "1150 Francisco Street",
+   "enrollment_2021": 1877,
+   "capacity_2022_23": 1942,
+   "name": "Galileo Academy of Science & Technology",
+   "spare": 65
+  },
+  {
+   "program": "ES",
+   "address": "420 Filbert Street",
+   "enrollment_2021": 196,
+   "capacity_2022_23": 242,
+   "name": "Garfield Elementary School",
+   "spare": 46
+  },
+  {
+   "program": "ES",
+   "address": "251 6th Avenue",
+   "enrollment_2021": 272,
+   "capacity_2022_23": 275,
+   "name": "George Peabody Elementary School",
+   "spare": 3
+  },
+  {
+   "program": "ES",
+   "address": "2576 Harrison Street",
+   "enrollment_2021": 391,
+   "capacity_2022_23": 444,
+   "name": "George R. Moscone ES/Las Americas EES",
+   "spare": 53
+  },
+  {
+   "program": "HS",
+   "address": "600 32nd Avenue",
+   "enrollment_2021": 2068,
+   "capacity_2022_23": 2101,
+   "name": "George Washington High School",
+   "spare": 33
+  },
+  {
+   "program": "ES",
+   "address": "151 Lippard Avenue",
+   "enrollment_2021": 313,
+   "capacity_2022_23": 341,
+   "name": "Glen Park Elementary School",
+   "spare": 28
+  },
+  {
+   "program": "ES",
+   "address": "950 Clay Street",
+   "enrollment_2021": 700,
+   "capacity_2022_23": 734,
+   "name": "Gordon J. Lau Elementary School",
+   "spare": 34
+  },
+  {
+   "program": "ES",
+   "address": "165 Grattan Street",
+   "enrollment_2021": 403,
+   "capacity_2022_23": 452,
+   "name": "Grattan Elementary School",
+   "spare": 49
+  },
+  {
+   "program": "ES",
+   "address": "859 Prague Street",
+   "enrollment_2021": 333,
+   "capacity_2022_23": 384,
+   "name": "Guadalupe Elementary School",
+   "spare": 51
+  },
+  {
+   "program": "ES",
+   "address": "4235 19th Street",
+   "enrollment_2021": 187,
+   "capacity_2022_23": 198,
+   "name": "Harvey Milk Civil Rights Academy",
+   "spare": 11
+  },
+  {
+   "program": "MS",
+   "address": "2290 14th Avenue",
+   "enrollment_2021": 934,
+   "capacity_2022_23": 965,
+   "name": "Herbert Hoover Middle School",
+   "spare": 31
+  },
+  {
+   "program": "ES",
+   "address": "810 Silver Avenue",
+   "enrollment_2021": 372,
+   "capacity_2022_23": 361,
+   "name": "Hillcrest Elementary School",
+   "spare": -11
+  },
+  {
+   "program": "HS",
+   "address": "1099 Hayes Street",
+   "enrollment_2021": 133,
+   "capacity_2022_23": 220,
+   "name": "Ida B. Wells High School",
+   "spare": 87
+  },
+  {
+   "program": "HS",
+   "address": "1350 7th Avenue",
+   "enrollment_2021": 137,
+   "capacity_2022_23": 275,
+   "name": "Independence High School",
+   "spare": 138
+  },
+  {
+   "program": "MS",
+   "address": "241 Oneida Avenue",
+   "enrollment_2021": 794,
+   "capacity_2022_23": 837,
+   "name": "James Denman Middle School",
+   "spare": 43
+  },
+  {
+   "program": "MS",
+   "address": "1220 Noe Street",
+   "enrollment_2021": 424,
+   "capacity_2022_23": 536,
+   "name": "James Lick Middle School",
+   "spare": 112
+  },
+  {
+   "program": "ES",
+   "address": "840 Broadway Street",
+   "enrollment_2021": 168,
+   "capacity_2022_23": 231,
+   "name": "Jean Parker Elementary School",
+   "spare": 63
+  },
+  {
+   "program": "EES",
+   "address": "1350 25th Avenue",
+   "enrollment_2021": 32,
+   "capacity_2022_23": 35,
+   "name": "Jefferson Early Education School",
+   "spare": 3
+  },
+  {
+   "program": "ES",
+   "address": "1725 Irving Street",
+   "enrollment_2021": 486,
+   "capacity_2022_23": 509,
+   "name": "Jefferson Elementary School",
+   "spare": 23
+  },
+  {
+   "program": "EES",
+   "address": "2055 Sunnydale Ave. West",
+   "enrollment_2021": 48,
+   "capacity_2022_23": 82,
+   "name": "John McLaren Early Education School",
+   "spare": 34
+  },
+  {
+   "program": "ES",
+   "address": "380 Webster Street",
+   "enrollment_2021": 246,
+   "capacity_2022_23": 295,
+   "name": "John Muir Elementary School",
+   "spare": 49
+  },
+  {
+   "program": "HS",
+   "address": "2355 Folsom Street",
+   "enrollment_2021": 530,
+   "capacity_2022_23": 583,
+   "name": "John O’Connell High School",
+   "spare": 53
+  },
+  {
+   "program": "ES",
+   "address": "350 Broadway",
+   "enrollment_2021": 265,
+   "capacity_2022_23": 275,
+   "name": "John Yehall Chin Elementary School",
+   "spare": 10
+  },
+  {
+   "program": "ES",
+   "address": "400 Sargent Street",
+   "enrollment_2021": 390,
+   "capacity_2022_23": 421,
+   "name": "Jose Ortega Elementary School",
+   "spare": 31
+  },
+  {
+   "program": "HS",
+   "address": "325 La Grande Avenue",
+   "enrollment_2021": 208,
+   "capacity_2022_23": 263,
+   "name": "June Jordan School for Equity",
+   "spare": 55
+  },
+  {
+   "program": "EES",
+   "address": "155 Appleton Avenue",
+   "enrollment_2021": 62,
+   "capacity_2022_23": 111,
+   "name": "Junipero Serra Annex Early Education School",
+   "spare": 49
+  },
+  {
+   "program": "ES",
+   "address": "625 Holly Park Circle",
+   "enrollment_2021": 267,
+   "capacity_2022_23": 292,
+   "name": "Junipero Serra Elementary School",
+   "spare": 25
+  },
+  {
+   "program": "ES",
+   "address": "4545 Anza Street",
+   "enrollment_2021": 494,
+   "capacity_2022_23": 531,
+   "name": "Lafayette Elementary School",
+   "spare": 37
+  },
+  {
+   "program": "ES",
+   "address": "220 Middlefield Drive",
+   "enrollment_2021": 427,
+   "capacity_2022_23": 426,
+   "name": "Lakeshore Alternative Elementary School",
+   "spare": -1
+  },
+  {
+   "program": "ES",
+   "address": "1570 31st Avenue",
+   "enrollment_2021": 597,
+   "capacity_2022_23": 605,
+   "name": "Lawton Alternative School",
+   "spare": 8
+  },
+  {
+   "program": "EES",
+   "address": "1520 Oakdale Avenue",
+   "enrollment_2021": 78,
+   "capacity_2022_23": 80,
+   "name": "Leola M. Havard Early Education School",
+   "spare": 2
+  },
+  {
+   "program": "ES",
+   "address": "3125 Cesar Chavez Street",
+   "enrollment_2021": 426,
+   "capacity_2022_23": 442,
+   "name": "Leonard R. Flynn Elementary School",
+   "spare": 16
+  },
+  {
+   "program": "ES",
+   "address": "755 Morse Street",
+   "enrollment_2021": 470,
+   "capacity_2022_23": 509,
+   "name": "Longfellow Elementary School",
+   "spare": 39
+  },
+  {
+   "program": "HS",
+   "address": "1101 Eucalyptus Drive",
+   "enrollment_2021": 2652,
+   "capacity_2022_23": 2661,
+   "name": "Lowell High School",
+   "spare": 9
+  },
+  {
+   "program": "ES",
+   "address": "350 Harbor Road",
+   "enrollment_2021": 107,
+   "capacity_2022_23": 170,
+   "name": "Malcolm X Academy Elementary School",
+   "spare": 63
+  },
+  {
+   "program": "MS",
+   "address": "3500 Fillmore Street",
+   "enrollment_2021": 684,
+   "capacity_2022_23": 739,
+   "name": "Marina Middle School",
+   "spare": 55
+  },
+  {
+   "program": "ES",
+   "address": "1575 15th Street",
+   "enrollment_2021": 233,
+   "capacity_2022_23": 264,
+   "name": "Marshall Elementary School",
+   "spare": 31
+  },
+  {
+   "program": "ES",
+   "address": "1025 14th Street",
+   "enrollment_2021": 277,
+   "capacity_2022_23": 299,
+   "name": "McKinley Elementary School",
+   "spare": 22
+  },
+  {
+   "program": "ES",
+   "address": "175 Omar Way",
+   "enrollment_2021": 333,
+   "capacity_2022_23": 408,
+   "name": "Miraloma Elementary School",
+   "spare": 75
+  },
+  {
+   "program": "ES",
+   "address": "1670 Noe Street",
+   "enrollment_2021": 57,
+   "capacity_2022_23": 140,
+   "name": "Mission Education Center Elementary School",
+   "spare": 83
+  },
+  {
+   "program": "HS",
+   "address": "3750 18th Street",
+   "enrollment_2021": 1080,
+   "capacity_2022_23": 1163,
+   "name": "Mission High School",
+   "spare": 83
+  },
+  {
+   "program": "ES",
+   "address": "260 Madrid Street",
+   "enrollment_2021": 507,
+   "capacity_2022_23": 556,
+   "name": "Monroe Elementary School",
+   "spare": 49
+  },
+  {
+   "program": "ES",
+   "address": "2049 Grove Street",
+   "enrollment_2021": 233,
+   "capacity_2022_23": 264,
+   "name": "New Traditions Creative Arts Elementary School",
+   "spare": 31
+  },
+  {
+   "program": "EES",
+   "address": "1775 44th Avenue",
+   "enrollment_2021": 126,
+   "capacity_2022_23": 160,
+   "name": "Noriega Early Education School",
+   "spare": 34
+  },
+  {
+   "program": "ES",
+   "address": "610 Tompkins Street",
+   "enrollment_2021": 288,
+   "capacity_2022_23": 347,
+   "name": "Paul Revere Elementary School (Annex)",
+   "spare": 59
+  },
+  {
+   "program": "ES",
+   "address": "555 Tompkins Avenue",
+   "enrollment_2021": 171,
+   "capacity_2022_23": 196,
+   "name": "Paul Revere School",
+   "spare": 25
+  },
+  {
+   "program": "HS",
+   "address": "400 Mansell Street",
+   "enrollment_2021": 1144,
+   "capacity_2022_23": 1228,
+   "name": "Phillip and Sala Burton Academic High School",
+   "spare": 84
+  },
+  {
+   "program": "MS",
+   "address": "450 30th Avenue",
+   "enrollment_2021": 987,
+   "capacity_2022_23": 1015,
+   "name": "Presidio Middle School",
+   "spare": 28
+  },
+  {
+   "program": "HS",
+   "address": "40 Vega Street",
+   "enrollment_2021": 636,
+   "capacity_2022_23": 686,
+   "name": "Raoul Wallenberg Traditional High School",
+   "spare": 50
+  },
+  {
+   "program": "EES",
+   "address": "1501 O’Farrell Street",
+   "enrollment_2021": 24,
+   "capacity_2022_23": 48,
+   "name": "Raphael Weill Early Education School",
+   "spare": 24
+  },
+  {
+   "program": "ES",
+   "address": "1421 Pine Street",
+   "enrollment_2021": 244,
+   "capacity_2022_23": 286,
+   "name": "Redding Elementary School",
+   "spare": 42
+  },
+  {
+   "program": "ES",
+   "address": "2051 34th Avenue",
+   "enrollment_2021": 449,
+   "capacity_2022_23": 445,
+   "name": "Robert Louis Stevenson Elementary School",
+   "spare": -4
+  },
+  {
+   "program": "ES",
+   "address": "500 Corbett Avenue",
+   "enrollment_2021": 242,
+   "capacity_2022_23": 264,
+   "name": "Rooftop Alternative School - Mayeda",
+   "spare": 22
+  },
+  {
+   "program": "ES",
+   "address": "443 Burnett Avenue",
+   "enrollment_2021": 307,
+   "capacity_2022_23": 346,
+   "name": "Rooftop Alternative School - Twin Peaks",
+   "spare": 39
+  },
+  {
+   "program": "MS",
+   "address": "460 Arguello Boulevard",
+   "enrollment_2021": 670,
+   "capacity_2022_23": 682,
+   "name": "Roosevelt Middle School",
+   "spare": 12
+  },
+  {
+   "program": "ES",
+   "address": "1501 O’Farrell Street",
+   "enrollment_2021": 380,
+   "capacity_2022_23": 460,
+   "name": "Rosa Parks Elementary School",
+   "spare": 80
+  },
+  {
+   "program": "HS",
+   "address": "555 Portola Drive",
+   "enrollment_2021": 1097,
+   "capacity_2022_23": 1065,
+   "name": "Ruth Asawa School of the Arts / The Academy SF",
+   "spare": -32
+  },
+  {
+   "program": "ES",
+   "address": "125 Excelsior Avenue",
+   "enrollment_2021": 280,
+   "capacity_2022_23": 297,
+   "name": "San Francisco Community School",
+   "spare": 17
+  },
+  {
+   "program": "HS",
+   "address": "655 De Haro Street",
+   "enrollment_2021": 293,
+   "capacity_2022_23": 499,
+   "name": "San Francisco International High School",
+   "spare": 206
+  },
+  {
+   "program": "ES",
+   "address": "2340 Jackson Street",
+   "enrollment_2021": 153,
+   "capacity_2022_23": 192,
+   "name": "San Francisco Public Montessori Elementary School",
+   "spare": 39
+  },
+  {
+   "program": "EES",
+   "address": "300 Seneca Avenue",
+   "enrollment_2021": 89,
+   "capacity_2022_23": 90,
+   "name": "San Miguel Early Education School",
+   "spare": 1
+  },
+  {
+   "program": "ES",
+   "address": "325 Sanchez Street",
+   "enrollment_2021": 282,
+   "capacity_2022_23": 318,
+   "name": "Sanchez Elementary School",
+   "spare": 36
+  },
+  {
+   "program": "ES",
+   "address": "431 Capitol Avenue",
+   "enrollment_2021": 213,
+   "capacity_2022_23": 257,
+   "name": "Sheridan Elementary School",
+   "spare": 44
+  },
+  {
+   "program": "ES",
+   "address": "1651 Union Street",
+   "enrollment_2021": 285,
+   "capacity_2022_23": 322,
+   "name": "Sherman Elementary School",
+   "spare": 37
+  },
+  {
+   "program": "ES",
+   "address": "1451 Jackson Street",
+   "enrollment_2021": 241,
+   "capacity_2022_23": 289,
+   "name": "Spring Valley Science Elementary School",
+   "spare": 48
+  },
+  {
+   "program": "ES",
+   "address": "1215 Carolina Street",
+   "enrollment_2021": 318,
+   "capacity_2022_23": 415,
+   "name": "Starr King Elementary School",
+   "spare": 97
+  },
+  {
+   "program": "ES",
+   "address": "250 Forester Street",
+   "enrollment_2021": 337,
+   "capacity_2022_23": 381,
+   "name": "Sunnyside Elementary School",
+   "spare": 44
+  },
+  {
+   "program": "ES",
+   "address": "1920 41st Avenue",
+   "enrollment_2021": 401,
+   "capacity_2022_23": 406,
+   "name": "Sunset Elementary School",
+   "spare": 5
+  },
+  {
+   "program": "ES",
+   "address": "235 12th Avenue",
+   "enrollment_2021": 226,
+   "capacity_2022_23": 267,
+   "name": "Sutro Elementary School",
+   "spare": 41
+  },
+  {
+   "program": "ES",
+   "address": "627 Turk Street",
+   "enrollment_2021": 300,
+   "capacity_2022_23": 359,
+   "name": "Tenderloin Community Elementary School",
+   "spare": 59
+  },
+  {
+   "program": "EES",
+   "address": "990 Church Street",
+   "enrollment_2021": 45,
+   "capacity_2022_23": 48,
+   "name": "Theresa S. Mahler Early Education School",
+   "spare": 3
+  },
+  {
+   "program": "HS",
+   "address": "45 Conkling Street",
+   "enrollment_2021": 526,
+   "capacity_2022_23": 638,
+   "name": "Thurgood Marshall Academic High School",
+   "spare": 112
+  },
+  {
+   "program": "EES",
+   "address": "2110 Greenwich Street",
+   "enrollment_2021": 80,
+   "capacity_2022_23": 140,
+   "name": "Tule Elk Park Early Education School",
+   "spare": 60
+  },
+  {
+   "program": "ES",
+   "address": "2650 42nd Avenue",
+   "enrollment_2021": 530,
+   "capacity_2022_23": 528,
+   "name": "Ulloa Elementary School",
+   "spare": -2
+  },
+  {
+   "program": "ES",
+   "address": "55 Schwerin Street",
+   "enrollment_2021": 297,
+   "capacity_2022_23": 343,
+   "name": "Visitacion Valley Elementary School",
+   "spare": 46
+  },
+  {
+   "program": "MS",
+   "address": "1971 Visitacion Avenue",
+   "enrollment_2021": 347,
+   "capacity_2022_23": 454,
+   "name": "Visitacion Valley Middle School",
+   "spare": 107
+  },
+  {
+   "program": "ES",
+   "address": "5 Lenox Way",
+   "enrollment_2021": 533,
+   "capacity_2022_23": 616,
+   "name": "West Portal Elementary School",
+   "spare": 83
+  },
+  {
+   "program": "MS",
+   "address": "2055 Silver Avenue",
+   "enrollment_2021": 196,
+   "capacity_2022_23": 263,
+   "name": "Willie L. Brown Jr. Middle School",
+   "spare": 67
+  },
+  {
+   "program": "ES",
+   "address": "2245 Jones Street",
+   "enrollment_2021": 215,
+   "capacity_2022_23": 252,
+   "name": "Yick Wo Alternative Elementary School",
+   "spare": 37
+  },
+  {
+   "program": "EES",
+   "address": "421 Bartlett Street",
+   "enrollment_2021": 11,
+   "capacity_2022_23": 44,
+   "name": "Zaida T. Rodriguez Early Education School (Bartlett)",
+   "spare": 33
+  },
+  {
+   "program": "EES",
+   "address": "2950 Mission Street",
+   "enrollment_2021": 21,
+   "capacity_2022_23": 48,
+   "name": "Zaida T. Rodriguez Early Education School (Mission)",
+   "spare": 27
+  }
+ ]
+}

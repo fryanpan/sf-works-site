@@ -1,0 +1,128 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2022-10-11",
+ "id": "g22-42215",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=42215",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Annual Election of Officers"
+  },
+  {
+   "no": "4",
+   "title": "Adopt renewed findings under State Urgency Legislation to allow hybrid in-person meetings during the COVID-19 Emergency"
+  },
+  {
+   "no": "5",
+   "title": "Approval of the Minutes of September 13, 2022"
+  },
+  {
+   "no": "6",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "7",
+   "title": "Communications"
+  },
+  {
+   "no": "7a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "7b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "7c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "7d",
+   "title": "Franchise Compliance Report for Audit Period CY 2019-2020"
+  },
+  {
+   "no": "7e",
+   "title": "CleanPowerSF Quarterly Report"
+  },
+  {
+   "no": "7f",
+   "title": "Quarterly Report on the Contracts Awarded by the General Manager Pursuant to Delegated Authority"
+  },
+  {
+   "no": "8",
+   "title": "Annual Citizens’ Advisory Committee Update"
+  },
+  {
+   "no": "9",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "9a",
+   "title": "Drought Conditions Update"
+  },
+  {
+   "no": "9b",
+   "title": "Upper Islas Creek Watershed Approach"
+  },
+  {
+   "no": "9c",
+   "title": "CleanPowerSF Integrated Resource Plan Modeling Results"
+  },
+  {
+   "no": "9d",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements"
+  },
+  {
+   "no": "10",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "11",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "11a",
+   "title": "Contract No. WD-2847, 8- and 16-Inch Ductile Iron Water Main Replacement on Laidley Street from Castro to Harper Streets and Various Side Streets"
+  },
+  {
+   "no": "11b",
+   "title": "Contract No. WW-709R, Various Locations Sewer Replacement No. 13"
+  },
+  {
+   "no": "12",
+   "title": "Public comment on the matter to be addressed during Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matter listed below as Conference with Legal Counsel"
+  },
+  {
+   "no": "15",
+   "title": "Announcement following Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "17",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

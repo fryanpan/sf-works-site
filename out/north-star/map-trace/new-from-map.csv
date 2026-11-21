@@ -1,0 +1,214 @@
+street,facility,segments,miles
+"MARINA BLVD",Shared-use Path,22,2.23
+"LINCOLN BLVD",Shared,31,2.15
+"WASHINGTON BLVD",Shared,9,1.55
+"WEST PACIFIC AVE",Shared-use Path,2,1.54
+"JOHN F KENNEDY DR",Car-free,13,1.30
+"LAGUNA HONDA BLVD",Separated,6,1.25
+"MASON ST",Shared-use Path,8,1.14
+"PARK BLVD",Shared,7,1.11
+"EL CAMINO DEL MAR",Shared,11,1.11
+"BAY SHORE BLVD",Separated,14,0.96
+"CLARENDON AVE",Undecided,8,0.91
+"TREASURE ISLAND RD",Separated,4,0.90
+"CLEMENT ST",Separated,14,0.88
+"PERIMETER PATH",Shared-use Path,1,0.84
+"POLK ST",Separated,22,0.80
+"ARGUELLO BLVD",Shared,8,0.80
+"MIDDLE WEST DR",Car-free,2,0.77
+"MENDELL ST",Shared,12,0.76
+"CAMBRIDGE ST",Shared,10,0.74
+"PRESIDIO BLVD",Shared,9,0.67
+"KOBBE AVE",Shared,7,0.64
+"SUNNYDALE AVE",Undecided,4,0.63
+"VIDAL DR",Shared,8,0.61
+"PORTWAY PSGE",Separated,2,0.60
+"AVENUE H",Separated,7,0.60
+"GROVE ST",Shared,6,0.56
+"TERRY A FRANCOIS BLVD",Separated,6,0.56
+"DIVISION ST",Separated,8,0.55
+"20TH AVE",Shared,4,0.54
+"LYON ST",Shared,9,0.54
+"AVENUE OF THE PALMS",Shared-use Path,2,0.54
+"LAKESHORE DR",Separated,3,0.51
+"LEGION OF HONOR DR",Shared,1,0.45
+"MISSION BAY BLVD SOUTH",Undecided,5,0.45
+"MISSION BAY BLVD NORTH",Undecided,5,0.44
+"MARKET ST",Shared L3,7,0.44
+"CLIPPER COVE AVE",Shared,4,0.43
+"03RD ST",Separated,5,0.43
+"AVENUE M",Shared,6,0.42
+"07TH AVE",Separated,4,0.41
+"13TH ST",Separated,5,0.41
+"AVENUE N",Shared-use Path,4,0.41
+"FONT BLVD",Shared-use Path,4,0.40
+"HARNEY WAY",Separated,2,0.38
+"GONZALEZ DR",Shared-use Path,6,0.38
+"CONSERVATORY DR EAST",Car-free,1,0.37
+"MARYLAND ST",Shared,5,0.35
+"TERESITA BLVD",Shared L3,7,0.33
+"MCDOWELL AVE",Shared,3,0.33
+"CHURCH PARKING LOT",Separated,5,0.33
+"AVENUE I",Shared,3,0.33
+"SAN BRUNO AVE",Separated,9,0.32
+"KEITH ST",Shared,6,0.32
+"MUSIC CONCOURSE DR",Shared,3,0.32
+"LANE ST",Shared,6,0.32
+"22ND ST",Shared,5,0.31
+"SANTOS ST",Undecided,4,0.31
+"JOHN F SHELLEY DR",Shared,1,0.31
+"HUNTERS POINT BLVD",Separated,3,0.31
+"GORGAS AVE",Shared,5,0.31
+"GRAHAM ST",Shared,4,0.30
+"HAGIWARA TEA GARDEN DR",Shared,4,0.30
+"JAMESTOWN AVE",Separated,1,0.28
+"RALSTON AVE",Shared,2,0.28
+"BARNARD AVE",Shared,2,0.28
+"BATTERY CAULFIELD RD",Shared,2,0.28
+"PACIFIC AVE",Shared,3,0.27
+"BOSWORTH ST",Shared,3,0.27
+"INDIANA ST",Shared,3,0.27
+"HUMBOLDT ST",Shared,4,0.26
+"23RD ST",Separated,4,0.26
+"MISSION BAY DR",Separated,2,0.26
+"HAVELOCK ST",Shared,4,0.26
+"SAINT CHARLES AVE",Shared,3,0.26
+"20TH ST",Separated,4,0.26
+"LETTERMAN DR",Shared,4,0.25
+"GIRARD RD",Shared,3,0.25
+"LOMBARD ST",Shared,4,0.24
+"VIRGINIA AVE",Shared,6,0.24
+"AVENUE E",Shared,2,0.24
+"ALEMANY BLVD",Separated,3,0.24
+"CABRILLO ST",Shared,4,0.23
+"MAYOR EDWIN M. LEE AVE",Separated,3,0.23
+"NAUMAN RD",Shared,1,0.23
+"WESTSIDE DR",Shared-use Path,1,0.23
+"ULLOA ST",Shared,3,0.22
+"SANCHEZ ST",Shared,2,0.22
+"AMATURY LOOP",Shared,1,0.21
+"TIFFANY AVE",Separated,2,0.21
+"CONSERVATORY DR WEST",Shared,1,0.20
+"CORBETT AVE",Shared,3,0.20
+"SHERIDAN AVE",Shared,5,0.20
+"SEAL ROCK DR",Shared,2,0.20
+"JUNIPERO SERRA BLVD",Shared,2,0.20
+"INNES AVE",Shared,3,0.19
+"THE EMBARCADERO",Separated,1,0.19
+"GALVEZ AVE",Separated,2,0.18
+"OLD MASON ST",Shared-use Path,1,0.17
+"CRISSY FIELD AVE",Car-free,1,0.17
+"VAN NESS AVE",Shared-use Path,1,0.17
+"BROOKDALE AVE",Undecided,1,0.17
+"BRAZIL AVE",Shared-use Path,1,0.17
+"WEDEMEYER ST",Shared,2,0.17
+"CHURCH ST",Shared,1,0.16
+"HALLECK ST",Shared,4,0.16
+"CESAR CHAVEZ ST",Separated,3,0.16
+"MACKY LN",Shared,2,0.16
+"PATTEN RD",Car-free,2,0.16
+"JUAN BAUTISTA CIR",Shared,6,0.15
+"MARSTON AVE",Shared,2,0.14
+"BRAGHETTA LN",Shared,2,0.14
+"STOW LAKE DR",Car-free,1,0.14
+"04TH ST",Undecided,3,0.14
+"15TH ST",Undecided,4,0.14
+"19TH AVE",Shared-use Path,2,0.14
+"LAGUNA ST",Separated,2,0.14
+"JACKSON ST",Shared,2,0.13
+"LA PLAYA",Shared-use Path,1,0.13
+"PALOU AVE",Shared,1,0.13
+"OAKDALE AVE",Shared,1,0.13
+"YOSEMITE AVE",Shared-use Path,1,0.13
+"UNDERWOOD AVE",Shared,1,0.13
+"CLOUD CIR",Shared,1,0.12
+"DR CARLTON B GOODLETT PL",Separated,1,0.12
+"BUCARELI DR",Shared-use Path,2,0.12
+"36TH AVE",Shared,2,0.12
+"CLEO RAND AVE",Separated,1,0.12
+"TAPIA DR",Car-free,2,0.12
+"SIESTA WAY",Shared,1,0.12
+"CARDENAS AVE",Shared-use Path,2,0.12
+"MRS. JACKSON WAY",Undecided,1,0.12
+"STEINER ST",Shared,3,0.12
+"POTRERO AVE",Separated,1,0.11
+"MACALLA RD",Separated,1,0.11
+"BOALT ST",Shared-use Path,2,0.11
+"BLOSSOM LN",Separated,2,0.10
+"SAN JOSE AVE",Shared,2,0.10
+"TRADE WINDS AVE",Separated,2,0.10
+"GENNESSEE ST",Shared,2,0.10
+"DONAHUE ST",Separated,2,0.10
+"UNNAMED ST",Shared-use Path,1,0.10
+"30TH AVE",Shared,2,0.10
+"DELAWARE ST",Shared,1,0.10
+"FOLSOM ST",Separated,1,0.10
+"GEORGIA LN",Shared,1,0.10
+"RIVAS AVE",Shared-use Path,1,0.09
+"AVENUE F",Shared,1,0.09
+"GREEN ST",Undecided,1,0.09
+"WALLER ST",Shared,2,0.09
+"HAIGHT ST",Shared,1,0.09
+"ANDREW ST",Separated,1,0.09
+"GREENOUGH AVE",Shared,2,0.09
+"INDUSTRIAL ST",Separated,2,0.09
+"CALVERT DR",Separated,2,0.09
+"MISSION BAY CIR",Shared,6,0.09
+"BEALE ST",Separated,1,0.09
+"NANCY PELOSI DR",Shared,1,0.09
+"GATEVIEW AVE",Shared-use Path,2,0.09
+"GILMAN AVE",Separated,1,0.09
+"PRAGUE ST",Shared,2,0.08
+"GAVEN ST",Shared,1,0.08
+"CHAIN OF LAKES DR",Undecided,1,0.07
+"PARKER AVE",Shared,1,0.07
+"WATERFRONT ST",Separated,1,0.07
+"LEGION CT",Shared L3,1,0.07
+"PIERCE ST",Shared,1,0.07
+"STRIPED BASS ST",Shared,1,0.06
+"FLOUNDER CT",Shared,1,0.06
+"NORTH 15TH AVE",Shared,1,0.06
+"DIAMOND HEIGHTS BLVD",Shared,1,0.06
+"JEFFERSON ST",Shared-use Path,1,0.06
+"DOUGLASS ST",Shared L3,1,0.06
+"WEST RD",Shared,1,0.05
+"17TH ST",Separated,1,0.05
+"13TH TI ST",Separated,2,0.05
+"FRIEDELL ST",Separated,1,0.05
+"WHIPPLE AVE",Shared,1,0.05
+"15TH AVE",Shared,1,0.05
+"MERCEDES WAY",Separated,2,0.05
+"OAK ACCESS RD",Separated,1,0.05
+"SOTOMAYOR ST",Separated,1,0.05
+"HERMANN ST",Shared,1,0.04
+"MAYBECK ST",Shared,1,0.04
+"GARCES DR",Shared,1,0.04
+"ESMERALDA AVE",Shared L3,1,0.04
+"ASHTON AVE",Shared,1,0.04
+"GUERRERO ST",Separated,1,0.04
+"BIGELOW CT",Shared,1,0.04
+"KELHAM ST",Shared,1,0.04
+"MERCHANT RD",Shared,1,0.04
+"29TH ST",Shared L3,1,0.04
+"CROAKER CT",Shared,1,0.04
+"BERCUT ACCESS RD",Shared-use Path,1,0.04
+"NAPLES ST",Shared,1,0.04
+"TOWNSEND ST",Separated,1,0.04
+"BUSH ST",Separated,1,0.03
+"INCINERATOR RD",Shared-use Path,1,0.03
+"PUTNAM ST",Shared L3,1,0.03
+"GRAFTON AVE",Shared,1,0.03
+"GIRARD ST",Shared,1,0.03
+"MONTGOMERY ST",Shared,1,0.03
+"BRADFORD ST",Shared L3,1,0.02
+"HIGH ST",Separated,1,0.02
+"STOREY AVE",Shared,1,0.02
+"ROBINSON ST",Separated,1,0.02
+"STANLEY ST",Separated,1,0.02
+"14TH AVE",Shared-use Path,1,0.02
+"PLYMOUTH AVE",Shared,1,0.02
+"DIAMOND ST",Shared,1,0.02
+"ILLINOIS ST",Separated,1,0.02
+"HOWARD ST",Separated,1,0.01
+"DUBOCE AVE",Shared,1,0.01
+"POST ST",Undecided,1,0.01

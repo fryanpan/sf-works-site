@@ -1,0 +1,160 @@
+{
+ "note": "Enrolment by grade from CDE DataQuest (Enrollment by Grade, school level), the latest year published, written by tools/school-trips/school-enrolment.py. Private schools are not in DataQuest.",
+ "schools": {
+  "balboa": {
+   "cds": "38684783830288",
+   "year": "2025-26",
+   "name": "Balboa High",
+   "total": 1195,
+   "grade_pct": {
+    "TK": 0.0,
+    "K": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "UE": 0.0,
+    "9": 23.7,
+    "10": 24.5,
+    "11": 25.3,
+    "12": 26.5,
+    "US": 0.0
+   },
+   "url": "https://dq.cde.ca.gov/dataquest/dqcensus/EnrGrdLevels.aspx?cds=38684783830288&agglevel=school&year=2025-26",
+   "read": "2026-10-07",
+   "tag": "[primary — read 2026-10-07]"
+  },
+  "burton": {
+   "cds": "38684783830254",
+   "year": "2025-26",
+   "name": "Burton (Phillip and Sala) Academic High",
+   "total": 1015,
+   "grade_pct": {
+    "TK": 0.0,
+    "K": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "UE": 0.0,
+    "9": 24.9,
+    "10": 23.5,
+    "11": 25.4,
+    "12": 26.1,
+    "US": 0.0
+   },
+   "url": "https://dq.cde.ca.gov/dataquest/dqcensus/EnrGrdLevels.aspx?cds=38684783830254&agglevel=school&year=2025-26",
+   "read": "2026-10-07",
+   "tag": "[primary — read 2026-10-07]"
+  },
+  "carmichael": {
+   "cds": "38684786040752",
+   "year": "2025-26",
+   "name": "Carmichael (Bessie)/FEC",
+   "total": 528,
+   "grade_pct": {
+    "TK": 3.8,
+    "K": 11.0,
+    "1": 9.7,
+    "2": 11.6,
+    "3": 11.9,
+    "4": 10.2,
+    "5": 8.1,
+    "6": 10.8,
+    "7": 12.1,
+    "8": 10.8,
+    "UE": 0.0,
+    "9": 0.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "US": 0.0
+   },
+   "url": "https://dq.cde.ca.gov/dataquest/dqcensus/EnrGrdLevels.aspx?cds=38684786040752&agglevel=school&year=2025-26",
+   "read": "2026-10-07",
+   "tag": "[primary — read 2026-10-07]"
+  },
+  "issf": {
+   "total": null,
+   "why": "Private school: not in CDE DataQuest's public-school enrolment."
+  },
+  "june-jordan": {
+   "cds": "38684780102103",
+   "year": "2025-26",
+   "name": "Jordan (June) School for Equity",
+   "total": 166,
+   "grade_pct": {
+    "TK": 0.0,
+    "K": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0,
+    "6": 0.0,
+    "7": 0.0,
+    "8": 0.0,
+    "UE": 0.0,
+    "9": 27.1,
+    "10": 21.1,
+    "11": 26.5,
+    "12": 25.3,
+    "US": 0.0
+   },
+   "url": "https://dq.cde.ca.gov/dataquest/dqcensus/EnrGrdLevels.aspx?cds=38684780102103&agglevel=school&year=2025-26",
+   "read": "2026-10-07",
+   "tag": "[primary — read 2026-10-07]"
+  },
+  "kipp-bayview": {
+   "cds": "38684780101337",
+   "year": "2025-26",
+   "name": "KIPP Bayview Academy",
+   "total": 179,
+   "grade_pct": {
+    "TK": 0.0,
+    "K": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 17.3,
+    "6": 25.1,
+    "7": 34.6,
+    "8": 22.9,
+    "UE": 0.0,
+    "9": 0.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "US": 0.0
+   },
+   "url": "https://dq.cde.ca.gov/dataquest/dqcensus/EnrGrdLevels.aspx?cds=38684780101337&agglevel=school&year=2025-26",
+   "read": "2026-10-07",
+   "tag": "[primary — read 2026-10-07]"
+  },
+  "lavenia-rochelle": {
+   "total": null,
+   "why": "Private school: not in CDE DataQuest's public-school enrolment."
+  },
+  "lycee-ortega": {
+   "total": null,
+   "why": "Private school: not in CDE DataQuest's public-school enrolment."
+  },
+  "proof": {
+   "total": null,
+   "why": "Private school: not in CDE DataQuest's public-school enrolment."
+  },
+  "synergy": {
+   "total": null,
+   "why": "Private school: not in CDE DataQuest's public-school enrolment."
+  }
+ }
+}

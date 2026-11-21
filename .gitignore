@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+__pycache__/
+.cache/
+scratch/
+.env
+.env.*
+local-settings.json
+.lfs-assets-id

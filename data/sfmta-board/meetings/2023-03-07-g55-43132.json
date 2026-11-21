@@ -1,0 +1,102 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-03-07",
+ "id": "g55-43132",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43132",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/27845"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of February 7, 2023 Special Meeting & February 21, 2023 Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA and will be acted upon by a single vote",
+   "decision": "ADOPTED — 6 ayes (Resolution 230307-019)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (Resolution 230307-019)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 230307-020)"
+  },
+  {
+   "no": "10.3",
+   "title": "Adopting a Resolution of Local Support for the programming of $34,277,000 of One Bay Area Grant Cycle 3 funds for the Central Embarcadero Safety Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 230307-021)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute Contract No. SFMTA-2022-37, Drug and Alcohol Testing Services for Taxicab Drivers",
+   "decision": "ADOPTED — 6 ayes (Resolution 230307-022)"
+  },
+  {
+   "no": "10.5",
+   "title": "Amending Transportation Code, Division II, Section 801 to implement parking restrictions to prohibit parking on portions of 11th Street",
+   "decision": "ADOPTED — 6 ayes (Resolution 230307-023)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding Vision Zero including a speed management update, 2022 End of Year Fatality Report, and traffic enforcement update"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(b) as to whether to meet in closed session to discuss public employee performance evaluations",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,35 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2023-12-14",
+ "id": "g91-45118",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=45118",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1a",
+   "title": "545 SANSOME STREET-Raise the absolute cumulative limit for Maritime Plaza, in order to accommodate new shadow cast by the proposed project at 545 Sansome Street"
+  },
+  {
+   "no": "1b",
+   "title": "545 SANSOME STREET-Adopt a Resolution regarding whether net new shadow cast by proposed project at 545 Sansome Street will have a significant adverse impact on the use of Maritime Plaza"
+  },
+  {
+   "no": "2a",
+   "title": "545 SANSOME STREET-Request for Adoption of Shadow Findings"
+  },
+  {
+   "no": "2b",
+   "title": "545 SANSOME STREET-Request for Downtown Project Authorization to allow a vertical addition to an existing building"
+  },
+  {
+   "no": "2c",
+   "title": "545 SANSOME STREET-Request for Office Development Allocation"
+  }
+ ],
+ "body": "rec-park-commission"
+}

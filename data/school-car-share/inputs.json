@@ -1,0 +1,560 @@
+{
+  "_about": "Inputs to scripts/school-car-share-levers.py. Every number carries `source` (a cite, with provenance tag) or `assumption: true`. Read by the script; edit here, not in the script. Shares are percent (0-100) unless the key ends in _frac.",
+  "measured": {
+    "family_car_all_grades_2024_25": {
+      "value": 48.6,
+      "source": "SF Safe Routes to School, 2024-25 Annual Report, pp. 40-41, https://www.sfsaferoutes.org/documents/2026/SFSRTS_Report_final_spreads_low_res.pdf [primary — read 2026-09-30]"
+    },
+    "other_modes_2024_25": {
+      "transit": 26.8,
+      "walk": 18.1,
+      "carpool": 3.9,
+      "bike": 2.0,
+      "other": 0.7,
+      "source": "Same report, pp. 40-41 [primary — read 2026-09-30]"
+    },
+    "modes_by_tally_grade_2024_25": {
+      "K": {
+        "car": 54,
+        "walk": 24,
+        "bike": 6,
+        "carpool": 3,
+        "transit": 13
+      },
+      "5": {
+        "car": 56,
+        "walk": 24,
+        "bike": 1,
+        "carpool": 4,
+        "transit": 14
+      },
+      "6": {
+        "car": 47,
+        "walk": 13,
+        "bike": 1,
+        "carpool": 6,
+        "transit": 33
+      },
+      "9": {
+        "car": 33,
+        "walk": 8,
+        "bike": 1,
+        "carpool": 3,
+        "transit": 55
+      },
+      "mixed": {
+        "car": 49,
+        "walk": 9,
+        "bike": 0,
+        "carpool": 6,
+        "transit": 35
+      },
+      "source": "SF Safe Routes to School, 2024-25 Annual Report, p. 42, '2024-2025 Mode Split by Grade' bar chart, https://www.sfsaferoutes.org/documents/2026/SFSRTS_Report_final_spreads_low_res.pdf [primary — read 2026-10-01]. 'Mixed grade' classrooms bring together students from different grade levels; the report does not say which. No school-bus bar."
+    },
+    "target": {
+      "value": 30,
+      "source": "SRTS goal: 'Reduce single family vehicle trips from 48% in 2018 to 30% by 2030', SFMTA 7-19-22 MTAB Item 10.4 staff report, p. 3, https://www.sfmta.com/reports/7-19-22-mtab-item-104-contract-amendment-safe-routes-school [primary — read 2026-10-01]"
+    },
+    "enrollment_2024_25_noncharter": {
+      "by_grade": {
+        "TK": 1085,
+        "K": 3632,
+        "1": 3732,
+        "2": 3814,
+        "3": 3801,
+        "4": 3792,
+        "5": 3774,
+        "6": 3247,
+        "7": 3320,
+        "8": 3447,
+        "9": 3580,
+        "10": 3836,
+        "11": 3881,
+        "12": 3961
+      },
+      "source": "CDE DataQuest, Enrollment by Grade, San Francisco Unified (38-68478), 2024-25 Census Day: All Schools minus the Charter view, https://dq.cde.ca.gov/dataquest/dqcensus/EnrGrdLevels.aspx?cds=3868478&agglevel=district&year=2024-25 [primary — read 2026-10-01]. All schools 55,840; charter 6,938; district-run 48,902. The Travel Tally covers SFUSD schools, so charters are left out."
+    },
+    "k5_distance_bands_today": {
+      "under_1": 50.6,
+      "1_to_2": 21.5,
+      "over_2": 27.8,
+      "source": "SFCTA, School Access Plan, May 2023, Fig. 5, p. 16, https://www.sfcta.org/sites/default/files/2024-07/SF_School_Access_Plan_Report_2023-05-04_FINAL.pdf [primary — read 2026-10-01]. No year or method given."
+    },
+    "k5_driven_by_distance_2016": {
+      "bands": [
+        {
+          "band": "under_1",
+          "miles": "<1",
+          "parents_pct": 27,
+          "driven_pct": 46,
+          "transit_pct": 15
+        },
+        {
+          "band": "1_to_2",
+          "miles": "1-2",
+          "parents_pct": 23,
+          "driven_pct": 61,
+          "transit_pct": 12
+        },
+        {
+          "band": "over_2",
+          "miles": "2-3",
+          "parents_pct": 20,
+          "driven_pct": 50,
+          "transit_pct": 28
+        },
+        {
+          "band": "over_2",
+          "miles": "3-4",
+          "parents_pct": 11,
+          "driven_pct": 73,
+          "transit_pct": 6
+        },
+        {
+          "band": "over_2",
+          "miles": ">4",
+          "parents_pct": 19,
+          "driven_pct": 61,
+          "transit_pct": 7
+        }
+      ],
+      "source": "SFCTA, Findings of the Child Transportation Survey, November 2016, pp. 10 and 12, Figs. 3 and 7, https://www.sfcta.org/sites/default/files/2019-03/Child_Transportation_FINAL.pdf [primary — read 2026-10-01]. K-5 parents at public, private and parochial schools; morning drop-off. driven_pct is Fig. 3's \"drive alone\" bar (only family members in the car) and transit_pct its \"public transit\" bar, as labelled [primary — read 2026-10-18]."
+    },
+    "assignment_option_bands": {
+      "source_file": "out/school-assignment/options.json",
+      "source": "Our scenarios, tools/school-trips/school-assignment-options.py; method in topics/school-trips/assignment-options.md. Modelled, not measured.",
+      "options": {
+        "A_small_zones_up_to_3": [
+          "option_a_small_zones",
+          "zones_of_2_to_3",
+          "with_citywide",
+          "0.15"
+        ],
+        "A_small_zones_up_to_5": [
+          "option_a_small_zones",
+          "zones_of_3_to_5",
+          "with_citywide",
+          "0.15"
+        ],
+        "B_neighborhood_all_schools": {
+          "scale_toward": {
+            "path": [
+              "option_c_neighborhood_plus_citywide"
+            ],
+            "between": [
+              "0.15",
+              "0.3"
+            ]
+          },
+          "sim_key": "neighborhood_all_schools",
+          "toward_sim_key": "neighborhood_citywide_programs",
+          "low_case": "today",
+          "method": "SFUSD/Stanford simulate this option's average trip only (1.21 mi, against 1.40 today and 1.06 under Neighborhood + Citywide Programs). Its bands are today's bands moved (1.40-1.21)/(1.40-1.06) = 56% of the way to Neighborhood + Citywide Programs' bands, which are themselves interpolated between our 15% and 30% citywide scenarios (0.83 and 1.20 mi) to Stanford's 1.06 mi. Low case: families keep choosing as today (about 30% at their attendance-area school), so the bands stay at today's and the drop is zero."
+        },
+        "C_neighborhood_citywide_15pct": [
+          "option_c_neighborhood_plus_citywide",
+          "0.15"
+        ],
+        "C_neighborhood_citywide_30pct": [
+          "option_c_neighborhood_plus_citywide",
+          "0.3"
+        ]
+      }
+    },
+    "sfusd_simulated_mean_trip_miles": {
+      "today": 1.4,
+      "small_zones": 1.23,
+      "neighborhood_all_schools": 1.21,
+      "neighborhood_citywide_programs": 1.06,
+      "source": "SFUSD, School Reorganization Study Session #2 deck, 2026-08-28, 'Performance on Priorities | Simulation Results' slide (Stanford Graduate School of Education simulation on 2023-24 applicants' rankings), https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20(FINAL%2C%208.28.26).pdf [primary — read 2026-10-01], via topics/school-trips/assignment-options.md"
+    },
+    "yellow_bus": {
+      "general_ed_riders_2022": 2000,
+      "students_over_2_mi": 6500,
+      "expansion_riders": 1520,
+      "expansion_cost_per_year_usd": 4500000,
+      "source": "SFCTA, School Access Plan, May 2023, p. 42 (19 more buses, 1,520 more riders, two staff, about $4.5M a year; about 2,000 general-education riders; more than 6,500 students with commutes over 2 miles) [primary — read 2026-10-01], via topics/school-trips/bus-and-transit-levers.md"
+    },
+    "srts_engineering_effect_pp": {
+      "value": 3.3,
+      "source": "McDonald et al., 'Impact of the Safe Routes to School Program on Walking and Bicycling', Journal of the American Planning Association 80(2), 2014, p. 160: an engineering improvement 'was associated with a 3.3 percentage point increase in walking and bicycling (p = .031)'. 801 schools in DC, Florida, Oregon and Texas. https://mcdonald.web.unc.edu/wp-content/uploads/sites/8583/2014/12/McDonald_etal_ImpactsSRTS_JAPA2014.pdf [primary — read 2026-10-01]"
+    },
+    "srts_education_effect_pp_per_year": {
+      "value": 0.9,
+      "source": "Same paper, p. 160: 'each year of participation in an education and encouragement program associated with a 0.9 percentage point increase in walking and bicycling (p = .025)' [primary — read 2026-10-01]"
+    },
+    "ssc_build_out_years": {
+      "value": 10,
+      "source": "SFMTA, 9-1-26 MTAB Item 12 Safe School Connections, slide 8: connecting all 249 schools 'could take up to 10 years', https://www.sfmta.com/reports/9-1-26-mtab-item-12-safe-school-connections [primary — read 2026-10-01], via topics/school-trips/srts-30-percent-plans.md"
+    },
+    "carpool_interest_pct": {
+      "value": 50,
+      "source": "Child Transportation Survey 2016, p. 15: 'About 50% of respondents said they may use or would like to use carpooling' (K-5 parents) [primary — read 2026-10-01], via topics/sfmta-safe-school-connections/why-families-drive.md. Interest, not an effect size."
+    },
+    "bus_riders_2024_25": {
+      "value": 4098,
+      "source": "SF Safe Routes to School, 2024-25 Annual Report, p. 42: 4,098 bus riders, 8.3% of students [primary — read 2026-09-30]"
+    },
+    "tally_back_series": {
+      "y2019_20_original": {
+        "car": 46,
+        "school_bus": 4,
+        "transit": 21,
+        "walk": 24,
+        "carpool": 3,
+        "bike": 1,
+        "source": "SF Safe Routes to School, 2019-20 Evaluation Highlights, p. 10, https://www.sfsaferoutes.org/documents/2021/SFSRTS-Evaluation-Highlights_072320_FINAL.pdf [primary — read 2026-10-01]. School bus is its own slice."
+      },
+      "y2019_20_reprinted_2024_25": {
+        "car": 47,
+        "transit": 25,
+        "source": "SF Safe Routes to School, 2024-25 Annual Report, p. 41, '2019-2025 Mode Choices' chart [primary — read 2026-10-01]. 21% transit + 4% school bus = 25%: bus folded into transit."
+      },
+      "y2022_23_original": {
+        "car": 50.3,
+        "school_bus": 3.8,
+        "walk": 17,
+        "carpool": 3.5,
+        "bike": 1.1,
+        "source": "SF Safe Routes to School, 2023-24 report, Fig. 1, p. 36, https://www.sfsaferoutes.org/wp-content/uploads/2025/02/SFSRTS_Report_2324_digital_low_res_pages_1_31_25.pdf [primary — read 2026-10-01]"
+      },
+      "y2022_23_reprinted_2024_25": {
+        "car": 52,
+        "transit": 25,
+        "source": "SF Safe Routes to School, 2024-25 Annual Report, p. 41 [primary — read 2026-10-01]. 50.3/(1-0.038) = 52.3: bus taken out and the rest rescaled."
+      },
+      "car_series_2023_24_fig2": {
+        "2012-13": 46.2,
+        "2013-14": 44.2,
+        "2014-15": 44.0,
+        "2015-16": 45.5,
+        "2017-18": 45.8,
+        "2019-20": 45.2,
+        "2022-23": 50.3,
+        "source": "SF Safe Routes to School, 2023-24 report, Fig. 2, p. 37 [primary — read 2026-10-01]. Every point before 2022-23 has bus riders in its denominator."
+      }
+    },
+    "school_streets_car_effect_pp": {
+      "low": 2.5,
+      "central": 5.3,
+      "high": 8.2,
+      "source": "Patterson et al., 'Effectiveness and equity impacts of traffic restriction schemes outside schools: a controlled natural experimental study', IJBNPA 2025, abstract: at 166 English and Scottish primary schools against 332 matched controls, 'the proportion travelling by private motor vehicle decreased by 5.3 points (2.5 to 8.2), relative to control schools'; baseline motor travel 21.8% at intervention schools (Table 1). https://pmc.ncbi.nlm.nih.gov/articles/PMC12964863/ [primary — read 2026-10-01]. Low and high are the 95% CI. Counter-evidence: Bradford, 3 schools, active travel fell against controls (PMC12219895), via topics/school-trips/levers-elsewhere.md."
+    },
+    "walking_school_bus_effect_pp": {
+      "low": 1.1,
+      "central": 9.04,
+      "high": 16.98,
+      "source": "Johnson et al., 'Evaluation of a walking school bus program: a cluster randomized controlled trial', IJBNPA 2024: 22 Title I elementary schools in Houston and Seattle, 418 children in grades 3-5 living within 1 mile, buses 'led by trained research assistants'; percentage of days active commuting rose 'β = 9.04; 95% CI: 1.10, 16.98' against controls. Car trips not reported separately. https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/ [primary — read 2026-10-01]. Low and high are the 95% CI."
+    },
+    "road_pricing_child_switching": {
+      "london": {
+        "car_only_at_baseline": 105,
+        "car_only_switched_out": 44,
+        "other_at_baseline": 860,
+        "other_switched_to_car_only": 48
+      },
+      "luton": {
+        "car_only_at_baseline": 364,
+        "car_only_switched_out": 74,
+        "other_at_baseline": 599,
+        "other_switched_to_car_only": 124
+      },
+      "source": "Xiao et al., 'Children's Health in London and Luton (CHILL) cohort: a 12-month natural experimental study of the effects of the Ultra Low Emission Zone on children's travel to school', IJBNPA 2024, Table 2 and Table 3, https://pmc.ncbi.nlm.nih.gov/articles/PMC11375866/ [primary — read 2026-10-01]. Children aged 6-9 at 44 schools 'with catchment areas within or bordering the Central London ULEZ' against 40 schools in Luton and Dunstable; baseline 2018-19, follow-up 2019-20, mean 7 months after the ULEZ opened on 2019-04-08. 'Inactive modes were exclusively taking a private vehicle or taxi to school'; any trip with walking, cycling, scootering or public transport counts as active. So the car-only group excludes transit riders. Odds ratio is the fully adjusted multilevel model for switching from car-only to active (95% CI). The paper's own caveat: 'implementation of multiple overlapping strategies in London ... makes it challenging to attribute changes specifically to the ULEZ'.",
+      "odds_ratios_reported": {
+        "out_of_car_only": {
+          "central": 3.51,
+          "low": 1.68,
+          "high": 7.31
+        },
+        "into_car_only": {
+          "central": 0.22,
+          "note": "unadjusted 0.22 (0.15-0.31), active to inactive"
+        },
+        "note": "Reported for context only. The paper gives no difference in differences and no interval on the car-only share; the model does not scale anything by these."
+      },
+      "ulez_design": "Per the paper: vehicles below emissions standards paid 'a daily charge to travel within the zone, with the scheme operating 24 h a day and 365 days per year'; the zone was 'bounded by the Inner Ring Road'; 'The ULEZ expanded to all London boroughs in August 2023'. Children aged 6-9 (school years 2-4)."
+    }
+  },
+  "assumptions": {
+    "measurement_tally": {
+      "value": "2030-31",
+      "assumption": true,
+      "why": "The tally is biennial (2022-23, 2024-25), so the tally that tests 'by 2030' is the fall 2030 one, in school year 2030-31. Every case is read there."
+    },
+    "distance_causal_frac": {
+      "low": 0.5,
+      "central": 0.75,
+      "high": 1.0,
+      "assumption": true,
+      "why": "The 2016 driven-by-distance shares are cross-sectional. Families who drive far may differ from those who live near (work trips, aftercare), so moving a child nearer buys at most the full difference (high) and plausibly less. The distance figures also differ in method: CTS 2016 measured from the centre of the home neighbourhood and covered private and parochial schools (27/23/50% under 1, 1-2, over 2 miles), SFCTA 2023 gives no method (50.6/21.5/27.8), and our option bands are straight-line from census blocks. The driven shares over 2 miles are noisy and not monotonic (50%, 73%, 61%)."
+    },
+    "bus_rider_was_car_frac": {
+      "low": 0.4,
+      "central": "derived: 2016 driven share for trips over 2 mi",
+      "high": 0.73,
+      "assumption": true,
+      "why": "A new yellow-bus rider lives over 2 miles away; central is the 2016 driven share for that band, high the 3-4 mile share (73%), low a guess that many seats go to families who would have taken Muni."
+    },
+    "bus_full_coverage_riders": {
+      "value": 4500,
+      "assumption": true,
+      "why": "Seats for every student over 2 miles: 6,500 minus today's 2,000. The School Access Plan's 6,500 may cover all grades, not only K-5; it matches 27.8% of TK-5 enrollment (6,570). Cost scaled linearly from SFUSD's $4.5M for 1,520, which ignores fleet and driver limits. It also assumes every current general-education rider lives over 2 miles; Policy 5101.11 rations seats by equity priority, not distance, so the true number of unserved students over 2 miles, and the cost, may be higher."
+    },
+    "active_gain_from_car_frac": {
+      "low": 0.45,
+      "central": "derived: family car / (family car + transit + carpool), by tally grade (K and 5th for TK-5, 6th for 6-8), weighted by TK-8 enrollment",
+      "high": 0.85,
+      "assumption": true,
+      "why": "A new walk or bike trip is taken from the other modes in proportion to their shares in the grades the effect applies to (central, about 0.70 for TK-8 and 0.76 for TK-5). High: drivers switch first, as at the school gate. Low: many new walkers came off Muni."
+    },
+    "engineering_effect_pp": {
+      "low": 1.5,
+      "central": "measured: McDonald 2014",
+      "high": 5.0,
+      "assumption": true,
+      "why": "Low brackets the paper's point estimate from below; the paper's interval is in a technical appendix that was not read. High is the paper's relative effect, about 18% of its sample's roughly 18% walk-and-bike share, applied to SF's K and 5th-grade walk-and-bike share of 25% to 30% (p. 42): about 5 points. The study measured Safe Routes infrastructure at and around the school (sidewalks, crossings, calming), not bike-network connections."
+    },
+    "engineering_students_covered_by_2030_frac": {
+      "low": 0.2,
+      "central": 0.4,
+      "high": 1.0,
+      "assumption": true,
+      "why": "Safe School Connections reaches all schools in up to 10 years; central is four years of a ten-year build (2026-27 to 2029-30) at an even pace. High is full rollout by the fall 2030 tally, at Bryan's instruction of 2026-10-01: the top of every lever's range assumes the lever reaches everyone it could serve. That is every SFUSD TK-8 school, against SFMTA's own up-to-10-year schedule. The 249 schools include private schools, so this is a share of SFUSD TK-8 students, not of the 249."
+    },
+    "education_extra_students_frac": {
+      "low": 0.1,
+      "central": 0.25,
+      "high": 0.67,
+      "assumption": true,
+      "why": "Share of SFUSD students added to Safe Routes education and encouragement who are not in it now. High 0.67: 15,997 student participants in 2024-25 (SRTS 2024-25 report, Impact by the Numbers) of 48,902 leaves at most 67% not in it. No source gives today's coverage. High is full rollout by the fall 2030 tally, at Bryan's instruction of 2026-10-01: the top of every lever's range assumes the lever reaches everyone it could serve. Since 179 schools already took part in some activity in 2024-25, 1.0 overstates the students who could be added; it is the ceiling, not an estimate."
+    },
+    "education_years_by_2030": {
+      "low": 3,
+      "central": 4,
+      "high": 4,
+      "assumption": true,
+      "why": "Years of participation before the fall 2030 tally if expansion starts in 2026-27 (central) or 2027-28 (low)."
+    },
+    "carpool_pp_all_grades": {
+      "low": 0.5,
+      "central": 1.0,
+      "high": 2.0,
+      "assumption": true,
+      "why": "A school carpool-matching programme. No SF or published effect size was found. Half of 2016 K-5 parents said they were interested."
+    },
+    "middle_school_transit_pp_grades_6_8": {
+      "low": 0.0,
+      "central": 1.0,
+      "high": 3.0,
+      "assumption": true,
+      "why": "More Muni school trippers and Transit Assistance Program staff at middle schools (trippers serve 16 middle and high schools today; MTAP is concentrated on high schools). No effect size found. Grade 6 drives 47% against 33% in grade 9, where transit carries 55%."
+    },
+    "background_trend_pp": {
+      "low": 0.0,
+      "central": 0.0,
+      "high": "derived: 48.6 minus the 2019-20 point of the 2023-24 report's Fig. 2 (45.2), on the bus reading in use",
+      "assumption": true,
+      "why": "Not a lever. Central: flat from 2024-25. High: back to the 2019-20 level, the last tally before the pandemic, 45.2% on the 2023-24 report's Fig. 2. That figure has bus riders in its denominator, so under the counted reading the return is 48.6 - 45.2 = 3.4 points, and under the excluded reading 2019-20 is 45.2 / (1 - 0.04) = 47.1% and the return is 1.5 points. The 2024-25 report's own reprint of 2019-20 is 47%, which would make the return 1.6 points even on the counted reading."
+    },
+    "new_rules_grades_at_tally": {
+      "value": [
+        "TK",
+        "K",
+        "1",
+        "2"
+      ],
+      "assumption": true,
+      "why": "Phase-in from topics/school-trips/assignment-options.md: new rules for TK and K in 2028-29, one more grade a year, current students not moved. The script weights these grades by enrollment."
+    },
+    "bus_riders_in_tally": {
+      "value": "counted",
+      "alternative": "excluded",
+      "assumption": true,
+      "why": "Three of four indications put bus riders inside the tally's Transit, a non-car mode: the 2024-25 report defines transit as 'taking Muni or a Yellow School Bus' (pp. 4-5); its chart reprints 2019-20 as car 47%, transit 25% (p. 41), which is the 2019-20 Highlights' 21% transit plus 4% school bus (p. 10); and SFMTA's August 2025 post says 'over a quarter of all students take public transit or the yellow school bus'. Against: the same chart reprints 2022-23 as car 52%, which is the 2023-24 report's 50.3% with its 3.8% school bus taken out (50.3/0.962 = 52.3). Central follows the weight: bus counted as a non-car mode, so drop = new riders x share who were driven / all students. Alternative ('excluded'): bus riders leave the denominator, share = (C - r p) / (N - r), N = students less today's 4,098 bus riders."
+    },
+    "streets_programs_bands": {
+      "value": [
+        "TK-5",
+        "6-8"
+      ],
+      "assumption": true,
+      "why": "McDonald et al. 2014 studied elementary and middle schools, so the street and program effects are applied to TK-8 only."
+    },
+    "school_streets_tk5_covered_frac": {
+      "low": 0.1,
+      "central": 0.25,
+      "high": 1.0,
+      "assumption": true,
+      "why": "High is full rollout by the fall 2030 tally, at Bryan's instruction of 2026-10-01: the top of every lever's range assumes the lever reaches everyone it could serve. Share of TK-5 students whose school has a daily timed School Street, closed to cars at drop-off and pick-up, by the fall 2030 tally. SF has none and no plan for any: the School Street events SFMTA plans are afternoon events to share information with students, not closures at bell times. Applied to TK-5 only because the UK study's schools are primary schools. The UK outcome is 'private motor vehicle', which includes carpools; 125 of the 166 intervention schools (75%) were in London; and the authors say park-and-stride 'contributed most' to the gain; whether the tally counts a park-and-stride trip as a family-car trip is unknown. Summed with Safe School Connections street changes as if at different schools; if the same schools get both, the two effects may not fully add, so the row leans high."
+    },
+    "walking_school_bus_children": {
+      "low": 500,
+      "central": 1500,
+      "high": 12000,
+      "assumption": true,
+      "why": "Children in a staffed walking school bus at low-income elementary schools by the fall 2030 tally. High is full rollout by the fall 2030 tally, at Bryan's instruction of 2026-10-01: the top of every lever's range assumes the lever reaches everyone it could serve. Every TK-5 student living under a mile from school: 50.6% (School Access Plan, Fig. 5) of 23,630 TK-5 students is 11,957, rounded to 12,000. The trial enrolled low-income schools only, so applying its effect to every school is a stretch. Whether SF Safe Routes walking school buses use paid leaders was not checked. Each child's rise in days walked or biked is taken out of the family car at the TK-5 car fraction."
+    },
+    "lever_groups": {
+      "assumption": true,
+      "why": "The note's lever list. Similar levers are folded into one row. 'alternatives': only one member can happen, so low is the low member at its low, central the central member at its central, high the high member at its high. 'sum': the members add up, case by case.",
+      "groups": {
+        "bus_more_seats": {
+          "label": "More yellow-bus seats",
+          "kind": "alternatives",
+          "members": [
+            "bus_sfusd_costed",
+            "bus_every_over_2mi"
+          ],
+          "low": "bus_sfusd_costed",
+          "central": "bus_sfusd_costed",
+          "high": "bus_every_over_2mi",
+          "who": "SFUSD Board of Education; city money toward it from the Mayor and Board of Supervisors",
+          "when": "Earliest 2027-28 [assumption]",
+          "cost": "$4.5M a year (SFUSD's 19 buses) to about $13.3M (a seat for every student over 2 miles)"
+        },
+        "street_changes": {
+          "label": "Street changes at schools",
+          "kind": "sum",
+          "members": [
+            "engineering_school_streets",
+            "school_streets_daily"
+          ],
+          "who": "SFMTA, with SFUSD",
+          "when": "Safe School Connections: up to 10 years for all 249 schools; no daily School Street today or planned",
+          "cost": "Not costed per school in sources read"
+        },
+        "carpool": {
+          "label": "School carpool matching",
+          "kind": "sum",
+          "members": [
+            "carpool_matching"
+          ],
+          "who": "SFMTA Safe Routes to School, with SFUSD",
+          "when": "From 2027-28 [assumption]",
+          "cost": "Not costed"
+        },
+        "travel_programs": {
+          "label": "School travel programs",
+          "kind": "sum",
+          "members": [
+            "education_encouragement",
+            "walking_school_bus_paid"
+          ],
+          "who": "SFMTA Safe Routes to School, with SFUSD",
+          "when": "From 2026-27 if expanded",
+          "cost": "Program budget $8.0M for Dec 2022 to Nov 2026; expansion not costed"
+        },
+        "assignment_redesign": {
+          "label": "Elementary assignment redesign",
+          "kind": "alternatives",
+          "members": [
+            "assignment_A_small_zones_up_to_3",
+            "assignment_A_small_zones_up_to_5",
+            "assignment_B_neighborhood_all_schools",
+            "assignment_C_neighborhood_citywide_15pct",
+            "assignment_C_neighborhood_citywide_30pct"
+          ],
+          "low": "assignment_B_neighborhood_all_schools",
+          "central": "assignment_A_small_zones_up_to_3",
+          "high": "assignment_C_neighborhood_citywide_15pct",
+          "who": "SFUSD Board of Education: direction 2026-10-13, vote 2027-04-13",
+          "when": "TK and K from 2028-29, one grade a year",
+          "cost": "Not costed by SFUSD"
+        },
+        "middle_school_transit": {
+          "label": "More Muni for middle schools",
+          "kind": "sum",
+          "members": [
+            "middle_school_transit"
+          ],
+          "who": "SFMTA Transit",
+          "when": "Any service change [assumption]",
+          "cost": "Not published"
+        },
+        "road_pricing": {
+          "label": "Charge for driving into a zone (London-style)",
+          "kind": "sum",
+          "members": [
+            "road_pricing"
+          ],
+          "who": "State Legislature first (Vehicle Code 9400.8 bars it); then the SFCTA board (the 11 Supervisors), the SFMTA Board and the Board of Supervisors",
+          "when": "Nothing authorized; SFCTA's study is paused; 'at least five years' to plan and build",
+          "cost": "SFCTA's studied peak charge $6.50, with income discounts down to free; revenue not published on SFCTA's page"
+        }
+      }
+    },
+    "road_pricing_effect_rel": {
+      "low": 0.0,
+      "central": "derived",
+      "high": "derived",
+      "assumption": true,
+      "why": "Relative fall in the family-car share for elementary students whose school trip is charged. The paper reports no difference in differences and no interval on the car-only share, so every value here is our reading of its Table 2 [inference — mine]. London's car-only share rose from 105 to 109 of 965 children (x1.038) and Luton's from 364 to 414 of 963 (x1.137); the fall is only relative to Luton. Central: the ratio reading, London ended 8.7% below the path Luton's took. High: the linear reading, a 4.8-point gap in car-only share, taken as a share of Luton's starting 37.8% (12.7%). Taken as a share of London's own starting 10.9% it would be 44%, which we do not use because London's base is far below SF's. Low: zero, because pushing the out-of-car odds ratio's interval through Table 2 gives roughly -2% to +29%, which includes no effect. Applied to TK-5 only, the ages the study measured."
+    },
+    "road_pricing_students_covered_frac": {
+      "low": 0.0,
+      "central": 0.1,
+      "high": 1.0,
+      "assumption": true,
+      "why": "Share of TK-5 students whose school trip is charged at the fall 2030 tally. Low: nothing in force; Vehicle Code 9400.8 bars a local charge for using streets, SFCTA's study is paused, and SFCTA says a program takes 'at least five years to plan and implement'. Central, an upper bound: the zone SFCTA studied, in force by fall 2030. The polygon below is our hand-drawn reading of SFCTA's boundary description; the script counts public schools inside it from out/ssc-school-map/compare.csv. Those are Chinatown, Tenderloin and SoMa schools whose families drive less than the city average, and a cordon does not charge trips that start and end inside it, so 10% overstates the charged share. High: a citywide zone, as London extended the ULEZ to all boroughs in 2023.",
+      "zone_polygon_lonlat": [
+        [
+          -122.4243,
+          37.8065
+        ],
+        [
+          -122.4205,
+          37.779
+        ],
+        [
+          -122.426,
+          37.7782
+        ],
+        [
+          -122.427,
+          37.771
+        ],
+        [
+          -122.4155,
+          37.7685
+        ],
+        [
+          -122.404,
+          37.77
+        ],
+        [
+          -122.4025,
+          37.7705
+        ],
+        [
+          -122.3935,
+          37.7637
+        ],
+        [
+          -122.387,
+          37.7637
+        ],
+        [
+          -122.3855,
+          37.776
+        ],
+        [
+          -122.388,
+          37.788
+        ],
+        [
+          -122.396,
+          37.796
+        ],
+        [
+          -122.404,
+          37.807
+        ],
+        [
+          -122.418,
+          37.809
+        ]
+      ],
+      "zone_polygon_note": "Hand-drawn from SFCTA's description, 'along Van Ness, Fulton, Laguna, 14th St, Division St, Townsend St, 7th St, and Mariposa St', closed along the Bay shore [inference — mine]. https://www.sfcta.org/downtown [primary — read 2026-10-01]"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2019-08-13",
+ "id": "g22-33809",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33809",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of July 23, 2019"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "5b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5c",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5d",
+   "title": "Sewer Inspection and Replacement Program Update"
+  },
+  {
+   "no": "5e",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "5f",
+   "title": "Water System Improvement Program Status of Construction Change Orders"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Bay Delta Water Quality Control Plan Update"
+  },
+  {
+   "no": "6b",
+   "title": "CleanPowerSF Update"
+  },
+  {
+   "no": "6c",
+   "title": "Quarterly Audit and Performance Review Report"
+  },
+  {
+   "no": "6d",
+   "title": "Water Enterprise Capital Improvement Program Quarterly Report"
+  },
+  {
+   "no": "6e",
+   "title": "Water System Improvement Program Local and Regional Quarterly Reports"
+  },
+  {
+   "no": "6f",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements"
+  },
+  {
+   "no": "7",
+   "title": "Other Commission Business"
+  },
+  {
+   "no": "8",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "9",
+   "title": "REGULAR CALENDAR"
+  },
+  {
+   "no": "9",
+   "title": "Montara Mountain Rainfall Prediction and Radio Replacement Project;"
+  },
+  {
+   "no": "10",
+   "title": "Approve the Revised Water Supply Assessment for the proposed Potrero Power Station Project"
+  },
+  {
+   "no": "11",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "12",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel Closed Session"
+  },
+  {
+   "no": "20",
+   "title": "Conference with Legal Counsel Existing Litigation-City and County of San Francisco v. Pacific Gas & Electric"
+  },
+  {
+   "no": "21",
+   "title": "Announcement Following Closed Session"
+  },
+  {
+   "no": "22",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "23",
+   "title": "Other New Business"
+  },
+  {
+   "no": "24",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

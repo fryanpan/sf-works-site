@@ -1,0 +1,4 @@
+gtfs-realtime-bindings==3.0.0
+protobuf>=5,<8
+pyarrow>=17
+google-cloud-storage>=2.18

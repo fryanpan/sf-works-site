@@ -1,0 +1,76 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-02-26",
+ "id": "g218-45511",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45511",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the February 12, 2024 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Job Order Contract J58 General Building Services [Micro-LBE Set-Aside] - Contract Award"
+  },
+  {
+   "no": "4c",
+   "title": "As-Needed Sediment Characterization and Coastal Engineering Consultation Services (ASQ 2022), Contract ID 1000028998 – Contract Modificatio"
+  },
+  {
+   "no": "4d",
+   "title": "As-Needed Specification Writing Services No. 4 - Emily Borland Specifications, Inc. - Contract Award"
+  },
+  {
+   "no": "4e",
+   "title": "As-Needed Specification Writing Services No. 4. Dabri, Inc. - Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "City Hall Mechanical Replacement – Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "Public Works Collaboration with 311"
+  },
+  {
+   "no": "7",
+   "title": "Department of Public Works Workforce Development"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment – Continued from Item 3 if necessary"
+  },
+  {
+   "no": "10",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

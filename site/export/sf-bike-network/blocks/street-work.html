@@ -1,0 +1,59 @@
+<div class="stw" data-stw>
+<div class="stw-tabs" role="tablist" aria-label="Which street work the chart and map show"><button type="button" role="tab" id="stw-tab-past" aria-controls="stw-panel-past" aria-selected="true" tabindex="0">Past Projects</button><button type="button" role="tab" id="stw-tab-next" aria-controls="stw-panel-next" aria-selected="false" tabindex="-1">Current and Future Projects</button></div>
+<div role="tabpanel" id="stw-panel-past" aria-labelledby="stw-tab-past">
+<div class="fig wide stage-view" data-show="past">
+<script type="application/json" data-jobs></script>
+<div class="stg-side">
+<div class="stg-chart" data-stage="past">
+<p class="stg-q">Did SFMTA build the upgraded bikeway after repaving?</p>
+<ul class="stg-bars"><li data-cat="met" data-long="Bikeway built with the repave" tabindex="0" aria-label="Show Bikeway built with the repave on the map"><span class="stg-cat">Yes</span><span class="stg-row"><i class="met" style="width:1.6%"></i><b>0.7 mi</b></span></li><li data-cat="short" data-long="Repaved without the bikeway" tabindex="0" aria-label="Show Repaved without the bikeway on the map"><span class="stg-cat">No</span><span class="stg-row"><i class="short" style="width:17.4%"></i><b>7.2 mi</b></span></li><li data-cat="already" data-long="Plan's bikeway already there" tabindex="0" aria-label="Show Plan's bikeway already there on the map"><span class="stg-cat">Plan's bikeway was already there</span><span class="stg-row"><i class="already" style="width:14.2%"></i><b>5.9 mi</b></span></li></ul>
+</div>
+</div>
+<div class="stg-mapwrap">
+<figure class="mapbox seg-map" id="past-map">
+  <div class="glmap seg-gl" role="img" aria-label="San Francisco's streets, the plan's network in grey, and the plan's street segments repaved since it was adopted, colored as the bars."></div>
+  <p class="map-readout" data-readout>Tap a colored street to see what it is.</p>
+  <script type="application/json" data-seg-data></script>
+</figure>
+<aside class="stg-pop" hidden role="dialog" aria-label="Project details">
+<button type="button" class="stg-pop-x" aria-label="Close">×</button>
+<h3 data-pop-name></h3>
+<p data-pop-brief></p>
+<ul class="pop-bars" data-pop-bars></ul>
+<h4 class="pop-gap-h">Gap from Biking and Rolling Plan</h4>
+<ul class="pop-gap" data-pop-gap></ul>
+<p class="stg-pop-links" data-pop-links></p>
+</aside>
+</div>
+</div>
+
+</div>
+<div role="tabpanel" id="stw-panel-next" aria-labelledby="stw-tab-next" hidden>
+<div class="fig wide stage-view" data-show="next">
+<script type="application/json" data-jobs></script>
+<div class="stg-side">
+<div class="stg-chart" data-stage="next">
+<p class="stg-q">Does SFMTA plan to build the upgraded bikeway after repaving?</p>
+<ul class="stg-bars"><li data-cat="met" data-long="Bikeway upgrade planned" tabindex="0" aria-label="Show Bikeway upgrade planned on the map"><span class="stg-cat">Yes</span><span class="stg-row"><i class="met" style="width:29.6%"></i><b>12.3 mi</b></span></li><li data-cat="short" data-long="No bikeway upgrade planned" tabindex="0" aria-label="Show No bikeway upgrade planned on the map"><span class="stg-cat">No</span><span class="stg-row"><i class="short" style="width:100.0%"></i><b>41.6 mi</b></span></li><li data-cat="already" data-long="Plan's bikeway already there" tabindex="0" aria-label="Show Plan's bikeway already there on the map"><span class="stg-cat">Plan's bikeway was already there</span><span class="stg-row"><i class="already" style="width:55.2%"></i><b>23.0 mi</b></span></li></ul>
+</div>
+</div>
+<div class="stg-mapwrap">
+<figure class="mapbox seg-map" id="next-map">
+  <div class="glmap seg-gl" role="img" aria-label="San Francisco's streets, the plan's network in grey, and the plan's street segments in city street work under way or to come, colored as the bars."></div>
+  <p class="map-readout" data-readout>Tap a colored street to see what it is.</p>
+  <script type="application/json" data-seg-data></script>
+</figure>
+<aside class="stg-pop" hidden role="dialog" aria-label="Project details">
+<button type="button" class="stg-pop-x" aria-label="Close">×</button>
+<h3 data-pop-name></h3>
+<p data-pop-brief></p>
+<ul class="pop-bars" data-pop-bars></ul>
+<h4 class="pop-gap-h">Gap from Biking and Rolling Plan</h4>
+<ul class="pop-gap" data-pop-gap></ul>
+<p class="stg-pop-links" data-pop-links></p>
+</aside>
+</div>
+</div>
+
+</div>
+</div>

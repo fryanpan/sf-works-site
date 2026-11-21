@@ -1,0 +1,77 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-06-07",
+ "id": "g55-41431",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41431",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26710"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - May 17, 2022 Regular Meeting; and May 31, 2022 Special Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of claims against the SFMTA"
+  },
+  {
+   "no": "10.2",
+   "title": "Traffic modifications: A. TOW-AWAY, NO STOPPING ANYTIME – Oakdale Avenue; B. BUS ZONE & SIDEWALK WIDENING – Fulton Street"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving two contracts for as-needed consulting services for environmental and transportation analysis with Fehr & Peers and Kittelson and Associates, Inc."
+  },
+  {
+   "no": "10.4",
+   "title": "Approving the SFMTA Our Community, Our Shuttle: Bayview-Hunters Point Equitable Mobility Project to participate in and accept funding from the Sustainable Transportation Equity Project (STEP)"
+  },
+  {
+   "no": "10.5",
+   "title": "Adopting a resolution making findings pursuant to AB361 to allow for continued remote meetings due to the COVID-19 pandemic"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

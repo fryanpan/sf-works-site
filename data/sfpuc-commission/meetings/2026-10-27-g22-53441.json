@@ -1,0 +1,76 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-10-27",
+ "id": "g22-53441",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53441",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of October 13, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "7",
+   "title": "Update on General Manager Selection Process"
+  },
+  {
+   "no": "8",
+   "title": "Authorize the General Manager to: (1) execute a First Amendment to the 2021 Memorandum of Agreement with the Turlock Irrigation District and the Modesto Irrigation District"
+  },
+  {
+   "no": "9",
+   "title": "Communications"
+  },
+  {
+   "no": "10",
+   "title": "Items initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "11a",
+   "title": "Public Comment on all matters pertaining to this agenda item"
+  },
+  {
+   "no": "11b",
+   "title": "Discussion and vote in open session pursuant to the Brown Act and the Sunshine Ordinance on whether to convene in closed session"
+  },
+  {
+   "no": "11d",
+   "title": "Discussion and vote whether to disclose any or all discussions held in closed session"
+  },
+  {
+   "no": "12",
+   "title": "Adjournment"
+  }
+ ],
+ "parser": 2,
+ "body": "sfpuc-commission"
+}

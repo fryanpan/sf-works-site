@@ -1,0 +1,578 @@
+{
+ "body": "public-works-commission",
+ "name": "Public Works Commission",
+ "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
+ "generated": "2026-11-10",
+ "since": "2019-01-01",
+ "range": [
+  "2022-07-28",
+  "2026-10-22"
+ ],
+ "listed": 79,
+ "held": 79,
+ "mirrored": 78,
+ "missing": 1,
+ "missingShare": 0.0127,
+ "items": 1172,
+ "notes": [
+  "The Commission first met in 2022; there is no earlier record to read.",
+  "Items carry titles only. Granicus does not publish the vote.",
+  "Where Granicus indexes a consent calendar as one point, its lettered items come from the posted agenda (field \"from\": \"posted agenda\")."
+ ],
+ "meetings": [
+  {
+   "date": "2022-07-28",
+   "id": "g218-41796",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=41796",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-08-19",
+   "id": "g218-41887",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=41887",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-02",
+   "id": "g218-41948",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=41948",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-16",
+   "id": "g218-42047",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42047",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-21",
+   "id": "g218-42328",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42328",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-04",
+   "id": "g218-42422",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42422",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-14",
+   "id": "g218-42468",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42468",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-02",
+   "id": "g218-42563",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42563",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-16",
+   "id": "g218-42683",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42683",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-06",
+   "id": "g218-42720",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42720",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-20",
+   "id": "g218-42812",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42812",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-03",
+   "id": "g218-42928",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42928",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-17",
+   "id": "g218-43039",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43039",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-01",
+   "id": "g218-43101",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43101",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-07",
+   "id": "g218-43343",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43343",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-17",
+   "id": "g218-43424",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43424",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-21",
+   "id": "g218-43485",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43485",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-21",
+   "id": "g218-43487",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43487",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-05",
+   "id": "g218-43600",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43600",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-19",
+   "id": "g218-43710",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43710",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-02",
+   "id": "g218-43813",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43813",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-16",
+   "id": "g218-43938",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43938",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-21",
+   "id": "g218-44141",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44141",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-18",
+   "id": "g218-44272",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44272",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-01",
+   "id": "g218-44333",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44333",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-13",
+   "id": "g218-44407",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44407",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-15",
+   "id": "g218-44446",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44446",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-06",
+   "id": "g218-44608",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44608",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-20",
+   "id": "g218-44717",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44717",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-03",
+   "id": "g218-44822",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44822",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-01",
+   "id": "g218-44964",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44964",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-15",
+   "id": "g218-45090",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45090",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-22",
+   "id": "g218-45246",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45246",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-22",
+   "id": "g218-45248",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45248",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-12",
+   "id": "g218-45414",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45414",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-26",
+   "id": "g218-45511",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45511",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-11",
+   "id": "g218-45620",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45620",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-08",
+   "id": "g218-45838",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45838",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-22",
+   "id": "g218-45929",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45929",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-13",
+   "id": "g218-46128",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46128",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-10",
+   "id": "g218-46316",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46316",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-24",
+   "id": "g218-46430",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46430",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-22",
+   "id": "g218-46601",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46601",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-10",
+   "id": "g218-46854",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46854",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-17",
+   "id": "g218-47315",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-28",
+   "id": "g218-47447",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47447",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-08",
+   "id": "g218-47611",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47611",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-25",
+   "id": "g218-47832",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47832",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-09",
+   "id": "g218-47953",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47953",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-09",
+   "id": "g218-48347",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48347",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-23",
+   "id": "g218-48482",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48482",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-13",
+   "id": "g218-48706",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48706",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-27",
+   "id": "g218-48837",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48837",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-13",
+   "id": "g218-49153",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49153",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-27",
+   "id": "g218-49300",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49300",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-10",
+   "id": "g218-49492",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49492",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-08",
+   "id": "g218-49806",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49806",
+   "outcome": "empty",
+   "reason": "agenda parsed to no items (none)"
+  },
+  {
+   "date": "2025-05-22",
+   "id": "g218-49978",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=49978",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-12",
+   "id": "g218-50206",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50206",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-26",
+   "id": "g218-50311",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50311",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-10",
+   "id": "g218-50383",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50383",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-24",
+   "id": "g218-50499",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50499",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-11",
+   "id": "g218-50708",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50708",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-25",
+   "id": "g218-50818",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50818",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-13",
+   "id": "g218-51133",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51133",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-11",
+   "id": "g218-51342",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51342",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-08",
+   "id": "g218-51491",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51491",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-22",
+   "id": "g218-51628",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51628",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-12",
+   "id": "g218-51787",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51787",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-26",
+   "id": "g218-51884",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51884",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-12",
+   "id": "g218-51979",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51979",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-09",
+   "id": "g218-52156",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52156",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-30",
+   "id": "g218-52314",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52314",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-14",
+   "id": "g218-52422",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52422",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-18",
+   "id": "g218-52657",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52657",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-23",
+   "id": "g218-52913",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=52913",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-24",
+   "id": "g218-53238",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53238",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-08",
+   "id": "g218-53329",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53329",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-22",
+   "id": "g218-53417",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53417",
+   "outcome": "mirrored"
+  }
+ ]
+}

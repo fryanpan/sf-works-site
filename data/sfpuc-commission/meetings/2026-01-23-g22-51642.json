@@ -1,0 +1,47 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-01-23",
+ "id": "g22-51642",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51642",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/1.23.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Public Hearing and discussion: Hetch Hetchy Power and CleanPowerSF Enterprise Budget and Capital Plan"
+  },
+  {
+   "no": "3a",
+   "title": "FY 2026-27 and FY 2027-28 Operating Budget"
+  },
+  {
+   "no": "3b",
+   "title": "FY 2026-27 to FY 2035-36 10-Year Capital Plan, including the 2-Year Capital Budget"
+  },
+  {
+   "no": "4",
+   "title": "Motion to continue meeting to a Special Meeting noticed for Thursday, January 29, 2026",
+   "decision": "continue the meeting to Thursday, January 29, 2026."
+  },
+  {
+   "no": "5",
+   "title": "Recess to 1:30 PM Thursday, January 29, 2026 at City Hall, Room 408",
+   "text": "Recess to 1:30 P.M. Thursday, January 29, 2026 at City Hall, Room 408"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

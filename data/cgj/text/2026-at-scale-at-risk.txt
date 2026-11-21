@@ -1,0 +1,2712 @@
+At Scale, At Risk
+Upgrading Data and Oversight to Improve
+Homelessness Services
+                                      June 23, 2026
+
+
+
+                CITY AND COUNTY OF SAN FRANCISCO
+                         2025–2026 CIVIL GRAND JURY
+
+
+
+
+                                                  1
+Contents
+
+Executive Summary ............................................................................................................... 4
+Charter Reform ...................................................................................................................... 8
+Background ........................................................................................................................... 9
+   Spending and Staffing ................................................................................................................ 9
+   The Expanding Crisis ................................................................................................................ 11
+   Layers of Oversight ................................................................................................................... 13
+Discussion & Analysis.......................................................................................................... 20
+   Areas of Concern ...................................................................................................................... 20
+      PSH outcomes are concerning: drug overdose deaths ....................................................... 20
+      Key safety data still not effectively used, despite past recommendations......................... 23
+      Controller’s Analysis and Report on CIRs ............................................................................. 24
+      Limitations in CIR Data and Reporting ................................................................................. 26
+      Lack of Standardized Response to, and Use of, Data .......................................................... 26
+      Absence of System-wide Safety Metrics.............................................................................. 27
+      Implications for Oversight..................................................................................................... 27
+   The Two Perspectives of Homelessness ................................................................................. 27
+      Perspective #1 - Eric McCain: Reported Concerns about Jazzie Collins Apartments ........ 29
+      HomeRise: Prior Concerns and Corrective Action History ................................................... 30
+      Rise of Homeless Nonprofits: “Too Big to Fail” Now? ......................................................... 31
+      Perspective #2 - Urban Alchemy and Realities of Scale ...................................................... 32
+      711 Post St: An Oversight Framework Without a Safety Dimension ................................... 34
+   So What? From Incidents to System Accountability ............................................................... 37
+Findings and Recommendations .......................................................................................... 38
+   Finding 1– Critical Incident Reports. ....................................................................................... 38
+   Finding 2 – HSH Data Analytics. .............................................................................................. 38
+   Finding 3 – HOC Review of Contracts. ..................................................................................... 39
+   Finding 4 – HOC Statutory Authority. ...................................................................................... 39
+   Finding 5 – HSH Monitoring of Shelters and Housing. ........................................................... 40
+Required and Requested Responses .................................................................................... 41
+Methodology ....................................................................................................................... 42
+Glossary and Abbreviations ................................................................................................. 44
+Works Cited ......................................................................................................................... 50
+Appendix A: Timeline of this report’s events ......................................................................... 56
+Appendix B: Data reporting from other jurisdictions .............................................................. 59
+Appendix C: Oversight and Advisory bodies for HSH ............................................................. 62
+
+
+
+
+                                                                                                                                           2
+About the San Francisco Civil Grand Jury
+
+The San Francisco Civil Grand Jury (the “Jury”) is a government oversight panel of nineteen
+San Francisco citizens who volunteer for one year. Each Jury determines which local
+government entities within San Francisco it will investigate. The Jury cannot investigate
+disputes between private parties, criminal activity, or activities outside its jurisdiction, which is
+the government of the City and County of San Francisco (“City”) and any other local
+governments within San Francisco city limits.
+
+
+The Jury publishes public reports with findings and recommendations based on its
+investigations.
+
+
+Read more about the San Francisco Civil Grand Jury here: https://www.sf.gov/departments--
+civil-grand-jury
+
+
+2025–2026 Civil Grand Jurors
+Brian Adam                                            Maryann Hrichak
+Allyson Eddy Bravmann                                 Gary Hsueh
+Rick Carell                                           Joanna Karlinsky
+Robert J. Chansler                                    Margaret Keane
+Ed Cooper                                             Julia Molla
+       Foreperson                                     Robert Page
+Niket Desai                                           Dustin Palmer
+Stan Feinsod                                          William L. Pierog
+       Foreperson Pro Tempore                         Barbara Savitz
+Joe Ferrero                                           Tracy Wymer
+Mira Foster
+
+
+
+
+About the cover
+
+The images on the left and right are sites funded by the Department of Homelessness and
+Supportive Housing that are case studies contained in this report. On the left is the Jazzie
+Collins Apartments, a 96-unit permanent supportive housing site. On the right is 711 Post
+Street, a 280-bed semi-congregate shelter which is planned for closure in March 2027.
+
+
+
+
+                                                                                                    3
+Executive Summary
+
+San Francisco spends roughly $700 million annually on homelessness, and its Department of
+Homelessness and Supportive Housing (“HSH”) administers nearly $500 million on nonprofit
+contracts to deliver services each year, yet this system has gaps that jeopardize safety,
+accountability, and results.
+
+HSH was created in 2016 to bring unity and simplified accountability to the City’s
+homelessness programs, and it now serves roughly 27,000 people per year 1 with a nearly 100%
+outsourced model through a network of nonprofit service providers. In response to HSH’s
+growth and the escalating homeless crisis, voters approved Proposition C in 2022, creating the
+Homelessness Oversight Commission (“HOC”) to bring accountability to a system that was
+insufficiently transparent or accountable relative to its scale and budget.
+
+This report finds that while HOC exists to bring independent governing oversight to HSH, its
+functional oversight is weak, its statutory authority is largely unutilized, and as a result,
+serious failures have escaped its detection and scrutiny. This finding aligns with the staff
+discussion of the Commission Streamlining Task Force (“CSTF”) on homelessness, which
+noted, “there have been several recent high-profile cases Citywide where a nonprofit either
+misused funds or mismanaged service delivery. In each case, City oversight mechanisms
+(such as regular contract and nonprofit monitoring and the Controller’s Office’s audits) caught
+and corrected these issues, not the departments’ commissions [i.e. HOC].” 2
+
+Oversight of HSH and its nonprofits exists but is not working as intended, or as needed for an
+entity that spends hundreds of millions annually to outsource its core services.
+
+Historically, the City’s oversight mechanisms emphasized fiscal compliance and fell short on
+programmatic measures. In part, this was a function of how program outcomes were defined
+in contracts. Performance is often measured by simple counts measuring actions or functions,
+not real outcomes. For instance, this includes how many people participated in intake
+orientation, or what percent of the people who completed exit surveys viewed a program
+favorably. Contracts did not include program standards set for client safety, exit success
+criteria, or real performance outcomes.
+
+
+
+
+1
+    2025 Homelessness Needs Assessment, Office of the Controller, City Performance, Dec 10, 2025, pg. 7.
+2
+    Final Report Supplemental Appendices, Commission Streamlining Task Force, Jan 28, 2026, pg. 371
+
+
+                                                                                                           4
+These gaps have real consequences.
+
+Permanent supportive housing (“PSH”) represents the largest share of HSH’s housing
+portfolio. Yet it operates with limited external oversight, inconsistent monitoring, and
+insufficient accountability mechanisms. Data shows troubling outcomes at PSH sites.
+Roughly a quarter (26%)3 of all accidental drug overdose deaths in San Francisco occurred at
+PSH sites in 2024, and based on press reports, we estimate roughly a third (32%)4 of
+accidental drug overdose deaths for those with fixed addresses in San Francisco occurred at
+PSH sites.5
+
+San Francisco collects thousands of “critical incident reports” (“CIRs”) each year, filed by its
+nonprofit service providers to document service issues. The most serious codes concern
+deaths, overdoses, overdose reversals, violence, and emergencies requiring police, fire or
+ambulance response. But these CIRs are not systematically analyzed in aggregate to identify
+troubling patterns or trends, compare and manage providers, identify systemic risks, or
+prevent future harm.
+
+The well-reported death of Eric McCain, whose body was allegedly undiscovered for 10-12
+days6 in a PSH unit, the Jazzie Collins Apartments operated by HomeRise, raises concerns
+about client safety. Reported conditions at or around 711 Post Street, a large-scale shelter site
+operated by Urban Alchemy, also prompt concerns about issues not captured by the
+contractual metrics for performance and outcomes. HSH described Urban Alchemy’s 711 Post
+Street as a success based on its contractual service and outcome objectives. At the same
+time, community neighbors reported ongoing safety and quality of life issues were not
+considered or assessed by HSH.
+
+The Jury has concluded that such issues and concerns are not limited to these incidents; they
+reflect a system that often lacks the tools, oversight, and accountability to provide adequate
+services to a population with high levels of disease and disability, including serious mental
+illness, chronic physical disease, infectious disease, substance use disorders, physical
+disability, and functional impairment.7
+
+
+3
+    "Behavioral Health Services Director's Update, Behavioral Health Commission," Hillary Kunins, Sep 18, 2025, p. 6.
+4
+  Estimated from the 875 overdose deaths from “"Housing first, morgue second," Susan Dyer Reynolds, The Voice of
+San Francisco, Aug 28, 2025, as numerator, and the total number of overdose deaths for those with fixed addresses
+(2,747) over the same period from the Office of the Chief Medical Examiner.
+5
+    BOS Public Safety and Neighborhood Services Committee, April 23, 2026, p.3.
+6
+ “At a ‘model’ S.F. complex for the formerly homeless, a man lay dead for days unnoticed,” Matthias Gafni, Matthew
+Mitchell, Susie Neilson, SF Chronicle, Mar 20, 2026.
+7
+ UCSF Benioff Homelessness and Housing Initiative, Toward Thriving: Understanding Health & Homelessness, Nov
+2025.
+
+
+                                                                                                                        5
+At the same time, the City’s homelessness data systems remain scattered across
+departments; this fragmentation obscures a full view of client needs, and ultimately hinders
+successful client service outcomes. At the system level, it works against network optimization
+(ex. Mayor Lurie’s “right beds” strategy which focuses on service-rich, mental health, and
+recovery-oriented beds rather than raw numbers) and limits the ability to use data to generate
+triggers that can alert HSH to respond to early warning signs. New investments in data
+infrastructure are underway, but they have not yet translated into meaningful improvements in
+decision-making or oversight.
+
+This report identifies five areas that need addressing:
+
+    ●   CIRs provide vital insight into client safety, but HSH has not used this data effectively
+        to identify patterns of concern or to improve safety at housing sites.
+    ●   HSH is lagging in presenting data that allows for benchmarking nonprofits by program
+        or housing type, and in using data to trigger targeted program monitoring.
+    ●   HSH ceased the established practice of submitting certain contracts to HOC for review
+        and consent, notifying HOC of all renewals and extensions as line items.
+    ●   HOC has yet to exercise the full extent of its statutory authority, and lacks the training
+        and resources to meet the public’s expectations as set by the 2022 Prop C initiative.
+    ●   The Shelter Monitoring Committee is set to terminate, and HSH is insufficiently
+        resourced to absorb SMC’s work, and oversee PSH sites effectively.
+
+The current approach is not enough.
+
+San Francisco has invested billions to address homelessness over the last decade, yet the
+crisis continues to deepen. The homeless count at the start of each year has grown at roughly
+a 30% compound annual rate since 2020, reaching an estimated 8,000 individuals at the start
+of 2025 (we estimate this based on HSH’s inflow and outflow data, i.e. 5,488 homeless at start
+of 2024 plus 17,859 inflow for 2024 minus 15,292 outflow for 2024 = 8,055)8 — and those
+entering the system arrive with increasingly complex medical, behavioral health, and
+substance use needs. Meanwhile, successful exits from homelessness to stable housing,
+represent only 30–40% of total outflow9 — meaning the majority of people leaving HSH's
+system are not exiting homelessness on stable terms. The number of successful exits has
+declined 14.3% year-over-year (on a calendar basis, -9.3% on a fiscal basis) in HSH’s most
+recent data. Homelessness is growing faster than it is being resolved.
+
+
+8
+ Homelessness Trends Dashboard: Inflow and Outflow Analysis, HSH; 1,899 actual “Homeless at Start” for 2020
+and an estimated 8,000 for 2025, which represents a CAGR of 33% over 5 years.
+9
+ Exits from Homelessness, HSH; Successful exits to stable housing totaled 5,756 for 2024, and total outflow from
+HSH’s Inflow and Outflow Analysis was 15,292 for 2024.
+
+
+                                                                                                                   6
+This is not a picture of success.
+
+Growth in spending hasn't solved the problem and now HSH faces a plateauing budget. This
+report’s recommendations call for restoring independent contract reviews, more robust
+exercise of chartered oversight authority, integrating safety metrics into contract
+management, and building data-driven intelligence into monitoring and auditing workflows.
+This report includes Findings and Recommendations; they identify timely steps needed to help
+HSH protect the vulnerable people it serves and deliver on its stated mission to “make
+homelessness in San Francisco rare, brief and one-time, through the provision of coordinated,
+compassionate and high-quality services.”10
+
+
+
+
+10
+     HSH’s mission statement in the section “About Us,” on its sf.gov website
+
+
+                                                                                                7
+Charter Reform
+
+This report arrives at a moment of transition for oversight in San Francisco. On May 12, 2026,
+the Board of Supervisors (“BOS”) voted 6-4 to approve an Administrative Code ordinance on
+first reading (File No. 260217, the “Ordinance”), which adopts some of the CSTF’s
+recommendations. The Ordinance was finally passed by the BOS on May 19, 2026. The
+genesis of this vote is charter reform; as part of this initiative, CSTF evaluated the City's
+network of boards, commissions, and advisory bodies — then numbering 152 — and drafted
+ordinances for the BOS and voters to streamline the bureaucratic sprawl (and spend).
+
+CSTF’s recommendations were translated into two pieces of legislation: The Ordinance
+sponsored by Board President Rafael Mandelman, and a proposed charter amendment for
+voters on the November 2026 ballot. Board President Mandelman has indicated he intends to
+introduce a separate, more limited and less controversial charter amendment for the
+November ballot.11
+
+Because HOC is codified in the City Charter rather than the Administrative Code, changes to its
+governing authority require voter approval and fall outside the scope of the Ordinance. For the
+four advisory homelessness bodies in the Administrative Code, the Ordinance’s provisions for
+their future are summarized below.
+
+Our City, Our Home Oversight Committee (“OCOH”)
+OCOH was created pursuant to Proposition C (November 2018), which established the
+Homelessness Gross Receipts Tax and the Our City, Our Home Fund. The Ordinance retains
+OCOH, classified as an Advisory Body. Its core duties, monitoring and advising on
+expenditures from the Fund and conducting needs assessments, are preserved.
+
+Local Homeless Coordinating Board (“LHCB”)
+LHCB is retained as an Advisory Body, and its core function as the federally designated
+Continuum of Care planning body, is preserved.
+
+Shelter Grievance Advisory Committee (“SGAC”) and Shelter Monitoring Committee (“SMC”)
+SGAC is set to be eliminated by the ordinance, and SMC is set to be eliminated by the
+ordinance.12
+
+
+
+
+11
+ Leanne Maxwell, “SF Supervisors Vote to Cut 43 Inactive Commissions in Effort to Streamline City Hall,” SFist,
+May 13, 2026.
+12
+     Legislative digest for Ordinance File No. 260217, p. 3.
+
+
+                                                                                                                  8
+Background
+
+Spending and Staffing
+
+In June 2016, the BOS voted to consolidate homeless services provided through multiple
+departments to create a single unified and coordinated response to homelessness. This led to
+the formation of today’s HSH.13, 14
+
+The City has long relied on service-minded organizations with direct community ties,
+community-based organizations (“CBOs”), to more effectively deliver homeless services
+across a diverse range of people and needs. Today, many of the CBOs have grown into large-
+scale nonprofits, often providing a broad spectrum of HSH programs and contracting with
+other City agencies, including the Department of Public Health (“DPH”), the Department of
+Public Works (“DPW”), and the Department of Children, Youth, and Families (“DCYF”). HSH’s
+nonprofit spend of $487 million accounted for roughly 30% of the City’s total $1.6 billion in
+nonprofit spending for FY2025.15
+
+Over 2019-2024, San Francisco’s commitment to this outsourcing model has grown at a 20.6%
+compounded annual growth rate (“CAGR”) in terms of nonprofit spending. Over this time, HSH
+has leaned on a core group of nonprofits, some of which have taken cumulative completed
+payments from HSH in the range of $50 million to $200 million over the past 6 years.
+
+
+
+
+13
+  The new department merged contracts and programs from four agencies serving San Francisco’s homeless
+population: Department of Public Health (DPH), the Human Services Agency (HSA), the Mayor’s Office of Housing
+and Community Development (“MOHCD”) and the Department of Children Youth and Families (“DCYF”). See San
+Francisco Board of Supervisors, Ordinance No. 116-16.
+
+
+                                                                                                                9
+Figures 1 and 2. Source: HSH. Data via Controller's Office / Supplier Payments portal. CAGR
+calculated from $158.6M (2019) to $487.3M (2025) over 6 years.
+
+
+To visualize the scale of HSH’s outsourcing for service delivery, for FY2025 HSH spent $487
+million across 291 unique contracts to 73 distinct non-profit entities. To manage contract
+formation, fiscal processes, and program monitoring, currently HSH has 247.5 full-time
+equivalent (“FTE”) employees to administer and manage nearly $500 million in annual
+nonprofit spending.
+
+
+                                                                                      CAGR
+                                        FY19                      FY25             (FY19–FY25)
+
+          FY Totals            # or $          Per FTE   # or $          Per FTE     for # or $
+
+ Nonprofits                      55              0.5      73               0.3         4.8%
+
+ Contracts                      197              2.0      291              1.2         6.7%
+
+ Nonprofit Spend ($M)          $159             $1.6     $487             $2.0        20.6%
+
+ Budget ($M)                  $367.7            $3.7     $785.6           $3.2        13.5%
+
+ FTE Count                     100.4            n/a      247.5            n/a         16.2%
+
+
+Table 1. Source: Staffing analysis from the Controller’s Office,17 Director’s Report to HOC, Jan
+15, 2026 p. 26, and Citywide nonprofit spending, SF Open Book.
+
+
+HSH staffing from 2019 to 2025 (Table 1) has mirrored the City’s investment to address
+homelessness; FTE headcount has grown at a compound annual growth rate of 16% compared
+to nonprofit spending by HSH which has grown by 21%. Over time, as the dollar value of an
+average contract has expanded, the ratio of # of contracts per FTE has decreased significantly,
+from 2.0 in 2019 to 1.2 in 2025. There are scaling benefits to HSH’s organization as it begins to
+consolidate spend among a chosen set of nonprofits. For a discussion of HSH’s organization,
+the Controller’s staffing analysis from May 2019 remains relevant.16
+
+Pertinent to this report, HSH’s data and performance team has also expanded to meet its
+mission “to use data and best practices research to support the creation and ongoing
+implementation of high quality, responsive, and coordinated homeless services.” 17 In 2019, this
+
+14
+     SF Admin Code section 2A.410.
+15
+     The Controller’s Office’s dashboard for San Francisco Nonprofit Contracts and Spending.
+16
+  “Staffing Analysis and Benchmarking for the Department of Homelessness and Supportive Housing,” Office of
+the Controller (Peg Stevenson, Emily Lisker, Kyra Sikora, Glynis Startz), May 17, 2019.
+17
+  Staffing Analysis and Benchmarking for the Department of Homelessness and Supportive Housing, Peg
+Stevenson, et al., Office of the Controller, May 17, 2019, p. 17.
+
+
+                                                                                                              10
+team comprised 3 FTE’s and as of 2025, it is a team of 7. Of HSH’s total workforce of 247.5
+FTEs, data and performance comprises 2.8%; this is roughly in-line with US tech startups, for
+which the median for data teams is 2.2%.18 The use of data to optimize delivery of homeless
+services and ensure client safety is a central crux of our recommendations, which HSH’s data
+team appears adequately staffed to do. This is innovative work that can be catalyzed by HSH’s
+implementation of its new Contract Lifecycle Management System in May 2026 and should be
+part of a continuous improvement approach to service delivery and client outcomes.
+
+The Expanding Crisis
+
+The investment in spend and staffing described above occurs against a backdrop of a
+homelessness crisis that has grown faster than the system's ability to resolve it. Between
+2020 and 2025, the number of people entering the HSH system each year (the inflow) grew at a
+compounded annual rate of 13.2%. Over the same period, the starting count of people already
+in the system at the beginning of each year grew at a far more alarming rate of 33.5%.
+
+
+
+
+18
+     “Data team as % of workforce: A deep dive into 100 tech scaleups,” Mikkel Dengsøe, Jan 10, 2023.
+
+
+                                                                                                        11
+Figure 3. Band thickness proportional to number of people. *2025 starting count estimated ·
+successful exits to stable housing available for 2024 only. Source: HSH inflow and outflow
+analysis, and HSH exits from homelessness.
+
+This divergence is a central story of homelessness in San Francisco. Outflows — people
+exiting the system through housing placements, program completions, or other exits — have
+grown, but they have consistently failed to keep pace with growth of inflows plus the
+chronically homeless. The result is a widening carry-forward: the cohort of people who remain
+in the system at the end of each year and become the starting count for the next. That band,
+shown in red across the diagram, grows visibly wider with each passing year.
+
+Where data is available, the picture is further complicated by the composition of those exits.
+Of the 15,292 people who exited the HSH system in 2024, only 5,756 — or 37.6% — did so into
+stable housing. The remaining exits represent more transient or unresolved outcomes. And
+between calendar 2024 and 2025, even that success metric moved in the wrong direction:
+successful exits to stable housing fell 14.3%, from 5,756 to 4,932.
+
+Taken together, the data raise a pointed question for the sections that follow: if spending has
+
+
+
+                                                                                                 12
+grown at 20.6% annually and HSH’s team has more than doubled since 2019, why does the
+population in need at the start of each year compound at 33.5% per year? The answer lies not
+in commitment or effort — HSH and its nonprofit
+partners are working at unprecedented scale — but
+                                                                   If spending has grown at 20.6%
+in whether the right accountability structures exist
+                                                                   annually and HSH’s team has
+to ensure that scale translates into outcomes.
+                                                                   more than doubled since 2019,
+Layers of Oversight                                                why does the homeless count at
+                                                                   the start of each year
+HSH and its work are overseen by HOC, and                          compound at 33.5% annually?
+advised by multiple entities, collectively providing
+independent checks and balances in the contract
+approval and monitoring processes. The Controller’s Office has also met this challenge,
+primarily identifying fiscal noncompliance. The role of the Controller’s Office in monitoring
+both fiscal and programmatic performance of non-profit contractors was strengthened by a
+BOS ordinance enacted in 2024.19
+
+However, there are gaps in oversight, including for HSH’s largest housing source – PSH. The
+root cause of these gaps can be found in how HSH does, or here doesn’t, fully utilize CIRs and
+broader data practices to identify and address troubling patterns. The gaps also include a
+limited exercise of HOC’s oversight authority that skews to a “check the boxes” approach
+versus real independent review.
+
+The 2022 Prop C Initiative that created HOC focused on the need for assessment and
+effectiveness of HSH’s delivery of services to homeless persons as did Ordinance 55-24’s
+mandate to the Controller to establish performance metrics and monitoring tools with City
+entities that contract with nonprofits. Prop C also gave the Controller’s City Services Auditor
+explicit authority to assess “services relating to homelessness.”20 HSH faces a down-sized
+budget after years of pandemic expansion, and the homelessness crisis shows no sign of
+abatement. Programmatic oversight requires strengthening if HOC is to realize its promise.
+
+
+
+
+19
+   “Ordinance 055-24 amending the Administrative Code to clarify the Controller’s audit and monitoring
+responsibilities with respect to nonprofit organizations contracting with the City; directing the Controller to
+establish measurable performance goals for contracts with nonprofit organizations; directing the Controller to
+periodically review and, as necessary, revise policies regarding contractors’ compliance with City requirements; and
+requiring the Controller to perform an annual review of departments’ compliance with policies for auditing and
+monitoring nonprofit organizations.” May 22, 2024.
+20
+  San Francisco Charter, Appendix F: Authority and Duties of City Services Auditor, f1.101(a)(7) (amended by
+Proposition C, approved Nov 8, 2022).
+
+
+                                                                                                                 13
+Layer 1 - HSH Program Monitoring
+HSH considers prior monitoring findings, performance to service and outcome objectives,
+reporting timeliness, and general compliance to decide on corrective action, desk audits, or
+site visits. The HSH Program team has three program directors: one each for supportive
+housing, coordinated entry, and shelter and outreach. Each of the three has a staff that
+monitors spend rate, critical incidents, operation and conducts annual program monitoring of
+contracts within their functional area. CIRs are not used as a contract metric. The Program
+Team is moving from simple numeric counts, such as number of people on-boarded, to
+developing more complex measures of outcome objectives.
+Annual monitoring requirements permit desk reviews and waivers in certain cases, but on-site
+monitoring is often required by state and federal funding conditions. These visits are
+announced in advance. Even if a desk review is conducted or a waiver granted for good
+performance, the Contract Monitoring Policy requires department staff to visit each location
+where clients are served at least once a year. Staffing limitations typically prevent more
+frequent site visits or more frequent monitoring. As of February 2026, HSH’s budget
+documents for FY2026-2028 reported 37 vacant positions out of 258 budgeted FTE (12.8%
+overall vacancy).21
+
+The HSH Program team seeks to resolve programmatic issues proactively, at an early level,
+before they are elevated to the Controller’s Citywide Monitoring program. This report will
+discuss incidents associated with two HSH providers, HomeRise and Urban Alchemy, who
+were designated at Tier 3 and Tier 2 status for corrective action, respectively, at different
+times. There is also an inherent conflict in expecting a project manager to be the daily contact
+for a site, providing support and mentoring, while also being a disciplinarian for potentially
+higher problems.
+
+Layer 2 - Citywide Nonprofit Monitoring Program
+The Controller’s 2025 Nonprofit Contract Monitoring Standards and Guidelines Policy (the
+Standards and Guidelines Policy”) and the Controller’s 2024 Citywide Nonprofit Corrective
+Action Policy (the “Corrective Action Policy”) are now the principal mechanisms for
+coordinating with City departments to exercise fiscal and programmatic compliance over
+contracts with nonprofit providers. The policies were developed following BOS legislation in
+2024, when the Controller worked with City departments and nonprofits to revise its existing
+Monitoring Program and develop new policies to clarify procedures for identifying areas of
+concern or poor performance by nonprofit contractors related to both financial management
+and programmatic performance.
+
+
+
+21
+     “Homelessness and Supportive Housing,” FY26-27 and FY27-28 Department Budget Submissions.
+
+
+                                                                                                 14
+The Standards and Guidelines Policy sets out what departments must do to oversee their
+nonprofit contracts, and the performance of programs. It requires them to: (1) include
+performance measures in contracts; (2) require contractor reporting at least annually; (3)
+conduct contract monitoring at least once a year, including a site visit; (4) meet and engage
+with contractors quarterly; and (5) maintain written policies describing their oversight
+practices.22 Collectively, these requirements mark a meaningful strengthening of
+programmatic monitoring, moving it toward the rigor and consistency the Controller’s Office
+has long applied to fiscal monitoring of nonprofit contracts. This Policy applies to nonprofit
+contracts whose services are valued at $200,000 per year or greater.
+
+The Corrective Action policy established a three-tier corrective action policy (applicable to both
+fiscal and programmatic monitoring concerns):
+
+      ●    Tier 1: Lower-severity financial issues that may be indicators of future risk. Tier 1
+           eligibility criteria are meant to support new and emerging nonprofit contractors who
+           may require more time and assistance to comply with City funding and contracting
+           requirements. Tier 1 status is not publicly reported.
+
+      ●    Tier 2: Serious fiscal or programmatic concerns; triggers mandatory technical
+           assistance and collaborative action planning. Typically applies to issues that have
+           persisted over time despite department intervention.
+      ●    Tier 3: Pattern of severe fiscal or programmatic concerns; triggers mandatory technical
+           assistance, public notification, and authorization for departments to use the
+           designation as a factor in funding decisions.
+
+The Controller’s responsibilities include reviewing
+compliance with these measures, and                                  To the Jury's knowledge, HSH
+administering and publicly reporting on the                          has never declined to renew or
+Citywide nonprofit corrective action policy; it has
+                                                                     award a contract specifically
+audit authority. The Controller’s Corrective Action
+                                                                     because of a corrective action
+Policy identifies examples of fiscal and
+programmatic incidents that may trigger tier                         designation.
+designations. Client Safety issues are identified as
+an example of serious programmatic issues that
+may warrant a Tier 2 (isolated safety incidents that were swiftly and satisfactorily corrected)
+or Tier 3 corrective action designation (widespread and/or ongoing critical safety incidents). 23
+
+
+
+22
+     Citywide Nonprofit Monitoring and Capacity Building Program, Controller’s Office, “How It Works.,” website
+23
+  Office of the Controller, Citywide Nonprofit Corrective Action Policy, Appendix B, Programmatic Criteria for
+Designation, Dec 9, 2024.
+
+
+                                                                                                                  15
+In recent years, nonprofits with active HSH contracts accounted for 3 of the 6 that have made
+an appearance more than once over the period 2019-2025 (Bayview Hunters Point Foundation,
+HomeRise, and LYRIC) in the Controller’s Citywide Nonprofit Monitoring and Capacity Building
+Program Annual Report).24
+
+ Most often cited, 2019–2025                                     # years       Most        Level of Corrective
+                                                                 on list    recent year          Action
+
+ Bayview Hunters Point Foundation                                   4          2025               Tier 3
+
+ HomeRise                                                           4          2025               Tier 2
+
+ Lavender Youth Recreation and Information Center (LYRIC)           2          2025               Tier 2
+
+ Samoan Community Development Center                                2          2025               Tier 2
+
+ Livable City                                                       2          2025               Tier 2
+
+ PRC and Baker Places                                               2          2023         Elevated Concern
+
+
+Table 2. Source: Controller's Office Citywide Nonprofit Monitoring and Capacity Building
+Program Annual Reports, 2019–2025.
+
+To the Jury’s knowledge, HSH has never declined to renew or award a contract specifically
+because of a corrective action designation.
+
+Layer 3 - Homelessness Oversight Commission
+Authorized by San Francisco voters in 2022 and established in 2023 through the City Charter 25,
+HOC was created to oversee HSH as a governing body, and to ensure public transparency
+through the Sunshine Ordinance.26 Under the City Charter, HOC has authority related to HSH’s
+budget, departmental oversight, departmental audits, and nomination of candidates for the
+Executive Director position.
+
+Although the Charter does not explicitly require HOC’s review of, and comment on HSH
+contracts, HSH established an administrative practice in 2023 of presenting certain contracts
+to HOC for public review and comment. At the Commission’s inaugural meeting on May 4,
+2023, HSH proposed draft rules for HOC’s review of, and comment on, nonprofit contracts.
+This includes thresholds requiring Commission review for agreements exceeding $500,000
+annually, and certain new programs and services exceeding $100,000 annually.27
+
+
+
+
+24
+     Office of the Controller, Citywide Nonprofit Monitoring and Capacity Building Annual Report, FY 2024-2025.
+25
+     Section 4.133 of the San Francisco Charter.
+26
+     The San Francisco Sunshine Ordinance of 1999.
+27
+     Agenda item 6E, Homelessness Oversight Commission, May 4, 2023
+
+
+                                                                                                                  16
+This second layer of contract review is “good governance,” particularly when HSH relies almost
+100% on outsourced nonprofit providers to deliver services. It creates an additional layer of
+public transparency and oversight for homelessness-services contracting for contracts below
+the threshold requiring BOS approval, which in many cases is $10 million in total value. HOC
+review also provides a public forum through which contracts, providers, service scopes, and
+amendments could be discussed in open session, consistent with San Francisco’s public
+transparency requirements. In certain instances, members of the BOS informally referenced
+prior HOC review as part of their own contract evaluation process.
+
+Despite its oversight responsibilities, HOC operates with limited independent staffing and
+analytical capacity. The Commission receives support from shared administrative staff but
+does not have personnel with the capacity to independently perform contract, operational, or
+fiscal analyses comparable to those prepared for the BOS by the San Francisco Budget and
+Legislative Analyst (“BLA”). HOC is also substantially dependent on HSH for access to
+information regarding contracts, provider performance, and departmental operations.
+
+                                                     On May 1, 2025, then-HSH Executive Director
+     In May 2025, HSH announced                      Shireen McSpadden announced that, on a
+     that contract renewals and                      temporary basis through January 2026, contract
+                                                     renewals and extensions would not be presented
+     extensions would no longer be
+                                                     to HOC for review and comment, citing the
+     presented to HOC for review and
+                                                     administrative burden associated with preparing
+     comment, on a temporary basis.                  materials for Commission review.28 On August 7,
+                                                     2025, she restated the change in policy and
+                                                     dropped any reference to “temporary” or an end
+date. As of HOC’s meeting on May 7, 2026, renewal and extension contracts have not
+        29
+
+returned to the Consent Agenda.
+
+Since May 1, 2025, HOC has generally received only summary information regarding renewals
+and extensions such as program name, provider, contract term, not-to-exceed amount,
+projected clients served, and cost and staffing ratios.30 New contracts continue to be
+presented to HOC through the Commission’s consent agenda process, although the majority
+of HSH contracting activity consists of renewals and extensions rather than entirely new
+contracts.
+
+
+
+
+28
+     HOC Meeting Minutes, May 1, 2025 meeting, p.8
+29
+     HOC Meeting Minutes, August 7 meeting, p.7.
+30
+  HSH Director’s Report, Homeless Oversight Commission, January 15, 2026, January Contract Amendments &
+Renewals, p.24-25.
+
+
+                                                                                                          17
+Renewals and extensions meeting applicable thresholds continue to be reviewed by the BOS.
+However, because many HSH contract renewals fall below Board review thresholds, the
+reduction in HOC review has narrowed a previously existing layer of public oversight and
+transparency regarding homelessness-services contracting.
+
+In addition, HOC has not exercised its Charter
+                                                                   HOC has not exercised its
+authority to conduct performance audits of HSH or
+                                                                   Charter authority to conduct
+its services since its inception in May 2023.31
+                                                                   performance audits of HSH or
+Separately, CSTF recommended converting HOC
+                                                                   its services since its inception
+into an advisory body and consolidating other
+                                                                   in May 2023
+homelessness-related advisory committees
+beneath it as subcommittees.32 In its final report,
+the Task Force summarized its recommended
+changes to HOC as “remov[ing] department head hiring and firing authority” and “remov[ing]
+budget and contract approval authority.” As of May 2026, portions of the Task Force’s
+recommendations were finally passed by the BOS, and other portions appeared to continue
+advancing through the City’s legislative and policy-review process for voters on the ballot for
+November 2026.33
+
+At a time when San Francisco’s Homelessness Response System continues to face persistent
+operational, financial, behavioral health, and safety challenges, the potential reduction of
+independent oversight resources and public-review mechanisms raises broader questions
+regarding transparency, accountability, and the City’s long-term capacity to identify and
+respond to systemic risks within homelessness services.
+
+Layer 4 - Board of Supervisors
+
+The BOS retains formal authority over contracts and leases entered into by any entity of the
+City through budget appropriation and legislative action. This authority is seen in the
+requirement for BOS to approve contracts requiring anticipated City expenditures greater than
+$10 million, or contracts with a term exceeding 10 years and modification or amendment with
+impact of more than $500,000 to a contract already subject to BOS approval.34
+
+
+
+
+31
+   HOC’s statutory authority specifically highlights “conducting performance audits of [HSH] to assess the
+efficiency and effectiveness of [HSH’s] delivery of services.” Section 4.133, San Francisco Charter.
+32
+     Commission Streamlining Task Force Final Report, January 28, 2026, p.56.
+33
+  “S.F. to cut down on commissions in bid to streamline City Hall,” Alyce McFadden, the SF Chronicle, May 13,
+2026.
+34
+     San Francisco City Charter section 9.118.
+
+
+                                                                                                                18
+Potentially, BOS authority over contracts will be affected by proposed Charter Reform
+legislation that could be on the ballot for November 2026. In solving for improved operational
+efficiency, and enhanced streamlining of the contract approval process, a reset of the
+threshold for contracts requiring BOS approval has been proposed, based on 2026 dollars,
+increasing it from $10 million to $25 million, with automatic adjustments for inflation. 35
+
+In March of 2024, the BOS amended the Administrative Code to extend the sunset date of
+Chapter 21B36—which allows for no-bid, streamlined contracting for projects addressing
+homelessness—from May 5, 2024, to May 5, 2029. No-bid, streamlined contracting allows HSH
+to bypass the months-long competitive solicitation process, and select nonprofit providers
+based on proven expertise or immediate capacity.
+
+
+
+
+35
+  Charter Reform Update for LBEAC (Local Business Enterprise Advisory Committee), Charter Reform Working
+Group, Feb 5, 2026.
+36
+  San Francisco Ordinance 038-24, Administrative Code - Extending Sunset Date of Contracting Waivers for
+Homeless Services, Mar 7, 2024
+
+
+                                                                                                           19
+Discussion & Analysis
+
+Areas of Concern
+
+Historically, the City’s oversight has been strongest for ensuring fiscal compliance. However,
+we argue the lack of fiscal controls can logically lead to programmatic problems like
+insufficient staffing to provide required services. Accordingly, we advocate for taking a “where
+there’s smoke, there’s fire approach” to deeper monitoring in the face of serious fiscal
+concerns.
+
+PSH outcomes are concerning: drug overdose deaths
+Since 2004, PSH has been the City’s primary tool for homelessness intervention. PSH has site-
+based (units in a building dedicated to PSH that provides onsite services) and scattered site
+inventory (private-market units, with services provided by mobile teams). This report focuses
+on site-based PSH which includes numerous single room occupancy hotels (“SROs”),
+sometimes called residential hotels, previously run by the Human Services Agency and
+Department of Public Health. Site-based inventory was estimated at 9,376 beds as of March
+2026.37
+
+
+
+
+Figure 4. Source: City and County of San Francisco, Department of Homelessness and
+Supportive Housing. FQ3 2026 (Mar 2026).
+
+
+
+37
+     “Total Temporary Shelter Beds,” and “Total Permanent Housing Units,” HSH.
+
+
+                                                                                                20
+HSH inherited this portfolio in 2016, along with responsibility for funding, contracting and
+managing the system. For example, a 2016 Master Lease Agreement with Tenderloin Housing
+Clinic for 16 SRO sites serving 1544 clients was entered in 2014, transferred to HSH in 2016
+and amended to increase its FY20-FY24 budget from $89,400,506 to $132,903,851 in 2022. 38
+Onsite services covered under that contract include: case management, housing stability
+support, wellness and emergency safety checks, support groups and special events, tenant
+selection and building management. PSH single-site properties are heavily concentrated in the
+Tenderloin and West SoMa.39 HSH describes PSH as “provid[ing] long-term affordable housing
+for people with complex social and health needs exiting homelessness” and services including
+“case management and housing stability support.”40
+
+Despite the importance and expense of the PSH program, it operates with limited external
+accountability, primarily in the form of tenant protections available to SRO residents
+regardless of whether a unit is part of HSH or rented on the free market. 41 Oversight gaps are
+well documented. The 2020 Budget and Legislative Analyst audit found that nearly half of PSH
+contracts lacked complete monitoring materials, $73 million in allocated funds went unspent,
+and vacancy rates exceeded targets. Similarly, the 2023 Civil Grand Jury reported that HSH
+completed on-site audits for only 17 of 49 nonprofits requiring review.
+
+In this context, mortality outcomes within PSH warrant close scrutiny; specifically, death by
+accidental drug overdose. Overdoses have long been a problem in PSH. A study of drug
+overdose mortality among residents of SRO hotels in San Francisco from 2010-2017 analyzed
+1,551 total overdose deaths and concluded a 19x higher mortality rate among SRO residents
+compared to non-SRO residents.42 While an imperfect comparison because not all SROs in San
+Francisco are part of the City’s PSH inventory, the study illustrates the overdose experience in
+this category of housing.
+
+The Chief Medical Examiner’s data43 shows that in San Francisco deaths from drug overdoses
+have ranged from 625 to 810 annually from 2020 to 2025. The Chief Medical Examiner
+provides monthly and annual reports on overdose deaths by zip code, but public reports do not
+
+
+38
+  THC: Master Lease Hotels, Grant Agreement First Amendment, HSH presentation to BOS Budget and Finance
+Committee, May 25, 2022.
+39
+  SF Chronicle, San Francisco's deadly failure on the drug crisis is unfolding inside its own housing program, Dec
+15, 2022.
+40
+     Permanent Supportive Housing Occupancy and Total Permanent Housing Units, HSH
+41
+  Budget and Legislative Analyst Report, Performance Audit of the Department of Homelessness & Supportive
+Housing, Aug 6, 2020.
+42
+  Rowe CL, Riley ED, Eagen K, Zevin B, Coffin PO. “Drug overdose mortality among residents of single room
+occupancy buildings in San Francisco, California, 2010–2017.” Drug and Alcohol Dependence. 2019; 204:107571.
+43
+     Accidental Overdose Reports, OCME.
+
+
+                                                                                                                 21
+code deaths to street addresses, and neither HSH or DPH report on overdoses by provider or
+housing type. This leaves a gap that requires indexing death location records by PSH site
+addresses. It is further complicated because PSH tenants who die at hospitals or elsewhere
+may not be counted as PSH location deaths. This leaves a gap that requires indexing death
+location records by PSH site addresses and other data, such as obituaries. 44 Various entities
+have undertaken this task at different times between 2020 and 2025.
+
+Perhaps the most referenced data point on this comes from the DPH’s Behavioral Health
+Services, which recently estimated that roughly a quarter of all of San Francisco’s accidental
+drug overdose deaths occurred in PSH sites.
+
+PSH: A >15x Multiplier for Drug Overdose Deaths
+According to Behavioral Health Services of DPH, roughly 25% of drug overdose deaths occur in
+PSH; PSH houses only 1.5% of San Francisco’s population (based on 12,763 PSH beds at
+100% occupancy, and total population of 826,079)
+
+ Time              % citywide OD     Source
+ period            deaths in PSH
+
+ Jan 2019 –             16%          "Deadly crisis in city housing program," Trisha Thadani and Joaquin Palomino, San
+ Dec 2022                            Francisco Chronicle, Dec 18, 2022
+
+ Jan 2024 –             26%          "Behavioral Health Services Director's Update for the Behavioral Health
+ Dec 2024                            Commission," Hillary Kunins, Sep 18, 2025, p. 6
+
+
+Table 3. Estimates on drug overdose deaths occurring in PSH. OD = drug overdose. PSH =
+permanent supportive housing. Percentages reflect share of citywide accidental drug
+overdose deaths that occurred in PSH sites during the indicated period.
+
+The factual recitations in legislation passed by the BOS Public Safety and Neighborhoods
+Committee on April 23, 2026 and recommended for full-Board approval, summarizes the
+urgency:
+
+           “According to data from the Office of the Chief Medical Examiner, between June 2024
+           and July 2025, 26% of overdose deaths occurred in PSH, a higher percentage than in
+           shelters, hospitals, private homes, or on the street. Drug-related behaviors and
+           associated lawlessness lead to public nuisances that routinely rob law-abiding PSH
+           residents and neighbors of the quiet enjoyment of their own residences and
+           neighborhoods. Just one PSH facility alone generated 654 police calls for service in a
+           single year — averaging nearly two calls per day. A sample of 15 PSH sites showed
+           5,872 police calls for service during that same time frame.”
+
+
+
+44
+     BOS Public Safety and Neighborhood Services Committee Hearing on Overdose Prevention, Jul 24, 2025.
+
+
+                                                                                                                     22
+Collectively, the various estimates of death in PSH
+show two things. First, while the study methods          Roughly 25% of drug overdose
+and results may not be perfect, there are far too        deaths in San Francisco occur
+many deaths in permanent supportive housing.
+                                                         in PSH sites — which house
+Deaths by accidental drug overdose also appear to
+be increasing as a percent of the total OCME count
+                                                         only 1.5% of the city's
+from 2019 to 2025. Second, the City needs a data         population
+process that maps people who die from overdoses
+to PSH addresses and that includes PSH residents
+who died on the way to, or at a hospital or medical facility, or in proximity to the PSH building.
+This could be done through coordination between HSH, DEM, DPH and OCME.
+
+More broadly, these statistics suggest that housing alone—without consistent clinical
+engagement, harm reduction infrastructure, and rigorous oversight—is insufficient to reduce
+overdose mortality. Absent reforms that make resident safety and survival core performance
+metrics, PSH is failing the very population it is designed to protect.
+
+Key safety data still not effectively used, despite past recommendations
+For serious incidents, HSH requires its nonprofit providers to report their occurrence through
+CIRs. These incidents include, but are not limited to, medical and behavioral health
+emergencies, overdoses, acts of violence, deaths, and significant service disruptions. CIRs are
+intended to provide HSH with timely notice of critical events so that the Department can
+coordinate responses, when necessary, monitor site conditions, and assess provider
+performance and program safety.
+
+Standard contract provisions require providers to submit a CIR within 24 hours of an incident.
+For example, a contract between HSH and HomeRise states:
+
+       “Grantee shall report critical incidents, as defined in the Critical Incident Policy, to HSH
+       within 24 hours of the incident… Critical incidents that involve life endangerment events
+       or major service disruptions should be reported immediately to the HSH program
+       manager.”45
+
+HSH policy also requires reporting of overdose events, including overdose reversals. These
+requirements establish CIRs as a mandatory reporting mechanism intended to inform the city
+of serious conditions affecting resident safety and program operations.
+
+
+
+
+45
+  “Fourth Amended Grant Agreement Approval: Community Housing Partnership dba HomeRise | 5th &
+Harrison Transitional Living Program, HSH, Jan 1, 2025.
+
+
+                                                                                                 23
+Controller’s Analysis and Report on CIRs
+CIRs provide a vital look into how HSH’s nonprofit providers are ensuring client safety in the
+course of service delivery, but remains a nondisclosed data set, even when aggregated and
+anonymized to comply with federal HIPAA regulations and HUD Homeless Management
+Information System (HMIS) standards to protect client privacy. In 2024, prompted by the
+convergence of operational, oversight, and policy concerns on safety conditions, the
+Controller’s Office analyzed46 HSH’s workflows based on CIRs and CIR data from June 2023
+through February 2024.
+
+Despite the findings and recommendations from the 2024 report, the City is still struggling to
+converge operational, oversight and policy to address safety conditions for HSH programs,
+particularly PSH. Out of 4,095 total CIRs filed over June 2022 to July 2023, the Controller’s
+report treated and analyzed the data for 1,968, with the following results:
+
+
+
+
+46
+     “HSH Critical Incident Analysis and Recommendations,” Controller’s Office, Apr 2024.
+
+
+                                                                                                 24
+Figures 5 and 6. PSH (left) and Shelter CIRs (right) from the Controller’s analysis. There were
+169 deaths in total, of which only 1 occurred in a shelter. The Mission Hotel (PSH run by THC)
+reported 10 deaths, the most at any PSH site. The Plaza (PSH run by TNDC) reported 8 deaths
+and the Tahanan (PSH run by Mercy Housing) reported 7 deaths. Source: Jury graphics
+generated from controller’s data.
+
+
+The sampled data indicates that HSH shelter and housing sites regularly manage high-acuity
+populations and experience frequent safety-related incidents. What jumps out is that CIRs for
+deaths is almost exclusive to PSH, and these deaths occurred at a not insignificant frequency,
+18% of all sampled CIRs (N=914).
+
+
+
+
+                                                                                              25
+Limitations in CIR Data and Reporting
+                                                     The Controller’s 2024 Report on HSH Critical
+     79% of responding sites                         Incident Analysis and Recommendations47
+     reported that CIR data                          identified several limitations in HSH’s CIR
+
+     undercounts incidents at their                  workflows that affect the reliability and usefulness
+                                                     of the data. First, CIR data may underrepresent the
+     programs. 64% said it was
+                                                     actual number of incidents. Based on surveys
+     unclear when a CIR was even                     conducted as part of the analysis, 79 percent of
+     required                                        responding sites reported that CIR data
+                                                     undercounts incidents occurring at their programs.
+                                                     Providers cited inconsistent reporting practices
+and uncertainty regarding reporting requirements.
+
+Second, providers reported a lack of clarity regarding when CIRs are required. Sixty-four
+percent of surveyed providers indicated that it was not clear when a CIR should be submitted.
+The Controller’s Office also found that providers received inconsistent or insufficient training
+on CIR reporting requirements.
+
+Third, the quality and consistency of CIR data vary across providers. The Controller found
+inconsistencies in how incidents are categorized and documented, which limits the ability to
+compare data across sites or over time.
+
+Lack of Standardized Response to, and Use of, Data
+The Controller also found that HSH lacks standardized processes for responding to reported
+incidents. Program managers do not have uniform guidance on how to assess incidents,
+escalate concerns, or initiate corrective actions. As a result, responses to similar incidents
+may vary across programs.
+
+In addition, HSH has not fully developed systems to aggregate and analyze CIR data at the
+program, provider, or system level. While CIRs are collected in a centralized system, the
+Controller found that data is not consistently used to identify trends, monitor performance, or
+inform management decisions. Two years later, serious incidents continue to occur, often
+repeatedly; this report has produced the same finding that HSH has not used CIRs at a system
+level, to any measurable effect, to improve client safety.
+
+
+
+
+47
+  San Francisco Office of the Controller, City Performance Unit. “HSH Critical Incident Analysis and
+Recommendations.” Apr 23, 2024
+
+
+                                                                                                        26
+The Jury’s investigation included research into the status of implementation of the Controller’s
+recommendations but that research did not reveal that any steps had been taken toward
+implementation.
+
+Absence of System-wide Safety Metrics
+Based on the evidence reviewed, CIR data is not currently used to establish systemwide safety
+metrics or performance benchmarks for providers. The Jury was unable to obtain aggregated
+CIR data by site or provider or documentation demonstrating routine use of such data for
+comparative analysis.
+
+CIRs appear to function primarily as individual incident reports rather than as components of a
+comprehensive safety monitoring system. The absence of standardized metrics limits the
+City’s ability to: identify programs with elevated levels of risk; detect patterns of repeated
+incidents at specific sites; compare performance across providers; and initiate timely
+intervention based on emerging trends.
+
+Implications for Oversight
+The CIR system provides a mechanism for reporting serious incidents, but its current
+implementation does not ensure that those incidents are systematically analyzed or used to
+inform oversight.
+
+As a result, information regarding deaths, overdoses, violence, and other critical events
+remains fragmented across individual reports. Without consistent aggregation and analysis,
+these data do not function as an early warning system for deteriorating conditions at specific
+sites or within specific programs. This limitation is particularly significant in a system that
+relies on multiple providers operating across numerous sites, where risks may emerge
+gradually and across locations.
+
+The following case studies examine specific instances in which serious incidents and/or
+delivery failures were alleged to have occurred within HSH-funded programs. The concerns
+raised by these incidents illustrate how the limitations identified in the CIR system might
+potentially affect the City’s ability to identify patterns, respond to emerging risks, and ensure
+resident safety.
+
+
+The Two Perspectives of Homelessness
+
+San Francisco has invested heavily on its “care to exit” framework for driving successful exits
+from homelessness - an approach that prioritizes moving people from unsheltered
+homelessness into interim permanent housing, with supportive services intended to stabilize
+residents and help them exit homelessness on a sustained basis. At the same time, a central
+
+
+                                                                                                    27
+tension defines what it means to be homeless in SF: the gap between the system’s promise of
+care, and the reality that many face unsafe conditions, inconsistent support, and in some
+instances, traumatizing events and life-threatening outcomes even after being brought
+indoors. Yet, this system is notable for its scale48 and level of public investment.
+
+The effectiveness of this system depends not only on the number of people processed and
+housed, but on what occurs after placement. This section examines the central tension within
+SF’s approach - the divergence between how the system is designed and measured at the
+policy level, and how it may be experienced by the people it is intended to service. We argue
+that to become more effective, this divergence needs to be reconciled.
+
+As the jury investigated the operations and oversight of HSH, two perspectives emerged.
+
+The first is the human, lived experience. This perspective reflects day-to-day realities: the
+personal choice each homeless person must make of whether to remain unsheltered or seek
+shelter and, for some, possibly re-live past traumas at HSH housing sites, whether to receive
+services and remain connected to care, and in some cases whether they survive. It is shaped
+by conditions inside individual buildings, it depends on the training and reliability of staff, and
+the degree to which vulnerable individuals are actively supported or passively housed.
+
+The second is the policy-level perspective. The system is designed, funded and managed by
+the City, and operated by its nonprofit providers. This perspective49 emphasizes scale,
+throughput, implementation of number of beds or units brought online, contracts executed,
+with equity and inclusion in mind. It reflects the operational realities of rapidly expanding a
+complex service delivery system critically dependent on a network of nonprofit providers,
+many of which have grown exponentially to meet needs.
+
+Both perspectives are required to address
+homelessness. But they need to be reconciled.               A system can appear to be
+A system can appear to be effective when
+                                                            effective when evaluated
+evaluated through aggregate, institutional KPIs             through institutional KPIs, while
+(key performance indicators, or more simply,                simultaneously producing
+metrics) - beds or units added, housing vacancies,          deeply concerning outcomes at
+etc. - while simultaneously producing deeply
+                                                            the individual level
+concerning outcomes at the individual level,
+including neglect, unmanaged behavioral health
+
+
+48
+  U.S. Department of Housing and Urban Development, 2023 Annual Homeless Assessment Report (AHAR) to
+Congress.
+49
+     Home by the Bay, HSH’s long term strategic plan.
+
+
+                                                                                                       28
+conditions, and preventable deaths. Individual failures and deaths may be treated as isolated
+incidents rather than as indicators of weaknesses in systemic design, staff training or
+oversight challenges.
+
+This section presents two case studies, each viewed primarily through one of these
+perspectives — one centered on an individual resident, the other on a large shelter site and its
+surrounding community. Rather than findings of fault, which the Jury is not positioned to
+make, each describes circumstances in which raised concerns implicate the gap described
+above: between a system that can appear effective in the aggregate and the conditions that
+may be experienced at the individual and community level. More importantly, they can point to
+what can be done better, i.e. areas of improvement. For example, precursor events to individual
+failures or deaths can be aggregated, normalized and analyzed by HSH to preventively address
+systemic design or training issues. The case studies surface gaps like this in programmatic
+oversight, leading to recommendations later in this report which we believe can strengthen the
+already comprehensive work50 led by the Controller’s Office to ensure fiscal compliance with
+nonprofit providers.
+
+Perspective #1 - Eric McCain: Reported Concerns about Jazzie Collins Apartments
+In November 2025, Eric McCain passed away in his unit at the Jazzie Collins Apartments, a
+PSH site operated by HomeRise.51 His body is reported to have remained undiscovered for
+approximately 10-12 days, until his sister called the San Francisco Police Department (“SFPD”)
+to perform a wellness check. By the time his body was discovered, it had reportedly
+moderately decomposed. The purported circumstances of his death raised immediate
+concerns, and investigative reports published by the San Francisco Chronicle and the UC
+Berkeley Investigative Reporting Program raised questions about whether:
+
+      1. wellness checks were conducted and accurately documented;
+      2. signs of absence or distress by Mr. McCain were identified; and
+      3. staff should have escalated the matter given the alleged prolonged lack of contact.
+
+
+Grant agreements for PSH sites contain standardized contract terms requiring wellness
+checks and emergency safety checks for those serving high-acuity residents, such as the
+Jazzie Collins Apartments, as well as those serving residents with demonstrated stability, for
+
+
+
+
+50
+     Citywide Nonprofit Monitoring and Capacity Building Program, Controller’s Office.
+51
+  “At a ‘model’ S.F. complex for the formerly homeless, a man lay dead for days unnoticed ,” Matthias Gafni,
+Matthew Mitchell, Susie Neilson, SF Chronicle, Mar 20, 2026.
+
+
+                                                                                                               29
+example The Abigail Housing Ladder Program. In HSH’s recent 3-year extension 52 for that
+housing site, the contract contains the following standardized terms for wellness checks:
+
+           “Wellness and Emergency Safety Checks: Grantee shall conduct Wellness and/or
+           Emergency Safety Checks in accordance with HSH policy to assess a tenant’s safety.
+           Whenever there is a reason to believe there is immediate and substantial risk due to a
+           medical and/or psychiatric emergency, then Grantee shall contact appropriate
+           emergency medical professionals.”
+
+The Jazzie Collins site was designed to support clients with acute needs – those with past
+trauma, substance abuse orders, physical disabilities. The site opened to great political fanfare
+in 2022.53 The reported and alleged circumstances raise concerns about whether the above
+contractual standards that help safeguard residents have been consistently applied at the site.
+
+HomeRise: Prior Concerns and Corrective Action History
+HomeRise had previously been on the Controller’s Corrective Action list, with its status at Tier
+2 or “Elevated Concern” following fiscal monitoring of the 2021-2022 and 2022-2023 fiscal
+years. The Mayor’s Office of Housing and Community Development (“MOHCD”) and HSH
+requested an audit of HomeRise in 2022. The Audit found “gross fiscal non-compliance,
+wasteful practices that misuse taxpayer funds, and spending of City funds on unallowed or
+questionable costs that likely diverted services from intended housing recipients or facility
+improvements (emphasis added).” 54 After the Audit was released, the Controller’s Office
+escalated its status to Red Flag status.55 It was subsequently lowered to Tier 2, with a
+notation “lowered from Tier 3 in 2024” as reflected in the Controllers FY24-25 Corrective Action
+list.56
+
+
+
+
+52
+   Second Amendment to Grant Agreement between City and County of San Francisco and Tenderloin Housing
+Clinic, Inc., HSH, May 15, 2026, Description of Services, p. 3.
+53
+     “A Pelosi Model Is Now a San Francisco Scandal,” James Freeman, The Wall Street Journal, Mar 20, 2026.
+54
+  Letter dated April 2, 2024 from Mark de la Rosa, SF Director of Audits to HSH and MOHCD, transmitting audit and
+noting “the audit, which your departments requested after discovering HomeRise’s significant fiscal challenges, had
+as its objective to determine whether HomeRise complied with the requirements of the city agreements, with a
+focus on fiscal areas and limited efforts on programmatic compliance.” Department of Homelessness and
+Supportive Housing, “Community Housing Partnership, d/b/a
+HomeRise, Mismanaged Financial Activities and Misused City Funds Related to City Agreements for Its
+Properties and Supportive Housing Efforts.”
+55
+  Amended Grant Agreement Approval: Community Housing Partnership dba HomeRise |
+5th & Harrison Transitional Living Program, HSH prepared materials for HOC, Agenda Item 12.3, Nov 7, 2024, p. 3.
+56
+  Citywide Nonprofit Monitoring and Capacity Building Program, FY24-25 Annual Report, Corrective Action
+Designations, FY25 Tier 2 Designations, December 2, 2025, p. 30.
+
+
+                                                                                                                   30
+Aisha McCain told her brother’s story during public comment at the January 15, 2026 HOC
+meeting.57 HSH issued a corrective action letter to HomeRise58 on February 6, 2026, “to
+address HomeRise’s failure to follow the required HSH Resident Emergency Safety Check
+Policy and Procedures for the Jazzie Collins Permanent Supportive Housing (PSH) program
+(FSP #1000025900) during the timeframe of November 05, 2025, to November 14, 2025.” This
+timeframe coincides with Eric McCain’s estimated date of death, in early-to-mid November
+2025. The letter directed HomeRise to take corrective actions at Jazzie Collins - overhaul its
+wellness check process, implement added staff training and develop a Technological
+Improvements Plan. It did not call for a systemic audit of any deaths at the other PSH facilities
+operated by HomeRise and it did not call for implementing the corrective procedures at other
+HomeRise facilities, if necessary.
+
+Rise of Homeless Nonprofits: “Too Big to Fail” Now?
+Since the 1980s, the City has built a diverse and complex network of nonprofit providers,
+originally with the intent of tapping into their unique skills and community ties. Nonprofits
+deliver the majority of its homelessness services – outreach, shelters, and permanent
+supportive housing.
+
+Organizations like HomeRise and Urban Alchemy have expanded from managing individual
+sites to operating large portfolios of properties and programs across the City. The expansion
+has been driven in part by the urgency of the homelessness crisis, including the need for rapid
+expansion during the COVID-19 pandemic, as well as by the City’s preference for working with
+established providers capable of scaling operations quickly.
+
+This rapid growth has come with challenges. Certain nonprofits have faced difficulties
+maintaining consistent service quality across sites, ensuring adequate staffing levels, and
+meeting contractual and reporting requirements. For clients’ lived experience in the
+homelessness system, this can manifest on different levels from dissatisfaction with service
+delivery, at best, to complaints of being victimized by violence and subsequent trauma or, in
+the worst case, death.
+
+Evidence (Figure 7) points to increasing levels of acuity among the homelessness population,
+and as this mega-trend plays out, it is increasingly critical to uphold and maintain consistent
+service delivery across all program types. This is particularly critical for site-based PSH;
+anecdotally, through the course of interviews, this Jury learned that despite being offered
+
+
+
+
+57
+     Special Homelessness Oversight Commission meeting, Jan 15, 2026, 15:00 mark on archived video.
+58
+  “Corrective Action Letter for HSH Resident Emergency Safety Check Policy,” Dariush Kayhan, Deputy Director for
+Programs, Feb 6, 2026.
+
+
+                                                                                                              31
+placement, some homeless individuals consciously choose to be unsheltered to avoid re-living
+past trauma from acts of violence endured in prior PSH stays.
+
+
+
+
+Figure 7. Source: Data Officer presentation from HOC Meeting, April 2, 2026 detailing the
+prevalence of complex health conditions among its clients.59
+
+
+Staff at housing sites are frequently tasked with managing complex behavioral health
+situations, responding to crises, and maintaining order in environments with high
+concentrations of high-acuity clients. These responsibilities may sometimes be carried out
+without adequate clinical staffing, training, or authority.
+
+The scale, scope, and operational footprint of these multifaceted nonprofits increasingly make
+them difficult to replace in the short term without significant disruption to services. Current
+trends risk creating a set of nonprofit providers that are “too big to fail.” This, in turn, can
+further weaken the City’s leverage to enforce fiscal and programmatic standards consistently
+and proactively.
+
+Perspective #2 - Urban Alchemy and Realities of Scale
+The Urban Alchemy (also referred to as “UA”) story shows how the City’s reliance on large
+nonprofit operators has evolved. Founded in 2018, UA was initially contracted by the
+Department of Public Works to staff “Pit Stop” hygiene stations across the City. UA now
+operates in Oakland, Los Angeles, Portland, and Birmingham, and it continues to be one of SF’s
+larger and more visible nonprofits providing homelessness services.
+
+
+
+
+59
+     Homelessness Oversight Commission meeting. April 2, 2026. pg. 9.
+
+
+                                                                                                   32
+Figure 8. Urban Alchemy’s annual revenue has grown at a CAGR of 70% over 2020-2024, to
+reach $84.9M as it has scaled to operate in SF and beyond SF. Source: ProPublica, SF
+OpenBook
+
+
+Urban Alchemy was established to provide community ambassador and public safety-adjacent
+services, often staffed by individuals with lived experience with incarceration or
+homelessness. Its model emphasized presence and engagement in public spaces, de-
+escalation, informal order maintenance, and peer-based trust-building.
+
+During the COVID-19 stay-at-home order, the City significantly expanded its use of Urban
+Alchemy to staff shelter-in-place hotels, temporary housing sites (Safe Sleeping Sites at City
+Hall, the 311 Gough Cabin Program), and street outreach and encampment response efforts.
+Urban Alchemy’s role evolved from a niche service provider to a core operational partner with
+HSH to meet urgent demand during a declared emergency. As such, UA became responsible
+for operating large congregate and non-congregate shelter sites, managing environments with
+high concentrations of individuals with complex behavioral health needs, and managing safety
+and order within and around sites. This increasingly required clinical awareness and
+coordination, structured supervision and management systems, and financial and
+administrative controls consistent with large contracts. It soon became a multi-function
+service provider, operating at the intersection of housing, behavioral health and public safety.
+
+By 2025, UA was designated as “Tier 2” on the Controller’s Office Nonprofit Monitoring
+Corrective Action list due to serious concerns about exceeding budget, employee time-
+tracking, and prior issues with invoicing. Reporting indicates that Urban Alchemy may have
+struggled with budgets, staffing, and data or record keeping at their sites in San Francisco.
+711 Post Street has been cited as one example of such struggles.
+
+
+
+
+                                                                                                 33
+711 Post St: An Oversight Framework Without a Safety Dimension
+The Ansonia Hotel, a former youth hostel, opened as an HSH-funded shelter (named simply
+711 Post Street) in 2022, originally contracted to house 250 people on a semi-congregate
+basis; capacity was raised to 280 in 2025.60 It serves a high-acuity population (single adults
+with significant behavioral health and substance use disorders) under a “low-threshold,” harm
+reduction model that, by design, admits and retains residents with minimal preconditions.
+Urban Alchemy is contracted for in-facility operations; a separate nonprofit, Five Keys, is
+contracted for safety and cleanliness in the surrounding Lower Nob Hill neighborhood. The six-
+month renewal of Urban Alchemy’s contract was approved by two City bodies in the fall of
+2025 — first by HOC, then by the BOS. This section examines what those two reviews
+measured, and did not, in reaching their approvals.
+
+The HOC Approval (August 7, 2025)
+
+HSH brought the six-month, $4 million extension of 711 Post Street to HOC as a consent-
+calendar item. The “Performance History” supporting the request was entirely fiscal and
+administrative:61 two unresolved citywide fiscal-monitoring findings (exempt staff not tracking
+time, and roughly 20 days of operating cash against a 30-day City standard); a June 26, 2025
+corrective action letter for overspending the budget at 711 Post; and four resolved program-
+monitoring findings on forms, training records, and data submission. The packet did not report
+whether Urban Alchemy had met its service and outcome objectives; beyond the fiscal
+findings, the only performance figure it offered was an average occupancy rate of 96 percent
+for FY24–25, alongside a narrative description of community-outreach activities.
+The contract’s standardized service and outcome objectives — occupancy of at least 90
+percent, bed turnover, referral documentation, staff-training completion, Coordinated Entry,
+and document readiness — contain a single reference to safety: an outcome measure that at
+least 75 percent of guests who complete a satisfaction survey rate “the treatment of staff,
+connection to services, and safety as good or excellent.” No measure draws on critical
+incident, overdose, or violence data; critical incidents appear only as a reporting duty imposed
+on the grantee. The only public comment recorded on the item was a question about whether
+the site had adequate space for the expansion, and the extension was approved on the
+consent calendar.62
+
+
+60
+  Amended Grant Agreement Approval: Urban Alchemy | 711 Post (Ansonia Hotel), HOC Approval Package, Aug. 7,
+2025. The 30-bed increase (to 280) was temporary, offsetting a reduction at the Multi-Service Center (MSC) South
+shelter during its rehabilitation.
+61
+  Amended Grant Agreement Approval: Urban Alchemy | 711 Post (Ansonia Hotel), HOC Approval Package, Aug. 7,
+2025, “Performance History” (p. 3) and Appendix A, Service and Outcome Objectives.
+62
+   Per the meeting minutes, the only comment was: “Christin Evans questioned if there was adequate space at 711
+Post since the contract indicates that there will be an expansion of space.” SF HOC Meeting Minutes, Aug. 7, 2025,
+p. 9.
+
+
+                                                                                                                34
+The BOS Approval (September 30, 2025)
+
+Because the contract in total exceeded $10 million, it required BOS approval; the grant
+amendment brought the total to roughly $27.6 million. HSH’s FY2024–25 performance
+monitoring found that Urban Alchemy “met all service and outcome objectives” except guest
+attendance at community meetings — a measure the proposed amendment then removed, as
+the Budget and Legislative Analyst noted; the Analyst described the provider as “successful at
+operating the 711 Post shelter program” on the basis of 763 adults served and 96 percent
+occupancy.
+
+Every deficiency the analysis identified was fiscal: overspending, 15 days of operating cash
+against the 30-day standard, recurring time-study findings, and the Controller’s pending “Tier
+2” designation. The service and outcome objectives reviewed were the same ones used by
+HOC, carrying the same single, survey-based reference to safety. The grant’s scope of services
+does impose neighborhood-facing duties — a “Good Neighbor Policy,” discouraging loitering
+and public drug use in the surrounding area, and daily perimeter inspections — but the review
+measured none of them. The lone piece of public correspondence in the packet raised fiscal
+objections, not safety.63
+
+A Pattern Across Two Reviews
+Two oversight bodies, two months apart, through two separate review processes, approved the
+same renewal of the same site, and neither review treated client safety or community
+conditions as a measured factor. This was not for lack of data. Resident complaints flow to
+the SMC, an HSH advisory body that investigates complaints about shelter conditions and
+rules whether a shelter is “in compliance,” “indeterminate,” or “out of compliance” with
+Standards of Care that expressly require an environment “safe and free of physical violence.” 64
+Serious incidents at the site are captured in CIRs. The grant amendment in question requires
+Urban Alchemy to participate in SMC’s monitoring, adhere to the Standards of Care, maintain a
+resident complaint process, and file CIRs.65 But because resident-safety performance —
+complaints routed to SMC, or the volume and nature of critical incidents — is not expressed as
+
+
+63
+     BOS File No. 250896, Public Correspondence (G. Lee, Sept. 18, 2025).
+64
+   San Francisco Administrative Code § 20.305 (Shelter Monitoring Committee); Shelter Standards of Care
+legislation (2008). The Committee receives complaints regarding shelter conditions — to which a shelter has seven
+days to respond — and, where a complaint remains unresolved, investigates and determines whether the shelter is
+“in compliance,” “indeterminate,” or “out of compliance” with the Standards of Care. See Shelter Monitoring
+Committee, sf.gov.
+65
+  HOC Approval Package, Aug. 7, 2025, Appendix A (Shelter Standards of Care; “Feedback, Complaint and Follow-
+up Policies”; Critical Incident reporting; “City Communications and Policies,” including attendance at Shelter
+Monitoring Committee meetings); BOS File No. 250896, Grant Agreement Appendix A (same provisions; Standard of
+Care, Agreement § 16.22).
+
+
+                                                                                                               35
+a contractual service objective, it has no path into the approval framework, even though the
+data exists. Nowhere in either packet, and nowhere in the evaluative “Performance History” or
+the Budget and Legislative Analyst’s review, is there any summary of complaint counts filed at
+711 Post, any determination by SMC, any Standard-of-Care finding, or any critical-incident data
+for the site. This machinery appears only as obligations the provider must satisfy (i.e. boxes to
+check) not as information bearing on the decision.
+
+
+The result is an approval framework that is not
+robust: it can certify a provider as compliant and                     The contract approval
+successful while the safety-relevant data the City                     framework is not robust: it can
+already collects plays no role. The only trace of                      certify a nonprofit as compliant
+safety within the framework itself was a single line
+                                                                       and successful while the safety-
+on a guest-satisfaction survey, in which “safety” is
+bundled with two unrelated attributes and reported
+                                                                       relevant data the City already
+as a guest perception rather than an objective                         collects plays no role.
+measure. That the same omission recurs across
+two independent review points suggests it is not a
+lapse by one body but a feature of how the City evaluates these contracts — and a notable one
+given the program itself: for a high-acuity population served under a low-threshold model, the
+safety of residents and the conditions at and around the site should be central to the
+program’s purpose, not peripheral to it.
+
+Yet across both approvals, the provider’s
+evaluation rested on occupancy, throughput,                            For a high-acuity population
+referrals, and fiscal compliance — the BOS                             served under a low-threshold
+analysis going so far as to call the provider                          model, the safety of residents
+“successful at operating” the site on those                            and the conditions at and
+grounds. The neighborhood conditions at 711 Post
+                                                                       around the site should be
+surfaced only later, and outside the routine
+process — at a February 12, 2026 BOS sub-                              central to the program’s
+committee hearing66, after which Urban Alchemy                         purpose, not peripheral to it.
+elected to exit the contract.67
+
+
+
+
+66
+  Hearing — Shelter Services and Operations — 711 Post Street, BOS Public Safety and Neighborhood Services
+Committee, Feb. 12, 2026.
+67
+     “S.F. set to lose 450+ shelter beds in Tenderloin,” Eleni Balakrishnan, Mission Local, Apr. 6, 2026.
+
+
+                                                                                                             36
+So What? From Incidents to System Accountability
+
+The alleged circumstances surrounding Eric McCain’s death at a PSH site and the concerns
+raised about 711 Post Street are consistent with the concern for safety, oversight, and
+accountability gaps this report identifies within HSH-funded programs. Drawing on statistics
+from multiple analyses, accidental drug overdose deaths at PSH sites are not isolated events;
+they occur within a broader system that collects information about risk without consistently
+using it to prevent future harm. In both cases, the City’s systems collected information
+relevant to client safety, but the mechanisms to aggregate that information, identify patterns,
+and trigger timely review were limited. In each, attention came from outside the routine
+oversight process — a family member’s public comment at an HOC meeting, and a
+neighborhood’s call for a BOS Public Safety and Neighborhood Services Committee hearing.
+These cases point to systemic gaps in how HSH and HOC use data, exercise oversight, and
+ensure accountability. The findings and recommendations that follow are intended to address
+those gaps.
+
+
+
+
+                                                                                               37
+Findings and Recommendations
+
+Finding 1– HSH has not used Critical Incident Reports effectively to identify
+troubling patterns or to improve safety at housing sites.
+
+R1.1 By December 2026, HSH should maintain aggregated and anonymized data in a business
+intelligence-driven dashboard, updated no less than monthly, that allows the user to search
+and filter the data set by coded incident (deaths, overdoses, acts/threats of violence, sexual
+assault, denial of service), nonprofit provider, housing type, and location (zip code), by year.
+
+R1.2 By December 2026, HSH should expand the responsibilities of its existing Program
+Compliance function — redesignating it "Safety and Compliance" — to include system-level
+monitoring and improvement of client safety across all HSH-funded programs. Using existing
+staff and resources, the function should centralize the analysis, and use of Critical Incident
+Reports; establish and implement systemwide safety standards and data-driven early-warning
+methods; and report on client-safety trends to HOC on a quarterly basis.
+
+R1.3 By June 2027, HSH should include aggregated and anonymized CIR data as part of the
+Director’s report to HOC, quarterly, and through the Sunshine Act, make this available as a data
+dashboard to the public.
+
+R1.4 By December 2027, HSH should designate the most serious coded incident categories in
+CIRs as standards in a separate section required in all its nonprofit contracts, tentatively titled,
+“Safety Standards.” The Safety Standards section should also include thresholds for
+triggering additional, targeted review.
+
+
+Finding 2 – HSH is lagging in its efforts to present data that allows for
+benchmarking nonprofits among themselves by program or housing type, and
+to use data as a trigger for automated, and targeted program monitoring.
+
+R2.1 By December 2026, HSH should begin publishing business intelligence-driven data
+dashboards for HOC and the public that showcase performance aligned to the Performance
+Measurement Plan to meet HOC’s and the public’s need for full transparency on the data and
+metrics that guide HSH’s decision-making.
+
+R2.2 By March 2027, HSH should internally benchmark nonprofit providers among themselves
+by program or housing type (portfolio management) with the objective of screening for
+performance and safety outliers. Negative outliers should be tagged for further investigation,
+
+
+
+
+                                                                                                   38
+and root causes identified and ruled out as an early warning sign of more serious service
+delivery problems.
+
+R2.3 By December 2027, HSH should develop data-driven automation alerts (“data triggers”68)
+for triggering additional, targeted review of nonprofit contracts. For example, certain CIRS from
+R1.2, and more broadly, outliers and negative trendlines in performance outcomes and safety
+standards should drive investigations into root causes, and be evaluated as potential early
+warning signs of more serious problems.
+
+
+Finding 3 – HSH’s cessation of the established practice of submitting certain
+contracts to HOC for review and consent and notifying HOC of all renewals and
+extensions as line items, undermines HOC’s impact as a governing oversight
+body.
+
+R3.1 By December 2026, HSH should return contract renewals and extensions to HOC’s
+consent calendar.
+
+R3.2 By December 2026, HSH and HOC should work together to establish new threshold
+requirements for HOC’s review of, and comment on, nonprofit contracts appearing on its
+consent calendar, taking into consideration that the monetary thresholds for BOS approval of
+contracts.
+
+
+Finding 4 – HOC has yet to exercise the full extent of its statutory authority, and
+lacks the training and resources to meet the public’s expectations as set by the
+2022 Prop C initiative.
+
+R4.1 By June 2027, the City Attorney should create onboarding and training materials for
+current commission members and future appointees to explain HOC’s authority, including
+performance audits and how to conduct or commission them, and how to conduct robust
+contract reviews.
+
+
+
+
+68
+   Data triggers are automated procedures in databases that execute specific actions when predefined data
+conditions are met. This can be as simple as sending alerts to a management team when data exceeds preset
+targets. Data triggers here could include: 1). identification of outliers (data points that differ significantly from
+others in a dataset) the portfolio analysis in R 2.2, 2). unfavorable trendline analysis of any one of the 100+ metrics
+in the Performance Measurement Plan, 3). a pattern of elevated CIRs (vs. comparables normalized by zip code) for
+a particular coded incident type, and 4). ongoing status as a Tier 2 or Tier 3 offender in the Corrective Action Report.
+
+
+                                                                                                                     39
+R4.2 By March 2027, HSH should collaborate with HOC to review and revise the Executive
+Director’s monthly report to HOC to incorporate data and format requests from HOC
+commissioners, including its Data Officer.
+
+R4.3 By March 2027, HOC should initiate or commission a performance audit per its chartered
+authority, to investigate overdoses, including reversals, and deaths at PSH sites with the
+objective to identify structural or systemic causes and to establish departmental performance
+standards.
+
+
+Finding 5 – The Shelter Monitoring Committee is set to terminate by a recent
+ordinance, and HSH has insufficient resources to absorb SMC’s work, and
+oversee permanent supportive housing sites effectively.
+
+Note: The Shelter Monitoring Committee was the only independent body empowered to
+conduct unannounced site visits to City-funded shelters for the purpose of monitoring
+Standards of Care, staffed by two full-time employees of DPH. Its mandate never extended to
+PSH. Upon the Ordinance's effective date, there will be no independent body authorized to
+conduct unannounced inspections of City-funded homeless services facilities of any kind —
+neither shelters nor PSH. Its complaint investigation function will rest with HSH.
+
+R5.1 By December 2026, the Controller’s Office should conduct a review of, and report on, what
+changes and resources would be necessary to enable HSH to carry out and continue the
+functions of the Shelter Monitoring Committee.
+
+
+R5.2 By December 2026, the Controller’s Office should conduct a review of, and report on, what
+changes and resources would be necessary to enable HSH to implement and conduct
+unannounced site visits and other process changes to enhance monitoring of permanent
+supportive housing sites.
+
+
+
+
+                                                                                             40
+Required and Requested Responses
+
+Pursuant to California Penal Code §933, the Jury requires responses to the findings and
+recommendations shown in Table 4 within 60 calendar days (for the Mayor’s Office, and the
+City Attorney) or 90 calendar days (for the Board of Supervisors).
+
+Table 4: Required responses
+
+ Respondent                               Findings                   Recommendations
+
+
+ Mayor                                    F1, F2, F3, F4, F5         R1.1, R1.2, R1.3,
+                                                                     R1.4, R2.1, R2.2,
+                                                                     R2.3, R3.1, R3.2,
+                                                                     R4.2, R4.3, R5.1,
+                                                                     R5.2
+
+ Board of Supervisors                     F1, F2, F3                 R1.1, R1.4, R2.1,
+                                                                     R3.1
+
+ City Attorney                            F4                         R4.1
+
+
+
+
+Pursuant to California Penal Code §933(a), the Jury requests responses to the findings
+and recommendations shown in Table 5 within 60 calendar days.
+
+Table 5: Requested responses
+
+ Respondent                               Findings                   Recommendations
+
+
+ Homelessness Oversight Commission F1, F2, F3, F4                    R1.3, R1.4, R2.1,
+                                                                     R3.1, R3.2, R4.1,
+                                                                     R4.2, R4.3
+
+ Department of Homelessness and           F1, F2, F3, F4, F5         R1.1, R1.2, R1.3,
+ Supportive Housing                                                  R1.4, R2.1, R2.2,
+                                                                     R2.3, R3.1, R3.2,
+                                                                     R4.2, R5.1, R5.2
+
+ Controller                               F1, F5                     R1.4, R5.1, R5.2
+
+ Office of Contract Administration        F1                         R1.4
+
+
+
+
+                                                                                            41
+Methodology
+
+To prepare this report, the Jury conducted personal interviews, reviewed reports and data
+dashboards from City offices, and consulted relevant legal statutes. The Jury interviewed
+persons presently and formerly associated with HSH, HOC and various City entities with
+oversight or other functions relating to HSH.
+
+The Jury reviewed and analyzed: City supplier data; reports by previous Civil Grand Juries, the
+Office of the Controller, and the Board of Supervisors’ Budget and Legislative Analyst;
+contracts managed by the Homelessness and Supportive Housing Department, and news
+coverage and reporting. The Jury attended or watched recordings of meetings of: HOC, OCOH,
+and SMC.
+
+The report was reviewed and approved by the City Attorney and a Superior Court judge.
+
+Key Reports Reviewed:
+
+   ●   A progress report about the San Francisco [HSH]," SF CGJ, Jun 30, 2022,
+       https://civilgrandjury.archive.sf.gov/2021_2022/2022%20CGJ%20Report_A%20Progress%20Re
+       port%20about%20the%20San%20Francisco%20Department%20of%20Homelessness%20and%2
+       0Supportive%20Housing.pdf
+   ●   Hitting the performance bullseye; contracting for better outcomes in homelessness services,"
+       SF CGJ, Jun 28, 2023,
+       https://media.api.sf.gov/documents/2023_CGJ_Report_Hitting_the_Performance_Bullseye_-
+       _Contracting_for_Better_Outc_h8lGNXC.pdf
+   ●   Homelessness benchmarking comparing San Francisco to peer jurisdictions," City Performance
+       team (Controller’s Office), Jul 26, 2023, https://www.sf.gov/sites/default/files/2023-
+       07/2023%20Homelessness%20Benchmarking%20Report.pdf
+   ●   “HomeRise mismanaged financial activities and misused city funds...," HSH, MOHCD, CSA and
+       Sjoberg Evashenk Consulting, Apr 2, 2024, https://www.sf.gov/sites/default/files/2024-04/HSH-
+       MOHCD%20HomeRise%20Audit%20Report%2004.02.24.pdf
+   ●   HSH critical incident analysis and recommendations," City Performance team (Controller’s
+       Office), Apr 23, 2024, https://www.sf.gov/sites/default/files/2024-
+       05/HSH%20Critical%20Incident%20Analysis%20and%20Recs%20-
+       %20FINAL%20COMBINED%204.23.24.pdf
+   ●   Performance audit of permanent supportive housing funds administered by [HSH]," BLA, Fred
+       Brousseau, May 3, 2024,
+       https://sfbos.archive.sf.gov/sites/default/files/050324_PA_of_Permanent_Supportive_Housing
+       _Funds_Admin_by_DH_SH.pdf
+
+
+
+
+                                                                                                      42
+●   Assessment of the San Francisco shelter system," City Performance team (Controller’s Office),
+    Mar 10, 2025, https://media.api.sf.gov/documents/CON_Shelter_Assessment_Report.pdf
+
+
+
+
+                                                                                                43
+Glossary and Abbreviations
+
+ Term                                Definition
+
+ Adult Probation Department (APD)    The City department that supervises adults on probation; receives
+                                     allocations from the Our City, Our Home Fund for reentry-related
+                                     homelessness services.
+
+ Balance-of-state                    A Continuum of Care organized at the state level that encompasses areas
+                                     without their own local continuum.
+
+ Board of Supervisors (BOS)          San Francisco's 11-member legislative body, responsible for passing
+                                     ordinances, approving the City budget, and providing legislative oversight
+                                     of City departments.
+
+ Budget and Legislative Analyst      An independent office that conducts performance audits, fiscal analyses,
+ (BLA)                               and policy research for the Board of Supervisors.
+
+ CAGR (Compound Annual Growth        A measure of growth over a period of time, expressed as an annualized
+ Rate)                               percentage rate that accounts for compounding.
+
+ Care Not Cash                       A 2002 voter-approved policy that replaced a portion of cash assistance
+                                     to homeless adults with direct services and shelter access.
+
+ Care to exit                        HSH's strategic framework for addressing homelessness, which
+                                     prioritizes moving people from unsheltered homelessness into temporary
+                                     shelter and then permanent housing, with supportive services intended to
+                                     stabilize residents and help them exit homelessness on a sustained
+                                     basis.
+
+ City Attorney                       The elected official responsible for providing legal advice to the City and
+                                     its departments, representing the City in litigation, and reviewing Civil
+                                     Grand Jury reports for legal accuracy prior to publication.
+
+ City Services Auditor (CSA)         A division within the Controller's Office that conducts performance audits
+                                     of City departments and their nonprofit contractors. The CSA's authority
+                                     to audit homelessness-related services was explicitly expanded by the
+                                     2022 Proposition C ballot measure.
+
+ Citywide Nonprofit Monitoring and   The Controller's program for monitoring compliance of nonprofit
+ Capacity Building Program           organizations under contract with the City, encompassing both fiscal and
+                                     programmatic oversight.
+
+ CLMS (Contract Lifecycle            Software used by HSH to manage contracts and related processes,
+ Management System)                  including formation, amendments, monitoring, and reporting. HSH began
+                                     implementing a new CLMS in May 2026.
+
+ Commission Streamlining Task        A five-member body established by Proposition E (November 2024) to
+ Force                               evaluate and recommend changes to San Francisco's commissions and
+                                     advisory bodies. The Task Force issued its final report in January 2026
+                                     and introduced legislation that the Board of Supervisors voted on in May
+                                     2026.
+
+ Community-based organization        Locally rooted nonprofit organizations that deliver services to a specific
+ (CBO)                               community or population
+
+
+
+
+                                                                                                                   44
+Term                                  Definition
+
+Congregate setting                    A shelter or housing site where multiple residents are housed in a shared
+                                      space, as distinguished from scattered site or non-congregate housing.
+
+Consent calendar / consent            A portion of a commission or board meeting agenda reserved for routine
+agenda                                items expected to be approved. Items are typically grouped and voted on
+                                      as a block unless a member requests to pull an item for separate
+                                      discussion.
+
+Continuum of Care program             A federal initiative designed to promote community-wide commitment to
+                                      ending homelessness. It provides funding to local governments and
+                                      nonprofits to quickly rehouse individuals and families, minimize trauma,
+                                      and optimize self-sufficiency.
+
+Coordinated Entry                     A federally required, standardized process for assessing and prioritizing
+                                      people experiencing homelessness for housing and services. One of
+                                      HSH's three core program areas.
+
+Corrective Action designation (Tier   A three-tier classification system established by the Controller's Citywide
+1 / Tier 2 / Tier 3)                  Nonprofit Corrective Action Policy. Tier 1 covers lower-severity fiscal
+                                      concerns and is not publicly reported. Tier 2 covers serious fiscal or
+                                      programmatic concerns and triggers mandatory technical assistance.
+                                      Tier 3 covers patterns of severe concerns, triggers public notification, and
+                                      authorizes departments to use the designation in funding decisions.
+
+Critical Incident Report (CIR)        A report that HSH requires nonprofit providers to submit within 24 hours
+                                      of a serious incident, including overdoses, overdose reversals, deaths,
+                                      acts or threats of violence, sexual assault, denial of service, and
+                                      emergency responses requiring police, fire, or ambulance.
+
+Data trigger                          An automated alert generated when data meets a predefined condition or
+                                      threshold, used to flag situations requiring further review. In the context
+                                      of this report, data triggers could include elevated CIR rates, outlier
+                                      performance metrics, or ongoing Corrective Action designations.
+
+Debarment                             A formal determination that a contractor is ineligible to receive City
+                                      contracts, typically due to serious violations of contract requirements or
+                                      applicable law.
+
+Department of Children, Youth,        A City department that funds and oversees programs serving children
+and Families (DCYF)                   and youth; some nonprofit providers also hold contracts with DCYF in
+                                      addition to HSH.
+
+Department of Emergency               The City department responsible for emergency planning, preparedness,
+Management (DEM)                      and coordination of emergency response across City agencies.
+
+Department of Homelessness and        The City department created in 2016 to consolidate and administer
+Supportive Housing (HSH)              homelessness services and supportive housing programs. HSH
+                                      administers approximately $487 million annually in nonprofit contracts
+                                      and serves roughly 27,000 people per year.
+
+Department of Public Health (DPH)     The City department responsible for public health services, including
+                                      behavioral health, substance use treatment, and medical care. DPH staffs
+                                      the Shelter Monitoring Committee and administers certain health
+                                      programs in PSH sites.
+
+
+
+
+                                                                                                                   45
+Term                              Definition
+
+Department of Public Works        The City department responsible for maintaining public infrastructure and
+(DPW)                             cleanliness. Urban Alchemy's first City contracts were with DPW to staff
+                                  hygiene stations.
+
+Desk audit                        A remote review of a nonprofit contractor conducted based on submitted
+                                  records and documentation, rather than through an in-person site visit.
+
+Denial of service                 A decision by a shelter or program to refuse or discontinue services to a
+                                  client, which may be subject to grievance and appeal under the Shelter
+                                  Grievance Policy.
+
+FTE (Full-time equivalent)        A unit of staffing measurement equal to one employee working full-time.
+                                  Used to compare staffing levels across departments and programs
+                                  regardless of whether positions are filled by full-time or part-time
+                                  employees.
+
+Harm reduction model              A service delivery approach that seeks to reduce the negative
+                                  consequences of substance use and other behaviors without requiring
+                                  abstinence as a condition of housing or services.
+
+HEARTH Act (Homeless              Federal legislation passed in 2009 that reauthorized and consolidated
+Emergency Assistance and Rapid    federal homelessness programs, established the Continuum of Care
+Transition to Housing Act)        planning structure, and mandated use of a Homeless Management
+                                  Information System (HMIS) as a condition of receiving HUD funding.
+
+High acuity                       A term describing clients with complex, intensive medical, behavioral
+                                  health, or substance use needs that require significant support and
+                                  clinical engagement.
+
+HMIS (Homeless Management         A data system used to collect, track, and report information on people
+Information System)               experiencing homelessness and the services they receive, required by
+                                  HUD for recipients of federal homelessness funding. San Francisco's
+                                  system is called ONE System.
+
+Homelessness Oversight            The governing body created by Proposition C (2022) to oversee HSH. HOC
+Commission (HOC)                  has statutory authority to approve HSH's budget, conduct performance
+                                  audits, establish departmental standards, and hire and fire the HSH
+                                  Executive Director. Its members are appointed by the Mayor and Board of
+                                  Supervisors.
+
+Housing First                     A policy approach that prioritizes placing people into stable housing as
+                                  quickly as possible, before requiring participation in treatment or other
+                                  services. Adopted as a cornerstone of San Francisco's homelessness
+                                  strategy and enshrined in California state policy in 2016.
+
+HUD (U.S. Department of Housing   The federal agency that administers homelessness funding, including
+and Urban Development)            Continuum of Care grants, and sets standards for HMIS data collection
+                                  and reporting.
+
+Human Services Agency (HSA)       A City department that provides social safety-net services that help low-
+                                  income residents meet their basic needs. It connects eligible individuals
+                                  and families to public benefits, housing assistance, employment training,
+                                  and protective services.
+
+
+
+
+                                                                                                              46
+Term                               Definition
+
+Key Performance Indicator (KPI)    A quantitative measure used to assess performance against defined
+                                   objectives. In HSH contracts, KPIs have historically measured service
+                                   volume (e.g., number of clients enrolled) rather than outcomes.
+
+Local Homeless Coordinating        The body responsible for governing San Francisco's Continuum of Care
+Board (LHCB)                       program and coordinating federal homelessness grant applications.
+                                   Required by the McKinney-Vento Act and the HEARTH Act as a condition
+                                   of receiving HUD Continuum of Care funding.
+
+Low-threshold model                A service model that imposes minimal participation requirements on
+                                   clients—such as no requirement to be sober or to engage in case
+                                   management—as a condition of receiving housing or shelter.
+
+Master Lease                       A contractual arrangement in which the City leases an entire building
+                                   from a private owner and subleases individual units to HSH clients, with a
+                                   nonprofit provider managing the building and delivering on-site services.
+
+Mayor's Office of Housing and      A City department that administers housing funding and development
+Community Development              programs, including some that overlap with HSH's PSH portfolio.
+(MOHCD)
+
+McKinney-Vento Homeless            The primary federal law governing homelessness programs, first enacted
+Assistance Act                     in 1987 and substantially amended by the HEARTH Act in 2009. Requires
+                                   local jurisdictions to establish a Continuum of Care and a local homeless
+                                   coordinating board to receive HUD funding.
+
+Multi-year Procurement Plan        A plan for the future procurement of contracts over multiple years, used
+                                   by HSH to plan contracting activity.
+
+Navigation Center                  A type of temporary shelter that offers low-barrier access and is intended
+                                   to quickly connect clients to longer-term housing options through
+                                   coordinated entry and intensive case management.
+
+No-bid contracting authority       Authority granted to HSH by the Board of Supervisors to award certain
+                                   contracts without a competitive bidding process, used during shelter
+                                   crises and the COVID-19 pandemic.
+
+Nonprofit provider / vendor        A nonprofit organization under contract with the City to provide
+                                   homelessness services, including outreach, shelters, and permanent
+                                   supportive housing. HSH contracts with 73 distinct nonprofit entities.
+
+Office of Economic and Workforce   A City department focused on economic development and workforce
+Development (OEWD)                 programs; receives allocations from the Our City, Our Home Fund.
+
+Office of the Chief Medical        The City office responsible for investigating and certifying the causes of
+Examiner (OCME)                    death, including accidental drug overdose deaths. OCME data is the
+                                   primary source for overdose mortality statistics cited in this report.
+
+Ordinance 055-24                   A 2024 ordinance passed by the Board of Supervisors that clarified and
+                                   expanded the Controller's authority to audit and monitor nonprofit
+                                   organizations contracting with the City, and directed the Controller to
+                                   establish measurable performance goals for nonprofit contracts.
+
+
+
+
+                                                                                                                47
+Term                           Definition
+
+Our City, Our Home Oversight   The advisory body created to monitor and advise on expenditures from
+Committee (OCOH)               the Our City, Our Home Fund, established by Proposition C (2018).
+                               Administered by the Controller's Office.
+
+Permanent supportive housing   Long-term affordable housing paired with on-site supportive services—
+(PSH)                          including case management and housing stability support—for people
+                               with complex needs exiting homelessness.
+
+Performance Measurement Plan   HSH's framework for defining and tracking performance measures across
+                               its programs and nonprofit contracts.
+
+Point-In-Time count            A periodic census used to estimate the number of people experiencing
+                               homelessness on a given night, conducted biennially as required by HUD.
+
+Proposition C (2018)           The "Our City, Our Home" ballot measure that created a gross receipts tax
+                               on large businesses to fund homelessness services, and established the
+                               Our City, Our Home Fund and Oversight Committee.
+
+Proposition C (2022)           The "Homelessness Oversight" ballot measure that amended the City
+                               Charter to create the Homelessness Oversight Commission, giving it
+                               governing authority over HSH including budget approval, audit authority,
+                               and the power to hire and fire the HSH Executive Director.
+
+Proposition E (2024)           A ballot measure approved by San Francisco voters in November 2024
+                               that established the Commission Streamlining Task Force and authorized
+                               it to introduce ordinances to eliminate, consolidate, or revise City
+                               commissions and advisory bodies.
+
+Safe Sleeping Site             A supervised outdoor or semi-outdoor site providing basic amenities—
+                               such as tents, sanitation, and services—for people experiencing
+                               unsheltered homelessness during periods of declared emergency.
+
+Scattered site PSH             Permanent supportive housing in which clients occupy individual units in
+                               private-market buildings, with services provided by mobile case teams.
+
+Self-reporting                 A process in which nonprofit providers submit their own compliance,
+                               performance, or incident data to HSH, as distinct from data obtained
+                               through independent monitoring or site visits.
+
+Shelter Grievance Advisory     A body that reviewed grievances related to denial of shelter services and
+Committee (SGAC)               advised HSH on its Shelter Grievance Policy. Members were appointed by
+                               HOC. Eliminated by Board of Supervisors ordinance in May 2026.
+
+Shelter-in-place hotel         A temporary housing site established in existing hotel properties during
+                               the COVID-19 pandemic for emergency sheltering of people experiencing
+                               homelessness.
+
+Shelter Monitoring Committee   A body established in 2004 to conduct unannounced site visits to City-
+(SMC)                          funded shelters, receive and investigate complaints, and report findings
+                               to the Mayor, Board of Supervisors, and HOC. Eliminated by Board of
+                               Supervisors ordinance in May 2026.
+
+Site-based PSH                 Permanent supportive housing in which multiple units are located within
+                               a single dedicated building, with on-site staff providing services.
+
+
+
+
+                                                                                                          48
+Term                                Definition
+
+SRO (Single Room Occupancy          A type of residential building providing small, individual rooms, typically
+hotel)                              with shared bathrooms and kitchens. Many of San Francisco's PSH units
+                                    are located in SRO buildings, some of which were historically operated as
+                                    residential hotels.
+
+Standard of Care (SOC) complaint    A formal complaint alleging that a shelter provider has failed to meet the
+                                    minimum standards of care required under its City contract and the
+                                    Administrative Code.
+
+Sunshine Ordinance                  San Francisco's local open government law (Administrative Code Chapter
+                                    67), which requires City bodies—including HOC—to hold public meetings,
+                                    provide public notice of agendas, and make records available to the
+                                    public.
+
+Treasurer and Tax Collector (TTX)   The City office responsible for collecting taxes and administering certain
+                                    financial functions; receives allocations from the Our City, Our Home
+                                    Fund and provides administrative support for the OCOH tax.
+
+Wellness check                      A contractual requirement for PSH site staff to make in-person contact
+                                    with high-acuity residents at defined intervals, to confirm their health and
+                                    safety. The failure to conduct required wellness checks was a central
+                                    finding in the investigation of Eric McCain's death.
+
+
+
+
+                                                                                                                 49
+Works Cited
+
+Balakrishnan, Eleni. “S.F. set to lose 450+ shelter beds in Tenderloin.” Mission Local, 6 April 2026,
+        https://missionlocal.org/2026/04/sf-lose-450-shelter-beds-tenderloin/.
+Barba, Michael. “SF controller clears nonprofit Urban Alchemy after warning over record-keeping.” The
+        SF Chronicle, 21 Nov 2025, https://www.sfchronicle.com/sf/article/urban-alchemy-cleared-
+        warning-record-keeping-21199641.php.
+Barmann, Jay. “City Contractor Urban Alchemy Acknowledges Some Overspending as SF Supervisors
+        Mull Contract Extension.” SFist, 19 Sept 2025, https://sfist.com/2025/09/19/city-contractor-
+        urban-alchemy-acknowledges-some-overspending-as-sf-supervisors-mull-contract-extension/.
+Benioff Homelessness and Housing Initiative. “Toward Thriving: Understanding Health and
+        Homelessness.” Nov 2025, https://homelessness.ucsf.edu/toward-thriving-understanding-
+        health-and-homelessness.
+“Board committee approves Lower Nob Hill shelter.” SF Standard, 2 Feb 2022,
+        https://sfstandard.com/2022/02/02/budget-committee-to-approve-controversial-lower-nob-hill-
+        shelter/.
+Board of Supervisors. Expanding Drug-Free Permanent Supportive Housing. Public Safety and
+        Neighborhood Services Committee. 23 Apr 2026.
+       https://sfgov.legistar.com/View.ashx?M=F&ID=15451810&GUID=07BF0E32-F71F-46CF-84D3-
+       0FA971617394.
+Board of Supervisors. “Grant Agreement Amendment - HomeRise - Transitional Housing - Not to Exceed
+       $12,700,000.” 12 Dec 2024,
+       https://sfgov.legistar.com/LegislationDetail.aspx?ID=6904472&GUID=DA0203F0-D45D-4C0C-
+       BE0F-F2FECC9D59BA&Options=&Search=.
+Board of Supervisors. “Grant Agreement Amendment - Tenderloin Housing Clinic - Master Lease Hotels -
+       Not to Exceed $132,903,851.” SFgov Legistar, 10 Jun 2022,
+       https://sfgov.legistar.com/LegislationDetail.aspx?ID=5571758&GUID=4D6A4350-F91A-4676-
+       8ADF-72E0B6B99B2F.
+Board of Supervisors. “Ordinance 055-24.” Amending the Administrative Code to clarify the Controller’s
+       audit and monitoring responsibilities with respect to nonprofit organizations contracting with
+       the City, 22 May 2024,
+       https://sfgov.legistar.com/LegislationDetail.aspx?ID=6351797&GUID=728F11DF-8D09-4A38-
+       A073-C40550280172&Options=ID%7CText%7C.
+Board of Supervisors. “Ordinance No. 116-16.” Ordinance amending the Administrative Code to establish
+       a new Department of 4 Homelessness and Supportive Housing , 2016,
+       https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances16/o0116-16.pdf.
+Board of Supervisors. “San Francisco Charter.” Section F1.101, 8 Nov 2022,
+       https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_charter/0-0-0-4205#JD_F1.101.
+Board of Supervisors, and Public Safety and Neighborhood Services Committee. Hearing on Overdose
+       Prevention. 24 Jul 2025.
+Board of Supervisors, and Public Safety and Neighborhood Services Committee. “Public
+       Correspondence on 711 Post Street.” 12 Feb 2026,
+       https://sfgov.legistar.com/View.ashx?M=F&ID=15165317&GUID=8AF814BA-5CC7-49E1-960F-
+       3926BDC6692F.
+Budget and Legislative Analyst Report, et al. “Performance Audit of the Department of Homelessness &
+       Supportive Housing.” 2020,
+       https://sfbos.archive.sf.gov/sites/default/files/BLA_Performance_Audit_Homelessness_Suppor
+       tive_Housing_08062020.pdf.
+
+
+                                                                                                        50
+Campbell, Tim. “Urban Alchemy and LA’s Contracting Problem—Extensions Without Answers.” Westside
+        Current, 14 Jan 2026, https://www.westsidecurrent.com/opinion/column-urban-alchemy-and-la-
+        s-contracting-problem-extensions-without-answers/article_682b7cf4-8e63-4209-864b-
+        a33f09e2a217.html.
+Charter Reform Working Group. Charter Reform Update for LBEAC (Local Business Enterprise Advisory
+        Committee). 5 Feb 2026,
+        https://media.api.sf.gov/documents/Charter_Reform_Update_for_LBEAC_02.05.pdf.
+City Performance, Controller's Office. Citywide Nonprofit Monitoring and Capacity Building Program,
+        Fiscal Year 2024-2025 Annual Report. 2 Dec 2025, San Francisco,
+        https://media.api.sf.gov/documents/FY25_Nonprofit_Monitoring_Program_Annual_Report_-
+        _Final.pdf.
+City Performance, Controller's Office. “HSH Critical Incident Analysis and Recommendations.” 23 Apr
+        2024, https://www.sf.gov/sites/default/files/2024-
+        05/HSH%20Critical%20Incident%20Analysis%20and%20Recs%20-
+        %20FINAL%20COMBINED%204.23.24.pdf.
+City Performance, Office of the Controller. 2025 Homelessness Needs Assessment. 10 Dec 2025, San
+        Francisco, https://media.api.sf.gov/documents/2025_Homelessness_Needs_Assessment.pdf.
+City Services Auditor, Controller's Office. Community Housing Partnership, d/b/a HomeRise,
+        Mismanaged Financial Activities and Misused City Funds Related to City Agreements for Its
+        Properties and Supportive Housing Efforts. 2 Apr 2024, San Francisco,
+        https://www.sf.gov/sites/default/files/2024-04/HSH-
+        MOHCD%20HomeRise%20Audit%20Report%2004.02.24.pdf.
+Coale, Kristi. “SF Has Fought Homelessness With No-Bid Jobs. Urban Alchemy Has Used Them As a
+        Springboard (Part 1).” The Frisc, 25 April 2022, https://thefrisc.com/sf-has-fought-
+        homelessness-with-no-bid-jobs-urban-alchemy-has-used-them-as-a-springboard-part-1-
+        49a21521016/.
+Commission Streamlining Task Force. “Final Report.”
+        https://media.api.sf.gov/documents/Commission_Streamlining_Task_Force_Final_Report.pdf.
+Controller's Office. Dashboard for San Francisco Nonprofit Contracts and Spending,
+        https://www.sf.gov/data--san-francisco-nonprofit-contracts-and-spending.
+Controller's Office. “Citywide Nonprofit Corrective Action Policy.” Appendix B, Programmatic Criteria for
+        Designation, 2024, https://www.sfhsa.org/sites/default/files/media/document/2024-
+        12/policy_citywide_nonprofit_corrective_action_12.24.pdf.
+Controller's Office. “Policy Establishing Nonprofit Contract Monitoring Standards and Guidelines.” 2025,
+        https://www.sf.gov/sites/default/files/2024-
+        12/Nonprofit%20Contract%20Monitoring%20Policy%2012.9.24.pdf.
+Controller's Office. “Staffing Analysis and Benchmarking for the Department of Homelessness and
+        Supportive Housing.” 2019,
+        https://sfcontroller.org/sites/default/files/Documents/Auditing/HSH%20Staffing%20Analysis%
+        20May%202019%20Final.pdf.
+Dengsøe, Mikkel, and quality. “Data team as % of workforce: A deep dive into 100 tech scaleups.” 10 Jan
+        2023, https://www.synq.io/blog/data-team-size-at-100-scaleups.
+Department of Homelessness and Supportive Housing. Amended Grant Agreement Approval:
+        Community Housing Partnership dba HomeRise | 5th & Harrison Transitional Living Program . 7
+        Nov 2024, San Francisco,
+        https://media.api.sf.gov/documents/Agenda_Item_12.3_Homerise_5th__Harrison.pdf.
+Department of Homelessness and Supportive Housing. Amended Grant Agreement Approval: Urban
+        Alchemy | 711 Post (Ansonia Hotel). 7 Aug 2025, San Francisco,
+        https://media.api.sf.gov/documents/Agenda_Item_12_Urban_Alchemy.pdf.
+
+
+                                                                                                      51
+Department of Homelessness and Supportive Housing. “Exits from Homelessness.” SF.gov,
+         https://www.sf.gov/exits-from-homelessness.
+Department of Homelessness and Supportive Housing. “FY26-27 and FY27-28 Department Budget
+         Submissions.” https://www.sf.gov/department-budget-submissions.
+Department of Homelessness and Supportive Housing. “Home by the Bay; An equity-driven plan to
+         prevent and end homelessness in San Francisco 2023-2028.” https://www.sf.gov/home-bay.
+Department of Homelessness and Supportive Housing. “Homelessness and Supportive Housing.”
+         SF.gov, 21 October 2024, https://www.sf.gov/departments--homelessness-and-supportive-
+         housing.
+Department of Homelessness and Supportive Housing. “Homelessness Trends Dashboard: Inflow and
+         Outflow Analysis.” SF.gov, https://www.sf.gov/homelessness-trends-dashboard-inflow-and-
+         outflow-analysis.
+Department of Homelessness and Supportive Housing. “HSH Director’s Report, Homeless Oversight
+         Commission.” January Contract Amendments & Renewals, 15 Jan 2026,
+         https://media.api.sf.gov/documents/Agenda_Item_8_Directors_Report_JdwmxHg.pdf.
+Department of Homelessness and Supportive Housing. 711 Post Shelter Program. 12 Feb 2026,
+         https://sfgov.legistar.com/View.ashx?M=F&ID=15180025&GUID=30F05AA2-0AF0-47AC-B950-
+         6C209E8CD027
+Department of Homelessness and Supportive Housing. Third Amended Grant Agreement between City
+         and County of San Francisco and Episcopal Community Services. 1 Jan 2026,
+         https://sfgov.legistar.com/View.ashx?M=F&ID=15070526&GUID=CBB38FDC-A555-465D-AB87-
+         2DEE3F2775E2.
+Department of Homelessness and Supportive Housing. “Total Permanent Housing Units.”
+         https://www.sf.gov/psh-occupancy-capacity.
+Department of Homelessness and Supportive Housing. “Total Temporary Shelter Beds.”
+         https://www.sf.gov/shelter-occupancy-capacity.
+Elder, Jeff. “Urban Alchemy: A rapid rise with rampant risks.” SF Examiner, 16 Jun 2022,
+         https://www.sfexaminer.com/archives/urban-alchemy-a-rapid-rise-with-rampant-
+         risks/article_5c74cf96-3b00-527b-b4eb-5b32e0544dbf.html.
+Frankl, Jeff, et al. Urban Alchemy - Nonprofit Explorer,
+         https://projects.propublica.org/nonprofits/organizations/825408579.
+Freeman, James. “A Pelosi Model Is Now a San Francisco Scandal.” The Wall Street Journal , 20 Mar
+         2026, https://www.wsj.com/opinion/a-pelosi-model-is-now-a-san-francisco-scandal-f0c715a2.
+Friedman, Sanjana. “Urban Alchemy Is a Case Study in 'Homeless Services.” City Journal, 25 Feb 2025,
+         https://www.city-journal.org/article/urban-alchemy-san-francisco-homeless-services-industry.
+Gafni, Matthias, et al. “At a ‘model’ S.F. complex for the formerly homeless, a man lay dead for days
+         unnoticed.” The SF Chronicle, 20 Mar 2026,
+         https://www.sfchronicle.com/bayarea/article/jazzie-collins-apartments-homerise-
+         21953058.php.
+Gilman, Io Yeh. “Months and millions later, SF may make few changes to city commissions after all,”
+         Mission Local, 16 Mar 2026, https://missionlocal.org/2026/03/sf-commission-streamlining-
+         board-of-supervisors-preview/.
+Guerrero, Joaquin, and Homelessness Oversight Commission. Data Officer Briefing: Oversight to
+         Support Breaking the Cycle. 2 Apr 2026,
+         https://media.api.sf.gov/documents/Agenda_Item_14_Data_Officer_presentation.pdf.
+Hoge, Patrick, and Craig Lee. “Urban Alchemy might lay off 57 after losing BART contract | The City |
+         sfexaminer.com.” SF Examiner, 6 May 2025, https://www.sfexaminer.com/news/the-city/urban-
+         alchemy-might-lay-off-57-after-losing-bart-contract/article_649f1cc1-1389-4078-a793-
+         94c1b671029b.html.
+
+
+                                                                                                  52
+Homelessness Oversight Commission, director. “Special Meeting.” Episode Public Comment by Aisha
+        McCain, 15 Jan 2026,
+        https://sanfrancisco.granicus.com/player/clip/51580?view_id=227&redirect=true.
+Homelessness Oversight Committee. Meeting Minutes. 7 Aug 2025, San Francisco,
+        https://media.api.sf.gov/documents/Agenda_item_5_August_7_2025_meeting_minutes.pdf.
+Horowitz, David Mamaril. “SF Wants Scrutiny of Nonprofit Contracts. Its Homelessness Agency Wants 5
+        More Years of No-Bid Jobs.” The Frisc, 26 Feb 2024, https://thefrisc.com/sf-wants-nonprofit-
+        scrutiny-its-homelessness-agency-wants-more-no-bid-jobs/.
+Kayhan, Dariush, Deputy Director for Programs, Department of Homelessness and Supportive Housing.
+        “: Corrective Action Letter for HSH Resident Emergency Safety Check Policy.” 6 Feb 2026,
+        https://www.documentcloud.org/documents/27845105-homerise-corrective-action-letter-
+        20260206/.
+Kunins, Hillary. Behavioral Health Services Director's Update for the Behavioral Health Commission . 18
+        Sep 2025,
+        https://media.api.sf.gov/documents/September_18_2025_BHC_Directors_Update.cleaned.pdf.
+KVUE. Austin severs ties with Urban Alchemy over data mishandling allegations . 16 Sept 2025,
+        https://www.google.com/search?q=KVUE%2C+%22Austin+severs+ties+with+Urban+Alchemy+
+        over+data+mishandling+allegations%2C%22+September+16%2C+2025&rlz=1C1VDKB_enUS990
+        US990&oq=KVUE%2C+%22Austin+severs+ties+with+Urban+Alchemy+over+data+mishandling+
+        allegations%2C%.
+Leahy, Garrett. “Lower Nob Hill residents want a major shelter closed. It's not going well.” SF Standard,
+        26 February 2026, https://sfstandard.com/2026/02/26/san-francisco-lower-nob-hill-homeless-
+        shelter/.
+Lower Nob Hill Neighborhood Alliance. “711 Post St. Call to Action.” [San Francisco], 2 Feb 2026,
+        https://lowernobhill.org/f/711-post-st-call-to-action.
+Maripuu, Alise. “SF supervisors seem unlikely to adopt many commission streamlining
+        recommendations.” Bay City News, 19 Mar 2026, https://localnewsmatters.org/2026/03/19/sf-
+        supervisors-seem-unlikely-to-adopt-many-commission-streamlining-recommendations/.
+Maxwell, Leanne. “SF Supervisors Vote to Cut 43 Inactive Commissions In Effort to Streamline City
+        Hall,.” SFist, 13 May 2026, https://sfist.com/2026/05/13/sf-supervisors-vote-to-cut-43-city-
+        commissions-as-part-of-streamlining-effort/.
+McFadden, Alyce. “S.F. to cut down on commissions in bid to streamline City Hall.” The SF Chronicle, 13
+        May 2026, https://www.sfchronicle.com/sf/article/sf-to-cut-city-hall-commissions-to-
+        streamline-22247780.php.
+Mitchell, Matthew. “HomeRise CEO is stepping down amid city probe over operations, finances.” San
+        Francisco Chronicle, 5 May 2026, https://www.sfchronicle.com/bayarea/article/homerise-ceo-
+        stepping-amid-city-probe-operations-22243021.php.
+Office of former Mayor London Breed. “Mayor London Breed, Supervisor Ahsha Safaí, and Supervisor
+        Vallie Brown Announce Opening of Vehicle Triage Center.” Press Release, 11 Dec 2019.
+Office of the Chief Medical Examiner. “OCME Accidental Overdose Reports.” SF.gov,
+        https://www.sf.gov/resource--2020--ocme-accidental-overdose-reports.
+Public Safety and Neighborhood Services Committee, Board of Supervisors. “Hearing - Shelter Services
+        and Operations - 711 Post Street.” 12 Feb 2026,
+        https://sfgov.legistar.com/LegislationDetail.aspx?ID=7689762&GUID=55411BA5-5E42-4380-
+        8B00-415232242FF4&Options=ID%7CText%7C&Search=Urban+Alchemy.
+Reynolds, Susan Dyer. “"Housing first, morgue second,.” The Voice of San Francisco [San Francisco], 28
+        Aug 2025, https://thevoicesf.org/housing-first-morgue-second/.
+
+
+
+
+                                                                                                      53
+Rowe, Christopher L., et al. “Drug overdose mortality among residents of single room occupancy
+        buildings in San Francisco, California, 2010-2017.” Drug and Alcohol Dependence , vol. 204, 2019,
+        https://www.sciencedirect.com/science/article/abs/pii/S0376871619303485?via%3Dihub.
+Sandberg, Erica. “From historic hostel to overcrowded, drug-saturated homeless shelter.” The Voice of
+        San Francisco, 18 Feb 2026, https://thevoicesf.org/from-historic-hostel-to-overcrowded-drug-
+        saturated-homeless-shelter/.
+San Francisco Administrative Code. “Administrative Code - Extending Sunset Date of Contracting
+        Waivers for Homeless Services.” Extended the sunset date for contracting waivers, specifically
+        supporting homeless services under Administrative Code Chapter 21B. Ordinance 038-24,
+        https://sfgov.legistar.com/LegislationDetail.aspx?ID=6401293&GUID=3ACF7253-5A85-49F5-
+        AE85-D2EF83D82730.
+San Francisco Administrative Code. Article XII. Shelter Monitoring Committee.
+        https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_admin/0-0-0-13148.
+San Francisco Administrative Code. Ordinance No. 55-24. Monitoring of Nonprofits that Contract with
+        the City. https://sfgov.legistar.com/View.ashx?M=F&ID=12800887&GUID=671B3078-E123-
+        4BF2-B0D6-E43F527FC33B.
+San Francisco Administrative Code. “Section 2A.410.” Department of Homelessness and Supportive
+        Housing, https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_admin/0-0-0-54262.
+San Francisco Administrative Code. “Shelter and Transitional Housing During Shelter Crisis.” Ordinance
+        29-18, 13 Feb 2018, https://sfbos.archive.sf.gov/sites/default/files/o0029-18.pdf.
+San Francisco Administrative Code. Shelter Grievance Policy. Section 20.18.
+        https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_admin/0-0-0-67213.
+San Francisco Administrative Code. “Streamlined Contracting for Homeless Services and Siting for
+        Homeless Shelters.” Ordinance 61-19, 11 Mar 2019,
+        https://sfbos.archive.sf.gov/sites/default/files/o0061-19.pdf.
+San Francisco Administrative Code. “Various Codes - Boards, Commissions, and Advisory Bodies.” File
+        No. 260217, https://sfgov.legistar.com/LegislationDetail.aspx?ID=7941773&GUID=CCC438C4-
+        061F-495C-897C-CA8554627662.
+San Francisco Charter. Section 9.118. Contract and Lease Limitations.
+        https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_charter/0-0-0-1015.
+San Francisco Civil Grand Jury. “Hitting the Performance Bullseye,.” 2023,
+        https://media.api.sf.gov/documents/2023_CGJ_Report_Hitting_the_Performance_Bullseye_-
+        _Contracting_for_Better_Outc_h8lGNXC.pdf.
+“The San Francisco Sunshine Ordinance of 1999.” San Francisco Administrative Code,
+        https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_admin/0-0-0-19477.
+Schrank, Aaron. “Judge blasts city of LA for 'fraud’ over safe sleep site funding and capacity numbers.”
+        LAist, 13 Nov 2025, https://laist.com/news/housing-homelessness/fraud-safe-sleep-
+        encampment-campground-urban-alchemy-lahsa-capacity-carter-homelessness.
+“SEC. 4.133. HOMELESSNESS OVERSIGHT COMMISSION.” American Legal Publishing Code Library,
+        https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_charter/0-0-0-412.
+Shanks, Adam. “Deal expected to avoid Urban Alchemy layoffs.” SF Examiner, 2 Dec 2025,
+        https://www.sfexaminer.com/news/politics/urban-alchemy-layoffs-avoided-by-sf-budget-
+        committee-deal/article_0a993e9c-b0da-11ef-9094-a78becb9856f.html.
+Sjostedt, David. “3 people die of drug overdoses every week in San Francisco supportive housing,.” The
+        SF Standard, 17 Oct 2023, https://sfstandard.com/2023/10/17/san-francisco-homeless-
+        housing-drug-overdose-deaths/.
+Thadani, Trisha, and Joaquin Palomino. “San Francisco's deadly failure on the drug crisis is unfolding
+        inside its own housing program.” The SF Chronicle, 15 Dec 2022,
+        https://www.sfchronicle.com/projects/2022/san-francisco-sros-overdoses/.
+
+
+                                                                                                      54
+U.S. Department of Housing and Urban Development. The 2023 Annual Homelessness Assessment
+        Report (AHAR) to Congress. Dec 2023,
+        https://www.huduser.gov/portal/sites/default/files/pdf/2023-AHAR-Part-1.pdf.
+
+
+
+
+                                                                                            55
+Appendix A: Timeline of this report’s events
+
+This timeline covers key legislative actions, ballot measures, corrective actions, and developments relevant to this
+report. Entries are listed chronologically. Where only a year is shown, the specific month could not be confirmed.
+
+ Date              Event / Item
+
+ Jun. 2016         The Board of Supervisors votes to consolidate homeless services from four City departments
+                   — DPH, HSA, MOHCD, and DCYF — creating the Department of Homelessness and Supportive
+                   Housing.
+
+ Jan. 2016         The State of California enshrines Housing First as a key policy for addressing homelessness.
+
+ Feb. 2018         The Board of Supervisors passes Ordinance No. 29-18, granting HSH no-bid contracting
+                   authority for select shelter sites in connection with a shelter crisis declared by Mayor London
+                   N. Breed.
+
+ 2018              Urban Alchemy is founded by Lena Miller and begins contracting with the Department of
+                   Public Works to staff Pit Stop hygiene stations across the City.
+
+ Nov. 2018         Proposition C, "Our City, Our Home," was passed by voters (61%) on November 6, 2018,
+                   creating a gross receipts tax on large businesses to fund homelessness services and
+                   establishing the Our City, Our Home Fund and Oversight Committee.
+
+ Mar. 2019         The Board of Supervisors passes Ordinance No. 61-19, granting HSH no-bid contracting
+                   authority for homelessness services and extending its Navigation Center operating authority.
+
+ Mar. 2020         COVID-19 pandemic begins. HSH significantly expands its use of Urban Alchemy to staff
+                   shelter-in-place hotels, Safe Sleeping Sites, and emergency encampment response. Urban
+                   Alchemy's role shifts from niche provider to core operational partner.
+
+ Dec. 2021         Mayor London N. Breed declares a state of emergency to address homelessness and drug use
+                   in the Tenderloin and downtown San Francisco.
+
+ 2021–2022         HomeRise appears on the Controller's Corrective Action list at Elevated Concern status
+                   following fiscal monitoring of the 2021–2022 fiscal year.
+
+ Early 2022        MOHCD and HSH request an audit of HomeRise. The audit, conducted by the City Services
+                   Auditor and Sjoberg Evashenk Consulting, finds gross fiscal noncompliance, wasteful
+                   practices, and misuse of City funds.
+
+ July 2022         The Ansonia Hotel, formerly a youth hostel at 711 Post Street, opens as an HSH-funded shelter
+                   with Urban Alchemy contracted to manage operations, initially housing 250 people on a semi-
+                   congregate basis.
+
+ July 2022         The Jazzie Collins Apartments, a permanent supportive housing site for 96 formerly homeless
+                   adults, opens to political fanfare. HomeRise is contracted to operate the site and deliver on-
+                   site services.
+
+ Nov. 2022         Proposition C, "Homelessness Oversight," is passed by voters on November 8, 2022, amending
+                   the City Charter to create the Homelessness Oversight Commission with governing authority
+                   over HSH, including budget approval, audit authority, and power to hire and fire the HSH
+                   Executive Director.
+
+ May 2023          HOC holds its inaugural meeting on May 4, 2023. HSH establishes a practice of presenting
+                   contracts above certain thresholds to HOC for public review and comment.
+
+
+
+
+                                                                                                                     56
+Date         Event / Item
+
+2023         The Controller's Office escalates HomeRise to Tier 3 (Red Flag) corrective action status
+             following the 2022 audit findings. HomeRise is subsequently reduced to Tier 2 the following
+             year.
+
+May 2024     The Board of Supervisors passes Ordinance 055-24 on May 22, 2024, clarifying and expanding
+             the Controller's authority to audit and monitor nonprofit organizations contracting with the
+             City, and directing the Controller to establish measurable performance goals for nonprofit
+             contracts.
+
+2024         The Controller's Office publishes the Citywide Nonprofit Corrective Action Policy, establishing
+             the three-tier corrective action framework applicable to both fiscal and programmatic
+             monitoring concerns.
+
+Aug. 2024    HSH conducts program monitoring at 711 Post Street, finding four deficiencies related to
+             missing required forms, training records, and monthly data submissions. All findings are
+             reported as satisfactorily resolved.
+
+Nov. 2024    Proposition M, "Business Tax Reform," is passed by voters, lowering overall City revenues and
+             setting the stage for HSH budget pressures in subsequent fiscal years.
+
+Nov. 2024    Proposition E is passed by voters, establishing the Commission Streamlining Task Force and
+             authorizing it to introduce ordinances to eliminate, consolidate, or revise City commissions
+             and advisory bodies.
+
+Dec. 2024    The Board of Supervisors approves a grant agreement amendment with HomeRise for
+             transitional housing, not to exceed $12.7 million, continuing the City's contractual relationship
+             despite ongoing corrective action concerns.
+
+Jan. 2025    Mayor Daniel Lurie takes office and reaffirms the state of emergency related to homelessness
+             and fentanyl.
+
+Jan. 2025    The Commission Streamlining Task Force holds its first public meetings, beginning a process
+             of evaluating the City's 152 boards, commissions, and advisory bodies.
+
+2025         Urban Alchemy is designated Tier 2 on the Controller's Corrective Action list due to serious
+             concerns about exceeding budget, employee time-tracking irregularities, and prior invoicing
+             issues.
+
+May 2025     HSH Executive Director Shireen McSpadden announces on May 1, 2025, that contract
+             renewals and extensions will no longer be presented to HOC for public review and comment,
+             citing administrative burden. HOC's role in contract oversight is substantially reduced.
+
+Jul. 2025    The BOS Public Safety and Neighborhood Services Committee holds a hearing on overdose
+             prevention on July 24, 2025.
+
+Aug. 2025    HOC approves a six-month extension of Urban Alchemy's contract at 711 Post Street (October
+             1, 2025 to March 31, 2026, $4 million) as a consent calendar item on August 7, 2025. The HSH
+             staff report contains no reference to any reported or alleged staffing, safety, or community
+             concerns at the site.
+
+Sept. 2025   The BOS BLA reports at a Budget and Finance Committee hearing that Urban Alchemy
+             knowingly overspent its 711 Post Street contract by $800K (UA disputed the amount,
+             asserting $336K). Controller’s Office issues a correction action notice related to inadequate
+             and noncompliant tracking of employee hours.
+
+
+
+
+                                                                                                               57
+Date        Event / Item
+
+Nov. 2025   Controller’s Office clears Urban Alchemy of its "corrective action" status, removing it from the
+            "Tier 2" watchlist after addressing serious concerns regarding inadequate employee time-
+            tracking and record-keeping that had been raised on August 21, 2025.
+
+Nov. 2025   Eric McCain dies at the Jazzie Collins Apartments, a PSH site operated by HomeRise. His body
+            allegedly remains undiscovered for 10–12 days until his sister calls SFPD to request a
+            wellness check.
+
+Jan. 2026   The Commission Streamlining Task Force issues its final report on January 28, 2026,
+            recommending the elimination of the Shelter Monitoring Committee and Shelter Grievance
+            Advisory Committee, and recommending that HOC be converted from a governing body to an
+            advisory body.
+
+Jan. 2026   Aisha McCain gives public comment at the HOC special meeting on January 15, 2026,
+            describing her brother's death and alleged conditions at Jazzie Collins Apartments.
+
+Feb. 2026   The Lower Nob Hill Neighborhood Alliance publishes a call to action on February 2, 2026,
+            alleging ongoing safety, sanitation, and community quality-of-life concerns at 711 Post Street.
+
+Feb. 2026   HSH issues a corrective action letter to HomeRise on February 6, 2026, directing it to overhaul
+            wellness check processes, implement additional staff training, and develop a plan for
+            technological improvements at Jazzie Collins Apartments.
+
+Feb. 2026   The BOS Public Safety and Neighborhood Services Committee holds a hearing on shelter
+            services and operations at 711 Post Street on February 12, 2026. HSH characterizes Urban
+            Alchemy's performance as successful. Community correspondence to the BOS alleges four
+            years of safety and sanitation concerns.
+
+Mar. 2026   Urban Alchemy exits its 711 Post Street contract on March 31, 2026. Five Keys takes over
+            operations. Supervisor Danny Sauter states the shelter was "not meeting the standards we
+            should set for services in our city."
+
+May 2026    The Board of Supervisors votes 6-4 on May 19, 2026, to finally pass an Administrative Code
+            ordinance (File No. 260217) implementing some Commission Streamlining Task Force
+            recommendations. The ordinance eliminates the Shelter Monitoring Committee and the
+            Shelter Grievance Advisory Committee, among 40+ other bodies.
+
+June 2026   The San Francisco Civil Grand Jury publishes "At Scale, At Risk: Upgrading Data and Oversight
+            to Improve Homelessness Services."
+
+
+
+
+                                                                                                               58
+Appendix B: Data reporting from other jurisdictions
+
+The Jury reviewed data and dashboards from various sources including:
+
+   ●   The State of Utah
+   ●   The State of Washington; Seattle; King County Regional Homelessness Authority
+   ●   The State of Arizona; Maricopa County Association of Governments
+   ●   Los Angeles County Homeless Services Authority
+   ●   The State of Oregon; Multnomah County (wherein lay the City of Portland)
+   ●   The State of Texas; Houston and Harris Counties; the City of Houston
+
+Below are examples pertinent to the Jury’s investigation.
+
+Utah
+Utah’s homelessness data is reported at the state level in a centralized set of dashboards. Salt
+Lake County links directly to the State of Utah Department of Workforce Services website.
+
+
+
+
+  “System Performance Measures” dashboard from the State of Utah’s Workforce Services
+        department. Retrieved from: https://jobs.utah.gov/homelessness/hard.html
+
+The state of Utah notes which beds or units are used for individuals using mental health
+services, HIV treatment, etc. Utah also reports income growth for homeless clients.
+
+
+
+                                                                                             59
+Washington
+Washington state's largest homelessness services agency is the King County Regional
+Homelessness Authority (“KCRHA”), which oversees King County (where Seattle is located)
+and other neighboring counties.
+
+
+
+
+ “System Performance” dashboard from the King County Regional Homelessness Authority.
+          Retrieved from https://kcrha.org/data-overview/system-performance/
+
+The dashboard above allows the user to click on individual circles, each of which represent a
+vendor. Gray circles indicate vendors who have unmet performance targets. The user can filter
+for vendors with greater or fewer unmet targets.
+
+California
+The Los Angeles Homeless Services Authority (“LAHSA”) is the regional agency providing
+homeless services, acting as the continuum of care and HMIS manager for Los Angeles
+County. Its data was particularly granular, e.g. distinguishing various age groups, noting the
+number of veterans served, by what program, and location in the county.
+
+Similar to the King County Regional Homelessness Authority, LAHSA maintains a database
+that provides specific performance information for each nonprofit vendor with whom the
+authority contracts.
+
+
+
+
+                                                                                                 60
+   Fiscal Year 24-25 KPIs, “Permanent Housing - Program level Performance Time Limited
+ Subsidies - Adult” dashboard from the Los Angeles Homeless Services Authority. Retrieved
+           from: https://www.lahsa.org/data-refresh/home/datadashboard?id=61
+
+Texas
+
+The City of Austin provides summarized data which notes what kinds of services were
+provided to unsheltered individuals and families, e.g. document help, referrals, etc.
+
+
+
+
+                                                                                        61
+Appendix C: Oversight and Advisory bodies for HSH
+
+HSH and the programs and services it provides as part of San Francisco’s Homelessness
+Response System are overseen by multiple bodies. A summary of their roles and functions
+follows.
+
+Controller’s Office
+
+The Controller’s Office plays a significant role in oversight of the City’s nonprofit contracts, and
+therefore HSH’s contracts, which represented the greatest portion in dollar terms of the
+Controller’s nonprofit monitoring pool for FY2025. Although HSH manages homelessness
+programs and contracts directly, the Controller’s Citywide Nonprofit Monitoring and Capacity
+Building Program is the principal framework that HSH and other City agencies use to conduct
+fiscal and programmatic monitoring of nonprofit contracts over $200K in annual spending. Of
+the $1.6 billion in nonprofit spending by the City for FY2025, $1.4 billion worth of contracts
+were monitored and participated in the Controller’s program ($469 million of this amount was
+contracts with HSH).
+
+For nonprofits in the monitoring pool experiencing elevated fiscal or operational concerns, the
+Controller’s Office maintains a Corrective Action tracking system that categorizes these
+nonprofits according to identified fiscal or operational concerns. Several nonprofits with active
+HSH contracts have appeared on the Corrective Action tracking systems; at the end of
+FY2025, Conard House, HomeRise, Lavender Youth Recreation and Information Center (LYRIC),
+and Bayview Hunters Point Foundation were among them.
+
+Passed in March 2024, ordinance no. 55-24 conferred the Controller’s Office with strengthened
+oversight of nonprofits, resulting in the establishment of mandatory, measurable performance
+goals in nonprofit contracts (standardized “Service” and “Objective” Outcomes in HSH’s
+contracts), on-site reviews of programs by department, and review of departments’ compliance
+with these new policies.
+
+Homelessness Oversight Commission
+In 2022, a report from the Jury titled “A Progress Report about the San Francisco Department
+of Homelessness and Supportive Housing” called for a commission to oversee the
+department. That same year, a supervisor-proposed charter amendment reached the voters as
+Proposition C, and it passed with 67.37% voting YES.
+
+The first Homelessness Oversight Commission members were appointed in 2023, and it has
+since met regularly, although in 2025 it struggled to have all members present, or canceled
+meetings due to lack of a quorum.
+
+
+                                                                                                 62
+All commissions in the City Charter have the responsibility to hold public meetings,
+“[f]ormulate, evaluate and approve goals, objectives, plans and programs and set policies
+consistent with the overall objectives of the City and County,”69 approve department budgets
+and budget modifications, remove department heads, and “[c]onduct investigations into any
+aspect of governmental operations within its jurisdiction through the power of inquiry, and
+make recommendations to the Mayor or the Board of Supervisors.”
+
+HOC is specifically empowered by the City Charter to conduct “performance audits of [HSH] to
+assess the efficiency and effectiveness of the Department’s delivery of services to persons
+experiencing homelessness and persons participating in programs overseen by the
+Department, and the extent to which the Department has met the annual goals and
+performance standards established by [HOC].”70
+
+To the Jury’s knowledge, the commissioners have not yet exercised this power to investigate
+or conduct performance audits, and some commissioners may not be aware of this authority.
+
+Our City, Our Home Oversight Committee
+OCOH was created in 2019 with the passage of Proposition C in 2018, which created a new
+gross receipts tax. The following City departments receive allocations from the Fund to deliver
+services:
+
+     ●   Department of Homelessness and Supportive Housing
+     ●   Department of Public Health
+     ●   Mayor’s Office of Housing and Community Development (“MOHCD”)
+     ●   Office of Economic and Workforce Development (“OEWD”)
+     ●   Adult Probation Department (“APD”)
+     ●   San Francisco Fire Department (“SFFD”)
+     ●   Treasurer and Tax Collector (“TTX”)
+
+The Controller’s Office is responsible for the administration and staffing of the OCOH. Per the
+OCOH Fund legislation, the Controller’s Office must report to the Board of Supervisors annually
+on the revenue and expenditures of the OCOH Fund.
+
+The legislation outlines specific service areas on which the Fund may be allocated:
+
+
+
+
+69
+   “Boards and Commissions - Powers and Duties” San Francisco City Charter, Section 4.102. Retrieved from:
+https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_charter/0-0-0-181
+70
+   “Homelessness Oversight Commission.” San Francisco City Charter, Section 4.133. Retrieved from:
+https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_charter/0-0-0-412
+
+
+                                                                                                             63
+      ●   At least 50% of the Fund must be appropriated for Permanent Housing. Within this
+          service area, the Fund further specifies the following uses: 55% for General Housing
+          (referred to within the Annual Report as Adult Housing), 25% for Family Housing, 20%
+          for Youth Housing
+      ●   At least 25% of the Fund must be appropriated for Mental Health services.
+      ●   Up to 15% of the Fund can be appropriated for Homelessness Prevention services.
+      ●   Up to 10% can be appropriated for Shelter and Hygiene services.
+
+Up to 3% of the Fund may be used on administration of the tax, oversight of expenditures, and
+support for the Oversight Committee. The Controller’s Office, Treasurer and Tax Collector, and
+City Attorney’s Office provide these administration services.
+
+Local Homeless Coordinating Board
+LHCB is tasked with managing the county’s Continuum of Care program as part of the
+McKinney-Vento Homeless Assistance Act.71 The board meets monthly, and HSH works with
+them to apply for grants as part of the City’s Continuum of Care program and to comply with
+HUD reporting requirements.
+
+Shelter Grievance Advisory Committee
+SGAC reviews grievances and operates a “two-stage appeals process that allows shelter
+clients to dispute their denials of service”72 for clients of the City’s homeless shelters. Since
+2023, its members have been appointed by the Homelessness Oversight Commission.
+
+As a result of the final passing of the Administrative Code ordinance (File No. 260217) by the
+BOS on May 19, 2026, SGAC is set to be eliminated, pursuant to the effective date.
+
+Shelter Monitoring Committee
+
+SMC was created in 2004 by the San Francisco Board of Supervisors citing a “significant
+public interest in determining that the homeless shelters that the City funds are safe and
+sanitary, that the shelters’ policies and procedures are fair and meet the needs of the clients
+accessing shelter services; that operators receiving City funds are complying with their
+contractual obligations to the City, and that shelter clients benefit from the expenditure of
+public funds.”73
+
+
+71
+  The McKinney-Vento Homeless Assistance Act was passed in 1987. It provides funding for homelessness and
+mental health services. Local counties must have a local homelessness advisory board to receive Department of
+Housing and Urban Development grants.
+72
+     “Shelter Grievance Policy.” San Francisco Administrative Code, Chapter 20, Article 18.
+73
+   “Shelter Monitoring Committee” San Francisco Administrative Code, Chapter 20, Article 12. Retrieved from:
+https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_admin/0-0-0-13148
+
+
+                                                                                                                64
+The committee inspects shelters, takes complaints about the shelter system, writes reports to
+the Homelessness Oversight Commission, the Mayor’s Office and the Board of Supervisors,
+and investigates Standard of Care (SOC) complaints.
+
+As a result of the final passing of the Administrative Code ordinance (File No. 260217) by the
+BOS on May 19, 2026, SMC is set to be eliminated, pursuant to the effective date.
+
+
+
+
+                                                                                             65

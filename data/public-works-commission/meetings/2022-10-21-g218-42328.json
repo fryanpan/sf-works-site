@@ -1,0 +1,76 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2022-10-21",
+ "id": "g218-42328",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42328",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes"
+  },
+  {
+   "no": "2",
+   "title": "Announcements by Chair"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "7",
+   "title": "Director Hiring Update"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Adopt Minutes from the September 16, 2022 Meeting Minutes"
+  },
+  {
+   "no": "5b",
+   "title": "Adopt findings under the State Urgency Legislation - Consideration of action to allow hybrid in-person meetings during the COVID-19 Emergency"
+  },
+  {
+   "no": "6",
+   "title": "Regular Items for Consideration"
+  },
+  {
+   "no": "6a",
+   "title": "Western Addition Area Traffic Signal Upgrades: Phase 1 - Construction Contract Award"
+  },
+  {
+   "no": "6b",
+   "title": "Infrastructure Design and Construction Project Management Bureau Overview"
+  },
+  {
+   "no": "6c",
+   "title": "Employee and Department Development"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment - Continued from Item 3 if necessary"
+  },
+  {
+   "no": "10",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

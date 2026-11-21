@@ -1,0 +1,87 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-01-09",
+ "id": "g218-48347",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48347",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
+  "postedAgenda": "https://sfpublicworks.org/sites/default/files/2025-1-9%20PW%20Commission%20Agenda%20v19%20Updated_0.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters Regular Items for Consideration"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the December 9, 2024 Meeting of the Public Works Commission",
+   "parent": "Consent Calendar of Routine Matters Regular Items for Consideration",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4b",
+   "title": "Master As-Needed M23 General Engineering Services – Manson - Contract Award",
+   "text": "Master As-Needed M23 General Engineering Services – Manson - Contract Award Staff Recommendation: Award Master As-Needed Agreement M23 General Engineering Services with a not-to-exceed amount of $3,000,000 for 730 consecutive calendar days to Manson Construction Co. Also, authorize the Director of Public Works to approve future modifications to increase the contract duration by up to 1,095 calendar days, to a new total duration of up to 1,825 calendar days, and to increase the not-to-exceed amount by up to $1,500,000, for a new total not-to- exceed amount of $4,500,000 each.",
+   "parent": "Consent Calendar of Routine Matters Regular Items for Consideration",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4c",
+   "title": "Master As-Needed M23 General Engineering Services – Yerba Buena - Contract Award",
+   "text": "Master As-Needed M23 General Engineering Services – Yerba Buena - Contract Award Staff Recommendation: Award Master As-Needed Agreement M23 General Engineering Services with a not-to-exceed amount of $3,000,000 for 730 consecutive calendar days to Yerba Buena Engineering & Construction, Inc., and authorize the Director of Public Works to approve future modifications to increase the contract duration by up to 1,095 calendar days, to a new total duration of up to 1,825 calendar days, and to increase the not-to-exceed amount by up to $1,500,000, for a new total not-to-exceed amount of $4,500,000 each.",
+   "parent": "Consent Calendar of Routine Matters Regular Items for Consideration",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4d",
+   "title": "As-Needed Cost Estimating Services No. 7 (Micro-LBE Set-Aside Program) – Cancel Request for Qualifications Solicitation in Whole",
+   "text": "As-Needed Cost Estimating Services No. 7 (Micro-LBE Set-Aside Program) – Cancel Request for Qualifications Solicitation in Whole Staff Recommendation: Cancel Request for Qualifications 9087 – As-Needed Cost Estimating Services No. 7 (Micro-LBE Set-Aside Program) solicitation in whole.",
+   "parent": "Consent Calendar of Routine Matters Regular Items for Consideration",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4e",
+   "title": "Zuckerberg San Francisco General Hospital Inpatient Adolescent Behavioral Health Services Early Demolition - Contract Award",
+   "text": "Zuckerberg San Francisco General Hospital Inpatient Adolescent Behavioral Health Services Early Demolition - Contract Award Staff Recommendation: Award Zuckerberg San Francisco General Hospital Inpatient Adolescent Behavioral Health Services Early Demolition construction contract in the amount of $1,854,104 for 120 consecutive calendar days to Charles Pankow Builders, Ltd to complete demolition work, GPR scanning and floorplan layout for a new behavioral health facility on the 7th floor of Building 5 at Zuckerberg San Francisco General Hospital located at 1001 Potrero Avenue.",
+   "parent": "Consent Calendar of Routine Matters Regular Items for Consideration",
+   "from": "posted agenda"
+  },
+  {
+   "no": "5",
+   "title": "San Francisco Public Utilities Commission Millbrae Lab and Yard Engineering Professional Services – Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Grant to Developer of Candlestick Point Project, FivePoint, to Contribute to Construction of the Bayview Connections Project"
+  },
+  {
+   "no": "7",
+   "title": "Public Works Department Annual Performance Report Fiscal Year 2023-2024"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

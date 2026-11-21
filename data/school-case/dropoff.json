@@ -1,0 +1,1312 @@
+{
+  "about": "Drop-off and pickup facts for the ten case-study schools in scratch/2026-10-05-school-case-study-tool-plan.md. Built by scripts/school-dropoff.py; read note notes/school-trips-2026-10/2026-10-07-school-dropoff-research.md.",
+  "coordinates": "WGS84 lat/lon",
+  "school_street_rule": "Propose the block the main door faces; if it is an arterial or collector, propose the residential block where the school's own published drop-off happens; otherwise keep the door block at low confidence. [inference — mine]",
+  "schools": [
+    {
+      "id": "carmichael",
+      "name": "Bessie Carmichael School PreK-8 Filipino Education Center",
+      "repo_name": "Carmichael (Bessie)/FEC",
+      "public": true,
+      "grades": "K-8",
+      "address": "375 7th Street (PK-5 campus); 824 Harrison St. (6-8 campus)",
+      "repo_point": {
+        "lat": 37.77586,
+        "lon": -122.40674,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.776091,
+        "lon": -122.406448,
+        "how": "EAS address point for 375 07TH ST (parcel 3754062, street CNN 373000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Main entrance mid-block on 7th Street, between Cleveland St and Harrison St, per SFMTA's 2025 walk audit.",
+        "distance_from_repo_point_ft": 119
+      },
+      "other_doors": [
+        {
+          "lat": 37.780419,
+          "lon": -122.400314,
+          "how": "EAS address point for 824 HARRISON ST (parcel 3752012, street CNN 6719000); not checked against imagery",
+          "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+          "label": "6-8 campus"
+        }
+      ],
+      "drop_off": "Parent drop-off at the Sherman Street gate behind the PK-5 campus. Parents also use the passenger loading zone on 7th Street when the Sherman gate is closed. Staff and buses used 7th Street in the school's 2021 plan.",
+      "bell": {
+        "start": "09:30",
+        "dismissal": "15:45",
+        "wednesday_dismissal": "14:30",
+        "source": "sfusd-school-page",
+        "repo_bell_source": "sfusd"
+      },
+      "loading_zone": "Passenger loading zone on 7th Street next to a Muni stop (walk audit, 2025).",
+      "school_street_existing": null,
+      "parent_rules": [
+        "2021 plan: \"Staff and bus drop-off will be along 7th\"."
+      ],
+      "quotes": [
+        {
+          "text": "school entrance mid-block on 7th Street",
+          "source": "sfmta-audit"
+        },
+        {
+          "text": "Parents use this drop off if the Sherman Gate is closed",
+          "source": "sfmta-audit"
+        },
+        {
+          "text": "Drivers are confused where the turn lane begins and the passenger loading zone / Muni Bus stop ends",
+          "source": "sfmta-audit"
+        },
+        {
+          "text": "Vehicles speeding and cut through on Sherman and Cleveland Streets",
+          "source": "sfmta-audit"
+        },
+        {
+          "text": "PK and TK parent drop-off along Sherman St, K-5 parent drop-off will be dropped off on a different part of Sherman St. Staff and bus drop-off will be along 7th, staff will have an alternative entry along Harrison St.",
+          "source": "sfusd-2021-plan"
+        },
+        {
+          "text": "Monday: 9:30 am-3:45 pm",
+          "source": "sfusd-school-page"
+        },
+        {
+          "text": "Wednesday: 9:30 am-2:30 pm",
+          "source": "sfusd-school-page"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "373000",
+          "street": "07TH ST",
+          "from": "CLEVELAND ST",
+          "to": "HARRISON ST",
+          "street_class": "collector",
+          "oneway": "T",
+          "from_point": {
+            "lat": 37.776306,
+            "lon": -122.40729
+          },
+          "to_point": {
+            "lat": 37.775514,
+            "lon": -122.406296
+          },
+          "length_ft": 407
+        },
+        "proposed": [
+          {
+            "cnn": "11804000",
+            "street": "SHERMAN ST",
+            "from": "CLEVELAND ST",
+            "to": "HARRISON ST",
+            "street_class": "residential",
+            "oneway": "F",
+            "from_point": {
+              "lat": 37.776964,
+              "lon": -122.406471
+            },
+            "to_point": {
+              "lat": 37.776162,
+              "lon": -122.405476
+            },
+            "length_ft": 410
+          },
+          {
+            "cnn": "4205000",
+            "street": "CLEVELAND ST",
+            "from": "SHERMAN ST",
+            "to": "07TH ST",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.776964,
+              "lon": -122.406471
+            },
+            "to_point": {
+              "lat": 37.776306,
+              "lon": -122.40729
+            },
+            "length_ft": 337
+          }
+        ],
+        "why": "7th Street is a collector with a bikeway, a Muni stop and the loading zone, so the proposal is the residential pair behind the school where parents already drop off: Sherman St from Cleveland to Harrison, and Cleveland St from Sherman to 7th, which the walk audit names for cut-through traffic.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "medium",
+      "confidence_why": "The drop-off street comes from a 2021 plan and a 2025 SFMTA walk audit, not from a current school page.",
+      "gaps": [
+        "The school's current pages give hours but say nothing about drop-off.",
+        "The 6-8 campus at 824 Harrison St has no published drop-off; Harrison is an arterial, and no side street is proposed for it."
+      ],
+      "sources": [
+        {
+          "key": "sfusd-school-page",
+          "title": "Bessie Carmichael School PreK-8 Filipino Education Center, SFUSD school page",
+          "url": "https://www.sfusd.edu/school/bessie-carmichael-school-prek-8-filipino-education-center",
+          "kind": "school website (SFUSD)",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "sfusd-2021-plan",
+          "title": "2021 COVID-19 School Specific Guidance Checklist: Bessie Carmichael",
+          "url": "https://www.sfusd.edu/2021-covid-19-school-specific-guidance-checklist-bessie-carmichael",
+          "kind": "school plan on SFUSD's site, 2021",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "sfmta-audit",
+          "title": "2025 Bessie Carmichael Elementary School Filipino Education Center Walk Audit Report (walk held May 12, 2025)",
+          "url": "https://www.sfmta.com/media/44399/download?inline",
+          "kind": "SFMTA report",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:30",
+        "endSrc": "https://www.missiongraduates.org/wp-content/uploads/2026/09/10_Bessie-Welcome-Packet-26-27.pdf",
+        "endSrcLabel": "Mission Graduates' 2026-27 welcome packet",
+        "endQuote": "K-8: 3:45 PM - 6:30 PM",
+        "share": 0.24,
+        "shareSrc": "https://drive.google.com/file/d/1OE0vKX1TYplQW-kjYbOyNQJDF1L7-s36",
+        "shareSrcLabel": "SFUSD ExCEL 2025-26 program profile, 128 of 526 students",
+        "shareQuote": "Students enrolled in ASP (n) 128; % of school enrolled in ASP 24%",
+        "provider": "Mission Graduates (ExCEL)",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "kipp-bayview",
+      "name": "KIPP Bayview Academy",
+      "repo_name": "KIPP Bayview Academy",
+      "public": true,
+      "grades": "5-8",
+      "address": "1060 Key Avenue, San Francisco, CA 94124",
+      "repo_point": {
+        "lat": 37.71952,
+        "lon": -122.39637,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.719351,
+        "lon": -122.395958,
+        "how": "EAS address point for 1060 KEY AVE (parcel 4994002, street CNN 7819000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point on Key Ave between Jennings St and 3rd St. The school page says students are \"greeted at the entrance\" but does not say which street it is on.",
+        "distance_from_repo_point_ft": 134
+      },
+      "other_doors": [],
+      "drop_off": "Not published on the school's page.",
+      "bell": {
+        "start": "08:00",
+        "dismissal": "15:00",
+        "wednesday_dismissal": "14:30",
+        "source": "school-page",
+        "repo_bell_source": "default"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [
+        {
+          "text": "Regular School Day 8:00am-3:00pm",
+          "source": "school-page"
+        },
+        {
+          "text": "Wednesday School Day 8:00am-2:30pm",
+          "source": "school-page"
+        },
+        {
+          "text": "All students are greeted at the entrance, and free breakfast is available.",
+          "source": "school-page"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "7819000",
+          "street": "KEY AVE",
+          "from": "JENNINGS ST",
+          "to": "03RD ST",
+          "street_class": "residential",
+          "oneway": "B",
+          "from_point": {
+            "lat": 37.718932,
+            "lon": -122.395995
+          },
+          "to_point": {
+            "lat": 37.719477,
+            "lon": -122.396954
+          },
+          "length_ft": 341
+        },
+        "proposed": [
+          {
+            "cnn": "7819000",
+            "street": "KEY AVE",
+            "from": "JENNINGS ST",
+            "to": "03RD ST",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.718932,
+              "lon": -122.395995
+            },
+            "to_point": {
+              "lat": 37.719477,
+              "lon": -122.396954
+            },
+            "length_ft": 341
+          }
+        ],
+        "why": "Key Ave between Jennings St and 3rd St is a residential block and the school's address street. 3rd St, at the east end, carries the T line and is not a closure candidate.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "low",
+      "confidence_why": "The door is the address point, not seen on imagery, and a renovation that moves the entrance may be under way.",
+      "gaps": [
+        "A campus renovation page, bayview.kippnorcal.org/renovation/, appeared in a web search on 2026-10-07 describing \"a new main entrance\" and \"safer drop off and loading zones\". It now redirects to the school page, so the text could not be read [web search — verify].",
+        "The crash count times its drop-off and pick-up hours from default bells of 8:15 and 3:15. The school's own bells are 8:00 and 3:00."
+      ],
+      "sources": [
+        {
+          "key": "school-page",
+          "title": "KIPP Bayview Academy, KIPP Northern California school page",
+          "url": "https://kippnorcal.org/school/kipp-bayview-academy/",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:00",
+        "endSrc": "https://kippnorcal.org/school/kipp-bayview-academy/",
+        "endSrcLabel": "KIPP NorCal",
+        "endQuote": "Programs run Monday through Friday until 6:00pm",
+        "share": null,
+        "provider": "YMCA",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "issf",
+      "name": "The International School of San Francisco (Oak campus)",
+      "repo_name": "The International School of San Francisco",
+      "public": false,
+      "grades": "K-12",
+      "address": "150 Oak Street, San Francisco, CA 94102",
+      "repo_point": {
+        "lat": 37.77534,
+        "lon": -122.42175,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.775334,
+        "lon": -122.421632,
+        "how": "EAS address point for 150 OAK ST (parcel 0833003, street CNN 9751000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point on Oak St between Franklin St and Gough St. The school's 2015 traffic letter puts the car line on Hickory St, the alley behind.",
+        "distance_from_repo_point_ft": 34
+      },
+      "other_doors": [],
+      "drop_off": "A car line that enters Hickory St from the left lane of Gough St. No double parking on Oak St, and no parking in front of the gym during morning drop-off, 7:30 to 8:30.",
+      "bell": {
+        "start": null,
+        "dismissal": null,
+        "note": "Lower and middle school childcare runs \"7:30 a.m. to 8:00 a.m. and 3:30 p.m. to 6 p.m.\", which brackets the day; the school day itself is not stated.",
+        "source": "admissions",
+        "repo_bell_source": "default"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [
+        "Double parking in the left and right lanes of Oak Street is prohibited.",
+        "Parking is prohibited during morning dropoff (7:30-8:30) in front of the Gym.",
+        "\"Cutting in\" the line in the left lane of Gough Street (turning in to Hickory Alley) is prohibited.",
+        "Do not park on the north side curb on Hickory."
+      ],
+      "quotes": [
+        {
+          "text": "our school is bounded by four busy intersections and parking is limited.",
+          "source": "traffic-letter"
+        },
+        {
+          "text": "Double parking in the left and right lanes of Oak Street is prohibited. Parking is prohibited during morning dropoff (7:30-8:30) in front of the Gym.",
+          "source": "traffic-letter"
+        },
+        {
+          "text": "“Cutting in” the line in the left lane of Gough Street (turning in to Hickory Alley) is prohibited. Please proceed around the block and enter the line at the rear.",
+          "source": "traffic-letter"
+        },
+        {
+          "text": "Crossing Gough Street with children in MID-BLOCK (at Hickory) is illegal and unsafe!",
+          "source": "traffic-letter"
+        },
+        {
+          "text": "Simply park and walk to the building to pick up.",
+          "source": "traffic-letter"
+        },
+        {
+          "text": "The new high school will have a welcoming, separate entrance to the campus",
+          "source": "campaign"
+        },
+        {
+          "text": "Our goal is for construction to be completed by the end of the 2026 calendar year .",
+          "source": "campaign"
+        },
+        {
+          "text": "Childcare and special after school activities are available for an additional fee from 7:30 a.m. to 8:00 a.m. and 3:30 p.m. to 6 p.m.",
+          "source": "admissions"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "9751000",
+          "street": "OAK ST",
+          "from": "FRANKLIN ST",
+          "to": "GOUGH ST",
+          "street_class": "arterial",
+          "oneway": "T",
+          "from_point": {
+            "lat": 37.775232,
+            "lon": -122.42096
+          },
+          "to_point": {
+            "lat": 37.775021,
+            "lon": -122.422598
+          },
+          "length_ft": 479
+        },
+        "proposed": [
+          {
+            "cnn": "6899000",
+            "street": "HICKORY ST",
+            "from": "FRANKLIN ST",
+            "to": "GOUGH ST",
+            "street_class": "residential",
+            "oneway": "T",
+            "from_point": {
+              "lat": 37.775695,
+              "lon": -122.421053
+            },
+            "to_point": {
+              "lat": 37.775487,
+              "lon": -122.422693
+            },
+            "length_ft": 479
+          }
+        ],
+        "why": "Oak St is an arterial, so the proposal is Hickory St from Franklin to Gough, the alley where the school's car line already runs.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "medium",
+      "confidence_why": "The car-line rules are from a 2015 letter still on the school's site, and the campus is under construction until the end of 2026 with a new high school entrance.",
+      "gaps": [
+        "No current (2026-27) drop-off page was found; the newest rules are the 2015 letter.",
+        "Bell times are not published on the pages read."
+      ],
+      "sources": [
+        {
+          "key": "traffic-letter",
+          "title": "NCIS Traffic Safety Letter, posted 08/19/2015",
+          "url": "https://www.internationalsf.org/cf_news/view.cfm?newsid=1510",
+          "kind": "school website, 2015",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "campaign",
+          "title": "Campaign for a Bold Future",
+          "url": "https://www.internationalsf.org/support/campaign-for-a-bold-future",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "admissions",
+          "title": "Lower and Middle School Admissions",
+          "url": "https://www.internationalsf.org/admissions/lower-middle-school-admissions",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:00",
+        "endSrc": "https://www.internationalsf.org/school-life/extended-care-program",
+        "endSrcLabel": "the school",
+        "endQuote": "Childcare is available until 6:00 p.m. daily on Oak Street and Page Street.",
+        "share": null,
+        "provider": "the school",
+        "tag": "[primary — read 2026-10-08]"
+      },
+      "enrolment_published": {
+        "total": 934,
+        "by_grade": {
+          "K": 79,
+          "1": 69,
+          "2": 57,
+          "3": 61,
+          "4": 70,
+          "5": 66,
+          "6": 63,
+          "7": 67,
+          "8": 45,
+          "9": 83,
+          "10": 82,
+          "11": 78,
+          "12": 114
+        },
+        "cds": "38684786981195",
+        "year": "2025-26",
+        "url": "https://www.cde.ca.gov/ds/si/ps/documents/privateschooldata2526.xlsx",
+        "label": "CDE Private School Data 2025-26, the school's affidavit (K-12 only)",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "proof",
+      "name": "Proof School",
+      "repo_name": "Proof School",
+      "public": false,
+      "grades": "6-12",
+      "address": "221 Main St, STE 104, San Francisco, CA 94105 (the school's site and 2026-27 profile). DataSF 7e7j-59qk and the repo still place it at 973 Mission St.",
+      "repo_point": {
+        "lat": 37.78118,
+        "lon": -122.40792,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.790346,
+        "lon": -122.392214,
+        "how": "EAS address point for 221 MAIN ST (parcel 3740034, street CNN 8628000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point for 221 Main St between Howard St and East Tehama St. The school moved from 973 Mission St; the old site's address point is kept as old_door.",
+        "distance_from_repo_point_ft": 5629
+      },
+      "other_doors": [
+        {
+          "lat": 37.781292,
+          "lon": -122.408066,
+          "how": "EAS address point for 973 MISSION ST (parcel 3725078, street CNN 9099000); not checked against imagery",
+          "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+          "label": "old_door (973 Mission St, where the crash count was measured)"
+        }
+      ],
+      "drop_off": "Not published. The school's profile says most students commute by transit for long distances.",
+      "bell": {
+        "start": "08:30",
+        "dismissal": "16:20",
+        "source": "home",
+        "repo_bell_source": "default"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [
+        {
+          "text": "221 Main St, STE 104 San Francisco, CA 94105",
+          "source": "profile"
+        },
+        {
+          "text": "Most students commute 1–3 hours per day, round trip, to attend school.",
+          "source": "profile"
+        },
+        {
+          "text": "Mo 08:30-16:20, Tu 08:30-16:20, We 08:30-16:20, Th 08:30-16:20, Fr 08:30-16:20",
+          "source": "home"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "8629001",
+          "street": "MAIN ST",
+          "from": "HOWARD ST",
+          "to": "EAST TEHAMA ST",
+          "street_class": "residential",
+          "oneway": "T",
+          "from_point": {
+            "lat": 37.790613,
+            "lon": -122.393408
+          },
+          "to_point": {
+            "lat": 37.790167,
+            "lon": -122.392853
+          },
+          "length_ft": 228
+        },
+        "proposed": [
+          {
+            "cnn": "8629001",
+            "street": "MAIN ST",
+            "from": "HOWARD ST",
+            "to": "EAST TEHAMA ST",
+            "street_class": "residential",
+            "oneway": "T",
+            "from_point": {
+              "lat": 37.790613,
+              "lon": -122.393408
+            },
+            "to_point": {
+              "lat": 37.790167,
+              "lon": -122.392853
+            },
+            "length_ft": 228
+          }
+        ],
+        "why": "Main St between Howard St and East Tehama St is the new address block and is classed residential in 3psu-pn9h.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "low",
+      "confidence_why": "The school has moved. Its six bell-hour crashes were counted around 973 Mission St, so its place on the injury list does not describe the new site.",
+      "gaps": [
+        "The case study's crash ranking needs rerunning at 221 Main St before Proof stays on the list.",
+        "Whether Main St on this block is one-way multi-lane traffic to the Bay Bridge is not checked [model knowledge — verify]; the centerline gives it one-way flag T."
+      ],
+      "sources": [
+        {
+          "key": "home",
+          "title": "Proof School home page (address and opening hours in the page's own schema.org data)",
+          "url": "https://www.proofschool.org/",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "profile",
+          "title": "Proof School School Profile 2026-2027 (PDF)",
+          "url": "https://www.proofschool.org/s/Proof-School_School-Profile-20262027.pdf",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "enrolment_published": {
+        "total": 129,
+        "by_grade": {
+          "6": 14,
+          "7": 24,
+          "8": 19,
+          "9": 25,
+          "10": 13,
+          "11": 14,
+          "12": 20
+        },
+        "cds": "38684786150254",
+        "year": "2025-26",
+        "url": "https://www.cde.ca.gov/ds/si/ps/documents/privateschooldata2526.xlsx",
+        "label": "CDE Private School Data 2025-26, the school's affidavit (K-12 only)",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "synergy",
+      "name": "Synergy School",
+      "repo_name": "Synergy School",
+      "public": false,
+      "grades": "K-8",
+      "address": "1387 Valencia Street, San Francisco, CA 94110",
+      "repo_point": {
+        "lat": 37.75094,
+        "lon": -122.42014,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.750885,
+        "lon": -122.420328,
+        "how": "EAS address point for 1387 VALENCIA ST (parcel 6515037, street CNN 13073000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point on the east side of Valencia St between 24th and 25th, about 140 ft from 25th. The school's history page says the front of the 1920s building, \"with its ornate entryway\", was kept.",
+        "distance_from_repo_point_ft": 58
+      },
+      "other_doors": [],
+      "drop_off": "Not published on the pages read.",
+      "bell": {
+        "start": "08:30",
+        "dismissal": "15:00",
+        "wednesday_dismissal": "14:10",
+        "source": "faq",
+        "repo_bell_source": "default"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [
+        {
+          "text": "School Hours 8:30 AM – 3:00 PM 8:30 AM – 2:10 PM Wednesdays",
+          "source": "faq"
+        },
+        {
+          "text": "the front portion of the old building was kept intact with its ornate entryway and original tile. In place of two parking lots on either side of the building, play yards were created.",
+          "source": "home"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "13073000",
+          "street": "VALENCIA ST",
+          "from": "24TH ST",
+          "to": "25TH ST",
+          "street_class": "residential",
+          "oneway": "B",
+          "from_point": {
+            "lat": 37.752104,
+            "lon": -122.420665
+          },
+          "to_point": {
+            "lat": 37.750506,
+            "lon": -122.420507
+          },
+          "length_ft": 585
+        },
+        "proposed": [
+          {
+            "cnn": "13073000",
+            "street": "VALENCIA ST",
+            "from": "24TH ST",
+            "to": "25TH ST",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.752104,
+              "lon": -122.420665
+            },
+            "to_point": {
+              "lat": 37.750506,
+              "lon": -122.420507
+            },
+            "length_ft": 585
+          }
+        ],
+        "why": "Valencia St between 24th and 25th is the door block and is classed residential in 3psu-pn9h.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "low",
+      "confidence_why": "No drop-off is published, the door is the address point, and Valencia is a commercial street with a bikeway, which makes a closure there a larger ask than a side street [model knowledge — verify]. 25th St from Orange Alley to Valencia (CNN 1444000, 166 ft) is the nearest side block.",
+      "gaps": [
+        "A 2020-21 reopening plan with drop-off rules is listed in search results, but the page now returns 404."
+      ],
+      "sources": [
+        {
+          "key": "faq",
+          "title": "Synergy School FAQs",
+          "url": "https://synergyschool.org/faqs/",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "home",
+          "title": "Our Home, Synergy School",
+          "url": "https://synergyschool.org/history/our-home/",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:00",
+        "endSrc": "https://synergyschool.org/fast-facts/",
+        "endSrcLabel": "the school",
+        "endQuote": "After School Care 3:00 – 6:00 PM",
+        "share": null,
+        "provider": "the school",
+        "tag": "[primary — read 2026-10-08]"
+      },
+      "enrolment_published": {
+        "total": 186,
+        "by_grade": {
+          "K": 18,
+          "1": 17,
+          "2": 20,
+          "3": 17,
+          "4": 20,
+          "5": 22,
+          "6": 24,
+          "7": 25,
+          "8": 23
+        },
+        "cds": "38684786905913",
+        "year": "2025-26",
+        "url": "https://www.cde.ca.gov/ds/si/ps/documents/privateschooldata2526.xlsx",
+        "label": "CDE Private School Data 2025-26, the school's affidavit (K-12 only)",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "lycee-ortega",
+      "name": "Lycée Français de San Francisco, Ortega campus",
+      "repo_name": "Lycee Francais de San Francisco (Ortega)",
+      "public": false,
+      "grades": "6-12",
+      "address": "1201 Ortega Street, San Francisco, CA 94122",
+      "repo_point": {
+        "lat": 37.75189,
+        "lon": -122.47648,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.751987,
+        "lon": -122.476828,
+        "how": "EAS address point for 1201 ORTEGA ST (parcel 2115037, street CNN 10007000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point at Ortega St and 19th Ave, on the 1200 block between 19th and 20th Ave.",
+        "distance_from_repo_point_ft": 106
+      },
+      "other_doors": [],
+      "drop_off": "Not published on the public site; dismissal and check-in run through a parents-only app. The school runs shuttles from Marin and Cupertino to this campus.",
+      "bell": {
+        "start": "08:10",
+        "dismissal": null,
+        "note": "Doors open at 7:45 am. No dismissal time is published for Ortega; the Ashbury and Sausalito campuses' 3:15 pm does not apply to it.",
+        "source": "faq",
+        "repo_bell_source": "default"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [
+        {
+          "text": "The Ortega campus welcomes students as early as 7:45 am. Bell rings and class starts at 8:10 am.",
+          "source": "faq"
+        },
+        {
+          "text": "Our daily student transportation program facilitates the morning and afternoon commute of our students to and in between our 3 campuses.",
+          "source": "campuses"
+        },
+        {
+          "text": "Dismissal, check-in, absences and messages — the school's family platform, all in one place.",
+          "source": "parent-app"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "10007000",
+          "street": "ORTEGA ST",
+          "from": "19TH AVE",
+          "to": "20TH AVE",
+          "street_class": "residential",
+          "oneway": "B",
+          "from_point": {
+            "lat": 37.752379,
+            "lon": -122.476292
+          },
+          "to_point": {
+            "lat": 37.752329,
+            "lon": -122.477415
+          },
+          "length_ft": 324
+        },
+        "proposed": [
+          {
+            "cnn": "10007000",
+            "street": "ORTEGA ST",
+            "from": "19TH AVE",
+            "to": "20TH AVE",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.752379,
+              "lon": -122.476292
+            },
+            "to_point": {
+              "lat": 37.752329,
+              "lon": -122.477415
+            },
+            "length_ft": 324
+          }
+        ],
+        "why": "Ortega St between 19th and 20th Ave is the door block and residential. 19th Ave, at the east end, is State Route 1 and stays open.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "medium",
+      "confidence_why": "The address and block are clear; where cars and shuttles stop is not published.",
+      "gaps": [
+        "Dismissal time and drop-off location sit behind the parent login.",
+        "The shuttle route PDF (Google Drive link on the campuses page) was not opened."
+      ],
+      "sources": [
+        {
+          "key": "faq",
+          "title": "Lycée Français de San Francisco, Admissions FAQs (School hours on Ortega)",
+          "url": "https://www.lelycee.org/faq",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "campuses",
+          "title": "About: Our Campuses",
+          "url": "https://www.lelycee.org/about/our-campuses",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "parent-app",
+          "title": "Lycée Parent App sign-in page",
+          "url": "https://parents.lelycee.org/en",
+          "kind": "school website",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": null,
+        "endSrc": "https://www.lelycee.org/on-campus/services",
+        "endQuote": null,
+        "share": null,
+        "provider": null,
+        "note": "The school lists after-school care for its Ashbury and Sausalito campuses only.",
+        "tag": "[primary — read 2026-10-08]"
+      },
+      "enrolment_published": {
+        "total": 308,
+        "by_grade": {
+          "6": 55,
+          "7": 56,
+          "8": 61,
+          "9": 43,
+          "10": 33,
+          "11": 32,
+          "12": 28
+        },
+        "cds": "38684786939664",
+        "year": "2025-26",
+        "url": "https://www.cde.ca.gov/ds/si/ps/documents/privateschooldata2526.xlsx",
+        "label": "CDE Private School Data 2025-26, the school's affidavit (K-12 only)",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "burton",
+      "name": "Phillip and Sala Burton Academic High School",
+      "repo_name": "Burton (Phillip and Sala) Academic High",
+      "public": true,
+      "grades": "9-12",
+      "address": "400 Mansell Street, San Francisco, 94134",
+      "repo_point": {
+        "lat": 37.7207,
+        "lon": -122.40507,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.721265,
+        "lon": -122.406298,
+        "how": "EAS address point for 400 MANSELL ST (parcel 6126016, street CNN 8669201); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point for 400 Mansell St; EAS puts it on the Mansell segment from Somerset St to Hamilton St.",
+        "distance_from_repo_point_ft": 410
+      },
+      "other_doors": [],
+      "drop_off": "Not published on the school's pages.",
+      "bell": {
+        "start": "08:40",
+        "dismissal": "15:40",
+        "wednesday_dismissal": "14:25",
+        "source": "sfusd-school-page",
+        "repo_bell_source": "sfusd"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [
+        {
+          "text": "Monday: 8:40 am-3:40 pm",
+          "source": "sfusd-school-page"
+        },
+        {
+          "text": "Wednesday: 8:40 am-2:25 pm",
+          "source": "sfusd-school-page"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "8669201",
+          "street": "MANSELL ST",
+          "from": "SOMERSET ST",
+          "to": "HAMILTON ST",
+          "street_class": "collector",
+          "oneway": "F",
+          "from_point": {
+            "lat": 37.720509,
+            "lon": -122.405009
+          },
+          "to_point": {
+            "lat": 37.719991,
+            "lon": -122.406998
+          },
+          "length_ft": 662
+        },
+        "proposed": [
+          {
+            "cnn": "8669201",
+            "street": "MANSELL ST",
+            "from": "SOMERSET ST",
+            "to": "HAMILTON ST",
+            "street_class": "collector",
+            "oneway": "F",
+            "from_point": {
+              "lat": 37.720509,
+              "lon": -122.405009
+            },
+            "to_point": {
+              "lat": 37.719991,
+              "lon": -122.406998
+            },
+            "length_ft": 662
+          }
+        ],
+        "why": "Mansell St is a collector and this segment is one carriageway of a divided road; the school publishes no side-street drop-off, so the door block is kept and marked low confidence.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "low",
+      "confidence_why": "The door is the address point on a large campus, and the door block is a collector.",
+      "gaps": [
+        "Which street the main door and the student entrance face needs Google Maps or a site visit.",
+        "No residential side block is proposed until the door is placed."
+      ],
+      "sources": [
+        {
+          "key": "sfusd-school-page",
+          "title": "Phillip and Sala Burton Academic High School, SFUSD school page",
+          "url": "https://www.sfusd.edu/school/phillip-and-sala-burton-academic-high-school",
+          "kind": "school website (SFUSD)",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:00",
+        "endSrc": "https://www.sfusd.edu/school/phillip-and-sala-burton-academic-high-school/details",
+        "endSrcLabel": "SFUSD",
+        "endQuote": "With extended programs until 6 p.m.",
+        "share": null,
+        "provider": "Bayview YMCA Teen Center",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "june-jordan",
+      "name": "June Jordan School for Equity",
+      "repo_name": "Jordan (June) School for Equity",
+      "public": true,
+      "grades": "9-12",
+      "address": "325 La Grande Avenue, San Francisco, 94112",
+      "repo_point": {
+        "lat": 37.72,
+        "lon": -122.4255,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.7195,
+        "lon": -122.425394,
+        "how": "EAS address point for 325 LA GRANDE AVE (parcel 6071002, street CNN 7916001); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point on La Grande Ave south of Brazil Ave, a dead-end block.",
+        "distance_from_repo_point_ft": 185
+      },
+      "other_doors": [],
+      "drop_off": "Not published on the school's pages.",
+      "bell": {
+        "start": "08:40",
+        "dismissal": "15:50",
+        "wednesday_dismissal": "13:15",
+        "source": "sfusd-school-page",
+        "repo_bell_source": "sfusd"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [
+        {
+          "text": "Monday: 8:40 am-3:50 pm",
+          "source": "sfusd-school-page"
+        },
+        {
+          "text": "Wednesday: 8:40 am-1:15 pm",
+          "source": "sfusd-school-page"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "7916001",
+          "street": "LA GRANDE AVE",
+          "from": "BRAZIL AVE",
+          "to": "END: SOUTH",
+          "street_class": "residential",
+          "oneway": "B",
+          "from_point": {
+            "lat": 37.720233,
+            "lon": -122.425479
+          },
+          "to_point": {
+            "lat": 37.719302,
+            "lon": -122.42583
+          },
+          "length_ft": 354
+        },
+        "proposed": [
+          {
+            "cnn": "7916001",
+            "street": "LA GRANDE AVE",
+            "from": "BRAZIL AVE",
+            "to": "END: SOUTH",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.720233,
+              "lon": -122.425479
+            },
+            "to_point": {
+              "lat": 37.719302,
+              "lon": -122.42583
+            },
+            "length_ft": 354
+          }
+        ],
+        "why": "La Grande Ave from Brazil Ave to its south end is a residential dead end, so a closure diverts no through traffic.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "medium",
+      "confidence_why": "The block is clear from the address and the street network; the door is not seen on imagery.",
+      "gaps": [
+        "jjse.org returned 404 on 2026-10-07."
+      ],
+      "sources": [
+        {
+          "key": "sfusd-school-page",
+          "title": "June Jordan School for Equity, SFUSD school page",
+          "url": "https://www.sfusd.edu/school/june-jordan-school-equity",
+          "kind": "school website (SFUSD)",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:00",
+        "endSrc": "https://www.missiongraduates.org/june-jordan-school-for-equity/",
+        "endSrcLabel": "Mission Graduates",
+        "endQuote": "Monday 3:40 pm – 6:00 pm",
+        "share": null,
+        "provider": "Mission Graduates",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "balboa",
+      "name": "Balboa High School",
+      "repo_name": "Balboa High",
+      "public": true,
+      "grades": "9-12",
+      "address": "1000 Cayuga Avenue, San Francisco, 94112",
+      "repo_point": {
+        "lat": 37.72207,
+        "lon": -122.43985,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.722,
+        "lon": -122.440412,
+        "how": "EAS address point for 1000 CAYUGA AVE (parcel 6958A001, street CNN 3834000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point on Cayuga Ave between Onondaga Ave and Balhi Ct.",
+        "distance_from_repo_point_ft": 164
+      },
+      "other_doors": [],
+      "drop_off": "Not published on the school's pages.",
+      "bell": {
+        "start": "08:40",
+        "dismissal": "15:50",
+        "wednesday_dismissal": "13:51",
+        "source": "sfusd-school-details",
+        "repo_bell_source": "sfusd"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [
+        "Students may not order food delivery to the school (from January 5, 2026)."
+      ],
+      "quotes": [
+        {
+          "text": "School starts at 8:40am everyday and ends at 3:50pm on Monday/Tuesday/Thursday/Friday and 1:51pm on Wednesdays.",
+          "source": "sfusd-school-details"
+        },
+        {
+          "text": "Beginning January, 5, 2026, students are not allowed to order from food delivery services (such as DoorDash, UberEats, etc.) for delivery at the school.",
+          "source": "sfusd-school-page"
+        }
+      ],
+      "school_street": {
+        "door_block": {
+          "cnn": "3834000",
+          "street": "CAYUGA AVE",
+          "from": "ONONDAGA AVE",
+          "to": "BALHI CT",
+          "street_class": "residential",
+          "oneway": "B",
+          "from_point": {
+            "lat": 37.722069,
+            "lon": -122.439765
+          },
+          "to_point": {
+            "lat": 37.721517,
+            "lon": -122.440109
+          },
+          "length_ft": 225
+        },
+        "proposed": [
+          {
+            "cnn": "3834000",
+            "street": "CAYUGA AVE",
+            "from": "ONONDAGA AVE",
+            "to": "BALHI CT",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.722069,
+              "lon": -122.439765
+            },
+            "to_point": {
+              "lat": 37.721517,
+              "lon": -122.440109
+            },
+            "length_ft": 225
+          }
+        ],
+        "why": "Cayuga Ave from Onondaga Ave to Balhi Ct is the door block and residential.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "medium",
+      "confidence_why": "The block is clear from the address; the door is not seen on imagery.",
+      "gaps": [],
+      "sources": [
+        {
+          "key": "sfusd-school-page",
+          "title": "Balboa High School, SFUSD school page",
+          "url": "https://www.sfusd.edu/school/balboa-high-school",
+          "kind": "school website (SFUSD)",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        },
+        {
+          "key": "sfusd-school-details",
+          "title": "Balboa High School, SFUSD school details",
+          "url": "https://www.sfusd.edu/school/balboa-high-school/details",
+          "kind": "school website (SFUSD)",
+          "read": "2026-10-07",
+          "tag": "[primary — read 2026-10-07]"
+        }
+      ],
+      "after_school": {
+        "end": "18:30",
+        "endSrc": "https://www.sfusd.edu/school/balboa-high-school/details",
+        "endSrcLabel": "SFUSD",
+        "endQuote": "After School: M/T/Th/F 4:00-6:30",
+        "share": null,
+        "provider": "Community Youth Center of SF",
+        "tag": "[primary — read 2026-10-08]"
+      }
+    },
+    {
+      "id": "lavenia-rochelle",
+      "name": "Lavenia Rochelle Academy",
+      "repo_name": "Lavenia Rochelle Academy",
+      "public": false,
+      "grades": "K-12",
+      "address": "724 Kirkwood Ave., San Francisco, CA 94124 (DataSF 7e7j-59qk)",
+      "repo_point": {
+        "lat": 37.72903,
+        "lon": -122.37325,
+        "source": "out/school-hour-crashes/schools.json"
+      },
+      "door": {
+        "lat": 37.729029,
+        "lon": -122.373248,
+        "how": "EAS address point for 724 KIRKWOOD AVE (parcel 4700031, street CNN 7891000); not checked against imagery",
+        "tag": "[DataSF 3mea-di5p — queried 2026-10-08]",
+        "description": "Address point on Kirkwood Ave between Earl St and Dormitory Rd.",
+        "distance_from_repo_point_ft": 1
+      },
+      "other_doors": [],
+      "drop_off": "No website: DataSF lists its website as \"No Data\".",
+      "bell": {
+        "start": null,
+        "dismissal": null,
+        "source": null,
+        "repo_bell_source": "default"
+      },
+      "loading_zone": null,
+      "school_street_existing": null,
+      "parent_rules": [],
+      "quotes": [],
+      "school_street": {
+        "door_block": {
+          "cnn": "7891000",
+          "street": "KIRKWOOD AVE",
+          "from": "EARL ST",
+          "to": "DORMITORY RD",
+          "street_class": "residential",
+          "oneway": "B",
+          "from_point": {
+            "lat": 37.728639,
+            "lon": -122.373158
+          },
+          "to_point": {
+            "lat": 37.72966,
+            "lon": -122.374928
+          },
+          "length_ft": 632
+        },
+        "proposed": [
+          {
+            "cnn": "7891000",
+            "street": "KIRKWOOD AVE",
+            "from": "EARL ST",
+            "to": "DORMITORY RD",
+            "street_class": "residential",
+            "oneway": "B",
+            "from_point": {
+              "lat": 37.728639,
+              "lon": -122.373158
+            },
+            "to_point": {
+              "lat": 37.72966,
+              "lon": -122.374928
+            },
+            "length_ft": 632
+          }
+        ],
+        "why": "Kirkwood Ave from Earl St to Dormitory Rd is the address block and residential.",
+        "tag": "[inference — mine]",
+        "street_data": "[DataSF 3psu-pn9h — queried 2026-10-08]"
+      },
+      "confidence": "low",
+      "confidence_why": "There is no school website, so nothing about the school's size, hours or door could be read. DataSF lists it as an active K-12 private school opened 2024-08-28.",
+      "gaps": [
+        "A web search summary on 2026-10-07 called the school closed; DataSF 7e7j-59qk (data as of 2026-02-03) lists it as Active. Neither was confirmed against the CDE directory, which served a CAPTCHA.",
+        "Its 382 children over 15 minutes assume a full K-12 school at this address; enrolment is not published."
+      ],
+      "sources": [
+        {
+          "key": "datasf",
+          "title": "DataSF 7e7j-59qk, Schools (private, active)",
+          "url": "https://data.sfgov.org/d/7e7j-59qk",
+          "kind": "city dataset (queried 2026-09-29 cache)",
+          "read": "2026-09-29",
+          "tag": "[DataSF 7e7j-59qk — queried 2026-09-29]"
+        }
+      ]
+    }
+  ]
+}

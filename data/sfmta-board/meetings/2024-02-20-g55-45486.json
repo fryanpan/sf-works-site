@@ -1,0 +1,90 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-02-20",
+ "id": "g55-45486",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45486",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/29774"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - February 6, 2024, Regular Meeting",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Appointing Mina Yu to the Bond Oversight Committee, effective March 6, 2024.",
+   "text": "Appointing Mina Yu to the Bond Oversight Committee, effective March 6, 2024. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 240220-013",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 240220-013)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending Transportation Code, Division II, Section 901 to expand the definition of Powered Scooter to allow devices that have a seat and footrests in place of the floorboard, to better meet the needs of a broader range of riders.",
+   "text": "Amending Transportation Code, Division II, Section 901 to expand the definition of Powered Scooter to allow devices that have a seat and footrests in place of the floorboard, to better meet the needs of a broader range of riders. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 240220-014",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 240220-014)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director of Transportation to execute Modification No. 1 to SFMTA Contract No. 1318, Woods Facility Rehabilitation - Bus Wash Systems Replacement Project, with Air & Lube Systems, Inc",
+   "decision": "ADOPTED — 5 ayes (Resolution 240220-015)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion on the San Francisco Waterfront Coastal Flood Study Draft Integrated Feasibility Report"
+  },
+  {
+   "no": "12",
+   "title": "Presentation, discussion, and possible direction regarding the Mid-Valencia Pilot Project, including an update and findings from the 3-month evaluation period",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

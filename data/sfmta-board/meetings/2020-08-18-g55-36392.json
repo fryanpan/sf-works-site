@@ -1,0 +1,103 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-08-18",
+ "id": "g55-36392",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36392",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22493"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes-July 21, 2020 Regular Meeting-July 31, 2020 Special Meeting-August 5, 2020 Special Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approval of traffic modifications",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-071)"
+  },
+  {
+   "no": "10.1A",
+   "title": "ESTABLISH –RED ZONE, Chabot Terrace, west side, from Turk Boulevard to 23 feet southerly",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-071)"
+  },
+  {
+   "no": "10.1B",
+   "title": "ESTABLISH –RED ZONE, Mount Vernon Avenue, south side, from Getz Street to 35 feet easterly",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-071)"
+  },
+  {
+   "no": "10.1C",
+   "title": "ESTABLISH –BUS ZONE, Bryant Street, south side, from Division Street to 100 feet easterly",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-071)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving a temporary parking-protected bikeway on Fell Street between Baker Street and Shrader Street and associated parking and traffic modifications as part of the Panhandle Social Distancing and Safety Project",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-072)"
+  },
+  {
+   "no": "10.2A",
+   "title": "ESTABLISH –CLASS IV PROTECTED BIKEWAY (PARKING-PROTECTED BIKEWAY) –Fell Street, westbound, south side, from Baker Street to Shrader Street",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-072)"
+  },
+  {
+   "no": "10.2B",
+   "title": "ESTABLISH –RED ZONE –Fell Street, south side, from east Lyon Street; Fell Street, south side, from east Central Avenue; Fell Street, south side, from Ashbury Street ; Fell Street, south side, from Clayton Street; Fell S",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-072)"
+  },
+  {
+   "no": "10.2C",
+   "title": "ESTABLISH –TOW-AWAY, NO STOPPING ANYTIME –Fell Street, south side, from 200 feet to 220 feet east of Masonic Avenue.",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-072)"
+  },
+  {
+   "no": "10.3",
+   "title": "Suspending the requirement in Transportation Code, Division II, Section 916(a)(2), that the duration of Powered Scooter Share Program permits be up to one year; authorizing the Director or designee to extend the current",
+   "decision": "ADOPTED — 4 ayes (Resolution 200818-073)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,10 @@
+# Every minute at :05 s. poll.py decides which feed is due (Trip Updates on even minutes, Vehicle Positions every third).
+[Unit]
+Description=511 realtime archive poll, every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:05 UTC
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

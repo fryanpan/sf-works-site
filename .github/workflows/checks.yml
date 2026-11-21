@@ -1,0 +1,59 @@
+name: Checks
+
+# Every pull request, including the scheduled data refresh's, merges only when
+# these pass (ADR 0002).
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  # Fast checks that read no LFS content: a big file here is its pointer.
+  repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check every file of 1 MB or more is in Git LFS
+        run: python3 pipeline/check-large-files.py
+      - name: Check nothing private is anywhere in the repo, and every relative link resolves
+        run: node pipeline/check-public-repo.mjs
+        env:
+          PRIVATE_NAMES: ${{ secrets.PRIVATE_NAMES }}
+      - name: Check nothing outside the repo reached the site
+        run: node site/scripts/check-public.mjs
+      - name: The pipeline plans its steps
+        run: python3 pipeline/transportation-update.py --dry-run
+
+  # The site's checks and build need the data, so this job fetches the LFS
+  # files, from the cache where it can.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: List the LFS files this commit needs
+        run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
+      - uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - name: Fetch the LFS files the cache lacks
+        run: git lfs pull
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install
+        run: npm ci
+        working-directory: site
+      - name: Site checks and tests
+        run: npm run check
+        working-directory: site
+      - name: Build
+        run: npm run build
+        working-directory: site
+      - name: Check the rendered markdown pages
+        run: node site/scripts/check-rendered-docs.mjs

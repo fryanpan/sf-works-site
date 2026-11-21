@@ -1,0 +1,64 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-07-10",
+ "id": "g218-50383",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=50383",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the June 26, 2025 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "5",
+   "title": "San Francisco Fire Department Division of Training - Approval to Proceed with Construction Services under the CM/GC Contract with Swinerton Builders"
+  },
+  {
+   "no": "6",
+   "title": "Workforce Development Grants Update"
+  },
+  {
+   "no": "7",
+   "title": "Tenderloin Clean Workforce Development Grant Agreement – TLCBD – Modification"
+  },
+  {
+   "no": "8",
+   "title": "Pit Stop Workforce Development Grant Agreement – Mission Hiring Hall – Modification"
+  },
+  {
+   "no": "9",
+   "title": "Sidewalk Pressure Washing Workforce Development Grant Agreement – CYC – Modification"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

@@ -1,0 +1,1925 @@
+{
+ "dropped": [
+  {
+   "name": "MEADOWS-LIVINGSTONE SCHOOL",
+   "students": 17,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "Adaptedmind",
+   "students": 12,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "Idlewild Elementary School",
+   "students": 13,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "Sovereign Private School",
+   "students": 6,
+   "why": "DataSF location redacted"
+  },
+  {
+   "name": "Andrews family home school",
+   "students": 6,
+   "why": "DataSF location redacted"
+  },
+  {
+   "name": "Hiba Academy Bay Area",
+   "students": 15,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "Urban Student Athlete Development Academy",
+   "students": 23,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "Inner Fire Academy",
+   "students": 7,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "Wagner Learning Academy",
+   "students": 14,
+   "why": "no DataSF point"
+  },
+  {
+   "name": "St. John of San Francisco Orthodox Academy",
+   "students": 26,
+   "why": "not filed 2025-26, not in DataSF"
+  }
+ ],
+ "note": "Written by scripts/school-private-schools.py. SF private schools with K-12 enrolment by grade (CDE Private School Affidavit 2025-26, a 2024-25 row carried forward where a school DataSF lists as Active did not file for 2025-26) and a point from DataSF 7e7j-59qk by CDS code. Grades use the simulation's keys (KN, 01-12); the affidavit has no TK. parochial is our reading of the names.",
+ "schools": [
+  {
+   "cds": "38684786130090",
+   "grades": {
+    "01": 1,
+    "02": 3,
+    "03": 1,
+    "04": 4,
+    "05": 2,
+    "KN": 3
+   },
+   "lat": 37.749812,
+   "lon": -122.422421,
+   "name": "Katherine Michiels School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786133763",
+   "grades": {
+    "04": 30,
+    "05": 24,
+    "06": 30,
+    "07": 34,
+    "08": 34
+   },
+   "lat": 37.724604,
+   "lon": -122.417563,
+   "name": "Cornerstone Academy–Cambridge Campus",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786135651",
+   "grades": {
+    "01": 19,
+    "02": 18,
+    "03": 28,
+    "04": 21,
+    "05": 27,
+    "KN": 19
+   },
+   "lat": 37.723337,
+   "lon": -122.461497,
+   "name": "Stratford School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786138176",
+   "grades": {
+    "09": 127,
+    "10": 71,
+    "11": 92,
+    "12": 108
+   },
+   "lat": 37.80078,
+   "lon": -122.455646,
+   "name": "The Bay School of San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786139463",
+   "grades": {
+    "05": 6,
+    "06": 10,
+    "07": 10,
+    "08": 3,
+    "09": 10,
+    "10": 5,
+    "11": 6,
+    "12": 3
+   },
+   "lat": 37.770342,
+   "lon": -122.452939,
+   "name": "San Francisco High School of the Arts",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786139893",
+   "grades": {
+    "01": 8,
+    "02": 14,
+    "03": 21,
+    "04": 18,
+    "05": 11,
+    "06": 18,
+    "07": 22,
+    "08": 17,
+    "KN": 17
+   },
+   "lat": 37.735227,
+   "lon": -122.437712,
+   "name": "St. John the Evangelist",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786140099",
+   "grades": {
+    "01": 31,
+    "02": 34,
+    "03": 30,
+    "04": 34,
+    "05": 32,
+    "06": 34,
+    "07": 33,
+    "08": 33,
+    "KN": 29
+   },
+   "lat": 37.725947,
+   "lon": -122.40731,
+   "name": "Alta Vista School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786140974",
+   "grades": {
+    "01": 8,
+    "02": 11,
+    "03": 13,
+    "04": 12,
+    "05": 9,
+    "06": 7,
+    "07": 5,
+    "KN": 7
+   },
+   "lat": 37.761089,
+   "lon": -122.388277,
+   "name": "Red Bridge",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786142079",
+   "grades": {
+    "01": 10,
+    "02": 5,
+    "03": 7,
+    "04": 12,
+    "05": 5,
+    "06": 5,
+    "07": 7,
+    "08": 7,
+    "09": 1,
+    "11": 1,
+    "12": 3,
+    "KN": 7
+   },
+   "lat": 37.800303,
+   "lon": -122.468741,
+   "name": "Brightworks School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786143440",
+   "grades": {
+    "06": 1,
+    "07": 1,
+    "08": 1,
+    "09": 5,
+    "10": 4,
+    "11": 5,
+    "12": 6
+   },
+   "lat": 37.801789,
+   "lon": -122.401438,
+   "name": "Fusion Academy San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786143952",
+   "grades": {
+    "01": 12,
+    "02": 13,
+    "03": 12,
+    "04": 9,
+    "05": 15,
+    "06": 10,
+    "07": 12,
+    "08": 13,
+    "KN": 18
+   },
+   "lat": 37.77487,
+   "lon": -122.430191,
+   "name": "San Francisco Schoolhouse",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786144034",
+   "grades": {
+    "01": 48,
+    "02": 30,
+    "03": 39,
+    "04": 31,
+    "05": 25,
+    "06": 30,
+    "07": 19,
+    "08": 23,
+    "KN": 58
+   },
+   "lat": 37.773697,
+   "lon": -122.413682,
+   "name": "Presidio Knolls School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786144257",
+   "grades": {
+    "01": 44,
+    "02": 41,
+    "03": 33,
+    "04": 29,
+    "05": 20,
+    "06": 27,
+    "07": 25,
+    "08": 18,
+    "KN": 44
+   },
+   "lat": 37.762291,
+   "lon": -122.416331,
+   "name": "La Scuola International School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786146054",
+   "grades": {
+    "01": 9,
+    "02": 8,
+    "03": 8,
+    "04": 10,
+    "05": 2,
+    "06": 6,
+    "KN": 10
+   },
+   "lat": 37.77564,
+   "lon": -122.494287,
+   "name": "San Francisco Pacific Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786146344",
+   "grades": {
+    "01": 3,
+    "02": 3,
+    "03": 1,
+    "04": 1,
+    "05": 2,
+    "KN": 1
+   },
+   "lat": 37.776063,
+   "lon": -122.492742,
+   "name": "Kahlon Family Services School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786146369",
+   "grades": {
+    "01": 40,
+    "02": 50,
+    "03": 49,
+    "04": 36,
+    "05": 41,
+    "KN": 59
+   },
+   "lat": 37.768064,
+   "lon": -122.446841,
+   "name": "Lycee Francais de San Francisco (Ashbury)",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786150254",
+   "grades": {
+    "06": 14,
+    "07": 24,
+    "08": 19,
+    "09": 25,
+    "10": 13,
+    "11": 14,
+    "12": 20
+   },
+   "lat": 37.781181,
+   "lon": -122.407924,
+   "name": "Proof School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786151310",
+   "grades": {
+    "06": 31,
+    "07": 32,
+    "08": 38
+   },
+   "lat": 37.781751,
+   "lon": -122.423746,
+   "name": "Millennium School of San Francisco",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786152532",
+   "grades": {
+    "09": 22,
+    "10": 15,
+    "11": 13,
+    "12": 21
+   },
+   "lat": 37.738923,
+   "lon": -122.382079,
+   "name": "Rise University Preparatory",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786152565",
+   "grades": {
+    "01": 29,
+    "02": 39,
+    "03": 42,
+    "04": 40,
+    "05": 32,
+    "06": 47,
+    "07": 54,
+    "08": 54,
+    "KN": 41
+   },
+   "lat": 37.713285,
+   "lon": -122.475599,
+   "name": "The Brandeis School of San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786154439",
+   "grades": {
+    "01": 2,
+    "02": 2,
+    "03": 3,
+    "04": 1
+   },
+   "lat": 37.77682,
+   "lon": -122.418721,
+   "name": "Mission Montessori",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786154702",
+   "grades": {
+    "05": 2,
+    "06": 2,
+    "07": 3,
+    "08": 3,
+    "09": 1
+   },
+   "lat": 37.77356,
+   "lon": -122.486902,
+   "name": "My City School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786156640",
+   "grades": {
+    "06": 39,
+    "07": 42,
+    "08": 30
+   },
+   "lat": 37.727161,
+   "lon": -122.434847,
+   "name": "Stratford School San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786158372",
+   "grades": {
+    "01": 8,
+    "02": 6,
+    "03": 10,
+    "04": 8,
+    "05": 5,
+    "06": 9,
+    "07": 8,
+    "08": 6,
+    "KN": 13
+   },
+   "lat": 37.745905,
+   "lon": -122.412703,
+   "name": "Donum Dei Classical Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786158539",
+   "grades": {
+    "01": 14,
+    "02": 12,
+    "03": 14,
+    "04": 5,
+    "05": 8,
+    "06": 8,
+    "07": 10,
+    "08": 4,
+    "KN": 9
+   },
+   "lat": 37.71375,
+   "lon": -122.454287,
+   "name": "San Francisco Islamic School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786158596",
+   "grades": {
+    "01": 91,
+    "02": 84,
+    "03": 79,
+    "04": 81,
+    "05": 83,
+    "06": 86,
+    "07": 84,
+    "08": 79,
+    "09": 121,
+    "10": 125,
+    "11": 114,
+    "12": 119,
+    "KN": 85
+   },
+   "lat": 37.794657,
+   "lon": -122.434294,
+   "name": "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786159156",
+   "grades": {
+    "01": 27,
+    "02": 15,
+    "03": 12,
+    "04": 16,
+    "05": 3,
+    "KN": 13
+   },
+   "lat": 37.776134,
+   "lon": -122.472818,
+   "name": "Stratford School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786161921",
+   "grades": {
+    "03": 2,
+    "05": 1,
+    "06": 1,
+    "07": 1,
+    "08": 2,
+    "09": 3,
+    "10": 2,
+    "11": 1,
+    "12": 3
+   },
+   "lat": 37.789971,
+   "lon": -122.400884,
+   "name": "TCS",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786162549",
+   "grades": {
+    "01": 11,
+    "02": 10,
+    "03": 12,
+    "04": 11,
+    "05": 5,
+    "06": 10,
+    "07": 11,
+    "08": 4,
+    "KN": 9
+   },
+   "lat": 37.760246,
+   "lon": -122.436904,
+   "name": "German International School of Silicon Valley",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786162598",
+   "grades": {
+    "01": 15,
+    "02": 12,
+    "03": 7,
+    "04": 9,
+    "05": 5,
+    "06": 5,
+    "07": 12,
+    "08": 3,
+    "KN": 9
+   },
+   "lat": 37.781586,
+   "lon": -122.467362,
+   "name": "Stella Maris Academy",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786168041",
+   "grades": {
+    "01": 47,
+    "02": 55,
+    "03": 58,
+    "04": 51,
+    "05": 55,
+    "06": 42,
+    "07": 45,
+    "08": 42,
+    "KN": 69
+   },
+   "lat": 37.729205,
+   "lon": -122.47388,
+   "name": "Chinese American International School- 19th Ave Campus",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786168728",
+   "grades": {
+    "01": 4,
+    "02": 3,
+    "03": 1,
+    "KN": 10
+   },
+   "lat": 37.772413,
+   "lon": -122.391205,
+   "name": "The Dahlia School of San Francisco Elementary",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786168959",
+   "grades": {
+    "01": 40,
+    "02": 40,
+    "03": 35,
+    "04": 40,
+    "05": 40,
+    "06": 35,
+    "07": 40,
+    "08": 40,
+    "09": 35,
+    "10": 35,
+    "11": 30,
+    "12": 25,
+    "KN": 45
+   },
+   "lat": 37.787767,
+   "lon": -122.40612,
+   "name": "Aloha Micro Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786169163",
+   "grades": {
+    "01": 15,
+    "02": 2,
+    "03": 2,
+    "KN": 15
+   },
+   "lat": 37.775338,
+   "lon": -122.499658,
+   "name": "Terra San Francisco School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786169445",
+   "grades": {
+    "08": 4,
+    "09": 3,
+    "10": 3,
+    "11": 5,
+    "12": 5
+   },
+   "lat": 37.787767,
+   "lon": -122.40612,
+   "name": "Académique International Secondaire des Examens et Certifications",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786169627",
+   "grades": {
+    "09": 24,
+    "10": 15,
+    "11": 2
+   },
+   "lat": 37.781921,
+   "lon": -122.46732,
+   "name": "Nativity",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786170120",
+   "grades": {
+    "03": 2,
+    "04": 6,
+    "05": 2,
+    "06": 3,
+    "09": 6,
+    "10": 2,
+    "11": 3
+   },
+   "lat": 37.754645,
+   "lon": -122.415624,
+   "name": "Eclipse Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786170146",
+   "grades": {
+    "01": 6,
+    "02": 6,
+    "03": 6,
+    "04": 6,
+    "05": 6,
+    "06": 6,
+    "07": 6,
+    "08": 6,
+    "09": 6,
+    "10": 6,
+    "11": 6,
+    "12": 6
+   },
+   "lat": 37.777794,
+   "lon": -122.436875,
+   "name": "Brilliant Microschool",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786170153",
+   "grades": {
+    "01": 1,
+    "02": 1,
+    "03": 1,
+    "04": 3,
+    "06": 5,
+    "07": 2,
+    "08": 5,
+    "KN": 1
+   },
+   "lat": 37.760533,
+   "lon": -122.398021,
+   "name": "Bertrand D Hsu American & Chinese Bicultural Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786170278",
+   "grades": {
+    "01": 6,
+    "02": 7,
+    "03": 8,
+    "04": 9,
+    "05": 10,
+    "06": 11,
+    "07": 12,
+    "08": 13,
+    "09": 14,
+    "10": 15,
+    "11": 5,
+    "12": 5,
+    "KN": 10
+   },
+   "lat": 37.729029,
+   "lon": -122.373248,
+   "name": "Lavenia Rochelle Academy",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786170740",
+   "grades": {
+    "06": 2,
+    "11": 2,
+    "12": 3
+   },
+   "lat": 37.787767,
+   "lon": -122.40612,
+   "name": "Enlighten Academy",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786170989",
+   "grades": {
+    "01": 2,
+    "02": 1,
+    "03": 4,
+    "04": 2,
+    "05": 1,
+    "KN": 6
+   },
+   "lat": 37.717953,
+   "lon": -122.387036,
+   "name": "The Neos Bayview Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786172357",
+   "grades": {
+    "01": 2,
+    "04": 3,
+    "05": 1,
+    "08": 1,
+    "KN": 1
+   },
+   "lat": 37.80457,
+   "lon": -122.433941,
+   "name": "Alpha School San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786200554",
+   "grades": {
+    "09": 29,
+    "10": 44,
+    "11": 43,
+    "12": 39
+   },
+   "lat": 37.781426,
+   "lon": -122.436417,
+   "name": "Jewish Community High School of the Bay",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786203384",
+   "grades": {
+    "10": 2,
+    "11": 2,
+    "12": 2
+   },
+   "lat": 37.72816,
+   "lon": -122.447611,
+   "name": "Wen Jian Ying",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786204762",
+   "grades": {
+    "01": 51,
+    "02": 40,
+    "03": 42,
+    "04": 45,
+    "05": 47,
+    "06": 56,
+    "07": 51,
+    "08": 57,
+    "KN": 25
+   },
+   "lat": 37.768979,
+   "lon": -122.422908,
+   "name": "San Francisco Friends School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786205652",
+   "grades": {
+    "01": 23,
+    "02": 17,
+    "03": 19,
+    "04": 20,
+    "05": 20,
+    "06": 22,
+    "07": 29,
+    "08": 33,
+    "KN": 36
+   },
+   "lat": 37.788675,
+   "lon": -122.456047,
+   "name": "Presidio Hill School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786206007",
+   "grades": {
+    "01": 5,
+    "02": 4,
+    "03": 7,
+    "04": 6,
+    "05": 5,
+    "06": 6,
+    "07": 7,
+    "08": 5,
+    "KN": 8
+   },
+   "lat": 37.773614,
+   "lon": -122.487198,
+   "name": "Bais Menacham Yeshiva Day School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786903165",
+   "grades": {
+    "01": 30,
+    "02": 25,
+    "03": 40,
+    "KN": 24
+   },
+   "lat": 37.729063,
+   "lon": -122.419485,
+   "name": "Cornerstone Academy-Silver Campus",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786905913",
+   "grades": {
+    "01": 17,
+    "02": 20,
+    "03": 17,
+    "04": 20,
+    "05": 22,
+    "06": 24,
+    "07": 25,
+    "08": 23,
+    "KN": 18
+   },
+   "lat": 37.750938,
+   "lon": -122.420143,
+   "name": "Synergy School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786906176",
+   "grades": {
+    "KN": 20
+   },
+   "lat": 37.730728,
+   "lon": -122.475199,
+   "name": "Lakeside Presbyterian Center for Children",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786907927",
+   "grades": {
+    "01": 22,
+    "02": 20,
+    "03": 17,
+    "04": 21,
+    "05": 16,
+    "06": 15,
+    "07": 18,
+    "08": 22,
+    "09": 27,
+    "10": 26,
+    "11": 33,
+    "12": 32,
+    "KN": 21
+   },
+   "lat": 37.79092,
+   "lon": -122.44191,
+   "name": "San Francisco Waldorf School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786908917",
+   "grades": {
+    "09": 8,
+    "10": 2,
+    "12": 3
+   },
+   "lat": 37.738609,
+   "lon": -122.486047,
+   "name": "Edgewood Community School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786909600",
+   "grades": {
+    "01": 1,
+    "02": 4,
+    "03": 1,
+    "04": 10,
+    "05": 2,
+    "KN": 2
+   },
+   "lat": 37.749583,
+   "lon": -122.405032,
+   "name": "Meadows-livingstone school",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786913123",
+   "grades": {
+    "01": 16,
+    "02": 17,
+    "03": 11,
+    "04": 15,
+    "05": 10,
+    "06": 10,
+    "07": 12,
+    "08": 7,
+    "KN": 15
+   },
+   "lat": 37.713841,
+   "lon": -122.478318,
+   "name": "KZV Armenian School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786915748",
+   "grades": {
+    "01": 48,
+    "02": 48,
+    "03": 47,
+    "04": 50,
+    "05": 52,
+    "06": 55,
+    "07": 55,
+    "08": 55,
+    "KN": 52
+   },
+   "lat": 37.777894,
+   "lon": -122.446137,
+   "name": "San Francisco Day School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786930572",
+   "grades": {
+    "01": 14,
+    "02": 7,
+    "03": 16,
+    "04": 16,
+    "05": 7,
+    "06": 12,
+    "07": 8,
+    "08": 15,
+    "KN": 13
+   },
+   "lat": 37.75368,
+   "lon": -122.424159,
+   "name": "Adda Clevenger School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786938930",
+   "grades": {
+    "09": 118,
+    "10": 114,
+    "11": 105,
+    "12": 100
+   },
+   "lat": 37.770967,
+   "lon": -122.446249,
+   "name": "Urban School of San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786939557",
+   "grades": {
+    "09": 60,
+    "10": 75,
+    "11": 70,
+    "12": 75
+   },
+   "lat": 37.787687,
+   "lon": -122.44253,
+   "name": "Drew School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786939607",
+   "grades": {
+    "01": 2,
+    "03": 1,
+    "04": 2,
+    "05": 3,
+    "06": 2,
+    "07": 1,
+    "08": 1,
+    "KN": 5
+   },
+   "lat": 37.793323,
+   "lon": -122.440119,
+   "name": "Hillwood Academic Day",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786939615",
+   "grades": {
+    "09": 83,
+    "10": 54,
+    "11": 60,
+    "12": 51
+   },
+   "lat": 37.751858,
+   "lon": -122.423527,
+   "name": "ICA Cristo Rey Academy",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786939649",
+   "grades": {
+    "09": 143,
+    "10": 140,
+    "11": 140,
+    "12": 140
+   },
+   "lat": 37.722188,
+   "lon": -122.449131,
+   "name": "Lick-Wilmerding High School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786939664",
+   "grades": {
+    "06": 55,
+    "07": 56,
+    "08": 61,
+    "09": 43,
+    "10": 33,
+    "11": 32,
+    "12": 28
+   },
+   "lat": 37.751894,
+   "lon": -122.476479,
+   "name": "Lycee Francais de San Francisco (Ortega)",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786939698",
+   "grades": {
+    "09": 132,
+    "10": 129,
+    "11": 116,
+    "12": 111
+   },
+   "lat": 37.790956,
+   "lon": -122.445353,
+   "name": "San Francisco University High School",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786939722",
+   "grades": {
+    "06": 19,
+    "07": 24,
+    "08": 23,
+    "09": 385,
+    "10": 371,
+    "11": 370,
+    "12": 363
+   },
+   "lat": 37.7484,
+   "lon": -122.495771,
+   "name": "St. Ignatius College Preparatory",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786939730",
+   "grades": {
+    "09": 297,
+    "10": 304,
+    "11": 311,
+    "12": 280
+   },
+   "lat": 37.728235,
+   "lon": -122.453418,
+   "name": "Archbishop Riordan High School",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786939748",
+   "grades": {
+    "09": 347,
+    "10": 370,
+    "11": 368,
+    "12": 352
+   },
+   "lat": 37.783524,
+   "lon": -122.423457,
+   "name": "Sacred Heart Cathedral Preparatory",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786965586",
+   "grades": {
+    "01": 22,
+    "02": 24,
+    "03": 25,
+    "04": 24,
+    "05": 30,
+    "06": 38,
+    "07": 36,
+    "08": 40,
+    "KN": 25
+   },
+   "lat": 37.792394,
+   "lon": -122.413896,
+   "name": "Cathedral School for Boys",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980585",
+   "grades": {
+    "01": 6,
+    "02": 10,
+    "03": 4,
+    "04": 15,
+    "05": 16,
+    "06": 12,
+    "07": 31,
+    "08": 37,
+    "KN": 4
+   },
+   "lat": 37.780236,
+   "lon": -122.483524,
+   "name": "Saint Monica School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980601",
+   "grades": {
+    "01": 17,
+    "02": 18,
+    "03": 17,
+    "04": 15,
+    "05": 16,
+    "06": 21,
+    "07": 22,
+    "08": 19,
+    "KN": 17
+   },
+   "lat": 37.744051,
+   "lon": -122.426868,
+   "name": "St. Paul's",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980619",
+   "grades": {
+    "01": 17,
+    "02": 14,
+    "03": 14,
+    "04": 9,
+    "05": 19,
+    "06": 21,
+    "07": 28,
+    "08": 29,
+    "KN": 12
+   },
+   "lat": 37.751672,
+   "lon": -122.409996,
+   "name": "St. Peter's School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980627",
+   "grades": {
+    "01": 14,
+    "02": 15,
+    "03": 23,
+    "04": 22,
+    "05": 35,
+    "06": 29,
+    "07": 27,
+    "08": 30,
+    "KN": 21
+   },
+   "lat": 37.751866,
+   "lon": -122.436301,
+   "name": "St. Philip School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980643",
+   "grades": {
+    "01": 27,
+    "02": 19,
+    "03": 27,
+    "04": 32,
+    "05": 22,
+    "06": 26,
+    "07": 27,
+    "08": 33,
+    "KN": 13
+   },
+   "lat": 37.730674,
+   "lon": -122.47528,
+   "name": "St. Stephen School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980650",
+   "grades": {
+    "01": 23,
+    "02": 33,
+    "03": 24,
+    "04": 22,
+    "05": 25,
+    "06": 34,
+    "07": 26,
+    "08": 29,
+    "KN": 38
+   },
+   "lat": 37.712255,
+   "lon": -122.473044,
+   "name": "St. Thomas More",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980676",
+   "grades": {
+    "01": 30,
+    "02": 17,
+    "03": 27,
+    "04": 24,
+    "05": 30,
+    "06": 28,
+    "07": 26,
+    "08": 21,
+    "KN": 28
+   },
+   "lat": 37.796274,
+   "lon": -122.437744,
+   "name": "St. Vincent de Paul School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980684",
+   "grades": {
+    "01": 12,
+    "02": 18,
+    "03": 14,
+    "04": 22,
+    "05": 17,
+    "06": 21,
+    "07": 25,
+    "08": 25,
+    "KN": 18
+   },
+   "lat": 37.80135,
+   "lon": -122.41036,
+   "name": "Sts. Peter and Paul Elementary",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980692",
+   "grades": {
+    "01": 18,
+    "02": 23,
+    "03": 15,
+    "04": 24,
+    "05": 29,
+    "06": 18,
+    "07": 25,
+    "08": 30,
+    "09": 15,
+    "10": 19,
+    "11": 15,
+    "12": 7,
+    "KN": 13
+   },
+   "lat": 37.710037,
+   "lon": -122.447754,
+   "name": "San Francisco Christian School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980718",
+   "grades": {
+    "01": 2,
+    "02": 2,
+    "03": 2,
+    "04": 1
+   },
+   "lat": 37.722215,
+   "lon": -122.450839,
+   "name": "San Francisco Adventist School",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786980726",
+   "grades": {
+    "01": 25,
+    "02": 21,
+    "03": 23,
+    "04": 23,
+    "05": 19,
+    "06": 30,
+    "07": 37,
+    "08": 36,
+    "KN": 26
+   },
+   "lat": 37.73278,
+   "lon": -122.411698,
+   "name": "San Francisco School, The",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980734",
+   "grades": {
+    "01": 9,
+    "02": 20,
+    "03": 15,
+    "04": 12,
+    "05": 10,
+    "06": 17,
+    "07": 19,
+    "08": 16,
+    "KN": 13
+   },
+   "lat": 37.716192,
+   "lon": -122.434907,
+   "name": "School of the Epiphany",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980833",
+   "grades": {
+    "01": 49,
+    "02": 47,
+    "03": 48,
+    "04": 49,
+    "05": 44,
+    "06": 48,
+    "07": 48,
+    "08": 49,
+    "KN": 45
+   },
+   "lat": 37.791895,
+   "lon": -122.440117,
+   "name": "Town School for Boys",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980874",
+   "grades": {
+    "01": 34,
+    "02": 49,
+    "03": 25,
+    "04": 27,
+    "05": 39,
+    "06": 51,
+    "07": 54,
+    "08": 60,
+    "KN": 43
+   },
+   "lat": 37.735255,
+   "lon": -122.473426,
+   "name": "West Portal Lutheran School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786980890",
+   "grades": {
+    "01": 13,
+    "02": 18,
+    "03": 17,
+    "04": 21,
+    "05": 14,
+    "06": 16,
+    "07": 20,
+    "08": 13,
+    "KN": 22
+   },
+   "lat": 37.779241,
+   "lon": -122.467633,
+   "name": "Zion Lutheran School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981195",
+   "grades": {
+    "01": 69,
+    "02": 57,
+    "03": 61,
+    "04": 70,
+    "05": 66,
+    "06": 63,
+    "07": 67,
+    "08": 45,
+    "09": 83,
+    "10": 82,
+    "11": 78,
+    "12": 114,
+    "KN": 79
+   },
+   "lat": 37.775341,
+   "lon": -122.421751,
+   "name": "The International School of San Francisco",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981278",
+   "grades": {
+    "01": 27,
+    "02": 31,
+    "03": 34,
+    "04": 38,
+    "05": 35,
+    "06": 61,
+    "07": 58,
+    "08": 56,
+    "KN": 33
+   },
+   "lat": 37.757809,
+   "lon": -122.498388,
+   "name": "Holy Name Elementary",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981328",
+   "grades": {
+    "01": 43,
+    "02": 47,
+    "03": 46,
+    "04": 43,
+    "05": 41,
+    "06": 46,
+    "07": 46,
+    "08": 46,
+    "KN": 42
+   },
+   "lat": 37.783557,
+   "lon": -122.492867,
+   "name": "Katherine Delmar Burke School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981336",
+   "grades": {
+    "01": 3,
+    "03": 5,
+    "04": 10,
+    "05": 4,
+    "06": 5,
+    "07": 8,
+    "08": 11,
+    "KN": 4
+   },
+   "lat": 37.785544,
+   "lon": -122.484956,
+   "name": "Kittredge School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981377",
+   "grades": {
+    "01": 44,
+    "02": 43,
+    "03": 44,
+    "04": 44,
+    "05": 47,
+    "06": 47,
+    "07": 57,
+    "08": 53,
+    "KN": 39
+   },
+   "lat": 37.7636,
+   "lon": -122.399525,
+   "name": "Live Oak School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981500",
+   "grades": {
+    "01": 26,
+    "02": 30,
+    "03": 26,
+    "04": 25,
+    "05": 30,
+    "06": 36,
+    "07": 33,
+    "08": 33,
+    "KN": 25
+   },
+   "lat": 37.791311,
+   "lon": -122.406709,
+   "name": "Ecole Notre Dame Des Victoires",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981559",
+   "grades": {
+    "01": 25,
+    "02": 19,
+    "03": 28,
+    "04": 23,
+    "05": 29,
+    "06": 28,
+    "07": 34,
+    "08": 24,
+    "KN": 11
+   },
+   "lat": 37.709685,
+   "lon": -122.409473,
+   "name": "Our Lady of the Visitacion Elementary",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981658",
+   "grades": {
+    "01": 13,
+    "02": 28,
+    "03": 19,
+    "04": 16,
+    "05": 28,
+    "06": 32,
+    "07": 34,
+    "08": 25,
+    "KN": 18
+   },
+   "lat": 37.763304,
+   "lon": -122.471509,
+   "name": "St. Anne School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981666",
+   "grades": {
+    "01": 14,
+    "02": 13,
+    "03": 8,
+    "04": 18,
+    "05": 12,
+    "06": 27,
+    "07": 15,
+    "08": 13,
+    "KN": 11
+   },
+   "lat": 37.747329,
+   "lon": -122.413856,
+   "name": "St. Anthony–Immaculate Conception",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981674",
+   "grades": {
+    "01": 31,
+    "02": 32,
+    "03": 25,
+    "04": 31,
+    "05": 31,
+    "06": 34,
+    "07": 35,
+    "08": 32,
+    "KN": 26
+   },
+   "lat": 37.742801,
+   "lon": -122.456493,
+   "name": "St. Brendan Elementary",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981682",
+   "grades": {
+    "01": 1,
+    "02": 10,
+    "03": 3,
+    "04": 7,
+    "05": 3,
+    "06": 7,
+    "07": 5,
+    "08": 4,
+    "KN": 3
+   },
+   "lat": 37.795337,
+   "lon": -122.424826,
+   "name": "Saint Brigid Academy",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981690",
+   "grades": {
+    "01": 52,
+    "02": 42,
+    "03": 35,
+    "04": 61,
+    "05": 64,
+    "06": 60,
+    "07": 59,
+    "08": 68,
+    "KN": 30
+   },
+   "lat": 37.739403,
+   "lon": -122.473942,
+   "name": "St. Cecilia Elementary",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981716",
+   "grades": {
+    "01": 12,
+    "02": 15,
+    "03": 19,
+    "04": 22,
+    "05": 10,
+    "06": 15,
+    "07": 11,
+    "08": 19,
+    "KN": 16
+   },
+   "lat": 37.764531,
+   "lon": -122.428026,
+   "name": "Mission Dolores Academy",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981740",
+   "grades": {
+    "01": 13,
+    "02": 14,
+    "03": 16,
+    "04": 23,
+    "05": 27,
+    "06": 21,
+    "07": 34,
+    "08": 27,
+    "KN": 9
+   },
+   "lat": 37.730349,
+   "lon": -122.447365,
+   "name": "St. Finn Barr Catholic School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981765",
+   "grades": {
+    "01": 52,
+    "02": 54,
+    "03": 56,
+    "04": 60,
+    "05": 61,
+    "06": 62,
+    "07": 58,
+    "08": 61,
+    "KN": 40
+   },
+   "lat": 37.739373,
+   "lon": -122.498992,
+   "name": "St. Gabriel Elementary School",
+   "parochial": true,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684786981773",
+   "grades": {
+    "01": 9,
+    "02": 11,
+    "03": 9,
+    "04": 17,
+    "05": 14,
+    "06": 9,
+    "07": 18,
+    "08": 17,
+    "KN": 11
+   },
+   "lat": 37.751345,
+   "lon": -122.423676,
+   "name": "St James School",
+   "parochial": true,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786997829",
+   "grades": {
+    "01": 47,
+    "02": 47,
+    "03": 47,
+    "04": 45,
+    "05": 48,
+    "06": 50,
+    "07": 55,
+    "08": 50,
+    "KN": 48
+   },
+   "lat": 37.794904,
+   "lon": -122.432524,
+   "name": "The Hamlin School",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684786999379",
+   "grades": {
+    "04": 5,
+    "05": 14,
+    "06": 16,
+    "07": 15,
+    "08": 27,
+    "09": 23,
+    "10": 24,
+    "11": 23,
+    "12": 28
+   },
+   "lat": 37.795892,
+   "lon": -122.404864,
+   "name": "Sterne School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684787019417",
+   "grades": {
+    "07": 2,
+    "08": 1,
+    "09": 5,
+    "10": 4,
+    "11": 4,
+    "12": 5
+   },
+   "lat": 37.750495,
+   "lon": -122.394874,
+   "name": "Arise Educational Center",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684787044605",
+   "grades": {
+    "KN": 16
+   },
+   "lat": 37.754966,
+   "lon": -122.437008,
+   "name": "Eureka Learning Center",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684787095755",
+   "grades": {
+    "01": 2,
+    "02": 5,
+    "03": 3,
+    "04": 1,
+    "05": 4,
+    "KN": 1
+   },
+   "lat": 37.783496,
+   "lon": -122.412406,
+   "name": "San Francisco City Academy",
+   "parochial": false,
+   "year": "2024-25"
+  },
+  {
+   "cds": "38684787096514",
+   "grades": {
+    "01": 38,
+    "02": 44,
+    "03": 35,
+    "04": 41,
+    "05": 41,
+    "06": 44,
+    "07": 41,
+    "08": 48,
+    "KN": 46
+   },
+   "lat": 37.763988,
+   "lon": -122.425053,
+   "name": "Children's Day School",
+   "parochial": false,
+   "year": "2025-26"
+  },
+  {
+   "cds": "38684787104466",
+   "grades": {
+    "04": 18,
+    "05": 20,
+    "06": 24,
+    "07": 23,
+    "08": 21
+   },
+   "lat": 37.781659,
+   "lon": -122.413344,
+   "name": "De Marillac Academy",
+   "parochial": true,
+   "year": "2025-26"
+  }
+ ],
+ "sources": {
+  "cde2425": "https://www.cde.ca.gov/ds/si/ps/documents/privateschooldata2425.xlsx",
+  "cde2526": "https://www.cde.ca.gov/ds/si/ps/documents/privateschooldata2526.xlsx",
+  "points": "https://data.sfgov.org/d/7e7j-59qk",
+  "read": "2026-10-19",
+  "tag": "[primary — read 2026-10-19]"
+ },
+ "totals": {
+  "carried": 14,
+  "carriedStudents": 4194,
+  "droppedStudents": 139,
+  "parochial": 24,
+  "schools": 106,
+  "students": 24178
+ }
+}

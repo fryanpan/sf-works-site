@@ -1,0 +1,45 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-02-07",
+ "id": "g55-42946",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42946",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/28143"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Welcome and introduction"
+  },
+  {
+   "no": "5",
+   "title": "Presentation and discussion of city financial projections and context and agency financial outlook"
+  },
+  {
+   "no": "6",
+   "title": "Presentation and panel discussion regarding building trust with our communities"
+  },
+  {
+   "no": "7",
+   "title": "Board Workshop Conclusion"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

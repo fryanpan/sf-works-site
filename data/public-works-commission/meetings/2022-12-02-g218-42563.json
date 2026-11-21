@@ -1,0 +1,108 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2022-12-02",
+ "id": "g218-42563",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42563",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "3a",
+   "title": "Adopt Minutes from the November 14, 2022 Meeting Minutes"
+  },
+  {
+   "no": "3b",
+   "title": "San Francisco City Hall Elevator Modernization – Award Construction Contract"
+  },
+  {
+   "no": "3c",
+   "title": "As-Needed Project Controls & Construction Management Services No. 1, Contract ID 1000024504 – Contract Modification"
+  },
+  {
+   "no": "3d",
+   "title": "As-Needed Project Controls & Construction Management Services No. 1, Contract ID 1000024507 – Contract Modification"
+  },
+  {
+   "no": "3e",
+   "title": "As-Needed Project Controls & Construction Management Services No. 1, Contract ID 1000024508 - Contract Modification"
+  },
+  {
+   "no": "3f",
+   "title": "As-Needed Mechanical Engineering Services No. 2, Contract ID 1000017179 – Contract Modification"
+  },
+  {
+   "no": "3g",
+   "title": "As-Needed Cost Estimating Services No. 4, Contract ID 1000022950 – Contract Modification"
+  },
+  {
+   "no": "3h",
+   "title": "As-Needed Cost Estimating Services No. 4, Contract ID 1000022952 – Contract Modification"
+  },
+  {
+   "no": "3i",
+   "title": "As-Needed Electrical Engineering Services No.2, Contract ID 1000013591 – Contract Modification"
+  },
+  {
+   "no": "3j",
+   "title": "As-Needed Electrical Engineering Services No.2, Contract ID 1000016279 – Contract Modification"
+  },
+  {
+   "no": "3k",
+   "title": "As-Needed Special Inspection and Testing Services No. 3, Contract ID 1000021329 – Contract Modification"
+  },
+  {
+   "no": "3l",
+   "title": "As-Needed Environmental Consulting Services, Contract ID 1000017852 - Contract Modification"
+  },
+  {
+   "no": "4",
+   "title": "Mission Branch Library Renovation – Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "As-Needed Architectural Services for Health Facilities No. 3 – Award Professional Services Contract"
+  },
+  {
+   "no": "6",
+   "title": "Overview of Infrastructure Design and Construction Bureau of Engineering"
+  },
+  {
+   "no": "7",
+   "title": "Public Works Commission Rules of Order"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Director Hiring Update"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment - Continued from Item 1 if necessary"
+  },
+  {
+   "no": "11",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

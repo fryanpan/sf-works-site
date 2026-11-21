@@ -1,0 +1,116 @@
+
+<h1>Where a permit waits</h1>
+<p class="lede">San Francisco publishes one figure per permit, and that figure
+combines three different things: time sitting in a queue, time actually under
+review, and time the applicant spends answering comments. Separating them changes
+what the number means and who it points at.</p>
+
+<p class="verdict">{{ allOverTargetPct }}%</p>
+<p class="verdict-note">of {{ all }} first plan reviews filed since {{ cutoff }}
+finished later than the city's own {{ targetDays }}-day target.</p>
+
+<h2>Waiting is not reviewing, and only one of them is the problem</h2>
+<p>Across every desk together, the median first review reaches a reviewer in
+{{ allQueueP50 }} days and then takes {{ allReviewP50 }} days to review. Even at the
+tail — the one review in ten that goes worst — it waits {{ allQueueP90 }} days and
+reviews in {{ allReviewP90 }}.</p>
+
+<p><strong>The queue is gone. The time is in review.</strong> That is the opposite
+of what the single published figure suggests, and it matters because the two have
+different fixes: a permit sitting in a queue needs routing, and a permit under
+review needs reviewers.</p>
+
+<h2>When the queue disappeared</h2>
+<p>A median of zero is what a data artifact usually looks like, so the next
+question is when it changed and whether the change is real. It is, and it
+happened in one year: {{ turnYear }}.</p>
+
+{{# cohortTable }}
+
+<p>Through {{ tensLastYear }} the typical permit waited between
+{{ tensQueueMin }} and {{ tensQueueMax }} days before a reviewer opened it, and
+the slowest one in ten waited up to {{ tensQueueP90Months }} months. The wait
+then fell steadily, reaching {{ declineEndQueueP50 }} days by
+{{ declineEndYear }}, and in {{ turnYear }} it
+dropped to {{ turnQueueP50 }} day. It has been {{ lastQueueP50 }} since, with the
+slowest one in ten at {{ lastQueueP90 }} days.</p>
+
+<p>Review time did not follow. It ran {{ tensReviewMin }} to
+{{ tensReviewMax }} days through {{ tensLastYear }}, rose as far as
+{{ declineReviewMax }} days in the years after, and has come back to
+{{ lastReviewP50 }} days — roughly where it started. Nothing in this series shows
+review getting faster. What changed is that the queue in front of it went
+away, which is why the review time is now the whole of the wait.</p>
+
+<div class="caveat">
+<p>Every cohort in that table is measured the same way, which is the only reason
+it can be read. A filing-year series is right-censored by default: a permit still
+sitting in a queue has no completion date, drops out of the count, and makes the
+recent years look faster than they are. So each year counts only first reviews
+that finished within {{ cohortWindowDays }} days of filing — the 2015 rows on the
+same terms as the 2025 rows. The queue collapse survives that correction, which
+is what makes it a change rather than an artifact.</p>
+<p>The same table carries its own corroboration in the last column: the share of
+filings finishing inside that window rose from {{ midKeptPct }}% in {{ midYear }} to
+{{ lastKeptPct }}% in {{ lastYear }}. More permits are finishing, and they are
+finishing sooner. A censoring artifact would show the opposite.</p>
+<p><em>What the data does not say is why.</em> It records dates, not decisions.
+The change lines up with the city's move to a new permitting system, but that
+is my reading, not something the dataset states.</p>
+</div>
+
+<h2>By desk</h2>
+<p>First reviews only, filed since {{ cutoff }}, at every desk with at least
+{{ minPerStation }} of them. Days are calendar days.</p>
+{{# stationTable }}
+
+<p>{{ worstStation }} is the sharpest case: {{ worstOverTargetPct }}% of its
+first reviews run past {{ targetDays }} days. Almost none of that is queue —
+a permit reaches the desk in {{ worstQueueP50 }} day at the median — and then
+takes {{ worstReviewP50 }} days to review, {{ worstReviewP90 }} at the tail.
+The desk is the constraint, not the route to it.</p>
+
+<div class="caveat">
+<p>Three things this table deliberately does not do. It counts only first
+reviews, because the filing date does not advance between rounds — computed
+across all rounds it reports a two-month queue everywhere, which is arithmetic
+and not a queue. It computes every span from the raw filing, arrival and
+completion dates rather than the city's published duration, which starts its
+clock at a different event depending on review type. And it drops desks with
+fewer than {{ minPerStation }} reviews, because below that a "one in ten" is
+just the single worst case.</p>
+<p>{{ unfinished }} reviews filed since {{ cutoff }} have not finished and
+are not counted anywhere above. They are, by definition, the slow ones.</p>
+</div>
+
+<h2>The online system, which is a different thing</h2>
+<p>Simple permits now go through an online system with a published target of
+{{ targetBizDays }} business days. That target covers {{ targetedTypeCount }}
+permit types out of {{ allTypes }} in the data. For the types it covers:
+median {{ withTargetP50 }} business days, one in ten at {{ withTargetP90 }},
+and <strong>{{ withTargetOverTargetPct }}%</strong> past the target.</p>
+{{# typeTable }}
+<p>Types without a badge have no published target, so none is applied to them
+here. The city has not set one.</p>
+
+<h2>What has teeth, and what does not</h2>
+<p>The {{ targetDays }}-day plan review figure and the {{ targetBizDays }}-day
+online target are both the city measuring itself. Missing them carries no
+consequence.</p>
+<p>State law is different. California Government Code §65913.3, added by AB 2234
+in 2022, sets deadlines in business days for post-entitlement permits on housing
+developments:</p>
+<div class="scroll"><table>
+  <thead><tr><th>Deadline</th><th class="num">Business days</th><th>Cite</th></tr></thead>
+  <tbody>{{# stateBenchmarkRows }}</tbody>
+</table></div>
+<p>Missing those puts the agency in violation of the Housing Accountability Act.
+That is the only consequence anywhere in this comparison with any force behind
+it — and it applies to a much narrower set of permits than the ones counted on
+this page, so the figures above are not a measure of compliance with it.</p>
+
+<h2>Why this page sits beside housing</h2>
+<p>Permit timing and <a href="/housing">housing output</a> are the same question
+at two ends of one pipeline: where housing stalls, and whether it arrives. A
+queue at a plan review desk and an affordable share that moved only because
+market-rate completions collapsed are two views of the same city.</p>

@@ -1,0 +1,196 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-07-13",
+ "id": "g22-38951",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38951",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2013%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes - June 8, 2021 Regular Meeting & June 11, 2021 Special Meeting"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6A",
+   "title": "Drought Update"
+  },
+  {
+   "no": "6B",
+   "title": "Wastewater Enterprise Quarterly Report Including Southeast Area Major Projects Update (1) Biosolids, (2) Headworks, and (3) 1550 Evans Southeast Community Center",
+   "text": "Wastewater Enterprise (WWE) Quarterly Report Including Southeast Area Major Projects Update (1) Biosolids, (2) Headworks, and (3) 1550 Evans Southeast Community Center Stephen Robinson, WWE Capital Programs Director, outline the overall project status and provided brief construction updates on: (1) Sunset Green Infrastructure Project (anticipated completion September 2021), (2) Mariposa Dry-Weather Pump Station and Force Main improvements (anticipated completion December 2022), and Southeast Plant (SEP) Power Feed and Primary Switchgear Upgrades (anticipated completion June 2024). He reviewed the Phase I status for the 70 projects in the Sewer System Improvement Program (SSIP) stating that as of March 2021 Phase I is 44.7% complete with 17 projects in construction. He discussed the SSIP cost summary and the facilities and infrastructure status cost summary. Director Robinson touched on capital programs highlights and reviewed: (1) project status for the Southeast Plant (SEP) Biosolids Digester Facilities Project. He stated that recent bids came in higher than expected and that the SFPUC suspended bid procurement activities to reassess bidding and the project delivery approach; (2) SEP New Headworks Facility Project. He noted a conflict with PG&E regarding and overhead cable around the western side of the facility (art wall) and stated that talks are taking place to resolve the conflict; and (3) Southeast Community Center 550 Evans, with hopes of earlier occupancy than expecte"
+  },
+  {
+   "no": "6C",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements None"
+  },
+  {
+   "no": "7",
+   "title": "New Commission Business",
+   "decision": "removed",
+   "text": "New Commission Business None. The Commission Secretary announced that Consent Item 8h was removed from the calendar and would be rescheduled"
+  },
+  {
+   "no": "8a",
+   "title": "Approve Modification No. 1 to Job Order Contract, JOC-78R, Micro-LBE Set Aside, General Engineering (A-License) San Joaquin, Stanislaus and Tuolumne Counties, with Peterson Excavation, Inc., to complete ongoing facility and asset improvements, increasing the contract amount by $1,000,000 for a total not-to- exceed contract amount of $3,000,000, and increasing the contract duration by three years for a total contract duration of five years, in accordance with San Francisco Administrative Code 6.62(h)",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0101",
+   "from": "minutes"
+  },
+  {
+   "no": "8b",
+   "title": "Accept work performed by Ranger Pipelines Inc. for Contract No. WD-2829R, San Andreas Pipeline No. 2 Replacement; approve Modification No. 20 (Final), decreasing the contract amount by $570,418 for a total contract amount of $32,758,582, with no change to the contract duration of 730 consecutive days; and authorize final payment to the contractor",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0102",
+   "from": "minutes"
+  },
+  {
+   "no": "8c",
+   "title": "Approve an increase of $300,000 to the contract cost contingency and an increase of 365 calendar days to the contract duration contingency for Contract No. WD-2854A, 525 Golden Gate Avenue Roof Access and Fall Protection; and authorize the General Manager to approve future modifications to the contract for a total contract amount of up to $917,186 and a total contract duration of up to 750 consecutive calendar days",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0103",
+   "from": "minutes"
+  },
+  {
+   "no": "8d",
+   "title": "Approve an increase of 250 consecutive calendar days to the contract duration contingency for Contract No. WD-2854B,525 Golden Gate Avenue Tower Access and Fall Protection; and authorize the General Manager to approve future modifications to the contract for a total contract duration of up to 448 consecutive calendar days with no change to the contract amount",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0104",
+   "from": "minutes"
+  },
+  {
+   "no": "8e",
+   "title": "Accept work performed by Cal State Constructors for Contract No. WW-664, North Point Wet Weather Facility Sedimentation Tank Influent Gate Upgrades; approve Modification No. 5 (Final), decreasing the contract amount by $20,037, for a total contract amount of $2,917,876, with no change to the contract duration of 785 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0105",
+   "from": "minutes"
+  },
+  {
+   "no": "8f",
+   "title": "Accept work performed by Trinet Construction, Inc., for Contract No. WW-683R, Sansome, 5th, 6th (North), and Division Streets Combined Sewer Discharge Rehabilitation and Backflow Prevention; approve Modification No. 11 (final) increasing the contract amount by $14,802 for additional work at the Sansome ceiling and influent columns for a total contract amount of $6,611,833, and increasing the contract duration by 26 consecutive calendar days for a total contract duration of 587 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0106",
+   "from": "minutes"
+  },
+  {
+   "no": "8g",
+   "title": "Accept work performed by Precision Engineering, Inc. for Contract No. WW-692, As-Needed Spot Sewer Replacement No. 39, approve Modification Nos. 1 and 2 (Final), decreasing the contract amount by $6,021,664, for a total contract amount of $2,155,296, with no change to the contract duration; and authorize final payment to the contractor",
+   "parent": "Consent Calendar:",
+   "decision": "approve Consent Calendar, excluding 8h",
+   "resolution": "21-0107",
+   "from": "minutes"
+  },
+  {
+   "no": "8h",
+   "title": "Approve the plans and specifications, and award Contract No. WW-714, Ocean Beach Climate Change Adaptation, Short-term Erosion Mitigation, in the amount of $3,134,000, and with a duration of 1,095 consecutive calendar days to the responsible bidder submitting the lowest responsive bid, Minerva Construction, Inc. to provide coastal erosion mitigation and protect critical wastewater treatment infrastructure, facilities, at the beach south of Sloat Boulevard to Skyline Boulevard within the City and County of San Francisco",
+   "parent": "Consent Calendar:",
+   "decision": null,
+   "resolution": null,
+   "from": "minutes",
+   "severed": true
+  },
+  {
+   "no": "9",
+   "title": "Authorize the General Manager to execute a Memorandum of Understanding with the San Francisco Airport Commission",
+   "decision": "approve Consent Calendar item 9",
+   "resolution": "21-0108",
+   "text": "Authorize the General Manager to execute a Memorandum of Understanding with the San Francisco Airport Commission in an amount not-to-exceed $3,800,000 with a term of one year and 11 months, for SFPUC to fund consulting services and engineering design work for the development and environmental review of the Electric Capacity Upgrade Program to increase capacity and improve redundancy at the two SFPUC- owned airport substations, Airport Substation and Substation MA. Barbara Hale, AGM Power, stated the MOU will support the Airport with their improvements and will allow the SFPUC to help coordinate consulting services for electrical capacity upgrades"
+  },
+  {
+   "no": "10",
+   "title": "Adopt an Untreated Wholesale Water Discount Factor of $0.36 per one hundred cubic feet for FY 2021-22 to be applied to Wholesale Customer Coastside County Water District (CCWD)",
+   "decision": "approve Consent Calendar item 10",
+   "resolution": "21-0109",
+   "text": "Adopt an Untreated Wholesale Water Discount Factor of $0.36 per one hundred cubic feet for FY 2021-22 to be applied to Wholesale Customer Coastside County Water District (CCWD), in accordance with the terms of the 2009 Water Supply Agreement between the City and County of San Francisco and the Wholesale Customers, as amended and re-stated on December 11, 2018 by Resolution No. 18-0212, and the SFPUC’s individual water sales contract with CCWD. Christina Cordero, Director of Financial Planning, introduced the item and requested approval"
+  },
+  {
+   "no": "11",
+   "title": "Adopt findings declaring as surplus to the SFPUC’s utility needs per Charter Section 8B.121 and as “surplus land” and “exempt surplus land”",
+   "decision": "approve Consent Calendar item 11",
+   "resolution": "21-0110",
+   "text": "Adopt findings declaring as surplus to the SFPUC’s utility needs per Charter Section 8B.121 and as “surplus land” and “exempt surplus land” under the California Surplus Land Act approximately 262,553 square feet of unimproved agricultural property designated as a portion of SFPUC Parcel No. 65 and also designated as portions of Assessor Parcel Nos. 96-375-12-2, 96-375-6-11, 96-375-7-3, and 96-375-6-8 in unincorporated Alameda County owned by the City and County of San Francisco under the jurisdiction of the San Francisco Public Utilities Commission; recommend to the Board of Supervisors approval of the Agreement for the sale and purchase of 262,553 square feet of unimproved land, 186,754 square feet of easement interests, and 1,609.09 linear feet of abutters rights in SFPUC Parcel No. 65 (cumulatively, the Property) for $152,952 total to the State of California Department of Transportation (Caltrans) and the Alameda County Transportation Commission (Alameda CTC) and authorization of the City’s Director of Property and/or the SFPUC General Manager to execute deeds conveying fee, easement interests, and abutter’s rights interests in the Property to Caltrans and the Alameda CTC; and authorize the General Manager to execute the Sale Agreement upon approval from the Board of Supervisors and Mayor. Acting GM Carlin indicated this item would allow a sale to Caltrans a portion of SFPUC property along State Route 84 for road upgrades to meet expressway standards and for a utility ease"
+  },
+  {
+   "no": "12",
+   "title": "Authorize the General Manager to execute Memoranda of Understanding with San Francisco Public Works (SFPW) for the San Francisco Public Utilities Commission’s use of a portion of SFPW property",
+   "decision": "approve Consent Calendar item 12",
+   "resolution": "21-0111",
+   "text": "Authorize the General Manager to execute Memoranda of Understanding No-4453 and No-4454 with San Francisco Public Works (SFPW) for the San Francisco Public Utilities Commission’s use of a portion of SFPW property, located at 2323 Cesar Chavez Street in San Francisco, to construct a sewer tunnel and appurtenant facilities for the Kansas and Marin Streets Sewer Improvements Project, and for related temporary construction staging for a period of 20 months, with an option to extend for six months, at no cost to the SFPUC. Derek Adams, Project Manager, stated this is Phase II of the project and noted the work to be completed. He stated that there will be micro-tunneling rather than trenching due to the crossing of the vehicle entrance at the 24-hour Public Works Yard. He reviewed the project schedule and discussed the need for the two separate MOUs"
+  },
+  {
+   "no": "13",
+   "title": "Approve the selection of MCK Americas, Inc. (MCK), the sole responsive, responsible, and qualified proposer; award Agreement No. PRO.0181",
+   "decision": "approve Consent Calendar item 13",
+   "resolution": "21-0112",
+   "text": "Approve the selection of MCK Americas, Inc. (MCK), the sole responsive, responsible, and qualified proposer; award Agreement No. PRO.0181, Westside Pump Station Construction Management Staff Augmentation Services, to provide construction management personnel to assist in managing the construction of the Westside Pump Station Reliability Improvements Project; and authorize the General Manager to negotiate and execute a professional services agreement with MCK for an amount not- to-exceed $3,300,000, and a duration of three years. Mario Valdez, Contracts Manager, stated that three proposals were received and that prior to the evaluation phase beginning, minimum qualification reviews are conducted. He discussed the review process and the reasoning for two of the responders being deemed as non-responsive and not being moved to full evaluation. VP Moran expressed frustration with $10M contracts that go out without effective competitive bidding. He stated that we have not worked with the bidders well enough for them to respond correctly. VP Moran noted a similar contact was closed-out under the Consent Calendar with $6M unexpended and questioned why the other contract wasn’t used to complete the work, making the subject contract a lesser amount to get competitive bids. Mr. Valdez indicated this project is a contract-specific RFP for the Westside Pump Station to be funded by that project. VP Moran clarified that is comments relate to item 14 rather than this project. In response to "
+  },
+  {
+   "no": "14",
+   "title": "Approve the plans and specifications, and award Contract No. WW-699, As-Needed Spot Sewer Replacement No. 42",
+   "decision": "approve Consent Calendar item 14",
+   "resolution": "21-0113",
+   "text": "Approve the plans and specifications, and award Contract No. WW-699, As-Needed Spot Sewer Replacement No. 42, in an amount not-to-exceed $10,176,957, and with a duration of 400 consecutive calendar days, to the sole, qualified, responsible bidder, J. Flores Construction Company, Inc., in accordance with San Francisco Administrative Code 6.23(c)(2), to replace sections of existing sewer piping, on an as-needed basis, at locations to be determined throughout the City of San Francisco. Aileen Caylao, Project Manager, discussed the work to be conducted at various locations, which are to be determined throughout San Francisco. In response to a question from Commissioner Paulson, Ms. Caylao indicated in that the work is for replacement of short segments, as needed, and provided examples of work. VP Moran returned to his comments made under Item 13 and questioned why an existing contract with unexpended funds was not used to complete the work, making the subject contract a lesser amount to get competitive bids. Alan Johanson, Acting AGM Infrastructure, noted the contractor had a significant backlog, was unable to keep up with the work, and that it was not a process they could facilitate. VP Moran indicated the work is for an on-going need and that the lack of competitive procurement is frustrating. He stated that as a general matter, something is missing, that the skill sets can be accommodated by multiple contractors, and that the bidding and scheduling process needs to be reviewed"
+  },
+  {
+   "no": "15",
+   "title": "Authorize the General Manager to negotiate a contract scope of work and price reduction of greater than 10% for Contract No. WW-647R",
+   "text": "Authorize the General Manager to negotiate a contract scope of work and price reduction of greater than 10% for Contract No. WW-647R, Southeast Water Pollution Control Plant Biosolids Digester Facilities Project (BDFP) with Construction Manager/General Contractor, MWH Constructors/Webcor Builders Joint Venture, to provide flexibility to use alternative delivery methods to achieve the overall BDFP objectives and scope of work, and if negotiations are successful, return for Commission approval of such scope and price reduction through either a contract modification or partial termination for convenience. President Maxwell stated that the Commission needed the opportunity to hear the item and discuss prior to taking any action, and that the item would not be considered for action at the meeting. Acting AGM Johanson introduced the item and Carolyn Chiu, Biosolids Project Manager, who indicated that construction is well underway. She stated the earlier bids received were on or below budget, but over the last few months the bids received were higher than the budget. She provided a comparison of bids received for Electrical and Mechanical Installation Package Number 1. She stated that bid procurement was suspended while staff re-thought bidding strategy and delivery approach. She indicated the need for better cost certainty: (1) biosolids project is large and complex, (2) benefits of a CM/CG approach have not been realized in this contract, (3) ability to navigate post-pandemic mark"
+  },
+  {
+   "no": "16",
+   "title": "Report out from June 11, 2021 Closed Session",
+   "text": "Report out from June 11, 2021 Closed Session President Maxwell announced that at the Special Meeting of June 11, 2021, Closed Session, the Commission unanimously voted to forward the name of Mr. Dennis Herrera, as nominee for the position of SFPUC General Manager"
+  },
+  {
+   "no": "17",
+   "title": "Public comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion on whether to conduct the items below in closed session CLOSED SESSION"
+  },
+  {
+   "no": "22",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session. President Maxwell announced that no action was taken during Closed Session"
+  },
+  {
+   "no": "23",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)",
+   "decision": "not to disclose the discussions during Closed Session"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

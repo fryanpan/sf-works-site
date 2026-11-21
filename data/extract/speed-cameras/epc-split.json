@@ -1,0 +1,61 @@
+{
+ "boundary_sites": [
+  "MTAF006",
+  "MTAF031",
+  "MTAF032",
+  "MTAF036",
+  "MTAF056",
+  "MTAF057"
+ ],
+ "injuries": {
+  "epc": {
+   "locations": 9.5,
+   "near_after": 280.0,
+   "near_before": 271.5,
+   "ped_near_after": 34.0,
+   "ped_near_before": 42.0,
+   "site_after": 74.5,
+   "site_before": 74.0
+  },
+  "other": {
+   "locations": 23.5,
+   "near_after": 336.0,
+   "near_before": 425.5,
+   "ped_near_after": 38.0,
+   "ped_near_before": 77.0,
+   "site_after": 64.5,
+   "site_before": 93.0
+  }
+ },
+ "meta": {
+  "dates": [
+   "2025-04-01",
+   "2026-06-30"
+  ],
+  "epc_tracts": 60,
+  "rows": 22592,
+  "tracts": 242
+ },
+ "notices": {
+  "epc": {
+   "citations": 113496.0,
+   "sites": 14.0,
+   "warnings": 207097.5
+  },
+  "other": {
+   "citations": 123010.0,
+   "sites": 42.0,
+   "warnings": 378370.5
+  },
+  "top_site": {
+   "epc": 1.0,
+   "notices": 165941,
+   "site_id": "MTAF037"
+  }
+ },
+ "population": {
+  "epc": 180535,
+  "other": 649700,
+  "year": 2024
+ }
+}

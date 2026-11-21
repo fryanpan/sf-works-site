@@ -1,0 +1,56 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-02-01",
+ "id": "g55-40434",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40434",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Communications"
+  },
+  {
+   "no": "5",
+   "title": "Welcome and introduction"
+  },
+  {
+   "no": "6",
+   "title": "Presentation and discussion of financial projections and context February 1, 2022, 10:40 AM – SPECIAL ORDER"
+  },
+  {
+   "no": "7",
+   "title": "Small-group presentations and discussion of services and programs where the agency may focus resources"
+  },
+  {
+   "no": "8",
+   "title": "Presentation and discussion on use of agency funding to address opportunities and challenges"
+  },
+  {
+   "no": "9",
+   "title": "Presentation and discussion of next steps in the budget process and upcoming hearings"
+  },
+  {
+   "no": "10",
+   "title": "Presentation and discussion regarding the legal responsibilities of the SFMTA"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

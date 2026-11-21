@@ -1,0 +1,124 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2023-10-24",
+ "id": "g22-44737",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=44737",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/October%2024%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of October 10, 2023",
+   "decision": "approve the Minutes of October 10, 2023"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements General Manager (GM) Herrera announced the passing of former SFPUC Deputy General Manager Tony Irons, and former Deputy City Attorney Donn Furman. He highlighted their distinguished careers and contributions to the City and County of San Francisco. Commissioner Stacy discussed her working relationship with Mr. Furman and his important work at the City Attorney’s Office. She noted his love of the outdoors. She discussed Mr. Iron’s commitment to public service and honored his contributions to the city"
+  },
+  {
+   "no": "6",
+   "title": "Bay Area Water Supply and Conservation Agency Update",
+   "text": "Bay Area Water Supply and Conservation Agency Update Nicole Sandkulla, Bay Area Water Supply and Conservation Agency (BAWACA) CEO congratulated President Paulson and Vice President (VP) Rivera as the new Commission officers. She discussed a letter she sent to the Commission and discussed the first three findings and (BAWSCA’s recommendations): (1) There is a need for a Notice of Change given identified"
+  },
+  {
+   "no": "7",
+   "title": "Approve the Revised Water Supply Assessment for the proposed 3251 20th Avenue (Stonestown) Project",
+   "decision": "approve Item 7",
+   "resolution": "23-0194",
+   "text": "Approve the Revised Water Supply Assessment for the proposed 3251 20th Avenue (Stonestown) Project, pursuant to the State of California Water Code Section 10910, et seq., California Environmental Quality Act (CEQA) Section 21151.9, and CEQA Guidelines Section 15155. Steve Ritchie, Assistant General Manager (AGM) Water Enterprise indicated the staff request is for approval of a revised Water Supply Assessment (WSA) for the 3251 20th Avenue (Stonestown) Project due to (1) a change in the project variance; and (2) updates to projected water demands associated with the housing element. He emphasized that the WSA is legally required for determination that water is available for the project and that Commission approval is for the WSA only. Project approval is done by the Planning Commission"
+  },
+  {
+   "no": "8",
+   "title": "Communications"
+  },
+  {
+   "no": "8a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "8b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "8c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "8d",
+   "title": "Annual Multi-Enterprise Climate Program Update"
+  },
+  {
+   "no": "8e",
+   "title": "O’Shaughnessy Dam Reservations Quarterly Report"
+  },
+  {
+   "no": "8f",
+   "title": "Power Quarterly Report on Delegated Authority Contracts Pursuant to Administrative Code Section 21.43"
+  },
+  {
+   "no": "8g",
+   "title": "Quarterly Report on Contracts Awarded by the General Manager Pursuant to Delegated Authority"
+  },
+  {
+   "no": "8h",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "9",
+   "title": "Items initiated by Commissioners (discussion only)"
+  },
+  {
+   "no": "10",
+   "title": "Public Comment on the matter to be addressed during Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matter listed below as Conference with Legal Counsel CLOSED SESSION",
+   "decision": "assert the attorney client privilege regarding the matters listed as Conference with"
+  },
+  {
+   "no": "12",
+   "title": "CONFERENCE WITH LABOR NEGOTIATOR",
+   "text": "CONFERENCE WITH LABOR NEGOTIATOR (Government Code Section 54957.6 and Administrative Code Section 67.10(e)): Designated representative: Commissioner Sophie Maxwell Unrepresented Employee: General Manager Anticipated issues under negotiation: Compensation (discussion only) The Commission exited Closed Session at 3:43 pm"
+  },
+  {
+   "no": "13",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session President Paulson announced that no action was taken during Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session",
+   "decision": "not to disclose the discussions during Closed Session",
+   "text": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  },
+  {
+   "no": "15",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

@@ -1,0 +1,36 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-11-30",
+ "id": "g22-37186",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37186",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "RollCall"
+  },
+  {
+   "no": "3",
+   "title": "Overview of the SFPUC’s Tuolumne River Water Rights and its Legal Obligations Under the Raker Act"
+  },
+  {
+   "no": "4",
+   "title": "Legal Framework and Scientific Basisfor the Water Quality Control Plan for the San Francisco Bay/Sacramento-San Joaquin Delta Estuary"
+  },
+  {
+   "no": "5",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

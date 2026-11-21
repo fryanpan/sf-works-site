@@ -1,0 +1,108 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-07-20",
+ "id": "g55-39013",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39013",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/24594"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of June 10, 15, & 30, 2021 Meetings",
+   "decision": "APPROVED"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Making environmental review findings and approving the following parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 210720-088)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending Transportation Code to add Liebig Street to the list of streets restricting use by a commercial vehicle",
+   "decision": "ADOPTED — 7 ayes (Resolution 210720-089)"
+  },
+  {
+   "no": "10.3",
+   "title": "Amending Transportation Code to allow the pass-through amount that a taxicab driver may charge passengers for taxicab trips originating at San Francisco International Airport",
+   "decision": "ADOPTED — 7 ayes (Resolution 210720-090)"
+  },
+  {
+   "no": "11",
+   "title": "Modifying the boundaries of Residential Permit Parking (RPP) Areas R and S in the Hayes Valley neighborhood, and approving time-limited and metered parking restrictions",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Amending to designate full-time transit-only areas on the segments on Geary Boulevard and making environmental review findings",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a transit fleet update"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding transit service restoration"
+  },
+  {
+   "no": "15",
+   "title": "Presentation and discussion regarding SFMTA Security, Investigations & Enforcement and Muni Security Incidents"
+  },
+  {
+   "no": "16",
+   "title": "Presentation and discussion regarding the Vision Zero Action Strategy Update"
+  },
+  {
+   "no": "17",
+   "title": "Presentation and discussion regarding a fiscal and management update including the 2020 State of Good Repair Report"
+  },
+  {
+   "no": "18",
+   "title": "Presentation and discussion regarding ConnectSF Investment Strategies"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

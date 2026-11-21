@@ -1,0 +1,1756 @@
+{
+ "generated": "2026-11-10T03:35:22",
+ "years": "2019\u20132026",
+ "terms": [
+  "bikeway",
+  "bicycle lane",
+  "bike lane",
+  "bicycle facility",
+  "street vacation",
+  "traffic calming",
+  "Vision Zero",
+  "quick-build",
+  "speed limit",
+  "encroachment",
+  "street renaming",
+  "sidewalk widening",
+  "streetscape",
+  "Slow Streets",
+  "car-free",
+  "street closure",
+  "transit-only",
+  "road diet",
+  "pedestrian safety",
+  "Better Streets",
+  "traffic signal",
+  "crosswalk",
+  "curb ramp",
+  "bicycle network"
+ ],
+ "counts": {
+  "bikeway": 96,
+  "bicycle lane": 37,
+  "bike lane": 99,
+  "bicycle facility": 18,
+  "street vacation": 129,
+  "traffic calming": 149,
+  "Vision Zero": 288,
+  "quick-build": 48,
+  "speed limit": 57,
+  "encroachment": 441,
+  "street renaming": 17,
+  "sidewalk widening": 72,
+  "streetscape": 581,
+  "Slow Streets": 87,
+  "car-free": 57,
+  "street closure": 63,
+  "transit-only": 87,
+  "road diet": 5,
+  "pedestrian safety": 342,
+  "Better Streets": 176,
+  "traffic signal": 141,
+  "crosswalk": 142,
+  "curb ramp": 71,
+  "bicycle network": 65
+ },
+ "capped": {
+  "streetscape": [
+   "2020: Discussion"
+  ]
+ },
+ "files": 1630,
+ "addressOnly": 2,
+ "offTopic": 1501,
+ "unparsed": [
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4630830&GUID=A4507D7C-74A7-4729-9CCB-44B719157E75&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4553871&GUID=4E70B526-9A85-4641-9CF2-39882548436F&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4066895&GUID=17568E08-B2FD-43B2-9A7E-806021A72012&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7441047&GUID=108663A3-61B2-43C4-B302-2C9D0111D257&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8291075&GUID=C1A8FDB0-DCCE-41B2-987E-9B94452759BE&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4288173&GUID=13F6758F-1F99-471D-AE17-B86760E71DAC&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4061030&GUID=6C12F978-BF0C-4163-900E-F24CA69D9DE7&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=3839621&GUID=8C0B7480-5C08-4D17-90D3-666D811D257B&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4654188&GUID=59EE36B3-BFCD-49CD-8960-B775AA3234BD&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5705857&GUID=7D8D83B0-73D9-47F8-96C5-80F9B8EFF6E4&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7433788&GUID=803CE2DF-B991-4FD9-A371-542D5F41D0F3&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7424048&GUID=4771904C-F20B-4382-93D8-DF76881EA441&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4077302&GUID=BEC12EF9-BE21-4DA0-B5D7-B63578798CFF&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4543263&GUID=896ADA50-A5F0-48AD-A0A0-BFE5EAEA75AD&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4620922&GUID=31B06760-D06F-4CC1-8083-38C7A98B607E&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4330356&GUID=934FF6CF-6E0A-4C7F-B148-81768F8BEC94&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6029047&GUID=4746ECF7-1A48-4EDD-A479-D6E15FC6EDD1&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4942399&GUID=574F4742-BEBF-443B-8EC5-90BB11328F0A&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4914562&GUID=706CFE96-C7CD-440B-B832-037008A91217&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5548590&GUID=7C2C4AA7-C8FC-43B6-9A29-52D0F0522C53&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6031616&GUID=A40ABF87-202C-485B-98D2-30F78BAF6179&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4986239&GUID=B3E8A440-66E0-4C73-82AC-339E6E95DEC5&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4921597&GUID=11F00FF7-C828-49A7-B163-7D93408A6F8D&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5018176&GUID=FABA4860-30EF-4B79-B9AB-DFAA1B20E2CB&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4151762&GUID=A04CD8EE-0A6A-4D31-9A56-3D348CFCA507&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4290538&GUID=2996A264-AD83-4D4A-9699-200AD941152D&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5143819&GUID=BE54F7B9-1DD0-4D69-B65E-23FF22D4DF8D&FullText=1",
+  "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8063669&GUID=ADE46081-2665-4770-A010-8DAE58370FCE&FullText=1"
+ ],
+ "matches": [
+  {
+   "kind": "supervisors",
+   "date": "2026-09-29",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2026-10-02",
+   "item": "260873",
+   "title": "Ordinance taking various actions related to the Transbay Under Ramp Park Project, including affirming the determination of the Office of Community Investment and Infrastructure under the California Environmental Quality Act related to the actions in this Ordinance; ordering the summary street vacation of portions of Oscar Alley bounded by Tehama, Clementina, 1st, and 2nd Streets that were not previously vacated; finding the street vacation area is not necessary for the City\u2019s use and is exempt surplus property under the California Surplus Land Act; quitclaiming the City\u2019s interest in the stree",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8156779&GUID=66881DAB-DDC1-460A-BC06-7502A09DE548&FullText=1",
+   "streets": [
+    "oscar aly",
+    "tehama st",
+    "clementina st",
+    "1st st",
+    "2nd st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "bicycle lane",
+    "street vacation",
+    "encroachment",
+    "sidewalk widening",
+    "streetscape",
+    "street closure",
+    "pedestrian safety",
+    "Better Streets",
+    "traffic signal"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2026-07-14",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2026-07-23",
+   "item": "260541",
+   "title": "Ordinance waiving the street encroachment permit fee and annual public right-of-way occupancy fee for a project sponsor to install and maintain a waste bin enclosure on the sidewalk adjacent to the Harry Street Steps at the intersection of Laidley and Harry Streets in the Upper Noe and Diamond Heights neighborhood; and affirming the Planning Department\u2019s determination under the California Environmental Quality Act.",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8037407&GUID=B7EDC543-6605-407A-A1BD-53B45F9A7404&FullText=1",
+   "streets": [
+    "harry st",
+    "laidley st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2026-06-09",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2026-06-11",
+   "item": "260398",
+   "title": "Ordinance appropriating $195,000,000 of General Obligation (GO) Bond proceeds from Series 2026A Healthy, Safe, and Vibrant SF GO Bonds to the Department of Public Health (DPH), Department of Public Works (DPW), Recreation and Park Department (REC), and the San Francisco Municipal Transportation Agency (MTA) for acquisition and improvement of real property for various healthcare, nursing, and mental health facilities; certain transportation, pedestrian, street safety-related capital improvements, streetscape enhancements and other public space improvements, and related costs in Fiscal Year (FY)",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7986180&GUID=774952B3-2FB9-4D19-B762-9A16814BF1B8&FullText=1",
+   "streets": [
+    "pedestrian st"
+   ],
+   "terms": [
+    "streetscape"
+   ],
+   "foundBy": [
+    "sidewalk widening",
+    "streetscape"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2026-02-24",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2026-02-27",
+   "item": "250814",
+   "title": "Ordinance ordering the summary street vacation of City property on unimproved street areas of Moraga and Noriega Avenues; finding the street vacation area is not necessary for the City\u2019s use; reserving easements related to support for the City-owned retaining wall from the street vacation properties and including other conditions to the street vacation; amending the Planning Code and Zoning Map to rezone the City property identified as Assessor\u2019s Parcel Block No. 2042, Lot No. 039, from P (Public) and RH-2 (Residential Housing Two-Family)/OS (Open Space) to RH-2/40-X and Assessor\u2019s Parcel Bloc",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7501539&GUID=322A7896-EDD2-4AB6-A3B8-6D8C31259371&FullText=1",
+   "streets": [
+    "unimproved st",
+    "moraga ave",
+    "noriega ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation",
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2026-02-03",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2026-02-13",
+   "item": "251232",
+   "title": "Resolution amending the street encroachment permit terms for Maiden Lane regarding the designated permittee and permissible activities; amending and rescinding the Board of Supervisors\u2019 authorization for the street closure of Maiden Lane between Stockton and Kearny Streets and urging the San Francisco Municipal Transportation Agency Board of Directors to modify the street closure hours for such streets; and authorizing the Public Works Director to finalize a modified street encroachment permit for Maiden Lane.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7781551&GUID=B155FE5D-485A-4529-93D3-4DAB3A1BE75C&FullText=1",
+   "streets": [
+    "maiden ln",
+    "stockton st",
+    "kearny st",
+    "modified st"
+   ],
+   "terms": [
+    "encroachment",
+    "street closure"
+   ],
+   "foundBy": [
+    "encroachment",
+    "street closure"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2026-01-13",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2026-01-23",
+   "item": "250824",
+   "title": "Ordinance ordering the vacation of portions of Hawes Street, Griffith Street, and Bancroft Avenue for the development of the San Francisco Fire Department Training Facility at 1236 Carroll Avenue; reserving public utility and access rights in favor of the City and easement rights for existing PG&E overhead electrical facilities; approving the interdepartmental transfer of the street vacation area from Public Works to the Fire Department; authorizing official acts in connection with this Ordinance; affirming the Planning Department\u2019s determination under the California Environmental Quality Act;",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7501547&GUID=7E7002C4-F82A-4652-9352-9D4EB968F261&FullText=1",
+   "streets": [
+    "hawes st",
+    "griffith st",
+    "bancroft ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2026-01-06",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2026-01-06",
+   "item": "250822",
+   "title": "Hearing of the Board of Supervisors sitting as a Committee of the Whole on January 6, 2026, at 3:00 p.m., to hold a public hearing on an Ordinance ordering the vacation of portions of Hawes Street, Griffith Street, and Bancroft Avenue for the development of the San Francisco Fire Department Training Facility at 1236 Carroll Avenue; reserving public utility and access rights in favor of the City and easement rights for existing PG&E overhead electrical facilities; approving the interdepartmental transfer of the street vacation area from Public Works to the Fire Department; authorizing official",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7781535&GUID=CF43D9B1-88A3-4D52-A58E-AA7DA6D66B7D&FullText=1",
+   "streets": [
+    "hawes st",
+    "griffith st",
+    "bancroft ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-10-21",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2025-10-27",
+   "item": "250802",
+   "title": "Ordinance approving a major encroachment permit for EQX Jackson SQ Holdco LLC to occupy portions of Merchant Street between Sansome and Battery Streets adjacent to 425 Washington Street, 439-445 Washington Street, and 530 Sansome Street (Assessor\u2019s Parcel Block No. 0206, Lot Nos. 013, 014, and 017) for the purpose of installing and maintaining decorative roadway and sidewalk paving, tabletop crosswalks, overhead string lighting, various pedestrian- and bike-oriented improvements, other non-standard infrastructure, and new street trees; waiving certain requirements under Public Works Code, Sect",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7501527&GUID=69CFE7E0-AA4A-433C-8B5B-09F55B6A0E06&FullText=1",
+   "streets": [
+    "merchant st",
+    "sansome st",
+    "battery st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment",
+    "Better Streets"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-07-23",
+   "dateBasis": "final action; no meeting acted on the file",
+   "finalAction": "2025-07-23",
+   "item": "250429",
+   "title": "Resolution authorizing the Recreation and Park Department (RPD) to accept and expend grant funds in the amount of $750,000 from the Metropolitan Transportation Commission (MTC) for the Visitacion Avenue Bicycle and Pedestrian Safety Improvement Project for a grant performance period from Grant contract execution through August 30, 2029; approving the Grant contract with MTC that requires RPD to operate and maintain the project for a period of 20-years commencing upon project completion, pursuant to Charter, Section 9.118(b); and authorizing the RPD General Manager to enter into amendments or m",
+   "type": "Resolution",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed without a hearing",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7353454&GUID=A66CA514-CF18-44C8-888F-C39C3B62D28E&FullText=1",
+   "streets": [
+    "visitacion ave"
+   ],
+   "terms": [
+    "pedestrian safety"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bicycle facility",
+    "pedestrian safety",
+    "crosswalk"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-06-03",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2025-06-06",
+   "item": "250349",
+   "title": "Ordinance appropriating a total of $194,000,000 of General Obligation (GO) Bond proceeds from Series 2025F Healthy, Safe, and Vibrant SF GO Bonds to Department of Public Health (DPH), Department of Public Works (DPW), and the Municipal Transportation Agency (MTA) for acquisition and improvement of real property for healthcare, nursing, and mental health facilities; transportation, pedestrian, street safety-related capital improvements, streetscape enhancements, and other public space improvements; and placing these funds on Controller\u2019s Reserve pending receipt of bond proceeds in Fiscal Year (",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7299217&GUID=C535316B-3A6E-4F99-8175-3BE42B8E3F39&FullText=1",
+   "streets": [
+    "pedestrian st"
+   ],
+   "terms": [
+    "streetscape"
+   ],
+   "foundBy": [
+    "streetscape",
+    "traffic signal",
+    "curb ramp"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-05-13",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2025-05-16",
+   "item": "250425",
+   "title": "Ordinance amending the Public Works Code to waive the Tier 3 Love Our Neighborhoods major encroachment permit fee for a project to install the Detroit Street Steps Archway in the Sunnyside neighborhood that will create a gateway for the Detroit Street Steps Project; amending the Administrative Code to waive the Board of Appeals surcharge for this permit; and affirming the Planning Department\u2019s determination under the California Environmental Quality Act.",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7353450&GUID=C617EEB3-1D32-43AD-9774-9B8C35F4AD6C&FullText=1",
+   "streets": [
+    "detroit st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-04-22",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2025-05-02",
+   "item": "250188",
+   "title": "Ordinance granting a revocable master encroachment permit to Mission Rock Utilities, Inc., a Delaware corporation, to maintain encroachments on and beneath the public right-of-way on portions of Terry A. Francois Boulevard, Bridgeview Way, Dr. Maya Angelou Lane, Toni Stone Crossing, Third Street, and Long Bridge Street within and adjacent to the Mission Rock Special Use District, which encroachments include but are not limited to non-potable water systems, gravity and force main sewer systems, heating and chilled water systems, and conduits for fiber optic cable for purposes of communications",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7158848&GUID=2868F2C4-81F4-4537-ADC4-DDBD3167B133&FullText=1",
+   "streets": [
+    "francois blvd",
+    "bridgeview way",
+    "maya angelou ln",
+    "angelou ln",
+    "stone crossing 3rd st",
+    "3rd st",
+    "long bridge st",
+    "bridge st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment",
+    "pedestrian safety",
+    "traffic signal"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-04-15",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2025-04-25",
+   "item": "250285",
+   "title": "Resolution granting revocable permission to the Port to maintain encroachments in the public right-of-way, including but not limited to non-standard roadway and sidewalk treatments, stormwater drainage elements and infrastructure, street furnishings, public art installations, custom benches and trash receptacles, non-standard way-finding signage, operational pedestals for retractable bollards, streetlight protection elements and stone blocks, landscaping and irrigation, shared public way improvements under an Interdepartmental Master Encroachment Permit; granting revocable permission to Missio",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7283793&GUID=A311ACF5-4041-4DAD-9AA6-8E9E49865E84&FullText=1",
+   "streets": [
+    "infrastructure st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment",
+    "pedestrian safety",
+    "traffic signal"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-01-28",
+   "dateBasis": "Board of Supervisors: adopted as amended",
+   "finalAction": "2025-01-31",
+   "item": "250033",
+   "title": "Resolution authorizing the Recreation and Park Department (RPD) to accept and expend grant funds in the amount of $750,000 from the Metropolitan Transportation Commission (MTC) for the Visitacion Avenue Bicycle and Pedestrian Safety Improvement Project for a grant performance period from Grant contract execution through August 30, 2029; approving the Grant contract with MTC that requires RPD to operate and maintain the project for a period of 20-years, commencing upon project completion, pursuant to Charter, Section 9.118(b); and authorizing the RPD General Manager to enter into amendments or",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7089520&GUID=A5F3E0B8-EB86-4D72-9F5C-F21608992E84&FullText=1",
+   "streets": [
+    "visitacion ave"
+   ],
+   "terms": [
+    "pedestrian safety"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bicycle facility",
+    "pedestrian safety",
+    "crosswalk"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2025-01-28",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2025-01-28",
+   "item": "241192",
+   "title": "Hearing of persons interested in or objecting to the Statutory Exemption determination by the Planning Department under the California Environmental Quality Act issued on November 4, 2024, for the proposed Municipal Transportation Agency (MTA) Mid-Valencia Curbside Protected Bikeway project, which would implement bicycle and pedestrian safety improvements on Valencia Street by relocating the existing two-way center running bike lane on Valencia Street to curbside, protected Class IV bikes lanes on the blocks running from 15th Street to 23rd Street; the proposed bike lanes would be located dire",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7049698&GUID=3BB9DAAE-3734-4C8E-AD4B-F1B80C8ADAA9&FullText=1",
+   "streets": [
+    "valencia st",
+    "15th st",
+    "23rd st"
+   ],
+   "terms": [
+    "bikeway",
+    "bike lane",
+    "pedestrian safety"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bicycle lane",
+    "bike lane",
+    "bicycle facility",
+    "quick-build",
+    "encroachment",
+    "streetscape",
+    "car-free",
+    "pedestrian safety"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2024-12-10",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2024-12-19",
+   "item": "240928",
+   "title": "Ordinance ordering the summary street vacation of a portion of the airspace above Natoma Street between First and Second Streets and adjacent to the Transbay Transit Center; waiving application of Administrative Code, Chapter 23, to the conveyance of the street vacation area; finding the street vacation area is not necessary for City\u2019s use and is exempt surplus property under the California Surplus Land Act, California Government Code, Sections 54220 et seq.; quitclaiming the City\u2019s interest in the street vacation area to the Transbay Joint Powers Authority; affirming the Planning Department\u2019s",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6875719&GUID=6B78DC5B-CCB8-4C4C-A7DF-701AEE947FAF&FullText=1",
+   "streets": [
+    "airspace above natoma st",
+    "natoma st",
+    "1st st",
+    "2nd st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation",
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2024-10-29",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2024-11-07",
+   "item": "240806",
+   "title": "Ordinance amending the Public Works Code to waive the major encroachment permit fees for a project to install and maintain mosaic tiles on the Vicha Ratanapakdee Way stairs located in the Anza Vista neighborhood between O'Farrell Street and Terra Anza Avenue and amending the Planning Code to waive the General Plan referral fee associated with this encroachment permit; affirming the Planning Commission\u2019s determination under the California Environmental Quality Act; and making findings of consistency with the General Plan, and the eight priority policies of Planning Code, Section 101.1.",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6816068&GUID=125EDA42-2C2B-4D1F-89CA-73C726004B82&FullText=1",
+   "streets": [
+    "vicha ratanapakdee way",
+    "ratanapakdee way",
+    "o'farrell st",
+    "terra anza ave",
+    "anza ave"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2024-09-03",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2024-09-13",
+   "item": "240665",
+   "title": "Ordinance amending the Transportation Code to waive fees related to the temporary closure of streets for events on Irving, Noriega, and Taraval Streets, from 19th Avenue to the Great Highway, that are organized by community-serving nonprofit arts and culture organizations, small businesses, merchant associations, neighborhood resident associations, and property and business improvement districts, and to set a sunset date of June 30, 2027, for the program waiving fees related to such street closures throughout the City.",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6716221&GUID=5B6B4BB2-C9DF-494F-9687-C8E0AEEB2577&FullText=1",
+   "streets": [
+    "irving st",
+    "noriega st",
+    "taraval st",
+    "19th ave",
+    "great hwy",
+    "such st"
+   ],
+   "terms": [
+    "street closure"
+   ],
+   "foundBy": [
+    "street closure"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2024-03-26",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2024-04-05",
+   "item": "240276",
+   "title": "Resolution of intent to waive the Major Encroachment Permit fee for the DeHaro Street Community Project.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6587214&GUID=7112AF1D-FDD8-4397-9DE6-DD6277C5086F&FullText=1",
+   "streets": [
+    "deharo st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2023-07-11",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2023-07-20",
+   "item": "230780",
+   "title": "Resolution of intent to waive the Major Encroachment Permit fee and ongoing fees, including the street improvement permit, annual assessment, and street improvement annual assessment fees, for the Brotherhood Way Greenway Beautification Project.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6275679&GUID=6220B100-147C-492E-9734-36433AAD9D8A&FullText=1",
+   "streets": [
+    "brotherhood way"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2023-04-24",
+   "dateBasis": "final action; no meeting acted on the file",
+   "finalAction": "2023-04-24",
+   "item": "221152",
+   "title": "Resolution of intent to waive the Major Encroachment Permit Fee and the Street Improvement Fees for the Detroit Street Stairs project.",
+   "type": "Resolution",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed without a hearing",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5933173&GUID=51226205-A297-4391-B8A1-58DBAF63C0A9&FullText=1",
+   "streets": [
+    "detroit st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-09-27",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2022-10-06",
+   "item": "220736",
+   "title": "Ordinance ordering the conditional vacation of portions of Higuera Avenue, Vidal Drive, Arballo Drive, and Garces Drive (the \u201cStreet Vacation Area\u201d), and certain San Francisco Public Utilities Commission public service easements (the \u201cEasement Vacation Area\u201d), all within the Parkmerced Development Project area, an approximately 152-acre site located in the Lake Merced District in the southwest corner of San Francisco and generally bounded by Vidal Drive, Font Boulevard, Pinto Avenue, and Serrano Drive to the north, 19th Avenue and Junipero Serra Boulevard to the east, Brotherhood Way to the so",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5699449&GUID=ED41DB82-1162-4081-ABFB-D215E71F4645&FullText=1",
+   "streets": [
+    "higuera ave",
+    "vidal dr",
+    "arballo dr",
+    "garces dr",
+    "font blvd",
+    "pinto ave",
+    "serrano dr",
+    "19th ave",
+    "junipero serra blvd",
+    "serra blvd",
+    "brotherhood way"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-09-20",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2022-09-20",
+   "item": "220735",
+   "title": "Hearing of the Board of Supervisors sitting as a Committee of the Whole on September 20, 2022, at 3:00 p.m., to consider an Ordinance ordering the conditional vacation of portions of Higuera Avenue, Vidal Drive, Arballo Drive, and Garces Drive (the \u201cStreet Vacation Area\u201d), and certain San Francisco Public Utilities Commission public service easements (the \u201cEasement Vacation Area\u201d), all within the Parkmerced Development Project area, an approximately 152-acre site located in the Lake Merced District in the southwest corner of San Francisco and generally bounded by Vidal Drive, Font Boulevard, P",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5742684&GUID=B7C59597-E0DF-4FD1-83E3-DACEC8C49E2D&FullText=1",
+   "streets": [
+    "higuera ave",
+    "vidal dr",
+    "arballo dr",
+    "garces dr",
+    "font blvd"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-07-26",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2022-08-04",
+   "item": "220734",
+   "title": "Resolution declaring the intent of the Board of Supervisors to order the conditional vacation of portions of Higuera Avenue, Vidal Drive, Arballo Drive, and Garces Drive (the \u201cStreet Vacation Area\u201d), and certain San Francisco Public Utilities Commission public service easements (the \u201cEasement Vacation Area\u201d), all within the Parkmerced Development Project area, an approximately 152-acre site located in the Lake Merced District in the southwest corner of San Francisco and generally bounded by Vidal Drive, Font Boulevard, Pinto Avenue, and Serrano Drive to the north, 19th Avenue and Junipero Serr",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5699448&GUID=1928DD82-3832-4598-8483-B265F1FEA610&FullText=1",
+   "streets": [
+    "higuera ave",
+    "vidal dr",
+    "arballo dr",
+    "garces dr",
+    "font blvd",
+    "pinto ave",
+    "serrano dr",
+    "19th ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-07-26",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2022-07-28",
+   "item": "220543",
+   "title": "Ordinance ordering the summary street vacation of a portion of Michigan Street, generally bounded by Assessor\u2019s Parcel Block No. 4298 to the north and west, Assessor\u2019s Parcel Block No. 4310 to the east, and Cesar Chavez Street to the south, conditioned upon the San Francisco Municipal Transportation Agency (\u201cSFMTA\u201d) Board of Directors\u2019 approval of the interdepartmental transfer of the vacation area to SFMTA, to facilitate the improvement of the MUNI Metro East maintenance facility; approving the interdepartmental transfer of the vacation area from Public Works to SFMTA, subject to the approval",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5650457&GUID=EEE0FDF8-CDD5-4A67-A275-60B264401721&FullText=1",
+   "streets": [
+    "michigan st",
+    "cesar chavez st",
+    "chavez st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-07-25",
+   "dateBasis": "Land Use and Transportation Committee: amended, an amendment of the whole bearing same title",
+   "finalAction": "2024-10-22",
+   "item": "220708",
+   "title": "Ordinance ordering the summary street vacation of a portion of the airspace above a segment of Natoma Street between First and Second Streets and adjacent to the Transbay Transit Center; quitclaiming the City's interest in the street vacation area to the Transbay Joint Powers Authority; affirming the Planning Department\u2019s determination under the California Environmental Quality Act; and making findings of consistency with the General Plan, and the eight priority policies of Planning Code, Section 101.1.",
+   "type": "Ordinance",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Amended, an amendment of the whole bearing same title",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5688178&GUID=BBE80568-A99F-4973-8BF4-7BDD5CE0C11C&FullText=1",
+   "streets": [
+    "natoma st",
+    "1st st",
+    "2nd st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation",
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-07-19",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2022-07-28",
+   "item": "220450",
+   "title": "Ordinance 1) ordering the street vacation of a portion of Griffith Street and a portion of Hudson Avenue, generally bounded by Assessor\u2019s Parcel Block No. 4629A, Lot No. 010, a portion of Hudson Avenue at Assessor\u2019s Parcel Block No. 4646, Lot Nos. 001, 002, and 003, a portion of Innes Avenue and a portion of Griffith Street at Assessor\u2019s Parcel Block No. 4645, Lot No. 010, a portion of Hudson Avenue at Assessor\u2019s Parcel Block No. 4630, Lot No. 002, and a portion of Galvez Avenue (\u201cthe Street Vacation Area\u201d), to facilitate the development of the 900 Innes Avenue (India Basin) Park Development;",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5571755&GUID=A10E2072-6EA7-4362-9505-0E5EEC7F2198&FullText=1",
+   "streets": [
+    "griffith st",
+    "hudson ave",
+    "innes ave",
+    "galvez ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "bikeway",
+    "street vacation",
+    "encroachment",
+    "streetscape",
+    "Better Streets"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-07-12",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2022-07-12",
+   "item": "220449",
+   "title": "Hearing of the Board of Supervisors sitting as a Committee of the Whole on Tuesday, July 12, 2022, at 3:00 p.m., to hold a public hearing on an Ordinance 1) ordering the street vacation of a portion of Griffith Street and a portion of Hudson Avenue, generally bounded by Assessor\u2019s Parcel Block No. 4629A, Lot No. 010, a portion of Hudson Avenue at Assessor\u2019s Parcel Block No. 4646, Lot Nos. 001, 002, and 003, a portion of Innes Avenue and a portion of Griffith Street at Assessor\u2019s Parcel Block No. 4645, Lot No. 010, a portion of Hudson Avenue at Assessor\u2019s Parcel Block No. 4630, Lot No. 002, and",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5688169&GUID=77298B18-B8E0-4CF5-BD35-954E692D1683&FullText=1",
+   "streets": [
+    "griffith st",
+    "hudson ave",
+    "innes ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-06-07",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2022-06-10",
+   "item": "220448",
+   "title": "Resolution declaring the intention of the Board to order the vacation of 1) a portion of Griffith Street and a portion of Hudson Avenue, generally bounded by Assessor\u2019s Parcel Block No. 4629A, Lot No. 010, a portion of Hudson Avenue at Assessor\u2019s Parcel Block No. 4646, Lot Nos. 001, 002, and 003, a portion of Innes Avenue and a portion of Griffith Street at Assessor\u2019s Parcel Block No. 4645, Lot No. 010, a portion of Hudson Avenue at Assessor\u2019s Parcel Block No. 4630, Lot No. 002, and a portion of Galvez Avenue (\u201cthe Street Vacation Area\u201d), to facilitate the development of the 900 Innes Avenue (",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5571754&GUID=7DB16F2E-71B6-4904-913D-EA27197D0D8C&FullText=1",
+   "streets": [
+    "griffith st",
+    "hudson ave",
+    "innes ave",
+    "galvez ave"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "bikeway",
+    "street vacation",
+    "encroachment",
+    "streetscape",
+    "Better Streets"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-05-24",
+   "dateBasis": "Board of Supervisors: approved",
+   "finalAction": "2022-05-24",
+   "item": "220622",
+   "title": "Motion adopting findings in support of the Board\u2019s decision to grant the petition and revoke the major encroachment permit for a pedestrian bridge spanning Kearny Street from the Hilton Hotel to Portsmouth Square.",
+   "type": "Motion",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5658167&GUID=F9FC59AF-17DF-4439-9BAF-E7B47B8A45C2&FullText=1",
+   "streets": [
+    "bridge spanning kearny st",
+    "kearny st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-05-10",
+   "dateBasis": "final action; no meeting acted on the file",
+   "finalAction": "2022-05-10",
+   "item": "211230",
+   "title": "Draft Ordinance ordering the summary street vacation of a portion of Michigan Street, generally bounded by Assessor\u2019s Parcel Block No. 4298 to the north and west, Assessor\u2019s Parcel Block No. 4310 to the east, and Cesar Chavez Street to the south, as part of the improvement of the MUNI Metro East maintenance facility, subject to the approval of the San Francisco Municipal Transportation Agency (\u201cSFMTA\u201d) Board of Directors; approving the interdepartmental transfer of the vacation area from Public Works to SFMTA, subject to the approval of the SFMTA Board of Directors; affirming the Planning Depa",
+   "type": "Ordinance",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed without a hearing",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5339243&GUID=9DBC27BD-A10B-4DD8-8ED1-FF229529D71F&FullText=1",
+   "streets": [
+    "michigan st",
+    "cesar chavez st",
+    "chavez st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-05-03",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2022-05-07",
+   "item": "220261",
+   "title": "Ordinance amending the Park Code to adopt the Golden Gate Park Access and Safety Program, which includes restricting private vehicles on certain slow street segments in Golden Gate Park including on John F. Kennedy Drive, making certain street segments one-way, establishing bicycle lanes, and urging additional changes to improve public access to Golden Gate Park; making associated findings under the California Vehicle Code; requiring ongoing reports regarding the Golden Gate Park Access and Safety Program; affirming the Planning Department\u2019s determination under the California Environmental Qua",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5528749&GUID=621E4F6D-7B65-493B-916E-091180D45B9C&FullText=1",
+   "streets": [
+    "john f kennedy dr",
+    "kennedy dr"
+   ],
+   "terms": [
+    "bicycle lane"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bicycle lane",
+    "bike lane",
+    "street vacation",
+    "traffic calming",
+    "Vision Zero",
+    "speed limit",
+    "encroachment",
+    "Slow Streets",
+    "car-free",
+    "street closure",
+    "transit-only",
+    "pedestrian safety"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-04-26",
+   "dateBasis": "Joint Special Meeting with the Board of Supervisors and County Transportation Authority: amended, an amendment of the whole bearing new title",
+   "finalAction": "2023-07-24",
+   "item": "220339",
+   "title": "Ordinance amending the Park Code to adopt the Golden Gate Park Access and Safety Program, which includes restricting private vehicles on certain slow street segments in Golden Gate Park including on John F. Kennedy Drive, making certain street segments one-way, establishing bicycle lanes, and directing the Recreation and Park Department to pursue additional changes to improve public access to Golden Gate Park; making associated findings under the California Vehicle Code; affirming the Planning Department\u2019s determination under the California Environmental Quality Act; and making findings of con",
+   "type": "Ordinance",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Amended, an amendment of the whole bearing new title",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5548583&GUID=9EF3E95A-C614-41C2-80AE-417BECC72332&FullText=1",
+   "streets": [
+    "john f kennedy dr",
+    "kennedy dr"
+   ],
+   "terms": [
+    "bicycle lane"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bicycle lane",
+    "bike lane",
+    "traffic calming",
+    "Vision Zero",
+    "speed limit",
+    "Slow Streets",
+    "car-free",
+    "street closure",
+    "pedestrian safety"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-04-12",
+   "dateBasis": "Board of Supervisors: approved",
+   "finalAction": "2022-04-12",
+   "item": "220330",
+   "title": "Motion directing the Clerk of the Board of Supervisors to prepare findings granting the petition and revoking the Major Encroachment Permit for a pedestrian bridge spanning Kearny Street from the Hilton Hotel to Portsmouth Square.",
+   "type": "Motion",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5541840&GUID=C9F0273F-FDFC-4764-B995-46DDC1EE0478&FullText=1",
+   "streets": [
+    "bridge spanning kearny st",
+    "kearny st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-04-12",
+   "dateBasis": "Board of Supervisors: tabled",
+   "finalAction": "2022-04-12",
+   "item": "220329",
+   "title": "Motion denying the petition and revoking the Major Encroachment Permit for a pedestrian bridge spanning Kearny Street from the Hilton Hotel to Portsmouth Square.",
+   "type": "Motion",
+   "status": "Killed",
+   "districts": [],
+   "decision": "Killed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5541839&GUID=754A127D-CDEF-451E-8304-D29CB4DF3C0D&FullText=1",
+   "streets": [
+    "bridge spanning kearny st",
+    "kearny st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-04-12",
+   "dateBasis": "Board of Supervisors: approved",
+   "finalAction": "2022-04-12",
+   "item": "220328",
+   "title": "Motion granting the petition and revoking the Major Encroachment Permit for a pedestrian bridge spanning Kearny Street from the Hilton Hotel to Portsmouth Square; and making environmental findings.",
+   "type": "Motion",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5541838&GUID=0676AAC8-3114-4FEB-B83A-88BF1EEB0EF8&FullText=1",
+   "streets": [
+    "bridge spanning kearny st",
+    "kearny st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-04-12",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2022-04-12",
+   "item": "220327",
+   "title": "Hearing on the petition for revocation of the Major Encroachment Permit for the Pedestrian Bridge spanning Kearny Street from the Hilton Hotel (750 Kearny Street, Assessor\u2019s Parcel Block No. 0208, Lot No. 024) to Portsmouth Square (Assessor\u2019s Parcel Block No. 0209, Lot No. 017), pursuant to Public Works Code, Section 786(e)(2)(B)(v). (District 3) (Requested by Supervisors Peskin, Walton, Preston, Chan, Mar) (Filed: March 1, 2022)",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5541832&GUID=F2FFB25A-17A6-41E1-8029-B84E1A348F67&FullText=1",
+   "streets": [
+    "bridge spanning kearny st",
+    "kearny st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment",
+    "streetscape"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-03-08",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2022-03-18",
+   "item": "220217",
+   "title": "Resolution of intent to waive the Major Encroachment Permit fee and ongoing fees for the Ramsell Street Mosaic Mural Stairs.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5476500&GUID=BB125F81-0F73-4E0E-92BC-B700B3E6B564&FullText=1",
+   "streets": [
+    "ramsell st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-03-08",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2022-03-18",
+   "item": "220216",
+   "title": "Resolution of intent to waive the Major Encroachment Permit fee and ongoing fees for the Goettingen Street Steps of Wisdom Stairway.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5476499&GUID=AD19939A-102F-4D1C-96AC-E0D58C03F3BF&FullText=1",
+   "streets": [
+    "goettingen st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2022-01-11",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2022-01-11",
+   "item": "220029",
+   "title": "Pursuant to Charter, Sections 2.103 and 3.100(7), and Administrative Code, Section 2.11, the Mayor shall discuss the following eligible topic submitted from the Supervisor representing District 1.  The Mayor may address the Board initially for up to five minutes.  Discussion shall not exceed two minutes per question or answer.\n\n1. The future of road measures put in place during the pandemic, including in Golden Gate Park, the Great Highway, and Slow Streets (District 1)",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5372799&GUID=23B2A589-9AEC-40E1-8A78-F8333BD0B970&FullText=1",
+   "streets": [
+    "great hwy"
+   ],
+   "terms": [
+    "Slow Streets"
+   ],
+   "foundBy": [
+    "Slow Streets"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2021-09-28",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2021-10-08",
+   "item": "210805",
+   "title": "Ordinance granting revocable permission to HV Community Association, Inc., to occupy and maintain the irrigation system (other than street trees), sidewalks, curbs and ramps for ADA-compliant passenger loading, and a portion of a retaining wall footing, with all such encroachments located generally along portions of Fairfax Avenue, Acacia Avenue, Ironwood Way, Catalina Street, and Middle Point Road fronting Hunters View Phase 1, 1101 Fairfax Avenue, (Assessor\u2019s Parcel Block No. 4624, Lot Nos. 23 through 32); waiving the annual public right-of-way occupancy assessment fee under Public Works Cod",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5032035&GUID=FFF35F15-0889-46CD-ADF7-D1E608ECEF44&FullText=1",
+   "streets": [
+    "system other than st",
+    "than st",
+    "fairfax ave",
+    "acacia ave",
+    "ironwood way",
+    "catalina st",
+    "middle point rd",
+    "point rd"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "street vacation",
+    "encroachment",
+    "streetscape",
+    "curb ramp"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2021-09-13",
+   "dateBasis": "final action; no meeting acted on the file",
+   "finalAction": "2021-09-13",
+   "item": "210957",
+   "title": "Hearing of persons interested in or objecting to the determination of exemption from environmental review under the California Environmental Quality Act issued as a Statutory Exemption by the Planning Department on June 10, 2020, in regards to the Municipal Transportation Agency (MTA) Temporary Street Closure Permit No. 378514: 18th Street between Collingwood Street and Castro Street, 18th Street between Castro Street and Hartford Street. (District 8) (Appellant: Daniel A. Frattin of Reuben, Junius & Rose, LLP, on behalf of Albeco, Inc) (Filed September 1, 2021)",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed without a hearing",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5136108&GUID=55E579AF-E30B-4910-AC2B-A87436D4274D&FullText=1",
+   "streets": [
+    "18th st",
+    "collingwood st",
+    "castro st",
+    "hartford st"
+   ],
+   "terms": [
+    "street closure"
+   ],
+   "foundBy": [
+    "street closure"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2021-01-05",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2021-01-15",
+   "item": "201316",
+   "title": "Resolution retroactively granting revocable permission to A-Z300 Grant LLC, to occupy and maintain the pavers, benches, bollards, and raised crosswalk improvements within the public right-of-way on Harlan Place between Grant Avenue and Mark Lane fronting 300 Grant Avenue (Assessor\u2019s Parcel Block No. 0287, Lot No. 014) effective November 16, 2020; adopting environmental findings under the California Environmental Quality Act, and making findings of consistency with the priority policies of Planning Code, Section 101.1.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4702357&GUID=4401D2F8-E06F-42EF-96B4-8F1845548F4C&FullText=1",
+   "streets": [
+    "harlan pl",
+    "grant ave",
+    "mark ln"
+   ],
+   "terms": [
+    "crosswalk"
+   ],
+   "foundBy": [
+    "encroachment",
+    "sidewalk widening",
+    "streetscape",
+    "Better Streets",
+    "crosswalk"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-11-10",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2020-11-20",
+   "item": "201276",
+   "title": "Resolution calling for a citywide recommitment to Vision Zero and urging the Mayor, San Francisco Municipal Transportation Agency (SFMTA), the Department of Public Health, and other Vision Zero partner agencies to further advance the updated Action Strategy to reduce and end traffic fatalities by 2024 through an evolved approach that is bold, proactive, and strategic in quickly improving street conditions and advancing longer-term transformative policies for safer streets.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4686754&GUID=3F9790EF-E1EC-49A8-86B6-157A6BE3663E&FullText=1",
+   "streets": [
+    "quickly improving st",
+    "improving st"
+   ],
+   "terms": [
+    "Vision Zero"
+   ],
+   "foundBy": [
+    "traffic calming",
+    "Vision Zero",
+    "quick-build"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-07-14",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2020-07-23",
+   "item": "200479",
+   "title": "Resolution determining and declaring that the public interest and necessity demand the acquisition or improvement of real property, including: facilities to house and/or deliver services for persons experiencing mental health challenges, substance use disorder, and/or homelessness; parks, open space, and recreation facilities, including green and climate resilient infrastructure; and streets, curb ramps, street structures and plazas, and related costs necessary or convenient for the foregoing purposes; authorizing landlords to pass-through 50% of the resulting property tax increase to resident",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4537423&GUID=5D4EFF36-5A40-4F49-94E2-540821C89C8A&FullText=1",
+   "streets": [
+    "streets curb ramps st",
+    "ramps st"
+   ],
+   "terms": [
+    "curb ramp"
+   ],
+   "foundBy": [
+    "Vision Zero",
+    "streetscape",
+    "pedestrian safety",
+    "traffic signal",
+    "curb ramp"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-06-09",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2020-06-19",
+   "item": "200488",
+   "title": "Resolution approving the First Amendment to the Freeway Maintenance Agreement between the City and County of San Francisco and the California Department of Transportation, to include City's maintenance of bicycle lanes and paths and cycle tracks along Alemany Boulevard at the Freeway Interchange at State Routes 101 and 280.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4537432&GUID=0F20546F-7EA5-4BFD-AD88-DE2DC4B09383&FullText=1",
+   "streets": [
+    "alemany blvd"
+   ],
+   "terms": [
+    "bicycle lane"
+   ],
+   "foundBy": [
+    "bicycle lane",
+    "bike lane",
+    "Vision Zero",
+    "encroachment"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-03-10",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2020-03-20",
+   "item": "191253",
+   "title": "Ordinance ordering the vacation of the sidewalk portion of streets on the south side of Mission Street at the intersection of Mission and Fremont Streets and on the east side of Fremont Street at the same intersection to allow a structural upgrade of the 301 Mission Street high-rise building known as Millennium Tower, subject to certain conditions; rededicating the area subject to the street vacation to public use for street and right-of-way purposes after the City\u2019s issuance of an easement for the abovementioned structural upgrade; adopting environmental findings under the California Environm",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4280966&GUID=EF5F3561-6B61-44B2-837B-D065F72FE262&FullText=1",
+   "streets": [
+    "mission st",
+    "fremont st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "bicycle lane",
+    "bike lane",
+    "street vacation",
+    "Vision Zero",
+    "speed limit",
+    "sidewalk widening",
+    "streetscape",
+    "transit-only",
+    "traffic signal",
+    "crosswalk",
+    "bicycle network"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-03-03",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2020-03-03",
+   "item": "200135",
+   "title": "Hearing of the Board of Supervisors sitting as a Committee of the Whole on March 3, 2020, at 3:00 p.m., to hold a public hearing to consider the proposed Ordinance (File No. 191253) ordering the vacation of the sidewalk portion of streets on the south side of Mission Street at the intersection of Mission and Fremont Streets and on the east side of Fremont Street at the same intersection to allow a structural upgrade of the 301 Mission Street high-rise building known as Millennium Tower, subject to certain conditions; rededicating the area subject to the street vacation to public use for street",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4326463&GUID=3CB5716B-F784-4625-BC9D-3A256380D121&FullText=1",
+   "streets": [
+    "mission st",
+    "fremont st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-02-04",
+   "dateBasis": "Board of Supervisors: tabled",
+   "finalAction": "2020-02-04",
+   "item": "191312",
+   "title": "Motion directing the Clerk of the Board to prepare findings reversing the determination by the Planning Department that the proposed San Francisco Municipal Transportation Agency Page Street Bikeway Improvements Pilot Project is categorically exempt from further environmental review.",
+   "type": "Motion",
+   "status": "Killed",
+   "districts": [],
+   "decision": "Killed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4314958&GUID=A86E1860-9B87-4480-ACD1-F5A253C7F4A4&FullText=1",
+   "streets": [
+    "page st"
+   ],
+   "terms": [
+    "bikeway"
+   ],
+   "foundBy": [
+    "bikeway"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-02-04",
+   "dateBasis": "Board of Supervisors: tabled",
+   "finalAction": "2020-02-04",
+   "item": "191311",
+   "title": "Motion conditionally reversing the determination by the Planning Department that the San Francisco Municipal Transportation Agency Page Street Bikeway Improvements Pilot Project is categorically exempt from further environmental review, subject to the adoption of written findings by the Board in support of this determination.",
+   "type": "Motion",
+   "status": "Killed",
+   "districts": [],
+   "decision": "Killed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4314957&GUID=C7932E10-1220-4FEF-89B7-01FCF4F905EA&FullText=1",
+   "streets": [
+    "page st"
+   ],
+   "terms": [
+    "bikeway"
+   ],
+   "foundBy": [
+    "bikeway"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-02-04",
+   "dateBasis": "Board of Supervisors: approved",
+   "finalAction": "2020-02-04",
+   "item": "191310",
+   "title": "Motion affirming the determination by the Planning Department that the proposed San Francisco Municipal Transportation Agency Page Street Bikeway Improvements Pilot Project is categorically exempt from further environmental review.",
+   "type": "Motion",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4314956&GUID=E3369598-A7F1-488A-9AB0-777398535A73&FullText=1",
+   "streets": [
+    "page st"
+   ],
+   "terms": [
+    "bikeway"
+   ],
+   "foundBy": [
+    "bikeway"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2020-02-04",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2020-02-04",
+   "item": "191309",
+   "title": "Hearing of persons interested in or objecting to the determination of exemption from environmental review under the California Environmental Quality Act issued as a Categorical Exemption by the Planning Department on September 6, 2019, approved on November 19, 2019, for the San Francisco Municipal Transportation Agency's proposed Page Street Bikeway Improvements Pilot Project involving a 12-month pilot to study the effects of several traffic circulation changes to the area bounded by Fell Street to the north, Market, Gough, and Otis Streets to the south, Fillmore Street to the west, and Gough",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4289753&GUID=8CEA437B-4E60-4527-B565-78A0639E586B&FullText=1",
+   "streets": [
+    "page st",
+    "fell st",
+    "market st",
+    "gough st",
+    "otis st",
+    "fillmore st"
+   ],
+   "terms": [
+    "bikeway"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bicycle lane",
+    "bike lane",
+    "bicycle facility",
+    "Vision Zero",
+    "quick-build",
+    "encroachment",
+    "streetscape",
+    "car-free",
+    "street closure",
+    "transit-only",
+    "pedestrian safety",
+    "Better Streets",
+    "traffic signal",
+    "crosswalk",
+    "bicycle network"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2019-11-19",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2019-11-27",
+   "item": "190947",
+   "title": "Ordinance approving a major encroachment permit for Laurel Heights Partners, LLC (\u201cPermittee\u201d) to occupy portions of Presidio Avenue, Masonic Avenue, Pine Street, Euclid Avenue, Mayfair Drive, and Laurel Street adjacent to 3333 California Street (Assessor\u2019s Parcel Block No. 1032, Lot No. 003) for the purpose of installing and maintaining landscape planters, differentiated paving, corner bulb-outs, and other improvements; waiving conflicting requirements under Public Works Code, Sections 800 et seq. and 810A, in connection with Permittee\u2019s implementation of the encroachment permit and project d",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4143088&GUID=1117BA73-6B9F-4082-9A76-43515F5BD035&FullText=1",
+   "streets": [
+    "presidio ave",
+    "masonic ave",
+    "pine st",
+    "euclid ave",
+    "mayfair dr",
+    "laurel st"
+   ],
+   "terms": [
+    "encroachment"
+   ],
+   "foundBy": [
+    "bikeway",
+    "bike lane",
+    "traffic calming",
+    "speed limit",
+    "encroachment",
+    "sidewalk widening",
+    "streetscape",
+    "road diet",
+    "pedestrian safety",
+    "Better Streets",
+    "traffic signal",
+    "crosswalk"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2019-09-10",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2019-09-20",
+   "item": "190654",
+   "title": "Ordinance ordering the street vacation of the entirety of Seawall Lot 337 (located east of Third Street between China Basin Channel and Mission Rock Street, including China Basin Park) and portions of Terry A. Francois Boulevard along with public service easements in connection with the Mission Rock Project; reserving various temporary rights in favor of the City and PG&E, subject to conditions specified in this Ordinance; authorizing official acts in connection with this Ordinance, as defined herein; adopting findings under the California Environmental Quality Act; and making findings of cons",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=3975464&GUID=22EFBD2C-18DA-43E8-A8FF-42B69146ED9E&FullText=1",
+   "streets": [
+    "3rd st",
+    "mission rock st",
+    "rock st",
+    "francois blvd"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation",
+    "streetscape",
+    "Better Streets"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2019-09-03",
+   "dateBasis": "Board of Supervisors: heard and filed",
+   "finalAction": "2019-09-03",
+   "item": "190653",
+   "title": "Hearing of the Board of Supervisors sitting as a Committee of the Whole on September 3, 2019, at 3:00 p.m., to hold a public hearing to consider the proposed Ordinance (File No. 190654) ordering the street vacation of the entirety of Seawall Lot 337 (located east of Third Street between China Basin Channel and Mission Rock Street, including China Basin Park) and portions of Terry A. Francois Boulevard along with public service easements in connection with the Mission Rock Project; reserving various temporary rights in favor of the City and PG&E, subject to conditions specified in the Ordinance",
+   "type": "Hearing",
+   "status": "Filed",
+   "districts": [],
+   "decision": "Filed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4077293&GUID=CFB85646-033F-4AFE-BC09-5C7999F3B25F&FullText=1",
+   "streets": [
+    "3rd st",
+    "mission rock st",
+    "rock st",
+    "francois blvd"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2019-07-16",
+   "dateBasis": "Board of Supervisors: adopted",
+   "finalAction": "2019-07-26",
+   "item": "190652",
+   "title": "Resolution declaring the intent of the Board of Supervisors to order the street vacation for the entirety of Seawall Lot 337 (located east of Third Street between China Basin Channel and Mission Rock Street, including China Basin Park) and portions of Terry A. Francois Boulevard along with public service easements in connection with the Mission Rock Project; and setting a hearing date for the Board of Supervisors to sit as a Committee of the Whole on September 3, 2019, at 3:00 p.m. for all persons interested in the proposed vacation of said street areas and public service easements.",
+   "type": "Resolution",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=3975463&GUID=2D230255-6A42-46E9-B1CC-7126B1B8BA20&FullText=1",
+   "streets": [
+    "3rd st",
+    "mission rock st",
+    "rock st",
+    "francois blvd",
+    "said st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2019-05-07",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2019-05-17",
+   "item": "190112",
+   "title": "Ordinance ordering the summary street vacation of the 900 block of Francisco Street, generally bounded by Assessor\u2019s Parcel Block No. 0046 to the north, Assessor\u2019s Parcel Block No. 0047 to the south, Larkin Street to the west, and Hyde Street to the east, as part of the development of Francisco Park, subject to certain terms and conditions, and approving a conditional interdepartmental transfer of the vacation area from Public Works to the Recreation and Park Department; affirming the Planning Department\u2019s determination under the California Environmental Quality Act; adopting findings that the",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=3850009&GUID=F4EF4466-E217-4A9A-8EC4-26E7A625E6D0&FullText=1",
+   "streets": [
+    "francisco st",
+    "larkin st",
+    "hyde st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation",
+    "traffic calming"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "2019-03-12",
+   "dateBasis": "Board of Supervisors: finally passed",
+   "finalAction": "2019-03-22",
+   "item": "181187",
+   "title": "Ordinance ordering the summary street vacation of portions of Bradford Street, Ogden Avenue, and Crescent Avenue within the perimeter of the Alemany Farmers\u2019 Market (Assessor\u2019s Parcel Block Nos. 5731, 5732, 5733, 5733A, and 5734), bounded by Alemany Boulevard and Putnam Street; approving jurisdictional transfers of property at the site of the Market from Public Works and the Agricultural Commissioner to the General Services Agency - Real Estate Division; affirming the Planning Department\u2019s determination under the California Environmental Quality Act; adopting findings that the actions contempl",
+   "type": "Ordinance",
+   "status": "Passed",
+   "districts": [],
+   "decision": "Passed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=3773561&GUID=50218AC7-8BEF-43F3-AA1B-50A23E516206&FullText=1",
+   "streets": [
+    "bradford st",
+    "ogden ave",
+    "crescent ave",
+    "alemany blvd",
+    "putnam st"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "",
+   "dateBasis": "final action",
+   "finalAction": "",
+   "item": "260834",
+   "title": "Resolution granting revocable permission to 555 Fulton Street Development, LLC to construct and maintain encroachments in the public right-of-way, including but not limited to stamped asphalt on the roadway of Birch Street between Laguna and Octavia Streets, tree wells with metal gutter covers, pavers, and a raised crosswalk, fronting upon 555 Fulton Street, Assessor\u2019s Parcel Block No. 0794, Lot Nos. 059 through 198; adopting environmental findings under the California Environmental Quality Act; and making findings of consistency with the General Plan, and the eight priority policies of Planni",
+   "type": "Resolution",
+   "status": "Pending Committee Action",
+   "districts": [],
+   "decision": "Pending Committee Action",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8141616&GUID=65BE6B67-D42A-40D0-A63E-BFD5512678C5&FullText=1",
+   "streets": [
+    "birch st",
+    "laguna st",
+    "octavia st"
+   ],
+   "terms": [
+    "encroachment",
+    "crosswalk"
+   ],
+   "foundBy": [
+    "speed limit",
+    "encroachment",
+    "streetscape",
+    "Better Streets",
+    "crosswalk"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "",
+   "dateBasis": "final action",
+   "finalAction": "",
+   "item": "250820",
+   "title": "Ordinance ordering the street vacation of a portion of Hudson Avenue, adjacent to Assessor\u2019s Parcel Block No. 4629A, Lot Nos. 010 and 011, and Assessor\u2019s Parcel Block No. 4646, Lot No. 022, and a portion of Hunters Point Boulevard adjacent to Assessor\u2019s Parcel Block No. 4629A, Lot Nos. 011 and 012, subject to a reserved easement in favor of Pacific Gas and Electric for access and subsurface utilities, to facilitate the development of the 900 Innes Avenue (India Basin) Park project; waiving the requirements of Administrative Code, Chapter 23 and approving the interdepartmental transfer of the s",
+   "type": "Ordinance",
+   "status": "Pending Committee Action",
+   "districts": [],
+   "decision": "Pending Committee Action",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7501544&GUID=2A8A06DC-8426-48B2-8C41-7BF74E6A34B2&FullText=1",
+   "streets": [
+    "hudson ave",
+    "hunters point blvd",
+    "point blvd"
+   ],
+   "terms": [
+    "street vacation"
+   ],
+   "foundBy": [
+    "street vacation"
+   ]
+  },
+  {
+   "kind": "supervisors",
+   "date": "",
+   "dateBasis": "final action",
+   "finalAction": "",
+   "item": "221140",
+   "title": "Hearing of persons interested in or objecting to a Statutory Exemption by the Planning Department under the California Environmental Quality Act issued September 1, 2022, for the proposed Municipal Transportation Agency (MTA) 39th Avenue, Skyline Boulevard, and Sloat Boulevard new traffic signal project, to create safer conditions for pedestrians by signalizing the intersection of 39th Avenue, Skyline Boulevard, and Sloat Boulevard; to install new traffic signals (mast arms, signal heads, a traffic signal cabinet, an electrical equipment enclosure, conduit, wiring, and poles), pedestrian count",
+   "type": "Hearing",
+   "status": "Killed",
+   "districts": [],
+   "decision": "Killed",
+   "approver": "Board of Supervisors",
+   "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5929982&GUID=68CD2B44-5DD2-40E4-83A6-43C439A4513C&FullText=1",
+   "streets": [
+    "39th ave",
+    "skyline blvd",
+    "sloat blvd"
+   ],
+   "terms": [
+    "traffic signal"
+   ],
+   "foundBy": [
+    "Vision Zero",
+    "encroachment",
+    "pedestrian safety",
+    "traffic signal"
+   ]
+  }
+ ]
+}

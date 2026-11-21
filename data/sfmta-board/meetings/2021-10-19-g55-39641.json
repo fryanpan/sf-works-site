@@ -1,0 +1,94 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-10-19",
+ "id": "g55-39641",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39641",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/25160"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - October 5, 2021 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment",
+   "decision": "FAILED"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes (Resolution 210316-036)"
+  },
+  {
+   "no": "10.1",
+   "title": "Parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 211019-119)"
+  },
+  {
+   "no": "10.2",
+   "title": "Support for the programming of State Transportation Improvement Program funds in the amount of $10,642,000",
+   "decision": "ADOPTED — 6 ayes (Resolution 211019-120)"
+  },
+  {
+   "no": "10.3",
+   "title": "Extension of the six-month promotional program waiving Muni and Paratransit Fares for customers traveling to and from COVID-19 vaccination and vaccination booster appointments",
+   "decision": "ADOPTED — 6 ayes (Resolution 211019-121)"
+  },
+  {
+   "no": "11",
+   "title": "Adopting the Lake Merced Pedestrian Safety Community-Based Transportation Plan",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Awarding Contract No. 1313R1 to JMB Construction for the 16th Street Improvement Project",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Authorizing the Director to execute Contract Nos. 2020-65-FTA and 2020-68-FTA for As-Needed Transit Corridor Planning and Engineering Services",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Authorizing the Director to execute Modification No. 14 to Contract No. 1289 with Walsh Construction Company for the Van Ness Corridor Transit Improvement Project",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,38 @@
+<h1>How far San Francisco's new housing fell below its own affordable floor</h1>
+<p class="lede">San Francisco's completed-only housing balance was {{ balance }}% for {{ periodStart }} to {{ periodEnd }}: {{ affordableTotal }} affordable homes minus {{ protectedUnitsLost }} protected units lost, over {{ netTotal }} net new homes, against the {{ floor }}% floor <a href="{{ s103Url }}">Planning Code §103</a> set until <a href="{{ repealUrl }}">Ordinance 137-26</a> repealed it in 2026. The figure is recomputed from <a href="https://data.sf.gov/d/xdht-4php">the city's housing production data</a>, completed homes only, and moves when the data does (<a href="/housing/about#balance">how it is made</a>).</p>
+
+<div class="progress-figures"><div class="upgrade"><b>{{ balance }}%</b><span>affordable, {{ periodStart }} to {{ periodEnd }}: {{ affordableUnits }} affordable homes minus {{ protectedUnitsLost }} protected units lost, over {{ netNewUnits }} net new homes.</span></div><div><b>{{ floor }}%</b><span>the floor §103 set. Below it the Mayor owed the Board a funding strategy.</span></div><div class="lib"><b>{{ withoutPublicHousing }}%</b><span>the city's own last reading, <a href="{{ reportUrl }}">Report No. 20</a>, April 2025, covering {{ period }}.</span></div></div>
+
+<h2 id="by-year">Affordable homes rose while market-rate building fell</h2>
+<p>Completed homes by year from <a href="https://data.sf.gov/d/xdht-4php">Housing Production</a> (read {{ queriedAt }}), split into affordable and market rate, with the affordable share above each year. Affordable is the dataset's own count of units at or below 120% of area median income.</p>
+{{# yearChart }}
+<p class="verdict-note">{{ partialYear }} is a part year and is left out. Protected units lost aren't subtracted here, so each year's share doesn't count them.</p>
+<ul class="cite" data-for="Year chart" data-how="/housing/about#by-year"><li><a href="https://data.sf.gov/d/xdht-4php">Housing Production 2005–present</a>, completions through {{ productionThrough }}</li></ul>
+
+<h2 id="housing-element">Completions against the Housing Element target</h2>
+<p>The <a href="https://sfplanning.org/housing-element-2022-update">2022 Housing Element</a> commits the city to {{ total }} new homes by January {{ endYear }}, {{ affordable }} of them affordable. Each row is completions since January {{ startYear }} against that target.</p>
+<div class="scroll"><table>
+  <thead><tr><th></th><th class="num">Completed</th><th class="num">Target</th><th class="num">Share</th></tr></thead>
+  <tbody>
+    <tr><td>All homes</td><td class="num">{{ netCompleted }}</td><td class="num">{{ total }}</td><td class="num">{{ shareOfTarget }}%</td></tr>
+    <tr><td>Affordable homes</td><td class="num">{{ affordableCompleted }}</td><td class="num">{{ affordable }}</td><td class="num">{{ shareOfAffordableTarget }}%</td></tr>
+  </tbody>
+</table></div>
+<p class="verdict-note">The state measures permits issued, not completions; the next section counts those.</p>
+<ul class="cite" data-for="Housing Element table"><li><a href="https://data.sf.gov/d/xdht-4php">Housing Production 2005–present</a>, completions through {{ productionThrough }}</li></ul>
+
+<h2 id="sb423">Permits against the state's {{ checkYear }} checkpoint</h2>
+<p>The state reads San Francisco's building permits every year under <a href="{{ sb423Url }}">SB 423</a>, and each income category must reach {{ sharePct }}% of its 2023 to 2031 allocation by the April {{ checkYear }} report. Each bar is how far a category sits below that line, on the state's <a href="https://data.ca.gov/dataset/rhna-progress-report">count of permits issued</a> through {{ aprThrough }}.</p>
+{{# sb423Chart }}
+<p class="verdict-note">The state's counts rise when a late report is accepted.</p>
+<ul class="cite" data-for="Checkpoint chart" data-how="/housing/about#sb423"><li><a href="https://data.ca.gov/dataset/rhna-progress-report">HCD 6th Cycle RHNA Progress Report</a>, permits through {{ aprThrough }}</li><li>allocations from the <a href="https://sfplanning.org/housing-element-2022-update">2022 Housing Element</a></li></ul>
+<p>Below the line in above-moderate or either of the two lowest categories, the city must approve qualifying projects without a discretionary hearing, under <a href="{{ gc65913Url }}">Government Code §65913.4</a>, and has since June 2024.</p>
+
+<h2 id="by-district">The balance runs from {{ bestBalance }}% in District {{ bestDistrict }} to {{ worstBalance }}% in District {{ worstDistrict }}</h2>
+<p>The same formula by supervisor district, {{ periodStart }} to {{ periodEnd }}: affordable homes minus eviction notices on the four grounds, over net new homes, against the citywide {{ balance }}%. In {{ negativeDistricts }} districts the notices outnumber the affordable homes, so the balance is below zero.</p>
+{{# districtTable }}
+<p class="verdict-note">Planning's own <a href="{{ reportUrl }}">Report No. 20</a> counted fewer losses on the same grounds.</p>
+<ul class="cite" data-for="District table" data-how="/housing/about#planning"><li><a href="https://data.sf.gov/d/xdht-4php">Housing Production 2005–present</a>, completions through {{ productionThrough }}</li><li>lost units from <a href="https://data.sf.gov/d/5cei-gny5">eviction notices</a>, each placed in the district the notice carries</li></ul>
+
+<h2 id="asks">What we ask the city for</h2>
+<p>Of the Planning Department: publish the permitted-unit series behind the Housing Balance, so the §103 calculation can be reproduced by anyone. Of the Board of Supervisors: if the {{ floor }}% floor is no longer the standard, say what replaced it (<a href="/housing/about#issues">the data issues behind each ask</a>).</p>

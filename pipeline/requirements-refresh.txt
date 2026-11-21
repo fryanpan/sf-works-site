@@ -1,0 +1,12 @@
+# What the scheduled refresh's steps import beyond pipeline/requirements-geo.txt: page parsing (sfmta-project-pages,
+# sfmta-page-dates, department pages), spreadsheets and PDFs (meeting mirrors, plan readers), and DuckDB for the Muni
+# dashboard's data (tools/muni/muni-ewt/site_data.py). Installed into the
+# analysis virtualenv by pipeline/site-refresh/vm-setup.sh. Versions as installed on the refresh VM, 2026-11-10.
+beautifulsoup4==4.15.0
+soupsieve==4.1
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+pdfplumber==0.11.10
+pdfminer.six==20260107
+pypdfium2==5.15.2
+duckdb==1.5.6

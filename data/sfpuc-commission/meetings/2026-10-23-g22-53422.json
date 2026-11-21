@@ -1,0 +1,36 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-10-23",
+ "id": "g22-53422",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53422",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "3d",
+   "title": "Discussion and vote whether to disclose any or all discussions held in closed session"
+  },
+  {
+   "no": "4",
+   "title": "Adjournment"
+  }
+ ],
+ "parser": 2,
+ "body": "sfpuc-commission"
+}

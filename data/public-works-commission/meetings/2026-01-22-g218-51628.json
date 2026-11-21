@@ -1,0 +1,36 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-01-22",
+ "id": "g218-51628",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51628",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chairs, Commissioners and Secretary Informational"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Department of Public Works Fiscal Year 2026-2027 and Fiscal Year 2027-2028 Operating Budget and Priorities"
+  },
+  {
+   "no": "5",
+   "title": "General Public Comment - Continued from Item 3 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

@@ -1,0 +1,68 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-06-24",
+ "id": "g218-46430",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46430",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary Informational"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the June 10, 2024 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "5",
+   "title": "Public Works Collaboration with the Department of the Environment"
+  },
+  {
+   "no": "6",
+   "title": "Contract No. 36 Traffic Signal Modifications, Contract ID No. 1000031023 Contract Modification"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners Informational CLOSED SESSION"
+  },
+  {
+   "no": "8",
+   "title": "Closed Session - Conference with Legal Counsel regarding existing litigation"
+  },
+  {
+   "no": "9",
+   "title": "Closed Session Public Works Commission Secretary Performance Evaluation"
+  },
+  {
+   "no": "10",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "Motion Regarding Whether to Disclose the Discussions during Closed Session Pursuant to the San Francisco Administrative Code § 67.12 (a)."
+  },
+  {
+   "no": "12",
+   "title": "General Public Comment Continued from Item 3 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

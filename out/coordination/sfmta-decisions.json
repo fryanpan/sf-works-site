@@ -1,0 +1,5581 @@
+{
+ "generated": "2026-11-11",
+ "rule": "An SFMTA project is listed when SFMTA tags it Bike, Walk, Vision Zero or Quick-Build, or its name or page names bike, slow street, quick-build, pedestrian, crossing, signal, traffic calming, safety or streetscape work, and it is not finished (by the layer's phase or its own page), not station, fleet or parking work, and, if SFMTA does not map it, its page shows something dated this year or last. A mapped project with no phase on the layer or its page whose timeline ends before last year, or one whose only walking or safety scope is in its page's words, is listed while its page dates work in the last year or to come, or the coordination feed carries its job. Any other project SFMTA maps on a plan block (transit, parking or wiring work on the same streets) is listed too, as transit or parking work, while its page dates a milestone, notice or construction date in the last two years or to come, or the coordination feed carries its job, unless it is a study, a plan, a pilot or work inside a station, tunnel, transit center, yard or vehicle.",
+ "decisions": [
+  {
+   "id": "sfmta-page:1-california-temporary-emergency-transit-lanes",
+   "name": "1 California",
+   "page": "https://www.sfmta.com/projects/1-california-temporary-emergency-transit-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1136",
+   "name": "11th Street Improvement Project",
+   "page": "https://www.sfmta.com/node/1136",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:15399",
+   "name": "12 Folsom-Pacific Rincon Hill Extension",
+   "page": "https://www.sfmta.com/node/15399",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:42700",
+   "name": "1200 15th Street Renovation Project",
+   "page": "https://www.sfmta.com/node/42700",
+   "onLayer": true,
+   "tags": [
+    "Finance and Administration"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope, and its line runs on no plan block"
+  },
+  {
+   "id": "sfmta:27602",
+   "name": "12th Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27602",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:20936",
+   "name": "13th Street Safety Project",
+   "page": "https://www.sfmta.com/node/20936",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:14-mission-customer-experience-pilot",
+   "name": "14 Mission Customer Experience Pilot",
+   "page": "https://www.sfmta.com/projects/14-mission-customer-experience-pilot",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:217",
+   "name": "14 Mission Rapid Project",
+   "page": "https://www.sfmta.com/node/217",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:218",
+   "name": "16th Street Improvement Project",
+   "page": "https://www.sfmta.com/node/218",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni",
+    "Muni Forward",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Phase 2",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:219",
+   "name": "17th Street Bicycle Safety Project",
+   "page": "https://www.sfmta.com/node/219",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:26713",
+   "name": "17th Street Quick-Build",
+   "page": "https://www.sfmta.com/node/26713",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Project Evaluation",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Project Evaluation"
+  },
+  {
+   "id": "sfmta:220",
+   "name": "19 Polk Bus Stop Changes",
+   "page": "https://www.sfmta.com/node/220",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not current: listed only because its page's words name crossing, pedestrian, and its page dates no work since 2025-11 (latest nothing dated) and the coordination feed carries no job for it"
+  },
+  {
+   "id": "sfmta:22060",
+   "name": "19 Polk on 7th and 8th Streets Transit Improvements (Formerly Temporary Emergency Transit Lanes)",
+   "page": "https://www.sfmta.com/node/22060",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: every milestone on its timeline is marked Completed and dated in the past"
+  },
+  {
+   "id": "sfmta-page:20-year-unconstrained-capital-plan",
+   "name": "20-Year Unconstrained Capital Plan",
+   "page": "https://www.sfmta.com/projects/20-year-unconstrained-capital-plan",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, safety project but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:2022-muni-service-network",
+   "name": "2022 Muni Service Network",
+   "page": "https://www.sfmta.com/projects/2022-muni-service-network",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Implementation",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1128",
+   "name": "20th Avenue Neighborway Project",
+   "page": "https://www.sfmta.com/node/1128",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:20th-street-slow-street",
+   "name": "20th Street Slow Street",
+   "page": "https://www.sfmta.com/projects/20th-street-slow-street",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2023, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta-page:22nd-street-caltrain-area-parking-management",
+   "name": "22nd Street Caltrain Area Parking Management",
+   "page": "https://www.sfmta.com/projects/22nd-street-caltrain-area-parking-management",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:27622",
+   "name": "22nd Street Slow Street",
+   "page": "https://www.sfmta.com/node/27622",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:27603",
+   "name": "23rd Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27603",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta-page:24-divisadero-safety-and-transit-project",
+   "name": "24 Divisadero Safety and Transit Project",
+   "page": "https://www.sfmta.com/projects/24-divisadero-safety-and-transit-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2021, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:24-divisadero-temporary-emergency-transit-lanes",
+   "name": "24 Divisadero Temporary Emergency Transit Lanes",
+   "page": "https://www.sfmta.com/projects/24-divisadero-temporary-emergency-transit-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:27-bryant-transit-reliability-project",
+   "name": "27 Bryant Transit Reliability Project",
+   "page": "https://www.sfmta.com/projects/27-bryant-transit-reliability-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2021, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:28-19th-avenue-rapid-project",
+   "name": "28 19th Ave Rapid Project",
+   "page": "https://www.sfmta.com/projects/28-19th-avenue-rapid-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2015, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:29-sunset-improvement-project-phase-one",
+   "name": "29 Sunset Improvement Project",
+   "page": "https://www.sfmta.com/projects/29-sunset-improvement-project-phase-one",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Detailed Design",
+   "listed": true,
+   "reason": "its page names pedestrian, quick-build, signal"
+  },
+  {
+   "id": "sfmta:40525",
+   "name": "29 Sunset Improvement Project – Phase Two",
+   "page": "https://www.sfmta.com/node/40525",
+   "onLayer": true,
+   "tags": [
+    "Muni Forward"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": "Planning, Quick-Build Implementation and Detailed Design",
+   "listed": true,
+   "reason": "its page names quick-build"
+  },
+  {
+   "id": "sfmta-page:30-stockton-presidio-extension",
+   "name": "30 Stockton Presidio Extension",
+   "page": "https://www.sfmta.com/projects/30-stockton-presidio-extension",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:798",
+   "name": "30 Stockton Transit Priority Improvements",
+   "page": "https://www.sfmta.com/node/798",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:13931",
+   "name": "33 Ashbury Overhead Wiring and Pole Replacement Project",
+   "page": "https://www.sfmta.com/node/13931",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2018-12-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:38-geary-temporary-emergency-transit-lanes",
+   "name": "38 Geary",
+   "page": "https://www.sfmta.com/projects/38-geary-temporary-emergency-transit-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2021, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta:28710",
+   "name": "3rd Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28710",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:17207",
+   "name": "3rd Street Transit and Safety Project",
+   "page": "https://www.sfmta.com/node/17207",
+   "onLayer": true,
+   "tags": [
+    "Muni Forward",
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Quick-Build, Vision Zero"
+  },
+  {
+   "id": "sfmta-page:43-masonic-and-44-oshaughnessy-transit-improvements-formerly-temporary-emergency-transit-lanes",
+   "name": "43 Masonic and 44 O'Shaughnessy Transit Improvements",
+   "page": "https://www.sfmta.com/projects/43-masonic-and-44-oshaughnessy-transit-improvements-formerly-temporary-emergency-transit-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2022, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:48-quintara-24th-street-safety",
+   "name": "48 Quintara-24th Street Safety",
+   "page": "https://www.sfmta.com/projects/48-quintara-24th-street-safety",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2023, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta-page:4th-street-bridge-transit-lanes-formerly-temporary-emergency-transit-lanes",
+   "name": "4th Street Bridge Transit Lanes (Formerly Temporary Emergency Transit Lanes)",
+   "page": "https://www.sfmta.com/projects/4th-street-bridge-transit-lanes-formerly-temporary-emergency-transit-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:43223",
+   "name": "4th Street Pedestrian Safety Project",
+   "page": "https://www.sfmta.com/node/43223",
+   "onLayer": true,
+   "tags": [
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2025-08-31, has passed and no source read gives it an active phase"
+  },
+  {
+   "id": "sfmta:19203",
+   "name": "4th Street Transit Improvement Project",
+   "page": "https://www.sfmta.com/node/19203",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2019-12-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:887",
+   "name": "5 Fulton Rapid Project",
+   "page": "https://www.sfmta.com/node/887",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:18004",
+   "name": "54 Felton Project",
+   "page": "https://www.sfmta.com/node/18004",
+   "onLayer": true,
+   "tags": [
+    "Muni Forward"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2019-08-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:15659",
+   "name": "55 Dogpatch",
+   "page": "https://www.sfmta.com/node/15659",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not current: no bike or pedestrian scope, and its page dates nothing since 2024-11 (latest 2021) and the coordination feed carries no job for it"
+  },
+  {
+   "id": "sfmta:1146",
+   "name": "5th Street Improvement Project",
+   "page": "https://www.sfmta.com/node/1146",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:1133",
+   "name": "66 Quintara Connectivity Study",
+   "page": "https://www.sfmta.com/node/1133",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1250",
+   "name": "6th Street Pedestrian Safety Project",
+   "page": "https://www.sfmta.com/node/1250",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2025-08-31, has passed, though SFMTA's project layer still gives its status as Current"
+  },
+  {
+   "id": "sfmta:881",
+   "name": "7 Haight Noriega Rapid Project",
+   "page": "https://www.sfmta.com/node/881",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Muni",
+    "Muni Forward",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:653",
+   "name": "7th Street and 8th Street Safety Projects",
+   "page": "https://www.sfmta.com/node/653",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:44339",
+   "name": "8 Bayshore: Visitacion Valley Stop Improvements",
+   "page": "https://www.sfmta.com/node/44339",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Muni Forward",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:1092",
+   "name": "8th Avenue Neighborway Project",
+   "page": "https://www.sfmta.com/node/1092",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:879",
+   "name": "9 San Bruno Rapid Project",
+   "page": "https://www.sfmta.com/node/879",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Muni Forward"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:expansion-and-upgrade-muni-light-rail-vehicle-fleet",
+   "name": "A Bigger and Better Light Rail Vehicle Fleet",
+   "page": "https://www.sfmta.com/projects/expansion-and-upgrade-muni-light-rail-vehicle-fleet",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Phase 1",
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names bike, safety project)"
+  },
+  {
+   "id": "sfmta-page:ada35-americans-disabilities-act-35th-anniversary",
+   "name": "ADA35: Americans with Disabilities Act 35th Anniversary",
+   "page": "https://www.sfmta.com/projects/ada35-americans-disabilities-act-35th-anniversary",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:accessibility-strategy",
+   "name": "Accessibility Strategy",
+   "page": "https://www.sfmta.com/projects/accessibility-strategy",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Phase Two: Goals and Actions",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:18897",
+   "name": "Active Beale Street",
+   "page": "https://www.sfmta.com/node/18897",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2020-12-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:21323",
+   "name": "Alemany Bikeway Project",
+   "page": "https://www.sfmta.com/node/21323",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:28356",
+   "name": "Alemany Boulevard (Ellsworth to Justin Drive/Congdon) Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28356",
+   "onLayer": true,
+   "tags": [
+    "Quick-Build"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:20631",
+   "name": "Alemany Corridor Safety Project",
+   "page": "https://www.sfmta.com/node/20631",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Planning Process Complete, Near-Term Improvements Complete",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:17131",
+   "name": "Alemany Interchange Bike Lanes Project",
+   "page": "https://www.sfmta.com/node/17131",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:all-electric-fleet-transition",
+   "name": "All Electric Fleet Transition",
+   "page": "https://www.sfmta.com/projects/all-electric-fleet-transition",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:21212",
+   "name": "Anza Street Bike Lanes Project",
+   "page": "https://www.sfmta.com/node/21212",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its page says “Project Update 06/11/2021: The project is now substantially complete!”"
+  },
+  {
+   "id": "sfmta:28373",
+   "name": "Arguello Safety Project",
+   "page": "https://www.sfmta.com/node/28373",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero"
+  },
+  {
+   "id": "sfmta:27608",
+   "name": "Arlington Slow Street",
+   "page": "https://www.sfmta.com/node/27608",
+   "onLayer": true,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says slow street"
+  },
+  {
+   "id": "sfmta-page:asia-pacific-economic-cooperation-apec-transit-and-travel-information",
+   "name": "Asia-Pacific Economic Cooperation (APEC) Transit and Travel Information",
+   "page": "https://www.sfmta.com/projects/asia-pacific-economic-cooperation-apec-transit-and-travel-information",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest none, from nothing dated)"
+  },
+  {
+   "id": "sfmta-page:autonomous-vehicles-avs-policy",
+   "name": "Autonomous Vehicles (AVs) Policy",
+   "page": "https://www.sfmta.com/projects/autonomous-vehicles-avs-policy",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:bartmuni-market-street-canopy-living-roofs",
+   "name": "BART/Muni Market Street Canopy Living Roofs",
+   "page": "https://www.sfmta.com/projects/bartmuni-market-street-canopy-living-roofs",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:816",
+   "name": "Balboa Park Station Area and Plaza Improvements",
+   "page": "https://www.sfmta.com/node/816",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2017-12-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:battery-electric-bus-program",
+   "name": "Battery-Electric Bus Program",
+   "page": "https://www.sfmta.com/projects/battery-electric-bus-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Procurement and Testing",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only pedestrian)"
+  },
+  {
+   "id": "sfmta:23813",
+   "name": "Battery/Sansome Quick-Build Project",
+   "page": "https://www.sfmta.com/node/23813",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:874",
+   "name": "Bay Street Road Diet and Cycletrack",
+   "page": "https://www.sfmta.com/node/874",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:22025",
+   "name": "Bayshore Boulevard Quick-Build Project",
+   "page": "https://www.sfmta.com/node/22025",
+   "onLayer": true,
+   "tags": [
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Implementation/Construction",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:20650",
+   "name": "Bayview CBTP Quick-Build Projects",
+   "page": "https://www.sfmta.com/node/20650",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:15926",
+   "name": "Bayview Community Based Transportation Plan",
+   "page": "https://www.sfmta.com/node/15926",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Community Based Transportation Plan",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:29974",
+   "name": "Bayview Community Pathway",
+   "page": "https://www.sfmta.com/node/29974",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:22529",
+   "name": "Bayview Hunters Point Express",
+   "page": "https://www.sfmta.com/node/22529",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2021-02-28, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:transportation-resource-center",
+   "name": "Bayview Transportation Resource Center",
+   "page": "https://www.sfmta.com/projects/bayview-community-shuttle/transportation-resource-center",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest none, from nothing dated)"
+  },
+  {
+   "id": "sfmta:28896",
+   "name": "Beach Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28896",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:939",
+   "name": "Better Market Street",
+   "page": "https://www.sfmta.com/node/939",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Taxi",
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2025-04-30, has passed, though SFMTA's project layer still gives its status as Current"
+  },
+  {
+   "id": "sfmta-page:better-market-street",
+   "name": "Better Market Street",
+   "page": "https://www.sfmta.com/projects/better-market-street",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "the same project as one on SFMTA's layer"
+  },
+  {
+   "id": "sfmta-page:biking-and-rolling-plan",
+   "name": "Biking and Rolling Plan",
+   "page": "https://www.sfmta.com/projects/biking-and-rolling-plan",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, safety project but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:44134",
+   "name": "Bosworth/Monterey Connections Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44134",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero"
+  },
+  {
+   "id": "sfmta:1134",
+   "name": "Brannan Street Safety Project",
+   "page": "https://www.sfmta.com/node/1134",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Muni",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:16232",
+   "name": "Broadway Safety Improvement Project",
+   "page": "https://www.sfmta.com/node/16232",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:43636",
+   "name": "Brotherhood-Alemany Quick-Build Project",
+   "page": "https://www.sfmta.com/node/43636",
+   "onLayer": true,
+   "tags": [
+    "Quick-Build"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Quick-Build"
+  },
+  {
+   "id": "sfmta:28389",
+   "name": "Brotherhood/Alemany Safety Improvements Project",
+   "page": "https://www.sfmta.com/node/28389",
+   "onLayer": true,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta:1075",
+   "name": "Bryant Street Bike Network Improvement Project",
+   "page": "https://www.sfmta.com/node/1075",
+   "onLayer": true,
+   "tags": [
+    "Bike"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:budget-fiscal-years-2019-and-2020-balancing-transportation-needs-growing-city",
+   "name": "Budget for Fiscal Years 2019 and 2020: Balancing Transportation Needs of a Growing City",
+   "page": "https://www.sfmta.com/projects/budget-fiscal-years-2019-and-2020-balancing-transportation-needs-growing-city",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names bike, pedestrian)"
+  },
+  {
+   "id": "sfmta:17284",
+   "name": "Buena Vista West Neighborhood Parking Plan",
+   "page": "https://www.sfmta.com/node/17284",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:building-progress-program",
+   "name": "Building Progress Program",
+   "page": "https://www.sfmta.com/projects/building-progress-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:covid-19-developments-response",
+   "name": "COVID-19 Developments & Response",
+   "page": "https://www.sfmta.com/projects/covid-19-developments-response",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, slow street, streetscape but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:8052",
+   "name": "Cable Car Gearbox Rehabilitation Project",
+   "page": "https://www.sfmta.com/node/8052",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:cable-car-sheaves-upgrade-project",
+   "name": "Cable Car Sheaves Upgrade Project",
+   "page": "https://www.sfmta.com/projects/cable-car-sheaves-upgrade-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:27609",
+   "name": "Cabrillo Slow Street",
+   "page": "https://www.sfmta.com/node/27609",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:19912",
+   "name": "California Street Safety Project",
+   "page": "https://www.sfmta.com/node/19912",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:44722",
+   "name": "California Street Transit and Safety Project",
+   "page": "https://www.sfmta.com/node/44722",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward",
+    "Vision Zero"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": "Proposal Development/Outreach",
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero"
+  },
+  {
+   "id": "sfmta:761",
+   "name": "Candlestick Point/Hunters Point Shipyard",
+   "page": "https://www.sfmta.com/node/761",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:1307",
+   "name": "Castro Station Accessibility Improvements Project",
+   "page": "https://www.sfmta.com/node/1307",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Completed",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:27548",
+   "name": "Cayuga Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27548",
+   "onLayer": true,
+   "tags": [],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says slow street"
+  },
+  {
+   "id": "sfmta:752",
+   "name": "Central Embarcadero Safety Project",
+   "page": "https://www.sfmta.com/node/752",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:17994",
+   "name": "Central Richmond Traffic Safety Project",
+   "page": "https://www.sfmta.com/node/17994",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its page says “Project Update 06/30/2020: The project is now substantially complete!”"
+  },
+  {
+   "id": "sfmta:362",
+   "name": "Central Subway Extension",
+   "page": "https://www.sfmta.com/node/362",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Finance and Administration",
+    "Muni"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": "Planning and outreach",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:central-subway-project",
+   "name": "Central Subway Project",
+   "page": "https://www.sfmta.com/projects/central-subway-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:30111",
+   "name": "Cesar Chavez Bikeway Improvements Project",
+   "page": "https://www.sfmta.com/node/30111",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build"
+  },
+  {
+   "id": "sfmta:1110",
+   "name": "Cesar Chavez/Potrero Ave/Bayshore Blvd Intersection Improvements (The Hairball)",
+   "page": "https://www.sfmta.com/node/1110",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:45367",
+   "name": "Chinatown Parking and Transit Improvements",
+   "page": "https://www.sfmta.com/node/45367",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2026-08-09, has passed and no source read gives it an active phase"
+  },
+  {
+   "id": "sfmta-page:church-and-market-street-intersection-improvements",
+   "name": "Church and Market Street Intersection Improvements",
+   "page": "https://www.sfmta.com/projects/church-and-market-street-intersection-improvements",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its page names crossing, pedestrian, streetscape"
+  },
+  {
+   "id": "sfmta-page:citywide-parking-meter-replacement",
+   "name": "Citywide Parking Meter Replacement",
+   "page": "https://www.sfmta.com/projects/citywide-parking-meter-replacement",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:29082",
+   "name": "Clarendon Quick-Build",
+   "page": "https://www.sfmta.com/node/29082",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:27612",
+   "name": "Clay Slow Street",
+   "page": "https://www.sfmta.com/node/27612",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta-page:climate-roadmap-healthier-san-francisco",
+   "name": "Climate Roadmap for a Healthier San Francisco",
+   "page": "https://www.sfmta.com/projects/climate-roadmap-healthier-san-francisco",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta:797",
+   "name": "Columbus Avenue Safety Project",
+   "page": "https://www.sfmta.com/node/797",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:stakeholder-engagement",
+   "name": "Community Engagement Opportunities",
+   "page": "https://www.sfmta.com/projects/potrero-yard-modernization-project/stakeholder-engagement",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian, streetscape but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:community-history-preservation-project-omi",
+   "name": "Community History Preservation Project",
+   "page": "https://www.sfmta.com/projects/community-history-preservation-project-omi",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Phase 1- Initial Outreach",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:commuter-shuttle-program",
+   "name": "Commuter Shuttle Program",
+   "page": "https://www.sfmta.com/projects/commuter-shuttle-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:connected-corridor",
+   "name": "Connected Corridor",
+   "page": "https://www.sfmta.com/projects/connected-corridor",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names pedestrian, safety project, signal but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:29721",
+   "name": "Contract 35 Traffic Signal Modifications",
+   "page": "https://www.sfmta.com/node/29721",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:29747",
+   "name": "Contract 36 Traffic Signal Modifications",
+   "page": "https://www.sfmta.com/node/29747",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2026-05-31, has passed, though SFMTA's project layer still gives its status as Implementation / Construction"
+  },
+  {
+   "id": "sfmta:29743",
+   "name": "Contract 65 New Traffic Signals",
+   "page": "https://www.sfmta.com/node/29743",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2025-11-30, has passed, though SFMTA's project layer still gives its status as Legislated"
+  },
+  {
+   "id": "sfmta:29514",
+   "name": "Contract 66 New Traffic Signals",
+   "page": "https://www.sfmta.com/node/29514",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:curb-management",
+   "name": "Curb Management",
+   "page": "https://www.sfmta.com/projects/curb-management",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:curbside-ev-charging-feasibility-study",
+   "name": "Curbside EV Charging Feasibility Study",
+   "page": "https://www.sfmta.com/projects/curbside-ev-charging-feasibility-study",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:curbside-electric-vehicle-charging-permit-program",
+   "name": "Curbside Electric Vehicle Charging Permit Program",
+   "page": "https://www.sfmta.com/projects/curbside-electric-vehicle-charging-permit-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:18773",
+   "name": "District 11-Wide Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/18773",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2019-07-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:district-2-safety-study",
+   "name": "District 2 Safety Study",
+   "page": "https://www.sfmta.com/projects/district-2-safety-study",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Detailed Design/Legislation, Implementation",
+   "listed": true,
+   "reason": "its page names crossing, quick-build, traffic calming"
+  },
+  {
+   "id": "sfmta:17076",
+   "name": "Divide Feeder Circuit Carl 11",
+   "page": "https://www.sfmta.com/node/17076",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "test",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is test"
+  },
+  {
+   "id": "sfmta:24295",
+   "name": "Divisadero Intersection Improvements",
+   "page": "https://www.sfmta.com/node/24295",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Drive and Park",
+    "Vision Zero"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2020-09-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:1012",
+   "name": "Division/13th Street Safety Project",
+   "page": "https://www.sfmta.com/node/1012",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:1066",
+   "name": "Dogpatch Parking Management",
+   "page": "https://www.sfmta.com/node/1066",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:15635",
+   "name": "Dogpatch-Central Waterfront Area Transit Connections Study",
+   "page": "https://www.sfmta.com/node/15635",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Taxi",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:1099",
+   "name": "Dolores Street Median Parking",
+   "page": "https://www.sfmta.com/node/1099",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2017-05-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:40860",
+   "name": "Dr. Carlton B. Goodlett Place Quick-Build Project",
+   "page": "https://www.sfmta.com/node/40860",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:eastern-neighborhoods-transportation-implementation-planning-study-en-trips",
+   "name": "Eastern Neighborhoods Transportation Implementation Planning Study (EN TRIPS)",
+   "page": "https://www.sfmta.com/projects/eastern-neighborhoods-transportation-implementation-planning-study-en-trips",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1125",
+   "name": "Eddy Street Two-Way Conversion Project",
+   "page": "https://www.sfmta.com/node/1125",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Vision Zero"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2019-10-16, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:electric-mobility-san-francisco",
+   "name": "Electric Mobility in San Francisco",
+   "page": "https://www.sfmta.com/projects/electric-mobility-san-francisco",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:embarcadero-connectivity-plan",
+   "name": "Embarcadero Connectivity Plan",
+   "page": "https://www.sfmta.com/projects/embarcadero-connectivity-plan",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its page names bike, streetscape"
+  },
+  {
+   "id": "sfmta-page:eureka-curve-tunnel-work",
+   "name": "Eureka Curve Tunnel Work",
+   "page": "https://www.sfmta.com/projects/eureka-curve-tunnel-work",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:22078",
+   "name": "Evans Avenue Quick-Build",
+   "page": "https://www.sfmta.com/node/22078",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:excelsior-residential-parking-expansion",
+   "name": "Excelsior - Mission Terrace/Cayuga Parking Management",
+   "page": "https://www.sfmta.com/projects/excelsior-residential-parking-expansion",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:2083",
+   "name": "Excelsior Neighborhood Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/2083",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:facilities-state-good-repair",
+   "name": "Facilities State of Good Repair",
+   "page": "https://www.sfmta.com/projects/facilities-state-good-repair",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:fillmore-street-transit-and-safety-project",
+   "name": "Fillmore Street Transit and Safety Project",
+   "page": "https://www.sfmta.com/projects/fillmore-street-transit-and-safety-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta-page:flag-stop-conversion-program",
+   "name": "Flag Stop Conversion Program",
+   "page": "https://www.sfmta.com/projects/flag-stop-conversion-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:folsom-street-implementation",
+   "name": "Folsom Street Implementation",
+   "page": "https://www.sfmta.com/projects/folsom-street-implementation",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Implementation/ Construction",
+   "listed": false,
+   "reason": "a section of sfmta:381's page, linked from its row (read 2026-09-29: the Folsom-Howard Streetscape Project page lists “Folsom Street Implementation” and “Howard Street Implementation” as its sections, and both pages give the same May 2026 construction update for Folsom from 8th to 11th Street)"
+  },
+  {
+   "id": "sfmta:20169",
+   "name": "Folsom Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/20169",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:381",
+   "name": "Folsom-Howard Streetscape Project",
+   "page": "https://www.sfmta.com/node/381",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:17037",
+   "name": "Forest Hill Irrigation Improvement Project",
+   "page": "https://www.sfmta.com/node/17037",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its page says “agency partners, community support and Supervisor Yee, the Forest Hill Irrigation Improvement Project was successfully completed in late June.”"
+  },
+  {
+   "id": "sfmta:26250",
+   "name": "Franklin Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/26250",
+   "onLayer": true,
+   "tags": [
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:16609",
+   "name": "Frida Kahlo / Ocean / Geneva (F.O.G) Study",
+   "page": "https://www.sfmta.com/node/16609",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:27467",
+   "name": "Frida Kahlo Way Quick-Build Project",
+   "page": "https://www.sfmta.com/node/27467",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2026-08-31, has passed and SFMTA's page gives its status as Completed"
+  },
+  {
+   "id": "sfmta:20010",
+   "name": "Fulton Street Safety and Transit Project",
+   "page": "https://www.sfmta.com/node/20010",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Complete",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:15300",
+   "name": "Geary Boulevard Improvement Project",
+   "page": "https://www.sfmta.com/node/15300",
+   "onLayer": true,
+   "tags": [
+    "All"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": "Construction",
+   "listed": true,
+   "reason": "its page names pedestrian, quick-build, safety project"
+  },
+  {
+   "id": "sfmta:410",
+   "name": "Geary Rapid Project",
+   "page": "https://www.sfmta.com/node/410",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward",
+    "Vision Zero"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Substantially Completed",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:29723",
+   "name": "Geneva Avenue Traffic Signal Upgrades",
+   "page": "https://www.sfmta.com/node/29723",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:1097",
+   "name": "Geneva-San Jose Intersection Study",
+   "page": "https://www.sfmta.com/node/1097",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta-page:gilman-avenue-streetscape-project",
+   "name": "Gilman Avenue Streetscape Project",
+   "page": "https://www.sfmta.com/projects/gilman-avenue-streetscape-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2018, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta:21263",
+   "name": "Golden Gate Avenue Quick-Build",
+   "page": "https://www.sfmta.com/node/21263",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Project is substantially complete. The 100 block of Golden Gate Ave installation is pending ongoing development happening on that block.",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:golden-gate-avenue-safety-project",
+   "name": "Golden Gate Avenue Safety Project",
+   "page": "https://www.sfmta.com/projects/golden-gate-avenue-safety-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2024, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta:24778",
+   "name": "Golden Gate Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/24778",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:24645",
+   "name": "Golden Gate Park Access and Safety Program",
+   "page": "https://www.sfmta.com/node/24645",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:632",
+   "name": "Golden Gate Park Traffic Safety Project",
+   "page": "https://www.sfmta.com/node/632",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:27583",
+   "name": "Great Highway Pilot Project",
+   "page": "https://www.sfmta.com/node/27583",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:29724",
+   "name": "Great Highway Traffic Signal Upgrades",
+   "page": "https://www.sfmta.com/node/29724",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:29270",
+   "name": "Guerrero Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/29270",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:19957",
+   "name": "Hayes Valley Parking and Curb Management Plan",
+   "page": "https://www.sfmta.com/node/19957",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta:27614",
+   "name": "Hearst Avenue Slow Street",
+   "page": "https://www.sfmta.com/node/27614",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta-page:high-density-housing-impact-neighborhood-parking",
+   "name": "High Density Housing--Impact on Neighborhood Parking",
+   "page": "https://www.sfmta.com/projects/high-density-housing-impact-neighborhood-parking",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:howard-street-implementation",
+   "name": "Howard Street Implementation",
+   "page": "https://www.sfmta.com/projects/howard-street-implementation",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its page names bike, crossing, pedestrian, quick-build, safety project, signal, streetscape, traffic calming"
+  },
+  {
+   "id": "sfmta:20166",
+   "name": "Howard Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/20166",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:26378",
+   "name": "Hyde Street Quick-Build",
+   "page": "https://www.sfmta.com/node/26378",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Completed",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:harney-101-transit-crossing-project",
+   "name": "Improving transportation connections between Candlestick Point, Executive Park, and Caltrain",
+   "page": "https://www.sfmta.com/projects/harney-101-transit-crossing-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta:16577",
+   "name": "Indiana Street Bikeway Project",
+   "page": "https://www.sfmta.com/node/16577",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:inner-sunset-curb-management-project",
+   "name": "Inner Sunset Curb Management Project",
+   "page": "https://www.sfmta.com/projects/inner-sunset-curb-management-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names pedestrian, streetscape)"
+  },
+  {
+   "id": "sfmta:888",
+   "name": "Inner Sunset Streetscape Improvement Project",
+   "page": "https://www.sfmta.com/node/888",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Completed",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:45074",
+   "name": "Innes Avenue Quick-Build Project",
+   "page": "https://www.sfmta.com/node/45074",
+   "onLayer": true,
+   "tags": [
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Quick-Build, Walk"
+  },
+  {
+   "id": "sfmta:367",
+   "name": "Islais Creek Motor Coach Facility",
+   "page": "https://www.sfmta.com/node/367",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only streetscape)"
+  },
+  {
+   "id": "sfmta-page:j-church-improvement-project",
+   "name": "J Church Improvement Project",
+   "page": "https://www.sfmta.com/projects/j-church-improvement-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta:18777",
+   "name": "J Church Safety and Accessibility Project: San Jose Avenue",
+   "page": "https://www.sfmta.com/node/18777",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": "Construction",
+   "listed": true,
+   "reason": "its page names crossing, pedestrian, safety project, signal"
+  },
+  {
+   "id": "sfmta-page:j-church-surface-only-route",
+   "name": "J Church Surface-only Route",
+   "page": "https://www.sfmta.com/projects/j-church-surface-only-route",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:j-church-and-m-ocean-view-transit-and-safety-improvements",
+   "name": "J Church and M Ocean View Transit and Safety Improvements",
+   "page": "https://www.sfmta.com/projects/j-church-and-m-ocean-view-transit-and-safety-improvements",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Construction",
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta-page:john-f-kennedy-drive-separated-bikeways",
+   "name": "JFK Drive Protected Bikeway",
+   "page": "https://www.sfmta.com/projects/john-f-kennedy-drive-separated-bikeways",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2012, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta:45483",
+   "name": "Jackson Square Parking and Traffic Improvements",
+   "page": "https://www.sfmta.com/node/45483",
+   "onLayer": true,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "no bike or pedestrian scope; listed because its line runs on a plan block"
+  },
+  {
+   "id": "sfmta:44133",
+   "name": "Jefferson Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44133",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:24436",
+   "name": "Jones Street Quick-Build",
+   "page": "https://www.sfmta.com/node/24436",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:27873",
+   "name": "K Ingleside Rapid Project",
+   "page": "https://www.sfmta.com/node/27873",
+   "onLayer": true,
+   "tags": [
+    "Muni Forward"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its page names bike, quick-build, safety project"
+  },
+  {
+   "id": "sfmta-page:king-substation-improvement-project",
+   "name": "King Substation Improvement Project",
+   "page": "https://www.sfmta.com/projects/king-substation-improvement-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:kirkham-street-neckdown-project",
+   "name": "Kirkham Street Neckdown Project",
+   "page": "https://www.sfmta.com/projects/kirkham-street-neckdown-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says traffic calming"
+  },
+  {
+   "id": "sfmta-page:kirkland-yard-electrification-project",
+   "name": "Kirkland Yard Electrification Project",
+   "page": "https://www.sfmta.com/projects/kirkland-yard-electrification-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only streetscape)"
+  },
+  {
+   "id": "sfmta:790",
+   "name": "L Taraval Improvement Project",
+   "page": "https://www.sfmta.com/node/790",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni",
+    "Muni Forward",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Complete 2024",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:lake-merced-bikeway-feasibility-project",
+   "name": "Lake Merced Bikeway Feasibility Project",
+   "page": "https://www.sfmta.com/projects/lake-merced-bikeway-feasibility-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2021, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta:21369",
+   "name": "Lake Merced Pedestrian Safety Project",
+   "page": "https://www.sfmta.com/node/21369",
+   "onLayer": true,
+   "tags": [
+    "Community Based Transportation Plan",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Planning",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:24472",
+   "name": "Lake Merced Quick-Build Project",
+   "page": "https://www.sfmta.com/node/24472",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:24767",
+   "name": "Lake Slow Street",
+   "page": "https://www.sfmta.com/node/24767",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2022-11-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:land-use-development-transportation-integration",
+   "name": "Land Use Development & Transportation Integration",
+   "page": "https://www.sfmta.com/projects/land-use-development-transportation-integration",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:29279",
+   "name": "Larkin Street Quick-Build",
+   "page": "https://www.sfmta.com/node/29279",
+   "onLayer": true,
+   "tags": [
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:1267",
+   "name": "Laurel Heights/Jordan Park Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/1267",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:21616",
+   "name": "Leavenworth Quick-Build",
+   "page": "https://www.sfmta.com/node/21616",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:lincoln-way-new-traffic-signals",
+   "name": "Lincoln Way New Traffic Signals",
+   "page": "https://www.sfmta.com/projects/lincoln-way-new-traffic-signals",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says signal"
+  },
+  {
+   "id": "sfmta:27084",
+   "name": "Lincoln Way Quick-Build Project",
+   "page": "https://www.sfmta.com/node/27084",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:41688",
+   "name": "Lincoln and Sloat Quick-Build Connections Project",
+   "page": "https://www.sfmta.com/node/41688",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: every milestone on its timeline is marked Completed and dated in the past"
+  },
+  {
+   "id": "sfmta:848",
+   "name": "Lombard Street Vision Zero Project",
+   "page": "https://www.sfmta.com/node/848",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:16420",
+   "name": "Lower Great Highway Pedestrian Improvements Project",
+   "page": "https://www.sfmta.com/node/16420",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:27615",
+   "name": "Lyon Slow Street",
+   "page": "https://www.sfmta.com/node/27615",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:438",
+   "name": "M Ocean View Improvements (Rossmoor Drive and Junipero Serra)",
+   "page": "https://www.sfmta.com/node/438",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:m-ocean-view-transit-and-safety-project",
+   "name": "M Ocean View Transit and Safety Project",
+   "page": "https://www.sfmta.com/projects/m-ocean-view-transit-and-safety-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Quick-Build Implementation and Detailed Design",
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta:27339",
+   "name": "Main Street Streetscape Project",
+   "page": "https://www.sfmta.com/node/27339",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:29716",
+   "name": "Marin Facility Site Improvements",
+   "page": "https://www.sfmta.com/node/29716",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:853",
+   "name": "Masonic Avenue Streetscape Project",
+   "page": "https://www.sfmta.com/node/853",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:meeting-transportation-needs-growing-city-sfmta-budget-fiscal-years-2021-2022",
+   "name": "Meeting the Transportation Needs of a Growing City - SFMTA Budget for Fiscal Years 2021-2022",
+   "page": "https://www.sfmta.com/projects/meeting-transportation-needs-growing-city-sfmta-budget-fiscal-years-2021-2022",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:mid-irving-parking-and-curb-management",
+   "name": "Mid-Irving Parking and Curb Management",
+   "page": "https://www.sfmta.com/projects/mid-irving-parking-and-curb-management",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only pedestrian)"
+  },
+  {
+   "id": "sfmta-page:mid-market-street-loading-evaluation",
+   "name": "Mid-Market Street Loading Evaluation",
+   "page": "https://www.sfmta.com/projects/mid-market-street-loading-evaluation",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:27616",
+   "name": "Minnesota Slow Street",
+   "page": "https://www.sfmta.com/node/27616",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2024-11-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:2403",
+   "name": "Mission / Geneva Safety Project",
+   "page": "https://www.sfmta.com/node/2403",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "finished: its published end, 2026-04-30, has passed, though SFMTA's project layer still gives its status as Legislated"
+  },
+  {
+   "id": "sfmta:44135",
+   "name": "Mission Bay Blvd Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44135",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:391",
+   "name": "Mission Bay Loop",
+   "page": "https://www.sfmta.com/node/391",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:21467",
+   "name": "Mission Street SoMa Transit Improvements (Formerly Temporary Emergency Transit Lanes)",
+   "page": "https://www.sfmta.com/node/21467",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: every milestone on its timeline is marked Completed and dated in the past"
+  },
+  {
+   "id": "sfmta-page:mission-traction-power-improvement-project",
+   "name": "Mission Traction Power Improvement Project",
+   "page": "https://www.sfmta.com/projects/mission-traction-power-improvement-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its page says “Work on this project has been substantially completed.”"
+  },
+  {
+   "id": "sfmta-page:mission-highland-bus-stop-infrastructure-improvements",
+   "name": "Mission at Highland Bus Stop & Infrastructure Improvements",
+   "page": "https://www.sfmta.com/projects/mission-highland-bus-stop-infrastructure-improvements",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:43812",
+   "name": "Mobility Hub Plan - Southeastern San Francisco",
+   "page": "https://www.sfmta.com/node/43812",
+   "onLayer": true,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:mobility-permit-harmonization",
+   "name": "Mobility Permit Harmonization",
+   "page": "https://www.sfmta.com/projects/mobility-permit-harmonization",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:modernizing-san-franciscos-parking-meter-hours",
+   "name": "Modernizing San Francisco's Parking Meter Hours",
+   "page": "https://www.sfmta.com/projects/modernizing-san-franciscos-parking-meter-hours",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:44778",
+   "name": "Monterey Boulevard Pedestrian Safety Improvement Project",
+   "page": "https://www.sfmta.com/node/44778",
+   "onLayer": true,
+   "tags": [
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Walk"
+  },
+  {
+   "id": "sfmta-page:muni-art-program",
+   "name": "Muni Art",
+   "page": "https://www.sfmta.com/projects/muni-art-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-krithika-sengottaiyan-artist-page",
+   "name": "Muni Art 2022 - Krithika Sengottaiyan Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-krithika-sengottaiyan-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-richard-louis-perri-artist-page",
+   "name": "Muni Art 2022 - Richard Louis Perri Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-richard-louis-perri-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-sebastian-raphael-artist-page",
+   "name": "Muni Art 2022 - Sebastian Raphael Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-sebastian-raphael-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-steffan-sanguinetti-artist-page",
+   "name": "Muni Art 2022 - Steffan Sanguinetti Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-steffan-sanguinetti-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-streets-san-francisco",
+   "name": "Muni Art 2022 - Streets of San Francisco",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-streets-san-francisco",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-tan-sirinumas-artist-page",
+   "name": "Muni Art 2022 - Tan Sirinumas Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-tan-sirinumas-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-poem-golden-gate",
+   "name": "Muni Art 2022 Poem - At the Golden Gate",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-golden-gate",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-poem-populist-manifesto",
+   "name": "Muni Art 2022 Poem - Populist Manifesto",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-populist-manifesto",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-poem-recipe-happiness-khabarovsk-or-anyplace",
+   "name": "Muni Art 2022 Poem - Recipe for Happiness in Khabarovsk or Anyplace",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-recipe-happiness-khabarovsk-or-anyplace",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-poem-changing-light",
+   "name": "Muni Art 2022 Poem - The Changing Light",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-changing-light",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-poem-changing-light-low-vision-accessible-version",
+   "name": "Muni Art 2022 Poem - The Changing Light (low-vision-accessible version)",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-changing-light-low-vision-accessible-version",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2022-poem-what-poetry",
+   "name": "Muni Art 2022 Poem - from What is Poetry?",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-what-poetry",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-alice-wu-artist-page",
+   "name": "Muni Art 2023 - Alice W. Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-alice-wu-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-annie-aguilar-artist-page",
+   "name": "Muni Art 2023 - Annie A. Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-annie-aguilar-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-isabel-lombardi-coronel-artist-page",
+   "name": "Muni Art 2023 - Isabel l. Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-isabel-lombardi-coronel-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-natalie-deiner-artist-page",
+   "name": "Muni Art 2023 - Natalie D. Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-natalie-deiner-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-sights-san-francisco",
+   "name": "Muni Art 2023 - Sights of San Francisco",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-sights-san-francisco",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-vilma-ramirez-artist-page",
+   "name": "Muni Art 2023 - Vilma R. Artist Page",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-vilma-ramirez-artist-page",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-poem-i-chinatown-jake-dominguez",
+   "name": "Muni Art 2023 Poem - I Like Chinatown by Jake Dominguez",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-poem-i-chinatown-jake-dominguez",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-poem-botanical-gardens-maya-van-artsdalen",
+   "name": "Muni Art 2023 Poem - The Botanical Gardens by Maya Van Artsdalen",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-poem-botanical-gardens-maya-van-artsdalen",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-poem-rhythm-baker-beach-vanessa-rodriguez",
+   "name": "Muni Art 2023 Poem - The Rhythm of Baker Beach by Vanessa Rodriguez",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-poem-rhythm-baker-beach-vanessa-rodriguez",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-poem-wondrous-san-francisco-zoo-jennifer-lopez",
+   "name": "Muni Art 2023 Poem - The Wondrous San Francisco Zoo by Jennifer Lopez",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-poem-wondrous-san-francisco-zoo-jennifer-lopez",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-art-2023-poem-what-you-get-bernal-heights-abner-valencia",
+   "name": "Muni Art 2023 Poem - What You Get at Bernal Heights by Abner Valencia",
+   "page": "https://www.sfmta.com/projects/muni-art-program/muni-art-2023-poem-what-you-get-bernal-heights-abner-valencia",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1089",
+   "name": "Muni Elevators Modernization",
+   "page": "https://www.sfmta.com/node/1089",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only streetscape)"
+  },
+  {
+   "id": "sfmta-page:muni-forward",
+   "name": "Muni Forward",
+   "page": "https://www.sfmta.com/projects/muni-forward",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names crossing, pedestrian, quick-build, safety project, signal but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:952",
+   "name": "Muni Forward 5 Fulton Rapid Proposal",
+   "page": "https://www.sfmta.com/node/952",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not current: listed only because its page's words name crossing, pedestrian, signal, traffic calming, and its page dates no work since 2025-11 (latest nothing dated) and the coordination feed carries no job for it"
+  },
+  {
+   "id": "sfmta:823",
+   "name": "Muni Forward 9 San Bruno Rapid Proposal",
+   "page": "https://www.sfmta.com/node/823",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not current: listed only because its page's words name pedestrian, signal, and its page dates no work since 2025-11 (latest nothing dated) and the coordination feed carries no job for it"
+  },
+  {
+   "id": "sfmta-page:muni-forward-rapid-network",
+   "name": "Muni Forward Rapid Network",
+   "page": "https://www.sfmta.com/projects/muni-forward-rapid-network",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-forward-transit-priority-projects",
+   "name": "Muni Forward Transit Priority Projects",
+   "page": "https://www.sfmta.com/projects/muni-forward-transit-priority-projects",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names pedestrian, signal but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:muni-forward-enhancing-safety-and-access",
+   "name": "Muni Forward: Enhancing Safety and Access",
+   "page": "https://www.sfmta.com/projects/muni-forward-enhancing-safety-and-access",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names pedestrian, safety project but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:muni-funding-working-group",
+   "name": "Muni Funding Working Group",
+   "page": "https://www.sfmta.com/projects/muni-funding-working-group",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:27648",
+   "name": "Muni Gets You to Downtown",
+   "page": "https://www.sfmta.com/node/27648",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "a programme, not a project: its name names no street, and its SFMTA page (https://www.sfmta.com/node/27648) has no timeline or phase of its own"
+  },
+  {
+   "id": "sfmta-page:muni-metro-capacity-study",
+   "name": "Muni Metro Capacity Study",
+   "page": "https://www.sfmta.com/projects/muni-metro-capacity-study",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:22218",
+   "name": "Muni Metro East Bus Yard and 1399 Marin Street Facility",
+   "page": "https://www.sfmta.com/node/22218",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": "Design",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only pedestrian)"
+  },
+  {
+   "id": "sfmta-page:muni-metro-east-storage-site-improvements",
+   "name": "Muni Metro East Storage Site Improvements",
+   "page": "https://www.sfmta.com/projects/muni-metro-east-storage-site-improvements",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Planning",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:8053",
+   "name": "Muni Metro Escalator Rehabilitation Project",
+   "page": "https://www.sfmta.com/node/8053",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only streetscape)"
+  },
+  {
+   "id": "sfmta-page:muni-metro-modernization",
+   "name": "Muni Metro Modernization",
+   "page": "https://www.sfmta.com/projects/muni-metro-modernization",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-metro-rail-grinding-services-phase-1",
+   "name": "Muni Metro Rail Grinding Services - Phase 1",
+   "page": "https://www.sfmta.com/projects/muni-metro-rail-grinding-services-phase-1",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1141",
+   "name": "Muni Metro Station Enhancements",
+   "page": "https://www.sfmta.com/node/1141",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta-page:muni-service-equity-strategy",
+   "name": "Muni Service Equity Strategy",
+   "page": "https://www.sfmta.com/projects/muni-service-equity-strategy",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "2018 Equity Strategy Community Outreach",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:muni-stop-lighting-project",
+   "name": "Muni Stop Lighting Project",
+   "page": "https://www.sfmta.com/projects/muni-stop-lighting-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta:434",
+   "name": "Muni Subway Expansion Project",
+   "page": "https://www.sfmta.com/node/434",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": "Planning",
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:munisafe-enhancing-security-customers-and-staff",
+   "name": "MuniSafe: Enhancing Security for Customers and Staff on Muni",
+   "page": "https://www.sfmta.com/projects/munisafe-enhancing-security-customers-and-staff",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:n-judah-layover-pilot",
+   "name": "N Judah Layover Pilot",
+   "page": "https://www.sfmta.com/projects/n-judah-layover-pilot",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:n-judah-transit-safety-project",
+   "name": "N Judah Transit & Safety Project",
+   "page": "https://www.sfmta.com/projects/n-judah-transit-safety-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta-page:muni-trolley-coach-upgrade-and-expansion",
+   "name": "New and Improved Zero-Emission Electric Trolley Coach Fleet",
+   "page": "https://www.sfmta.com/projects/muni-trolley-coach-upgrade-and-expansion",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, safety project but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:next-generation-customer-information-system",
+   "name": "Next Generation Customer Information System",
+   "page": "https://www.sfmta.com/projects/next-generation-customer-information-system",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:29727",
+   "name": "No Turn on Red Downtown Expansion Project",
+   "page": "https://www.sfmta.com/node/29727",
+   "onLayer": true,
+   "tags": [
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:27617",
+   "name": "Noe Slow Street and Duboce Triangle Planning Study",
+   "page": "https://www.sfmta.com/node/27617",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its published end, 2025-11-30, has passed, though SFMTA's project layer still gives its status as Planning"
+  },
+  {
+   "id": "sfmta:1305",
+   "name": "Northbound San Jose Avenue and I-280 Off-Ramp Road Diet Pilot Project",
+   "page": "https://www.sfmta.com/node/1305",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:18982",
+   "name": "Northeast Mission Parking and Curb Management Project",
+   "page": "https://www.sfmta.com/node/18982",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not current: no bike or pedestrian scope, and its page dates nothing since 2024-11 (latest nothing dated) and the coordination feed carries no job for it"
+  },
+  {
+   "id": "sfmta-page:northern-embarcadero-quick-build-project",
+   "name": "Northern Embarcadero Quick-Build Project",
+   "page": "https://www.sfmta.com/projects/northern-embarcadero-quick-build-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest none, from nothing dated)"
+  },
+  {
+   "id": "sfmta:1049",
+   "name": "Northwest Bernal Heights Residential Permit Parking Area",
+   "page": "https://www.sfmta.com/node/1049",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Drive and Park"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:28565",
+   "name": "Oak Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28565",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:zoo-access-safety-and-connectivity",
+   "name": "Ocean Beach Climate Change Adaptation Project: Initial Improvements",
+   "page": "https://www.sfmta.com/projects/zoo-access-safety-and-connectivity",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its page names bike, crossing, pedestrian, quick-build, safety project, signal, streetscape, traffic calming"
+  },
+  {
+   "id": "sfmta:934",
+   "name": "Octavia Boulevard Enhancement Program",
+   "page": "https://www.sfmta.com/node/934",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2021-12-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta-page:street-shared-vehicle-parking-permit-program",
+   "name": "On-Street Shared Vehicle Parking Permit Program",
+   "page": "https://www.sfmta.com/projects/street-shared-vehicle-parking-permit-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:363",
+   "name": "Operator Convenience Facility Project",
+   "page": "https://www.sfmta.com/node/363",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": "Phase 3",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only streetscape)"
+  },
+  {
+   "id": "sfmta-page:bayview-community-shuttle",
+   "name": "Our Community, Our Shuttle",
+   "page": "https://www.sfmta.com/projects/bayview-community-shuttle",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Shuttle Operating",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:23005",
+   "name": "Outer Sunset Traffic Management Project",
+   "page": "https://www.sfmta.com/node/23005",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:19953",
+   "name": "Page Slow Street",
+   "page": "https://www.sfmta.com/node/19953",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:21852",
+   "name": "Panhandle Social Distancing and Safety Project",
+   "page": "https://www.sfmta.com/node/21852",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:park-presidio-lombard-temporary-hov-lanes",
+   "name": "Park Presidio Lombard Temporary HOV Lanes",
+   "page": "https://www.sfmta.com/projects/park-presidio-lombard-temporary-hov-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:1081",
+   "name": "Parking Access Revenue Control Systems",
+   "page": "https://www.sfmta.com/node/1081",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Finance and Administration"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:18386",
+   "name": "Parking Management for Northern Potrero Hill",
+   "page": "https://www.sfmta.com/node/18386",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not current: no bike or pedestrian scope, and its page dates nothing since 2024-11 (latest 2020-02) and the coordination feed carries no job for it"
+  },
+  {
+   "id": "sfmta:762",
+   "name": "Parkmerced Project",
+   "page": "https://www.sfmta.com/node/762",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:1091",
+   "name": "Paul Avenue Bike Lane Project",
+   "page": "https://www.sfmta.com/node/1091",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2017-01-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:39457",
+   "name": "Pay or Permit Parking Expansion Project",
+   "page": "https://www.sfmta.com/node/39457",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": "Planning & Outreach",
+   "listed": true,
+   "reason": "no bike or pedestrian scope; listed because its line runs on a plan block"
+  },
+  {
+   "id": "sfmta-page:paying-your-fares-keeps-us-moving",
+   "name": "Paying Your Fares Keeps Us Moving",
+   "page": "https://www.sfmta.com/projects/paying-your-fares-keeps-us-moving",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:planning-and-engineering-internship-program",
+   "name": "Planning and Engineering Internship Program",
+   "page": "https://www.sfmta.com/projects/planning-and-engineering-internship-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta-page:play-streets",
+   "name": "Play Streets",
+   "page": "https://www.sfmta.com/projects/play-streets",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2017, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta-page:point-lobos-quick-build-project",
+   "name": "Point Lobos Quick-Build Project",
+   "page": "https://www.sfmta.com/projects/point-lobos-quick-build-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest none, from nothing dated)"
+  },
+  {
+   "id": "sfmta:1202",
+   "name": "Polk Streetscape Project",
+   "page": "https://www.sfmta.com/node/1202",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:1127",
+   "name": "Potrero Avenue Streetscape Improvement project",
+   "page": "https://www.sfmta.com/node/1127",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni Forward",
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:17831",
+   "name": "Potrero Yard Modernization Project",
+   "page": "https://www.sfmta.com/node/17831",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Muni Forward"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names bike, pedestrian, streetscape)"
+  },
+  {
+   "id": "sfmta-page:powell-street-safety-project",
+   "name": "Powell Street Light Safety Project",
+   "page": "https://www.sfmta.com/projects/powell-street-safety-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta:1053",
+   "name": "Powell Street Promenade Refresh",
+   "page": "https://www.sfmta.com/node/1053",
+   "onLayer": true,
+   "tags": [
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": "Detailed Design",
+   "listed": false,
+   "reason": "finished: its published end, 2025-12-31, has passed, though SFMTA's project layer still gives its status as Detailed Design"
+  },
+  {
+   "id": "sfmta:926",
+   "name": "Powell Street Safety and Sidewalk Improvement Pilot",
+   "page": "https://www.sfmta.com/node/926",
+   "onLayer": true,
+   "tags": [
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:powered-scooter-share-permit-program",
+   "name": "Powered Scooter Share Permit Program",
+   "page": "https://www.sfmta.com/projects/powered-scooter-share-permit-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only pedestrian)"
+  },
+  {
+   "id": "sfmta-page:historic-presidential-commission-car-rehabilitations-and-upgrades",
+   "name": "Preserving the Iconic Historic Streetcar Fleet",
+   "page": "https://www.sfmta.com/projects/historic-presidential-commission-car-rehabilitations-and-upgrades",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:vintage-streetcar-rehabilitations-and-upgrades",
+   "name": "Preserving the Iconic Historic Streetcar Fleet",
+   "page": "https://www.sfmta.com/projects/vintage-streetcar-rehabilitations-and-upgrades",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Detailed Design",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:presidio-facility-bus-lifts-improvement-project",
+   "name": "Presidio Facility Bus Lifts Improvement Project",
+   "page": "https://www.sfmta.com/projects/presidio-facility-bus-lifts-improvement-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:presidio-yard-modernization-project",
+   "name": "Presidio Yard Modernization Project",
+   "page": "https://www.sfmta.com/projects/presidio-yard-modernization-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names bike, safety project)"
+  },
+  {
+   "id": "sfmta-page:private-transit-vehicle-permitting",
+   "name": "Private Transit Vehicle Permitting",
+   "page": "https://www.sfmta.com/projects/private-transit-vehicle-permitting",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:legacy-light-rail-vehicle-overhauls",
+   "name": "Proactively Maintaining our Legacy Light Rail Vehicles",
+   "page": "https://www.sfmta.com/projects/legacy-light-rail-vehicle-overhauls",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:project-reports",
+   "name": "Project Reports",
+   "page": "https://www.sfmta.com/projects/project-reports",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names quick-build, slow street, streetscape but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:project-updates",
+   "name": "Project Updates",
+   "page": "https://www.sfmta.com/projects/project-updates",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names crossing, quick-build but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:prop-a-muni-reliability-and-street-safety-bond",
+   "name": "Prop A: Muni Reliability and Street Safety Bond",
+   "page": "https://www.sfmta.com/projects/prop-a-muni-reliability-and-street-safety-bond",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2022, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:proposed-transit-improvements-geary-park-presidio",
+   "name": "Proposed Transit Improvements on Geary at Park Presidio",
+   "page": "https://www.sfmta.com/projects/proposed-transit-improvements-geary-park-presidio",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2022, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:rail-work",
+   "name": "Rail Work",
+   "page": "https://www.sfmta.com/projects/rail-work",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:846",
+   "name": "Raised Bikeway Demonstration Project",
+   "page": "https://www.sfmta.com/node/846",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:residential-parking-permit-evaluation-reform-project",
+   "name": "Residential Parking Permit",
+   "page": "https://www.sfmta.com/projects/residential-parking-permit-evaluation-reform-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:sf-planning-0and-ceqa",
+   "name": "SF Planning and CEQA",
+   "page": "https://www.sfmta.com/projects/potrero-yard-modernization-project/sf-planning-0and-ceqa",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:sfmta-bancroft-facility-improvement-project",
+   "name": "SFMTA Bancroft Facility Improvement Project",
+   "page": "https://www.sfmta.com/projects/sfmta-bancroft-facility-improvement-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names crossing)"
+  },
+  {
+   "id": "sfmta-page:sfmta-budget-planning-fy-2026-27-and-fy-2027-28",
+   "name": "SFMTA Budget Planning - FY 2026-27 and FY 2027-28",
+   "page": "https://www.sfmta.com/projects/sfmta-budget-planning-fy-2026-27-and-fy-2027-28",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta-page:sfmta-budget-planning-fiscal-years-2023-2024",
+   "name": "SFMTA Budget Planning - Fiscal Years 2023 & 2024",
+   "page": "https://www.sfmta.com/projects/sfmta-budget-planning-fiscal-years-2023-2024",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names pedestrian, quick-build, safety project, signal but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:sfmta-budget-planning-fiscal-years-2025-2026",
+   "name": "SFMTA Budget Planning - Fiscal Years 2025 & 2026",
+   "page": "https://www.sfmta.com/projects/sfmta-budget-planning-fiscal-years-2025-2026",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta-page:sfmta-joint-development-program",
+   "name": "SFMTA Joint Development Program",
+   "page": "https://www.sfmta.com/projects/sfmta-joint-development-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:sfmta-parking-facilities-elevator-upgrades",
+   "name": "SFMTA Parking Facilities Elevator Upgrades",
+   "page": "https://www.sfmta.com/projects/sfmta-parking-facilities-elevator-upgrades",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Beginning",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:sfmta-parking-facilities-lighting-upgrades",
+   "name": "SFMTA Parking Facilities Lighting Upgrades",
+   "page": "https://www.sfmta.com/projects/sfmta-parking-facilities-lighting-upgrades",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:sfpark-pilot-program",
+   "name": "SFpark Pilot Program",
+   "page": "https://www.sfmta.com/projects/sfpark-pilot-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:safe-school-connections",
+   "name": "Safe School Connections",
+   "page": "https://www.sfmta.com/projects/safe-school-connections",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Planning",
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta:364",
+   "name": "Safer Taylor Street",
+   "page": "https://www.sfmta.com/node/364",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:safety-equity-initiative",
+   "name": "Safety Equity Initiative",
+   "page": "https://www.sfmta.com/projects/safety-equity-initiative",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:safety-zone-program",
+   "name": "Safety Zone Program",
+   "page": "https://www.sfmta.com/projects/safety-zone-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, crossing, pedestrian, safety project but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:760",
+   "name": "Salesforce Transit Center",
+   "page": "https://www.sfmta.com/node/760",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, streetscape but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:917",
+   "name": "San Bruno Ave Multimodal Improvement Project",
+   "page": "https://www.sfmta.com/node/917",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Muni Forward",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta-page:san-jose-substation-upgrade-phase-i-project",
+   "name": "San Jose Substation Upgrade Phase I Project",
+   "page": "https://www.sfmta.com/projects/san-jose-substation-upgrade-phase-i-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:27620",
+   "name": "Sanchez Slow Street",
+   "page": "https://www.sfmta.com/node/27620",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2024-11-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:17912",
+   "name": "Sansome and Battery Connections Project",
+   "page": "https://www.sfmta.com/node/17912",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:school-walk-audit-program",
+   "name": "School Walk Audit Program",
+   "page": "https://www.sfmta.com/projects/school-walk-audit-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, crossing, pedestrian, quick-build, safety project, slow street, traffic calming but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:1204",
+   "name": "Second Street Improvement Project",
+   "page": "https://www.sfmta.com/node/1204",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:shared-electric-moped-parking-permit-program",
+   "name": "Shared Electric Moped Parking Permit Program",
+   "page": "https://www.sfmta.com/projects/shared-electric-moped-parking-permit-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:shared-rides-pilot",
+   "name": "Shared Rides Pilot",
+   "page": "https://www.sfmta.com/projects/shared-rides-pilot",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names pedestrian, safety project, signal but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:shared-spaces",
+   "name": "Shared Spaces",
+   "page": "https://www.sfmta.com/projects/shared-spaces",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names pedestrian, slow street but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:27619",
+   "name": "Shotwell Slow Street",
+   "page": "https://www.sfmta.com/node/27619",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2022-11-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:1138",
+   "name": "Shotwell/Capp Neighborway Project",
+   "page": "https://www.sfmta.com/node/1138",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2022-11-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:26728",
+   "name": "Sloat Blvd Quick-Build Project",
+   "page": "https://www.sfmta.com/node/26728",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Legislated",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:855",
+   "name": "Sloat and Skyline Intersection Improvement",
+   "page": "https://www.sfmta.com/node/855",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:post-pandemic-slow-streets",
+   "name": "Slow Streets",
+   "page": "https://www.sfmta.com/projects/post-pandemic-slow-streets",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2021, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-mural-pilot-program",
+   "name": "Slow Streets Mural Pilot Program",
+   "page": "https://www.sfmta.com/projects/slow-streets-mural-pilot-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2024, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-program",
+   "name": "Slow Streets Program",
+   "page": "https://www.sfmta.com/projects/slow-streets-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2023, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-oceanviewparkside",
+   "name": "Slow Streets in Oceanview/Parkside",
+   "page": "https://www.sfmta.com/projects/slow-streets-oceanviewparkside",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-outer-mission",
+   "name": "Slow Streets in Outer Mission",
+   "page": "https://www.sfmta.com/projects/slow-streets-outer-mission",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-soma",
+   "name": "Slow Streets in SoMa",
+   "page": "https://www.sfmta.com/projects/slow-streets-soma",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-visitacion-valley",
+   "name": "Slow Streets in Vis Valley",
+   "page": "https://www.sfmta.com/projects/slow-streets-visitacion-valley",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-bayview",
+   "name": "Slow Streets in the Bayview",
+   "page": "https://www.sfmta.com/projects/slow-streets-bayview",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-inner-sunset",
+   "name": "Slow Streets in the Inner Sunset",
+   "page": "https://www.sfmta.com/projects/slow-streets-inner-sunset",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:slow-streets-western-addition",
+   "name": "Slow Streets in the Western Addition",
+   "page": "https://www.sfmta.com/projects/slow-streets-western-addition",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:smart-city-challenge-2016",
+   "name": "Smart City Challenge 2016",
+   "page": "https://www.sfmta.com/projects/smart-city-challenge-2016",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian, signal but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:28173",
+   "name": "SoMa Slow Streets",
+   "page": "https://www.sfmta.com/node/28173",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:27618",
+   "name": "Somerset Slow Street",
+   "page": "https://www.sfmta.com/node/27618",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:23392",
+   "name": "South Van Ness Avenue Quick-Build Project",
+   "page": "https://www.sfmta.com/node/23392",
+   "onLayer": true,
+   "tags": [
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:southeast-muni-expansion",
+   "name": "Southeast Muni Expansion",
+   "page": "https://www.sfmta.com/projects/southeast-muni-expansion",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Planning and Environmental",
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only quick-build)"
+  },
+  {
+   "id": "sfmta-page:speed-safety-cameras",
+   "name": "Speed Safety Cameras",
+   "page": "https://www.sfmta.com/projects/speed-safety-cameras",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:background",
+   "name": "Speed Safety Cameras Background",
+   "page": "https://www.sfmta.com/projects/speed-safety-cameras/background",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian, safety project but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:sunset-neighborways",
+   "name": "Sunset Neighborways",
+   "page": "https://www.sfmta.com/projects/sunset-neighborways",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Implementation",
+   "listed": true,
+   "reason": "its name says slow street"
+  },
+  {
+   "id": "sfmta:976",
+   "name": "Sunset Tunnel Trackway Improvement Project",
+   "page": "https://www.sfmta.com/node/976",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Completed",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:28582",
+   "name": "Sutter Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28582",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:39914",
+   "name": "Sutter Street Safety Project",
+   "page": "https://www.sfmta.com/node/39914",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": "Planning",
+   "listed": true,
+   "reason": "its name says safety project"
+  },
+  {
+   "id": "sfmta-page:t-third-improvements",
+   "name": "T Third Improvements",
+   "page": "https://www.sfmta.com/projects/t-third-improvements",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only signal)"
+  },
+  {
+   "id": "sfmta-page:telegraph-hill-blvd-and-coit-tower-parking-lot-reconstruction",
+   "name": "Telegraph Hill Blvd and Coit Tower Parking Lot Reconstruction",
+   "page": "https://www.sfmta.com/projects/telegraph-hill-blvd-and-coit-tower-parking-lot-reconstruction",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "transit facility, fleet or parking work, not a street (its page names crossing, pedestrian)"
+  },
+  {
+   "id": "sfmta-page:temporary-emergency-transit-lanes",
+   "name": "Temporary Emergency Transit Lanes",
+   "page": "https://www.sfmta.com/projects/temporary-emergency-transit-lanes",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:tenderloin-covid-19-emergency-streets",
+   "name": "Tenderloin COVID-19 Emergency Streets",
+   "page": "https://www.sfmta.com/projects/tenderloin-covid-19-emergency-streets",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2022, from its dated timeline, notices and meetings)"
+  },
+  {
+   "id": "sfmta-page:tenderloin-speed-limits-and-no-turn-red",
+   "name": "Tenderloin Speed Limits and No Turn on Red",
+   "page": "https://www.sfmta.com/projects/tenderloin-speed-limits-and-no-turn-red",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2021, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta-page:tenderloin-traffic-safety-improvements-project",
+   "name": "Tenderloin Traffic Safety Improvements Project",
+   "page": "https://www.sfmta.com/projects/tenderloin-traffic-safety-improvements-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest none, from nothing dated)"
+  },
+  {
+   "id": "sfmta:29722",
+   "name": "Tenderloin Traffic Signal Upgrades",
+   "page": "https://www.sfmta.com/node/29722",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:21264",
+   "name": "Terry Francois Boulevard Quick-Build",
+   "page": "https://www.sfmta.com/node/21264",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Quick-Build",
+    "Vision Zero"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:21903",
+   "name": "The Embarcadero 2020 Quick-Build Projects",
+   "page": "https://www.sfmta.com/node/21903",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Project Evaluation",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Project Evaluation"
+  },
+  {
+   "id": "sfmta-page:national-transit-adaptation-strategy",
+   "name": "The National Transit Adaptation Strategy",
+   "page": "https://www.sfmta.com/projects/national-transit-adaptation-strategy",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:third-street-bridge-bikeway-connection",
+   "name": "Third Street Bridge Bikeway Connection",
+   "page": "https://www.sfmta.com/projects/third-street-bridge-bikeway-connection",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest 2020, from the latest year its text names)"
+  },
+  {
+   "id": "sfmta:15301",
+   "name": "Third Street Bridge Rehabilitation Project",
+   "page": "https://www.sfmta.com/node/15301",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2019-05-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:1102",
+   "name": "Townsend Corridor Improvement Project",
+   "page": "https://www.sfmta.com/node/1102",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:train-control-upgrade-project",
+   "name": "Train Control Upgrade Project",
+   "page": "https://www.sfmta.com/projects/train-control-upgrade-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": "Detailed Design",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:24302",
+   "name": "Transbay Howard Streetscape Improvement Project",
+   "page": "https://www.sfmta.com/node/24302",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:transit-delay-hot-spots-program",
+   "name": "Transit Delay Hot Spots Program",
+   "page": "https://www.sfmta.com/projects/transit-delay-hot-spots-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:transit-effectiveness-project-tep",
+   "name": "Transit Effectiveness Project (TEP)",
+   "page": "https://www.sfmta.com/projects/transit-effectiveness-project-tep",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:24430",
+   "name": "Transit U Improvement Project",
+   "page": "https://www.sfmta.com/node/24430",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:transportation-2030",
+   "name": "Transportation 2030",
+   "page": "https://www.sfmta.com/projects/transportation-2030",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:transportation-2045",
+   "name": "Transportation 2045",
+   "page": "https://www.sfmta.com/projects/transportation-2045",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only safety project)"
+  },
+  {
+   "id": "sfmta-page:transportation-2050",
+   "name": "Transportation 2050",
+   "page": "https://www.sfmta.com/projects/transportation-2050",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, pedestrian but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:transportation-demand-management",
+   "name": "Transportation Demand Management",
+   "page": "https://www.sfmta.com/projects/transportation-demand-management",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only bike)"
+  },
+  {
+   "id": "sfmta-page:transportation-recovery-plan",
+   "name": "Transportation Recovery Plan",
+   "page": "https://www.sfmta.com/projects/transportation-recovery-plan",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, slow street but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta:826",
+   "name": "Treasure Island and Yerba Buena Island Project",
+   "page": "https://www.sfmta.com/node/826",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Walk"
+  },
+  {
+   "id": "sfmta:851",
+   "name": "Turk Street Safety Project",
+   "page": "https://www.sfmta.com/node/851",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:1032",
+   "name": "Twin Peaks Figure 8 Redesign Project",
+   "page": "https://www.sfmta.com/node/1032",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:twin-peaks-all",
+   "name": "Twin Peaks For All",
+   "page": "https://www.sfmta.com/projects/twin-peaks-all",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "not on SFMTA's project map and nothing dated 2025 or later on its page (latest none, from nothing dated)"
+  },
+  {
+   "id": "sfmta:18160",
+   "name": "Twin Peaks Tunnel Automatic Train Control System (ATCS) W1 Crossover Activation",
+   "page": "https://www.sfmta.com/node/18160",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": "Planning",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:232",
+   "name": "Twin Peaks Tunnel Improvements",
+   "page": "https://www.sfmta.com/node/232",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": "Final Design",
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:twin-peaks-tunnel-inspection-project",
+   "name": "Twin Peaks Tunnel Inspection Project",
+   "page": "https://www.sfmta.com/projects/twin-peaks-tunnel-inspection-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:30254",
+   "name": "Twin Peaks Tunnel Upgrades",
+   "page": "https://www.sfmta.com/node/30254",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:17290",
+   "name": "Two-Car Trains on K and T Routes",
+   "page": "https://www.sfmta.com/node/17290",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:15961",
+   "name": "UCSF Mission Bay Platform Upgrade",
+   "page": "https://www.sfmta.com/node/15961",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:1107",
+   "name": "Underground Fuel Tank Replacement at Muni Kirkland Yard",
+   "page": "https://www.sfmta.com/node/1107",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only pedestrian)"
+  },
+  {
+   "id": "sfmta:340",
+   "name": "Unity Plaza",
+   "page": "https://www.sfmta.com/node/340",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Completed",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:2082",
+   "name": "Upper Clipper Street Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/2082",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Muni"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:933",
+   "name": "Upper Haight Transit Improvement and Pedestrian Realm Project",
+   "page": "https://www.sfmta.com/node/933",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:994",
+   "name": "Upper Market Street Safety Project",
+   "page": "https://www.sfmta.com/node/994",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: its page says “Construction Update - Left Turn Restrictions Coming Soon In summer 2023, the Upper Market Safety Project was substantially completed.”"
+  },
+  {
+   "id": "sfmta:15731",
+   "name": "Valencia Bikeway Improvements",
+   "page": "https://www.sfmta.com/node/15731",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:196",
+   "name": "Van Ness Bus Rapid Transit",
+   "page": "https://www.sfmta.com/node/196",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Drive and Park",
+    "Muni",
+    "Muni Forward",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": "Construction",
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:15963",
+   "name": "Vermont Street Road Diet",
+   "page": "https://www.sfmta.com/node/15963",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": "Outreach",
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2018-05-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:1122",
+   "name": "Vicente Street Bicycle and Pedestrian Safety Project",
+   "page": "https://www.sfmta.com/node/1122",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Drive and Park",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:29748",
+   "name": "Vision Zero Signal Retiming",
+   "page": "https://www.sfmta.com/node/29748",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2024-11-30, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:24619",
+   "name": "Visitacion Valley and Portola Community Based Transportation Plan",
+   "page": "https://www.sfmta.com/node/24619",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Muni",
+    "Muni Forward",
+    "Taxi",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:25208",
+   "name": "Visitacion Valley and Portola Proactive Traffic Calming Project",
+   "page": "https://www.sfmta.com/node/25208",
+   "onLayer": true,
+   "tags": [
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Planning",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:42442",
+   "name": "WalkFirst Rectangular Rapid Flashing Beacons Project",
+   "page": "https://www.sfmta.com/node/42442",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:waterfront-transportation-assessment",
+   "name": "Waterfront Transportation Assessment",
+   "page": "https://www.sfmta.com/projects/waterfront-transportation-assessment",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only streetscape)"
+  },
+  {
+   "id": "sfmta:45549",
+   "name": "West Broadway Tunnel Safety Project",
+   "page": "https://www.sfmta.com/node/45549",
+   "onLayer": true,
+   "tags": [
+    "Walk"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Walk"
+  },
+  {
+   "id": "sfmta-page:west-portal-lk-transfer-project",
+   "name": "West Portal LK Transfer Project",
+   "page": "https://www.sfmta.com/projects/west-portal-lk-transfer-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:30045",
+   "name": "West Portal Station Safety and Community Space Improvements",
+   "page": "https://www.sfmta.com/node/30045",
+   "onLayer": true,
+   "tags": [
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:18951",
+   "name": "West Portal Transit Delay Reduction Pilot",
+   "page": "https://www.sfmta.com/node/18951",
+   "onLayer": true,
+   "tags": [
+    "Muni"
+   ],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names only pedestrian)"
+  },
+  {
+   "id": "sfmta:995",
+   "name": "Western Addition Community Based Transportation Plan Implementation",
+   "page": "https://www.sfmta.com/node/995",
+   "onLayer": true,
+   "tags": [
+    "All",
+    "Accessibility",
+    "Bike",
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Muni",
+    "Taxi",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Current",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished before the plan: its published end, 2023-12-31, is before the Biking and Rolling Plan's adoption on 2025-03-04"
+  },
+  {
+   "id": "sfmta:29729",
+   "name": "Western Addition Community Safe Streets",
+   "page": "https://www.sfmta.com/node/29729",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Detailed Design",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Quick-Build, Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta:29746",
+   "name": "Western Addition Traffic Signal Upgrades Phase 1",
+   "page": "https://www.sfmta.com/node/29746",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Community Based Transportation Plan",
+    "Drive and Park",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Implementation / Construction",
+   "pagePhase": null,
+   "listed": true,
+   "reason": "SFMTA tags it Vision Zero, Walk"
+  },
+  {
+   "id": "sfmta-page:whats-proposition-l",
+   "name": "What's in Proposition L?",
+   "page": "https://www.sfmta.com/projects/whats-proposition-l",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope (its page names bike, crossing, safety project, signal, traffic calming but its name is no street or Muni line, so it is a programme or document page rather than a project on a street)"
+  },
+  {
+   "id": "sfmta-page:what-potrero-yard-modernization-project",
+   "name": "Why Replace the Potrero Yard?",
+   "page": "https://www.sfmta.com/projects/potrero-yard-modernization-project/what-potrero-yard-modernization-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta:807",
+   "name": "Wiggle Neighborhood Green Corridor",
+   "page": "https://www.sfmta.com/node/807",
+   "onLayer": true,
+   "tags": [
+    "Bike",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta:45035",
+   "name": "Winston Drive Quick-Build Project",
+   "page": "https://www.sfmta.com/node/45035",
+   "onLayer": true,
+   "tags": [
+    "Accessibility",
+    "Bike",
+    "Drive and Park",
+    "Muni",
+    "Quick-Build",
+    "Vision Zero",
+    "Walk"
+   ],
+   "layerPhase": "Completed",
+   "pagePhase": null,
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
+  },
+  {
+   "id": "sfmta-page:woods-battery-electric-bus-charging-station-pilot-program",
+   "name": "Woods Battery Electric Bus Charging Station Pilot Program",
+   "page": "https://www.sfmta.com/projects/woods-battery-electric-bus-charging-station-pilot-program",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:bus-wash-system-replacement-project",
+   "name": "Woods Division Bus Wash Replacement Project",
+   "page": "https://www.sfmta.com/projects/bus-wash-system-replacement-project",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  },
+  {
+   "id": "sfmta-page:summer-2025-muni-service-cuts",
+   "name": "summer-2025-muni-service-cuts",
+   "page": "https://www.sfmta.com/projects/summer-2025-muni-service-cuts",
+   "onLayer": false,
+   "tags": [],
+   "layerPhase": null,
+   "pagePhase": null,
+   "listed": false,
+   "reason": "no bike or pedestrian scope"
+  }
+ ]
+}

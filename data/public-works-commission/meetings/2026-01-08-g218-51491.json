@@ -1,0 +1,80 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-01-08",
+ "id": "g218-51491",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51491",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the December 11, 2025 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Pier 80 Maintenance & Repair Roof Replacement - Contract Award"
+  },
+  {
+   "no": "4c",
+   "title": "Various Locations Pavement Renovation No. 85 and Sewer Replacement – Contract Award"
+  },
+  {
+   "no": "4d",
+   "title": "Southeast Health Center Ph. 3 Child and Family Therapy Renovation – Contract Modification"
+  },
+  {
+   "no": "4e",
+   "title": "As-Needed Mechanical Engineering Services No. 3, Contract ID 1000031114 – Contract Modification"
+  },
+  {
+   "no": "5",
+   "title": "Zuckerberg San Francisco General Hospital Building 5 Inpatient Adolescent Behavioral Health Services Tenant Improvement Buildout – Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Public Works Department Strategic Plan Update"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Closed Session – Conference with Legal Counsel Regarding Existing Litigation"
+  },
+  {
+   "no": "10",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a). Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

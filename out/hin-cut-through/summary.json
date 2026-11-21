@@ -1,0 +1,1095 @@
+{
+ "about": "Residential blocks (centerline classcode 5, STREETS layers) and main-street blocks (main_streets) by two-way peak-hour vehicles, by how the volume was found. See scripts/hin-cut-through.py.",
+ "calibration": {
+  "blocks": 547,
+  "class_agree": 154,
+  "class_within_one": 387,
+  "median": 0.1023,
+  "modal_class_guess": 207,
+  "note": "counted residential block's daily / its parallel main block's daily (counted or modelled)",
+  "p25": 0.0415,
+  "p75": 0.2536
+ },
+ "carried_validation": {
+  "floor_held": 519,
+  "floor_held_90_plus": 260,
+  "note": "next counted block's peak less this block's vehicles, against this block's own count",
+  "pairs": 646,
+  "pairs_floor_90_plus": 370
+ },
+ "champ_vs_count": {
+  "blocks": 103,
+  "median_ratio": 1.722,
+  "ratio_p25": 0.655,
+  "ratio_p75": 2.886,
+  "scale_applied": 0.581,
+  "unscaled_classes": {
+   "0": 132,
+   "1": 121,
+   "2": 240,
+   "3": 251,
+   "4": 213,
+   "5": 56
+  }
+ },
+ "classes": [
+  {
+   "carried": {
+    "blocks": 0,
+    "blocks_after_residents": 36,
+    "miles": 0.0,
+    "people": 0
+   },
+   "class": 0,
+   "daily_from": 0,
+   "daily_to": 903,
+   "estimated": {
+    "blocks": 711,
+    "blocks_after_residents": 809,
+    "miles": 55.4,
+    "people": 9
+   },
+   "label": "under 1.5 a minute",
+   "measured": {
+    "blocks": 424,
+    "blocks_after_residents": 482,
+    "miles": 40.2,
+    "people": 8
+   },
+   "modelled": {
+    "blocks": 223,
+    "blocks_after_residents": 251,
+    "miles": 13.9,
+    "people": 9
+   },
+   "peak_from": 0,
+   "peak_to": 90
+  },
+  {
+   "carried": {
+    "blocks": 362,
+    "blocks_after_residents": 350,
+    "miles": 25.4,
+    "people": 6
+   },
+   "class": 1,
+   "daily_from": 903,
+   "daily_to": 1805,
+   "estimated": {
+    "blocks": 1136,
+    "blocks_after_residents": 1112,
+    "miles": 76.5,
+    "people": 22
+   },
+   "label": "1.5 to 3 a minute",
+   "measured": {
+    "blocks": 288,
+    "blocks_after_residents": 275,
+    "miles": 28.5,
+    "people": 11
+   },
+   "modelled": {
+    "blocks": 215,
+    "blocks_after_residents": 212,
+    "miles": 12.7,
+    "people": 11
+   },
+   "peak_from": 90,
+   "peak_to": 180
+  },
+  {
+   "carried": {
+    "blocks": 410,
+    "blocks_after_residents": 393,
+    "miles": 25.5,
+    "people": 7
+   },
+   "class": 2,
+   "daily_from": 1805,
+   "daily_to": 3611,
+   "estimated": {
+    "blocks": 641,
+    "blocks_after_residents": 576,
+    "miles": 48.6,
+    "people": 9
+   },
+   "label": "3 to 6 a minute",
+   "measured": {
+    "blocks": 301,
+    "blocks_after_residents": 275,
+    "miles": 27.9,
+    "people": 16
+   },
+   "modelled": {
+    "blocks": 263,
+    "blocks_after_residents": 249,
+    "miles": 15.8,
+    "people": 17
+   },
+   "peak_from": 180,
+   "peak_to": 360
+  },
+  {
+   "carried": {
+    "blocks": 130,
+    "blocks_after_residents": 123,
+    "miles": 7.7,
+    "people": 2
+   },
+   "class": 3,
+   "daily_from": 3611,
+   "daily_to": 7221,
+   "estimated": {
+    "blocks": 46,
+    "blocks_after_residents": 37,
+    "miles": 4.1,
+    "people": 1
+   },
+   "label": "6 to 12 a minute",
+   "measured": {
+    "blocks": 146,
+    "blocks_after_residents": 127,
+    "miles": 11.3,
+    "people": 10
+   },
+   "modelled": {
+    "blocks": 228,
+    "blocks_after_residents": 218,
+    "miles": 13.6,
+    "people": 29
+   },
+   "peak_from": 360,
+   "peak_to": 720
+  },
+  {
+   "carried": {
+    "blocks": 14,
+    "blocks_after_residents": 14,
+    "miles": 0.7,
+    "people": 0
+   },
+   "class": 4,
+   "daily_from": 7221,
+   "daily_to": 14442,
+   "estimated": {
+    "blocks": 3,
+    "blocks_after_residents": 3,
+    "miles": 0.2,
+    "people": 0
+   },
+   "label": "12 to 24 a minute",
+   "measured": {
+    "blocks": 17,
+    "blocks_after_residents": 17,
+    "miles": 0.9,
+    "people": 4
+   },
+   "modelled": {
+    "blocks": 84,
+    "blocks_after_residents": 83,
+    "miles": 4.7,
+    "people": 8
+   },
+   "peak_from": 720,
+   "peak_to": 1440
+  },
+  {
+   "carried": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "class": 5,
+   "daily_from": 14442,
+   "daily_to": 28884,
+   "estimated": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "label": "24 to 48 a minute",
+   "measured": {
+    "blocks": 1,
+    "blocks_after_residents": 1,
+    "miles": 0.1,
+    "people": 0
+   },
+   "modelled": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "peak_from": 1440,
+   "peak_to": 2880
+  },
+  {
+   "carried": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "class": 6,
+   "daily_from": 28884,
+   "daily_to": null,
+   "estimated": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "label": "48 or more a minute",
+   "measured": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "modelled": {
+    "blocks": 0,
+    "blocks_after_residents": 0,
+    "miles": 0.0,
+    "people": 0
+   },
+   "peak_from": 2880,
+   "peak_to": null
+  }
+ ],
+ "count_dates": {
+  "date from a fully dated copy of the row": 54,
+  "day of a dated row in its batch": 1,
+  "day shifted by the month's DATE slip: 2022-01": 12,
+  "full DATE and labels agree, weekday off": 41,
+  "full DATE used over YEAR, MONTH, DAY_OF_MONTH": 33,
+  "full day-only DATE used over DAY_OF_MONTH": 10,
+  "no year fits, dropped": 4,
+  "weekday slip, dropped": 4,
+  "year from weekday: 2019 labelled 2020-12": 4,
+  "year from weekday: 2020 labelled 2021-04": 4,
+  "year from weekday: 2021 labelled 2020-02": 160,
+  "year from weekday: 2022 labelled 2020-03": 36,
+  "year from weekday: 2022 labelled 2021-06": 4
+ },
+ "count_days_disagree": {
+  "main": {
+   "2492000": [
+    [
+     "2015-06-23",
+     26496
+    ],
+    [
+     "2015-06-24",
+     26892
+    ],
+    [
+     "2015-10-20",
+     7412
+    ]
+   ],
+   "9880301": [
+    [
+     "2015-02-03",
+     23216
+    ],
+    [
+     "2015-07-07",
+     876
+    ],
+    [
+     "2015-07-08",
+     901
+    ]
+   ],
+   "9880401": [
+    [
+     "2015-02-03",
+     4236
+    ],
+    [
+     "2015-07-07",
+     398
+    ],
+    [
+     "2015-07-08",
+     391
+    ]
+   ]
+  },
+  "residential": {
+   "1529000": [
+    [
+     "2020-02-19",
+     1039
+    ],
+    [
+     "2020-02-20",
+     3456
+    ]
+   ],
+   "1639000": [
+    [
+     "2022-12-13",
+     257
+    ],
+    [
+     "2022-12-14",
+     1613
+    ],
+    [
+     "2022-12-15",
+     1120
+    ]
+   ],
+   "4133000": [
+    [
+     "2019-05-29",
+     6777
+    ],
+    [
+     "2019-05-30",
+     6754
+    ],
+    [
+     "2019-11-06",
+     1117
+    ],
+    [
+     "2019-11-07",
+     1155
+    ]
+   ],
+   "601000": [
+    [
+     "2019-11-06",
+     1220
+    ],
+    [
+     "2019-11-07",
+     1193
+    ],
+    [
+     "2019-12-11",
+     6626
+    ],
+    [
+     "2019-12-12",
+     6672
+    ]
+   ],
+   "9203000": [
+    [
+     "2017-01-25",
+     140
+    ],
+    [
+     "2017-01-26",
+     145
+    ],
+    [
+     "2017-06-20",
+     1300
+    ],
+    [
+     "2017-06-21",
+     1284
+    ]
+   ]
+  },
+  "rule": "a block whose count-days in its latest year read 3-fold apart has no count (card caveat counts_disagree)"
+ },
+ "count_rows": 8099,
+ "count_stats": {
+  "csv_cnn_other_street_or_inactive": 321,
+  "failed_count_days": 48,
+  "placed_by_street_and_cross_streets": 1904,
+  "row_block_pairs": 6725,
+  "same_day_direction_rows_disagree": 4,
+  "unplaced": 842
+ },
+ "coverage": {
+  "carried": {
+   "blocks": 916,
+   "miles": 59.3
+  },
+  "estimated": {
+   "blocks": 2537,
+   "miles": 184.8
+  },
+  "main": {
+   "blocks": 364,
+   "miles": 26.8
+  },
+  "measured": {
+   "blocks": 1177,
+   "miles": 108.9
+  },
+  "modelled": {
+   "blocks": 1013,
+   "miles": 60.5
+  },
+  "none": {
+   "blocks": 4407,
+   "miles": 320.3
+  }
+ },
+ "estimated_range": {
+  "high": {
+   "0": 201,
+   "1": 350,
+   "2": 935,
+   "3": 935,
+   "4": 110,
+   "5": 6
+  },
+  "low": {
+   "0": 2434,
+   "1": 97,
+   "2": 6
+  }
+ },
+ "k": {
+  "count_days": 1339,
+  "k": 0.0997,
+  "p25": 0.0884,
+  "p75": 0.1134
+ },
+ "main_streets": {
+  "blocks": 4434,
+  "champ_vs_2019_base": {
+   "links": 4509,
+   "median_ratio": 1.067,
+   "note": "undated hwynet_weekday v_1 / SFMTA's SF-CHAMP 2019 Base DAILY_TOT (links >= 5,001 a day only), same directed link"
+  },
+  "champ_vs_count": {
+   "blocks": 342,
+   "class_agree_scaled_in_sample": 173,
+   "curve": {
+    "A": 16.9232,
+    "B": 0.6939,
+    "applied": "count = A x model^B, model held within 361 to 108835"
+   },
+   "fit_on": "main-street blocks with a 2014 to 2019 count and an SF-CHAMP figure",
+   "median_ratio": 1.309,
+   "ratio_p25": 0.991,
+   "ratio_p75": 1.737,
+   "scale_by_model_volume": [
+    {
+     "curve_at_middle": 1.543,
+     "from": 0,
+     "pairs": 23,
+     "scale": 3.683,
+     "to": 5000
+    },
+    {
+     "curve_at_middle": 1.102,
+     "from": 5000,
+     "pairs": 29,
+     "scale": 1.19,
+     "to": 10000
+    },
+    {
+     "curve_at_middle": 0.891,
+     "from": 10000,
+     "pairs": 118,
+     "scale": 0.75,
+     "to": 20000
+    },
+    {
+     "curve_at_middle": 0.721,
+     "from": 20000,
+     "pairs": 172,
+     "scale": 0.715,
+     "to": null
+    }
+   ]
+  },
+  "classes": [
+   {
+    "class": 0,
+    "label": "under 1.5 a minute",
+    "measured": {
+     "blocks": 9,
+     "miles": 1.0,
+     "people": 0
+    },
+    "modelled": {
+     "blocks": 43,
+     "miles": 3.9,
+     "people": 2
+    }
+   },
+   {
+    "class": 1,
+    "label": "1.5 to 3 a minute",
+    "measured": {
+     "blocks": 19,
+     "miles": 1.5,
+     "people": 1
+    },
+    "modelled": {
+     "blocks": 92,
+     "miles": 5.9,
+     "people": 11
+    }
+   },
+   {
+    "class": 2,
+    "label": "3 to 6 a minute",
+    "measured": {
+     "blocks": 38,
+     "miles": 3.2,
+     "people": 1
+    },
+    "modelled": {
+     "blocks": 111,
+     "miles": 7.1,
+     "people": 3
+    }
+   },
+   {
+    "class": 3,
+    "label": "6 to 12 a minute",
+    "measured": {
+     "blocks": 98,
+     "miles": 7.4,
+     "people": 6
+    },
+    "modelled": {
+     "blocks": 496,
+     "miles": 28.3,
+     "people": 36
+    }
+   },
+   {
+    "class": 4,
+    "label": "12 to 24 a minute",
+    "measured": {
+     "blocks": 131,
+     "miles": 10.0,
+     "people": 20
+    },
+    "modelled": {
+     "blocks": 1550,
+     "miles": 84.1,
+     "people": 190
+    }
+   },
+   {
+    "class": 5,
+    "label": "24 to 48 a minute",
+    "measured": {
+     "blocks": 98,
+     "miles": 5.5,
+     "people": 32
+    },
+    "modelled": {
+     "blocks": 1321,
+     "miles": 69.7,
+     "people": 318
+    }
+   },
+   {
+    "class": 6,
+    "label": "48 or more a minute",
+    "measured": {
+     "blocks": 38,
+     "miles": 2.5,
+     "people": 22
+    },
+    "modelled": {
+     "blocks": 22,
+     "miles": 1.3,
+     "people": 13
+    }
+   }
+  ],
+  "coverage": {
+   "measured": {
+    "blocks": 431,
+    "miles": 31.0
+   },
+   "modelled": {
+    "blocks": 3635,
+    "miles": 200.3
+   },
+   "none": {
+    "blocks": 368,
+    "miles": 26.6
+   }
+  },
+  "divided_blocks": 1667,
+  "divided_blocks_by_cross_street_name": 1186,
+  "k_by_classcode": {
+   "2": {
+    "count_days": 43,
+    "k": 0.0688,
+    "p25": 0.0662,
+    "p75": 0.078
+   },
+   "3": {
+    "count_days": 183,
+    "k": 0.0811,
+    "p25": 0.0737,
+    "p75": 0.0894
+   },
+   "4": {
+    "count_days": 370,
+    "k": 0.0856,
+    "p25": 0.076,
+    "p75": 0.0932
+   }
+  },
+  "miles": 257.9,
+  "miles_note": "road miles: a divided road's two centerlines count once",
+  "people": {
+   "no_figure": 24,
+   "on_main_streets": 679
+  }
+ },
+ "measured_24h_rejected": 14,
+ "measured_from_slow_streets": 49,
+ "measured_one_dir_doubled": 16,
+ "measured_paired": 10,
+ "measured_pandemic_only": 148,
+ "measured_years": {
+  "2014": 31,
+  "2015": 157,
+  "2016": 52,
+  "2017": 230,
+  "2018": 90,
+  "2019": 120,
+  "2020": 110,
+  "2021": 138,
+  "2022": 154,
+  "2023": 67,
+  "2026": 28
+ },
+ "people": {
+  "at_corners_with_several_legs": 157,
+  "main_street_blocks": 27,
+  "no_block": 3,
+  "no_data": 27,
+  "on_residential_streets": 236
+ },
+ "res_rate": {
+  "central": 0.35,
+  "high": 0.5,
+  "low": 0.2
+ },
+ "res_source": "stated assumption [model knowledge \u2014 verify]",
+ "residential_blocks": 10414,
+ "residential_miles": 760.7,
+ "sink": {
+  "residential_block_vehicles_median": 24.3,
+  "rule": "housing units fronting the block x tract vehicles per household (ACS B25044), all arriving in the peak hour",
+  "vehicles_per_household_median_tract": 1.05
+ },
+ "slow_streets_unmatched": [
+  "Arlington Mateo-Richland"
+ ],
+ "sources": {
+  "centerlines": "[DataSF 3psu-pn9h \u2014 queried 2026-11-20]",
+  "champ": "https://api.sfcta.org/api/hwynet_weekday",
+  "counts": "SFMTA Corridor Counts CSV, https://www.sfmta.com/media/40635",
+  "housing": "data/extract/census-blocks/2020.json",
+  "people": {
+   "centerlines": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
+   "fatality_log": "[DataSF dau3-4s8f \u2014 queried 2026-11-19]",
+   "parties": "[DataSF 8gtc-pjc6 \u2014 queried 2026-11-19]",
+   "victims": "[DataSF nwes-mmgh \u2014 queried 2026-11-19]"
+  },
+  "slow_streets": "data/slow-streets/evaluations.csv",
+  "vehicles": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25044&geo_ids=140|05000US06075"
+ },
+ "spill": {
+  "central": 0.1,
+  "high": 0.25,
+  "low": 0.03
+ },
+ "spill_source": "London LTN counts (Hackney Elsdale Street, Lambeth Railton Road), prior-work note 2026-11-18",
+ "telraam": {
+  "count_rule": "telraam",
+  "count_rule_text": "Where a block has both, we colour it by the counter's April to September median when the counter has 20 or more valid days in those months, and its card gives SFMTA's count with its year. Otherwise we colour it by SFMTA's count and its card gives the counter's figure with its days and dates.",
+  "main_blocks": 9,
+  "main_vs_next_model_blocks": {
+   "blocks": 7,
+   "median_ratio": 0.48,
+   "rows": [
+    {
+     "cnn": "805000",
+     "model_peak": 811,
+     "next_blocks": [
+      "804000"
+     ],
+     "ratio": 0.48,
+     "telraam": "9000010981",
+     "telraam_peak": 388
+    },
+    {
+     "cnn": "2414000",
+     "model_peak": 395,
+     "next_blocks": [
+      "2413000",
+      "2415000"
+     ],
+     "ratio": 1.52,
+     "telraam": "9000009991",
+     "telraam_peak": 600
+    },
+    {
+     "cnn": "3576000",
+     "model_peak": 1554,
+     "next_blocks": [
+      "3575000",
+      "3577000"
+     ],
+     "ratio": 0.3,
+     "telraam": "9000005491",
+     "telraam_peak": 470
+    },
+    {
+     "cnn": "8750201",
+     "model_peak": 928,
+     "next_blocks": [
+      "8749101",
+      "8749201",
+      "8750202"
+     ],
+     "ratio": 0.11,
+     "telraam": "9000010369",
+     "telraam_peak": 105
+    },
+    {
+     "cnn": "9273101",
+     "model_peak": 1886,
+     "next_blocks": [
+      "9272101",
+      "9272201",
+      "9274101",
+      "9274201"
+     ],
+     "ratio": 0.58,
+     "telraam": "9000006079",
+     "telraam_peak": 1101
+    },
+    {
+     "cnn": "9768000",
+     "model_peak": 1902,
+     "next_blocks": [
+      "9767000",
+      "9769000"
+     ],
+     "ratio": 0.83,
+     "telraam": "9000009987",
+     "telraam_peak": 1588
+    },
+    {
+     "cnn": "11453000",
+     "model_peak": 1099,
+     "next_blocks": [
+      "11452000",
+      "11454000"
+     ],
+     "ratio": 0.48,
+     "telraam": "9000005731",
+     "telraam_peak": 526
+    }
+   ]
+  },
+  "main_vs_sfmta_same_block": [
+   {
+    "cnn": "2031000",
+    "from": "SANTIAGO ST",
+    "group": "SFMTA count",
+    "ratio": 0.89,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 198,
+    "sfmta_year": 2015,
+    "street": "46TH AVE",
+    "telraam": "9000005311",
+    "telraam_value": 177,
+    "to": "TARAVAL ST",
+    "unit": "peak hour",
+    "uses": "telraam"
+   }
+  ],
+  "override_gate": {
+   "min_season_days": 20,
+   "read": "2026-11-19"
+  },
+  "residential_blocks": 30,
+  "segments_joined": 39,
+  "skipped": [
+   {
+    "segment": "9000005033",
+    "why": "38% of days dead; one season; 5 valid days"
+   },
+   {
+    "segment": "9000005230",
+    "why": "13 valid days"
+   },
+   {
+    "segment": "9000005347",
+    "why": "16% of days dead"
+   },
+   {
+    "segment": "9000005365",
+    "why": "6 valid days"
+   },
+   {
+    "segment": "9000005517",
+    "why": "33% of days dead; 2 valid days"
+   },
+   {
+    "segment": "9000009959",
+    "why": "10 valid days"
+   },
+   {
+    "segment": "9000010509",
+    "why": "7 valid days"
+   },
+   {
+    "segment": "9000010661",
+    "why": "one side: 0.2% of its cars go the other way on block 9284201, which is one carriageway of a divided road"
+   },
+   {
+    "segment": "9000012395",
+    "why": "one season; 8 valid days"
+   }
+  ],
+  "source": "data/extract/telraam/segments.json (scripts/telraam-sf.py)",
+  "vs_sfmta_by_group": {
+   "SFMTA count": {
+    "blocks": 14,
+    "median_ratio": 0.76,
+    "within_half_to_1_5": 10
+   },
+   "Slow Streets 2023 (day count)": {
+    "blocks": 4,
+    "median_ratio": 1.49,
+    "within_half_to_1_5": 2
+   }
+  },
+  "vs_sfmta_same_block": [
+   {
+    "cnn": "313000",
+    "group": "SFMTA count",
+    "ratio": 0.54,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 132,
+    "sfmta_year": 2018,
+    "telraam": "9000005191",
+    "telraam_value": 72,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "424000",
+    "group": "SFMTA count",
+    "ratio": 0.54,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 88,
+    "sfmta_year": 2017,
+    "telraam": "9000004990",
+    "telraam_value": 48,
+    "unit": "peak hour",
+    "uses": "sfmta"
+   },
+   {
+    "cnn": "437000",
+    "group": "SFMTA count",
+    "ratio": 0.57,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 428,
+    "sfmta_year": 2015,
+    "telraam": "9000011788",
+    "telraam_value": 244,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "612000",
+    "group": "SFMTA count",
+    "ratio": 0.99,
+    "sfmta_pandemic": 1,
+    "sfmta_value": 193,
+    "sfmta_year": 2021,
+    "telraam": "9000009992",
+    "telraam_value": 192,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "1536000",
+    "group": "SFMTA count",
+    "ratio": 0.75,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 416,
+    "sfmta_year": 2017,
+    "telraam": "9000006818",
+    "telraam_value": 312,
+    "unit": "peak hour",
+    "uses": "sfmta"
+   },
+   {
+    "cnn": "1566000",
+    "group": "SFMTA count",
+    "ratio": 0.54,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 97,
+    "sfmta_year": 2019,
+    "telraam": "9000005232",
+    "telraam_value": 52,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "2031000",
+    "group": "SFMTA count",
+    "ratio": 0.89,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 198,
+    "sfmta_year": 2015,
+    "telraam": "9000005311",
+    "telraam_value": 177,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "3830000",
+    "group": "SFMTA count",
+    "ratio": 0.44,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 121,
+    "sfmta_year": 2015,
+    "telraam": "9000005038",
+    "telraam_value": 53,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "4619000",
+    "group": "SFMTA count",
+    "ratio": 0.9,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 106,
+    "sfmta_year": 2015,
+    "telraam": "9000005718",
+    "telraam_value": 95,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "5710000",
+    "group": "SFMTA count",
+    "ratio": 0.77,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 70,
+    "sfmta_year": 2015,
+    "telraam": "9000009961",
+    "telraam_value": 54,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "6658000",
+    "group": "SFMTA count",
+    "ratio": 0.75,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 243,
+    "sfmta_year": 2017,
+    "telraam": "9000005474",
+    "telraam_value": 183,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "8010000",
+    "group": "Slow Streets 2023 (day count)",
+    "ratio": 1.58,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 1394,
+    "sfmta_year": 2023,
+    "telraam": "9000004855",
+    "telraam_value": 2209,
+    "unit": "day",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "8014000",
+    "group": "SFMTA count",
+    "ratio": 9.48,
+    "sfmta_pandemic": 1,
+    "sfmta_value": 32,
+    "sfmta_year": 2021,
+    "telraam": "9000004947",
+    "telraam_value": 302,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "8015000",
+    "group": "SFMTA count",
+    "ratio": 8.08,
+    "sfmta_pandemic": 1,
+    "sfmta_value": 24,
+    "sfmta_year": 2021,
+    "telraam": "9000005030",
+    "telraam_value": 191,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "8559000",
+    "group": "Slow Streets 2023 (day count)",
+    "ratio": 1.4,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 392,
+    "sfmta_year": 2023,
+    "telraam": "9000008898",
+    "telraam_value": 550,
+    "unit": "day",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "9056000",
+    "group": "Slow Streets 2023 (day count)",
+    "ratio": 1.09,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 609,
+    "sfmta_year": 2023,
+    "telraam": "9000005516",
+    "telraam_value": 664,
+    "unit": "day",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "9608000",
+    "group": "SFMTA count",
+    "ratio": 1.71,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 79,
+    "sfmta_year": 2022,
+    "telraam": "9000006237",
+    "telraam_value": 135,
+    "unit": "peak hour",
+    "uses": "telraam"
+   },
+   {
+    "cnn": "11532000",
+    "group": "Slow Streets 2023 (day count)",
+    "ratio": 2.01,
+    "sfmta_pandemic": 0,
+    "sfmta_value": 227,
+    "sfmta_year": 2023,
+    "telraam": "9000005336",
+    "telraam_value": 455,
+    "unit": "day",
+    "uses": "telraam"
+   }
+  ]
+ }
+}

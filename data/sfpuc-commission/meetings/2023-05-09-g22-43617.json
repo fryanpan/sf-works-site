@@ -1,0 +1,205 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2023-05-09",
+ "id": "g22-43617",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=43617",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/May%209%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of April 25, 2023",
+   "decision": "approve the Minutes of April 25, 2023"
+  },
+  {
+   "no": "4",
+   "title": "SFPUC Employee Retirement Recognition of Constance “Connie” Smith in recognition for her 32 years and nine months of exemplary service to the City and County of San Francisco",
+   "text": "San Francisco Public Utilities Commission Employee Retirement Recognition of Constance “Connie” Smith in recognition for her 32 years and nine months of exemplary service to the City and County of San Francisco. General Manager (GM) Herrera recognized Connie Smith for her more than 32 years of service to the City and County of San Francisco and to the SFPUC Business Services Division. GM"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Quarterly Audit and Performance Review Report",
+   "decision": "continued",
+   "text": "Quarterly Audit and Performance Review Report Irella Blackwood, Audit Director, indicated that for FY 2022-23 there have been 29 audits and assessments with 15 completed (52%), eight in progress (27%), and six upcoming (21%). She noted audits completed and reports issued. Director Blackwood discussed the 2023 SFPUC Public Integrity Update stating that since early 2020 the City and County of San Francisco has embarked on a series of investigations, audits, reviews, and department-specific assessments as part of the public integrity services. She indicated that contracting and procurement has been a particular focus of SFPUC’s ongoing public integrity efforts. Director Blackwood indicated there are 23 open City Services Auditor audits and recommendations. She informed the Commission of audits that are in the process of completion and those that are upcoming"
+  },
+  {
+   "no": "5b",
+   "title": "Community Contractor Update",
+   "decision": "continued",
+   "text": "Community Contractor Update Ben Poole, Acting Director of Workforce and Economic Program Services, stated the presentation was a follow-up to the April 11, 2023 Commission meeting where community contractors expressed concerns with SFPUC contracts and Micro-Local Business Enterprise (LBE) participation. He discussed City law 14B that created the LBE Program and is administered by the Contract Monitoring Division, a separate city agency. He discussed specifications of the law including that each SFPUC contract procurement must contain a LEB subcontracting participation requirement, and it also established economic thresholds or sizes for LBEs which are based on the company’s annual gross receipts. He indicated there are three categories of LBEs (1) SBA-LBEs; (2) Small LBEs; and (3) Micro-LBEs. He stated in November 2021, 14B was updated by the Board of Supervisors and the Mayor to apply to new and future contacts advertised after July 1,2022 to allow subcontractor requirements for Micro-LBEs, neighborhood preferences, and defined trucking participation requirements. He noted the SFPUC is the first and only city agency to voluntarily adopt these programs and are currently used on two SFPUC projects (1) New City Distribution Division Headquarters, and (2) Wastewater Treatment Plant on Treasure Island"
+  },
+  {
+   "no": "5c",
+   "title": "Report on Recent SFPUC Activities, Events and Announcements",
+   "decision": "continued",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements GM Herrera stated that the 100-year celebration of the Hetch Hetchy was a success and he thanked staff for their work. President Ajami and VP Maxwell thanked staff for their work and hailed the event’s success. They discussed the original vision of Hetch Hetchy and emphasized the need to continually look forward"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve Amendment No. 4 to Contract No. CS-318, Equipment and Software Maintenance, with Schneider Electric Systems USA, Inc., to provide 24/7 manufacturer emergency technical support for the Oceanside and Southeast Wastewater Treatment Plants Distributed Control Systems software and hardware, extending the contract duration by five months, for a total duration of nine years and 11 months, with no change to the contract amount",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0090",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Modify Contract Nos. PRO.0137.A, PRO.0137.B, PRO.0137.C, PRO.0137.D, and PRO.0137.E with Doctor Mole Incorporated/Dr. Gary Brierley (PRO.0137.A), Dr. Youssef Hashash (PRO.0137.B), Frank L. Rollo (PRO.0137.C), Dr. Michael C. Johnson PRO.0137(D), and Kilduff Underground Engineering, Inc./Todd M. Kilduff (PRO.0137.E) respectively, to provide independent and conflict-free advice and authoritative reviews of tunnel designs for ongoing San Francisco Public Utilities Commission tunnel projects as follows: (1) PRO.0137.A: increase $200,000 original contract amount by $120,000 for a new contract amount of $320,000 and increase the original four-year duration by two years for a total duration of six years; (2) PRO.0137.B: increase $250,000 original contract amount by $120,000 for a new contract amount of $370,000 and increase the original four-year duration by two years for a total duration of six years; (3) PRO.0137.C: increase $200,000 original contract amount by $120,000 for a new contract amount of $320,000 and increase the original four-year duration by two years for a total duration of six years; (4) PRO.0137.D: increase the original three-year, 10-month duration by two years, two months for a total duration of six years; and (5) PRO.0137.E: increase $100,000 original contract amount by $100,000 for a new contract amount of $200,000 and increase the original four-year duration by two years for a total duration of six years",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0091",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Award Contract No. PRO.0196, Right-of-Way Services to Associated Right-of-Way Services, Inc., in an amount not-to-exceed $3,000,000, and with a duration of five years to provide specialized right-of-way services in the implementation of capital projects",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0092",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Accept materials provided by Pilot Construction Management Inc., under Contract No. WD- 2854B, 525 Golden Gate Avenue Tower Access and Fall Protection; Approve Modification No. 1 (Final), decreasing the contract amount by $793,250 and eliminating contract scope for installation of these materials to resolve all disputed claims, for a total final contract amount of $686,775; and authorize final payment to the contractor",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0093",
+   "from": "minutes"
+  },
+  {
+   "no": "6e",
+   "title": "Accept work performed by Galleria Inc., DBA Trico Construction, under Contract No. WD- 2880R, Warehouse Office Suite Renovation, 1990 Newcomb Avenue, San Francisco, for a total contract amount of $1,441,165, and with a total contract duration of 396 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0094",
+   "from": "minutes"
+  },
+  {
+   "no": "6f",
+   "title": "Accept work performed by D’Arcy & Harty Construction, Inc for Contract No. WW-712, New Montgomery, Jessie, Minna, and Mission Street Brick Sewer Rehabilitation, for a total contract amount of $6,891,778, and with a total contract duration of 570 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0095",
+   "from": "minutes"
+  },
+  {
+   "no": "6g",
+   "title": "Award Contract No. WW-719A, Folsom Area Stormwater Improvements – SOMA and Mission Districts Sewer Replacement, to the responsible bidder that submitted the lowest responsive bid, Mitchell Engineering, in the amount of $7,522,041, and with a term of 365 consecutive calendar days, to upsize existing sewers and associated appurtenances on various streets in the SOMA and Mission neighborhoods of San Francisco, including Folsom, 11th, Harrison, Alabama, and Mistral Streets",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0096",
+   "from": "minutes"
+  },
+  {
+   "no": "6h",
+   "title": "Award Contract No. WW-736, Castro and Mission Districts Sewer Improvements, in the amount of $7,272,320, and with a duration of 425 consecutive calendar days (approximately one year and two months), to the responsible bidder submitting the lowest responsive bid, Precision Engineering, Inc., to rehabilitate large diameter sewers and rehabilitate or replace sewer laterals on specific streets within the City and County of San Francisco. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA), pursuant to San Francisco Administrative Code section 31.04(h). The Planning Department has determined that this action is exempt from the CEQA. If the item is approved, the Commission will rely on that determination to make its decision. AGM Robinson responded to a question from President Ajami as to how it happens that several projects are similar on size and scope but are at different locations; and to a question from VP Maxwell as to the difference between “tunnel” and “pipe” and their uses",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "23-0097",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Adopt the proposed Wholesale Water Rates for Fiscal Year 2023-2024",
+   "decision": "approve item 7",
+   "resolution": "23-0098",
+   "text": "Adopt the proposed Wholesale Water Rates for Fiscal Year 2023-2024, which will become effective for meter readings on or after July 1, 2023. The San Francisco Public Utilities Commission developed the proposed rates in accordance with the terms of the Water Supply Agreement between the City and County of San Francisco and its Wholesale Customers. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA), pursuant to San Francisco Administrative Code section 31.04(h). The Planning Department has determined that this action is exempt from the CEQA. If the item is approved, the Commission will rely on that determination to make its decision"
+  },
+  {
+   "no": "8",
+   "title": "Approve the terms and conditions: Balboa Reservoir purchase price",
+   "decision": "approve item 8",
+   "resolution": "23-0099",
+   "text": "Approve the terms and conditions and recommend to the Board of Supervisors the authorization of the General Manager to sign the First Amendment to Secured Carry-Back Promissory Note and the First Amendment to Deed of Trust, Assignment of Rents, Security Agreement and Fixture Filing securing payment of the Balboa Reservoir purchase price. Ron Flynn, Deputy GM, discussed the terms and conditions of amendments to the loan documents related to the sale of the Balboa Reservoir. He indicated changing market conditions are affecting market rate housing as well as the development of affordable housing. He noted the amendment will not change the payment price, interest, or the December 2028 maturity date but would change the schedule of payments, with next payment on or before December 31, 2026. He stated that the SFPUC will obtain payment of the full purchase price, with interest, and that the amendment will allow for fast-track development of affordable housing, indicating the amendment will require Board of Supervisors approval. Commissioner Paulson expressed surprised at the change of terms and financing. In response to a question by President Ajami, Deputy GM Flynn discussed the original maturity date, the updated payment schedule, and timing for release of the deed of trust. President Ajami expressed the need for a stop-gap to ensure protection of SFPUC’s assets"
+  },
+  {
+   "no": "9",
+   "title": "Authorize: Interagency Cooperation Agreement between the TJPA and the City and County of San Francisco",
+   "decision": "approve item 9",
+   "resolution": "23-0100",
+   "text": "Authorize the General Manager to consent, on behalf of the San Francisco Public Utilities Commission, to an Interagency Cooperation Agreement between the Transbay Joint Powers Authority and the City and County of San Francisco; and adopt findings, pursuant to the California Environmental Quality Act, and a Mitigation and Monitoring and Reporting Program. Deputy GM Flynn stated the Transbay Joint Powers Authority has completed Phase I of the project which includes the construction of the Salesforce Transit Center and is working on Phase II, which consists of the Downtown Rail Extension that requires collaboration with many City departments. He noted there will need to be permanent and/or temporary relocation, protection- in-place, and replacement and/or repair of City assets and stated that each SFPUC enterprise will have assets impacted by the project. The San Francisco Office of Economic and Workforce Development negotiated a citywide Interagency Cooperation Agreement that will allow for coordination of work and reimbursement for all worked performed by the San Francisco Public Utilities Commission in support of the project. The Interagency Agreement is set-up so each General Manager is delegated the authority to enter into the annual scope and budget appendix. Commissioner Paulson expressed support indicating anything to facilitate high-speed rail is important and is necessary. President Ajami discussed the Civil Grand Jury’s report for the Van Ness Project and their recomm"
+  },
+  {
+   "no": "10",
+   "title": "Public Hearing: adopting schedules of rates of the SFPUC Power Enterprise for CleanPowerSF power service in SF",
+   "decision": "approve item 10",
+   "text": "Public Hearing to consider (1) adopting schedules of rates of the San Francisco Public Utilities Commission Power Enterprise for CleanPowerSF power service in San Francisco to be effective July 1, 2023; and (2) adopt a mechanism to set temporary rates for new rate schedules to be applied when the California Public Utilities Commission approves one for Pacific Gas and Electric Company (PG&E), and to use a new rate schedule methodology for the initial rate based on ratios to the CleanPowerSF default rate schedule in the applicable customer class until the next CleanPowerSF rate setting process. This action constitutes the Approval Action for the project for the purposes of the California Environmental Quality Act (CEQA) pursuant to Section 31.04(h) of the San Francisco Administrative Code. The Planning Department has determined that this action is exempt from the CEQA. If the item is approved, the Commission will rely on that determination to make its decision. (https://sfpuc.sharefile.com/d- s7a4a429920bc4a52bd5a5072ea3f8b72Resolution 23-0101) Ma Yee Yap, Principal Revenue/Rates Analyst reviewed (1) CleanPowerSF Rates Landscape: San Francisco Charter requirement for rates study at lease every five years by independent consultant; 2022 Power Rates Study adopted FY 2022-23 cost-of-service rates in May 2022; key outcomes to ensure financial stability, prioritize customer needs, support the City’s climate action goals, and decreased CleanPowerSF FY 2022-23 rates from FY 2021-22 ra"
+  },
+  {
+   "no": "11",
+   "title": "Approve Amendment No. 4 to Full Load Service Contract 22-SNR-02770 and Scheduling Coordinator Contract 22-SNR-02771",
+   "decision": "approve item 11",
+   "resolution": "23-0102",
+   "text": "Approve Amendment No. 4 to Full Load Service Contract 22-SNR-02770 and Scheduling Coordinator Contract 22-SNR-02771 with the United States of America, acting through the Department of Energy Western Area Power Administration (WAPA), for WAPA to continue providing portfolio management services and supplemental power purchases for Treasure Island and Yerba Buena Island; and authorize the General Manager to execute the amendments, extending the term by five years to December 31, 2029 for a total contract term of 25 years, and increasing the contract amount by $13,130,000, for a total not-to-exceed amount of $41,500,000, subject to Board of Supervisors approval pursuant to Charter Section 9.118. Barbara Hale, AGM Power Enterprise, introduced the item and noted the contracts that are required for support of electric service to Yerba Buena Island and Treasure Island (1) base resource energy procurement agreement; (2) full load service agreement; and (3) scheduling coordinator services. She noted the contracts are with the Western Area Power Administration and through the contracts the SFPUC can access low-cost hydro and related services. AGM Hale responded to a question from Commissioner Paulson as to how the contracts relate to on-going development, stating that as development occurs there is continued service as the load grows via these contracts, which have a duration of 25 years"
+  },
+  {
+   "no": "12",
+   "title": "Communications"
+  },
+  {
+   "no": "12a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "12b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "12c",
+   "title": "Annual Municipal Energy Benchmarking Report"
+  },
+  {
+   "no": "12d",
+   "title": "Annual CleanPowerSF SuperGreen Multi-Year Service Agreement Update"
+  },
+  {
+   "no": "12e",
+   "title": "Green Infrastructure Grant Program Board of Supervisors Update"
+  },
+  {
+   "no": "12f",
+   "title": "SFPUC Quarterly Report to the BOS on Status of Applications to PG&E for Electric Service",
+   "text": "San Francisco Public Utilities Commission’s Quarterly Report to the Board of Supervisors on the Status of Applications to PG&E for Electric Service"
+  },
+  {
+   "no": "12g",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "13",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "14",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners None"
+  },
+  {
+   "no": "15",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

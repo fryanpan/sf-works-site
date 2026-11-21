@@ -1,0 +1,58 @@
+name = "sf-works-site"
+main = "src/worker.mjs"
+compatibility_date = "2025-01-01"
+
+# The pages are static. The Worker exists only to map a per-tool hostname onto
+# that tool's path, so transportation.staging.sf-works.org and sf-works.org/transportation
+# serve the same build rather than two builds that can drift apart.
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+# The embeds need the Worker's frame-ancestors header and the post's raw text
+# its content type (src/worker.mjs); every other static file skips the Worker.
+run_worker_first = ["/embed/*", "/content/posts/*", "/transportation/street-safety/data/*"]
+
+[vars]
+ENVIRONMENT = "production"
+
+[[routes]]
+pattern = "sf-works.org"
+custom_domain = true
+
+[observability]
+enabled = true
+
+# Staging. One deploy, reachable per tool, so a half-finished transportation page can be
+# shown to someone without holding up housing.
+[env.staging]
+name = "sf-works-site-staging"
+main = "src/worker.mjs"
+
+[env.staging.vars]
+ENVIRONMENT = "staging"
+
+[env.staging.assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = ["/embed/*", "/content/posts/*", "/transportation/street-safety/data/*"]
+
+[[env.staging.routes]]
+pattern = "staging.sf-works.org"
+custom_domain = true
+
+[[env.staging.routes]]
+pattern = "transportation.staging.sf-works.org"
+custom_domain = true
+
+[[env.staging.routes]]
+pattern = "housing.staging.sf-works.org"
+custom_domain = true
+
+[[env.staging.routes]]
+pattern = "permits.staging.sf-works.org"
+custom_domain = true
+
+[env.staging.observability]
+enabled = true

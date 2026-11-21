@@ -1,0 +1,92 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-06-02",
+ "id": "g218-43813",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43813",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair Informational"
+  },
+  {
+   "no": "2",
+   "title": "Commission Secretary’s Report"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the May 19, 2023 Regular Meeting - Adopt Minutes"
+  },
+  {
+   "no": "5b",
+   "title": "As-Needed Acoustical Engineering Consulting Services No. 2 - Contract Modification"
+  },
+  {
+   "no": "5c",
+   "title": "One South Van Ness Second Floor Restroom Renovation, Project Contract No. 1000026753 - Contract Modification"
+  },
+  {
+   "no": "5d",
+   "title": "San Francisco Public Library 750 Brannan – Collections, Project Contract ID 1000026715 - Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "Operations Division Overview"
+  },
+  {
+   "no": "7",
+   "title": "Citywide Tree Watering Program and Workforce Development Grant Program – Grant Modification"
+  },
+  {
+   "no": "8",
+   "title": "19th Avenue (State Route 1) Combined City Project, Contract No. 1000005832 - Contract Modification"
+  },
+  {
+   "no": "9",
+   "title": "Resolution Recommending that the Board of Supervisors Approve an Interagency Cooperation Agreement with TJPA; Adopt CEQA Findings and Mitigation and Monitoring and Reporting Program"
+  },
+  {
+   "no": "10",
+   "title": "Public Works Director Hiring Update"
+  },
+  {
+   "no": "11",
+   "title": "New Business Initiated by Commissioners CLOSED SESSION"
+  },
+  {
+   "no": "12",
+   "title": "Closed Session – Public Works Commission Secretary Performance Evaluation"
+  },
+  {
+   "no": "13",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion Regarding Whether to Disclose the Discussions during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "General Public Comment – Continued from Item 2 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

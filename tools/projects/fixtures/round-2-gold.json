@@ -1,0 +1,2264 @@
+{
+ "slug:presidio-yard-modernization-project": {
+  "sample": "tuned-00",
+  "url": "https://www.sfmta.com/projects/presidio-yard-modernization-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "438": {
+  "sample": "tuned-01",
+  "url": "https://www.sfmta.com/projects/m-ocean-view-improvements-rossmoor-drive-and-junipero-serra",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c4",
+     "c5",
+     "c7"
+    ],
+    "spans": [
+     "Fall 2018",
+     "Fall 2018",
+     "Fall 2018"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "2016"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "1110": {
+  "sample": "tuned-02",
+  "url": "https://www.sfmta.com/projects/cesar-chavezpotrero-avebayshore-blvd-intersection-improvements-hairball",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "early 2026"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "28582": {
+  "sample": "tuned-03",
+  "url": "https://www.sfmta.com/projects/sutter-street-quick-build-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c2",
+     "c3",
+     "c6"
+    ],
+    "spans": [
+     "Summer 2023",
+     "Spring 2024",
+     "October 19, 2024"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "1267": {
+  "sample": "tuned-04",
+  "url": "https://www.sfmta.com/projects/laurel-heightsjordan-park-traffic-calming-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:facilities-state-good-repair": {
+  "sample": "tuned-05",
+  "url": "https://www.sfmta.com/projects/facilities-state-good-repair",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "879": {
+  "sample": "tuned-06",
+  "url": "https://www.sfmta.com/projects/9-san-bruno-rapid-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c3"
+    ],
+    "spans": [
+     "March 2017"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "24619": {
+  "sample": "tuned-07",
+  "url": "https://www.sfmta.com/projects/visitacion-valley-portola-community-based-transportation-plan",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c7",
+     "c8",
+     "c12"
+    ],
+    "spans": [
+     "Winter 2022",
+     "2023",
+     "December 4, 2022"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c2",
+     "c11"
+    ],
+    "spans": [
+     "2023",
+     "Spring 2023"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "826": {
+  "sample": "tuned-08",
+  "url": "https://www.sfmta.com/projects/treasure-island-yerba-buena-island-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c6"
+    ],
+    "spans": [
+     "October 17, 2025"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1",
+     "c4",
+     "c5"
+    ],
+    "spans": [
+     "March 3, 2026",
+     "March 3, 2026",
+     "March 3, 2026"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:muni-metro-modernization": {
+  "sample": "tuned-09",
+  "url": "https://www.sfmta.com/projects/muni-metro-modernization",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:tenderloin-traffic-safety-improvements-project": {
+  "sample": "tuned-10",
+  "url": "https://www.sfmta.com/projects/tenderloin-traffic-safety-improvements-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:golden-gate-avenue-safety-project": {
+  "sample": "tuned-11",
+  "url": "https://www.sfmta.com/projects/golden-gate-avenue-safety-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c11"
+    ],
+    "spans": [
+     "Summer 2016"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c4",
+     "c5"
+    ],
+    "spans": [
+     "March 2015",
+     "March 2016"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c9"
+    ],
+    "spans": [
+     "April 15, 2016"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c10"
+    ],
+    "spans": [
+     "May 2016"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "1138": {
+  "sample": "tuned-12",
+  "url": "https://www.sfmta.com/projects/shotwell-slow-street",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1",
+     "c5"
+    ],
+    "spans": [
+     "June 2020",
+     "2020"
+    ],
+    "none_ok": true
+   },
+   "construction_end": {
+    "ids": [
+     "c8"
+    ],
+    "spans": [
+     "Fall of 2022"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c6",
+     "c7"
+    ],
+    "spans": [
+     "2021",
+     "Spring of 2021"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c3",
+     "c9",
+     "c10"
+    ],
+    "spans": [
+     "December 6, 2022",
+     "December 2022",
+     "December 6, 2022"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:bartmuni-market-street-canopy-living-roofs": {
+  "sample": "tuned-13",
+  "url": "https://www.sfmta.com/projects/bartmuni-market-street-canopy-living-roofs",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:transportation-2030": {
+  "sample": "tuned-14",
+  "url": "https://www.sfmta.com/projects/transportation-2030",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c6"
+    ],
+    "spans": [
+     "June 12, 2014"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:transportation-resource-center": {
+  "sample": "tuned-15",
+  "url": "https://www.sfmta.com/projects/bayview-community-shuttle/transportation-resource-center",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:muni-art-2022-poem-golden-gate": {
+  "sample": "tuned-16",
+  "url": "https://www.sfmta.com/projects/muni-art-program/muni-art-2022-poem-golden-gate",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:southeast-muni-expansion": {
+  "sample": "tuned-17",
+  "url": "https://www.sfmta.com/projects/southeast-muni-expansion",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c5",
+     "c6",
+     "c10",
+     "c12",
+     "c14"
+    ],
+    "spans": [
+     "January 23, 2021",
+     "2021",
+     "2021",
+     "2021",
+     "2021"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c8"
+    ],
+    "spans": [
+     "2020"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:legacy-light-rail-vehicle-overhauls": {
+  "sample": "tuned-18",
+  "url": "https://www.sfmta.com/projects/legacy-light-rail-vehicle-overhauls",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1",
+     "c2"
+    ],
+    "spans": [
+     "Spring 2019",
+     "Spring 2019"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c3",
+     "c7"
+    ],
+    "spans": [
+     "Winter 2022",
+     "Summer 2022"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "19203": {
+  "sample": "tuned-19",
+  "url": "https://www.sfmta.com/projects/4th-street-transit-improvement-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c3"
+    ],
+    "spans": [
+     "End of 2019"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "Summer/Fall 2019"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c6",
+     "c7"
+    ],
+    "spans": [
+     "August 16, 2019",
+     "August 16, 2019"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1",
+     "c4",
+     "c5"
+    ],
+    "spans": [
+     "Summer/Fall 2019",
+     "October 1, 2019",
+     "October 1, 2019"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "16420": {
+  "sample": "tuned-20",
+  "url": "https://www.sfmta.com/projects/lower-great-highway-pedestrian-improvements-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c5"
+    ],
+    "spans": [
+     "Summer/Winter 2019"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c6"
+    ],
+    "spans": [
+     "2020"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c3",
+     "c4",
+     "c7"
+    ],
+    "spans": [
+     "Early 2018",
+     "Spring 2019",
+     "March 27, 2021"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c8",
+     "c9"
+    ],
+    "spans": [
+     "May 3, 2019",
+     "May 3, 2019"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "July 16, 2019"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "24302": {
+  "sample": "tuned-21",
+  "url": "https://www.sfmta.com/projects/transbay-howard-streetscape-improvement-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1",
+     "c3",
+     "c11"
+    ],
+    "spans": [
+     "February 2026",
+     "January 2026",
+     "2026"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c2",
+     "c4",
+     "c12"
+    ],
+    "spans": [
+     "2028",
+     "2028",
+     "2028"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c22"
+    ],
+    "spans": [
+     "fall 2025"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c25",
+     "c26"
+    ],
+    "spans": [
+     "February 2, 2024",
+     "February 2, 2024"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c6",
+     "c23",
+     "c24",
+     "c9",
+     "c10"
+    ],
+    "spans": [
+     "April 16, 2024",
+     "April 16, 2024",
+     "April 16, 2024",
+     "2024",
+     "2025"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "28710": {
+  "sample": "tuned-22",
+  "url": "https://www.sfmta.com/projects/3rd-street-quick-build-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c7"
+    ],
+    "spans": [
+     "March 2024"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "March 29, 2024"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c12"
+    ],
+    "spans": [
+     "December 20, 2023"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1",
+     "c10",
+     "c11",
+     "c6"
+    ],
+    "spans": [
+     "March 5, 2024",
+     "March 5, 2024",
+     "March 5, 2024",
+     "2024"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:powell-street-safety-project": {
+  "sample": "tuned-23",
+  "url": "https://www.sfmta.com/projects/powell-street-safety-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1",
+     "c3"
+    ],
+    "spans": [
+     "March 2025",
+     "March 2025"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c2",
+     "c4"
+    ],
+    "spans": [
+     "Spring 2026",
+     "March 2026"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "1134": {
+  "sample": "tuned-24",
+  "url": "https://www.sfmta.com/projects/brannan-street-safety-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c4"
+    ],
+    "spans": [
+     "Fall 2019"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c7"
+    ],
+    "spans": [
+     "early Winter 2020"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c12",
+     "c13"
+    ],
+    "spans": [
+     "August 2018",
+     "December 11, 2019"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c16",
+     "c17"
+    ],
+    "spans": [
+     "August 17, 2018",
+     "August 17, 2018"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c3",
+     "c14",
+     "c15"
+    ],
+    "spans": [
+     "Early 2019",
+     "February 19, 2019",
+     "February 19, 2019"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:curbside-ev-charging-feasibility-study": {
+  "sample": "heldout-00",
+  "url": "https://www.sfmta.com/projects/curbside-ev-charging-feasibility-study",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c11"
+    ],
+    "spans": [
+     "April 17, 2024"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c9",
+     "c10"
+    ],
+    "spans": [
+     "April 15, 2025",
+     "April 15, 2025"
+    ],
+    "none_ok": true
+   }
+  }
+ },
+ "slug:telegraph-hill-blvd-and-coit-tower-parking-lot-reconstruction": {
+  "sample": "heldout-01",
+  "url": "https://www.sfmta.com/projects/telegraph-hill-blvd-and-coit-tower-parking-lot-reconstruction",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "March 13"
+    ],
+    "none_ok": true
+   },
+   "construction_end": {
+    "ids": [
+     "c1",
+     "c5",
+     "c6"
+    ],
+    "spans": [
+     "April 11, 2025",
+     "April 11, 2025",
+     "April 2025"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "846": {
+  "sample": "heldout-02",
+  "url": "https://www.sfmta.com/projects/raised-bikeway-demonstration-project",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c5"
+    ],
+    "spans": [
+     "Fall 2015"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c2",
+     "c7",
+     "c8"
+    ],
+    "spans": [
+     "Spring 2016",
+     "Spring 2016",
+     "May 17, 2016"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:play-streets": {
+  "sample": "heldout-03",
+  "url": "https://www.sfmta.com/projects/play-streets",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "2017"
+    ],
+    "none_ok": true
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "20650": {
+  "sample": "heldout-04",
+  "url": "https://www.sfmta.com/projects/bayview-cbtp-quick-build-projects",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "2020"
+    ],
+    "none_ok": true
+   },
+   "construction_end": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "2020"
+    ],
+    "none_ok": true
+   },
+   "consultation": {
+    "ids": [
+     "c6"
+    ],
+    "spans": [
+     "April 22, 2021"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c2",
+     "c3",
+     "c4",
+     "c5"
+    ],
+    "spans": [
+     "July 30, 2021",
+     "July 30, 2021",
+     "July 30, 2021",
+     "July 30, 2021"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:muni-metro-capacity-study": {
+  "sample": "heldout-05",
+  "url": "https://www.sfmta.com/projects/muni-metro-capacity-study",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c5",
+     "c10",
+     "c13",
+     "c14",
+     "c8"
+    ],
+    "spans": [
+     "Fall 2025",
+     "Fall 2025",
+     "November 6, 2025",
+     "November 6, 2025",
+     "2025"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1",
+     "c11",
+     "c12"
+    ],
+    "spans": [
+     "December 2, 2025",
+     "December 2, 2025",
+     "December 2, 2025"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "42700": {
+  "sample": "heldout-06",
+  "url": "https://www.sfmta.com/projects/1200-15th-street-renovation-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c3",
+     "c6"
+    ],
+    "spans": [
+     "fall 2026",
+     "Fall 2026"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c7"
+    ],
+    "spans": [
+     "Fall 2028"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c1",
+     "c8"
+    ],
+    "spans": [
+     "Sept. 16, 2026",
+     "September 16, 2026"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c9"
+    ],
+    "spans": [
+     "July 23, 2026"
+    ],
+    "none_ok": true
+   }
+  }
+ },
+ "slug:bus-wash-system-replacement-project": {
+  "sample": "heldout-07",
+  "url": "https://www.sfmta.com/projects/bus-wash-system-replacement-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "June 2022"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c1"
+    ],
+    "spans": [
+     "early 2023"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:prop-a-muni-reliability-and-street-safety-bond": {
+  "sample": "heldout-08",
+  "url": "https://www.sfmta.com/projects/prop-a-muni-reliability-and-street-safety-bond",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c3",
+     "c6",
+     "c7"
+    ],
+    "spans": [
+     "March 1, 2022",
+     "March 1, 2022",
+     "3/1/22"
+    ],
+    "none_ok": true
+   }
+  }
+ },
+ "slug:lincoln-way-new-traffic-signals": {
+  "sample": "heldout-09",
+  "url": "https://www.sfmta.com/projects/lincoln-way-new-traffic-signals",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c2",
+     "c6",
+     "c7"
+    ],
+    "spans": [
+     "October 3, 2025",
+     "October 3, 2025",
+     "October 3, 2025"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c3",
+     "c4",
+     "c5"
+    ],
+    "spans": [
+     "December 16, 2025",
+     "December 16, 2025",
+     "December 16, 2025"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "1125": {
+  "sample": "heldout-10",
+  "url": "https://www.sfmta.com/projects/eddy-street-two-way-conversion-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c11",
+     "c12",
+     "c9",
+     "c10",
+     "c4"
+    ],
+    "spans": [
+     "January 31st",
+     "February 1st 2018",
+     "January 29th",
+     "2018",
+     "October 16th, 2019"
+    ],
+    "none_ok": false,
+    "widened": "last segment constructed; current phase under the written definition"
+   },
+   "construction_end": {
+    "ids": [
+     "c13",
+     "c4"
+    ],
+    "spans": [
+     "October 16, 2019",
+     "October 16th, 2019"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c7",
+     "c14",
+     "c15"
+    ],
+    "spans": [
+     "June 2, 2017",
+     "June 2, 2017",
+     "June 2, 2017"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c8"
+    ],
+    "spans": [
+     "July 2017"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "653": {
+  "sample": "heldout-11",
+  "url": "https://www.sfmta.com/projects/7th-street-8th-street-safety-projects",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c22",
+     "c5"
+    ],
+    "spans": [
+     "May 2020",
+     "2020"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c23",
+     "c6"
+    ],
+    "spans": [
+     "January 2021",
+     "2021"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c20",
+     "c21",
+     "c30"
+    ],
+    "spans": [
+     "September \u2013 December 2019",
+     "December 11, 2019",
+     "December 11, 2019"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c21",
+     "c24",
+     "c25",
+     "c26",
+     "c27"
+    ],
+    "spans": [
+     "December 11, 2019",
+     "December 12, 2019",
+     "December 11, 2019",
+     "December 12, 2019",
+     "December 11, 2019"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c15"
+    ],
+    "spans": [
+     "March 6, 2018"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "1066": {
+  "sample": "heldout-12",
+  "url": "https://www.sfmta.com/projects/dogpatch-parking-management",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c7",
+     "c8",
+     "c9"
+    ],
+    "spans": [
+     "2/16/19",
+     "2/12/19",
+     "3/4/19"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c2",
+     "c10"
+    ],
+    "spans": [
+     "March 8, 2019",
+     "3/8/19"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1",
+     "c18"
+    ],
+    "spans": [
+     "April 16th, 2019",
+     "April 16, 2019"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:electric-mobility-san-francisco": {
+  "sample": "heldout-13",
+  "url": "https://www.sfmta.com/projects/electric-mobility-san-francisco",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:n-judah-layover-pilot": {
+  "sample": "heldout-14",
+  "url": "https://www.sfmta.com/projects/n-judah-layover-pilot",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1",
+     "c2"
+    ],
+    "spans": [
+     "January 23",
+     "2025"
+    ],
+    "none_ok": true
+   },
+   "construction_end": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "2025"
+    ],
+    "none_ok": true
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:shared-electric-moped-parking-permit-program": {
+  "sample": "heldout-15",
+  "url": "https://www.sfmta.com/projects/shared-electric-moped-parking-permit-program",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "June 20 2017"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:slow-streets-bayview": {
+  "sample": "heldout-16",
+  "url": "https://www.sfmta.com/projects/slow-streets-bayview",
+  "fields": {
+   "construction_start": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c2"
+    ],
+    "spans": [
+     "December 3, 2020"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "855": {
+  "sample": "heldout-17",
+  "url": "https://www.sfmta.com/projects/sloat-skyline-intersection-improvement",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c8"
+    ],
+    "spans": [
+     "2024"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c9"
+    ],
+    "spans": [
+     "2025"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c10"
+    ],
+    "spans": [
+     "November 8, 2018"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:43-masonic-and-44-oshaughnessy-transit-improvements-formerly-temporary-emergency-transit-lanes": {
+  "sample": "heldout-18",
+  "url": "https://www.sfmta.com/projects/43-masonic-and-44-oshaughnessy-transit-improvements-formerly-temporary-emergency-transit-lanes",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c4",
+     "c8"
+    ],
+    "spans": [
+     "April 2021",
+     "Spring 2021"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c9"
+    ],
+    "spans": [
+     "Summer 2021"
+    ],
+    "none_ok": true
+   },
+   "consultation": {
+    "ids": [
+     "c17",
+     "c6"
+    ],
+    "spans": [
+     "August 26, 2021",
+     "summer 2021"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c1",
+     "c5",
+     "c12",
+     "c15",
+     "c16"
+    ],
+    "spans": [
+     "January 18th, 2022",
+     "January 18th",
+     "December 22, 2021",
+     "January 18, 2022",
+     "January 18, 2022"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c1",
+     "c5",
+     "c10",
+     "c15",
+     "c16"
+    ],
+    "spans": [
+     "January 18th, 2022",
+     "January 18th",
+     "January 2022",
+     "January 18, 2022",
+     "January 18, 2022"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "994": {
+  "sample": "heldout-19",
+  "url": "https://www.sfmta.com/projects/upper-market-street-safety-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c7",
+     "c15",
+     "c21",
+     "c2"
+    ],
+    "spans": [
+     "2021",
+     "2021",
+     "2021",
+     "May, 2024"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c1",
+     "c8",
+     "c22"
+    ],
+    "spans": [
+     "summer 2023",
+     "2023",
+     "2023"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c24"
+    ],
+    "spans": [
+     "November 2019"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c27"
+    ],
+    "spans": [
+     "fall 2020"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c20",
+     "c27"
+    ],
+    "spans": [
+     "May 2017",
+     "fall 2020"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "slug:j-church-and-m-ocean-view-transit-and-safety-improvements": {
+  "sample": "heldout-20",
+  "url": "https://www.sfmta.com/projects/j-church-and-m-ocean-view-transit-and-safety-improvements",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c1",
+     "c3"
+    ],
+    "spans": [
+     "2024",
+     "Summer 2026"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c4",
+     "c5"
+    ],
+    "spans": [
+     "Winter 2028",
+     "Early 2028"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c12",
+     "c13"
+    ],
+    "spans": [
+     "February 6, 2024",
+     "February 6, 2024"
+    ],
+    "none_ok": true
+   }
+  }
+ },
+ "slug:1-california-temporary-emergency-transit-lanes": {
+  "sample": "heldout-21",
+  "url": "https://www.sfmta.com/projects/1-california-temporary-emergency-transit-lanes",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c4",
+     "c8",
+     "c11",
+     "c19"
+    ],
+    "spans": [
+     "April 2021",
+     "mid-2021",
+     "Spring 2021",
+     "June 2021"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c3",
+     "c7"
+    ],
+    "spans": [
+     "2023",
+     "2023"
+    ],
+    "none_ok": true
+   },
+   "consultation": {
+    "ids": [
+     "c23",
+     "c30",
+     "c21"
+    ],
+    "spans": [
+     "Spring 2023",
+     "December 9, 2021",
+     "Fall 2021"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [
+     "c27"
+    ],
+    "spans": [
+     "February 13, 2023"
+    ],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c23",
+     "c22",
+     "c5",
+     "c28",
+     "c29",
+     "c13"
+    ],
+    "spans": [
+     "Spring 2023",
+     "January 18, 2022",
+     "January 2022",
+     "January 18, 2022",
+     "January 18, 2022",
+     "2022"
+    ],
+    "none_ok": false
+   }
+  }
+ },
+ "218": {
+  "sample": "heldout-22",
+  "url": "https://www.sfmta.com/projects/16th-street-improvement-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c5",
+     "c7",
+     "c9"
+    ],
+    "spans": [
+     "Spring 2019",
+     "Spring 2022",
+     "Early 2025"
+    ],
+    "none_ok": false,
+    "widened": "Installation stage counts under the written definition"
+   },
+   "construction_end": {
+    "ids": [
+     "c2",
+     "c8",
+     "c9",
+     "c10"
+    ],
+    "spans": [
+     "2025",
+     "Summer 2023",
+     "Early 2025",
+     "Summer 2025"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c11"
+    ],
+    "spans": [
+     "July 26, 2023"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "17076": {
+  "sample": "heldout-23",
+  "url": "https://www.sfmta.com/projects/divide-feeder-circuit-carl-11",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c7",
+     "c2"
+    ],
+    "spans": [
+     "Oct. 2018",
+     "November 5"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c8"
+    ],
+    "spans": [
+     "May 2019"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   }
+  }
+ },
+ "24472": {
+  "sample": "heldout-24",
+  "url": "https://www.sfmta.com/projects/lake-merced-quick-build-project",
+  "fields": {
+   "construction_start": {
+    "ids": [
+     "c6"
+    ],
+    "spans": [
+     "Fall 2023"
+    ],
+    "none_ok": false
+   },
+   "construction_end": {
+    "ids": [
+     "c7"
+    ],
+    "spans": [
+     "Spring 2026"
+    ],
+    "none_ok": false
+   },
+   "consultation": {
+    "ids": [
+     "c12"
+    ],
+    "spans": [
+     "April 7, 2022"
+    ],
+    "none_ok": false
+   },
+   "hearing": {
+    "ids": [],
+    "spans": [],
+    "none_ok": false
+   },
+   "approval": {
+    "ids": [
+     "c4",
+     "c5",
+     "c10",
+     "c11"
+    ],
+    "spans": [
+     "Fall 2022",
+     "Early 2023",
+     "January 17, 2023",
+     "January 17, 2023"
+    ],
+    "none_ok": false
+   }
+  }
+ }
+}

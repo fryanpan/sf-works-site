@@ -1,0 +1,52 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-01-22",
+ "id": "g218-45246",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45246",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communication"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the December 15, 2023 Regular Meeting"
+  },
+  {
+   "no": "4b",
+   "title": "Various Locations Pavement Renovation No.67A, Sourcing Event ID 0000005634 - Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Hunters Point, Central Waterfront, and Potrero Hill Area Streets Pavement Renovation and Sewer Replacement, Sourcing Event ID 0000007433 - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "7",
+   "title": "General Public Comment – Continued from Item 3 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

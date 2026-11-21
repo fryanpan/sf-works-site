@@ -1,0 +1,32 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-10-29",
+ "id": "g55-53464",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53464",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report: Disclosure of Labor Agreements"
+  }
+ ],
+ "parser": 4,
+ "body": "sfmta-board"
+}

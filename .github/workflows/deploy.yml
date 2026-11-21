@@ -1,0 +1,118 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  # Production: sf-works.org, built from this repository alone.
+  production:
+    runs-on: ubuntu-latest
+    steps:
+      # Full history: a page with no `updated` in its front matter is dated by
+      # its file's last commit, or by site/data/page-dates.json while the import
+      # commit is its only one (site/src/page-dates.mjs).
+      # The data files of 1 MB or more are in Git LFS (.gitattributes), and the
+      # build reads them. They are restored from the cache and only what is
+      # missing is downloaded, to stay inside the free LFS bandwidth (ADR 0002).
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: List the LFS files this commit needs
+        run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
+      - uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - name: Fetch the LFS files the cache lacks
+        run: git lfs pull
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check every file of 1 MB or more is in Git LFS
+        run: python3 pipeline/check-large-files.py
+      - name: Check nothing private is anywhere in the repo, and every relative link resolves
+        run: node pipeline/check-public-repo.mjs
+        env:
+          PRIVATE_NAMES: ${{ secrets.PRIVATE_NAMES }}
+      - name: Check nothing outside the repo reached the site
+        run: node site/scripts/check-public.mjs
+      - name: Install the build's dependencies
+        run: npm ci --omit=dev
+        working-directory: site
+      - name: Build
+        run: npm run build
+        working-directory: site
+        env:
+          # A browser key restricted to sf-works.org. Absent, the maps are
+          # drawn over OpenFreeMap's Positron instead; the build does not fail.
+          GOOGLE_MAPS_KEY: ${{ secrets.GOOGLE_MAPS_KEY }}
+          # Plausible pageview script for sf-works.org.
+          PLAUSIBLE_SCRIPT: https://plausible.io/js/pa-yweCCEmysrF00BmbHVFie.js
+          # Userback's widget token: public by design, it ships in every page.
+          USERBACK_TOKEN: A-iVWefngEVcAkxpvZSIHqDaqI8
+      - name: Check the rendered markdown pages
+        run: node site/scripts/check-rendered-docs.mjs
+      - name: Check every published version is built and unchanged
+        run: node scripts/check-versions.mjs --dist dist
+        working-directory: site
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: site
+          wranglerVersion: "4.156.2"
+          command: deploy
+
+  # Staging preview: staging.sf-works.org, with the review widget, behind a
+  # Cloudflare Access login. Runs only once the repository variable
+  # DEPLOY_STAGING is "true", so it does not race another deploy of the same
+  # Worker. The widget's board doc, board and server are secrets, never in the
+  # repo; the review server's origin is also the Worker's REVIEW_FRAME_ANCESTORS
+  # secret (site/src/worker.mjs).
+  staging:
+    if: vars.DEPLOY_STAGING == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: List the LFS files this commit needs
+        run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
+      - uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - name: Fetch the LFS files the cache lacks
+        run: git lfs pull
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check nothing outside the repo reached the site
+        run: node site/scripts/check-public.mjs
+      - name: Install the build's dependencies
+        run: npm ci --omit=dev
+        working-directory: site
+      - name: Build with the comment widget
+        run: npm run build
+        working-directory: site
+        env:
+          GOOGLE_MAPS_KEY: ${{ secrets.GOOGLE_MAPS_KEY }}
+          WIDGET_DOC_ID: ${{ secrets.WIDGET_DOC_ID }}
+          WIDGET_WORKSPACE_ID: ${{ secrets.WIDGET_WORKSPACE_ID }}
+          WIDGET_SERVER: ${{ secrets.WIDGET_SERVER }}
+          # Staging shows the tools production hides (site/src/features.mjs).
+          SITE_SHOW_HIDDEN: "1"
+      - name: Deploy staging
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: site
+          wranglerVersion: "4.156.2"
+          environment: staging
+          command: deploy

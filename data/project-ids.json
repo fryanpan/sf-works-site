@@ -1,0 +1,3215 @@
+{
+ "016e36": {
+  "id": "dotmaps:31426",
+  "name": "Various Locations Pavement Renovation No 99",
+  "pages": [],
+  "listed": true
+ },
+ "01d70b": {
+  "id": "dotmaps:66266",
+  "name": "Various Locations Pavement Renovation No 105",
+  "pages": [],
+  "listed": true
+ },
+ "024323": {
+  "id": "sfmta:15635",
+  "name": "Dogpatch-Central Waterfront Area Transit Connections Study",
+  "pages": [
+   "https://www.sfmta.com/node/15635"
+  ],
+  "listed": true
+ },
+ "053731": {
+  "id": "dotmaps:63339",
+  "name": "Various Locations Sewer Replacement No 36",
+  "pages": [],
+  "listed": true
+ },
+ "055270": {
+  "id": "sfmta:15301",
+  "name": "Third Street Bridge Rehabilitation Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/ThirdStreetBridge",
+   "https://www.sfmta.com/node/15301"
+  ],
+  "listed": false
+ },
+ "066525": {
+  "id": "dotmaps:67352",
+  "name": "Fell & Octavia Improvement Project",
+  "pages": [],
+  "listed": true
+ },
+ "0740ae": {
+  "id": "dotmaps:63607",
+  "name": "Ocean Beach Climate Adaptation Project",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/oceanbeach"
+  ],
+  "listed": true
+ },
+ "079673": {
+  "id": "sfmta:28173",
+  "name": "SoMa Slow Streets",
+  "pages": [
+   "https://www.sfmta.com/node/28173"
+  ],
+  "listed": true
+ },
+ "081ad7": {
+  "id": "dotmaps:8984",
+  "name": "Various Locations Pavement Renovation Concrete No 94",
+  "pages": [],
+  "listed": true
+ },
+ "08c401": {
+  "id": "dotmaps:60399",
+  "name": "Various Locations Sewer Replacement No 33",
+  "pages": [],
+  "listed": true
+ },
+ "0919e7": {
+  "id": "sfmta:44722",
+  "name": "California Street Transit and Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/44722"
+  ],
+  "listed": true
+ },
+ "0ae8e3": {
+  "id": "sfmta:27608",
+  "name": "Arlington Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27608"
+  ],
+  "listed": true
+ },
+ "0c0d45": {
+  "id": "dpw:34969",
+  "name": "Masonic Avenue Streetscape Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/masonic",
+   "https://www.sfmta.com/node/853"
+  ],
+  "listed": false
+ },
+ "0d6955": {
+  "id": "dotmaps:45477",
+  "name": "Bikeway Hardening",
+  "pages": [],
+  "listed": true
+ },
+ "0e8549": {
+  "id": "sfmta:27609",
+  "name": "Cabrillo Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27609"
+  ],
+  "listed": true
+ },
+ "103a9f": {
+  "id": "dotmaps:36768",
+  "name": "8 & 12-Inch Ductile Iron Water Main Replacement on Palou, Quesada and Revere From 3rd St to Griffith St",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/palou"
+  ],
+  "listed": true
+ },
+ "105e32": {
+  "id": "dotmaps:47920",
+  "name": "Noriega St and Quintara St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "114610": {
+  "id": "dotmaps:31165",
+  "name": "18th St and Valencia St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "119d9e": {
+  "id": "dotmaps:8006",
+  "name": "Holloway Ave and Lake Merced Blvd Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "11f742": {
+  "id": "sfmta:27614",
+  "name": "Hearst Avenue Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27614"
+  ],
+  "listed": true
+ },
+ "11th-street-safety-improvements-project": {
+  "alias": "25dd62",
+  "name": "11th Street Safety Improvements Project"
+ },
+ "12-inch-cast-iron-water-main-rehabilitation-on-45th-ave": {
+  "alias": "64b8ff",
+  "name": "12-Inch Cast Iron Water Main Rehabilitation on 45th Ave. from Lincoln Way to Martin Luther King Jr. Dr., on 47th Ave. from John F. Kennedy Dr. to Cabrillo St., and on Various Street Locations"
+ },
+ "12af54": {
+  "id": "sfmta:752",
+  "name": "Central Embarcadero Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/752"
+  ],
+  "listed": true
+ },
+ "12e1b0": {
+  "id": "dotmaps:8141",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 69)",
+  "pages": [
+   "https://sfpublicworks.org/VL69"
+  ],
+  "listed": true
+ },
+ "13th-street-safety-project": {
+  "alias": "dc1b89",
+  "name": "13th Street Safety Project"
+ },
+ "14-009-8-and-24-inch-ductile-iron-water-main-replacement-on": {
+  "alias": "b835a3",
+  "name": "14-009 8-, and 24-inch Ductile Iron Water Main Replacement on Page Street from Stanyan to Fillmore Streets"
+ },
+ "142661": {
+  "id": "sfmta:27619",
+  "name": "Shotwell Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27619"
+  ],
+  "listed": false
+ },
+ "14c591": {
+  "id": "sfmta:24295",
+  "name": "Divisadero Intersection Improvements",
+  "pages": [
+   "https://www.sfmta.com/node/24295"
+  ],
+  "listed": false
+ },
+ "16272e": {
+  "id": "dotmaps:25196",
+  "name": "San Bruno Ave Pavement Renovation",
+  "pages": [
+   "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2699"
+  ],
+  "listed": true
+ },
+ "16e9b9": {
+  "id": "sfmta:24778",
+  "name": "Golden Gate Avenue Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/24778"
+  ],
+  "listed": true
+ },
+ "16th-st-17th-st-and-18th-st-pavement-renovation": {
+  "alias": "a0a291",
+  "name": "16th St, 17th St, and 18th St Pavement Renovation"
+ },
+ "173534": {
+  "id": "sfmta:43636",
+  "name": "Brotherhood-Alemany Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/43636"
+  ],
+  "listed": true
+ },
+ "17d26c": {
+  "id": "sfmta-page:zoo-access-safety-and-connectivity",
+  "name": "Ocean Beach Climate Change Adaptation Project: Initial Improvements",
+  "pages": [
+   "https://www.sfmta.com/projects/zoo-access-safety-and-connectivity"
+  ],
+  "listed": true
+ },
+ "18th-st-and-valencia-st-pavement-renovation": {
+  "alias": "114610",
+  "name": "18th St and Valencia St Pavement Renovation"
+ },
+ "190d46": {
+  "id": "dotmaps:31530",
+  "name": "Front Street, Sansome Street, 1st Street, and Montgomery Street Pavement Sewer Replacement",
+  "pages": [
+   "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2693"
+  ],
+  "listed": true
+ },
+ "19549e": {
+  "id": "dotmaps:31368",
+  "name": "PW Various Locations Sewer Replacement No 21",
+  "pages": [],
+  "listed": true
+ },
+ "19c99f": {
+  "id": "sfmta:44778",
+  "name": "Monterey Boulevard Pedestrian Safety Improvement Project",
+  "pages": [
+   "https://www.sfmta.com/node/44778"
+  ],
+  "listed": true
+ },
+ "1a30e9": {
+  "id": "dotmaps:31563",
+  "name": "PW Various Locations Sewer Replacement No 19",
+  "pages": [],
+  "listed": true
+ },
+ "1a61b8": {
+  "id": "dotmaps:8034",
+  "name": "Fillmore Street Pavement Renovation Phase 1",
+  "pages": [],
+  "listed": true
+ },
+ "1b9974": {
+  "id": "dotmaps:37606",
+  "name": "Various Locations Sewer Replacement No 30",
+  "pages": [],
+  "listed": true
+ },
+ "1bb9b7": {
+  "id": "dotmaps:34292",
+  "name": "Various Locations Sewer Replacement No 24",
+  "pages": [],
+  "listed": true
+ },
+ "1d463b": {
+  "id": "dotmaps:25702",
+  "name": "PW - M & J Lines - Muni Forward Project",
+  "pages": [
+   "https://www.sfmta.com/projects/j-church-and-m-ocean-view-transit-and-safety-improvements"
+  ],
+  "listed": true
+ },
+ "1e5e72": {
+  "id": "dotmaps:35073",
+  "name": "Various Locations Pavement Renovation No 86B",
+  "pages": [],
+  "listed": true
+ },
+ "2021-003-8-inch-ductile-iron-water-main-replacement-on": {
+  "alias": "4fd871",
+  "name": "2021-003 8-inch Ductile Iron Water Main Replacement on Diamond St from 25th to 27th Street and Various Side Streets"
+ },
+ "203e1d": {
+  "id": "dotmaps:44682",
+  "name": "WW-779 Various Locations Sewer Replacement No. 32",
+  "pages": [],
+  "listed": true
+ },
+ "20515f": {
+  "id": "dotmaps:11686",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 79)",
+  "pages": [
+   "https://sfpublicworks.org/VL79"
+  ],
+  "listed": false
+ },
+ "20c9e1": {
+  "id": "sfmta:29974",
+  "name": "Bayview Community Pathway",
+  "pages": [
+   "https://www.sfmta.com/node/29974"
+  ],
+  "listed": true
+ },
+ "21310a": {
+  "id": "dotmaps:17352",
+  "name": "Brotherhood Way Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "21c8c8": {
+  "id": "dotmaps:63618",
+  "name": "Various Locations Sewer Replacement No 37",
+  "pages": [],
+  "listed": true
+ },
+ "21cb98": {
+  "id": "sfmta:44339",
+  "name": "8 Bayshore: Visitacion Valley Stop Improvements",
+  "pages": [
+   "https://www.sfmta.com/node/44339"
+  ],
+  "listed": true
+ },
+ "2274i-pw-automated-photo-enforcement-system-upgrade": {
+  "id": "dotmaps:52829",
+  "name": "2274I_PW_Automated_Photo_Enforcement_System_Upgrade_Contract_2",
+  "pages": [],
+  "listed": false
+ },
+ "23603e": {
+  "id": "sfmta:27602",
+  "name": "12th Avenue Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27602"
+  ],
+  "listed": true
+ },
+ "23be1a": {
+  "id": "dotmaps:38070",
+  "name": "PW Various Locations Sewer Replacement No 31",
+  "pages": [],
+  "listed": true
+ },
+ "255dc2": {
+  "id": "dotmaps:53071",
+  "name": "Westside Force Main Spot Repair",
+  "pages": [],
+  "listed": true
+ },
+ "25dd62": {
+  "id": "dotmaps:26809",
+  "name": "11th Street Safety Improvements Project",
+  "pages": [],
+  "listed": true
+ },
+ "26133a": {
+  "id": "sfmta:995",
+  "name": "Western Addition Community Based Transportation Plan Implementation",
+  "pages": [
+   "https://www.sfmta.com/node/995"
+  ],
+  "listed": false
+ },
+ "266a88": {
+  "id": "dotmaps:67703",
+  "name": "8- and 12-inch Ductile Iron Water Main Replacement on Mangles from Ridgewood Ave to Congo St and Various Side Streets",
+  "pages": [],
+  "listed": true
+ },
+ "270f92": {
+  "id": "sfmta:25208",
+  "name": "Visitacion Valley and Portola Proactive Traffic Calming Project",
+  "pages": [
+   "https://www.sfmta.com/node/25208"
+  ],
+  "listed": true
+ },
+ "284b2e": {
+  "id": "sfmta:17207",
+  "name": "3rd Street Transit and Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/17207"
+  ],
+  "listed": true
+ },
+ "28668a": {
+  "id": "dotmaps:16520",
+  "name": "Lower Alemany Stormwater Improvements - Alemany Shaft",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/lower-alemany"
+  ],
+  "listed": true
+ },
+ "2b2040": {
+  "id": "sfmta:2403",
+  "name": "Mission / Geneva Safety Project",
+  "pages": [
+   "https://sfpublicworks.org/Mission-Geneva",
+   "https://www.sfmta.com/node/2403"
+  ],
+  "listed": false
+ },
+ "2c6eda": {
+  "id": "dotmaps:60724",
+  "name": "Fillmore Street Pavement Renovation Phase 2",
+  "pages": [],
+  "listed": true
+ },
+ "2d18e5": {
+  "id": "dotmaps:66262",
+  "name": "Various Locations Sewer Replacement No 38",
+  "pages": [],
+  "listed": true
+ },
+ "2eefea": {
+  "id": "sfmta:15659",
+  "name": "55 Dogpatch",
+  "pages": [
+   "https://www.sfmta.com/node/15659"
+  ],
+  "listed": false
+ },
+ "2f0127": {
+  "id": "dotmaps:31716",
+  "name": "Mariposa, Lake Merced and Evans CSD Improvements",
+  "pages": [],
+  "listed": true
+ },
+ "2fe678": {
+  "id": "dotmaps:26918",
+  "name": "Various Locations Sewer Replacement #21",
+  "pages": [],
+  "listed": true
+ },
+ "309ca9": {
+  "id": "dotmaps:31525",
+  "name": "Various Locations Pavement Renovation No 78",
+  "pages": [
+   "https://sfpublicworks.org/VL78"
+  ],
+  "listed": true
+ },
+ "310750": {
+  "id": "dotmaps:26428",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 82)",
+  "pages": [
+   "https://sfpublicworks.org/index.php/VL82"
+  ],
+  "listed": true
+ },
+ "311118": {
+  "id": "dotmaps:22963",
+  "name": "J Church Safety and Accessibility Project",
+  "pages": [
+   "https://www.sfmta.com/projects/j-church-safety-and-accessibility-project-san-jose-avenue"
+  ],
+  "listed": false,
+  "redirect": "f92254"
+ },
+ "31366c": {
+  "id": "dotmaps:8092",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 62)",
+  "pages": [
+   "https://sfpublicworks.org/index.php/vl62"
+  ],
+  "listed": false
+ },
+ "31aa61": {
+  "id": "dotmaps:8071",
+  "name": "Various Locations Pavement Renovation X",
+  "pages": [],
+  "listed": false
+ },
+ "32fe6e": {
+  "id": "sfmta:28373",
+  "name": "Arguello Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/28373"
+  ],
+  "listed": true
+ },
+ "336f8f": {
+  "id": "sfmta-page:embarcadero-connectivity-plan",
+  "name": "Embarcadero Connectivity Plan",
+  "pages": [
+   "https://www.sfmta.com/projects/embarcadero-connectivity-plan"
+  ],
+  "listed": true
+ },
+ "340790": {
+  "id": "dotmaps:28035",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 90)",
+  "pages": [
+   "https://sfpublicworks.org/index.php/VL90"
+  ],
+  "listed": true
+ },
+ "3655a3": {
+  "id": "dotmaps:8719",
+  "name": "PEFWS Pipeline Contract B - 36-inch Welded Steel Pipe",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/westside-fire"
+  ],
+  "listed": true
+ },
+ "36964d": {
+  "id": "sfpuc-page:west-soma",
+  "name": "West SoMa, Panhandle and Inner Sunset Large Sewer Improvements Project",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/west-soma"
+  ],
+  "listed": false
+ },
+ "37ed0c": {
+  "id": "dotmaps:34028",
+  "name": "Various Locations Sewer Replacement No 29",
+  "pages": [],
+  "listed": true
+ },
+ "3ab954": {
+  "id": "dotmaps:31458",
+  "name": "Various Locations Pavement Renovation Under Overhead Contact System No 4",
+  "pages": [],
+  "listed": true
+ },
+ "3c5f9e": {
+  "id": "dotmaps:33697",
+  "name": "Various Locations Sewer Replacement No 26",
+  "pages": [],
+  "listed": true
+ },
+ "3d6f7f": {
+  "id": "sfmta:44133",
+  "name": "Jefferson Street Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/44133"
+  ],
+  "listed": true
+ },
+ "3eb676": {
+  "id": "dotmaps:31406",
+  "name": "Howard Streetscape Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/TransbayHoward"
+  ],
+  "listed": true
+ },
+ "3f7be6": {
+  "id": "dotmaps:31497",
+  "name": "Various Locations Large Diameter Sewer Improvements No 1",
+  "pages": [],
+  "listed": true
+ },
+ "3fb39a": {
+  "id": "dotmaps:63610",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 77)",
+  "pages": [
+   "https://sfpublicworks.org/vl77"
+  ],
+  "listed": true
+ },
+ "41fa0d": {
+  "id": "dotmaps:8113",
+  "name": "Various Locations Pavement Renovation No 81 and Sewer Replacement",
+  "pages": [
+   "https://sfpublicworks.org/VL81"
+  ],
+  "listed": true
+ },
+ "429670": {
+  "id": "dotmaps:25817",
+  "name": "Various Locations Pavement Renovation No 69",
+  "pages": [
+   "https://sfpublicworks.org/VL69"
+  ],
+  "listed": true
+ },
+ "43e1a1": {
+  "id": "dotmaps:45457",
+  "name": "As Needed City-wide Pavement Preservation 6 (General As-Needed Contract G29)",
+  "pages": [],
+  "listed": true
+ },
+ "44073a": {
+  "id": "sfmta:28896",
+  "name": "Beach Street Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/28896"
+  ],
+  "listed": true
+ },
+ "4418ce": {
+  "id": "sfmta-page:safe-school-connections",
+  "name": "Safe School Connections",
+  "pages": [
+   "https://www.sfmta.com/projects/safe-school-connections"
+  ],
+  "listed": true
+ },
+ "454934": {
+  "id": "sfmta:24645",
+  "name": "Golden Gate Park Access and Safety Program",
+  "pages": [
+   "https://www.sfmta.com/node/24645"
+  ],
+  "listed": true
+ },
+ "460e9f": {
+  "id": "dotmaps:61339",
+  "name": "Broad Street and Randolph Street Sewer Replacement",
+  "pages": [],
+  "listed": false,
+  "redirect": "7c41dc"
+ },
+ "466186": {
+  "id": "dotmaps:61340",
+  "name": "J Muni Forward: Church & Market (TO211 | 10035351)",
+  "pages": [],
+  "listed": false,
+  "redirect": "4eac61"
+ },
+ "4856b0": {
+  "id": "dotmaps:66260",
+  "name": "Innes Avenue Quick-Build",
+  "pages": [],
+  "listed": false,
+  "redirect": "c30508"
+ },
+ "49124e": {
+  "id": "dotmaps:67347",
+  "name": "Various Locations Pavement Renovation No 104",
+  "pages": [],
+  "listed": true
+ },
+ "494321": {
+  "id": "sfmta:1250",
+  "name": "6th Street Pedestrian Safety Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/sixthstreet",
+   "https://www.sfmta.com/node/1250"
+  ],
+  "listed": false
+ },
+ "4a965f": {
+  "id": "dpw:34930",
+  "name": "Marina Bay Trail Planning",
+  "pages": [
+   "https://sfpublicworks.org/project/marina-bay-trail-planning"
+  ],
+  "listed": true
+ },
+ "4b152a": {
+  "id": "sfmta:26728",
+  "name": "Sloat Blvd Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/26728"
+  ],
+  "listed": true
+ },
+ "4b2d53": {
+  "id": "dotmaps:8179",
+  "name": "PW Various Locations Sewer Replacement No 17",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4507"
+  ],
+  "listed": true
+ },
+ "4b674b": {
+  "id": "dpw:35218",
+  "name": "McAllister Street, 20th Street, and 24th Street Pavement Renovation and Sewer Replacement Project",
+  "pages": [
+   "https://sfpublicworks.org/2218i"
+  ],
+  "listed": false
+ },
+ "4c3c4a": {
+  "id": "sfmta:1097",
+  "name": "Geneva-San Jose Intersection Study",
+  "pages": [
+   "https://www.sfmta.com/node/1097"
+  ],
+  "listed": true
+ },
+ "4caf0f": {
+  "id": "sfmta:27339",
+  "name": "Main Street Streetscape Project",
+  "pages": [
+   "https://www.sfmta.com/node/27339"
+  ],
+  "listed": true
+ },
+ "4cfee5": {
+  "id": "sfmta:39914",
+  "name": "Sutter Street Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/39914"
+  ],
+  "listed": true
+ },
+ "4e9fb2": {
+  "id": "sfmta:381",
+  "name": "Folsom-Howard Streetscape Project",
+  "pages": [
+   "https://www.sfmta.com/node/381",
+   "https://www.sfmta.com/projects/folsom-street-implementation"
+  ],
+  "listed": true
+ },
+ "4ea429": {
+  "id": "sfmta:848",
+  "name": "Lombard Street Vision Zero Project",
+  "pages": [
+   "https://sfpublicworks.org/Lombard",
+   "https://www.sfmta.com/node/848"
+  ],
+  "listed": true
+ },
+ "4eac61": {
+  "id": "sfmta-page:church-and-market-street-intersection-improvements",
+  "name": "Church and Market Street Intersection Improvements",
+  "pages": [
+   "https://www.sfmta.com/projects/church-and-market-street-intersection-improvements"
+  ],
+  "listed": true
+ },
+ "4fd871": {
+  "id": "dotmaps:16931",
+  "name": "2021-003 8-inch Ductile Iron Water Main Replacement on Diamond St from 25th to 27th Street and Various Side Streets",
+  "pages": [],
+  "listed": true
+ },
+ "5248bd": {
+  "id": "sfmta-page:29-sunset-improvement-project-phase-one",
+  "name": "29 Sunset Improvement Project",
+  "pages": [
+   "https://www.sfmta.com/projects/29-sunset-improvement-project-phase-one"
+  ],
+  "listed": true
+ },
+ "535ddd": {
+  "id": "dotmaps:31250",
+  "name": "Various Locations Sewer Replacement No 28",
+  "pages": [],
+  "listed": true
+ },
+ "53e998": {
+  "id": "dotmaps:11711",
+  "name": "PW Brannan Street Outfall Improvements",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/outfallprojects"
+  ],
+  "listed": true
+ },
+ "5587a5": {
+  "id": "dotmaps:31447",
+  "name": "PW FY21 Bike Traffic Signal Upgrade Program",
+  "pages": [],
+  "listed": true
+ },
+ "58e685": {
+  "id": "dotmaps:35253",
+  "name": "Various Locations Sewer Replacement No 25",
+  "pages": [],
+  "listed": true
+ },
+ "593d29": {
+  "id": "dotmaps:61435",
+  "name": "Various Locations Sewer Replacement No 34",
+  "pages": [],
+  "listed": true
+ },
+ "59fa28": {
+  "id": "dotmaps:31531",
+  "name": "Front St and Sansome St Pavement Renovation",
+  "pages": [
+   "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2693"
+  ],
+  "listed": true
+ },
+ "5a3eea": {
+  "id": "sfmta:27548",
+  "name": "Cayuga Avenue Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27548"
+  ],
+  "listed": true
+ },
+ "5b4e76": {
+  "id": "sfmta:29748",
+  "name": "Vision Zero Signal Retiming",
+  "pages": [
+   "https://www.sfmta.com/node/29748"
+  ],
+  "listed": false
+ },
+ "5b6526": {
+  "id": "sfmta:28582",
+  "name": "Sutter Street Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/28582"
+  ],
+  "listed": true
+ },
+ "5bdfc6": {
+  "id": "dotmaps:36616",
+  "name": "WD-2937 2425-003: 8-inch Ductile Iron Water Main Replacement on Underwood, Thomas, and Shafter Aves from 3rd St to Griffith St",
+  "pages": [],
+  "listed": true
+ },
+ "5c1a15": {
+  "id": "sfmta:1125",
+  "name": "Eddy Street Two-Way Conversion Project",
+  "pages": [
+   "https://www.sfmta.com/node/1125"
+  ],
+  "listed": false
+ },
+ "5d2582": {
+  "id": "dotmaps:53393",
+  "name": "Various Locations Pavement Renovation No 102",
+  "pages": [],
+  "listed": true
+ },
+ "5e7ef5": {
+  "id": "sfmta:29727",
+  "name": "No Turn on Red Downtown Expansion Project",
+  "pages": [
+   "https://www.sfmta.com/node/29727"
+  ],
+  "listed": true
+ },
+ "5ef87e": {
+  "id": "dotmaps:8138",
+  "name": "PW Various Locations Sewer Replacement No 18",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4538"
+  ],
+  "listed": true
+ },
+ "5th-st-safety-improvement-project": {
+  "alias": "ca0454",
+  "name": "5th St Safety Improvement Project"
+ },
+ "62296a": {
+  "id": "dotmaps:36981",
+  "name": "Monterey Blvd Sewer Replacement",
+  "pages": [],
+  "listed": true
+ },
+ "62f904": {
+  "id": "dpw:35080",
+  "name": "Jefferson Streetscape Improvements Project - Phase II",
+  "pages": [
+   "https://sfpublicworks.org/jefferson"
+  ],
+  "listed": false
+ },
+ "639c3a": {
+  "id": "sfmta:29746",
+  "name": "Western Addition Traffic Signal Upgrades Phase 1",
+  "pages": [
+   "https://www.sfmta.com/node/29746"
+  ],
+  "listed": true
+ },
+ "6494c0": {
+  "id": "dotmaps:34913",
+  "name": "Stormwater Trash Capture",
+  "pages": [],
+  "listed": true
+ },
+ "64b8ff": {
+  "id": "dotmaps:9107",
+  "name": "12-Inch Cast Iron Water Main Rehabilitation on 45th Ave. from Lincoln Way to Martin Luther King Jr. Dr., on 47th Ave. from John F. Kennedy Dr. to Cabrillo St., and on Various Street Locations",
+  "pages": [],
+  "listed": true
+ },
+ "668eca": {
+  "id": "dotmaps:35190",
+  "name": "Various Locations Pavement Renovation No 100",
+  "pages": [],
+  "listed": true
+ },
+ "66a62b": {
+  "id": "sfmta:826",
+  "name": "Treasure Island and Yerba Buena Island Project",
+  "pages": [
+   "https://www.sfmta.com/node/826"
+  ],
+  "listed": true
+ },
+ "66f2f1": {
+  "id": "dotmaps:31417",
+  "name": "PW Various Locations Curb Ramps No 18",
+  "pages": [
+   "https://sfpublicworks.org/CR18"
+  ],
+  "listed": true
+ },
+ "6740ae": {
+  "id": "dotmaps:36980",
+  "name": "PW StreetResurfacingPro-BBSR Pavement Prese FY 26-27",
+  "pages": [],
+  "listed": true
+ },
+ "674498": {
+  "id": "dotmaps:8055",
+  "name": "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/folsom-area-stormwater"
+  ],
+  "listed": true
+ },
+ "67c1fa": {
+  "id": "dotmaps:8718",
+  "name": "PEFWS Pipeline - 36- & 42-inch Welded Steel Pipe",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/westside-fire"
+  ],
+  "listed": true
+ },
+ "6979a3": {
+  "id": "dotmaps:8711",
+  "name": "Lower Alemany Area Stormwater Improvement Project",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/lower-alemany"
+  ],
+  "listed": true
+ },
+ "6986f5": {
+  "id": "dotmaps:31777",
+  "name": "Visitacion Avenue Streetscape Project",
+  "pages": [],
+  "listed": true
+ },
+ "69ab4d": {
+  "id": "sfmta:762",
+  "name": "Parkmerced Project",
+  "pages": [],
+  "listed": true
+ },
+ "69da35": {
+  "id": "sfmta:45549",
+  "name": "West Broadway Tunnel Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/45549"
+  ],
+  "listed": true
+ },
+ "6a34f6": {
+  "id": "sfmta:27618",
+  "name": "Somerset Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27618"
+  ],
+  "listed": true
+ },
+ "6ea800": {
+  "id": "dotmaps:68787",
+  "name": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+  "pages": [],
+  "listed": false
+ },
+ "713e33": {
+  "id": "dpw:35156",
+  "name": "Page Street Neighborway Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/Page"
+  ],
+  "listed": false
+ },
+ "7145e5": {
+  "id": "dotmaps:46858",
+  "name": "Various Locations Sewer Replacement No 32",
+  "pages": [],
+  "listed": true
+ },
+ "71f118": {
+  "id": "dotmaps:25813",
+  "name": "8th, Beale, Clay, Leavenworth and Main Streets Sewer Replacement (JV w 8th St, Clay St and Leavenworth St Pavement Renovation)",
+  "pages": [
+   "https://sfpublicworks.org/index.php/2308i"
+  ],
+  "listed": true
+ },
+ "7310c9": {
+  "id": "sfmta:27873",
+  "name": "K Ingleside Rapid Project",
+  "pages": [
+   "https://www.sfmta.com/node/27873"
+  ],
+  "listed": true
+ },
+ "73533b": {
+  "id": "dotmaps:26901",
+  "name": "PW Various Locations Sewer Replacement No 20",
+  "pages": [],
+  "listed": true
+ },
+ "755890": {
+  "id": "sfmta:19953",
+  "name": "Page Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/19953"
+  ],
+  "listed": true
+ },
+ "7659de": {
+  "id": "dotmaps:22859",
+  "name": "Sickles Avenue Streetscape Project",
+  "pages": [],
+  "listed": true
+ },
+ "766443": {
+  "id": "dotmaps:8781",
+  "name": "WD-2923 (formerly WD-2764): 24-inch Water Main Rehabilitation from University Mound Reservoir to 3rd St",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/university-mound"
+  ],
+  "listed": true
+ },
+ "76f286": {
+  "id": "dotmaps:52909",
+  "name": "PW Havelock Pedestrian Bridge - Sidewalk Improvements",
+  "pages": [],
+  "listed": true
+ },
+ "7726f1": {
+  "id": "dpw:35165",
+  "name": "Alemany Interchange Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/Alemany-Interchange"
+  ],
+  "listed": false
+ },
+ "777c86": {
+  "id": "sfmta:17037",
+  "name": "Forest Hill Irrigation Improvement Project",
+  "pages": [
+   "https://www.sfmta.com/node/17037"
+  ],
+  "listed": false
+ },
+ "778fb4": {
+  "id": "dotmaps:22965",
+  "name": "M Ocean View Transit and Safety Project",
+  "pages": [],
+  "listed": false
+ },
+ "77c9c3": {
+  "id": "sfmta:29514",
+  "name": "Contract 66 New Traffic Signals",
+  "pages": [
+   "https://www.sfmta.com/node/29514"
+  ],
+  "listed": true
+ },
+ "784a65": {
+  "id": "dotmaps:16930",
+  "name": "WD-2918 8-Inch Ductile Iron Water Main Replacement, Sewer Rehabilitation and Sewer Replacement on Harkness Ave., Goettingen St., Girard St., and Various Locations",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4622"
+  ],
+  "listed": true
+ },
+ "791074": {
+  "id": "sfmta:434",
+  "name": "Muni Subway Expansion Project",
+  "pages": [
+   "https://www.sfmta.com/node/434"
+  ],
+  "listed": true
+ },
+ "7a8bef": {
+  "id": "dotmaps:16928",
+  "name": "WD-2934 16-, 12- and 8-inch Ductile Iron Water Main Replacement on Andover to Nevada St from Tompkins to Crescent Ave",
+  "pages": [],
+  "listed": true
+ },
+ "7a9f6d": {
+  "id": "sfmta:29722",
+  "name": "Tenderloin Traffic Signal Upgrades",
+  "pages": [
+   "https://www.sfmta.com/node/29722"
+  ],
+  "listed": true
+ },
+ "7ab26d": {
+  "id": "sfmta:45483",
+  "name": "Jackson Square Parking and Traffic Improvements",
+  "pages": [
+   "https://www.sfmta.com/node/45483"
+  ],
+  "listed": true
+ },
+ "7c41dc": {
+  "id": "dotmaps:61050",
+  "name": "Broad Street and Randolph Street Sewer Replacement",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4626"
+  ],
+  "listed": true
+ },
+ "7d495c": {
+  "id": "sfmta:823",
+  "name": "Muni Forward 9 San Bruno Rapid Proposal",
+  "pages": [
+   "https://sfpublicworks.org/index.php/project/9-san-bruno-muni-forward-project",
+   "https://www.sfmta.com/node/823"
+  ],
+  "listed": false
+ },
+ "7feb73": {
+  "id": "sfmta:29729",
+  "name": "Western Addition Community Safe Streets",
+  "pages": [
+   "https://www.sfmta.com/node/29729"
+  ],
+  "listed": true
+ },
+ "7th-st-8th-st-and-folsom-st-pavement-renovation": {
+  "alias": "b3945f",
+  "name": "7th St, 8th St and Folsom St Pavement Renovation"
+ },
+ "8-12-inch-ductile-iron-water-main-replacement-on-palou": {
+  "alias": "103a9f",
+  "name": "8 & 12-Inch Ductile Iron Water Main Replacement on Palou, Quesada and Revere From 3rd St to Griffith St"
+ },
+ "8-inch-ductile-iron-water-main-replacement-on-harkness": {
+  "alias": "82bfde",
+  "name": "8-Inch Ductile Iron Water Main Replacement on Harkness, Goettingen, Brussels, Girard Streets and Various Streets"
+ },
+ "81524c": {
+  "id": "dpw:35204",
+  "name": "Folsom Streetscape/SOMA",
+  "pages": [
+   "https://sfpublicworks.org/FolsomSOMA"
+  ],
+  "listed": true,
+  "formerIds": [
+   "dotmaps:7991"
+  ]
+ },
+ "817ba9": {
+  "id": "dotmaps:46511",
+  "name": "San Bruno Sewer Replacement and Rehab",
+  "pages": [],
+  "listed": true
+ },
+ "822de1": {
+  "id": "sfmta:27615",
+  "name": "Lyon Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27615"
+  ],
+  "listed": true
+ },
+ "82bfde": {
+  "id": "dotmaps:34475",
+  "name": "8-Inch Ductile Iron Water Main Replacement on Harkness, Goettingen, Brussels, Girard Streets and Various Streets",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4622"
+  ],
+  "listed": true
+ },
+ "87452f": {
+  "id": "dpw:34919",
+  "name": "Transbay Folsom Streetscape Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/Folsom_Transbay"
+  ],
+  "listed": false
+ },
+ "8755e3": {
+  "id": "sfmta:24619",
+  "name": "Visitacion Valley and Portola Community Based Transportation Plan",
+  "pages": [
+   "https://www.sfmta.com/node/24619"
+  ],
+  "listed": true
+ },
+ "87641e": {
+  "id": "sfmta:29721",
+  "name": "Contract 35 Traffic Signal Modifications",
+  "pages": [
+   "https://www.sfmta.com/node/29721"
+  ],
+  "listed": true
+ },
+ "88321b": {
+  "id": "dotmaps:31440",
+  "name": "PW As Needed Main Sewer Replacement No 10",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4486"
+  ],
+  "listed": true
+ },
+ "8a04d6": {
+  "id": "dotmaps:8985",
+  "name": "Various Locations Pavement Renovation No 90",
+  "pages": [
+   "https://sfpublicworks.org/index.php/VL90"
+  ],
+  "listed": true
+ },
+ "8b1262": {
+  "id": "dotmaps:63512",
+  "name": "Various Locations Sewer Replacement No 35",
+  "pages": [],
+  "listed": true
+ },
+ "8b27a6": {
+  "id": "dotmaps:35254",
+  "name": "Joint - SFWD Lead - PEWS Pipe Contract D - 24-inch",
+  "pages": [],
+  "listed": true
+ },
+ "8b9a78": {
+  "id": "sfmta:27612",
+  "name": "Clay Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27612"
+  ],
+  "listed": true
+ },
+ "8bc4e5": {
+  "id": "sfmta:19203",
+  "name": "4th Street Transit Improvement Project",
+  "pages": [
+   "https://www.sfmta.com/node/19203"
+  ],
+  "listed": false
+ },
+ "8becf9": {
+  "id": "sfmta:18386",
+  "name": "Parking Management for Northern Potrero Hill",
+  "pages": [
+   "https://www.sfmta.com/node/18386"
+  ],
+  "listed": false
+ },
+ "8bfbd0": {
+  "id": "dpw:35158",
+  "name": "Geneva Avenue Traffic Signal Project",
+  "pages": [
+   "https://sfpublicworks.org/Geneva-Signals",
+   "https://www.sfmta.com/node/29723"
+  ],
+  "listed": false
+ },
+ "8c206f": {
+  "id": "sfmta:816",
+  "name": "Balboa Park Station Area and Plaza Improvements",
+  "pages": [
+   "https://www.sfmta.com/node/816"
+  ],
+  "listed": false
+ },
+ "8ed542": {
+  "id": "sfmta-page:m-ocean-view-transit-and-safety-project",
+  "name": "M Ocean View Transit and Safety Project",
+  "pages": [
+   "https://www.sfmta.com/projects/m-ocean-view-transit-and-safety-project"
+  ],
+  "listed": false
+ },
+ "8ff6e0": {
+  "id": "dotmaps:21630",
+  "name": "Slow Streets",
+  "pages": [
+   "https://www.sfmta.com/projects/post-pandemic-slow-streets"
+  ],
+  "listed": false
+ },
+ "8th-beale-clay-leavenworth-and-main-streets-sewer": {
+  "alias": "71f118",
+  "name": "8th, Beale, Clay, Leavenworth and Main Streets Sewer Replacement (JV w 8th St, Clay St and Leavenworth St Pavement Renovation)"
+ },
+ "8th-st-clay-st-and-leavenworth-st-pavement-renovation-and": {
+  "alias": "ae412c",
+  "name": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement"
+ },
+ "90abcd": {
+  "id": "dotmaps:31375",
+  "name": "Geneva Ave and Sloat Blvd Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "93a348": {
+  "id": "dotmaps:26846",
+  "name": "WD-2877 As Needed Water Main Replacement No.3",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4617"
+  ],
+  "listed": true
+ },
+ "948794": {
+  "id": "dotmaps:23973",
+  "name": "Church St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "96f744": {
+  "id": "sfmta:18982",
+  "name": "Northeast Mission Parking and Curb Management Project",
+  "pages": [
+   "https://www.sfmta.com/node/18982"
+  ],
+  "listed": false
+ },
+ "9829b3": {
+  "id": "sfmta:28389",
+  "name": "Brotherhood/Alemany Safety Improvements Project",
+  "pages": [
+   "https://www.sfmta.com/node/28389"
+  ],
+  "listed": true
+ },
+ "98d811": {
+  "id": "dotmaps:28341",
+  "name": "PEFWS Pipeline Contract F- 24-Inch Water",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/westside-fire"
+  ],
+  "listed": true
+ },
+ "98ee5b": {
+  "id": "dotmaps:25695",
+  "name": "FASIP - Western SOMA and Northern Mission District Sewer System",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/folsom-area-stormwater"
+  ],
+  "listed": true
+ },
+ "990cd5": {
+  "id": "sfmta-page:n-judah-transit-safety-project",
+  "name": "N Judah Transit & Safety Project",
+  "pages": [
+   "https://www.sfmta.com/projects/n-judah-transit-safety-project"
+  ],
+  "listed": true
+ },
+ "99388b": {
+  "id": "sfmta-page:j-church-and-m-ocean-view-transit-and-safety-improvements",
+  "name": "J Church and M Ocean View Transit and Safety Improvements",
+  "pages": [
+   "https://www.sfmta.com/projects/j-church-and-m-ocean-view-transit-and-safety-improvements"
+  ],
+  "listed": true
+ },
+ "9974ea": {
+  "id": "dotmaps:52907",
+  "name": "Various Locations Sewer Replacement No 27",
+  "pages": [],
+  "listed": true
+ },
+ "99f7d1": {
+  "id": "sfmta:24302",
+  "name": "Transbay Howard Streetscape Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/TransbayHoward",
+   "https://www.sfmta.com/node/24302"
+  ],
+  "listed": true
+ },
+ "9a1390": {
+  "id": "sfmta-page:lincoln-way-new-traffic-signals",
+  "name": "Lincoln Way New Traffic Signals",
+  "pages": [
+   "https://www.sfmta.com/projects/lincoln-way-new-traffic-signals"
+  ],
+  "listed": true
+ },
+ "9b565a": {
+  "id": "dotmaps:22687",
+  "name": "Oak Street Quick-Build Project",
+  "pages": [],
+  "listed": false,
+  "redirect": "a435c3"
+ },
+ "9badf2": {
+  "id": "dpw:35461",
+  "name": "Beale Street Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/BealeStreet"
+  ],
+  "listed": true
+ },
+ "9cbcf3": {
+  "id": "dotmaps:48972",
+  "name": "Various Locations Pavement Renovation No 101",
+  "pages": [],
+  "listed": true
+ },
+ "9d81f6": {
+  "id": "sfmta:232",
+  "name": "Twin Peaks Tunnel Improvements",
+  "pages": [
+   "https://www.sfmta.com/node/232"
+  ],
+  "listed": false
+ },
+ "9dbafb": {
+  "id": "dotmaps:31478",
+  "name": "Various Locations Pavement Renovation No 86A",
+  "pages": [],
+  "listed": true
+ },
+ "9e5bc0": {
+  "id": "sfmta-page:district-2-safety-study",
+  "name": "District 2 Safety Study",
+  "pages": [
+   "https://www.sfmta.com/projects/district-2-safety-study"
+  ],
+  "listed": true
+ },
+ "9f8d3e": {
+  "id": "dotmaps:66036",
+  "name": "Cayuga Slow Street Upgrade Project",
+  "pages": [],
+  "listed": false,
+  "redirect": "5a3eea"
+ },
+ "9fa6b5": {
+  "id": "dotmaps:25937",
+  "name": "Various Locations Pavement Renovation No 79",
+  "pages": [
+   "https://sfpublicworks.org/VL79"
+  ],
+  "listed": false
+ },
+ "9fc0c0": {
+  "id": "dotmaps:9103",
+  "name": "WD-2919: 8- and 12-Inch Ductile Iron Water Main Replacement on 18th and Mariposa Streets from Potrero Ave. to Texas St. and on Various Side Streets",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4612"
+  ],
+  "listed": true
+ },
+ "9ff1ab": {
+  "id": "dotmaps:52357",
+  "name": "Stormwater Trash Capture Phase 2",
+  "pages": [],
+  "listed": true
+ },
+ "a0a291": {
+  "id": "dotmaps:53070",
+  "name": "16th St, 17th St, and 18th St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "a0ac2c": {
+  "id": "dotmaps:25694",
+  "name": "FASIP Harrison/Treat Box Sewer and Connecting Auxiliary Sewers",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/folsom-area-stormwater"
+  ],
+  "listed": true
+ },
+ "a126db": {
+  "id": "sfmta:15300",
+  "name": "Geary Boulevard Improvement Project",
+  "pages": [
+   "https://www.sfmta.com/node/15300"
+  ],
+  "listed": true
+ },
+ "a2e44f": {
+  "id": "sfmta:934",
+  "name": "Octavia Boulevard Enhancement Program",
+  "pages": [
+   "https://www.sfmta.com/node/934"
+  ],
+  "listed": false
+ },
+ "a435c3": {
+  "id": "sfmta:28565",
+  "name": "Oak Street Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/28565"
+  ],
+  "listed": true
+ },
+ "a49811": {
+  "id": "sfmta:18951",
+  "name": "West Portal Transit Delay Reduction Pilot",
+  "pages": [
+   "https://www.sfmta.com/node/18951"
+  ],
+  "listed": false
+ },
+ "a586a7": {
+  "id": "dpw:35087",
+  "name": "Alemany Boulevard Infrastructure Improvements Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/Alemany"
+  ],
+  "listed": true
+ },
+ "a59ac1": {
+  "id": "sfmta:43223",
+  "name": "4th Street Pedestrian Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/43223"
+  ],
+  "listed": false
+ },
+ "a6159c": {
+  "id": "sfmta-page:powell-street-safety-project",
+  "name": "Powell Street Light Safety Project",
+  "pages": [
+   "https://www.sfmta.com/projects/powell-street-safety-project"
+  ],
+  "listed": false
+ },
+ "a63581": {
+  "id": "dotmaps:31509",
+  "name": "Monterey Blvd Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "a66828": {
+  "id": "sfmta:27620",
+  "name": "Sanchez Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27620"
+  ],
+  "listed": false
+ },
+ "a6e002": {
+  "id": "dotmaps:8021",
+  "name": "EFWS Fort Mason Manifold Relocation",
+  "pages": [],
+  "listed": true
+ },
+ "a75fe5": {
+  "id": "dotmaps:9124",
+  "name": "Various Locations Pavement Renovation Concrete No 97",
+  "pages": [],
+  "listed": true
+ },
+ "a7bbce": {
+  "id": "dotmaps:61796",
+  "name": "Sutter St and Post St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "a7e036": {
+  "id": "sfmta:44134",
+  "name": "Bosworth/Monterey Connections Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/44134"
+  ],
+  "listed": true
+ },
+ "a8eadf": {
+  "id": "dotmaps:25064",
+  "name": "WD-2922: 8-inch Ductile Iron Water Main Replacement on Lincoln Way from Sunset to La Playa St and Various Side Streets",
+  "pages": [],
+  "listed": true
+ },
+ "a91542": {
+  "id": "dpw:35190",
+  "name": "Junipero Serra Boulevard Pavement Renovation & Sewer Replacement Project",
+  "pages": [
+   "https://sfpublicworks.org/Junipero-Serra"
+  ],
+  "listed": false
+ },
+ "a951f6": {
+  "id": "dotmaps:8721",
+  "name": "PEFWS Pipeline Contract C - 24-inch 42nd (between Lawton & Irving)",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/westside-fire"
+  ],
+  "listed": true
+ },
+ "a9be1a": {
+  "id": "dpw:35198",
+  "name": "Islais Creek Bridge Replacement Project",
+  "pages": [
+   "https://sfpublicworks.org/Islais-Creek-Bridge"
+  ],
+  "listed": true
+ },
+ "aaaa3e": {
+  "id": "dotmaps:26427",
+  "name": "Sunset Irrigation Recycled Water",
+  "pages": [],
+  "listed": true
+ },
+ "ab90cd": {
+  "id": "dotmaps:66261",
+  "name": "Various Locations Sewer Replacement No 40",
+  "pages": [],
+  "listed": true
+ },
+ "ac1de2": {
+  "id": "dotmaps:66257",
+  "name": "Brotherhood-Alemany Quick-Build Project",
+  "pages": [],
+  "listed": false,
+  "redirect": "173534"
+ },
+ "ac5514": {
+  "id": "sfmta:27617",
+  "name": "Noe Slow Street and Duboce Triangle Planning Study",
+  "pages": [
+   "https://www.sfmta.com/node/27617"
+  ],
+  "listed": false
+ },
+ "ac7854": {
+  "id": "sfmta:952",
+  "name": "Muni Forward 5 Fulton Rapid Proposal",
+  "pages": [
+   "https://www.sfmta.com/node/952"
+  ],
+  "listed": false
+ },
+ "aca4f9": {
+  "id": "dotmaps:34912",
+  "name": "OShaughnessy and Woodside Ave Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "ae412c": {
+  "id": "dotmaps:25819",
+  "name": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
+  "pages": [
+   "https://sfpublicworks.org/index.php/2308i"
+  ],
+  "listed": true
+ },
+ "ae446a": {
+  "id": "dotmaps:27422",
+  "name": "Various Locations Sewer Replacement No 23",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4591"
+  ],
+  "listed": true
+ },
+ "af4be7": {
+  "id": "sfmta:29082",
+  "name": "Clarendon Quick-Build",
+  "pages": [
+   "https://www.sfmta.com/node/29082"
+  ],
+  "listed": true
+ },
+ "af9ade": {
+  "id": "dotmaps:52910",
+  "name": "Mission District Sewer Rehabilitation (VLLD2B)",
+  "pages": [],
+  "listed": true
+ },
+ "anza-street-bike-lanes-project": {
+  "alias": "fe71e6",
+  "name": "Anza Street Bike Lanes Project"
+ },
+ "arguello-safety-project": {
+  "alias": "32fe6e",
+  "name": "Arguello Safety Project"
+ },
+ "as-needed-city-wide-pavement-preservation-6-general-as": {
+  "alias": "43e1a1",
+  "name": "As Needed City-wide Pavement Preservation 6 (General As-Needed Contract G29)"
+ },
+ "as-needed-citywide-pavement-preservation-contract-5-general": {
+  "alias": "e306e6",
+  "name": "As Needed Citywide Pavement Preservation Contract 5 (General As-Needed Contract G23)"
+ },
+ "b29df4": {
+  "id": "dotmaps:8153",
+  "name": "Various Locations Pavement Renovation No 82",
+  "pages": [
+   "https://sfpublicworks.org/index.php/VL82"
+  ],
+  "listed": true
+ },
+ "b2e170": {
+  "id": "sfpuc-page:sanbrunoandblanken",
+  "name": "San Bruno Avenue & Blanken Avenue Water Main Replacement Project",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/SanBrunoandBlanken"
+  ],
+  "listed": true
+ },
+ "b2ea41": {
+  "id": "dotmaps:8175",
+  "name": "Various Locations Pavement Renovation No 87",
+  "pages": [],
+  "listed": true
+ },
+ "b38d2c": {
+  "id": "dotmaps:37159",
+  "name": "Western SOMA and Northern Mission Districts Sewer Replacement WW-719D",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/folsom-area-stormwater"
+  ],
+  "listed": true
+ },
+ "b3945f": {
+  "id": "dotmaps:35255",
+  "name": "7th St, 8th St and Folsom St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "b4faf2": {
+  "id": "dotmaps:42062",
+  "name": "Various Locations Spot Main Sewer Replacement No 2",
+  "pages": [],
+  "listed": true
+ },
+ "b4fd24": {
+  "id": "dotmaps:8717",
+  "name": "PEFWS Pipeline Contract E - 24-inch GGP Crossing",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/westside-fire"
+  ],
+  "listed": true
+ },
+ "b5180f": {
+  "id": "sfmta-page:fillmore-street-transit-and-safety-project",
+  "name": "Fillmore Street Transit and Safety Project",
+  "pages": [
+   "https://www.sfmta.com/projects/fillmore-street-transit-and-safety-project"
+  ],
+  "listed": true
+ },
+ "b60bb0": {
+  "id": "dotmaps:51727",
+  "name": "Street Resurfacing Program-BBSR Paving FY 27-28",
+  "pages": [],
+  "listed": true
+ },
+ "b7b00b": {
+  "id": "sfmta:220",
+  "name": "19 Polk Bus Stop Changes",
+  "pages": [
+   "https://www.sfmta.com/node/220"
+  ],
+  "listed": false
+ },
+ "b80fd6": {
+  "id": "dotmaps:25811",
+  "name": "WD-2921 8- and 12-inch Ductile Iron Water Main Replacement on Palou, Quesada, and Revere Ave from 3rd St to Griffith St",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/palou"
+  ],
+  "listed": true
+ },
+ "b835a3": {
+  "id": "dotmaps:16932",
+  "name": "14-009 8-, and 24-inch Ductile Iron Water Main Replacement on Page Street from Stanyan to Fillmore Streets",
+  "pages": [],
+  "listed": true
+ },
+ "b9020f": {
+  "id": "sfmta:45035",
+  "name": "Winston Drive Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/45035"
+  ],
+  "listed": false
+ },
+ "b909df": {
+  "id": "dotmaps:8191",
+  "name": "Folsom Howard Streetscape Sewer Replacement",
+  "pages": [
+   "https://www.sfmta.com/projects/folsom-howard-streetscape-project"
+  ],
+  "listed": false
+ },
+ "b95fbe": {
+  "id": "sfmta:15963",
+  "name": "Vermont Street Road Diet",
+  "pages": [
+   "https://www.sfmta.com/node/15963"
+  ],
+  "listed": false
+ },
+ "balboa-park-station-area-and-plaza-improvements": {
+  "alias": "8c206f",
+  "name": "Balboa Park Station Area and Plaza Improvements"
+ },
+ "battery-street-pavement-renovation": {
+  "alias": "e4c582",
+  "name": "Battery Street Pavement Renovation"
+ },
+ "bay-shore-blvd-and-cesar-chavez-pavement-renovation": {
+  "alias": "befd11",
+  "name": "Bay Shore Blvd and Cesar Chavez Pavement Renovation"
+ },
+ "bayview-community-based-transportation-plan": {
+  "alias": "c167ca",
+  "name": "Bayview Community Based Transportation Plan"
+ },
+ "bayview-community-pathway": {
+  "alias": "20c9e1",
+  "name": "Bayview Community Pathway"
+ },
+ "bayview-multimodal-project": {
+  "alias": "f0de9e",
+  "name": "Bayview Multimodal Project"
+ },
+ "bb5fb5": {
+  "id": "dotmaps:63437",
+  "name": "Various Locations Sewer Replacement No 39",
+  "pages": [],
+  "listed": true
+ },
+ "bbb087": {
+  "id": "dpw:35732",
+  "name": "20th Street and De Haro Street Intersection Reconstruction Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/20th-and-deharo"
+  ],
+  "listed": false
+ },
+ "bc9914": {
+  "id": "sfmta:1146",
+  "name": "5th Street Improvement Project",
+  "pages": [
+   "https://www.sfmta.com/node/1146"
+  ],
+  "listed": true
+ },
+ "bea966": {
+  "id": "sfmta:1091",
+  "name": "Paul Avenue Bike Lane Project",
+  "pages": [
+   "https://www.sfmta.com/node/1091"
+  ],
+  "listed": false
+ },
+ "beach-street-quick-build-project": {
+  "alias": "44073a",
+  "name": "Beach Street Quick-Build Project"
+ },
+ "befd11": {
+  "id": "dotmaps:25197",
+  "name": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "better-market-street": {
+  "alias": "df1e13",
+  "name": "Better Market Street"
+ },
+ "bikeway-hardening": {
+  "alias": "0d6955",
+  "name": "Bikeway Hardening"
+ },
+ "bosworth-monterey-connections-quick-build-project": {
+  "alias": "a7e036",
+  "name": "Bosworth/Monterey Connections Quick-Build Project"
+ },
+ "broad-street-and-randolph-street-sewer-replacement": {
+  "alias": "7c41dc",
+  "name": "Broad Street and Randolph Street Sewer Replacement"
+ },
+ "broad-street-and-randolph-street-sewer-replacement-61339": {
+  "alias": "460e9f",
+  "name": "Broad Street and Randolph Street Sewer Replacement"
+ },
+ "broadway-pacific-ave-and-vallejo-st-pavement-renovation": {
+  "alias": "e8cf59",
+  "name": "Broadway, Pacific Ave and Vallejo St Pavement Renovation"
+ },
+ "brotherhood-alemany-quick-build-project": {
+  "alias": "ac1de2",
+  "name": "Brotherhood-Alemany Quick-Build Project"
+ },
+ "brotherhood-way-pavement-renovation": {
+  "alias": "21310a",
+  "name": "Brotherhood Way Pavement Renovation"
+ },
+ "c162e3": {
+  "id": "sfmta:18773",
+  "name": "District 11-Wide Traffic Calming Project",
+  "pages": [
+   "https://www.sfmta.com/node/18773"
+  ],
+  "listed": false
+ },
+ "c167ca": {
+  "id": "sfmta:15926",
+  "name": "Bayview Community Based Transportation Plan",
+  "pages": [
+   "https://sfpublicworks.org/index.php/project/bayview-transportation-improvements-project",
+   "https://www.sfmta.com/node/15926"
+  ],
+  "listed": true
+ },
+ "c17e99": {
+  "id": "dpw:35214",
+  "name": "24th Street Pavement Renovation and Infrastructure Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/24thStreet"
+  ],
+  "listed": false
+ },
+ "c30508": {
+  "id": "sfmta:45074",
+  "name": "Innes Avenue Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/45074"
+  ],
+  "listed": true
+ },
+ "c4eafc": {
+  "id": "sfmta:917",
+  "name": "San Bruno Ave Multimodal Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/project/san-bruno-streetscape-improvement-project",
+   "https://www.sfmta.com/node/917"
+  ],
+  "listed": true
+ },
+ "c521cc": {
+  "id": "dotmaps:56593",
+  "name": "Cesar Chavez St from Hampshire St to Guerrero St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "c63d44": {
+  "id": "sfmta:27467",
+  "name": "Frida Kahlo Way Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/27467"
+  ],
+  "listed": false
+ },
+ "c6ad7e": {
+  "id": "sfmta-page:howard-street-implementation",
+  "name": "Howard Street Implementation",
+  "pages": [
+   "https://www.sfmta.com/projects/howard-street-implementation"
+  ],
+  "listed": true
+ },
+ "c6d525": {
+  "id": "sfmta:760",
+  "name": "Salesforce Transit Center",
+  "pages": [
+   "https://www.sfmta.com/node/760"
+  ],
+  "listed": false
+ },
+ "c758de": {
+  "id": "sfmta:27616",
+  "name": "Minnesota Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27616"
+  ],
+  "listed": false
+ },
+ "c82144": {
+  "id": "sfmta:29747",
+  "name": "Contract 36 Traffic Signal Modifications",
+  "pages": [
+   "https://sfpublicworks.org/index.php/Traffic-Signals-36",
+   "https://www.sfmta.com/node/29747"
+  ],
+  "listed": false
+ },
+ "c834ce": {
+  "id": "dpw:35155",
+  "name": "Fulton Street and Grove Street Sewer Replacement and Pavement Renovation Project",
+  "pages": [
+   "https://sfpublicworks.org/Fulton-Grove"
+  ],
+  "listed": false
+ },
+ "c8e345": {
+  "id": "dotmaps:34911",
+  "name": "Portola Dr Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "c93036": {
+  "id": "dotmaps:8067",
+  "name": "PW Various Locations Sewer Replacement No 13",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4394"
+  ],
+  "listed": true
+ },
+ "ca0454": {
+  "id": "dotmaps:26811",
+  "name": "5th St Safety Improvement Project",
+  "pages": [],
+  "listed": true
+ },
+ "cad03a": {
+  "id": "dotmaps:13201",
+  "name": "Street Resurfacing Program- BBSR Paving FY 26-27",
+  "pages": [],
+  "listed": true
+ },
+ "candlestick-point-hunters-point-shipyard": {
+  "alias": "f67450",
+  "name": "Candlestick Point/Hunters Point Shipyard"
+ },
+ "cayuga-slow-street-upgrade-project": {
+  "alias": "9f8d3e",
+  "name": "Cayuga Slow Street Upgrade Project"
+ },
+ "cc17f1": {
+  "id": "dotmaps:25065",
+  "name": "WD-2922: 8-inch Ductile Iron Water Main Replacement on Lincoln Way and Irving St from Sunset Blvd to 19th Ave and Various Side Streets",
+  "pages": [
+   "https://www.sfpuc.gov/irving-street-and-lincoln-way-water-improvements-project-east"
+  ],
+  "listed": true
+ },
+ "cd0571": {
+  "id": "dotmaps:50818",
+  "name": "Chinatown and SOMA Large Diameter Sewer Improvements",
+  "pages": [],
+  "listed": true
+ },
+ "cedb0a": {
+  "id": "sfmta:27648",
+  "name": "Muni Gets You to Downtown",
+  "pages": [
+   "https://www.sfmta.com/node/27648"
+  ],
+  "listed": false
+ },
+ "cesar-chavez-bikeway-improvements-project": {
+  "alias": "f644b5",
+  "name": "Cesar Chavez Bikeway Improvements Project"
+ },
+ "cesar-chavez-st-from-hampshire-st-to-guerrero-st-pavement": {
+  "alias": "c521cc",
+  "name": "Cesar Chavez St from Hampshire St to Guerrero St Pavement Renovation"
+ },
+ "cfc7b6": {
+  "id": "dotmaps:16936",
+  "name": "WD-2885 8-Inch Ductile Iron Water Main Replacement, Sewer Replacement, and Paving Renovation on Fulton Street from Great Highway to 31st Avenue and Various Locations",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4596"
+  ],
+  "listed": true
+ },
+ "chinatown-and-soma-large-diameter-sewer-improvements": {
+  "alias": "cd0571",
+  "name": "Chinatown and SOMA Large Diameter Sewer Improvements"
+ },
+ "church-st-pavement-renovation": {
+  "alias": "948794",
+  "name": "Church St Pavement Renovation"
+ },
+ "clayton-ashbury-traffic-island": {
+  "alias": "e8265e",
+  "name": "Clayton/Ashbury Traffic Island"
+ },
+ "contract-36-traffic-signal-modifications": {
+  "alias": "c82144",
+  "name": "Contract 36 Traffic Signal Modifications"
+ },
+ "contract-65-new-traffic-signals": {
+  "alias": "eb3e7e",
+  "name": "Contract 65 New Traffic Signals"
+ },
+ "d1285a": {
+  "id": "dotmaps:31403",
+  "name": "Hayes St, Fell St and Van Ness Ave Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "d17935": {
+  "id": "sfmta:44135",
+  "name": "Mission Bay Blvd Quick-Build Project",
+  "pages": [
+   "https://www.sfmta.com/node/44135"
+  ],
+  "listed": false
+ },
+ "d5903f": {
+  "id": "dotmaps:31772",
+  "name": "Various Locations Pavement Renovation No 85",
+  "pages": [
+   "https://sfpublicworks.org/index.php/VL85"
+  ],
+  "listed": true
+ },
+ "d59f67": {
+  "id": "sfmta-page:kirkham-street-neckdown-project",
+  "name": "Kirkham Street Neckdown Project",
+  "pages": [
+   "https://www.sfmta.com/projects/kirkham-street-neckdown-project"
+  ],
+  "listed": false
+ },
+ "d64c88": {
+  "id": "sfmta:1138",
+  "name": "Shotwell/Capp Neighborway Project",
+  "pages": [
+   "https://www.sfmta.com/node/1138"
+  ],
+  "listed": false
+ },
+ "d780f6": {
+  "id": "dotmaps:28342",
+  "name": "PEFWS Pipeline Contract G - 36-Inch Water",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/westside-fire"
+  ],
+  "listed": true
+ },
+ "d7e33a": {
+  "id": "sfmta:40525",
+  "name": "29 Sunset Improvement Project – Phase Two",
+  "pages": [
+   "https://www.sfmta.com/node/40525"
+  ],
+  "listed": true
+ },
+ "d82313": {
+  "id": "dotmaps:27420",
+  "name": "Various Location Sewer Replacement No 22",
+  "pages": [],
+  "listed": true
+ },
+ "d9358b": {
+  "id": "sfmta:1267",
+  "name": "Laurel Heights/Jordan Park Traffic Calming Project",
+  "pages": [
+   "https://www.sfmta.com/node/1267"
+  ],
+  "listed": true
+ },
+ "dadedc": {
+  "id": "sfmta-page:sunset-neighborways",
+  "name": "Sunset Neighborways",
+  "pages": [
+   "https://www.sfmta.com/projects/sunset-neighborways"
+  ],
+  "listed": true
+ },
+ "dc1b89": {
+  "id": "sfmta:20936",
+  "name": "13th Street Safety Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/13thStreetSafety",
+   "https://www.sfmta.com/node/20936"
+  ],
+  "listed": true
+ },
+ "dd39a7": {
+  "id": "sfmta:1053",
+  "name": "Powell Street Promenade Refresh",
+  "pages": [
+   "https://www.sfmta.com/node/1053"
+  ],
+  "listed": false
+ },
+ "dd3f4f": {
+  "id": "dotmaps:37762",
+  "name": "Golden Gate Park Access Project",
+  "pages": [],
+  "listed": false,
+  "redirect": "454934"
+ },
+ "de069c": {
+  "id": "sfmta:29724",
+  "name": "Great Highway Traffic Signal Upgrades",
+  "pages": [],
+  "listed": true
+ },
+ "df1e13": {
+  "id": "sfmta:939",
+  "name": "Better Market Street",
+  "pages": [
+   "https://sfpublicworks.org/index.php/bettermarketstreet",
+   "https://www.sfmta.com/node/939"
+  ],
+  "listed": false
+ },
+ "df35cd": {
+  "id": "sfmta:39457",
+  "name": "Pay or Permit Parking Expansion Project",
+  "pages": [
+   "https://www.sfmta.com/node/39457"
+  ],
+  "listed": true
+ },
+ "dogpatch-central-waterfront-area-transit-connections-study": {
+  "alias": "024323",
+  "name": "Dogpatch-Central Waterfront Area Transit Connections Study"
+ },
+ "e0e3e2": {
+  "id": "sfmta:27603",
+  "name": "23rd Avenue Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27603"
+  ],
+  "listed": true
+ },
+ "e117fa": {
+  "id": "dotmaps:11336",
+  "name": "Northern Waterfront Electrical Improvements (NWEI)",
+  "pages": [],
+  "listed": true
+ },
+ "e306e6": {
+  "id": "dotmaps:63616",
+  "name": "As Needed Citywide Pavement Preservation Contract 5 (General As-Needed Contract G23)",
+  "pages": [],
+  "listed": true
+ },
+ "e33d2a": {
+  "id": "sfmta:994",
+  "name": "Upper Market Street Safety Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/uppermarket",
+   "https://www.sfmta.com/node/994"
+  ],
+  "listed": false
+ },
+ "e424f2": {
+  "id": "dotmaps:7976",
+  "name": "Mission, 8th, 9th, Howard and Natoma Brick Sewer Rehabilitation",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4529"
+  ],
+  "listed": false
+ },
+ "e4aa05": {
+  "id": "sfmta:24767",
+  "name": "Lake Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/24767"
+  ],
+  "listed": false
+ },
+ "e4c582": {
+  "id": "dotmaps:35654",
+  "name": "Battery Street Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "e8265e": {
+  "id": "dotmaps:66263",
+  "name": "Clayton/Ashbury Traffic Island and Curb Ramps",
+  "pages": [],
+  "listed": true
+ },
+ "e8cf59": {
+  "id": "dotmaps:31405",
+  "name": "Broadway, Pacific Ave and Vallejo St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "e9b3aa": {
+  "id": "sfmta:17994",
+  "name": "Central Richmond Traffic Safety Project",
+  "pages": [
+   "https://www.sfmta.com/node/17994"
+  ],
+  "listed": false
+ },
+ "e9e132": {
+  "id": "dotmaps:31376",
+  "name": "Market St from Octavia St to Castro St Pavement Renovation",
+  "pages": [],
+  "listed": true
+ },
+ "ea08a4": {
+  "id": "dotmaps:31225",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 89)",
+  "pages": [
+   "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2683"
+  ],
+  "listed": true
+ },
+ "eb3e7e": {
+  "id": "sfmta:29743",
+  "name": "Contract 65 New Traffic Signals",
+  "pages": [
+   "https://sfpublicworks.org/index.php/Signals65",
+   "https://www.sfmta.com/node/29743"
+  ],
+  "listed": false
+ },
+ "ec247e": {
+  "id": "dotmaps:15063",
+  "name": "Laguna and Howard CSD Improvements",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/outfallprojects"
+  ],
+  "listed": true
+ },
+ "ed3331": {
+  "id": "dotmaps:36573",
+  "name": "WD-2936 8-, 12- & 16-inch Ductile Iron Water Main Replacement on Geary Boulevard from Stanyan Street to Presidio Avenue & on Post Street from Presidio Avenue to Scott Street & on Various Side Streets",
+  "pages": [],
+  "listed": true
+ },
+ "ed3cb5": {
+  "id": "dotmaps:8112",
+  "name": "PW Various Locations Sewer Replacement No 16",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4531"
+  ],
+  "listed": true
+ },
+ "eddy-street-two-way-conversion-project": {
+  "alias": "5c1a15",
+  "name": "Eddy Street Two-Way Conversion Project"
+ },
+ "ee500b": {
+  "id": "dotmaps:31562",
+  "name": "Various Locations Pavement Renovation No 68",
+  "pages": [
+   "https://sfpublicworks.org/index.php/VL68"
+  ],
+  "listed": true
+ },
+ "eedeb5": {
+  "id": "sfmta:27622",
+  "name": "22nd Street Slow Street",
+  "pages": [
+   "https://www.sfmta.com/node/27622"
+  ],
+  "listed": true
+ },
+ "efws-fort-mason-manifold-relocation": {
+  "alias": "a6e002",
+  "name": "EFWS Fort Mason Manifold Relocation"
+ },
+ "f0de9e": {
+  "id": "dotmaps:63312",
+  "name": "Bayview Multimodal Project",
+  "pages": [],
+  "listed": true
+ },
+ "f11b24": {
+  "id": "dotmaps:8981",
+  "name": "Various Locations Pavement Renovation No 89",
+  "pages": [
+   "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2683"
+  ],
+  "listed": true
+ },
+ "f19487": {
+  "id": "dpw:35193",
+  "name": "Innes Avenue Sidewalk Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/Innes_Avenue_Sidewalk"
+  ],
+  "listed": true
+ },
+ "f1fd81": {
+  "id": "dotmaps:31771",
+  "name": "Various Locations Pavement Renovation No 77",
+  "pages": [
+   "https://sfpublicworks.org/vl77"
+  ],
+  "listed": true
+ },
+ "f3a680": {
+  "id": "dotmaps:8980",
+  "name": "Various Locations Pavement Renovation No 92",
+  "pages": [],
+  "listed": true
+ },
+ "f3bd65": {
+  "id": "dotmaps:28223",
+  "name": "PW - K Ingleside Rapid Project",
+  "pages": [],
+  "listed": false,
+  "redirect": "7310c9"
+ },
+ "f3ef99": {
+  "id": "sfpuc-page:bay-corridor-transmission-distribution-p4",
+  "name": "Bay Corridor Transmission and Distribution Phase 4 and Water Improvements",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/bay-corridor-transmission-distribution-P4"
+  ],
+  "listed": true
+ },
+ "f4ff84": {
+  "id": "dotmaps:66258",
+  "name": "Page Slow Street Upgrades",
+  "pages": [],
+  "listed": false,
+  "redirect": "755890"
+ },
+ "f54d8f": {
+  "id": "sfmta:24430",
+  "name": "Transit U Improvement Project",
+  "pages": [
+   "https://sfpublicworks.org/index.php/TransitU",
+   "https://www.sfmta.com/node/24430"
+  ],
+  "listed": true
+ },
+ "f5b649": {
+  "id": "sfmta:22529",
+  "name": "Bayview Hunters Point Express",
+  "pages": [
+   "https://www.sfmta.com/node/22529"
+  ],
+  "listed": false
+ },
+ "f644b5": {
+  "id": "sfmta:30111",
+  "name": "Cesar Chavez Bikeway Improvements Project",
+  "pages": [
+   "https://www.sfmta.com/node/30111"
+  ],
+  "listed": true
+ },
+ "f67450": {
+  "id": "sfmta:761",
+  "name": "Candlestick Point/Hunters Point Shipyard",
+  "pages": [],
+  "listed": true
+ },
+ "f6e12c": {
+  "id": "dotmaps:31450",
+  "name": "Various Locations Pavement Renovation Under Overhead Contact System No 3",
+  "pages": [],
+  "listed": true
+ },
+ "f7d296": {
+  "id": "sfmta:13931",
+  "name": "33 Ashbury Overhead Wiring and Pole Replacement Project",
+  "pages": [
+   "https://www.sfmta.com/node/13931"
+  ],
+  "listed": false
+ },
+ "f92254": {
+  "id": "sfmta:18777",
+  "name": "J Church Safety and Accessibility Project: San Jose Avenue",
+  "pages": [
+   "https://www.sfmta.com/node/18777"
+  ],
+  "listed": true
+ },
+ "fa2ef8": {
+  "id": "dotmaps:61436",
+  "name": "Sutter St and Post St Large Diameter Sewer Rehabilitation",
+  "pages": [],
+  "listed": true
+ },
+ "fasip-harrison-treat-box-sewer-and-connecting-auxiliary": {
+  "alias": "a0ac2c",
+  "name": "FASIP Harrison/Treat Box Sewer and Connecting Auxiliary Sewers"
+ },
+ "fasip-western-soma-and-northern-mission-district-sewer": {
+  "alias": "98ee5b",
+  "name": "FASIP - Western SOMA and Northern Mission District Sewer System"
+ },
+ "fb8907": {
+  "id": "dotmaps:26063",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 78)",
+  "pages": [
+   "https://sfpublicworks.org/VL78"
+  ],
+  "listed": true
+ },
+ "fbacbe": {
+  "id": "dotmaps:65780",
+  "name": "PW As Needed Spot Sewer Replacement No 47",
+  "pages": [
+   "https://webapps.sfpuc.org/bids/bidDetail.aspx?bidid=4532"
+  ],
+  "listed": false
+ },
+ "fce1f1": {
+  "id": "sfmta:18897",
+  "name": "Active Beale Street",
+  "pages": [
+   "https://www.sfmta.com/node/18897"
+  ],
+  "listed": false
+ },
+ "fd1db2": {
+  "id": "sfpuc-page:channel-force-main-intertie",
+  "name": "Channel Force Main Intertie",
+  "pages": [
+   "https://www.sfpuc.gov/construction-contracts/construction-projects/channel-force-main-intertie"
+  ],
+  "listed": true
+ },
+ "fe5c51": {
+  "id": "dotmaps:26875",
+  "name": "Front Street, Sansome Street, 1st Street, and Montgomery Street Pavement Renovation and Sewer Replacement",
+  "pages": [
+   "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2693"
+  ],
+  "listed": true
+ },
+ "fe71e6": {
+  "id": "sfmta:21212",
+  "name": "Anza Street Bike Lanes Project",
+  "pages": [
+   "https://www.sfmta.com/node/21212"
+  ],
+  "listed": false
+ },
+ "ffd289": {
+  "id": "dotmaps:8181",
+  "name": "Joint - Streetscape Lead - Folsom St 10032072",
+  "pages": [
+   "https://sfpublicworks.org/FolsomSOMA"
+  ],
+  "listed": false,
+  "redirect": "81524c"
+ },
+ "folsom-howard-streetscape-project": {
+  "alias": "4e9fb2",
+  "name": "Folsom-Howard Streetscape Project"
+ },
+ "folsom-howard-streetscape-sewer-replacement": {
+  "alias": "b909df",
+  "name": "Folsom Howard Streetscape Sewer Replacement"
+ },
+ "frida-kahlo-way-quick-build-project": {
+  "alias": "c63d44",
+  "name": "Frida Kahlo Way Quick-Build Project"
+ },
+ "front-st-and-sansome-st-pavement-renovation": {
+  "alias": "59fa28",
+  "name": "Front St and Sansome St Pavement Renovation"
+ },
+ "front-street-sansome-street-1st-street-and-montgomery": {
+  "alias": "fe5c51",
+  "name": "Front Street, Sansome Street, 1st Street, and Montgomery Street Pavement Renovation and Sewer Replacement"
+ },
+ "front-street-sansome-street-1st-street-and-montgomery-31530": {
+  "alias": "190d46",
+  "name": "Front Street, Sansome Street, 1st Street, and Montgomery Street Pavement Sewer Replacement"
+ },
+ "geneva-ave-and-sloat-blvd-pavement-renovation": {
+  "alias": "90abcd",
+  "name": "Geneva Ave and Sloat Blvd Pavement Renovation"
+ },
+ "geneva-san-jose-intersection-study": {
+  "alias": "4c3c4a",
+  "name": "Geneva-San Jose Intersection Study"
+ },
+ "golden-gate-park-access-and-safety-program": {
+  "alias": "454934",
+  "name": "Golden Gate Park Access and Safety Program"
+ },
+ "golden-gate-park-access-project": {
+  "alias": "dd3f4f",
+  "name": "Golden Gate Park Access Project"
+ },
+ "hayes-st-fell-st-and-van-ness-ave-pavement-renovation": {
+  "alias": "d1285a",
+  "name": "Hayes St, Fell St and Van Ness Ave Pavement Renovation"
+ },
+ "holloway-ave-and-lake-merced-blvd-pavement-renovation": {
+  "alias": "119d9e",
+  "name": "Holloway Ave and Lake Merced Blvd Pavement Renovation"
+ },
+ "howard-streetscape-project": {
+  "alias": "3eb676",
+  "name": "Howard Streetscape Project"
+ },
+ "innes-avenue-quick-build": {
+  "alias": "4856b0",
+  "name": "Innes Avenue Quick-Build"
+ },
+ "j-church-safety-and-accessibility-project": {
+  "alias": "311118",
+  "name": "J Church Safety and Accessibility Project"
+ },
+ "j-muni-forward-church-market-to211-10035351": {
+  "alias": "466186",
+  "name": "J Muni Forward: Church & Market (TO211 | 10035351)"
+ },
+ "jefferson-street-quick-build-project": {
+  "alias": "3d6f7f",
+  "name": "Jefferson Street Quick-Build Project"
+ },
+ "joint-mta-lead-fillmore-st-pavement-renovation": {
+  "alias": "1a61b8",
+  "name": "Joint - MTA Lead - Fillmore St Pavement Renovation"
+ },
+ "joint-mta-lead-fillmore-st-pavement-renovation-phase-2": {
+  "alias": "2c6eda",
+  "name": "Joint - MTA Lead - Fillmore St Pavement Renovation Phase 2"
+ },
+ "joint-sfwd-lead-pews-pipe-contract-d-24-inch": {
+  "alias": "8b27a6",
+  "name": "Joint - SFWD Lead - PEWS Pipe Contract D - 24-inch"
+ },
+ "joint-streetscape-lead-folsom-st-10032072": {
+  "alias": "ffd289",
+  "name": "Joint - Streetscape Lead - Folsom St 10032072"
+ },
+ "laguna-and-howard-csd-improvements": {
+  "alias": "ec247e",
+  "name": "Laguna and Howard CSD Improvements"
+ },
+ "laurel-heights-jordan-park-traffic-calming-project": {
+  "alias": "d9358b",
+  "name": "Laurel Heights/Jordan Park Traffic Calming Project"
+ },
+ "lhh-m-o-wings": {
+  "id": "dotmaps:39465",
+  "name": "LHH M & O Wings",
+  "pages": [],
+  "listed": false
+ },
+ "lower-alemany-area-stormwater-improvement-project": {
+  "alias": "6979a3",
+  "name": "Lower Alemany Area Stormwater Improvement Project"
+ },
+ "lower-alemany-stormwater-improvements-alemany-shaft": {
+  "alias": "28668a",
+  "name": "Lower Alemany Stormwater Improvements - Alemany Shaft"
+ },
+ "m-ocean-view-transit-and-safety-project": {
+  "alias": "778fb4",
+  "name": "M Ocean View Transit and Safety Project"
+ },
+ "main-street-streetscape-project": {
+  "alias": "4caf0f",
+  "name": "Main Street Streetscape Project"
+ },
+ "mariposa-lake-merced-and-evans-csd-improvements": {
+  "alias": "2f0127",
+  "name": "Mariposa, Lake Merced and Evans CSD Improvements"
+ },
+ "market-st-from-octavia-st-to-castro-st-pavement-renovation": {
+  "alias": "e9e132",
+  "name": "Market St from Octavia St to Castro St Pavement Renovation"
+ },
+ "minnesota-slow-street": {
+  "alias": "c758de",
+  "name": "Minnesota Slow Street"
+ },
+ "mission-8th-9th-howard-and-natoma-brick-sewer-rehabilitation": {
+  "alias": "e424f2",
+  "name": "Mission, 8th, 9th, Howard and Natoma Brick Sewer Rehabilitation"
+ },
+ "mission-bay-blvd-quick-build-project": {
+  "alias": "d17935",
+  "name": "Mission Bay Blvd Quick-Build Project"
+ },
+ "mission-district-sewer-rehabilitation-vlld2b": {
+  "alias": "af9ade",
+  "name": "Mission District Sewer Rehabilitation (VLLD2B)"
+ },
+ "mission-geneva-safety-project": {
+  "alias": "2b2040",
+  "name": "Mission / Geneva Safety Project"
+ },
+ "monterey-blvd-pavement-renovation": {
+  "alias": "a63581",
+  "name": "Monterey Blvd Pavement Renovation"
+ },
+ "monterey-blvd-sewer-replacement": {
+  "alias": "62296a",
+  "name": "Monterey Blvd Sewer Replacement"
+ },
+ "noe-slow-street-and-duboce-triangle-planning-study": {
+  "alias": "ac5514",
+  "name": "Noe Slow Street and Duboce Triangle Planning Study"
+ },
+ "noriega-st-and-quintara-st-pavement-renovation": {
+  "alias": "105e32",
+  "name": "Noriega St and Quintara St Pavement Renovation"
+ },
+ "northern-waterfront-electrical-improvements-nwei": {
+  "alias": "e117fa",
+  "name": "Northern Waterfront Electrical Improvements (NWEI)"
+ },
+ "oak-street-quick-build-project": {
+  "alias": "9b565a",
+  "name": "Oak Street Quick-Build Project"
+ },
+ "octavia-boulevard-enhancement-program": {
+  "alias": "a2e44f",
+  "name": "Octavia Boulevard Enhancement Program"
+ },
+ "oshaughnessy-and-woodside-ave-pavement-renovation": {
+  "alias": "aca4f9",
+  "name": "OShaughnessy and Woodside Ave Pavement Renovation"
+ },
+ "page-slow-street": {
+  "alias": "755890",
+  "name": "Page Slow Street"
+ },
+ "page-slow-street-upgrades": {
+  "alias": "f4ff84",
+  "name": "Page Slow Street Upgrades"
+ },
+ "parkmerced-project": {
+  "alias": "69ab4d",
+  "name": "Parkmerced Project"
+ },
+ "paul-avenue-bike-lane-project": {
+  "alias": "bea966",
+  "name": "Paul Avenue Bike Lane Project"
+ },
+ "pefws-pipeline-36-42-inch-welded-steel-pipe": {
+  "alias": "67c1fa",
+  "name": "PEFWS Pipeline - 36- & 42-inch Welded Steel Pipe"
+ },
+ "pefws-pipeline-contract-b-36-inch-welded-steel-pipe": {
+  "alias": "3655a3",
+  "name": "PEFWS Pipeline Contract B - 36-inch Welded Steel Pipe"
+ },
+ "pefws-pipeline-contract-c-24-inch-42nd-between-lawton-irving": {
+  "alias": "a951f6",
+  "name": "PEFWS Pipeline Contract C - 24-inch 42nd (between Lawton & Irving)"
+ },
+ "pefws-pipeline-contract-e-24-inch-ggp-crossing": {
+  "alias": "b4fd24",
+  "name": "PEFWS Pipeline Contract E - 24-inch GGP Crossing"
+ },
+ "pefws-pipeline-contract-f-24-inch-water": {
+  "alias": "98d811",
+  "name": "PEFWS Pipeline Contract F- 24-Inch Water"
+ },
+ "pefws-pipeline-contract-g-36-inch-water": {
+  "alias": "d780f6",
+  "name": "PEFWS Pipeline Contract G - 36-Inch Water"
+ },
+ "pg-e-power-asset-acquisition": {
+  "id": "dotmaps:26874",
+  "name": "PG&E Power Asset Acquisition",
+  "pages": [],
+  "listed": false
+ },
+ "portola-dr-pavement-renovation": {
+  "alias": "c8e345",
+  "name": "Portola Dr Pavement Renovation"
+ },
+ "pw-as-needed-main-sewer-replacement-no-10": {
+  "alias": "88321b",
+  "name": "PW As Needed Main Sewer Replacement No 10"
+ },
+ "pw-as-needed-spot-sewer-replacement-no-47": {
+  "alias": "fbacbe",
+  "name": "PW As Needed Spot Sewer Replacement No 47"
+ },
+ "pw-brannan-street-outfall-improvements": {
+  "alias": "53e998",
+  "name": "PW Brannan Street Outfall Improvements"
+ },
+ "pw-folsom-area-stormwater-improvement-project": {
+  "alias": "674498",
+  "name": "PW FOLSOM AREA STORMWATER IMPROVEMENT PROJECT"
+ },
+ "pw-folsom-streetscape-project": {
+  "alias": "81524c",
+  "name": "PW Folsom Streetscape Project"
+ },
+ "pw-fy21-bike-traffic-signal-upgrade-program": {
+  "alias": "5587a5",
+  "name": "PW FY21 Bike Traffic Signal Upgrade Program"
+ },
+ "pw-havelock-pedestrian-bridge-sidewalk-improvements": {
+  "alias": "76f286",
+  "name": "PW Havelock Pedestrian Bridge - Sidewalk Improvements"
+ },
+ "pw-k-ingleside-rapid-project": {
+  "alias": "f3bd65",
+  "name": "PW - K Ingleside Rapid Project"
+ },
+ "pw-m-j-lines-muni-forward-project": {
+  "alias": "1d463b",
+  "name": "PW - M & J Lines - Muni Forward Project"
+ },
+ "pw-mta-new-castro-station-elevator": {
+  "id": "dotmaps:11876",
+  "name": "PW MTA New Castro Station Elevator",
+  "pages": [],
+  "listed": false
+ },
+ "pw-streetresurfacingpro-bbsr-pavement-prese-fy-26-27": {
+  "alias": "6740ae",
+  "name": "PW StreetResurfacingPro-BBSR Pavement Prese FY 26-27"
+ },
+ "pw-various-locations-curb-ramps-no-18": {
+  "alias": "66f2f1",
+  "name": "PW Various Locations Curb Ramps No 18"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-62": {
+  "alias": "31366c",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 62)"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-69": {
+  "alias": "12e1b0",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 69)"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-77": {
+  "alias": "3fb39a",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 77)"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-79": {
+  "alias": "20515f",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 79)"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-82": {
+  "alias": "310750",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 82)"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-89": {
+  "alias": "ea08a4",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 89)"
+ },
+ "pw-various-locations-sewer-replacement-jv-vl-pr-no-90": {
+  "alias": "340790",
+  "name": "PW Various Locations Sewer Replacement (JV VL PR No 90)"
+ },
+ "pw-various-locations-sewer-replacement-no-13": {
+  "alias": "c93036",
+  "name": "PW Various Locations Sewer Replacement No 13"
+ },
+ "pw-various-locations-sewer-replacement-no-16": {
+  "alias": "ed3cb5",
+  "name": "PW Various Locations Sewer Replacement No 16"
+ },
+ "pw-various-locations-sewer-replacement-no-17": {
+  "alias": "4b2d53",
+  "name": "PW Various Locations Sewer Replacement No 17"
+ },
+ "pw-various-locations-sewer-replacement-no-18": {
+  "alias": "5ef87e",
+  "name": "PW Various Locations Sewer Replacement No 18"
+ },
+ "pw-various-locations-sewer-replacement-no-19": {
+  "alias": "1a30e9",
+  "name": "PW Various Locations Sewer Replacement No 19"
+ },
+ "pw-various-locations-sewer-replacement-no-20": {
+  "alias": "73533b",
+  "name": "PW Various Locations Sewer Replacement No 20"
+ },
+ "pw-various-locations-sewer-replacement-no-21": {
+  "alias": "19549e",
+  "name": "PW Various Locations Sewer Replacement No 21"
+ },
+ "pw-various-locations-sewer-replacement-no-31": {
+  "alias": "23be1a",
+  "name": "PW Various Locations Sewer Replacement No 31"
+ },
+ "pw-zsfg-bldg-2-chiller-replace": {
+  "id": "dotmaps:52356",
+  "name": "PW ZSFG Bldg 2 Chiller Replace",
+  "pages": [],
+  "listed": false
+ },
+ "san-bruno-ave-multimodal-improvement-project": {
+  "alias": "c4eafc",
+  "name": "San Bruno Ave Multimodal Improvement Project"
+ },
+ "san-bruno-ave-pavement-renovation": {
+  "alias": "16272e",
+  "name": "San Bruno Ave Pavement Renovation"
+ },
+ "san-bruno-sewer-replacement-and-rehab": {
+  "alias": "817ba9",
+  "name": "San Bruno Sewer Replacement and Rehab"
+ },
+ "san-miguel-st-customer-service-changeover": {
+  "id": "dotmaps:8756",
+  "name": "San Miguel St Customer Service Changeover",
+  "pages": [],
+  "listed": false
+ },
+ "sffd-division-of-training": {
+  "id": "dotmaps:11886",
+  "name": "SFFD Division of Training",
+  "pages": [],
+  "listed": false
+ },
+ "sfpw-yard-fuel-station-replacement": {
+  "id": "dotmaps:55659",
+  "name": "SFPW Yard Fuel Station Replacement",
+  "pages": [],
+  "listed": false
+ },
+ "sickles-avenue-streetscape-project": {
+  "alias": "7659de",
+  "name": "Sickles Avenue Streetscape Project"
+ },
+ "sloat-blvd-quick-build-project": {
+  "alias": "4b152a",
+  "name": "Sloat Blvd Quick-Build Project"
+ },
+ "slow-streets": {
+  "alias": "8ff6e0",
+  "name": "Slow Streets"
+ },
+ "stormwater-trash-capture": {
+  "alias": "6494c0",
+  "name": "Stormwater Trash Capture"
+ },
+ "stormwater-trash-capture-phase-2": {
+  "alias": "9ff1ab",
+  "name": "Stormwater Trash Capture Phase 2"
+ },
+ "street-resurfacing-program-bbsr-paving-fy-26-27": {
+  "alias": "cad03a",
+  "name": "Street Resurfacing Program- BBSR Paving FY 26-27"
+ },
+ "street-resurfacing-program-bbsr-paving-fy-27-28": {
+  "alias": "b60bb0",
+  "name": "Street Resurfacing Program-BBSR Paving FY 27-28"
+ },
+ "sunset-irrigation-recycled-water": {
+  "alias": "aaaa3e",
+  "name": "Sunset Irrigation Recycled Water"
+ },
+ "sutter-st-and-post-st-large-diameter-sewer-rehabilitation": {
+  "alias": "fa2ef8",
+  "name": "Sutter St and Post St Large Diameter Sewer Rehabilitation"
+ },
+ "sutter-st-and-post-st-pavement-renovation": {
+  "alias": "a7bbce",
+  "name": "Sutter St and Post St Pavement Renovation"
+ },
+ "sutter-street-quick-build-project": {
+  "alias": "5b6526",
+  "name": "Sutter Street Quick-Build Project"
+ },
+ "train-control-upgrade-project-phase-1": {
+  "id": "dotmaps:54876",
+  "name": "Train Control Upgrade Project - Phase 1",
+  "pages": [],
+  "listed": false
+ },
+ "transbay-howard-streetscape-improvement-project": {
+  "alias": "99f7d1",
+  "name": "Transbay Howard Streetscape Improvement Project"
+ },
+ "treasure-island-and-yerba-buena-island-project": {
+  "alias": "66a62b",
+  "name": "Treasure Island and Yerba Buena Island Project"
+ },
+ "upper-market-street-safety-project": {
+  "alias": "e33d2a",
+  "name": "Upper Market Street Safety Project"
+ },
+ "various-location-sewer-replacement-no-22": {
+  "alias": "d82313",
+  "name": "Various Location Sewer Replacement No 22"
+ },
+ "various-locations-large-diameter-sewer-improvements-no-1": {
+  "alias": "3f7be6",
+  "name": "Various Locations Large Diameter Sewer Improvements No 1"
+ },
+ "various-locations-pavement-renovation-concrete-no-94": {
+  "alias": "081ad7",
+  "name": "Various Locations Pavement Renovation Concrete No 94"
+ },
+ "various-locations-pavement-renovation-concrete-no-97": {
+  "alias": "a75fe5",
+  "name": "Various Locations Pavement Renovation Concrete No 97"
+ },
+ "various-locations-pavement-renovation-no-100": {
+  "alias": "668eca",
+  "name": "Various Locations Pavement Renovation No 100"
+ },
+ "various-locations-pavement-renovation-no-101": {
+  "alias": "9cbcf3",
+  "name": "Various Locations Pavement Renovation No 101"
+ },
+ "various-locations-pavement-renovation-no-102": {
+  "alias": "5d2582",
+  "name": "Various Locations Pavement Renovation No 102"
+ },
+ "various-locations-pavement-renovation-no-104": {
+  "alias": "49124e",
+  "name": "Various Locations Pavement Renovation No 104"
+ },
+ "various-locations-pavement-renovation-no-105": {
+  "alias": "01d70b",
+  "name": "Various Locations Pavement Renovation No 105"
+ },
+ "various-locations-pavement-renovation-no-68": {
+  "alias": "ee500b",
+  "name": "Various Locations Pavement Renovation No 68"
+ },
+ "various-locations-pavement-renovation-no-69": {
+  "alias": "429670",
+  "name": "Various Locations Pavement Renovation No 69"
+ },
+ "various-locations-pavement-renovation-no-77": {
+  "alias": "f1fd81",
+  "name": "Various Locations Pavement Renovation No 77"
+ },
+ "various-locations-pavement-renovation-no-78": {
+  "alias": "309ca9",
+  "name": "Various Locations Pavement Renovation No 78"
+ },
+ "various-locations-pavement-renovation-no-79": {
+  "alias": "9fa6b5",
+  "name": "Various Locations Pavement Renovation No 79"
+ },
+ "various-locations-pavement-renovation-no-81-and-sewer": {
+  "alias": "41fa0d",
+  "name": "Various Locations Pavement Renovation No 81 and Sewer Replacement"
+ },
+ "various-locations-pavement-renovation-no-82": {
+  "alias": "b29df4",
+  "name": "Various Locations Pavement Renovation No 82"
+ },
+ "various-locations-pavement-renovation-no-85": {
+  "alias": "d5903f",
+  "name": "Various Locations Pavement Renovation No 85"
+ },
+ "various-locations-pavement-renovation-no-86a": {
+  "alias": "9dbafb",
+  "name": "Various Locations Pavement Renovation No 86A"
+ },
+ "various-locations-pavement-renovation-no-86b": {
+  "alias": "1e5e72",
+  "name": "Various Locations Pavement Renovation No 86B"
+ },
+ "various-locations-pavement-renovation-no-87": {
+  "alias": "b2ea41",
+  "name": "Various Locations Pavement Renovation No 87"
+ },
+ "various-locations-pavement-renovation-no-89": {
+  "alias": "f11b24",
+  "name": "Various Locations Pavement Renovation No 89"
+ },
+ "various-locations-pavement-renovation-no-90": {
+  "alias": "8a04d6",
+  "name": "Various Locations Pavement Renovation No 90"
+ },
+ "various-locations-pavement-renovation-no-92": {
+  "alias": "f3a680",
+  "name": "Various Locations Pavement Renovation No 92"
+ },
+ "various-locations-pavement-renovation-no-99": {
+  "alias": "016e36",
+  "name": "Various Locations Pavement Renovation No 99"
+ },
+ "various-locations-pavement-renovation-under-overhead": {
+  "alias": "f6e12c",
+  "name": "Various Locations Pavement Renovation Under Overhead Contact System No 3"
+ },
+ "various-locations-pavement-renovation-under-overhead-31458": {
+  "alias": "3ab954",
+  "name": "Various Locations Pavement Renovation Under Overhead Contact System No 4"
+ },
+ "various-locations-pavement-renovation-x": {
+  "alias": "31aa61",
+  "name": "Various Locations Pavement Renovation X"
+ },
+ "various-locations-sewer-replacement-21": {
+  "alias": "2fe678",
+  "name": "Various Locations Sewer Replacement #21"
+ },
+ "various-locations-sewer-replacement-no-23": {
+  "alias": "ae446a",
+  "name": "Various Locations Sewer Replacement No 23"
+ },
+ "various-locations-sewer-replacement-no-24": {
+  "alias": "1bb9b7",
+  "name": "Various Locations Sewer Replacement No 24"
+ },
+ "various-locations-sewer-replacement-no-25": {
+  "alias": "58e685",
+  "name": "Various Locations Sewer Replacement No 25"
+ },
+ "various-locations-sewer-replacement-no-26": {
+  "alias": "3c5f9e",
+  "name": "Various Locations Sewer Replacement No 26"
+ },
+ "various-locations-sewer-replacement-no-27": {
+  "alias": "9974ea",
+  "name": "Various Locations Sewer Replacement No 27"
+ },
+ "various-locations-sewer-replacement-no-28": {
+  "alias": "535ddd",
+  "name": "Various Locations Sewer Replacement No 28"
+ },
+ "various-locations-sewer-replacement-no-29": {
+  "alias": "37ed0c",
+  "name": "Various Locations Sewer Replacement No 29"
+ },
+ "various-locations-sewer-replacement-no-30": {
+  "alias": "1b9974",
+  "name": "Various Locations Sewer Replacement No 30"
+ },
+ "various-locations-sewer-replacement-no-32": {
+  "alias": "7145e5",
+  "name": "Various Locations Sewer Replacement No 32"
+ },
+ "various-locations-sewer-replacement-no-33": {
+  "alias": "08c401",
+  "name": "Various Locations Sewer Replacement No 33"
+ },
+ "various-locations-sewer-replacement-no-34": {
+  "alias": "593d29",
+  "name": "Various Locations Sewer Replacement No 34"
+ },
+ "various-locations-sewer-replacement-no-35": {
+  "alias": "8b1262",
+  "name": "Various Locations Sewer Replacement No 35"
+ },
+ "various-locations-sewer-replacement-no-36": {
+  "alias": "053731",
+  "name": "Various Locations Sewer Replacement No 36"
+ },
+ "various-locations-sewer-replacement-no-37": {
+  "alias": "21c8c8",
+  "name": "Various Locations Sewer Replacement No 37"
+ },
+ "various-locations-sewer-replacement-no-38": {
+  "alias": "2d18e5",
+  "name": "Various Locations Sewer Replacement No 38"
+ },
+ "various-locations-sewer-replacement-no-39": {
+  "alias": "bb5fb5",
+  "name": "Various Locations Sewer Replacement No 39"
+ },
+ "various-locations-sewer-replacement-no-40": {
+  "alias": "ab90cd",
+  "name": "Various Locations Sewer Replacement No 40"
+ },
+ "various-locations-spot-main-sewer-replacement-no-2": {
+  "alias": "b4faf2",
+  "name": "Various Locations Spot Main Sewer Replacement No 2"
+ },
+ "vision-zero-signal-retiming": {
+  "alias": "5b4e76",
+  "name": "Vision Zero Signal Retiming"
+ },
+ "visitacion-avenue-streetscape-project": {
+  "alias": "6986f5",
+  "name": "Visitacion Avenue Streetscape Project"
+ },
+ "visitacion-valley-and-portola-community-based": {
+  "alias": "8755e3",
+  "name": "Visitacion Valley and Portola Community Based Transportation Plan"
+ },
+ "wd-2877-as-needed-water-main-replacement-no-3": {
+  "alias": "93a348",
+  "name": "WD-2877 As Needed Water Main Replacement No.3"
+ },
+ "wd-2918-8-inch-ductile-iron-water-main-replacement-sewer": {
+  "alias": "784a65",
+  "name": "WD-2918 8-Inch Ductile Iron Water Main Replacement, Sewer Rehabilitation and Sewer Replacement on Harkness Ave., Goettingen St., Girard St., and Various Locations"
+ },
+ "wd-2919-8-and-12-inch-ductile-iron-water-main-replacement": {
+  "alias": "9fc0c0",
+  "name": "WD-2919: 8- and 12-Inch Ductile Iron Water Main Replacement on 18th and Mariposa Streets from Potrero Ave. to Texas St. and on Various Side Streets"
+ },
+ "wd-2921-8-and-12-inch-ductile-iron-water-main-replacement": {
+  "alias": "b80fd6",
+  "name": "WD-2921 8- and 12-inch Ductile Iron Water Main Replacement on Palou, Quesada, and Revere Ave from 3rd St to Griffith St"
+ },
+ "wd-2922-8-inch-ductile-iron-water-main-replacement-on": {
+  "alias": "a8eadf",
+  "name": "WD-2922: 8-inch Ductile Iron Water Main Replacement on Lincoln Way from Sunset to La Playa St and Various Side Streets"
+ },
+ "wd-2922-8-inch-ductile-iron-water-main-replacement-on-25065": {
+  "alias": "cc17f1",
+  "name": "WD-2922: 8-inch Ductile Iron Water Main Replacement on Lincoln Way and Irving St from Sunset Blvd to 19th Ave and Various Side Streets"
+ },
+ "wd-2923-formerly-wd-2764-24-inch-water-main-rehabilitation": {
+  "alias": "766443",
+  "name": "WD-2923 (formerly WD-2764): 24-inch Water Main Rehabilitation from University Mound Reservoir to 3rd St"
+ },
+ "wd-2934-16-12-and-8-inch-ductile-iron-water-main": {
+  "alias": "7a8bef",
+  "name": "WD-2934 16-, 12- and 8-inch Ductile Iron Water Main Replacement on Andover to Nevada St from Tompkins to Crescent Ave"
+ },
+ "wd-2936-8-12-16-inch-ductile-iron-water-main-replacement-on": {
+  "alias": "ed3331",
+  "name": "WD-2936 8-, 12- & 16-inch Ductile Iron Water Main Replacement on Geary Boulevard from Stanyan Street to Presidio Avenue & on Post Street from Presidio Avenue to Scott Street & on Various Side Streets"
+ },
+ "wd-2937-2425-003-8-inch-ductile-iron-water-main-replacement": {
+  "alias": "5bdfc6",
+  "name": "WD-2937 2425-003: 8-inch Ductile Iron Water Main Replacement on Underwood, Thomas, and Shafter Aves from 3rd St to Griffith St"
+ },
+ "western-addition-community-based-transportation-plan": {
+  "alias": "26133a",
+  "name": "Western Addition Community Based Transportation Plan Implementation"
+ },
+ "western-soma-and-northern-mission-districts-sewer": {
+  "alias": "b38d2c",
+  "name": "Western SOMA and Northern Mission Districts Sewer Replacement WW-719D"
+ },
+ "winston-drive-quick-build-project": {
+  "alias": "b9020f",
+  "name": "Winston Drive Quick-Build Project"
+ },
+ "ww-779-various-locations-sewer-replacement-no-32": {
+  "alias": "203e1d",
+  "name": "WW-779 Various Locations Sewer Replacement No. 32"
+ }
+}

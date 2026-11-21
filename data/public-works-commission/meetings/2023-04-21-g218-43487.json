@@ -1,0 +1,76 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-04-21",
+ "id": "g218-43487",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=43487",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair"
+  },
+  {
+   "no": "2",
+   "title": "Commission Secretary’s Report"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Adopt Minutes from the April 7, 2023 Meeting Minutes"
+  },
+  {
+   "no": "5b",
+   "title": "JOC-J54 General Engineering Services"
+  },
+  {
+   "no": "5c",
+   "title": "As-Needed Environmental Contracting Services (XEC 2022)"
+  },
+  {
+   "no": "5d",
+   "title": "Minnesota Streetscape Improvements – Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "San Francisco Public Library Support Services – 190 9th Street Energy Efficiency HVAC Upgrades & Photovoltaic Panels"
+  },
+  {
+   "no": "7",
+   "title": "Changes to Commission’s Charter Authority Due to Proposition B (2022)"
+  },
+  {
+   "no": "8",
+   "title": "Operations Division Overview"
+  },
+  {
+   "no": "9",
+   "title": "Public Works Director Hiring Update"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

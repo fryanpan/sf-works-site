@@ -1,0 +1,120 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-12-03",
+ "id": "g55-34633",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34633",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21010"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting.",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Debera Taylor vs. CCSF, Citylaw No. 190703 settled on 8/7/19 for $30,000. (Explanatory documents include a resolution.) RESOLUTION 191203-145",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 191203-145)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the following traffic modifications",
+   "text": "Approving the following traffic modifications: A. ESTABLISH – RED ZONE ― Washington Street, south side, from Mason Street to 30 feet easterly. B. ESTABLISH – RESIDENTIAL PERMIT PARKING AREA S ― ESTABLISH – 2-HOUR PARKING, 8 AM TO 9 PM, MONDAY THROUGH FRIDAY, EXCEPT VEHICLES WITH AREA S PERMITS; Dolores Street, east side, between 19th Street and Cumberland Street. C. ESTABLISH – 15 MILES PER HOUR SCHOOL SPEED LIMIT WHEN CHILDREN ARE PRESENT ― Golden Gate Avenue, between Hyde Street and Leavenworth Street; Golden Gate Avenue, between Leavenworth Street and Jones Street D. ESTABLISH – 25 MILES PER HOUR SCHOOL SPEED LIMIT WHEN CHILDREN ARE PRESENT ― Visitacion Avenue, between Mansell Street and Hahn Street. E. ESTABLISH – NO PARKING ANYTIME ― Harrison Street, south side, from Spear Street to 29 feet easterly, and making environmental review findings. (Explanatory documents include a staff report and resolution. For every parking and traffic modification that received a categorical exemption, the proposed action is the Approval Action as defined by Chapter 31 of the San Francisco Administrative Code.)",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes; parts C, D severed and voted separately: ADOPTED — 4 ayes (Resolution 191203-146)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Modification No. 1 to Contract No. 1260R, Muni Metro System Integrated Systems Replacement Project, with Blocka Construction to compensate the Contractor for costs associated with SFMTA delays, additional work, and procurement of hardware, increasing the Contract amount by $1,509,166.24, for a total Contract amount not to exceed $25,625,166.24, and an extension of time to substantial completion of 1,440 days.",
+   "text": "Authorizing the Director to execute Modification No. 1 to Contract No. 1260R, Muni Metro System Integrated Systems Replacement Project, with Blocka Construction to compensate the Contractor for costs associated with SFMTA delays, additional work, and procurement of hardware, increasing the Contract amount by $1,509,166.24, for a total Contract amount not to exceed $25,625,166.24, and an extension of time to substantial completion of 1,440 days. (Explanatory documents include a staff report, resolution and modification.) RESOLUTION 191203-147",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 191203-147)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute an industrial gross lease between Infoimage of California, as landlord, and the SFMTA, as tenant, for 890 Pennsylvania Avenue for the Transit Division’s Track Department at an estimated rent and operating expense amount of $3,374,118 for seven years.",
+   "text": "Authorizing the Director to execute an industrial gross lease between Infoimage of California, as landlord, and the SFMTA, as tenant, for 890 Pennsylvania Avenue for the Transit Division’s Track Department at an estimated rent and operating expense amount of $3,374,118 for seven years. (Explanatory documents include a staff report, resolution and lease.) RESOLUTION 191203-148",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 191203-148)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the SFMTA’s operating and capital budget"
+  },
+  {
+   "no": "12",
+   "title": "Approving the SFMTA’s 2020 Legislative Program",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Approving Unilateral Contract Modification No. 123 to Contract No. 1300",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Authorizing the Director to execute Contract No. 2018-48",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Approving the San Francisco Municipal Transportation Agency’s Fiscal Year 2019 –2030",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "16",
+   "title": "Approving a Contract Approval Delegation",
+   "decision": "ADOPTED — 4 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,93 @@
+{
+ "cards": [
+  {
+   "count": 32,
+   "id": "right",
+   "killed": 6,
+   "reason": "The parked row on the driver's right sits between them.",
+   "svg": "right.svg",
+   "title": "Going Straight, Person From the Right",
+   "verdict": "could help"
+  },
+  {
+   "count": 4,
+   "id": "left_oneway",
+   "killed": 0,
+   "reason": "A one-way street has a parked row on the driver's left too.",
+   "svg": "left-oneway.svg",
+   "title": "One-Way Street, Person From the Left",
+   "verdict": "could help"
+  },
+  {
+   "count": 13,
+   "id": "unknown",
+   "killed": 4,
+   "reason": "The record lacks a direction, the driver's movement or the side of the intersection.",
+   "svg": "unknown.svg",
+   "title": "Direction or Movement Not Recorded",
+   "verdict": "can't tell"
+  },
+  {
+   "count": 5,
+   "id": "turning",
+   "killed": 2,
+   "reason": "The record doesn't say whether the person was behind the parked row.",
+   "svg": "turning.svg",
+   "title": "Turning Right at the Corner",
+   "verdict": "can't tell"
+  },
+  {
+   "count": 35,
+   "id": "midblock",
+   "killed": 8,
+   "reason": "Daylighting clears the 20 ft before the crosswalk, not this curb.",
+   "svg": "midblock.svg",
+   "title": "Mid-Block, or Past the Intersection",
+   "verdict": "unlikely"
+  },
+  {
+   "count": 23,
+   "id": "left_twoway",
+   "killed": 3,
+   "reason": "The person had already crossed the oncoming lanes in the open.",
+   "svg": "left-twoway.svg",
+   "title": "Two-Way Street, Person From the Left",
+   "verdict": "unlikely"
+  },
+  {
+   "count": 13,
+   "id": "other",
+   "killed": 2,
+   "reason": "The driver was backing, parking, pulling out or turning left, or nobody crossed in front.",
+   "svg": "other.svg",
+   "title": "Not Driving Up to the Crosswalk",
+   "verdict": "unlikely"
+  }
+ ],
+ "data_read": "2026-11-20",
+ "legend": [
+  {
+   "color": "#2c3a55",
+   "label": "Driver's car"
+  },
+  {
+   "color": "#0f7f78",
+   "label": "Person on foot"
+  },
+  {
+   "color": "#b4bac4",
+   "label": "Where cars may park"
+  },
+  {
+   "color": "#4269d0",
+   "label": "20 ft daylighting zone",
+   "style": "dashed outline"
+  }
+ ],
+ "total": 125,
+ "verdict_colors": {
+  "can't tell": "#efb118",
+  "could help": "#4269d0",
+  "unlikely": "#9498a0"
+ }
+}

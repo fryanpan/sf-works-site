@@ -1,0 +1,159 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-07-14",
+ "id": "g22-52844",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52844",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/7.14.2026_M_0.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of June 23, 2026",
+   "decision": "approve the Minutes of June 23, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Award Contract No. DB-139R, Transmission Line Clearance Mitigation Moderate and Low Risk Project (Project), to Wilson Utility Construction Co., to design and construct clearance mitigations to span the existing San Francisco Public Utilities Commission owned and operated 115 kilovolt (kV) and 230kV overhead power transmission lines, with an initial contract award for design and pre-construction services, in the not-to-exceed amount of $17,347,280 ($13,702,280), and with a total contract duration of 1,200 consecutive calendar days (approximately three years and four months). The Planning Department has determined that the Project is exempt from the California Environmental Quality Act (CEQA), and the Commission will rely on that determination to make its decision on this action. This action constitutes the Approval Action for the Project for the purposes of the CEQA pursuant to San Francisco Administrative Code Section 31.04(h)",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar, Item Nos. 6b through 6e",
+   "resolution": "26-0106",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Approve Modification No. 3 to Contract No. WD-2889, As-Needed Water Service Line Replacements, with JMB Construction, Inc., increasing the contract duration by 365 calendar days (one year), to provide main replacement support services, excavation, and pavement restoration work associated with an 8-inch water main installation and construction, with no change to the contract amount, for a revised contract duration of 1,461 consecutive calendar days (approximately four years)",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar, Item Nos. 6b through 6e",
+   "resolution": "26-0107",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Approve an increase of $1,250,000 to the existing cost contingency and an increase of 60 calendar days (approximately two months) to the existing duration contingency for Contract No. WD-2906, Town of Sunol Pipeline Replacement at Arroyo de la Laguna Creek, with Mitchell Engineering, for a revised cost limit of $6,518,323 and a revised duration limit of 725 consecutive calendar days (approximately two years), to address costs and schedule delays associated with: suspending a portion of the project for approximately seven months while waiting for the final environmental permit required to enter the Arroyo de la Laguna Creek; adjusting the construction schedule to complete the pipeline replacement within the permit schedule and Sunol Glen Elementary School work windows; and coordinating with other nearby projects that have now started",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar, Item Nos. 6b through 6e",
+   "resolution": "26-0108",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Award Job Order Contract No. JOC-116, General Engineering (A-License) Construction, San Joaquin, Stanislaus, and Tuolumne Counties, Hetch Hetchy, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of two years, to the responsible bidder that submitted the lowest responsive bid, Sierra Communications & Construction, Inc., to perform A-licensed general engineering construction work on San Francisco Public Utilities Commission systems and operations around Hetch Hetchy",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar, Item Nos. 6b through 6e",
+   "resolution": "26-0109",
+   "from": "minutes"
+  },
+  {
+   "no": "6e",
+   "title": "Award Contract No. PRO.0319, Urban Watershed Planning, Program & Policy, to Lotus-Bionic Joint-Venture, in an amount not-to-exceed $8,000,000, and with a duration of four years, to provide urban watershed planning services. SFPUC Staff requested to remove Consent Calendar Item 6a from Commission consideration",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar, Item Nos. 6b through 6e",
+   "resolution": "26-0110",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Presentation by the San Francisco Department of Human Resources on the selectionprocess for a new General Manager",
+   "text": "Presentation by the San Francisco Department of Human Resources on the selection process for a new General Manager. (Discussion Only) Shawn Sherburne, Department of Human Resources Employment Services Assistant Director, delivered the presentation"
+  },
+  {
+   "no": "8",
+   "title": "Approve the terms and conditions and authorize the General Manager to execute a no-fee nine-year revocable license to the City of South San Francisco",
+   "decision": "approve Item 8",
+   "resolution": "26-0111",
+   "text": "Approve the terms and conditions and authorize the General Manager to execute a no-fee nine-year revocable license to the City of South San Francisco to use approximately 5.89 acres of San Francisco Public Utilities Commission land, comprising portions of SFPUC Parcel Nos. 7, 10-1, 10-2, 24, and 25, in South San Francisco, California, for (i) operating, maintaining, managing, and repairing an existing public recreational pedestrian and bicycle path and linear park; (ii) maintaining the surface of the pathway, including the existing landscaping in accordance with the SFPUC Vegetation Management Policy; (iii) maintaining an additional SFPUC parcel and (iv) managing the surface water drainage"
+  },
+  {
+   "no": "9",
+   "title": "Authorize the General Manager to execute an Installment Sale Agreement to secure a Clean Water State Revolving Fund Loan for the Lower Alemany Area Stormwater Improvement Project",
+   "decision": "approve Item 9",
+   "resolution": "26-0112",
+   "text": "Authorize the General Manager to execute an Installment Sale Agreement to secure a Clean Water State Revolving Fund Loan for the Lower Alemany Area Stormwater Improvement Project in a principal amount not to exceed $60,000,000 and with a principal forgiveness amount for up to $5,000,000"
+  },
+  {
+   "no": "10",
+   "title": "Approve CleanPowerSF’s 2026 Integrated Resource Plan (IRP) and authorize the General Manager to finalize and submit the IRP and associated documents",
+   "decision": "approve Item 10",
+   "resolution": "26-0113",
+   "text": "Approve CleanPowerSF’s 2026 Integrated Resource Plan (IRP) and authorize the General Manager to finalize and submit the IRP and associated documents as a Compliance Filing to the California Public Utilities Commission by the August 10, 2026 deadline"
+  },
+  {
+   "no": "11",
+   "title": "Award Contract Nos. PRO.0336.A-D, Specialized and Technical As-Needed Services, to Stantec Consulting Services, Inc",
+   "decision": "approve Item 11",
+   "resolution": "26-0114",
+   "text": "Award Contract Nos. PRO.0336.A-D, Specialized and Technical As-Needed Services, to Stantec Consulting Services, Inc. (PRO.0336.A); Jacobs Engineering Group, Inc. (PRO.0336.B); AECOM Technical Services, Inc. (PRO.0336.C); and LEE, Inc. (PRO.0336.D), each for an amount not-to-exceed $20,000,000, and with a duration of five years. Cheryl Sperry, Moccasin Administrative Service Manager-Water Enterprise,"
+  },
+  {
+   "no": "12",
+   "title": "Authorize the General Manager to execute a no-cost Project Specific Maintenance Agreement with the State of California",
+   "decision": "approve Item 12",
+   "resolution": "26-0115",
+   "text": "Approve the terms and conditions and authorize the General Manager to execute a no-cost Project Specific Maintenance Agreement with the State of California, Department of Transportation (Caltrans), for ongoing maintenance supporting proposed improvements under Contract No. WW-780, Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris), by the San Francisco Public Utilities Commission at two wastewater pump station locations within Caltrans right-of-way along State Highway Route 80 in the City and County of San Francisco, subject to Board of Supervisors and Mayor approval"
+  },
+  {
+   "no": "13",
+   "title": "Approve an increase of 545 calendar days to the existing duration contingency for Contract No. WW-709R",
+   "decision": "approve Item 13",
+   "resolution": "26-0116",
+   "text": "Approve an increase of 545 calendar days to the existing duration contingency for Contract No. WW-709R, Various Locations Sewer Replacement No. 13, with M. Hernandez Construction, Inc. (dba) Hernandez Engineering, for a revised duration limit of 1,740 calendar days (approximately four years and nine months), due to additional time required to complete remaining work scopes in the Marina and North Beach neighborhoods, with no change to the contract amount"
+  },
+  {
+   "no": "14",
+   "title": "Communications"
+  },
+  {
+   "no": "15",
+   "title": "Items initiated by Commissioners (discussion only)"
+  },
+  {
+   "no": "16",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "17",
+   "title": "Motion on whether to assert the attorney-client privilege CLOSED SESSION"
+  },
+  {
+   "no": "18",
+   "title": "Report following Closed Session",
+   "text": "Report following Closed Session President Arce reported that the Commission recommends the Board of Supervisors approve the settlements referenced under Item 17"
+  },
+  {
+   "no": "19",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)",
+   "decision": "not to disclose the discussion during Closed Session"
+  },
+  {
+   "no": "20",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

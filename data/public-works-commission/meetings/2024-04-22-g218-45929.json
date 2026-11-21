@@ -1,0 +1,64 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-04-22",
+ "id": "g218-45929",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=45929",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the April 8, 2024 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "As-Needed Asbestos, Lead, and Industrial Hygiene Consultation Services 2020 (Micro-LBE Set-Aside Program), Contract ID 1000021229 - Contract Modification"
+  },
+  {
+   "no": "4c",
+   "title": "27 Bryant Transit Reliability Project (MUNI Forward), Contract No. 1000024775 - Contract Modification"
+  },
+  {
+   "no": "4d",
+   "title": "Davies Symphony Elevator Modernization Phase 2 (REBID) - Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Golden Gate Avenue and Laguna Street Pavement Renovation and Sewer Replacement, Contract No. 1000016595 - Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "Revised Contract Approval Delegation Policy"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment - Continued from Item 3 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

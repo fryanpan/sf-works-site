@@ -1,0 +1,14 @@
+file,figure,context,verdict,note
+site/content/transportation.md,80%,of residents now live within,data,history.json rows[-1].resident_share (0.8029 on 2026-09-28) can fill it
+site/content/transportation.md,25%,per-capita vehicle,external,SF Environment's goal as quoted
+site/content/transportation.md,12.4 miles,a person a day in 2019,external,SF Environment March 2026 update as quoted
+site/content/transportation.md,12.0 miles,As of September 2025,external,SF Environment March 2026 update's current status as cited inline
+site/content/transportation.md,80%,trips by low-carbon modes,external,2021 Climate Action Plan goal as quoted
+site/content/transportation-about.md,80%,how the plan's 80% was computed,external,the plan's own printed figure (p. 24)
+site/content/transportation-about.md,only 1 of,feed jobs on,data,out/dpw-projects/feed-join.json holds the matches
+site/content/transportation-about.md,269 project pages,Public Works lists,data,data/extract/dpw-projects/projects.json record count
+site/content/transportation-about.md,80%,key performance indicator,external,SFMTA's published KPI as quoted
+site/content/transportation-about.md,302 miles,has grown from,external,the plan's p. 20 as quoted
+site/content/transportation-about.md,472 miles,has grown from,external,the plan's p. 20 as quoted
+site/content/transportation-about.md,90%,of the printed line,external,a percentile the method names (p90); the measured figure beside it is filled from data
+site/content/transportation-about.md,0%,"reads ""0% in published scope""",external,the name of a rating label the method defines; the band counts beside it are filled from data

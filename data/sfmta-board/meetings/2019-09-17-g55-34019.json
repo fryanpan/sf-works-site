@@ -1,0 +1,120 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-09-17",
+ "id": "g55-34019",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34019",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/20386"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - September 3, 2019 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members - Update on the search for the Director of Transportation"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the SFMTA",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the following traffic modifications",
+   "decision": "ADOPTED — 5 ayes (Resolution 190917-113)"
+  },
+  {
+   "no": "10.1A",
+   "title": "ESTABLISH – BUS ZONE – Columbus Avenue",
+   "decision": "ADOPTED — 5 ayes (Resolution 190917-113)"
+  },
+  {
+   "no": "10.1B",
+   "title": "ESTABLISH - GENERAL METERED PARKING - Columbus Avenue",
+   "decision": "ADOPTED — 5 ayes (Resolution 190917-113)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving Contract with the San Francisco Bicycle Coalition for a term of two years",
+   "decision": "ADOPTED — 5 ayes (Resolution 190917-114)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Modification No. 1 to Contract with Cal State Constructors, Inc",
+   "decision": "ADOPTED — 5 ayes (Resolution 190917-115)"
+  },
+  {
+   "no": "11",
+   "title": "Approving Modification No. 122 to Contract No. 1300 - Third Street Light Rail Program Phase 2 - Central Subway Stations with Tutor Perini",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding San Francisco’s Construction Mitigation Program"
+  },
+  {
+   "no": "13",
+   "title": "Adopting the 2019 SFMTA 20-year Capital Needs Update - which includes a list of anticipated capital needs through 2040",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion regarding the development of a regional transportation funding measure called FASTER Bay Area"
+  },
+  {
+   "no": "15",
+   "title": "Approving various parking and traffic modifications along Mission Street associated with the Mission Street Excelsior Safety Project",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "16",
+   "title": "Approving parking protected bicycle lanes and various parking and traffic modifications associated with the 5th Street Improvement Project",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "17",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,9 @@
+# Hourly at :20.
+[Unit]
+Description=511 realtime archive freshness check, hourly
+
+[Timer]
+OnCalendar=*-*-* *:20:00 UTC
+
+[Install]
+WantedBy=timers.target

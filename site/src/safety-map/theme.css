@@ -1,0 +1,46 @@
+/*
+ * Theme file: SF Works, in the design kit's four-part format (claude-live-feedback-plugin,
+ * templates/design-kit/themes/workspaces.css). Part 1, the base theme, is Web Awesome's default.css, linked just
+ * before this file (src/safety-map/index.mjs KIT_HEAD) because the site loads the kit from its CDN.
+ */
+:root {
+  /* 2. Brand hue: cyan, the kit's nearest to the site's teal --seq-3. */
+  --wa-color-brand-95: var(--wa-color-cyan-95);
+  --wa-color-brand-90: var(--wa-color-cyan-90);
+  --wa-color-brand-80: var(--wa-color-cyan-80);
+  --wa-color-brand-70: var(--wa-color-cyan-70);
+  --wa-color-brand-60: var(--wa-color-cyan-60);
+  --wa-color-brand-50: var(--wa-color-cyan-50);
+  --wa-color-brand-40: var(--wa-color-cyan-40);
+  --wa-color-brand-30: var(--wa-color-cyan-30);
+  --wa-color-brand-20: var(--wa-color-cyan-20);
+  --wa-color-brand-10: var(--wa-color-cyan-10);
+  --wa-color-brand-05: var(--wa-color-cyan-05);
+
+  /* 3. Site tokens: Public Sans, small corners, light only. */
+  --wa-font-family-body: "Public Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --wa-font-family-heading: Archivo, "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --wa-font-size-scale: 0.9;
+  --wa-border-radius-scale: 0.75;
+  --wa-form-control-activated-color: var(--seq-3, #2f7d76);
+
+  /* The Street Safety map's colours (src/safety-map/map.js COLOURS); a site embedding the map sets its own here. */
+  --sm-ink: var(--ink, #15181c);
+  --sm-muted: var(--muted, #59626f);
+  --sm-severe: #efb118;
+  --sm-killed: #4269d0;
+  --sm-outline: #1b1f24;
+  --sm-hin: #4a4f57;
+  --sm-hin-2022: var(--seq-1, #9c5f3c);
+  --sm-hin-2017: var(--seq-2, #c8a25e);
+  --sm-highlight: var(--seq-3, #2f7d76);
+  --sm-lts3: #9ab7d6;
+  --sm-lts4: #2b4c7e;
+  --sm-stop: #59626f;
+}
+
+/* 4. Compact: a stored per-device preference sets data-density on <html>. */
+:root[data-density="compact"] {
+  --wa-space-scale: 0.625;
+  --wa-font-size-scale: 0.825;
+}

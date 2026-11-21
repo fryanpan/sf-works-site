@@ -1,0 +1,94 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-11-07",
+ "id": "g55-44841",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44841",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/29189"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes • October 17, 2023, Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-086)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-086)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-087)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director of Transportation, to execute a grant agreement, with the California Department of Transportation",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-088)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director of Transportation to approve amendments to two As-Needed Specialized Training Services contracts",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-089)"
+  },
+  {
+   "no": "10.5",
+   "title": "Approving a reduced Roadway Shared Spaces Closure of Hayes Street between Gough and Octavia streets",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-090)"
+  },
+  {
+   "no": "11",
+   "title": "Authorizing the Director of Transportation to issue a Request for Proposals for Consulting Services supporting the Communications-Based Train Control Upgrade Project",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-091)"
+  },
+  {
+   "no": "12",
+   "title": "Approving an amendment to the SFMTA’s Zero Emission Vehicle (ZEV) Policy",
+   "decision": "ADOPTED — 5 ayes (Resolution 231107-092)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

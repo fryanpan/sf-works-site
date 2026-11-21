@@ -1,0 +1,808 @@
+{
+  "searched_on": "2026-11-18",
+  "about": "News articles matched to SF Vision Zero traffic deaths (DataSF dau3-4s8f, 2022-01-01 to 2026-08-07) on date within one day and same intersection or block, plus SF traffic deaths reported after 2026-08-07 and the city's published annual totals; the 4-year-old reportedly killed around 2026-11-15 was searched for and not found in any indexed article.",
+  "matches": [
+    {
+      "unique_id": "20220274",
+      "date": "2022-03-02",
+      "location": "Harrison St at 22nd St",
+      "url": "https://missionlocal.org/2022/03/scooter-rider-struck-by-big-rig-killed-on-22nd-street/",
+      "outlet": "Mission Local",
+      "title": "Teacher dies riding scooter after being struck by a big rig",
+      "matched_on": "date and place: Mar 2, 2022, ~7:34 a.m., 23-year-old on motorized scooter hit by semi truck at Harrison St and 22nd St"
+    },
+    {
+      "unique_id": "20220335",
+      "date": "2022-03-10",
+      "location": "Chestnut St at Fillmore St",
+      "url": "https://www.kron4.com/news/bay-area/elderly-pedestrian-dies-after-sf-collision-2/",
+      "outlet": "KRON",
+      "title": "Elderly pedestrian dies after SF collision",
+      "matched_on": "date and place: Struck Mar 10, 2022 near Fillmore and Chestnut streets, 84-year-old pedestrian, died Mar 17"
+    },
+    {
+      "unique_id": "20220649",
+      "date": "2022-05-22",
+      "location": "3rd St at Mission St",
+      "url": "https://www.sfchronicle.com/bayarea/article/Car-plows-into-pedestrians-kills-2-in-downtown-17191373.php",
+      "outlet": "SF Chronicle",
+      "title": "Car plows into pedestrians, kills 2 in downtown San Francisco",
+      "matched_on": "date and place: May 22, 2022, taxi struck three pedestrians near Third and Mission streets; two women killed (Walk SF named them as 31 and 72)"
+    },
+    {
+      "unique_id": "20220650",
+      "date": "2022-05-22",
+      "location": "3rd St at Mission St",
+      "url": "https://www.sfchronicle.com/bayarea/article/Car-plows-into-pedestrians-kills-2-in-downtown-17191373.php",
+      "outlet": "SF Chronicle",
+      "title": "Car plows into pedestrians, kills 2 in downtown San Francisco",
+      "matched_on": "date and place: May 22, 2022, taxi struck three pedestrians near Third and Mission streets; two women killed (Walk SF named them as 31 and 72)"
+    },
+    {
+      "unique_id": "20220687",
+      "date": "2022-06-01",
+      "location": "Octavia Blvd at Oak St",
+      "url": "https://www.ktvu.com/news/unicycle-rider-killed-in-crash-with-garbage-truck-in-san-francisco",
+      "outlet": "KTVU",
+      "title": "Unicycle rider killed in crash with garbage truck in San Francisco",
+      "matched_on": "date and place: Wed Jun 1, 2022 ~4 a.m., motorized unicycle rider hit rear of Recology truck at Octavia and Oak streets (article read 2026-11-18; city counts it in the stand-up device category)"
+    },
+    {
+      "unique_id": "20220773",
+      "date": "2022-06-21",
+      "location": "South Van Ness Ave at 16th St",
+      "url": "https://missionlocal.org/2022/06/sf-man-killed-mission-third-hit-and-run/",
+      "outlet": "Mission Local",
+      "title": "S.F. man killed in Mission's third hit-and-run this month",
+      "matched_on": "date and place: Jun 21, 2022 ~4:30 a.m., 48-year-old man crossing at South Van Ness Ave and 16th St, hit-and-run"
+    },
+    {
+      "unique_id": "20221094",
+      "date": "2022-09-07",
+      "location": "Lombard St and Steiner St",
+      "url": "https://www.nbcbayarea.com/news/local/pedestrian-fatally-struck-by-vehicle-in-san-franciscos-marina-district/2997958/",
+      "outlet": "NBC Bay Area",
+      "title": "Pedestrian Fatally Struck by Vehicle in San Francisco's Marina District",
+      "matched_on": "date and place: Thursday morning Sep 8, 2022 (one day after record date), pedestrian at Lombard and Steiner streets; age not given"
+    },
+    {
+      "unique_id": "20221300",
+      "date": "2022-10-22",
+      "location": "19th Ave at Buckingham Way",
+      "url": "https://sf.streetsblog.org/2022/10/28/two-pedestrians-killed-in-two-crashes-in-the-sunset-within-days",
+      "outlet": "Streetsblog SF",
+      "title": "Two pedestrians killed in two crashes in the Sunset within days",
+      "matched_on": "date and place: Saturday Oct 22, 2022, senior female pedestrian hit at 19th Ave and Buckingham Way, died Oct 24"
+    },
+    {
+      "unique_id": "20221297",
+      "date": "2022-10-24",
+      "location": "24th Ave at Santiago St",
+      "url": "https://sf.streetsblog.org/2022/10/28/two-pedestrians-killed-in-two-crashes-in-the-sunset-within-days",
+      "outlet": "Streetsblog SF",
+      "title": "Two pedestrians killed in two crashes in the Sunset within days",
+      "matched_on": "date and place: Monday Oct 24, 2022, pedestrian killed crossing at 24th Ave and Santiago St"
+    },
+    {
+      "unique_id": "20221537",
+      "date": "2022-12-07",
+      "location": "Cesar Chavez St and South Van Ness  Ave",
+      "url": "https://missionlocal.org/2022/12/motorcyclist-killed-in-sf-mission-collision/",
+      "outlet": "Mission Local",
+      "title": "Motorcyclist killed in SF Mission collision",
+      "matched_on": "date and place: Wed Dec 7, 2022 ~9:30 a.m., motorcycle collided with left-turning SUV at Cesar Chavez St and South Van Ness Ave; age not given"
+    },
+    {
+      "unique_id": "20221538",
+      "date": "2022-12-07",
+      "location": "Geneva Ave east of Prague St",
+      "url": "https://sfstandard.com/2022/12/09/pedestrian-fatally-struck-san-francisco-hit-and-run-identified-medical-examiner/",
+      "outlet": "SF Standard",
+      "title": "Pedestrian fatally struck in San Francisco hit-and-run identified",
+      "matched_on": "date and place: Wednesday evening Dec 7, 2022, 55-year-old man, hit-and-run at Geneva Ave and Prague St"
+    },
+    {
+      "unique_id": "20221662",
+      "date": "2022-12-28",
+      "location": "Bay St east of Stockton St",
+      "url": "https://www.ktvu.com/news/38-year-old-man-identified-in-san-francisco-fatal-hit-and-run",
+      "outlet": "KTVU",
+      "title": "38-year-old man identified in fatal San Francisco hit-and-run",
+      "matched_on": "date and place: Early Wednesday (Dec 28, 2022), 38-year-old pedestrian, hit-and-run near Bay and Stockton streets"
+    },
+    {
+      "unique_id": "20230008",
+      "date": "2023-01-01",
+      "location": "Alameda St and Potrero Ave",
+      "url": "https://sfstandard.com/transportation/hit-and-run-marks-first-san-francisco-traffic-death-2023/",
+      "outlet": "SF Standard",
+      "title": "Hit-and-Run Marks First San Francisco Traffic Death of 2023",
+      "matched_on": "date and place: New Year's Day 2023, 50-year-old woman, hit-and-run at Potrero Ave and Alameda St (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20230057",
+      "date": "2023-01-10",
+      "location": "16th St & Valencia St",
+      "url": "https://sfstandard.com/2023/01/11/pedestrian-killed-in-san-francisco-is-second-traffic-death-this-year/",
+      "outlet": "SF Standard",
+      "title": "Pedestrian Killed in San Francisco Is Second Traffic Death This Year",
+      "matched_on": "date and place: Jan 10, 2023, pedestrian hit at 16th and Valencia streets; age not given (Mission Local gives 64, record 65)"
+    },
+    {
+      "unique_id": "20230550",
+      "date": "2023-04-11",
+      "location": "Jones St between Post and and Geary Sts.",
+      "url": "https://sfstandard.com/transportation/pedestrian-killed-in-san-francisco-crash/",
+      "outlet": "SF Standard",
+      "title": "Pedestrian killed in San Francisco crash",
+      "matched_on": "date and place: Tuesday Apr 11, 2023 ~12:13 p.m., adult male pedestrian near Jones and Geary streets"
+    },
+    {
+      "unique_id": "20230755",
+      "date": "2023-05-23",
+      "location": "16th and Potrero Sts",
+      "url": "https://sfstandard.com/2023/05/23/one-dead-in-san-francisco-police-chase/",
+      "outlet": "SF Standard",
+      "title": "1 Dead in Crash After Carjacking, Police Chase in San Francisco",
+      "matched_on": "date and place: Tuesday May 23, 2023, stolen vehicle crashed at 16th St and Potrero Ave; one victim died (article does not say pedestrian or occupant)"
+    },
+    {
+      "unique_id": "20230826",
+      "date": "2023-05-24",
+      "location": "Laguna and Francisco Sts",
+      "url": "https://sf.streetsblog.org/2023/07/13/while-police-arrested-skateboarders-traffic-violence-claimed-another-life",
+      "outlet": "Streetsblog SF",
+      "title": "While police arrested skateboarders, traffic violence claimed another life",
+      "matched_on": "date and place: May 24, 2023, 84-year-old pedestrian hit at Laguna and Francisco, died Jun 5"
+    },
+    {
+      "unique_id": "20231175",
+      "date": "2023-08-14",
+      "location": "7th St and Harrison St",
+      "url": "https://sfist.com/2023/09/13/pedestrian-who-died-in-august-incident-the-sffd-blamed-on-cruise-vehicles-was-struck-by-muni-bus/",
+      "outlet": "SFist",
+      "title": "Pedestrian Who Died In August Incident That Paramedics Blamed on Cruise Vehicles Was Struck By Muni Bus",
+      "matched_on": "date and place: Aug 14, 2023, pedestrian struck by Muni bus on Harrison St at Seventh St (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20231179",
+      "date": "2023-08-15",
+      "location": "4th St and King St",
+      "url": "https://sfstandard.com/2023/08/15/juvenile-killed-couple-injured-in-car-wreck-by-san-franciscos-oracle-park/",
+      "outlet": "SF Standard",
+      "title": "Woman arrested after 4-year-old girl killed in crash near San Francisco's Oracle Park",
+      "matched_on": "date and place: Aug 15, 2023 ~5:15 p.m., 4-year-old girl in stroller struck at Fourth and King streets (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20231370",
+      "date": "2023-09-20",
+      "location": "18th St and Valencia St",
+      "url": "https://missionlocal.org/2023/09/pedestrian-struck-on-valencia-street-dies/",
+      "outlet": "Mission Local",
+      "title": "80-year-old pedestrian struck on Valencia St. dies",
+      "matched_on": "date and place: Sep 20, 2023 ~1:30 p.m., 80-year-old man in crosswalk at 18th and Valencia streets"
+    },
+    {
+      "unique_id": "20231495",
+      "date": "2023-10-19",
+      "location": "O'Farrell St and Van Ness Ave",
+      "url": "https://sfstandard.com/2023/10/19/san-francisco-van-ness-traffic-muni-bus-pedestrian-fatal/",
+      "outlet": "SF Standard",
+      "title": "Man fatally hit by San Francisco Muni bus identified",
+      "matched_on": "date and place: Oct 19, 2023 12:51 a.m., 61-year-old man struck by 49 Muni bus near Van Ness Ave and O'Farrell St (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20231735",
+      "date": "2023-12-11",
+      "location": "13th St entrance for 1745 Folsom St",
+      "url": "https://missionlocal.org/2023/12/sf-driver-kills-pedestrian-in-rainbow-grocery-lot/",
+      "outlet": "Mission Local",
+      "title": "Driver kills pedestrian in Rainbow Grocery lot",
+      "matched_on": "date and place: Dec 11, 2023 ~2:50 p.m., pedestrian killed in Rainbow Grocery lot, 1745 Folsom St; age not given"
+    },
+    {
+      "unique_id": "20240003",
+      "date": "2024-01-01",
+      "location": "Junipero Serra Blvd near Palmetto Ave",
+      "url": "https://www.ktvu.com/news/1-dead-2-injured-in-san-francisco-vehicle-rollover-accident",
+      "outlet": "KTVU",
+      "title": "1 dead, 2 injured in San Francisco vehicle rollover accident",
+      "matched_on": "date and place: Jan 1, 2024 ~8:26 p.m., rollover at Junipero Serra Blvd and Palmetto Ave; age and seat not given"
+    },
+    {
+      "unique_id": "20240197",
+      "date": "2024-02-08",
+      "location": "6th St and Bryant St",
+      "url": "https://sfstandard.com/2024/02/08/pedestrian-killed-hit-and-run/",
+      "outlet": "SF Standard",
+      "title": "SoMa hit-and-run death marks San Francisco's second traffic fatality this year",
+      "matched_on": "date and place: Feb 8, 2024 ~4:54 a.m., pedestrian hit-and-run on Sixth St between Bryant and Brannan (article read 2026-11-18; other outlets give age 31 or 32)"
+    },
+    {
+      "unique_id": "20240391",
+      "date": "2024-03-16",
+      "location": "Ulloa St and Lenox Way",
+      "url": "https://sfstandard.com/2024/03/18/crowd-mourns-family-members-killed-west-portal-crash/",
+      "outlet": "SF Standard",
+      "title": "Crowd mourns family members killed in deadly West Portal crash",
+      "matched_on": "date and place: Mar 16, 2024, SUV hit family at Muni stop at Ulloa St and Lenox Way; father, 40, died at scene"
+    },
+    {
+      "unique_id": "20240392",
+      "date": "2024-03-16",
+      "location": "Ulloa St and Lenox Way",
+      "url": "https://sfstandard.com/2024/03/18/crowd-mourns-family-members-killed-west-portal-crash/",
+      "outlet": "SF Standard",
+      "title": "Crowd mourns family members killed in deadly West Portal crash",
+      "matched_on": "date and place: Mar 16, 2024, Ulloa St and Lenox Way; 1-year-old son died at scene"
+    },
+    {
+      "unique_id": "2024039699",
+      "date": "2024-03-16",
+      "location": "Ulloa St and Lenox Way",
+      "url": "https://sfstandard.com/2024/03/18/crowd-mourns-family-members-killed-west-portal-crash/",
+      "outlet": "SF Standard",
+      "title": "Crowd mourns family members killed in deadly West Portal crash",
+      "matched_on": "date and place: Mar 16, 2024, Ulloa St and Lenox Way; mother, 38, died later in hospital"
+    },
+    {
+      "unique_id": "20240415",
+      "date": "2024-03-16",
+      "location": "Ulloa St and Lenox Way",
+      "url": "https://sfstandard.com/2024/03/18/crowd-mourns-family-members-killed-west-portal-crash/",
+      "outlet": "SF Standard",
+      "title": "Crowd mourns family members killed in deadly West Portal crash",
+      "matched_on": "date and place: Mar 16, 2024, Ulloa St and Lenox Way; article reports four members of one family killed (infant son died days later; his age is from other coverage)"
+    },
+    {
+      "unique_id": "20240806",
+      "date": "2024-05-30",
+      "location": "Fairfax Ave and Newhall St",
+      "url": "https://sfstandard.com/2024/06/14/cyclist-killed-after-crash-with-city-vehicle/",
+      "outlet": "SF Standard",
+      "title": "Cyclist killed after crash with city vehicle identified by officials",
+      "matched_on": "date and place: May 30, 2024 ~9:30 a.m., 70-year-old cyclist doored by SFPUC vehicle at Newhall St and Fairfax Ave"
+    },
+    {
+      "unique_id": "20240800",
+      "date": "2024-06-10",
+      "location": "Cortland Ave and Mission St",
+      "url": "https://missionlocal.org/2024/06/sf-man-killed-mission-street-hit-and-run/",
+      "outlet": "Mission Local",
+      "title": "Man killed in Mission Street hit-and-run",
+      "matched_on": "date and place: Early Monday (Jun 10, 2024) ~3:40 a.m., 3400 block of Mission St near Cortland Ave, hit-and-run (article read 2026-11-18; 41-year-old)"
+    },
+    {
+      "unique_id": "20241060",
+      "date": "2024-08-15",
+      "location": "Bosworth St and Diamond St",
+      "url": "https://www.nbcbayarea.com/news/local/pedestrian-dead-crash-san-francisco-glen-park/3626859/",
+      "outlet": "NBC Bay Area",
+      "title": "Pedestrian fatally struck by vehicle in San Francisco's Glen Park",
+      "matched_on": "date and place: Thursday Aug 15, 2024 ~2:50 p.m., woman hit at Bosworth and Diamond streets; age not given"
+    },
+    {
+      "unique_id": "20241194",
+      "date": "2024-09-12",
+      "location": "Lombard St and Laguna St",
+      "url": "https://sfstandard.com/2024/09/26/san-francisco-traffic-deaths-pedestrians-killed-lombard/",
+      "outlet": "SF Standard",
+      "title": "2 pedestrians killed in Lombard Street crashes within 2 weeks",
+      "matched_on": "date and place: Sep 12, 2024, 70-year-old woman hit at Laguna and Lombard, died in hospital"
+    },
+    {
+      "unique_id": "20241208",
+      "date": "2024-09-21",
+      "location": "Lombard St and Gough St",
+      "url": "https://sfstandard.com/2024/09/26/san-francisco-traffic-deaths-pedestrians-killed-lombard/",
+      "outlet": "SF Standard",
+      "title": "2 pedestrians killed in Lombard Street crashes within 2 weeks",
+      "matched_on": "date and place: Saturday (Sep 21, 2024) ~11:30 p.m., 52-year-old man, hit-and-run at Lombard and Gough"
+    },
+    {
+      "unique_id": "20241307",
+      "date": "2024-10-22",
+      "location": "Parnassus Ave and Stanyan St",
+      "url": "https://sfstandard.com/2024/10/22/man-dies-after-being-hit-by-truck-in-crosswalk/",
+      "outlet": "SF Standard",
+      "title": "Man dies after being hit by truck in crosswalk",
+      "matched_on": "date and place: Oct 22, 2024, 70-year-old man hit by right-turning dump truck at Parnassus Ave and Stanyan St (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20241320",
+      "date": "2024-10-25",
+      "location": "Geary Blvd & Broderick St",
+      "url": "https://sfstandard.com/2024/10/25/another-pedestrian-killed-after-being-hit-by-car/",
+      "outlet": "SF Standard",
+      "title": "Zeitgeist bartender killed in crash outside Geary Kaiser",
+      "matched_on": "date and place: Friday Oct 25, 2024 ~6:52 a.m., 35-year-old man on foot hit on Geary between Broderick and Divisadero (article read 2026-11-18: Geary outside the Kaiser hospital, the block between Broderick and Divisadero; the log puts it at Geary and Broderick)"
+    },
+    {
+      "unique_id": "20241453",
+      "date": "2024-11-24",
+      "location": "16th St and Rondel Pl",
+      "url": "https://missionlocal.org/2024/11/pedestrian-hit-and-killed-at-16th-street-near-valencia/",
+      "outlet": "Mission Local",
+      "title": "S.F. identifies man hit and killed on 16th St. on Sunday as Ronald Duncan",
+      "matched_on": "date and place: Sunday Nov 24, 2024 2:43 a.m., 64-year-old man at 16th St and Rondel Pl (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20241454",
+      "date": "2024-11-25",
+      "location": "Grafton Ave and Jules Ave",
+      "url": "https://sfist.com/2024/11/26/suspected-dui-driver-kills-two-injures-three-others-in-ingleside-crash",
+      "outlet": "SFist",
+      "title": "Suspected DUI Driver Kills Two, Injures Three Others in Ingleside Crash",
+      "matched_on": "date and place: Nov 25, 2024 ~1:20 a.m., two women in one car killed at Grafton and Jules avenues (article read 2026-11-18; Ingleside Light gives ages 42 and 35)"
+    },
+    {
+      "unique_id": "20241455",
+      "date": "2024-11-25",
+      "location": "Grafton Ave and Jules Ave",
+      "url": "https://sfist.com/2024/11/26/suspected-dui-driver-kills-two-injures-three-others-in-ingleside-crash",
+      "outlet": "SFist",
+      "title": "Suspected DUI Driver Kills Two, Injures Three Others in Ingleside Crash",
+      "matched_on": "date and place: Nov 25, 2024 ~1:20 a.m., two women in one car killed at Grafton and Jules avenues (article read 2026-11-18; Ingleside Light gives ages 42 and 35, record 36)"
+    },
+    {
+      "unique_id": "20251530",
+      "date": "2024-12-14",
+      "location": "Bayshore Blvd between Cortland Ave and Industrial St",
+      "url": "https://missionlocal.org/2024/12/pedestrian-killed-sf-police-driver/",
+      "outlet": "Mission Local",
+      "title": "S.F. police driver strikes, kills man with car in Bayview",
+      "matched_on": "date and place: Saturday Dec 14, 2024 ~6:19 a.m., man struck by on-duty SFPD driver at Bayshore Blvd and Industrial St; age not given"
+    },
+    {
+      "unique_id": "20241584",
+      "date": "2024-12-25",
+      "location": "Park Presidio Bypass Dr and Crossover Dr",
+      "url": "https://abc7news.com/post/person-killed-fiery-christmas-day-crash-san-francisco-golden-gate-park/15708385/",
+      "outlet": "ABC7",
+      "title": "Person killed in fiery Christmas Day crash near SF's Golden Gate Park, police say",
+      "matched_on": "date and place: Dec 25, 2024 just before 4 p.m., driver killed near Crossover and Park Presidio drives"
+    },
+    {
+      "unique_id": "20241591",
+      "date": "2024-12-27",
+      "location": "Upper Great Highway and Ulloa St",
+      "url": "https://sfstandard.com/2024/12/28/great-highway-pedestrian-fatality-vision-zero/",
+      "outlet": "SF Standard",
+      "title": "Motorist kills woman on controversial stretch of SF's Great Highway",
+      "matched_on": "date and place: Dec 27, 2024 ~5:43 a.m., woman hit at Upper Great Highway and Ulloa St (article read 2026-11-18; Chronicle gives age 68)"
+    },
+    {
+      "unique_id": "20250020",
+      "date": "2025-01-04",
+      "location": "Colby St and Silver Ave",
+      "url": "https://www.kqed.org/news/12020559/can-san-francisco-stop-traffic-violence-so-far-efforts-failing",
+      "outlet": "KQED",
+      "title": "Can San Francisco stop traffic violence? So far, efforts failing",
+      "matched_on": "date and place: Jan 4, 2025 ~5:30 p.m., 81-year-old man hit-and-run on Silver Ave; photo caption places it at Colby St and Silver Ave"
+    },
+    {
+      "unique_id": "20250621",
+      "date": "2025-05-01",
+      "location": "7th St and Howard St",
+      "url": "https://sfist.com/2025/05/02/elderly-person-and-dog-struck-and-killed-in-soma/",
+      "outlet": "SFist",
+      "title": "Elderly Person and Dog Struck and Killed by Vehicle on Howard Street In SoMa",
+      "matched_on": "date and place: Thursday May 1, 2025 ~2 p.m., elderly pedestrian struck at Howard St and Seventh St; age not given"
+    },
+    {
+      "unique_id": "20250670",
+      "date": "2025-05-12",
+      "location": "Bayshore Blvd Curve near 151 and 185 Bayshore Blvd",
+      "url": "https://sfist.com/2025/05/13/one-person-killed-in-bayview-hit-and-run",
+      "outlet": "SFist",
+      "title": "One Person Killed In Bayview Hit-and-Run, Marking Sixth Pedestrian Death of 2025",
+      "matched_on": "date and place: Monday May 12, 2025 ~6:04 a.m., hit-and-run at Bayshore Blvd and Jerrold Ave (Walk SF: 47-year-old); record places it at the Bayshore curve, 151-185 Bayshore"
+    },
+    {
+      "unique_id": "20250762",
+      "date": "2025-06-02",
+      "location": "2nd Ave and Geary Blvd",
+      "url": "https://sf.streetsblog.org/2025/06/03/carnage-from-compromise-walk-sf-speaks-out-after-another-senior-killed-on-geary",
+      "outlet": "Streetsblog SF",
+      "title": "Carnage from compromise: Walk SF speaks out after another senior killed on Geary",
+      "matched_on": "date and place: Monday Jun 2, 2025 shortly after midnight, 67-year-old pedestrian at Geary Blvd and 2nd Ave"
+    },
+    {
+      "unique_id": "20250961",
+      "date": "2025-07-18",
+      "location": "6th St and Market St",
+      "url": "https://www.kqed.org/news/12049286/77-year-old-pedestrian-dies-in-sf-after-being-struck-by-an-electric-scooter",
+      "outlet": "KQED",
+      "title": "77-Year-Old Pedestrian Dies in SF After Being Struck By an Electric Scooter",
+      "matched_on": "date and place: Jul 18, 2025 ~3:51 p.m., 77-year-old man hit by e-scooter rider near Sixth and Market (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20250975",
+      "date": "2025-07-23",
+      "location": "Mission St and Santa Rosa Ave",
+      "url": "https://sfist.com/2025/07/23/pedestrian-killed-in-mission-terrace-hit-and-run-collision",
+      "outlet": "SFist",
+      "title": "Pedestrian killed in Mission Terrace hit-and-run collision",
+      "matched_on": "date and place: Jul 23, 2025 ~12:22 a.m., man hit-and-run at Mission St and Santa Rosa Ave (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20251331",
+      "date": "2025-10-26",
+      "location": "Ocean Ave and Ashton Ave",
+      "url": "https://sfist.com/2025/10/27/older-woman-killed-in-sunday-night-hit-and-run-in-ingleside-neighborhood-suspect-in-custody",
+      "outlet": "SFist",
+      "title": "Older Woman Killed In Sunday Night Hit-and-Run In Ingleside Neighborhood, Suspect in Custody",
+      "matched_on": "date and place: Sunday Oct 26, 2025 ~6:40 p.m., older woman, 1800 block of Ocean Ave near Ashton Ave; age not given (Walk SF names her as 88, record 77)"
+    },
+    {
+      "unique_id": "20251420",
+      "date": "2025-11-16",
+      "location": "Alemany Blvd and Naglee Ave",
+      "url": "https://sf.streetsblog.org/2025/11/19/driver-kills-cyclist-at-alemany-and-naglee",
+      "outlet": "Streetsblog SF",
+      "title": "Driver Kills Cyclist at Alemany and Naglee",
+      "matched_on": "date and place: Hit-and-run driver killed a cyclist 'over the weekend' (Nov 15-16, 2025) on Alemany Blvd at Naglee Ave (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20260254",
+      "date": "2026-02-27",
+      "location": "4th St and Channel St",
+      "url": "https://sfstandard.com/2026/03/03/mission-bay-traffic-death-toddler-account/",
+      "outlet": "SF Standard",
+      "title": "'You're killing her!': Witnesses recount horrific Mission Bay crash where 2-year-old died",
+      "matched_on": "date and place: Feb 27, 2026 ~8:55 p.m., 2-year-old and adult struck crossing at 4th and Channel streets (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20260298",
+      "date": "2026-03-05",
+      "location": "Kearny St and Broadway",
+      "url": "https://sf.streetsblog.org/2026/03/06/motorist-careens-onto-north-beach-sidewalk-killing-pedestrian",
+      "outlet": "Streetsblog SF",
+      "title": "Motorist Careens onto North Beach Sidewalk, Killing Pedestrian",
+      "matched_on": "date and place: Thursday Mar 5, 2026 evening, man killed on sidewalk at Kearny and Broadway; age not given"
+    },
+    {
+      "unique_id": "20260377",
+      "date": "2026-03-24",
+      "location": "Geary St and Kearny St",
+      "url": "https://sfist.com/2026/03/24/man-killed-by-38-geary-bus-near-sfs-union-square-after-apparent-fall-into-street",
+      "outlet": "SFist",
+      "title": "Man killed by 38 Geary bus near SF's Union Square after apparent fall into street",
+      "matched_on": "date and place: Mar 24, 2026 ~6:50 a.m., man struck by westbound 38 Geary bus at Geary and Kearny (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20260390",
+      "date": "2026-03-27",
+      "location": "670 Jackson St at Grant St",
+      "url": "https://sfstandard.com/2026/03/27/sf-pedestrian-killed-elderly-driver-chinatown/",
+      "outlet": "SF Standard",
+      "title": "SF pedestrian killed by elderly driver parking — echoing deadly West Portal crash",
+      "matched_on": "date and place: Mar 27, 2026 ~7:45 a.m., parking driver hit two people on sidewalk near Grant Ave and Jackson St; 49-year-old died (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20260585",
+      "date": "2026-05-25",
+      "location": "Mission St and 16th St",
+      "url": "https://missionlocal.org/2026/05/pedestrian-struck-and-killed-near-16th-and-mission-on-monday/",
+      "outlet": "Mission Local",
+      "title": "Driver arrested after pedestrian struck and killed near 16th and Mission",
+      "matched_on": "date and place: May 25, 2026 ~12:13 a.m., pedestrian killed and three hurt near 16th and Mission streets (article read 2026-11-18)"
+    },
+    {
+      "unique_id": "20260630",
+      "date": "2026-06-03",
+      "location": "Geneva Ave between Paris St and London St",
+      "url": "https://sfstandard.com/2026/06/04/san-francisco-pedestrian-killed-soma/",
+      "outlet": "SF Standard",
+      "title": "2 deaths on city streets: 1 pedestrian killed, 1 under investigation",
+      "matched_on": "date and place: Jun 3, 2026 6:23 a.m., person found dead on Geneva Ave near Paris St, Walk SF called it a hit-and-run; mode and age not stated"
+    },
+    {
+      "unique_id": "20260631",
+      "date": "2026-06-03",
+      "location": "7th St between Brannan St and Townsend St",
+      "url": "https://sfstandard.com/2026/06/04/san-francisco-pedestrian-killed-soma/",
+      "outlet": "SF Standard",
+      "title": "2 deaths on city streets: 1 pedestrian killed, 1 under investigation",
+      "matched_on": "date and place: Jun 3, 2026 shortly after 5:30 a.m., pedestrian struck at 7th and Brannan streets; age not given"
+    },
+    {
+      "unique_id": "20260671",
+      "date": "2026-06-12",
+      "location": "18th St between Pennsylvania Ave and Minnesota St at I-280 S Off-ramp",
+      "url": "https://sfist.com/2026/06/12/one-dead-after-fiery-crash-in-which-vehicle-flew-off-i-280-overpass-in-sf/",
+      "outlet": "SFist",
+      "title": "One dead after fiery crash in which vehicle flew off I-280 overpass in SF",
+      "matched_on": "date and place: Jun 12, 2026 ~12:20 a.m., car flew off the 18th St overpass onto I-280 near Mariposa; one dead, seat not given"
+    },
+    {
+      "unique_id": "20260778",
+      "date": "2026-07-14",
+      "location": "6th St and Howard St",
+      "url": "https://missionlocal.org/2026/07/man-dies-collision-soma/",
+      "outlet": "Mission Local",
+      "title": "Man struck by car in SoMa Tuesday morning dies in hospital",
+      "matched_on": "date and place: Tuesday Jul 14, 2026 ~4:03 a.m., man about 50 struck at Sixth and Tehama, 200 block of Sixth St; police said pedestrian, fire dept said bicyclist"
+    },
+    {
+      "unique_id": "20260879",
+      "date": "2026-08-07",
+      "location": "Market St. & Powell St.",
+      "url": "https://sfstandard.com/2026/08/07/woman-scooter-killed-downtown-collision/",
+      "outlet": "SF Standard",
+      "title": "Woman on scooter killed in downtown collision",
+      "matched_on": "date and place: Aug 7, 2026 ~8:18 a.m., 32-year-old woman on scooter run over by pickup at Market and Powell"
+    }
+  ],
+  "news_only": [
+    {
+      "date": "2026-09-28",
+      "location": "Anza St and Arguello Blvd, Inner Richmond",
+      "age": 80,
+      "mode": "walking",
+      "how": "struck in a crosswalk by a tow truck turning from Arguello onto Anza (per Walk SF citing SFPD)",
+      "url": "https://missionlocal.org/2026/09/pedestrian-killed-steps-away-from-inner-richmond-playground/",
+      "outlet": "Mission Local",
+      "title": "Pedestrian killed steps away from Inner Richmond playground",
+      "lat": 37.7787,
+      "lon": -122.4589
+    },
+    {
+      "date": "2026-10-01",
+      "location": "Moscow St and France Ave, Excelsior",
+      "age": 43,
+      "mode": "walking",
+      "how": "struck in the crosswalk by a hit-and-run driver, later arrested on suspicion of DUI; died Oct 19",
+      "url": "https://sfist.com/2026/10/27/29-year-old-with-multiple-duis-charged-with-murder-after-excelsior-pedestrian-death/",
+      "outlet": "SFist",
+      "title": "29-Year-Old With Multiple DUIs Charged With Murder After Excelsior Pedestrian Death",
+      "lat": 37.7157,
+      "lon": -122.4323
+    },
+    {
+      "date": "2026-10-22",
+      "location": "I-280 center median near Geneva Ave (freeway)",
+      "age": null,
+      "mode": "walking",
+      "how": "man walking on the freeway struck; driver abandoned a Prius and fled on foot (CHP felony hit-and-run)",
+      "url": "https://sfstandard.com/2026/10/22/san-francisco-i280-hit-and-run/",
+      "outlet": "SF Standard",
+      "title": "Driver ditches car after killing pedestrian on SF freeway: police",
+      "lat": null,
+      "lon": null
+    },
+    {
+      "date": "2026-10-25",
+      "location": "Ellis St between Polk St and Van Ness Ave, Tenderloin",
+      "age": null,
+      "mode": "walking",
+      "how": "man struck by a hit-and-run driver about 1:06 a.m.; woman arrested on Treasure Island on suspicion of homicide",
+      "url": "https://missionlocal.org/2026/10/tenderloin-fatal-hit-and-run-arrest/",
+      "outlet": "Mission Local",
+      "title": "S.F. police arrest woman for fatal Tenderloin hit-and-run",
+      "lat": null,
+      "lon": null
+    }
+  ],
+  "published_totals": [
+    {
+      "year": 2022,
+      "deaths": 39,
+      "url": "https://www.visionzerosf.org/wp-content/uploads/2025/08/Vision-Zero-2024-End-of-Year-Traffic-Fatality-Report.pdf",
+      "quote": "the number of traffic-related fatalities then rose steadily between 2018 to 2020, with steep increases observed in 2022 (n=39) and in 2024 (n=43)."
+    },
+    {
+      "year": 2023,
+      "deaths": 26,
+      "url": "https://www.visionzerosf.org/wp-content/uploads/2025/08/Vision-Zero-2024-End-of-Year-Traffic-Fatality-Report.pdf",
+      "quote": "These 43 deaths represent a 65% increase compared to 2023 and is the highest number of fatalities recorded since 2005. [Figure 1 label for 2023: N= 26]"
+    },
+    {
+      "year": 2024,
+      "deaths": 43,
+      "url": "https://www.visionzerosf.org/wp-content/uploads/2025/08/Vision-Zero-2024-End-of-Year-Traffic-Fatality-Report.pdf",
+      "quote": "San Francisco recorded 43 traffic-related deaths in 2024 as part of the Vision Zero SF Initiative."
+    },
+    {
+      "year": 2025,
+      "deaths": 25,
+      "url": "https://www.sfmta.com/press-releases/press-release-san-francisco-traffic-fatalities-drop-nearly-half-2025",
+      "quote": "The city saw 25 traffic deaths in 2025, down from 43 in 2024, resulting in a 42 percent decrease"
+    }
+  ],
+  "unmatched_ids_searched": [
+    "20220105",
+    "20220605",
+    "20220604",
+    "20220644",
+    "20220795",
+    "20220995",
+    "20221109",
+    "20221089",
+    "20221093",
+    "20221535",
+    "20221581",
+    "20221668",
+    "20230135",
+    "20230753",
+    "20230975",
+    "20231130",
+    "20231318",
+    "20231540",
+    "20231818",
+    "20240157",
+    "20240275",
+    "20240346",
+    "20240831",
+    "20240869",
+    "20240903",
+    "20240933",
+    "20241038",
+    "20241266",
+    "20241498",
+    "20241592",
+    "20250593",
+    "20251043",
+    "20251480",
+    "20260231",
+    "20260299",
+    "20260620",
+    "20260672",
+    "20260786",
+    "20260882",
+    "20251262",
+    "20250088",
+    "20260169",
+    "20260202",
+    "20250736",
+    "20220999",
+    "20251550"
+  ],
+  "not_searched_ids": [
+    "20220129",
+    "20220286",
+    "20220287",
+    "20220356",
+    "20220443",
+    "20220545",
+    "20220722",
+    "20220736",
+    "20220968",
+    "20220982",
+    "20221193",
+    "20221318",
+    "20221031",
+    "20221632",
+    "20230131",
+    "20230246",
+    "20230816",
+    "20230911",
+    "20231203",
+    "20231384",
+    "20231412",
+    "20231716",
+    "20240196",
+    "20240304",
+    "20240461",
+    "20240644",
+    "20240932",
+    "20241132",
+    "20241252",
+    "20241287",
+    "20241449",
+    "20241477",
+    "20250275",
+    "20250201",
+    "20250394",
+    "20250672",
+    "20250986",
+    "20251053",
+    "20251212"
+  ],
+  "conflicts": [
+    {
+      "unique_id": "20251262",
+      "url": "https://missionlocal.org/2025/10/sf-bernal-heights-hit-and-run/",
+      "outlet": "Mission Local",
+      "conflict": "Date and place agree (Oct 4, 2025, Cortland Ave and Anderson St, hit-and-run) but the article gives the victim's age as 30; record says 27."
+    },
+    {
+      "unique_id": "20250088",
+      "url": "https://ktvu.com/news/fatal-7-vehicle-crash-reported-san-francisco",
+      "outlet": "KTVU",
+      "conflict": "Jan 19, 2025 seven-car crash on 6th St between Bryant and Harrison matches date and place, but search snippets say the person killed was a passenger in another car; record says Driver. Article not opened."
+    },
+    {
+      "unique_id": "20260169",
+      "url": "https://walksf.org/news/for-reporters/press-releases/media-advisory-4th-channel-pedestrian-death-2026/",
+      "outlet": "Walk SF (not a news outlet)",
+      "conflict": "Feb 3, 2026 at Bayshore and Silver matches; Walk SF and a Chronicle column give age 76, record 77. No news article found."
+    },
+    {
+      "unique_id": "20260202",
+      "url": "https://walksf.org/news/for-reporters/press-releases/media-advisory-4th-channel-pedestrian-death-2026/",
+      "outlet": "Walk SF (not a news outlet)",
+      "conflict": "Feb 14, 2026 at Bayshore and Arleta matches; Walk SF and a Chronicle column give age 47, record 46. No news article found."
+    },
+    {
+      "unique_id": "20250736",
+      "url": "https://abc7news.com/post/pedestrian-injured-collision-costco-sfs-soma-neighborhood-police-say/16564583/",
+      "outlet": "ABC7",
+      "conflict": "May 27, 2025 SoMa pedestrian death; ABC7 and KRON place it at 10th and Harrison, record and Walk SF at 10th and Folsom."
+    },
+    {
+      "unique_id": "20220999",
+      "url": "https://abc7news.com/person-killed-light-rail-train-sf-muni-pedestrian-arleta-station-fatal-accident/11857662/",
+      "outlet": "ABC7",
+      "conflict": "May 15, 2022 pedestrian killed by T-Third train; news places it at Arleta station (Bayshore and Arleta), record and Walk SF at Bayshore and Blanken, about two blocks apart."
+    },
+    {
+      "unique_id": "20251550",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-outer-mission-deadly-hit-and-run/",
+      "outlet": "CBS News Bay Area (not on accepted list)",
+      "conflict": "Wed Dec 17, 2025 hit-and-run, 5500 block of Mission St near Foote and Naglee, matches date and place; outlet not on the accepted list, so left unmatched."
+    }
+  ],
+  "dropped_unverified": [
+    {
+      "unique_id": "20231011",
+      "date": "2023-07-08",
+      "location": "Market St, 100 feet east of 4th and Stockton Sts",
+      "url": "https://www.sfchronicle.com/sf/article/scooter-pedestrian-crash-dutch-tourist-18206595.php",
+      "outlet": "SF Chronicle",
+      "title": "Dutch tourist hit by scooter rider in downtown S.F. dies from injuries",
+      "matched_on": "date and place: Jul 8, 2023, 55-year-old Dutch visitor hit by scooter rider on Market St near Fourth St (search snippet)",
+      "reason": "Chronicle page redirects to a paywall gateway; article text not read"
+    },
+    {
+      "unique_id": "20240727",
+      "date": "2024-05-23",
+      "location": "Ellis St and Jones St",
+      "url": "https://www.kron4.com/news/bay-area/pedestrian-fatally-struck-by-commercial-truck-in-sfs-tenderloin/",
+      "outlet": "KRON",
+      "title": "Pedestrian fatally struck by commercial truck in SF's Tenderloin",
+      "matched_on": "date and place: Thursday (May 23, 2024) ~12:40 p.m., pedestrian hit by commercial truck at Ellis and Jones streets (search snippet); age not given",
+      "reason": "KRON page returned HTTP 403; article text not read"
+    },
+    {
+      "unique_id": "20241246",
+      "date": "2024-10-02",
+      "location": "25th Ave and Geary Blvd",
+      "url": "https://www.sfchronicle.com/sf/article/pedestrian-hit-driver-s-f-richmond-district-dies-19824953.php",
+      "outlet": "SF Chronicle",
+      "title": "Pedestrian hit by driver in S.F. Richmond District dies two days later",
+      "matched_on": "date and place: Oct 2, 2024 ~12:59 a.m., 94-year-old man hit at 25th Ave and Geary (search snippet; ABC7 confirms Geary Blvd and 25th Ave, age 94)",
+      "reason": "Chronicle page redirects to a paywall gateway; article text not read"
+    },
+    {
+      "unique_id": "20250132",
+      "date": "2025-01-21",
+      "location": "Carter St and Geneva Ave",
+      "url": "https://www.sfchronicle.com/sf/article/pedestrian-dies-week-struck-driver-s-f-20069705.php",
+      "outlet": "SF Chronicle",
+      "title": "Pedestrian dies a week after being struck by driver in S.F.'s Sunnydale neighborhood",
+      "matched_on": "date and place: Struck Jan 21, 2025 near Carter St and Geneva Ave, died a week later (search snippet)",
+      "reason": "Chronicle page redirects to a paywall gateway; article text not read"
+    },
+    {
+      "unique_id": "20250460",
+      "date": "2025-03-14",
+      "location": "Geary Blvd and 39th Ave",
+      "url": "https://www.sfchronicle.com/bayarea/article/sf-pedestrian-fatality-20247544.php",
+      "outlet": "SF Chronicle",
+      "title": "77-year-old woman killed in S.F.'s third pedestrian death of 2025",
+      "matched_on": "date and place: 77-year-old woman hit Mar 14, 2025 at Geary Blvd and 39th Ave, died Mar 27 (search snippet; Streetsblog confirms)",
+      "reason": "Chronicle page redirects to a paywall gateway; article text not read"
+    },
+    {
+      "unique_id": "20251061",
+      "date": "2025-08-10",
+      "location": "6th St and Howard St",
+      "url": "https://www.sfchronicle.com/crime/article/driver-fatally-hits-pedestrian-s-f-advocacy-20812946.php",
+      "outlet": "SF Chronicle",
+      "title": "Driver fatally hits pedestrian in S.F., advocacy group says",
+      "matched_on": "date and place: Sunday Aug 10, 2025, 78-year-old crossing at Sixth and Howard streets (search snippet)",
+      "reason": "Chronicle page redirects to a paywall gateway; article text not read"
+    }
+  ]
+}

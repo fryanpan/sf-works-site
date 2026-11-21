@@ -1,0 +1,10 @@
+# Hourly freshness check on the 511 realtime archive: each feed's newest object in the bucket is recent.
+[Unit]
+Description=511 realtime archive: freshness check
+
+[Service]
+EnvironmentFile=-%h/.config/sf-works/env
+Type=oneshot
+ExecStart=%h/.venvs/rt-archive/bin/python %h/rt-archive/bin/check.py --freshness
+Nice=10
+TimeoutStartSec=10min

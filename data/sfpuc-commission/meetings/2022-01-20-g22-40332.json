@@ -1,0 +1,60 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2022-01-20",
+ "id": "g22-40332",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=40332",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "4",
+   "title": "Wastewater Enterprise"
+  },
+  {
+   "no": "4a",
+   "title": "FY 2022-23 and FY 2023-24 Operating Budget"
+  },
+  {
+   "no": "4b",
+   "title": "FY 2022-23 through FY 2031-32 Capital Plan, including the FY 2022-23 Capital Budget"
+  },
+  {
+   "no": "3",
+   "title": "Summary of Budget Hearing Questions"
+  },
+  {
+   "no": "5",
+   "title": "Hetch Hetchy Power Enterprise, including CleanPowerSF"
+  },
+  {
+   "no": "5a",
+   "title": "FY 2022-23 and FY 2023-24 Operating Budget"
+  },
+  {
+   "no": "5b",
+   "title": "FY 2022-23 through FY 2031-32 Capital Plan, including the FY 2022-23 Capital Budget"
+  },
+  {
+   "no": "6",
+   "title": "Motion to continue meeting to a Special Meeting noticed for Thursday, January 27, 2022"
+  },
+  {
+   "no": "7",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

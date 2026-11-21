@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sf-works/doc-metadata",
+  "title": "SF Works page metadata",
+  "description": "YAML front matter for a page. Read by the claude-workspaces editor and by the sf-works site build (one schema for both).",
+  "type": "object",
+  "required": ["title"],
+  "properties": {
+    "title": { "type": "string", "description": "Page title." },
+    "summary": { "type": "string", "description": "One or two sentences, used in the recent-changes list and link previews." },
+    "status": { "type": "string", "enum": ["draft", "teaser", "published"], "default": "draft", "description": "teaser: public as a stub that says what's coming and invites requests." },
+    "updated": { "type": "string", "format": "date", "readOnly": true, "x-workspaces-default": "git-last-modified", "description": "Last change. Filled from git when blank; never written by the editor." },
+    "published": { "type": "string", "format": "date", "description": "First public date." },
+    "series": { "type": "string", "description": "e.g. SFMTA Whitepaper." },
+    "order": { "type": "number", "description": "Position within the series." },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "authors": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

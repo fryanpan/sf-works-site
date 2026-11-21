@@ -1,0 +1,87 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2020-01-16",
+ "id": "g91-34942",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=34942",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "2",
+   "title": "PRESIDENT’S REPORT"
+  },
+  {
+   "no": "3",
+   "title": "GENERAL MANAGER’S REPORT"
+  },
+  {
+   "no": "4",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "5",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "5a",
+   "title": "MINUTES"
+  },
+  {
+   "no": "6",
+   "title": "ELECTION OF OFFICERS"
+  },
+  {
+   "no": "7",
+   "title": "SAN FRANCISCO ZOO"
+  },
+  {
+   "no": "8",
+   "title": "BUDGET FY20-FY21 AND FY21-FY22"
+  },
+  {
+   "no": "9",
+   "title": "CAPITAL PLAN FY21-FY22"
+  },
+  {
+   "no": "10",
+   "title": "GOLDEN GATE PARK MIDDLE LAKE REHABILITATION PROJECT"
+  },
+  {
+   "no": "11",
+   "title": "WASHINGTON SQUARE WATER CONSERVATION PROJECT –CONTRACT VALUE INCREASE"
+  },
+  {
+   "no": "12",
+   "title": "ADAM ROGERS PARK –ACQUISITION OF REAL PROPERTY"
+  },
+  {
+   "no": "13",
+   "title": "GENERAL PUBLIC COMMENT"
+  },
+  {
+   "no": "14",
+   "title": "COMMISSIONERS’ MATTERS"
+  },
+  {
+   "no": "15",
+   "title": "NEW BUSINESS/AGENDA SETTING"
+  },
+  {
+   "no": "16",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "17",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

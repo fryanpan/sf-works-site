@@ -1,0 +1,547 @@
+{
+ "attendance_area_schools": 58,
+ "children_5_9": 30486,
+ "citywide_school_trip": {
+  "1_to_2": 0.21,
+  "mean_miles": 2.94,
+  "over_2": 0.713,
+  "under_1": 0.078
+ },
+ "citywide_schools": [
+  "Buena Vista/ Horace Mann K-8",
+  "Carmichael (Bessie)/FEC",
+  "Chinese Immersion School at DeAvila",
+  "Huerta (Dolores) Elementary",
+  "Lawton Alternative",
+  "Lilienthal (Claire) Elementary",
+  "Marshall Elementary",
+  "Revere (Paul) Elementary",
+  "Rooftop Elementary",
+  "San Francisco Community Alternative",
+  "San Francisco Public Montessori",
+  "Yu (Alice Fong) Elementary"
+ ],
+ "citywide_share_by_school_count": 0.171,
+ "neighborhood_only": {
+  "1_to_2": 0.056,
+  "mean_miles": 0.455,
+  "over_2": 0.006,
+  "under_1": 0.938
+ },
+ "note": "Straight-line miles, census block centroid to school point, children 5-9 (Census 2020) weighted by block. Bands: under 1 mile, 1 to 2 miles, over 2 miles. Method in the script's docstring.",
+ "option_a_small_zones": {
+  "zones_of_2_to_3": {
+   "schools_per_zone": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "with_citywide": {
+    "0.0": {
+     "1_to_2": 0.211,
+     "mean_miles": 0.729,
+     "over_2": 0.017,
+     "under_1": 0.773
+    },
+    "0.15": {
+     "1_to_2": 0.211,
+     "mean_miles": 1.06,
+     "over_2": 0.121,
+     "under_1": 0.668
+    },
+    "0.3": {
+     "1_to_2": 0.21,
+     "mean_miles": 1.392,
+     "over_2": 0.225,
+     "under_1": 0.564
+    }
+   },
+   "zone_only": {
+    "1_to_2": 0.211,
+    "mean_miles": 0.729,
+    "over_2": 0.017,
+    "under_1": 0.773
+   },
+   "zones": 22,
+   "zones_list": [
+    [
+     "Alamo Elementary",
+     "Argonne Elementary",
+     "Lafayette Elementary"
+    ],
+    [
+     "Alvarado Elementary",
+     "Milk (Harvey) Civil Rights Elementary"
+    ],
+    [
+     "Bryant Elementary",
+     "King (Thomas Starr) Elementary",
+     "Webster (Daniel) Elementary"
+    ],
+    [
+     "Carver (George Washington) Elementary",
+     "Drew (Charles) College Preparatory Academy",
+     "Malcolm X Academy"
+    ],
+    [
+     "Chavez (Cesar) Elementary",
+     "Flynn (Leonard R.) Elementary",
+     "Moscone (George R.) Elementary"
+    ],
+    [
+     "Chin (John Yehall) Elementary",
+     "Garfield Elementary"
+    ],
+    [
+     "Clarendon Alternative Elementary",
+     "Jefferson Elementary",
+     "West Portal Elementary"
+    ],
+    [
+     "Cleveland Elementary",
+     "Glen Park Elementary",
+     "Monroe Elementary"
+    ],
+    [
+     "Cobb (William L.) Elementary",
+     "Parks (Rosa) Elementary",
+     "Tenderloin Community"
+    ],
+    [
+     "El Dorado Elementary",
+     "Harte (Bret) Elementary",
+     "Visitacion Valley Elementary"
+    ],
+    [
+     "Feinstein (Dianne) Elementary",
+     "Lakeshore Alternative Elementary",
+     "Sloat (Commodore) Elementary"
+    ],
+    [
+     "Grattan Elementary",
+     "New Traditions Elementary"
+    ],
+    [
+     "Guadalupe Elementary",
+     "Longfellow Elementary"
+    ],
+    [
+     "Hillcrest Elementary",
+     "Serra (Junipero) Elementary",
+     "Taylor (Edward R.) Elementary"
+    ],
+    [
+     "Key (Francis Scott) Elementary",
+     "Stevenson (Robert Louis) Elementary",
+     "Sunset Elementary"
+    ],
+    [
+     "Lau (Gordon J.) Elementary",
+     "Parker (Jean) Elementary",
+     "Yick Wo Elementary"
+    ],
+    [
+     "McCoppin (Frank) Elementary",
+     "Peabody (George) Elementary",
+     "Sutro Elementary"
+    ],
+    [
+     "McKinley Elementary",
+     "Muir (John) Elementary",
+     "Sanchez Elementary"
+    ],
+    [
+     "Miraloma Elementary",
+     "Sunnyside Elementary"
+    ],
+    [
+     "Ortega (Jose) Elementary",
+     "Sheridan Elementary"
+    ],
+    [
+     "Redding Elementary",
+     "Sherman Elementary",
+     "Spring Valley Elementary"
+    ],
+    [
+     "Ulloa Elementary"
+    ]
+   ]
+  },
+  "zones_of_3_to_5": {
+   "schools_per_zone": [
+    1,
+    2,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ],
+   "with_citywide": {
+    "0.0": {
+     "1_to_2": 0.327,
+     "mean_miles": 0.865,
+     "over_2": 0.022,
+     "under_1": 0.651
+    },
+    "0.15": {
+     "1_to_2": 0.309,
+     "mean_miles": 1.176,
+     "over_2": 0.126,
+     "under_1": 0.565
+    },
+    "0.3": {
+     "1_to_2": 0.292,
+     "mean_miles": 1.487,
+     "over_2": 0.229,
+     "under_1": 0.479
+    }
+   },
+   "zone_only": {
+    "1_to_2": 0.327,
+    "mean_miles": 0.865,
+    "over_2": 0.022,
+    "under_1": 0.651
+   },
+   "zones": 15,
+   "zones_list": [
+    [
+     "Alamo Elementary",
+     "Argonne Elementary",
+     "McCoppin (Frank) Elementary",
+     "Peabody (George) Elementary",
+     "Sutro Elementary"
+    ],
+    [
+     "Alvarado Elementary",
+     "McKinley Elementary",
+     "Milk (Harvey) Civil Rights Elementary",
+     "Muir (John) Elementary",
+     "Sanchez Elementary"
+    ],
+    [
+     "Bryant Elementary",
+     "Chavez (Cesar) Elementary",
+     "Flynn (Leonard R.) Elementary",
+     "King (Thomas Starr) Elementary",
+     "Moscone (George R.) Elementary"
+    ],
+    [
+     "Carver (George Washington) Elementary",
+     "Drew (Charles) College Preparatory Academy",
+     "Harte (Bret) Elementary",
+     "Malcolm X Academy"
+    ],
+    [
+     "Chin (John Yehall) Elementary",
+     "Garfield Elementary",
+     "Lau (Gordon J.) Elementary",
+     "Parker (Jean) Elementary",
+     "Yick Wo Elementary"
+    ],
+    [
+     "Clarendon Alternative Elementary",
+     "Miraloma Elementary",
+     "Sunnyside Elementary",
+     "West Portal Elementary"
+    ],
+    [
+     "Cleveland Elementary",
+     "Glen Park Elementary",
+     "Monroe Elementary"
+    ],
+    [
+     "Cobb (William L.) Elementary",
+     "Grattan Elementary",
+     "New Traditions Elementary"
+    ],
+    [
+     "El Dorado Elementary",
+     "Hillcrest Elementary",
+     "Serra (Junipero) Elementary",
+     "Taylor (Edward R.) Elementary",
+     "Visitacion Valley Elementary"
+    ],
+    [
+     "Feinstein (Dianne) Elementary",
+     "Lakeshore Alternative Elementary",
+     "Sloat (Commodore) Elementary"
+    ],
+    [
+     "Guadalupe Elementary",
+     "Longfellow Elementary",
+     "Ortega (Jose) Elementary",
+     "Sheridan Elementary"
+    ],
+    [
+     "Jefferson Elementary",
+     "Lafayette Elementary"
+    ],
+    [
+     "Key (Francis Scott) Elementary",
+     "Stevenson (Robert Louis) Elementary",
+     "Sunset Elementary",
+     "Ulloa Elementary"
+    ],
+    [
+     "Parks (Rosa) Elementary",
+     "Redding Elementary",
+     "Sherman Elementary",
+     "Spring Valley Elementary",
+     "Tenderloin Community"
+    ],
+    [
+     "Webster (Daniel) Elementary"
+    ]
+   ]
+  }
+ },
+ "option_b_neighborhood_plus_open_seats": {
+  "0.4": {
+   "1_to_2": 0.192,
+   "over_2": 0.239,
+   "under_1": 0.568
+  },
+  "0.6": {
+   "1_to_2": 0.147,
+   "over_2": 0.162,
+   "under_1": 0.691
+  },
+  "0.8": {
+   "1_to_2": 0.101,
+   "over_2": 0.084,
+   "under_1": 0.814
+  }
+ },
+ "option_c_neighborhood_plus_citywide": {
+  "0.0": {
+   "1_to_2": 0.056,
+   "mean_miles": 0.455,
+   "over_2": 0.006,
+   "under_1": 0.938
+  },
+  "0.15": {
+   "1_to_2": 0.079,
+   "mean_miles": 0.828,
+   "over_2": 0.112,
+   "under_1": 0.809
+  },
+  "0.3": {
+   "1_to_2": 0.102,
+   "mean_miles": 1.2,
+   "over_2": 0.218,
+   "under_1": 0.68
+  }
+ },
+ "phase_in": {
+  "first_year": "2028-29",
+  "option_a_zones_of_2_to_3_c0.15": [
+   {
+    "bands": {
+     "1_to_2": 0.214,
+     "over_2": 0.247,
+     "under_1": 0.538
+    },
+    "share_tk5_new": 0.2,
+    "year": "2028-29"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.213,
+     "over_2": 0.222,
+     "under_1": 0.564
+    },
+    "share_tk5_new": 0.358,
+    "year": "2029-30"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.213,
+     "over_2": 0.197,
+     "under_1": 0.59
+    },
+    "share_tk5_new": 0.519,
+    "year": "2030-31"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.212,
+     "over_2": 0.172,
+     "under_1": 0.617
+    },
+    "share_tk5_new": 0.68,
+    "year": "2031-32"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.211,
+     "over_2": 0.146,
+     "under_1": 0.643
+    },
+    "share_tk5_new": 0.84,
+    "year": "2032-33"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.211,
+     "over_2": 0.121,
+     "under_1": 0.669
+    },
+    "share_tk5_new": 1.0,
+    "year": "2033-34"
+   }
+  ],
+  "option_b_p0.6": [
+   {
+    "bands": {
+     "1_to_2": 0.201,
+     "over_2": 0.255,
+     "under_1": 0.543
+    },
+    "share_tk5_new": 0.2,
+    "year": "2028-29"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.191,
+     "over_2": 0.236,
+     "under_1": 0.572
+    },
+    "share_tk5_new": 0.358,
+    "year": "2029-30"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.18,
+     "over_2": 0.218,
+     "under_1": 0.602
+    },
+    "share_tk5_new": 0.519,
+    "year": "2030-31"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.169,
+     "over_2": 0.199,
+     "under_1": 0.632
+    },
+    "share_tk5_new": 0.68,
+    "year": "2031-32"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.158,
+     "over_2": 0.18,
+     "under_1": 0.661
+    },
+    "share_tk5_new": 0.84,
+    "year": "2032-33"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.147,
+     "over_2": 0.162,
+     "under_1": 0.691
+    },
+    "share_tk5_new": 1.0,
+    "year": "2033-34"
+   }
+  ],
+  "option_c_c0.15": [
+   {
+    "bands": {
+     "1_to_2": 0.188,
+     "over_2": 0.245,
+     "under_1": 0.566
+    },
+    "share_tk5_new": 0.2,
+    "year": "2028-29"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.166,
+     "over_2": 0.219,
+     "under_1": 0.614
+    },
+    "share_tk5_new": 0.358,
+    "year": "2029-30"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.144,
+     "over_2": 0.192,
+     "under_1": 0.663
+    },
+    "share_tk5_new": 0.519,
+    "year": "2030-31"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.123,
+     "over_2": 0.165,
+     "under_1": 0.712
+    },
+    "share_tk5_new": 0.68,
+    "year": "2031-32"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.101,
+     "over_2": 0.139,
+     "under_1": 0.76
+    },
+    "share_tk5_new": 0.84,
+    "year": "2032-33"
+   },
+   {
+    "bands": {
+     "1_to_2": 0.079,
+     "over_2": 0.112,
+     "under_1": 0.809
+    },
+    "share_tk5_new": 1.0,
+    "year": "2033-34"
+   }
+  ]
+ },
+ "sfusd_elementary_schools": 72,
+ "today_assigned_to_attendance_area_school": 0.3,
+ "today_elsewhere_solved": {
+  "1_to_2": 0.283,
+  "over_2": 0.394,
+  "under_1": 0.321
+ },
+ "today_sfcta": {
+  "1_to_2": 0.215,
+  "over_2": 0.278,
+  "under_1": 0.506
+ }
+}

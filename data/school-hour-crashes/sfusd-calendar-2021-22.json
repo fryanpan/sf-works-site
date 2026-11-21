@@ -1,0 +1,16 @@
+{
+ "note": "SFUSD's 2021-22 instructional calendar, TK-12 school sites, in the same form as sfusd-calendar.json (which starts at 2022-23), typed by hand from the district's published calendar on 2026-11-18 for tools/street-safety/hin-injury-kinds.py's school-trip rule. 'closed' lists weekday dates with no instruction between the first and last instructional day. Ranges are inclusive.",
+ "years": [
+  {
+   "year": "2021-22",
+   "first": "2021-08-16",
+   "last": "2022-06-01",
+   "source": "https://www.sfusd.edu/sites/default/files/2021-07/2021-2022%20ACADEMIC%20CALENDAR.1.pdf",
+   "source_changes": "https://sfusd.edu/announcements/2021-08-19-revised-academic-calendar-school-sites-closed-jan-31-2022",
+   "read": "2026-11-18",
+   "closed": [["2021-09-06"], ["2021-10-11"], ["2021-11-11"], ["2021-11-22", "2021-11-26"], ["2021-12-20", "2021-12-31"], ["2022-01-17"], ["2022-01-31"], ["2022-02-01"], ["2022-02-21"], ["2022-03-28", "2022-04-01"], ["2022-05-30"]],
+   "days_expected": null,
+   "caveat": "The printed calendar has no day count. January 31, 2022 was added as a closed day by the district's announcement of 2021-08-19. César Chávez Day (observed) 4/1/2022 falls inside spring break."
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-04-14",
+ "id": "g22-35593",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35593",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of March 10, 2020"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5c",
+   "title": "Annual Electric Reliability Compliance Program Report"
+  },
+  {
+   "no": "5d",
+   "title": "Annual Comprehensive Financial ReportAnnual Popular Financial Report"
+  },
+  {
+   "no": "5e",
+   "title": "Annual Report on NEM/ShaRE"
+  },
+  {
+   "no": "5f",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Update on SFPUC Operations During COVID-19 Emergency"
+  },
+  {
+   "no": "7",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "8a",
+   "title": "Accept work performed by K.W. Emerson, Inc. for the Lower Cherry Aqueduct Rehabilitation; $2,834,145"
+  },
+  {
+   "no": "8b",
+   "title": "Accept work performed by Sierra Mountain Construction, Inc. for the Early Intake Switchyard Slope Hazard Mitigation Project; $1,041,960"
+  },
+  {
+   "no": "8c",
+   "title": "Approve an increase of 429 calendar days to the Fish Passage Facilities and authorize the GM to approve future modifications to the contract"
+  },
+  {
+   "no": "8d",
+   "title": "Approve an increase of 215 calendar days for Sunol Long Term Improvements Sunol Yard and authorize the GM to approve future modifications"
+  },
+  {
+   "no": "8e",
+   "title": "Approve an increase of 306 calendar days to Sunol Valley Water Treatment Plant SCADA Server Room and authorize the GM to approve future modifications"
+  },
+  {
+   "no": "8f",
+   "title": "Accept work performed by Sukut Construction, LLC for the Turner Dam Spillway and Pond F3 East Erosion Repair Project"
+  },
+  {
+   "no": "8g",
+   "title": "Approve an increase of 625 calendar days for the Oceanside Water Pollution Control Plant and Westside Pump Station HVAC Upgrades and authorize the GM to approve future modifications"
+  },
+  {
+   "no": "8h",
+   "title": "Accept work performed by Shaw Pipeline, Inc. for Various Locations Sewer Replacement No. 2 for a total contract amount of $7,218,710"
+  },
+  {
+   "no": "8i",
+   "title": "Approve an increase of 145 calendar days to Griffith Pump Station Improvements and authorize the GM to approve future modifications"
+  },
+  {
+   "no": "9",
+   "title": "Approve Amendment No. 2 to Interpretive and Archaeological Services to assist with archaeological monitoring of construction activities at the Alameda Creek Watershed Center site"
+  },
+  {
+   "no": "10",
+   "title": "Approve the plans and specifications for Lincoln Way/48th Ave Diversion Structure Modification, in the amount of $967,980"
+  },
+  {
+   "no": "11",
+   "title": "Public hearing and possible action to Approve the March 2020 Proposed Revised Water System Improvement Program (WSIP)"
+  },
+  {
+   "no": "12",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

@@ -1,0 +1,59 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2024-03-26",
+ "id": "g24-45737",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45737",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Executive Director’s Report"
+  },
+  {
+   "no": "4",
+   "title": "Approve the Minutes of the March 12, 2024 Meeting"
+  },
+  {
+   "no": "5b",
+   "title": "Adopt a Support Position on Senate Bill 915"
+  },
+  {
+   "no": "6c",
+   "title": "Adopt the 2023 Prop L 5-Year Prioritization Program for Transportation Demand Management"
+  },
+  {
+   "no": "7d",
+   "title": "Allocate $1,440,000 and Appropriate $108,000 in Prop L Funds, with Conditions, for Four Requests"
+  },
+  {
+   "no": "8",
+   "title": "Vision Zero Overview and Quick-Build Program Update"
+  },
+  {
+   "no": "9",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "10",
+   "title": "Public Comment"
+  },
+  {
+   "no": "11",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

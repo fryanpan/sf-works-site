@@ -1,0 +1,102 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-09-01",
+ "id": "g55-36497",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36497",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22570"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes -August 18, 2020Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Making environmental review findings and approving the following traffic modifications",
+   "text": "Making environmental review findings and approving the following traffic modifications: A. ESTABLISH – TOW-AWAY, NO STOPPING ANYTIME, ESTABLISH – SIDEWALK WIDENING, Fulton Street, south side, from 18 feet west of 6th Avenue to 125 feet east of 6th Avenue. B. ESTABLISH – RED ZONES, Fulton Street, south side from 10 to 54 feet west of Willard Street North east crosswalk. C. ESTABLISH – RED ZONES, Fulton Street, north side, from 7 to 37 feet east of 46th Avenue. D. ESTABLISH – NO PARKING, Fulton Street, south side, between the east crosswalk and west crosswalk at La Playa. E. ESTABLISH – CAR SHARE, Fulton Street, north side, from 20 feet to 37 feet east of 37th Avenue (Explanatory documents include a staff report, environmental review documents and resolution.) RESOLUTION 200901-074",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 200901-074)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving Amendment No. 3 to Agreement No. SFMTA – 2011/12-25, As-Needed Specialized Engineering Services for SFMTA Rail Vehicle Projects, with Raul V. Bravo + Associates, to extend the term of the Agreement for six months, to March 5, 2021, with no increase to the amount.",
+   "text": "Approving Amendment No. 3 to Agreement No. SFMTA – 2011/12-25, As-Needed Specialized Engineering Services for SFMTA Rail Vehicle Projects, with Raul V. Bravo + Associates, to extend the term of the Agreement for six months, to March 5, 2021, with no increase to the amount. (Explanatory documents include a staff report, amendment and resolution.) RESOLUTION 200901-075",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 5 ayes (Resolution 200901-075)"
+  },
+  {
+   "no": "10a",
+   "title": "ESTABLISH –TOW-AWAY, NO STOPPING ANYTIME",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10b",
+   "title": "ESTABLISH –RED ZONES",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10c",
+   "title": "ESTABLISH –NO PARKING",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10d",
+   "title": "ESTABLISH –CAR SHARE, Fulton Street, north side, from 20 feet to 37 feet east of 37th Avenue",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Fiscal Year 2019 State of Good Repair Report"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding transit service and rail system repair"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

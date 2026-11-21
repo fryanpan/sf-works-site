@@ -1,0 +1,88 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-06-02",
+ "id": "g55-35853",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35853",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21979"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes -May 19, 2020Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report (For discussion only)-Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment",
+   "decision": "APPROVED"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Bhajan Johal vs. CCSF, Superior Ct. #CGC19574637 filed on 3/19/19 for $56,000 B. Ross Feller vs. CCSF, Superior Ct. #CGC18566003 filed on 4/23/18 for $70,000 C. Sabrina Suzuki vs. CCSF, Superior Ct. #CGC18570023 filed on 9/21/18 for $175,000 (Explanatory documents include a resolution.) RESOLUTION 200602-049",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 200602-049)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending the Transportation Code, Division II, Section 801 to establish San Francisco Police Department vehicle only parking restrictions in front of the Police Department Special Operations Center; and approving parking restriction as follows",
+   "text": "Amending the Transportation Code, Division II, Section 801 to establish San Francisco Police Department vehicle only parking restrictions in front of the Police Department Special Operations Center; and approving parking restriction as follows: A. ESTABLISH – NO STOPPING ANYTIME, EXCEPT VEHICLES AUTHORIZED BY THE DEPARTMENT OF PUBLIC HEALTH OR FIRE DEPARTMENT, MONDAY THROUGH THURSDAY FROM 7:00 AM TO 5:00 PM - 12th Street, south side, from Mission Street to 40 feet easterly. (Explanatory documents include a staff report, amendment and resolution. The proposed action listed above is the Approval Actions as defined by S.F. Administrative Code Chapter 31.) RESOLUTION 200602-050",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 200602-050)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving Amendment No. 6 to Contract CS-155-2, Architectural and Engineering Services for the Final Design and Construction of the Central Subway Project, with the Central Subway Design Group, for additional design support services through completion of the Project, and to increase the contract amount by $6,879,086; and making environmental review findings.",
+   "text": "Approving Amendment No. 6 to Contract CS-155-2, Architectural and Engineering Services for the Final Design and Construction of the Central Subway Project, with the Central Subway Design Group, for additional design support services through completion of the Project, and to increase the contract amount by $6,879,086; and making environmental review findings. (Explanatory documents include a staff report, amendment and resolution.)",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "severed": true,
+   "decision": "ADOPTED — 4 ayes (Resolution 200602-051)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Transportation Recovery Plan"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

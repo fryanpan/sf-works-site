@@ -1,0 +1,124 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2019-09-10",
+ "id": "g22-33957",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=33957",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of August 27, 2019"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "5b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5c",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5d",
+   "title": "Annual Water System Improvement Program Report"
+  },
+  {
+   "no": "5e",
+   "title": "Contaminants of Emerging Concern in Drinking Water Progress Update"
+  },
+  {
+   "no": "5f",
+   "title": "Regional Groundwater Storage and Recovery Project"
+  },
+  {
+   "no": "5g",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Bay Delta Water Quality Control Plan Update"
+  },
+  {
+   "no": "6b",
+   "title": "Capital and Operating Budget Planning Update FY 2020-21 and FY 2021-22"
+  },
+  {
+   "no": "6c",
+   "title": "Hetch Hetchy Capital Improvement Program Quarterly Report"
+  },
+  {
+   "no": "6d",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements"
+  },
+  {
+   "no": "7",
+   "title": "Other Commission Business"
+  },
+  {
+   "no": "9",
+   "title": "Public Hearing: Consider accepting and provide response to public comment on the 2019 Public Health Goals Report for the San Francisco Water System"
+  },
+  {
+   "no": "10",
+   "title": "Approve the San Francisco Public Utilities Commission’s response to the relevant findings and recommendations of the July 17, 2019 Civil Grand Jury Report"
+  },
+  {
+   "no": "11",
+   "title": "Consent to the vacation of a portion of a public utility easement encumbering San Francisco Block 2923"
+  },
+  {
+   "no": "12",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel"
+  },
+  {
+   "no": "14",
+   "title": "Conference with Legal Counsel"
+  },
+  {
+   "no": "17",
+   "title": "Announcement Following Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "19",
+   "title": "Other New Business"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

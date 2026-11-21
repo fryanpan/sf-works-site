@@ -1,0 +1,106 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-08-02",
+ "id": "g55-41807",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41807",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26867"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - July 19, 2022 Regular Meeting",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7a",
+   "title": "Special Recognition"
+  },
+  {
+   "no": "7b",
+   "title": "Vision Zero Update"
+  },
+  {
+   "no": "7c",
+   "title": "Autonomous Vehicle Updates"
+  },
+  {
+   "no": "7d",
+   "title": "Back to School Update"
+  },
+  {
+   "no": "7e",
+   "title": "Racial Equity and Belonging Update"
+  },
+  {
+   "no": "7f",
+   "title": "Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 4 ayes (Resolution 220802-073)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against the following claim: Michael Ghadieh v. CCSF, Superior Ct. filed 7/31/2017 for $20,000",
+   "decision": "ADOPTED — 4 ayes (Resolution 220802-073)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications on Valencia Street, Mission Street, 26th Street, Oakdale Avenue, Kimball Place, and Spear Street",
+   "decision": "ADOPTED — 4 ayes (Resolution 220802-074)"
+  },
+  {
+   "no": "11",
+   "title": "SFMTA Fiscal and Management Update"
+  },
+  {
+   "no": "12",
+   "title": "Train Control Upgrade Project"
+  },
+  {
+   "no": "13",
+   "title": "Modification No. 1 to SFMTA Contract with Yerba Buena Engineering and Construction, Inc., to increase the contract amount by an additional $2,500,000, for additional work",
+   "decision": "ADOPTED — 4 ayes (Resolution 220802-075)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

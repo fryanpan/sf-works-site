@@ -1,0 +1,108 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-09-24",
+ "id": "g218-53238",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53238",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes"
+  },
+  {
+   "no": "2",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the July 23, 2026 Meeting"
+  },
+  {
+   "no": "5b",
+   "title": "Various Locations Curb Ramp and Sub-Sidewalk Basement No. 3"
+  },
+  {
+   "no": "5c",
+   "title": "Union Street Pavement Renovation and Sewer Replacement"
+  },
+  {
+   "no": "5d",
+   "title": "San Francisco Municipal Transportation Agency Garage Elevator Modernization - Phase 2A"
+  },
+  {
+   "no": "5e",
+   "title": "Street Tree Light Detection and Ranging (LiDAR) Survey"
+  },
+  {
+   "no": "5f",
+   "title": "As-Needed Geotechnical Engineering Services 2026"
+  },
+  {
+   "no": "5g",
+   "title": "As-Needed Geotechnical Engineering Services 2026"
+  },
+  {
+   "no": "5h",
+   "title": "As-Needed Geotechnical Engineering Services 2026"
+  },
+  {
+   "no": "5i",
+   "title": "As-Needed Project Controls and Construction Management Services No. 4 - Micro-LBE Set-Aside Program"
+  },
+  {
+   "no": "5j",
+   "title": "As-Needed Project Controls and Construction Management Services No. 3, Contract ID 1000034943"
+  },
+  {
+   "no": "6",
+   "title": "Workforce Development Program Update"
+  },
+  {
+   "no": "7",
+   "title": "Street Safety Act Overview"
+  },
+  {
+   "no": "8",
+   "title": "Contract Award Scoring Overview"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "11",
+   "title": "Closed Session"
+  },
+  {
+   "no": "12",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  }
+ ],
+ "parser": 2,
+ "body": "public-works-commission"
+}

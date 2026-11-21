@@ -1,0 +1,58 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2024-01-26",
+ "id": "g22-45285",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45285",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/January%2026%20Budget%20Meeting%20APPROVED%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Public Hearing and discussion of the proposed Budget Priorities"
+  },
+  {
+   "no": "4",
+   "title": "Proposed Bureau Operating Budgets for FY2024-25 and FY2025-26 (discussion only)"
+  },
+  {
+   "no": "4a",
+   "title": "Business Services"
+  },
+  {
+   "no": "4b",
+   "title": "External Affairs"
+  },
+  {
+   "no": "4c",
+   "title": "Human Resource Services"
+  },
+  {
+   "no": "4d",
+   "title": "General Manager"
+  },
+  {
+   "no": "4e",
+   "title": "Infrastructure"
+  },
+  {
+   "no": "5",
+   "title": "Motion to continue meeting to a Special Meeting noticed for Friday, January 26, 2024",
+   "decision": "continue the meeting to a Special meeting noticed for Monday, January 29, 2024"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

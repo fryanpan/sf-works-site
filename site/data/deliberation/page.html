@@ -1,0 +1,1320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposition Review Meeting</title>
+<meta name="robots" content="noindex">
+<meta name="deliberation-mode" content="static">
+<meta name="deliberation-base" content="/deliberation/">
+<meta name="deliberation-guide" content="https://sf-works-deliberation-guide.fryanpan.workers.dev">
+<style>
+  :root {
+    --yes: #4269d0; --no: #efb118; --ink: #1f2430; --muted: #5d6573; --line: #dfe3ea;
+    --bg: #f7f8fa; --card: #fff; --accent: #4269d0; --accent-soft: #e8eefb; --no-soft: #fdf3dc;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.42 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 8px 14px 32px; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .top h1 { font-size: 16px; margin: 0; }
+  .mock { font-size: 11px; color: var(--muted); background: #eceff4; border-radius: 6px; padding: 1px 6px; white-space: nowrap; }
+
+  .timer { margin: 6px 0 10px; }
+  .timer-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .timer-row b { color: var(--ink); }
+  .bar { position: relative; height: 8px; background: #e4e8ef; border-radius: 4px; overflow: hidden; margin-top: 3px; }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: #8fa8e3; }
+  .bar .tick { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--bg); }
+  .over { color: #8a5a00 !important; }
+
+  .step { display: none; }
+  .step.on { display: block; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  h2 { font-size: 20px; margin: 0 0 4px; }
+  h3 { font-size: 15px; margin: 0 0 6px; }
+  .lede { color: var(--muted); margin: 0 0 10px; }
+  .small { font-size: 13px; color: var(--muted); }
+  .src { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  .choices { display: flex; gap: 8px; }
+  .mockrow { text-align: right; }
+  .fnsep { font-size: 11px; color: var(--accent); vertical-align: super; line-height: 1; }
+  #chat { max-height: min(46vh, 420px); overflow-y: auto; padding-right: 2px; }
+  .lower { display: grid; grid-template-columns: 1fr; gap: 0 10px; margin-top: 10px; }
+  @media (min-width: 900px) { .lower { grid-template-columns: 1fr 1fr; align-items: start; } .lower details.more[open] { grid-column: 1 / -1; } }
+  .prog { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin: 4px 0 10px; }
+  .prog button { border: 0; background: none; padding: 0; font: inherit; font-size: 13px; color: var(--muted); text-align: left; cursor: default; }
+  .prog button .seg { display: block; height: 6px; border-radius: 3px; background: #e4e8ef; margin-bottom: 3px; }
+  .prog button.done { cursor: pointer; color: var(--ink); }
+  .prog button.done .seg { background: #8fa8e3; }
+  .prog button.cur { color: var(--ink); font-weight: 700; }
+  .prog button.cur .seg { background: var(--accent); }
+  .scale { display: grid; grid-template-columns: repeat(11, 1fr); gap: 4px; margin-top: 8px; }
+  .scale button { min-height: 44px; border-radius: 8px; border: 2px solid var(--line); background: #fff; font: inherit; font-size: 15px; cursor: pointer; padding: 0; color: var(--ink); }
+  .scale button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: #fff; font-weight: 700; }
+  .scale-labels { display: grid; grid-template-columns: 1fr 1fr 1fr; font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .scale-labels span:nth-child(2) { text-align: center; } .scale-labels span:nth-child(3) { text-align: right; }
+  .readout { font-weight: 700; margin-top: 6px; min-height: 22px; }
+  .choice { flex: 1; min-height: 48px; border-radius: 10px; border: 2px solid var(--line); background: #fff; font: inherit; font-weight: 600; cursor: pointer; color: var(--ink); }
+  .choice[aria-pressed="true"] { background: #eef0f3; border-color: #4b5563; color: var(--ink); }
+  .choice[aria-pressed="true"]::before { content: "\2713  "; }
+  .conf { display: flex; gap: 6px; }
+  .conf button { flex: 1; min-height: 44px; border-radius: 8px; border: 2px solid var(--line); background: #fff; font: inherit; cursor: pointer; }
+  .conf button[aria-pressed="true"] { border-color: #4b5563; background: #eef0f3; font-weight: 700; }
+  .conf-labels { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  .nav { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 4px; }
+  .btn { min-height: 46px; padding: 0 18px; border-radius: 10px; border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.ghost { background: #fff; color: var(--accent); border: 1px solid var(--line); }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 900px) { .grid2 { grid-template-columns: 1fr 1fr; align-items: start; } .grid2 > div > .card:last-child { margin-bottom: 0; } }
+  .digest dl { margin: 0; display: grid; grid-template-columns: 96px 1fr; gap: 4px 10px; font-size: 15px; }
+  .digest dt { font-weight: 700; font-size: 13px; color: var(--muted); padding-top: 2px; }
+  .digest dd { margin: 0; }
+  .case { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 15px; }
+  .case > div { border-radius: 10px; padding: 8px 10px; }
+  .case .for { background: var(--accent-soft); border-left: 5px solid var(--yes); }
+  .case .against { background: var(--no-soft); border-left: 5px solid var(--no); }
+  .case p { margin: 4px 0 0; }
+  details.more { padding: 0; }
+  .viewsw { margin: 8px 0 14px; }
+  .trow { border-top: 1px solid var(--line); padding: 10px 0; }
+  .trow h4 { margin: 0 0 6px; font-size: 15px; }
+  .tcols { display: grid; grid-template-columns: 1fr; gap: 8px 16px; }
+  .tside { padding-left: 9px; }
+  .tside.yes { border-left: 4px solid var(--yes); }
+  .tside.no { border-left: 4px solid var(--no); }
+  .tside .pt { border-top: 0; padding-top: 4px; }
+  .tside .none { color: var(--muted); font-size: 14px; margin: 4px 0; }
+  @media (min-width: 900px) { .tcols { grid-template-columns: 1fr 1fr; } }
+  details.morearg > summary { cursor: pointer; font-weight: 600; padding: 10px 0; min-height: 44px; }
+  details.more > summary { cursor: pointer; font-weight: 600; padding: 11px 14px; min-height: 44px; }
+  details.more > .inner { padding: 0 14px 12px; }
+  .tallybtn { width: 100%; text-align: left; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 11px 14px; font: inherit; cursor: pointer; min-height: 46px; margin-bottom: 10px; }
+  .tallybtn .pos { margin-right: 2px; }
+  .gtable { display: none; margin: -4px 0 10px; }
+  .gtable.on { display: block; }
+  .guides { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .guides td { border-top: 1px solid var(--line); padding: 7px 4px; vertical-align: top; }
+  .pos { display: inline-block; min-width: 40px; text-align: center; font-weight: 700; font-size: 12px; border-radius: 5px; padding: 1px 6px; }
+  .pos.yes { background: var(--yes); color: #fff; }
+  .pos.no { background: var(--no); color: #2a2000; }
+  .pos.none, .pos.neutral, .pos.pending { background: #eceff4; color: var(--muted); font-weight: 600; }
+  .paid { display: inline-block; font-size: 11px; font-weight: 600; color: var(--muted); border: 1px solid #c9ced6; border-radius: 4px; padding: 0 5px; margin-left: 4px; white-space: nowrap; }
+  .gq { color: var(--muted); display: block; margin-top: 2px; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 8px; }
+  .tabs button { flex: 1; min-height: 40px; border-radius: 8px; border: 2px solid var(--line); background: #fff; font: inherit; font-size: 14px; cursor: pointer; }
+  .tabs button[aria-selected="true"] { border-color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+  .stage-row { display: grid; grid-template-columns: 70px 1fr; gap: 4px 10px; font-size: 14px; }
+  .stage-row b { color: var(--muted); font-size: 13px; }
+  .diagram { width: 100%; max-width: 360px; height: auto; display: block; margin: 0 auto; }
+  svg text { font-family: inherit; }
+
+  .valpick .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { min-height: 40px; padding: 6px 12px; border-radius: 20px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 14px; cursor: pointer; text-align: left; color: var(--ink); }
+  .chip:hover { border-color: var(--accent); }
+  .picked { display: none; font-size: 14px; }
+  .picked button { background: none; border: 0; color: var(--accent); font: inherit; cursor: pointer; text-decoration: underline; padding: 0 0 0 4px; }
+  .chat { display: grid; gap: 8px; margin-top: 8px; }
+  .msg { max-width: 94%; padding: 8px 11px; border-radius: 12px; font-size: 15px; }
+  .msg.ai { background: #f1f3f7; border-top-left-radius: 4px; }
+  .msg.me { background: var(--accent-soft); margin-left: auto; border-top-right-radius: 4px; }
+  .msg .who { font-size: 11px; color: var(--muted); margin-bottom: 1px; }
+  .msg .q { display: block; margin-top: 4px; font-weight: 600; }
+  .msg .side { font-weight: 700; }
+  .compose { display: none; margin-top: 8px; gap: 8px; }
+  .compose.on { display: grid; }
+  .compose .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .typerow { position: relative; }
+  .typerow input { width: 100%; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); padding: 0 44px 0 10px; font: inherit; font-size: 15px; }
+  .mic { position: absolute; right: 4px; top: 4px; width: 36px; height: 36px; border: 0; border-radius: 8px; background: transparent; color: var(--muted); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .mic.live { background: #eef0f3; color: var(--ink); }
+  .iconbtn { min-width: 44px; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 14px; color: var(--accent); cursor: pointer; padding: 0 10px; user-select: none; -webkit-user-select: none; touch-action: none; }
+  .iconbtn.live { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .turn { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  textarea { width: 100%; min-height: 52px; border-radius: 10px; border: 2px solid var(--line); padding: 8px 10px; font: inherit; font-size: 15px; resize: vertical; }
+  textarea:focus, input:focus { outline: none; border-color: var(--accent); }
+  .ba { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; text-align: center; }
+  .pill { border-radius: 10px; padding: 7px 6px; font-weight: 700; }
+  .pill { background: #eef0f3; border: 1px solid #c9ced6; }
+  .pill.blank { color: var(--muted); font-weight: 600; }
+  .order-note { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .pill small { display: block; font-weight: 400; font-size: 12px; }
+  .sumline { font-size: 14px; margin-top: 8px; }
+  .saved { display: none; margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: #e9f3ec; font-size: 14px; }
+  .saved.on { display: block; }
+  footer { font-size: 12px; color: var(--muted); margin-top: 14px; }
+  @media (max-width: 480px) {
+    .case { grid-template-columns: 1fr; }
+    .digest dl { grid-template-columns: 84px 1fr; }
+  }
+</style>
+<style>
+  .ballot { border: 1px solid #c9ced6; border-radius: 10px; padding: 10px 12px; background: #fbfbfc; }
+  .btitle { font-weight: 700; font-size: 17px; margin-top: 2px; display: flex; gap: 8px; align-items: baseline; }
+  .bletter { display: inline-block; min-width: 26px; text-align: center; padding: 0 6px; border: 2px solid var(--ink); border-radius: 6px; font-size: 15px; }
+  .bq { margin: 6px 0 0; font-size: 16px; }
+  .fnw { line-height: 0; }
+  .fn { position: relative; background: none; border: 0; padding: 8px 3px; margin: -8px 0; font: inherit; font-size: 11px; color: var(--accent); cursor: pointer; vertical-align: super; line-height: 1; }
+  .fn::after { content: ""; position: absolute; left: 50%; top: 50%; width: 32px; height: 32px; transform: translate(-50%, -50%); }
+  .mermaid-box { display: flex; justify-content: safe center; overflow-x: auto; max-width: 100%; }
+  .page2 > div, #flowDetails, #flowDetails .inner { min-width: 0; }
+  .mermaid-box svg { max-width: 100%; height: auto; }
+  .pts { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 900px) { .pts { grid-template-columns: 1fr 1fr; align-items: start; } }
+  .col h3 { margin-bottom: 4px; }
+  .col.yes { border-top: 4px solid var(--yes); }
+  .col.no { border-top: 4px solid var(--no); }
+  .pt { padding: 7px 0; border-top: 1px solid var(--line); font-size: 15px; }
+  .pt:first-of-type { border-top: 0; }
+  .pt .lbl { font-weight: 700; }
+  .cite { font-size: 12px; color: var(--muted); }
+  details.det { display: inline; }
+  details.det > summary { display: inline-block; list-style: none; padding: 4px 6px; margin-left: 2px; font-size: 13px; color: var(--accent); cursor: pointer; white-space: nowrap; border-radius: 6px; }
+  details.det > summary::-webkit-details-marker { display: none; }
+  details.det > summary .chev { display: inline-block; transition: transform .15s; }
+  details.det[open] > summary .chev { transform: rotate(90deg); }
+  details.det[open] > .dd { display: block; }
+  .dd { display: none; margin: 6px 0 2px; padding: 8px 10px; background: #f4f6f9; border-radius: 8px; font-size: 13.5px; }
+  .dd.on { display: block; }
+  .dd dl { margin: 0; display: grid; grid-template-columns: 1fr; gap: 2px; }
+  .dd dt { font-weight: 700; font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .dd dt:first-child { margin-top: 0; }
+  .dd dd { margin: 0; }
+  .dd blockquote { margin: 2px 0; padding-left: 8px; border-left: 3px solid #c9ced6; }
+  .unv { font-size: 12px; color: #8a5a00; }
+  .gl { font-size: 13.5px; color: var(--muted); margin-top: 3px; }
+  .gl a { font-weight: 600; }
+  .ref { margin: 4px 0; padding: 6px 8px; background: #fff; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; }
+  .digest dl { grid-template-columns: 96px 1fr; }
+
+  .dgrid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 900px) { .dgrid { grid-template-columns: 1.4fr 1fr; align-items: start; } }
+  .prompt { font-size: 18px; font-weight: 700; margin: 0 0 8px; }
+  .composer { display: grid; gap: 8px; margin-top: 8px; }
+  .bigmic { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border-radius: 26px; border: 2px solid #4b5563; background: #fff; color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
+  .bigmic.live { background: #eef0f3; }
+  .bigmic .dots { display: none; gap: 3px; }
+  .bigmic.live .dots { display: inline-flex; }
+  .bigmic .dots i { width: 4px; height: 14px; background: #4b5563; border-radius: 2px; animation: w .9s infinite ease-in-out; }
+  .bigmic .dots i:nth-child(2) { animation-delay: .15s } .bigmic .dots i:nth-child(3) { animation-delay: .3s }
+  @keyframes w { 0%,100% { transform: scaleY(.35) } 50% { transform: scaleY(1) } }
+  .typed { display: flex; gap: 6px; }
+  .typed textarea { min-height: 44px; height: 44px; }
+  .sendbtn { min-width: 64px; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; }
+  .msg.me[contenteditable="true"]:focus { outline: 2px dashed #9aa0a8; }
+  .msg .edit { font-size: 11px; color: var(--muted); }
+  .draft { background: var(--accent-soft); border-radius: 12px; padding: 8px; margin-left: auto; max-width: 94%; }
+  .draft textarea { background: #fff; min-height: 60px; }
+  .draft .row2 { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; gap: 8px; }
+  .doneRow { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+  .sample { background: none; border: 0; color: var(--accent); font: inherit; font-size: 13px; cursor: pointer; text-decoration: underline; padding: 0; }
+  .viewpanel textarea { min-height: 140px; }
+  .aisum { background: #f4f6f9; border-radius: 8px; padding: 8px 10px; font-size: 14px; }
+  .tag { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+</style>
+<style>
+  .step { display: none; } .step.on { display: block; }
+  .page2 { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 1000px) { .page2 { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; } .take { position: sticky; top: 10px; } }
+  .discuss { margin-top: 6px; }
+  .discuss .prompt { margin-top: 2px; }
+  #chat { max-height: none; overflow: visible; }
+  .msg .speak { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: var(--muted); }
+  .composer2 { display: flex; gap: 8px; align-items: stretch; margin-top: 8px; }
+  .composer2 .bigmic { flex: 0 0 auto; padding: 0 16px; }
+  .composer2 textarea { min-height: 52px; height: 52px; }
+  .demo { font-size: 12px; color: var(--muted); margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .demo button { background: none; border: 1px dashed #c9ced6; border-radius: 14px; padding: 3px 10px; font: inherit; font-size: 12px; color: var(--muted); cursor: pointer; }
+  .added { margin: 6px 0 2px; padding: 6px 8px; border-radius: 8px; font-size: 14px; background: #f4f6f9; animation: flash 3s ease-out; }
+  .added .tag { display: block; margin-bottom: 2px; }
+  @keyframes flash { 0% { background: #fff1c2; } 100% { background: #f4f6f9; } }
+  .mark { display: inline-block; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 5px; margin-left: 4px; background: #eef0f3; color: var(--ink); border: 1px solid #c9ced6; }
+  .notes h3 { margin-bottom: 2px; }
+  .ngroup { margin-top: 8px; }
+  .ngroup h4 { margin: 0 0 2px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+  .ngroup ul { margin: 0; padding-left: 16px; }
+  .ngroup li { font-size: 14px; margin: 2px 0; }
+  .ngroup li .nt { outline: none; }
+  .ngroup li .nt:focus { background: #f4f6f9; }
+  .ngroup li .ref2 { font-size: 11px; color: var(--muted); }
+  .ngroup li .nt { display: inline; min-width: 1em; }
+  .ngroup li.new { animation: flash 2s ease-out; }
+  .nempty { font-size: 13px; color: var(--muted); }
+  body.rec { padding-bottom: var(--bandh, 60px); }
+  .recband { position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg); border-top: 1px solid var(--line); display: none; flex-direction: column; align-items: center; gap: 4px; z-index: 10; padding: 6px 10px calc(6px + env(safe-area-inset-bottom)); }
+  body.rec .recband { display: flex; }
+  .cap { display: none; max-width: 760px; width: 100%; font-size: 14px; line-height: 1.35; max-height: 4.1em; overflow: hidden; }
+  .cap.on { display: block; }
+  .cap b { font-size: 12px; color: var(--muted); }
+  .setup p { margin: 4px 0 12px; }
+  .check { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
+  .meter.big { height: 22px; gap: 3px; }
+  .meter.big i { width: 5px; height: 4px; background: #8b93a1; border-radius: 2px; }
+  .setup #ready { margin-top: 10px; }
+  .kbrow { width: 100%; max-width: 760px; }
+  .kbrow input { width: 100%; min-height: 40px; border-radius: 10px; border: 1px solid var(--line); padding: 0 10px; font: inherit; font-size: 15px; }
+  .msg, .pt, .digest, .ballot, .draft { scroll-margin-bottom: calc(var(--bandh, 60px) + 12px); }
+  .startrow { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+  .startmic { display: inline-flex; align-items: center; gap: 10px; min-height: 60px; padding: 0 26px; border-radius: 30px; border: 0; background: var(--accent); color: #fff; font: inherit; font-size: 18px; font-weight: 700; cursor: pointer; }
+  .hints { display: flex; gap: 6px; flex-wrap: wrap; }
+  .hint { font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 14px; padding: 3px 10px; background: #fff; }
+  .scale.small button { min-height: 36px; font-size: 14px; }
+  .speaking { box-shadow: 0 0 0 3px #c9d6f3; background-color: #f5f8ff !important; border-radius: 8px; transition: box-shadow .2s; }
+  .btn.ghost { min-height: 40px; }
+  .recpill { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #c9ced6; border-radius: 22px; padding: 4px 6px 4px 12px; font-size: 13px; }
+  .recdot { width: 10px; height: 10px; border-radius: 50%; background: #d64545; animation: pulse 1.4s infinite; }
+  .paused .recdot { animation: none; background: #9aa0a8; }
+  @keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+  .meter { display: inline-flex; gap: 2px; align-items: center; height: 16px; }
+  .meter i { width: 3px; height: 4px; background: #8b93a1; border-radius: 1px; }
+  .rectime { font-variant-numeric: tabular-nums; color: var(--muted); }
+  .recpill button { min-height: 44px; border-radius: 16px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 13px; padding: 0 10px; cursor: pointer; }
+  @media (max-width: 360px) { .meter, .rectime { display: none; } }
+</style>
+<style>
+  .mockrow { position: absolute; top: 2px; right: 6px; }
+  .mock { font-size: 10px; padding: 0 5px; opacity: .8; }
+  .wrap { position: relative; padding-top: 14px; }
+  .scale-range { display: none; width: 100%; height: 36px; margin-top: 2px; -webkit-appearance: none; appearance: none; background: transparent; }
+  .scale-range::-webkit-slider-runnable-track { height: 6px; background: #dfe3ea; border-radius: 3px; }
+  .scale-range::-moz-range-track { height: 6px; background: #dfe3ea; border-radius: 3px; }
+  .scale-range::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; margin-top: -11px; border-radius: 50%; background: #4b5563; border: 3px solid #fff; box-shadow: 0 0 0 1px #4b5563; }
+  .scale-range::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: #4b5563; border: 3px solid #fff; box-shadow: 0 0 0 1px #4b5563; }
+  .scale-range.unset::-webkit-slider-thumb { opacity: 0; }
+  .scale-range.unset::-moz-range-thumb { opacity: 0; }
+  .slidehint { display: none; margin-top: 8px; font-weight: 700; min-height: 22px; }
+  @media (max-width: 480px) { .scale { display: none; } .scale-range, .slidehint { display: block; } }
+  .setup p { margin: 4px 0 12px; }
+  .discuss:empty { display: none; }
+  .discuss { border: 0; background: none; padding: 0; }
+  .ref.open { background: #fff; border: 1px solid #c9ced6; border-radius: 10px; padding: 10px 12px; }
+  .ref.open .ttl { font-size: 12px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+  .ref.open p { margin: 4px 0 6px; font-size: 15px; }
+  .jump { display: none; border: 1px solid var(--line); background: #fff; border-radius: 14px; font: inherit; font-size: 12px; padding: 2px 10px; color: var(--accent); cursor: pointer; }
+  .jump.on { display: inline-block; }
+  .bandrow { display: flex; align-items: center; gap: 8px; }
+  .sheet { position: fixed; left: 0; right: 0; bottom: var(--bandh, 60px); max-height: 60vh; overflow-y: auto; background: #fff; border-top: 1px solid #c9ced6; border-radius: 14px 14px 0 0; box-shadow: 0 -6px 18px rgba(0,0,0,.08); padding: 10px 16px 14px; z-index: 11; }
+  .sheet h3 { display: flex; justify-content: space-between; align-items: center; margin: 0; }
+  .sheet h3 button { background: none; border: 0; font: inherit; color: var(--accent); cursor: pointer; }
+  .qa { font-size: 13px; color: var(--muted); }
+  .beforeafter { font-size: 15px; margin-top: 10px; }
+  /* Review step: layout switch for comparing brief layouts. C is the default. */
+  .lsw { display: flex; gap: 4px; align-items: center; justify-content: flex-end; font-size: 12px; color: var(--muted); margin: 0 0 4px; }
+  .lsw[hidden] { display: none; }
+  .lsw button { min-height: 28px; min-width: 32px; padding: 0 8px; border-radius: 14px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 12px; color: var(--muted); cursor: pointer; }
+  .lsw button[aria-pressed="true"] { border-color: #9aa0a8; color: var(--ink); font-weight: 700; }
+  .sides { display: grid; gap: 2px; margin-top: 8px; font-size: 14px; }
+  .sides > div { display: grid; grid-template-columns: 44px 1fr; align-items: start; gap: 6px; margin-top: 4px; }
+  .sides .pos { margin-right: 0; text-align: center; }
+  .sides > div.other { display: flex; flex-wrap: wrap; align-items: start; gap: 6px; }
+  .sides > div.other .pos { white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+  .chips a { text-decoration: none; color: var(--ink); background: #fff; border: 1px solid #d5dbe5; border-radius: 999px; padding: 1px 9px; font-size: 13px; line-height: 20px; }
+  .chips a:hover, .chips a:focus-visible { border-color: var(--accent); color: var(--accent); }
+  .gl a { text-decoration: none; }
+  .who .chips { display: inline-flex; vertical-align: middle; margin-top: 4px; }
+  .vm { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+  .vm > div { border-radius: 10px; padding: 8px 10px; font-size: 15px; }
+  .vm .yes { background: var(--accent-soft); border-left: 5px solid var(--yes); }
+  .vm .no { background: var(--no-soft); border-left: 5px solid var(--no); }
+  .vm b { display: block; font-size: 13px; }
+  .cardnote { margin-top: 10px; } .cardnote p { margin: 0; }
+  /* The public page has no voice: no record dot and no Pause. With the guide off there's no one to talk to, so the
+     bottom band, its captions and the Your Take panel go, and Record takes the person's reasons in a text box. */
+  body.static .recpill { display: none; }
+  body.static.guideoff .recband, body.static.guideoff .take { display: none; }
+  body.static.guideoff.rec { padding-bottom: 0; }
+  @media (min-width: 1000px) { body.static.guideoff .page2 { grid-template-columns: minmax(0, 1fr); } }
+  .mywhy { display: none; margin-top: 12px; }
+  body.static.guideoff .mywhy { display: block; }
+  .mywhy label { display: block; font-weight: 600; margin-bottom: 4px; }
+  .mywhy textarea { width: 100%; box-sizing: border-box; min-height: 84px; border-radius: 10px; border: 1px solid var(--line); padding: 8px 10px; font: inherit; font-size: 15px; resize: vertical; }
+  .fnnote { display: block; margin: 6px 0 2px; background: #fff; border: 1px solid #c9ced6; border-radius: 8px; padding: 6px 10px; font-size: 13px; font-weight: 400; }
+  .fnnote button { background: none; border: 0; font: inherit; color: var(--muted); cursor: pointer; padding: 0 0 0 6px; }
+  .prow .kd { display: block; font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+  .prow.justsaved { animation: flash 2s ease-out; }
+  @media (max-width: 480px) { .vm { grid-template-columns: 1fr; } }
+  .who { font-size: 13.5px; color: var(--muted); margin: 0 0 6px; }
+  .who a { font-weight: 600; }
+  .pairs .hdr, .pair { display: grid; grid-template-columns: 1fr; gap: 6px 14px; }
+  .pairs .hdr { display: none; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .03em; }
+  .pair { border-top: 1px solid var(--line); padding: 9px 0; font-size: 15px; }
+  .pair .pt { border-top: 0; padding: 0 0 0 9px; }
+  .pair.yes .pt { border-left: 4px solid var(--yes); }
+  .pair.no .pt { border-left: 4px solid var(--no); }
+  .pair .reply { border-left: 3px solid #c9ced6; padding-left: 9px; font-size: 14.5px; }
+  .pair .reply .rl { font-size: 12px; font-weight: 700; color: var(--muted); }
+  @media (min-width: 900px) { .pairs .hdr { display: grid; grid-template-columns: 1fr 1fr; } .pair { grid-template-columns: 1fr 1fr; } .pair .reply { border-left: 0; padding-left: 0; } .pair .reply .rl { display: none; } }
+  .green { display: grid; gap: 18px; padding: 16px; }
+  @media (min-width: 760px) { .green { grid-template-columns: 1.2fr 1fr; align-items: center; } }
+  .pv { position: relative; height: 200px; border-radius: 12px; background: #2b2f36; color: #e8eaee; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .pv .meter.big { height: 40px; gap: 5px; }
+  .pv .meter.big i { width: 7px; background: #6b7280; }
+  .pvmsg { font-size: 14px; text-align: center; padding: 0 16px; }
+  .micbtn { position: absolute; bottom: 12px; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #6b7280; background: transparent; color: #fff; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .micbtn[aria-pressed="false"] { background: #c5221f; border-color: #c5221f; }
+  .micbtn:disabled { display: none; }
+  .devs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; font-size: 13px; color: var(--muted); }
+  .devs label { display: grid; gap: 2px; }
+  .devs select { min-height: 34px; border-radius: 8px; border: 1px solid var(--line); background: #fff; font: inherit; font-size: 13px; color: var(--ink); max-width: 100%; }
+  .spk { display: flex; gap: 6px; align-items: center; } .spk select { flex: 1; min-width: 0; }
+  .linkbtn { background: none; border: 0; color: var(--accent); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; padding: 0 4px; min-height: 34px; }
+  .join { text-align: center; }
+  .join p.savednote { text-align: center; margin: 8px 0 0; }
+  .join p { text-align: left; }
+  .joinbtn { min-width: 180px; border-radius: 24px; font-size: 17px; }
+  .sure { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .sure p { margin: 0 0 8px; font-size: 15px; }
+  .sure-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .propbar { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: end; margin: 4px 0 10px; }
+  .propbar[hidden] { display: none; }
+  .propbar .prog { grid-template-columns: repeat(3, 1fr); margin: 0; }
+  .toall { padding: 0; min-height: 32px; text-align: left; }
+  .toall::before { content: "\2039  "; }
+  #startNav[hidden] { display: none; }
+  .started { margin: 0 0 6px; font-size: 14px; color: var(--muted); }
+  .started:empty { display: none; }
+  @media (max-width: 480px) { .mockrow { position: static; text-align: right; margin: -8px 0 2px; } }
+  .picker, .sumcard { max-width: 680px; margin-left: auto; margin-right: auto; }
+  .plist { display: grid; gap: 8px; margin-top: 10px; }
+  .prow { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; align-items: center; width: 100%; text-align: left; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font: inherit; color: var(--ink); cursor: pointer; min-height: 56px; }
+  .prow:hover:not(:disabled) { border-color: var(--accent); }
+  .prow:disabled { cursor: default; background: #fbfbfc; }
+  .prow .pl { font-weight: 700; }
+  .prow .ptt { grid-column: 1; font-size: 15px; }
+  .prow .st { grid-column: 2; grid-row: 1 / span 2; font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .prow .st.done { color: var(--ink); font-weight: 600; }
+  .sumrow { border-top: 1px solid var(--line); padding: 10px 0; }
+  .sumrow:first-child { border-top: 0; }
+  .sumhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
+  .sumrow .now { font-weight: 700; font-size: 17px; margin-top: 6px; }
+  .sumrow > .small:last-child { margin-top: 6px; }
+  .ngroup li { scroll-margin-bottom: calc(var(--bandh, 60px) + 12px); scroll-margin-top: 12px; }
+  .ngroup li .by, .gans .by { font-size: 12px; font-weight: 700; color: var(--muted); }
+  .gans { color: var(--muted); margin-top: 2px; }
+  .sumrow ul { margin: 6px 0 0; padding-left: 18px; font-size: 15px; }
+  h3.jur { margin: 14px 0 0; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .plist h3.jur:first-child, #sumList h3.jur:first-child { margin-top: 2px; }
+  .stillopen { margin-top: 10px; } .stillopen h3 { margin: 0 0 4px; } .stillopen ul { margin: 0; padding-left: 18px; } .stillopen li { margin: 4px 0; }
+  .glink { font-size: 13px; white-space: nowrap; }
+  .sumrow li { margin: 2px 0; }
+  @media (max-width: 480px) { .btitle { flex-direction: column; align-items: flex-start; gap: 4px; } .prow { grid-template-columns: 1fr; } .prow .st { grid-column: 1; grid-row: auto; } .propbar { gap: 8px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mockrow"><span class="mock" id="mockTag">mockup</span></div>
+  <div class="propbar" id="propbar" hidden><button class="linkbtn toall" id="toAll">All propositions</button><nav class="prog" id="prog" aria-label="Progress"></nav></div>
+
+  <section class="step on" data-step="setup">
+    <div class="card setup green">
+      <div class="preview">
+        <div class="pv" id="pv">
+          <span class="meter big" id="smeter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="pvmsg" id="pvmsg">Starting your microphone…</span>
+          <button class="micbtn" id="micToggle" aria-label="Turn microphone off" aria-pressed="true"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/></svg></button>
+        </div>
+        <div class="devs" id="devs">
+          <label><span>Microphone</span><select id="micSel"><option value="">System default</option></select></label>
+          <label><span>Speaker</span><span class="spk"><select id="spkSel"><option value="">System default</option></select><button class="linkbtn" id="testSound">Test</button></span></label>
+        </div>
+      </div>
+      <div class="join">
+        <h2>Get Ready for the Proposition Review Meeting</h2>
+        <p>Treat this as a working meeting, where you can review a proposition in minutes with an AI assistant to help you review background research from official voter guides. And refine and state your opinion.</p>
+        <button class="btn primary joinbtn" id="ready">Join now</button>
+        <p class="small savednote" id="savedNote" hidden>Your decisions so far are saved.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="step" data-step="picker">
+    <div class="card picker">
+      <h2>Which Proposition Do You Want to Review?</h2>
+      <div class="plist" id="plist"></div>
+      <div class="nav" style="margin-top:12px"><span></span><button class="btn primary" id="toSummary" hidden>See Summary</button></div>
+    </div>
+  </section>
+
+  <section class="step" data-step="summary">
+    <div class="card sumcard">
+      <h2>Your Decisions</h2>
+      <div id="sumList"></div>
+      <div class="nav" style="margin-top:12px"><button class="btn ghost" id="sumBack">Back</button><button class="linkbtn" id="startOver">Start over</button></div>
+    </div>
+  </section>
+
+  <section class="step" data-step="0">
+    <div class="card">
+      <div class="ballot" id="ballot0"></div>
+      <h3 style="margin-top:12px">Where do you stand?</h3>
+      <div class="scale" data-scale="s0" role="group" aria-label="Position at start"></div>
+      <div class="slidehint" data-hint="s0">Slide to choose</div><input class="scale-range unset" type="range" min="0" max="10" step="1" value="5" data-range="s0" aria-label="Position at start">
+      <div class="scale-labels"><span>Strongly oppose</span><span>Undecided</span><span>Strongly support</span></div>
+      <div class="sure" id="sure" hidden>
+        <p>You sound pretty sure. Do you want to look at the arguments, or go straight to recording why?</p>
+        <div class="sure-btns"><button class="btn primary" data-sure="review">Review it</button><button class="btn ghost" data-sure="record">Record my reasons</button></div>
+      </div>
+      <div class="nav" id="startNav" hidden style="margin-top:10px"><span></span><button class="btn primary" id="toReview">Next: Review</button></div>
+    </div>
+  </section>
+
+  <section class="step" data-step="1">
+  <div class="page2"><div>
+    <p class="started" id="started1"></p>
+    <div class="lsw" id="lsw" role="group" aria-label="Layout" hidden><span>Layout</span></div>
+    <div id="brief"></div>
+    <details class="card more" id="flowDetails" style="margin-top:10px">
+      <summary>How it would work</summary>
+      <div class="inner"><div class="mermaid-box" id="flowBox"></div></div>
+    </details>
+    <div class="nav"><button class="btn ghost" data-back>Back</button><button class="btn primary" id="toRecord">Next: Record</button></div>
+    </div>
+    <aside class="take" id="take">
+      <div class="card notes"><h3>Your Take</h3><div id="notesBody"></div></div>
+    </aside>
+  </div>
+  </section>
+
+  <section class="step" data-step="2">
+    <div class="card" style="max-width:680px">
+      <h2>Where Do You Stand Now?</h2>
+      <div class="scale" data-scale="s1" role="group" aria-label="Position now"></div>
+      <div class="slidehint" data-hint="s1">Slide to choose</div><input class="scale-range unset" type="range" min="0" max="10" step="1" value="5" data-range="s1" aria-label="Position now">
+      <div class="scale-labels"><span>Strongly oppose</span><span>Undecided</span><span>Strongly support</span></div>
+      <div class="beforeafter" id="ba"></div>
+      <div class="notes recnotes" id="recNotes" style="margin-top:12px"></div>
+      <div class="mywhy"><label for="whyText">Why? In your own words (optional)</label><textarea id="whyText" placeholder="What matters to you here?"></textarea></div>
+      <div class="nav" style="margin-top:10px"><button class="btn ghost" data-back>Back</button><button class="btn primary" id="save" disabled>Save my record</button></div>
+    </div>
+  </section>
+</div>
+<div class="sheet" id="sheet" hidden><h3>Notes <button id="sheetClose">Close</button></h3><div id="sheetNotes"></div></div>
+<div class="recband" id="recband" aria-live="polite">
+  <div class="kbrow" id="kbRow"><input id="kb" placeholder="Type, then press Enter" enterkeyhint="send"></div>
+  <div class="cap" id="cap"><span id="capTxt"></span> <button class="jump" id="jump">Jump to point</button></div>
+  <div class="recpill" id="recpill"><span class="recdot" aria-hidden="true"></span><button id="recPause">Pause</button></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script>
+(() => {
+  // Where the page runs. The local hub (hub.mjs) serves it with no config. The public copy on sf-works.org
+  // (build-public.mjs) sets deliberation-mode to static: the measure list is a file, the live guide is the Worker at
+  // deliberation-guide (worker/), and there is no scripted demo, microphone preview or board voice.
+  const META = n => (document.querySelector(`meta[name="deliberation-${n}"]`) || {}).content || "";
+  const STATIC = META("mode") === "static", BASE = META("base"), GUIDE = META("guide").replace(/\/+$/, "");
+  if (STATIC) document.body.classList.add("static");
+  const SEGS = ["Start", "Review", "Record"];
+  const LABEL = { yes: "Yes", no: "No", unsure: "Not sure", neutral: "Neutral", pending: "Not yet published", none: "No position" };
+  const PAMPH = "https://media.api.sf.gov/documents/N26_EN_VIP.pdf";
+  const F = n => `<sup class="fnw"><button class="fn" data-fn="${n}">${n}</button></sup>`;
+  const FS = ns => `<sup class="fnw">${ns.map(n => `<button class="fn" data-fn="${n}">${n}</button>`).join('<span class="fnsep">,</span>')}</sup>`;
+
+  // ---- the measures, in ballot order: California's, then San Francisco's. The hub lists them at briefs and serves
+  // each one's brief at briefs/<ID>.json, fetched when the person picks it (measures.mjs). Ids carry the jurisdiction:
+  // SF-B, CA-2, SF-RTM. Brief fields: id, jurisdiction, label ("Proposition B", "Measure RTM"), title and q (as on the
+  // ballot), qf (the question's footnote), now and does (the digest), yes and no (what a vote means), G (guides),
+  // SRC (footnotes), intro (the voice intro line), ITEMS (every argument; the three most persuasive a side marked top), X (More Details), ORG, TOPIC and THEMES
+  // (matching what the person says), flow (a Mermaid flowchart body), OPEN (questions the research left open, shown as
+  // "Still open"), demo (the scripted session when no guide is connected). ----
+  let ORDER = [];          // measure ids with a brief, in ballot order
+  const CAT = {};          // id -> {id, jurisdiction, label, title}, from the hub's list
+  const PROPS = {};        // id -> brief, once fetched
+  // A measure's group: California, the Bay Area (a regional measure on several counties' ballots, region "Bay Area"),
+  // or San Francisco.
+  const JUR = [["CA", "California"], ["REGION", "Bay Area"], ["SF", "San Francisco"]];
+  const jurOf = id => { const m = CAT[id] || PROPS[id] || {}; return m.region ? "REGION" : id.split("-")[0]; };
+  // On a phone the picker opens on San Francisco's measures, the ones most people here came for.
+  const PHONE = window.matchMedia("(max-width: 600px)");
+  // The pilot saved its decisions under bare letters; those are San Francisco's.
+  const canon = x => { const s = String(x || "").toUpperCase(); return /^[A-Z]$/.test(s) ? "SF-" + s : s; };
+  const labelOf = id => (CAT[id] && CAT[id].label) || (PROPS[id] && PROPS[id].label) || `Proposition ${id.split("-")[1]}`;
+  const titleOf = id => (CAT[id] && CAT[id].title) || (PROPS[id] && PROPS[id].title) || "";
+  let CAT_ERR = false;
+  async function loadCatalog() {
+    try {
+      const xs = await fetch(STATIC ? BASE + "briefs/index.json" : "briefs", { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+      ORDER = xs.map(x => x.id); xs.forEach(x => { CAT[x.id] = x; }); CAT_ERR = false;
+    } catch (e) { console.log("no measure list", e && e.message); CAT_ERR = true; }
+  }
+  async function loadBrief(id) {
+    if (PROPS[id]) return PROPS[id];
+    const o = await fetch(`${BASE}briefs/${encodeURIComponent(id)}.json`, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    return (PROPS[id] = fromJson(o));
+  }
+
+  // A prop that arrived as JSON writes regexes as strings and footnotes as ${F(n)}, ${FS([n, m])} or [n].
+  const rx = r => r instanceof RegExp ? r : new RegExp(r, "i");
+  function fromJson(o) {
+    const fx = s => s.replace(/\$\{F\((\d+)\)\}/g, (m, n) => F(n))
+      .replace(/\$\{FS\(\[([\d,\s]+)\]\)\}/g, (m, ns) => FS(ns.split(/\s*,\s*/)))
+      .replace(/\[(\d{1,2}(?:\s*,\s*\d{1,2})*)\]/g, (m, ns) => { const a = ns.split(/\s*,\s*/); return a.every(n => o.SRC && o.SRC[n]) ? (a.length > 1 ? FS(a) : F(a[0])) : m; });
+    const walk = (v, k) => k === "re" || k === "TOPIC" || k === "THEMES" || k === "flow" || k === "demo" || k === "intro" ? v
+      : typeof v === "string" ? fx(v) : Array.isArray(v) ? v.map(x => walk(x)) : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([kk, x]) => [kk, walk(x, kk)])) : v;
+    return walk(o);
+  }
+
+  // The current proposition's data. useProp() points these at it.
+  let D, G, SRC, ITEMS, X, ORG, TOPIC, THEMES;
+  function useProp(id) {
+    D = PROPS[id]; ({ G, SRC, ITEMS } = D); X = D.X || {}; ORG = D.ORG || []; TOPIC = D.TOPIC || []; THEMES = D.THEMES || [];
+  }
+  // A pamphlet group (ORG kind "pamphlet") has no guide page, so it shows as plain text, labelled.
+  // A link to the exact passage: a text fragment (#:~:text=start,end) built from the quote. Browsers that support it
+  // scroll there and highlight it; others, or a page whose wording changed, open at the top.
+  const frag = q => { const w = String(q || "").replace(/[“”"]/g, "").trim().split(/\s+/).filter(Boolean); if (w.length < 3) return "";
+    const enc = t => encodeURIComponent(t).replace(/-/g, "%2D").replace(/,/g, "%2C");
+    return "#:~:text=" + (w.length <= 8 ? enc(w.join(" ")) : `${enc(w.slice(0, 4).join(" "))},${enc(w.slice(-4).join(" "))}`); };
+  const glinkq = (k, q) => G[k] ? `<a href="${G[k].u.split("#")[0]}${frag(q)}" target="_blank" rel="noopener">${G[k].n}</a>` : glink(k);
+  const glink = k => G[k] ? `<a href="${G[k].u}" target="_blank" rel="noopener">${G[k].n}</a>`
+    : `${(ORG.find(o => o.k === k) || { n: k }).n} (pamphlet argument)`;
+  const topicOf = t => (TOPIC.find(([, re]) => rx(re).test(t)) || [null])[0];
+
+
+  // U is the meeting; S is the proposition being reviewed, one per proposition in ST.
+  const U = { view: "setup", cur: null, rec: false, paused: false, inSession: false, voice: false, fast: false, tok: 0, at: null, layout: null };
+  const fresh = () => ({ step: 0, max: 0, s0: null, s1: null, pos0: null, sure: null, saved: null, spent: 0,
+    mode: "open", reasonText: "", used: [], notes: [], xslots: {} });
+  const ST = {};
+  let S = fresh();
+  // Saved decisions survive a reload: each proposition's scores, words, time and done flag, kept in this browser.
+  const KEY = "sfworks-deliberation-v1";
+  const KEEP = ["step", "max", "s0", "s1", "pos0", "saved", "spent", "mode", "reasonText", "used", "askedWhy", "notes", "label", "title"];
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(Object.fromEntries(Object.entries(ST).map(([id, st]) =>
+      [id, Object.fromEntries(KEEP.map(k => [k, k === "notes" ? st.notes.map(({ fresh, ...n }) => n) : st[k]]))])))); } catch (e) {}
+  }
+  try { Object.entries(JSON.parse(localStorage.getItem(KEY) || "{}")).forEach(([id, st]) => { ST[canon(id)] = Object.assign(fresh(), st); }); } catch (e) {}
+  const CANCEL = new Error("left the proposition");
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const esc = t => t.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const fm = location.hash.match(/flip=([01])/);
+  const FLIP = fm ? fm[1] === "1" : Math.random() < 0.5;
+  const SIDES = FLIP ? ["no", "yes"] : ["yes", "no"];
+  const label = it => `${LABEL[it.side]} ${it.n}, ${it.t}`;
+  const inWords = it => `the point on ${it.t.toLowerCase()}`;
+
+  // ---- navigation: Setup once, then the picker; each proposition has its own Start, Review and Record ----
+  const screen = s => $$(".step").forEach(x => x.classList.toggle("on", x.dataset.step === s));
+  function drawProg() {
+    $("#propbar").hidden = U.view !== "prop";
+    $("#prog").innerHTML = "";
+    SEGS.forEach((name, k) => {
+      const b = document.createElement("button");
+      b.className = k === S.step ? "cur" : k <= S.max ? "done" : "";
+      b.innerHTML = `<span class="seg"></span>${name}`;
+      if (k === S.step) b.setAttribute("aria-current", "step");
+      b.disabled = k === S.step || k > S.max + 1;
+      b.onclick = () => { if (U.inSession) pause(true); go(k); };
+      $("#prog").appendChild(b);
+    });
+  }
+  function show(view) {
+    if (U.view === "prop" && view !== "prop") leaveProp();
+    U.view = view;
+    if (view === "picker") drawPicker();
+    if (view === "summary") { drawSummary(); overReset(); }
+    if (view === "setup") $("#savedNote").hidden = !Object.keys(ST).some(recorded);
+    screen(view === "prop" ? String(S.step) : view);
+    document.title = view === "prop" ? `${D.label}: ${D.title}` : "Proposition Review Meeting";
+    window.scrollTo(0, 0);
+    drawProg();
+  }
+  function go(i) {
+    // A step within the proposition. Back from Start returns to the picker.
+    if (i < 0) return show("picker");
+    if (i > 2 || U.view !== "prop") return;
+    const prev = S.step;
+    S.step = i; S.max = Math.max(S.max, i);
+    // A new step ends the line in progress and its caption.
+    if (i !== prev) { U.skip = true; try { speechSynthesis.cancel(); AV.v && AV.v.stop(); } catch (e) {} caption(""); $("#cap").classList.remove("on"); }
+    screen(String(i));
+    // Changing screens starts at the top.
+    if (i !== prev) window.scrollTo(0, 0);
+    if (i === 2) { drawNotes(); summary(); }
+    drawProg();
+  }
+  $$("[data-back]").forEach(b => b.onclick = () => { if (U.inSession) pause(true); go(S.step - 1); });
+  $("#toAll").onclick = () => show("picker");
+  $("#toRecord").onclick = () => go(2);
+  $("#toReview").onclick = () => { if (U.inSession) { S.goReview = true; U.skip = true; try { speechSynthesis.cancel(); AV.v && AV.v.stop(); } catch (e) {} } else go(1); };
+  // The layout switch is for comparing brief designs; #layouts shows it.
+  $("#lsw").hidden = !/layouts/.test(location.hash);
+  $("#toSummary").onclick = () => show("summary");
+  $("#sumBack").onclick = () => show("picker");
+  // Start over takes two taps: the first asks, and the ask lapses after 4 seconds.
+  let overTimer = null;
+  const overReset = () => { clearTimeout(overTimer); overTimer = null; $("#startOver").textContent = "Start over"; };
+  $("#startOver").onclick = () => {
+    if (!overTimer) { $("#startOver").textContent = "Tap again to clear them all"; overTimer = setTimeout(overReset, 4000); return; }
+    overReset(); Object.keys(ST).forEach(id => delete ST[id]); S = fresh(); try { localStorage.removeItem(KEY); } catch (e) {} show("picker");
+  };
+  // Time on a proposition counts up to a reload too.
+  window.addEventListener("pagehide", () => { if (U.view === "prop") { S.spent += Date.now() - U.at; U.at = Date.now(); } persist(); });
+  window.addEventListener("scroll", () => {
+    if (U.view === "prop" && S.step === 1) jumpCheck();
+  }, { passive: true });
+
+  // ---- the picker and the summary ----
+  const recorded = id => ST[id] && ST[id].saved;
+  function status(id) {
+    if (recorded(id)) return [`Done: ${words(ST[id].saved.s1)}`, "done"];
+    return ST[id] ? ["In progress", ""] : ["", ""];
+  }
+  // The picker groups the measures as the ballot does: California's first, then the region's, then San Francisco's.
+  // On a phone the order is reversed, so San Francisco's come first.
+  const byJur = ids => (PHONE.matches ? [...JUR].reverse() : JUR).map(([j, name]) => [name, ids.filter(id => jurOf(id) === j)]).filter(([, xs]) => xs.length);
+  PHONE.addEventListener?.("change", () => { if (U.view === "picker") drawPicker(); if (U.view === "summary") drawSummary(); });
+  function drawPicker() {
+    $("#plist").innerHTML = !ORDER.length ? `<p class="small">${CAT_ERR ? (STATIC ? "The measures couldn't load. Reload to try again." : "The measures couldn't load. Start the hub (node hub.mjs) and reload.") : "Loading the measures…"}</p>`
+      : byJur(ORDER).map(([name, xs]) => `<h3 class="jur">${name}</h3>` + xs.map(id => { const [st, c] = status(id);
+        return `<button class="prow" data-p="${id}"><span class="pl">${labelOf(id)}</span><span class="ptt">${titleOf(id)}${CAT[id] && CAT[id].kind === "card" ? `<span class="kd">Ballot text only</span>` : ""}</span>${st ? `<span class="st ${c}">${st}</span>` : ""}</button>`; }).join("")).join("");
+    $$("#plist .prow").forEach(b => b.onclick = () => enterProp(b.dataset.p));
+    $("#toSummary").hidden = !Object.keys(ST).length;
+  }
+  // The person's own words: the guide's answer, added in italics after them, is left out.
+  const own = n => (n.you || "").trim();
+  const statements = ns => ns.filter(n => own(n) && !isQuestion(own(n)));
+  const mins = ms => { const s = Math.round(ms / 1000); return `${Math.floor(s / 60)} min ${s % 60} s`; };
+  // The summary has a row for every measure the person opened, recorded or not, grouped like the picker.
+  const reviewed = () => [...new Set([...ORDER.filter(id => ST[id]), ...Object.keys(ST)])];
+  function drawSummary() {
+    const ids = reviewed();
+    $("#sumList").innerHTML = !ids.length ? `<p class="small">You haven't reviewed a measure yet.</p>` : byJur(ids).map(([name, xs]) => `<h3 class="jur">${name}</h3>` + xs.map(id => {
+      const st = ST[id], r = recorded(id);
+      const head = `<div class="sumhead"><b>${st.label || labelOf(id)}</b> <span class="small">${st.title || titleOf(id)}</span></div>`;
+      if (!r) return `<div class="sumrow">${head}<div class="small">Not recorded yet${st.s0 != null ? ` · Started at ${words(st.s0)}` : ""}</div></div>`;
+      // Everything the person said on this measure, at any step, in their own words.
+      const mine = statements(st.notes);
+      const why = mine.length ? `<ul>${mine.map(n => `<li>${md(own(n))}</li>`).join("")}</ul>` : `<p class="small">No reasons recorded.</p>`;
+      return `<div class="sumrow">${head}<div class="now">${words(r.s1)}</div>${why}<div class="small">${r.s0 != null ? `Started at ${words(r.s0)} · ` : ""}${mins(r.spent)}</div></div>`;
+    }).join("")).join("");
+  }
+  async function enterProp(id) {
+    id = canon(id);
+    if (U.loading) return;
+    try { U.loading = id; await loadBrief(id); }
+    catch (e) { console.log("brief didn't load", id, e && e.message); $("#plist").insertAdjacentHTML("afterbegin", `<p class="small">${labelOf(id)} didn't load. Try again.</p>`); return; }
+    finally { U.loading = null; }
+    U.cur = id; S = ST[id] || (ST[id] = fresh()); useProp(id);
+    if (S.whyTyped == null) S.whyTyped = (S.notes.find(n => n.typed) || {}).you || "";
+    $("#whyText").value = S.whyTyped || "";
+    S.label = D.label; S.title = D.title;
+    $("#ballot0").innerHTML = `<div class="btitle"><span class="bletter">${D.label}</span> ${D.title}</div><p class="bq">${D.q}${[].concat(D.qf).length > 1 ? FS(D.qf) : F([].concat(D.qf)[0])}</p>`;
+    layout(U.layout, S.xslots);
+    const fd = $("#flowDetails"); fd.open = false; fd.hidden = !D.flow; $("#flowBox").innerHTML = ""; window.flowDef = D.flow || "";
+    paintScale("s0"); paintScale("s1"); $("#sure").hidden = !strongAt(S.s0);
+    U.at = Date.now();
+    show("prop");
+    drawNotes(); summary(); startRec();
+    if (S.step === 0) runSession();
+  }
+  function leaveProp() {
+    U.tok++; U.inSession = false; pause(false); highlight(null); stopRec();
+    caption(""); $("#cap").classList.remove("on");
+    try { speechSynthesis.cancel(); } catch (e) {}
+    try { AV.v && AV.v.stop(); } catch (e) {}
+    S.xslots = {}; $$("#brief .pt").forEach(pt => { const x = $(".xslot", pt); if (x && x.innerHTML) S.xslots[pt.dataset.id] = x.innerHTML; });
+    S.spent += Date.now() - U.at;
+  }
+
+  // ---- scale: 11 buttons, or a slider on a phone ----
+  const WORDS = ["Strongly oppose", "Oppose", "Oppose", "Lean oppose", "Lean oppose", "Undecided", "Lean support", "Lean support", "Support", "Support", "Strongly support"];
+  const words = v => v == null ? "Not given" : `${WORDS[v]} (${v})`;
+  const posOf = v => v == null ? null : v <= 3 ? "no" : v >= 7 ? "yes" : "unsure";
+  const strongAt = v => v != null && (v <= 2 || v >= 8);
+  function paintScale(k) {
+    const v = S[k], r = $(`[data-range="${k}"]`);
+    // After a score, Start offers Next: Review; a strong score gets the "pretty sure" choice instead.
+    if (k === "s0") $("#startNav").hidden = v == null || strongAt(v);
+    $$(`[data-scale="${k}"] button`).forEach(b => b.setAttribute("aria-pressed", String(v != null && +b.dataset.v === v)));
+    r.value = v == null ? 5 : v; r.classList.toggle("unset", v == null);
+    // The phone slider has no numbers on it, so it says where it is. The buttons above 480px show it themselves.
+    $(`[data-hint="${k}"]`).textContent = v == null ? "Slide to choose" : `${v}, ${WORDS[v]}`;
+  }
+  function setScale(k, v) {
+    S[k] = v; if (k === "s0") { S.pos0 = posOf(v); $("#sure").hidden = !strongAt(v); S.sure = null; }
+    paintScale(k);
+    summary(); persist();
+    // After the closing score, ask for the reasons once, beside the type field.
+    if (k === "s1" && U.view === "prop" && S.step === 2 && !S.askedWhy && !U.inSession && !statements(S.notes).length) { S.askedWhy = true; U.voice = true; say(whyLine(S.s1, S.s0), null); }
+  }
+  // A tap answers at once, even while the guide is still asking.
+  $$("[data-sure]").forEach(b => b.onclick = () => { S.sure = b.dataset.sure; if (!U.inSession) return go(S.sure === "record" ? 2 : 1); U.skip = true; try { speechSynthesis.cancel(); } catch (e) {} });
+  $$("[data-scale]").forEach(c => {
+    for (let v = 0; v <= 10; v++) {
+      const b = document.createElement("button"); b.textContent = v; b.dataset.v = v; b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", `${v}, ${WORDS[v]}`); b.onclick = () => setScale(c.dataset.scale, v); c.appendChild(b);
+    }
+  });
+  // While dragging, the slider shows where it is; the score is kept on release.
+  $$("[data-range]").forEach(r => {
+    r.addEventListener("input", () => { r.classList.remove("unset"); $(`[data-hint="${r.dataset.range}"]`).textContent = `${r.value}, ${WORDS[+r.value]}`; });
+    ["change", "pointerup"].forEach(ev => r.addEventListener(ev, () => { if (S[r.dataset.range] !== +r.value) setScale(r.dataset.range, +r.value); }));
+  });
+
+  // ---- footnotes: a tap opens the source as a line under the text it cites, which pushes the page down rather than
+  // covering anything; a second tap on the same mark, or the line's close button, shuts it ----
+  const dropNotes = () => $$(".fnnote").forEach(el => el.parentNode.removeChild(el));
+  document.addEventListener("click", e => {
+    const x = e.target.closest(".fnnote button"); if (x) { dropNotes(); return; }
+    const b = e.target.closest(".fn"); if (!b) return;
+    e.preventDefault();
+    const n = b.dataset.fn, host = b.closest(".pt, dd, li, p, blockquote, .bq, .gl, div") || b.parentElement;
+    const open = host.querySelector(":scope > .fnnote");
+    dropNotes();
+    if (open && open.dataset.fn === n) return;
+    host.insertAdjacentHTML("beforeend", `<span class="fnnote" role="note" data-fn="${n}">${n}. <a href="${SRC[n][1]}" target="_blank" rel="noopener">${SRC[n][0]}</a><button type="button" aria-label="Close source">&times;</button></span>`);
+  });
+
+  // ---- Details: source, figures and the reply ----
+  // A quote from a pamphlet paid argument carries a third element, true.
+  const paid = x => x[2] ? `<span class="paid">Paid argument</span>` : "";
+  function detBody(it, opt = {}) {
+    const src = it.src.map(x => `<blockquote>${x[0]}${x[1]}${paid(x)}</blockquote>`).join("");
+    const rep = opt.noReply ? "" : `<dt>The reply</dt><dd><blockquote>${it.resp[0]}${it.resp[1]}${paid(it.resp)}</blockquote></dd>`;
+    const gq = opt.guides && it.g.length ? `<dt>Guides</dt><dd>${it.g.map(([k, q]) => `${glinkq(k, q)}: "${q}"`).join("<br>")}</dd>` : "";
+    return `<div class="dd"><dl><dt>Source</dt><dd>${src}</dd><dt>Figures</dt><dd>${it.fig}</dd>${rep}${gq}</dl></div>`;
+  }
+  const det = (it, opt) => `<details class="det"><summary>Details <span class="chev">&#9656;</span></summary>${detBody(it, opt)}</details>`;
+
+  // ---- brief: four layouts for review, C by default. Every layout keeps .pt[data-id] with .marks and .xslot,
+  // so what the person says lands on the point it concerns whichever layout is showing. ----
+  const ids = sd => Object.keys(ITEMS).filter(id => ITEMS[id].side === sd);
+  // A brief may carry every argument and mark the most persuasive with top: true. Those show first; the rest sit
+  // behind "More arguments". A brief with no top marks shows every point.
+  const shown = sd => { const all = ids(sd); return all.some(id => ITEMS[id].top) ? all.filter(id => ITEMS[id].top) : all; };
+  const extra = sd => ids(sd).filter(id => !shown(sd).includes(id));
+  const moreArgs = (sd, render) => extra(sd).length ? `<details class="morearg"><summary>More arguments for ${LABEL[sd]} (${extra(sd).length}) <span class="chev">&#9656;</span></summary>${extra(sd).map(render).join("")}</details>` : "";
+  const NOW = () => `<dt>Now</dt><dd>${D.now}</dd>`;
+  const PROPB = () => `<dt>${D.label}</dt><dd>${D.does}</dd>`;
+  // Questions the research couldn't settle, from the brief's OPEN list, under the points.
+  const STILL_OPEN = () => (D.OPEN || []).length ? `<div class="card stillopen"><h3>Still open</h3><ul>${D.OPEN.map(q => `<li>${q}</li>`).join("")}</ul></div>` : "";
+  const backers = sd => `<span class="chips">${Object.keys(G).filter(k => G[k].p === sd).map(glink).join("")}</span>`;
+  const glines = it => it.g.map(([k, q]) => `<div class="gl">${glinkq(k, q)}: "${q}"</div>`).join("");
+  const point = (id, opt = {}) => { const it = ITEMS[id];
+    return `<div class="pt" data-id="${id}"><span class="lbl">${it.t}.</span><span class="marks"></span> ${it.s}${F(it.f[0])}${det(it, opt)}<div class="xslot"></div>${opt.guides ? "" : glines(it)}</div>`; };
+  const column = (sd, head, opt) => `<div class="card col ${sd}"><h3>Case for ${LABEL[sd]}</h3>${head}${shown(sd).map(id => point(id, opt)).join("")}${moreArgs(sd, id => point(id, opt))}</div>`;
+  // By topic: each argument's topic (it.topic, else its title) is one row, Yes and No side by side. Topics holding a
+  // top point show first; the rest sit behind "More topics".
+  const topicKey = id => ITEMS[id].topic || ITEMS[id].t;
+  const topicRow = tp => { const its = Object.keys(ITEMS).filter(id => topicKey(id) === tp);
+    return `<div class="trow"><h4>${tp}</h4><div class="tcols">${SIDES.map(sd => { const mine = its.filter(id => ITEMS[id].side === sd);
+      return `<div class="tside ${sd}"><span class="pos ${sd}">${LABEL[sd]}</span>${mine.length ? mine.map(id => point(id, { guides: true })).join("") : `<p class="none">No argument on this side.</p>`}</div>`; }).join("")}</div></div>`; };
+  const byTopic = () => { const all = [...new Set(Object.keys(ITEMS).map(topicKey))];
+    const anyTop = Object.values(ITEMS).some(it => it.top);
+    const lead = anyTop ? all.filter(tp => Object.keys(ITEMS).some(id => topicKey(id) === tp && ITEMS[id].top)) : all;
+    const rest = all.filter(tp => !lead.includes(tp));
+    return `<div class="card topics">${lead.map(topicRow).join("")}${rest.length ? `<details class="morearg"><summary>More topics (${rest.length}) <span class="chev">&#9656;</span></summary>${rest.map(topicRow).join("")}</details>` : ""}</div>`; };
+  // A ballot card (kind "card") has the official text only. Its Review shows the digest and what a vote means, and
+  // points to the guide, which answers from the full research.
+  const CARD = () => `<div class="card digest">${D.now || D.does ? `<dl>${D.now ? NOW() : ""}${D.does ? PROPB() : ""}</dl>` : ""}
+      <div class="vm">${SIDES.map((sd, i) => `<div class="${sd}"><b>A ${LABEL[sd]} Vote Means</b>${D[sd] || ""}${D.vf && i === SIDES.length - 1 ? F(D.vf) : ""}</div>`).join("")}</div></div>
+      <div class="card cardnote"><p class="small">${LIVE.on ? "We haven't written a brief for this one yet. Ask the guide anything: it has our full research, including every voter guide we read." : "This one has the official ballot text only. We haven't written a brief for it yet."}</p></div>`;
+  const LAYOUTS = {
+    Current: () => `<div class="card digest"><dl>${NOW()}${PROPB()}</dl></div><div class="pts">${SIDES.map(sd => column(sd, "")).join("")}</div>`,
+    A: () => `<div class="card digest"><dl><dt>The Way It Is Now</dt><dd>${D.now}</dd><dt>The Proposal</dt><dd>${D.does}</dd></dl>
+      <div class="vm">${SIDES.map(sd => `<div class="${sd}">${sd === "yes" ? `<b>A Yes Vote Means</b>${D.yes || ""}` : `<b>A No Vote Means</b>${D.no || ""}`}${D.vf ? F(D.vf) : ""}</div>`).join("")}</div></div>
+      <div class="pts">${SIDES.map(sd => column(sd, `<p class="who">Backed by ${backers(sd)}</p>`, { guides: true })).join("")}</div>`,
+    B: () => `<div class="card digest"><dl>${NOW()}${PROPB()}</dl></div><div class="card pairs"><div class="hdr"><span>The Point</span><span>The Reply</span></div>${
+      Array.from({ length: Math.max(...SIDES.map(sd => shown(sd).length)) }, (_, i) => i).flatMap(i => SIDES.map(sd => shown(sd)[i]).filter(Boolean)).map(id => { const it = ITEMS[id];
+        return `<div class="pair ${it.side}"><div class="pt" data-id="${id}"><span class="pos ${it.side}">${LABEL[it.side]}</span> <span class="lbl">${it.t}.</span><span class="marks"></span> ${it.s}${F(it.f[0])}${det(it, { noReply: true })}<div class="xslot"></div>${glines(it)}</div>
+          <div class="reply"><div class="rl">Reply</div>${it.resp[0]}${it.resp[1]}${paid(it.resp)}</div></div>`; }).join("")}${SIDES.map(sd => moreArgs(sd, id => point(id))).join("")}</div>`,
+    C: () => `<div class="card digest"><dl>${NOW()}${PROPB()}</dl><div class="sides">${[...SIDES, "neutral", "pending"].filter(sd => Object.values(G).some(g => g.p === sd)).map(sd => `<div${sd === "yes" || sd === "no" ? "" : ' class="other"'}><span class="pos ${sd}">${LABEL[sd]}</span>${backers(sd)}</div>`).join("")}</div></div>
+      <div class="pts">${SIDES.map(sd => column(sd, "", { guides: true })).join("")}</div>`,
+    Topic: () => `<div class="card digest"><dl>${NOW()}${PROPB()}</dl><div class="sides">${[...SIDES, "neutral", "pending"].filter(sd => Object.values(G).some(g => g.p === sd)).map(sd => `<div${sd === "yes" || sd === "no" ? "" : ' class="other"'}><span class="pos ${sd}">${LABEL[sd]}</span>${backers(sd)}</div>`).join("")}</div></div>${byTopic()}`,
+  };
+  function layout(v, kept) {
+    if (!LAYOUTS[v]) v = "C";
+    U.layout = v;
+    // Keep what the session has added (More Details) across a switch; a proposition brings its own back.
+    if (!kept) { kept = {}; $$("#brief .pt").forEach(pt => { const x = $(".xslot", pt); if (x && x.innerHTML) kept[pt.dataset.id] = x.innerHTML; }); }
+    // The Yes and No list is the default; a button right after it switches the same points to the topic view and back.
+    if (v !== "Topic") U.sideLayout = v;
+    if (D.kind === "card") { $("#brief").innerHTML = CARD(); return; }
+    const sw = `<p class="viewsw"><button type="button" class="btn ghost" id="viewsw">${v === "Topic" ? "Back to Yes and No" : "See both sides by topic"}</button></p>`;
+    $("#brief").innerHTML = LAYOUTS[v]() + sw + STILL_OPEN();
+    $("#viewsw").onclick = () => layout(v === "Topic" ? (U.sideLayout || "C") : "Topic");
+    Object.entries(kept).forEach(([id, h]) => { const x = $(`#brief .pt[data-id="${id}"] .xslot`); if (x) x.innerHTML = h; });
+    $$("#lsw button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
+    if (typeof marks === "function" && S.notes) marks();
+  }
+  Object.keys(LAYOUTS).forEach(v => { const b = document.createElement("button"); b.dataset.v = v; b.textContent = v; b.onclick = () => layout(v); $("#lsw").appendChild(b); });
+  U.layout = (location.hash.match(/layout=(\w+)/) || [])[1];
+
+  // ---- notes: a live markdown note in the person's words ----
+  const GROUPS = [["view", "Your view"], ["why", "Why"], ["value", "What you value"]];
+  let nid = Math.max(0, ...Object.values(ST).flatMap(st => st.notes.map(n => n.id)));
+  function addNote(g, text, extra = {}) { const n = { id: ++nid, g, you: text, guide: "", ...extra, fresh: true }; S.notes.push(n); drawNotes(); return n; }
+  // Escape first: a note or a guide reply must never reach the page as raw HTML.
+  // No images, only http(s) links: a reply may carry injected text.
+  const md = t => window.marked ? marked.parseInline(esc(t)).replace(/<img[^>]*>/g, "").replace(/href="(?!https?:)[^"]*"/g, 'href="#"') : esc(t);
+  // A live guide cites as [n]; render those as the page's own footnote marks.
+  const fnMarks = h => h.replace(/\[(\d{1,2})\]/g, (m, k) => SRC[k] ? F(k) : m);
+  function li(n, mine = false) { return `<li data-n="${n.id}" class="${n.fresh ? "new" : ""}">${mine ? "" : `<span class="by">You:</span> `}<span class="nt" contenteditable="true">${md(n.you)}</span>${n.guide ? `<div class="gans"><span class="by">Guide:</span> ${fnMarks(md(n.guide))}${links(n.links)}</div>` : ""}</li>`; }
+  // Sources the live guide attached to an answer (a research file's web page, or a page it read), shown and never spoken.
+  const links = ls => (ls || []).filter(l => /^https?:\/\//.test(l.url)).map(l => ` <a class="glink" href="${esc(l.url).replace(/"/g, "&quot;")}" target="_blank" rel="noopener">${esc(l.label || "Source")}</a>`).join("");
+  function noteHTML() {
+    const head = GROUPS.filter(([g]) => S.notes.some(n => n.g === g)).map(([g, h]) =>
+      `<div class="ngroup"><h4>${h}</h4><ul>${S.notes.filter(n => n.g === g).map(li).join("")}</ul></div>`).join("");
+    const rest = S.notes.filter(n => n.g === "q");
+    return head + (rest.length ? `<div class="ngroup"><ul>${rest.map(li).join("")}</ul></div>` : "");
+  }
+  function wire(root) {
+    $$("li[data-n]", root).forEach(el0 => {
+      const n = S.notes.find(x => x.id === +el0.dataset.n), el = $(".nt", el0);
+      el.addEventListener("focus", () => { el.textContent = n.you; });
+      el.addEventListener("blur", () => { n.you = el.textContent; if (!n.you.trim()) S.notes = S.notes.filter(x => x !== n); setTimeout(drawNotes, 0); });
+      el.addEventListener("keydown", e => {
+        if (e.key === "Enter") {
+          e.preventDefault(); n.you = el.textContent;
+          const nn = { id: ++nid, g: n.g, you: "", guide: "" }; S.notes.splice(S.notes.indexOf(n) + 1, 0, nn);
+          S.focusId = nn.id; el.blur();
+        }
+        if (e.key === "Backspace" && !el.textContent) { e.preventDefault(); S.notes = S.notes.filter(x => x !== n); el.blur(); }
+      });
+    });
+  }
+  function drawNotes() {
+    const html = noteHTML();
+    // Record lists the person's statements, not their questions, in the order they said them, as the summary does.
+    const said = statements(S.notes);
+    const rec = said.length ? `<div class="ngroup"><h4>In your words</h4><ul>${said.map(n => li({ ...n, guide: "" }, true)).join("")}</ul></div>` : "";
+    [[$("#notesBody"), html], [$("#recNotes"), rec], [$("#sheetNotes"), html]].forEach(([root, h]) => {
+      if (root.contains(document.activeElement)) return;
+      root.innerHTML = h; wire(root);
+    });
+    persist();
+    S.notes.forEach(n => { n.fresh = false; });
+    if (S.focusId) { const id = S.focusId; S.focusId = null; const vis = [$("#sheetNotes"), $("#notesBody"), $("#recNotes")].find(r => r.offsetParent); const t = vis && $(`li[data-n="${id}"] .nt`, vis); t && t.focus(); }
+    marks();
+  }
+  function marks() {
+    $$(".pt").forEach(pt => {
+      const ns = S.notes.filter(n => n.ref === pt.dataset.id);
+      $(".marks", pt).innerHTML = ns.length ? `<span class="mark">You ${ns[ns.length - 1].stance}</span>` : "";
+    });
+  }
+  $("#sheetClose").onclick = () => { $("#sheet").hidden = true; };
+  drawNotes();
+
+  // ---- the agent: captions show only its current line. Pause stops it. ----
+  function bandPad() { document.body.style.setProperty("--bandh", ($("#recband").offsetHeight + 8) + "px"); }
+  // The fixed bar changes height with the caption; the page's bottom padding follows it.
+  if (window.ResizeObserver) new ResizeObserver(bandPad).observe($("#recband"));
+  function caption(text) { $("#cap").classList.add("on"); $("#capTxt").textContent = text; bandPad(); }
+  let lit = null;
+  function offscreen(el) { const r = el.getBoundingClientRect(); return r.bottom < 0 || r.top > window.innerHeight - ($("#recband").offsetHeight || 0); }
+  function jumpCheck() { $("#jump").classList.toggle("on", !!lit && offscreen(lit)); }
+  function highlight(el) { if (lit) lit.classList.remove("speaking"); lit = el; if (el) el.classList.add("speaking"); jumpCheck(); }
+  $("#jump").onclick = () => { if (lit) lit.scrollIntoView({ block: "center", behavior: "smooth" }); setTimeout(jumpCheck, 600); };
+  const PACE = 400; // ms per spoken word, 150 words a minute
+  async function waitWhilePaused() { while (U.paused) await new Promise(r => setTimeout(r, 200)); }
+  async function sleep(ms) { if (U.fast) return; const t = U.tok; let left = ms; while (left > 0 && t === U.tok && !U.skip) { await waitWhilePaused(); await new Promise(r => setTimeout(r, 100)); left -= 100; } }
+  const spoken = { agent: 0, person: 0 }, per = {};
+  // Soniox reads bracketed delivery tags such as [warm] or [calm]. They are spoken through the board's voice and stripped everywhere they would be shown or read by the browser voice.
+  const untag = t => t.replace(/\[[a-z ]{2,20}\]\s*/gi, "").trim();
+  async function say(tagged, el, cap = true) {
+    // The caption carries the one-sentence step intros only, while they are spoken. Answers go into the notes instead.
+    const text = untag(tagged);
+    await waitWhilePaused(); U.skip = false; highlight(el); if (cap) caption(text); spoken.agent += text.split(/\s+/).length; per[S.step] = (per[S.step] || 0) + text.split(/\s+/).length;
+    const av = AV.v && AV.v.abilities.voice && U.voice && !U.fast;
+    if (av) {
+      // The board's voice speaks; a cut-in stops the line on its own, and the promise resolves either way.
+      let done = false; const t = U.tok;
+      AV.v.speak(tagged, AV.voice ? { voice: AV.voice } : {}).catch(() => {}).finally(() => { done = true; });
+      while (!done && t === U.tok && !U.skip && !U.paused) await new Promise(r => setTimeout(r, 100));
+      if (!done) { try { AV.v.stop(); } catch (e) {} }
+    } else {
+      if (U.voice && window.speechSynthesis) { try { speechSynthesis.cancel(); speechSynthesis.speak(new SpeechSynthesisUtterance(text)); } catch (e) {} }
+      await sleep(400 + text.split(/\s+/).length * PACE);
+    }
+    if (cap && $("#capTxt").textContent === text) { caption(""); $("#cap").classList.remove("on"); bandPad(); }
+  }
+  // The guide's answer to something the person said: added under their words in the notes, and spoken.
+  async function answer(n, text, el = null) {
+    n.guide = untag(text); n.fresh = true; drawNotes();
+    // Bring the answer into view, clear of the bottom bar (li scroll-margin), wherever the notes are showing.
+    const li = [$("#notesBody"), $("#recNotes"), $("#sheetNotes")].map(r => $(`li[data-n="${n.id}"]`, r)).find(x => x && x.offsetParent);
+    if (li) li.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    await say(text.replace(/\s*\[\d{1,2}\]/g, ""), el, false);
+  }
+  async function person(text, route = true) {
+    // The person speaks. Their words go to the notes only. An answer on the scale goes to the scale, not the notes.
+    await waitWhilePaused(); caption(""); $("#cap").classList.remove("on");
+    const n = text.split(/\s+/).length; spoken.person += n; per[S.step] = (per[S.step] || 0) + n;
+    await sleep(300 + n * PACE);
+    if (route) await handle(text);
+  }
+  function pause(on) {
+    U.paused = on; $("#recpill").classList.toggle("paused", on); $("#recPause").textContent = on ? "Resume" : "Pause";
+    try { on ? speechSynthesis.pause() : speechSynthesis.resume(); } catch (e) {}
+    // With the board's voice, Pause stops the line and the listening; Resume listens again.
+    if (AV.v) { try { if (on) AV.v.stop(); } catch (e) {} if (AV.listening) { if (on) { AV.v.unlisten(); AV.listening = false; AV.resume = true; voiceState("Paused"); } } else if (!on && AV.resume) { AV.resume = false; startListening(); } }
+  }
+  $("#recPause").onclick = () => pause(!U.paused);
+  function startRec() { if (U.rec) return; U.rec = true; document.body.classList.add("rec"); bandPad(); }
+  function stopRec() { U.rec = false; document.body.classList.remove("rec"); }
+
+  // ---- understanding what the person says ----
+  const quoteBack = t => { const w = t.split(/\s+/); return w.length > 12 ? w.slice(0, 12).join(" ") + "..." : t; };
+  const isQuestion = t => /\?\s*$/.test(t) || /^(what|how|who|why|when|does|do|is|are|can|will|would|could|tell me|say more|explain)\b/i.test(t.trim());
+  function counterpoint(text, lean) {
+    const th = THEMES.find(t => rx(t.re).test(text)) || THEMES[0];
+    let id = th ? (lean === "yes" ? th.no : th.yes) : ids(lean === "yes" ? "no" : "yes")[0];
+    const pool = ids(ITEMS[id].side);
+    if (S.used.includes(id) || S.notes.some(n => n.ref === id)) id = pool.find(p => !S.used.includes(p) && !S.notes.some(n => n.ref === p)) || id;
+    S.used.push(id); return id;
+  }
+  function showCounter(id) {
+    const it = ITEMS[id];
+    const pt = $(`#brief .pt[data-id="${id}"]`), d = $("details.det", pt);
+    const ma = pt && pt.closest("details.morearg"); if (ma) ma.open = true;
+    if (d) d.open = true;
+    highlight(pt);
+  }
+  async function handle(t) {
+    t = (t || "").trim(); if (!t) return;
+    if (/^(i'm|i am) done\b/i.test(t)) { highlight(null); go(2); if (LIVE.on) await say("[warm] Thanks for walking through this with me. Here's what you've said so far. Where do you stand now?", $("#recNotes")); return; }
+    if (LIVE.on) { await askGuide(t); return; }
+    const org = ORG.find(o => rx(o.re).test(t)), topic = topicOf(t);
+    const stance = /\b(dis)?agree\b|not convinced|don't buy|makes sense/i.test(t) ? (/disagree|don't agree|not convinced|don't buy/i.test(t) ? "disagree" : "agree") : null;
+    if (org && /tell me|about|who/i.test(t)) {
+      // A group quoted in the pamphlet (kind "pamphlet") has a side but no guide entry.
+      const g = G[org.k];
+      const stand = !g ? `A ${LABEL[org.side]} argument in the pamphlet` : g.p === "yes" || g.p === "no" ? `${g.n} recommends ${LABEL[g.p]}` : g.p === "neutral" ? `${g.n} is neutral` : g.p === "pending" ? `${g.n} hasn't published a position yet` : `${g.n} takes no position`;
+      const said = !g ? `${stand} says` : g.p === "yes" || g.p === "no" ? `${g.n} says ${LABEL[g.p]}` : stand;
+      await answer(addNote("q", t), `${said}${org.q ? `: "${org.q}"` : g && g.p !== "yes" && g.p !== "no" ? "." : ", with no reason given."} The sources here don't describe the group beyond that.`);
+      return;
+    }
+    if (topic && X[topic] && /say more|tell me more|more about|expand|elaborate|explain|deeper/i.test(t)) {
+      const n = addNote("q", t);
+      const pt = $(`.pt[data-id="${topic}"]`), [x, f] = X[topic];
+      const blk = document.createElement("div"); blk.className = "added";
+      blk.innerHTML = `<span class="tag">More Details</span>${x}${F(f[0])}`;
+      $(".xslot", pt).appendChild(blk);
+      await answer(n, `I added more details under ${inWords(ITEMS[topic])}.`, pt);
+      return;
+    }
+    if (stance && topic) {
+      const n = addNote("view", t, { ref: topic, stance });
+      S.mode = "why"; S.reasonText = "";
+      await answer(n, `Noted: you ${stance} with ${inWords(ITEMS[topic])}. What makes you say that?`, $(`.pt[data-id="${topic}"]`));
+      return;
+    }
+    if (isQuestion(t) && S.mode === "open") { await answer(addNote("q", t), "The guide isn't connected, so I can't answer that yet."); return; }
+    if (S.mode === "open") { S.mode = "why"; await answer(addNote("view", t), `You said "${quoteBack(t)}" What makes you say that?`); }
+    else if (S.mode === "why") { S.reasonText = t; S.mode = "value"; await answer(addNote("why", t), "What matters to you that leads you there?"); }
+    else if (S.mode === "value") {
+      // A ballot card has no points to bring from the other side.
+      if (!Object.keys(ITEMS).length) { S.mode = "open"; await answer(addNote("value", t), "Thanks. Say more, ask anything, or say you're done."); return; }
+      const n = addNote("value", t); S.mode = "weigh";
+      const views = S.notes.filter(n => n.g === "view");
+      const lean = S.pos0 === "yes" || S.pos0 === "no" ? S.pos0 : (views.some(n => n.ref && n.ref[0] === "n" && n.stance === "disagree") ? "yes" : "no");
+      const id = counterpoint(S.reasonText + " " + t, lean);
+      showCounter(id);
+      await answer(n, "Here's a point from the other side on that. How do you weigh it against what matters to you?", $(`#brief .pt[data-id="${id}"]`));
+    } else if (S.mode === "weigh") { S.mode = "open"; await answer(addNote("view", t), "Thanks. Say more, ask anything, or say you're done."); }
+  }
+
+  // ---- live guide: a long-running Claude Code session joins through the hub (hub.mjs, channel.mjs).
+  // With no session connected, or the page opened as a file, the scripted demo below runs instead. ----
+  // The public guide keys a visitor's session on this id, so there it is long and random.
+  const LIVE = { on: false, pid: STATIC ? (sessionStorage.dpid2 ||= "p" + Array.from(crypto.getRandomValues(new Uint8Array(12)), b => (b % 36).toString(36)).join(""))
+    : (sessionStorage.dpid ||= "p" + Math.random().toString(36).slice(2, 10)), wait: [] };
+  let VSTATE = "";
+  function setLive(on) {
+    const was = LIVE.on;
+    LIVE.on = on; document.body.classList.toggle("guideoff", !on); $(".mockrow").style.display = STATIC && !on ? "none" : ""; $("#mockTag").textContent = (on ? "Guide Agent Connected" : STATIC ? "Guide off" : "mockup") + (VSTATE ? ` · ${VSTATE}` : "");
+    // A card's note says whether the guide can answer, so it follows the guide's state.
+    if (was !== on && U.view === "prop" && D && D.kind === "card" && S.step === 1) layout(U.layout);
+    bandPad();
+  }
+  async function askGuide(t) {
+    // Their words go to the notes now; the guide's answer is added under them when it comes back.
+    const n = addNote("q", t); LIVE.wait.push({ n, at: performance.now() });
+    try {
+      const msg = { pid: LIVE.pid, text: t, prop: U.cur, step: S.step, s0: S.s0, t: Math.round((S.spent + Date.now() - U.at) / 1000) };
+      if (STATIC) { await askWorker(n, msg); return; }
+      if (AV.v && AV.v.abilities.say) {
+        // Inside the board a frame's own POST is refused, so the voice socket posts {"text": <this JSON>} to the hub,
+        // which unpacks it. The hub answers 200 when a guide took it and 202 when none is connected.
+        const st = await AV.v.say(JSON.stringify(msg));
+        if ((st && typeof st === "object" ? st.status : st) !== 200) throw new Error("no guide");
+      } else {
+        const r = await fetch("say", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(msg) }).then(x => x.json());
+        if (!r.guide) throw new Error("no guide");
+      }
+    } catch (e) { LIVE.wait = LIVE.wait.filter(w => w.n !== n); if (!STATIC || e.off) setLive(false); await answer(n, e.say || "The guide isn't connected right now."); }
+  }
+  // The public guide (worker/src/index.mjs) answers one message with a stream of JSON lines: {type:"reply", text,
+  // note_group, links}, one or more (a "let me look that up" line can come before the answer), or {type:"off" or
+  // "error", message}. The first reply goes under the person's words; later ones are added to it.
+  async function askWorker(n, msg) {
+    LIVE.wait = LIVE.wait.filter(w => w.n !== n);
+    let r;
+    try { r = await fetch(`${GUIDE}/say`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(msg) }); }
+    catch (e) { throw Object.assign(new Error("network"), { say: "The guide couldn't be reached. You can keep going without it." }); }
+    if (!r.ok || !r.body) throw Object.assign(new Error(`HTTP ${r.status}`), { say: "The guide couldn't answer just now. Try again in a moment." });
+    const rd = r.body.getReader(), dec = new TextDecoder();
+    let buf = "", got = 0, end = null, voice = Promise.resolve();
+    for (;;) {
+      const { value, done } = await rd.read();
+      if (value) buf += dec.decode(value, { stream: true });
+      let i;
+      while ((i = buf.indexOf("\n")) >= 0) {
+        const line = buf.slice(0, i).trim(); buf = buf.slice(i + 1);
+        let m; try { m = line && JSON.parse(line); } catch (e) { m = null; }
+        if (!m) continue;
+        if (m.type === "reply" && m.text) {
+          if (!got++) { n.g = m.note_group || "q"; n.links = m.links || []; voice = voice.then(() => answer(n, m.text)); }
+          else { n.links = [...(n.links || []), ...(m.links || [])].slice(0, 3); const t = m.text; voice = voice.then(() => { n.guide = (n.guide + " " + untag(t)).trim(); drawNotes(); return say(t.replace(/\s*\[\d{1,2}\]/g, ""), null, false); }); }
+        } else if (m.type === "off" || m.type === "error") end = m;
+      }
+      if (done) break;
+    }
+    if (!got) throw Object.assign(new Error(end ? end.type : "no reply"), { say: (end && end.message) || "The guide couldn't answer just now. Try again in a moment.", off: !!end && end.type === "off" });
+    await voice;
+  }
+  async function guideStatus() {
+    try { const st = await fetch(`${GUIDE}/status`, { cache: "no-store" }).then(x => x.json()); setLive(!!st.on); }
+    catch (e) { setLive(false); }
+  }
+  function onReply(m) {
+    const w = LIVE.wait.shift();
+    if (w) { w.n.g = m.note_group || "q"; w.n.links = m.links || []; console.log("guide reply ms", Math.round(performance.now() - w.at)); answer(w.n, m.text); }
+    else say(m.text.replace(/\s*\[\d{1,2}\]/g, ""), null, false);
+  }
+  if (STATIC) { setLive(false); if (GUIDE) { guideStatus(); setInterval(guideStatus, 120000); } }
+  else if (/^https?:$/.test(location.protocol) && window.EventSource) {
+    const es = new EventSource(`events?pid=${LIVE.pid}`);
+    es.onmessage = e => { const m = JSON.parse(e.data); if (m.type === "status") setLive(!!m.guide); if (m.type === "reply") onReply(m); };
+    es.onerror = () => setLive(false);
+  }
+  // A session runs while its proposition is open. Leaving for the picker bumps U.tok, and the session stops at its next step.
+  const ask = async (k, tok) => { while (S[k] == null) { if (tok !== U.tok) throw CANCEL; await new Promise(r => setTimeout(r, 200)); } };
+  const alive = tok => { if (tok !== U.tok) throw CANCEL; };
+  const intro = () => D.intro || `[warm] Before we dive in, where do you stand on ${D.label} right now?`;
+  const reviewLine = () => D.kind === "card" ? "[warm] Here's what it does and what a vote means. Ask me anything, or tell me what you think."
+    : "[warm] Here's what it does and the strongest points on each side. Ask me anything, or tell me what you think.";
+  // Bryan, 2026-10-29: concise but caring, warm and interested. Ask why in their direction, and ask what changed when they moved.
+  function whyLine(v, from) {
+    if (v != null && from != null && Math.abs(v - from) >= 2) return "[curious] You moved from " + from + " to " + v + ". What changed your mind?";
+    const side = v == null ? "feel the way you do" : v > 5 ? "support this" : v < 5 ? "oppose this" : "feel torn on this";
+    return "[curious] Tell me more about why you " + side + "?";
+  }
+  function runSession() {
+    // The scripted demo plays only when no guide is connected and the proposition has one.
+    const run = LIVE.on || !D.demo || STATIC ? liveSession : session;
+    run().catch(e => { if (e !== CANCEL) throw e; });
+  }
+  async function liveSession() {
+    // One sentence per step, then the person leads and the guide session answers.
+    const tok = U.tok;
+    U.inSession = true; U.voice = !STATIC; startRec();
+    // Cleared before the intro, so a tap on Next: Review during the intro still counts.
+    S.goReview = false;
+    await say(intro(), $(".ballot"), false); alive(tok);
+    await ask("s0", tok);
+    // Bryan, 2026-10-20: someone at 0 to 2 or 8 to 10 may already know why, so offer to skip straight to recording it.
+    const strong = () => strongAt(S.s0);
+    // Nothing moves on by itself: Next: Review, or one of the "pretty sure" choices, takes the person on.
+    let askedSure = false;
+    for (;;) {
+      alive(tok);
+      if (S.goReview || S.sure === "review") break;
+      if (S.sure === "record") { go(2); S.askedWhy = true; await say(whyLine(S.s0), null); highlight(null); U.inSession = false; return; }
+      if (strong() && !askedSure) { askedSure = true; await say("[warm] It sounds like you feel strongly about this. Would you like to look at the arguments first, or go straight to telling me why?", $("#sure"), false); continue; }
+      await new Promise(r => setTimeout(r, 150));
+    }
+    go(1);
+    await say(reviewLine(), null);
+    highlight(null); U.inSession = false;
+  }
+
+  // ---- typed fallback, from the keyboard icon in the pill ----
+  // What the person types or says. On Start or Record, a bare number is a score.
+  function input(t) {
+    t = (t || "").trim(); if (!t || U.view !== "prop") return;
+    const n = t.match(/^\s*(?:a |an |i'm (?:a |at )?)?(10|[0-9]|zero|one|two|three|four|five|six|seven|eight|nine|ten)\s*\.?\s*$/i);
+    const NUM = { zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+    if ((S.step === 0 || S.step === 2) && n) { const v = n[1].toLowerCase() in NUM ? NUM[n[1].toLowerCase()] : +n[1]; setScale(S.step === 0 ? "s0" : "s1", v); return; }
+    // A stance in words sets the scale too, so "I'm undecided" works like "5".
+    const w = t.toLowerCase(), k = S.step === 0 ? "s0" : S.step === 2 ? "s1" : null;
+    // A question, a negated stance ("I don't support it") or a hedge goes to the guide instead of the scale.
+    const strongly = /\b(strongly|definitely|totally|absolutely)\b/.test(w);
+    const negated = /\b(not|don'?t|doesn'?t|never|isn'?t|kinda|kind of|sort of|somewhat)\b/.test(w.replace(/\bnot (really )?sure\b/g, ""));
+    const stance = /\b(undecided|unsure|neutral|torn|on the fence)\b/.test(w) || /^(i'?m |i am )?(not (really )?sure|no idea|i don'?t know)\.?$/.test(w) ? 5
+      : negated ? null
+      : /\b(oppose|against|no on|vote no)\b/.test(w) ? (strongly ? 0 : 3)
+      : /\b(support|for it|in favou?r|yes on|vote yes)\b/.test(w) ? (strongly ? 10 : 7) : null;
+    if (k && stance != null && !isQuestion(t) && w.split(/\s+/).length <= 8) { setScale(k, stance); return; }
+    handle(t);
+  }
+  $("#kb").addEventListener("keydown", e => {
+    if (e.key !== "Enter") return;
+    const t = $("#kb").value.trim(); $("#kb").value = ""; input(t);
+  });
+
+  // ---- the scripted session (simulates the voice agent and the person) ----
+  async function session() {
+    if (U.inSession) return; U.inSession = true; startRec();
+    const tok = U.tok, d = D.demo;
+    // One sentence of intro per step, then hand the floor to the person. The screen carries the detail, so the guide doesn't read it out.
+    await say(intro(), $(".ballot"), false); alive(tok);
+    await person(d.s0[0], false); alive(tok);
+    setScale("s0", d.s0[1]);
+    go(1);
+    await say(reviewLine(), null); alive(tok);
+    for (const line of d.lines) { await person(line); alive(tok); }
+    await say("[warm] Thanks for walking through this with me. Here's what you've said so far. Where do you stand now?", $("#recNotes")); alive(tok);
+    await person(d.s1[0], false); alive(tok);
+    setScale("s1", d.s1[1]);
+    await say(`[warm] Thank you for sharing that. You're at ${d.s1[1]}, ${WORDS[d.s1[1]].toLowerCase()}. Tap Save to keep it.`, null);
+    highlight(null); U.inSession = false;
+    console.log("spoken words", JSON.stringify(spoken), JSON.stringify(per));
+  }
+
+  // ---- setup: a meeting preparation room. The mic starts on load, in its own tab or in the board's frame. ----
+  const framed = window.self !== window.top;
+  const MIC = { stream: null, on: true, ctx: null, deviceId: null, sinkId: null };
+  function setMsg(t) { $("#pvmsg").textContent = t; }
+  async function listDevices() {
+    const ds = await navigator.mediaDevices.enumerateDevices();
+    const fill = (sel, kind, cur) => { const xs = ds.filter(d => d.kind === kind && d.deviceId && d.deviceId !== "default" && d.label);
+      sel.innerHTML = `<option value="">System default</option>` + xs.map(d => `<option value="${d.deviceId}">${d.label}</option>`).join("");
+      sel.value = xs.some(d => d.deviceId === cur) ? cur : ""; };
+    fill($("#micSel"), "audioinput", MIC.deviceId);
+    fill($("#spkSel"), "audiooutput", MIC.sinkId);
+  }
+  async function startMic(deviceId) {
+    if (MIC.stream) MIC.stream.getTracks().forEach(t => t.stop());
+    try {
+      MIC.stream = await navigator.mediaDevices.getUserMedia({ audio: deviceId ? { deviceId: { exact: deviceId } } : true });
+      MIC.deviceId = MIC.stream.getAudioTracks()[0].getSettings().deviceId || deviceId;
+      MIC.ctx = MIC.ctx || new (window.AudioContext || window.webkitAudioContext)();
+      const an = MIC.ctx.createAnalyser(); an.fftSize = 256; MIC.ctx.createMediaStreamSource(MIC.stream).connect(an);
+      const buf = new Uint8Array(an.frequencyBinCount), bars = $$("#smeter i"), mine = MIC.stream;
+      (function loop() { if (MIC.stream !== mine || U.view !== "setup") return;
+        an.getByteTimeDomainData(buf); let mx = 0; for (const v of buf) mx = Math.max(mx, Math.abs(v - 128)); const lvl = MIC.on ? Math.min(1, mx / 64) : 0;
+        bars.forEach((b, k) => { b.style.height = `${6 + Math.round(34 * lvl)}px`; b.style.background = k / bars.length < lvl ? "#e8eaee" : "#6b7280"; });
+        requestAnimationFrame(loop); })();
+      setMsg("Say something. The bars move when we can hear you.");
+      await listDevices();
+    } catch (e) {
+      $("#micToggle").disabled = true; $("#smeter").hidden = true;
+      setMsg(e && e.name === "NotAllowedError" ? "Microphone blocked. Allow it from the icon at the left of the address bar, then reload. You can also type." : "No microphone found. You can type instead.");
+    }
+  }
+  $("#micToggle").onclick = () => { MIC.on = !MIC.on; MIC.stream && MIC.stream.getAudioTracks().forEach(t => t.enabled = MIC.on);
+    const b = $("#micToggle"); b.setAttribute("aria-pressed", String(MIC.on)); b.setAttribute("aria-label", MIC.on ? "Turn microphone off" : "Turn microphone on");
+    setMsg(MIC.on ? "Say something. The bars move when we can hear you." : "Your microphone is off. You can type instead."); };
+  $("#micSel").onchange = e => startMic(e.target.value || undefined);
+  $("#spkSel").onchange = e => { MIC.sinkId = e.target.value || null; };
+  $("#testSound").onclick = async () => {
+    U.voice = true;
+    try { const ac = new (window.AudioContext || window.webkitAudioContext)();
+      if (MIC.sinkId && ac.setSinkId) await ac.setSinkId(MIC.sinkId);
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.frequency.value = 523; g.gain.setValueAtTime(0.15, ac.currentTime); g.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + 0.6);
+      o.connect(g).connect(ac.destination); o.start(); o.stop(ac.currentTime + 0.6); } catch (e) {}
+  };
+  // The board's frame allows the microphone, so a framed page asks for it too. Device pickers stay hidden there.
+  if (framed) $("#devs").hidden = true;
+  // The public page has no voice input yet, so it doesn't ask for the microphone.
+  if (!/fast/.test(location.hash) && !STATIC) startMic();
+  $("#ready").onclick = () => {
+    show("picker");
+    // The board's listener takes over the microphone from the preview.
+    if (AV.v && AV.v.abilities.listen && MIC.on) { if (MIC.stream) MIC.stream.getTracks().forEach(t => t.stop()); startListening(); }
+    else if (!MIC.on) voiceState("Mic is off");
+  };
+
+  // ---- Workspaces app voice: speaking, listening and writing through the board's socket (app-voice.md in
+  // claude-live-feedback-plugin). Without it, everything above uses the browser's speech and fetch. ----
+  const AV = { v: null, listening: false };
+  // The tag beside "Guide Agent Connected" says whether the board is hearing the person, so a silent failure shows.
+  function voiceState(st) { VSTATE = st; setLive(LIVE.on); }
+  function startListening() {
+    voiceState("Starting mic");
+    const t = setTimeout(() => { if (!AV.listening) voiceState("Mic didn't start"); }, 8000);
+    AV.v.listen({ mic: true }).then(() => { clearTimeout(t); AV.listening = true; voiceState("Listening"); })
+      .catch(e => { clearTimeout(t); AV.listening = false; voiceState(`Mic error: ${(e && e.message || "unknown").slice(0, 80)}`); });
+  }
+  // Bryan chose Soniox's Mina. If Soniox refuses the name (bad_voice or voice_failed), later lines use the board's default voice.
+  AV.voice = "Mina";
+  async function connectVoice() {
+    if (!window.cwAppVoice) { voiceState("No board voice script"); return; }
+    try {
+      voiceState("Connecting voice");
+      const v = await cwAppVoice.connect();
+      AV.v = v; console.log("app voice ready", JSON.stringify(v.abilities));
+      voiceState(v.abilities.listen ? "Voice ready" : "Voice can't listen");
+      // Someone who joined before the voice connected starts listening now.
+      if (U.view !== "setup" && v.abilities.listen && MIC.on && !AV.listening) { if (MIC.stream) MIC.stream.getTracks().forEach(t => t.stop()); startListening(); }
+      v.on("heard", text => { if (VSTATE !== "Hearing you") voiceState("Hearing you"); if (U.view === "prop" && text) caption(text); });
+      v.on("turn-end", text => { if (U.paused || !AV.listening) return; voiceState("Listening"); if ($("#capTxt").textContent === text) { caption(""); $("#cap").classList.remove("on"); } input(text); });
+      v.on("error", e => { console.log("app voice error", JSON.stringify(e)); if (/bad_voice|voice_failed/.test(JSON.stringify(e))) AV.voice = null; });
+      v.on("close", () => { AV.v = null; AV.listening = false; voiceState("Voice closed"); });
+    } catch (e) { AV.v = null; voiceState(`Voice unavailable: ${(e && e.message || "unknown").slice(0, 80)}`); }
+  }
+  if (!STATIC) connectVoice();
+
+  // ---- record: Save keeps the position and returns to the picker. Time spent shows only in the summary. ----
+  function summary() {
+    $("#ba").textContent = $("#started1").textContent = S.s0 != null ? `You started at ${words(S.s0)}.` : "";
+    const same = !!S.saved && S.saved.s1 === S.s1 && (S.whyTyped || "") === $("#whyText").value.trim();
+    $("#save").disabled = S.s1 == null || same; $("#save").textContent = same ? "Saved" : "Save my record";
+  }
+  $("#whyText").addEventListener("input", () => summary());
+  $("#save").onclick = () => {
+    if (S.s1 == null) return;
+    // Reasons typed in the box (the guide-off page) are kept as one note in the person's words, replaced on a re-save.
+    const typed = $("#whyText").value.trim(); S.whyTyped = typed;
+    S.notes = S.notes.filter(n => !n.typed); if (typed) addNote("why", typed, { typed: true });
+    S.saved = { s0: S.s0, s1: S.s1, spent: S.spent + Date.now() - U.at }; persist();
+    const id = U.cur;
+    show("picker");
+    // The saved row comes into view and flashes.
+    const row = $(`#plist .prow[data-p="${id}"]`); if (row) { row.scrollIntoView({ block: "center" }); row.classList.add("justsaved"); }
+  };
+
+  // Reviewer shortcut: #fast plays Proposition B's session instantly. #flip=0|1 pins the Yes and No order.
+  // The measure list loads in the background while the person sets up; the picker redraws when it arrives.
+  const catalogReady = loadCatalog().then(() => { if (U.view === "picker") drawPicker(); });
+  // The public page has no microphone to set up, so it opens on the picker.
+  if (/fast/.test(location.hash)) { U.fast = true; catalogReady.then(() => enterProp((location.hash.match(/prop=([A-Z0-9-]+)/) || [])[1] || "SF-B")); } else show(STATIC ? "picker" : "setup");
+})();
+</script>
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({ startOnLoad: false, theme: "base", flowchart: { curve: "linear", htmlLabels: true, nodeSpacing: 30, rankSpacing: 34 },
+    themeVariables: { fontFamily: "-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif", fontSize: "14px",
+      primaryColor: "#eef0f3", primaryBorderColor: "#9aa0a8", primaryTextColor: "#1f2430", lineColor: "#8b93a1", edgeLabelBackground: "#ffffff" } });
+  // The main script sets window.flowDef to the open proposition's flowchart body and clears flowBox on a switch.
+  const det = document.getElementById("flowDetails"), box = document.getElementById("flowBox");
+  let n = 0;
+  async function draw() {
+    if (!det.open || box.innerHTML || !window.flowDef) return;
+    const dir = box.clientWidth >= 640 ? "LR" : "TD";
+    const { svg } = await mermaid.render("flowSvg" + (++n), `flowchart ${dir}\n      ${window.flowDef}`);
+    box.innerHTML = svg;
+    // Narrow screens: keep the drawing at its natural size (14px labels) and let the box scroll sideways.
+    const el = box.querySelector("svg"), w = parseFloat(el && el.style.maxWidth);
+    if (el && w && box.clientWidth < 640 && w > box.clientWidth) { el.style.width = w + "px"; el.style.maxWidth = "none"; el.style.flexShrink = "0"; box.scrollLeft = (w - box.clientWidth) / 2; }
+  }
+  det.addEventListener("toggle", draw);
+  draw();
+</script>
+</body>
+</html>

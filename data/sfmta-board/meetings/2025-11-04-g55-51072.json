@@ -1,0 +1,82 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2025-11-04",
+ "id": "g55-51072",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51072",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/44668"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens? Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be simple or routine by the San Francisco Municipal Transportation Agency Board of Directors and will be acted upon by a single vote",
+   "decision": "ADOPTED — 7 ayes (Resolution 251104-099)"
+  },
+  {
+   "no": "10.2",
+   "title": "Adopting a Resolution of Local Support as required by the Metropolitan Transportation Commission (MTC) to add a project to the federal Transportation Improvement Program and program $3,400,000 of federal One Bay Area Grant 2 (OBAG2) funds awarded under the MTC’s Housing Incentive Pool program to the SFMTA’s Lincoln Way Signals project for construction.",
+   "text": "Adopting a Resolution of Local Support as required by the Metropolitan Transportation Commission (MTC) to add a project to the federal Transportation Improvement Program and program $3,400,000 of federal One Bay Area Grant 2 (OBAG2) funds awarded under the MTC’s Housing Incentive Pool program to the SFMTA’s Lincoln Way Signals project for construction. (Explanatory documents include a staff report and resolution.) RESOLUTION No. 251104-100 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 251104-100)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items A-J are exempt from the California Environmental Quality Act",
+   "decision": "ADOPTED — 7 ayes (Resolution 251104-099)"
+  },
+  {
+   "no": "11",
+   "title": "Approving various traffic and parking modifications to improve safety for people walking, bicycling, and riding transit near Third Street as part of the Bayview Community Pathway project",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "12",
+   "title": "Approving the SFMTA’s 2025 Title VI Program Update pursuant to the Federal Transit Administration’s Circular 4702.1B issued on October 1, 2012, which includes the results of the 2025 Service Monitoring Program conducted",
+   "decision": "ADOPTED — 7 ayes (Resolution 251104-101)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

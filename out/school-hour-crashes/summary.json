@@ -1,0 +1,748 @@
+{
+ "bell_rows_unmatched": {
+  "2022-23": [
+   "Independence High School",
+   "SF International HS",
+   "Downtown High School",
+   "Asawa (Ruth) SOTA HS"
+  ],
+  "2023-24": [
+   "Independence High School",
+   "SF International HS",
+   "Downtown High School",
+   "Asawa (Ruth) SOTA HS"
+  ],
+  "2024-25": [
+   "Independence High School",
+   "SF International HS",
+   "Downtown High School",
+   "Asawa (Ruth) SOTA HS"
+  ],
+  "2025-26": [
+   "Independence High School",
+   "SF International HS",
+   "Downtown High School",
+   "Asawa (Ruth) SOTA HS"
+  ]
+ },
+ "by_bell_source": {
+  "default_bell": {
+   "600ft": {
+    "child_ped_bike_per_1000h_other_daytime": 0.02,
+    "child_ped_bike_per_1000h_window": 0.069,
+    "child_ped_bike_per_1000h_window_no_school": 0.014,
+    "child_window_expected_city_clock": 5.5,
+    "child_window_vs_city_clock": 2.02,
+    "hours": {
+     "other_daytime": 950400,
+     "window": 158400,
+     "window_no_school": 71060
+    },
+    "other_daytime": 864,
+    "other_daytime_child_ped_bike": 19,
+    "per_1000h_other_daytime": 0.909,
+    "per_1000h_window": 0.966,
+    "per_1000h_window_no_school": 0.718,
+    "schools": 110,
+    "summed_over_schools_note": "counts are summed over schools, so a crash near two schools counts twice; distinct_window_crashes does not",
+    "window": 153,
+    "window_am": 68,
+    "window_child_bike": 1,
+    "window_child_ped": 10,
+    "window_expected_city_clock": 164.7,
+    "window_no_school": 51,
+    "window_no_school_child_ped_bike": 1,
+    "window_ped_or_bike_crash": 57,
+    "window_pm": 85,
+    "window_severe_fatal": 6,
+    "window_vs_city_clock": 0.93
+   },
+   "quarter_mile": {
+    "child_ped_bike_per_1000h_other_daytime": 0.097,
+    "child_ped_bike_per_1000h_window": 0.215,
+    "child_ped_bike_per_1000h_window_no_school": 0.042,
+    "child_window_expected_city_clock": 26.4,
+    "child_window_vs_city_clock": 1.29,
+    "hours": {
+     "other_daytime": 950400,
+     "window": 158400,
+     "window_no_school": 71060
+    },
+    "other_daytime": 3509,
+    "other_daytime_child_ped_bike": 92,
+    "per_1000h_other_daytime": 3.692,
+    "per_1000h_window": 3.99,
+    "per_1000h_window_no_school": 3.068,
+    "schools": 110,
+    "summed_over_schools_note": "counts are summed over schools, so a crash near two schools counts twice; distinct_window_crashes does not",
+    "window": 632,
+    "window_am": 261,
+    "window_child_bike": 4,
+    "window_child_ped": 30,
+    "window_expected_city_clock": 668.7,
+    "window_no_school": 218,
+    "window_no_school_child_ped_bike": 3,
+    "window_ped_or_bike_crash": 250,
+    "window_pm": 371,
+    "window_severe_fatal": 36,
+    "window_vs_city_clock": 0.95
+   }
+  },
+  "sfusd_bell": {
+   "600ft": {
+    "child_ped_bike_per_1000h_other_daytime": 0.033,
+    "child_ped_bike_per_1000h_window": 0.106,
+    "child_ped_bike_per_1000h_window_no_school": 0.0,
+    "child_window_expected_city_clock": 7.0,
+    "child_window_vs_city_clock": 2.15,
+    "hours": {
+     "other_daytime": 836640,
+     "window": 141120,
+     "window_no_school": 63308
+    },
+    "other_daytime": 659,
+    "other_daytime_child_ped_bike": 28,
+    "per_1000h_other_daytime": 0.788,
+    "per_1000h_window": 0.971,
+    "per_1000h_window_no_school": 0.758,
+    "schools": 97,
+    "summed_over_schools_note": "counts are summed over schools, so a crash near two schools counts twice; distinct_window_crashes does not",
+    "window": 137,
+    "window_am": 67,
+    "window_child_bike": 0,
+    "window_child_ped": 15,
+    "window_expected_city_clock": 123.4,
+    "window_no_school": 48,
+    "window_no_school_child_ped_bike": 0,
+    "window_ped_or_bike_crash": 56,
+    "window_pm": 70,
+    "window_severe_fatal": 9,
+    "window_vs_city_clock": 1.11
+   },
+   "quarter_mile": {
+    "child_ped_bike_per_1000h_other_daytime": 0.081,
+    "child_ped_bike_per_1000h_window": 0.262,
+    "child_ped_bike_per_1000h_window_no_school": 0.095,
+    "child_window_expected_city_clock": 17.8,
+    "child_window_vs_city_clock": 2.08,
+    "hours": {
+     "other_daytime": 836640,
+     "window": 141120,
+     "window_no_school": 63308
+    },
+    "other_daytime": 2475,
+    "other_daytime_child_ped_bike": 68,
+    "per_1000h_other_daytime": 2.958,
+    "per_1000h_window": 3.493,
+    "per_1000h_window_no_school": 2.859,
+    "schools": 97,
+    "summed_over_schools_note": "counts are summed over schools, so a crash near two schools counts twice; distinct_window_crashes does not",
+    "window": 493,
+    "window_am": 226,
+    "window_child_bike": 5,
+    "window_child_ped": 32,
+    "window_expected_city_clock": 462.0,
+    "window_no_school": 181,
+    "window_no_school_child_ped_bike": 6,
+    "window_ped_or_bike_crash": 200,
+    "window_pm": 267,
+    "window_severe_fatal": 22,
+    "window_vs_city_clock": 1.07
+   }
+  }
+ },
+ "city": {
+  "600ft": {
+   "child_ped_bike_per_1000h_other_daytime": 0.026,
+   "child_ped_bike_per_1000h_window": 0.087,
+   "child_ped_bike_per_1000h_window_no_school": 0.007,
+   "child_window_expected_city_clock": 12.4,
+   "child_window_vs_city_clock": 2.09,
+   "distinct_window_child_ped_bike": 20,
+   "distinct_window_crashes": 258,
+   "hours": {
+    "other_daytime": 1787040,
+    "window": 299520,
+    "window_no_school": 134368
+   },
+   "other_daytime": 1523,
+   "other_daytime_child_ped_bike": 47,
+   "per_1000h_other_daytime": 0.852,
+   "per_1000h_window": 0.968,
+   "per_1000h_window_no_school": 0.737,
+   "schools": 207,
+   "summed_over_schools_note": "counts are summed over schools, so a crash near two schools counts twice; distinct_window_crashes does not",
+   "window": 290,
+   "window_am": 135,
+   "window_child_bike": 1,
+   "window_child_ped": 25,
+   "window_expected_city_clock": 288.1,
+   "window_no_school": 99,
+   "window_no_school_child_ped_bike": 1,
+   "window_ped_or_bike_crash": 113,
+   "window_pm": 155,
+   "window_severe_fatal": 15,
+   "window_vs_city_clock": 1.01
+  },
+  "quarter_mile": {
+   "child_ped_bike_per_1000h_other_daytime": 0.09,
+   "child_ped_bike_per_1000h_window": 0.237,
+   "child_ped_bike_per_1000h_window_no_school": 0.067,
+   "child_window_expected_city_clock": 44.2,
+   "child_window_vs_city_clock": 1.61,
+   "distinct_window_child_ped_bike": 46,
+   "distinct_window_crashes": 749,
+   "hours": {
+    "other_daytime": 1787040,
+    "window": 299520,
+    "window_no_school": 134368
+   },
+   "other_daytime": 5984,
+   "other_daytime_child_ped_bike": 160,
+   "per_1000h_other_daytime": 3.349,
+   "per_1000h_window": 3.756,
+   "per_1000h_window_no_school": 2.969,
+   "schools": 207,
+   "summed_over_schools_note": "counts are summed over schools, so a crash near two schools counts twice; distinct_window_crashes does not",
+   "window": 1125,
+   "window_am": 487,
+   "window_child_bike": 9,
+   "window_child_ped": 62,
+   "window_expected_city_clock": 1130.7,
+   "window_no_school": 399,
+   "window_no_school_child_ped_bike": 9,
+   "window_ped_or_bike_crash": 450,
+   "window_pm": 638,
+   "window_severe_fatal": 58,
+   "window_vs_city_clock": 0.99
+  }
+ },
+ "fatal_in_window_600ft": [],
+ "field_audit": {
+  "crash_rows": 66384,
+  "first": "2005-01-01",
+  "geocode_source": {
+   "SFPD-CROSSROADS": 40065,
+   "SFPD-INTERIM DB": 26048,
+   "UCB-TIMS": 271
+  },
+  "last": "2026-08-31",
+  "minute_on_00_or_30": 0.118,
+  "null_coords": 205,
+  "null_time": 61,
+  "ped_bike_age_null": 592,
+  "ped_bike_victims": 27744,
+  "stacked_coordinate_max": 88,
+  "time_0000": 15,
+  "victim_age_null": 1911,
+  "victim_age_over_110": 4,
+  "victim_injury": {
+   "Complaint of Pain": 57540,
+   "Fatal Injury": 641,
+   "No Injury": 48,
+   "Other Visible Injury": 20815,
+   "Severe Injury": 5068
+  },
+  "victim_role": {
+   "Bicyclist": 10809,
+   "Driver": 37372,
+   "Non-Injured Party": 48,
+   "Other": 1966,
+   "Passenger": 16982,
+   "Pedestrian": 16935
+  },
+  "victim_rows": 84112
+ },
+ "method": {
+  "am_window": "start bell -45 to +15 min",
+  "default_bell": "8:15 to 15:15 for schools with no SFUSD bell row (charter, private)",
+  "other_daytime": "06:00-20:00 on school days outside both windows",
+  "pm_window": "end bell -15 to +45 min (early-release time on the early-release weekday)",
+  "radii_ft": {
+   "600ft": 600,
+   "quarter_mile": 1320
+  }
+ },
+ "no_school_weekdays": 323,
+ "period_crashes": 11906,
+ "public_schools_without_bell_times": [
+  "City Arts & Leadership Academy",
+  "Creative Arts Charter",
+  "Gateway High",
+  "Gateway Middle",
+  "KIPP Bayview Academy",
+  "KIPP Bayview Elementary",
+  "KIPP San Francisco Bay Academy",
+  "KIPP San Francisco College Preparatory",
+  "Life Learning Academy Charter",
+  "Mission Preparatory",
+  "The New School of San Francisco",
+  "Thomas Edison Charter Academy"
+ ],
+ "quality": [
+  {
+   "check": "school list",
+   "detail": "207 schools",
+   "pass": true
+  },
+  {
+   "check": "bell rows 2022-23",
+   "detail": "118 K-12 rows",
+   "pass": true
+  },
+  {
+   "check": "bell rows 2023-24",
+   "detail": "118 K-12 rows",
+   "pass": true
+  },
+  {
+   "check": "bell rows 2024-25",
+   "detail": "118 K-12 rows",
+   "pass": true
+  },
+  {
+   "check": "bell rows 2025-26",
+   "detail": "118 K-12 rows",
+   "pass": true
+  },
+  {
+   "check": "school days 2023-24",
+   "detail": "180 counted, 180 expected",
+   "pass": true
+  },
+  {
+   "check": "school days 2024-25",
+   "detail": "180 counted, 180 expected",
+   "pass": true
+  },
+  {
+   "check": "school days 2025-26",
+   "detail": "180 counted, 180 expected",
+   "pass": true
+  },
+  {
+   "check": "crash case ids unique",
+   "detail": "66384 rows, 66383 distinct case ids",
+   "pass": true
+  },
+  {
+   "check": "every victim joins a crash",
+   "detail": "0 victim rows with no crash",
+   "pass": true
+  },
+  {
+   "check": "victim ids unique",
+   "detail": "84112 rows, 84112 distinct",
+   "pass": true
+  },
+  {
+   "check": "victim rows match crash injured+killed",
+   "detail": "66327 of 66384 crashes have exactly number_injured + number_killed victim rows",
+   "pass": true
+  }
+ ],
+ "question": "Injury crashes near schools at each school's own drop-off and pick-up hours, school days 2022-23 to 2025-26",
+ "school_days": [
+  {
+   "days": 180,
+   "expected": null,
+   "year": "2022-23"
+  },
+  {
+   "days": 180,
+   "expected": 180,
+   "year": "2023-24"
+  },
+  {
+   "days": 180,
+   "expected": 180,
+   "year": "2024-25"
+  },
+  {
+   "days": 180,
+   "expected": 180,
+   "year": "2025-26"
+  }
+ ],
+ "schools": 207,
+ "schools_dropped": {
+  "continuation high school": 2,
+  "in-custody (SF Sheriff's) charter": 2,
+  "other (court, community, special education, audition or newcomer-only alternative)": 7,
+  "private registration at an office suite": 3
+ },
+ "schools_with_bell_times": {
+  "2022-23": 97,
+  "2023-24": 97,
+  "2024-25": 97,
+  "2025-26": 97
+ },
+ "sources": {
+  "bell": {
+   "2022-23": "https://web.archive.org/web/20221004124058/https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2022-23",
+   "2023-24": "https://web.archive.org/web/20230929142713/https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2023-24",
+   "2024-25": "https://web.archive.org/web/20240812141433/https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2024-25",
+   "2025-26": "https://www.sfusd.edu/schools/enroll/resources/school-start-and-end-times-2025-26"
+  },
+  "calendar": "data/school-hour-crashes/sfusd-calendar.json",
+  "crashes": "[DataSF ubvf-ztfx \u2014 queried 2026-10-10]",
+  "fatalities": "[DataSF dau3-4s8f \u2014 queried 2026-10-13]",
+  "victims": "[DataSF nwes-mmgh \u2014 queried 2026-10-10]"
+ },
+ "tiers_600ft": {
+  "0": 73,
+  "1-2": 99,
+  "3-4": 20,
+  "5+": 15
+ },
+ "walk_audit_schools": [
+  {
+   "audit_name": "Alvarado",
+   "child_ped_bike_600ft": 0,
+   "name": "Alvarado Elementary",
+   "rank": 174,
+   "window_600ft": 0,
+   "window_quarter_mile": 1
+  },
+  {
+   "audit_name": "Argonne",
+   "child_ped_bike_600ft": 0,
+   "name": "Argonne Elementary",
+   "rank": 175,
+   "window_600ft": 0,
+   "window_quarter_mile": 1
+  },
+  {
+   "audit_name": "Bessie Carmichael",
+   "child_ped_bike_600ft": 2,
+   "name": "Carmichael (Bessie)/FEC",
+   "rank": 1,
+   "window_600ft": 11,
+   "window_quarter_mile": 33
+  },
+  {
+   "audit_name": "C\u00e9sar Ch\u00e1vez",
+   "child_ped_bike_600ft": 0,
+   "name": "Chavez (Cesar) Elementary",
+   "rank": 40,
+   "window_600ft": 2,
+   "window_quarter_mile": 11
+  },
+  {
+   "audit_name": "Claire Lilienthal",
+   "child_ped_bike_600ft": 0,
+   "name": "Lilienthal (Claire) Elementary",
+   "rank": 156,
+   "window_600ft": 0,
+   "window_quarter_mile": 3
+  },
+  {
+   "audit_name": "Commodore Sloat",
+   "child_ped_bike_600ft": 0,
+   "name": "Sloat (Commodore) Elementary",
+   "rank": 111,
+   "window_600ft": 1,
+   "window_quarter_mile": 3
+  },
+  {
+   "audit_name": "Dianne Feinstein",
+   "child_ped_bike_600ft": 0,
+   "name": "Feinstein (Dianne) Elementary",
+   "rank": 126,
+   "window_600ft": 1,
+   "window_quarter_mile": 1
+  },
+  {
+   "audit_name": "Drew",
+   "child_ped_bike_600ft": 0,
+   "name": "Drew (Charles) College Preparatory Academy",
+   "rank": 98,
+   "window_600ft": 1,
+   "window_quarter_mile": 4
+  },
+  {
+   "audit_name": "Monroe",
+   "child_ped_bike_600ft": 0,
+   "name": "Monroe Elementary",
+   "rank": 122,
+   "window_600ft": 1,
+   "window_quarter_mile": 2
+  },
+  {
+   "audit_name": "Redding",
+   "child_ped_bike_600ft": 0,
+   "name": "Redding Elementary",
+   "rank": 70,
+   "window_600ft": 1,
+   "window_quarter_mile": 15
+  }
+ ],
+ "yearly": {
+  "2005": {
+   "child_bicyclist": 15,
+   "child_complaint_of_pain": 56,
+   "child_other_visible_injury": 43,
+   "child_pedestrian": 87,
+   "child_severe_injury": 3,
+   "crashes": 3253,
+   "geocode_SFPD-CROSSROADS": 3215,
+   "geocode_UCB-TIMS": 38,
+   "ped_bike_age_missing": 21,
+   "ped_bike_all_ages": 1102
+  },
+  "2006": {
+   "child_bicyclist": 9,
+   "child_complaint_of_pain": 42,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 25,
+   "child_pedestrian": 71,
+   "child_severe_injury": 12,
+   "crashes": 2896,
+   "geocode_SFPD-CROSSROADS": 2868,
+   "geocode_UCB-TIMS": 28,
+   "ped_bike_age_missing": 27,
+   "ped_bike_all_ages": 1083
+  },
+  "2007": {
+   "child_bicyclist": 10,
+   "child_complaint_of_pain": 50,
+   "child_fatal_injury": 2,
+   "child_other_visible_injury": 38,
+   "child_pedestrian": 90,
+   "child_severe_injury": 10,
+   "crashes": 3065,
+   "geocode_SFPD-CROSSROADS": 3038,
+   "geocode_UCB-TIMS": 27,
+   "ped_bike_age_missing": 15,
+   "ped_bike_all_ages": 1256
+  },
+  "2008": {
+   "child_bicyclist": 12,
+   "child_complaint_of_pain": 31,
+   "child_other_visible_injury": 48,
+   "child_pedestrian": 74,
+   "child_severe_injury": 7,
+   "crashes": 3039,
+   "geocode_SFPD-CROSSROADS": 3009,
+   "geocode_UCB-TIMS": 30,
+   "ped_bike_age_missing": 9,
+   "ped_bike_all_ages": 1268
+  },
+  "2009": {
+   "child_bicyclist": 18,
+   "child_complaint_of_pain": 49,
+   "child_other_visible_injury": 27,
+   "child_pedestrian": 65,
+   "child_severe_injury": 7,
+   "crashes": 2900,
+   "geocode_SFPD-CROSSROADS": 2854,
+   "geocode_SFPD-INTERIM DB": 14,
+   "geocode_UCB-TIMS": 32,
+   "ped_bike_age_missing": 17,
+   "ped_bike_all_ages": 1243
+  },
+  "2010": {
+   "child_bicyclist": 12,
+   "child_complaint_of_pain": 42,
+   "child_other_visible_injury": 40,
+   "child_pedestrian": 76,
+   "child_severe_injury": 6,
+   "crashes": 3095,
+   "geocode_SFPD-CROSSROADS": 3053,
+   "geocode_SFPD-INTERIM DB": 4,
+   "geocode_UCB-TIMS": 38,
+   "ped_bike_age_missing": 14,
+   "ped_bike_all_ages": 1414
+  },
+  "2011": {
+   "child_bicyclist": 21,
+   "child_complaint_of_pain": 53,
+   "child_other_visible_injury": 38,
+   "child_pedestrian": 79,
+   "child_severe_injury": 9,
+   "crashes": 3097,
+   "geocode_SFPD-CROSSROADS": 3056,
+   "geocode_UCB-TIMS": 41,
+   "ped_bike_age_missing": 17,
+   "ped_bike_all_ages": 1462
+  },
+  "2012": {
+   "child_bicyclist": 24,
+   "child_complaint_of_pain": 55,
+   "child_other_visible_injury": 42,
+   "child_pedestrian": 80,
+   "child_severe_injury": 7,
+   "crashes": 3269,
+   "geocode_SFPD-CROSSROADS": 3232,
+   "geocode_UCB-TIMS": 37,
+   "ped_bike_age_missing": 18,
+   "ped_bike_all_ages": 1614
+  },
+  "2013": {
+   "child_bicyclist": 21,
+   "child_complaint_of_pain": 48,
+   "child_fatal_injury": 2,
+   "child_other_visible_injury": 32,
+   "child_pedestrian": 65,
+   "child_severe_injury": 4,
+   "crashes": 3069,
+   "geocode_SFPD-CROSSROADS": 3037,
+   "geocode_SFPD-INTERIM DB": 32,
+   "ped_bike_age_missing": 14,
+   "ped_bike_all_ages": 1446
+  },
+  "2014": {
+   "child_bicyclist": 17,
+   "child_complaint_of_pain": 44,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 34,
+   "child_pedestrian": 63,
+   "child_severe_injury": 1,
+   "crashes": 2967,
+   "geocode_SFPD-CROSSROADS": 2921,
+   "geocode_SFPD-INTERIM DB": 46,
+   "ped_bike_age_missing": 44,
+   "ped_bike_all_ages": 1420
+  },
+  "2015": {
+   "child_bicyclist": 17,
+   "child_complaint_of_pain": 37,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 42,
+   "child_pedestrian": 66,
+   "child_severe_injury": 3,
+   "crashes": 3055,
+   "geocode_SFPD-CROSSROADS": 3045,
+   "geocode_SFPD-INTERIM DB": 10,
+   "ped_bike_age_missing": 40,
+   "ped_bike_all_ages": 1367
+  },
+  "2016": {
+   "child_bicyclist": 7,
+   "child_complaint_of_pain": 24,
+   "child_other_visible_injury": 27,
+   "child_pedestrian": 49,
+   "child_severe_injury": 5,
+   "crashes": 3323,
+   "geocode_SFPD-CROSSROADS": 3311,
+   "geocode_SFPD-INTERIM DB": 12,
+   "ped_bike_age_missing": 75,
+   "ped_bike_all_ages": 1444
+  },
+  "2017": {
+   "child_bicyclist": 14,
+   "child_complaint_of_pain": 28,
+   "child_other_visible_injury": 39,
+   "child_pedestrian": 62,
+   "child_severe_injury": 9,
+   "crashes": 3427,
+   "geocode_SFPD-CROSSROADS": 3426,
+   "geocode_SFPD-INTERIM DB": 1,
+   "ped_bike_age_missing": 119,
+   "ped_bike_all_ages": 1449
+  },
+  "2018": {
+   "child_bicyclist": 14,
+   "child_complaint_of_pain": 41,
+   "child_other_visible_injury": 29,
+   "child_pedestrian": 61,
+   "child_severe_injury": 5,
+   "crashes": 3300,
+   "geocode_SFPD-INTERIM DB": 3300,
+   "ped_bike_age_missing": 6,
+   "ped_bike_all_ages": 1483
+  },
+  "2019": {
+   "child_bicyclist": 14,
+   "child_complaint_of_pain": 33,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 24,
+   "child_pedestrian": 55,
+   "child_severe_injury": 11,
+   "crashes": 3486,
+   "geocode_SFPD-INTERIM DB": 3486,
+   "ped_bike_age_missing": 20,
+   "ped_bike_all_ages": 1466
+  },
+  "2020": {
+   "child_bicyclist": 17,
+   "child_complaint_of_pain": 23,
+   "child_other_visible_injury": 26,
+   "child_pedestrian": 37,
+   "child_severe_injury": 5,
+   "crashes": 2454,
+   "geocode_SFPD-INTERIM DB": 2454,
+   "ped_bike_age_missing": 25,
+   "ped_bike_all_ages": 1003
+  },
+  "2021": {
+   "child_bicyclist": 13,
+   "child_complaint_of_pain": 22,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 28,
+   "child_pedestrian": 42,
+   "child_severe_injury": 4,
+   "crashes": 2758,
+   "geocode_SFPD-INTERIM DB": 2758,
+   "ped_bike_age_missing": 31,
+   "ped_bike_all_ages": 1001
+  },
+  "2022": {
+   "child_bicyclist": 20,
+   "child_complaint_of_pain": 21,
+   "child_other_visible_injury": 33,
+   "child_pedestrian": 44,
+   "child_severe_injury": 10,
+   "crashes": 2886,
+   "geocode_SFPD-INTERIM DB": 2886,
+   "ped_bike_age_missing": 16,
+   "ped_bike_all_ages": 1074
+  },
+  "2023": {
+   "child_bicyclist": 17,
+   "child_complaint_of_pain": 23,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 30,
+   "child_pedestrian": 42,
+   "child_severe_injury": 5,
+   "crashes": 2923,
+   "geocode_SFPD-INTERIM DB": 2923,
+   "ped_bike_age_missing": 25,
+   "ped_bike_all_ages": 1078
+  },
+  "2024": {
+   "child_bicyclist": 8,
+   "child_complaint_of_pain": 29,
+   "child_fatal_injury": 2,
+   "child_other_visible_injury": 30,
+   "child_pedestrian": 57,
+   "child_severe_injury": 4,
+   "crashes": 3026,
+   "geocode_SFPD-INTERIM DB": 3026,
+   "ped_bike_age_missing": 15,
+   "ped_bike_all_ages": 1164
+  },
+  "2025": {
+   "child_bicyclist": 12,
+   "child_complaint_of_pain": 24,
+   "child_other_visible_injury": 25,
+   "child_pedestrian": 43,
+   "child_severe_injury": 6,
+   "crashes": 2946,
+   "geocode_SFPD-INTERIM DB": 2946,
+   "ped_bike_age_missing": 14,
+   "ped_bike_all_ages": 1096
+  },
+  "2026": {
+   "child_bicyclist": 19,
+   "child_complaint_of_pain": 18,
+   "child_fatal_injury": 1,
+   "child_other_visible_injury": 22,
+   "child_pedestrian": 22,
+   "crashes": 2150,
+   "geocode_SFPD-INTERIM DB": 2150,
+   "ped_bike_age_missing": 10,
+   "ped_bike_all_ages": 811
+  }
+ }
+}

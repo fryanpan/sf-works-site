@@ -1,0 +1,43 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-12-13",
+ "id": "g55-42649",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42649",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/27486"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Presentation and discussion on the Transit Shelter Maintenance Program & Condition Assessment"
+  },
+  {
+   "no": "5",
+   "title": "Approving the SFMTA’s Fiscal Years 2022-2023 Short Range Transit Plan; and approving an update to the Agency’s internal Bus Stop Guidelines",
+   "decision": "ADOPTED — 6 ayes (Resolution 221213-118)"
+  },
+  {
+   "no": "6",
+   "title": "Modification No. 4 to Contract No. 1304, Muni Metro System King Substation Upgrade, with DMZ Builders",
+   "decision": "ADOPTED — 5 ayes (Resolution 221213-119)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

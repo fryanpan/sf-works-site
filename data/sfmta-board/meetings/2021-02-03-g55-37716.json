@@ -1,0 +1,52 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-02-03",
+ "id": "g55-37716",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37716",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "4",
+   "title": "Communications"
+  },
+  {
+   "no": "5",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "6",
+   "title": "Presentation and discussion regarding the financial responsibilities of the SFMTA"
+  },
+  {
+   "no": "7",
+   "title": "Presentation and discussion regarding the status of the SFMTA’s accomplishments and challenges"
+  },
+  {
+   "no": "8",
+   "title": "Presentation and discussion regarding post-COVID recovery programs and projects, Vision Zero progress and plans, priority setting for transit service and delivery, and capital investments"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "9",
+   "title": "Presentation and discussion regarding the SFMTA’s operating and capital fiscal and structural deficits and possible options to address"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

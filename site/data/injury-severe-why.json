@@ -1,0 +1,675 @@
+{
+ "deaths": {
+  "fatalTable": {
+   "2014": 31,
+   "2015": 31,
+   "2016": 29,
+   "2017": 20,
+   "2018": 23,
+   "2019": 29,
+   "2020": 30,
+   "2021": 27,
+   "2022": 39,
+   "2023": 26,
+   "2024": 42,
+   "2025": 25
+  },
+  "nwes": {
+   "2005": 27,
+   "2006": 30,
+   "2007": 42,
+   "2008": 27,
+   "2009": 31,
+   "2010": 22,
+   "2011": 28,
+   "2012": 29,
+   "2013": 34,
+   "2014": 31,
+   "2015": 31,
+   "2016": 29,
+   "2017": 20,
+   "2018": 23,
+   "2019": 29,
+   "2020": 30,
+   "2021": 27,
+   "2022": 39,
+   "2023": 26,
+   "2024": 43,
+   "2025": 25
+  },
+  "vz": {
+   "2005": 27,
+   "2006": 32,
+   "2007": 41,
+   "2008": 27,
+   "2009": 30,
+   "2010": 24,
+   "2011": 28,
+   "2012": 29,
+   "2013": 34,
+   "2014": 31,
+   "2015": 31,
+   "2016": 32,
+   "2017": 20,
+   "2018": 23,
+   "2019": 29,
+   "2020": 30,
+   "2021": 27,
+   "2022": 39,
+   "2023": 26,
+   "2024": 43
+  }
+ },
+ "deathsNoCause": {
+  "after": 14,
+  "before": 20,
+  "early": 25
+ },
+ "everyone": {
+  "fatAfter": 32.0,
+  "fatBefore": 26.4,
+  "fatEarly": 30.1,
+  "fatZ": 1.64,
+  "hurtAfter": 3656.0,
+  "hurtBefore": 4161.8,
+  "k": "all",
+  "label": "Everyone",
+  "sevAfter": 299.0,
+  "sevBefore": 298.2,
+  "sevEarly": 225.8,
+  "shareAfter": 0.0818,
+  "shareBefore": 0.0717,
+  "z": 0.07
+ },
+ "flags": {
+  "dark": {
+   "fatAfter": 17.8,
+   "fatBefore": 10.0,
+   "fatEarly": 14.3,
+   "fatZ": 3.31,
+   "hurtAfter": 1265.6,
+   "hurtBefore": 1287.4,
+   "k": "dark",
+   "label": "After dark",
+   "sevAfter": 131.2,
+   "sevBefore": 116.0,
+   "sevEarly": 100.3,
+   "shareAfter": 0.1037,
+   "shareBefore": 0.0901,
+   "z": 2.16
+  },
+  "darkWalk": {
+   "fatAfter": 10.0,
+   "fatBefore": 6.8,
+   "fatEarly": 7.8,
+   "fatZ": 1.75,
+   "hurtAfter": 232.8,
+   "hurtBefore": 305.4,
+   "k": "darkWalk",
+   "label": "Walking, after dark",
+   "sevAfter": 50.0,
+   "sevBefore": 52.6,
+   "sevEarly": 42.2,
+   "shareAfter": 0.2148,
+   "shareBefore": 0.1722,
+   "z": -0.57
+  },
+  "hin": {
+   "fatAfter": 21.2,
+   "fatBefore": 17.8,
+   "fatEarly": 17.6,
+   "fatZ": 1.22,
+   "hurtAfter": 2335.6,
+   "hurtBefore": 2572.8,
+   "k": "hin",
+   "label": "On the High Injury Network",
+   "sevAfter": 200.8,
+   "sevBefore": 192.6,
+   "sevEarly": 136.7,
+   "shareAfter": 0.086,
+   "shareBefore": 0.0749,
+   "z": 0.92
+  },
+  "impaired": {
+   "fatAfter": 3.2,
+   "fatBefore": 2.0,
+   "fatEarly": 7.1,
+   "fatZ": 1.18,
+   "hurtAfter": 147.4,
+   "hurtBefore": 201.8,
+   "k": "impaired",
+   "label": "A party under the influence",
+   "sevAfter": 17.2,
+   "sevBefore": 21.4,
+   "sevEarly": 26.9,
+   "shareAfter": 0.1167,
+   "shareBefore": 0.106,
+   "z": -1.51
+  },
+  "main": {
+   "fatAfter": 24.4,
+   "fatBefore": 21.0,
+   "fatEarly": 23.8,
+   "fatZ": 1.13,
+   "hurtAfter": 2732.6,
+   "hurtBefore": 3101.8,
+   "k": "main",
+   "label": "On main roads",
+   "sevAfter": 219.8,
+   "sevBefore": 219.6,
+   "sevEarly": 169.7,
+   "shareAfter": 0.0804,
+   "shareBefore": 0.0708,
+   "z": 0.02
+  },
+  "older": {
+   "fatAfter": 10.0,
+   "fatBefore": 10.0,
+   "fatEarly": 8.5,
+   "fatZ": 0.0,
+   "hurtAfter": 381.0,
+   "hurtBefore": 375.6,
+   "k": "older",
+   "label": "People 65 and older",
+   "sevAfter": 44.0,
+   "sevBefore": 39.4,
+   "sevEarly": 27.8,
+   "shareAfter": 0.1155,
+   "shareBefore": 0.1049,
+   "z": 1.13
+  },
+  "ramp": {
+   "fatAfter": 0.4,
+   "fatBefore": 0.4,
+   "fatEarly": 0.2,
+   "fatZ": 0.0,
+   "hurtAfter": 32.8,
+   "hurtBefore": 23.0,
+   "k": "ramp",
+   "label": "At a freeway ramp",
+   "sevAfter": 2.6,
+   "sevBefore": 1.8,
+   "sevEarly": 0.6,
+   "shareAfter": 0.0793,
+   "shareBefore": 0.0783,
+   "z": 0.85
+  },
+  "speed": {
+   "fatAfter": 6.8,
+   "fatBefore": 3.0,
+   "fatEarly": 6.2,
+   "fatZ": 2.71,
+   "hurtAfter": 691.6,
+   "hurtBefore": 700.4,
+   "k": "speed",
+   "label": "Unsafe speed named as the cause",
+   "sevAfter": 61.2,
+   "sevBefore": 53.2,
+   "sevEarly": 42.9,
+   "shareAfter": 0.0885,
+   "shareBefore": 0.076,
+   "z": 1.67
+  },
+  "unknownDriver": {
+   "fatAfter": 6.6,
+   "fatBefore": 4.0,
+   "fatEarly": 5.4,
+   "fatZ": 1.79,
+   "hurtAfter": 661.2,
+   "hurtBefore": 633.0,
+   "k": "unknownDriver",
+   "label": "Driver unidentified",
+   "sevAfter": 52.4,
+   "sevBefore": 51.2,
+   "sevEarly": 28.0,
+   "shareAfter": 0.0792,
+   "shareBefore": 0.0809,
+   "z": 0.26
+  }
+ },
+ "hospital": {
+  "ours": {
+   "2011": 197,
+   "2012": 204,
+   "2013": 197,
+   "2014": 203,
+   "2015": 230,
+   "2016": 278,
+   "2017": 261,
+   "2018": 283,
+   "2019": 307,
+   "2020": 226,
+   "2021": 271,
+   "2022": 282
+  },
+  "police": {
+   "2011": 198,
+   "2012": 204,
+   "2013": 201,
+   "2014": 205,
+   "2015": 230,
+   "2016": 278,
+   "2017": 261,
+   "2018": 283,
+   "2019": 307,
+   "2020": 226,
+   "2021": 271,
+   "2022": 282
+  },
+  "zsfg": {
+   "2011": 492,
+   "2012": 498,
+   "2013": 517,
+   "2014": 471,
+   "2015": 578,
+   "2016": 570,
+   "2017": 574,
+   "2018": 592,
+   "2019": 533,
+   "2020": 512,
+   "2021": 577,
+   "2022": 535
+  }
+ },
+ "modes": [
+  {
+   "fatAfter": 18.0,
+   "fatBefore": 16.4,
+   "fatEarly": 17.2,
+   "fatZ": 0.61,
+   "hurtAfter": 656.4,
+   "hurtBefore": 880.4,
+   "k": "walk",
+   "label": "Walking",
+   "sevAfter": 104.4,
+   "sevBefore": 124.6,
+   "sevEarly": 93.8,
+   "shareAfter": 0.159,
+   "shareBefore": 0.1415,
+   "z": -2.98
+  },
+  {
+   "fatAfter": 1.6,
+   "fatBefore": 2.8,
+   "fatEarly": 2.2,
+   "fatZ": -1.28,
+   "hurtAfter": 430.4,
+   "hurtBefore": 566.6,
+   "k": "bike",
+   "label": "On a bike or e-bike",
+   "sevAfter": 53.0,
+   "sevBefore": 52.0,
+   "sevEarly": 36.8,
+   "shareAfter": 0.1231,
+   "shareBefore": 0.0918,
+   "z": 0.22
+  },
+  {
+   "fatAfter": 6.0,
+   "fatBefore": 4.4,
+   "fatEarly": 7.2,
+   "fatZ": 1.11,
+   "hurtAfter": 2012.4,
+   "hurtBefore": 2287.6,
+   "k": "car",
+   "label": "In a car or truck",
+   "sevAfter": 60.8,
+   "sevBefore": 65.8,
+   "sevEarly": 58.4,
+   "shareAfter": 0.0302,
+   "shareBefore": 0.0288,
+   "z": -0.99
+  },
+  {
+   "fatAfter": 5.0,
+   "fatBefore": 2.8,
+   "fatEarly": 3.5,
+   "fatZ": 1.76,
+   "hurtAfter": 333.0,
+   "hurtBefore": 399.6,
+   "k": "moto",
+   "label": "On a motorcycle or moped",
+   "sevAfter": 52.4,
+   "sevBefore": 53.0,
+   "sevEarly": 36.8,
+   "shareAfter": 0.1574,
+   "shareBefore": 0.1326,
+   "z": -0.13
+  },
+  {
+   "fatAfter": 1.4,
+   "fatBefore": 0.0,
+   "fatEarly": 0.0,
+   "fatZ": 2.65,
+   "hurtAfter": 223.8,
+   "hurtBefore": 27.6,
+   "k": "scoot",
+   "label": "On a scooter or board",
+   "sevAfter": 28.4,
+   "sevBefore": 2.8,
+   "sevEarly": 0.0,
+   "shareAfter": 0.1269,
+   "shareBefore": 0.1014,
+   "z": 10.25
+  }
+ ],
+ "periods": {
+  "after": [
+   2021,
+   2025
+  ],
+  "before": [
+   2015,
+   2019
+  ],
+  "early": [
+   2005,
+   2014
+  ]
+ },
+ "quarters": {
+  "2013Q1": {
+   "hurt": 894,
+   "severe": 63
+  },
+  "2013Q2": {
+   "hurt": 1048,
+   "severe": 48
+  },
+  "2013Q3": {
+   "hurt": 1054,
+   "severe": 65
+  },
+  "2013Q4": {
+   "hurt": 888,
+   "severe": 55
+  },
+  "2014Q1": {
+   "hurt": 861,
+   "severe": 57
+  },
+  "2014Q2": {
+   "hurt": 886,
+   "severe": 53
+  },
+  "2014Q3": {
+   "hurt": 988,
+   "severe": 62
+  },
+  "2014Q4": {
+   "hurt": 969,
+   "severe": 62
+  },
+  "2015Q1": {
+   "hurt": 895,
+   "severe": 53
+  },
+  "2015Q2": {
+   "hurt": 918,
+   "severe": 79
+  },
+  "2015Q3": {
+   "hurt": 1013,
+   "severe": 65
+  },
+  "2015Q4": {
+   "hurt": 985,
+   "severe": 64
+  },
+  "2016Q1": {
+   "hurt": 1027,
+   "severe": 70
+  },
+  "2016Q2": {
+   "hurt": 1019,
+   "severe": 69
+  },
+  "2016Q3": {
+   "hurt": 1020,
+   "severe": 77
+  },
+  "2016Q4": {
+   "hurt": 1120,
+   "severe": 91
+  },
+  "2017Q1": {
+   "hurt": 1044,
+   "severe": 60
+  },
+  "2017Q2": {
+   "hurt": 1067,
+   "severe": 76
+  },
+  "2017Q3": {
+   "hurt": 1077,
+   "severe": 81
+  },
+  "2017Q4": {
+   "hurt": 1085,
+   "severe": 64
+  }
+ },
+ "soberUnknownFatal": {
+  "after": {
+   "drivers": 191,
+   "unknown": 103
+  },
+  "before": {
+   "drivers": 160,
+   "unknown": 59
+  },
+  "early": {
+   "drivers": 353,
+   "unknown": 80
+  }
+ },
+ "source": {
+  "centerlinesFetched": "2026-11-11",
+  "fatalFetched": "2026-10-21",
+  "hinFetched": "2026-09-30",
+  "hospitalRead": "2026-10-21",
+  "partiesFetched": "2026-10-21",
+  "victims": 81466,
+  "victimsFetched": "2026-10-21",
+  "vzRead": "2026-10-21"
+ },
+ "suvCoded": {
+  "2005": 0.0,
+  "2006": 0.0,
+  "2007": 0.0,
+  "2008": 0.0,
+  "2009": 0.0,
+  "2010": 0.0,
+  "2011": 0.0,
+  "2012": 0.0,
+  "2013": 0.0411,
+  "2014": 0.0172,
+  "2015": 0.0112,
+  "2016": 0.0002,
+  "2017": 0.0708,
+  "2018": 0.0496,
+  "2019": 0.1224,
+  "2020": 0.089,
+  "2021": 0.134,
+  "2022": 0.2449,
+  "2023": 0.2409,
+  "2024": 0.2559,
+  "2025": 0.2805
+ },
+ "vehicle": {
+  "car": {
+   "fatal": 25,
+   "hurt": 2090,
+   "severe": 261
+  },
+  "heavy": {
+   "fatal": 10,
+   "hurt": 225,
+   "severe": 43
+  },
+  "moto": {
+   "fatal": 0,
+   "hurt": 68,
+   "severe": 8
+  },
+  "none": {
+   "fatal": 10,
+   "hurt": 645,
+   "severe": 141
+  },
+  "suv": {
+   "fatal": 38,
+   "hurt": 1403,
+   "severe": 185
+  }
+ },
+ "yearly": {
+  "2005": {
+   "fatal": 27,
+   "fatalDark": 14,
+   "hurt": 4458,
+   "minor": 4240,
+   "severe": 218
+  },
+  "2006": {
+   "fatal": 30,
+   "fatalDark": 14,
+   "hurt": 3836,
+   "minor": 3634,
+   "severe": 202
+  },
+  "2007": {
+   "fatal": 42,
+   "fatalDark": 24,
+   "hurt": 3999,
+   "minor": 3756,
+   "severe": 243
+  },
+  "2008": {
+   "fatal": 27,
+   "fatalDark": 12,
+   "hurt": 3891,
+   "minor": 3666,
+   "severe": 225
+  },
+  "2009": {
+   "fatal": 31,
+   "fatalDark": 11,
+   "hurt": 3733,
+   "minor": 3498,
+   "severe": 235
+  },
+  "2010": {
+   "fatal": 22,
+   "fatalDark": 15,
+   "hurt": 3964,
+   "minor": 3752,
+   "severe": 212
+  },
+  "2011": {
+   "fatal": 28,
+   "fatalDark": 14,
+   "hurt": 3869,
+   "minor": 3644,
+   "severe": 225
+  },
+  "2012": {
+   "fatal": 29,
+   "fatalDark": 10,
+   "hurt": 4046,
+   "minor": 3813,
+   "severe": 233
+  },
+  "2013": {
+   "fatal": 34,
+   "fatalDark": 13,
+   "hurt": 3884,
+   "minor": 3653,
+   "severe": 231
+  },
+  "2014": {
+   "fatal": 31,
+   "fatalDark": 16,
+   "hurt": 3704,
+   "minor": 3470,
+   "severe": 234
+  },
+  "2015": {
+   "fatal": 31,
+   "fatalDark": 12,
+   "hurt": 3811,
+   "minor": 3550,
+   "severe": 261
+  },
+  "2016": {
+   "fatal": 29,
+   "fatalDark": 7,
+   "hurt": 4186,
+   "minor": 3879,
+   "severe": 307
+  },
+  "2017": {
+   "fatal": 20,
+   "fatalDark": 5,
+   "hurt": 4273,
+   "minor": 3992,
+   "severe": 281
+  },
+  "2018": {
+   "fatal": 23,
+   "fatalDark": 10,
+   "hurt": 4142,
+   "minor": 3836,
+   "severe": 306
+  },
+  "2019": {
+   "fatal": 29,
+   "fatalDark": 16,
+   "hurt": 4397,
+   "minor": 4061,
+   "severe": 336
+  },
+  "2020": {
+   "fatal": 30,
+   "fatalDark": 12,
+   "hurt": 2993,
+   "minor": 2737,
+   "severe": 256
+  },
+  "2021": {
+   "fatal": 27,
+   "fatalDark": 15,
+   "hurt": 3517,
+   "minor": 3219,
+   "severe": 298
+  },
+  "2022": {
+   "fatal": 39,
+   "fatalDark": 18,
+   "hurt": 3669,
+   "minor": 3348,
+   "severe": 321
+  },
+  "2023": {
+   "fatal": 26,
+   "fatalDark": 14,
+   "hurt": 3733,
+   "minor": 3472,
+   "severe": 261
+  },
+  "2024": {
+   "fatal": 43,
+   "fatalDark": 24,
+   "hurt": 3757,
+   "minor": 3416,
+   "severe": 341
+  },
+  "2025": {
+   "fatal": 25,
+   "fatalDark": 18,
+   "hurt": 3604,
+   "minor": 3330,
+   "severe": 274
+  }
+ }
+}

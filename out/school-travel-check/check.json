@@ -1,0 +1,14 @@
+{
+ "dir": "out/school-travel",
+ "seed": 20260930,
+ "blocks_checked": 218,
+ "why": {
+  "sample": 200,
+  "Treasure Island / Yerba Buena Island": 17,
+  "nearest to 30 minutes": 1
+ },
+ "checks": {
+  "ok": 4578
+ },
+ "not_ok": []
+}

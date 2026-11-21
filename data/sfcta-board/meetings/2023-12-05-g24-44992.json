@@ -1,0 +1,51 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2023-12-05",
+ "id": "g24-44992",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44992",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Minutes of the November 28, 2023 Meeting"
+  },
+  {
+   "no": "3",
+   "title": "Community Advisory Committee Report"
+  },
+  {
+   "no": "4",
+   "title": "Adopt the 2023 Prop L 5-Year Prioritization Program for Muni Maintenance, Rehabilitation, and Replacement and Amend the Prop L Strategic Plan Baseline"
+  },
+  {
+   "no": "5",
+   "title": "Allocate $23,040,000 in Prop L Funds, with Conditions, Appropriate $150,000 in Prop L Funds, and Allocate $6,000,000 in Traffic Congestion Mitigation Tax (TNC Tax) Funds for Eight Requests"
+  },
+  {
+   "no": "6",
+   "title": "Approve the 2023 San Francisco Congestion Management Program"
+  },
+  {
+   "no": "7",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "8",
+   "title": "Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

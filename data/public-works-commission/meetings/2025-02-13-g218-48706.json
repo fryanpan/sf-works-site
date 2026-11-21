@@ -1,0 +1,104 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2025-02-13",
+ "id": "g218-48706",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=48706",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the January 9, 2025 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Minutes from the January 23, 2025 Meeting of the Public Works Commission Held Jointly with the Sanitation and Streets Commission"
+  },
+  {
+   "no": "4c",
+   "title": "Master As-Needed M23 General Engineering Services – Manson – Contract Award"
+  },
+  {
+   "no": "4d",
+   "title": "San Francisco Municipal Transportation Agency Garage Assessment – Contract Award"
+  },
+  {
+   "no": "4e",
+   "title": "As-Needed Environmental Planning Services 2024 – Panorama – Contract Award"
+  },
+  {
+   "no": "4f",
+   "title": "As-Needed Environmental Planning Services 2024 – TRC Solutions – Contract Award"
+  },
+  {
+   "no": "4g",
+   "title": "As-Needed Acoustical Engineering Services No. 3 – CSDA Design Group - Contract Award"
+  },
+  {
+   "no": "4h",
+   "title": "As-Needed Acoustical Engineering Services No. 3 – Arup Us, Inc. – Contract Award"
+  },
+  {
+   "no": "4i",
+   "title": "As-Needed Acoustical Engineering Services No. 3 – Smith, Fause & McDonald, Inc. – Contract Award"
+  },
+  {
+   "no": "4j",
+   "title": "As-Needed Acoustical Engineering Services No. 3 – Wilson, Ihrig & Associates – Contract Award"
+  },
+  {
+   "no": "4k",
+   "title": "Job Order Contract – J64 General Engineering Services – Contract Award"
+  },
+  {
+   "no": "4l",
+   "title": "Various Locations Pavement Renovation No.45 & Sewer Replacement, Contract No. 1000015859 – Contract Modification"
+  },
+  {
+   "no": "4m",
+   "title": "Sacramento Street and Sansome Street Improvements – Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "San Francisco Public Utilities Commission Millbrae Lab and Yard Engineering Professional Services – Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Minna Natoma Streetscape Project - Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "Department of Public Works Fiscal Year 2025-2026 and Fiscal Year 2026-2027 Operating and Capital Budget and Priorities"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

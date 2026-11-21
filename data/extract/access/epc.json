@@ -1,0 +1,1220 @@
+{
+"fetched_on": "2026-09-30",
+"meta": {
+"source": "MTC Equity Priority Communities, Plan Bay Area 2050 Plus (ACS 2018-2022)",
+"url": "https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/draft_equity_priority_communities_pba2050plus_acs2022a/FeatureServer/0",
+"item": "https://www.arcgis.com/home/item.html?id=1ae2ccc15b4a4fe9a6d0cd84ae47f2a5"
+},
+"records": [
+{
+"tract": "06075010101",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075010102",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075010201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010500",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010600",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075010701",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075010702",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075010800",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010901",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075010902",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011001",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011002",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011101",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011102",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011300",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075011700",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075011800",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075011901",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075011902",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075012001",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012002",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075012100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012202",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012203",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012204",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075012301",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012302",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012403",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012404",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012405",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012406",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012502",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012503",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012504",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075012601",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012602",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012700",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012802",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012901",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075012902",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013001",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013002",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013101",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013102",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075013500",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015500",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075015600",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075015701",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015702",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015802",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075015900",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016000",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075016101",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075016102",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075016200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016400",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016500",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016601",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016602",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016700",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016802",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075016900",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075017000",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075017101",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075017102",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075017602",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075017603",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075017604",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075017700",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075017801",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075017803",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075017804",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075017903",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075018000",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020101",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020102",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075020201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020500",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020601",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020602",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020701",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020702",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020802",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075020900",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075021000",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021400",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021500",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021600",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021700",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075021800",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022600",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022702",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022704",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022802",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075022803",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022901",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075022902",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075022903",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075023001",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075023003",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075023102",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075023103",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075023200",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075023300",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075023400",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075025100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025403",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025501",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025502",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025600",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025701",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025702",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025800",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075025900",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026001",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026002",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026003",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026004",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075026100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026301",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075026302",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026303",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075026401",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075026402",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075026403",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075026404",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030101",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030102",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030301",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030302",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030400",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030500",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030600",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030700",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030800",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075030900",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031000",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031301",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031302",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075031402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032601",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032602",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032700",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032802",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032901",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075032902",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075033001",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075033002",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075033100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075033201",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075033203",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075033204",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075035101",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075035102",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075035201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075035202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075035300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075035400",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075040100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075040200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075042601",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075042602",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075042700",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075042800",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075045100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075045201",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075045202",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047600",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047701",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047702",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047801",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047802",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047902",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047903",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075047904",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075060100",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075060400",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075060502",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075060701",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075060702",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075060703",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061000",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075061101",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075061102",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075061200",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075061401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061402",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061501",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061502",
+"epc": 1,
+"class": "Higher"
+},
+{
+"tract": "06075061503",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061504",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061505",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061506",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075061507",
+"epc": 1,
+"class": "High"
+},
+{
+"tract": "06075061508",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075980200",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075980300",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075980401",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075980501",
+"epc": 1,
+"class": "Highest"
+},
+{
+"tract": "06075980600",
+"epc": 0,
+"class": "NA"
+},
+{
+"tract": "06075980900",
+"epc": 0,
+"class": "NA"
+}
+]
+}

@@ -1,0 +1,10 @@
+dist/
+node_modules/
+.wrangler/
+.dev.vars
+
+# A link-rewritten copy of dist/ that the retired board-mockup script wrote.
+dist-mockup/
+
+# Astro writes its generated types here.
+.astro/

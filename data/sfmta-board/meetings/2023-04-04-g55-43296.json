@@ -1,0 +1,78 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-04-04",
+ "id": "g55-43296",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=43296",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/27986"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes (Resolution 230404-027)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications:",
+   "decision": "ADOPTED — 6 ayes (Resolution 230404-027)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the SFMTA, through the Director, to accept and expend up to $831,876 in Fiscal Years 2022 and 2023 Transportation Development Act Article 3",
+   "decision": "ADOPTED — 6 ayes (Resolution 230404-028)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Active Communities Plan"
+  },
+  {
+   "no": "12",
+   "title": "Approving a center-running protected bikeway and traffic modifications using reversible and/or adjustable elements and curb regulations on Valencia Street between 15th and 23rd streets",
+   "decision": "ADOPTED — 6 ayes (Resolution 230404-029)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,1228 @@
+{
+ "body": "sfcta-board",
+ "name": "San Francisco County Transportation Authority Board",
+ "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24",
+ "generated": "2026-11-11",
+ "since": "2019-01-01",
+ "range": [
+  "2019-01-29",
+  "2026-11-10"
+ ],
+ "listed": 172,
+ "held": 172,
+ "mirrored": 171,
+ "missing": 1,
+ "missingShare": 0.0058,
+ "items": 2212,
+ "notes": [
+  "sfcta.org sits behind a Cloudflare challenge; agendas are read from SFGovTV's Granicus views 24 and 172.",
+  "Items carry titles only. Granicus does not publish the vote."
+ ],
+ "meetings": [
+  {
+   "date": "2019-01-29",
+   "id": "g24-32286",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32286",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-02-12",
+   "id": "g24-32389",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32389",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-02-26",
+   "id": "g24-32505",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32505",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-12",
+   "id": "g24-32630",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32630",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-14",
+   "id": "g172-32674",
+   "committee": "Transportation Authority Vision Zero Committee",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=32674",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-03-19",
+   "id": "g24-32713",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32713",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-09",
+   "id": "g24-32842",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32842",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-04-23",
+   "id": "g24-32964",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=32964",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-14",
+   "id": "g24-33130",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33130",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-05-21",
+   "id": "g24-33203",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33203",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-11",
+   "id": "g24-33377",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33377",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-25",
+   "id": "g24-33540",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33540",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-06-27",
+   "id": "g172-33559",
+   "committee": "Transportation Authority Vision Zero Committee",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=33559",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-07-09",
+   "id": "g24-33591",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33591",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-07-23",
+   "id": "g24-33702",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33702",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-10",
+   "id": "g24-33953",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=33953",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-24",
+   "id": "g24-34092",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34092",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-04",
+   "id": "g172-34183",
+   "committee": "Transportation Authority Vision Zero Committee",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=34183",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-08",
+   "id": "g24-34213",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34213",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-22",
+   "id": "g24-34345",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34345",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-05",
+   "id": "g24-34429",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34429",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-19",
+   "id": "g24-34539",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34539",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-10",
+   "id": "g24-34683",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34683",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-17",
+   "id": "g24-34752",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34752",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-14",
+   "id": "g24-34907",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=34907",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-28",
+   "id": "g24-35012",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35012",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-11",
+   "id": "g24-35149",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35149",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-25",
+   "id": "g24-35269",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35269",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-03-10",
+   "id": "g24-35409",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35409",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-14",
+   "id": "g24-35590",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35590",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-04-28",
+   "id": "g24-35663",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35663",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-05-12",
+   "id": "g24-35743",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35743",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-05-19",
+   "id": "g24-35787",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35787",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-09",
+   "id": "g24-35900",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35900",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-23",
+   "id": "g24-36002",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36002",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-06-25",
+   "id": "g172-36027",
+   "committee": "Transportation Authority Vision Zero Committee",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=36027",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-14",
+   "id": "g24-36156",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36156",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-28",
+   "id": "g24-36273",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36273",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-08-25",
+   "id": "g24-36457",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36457",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-15",
+   "id": "g24-36596",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36596",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-22",
+   "id": "g24-36667",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36667",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-29",
+   "id": "g172-36723",
+   "committee": "Transportation Authority Vision Zero Committee",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=36723",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-20",
+   "id": "g24-36886",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36886",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-27",
+   "id": "g24-36955",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36955",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-10",
+   "id": "g24-37036",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37036",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-17",
+   "id": "g24-37084",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37084",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-08",
+   "id": "g24-37246",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37246",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-15",
+   "id": "g24-37329",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37329",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-12",
+   "id": "g24-37490",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37490",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-26",
+   "id": "g24-37670",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37670",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-09",
+   "id": "g24-37747",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37747",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-23",
+   "id": "g24-37879",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37879",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-09",
+   "id": "g24-37976",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=37976",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-23",
+   "id": "g24-38106",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38106",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-13",
+   "id": "g24-38237",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38237",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-27",
+   "id": "g24-38408",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38408",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-11",
+   "id": "g24-38499",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38499",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-25",
+   "id": "g24-38625",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38625",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-08",
+   "id": "g24-38707",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38707",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-22",
+   "id": "g24-38845",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38845",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-13",
+   "id": "g24-38950",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38950",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-27",
+   "id": "g24-39065",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39065",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-14",
+   "id": "g24-39352",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39352",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-28",
+   "id": "g24-39460",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39460",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-19",
+   "id": "g24-39636",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39636",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-26",
+   "id": "g24-39717",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39717",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-09",
+   "id": "g24-39817",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39817",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-16",
+   "id": "g24-39875",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=39875",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-12-07",
+   "id": "g24-40024",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-12-14",
+   "id": "g24-40096",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40096",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-11",
+   "id": "g24-40255",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40255",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-25",
+   "id": "g24-40375",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40375",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-08",
+   "id": "g24-40493",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40493",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-15",
+   "id": "g24-40557",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40557",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-08",
+   "id": "g24-40710",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40710",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-22",
+   "id": "g24-40847",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40847",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-12",
+   "id": "g24-40987",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40987",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-26",
+   "id": "g24-41116",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41116",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-10",
+   "id": "g24-41231",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41231",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-24",
+   "id": "g24-41355",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41355",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-07",
+   "id": "g24-41429",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41429",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-28",
+   "id": "g24-41577",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41577",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-07-12",
+   "id": "g24-41641",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41641",
+   "outcome": "empty",
+   "reason": "agenda parsed to no items (none)"
+  },
+  {
+   "date": "2022-07-26",
+   "id": "g24-41763",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=41763",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-13",
+   "id": "g24-42008",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42008",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-27",
+   "id": "g24-42111",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42111",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-18",
+   "id": "g24-42274",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42274",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-25",
+   "id": "g24-42353",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42353",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-08",
+   "id": "g24-42433",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42433",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-15",
+   "id": "g24-42477",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42477",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-06",
+   "id": "g24-42572",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42572",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-13",
+   "id": "g24-42645",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42645",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-10",
+   "id": "g24-42737",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42737",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-24",
+   "id": "g24-42840",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=42840",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-14",
+   "id": "g24-43005",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43005",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-28",
+   "id": "g24-43090",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43090",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-14",
+   "id": "g24-43179",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43179",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-21",
+   "id": "g24-43233",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43233",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-11",
+   "id": "g24-43365",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43365",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-25",
+   "id": "g24-43511",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43511",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-09",
+   "id": "g24-43613",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43613",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-23",
+   "id": "g24-43739",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43739",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-13",
+   "id": "g24-43903",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43903",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-27",
+   "id": "g24-43991",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=43991",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-11",
+   "id": "g24-44050",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44050",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-25",
+   "id": "g24-44163",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44163",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-12",
+   "id": "g24-44398",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44398",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-26",
+   "id": "g24-44524",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44524",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-17",
+   "id": "g24-44674",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44674",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-24",
+   "id": "g24-44736",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44736",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-14",
+   "id": "g24-44886",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44886",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-28",
+   "id": "g24-44936",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44936",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-05",
+   "id": "g24-44992",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=44992",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-12",
+   "id": "g24-45045",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45045",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-09",
+   "id": "g24-45149",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45149",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-23",
+   "id": "g24-45258",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45258",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-13",
+   "id": "g24-45423",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45423",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-27",
+   "id": "g24-45523",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45523",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-12",
+   "id": "g24-45626",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45626",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-26",
+   "id": "g24-45737",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45737",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-16",
+   "id": "g24-45883",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45883",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-23",
+   "id": "g24-45945",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=45945",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-14",
+   "id": "g24-46135",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46135",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-21",
+   "id": "g24-46194",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46194",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-11",
+   "id": "g24-46327",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46327",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-25",
+   "id": "g24-46439",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46439",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-09",
+   "id": "g24-46504",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46504",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-23",
+   "id": "g24-46613",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46613",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-10",
+   "id": "g24-46855",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46855",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-24",
+   "id": "g24-46999",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=46999",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-08",
+   "id": "g24-47137",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=47137",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-22",
+   "id": "g24-47343",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=47343",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-19",
+   "id": "g24-47727",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=47727",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-10",
+   "id": "g24-47985",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=47985",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-17",
+   "id": "g24-48126",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=48126",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-28",
+   "id": "g24-48516",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=48516",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-11",
+   "id": "g24-48657",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=48657",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-25",
+   "id": "g24-48795",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=48795",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-11",
+   "id": "g24-49060",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=49060",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-25",
+   "id": "g24-49262",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=49262",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-08",
+   "id": "g24-49430",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=49430",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-22",
+   "id": "g24-49594",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=49594",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-13",
+   "id": "g24-49842",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=49842",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-20",
+   "id": "g24-49921",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=49921",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-10",
+   "id": "g24-50181",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50181",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-24",
+   "id": "g24-50283",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50283",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-08",
+   "id": "g24-50347",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50347",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-22",
+   "id": "g24-50474",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50474",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-09",
+   "id": "g24-50682",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50682",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-30",
+   "id": "g24-50838",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50838",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-07",
+   "id": "g24-50897",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=50897",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-28",
+   "id": "g24-51034",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51034",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-04",
+   "id": "g24-51069",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51069",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-18",
+   "id": "g24-51172",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51172",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-09",
+   "id": "g24-51312",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51312",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-16",
+   "id": "g24-51385",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51385",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-27",
+   "id": "g24-51660",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51660",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-10",
+   "id": "g24-51759",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51759",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-24",
+   "id": "g24-51853",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51853",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-10",
+   "id": "g24-51951",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=51951",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-24",
+   "id": "g24-52063",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52063",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-14",
+   "id": "g24-52179",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52179",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-28",
+   "id": "g24-52286",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52286",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-12",
+   "id": "g24-52392",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52392",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-19",
+   "id": "g24-52453",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52453",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-09",
+   "id": "g24-52588",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52588",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-23",
+   "id": "g24-52695",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52695",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-14",
+   "id": "g24-52840",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52840",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-28",
+   "id": "g24-52939",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=52939",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-15",
+   "id": "g24-53158",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=53158",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-22",
+   "id": "g24-53202",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=53202",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-10",
+   "id": "g24-53536",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=53536",
+   "outcome": "mirrored"
+  }
+ ]
+}

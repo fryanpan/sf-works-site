@@ -1,0 +1,78 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-01-12",
+ "id": "g22-51546",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51546",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/1.12.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Public Hearing and discussion: discuss the SPFUC’s proposed budget and budget priorities"
+  },
+  {
+   "no": "3a",
+   "title": "Overview of budget priorities and process for FY 2026-27 and FY 2027-28"
+  },
+  {
+   "no": "3b",
+   "title": "Overview of proposed operating budget for FY 2026-27 and FY 2027-28"
+  },
+  {
+   "no": "3c",
+   "title": "Overview of 2-Year Capital Budget and 10-Year Capital Improvement Plan"
+  },
+  {
+   "no": "3d",
+   "title": "Overview of 10-Year Financial Plan"
+  },
+  {
+   "no": "3e",
+   "title": "Debt and Bond Rating Outlook"
+  },
+  {
+   "no": "4",
+   "title": "Proposed Bureau Operating Budgets for FY 2026-27 and FY 2027-28"
+  },
+  {
+   "no": "4a",
+   "title": "General Manager"
+  },
+  {
+   "no": "4b",
+   "title": "External Affairs"
+  },
+  {
+   "no": "4c",
+   "title": "Human Resource Services"
+  },
+  {
+   "no": "4d",
+   "title": "Business Services"
+  },
+  {
+   "no": "4e",
+   "title": "Infrastructure"
+  },
+  {
+   "no": "5",
+   "title": "Motion to continue meeting to a Special Meeting noticed for Friday, January 23, 2026.",
+   "decision": "continue meeting to Friday, January 23, 2026"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

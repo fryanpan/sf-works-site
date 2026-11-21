@@ -1,0 +1,127 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-05-12",
+ "id": "g22-52397",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=52397",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/5.12.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of April 14, 2026",
+   "decision": "approve the Minutes of April 14, 2026"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Water Enterprise Capital Improvement Program Quarterly (Q3) FY 2025-26 Report"
+  },
+  {
+   "no": "5b",
+   "title": "Water System Improvement Program (WSIP) Quarterly (Q3) FY 2025-26 Report"
+  },
+  {
+   "no": "5c",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-109R, General Engineering (A License) Construction, San Joaquin, Stanislaus, and Tuolumne Counties, Hetch Hetchy, with Njirich & Sons Inc., to increase the contract not-to- exceed amount by $2,500,000, for a revised not-to-exceed contract amount of $7,500,000, with no change to the contract duration, to provide additional capacity for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0071",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-106, Landscape (C- 27 License), Micro-LBE Set-Aside, San Francisco, San Mateo, Santa Clara, and Alameda Counties, with Korotkin Associates, to increase the contract duration by three years for a revised contract duration of five years, with no change to the contract amount, to provide additional capacity for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0072",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Supersede Resolution No. 26-0019 of February 10, 2026 with CM Pros (PRO.0254.A) and with PMA Consultants LLC and Dabri Joint Venture (PRO.0254.B); and further approve Amendment No. 2 for Contract Nos. PRO.0254.A and B, Project Scheduling and Cost Control Staff Augmentation Services, increasing each contract by $1,500,000, for a total not-to-exceed contract amount of $9,000,000 per contract, retroactive to February 10, 2026",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0073",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Approve the terms and conditions and authorize the General Manager to execute a no- fee, month-to-month revocable license to the City of Sunnyvale",
+   "decision": "approve Item 7",
+   "resolution": "26-0074",
+   "text": "Approve the terms and conditions and authorize the General Manager to execute a no-fee, month-to-month revocable license to the City of Sunnyvale to use approximately 17 acres of SFPUC land, consisting of portions of SFPUC Parcel Nos. 144, 145A, 146, 148, 152, 154B, 156A, 159, and 165, and the entirety of SFPUC Parcel Nos. 145, 149, 150, 151, 153, 154A, 155, 161, 162, and 164 in Sunnyvale, California for (i) operating, maintaining, managing and repairing an existing public recreational pedestrian and bicycle path; (ii) maintaining existing landscaping in accordance with the SFPUC Vegetation Management Policy; (iii) maintaining and repairing a portion of an existing pedestrian and bicycle ramp; (iv) maintaining certain permitted encroachments consisting of light poles, picnic tables, barbecues, and shade structures; (v) maintaining and repairing existing public street crossings; (vi) installing new educational signage regarding the SFPUC water system; (vii) operating, maintaining, and repairing the existing irrigation systems; and (viii) maintaining the existing Manzano Way park area improvements consisting of picnic tables, parkour structures, and a horseshoe pit"
+  },
+  {
+   "no": "8",
+   "title": "Public Hearing to consider and possible action to adopt revised miscellaneous fees for the San Francisco Public Utilities Commission Water Enterprise",
+   "decision": "approve Item 8",
+   "resolution": "26-0075",
+   "text": "Public Hearing to consider and possible action to adopt revised miscellaneous fees for the San Francisco Public Utilities Commission Water Enterprise related to temporary water service through hydrants (Schedule W-41B) and backflow prevention (Schedule W-45). If approved, the proposed fees will become effective on July 1, 2026, and will remain effective until revised by a future Commission action. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA) pursuant to San Francisco Administrative Code Section 31.04(h). The Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on that determination to make its decision on this action"
+  },
+  {
+   "no": "9",
+   "title": "Public Hearing to consider and possible action to adopt three new Wastewater Enterprise Regulatory Compliance fees",
+   "decision": "approve Item 9",
+   "resolution": "26-0076",
+   "text": "Public Hearing to consider and possible action to adopt three new Wastewater Enterprise Regulatory Compliance fees (Schedule W-46) that support the enforcement of the rules and regulations that pertain to the Stormwater Management Ordinance. If approved, the new Stormwater Management Ordinance Miscellaneous Fees will become effective on or after July 1, 2026, and will remain in effect until revised by a future Commission action. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA) pursuant to San Francisco Administrative Code Chapter 31.04(h). The Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on that determination to make its decision on this action"
+  },
+  {
+   "no": "10",
+   "title": "Public Hearing to consider and possible action to adopt new fees for the San Francisco Public Utilities Commission Power Enterprise",
+   "decision": "approve Item 10",
+   "resolution": "26-0077",
+   "text": "Public Hearing to consider and possible action to adopt new fees for the San Francisco Public Utilities Commission Power Enterprise related to (1) streetlighting, (2) service connections, (3) rules and regulations variance requests, (4) municipal pole use, (5) generator interconnections, and (6) gas service requests. If approved, the proposed fees will become effective on or after July 1, 2026, and will remain effective until revised by a future Commission action. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA) pursuant to San Francisco Administrative Code Section 31.04(h). The Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on that determination to make its decision on this action"
+  },
+  {
+   "no": "11",
+   "title": "Approve an increase of $500,000 to the existing cost contingency and 274 calendar days to the existing duration contingency for Contract No. HH-1013",
+   "decision": "approve Item 11",
+   "resolution": "26-0078",
+   "text": "Approve an increase of $500,000 to the existing cost contingency and 274 calendar days to the existing duration contingency for Contract No. HH-1013, Moccasin Compound Water System Filtration Addition, with Sierra Mountain Construction, Inc., for a revised cost limit of $6,595,729 and a revised duration limit of 920 calendar days (approximately two years and six months), to address additional costs and schedule impacts resulting from a change in the foundation design, as well as plant design changes"
+  },
+  {
+   "no": "12",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "13",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "14",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

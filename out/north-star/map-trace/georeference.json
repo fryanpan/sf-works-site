@@ -1,0 +1,48 @@
+{
+ "transform": [
+  7714.610116152637,
+  945441.6755548681,
+  -9731.54946223853,
+  368191.8830244445
+ ],
+ "report": {
+  "matched": 7707,
+  "median_resid_pt": 0.544,
+  "p90_resid_pt": 1.359,
+  "m_per_pt_x": 11.407,
+  "m_per_pt_y": 11.406,
+  "scale_agreement": 6e-05,
+  "median_resid_m": 6.2,
+  "p90_resid_m": 15.5
+ },
+ "tolerance_m": 20.0,
+ "named_tolerance_m": 40.0,
+ "named_blocks": 2497,
+ "named_on_map": 2403,
+ "min_cos": 0.85,
+ "step_m": 5.0,
+ "coverage_threshold": 0.5,
+ "end_snap_m": 20.0,
+ "partial_blocks": 72,
+ "map_sha256": "6f9f65ce4888de04d5067cc2378f377c196ca089743cf83755506a6822bb279c",
+ "map_read": "2026-09-29",
+ "drawn_miles": {
+  "Car-free": 6.65,
+  "Separated": 106.99,
+  "Shared": 118.01,
+  "Shared L3": 9.38,
+  "Shared-use Path": 28.26,
+  "Undecided": 10.21
+ },
+ "traced_miles": {
+  "Shared": 118.46,
+  "Car-free": 3.65,
+  "Separated": 91.69,
+  "Shared L3": 9.85,
+  "Undecided": 11.49,
+  "Shared-use Path": 18.05
+ },
+ "confirmed_of_named": 2406,
+ "named_total": 2544,
+ "added_by_map": 671
+}

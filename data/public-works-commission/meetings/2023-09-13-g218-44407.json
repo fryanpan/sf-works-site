@@ -1,0 +1,32 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-09-13",
+ "id": "g218-44407",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44407",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "2",
+   "title": "Closed Session – Public Works Director Hiring regarding the hiring of the Public Works Department Director"
+  },
+  {
+   "no": "3",
+   "title": "Announcements following Closed Session"
+  },
+  {
+   "no": "4",
+   "title": "Motion Regarding Whether to Disclose the Discussions during Closed Session"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

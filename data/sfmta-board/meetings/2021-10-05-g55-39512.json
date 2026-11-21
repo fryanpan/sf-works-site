@@ -1,0 +1,116 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-10-05",
+ "id": "g55-39512",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39512",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/25063"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: September 21, 2021 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Payment of claims against the SFMTA",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-110)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving parking and traffic modifications",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-111)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving amendments to extend by one year the term of each of four garage management contracts",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-112)"
+  },
+  {
+   "no": "10.4",
+   "title": "Approving amendments to extend by one year the term of each four garage management contracts",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-113)"
+  },
+  {
+   "no": "10.5",
+   "title": "Awarding SFMTA Contract No. 1308R, L Taraval Improvement Project - Sunset Boulevard to West Portal, to NTK Construction, Inc., in the amount of $57,264,139",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-114)",
+   "severed": true
+  },
+  {
+   "no": "10.6",
+   "title": "Awarding SFMTA Contract No. 1318, Woods Facility Rehabilitation Project – Bus Wash Systems Replacement, to Air & Lube Systems, Inc., to replace the existing bus wash system",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-115)"
+  },
+  {
+   "no": "10.7",
+   "title": "Appointing Gwyneth Borden as an alternate director to serve on the Transbay Joint Powers Authority Board of Directors",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-116)"
+  },
+  {
+   "no": "10.8",
+   "title": "Adopting findings under new state urgency legislation to allow remote meetings during the COVID-19 emergency",
+   "decision": "ADOPTED — 5 ayes (Resolution 211005-117)"
+  },
+  {
+   "no": "11",
+   "title": "Regional Fare Coordination/Integration Study"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel RECESS REGULAR MEETING AND CONVENE CLOSED SESSION",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

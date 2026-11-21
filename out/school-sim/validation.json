@@ -1,0 +1,6659 @@
+{
+ "byGrade": {
+  "TK": {
+   "model": 51.34,
+   "target": 51.34,
+   "tally": 54.0,
+   "bikeModel": 5.705,
+   "bikeTarget": 5.705,
+   "bus": 4.92,
+   "busTarget": 4.92,
+   "kind": "held at K",
+   "students": 1299,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 2.7779
+  },
+  "KN": {
+   "model": 51.34,
+   "target": 51.34,
+   "tally": 54.0,
+   "bikeModel": 5.705,
+   "bikeTarget": 5.705,
+   "bus": 4.92,
+   "busTarget": 4.92,
+   "kind": "measured",
+   "students": 3776,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 2.738
+  },
+  "01": {
+   "model": 51.7,
+   "target": 51.7,
+   "tally": 54.4,
+   "bikeModel": 4.773,
+   "bikeTarget": 4.773,
+   "bus": 4.96,
+   "busTarget": 4.96,
+   "kind": "interpolated",
+   "students": 3874,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 2.5486
+  },
+  "02": {
+   "model": 52.1,
+   "target": 52.1,
+   "tally": 54.8,
+   "bikeModel": 3.837,
+   "bikeTarget": 3.837,
+   "bus": 4.92,
+   "busTarget": 4.92,
+   "kind": "interpolated",
+   "students": 3933,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 2.3018
+  },
+  "03": {
+   "model": 52.48,
+   "target": 52.48,
+   "tally": 55.2,
+   "bikeModel": 2.891,
+   "bikeTarget": 2.891,
+   "bus": 4.93,
+   "busTarget": 4.93,
+   "kind": "interpolated",
+   "students": 4021,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 2.0013
+  },
+  "04": {
+   "model": 52.86,
+   "target": 52.86,
+   "tally": 55.6,
+   "bikeModel": 1.936,
+   "bikeTarget": 1.936,
+   "bus": 4.92,
+   "busTarget": 4.92,
+   "kind": "interpolated",
+   "students": 3996,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 1.5786
+  },
+  "05": {
+   "model": 53.25,
+   "target": 53.25,
+   "tally": 56.0,
+   "bikeModel": 0.973,
+   "bikeTarget": 0.973,
+   "bus": 4.91,
+   "busTarget": 4.91,
+   "kind": "measured",
+   "students": 4008,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 0.8741
+  },
+  "06": {
+   "model": 43.76,
+   "target": 43.76,
+   "tally": 47.0,
+   "bikeModel": 0.931,
+   "bikeTarget": 0.931,
+   "bus": 6.9,
+   "busTarget": 6.9,
+   "kind": "measured",
+   "students": 3698,
+   "maxModeErrPts": 0.0,
+   "bikeShift": -0.1948
+  },
+  "07": {
+   "model": 39.42,
+   "target": 39.42,
+   "tally": 42.33,
+   "bikeModel": 0.931,
+   "bikeTarget": 0.931,
+   "bus": 6.88,
+   "busTarget": 6.88,
+   "kind": "interpolated",
+   "students": 3728,
+   "maxModeErrPts": 0.0,
+   "bikeShift": -0.1927
+  },
+  "08": {
+   "model": 35.08,
+   "target": 35.08,
+   "tally": 37.67,
+   "bikeModel": 0.931,
+   "bikeTarget": 0.931,
+   "bus": 6.88,
+   "busTarget": 6.88,
+   "kind": "interpolated",
+   "students": 3792,
+   "maxModeErrPts": 0.0,
+   "bikeShift": -0.2003
+  },
+  "09": {
+   "model": 33.0,
+   "target": 33.0,
+   "tally": 33.0,
+   "bikeModel": 1.0,
+   "bikeTarget": 1.0,
+   "bus": 0.0,
+   "busTarget": 0.0,
+   "kind": "measured",
+   "students": 3821,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 0.0478
+  },
+  "10": {
+   "model": 33.0,
+   "target": 33.0,
+   "tally": 33.0,
+   "bikeModel": 1.0,
+   "bikeTarget": 1.0,
+   "bus": 0.0,
+   "busTarget": 0.0,
+   "kind": "held at 9th",
+   "students": 3860,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 0.0552
+  },
+  "11": {
+   "model": 33.0,
+   "target": 33.0,
+   "tally": 33.0,
+   "bikeModel": 1.0,
+   "bikeTarget": 1.0,
+   "bus": 0.0,
+   "busTarget": 0.0,
+   "kind": "held at 9th",
+   "students": 3886,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 0.0322
+  },
+  "12": {
+   "model": 33.0,
+   "target": 33.0,
+   "tally": 33.0,
+   "bikeModel": 1.0,
+   "bikeTarget": 1.0,
+   "bus": 0.0,
+   "busTarget": 0.0,
+   "kind": "held at 9th",
+   "students": 4177,
+   "maxModeErrPts": 0.0,
+   "bikeShift": 0.0392
+  }
+ },
+ "citywide": {
+  "model": 43.62,
+  "curveByEnrolment": 45.56,
+  "curveByEnrolmentTrend": 43.38,
+  "tally4Grades": 48.6,
+  "goal": 30.0,
+  "tallyBasisToday": 48.6,
+  "tallyWeights": {
+   "K": 0.212,
+   "5": 0.373,
+   "6": 0.148,
+   "9": 0.232,
+   "mixed": 0.034
+  },
+  "tallyBandWeights": {
+   "K-5": 0.6062,
+   "6-8": 0.1534,
+   "9-12": 0.2404
+  },
+  "note": "The tally's 48.6% is its respondents' mix (K, 5th, 6th, 9th and mixed classes), not every grade. The model's all-students figure weights the grade curve by CDE Census Day enrolment by grade (data/school-case/enrolment-sf.json) at the schools modelled, with grades 10-12 held at 9th's 33%; Trend continues the 6th-9th line instead. The tally basis is 48.6 plus the modelled change in each band's car share weighted by the tally's respondent weights."
+ },
+ "byDistance": {
+  "beta": {
+   "car": -1.5,
+   "carpool": -1.5,
+   "bus": -1.5,
+   "walk": -0.75,
+   "transit": -0.5
+  },
+  "model": {
+   "under1": 45.1,
+   "1to2": 60.4,
+   "over2": 57.4,
+   "transit": {
+    "under1": 6.0,
+    "1to2": 12.3,
+    "over2": 23.0
+   },
+   "mix": {
+    "under1": {
+     "car": 45.1,
+     "carpool": 2.6,
+     "walk": 41.8,
+     "bike": 4.5,
+     "transit": 6.0,
+     "bus": 0.0
+    },
+    "1to2": {
+     "car": 60.4,
+     "carpool": 4.0,
+     "walk": 18.4,
+     "bike": 4.9,
+     "transit": 12.3,
+     "bus": 0.0
+    },
+    "over2": {
+     "car": 57.4,
+     "carpool": 4.2,
+     "walk": 0.0,
+     "bike": 0.8,
+     "transit": 23.0,
+     "bus": 14.7
+    }
+   },
+   "walkOver2Pct": 0.0,
+   "carMaxMissPts": 1.8,
+   "transitMaxMissPts": 9.0,
+   "gate": {
+    "carWithinPts": 3.0,
+    "walkOver2MaxPct": 2.0,
+    "pass": true
+   },
+   "studentsPct": {
+    "under1": 46.3,
+    "1to2": 20.3,
+    "over2": 33.5
+   }
+  },
+  "cts2016": {
+   "under1": {
+    "car": 46.0,
+    "transit": 15.0
+   },
+   "1to2": {
+    "car": 61.0,
+    "transit": 12.0
+   },
+   "over2": {
+    "car": 59.2,
+    "transit": 15.2
+   }
+  },
+  "src": "https://www.sfcta.org/sites/default/files/2019-03/Child_Transportation_FINAL.pdf",
+  "sensitivity": {
+   "muniBandsWeighted": {
+    "under1": 43.4,
+    "1to2": 58.5,
+    "over2": 60.8,
+    "transit": {
+     "under1": 8.3,
+     "1to2": 13.0,
+     "over2": 19.5
+    },
+    "mix": {
+     "under1": {
+      "car": 43.4,
+      "carpool": 2.6,
+      "walk": 41.2,
+      "bike": 4.5,
+      "transit": 8.3,
+      "bus": 0.0
+     },
+     "1to2": {
+      "car": 58.5,
+      "carpool": 3.8,
+      "walk": 19.7,
+      "bike": 4.9,
+      "transit": 13.0,
+      "bus": 0.0
+     },
+     "over2": {
+      "car": 60.8,
+      "carpool": 4.2,
+      "walk": 0.0,
+      "bike": 0.8,
+      "transit": 19.5,
+      "bus": 14.7
+     }
+    },
+    "walkOver2Pct": 0.0,
+    "carMaxMissPts": 2.6,
+    "transitMaxMissPts": 6.7,
+    "gate": {
+     "carWithinPts": 3.0,
+     "walkOver2MaxPct": 2.0,
+     "pass": true
+    },
+    "studentsPct": {
+     "under1": 46.3,
+     "1to2": 20.3,
+     "over2": 33.5
+    },
+    "beta": {
+     "car": -1.0,
+     "carpool": -1.0,
+     "bus": -1.0,
+     "walk": -0.5,
+     "transit": -0.5
+    }
+   }
+  }
+ },
+ "cases": {
+  "lambda": {
+   "low": 0.90832,
+   "central": 0.95416,
+   "high": 1.0
+  },
+  "lowAnchorBikePct": 14.3,
+  "lowAboveHigh": false,
+  "bikePctTodayByLevel": {
+   "all": 2.17,
+   "tk5": 3.49,
+   "g6to12": 0.97
+  },
+  "bikePctFullNetworkYear10": {
+   "low": {
+    "all": 14.3,
+    "tk5": 10.17,
+    "g6to12": 18.07
+   },
+   "central": {
+    "all": 15.72,
+    "tk5": 10.7,
+    "g6to12": 20.29
+   },
+   "high": {
+    "all": 17.21,
+    "tk5": 11.25,
+    "g6to12": 22.65
+   }
+  },
+  "ordered": true,
+  "v0GoDutchCeiling": {
+   "tk5": 10.3,
+   "g6to12": 36.2,
+   "note": "V0 (notes/school-trips-2026-10/2026-10-18-v0-pct-fit.md): Go Dutch on SF's pairs at today's distances. The High case at full network sits above it where a grade's own constant is above its level's reference (TK, K), since that extra part is kept."
+  },
+  "rule": "lambda x caseD x max(0, on_v - on_today); caseD = Go Dutch shift - the level's SF reference"
+ },
+ "bikeReference": {
+  "primary": 1.9927,
+  "secondary": -0.059
+ },
+ "bikeCurve": {
+  "gradient": "routed (0.80% of pairs on the straight-line proxy)",
+  "gradCapPct": 5.0,
+  "primary": {
+   "students": 34051,
+   "medianKm": 2.22,
+   "medianGradPct": 3.65,
+   "atCapPct": 26.0,
+   "pastFitLimitPct": 23.6
+  },
+  "secondary": {
+   "students": 40979,
+   "medianKm": 3.97,
+   "medianGradPct": 3.71,
+   "atCapPct": 22.0,
+   "pastFitLimitPct": 9.3
+  }
+ },
+ "muni": {
+  "serviceDay": "2026-08-26",
+  "feedFirst": "2026-07-23",
+  "feedLast": "2026-08-28",
+  "zipSha256": "69572de4529dd3b7848e11258df5ea2aef1b36611d953d84fe0170075dbab910",
+  "connections": 78996,
+  "noBellBands": 214,
+  "params": {
+   "access": 800.0,
+   "foot": 150.0,
+   "transfer": 60,
+   "early": 5,
+   "window": 7200,
+   "fallback": "08:00",
+   "detour": 1.3,
+   "walk": 2.0
+  },
+  "src": "https://www.sfmta.com/reports/gtfs-transit-data"
+ },
+ "backcast": {
+  "bandPts": [
+   0.0,
+   2.5
+  ],
+  "cases": {
+   "low": {
+    "bikePts": 0.325,
+    "pass": true
+   },
+   "central": {
+    "bikePts": 0.332,
+    "pass": true
+   },
+   "high": {
+    "bikePts": 0.339,
+    "pass": true
+   }
+  },
+  "studentsWithGainPct": 55.5
+ },
+ "carCost": {
+  "byCharge": {
+   "low": {
+    "usdDay": 4.0,
+    "carPts": -5.49
+   },
+   "central": {
+    "usdDay": 8.0,
+    "carPts": -10.73
+   },
+   "high": {
+    "usdDay": 16.0,
+    "carPts": -20.09
+   }
+  },
+  "byValueOfTime": {
+   "low": {
+    "votUsdHr": 23.5,
+    "carPts": -14.97
+   },
+   "central": {
+    "votUsdHr": 33.6,
+    "carPts": -10.73
+   },
+   "high": {
+    "votUsdHr": 40.3,
+    "carPts": -9.02
+   }
+  },
+  "ulezTest": {
+   "grades": "1-4",
+   "chargeUsdDay": 16.0,
+   "nonCompliantShare": 0.39,
+   "modelGapPts": 16.4,
+   "chillGapPts": [
+    10.3,
+    21.6,
+    43.9
+   ],
+   "pass": true,
+   "byFormAndTrips": {
+    "money|1": 36.2,
+    "money|3.46": 16.4,
+    "money|5.11": 11.3,
+    "logmin|1": 25.6,
+    "logmin|3.46": 13.5,
+    "logmin|5.11": 10.3
+   },
+   "refCarMin": 11.9,
+   "kind": "test",
+   "note": "points of driven grade 1-4 children leaving the family car at the ULEZ charge on the non-compliant share of cars, against CHILL's London-over-Luton gap; keys are form|daily vehicle trips the charge is split over (1 = the school trip pays it all)"
+  }
+ },
+ "k5TripLengths": {
+  "model": {
+   "under1": 50.8,
+   "1to2": 21.2,
+   "over2": 28.0
+  },
+  "modelSfusdRun": {
+   "under1": 52.2,
+   "1to2": 20.7,
+   "over2": 27.0,
+   "meanMi": 1.481
+  },
+  "fig5": {
+   "under1": 50.6,
+   "1to2": 21.5,
+   "over2": 27.8
+  }
+ },
+ "origins": {
+  "method": "C",
+  "source": {
+   "table": "https://data.census.gov/table/ACSDT5Y2024.B14002?g=050XX00US06075$1400000",
+   "file": "data/school-sim/acs-b14002-tracts-5y2024.json",
+   "tag": "[primary — read 2026-10-19]",
+   "publicShareCity": {
+    "elementary": 0.6808,
+    "middle": 0.6727,
+    "high": 0.6975
+   }
+  },
+  "note": "Origins are census children x the tract's public share of enrolled students (ACS B14002); each SFUSD-run school's students by home ZIP are then raked to SFUSD's dashboard per grade span, so the home-ZIP check below is fitted, not a test. Fig. 5 and Stanford's mean are checks the rake never sees.",
+  "k5SfusdRunBeforeRake": {
+   "under1": 51.2,
+   "1to2": 20.7,
+   "over2": 28.1,
+   "meanMi": 1.504
+  },
+  "rakeRowErrMax": 0.0013,
+  "rakeColErrMax": 0.0,
+  "k5SfusdRun": {
+   "under1": 52.2,
+   "1to2": 20.7,
+   "over2": 27.0,
+   "meanMi": 1.481
+  }
+ },
+ "changes": {
+  "carmichael": {
+   "assign_ncp": {
+    "carPts": -0.72,
+    "walkBikePts": 1.95,
+    "targetedPct": 66.3,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.06 miles under Neighborhood + Citywide Programs; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf",
+    "carPtsAmongTargeted": -1.08
+   },
+   "caregiver_muni": {
+    "carPts": -2.75,
+    "walkBikePts": -0.0,
+    "targetedPct": 57.6,
+    "study": "the full-strength set the page blends down from, half of the 21% who named cost. The page's figure is Muni's share up 1 point (0 to 3) among TK-8 students over half a mile, muni_pts in site/data/school-trips-assumptions.json",
+    "src": "SFCTA School Access Plan, May 2023, p. 33 (21% of caregivers named cost)",
+    "carPtsAmongTargeted": -4.77
+   },
+   "yellow_bus": {
+    "carPts": -0.31,
+    "walkBikePts": -0.02,
+    "targetedPct": 18.1,
+    "study": "640 riders (580 to 700), Denver's loop take-up, on SFUSD's costed loops for TK-8 students over 2 miles' walk, by one shift on the bus constant; the share leaving a single-family car comes out of the choice and is checked against MyBus's 48%",
+    "src": "Denver's Success Express loop take-up, 8.9% to 10.7% of eligible students, applied to SF's 6,500 TK-8 students over 2 miles (SFCTA School Access Plan p. 42); 48% previously driven from West Yorkshire's MyBus (64%) weighted by SF's grades",
+    "riderCarPct": 52.76
+   },
+   "carpool": {
+    "carPts": -2.32,
+    "walkBikePts": -0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: 5% of driving families in two-family carpools. The page's figure is 0.5% of driven students (0.2% to 1%), pool_share in site/data/school-trips-assumptions.json",
+    "src": "Bryan, 2026-10-09, on Denver's SchoolPool, https://cbsm.com/cases/34151-denver-s-schoolpool",
+    "carPtsAmongTargeted": -2.32
+   },
+   "ebike": {
+    "carPts": -0.3,
+    "walkBikePts": 0.4,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: every student at a school passing the e-bike gate gets the PCT's e-bike term, +0.1812 on the gradient coefficient; the ride is 15% faster for the trip-time figures; no study measures take-up",
+    "src": "Bryan, 2026-10-09: one 'increase e-bike adoption' bucket (lending, renting, help buying); the PCT's e-bike scenario, Goodman et al. 2019 / ITSLeeds/pct",
+    "carPtsAmongTargeted": -0.3
+   },
+   "safer_crossings": {
+    "carPts": -2.67,
+    "walkBikePts": 3.3,
+    "targetedPct": 100.0,
+    "study": "walking and biking up 3.3 points at schools with an engineering improvement",
+    "src": "McDonald et al. 2014, p. 160, https://mcdonald.web.unc.edu/wp-content/uploads/sites/8583/2014/12/McDonald_etal_ImpactsSRTS_JAPA2014.pdf",
+    "walkBikePtsAmongTargeted": 3.3
+   },
+   "walking_bus": {
+    "carPts": -3.33,
+    "walkBikePts": 3.76,
+    "targetedPct": 41.6,
+    "study": "the full-strength set the page blends down from: days walked or biked up 9.04 points (1.10 to 16.98), grades 3-5 within 1 mile, with paid leaders. The page's figure is 0.37 car points of TK-5 students (0 to 1), wb_pts in site/data/school-trips-assumptions.json",
+    "src": "Johnson et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/",
+    "walkBikePtsAmongTargeted": 9.04
+   },
+   "school_street": {
+    "carPts": -3.51,
+    "walkBikePts": 2.64,
+    "targetedPct": 66.3,
+    "study": "private motor vehicle share down 5.3 points (2.5 to 8.2) at 166 UK primary schools; applied to TK-5 students only",
+    "src": "Patterson et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12964863/",
+    "carPtsAmongTargeted": -5.3
+   },
+   "assign_nas": {
+    "carPts": -0.38,
+    "walkBikePts": 1.1,
+    "targetedPct": 66.3,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.21 miles under Neighborhood + All Schools; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf",
+    "carPtsAmongTargeted": -0.58
+   },
+   "car_cost": {
+    "carPts": -11.05,
+    "walkBikePts": 6.03,
+    "targetedPct": 100.0,
+    "study": "the full-strength set: a daily charge on every family car, $8 ($4 to $16), split over the household's 3.46 daily vehicle trips (NHTS 2022) and priced at $33.60 an hour ($23.50 to $40.30) by a money term in the inner logit; the bike doesn't move, since the nest's bike share depends on the route alone",
+    "src": "USDOT value of travel time (local personal, 50% of hourly median household income) on SF's ACS 2024 median household income; charge range ours",
+    "carPtsAmongTargeted": -11.05
+   }
+  },
+  "kipp-bayview": {
+   "assign_ncp": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.06 miles under Neighborhood + Citywide Programs; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "caregiver_muni": {
+    "carPts": -2.2,
+    "walkBikePts": 0.0,
+    "targetedPct": 44.3,
+    "study": "the full-strength set the page blends down from, half of the 21% who named cost. The page's figure is Muni's share up 1 point (0 to 3) among TK-8 students over half a mile, muni_pts in site/data/school-trips-assumptions.json",
+    "src": "SFCTA School Access Plan, May 2023, p. 33 (21% of caregivers named cost)",
+    "carPtsAmongTargeted": -4.97
+   },
+   "yellow_bus": {
+    "carPts": -0.35,
+    "walkBikePts": -0.07,
+    "targetedPct": 27.0,
+    "study": "640 riders (580 to 700), Denver's loop take-up, on SFUSD's costed loops for TK-8 students over 2 miles' walk, by one shift on the bus constant; the share leaving a single-family car comes out of the choice and is checked against MyBus's 48%",
+    "src": "Denver's Success Express loop take-up, 8.9% to 10.7% of eligible students, applied to SF's 6,500 TK-8 students over 2 miles (SFCTA School Access Plan p. 42); 48% previously driven from West Yorkshire's MyBus (64%) weighted by SF's grades",
+    "riderCarPct": 40.6
+   },
+   "carpool": {
+    "carPts": -2.27,
+    "walkBikePts": 0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: 5% of driving families in two-family carpools. The page's figure is 0.5% of driven students (0.2% to 1%), pool_share in site/data/school-trips-assumptions.json",
+    "src": "Bryan, 2026-10-09, on Denver's SchoolPool, https://cbsm.com/cases/34151-denver-s-schoolpool",
+    "carPtsAmongTargeted": -2.27
+   },
+   "ebike": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: every student at a school passing the e-bike gate gets the PCT's e-bike term, +0.1812 on the gradient coefficient; the ride is 15% faster for the trip-time figures; no study measures take-up",
+    "src": "Bryan, 2026-10-09: one 'increase e-bike adoption' bucket (lending, renting, help buying); the PCT's e-bike scenario, Goodman et al. 2019 / ITSLeeds/pct",
+    "carPtsAmongTargeted": 0.0
+   },
+   "safer_crossings": {
+    "carPts": -2.16,
+    "walkBikePts": 3.3,
+    "targetedPct": 100.0,
+    "study": "walking and biking up 3.3 points at schools with an engineering improvement",
+    "src": "McDonald et al. 2014, p. 160, https://mcdonald.web.unc.edu/wp-content/uploads/sites/8583/2014/12/McDonald_etal_ImpactsSRTS_JAPA2014.pdf",
+    "walkBikePtsAmongTargeted": 3.3
+   },
+   "walking_bus": {
+    "carPts": -0.58,
+    "walkBikePts": 0.66,
+    "targetedPct": 7.3,
+    "study": "the full-strength set the page blends down from: days walked or biked up 9.04 points (1.10 to 16.98), grades 3-5 within 1 mile, with paid leaders. The page's figure is 0.37 car points of TK-5 students (0 to 1), wb_pts in site/data/school-trips-assumptions.json",
+    "src": "Johnson et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/",
+    "walkBikePtsAmongTargeted": 9.04
+   },
+   "school_street": {
+    "carPts": -0.91,
+    "walkBikePts": 0.52,
+    "targetedPct": 17.1,
+    "study": "private motor vehicle share down 5.3 points (2.5 to 8.2) at 166 UK primary schools; applied to TK-5 students only",
+    "src": "Patterson et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12964863/",
+    "carPtsAmongTargeted": -5.3
+   },
+   "assign_nas": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.21 miles under Neighborhood + All Schools; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "car_cost": {
+    "carPts": -11.25,
+    "walkBikePts": 3.84,
+    "targetedPct": 100.0,
+    "study": "the full-strength set: a daily charge on every family car, $8 ($4 to $16), split over the household's 3.46 daily vehicle trips (NHTS 2022) and priced at $33.60 an hour ($23.50 to $40.30) by a money term in the inner logit; the bike doesn't move, since the nest's bike share depends on the route alone",
+    "src": "USDOT value of travel time (local personal, 50% of hourly median household income) on SF's ACS 2024 median household income; charge range ours",
+    "carPtsAmongTargeted": -11.25
+   }
+  },
+  "burton": {
+   "assign_ncp": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.06 miles under Neighborhood + Citywide Programs; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "caregiver_muni": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "the full-strength set the page blends down from, half of the 21% who named cost. The page's figure is Muni's share up 1 point (0 to 3) among TK-8 students over half a mile, muni_pts in site/data/school-trips-assumptions.json",
+    "src": "SFCTA School Access Plan, May 2023, p. 33 (21% of caregivers named cost)"
+   },
+   "yellow_bus": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "640 riders (580 to 700), Denver's loop take-up, on SFUSD's costed loops for TK-8 students over 2 miles' walk, by one shift on the bus constant; the share leaving a single-family car comes out of the choice and is checked against MyBus's 48%",
+    "src": "Denver's Success Express loop take-up, 8.9% to 10.7% of eligible students, applied to SF's 6,500 TK-8 students over 2 miles (SFCTA School Access Plan p. 42); 48% previously driven from West Yorkshire's MyBus (64%) weighted by SF's grades"
+   },
+   "carpool": {
+    "carPts": -1.92,
+    "walkBikePts": -0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: 5% of driving families in two-family carpools. The page's figure is 0.5% of driven students (0.2% to 1%), pool_share in site/data/school-trips-assumptions.json",
+    "src": "Bryan, 2026-10-09, on Denver's SchoolPool, https://cbsm.com/cases/34151-denver-s-schoolpool",
+    "carPtsAmongTargeted": -1.92
+   },
+   "ebike": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: every student at a school passing the e-bike gate gets the PCT's e-bike term, +0.1812 on the gradient coefficient; the ride is 15% faster for the trip-time figures; no study measures take-up",
+    "src": "Bryan, 2026-10-09: one 'increase e-bike adoption' bucket (lending, renting, help buying); the PCT's e-bike scenario, Goodman et al. 2019 / ITSLeeds/pct",
+    "carPtsAmongTargeted": 0.0
+   },
+   "safer_crossings": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "walking and biking up 3.3 points at schools with an engineering improvement",
+    "src": "McDonald et al. 2014, p. 160, https://mcdonald.web.unc.edu/wp-content/uploads/sites/8583/2014/12/McDonald_etal_ImpactsSRTS_JAPA2014.pdf"
+   },
+   "walking_bus": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "the full-strength set the page blends down from: days walked or biked up 9.04 points (1.10 to 16.98), grades 3-5 within 1 mile, with paid leaders. The page's figure is 0.37 car points of TK-5 students (0 to 1), wb_pts in site/data/school-trips-assumptions.json",
+    "src": "Johnson et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/"
+   },
+   "school_street": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "private motor vehicle share down 5.3 points (2.5 to 8.2) at 166 UK primary schools; applied to TK-5 students only",
+    "src": "Patterson et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12964863/"
+   },
+   "assign_nas": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.21 miles under Neighborhood + All Schools; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "car_cost": {
+    "carPts": -10.83,
+    "walkBikePts": 1.7,
+    "targetedPct": 100.0,
+    "study": "the full-strength set: a daily charge on every family car, $8 ($4 to $16), split over the household's 3.46 daily vehicle trips (NHTS 2022) and priced at $33.60 an hour ($23.50 to $40.30) by a money term in the inner logit; the bike doesn't move, since the nest's bike share depends on the route alone",
+    "src": "USDOT value of travel time (local personal, 50% of hourly median household income) on SF's ACS 2024 median household income; charge range ours",
+    "carPtsAmongTargeted": -10.83
+   }
+  },
+  "balboa": {
+   "assign_ncp": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.06 miles under Neighborhood + Citywide Programs; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "caregiver_muni": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "the full-strength set the page blends down from, half of the 21% who named cost. The page's figure is Muni's share up 1 point (0 to 3) among TK-8 students over half a mile, muni_pts in site/data/school-trips-assumptions.json",
+    "src": "SFCTA School Access Plan, May 2023, p. 33 (21% of caregivers named cost)"
+   },
+   "yellow_bus": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "640 riders (580 to 700), Denver's loop take-up, on SFUSD's costed loops for TK-8 students over 2 miles' walk, by one shift on the bus constant; the share leaving a single-family car comes out of the choice and is checked against MyBus's 48%",
+    "src": "Denver's Success Express loop take-up, 8.9% to 10.7% of eligible students, applied to SF's 6,500 TK-8 students over 2 miles (SFCTA School Access Plan p. 42); 48% previously driven from West Yorkshire's MyBus (64%) weighted by SF's grades"
+   },
+   "carpool": {
+    "carPts": -1.94,
+    "walkBikePts": 0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: 5% of driving families in two-family carpools. The page's figure is 0.5% of driven students (0.2% to 1%), pool_share in site/data/school-trips-assumptions.json",
+    "src": "Bryan, 2026-10-09, on Denver's SchoolPool, https://cbsm.com/cases/34151-denver-s-schoolpool",
+    "carPtsAmongTargeted": -1.94
+   },
+   "ebike": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: every student at a school passing the e-bike gate gets the PCT's e-bike term, +0.1812 on the gradient coefficient; the ride is 15% faster for the trip-time figures; no study measures take-up",
+    "src": "Bryan, 2026-10-09: one 'increase e-bike adoption' bucket (lending, renting, help buying); the PCT's e-bike scenario, Goodman et al. 2019 / ITSLeeds/pct",
+    "carPtsAmongTargeted": 0.0
+   },
+   "safer_crossings": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "walking and biking up 3.3 points at schools with an engineering improvement",
+    "src": "McDonald et al. 2014, p. 160, https://mcdonald.web.unc.edu/wp-content/uploads/sites/8583/2014/12/McDonald_etal_ImpactsSRTS_JAPA2014.pdf"
+   },
+   "walking_bus": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "the full-strength set the page blends down from: days walked or biked up 9.04 points (1.10 to 16.98), grades 3-5 within 1 mile, with paid leaders. The page's figure is 0.37 car points of TK-5 students (0 to 1), wb_pts in site/data/school-trips-assumptions.json",
+    "src": "Johnson et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/"
+   },
+   "school_street": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "private motor vehicle share down 5.3 points (2.5 to 8.2) at 166 UK primary schools; applied to TK-5 students only",
+    "src": "Patterson et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12964863/"
+   },
+   "assign_nas": {
+    "carPts": 0.0,
+    "walkBikePts": 0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.21 miles under Neighborhood + All Schools; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "car_cost": {
+    "carPts": -10.78,
+    "walkBikePts": 1.89,
+    "targetedPct": 100.0,
+    "study": "the full-strength set: a daily charge on every family car, $8 ($4 to $16), split over the household's 3.46 daily vehicle trips (NHTS 2022) and priced at $33.60 an hour ($23.50 to $40.30) by a money term in the inner logit; the bike doesn't move, since the nest's bike share depends on the route alone",
+    "src": "USDOT value of travel time (local personal, 50% of hourly median household income) on SF's ACS 2024 median household income; charge range ours",
+    "carPtsAmongTargeted": -10.78
+   }
+  },
+  "june-jordan": {
+   "assign_ncp": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.06 miles under Neighborhood + Citywide Programs; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "caregiver_muni": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "the full-strength set the page blends down from, half of the 21% who named cost. The page's figure is Muni's share up 1 point (0 to 3) among TK-8 students over half a mile, muni_pts in site/data/school-trips-assumptions.json",
+    "src": "SFCTA School Access Plan, May 2023, p. 33 (21% of caregivers named cost)"
+   },
+   "yellow_bus": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "640 riders (580 to 700), Denver's loop take-up, on SFUSD's costed loops for TK-8 students over 2 miles' walk, by one shift on the bus constant; the share leaving a single-family car comes out of the choice and is checked against MyBus's 48%",
+    "src": "Denver's Success Express loop take-up, 8.9% to 10.7% of eligible students, applied to SF's 6,500 TK-8 students over 2 miles (SFCTA School Access Plan p. 42); 48% previously driven from West Yorkshire's MyBus (64%) weighted by SF's grades"
+   },
+   "carpool": {
+    "carPts": -1.87,
+    "walkBikePts": -0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: 5% of driving families in two-family carpools. The page's figure is 0.5% of driven students (0.2% to 1%), pool_share in site/data/school-trips-assumptions.json",
+    "src": "Bryan, 2026-10-09, on Denver's SchoolPool, https://cbsm.com/cases/34151-denver-s-schoolpool",
+    "carPtsAmongTargeted": -1.87
+   },
+   "ebike": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 100.0,
+    "study": "the full-strength set the page blends down from: every student at a school passing the e-bike gate gets the PCT's e-bike term, +0.1812 on the gradient coefficient; the ride is 15% faster for the trip-time figures; no study measures take-up",
+    "src": "Bryan, 2026-10-09: one 'increase e-bike adoption' bucket (lending, renting, help buying); the PCT's e-bike scenario, Goodman et al. 2019 / ITSLeeds/pct",
+    "carPtsAmongTargeted": 0.0
+   },
+   "safer_crossings": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "walking and biking up 3.3 points at schools with an engineering improvement",
+    "src": "McDonald et al. 2014, p. 160, https://mcdonald.web.unc.edu/wp-content/uploads/sites/8583/2014/12/McDonald_etal_ImpactsSRTS_JAPA2014.pdf"
+   },
+   "walking_bus": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "the full-strength set the page blends down from: days walked or biked up 9.04 points (1.10 to 16.98), grades 3-5 within 1 mile, with paid leaders. The page's figure is 0.37 car points of TK-5 students (0 to 1), wb_pts in site/data/school-trips-assumptions.json",
+    "src": "Johnson et al. 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/"
+   },
+   "school_street": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "private motor vehicle share down 5.3 points (2.5 to 8.2) at 166 UK primary schools; applied to TK-5 students only",
+    "src": "Patterson et al. 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC12964863/"
+   },
+   "assign_nas": {
+    "carPts": 0.0,
+    "walkBikePts": -0.0,
+    "targetedPct": 0.0,
+    "study": "Stanford's average elementary distance falls from 1.40 to 1.21 miles under Neighborhood + All Schools; every TK-5 trip scaled by that ratio",
+    "src": "SFUSD Study Session #2, 2026-08-28, https://go.boarddocs.com/ca/sfusd/Board.nsf/pfiles/DXE3RY083148/$file/School%20Reorg%20Study%20Session%20%232%20%28FINAL%2C%208.28.26%29.pdf"
+   },
+   "car_cost": {
+    "carPts": -10.65,
+    "walkBikePts": 1.77,
+    "targetedPct": 100.0,
+    "study": "the full-strength set: a daily charge on every family car, $8 ($4 to $16), split over the household's 3.46 daily vehicle trips (NHTS 2022) and priced at $33.60 an hour ($23.50 to $40.30) by a money term in the inner logit; the bike doesn't move, since the nest's bike share depends on the route alone",
+    "src": "USDOT value of travel time (local personal, 50% of hourly median household income) on SF's ACS 2024 median household income; charge range ours",
+    "carPtsAmongTargeted": -10.65
+   }
+  }
+ },
+ "newlyEligibleStudents": {
+  "ss0-calm0-conn0-muni0-bus0": 0.0,
+  "ss0-calm0-conn0-muni0-bus1": 0.0,
+  "ss0-calm0-conn0-muni1-bus0": 0.0,
+  "ss0-calm0-conn0-muni1-bus1": 0.0,
+  "ss0-calm0-conn1-muni0-bus0": 4905.0,
+  "ss0-calm0-conn1-muni0-bus1": 4905.0,
+  "ss0-calm0-conn1-muni1-bus0": 4905.0,
+  "ss0-calm0-conn1-muni1-bus1": 4905.0,
+  "ss0-calm1-conn0-muni0-bus0": 9524.6,
+  "ss0-calm1-conn0-muni0-bus1": 9524.6,
+  "ss0-calm1-conn0-muni1-bus0": 9524.6,
+  "ss0-calm1-conn0-muni1-bus1": 9524.6,
+  "ss0-calm1-conn1-muni0-bus0": 13891.4,
+  "ss0-calm1-conn1-muni0-bus1": 13891.4,
+  "ss0-calm1-conn1-muni1-bus0": 13891.4,
+  "ss0-calm1-conn1-muni1-bus1": 13891.4,
+  "ss1-calm0-conn0-muni0-bus0": 0.0,
+  "ss1-calm0-conn0-muni0-bus1": 0.0,
+  "ss1-calm0-conn0-muni1-bus0": 0.0,
+  "ss1-calm0-conn0-muni1-bus1": 0.0,
+  "ss1-calm0-conn1-muni0-bus0": 4905.0,
+  "ss1-calm0-conn1-muni0-bus1": 4905.0,
+  "ss1-calm0-conn1-muni1-bus0": 4905.0,
+  "ss1-calm0-conn1-muni1-bus1": 4905.0,
+  "ss1-calm1-conn0-muni0-bus0": 9524.6,
+  "ss1-calm1-conn0-muni0-bus1": 9524.6,
+  "ss1-calm1-conn0-muni1-bus0": 9524.6,
+  "ss1-calm1-conn0-muni1-bus1": 9524.6,
+  "ss1-calm1-conn1-muni0-bus0": 13891.4,
+  "ss1-calm1-conn1-muni0-bus1": 13891.4,
+  "ss1-calm1-conn1-muni1-bus0": 13891.4,
+  "ss1-calm1-conn1-muni1-bus1": 13891.4
+ },
+ "checks": {
+  "assignErr": 5.6985501975612035e-05,
+  "probSum": 6.661338147750939e-16,
+  "choiceRowsMaxErr": 4.440892098500626e-16,
+  "prunedPct": 1.338,
+  "cells": 4473102,
+  "tallyFitErr": 0.026
+ },
+ "trips": {
+  "carFallbackPairs": 0,
+  "noBikePairs": 34448,
+  "noWalkPairs": 8612,
+  "network": {
+   "safeEdges": 14757,
+   "edges": 265163,
+   "nodes": 225580,
+   "safeEdgesBuilt": 14482,
+   "safeEdges2019": 9303,
+   "riseKnownPct": 99.81,
+   "driveOsmBase": "2026-10-11T05:00:21Z",
+   "walkEdges": 232454,
+   "driveEdgesShared": 69755,
+   "driveOnlyEdges": 32709,
+   "nodesAdded": 20844,
+   "notWalkable": 638,
+   "busyEdges": 13264,
+   "busyNodes": 13470,
+   "busyNodesUnsignalled": 10366,
+   "signalNodes": 11396,
+   "approachEdges": 2616
+  },
+  "perSchool": {
+   "38684780101337": {
+    "schoolStreetFt": 743,
+    "calmFt": 8851,
+    "connectorFt": 1950,
+    "connectorOnNetwork": false,
+    "topBlocks": 20,
+    "calmed": true,
+    "calmFtFull": 8851
+   },
+   "38684780101352": {
+    "schoolStreetFt": 831,
+    "calmFt": 5245,
+    "connectorFt": 2329,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 5245
+   },
+   "38684780102103": {
+    "schoolStreetFt": 1065,
+    "calmFt": 0,
+    "connectorFt": 498,
+    "connectorOnNetwork": false,
+    "topBlocks": 20,
+    "calmed": false,
+    "calmFtFull": 6653
+   },
+   "38684780107300": {
+    "schoolStreetFt": 874,
+    "calmFt": 3931,
+    "connectorFt": 733,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 3931
+   },
+   "38684780111427": {
+    "schoolStreetFt": 2177,
+    "calmFt": 0,
+    "connectorFt": 5764,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7551
+   },
+   "38684780119875": {
+    "schoolStreetFt": 1336,
+    "calmFt": 0,
+    "connectorFt": 2527,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4285
+   },
+   "38684780119958": {
+    "schoolStreetFt": 201,
+    "calmFt": 8900,
+    "connectorFt": 910,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 8900
+   },
+   "38684780120386": {
+    "schoolStreetFt": 1262,
+    "calmFt": 0,
+    "connectorFt": 1050,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 836
+   },
+   "38684780123117": {
+    "schoolStreetFt": 1341,
+    "calmFt": 0,
+    "connectorFt": 1129,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7788
+   },
+   "38684780123265": {
+    "schoolStreetFt": 1262,
+    "calmFt": 0,
+    "connectorFt": 1015,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2194
+   },
+   "38684780123505": {
+    "schoolStreetFt": 788,
+    "calmFt": 0,
+    "connectorFt": 1169,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8456
+   },
+   "38684780127530": {
+    "schoolStreetFt": 801,
+    "calmFt": 13793,
+    "connectorFt": 2484,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 13793
+   },
+   "38684780132241": {
+    "schoolStreetFt": 808,
+    "calmFt": 0,
+    "connectorFt": 1608,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8616
+   },
+   "38684783830031": {
+    "schoolStreetFt": 1110,
+    "calmFt": 0,
+    "connectorFt": 908,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 530
+   },
+   "38684783830064": {
+    "schoolStreetFt": 1432,
+    "calmFt": 0,
+    "connectorFt": 1950,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4827
+   },
+   "38684783830205": {
+    "schoolStreetFt": 493,
+    "calmFt": 0,
+    "connectorFt": 693,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7177
+   },
+   "38684783830254": {
+    "schoolStreetFt": 1376,
+    "calmFt": 0,
+    "connectorFt": 1964,
+    "connectorOnNetwork": false,
+    "topBlocks": 20,
+    "calmed": false,
+    "calmFtFull": 17175
+   },
+   "38684783830288": {
+    "schoolStreetFt": 168,
+    "calmFt": 10501,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "topBlocks": 20,
+    "calmed": true,
+    "calmFtFull": 10501
+   },
+   "38684783830387": {
+    "schoolStreetFt": 201,
+    "calmFt": 0,
+    "connectorFt": 910,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8900
+   },
+   "38684783830403": {
+    "schoolStreetFt": 1946,
+    "calmFt": 0,
+    "connectorFt": 1062,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8379
+   },
+   "38684783830429": {
+    "schoolStreetFt": 211,
+    "calmFt": 0,
+    "connectorFt": 2111,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3155
+   },
+   "38684783830437": {
+    "schoolStreetFt": 831,
+    "calmFt": 0,
+    "connectorFt": 2358,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5863
+   },
+   "38684783831765": {
+    "schoolStreetFt": 1221,
+    "calmFt": 5290,
+    "connectorFt": 2926,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 5290
+   },
+   "38684783833241": {
+    "schoolStreetFt": 1712,
+    "calmFt": 14496,
+    "connectorFt": 7037,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 14496
+   },
+   "38684783833407": {
+    "schoolStreetFt": 1283,
+    "calmFt": 0,
+    "connectorFt": 1104,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9734
+   },
+   "38684783834082": {
+    "schoolStreetFt": 1773,
+    "calmFt": 0,
+    "connectorFt": 1407,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5400
+   },
+   "38684783834769": {
+    "schoolStreetFt": 1045,
+    "calmFt": 5777,
+    "connectorFt": 8,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 5777
+   },
+   "38684783839081": {
+    "schoolStreetFt": 1252,
+    "calmFt": 0,
+    "connectorFt": 1147,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 16158
+   },
+   "38684786040695": {
+    "schoolStreetFt": 307,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 6996
+   },
+   "38684786040703": {
+    "schoolStreetFt": 290,
+    "calmFt": 0,
+    "connectorFt": 3182,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 12695
+   },
+   "38684786040737": {
+    "schoolStreetFt": 1933,
+    "calmFt": 0,
+    "connectorFt": 1241,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5375
+   },
+   "38684786040752": {
+    "schoolStreetFt": 187,
+    "calmFt": 2999,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "topBlocks": 20,
+    "calmed": true,
+    "calmFtFull": 2999
+   },
+   "38684786040760": {
+    "schoolStreetFt": 1116,
+    "calmFt": 0,
+    "connectorFt": 3562,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8425
+   },
+   "38684786040778": {
+    "schoolStreetFt": 897,
+    "calmFt": 0,
+    "connectorFt": 1165,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2745
+   },
+   "38684786040828": {
+    "schoolStreetFt": 378,
+    "calmFt": 0,
+    "connectorFt": 4891,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7173
+   },
+   "38684786040836": {
+    "schoolStreetFt": 1039,
+    "calmFt": 8892,
+    "connectorFt": 1496,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 8892
+   },
+   "38684786040851": {
+    "schoolStreetFt": 1019,
+    "calmFt": 0,
+    "connectorFt": 4974,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9598
+   },
+   "38684786040877": {
+    "schoolStreetFt": 675,
+    "calmFt": 0,
+    "connectorFt": 2223,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2597
+   },
+   "38684786040893": {
+    "schoolStreetFt": 1814,
+    "calmFt": 0,
+    "connectorFt": 1920,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4512
+   },
+   "38684786040919": {
+    "schoolStreetFt": 1299,
+    "calmFt": 0,
+    "connectorFt": 4290,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2721
+   },
+   "38684786040935": {
+    "schoolStreetFt": 1013,
+    "calmFt": 0,
+    "connectorFt": 1443,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2207
+   },
+   "38684786040943": {
+    "schoolStreetFt": 298,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 9652
+   },
+   "38684786040950": {
+    "schoolStreetFt": 319,
+    "calmFt": 0,
+    "connectorFt": 1425,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8091
+   },
+   "38684786040968": {
+    "schoolStreetFt": 941,
+    "calmFt": 0,
+    "connectorFt": 358,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4044
+   },
+   "38684786040984": {
+    "schoolStreetFt": 1364,
+    "calmFt": 0,
+    "connectorFt": 492,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7651
+   },
+   "38684786041008": {
+    "schoolStreetFt": 861,
+    "calmFt": 0,
+    "connectorFt": 2213,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 11129
+   },
+   "38684786041016": {
+    "schoolStreetFt": 1066,
+    "calmFt": 0,
+    "connectorFt": 2104,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8447
+   },
+   "38684786041040": {
+    "schoolStreetFt": 284,
+    "calmFt": 0,
+    "connectorFt": 2241,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3794
+   },
+   "38684786041065": {
+    "schoolStreetFt": 1027,
+    "calmFt": 0,
+    "connectorFt": 1833,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9077
+   },
+   "38684786041073": {
+    "schoolStreetFt": 2153,
+    "calmFt": 0,
+    "connectorFt": 1688,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7176
+   },
+   "38684786041115": {
+    "schoolStreetFt": 1204,
+    "calmFt": 0,
+    "connectorFt": 2823,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4078
+   },
+   "38684786041123": {
+    "schoolStreetFt": 579,
+    "calmFt": 0,
+    "connectorFt": 4271,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 13904
+   },
+   "38684786041131": {
+    "schoolStreetFt": 929,
+    "calmFt": 0,
+    "connectorFt": 2869,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5084
+   },
+   "38684786041149": {
+    "schoolStreetFt": 267,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 2839
+   },
+   "38684786041156": {
+    "schoolStreetFt": 503,
+    "calmFt": 0,
+    "connectorFt": 1408,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 10978
+   },
+   "38684786041206": {
+    "schoolStreetFt": 1708,
+    "calmFt": 0,
+    "connectorFt": 2726,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3294
+   },
+   "38684786041230": {
+    "schoolStreetFt": 1229,
+    "calmFt": 0,
+    "connectorFt": 1649,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2418
+   },
+   "38684786041255": {
+    "schoolStreetFt": 967,
+    "calmFt": 0,
+    "connectorFt": 1831,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5522
+   },
+   "38684786041271": {
+    "schoolStreetFt": 349,
+    "calmFt": 0,
+    "connectorFt": 658,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 11328
+   },
+   "38684786041289": {
+    "schoolStreetFt": 420,
+    "calmFt": 0,
+    "connectorFt": 1237,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8879
+   },
+   "38684786041305": {
+    "schoolStreetFt": 936,
+    "calmFt": 0,
+    "connectorFt": 1332,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8769
+   },
+   "38684786041321": {
+    "schoolStreetFt": 1607,
+    "calmFt": 0,
+    "connectorFt": 289,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6475
+   },
+   "38684786041339": {
+    "schoolStreetFt": 1611,
+    "calmFt": 0,
+    "connectorFt": 2900,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 0
+   },
+   "38684786041347": {
+    "schoolStreetFt": 1602,
+    "calmFt": 8073,
+    "connectorFt": 477,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 8073
+   },
+   "38684786041362": {
+    "schoolStreetFt": 589,
+    "calmFt": 0,
+    "connectorFt": 2138,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 10363
+   },
+   "38684786041412": {
+    "schoolStreetFt": 311,
+    "calmFt": 0,
+    "connectorFt": 901,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2162
+   },
+   "38684786041420": {
+    "schoolStreetFt": 825,
+    "calmFt": 0,
+    "connectorFt": 2809,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1533
+   },
+   "38684786041438": {
+    "schoolStreetFt": 1076,
+    "calmFt": 0,
+    "connectorFt": 3114,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7863
+   },
+   "38684786041446": {
+    "schoolStreetFt": 1436,
+    "calmFt": 10085,
+    "connectorFt": 2201,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 10085
+   },
+   "38684786041487": {
+    "schoolStreetFt": 212,
+    "calmFt": 0,
+    "connectorFt": 3304,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 10316
+   },
+   "38684786041503": {
+    "schoolStreetFt": 699,
+    "calmFt": 0,
+    "connectorFt": 3627,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5663
+   },
+   "38684786041511": {
+    "schoolStreetFt": 900,
+    "calmFt": 0,
+    "connectorFt": 3237,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 884
+   },
+   "38684786041529": {
+    "schoolStreetFt": 1727,
+    "calmFt": 0,
+    "connectorFt": 5300,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5817
+   },
+   "38684786041545": {
+    "schoolStreetFt": 1479,
+    "calmFt": 0,
+    "connectorFt": 1999,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4675
+   },
+   "38684786041560": {
+    "schoolStreetFt": 574,
+    "calmFt": 0,
+    "connectorFt": 1695,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6412
+   },
+   "38684786041578": {
+    "schoolStreetFt": 1191,
+    "calmFt": 0,
+    "connectorFt": 3826,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4561
+   },
+   "38684786041586": {
+    "schoolStreetFt": 675,
+    "calmFt": 0,
+    "connectorFt": 1251,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 12844
+   },
+   "38684786041594": {
+    "schoolStreetFt": 798,
+    "calmFt": 0,
+    "connectorFt": 4783,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 698
+   },
+   "38684786041602": {
+    "schoolStreetFt": 394,
+    "calmFt": 0,
+    "connectorFt": 1787,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9921
+   },
+   "38684786041610": {
+    "schoolStreetFt": 1145,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 6710
+   },
+   "38684786041644": {
+    "schoolStreetFt": 1083,
+    "calmFt": 0,
+    "connectorFt": 1272,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6070
+   },
+   "38684786041685": {
+    "schoolStreetFt": 863,
+    "calmFt": 0,
+    "connectorFt": 587,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9973
+   },
+   "38684786041701": {
+    "schoolStreetFt": 555,
+    "calmFt": 11068,
+    "connectorFt": 3102,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 11068
+   },
+   "38684786041727": {
+    "schoolStreetFt": 1803,
+    "calmFt": 0,
+    "connectorFt": 4702,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8303
+   },
+   "38684786059828": {
+    "schoolStreetFt": 814,
+    "calmFt": 0,
+    "connectorFt": 3817,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9374
+   },
+   "38684786059844": {
+    "schoolStreetFt": 1019,
+    "calmFt": 0,
+    "connectorFt": 1085,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 584
+   },
+   "38684786059851": {
+    "schoolStreetFt": 2559,
+    "calmFt": 10570,
+    "connectorFt": 5277,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 10570
+   },
+   "38684786059869": {
+    "schoolStreetFt": 918,
+    "calmFt": 0,
+    "connectorFt": 1163,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6778
+   },
+   "38684786059885": {
+    "schoolStreetFt": 630,
+    "calmFt": 10288,
+    "connectorFt": 759,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 10288
+   },
+   "38684786059901": {
+    "schoolStreetFt": 1054,
+    "calmFt": 0,
+    "connectorFt": 1633,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4848
+   },
+   "38684786059919": {
+    "schoolStreetFt": 3258,
+    "calmFt": 0,
+    "connectorFt": 1354,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8593
+   },
+   "38684786062020": {
+    "schoolStreetFt": 1388,
+    "calmFt": 0,
+    "connectorFt": 4496,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 11748
+   },
+   "38684786062038": {
+    "schoolStreetFt": 345,
+    "calmFt": 0,
+    "connectorFt": 1999,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6311
+   },
+   "38684786062046": {
+    "schoolStreetFt": 947,
+    "calmFt": 3141,
+    "connectorFt": 32,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 3141
+   },
+   "38684786062053": {
+    "schoolStreetFt": 944,
+    "calmFt": 0,
+    "connectorFt": 38,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7322
+   },
+   "38684786062061": {
+    "schoolStreetFt": 1058,
+    "calmFt": 0,
+    "connectorFt": 1520,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6284
+   },
+   "38684786062079": {
+    "schoolStreetFt": 1467,
+    "calmFt": 0,
+    "connectorFt": 1847,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 10569
+   },
+   "38684786089569": {
+    "schoolStreetFt": 1279,
+    "calmFt": 0,
+    "connectorFt": 923,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2166
+   },
+   "38684786089585": {
+    "schoolStreetFt": 742,
+    "calmFt": 0,
+    "connectorFt": 40,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9169
+   },
+   "38684786089775": {
+    "schoolStreetFt": 838,
+    "calmFt": 0,
+    "connectorFt": 4851,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9714
+   },
+   "38684786093488": {
+    "schoolStreetFt": 1265,
+    "calmFt": 8571,
+    "connectorFt": 1154,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 8571
+   },
+   "38684786093496": {
+    "schoolStreetFt": 332,
+    "calmFt": 0,
+    "connectorFt": 3703,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 13444
+   },
+   "38684786097919": {
+    "schoolStreetFt": 460,
+    "calmFt": 0,
+    "connectorFt": 697,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 373
+   },
+   "38684786099154": {
+    "schoolStreetFt": 1137,
+    "calmFt": 0,
+    "connectorFt": 586,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6784
+   },
+   "38684786102479": {
+    "schoolStreetFt": 1070,
+    "calmFt": 0,
+    "connectorFt": 761,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8847
+   },
+   "38684786104673": {
+    "schoolStreetFt": 801,
+    "calmFt": 13722,
+    "connectorFt": 2958,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 13722
+   },
+   "38684786112601": {
+    "schoolStreetFt": 1327,
+    "calmFt": 2689,
+    "connectorFt": 1594,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 2689
+   },
+   "38684786113245": {
+    "schoolStreetFt": 30,
+    "calmFt": 8601,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": true,
+    "calmFtFull": 8601
+   },
+   "38684786113252": {
+    "schoolStreetFt": 348,
+    "calmFt": 0,
+    "connectorFt": 339,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 683
+   },
+   "38684786113997": {
+    "schoolStreetFt": 1490,
+    "calmFt": 0,
+    "connectorFt": 2741,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8852
+   },
+   "38684786115901": {
+    "schoolStreetFt": 1042,
+    "calmFt": 1642,
+    "connectorFt": 242,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 1642
+   },
+   "38769270132183": {
+    "schoolStreetFt": 1230,
+    "calmFt": 0,
+    "connectorFt": 2930,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3903
+   },
+   "38771310137307": {
+    "schoolStreetFt": 360,
+    "calmFt": 0,
+    "connectorFt": 3562,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6698
+   },
+   "38684786130090": {
+    "schoolStreetFt": 2314,
+    "calmFt": 0,
+    "connectorFt": 1621,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2744
+   },
+   "38684786133763": {
+    "schoolStreetFt": 637,
+    "calmFt": 0,
+    "connectorFt": 2416,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 12652
+   },
+   "38684786135651": {
+    "schoolStreetFt": 409,
+    "calmFt": 0,
+    "connectorFt": 4299,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8782
+   },
+   "38684786138176": {
+    "schoolStreetFt": 795,
+    "calmFt": 0,
+    "connectorFt": 541,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5343
+   },
+   "38684786139463": {
+    "schoolStreetFt": 180,
+    "calmFt": 0,
+    "connectorFt": 476,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 0
+   },
+   "38684786139893": {
+    "schoolStreetFt": 1910,
+    "calmFt": 0,
+    "connectorFt": 835,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9343
+   },
+   "38684786140099": {
+    "schoolStreetFt": 66,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 10361
+   },
+   "38684786140974": {
+    "schoolStreetFt": 1483,
+    "calmFt": 0,
+    "connectorFt": 419,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3217
+   },
+   "38684786142079": {
+    "schoolStreetFt": 1736,
+    "calmFt": 0,
+    "connectorFt": 269,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 994
+   },
+   "38684786143440": {
+    "schoolStreetFt": 957,
+    "calmFt": 0,
+    "connectorFt": 414,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 632
+   },
+   "38684786143952": {
+    "schoolStreetFt": 1784,
+    "calmFt": 0,
+    "connectorFt": 1482,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1226
+   },
+   "38684786144034": {
+    "schoolStreetFt": 1402,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 2797
+   },
+   "38684786144257": {
+    "schoolStreetFt": 812,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 0
+   },
+   "38684786146054": {
+    "schoolStreetFt": 931,
+    "calmFt": 0,
+    "connectorFt": 36,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4998
+   },
+   "38684786146344": {
+    "schoolStreetFt": 995,
+    "calmFt": 0,
+    "connectorFt": 35,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5488
+   },
+   "38684786146369": {
+    "schoolStreetFt": 1684,
+    "calmFt": 0,
+    "connectorFt": 1038,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 0
+   },
+   "38684786150254": {
+    "schoolStreetFt": 783,
+    "calmFt": 0,
+    "connectorFt": 439,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2250
+   },
+   "38684786151310": {
+    "schoolStreetFt": 1521,
+    "calmFt": 0,
+    "connectorFt": 1211,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3269
+   },
+   "38684786152532": {
+    "schoolStreetFt": 981,
+    "calmFt": 0,
+    "connectorFt": 701,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4122
+   },
+   "38684786152565": {
+    "schoolStreetFt": 340,
+    "calmFt": 0,
+    "connectorFt": 1557,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 42
+   },
+   "38684786154439": {
+    "schoolStreetFt": 1194,
+    "calmFt": 0,
+    "connectorFt": 35,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 664
+   },
+   "38684786154702": {
+    "schoolStreetFt": 2430,
+    "calmFt": 0,
+    "connectorFt": 36,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4727
+   },
+   "38684786156640": {
+    "schoolStreetFt": 895,
+    "calmFt": 0,
+    "connectorFt": 554,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5486
+   },
+   "38684786158372": {
+    "schoolStreetFt": 865,
+    "calmFt": 0,
+    "connectorFt": 1123,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6685
+   },
+   "38684786158539": {
+    "schoolStreetFt": 1591,
+    "calmFt": 0,
+    "connectorFt": 1602,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3377
+   },
+   "38684786158596": {
+    "schoolStreetFt": 552,
+    "calmFt": 0,
+    "connectorFt": 1730,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8319
+   },
+   "38684786159156": {
+    "schoolStreetFt": 1055,
+    "calmFt": 0,
+    "connectorFt": 1773,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5960
+   },
+   "38684786161921": {
+    "schoolStreetFt": 39,
+    "calmFt": 1687,
+    "connectorFt": 26,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 1687
+   },
+   "38684786162549": {
+    "schoolStreetFt": 1634,
+    "calmFt": 0,
+    "connectorFt": 4521,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2283
+   },
+   "38684786162598": {
+    "schoolStreetFt": 1668,
+    "calmFt": 0,
+    "connectorFt": 2606,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8634
+   },
+   "38684786168041": {
+    "schoolStreetFt": 1516,
+    "calmFt": 0,
+    "connectorFt": 2470,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9097
+   },
+   "38684786168728": {
+    "schoolStreetFt": 1173,
+    "calmFt": 0,
+    "connectorFt": 775,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9678
+   },
+   "38684786168959": {
+    "schoolStreetFt": 1206,
+    "calmFt": 1440,
+    "connectorFt": 1252,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 1440
+   },
+   "38684786169163": {
+    "schoolStreetFt": 934,
+    "calmFt": 0,
+    "connectorFt": 35,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5871
+   },
+   "38684786169445": {
+    "schoolStreetFt": 1206,
+    "calmFt": 0,
+    "connectorFt": 1252,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1440
+   },
+   "38684786169627": {
+    "schoolStreetFt": 1668,
+    "calmFt": 0,
+    "connectorFt": 2385,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8634
+   },
+   "38684786170120": {
+    "schoolStreetFt": 267,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 2839
+   },
+   "38684786170146": {
+    "schoolStreetFt": 1073,
+    "calmFt": 0,
+    "connectorFt": 858,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 484
+   },
+   "38684786170153": {
+    "schoolStreetFt": 1307,
+    "calmFt": 0,
+    "connectorFt": 2364,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4932
+   },
+   "38684786170278": {
+    "schoolStreetFt": 931,
+    "calmFt": 0,
+    "connectorFt": 1611,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7199
+   },
+   "38684786170740": {
+    "schoolStreetFt": 1206,
+    "calmFt": 0,
+    "connectorFt": 1252,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1440
+   },
+   "38684786170989": {
+    "schoolStreetFt": 387,
+    "calmFt": 0,
+    "connectorFt": 4253,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3471
+   },
+   "38684786172357": {
+    "schoolStreetFt": 1132,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 634
+   },
+   "38684786200554": {
+    "schoolStreetFt": 1048,
+    "calmFt": 0,
+    "connectorFt": 1751,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6407
+   },
+   "38684786203384": {
+    "schoolStreetFt": 2323,
+    "calmFt": 0,
+    "connectorFt": 906,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5511
+   },
+   "38684786204762": {
+    "schoolStreetFt": 0,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 3116
+   },
+   "38684786205652": {
+    "schoolStreetFt": 516,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 8289
+   },
+   "38684786206007": {
+    "schoolStreetFt": 1767,
+    "calmFt": 0,
+    "connectorFt": 30,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4727
+   },
+   "38684786903165": {
+    "schoolStreetFt": 503,
+    "calmFt": 0,
+    "connectorFt": 1408,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 12099
+   },
+   "38684786905913": {
+    "schoolStreetFt": 1655,
+    "calmFt": 0,
+    "connectorFt": 616,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4638
+   },
+   "38684786906176": {
+    "schoolStreetFt": 1437,
+    "calmFt": 0,
+    "connectorFt": 1685,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6666
+   },
+   "38684786907927": {
+    "schoolStreetFt": 700,
+    "calmFt": 0,
+    "connectorFt": 353,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4617
+   },
+   "38684786908917": {
+    "schoolStreetFt": 1025,
+    "calmFt": 0,
+    "connectorFt": 4333,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6411
+   },
+   "38684786909600": {
+    "schoolStreetFt": 339,
+    "calmFt": 0,
+    "connectorFt": 7,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2926
+   },
+   "38684786913123": {
+    "schoolStreetFt": 1095,
+    "calmFt": 0,
+    "connectorFt": 1728,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 0
+   },
+   "38684786915748": {
+    "schoolStreetFt": 60,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 3679
+   },
+   "38684786930572": {
+    "schoolStreetFt": 1029,
+    "calmFt": 0,
+    "connectorFt": 903,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2712
+   },
+   "38684786938930": {
+    "schoolStreetFt": 233,
+    "calmFt": 0,
+    "connectorFt": 287,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 0
+   },
+   "38684786939557": {
+    "schoolStreetFt": 684,
+    "calmFt": 0,
+    "connectorFt": 360,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4249
+   },
+   "38684786939607": {
+    "schoolStreetFt": 1524,
+    "calmFt": 0,
+    "connectorFt": 1041,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7279
+   },
+   "38684786939615": {
+    "schoolStreetFt": 1153,
+    "calmFt": 0,
+    "connectorFt": 1256,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3967
+   },
+   "38684786939649": {
+    "schoolStreetFt": 1685,
+    "calmFt": 0,
+    "connectorFt": 1719,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3158
+   },
+   "38684786939664": {
+    "schoolStreetFt": 1446,
+    "calmFt": 0,
+    "connectorFt": 4325,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6104
+   },
+   "38684786939698": {
+    "schoolStreetFt": 691,
+    "calmFt": 0,
+    "connectorFt": 676,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7203
+   },
+   "38684786939722": {
+    "schoolStreetFt": 2433,
+    "calmFt": 0,
+    "connectorFt": 4418,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 13032
+   },
+   "38684786939730": {
+    "schoolStreetFt": 913,
+    "calmFt": 0,
+    "connectorFt": 874,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 13216
+   },
+   "38684786939748": {
+    "schoolStreetFt": 1136,
+    "calmFt": 0,
+    "connectorFt": 1934,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5082
+   },
+   "38684786965586": {
+    "schoolStreetFt": 1062,
+    "calmFt": 0,
+    "connectorFt": 3736,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3363
+   },
+   "38684786980585": {
+    "schoolStreetFt": 745,
+    "calmFt": 0,
+    "connectorFt": 30,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3889
+   },
+   "38684786980601": {
+    "schoolStreetFt": 1464,
+    "calmFt": 0,
+    "connectorFt": 33,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7183
+   },
+   "38684786980619": {
+    "schoolStreetFt": 796,
+    "calmFt": 0,
+    "connectorFt": 1476,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7727
+   },
+   "38684786980627": {
+    "schoolStreetFt": 2022,
+    "calmFt": 0,
+    "connectorFt": 2018,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7856
+   },
+   "38684786980643": {
+    "schoolStreetFt": 1241,
+    "calmFt": 0,
+    "connectorFt": 1536,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6666
+   },
+   "38684786980650": {
+    "schoolStreetFt": 1544,
+    "calmFt": 0,
+    "connectorFt": 965,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 554
+   },
+   "38684786980676": {
+    "schoolStreetFt": 816,
+    "calmFt": 0,
+    "connectorFt": 2048,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9628
+   },
+   "38684786980684": {
+    "schoolStreetFt": 1446,
+    "calmFt": 0,
+    "connectorFt": 2679,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1431
+   },
+   "38684786980692": {
+    "schoolStreetFt": 338,
+    "calmFt": 0,
+    "connectorFt": 2448,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8554
+   },
+   "38684786980718": {
+    "schoolStreetFt": 1231,
+    "calmFt": 8628,
+    "connectorFt": 2259,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 8628
+   },
+   "38684786980726": {
+    "schoolStreetFt": 709,
+    "calmFt": 0,
+    "connectorFt": 740,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5924
+   },
+   "38684786980734": {
+    "schoolStreetFt": 420,
+    "calmFt": 0,
+    "connectorFt": 2605,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 9941
+   },
+   "38684786980833": {
+    "schoolStreetFt": 953,
+    "calmFt": 0,
+    "connectorFt": 484,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7115
+   },
+   "38684786980874": {
+    "schoolStreetFt": 859,
+    "calmFt": 0,
+    "connectorFt": 5341,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2305
+   },
+   "38684786980890": {
+    "schoolStreetFt": 1533,
+    "calmFt": 0,
+    "connectorFt": 3226,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5709
+   },
+   "38684786981195": {
+    "schoolStreetFt": 1311,
+    "calmFt": 5313,
+    "connectorFt": 986,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 5313
+   },
+   "38684786981278": {
+    "schoolStreetFt": 870,
+    "calmFt": 0,
+    "connectorFt": 3142,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7979
+   },
+   "38684786981328": {
+    "schoolStreetFt": 642,
+    "calmFt": 0,
+    "connectorFt": 1577,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4468
+   },
+   "38684786981336": {
+    "schoolStreetFt": 372,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 2862
+   },
+   "38684786981377": {
+    "schoolStreetFt": 1516,
+    "calmFt": 0,
+    "connectorFt": 1238,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5002
+   },
+   "38684786981500": {
+    "schoolStreetFt": 1201,
+    "calmFt": 0,
+    "connectorFt": 2488,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 2327
+   },
+   "38684786981559": {
+    "schoolStreetFt": 447,
+    "calmFt": 0,
+    "connectorFt": 3708,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8841
+   },
+   "38684786981658": {
+    "schoolStreetFt": 1197,
+    "calmFt": 0,
+    "connectorFt": 617,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6654
+   },
+   "38684786981666": {
+    "schoolStreetFt": 1073,
+    "calmFt": 5889,
+    "connectorFt": 295,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 5889
+   },
+   "38684786981674": {
+    "schoolStreetFt": 982,
+    "calmFt": 0,
+    "connectorFt": 2232,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4005
+   },
+   "38684786981682": {
+    "schoolStreetFt": 993,
+    "calmFt": 0,
+    "connectorFt": 4276,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1371
+   },
+   "38684786981690": {
+    "schoolStreetFt": 1445,
+    "calmFt": 0,
+    "connectorFt": 6717,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 5233
+   },
+   "38684786981716": {
+    "schoolStreetFt": 1103,
+    "calmFt": 0,
+    "connectorFt": 1906,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 4372
+   },
+   "38684786981740": {
+    "schoolStreetFt": 269,
+    "calmFt": 0,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": false,
+    "calmFtFull": 6318
+   },
+   "38684786981765": {
+    "schoolStreetFt": 834,
+    "calmFt": 0,
+    "connectorFt": 1578,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 8818
+   },
+   "38684786981773": {
+    "schoolStreetFt": 2196,
+    "calmFt": 0,
+    "connectorFt": 1256,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 3646
+   },
+   "38684786997829": {
+    "schoolStreetFt": 546,
+    "calmFt": 0,
+    "connectorFt": 2238,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 7940
+   },
+   "38684786999379": {
+    "schoolStreetFt": 985,
+    "calmFt": 0,
+    "connectorFt": 1127,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1207
+   },
+   "38684787019417": {
+    "schoolStreetFt": 174,
+    "calmFt": 4098,
+    "connectorFt": 35,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 4098
+   },
+   "38684787044605": {
+    "schoolStreetFt": 811,
+    "calmFt": 0,
+    "connectorFt": 3136,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 6224
+   },
+   "38684787095755": {
+    "schoolStreetFt": 944,
+    "calmFt": 0,
+    "connectorFt": 382,
+    "connectorOnNetwork": false,
+    "calmed": false,
+    "calmFtFull": 1204
+   },
+   "38684787096514": {
+    "schoolStreetFt": 474,
+    "calmFt": 2505,
+    "connectorFt": 1632,
+    "connectorOnNetwork": false,
+    "calmed": true,
+    "calmFtFull": 2505
+   },
+   "38684787104466": {
+    "schoolStreetFt": 302,
+    "calmFt": 174,
+    "connectorFt": 0,
+    "connectorOnNetwork": true,
+    "calmed": true,
+    "calmFtFull": 174
+   }
+  },
+  "islandSchools": {
+   "Life Learning Academy Charter": 4906
+  },
+  "carDetourPct": 0.003,
+  "carDetourPairs": 32,
+  "carDetourOf": 1059209,
+  "carDetourWorst": [
+   "Visitacion Valley Middle 0.1%",
+   "Cornerstone Academy-Silver Campus 0.1%",
+   "Hillcrest Elementary 0.1%",
+   "Rooftop Elementary 0.1%",
+   "St. Philip School 0.0%"
+  ]
+ },
+ "zipCheck": {
+  "source": {
+   "url": "https://public.tableau.com/views/SFUSDPublicDataDashboard/Story1",
+   "what": "SFUSD Public Data Dashboard, Enrollment Overview (2025-26), Site-Level Enrollment by SF Zip Code",
+   "read": "2026-10-08",
+   "tag": "[primary — read 2026-10-08]",
+   "script": "scripts/sfusd-residence-zip.py"
+  },
+  "reachCal": {
+   "elementary": 4.0,
+   "middle": 2.5,
+   "high": 10.0
+  },
+  "summary": {
+   "elementary": {
+    "schools": 72,
+    "students": 22048,
+    "overlapPct": 98.93,
+    "sameTop5": 4.84,
+    "meanMiDashboard": 1.48,
+    "meanMiModel": 1.47,
+    "worst": [
+     [
+      "Mission Education Center",
+      "TK-5",
+      88.6
+     ],
+     [
+      "San Francisco Public Montessori",
+      "TK-5",
+      90.0
+     ],
+     [
+      "Carver (George Washington) Elementary",
+      "TK-5",
+      92.1
+     ]
+    ]
+   },
+   "middle": {
+    "schools": 21,
+    "students": 9504,
+    "overlapPct": 99.2,
+    "sameTop5": 4.99,
+    "meanMiDashboard": 1.94,
+    "meanMiModel": 1.94,
+    "worst": [
+     [
+      "Lilienthal (Claire) Elementary",
+      "6-8",
+      90.7
+     ],
+     [
+      "Yu (Alice Fong) Elementary",
+      "6-8",
+      93.7
+     ],
+     [
+      "Lawton Alternative",
+      "6-8",
+      97.3
+     ]
+    ]
+   },
+   "high": {
+    "schools": 14,
+    "students": 13455,
+    "overlapPct": 99.23,
+    "sameTop5": 5.0,
+    "meanMiDashboard": 2.55,
+    "meanMiModel": 2.55,
+    "worst": [
+     [
+      "Academy (The)- SF @McAteer",
+      "9-12",
+      93.8
+     ],
+     [
+      "Downtown High",
+      "9-12",
+      97.0
+     ],
+     [
+      "Wallenberg (Raoul) Traditional High",
+      "9-12",
+      98.0
+     ]
+    ]
+   },
+   "all": {
+    "schools": 107,
+    "students": 45007,
+    "overlapPct": 99.08,
+    "sameTop5": 4.92,
+    "meanMiDashboard": 1.89,
+    "meanMiModel": 1.89,
+    "worst": [
+     [
+      "Mission Education Center",
+      "TK-5",
+      88.6
+     ],
+     [
+      "San Francisco Public Montessori",
+      "TK-5",
+      90.0
+     ],
+     [
+      "Lilienthal (Claire) Elementary",
+      "6-8",
+      90.7
+     ]
+    ]
+   }
+  },
+  "summaryStep1Reach": {
+   "elementary": {
+    "schools": 71,
+    "students": 22043,
+    "overlapPct": 78.27,
+    "sameTop5": 3.73,
+    "meanMiDashboard": 1.48,
+    "meanMiModel": 1.4,
+    "worst": [
+     [
+      "Lawton Alternative",
+      "TK-5",
+      55.3
+     ],
+     [
+      "San Francisco Public Montessori",
+      "TK-5",
+      56.5
+     ],
+     [
+      "Parker (Jean) Elementary",
+      "TK-5",
+      56.6
+     ]
+    ]
+   },
+   "middle": {
+    "schools": 21,
+    "students": 9504,
+    "overlapPct": 79.82,
+    "sameTop5": 3.81,
+    "meanMiDashboard": 1.94,
+    "meanMiModel": 1.83,
+    "worst": [
+     [
+      "Lilienthal (Claire) Elementary",
+      "6-8",
+      54.0
+     ],
+     [
+      "Brown Jr. (Willie L) Middle",
+      "6-8",
+      58.4
+     ],
+     [
+      "Yu (Alice Fong) Elementary",
+      "6-8",
+      65.7
+     ]
+    ]
+   },
+   "high": {
+    "schools": 14,
+    "students": 13455,
+    "overlapPct": 77.51,
+    "sameTop5": 3.73,
+    "meanMiDashboard": 2.55,
+    "meanMiModel": 2.02,
+    "worst": [
+     [
+      "Wells (Ida B.) High",
+      "9-12",
+      56.7
+     ],
+     [
+      "Downtown High",
+      "9-12",
+      65.7
+     ],
+     [
+      "Marshall (Thurgood) High",
+      "9-12",
+      70.8
+     ]
+    ]
+   },
+   "all": {
+    "schools": 106,
+    "students": 45002,
+    "overlapPct": 78.37,
+    "sameTop5": 3.75,
+    "meanMiDashboard": 1.89,
+    "meanMiModel": 1.68,
+    "worst": [
+     [
+      "Lilienthal (Claire) Elementary",
+      "6-8",
+      54.0
+     ],
+     [
+      "Lawton Alternative",
+      "TK-5",
+      55.3
+     ],
+     [
+      "San Francisco Public Montessori",
+      "TK-5",
+      56.5
+     ]
+    ]
+   }
+  },
+  "unmatched": [
+   "Access SFUSD: The Arc (9-12)",
+   "Asawa (Ruth) SOTA HS (9-12)",
+   "County Satellite Schools (9-12)",
+   "Hilltop CAO (9-12)",
+   "Independence HS (9-12)",
+   "Noriega EES (TK-5)",
+   "Rodriguez (Zaida T) EES (TK-5)",
+   "SF Civic Center Secondary HS (9-12)",
+   "SF International HS (9-12)",
+   "San Miguel EES (TK-5)",
+   "Tule Elk Park EES (TK-5)"
+  ],
+  "blocksWithNoZip": 2,
+  "note": "Calibrated, not an independent test: REACH_CAL was chosen to maximise overlapPct. Both sides drop ZIPs under 5 students, as the dashboard does; charters are not on the dashboard.",
+  "schools": {
+   "38684780102103|9-12": {
+    "cds": "38684780102103",
+    "name": "Jordan (June) School for Equity",
+    "dashboardName": "Jordan (June) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 166,
+    "placed": 146,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94124",
+     "94110",
+     "94134",
+     "94132"
+    ],
+    "topModel": [
+     "94112",
+     "94124",
+     "94134",
+     "94110",
+     "94132"
+    ],
+    "topZipDashboardPct": 46.6,
+    "topZipModelPct": 46.6,
+    "meanMiDashboard": 1.47,
+    "meanMiModel": 1.47
+   },
+   "38684780111427|TK-5": {
+    "cds": "38684780111427",
+    "name": "Feinstein (Dianne) Elementary",
+    "dashboardName": "Feinstein (Dianne) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 370,
+    "placed": 349,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94116",
+     "94122",
+     "94132",
+     "94112",
+     "94134"
+    ],
+    "topModel": [
+     "94116",
+     "94122",
+     "94132",
+     "94112",
+     "94134"
+    ],
+    "topZipDashboardPct": 58.7,
+    "topZipModelPct": 59.6,
+    "meanMiDashboard": 1.15,
+    "meanMiModel": 1.09
+   },
+   "38684780119958|9-12": {
+    "cds": "38684780119958",
+    "name": "Academy (The)- SF @McAteer",
+    "dashboardName": "The Academy - SF @ McAteer HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 98,
+    "placed": 80,
+    "overlapPct": 93.8,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94110",
+     "94124",
+     "94131",
+     "94134"
+    ],
+    "topModel": [
+     "94112",
+     "94131",
+     "94110",
+     "94124",
+     "94134"
+    ],
+    "topZipDashboardPct": 23.8,
+    "topZipModelPct": 25.3,
+    "meanMiDashboard": 2.1,
+    "meanMiModel": 2.04
+   },
+   "38684780120386|TK-5": {
+    "cds": "38684780120386",
+    "name": "Chinese Immersion School at DeAvila",
+    "dashboardName": "Chinese Immersion School at DeAvila ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 404,
+    "placed": 395,
+    "overlapPct": 98.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94116",
+     "94124",
+     "94121"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94116",
+     "94124",
+     "94121"
+    ],
+    "topZipDashboardPct": 19.0,
+    "topZipModelPct": 19.2,
+    "meanMiDashboard": 2.77,
+    "meanMiModel": 2.77
+   },
+   "38684780123117|TK-5": {
+    "cds": "38684780123117",
+    "name": "San Francisco Public Montessori",
+    "dashboardName": "SF Public Montessori ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 121,
+    "placed": 100,
+    "overlapPct": 90.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94115",
+     "94102",
+     "94109",
+     "94103",
+     "94118"
+    ],
+    "topModel": [
+     "94115",
+     "94102",
+     "94109",
+     "94103",
+     "94118"
+    ],
+    "topZipDashboardPct": 20.0,
+    "topZipModelPct": 22.2,
+    "meanMiDashboard": 1.46,
+    "meanMiModel": 1.4
+   },
+   "38684780132241|6-8": {
+    "cds": "38684780132241",
+    "name": "Brown Jr. (Willie L) Middle",
+    "dashboardName": "Brown Jr. (Willie) MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 370,
+    "placed": 347,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94110",
+     "94112",
+     "94131",
+     "94134"
+    ],
+    "topModel": [
+     "94124",
+     "94110",
+     "94112",
+     "94131",
+     "94134"
+    ],
+    "topZipDashboardPct": 27.7,
+    "topZipModelPct": 27.7,
+    "meanMiDashboard": 1.64,
+    "meanMiModel": 1.64
+   },
+   "38684783830031|9-12": {
+    "cds": "38684783830031",
+    "name": "Wells (Ida B.) High",
+    "dashboardName": "Wells (Ida B) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 193,
+    "placed": 182,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94110",
+     "94112",
+     "94102",
+     "94134"
+    ],
+    "topModel": [
+     "94124",
+     "94110",
+     "94112",
+     "94134",
+     "94102"
+    ],
+    "topZipDashboardPct": 23.1,
+    "topZipModelPct": 23.1,
+    "meanMiDashboard": 2.75,
+    "meanMiModel": 2.75
+   },
+   "38684783830064|9-12": {
+    "cds": "38684783830064",
+    "name": "Downtown High",
+    "dashboardName": "Downtown HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 182,
+    "placed": 164,
+    "overlapPct": 97.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94110",
+     "94112",
+     "94103",
+     "94134"
+    ],
+    "topModel": [
+     "94124",
+     "94110",
+     "94112",
+     "94103",
+     "94134"
+    ],
+    "topZipDashboardPct": 24.4,
+    "topZipModelPct": 25.2,
+    "meanMiDashboard": 2.19,
+    "meanMiModel": 2.11
+   },
+   "38684783830205|9-12": {
+    "cds": "38684783830205",
+    "name": "Wallenberg (Raoul) Traditional High",
+    "dashboardName": "Wallenberg (Raoul) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 510,
+    "placed": 499,
+    "overlapPct": 98.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94118",
+     "94122",
+     "94121",
+     "94102",
+     "94112"
+    ],
+    "topModel": [
+     "94118",
+     "94122",
+     "94121",
+     "94112",
+     "94102"
+    ],
+    "topZipDashboardPct": 10.2,
+    "topZipModelPct": 10.4,
+    "meanMiDashboard": 2.51,
+    "meanMiModel": 2.51
+   },
+   "38684783830254|9-12": {
+    "cds": "38684783830254",
+    "name": "Burton (Phillip and Sala) Academic High",
+    "dashboardName": "Burton (Phillip and Sala) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 1018,
+    "placed": 978,
+    "overlapPct": 98.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94134",
+     "94124",
+     "94112",
+     "94110",
+     "94132"
+    ],
+    "topModel": [
+     "94134",
+     "94124",
+     "94112",
+     "94110",
+     "94132"
+    ],
+    "topZipDashboardPct": 30.6,
+    "topZipModelPct": 30.3,
+    "meanMiDashboard": 1.4,
+    "meanMiModel": 1.42
+   },
+   "38684783830288|9-12": {
+    "cds": "38684783830288",
+    "name": "Balboa High",
+    "dashboardName": "Balboa HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 1200,
+    "placed": 1170,
+    "overlapPct": 99.5,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94110",
+     "94132"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94110",
+     "94132"
+    ],
+    "topZipDashboardPct": 44.1,
+    "topZipModelPct": 44.1,
+    "meanMiDashboard": 1.42,
+    "meanMiModel": 1.42
+   },
+   "38684783830403|9-12": {
+    "cds": "38684783830403",
+    "name": "Marshall (Thurgood) High",
+    "dashboardName": "Marshall (Thurgood) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 422,
+    "placed": 382,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94112",
+     "94134",
+     "94110",
+     "94103"
+    ],
+    "topModel": [
+     "94124",
+     "94112",
+     "94134",
+     "94110",
+     "94103"
+    ],
+    "topZipDashboardPct": 43.5,
+    "topZipModelPct": 43.5,
+    "meanMiDashboard": 1.62,
+    "meanMiModel": 1.62
+   },
+   "38684783831765|9-12": {
+    "cds": "38684783831765",
+    "name": "Galileo High",
+    "dashboardName": "Galileo HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 1816,
+    "placed": 1789,
+    "overlapPct": 98.5,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94109",
+     "94103",
+     "94112",
+     "94102"
+    ],
+    "topModel": [
+     "94133",
+     "94109",
+     "94103",
+     "94112",
+     "94102"
+    ],
+    "topZipDashboardPct": 10.3,
+    "topZipModelPct": 10.1,
+    "meanMiDashboard": 3.01,
+    "meanMiModel": 2.99
+   },
+   "38684783833241|9-12": {
+    "cds": "38684783833241",
+    "name": "Lincoln (Abraham) High",
+    "dashboardName": "Lincoln (Abraham) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 2073,
+    "placed": 2059,
+    "overlapPct": 99.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94116",
+     "94124",
+     "94122",
+     "94134"
+    ],
+    "topModel": [
+     "94112",
+     "94116",
+     "94124",
+     "94122",
+     "94134"
+    ],
+    "topZipDashboardPct": 15.4,
+    "topZipModelPct": 15.4,
+    "meanMiDashboard": 2.92,
+    "meanMiModel": 2.92
+   },
+   "38684783833407|9-12": {
+    "cds": "38684783833407",
+    "name": "Lowell High",
+    "dashboardName": "Lowell HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 2592,
+    "placed": 2585,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94116",
+     "94122",
+     "94110",
+     "94134"
+    ],
+    "topModel": [
+     "94112",
+     "94116",
+     "94122",
+     "94134",
+     "94110"
+    ],
+    "topZipDashboardPct": 15.5,
+    "topZipModelPct": 15.5,
+    "meanMiDashboard": 2.99,
+    "meanMiModel": 2.99
+   },
+   "38684783834082|9-12": {
+    "cds": "38684783834082",
+    "name": "Mission High",
+    "dashboardName": "Mission HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 956,
+    "placed": 926,
+    "overlapPct": 98.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94112",
+     "94124",
+     "94103",
+     "94102"
+    ],
+    "topModel": [
+     "94110",
+     "94112",
+     "94124",
+     "94103",
+     "94102"
+    ],
+    "topZipDashboardPct": 20.7,
+    "topZipModelPct": 20.4,
+    "meanMiDashboard": 2.14,
+    "meanMiModel": 2.14
+   },
+   "38684783834769|9-12": {
+    "cds": "38684783834769",
+    "name": "O'Connell (John) High",
+    "dashboardName": "O'Connell (John) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 480,
+    "placed": 437,
+    "overlapPct": 98.8,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94103",
+     "94112",
+     "94124",
+     "94102"
+    ],
+    "topModel": [
+     "94110",
+     "94103",
+     "94112",
+     "94124",
+     "94102"
+    ],
+    "topZipDashboardPct": 33.9,
+    "topZipModelPct": 33.5,
+    "meanMiDashboard": 1.55,
+    "meanMiModel": 1.57
+   },
+   "38684783839081|9-12": {
+    "cds": "38684783839081",
+    "name": "Washington (George) High",
+    "dashboardName": "Washington (George) HS",
+    "span": "9-12",
+    "level": "high",
+    "enrolled": 2068,
+    "placed": 2058,
+    "overlapPct": 99.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94121",
+     "94122",
+     "94116",
+     "94112",
+     "94118"
+    ],
+    "topModel": [
+     "94121",
+     "94122",
+     "94116",
+     "94112",
+     "94118"
+    ],
+    "topZipDashboardPct": 15.7,
+    "topZipModelPct": 15.7,
+    "meanMiDashboard": 3.08,
+    "meanMiModel": 3.09
+   },
+   "38684786040695|TK-5": {
+    "cds": "38684786040695",
+    "name": "Alamo Elementary",
+    "dashboardName": "Alamo ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 416,
+    "placed": 404,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94121",
+     "94118",
+     "94129",
+     "94122",
+     "94110"
+    ],
+    "topModel": [
+     "94121",
+     "94118",
+     "94129",
+     "94122",
+     "94110"
+    ],
+    "topZipDashboardPct": 70.5,
+    "topZipModelPct": 70.5,
+    "meanMiDashboard": 1.1,
+    "meanMiModel": 1.1
+   },
+   "38684786040703|TK-5": {
+    "cds": "38684786040703",
+    "name": "Alvarado Elementary",
+    "dashboardName": "Alvarado ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 541,
+    "placed": 530,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94114",
+     "94131",
+     "94124",
+     "94112"
+    ],
+    "topModel": [
+     "94110",
+     "94114",
+     "94131",
+     "94124",
+     "94112"
+    ],
+    "topZipDashboardPct": 29.1,
+    "topZipModelPct": 29.1,
+    "meanMiDashboard": 1.45,
+    "meanMiModel": 1.45
+   },
+   "38684786040737|TK-5": {
+    "cds": "38684786040737",
+    "name": "Argonne Elementary",
+    "dashboardName": "Argonne ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 388,
+    "placed": 365,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94121",
+     "94118",
+     "94122",
+     "94112",
+     "94116"
+    ],
+    "topModel": [
+     "94121",
+     "94118",
+     "94122",
+     "94112",
+     "94116"
+    ],
+    "topZipDashboardPct": 57.0,
+    "topZipModelPct": 57.8,
+    "meanMiDashboard": 1.35,
+    "meanMiModel": 1.33
+   },
+   "38684786040752|6-8": {
+    "cds": "38684786040752",
+    "name": "Carmichael (Bessie)/FEC",
+    "dashboardName": "Carmichael (Bessie) K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 181,
+    "placed": 172,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94103",
+     "94102",
+     "94124",
+     "94158",
+     "94107"
+    ],
+    "topModel": [
+     "94103",
+     "94102",
+     "94124",
+     "94158",
+     "94107"
+    ],
+    "topZipDashboardPct": 39.5,
+    "topZipModelPct": 39.5,
+    "meanMiDashboard": 1.36,
+    "meanMiModel": 1.36
+   },
+   "38684786040752|TK-5": {
+    "cds": "38684786040752",
+    "name": "Carmichael (Bessie)/FEC",
+    "dashboardName": "Carmichael (Bessie) K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 353,
+    "placed": 337,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94103",
+     "94102",
+     "94105",
+     "94124",
+     "94158"
+    ],
+    "topModel": [
+     "94103",
+     "94102",
+     "94105",
+     "94124",
+     "94158"
+    ],
+    "topZipDashboardPct": 49.3,
+    "topZipModelPct": 49.3,
+    "meanMiDashboard": 1.15,
+    "meanMiModel": 1.15
+   },
+   "38684786040760|TK-5": {
+    "cds": "38684786040760",
+    "name": "Harte (Bret) Elementary",
+    "dashboardName": "Harte (Bret) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 264,
+    "placed": 249,
+    "overlapPct": 98.0,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94124",
+     "94134",
+     "94103",
+     "94112",
+     "94133"
+    ],
+    "topModel": [
+     "94124",
+     "94134",
+     "94103",
+     "94112"
+    ],
+    "topZipDashboardPct": 79.9,
+    "topZipModelPct": 81.6,
+    "meanMiDashboard": 1.1,
+    "meanMiModel": 1.01
+   },
+   "38684786040778|TK-5": {
+    "cds": "38684786040778",
+    "name": "Bryant Elementary",
+    "dashboardName": "Bryant ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 235,
+    "placed": 222,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94112",
+     "94134",
+     "94103"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94112",
+     "94134",
+     "94103"
+    ],
+    "topZipDashboardPct": 29.7,
+    "topZipModelPct": 29.7,
+    "meanMiDashboard": 1.58,
+    "meanMiModel": 1.58
+   },
+   "38684786040828|TK-5": {
+    "cds": "38684786040828",
+    "name": "Clarendon Alternative Elementary",
+    "dashboardName": "Clarendon ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 544,
+    "placed": 526,
+    "overlapPct": 98.9,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94131",
+     "94122",
+     "94116",
+     "94110",
+     "94112"
+    ],
+    "topModel": [
+     "94131",
+     "94122",
+     "94116",
+     "94110",
+     "94127"
+    ],
+    "topZipDashboardPct": 26.6,
+    "topZipModelPct": 26.6,
+    "meanMiDashboard": 1.91,
+    "meanMiModel": 1.9
+   },
+   "38684786040836|TK-5": {
+    "cds": "38684786040836",
+    "name": "Cleveland Elementary",
+    "dashboardName": "Cleveland ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 253,
+    "placed": 232,
+    "overlapPct": 97.2,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94132"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topZipDashboardPct": 67.7,
+    "topZipModelPct": 65.8,
+    "meanMiDashboard": 1.02,
+    "meanMiModel": 1.05
+   },
+   "38684786040851|TK-5": {
+    "cds": "38684786040851",
+    "name": "Sloat (Commodore) Elementary",
+    "dashboardName": "Sloat (Commodore) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 386,
+    "placed": 369,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94132",
+     "94127",
+     "94124",
+     "94134"
+    ],
+    "topModel": [
+     "94112",
+     "94132",
+     "94127",
+     "94124",
+     "94134"
+    ],
+    "topZipDashboardPct": 48.0,
+    "topZipModelPct": 48.0,
+    "meanMiDashboard": 1.72,
+    "meanMiModel": 1.72
+   },
+   "38684786040877|TK-5": {
+    "cds": "38684786040877",
+    "name": "Lau (Gordon J.) Elementary",
+    "dashboardName": "Lau (Gordon J) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 627,
+    "placed": 601,
+    "overlapPct": 98.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94108",
+     "94134",
+     "94124",
+     "94103"
+    ],
+    "topModel": [
+     "94133",
+     "94108",
+     "94134",
+     "94124",
+     "94103"
+    ],
+    "topZipDashboardPct": 21.0,
+    "topZipModelPct": 20.7,
+    "meanMiDashboard": 1.85,
+    "meanMiModel": 1.85
+   },
+   "38684786040893|TK-5": {
+    "cds": "38684786040893",
+    "name": "Webster (Daniel) Elementary",
+    "dashboardName": "Webster (Daniel) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 392,
+    "placed": 366,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94107",
+     "94124",
+     "94110",
+     "94158",
+     "94103"
+    ],
+    "topModel": [
+     "94107",
+     "94124",
+     "94110",
+     "94158",
+     "94103"
+    ],
+    "topZipDashboardPct": 41.5,
+    "topZipModelPct": 41.5,
+    "meanMiDashboard": 1.16,
+    "meanMiModel": 1.16
+   },
+   "38684786040919|TK-5": {
+    "cds": "38684786040919",
+    "name": "Milk (Harvey) Civil Rights Elementary",
+    "dashboardName": "Milk (Harvey) Civil Right ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 147,
+    "placed": 130,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94114",
+     "94110",
+     "94124",
+     "94103",
+     "94131"
+    ],
+    "topModel": [
+     "94114",
+     "94110",
+     "94124",
+     "94103",
+     "94131"
+    ],
+    "topZipDashboardPct": 42.3,
+    "topZipModelPct": 42.3,
+    "meanMiDashboard": 1.0,
+    "meanMiModel": 1.0
+   },
+   "38684786040943|TK-5": {
+    "cds": "38684786040943",
+    "name": "Taylor (Edward R.) Elementary",
+    "dashboardName": "Taylor (Edward R) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 562,
+    "placed": 544,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94134",
+     "94124",
+     "94112",
+     "94110",
+     "94103"
+    ],
+    "topModel": [
+     "94134",
+     "94124",
+     "94112",
+     "94110",
+     "94103"
+    ],
+    "topZipDashboardPct": 52.4,
+    "topZipModelPct": 52.4,
+    "meanMiDashboard": 0.96,
+    "meanMiModel": 0.96
+   },
+   "38684786040950|TK-5": {
+    "cds": "38684786040950",
+    "name": "El Dorado Elementary",
+    "dashboardName": "El Dorado ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 147,
+    "placed": 137,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94134",
+     "94124",
+     "94112",
+     "94132",
+     "94110"
+    ],
+    "topModel": [
+     "94134",
+     "94124",
+     "94112",
+     "94132",
+     "94110"
+    ],
+    "topZipDashboardPct": 52.6,
+    "topZipModelPct": 52.6,
+    "meanMiDashboard": 1.0,
+    "meanMiModel": 1.0
+   },
+   "38684786040968|TK-5": {
+    "cds": "38684786040968",
+    "name": "Cobb (William L.) Elementary",
+    "dashboardName": "Cobb (Dr William L) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 130,
+    "placed": 93,
+    "overlapPct": 93.9,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94115",
+     "94124",
+     "94102",
+     "94118",
+     "94109"
+    ],
+    "topModel": [
+     "94115",
+     "94124",
+     "94102",
+     "94118",
+     "94109"
+    ],
+    "topZipDashboardPct": 41.9,
+    "topZipModelPct": 39.4,
+    "meanMiDashboard": 1.6,
+    "meanMiModel": 1.55
+   },
+   "38684786040984|TK-5": {
+    "cds": "38684786040984",
+    "name": "Huerta (Dolores) Elementary",
+    "dashboardName": "Huerta (Dolores) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 406,
+    "placed": 383,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94112",
+     "94124",
+     "94131",
+     "94134"
+    ],
+    "topModel": [
+     "94110",
+     "94112",
+     "94124",
+     "94131",
+     "94134"
+    ],
+    "topZipDashboardPct": 27.7,
+    "topZipModelPct": 27.7,
+    "meanMiDashboard": 1.59,
+    "meanMiModel": 1.57
+   },
+   "38684786041008|TK-5": {
+    "cds": "38684786041008",
+    "name": "Key (Francis Scott) Elementary",
+    "dashboardName": "Key (Francis Scott) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 571,
+    "placed": 558,
+    "overlapPct": 99.1,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94122",
+     "94116",
+     "94112",
+     "94132",
+     "94134"
+    ],
+    "topModel": [
+     "94122",
+     "94116",
+     "94112",
+     "94132",
+     "94134"
+    ],
+    "topZipDashboardPct": 70.1,
+    "topZipModelPct": 70.7,
+    "meanMiDashboard": 1.49,
+    "meanMiModel": 1.46
+   },
+   "38684786041016|TK-5": {
+    "cds": "38684786041016",
+    "name": "McCoppin (Frank) Elementary",
+    "dashboardName": "McCoppin (Frank) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 299,
+    "placed": 274,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94118",
+     "94121",
+     "94122",
+     "94115",
+     "94116"
+    ],
+    "topModel": [
+     "94118",
+     "94121",
+     "94122",
+     "94115",
+     "94116"
+    ],
+    "topZipDashboardPct": 67.5,
+    "topZipModelPct": 67.5,
+    "meanMiDashboard": 0.86,
+    "meanMiModel": 0.86
+   },
+   "38684786041040|TK-5": {
+    "cds": "38684786041040",
+    "name": "Garfield Elementary",
+    "dashboardName": "Garfield ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 190,
+    "placed": 157,
+    "overlapPct": 93.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94109",
+     "94105",
+     "94103",
+     "94107"
+    ],
+    "topModel": [
+     "94133",
+     "94109",
+     "94105",
+     "94103",
+     "94107"
+    ],
+    "topZipDashboardPct": 36.3,
+    "topZipModelPct": 38.8,
+    "meanMiDashboard": 1.47,
+    "meanMiModel": 1.33
+   },
+   "38684786041065|TK-5": {
+    "cds": "38684786041065",
+    "name": "Peabody (George) Elementary",
+    "dashboardName": "Peabody (George) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 274,
+    "placed": 258,
+    "overlapPct": 100.0,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94118",
+     "94121",
+     "94115",
+     "94109",
+     "94117"
+    ],
+    "topModel": [
+     "94118",
+     "94121",
+     "94115",
+     "94117",
+     "94124"
+    ],
+    "topZipDashboardPct": 61.2,
+    "topZipModelPct": 61.2,
+    "meanMiDashboard": 1.05,
+    "meanMiModel": 1.05
+   },
+   "38684786041073|TK-5": {
+    "cds": "38684786041073",
+    "name": "Glen Park Elementary",
+    "dashboardName": "Glen Park ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 326,
+    "placed": 312,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94131",
+     "94110",
+     "94124",
+     "94134"
+    ],
+    "topModel": [
+     "94112",
+     "94131",
+     "94110",
+     "94124",
+     "94134"
+    ],
+    "topZipDashboardPct": 37.5,
+    "topZipModelPct": 37.5,
+    "meanMiDashboard": 1.29,
+    "meanMiModel": 1.29
+   },
+   "38684786041115|TK-5": {
+    "cds": "38684786041115",
+    "name": "Grattan Elementary",
+    "dashboardName": "Grattan ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 409,
+    "placed": 387,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94117",
+     "94122",
+     "94131",
+     "94116",
+     "94114"
+    ],
+    "topModel": [
+     "94117",
+     "94122",
+     "94131",
+     "94116",
+     "94114"
+    ],
+    "topZipDashboardPct": 47.0,
+    "topZipModelPct": 47.0,
+    "meanMiDashboard": 1.36,
+    "meanMiModel": 1.36
+   },
+   "38684786041123|TK-5": {
+    "cds": "38684786041123",
+    "name": "Guadalupe Elementary",
+    "dashboardName": "Guadalupe ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 274,
+    "placed": 251,
+    "overlapPct": 97.8,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94132"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topZipDashboardPct": 69.7,
+    "topZipModelPct": 68.2,
+    "meanMiDashboard": 1.06,
+    "meanMiModel": 1.1
+   },
+   "38684786041131|TK-5": {
+    "cds": "38684786041131",
+    "name": "Yick Wo Elementary",
+    "dashboardName": "Wo (Yick) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 208,
+    "placed": 181,
+    "overlapPct": 97.2,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94109",
+     "94105",
+     "94103",
+     "94107"
+    ],
+    "topModel": [
+     "94133",
+     "94109",
+     "94105",
+     "94103",
+     "94107"
+    ],
+    "topZipDashboardPct": 45.9,
+    "topZipModelPct": 47.2,
+    "meanMiDashboard": 1.2,
+    "meanMiModel": 1.07
+   },
+   "38684786041149|TK-5": {
+    "cds": "38684786041149",
+    "name": "Chavez (Cesar) Elementary",
+    "dashboardName": "Chavez (Cesar) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 401,
+    "placed": 378,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94103",
+     "94112",
+     "94134"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94103",
+     "94112",
+     "94134"
+    ],
+    "topZipDashboardPct": 48.1,
+    "topZipModelPct": 48.1,
+    "meanMiDashboard": 1.3,
+    "meanMiModel": 1.3
+   },
+   "38684786041156|TK-5": {
+    "cds": "38684786041156",
+    "name": "Hillcrest Elementary",
+    "dashboardName": "Hillcrest ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 326,
+    "placed": 309,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94134",
+     "94112",
+     "94110",
+     "94103"
+    ],
+    "topModel": [
+     "94124",
+     "94134",
+     "94112",
+     "94110",
+     "94103"
+    ],
+    "topZipDashboardPct": 37.5,
+    "topZipModelPct": 37.5,
+    "meanMiDashboard": 1.38,
+    "meanMiModel": 1.38
+   },
+   "38684786041206|TK-5": {
+    "cds": "38684786041206",
+    "name": "Parker (Jean) Elementary",
+    "dashboardName": "Parker (Jean) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 112,
+    "placed": 99,
+    "overlapPct": 94.9,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94108",
+     "94109",
+     "94111",
+     "94158"
+    ],
+    "topModel": [
+     "94133",
+     "94109",
+     "94108",
+     "94111",
+     "94158"
+    ],
+    "topZipDashboardPct": 32.3,
+    "topZipModelPct": 34.0,
+    "meanMiDashboard": 1.49,
+    "meanMiModel": 1.27
+   },
+   "38684786041230|TK-5": {
+    "cds": "38684786041230",
+    "name": "Jefferson Elementary",
+    "dashboardName": "Jefferson ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 506,
+    "placed": 485,
+    "overlapPct": 99.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94122",
+     "94116",
+     "94112",
+     "94134",
+     "94132"
+    ],
+    "topModel": [
+     "94122",
+     "94116",
+     "94112",
+     "94134",
+     "94132"
+    ],
+    "topZipDashboardPct": 60.0,
+    "topZipModelPct": 60.6,
+    "meanMiDashboard": 1.5,
+    "meanMiModel": 1.47
+   },
+   "38684786041255|TK-5": {
+    "cds": "38684786041255",
+    "name": "Muir (John) Elementary",
+    "dashboardName": "Muir (John) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 259,
+    "placed": 232,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94102",
+     "94117",
+     "94103",
+     "94109",
+     "94115"
+    ],
+    "topModel": [
+     "94102",
+     "94117",
+     "94103",
+     "94109",
+     "94115"
+    ],
+    "topZipDashboardPct": 37.1,
+    "topZipModelPct": 37.1,
+    "meanMiDashboard": 1.12,
+    "meanMiModel": 1.12
+   },
+   "38684786041271|TK-5": {
+    "cds": "38684786041271",
+    "name": "Ortega (Jose) Elementary",
+    "dashboardName": "Ortega (Jose) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 416,
+    "placed": 395,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94132",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94132",
+     "94134",
+     "94124",
+     "94110"
+    ],
+    "topZipDashboardPct": 40.0,
+    "topZipModelPct": 39.9,
+    "meanMiDashboard": 1.66,
+    "meanMiModel": 1.64
+   },
+   "38684786041289|TK-5": {
+    "cds": "38684786041289",
+    "name": "Serra (Junipero) Elementary",
+    "dashboardName": "Serra (Junipero) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 279,
+    "placed": 243,
+    "overlapPct": 96.1,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94110",
+     "94112",
+     "94124",
+     "94134",
+     "94103"
+    ],
+    "topModel": [
+     "94110",
+     "94112",
+     "94124",
+     "94134",
+     "94131"
+    ],
+    "topZipDashboardPct": 40.3,
+    "topZipModelPct": 39.6,
+    "meanMiDashboard": 1.39,
+    "meanMiModel": 1.35
+   },
+   "38684786041305|TK-5": {
+    "cds": "38684786041305",
+    "name": "Lafayette Elementary",
+    "dashboardName": "Lafayette ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 479,
+    "placed": 451,
+    "overlapPct": 98.9,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94121",
+     "94122",
+     "94116",
+     "94118",
+     "94112"
+    ],
+    "topModel": [
+     "94121",
+     "94122",
+     "94118",
+     "94116",
+     "94112"
+    ],
+    "topZipDashboardPct": 86.3,
+    "topZipModelPct": 87.2,
+    "meanMiDashboard": 0.71,
+    "meanMiModel": 0.69
+   },
+   "38684786041321|TK-5": {
+    "cds": "38684786041321",
+    "name": "Lakeshore Alternative Elementary",
+    "dashboardName": "Lakeshore ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 421,
+    "placed": 398,
+    "overlapPct": 98.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94132",
+     "94112",
+     "94116",
+     "94122",
+     "94124"
+    ],
+    "topModel": [
+     "94132",
+     "94112",
+     "94116",
+     "94122",
+     "94124"
+    ],
+    "topZipDashboardPct": 38.2,
+    "topZipModelPct": 37.7,
+    "meanMiDashboard": 2.08,
+    "meanMiModel": 2.07
+   },
+   "38684786041339|6-8": {
+    "cds": "38684786041339",
+    "name": "Lawton Alternative",
+    "dashboardName": "Lawton K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 200,
+    "placed": 187,
+    "overlapPct": 97.3,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94122",
+     "94116",
+     "94112",
+     "94124",
+     "94132"
+    ],
+    "topModel": [
+     "94122",
+     "94116",
+     "94112",
+     "94124",
+     "94132"
+    ],
+    "topZipDashboardPct": 26.2,
+    "topZipModelPct": 26.9,
+    "meanMiDashboard": 2.38,
+    "meanMiModel": 2.33
+   },
+   "38684786041339|TK-5": {
+    "cds": "38684786041339",
+    "name": "Lawton Alternative",
+    "dashboardName": "Lawton K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 424,
+    "placed": 405,
+    "overlapPct": 98.5,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94122",
+     "94116",
+     "94124"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94122",
+     "94116",
+     "94124"
+    ],
+    "topZipDashboardPct": 21.0,
+    "topZipModelPct": 20.9,
+    "meanMiDashboard": 2.95,
+    "meanMiModel": 2.92
+   },
+   "38684786041347|TK-5": {
+    "cds": "38684786041347",
+    "name": "Flynn (Leonard R.) Elementary",
+    "dashboardName": "Flynn (Leonard R) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 411,
+    "placed": 394,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94134",
+     "94103",
+     "94112"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94134",
+     "94103",
+     "94112"
+    ],
+    "topZipDashboardPct": 52.8,
+    "topZipModelPct": 52.8,
+    "meanMiDashboard": 1.09,
+    "meanMiModel": 1.09
+   },
+   "38684786041362|TK-5": {
+    "cds": "38684786041362",
+    "name": "Longfellow Elementary",
+    "dashboardName": "Longfellow ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 438,
+    "placed": 401,
+    "overlapPct": 97.1,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topZipDashboardPct": 74.1,
+    "topZipModelPct": 72.8,
+    "meanMiDashboard": 1.19,
+    "meanMiModel": 1.23
+   },
+   "38684786041412|TK-5": {
+    "cds": "38684786041412",
+    "name": "Marshall Elementary",
+    "dashboardName": "Marshall ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 251,
+    "placed": 222,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94103",
+     "94110",
+     "94102",
+     "94124",
+     "94109"
+    ],
+    "topModel": [
+     "94103",
+     "94110",
+     "94102",
+     "94124",
+     "94109"
+    ],
+    "topZipDashboardPct": 44.1,
+    "topZipModelPct": 44.1,
+    "meanMiDashboard": 1.21,
+    "meanMiModel": 1.21
+   },
+   "38684786041420|TK-5": {
+    "cds": "38684786041420",
+    "name": "McKinley Elementary",
+    "dashboardName": "McKinley ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 278,
+    "placed": 257,
+    "overlapPct": 98.1,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94114",
+     "94117",
+     "94110",
+     "94103",
+     "94115"
+    ],
+    "topModel": [
+     "94114",
+     "94117",
+     "94110",
+     "94103",
+     "94115"
+    ],
+    "topZipDashboardPct": 33.5,
+    "topZipModelPct": 33.5,
+    "meanMiDashboard": 1.02,
+    "meanMiModel": 1.03
+   },
+   "38684786041438|TK-5": {
+    "cds": "38684786041438",
+    "name": "Miraloma Elementary",
+    "dashboardName": "Miraloma ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 321,
+    "placed": 300,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94127",
+     "94112",
+     "94131",
+     "94110",
+     "94124"
+    ],
+    "topModel": [
+     "94127",
+     "94112",
+     "94131",
+     "94110",
+     "94124"
+    ],
+    "topZipDashboardPct": 55.0,
+    "topZipModelPct": 55.0,
+    "meanMiDashboard": 1.04,
+    "meanMiModel": 1.04
+   },
+   "38684786041446|TK-5": {
+    "cds": "38684786041446",
+    "name": "Monroe Elementary",
+    "dashboardName": "Monroe ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 538,
+    "placed": 511,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94110",
+     "94132"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94110",
+     "94132"
+    ],
+    "topZipDashboardPct": 61.6,
+    "topZipModelPct": 60.8,
+    "meanMiDashboard": 1.15,
+    "meanMiModel": 1.15
+   },
+   "38684786041487|6-8": {
+    "cds": "38684786041487",
+    "name": "Revere (Paul) Elementary",
+    "dashboardName": "Revere (Paul) K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 171,
+    "placed": 154,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94110",
+     "94134",
+     "94112",
+     "94132"
+    ],
+    "topModel": [
+     "94124",
+     "94110",
+     "94134",
+     "94112",
+     "94132"
+    ],
+    "topZipDashboardPct": 43.5,
+    "topZipModelPct": 43.5,
+    "meanMiDashboard": 1.49,
+    "meanMiModel": 1.49
+   },
+   "38684786041487|TK-5": {
+    "cds": "38684786041487",
+    "name": "Revere (Paul) Elementary",
+    "dashboardName": "Revere (Paul) K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 283,
+    "placed": 263,
+    "overlapPct": 98.1,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94110",
+     "94112",
+     "94134",
+     "94103"
+    ],
+    "topModel": [
+     "94124",
+     "94110",
+     "94112",
+     "94134",
+     "94103"
+    ],
+    "topZipDashboardPct": 44.5,
+    "topZipModelPct": 43.6,
+    "meanMiDashboard": 1.67,
+    "meanMiModel": 1.66
+   },
+   "38684786041503|TK-5": {
+    "cds": "38684786041503",
+    "name": "Parks (Rosa) Elementary",
+    "dashboardName": "Parks (Rosa) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 337,
+    "placed": 307,
+    "overlapPct": 95.9,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94115",
+     "94109",
+     "94102",
+     "94124",
+     "94103"
+    ],
+    "topModel": [
+     "94115",
+     "94109",
+     "94102",
+     "94124",
+     "94103"
+    ],
+    "topZipDashboardPct": 30.6,
+    "topZipModelPct": 29.4,
+    "meanMiDashboard": 1.51,
+    "meanMiModel": 1.59
+   },
+   "38684786041511|TK-5": {
+    "cds": "38684786041511",
+    "name": "Redding Elementary",
+    "dashboardName": "Redding ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 270,
+    "placed": 244,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94109",
+     "94102",
+     "94103",
+     "94115",
+     "94130"
+    ],
+    "topModel": [
+     "94109",
+     "94102",
+     "94103",
+     "94115",
+     "94130"
+    ],
+    "topZipDashboardPct": 43.4,
+    "topZipModelPct": 43.4,
+    "meanMiDashboard": 0.67,
+    "meanMiModel": 0.67
+   },
+   "38684786041529|TK-5": {
+    "cds": "38684786041529",
+    "name": "Stevenson (Robert Louis) Elementary",
+    "dashboardName": "Stevenson (Robert Louis) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 443,
+    "placed": 422,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94122",
+     "94116",
+     "94112",
+     "94132",
+     "94124"
+    ],
+    "topModel": [
+     "94122",
+     "94116",
+     "94112",
+     "94132",
+     "94124"
+    ],
+    "topZipDashboardPct": 41.7,
+    "topZipModelPct": 41.7,
+    "meanMiDashboard": 1.2,
+    "meanMiModel": 1.2
+   },
+   "38684786041545|TK-5": {
+    "cds": "38684786041545",
+    "name": "Sanchez Elementary",
+    "dashboardName": "Sanchez ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 266,
+    "placed": 255,
+    "overlapPct": 100.0,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94103",
+     "94110",
+     "94102",
+     "94112",
+     "94114"
+    ],
+    "topModel": [
+     "94103",
+     "94110",
+     "94102",
+     "94112",
+     "94124"
+    ],
+    "topZipDashboardPct": 25.1,
+    "topZipModelPct": 25.1,
+    "meanMiDashboard": 1.75,
+    "meanMiModel": 1.75
+   },
+   "38684786041560|TK-5": {
+    "cds": "38684786041560",
+    "name": "Sheridan Elementary",
+    "dashboardName": "Sheridan ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 214,
+    "placed": 195,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94132",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94132",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topZipDashboardPct": 67.7,
+    "topZipModelPct": 67.7,
+    "meanMiDashboard": 1.47,
+    "meanMiModel": 1.47
+   },
+   "38684786041578|TK-5": {
+    "cds": "38684786041578",
+    "name": "Sherman Elementary",
+    "dashboardName": "Sherman ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 292,
+    "placed": 271,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94109",
+     "94123",
+     "94115",
+     "94102",
+     "94103"
+    ],
+    "topModel": [
+     "94109",
+     "94123",
+     "94115",
+     "94102",
+     "94103"
+    ],
+    "topZipDashboardPct": 26.9,
+    "topZipModelPct": 26.9,
+    "meanMiDashboard": 1.58,
+    "meanMiModel": 1.58
+   },
+   "38684786041586|TK-5": {
+    "cds": "38684786041586",
+    "name": "Malcolm X Academy",
+    "dashboardName": "Malcolm X Academy ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 90,
+    "placed": 78,
+    "overlapPct": 100.0,
+    "sameTop5": 2,
+    "topDashboard": [
+     "94124",
+     "94102"
+    ],
+    "topModel": [
+     "94124",
+     "94102"
+    ],
+    "topZipDashboardPct": 89.7,
+    "topZipModelPct": 89.7,
+    "meanMiDashboard": 0.88,
+    "meanMiModel": 0.88
+   },
+   "38684786041594|TK-5": {
+    "cds": "38684786041594",
+    "name": "Spring Valley Elementary",
+    "dashboardName": "Spring Valley Science ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 205,
+    "placed": 183,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94109",
+     "94102",
+     "94103",
+     "94105",
+     "94124"
+    ],
+    "topModel": [
+     "94109",
+     "94102",
+     "94103",
+     "94124",
+     "94105"
+    ],
+    "topZipDashboardPct": 35.0,
+    "topZipModelPct": 35.0,
+    "meanMiDashboard": 1.3,
+    "meanMiModel": 1.3
+   },
+   "38684786041602|TK-5": {
+    "cds": "38684786041602",
+    "name": "King (Thomas Starr) Elementary",
+    "dashboardName": "King (Thomas Starr) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 349,
+    "placed": 330,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94107",
+     "94124",
+     "94112",
+     "94110",
+     "94131"
+    ],
+    "topModel": [
+     "94107",
+     "94124",
+     "94112",
+     "94110",
+     "94131"
+    ],
+    "topZipDashboardPct": 22.1,
+    "topZipModelPct": 22.1,
+    "meanMiDashboard": 1.96,
+    "meanMiModel": 1.96
+   },
+   "38684786041610|TK-5": {
+    "cds": "38684786041610",
+    "name": "Sunnyside Elementary",
+    "dashboardName": "Sunnyside ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 388,
+    "placed": 361,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94127",
+     "94131",
+     "94124",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94127",
+     "94131",
+     "94124",
+     "94110"
+    ],
+    "topZipDashboardPct": 46.0,
+    "topZipModelPct": 45.4,
+    "meanMiDashboard": 1.24,
+    "meanMiModel": 1.25
+   },
+   "38684786041644|TK-5": {
+    "cds": "38684786041644",
+    "name": "Sutro Elementary",
+    "dashboardName": "Sutro ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 266,
+    "placed": 244,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94118",
+     "94121",
+     "94112",
+     "94134",
+     "94103"
+    ],
+    "topModel": [
+     "94118",
+     "94121",
+     "94112",
+     "94134",
+     "94103"
+    ],
+    "topZipDashboardPct": 32.0,
+    "topZipModelPct": 32.0,
+    "meanMiDashboard": 2.3,
+    "meanMiModel": 2.3
+   },
+   "38684786041685|TK-5": {
+    "cds": "38684786041685",
+    "name": "Ulloa Elementary",
+    "dashboardName": "Ulloa ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 521,
+    "placed": 500,
+    "overlapPct": 99.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94116",
+     "94112",
+     "94134",
+     "94124",
+     "94132"
+    ],
+    "topModel": [
+     "94116",
+     "94112",
+     "94134",
+     "94124",
+     "94132"
+    ],
+    "topZipDashboardPct": 49.4,
+    "topZipModelPct": 49.9,
+    "meanMiDashboard": 2.26,
+    "meanMiModel": 2.25
+   },
+   "38684786041701|TK-5": {
+    "cds": "38684786041701",
+    "name": "Visitacion Valley Elementary",
+    "dashboardName": "Visitacion Valley ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 204,
+    "placed": 196,
+    "overlapPct": 100.0,
+    "sameTop5": 3,
+    "topDashboard": [
+     "94134",
+     "94124",
+     "94112"
+    ],
+    "topModel": [
+     "94134",
+     "94124",
+     "94112"
+    ],
+    "topZipDashboardPct": 80.1,
+    "topZipModelPct": 80.1,
+    "meanMiDashboard": 0.64,
+    "meanMiModel": 0.64
+   },
+   "38684786041727|TK-5": {
+    "cds": "38684786041727",
+    "name": "West Portal Elementary",
+    "dashboardName": "West Portal ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 594,
+    "placed": 566,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94116",
+     "94112",
+     "94127",
+     "94134",
+     "94124"
+    ],
+    "topModel": [
+     "94116",
+     "94112",
+     "94127",
+     "94134",
+     "94124"
+    ],
+    "topZipDashboardPct": 28.3,
+    "topZipModelPct": 28.3,
+    "meanMiDashboard": 1.83,
+    "meanMiModel": 1.83
+   },
+   "38684786059828|6-8": {
+    "cds": "38684786059828",
+    "name": "Giannini (A.P.) Middle",
+    "dashboardName": "Giannini (A.P.) MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 1191,
+    "placed": 1174,
+    "overlapPct": 99.2,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94122",
+     "94116",
+     "94112",
+     "94124",
+     "94117"
+    ],
+    "topModel": [
+     "94122",
+     "94116",
+     "94112",
+     "94124",
+     "94117"
+    ],
+    "topZipDashboardPct": 39.0,
+    "topZipModelPct": 38.9,
+    "meanMiDashboard": 2.07,
+    "meanMiModel": 2.06
+   },
+   "38684786059844|6-8": {
+    "cds": "38684786059844",
+    "name": "Francisco Middle",
+    "dashboardName": "Francisco MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 495,
+    "placed": 477,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94102",
+     "94109",
+     "94124",
+     "94108"
+    ],
+    "topModel": [
+     "94133",
+     "94102",
+     "94109",
+     "94124",
+     "94108"
+    ],
+    "topZipDashboardPct": 21.4,
+    "topZipModelPct": 21.4,
+    "meanMiDashboard": 2.34,
+    "meanMiModel": 2.34
+   },
+   "38684786059851|6-8": {
+    "cds": "38684786059851",
+    "name": "Hoover (Herbert) Middle",
+    "dashboardName": "Hoover (Herbert) MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 990,
+    "placed": 965,
+    "overlapPct": 98.6,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94116",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94116",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topZipDashboardPct": 28.8,
+    "topZipModelPct": 28.4,
+    "meanMiDashboard": 2.53,
+    "meanMiModel": 2.53
+   },
+   "38684786059869|6-8": {
+    "cds": "38684786059869",
+    "name": "Denman (James) Middle",
+    "dashboardName": "Denman (James) MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 805,
+    "placed": 777,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topZipDashboardPct": 57.7,
+    "topZipModelPct": 57.7,
+    "meanMiDashboard": 1.08,
+    "meanMiModel": 1.08
+   },
+   "38684786059885|6-8": {
+    "cds": "38684786059885",
+    "name": "King Jr. (Martin Luther) Academic Middle",
+    "dashboardName": "King Jr (Dr Martin L) MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 353,
+    "placed": 334,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94124",
+     "94134",
+     "94112",
+     "94110",
+     "94103"
+    ],
+    "topModel": [
+     "94124",
+     "94134",
+     "94112",
+     "94110",
+     "94103"
+    ],
+    "topZipDashboardPct": 45.2,
+    "topZipModelPct": 45.2,
+    "meanMiDashboard": 1.11,
+    "meanMiModel": 1.11
+   },
+   "38684786059901|6-8": {
+    "cds": "38684786059901",
+    "name": "Roosevelt Middle",
+    "dashboardName": "Roosevelt MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 651,
+    "placed": 640,
+    "overlapPct": 99.2,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94118",
+     "94121",
+     "94117",
+     "94115",
+     "94112"
+    ],
+    "topModel": [
+     "94118",
+     "94121",
+     "94117",
+     "94115",
+     "94112"
+    ],
+    "topZipDashboardPct": 26.7,
+    "topZipModelPct": 26.9,
+    "meanMiDashboard": 2.1,
+    "meanMiModel": 2.09
+   },
+   "38684786059919|6-8": {
+    "cds": "38684786059919",
+    "name": "Visitacion Valley Middle",
+    "dashboardName": "Visitacion Valley MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 305,
+    "placed": 280,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94134",
+     "94112",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topModel": [
+     "94134",
+     "94112",
+     "94124",
+     "94132",
+     "94110"
+    ],
+    "topZipDashboardPct": 46.8,
+    "topZipModelPct": 46.8,
+    "meanMiDashboard": 1.1,
+    "meanMiModel": 1.1
+   },
+   "38684786062020|6-8": {
+    "cds": "38684786062020",
+    "name": "Aptos Middle",
+    "dashboardName": "Aptos MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 920,
+    "placed": 910,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94112",
+     "94132",
+     "94134",
+     "94124",
+     "94116"
+    ],
+    "topModel": [
+     "94112",
+     "94132",
+     "94134",
+     "94124",
+     "94116"
+    ],
+    "topZipDashboardPct": 30.8,
+    "topZipModelPct": 30.8,
+    "meanMiDashboard": 2.15,
+    "meanMiModel": 2.15
+   },
+   "38684786062038|6-8": {
+    "cds": "38684786062038",
+    "name": "Everett Middle",
+    "dashboardName": "Everett MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 316,
+    "placed": 296,
+    "overlapPct": 98.1,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94103",
+     "94102",
+     "94112",
+     "94124"
+    ],
+    "topModel": [
+     "94110",
+     "94103",
+     "94102",
+     "94112",
+     "94124"
+    ],
+    "topZipDashboardPct": 19.9,
+    "topZipModelPct": 19.9,
+    "meanMiDashboard": 1.76,
+    "meanMiModel": 1.76
+   },
+   "38684786062046|6-8": {
+    "cds": "38684786062046",
+    "name": "Buena Vista/ Horace Mann K-8",
+    "dashboardName": "Buena Vista Horace Mann K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 185,
+    "placed": 169,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94103",
+     "94112",
+     "94134"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94103",
+     "94112",
+     "94134"
+    ],
+    "topZipDashboardPct": 43.8,
+    "topZipModelPct": 43.8,
+    "meanMiDashboard": 1.38,
+    "meanMiModel": 1.38
+   },
+   "38684786062046|TK-5": {
+    "cds": "38684786062046",
+    "name": "Buena Vista/ Horace Mann K-8",
+    "dashboardName": "Buena Vista Horace Mann K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 315,
+    "placed": 288,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94112",
+     "94103",
+     "94134"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94112",
+     "94103",
+     "94134"
+    ],
+    "topZipDashboardPct": 36.1,
+    "topZipModelPct": 36.1,
+    "meanMiDashboard": 1.56,
+    "meanMiModel": 1.56
+   },
+   "38684786062053|6-8": {
+    "cds": "38684786062053",
+    "name": "Lick (James) Middle",
+    "dashboardName": "Lick (James) MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 511,
+    "placed": 492,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94103",
+     "94112",
+     "94134"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94103",
+     "94112",
+     "94134"
+    ],
+    "topZipDashboardPct": 32.1,
+    "topZipModelPct": 32.1,
+    "meanMiDashboard": 1.72,
+    "meanMiModel": 1.72
+   },
+   "38684786062061|6-8": {
+    "cds": "38684786062061",
+    "name": "Marina Middle",
+    "dashboardName": "Marina MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 635,
+    "placed": 612,
+    "overlapPct": 99.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94109",
+     "94133",
+     "94102",
+     "94108",
+     "94115"
+    ],
+    "topModel": [
+     "94109",
+     "94133",
+     "94102",
+     "94108",
+     "94115"
+    ],
+    "topZipDashboardPct": 15.2,
+    "topZipModelPct": 15.0,
+    "meanMiDashboard": 2.46,
+    "meanMiModel": 2.48
+   },
+   "38684786062079|6-8": {
+    "cds": "38684786062079",
+    "name": "Presidio Middle",
+    "dashboardName": "Presidio MS",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 971,
+    "placed": 956,
+    "overlapPct": 99.4,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94121",
+     "94118",
+     "94122",
+     "94116",
+     "94131"
+    ],
+    "topModel": [
+     "94121",
+     "94118",
+     "94122",
+     "94116",
+     "94131"
+    ],
+    "topZipDashboardPct": 43.3,
+    "topZipModelPct": 43.1,
+    "meanMiDashboard": 1.92,
+    "meanMiModel": 1.93
+   },
+   "38684786089569|TK-5": {
+    "cds": "38684786089569",
+    "name": "Lee (Edwin and Anita) Newcomer",
+    "dashboardName": "Lee (Edwin and Anita) Newcomer ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 15,
+    "placed": 5,
+    "overlapPct": 100.0,
+    "sameTop5": 1,
+    "topDashboard": [
+     "94112"
+    ],
+    "topModel": [
+     "94112"
+    ],
+    "topZipDashboardPct": 100.0,
+    "topZipModelPct": 100.0,
+    "meanMiDashboard": 5.62,
+    "meanMiModel": 5.62
+   },
+   "38684786089585|TK-5": {
+    "cds": "38684786089585",
+    "name": "Mission Education Center",
+    "dashboardName": "Mission Education Center ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 62,
+    "placed": 44,
+    "overlapPct": 88.6,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94131",
+     "94110",
+     "94112",
+     "94103",
+     "94124"
+    ],
+    "topModel": [
+     "94131",
+     "94110",
+     "94112",
+     "94124"
+    ],
+    "topZipDashboardPct": 34.1,
+    "topZipModelPct": 38.5,
+    "meanMiDashboard": 1.24,
+    "meanMiModel": 1.1
+   },
+   "38684786089775|6-8": {
+    "cds": "38684786089775",
+    "name": "Rooftop Elementary",
+    "dashboardName": "Rooftop K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 190,
+    "placed": 171,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94131",
+     "94114",
+     "94134",
+     "94124"
+    ],
+    "topModel": [
+     "94110",
+     "94131",
+     "94114",
+     "94134",
+     "94124"
+    ],
+    "topZipDashboardPct": 22.2,
+    "topZipModelPct": 22.2,
+    "meanMiDashboard": 1.79,
+    "meanMiModel": 1.79
+   },
+   "38684786089775|TK-5": {
+    "cds": "38684786089775",
+    "name": "Rooftop Elementary",
+    "dashboardName": "Rooftop K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 401,
+    "placed": 386,
+    "overlapPct": 97.4,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94131",
+     "94110",
+     "94124",
+     "94112",
+     "94114"
+    ],
+    "topModel": [
+     "94131",
+     "94110",
+     "94124",
+     "94112",
+     "94114"
+    ],
+    "topZipDashboardPct": 22.0,
+    "topZipModelPct": 22.6,
+    "meanMiDashboard": 1.81,
+    "meanMiModel": 1.78
+   },
+   "38684786093488|6-8": {
+    "cds": "38684786093488",
+    "name": "San Francisco Community Alternative",
+    "dashboardName": "SF Community K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 76,
+    "placed": 63,
+    "overlapPct": 100.0,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94112",
+     "94134",
+     "94124",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94134",
+     "94124",
+     "94110"
+    ],
+    "topZipDashboardPct": 55.6,
+    "topZipModelPct": 55.6,
+    "meanMiDashboard": 1.18,
+    "meanMiModel": 1.18
+   },
+   "38684786093488|TK-5": {
+    "cds": "38684786093488",
+    "name": "San Francisco Community Alternative",
+    "dashboardName": "SF Community K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 191,
+    "placed": 169,
+    "overlapPct": 100.0,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94112",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topModel": [
+     "94112",
+     "94124",
+     "94134",
+     "94110"
+    ],
+    "topZipDashboardPct": 65.1,
+    "topZipModelPct": 65.1,
+    "meanMiDashboard": 1.1,
+    "meanMiModel": 1.1
+   },
+   "38684786093496|TK-5": {
+    "cds": "38684786093496",
+    "name": "Carver (George Washington) Elementary",
+    "dashboardName": "Carver (Dr George W) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 96,
+    "placed": 75,
+    "overlapPct": 92.1,
+    "sameTop5": 1,
+    "topDashboard": [
+     "94124"
+    ],
+    "topModel": [
+     "94124",
+     "94134"
+    ],
+    "topZipDashboardPct": 100.0,
+    "topZipModelPct": 92.1,
+    "meanMiDashboard": 0.24,
+    "meanMiModel": 0.36
+   },
+   "38684786097919|TK-5": {
+    "cds": "38684786097919",
+    "name": "New Traditions Elementary",
+    "dashboardName": "New Traditions ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 256,
+    "placed": 229,
+    "overlapPct": 97.8,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94117",
+     "94118",
+     "94115",
+     "94110",
+     "94114"
+    ],
+    "topModel": [
+     "94117",
+     "94118",
+     "94115",
+     "94110",
+     "94122"
+    ],
+    "topZipDashboardPct": 37.1,
+    "topZipModelPct": 36.3,
+    "meanMiDashboard": 0.96,
+    "meanMiModel": 1.03
+   },
+   "38684786099154|TK-5": {
+    "cds": "38684786099154",
+    "name": "Moscone (George R.) Elementary",
+    "dashboardName": "Moscone (George R) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 343,
+    "placed": 322,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94110",
+     "94124",
+     "94134",
+     "94103",
+     "94112"
+    ],
+    "topModel": [
+     "94110",
+     "94124",
+     "94134",
+     "94103",
+     "94112"
+    ],
+    "topZipDashboardPct": 45.3,
+    "topZipModelPct": 45.3,
+    "meanMiDashboard": 1.44,
+    "meanMiModel": 1.44
+   },
+   "38684786102479|6-8": {
+    "cds": "38684786102479",
+    "name": "Lilienthal (Claire) Elementary",
+    "dashboardName": "Lilienthal (Claire) K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 196,
+    "placed": 161,
+    "overlapPct": 90.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94118",
+     "94115",
+     "94121",
+     "94124",
+     "94109"
+    ],
+    "topModel": [
+     "94118",
+     "94115",
+     "94121",
+     "94124",
+     "94109"
+    ],
+    "topZipDashboardPct": 22.4,
+    "topZipModelPct": 20.3,
+    "meanMiDashboard": 2.57,
+    "meanMiModel": 2.7
+   },
+   "38684786102479|TK-5": {
+    "cds": "38684786102479",
+    "name": "Lilienthal (Claire) Elementary",
+    "dashboardName": "Lilienthal (Claire) K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 476,
+    "placed": 467,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94118",
+     "94115",
+     "94121",
+     "94109",
+     "94122"
+    ],
+    "topModel": [
+     "94118",
+     "94115",
+     "94121",
+     "94109",
+     "94122"
+    ],
+    "topZipDashboardPct": 21.6,
+    "topZipModelPct": 21.6,
+    "meanMiDashboard": 2.59,
+    "meanMiModel": 2.59
+   },
+   "38684786104673|TK-5": {
+    "cds": "38684786104673",
+    "name": "Drew (Charles) College Preparatory Academy",
+    "dashboardName": "Drew (Dr Charles) College Preparatory Academy ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 211,
+    "placed": 192,
+    "overlapPct": 94.8,
+    "sameTop5": 4,
+    "topDashboard": [
+     "94124",
+     "94134",
+     "94112",
+     "94110",
+     "94132"
+    ],
+    "topModel": [
+     "94124",
+     "94134",
+     "94112",
+     "94110"
+    ],
+    "topZipDashboardPct": 80.7,
+    "topZipModelPct": 85.2,
+    "meanMiDashboard": 0.69,
+    "meanMiModel": 0.53
+   },
+   "38684786113245|6-8": {
+    "cds": "38684786113245",
+    "name": "Yu (Alice Fong) Elementary",
+    "dashboardName": "Yu (Alice Fong) K-8",
+    "span": "6-8",
+    "level": "middle",
+    "enrolled": 197,
+    "placed": 167,
+    "overlapPct": 93.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94116",
+     "94122",
+     "94112",
+     "94134",
+     "94124"
+    ],
+    "topModel": [
+     "94116",
+     "94122",
+     "94112",
+     "94134",
+     "94124"
+    ],
+    "topZipDashboardPct": 22.8,
+    "topZipModelPct": 21.3,
+    "meanMiDashboard": 2.42,
+    "meanMiModel": 2.37
+   },
+   "38684786113245|TK-5": {
+    "cds": "38684786113245",
+    "name": "Yu (Alice Fong) Elementary",
+    "dashboardName": "Yu (Alice Fong) K-8",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 397,
+    "placed": 384,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94122",
+     "94116",
+     "94134",
+     "94112",
+     "94124"
+    ],
+    "topModel": [
+     "94122",
+     "94116",
+     "94134",
+     "94112",
+     "94124"
+    ],
+    "topZipDashboardPct": 20.1,
+    "topZipModelPct": 20.1,
+    "meanMiDashboard": 2.54,
+    "meanMiModel": 2.54
+   },
+   "38684786113252|TK-5": {
+    "cds": "38684786113252",
+    "name": "Chin (John Yehall) Elementary",
+    "dashboardName": "Chin (John Yehall) ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 231,
+    "placed": 215,
+    "overlapPct": 100.0,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94133",
+     "94108",
+     "94103",
+     "94111",
+     "94109"
+    ],
+    "topModel": [
+     "94133",
+     "94108",
+     "94103",
+     "94111",
+     "94109"
+    ],
+    "topZipDashboardPct": 22.8,
+    "topZipModelPct": 22.8,
+    "meanMiDashboard": 1.58,
+    "meanMiModel": 1.58
+   },
+   "38684786113997|TK-5": {
+    "cds": "38684786113997",
+    "name": "Sunset Elementary",
+    "dashboardName": "Sunset ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 403,
+    "placed": 393,
+    "overlapPct": 98.7,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94116",
+     "94122",
+     "94112",
+     "94124",
+     "94132"
+    ],
+    "topModel": [
+     "94116",
+     "94122",
+     "94112",
+     "94124",
+     "94132"
+    ],
+    "topZipDashboardPct": 55.2,
+    "topZipModelPct": 55.9,
+    "meanMiDashboard": 1.52,
+    "meanMiModel": 1.48
+   },
+   "38684786115901|TK-5": {
+    "cds": "38684786115901",
+    "name": "Tenderloin Community",
+    "dashboardName": "Tenderloin Community ES",
+    "span": "TK-5",
+    "level": "elementary",
+    "enrolled": 288,
+    "placed": 274,
+    "overlapPct": 94.5,
+    "sameTop5": 5,
+    "topDashboard": [
+     "94102",
+     "94109",
+     "94103",
+     "94115",
+     "94130"
+    ],
+    "topModel": [
+     "94102",
+     "94109",
+     "94103",
+     "94115",
+     "94130"
+    ],
+    "topZipDashboardPct": 46.7,
+    "topZipModelPct": 49.4,
+    "meanMiDashboard": 0.7,
+    "meanMiModel": 0.53
+   }
+  }
+ },
+ "gapTrace": {
+  "blocks": 1800,
+  "maxDiffFt": 0.0,
+  "meanGapFt": 11932.7
+ },
+ "attendanceArea": {
+  "source": {
+   "areas": "https://data.sfgov.org/d/e6tr-sxwg",
+   "areasTag": "[DataSF e6tr-sxwg — queried 2026-09-30]",
+   "zips": "https://public.tableau.com/views/SFUSDPublicDataDashboard/Story1",
+   "zipsTag": "[primary — read 2026-10-08]",
+   "rule": "Bryan, 2026-10-08"
+  },
+  "areas": 58,
+  "matched": 58,
+  "unmatched": [],
+  "elementaryReach": 4.0,
+  "overlapByReach": {
+   "0.75": 76.4,
+   "1.0": 76.92,
+   "1.5": 77.62,
+   "2.0": 78.01,
+   "3.0": 78.31,
+   "4.0": 78.41,
+   "6.0": 78.25
+  },
+  "byLevel": {
+   "elementary|area": {
+    "students": 19349,
+    "inAreaPct": 39.6
+   },
+   "elementary|none": {
+    "students": 5558,
+    "inAreaPct": 0.0
+   },
+   "high|none": {
+    "students": 15744,
+    "inAreaPct": 0.0
+   },
+   "middle|none": {
+    "students": 11218,
+    "inAreaPct": 0.0
+   }
+  },
+  "areaSchools": {
+   "n": 58,
+   "median": 37.7,
+   "min": 10.6,
+   "max": 78.8
+  },
+  "schools": {
+   "38684780111427": {
+    "cds": "38684780111427",
+    "name": "Feinstein (Dianne) Elementary",
+    "students": 370.0,
+    "inArea": 171.1,
+    "target": 42.0,
+    "zipUpperBound": 67.0,
+    "inAreaPct": 46.2
+   },
+   "38684786040695": {
+    "cds": "38684786040695",
+    "name": "Alamo Elementary",
+    "students": 415.0,
+    "inArea": 307.4,
+    "target": 80.0,
+    "zipUpperBound": 84.9,
+    "inAreaPct": 74.1
+   },
+   "38684786040703": {
+    "cds": "38684786040703",
+    "name": "Alvarado Elementary",
+    "students": 539.0,
+    "inArea": 197.7,
+    "target": 36.0,
+    "zipUpperBound": 66.0,
+    "inAreaPct": 36.7
+   },
+   "38684786040737": {
+    "cds": "38684786040737",
+    "name": "Argonne Elementary",
+    "students": 387.0,
+    "inArea": 216.2,
+    "target": 52.0,
+    "zipUpperBound": 78.4,
+    "inAreaPct": 55.9
+   },
+   "38684786040760": {
+    "cds": "38684786040760",
+    "name": "Harte (Bret) Elementary",
+    "students": 263.0,
+    "inArea": 192.0,
+    "target": 76.0,
+    "zipUpperBound": 91.2,
+    "inAreaPct": 73.0
+   },
+   "38684786040778": {
+    "cds": "38684786040778",
+    "name": "Bryant Elementary",
+    "students": 233.0,
+    "inArea": 24.7,
+    "target": 0.0,
+    "zipUpperBound": 29.7,
+    "inAreaPct": 10.6
+   },
+   "38684786040828": {
+    "cds": "38684786040828",
+    "name": "Clarendon Alternative Elementary",
+    "students": 543.0,
+    "inArea": 269.8,
+    "target": 54.0,
+    "zipUpperBound": 63.5,
+    "inAreaPct": 49.7
+   },
+   "38684786040836": {
+    "cds": "38684786040836",
+    "name": "Cleveland Elementary",
+    "students": 253.0,
+    "inArea": 78.6,
+    "target": 23.0,
+    "zipUpperBound": 67.7,
+    "inAreaPct": 31.1
+   },
+   "38684786040851": {
+    "cds": "38684786040851",
+    "name": "Sloat (Commodore) Elementary",
+    "students": 386.0,
+    "inArea": 224.1,
+    "target": 66.0,
+    "zipUpperBound": 80.2,
+    "inAreaPct": 58.1
+   },
+   "38684786040877": {
+    "cds": "38684786040877",
+    "name": "Lau (Gordon J.) Elementary",
+    "students": 624.0,
+    "inArea": 112.6,
+    "target": 0.0,
+    "zipUpperBound": 51.1,
+    "inAreaPct": 18.0
+   },
+   "38684786040893": {
+    "cds": "38684786040893",
+    "name": "Webster (Daniel) Elementary",
+    "students": 392.0,
+    "inArea": 170.7,
+    "target": 36.0,
+    "zipUpperBound": 60.9,
+    "inAreaPct": 43.6
+   },
+   "38684786040919": {
+    "cds": "38684786040919",
+    "name": "Milk (Harvey) Civil Rights Elementary",
+    "students": 146.0,
+    "inArea": 78.9,
+    "target": 55.0,
+    "zipUpperBound": 76.2,
+    "inAreaPct": 54.0
+   },
+   "38684786040943": {
+    "cds": "38684786040943",
+    "name": "Taylor (Edward R.) Elementary",
+    "students": 562.0,
+    "inArea": 274.1,
+    "target": 44.0,
+    "zipUpperBound": 89.3,
+    "inAreaPct": 48.8
+   },
+   "38684786040950": {
+    "cds": "38684786040950",
+    "name": "El Dorado Elementary",
+    "students": 145.0,
+    "inArea": 41.3,
+    "target": 13.0,
+    "zipUpperBound": 52.6,
+    "inAreaPct": 28.5
+   },
+   "38684786040968": {
+    "cds": "38684786040968",
+    "name": "Cobb (William L.) Elementary",
+    "students": 130.0,
+    "inArea": 28.3,
+    "target": 27.0,
+    "zipUpperBound": 41.9,
+    "inAreaPct": 21.8
+   },
+   "38684786041008": {
+    "cds": "38684786041008",
+    "name": "Key (Francis Scott) Elementary",
+    "students": 569.0,
+    "inArea": 313.3,
+    "target": 47.0,
+    "zipUpperBound": 70.1,
+    "inAreaPct": 55.1
+   },
+   "38684786041016": {
+    "cds": "38684786041016",
+    "name": "McCoppin (Frank) Elementary",
+    "students": 300.0,
+    "inArea": 152.5,
+    "target": 55.0,
+    "zipUpperBound": 67.5,
+    "inAreaPct": 50.8
+   },
+   "38684786041040": {
+    "cds": "38684786041040",
+    "name": "Garfield Elementary",
+    "students": 190.0,
+    "inArea": 33.5,
+    "target": 14.0,
+    "zipUpperBound": 47.8,
+    "inAreaPct": 17.7
+   },
+   "38684786041065": {
+    "cds": "38684786041065",
+    "name": "Peabody (George) Elementary",
+    "students": 274.0,
+    "inArea": 114.5,
+    "target": 45.0,
+    "zipUpperBound": 61.2,
+    "inAreaPct": 41.8
+   },
+   "38684786041073": {
+    "cds": "38684786041073",
+    "name": "Glen Park Elementary",
+    "students": 325.0,
+    "inArea": 106.3,
+    "target": 27.0,
+    "zipUpperBound": 73.1,
+    "inAreaPct": 32.7
+   },
+   "38684786041115": {
+    "cds": "38684786041115",
+    "name": "Grattan Elementary",
+    "students": 411.0,
+    "inArea": 221.8,
+    "target": 53.0,
+    "zipUpperBound": 69.5,
+    "inAreaPct": 54.0
+   },
+   "38684786041123": {
+    "cds": "38684786041123",
+    "name": "Guadalupe Elementary",
+    "students": 273.0,
+    "inArea": 108.6,
+    "target": 35.0,
+    "zipUpperBound": 91.6,
+    "inAreaPct": 39.8
+   },
+   "38684786041131": {
+    "cds": "38684786041131",
+    "name": "Yick Wo Elementary",
+    "students": 202.0,
+    "inArea": 103.2,
+    "target": 58.0,
+    "zipUpperBound": 69.1,
+    "inAreaPct": 51.1
+   },
+   "38684786041149": {
+    "cds": "38684786041149",
+    "name": "Chavez (Cesar) Elementary",
+    "students": 401.0,
+    "inArea": 50.0,
+    "target": 1.0,
+    "zipUpperBound": 48.1,
+    "inAreaPct": 12.5
+   },
+   "38684786041156": {
+    "cds": "38684786041156",
+    "name": "Hillcrest Elementary",
+    "students": 324.0,
+    "inArea": 84.8,
+    "target": 29.0,
+    "zipUpperBound": 55.7,
+    "inAreaPct": 26.2
+   },
+   "38684786041206": {
+    "cds": "38684786041206",
+    "name": "Parker (Jean) Elementary",
+    "students": 112.0,
+    "inArea": 16.7,
+    "target": 5.0,
+    "zipUpperBound": 32.3,
+    "inAreaPct": 14.9
+   },
+   "38684786041230": {
+    "cds": "38684786041230",
+    "name": "Jefferson Elementary",
+    "students": 506.0,
+    "inArea": 261.8,
+    "target": 44.0,
+    "zipUpperBound": 73.2,
+    "inAreaPct": 51.7
+   },
+   "38684786041255": {
+    "cds": "38684786041255",
+    "name": "Muir (John) Elementary",
+    "students": 257.0,
+    "inArea": 113.3,
+    "target": 56.0,
+    "zipUpperBound": 63.4,
+    "inAreaPct": 44.1
+   },
+   "38684786041271": {
+    "cds": "38684786041271",
+    "name": "Ortega (Jose) Elementary",
+    "students": 415.0,
+    "inArea": 80.4,
+    "target": 17.0,
+    "zipUpperBound": 73.2,
+    "inAreaPct": 19.4
+   },
+   "38684786041289": {
+    "cds": "38684786041289",
+    "name": "Serra (Junipero) Elementary",
+    "students": 278.0,
+    "inArea": 67.4,
+    "target": 12.0,
+    "zipUpperBound": 71.6,
+    "inAreaPct": 24.2
+   },
+   "38684786041305": {
+    "cds": "38684786041305",
+    "name": "Lafayette Elementary",
+    "students": 477.0,
+    "inArea": 375.8,
+    "target": 78.0,
+    "zipUpperBound": 86.3,
+    "inAreaPct": 78.8
+   },
+   "38684786041321": {
+    "cds": "38684786041321",
+    "name": "Lakeshore Alternative Elementary",
+    "students": 418.0,
+    "inArea": 122.9,
+    "target": 22.0,
+    "zipUpperBound": 38.2,
+    "inAreaPct": 29.4
+   },
+   "38684786041347": {
+    "cds": "38684786041347",
+    "name": "Flynn (Leonard R.) Elementary",
+    "students": 409.0,
+    "inArea": 93.7,
+    "target": 18.0,
+    "zipUpperBound": 60.7,
+    "inAreaPct": 22.9
+   },
+   "38684786041362": {
+    "cds": "38684786041362",
+    "name": "Longfellow Elementary",
+    "students": 438.0,
+    "inArea": 131.2,
+    "target": 18.0,
+    "zipUpperBound": 74.1,
+    "inAreaPct": 30.0
+   },
+   "38684786041420": {
+    "cds": "38684786041420",
+    "name": "McKinley Elementary",
+    "students": 277.0,
+    "inArea": 104.4,
+    "target": 24.0,
+    "zipUpperBound": 61.1,
+    "inAreaPct": 37.7
+   },
+   "38684786041438": {
+    "cds": "38684786041438",
+    "name": "Miraloma Elementary",
+    "students": 320.0,
+    "inArea": 181.3,
+    "target": 58.0,
+    "zipUpperBound": 66.7,
+    "inAreaPct": 56.7
+   },
+   "38684786041446": {
+    "cds": "38684786041446",
+    "name": "Monroe Elementary",
+    "students": 538.0,
+    "inArea": 134.6,
+    "target": 23.0,
+    "zipUpperBound": 61.6,
+    "inAreaPct": 25.0
+   },
+   "38684786041503": {
+    "cds": "38684786041503",
+    "name": "Parks (Rosa) Elementary",
+    "students": 335.0,
+    "inArea": 78.2,
+    "target": 13.0,
+    "zipUpperBound": 56.4,
+    "inAreaPct": 23.3
+   },
+   "38684786041511": {
+    "cds": "38684786041511",
+    "name": "Redding Elementary",
+    "students": 264.0,
+    "inArea": 133.4,
+    "target": 45.0,
+    "zipUpperBound": 79.9,
+    "inAreaPct": 50.5
+   },
+   "38684786041529": {
+    "cds": "38684786041529",
+    "name": "Stevenson (Robert Louis) Elementary",
+    "students": 443.0,
+    "inArea": 191.5,
+    "target": 34.0,
+    "zipUpperBound": 79.9,
+    "inAreaPct": 43.2
+   },
+   "38684786041545": {
+    "cds": "38684786041545",
+    "name": "Sanchez Elementary",
+    "students": 265.0,
+    "inArea": 84.5,
+    "target": 37.0,
+    "zipUpperBound": 47.5,
+    "inAreaPct": 31.9
+   },
+   "38684786041560": {
+    "cds": "38684786041560",
+    "name": "Sheridan Elementary",
+    "students": 211.0,
+    "inArea": 57.4,
+    "target": 15.0,
+    "zipUpperBound": 86.7,
+    "inAreaPct": 27.2
+   },
+   "38684786041578": {
+    "cds": "38684786041578",
+    "name": "Sherman Elementary",
+    "students": 293.0,
+    "inArea": 89.2,
+    "target": 17.0,
+    "zipUpperBound": 63.1,
+    "inAreaPct": 30.4
+   },
+   "38684786041586": {
+    "cds": "38684786041586",
+    "name": "Malcolm X Academy",
+    "students": 91.0,
+    "inArea": 57.9,
+    "target": 71.0,
+    "zipUpperBound": 89.7,
+    "inAreaPct": 63.6
+   },
+   "38684786041594": {
+    "cds": "38684786041594",
+    "name": "Spring Valley Elementary",
+    "students": 205.0,
+    "inArea": 35.2,
+    "target": 14.0,
+    "zipUpperBound": 35.0,
+    "inAreaPct": 17.2
+   },
+   "38684786041602": {
+    "cds": "38684786041602",
+    "name": "King (Thomas Starr) Elementary",
+    "students": 343.0,
+    "inArea": 52.6,
+    "target": 5.0,
+    "zipUpperBound": 53.0,
+    "inAreaPct": 15.3
+   },
+   "38684786041610": {
+    "cds": "38684786041610",
+    "name": "Sunnyside Elementary",
+    "students": 385.0,
+    "inArea": 92.5,
+    "target": 18.0,
+    "zipUpperBound": 77.6,
+    "inAreaPct": 24.0
+   },
+   "38684786041644": {
+    "cds": "38684786041644",
+    "name": "Sutro Elementary",
+    "students": 268.0,
+    "inArea": 52.7,
+    "target": 5.0,
+    "zipUpperBound": 38.1,
+    "inAreaPct": 19.7
+   },
+   "38684786041685": {
+    "cds": "38684786041685",
+    "name": "Ulloa Elementary",
+    "students": 521.0,
+    "inArea": 190.5,
+    "target": 26.0,
+    "zipUpperBound": 56.4,
+    "inAreaPct": 36.6
+   },
+   "38684786041701": {
+    "cds": "38684786041701",
+    "name": "Visitacion Valley Elementary",
+    "students": 204.0,
+    "inArea": 122.7,
+    "target": 59.0,
+    "zipUpperBound": 80.1,
+    "inAreaPct": 60.1
+   },
+   "38684786041727": {
+    "cds": "38684786041727",
+    "name": "West Portal Elementary",
+    "students": 594.0,
+    "inArea": 194.3,
+    "target": 29.0,
+    "zipUpperBound": 51.4,
+    "inAreaPct": 32.7
+   },
+   "38684786093496": {
+    "cds": "38684786093496",
+    "name": "Carver (George Washington) Elementary",
+    "students": 97.0,
+    "inArea": 75.7,
+    "target": 100.0,
+    "zipUpperBound": 100.0,
+    "inAreaPct": 78.0
+   },
+   "38684786097919": {
+    "cds": "38684786097919",
+    "name": "New Traditions Elementary",
+    "students": 256.0,
+    "inArea": 172.2,
+    "target": 80.0,
+    "zipUpperBound": 82.1,
+    "inAreaPct": 67.3
+   },
+   "38684786099154": {
+    "cds": "38684786099154",
+    "name": "Moscone (George R.) Elementary",
+    "students": 342.0,
+    "inArea": 45.4,
+    "target": 0.0,
+    "zipUpperBound": 55.3,
+    "inAreaPct": 13.3
+   },
+   "38684786104673": {
+    "cds": "38684786104673",
+    "name": "Drew (Charles) College Preparatory Academy",
+    "students": 210.0,
+    "inArea": 101.4,
+    "target": 51.0,
+    "zipUpperBound": 80.7,
+    "inAreaPct": 48.3
+   },
+   "38684786113252": {
+    "cds": "38684786113252",
+    "name": "Chin (John Yehall) Elementary",
+    "students": 231.0,
+    "inArea": 28.7,
+    "target": 2.0,
+    "zipUpperBound": 51.6,
+    "inAreaPct": 12.4
+   },
+   "38684786113997": {
+    "cds": "38684786113997",
+    "name": "Sunset Elementary",
+    "students": 402.0,
+    "inArea": 274.0,
+    "target": 68.0,
+    "zipUpperBound": 80.7,
+    "inAreaPct": 68.2
+   },
+   "38684786115901": {
+    "cds": "38684786115901",
+    "name": "Tenderloin Community",
+    "students": 287.0,
+    "inArea": 175.7,
+    "target": 56.0,
+    "zipUpperBound": 76.3,
+    "inAreaPct": 61.2
+   }
+  }
+ },
+ "calibration": {
+  "muniEligibleStudents": 21372,
+  "muniEligibleBeforeCalibration": 18869,
+  "muniNewlyEligible": 2504,
+  "muniNoLongerEligible": 0,
+  "muniNewlyEligibleDriven": 1279,
+  "note": "Transit times are scheduled Muni door-to-door times (muni_times); the K-5 Muni share by distance band against SFCTA 2016 Fig. 3 is byDistance's transit."
+ },
+ "stageSeconds": {
+  "inputs": 0.3,
+  "trip times": 1370.3,
+  "assignment": 19.9,
+  "calibration": 10.4,
+  "choice, toggles and cases": 450.1,
+  "validation and tables": 144.4
+ }
+}

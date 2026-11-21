@@ -1,0 +1,56 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-06-11",
+ "id": "g22-38758",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38758",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/June%2011%20Special%20Meeting%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Discussion and possible action to adopt the 2020 Urban Water Management Plan",
+   "decision": "approve item 3, with the seventh Whereas clause amended to remove the",
+   "resolution": "21-0100",
+   "text": "Discussion and possible action to adopt the 2020 Urban Water Management Plan (UWMP), including the 2020 Water Shortage Contingency Plan, for the City and County of San Francisco in accordance with the Urban Water Management Planning Act (Cal. Water Code Section 10610 et seq.), and direct the General Manager to submit the Plans to the California Department of Water Resources by July 1, 2021. This action constitutes the Approval Action for the project for the purposes of CEQA, pursuant to Section 31.04(h) of the San Francisco Administrative Code. [Continued by vote of the Commission from the June 8, 2021 regular meeting] Commissioner Harrington thanked staff for providing the comments and responses. He noted Commissioner Ajami’s comments encouraging staff to continue to look for better ways to project population water usage. Steve Ritchie, Assistant General Manager (AGM) Water, indicated that it will be addressed during the July water workshop"
+  },
+  {
+   "no": "6",
+   "title": "Public Employee Appointment: SFPUC General Manager, pursuant to Government Code Section 54957(b) and San Francisco Administrative Code Section 67.10(b)",
+   "text": "Public Employee Appointment: SFPUC General Manager, pursuant to Government Code Section 54957(b) and San Francisco Administrative Code Section 67.10(b) The Commission exited Closed Session at 2:33 PM"
+  },
+  {
+   "no": "7",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session President Maxwell stated there was no reportable action taken"
+  },
+  {
+   "no": "4",
+   "title": "Public Comment on the matter to be addressed during Closed Session"
+  },
+  {
+   "no": "5",
+   "title": "Motion on whether to conduct the item below in closed session, pursuant to San Francisco Administrative Code Section 67.10(b)",
+   "decision": "conduct the item below in closed session pursuant to San Francisco"
+  },
+  {
+   "no": "8",
+   "title": "Motion regarding whether to disclose or not disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a) Adjournment",
+   "decision": "not to disclose"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

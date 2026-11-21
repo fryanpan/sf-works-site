@@ -1,0 +1,101 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-07-21",
+ "id": "g55-36234",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36234",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22377"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - June 30, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Motion to rescind Resolution 200616-060 filed on 5/7/18 for $500,000, approved on June 16, 2020",
+   "decision": "ADOPTED — 4 ayes (Resolution 200616-060)"
+  },
+  {
+   "no": "10.2",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the claims against the SFMTA",
+   "decision": "ADOPTED — 4 ayes (Resolution 200721-063)"
+  },
+  {
+   "no": "10.3",
+   "title": "Traffic modifications: A - Rescind 2-hr Parking (Laguna St); B - Rescind 1-hr Parking (Lucky St); C - Establish Tow Away, No Stopping Anytime (Lucky St)",
+   "decision": "ADOPTED — 4 ayes (Resolution 200721-064)"
+  },
+  {
+   "no": "10.4",
+   "title": "Amending the Transportation Code to implement parking restrictions to establish SFPD vehicles only in front of the SFPD",
+   "decision": "ADOPTED — 4 ayes (Resolution 200721-065)"
+  },
+  {
+   "no": "10.5",
+   "title": "Retroactively approving Contract SFMTA-2020-27, Workers’ Compensation Investigative Services, with Passanisi Investigations",
+   "decision": "ADOPTED — 4 ayes (Resolution 200721-066)"
+  },
+  {
+   "no": "10.6",
+   "title": "Awarding Contract No. 1316, Woods Facility Rehabilitation – Electric Bus Charging Station Pilot Program, to Liffey Electric",
+   "decision": "ADOPTED — 4 ayes (Resolution 200721-067)"
+  },
+  {
+   "no": "10.7",
+   "title": "Authorizing the Director to execute Modification Number 2; 33 Stanyan",
+   "decision": "ADOPTED — 4 ayes (Resolution 200721-068)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding transit service and Temporary Emergency Transit Lanes"
+  },
+  {
+   "no": "12",
+   "title": "Approving temporary traffic modifications to restrict through-traffic and designating Slow Streets during the COVID-19 pandemic"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

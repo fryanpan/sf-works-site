@@ -1,0 +1,10 @@
+# One poll of the 511 realtime archive (tools/muni/rt-archive/poll.py), from the copy vm-setup.sh installs in ~/rt-archive/bin.
+[Unit]
+Description=511 realtime archive: poll Muni GTFS-RT and upload
+
+[Service]
+EnvironmentFile=-%h/.config/sf-works/env
+Type=oneshot
+ExecStart=%h/.venvs/rt-archive/bin/python %h/rt-archive/bin/poll.py
+Nice=10
+TimeoutStartSec=58

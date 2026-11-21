@@ -1,0 +1,7266 @@
+{
+ "about": "Injury counts near SF's 33 speed camera locations, before and after each camera started. Built by the HIN map pipeline from DataSF injury victims and SFMTA camera sites; copied here so scripts/speed-camera-epc.py reads tracked data.",
+ "rows": [
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF001"
+   ],
+   "city": {
+    "after": 5293,
+    "before": 5281,
+    "groups": {
+     "all": {
+      "after": 5293,
+      "before": 5281
+     },
+     "bike": {
+      "after": 725,
+      "before": 623
+     },
+     "ped": {
+      "after": 903,
+      "before": 998
+     },
+     "severe": {
+      "after": 411,
+      "before": 451
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Franklin St, 2510 block",
+   "lat": 37.797669000001,
+   "limit": "25",
+   "lon": -122.425263000002,
+   "near": {
+    "after": 24,
+    "before": 10,
+    "groups": {
+     "all": {
+      "after": 24,
+      "before": 10,
+      "rr": [
+       2.395,
+       1.144,
+       5.012
+      ],
+      "rrRing": [
+       2.371,
+       1.099,
+       5.115
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.859,
+       0.017,
+       43.378
+      ],
+      "rrRing": [
+       0.484,
+       0.009,
+       26.839
+      ]
+     },
+     "ped": {
+      "after": 4,
+      "before": 4,
+      "rr": [
+       1.105,
+       0.276,
+       4.432
+      ],
+      "rrRing": [
+       0.784,
+       0.18,
+       3.404
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 2,
+      "rr": [
+       1.097,
+       0.154,
+       7.826
+      ],
+      "rrRing": [
+       1.059,
+       0.134,
+       8.383
+      ]
+     }
+    },
+    "rr": [
+     2.395,
+     1.144,
+     5.012
+    ],
+    "rrRing": [
+     2.371,
+     1.099,
+     5.115
+    ],
+    "severeAfter": 2,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-04-01, NB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 165,
+    "before": 163,
+    "groups": {
+     "all": {
+      "after": 165,
+      "before": 163
+     },
+     "bike": {
+      "after": 15,
+      "before": 7
+     },
+     "ped": {
+      "after": 37,
+      "before": 29
+     },
+     "severe": {
+      "after": 17,
+      "before": 18
+     }
+    }
+   },
+   "site": {
+    "after": 1,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 1,
+      "before": 3,
+      "rr": [
+       0.333,
+       0.035,
+       3.198
+      ],
+      "rrRing": [
+       0.329,
+       0.034,
+       3.199
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.859,
+       0.017,
+       43.378
+      ],
+      "rrRing": [
+       0.484,
+       0.009,
+       26.839
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.105,
+       0.069,
+       17.696
+      ],
+      "rrRing": [
+       0.784,
+       0.047,
+       13.073
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.097,
+       0.068,
+       17.601
+      ],
+      "rrRing": [
+       1.059,
+       0.061,
+       18.305
+      ]
+     }
+    },
+    "rr": [
+     0.333,
+     0.035,
+     3.198
+    ],
+    "rrRing": [
+     0.329,
+     0.034,
+     3.199
+    ],
+    "severeAfter": 1,
+    "severeBefore": 1
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF002",
+    "MTAF003"
+   ],
+   "city": {
+    "after": 5313,
+    "before": 5281,
+    "groups": {
+     "all": {
+      "after": 5313,
+      "before": 5281
+     },
+     "bike": {
+      "after": 725,
+      "before": 620
+     },
+     "ped": {
+      "after": 907,
+      "before": 1000
+     },
+     "severe": {
+      "after": 413,
+      "before": 451
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Columbus Ave, 841 block",
+   "lat": 37.802385000001,
+   "limit": "20",
+   "lon": -122.413491000002,
+   "near": {
+    "after": 4,
+    "before": 10,
+    "groups": {
+     "all": {
+      "after": 4,
+      "before": 10,
+      "rr": [
+       0.398,
+       0.125,
+       1.269
+      ],
+      "rrRing": [
+       0.429,
+       0.129,
+       1.434
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.122,
+       0.006,
+       2.37
+      ],
+      "rrRing": [
+       0.106,
+       0.005,
+       2.328
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.22,
+       0.011,
+       4.599
+      ],
+      "rrRing": [
+       0.277,
+       0.012,
+       6.194
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.218,
+       0.01,
+       4.562
+      ],
+      "rrRing": [
+       0.181,
+       0.008,
+       4.268
+      ]
+     }
+    },
+    "rr": [
+     0.398,
+     0.125,
+     1.269
+    ],
+    "rrRing": [
+     0.429,
+     0.129,
+     1.434
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-04-01, NB and SB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 68,
+    "before": 73,
+    "groups": {
+     "all": {
+      "after": 68,
+      "before": 73
+     },
+     "bike": {
+      "after": 11,
+      "before": 8
+     },
+     "ped": {
+      "after": 15,
+      "before": 21
+     },
+     "severe": {
+      "after": 10,
+      "before": 9
+     }
+    }
+   },
+   "site": {
+    "after": 3,
+    "before": 4,
+    "groups": {
+     "all": {
+      "after": 3,
+      "before": 4,
+      "rr": [
+       0.745,
+       0.167,
+       3.333
+      ],
+      "rrRing": [
+       0.805,
+       0.174,
+       3.729
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.285,
+       0.012,
+       7.011
+      ],
+      "rrRing": [
+       0.246,
+       0.009,
+       6.823
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.367,
+       0.015,
+       9.033
+      ],
+      "rrRing": [
+       0.462,
+       0.018,
+       12.124
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.092,
+       0.022,
+       55.157
+      ],
+      "rrRing": [
+       0.905,
+       0.016,
+       50.248
+      ]
+     }
+    },
+    "rr": [
+     0.745,
+     0.167,
+     3.333
+    ],
+    "rrRing": [
+     0.805,
+     0.174,
+     3.729
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 5,
+   "cameraSites": [
+    "MTAF004",
+    "MTAF005"
+   ],
+   "city": {
+    "after": 5287,
+    "before": 5265,
+    "groups": {
+     "all": {
+      "after": 5287,
+      "before": 5265
+     },
+     "bike": {
+      "after": 718,
+      "before": 621
+     },
+     "ped": {
+      "after": 899,
+      "before": 997
+     },
+     "severe": {
+      "after": 410,
+      "before": 449
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Broadway, 770 block",
+   "lat": 37.797510596489,
+   "limit": "20",
+   "lon": -122.409819748791,
+   "near": {
+    "after": 30,
+    "before": 26,
+    "groups": {
+     "all": {
+      "after": 30,
+      "before": 26,
+      "rr": [
+       1.149,
+       0.679,
+       1.945
+      ],
+      "rrRing": [
+       0.821,
+       0.466,
+       1.446
+      ]
+     },
+     "bike": {
+      "after": 7,
+      "before": 2,
+      "rr": [
+       3.027,
+       0.627,
+       14.626
+      ],
+      "rrRing": [
+       2.5,
+       0.454,
+       13.76
+      ]
+     },
+     "ped": {
+      "after": 8,
+      "before": 5,
+      "rr": [
+       1.774,
+       0.578,
+       5.444
+      ],
+      "rrRing": [
+       1.067,
+       0.322,
+       3.537
+      ]
+     },
+     "severe": {
+      "after": 3,
+      "before": 4,
+      "rr": [
+       0.821,
+       0.183,
+       3.692
+      ],
+      "rrRing": [
+       0.679,
+       0.134,
+       3.431
+      ]
+     }
+    },
+    "rr": [
+     1.149,
+     0.679,
+     1.945
+    ],
+    "rrRing": [
+     0.821,
+     0.466,
+     1.446
+    ],
+    "severeAfter": 3,
+    "severeBefore": 4
+   },
+   "note": "in the camera data from 2025-04-01, EB and WB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 208,
+    "before": 148,
+    "groups": {
+     "all": {
+      "after": 208,
+      "before": 148
+     },
+     "bike": {
+      "after": 21,
+      "before": 15
+     },
+     "ped": {
+      "after": 51,
+      "before": 34
+     },
+     "severe": {
+      "after": 21,
+      "before": 19
+     }
+    }
+   },
+   "site": {
+    "after": 9,
+    "before": 10,
+    "groups": {
+     "all": {
+      "after": 9,
+      "before": 10,
+      "rr": [
+       0.896,
+       0.364,
+       2.207
+      ],
+      "rrRing": [
+       0.64,
+       0.254,
+       1.615
+      ]
+     },
+     "bike": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       4.325,
+       0.207,
+       90.263
+      ],
+      "rrRing": [
+       3.605,
+       0.161,
+       80.486
+      ]
+     },
+     "ped": {
+      "after": 4,
+      "before": 1,
+      "rr": [
+       4.436,
+       0.495,
+       39.764
+      ],
+      "rrRing": [
+       2.667,
+       0.286,
+       24.897
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.285,
+       0.133,
+       80.869
+      ],
+      "rrRing": [
+       2.721,
+       0.105,
+       70.796
+      ]
+     }
+    },
+    "rr": [
+     0.896,
+     0.364,
+     2.207
+    ],
+    "rrRing": [
+     0.64,
+     0.254,
+     1.615
+    ],
+    "severeAfter": 1,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF006"
+   ],
+   "city": {
+    "after": 5256,
+    "before": 5212,
+    "groups": {
+     "all": {
+      "after": 5256,
+      "before": 5212
+     },
+     "bike": {
+      "after": 714,
+      "before": 614
+     },
+     "ped": {
+      "after": 903,
+      "before": 987
+     },
+     "severe": {
+      "after": 411,
+      "before": 441
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Turk St, 600 block",
+   "lat": 37.782183481473,
+   "limit": "20",
+   "lon": -122.419125743874,
+   "near": {
+    "after": 61,
+    "before": 79,
+    "groups": {
+     "all": {
+      "after": 61,
+      "before": 79,
+      "rr": [
+       0.766,
+       0.547,
+       1.072
+      ],
+      "rrRing": [
+       0.681,
+       0.478,
+       0.97
+      ]
+     },
+     "bike": {
+      "after": 11,
+      "before": 9,
+      "rr": [
+       1.051,
+       0.433,
+       2.553
+      ],
+      "rrRing": [
+       1.028,
+       0.409,
+       2.584
+      ]
+     },
+     "ped": {
+      "after": 4,
+      "before": 15,
+      "rr": [
+       0.291,
+       0.096,
+       0.881
+      ],
+      "rrRing": [
+       0.278,
+       0.09,
+       0.86
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 12,
+      "rr": [
+       0.179,
+       0.04,
+       0.804
+      ],
+      "rrRing": [
+       0.188,
+       0.04,
+       0.874
+      ]
+     }
+    },
+    "rr": [
+     0.766,
+     0.547,
+     1.072
+    ],
+    "rrRing": [
+     0.681,
+     0.478,
+     0.97
+    ],
+    "severeAfter": 2,
+    "severeBefore": 12
+   },
+   "note": "in the camera data from 2025-04-01, WB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 619,
+    "before": 546,
+    "groups": {
+     "all": {
+      "after": 619,
+      "before": 546
+     },
+     "bike": {
+      "after": 113,
+      "before": 95
+     },
+     "ped": {
+      "after": 136,
+      "before": 142
+     },
+     "severe": {
+      "after": 56,
+      "before": 63
+     }
+    }
+   },
+   "site": {
+    "after": 9,
+    "before": 10,
+    "groups": {
+     "all": {
+      "after": 9,
+      "before": 10,
+      "rr": [
+       0.892,
+       0.362,
+       2.198
+      ],
+      "rrRing": [
+       0.794,
+       0.32,
+       1.968
+      ]
+     },
+     "bike": {
+      "after": 3,
+      "before": 1,
+      "rr": [
+       2.58,
+       0.268,
+       24.866
+      ],
+      "rrRing": [
+       2.522,
+       0.258,
+       24.648
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.156,
+       0.008,
+       3.027
+      ],
+      "rrRing": [
+       0.149,
+       0.008,
+       2.914
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.215,
+       0.01,
+       4.483
+      ],
+      "rrRing": [
+       0.225,
+       0.011,
+       4.782
+      ]
+     }
+    },
+    "rr": [
+     0.892,
+     0.362,
+     2.198
+    ],
+    "rrRing": [
+     0.794,
+     0.32,
+     1.968
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-17",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-12-02",
+    "2025-04-16"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF007"
+   ],
+   "city": {
+    "after": 5138,
+    "before": 5097,
+    "groups": {
+     "all": {
+      "after": 5138,
+      "before": 5097
+     },
+     "bike": {
+      "after": 703,
+      "before": 599
+     },
+     "ped": {
+      "after": 878,
+      "before": 955
+     },
+     "severe": {
+      "after": 399,
+      "before": 441
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "7th St, 356 block",
+   "lat": 37.775934000001,
+   "limit": "25",
+   "lon": -122.407047000002,
+   "near": {
+    "after": 23,
+    "before": 15,
+    "groups": {
+     "all": {
+      "after": 23,
+      "before": 15,
+      "rr": [
+       1.521,
+       0.793,
+       2.919
+      ],
+      "rrRing": [
+       1.4,
+       0.722,
+       2.713
+      ]
+     },
+     "bike": {
+      "after": 6,
+      "before": 2,
+      "rr": [
+       2.556,
+       0.514,
+       12.712
+      ],
+      "rrRing": [
+       2.037,
+       0.4,
+       10.367
+      ]
+     },
+     "ped": {
+      "after": 5,
+      "before": 3,
+      "rr": [
+       1.813,
+       0.432,
+       7.608
+      ],
+      "rrRing": [
+       1.604,
+       0.371,
+       6.943
+      ]
+     },
+     "severe": {
+      "after": 3,
+      "before": 0,
+      "rr": [
+       7.736,
+       0.398,
+       150.236
+      ],
+      "rrRing": [
+       5.615,
+       0.281,
+       112.234
+      ]
+     }
+    },
+    "rr": [
+     1.521,
+     0.793,
+     2.919
+    ],
+    "rrRing": [
+     1.4,
+     0.722,
+     2.713
+    ],
+    "severeAfter": 3,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-04-17, NB",
+   "pre": [
+    "2022-07-18",
+    "2023-12-01"
+   ],
+   "ring": {
+    "after": 551,
+    "before": 503,
+    "groups": {
+     "all": {
+      "after": 551,
+      "before": 503
+     },
+     "bike": {
+      "after": 109,
+      "before": 74
+     },
+     "ped": {
+      "after": 80,
+      "before": 77
+     },
+     "severe": {
+      "after": 45,
+      "before": 36
+     }
+    }
+   },
+   "site": {
+    "after": 7,
+    "before": 7,
+    "groups": {
+     "all": {
+      "after": 7,
+      "before": 7,
+      "rr": [
+       0.992,
+       0.348,
+       2.83
+      ],
+      "rrRing": [
+       0.913,
+       0.318,
+       2.621
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.557,
+       0.104,
+       62.876
+      ],
+      "rrRing": [
+       2.041,
+       0.082,
+       50.788
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 2,
+      "rr": [
+       1.088,
+       0.153,
+       7.738
+      ],
+      "rrRing": [
+       0.963,
+       0.132,
+       7.005
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.105,
+       0.022,
+       55.829
+      ],
+      "rrRing": [
+       0.802,
+       0.016,
+       41.418
+      ]
+     }
+    },
+    "rr": [
+     0.992,
+     0.348,
+     2.83
+    ],
+    "rrRing": [
+     0.913,
+     0.318,
+     2.621
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-17",
+   "years": 1.37
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF008"
+   ],
+   "city": {
+    "after": 5295,
+    "before": 5255,
+    "groups": {
+     "all": {
+      "after": 5295,
+      "before": 5255
+     },
+     "bike": {
+      "after": 724,
+      "before": 618
+     },
+     "ped": {
+      "after": 904,
+      "before": 993
+     },
+     "severe": {
+      "after": 412,
+      "before": 450
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "10th St, 349 block",
+   "lat": 37.772388000001,
+   "limit": "25",
+   "lon": -122.411911500002,
+   "near": {
+    "after": 22,
+    "before": 36,
+    "groups": {
+     "all": {
+      "after": 22,
+      "before": 36,
+      "rr": [
+       0.606,
+       0.356,
+       1.032
+      ],
+      "rrRing": [
+       0.548,
+       0.317,
+       0.947
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 5,
+      "rr": [
+       0.171,
+       0.02,
+       1.465
+      ],
+      "rrRing": [
+       0.138,
+       0.016,
+       1.207
+      ]
+     },
+     "ped": {
+      "after": 3,
+      "before": 9,
+      "rr": [
+       0.366,
+       0.099,
+       1.357
+      ],
+      "rrRing": [
+       0.365,
+       0.094,
+       1.419
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 3,
+      "rr": [
+       0.364,
+       0.038,
+       3.514
+      ],
+      "rrRing": [
+       0.292,
+       0.029,
+       2.933
+      ]
+     }
+    },
+    "rr": [
+     0.606,
+     0.356,
+     1.032
+    ],
+    "rrRing": [
+     0.548,
+     0.317,
+     0.947
+    ],
+    "severeAfter": 1,
+    "severeBefore": 3
+   },
+   "note": "in the camera data from 2025-04-01, SB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 456,
+    "before": 409,
+    "groups": {
+     "all": {
+      "after": 456,
+      "before": 409
+     },
+     "bike": {
+      "after": 100,
+      "before": 69
+     },
+     "ped": {
+      "after": 53,
+      "before": 58
+     },
+     "severe": {
+      "after": 40,
+      "before": 35
+     }
+    }
+   },
+   "site": {
+    "after": 4,
+    "before": 1,
+    "groups": {
+     "all": {
+      "after": 4,
+      "before": 1,
+      "rr": [
+       3.97,
+       0.444,
+       35.53
+      ],
+      "rrRing": [
+       3.588,
+       0.399,
+       32.231
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       0.854,
+       0.053,
+       13.676
+      ],
+      "rrRing": [
+       0.69,
+       0.042,
+       11.22
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.295,
+       0.134,
+       80.996
+      ],
+      "rrRing": [
+       3.28,
+       0.131,
+       82.272
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.092,
+       0.068,
+       17.519
+      ],
+      "rrRing": [
+       0.875,
+       0.053,
+       14.515
+      ]
+     }
+    },
+    "rr": [
+     3.97,
+     0.444,
+     35.53
+    ],
+    "rrRing": [
+     3.588,
+     0.399,
+     32.231
+    ],
+    "severeAfter": 1,
+    "severeBefore": 1
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF009"
+   ],
+   "city": {
+    "after": 5294,
+    "before": 5273,
+    "groups": {
+     "all": {
+      "after": 5294,
+      "before": 5273
+     },
+     "bike": {
+      "after": 724,
+      "before": 620
+     },
+     "ped": {
+      "after": 901,
+      "before": 999
+     },
+     "severe": {
+      "after": 413,
+      "before": 453
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "King St, 353 block",
+   "lat": 37.774989000001,
+   "limit": "30",
+   "lon": -122.395189500002,
+   "near": {
+    "after": 23,
+    "before": 18,
+    "groups": {
+     "all": {
+      "after": 23,
+      "before": 18,
+      "rr": [
+       1.273,
+       0.686,
+       2.361
+      ],
+      "rrRing": [
+       1.083,
+       0.573,
+       2.045
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 3,
+      "rr": [
+       0.285,
+       0.03,
+       2.751
+      ],
+      "rrRing": [
+       0.219,
+       0.022,
+       2.176
+      ]
+     },
+     "ped": {
+      "after": 6,
+      "before": 3,
+      "rr": [
+       2.218,
+       0.553,
+       8.893
+      ],
+      "rrRing": [
+       2.324,
+       0.543,
+       9.948
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.097,
+       0.022,
+       55.401
+      ],
+      "rrRing": [
+       0.825,
+       0.016,
+       43.162
+      ]
+     }
+    },
+    "rr": [
+     1.273,
+     0.686,
+     2.361
+    ],
+    "rrRing": [
+     1.083,
+     0.573,
+     2.045
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-04-01, EB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 354,
+    "before": 300,
+    "groups": {
+     "all": {
+      "after": 354,
+      "before": 300
+     },
+     "bike": {
+      "after": 61,
+      "before": 40
+     },
+     "ped": {
+      "after": 37,
+      "before": 43
+     },
+     "severe": {
+      "after": 28,
+      "before": 23
+     }
+    }
+   },
+   "site": {
+    "after": 7,
+    "before": 1,
+    "groups": {
+     "all": {
+      "after": 7,
+      "before": 1,
+      "rr": [
+       6.972,
+       0.857,
+       56.691
+      ],
+      "rrRing": [
+       5.932,
+       0.726,
+       48.49
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.856,
+       0.017,
+       43.229
+      ],
+      "rrRing": [
+       0.659,
+       0.013,
+       33.862
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 1,
+      "rr": [
+       2.218,
+       0.201,
+       24.498
+      ],
+      "rrRing": [
+       2.324,
+       0.203,
+       26.678
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.097,
+       0.022,
+       55.401
+      ],
+      "rrRing": [
+       0.825,
+       0.016,
+       43.162
+      ]
+     }
+    },
+    "rr": [
+     6.972,
+     0.857,
+     56.691
+    ],
+    "rrRing": [
+     5.932,
+     0.726,
+     48.49
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF011",
+    "MTAF012"
+   ],
+   "city": {
+    "after": 5314,
+    "before": 5281,
+    "groups": {
+     "all": {
+      "after": 5314,
+      "before": 5281
+     },
+     "bike": {
+      "after": 725,
+      "before": 623
+     },
+     "ped": {
+      "after": 907,
+      "before": 1002
+     },
+     "severe": {
+      "after": 413,
+      "before": 452
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Market St, 2999 block",
+   "lat": 37.761012154482,
+   "limit": "30",
+   "lon": -122.440901478277,
+   "near": {
+    "after": 3,
+    "before": 10,
+    "groups": {
+     "all": {
+      "after": 3,
+      "before": 10,
+      "rr": [
+       0.298,
+       0.082,
+       1.084
+      ],
+      "rrRing": [
+       0.288,
+       0.075,
+       1.11
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.859,
+       0.017,
+       43.378
+      ],
+      "rrRing": [
+       1.889,
+       0.032,
+       112.071
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.105,
+       0.022,
+       55.734
+      ],
+      "rrRing": [
+       1.08,
+       0.02,
+       58.659
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.365,
+       0.015,
+       8.98
+      ],
+      "rrRing": [
+       0.216,
+       0.007,
+       6.307
+      ]
+     }
+    },
+    "rr": [
+     0.298,
+     0.082,
+     1.084
+    ],
+    "rrRing": [
+     0.288,
+     0.075,
+     1.11
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-04-01, EB and WB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 52,
+    "before": 50,
+    "groups": {
+     "all": {
+      "after": 52,
+      "before": 50
+     },
+     "bike": {
+      "after": 4,
+      "before": 8
+     },
+     "ped": {
+      "after": 12,
+      "before": 13
+     },
+     "severe": {
+      "after": 8,
+      "before": 5
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 0,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.994,
+       0.02,
+       50.097
+      ],
+      "rrRing": [
+       0.962,
+       0.019,
+       49.41
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.859,
+       0.017,
+       43.378
+      ],
+      "rrRing": [
+       1.889,
+       0.032,
+       112.071
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.105,
+       0.022,
+       55.734
+      ],
+      "rrRing": [
+       1.08,
+       0.02,
+       58.659
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.094,
+       0.022,
+       55.279
+      ],
+      "rrRing": [
+       0.647,
+       0.011,
+       37.667
+      ]
+     }
+    },
+    "rr": [
+     0.994,
+     0.02,
+     50.097
+    ],
+    "rrRing": [
+     0.962,
+     0.019,
+     49.41
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF013"
+   ],
+   "city": {
+    "after": 5294,
+    "before": 5281,
+    "groups": {
+     "all": {
+      "after": 5294,
+      "before": 5281
+     },
+     "bike": {
+      "after": 725,
+      "before": 622
+     },
+     "ped": {
+      "after": 906,
+      "before": 1001
+     },
+     "severe": {
+      "after": 413,
+      "before": 453
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "3rd St, 6479 block",
+   "lat": 37.719645458272,
+   "limit": "25",
+   "lon": -122.396779347093,
+   "near": {
+    "after": 23,
+    "before": 10,
+    "groups": {
+     "all": {
+      "after": 23,
+      "before": 10,
+      "rr": [
+       2.294,
+       1.091,
+       4.825
+      ],
+      "rrRing": [
+       2.618,
+       1.185,
+       5.783
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.286,
+       0.012,
+       7.034
+      ],
+      "rrRing": [
+       0.333,
+       0.011,
+       10.575
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.105,
+       0.069,
+       17.691
+      ],
+      "rrRing": [
+       1.467,
+       0.085,
+       25.317
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.097,
+       0.022,
+       55.401
+      ],
+      "rrRing": [
+       1.533,
+       0.027,
+       85.965
+      ]
+     }
+    },
+    "rr": [
+     2.294,
+     1.091,
+     4.825
+    ],
+    "rrRing": [
+     2.618,
+     1.185,
+     5.783
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-04-01, NB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 94,
+    "before": 107,
+    "groups": {
+     "all": {
+      "after": 94,
+      "before": 107
+     },
+     "bike": {
+      "after": 4,
+      "before": 4
+     },
+     "ped": {
+      "after": 15,
+      "before": 22
+     },
+     "severe": {
+      "after": 7,
+      "before": 11
+     }
+    }
+   },
+   "site": {
+    "after": 9,
+    "before": 5,
+    "groups": {
+     "all": {
+      "after": 9,
+      "before": 5,
+      "rr": [
+       1.796,
+       0.601,
+       5.361
+      ],
+      "rrRing": [
+       2.049,
+       0.663,
+       6.329
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.858,
+       0.017,
+       43.308
+      ],
+      "rrRing": [
+       1.0,
+       0.016,
+       62.305
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.105,
+       0.022,
+       55.74
+      ],
+      "rrRing": [
+       1.452,
+       0.027,
+       77.147
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.097,
+       0.022,
+       55.401
+      ],
+      "rrRing": [
+       1.533,
+       0.027,
+       85.965
+      ]
+     }
+    },
+    "rr": [
+     1.796,
+     0.601,
+     5.361
+    ],
+    "rrRing": [
+     2.049,
+     0.663,
+     6.329
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-05-10",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-01-17",
+    "2025-05-09"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF015",
+    "MTAF016"
+   ],
+   "city": {
+    "after": 4893,
+    "before": 4846,
+    "groups": {
+     "all": {
+      "after": 4893,
+      "before": 4846
+     },
+     "bike": {
+      "after": 675,
+      "before": 589
+     },
+     "ped": {
+      "after": 842,
+      "before": 887
+     },
+     "severe": {
+      "after": 386,
+      "before": 412
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "San Jose Ave, 1999 block",
+   "lat": 37.724913000001,
+   "limit": "25",
+   "lon": -122.442745500002,
+   "near": {
+    "after": 4,
+    "before": 7,
+    "groups": {
+     "all": {
+      "after": 4,
+      "before": 7,
+      "rr": [
+       0.566,
+       0.166,
+       1.935
+      ],
+      "rrRing": [
+       0.613,
+       0.175,
+       2.15
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.618,
+       0.106,
+       64.393
+      ],
+      "rrRing": [
+       2.077,
+       0.068,
+       63.421
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 4,
+      "rr": [
+       0.117,
+       0.006,
+       2.177
+      ],
+      "rrRing": [
+       0.134,
+       0.007,
+       2.703
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.534,
+       0.048,
+       5.909
+      ],
+      "rrRing": [
+       0.2,
+       0.014,
+       2.876
+      ]
+     }
+    },
+    "rr": [
+     0.566,
+     0.166,
+     1.935
+    ],
+    "rrRing": [
+     0.613,
+     0.175,
+     2.15
+    ],
+    "severeAfter": 1,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-10, NB and SB",
+   "pre": [
+    "2022-09-25",
+    "2024-01-16"
+   ],
+   "ring": {
+    "after": 111,
+    "before": 119,
+    "groups": {
+     "all": {
+      "after": 111,
+      "before": 119
+     },
+     "bike": {
+      "after": 6,
+      "before": 4
+     },
+     "ped": {
+      "after": 14,
+      "before": 17
+     },
+     "severe": {
+      "after": 10,
+      "before": 4
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.141,
+       0.007,
+       2.74
+      ],
+      "rrRing": [
+       0.153,
+       0.008,
+       2.998
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.873,
+       0.017,
+       44.052
+      ],
+      "rrRing": [
+       0.692,
+       0.011,
+       41.78
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.351,
+       0.014,
+       8.632
+      ],
+      "rrRing": [
+       0.402,
+       0.015,
+       10.643
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.356,
+       0.014,
+       8.76
+      ],
+      "rrRing": [
+       0.143,
+       0.005,
+       4.22
+      ]
+     }
+    },
+    "rr": [
+     0.141,
+     0.007,
+     2.74
+    ],
+    "rrRing": [
+     0.153,
+     0.008,
+     2.998
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "start": "2025-05-10",
+   "years": 1.31
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF017",
+    "MTAF018"
+   ],
+   "city": {
+    "after": 5311,
+    "before": 5276,
+    "groups": {
+     "all": {
+      "after": 5311,
+      "before": 5276
+     },
+     "bike": {
+      "after": 723,
+      "before": 620
+     },
+     "ped": {
+      "after": 907,
+      "before": 996
+     },
+     "severe": {
+      "after": 413,
+      "before": 451
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Geary Blvd, 4334 block",
+   "lat": 37.781298000001,
+   "limit": "25",
+   "lon": -122.466028500002,
+   "near": {
+    "after": 6,
+    "before": 15,
+    "groups": {
+     "all": {
+      "after": 6,
+      "before": 15,
+      "rr": [
+       0.397,
+       0.154,
+       1.025
+      ],
+      "rrRing": [
+       0.364,
+       0.134,
+       0.989
+      ]
+     },
+     "bike": {
+      "after": 2,
+      "before": 3,
+      "rr": [
+       0.572,
+       0.095,
+       3.432
+      ],
+      "rrRing": [
+       0.333,
+       0.045,
+       2.478
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 6,
+      "rr": [
+       0.084,
+       0.005,
+       1.502
+      ],
+      "rrRing": [
+       0.11,
+       0.006,
+       2.159
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.218,
+       0.01,
+       4.562
+      ],
+      "rrRing": [
+       0.179,
+       0.007,
+       4.279
+      ]
+     }
+    },
+    "rr": [
+     0.397,
+     0.154,
+     1.025
+    ],
+    "rrRing": [
+     0.364,
+     0.134,
+     0.989
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-04-01, EB and WB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 77,
+    "before": 70,
+    "groups": {
+     "all": {
+      "after": 77,
+      "before": 70
+     },
+     "bike": {
+      "after": 14,
+      "before": 7
+     },
+     "ped": {
+      "after": 11,
+      "before": 16
+     },
+     "severe": {
+      "after": 9,
+      "before": 8
+     }
+    }
+   },
+   "site": {
+    "after": 2,
+    "before": 0,
+    "groups": {
+     "all": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       4.967,
+       0.238,
+       103.491
+      ],
+      "rrRing": [
+       4.548,
+       0.215,
+       96.378
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.573,
+       0.105,
+       63.276
+      ],
+      "rrRing": [
+       1.552,
+       0.056,
+       42.915
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.098,
+       0.022,
+       55.4
+      ],
+      "rrRing": [
+       1.435,
+       0.026,
+       77.685
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.092,
+       0.022,
+       55.157
+      ],
+      "rrRing": [
+       0.895,
+       0.016,
+       50.225
+      ]
+     }
+    },
+    "rr": [
+     4.967,
+     0.238,
+     103.491
+    ],
+    "rrRing": [
+     4.548,
+     0.215,
+     96.378
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF019",
+    "MTAF020"
+   ],
+   "city": {
+    "after": 5311,
+    "before": 5289,
+    "groups": {
+     "all": {
+      "after": 5311,
+      "before": 5289
+     },
+     "bike": {
+      "after": 725,
+      "before": 623
+     },
+     "ped": {
+      "after": 906,
+      "before": 1001
+     },
+     "severe": {
+      "after": 413,
+      "before": 453
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Fulton St, 6654 block",
+   "lat": 37.771742631037,
+   "limit": "25",
+   "lon": -122.502993833432,
+   "near": {
+    "after": 6,
+    "before": 2,
+    "groups": {
+     "all": {
+      "after": 6,
+      "before": 2,
+      "rr": [
+       2.988,
+       0.603,
+       14.809
+      ],
+      "rrRing": [
+       3.659,
+       0.701,
+       19.102
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.859,
+       0.017,
+       43.378
+      ],
+      "rrRing": [
+       1.0,
+       0.018,
+       55.271
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.105,
+       0.069,
+       17.691
+      ],
+      "rrRing": [
+       1.333,
+       0.069,
+       25.914
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.097,
+       0.022,
+       55.401
+      ],
+      "rrRing": [
+       2.111,
+       0.036,
+       124.527
+      ]
+     }
+    },
+    "rr": [
+     2.988,
+     0.603,
+     14.809
+    ],
+    "rrRing": [
+     3.659,
+     0.701,
+     19.102
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-04-01, EB and WB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 41,
+    "before": 50,
+    "groups": {
+     "all": {
+      "after": 41,
+      "before": 50
+     },
+     "bike": {
+      "after": 10,
+      "before": 10
+     },
+     "ped": {
+      "after": 6,
+      "before": 8
+     },
+     "severe": {
+      "after": 4,
+      "before": 9
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 1,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.332,
+       0.014,
+       8.151
+      ],
+      "rrRing": [
+       0.406,
+       0.016,
+       10.222
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.859,
+       0.017,
+       43.378
+      ],
+      "rrRing": [
+       1.0,
+       0.018,
+       55.271
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.368,
+       0.015,
+       9.052
+      ],
+      "rrRing": [
+       0.436,
+       0.015,
+       12.545
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.097,
+       0.022,
+       55.401
+      ],
+      "rrRing": [
+       2.111,
+       0.036,
+       124.527
+      ]
+     }
+    },
+    "rr": [
+     0.332,
+     0.014,
+     8.151
+    ],
+    "rrRing": [
+     0.406,
+     0.016,
+     10.222
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-04-22",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-12-12",
+    "2025-04-21"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF021",
+    "MTAF022"
+   ],
+   "city": {
+    "after": 5093,
+    "before": 5038,
+    "groups": {
+     "all": {
+      "after": 5093,
+      "before": 5038
+     },
+     "bike": {
+      "after": 702,
+      "before": 598
+     },
+     "ped": {
+      "after": 878,
+      "before": 938
+     },
+     "severe": {
+      "after": 397,
+      "before": 431
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Fulton St, 2530 block",
+   "lat": 37.774521000001,
+   "limit": "25",
+   "lon": -122.459049000002,
+   "near": {
+    "after": 12,
+    "before": 5,
+    "groups": {
+     "all": {
+      "after": 12,
+      "before": 5,
+      "rr": [
+       2.374,
+       0.836,
+       6.744
+      ],
+      "rrRing": [
+       3.012,
+       1.028,
+       8.827
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.852,
+       0.017,
+       43.004
+      ],
+      "rrRing": [
+       0.951,
+       0.018,
+       50.336
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.153,
+       0.008,
+       2.959
+      ],
+      "rrRing": [
+       0.238,
+       0.012,
+       4.906
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.543,
+       0.049,
+       6.01
+      ],
+      "rrRing": [
+       1.083,
+       0.081,
+       14.413
+      ]
+     }
+    },
+    "rr": [
+     2.374,
+     0.836,
+     6.744
+    ],
+    "rrRing": [
+     3.012,
+     1.028,
+     8.827
+    ],
+    "severeAfter": 1,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-04-22, EB and WB",
+   "pre": [
+    "2022-08-02",
+    "2023-12-11"
+   ],
+   "ring": {
+    "after": 102,
+    "before": 128,
+    "groups": {
+     "all": {
+      "after": 102,
+      "before": 128
+     },
+     "bike": {
+      "after": 20,
+      "before": 19
+     },
+     "ped": {
+      "after": 16,
+      "before": 27
+     },
+     "severe": {
+      "after": 6,
+      "before": 13
+     }
+    }
+   },
+   "site": {
+    "after": 4,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 4,
+      "before": 3,
+      "rr": [
+       1.319,
+       0.295,
+       5.896
+      ],
+      "rrRing": [
+       1.673,
+       0.366,
+       7.646
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.852,
+       0.017,
+       43.004
+      ],
+      "rrRing": [
+       0.951,
+       0.018,
+       50.336
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.214,
+       0.01,
+       4.457
+      ],
+      "rrRing": [
+       0.333,
+       0.015,
+       7.378
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.362,
+       0.015,
+       8.909
+      ],
+      "rrRing": [
+       0.692,
+       0.025,
+       19.432
+      ]
+     }
+    },
+    "rr": [
+     1.319,
+     0.295,
+     5.896
+    ],
+    "rrRing": [
+     1.673,
+     0.366,
+     7.646
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "start": "2025-04-22",
+   "years": 1.36
+  },
+  {
+   "after": [
+    "2025-05-22",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-10",
+    "2025-05-21"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF023",
+    "MTAF024"
+   ],
+   "city": {
+    "after": 4791,
+    "before": 4693,
+    "groups": {
+     "all": {
+      "after": 4791,
+      "before": 4693
+     },
+     "bike": {
+      "after": 661,
+      "before": 580
+     },
+     "ped": {
+      "after": 822,
+      "before": 851
+     },
+     "severe": {
+      "after": 379,
+      "before": 401
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Bay St, 1333 block",
+   "lat": 37.803632744982,
+   "limit": "25",
+   "lon": -122.42898416064,
+   "near": {
+    "after": 8,
+    "before": 4,
+    "groups": {
+     "all": {
+      "after": 8,
+      "before": 4,
+      "rr": [
+       1.959,
+       0.59,
+       6.51
+      ],
+      "rrRing": [
+       1.583,
+       0.462,
+       5.422
+      ]
+     },
+     "bike": {
+      "after": 4,
+      "before": 0,
+      "rr": [
+       7.898,
+       0.424,
+       147.014
+      ],
+      "rrRing": [
+       3.24,
+       0.144,
+       72.946
+      ]
+     },
+     "ped": {
+      "after": 3,
+      "before": 0,
+      "rr": [
+       7.247,
+       0.374,
+       140.52
+      ],
+      "rrRing": [
+       5.526,
+       0.271,
+       112.604
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 2,
+      "rr": [
+       1.058,
+       0.148,
+       7.549
+      ],
+      "rrRing": [
+       0.727,
+       0.084,
+       6.314
+      ]
+     }
+    },
+    "rr": [
+     1.959,
+     0.59,
+     6.51
+    ],
+    "rrRing": [
+     1.583,
+     0.462,
+     5.422
+    ],
+    "severeAfter": 2,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-22, EB and WB",
+   "pre": [
+    "2022-10-31",
+    "2024-02-09"
+   ],
+   "ring": {
+    "after": 115,
+    "before": 91,
+    "groups": {
+     "all": {
+      "after": 115,
+      "before": 91
+     },
+     "bike": {
+      "after": 12,
+      "before": 4
+     },
+     "ped": {
+      "after": 28,
+      "before": 22
+     },
+     "severe": {
+      "after": 11,
+      "before": 8
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.14,
+       0.007,
+       2.71
+      ],
+      "rrRing": [
+       0.113,
+       0.006,
+       2.219
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.878,
+       0.017,
+       44.299
+      ],
+      "rrRing": [
+       0.36,
+       0.006,
+       20.984
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.035,
+       0.021,
+       52.239
+      ],
+      "rrRing": [
+       0.789,
+       0.015,
+       41.363
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.212,
+       0.01,
+       4.422
+      ],
+      "rrRing": [
+       0.148,
+       0.006,
+       3.496
+      ]
+     }
+    },
+    "rr": [
+     0.14,
+     0.007,
+     2.71
+    ],
+    "rrRing": [
+     0.113,
+     0.006,
+     2.219
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "start": "2025-05-22",
+   "years": 1.28
+  },
+  {
+   "after": [
+    "2025-05-28",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-22",
+    "2025-05-27"
+   ],
+   "blocks": 4,
+   "cameraSites": [
+    "MTAF025",
+    "MTAF026"
+   ],
+   "city": {
+    "after": 4690,
+    "before": 4606,
+    "groups": {
+     "all": {
+      "after": 4690,
+      "before": 4606
+     },
+     "bike": {
+      "after": 649,
+      "before": 565
+     },
+     "ped": {
+      "after": 813,
+      "before": 831
+     },
+     "severe": {
+      "after": 367,
+      "before": 398
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "The Embarcadero, 1517 block",
+   "lat": 37.80747149723,
+   "limit": "30",
+   "lon": -122.407705329691,
+   "near": {
+    "after": 45,
+    "before": 42,
+    "groups": {
+     "all": {
+      "after": 45,
+      "before": 42,
+      "rr": [
+       1.052,
+       0.69,
+       1.605
+      ],
+      "rrRing": [
+       1.029,
+       0.621,
+       1.705
+      ]
+     },
+     "bike": {
+      "after": 8,
+      "before": 11,
+      "rr": [
+       0.633,
+       0.253,
+       1.585
+      ],
+      "rrRing": [
+       0.512,
+       0.173,
+       1.512
+      ]
+     },
+     "ped": {
+      "after": 4,
+      "before": 5,
+      "rr": [
+       0.818,
+       0.219,
+       3.056
+      ],
+      "rrRing": [
+       0.933,
+       0.217,
+       4.01
+      ]
+     },
+     "severe": {
+      "after": 9,
+      "before": 2,
+      "rr": [
+       4.88,
+       1.048,
+       22.735
+      ],
+      "rrRing": [
+       6.188,
+       1.041,
+       36.781
+      ]
+     }
+    },
+    "rr": [
+     1.052,
+     0.69,
+     1.605
+    ],
+    "rrRing": [
+     1.029,
+     0.621,
+     1.705
+    ],
+    "severeAfter": 9,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-28, NB and SB",
+   "pre": [
+    "2022-11-18",
+    "2024-02-21"
+   ],
+   "ring": {
+    "after": 100,
+    "before": 96,
+    "groups": {
+     "all": {
+      "after": 100,
+      "before": 96
+     },
+     "bike": {
+      "after": 27,
+      "before": 19
+     },
+     "ped": {
+      "after": 18,
+      "before": 21
+     },
+     "severe": {
+      "after": 8,
+      "before": 11
+     }
+    }
+   },
+   "site": {
+    "after": 8,
+    "before": 7,
+    "groups": {
+     "all": {
+      "after": 8,
+      "before": 7,
+      "rr": [
+       1.122,
+       0.407,
+       3.098
+      ],
+      "rrRing": [
+       1.097,
+       0.383,
+       3.143
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 3,
+      "rr": [
+       0.29,
+       0.03,
+       2.798
+      ],
+      "rrRing": [
+       0.235,
+       0.023,
+       2.43
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.066,
+       0.125,
+       75.386
+      ],
+      "rrRing": [
+       3.486,
+       0.134,
+       90.863
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       5.422,
+       0.259,
+       113.312
+      ],
+      "rrRing": [
+       6.765,
+       0.286,
+       159.959
+      ]
+     }
+    },
+    "rr": [
+     1.122,
+     0.407,
+     3.098
+    ],
+    "rrRing": [
+     1.097,
+     0.383,
+     3.143
+    ],
+    "severeAfter": 2,
+    "severeBefore": 0
+   },
+   "start": "2025-05-28",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-16",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-01-29",
+    "2025-05-15"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF027",
+    "MTAF028"
+   ],
+   "city": {
+    "after": 4847,
+    "before": 4751,
+    "groups": {
+     "all": {
+      "after": 4847,
+      "before": 4751
+     },
+     "bike": {
+      "after": 669,
+      "before": 587
+     },
+     "ped": {
+      "after": 833,
+      "before": 871
+     },
+     "severe": {
+      "after": 382,
+      "before": 410
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Lincoln Way, 2699 block",
+   "lat": 37.764978407641,
+   "limit": "30",
+   "lon": -122.486815117929,
+   "near": {
+    "after": 1,
+    "before": 7,
+    "groups": {
+     "all": {
+      "after": 1,
+      "before": 7,
+      "rr": [
+       0.14,
+       0.017,
+       1.139
+      ],
+      "rrRing": [
+       0.144,
+       0.017,
+       1.199
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.878,
+       0.017,
+       44.297
+      ],
+      "rrRing": [
+       1.769,
+       0.031,
+       100.165
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.349,
+       0.014,
+       8.568
+      ],
+      "rrRing": [
+       0.358,
+       0.013,
+       9.566
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.073,
+       0.021,
+       54.224
+      ],
+      "rrRing": [
+       1.545,
+       0.027,
+       89.964
+      ]
+     }
+    },
+    "rr": [
+     0.14,
+     0.017,
+     1.139
+    ],
+    "rrRing": [
+     0.144,
+     0.017,
+     1.199
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-05-16, EB and WB",
+   "pre": [
+    "2022-10-13",
+    "2024-01-28"
+   ],
+   "ring": {
+    "after": 87,
+    "before": 88,
+    "groups": {
+     "all": {
+      "after": 87,
+      "before": 88
+     },
+     "bike": {
+      "after": 6,
+      "before": 11
+     },
+     "ped": {
+      "after": 13,
+      "before": 14
+     },
+     "severe": {
+      "after": 5,
+      "before": 8
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 2,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.196,
+       0.009,
+       4.085
+      ],
+      "rrRing": [
+       0.202,
+       0.01,
+       4.275
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.878,
+       0.017,
+       44.297
+      ],
+      "rrRing": [
+       1.769,
+       0.031,
+       100.165
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.046,
+       0.021,
+       52.759
+      ],
+      "rrRing": [
+       1.074,
+       0.02,
+       58.028
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.073,
+       0.021,
+       54.224
+      ],
+      "rrRing": [
+       1.545,
+       0.027,
+       89.964
+      ]
+     }
+    },
+    "rr": [
+     0.196,
+     0.009,
+     4.085
+    ],
+    "rrRing": [
+     0.202,
+     0.01,
+     4.275
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-16",
+   "years": 1.3
+  },
+  {
+   "after": [
+    "2025-05-15",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-01-27",
+    "2025-05-14"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF029",
+    "MTAF030"
+   ],
+   "city": {
+    "after": 4853,
+    "before": 4757,
+    "groups": {
+     "all": {
+      "after": 4853,
+      "before": 4757
+     },
+     "bike": {
+      "after": 671,
+      "before": 583
+     },
+     "ped": {
+      "after": 834,
+      "before": 875
+     },
+     "severe": {
+      "after": 383,
+      "before": 409
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Sloat Blvd, 2155 block",
+   "lat": 37.733729228294,
+   "limit": "30",
+   "lon": -122.497435024542,
+   "near": {
+    "after": 5,
+    "before": 21,
+    "groups": {
+     "all": {
+      "after": 5,
+      "before": 21,
+      "rr": [
+       0.233,
+       0.088,
+       0.619
+      ],
+      "rrRing": [
+       0.257,
+       0.092,
+       0.718
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.124,
+       0.006,
+       2.408
+      ],
+      "rrRing": [
+       0.27,
+       0.011,
+       6.462
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.21,
+       0.01,
+       4.377
+      ],
+      "rrRing": [
+       0.2,
+       0.009,
+       4.602
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.356,
+       0.014,
+       8.764
+      ],
+      "rrRing": [
+       0.556,
+       0.018,
+       16.77
+      ]
+     }
+    },
+    "rr": [
+     0.233,
+     0.088,
+     0.619
+    ],
+    "rrRing": [
+     0.257,
+     0.092,
+     0.718
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-15, EB and WB",
+   "pre": [
+    "2022-10-10",
+    "2024-01-26"
+   ],
+   "ring": {
+    "after": 74,
+    "before": 80,
+    "groups": {
+     "all": {
+      "after": 74,
+      "before": 80
+     },
+     "bike": {
+      "after": 4,
+      "before": 8
+     },
+     "ped": {
+      "after": 12,
+      "before": 12
+     },
+     "severe": {
+      "after": 4,
+      "before": 7
+     }
+    }
+   },
+   "site": {
+    "after": 3,
+    "before": 5,
+    "groups": {
+     "all": {
+      "after": 3,
+      "before": 5,
+      "rr": [
+       0.588,
+       0.14,
+       2.462
+      ],
+      "rrRing": [
+       0.649,
+       0.15,
+       2.81
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.29,
+       0.012,
+       7.124
+      ],
+      "rrRing": [
+       0.63,
+       0.021,
+       18.838
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.049,
+       0.021,
+       52.937
+      ],
+      "rrRing": [
+       1.0,
+       0.018,
+       54.469
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.068,
+       0.021,
+       53.951
+      ],
+      "rrRing": [
+       1.667,
+       0.028,
+       99.618
+      ]
+     }
+    },
+    "rr": [
+     0.588,
+     0.14,
+     2.462
+    ],
+    "rrRing": [
+     0.649,
+     0.15,
+     2.81
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-15",
+   "years": 1.3
+  },
+  {
+   "after": [
+    "2025-04-01",
+    "2026-08-31"
+   ],
+   "before": [
+    "2023-10-31",
+    "2025-03-31"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF031",
+    "MTAF032"
+   ],
+   "city": {
+    "after": 5289,
+    "before": 5254,
+    "groups": {
+     "all": {
+      "after": 5289,
+      "before": 5254
+     },
+     "bike": {
+      "after": 722,
+      "before": 621
+     },
+     "ped": {
+      "after": 902,
+      "before": 993
+     },
+     "severe": {
+      "after": 411,
+      "before": 449
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Geary Blvd, 1660 block",
+   "lat": 37.784970000001,
+   "limit": "30",
+   "lon": -122.430694500002,
+   "near": {
+    "after": 28,
+    "before": 37,
+    "groups": {
+     "all": {
+      "after": 28,
+      "before": 37,
+      "rr": [
+       0.752,
+       0.459,
+       1.23
+      ],
+      "rrRing": [
+       0.77,
+       0.463,
+       1.279
+      ]
+     },
+     "bike": {
+      "after": 3,
+      "before": 2,
+      "rr": [
+       1.29,
+       0.215,
+       7.746
+      ],
+      "rrRing": [
+       0.913,
+       0.146,
+       5.691
+      ]
+     },
+     "ped": {
+      "after": 5,
+      "before": 9,
+      "rr": [
+       0.612,
+       0.204,
+       1.832
+      ],
+      "rrRing": [
+       0.728,
+       0.236,
+       2.248
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 4,
+      "rr": [
+       0.546,
+       0.1,
+       2.998
+      ],
+      "rrRing": [
+       0.758,
+       0.131,
+       4.374
+      ]
+     }
+    },
+    "rr": [
+     0.752,
+     0.459,
+     1.23
+    ],
+    "rrRing": [
+     0.77,
+     0.463,
+     1.279
+    ],
+    "severeAfter": 2,
+    "severeBefore": 4
+   },
+   "note": "in the camera data from 2025-04-01, EB and WB",
+   "pre": [
+    "2022-05-31",
+    "2023-10-30"
+   ],
+   "ring": {
+    "after": 457,
+    "before": 465,
+    "groups": {
+     "all": {
+      "after": 457,
+      "before": 465
+     },
+     "bike": {
+      "after": 69,
+      "before": 42
+     },
+     "ped": {
+      "after": 90,
+      "before": 118
+     },
+     "severe": {
+      "after": 33,
+      "before": 50
+     }
+    }
+   },
+   "site": {
+    "after": 15,
+    "before": 11,
+    "groups": {
+     "all": {
+      "after": 15,
+      "before": 11,
+      "rr": [
+       1.355,
+       0.622,
+       2.952
+      ],
+      "rrRing": [
+       1.388,
+       0.631,
+       3.053
+      ]
+     },
+     "bike": {
+      "after": 2,
+      "before": 1,
+      "rr": [
+       1.72,
+       0.156,
+       19.017
+      ],
+      "rrRing": [
+       1.217,
+       0.107,
+       13.841
+      ]
+     },
+     "ped": {
+      "after": 3,
+      "before": 3,
+      "rr": [
+       1.101,
+       0.222,
+       5.468
+      ],
+      "rrRing": [
+       1.311,
+       0.259,
+       6.65
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.218,
+       0.01,
+       4.564
+      ],
+      "rrRing": [
+       0.301,
+       0.014,
+       6.48
+      ]
+     }
+    },
+    "rr": [
+     1.355,
+     0.622,
+     2.952
+    ],
+    "rrRing": [
+     1.388,
+     0.631,
+     3.053
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "start": "2025-04-01",
+   "years": 1.42
+  },
+  {
+   "after": [
+    "2025-05-28",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-22",
+    "2025-05-27"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF033",
+    "MTAF034"
+   ],
+   "city": {
+    "after": 4672,
+    "before": 4591,
+    "groups": {
+     "all": {
+      "after": 4672,
+      "before": 4591
+     },
+     "bike": {
+      "after": 642,
+      "before": 563
+     },
+     "ped": {
+      "after": 812,
+      "before": 829
+     },
+     "severe": {
+      "after": 371,
+      "before": 398
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Mission St, 1250 block",
+   "lat": 37.776935214872,
+   "limit": "20",
+   "lon": -122.413892016162,
+   "near": {
+    "after": 63,
+    "before": 57,
+    "groups": {
+     "all": {
+      "after": 63,
+      "before": 57,
+      "rr": [
+       1.086,
+       0.757,
+       1.558
+      ],
+      "rrRing": [
+       0.902,
+       0.618,
+       1.317
+      ]
+     },
+     "bike": {
+      "after": 15,
+      "before": 13,
+      "rr": [
+       1.012,
+       0.477,
+       2.145
+      ],
+      "rrRing": [
+       1.042,
+       0.473,
+       2.294
+      ]
+     },
+     "ped": {
+      "after": 5,
+      "before": 7,
+      "rr": [
+       0.729,
+       0.231,
+       2.307
+      ],
+      "rrRing": [
+       0.645,
+       0.199,
+       2.089
+      ]
+     },
+     "severe": {
+      "after": 5,
+      "before": 2,
+      "rr": [
+       2.682,
+       0.517,
+       13.908
+      ],
+      "rrRing": [
+       2.593,
+       0.482,
+       13.937
+      ]
+     }
+    },
+    "rr": [
+     1.086,
+     0.757,
+     1.558
+    ],
+    "rrRing": [
+     0.902,
+     0.618,
+     1.317
+    ],
+    "severeAfter": 5,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-28, EB and WB",
+   "pre": [
+    "2022-11-18",
+    "2024-02-21"
+   ],
+   "ring": {
+    "after": 577,
+    "before": 471,
+    "groups": {
+     "all": {
+      "after": 577,
+      "before": 471
+     },
+     "bike": {
+      "after": 113,
+      "before": 102
+     },
+     "ped": {
+      "after": 123,
+      "before": 111
+     },
+     "severe": {
+      "after": 54,
+      "before": 56
+     }
+    }
+   },
+   "site": {
+    "after": 10,
+    "before": 9,
+    "groups": {
+     "all": {
+      "after": 10,
+      "before": 9,
+      "rr": [
+       1.092,
+       0.443,
+       2.689
+      ],
+      "rrRing": [
+       0.907,
+       0.366,
+       2.25
+      ]
+     },
+     "bike": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       4.385,
+       0.21,
+       91.539
+      ],
+      "rrRing": [
+       4.515,
+       0.214,
+       95.168
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.51,
+       0.046,
+       5.641
+      ],
+      "rrRing": [
+       0.451,
+       0.04,
+       5.045
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.073,
+       0.067,
+       17.214
+      ],
+      "rrRing": [
+       1.037,
+       0.063,
+       17.002
+      ]
+     }
+    },
+    "rr": [
+     1.092,
+     0.443,
+     2.689
+    ],
+    "rrRing": [
+     0.907,
+     0.366,
+     2.25
+    ],
+    "severeAfter": 1,
+    "severeBefore": 1
+   },
+   "start": "2025-05-28",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-28",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-22",
+    "2025-05-27"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF035"
+   ],
+   "city": {
+    "after": 4706,
+    "before": 4620,
+    "groups": {
+     "all": {
+      "after": 4706,
+      "before": 4620
+     },
+     "bike": {
+      "after": 656,
+      "before": 575
+     },
+     "ped": {
+      "after": 815,
+      "before": 832
+     },
+     "severe": {
+      "after": 376,
+      "before": 398
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "9th St, 451 block",
+   "lat": 37.772127000001,
+   "limit": "25",
+   "lon": -122.409121500002,
+   "near": {
+    "after": 29,
+    "before": 28,
+    "groups": {
+     "all": {
+      "after": 29,
+      "before": 28,
+      "rr": [
+       1.017,
+       0.604,
+       1.712
+      ],
+      "rrRing": [
+       1.049,
+       0.613,
+       1.795
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       0.877,
+       0.055,
+       14.046
+      ],
+      "rrRing": [
+       0.824,
+       0.051,
+       13.406
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 4,
+      "rr": [
+       0.51,
+       0.093,
+       2.795
+      ],
+      "rrRing": [
+       0.602,
+       0.106,
+       3.427
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.212,
+       0.01,
+       4.424
+      ],
+      "rrRing": [
+       0.206,
+       0.01,
+       4.471
+      ]
+     }
+    },
+    "rr": [
+     1.017,
+     0.604,
+     1.712
+    ],
+    "rrRing": [
+     1.049,
+     0.613,
+     1.795
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-28, NB",
+   "pre": [
+    "2022-11-18",
+    "2024-02-21"
+   ],
+   "ring": {
+    "after": 396,
+    "before": 401,
+    "groups": {
+     "all": {
+      "after": 396,
+      "before": 401
+     },
+     "bike": {
+      "after": 85,
+      "before": 70
+     },
+     "ped": {
+      "after": 49,
+      "before": 59
+     },
+     "severe": {
+      "after": 31,
+      "before": 32
+     }
+    }
+   },
+   "site": {
+    "after": 9,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 9,
+      "before": 3,
+      "rr": [
+       2.945,
+       0.797,
+       10.886
+      ],
+      "rrRing": [
+       3.038,
+       0.816,
+       11.304
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.63,
+       0.107,
+       64.686
+      ],
+      "rrRing": [
+       2.474,
+       0.099,
+       61.674
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.021,
+       0.064,
+       16.349
+      ],
+      "rrRing": [
+       1.204,
+       0.073,
+       19.754
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.058,
+       0.021,
+       53.481
+      ],
+      "rrRing": [
+       1.032,
+       0.02,
+       53.612
+      ]
+     }
+    },
+    "rr": [
+     2.945,
+     0.797,
+     10.886
+    ],
+    "rrRing": [
+     3.038,
+     0.816,
+     11.304
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-28",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-28",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-22",
+    "2025-05-27"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF036"
+   ],
+   "city": {
+    "after": 4702,
+    "before": 4612,
+    "groups": {
+     "all": {
+      "after": 4702,
+      "before": 4612
+     },
+     "bike": {
+      "after": 651,
+      "before": 574
+     },
+     "ped": {
+      "after": 814,
+      "before": 829
+     },
+     "severe": {
+      "after": 376,
+      "before": 398
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Harrison St, 815 block",
+   "lat": 37.780478827602,
+   "limit": "25",
+   "lon": -122.399982675352,
+   "near": {
+    "after": 33,
+    "before": 36,
+    "groups": {
+     "all": {
+      "after": 33,
+      "before": 36,
+      "rr": [
+       0.899,
+       0.56,
+       1.445
+      ],
+      "rrRing": [
+       0.89,
+       0.544,
+       1.456
+      ]
+     },
+     "bike": {
+      "after": 6,
+      "before": 2,
+      "rr": [
+       2.645,
+       0.532,
+       13.158
+      ],
+      "rrRing": [
+       2.743,
+       0.534,
+       14.081
+      ]
+     },
+     "ped": {
+      "after": 3,
+      "before": 7,
+      "rr": [
+       0.436,
+       0.112,
+       1.694
+      ],
+      "rrRing": [
+       0.477,
+       0.117,
+       1.939
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.212,
+       0.01,
+       4.424
+      ],
+      "rrRing": [
+       0.235,
+       0.011,
+       5.101
+      ]
+     }
+    },
+    "rr": [
+     0.899,
+     0.56,
+     1.445
+    ],
+    "rrRing": [
+     0.89,
+     0.544,
+     1.456
+    ],
+    "severeAfter": 0,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-28, WB",
+   "pre": [
+    "2022-11-18",
+    "2024-02-21"
+   ],
+   "ring": {
+    "after": 411,
+    "before": 399,
+    "groups": {
+     "all": {
+      "after": 411,
+      "before": 399
+     },
+     "bike": {
+      "after": 70,
+      "before": 64
+     },
+     "ped": {
+      "after": 53,
+      "before": 59
+     },
+     "severe": {
+      "after": 28,
+      "before": 33
+     }
+    }
+   },
+   "site": {
+    "after": 9,
+    "before": 19,
+    "groups": {
+     "all": {
+      "after": 9,
+      "before": 19,
+      "rr": [
+       0.465,
+       0.21,
+       1.028
+      ],
+      "rrRing": [
+       0.46,
+       0.206,
+       1.029
+      ]
+     },
+     "bike": {
+      "after": 3,
+      "before": 1,
+      "rr": [
+       2.645,
+       0.274,
+       25.501
+      ],
+      "rrRing": [
+       2.743,
+       0.278,
+       27.044
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.509,
+       0.046,
+       5.627
+      ],
+      "rrRing": [
+       0.557,
+       0.049,
+       6.316
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.353,
+       0.014,
+       8.688
+      ],
+      "rrRing": [
+       0.392,
+       0.015,
+       9.998
+      ]
+     }
+    },
+    "rr": [
+     0.465,
+     0.21,
+     1.028
+    ],
+    "rrRing": [
+     0.46,
+     0.206,
+     1.029
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "start": "2025-05-28",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-17",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-01-31",
+    "2025-05-16"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF037"
+   ],
+   "city": {
+    "after": 4822,
+    "before": 4740,
+    "groups": {
+     "all": {
+      "after": 4822,
+      "before": 4740
+     },
+     "bike": {
+      "after": 667,
+      "before": 584
+     },
+     "ped": {
+      "after": 829,
+      "before": 870
+     },
+     "severe": {
+      "after": 382,
+      "before": 409
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Bryant St, 467 block",
+   "lat": 37.781894592676,
+   "limit": "25",
+   "lon": -122.395089517395,
+   "near": {
+    "after": 14,
+    "before": 14,
+    "groups": {
+     "all": {
+      "after": 14,
+      "before": 14,
+      "rr": [
+       0.983,
+       0.468,
+       2.064
+      ],
+      "rrRing": [
+       0.943,
+       0.441,
+       2.015
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       0.876,
+       0.055,
+       14.03
+      ],
+      "rrRing": [
+       0.844,
+       0.051,
+       13.96
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       5.247,
+       0.252,
+       109.463
+      ],
+      "rrRing": [
+       7.642,
+       0.353,
+       165.546
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.357,
+       0.014,
+       8.787
+      ],
+      "rrRing": [
+       0.248,
+       0.01,
+       6.466
+      ]
+     }
+    },
+    "rr": [
+     0.983,
+     0.468,
+     2.064
+    ],
+    "rrRing": [
+     0.943,
+     0.441,
+     2.015
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-17, EB",
+   "pre": [
+    "2022-10-16",
+    "2024-01-30"
+   ],
+   "ring": {
+    "after": 279,
+    "before": 263,
+    "groups": {
+     "all": {
+      "after": 279,
+      "before": 263
+     },
+     "bike": {
+      "after": 45,
+      "before": 38
+     },
+     "ped": {
+      "after": 26,
+      "before": 40
+     },
+     "severe": {
+      "after": 23,
+      "before": 17
+     }
+    }
+   },
+   "site": {
+    "after": 6,
+    "before": 8,
+    "groups": {
+     "all": {
+      "after": 6,
+      "before": 8,
+      "rr": [
+       0.737,
+       0.256,
+       2.126
+      ],
+      "rrRing": [
+       0.707,
+       0.242,
+       2.065
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.292,
+       0.012,
+       7.179
+      ],
+      "rrRing": [
+       0.282,
+       0.011,
+       7.125
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.049,
+       0.021,
+       52.953
+      ],
+      "rrRing": [
+       1.528,
+       0.029,
+       79.41
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.357,
+       0.014,
+       8.787
+      ],
+      "rrRing": [
+       0.248,
+       0.01,
+       6.466
+      ]
+     }
+    },
+    "rr": [
+     0.737,
+     0.256,
+     2.126
+    ],
+    "rrRing": [
+     0.707,
+     0.242,
+     2.065
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "start": "2025-05-17",
+   "years": 1.29
+  },
+  {
+   "after": [
+    "2025-05-28",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-22",
+    "2025-05-27"
+   ],
+   "blocks": 3,
+   "cameraSites": [
+    "MTAF038",
+    "MTAF039"
+   ],
+   "city": {
+    "after": 4725,
+    "before": 4625,
+    "groups": {
+     "all": {
+      "after": 4725,
+      "before": 4625
+     },
+     "bike": {
+      "after": 654,
+      "before": 575
+     },
+     "ped": {
+      "after": 815,
+      "before": 831
+     },
+     "severe": {
+      "after": 374,
+      "before": 399
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Ocean Ave, 825 block",
+   "lat": 37.722708000001,
+   "limit": "25",
+   "lon": -122.450274000002,
+   "near": {
+    "after": 10,
+    "before": 23,
+    "groups": {
+     "all": {
+      "after": 10,
+      "before": 23,
+      "rr": [
+       0.426,
+       0.202,
+       0.895
+      ],
+      "rrRing": [
+       0.339,
+       0.155,
+       0.742
+      ]
+     },
+     "bike": {
+      "after": 3,
+      "before": 1,
+      "rr": [
+       2.638,
+       0.274,
+       25.428
+      ],
+      "rrRing": [
+       0.667,
+       0.043,
+       10.254
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 5,
+      "rr": [
+       0.408,
+       0.079,
+       2.108
+      ],
+      "rrRing": [
+       0.571,
+       0.097,
+       3.376
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 1,
+      "rr": [
+       2.134,
+       0.193,
+       23.629
+      ],
+      "rrRing": [
+       2.0,
+       0.15,
+       26.735
+      ]
+     }
+    },
+    "rr": [
+     0.426,
+     0.202,
+     0.895
+    ],
+    "rrRing": [
+     0.339,
+     0.155,
+     0.742
+    ],
+    "severeAfter": 2,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-28, EB and WB",
+   "pre": [
+    "2022-11-18",
+    "2024-02-21"
+   ],
+   "ring": {
+    "after": 146,
+    "before": 114,
+    "groups": {
+     "all": {
+      "after": 146,
+      "before": 114
+     },
+     "bike": {
+      "after": 9,
+      "before": 2
+     },
+     "ped": {
+      "after": 14,
+      "before": 20
+     },
+     "severe": {
+      "after": 8,
+      "before": 8
+     }
+    }
+   },
+   "site": {
+    "after": 2,
+    "before": 0,
+    "groups": {
+     "all": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       4.894,
+       0.235,
+       101.976
+      ],
+      "rrRing": [
+       3.908,
+       0.186,
+       82.206
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.638,
+       0.107,
+       64.884
+      ],
+      "rrRing": [
+       0.789,
+       0.024,
+       25.903
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.02,
+       0.02,
+       51.45
+      ],
+      "rrRing": [
+       1.414,
+       0.026,
+       75.456
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.2,
+       0.13,
+       78.807
+      ],
+      "rrRing": [
+       3.0,
+       0.106,
+       84.563
+      ]
+     }
+    },
+    "rr": [
+     4.894,
+     0.235,
+     101.976
+    ],
+    "rrRing": [
+     3.908,
+     0.186,
+     82.206
+    ],
+    "severeAfter": 1,
+    "severeBefore": 0
+   },
+   "start": "2025-05-28",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-28",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-22",
+    "2025-05-27"
+   ],
+   "blocks": 4,
+   "cameraSites": [
+    "MTAF040",
+    "MTAF041"
+   ],
+   "city": {
+    "after": 4734,
+    "before": 4640,
+    "groups": {
+     "all": {
+      "after": 4734,
+      "before": 4640
+     },
+     "bike": {
+      "after": 657,
+      "before": 575
+     },
+     "ped": {
+      "after": 817,
+      "before": 834
+     },
+     "severe": {
+      "after": 376,
+      "before": 399
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Monterey Blvd, 481 block",
+   "lat": 37.731267000001,
+   "limit": "25",
+   "lon": -122.446107000002,
+   "near": {
+    "after": 1,
+    "before": 8,
+    "groups": {
+     "all": {
+      "after": 1,
+      "before": 8,
+      "rr": [
+       0.123,
+       0.015,
+       0.98
+      ],
+      "rrRing": [
+       0.097,
+       0.012,
+       0.804
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.292,
+       0.012,
+       7.176
+      ],
+      "rrRing": [
+       0.111,
+       0.003,
+       4.475
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.204,
+       0.01,
+       4.259
+      ],
+      "rrRing": [
+       0.137,
+       0.006,
+       3.344
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.354,
+       0.014,
+       8.71
+      ],
+      "rrRing": [
+       0.179,
+       0.006,
+       5.679
+      ]
+     }
+    },
+    "rr": [
+     0.123,
+     0.015,
+     0.98
+    ],
+    "rrRing": [
+     0.097,
+     0.012,
+     0.804
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-28, EB and WB",
+   "pre": [
+    "2022-11-18",
+    "2024-02-21"
+   ],
+   "ring": {
+    "after": 63,
+    "before": 49,
+    "groups": {
+     "all": {
+      "after": 63,
+      "before": 49
+     },
+     "bike": {
+      "after": 4,
+      "before": 1
+     },
+     "ped": {
+      "after": 9,
+      "before": 6
+     },
+     "severe": {
+      "after": 6,
+      "before": 3
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 2,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.196,
+       0.009,
+       4.084
+      ],
+      "rrRing": [
+       0.156,
+       0.007,
+       3.322
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.875,
+       0.017,
+       44.185
+      ],
+      "rrRing": [
+       0.333,
+       0.004,
+       25.409
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.34,
+       0.014,
+       8.365
+      ],
+      "rrRing": [
+       0.228,
+       0.008,
+       6.517
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.061,
+       0.021,
+       53.615
+      ],
+      "rrRing": [
+       0.538,
+       0.009,
+       33.473
+      ]
+     }
+    },
+    "rr": [
+     0.196,
+     0.009,
+     4.084
+    ],
+    "rrRing": [
+     0.156,
+     0.007,
+     3.322
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-28",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-30",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-26",
+    "2025-05-29"
+   ],
+   "blocks": 3,
+   "cameraSites": [
+    "MTAF042",
+    "MTAF043"
+   ],
+   "city": {
+    "after": 4688,
+    "before": 4589,
+    "groups": {
+     "all": {
+      "after": 4688,
+      "before": 4589
+     },
+     "bike": {
+      "after": 651,
+      "before": 570
+     },
+     "ped": {
+      "after": 815,
+      "before": 826
+     },
+     "severe": {
+      "after": 373,
+      "before": 397
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Guerrero St, 763 block",
+   "lat": 37.758996000001,
+   "limit": "25",
+   "lon": -122.423265000002,
+   "near": {
+    "after": 27,
+    "before": 32,
+    "groups": {
+     "all": {
+      "after": 27,
+      "before": 32,
+      "rr": [
+       0.826,
+       0.494,
+       1.381
+      ],
+      "rrRing": [
+       0.851,
+       0.494,
+       1.465
+      ]
+     },
+     "bike": {
+      "after": 5,
+      "before": 4,
+      "rr": [
+       1.094,
+       0.292,
+       4.095
+      ],
+      "rrRing": [
+       1.366,
+       0.344,
+       5.422
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 2,
+      "rr": [
+       1.013,
+       0.142,
+       7.212
+      ],
+      "rrRing": [
+       1.0,
+       0.133,
+       7.502
+      ]
+     },
+     "severe": {
+      "after": 3,
+      "before": 0,
+      "rr": [
+       7.45,
+       0.383,
+       144.719
+      ],
+      "rrRing": [
+       8.355,
+       0.4,
+       174.508
+      ]
+     }
+    },
+    "rr": [
+     0.826,
+     0.494,
+     1.381
+    ],
+    "rrRing": [
+     0.851,
+     0.494,
+     1.465
+    ],
+    "severeAfter": 3,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-05-30, NB and SB",
+   "pre": [
+    "2022-11-24",
+    "2024-02-25"
+   ],
+   "ring": {
+    "after": 234,
+    "before": 236,
+    "groups": {
+     "all": {
+      "after": 234,
+      "before": 236
+     },
+     "bike": {
+      "after": 43,
+      "before": 47
+     },
+     "ped": {
+      "after": 35,
+      "before": 35
+     },
+     "severe": {
+      "after": 15,
+      "before": 18
+     }
+    }
+   },
+   "site": {
+    "after": 1,
+    "before": 6,
+    "groups": {
+     "all": {
+      "after": 1,
+      "before": 6,
+      "rr": [
+       0.163,
+       0.02,
+       1.356
+      ],
+      "rrRing": [
+       0.168,
+       0.02,
+       1.407
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.292,
+       0.012,
+       7.18
+      ],
+      "rrRing": [
+       0.364,
+       0.014,
+       9.174
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.338,
+       0.014,
+       8.305
+      ],
+      "rrRing": [
+       0.333,
+       0.013,
+       8.463
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.064,
+       0.021,
+       53.776
+      ],
+      "rrRing": [
+       1.194,
+       0.022,
+       63.727
+      ]
+     }
+    },
+    "rr": [
+     0.163,
+     0.02,
+     1.356
+    ],
+    "rrRing": [
+     0.168,
+     0.02,
+     1.407
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-30",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-05-07",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-01-11",
+    "2025-05-06"
+   ],
+   "blocks": 3,
+   "cameraSites": [
+    "MTAF044",
+    "MTAF045"
+   ],
+   "city": {
+    "after": 4924,
+    "before": 4834,
+    "groups": {
+     "all": {
+      "after": 4924,
+      "before": 4834
+     },
+     "bike": {
+      "after": 681,
+      "before": 582
+     },
+     "ped": {
+      "after": 844,
+      "before": 901
+     },
+     "severe": {
+      "after": 389,
+      "before": 415
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "San Jose Ave, 765 block",
+   "lat": 37.742841000001,
+   "limit": "25",
+   "lon": -122.422702500002,
+   "near": {
+    "after": 19,
+    "before": 24,
+    "groups": {
+     "all": {
+      "after": 19,
+      "before": 24,
+      "rr": [
+       0.777,
+       0.425,
+       1.421
+      ],
+      "rrRing": [
+       0.776,
+       0.408,
+       1.476
+      ]
+     },
+     "bike": {
+      "after": 2,
+      "before": 3,
+      "rr": [
+       0.57,
+       0.095,
+       3.422
+      ],
+      "rrRing": [
+       0.392,
+       0.056,
+       2.763
+      ]
+     },
+     "ped": {
+      "after": 3,
+      "before": 3,
+      "rr": [
+       1.068,
+       0.215,
+       5.304
+      ],
+      "rrRing": [
+       0.706,
+       0.131,
+       3.801
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       5.334,
+       0.255,
+       111.455
+      ],
+      "rrRing": [
+       5.0,
+       0.22,
+       113.51
+      ]
+     }
+    },
+    "rr": [
+     0.777,
+     0.425,
+     1.421
+    ],
+    "rrRing": [
+     0.776,
+     0.408,
+     1.476
+    ],
+    "severeAfter": 2,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-05-07, NB and SB",
+   "pre": [
+    "2022-09-16",
+    "2024-01-10"
+   ],
+   "ring": {
+    "after": 153,
+    "before": 150,
+    "groups": {
+     "all": {
+      "after": 153,
+      "before": 150
+     },
+     "bike": {
+      "after": 17,
+      "before": 10
+     },
+     "ped": {
+      "after": 34,
+      "before": 24
+     },
+     "severe": {
+      "after": 14,
+      "before": 14
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 9,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 9,
+      "rr": [
+       0.052,
+       0.003,
+       0.888
+      ],
+      "rrRing": [
+       0.052,
+       0.003,
+       0.895
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.285,
+       0.012,
+       7.008
+      ],
+      "rrRing": [
+       0.2,
+       0.007,
+       5.373
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.067,
+       0.021,
+       53.863
+      ],
+      "rrRing": [
+       0.71,
+       0.014,
+       37.031
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.067,
+       0.021,
+       53.896
+      ],
+      "rrRing": [
+       1.0,
+       0.019,
+       53.894
+      ]
+     }
+    },
+    "rr": [
+     0.052,
+     0.003,
+     0.888
+    ],
+    "rrRing": [
+     0.052,
+     0.003,
+     0.895
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-07",
+   "years": 1.32
+  },
+  {
+   "after": [
+    "2025-05-31",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-28",
+    "2025-05-30"
+   ],
+   "blocks": 1,
+   "cameraSites": [
+    "MTAF046",
+    "MTAF047"
+   ],
+   "city": {
+    "after": 4680,
+    "before": 4581,
+    "groups": {
+     "all": {
+      "after": 4680,
+      "before": 4581
+     },
+     "bike": {
+      "after": 649,
+      "before": 571
+     },
+     "ped": {
+      "after": 813,
+      "before": 824
+     },
+     "severe": {
+      "after": 373,
+      "before": 394
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "16th St, 2300 block",
+   "lat": 37.766475000001,
+   "limit": "25",
+   "lon": -122.410422000002,
+   "near": {
+    "after": 23,
+    "before": 32,
+    "groups": {
+     "all": {
+      "after": 23,
+      "before": 32,
+      "rr": [
+       0.704,
+       0.411,
+       1.204
+      ],
+      "rrRing": [
+       0.832,
+       0.473,
+       1.466
+      ]
+     },
+     "bike": {
+      "after": 5,
+      "before": 3,
+      "rr": [
+       1.466,
+       0.349,
+       6.163
+      ],
+      "rrRing": [
+       1.508,
+       0.337,
+       6.739
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 2,
+      "rr": [
+       1.014,
+       0.142,
+       7.213
+      ],
+      "rrRing": [
+       1.5,
+       0.195,
+       11.536
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 1,
+      "rr": [
+       2.113,
+       0.191,
+       23.397
+      ],
+      "rrRing": [
+       3.833,
+       0.315,
+       46.695
+      ]
+     }
+    },
+    "rr": [
+     0.704,
+     0.411,
+     1.204
+    ],
+    "rrRing": [
+     0.832,
+     0.473,
+     1.466
+    ],
+    "severeAfter": 2,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-31, EB and WB",
+   "pre": [
+    "2022-11-27",
+    "2024-02-27"
+   ],
+   "ring": {
+    "after": 215,
+    "before": 249,
+    "groups": {
+     "all": {
+      "after": 215,
+      "before": 249
+     },
+     "bike": {
+      "after": 42,
+      "before": 38
+     },
+     "ped": {
+      "after": 20,
+      "before": 30
+     },
+     "severe": {
+      "after": 12,
+      "before": 23
+     }
+    }
+   },
+   "site": {
+    "after": 5,
+    "before": 2,
+    "groups": {
+     "all": {
+      "after": 5,
+      "before": 2,
+      "rr": [
+       2.447,
+       0.475,
+       12.62
+      ],
+      "rrRing": [
+       2.895,
+       0.556,
+       15.076
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.88,
+       0.017,
+       44.419
+      ],
+      "rrRing": [
+       0.906,
+       0.018,
+       46.774
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.014,
+       0.02,
+       51.143
+      ],
+      "rrRing": [
+       1.488,
+       0.028,
+       78.028
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.056,
+       0.021,
+       53.37
+      ],
+      "rrRing": [
+       1.88,
+       0.035,
+       100.572
+      ]
+     }
+    },
+    "rr": [
+     2.447,
+     0.475,
+     12.62
+    ],
+    "rrRing": [
+     2.895,
+     0.556,
+     15.076
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-05-31",
+   "years": 1.25
+  },
+  {
+   "after": [
+    "2025-05-22",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-10",
+    "2025-05-21"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF048",
+    "MTAF049"
+   ],
+   "city": {
+    "after": 4774,
+    "before": 4667,
+    "groups": {
+     "all": {
+      "after": 4774,
+      "before": 4667
+     },
+     "bike": {
+      "after": 663,
+      "before": 574
+     },
+     "ped": {
+      "after": 824,
+      "before": 849
+     },
+     "severe": {
+      "after": 377,
+      "before": 402
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Cesar Chavez St, 3149 block",
+   "lat": 37.747728000001,
+   "limit": "25",
+   "lon": -122.412685500002,
+   "near": {
+    "after": 25,
+    "before": 30,
+    "groups": {
+     "all": {
+      "after": 25,
+      "before": 30,
+      "rr": [
+       0.815,
+       0.478,
+       1.387
+      ],
+      "rrRing": [
+       0.881,
+       0.498,
+       1.556
+      ]
+     },
+     "bike": {
+      "after": 2,
+      "before": 6,
+      "rr": [
+       0.289,
+       0.058,
+       1.435
+      ],
+      "rrRing": [
+       0.51,
+       0.092,
+       2.828
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.515,
+       0.047,
+       5.693
+      ],
+      "rrRing": [
+       0.419,
+       0.036,
+       4.842
+      ]
+     },
+     "severe": {
+      "after": 4,
+      "before": 1,
+      "rr": [
+       4.265,
+       0.475,
+       38.334
+      ],
+      "rrRing": [
+       5.818,
+       0.571,
+       59.318
+      ]
+     }
+    },
+    "rr": [
+     0.815,
+     0.478,
+     1.387
+    ],
+    "rrRing": [
+     0.881,
+     0.498,
+     1.556
+    ],
+    "severeAfter": 4,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-22, EB and WB",
+   "pre": [
+    "2022-10-31",
+    "2024-02-09"
+   ],
+   "ring": {
+    "after": 176,
+    "before": 186,
+    "groups": {
+     "all": {
+      "after": 176,
+      "before": 186
+     },
+     "bike": {
+      "after": 17,
+      "before": 26
+     },
+     "ped": {
+      "after": 37,
+      "before": 31
+     },
+     "severe": {
+      "after": 11,
+      "before": 16
+     }
+    }
+   },
+   "site": {
+    "after": 5,
+    "before": 12,
+    "groups": {
+     "all": {
+      "after": 5,
+      "before": 12,
+      "rr": [
+       0.407,
+       0.143,
+       1.157
+      ],
+      "rrRing": [
+       0.44,
+       0.152,
+       1.275
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.289,
+       0.012,
+       7.099
+      ],
+      "rrRing": [
+       0.505,
+       0.019,
+       13.111
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.343,
+       0.014,
+       8.443
+      ],
+      "rrRing": [
+       0.28,
+       0.011,
+       7.118
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.199,
+       0.13,
+       78.766
+      ],
+      "rrRing": [
+       4.304,
+       0.161,
+       115.314
+      ]
+     }
+    },
+    "rr": [
+     0.407,
+     0.143,
+     1.157
+    ],
+    "rrRing": [
+     0.44,
+     0.152,
+     1.275
+    ],
+    "severeAfter": 1,
+    "severeBefore": 0
+   },
+   "start": "2025-05-22",
+   "years": 1.28
+  },
+  {
+   "after": [
+    "2025-05-29",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-24",
+    "2025-05-28"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF050",
+    "MTAF051"
+   ],
+   "city": {
+    "after": 4713,
+    "before": 4633,
+    "groups": {
+     "all": {
+      "after": 4713,
+      "before": 4633
+     },
+     "bike": {
+      "after": 652,
+      "before": 573
+     },
+     "ped": {
+      "after": 817,
+      "before": 832
+     },
+     "severe": {
+      "after": 374,
+      "before": 400
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Cesar Chavez St, 1247 block",
+   "lat": 37.750109167236,
+   "limit": "30",
+   "lon": -122.389946034502,
+   "near": {
+    "after": 10,
+    "before": 7,
+    "groups": {
+     "all": {
+      "after": 10,
+      "before": 7,
+      "rr": [
+       1.404,
+       0.534,
+       3.693
+      ],
+      "rrRing": [
+       1.231,
+       0.457,
+       3.317
+      ]
+     },
+     "bike": {
+      "after": 4,
+      "before": 1,
+      "rr": [
+       3.515,
+       0.392,
+       31.543
+      ],
+      "rrRing": [
+       3.333,
+       0.336,
+       33.114
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.339,
+       0.014,
+       8.345
+      ],
+      "rrRing": [
+       0.218,
+       0.008,
+       5.942
+      ]
+     },
+     "severe": {
+      "after": 2,
+      "before": 0,
+      "rr": [
+       5.347,
+       0.256,
+       111.748
+      ],
+      "rrRing": [
+       3.065,
+       0.132,
+       70.943
+      ]
+     }
+    },
+    "rr": [
+     1.404,
+     0.534,
+     3.693
+    ],
+    "rrRing": [
+     1.231,
+     0.457,
+     3.317
+    ],
+    "severeAfter": 2,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-05-29, EB and WB",
+   "pre": [
+    "2022-11-21",
+    "2024-02-23"
+   ],
+   "ring": {
+    "after": 166,
+    "before": 143,
+    "groups": {
+     "all": {
+      "after": 166,
+      "before": 143
+     },
+     "bike": {
+      "after": 18,
+      "before": 15
+     },
+     "ped": {
+      "after": 14,
+      "before": 9
+     },
+     "severe": {
+      "after": 15,
+      "before": 9
+     }
+    }
+   },
+   "site": {
+    "after": 1,
+    "before": 0,
+    "groups": {
+     "all": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.949,
+       0.12,
+       72.415
+      ],
+      "rrRing": [
+       2.586,
+       0.105,
+       63.969
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.637,
+       0.107,
+       64.857
+      ],
+      "rrRing": [
+       2.514,
+       0.095,
+       66.203
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.018,
+       0.02,
+       51.386
+      ],
+      "rrRing": [
+       0.655,
+       0.012,
+       35.931
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.208,
+       0.13,
+       79.004
+      ],
+      "rrRing": [
+       1.839,
+       0.068,
+       49.901
+      ]
+     }
+    },
+    "rr": [
+     2.949,
+     0.12,
+     72.415
+    ],
+    "rrRing": [
+     2.586,
+     0.105,
+     63.969
+    ],
+    "severeAfter": 1,
+    "severeBefore": 0
+   },
+   "start": "2025-05-29",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-06-03",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-03-05",
+    "2025-06-02"
+   ],
+   "blocks": 4,
+   "cameraSites": [
+    "MTAF053"
+   ],
+   "city": {
+    "after": 4656,
+    "before": 4554,
+    "groups": {
+     "all": {
+      "after": 4656,
+      "before": 4554
+     },
+     "bike": {
+      "after": 652,
+      "before": 564
+     },
+     "ped": {
+      "after": 808,
+      "before": 807
+     },
+     "severe": {
+      "after": 372,
+      "before": 386
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Bayshore Blvd, 2066 block",
+   "lat": 37.714168377442,
+   "limit": "30",
+   "lon": -122.399756955075,
+   "near": {
+    "after": 19,
+    "before": 19,
+    "groups": {
+     "all": {
+      "after": 19,
+      "before": 19,
+      "rr": [
+       0.978,
+       0.517,
+       1.85
+      ],
+      "rrRing": [
+       0.762,
+       0.385,
+       1.509
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       0.865,
+       0.054,
+       13.862
+      ],
+      "rrRing": [
+       1.0,
+       0.048,
+       20.831
+      ]
+     },
+     "ped": {
+      "after": 3,
+      "before": 5,
+      "rr": [
+       0.599,
+       0.143,
+       2.516
+      ],
+      "rrRing": [
+       0.45,
+       0.093,
+       2.185
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 3,
+      "rr": [
+       0.346,
+       0.036,
+       3.34
+      ],
+      "rrRing": [
+       0.5,
+       0.037,
+       6.684
+      ]
+     }
+    },
+    "rr": [
+     0.978,
+     0.517,
+     1.85
+    ],
+    "rrRing": [
+     0.762,
+     0.385,
+     1.509
+    ],
+    "severeAfter": 1,
+    "severeBefore": 3
+   },
+   "note": "in the camera data from 2025-06-03, SB",
+   "pre": [
+    "2022-12-06",
+    "2024-03-04"
+   ],
+   "ring": {
+    "after": 143,
+    "before": 109,
+    "groups": {
+     "all": {
+      "after": 143,
+      "before": 109
+     },
+     "bike": {
+      "after": 5,
+      "before": 5
+     },
+     "ped": {
+      "after": 20,
+      "before": 15
+     },
+     "severe": {
+      "after": 4,
+      "before": 6
+     }
+    }
+   },
+   "site": {
+    "after": 8,
+    "before": 9,
+    "groups": {
+     "all": {
+      "after": 8,
+      "before": 9,
+      "rr": [
+       0.869,
+       0.335,
+       2.255
+      ],
+      "rrRing": [
+       0.678,
+       0.253,
+       1.813
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.865,
+       0.017,
+       43.674
+      ],
+      "rrRing": [
+       1.0,
+       0.017,
+       59.998
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 4,
+      "rr": [
+       0.499,
+       0.091,
+       2.734
+      ],
+      "rrRing": [
+       0.375,
+       0.06,
+       2.325
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.519,
+       0.047,
+       5.746
+      ],
+      "rrRing": [
+       0.75,
+       0.05,
+       11.311
+      ]
+     }
+    },
+    "rr": [
+     0.869,
+     0.335,
+     2.255
+    ],
+    "rrRing": [
+     0.678,
+     0.253,
+     1.813
+    ],
+    "severeAfter": 1,
+    "severeBefore": 2
+   },
+   "start": "2025-06-03",
+   "years": 1.25
+  },
+  {
+   "after": [
+    "2025-05-29",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-24",
+    "2025-05-28"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF054",
+    "MTAF055"
+   ],
+   "city": {
+    "after": 4718,
+    "before": 4621,
+    "groups": {
+     "all": {
+      "after": 4718,
+      "before": 4621
+     },
+     "bike": {
+      "after": 656,
+      "before": 574
+     },
+     "ped": {
+      "after": 815,
+      "before": 829
+     },
+     "severe": {
+      "after": 375,
+      "before": 398
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Geneva Ave, 1553 block",
+   "lat": 37.712545402991,
+   "limit": "30",
+   "lon": -122.430464188605,
+   "near": {
+    "after": 5,
+    "before": 19,
+    "groups": {
+     "all": {
+      "after": 5,
+      "before": 19,
+      "rr": [
+       0.258,
+       0.096,
+       0.691
+      ],
+      "rrRing": [
+       0.229,
+       0.077,
+       0.68
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.875,
+       0.017,
+       44.176
+      ],
+      "rrRing": [
+       0.143,
+       0.001,
+       19.454
+      ]
+     },
+     "ped": {
+      "after": 2,
+      "before": 4,
+      "rr": [
+       0.509,
+       0.093,
+       2.784
+      ],
+      "rrRing": [
+       0.188,
+       0.022,
+       1.617
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 2,
+      "rr": [
+       0.531,
+       0.048,
+       5.877
+      ],
+      "rrRing": [
+       1.8,
+       0.041,
+       79.429
+      ]
+     }
+    },
+    "rr": [
+     0.258,
+     0.096,
+     0.691
+    ],
+    "rrRing": [
+     0.229,
+     0.077,
+     0.68
+    ],
+    "severeAfter": 1,
+    "severeBefore": 2
+   },
+   "note": "in the camera data from 2025-05-29, EB and WB",
+   "pre": [
+    "2022-11-21",
+    "2024-02-23"
+   ],
+   "ring": {
+    "after": 39,
+    "before": 34,
+    "groups": {
+     "all": {
+      "after": 39,
+      "before": 34
+     },
+     "bike": {
+      "after": 3,
+      "before": 0
+     },
+     "ped": {
+      "after": 8,
+      "before": 3
+     },
+     "severe": {
+      "after": 0,
+      "before": 1
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 8,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 8,
+      "rr": [
+       0.058,
+       0.003,
+       0.999
+      ],
+      "rrRing": [
+       0.051,
+       0.003,
+       0.923
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.875,
+       0.017,
+       44.176
+      ],
+      "rrRing": [
+       0.143,
+       0.001,
+       19.454
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 3,
+      "rr": [
+       0.145,
+       0.007,
+       2.818
+      ],
+      "rrRing": [
+       0.059,
+       0.002,
+       1.464
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.354,
+       0.014,
+       8.711
+      ],
+      "rrRing": [
+       1.0,
+       0.011,
+       92.428
+      ]
+     }
+    },
+    "rr": [
+     0.058,
+     0.003,
+     0.999
+    ],
+    "rrRing": [
+     0.051,
+     0.003,
+     0.923
+    ],
+    "severeAfter": 0,
+    "severeBefore": 1
+   },
+   "start": "2025-05-29",
+   "years": 1.26
+  },
+  {
+   "after": [
+    "2025-06-06",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-03-11",
+    "2025-06-05"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF056",
+    "MTAF057"
+   ],
+   "city": {
+    "after": 4645,
+    "before": 4543,
+    "groups": {
+     "all": {
+      "after": 4645,
+      "before": 4543
+     },
+     "bike": {
+      "after": 649,
+      "before": 561
+     },
+     "ped": {
+      "after": 806,
+      "before": 811
+     },
+     "severe": {
+      "after": 370,
+      "before": 388
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Mission St, 5372 block",
+   "lat": 37.714014000001,
+   "limit": "20",
+   "lon": -122.443663500002,
+   "near": {
+    "after": 3,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 3,
+      "before": 3,
+      "rr": [
+       0.978,
+       0.197,
+       4.848
+      ],
+      "rrRing": [
+       1.188,
+       0.229,
+       6.157
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       2.594,
+       0.105,
+       63.795
+      ],
+      "rrRing": [
+       4.2,
+       0.116,
+       151.98
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 2,
+      "rr": [
+       0.201,
+       0.01,
+       4.198
+      ],
+      "rrRing": [
+       0.164,
+       0.007,
+       3.707
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.049,
+       0.021,
+       52.986
+      ],
+      "rrRing": [
+       0.333,
+       0.005,
+       21.64
+      ]
+     }
+    },
+    "rr": [
+     0.978,
+     0.197,
+     4.848
+    ],
+    "rrRing": [
+     1.188,
+     0.229,
+     6.157
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "note": "in the camera data from 2025-06-06, NB and SB",
+   "pre": [
+    "2022-12-15",
+    "2024-03-10"
+   ],
+   "ring": {
+    "after": 48,
+    "before": 57,
+    "groups": {
+     "all": {
+      "after": 48,
+      "before": 57
+     },
+     "bike": {
+      "after": 2,
+      "before": 3
+     },
+     "ped": {
+      "after": 16,
+      "before": 13
+     },
+     "severe": {
+      "after": 7,
+      "before": 2
+     }
+    }
+   },
+   "site": {
+    "after": 0,
+    "before": 1,
+    "groups": {
+     "all": {
+      "after": 0,
+      "before": 1,
+      "rr": [
+       0.326,
+       0.013,
+       8.005
+      ],
+      "rrRing": [
+       0.395,
+       0.016,
+       9.924
+      ]
+     },
+     "bike": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       0.865,
+       0.017,
+       43.643
+      ],
+      "rrRing": [
+       1.4,
+       0.02,
+       97.435
+      ]
+     },
+     "ped": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.006,
+       0.02,
+       50.774
+      ],
+      "rrRing": [
+       0.818,
+       0.015,
+       44.026
+      ]
+     },
+     "severe": {
+      "after": 0,
+      "before": 0,
+      "rr": [
+       1.049,
+       0.021,
+       52.986
+      ],
+      "rrRing": [
+       0.333,
+       0.005,
+       21.64
+      ]
+     }
+    },
+    "rr": [
+     0.326,
+     0.013,
+     8.005
+    ],
+    "rrRing": [
+     0.395,
+     0.016,
+     9.924
+    ],
+    "severeAfter": 0,
+    "severeBefore": 0
+   },
+   "start": "2025-06-06",
+   "years": 1.24
+  },
+  {
+   "after": [
+    "2025-05-31",
+    "2026-08-31"
+   ],
+   "before": [
+    "2024-02-28",
+    "2025-05-30"
+   ],
+   "blocks": 2,
+   "cameraSites": [
+    "MTAF058",
+    "MTAF059"
+   ],
+   "city": {
+    "after": 4696,
+    "before": 4602,
+    "groups": {
+     "all": {
+      "after": 4696,
+      "before": 4602
+     },
+     "bike": {
+      "after": 653,
+      "before": 573
+     },
+     "ped": {
+      "after": 814,
+      "before": 826
+     },
+     "severe": {
+      "after": 374,
+      "before": 394
+     }
+    }
+   },
+   "claim": "camera",
+   "kind": "camera",
+   "label": "Alemany Blvd, 2851 block",
+   "lat": 37.712547072973,
+   "limit": "30",
+   "lon": -122.451207982566,
+   "near": {
+    "after": 7,
+    "before": 11,
+    "groups": {
+     "all": {
+      "after": 7,
+      "before": 11,
+      "rr": [
+       0.624,
+       0.242,
+       1.61
+      ],
+      "rrRing": [
+       0.581,
+       0.217,
+       1.554
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       0.877,
+       0.055,
+       14.061
+      ],
+      "rrRing": [
+       0.75,
+       0.032,
+       17.507
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.044,
+       0.124,
+       74.841
+      ],
+      "rrRing": [
+       3.615,
+       0.139,
+       93.849
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.053,
+       0.066,
+       16.904
+      ],
+      "rrRing": [
+       0.4,
+       0.02,
+       8.071
+      ]
+     }
+    },
+    "rr": [
+     0.624,
+     0.242,
+     1.61
+    ],
+    "rrRing": [
+     0.581,
+     0.217,
+     1.554
+    ],
+    "severeAfter": 1,
+    "severeBefore": 1
+   },
+   "note": "in the camera data from 2025-05-31, NB and SB",
+   "pre": [
+    "2022-11-27",
+    "2024-02-27"
+   ],
+   "ring": {
+    "after": 115,
+    "before": 105,
+    "groups": {
+     "all": {
+      "after": 115,
+      "before": 105
+     },
+     "bike": {
+      "after": 4,
+      "before": 3
+     },
+     "ped": {
+      "after": 19,
+      "before": 23
+     },
+     "severe": {
+      "after": 10,
+      "before": 4
+     }
+    }
+   },
+   "site": {
+    "after": 2,
+    "before": 3,
+    "groups": {
+     "all": {
+      "after": 2,
+      "before": 3,
+      "rr": [
+       0.653,
+       0.109,
+       3.912
+      ],
+      "rrRing": [
+       0.609,
+       0.1,
+       3.714
+      ]
+     },
+     "bike": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       0.877,
+       0.055,
+       14.061
+      ],
+      "rrRing": [
+       0.75,
+       0.032,
+       17.507
+      ]
+     },
+     "ped": {
+      "after": 1,
+      "before": 0,
+      "rr": [
+       3.044,
+       0.124,
+       74.841
+      ],
+      "rrRing": [
+       3.615,
+       0.139,
+       93.849
+      ]
+     },
+     "severe": {
+      "after": 1,
+      "before": 1,
+      "rr": [
+       1.053,
+       0.066,
+       16.904
+      ],
+      "rrRing": [
+       0.4,
+       0.02,
+       8.071
+      ]
+     }
+    },
+    "rr": [
+     0.653,
+     0.109,
+     3.912
+    ],
+    "rrRing": [
+     0.609,
+     0.1,
+     3.714
+    ],
+    "severeAfter": 1,
+    "severeBefore": 1
+   },
+   "start": "2025-05-31",
+   "years": 1.25
+  }
+ ],
+ "source": {
+  "camerasFetched": "2026-10-20",
+  "centerlinesFetched": "2026-10-20",
+  "dataEnd": "2026-08-31",
+  "hinFetched": "2026-09-30",
+  "lastMonth": "2026-08",
+  "lastMonthRows": 341,
+  "unsnappedAll": 53,
+  "victims": 83820,
+  "victimsFetched": "2026-10-20"
+ }
+}

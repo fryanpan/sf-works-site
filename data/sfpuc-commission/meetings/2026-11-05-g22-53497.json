@@ -1,0 +1,32 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-11-05",
+ "id": "g22-53497",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53497",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-11-10",
+ "form": "pdf",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "CLOSED SESSION: a) Public comment on all matters pertaining to this agenda item."
+  },
+  {
+   "no": "4",
+   "title": "Adjournment"
+  }
+ ],
+ "parser": 2,
+ "body": "sfpuc-commission"
+}

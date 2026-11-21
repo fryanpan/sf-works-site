@@ -1,0 +1,59 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-03-10",
+ "id": "g55-40743",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40743",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26103"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "CALL TO ORDER"
+  },
+  {
+   "no": "2",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "3",
+   "title": "CONTINUATION OF REMOTE MEETINGS",
+   "decision": "ADOPTED — 6 ayes (Resolution 220310-019)"
+  },
+  {
+   "no": "3a",
+   "title": "Recreation and Park Commission Action",
+   "decision": "ADOPTED — 6 ayes (Resolution 220310-019)"
+  },
+  {
+   "no": "3b",
+   "title": "San Francisco Municipal Transportation Board of Directors Action",
+   "decision": "ADOPTED — 6 ayes (Resolution 220310-019)"
+  },
+  {
+   "no": "4",
+   "title": "GOLDEN GATE PARK ACCESS AND SAFETY PROGRAM",
+   "decision": "ADOPTED — 7 ayes (Resolution 220310-020)"
+  },
+  {
+   "no": "4a",
+   "title": "Recreation and Park Commission action",
+   "decision": "ADOPTED — 7 ayes (Resolution 220310-020)"
+  },
+  {
+   "no": "4b",
+   "title": "San Francisco Municipal Transportation Board of Directors Action",
+   "decision": "ADOPTED — 7 ayes (Resolution 220310-020)"
+  },
+  {
+   "no": "5",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

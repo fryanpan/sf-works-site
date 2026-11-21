@@ -1,0 +1,104 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2019-10-08",
+ "id": "g22-34217",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=34217",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Discussion and possible action to elect a President and Vice President"
+  },
+  {
+   "no": "4",
+   "title": "Approval of the Minutes of September 10, 2019"
+  },
+  {
+   "no": "5",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "6",
+   "title": "Communications"
+  },
+  {
+   "no": "7",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "8",
+   "title": "Other Commission Business"
+  },
+  {
+   "no": "9",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "10",
+   "title": "Approve modification of the San Francisco Public Utilities Commission’sNon-potable Grant Program"
+  },
+  {
+   "no": "11",
+   "title": "Adopt revised Section G, Cross-Connection Control, of the SFPUC’s Rules and Regulations Governing Water Service to Customers"
+  },
+  {
+   "no": "12",
+   "title": "Approve two Resource Adequacy (RA) contracts for CleanPowerSF"
+  },
+  {
+   "no": "13",
+   "title": "Approve form of Second Amendment to Revolving Credit and Term Loan Agreement and Second Amended and Restated Fee Letter with State Street Bank and Trust Company"
+  },
+  {
+   "no": "14",
+   "title": "Award aGreen Infrastructure Grant to the San Francisco Unified School District"
+  },
+  {
+   "no": "15",
+   "title": "Approve modifications to the Southeast Water Pollution Control Plant New Headworks Facility"
+  },
+  {
+   "no": "16",
+   "title": "Authorize the General Manager to execute a Memorandum of Understanding with the San Francisco Municipal Transportation Agency"
+  },
+  {
+   "no": "17",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "18",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel"
+  },
+  {
+   "no": "25",
+   "title": "Announcement Following Closed Session"
+  },
+  {
+   "no": "26",
+   "title": "Motion regarding whether to disclose the discussions during Closed Sessionpursuant to San Francisco Administrative Code Section 67.12"
+  },
+  {
+   "no": "27",
+   "title": "Other New Business"
+  },
+  {
+   "no": "28",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

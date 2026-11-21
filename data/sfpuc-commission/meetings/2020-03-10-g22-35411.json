@@ -1,0 +1,92 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-03-10",
+ "id": "g22-35411",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35411",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of February 25, 2020"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "7",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "8",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "8a",
+   "title": "Approve Amendment No. 2 to Agreement No. CS-369.A, Program Scheduling and"
+  },
+  {
+   "no": "8b",
+   "title": "Approve Amendment No. 1 to Agreement No. CS-369.B with PMA Consultants LLC - Dabri Joint Venture"
+  },
+  {
+   "no": "8c",
+   "title": "Approve Modification No. 1 to Job Order Contract to complete ongoing facility and asset improvements"
+  },
+  {
+   "no": "8d",
+   "title": "Approve the selection of Eurofins Eaton Analytical, LLC"
+  },
+  {
+   "no": "8e",
+   "title": "Accept work performed by Pipe and Plant Solutions, Inc"
+  },
+  {
+   "no": "9",
+   "title": "Approve the plans and specifications, and award Bay Corridor Transmission & Distribution - Phase 2"
+  },
+  {
+   "no": "10",
+   "title": "Approve the selection of HDR Engineering, Inc. Hetch Hetchy Water and Power Technical Services for San Joaquin Pipeline Program"
+  },
+  {
+   "no": "11",
+   "title": "Discussion and possible action to authorize the GM of the SFPUC to consent to the Development Agreement for the Potrero Power Station Mixed-Use Project"
+  },
+  {
+   "no": "12",
+   "title": "Approve Amendment No. 5 to Agreement No. CS-911R, Construction Management Services, Calaveras Dam Replacement Project"
+  },
+  {
+   "no": "13",
+   "title": "Adopt resolution affirming the SFPUC support for acquiring Pacific Gas and Electric Company electric assets in SF"
+  },
+  {
+   "no": "14",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

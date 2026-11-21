@@ -1,0 +1,150 @@
+{
+ "generated": "2026-09-23",
+ "plan_share_2024": 0.8,
+ "residents": 830275,
+ "centerlines": {
+  "id": "3psu-pn9h",
+  "url": "https://data.sf.gov/d/3psu-pn9h",
+  "fetched_on": "2026-09-22",
+  "walkable_edges": 15694
+ },
+ "quarter_mile_m": 402.336,
+ "calming": {
+  "mid_block": {
+   "id": "abhw-ffzx",
+   "fetched_on": "2026-09-23"
+  },
+  "intersection": {
+   "id": "bp3t-bd4t",
+   "fetched_on": "2026-09-23"
+  }
+ },
+ "years": {
+  "2023": {
+   "plan": {
+    "lines": 1413,
+    "straight": 0.8625,
+    "network": 0.7331,
+    "walk_over_straight": {
+     "median": 1.374,
+     "p90": 1.866
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "calmed-III": {
+    "lines": 1161,
+    "straight": 0.7955,
+    "network": 0.657,
+    "walk_over_straight": {
+     "median": 1.369,
+     "p90": 1.869
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "no-III": {
+    "lines": 1107,
+    "straight": 0.7703,
+    "network": 0.6302,
+    "walk_over_straight": {
+     "median": 1.366,
+     "p90": 1.861
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "strict": {
+    "lines": 768,
+    "straight": 0.6032,
+    "network": 0.459,
+    "walk_over_straight": {
+     "median": 1.362,
+     "p90": 1.936
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   }
+  },
+  "2024": {
+   "plan": {
+    "lines": 1437,
+    "straight": 0.863,
+    "network": 0.7342,
+    "walk_over_straight": {
+     "median": 1.373,
+     "p90": 1.864
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "calmed-III": {
+    "lines": 1185,
+    "straight": 0.8019,
+    "network": 0.6624,
+    "walk_over_straight": {
+     "median": 1.369,
+     "p90": 1.862
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "no-III": {
+    "lines": 1129,
+    "straight": 0.7707,
+    "network": 0.6316,
+    "walk_over_straight": {
+     "median": 1.366,
+     "p90": 1.861
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "strict": {
+    "lines": 797,
+    "straight": 0.6102,
+    "network": 0.4651,
+    "walk_over_straight": {
+     "median": 1.36,
+     "p90": 1.935
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   }
+  },
+  "2026": {
+   "plan": {
+    "lines": 1450,
+    "straight": 0.8598,
+    "network": 0.7324,
+    "walk_over_straight": {
+     "median": 1.373,
+     "p90": 1.866
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "calmed-III": {
+    "lines": 1206,
+    "straight": 0.8028,
+    "network": 0.6643,
+    "walk_over_straight": {
+     "median": 1.37,
+     "p90": 1.864
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "no-III": {
+    "lines": 1145,
+    "straight": 0.7675,
+    "network": 0.63,
+    "walk_over_straight": {
+     "median": 1.366,
+     "p90": 1.862
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   },
+   "strict": {
+    "lines": 816,
+    "straight": 0.6139,
+    "network": 0.4699,
+    "walk_over_straight": {
+     "median": 1.358,
+     "p90": 1.928
+    },
+    "residents_walk_shorter_by_more_than_snap": 323
+   }
+  }
+ }
+}

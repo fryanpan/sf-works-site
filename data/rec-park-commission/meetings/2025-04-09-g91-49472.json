@@ -1,0 +1,27 @@
+{
+ "committee": "Recreation and Park Commission",
+ "date": "2025-04-09",
+ "id": "g91-49472",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=49472",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "ROLL CALL"
+  },
+  {
+   "no": "2",
+   "title": "GREAT HIGHWAY - NAMING PROPOSAL"
+  },
+  {
+   "no": "3",
+   "title": "ADJOURNMENT"
+  }
+ ],
+ "body": "rec-park-commission"
+}

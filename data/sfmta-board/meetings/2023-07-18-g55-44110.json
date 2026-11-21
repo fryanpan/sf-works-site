@@ -1,0 +1,96 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-07-18",
+ "id": "g55-44110",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44110",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/28607"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar, are considered to be routine by the San Francisco Municipal Transportation Agency Board of Directors",
+   "decision": "ADOPTED — 4 ayes (Resolution 230718-060)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications and making environmental review findings",
+   "decision": "ADOPTED — 4 ayes; part Y severed (Resolution 230718-060)"
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director to execute Amendment No. 3 to SFMTA Contract No. CS-174",
+   "decision": "ADOPTED — 4 ayes (Resolution 230718-061)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Amendment No. 6 to Contract No. SFMTA-2016-49",
+   "decision": "ADOPTED — 4 ayes (Resolution 230718-062)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding a Racial Equity Action Plan update"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Vision Zero update"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel. CLOSED SESSION",
+   "decision": "ADOPTED — 4 ayes (Resolution 230718-063)"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 4 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

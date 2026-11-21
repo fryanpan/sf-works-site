@@ -1,0 +1,195 @@
+{
+  "source": {
+    "title": "San Francisco Biking and Rolling Plan",
+    "adopted": "2025-03-04",
+    "url": "https://www.sfmta.com/media/41810/download",
+    "projectPage": "https://www.sfmta.com/projects/biking-and-rolling-plan",
+    "note": "Page numbers are the plan's own printed numbers, not the PDF's. The PDF is not committed — 92 MB, and the city's to publish."
+  },
+  "classes": {
+    "Separated": {
+      "quote": "Separated facilities are those that provide some kind of vertical separation between people biking and rolling and cars. All of these facilities are considered All Ages and Abilities.",
+      "printedPage": "74–75",
+      "pdfPage": 38,
+      "url": "https://www.sfmta.com/media/41810/download",
+      "definitionOf": "separated.statement"
+    },
+    "Shared": {
+      "quote": "Shared facilities allow all roadway users to access and share streets. Shared facilities are designed to allow people biking and rolling as well as people driving for local access, services and delivery to interact safely on a roadway.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download",
+      "definitionOf": "shared.statement"
+    },
+    "Shared L3": {
+      "quote": "Traffic-calmed streets that manage motor vehicle speed not volume. Corridors like Corbett are the most-level route for cyclists, but also the only available route for transit and neighborhood car and emergency vehicle access.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download",
+      "definitionOf": "shared.level-iii"
+    }
+  },
+  "detail": {
+    "separated.statement": {
+      "quote": "Separated facilities are those that provide some kind of vertical separation between people biking and rolling and cars. All of these facilities are considered All Ages and Abilities.",
+      "printedPage": "74–75",
+      "pdfPage": 38,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "separated.car-free": {
+      "quote": "These facilities do not have cars on them. They can be paths or car-free streets, they provide the highest level of All Ages and Ability access.",
+      "printedPage": "74–75",
+      "pdfPage": 38,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "separated.protected": {
+      "quote": "Protected facilities are on-street facilities that provide a hardened, non-movable barrier between cars and people biking and rolling. Depending on vehicle volumes and speeds, the type of barrier will differ.",
+      "printedPage": "74–75",
+      "pdfPage": 38,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "separated.separated": {
+      "quote": "Separated facilities are best exemplified by San Francisco’s quick-build program, typically painted buffers with flexible posts and frequently including parking protection between moving vehicles and people biking and rolling.",
+      "printedPage": "74–75",
+      "pdfPage": 38,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "shared.statement": {
+      "quote": "Shared facilities allow all roadway users to access and share streets. Shared facilities are designed to allow people biking and rolling as well as people driving for local access, services and delivery to interact safely on a roadway.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "shared.level-i": {
+      "quote": "Slow Streets that meet low motor vehicle speed + volume thresholds. Corridors like Page Slow Street would be further refined with permanent greening, stormwater mitigation, community art, and other infrastructure to meet thresholds while still accommodating local car traffic. An All-Ages-and-Abilities facility.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "shared.level-ii": {
+      "quote": "“Neighborways” and “Bicycle boulevards.” Slow Streets with somewhat higher motor vehicle speed + volume thresholds and lower infrastructure investment. For example, Ortega Street would get added traffic calming to support safe access to the several schools in this corridor. An all-ages-and-abilities facility.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "shared.level-iii": {
+      "quote": "Traffic-calmed streets that manage motor vehicle speed not volume. Corridors like Corbett are the most-level route for cyclists, but also the only available route for transit and neighborhood car and emergency vehicle access.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "shared.bike-lanes": {
+      "quote": "While painted bike lanes are a key tool in the current network, they may not support a large number of interested riders unless installed in specific lower-speed/lower volume areas that have no more than two-lanes. Lanes are used on streets where separated facilities are not an option.",
+      "printedPage": "76–77",
+      "pdfPage": 39,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "map.what-it-draws": {
+      "items": [
+        "Car-free streets like JFK Promenade",
+        "Shared-use paths like the path next to Kezar Drive",
+        "Fully protected, separated facilities like the Folsom Street protected bikeway currently under construction",
+        "Fully calmed, shared streets with limited, slow-moving car traffic sharing space with cyclists and other users"
+      ],
+      "printedPage": "68–69",
+      "pdfPage": 35,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "map.shared-l3-ceiling": {
+      "quote": "Lighter-shaded shared facilities indicate that some traffic calming may happen, but it is not likely that any future facility on this street will be above a Shared Street Level III (traffic calmed) due to street space and geography.",
+      "printedPage": "68–69",
+      "pdfPage": 35,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "map.wavy-lines": {
+      "quote": "Wavy lines indicate an understanding that connections in the network are needed but will not be identified without more community engagement.",
+      "printedPage": "68–69",
+      "pdfPage": 35,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "network.definition": {
+      "quote": "This North Star network is defined as All Ages and Abilities bikeway facilities within a quarter mile of all San Franciscans prioritizing access to schools and connecting residential areas to open spaces, job centers, transit hubs, and commercial districts.",
+      "printedPage": "64–65",
+      "pdfPage": 33,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "network.is-aaa": {
+      "quote": "we developed this draft of the North Star Network which conveys a future connected network of All-Ages-and-Abilities bikeways, linking all neighborhoods to parks, schools, shopping districts, employment, community centers, and other services.",
+      "printedPage": "68–69",
+      "pdfPage": 35,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "network.definitions-pending": {
+      "quote": "Adopt definitions and operating characteristics for the following separated and shared facilities: Car-free, Protected, Separated, Shared Level I, II, III, and Bike lanes that ensure clarity on when each facility should be considered as a design solution",
+      "printedPage": "64–65",
+      "pdfPage": 33,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "network.aaa-today": {
+      "caption": "As of 2024, 8% of streets include an All Ages and Abilities bikeway",
+      "items": [
+        "Class I, Class IV, and Slow Streets",
+        "Class II with BCI > 80",
+        "Class III with traffic calming and BCI > 80"
+      ],
+      "printedPage": "24–25",
+      "pdfPage": 13,
+      "url": "https://www.sfmta.com/media/41810/download"
+    },
+    "bci.all-streets": {
+      "quote": "The Bicycle Conditions Index (BCI, formerly described as the Bicycle Comfort Index) was updated for all streets in San Francisco and is useful for determining how a new safe and connected network meets the needs of the people interested in riding in different parts of the city.",
+      "printedPage": "34–35",
+      "pdfPage": 18,
+      "url": "https://www.sfmta.com/media/41810/download"
+    }
+  },
+  "deepLinks": {
+    "work": false,
+    "why": "sfmta.com serves the plan and the appendix with Content-Disposition: attachment (curl -sI, 2026-09-20), so a browser drops a #page= fragment and starts a 92 MB download instead. Citing a page means carrying its words."
+  },
+  "definitionsArePending": {
+    "finding": "The plan does not claim to have defined these classes. Action 2.7.1 commits the SFMTA to adopting definitions and operating characteristics for Car-free, Protected, Separated, Shared Level I, II and III, and Bike lanes.",
+    "quote": "network.definitions-pending",
+    "printedPage": "64–65",
+    "tag": "[primary — read 2026-09-20]"
+  },
+  "twoVocabularies": {
+    "caltrans": "Class I, II, III and IV are the Caltrans bikeway classes: path, bike lane, signed shared roadway, separated bikeway. The plan uses them for what exists, and pairs them with its own separated types on printed pages 74–75.",
+    "plan": "Shared Level I, II and III are the plan's own tiers for shared streets, on printed pages 76–77.",
+    "warning": "The plan never equates a Caltrans class with a Shared Level. Do not read 'Class III with traffic calming' as 'Shared Level III'.",
+    "tag": "[primary — read 2026-09-20]"
+  },
+  "allAgesAndAbilities": {
+    "question": "Is a Shared Level III street an all-ages-and-abilities facility? The plan's network is defined as all-ages-and-abilities bikeways, so this decides whether calming such a street counts as building it.",
+    "textualObservation": "The Shared Level I and Level II descriptions each end by calling the facility all-ages-and-abilities. The Level III description does not, and neither does the Bike Lanes row.",
+    "observationPage": "76–77",
+    "butTheMapDoes": "The North Star map carries a 'Shared - Level 3 Traffic Calming' class, and the plan introduces that map as conveying 'a future connected network of All-Ages-and-Abilities bikeways'. So the plan does draw Level III streets on a network it calls all-ages-and-abilities.",
+    "mapPage": "68–69",
+    "reading": "The missing sentence is a gap in the description, not the plan excluding Level III from its own standard. Read with Action 2.7.1, the simplest account is that the plan has not finished defining these classes.",
+    "readingTag": "[inference — mine]",
+    "tag": "[primary — read 2026-09-20]"
+  },
+  "bicycleConditionsIndex": {
+    "whatIsPublished": "The plan says the index 'was updated for all streets in San Francisco' and maps it citywide in five bands: 0–30, 31–60, 61–90, 91–120, 121–150.",
+    "printedPage": "34–35",
+    "limit": "The existing-network legend's test is a score above 80, and the published band 61–90 straddles it. So the map cannot settle whether a given street clears the test, though a per-street score exists.",
+    "tag": "[primary — read 2026-09-20]"
+  },
+  "gaps": [
+    {
+      "class": "Undecided",
+      "what": "No sentence in the plan defines Undecided. The word appears three times, on two pages, every one of them a map legend label: once on the North Star map (printed 68–69) and twice on printed 80–81, in the legends of the map with fire stations and the map with Muni routes. It is also absent from the list of facilities Action 2.7.1 promises to define.",
+      "checked": "Searched every page of the plan PDF for the word.",
+      "tag": "[primary — read 2026-09-20]",
+      "butAlso": "Appendix L uses Undecided as a facility value on 32 of its 393 rows, 19 flagged Upgrade and 4 New. Existing facility on those rows: Class III 15, Lanes 8, None 4, a mixture of two 3, Path 1, and one row with the cell left blank.",
+      "butAlsoTag": "[primary — Appendix L via out/north-star/index.csv, counted 2026-09-20]",
+      "careful": "An Upgrade flag is not a commitment in the plan's words. The plan calls the index 'a long-term outlook'."
+    },
+    {
+      "class": "Shared L3",
+      "what": "Appendix L never uses a Level 3 value; where it names these streets at all it calls them Shared. The class exists only as a lighter shade on the map, and the index tells the reader to defer to the map where the two differ.",
+      "checked": "All 393 Appendix L rows in out/north-star/index.csv; no north_star value contains Level or L3. Of the three segments this repo labels Shared L3, Leese St and Richland Ave have rows reading Shared; 29th St has no Appendix L row at all.",
+      "tag": "[primary — Appendix L via out/north-star/index.csv, counted 2026-09-20]"
+    }
+  ]
+}

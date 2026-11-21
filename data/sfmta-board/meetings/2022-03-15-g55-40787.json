@@ -1,0 +1,91 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-03-15",
+ "id": "g55-40787",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=40787",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26091"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes March 1, 2022 Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 220315-021)",
+   "severed": true
+  },
+  {
+   "no": "10.2",
+   "title": "Authorizing the Director to approve a project with Caltrans for all transit projects funded by the Low Carbon Transit Operations Program for Fiscal Year 2021-2022",
+   "decision": "ADOPTED — 7 ayes (Resolution 220315-022)"
+  },
+  {
+   "no": "11",
+   "title": "Approving the proposed parking and traffic modifications associated with the Evans Avenue Quick-Build Project",
+   "decision": "ADOPTED — 6 ayes, 1 nay"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion on Fiscal Year 2023 and Fiscal Year 2024 Operating and Capital Budget and Fiscal Year 2023 – 2027 Capital Improvement Program"
+  },
+  {
+   "no": "13",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel. CLOSED SESSION"
+  },
+  {
+   "no": "3",
+   "title": "Pursuant to Government Code Section 54957.6(a) and Administrative Code Section 67.8, the Municipal Transportation Agency Board of Directors shall meet in closed session for:"
+  },
+  {
+   "no": "14",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion to disclose or not disclose the information discussed in closed session",
+   "decision": "ADOPTED — 6 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

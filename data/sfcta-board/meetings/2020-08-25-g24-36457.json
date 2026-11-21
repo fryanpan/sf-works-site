@@ -1,0 +1,51 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2020-08-25",
+ "id": "g24-36457",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=36457",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Executive Director’s Report"
+  },
+  {
+   "no": "4",
+   "title": "Approve the Minutes of the July 28, 2020 Meeting"
+  },
+  {
+   "no": "5",
+   "title": "COVID-Era Congestion Tracker and COVID-19 Recovery Scenario Analysis"
+  },
+  {
+   "no": "6",
+   "title": "Preliminary Fiscal Year 2020/21 Budget and Work Program"
+  },
+  {
+   "no": "7",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "8",
+   "title": "Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

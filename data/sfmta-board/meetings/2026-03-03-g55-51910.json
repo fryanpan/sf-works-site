@@ -1,0 +1,99 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-03-03",
+ "id": "g55-51910",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=51910",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45171"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes February 17, 2026, Regular Meeting",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens? Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 7 ayes (Resolution 260303-012)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications and making environmental finding",
+   "decision": "ADOPTED — 7 ayes (Resolution 260303-012)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving two Roadway Shared Spaces street closure applications for: 37th Avenue between Ortega and Pacheco streets, Saturday, April 18, 2026, through Saturday, November 21, 2026",
+   "decision": "ADOPTED — 7 ayes (Resolution 260303-013)"
+  },
+  {
+   "no": "11",
+   "title": "Potrero Yard Modernization Project",
+   "decision": "ADOPTED — 6 ayes, 1 nay (Resolution 260303-014)"
+  },
+  {
+   "no": "11A",
+   "title": "Authorizing the Director of Transportation to execute Contract No. 1334, Potrero Yard Modernization Project Infrastructure Facility Project Agreement, with PRG – Potrero Properties LLC",
+   "decision": "ADOPTED — 6 ayes, 1 nay (Resolution 260303-014)"
+  },
+  {
+   "no": "11B",
+   "title": "Authorizing the Director of Transportation to execute a Lease Development and Disposition Agreement (LDDA) with Plenary Potrero Housing LLC",
+   "decision": "ADOPTED — 6 ayes, 1 nay (Resolution 260303-014)"
+  },
+  {
+   "no": "12",
+   "title": "Approving parking regulations to establish paid on-street parking on all Treasure Island and Yerba Buena Island streets",
+   "decision": "ADOPTED — 7 ayes (Resolution 260303-016)"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a 6-month financial update for Fiscal Year 2025- 2026"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION",
+   "decision": "ADOPTED — 7 ayes (Resolution 260303-017)"
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 5 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

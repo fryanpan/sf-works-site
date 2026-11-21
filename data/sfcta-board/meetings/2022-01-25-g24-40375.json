@@ -1,0 +1,67 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2022-01-25",
+ "id": "g24-40375",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=40375",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the January 11, 2022 Meeting Consent Agenda"
+  },
+  {
+   "no": "9",
+   "title": "[Final Approval on First Appearance] Adopt the 2021 Annual Report"
+  },
+  {
+   "no": "4",
+   "title": "[Final Approval] Appoint Eric Rozell and Kevin Ortiz to the Community Advisory Committee"
+  },
+  {
+   "no": "5",
+   "title": "[Final Approval] Allocate $2,163,640 in Prop K Funds, with Conditions, for Two Requests"
+  },
+  {
+   "no": "6",
+   "title": "[Final Approval] Accept the Audit Report for the Fiscal Year Ended June 30, 2021"
+  },
+  {
+   "no": "7",
+   "title": "[Final Approval] Approve Programming of $4,055,000 in Senate Bill 1 Local Partnership Program Formula Funds for Construction of the Yerba Buena Island West Side Bridges Seismic Retrofit Project"
+  },
+  {
+   "no": "8",
+   "title": "[Final Approval] Approve the San Francisco Transportation Investment and Growth Strategy 2021 Update"
+  },
+  {
+   "no": "10",
+   "title": "San Francisco’s Climate Action Plan 2021 Update"
+  },
+  {
+   "no": "12",
+   "title": "Public Comment"
+  },
+  {
+   "no": "11",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "13",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

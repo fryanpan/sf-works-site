@@ -1,0 +1,100 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-09-07",
+ "id": "g55-39293",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=39293",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/24890"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - August 3, 2021 Regular Meeting, August 17, 2021 Special Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment for claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (Resolution 210907-100)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving parking and traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 210907-101)"
+  },
+  {
+   "no": "10.3",
+   "title": "Authorizing the Director to execute Modification No. 4 to Contract No. 1303R, 22 Fillmore Transit Priority Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 210907-102)"
+  },
+  {
+   "no": "10.4",
+   "title": "Authorizing the Director to execute a fund transfer agreement",
+   "decision": "ADOPTED — 6 ayes (Resolution 210907-103)"
+  },
+  {
+   "no": "10.5",
+   "title": "Approving retroactively a twelve-month pilot program beginning Aug 15, 2021-Aug 14, 2022, waiving Muni fares for regular service for customers 18 years of age and younger",
+   "decision": "ADOPTED — 6 ayes (Resolution 210907-104)"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code, Division II, Article 300, Section 310 to standardize administrative fines for violations of Article 1100",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "12A",
+   "title": "ESTABLISH – MUNI ONLY LANE – 4th Street, northbound, from Berry Street to 148 feet southerly"
+  },
+  {
+   "no": "12B",
+   "title": "ESTABLISH – TRANSIT AND TAXI ONLY LANE – 4th Street, northbound, from Berry Street to Channel Street"
+  },
+  {
+   "no": "12C",
+   "title": "ESTABLISH – NO LEFT TURN – 4th Street, northbound, at Berry Street"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

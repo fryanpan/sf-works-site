@@ -1,0 +1,51 @@
+{
+ "committee": "Transportation Authority Vision Zero Committee",
+ "date": "2020-06-25",
+ "id": "g172-36027",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=172&clip_id=36027",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=172"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Approve the Minutes of the October 4, 2019 Meeting"
+  },
+  {
+   "no": "3",
+   "title": "California State Transportation Agency Report of Findings of the Zero Traffic Fatalities Task Force"
+  },
+  {
+   "no": "4",
+   "title": "2019 Fatalities Report"
+  },
+  {
+   "no": "5",
+   "title": "Daylighting Program Update"
+  },
+  {
+   "no": "6",
+   "title": "Vision Zero Proactive Traffic Calming Update"
+  },
+  {
+   "no": "7",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "8",
+   "title": "Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

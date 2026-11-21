@@ -1,0 +1,112 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-09-22",
+ "id": "g22-36673",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=36673",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Commissioner Vacancy and Possible Election of New Vice-President"
+  },
+  {
+   "no": "4",
+   "title": "Approval of the Minutes of September 8, 2020"
+  },
+  {
+   "no": "5",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "6",
+   "title": "Communications"
+  },
+  {
+   "no": "7",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "8",
+   "title": "Results and follow-up actions for COVID-19 Employee Pulse Survey #2"
+  },
+  {
+   "no": "9",
+   "title": "Workforce Diversity and Equity Update"
+  },
+  {
+   "no": "10",
+   "title": "Bay Area Water Supply and Conservation Agency Update"
+  },
+  {
+   "no": "11",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "12a",
+   "title": "Approve Amendment No. 2 to Agreement No. CS-366, Emergency Planning, Technical Assistance, and Training Support, with AECOM Technical Services, Inc."
+  },
+  {
+   "no": "12b",
+   "title": "Accept work performed by A. Ruiz Construction for As-Needed Water Main Replacement at Various Locations, for a total contract amount of $8,596,901"
+  },
+  {
+   "no": "12c",
+   "title": "Approve an increase of $1,942,300 and 90 calendar days to the existing contract cost contingency for San Francisco Local Water As-Needed Paving (FY16-19)"
+  },
+  {
+   "no": "12d",
+   "title": "Accept work performed by Blocka Construction, Inc., Oceanside Water Pollution Control Plant and Westside Pump Station HVAC Upgrades"
+  },
+  {
+   "no": "13",
+   "title": "Approve proposed modifications to the SFPUC Floodwater Management Grant Assistance Program Grant Requirements and Terms"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and possible action to establish performance goals for Fiscal Year 2020-21 for the General Manager"
+  },
+  {
+   "no": "15",
+   "title": "Public comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel CLOSED SESSION"
+  },
+  {
+   "no": "17",
+   "title": "Proposed settlement of unlitigated claim with claimant’s release of all claims and the City to pay claimant $67,917"
+  },
+  {
+   "no": "18",
+   "title": "Conference with Legal Counsel – regarding the existing litigation in which the City is a petitioner"
+  },
+  {
+   "no": "19",
+   "title": "Announcement following Closed Session"
+  },
+  {
+   "no": "20",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "21",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

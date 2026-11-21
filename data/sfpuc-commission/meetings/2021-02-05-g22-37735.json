@@ -1,0 +1,37 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-02-05",
+ "id": "g22-37735",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=37735",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/February%205%20Special%20Meeting%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "SFPUC Presentation on the Scientific Basis for the Proposed Tuolumne River Voluntary Agreement"
+  },
+  {
+   "no": "4",
+   "title": "Response by Non-Governmental Organizations to the SFPUC’s Scientific Basis for the Proposed Tuolumne River Voluntary Agreement"
+  },
+  {
+   "no": "5",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

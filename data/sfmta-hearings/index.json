@@ -1,0 +1,1052 @@
+{
+ "body": "sfmta-hearings",
+ "name": "SFMTA engineering public hearings",
+ "source": "https://www.sfmta.com/past-meetings-and-events/2617",
+ "generated": "2026-11-10",
+ "since": "2019-01-01",
+ "range": [
+  "2019-08-16",
+  "2026-10-30"
+ ],
+ "listed": 147,
+ "held": 147,
+ "mirrored": 146,
+ "missing": 1,
+ "missingShare": 0.0068,
+ "items": 2128,
+ "notes": [
+  "The archive starts at 2019-08-16. A hearing whose results order is not yet posted is mirrored from its agenda, without decisions, and fetched again next run."
+ ],
+ "meetings": [
+  {
+   "date": "2019-08-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-16-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-09-13",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-13-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-4-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-10-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-18-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-01",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-1-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-11-15",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-15-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-6-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2019-12-27",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-27-2019",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-01-24",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-24-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-7-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-02-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-21-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-03-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-6-2020",
+   "outcome": "empty",
+   "reason": "agenda parsed to no items"
+  },
+  {
+   "date": "2020-06-12",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-12-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-17-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-07-31",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-31-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-08-14",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-14-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-4-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-09-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-18-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-2-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-16-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-10-30",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-30-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-11-13",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-13-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2020-12-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-4-2020",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-8-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-01-22",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-22-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-5-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-02-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-19-2021-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-5-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-03-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-19-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-2-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-16-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-04-30",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-30-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-05-14",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-14-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-4-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-06-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-18-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-2-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-16-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-07-30",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-30-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-08-13",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-13-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-3-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-09-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-17-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-01",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-1-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-10-15",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-15-2021",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2021-11-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-5-2021-2",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-01-14",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-14-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-4-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-02-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-18-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-4-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-03-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-18-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-8-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-04-22",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-22-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-6-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-05-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-20-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-3-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-06-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-17-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-07-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-8-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-07-22",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-22-2022-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-08-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-5-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-08-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-19-2022-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-2-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-09-23",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-23-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-7-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-10-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-21-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-11-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-4-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2022-12-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-2-2022",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-6-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-01-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-20-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-3-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-02-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-17-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-3-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-03-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-17-2023-3",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-7-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-04-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-21-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-5-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-05-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-19-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-2-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-06-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-16-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-7-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-07-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-21-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-4-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-08-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-18-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-01",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-1-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-09-22",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-22-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-6-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-10-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-20-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-11-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-3-2023-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2023-12-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-8-2023",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-5-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-01-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-19-2024-2",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-2-2024-1",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-02-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-16-2024-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-8-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-03-22",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-22-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-5-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-04-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-19-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-3-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-05-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-17-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-06-14",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-14-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-5-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-07-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-19-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-08-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-2-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-08-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-16-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-6-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-09-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-20-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-4-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-10-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-18-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-11-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-8-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2024-12-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-6-2024",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-01-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-17-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-7-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-02-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-21-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-7-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-03-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-21-2025-0",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-4-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-04-18",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-18-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-02",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-2-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-05-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-16-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-6-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-06-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-20-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-07-11",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-11-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-08-01",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-1-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-08-15",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-15-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-5-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-09-19",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-19-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-3-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-10-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-17-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-11-14",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-14-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2025-12-05",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-december-5-2025",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-01-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-january-16-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-6-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-02-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-february-20-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-06",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-6-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-03-20",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-march-20-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-03",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-3-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-04-17",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-april-17-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-08",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-8-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-05-22",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-may-22-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-12",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-12-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-06-26",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-june-26-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-10",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-10-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-07-24",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-july-24-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-08-07",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-7-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-08-21",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-august-21-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-04",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-4-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-09-25",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-september-25-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-16",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-16-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-10-30",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-30-2026",
+   "outcome": "mirrored"
+  }
+ ]
+}

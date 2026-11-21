@@ -1,0 +1,1765 @@
+{
+ "generated": "2026-11-11",
+ "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
+ "centerlines": {
+  "dataset": "https://data.sf.gov/d/3psu-pn9h",
+  "queried": "2026-11-11"
+ },
+ "projects": [
+  {
+   "node": "20936",
+   "name": "13th Street Safety Project",
+   "page": "https://www.sfmta.com/node/20936",
+   "phase": "Implementation / Construction",
+   "page_edited": "2026-08-04",
+   "year": 2026,
+   "quote": "2025 - 2026 Construction Pending",
+   "timeline_status": "Pending",
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 2,
+   "blocks": [
+    {
+     "cnn": "4978101",
+     "street": "DUBOCE AVE",
+     "from": "MISSION ST",
+     "to": "WOODWARD ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.420008,
+       37.770111
+      ],
+      [
+       -122.420227,
+       37.769936
+      ],
+      [
+       -122.420808,
+       37.769924
+      ],
+      [
+       -122.420939,
+       37.769918
+      ]
+     ]
+    },
+    {
+     "cnn": "4978102",
+     "street": "DUBOCE AVE",
+     "from": "WOODWARD ST",
+     "to": "STEVENSON ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.420939,
+       37.769918
+      ],
+      [
+       -122.421406,
+       37.769895
+      ],
+      [
+       -122.421583,
+       37.769918
+      ]
+     ]
+    },
+    {
+     "cnn": "4978201",
+     "street": "DUBOCE AVE",
+     "from": "MISSION ST",
+     "to": "STEVENSON ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.420008,
+       37.770111
+      ],
+      [
+       -122.420174,
+       37.770137
+      ],
+      [
+       -122.421264,
+       37.770018
+      ],
+      [
+       -122.421583,
+       37.769918
+      ]
+     ]
+    },
+    {
+     "cnn": "4979000",
+     "street": "DUBOCE AVE",
+     "from": "STEVENSON ST",
+     "to": "VALENCIA ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.421583,
+       37.769918
+      ],
+      [
+       -122.422365,
+       37.769868
+      ]
+     ]
+    },
+    {
+     "cnn": "550101",
+     "street": "13TH ST",
+     "from": "FOLSOM ST",
+     "to": "SOUTH VAN NESS AVE",
+     "rows": 1,
+     "pts": [
+      [
+       -122.415577,
+       37.769591
+      ],
+      [
+       -122.415729,
+       37.769571
+      ],
+      [
+       -122.416801,
+       37.769657
+      ],
+      [
+       -122.417678,
+       37.769756
+      ],
+      [
+       -122.417753,
+       37.769815
+      ]
+     ]
+    },
+    {
+     "cnn": "550201",
+     "street": "13TH ST",
+     "from": "FOLSOM ST",
+     "to": "SOUTH VAN NESS AVE",
+     "rows": 1,
+     "pts": [
+      [
+       -122.415577,
+       37.769591
+      ],
+      [
+       -122.415718,
+       37.769614
+      ],
+      [
+       -122.41675,
+       37.769699
+      ],
+      [
+       -122.417637,
+       37.769817
+      ],
+      [
+       -122.417753,
+       37.769815
+      ]
+     ]
+    },
+    {
+     "cnn": "551101",
+     "street": "13TH ST",
+     "from": "SOUTH VAN NESS AVE",
+     "to": "HWY 101 S ON RAMP",
+     "rows": 1,
+     "pts": [
+      [
+       -122.417753,
+       37.769815
+      ],
+      [
+       -122.417904,
+       37.76977
+      ],
+      [
+       -122.418125,
+       37.769806
+      ]
+     ]
+    },
+    {
+     "cnn": "551102",
+     "street": "13TH ST",
+     "from": "HWY 101 S ON RAMP",
+     "to": "MISSION ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.418125,
+       37.769806
+      ],
+      [
+       -122.419743,
+       37.770069
+      ],
+      [
+       -122.420008,
+       37.770111
+      ]
+     ]
+    },
+    {
+     "cnn": "551201",
+     "street": "13TH ST",
+     "from": "SOUTH VAN NESS AVE",
+     "to": "MISSION ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.417753,
+       37.769815
+      ],
+      [
+       -122.417879,
+       37.769906
+      ],
+      [
+       -122.419736,
+       37.770208
+      ],
+      [
+       -122.420008,
+       37.770111
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "30111",
+   "name": "Cesar Chavez Bikeway Improvements Project",
+   "page": "https://www.sfmta.com/node/30111",
+   "phase": "Detailed Design",
+   "page_edited": "2026-11-06",
+   "year": 2027,
+   "quote": "Early 2027 Construction Pending",
+   "timeline_status": "Pending",
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 2,
+   "blocks": [
+    {
+     "cnn": "2467000",
+     "street": "CESAR CHAVEZ ST",
+     "from": "ILLINOIS ST",
+     "to": "03RD ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.386568,
+       37.750325
+      ],
+      [
+       -122.387585,
+       37.750263
+      ]
+     ]
+    },
+    {
+     "cnn": "2468000",
+     "street": "CESAR CHAVEZ ST",
+     "from": "03RD ST",
+     "to": "TENNESSEE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.387585,
+       37.750263
+      ],
+      [
+       -122.388508,
+       37.750206
+      ]
+     ]
+    },
+    {
+     "cnn": "2469000",
+     "street": "CESAR CHAVEZ ST",
+     "from": "TENNESSEE ST",
+     "to": "MINNESOTA ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.388508,
+       37.750206
+      ],
+      [
+       -122.389478,
+       37.750145
+      ]
+     ]
+    },
+    {
+     "cnn": "2470000",
+     "street": "CESAR CHAVEZ ST",
+     "from": "MINNESOTA ST",
+     "to": "INDIANA ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.389478,
+       37.750145
+      ],
+      [
+       -122.390433,
+       37.750118
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "27339",
+   "name": "Main Street Streetscape Project",
+   "page": "https://www.sfmta.com/node/27339",
+   "phase": "Detailed Design",
+   "page_edited": "2024-12-12",
+   "year": 2027,
+   "quote": "Predicted Completion 2027",
+   "timeline_status": null,
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 1,
+   "blocks": [
+    {
+     "cnn": "8627000",
+     "street": "MAIN ST",
+     "from": "MARKET ST",
+     "to": "MISSION ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.396504,
+       37.793097
+      ],
+      [
+       -122.39494,
+       37.791842
+      ]
+     ]
+    },
+    {
+     "cnn": "8628000",
+     "street": "MAIN ST",
+     "from": "MISSION ST",
+     "to": "HOWARD ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.39494,
+       37.791842
+      ],
+      [
+       -122.393408,
+       37.790613
+      ]
+     ]
+    },
+    {
+     "cnn": "8629001",
+     "street": "MAIN ST",
+     "from": "HOWARD ST",
+     "to": "EAST TEHAMA ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.393408,
+       37.790613
+      ],
+      [
+       -122.392853,
+       37.790167
+      ]
+     ]
+    },
+    {
+     "cnn": "8629002",
+     "street": "MAIN ST",
+     "from": "EAST TEHAMA ST",
+     "to": "EAST CLEMENTINA ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.392853,
+       37.790167
+      ],
+      [
+       -122.392383,
+       37.78979
+      ]
+     ]
+    },
+    {
+     "cnn": "8629003",
+     "street": "MAIN ST",
+     "from": "EAST CLEMENTINA ST",
+     "to": "FOLSOM ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.392383,
+       37.78979
+      ],
+      [
+       -122.391858,
+       37.789369
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "28565",
+   "name": "Oak Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28565",
+   "phase": null,
+   "page_edited": "2026-08-05",
+   "year": 2027,
+   "quote": "Summer 2026 - early 2027 Implementation",
+   "timeline_status": null,
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 1,
+   "blocks": [
+    {
+     "cnn": "12952000",
+     "street": "OAK ST",
+     "from": "OAK ST",
+     "to": "STANYAN ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.453295,
+       37.77139
+      ],
+      [
+       -122.453541,
+       37.77142
+      ],
+      [
+       -122.453758,
+       37.771413
+      ],
+      [
+       -122.45398,
+       37.771428
+      ]
+     ]
+    },
+    {
+     "cnn": "12953000",
+     "street": "OAK ST",
+     "from": "SHRADER ST",
+     "to": "OAK ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.452242,
+       37.77123
+      ],
+      [
+       -122.452554,
+       37.771258
+      ],
+      [
+       -122.453295,
+       37.77139
+      ]
+     ]
+    },
+    {
+     "cnn": "9763000",
+     "street": "OAK ST",
+     "from": "BAKER ST",
+     "to": "LYON ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.440735,
+       37.772713
+      ],
+      [
+       -122.442378,
+       37.772504
+      ]
+     ]
+    },
+    {
+     "cnn": "9764000",
+     "street": "OAK ST",
+     "from": "LYON ST",
+     "to": "CENTRAL AVE",
+     "rows": 1,
+     "pts": [
+      [
+       -122.442378,
+       37.772504
+      ],
+      [
+       -122.444024,
+       37.772295
+      ]
+     ]
+    },
+    {
+     "cnn": "9765000",
+     "street": "OAK ST",
+     "from": "CENTRAL AVE",
+     "to": "MASONIC AVE",
+     "rows": 1,
+     "pts": [
+      [
+       -122.444024,
+       37.772295
+      ],
+      [
+       -122.445717,
+       37.77208
+      ]
+     ]
+    },
+    {
+     "cnn": "9766000",
+     "street": "OAK ST",
+     "from": "MASONIC AVE",
+     "to": "ASHBURY ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.445717,
+       37.77208
+      ],
+      [
+       -122.447312,
+       37.771878
+      ]
+     ]
+    },
+    {
+     "cnn": "9767000",
+     "street": "OAK ST",
+     "from": "ASHBURY ST",
+     "to": "CLAYTON ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.447312,
+       37.771878
+      ],
+      [
+       -122.448958,
+       37.771669
+      ]
+     ]
+    },
+    {
+     "cnn": "9768000",
+     "street": "OAK ST",
+     "from": "CLAYTON ST",
+     "to": "COLE ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.448958,
+       37.771669
+      ],
+      [
+       -122.4506,
+       37.77146
+      ]
+     ]
+    },
+    {
+     "cnn": "9769000",
+     "street": "OAK ST",
+     "from": "COLE ST",
+     "to": "SHRADER ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.4506,
+       37.77146
+      ],
+      [
+       -122.451871,
+       37.771299
+      ],
+      [
+       -122.452242,
+       37.77123
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "24302",
+   "name": "Transbay Howard Streetscape Improvement Project",
+   "page": "https://www.sfmta.com/node/24302",
+   "phase": "Implementation / Construction",
+   "page_edited": "2026-10-08",
+   "year": 2028,
+   "quote": "2026 - 2028 Construction",
+   "timeline_status": "Completed",
+   "conflict": "the page's timeline marks \"2026 - 2028 Construction\" Completed; its text describes the bikeway as still to be built",
+   "class": "CLASS IV",
+   "directions": 2,
+   "blocks": [
+    {
+     "cnn": "7028000",
+     "street": "HOWARD ST",
+     "from": "STEUART ST",
+     "to": "SPEAR ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.391646,
+       37.792006
+      ],
+      [
+       -122.392525,
+       37.791311
+      ]
+     ]
+    },
+    {
+     "cnn": "7029000",
+     "street": "HOWARD ST",
+     "from": "SPEAR ST",
+     "to": "MAIN ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.392525,
+       37.791311
+      ],
+      [
+       -122.393408,
+       37.790613
+      ]
+     ]
+    },
+    {
+     "cnn": "7030000",
+     "street": "HOWARD ST",
+     "from": "MAIN ST",
+     "to": "BEALE ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.393408,
+       37.790613
+      ],
+      [
+       -122.394276,
+       37.789926
+      ]
+     ]
+    },
+    {
+     "cnn": "7031000",
+     "street": "HOWARD ST",
+     "from": "BEALE ST",
+     "to": "FREMONT ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.394276,
+       37.789926
+      ],
+      [
+       -122.395151,
+       37.789235
+      ]
+     ]
+    },
+    {
+     "cnn": "7032000",
+     "street": "HOWARD ST",
+     "from": "FREMONT ST",
+     "to": "01ST ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.395151,
+       37.789235
+      ],
+      [
+       -122.396035,
+       37.788536
+      ]
+     ]
+    },
+    {
+     "cnn": "7033000",
+     "street": "HOWARD ST",
+     "from": "01ST ST",
+     "to": "MALDEN ALY",
+     "rows": 2,
+     "pts": [
+      [
+       -122.396035,
+       37.788536
+      ],
+      [
+       -122.397932,
+       37.787036
+      ]
+     ]
+    },
+    {
+     "cnn": "7034000",
+     "street": "HOWARD ST",
+     "from": "MALDEN ALY",
+     "to": "02ND ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.397932,
+       37.787036
+      ],
+      [
+       -122.398257,
+       37.786779
+      ]
+     ]
+    },
+    {
+     "cnn": "7035000",
+     "street": "HOWARD ST",
+     "from": "02ND ST",
+     "to": "NEW MONTGOMERY ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.398257,
+       37.786779
+      ],
+      [
+       -122.398977,
+       37.786209
+      ]
+     ]
+    },
+    {
+     "cnn": "7036000",
+     "street": "HOWARD ST",
+     "from": "NEW MONTGOMERY ST",
+     "to": "HAWTHORNE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.398977,
+       37.786209
+      ],
+      [
+       -122.39937,
+       37.785899
+      ]
+     ]
+    },
+    {
+     "cnn": "7037000",
+     "street": "HOWARD ST",
+     "from": "HAWTHORNE ST",
+     "to": "03RD ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.39937,
+       37.785899
+      ],
+      [
+       -122.400468,
+       37.78503
+      ]
+     ]
+    },
+    {
+     "cnn": "7038000",
+     "street": "HOWARD ST",
+     "from": "03RD ST",
+     "to": "04TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.400468,
+       37.78503
+      ],
+      [
+       -122.402708,
+       37.783259
+      ]
+     ]
+    },
+    {
+     "cnn": "7027000",
+     "street": "HOWARD ST",
+     "from": "THE EMBARCADERO",
+     "to": "STEUART ST",
+     "rows": 1,
+     "pts": [
+      [
+       -122.391096,
+       37.792436
+      ],
+      [
+       -122.391646,
+       37.792006
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "752",
+   "name": "Central Embarcadero Safety Project",
+   "page": "https://www.sfmta.com/node/752",
+   "phase": null,
+   "page_edited": "2026-09-09",
+   "year": 2028,
+   "quote": "2026-2028 Construction Pending",
+   "timeline_status": "Pending",
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 2,
+   "blocks": [
+    {
+     "cnn": "12548201",
+     "street": "THE EMBARCADERO ",
+     "from": "BRANNAN ST",
+     "to": "BRYANT ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.388023,
+       37.784774
+      ],
+      [
+       -122.387862,
+       37.784843
+      ],
+      [
+       -122.387772,
+       37.785912
+      ],
+      [
+       -122.387709,
+       37.786977
+      ],
+      [
+       -122.387795,
+       37.787097
+      ]
+     ]
+    },
+    {
+     "cnn": "12549201",
+     "street": "THE EMBARCADERO ",
+     "from": "BRYANT ST",
+     "to": "HARRISON ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.387795,
+       37.787097
+      ],
+      [
+       -122.38767,
+       37.787175
+      ],
+      [
+       -122.387662,
+       37.787307
+      ],
+      [
+       -122.387723,
+       37.788035
+      ],
+      [
+       -122.387738,
+       37.78826
+      ],
+      [
+       -122.387868,
+       37.788725
+      ],
+      [
+       -122.38793,
+       37.788907
+      ],
+      [
+       -122.388032,
+       37.78913
+      ],
+      [
+       -122.388291,
+       37.789538
+      ],
+      [
+       -122.388481,
+       37.789572
+      ]
+     ]
+    },
+    {
+     "cnn": "12550202",
+     "street": "THE EMBARCADERO ",
+     "from": "HARRISON ST",
+     "to": "FOLSOM ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.388481,
+       37.789572
+      ],
+      [
+       -122.388477,
+       37.789754
+      ],
+      [
+       -122.38982,
+       37.79082
+      ],
+      [
+       -122.390012,
+       37.790827
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "381",
+   "name": "Folsom Streetscape Project",
+   "page": "https://www.sfmta.com/node/381",
+   "phase": "Current",
+   "page_edited": "2026-10-05",
+   "year": 2026,
+   "quote": "Construction: 2024 to 2026",
+   "timeline_status": null,
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 2,
+   "blocks": [
+    {
+     "cnn": "5660000",
+     "street": "FOLSOM ST",
+     "from": "02ND ST",
+     "to": "HAWTHORNE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.396705,
+       37.785542
+      ],
+      [
+       -122.397812,
+       37.784667
+      ]
+     ]
+    },
+    {
+     "cnn": "5661000",
+     "street": "FOLSOM ST",
+     "from": "HAWTHORNE ST",
+     "to": "03RD ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.397812,
+       37.784667
+      ],
+      [
+       -122.39893,
+       37.783785
+      ]
+     ]
+    },
+    {
+     "cnn": "5662000",
+     "street": "FOLSOM ST",
+     "from": "03RD ST",
+     "to": "MABINI ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.39893,
+       37.783785
+      ],
+      [
+       -122.400374,
+       37.782645
+      ]
+     ]
+    },
+    {
+     "cnn": "5663000",
+     "street": "FOLSOM ST",
+     "from": "MABINI ST",
+     "to": "04TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.400374,
+       37.782645
+      ],
+      [
+       -122.40116,
+       37.782024
+      ]
+     ]
+    },
+    {
+     "cnn": "5664000",
+     "street": "FOLSOM ST",
+     "from": "04TH ST",
+     "to": "05TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.40116,
+       37.782024
+      ],
+      [
+       -122.403387,
+       37.780265
+      ]
+     ]
+    },
+    {
+     "cnn": "5665000",
+     "street": "FOLSOM ST",
+     "from": "05TH ST",
+     "to": "FALMOUTH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.403387,
+       37.780265
+      ],
+      [
+       -122.404431,
+       37.77944
+      ]
+     ]
+    },
+    {
+     "cnn": "5666000",
+     "street": "FOLSOM ST",
+     "from": "FALMOUTH ST",
+     "to": "06TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.404431,
+       37.77944
+      ],
+      [
+       -122.405615,
+       37.778505
+      ]
+     ]
+    },
+    {
+     "cnn": "5667000",
+     "street": "FOLSOM ST",
+     "from": "06TH ST",
+     "to": "HARRIET ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.405615,
+       37.778505
+      ],
+      [
+       -122.40615,
+       37.778082
+      ]
+     ]
+    },
+    {
+     "cnn": "5668000",
+     "street": "FOLSOM ST",
+     "from": "HARRIET ST",
+     "to": "COLUMBIA SQUARE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.40615,
+       37.778082
+      ],
+      [
+       -122.406436,
+       37.777857
+      ]
+     ]
+    },
+    {
+     "cnn": "5669000",
+     "street": "FOLSOM ST",
+     "from": "COLUMBIA SQUARE ST",
+     "to": "RUSS ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.406436,
+       37.777857
+      ],
+      [
+       -122.406724,
+       37.777629
+      ]
+     ]
+    },
+    {
+     "cnn": "5670000",
+     "street": "FOLSOM ST",
+     "from": "RUSS ST",
+     "to": "SHERMAN ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.406724,
+       37.777629
+      ],
+      [
+       -122.407015,
+       37.7774
+      ]
+     ]
+    },
+    {
+     "cnn": "5671000",
+     "street": "FOLSOM ST",
+     "from": "SHERMAN ST",
+     "to": "MOSS ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.407015,
+       37.7774
+      ],
+      [
+       -122.407294,
+       37.777179
+      ]
+     ]
+    },
+    {
+     "cnn": "5672000",
+     "street": "FOLSOM ST",
+     "from": "MOSS ST",
+     "to": "07TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.407294,
+       37.777179
+      ],
+      [
+       -122.407842,
+       37.776746
+      ]
+     ]
+    },
+    {
+     "cnn": "5673000",
+     "street": "FOLSOM ST",
+     "from": "07TH ST",
+     "to": "LANGTON ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.407842,
+       37.776746
+      ],
+      [
+       -122.40838,
+       37.776318
+      ]
+     ]
+    },
+    {
+     "cnn": "5674000",
+     "street": "FOLSOM ST",
+     "from": "LANGTON ST",
+     "to": "HALLAM ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.40838,
+       37.776318
+      ],
+      [
+       -122.408846,
+       37.775953
+      ]
+     ]
+    },
+    {
+     "cnn": "5676000",
+     "street": "FOLSOM ST",
+     "from": "RAUSCH ST",
+     "to": "RODGERS ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.408947,
+       37.775873
+      ],
+      [
+       -122.409481,
+       37.775451
+      ]
+     ]
+    },
+    {
+     "cnn": "5677000",
+     "street": "FOLSOM ST",
+     "from": "RODGERS ST",
+     "to": "08TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.409481,
+       37.775451
+      ],
+      [
+       -122.410063,
+       37.774992
+      ]
+     ]
+    },
+    {
+     "cnn": "5678000",
+     "street": "FOLSOM ST",
+     "from": "08TH ST",
+     "to": "09TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.410063,
+       37.774992
+      ],
+      [
+       -122.41161,
+       37.773769
+      ]
+     ]
+    },
+    {
+     "cnn": "5679000",
+     "street": "FOLSOM ST",
+     "from": "09TH ST",
+     "to": "DORE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.41161,
+       37.773769
+      ],
+      [
+       -122.412225,
+       37.773285
+      ]
+     ]
+    },
+    {
+     "cnn": "5680000",
+     "street": "FOLSOM ST",
+     "from": "DORE ST",
+     "to": "10TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.412225,
+       37.773285
+      ],
+      [
+       -122.412824,
+       37.772812
+      ]
+     ]
+    },
+    {
+     "cnn": "5681000",
+     "street": "FOLSOM ST",
+     "from": "10TH ST",
+     "to": "JUNIPER ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.412824,
+       37.772812
+      ],
+      [
+       -122.41342,
+       37.772343
+      ]
+     ]
+    },
+    {
+     "cnn": "5682000",
+     "street": "FOLSOM ST",
+     "from": "JUNIPER ST",
+     "to": "11TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.41342,
+       37.772343
+      ],
+      [
+       -122.414027,
+       37.771864
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "node": "381",
+   "name": "Howard Streetscape Project",
+   "page": "https://www.sfmta.com/node/381",
+   "phase": "Current",
+   "page_edited": "2026-10-05",
+   "year": 2029,
+   "quote": "Construction: 2026 to 2029",
+   "timeline_status": null,
+   "conflict": null,
+   "class": "CLASS IV",
+   "directions": 2,
+   "blocks": [
+    {
+     "cnn": "7039001",
+     "street": "HOWARD ST",
+     "from": "04TH ST",
+     "to": "05TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.402708,
+       37.783259
+      ],
+      [
+       -122.404933,
+       37.7815
+      ]
+     ]
+    },
+    {
+     "cnn": "7041000",
+     "street": "HOWARD ST",
+     "from": "05TH ST",
+     "to": "MARY ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.404933,
+       37.7815
+      ],
+      [
+       -122.405719,
+       37.780878
+      ]
+     ]
+    },
+    {
+     "cnn": "7042000",
+     "street": "HOWARD ST",
+     "from": "MARY ST",
+     "to": "06TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.405719,
+       37.780878
+      ],
+      [
+       -122.407159,
+       37.779739
+      ]
+     ]
+    },
+    {
+     "cnn": "7043000",
+     "street": "HOWARD ST",
+     "from": "06TH ST",
+     "to": "HARRIET ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.407159,
+       37.779739
+      ],
+      [
+       -122.407691,
+       37.779318
+      ]
+     ]
+    },
+    {
+     "cnn": "7044000",
+     "street": "HOWARD ST",
+     "from": "HARRIET ST",
+     "to": "RUSS ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.407691,
+       37.779318
+      ],
+      [
+       -122.408272,
+       37.778861
+      ]
+     ]
+    },
+    {
+     "cnn": "7045000",
+     "street": "HOWARD ST",
+     "from": "RUSS ST",
+     "to": "MOSS ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.408272,
+       37.778861
+      ],
+      [
+       -122.408833,
+       37.778416
+      ]
+     ]
+    },
+    {
+     "cnn": "7046000",
+     "street": "HOWARD ST",
+     "from": "MOSS ST",
+     "to": "07TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.408833,
+       37.778416
+      ],
+      [
+       -122.409387,
+       37.777977
+      ]
+     ]
+    },
+    {
+     "cnn": "7047000",
+     "street": "HOWARD ST",
+     "from": "07TH ST",
+     "to": "LANGTON ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.409387,
+       37.777977
+      ],
+      [
+       -122.409923,
+       37.777553
+      ]
+     ]
+    },
+    {
+     "cnn": "7048000",
+     "street": "HOWARD ST",
+     "from": "LANGTON ST",
+     "to": "RAUSCH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.409923,
+       37.777553
+      ],
+      [
+       -122.410506,
+       37.777092
+      ]
+     ]
+    },
+    {
+     "cnn": "7049000",
+     "street": "HOWARD ST",
+     "from": "RAUSCH ST",
+     "to": "SUMNER ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.410506,
+       37.777092
+      ],
+      [
+       -122.411014,
+       37.77669
+      ]
+     ]
+    },
+    {
+     "cnn": "7050000",
+     "street": "HOWARD ST",
+     "from": "SUMNER ST",
+     "to": "08TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.411014,
+       37.77669
+      ],
+      [
+       -122.411606,
+       37.776221
+      ]
+     ]
+    },
+    {
+     "cnn": "7051000",
+     "street": "HOWARD ST",
+     "from": "08TH ST",
+     "to": "09TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.411606,
+       37.776221
+      ],
+      [
+       -122.413161,
+       37.774992
+      ]
+     ]
+    },
+    {
+     "cnn": "7052000",
+     "street": "HOWARD ST",
+     "from": "09TH ST",
+     "to": "WASHBURN ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.413161,
+       37.774992
+      ],
+      [
+       -122.413587,
+       37.77466
+      ]
+     ]
+    },
+    {
+     "cnn": "7053000",
+     "street": "HOWARD ST",
+     "from": "WASHBURN ST",
+     "to": "DORE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.413587,
+       37.77466
+      ],
+      [
+       -122.413769,
+       37.774516
+      ]
+     ]
+    },
+    {
+     "cnn": "7054000",
+     "street": "HOWARD ST",
+     "from": "DORE ST",
+     "to": "GRACE ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.413769,
+       37.774516
+      ],
+      [
+       -122.413944,
+       37.774378
+      ]
+     ]
+    },
+    {
+     "cnn": "7055000",
+     "street": "HOWARD ST",
+     "from": "GRACE ST",
+     "to": "10TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.413944,
+       37.774378
+      ],
+      [
+       -122.414368,
+       37.774043
+      ]
+     ]
+    },
+    {
+     "cnn": "7056000",
+     "street": "HOWARD ST",
+     "from": "10TH ST",
+     "to": "11TH ST",
+     "rows": 2,
+     "pts": [
+      [
+       -122.414368,
+       37.774043
+      ],
+      [
+       -122.415561,
+       37.773101
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "uncounted": [
+  {
+   "node": "44135",
+   "name": "Mission Bay Blvd Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44135",
+   "year": 2026,
+   "quote": "This project is complete as of as of August 2026",
+   "why": "posts on an existing lane; the page gives no cross streets"
+  },
+  {
+   "node": "2403",
+   "name": "Mission / Geneva Safety Project",
+   "page": "https://www.sfmta.com/node/2403",
+   "year": 2026,
+   "quote": "Fall 2022 - Early 2026 Full Project Construction Pending",
+   "why": "\"bike lane connectivity upgrades\" on Geneva, no bikeway type named"
+  },
+  {
+   "node": "1146",
+   "name": "5th Street Improvement Project",
+   "page": "https://www.sfmta.com/node/1146",
+   "year": null,
+   "quote": "once funding is secured",
+   "why": "separated bikeway named, no date: construction \"once funding is secured\""
+  },
+  {
+   "node": "21212",
+   "name": "Anza Street Bike Lanes Project",
+   "page": "https://www.sfmta.com/node/21212",
+   "year": null,
+   "quote": "Summer 2021 Construction Pending",
+   "why": "date passed, page not updated"
+  },
+  {
+   "node": "18897",
+   "name": "Active Beale Street",
+   "page": "https://www.sfmta.com/node/18897",
+   "year": null,
+   "quote": "Summer & Winter 2020 Construction Pending",
+   "why": "date passed, page not updated"
+  },
+  {
+   "node": "44134",
+   "name": "Bosworth/Monterey Connections Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44134",
+   "year": 2027,
+   "quote": "Late 2027 Construction Pending",
+   "why": "no bikeway type named"
+  },
+  {
+   "node": "44133",
+   "name": "Jefferson Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/44133",
+   "year": 2027,
+   "quote": "2027 Final Construction Pending",
+   "why": "no bikeway type named"
+  },
+  {
+   "node": "29974",
+   "name": "Bayview Community Pathway",
+   "page": "https://www.sfmta.com/node/29974",
+   "year": 2028,
+   "quote": "2028 Construction Pending",
+   "why": "no bikeway type named"
+  },
+  {
+   "node": "19953",
+   "name": "Page Slow Street",
+   "page": "https://www.sfmta.com/node/19953",
+   "year": null,
+   "quote": "2027+ Construction Pending",
+   "why": "improvements to be decided"
+  },
+  {
+   "node": "28373",
+   "name": "Arguello Safety Project",
+   "page": "https://www.sfmta.com/node/28373",
+   "year": 2027,
+   "quote": "Spring 2027 Implementation Pending",
+   "why": "targeted intersection work on the existing bike lanes; no new bikeway named"
+  },
+  {
+   "node": "28582",
+   "name": "Sutter Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28582",
+   "year": null,
+   "quote": "the SFMTA has decided to pause the project",
+   "why": "paused"
+  },
+  {
+   "node": "43636",
+   "name": "Brotherhood-Alemany Quick-Build Project",
+   "page": "https://www.sfmta.com/node/43636",
+   "year": 2026,
+   "quote": "2026 Implementation Pending",
+   "why": "no bikeway type named"
+  },
+  {
+   "node": "45074",
+   "name": "Innes Avenue Quick-Build Project",
+   "page": "https://www.sfmta.com/node/45074",
+   "year": 2027,
+   "quote": "Project Implementation Late 2026 - 2027 Pending",
+   "why": "work on existing bike lanes; no new bikeway named"
+  },
+  {
+   "node": "24645",
+   "name": "Golden Gate Park Access and Safety Program",
+   "page": "https://www.sfmta.com/node/24645",
+   "year": null,
+   "quote": "Spring 2022 Implementation & Evaluation Pending",
+   "why": "no bikeway type named on the page; its only date has passed"
+  },
+  {
+   "node": "917",
+   "name": "San Bruno Ave Multimodal Improvement Project",
+   "page": "https://www.sfmta.com/node/917",
+   "year": null,
+   "quote": "Bike Lanes between Mansell and Dwight (future date to be determined)",
+   "why": "bike lanes named, no date"
+  },
+  {
+   "node": "44339",
+   "name": "8 Bayshore: Visitacion Valley Stop Improvements",
+   "page": "https://www.sfmta.com/node/44339",
+   "year": null,
+   "quote": "A boarding island on Geneva Avenue with a protected bike lane would also be added",
+   "why": "protected bike lane at one boarding island named, no date"
+  }
+ ]
+}

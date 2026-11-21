@@ -1,0 +1,151 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2026-01-27",
+ "id": "g22-51665",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=51665",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/1.27.2026_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of January 13, 2026",
+   "decision": "approve the amended Minutes of January 13, 2026",
+   "text": "Approval of the Minutes of January 13, 2026 A correction was noted for Agenda Item No. 17 to read: The Commission took no action during Closed Session"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Overview of SFPUC Wholesale Customers, Water Supply Agreement, and the Bay Area Water Supply and Conservation Agency"
+  },
+  {
+   "no": "5b",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements"
+  },
+  {
+   "no": "6",
+   "title": "Bay Area Water Supply and Conservation Agency Report"
+  },
+  {
+   "no": "7",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "7a",
+   "title": "Approve the novation of Contract No. PRO.0262.B Technical Services – Renewable & Advanced Energy Generation, to transfer the existing contract from Sage Renewable Energy Consulting, Inc., DBA NV5, to NV5 Consultants, Inc",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve Consent Calendar Item Nos. 7a, 7b, 7d, and 7e",
+   "resolution": "26-0011",
+   "from": "minutes"
+  },
+  {
+   "no": "7b",
+   "title": "Award Contract No. PRO.0318 A-D, As-Needed Wastewater and Stormwater Services, to AECOM-Lotus Joint Venture (JV) ( PRO.0318.A); Brown & Caldwell – Freyer & Laureta JV (PRO.0318.B); Woodard & Curran – SRT JV (Woodard & Curran) (PRO.0318.C); and Kennedy/Jenks – JHCE JV(PRO.0318.D), each in the amount not-to-exceed $8,000,000 and with a duration of five years",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve Consent Calendar Item Nos. 7a, 7b, 7d, and 7e",
+   "resolution": "26-0012",
+   "from": "minutes"
+  },
+  {
+   "no": "7c",
+   "title": "Approve Amendments No. 1 to Contract Nos. PRO.0254.A and B, Project Scheduling and Cost Control Staff Augmentation Services, with CM Pros (PRO.0254.A) and with PMA Consultants LLC and Dabri Joint Venture (PRO.0254.B), increasing each contract by $1,500,000, for a total not-to-exceed contract amount of $9,000,000 per contract, with no change to the contract duration, to continue to provide program/project scheduling, critical path method scheduling, forecasting, change control, cost controls, and cost estimating for currently initiated capital improvement projects in the SFPUC Capital Plan. (Robinson) Item No. 7c was removed from Commission consideration and no Commission action was taken",
+   "parent": "CONSENT CALENDAR",
+   "decision": "removed",
+   "resolution": null,
+   "from": "minutes"
+  },
+  {
+   "no": "7d",
+   "title": "Award Job Order Contract No. JOC-115, General Engineering (A-License) Construction (Marine Emphasis), San Francisco, San Mateo, Santa Clara, and Alameda Counties, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of two years, to the responsible bidder that submitted the lowest responsive bid, Power Engineering Construction Company, to perform A-licensed general engineering construction work with a marine emphasis on San Francisco Public Utilities Commission systems and operations around the Bay Area",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve Consent Calendar Item Nos. 7a, 7b, 7d, and 7e",
+   "resolution": "26-0013",
+   "from": "minutes"
+  },
+  {
+   "no": "7e",
+   "title": "Accept work performed by A. Ruiz Construction Co. & Assoc. Inc., under Contract No. WD-2848, 8-Inch Ductile Iron Water Main Replacement on Gold Mine Drive from Topaz Way to Diamond Heights Boulevard and Various Side Streets; approve Modification No. 6 (Final) decreasing the contract amount by $1,302,996, with no change to the contract duration, for a total contract amount of $6,609,144, and a total contract duration of 608 consecutive calendar days (approximately one year and eight months), to adjust the final contract amount to the value of actual contract quantities completed; and authorize final payment to the contractor",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve Consent Calendar Item Nos. 7a, 7b, 7d, and 7e",
+   "resolution": "26-0014",
+   "from": "minutes"
+  },
+  {
+   "no": "8",
+   "title": "Action to adopt Rules and Regulations Governing Procedures for Submitting Written Objections to Proposed Water and Sewer Fees or Charges.",
+   "decision": "approve Item 8",
+   "resolution": "26-0015",
+   "text": "Public Hearing to consider and possible action to adopt Rules and Regulations Governing Procedures for Submitting Written Objections to Proposed Water and Sewer Fees or Charges"
+  },
+  {
+   "no": "9",
+   "title": "Public Hearing to consider adopting schedules of rates of the San Francisco Public Utilities Commission",
+   "decision": "approve Item 9",
+   "resolution": "26-0016",
+   "text": "Public Hearing to consider adopting schedules of rates of the San Francisco Public Utilities Commission (SFPUC) Power Enterprise for CleanPowerSF power service in San Francisco to be effective March 1, 2026. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA) pursuant to San Francisco Administrative Code section 31.04(h). The Planning Department has determined that this action is exempt from the CEQA. The Commission will rely on that determination to make its decision on this action"
+  },
+  {
+   "no": "10",
+   "title": "Possible action to approve: 1- the proposed ?Electric Schedule NBT-CleanPowerSF, Net Billing Tariff? 2- a revised ?Electric Schedule NEM-CleanPowerSF, Net Energy Metering?",
+   "decision": "removed",
+   "text": "Public Hearing to consider possible action to approve: 1) the proposed “Electric Schedule NBT-CleanPowerSF, Net Billing Tariff” (CleanPowerSF Net Billing Tariff) and 2) a revised “Electric Schedule NEM-CleanPowerSF, Net Energy Metering” (NEM Tariff) both to be effective August 20, 2026. CleanPowerSF Net Billing Tariff may also be referred to as the “Solar Billing Plan” in customer-facing communications. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA) pursuant to San Francisco Administrative Code section 31.04(h). The Planning Department has determined that this action is exempt from the CEQA. The Commission will rely on that determination to make its decision on this action. (Hale)"
+  },
+  {
+   "no": "11",
+   "title": "Approve an increase of 208 calendar days to the duration contingency for Contract No. HH-1009, San Joaquin Pipeline Valve and Safe Entry Improvements Phase 3",
+   "decision": "approve to approve Item 11",
+   "resolution": "26-0017",
+   "text": "Approve an increase of 208 calendar days to the duration contingency for Contract No. HH-1009, San Joaquin Pipeline Valve and Safe Entry Improvements Phase 3 Tesla Surge Tower, with Mountain Cascade Inc., for a revised duration limit of 765 calendar days (approximately two years and one month), with no change to the contract amount, to complete the replacement of a water sampling line"
+  },
+  {
+   "no": "12",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "13",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
+  },
+  {
+   "no": "14",
+   "title": "Public Comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed CLOSED SESSION",
+   "decision": "assert the attorney-client privilege",
+   "resolution": "26-0018"
+  },
+  {
+   "no": "16",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session Vice President Leveroni announced that the Commission recommends the Board of Supervisors approve the settlement referenced under Item 15"
+  },
+  {
+   "no": "17",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)",
+   "decision": "not to disclose"
+  },
+  {
+   "no": "18",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

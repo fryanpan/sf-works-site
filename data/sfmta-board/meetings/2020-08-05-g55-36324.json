@@ -1,0 +1,43 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-08-05",
+ "id": "g55-36324",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36324",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22379"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Communications"
+  },
+  {
+   "no": "5",
+   "title": "Approving placement by the Peninsula Corridor Joint Powers Board of a resolution to authorize the JPB to impose a 0.125% retail transactions and use tax for a period of 30 years",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "6",
+   "title": "Presentation, discussion and possible action regarding the establishment of certain specified rules or bylaws forfuture conduct of Caltrain Joint Powers Board business",
+   "decision": "NO ACTION"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

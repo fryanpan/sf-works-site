@@ -1,0 +1,188 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2025-09-09",
+ "id": "g22-50691",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=50691",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/9.9.2025_M.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of July 22, 2025",
+   "decision": "approve the minutes of July 22, 2025"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment",
+   "text": "General Public Comment Commissioner Jamdar arrived at 1:39 P.M"
+  },
+  {
+   "no": "5",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "5a",
+   "title": "Quarterly Audit and Performance Review Report, Q4, FY 2024-25",
+   "text": "Quarterly Audit and Performance Review Report, Q4, FY 2024-25 Nancy Hom, Chief Financial Officer and Business Services Assistant General"
+  },
+  {
+   "no": "5b",
+   "title": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements",
+   "text": "Report on Recent San Francisco Public Utilities Commission Activities, Events and Announcements No report provided"
+  },
+  {
+   "no": "6",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "6a",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-100, HVAC Energy Efficiency (C-20 License), San Francisco, San Mateo, Santa Clara, and Alameda Counties, with Mesa Energy Systems, Inc., to increase the contract duration by three years, for a total contract duration of five years, with no change to the contract amount, to provide additional time for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0125",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Award Contract No. WW-790, Evans Ave. and Mariposa St. Outfalls Improvements, to the responsible bidder that submitted the lowest responsive bid, Pullman SST, Inc., in the amount of $2,576,348, with a duration of 379 consecutive calendar days (approximately one year and one month), to rehabilitate the Evans Avenue and Mariposa St. Outfalls, in the City and County of San Francisco. This action constitutes the Approval Action for the Project for the purposes of the California Environmental Quality Act (CEQA), pursuant to San Francisco Administrative Code section 31.04(h). The Planning Department has determined that the Project is exempt from the CEQA. The Commission will rely on that determination to make its decision SFPUC SEPTEMBER 9, 2025 MINUTES Page 3 of 7 on this action",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0126",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Award Contract No. HH-1017, Warnerville Substation Rehabilitation – Phase 2, to the responsible bidder that submitted the lowest responsive bid, Big Valley Electric, in the amount $6,695,000 and with a duration of 551 consecutive calendar days (approximately one year and six months), to replace four high voltage 230 kilovolts oil circuit breakers, associated switches, current voltage transformers, relays, surge arrestors, an overhead conductor, and a disconnect switch in the south yard of Warnerville Substation located in Oakdale, Stanislaus County",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0127",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Award Job Order Contract No. JOC-113, Electrical (C-10 License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, in the amount not-to- exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of four years, to the responsible bidder that submitted the lowest responsive bid, Liffey Electric, Inc., to perform C-10 licensed electrical construction work on San Francisco Public Utilities Commission systems and operations around the Bay Area",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "25-0128",
+   "from": "minutes"
+  },
+  {
+   "no": "7",
+   "title": "Public hearing on the San Francisco Water System 2025 Public Health Goal Report",
+   "decision": "approve Item 7",
+   "resolution": "25-0129",
+   "text": "Public hearing on the San Francisco Water System 2025 Public Health Goal Report for the purpose of accepting and responding to public comment and directing the San Francisco Public Utilities Commission General Manager or the General Manager’s designee to submit a letter to the State Water Resources Control Board documenting that such a hearing has been held"
+  },
+  {
+   "no": "8",
+   "title": "Approve the Draft San Francisco Public Utilities Commission Cross-Connection Control Plan and Program Manual",
+   "decision": "approve Item 8",
+   "resolution": "25-0130",
+   "text": "Approve the Draft San Francisco Public Utilities Commission Cross-Connection Control Plan and Program Manual, which documents SFPUC compliance with the California State Water Resources Control Board Cross-Connection Control Policy Handbook: Standards and Principles for California’s Public Water Systems, and provides guidance regarding the requirements of the Cross-Connection Control Program; and authorize the General Manager to submit the Cross-Connection Control Plan and Program Manual to the State Water Resources Control Board and to make conforming revisions as needed. SFPUC SEPTEMBER 9, 2025 MINUTES Page 4 of 7"
+  },
+  {
+   "no": "9",
+   "title": "Public hearing to consider and possible action to adopt amended Section G, Cross-Connection Control, of the San Francisco Public Utilities Commission’s Rules and Regulations Governing Water Service to Customers",
+   "decision": "approve Item 9",
+   "resolution": "25-0131",
+   "text": "Public hearing to consider and possible action to adopt amended Section G, Cross- Connection Control, of the San Francisco Public Utilities Commission’s Rules and Regulations Governing Water Service to Customers, implementing Article 12A of the San Francisco Health Code, in conformance with the requirements of Charter Section 4.104"
+  },
+  {
+   "no": "10",
+   "title": "Approve Amendment No. 2 to Contract Nos. PRO.0188.A-D for As-Needed Specialized and Technical Services, Water Enterprise, with Kennedy Jenks Consultants, Inc. and Applied Technology & Science",
+   "decision": "approve Item 10",
+   "resolution": "25-0132",
+   "text": "Approve Amendment No. 2 to Contract Nos. PRO.0188.A-D for As-Needed Specialized and Technical Services, Water Enterprise, with Kennedy Jenks Consultants, Inc. and Applied Technology & Science, Joint Venture (PRO.0188.A), AECOM Technical Services, Inc. and Water Resources Engineering, Inc., Joint Venture (PRO.0188.B), Woodard & Curran, Inc. and SRT Consultants, Joint Venture (PRO.0188.C), and Brown and Caldwell and Lotus, Joint Venture (PRO.0188.D) increasing each contract amount by $2,500,000, for a new total not-to-exceed contract amount of $7,500,000 for each contract, with no change to the contract duration, to continue providing critical, short- term, highly specialized work related to the operations and management of the San Francisco Public Utilities Commission’s Water Enterprise"
+  },
+  {
+   "no": "11",
+   "title": "Accept work performed by Precision Engineering, Inc., under Contract No. WW-736, Castro and Mission Districts Sewer Improvements, with Precision Engineering, Inc.",
+   "decision": "approve Item 11",
+   "resolution": "25-0133",
+   "text": "Accept work performed by Precision Engineering, Inc., under Contract No. WW-736, Castro and Mission Districts Sewer Improvements, with Precision Engineering, Inc.; approve Modification No. 3 (Final) decreasing the contract amount by $691,784, and increasing the contract duration by 187 calendar days for a total contract amount of $9,118,766 and a total contract duration of 712 consecutive calendar days (approximately two years), to adjust the final contract amount to the value of actual contract quantities completed and adjust the final contract duration to complete as-built documentation; and SFPUC SEPTEMBER 9, 2025 MINUTES Page 5 of 7 authorize final payment to the contractor"
+  },
+  {
+   "no": "12",
+   "title": "Approve an increase of $5,000,000 to the cost contingency for Contract No. WD-2776, San Francisco Westside Recycled Water Treatment Facility at Oceanside Plant, with S.J. Amoroso Construction Co.,. Inc.",
+   "decision": "approve Item 12",
+   "resolution": "25-0134",
+   "text": "Approve an increase of $5,000,000 to the cost contingency for Contract No. WD-2776, San Francisco Westside Recycled Water Treatment Facility at Oceanside Plant, with S.J. Amoroso Construction Co., Inc., to reconcile extended overhead costs related to project delays, and miscellaneous changes to the electrical and mechanical systems; and authorize the General Manager to approve future contract modifications for a total cost limit of up to $101,356,700, with no change to the contract duration"
+  },
+  {
+   "no": "13",
+   "title": "Approve Amendments No. 1 to Contract Nos. CS-1231.A, D, and E, Municipal Advisory Services, with Backstrom McCarley Berry & Co. LLC (CS-1231.A), Montague DeRose and Associates LLC (CS-1231.D),. and PFM Financial Advisors LLC (CS-1231.E)",
+   "decision": "approve Item 13",
+   "resolution": "25-0135",
+   "text": "Approve Amendments No. 1 to Contract Nos. CS-1231.A, D, and E, Municipal Advisory Services, with Backstrom McCarley Berry & Co. LLC (CS-1231.A), Montague DeRose and Associates LLC (CS-1231.D), and PFM Financial Advisors LLC (CS-1231.E), increasing each contract amount by $700,000, for a total not-to-exceed of $1,675,000 per contract, with no change to the duration, to continue providing municipal advisory services related to capital financing programs of the Water, Wastewater, and Power Enterprises, and CleanPowerSF"
+  },
+  {
+   "no": "14",
+   "title": "COMMUNICATIONS"
+  },
+  {
+   "no": "14a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "14b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "14c",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "14d",
+   "title": "Annual Commission Update on Final Changes to FY 2025-26 Budget (Q4)"
+  },
+  {
+   "no": "14e",
+   "title": "CleanPowerSF Quarterly Report (Q3)",
+   "text": "CleanPowerSF Quarterly Report (Q3) SFPUC SEPTEMBER 9, 2025 MINUTES Page 6 of 7"
+  },
+  {
+   "no": "14f",
+   "title": "Quarterly Report to the Board of Supervisors on the Status of Applications to PG&E for Electric Service"
+  },
+  {
+   "no": "14g",
+   "title": "Fiscal Year 2024-25 Annual Report Water System Improvement Program"
+  },
+  {
+   "no": "14h",
+   "title": "Notice of Changes Report Water System Improvement Program"
+  },
+  {
+   "no": "14i",
+   "title": "Water Enterprise Capital Improvement Program Quarterly Report"
+  },
+  {
+   "no": "14j",
+   "title": "Contaminants of Emerging Concern in Drinking Water, 2025 Progress Update"
+  },
+  {
+   "no": "15",
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) Vice Commissioner Arce discussed the Hummingbird Farm collaboration and partnership and requested to learn about future plans for Hummingbird Farm offline"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

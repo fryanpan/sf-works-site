@@ -1,0 +1,55 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2020-05-12",
+ "id": "g24-35743",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35743",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "CAC Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the April 28, 2020 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Allocate $3,257,155 in Prop K Sales Tax Funds, with Conditions, and $140,000 in Prop AA Vehicle Registration Fee Funds for Seven Requests"
+  },
+  {
+   "no": "5",
+   "title": "Approve the Project Priorities for Senate Bill 1 Local Partnership Program Competitive Grant Program and Amend Prop K 5-Year Prioritization Program for Pedestrian Circulation and Safety Category"
+  },
+  {
+   "no": "6",
+   "title": "Award 1 Year Professional Services Contract to McMillen Jacobs Associates in an Amount Not to Exceed $1,000,000 for Rail Tunnel Planning Services for the Pennsylvania Avenue Extension Project"
+  },
+  {
+   "no": "7",
+   "title": "Internal Accounting Report, Investment Report, and Debt Expenditure Report for the Nine Months Ending March 31, 2020"
+  },
+  {
+   "no": "8",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

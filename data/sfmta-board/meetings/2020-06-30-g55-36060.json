@@ -1,0 +1,59 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-06-30",
+ "id": "g55-36060",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36060",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22206"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - June 16, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Approving the FY 2021 and FY 2022 revised Operating Budget in the amounts of $1,251.8 million and $1,281.1million respectively for operating expenditures",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "10",
+   "title": "Amending the Transportation Code, Division II, to add Section 602 to designate temporary transit-only areas",
+   "decision": "ADOPTED — 4 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

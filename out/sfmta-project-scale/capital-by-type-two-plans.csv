@@ -1,0 +1,119 @@
+plan,id,name,dollars,type,basis,reason
+FY25-29,ST316,Howard Streetscape,39039699,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,ST314,Bayview Multimodal,15935371,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,ST273,Central Embarcadero Enhancement Project,9076128,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,STNEW-4,Valencia Longterm,6250000,Corridor and streetscape projects,hand,"the Valencia Street bikeway, one street"
+FY25-29,STNEW-17,Active Communities Plan Mansell Streetscape,5519143,Corridor and streetscape projects,hand,"a streetscape on one street, as 5th Street"
+FY25-29,ST315,Brotherhood Alemany Safety Improvement Project (BASIP),2840000,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,STNEW-16,Active Communities Plan Lake Merced Upgrades,2250000,Corridor and streetscape projects,hand,"bike and pedestrian work along one street, as 5th Street"
+FY25-29,ST080,Folsom Streetscape,1500000,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,ST297,South Embarcadero Enhancement,1500000,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,ST071,Page Slow Street,1405000,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,ST295,Tenderloin Protected Intersections,1250000,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,STNEW-22,SoMa Arterial Traffic Calming,1000000,Corridor and streetscape projects,hand,"signals, crosswalks and boarding islands along arterials"
+FY25-29,STNEW-24,Market Street Cycling Improvements,1000000,Corridor and streetscape projects,hand,as 1950 Market Cycling Improvements
+FY25-29,STNEW-7,5th Street Streetscape,1000000,Corridor and streetscape projects,hand,"became ST333, Corridor and streetscape projects"
+FY25-29,STNEW-9,Golden Gate Greenway (Tenderloin),1000000,Corridor and streetscape projects,hand,a road diet and shared space on one block of Golden Gate Avenue
+FY25-29,ST177,13th Street Protected Bike Lanes,827908,Corridor and streetscape projects,same ID in FY27-31,
+FY25-29,ST239,Ocean Beach Master Plan,768189,Corridor and streetscape projects,hand,"the Great Highway, Skyline to Sloat, one street"
+FY25-29,STNEW-23,Cesar Chavez/Bayshore/Potrero Long-Term,300000,Corridor and streetscape projects,hand,"one complex junction, as Tenderloin Protected Intersections"
+FY25-29,STNEW-15,Active Communities Implementation Sloat Enhancements,250000,Corridor and streetscape projects,hand,"bike and pedestrian work along one street, as 5th Street"
+FY25-29,SG133,Contract 37 Traffic Signal Modification,8249170,Signals and signs,same ID in FY27-31,
+FY25-29,SG106,Tenderloin Signal Upgrade,7631923,Signals and signs,same ID in FY27-31,
+FY25-29,SG111,Contract 67: New Traffic Signals,2847531,Signals and signs,hand,"new signals; FY27-31 carries it as SG111A, Signals and signs"
+FY25-29,SG017,Program: Traffic Signal Hardware Replacement,2000000,Signals and signs,same ID in FY27-31,
+FY25-29,SGNew1,Automated Photo Enforcement - Phase 3 Expansion,1650000,Signals and signs,hand,"red-light cameras at signals, as SG103"
+FY25-29,SG018,Program: Traffic Sign Replacement,1620000,Signals and signs,same ID in FY27-31,
+FY25-29,SG015,Program: Traffic Signal Visibility Upgrades,1600000,Signals and signs,same ID in FY27-31,
+FY25-29,SG103,Automated Photo Enforcement - Phase 2 Expansion,1313483,Signals and signs,hand,"red-light cameras at signals, a Signals program line"
+FY25-29,SG011,Program: City Coordination Opportunities: New Traffic Signals,1200000,Signals and signs,same ID in FY27-31,
+FY25-29,SGNEW,Accessible Pedestrian Signals FY25,1000000,Signals and signs,hand,same program as SG142 and SG143
+FY25-29,SGNEW,Accessible Pedestrian Signals FY29,1000000,Signals and signs,hand,same program as SG142 and SG143
+FY25-29,SGNEW,Accessible Pedestrian Signals FY27,910817,Signals and signs,hand,same program as SG142 and SG143
+FY25-29,SGNew2,Tenderloin Conduits,416000,Signals and signs,hand,conduits for the SG106 signal upgrade
+FY25-29,ST025,Slow Streets Implementation,6772884,"Traffic calming, Slow Streets, speed",same ID in FY27-31,
+FY25-29,ST038,Program: Community Response Implementation,6200802,"Traffic calming, Slow Streets, speed",same ID in FY27-31,
+FY25-29,ST264,Application-Based Residential Traffic Calming Program,2299000,"Traffic calming, Slow Streets, speed",hand,resident-requested humps and cushions
+FY25-29,STNEW-14,Roundabout Enhacements,2012759,"Traffic calming, Slow Streets, speed",hand,"""traffic calming, bike, and pedestrian measures"" at existing roundabouts"
+FY25-29,ST203,Program: Annual Traffic Calming Removal and Replacement,795057,"Traffic calming, Slow Streets, speed",hand,removes and replaces speed humps
+FY25-29,STNEW-12,Side Show Deterrence,500000,"Traffic calming, Slow Streets, speed",hand,"""traffic calming devices"" against sideshows"
+FY25-29,ST262,District 4 Neighborways,200000,"Traffic calming, Slow Streets, speed",hand,"a network of calmed side streets, as Slow Streets"
+FY25-29,ST310,20MPH Speed Limit Reductions Program,200000,"Traffic calming, Slow Streets, speed",same ID in FY27-31,
+FY25-29,ST272,Program: Vision Zero Left Turn Reduction Program,100000,"Traffic calming, Slow Streets, speed",same ID in FY27-31,
+FY25-29,STNEW-2,Active Communities Plan Implementation Program,26478000,Bike network and bike programs,hand,"became ST332, Bike network and bike programs"
+FY25-29,ST048,Program: Short-term Bike Parking,3691298,Bike network and bike programs,same ID in FY27-31,
+FY25-29,ST266,Prorgam: Bike Traffic Signal Upgrades,2363567,Bike network and bike programs,same ID in FY27-31,
+FY25-29,STNEW-10,Active Communities Bikeway Enhancements,1628366,Bike network and bike programs,hand,"became ST336, Bike network and bike programs"
+FY25-29,ST041,Program: Bike Facility Maintenance,1377000,Bike network and bike programs,same ID in FY27-31,
+FY25-29,ST253,Bicycle Outreach and Education,800000,Bike network and bike programs,same ID in FY27-31,
+FY25-29,STNEW-23,Active Communities Spot Improvements,640813,Bike network and bike programs,hand,"replaces ST261, bike spot improvements"
+FY25-29,STNEW-19,Active Communities Plan Golden Gate Park Access,400000,Bike network and bike programs,hand,"a protected bikeway link, as the 7th Avenue link"
+FY25-29,STNEW-3,Active Communities Plan 7th Ave Bikeway Link,150000,Bike network and bike programs,hand,"became ST349, Bike network and bike programs"
+FY25-29,STNEW-13,Bike Share Expansion,76234,Bike network and bike programs,hand,"became ST334, Bike network and bike programs"
+FY25-29,ST240,Program: Citywide Vision Zero Quick Build,26055881,Quick-build programs,same ID in FY27-31,
+FY25-29,ST241,Program: Tenderloin Vision Zero Quick Build,2390198,Quick-build programs,same ID in FY27-31,
+FY25-29,ST122,Rectangular Rapid Flashing Beacons,7714933,Crossings and daylighting,same ID in FY27-31,
+FY25-29,ST040,Program: WalkFirst Quick & Effective Pedestrian Safety,2000000,Crossings and daylighting,same ID in FY27-31,
+FY25-29,ST042,School Walk Audit Traffic Safety Improvements,8000000,Schools,same ID in FY27-31,
+FY25-29,ST256,Safe Routes to School Non-Infrastructure Project,988000,Schools,same ID in FY27-31,
+FY25-29,STNEW-18,Mission Bay School Access,250000,Schools,hand,access to new school sites
+FY25-29,ST246,Visitacion Valley & Portola CBTP Implmentation,2200000,"Planning, evaluation, education, other",same ID in FY27-31,
+FY25-29,ST244,Safe Streets Evalutaion Program,1350000,"Planning, evaluation, education, other",same ID in FY27-31,
+FY25-29,ST271,Program: Streets Coordination Improvements,1000000,"Planning, evaluation, education, other",same ID in FY27-31,
+FY25-29,ST236,Business Transportation Demand Management (TDM),855000,"Planning, evaluation, education, other",hand,"demand management, which builds nothing on a street"
+FY25-29,ST270,NTIP Program Support,400000,"Planning, evaluation, education, other",same ID in FY27-31,
+FY25-29,STNEW-5,Vision Zero Education and Communications,400000,"Planning, evaluation, education, other",hand,"became ST343, Planning, evaluation, education, other"
+FY25-29,ST243,Residents Transportation Demand Management (TDM),300000,"Planning, evaluation, education, other",hand,demand management
+FY25-29,ST252,Transportation Demand Management (TDM) for Tourists,200000,"Planning, evaluation, education, other",hand,demand management
+FY27-31,ST316,Howard Streetscape,59470000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST314,Bayview Multimodal Corridor,11377715,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST273,Central Embarcadero Enhancement Project,10000000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST333,5th Street Streetscape,7980000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST297,South Embarcadero Enhancement,4300000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,STNEW-4,1950 Market Cycling Improvements,1350000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST071,Page Street Neighborway (Webster to Stanyan),1032378,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST315,Brotherhood Way Planning Project,1000000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST177,13th St Protected Bike Lanes,650000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST080,Folsom Streetscape,500000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,ST295,Tenderloin Protected Intersections,500000,Corridor and streetscape projects,FY27-31 file,
+FY27-31,SG115,Western Addition Area - Phase 2 - Traffic Signal Upgrades,16465284,Signals and signs,FY27-31 file,
+FY27-31,SG060,Contract 35: Traffic Signal Modification,12197802,Signals and signs,FY27-31 file,
+FY27-31,SG133,Contract 37: Traffic Signal Modifications,10638378,Signals and signs,FY27-31 file,
+FY27-31,SG106,Tenderloin Signal Upgrade,8350000,Signals and signs,FY27-31 file,
+FY27-31,SG062,Contract 66 New Traffic Signals,5804539,Signals and signs,FY27-31 file,
+FY27-31,SG015,Traffic Signal Visibility Upgrades,4300000,Signals and signs,FY27-31 file,
+FY27-31,SG148,Lincoln Way Traffic Signals Project,3789980,Signals and signs,FY27-31 file,
+FY27-31,SG143,Accessible Pedestrian Signals FY29,2158144,Signals and signs,FY27-31 file,
+FY27-31,SG111A,Contract 67: New Traffic Signals,1187356,Signals and signs,FY27-31 file,
+FY27-31,SG017,Program: Traffic Signal Hardware Replacement,1000000,Signals and signs,FY27-31 file,
+FY27-31,SG018,Program: Traffic Sign Replacement,810000,Signals and signs,FY27-31 file,
+FY27-31,SG011,City Coordination Opportunities: New Traffic Signals,800000,Signals and signs,FY27-31 file,
+FY27-31,SG142,Accessible Pedestrian Signals FY27,488144,Signals and signs,FY27-31 file,
+FY27-31,ST043,Proactive Traffic Calming,22500000,"Traffic calming, Slow Streets, speed",FY27-31 file,
+FY27-31,ST025,Slow Streets Implementation,6827189,"Traffic calming, Slow Streets, speed",FY27-31 file,
+FY27-31,ST038,Program: Community Response Implementation,4607754,"Traffic calming, Slow Streets, speed",FY27-31 file,
+FY27-31,ST310,20MPH Speed Limit Reductions Program,2000000,"Traffic calming, Slow Streets, speed",FY27-31 file,
+FY27-31,ST272,Street Safety Left Turn Reductions Program,1500000,"Traffic calming, Slow Streets, speed",FY27-31 file,
+FY27-31,ST332,Active Communities Plan Implementation Program,23191069,Bike network and bike programs,FY27-31 file,
+FY27-31,ST048,Program: Short-term Bike Parking,4855292,Bike network and bike programs,FY27-31 file,
+FY27-31,ST261,Program: Bike Safety & Connectivity Spot Improvements,3356824,Bike network and bike programs,FY27-31 file,
+FY27-31,ST336,Active Communities Bikeway Enhancements,1896499,Bike network and bike programs,FY27-31 file,
+FY27-31,ST253,TDM: Bicycle Outreach and Education,1000000,Bike network and bike programs,FY27-31 file,
+FY27-31,ST266,FY21 Bike Traffic Signal Upgrade Program,479400,Bike network and bike programs,FY27-31 file,
+FY27-31,ST041,Program: Bike Facility Maintenance: Delineators & Green Pavement,459000,Bike network and bike programs,FY27-31 file,
+FY27-31,ST349,Active Communities Plan 7th Ave Bikeway Link,100000,Bike network and bike programs,FY27-31 file,
+FY27-31,ST334,Bike Share Expansion,70000,Bike network and bike programs,FY27-31 file,
+FY27-31,ST240,Program: Citywide Street Safety Quick Build,31461386,Quick-build programs,FY27-31 file,
+FY27-31,ST241,Program: Tenderloin Street Safety Quick Build,264599,Quick-build programs,FY27-31 file,
+FY27-31,ST122,Rectangular Rapid Flashing Beacons,11320860,Crossings and daylighting,FY27-31 file,
+FY27-31,ST040,Program: Citywide Crosswalks (vice Program: WalkFirst Quick & Effective Pedestrian Safety),5751855,Crossings and daylighting,FY27-31 file,
+FY27-31,STNEW-1,Program: Daylight Hardening,3000000,Crossings and daylighting,FY27-31 file,
+FY27-31,ST185,Citywide Daylighting,300000,Crossings and daylighting,FY27-31 file,
+FY27-31,ST042,School Traffic Calming Program,9980000,Schools,FY27-31 file,
+FY27-31,ST256,Safe Routes to School Non-Infrastructure Project,7168000,Schools,FY27-31 file,
+FY27-31,ST271,Program: Streets Coordination Improvements,4000000,"Planning, evaluation, education, other",FY27-31 file,
+FY27-31,ST244,Safe Streets Evaluation Program,1440000,"Planning, evaluation, education, other",FY27-31 file,
+FY27-31,ST246,Visitacion Valley CBTP,1000000,"Planning, evaluation, education, other",FY27-31 file,
+FY27-31,ST270,NTIP Program Support,650000,"Planning, evaluation, education, other",FY27-31 file,
+FY27-31,ST343,Street Safety Education and Communications,600000,"Planning, evaluation, education, other",FY27-31 file,
+FY27-31,STNEW-2,STR Drawings,500000,"Planning, evaluation, education, other",FY27-31 file,

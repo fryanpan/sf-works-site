@@ -1,0 +1,79 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2021-04-27",
+ "id": "g24-38408",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=38408",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Executive Director’s Report"
+  },
+  {
+   "no": "4",
+   "title": "Approve the Minutes of the April 13, 2021 Meeting Consent Agenda"
+  },
+  {
+   "no": "5",
+   "title": "[Final Approval] Adopt a Motion of Support to Allocate $1,200,000 in Prop K Funds, with Conditions for Three Requests"
+  },
+  {
+   "no": "6",
+   "title": "[Final Approval] Amend the San Francisco Municipal Transportation Agency’s Business Relocation Transportation Demand Management Project, with Conditions"
+  },
+  {
+   "no": "7",
+   "title": "[Final Approval] Approve Up to $3,012,914 in San Francisco’s Estimated Fiscal Year 2021/22 State Transit Assistance County Block Grant Funds for Paratransit"
+  },
+  {
+   "no": "8",
+   "title": "[Final Approval] Amend the Adopted Fiscal Year 2020/21 Budget to Decrease Revenues and other Financing Sources by $50.0 Million for a Total Net Decrease in Fund Balance of $48.2 Million"
+  },
+  {
+   "no": "9",
+   "title": "[Final Approval] Award a Two-Year Professional Services Contract to WMH Corporation, in an Amount Not to Exceed $1,700,000, for Engineering and Environmental Consulting Services for the U.S. 101/I-280 Managed Lanes and"
+  },
+  {
+   "no": "10",
+   "title": "[Final Approval] State and Federal Legislation Update"
+  },
+  {
+   "no": "11",
+   "title": "ConnectSF Transit Strategy Update"
+  },
+  {
+   "no": "12",
+   "title": "Vision Zero 2020 Progress / 2021 Look Ahead"
+  },
+  {
+   "no": "13",
+   "title": "Vision Zero Traffic Fatalities: 2020 End of Year Report"
+  },
+  {
+   "no": "14",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "15",
+   "title": "Public Comment"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

@@ -1,0 +1,52 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-01-30",
+ "id": "g55-45295",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45295",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement"
+  },
+  {
+   "no": "4",
+   "title": "Welcome and Introduction."
+  },
+  {
+   "no": "5",
+   "title": "Presentation and discussion on the city’s economic overview."
+  },
+  {
+   "no": "6",
+   "title": "Presentation and discussion on the two-year budget, revenue options, and an SFMTA brand merchandising update."
+  },
+  {
+   "no": "7",
+   "title": "Presentation and discussion including a budget balancing exercise, budget options and tradeoffs."
+  },
+  {
+   "no": "8",
+   "title": "Board Workshop Next Steps and Conclusion"
+  },
+  {
+   "no": "9",
+   "title": "ADJOURN"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

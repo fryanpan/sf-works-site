@@ -1,0 +1,60 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2024-01-22",
+ "id": "g22-45247",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=45247",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/January%2022%20Budget%20Meeting%20APPROVED%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Public Hearing and discussion of the proposed Budget Priorities",
+   "decision": "continued",
+   "text": "Public Hearing and discussion of the proposed Budget Priorities (Administrative Code Section 3.3(b)). FY 2024-25 and FY 2025-26 SFPUC Operating Budget, 10-Year Capital Plan Overview, and10-Year Financial Plan Overview General Manager (GM) Herrera stated that the budget hearings are required per Administrative Code Section 3.3(b) and provide the public with an opportunity to hear about the SFPUC’s proposed budget and weigh in on priorities. He provided an overview of the services provided by the SFPUC: Water (delivering high-quality water); Power (generating clean energy); and Sewer (protecting public health and the environment). He stated the SFPUC has a diverse workforce serving diverse communities. He emphasized that creating a utility of the future is a priority in developing the budget and considered: (1) Affordability (Affordability Policy for water and wastewater, and efficient capital planning); (2) Responsible Management (Addressing regulatory requirements, financial sustainability, workforce (reducing vacancies: increasing retention, accountability: Racial Equity and transparency, and responsible management of systems); and (3) Investing Where it Matters (Resilience and climate change, environmental stewardship, contributing to economic vitality: capital investment and job creation, replacing aging infrastructure, and meeting new customer demands). He indicated this is the largest capital plan in the agency’s history. He stated there is a commitment to union labor an"
+  },
+  {
+   "no": "4",
+   "title": "Proposed Bureau Operating Budgets for FY2024-25 and FY2025-26 (discussion only)"
+  },
+  {
+   "no": "4a",
+   "title": "Business Services"
+  },
+  {
+   "no": "4b",
+   "title": "External Affairs"
+  },
+  {
+   "no": "4c",
+   "title": "Human Resource Services"
+  },
+  {
+   "no": "4d",
+   "title": "General Manager"
+  },
+  {
+   "no": "4e",
+   "title": "Infrastructure"
+  },
+  {
+   "no": "5",
+   "title": "Motion to continue meeting to a Special Meeting noticed for Friday, January 26, 2024",
+   "decision": "continue the meeting to a Special meeting noticed for Friday, January 26, 2024"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

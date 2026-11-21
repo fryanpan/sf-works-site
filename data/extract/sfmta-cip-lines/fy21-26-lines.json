@@ -1,0 +1,1774 @@
+{
+ "about": "SFMTA Streets (ST) and Signals (SG) capital lines, adopted budget by fiscal year, FY2021-FY2026. Built by tools/street-safety/spend-by-tool.py --rebuild-extract from the parsed CIP PDFs.",
+ "documents": {
+  "FY2021-2025 CIP": "https://www.sfmta.com/media/21935/download",
+  "FY2023-2027 CIP": "https://www.sfmta.com/media/33065/download?inline",
+  "FY2025-2029 CIP": "https://www.sfmta.com/media/39080/download"
+ },
+ "lines": [
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 679003,
+    "2022": 500000,
+    "2023": 2048831,
+    "2024": 4336306,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG000",
+   "name": "Reserve Traffic Signals",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 300000,
+    "2022": 300000,
+    "2023": 300000,
+    "2024": 300000,
+    "2025": 0,
+    "2026": 400000
+   },
+   "id": "SG011",
+   "name": "Program: City Coordination Opportunities: New Traffic Signals",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 330000,
+    "2022": 330000,
+    "2023": 330000,
+    "2024": 330000,
+    "2025": 400000,
+    "2026": 400000
+   },
+   "id": "SG015",
+   "name": "Traffic Signal Visibility Upgrades",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 330000,
+    "2022": 330000,
+    "2023": 358000,
+    "2024": 302000,
+    "2025": 500000,
+    "2026": 500000
+   },
+   "id": "SG017",
+   "name": "Program: Traffic Signal Hardware Replacement",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 220000,
+    "2022": 220000,
+    "2023": 220000,
+    "2024": 220000,
+    "2025": 405000,
+    "2026": 405000
+   },
+   "id": "SG018",
+   "name": "Program: Traffic Sign Replacement",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 3712000,
+    "2022": 0,
+    "2023": 2540757,
+    "2024": 3908243,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG060",
+   "name": "Contract 35: Traffic Signal Modifications",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 1000000,
+    "2023": 6175000,
+    "2024": 1575000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG062",
+   "name": "Contract 66: New Traffic Signals",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 6100000,
+    "2022": 1635000,
+    "2023": 938747,
+    "2024": 204344,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG063",
+   "name": "Contract 36: Traffic Signal Modifications",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 186014,
+    "2022": 0,
+    "2023": 67610,
+    "2024": 141898,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG072",
+   "name": "3rd Street Video Detection Replacement",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 9723234,
+    "2022": 14573229,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG089",
+   "name": "Western Addition Area - Traffic Signal Upgrades",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 2000000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 508427,
+    "2026": 805056
+   },
+   "id": "SG103",
+   "name": "Automated Photo Enforcement",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 900000,
+    "2022": 1190000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "SG104",
+   "name": "Vision Zero Signal Retiming",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 3500000,
+    "2024": 1400000,
+    "2025": 7631923,
+    "2026": 0
+   },
+   "id": "SG106",
+   "name": "Tenderloin Signal Upgrade",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1100000
+   },
+   "id": "SG111",
+   "name": "Contract 67: New Traffic Signals",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1500000
+   },
+   "id": "SG133",
+   "name": "Contract 37 Traffic Signal Modification",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1000000,
+    "2026": 0
+   },
+   "id": "SGNew Accessible Pedestrian Signals",
+   "name": "Accessible Pedestrian Signals",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 416000,
+    "2026": 0
+   },
+   "id": "SGNew Tenderloin Conduits",
+   "name": "Tenderloin Conduits",
+   "program": "Signals"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 5490359,
+    "2022": 8252806,
+    "2023": 1244200,
+    "2024": 860576,
+    "2025": 2575000,
+    "2026": 6461989
+   },
+   "id": "ST000",
+   "name": "Reserve Streets",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 5000000,
+    "2024": 5000000,
+    "2025": 2680000,
+    "2026": 457500
+   },
+   "id": "ST025",
+   "name": "Slow Streets Implementation",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 1050000,
+    "2022": 1084125,
+    "2023": 1050000,
+    "2024": 1050000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST026",
+   "name": "Program: Bicycle Traffic Signal Upgrades",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 1200000,
+    "2022": 1239000,
+    "2023": 1400300,
+    "2024": 1415000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST028",
+   "name": "Program: Annual Application-Based Traffic Calming",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1550000,
+    "2022": 1600375,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST031",
+   "name": "Program: Citywide Neighborway",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 180000,
+    "2022": 185850,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST037",
+   "name": "Program: Speed Radar Sign Installation",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 1100000,
+    "2022": 1100000,
+    "2023": 550000,
+    "2024": 750000,
+    "2025": 1100000,
+    "2026": 1166000
+   },
+   "id": "ST038",
+   "name": "Program: Community Response Implementation",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 950000,
+    "2022": 980875,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST039",
+   "name": "Program: Streets Coordination Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 772500,
+    "2022": 797606,
+    "2023": 772000,
+    "2024": 772000,
+    "2025": 400000,
+    "2026": 400000
+   },
+   "id": "ST040",
+   "name": "Program: Quick & Effective Pedestrian Safety",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 150000,
+    "2022": 150000,
+    "2023": 200000,
+    "2024": 150000,
+    "2025": 459000,
+    "2026": 459000
+   },
+   "id": "ST041",
+   "name": "Program: Bike Facility Maintenance",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 1300000,
+    "2022": 1342251,
+    "2023": 1300000,
+    "2024": 1300000,
+    "2025": 2000000,
+    "2026": 2000000
+   },
+   "id": "ST042",
+   "name": "Program: Traffic Improvements Around Schools",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 750000,
+    "2022": 774375,
+    "2023": 750000,
+    "2024": 750000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST043",
+   "name": "Program: Proactive Local Traffic Calming Track",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 1125000,
+    "2022": 1161562,
+    "2023": 1125000,
+    "2024": 1125000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST045",
+   "name": "Program: Citywide Bike Spot Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 750000,
+    "2022": 774375,
+    "2023": 847393,
+    "2024": 699393,
+    "2025": 923766,
+    "2026": 460000
+   },
+   "id": "ST048",
+   "name": "Program: Short-term Bike Parking",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 550000,
+    "2022": 1700000,
+    "2023": 1400000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST052",
+   "name": "5th Street Corridor Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 11226200,
+    "2022": 8000000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST053",
+   "name": "6th Street Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 1083787,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST059",
+   "name": "Cesar Chavez/Bayshore/Potrero",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 400000,
+    "2024": 1655000,
+    "2025": 407000,
+    "2026": 405000
+   },
+   "id": "ST071",
+   "name": "Page Street Neighborway (Webster to Stanyan)",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 20384955,
+    "2023": 5822913,
+    "2024": 2458420,
+    "2025": 1500000,
+    "2026": 0
+   },
+   "id": "ST080",
+   "name": "Folsom Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1830674,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST084",
+   "name": "Lombard Street Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 1425000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST088",
+   "name": "Page Street Neighborway (Market to Webster)",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 20551462,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST094",
+   "name": "Taylor Street Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 4400000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST097",
+   "name": "Upper Market Pedestrian Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1500000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST100",
+   "name": "Washington/Trenton Bulb-out & Beacons",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 2350000,
+    "2022": 500000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST115",
+   "name": "Permanent Painted Safety Zone Conversion",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 600000,
+    "2022": 600000,
+    "2023": 750000,
+    "2024": 798000,
+    "2025": 1000000,
+    "2026": 250000
+   },
+   "id": "ST122",
+   "name": "Rectangular Rapid Flashing Beacons",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 250000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST155",
+   "name": "Move Western Addition Mid-Term",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 670000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST157",
+   "name": "Sloat and Skyline Intersection",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 2734000,
+    "2022": 4500000,
+    "2023": 6716686,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST158",
+   "name": "Mission Street Excelsior",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 1776000,
+    "2022": 4736000,
+    "2023": 1776000,
+    "2024": 1000000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST165",
+   "name": "Valencia Street Bikeway Implementation Plan",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 1200000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST169",
+   "name": "Terry Francois Boulevard Bikeway Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 175000,
+    "2022": 435000,
+    "2023": 4478100,
+    "2024": 0,
+    "2025": 827908,
+    "2026": 0
+   },
+   "id": "ST177",
+   "name": "13th St Protected Bike Lanes",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 80000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 900445,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST181",
+   "name": "Lake Merced Pedestrian Safety",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 850000,
+    "2023": 360000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST183",
+   "name": "Ocean Avenue Safety Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 520795,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST185",
+   "name": "Citywide Daylighting",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1140000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST193",
+   "name": "Beale Street Bikeway",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 295000,
+    "2022": 2280000,
+    "2023": 4380000,
+    "2024": 1500000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST195",
+   "name": "Bayview CBTP Implementation",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 425000,
+    "2022": 0,
+    "2023": 425000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST197",
+   "name": "Bayview CBTP Near Term Implementation",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 300000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST200",
+   "name": "Alemany Interchange Improvement",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 2350000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST201",
+   "name": "Geneva Avenue Traffic Signals",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 100000,
+    "2022": 103250,
+    "2023": 111770,
+    "2024": 117207,
+    "2025": 230071,
+    "2026": 0
+   },
+   "id": "ST203",
+   "name": "Program: Annual Traffic Calming Removal and Replacement",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 240000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST235",
+   "name": "Brannan Street Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 200000,
+    "2025": 275000,
+    "2026": 215000
+   },
+   "id": "ST236",
+   "name": "Business TDM",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 300000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST237",
+   "name": "Condition Assessment",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1050000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST238",
+   "name": "Embarcadero Quick-Build",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 2250000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST239",
+   "name": "Ocean Beach Master Plan - Sloat/Great Highway",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 4036500,
+    "2022": 4177500,
+    "2023": 7000000,
+    "2024": 7000000,
+    "2025": 6000000,
+    "2026": 4242197
+   },
+   "id": "ST240",
+   "name": "Program: Citywide Vision Zero Quick Build",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 1345500,
+    "2022": 1392500,
+    "2023": 1441000,
+    "2024": 1441000,
+    "2025": 486371,
+    "2026": 291728
+   },
+   "id": "ST241",
+   "name": "Program: Tenderloin Vision Zero Quick Build",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 200000,
+    "2025": 100000,
+    "2026": 0
+   },
+   "id": "ST243",
+   "name": "Residents TDM",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 250000,
+    "2022": 258125,
+    "2023": 0,
+    "2024": 0,
+    "2025": 450000,
+    "2026": 0
+   },
+   "id": "ST244",
+   "name": "Safe Streets Evaluation Program",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1002762,
+    "2022": 145738,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST245",
+   "name": "Citywide Bike Plan",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 352349,
+    "2022": 0,
+    "2023": 0,
+    "2024": 1708420,
+    "2025": 100000,
+    "2026": 1100000
+   },
+   "id": "ST246",
+   "name": "Visitacion Valley CBTP",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 1140000,
+    "2022": 1140000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST247",
+   "name": "Other Reserve",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 123375,
+    "2022": 123375,
+    "2023": 234413,
+    "2024": 91288,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST248",
+   "name": "Vision Zero SF Motorcycle Safety Program",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 350000,
+    "2022": 0,
+    "2023": 350000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST249",
+   "name": "Existing Residents Transportation Demand Management",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 41758,
+    "2022": 41758,
+    "2023": 43011,
+    "2024": 1044301,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST250",
+   "name": "Bike to Work Day",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP"
+   ],
+   "budget": {
+    "2021": 150000,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST251",
+   "name": "Engineering Technical Feasibility and Cost",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 130000,
+    "2023": 0,
+    "2024": 65000,
+    "2025": 50000,
+    "2026": 75000
+   },
+   "id": "ST252",
+   "name": "Transportation Demand Management (TDM) for",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 90000,
+    "2022": 100000,
+    "2023": 103000,
+    "2024": 572054,
+    "2025": 200000,
+    "2026": 200000
+   },
+   "id": "ST253",
+   "name": "Bicycle Outreach and Education",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 150000,
+    "2022": 50000,
+    "2023": 150000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST254",
+   "name": "Travel Decision Survey",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 100000,
+    "2022": 200000,
+    "2023": 150000,
+    "2024": 0,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST255",
+   "name": "Place Based Planning Program",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 240000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 234000,
+    "2026": 238000
+   },
+   "id": "ST256",
+   "name": "Safe Routes to School Non- Infrastructure Project",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2021-2025 CIP",
+    "FY2023-2027 CIP"
+   ],
+   "budget": {
+    "2021": 140000,
+    "2022": 156000,
+    "2023": 0,
+    "2024": 156000,
+    "2025": 0,
+    "2026": 0
+   },
+   "id": "ST257",
+   "name": "Comprehensive Employee TDM Program",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 200000,
+    "2026": 0
+   },
+   "id": "ST262",
+   "name": "District 4 Neighbor ways",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 818000,
+    "2026": 1199000
+   },
+   "id": "ST264",
+   "name": "Application-Based Residential Traffic Calming Program",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1113000
+   },
+   "id": "ST266",
+   "name": "Program: Bike Traffic Signal Upgrades",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 100000,
+    "2026": 100000
+   },
+   "id": "ST270",
+   "name": "NTIP Program Support",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 100000,
+    "2026": 0
+   },
+   "id": "ST272",
+   "name": "Program: Vision Zero Left Turn",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 6576128,
+    "2026": 1000000
+   },
+   "id": "ST273",
+   "name": "Central Embarcadero Enhancement Project",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 250000,
+    "2026": 1000000
+   },
+   "id": "ST295",
+   "name": "Tenderloin Protected Intersections",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1650000,
+    "2026": 11607604
+   },
+   "id": "ST314",
+   "name": "Bayview Multimodal",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 800000,
+    "2026": 540000
+   },
+   "id": "ST315",
+   "name": "Brotherhood Alemany Safety Improvement Project (BASIP)",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1494871,
+    "2026": 10269143
+   },
+   "id": "ST316",
+   "name": "Howard Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1000000
+   },
+   "id": "STNew 5th Street Streetscape",
+   "name": "5th Street Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 36234,
+    "2026": 0
+   },
+   "id": "STNew Active Communities Bikeway Enhancements",
+   "name": "Active Communities Bikeway Enhancements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 250000
+   },
+   "id": "STNew Active Communities Implementation Sloat",
+   "name": "Active Communities Implementation Sloat",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 50000,
+    "2026": 0
+   },
+   "id": "STNew Active Communities Plan 7th Ave Bikeway Link",
+   "name": "Active Communities Plan 7th Ave Bikeway Link",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 400000,
+    "2026": 0
+   },
+   "id": "STNew Active Communities Plan Golden Gate Park Access",
+   "name": "Active Communities Plan Golden Gate Park Access",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 4350000,
+    "2026": 3750000
+   },
+   "id": "STNew Active Communities Plan Implementation Program",
+   "name": "Active Communities Plan Implementation Program",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 250000,
+    "2026": 0
+   },
+   "id": "STNew Active Communities Plan Mansell Streetscape",
+   "name": "Active Communities Plan Mansell Streetscape",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 487066,
+    "2026": 0
+   },
+   "id": "STNew Active Communities Spot Improvements",
+   "name": "Active Communities Spot Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 300000,
+    "2026": 0
+   },
+   "id": "STNew Cesar Chavez/Bayshore/Potrero Long-Term",
+   "name": "Cesar Chavez/Bayshore/Potrero Long-Term",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1000000,
+    "2026": 0
+   },
+   "id": "STNew Golden Gate Greenway",
+   "name": "Golden Gate Greenway",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0,
+    "2026": 1000000
+   },
+   "id": "STNew Market Street Cycling Improvements",
+   "name": "Market Street Cycling Improvements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 250000,
+    "2026": 0
+   },
+   "id": "STNew Mission Bay School Access",
+   "name": "Mission Bay School Access",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 350000,
+    "2026": 374500
+   },
+   "id": "STNew Roundabout Enhancements",
+   "name": "Roundabout Enhancements",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 100000,
+    "2026": 100000
+   },
+   "id": "STNew Side Show Deterrence",
+   "name": "Side Show Deterrence",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1000000,
+    "2026": 0
+   },
+   "id": "STNew SoMa Arterial Traffic Calming",
+   "name": "SoMa Arterial Traffic Calming",
+   "program": "Streets"
+  },
+  {
+   "books": [
+    "FY2025-2029 CIP"
+   ],
+   "budget": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 200000,
+    "2026": 0
+   },
+   "id": "STNew Vision Zero Education and Communications",
+   "name": "Vision Zero Education and Communications",
+   "program": "Streets"
+  }
+ ]
+}

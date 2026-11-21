@@ -1,0 +1,12 @@
+# Daily at 13:15 UTC (5:15 or 6:15 in San Francisco), before anyone reads the site in the morning. Persistent=true
+# runs a missed day as soon as the VM is back up.
+[Unit]
+Description=SF Works daily site data refresh
+
+[Timer]
+OnCalendar=*-*-* 13:15:00 UTC
+Persistent=true
+RandomizedDelaySec=600
+
+[Install]
+WantedBy=timers.target

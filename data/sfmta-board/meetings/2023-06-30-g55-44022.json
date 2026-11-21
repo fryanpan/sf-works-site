@@ -1,0 +1,40 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2023-06-30",
+ "id": "g55-44022",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=44022",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/28540"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call SPECIAL CALENDAR"
+  },
+  {
+   "no": "3",
+   "title": "Amendments to Memoranda of Understanding",
+   "decision": "ADOPTED — 4 ayes (Resolution 230630-058)"
+  },
+  {
+   "no": "3A",
+   "title": "Approving the amendments to the MOU between the SFMTA and the Local 200 Transport Workers’ Union (TWU), Local 200",
+   "decision": "ADOPTED — 4 ayes (Resolution 230630-058)"
+  },
+  {
+   "no": "3B",
+   "title": "Approving an amendment to the MOU between the SFMTA and the Municipal Executives Association (MEA) to add extended salary ranges for the Special Assistant classification series",
+   "decision": "ADOPTED — 4 ayes (Resolution 230630-058)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

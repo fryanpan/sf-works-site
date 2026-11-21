@@ -1,0 +1,33 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-07-16",
+ "id": "g22-38991",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38991",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/July%2016%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "pdf",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Presentation on SFPUC Water Demand Projections and Demand Management (discussion only) • SFPUC Staff Presentation: SFPUC Retail (i.e., in-City) Current and Historic Customer Demand Projections and Demand Management (conservation programs and local alternative supplies) • Bay Area Water Supply and Conservation Agency Presentation: SFPUC Wholesale Customer Current and Historic Demand Projections and Demand Management • Non-Governmental Organizations Presentation: Peter Drekmeier, Tuolumne River Trust and Chris Shutes, California Sportfishing Protection Alliance • Commission Discussion"
+  },
+  {
+   "no": "4",
+   "title": "Adjournment San Francisco Public Utilities Commission 525 Golden Gate Avenue, 13TH Floor San Francisco, CA 94102"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

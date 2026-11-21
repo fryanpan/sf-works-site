@@ -1,0 +1,1473 @@
+{
+ "about": "San Francisco Civil Grand Jury reports from the 2021-22 term on, with the responses the city posts and the Board of Supervisors' response resolution. Written by scripts/fetch-cgj.py.",
+ "listings": {
+  "sf.gov": "https://www.sf.gov/departments--civil-grand-jury",
+  "archive": [
+   "https://civilgrandjury.archive.sf.gov/2021_2022.html"
+  ],
+  "board resolutions": "https://sfbos.org/resolutions-YYYY"
+ },
+ "reports": [
+  {
+   "id": "2026-at-scale-at-risk",
+   "term": "2025-26",
+   "title": "At Scale, At Risk: Upgrading Data and Oversight to Improve Homelessness Services",
+   "released": "2026-06-23",
+   "url": "https://api.sf.gov/documents/59416/2026_CGJ_Rpt_At_Scale_At_Risk_-_Upgrading_Data_and_Oversight_to_Improve_Homele_woZ0ksh.pdf",
+   "press_release": "https://api.sf.gov/documents/59417/At_Scale_At_Risk_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2026--civil-grand-jury-reports-2025-2026",
+   "responses": [
+    {
+     "label": "Response - Office of the City Attorney",
+     "from": [
+      "Office of the City Attorney"
+     ],
+     "date": "2026-08-17",
+     "url": "https://api.sf.gov/documents/62494/At_Scale_At_Risk_Report_Response_CAT_081726.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Mayor's Office",
+      "Department of Homelessness and Supportive Housing"
+     ],
+     "date": "2026-08-24",
+     "url": "https://api.sf.gov/documents/62502/At_Scale_At_Risk_Report_Responses_MYR_082426_kEG3pjC.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Homelessness Oversight Commission",
+     "from": [
+      "San Francisco Homelessness Oversight Commission"
+     ],
+     "date": "2026-09-22",
+     "url": "https://api.sf.gov/documents/63739/At_Scale_At_Risk_Report_Response_HOC_091426_Updated_092226.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2026-10-28",
+     "url": "https://api.sf.gov/documents/65078/At_Scale_At_Risk_Report_Response_BOS_102826.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2026-at-scale-at-risk.txt",
+   "responses_text": "data/cgj/text/2026-at-scale-at-risk.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 165128,
+   "board_file": {
+    "file": "260730",
+    "name": "Board Response - Civil Grand Jury Report - At Scale, At Risk - Upgrading Data and Oversight to Improve Homelessness Services",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8118902&GUID=E895D4E1-EDA7-4A8A-A428-666F4C970D3F&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2026-06-30",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2026-09-29",
+      "body": "Board of Supervisors",
+      "decision": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "2026-fog-of-warning",
+   "term": "2025-26",
+   "title": "Fog of Warning: San Francisco’s Warning System That Warns but Doesn't Inform",
+   "released": "2026-06-18",
+   "url": "https://api.sf.gov/documents/59312/2026CG1_XrFf8C0.PDF",
+   "press_release": "https://api.sf.gov/documents/59313/Fog_of_Warning_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2026--civil-grand-jury-reports-2025-2026",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Mayor’s Office",
+      "Department of Emergency Management",
+      "Police Department",
+      "Fire Department"
+     ],
+     "date": "2026-08-17",
+     "url": "https://api.sf.gov/documents/62501/Fog_of_Warning_Report_Responses_MYR_081726_consolidated_hjp8kt9.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2026-10-28",
+     "url": "https://api.sf.gov/documents/65077/Fog_of_Warning_Report_Response_BOS_102826.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2026-fog-of-warning.txt",
+   "responses_text": "data/cgj/text/2026-fog-of-warning.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 52106,
+   "board_file": {
+    "file": "260722",
+    "name": "Board Response - Civil Grand Jury Report - FOG OF WARNING: San Francisco’s Warning System That Warns but Doesn't Inform",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8092065&GUID=20A8BCEF-0D02-411F-BC68-6CE04AC31AB8&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2026-06-23",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2026-09-29",
+      "body": "Board of Supervisors",
+      "decision": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "2026-sounds-of-silence",
+   "term": "2025-26",
+   "title": "The Sounds of Silence: San Francisco's Outdoor Public Warning System and the Cost of Not Deciding",
+   "released": "2026-06-16",
+   "url": "https://api.sf.gov/documents/58919/2026CG1.PDF",
+   "press_release": "https://api.sf.gov/documents/58918/The_Sounds_of_Silence_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2026--civil-grand-jury-reports-2025-2026",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Mayor's Office",
+      "Department of Emergency Management",
+      "San Francisco Public Works"
+     ],
+     "date": "2026-08-17",
+     "url": "https://api.sf.gov/documents/62491/The_Sounds_of_Silence_Report_Responses_MYR_081726_consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2026-10-28",
+     "url": "https://api.sf.gov/documents/65076/The_Sounds_of_Silence_Report_Response_BOS_102826.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2026-sounds-of-silence.txt",
+   "responses_text": "data/cgj/text/2026-sounds-of-silence.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 49292,
+   "board_file": {
+    "file": "260704",
+    "name": "Board Response - Civil Grand Jury Report - The Sounds of Silence: San Francisco's Outdoor Public Warning System and the Cost of Not Deciding",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8073916&GUID=8B340C81-F586-42BC-BBD1-7D245EAD4F19&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2026-06-23",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2026-09-29",
+      "body": "Board of Supervisors",
+      "decision": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "2026-jails-in-crisis",
+   "term": "2025-26",
+   "title": "When Making Do Doesn't Work: San Francisco Jails in Crisis",
+   "released": "2026-06-09",
+   "url": "https://api.sf.gov/documents/57224/2026_CGJ_Report_When_Making_Do_Doesnt_Work_-_San_Francisco_Jails_in_Crisis.pdf",
+   "press_release": "https://api.sf.gov/documents/57225/When_Making_Do_Doesnt_Work_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2026--civil-grand-jury-reports-2025-2026",
+   "responses": [
+    {
+     "label": "Response - Office of the District Attorney",
+     "from": [
+      "Office of the District Attorney"
+     ],
+     "date": "2026-06-15",
+     "url": "https://api.sf.gov/documents/59310/When_Making_Do_Doesnt_Work_Report_Response_DAT_061526_BIdWhdp.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Office of the Mayor",
+     "from": [
+      "Office of the Mayor"
+     ],
+     "date": "2026-08-07",
+     "url": "https://api.sf.gov/documents/61722/When_Making_Do_Doesnt_Work_Report_Response_MYR_080726.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Sheriff's Office",
+     "from": [
+      "Sheriff's Office"
+     ],
+     "date": "2026-08-07",
+     "url": "https://api.sf.gov/documents/61884/When_Making_Do_Doesnt_Work_Report_Response_SHF_080726_mIE8Dox.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Sheriff's Department Oversight Board",
+     "from": [
+      "Sheriff's Department Oversight Board"
+     ],
+     "date": "2026-10-02",
+     "url": "https://api.sf.gov/documents/64225/When_Making_Do_Doesnt_Work_Response_SDOB_100226.pdf",
+     "text_method": "ocr"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2026-10-28",
+     "url": "https://api.sf.gov/documents/65075/When_Making_Do_Doesnt_Work_Report_Response_BOS_102826.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2026-jails-in-crisis.txt",
+   "responses_text": "data/cgj/text/2026-jails-in-crisis.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 131010,
+   "board_file": {
+    "file": "260676",
+    "name": "Board Response - Civil Grand Jury Report - When Making Do Doesn't Work: San Francisco Jails in Crisis",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8064842&GUID=B42A1B0D-FD5F-4330-A256-A30CAE27C801&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2026-06-16",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2026-09-29",
+      "body": "Board of Supervisors",
+      "decision": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "2026-red-flag-warning",
+   "term": "2025-26",
+   "title": "Red Flag Warning: Wildfire Risk in San Francisco’s Glen Canyon",
+   "released": "2026-06-04",
+   "url": "https://api.sf.gov/documents/57022/2026_CGJ_Report_Red_Flag_Warning_-_Wildfire_Risk_in_San_Franciscos_Glen_Canyon.pdf",
+   "press_release": "https://api.sf.gov/documents/57023/Red_Flag_Warning_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2026--civil-grand-jury-reports-2025-2026",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Mayor’s Office",
+      "Recreation and Parks Department",
+      "Fire Department",
+      "San Francisco Public Works",
+      "San Francisco Public Utilities Commission"
+     ],
+     "date": "2026-08-03",
+     "url": "https://api.sf.gov/documents/61485/Red_Flag_Warning_Report_MYR_080326_consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2026-10-28",
+     "url": "https://api.sf.gov/documents/65074/Red_Flag_Warning_Report_Response_BOS_102826.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2026-red-flag-warning.txt",
+   "responses_text": "data/cgj/text/2026-red-flag-warning.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 83000,
+   "board_file": {
+    "file": "260650",
+    "name": "Board Response - Civil Grand Jury Report - Red Flag Warning - Wildfire Risk in San Francisco’s Glen Canyon",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8059741&GUID=22220F7B-EDA1-41CA-8040-4DCEAE48A407&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2026-06-16",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2026-09-17",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2026-09-29",
+      "body": "Board of Supervisors",
+      "decision": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "2025-failed-vision",
+   "term": "2024-25",
+   "title": "Failed Vision: Revamping the Roadmap to Safer Streets",
+   "released": "2025-06-17",
+   "url": "https://api.sf.gov/documents/41530/2025_CGJ_Report_Failed_Vision.pdf",
+   "press_release": "https://api.sf.gov/documents/41531/2025_CGJ_Report_Failed_Vision_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2025--civil-grand-jury-reports-2024-2025",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Office of the Mayor",
+      "Police Department",
+      "Police Commission",
+      "San Francisco Municipal Transportation Agency"
+     ],
+     "date": "2025-08-18",
+     "url": "https://api.sf.gov/documents/44220/Civil_Grand_Jury_Vision_Zero_Report_Response_Package_8.18.2025_FzkVlwG.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2025-10-24",
+     "url": "https://api.sf.gov/documents/46589/Failed_Vision_Zero_Report_Response_BOS_102425.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "250668",
+    "resolution": "455-25",
+    "title": "Board Response - Civil Grand Jury Report - Failed Vision: Revamping the Roadmap to Safer Streets",
+    "url": "https://sfbos.org/sites/default/files/r0455-25.pdf",
+    "date": "2025-09-30",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2025-failed-vision.txt",
+   "responses_text": "data/cgj/text/2025-failed-vision.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 85637,
+   "board_file": {
+    "file": "250668",
+    "name": "Board Response - Civil Grand Jury Report - Failed Vision: Revamping the Roadmap to Safer Streets",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7441047&GUID=108663A3-61B2-43C4-B302-2C9D0111D257&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2025-06-24",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2025-09-18",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2025-09-18",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2025-09-30",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2025-techs-in-the-city",
+   "term": "2024-25",
+   "title": "Techs in the City: Government’s Opportunity to Seize the AI Moment",
+   "released": "2025-06-10",
+   "url": "https://api.sf.gov/documents/41390/2025_CGJ_Report_AI_Techs_in_the_City.pdf",
+   "press_release": "https://api.sf.gov/documents/41391/2025_CGJ_Report_AI_Techs_in_the_City_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2025--civil-grand-jury-reports-2024-2025",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Office of the Mayor",
+      "Department of Technology",
+      "Office of the City Administrator",
+      "Office of Contract Administration"
+     ],
+     "date": "2025-08-11",
+     "url": "https://api.sf.gov/documents/44218/AI_Consolidated_Responses.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2025-10-24",
+     "url": "https://api.sf.gov/documents/46588/Techs_in_the_City_Report__Response_BOS_102425.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "250648",
+    "resolution": "454-25",
+    "title": "Board Response - Civil Grand Jury Report - Techs in the City: Government’s Opportunity to Seize the AI Moment",
+    "url": "https://sfbos.org/sites/default/files/r0454-25.pdf",
+    "date": "2025-09-30",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2025-techs-in-the-city.txt",
+   "responses_text": "data/cgj/text/2025-techs-in-the-city.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 102461,
+   "board_file": {
+    "file": "250648",
+    "name": "Board Response - Civil Grand Jury Report - Techs in the City: Government’s Opportunity to Seize the AI Moment",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7433788&GUID=803CE2DF-B991-4FD9-A371-542D5F41D0F3&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2025-06-24",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2025-09-18",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2025-09-18",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2025-09-30",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2025-capacity-to-serve",
+   "term": "2024-25",
+   "title": "Capacity To Serve: Setting Social Services Nonprofits Up for Success",
+   "released": "2025-06-03",
+   "url": "https://api.sf.gov/documents/41123/2025_CGJ_Report_Capacity_To_Serve_Setting_Social_Services_Nonprofits_Up_for_Su_kqii3f0.pdf",
+   "press_release": "https://api.sf.gov/documents/41125/2025_CGJ_Report_Capacity_To_Serve_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2025--civil-grand-jury-reports-2024-2025",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Office of the Mayor",
+      "Office of the City Administrator",
+      "Office of the Controller"
+     ],
+     "date": "2025-08-04",
+     "url": "https://api.sf.gov/documents/43224/Capacity_To_Serve_Report_Response_MYR_080425_Consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2025-10-24",
+     "url": "https://api.sf.gov/documents/46587/Capacity_To_Serve_Report_Response_BOS_102425.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "250585",
+    "resolution": "453-25",
+    "title": "Board Response - Civil Grand Jury Report - Capacity to Serve: Setting Social Services Nonprofits Up for Success",
+    "url": "https://sfbos.org/sites/default/files/r0453-25.pdf",
+    "date": "2025-09-30",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2025-capacity-to-serve.txt",
+   "responses_text": "data/cgj/text/2025-capacity-to-serve.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 106472,
+   "board_file": {
+    "file": "250585",
+    "name": "Board Response - Civil Grand Jury Report - Capacity to Serve: Setting Social Services Nonprofits Up for Success",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7424048&GUID=4771904C-F20B-4382-93D8-DF76881EA441&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2025-06-03",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2025-09-18",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2025-09-18",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2025-09-30",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2024-lifting-the-fog",
+   "term": "2023-24",
+   "title": "Lifting the Fog: On Budgets, Innovation, Silos, and More",
+   "released": "2024-06-25",
+   "url": "https://api.sf.gov/documents/29214/Lifting_the_Fog_-_On_Budgets_Innovation_Silos_and_More.pdf",
+   "press_release": "https://api.sf.gov/documents/29215/Press_Release-_Lifting_the_Fog_-_On_Budgets_Innovation_Silos_and_More.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2023-2024",
+   "responses": [
+    {
+     "label": "Response - Department of Technology",
+     "from": [
+      "Department of Technology"
+     ],
+     "date": "2024-07-10",
+     "url": "https://api.sf.gov/documents/29714/Lifting_the_Fog_Report_Findings_and_Recommendations_DT_Makstman.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Consolidated Response - Office of the Mayor, Office of the City Administrator, Office of the Controller, and Department of Technology",
+     "from": [
+      "Office of the Mayor",
+      "Office of the City Administrator",
+      "Office of the Controller",
+      "Department of Technology"
+     ],
+     "date": "2024-08-23",
+     "url": "https://api.sf.gov/documents/31523/Lifting_the_Fog_Report_Response_MYR_082324_consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2024-10-09",
+     "url": "https://api.sf.gov/documents/32978/Lifting_the_Fog_Report_Response_BOS_100924.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "240720",
+    "resolution": "482-24",
+    "title": "Board Response - Civil Grand Jury Report - Lifting the Fog: On Budgets, Innovation, Silos, and More",
+    "url": "https://sfbos.org/sites/default/files/r0482-24.pdf",
+    "date": "2024-10-01",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2024-lifting-the-fog.txt",
+   "responses_text": "data/cgj/text/2024-lifting-the-fog.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 73820,
+   "board_file": {
+    "file": "240720",
+    "name": "Board Response - Civil Grand Jury Report - Lifting the Fog: On Budgets, Innovation, Silos, and More",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6736815&GUID=AF485E67-65D9-49C1-931B-F6B71286865B&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2024-06-25",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2024-10-01",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2024-commission-impossible",
+   "term": "2023-24",
+   "title": "Commission Impossible? Getting the Most from San Francisco's Commissions",
+   "released": "2024-06-20",
+   "url": "https://api.sf.gov/documents/29058/Commissions_Impossible_Report.pdf",
+   "press_release": "https://api.sf.gov/documents/29059/Commission_Impossible_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2023-2024",
+   "responses": [
+    {
+     "label": "Consolidated Response - Office of Mayor and Office of the Controller",
+     "from": [
+      "Office of Mayor",
+      "Office of the Controller"
+     ],
+     "date": "2024-08-20",
+     "url": "https://api.sf.gov/documents/31313/Commission_Impossible_Report_Response_MYR_082024_consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Office of the City Attorney",
+     "from": [
+      "Office of the City Attorney"
+     ],
+     "date": "2024-08-20",
+     "url": "https://api.sf.gov/documents/31314/Commission_Impossible_Report_Response_CAT_082024.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2024-10-09",
+     "url": "https://api.sf.gov/documents/32976/Commission_Impossible_Report_Response_BOS_100924.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "240709",
+    "resolution": "480-24",
+    "title": "Board Response - Civil Grand Jury Report - Commission Impossible? Getting the Most from San Francisco’s Commissions",
+    "url": "https://sfbos.org/sites/default/files/r0480-24.pdf",
+    "date": "2024-10-01",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2024-commission-impossible.txt",
+   "responses_text": "data/cgj/text/2024-commission-impossible.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 211629,
+   "board_file": {
+    "file": "240709",
+    "name": "Board Response - Civil Grand Jury Report - Commission Impossible? Getting the Most from San Francisco’s Commissions",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6732580&GUID=203323DA-D7D8-4F8E-8936-9F8498CA19EF&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2024-06-25",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2024-10-01",
+      "body": "Board of Supervisors",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2024-10-01",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED AS AMENDED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2024-building-san-francisco",
+   "term": "2023-24",
+   "title": "Building San Francisco: Designing, Constructing, and Maintaining City Infrastructure",
+   "released": "2024-06-20",
+   "url": "https://api.sf.gov/documents/29060/Building_San_Francisco_-_Designing_Constructing_and_Maintaining_City_Infrastructure_.pdf",
+   "press_release": "https://api.sf.gov/documents/29061/Building_SF_press_release_1.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2023-2024",
+   "responses": [
+    {
+     "label": "Response - Public Works Commission",
+     "from": [
+      "Public Works Commission"
+     ],
+     "date": "2024-08-08",
+     "url": "https://api.sf.gov/documents/30744/Building_SF_Report_Response_PWC_080824.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Consolidated Response - Office of Mayor, Department of Public Works, Office of the Controller, Office of the City Administrator, and Office of Resilience and Capital Planning",
+     "from": [
+      "Office of Mayor",
+      "Department of Public Works",
+      "Office of the Controller",
+      "Office of the City Administrator",
+      "Office of Resilience and Capital Planning"
+     ],
+     "date": "2024-08-20",
+     "url": "https://api.sf.gov/documents/31310/Building_SF_Report_Response_MYR_082024_consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2024-10-09",
+     "url": "https://api.sf.gov/documents/32977/Building_SF_Report_Response_BOS_100924.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "240711",
+    "resolution": "481-24",
+    "title": "Board Response - Civil Grand Jury Report - Building San Francisco: Designing, Constructing, and Maintaining City Infrastructure",
+    "url": "https://sfbos.org/sites/default/files/r0481-24.pdf",
+    "date": "2024-10-01",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2024-building-san-francisco.txt",
+   "responses_text": "data/cgj/text/2024-building-san-francisco.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 80026,
+   "board_file": {
+    "file": "240711",
+    "name": "Board Response - Civil Grand Jury Report - Building San Francisco: Designing, Constructing, and Maintaining City Infrastructure",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6732962&GUID=16033578-1D58-48C9-965E-60BD3BA12AB6&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2024-06-25",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2024-10-01",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2024-come-hell-or-high-water",
+   "term": "2023-24",
+   "title": "Come Hell or High Water: Flood Management in a Changing Climate",
+   "released": "2024-06-11",
+   "url": "https://api.sf.gov/documents/28766/Final_Copy_of_Climate_Report_20240527_0.pdf",
+   "press_release": "https://api.sf.gov/documents/28767/Come_Hell_or_High_Water_Press_Release_June_11_2024_0.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2023-2024",
+   "responses": [
+    {
+     "label": "Consolidated Responses",
+     "from": [
+      "Office of the Mayor",
+      "Office of the City Attorney",
+      "Office of the City Administrator",
+      "Office of Resilience and Capital Planning",
+      "Office of the Controller",
+      "Port of San Francisco",
+      "San Francisco Public Utilities Commission",
+      "San Francisco Human Rights Commission",
+      "Commission on the Environment"
+     ],
+     "date": "2024-08-09",
+     "url": "https://api.sf.gov/documents/30892/Climate_Report_Response_MYR_080924_consolidated.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2024-10-09",
+     "url": "https://api.sf.gov/documents/32975/Climate_Report_Response_BOS_100924.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "240668",
+    "resolution": "479-24",
+    "title": "Board Response - Civil Grand Jury Report - Come Hell or Highwater: Flood Management in a Changing Climate",
+    "url": "https://sfbos.org/sites/default/files/r0479-24.pdf",
+    "date": "2024-10-01",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2024-come-hell-or-high-water.txt",
+   "responses_text": "data/cgj/text/2024-come-hell-or-high-water.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 121788,
+   "board_file": {
+    "file": "240668",
+    "name": "Board Response - Civil Grand Jury Report - Come Hell or Highwater: Flood Management in a Changing Climate",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6721382&GUID=4A7E8199-DE36-4C40-B957-B9CD4D75D9D5&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2024-06-11",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2024-09-19",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2024-10-01",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2024-uncontrolled-burn",
+   "term": "2023-24",
+   "title": "Uncontrolled Burn: Dimming the Spark of Illegal Fireworks in San Francisco",
+   "released": "2024-05-28",
+   "url": "https://api.sf.gov/documents/41079/Uncontrolled_Burn_-_Fireworks_Report.pdf",
+   "press_release": "https://api.sf.gov/documents/28236/Unconrolled_Burn_-_Press_Release_0.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2023-2024",
+   "responses": [
+    {
+     "label": "Consolidated Response - Office of the Mayor, Department of Emergency Management, Fire Department, Police Department, Office of the City Administrator, and Office of the Controller",
+     "from": [
+      "Office of the Mayor",
+      "Department of Emergency Management",
+      "Fire Department",
+      "Police Department",
+      "Office of the City Administrator",
+      "Office of the Controller"
+     ],
+     "date": "2024-07-27",
+     "url": "https://api.sf.gov/documents/30404/Uncontrolled_Burn_Report_Response_MYR_072724_consolidated.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2024-uncontrolled-burn.txt",
+   "responses_text": "data/cgj/text/2024-uncontrolled-burn.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 193741,
+   "board_file": null
+  },
+  {
+   "id": "2023-hitting-the-performance-bullseye",
+   "term": "2022-23",
+   "title": "Hitting the Performance Bullseye: Contracting for Better Outcomes in Homelessness Services",
+   "released": "2023-06-28",
+   "url": "https://api.sf.gov/documents/24289/2023_CGJ_Report_Hitting_the_Performance_Bullseye_-_Contracting_for_Better_Outc_h8lGNXC.pdf",
+   "press_release": "https://api.sf.gov/documents/24290/Homelessness_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2022-2023",
+   "responses": [
+    {
+     "label": "Consolidated Response",
+     "from": [
+      "Office of the Mayor",
+      "Office of the City Administrator",
+      "Department of Homelessness and Supportive Housing",
+      "Office of Contract Administration"
+     ],
+     "date": "2023-08-25",
+     "url": "https://api.sf.gov/documents/24292/Homelessness_Report_Response_MYR_082523.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response-Office of the Mayor",
+     "from": [
+      "Office of the Mayor"
+     ],
+     "date": "2023-08-27",
+     "url": "https://api.sf.gov/documents/24291/Response-Office_of_the_Mayor_Homelessness_Report_Matrix_of_Findings_and_Recomm_HptJBCU.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2023-hitting-the-performance-bullseye.txt",
+   "responses_text": "data/cgj/text/2023-hitting-the-performance-bullseye.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 70905,
+   "board_file": null
+  },
+  {
+   "id": "2023-time-to-get-to-work",
+   "term": "2022-23",
+   "title": "Time to Get to Work: San Francisco’s Hiring Crisis",
+   "released": "2023-06-21",
+   "url": "https://api.sf.gov/documents/24285/2023_CGJ_Report_Time_to_Get_to_Work_-_San_Franciscos_Hiring_Crisis_062123.pdf",
+   "press_release": "https://api.sf.gov/documents/24286/Hiring_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2022-2023",
+   "responses": [
+    {
+     "label": "Consolidated Response – Office of the Mayor, Office of the City Administrator, Department of Human Resources, and Civil Service Commission",
+     "from": [
+      "Office of the Mayor",
+      "Office of the City Administrator",
+      "Department of Human Resources",
+      "Civil Service Commission"
+     ],
+     "date": "2023-08-18",
+     "url": "https://api.sf.gov/documents/24287/Hiring_Report_Response_MYR_081823.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Office of the Controller",
+     "from": [
+      "Office of the Controller"
+     ],
+     "date": "2023-08-18",
+     "url": "https://api.sf.gov/documents/24288/Response_Controller_CGJ_Response_Time_to_Get_to_Work.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2023-time-to-get-to-work.txt",
+   "responses_text": "data/cgj/text/2023-time-to-get-to-work.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 87569,
+   "board_file": null
+  },
+  {
+   "id": "2023-taking-care-of-business",
+   "term": "2022-23",
+   "title": "Taking Care of Business: San Francisco’s Plan to Save its Small Business",
+   "released": "2023-06-21",
+   "url": "https://api.sf.gov/documents/24279/2023_CGJ_Report_Taking_Care_of_Business_-_San_Franciscos_Plan_to_Save_its_Smal_AuH2v4H.pdf",
+   "press_release": "https://api.sf.gov/documents/24280/Small_Business_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2022-2023",
+   "responses": [
+    {
+     "label": "Response – Office of the Treasurer and Tax Collector",
+     "from": [
+      "Office of the Treasurer and Tax Collector"
+     ],
+     "date": "2023-08-17",
+     "url": "https://api.sf.gov/documents/24283/Small_Business_Report_Response_TTX_081723_0.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Consolidated Response",
+     "from": [
+      "Office of the Mayor",
+      "Office of the City Administrator",
+      "Office of Economic and Workforce Development",
+      "Office of Small Business",
+      "Department of Building Inspection",
+      "Department of Public Health",
+      "Department of Public Works",
+      "Fire Department",
+      "City Planning Department",
+      "Police Department"
+     ],
+     "date": "2023-08-18",
+     "url": "https://api.sf.gov/documents/24284/Small_Business_Report_Response_MYR_081823_0.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response - Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2023-11-17",
+     "url": "https://api.sf.gov/documents/32924/Small_Business_Report_Response_BOS_110223.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "230727",
+    "resolution": "532-23",
+    "title": "Board Response - Civil Grand Jury Report - Taking Care of Business: San Francisco's Plan to Save its Small Businesses",
+    "url": "https://sfbos.org/sites/default/files/r0532-23.pdf",
+    "date": "2023-11-07",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2023-taking-care-of-business.txt",
+   "responses_text": "data/cgj/text/2023-taking-care-of-business.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 164892,
+   "board_file": {
+    "file": "230727",
+    "name": "Board Response - Civil Grand Jury Report - Taking Care of Business: San Francisco's Plan to Save its Small Businesses",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6274452&GUID=876E2FE5-DDD6-4FDF-A486-CCFA6C2F9217&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2023-11-02",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2023-11-02",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED AS A COMMITTEE REPORT Pass"
+     },
+     {
+      "date": "2023-11-07",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2023-not-making-the-grade",
+   "term": "2022-23",
+   "title": "Not Making the Grade: San Francisco’s Shortage of Credentialed Teachers",
+   "released": "2023-06-15",
+   "url": "https://api.sf.gov/documents/24273/2023_CGJ_Report_Not_Making_the_Grade_-_San_Franciscos_Shortage_of_Credentialed_e7kssaM.pdf",
+   "press_release": "https://api.sf.gov/documents/24274/Teachers_Cert_Report_Press_Release.pdf",
+   "listing": "https://www.sf.gov/resource--2024--civil-grand-jury-reports-2022-2023",
+   "responses": [
+    {
+     "label": "Response – Office of the Mayor",
+     "from": [
+      "Office of the Mayor"
+     ],
+     "date": "2023-08-14",
+     "url": "https://api.sf.gov/documents/24275/Teachers_Cert_Report_Response_MYR_081423.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Office of the Controller",
+     "from": [
+      "Office of the Controller"
+     ],
+     "date": "2023-08-15",
+     "url": "https://api.sf.gov/documents/24278/Teachers_Cert_Report_Response_CON_081523.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Superintendent of Schools",
+     "from": [
+      "Superintendent of Schools"
+     ],
+     "date": "2023-09-01",
+     "url": "https://api.sf.gov/documents/24276/Respone-Superintendent-Not_making_the_Grade_Civil-Grand-Jury-Supt_0.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Board of Education",
+     "from": [
+      "Board of Education"
+     ],
+     "date": "2023-09-14",
+     "url": "https://api.sf.gov/documents/24277/Teachers_Cert_Report_Response_Board_of_Education_091423.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": null,
+   "text": "data/cgj/text/2023-not-making-the-grade.txt",
+   "responses_text": "data/cgj/text/2023-not-making-the-grade.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 135507,
+   "board_file": null
+  },
+  {
+   "id": "2022-hsh-progress-report",
+   "term": "2021-22",
+   "title": "A Progress Report about the San Francisco Department of Homelessness and Supportive Housing",
+   "released": "2022-06-30",
+   "url": "https://civilgrandjury.archive.sf.gov/2021_2022/2022%20CGJ%20Report_A%20Progress%20Report%20about%20the%20San%20Francisco%20Department%20of%20Homelessness%20and%20Supportive%20Housing.pdf",
+   "press_release": "https://civilgrandjury.archive.sf.gov/2021_2022/Homelessness%20Press%20Release.pdf",
+   "listing": "https://civilgrandjury.archive.sf.gov/2021_2022.html",
+   "responses": [
+    {
+     "label": "Response – Office of the Mayor and Department of Homelessness and Supportive Housing",
+     "from": [
+      "Office of the Mayor",
+      "Department of Homelessness and Supportive Housing"
+     ],
+     "date": "2022-08-16",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Homelessness%20Response_MYR_081622.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – The Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2022-11-17",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Homelessness%20Report%20Response_BOS_111722.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "220725",
+    "resolution": "456-22",
+    "title": "Board Response - Civil Grand Jury Report - A Progress Report about the San Francisco Department of Homelessness and Supportive Housing",
+    "url": "https://sfbos.org/sites/default/files/r0456-22.pdf",
+    "date": "2022-11-01",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2022-hsh-progress-report.txt",
+   "responses_text": "data/cgj/text/2022-hsh-progress-report.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 55838,
+   "board_file": {
+    "file": "220725",
+    "name": "Board Response - Civil Grand Jury Report - A Progress Report about the San Francisco Department of Homelessness and Supportive Housing",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5734278&GUID=AEC3CC74-E94B-4954-ACBE-A37267AF3C45&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2022-07-19",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2022-10-20",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2022-10-20",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED.. Pass"
+     },
+     {
+      "date": "2022-11-01",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2022-safe-accessible-parks",
+   "term": "2021-22",
+   "title": "Safe and Accessible Parks for All",
+   "released": "2022-06-24",
+   "url": "https://civilgrandjury.archive.sf.gov/2021_2022/2022%20CGJ%20Report_Safe%20and%20Accessible%20Parks%20for%20All.pdf",
+   "press_release": "https://civilgrandjury.archive.sf.gov/2021_2022/Parks%20Press%20Release.pdf",
+   "listing": "https://civilgrandjury.archive.sf.gov/2021_2022.html",
+   "responses": [
+    {
+     "label": "Response – The Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": null,
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Parks%20Board%20Response.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Recreation and Parks Department",
+     "from": [
+      "Recreation and Parks Department"
+     ],
+     "date": "2022-08-24",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/REC%20Response%20082422.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "220723",
+    "resolution": "394-22",
+    "title": "Board Response - Civil Grand Jury Report - Safe and Accessible Parks for All",
+    "url": "https://sfbos.org/sites/default/files/r0394-22.pdf",
+    "date": "2022-09-20",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2022-safe-accessible-parks.txt",
+   "responses_text": "data/cgj/text/2022-safe-accessible-parks.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 29898,
+   "board_file": {
+    "file": "220723",
+    "name": "Board Response - Civil Grand Jury Report - Safe and Accessible Parks for All",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5724721&GUID=689CB0FD-267C-44AD-B776-358631228EC6&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2022-07-12",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2022-09-15",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2022-09-15",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED AS A COMMITTEE REPORT Pass"
+     },
+     {
+      "date": "2022-09-20",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2022-hunters-point-shipyard",
+   "term": "2021-22",
+   "title": "Buried Problems and a Buried Process: The Hunters Point Naval Shipyard in a Time of Climate Change",
+   "released": "2022-06-14",
+   "url": "https://civilgrandjury.archive.sf.gov/2021_2022/2022%20CGJ%20Report_Buried%20Problems%20and%20a%20Buried%20Process%20-%20The%20Hunters%20Point%20Naval%20Shipyard%20in%20a%20Time%20of%20Climate%20Change.pdf",
+   "press_release": "https://civilgrandjury.archive.sf.gov/2021_2022/Hunters%20Point%20Press%20Release.pdf",
+   "listing": "https://civilgrandjury.archive.sf.gov/2021_2022.html",
+   "responses": [
+    {
+     "label": "Response - Office of the Mayor",
+     "from": [
+      "Office of the Mayor"
+     ],
+     "date": "2022-08-11",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Hunters%20Point%20Response_MYR_081122.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Department of Public Health",
+     "from": [
+      "Department of Public Health"
+     ],
+     "date": "2022-09-15",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Hunters%20Point%20Report%20Response_DPH_091522.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – The Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2022-11-17",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Hunters%20Point%20Response_BOS_111722.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "220721",
+    "resolution": "437-22",
+    "title": "Board Response - Civil Grand Jury Report - Buried Problems and a Buried Process: The Hunters Point Naval Shipyard in a Time of Climate Change",
+    "url": "https://sfbos.org/sites/default/files/r0437-22.pdf",
+    "date": "2022-10-18",
+    "text_method": "ocr"
+   },
+   "text": "data/cgj/text/2022-hunters-point-shipyard.txt",
+   "responses_text": "data/cgj/text/2022-hunters-point-shipyard.responses.txt",
+   "text_method": "pdftotext",
+   "text_chars": 107712,
+   "board_file": {
+    "file": "220721",
+    "name": "Board Response - Civil Grand Jury Report - Buried Problems and a Buried Process: The Hunters Point Naval Shipyard in a Time of Climate Change",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5724713&GUID=EC939D42-15B6-4361-853A-04229CF21C4F&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2022-07-12",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2022-09-15",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "CONTINUED Pass"
+     },
+     {
+      "date": "2022-09-20",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2022-09-29",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "CONTINUED Pass"
+     },
+     {
+      "date": "2022-10-06",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2022-10-06",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED Pass"
+     },
+     {
+      "date": "2022-10-18",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  },
+  {
+   "id": "2022-shovel-ready",
+   "term": "2021-22",
+   "title": "Shovel Ready: Best Practices and Collaboration to Improve San Francisco’s Capital Construction Program",
+   "released": "2022-04-11",
+   "url": "https://civilgrandjury.archive.sf.gov/2021_2022/2022%20CGJ%20Report_Shovel%20Ready%20-%20Best%20Practices%20and%20Collaboration%20to%20Improve%20San%20Francisco's%20Capital%20Construction%20Program.pdf",
+   "press_release": "https://civilgrandjury.archive.sf.gov/2021_2022/Continuity%20Press%20Release%20(1).pdf",
+   "listing": "https://civilgrandjury.archive.sf.gov/2021_2022.html",
+   "responses": [
+    {
+     "label": "Response – Office of the Mayor",
+     "from": [
+      "Office of the Mayor"
+     ],
+     "date": "2022-06-10",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Continuity%20Response_MYR_061022.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – Office of the Controller",
+     "from": [
+      "Office of the Controller"
+     ],
+     "date": "2022-07-25",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Continuity%20Response_CON_072522.pdf",
+     "text_method": "pdftotext"
+    },
+    {
+     "label": "Response – The Board of Supervisors",
+     "from": [
+      "Board of Supervisors"
+     ],
+     "date": "2022-10-31",
+     "url": "https://civilgrandjury.archive.sf.gov/2021_2022/Shovel%20Ready%20Report%20Response_BOS_103122.pdf",
+     "text_method": "pdftotext"
+    }
+   ],
+   "board_resolution": {
+    "file": "220506",
+    "resolution": "409-22",
+    "title": "Board Response - Civil Grand Jury Report - Shovel Ready: Best Practices and Collaboration to Improve San Francisco's Capital Construction Program",
+    "url": "https://sfbos.org/sites/default/files/r0409-22.pdf",
+    "date": "2022-09-27",
+    "text_method": "pdftotext"
+   },
+   "text": "data/cgj/text/2022-shovel-ready.txt",
+   "responses_text": "data/cgj/text/2022-shovel-ready.responses.txt",
+   "text_method": "ocr",
+   "text_chars": 41437,
+   "board_file": {
+    "file": "220506",
+    "name": "Board Response - Civil Grand Jury Report - Shovel Ready: Best Practices and Collaboration to Improve San Francisco's Capital Construction Program",
+    "url": "https://sfgov.legistar.com/LegislationDetail.aspx?ID=5638138&GUID=89847288-6AB3-4A93-BB24-FEE19A256A1C&Options=&Search=",
+    "agendas": [
+     {
+      "date": "2022-07-21",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "CONTINUED Pass"
+     },
+     {
+      "date": "2022-07-26",
+      "body": "Board of Supervisors",
+      "decision": null
+     },
+     {
+      "date": "2022-09-15",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "AMENDED, AN AMENDMENT OF THE WHOLE BEARING SAME TITLE Pass"
+     },
+     {
+      "date": "2022-09-15",
+      "body": "Government Audit and Oversight Committee",
+      "decision": "RECOMMENDED AS AMENDED AS A COMMITTEE REPORT Pass"
+     },
+     {
+      "date": "2022-09-20",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     },
+     {
+      "date": "2022-09-27",
+      "body": "Board of Supervisors",
+      "decision": "ADOPTED Pass"
+     }
+    ],
+    "resolution_listed": true
+   }
+  }
+ ]
+}

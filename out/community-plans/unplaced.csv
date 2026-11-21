@@ -1,0 +1,36 @@
+plan_id,street,from,to,page,reason
+tenderloin-ntp-2007,McAllister St,7th St,not stated,5-7 (PDF page 31) and Table 5-1 (PDF page 33),no street or no named cross street
+wa-cbtp-2017,Golden Gate Ave,Polk St,the Panhandle,41 (PDF page 43),cross street not on 'Golden Gate Ave': 'Panhandle'
+wa-cbtp-2017,Turk St,Polk St,the Panhandle,41 (PDF page 43),cross street not on 'Turk St': 'Panhandle'
+wa-cbtp-2017,Eddy St,Polk St,the Panhandle (Eddy ends at Saint Joseph's Ave),41 (PDF page 43),cross street not on 'Eddy St': 'Panhandle'
+brp-cap-2025,Golden Gate Ave,Fillmore neighborhood (west end not stated),Polk St (the existing Tenderloin protected lane),Fillmore Community Action Plan p. 55 (PDF page 55),no street or no named cross street
+brp-cap-2025,Bush St,not stated (Japantown area),not stated,Fillmore Community Action Plan p. 55 (PDF page 55),no street or no named cross street
+brp-cap-2025,Pine St,not stated (Japantown area),not stated,Fillmore Community Action Plan p. 55 (PDF page 55),no street or no named cross street
+ocean-map-2023,Ocean Ave,Balboa Park BART station,Frida Kahlo Way / Geneva Ave,33 (PDF page 33),cross street not on 'Ocean Ave': 'Balboa Park BART station'
+ocean-map-2023,Ocean Ave (westbound side),I-280 southbound off-ramp / Balboa Park BART,Frida Kahlo Way / Geneva Ave,"37 (PDF page 37), Figure 17",cross street not on 'Ocean Ave': 'I-280 southbound off-ramp / Balboa Park BART'
+balboa-park-plan-map,Geneva Ave,San Jose Ave / I-280,"east to the map edge (about Mission St, map only)",map sheet,no street or no named cross street
+balboa-park-plan-map,Alemany Blvd,near Niagara Ave / plan area southeast corner (map only),map edge,map sheet,no street or no named cross street
+balboa-park-plan-map,Holloway Ave,Lee Ave / Harold Ave,west to the map edge (map only),map sheet,no street or no named cross street
+eom-strategy-2018,Cayuga Ave,not stated,not stated,"141 (PDF page 145), MOB 4.1.A",no street or no named cross street
+eom-strategy-2018,connections from neighborhoods to Mission St and to Balboa Park and Glen Park BART (no street named),not stated,not stated,"17 and 141-142 (PDF pages 21, 145-146), MOB 4.1 and 4.2",no street or no named cross street
+brp-cap-2025,Havelock St bridge and Marston Ave,San Jose Ave,City College,Mission and Excelsior Community Action Plan p. 11 (PDF page 12),street not in centerlines: 'Havelock St bridge' -> 'HAVELOCK ST BRIDGE'; cross street not on 'Marston Ave': 'San Jose Ave'
+brp-cap-2025,east-west connection through McLaren Park (street not named),Excelsior,Portola and Bayview,Mission and Excelsior Community Action Plan p. 11 (PDF page 12),street not in centerlines: 'east-west connection through McLaren Park' -> 'EAST-WEST CONNECTION THROUGH MCLAREN PARK'
+brp-cap-2025,15th St,not stated,not stated,Mission and Excelsior Community Action Plan p. 10 (PDF page 12),no street or no named cross street
+brp-cap-2025,"San Jose Ave, Arlington St, Chenery St",Mission (Glen Park),Excelsior,Mission and Excelsior Community Action Plan p. 10 (PDF page 12),cross street not on 'San Jose Ave': 'Excelsior'; cross street not on 'Arlington St': 'Excelsior'; cross street not on 'Chenery St': 'Excelsior'
+mission-streetscape-2010,Capp St and Shotwell St,"not stated (Bicycle Plan long-term list: Capp 15th to 26th, Shotwell 14th to 26th)",,6 (PDF page 12),no street or no named cross street
+bikeplan-2009,Cesar Chavez St / 26th St,Sanchez St,US-101,1-16 (PDF page 16),cross street not on 'Cesar Chavez St / 26th St': 'US-101'
+en-map-2008,Cesar Chavez St and 26th St,not stated (dotted lines along both streets from about Valencia to Potrero),,"map sheet, Mission panel",no street or no named cross street
+showplace-potrero-2007,Mission Creek Bikeway (landscaped path through Showplace Square to Mission Bay),Showplace Square (about Division St / Harrison St),Mission Bay (4th St),59 (PDF page 71),street not in centerlines: 'Mission Creek Bikeway' -> 'MISSION CREEK BIKEWAY'
+en-map-2008,Mission Creek Bikeway,Division St / Alameda St,Mission Bay channel,"map sheet, Showplace Square and Mission panels",street not in centerlines: 'Mission Creek Bikeway' -> 'MISSION CREEK BIKEWAY'
+port-waterfront-plan-2024,San Francisco Bay Trail (Illinois St and Terry Francois Blvd carry it in the Central Waterfront),Aquatic Park,India Basin,"98-99 (PDF page 53), Transportation policy 13",street not in centerlines: 'San Francisco Bay Trail' -> 'SAN FRANCISCO BAY TRAIL'
+port-waterfront-plan-2024,The Embarcadero,King St,Fisherman's Wharf,"98-99 (PDF page 53), Transportation policy 18","cross street not on 'The Embarcadero': ""Fisherman's Wharf"""
+bayview-cbtp-2020,unlabelled street north of Bayshore Blvd near Industrial St (Industrial St or Toland St on the map),Bayshore Blvd,north toward Oakdale Ave (map only),82 (PDF page 84),street not in centerlines: 'unlabelled street north of Bayshore Blvd near Industrial St' -> 'UNLABELLED STREET NORTH OF BAYSHORE BLVD NEAR INDUSTRIAL'
+cphps-tp-2018,"two-way cycle track through Candlestick Point and Hunters Point Shipyard (Harney Way, Arelious Walker Dr extension, Crisp Rd and shipyard streets per the map)",Harney Way / Thomas Mellon Dr,Hunters Point Shipyard (map only),"65 and 67 (PDF pages 68, 70), Figure 15",street not in centerlines: 'two-way cycle track through Candlestick Point' -> 'TWO-WAY CYCLE TRACK THROUGH CANDLESTICK POINT'; street not in centerlines: 'Hunters Point Shipyard' -> 'HUNTERS POINT SHIPYARD'
+cphps-tp-2018,Yosemite Slough Bridge,Candlestick Point,Hunters Point Shipyard,65 (PDF page 68),street not in centerlines: 'Yosemite Slough Bridge' -> 'YOSEMITE SLOUGH BRIDGE'
+d4-mobility-2021,Rivera St,47th Ave,about 19th Ave (map only),"31 (PDF page 31), Table 3-10 and Figure 3-8",no continuous 'Rivera St' between '47th Ave' and '19th Ave'
+sfbc-connecting-the-city-2010,San Jose Ave,22nd St,Wilson St,"sfbike.org/?ctc (2010), 'Aquatic Park to San Francisco State University'",no continuous 'San Jose Ave' between '22nd St' and 'Wilson St'
+sfbc-connecting-the-city-2010,Polk St,Market St,Beach St,sfbike.org/?ctc (2010) and connectingthecity.org North-South page (2011),no continuous 'Polk St' between 'Market St' and 'Beach St'
+sfbc-connecting-the-city-2010,Fort Mason waterfront causeway (new walking and biking bridge),Aquatic Park,Marina Green,"sfbike.org/?ctc (2010), 'The Waterfront Ride'",street not in centerlines: 'Fort Mason waterfront causeway' -> 'FORT MASON WATERFRONT CAUSEWAY'
+sfbc-connecting-the-city-2010,Bike path along the BART line,San Francisco State University,San Jose Ave (Glen Park / Balboa Park),"sfbike.org/?ctc (2010), 'Aquatic Park to San Francisco State University'",street not in centerlines: 'Bike path along the BART line' -> 'BIKE PATH ALONG THE BART LINE'
+peoples-slow-streets-2022,Great Highway / Coast Trail,Golden Gate Bridge,Fort Funston,"'Improving Existing Routes to Reach 100 Miles', Bike Network list",cross street not on 'Great Highway / Coast Trail': 'Golden Gate Bridge'
+peoples-slow-streets-2022,San Francisco Bay Trail,Golden Gate Bridge,San Mateo County line,"'Improving Existing Routes to Reach 100 Miles', Bike Network list",street not in centerlines: 'San Francisco Bay Trail' -> 'SAN FRANCISCO BAY TRAIL'

@@ -1,0 +1,91 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2026-03-17",
+ "id": "g55-52012",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=52012",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/45255"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes. February 3, 2026, Special Meeting & March 3, 2026, Regular Meeting",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "8",
+   "title": "New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes (Resolution 260317-018)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA",
+   "decision": "ADOPTED — 5 ayes (Resolution 260317-018)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications",
+   "decision": "ADOPTED — 5 ayes (Resolution 260317-019)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving parking modifications along the 8 Bayshore Muni route in Visitation Valley to improve and expand bus boarding areas",
+   "decision": "ADOPTED — 5 ayes (Resolution 260317-020)"
+  },
+  {
+   "no": "10.4",
+   "title": "Approving the Agreement Between the Member Agencies Regarding the Peninsula Corridor Joint Powers Board’s",
+   "decision": "ADOPTED — 5 ayes (Resolution 260317-021)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the Fiscal Year 2026-2027 and Fiscal Year 2027-2028 Budget Balancing Plan"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Muni Service Equity Strategy Update"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a Streets Division Quarterly Update"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

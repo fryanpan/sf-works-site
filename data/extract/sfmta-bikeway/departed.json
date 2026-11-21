@@ -1,0 +1,743 @@
+{
+ "note": "Rows SFMTA deleted from its live bikeway layer, with their last attributes and line. Written by pipeline/refresh-extracts.py (scripts/lib/bikeway_departed.py); read by scripts/bike-network-history.py so a deletion does not change a closed year. Grow-only.",
+ "records": [
+  {
+   "oid": 341,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 341,
+    "CNN": 10223000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "NEWHALL ST",
+    "TO_ST": "3RD ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12164321,
+    "LENGTH_FT": 642,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684528783000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 1341,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.390968,
+     37.734014
+    ],
+    [
+     -122.392776,
+     37.735038
+    ]
+   ]
+  },
+  {
+   "oid": 413,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 413,
+    "CNN": 10216000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "CRISP RD",
+    "TO_ST": "GRIFFITH ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.01988211,
+    "LENGTH_FT": 105,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527122000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 1413,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.379697,
+     37.727618
+    ],
+    [
+     -122.379992,
+     37.727785
+    ]
+   ]
+  },
+  {
+   "oid": 587,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 587,
+    "CNN": 10218000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "HAWES ST",
+    "TO_ST": "INGALLS ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12568211,
+    "LENGTH_FT": 664,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527122000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 1587,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.381564,
+     37.728678
+    ],
+    [
+     -122.383431,
+     37.729738
+    ]
+   ]
+  },
+  {
+   "oid": 1184,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 1184,
+    "CNN": 10223000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "NEWHALL ST",
+    "TO_ST": "3RD ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12164321,
+    "LENGTH_FT": 642,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684528783000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 2184,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.390968,
+     37.734014
+    ],
+    [
+     -122.392776,
+     37.735038
+    ]
+   ]
+  },
+  {
+   "oid": 1427,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 1427,
+    "CNN": 10220000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "JENNINGS ST",
+    "TO_ST": "KEITH ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12653326,
+    "LENGTH_FT": 668,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527123000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 2427,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.385287,
+     37.730791
+    ],
+    [
+     -122.387167,
+     37.731857
+    ]
+   ]
+  },
+  {
+   "oid": 2212,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 2212,
+    "CNN": 10224000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "PHELPS ST",
+    "TO_ST": "NEWHALL ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12689328,
+    "LENGTH_FT": 670,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684528784000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 3212,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.392776,
+     37.735038
+    ],
+    [
+     -122.394662,
+     37.736107
+    ]
+   ]
+  },
+  {
+   "oid": 2786,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 2786,
+    "CNN": 10218000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "HAWES ST",
+    "TO_ST": "INGALLS ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12568211,
+    "LENGTH_FT": 664,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527126000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 3786,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.381564,
+     37.728678
+    ],
+    [
+     -122.383431,
+     37.729738
+    ]
+   ]
+  },
+  {
+   "oid": 2843,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 2843,
+    "CNN": 10217000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "CRISP RD",
+    "TO_ST": "HAWES ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.10587694,
+    "LENGTH_FT": 559,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527126000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 3843,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.379992,
+     37.727785
+    ],
+    [
+     -122.381564,
+     37.728678
+    ]
+   ]
+  },
+  {
+   "oid": 2857,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 2857,
+    "CNN": 10220000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "JENNINGS ST",
+    "TO_ST": "KEITH ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12653326,
+    "LENGTH_FT": 668,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527126000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 3857,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.385287,
+     37.730791
+    ],
+    [
+     -122.387167,
+     37.731857
+    ]
+   ]
+  },
+  {
+   "oid": 3076,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 3076,
+    "CNN": 10217000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "CRISP RD",
+    "TO_ST": "HAWES ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.10587694,
+    "LENGTH_FT": 559,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527124000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 4076,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.379992,
+     37.727785
+    ],
+    [
+     -122.381564,
+     37.728678
+    ]
+   ]
+  },
+  {
+   "oid": 3159,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 3159,
+    "CNN": 10222000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "LANE ST",
+    "TO_ST": "3RD ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.13004204,
+    "LENGTH_FT": 687,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684528786000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 4159,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.389035,
+     37.732919
+    ],
+    [
+     -122.390968,
+     37.734014
+    ]
+   ]
+  },
+  {
+   "oid": 3934,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 3934,
+    "CNN": 10221000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "KEITH ST",
+    "TO_ST": "LANE ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.1258338,
+    "LENGTH_FT": 664,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527126000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 4934,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.387167,
+     37.731857
+    ],
+    [
+     -122.389035,
+     37.732919
+    ]
+   ]
+  },
+  {
+   "oid": 4344,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 4344,
+    "CNN": 10224000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "PHELPS ST",
+    "TO_ST": "NEWHALL ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12689328,
+    "LENGTH_FT": 670,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684528786000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 5344,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.392776,
+     37.735038
+    ],
+    [
+     -122.394662,
+     37.736107
+    ]
+   ]
+  },
+  {
+   "oid": 4392,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 4392,
+    "CNN": 10219000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "INGALLS ST",
+    "TO_ST": "JENNINGS ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12494092,
+    "LENGTH_FT": 660,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527125000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 5392,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.383431,
+     37.729738
+    ],
+    [
+     -122.385287,
+     37.730791
+    ]
+   ]
+  },
+  {
+   "oid": 4411,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 4411,
+    "CNN": 10222000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "LANE ST",
+    "TO_ST": "3RD ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.13004204,
+    "LENGTH_FT": 687,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684528787000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 5411,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.389035,
+     37.732919
+    ],
+    [
+     -122.390968,
+     37.734014
+    ]
+   ]
+  },
+  {
+   "oid": 4628,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 4628,
+    "CNN": 10221000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "KEITH ST",
+    "TO_ST": "LANE ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.1258338,
+    "LENGTH_FT": 664,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527126000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 5628,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.387167,
+     37.731857
+    ],
+    [
+     -122.389035,
+     37.732919
+    ]
+   ]
+  },
+  {
+   "oid": 5056,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 5056,
+    "CNN": 10219000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "INGALLS ST",
+    "TO_ST": "JENNINGS ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": " ",
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.12494092,
+    "LENGTH_FT": 660,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527127000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 6056,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.383431,
+     37.729738
+    ],
+    [
+     -122.385287,
+     37.730791
+    ]
+   ]
+  },
+  {
+   "oid": 5164,
+   "departed": "2026-11-10",
+   "row": {
+    "OBJECTID": 5164,
+    "CNN": 10216000.0,
+    "STREETNAME": "PALOU AVE",
+    "FROM_ST": "CRISP RD",
+    "TO_ST": "GRIFFITH ST",
+    "FACILITY_T": "CLASS III",
+    "DIRECT": "2W",
+    "BARRIER": " ",
+    "NOTES": null,
+    "FY": 0,
+    "QTR": 0,
+    "LENGTH": 0.01988211,
+    "LENGTH_FT": 105,
+    "INSTALL_YR": 2010,
+    "INSTALL_MO": null,
+    "UPDATE_YR": 0,
+    "UPDATE_MO": null,
+    "CREATED_DATE": null,
+    "LAST_EDITED_DATE": 1684527127000,
+    "SYMBOLOGY": "BIKE ROUTE",
+    "BUFFERED": "NO",
+    "RAISED": "NO",
+    "CONTRAFLOW": "NO",
+    "BIKE_NTWK_SEG_ID": 6164,
+    "INROW": 1
+   },
+   "pts": [
+    [
+     -122.379697,
+     37.727618
+    ],
+    [
+     -122.379992,
+     37.727785
+    ]
+   ]
+  }
+ ]
+}

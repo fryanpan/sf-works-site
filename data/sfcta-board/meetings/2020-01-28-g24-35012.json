@@ -1,0 +1,51 @@
+{
+ "committee": "Transportation Authority Full Board",
+ "date": "2020-01-28",
+ "id": "g24-35012",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=35012",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Roll Call"
+  },
+  {
+   "no": "2",
+   "title": "Chair’s Report"
+  },
+  {
+   "no": "3",
+   "title": "Approve the Minutes of the January 14, 2020 Meeting"
+  },
+  {
+   "no": "4",
+   "title": "Allocate $220,000, with Conditions, in Prop K Sales Tax Funds to the San Francisco Municipal Transportation Agency for the Anza Street Bike Lanes"
+  },
+  {
+   "no": "5",
+   "title": "Adopt the 2019 Annual Report"
+  },
+  {
+   "no": "6",
+   "title": "Update on the San Francisco Department of the Environment’s Citywide Electric Vehicle Roadmap"
+  },
+  {
+   "no": "7",
+   "title": "Introduction of New Items"
+  },
+  {
+   "no": "8",
+   "title": "Public Comment"
+  },
+  {
+   "no": "9",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfcta-board"
+}

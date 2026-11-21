@@ -1,0 +1,110 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-09-03",
+ "id": "g55-33908",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=33908",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/20264"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-110)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving traffic modifications",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-111)"
+  },
+  {
+   "no": "10.2A",
+   "title": "ESTABLISH–2-HOUR PARKING, 8 AM TO 6 PM, MONDAY THROUGH FRIDAY-Connecticut Street",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-111)"
+  },
+  {
+   "no": "10.2B",
+   "title": "ESTABLISH–2-HOUR PARKING, 8 AM TO 6 PM, MONDAY THROUGH FRIDAY-Connecticut Street",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-111)"
+  },
+  {
+   "no": "10.2C",
+   "title": "ESTABLISH–RESIDENTIAL PERMIT PARKING AREA N, 12th Avenue, between Geary Boulevard and Anza Street",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-111)"
+  },
+  {
+   "no": "10.2D",
+   "title": "RESCIND–TOW-AWAY, NO STOPPING EXCEPT PERMITTED CAR SHARE VEHICLES, Capp Street",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-111)"
+  },
+  {
+   "no": "10.3E",
+   "title": "Approving a Memorandum of Understanding, which became effective on June 19, 2019, with San Francisco Animal Care andControl, and the Real Estate Division of the San Francisco Office of the City Administrator",
+   "decision": "ADOPTED — 7 ayes (Resolution 190903-112)"
+  },
+  {
+   "no": "11",
+   "title": "Presentation"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote whether to invoke the attorney-client privilege and conduct a closed session"
+  },
+  {
+   "no": "13",
+   "title": "Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

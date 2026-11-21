@@ -1,0 +1,119 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2019-11-19",
+ "id": "g55-34545",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=34545",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/20777"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting.",
+   "decision": "REMOVED"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes: November 5, 2019 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Update on Vision Zero"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Update on transit service"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 4 ayes, 2 nays"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the traffic modifications",
+   "decision": "ADOPTED — 7 ayes; parts G, H, I severed and voted separately: ADOPTED — 4 ayes, 2 nays (Resolution 191119-138)"
+  },
+  {
+   "no": "10.2",
+   "title": "Amending the Transportation Code to expand existing parking restrictions on Turk Street",
+   "decision": "ADOPTED — 3 ayes, 3 nays",
+   "severed": true
+  },
+  {
+   "no": "10.3",
+   "title": "Modification No. 5 to Contract No. 1236R, Third Street Light Rail Project Mission Bay Loop, with Mitchell Engineering, to perform additional miscellaneous work",
+   "decision": "ADOPTED — 7 ayes (Resolution 191119-139)"
+  },
+  {
+   "no": "10.4",
+   "title": "Establishing a meeting schedule for 2020 for meetings of the SFMTA Board of Directors/Parking Authority Commission and the Policy and Governance Committee",
+   "decision": "ADOPTED — 7 ayes (Resolution 191119-140)"
+  },
+  {
+   "no": "11",
+   "title": "Approving a 15-month Page Street Bikeway Improvement pilot project",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Execute Contract Modification No. 6 to Contract No. 2013-19: Procurement of New Light Rail Vehicles, with Siemens Mobility, Inc.",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Appointing Jeffrey Paul Tumlin to the position of Director of Transportation of the San Francisco Municipal Transportation Agency",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege"
+  },
+  {
+   "no": "15",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "16",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Injuries, car miles, enforcement and speeding</title>
+<style>
+body{margin:0;padding:8px 12px;font:13px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#15181c;background:#fff}
+.row{display:grid;gap:12px 28px;justify-content:start}
+.t{font-weight:600;font-size:15px;white-space:nowrap;margin-bottom:4px}
+svg{display:block;overflow:visible}
+p{margin:4px 0 0;color:#59626f;font-size:11.5px}
+a{color:#4269d0}
+.src{margin:10px 0 0;font-size:11px;color:#59626f}
+</style></head><body>
+<div class="row" id="row"></div>
+<p class="src" id="src">Sources: <a href="https://www.sanfranciscopolice.org/stay-safe/crime-data/traffic-violation-reports" target="_blank">SFPD</a> and <a href="https://data.sfgov.org/d/d5uh-bk84" target="_blank">DataSF speed cameras</a>. Details at the end of this doc.</p>
+<script>
+const D = {"inj":[[2015,261],[2016,307],[2017,281],[2018,306],[2019,336],[2020,256],[2021,298],[2022,321],[2023,261],[2024,341],[2025,274]],"vmt":[[2019,12.4],[2020,9.2],[2021,9.4],[2022,10.5],[2025.6666666666667,12]],"police":[[2014,10406],[2015,10011],[2016,8400],[2017,6596],[2018,4241],[2019,3581],[2020,1166],[2021,805],[2022,334],[2023,423],[2024,1204],[2025,1699],[2026,2106]],"cams":[[2025,18675],[2026,23855]],"berk":[["2024-04-01",24.8,24.2],["2024-04-08",25.5,25.0],["2024-04-15",24.1,23.6],["2024-04-22",24.0,23.5],["2024-04-29",24.4,23.9],["2024-05-06",23.9,23.4],["2024-05-13",23.9,23.9],["2024-05-20",24.4,24.4],["2024-05-27",25.7,25.2],["2024-06-03",25.0,25.4],["2024-06-10",25.6,25.3],["2024-06-17",25.9,25.2],["2024-06-24",25.1,25.1],["2024-07-01",27.9,27.1],["2024-07-08",27.5,27.0],["2024-07-15",25.7,26.4],["2024-07-22",26.0,26.6],["2024-07-29",26.8,27.6],["2024-08-05",27.4,27.8],["2024-08-12",26.5,27.2],["2024-08-19",25.7,25.7],["2024-08-26",25.6,25.6],["2024-09-02",26.6,26.2],["2024-09-09",26.6,25.6],["2024-09-16",24.5,24.5],["2024-09-23",24.8,25.4],["2024-09-30",26.1,24.2],["2024-10-07",26.6,25.4],["2024-10-14",27.3,26.7],["2024-10-21",25.6,25.1],["2024-10-28",25.3,25.3],["2024-11-04",25.3,24.8],["2024-11-11",26.8,25.9],["2024-11-18",23.5,24.1],["2024-11-25",27.3,26.6],["2024-12-02",23.9,23.9],["2024-12-09",23.3,24.0],["2024-12-16",22.9,23.7],["2024-12-23",28.0,27.2],["2024-12-30",26.5,25.7],["2025-01-06",23.9,23.9],["2025-01-13",23.2,23.2],["2025-01-20",23.9,23.5],["2025-01-27",23.4,23.4],["2025-02-03",23.3,22.6],["2025-02-10",23.2,22.3],["2025-02-17",24.1,23.5],["2025-02-24",22.5,22.1],["2025-03-03",22.4,22.4],["2025-03-10",22.6,23.2],["2025-03-17",21.7,22.4],["2025-03-24",21.7,22.3],["2025-03-31",22.2,22.8],["2025-04-07",22.4,22.8],["2025-04-14",23.1,22.6],["2025-04-21",22.5,22.5],["2025-04-28",24.1,24.9],["2025-05-05",22.7,23.2],["2025-05-13",21.4,21.9],["2025-05-21",22.1,23.4],["2025-05-29",24.5,25.1],["2025-06-06",24.1,25.7],["2025-06-14",23.3,24.9],["2025-06-22",23.9,25.4],["2025-06-30",25.2,27.5],["2025-07-07",23.2,25.8],["2025-07-15",20.4,23.8],["2025-07-23",18.4,21.9],["2025-07-31",17.5,20.8],["2025-08-08",16.1,21.2],["2025-08-16",15.9,20.5],["2025-08-24",19.0,21.8],["2025-09-01",19.7,21.8],["2025-09-08",19.2,22.3],["2025-09-15",20.3,23.2],["2025-09-22",19.9,22.7],["2025-09-29",18.7,21.6],["2025-10-06",19.0,21.8],["2025-10-13",19.3,22.2],["2025-10-20",19.2,22.1],["2025-10-27",19.3,21.2],["2025-11-03",18.3,20.4],["2025-11-10",19.7,22.1],["2025-11-17",19.3,22.1],["2025-11-24",21.6,24.0],["2025-12-01",17.3,20.6],["2025-12-08",16.6,20.4],["2025-12-15",17.2,20.6],["2025-12-22",19.5,22.8],["2025-12-29",19.2,22.5],["2026-01-05",17.1,20.8],["2026-01-12",16.7,20.6],["2026-01-19",17.5,21.2],["2026-01-26",17.5,21.3],["2026-02-02",17.3,21.1],["2026-02-09",16.6,21.0],["2026-02-16",17.6,21.3],["2026-02-23",16.3,20.2],["2026-03-02",16.1,19.8],["2026-03-09",16.7,20.4],["2026-03-16",17.0,20.2],["2026-03-23",17.0,20.7],["2026-03-30",16.0,20.9]],"phases":["2025-06-06","2025-08-05"],"berkStats":{"baseCam":25,"baseCmp":25,"endCam":17,"endCmp":21}};
+const num=v=>Number.isInteger(v)?String(v):v.toFixed(1);
+const charts = [
+  {title:"Severely hurt or killed", data:D.inj, goal:{x:2035, y:137, lab:"Our milestone: 137"}, fmt:num, ymin:0},
+  {title:"Car miles per person per day", data:D.vmt, goal:{x:2030, y:9.3, lab:"Goal 9.3"}, fmt:num, ymin:0, lastLab:"Sep 2025"}
+];
+const blue="#4269d0", yellow="#efb118", yellowText="#a87800", // label text in the line colour; the yellow darkened to read on white
+      grey="#9aa3ad", ink="#15181c", mute="#59626f";
+const k=v=>v>=10000?Math.round(v/1000)+"k":(v/1000).toFixed(1)+"k";
+function spark(c, w, phShared){
+  const ml=40, mr=118, mt=14, mb=18;
+  const xs=c.data.map(d=>d[0]).concat([c.goal.x]), x0=c.data[0][0], x1=Math.max(...xs);
+  const ys=c.data.map(d=>d[1]).concat([c.goal.y]);
+  const y1=Math.max(...ys)*1.08, y0=c.ymin;
+  // Aspect ratio by banking to 45 degrees (Cleveland): pick the plot height that puts
+  // the median absolute segment slope, trend plus the dashed path to the goal, at 1.
+  const pts2=c.data.concat([[c.goal.x,c.goal.y]]), sl=[];
+  for(let i=1;i<pts2.length;i++){const dx=(pts2[i][0]-pts2[i-1][0])/(x1-x0), dy=(pts2[i][1]-pts2[i-1][1])/(y1-y0); if(dx>0&&dy!==0) sl.push(Math.abs(dy/dx));}
+  sl.sort((a,b)=>a-b); const med=sl.length?sl[Math.floor(sl.length/2)]:1;
+  const pw=w-ml-mr, ph=phShared;
+  const h=ph+mt+mb;
+  c.banked=pw/med;
+  const X=v=>ml+(v-x0)/(x1-x0)*(w-ml-mr), Y=v=>mt+(1-(v-y0)/(y1-y0))*(h-mt-mb);
+  // A gap of more than a year has no data behind it: drawn dashed, not as a measured line.
+  const seg=[[c.data[0]]];
+  for(let i=1;i<c.data.length;i++){ if(c.data[i][0]-c.data[i-1][0]>1.5) seg.push([c.data[i-1]]); seg[seg.length-1].push(c.data[i]); }
+  const P=a=>a.map(d=>`${X(d[0]).toFixed(1)},${Y(d[1]).toFixed(1)}`).join(" ");
+  const f=c.data[0], l=c.data[c.data.length-1];
+  let s=`<svg width="${w}" height="${h}" role="img" aria-label="${c.title}: ${c.fmt(f[1])} in ${f[0]}, ${c.fmt(l[1])} in ${l[0]}, ${c.goal.lab}">`;
+  s+=`<line x1="${ml}" y1="${Y(0)}" x2="${w-mr+40}" y2="${Y(0)}" stroke="${mute}" stroke-width="1"/><text x="${ml-6}" y="${Y(0)+3.5}" text-anchor="end" font-size="10" fill="${mute}">0</text>`;
+  // Goal as a horizontal reference line across the chart (Bryan, 2026-11-12).
+  s+=`<line x1="${ml}" y1="${Y(c.goal.y)}" x2="${X(c.goal.x)}" y2="${Y(c.goal.y)}" stroke="${grey}" stroke-width="1.2" stroke-dasharray="5,4"/>`;
+  seg.forEach(a=>{ const gap=a.length===2&&a[1][0]-a[0][0]>1.5; s+=`<polyline points="${P(a)}" fill="none" stroke="${blue}" stroke-width="${gap?1.4:2}"${gap?' stroke-dasharray="2,3"':''}/>`; });
+  s+=`<circle cx="${X(f[0])}" cy="${Y(f[1])}" r="3" fill="${blue}"/><circle cx="${X(l[0])}" cy="${Y(l[1])}" r="3" fill="${blue}"/>`;
+  s+=`<circle cx="${X(c.goal.x)}" cy="${Y(c.goal.y)}" r="3.5" fill="#fff" stroke="${ink}" stroke-width="1.5"/>`;
+  s+=`<text x="${X(f[0])-6}" y="${Y(f[1])+4}" text-anchor="end" font-size="11.5" font-weight="600" fill="${ink}">${c.fmt(f[1])}</text>`;
+  s+=`<text x="${X(l[0])+5}" y="${Y(l[1])-6}" font-size="11.5" font-weight="600" fill="${ink}">${c.fmt(l[1])}</text>`;
+  s+=`<text x="${X(c.goal.x)+7}" y="${Y(c.goal.y)+4}" font-size="12" fill="${ink}">${c.goal.lab} by ${c.goal.x}</text>`;
+  s+=`<text x="${X(f[0])}" y="${h-2}" text-anchor="middle" font-size="10" fill="${mute}">${f[0]}</text>`;
+  s+=`<text x="${X(l[0])}" y="${h-2}" text-anchor="middle" font-size="10" fill="${mute}">${c.lastLab||l[0]}</text>`;
+  s+=`<text x="${X(c.goal.x)}" y="${h-2}" text-anchor="middle" font-size="10" font-weight="600" fill="${ink}">${c.goal.x}</text>`;
+  return s+"</svg>";
+}
+// Citations a month, each year's average: police and speed cameras on one axis.
+function enforce(w, ph){
+  const ml=34, mr=92, mt=14, mb=16, h=ph+mt+mb;
+  const P=D.police, C=D.cams, x0=P[0][0], x1=Math.max(P[P.length-1][0], C[C.length-1][0]);
+  const y1=Math.max(...P.map(d=>d[1]), ...C.map(d=>d[1]))*1.08;
+  const X=v=>ml+(v-x0)/(x1-x0)*(w-ml-mr), Y=v=>mt+(1-v/y1)*ph;
+  const line=(a,col)=>`<polyline points="${a.map(d=>X(d[0]).toFixed(1)+","+Y(d[1]).toFixed(1)).join(" ")}" fill="none" stroke="${col}" stroke-width="2"/>`+a.map(d=>`<circle cx="${X(d[0])}" cy="${Y(d[1])}" r="2.2" fill="${col}"/>`).join("");
+  const pf=P[0], pl=P[P.length-1], cl=C[C.length-1];
+  let s=`<svg width="${w}" height="${h}" role="img" aria-label="A month: police violations ${k(pf[1])} in ${pf[0]}, ${k(pl[1])} in ${pl[0]}; speed camera tickets ${k(cl[1])} in ${cl[0]}">`;
+  s+=`<line x1="${ml}" y1="${Y(0)}" x2="${w-mr+8}" y2="${Y(0)}" stroke="${mute}"/><text x="${ml-6}" y="${Y(0)+3.5}" text-anchor="end" font-size="10" fill="${mute}">0</text>`;
+  s+=line(P,blue)+line(C,yellow);
+  s+=`<text x="${X(pf[0])-6}" y="${Y(pf[1])+4}" text-anchor="end" font-size="11.5" font-weight="600" fill="${blue}">${k(pf[1])}</text>`;
+  s+=`<text x="${X(cl[0])+7}" y="${Y(cl[1])+4}" font-size="11.5" fill="${yellowText}"><tspan font-weight="600">${k(cl[1])}</tspan> cameras</text>`;
+  s+=`<text x="${X(pl[0])+7}" y="${Y(pl[1])+4}" font-size="11.5" fill="${blue}"><tspan font-weight="600">${k(pl[1])}</tspan> police</text>`;
+  s+=`<text x="${X(pf[0])}" y="${h-2}" text-anchor="middle" font-size="10" fill="${mute}">${pf[0]}</text>`;
+  s+=`<text x="${X(x1)}" y="${h-2}" text-anchor="middle" font-size="10" fill="${mute}">${x1}</text>`;
+  // Annotation (Bryan, 2026-11-12): two lines in the police colour, right-aligned on the last
+  // year, sitting just above the highest police point or line segment under the text's width.
+  const ann=["Police enforcement","still low"], fs=11, lh=13;
+  const cx=document.createElement("canvas").getContext("2d"); cx.font=`600 ${fs}px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif`;
+  const tw=Math.max(...ann.map(t=>cx.measureText(t).width)), xr=X(x1)-2, xl=xr-tw;
+  const inv=px=>x0+(px-ml)/(w-ml-mr)*(x1-x0);
+  const pAt=v=>{for(let i=1;i<P.length;i++) if(v<=P[i][0]){const a=P[i-1],b=P[i];return a[1]+(b[1]-a[1])*(v-a[0])/(b[0]-a[0]);} return P[P.length-1][1];};
+  const under=[pAt(inv(xl-4)), pAt(inv(xr))].concat(P.filter(d=>X(d[0])>=xl-4&&X(d[0])<=xr+4).map(d=>d[1]));
+  const yb=Y(Math.max(...under))-8;
+  s+=`<text x="${xr}" y="${yb-lh}" text-anchor="end" font-size="${fs}" font-weight="600" fill="${blue}"><tspan x="${xr}">${ann[0]}</tspan><tspan x="${xr}" dy="${lh}">${ann[1]}</tspan></text>`;
+  return s+"</svg>";
+}
+// Share over the limit, weekly, at the synthetic control only: streets without cameras (SafeTREC
+// via SFMTA Fig. 7). Bryan, 2026-11-12: "I care about city-wide metrics, so drop the camera site metric."
+function berk(w, ph){
+  const ml=34, mr=92, mt=14, mb=16, h=ph+mt+mb;
+  const B=D.berk, t=d=>new Date(d+"T00:00:00Z").getTime();
+  const x0=t(B[0][0]), x1=t(B[B.length-1][0]), y1=30;
+  const X=v=>ml+(t(v)-x0)/(x1-x0)*(w-ml-mr), Y=v=>mt+(1-v/y1)*ph;
+  const line=(i,col)=>`<polyline points="${B.map(d=>X(d[0]).toFixed(1)+","+Y(d[i]).toFixed(1)).join(" ")}" fill="none" stroke="${col}" stroke-width="1.6"/>`;
+  const S=D.berkStats, last=B[B.length-1];
+  let s=`<svg width="${w}" height="${h}" role="img" aria-label="Share of vehicles over the limit on streets without speed cameras: about ${S.baseCmp}% before, about ${S.endCmp}% at the end">`;
+  s+=`<line x1="${ml}" y1="${Y(0)}" x2="${w-mr+8}" y2="${Y(0)}" stroke="${mute}"/><text x="${ml-6}" y="${Y(0)+3.5}" text-anchor="end" font-size="10" fill="${mute}">0</text>`;
+  D.phases.forEach(p=>{s+=`<line x1="${X(p)}" y1="${mt}" x2="${X(p)}" y2="${Y(0)}" stroke="${grey}" stroke-dasharray="2,3"/>`;});
+  s+=line(2,blue);
+  s+=`<text x="${ml-6}" y="${Y(S.baseCmp)+4}" text-anchor="end" font-size="11.5" font-weight="600" fill="${ink}">${S.baseCmp}%</text>`;
+  s+=`<text x="${X(last[0])+7}" y="${Y(S.endCmp)+4}" font-size="11.5" fill="${ink}">about <tspan font-weight="600">${S.endCmp}%</tspan></text>`;
+  s+=`<text x="${X(B[0][0])}" y="${h-2}" text-anchor="middle" font-size="10" fill="${mute}">${B[0][0].slice(0,4)}</text>`;
+  s+=`<text x="${X(last[0])}" y="${h-2}" text-anchor="middle" font-size="10" fill="${mute}">${last[0].slice(0,4)}</text>`;
+  return s+"</svg>";
+}
+function card(title, svg, w){const d=document.createElement("div");d.className="card";d.innerHTML=`<div class="t">${title}</div>`+svg;return d;}
+const CHART="intro-tickets";
+function draw(){
+  const row=document.getElementById("row"); row.innerHTML="";
+  const avail=document.body.clientWidth-24;
+  // Twice the earlier 300px card (Bryan, 2026-11-12: "Make each chart twice the size").
+  const w=Math.max(300, Math.min(600, avail));
+  row.style.gridTemplateColumns=`${w}px`;
+  document.getElementById("src").style.maxWidth=w+"px";
+  const sp={"intro-injuries":charts[0],"intro-vmt":charts[1]}[CHART];
+  if(sp){
+    spark(sp,w,200);
+    const ph=Math.max(200, Math.min(300, sp.banked));
+    row.append(card(sp.title, spark(sp,w,ph), w));
+  } else if(CHART==="intro-tickets") row.append(card("Tickets issued each month by police and speed cameras", enforce(w,240), w));
+  else row.append(card("Share over the limit, streets without cameras", berk(w,240), w));
+  post();
+}
+function post(){
+  var v=0;Array.prototype.forEach.call(document.body.children,function(c){if(c.tagName!=="SCRIPT"){var b=c.getBoundingClientRect().bottom+window.scrollY;if(b>v)v=b;}});v=Math.ceil(v)+8;
+  var block=new URLSearchParams(location.search).get("block")||CHART;
+  parent.postMessage({type:"sfworks:height",block:block,height:v},"*");
+}
+draw(); addEventListener("resize", draw);
+</script>
+</body></html>

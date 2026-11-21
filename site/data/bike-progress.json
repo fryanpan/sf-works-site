@@ -1,0 +1,1155 @@
+{
+ "generated": "2026-11-10",
+ "adopted": "2025-03-04",
+ "window": {
+  "from": "2025-03",
+  "to": "2026-11",
+  "months": 21
+ },
+ "reported": [
+  {
+   "name": "Winston Drive Quick-Build Project",
+   "page": "https://www.sfmta.com/node/45035",
+   "class": "CLASS IV",
+   "month": "2026-11",
+   "rows_upgraded": 2,
+   "rows_added": 0
+  },
+  {
+   "name": "Cesar Chavez/Potrero Ave/Bayshore Blvd Intersection Improvements (The Hairball)",
+   "page": "https://www.sfmta.com/node/1110",
+   "class": "CLASS IV",
+   "month": "2026-05",
+   "rows_upgraded": 0,
+   "rows_added": 0
+  },
+  {
+   "name": "Beach Street Quick-Build Project",
+   "page": "https://www.sfmta.com/node/28896",
+   "class": "CLASS IV",
+   "month": "2026-08",
+   "rows_upgraded": 0,
+   "rows_added": 0
+  }
+ ],
+ "restamped": [
+  {
+   "cnn": "368000",
+   "street": "07TH ST",
+   "month": "2025-05",
+   "rows": 1,
+   "metres": 67
+  },
+  {
+   "cnn": "2186000",
+   "street": "ALEMANY BLVD",
+   "month": "2025-05",
+   "rows": 1,
+   "metres": 211
+  },
+  {
+   "cnn": "10008000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10009000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10010000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10011000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10012000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 188
+  },
+  {
+   "cnn": "10013000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10014000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10015000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10016000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 188
+  },
+  {
+   "cnn": "10017000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 192
+  },
+  {
+   "cnn": "10018000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 185
+  },
+  {
+   "cnn": "10019000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10020000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10021000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10022000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10023000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10024000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 95
+  },
+  {
+   "cnn": "10025000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 94
+  },
+  {
+   "cnn": "10026000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 1,
+   "metres": 94
+  },
+  {
+   "cnn": "10027000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 1,
+   "metres": 94
+  },
+  {
+   "cnn": "10028000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 1,
+   "metres": 94
+  },
+  {
+   "cnn": "10029000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 1,
+   "metres": 94
+  },
+  {
+   "cnn": "10030000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10031000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10032000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10033000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 188
+  },
+  {
+   "cnn": "10034000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "10035000",
+   "street": "ORTEGA ST",
+   "month": "2025-06",
+   "rows": 2,
+   "metres": 189
+  },
+  {
+   "cnn": "13058000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 183
+  },
+  {
+   "cnn": "13059000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 179
+  },
+  {
+   "cnn": "13060000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 361
+  },
+  {
+   "cnn": "13061000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 85
+  },
+  {
+   "cnn": "13062000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 75
+  },
+  {
+   "cnn": "13063000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 196
+  },
+  {
+   "cnn": "13064000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 357
+  },
+  {
+   "cnn": "13065000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 163
+  },
+  {
+   "cnn": "13066000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 195
+  },
+  {
+   "cnn": "13067000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 178
+  },
+  {
+   "cnn": "13068000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 178
+  },
+  {
+   "cnn": "13069000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 178
+  },
+  {
+   "cnn": "13070000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 180
+  },
+  {
+   "cnn": "13071000",
+   "street": "VALENCIA ST",
+   "month": "2025-05",
+   "rows": 2,
+   "metres": 355
+  }
+ ],
+ "layer": {
+  "tag": "[SFMTA ArcGIS Bicycle/bicycle layer 0 \u2014 queried 2026-11-10]",
+  "queried": "2026-11-10",
+  "rows": 5481,
+  "lastEdited": "2026-10-19",
+  "service": "https://services.sfmta.com/arcgis/rest/services/Bicycle/bicycle/FeatureServer/0",
+  "latestInstall": "2026-09",
+  "undatedRows": 1143,
+  "undatedRowsPct": 20.9,
+  "undatedMilesPct": 33.0
+ },
+ "plan": {
+  "segments": 3077,
+  "flagged": {
+   "upgrade": 1558,
+   "new": 384,
+   "other": 1135
+  },
+  "tag": "[Biking and Rolling Plan, March 2025, Appendix L and North Star map \u2014 read 2026-09-29]",
+  "planRead": "2026-09-29",
+  "milesUnit": "per direction row, as the plan's 472 miles (printed p. 20) are counted",
+  "metRule": "A block's met miles are its centerline length per direction row whose class satisfies what the plan draws, the same per-row count the overview uses for all-ages miles; a block with one row meeting and one short is credited for one.",
+  "partialBlocks": 191,
+  "partialShortMetres": 32382,
+  "singleRowTwoWayBlocks": 197,
+  "directions": {
+   "rule": "A plan block's miles are the block's miles per direction of travel, times the part of it the plan draws where the plan's line stops partway along it: the sum of its bikeway layer rows' own lengths where the layer carries it, else its centerline length once where the street centerline's oneway flag is F or T, else twice.",
+   "blocks_by_basis": {
+    "centerline two-way": 1674,
+    "layer rows": 3866,
+    "centerline one-way": 614
+   },
+   "layer": {
+    "queried": "2026-11-10"
+   },
+   "centerlines": {
+    "id": "3psu-pn9h",
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-10]",
+    "queried": "2026-11-10"
+   }
+  }
+ },
+ "upgrade": {
+  "segments": 1475,
+  "unrated": 83,
+  "totalMetres": 352238,
+  "totalCenterlineMetres": 198637,
+  "metCenterlineMetres": 77251,
+  "baselineMetres": 127087,
+  "baselinePct": 36.1,
+  "addedMetres": 6374,
+  "addedPct": 1.8,
+  "addedSegments": 34,
+  "partialSegments": 131,
+  "nowPct": 37.9,
+  "remainingMetres": 218777,
+  "milesPerMonth": 0.19,
+  "cumulative": [
+   {
+    "month": "2025-03",
+    "metres": 127087,
+    "pct": 36.1
+   },
+   {
+    "month": "2025-04",
+    "metres": 127383,
+    "pct": 36.2
+   },
+   {
+    "month": "2025-05",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-06",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-07",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-08",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-09",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-10",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-11",
+    "metres": 127790,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-12",
+    "metres": 129657,
+    "pct": 36.8
+   },
+   {
+    "month": "2026-01",
+    "metres": 129657,
+    "pct": 36.8
+   },
+   {
+    "month": "2026-02",
+    "metres": 129657,
+    "pct": 36.8
+   },
+   {
+    "month": "2026-03",
+    "metres": 129657,
+    "pct": 36.8
+   },
+   {
+    "month": "2026-04",
+    "metres": 129657,
+    "pct": 36.8
+   },
+   {
+    "month": "2026-05",
+    "metres": 129657,
+    "pct": 36.8
+   },
+   {
+    "month": "2026-06",
+    "metres": 130021,
+    "pct": 36.9
+   },
+   {
+    "month": "2026-07",
+    "metres": 130021,
+    "pct": 36.9
+   },
+   {
+    "month": "2026-08",
+    "metres": 130021,
+    "pct": 36.9
+   },
+   {
+    "month": "2026-09",
+    "metres": 130021,
+    "pct": 36.9
+   },
+   {
+    "month": "2026-10",
+    "metres": 132405,
+    "pct": 37.6
+   },
+   {
+    "month": "2026-11",
+    "metres": 133461,
+    "pct": 37.9
+   }
+  ],
+  "addedStreets": [
+   [
+    "FOLSOM ST",
+    23
+   ],
+   [
+    "SLOAT BLVD",
+    6
+   ],
+   [
+    "BEACH ST",
+    2
+   ],
+   [
+    "WINSTON DR",
+    1
+   ],
+   [
+    "ALEMANY BLVD",
+    1
+   ],
+   [
+    "MISSISSIPPI ST",
+    1
+   ]
+  ]
+ },
+ "new": {
+  "segments": 382,
+  "unrated": 2,
+  "totalMetres": 85789,
+  "totalCenterlineMetres": 45525,
+  "metCenterlineMetres": 4323,
+  "baselineMetres": 11383,
+  "baselinePct": 13.3,
+  "addedMetres": 1890,
+  "addedPct": 2.2,
+  "addedSegments": 6,
+  "partialSegments": 0,
+  "nowPct": 15.5,
+  "remainingMetres": 72517,
+  "milesPerMonth": 0.06,
+  "cumulative": [
+   {
+    "month": "2025-03",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-04",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-05",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-06",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-07",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-08",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-09",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-10",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-11",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2025-12",
+    "metres": 11383,
+    "pct": 13.3
+   },
+   {
+    "month": "2026-01",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-02",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-03",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-04",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-05",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-06",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-07",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-08",
+    "metres": 12884,
+    "pct": 15.0
+   },
+   {
+    "month": "2026-09",
+    "metres": 13273,
+    "pct": 15.5
+   },
+   {
+    "month": "2026-10",
+    "metres": 13273,
+    "pct": 15.5
+   },
+   {
+    "month": "2026-11",
+    "metres": 13273,
+    "pct": 15.5
+   }
+  ],
+  "addedStreets": [
+   [
+    "BEALE ST",
+    3
+   ],
+   [
+    "LAKE MERCED BLVD",
+    3
+   ]
+  ]
+ },
+ "other": {
+  "segments": 1059,
+  "unrated": 76,
+  "totalMetres": 267345,
+  "totalCenterlineMetres": 144806,
+  "metCenterlineMetres": 53839,
+  "baselineMetres": 96517,
+  "baselinePct": 36.1,
+  "addedMetres": 1087,
+  "addedPct": 0.4,
+  "addedSegments": 7,
+  "partialSegments": 60,
+  "nowPct": 36.5,
+  "remainingMetres": 169741,
+  "milesPerMonth": 0.03,
+  "cumulative": [
+   {
+    "month": "2025-03",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-04",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-05",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-06",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-07",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-08",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-09",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-10",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-11",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2025-12",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2026-01",
+    "metres": 97123,
+    "pct": 36.3
+   },
+   {
+    "month": "2026-02",
+    "metres": 97185,
+    "pct": 36.4
+   },
+   {
+    "month": "2026-03",
+    "metres": 97185,
+    "pct": 36.4
+   },
+   {
+    "month": "2026-04",
+    "metres": 97185,
+    "pct": 36.4
+   },
+   {
+    "month": "2026-05",
+    "metres": 97185,
+    "pct": 36.4
+   },
+   {
+    "month": "2026-06",
+    "metres": 97185,
+    "pct": 36.4
+   },
+   {
+    "month": "2026-07",
+    "metres": 97185,
+    "pct": 36.4
+   },
+   {
+    "month": "2026-08",
+    "metres": 97604,
+    "pct": 36.5
+   },
+   {
+    "month": "2026-09",
+    "metres": 97604,
+    "pct": 36.5
+   },
+   {
+    "month": "2026-10",
+    "metres": 97604,
+    "pct": 36.5
+   },
+   {
+    "month": "2026-11",
+    "metres": 97604,
+    "pct": 36.5
+   }
+  ],
+  "addedStreets": [
+   [
+    "23RD ST",
+    4
+   ],
+   [
+    "MISSION BAY DR",
+    2
+   ],
+   [
+    "BAY SHORE BLVD",
+    1
+   ]
+  ]
+ },
+ "network": {
+  "totalMetres": 705372,
+  "metMetres": 244337,
+  "remainingMetres": 461035,
+  "nowPct": 34.6,
+  "addedMetres": 9351,
+  "milesPerYear": 3.32,
+  "yearsToGo": 86.3,
+  "totalCenterlineMetres": 388968,
+  "metCenterlineMetres": 135413
+ },
+ "highlights": [
+  {
+   "street": "WINSTON DR",
+   "segments": 2,
+   "miles": 0.66,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-11",
+   "to": "2026-11",
+   "kind": "upgraded",
+   "onPlan": 2,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Winston Drive Quick-Build Project",
+     "page": "https://www.sfmta.com/node/45035",
+     "phase": "Completed",
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "street": "FOLSOM ST",
+   "segments": 46,
+   "miles": 2.68,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-10",
+   "to": "2026-10",
+   "kind": "upgraded",
+   "onPlan": 46,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": "Near-term completed 2018",
+   "projects": [
+    {
+     "name": "Folsom-Howard Streetscape Project",
+     "page": "https://www.sfmta.com/node/381",
+     "phase": "Current",
+     "rows": 40
+    },
+    {
+     "name": "Folsom Street Quick-Build Project",
+     "page": "https://www.sfmta.com/node/20169",
+     "phase": "Completed",
+     "rows": 12
+    },
+    {
+     "name": "7th Street and 8th Street Safety Projects",
+     "page": "https://www.sfmta.com/node/653",
+     "phase": "Completed",
+     "rows": 8
+    },
+    {
+     "name": "SoMa Slow Streets",
+     "page": "https://www.sfmta.com/node/28173",
+     "phase": null,
+     "rows": 4
+    },
+    {
+     "name": "9 San Bruno Rapid Project",
+     "page": "https://www.sfmta.com/node/879",
+     "phase": "Completed",
+     "rows": 2
+    },
+    {
+     "name": "Second Street Improvement Project",
+     "page": "https://www.sfmta.com/node/1204",
+     "phase": "Completed",
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "street": "BEALE ST",
+   "segments": 6,
+   "miles": 0.24,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-09",
+   "to": "2026-09",
+   "kind": "installed",
+   "onPlan": 6,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Active Beale Street",
+     "page": "https://www.sfmta.com/node/18897",
+     "phase": null,
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "street": "MISSION BAY DR",
+   "segments": 2,
+   "miles": 0.26,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-08",
+   "to": "2026-08",
+   "kind": "upgraded",
+   "onPlan": 2,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Dogpatch-Central Waterfront Area Transit Connections Study",
+     "page": "https://www.sfmta.com/node/15635",
+     "phase": "Current",
+     "rows": 2
+    },
+    {
+     "name": "Mission Bay Blvd Quick-Build Project",
+     "page": "https://www.sfmta.com/node/44135",
+     "phase": "Completed",
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "street": "BEACH ST",
+   "segments": 8,
+   "miles": 0.45,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-06",
+   "to": "2026-06",
+   "kind": "installed",
+   "onPlan": 4,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Beach Street Quick-Build Project",
+     "page": "https://www.sfmta.com/node/28896",
+     "phase": "Implementation / Construction",
+     "rows": 4
+    }
+   ]
+  },
+  {
+   "street": "AQUATIC PARK PATH",
+   "segments": 2,
+   "miles": 0.17,
+   "classes": [
+    "path"
+   ],
+   "from": "2026-06",
+   "to": "2026-06",
+   "kind": "installed",
+   "onPlan": 0,
+   "planCalls": [],
+   "note": "Hand drawn segment",
+   "projects": []
+  },
+  {
+   "street": "BAY SHORE BLVD",
+   "segments": 2,
+   "miles": 0.05,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-02",
+   "to": "2026-02",
+   "kind": "upgraded",
+   "onPlan": 2,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Cesar Chavez/Potrero Ave/Bayshore Blvd Intersection Improvements (The Hairball)",
+     "page": "https://www.sfmta.com/node/1110",
+     "phase": "Completed",
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "street": "LAKE MERCED BLVD",
+   "segments": 6,
+   "miles": 0.93,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2026-01",
+   "to": "2026-01",
+   "kind": "upgraded",
+   "onPlan": 6,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Lake Merced Quick-Build Project",
+     "page": "https://www.sfmta.com/node/24472",
+     "phase": "Completed",
+     "rows": 6
+    }
+   ]
+  },
+  {
+   "street": "SLOAT BLVD",
+   "segments": 12,
+   "miles": 1.16,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2025-12",
+   "to": "2025-12",
+   "kind": "installed",
+   "onPlan": 12,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "Outer Sunset Traffic Management Project",
+     "page": "https://www.sfmta.com/node/23005",
+     "phase": "Completed",
+     "rows": 12
+    },
+    {
+     "name": "Sloat Blvd Quick-Build Project",
+     "page": "https://www.sfmta.com/node/26728",
+     "phase": "Legislated",
+     "rows": 10
+    },
+    {
+     "name": "Great Highway Pilot Project",
+     "page": "https://www.sfmta.com/node/27583",
+     "phase": "Completed",
+     "rows": 2
+    },
+    {
+     "name": "Lincoln and Sloat Quick-Build Connections Project",
+     "page": "https://www.sfmta.com/node/41688",
+     "phase": null,
+     "rows": 2
+    },
+    {
+     "name": "Contract 65 New Traffic Signals",
+     "page": "https://www.sfmta.com/node/29743",
+     "phase": "Legislated",
+     "rows": 2
+    },
+    {
+     "name": "Sloat and Skyline Intersection Improvement",
+     "page": "https://www.sfmta.com/node/855",
+     "phase": "Completed",
+     "rows": 2
+    }
+   ]
+  },
+  {
+   "street": "ALEMANY BLVD",
+   "segments": 1,
+   "miles": 0.25,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2025-05",
+   "to": "2025-05",
+   "kind": "upgraded",
+   "onPlan": 1,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": []
+  },
+  {
+   "street": "HARRISON ST",
+   "segments": 1,
+   "miles": 0.07,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2025-05",
+   "to": "2025-05",
+   "kind": "upgraded",
+   "onPlan": 0,
+   "planCalls": [],
+   "note": null,
+   "projects": []
+  },
+  {
+   "street": "MISSISSIPPI ST",
+   "segments": 2,
+   "miles": 0.18,
+   "classes": [
+    "separated lane"
+   ],
+   "from": "2025-04",
+   "to": "2025-04",
+   "kind": "upgraded",
+   "onPlan": 2,
+   "planCalls": [
+    "Separated"
+   ],
+   "note": null,
+   "projects": [
+    {
+     "name": "7th Street and 8th Street Safety Projects",
+     "page": "https://www.sfmta.com/node/653",
+     "phase": "Completed",
+     "rows": 2
+    },
+    {
+     "name": "Dogpatch-Central Waterfront Area Transit Connections Study",
+     "page": "https://www.sfmta.com/node/15635",
+     "phase": "Current",
+     "rows": 2
+    }
+   ]
+  }
+ ],
+ "mileBasis": "per direction of travel"
+}

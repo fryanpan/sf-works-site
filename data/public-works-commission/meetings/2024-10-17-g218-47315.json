@@ -1,0 +1,73 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-10-17",
+ "id": "g218-47315",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
+  "postedAgenda": "https://sanfrancisco.granicus.com/DocumentViewer.php?file=sanfrancisco_a7eee080b5d7627ccc0cc28bbacb4fd4.pdf&view=1"
+ },
+ "fetched": "2026-09-28",
+ "form": "pdf",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary Informational Advance Calendar Correspondence Log Media Clippings"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications Informational Restricted Communications Report"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment Members of the public may address the Commission(s) on topics that are within the subject matter of the Commission(s) but are not part of this agenda. Comments specific to an item on the agenda may be heard when that item is considered. Members of the public may address the Commission for up to three minutes. General Public Comment may be continued to the end of the agenda if speakers exceed 15 minutes of General Public Comment."
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters All items listed on the consent calendar are considered routine by the Commission and may be acted upon together by a single vote of the Commission. There will be no separate discussion of these items unless a member of the Commission, the public or staff requests its individual consideration. In that case the item will be removed from the consent calendar and considered individually at this or a future hearing."
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the September 10, 2024 Special Meeting of the Public Works Commission",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4b",
+   "title": "Transit U Improvement Project – Contract Award",
+   "text": "Transit U Improvement Project – Contract Award Staff Recommendation: Award Transit U Improvement Project, Sourcing Event ID No: 0000004116, to R&S Construction Management, Inc. in the amount of $4,586,398.50 with $458,639.85 for contingency and a contract duration of 500 consecutive calendar days with 50 consecutive calendar days of contingency for sidewalk widening, pavement renovation, water and drainage work, streetscape improvements, street lighting, traffic control, and all related work between Fremont Street and 1st Street from Market Street to Mission Street, and along Mission Street from 1st Street to Fremont Street, in San Francisco, California.",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4c",
+   "title": "Summer Youth Workforce Development Grant – Agreement Modification",
+   "text": "Summer Youth Workforce Development Grant – Agreement Modification Staff Recommendation: Approve a one-year extension of the Summer Youth Workforce Development contract through the October 2025 and an increased grant amount of $440,996.",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "5",
+   "title": "13th Street Safety Improvement Project – Contract Award Staff Recommendation: Award 13th Street Safety Improvement Project, Sourcing Event ID No. 0000007339, to NTK Construction, Inc in the amount of $8,976,980.00 with $897,698.00 for contingency and a contract duration of 650 consecutive calendar days with 65 consecutive calendar days of contingency for pavement renovation, drainage work, pedestrian and bicycle improvements, street lighting and traffic signal, overhead contact system work, traffic control, and all related work on 13th Street from Valencia Street to Isis Street in San Francisco, California. Staff Report, Resolution, Presentation, and Attachments Action"
+  },
+  {
+   "no": "6",
+   "title": "Zuckerberg San Francisco General Hospital Building 5 Family Health Center Relocation Phase 1 5C 5E Demolition – Contract Award Staff Recommendation: Award the ZSFG Building 5 Family Health Center Relocation Phase 1 5C 5E Demolition Project (Sourcing ID No. 0000009068) construction contract to KLW Construction, Inc. in the amount of $6,986,810.45 with $689,681.05 for contingency, and a contract duration of 630 consecutive calendar days with 63 consecutive calendar days contingency. Staff Report, Resolution, Presentation, and Attachments Action"
+  },
+  {
+   "no": "7",
+   "title": "Public Works Commission Meeting Calendar for 2025 Staff Report, Resolution, Presentation Action"
+  },
+  {
+   "no": "8",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "9",
+   "title": "General Public Comment – Continued from Item 3 if necessary At this time members of the public who were not able to address the Commission on Item 3 may address the Commission on items that are within the subject matter jurisdiction of the Commission and that do not appear on the agenda."
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

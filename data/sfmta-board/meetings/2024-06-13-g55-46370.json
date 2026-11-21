@@ -1,0 +1,50 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-06-13",
+ "id": "g55-46370",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=46370",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/39933"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Discussion and vote pursuant as to whether to invoke the attorney-client privilege and conduct a closed session",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "6",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report: Disclosure of Labor Agreement"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

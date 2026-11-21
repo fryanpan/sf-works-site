@@ -1,0 +1,250 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-01-19",
+ "id": "g55-37583",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=37583",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/23552"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes -January 5, 2021 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Amending the Transportation Code, Division II, Section 916 to modify existing Powered Scooter Share Program requirements to, among other things, allow for permit terms of up to two years, require that permittees comply with adaptive scooter program requirements, add a summary suspension process for operators that pose imminent or ongoing health or safety risks, remove the endowment fund provisions, and add the bike rack fee to Transportation Code, Division II, Section 902(d); and suspending the requirement in Transportation Code, Division II, Section 916(a)(2), that the duration of Powered Sco",
+   "text": "Amending the Transportation Code, Division II, Section 916 to modify existing Powered Scooter Share Program requirements to, among other things, allow for permit terms of up to two years, require that permittees comply with adaptive scooter program requirements, add a summary suspension process for operators that pose imminent or ongoing health or safety risks, remove the endowment fund provisions, and add the bike rack fee to Transportation Code, Division II, Section 902(d); and suspending the requirement in Transportation Code, Division II, Section 916(a)(2), that the duration of Powered Scooter Share Program permits be up to one year, and authorizing the Director to extend the duration of the current permits to June 30, 2021 to further respond to changes resulting from the COVID-19 pandemic. (Explanatory documents include a staff report, resolution and amendment.) RESOLUTION 210119-010",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 210119-010)"
+  },
+  {
+   "no": "10.2",
+   "title": "Acting as the SFMTA Board of Directors, approving the Fourth Amendment to the Agreement for Operation and Management of Off-Street Parking Facilities, Group C, Contract No. SFMTA- 2011/12-11 with LAZ Parking California, LLC, increasing the contract amount $172,166 for a total of $1,458,042, and extending the agreement term one year for a total term of ten years.",
+   "text": "Acting as the SFMTA Board of Directors, approving the Fourth Amendment to the Agreement for Operation and Management of Off-Street Parking Facilities, Group C, Contract No. SFMTA- 2011/12-11 with LAZ Parking California, LLC, increasing the contract amount $172,166 for a total of $1,458,042, and extending the agreement term one year for a total term of ten years. (Explanatory documents include a staff report, amendment, resolution and financial plan.) RESOLUTION 210119-011",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 210119-011)"
+  },
+  {
+   "no": "10.3",
+   "title": "Acting as the San Francisco Parking Authority Commission, approving the Fourth Amendment to the Agreement for Operation and Management of Off-Street Parking Facilities, Group C, Contract No. SFMTA-2011/12-11 with LAZ Parking California, increasing the contract amount $172,166 for a total of $1,458,042, and extending the agreement term one year for a total term of ten years.",
+   "text": "Acting as the San Francisco Parking Authority Commission, approving the Fourth Amendment to the Agreement for Operation and Management of Off-Street Parking Facilities, Group C, Contract No. SFMTA-2011/12-11 with LAZ Parking California, increasing the contract amount $172,166 for a total of $1,458,042, and extending the agreement term one year for a total term of ten years. (Explanatory documents include a staff report, amendment, resolution and financial plan.) RESOLUTION 210119-012",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 210119-012)"
+  },
+  {
+   "no": "10.4",
+   "title": "Approving Modification No. 4 to Contract No. 1291, Kirkland, Scott and Flynn Facilities Tank Upgrade Project with Pilot Construction Management for the replacement of underground storage tanks at four SFMTA transit facilities; approving the substitution of subcontractors; and amending the final work scope and adjust bid quantities, resulting in a net increase of $47,585.82 of the contract amount, for a final contract amount of $6,711,925.36 to close out the contract.",
+   "text": "Approving Modification No. 4 to Contract No. 1291, Kirkland, Scott and Flynn Facilities Tank Upgrade Project with Pilot Construction Management for the replacement of underground storage tanks at four SFMTA transit facilities; approving the substitution of subcontractors; and amending the final work scope and adjust bid quantities, resulting in a net increase of $47,585.82 of the contract amount, for a final contract amount of $6,711,925.36 to close out the contract. (Explanatory documents include a staff report, modification, resolution and financial plan.)",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 7 ayes (Resolution 210119-013)"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code, Division II, Section 702 to reduce the speed limit on Market Street between Franklin Street and Steuart Street - designate a transit-only lane on Market Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11a",
+   "title": "ESTABLISH - WHITE PASSENGER LOADING ZONE - Ellis Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11b",
+   "title": "ESTABLISH - RED ZONE - Ellis Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11c",
+   "title": "ESTABLISH - GREEN METERED PARKING, 30-MINUTE LIMIT, 9 AM TO 6 PM, MONDAY THROUGH SATURDAY - Hayes Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11d",
+   "title": "RESCIND - TOW AWAY NO STOPPING - from Franklin Street to Van Ness Avenue",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11e",
+   "title": "ESTABLISH - STOP SIGN - Stevenson Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11f",
+   "title": "ESTABLISH - TOW AWAY NO STOPPING ANYTIME - Stevenson Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11g",
+   "title": "ESTABLISH - MOTORCYCLE METERED PARKING - 2nd Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11h",
+   "title": "ESTABLISH - NO RIGHT TURN ON RED - Jones Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11i",
+   "title": "ESTABLISH - RIGHT TURN ONLY EXCEPT MUNI AND BICYCLES - Jones Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11j",
+   "title": "ESTABLISH - LEFT TURN ONLY EXCEPT MUNI AND BICYCLES - McAllister Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11k",
+   "title": "ESTABLISH - TOW-AWAY, NO STOPPING, EXCEPT TRUCK LOADING ZONE - Market Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11l",
+   "title": "ESTABLISH - SPEED TABLES –Market Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11m",
+   "title": "ESTABLISH - RIGHT TURN ONLY, EXCEPT TRANSIT, PARATRANSIT, BICYCLES, and EMERGENCY VEHICLES - Market Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11n",
+   "title": "RESCIND - RIGHT TURN ONLY, EXCEPT MUNI AND BICYCLES and ESTABLISH –RIGHT TURN ONLY, EXCEPT MUNI, PARATRANSIT AND BICYCLES - Market Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11o",
+   "title": "ESTABLISH - TRANSIT ONLY LANE–Market Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11p",
+   "title": "RESCIND - NO LEFT TURN and ESTABLISH - Mission Street westbound at New Montgomery Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11q",
+   "title": "RESCIND - NO LEFT TURN EXCEPT MUNI and ESTABLISH –NO LEFT TURN EXCEPT TAXIS AND MUNI - Mission Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11r",
+   "title": "RESCIND –NO LEFT TURN EXCEPT BUSES and ESTABLISH –NO LEFT TURN EXCEPT TAXIS AND BUSES—Mission Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11s",
+   "title": "ESTABLISH -20 MPH SPEED LIMIT - Market Street between Franklin St. and Steuart St",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11t",
+   "title": "ESTABLISH - CROSSWALK - Market Street at Jones Street/McAllister Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11u",
+   "title": "RESCIND - CROSSWALK - Market Street at Jones Street/McAllister Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11v",
+   "title": "RESCIND - BUS ZONE and ESTABLISH - TOW-AWAY NO STOPPING ANY TIME - Charles J. Brenham Place",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11w",
+   "title": "ESTABLISH –BUS ZONE –7th Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11x",
+   "title": "ESTABLISH - WHITE PASSENGER LOADING ZONE - 7th Street",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "11y",
+   "title": "ESTABLISH - CLASS IV BIKEWAY (PROTECTED BIKEWAYS) -7thStreet",
+   "decision": "ADOPTED — 5 ayes, 2 nays"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding the Transportation Authority’s DowntownCongestion Pricing Study"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding regional transit coordination"
+  },
+  {
+   "no": "14",
+   "title": "Approving Amendment No. 6 to Contract No. SFMTA-2016-17, Paratransit Broker and Operating Agreement, with Transdev Services to exercise the option to extend the term by five years",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "15",
+   "title": "Retroactively approvingModification No. 2 to Contract No. 1306, L Taraval Improvement Project, with NTK Construction for emergency trackway repairs in the Twin Peaks tunnel in the amount of $10,517,500",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "16",
+   "title": "Approving the Preliminary Official Statement with respect to the issuance of taxable or tax-exempt Refunding Revenue Bonds in an amount not to exceed $185 millionto refinance all or a portion of the Series 2012A, 2012B,",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "17",
+   "title": "Requesting the Board of Supervisors appropriate up to $287,000,000 of the New Money Bonds proceeds for the following SFMTA projects",
+   "decision": "ADOPTED — 7 ayes"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

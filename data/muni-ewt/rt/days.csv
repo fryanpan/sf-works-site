@@ -1,0 +1,10 @@
+sdate,status,source,read,gtfs,trips_scheduled,trips_with_positions,visits_scheduled,visits_rebuilt,visits_tu,inputs
+20261110,ok,rt-archive,2026-11-12,20260829,9482,8829,341242,319285,318410,parquet+parquet+parquet+parquet
+20261111,ok,rt-archive,2026-11-12,20260829,9464,8990,340685,322429,322235,parquet+parquet+parquet+parquet
+20261112,ok,rt-archive,2026-11-17,20260829,9482,8986,341242,317937,317516,parquet+parquet+parquet+parquet
+20261113,ok,rt-archive,2026-11-17,20260829,9482,8516,341242,286526,288562,parquet+parquet+parquet+parquet
+20261114,ok,rt-archive,2026-11-17,20260829,7861,7501,292722,275853,276916,parquet+parquet+parquet+parquet
+20261115,ok,rt-archive,2026-11-17,20260829,7861,7368,292722,269793,271154,parquet+parquet+parquet+parquet
+20261116,ok,rt-archive,2026-11-18,20260829,9482,8905,341242,314935,314829,parquet+parquet+parquet+parquet
+20261117,ok,rt-archive,2026-11-19,20260829,9482,9091,341242,320755,321070,parquet+parquet+parquet+parquet
+20261118,ok,rt-archive,2026-11-19,20260829,9482,8873,341242,310803,311682,parquet+raw+parquet+raw

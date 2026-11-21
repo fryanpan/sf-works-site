@@ -1,0 +1,84 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-12-01",
+ "id": "g218-44964",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=44964",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes, Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications Earthquake Safety and Emergency Response Bond Quarterly Status Report"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the October 20, 2023 Regular Meeting"
+  },
+  {
+   "no": "4b",
+   "title": "Minutes from the November 3, 2023 Regular Meeting"
+  },
+  {
+   "no": "4c",
+   "title": "As-needed Architectural Services for Health Facilities No. 3, Contract ID 100002435 – Modification"
+  },
+  {
+   "no": "4d",
+   "title": "As-needed Mechanical Engineering Services No. 3 – Stantec Consulting Services, Inc. – Award"
+  },
+  {
+   "no": "4e",
+   "title": "As-needed Mechanical Engineering Services No. 3 – GHD Inc. – Award"
+  },
+  {
+   "no": "4f",
+   "title": "As-needed Mechanical Engineering Services No. 3 – Lee & Ro, Inc. - Award"
+  },
+  {
+   "no": "5",
+   "title": "Safer Taylor Street Project, Contract No. 1000015751 – Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "Various Locations Pavement Renovation No. 64 and Sewer Replacement - Award"
+  },
+  {
+   "no": "7",
+   "title": "Various Locations Pavement Renovation No. 66 and Sewer Replacement – Award"
+  },
+  {
+   "no": "8",
+   "title": "Operations Division Bureau of Street Environmental Services Overview"
+  },
+  {
+   "no": "9",
+   "title": "Public Works Commission 2024 Meeting Calendar Action"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment – Continued from Item 3 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

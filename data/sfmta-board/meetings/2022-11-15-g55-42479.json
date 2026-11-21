@@ -1,0 +1,92 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-11-15",
+ "id": "g55-42479",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=42479",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/27280"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - November 1, 2022 Regular Meeting",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes (Resolution 221115-107)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds in payment of claims against the SFMTA for Case Numbers: CGC-20-587832, CGC-20-587341, CGC-21-596696, CGC-21-596331, CGC-21-590244",
+   "decision": "ADOPTED — 5 ayes (Resolution 221115-107)"
+  },
+  {
+   "no": "10.2",
+   "title": "Establishing the 2023 SFMTA Board of Directors/Parking Authority Commission and Policy and Governance Committee meeting schedule",
+   "decision": "ADOPTED — 5 ayes (Resolution 221115-108)"
+  },
+  {
+   "no": "10.3",
+   "title": "Amending Transportation Code, Division II, Sections 101, 201, and 202 to provide that the requirement for the City Traffic Engineer to hold a public hearing",
+   "decision": "ADOPTED — 5 ayes (Resolution 221115-109)",
+   "severed": true
+  },
+  {
+   "no": "11",
+   "title": "Presentation and discussion regarding the legal responsibilities of the SFMTA Board of Directors"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding a Muni Service Plan Update"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding a Vision Zero Quarterly Update"
+  },
+  {
+   "no": "14",
+   "title": "Amending Transportation Code, Division II, Article 1100, Sections 1119-1121 to remove outdated references to the Board of Appeals",
+   "decision": "FAILED — 3 ayes, 1 nay"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

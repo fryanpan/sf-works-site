@@ -1,0 +1,109 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-03-17",
+ "id": "g55-35455",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35455",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21477"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes of March 3, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "All matters listed hereunder constitute a Consent Calendar",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "decision": "ADOPTED — 6 ayes (Resolution 200317-027)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the following traffic modifications",
+   "decision": "ADOPTED — 6 ayes (Resolution 200317-028)"
+  },
+  {
+   "no": "11",
+   "title": "Authorizing the Director to execute Contract Modification No 7 to SFMTA Contract No. 2013-19, Procurement of New Light Rail Vehicles, with Siemens Mobility, Inc Procurement of New Light Rail Vehicles, with Siemens Mobility, Inc",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Amending Transportation Code Division II to establish a transit-only lane on Townsend Street west of Third Street",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Approving the issuance and sale of Transportation and Road Improvement General Obligation Bonds in the amount of $134.3 million to fund costs associated with capital projects",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "14",
+   "title": "Presentation and discussion on FY 2021 and FY 2022 Operating and Capital Budget"
+  },
+  {
+   "no": "15",
+   "title": "Presentation and discussion regarding the Muni Service Equity Strategy"
+  },
+  {
+   "no": "16",
+   "title": "Approving corridors on San Francisco’s Vision Zero High-Injury Network",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "17",
+   "title": "Discussion and vote whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "18",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "19",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

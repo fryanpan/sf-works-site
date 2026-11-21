@@ -1,0 +1,4093 @@
+{
+ "generated": "2026-11-10",
+ "source": "https://maps.sfdpw.org/arcgis/rest/services/Capital_Projects/Paving/MapServer",
+ "page": "https://sfpublicworks.org/street-resurfacing",
+ "contracts": [
+  {
+   "contract": "11th Street Pavement Renovation",
+   "jo": "1443J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Spring 2009",
+   "estEnd": "Summer 2009",
+   "blocks": 7
+  },
+  {
+   "contract": "11th Street Safety Improvements Project",
+   "jo": "10041770",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2026",
+   "estEnd": "Spring 2028",
+   "blocks": 11
+  },
+  {
+   "contract": "13th St Safety Improvement Project",
+   "jo": "10039453",
+   "phase": "Under Construction",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2025",
+   "estEnd": "Fall 2026",
+   "blocks": 16
+  },
+  {
+   "contract": "15th Avenue Pavement Renovation (Re-Bid)",
+   "jo": "1680J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Summer 2011",
+   "estEnd": "Winter 2012",
+   "blocks": 14
+  },
+  {
+   "contract": "16th St, 17th St, and 18th St Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Summer 2033",
+   "estEnd": "Fall 2034",
+   "blocks": 55
+  },
+  {
+   "contract": "17th St Pavement Renovation Phase 1",
+   "jo": "1746J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Winter 2012",
+   "estEnd": "Summer 2012",
+   "blocks": 46
+  },
+  {
+   "contract": "18th St and Valencia St Pavement Renovation",
+   "jo": "10042204",
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Winter 2032",
+   "estEnd": "Spring 2034",
+   "blocks": 45
+  },
+  {
+   "contract": "20th St from Potrero to York joined with SFWD",
+   "jo": "1705J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Winter 2010",
+   "blocks": 2
+  },
+  {
+   "contract": "22nd St, 23rd St and Dolores St Pavement Renovation and Sewer Replacement",
+   "jo": "10032494",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Fall 2020",
+   "estEnd": "Summer 2021",
+   "blocks": 26
+  },
+  {
+   "contract": "28th Ave Pavement Renovation",
+   "jo": "1745J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2013",
+   "estEnd": "Winter 2014",
+   "blocks": 17
+  },
+  {
+   "contract": "3rd St from Mariposa St to Palou Ave Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY33-34",
+   "estStart": "Summer 2034",
+   "estEnd": "Fall 2035",
+   "blocks": 50
+  },
+  {
+   "contract": "5th St Safety Improvement Project",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Spring 2029",
+   "estEnd": "Winter 2031",
+   "blocks": 1
+  },
+  {
+   "contract": "7th Ave - Laguna Honda Blvd Pavement Renovation",
+   "jo": "1572J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "N/A",
+   "estEnd": "N/A",
+   "blocks": 21
+  },
+  {
+   "contract": "7th Avenue Pavement Renovation",
+   "jo": "1449J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Winter 2010",
+   "blocks": 2
+  },
+  {
+   "contract": "7th St, 8th St and Folsom St Pavement Renovation",
+   "jo": "10042716",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Summer 2028",
+   "estEnd": "Fall 2029",
+   "blocks": 49
+  },
+  {
+   "contract": "8-Inch Ductile Iron Main Installation and Pavement Renovation in Dolores Street",
+   "jo": "1695J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2013",
+   "estEnd": "Fall 2014",
+   "blocks": 10
+  },
+  {
+   "contract": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
+   "jo": "10038034",
+   "phase": "Under Construction",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2025",
+   "estEnd": "Spring 2027",
+   "blocks": 40
+  },
+  {
+   "contract": "As Needed City-wide Pavement Preservation 6 (General As-Needed Contract G29)",
+   "jo": "10039831",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Spring 2025",
+   "estEnd": "Winter 2027",
+   "blocks": 229
+  },
+  {
+   "contract": "As Needed Citywide Pavement Preservation Contract 5 (General As-Needed Contract G23)",
+   "jo": "10037345",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2023",
+   "estEnd": "Summer 2028",
+   "blocks": 415
+  },
+  {
+   "contract": "As Needed Pavement Preservation Contract 4B (General As-Needed Contract G18)",
+   "jo": "10035441",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Spring 2021",
+   "estEnd": "Summer 2023",
+   "blocks": 232
+  },
+  {
+   "contract": "As Needed Paving Contract No 15",
+   "jo": "10040620",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2026",
+   "estEnd": "Spring 2028",
+   "blocks": 7
+  },
+  {
+   "contract": "As Needed Paving Contract No 6",
+   "jo": "1405J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Spring 2008",
+   "estEnd": "Winter 2009",
+   "blocks": 12
+  },
+  {
+   "contract": "As Needed Paving Contract No 6 - A",
+   "jo": "1405J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "N/A",
+   "estEnd": "N/A",
+   "blocks": 4
+  },
+  {
+   "contract": "As Needed Paving Contract No 7",
+   "jo": "1729J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Winter 2011",
+   "estEnd": "Fall 2012",
+   "blocks": 33
+  },
+  {
+   "contract": "As Needed Paving Contract No 8",
+   "jo": "1975J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2012",
+   "estEnd": "Spring 2014",
+   "blocks": 39
+  },
+  {
+   "contract": "As-Needed Paving Contract No 13",
+   "jo": "2957J",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Spring 2019",
+   "estEnd": "Fall 2022",
+   "blocks": 12
+  },
+  {
+   "contract": "As-Needed Sewer Contract Paving Locations",
+   "jo": "1827J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Fall 2012",
+   "blocks": 7
+  },
+  {
+   "contract": "BSSR Concrete Panel Replacement FY 14-15",
+   "jo": "2518J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 20
+  },
+  {
+   "contract": "BSSR Pavement Preservation FY 14-15",
+   "jo": "2517J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 51
+  },
+  {
+   "contract": "BSSR Pavement Preservation FY 15-16",
+   "jo": "2636J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2015",
+   "estEnd": "Summer 2016",
+   "blocks": 60
+  },
+  {
+   "contract": "BSSR Paving - Year 1 (PROP B)",
+   "jo": "1997J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2012",
+   "estEnd": "Winter 2013",
+   "blocks": 78
+  },
+  {
+   "contract": "BSSR Paving FY 08-09",
+   "jo": "1492J",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Winter 2008",
+   "estEnd": "Fall 2009",
+   "blocks": 29
+  },
+  {
+   "contract": "BSSR Paving FY 09-10",
+   "jo": "1625J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Fall 2010",
+   "blocks": 122
+  },
+  {
+   "contract": "BSSR Paving FY 10-11",
+   "jo": "1750J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Fall 2011",
+   "blocks": 137
+  },
+  {
+   "contract": "BSSR Paving FY 11-12",
+   "jo": "1896J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Summer 2011",
+   "estEnd": "Summer 2012",
+   "blocks": 83
+  },
+  {
+   "contract": "BSSR Paving FY 12-13",
+   "jo": "2086J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2012",
+   "estEnd": "Summer 2013",
+   "blocks": 108
+  },
+  {
+   "contract": "BSSR Paving FY 13-14",
+   "jo": "2275J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 35
+  },
+  {
+   "contract": "BSSR Paving FY 13-14 (Proposition B)",
+   "jo": "2274J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 107
+  },
+  {
+   "contract": "BSSR Paving FY 14-15",
+   "jo": "2417J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 30
+  },
+  {
+   "contract": "BSSR Paving FY 14-15 (Proposition B)",
+   "jo": "2506J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 133
+  },
+  {
+   "contract": "BSSR Paving FY 15-16",
+   "jo": "2635J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2015",
+   "estEnd": "Summer 2016",
+   "blocks": 97
+  },
+  {
+   "contract": "BSSR Paving and Base Repair FY 13-14 (Proposition B)",
+   "jo": "2416J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 9
+  },
+  {
+   "contract": "Balboa Street Phase 1 Pavement Renovation And Sewer Replacement",
+   "jo": "1420J",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Winter 2009",
+   "estEnd": "Summer 2009",
+   "blocks": 13
+  },
+  {
+   "contract": "Battery St Pavement Renovation",
+   "jo": "1421J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Winter 2010",
+   "estEnd": "Fall 2010",
+   "blocks": 25
+  },
+  {
+   "contract": "Battery Street Pavement Renovation",
+   "jo": "10043379",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Fall 2028",
+   "estEnd": "Winter 2029",
+   "blocks": 33
+  },
+  {
+   "contract": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
+   "jo": "10042210",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Fall 2027",
+   "estEnd": "Winter 2029",
+   "blocks": 58
+  },
+  {
+   "contract": "Bernal Heights Street Improvements - Bradford - Jarboe Area",
+   "jo": "0816J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Spring 2011",
+   "estEnd": "Fall 2011",
+   "blocks": 15
+  },
+  {
+   "contract": "Bosworth Street Pavement Renovation",
+   "jo": "1645J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Winter 2011",
+   "blocks": 11
+  },
+  {
+   "contract": "Broadway, Pacific Ave and Vallejo St Pavement Renovation",
+   "jo": "10041122",
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Spring 2029",
+   "estEnd": "Summer 2030",
+   "blocks": 25
+  },
+  {
+   "contract": "Brotherhood Way Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY33-34",
+   "estStart": "Summer 2034",
+   "estEnd": "Fall 2035",
+   "blocks": 21
+  },
+  {
+   "contract": "Bush Pavement Renovation Phase I",
+   "jo": "1533J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Spring 2010",
+   "estEnd": "Fall 2010",
+   "blocks": 24
+  },
+  {
+   "contract": "Bush St Pavement Renovation",
+   "jo": "10042135",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Fall 2027",
+   "estEnd": "Winter 2028",
+   "blocks": 55
+  },
+  {
+   "contract": "Bush St Pavement Renovation And Water Main Installation Phase 2",
+   "jo": "1664J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Spring 2011",
+   "estEnd": "Fall 2011",
+   "blocks": 30
+  },
+  {
+   "contract": "Cabrillo St Pavement Renovation",
+   "jo": "1739J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2012",
+   "estEnd": "Fall 2012",
+   "blocks": 38
+  },
+  {
+   "contract": "California Street Cable Car And Pavement Renovation",
+   "jo": "1450J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Summer 2011",
+   "blocks": 50
+  },
+  {
+   "contract": "Castro St and Divisadero St Pavement Renovation Project",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Spring 2033",
+   "estEnd": "Summer 2034",
+   "blocks": 58
+  },
+  {
+   "contract": "Castro Street Pavement Renovation",
+   "jo": "1575J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Spring 2010",
+   "estEnd": "Summer 2010",
+   "blocks": 7
+  },
+  {
+   "contract": "Central Subway P2-CN1252-Tunnels",
+   "jo": "1424J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Winter 2012",
+   "estEnd": "Spring 2015",
+   "blocks": 6
+  },
+  {
+   "contract": "Central Subway P2-CN1253-UMS",
+   "jo": "1424J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2013",
+   "estEnd": "Winter 2020",
+   "blocks": 2
+  },
+  {
+   "contract": "Central Subway P2-CN1254-CTS",
+   "jo": "1424J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2013",
+   "estEnd": "Winter 2020",
+   "blocks": 6
+  },
+  {
+   "contract": "Central Subway P2-CN1255-MOS",
+   "jo": "1424J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2013",
+   "estEnd": "Winter 2020",
+   "blocks": 1
+  },
+  {
+   "contract": "Central Subway P2-CN1256-STS",
+   "jo": "1424J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2013",
+   "estEnd": "Winter 2021",
+   "blocks": 12
+  },
+  {
+   "contract": "Cesar Chavez St from Hampshire St to Guerrero St Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY30-31",
+   "estStart": "Winter 2031",
+   "estEnd": "Spring 2033",
+   "blocks": 34
+  },
+  {
+   "contract": "Church St Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Fall 2032",
+   "estEnd": "Winter 2034",
+   "blocks": 60
+  },
+  {
+   "contract": "Claremont, Juanita, and Yerba Buena Pavement Renovation",
+   "jo": "10037323",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2023",
+   "estEnd": "Spring 2024",
+   "blocks": 44
+  },
+  {
+   "contract": "Colon, Greewood, Plymouth, Wildwood, Southwood, and Miramar Sewer and Paving Renovation",
+   "jo": "1565J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Fall 2011",
+   "blocks": 13
+  },
+  {
+   "contract": "Divisadero St Pavement Renovation",
+   "jo": "1441J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Fall 2009",
+   "estEnd": "Spring 2010",
+   "blocks": 40
+  },
+  {
+   "contract": "Eddy Street And Ellis Street Pavement Renovation",
+   "jo": "1576J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Spring 2011",
+   "blocks": 29
+  },
+  {
+   "contract": "Fell Street Pavement Renovation and Sewer Replacement",
+   "jo": "1574J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Winter 2010",
+   "blocks": 9
+  },
+  {
+   "contract": "Filbert Street and Leavenworth Street Pavement Renovation and Sewer Replacement",
+   "jo": "2731J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Fall 2017",
+   "estEnd": "Summer 2019",
+   "blocks": 46
+  },
+  {
+   "contract": "Fillmore Street Pavement Renovation Phase 1",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Fall 2029",
+   "estEnd": "Fall 2030",
+   "blocks": 43
+  },
+  {
+   "contract": "Fillmore Street Pavement Renovation Phase 2",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY30-31",
+   "estStart": "Fall 2031",
+   "estEnd": "Winter 2032",
+   "blocks": 43
+  },
+  {
+   "contract": "Folsom St Pavement Renovation Phase 3",
+   "jo": "1911J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2013",
+   "estEnd": "Summer 2013",
+   "blocks": 17
+  },
+  {
+   "contract": "Folsom St-19th-13th Street Pavement Renovation, Sewer Replacement and Water Main Installation",
+   "jo": "1442J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Spring 2010",
+   "estEnd": "Spring 2011",
+   "blocks": 40
+  },
+  {
+   "contract": "Franklin St Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Spring 2029",
+   "estEnd": "Summer 2031",
+   "blocks": 42
+  },
+  {
+   "contract": "Front St and Sansome St Pavement Renovation",
+   "jo": "10040425",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2027",
+   "estEnd": "Spring 2028",
+   "blocks": 36
+  },
+  {
+   "contract": "Fulton St and Grove St Pavement Renovation",
+   "jo": "10035255",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Fall 2021",
+   "estEnd": "Winter 2023",
+   "blocks": 46
+  },
+  {
+   "contract": "Future Resurfacing by Others",
+   "jo": "FSPTMP",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Summer 2016",
+   "estEnd": "Winter 2049",
+   "blocks": 20
+  },
+  {
+   "contract": "Geary Blvd Intersection Paving",
+   "jo": "1474J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Fall 2009",
+   "blocks": 5
+  },
+  {
+   "contract": "Geary Rapid Phase I Infrastructure Impovements West of Van Ness",
+   "jo": "2687J",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Winter 2020",
+   "estEnd": "Fall 2021",
+   "blocks": 47
+  },
+  {
+   "contract": "Geneva Ave and Sloat Blvd Pavement Renovation",
+   "jo": "10041126",
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Spring 2029",
+   "estEnd": "Spring 2031",
+   "blocks": 37
+  },
+  {
+   "contract": "Golden Gate Ave and Laguna St Pavement Renovation",
+   "jo": "10035254",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Spring 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 55
+  },
+  {
+   "contract": "Guerrero St Pavement Renovation Phase 1",
+   "jo": "1764J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Spring 2012",
+   "blocks": 20
+  },
+  {
+   "contract": "Harrison Street Pavement Renovation",
+   "jo": "1585J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Spring 2010",
+   "estEnd": "Summer 2010",
+   "blocks": 17
+  },
+  {
+   "contract": "Hayes St, Fell St and Van Ness Ave Pavement Renovation",
+   "jo": "10041174",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2028",
+   "estEnd": "Spring 2029",
+   "blocks": 41
+  },
+  {
+   "contract": "Holloway Ave and Lake Merced Blvd Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Summer 2032",
+   "estEnd": "Fall 2033",
+   "blocks": 43
+  },
+  {
+   "contract": "Hunters Point, Central Waterfront and Potrero Hill Area Streets Pavement Renovation",
+   "jo": "10037803",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 27
+  },
+  {
+   "contract": "Hyde St, Jackson St and Washington St Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Summer 2033",
+   "estEnd": "Fall 2034",
+   "blocks": 55
+  },
+  {
+   "contract": "Innes Avenue Rebuild",
+   "jo": "10038900",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Summer 2027",
+   "estEnd": "Summer 2028",
+   "blocks": 5
+  },
+  {
+   "contract": "Jackson Street and Washington Street Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Spring 2032",
+   "estEnd": "Summer 2033",
+   "blocks": 27
+  },
+  {
+   "contract": "Joint - BTI Lead - Evans Ave Paving",
+   "jo": "2491J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Winter 2018",
+   "estEnd": "Fall 2019",
+   "blocks": 15
+  },
+  {
+   "contract": "Joint - LID - EIP - PUC Lead - Mission and Valencia Paving",
+   "jo": "2464J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Winter 2016",
+   "estEnd": "Spring 2017",
+   "blocks": 2
+  },
+  {
+   "contract": "Joint - MTA Lead - J Church Intersections",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": null,
+   "estStart": "Winter 2020",
+   "estEnd": "Winter 2022",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - MTA Lead - Western Addition Traffic Signal Project",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY21-22",
+   "estStart": "Spring 2022",
+   "estEnd": "Spring 2023",
+   "blocks": 7
+  },
+  {
+   "contract": "Joint - Muni Lead - N-Line Judah St Paving",
+   "jo": "1737J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2012",
+   "estEnd": "Winter 2013",
+   "blocks": 11
+  },
+  {
+   "contract": "Joint - Muni Lead- As Needed Muni Paving Project Church And Duboce",
+   "jo": "1583J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2011",
+   "estEnd": "Spring 2013",
+   "blocks": 17
+  },
+  {
+   "contract": "Joint - PUC GI Lead - Sunnydale Ave Pavement Renovation",
+   "jo": "2490J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Summer 2017",
+   "estEnd": "Fall 2018",
+   "blocks": 7
+  },
+  {
+   "contract": "Joint - PUC Lead - 15th and Wawona Flood Resiliency Project (2816J)",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY19-20",
+   "estStart": "Summer 2020",
+   "estEnd": "Summer 2021",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - PUC Lead - Outer Mission Green Nodes Alemany Mission Gl",
+   "jo": "10043215",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Summer 2028",
+   "estEnd": "Fall 2029",
+   "blocks": 2
+  },
+  {
+   "contract": "Joint - PUC Lead - Westside Recycled Water Project",
+   "jo": "2574J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2016",
+   "estEnd": "Summer 2018",
+   "blocks": 19
+  },
+  {
+   "contract": "Joint - Rec Park Lead - Laguna St - Turk to Golden Gate 3247V",
+   "jo": "3247V",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Winter 2018",
+   "estEnd": "Summer 2020",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - Rec and Park Lead - Portmouth Square Improvement",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2025",
+   "estEnd": "Winter 2026",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFMTA Lead - Chestnut St Pavement Renovation",
+   "jo": "2498J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2017",
+   "estEnd": "Spring 2019",
+   "blocks": 23
+  },
+  {
+   "contract": "Joint - SFMTA Lead - MUNI Forward As Needed 2852J",
+   "jo": "2852J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Winter 2019",
+   "estEnd": "Summer 2022",
+   "blocks": 4
+  },
+  {
+   "contract": "Joint - SFMTA Lead - PW Taraval Street Improvement Project Sunset Blvd to SF Zoo",
+   "jo": "2861J",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Summer 2019",
+   "estEnd": "Spring 2021",
+   "blocks": 21
+  },
+  {
+   "contract": "Joint - SFMTA Lead - PW Taraval Street Improvement Project West Portal to Sunset Blvd",
+   "jo": "2815J",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2021",
+   "estEnd": "Summer 2024",
+   "blocks": 51
+  },
+  {
+   "contract": "Joint - SFWD - Laguna St",
+   "jo": "1640J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Winter 2010",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - 18th, 19th, Mission, San Carlos, And Sycamore Sts",
+   "jo": "1766J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Fall 2011",
+   "estEnd": "Fall 2012",
+   "blocks": 34
+  },
+  {
+   "contract": "Joint - SFWD Lead - 26th and Castro Sts Pavement Renovation (WD-2739)",
+   "jo": "2463J",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Winter 2020",
+   "estEnd": "Fall 2022",
+   "blocks": 30
+  },
+  {
+   "contract": "Joint - SFWD Lead - 47th from Fulton to Cabrillo WD-2885",
+   "jo": "10037742",
+   "phase": "Planning",
+   "projectedYear": "FY23-24",
+   "estStart": "Fall 2024",
+   "estEnd": "Fall 2026",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - Alabama St and 24th St Intersection Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY14-15",
+   "estStart": "Spring 2014",
+   "estEnd": "Winter 2015",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - Ashbury from Clayton to Clifford WD-2811",
+   "jo": "10033798",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2022",
+   "estEnd": "Winter 2024",
+   "blocks": 2
+  },
+  {
+   "contract": "Joint - SFWD Lead - FY 2009-2010 - A",
+   "jo": "1705J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Fall 2009",
+   "estEnd": "Fall 2010",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - FY 2009-2010 - C",
+   "jo": "1705J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Spring 2012",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - Green St from Buchanan to Laguna (WD-2614)",
+   "jo": null,
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Spring 2019",
+   "estEnd": "Summer 2020",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - Lansdale (WD -2842)",
+   "jo": "10035644",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2020",
+   "estEnd": "Winter 2023",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - SFWD Lead - PEWS Pipe Contract D - 24-inch",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY29-30",
+   "estStart": "Winter 2031",
+   "estEnd": "Winter 2032",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - SFWD Lead - PW Geary Blvd Pavement Renovation",
+   "jo": "2708J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2018",
+   "estEnd": "Winter 2020",
+   "blocks": 43
+  },
+  {
+   "contract": "Joint - SFWD Lead - Pavement Renovation - 9th St (WD-2620)",
+   "jo": "1784J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2013",
+   "estEnd": "Spring 2015",
+   "blocks": 29
+  },
+  {
+   "contract": "Joint - SFWD Lead - Prospect Ave Pavement Renovation (WD-2718)",
+   "jo": "2903J",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Winter 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 11
+  },
+  {
+   "contract": "Joint - SFWD Lead - Russia Ave Pavement Renovation (WD-2781)",
+   "jo": "2633J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Fall 2016",
+   "estEnd": "Spring 2019",
+   "blocks": 28
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2720",
+   "jo": "10037579",
+   "phase": "Planning",
+   "projectedYear": "FY20-21",
+   "estStart": "Fall 2021",
+   "estEnd": "Fall 2023",
+   "blocks": 6
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2801",
+   "jo": "10035391",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2023",
+   "estEnd": "Fall 2025",
+   "blocks": 36
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2819",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": null,
+   "estStart": "Summer 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2843 Diamond Heights Water",
+   "jo": "10032577",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2023",
+   "estEnd": "Winter 2024",
+   "blocks": 14
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2896 Webster St",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": null,
+   "estStart": "Fall 2023",
+   "estEnd": "Summer 2024",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2919",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2026",
+   "estEnd": "Winter 2028",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2920",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": null,
+   "estStart": "Summer 2026",
+   "estEnd": "Summer 2028",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - SFWD Lead - WD-2922",
+   "jo": "10041723",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2026",
+   "estEnd": "Summer 2029",
+   "blocks": 21
+  },
+  {
+   "contract": "Joint - SFWD Lead - Waller St Pavement Renovation",
+   "jo": "2499J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2016",
+   "estEnd": "Fall 2018",
+   "blocks": 17
+  },
+  {
+   "contract": "Joint - Sewer Lead - As Needed Main Sewer Replacement No 7 (WW-655)",
+   "jo": "10015671",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2019",
+   "estEnd": "Spring 2021",
+   "blocks": 2
+  },
+  {
+   "contract": "Joint - Sewer Lead - As Needed Sewer 9 WW-713",
+   "jo": "10036509",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Winter 2021",
+   "estEnd": "Fall 2023",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - Sewer Lead - Avila, Bay, and Beach Sts Pavement Renovation",
+   "jo": "2459J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 3
+  },
+  {
+   "contract": "Joint - Sewer Lead - Baker Beach Green Streets (WW-627)",
+   "jo": "10034281",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Winter 2019",
+   "estEnd": "Summer 2020",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - Sewer Lead - Bryant St Paving (WW-590)",
+   "jo": "2371J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2015",
+   "estEnd": "Summer 2016",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Buchanan, Divisadero, Fillmore, Green, Pierce, and Scott Sts Pavement Renovation (WW-549)",
+   "jo": "2455J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2013",
+   "estEnd": "Spring 2014",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - Sewer Lead - Buchanan, Pierce, Filbert, Sacramento Sts and Marina Blvd Sewer Replacement 1",
+   "jo": "1842J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Spring 2012",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Bush St",
+   "jo": "1632J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Winter 2011",
+   "estEnd": "Fall 2011",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Downtown District Pavement Renovation (WW-499)",
+   "jo": "1798J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2012",
+   "estEnd": "Summer 2013",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Fillmore and Haight St Intersection (WW-671)",
+   "jo": "10032040",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2018",
+   "estEnd": "Winter 2021",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - Sewer Lead - Haight-Ashbury, Tenderloin, and Diamond Heights Districts Pavement Renovation (WW-622)",
+   "jo": "2693J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2016",
+   "estEnd": "Winter 2018",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - Sewer Lead - Mason, Bay and Powell Paving Project (WW-442)",
+   "jo": "1920J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2012",
+   "estEnd": "Fall 2013",
+   "blocks": 23
+  },
+  {
+   "contract": "Joint - Sewer Lead - Noe, Glen Park Districts Pavement Renovation (WW-505)",
+   "jo": "1874J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2012",
+   "estEnd": "Summer 2013",
+   "blocks": 22
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - 15th, 16th, 18th, 19th, and 20th Aves, California and Clement Sts (WW-546)",
+   "jo": "2091J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Winter 2014",
+   "estEnd": "Fall 2014",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - 16th, 21st, 24th, and 25th Aves, Cabrillo and California Sts (WW-545)",
+   "jo": "2090J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 11
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - 20th, Arkansas, Connecticut, Mississippi, Missouri and Wisconsin Sts (WW-550)",
+   "jo": "2092J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Bayview and Hunters Districts (WW-508)",
+   "jo": "1869J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2012",
+   "estEnd": "Spring 2013",
+   "blocks": 15
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Bernal Heights, Potrero Districts (WW-507)",
+   "jo": "1868J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2012",
+   "estEnd": "Spring 2013",
+   "blocks": 27
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Clay St (WW-552)",
+   "jo": "2050J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 15
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Laurel Heights, Haight Districts (WW-502)",
+   "jo": "1867J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2012",
+   "estEnd": "Winter 2013",
+   "blocks": 17
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Mclaren, Ingleside, Excelsior, and Mt Davidson Districts (WW-506)",
+   "jo": "1870J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2012",
+   "estEnd": "Spring 2013",
+   "blocks": 15
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Richmond District (WW-503)",
+   "jo": "1873J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2012",
+   "estEnd": "Summer 2013",
+   "blocks": 16
+  },
+  {
+   "contract": "Joint - Sewer Lead - Pavement Renovation - Western Addition, North Beach, Marina Districts (WW-501)",
+   "jo": "1871J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Winter 2013",
+   "estEnd": "Fall 2013",
+   "blocks": 18
+  },
+  {
+   "contract": "Joint - Sewer Lead - Richmond and Sunset Districts Pavement Renovation (WW-618)",
+   "jo": "2692J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Summer 2016",
+   "estEnd": "Spring 2018",
+   "blocks": 17
+  },
+  {
+   "contract": "Joint - Sewer Lead - SOMA - Mission Districts Pavement Renovation (WW-500)",
+   "jo": "1866J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2012",
+   "estEnd": "Winter 2013",
+   "blocks": 25
+  },
+  {
+   "contract": "Joint - Sewer Lead - SOMA, Bernal Heights, and Excelsior Districts Pavement Renovation (WW-623)",
+   "jo": "2694J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2016",
+   "estEnd": "Summer 2017",
+   "blocks": 25
+  },
+  {
+   "contract": "Joint - Sewer Lead - Schwerin St Paving (WW-510R)",
+   "jo": "2239J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2015",
+   "estEnd": "Winter 2016",
+   "blocks": 8
+  },
+  {
+   "contract": "Joint - Sewer Lead - Spear and Howard (WW-483RR)",
+   "jo": "1856J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2012",
+   "estEnd": "Fall 2015",
+   "blocks": 5
+  },
+  {
+   "contract": "Joint - Sewer Lead - Sunset District Pavement Renovation (WW-504)",
+   "jo": "1864J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2012",
+   "estEnd": "Fall 2012",
+   "blocks": 14
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations No 21B (WW-631)",
+   "jo": "2707J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2017",
+   "estEnd": "Fall 2018",
+   "blocks": 55
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Pavement Renovation Joint with WW-612",
+   "jo": "2565J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2015",
+   "estEnd": "Winter 2016",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement Contract No 3 Paving",
+   "jo": "1847J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Fall 2011",
+   "estEnd": "Fall 2012",
+   "blocks": 11
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement No 11 (WW-707)",
+   "jo": "10035397",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Fall 2023",
+   "estEnd": "Winter 2023",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement No 13 (WW-709)",
+   "jo": "10035615",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2023",
+   "estEnd": "Spring 2027",
+   "blocks": 4
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement No 14 (WW-725)",
+   "jo": "10038001",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 6
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement No 16 (WW-727)",
+   "jo": "10038003",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Fall 2025",
+   "estEnd": "Winter 2027",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement Rehabilitation No 4 Paving",
+   "jo": "2000J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Winter 2013",
+   "estEnd": "Winter 2014",
+   "blocks": 18
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement and Pavement Renovation (WW-629)",
+   "jo": "2695J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2017",
+   "estEnd": "Spring 2019",
+   "blocks": 19
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement and Pavement Renovation No 3 (WW-634)",
+   "jo": "2738J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Summer 2018",
+   "estEnd": "Winter 2020",
+   "blocks": 10
+  },
+  {
+   "contract": "Joint - Sewer Lead - Various Locations Sewer Replacement and Pavement Renovation No 4 (WW-636)",
+   "jo": "2729J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2017",
+   "estEnd": "Winter 2019",
+   "blocks": 14
+  },
+  {
+   "contract": "Joint - Sewer Lead - Winfield St",
+   "jo": "1543J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Winter 2011",
+   "estEnd": "Winter 2012",
+   "blocks": 1
+  },
+  {
+   "contract": "Joint - Streetscape Lead - 22nd St Pavement Renovation",
+   "jo": "2780J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2017",
+   "estEnd": "Summer 2018",
+   "blocks": 11
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Balboa Paving",
+   "jo": "1608J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Spring 2014",
+   "blocks": 11
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Broadway Pavement Renovation",
+   "jo": "1908J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Winter 2013",
+   "blocks": 13
+  },
+  {
+   "contract": "Joint - Streetscape Lead - California St from Laurel St to Cherry St (2300J)",
+   "jo": "2843J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2018",
+   "estEnd": "Winter 2019",
+   "blocks": 13
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Castro Street Project",
+   "jo": "2273J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Spring 2014",
+   "estEnd": "Fall 2014",
+   "blocks": 6
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Cesar Chavez Pavement Renovation",
+   "jo": "1707J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Spring 2013",
+   "estEnd": "Winter 2014",
+   "blocks": 41
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Folsom St 10032072",
+   "jo": "10032072",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Spring 2024",
+   "estEnd": "Fall 2026",
+   "blocks": 48
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Folsom St Pavement Renovation",
+   "jo": "2984J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Spring 2019",
+   "estEnd": "Winter 2021",
+   "blocks": 19
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Irving St Paving Phase 1",
+   "jo": "2263J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2016",
+   "estEnd": "Fall 2019",
+   "blocks": 68
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Irving St Paving Phase 2",
+   "jo": "2540J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Summer 2017",
+   "estEnd": "Winter 2020",
+   "blocks": 38
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Jefferson Street Ph 2 Project",
+   "jo": "2768J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Fall 2019",
+   "estEnd": "Fall 2021",
+   "blocks": 7
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Minnesota St 2972J",
+   "jo": "2972J",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Fall 2023",
+   "estEnd": "Fall 2025",
+   "blocks": 3
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Palou Ave Pavement Renovation",
+   "jo": "2461J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2019",
+   "estEnd": "Summer 2021",
+   "blocks": 22
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Parking Guidance System Project And Pavement Renovation [Federal Id Novpptcsp6328(022)]",
+   "jo": "1678J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Summer 2012",
+   "blocks": 39
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Pavement Renovation - Fulton from 24th to Great Highway",
+   "jo": "2065J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Fall 2015",
+   "estEnd": "Spring 2017",
+   "blocks": 49
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Pavement Renovation - Taraval St",
+   "jo": "2367J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Fall 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 2
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Polk St Pavement Renovation",
+   "jo": "2064J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Summer 2016",
+   "estEnd": "Fall 2018",
+   "blocks": 83
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Potrero Ave Pavement Renovation",
+   "jo": "2184J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Fall 2015",
+   "estEnd": "Winter 2018",
+   "blocks": 55
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Santa Rita Ave and San Marcos Ave Pavement Renovation",
+   "jo": "2408J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Winter 2016",
+   "estEnd": "Winter 2016",
+   "blocks": 6
+  },
+  {
+   "contract": "Joint - Streetscape Lead - Wiggle Project (Waller St Pavement Renovation)",
+   "jo": "2902J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Spring 2017",
+   "estEnd": "Winter 2018",
+   "blocks": 7
+  },
+  {
+   "contract": "Joint Paving with TJPA",
+   "jo": "1485J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Fall 2010",
+   "blocks": 6
+  },
+  {
+   "contract": "Joint SFWD Lead - Bemis WD-2847",
+   "jo": "10035278",
+   "phase": "Under Construction",
+   "projectedYear": "FY22-23",
+   "estStart": "Spring 2023",
+   "estEnd": "Spring 2025",
+   "blocks": 4
+  },
+  {
+   "contract": "Joint – Sewer Lead - Various Locations Sewer Replacement and Pavement Renovation No 5 (WW-637)",
+   "jo": "2730J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2018",
+   "estEnd": "Summer 2019",
+   "blocks": 6
+  },
+  {
+   "contract": "Jones St Pavement Renovation",
+   "jo": "1531J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Spring 2010",
+   "blocks": 26
+  },
+  {
+   "contract": "Judah Street Infrastructure Improvements",
+   "jo": "10042203",
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Winter 2030",
+   "estEnd": "Spring 2031",
+   "blocks": 60
+  },
+  {
+   "contract": "Junipero Serra Blvd Pavement Renovation",
+   "jo": "10036700",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Fall 2022",
+   "estEnd": "Winter 2023",
+   "blocks": 29
+  },
+  {
+   "contract": "Kearny St, Montgomery St and Washington St Pavement Renovation",
+   "jo": "10041810",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2028",
+   "estEnd": "Spring 2029",
+   "blocks": 47
+  },
+  {
+   "contract": "Kirkham St Pavement Renovation and Sewer Replacement",
+   "jo": "1910J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 63
+  },
+  {
+   "contract": "Lawton St Pavement Renovation",
+   "jo": "1765J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Spring 2012",
+   "blocks": 32
+  },
+  {
+   "contract": "Leland Ave Streetscape Improvements Paving",
+   "jo": "1549J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2009",
+   "estEnd": "Fall 2010",
+   "blocks": 4
+  },
+  {
+   "contract": "Lincoln Way Pavement Renovation",
+   "jo": "10042341",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Spring 2028",
+   "estEnd": "Summer 2029",
+   "blocks": 54
+  },
+  {
+   "contract": "Lincoln Way Pavement Renovation and Sewer Replacement",
+   "jo": "1327J",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Fall 2008",
+   "estEnd": "Spring 2009",
+   "blocks": 26
+  },
+  {
+   "contract": "Lyon, Columbus Sts and Marina Blvd Pavement Renovation",
+   "jo": "1758J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2012",
+   "estEnd": "Winter 2013",
+   "blocks": 53
+  },
+  {
+   "contract": "MF Columbus Ave Infrastructure Improvements",
+   "jo": "2267J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Winter 2015",
+   "estEnd": "Summer 2018",
+   "blocks": 20
+  },
+  {
+   "contract": "Market St Localized Paving",
+   "jo": null,
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Summer 2013",
+   "blocks": 35
+  },
+  {
+   "contract": "Market St from Octavia St to Castro St Pavement Renovation",
+   "jo": "10042731",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Winter 2029",
+   "estEnd": "Spring 2030",
+   "blocks": 26
+  },
+  {
+   "contract": "Market and Haight St Paving, Transit, and Pedestrian Improvement Project",
+   "jo": "2204J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Winter 2014",
+   "estEnd": "Fall 2014",
+   "blocks": 7
+  },
+  {
+   "contract": "Master As-Needed Agreement M14 Curb Ramp Construction",
+   "jo": "10032046",
+   "phase": "Planning",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2020",
+   "estEnd": "Summer 2024",
+   "blocks": 1
+  },
+  {
+   "contract": "McAllister St Pavement Renovation",
+   "jo": "2182J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2014",
+   "estEnd": "Winter 2015",
+   "blocks": 17
+  },
+  {
+   "contract": "McAllister St, 20th St and 24th St Pavement Renovation and Sewer Replacement project",
+   "jo": "10038016",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 32
+  },
+  {
+   "contract": "Mission St and Geneva Ave Improvement Project - Joined to SFMTA",
+   "jo": "10035213",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Fall 2022",
+   "estEnd": "Summer 2026",
+   "blocks": 90
+  },
+  {
+   "contract": "Mission Street Infrastructure Improvements - Bernal Heights and Crocker Amazon Neighborhoods",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY30-31",
+   "estStart": "Fall 2031",
+   "estEnd": "Winter 2033",
+   "blocks": 56
+  },
+  {
+   "contract": "Mission Street Pavement and Sewer Rehabilitation in the Mission District",
+   "jo": "10041177",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Summer 2027",
+   "estEnd": "Fall 2028",
+   "blocks": 58
+  },
+  {
+   "contract": "Mission Street Safety Improvements Project",
+   "jo": "10040525",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Summer 2028",
+   "estEnd": "Summer 2030",
+   "blocks": 29
+  },
+  {
+   "contract": "Monterey Blvd Pavement Renovation",
+   "jo": "10041355",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2028",
+   "estEnd": "Spring 2029",
+   "blocks": 90
+  },
+  {
+   "contract": "Monterey Boulevard Pavement Renovation Phase 2",
+   "jo": "1584J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Spring 2011",
+   "blocks": 43
+  },
+  {
+   "contract": "New State Route",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2014",
+   "estEnd": "Fall 2015",
+   "blocks": 26
+  },
+  {
+   "contract": "Newcomb Avenue Streetscape Improvements Federal No Epa-R9-Wtr1-078-007",
+   "jo": "1508J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Spring 2011",
+   "estEnd": "Winter 2011",
+   "blocks": 1
+  },
+  {
+   "contract": "Noriega St And Holloway Ave Pavement Renovation",
+   "jo": "1644J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Winter 2010",
+   "estEnd": "Summer 2011",
+   "blocks": 67
+  },
+  {
+   "contract": "Noriega St and Quintara St Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Summer 2032",
+   "estEnd": "Fall 2033",
+   "blocks": 62
+  },
+  {
+   "contract": "Noriega Street Pavement Renovation and Sewer Replacement",
+   "jo": "1501j",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Fall 2008",
+   "estEnd": "Fall 2009",
+   "blocks": 14
+  },
+  {
+   "contract": "North University Mound System Upgrade, Sewer Repl And Pavement Renovation",
+   "jo": "1393J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Fall 2008",
+   "estEnd": "Fall 2009",
+   "blocks": 20
+  },
+  {
+   "contract": "OShaughnessy and Woodside Ave Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY30-31",
+   "estStart": "Winter 2031",
+   "estEnd": "Spring 2033",
+   "blocks": 43
+  },
+  {
+   "contract": "Ocean Ave and Delano Ave Pavement Renovation",
+   "jo": "10042385",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2027",
+   "estEnd": "Winter 2029",
+   "blocks": 39
+  },
+  {
+   "contract": "Ocean Avenue Pavement Renovation",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Spring 2032",
+   "estEnd": "Summer 2033",
+   "blocks": 94
+  },
+  {
+   "contract": "PW 15th Ave West Portal to Wawona St Reconstruction",
+   "jo": "2232J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Summer 2013",
+   "blocks": 4
+  },
+  {
+   "contract": "PW 20th and DeHaro Infrastructure Improvements Project",
+   "jo": "10040455",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Fall 2026",
+   "estEnd": "Fall 2026",
+   "blocks": 1
+  },
+  {
+   "contract": "PW 29 Sunset Improvement Project Phase 1",
+   "jo": "10040527",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Spring 2027",
+   "estEnd": "Winter 2028",
+   "blocks": 10
+  },
+  {
+   "contract": "PW 41st and 44th Aves Infrastructure Improvements",
+   "jo": "10033110",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Winter 2021",
+   "estEnd": "Fall 2022",
+   "blocks": 30
+  },
+  {
+   "contract": "PW 5 Fulton Transit Improvements",
+   "jo": "10035851",
+   "phase": "Under Construction",
+   "projectedYear": "FY23-24",
+   "estStart": "Fall 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 1
+  },
+  {
+   "contract": "PW Alemany Blvd Pavement Renovation",
+   "jo": "2925J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Spring 2019",
+   "estEnd": "Winter 2020",
+   "blocks": 43
+  },
+  {
+   "contract": "PW As Needed Concrete Panel Replacement",
+   "jo": "2935J",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Fall 2019",
+   "estEnd": "Fall 2022",
+   "blocks": 16
+  },
+  {
+   "contract": "PW As Needed Micro Surfacing FY 16 17",
+   "jo": "2807J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Fall 2016",
+   "estEnd": "Summer 2019",
+   "blocks": 347
+  },
+  {
+   "contract": "PW As Needed Pavement Preservation Contract 4 (General As-Needed Contract)",
+   "jo": "10035092",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Winter 2019",
+   "estEnd": "Summer 2023",
+   "blocks": 295
+  },
+  {
+   "contract": "PW As Needed Pavement Preservation FY 15 16",
+   "jo": "2564J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2015",
+   "estEnd": "Summer 2017",
+   "blocks": 412
+  },
+  {
+   "contract": "PW As Needed Paving Contract no10",
+   "jo": "2424J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2014",
+   "estEnd": "Winter 2017",
+   "blocks": 39
+  },
+  {
+   "contract": "PW As Needed Paving Contract no9",
+   "jo": "2159J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Winter 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 22
+  },
+  {
+   "contract": "PW As Needed no11 Infrastructure Improvements",
+   "jo": "2534J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2015",
+   "estEnd": "Summer 2019",
+   "blocks": 37
+  },
+  {
+   "contract": "PW As Needed no12 Infrastructure Improvements",
+   "jo": "2766J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Spring 2016",
+   "estEnd": "Spring 2018",
+   "blocks": 10
+  },
+  {
+   "contract": "PW BROADWAY CHINATOWN IMPROVEMENTS PROJECT",
+   "jo": "1075J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Summer 2016",
+   "estEnd": "Summer 2018",
+   "blocks": 7
+  },
+  {
+   "contract": "PW BSSR Pavement Preservation FY 16 17",
+   "jo": "2832J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2016",
+   "estEnd": "Summer 2017",
+   "blocks": 49
+  },
+  {
+   "contract": "PW BSSR Paving FY 16 17",
+   "jo": "2833J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2016",
+   "estEnd": "Summer 2017",
+   "blocks": 99
+  },
+  {
+   "contract": "PW Bartlett St Infrastructure Improvements",
+   "jo": "2125J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2014",
+   "estEnd": "Spring 2017",
+   "blocks": 1
+  },
+  {
+   "contract": "PW Beale St Improvement Project",
+   "jo": "10034888",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Summer 2025",
+   "estEnd": "Fall 2026",
+   "blocks": 1
+  },
+  {
+   "contract": "PW Bowdoin Bryant and Hale Infrastructure Improvements",
+   "jo": "2497J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2016",
+   "estEnd": "Summer 2017",
+   "blocks": 27
+  },
+  {
+   "contract": "PW Brannan Street Infrastructure Improvements",
+   "jo": "2733J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2018",
+   "estEnd": "Summer 2019",
+   "blocks": 35
+  },
+  {
+   "contract": "PW Clayton Clipper and Portola Infrastructure Improvements",
+   "jo": "2500J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Spring 2018",
+   "estEnd": "Spring 2020",
+   "blocks": 46
+  },
+  {
+   "contract": "PW Clement St Infrastructure Improvements",
+   "jo": "2488J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Winter 2016",
+   "estEnd": "Fall 2018",
+   "blocks": 36
+  },
+  {
+   "contract": "PW De Long Street Impr",
+   "jo": "10042449",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Fall 2025",
+   "estEnd": "Fall 2025",
+   "blocks": 1
+  },
+  {
+   "contract": "PW Diamond Heights Blvd Infrastructure Improvements",
+   "jo": "2502J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Fall 2016",
+   "estEnd": "Spring 2018",
+   "blocks": 30
+  },
+  {
+   "contract": "PW Dolores St Infrastructure Improvements",
+   "jo": "2260J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2014",
+   "estEnd": "Summer 2016",
+   "blocks": 60
+  },
+  {
+   "contract": "PW Eureka Grandview and Mangels Infrastructure Improvements",
+   "jo": "2504J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2016",
+   "estEnd": "Summer 2018",
+   "blocks": 77
+  },
+  {
+   "contract": "PW Fillmore St Emercy Infrastrure Improvements",
+   "jo": "10040543",
+   "phase": "Under Construction",
+   "projectedYear": null,
+   "estStart": "Fall 2023",
+   "estEnd": "Fall 2023",
+   "blocks": 2
+  },
+  {
+   "contract": "PW Geary BRT Phase 2",
+   "jo": "10040893",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Fall 2026",
+   "estEnd": "Fall 2028",
+   "blocks": 104
+  },
+  {
+   "contract": "PW Gough St Infrastructure Improvements",
+   "jo": "2066J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2014",
+   "estEnd": "Spring 2016",
+   "blocks": 82
+  },
+  {
+   "contract": "PW Grafton Ave and Garfield Ave Infrastructure Improvements",
+   "jo": "2271J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Fall 2015",
+   "estEnd": "Fall 2016",
+   "blocks": 30
+  },
+  {
+   "contract": "PW Guerrero San Jose and Corbett Infrastructure Improvements",
+   "jo": "2262J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Fall 2015",
+   "estEnd": "Summer 2017",
+   "blocks": 60
+  },
+  {
+   "contract": "PW Haight St and Hayes St Infrastructure Improvements",
+   "jo": "2264J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Spring 2015",
+   "estEnd": "Summer 2018",
+   "blocks": 53
+  },
+  {
+   "contract": "PW Harrison Street Infrastructure Improvements",
+   "jo": "2620J",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Summer 2021",
+   "estEnd": "Summer 2023",
+   "blocks": 9
+  },
+  {
+   "contract": "PW Ingalls St and Industrial St Pavement Renovation",
+   "jo": "2493J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Spring 2016",
+   "estEnd": "Winter 2020",
+   "blocks": 52
+  },
+  {
+   "contract": "PW Lawton St Infrastructure Improvements",
+   "jo": "2494J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2016",
+   "estEnd": "Fall 2016",
+   "blocks": 28
+  },
+  {
+   "contract": "PW MUNI Forward As Needed Contract",
+   "jo": "2852J",
+   "phase": "Planning",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2017",
+   "estEnd": "Summer 2022",
+   "blocks": 5
+  },
+  {
+   "contract": "PW Masonic Ave Infrastructure Improvements",
+   "jo": "2370J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2016",
+   "estEnd": "Summer 2018",
+   "blocks": 23
+  },
+  {
+   "contract": "PW Mid-Valencia Protect Bikeway Project",
+   "jo": "10042216",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2025",
+   "estEnd": "Spring 2025",
+   "blocks": 14
+  },
+  {
+   "contract": "PW Mission SoMa Impr Pvmt Reno",
+   "jo": "10036274",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2026",
+   "estEnd": "Spring 2029",
+   "blocks": 29
+  },
+  {
+   "contract": "PW Mission St Chavez to Cortland Paving",
+   "jo": "1898J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2014",
+   "estEnd": "Fall 2015",
+   "blocks": 20
+  },
+  {
+   "contract": "PW Page Street Connect",
+   "jo": "2680J",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Fall 2021",
+   "estEnd": "Summer 2023",
+   "blocks": 1
+  },
+  {
+   "contract": "PW Pavement Renovation 17th St 18th St",
+   "jo": "1966J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Spring 2013",
+   "estEnd": "Spring 2014",
+   "blocks": 28
+  },
+  {
+   "contract": "PW Pavement Renovation Various Location No 17",
+   "jo": "2265J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2015",
+   "estEnd": "Summer 2016",
+   "blocks": 82
+  },
+  {
+   "contract": "PW Richmond Sunset Districts Infrastructure Improvements",
+   "jo": "2628J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Summer 2016",
+   "estEnd": "Spring 2018",
+   "blocks": 1
+  },
+  {
+   "contract": "PW SOMA Alleyway Infrastructure Improvements Phase 2",
+   "jo": "1731J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 8
+  },
+  {
+   "contract": "PW Sansome Street & Sacramento Street Improvements",
+   "jo": "10039471",
+   "phase": "Under Construction",
+   "projectedYear": "FY24-25",
+   "estStart": "Spring 2025",
+   "estEnd": "Fall 2026",
+   "blocks": 4
+  },
+  {
+   "contract": "PW Second St Infrastructure Improvements",
+   "jo": "1064J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2017",
+   "estEnd": "Fall 2020",
+   "blocks": 38
+  },
+  {
+   "contract": "PW Sixth Street Pedestrian Safety Project",
+   "jo": "2961J",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Fall 2021",
+   "estEnd": "Summer 2025",
+   "blocks": 12
+  },
+  {
+   "contract": "PW Street Resurfacing Program-BSSR Pavement Preservation FY 19-20",
+   "jo": "10035117",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Summer 2019",
+   "estEnd": "Summer 2020",
+   "blocks": 52
+  },
+  {
+   "contract": "PW Street Resurfacing Program-BSSR Paving FY 17-18",
+   "jo": "2979J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Summer 2017",
+   "estEnd": "Summer 2018",
+   "blocks": 67
+  },
+  {
+   "contract": "PW StreetResurfacingPro - BSSR Pavement Prese FY18-19",
+   "jo": "10033604",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Summer 2018",
+   "estEnd": "Summer 2019",
+   "blocks": 41
+  },
+  {
+   "contract": "PW StreetResurfacingPro -BSSR Pavement Prese FY17-18",
+   "jo": "2980J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Summer 2017",
+   "estEnd": "Summer 2018",
+   "blocks": 58
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BBSR Pavement Prese FY 23-24",
+   "jo": "10040302",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2023",
+   "estEnd": "Summer 2024",
+   "blocks": 46
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BBSR Pavement Prese FY 24-25",
+   "jo": "10041054",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 90
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BBSR Pavement Prese FY 25-26",
+   "jo": "10042450",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2025",
+   "estEnd": "Summer 2026",
+   "blocks": 78
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BBSR Pavement Prese FY 27-28",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Summer 2027",
+   "estEnd": "Summer 2027",
+   "blocks": 1
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BSSR Pavement Prese FY 21-22",
+   "jo": "10037661",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Summer 2021",
+   "estEnd": "Summer 2022",
+   "blocks": 29
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BSSR Pavement Prese FY 22-23",
+   "jo": "10038990",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Summer 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 39
+  },
+  {
+   "contract": "PW StreetResurfacingPro- BSSR Pavement Prese FY20-21",
+   "jo": "10036424",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2020",
+   "estEnd": "Summer 2021",
+   "blocks": 32
+  },
+  {
+   "contract": "PW StreetResurfacingPro-BBSR Pavement Prese FY 26-27",
+   "jo": "10043402",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Summer 2026",
+   "estEnd": "Summer 2027",
+   "blocks": 128
+  },
+  {
+   "contract": "PW Sunset Blvd Pavement Renovation",
+   "jo": "10037890",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2023",
+   "estEnd": "Spring 2025",
+   "blocks": 60
+  },
+  {
+   "contract": "PW Sunset and Parkside Streets Pavement Renovation",
+   "jo": "10032497",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Spring 2020",
+   "estEnd": "Summer 2021",
+   "blocks": 51
+  },
+  {
+   "contract": "PW Twin Peak – Phase 2 Pavement Renovation",
+   "jo": "2663J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Spring 2017",
+   "estEnd": "Summer 2017",
+   "blocks": 6
+  },
+  {
+   "contract": "PW Twin Peaks Cold In Place Recycling Pavement Renovation",
+   "jo": "2481J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Summer 2015",
+   "estEnd": "Spring 2016",
+   "blocks": 1
+  },
+  {
+   "contract": "PW University St and Sunnydale Ave Pavement Renovatio",
+   "jo": "2501J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Fall 2017",
+   "estEnd": "Spring 2018",
+   "blocks": 26
+  },
+  {
+   "contract": "PW Urbano Dr Infrastructure Improvements",
+   "jo": "2696J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2017",
+   "estEnd": "Summer 2018",
+   "blocks": 80
+  },
+  {
+   "contract": "PW VL BSSR Roadway Repairs FY 16-17",
+   "jo": "2834J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2016",
+   "estEnd": "Summer 2017",
+   "blocks": 4
+  },
+  {
+   "contract": "PW Various Locations No44 Infrastructure Improvements",
+   "jo": "10033111",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Spring 2021",
+   "estEnd": "Winter 2021",
+   "blocks": 46
+  },
+  {
+   "contract": "PW Various Locations No45 Infrastructure Improvements",
+   "jo": "10033112",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Spring 2022",
+   "estEnd": "Winter 2024",
+   "blocks": 36
+  },
+  {
+   "contract": "PW Various Locations No46 Infrastructure Improvements",
+   "jo": "10033113",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Winter 2021",
+   "estEnd": "Spring 2022",
+   "blocks": 37
+  },
+  {
+   "contract": "PW Various Locations No48 Infrastructure Improvements",
+   "jo": "10033115",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Fall 2021",
+   "estEnd": "Fall 2023",
+   "blocks": 44
+  },
+  {
+   "contract": "PW Various Locations No49 Infrastructure Improvements",
+   "jo": "10033116",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Fall 2021",
+   "estEnd": "Winter 2023",
+   "blocks": 36
+  },
+  {
+   "contract": "PW Various Locations No50 Infrastructure Improvements",
+   "jo": "10033117",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Spring 2022",
+   "estEnd": "Spring 2023",
+   "blocks": 46
+  },
+  {
+   "contract": "PW Various Locations No51 Infrastructure Improvements",
+   "jo": "10033118",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Fall 2021",
+   "estEnd": "Fall 2022",
+   "blocks": 30
+  },
+  {
+   "contract": "PW Various Locations Pavement Preservation FY14 15 No 2",
+   "jo": "2473J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Spring 2015",
+   "estEnd": "Winter 2016",
+   "blocks": 257
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovation No 21",
+   "jo": "2495J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Spring 2016",
+   "estEnd": "Winter 2017",
+   "blocks": 39
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovation No 25",
+   "jo": "2702J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Summer 2017",
+   "estEnd": "Spring 2018",
+   "blocks": 40
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovation No 29",
+   "jo": "2732J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2018",
+   "estEnd": "Summer 2019",
+   "blocks": 40
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovation No 30",
+   "jo": "2703J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Winter 2017",
+   "estEnd": "Fall 2017",
+   "blocks": 39
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovation No 34",
+   "jo": "2795J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Spring 2018",
+   "estEnd": "Summer 2019",
+   "blocks": 66
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovation No19",
+   "jo": "2489J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Summer 2015",
+   "estEnd": "Fall 2016",
+   "blocks": 53
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovations No 20",
+   "jo": "2492J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2016",
+   "estEnd": "Winter 2019",
+   "blocks": 49
+  },
+  {
+   "contract": "PW Various Locations Pavement Renovations No 37",
+   "jo": "2792J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Winter 2018",
+   "estEnd": "Spring 2020",
+   "blocks": 55
+  },
+  {
+   "contract": "PW Various Locations Paving Joint with Sewer const",
+   "jo": "2634J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2015",
+   "estEnd": "Spring 2017",
+   "blocks": 7
+  },
+  {
+   "contract": "PW Various Locations no22 Infrastructure Improvements",
+   "jo": "2503J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Spring 2016",
+   "estEnd": "Winter 2019",
+   "blocks": 66
+  },
+  {
+   "contract": "PW Various Locations no24 Infrastructure Improvements",
+   "jo": "2709J",
+   "phase": "Complete",
+   "projectedYear": "FY17-18",
+   "estStart": "Winter 2017",
+   "estEnd": "Summer 2018",
+   "blocks": 21
+  },
+  {
+   "contract": "PW Various Locations no27 Infrastructure Improvements",
+   "jo": "2794J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2018",
+   "estEnd": "Spring 2019",
+   "blocks": 66
+  },
+  {
+   "contract": "PW Various Locations no28 Infrastructure Improvements",
+   "jo": "2710J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2018",
+   "estEnd": "Fall 2019",
+   "blocks": 36
+  },
+  {
+   "contract": "PW Various Locations no31A Infrastructure Improvements",
+   "jo": "2796J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Spring 2018",
+   "estEnd": "Spring 2019",
+   "blocks": 34
+  },
+  {
+   "contract": "PW Various Locations no31B Infrastructure Impovements",
+   "jo": "10032501",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Summer 2021",
+   "estEnd": "Winter 2021",
+   "blocks": 34
+  },
+  {
+   "contract": "PW Various Locations no39 Infrastructure Improvements",
+   "jo": "2937J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Spring 2019",
+   "estEnd": "Summer 2021",
+   "blocks": 91
+  },
+  {
+   "contract": "PW Vicente St and Ocean Ave Infrastructure Improvements",
+   "jo": "2266J",
+   "phase": "Complete",
+   "projectedYear": "FY16-17",
+   "estStart": "Spring 2015",
+   "estEnd": "Summer 2016",
+   "blocks": 71
+  },
+  {
+   "contract": "PW Webster St Infrastructure Improvements",
+   "jo": "2386J",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Winter 2016",
+   "estEnd": "Fall 2018",
+   "blocks": 41
+  },
+  {
+   "contract": "PW West Portal Ave and Quintara St Infrastructure Improvements",
+   "jo": "2272J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2015",
+   "estEnd": "Summer 2016",
+   "blocks": 19
+  },
+  {
+   "contract": "Parkmerced Twin Peaks Mt Davidson Manor Residential Street Resurfacing",
+   "jo": "2793J",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Winter 2019",
+   "estEnd": "Winter 2020",
+   "blocks": 60
+  },
+  {
+   "contract": "Parnassus Ave Pavement Renovation",
+   "jo": "1747J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2012",
+   "estEnd": "Fall 2012",
+   "blocks": 24
+  },
+  {
+   "contract": "Paul Ave, Woolsey St and Salinas Ave Pavement Renovation and Sewer Replacement",
+   "jo": "2977J",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Fall 2021",
+   "estEnd": "Summer 2022",
+   "blocks": 35
+  },
+  {
+   "contract": "Pavement Renovation - 20th Ave and Lincoln Way",
+   "jo": "2061J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 39
+  },
+  {
+   "contract": "Pavement Renovation - 24th St",
+   "jo": "1933J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2013",
+   "estEnd": "Fall 2013",
+   "blocks": 40
+  },
+  {
+   "contract": "Pavement Renovation - Alemany Blvd Phase 2",
+   "jo": "2063J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 21
+  },
+  {
+   "contract": "Pavement Renovation - Balboa St",
+   "jo": "1930J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Fall 2012",
+   "estEnd": "Spring 2013",
+   "blocks": 52
+  },
+  {
+   "contract": "Pavement Renovation - Crescent Ave and Hudson Ave",
+   "jo": "2269J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2015",
+   "estEnd": "Winter 2016",
+   "blocks": 49
+  },
+  {
+   "contract": "Pavement Renovation - Divisadero St and Franklin St",
+   "jo": "2049J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Fall 2013",
+   "estEnd": "Fall 2015",
+   "blocks": 114
+  },
+  {
+   "contract": "Pavement Renovation - Fulton St, Euclid, Vallejo, and Laguna",
+   "jo": "1932J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2012",
+   "estEnd": "Winter 2013",
+   "blocks": 74
+  },
+  {
+   "contract": "Pavement Renovation - Great Highway",
+   "jo": "1936J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Winter 2013",
+   "estEnd": "Fall 2013",
+   "blocks": 22
+  },
+  {
+   "contract": "Pavement Renovation - Guerrero St",
+   "jo": "2051J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Spring 2014",
+   "blocks": 35
+  },
+  {
+   "contract": "Pavement Renovation - Joint Projects with Other Agencies",
+   "jo": "1760J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "N/A",
+   "estEnd": "N/A",
+   "blocks": 61
+  },
+  {
+   "contract": "Pavement Renovation - Ocean Ave and Persia Ave",
+   "jo": "2183J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Spring 2015",
+   "estEnd": "Spring 2016",
+   "blocks": 42
+  },
+  {
+   "contract": "Pavement Renovation - Pine St, Sacramento St and Stockton St",
+   "jo": "2062J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Fall 2013",
+   "estEnd": "Winter 2015",
+   "blocks": 74
+  },
+  {
+   "contract": "Pavement Renovation - San Bruno and Bayshore",
+   "jo": "1931J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2012",
+   "estEnd": "Winter 2014",
+   "blocks": 69
+  },
+  {
+   "contract": "Pavement Renovation - Sickles Ave and Alemany Blvd",
+   "jo": "1938J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Spring 2013",
+   "estEnd": "Fall 2013",
+   "blocks": 50
+  },
+  {
+   "contract": "Pavement Renovation - Silver Ave",
+   "jo": "2067J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2013",
+   "estEnd": "Fall 2015",
+   "blocks": 92
+  },
+  {
+   "contract": "Pavement Renovation - Upper Market St",
+   "jo": "2202J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Fall 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 59
+  },
+  {
+   "contract": "Pavement Renovation - Various Locations No 18",
+   "jo": "2268J",
+   "phase": "Complete",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2015",
+   "estEnd": "Fall 2015",
+   "blocks": 22
+  },
+  {
+   "contract": "Plymouth Ave Pavement Renovation",
+   "jo": "1643J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Fall 2012",
+   "estEnd": "Spring 2013",
+   "blocks": 21
+  },
+  {
+   "contract": "Point Lobos Ave and Washington St Pavement Renovation",
+   "jo": "2233J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Spring 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 31
+  },
+  {
+   "contract": "Portola Dr Pavement Renovation",
+   "jo": "10043213",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Fall 2028",
+   "estEnd": "Winter 2030",
+   "blocks": 55
+  },
+  {
+   "contract": "Richmond Residential Streets Pavement Renovation and Sewer Replacement",
+   "jo": "10035253",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Spring 2022",
+   "estEnd": "Spring 2024",
+   "blocks": 24
+  },
+  {
+   "contract": "San Bruno Ave Pavement Renovation",
+   "jo": "10041179",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Summer 2027",
+   "estEnd": "Summer 2028",
+   "blocks": 53
+  },
+  {
+   "contract": "San Jose Ave Pavement Renovation and Sewer Replacement",
+   "jo": "1912J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Fall 2012",
+   "estEnd": "Summer 2013",
+   "blocks": 25
+  },
+  {
+   "contract": "Silver Ave Pavement Renovation",
+   "jo": "10043829",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Winter 2029",
+   "estEnd": "Spring 2030",
+   "blocks": 53
+  },
+  {
+   "contract": "Soma Alleyway Improvements (Sfra)",
+   "jo": "1425J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Spring 2010",
+   "estEnd": "Winter 2011",
+   "blocks": 13
+  },
+  {
+   "contract": "Soma West Ancillary Paving Share With 1378j",
+   "jo": "1848J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Winter 2011",
+   "estEnd": "Fall 2012",
+   "blocks": 18
+  },
+  {
+   "contract": "South of Market Pavement Renovation",
+   "jo": "1354J",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Fall 2008",
+   "estEnd": "Summer 2009",
+   "blocks": 43
+  },
+  {
+   "contract": "St Francis Circle",
+   "jo": "1582J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Fall 2011",
+   "blocks": 9
+  },
+  {
+   "contract": "Stanyan St and Golden Gate Ave Pavement Renovation",
+   "jo": "1762J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2012",
+   "estEnd": "Fall 2012",
+   "blocks": 44
+  },
+  {
+   "contract": "Steiner Street and Broadway Pavement Renovation",
+   "jo": "1586J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Spring 2010",
+   "estEnd": "Fall 2010",
+   "blocks": 12
+  },
+  {
+   "contract": "Street Resurfacing Program - BSSR Paving FY 19-20",
+   "jo": "10035115",
+   "phase": "Complete",
+   "projectedYear": "FY19-20",
+   "estStart": "Summer 2019",
+   "estEnd": "Summer 2020",
+   "blocks": 38
+  },
+  {
+   "contract": "Street Resurfacing Program - BSSR Paving FY 20-21",
+   "jo": "10036423",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2020",
+   "estEnd": "Summer 2021",
+   "blocks": 56
+  },
+  {
+   "contract": "Street Resurfacing Program – BSSR Paving FY 18-19",
+   "jo": "10033406",
+   "phase": "Complete",
+   "projectedYear": "FY18-19",
+   "estStart": "Summer 2018",
+   "estEnd": "Summer 2019",
+   "blocks": 77
+  },
+  {
+   "contract": "Street Resurfacing Program- BBSR Paving FY 23-24",
+   "jo": "10040301",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2023",
+   "estEnd": "Summer 2024",
+   "blocks": 79
+  },
+  {
+   "contract": "Street Resurfacing Program- BBSR Paving FY 24-25",
+   "jo": "10041075",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 33
+  },
+  {
+   "contract": "Street Resurfacing Program- BBSR Paving FY 26-27",
+   "jo": "10043403",
+   "phase": "Under Construction",
+   "projectedYear": null,
+   "estStart": "Summer 2026",
+   "estEnd": "Summer 2027",
+   "blocks": 178
+  },
+  {
+   "contract": "Street Resurfacing Program- BBSR Paving FY 28-29",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2016",
+   "estEnd": "Winter 2017",
+   "blocks": 7
+  },
+  {
+   "contract": "Street Resurfacing Program- BBSR Paving FY25-26",
+   "jo": "10042491",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2025",
+   "estEnd": "Summer 2026",
+   "blocks": 42
+  },
+  {
+   "contract": "Street Resurfacing Program- BSSR Inquiry Project FY 22-23",
+   "jo": "10038991",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Summer 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 2
+  },
+  {
+   "contract": "Street Resurfacing Program- BSSR Paving FY 21-22",
+   "jo": "10037665",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Summer 2021",
+   "estEnd": "Summer 2022",
+   "blocks": 86
+  },
+  {
+   "contract": "Street Resurfacing Program- BSSR Paving FY 22-23",
+   "jo": "10038989",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Summer 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 93
+  },
+  {
+   "contract": "Street Resurfacing Program- BSSR Paving FY 29-30",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY15-16",
+   "estStart": "Winter 2016",
+   "estEnd": "Winter 2017",
+   "blocks": 1
+  },
+  {
+   "contract": "Street Resurfacing Program- Various Locations Inquiries FY 25-26",
+   "jo": "10043125",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2025",
+   "estEnd": "Summer 2026",
+   "blocks": 1
+  },
+  {
+   "contract": "Street Resurfacing Program-BBSR Paving FY 27-28",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": null,
+   "estStart": "Summer 2027",
+   "estEnd": "Summer 2028",
+   "blocks": 26
+  },
+  {
+   "contract": "Sutter St and Post St Pavement Renovation",
+   "jo": "10042292",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2028",
+   "estEnd": "Spring 2029",
+   "blocks": 47
+  },
+  {
+   "contract": "Taylor Street And Sansome Street Pavement Renovation",
+   "jo": "1440J",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Winter 2009",
+   "estEnd": "Summer 2009",
+   "blocks": 16
+  },
+  {
+   "contract": "Taylor Street Improvement",
+   "jo": "1498J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Fall 2009",
+   "estEnd": "Fall 2010",
+   "blocks": 1
+  },
+  {
+   "contract": "Turk Street Pavement Renovation",
+   "jo": "1542J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Fall 2009",
+   "estEnd": "Spring 2010",
+   "blocks": 13
+  },
+  {
+   "contract": "Union Street Pavement Renovation",
+   "jo": "10041275",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2027",
+   "estEnd": "Spring 2028",
+   "blocks": 49
+  },
+  {
+   "contract": "Upper Haight Pavement Renovation",
+   "jo": "2789J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Summer 2019",
+   "estEnd": "Summer 2021",
+   "blocks": 20
+  },
+  {
+   "contract": "Valencia St, McCoppin to Market Pavement Renovation",
+   "jo": "2352J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Winter 2014",
+   "estEnd": "Summer 2014",
+   "blocks": 2
+  },
+  {
+   "contract": "Valencia Streetscape Improvements Paving",
+   "jo": "1527J",
+   "phase": "Complete",
+   "projectedYear": "FY09-10",
+   "estStart": "Summer 2009",
+   "estEnd": "Fall 2010",
+   "blocks": 7
+  },
+  {
+   "contract": "Various Locations Multilayer Micro-surfacing FY 13-14",
+   "jo": "2306J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Spring 2014",
+   "estEnd": "Summer 2014",
+   "blocks": 237
+  },
+  {
+   "contract": "Various Locations No 71B Paving, Curb Ramps and Sub-sidewalk Basements",
+   "jo": "10041630",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Summer 2027",
+   "estEnd": "Fall 2028",
+   "blocks": 8
+  },
+  {
+   "contract": "Various Locations Pavement Preservation FY 13-14",
+   "jo": "2158J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Fall 2013",
+   "estEnd": "Summer 2014",
+   "blocks": 301
+  },
+  {
+   "contract": "Various Locations Pavement Preservation FY 14-15",
+   "jo": "2310J",
+   "phase": "Complete",
+   "projectedYear": "FY14-15",
+   "estStart": "Summer 2014",
+   "estEnd": "Summer 2015",
+   "blocks": 553
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Concrete No 88",
+   "jo": "10040579",
+   "phase": "Planning",
+   "projectedYear": "FY28-29",
+   "estStart": "Winter 2029",
+   "estEnd": "Spring 2030",
+   "blocks": 11
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Concrete No 93",
+   "jo": "10041358",
+   "phase": "Planning",
+   "projectedYear": "FY29-30",
+   "estStart": "Winter 2030",
+   "estEnd": "Spring 2031",
+   "blocks": 28
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Concrete No 94",
+   "jo": "10042205",
+   "phase": "Planning",
+   "projectedYear": "FY29-30",
+   "estStart": "Winter 2031",
+   "estEnd": "Spring 2032",
+   "blocks": 23
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Concrete No 95",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Winter 2032",
+   "estEnd": "Spring 2033",
+   "blocks": 16
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Concrete No 96",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Winter 2033",
+   "estEnd": "Spring 2034",
+   "blocks": 36
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Concrete No 97",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY33-34",
+   "estStart": "Winter 2034",
+   "estEnd": "Spring 2035",
+   "blocks": 26
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 100",
+   "jo": "10042730",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Summer 2028",
+   "estEnd": "Summer 2029",
+   "blocks": 45
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 101",
+   "jo": "10043381",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Winter 2028",
+   "estEnd": "Winter 2030",
+   "blocks": 49
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 102",
+   "jo": "10043824",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Fall 2028",
+   "estEnd": "Winter 2030",
+   "blocks": 74
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 104",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Fall 2033",
+   "estEnd": "Winter 2034",
+   "blocks": 52
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 105",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Fall 2033",
+   "estEnd": "Winter 2035",
+   "blocks": 64
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 12",
+   "jo": "1325J",
+   "phase": "Complete",
+   "projectedYear": "FY08-09",
+   "estStart": "Spring 2009",
+   "estEnd": "Spring 2010",
+   "blocks": 32
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 14",
+   "jo": "1724J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Spring 2011",
+   "estEnd": "Fall 2012",
+   "blocks": 39
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 15A",
+   "jo": "1787J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Winter 2011",
+   "blocks": 58
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 15B",
+   "jo": "1895J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Spring 2012",
+   "estEnd": "Fall 2012",
+   "blocks": 48
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 16",
+   "jo": "1951J",
+   "phase": "Complete",
+   "projectedYear": "FY13-14",
+   "estStart": "Summer 2013",
+   "estEnd": "Winter 2015",
+   "blocks": 28
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 35 and Sewer Replacement",
+   "jo": "2791J",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Fall 2019",
+   "estEnd": "Spring 2021",
+   "blocks": 64
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 36 and Sewer Replacement",
+   "jo": "2924J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Fall 2019",
+   "estEnd": "Winter 2020",
+   "blocks": 38
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 38 and Sewer Replacement",
+   "jo": "2928J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Winter 2020",
+   "estEnd": "Winter 2024",
+   "blocks": 70
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 40",
+   "jo": "2921J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Spring 2020",
+   "estEnd": "Summer 2021",
+   "blocks": 50
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 41 and Sewer Replacement",
+   "jo": "2923J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Winter 2020",
+   "estEnd": "Winter 2020",
+   "blocks": 65
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 43",
+   "jo": "2927J",
+   "phase": "Complete",
+   "projectedYear": "FY20-21",
+   "estStart": "Spring 2020",
+   "estEnd": "Spring 2021",
+   "blocks": 40
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 47 and Sewer Replacement",
+   "jo": "10033114",
+   "phase": "Complete",
+   "projectedYear": "FY21-22",
+   "estStart": "Winter 2021",
+   "estEnd": "Spring 2022",
+   "blocks": 33
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 52 and Sewer Replacement",
+   "jo": "10035252",
+   "phase": "Complete",
+   "projectedYear": "FY22-23",
+   "estStart": "Winter 2022",
+   "estEnd": "Summer 2023",
+   "blocks": 29
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 53",
+   "jo": "10035251",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2023",
+   "estEnd": "Summer 2024",
+   "blocks": 56
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 54",
+   "jo": "10035995",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Spring 2022",
+   "estEnd": "Summer 2024",
+   "blocks": 76
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 55 and Sewer Replacement",
+   "jo": "10035932",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2022",
+   "estEnd": "Winter 2025",
+   "blocks": 80
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 56",
+   "jo": "10035992",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Winter 2022",
+   "estEnd": "Spring 2024",
+   "blocks": 67
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 57",
+   "jo": "10036360",
+   "phase": "Complete",
+   "projectedYear": "FY23-24",
+   "estStart": "Summer 2022",
+   "estEnd": "Winter 2024",
+   "blocks": 46
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 58",
+   "jo": "10037256",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Fall 2023",
+   "estEnd": "Spring 2025",
+   "blocks": 67
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 59",
+   "jo": "10037392",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Summer 2023",
+   "estEnd": "Summer 2024",
+   "blocks": 67
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 60 and Sewer Replacement (Rebid)",
+   "jo": "10037391",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2024",
+   "estEnd": "Fall 2025",
+   "blocks": 65
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 61",
+   "jo": "10037746",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2023",
+   "estEnd": "Fall 2024",
+   "blocks": 48
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 62",
+   "jo": "10037764",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2025",
+   "estEnd": "Fall 2026",
+   "blocks": 49
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 63",
+   "jo": "10037763",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2023",
+   "estEnd": "Fall 2024",
+   "blocks": 40
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 64",
+   "jo": "10037782",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Winter 2024",
+   "estEnd": "Spring 2025",
+   "blocks": 39
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 66 and Sewer Replacement",
+   "jo": "10037789",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2024",
+   "estEnd": "Summer 2025",
+   "blocks": 52
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 67A",
+   "jo": "10037804",
+   "phase": "Complete",
+   "projectedYear": "FY24-25",
+   "estStart": "Spring 2024",
+   "estEnd": "Fall 2025",
+   "blocks": 19
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 67B Sewer Replacement and Overhead Contact System Local Isolation",
+   "jo": "10040039",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2025",
+   "estEnd": "Summer 2026",
+   "blocks": 52
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 68",
+   "jo": "10037805",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2024",
+   "estEnd": "Fall 2026",
+   "blocks": 56
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 69",
+   "jo": "10038032",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2025",
+   "estEnd": "Fall 2027",
+   "blocks": 77
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 70",
+   "jo": "10038028",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2026",
+   "estEnd": "Spring 2026",
+   "blocks": 29
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 71A",
+   "jo": "10037891",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2025",
+   "estEnd": "Winter 2027",
+   "blocks": 59
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 73",
+   "jo": "10038031",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2025",
+   "estEnd": "Fall 2025",
+   "blocks": 32
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 74 and Sewer Replacement",
+   "jo": "10038847",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2025",
+   "estEnd": "Winter 2025",
+   "blocks": 48
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 75",
+   "jo": "10037892",
+   "phase": "Complete",
+   "projectedYear": "FY25-26",
+   "estStart": "Fall 2024",
+   "estEnd": "Fall 2025",
+   "blocks": 25
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 77",
+   "jo": "10039158",
+   "phase": "Under Construction",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2026",
+   "estEnd": "Summer 2027",
+   "blocks": 53
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 78",
+   "jo": "10037893",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2026",
+   "estEnd": "Summer 2027",
+   "blocks": 55
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 79",
+   "jo": "10039303",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Fall 2025",
+   "estEnd": "Summer 2026",
+   "blocks": 30
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 80 and Sewer Replacement",
+   "jo": "10037894",
+   "phase": "Under Construction",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2026",
+   "estEnd": "Spring 2027",
+   "blocks": 53
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 81 and Sewer Replacement",
+   "jo": "10040068",
+   "phase": "Complete",
+   "projectedYear": "FY26-27",
+   "estStart": "Winter 2026",
+   "estEnd": "Spring 2027",
+   "blocks": 70
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 82",
+   "jo": "10037895",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Fall 2026",
+   "estEnd": "Winter 2028",
+   "blocks": 44
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 85",
+   "jo": "10040070",
+   "phase": "Under Construction",
+   "projectedYear": "FY25-26",
+   "estStart": "Spring 2026",
+   "estEnd": "Winter 2027",
+   "blocks": 35
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 86A",
+   "jo": "10040535",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Fall 2027",
+   "estEnd": "Fall 2028",
+   "blocks": 38
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 86B",
+   "jo": "10042717",
+   "phase": "Planning",
+   "projectedYear": "FY29-30",
+   "estStart": "Fall 2030",
+   "estEnd": "Winter 2032",
+   "blocks": 47
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 87",
+   "jo": "10040458",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Spring 2027",
+   "estEnd": "Spring 2028",
+   "blocks": 50
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 89",
+   "jo": "10040593",
+   "phase": "Planning",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2027",
+   "estEnd": "Spring 2028",
+   "blocks": 76
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 90",
+   "jo": "10040417",
+   "phase": "Under Construction",
+   "projectedYear": "FY25-26",
+   "estStart": "Summer 2026",
+   "estEnd": "Fall 2027",
+   "blocks": 62
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 92",
+   "jo": "10040587",
+   "phase": "Planning",
+   "projectedYear": "FY26-27",
+   "estStart": "Spring 2027",
+   "estEnd": "Summer 2028",
+   "blocks": 57
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No 99",
+   "jo": "10042726",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Spring 2028",
+   "estEnd": "Summer 2030",
+   "blocks": 88
+  },
+  {
+   "contract": "Various Locations Pavement Renovation No13 And Sewer Replacement",
+   "jo": "1444J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Winter 2010",
+   "estEnd": "Fall 2011",
+   "blocks": 44
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Under Overhead Contact System No 1",
+   "jo": "10041178",
+   "phase": "Planning",
+   "projectedYear": "FY27-28",
+   "estStart": "Winter 2028",
+   "estEnd": "Spring 2030",
+   "blocks": 56
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Under Overhead Contact System No 2",
+   "jo": "10042206",
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Winter 2033",
+   "estEnd": "Spring 2034",
+   "blocks": 70
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Under Overhead Contact System No 3",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Winter 2034",
+   "estEnd": "Spring 2035",
+   "blocks": 66
+  },
+  {
+   "contract": "Various Locations Pavement Renovation Under Overhead Contact System No 4",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY33-34",
+   "estStart": "Winter 2035",
+   "estEnd": "Spring 2036",
+   "blocks": 51
+  },
+  {
+   "contract": "Various Locations Pavement Renovation X",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Winter 2034",
+   "estEnd": "Winter 2035",
+   "blocks": 42
+  },
+  {
+   "contract": "Various Locations Pavement Renovation with Tracks No 1",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY31-32",
+   "estStart": "Spring 2032",
+   "estEnd": "Summer 2033",
+   "blocks": 21
+  },
+  {
+   "contract": "Various Locations Pavement Renovation with Tracks No 2",
+   "jo": null,
+   "phase": "Planning",
+   "projectedYear": "FY32-33",
+   "estStart": "Spring 2033",
+   "estEnd": "Summer 2034",
+   "blocks": 3
+  },
+  {
+   "contract": "Various Locations Slurry Sealing 2011 Contract No 1",
+   "jo": "1779J",
+   "phase": "Complete",
+   "projectedYear": "FY11-12",
+   "estStart": "Fall 2011",
+   "estEnd": "Fall 2011",
+   "blocks": 65
+  },
+  {
+   "contract": "Various Locations Slurry Sealing 2011 Contract No 2",
+   "jo": "1894J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Summer 2012",
+   "estEnd": "Fall 2012",
+   "blocks": 38
+  },
+  {
+   "contract": "Various Locations Slurry Sealing 2012 Contract No 1",
+   "jo": "1964J",
+   "phase": "Complete",
+   "projectedYear": "FY12-13",
+   "estStart": "Fall 2012",
+   "estEnd": "Winter 2012",
+   "blocks": 352
+  },
+  {
+   "contract": "Waller, Sanchez, and Steiner Streets Pavement Renovation",
+   "jo": "1679J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Fall 2010",
+   "blocks": 18
+  },
+  {
+   "contract": "Williams Avenue Pavement Renovation",
+   "jo": "1573J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Summer 2010",
+   "estEnd": "Fall 2010",
+   "blocks": 19
+  },
+  {
+   "contract": "Woodside Ave and OShaughnessy Pavement Renovation",
+   "jo": "1639J",
+   "phase": "Complete",
+   "projectedYear": "FY10-11",
+   "estStart": "Winter 2010",
+   "estEnd": "Summer 2011",
+   "blocks": 25
+  }
+ ]
+}

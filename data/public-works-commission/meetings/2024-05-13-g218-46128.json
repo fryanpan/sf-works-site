@@ -1,0 +1,68 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2024-05-13",
+ "id": "g218-46128",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=46128",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the April 22, 2024 Meeting of the Public Works Commission Minutes"
+  },
+  {
+   "no": "4b",
+   "title": "Bureau of Street-use and Mapping Permitting and Inspections Software Licensing Agreement – Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Capital Project Update – Minnesota Streetscape Presentation"
+  },
+  {
+   "no": "6",
+   "title": "Capital Project Update – Castro Station Elevator Renovation Presentation Closed Session"
+  },
+  {
+   "no": "10",
+   "title": "New Business Initiated by Commissioners Informational"
+  },
+  {
+   "no": "7",
+   "title": "Closed Session - Conference with legal counsel regarding existing litigation"
+  },
+  {
+   "no": "8",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "9",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "General Public Comment – Continued from Item 3 if necessary Adjournment"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

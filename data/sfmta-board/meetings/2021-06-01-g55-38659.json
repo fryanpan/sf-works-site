@@ -1,0 +1,112 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2021-06-01",
+ "id": "g55-38659",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=38659",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/24308"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - May 18, 2021 Regular Meeting",
+   "decision": "APPROVED"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Update on Vision Zero"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Update on Human Resources"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report - Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "Consent Calendar",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA",
+   "text": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claims against the SFMTA: A. Mulan Lei vs. CCSF, Superior Ct. #CGC20584561 filed on 5/26/20 for $45,000 (Explanatory documents include a resolution.) RESOLUTION 210601-072",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 210601-072)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving the following parking and traffic modifications",
+   "text": "Approving the following parking and traffic modifications: A. ESTABLISH – TOW-AWAY NO STOPPING ANYTIME, Northridge Road, south side, from Harbor Road west property line to 95 feet easterly. B. ESTABLISH – TOW-AWAY NO STOPPING ANYTIME, Kirkwood Avenue, south side, from La Salle Avenue to Nautilus Court. C. ESTABLISH – CLASS 2 BIKE LANE, Geneva Avenue, both directions, between Prague Street and Brookdale Avenue. D. ESTABLISH – TOW-AWAY NO PARKING ANYTIME, Kimball Place, west side, from 64 feet to 86 feet south of Sacramento Street. E. ESTABLISH – 4-HOUR TIME LIMIT, 8 AM TO 6 PM, MONDAY THROUGH FRIDAY, Egbert Avenue, north side, from Ingalls Street to 300 feet southerly. F. RESCIND – TOW-AWAY, NO STOPPING EXCEPT PERMITTED CAR SHARE, Post Street, north side, from Franklin Street to 22 feet westerly. G. ESTABLISH – RED ZONE, Post Street, north side, from Franklin Street to 22 feet westerly. H. ESTABLISH – TOW-AWAY, NO STOPPING EXCEPT PERMITTED CAR SHARE, Post Street, north side, from Franklin Street, 43 feet to 64 feet westerly. I. ESTABLISH – RED ZONES, Sutter Street, north side, from 8 feet to 29 feet east of Polk, Street, Willow Street, south side, from Polk Street to 24 feet east, Ellis Street, north side, from 12 feet to 33 feet east of Polk Street, Hemlock Street, south side, from 4 feet to 25 feet west of Polk Street. (Explanatory documents include a staff report and resolution. For every parking and traffic modification that received a categorical exemption, the proposed a",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 210601-073)"
+  },
+  {
+   "no": "10.3",
+   "title": "Finding that Mary Street, between Minna and Mission streets, is no longer needed for motor vehicle traffic pursuant to California Vehicle Code Section 21102.1, except for bicycles and emergency vehicles, because it is necessary for the safety, health and well-being of vulnerable pedestrians and to improve traffic in the vicinity; approving permanent closure of Mary Street, between Minna and Mission streets, to motor vehicle traffic except for bicycles and emergency vehicles, and parking and traffic modifications, as set forth in Items A through C below, to improve safety, expand public open sp",
+   "text": "Finding that Mary Street, between Minna and Mission streets, is no longer needed for motor vehicle traffic pursuant to California Vehicle Code Section 21102.1, except for bicycles and emergency vehicles, because it is necessary for the safety, health and well-being of vulnerable pedestrians and to improve traffic in the vicinity; approving permanent closure of Mary Street, between Minna and Mission streets, to motor vehicle traffic except for bicycles and emergency vehicles, and parking and traffic modifications, as set forth in Items A through C below, to improve safety, expand public open space, and create a vibrant pedestrian connector linking Mary Court to Mission Street and Mint Plaza; and making environmental review findings: A. ESTABLISH – ROAD CLOSURE, EXCEPT PEDESTRIANS, BICYCLES, and EMERGENCY VEHICLES – Mary Street, from Minna Street to Mission Street. B. ESTABLISH – LEFT TURN ONLY – Mary Street, northbound, at Minna Street. C. ESTABLISH – TOW-AWAY, NO STOPPING ANYTIME – 5th Street, west side, Natoma Street to 140 feet southerly. (Explanatory documents include a staff report and resolution.) RESOLUTION 210601-074 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 6 ayes (Resolution 210601-074)"
+  },
+  {
+   "no": "11",
+   "title": "Embarcadero Enhancement Program and Central Embarcadero Safety Project"
+  },
+  {
+   "no": "12",
+   "title": "Discussion and vote as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "13",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "14",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

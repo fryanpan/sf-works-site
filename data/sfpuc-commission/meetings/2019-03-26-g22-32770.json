@@ -1,0 +1,116 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2019-03-26",
+ "id": "g22-32770",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=32770",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of March 12, 2019"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Other Commission Business"
+  },
+  {
+   "no": "7",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "8",
+   "title": "SFGreascycle Program Update"
+  },
+  {
+   "no": "9",
+   "title": "Bay Area Water Supply & Conservation Agency Update"
+  },
+  {
+   "no": "10a",
+   "title": "Approve Amendment No. 4 to Agreement No. CS-224.A, System Integration and Support Services – Related to Project Controls, with MLok Consulting, Inc., to provide continued specialized system integration and support services"
+  },
+  {
+   "no": "10b",
+   "title": "Approve Amendment No. 1 to Agreement No. CS-350, Living Machine Equipment and Software Maintenance Agreement with Aqua Nova Engineering, PLC, to continue providing equipment and software maintenance services"
+  },
+  {
+   "no": "10c",
+   "title": "Approve Modification No. 1 to Job Order Contract, JOC-66, General Engineering (A-License), for San Joaquin, Stanislaus and Tuolumne Counties, with Sinclair General Engineering Construction, Inc."
+  },
+  {
+   "no": "10d",
+   "title": "Approve Amendment No. 1 to Agreement No. PRO.0004.A with Hazen and Sawyer, and Agreement No. PRO.0004.B with RMC-SRT, JV, As-Needed Wastewater Process Engineering Services"
+  },
+  {
+   "no": "11",
+   "title": "Adopt a resolution regarding the San Francisco Public Utilities Commission’s participation in negotiations with State agencies and stakeholders for a voluntary agreement"
+  },
+  {
+   "no": "12",
+   "title": "Memorandum of Agreement with the United States Department of the Interior, National Park Service, to fund comprehensive management, collaborative environmental stewardship, and security for the Watersheds"
+  },
+  {
+   "no": "13",
+   "title": "Memorandum of Understanding with the Treasure Island Development Authority setting forth the terms and conditions for the SFPUC to continue to provide utility services for Naval Station Treasure Island"
+  },
+  {
+   "no": "14",
+   "title": "Authorize the General Manager to negotiate and execute a Cost Share Agreement"
+  },
+  {
+   "no": "15",
+   "title": "Authorize the General Manager to execute a Memorandum of Understanding with the San Francisco Recreation and Park Department"
+  },
+  {
+   "no": "16",
+   "title": "Public Comment"
+  },
+  {
+   "no": "17",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel"
+  },
+  {
+   "no": "18",
+   "title": "Conference with Legal Counsel"
+  },
+  {
+   "no": "19",
+   "title": "Announcement Following Closed Session"
+  },
+  {
+   "no": "20",
+   "title": "Motion regarding whether to disclose the discussions during Closed Sessionpursuant to San Francisco Administrative Code Section 67.12 (a)"
+  },
+  {
+   "no": "21",
+   "title": "Other New Business"
+  },
+  {
+   "no": "22",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

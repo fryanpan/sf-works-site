@@ -1,0 +1,84 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-02-26",
+ "id": "g218-51884",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51884",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the February 12, 2026 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "4b",
+   "title": "Various Locations Pavement Renovation No. 77 and Sewer Replacement – Contract Award"
+  },
+  {
+   "no": "4c",
+   "title": "Audio/Visual, Telecom, IT, Security, and Consultation Services No. 1, Contract ID 1000028920 – Contract Modification"
+  },
+  {
+   "no": "4d",
+   "title": "As-Needed Audio/Visual, Telecom, IT, Security, and Acoustical Design, Contract ID 1000028919 – Contract Modification"
+  },
+  {
+   "no": "4e",
+   "title": "Zuckerberg San Francisco General Building 5 Cargo Elevator Modernization – Contract Award"
+  },
+  {
+   "no": "4f",
+   "title": "Zuckerberg San Francisco General Building 5 Family Health Center Relocation Phase 1 5C 5E Demolition – Contract No. 1000034501"
+  },
+  {
+   "no": "4g",
+   "title": "San Francisco City Hall Elevator Modernization Project - Contract No. 1000027204 - Contract Modification"
+  },
+  {
+   "no": "5",
+   "title": "Powell Street Improvement Project CM/GC - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "7",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "8",
+   "title": "Closed Session"
+  },
+  {
+   "no": "9",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "10",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

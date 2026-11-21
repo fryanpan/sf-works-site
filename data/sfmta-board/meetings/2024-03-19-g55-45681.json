@@ -1,0 +1,138 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2024-03-19",
+ "id": "g55-45681",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=45681",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/30004"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes - March 5, 2024, Regular Meeting",
+   "decision": "ADOPTED — 6 ayes"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report (For discussion only)"
+  },
+  {
+   "no": "7a",
+   "title": "Legislative Updates"
+  },
+  {
+   "no": "7b",
+   "title": "Transit Appreciation Day"
+  },
+  {
+   "no": "7c",
+   "title": "Ongoing Activities"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-023)"
+  },
+  {
+   "no": "10.1",
+   "title": "Requesting the Controller to allot funds and to draw warrants against such funds available or will be available in payment of the following claim against the SFMTA:",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-023)"
+  },
+  {
+   "no": "10.1a",
+   "title": "Lucy Brindley v. CCSF, Superior Ct. Case No. CGC-22-601422 filed 08/25/22 for $20,000. Lawsuit involving allegations of personal injury from operator negligence",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-023)"
+  },
+  {
+   "no": "10.1b",
+   "title": "Jorge Mujica, et al. v. John Doe-I, et al., Superior Ct. Case No. CGC-22-602150 filed 10/14/2022 for $58,000. Lawsuit involving allegations of personal injury from operator negligence",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-023)"
+  },
+  {
+   "no": "10.2",
+   "title": "Approving various routine parking and traffic modifications: (The Planning Department has found that Items A-E are exempt from the California Environmental Quality Act",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-024)"
+  },
+  {
+   "no": "10.3",
+   "title": "Approving various Roadway Shared Spaces street closures: (1) Harlan Place between Grant Avenue and Mark Lane",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-025)"
+  },
+  {
+   "no": "10.4",
+   "title": "Delegating to the Director of Transportation authority to request the Board of Supervisors’ approval of SFMTA Surveillance Technology Policies required under Administrative Code Section 19B.2",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-026)"
+  },
+  {
+   "no": "11",
+   "title": "REGULAR CALENDAR - Approving a Roadway Shared Spaces closure of Via Bufano from Columbus Avenue to 75-feet northerly",
+   "decision": "ADOPTED — 5 ayes, 1 nay (Resolution 240319-027)"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion on the Fiscal Year 2024-2025 and Fiscal Year 2025-2026 Operating and Capital Budget"
+  },
+  {
+   "no": "14",
+   "title": "Authorizing the SFMTA to use a design-build-operate-maintain (DBOM) delivery method for the implementation of the Automated Speed Enforcement Project",
+   "decision": "ADOPTED — 6 ayes (Resolution 240319-029)"
+  },
+  {
+   "no": "13",
+   "title": "Amending Transportation Code, Division II, Articles 300 and 900 to establish base fees and fines as those in effect March 19, 2024",
+   "decision": "ADOPTED — 5 ayes (Resolution 240319-028)"
+  },
+  {
+   "no": "15",
+   "title": "Discussion and vote closed session conference with designated representatives",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "16",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "17",
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 4 ayes"
+  },
+  {
+   "no": "18",
+   "title": "ADJOURN"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

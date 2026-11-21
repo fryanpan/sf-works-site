@@ -1,0 +1,18 @@
+{
+ "month": "2025-05",
+ "own_timepoints": true,
+ "stop_pairs_with_distance": 1.0,
+ "obs_clean": 9877597,
+ "timepoints_scheduled": 1425733,
+ "timepoints_observed": 1411194,
+ "seg_both_ends": 1141427,
+ "seg_one_end_missing": 8239,
+ "seg_no_distance": 0,
+ "seg_out_of_bounds": 1254,
+ "seg_excluded_outage": 202,
+ "seg_kept": 1139971,
+ "trips_observed": 274135,
+ "trips_both_ends": 242231,
+ "trips_both_ends_under_75pct": 394,
+ "trips_kept": 241525
+}

@@ -1,0 +1,195 @@
+{
+  "note": "SFUSD instructional calendars, TK-12 school sites, typed by hand from the district's published calendars on 2026-10-01. 'closed' lists weekday dates with no instruction between the first and last instructional day: holidays, recesses, and the 2026 strike. Ranges are inclusive. tools/school-trips/school-hour-crashes.py counts instructional days from this file and checks the count against 'days_expected' where the calendar states one.",
+  "years": [
+    {
+      "year": "2022-23",
+      "first": "2022-08-17",
+      "last": "2023-06-02",
+      "source": "https://www.sfusd.edu/sites/default/files/2023-01/2022-2023%20ACADEMIC%20CALENDAR.pdf",
+      "read": "2026-10-01",
+      "closed": [
+        [
+          "2022-09-05"
+        ],
+        [
+          "2022-10-10"
+        ],
+        [
+          "2022-11-11"
+        ],
+        [
+          "2022-11-21",
+          "2022-11-25"
+        ],
+        [
+          "2022-12-19",
+          "2022-12-30"
+        ],
+        [
+          "2023-01-02"
+        ],
+        [
+          "2023-01-16"
+        ],
+        [
+          "2023-01-23"
+        ],
+        [
+          "2023-02-20"
+        ],
+        [
+          "2023-03-27",
+          "2023-03-31"
+        ],
+        [
+          "2023-05-29"
+        ]
+      ],
+      "days_expected": null
+    },
+    {
+      "year": "2023-24",
+      "first": "2023-08-16",
+      "last": "2024-06-04",
+      "source": "https://www.sfusd.edu/sites/default/files/2023-08/2023-24%20academic%20calendar.pdf",
+      "read": "2026-10-01",
+      "closed": [
+        [
+          "2023-09-04"
+        ],
+        [
+          "2023-10-09"
+        ],
+        [
+          "2023-11-10"
+        ],
+        [
+          "2023-11-20",
+          "2023-11-24"
+        ],
+        [
+          "2023-12-22",
+          "2024-01-05"
+        ],
+        [
+          "2024-01-15"
+        ],
+        [
+          "2024-02-09"
+        ],
+        [
+          "2024-02-19"
+        ],
+        [
+          "2024-04-01"
+        ],
+        [
+          "2024-04-08",
+          "2024-04-12"
+        ],
+        [
+          "2024-05-24"
+        ],
+        [
+          "2024-05-27"
+        ]
+      ],
+      "days_expected": 180,
+      "caveat": "The calendar prints César Chávez Day as 4/1/2022; read as 2024-04-01, the Monday it falls on in this school year. It prints the fall break as 11/20-11/24 for school sites and 11/22-11/24 for early-education sites; the school-site dates are used. May 24, 2024 (school sites closed) is from the instructional calendar; the academic calendar does not list it.",
+      "source_instructional": "https://www.sfusd.edu/sites/default/files/2023-03/UPDATED%20-%20SFUSD%20Instructional%20Calendar%202023-2024.pdf"
+    },
+    {
+      "year": "2024-25",
+      "first": "2024-08-19",
+      "last": "2025-06-04",
+      "source": "https://www.sfusd.edu/sites/default/files/2024-01/ENGLISH%20%5BAPPROVED%5D%20SFUSD%202024-25%20SY%20Calendars%20-%20Google%20Sheets.pdf",
+      "read": "2026-10-01",
+      "closed": [
+        [
+          "2024-09-02"
+        ],
+        [
+          "2024-10-14"
+        ],
+        [
+          "2024-11-11"
+        ],
+        [
+          "2024-11-25",
+          "2024-11-29"
+        ],
+        [
+          "2024-12-23",
+          "2025-01-03"
+        ],
+        [
+          "2025-01-20"
+        ],
+        [
+          "2025-01-29"
+        ],
+        [
+          "2025-02-17"
+        ],
+        [
+          "2025-03-28",
+          "2025-04-04"
+        ],
+        [
+          "2025-05-26"
+        ]
+      ],
+      "days_expected": 180
+    },
+    {
+      "year": "2025-26",
+      "first": "2025-08-18",
+      "last": "2026-06-10",
+      "source": "https://drive.google.com/file/d/1Zu3XmotsMkdDtc6PuIwe9fsu-NsGSqn0/view",
+      "source_changes": "https://www.sfusd.edu/announcements/2026-04-02-board-education-approves-academic-calendar-changes-2025-26",
+      "source_strike": "https://missionlocal.org/2026/03/sfusd-schools-five-day-extension/",
+      "read": "2026-10-01",
+      "closed": [
+        [
+          "2025-09-01"
+        ],
+        [
+          "2025-10-13"
+        ],
+        [
+          "2025-11-11"
+        ],
+        [
+          "2025-11-24",
+          "2025-11-28"
+        ],
+        [
+          "2025-12-22",
+          "2026-01-02"
+        ],
+        [
+          "2026-01-19"
+        ],
+        [
+          "2026-02-09",
+          "2026-02-13"
+        ],
+        [
+          "2026-02-16"
+        ],
+        [
+          "2026-02-17"
+        ],
+        [
+          "2026-03-27",
+          "2026-04-03"
+        ],
+        [
+          "2026-05-25"
+        ]
+      ],
+      "days_expected": 180,
+      "caveat": "The published calendar ends spring instruction on June 3. The Board moved the last day to June 10, 2026 to make up five days lost to the February strike (SFUSD announcement, 2026-04-02). SFUSD's announcements do not give the strike dates; February 9-13 is from Mission Local and the SF Standard and is unverified against a district document."
+    }
+  ]
+}

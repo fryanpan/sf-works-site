@@ -1,0 +1,188 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2021-05-11",
+ "id": "g22-38501",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=38501",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/May%2011%20Approved%20Minutes.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Advance Calendar"
+  },
+  {
+   "no": "5b",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5c",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5d",
+   "title": "2009 Water Supply Agreement Updatee) Annual SuperGreen Multi-Year Service Agreement Customer Update"
+  },
+  {
+   "no": "5f",
+   "title": "Water System Improvement Program Status of Construction Change Orders"
+  },
+  {
+   "no": "5g",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "7",
+   "title": "New Commission Business",
+   "decision": "removed",
+   "text": "New Commission Business None. The Commission Secretary stated that she was contacted by Mr. Ali Altaha ahead of the meeting and that he requested Consent items 8a, b, e, and f be removed from the Consent Calendar for discussion"
+  },
+  {
+   "no": "8",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "8a",
+   "title": "Accept work performed by Mountain Methods, Inc. for Contract No. HH-1001, Moccasin Reservoir Perimeter Security Fence; approve Modification No. 6 (Final), decreasing the contract amount by $135,872, for a total contract amount of $1,626,886, with no change to the agreement duration of 272 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0072",
+   "from": "minutes"
+  },
+  {
+   "no": "8b",
+   "title": "Accept work performed by Western Water Constructors, Inc., for Contract No. WD-2621R, San Francisco Groundwater Supply Well Stations; approve Modification No. 11 (Final), increasing the contract duration by 425 consecutive calendar days with no change in contract amount, for a total contract duration of 2,208 consecutive calendar days and a total contract amount of $16,450,107; and authorize final payment to the contractor",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0073",
+   "from": "minutes"
+  },
+  {
+   "no": "8c",
+   "title": "Approve increase of $100,000 to the contract cost contingency, and increase of 70 calendar days to the contract duration contingency, for Contract No. WD- 2692, 16-Inch And 8-Inch Ductile Iron Water Main Installation, Sewer Replacement on Geary Boulevard From 32nd to 48th Avenues; and authorize the General Manager to approve future modifications to the contract for a total contract amount of up to $10,270,403 and a total contract duration of up to 889 consecutive calendar days",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0069",
+   "from": "minutes"
+  },
+  {
+   "no": "8d",
+   "title": "Approve an increase of 173 calendar days to the existing duration contingency for Contract No. WD-2819, As-Needed Water Main Replacement at Various Locations, No. 2; and authorize the General Manager to approve future modifications to the contract for a total contract duration of up to 1,377 consecutive calendar days, with no change in the contract amount",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0070",
+   "from": "minutes"
+  },
+  {
+   "no": "8e",
+   "title": "Accept work performed by Western Water Constructors, Inc. Contract No. WW- 613, Southeast Water Pollution Control Plant (SEP) Building 521/522 and Disinfection Upgrades; approve Modification No. 13, increasing the contract amount by $82,175 for a total contract amount of $30,452,647, and increasing the contract duration by 122 consecutive calendar days for a total contract duration of 1,608 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0074",
+   "from": "minutes"
+  },
+  {
+   "no": "8f",
+   "title": "Approve the plans and specifications, and award Contract No. WW-712, New Montgomery, Jessie, Minna, and Mission Streets Brick Sewer Rehabilitation, in the amount of $4,888,750, and with a duration of 390 consecutive calendar days, to the responsible bidder submitting the lowest responsive bid, D’Arcy & Harty Construction, Inc., to rehabilitate existing large-diameter sewers and associated appurtenances on various streets in downtown San Francisco, including New Montgomery, Jessie, Minna, and Mission Streets. This action constitutes the Approval Action for the project for the purposes of CEQA, pursuant to Section 31.04(h) of the San Francisco Administrative Code",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0075",
+   "from": "minutes"
+  },
+  {
+   "no": "8g",
+   "title": "Accept work performed by Western Water Contractors Inc. Contract No. WW- 651, Griffith Pump Station Improvements; approve Modification No. 14 (final) decreasing the contract amount by $55,571, for a total contract amount of $11,977,669, and increasing the contract duration by 59 consecutive calendar days, for a total contract duration of 1,200 consecutive calendar days; and authorize final payment to the contractor",
+   "parent": "Consent Calendar",
+   "decision": "approve Consent Calendar items 8c, 8d, and 8g",
+   "resolution": "21-0071",
+   "from": "minutes"
+  },
+  {
+   "no": "9",
+   "title": "Discussion only of the status and options regarding the selection process for the SFPUC General Manager position",
+   "text": "Discussion only of the status and options regarding the selection process for the SFPUC General Manager (GM) position, and possible direction by the Commission regarding that process. President Maxwell stated that she is proud to be part of the leadership at the SFPUC. She noted that leadership starts at the top with the Mayor, but that it is throughout. She indicated the SFPUC is a premier utility recognized around the country. She stated the WSIP, SSIP and other SFPUC programs demonstrate leadership. She stated the SFPUC has a high AA bond rating, that the SFPUC has good fiscal responsibility, and has good people who do good and important work and that is leadership. She indicated that the SFPUC serves 2.7 million customers every day and that is leadership. She recognized the leadership of the City Attorneys who assist the SFPUC. She thanked everyone for their leadership. President Maxwell provided an update as to the status of the GM recruitment process. She stated that Harlan Kelly resigned in November and at that time the Mayor appointed Michael Carlin as Acting GM. She said that the City’s Department of Human Resources (DHR) began working with the Commission on the GM recruitment process so there was no conflict of interest for any internal candidates. At the January 26, 2021"
+  },
+  {
+   "no": "10",
+   "title": "Approve the form of, and authorize the General Manager to execute multiple documents constituting a credit facility agreement",
+   "decision": "approve Item 10",
+   "resolution": "21-0076",
+   "text": "Approve the form of, and authorize the General Manager to execute multiple documents constituting a credit facility agreement in the principal amount not-to- exceed $100 million with Sumitomo Mitsui Banking Corporation to replace an expiring agreement of the Water Interim Funding Program that provides interim funding for the Water Enterprise capital program, with an initial term of four years and an initial annual fee of $359,700, and a three-year option to extend the agreement for a total term of up to seven years and an annual fee not to exceed $800,000. Rich Morales, Debt Manager, began with a background of the Water Enterprise Interim Funding Program, noting it is a low-cost interim funding Capital Program with a 1% borrowing rate. 500M is authorized - three series ($400M) for Commercial Paper and one series ($100M) for revolving credit line, and that $100M Series A-1/A-1-T Bank of America facility is expiring on May 19, 2021. He indicated the action requested of the Commission is to approve the new facility which will replace the expiring facility and that the transaction is included in the 2020-21 Capital Financial Plan. Mr. Morales stated there was a competitive RFP procurement sent to 12 banks with six responses. He stated staff recommends $100M Sumitomo Mitsui Bank (SMBC), indicating a $54,500 annual savings to ratepayers with $218,000 over the term. He indicated that SMBC also provides $200M LOC for Series A-2/A-2-T and that bank concentration is no anticipated to b"
+  },
+  {
+   "no": "11",
+   "title": "ApproveProject No. CUW2751801, Southern Skyline Blvd",
+   "decision": "approve Item 11",
+   "resolution": "21-0077",
+   "text": "Approve Project No. CUW2751801, Southern Skyline Blvd. Ridge Trail Extension (Project); adopt the required California Environmental Quality Act Findings, including a Statement of Overriding Considerations, and the Mitigation Monitoring and Reporting Program for the Project; authorize the General Manager to implement the Project in compliance with the Charter and applicable law; and authorize the General Manager to execute an agreement transferring to the City, at no cost, an easement through Skylawn Memorial Park currently held by the Bay Area Ridge Trail Council subject to Board of Supervisors approval of acceptance of the easement. This action constitutes the Approval Action for the project for the purposes of CEQA, pursuant to Section 31.04(h) of the San Francisco Administrative Code. Mary Tienken, Project Manager, began her presentation with a review of the SFPUC Peninsula Watershed Trails, and the proposed project trails. She stated the proposed project: North of Route 92: new half mile universal access loop trail, with a 50-car parking lot, one restroom, transfer of public trail easement through Skylawn Cemetery. Operation is supervised (docent) access; South of Route 92: new six-mile trail, 20-car parking lot, two restrooms. Operation is unsupervised with restricted access (permit) along fenced southern Skyline Ridge Trail. Commissioner Harrington indicated he is a member of the Bay Area Ridge Trail and that the extension is welcomed. He stated the SFPUC has tried to n"
+  },
+  {
+   "no": "12",
+   "title": "Approve the plans and specifications, and award Contract No. DB-121R2",
+   "decision": "approve Item 12",
+   "resolution": "21-0078",
+   "text": "Approve the plans and specifications, and award Contract No. DB-121R2, Moccasin Powerhouse Generator Rehabilitation, in the amount of $26,271,805, and with a duration of 1,093 consecutive calendar days, to GE Renewable US LLC to rehabilitate two vertical shaft synchronous hydro generators at the Moccasin Powerhouse, subject to Board of Supervisors approval of a negotiated comparative fault contractual indemnification provision in accordance with the requirements of Section 6.22(c) of the Administrative Code. Greg Lyman, Construction Contract Manager, introduced the item noting it is subject to Board of Supervisors’ approval, subject to Section 6.22(c) of the Administrative Code. Mr. Lyman reviewed elements of the project and requested approval. Mr. Lyman responded to a question from Commissioner Paulson as to what ordinances will need to be waived. He responded to a question from Commissioner Ajami as to whether the contractors provide post-installation guarantees/warranty and who maintains the system. Brief discussion ensued"
+  },
+  {
+   "no": "13",
+   "title": "Approve the plans and specifications, and award Contract No. WD-2868R",
+   "decision": "approve Item 13",
+   "resolution": "21-0079",
+   "text": "Approve the plans and specifications, and award Contract No. WD-2868R, San Francisco Local Water As-Needed Paving (FY 21-24), in the amount of $13,857,000, and with a duration of 1,095 consecutive calendar days to the responsive bidder submitting the lowest responsive bid, A. Ruiz Construction Co. & Assoc., Inc. Ryan Freeborn, Project Manager, introduced the item noting the current multi-year as- needed paving contract is nearing completion and the new contract is needed for a new three-year as needed paving contract. He discussed scope of work that can be performed under the contract and requested Commission approval. Mr. Freeborn responded to a question from Commissioner Ajami as to whether all of the funds in the current contract have been expended. He responded to an additional question as to whether there is communication with other departments to coordinate work that may be happening at the same time. Acting GM Carlin noted that such work is coordinated city-wide. Commissioner Paulson discussed the existence of such coordination but noted that it can be complicated"
+  },
+  {
+   "no": "14",
+   "title": "Public comment on matters to be addressed during Closed Session"
+  },
+  {
+   "no": "15",
+   "title": "Motion on whether to assert the attorney-client privilege regarding the matters listed below as Conference with Legal Counsel",
+   "decision": "assert the attorney-client privilege"
+  },
+  {
+   "no": "16",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "18",
+   "title": "Announcement following Closed Session",
+   "text": "Announcement following Closed Session. President Maxwell announced that no action was taken during Closed Session"
+  },
+  {
+   "no": "19",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session",
+   "decision": "not to disclose discussions",
+   "text": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

@@ -1,0 +1,80 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-03-03",
+ "id": "g55-35350",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=35350",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/21478"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Approval of Minutes -February 18, 2020 Regular Meeting"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "6",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "7",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "8",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "9",
+   "title": "Public Comment"
+  },
+  {
+   "no": "10",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 6 ayes, 1 nay"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving the following traffic modifications",
+   "text": "Approving the following traffic modifications: A. ESTABLISH – NO PARKING ANYTIME ― Hawes Street, east side, between Fitzgerald Avenue and Egbert Avenue. B. RESCIND – TOW-AWAY, NO PARKING ANYTIME ― ESTABLISH – TOW-AWAY, NO STOPPING ANYTIME, Daniel Burnham Court, both sides, between Franklin Street and Van Ness Avenue C. ESTABLISH – CROSSWALK CLOSURE ― Diamond Heights Boulevard at Berkeley Way (E), north leg. D. ESTABLISH – NO PARKING, 12:01 AM TO 6 AM, EVERYDAY ― Hilton Street, east side, from Cortland Avenue to 240 feet southerly. E. ESTABLISH – NO PARKING ANY TIME ― Dewey Boulevard, south side, from Dewey Circle to 55 feet easterly, Dewey Boulevard, north side, from Pacheco Street to 49 feet westerly, Dewey Boulevard, south side, from 15 feet to 45 feet west of Pacheco Street, Dewey Boulevard, north side, from 15 feet to 55 feet east of Pacheco Street, Dewey Boulevard, south side, from Pacheco Street to 39 feet easterly. F. RESCIND – TOW ― AWAY, NO PARKING, 10 PM TO 6 AM, EVERYDAY ― ESTABLISH – 45 DEGREE ANGLE PARKING, Alemany Boulevard, north side, between Sagamore Street and Habitat Terrace. G. ESTABLISH ― TOW-AWAY, NO STOPPING ANYTIME, Alemany Boulevard, north side, between Habitat Terrace and Crystal Street. H. RESCIND – NO PARKING VEHICLES OVER 6 FEET ― Sanchez Street, west side, from Alvarado Street to 89 feet northerly, Sanchez Street, west side, from Alvarado Street to 95 feet southerly. I. ESTABLISH – RED ZONE – Sanchez Street, west side, from Alvarado Street to 12 ",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "severed": true,
+   "decision": "ADOPTED — 6 ayes, 1 nay (Resolution 200303-025)"
+  },
+  {
+   "no": "11",
+   "title": "Amending Transportation Code, to designate new transit-only lanes on Powell Street/parking and traffic modifications along Powell St between Ellis St and Geary St",
+   "decision": "ADOPTED — 7 ayes"
+  },
+  {
+   "no": "12",
+   "title": "Presentation and discussion regarding transit service"
+  },
+  {
+   "no": "13",
+   "title": "Presentation and discussion regarding changes to various rates, fees, charges, and fines in the Fiscal Year 2021 and FY 2022 SFMTA Operating Budget"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

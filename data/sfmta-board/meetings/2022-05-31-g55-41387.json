@@ -1,0 +1,65 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2022-05-31",
+ "id": "g55-41387",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=41387",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/26488"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting"
+  },
+  {
+   "no": "4",
+   "title": "Director’s Report - Disclosure of labor agreements"
+  },
+  {
+   "no": "4a",
+   "title": "Director’s Report - Disclosure of labor agreements; Transport Workers’ Union (TWU), Local 250-A (9163 Transit Operators)"
+  },
+  {
+   "no": "4b",
+   "title": "Director’s Report - Disclosure of labor agreements; Transport Workers’ Union (TWU), Local 250-A (9132 Transit Fare Inspectors)"
+  },
+  {
+   "no": "4c",
+   "title": "Director’s Report - Disclosure of labor agreements; Transport Workers’ Union (TWU), Local 250-A (7410 Automotive Service Workers)"
+  },
+  {
+   "no": "4d",
+   "title": "Director’s Report - Disclosure of labor agreements; Transport Workers’ Union (TWU), Local 200"
+  },
+  {
+   "no": "4e",
+   "title": "Director’s Report - Disclosure of labor agreements; International Brotherhood of Electrical Workers (IBEW), Local 6"
+  },
+  {
+   "no": "4f",
+   "title": "Director’s Report - Disclosure of labor agreements; International Association of Machinists and Aerospace Workers (IAM), Local1414"
+  },
+  {
+   "no": "4g",
+   "title": "Director’s Report - Disclosure of labor agreements; Service Employees International Union (SEIU), Local 1021"
+  },
+  {
+   "no": "4h",
+   "title": "Director’s Report - Disclosure of labor agreements; Municipal Executives’ Association (MEA)"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

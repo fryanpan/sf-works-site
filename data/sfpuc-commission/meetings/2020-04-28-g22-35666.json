@@ -1,0 +1,124 @@
+{
+ "committee": "SFPUC Commission",
+ "date": "2020-04-28",
+ "id": "g22-35666",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=35666",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Approval of the Minutes of April 14, 2020"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Communications"
+  },
+  {
+   "no": "5a",
+   "title": "Contract Advertisement Report"
+  },
+  {
+   "no": "5b",
+   "title": "Correspondence Log"
+  },
+  {
+   "no": "5c",
+   "title": "Streetlight Program Update"
+  },
+  {
+   "no": "5d",
+   "title": "Water Supply Conditions Update"
+  },
+  {
+   "no": "6",
+   "title": "Report of the General Manager"
+  },
+  {
+   "no": "6a",
+   "title": "Update on SFPUC Operations During COVID-19 Emergency"
+  },
+  {
+   "no": "7",
+   "title": "Bay Area Water Supply and Conservation Agency Written Update"
+  },
+  {
+   "no": "8",
+   "title": "New Commission Business"
+  },
+  {
+   "no": "9",
+   "title": "CONSENT CALENDAR"
+  },
+  {
+   "no": "9a",
+   "title": "Approve Amendment No. 2 to Agreement No. PRO.0129, Construction Contract Audit and Project Consulting Services, with PMA Consultants LLC"
+  },
+  {
+   "no": "9b",
+   "title": "Approve the plans and specifications, and award Contract No. WD-2616, 8-Inch Ductile Iron Water Main Replacement in the amount of $3,701,180"
+  },
+  {
+   "no": "9c",
+   "title": "Accept work performed by M. Hernandez Construction, Inc. (dba: Hernandez Engineering), for Contract No. WD-2781, 8-inch Ductile Iron Water Main Replacement"
+  },
+  {
+   "no": "9d",
+   "title": "Approve an increase of $50,000 to the existing contract cost contingency, for Contract No. WW-611, Cutler Avenue, Lower Great Highway, Sloat Boulevard and Wawona Street Sewer Replacement"
+  },
+  {
+   "no": "9e",
+   "title": "Accept work performed by Shaw Pipeline, Inc. for Contract No. WW-629, Various Locations Sewer Replacement and Pavement Renovation No. 1"
+  },
+  {
+   "no": "9f",
+   "title": "Approve the plans and specifications, and award Contract No. WW-679, Various Locations Sewer Replacement No. 8, in the amount of $4,412,862"
+  },
+  {
+   "no": "10",
+   "title": "Approve Project No. CUW35201, Alameda Creek Recapture Project"
+  },
+  {
+   "no": "11",
+   "title": "Approve Project No. 10014227 Bay Corridor Transmission and Distribution Project; and authorize the release of the remaining $56,668,701 in funding for construction"
+  },
+  {
+   "no": "12",
+   "title": "Approve Amendment No. 1 to Agreement No. PRO.0078, Helicopter Services for Hetch Hetchy Water and Power, with A&P Helicopters, Inc"
+  },
+  {
+   "no": "13",
+   "title": "Approve the terms and conditions of and authorize the General Manager to execute a Purchase and Sale Agreement for Real Estate in the amount of $1,227,500 for the purchase of approximately 164.5 acres of agricultural la"
+  },
+  {
+   "no": "14",
+   "title": "Public Hearing: Discussion and possible action to adopt a new, optional electric generation tariff for Hetch Hetchy Power customers called a “green tariff” that qualifies as renewable energy generation under California’"
+  },
+  {
+   "no": "15",
+   "title": "Approve the award of a Green Infrastructure Grant in the amount of up to $480,958 to Lycee Francais de San Francisco (LFSF) to design, and if following completion of environmental review the project proceeds and the Commission authorizes disbursement of grant funds for construction"
+  },
+  {
+   "no": "16",
+   "title": "Adjournment"
+  }
+ ],
+ "body": "sfpuc-commission",
+ "parser": 2
+}

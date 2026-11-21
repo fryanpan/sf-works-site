@@ -1,0 +1,41 @@
+{
+  "post": "sf-bike-network",
+  "title": "SF's Biking and Rolling Plan: Will It Ever Get Built?",
+  "dashboard": "https://sf-works.org/transportation/bike/",
+  "dataRead": "2026-09-28",
+  "stylesheet": "sfw.css",
+  "blocks": [
+    {
+      "name": "map",
+      "html": "blocks/map.html",
+      "embed": "https://sf-works.org/embed/bike/map/",
+      "module": "blocks/map.js",
+      "data": "data/map.json"
+    },
+    {
+      "name": "pace-chart",
+      "html": "blocks/pace-chart.html",
+      "embed": "https://sf-works.org/embed/bike/pace-chart/"
+    },
+    {
+      "name": "goal-chart",
+      "html": "blocks/goal-chart.html",
+      "embed": "https://sf-works.org/embed/bike/goal-chart/"
+    },
+    {
+      "name": "street-work",
+      "html": "blocks/street-work.html",
+      "embed": "https://sf-works.org/embed/bike/street-work/",
+      "module": "blocks/street-work.js",
+      "data": "data/street-work.json"
+    },
+    {
+      "name": "contact-officials",
+      "html": "blocks/contact-officials.html",
+      "embed": "https://sf-works.org/embed/bike/contact-officials/",
+      "module": "blocks/contact-officials.js",
+      "data": "data/contact-officials.json",
+      "snapshot": false
+    }
+  ]
+}

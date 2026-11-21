@@ -1,0 +1,68 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2023-01-20",
+ "id": "g218-42812",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=42812",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Commission Secretary’s Report"
+  },
+  {
+   "no": "2",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Adopt Minutes from the January 6, 2023 Meeting Minutes"
+  },
+  {
+   "no": "4b",
+   "title": "Adopt findings under the State Urgency Legislation - Consideration of action to allow hybrid in-person meetings during the COVID-19 Emergency"
+  },
+  {
+   "no": "4c",
+   "title": "Master As-Needed Agreement M14 Curb Ramp Construction - Contract Award"
+  },
+  {
+   "no": "5",
+   "title": "Department of Public Works Fiscal Year 2023-2024 and Fiscal Year 2024-2025 Operating Budget and Priorities"
+  },
+  {
+   "no": "6",
+   "title": "Castro Station Elevator Construction - Contract Award"
+  },
+  {
+   "no": "7",
+   "title": "Infrastructure Design and Construction & Building Design and Construction Performance Measure Report"
+  },
+  {
+   "no": "8",
+   "title": "Public Works Director Hiring Update"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment - Continued from Item 2 if necessary"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

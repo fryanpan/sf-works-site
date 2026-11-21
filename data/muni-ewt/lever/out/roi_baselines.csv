@@ -1,0 +1,95 @@
+baseline,value
+line weekday boardings (median frequent bus line),17200.0
+line annual boardings,5939750.0
+bus annual boardings,135454700.0
+metro annual boardings,43172600.0
+ride minutes all day,12.6865
+ride minutes peak,13.384
+bus mph all day,8.7967
+bus mph peak,8.3383
+lane share of bus hours all day,0.2101
+"riders on board per bus-mile, frequent lines",20.8206
+"riders on board per bus-mile, all buses",15.3397
+annual boardings per weekday boarding,331.1818
+peak share of departures,0.296
+bus all day ewt,1.2254
+bus all day spacing,1.0449
+bus all day missing,0.1805
+bus all day wait,5.1693
+bus peak ewt,1.3486
+bus peak spacing,1.1299
+bus peak missing,0.2187
+bus peak wait,5.217
+metro all day ewt,0.8198
+metro all day spacing,0.759
+metro all day missing,0.0608
+metro all day wait,5.7837
+metro peak ewt,0.8993
+metro peak spacing,0.8452
+metro peak missing,0.0541
+metro peak wait,5.8567
+"layover share of running time, frequent bus lines",0.2936
+"buffer over median ride, low",0.1472
+"buffer over median ride, mid",0.2994
+"buffer over median ride, high",0.4517
+rapid overlay typical pair,28.0
+"observed share of scheduled departures, bus, latest year",0.9744
+"high, paint, peak, percent of time",9.6788
+"high, paint, all day, percent of time",9.5853
+"high, red, peak, percent of time",5.2131
+"high, red, all day, percent of time",6.5101
+"high, brt, peak, percent of time",21.5962
+"high, brt, all day, percent of time",20.5069
+"high, paint, peak, seconds a mile",49.2406
+"high, paint, all day, seconds a mile",47.3141
+"high, red, peak, seconds a mile",27.9229
+"high, red, all day, seconds a mile",34.5359
+"high, brt, peak, seconds a mile",122.2873
+"high, brt, all day, seconds a mile",119.7658
+"high, paint, peak, before seconds a mile",508.7483
+"high, paint, all day, before seconds a mile",493.6126
+"high, red, peak, before seconds a mile",535.626
+"high, red, all day, before seconds a mile",530.4932
+"high, brt, peak, before seconds a mile",566.2432
+"high, brt, all day, before seconds a mile",584.3233
+"low, stop, peak, seconds a removed stop",7.9815
+"low, stop, all day, seconds a removed stop",5.6665
+"mid, stop, peak, seconds a removed stop",11.2799
+"mid, stop, all day, seconds a removed stop",8.7993
+"high, stop, peak, seconds a removed stop",14.9713
+"high, stop, all day, seconds a removed stop",12.3425
+"mid, brt, peak, percent of time",20.5069
+"mid, brt, all day, percent of time",17.389
+"mid, brt, peak, seconds a mile",119.7658
+"mid, brt, all day, seconds a mile",100.7222
+"applied, brt, low, peak, percent of time",10.0
+"applied, brt, mid, peak, percent of time",20.5069
+"applied, brt, high, peak, percent of time",21.5962
+"applied, brt, low, all day, percent of time",10.0
+"applied, brt, mid, all day, percent of time",17.389
+"applied, brt, high, all day, percent of time",20.5069
+"applied, paint, low, peak, percent of time",0.0
+"applied, paint, mid, peak, percent of time",5.0
+"applied, paint, high, peak, percent of time",9.6788
+"applied, paint, low, all day, percent of time",0.0
+"applied, paint, mid, all day, percent of time",5.0
+"applied, paint, high, all day, percent of time",9.5853
+"applied, red, low, peak, percent of time",0.0
+"applied, red, mid, peak, percent of time",2.0
+"applied, red, high, peak, percent of time",6.4675
+"applied, red, low, all day, percent of time",0.0
+"applied, red, mid, all day, percent of time",2.0
+"applied, red, high, all day, percent of time",8.439
+"after, brt, peak, Van Ness seconds a mile",464.5574
+"after, brt, all day, Van Ness seconds a mile",479.8627
+"model, peak, seconds a mile",431.741
+"model, all day, seconds a mile",409.2426
+"point, red, peak, seconds a mile",0.9072
+"point, red, all day, seconds a mile",0.9263
+typical line weekday trips,229.5
+signals on a typical frequent line,59.0
+typical line route-miles both directions,13.6953
+typical line weekday bus-hours,195.0379
+typical line headway all day,10.0
+typical line headway peak,10.0
+bus-miles a year (2025),15697828.8

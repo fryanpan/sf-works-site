@@ -1,0 +1,115 @@
+{
+ "committee": "SFMTA Board of Directors",
+ "date": "2020-10-06",
+ "id": "g55-36790",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=36790",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/22784"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order"
+  },
+  {
+   "no": "2",
+   "title": "Roll Call"
+  },
+  {
+   "no": "3",
+   "title": "Announcement of prohibition of sound producing devices during the meeting."
+  },
+  {
+   "no": "4",
+   "title": "Discussion and vote to invoke the attorney-client privilege and conduct a closed session conference with legal counsel"
+  },
+  {
+   "no": "5",
+   "title": "Call to Order"
+  },
+  {
+   "no": "6",
+   "title": "Roll Call"
+  },
+  {
+   "no": "7",
+   "title": "The MTA Board will meet in Closed Session"
+  },
+  {
+   "no": "8",
+   "title": "Closed Session: Conference with Legal Counsel"
+  },
+  {
+   "no": "9",
+   "title": "Announcement of Closed Session"
+  },
+  {
+   "no": "10",
+   "title": "Motion to disclose or not disclose the information discussed in closed session"
+  },
+  {
+   "no": "11",
+   "title": "Approval of Minutes: September 15, 2020 Regular Meeting"
+  },
+  {
+   "no": "12",
+   "title": "Communications"
+  },
+  {
+   "no": "13",
+   "title": "Introduction of New or Unfinished Business by Board Members"
+  },
+  {
+   "no": "14",
+   "title": "Director’s Report"
+  },
+  {
+   "no": "15",
+   "title": "Citizens’ Advisory Council Report"
+  },
+  {
+   "no": "16",
+   "title": "Public Comment"
+  },
+  {
+   "no": "17",
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "17.1",
+   "title": "Allot funds and draw warrants against such funds available in payment of claims against the SFMTA",
+   "decision": "ADOPTED — 5 ayes"
+  },
+  {
+   "no": "17.2",
+   "title": "Making environmental review findings and approving parking and traffic modifications",
+   "decision": "ADOPTED — 5 ayes (Resolution 201006-082)"
+  },
+  {
+   "no": "17.3",
+   "title": "Amending the Transportation Code to authorize the Director of Transportation to issue additional permits for Educational Institutions in excess of the limitations",
+   "decision": "ADOPTED — 5 ayes (on motion to amend resolution 17.3 to approve additional Residential Parking Permits for Educational Institutions to add a maximum of) (Resolution 201006-083)",
+   "severed": true
+  },
+  {
+   "no": "17.4",
+   "title": "Approving the reprogramming of the remaining balance in the Taxi Driver Fund to implement a marketing campaign to support the taxi industry",
+   "decision": "ADOPTED — 5 ayes (Resolution 201006-084)"
+  },
+  {
+   "no": "18",
+   "title": "Transit Service Presentation"
+  },
+  {
+   "no": "19",
+   "title": "SFMTA’s budget and fiscal status"
+  }
+ ],
+ "body": "sfmta-board",
+ "parser": 4
+}

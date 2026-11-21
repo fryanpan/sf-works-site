@@ -1,0 +1,77 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-03-12",
+ "id": "g218-51979",
+ "status": "final",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=51979",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
+  "postedAgenda": "https://sfpublicworks.org/sites/default/files/Commissions/March%2012%202026/2026-3-12%20PW%20Commission%20Agenda%20v310.pdf"
+ },
+ "fetched": "2026-09-28",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "2",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "3",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "4",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "4a",
+   "title": "Minutes from the February 26, 2026 Meeting of the Public Works Commission",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4b",
+   "title": "Powell Street Improvement Project Engineering Professional Services – Sole Source Contract Award",
+   "text": "Powell Street Improvement Project Engineering Professional Services – Sole Source Contract Award Staff Recommendation: Award sole-source professional engineering services contract for the Powell Street Improvement Project to Field Operations, LLC, in an amount not to exceed $5,000,000 for a contract duration of 1,080 calendar days, subject to the approval of the Civil Service Commission.",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "4c",
+   "title": "As-Needed Specification Writing Services No. 4, Contract ID 1000032085 – Contract Modification",
+   "text": "As-Needed Specification Writing Services No. 4, Contract ID 1000032085 – Contract Modification Staff Recommendation: Approve modification to As-Needed Specification Writing Services No. 4, Contract ID 1000032085 with Emily Borland Specifications, Inc. to increase the not-to-exceed contract amount by $400,000 for a new not-to- exceed amount of $1,200,000.",
+   "parent": "Consent Calendar of Routine Matters",
+   "from": "posted agenda"
+  },
+  {
+   "no": "5",
+   "title": "Chinatown Public Health Center Renovation [Citywide PLA] - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Capital Projects Update - Zuckerberg San Francisco General Hospital Campus"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "12",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion regarding whether to disclose the discussions during Closed Session pursuant to San Francisco Administrative Code Section 67.12"
+  }
+ ],
+ "body": "public-works-commission",
+ "parser": 2
+}

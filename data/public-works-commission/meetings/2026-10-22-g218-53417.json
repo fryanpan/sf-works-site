@@ -1,0 +1,56 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-10-22",
+ "id": "g218-53417",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53417",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-11-10",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes"
+  },
+  {
+   "no": "2",
+   "title": "Announcements by Chair, Commissioners and Secretary Informational"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications Informational"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment Informational"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the October 8, 2026 Meeting of the Public Works Commission"
+  },
+  {
+   "no": "5b",
+   "title": "SOMArts Cultural Center ADA Barrier Removal - Contract Award"
+  },
+  {
+   "no": "6",
+   "title": "Human Resources Update"
+  },
+  {
+   "no": "7",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "8",
+   "title": "General Public Comment - Continued from Item 4, if necessary"
+  }
+ ],
+ "parser": 2,
+ "body": "public-works-commission"
+}

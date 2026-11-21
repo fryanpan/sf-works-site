@@ -9,3 +9,5 @@ scratch/
 .env.*
 local-settings.json
 .lfs-assets-id
+.claude/worktrees/
+.claude/settings.local.json

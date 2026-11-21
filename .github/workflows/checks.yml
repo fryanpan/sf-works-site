@@ -11,8 +11,8 @@ jobs:
   repo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "22"
       - name: Check every file of 1 MB or more is in Git LFS
@@ -31,19 +31,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
       - name: List the LFS files this commit needs
         run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
-      - uses: actions/cache@v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: .git/lfs
           key: lfs-${{ hashFiles('.lfs-assets-id') }}
           restore-keys: lfs-
       - name: Fetch the LFS files the cache lacks
         run: git lfs pull
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "22"
       - name: Install

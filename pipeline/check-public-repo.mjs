@@ -18,7 +18,9 @@
 //   - a private network hostname (*.ts.net, a Tailscale tailnet);
 //   - a Cloud Storage bucket named in full (gs://name; gs://$VARIABLE passes);
 //   - a review-board id (a task, review item, doc or board: t-, r-, d- or w-
-//     and 12 random characters) or a board thread id ("thread" and 12);
+//     and 12 random characters) or a board thread id ("thread" and 12
+//     lowercase letters or digits, with or without a digit, and every
+//     further id in a list after it);
 //   - any name in the PRIVATE_NAMES setting (comma-separated, from the
 //     environment or the gitignored local-settings.json): the cloud project,
 //     bucket and server names, which this file cannot list without
@@ -62,16 +64,23 @@ const RULES = [
   ["a private network hostname", /\b[a-z0-9-]+(?:\.[a-z0-9-]+)*\.ts\.net\b/gi],
   ["a storage bucket named in full", /\bgs:\/\/(?!\$)[a-z0-9][a-z0-9._-]{2,}/g],
   ["a review-board id", /(?<![A-Za-z0-9_-])[tdrw]-(?=[A-Za-z0-9_-]{0,11}[A-Z0-9])[A-Za-z0-9_-]{12}(?![A-Za-z0-9_-])/g],
-  ["a board thread id", /\bthreads? (?=[a-z0-9]{0,11}[0-9])[a-z0-9]{12}\b/g],
   ...privateNames.map((n) => ["a private name from PRIVATE_NAMES", new RegExp(escapeRe(n), "gi")]),
 ];
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
+
+// A board thread id is 12 random lowercase letters and digits, and about one in fifty has no digit at all
+// ("thread kqzvbnmwplxt", a made-up one), so a digit is not required. Every 12-character token after "thread" or "threads"
+// fails, and so does each further one in a list ("threads 4m9q2x7c1r0z, a1b2c3d4e5f6 and kqzvbnmwplxt").
+// An English word that genuinely follows "thread" goes in THREAD_WORDS.
+const THREAD_LIST = /\bthreads? ([a-z0-9]{12}(?:(?:,| and|, and) [a-z0-9]{12})*)\b/gi;
+const THREAD_WORDS = new Set(["conversation", "notification"]);
 
 // A Markdown link or image whose target is a relative path.
 const MD_LINK = /!?\[[^\]\n]*\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"\n]*")?\s*\)/g;
 
 if (process.argv.includes("--list")) {
   for (const [what, re] of RULES) console.log(`${what}: ${what.includes("PRIVATE_NAMES") ? "(hidden)" : re.source}`);
+  console.log(`a board thread id: ${THREAD_LIST.source} (except ${[...THREAD_WORDS].join(", ")})`);
   console.log(`a staff email address: first.last at ${CITY_DOMAINS.source}`);
   console.log("a relative markdown link to a missing file");
   if (!privateNames.length) console.log("PRIVATE_NAMES is not set: the private-name rule checks nothing");
@@ -122,6 +131,12 @@ for (const rel of files) {
     re.lastIndex = 0;
     for (const m of text.matchAll(re)) {
       failures.push(`${rel}:${lineOf(text, m.index)}: ${what}: ${what.includes("PRIVATE_NAMES") ? "(hidden)" : m[0]}`);
+    }
+  }
+
+  for (const m of text.matchAll(THREAD_LIST)) {
+    for (const id of m[1].split(/,? and |, /)) {
+      if (!THREAD_WORDS.has(id.toLowerCase())) failures.push(`${rel}:${lineOf(text, m.index)}: a board thread id: ${id}`);
     }
   }
 

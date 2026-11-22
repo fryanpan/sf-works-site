@@ -11,3 +11,57 @@ local-settings.json
 .lfs-assets-id
 .claude/worktrees/
 .claude/settings.local.json
+
+# What the pipeline writes and can fetch or rebuild again, so a refresh leaves no untracked file.
+
+# Raw reads the steps keep between runs to ask a source only for what changed.
+data/socrata-cache/
+data/store/
+data/osm-cache/
+data/audit/cache/
+out/street-work/cache/
+out/permit-timing/cache/
+out/north-star/cache/
+out/growbikenet/work/
+/cache/
+/search.json
+
+# When each source was last checked. Changes every run; lib/pipeline_state.py writes it and the
+# freshness check and audit read it.
+data/pipeline-state/
+
+# Department web pages read by the project tools. Refetchable, and they carry staff contact details
+# the generators strip before anything is tracked.
+data/dpw-cache/
+data/sfmta-pages/
+data/dept-pages-cache/
+
+# Board of Supervisors agenda grids since 2019, about 30 MB, rebuilt by tools/meetings/fetch-bos-meetings.py.
+data/bos-meetings/meetings/
+
+# Legistar reads by tools/meetings/sf_legistar.py.
+data/legistar/enacted-text/amendment-read-*/
+data/legistar/enacted-text/keep-chasing-*/
+data/legistar/enacted-text/prior-filings-*/
+
+# Civil Grand Jury report PDFs; the tracked extracts are read from them.
+data/cgj/pdf/
+
+# SFUSD bell-schedule pages; the parsed copy is data/school-hour-crashes/bell-times.json.
+data/school-hour-crashes/raw/
+
+# Compiled searches for tools/school-trips/school-travel-time.py (lib/rcsp.py builds them).
+lib/_build/
+
+# Large intermediate tables the builds write and rebuild.
+out/school-sim/blocks.json
+out/school-sim-housing-*/blocks.json
+out/full-map/transit.failed.json
+out/full-map/transit-sample.json
+out/full-map/transit-tthird.failed.json
+out/full-map/transit-tthird-sample.json
+out/full-map/transit-sample.failed.json
+out/full-map/transit-tthird-sample.failed.json
+
+# The project-detail page carries a Google Maps browser key read at build time. Its generator is tracked.
+out/project-detail/index.html

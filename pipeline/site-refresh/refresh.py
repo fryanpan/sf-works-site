@@ -24,7 +24,7 @@ The next run then refuses to start until somebody merges or closes it (step 1). 
 
 A failed quality check (transportation-update exits 1), a failed freshness check, a write outside the pipeline's
 output directories, a failed or unfinished check on the pull request, or a failed push or merge opens a GitHub issue labelled data-refresh (or comments on the open
-one). The orchestrator has already put the failing
+one) in the ALERT_REPO setting's repo, or this one when that is unset. The orchestrator has already put the failing
 source's previous data back, and nothing is pushed, so the site keeps the last good data.
 
 Every run's full output is kept on the VM, one log file per run, and never in an issue, commit or PR. The 511 token and the
@@ -46,17 +46,22 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = paths.ROOT
 sys.path.insert(0, paths.LIB)
-from lib import pipeline_state  # noqa: E402
+from lib import pipeline_state, settings  # noqa: E402
 
 STATE = os.path.expanduser("~/.local/state/sf-works-refresh")
 PENDING = os.path.join(STATE, "pending.json")
 LABEL = "data-refresh"
+# Where the alerts and the heartbeat go: the ALERT_REPO setting (owner/name, lib/settings.py), else this clone's own
+# repo. A run's log tail goes into the alert, so the VM points this at a private repo, which also holds the dead-man
+# workflow that reads the heartbeat.
+ALERT_REPO = settings.get("ALERT_REPO")
 # Where the pipeline writes. A changed tracked file anywhere else is a step writing where it should not, and stops
 # the ship rather than reaching main.
 OUTPUTS = ("out/", "site/data/", "data/")
 
 # The PR's checks: how long to wait for them to finish, how often to look, and how long to wait for the first one
-# to appear. main has no required checks, so an empty list must not read as passed. A passing run of PR checks took
+# to appear. main requires its repo and build checks (.github/workflows/checks.yml), and the wait covers every check
+# on the PR, required or not; an empty list must not read as passed. A passing run of PR checks took
 # 21 minutes on 2026-11-21 (#577, "Site checks, tests, import cycles, build"), so the wait allows about three times that.
 CHECKS_TIMEOUT = 60 * 60
 CHECKS_POLL = 30
@@ -90,6 +95,11 @@ def gh_ok():
     return subprocess.run(["gh", "auth", "status"], capture_output=True).returncode == 0
 
 
+def gh_alert(*args):
+    """A gh command against the alert repo."""
+    return ("gh", *args, *(("-R", ALERT_REPO) if ALERT_REPO else ()))
+
+
 def alert(title, body):
     """Open the data-refresh issue, or comment on the open one, so one outage is one issue."""
     say("ALERT: " + title)
@@ -97,31 +107,31 @@ def alert(title, body):
     if not gh_ok():
         say("gh is not authenticated on this VM, so the alert stays in the run log only")
         return
-    subprocess.run(["gh", "label", "create", LABEL, "--color", "efb118", "--description", "Scheduled data refresh"],
+    subprocess.run(gh_alert("label", "create", LABEL, "--color", "efb118", "--description", "Scheduled data refresh"),
                    cwd=ROOT, capture_output=True)
-    _, out = sh("gh", "issue", "list", "--label", LABEL, "--state", "open", "--json", "number", "--limit", "1",
+    _, out = sh(*gh_alert("issue", "list", "--label", LABEL, "--state", "open", "--json", "number", "--limit", "1"),
                 check=False, quiet=True)
     try:
         open_issue = (json.loads(out) or [{}])[0].get("number")
     except ValueError:
         open_issue = None
     if open_issue:
-        sh("gh", "issue", "comment", str(open_issue), "--body", text, check=False)
+        sh(*gh_alert("issue", "comment", str(open_issue), "--body", text), check=False)
     else:
-        sh("gh", "issue", "create", "--label", LABEL, "--title", "Data refresh failed: " + title, "--body", text,
+        sh(*gh_alert("issue", "create", "--label", LABEL, "--title", "Data refresh failed: " + title, "--body", text),
            check=False)
 
 
 def heartbeat():
     """Record this good run where GitHub can see it: the data-refresh label's description carries its time.
-    .github/workflows/refresh-watch.yml opens an issue when that time is over two days old, which catches the case no
+    A dead-man workflow in the alert repo opens an issue when that time is over two days old, which catches the case no
     run can report itself: the VM down, the timer stopped, or the token expired."""
     if not gh_ok():
         return
-    subprocess.run(["gh", "label", "create", LABEL, "--color", "efb118", "--description", "Scheduled data refresh"],
+    subprocess.run(gh_alert("label", "create", LABEL, "--color", "efb118", "--description", "Scheduled data refresh"),
                    cwd=ROOT, capture_output=True)
-    sh("gh", "label", "edit", LABEL, "--description",
-       "Scheduled data refresh; last good run %s" % dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+    sh(*gh_alert("label", "edit", LABEL, "--description",
+                 "Scheduled data refresh; last good run %s" % dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")),
        check=False, quiet=True)
 
 

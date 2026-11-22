@@ -2,18 +2,18 @@
  "body": "rec-park-commission",
  "name": "Recreation and Park Commission",
  "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=91",
- "generated": "2026-11-10",
+ "generated": "2026-11-20",
  "since": "2019-01-01",
  "range": [
   "2019-01-17",
-  "2026-10-15"
+  "2026-11-19"
  ],
- "listed": 96,
- "held": 96,
- "mirrored": 96,
+ "listed": 97,
+ "held": 97,
+ "mirrored": 97,
  "missing": 0,
  "missingShare": 0.0,
- "items": 2224,
+ "items": 2242,
  "notes": [
   "Items carry titles only. Granicus does not publish the vote."
  ],
@@ -688,6 +688,13 @@
    "id": "g91-53359",
    "committee": "Recreation and Park Commission",
    "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53359",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-19",
+   "id": "g91-53630",
+   "committee": "Recreation and Park Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53630",
    "outcome": "mirrored"
   }
  ]

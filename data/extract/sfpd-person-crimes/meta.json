@@ -1,20 +1,20 @@
 {
  "source": "DataSF wg3w-h783, SFPD incident reports 2018 to present",
  "url": "https://data.sfgov.org/d/wg3w-h783",
- "fetched_on": "2026-11-19",
- "from": "2025-11-17",
- "to": "2026-11-16",
- "incidents": 7906,
- "rows_read": 10155,
+ "fetched_on": "2026-11-21",
+ "from": "2025-11-19",
+ "to": "2026-11-18",
+ "incidents": 7892,
+ "rows_read": 10146,
  "categories": {
-  "Assault": 6168,
-  "Robbery": 1237,
+  "Assault": 6162,
+  "Robbery": 1230,
   "Rape": 15,
-  "Weapons Offense": 655,
-  "Weapons Carrying Etc": 331
+  "Weapons Offense": 654,
+  "Weapons Carrying Etc": 329
  },
  "dropped_out_of_sf": 33,
- "unlocated": 57,
+ "unlocated": 63,
  "fields": [
   "incident_date",
   "categories",
@@ -24,11 +24,11 @@
  ],
  "rule": "supplement reports dropped; police_district 'Out of SF' dropped; one incident per incident_id; categories Assault, Robbery, Rape, Weapons Offense, Weapons Carrying Etc",
  "lag_note": "reports are filed days to weeks after the incident, so the newest weeks undercount",
- "newest_incident_date": "2026-11-17",
- "all_incidents": 60426,
- "all_places": 5713,
- "all_from": "2025-11-17",
- "all_to": "2026-11-16",
+ "newest_incident_date": "2026-11-19",
+ "all_incidents": 60411,
+ "all_places": 5711,
+ "all_from": "2025-11-19",
+ "all_to": "2026-11-18",
  "groups": [
   "Violence and weapons",
   "Theft, burglary and fraud",
@@ -36,56 +36,56 @@
   "Drugs",
   "Other"
  ],
- "all_unlocated": 1876,
+ "all_unlocated": 1903,
  "other_categories": {
-  "Other Miscellaneous": 3399,
-  "Non-Criminal": 2885,
-  "Warrant": 2468,
-  "Lost Property": 2189,
-  "Miscellaneous Investigation": 1707,
-  "Suspicious Occ": 1655,
-  "Missing Person": 1429,
-  "Disorderly Conduct": 1014,
-  "Traffic Violation Arrest": 858,
-  "Other": 738,
-  "Offences Against The Family And Children": 698,
-  "Other Offenses": 660,
-  "Traffic Collision": 374,
-  "(none)": 226,
-  "Prostitution": 130,
-  "Fire Report": 123,
-  "Recovered Vehicle": 111,
-  "Vehicle Impounded": 110,
+  "Other Miscellaneous": 3407,
+  "Non-Criminal": 2872,
+  "Warrant": 2473,
+  "Lost Property": 2186,
+  "Miscellaneous Investigation": 1700,
+  "Suspicious Occ": 1654,
+  "Missing Person": 1428,
+  "Disorderly Conduct": 1011,
+  "Traffic Violation Arrest": 862,
+  "Other": 743,
+  "Offences Against The Family And Children": 701,
+  "Other Offenses": 666,
+  "Traffic Collision": 376,
+  "(none)": 225,
+  "Prostitution": 131,
+  "Fire Report": 122,
+  "Recovered Vehicle": 114,
+  "Vehicle Impounded": 109,
   "Courtesy Report": 82,
   "Civil Sidewalks": 68,
-  "Suicide": 37,
+  "Suicide": 38,
   "Liquor Laws": 12,
   "Gambling": 10,
   "Suspicious": 8,
   "Vehicle Misplaced": 4
  },
  "all_by_group": {
-  "Violence and weapons": 7989,
-  "Theft, burglary and fraud": 24183,
-  "Vandalism and arson": 3936,
-  "Drugs": 6024,
-  "Other": 18294
+  "Violence and weapons": 7976,
+  "Theft, burglary and fraud": 24178,
+  "Vandalism and arson": 3925,
+  "Drugs": 6037,
+  "Other": 18295
  },
  "all_by_weekday": {
-  "Sun": 7822,
-  "Mon": 8341,
-  "Tue": 8374,
-  "Wed": 9516,
-  "Thu": 8865,
-  "Fri": 8944,
-  "Sat": 8564
+  "Sun": 7841,
+  "Mon": 8198,
+  "Tue": 8325,
+  "Wed": 9641,
+  "Thu": 8875,
+  "Fri": 8955,
+  "Sat": 8576
  },
  "all_by_period": {
-  "am": 5252,
-  "midday": 19077,
-  "pm": 13715,
-  "evening": 7726,
-  "night": 14656,
+  "am": 5234,
+  "midday": 19102,
+  "pm": 13733,
+  "evening": 7706,
+  "night": 14636,
   "no time": 0
  },
  "periods": [
@@ -139,21 +139,21 @@
   2026
  ],
  "years_from": "2018-01-01",
- "years_to": "2026-11-16",
- "years_fetched_on": "2026-11-19",
+ "years_to": "2026-11-18",
+ "years_fetched_on": "2026-11-21",
  "years_cross_year": 0,
- "years_incidents": 721982,
+ "years_incidents": 722302,
  "years_places": 6703,
  "years_by_year": {
   "2018": 98954,
-  "2019": 95935,
+  "2019": 95936,
   "2020": 76566,
   "2021": 85161,
   "2022": 89540,
-  "2023": 87824,
+  "2023": 87826,
   "2024": 72405,
-  "2025": 62646,
-  "2026": 52951
+  "2025": 62647,
+  "2026": 53267
  },
  "years_by_year_group": {
   "2018": {
@@ -164,7 +164,7 @@
    "Other": 25562
   },
   "2019": {
-   "Violence and weapons": 10642,
+   "Violence and weapons": 10643,
    "Theft, burglary and fraud": 52007,
    "Vandalism and arson": 7228,
    "Drugs": 1736,
@@ -193,10 +193,10 @@
   },
   "2023": {
    "Violence and weapons": 10544,
-   "Theft, burglary and fraud": 48261,
+   "Theft, burglary and fraud": 48262,
    "Vandalism and arson": 7139,
    "Drugs": 1915,
-   "Other": 19965
+   "Other": 19966
   },
   "2024": {
    "Violence and weapons": 9688,
@@ -207,17 +207,17 @@
   },
   "2025": {
    "Violence and weapons": 8273,
-   "Theft, burglary and fraud": 27428,
+   "Theft, burglary and fraud": 27429,
    "Vandalism and arson": 4842,
    "Drugs": 4079,
    "Other": 18024
   },
   "2026": {
-   "Violence and weapons": 7132,
-   "Theft, burglary and fraud": 20816,
-   "Vandalism and arson": 3383,
-   "Drugs": 5435,
-   "Other": 16185
+   "Violence and weapons": 7160,
+   "Theft, burglary and fraud": 20951,
+   "Vandalism and arson": 3396,
+   "Drugs": 5477,
+   "Other": 16283
   }
  },
  "years_by_year_period": {
@@ -234,7 +234,7 @@
    "midday": 28459,
    "pm": 22592,
    "evening": 15886,
-   "night": 21576,
+   "night": 21577,
    "no time": 0
   },
   "2020": {
@@ -264,9 +264,9 @@
   "2023": {
    "am": 5971,
    "midday": 26945,
-   "pm": 20427,
+   "pm": 20428,
    "evening": 13140,
-   "night": 21341,
+   "night": 21342,
    "no time": 0
   },
   "2024": {
@@ -280,51 +280,51 @@
   "2025": {
    "am": 5417,
    "midday": 19476,
-   "pm": 13999,
+   "pm": 14000,
    "evening": 8293,
    "night": 15461,
    "no time": 0
   },
   "2026": {
-   "am": 4568,
-   "midday": 16702,
-   "pm": 12067,
-   "evening": 6779,
-   "night": 12835,
+   "am": 4598,
+   "midday": 16826,
+   "pm": 12152,
+   "evening": 6805,
+   "night": 12886,
    "no time": 0
   }
  },
  "years_by_weekday": {
-  "Sun": 96534,
-  "Mon": 101483,
-  "Tue": 100270,
-  "Wed": 106376,
-  "Thu": 102591,
-  "Fri": 111198,
-  "Sat": 103530
+  "Sun": 96553,
+  "Mon": 101504,
+  "Tue": 100389,
+  "Wed": 106503,
+  "Thu": 102601,
+  "Fri": 111210,
+  "Sat": 103542
  },
  "years_other_categories": {
-  "Other Miscellaneous": 38012,
-  "Non-Criminal": 31088,
-  "Lost Property": 23757,
-  "Suspicious Occ": 19111,
-  "Warrant": 16032,
-  "Missing Person": 13964,
-  "Miscellaneous Investigation": 12730,
-  "Disorderly Conduct": 10123,
-  "Other": 9102,
-  "Traffic Violation Arrest": 8024,
-  "Offences Against The Family And Children": 7489,
-  "Other Offenses": 4319,
-  "Recovered Vehicle": 1942,
+  "Other Miscellaneous": 38031,
+  "Non-Criminal": 31095,
+  "Lost Property": 23767,
+  "Suspicious Occ": 19119,
+  "Warrant": 16052,
+  "Missing Person": 13973,
+  "Miscellaneous Investigation": 12738,
+  "Disorderly Conduct": 10127,
+  "Other": 9107,
+  "Traffic Violation Arrest": 8030,
+  "Offences Against The Family And Children": 7493,
+  "Other Offenses": 4325,
+  "Recovered Vehicle": 1945,
   "Fire Report": 1507,
-  "Traffic Collision": 1198,
+  "Traffic Collision": 1200,
   "(none)": 973,
   "Civil Sidewalks": 913,
-  "Prostitution": 888,
+  "Prostitution": 889,
   "Courtesy Report": 818,
   "Vehicle Impounded": 595,
-  "Suicide": 463,
+  "Suicide": 464,
   "Liquor Laws": 130,
   "Suspicious": 123,
   "Gambling": 45,
@@ -343,5 +343,5 @@
   "[(((year - 2018) * 5 + group) * 7 + weekday (Sunday 0)) * 6 + period (PERIODS, 5 no time), incidents, ...]"
  ],
  "years_reread": "on --update, the years ending within 400 days of the window's end are re-read and older years come from the cache until it is 90 days old",
- "rows_updated_ts": 1795111064
+ "rows_updated_ts": 1795283807
 }

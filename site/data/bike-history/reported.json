@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-19",
  "year": 2026,
  "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
  "centerlines": {
   "dataset": "https://data.sf.gov/d/3psu-pn9h",
-  "queried": "2026-11-11"
+  "queried": "2026-11-19"
  },
  "projects": [
   {
@@ -12,7 +12,7 @@
    "name": "Winston Drive Quick-Build Project",
    "page": "https://www.sfmta.com/node/45035",
    "phase": "Completed",
-   "page_edited": "2026-11-10",
+   "page_edited": "2026-11-17",
    "year": 2026,
    "quote": "This project has been completed as of October 2026",
    "class": "CLASS IV",

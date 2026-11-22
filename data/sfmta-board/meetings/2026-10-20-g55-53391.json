@@ -2,12 +2,13 @@
  "committee": "SFMTA Board of Directors",
  "date": "2026-10-20",
  "id": "g55-53391",
- "status": "draft",
+ "status": "final",
  "sources": {
   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53391",
-  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/46034"
  },
- "fetched": "2026-11-10",
+ "fetched": "2026-11-17",
  "form": "html",
  "items": [
   {
@@ -24,7 +25,8 @@
   },
   {
    "no": "4",
-   "title": "Approval of Minutes October 5, 2026 Special Meeting October 6, 2026 Regular Meeting"
+   "title": "Approval of Minutes October 5, 2026 Special Meeting October 6, 2026 Regular Meeting",
+   "decision": "ADOPTED — 4 ayes"
   },
   {
    "no": "5",
@@ -48,15 +50,26 @@
   },
   {
    "no": "10",
-   "title": "CONSENT CALENDAR"
+   "title": "CONSENT CALENDAR",
+   "decision": "ADOPTED — 4 ayes (Resolution 261020-082)"
+  },
+  {
+   "no": "10.1",
+   "title": "Approving various routine parking and traffic modifications",
+   "text": "Approving various routine parking and traffic modifications (The Planning Department has found that Items A-C are exempt from the California Environmental Quality Act [CEQA]. For these parking and traffic modifications that received a categorical exemption, the proposed SFMTA Board action constitutes the Approval Action as defined by Chapter 31 of the SF Administrative Code. Explanatory documents include a staff report and resolution.): A. RESCIND – ANGLED PARKING, ESTABLISH – PERPENDICULAR PARKING Irving Street, north side, from 82 feet to 102 feet east of 15th Avenue. 4 B. RESCIND – BUS ZONE, 23rd Street, north side, from Vermont Street to 75 feet westerly 23rd Street, south side, from Vermont Street to 75 feet westerly. C. ESTABLISH – TOW-AWAY, NO STOPPING ANY TIME, 23rd Street, north side, from Vermont Street to 75 feet westerly. RESOLUTION No. 261020-082 No public comment.",
+   "parent": "Consent Calendar",
+   "from": "minutes",
+   "decision": "ADOPTED — 4 ayes (Resolution 261020-082)"
   },
   {
    "no": "11",
-   "title": "Adopting various labor agreements - Explanatory documents include a staff report, resolution, budget impact analysis and memorandum of understanding."
+   "title": "Adopting various labor agreements - Explanatory documents include a staff report, resolution, budget impact analysis and memorandum of understanding.",
+   "decision": "ADOPTED — 4 ayes"
   },
   {
    "no": "12",
-   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION"
+   "title": "Discussion and vote pursuant to Administrative Code Section 67.10(d) as to whether to invoke the attorney-client privilege and conduct a closed session conference with legal counsel CLOSED SESSION",
+   "decision": "ADOPTED — 4 ayes (Resolution 261020-086)"
   },
   {
    "no": "13",
@@ -64,7 +77,8 @@
   },
   {
    "no": "14",
-   "title": "Motion to disclose or not disclose the information discussed in Closed Session"
+   "title": "Motion to disclose or not disclose the information discussed in Closed Session",
+   "decision": "ADOPTED — 4 ayes"
   }
  ],
  "parser": 4,

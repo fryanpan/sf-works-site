@@ -23,8 +23,8 @@
    },
    "bike": {
     "15": {
-     "residents": 865665,
-     "share": 99.1
+     "residents": 865654,
+     "share": 99.0
     },
     "30": {
      "residents": 871218,
@@ -55,7 +55,7 @@
   "elementary": {
    "walk": {
     "15": {
-     "residents": 802012,
+     "residents": 802146,
      "share": 91.8
     },
     "30": {
@@ -65,7 +65,7 @@
    },
    "bike": {
     "15": {
-     "residents": 836037,
+     "residents": 836171,
      "share": 95.7
     },
     "30": {
@@ -75,7 +75,7 @@
    },
    "transit": {
     "15": {
-     "residents": 838411,
+     "residents": 838545,
      "share": 95.9
     },
     "30": {
@@ -97,7 +97,7 @@
   "grocery": {
    "walk": {
     "15": {
-     "residents": 782407,
+     "residents": 782574,
      "share": 89.5
     },
     "30": {
@@ -107,7 +107,7 @@
    },
    "bike": {
     "15": {
-     "residents": 800203,
+     "residents": 800214,
      "share": 91.6
     },
     "30": {
@@ -117,7 +117,7 @@
    },
    "transit": {
     "15": {
-     "residents": 817230,
+     "residents": 817344,
      "share": 93.5
     },
     "30": {
@@ -139,28 +139,28 @@
   "high": {
    "walk": {
     "15": {
-     "residents": 481841,
-     "share": 55.1
+     "residents": 483463,
+     "share": 55.3
     },
     "30": {
-     "residents": 796634,
+     "residents": 796698,
      "share": 91.2
     }
    },
    "bike": {
     "15": {
-     "residents": 600556,
-     "share": 68.7
+     "residents": 602651,
+     "share": 69.0
     },
     "30": {
-     "residents": 852033,
+     "residents": 852091,
      "share": 97.5
     }
    },
    "transit": {
     "15": {
-     "residents": 577039,
-     "share": 66.0
+     "residents": 577846,
+     "share": 66.1
     },
     "30": {
      "residents": 869973,
@@ -181,8 +181,8 @@
   "library": {
    "walk": {
     "15": {
-     "residents": 466366,
-     "share": 53.4
+     "residents": 467743,
+     "share": 53.5
     },
     "30": {
      "residents": 822628,
@@ -191,18 +191,18 @@
    },
    "bike": {
     "15": {
-     "residents": 607117,
-     "share": 69.5
+     "residents": 617439,
+     "share": 70.6
     },
     "30": {
-     "residents": 853172,
+     "residents": 853230,
      "share": 97.6
     }
    },
    "transit": {
     "15": {
-     "residents": 581296,
-     "share": 66.5
+     "residents": 582440,
+     "share": 66.6
     },
     "30": {
      "residents": 868918,
@@ -223,28 +223,28 @@
   "major_park": {
    "walk": {
     "15": {
-     "residents": 594728,
+     "residents": 594288,
      "share": 68.0
     },
     "30": {
-     "residents": 830778,
+     "residents": 830850,
      "share": 95.1
     }
    },
    "bike": {
     "15": {
-     "residents": 707252,
-     "share": 80.9
+     "residents": 707926,
+     "share": 81.0
     },
     "30": {
-     "residents": 873241,
+     "residents": 873254,
      "share": 99.9
     }
    },
    "transit": {
     "15": {
-     "residents": 669032,
-     "share": 76.6
+     "residents": 668422,
+     "share": 76.5
     },
     "30": {
      "residents": 873953,
@@ -265,8 +265,8 @@
   "middle": {
    "walk": {
     "15": {
-     "residents": 729400,
-     "share": 83.5
+     "residents": 729001,
+     "share": 83.4
     },
     "30": {
      "residents": 867203,
@@ -275,8 +275,8 @@
    },
    "bike": {
     "15": {
-     "residents": 788105,
-     "share": 90.2
+     "residents": 787706,
+     "share": 90.1
     },
     "30": {
      "residents": 870934,
@@ -285,7 +285,7 @@
    },
    "transit": {
     "15": {
-     "residents": 783398,
+     "residents": 783314,
      "share": 89.6
     },
     "30": {
@@ -360,62 +360,62 @@
   },
   "elementary": {
    "15": {
-    "residents": 62952,
+    "residents": 62589,
     "share": 7.2
    },
    "30": {
-    "residents": 76373,
+    "residents": 76010,
     "share": 8.7
    }
   },
   "grocery": {
    "15": {
-    "residents": 74625,
-    "share": 8.5
+    "residents": 74835,
+    "share": 8.6
    },
    "30": {
-    "residents": 107664,
+    "residents": 107847,
     "share": 12.3
    }
   },
   "high": {
    "15": {
-    "residents": 127903,
+    "residents": 127332,
     "share": 14.6
    },
    "30": {
-    "residents": 332853,
-    "share": 38.1
+    "residents": 332099,
+    "share": 38.0
    }
   },
   "library": {
    "15": {
-    "residents": 152436,
+    "residents": 152361,
     "share": 17.4
    },
    "30": {
-    "residents": 354652,
+    "residents": 354443,
     "share": 40.6
    }
   },
   "major_park": {
    "15": {
-    "residents": 109058,
+    "residents": 109419,
     "share": 12.5
    },
    "30": {
-    "residents": 246457,
+    "residents": 246756,
     "share": 28.2
    }
   },
   "middle": {
    "15": {
-    "residents": 88069,
-    "share": 10.1
+    "residents": 87604,
+    "share": 10.0
    },
    "30": {
-    "residents": 130344,
-    "share": 14.9
+    "residents": 129430,
+    "share": 14.8
    }
   },
   "park": {
@@ -432,41 +432,41 @@
  "muni_within_quarter_mile": {
   "am": {
    "5": {
-    "residents": 165701,
-    "share": 19.0
+    "residents": 202743,
+    "share": 23.2
    },
    "10": {
-    "residents": 766669,
-    "share": 87.7
+    "residents": 753197,
+    "share": 86.2
    },
    "all_routes": {
     "5": {
-     "residents": 491760,
-     "share": 56.3
+     "residents": 481478,
+     "share": 55.1
     },
     "10": {
-     "residents": 802249,
+     "residents": 802300,
      "share": 91.8
     }
    }
   },
   "midday": {
    "5": {
-    "residents": 69070,
-    "share": 7.9
+    "residents": 70168,
+    "share": 8.0
    },
    "10": {
-    "residents": 690340,
-    "share": 79.0
+    "residents": 700795,
+    "share": 80.2
    },
    "all_routes": {
     "5": {
-     "residents": 455688,
-     "share": 52.1
+     "residents": 456422,
+     "share": 52.2
     },
     "10": {
-     "residents": 778058,
-     "share": 89.0
+     "residents": 780027,
+     "share": 89.3
     }
    }
   },
@@ -476,23 +476,23 @@
     "share": 0.0
    },
    "10": {
-    "residents": 481091,
-    "share": 55.0
+    "residents": 450160,
+    "share": 51.5
    },
    "all_routes": {
     "5": {
-     "residents": 215586,
-     "share": 24.7
+     "residents": 216565,
+     "share": 24.8
     },
     "10": {
-     "residents": 672270,
-     "share": 76.9
+     "residents": 664310,
+     "share": 76.0
     }
    }
   }
  },
  "any_stop_within_quarter_mile": {
-  "residents": 871472,
+  "residents": 871672,
   "share": 99.7
  },
  "scenarios": {
@@ -539,7 +539,7 @@
     },
     "elementary": {
      "15": {
-      "residents": 838808,
+      "residents": 838942,
       "share": 96.0
      },
      "30": {
@@ -549,8 +549,8 @@
     },
     "grocery": {
      "15": {
-      "residents": 820980,
-      "share": 93.9
+      "residents": 821094,
+      "share": 94.0
      },
      "30": {
       "residents": 873518,
@@ -559,7 +559,7 @@
     },
     "high": {
      "15": {
-      "residents": 577260,
+      "residents": 578067,
       "share": 66.1
      },
      "30": {
@@ -569,8 +569,8 @@
     },
     "library": {
      "15": {
-      "residents": 587490,
-      "share": 67.2
+      "residents": 588634,
+      "share": 67.4
      },
      "30": {
       "residents": 868918,
@@ -579,7 +579,7 @@
     },
     "major_park": {
      "15": {
-      "residents": 674969,
+      "residents": 674380,
       "share": 77.2
      },
      "30": {
@@ -589,7 +589,7 @@
     },
     "middle": {
      "15": {
-      "residents": 785813,
+      "residents": 785729,
       "share": 89.9
      },
      "30": {
@@ -701,16 +701,16 @@
     },
     "major_park": {
      "faster": {
-      "residents": 26556,
-      "blocks": 131
+      "residents": 26565,
+      "blocks": 132
      },
      "slower": {
       "residents": 0,
       "blocks": 0
      },
      "newly_within_15": {
-      "residents": 5937,
-      "blocks": 37
+      "residents": 5958,
+      "blocks": 38
      },
      "newly_within_30": {
       "residents": 0,
@@ -811,8 +811,8 @@
       "blocks": 31
      },
      "major_park": {
-      "residents": 8117,
-      "blocks": 36
+      "residents": 8126,
+      "blocks": 37
      },
      "middle": {
       "residents": 1280,
@@ -933,7 +933,7 @@
    },
    "elementary": {
     "15": {
-     "residents": 870696,
+     "residents": 870692,
      "share": 99.6
     },
     "30": {
@@ -953,8 +953,8 @@
    },
    "high": {
     "15": {
-     "residents": 862808,
-     "share": 98.7
+     "residents": 841390,
+     "share": 96.3
     },
     "30": {
      "residents": 873965,
@@ -963,8 +963,8 @@
    },
    "library": {
     "15": {
-     "residents": 863348,
-     "share": 98.8
+     "residents": 847984,
+     "share": 97.0
     },
     "30": {
      "residents": 871218,
@@ -973,8 +973,8 @@
    },
    "major_park": {
     "15": {
-     "residents": 855123,
-     "share": 97.8
+     "residents": 814563,
+     "share": 93.2
     },
     "30": {
      "residents": 873965,

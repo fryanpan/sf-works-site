@@ -2,18 +2,18 @@
  "body": "sfmta-hearings",
  "name": "SFMTA engineering public hearings",
  "source": "https://www.sfmta.com/past-meetings-and-events/2617",
- "generated": "2026-11-10",
+ "generated": "2026-11-17",
  "since": "2019-01-01",
  "range": [
   "2019-08-16",
-  "2026-10-30"
+  "2026-11-13"
  ],
- "listed": 147,
- "held": 147,
- "mirrored": 146,
+ "listed": 148,
+ "held": 148,
+ "mirrored": 147,
  "missing": 1,
  "missingShare": 0.0068,
- "items": 2128,
+ "items": 2143,
  "notes": [
   "The archive starts at 2019-08-16. A hearing whose results order is not yet posted is mirrored from its agenda, without decisions, and fetched again next run."
  ],
@@ -1046,6 +1046,13 @@
    "id": "hearing",
    "committee": "Engineering public hearing",
    "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-october-30-2026",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-13",
+   "id": "hearing",
+   "committee": "Engineering public hearing",
+   "page": "https://www.sfmta.com/calendar/engineering-public-hearing-meeting-november-13-2026",
    "outcome": "mirrored"
   }
  ]

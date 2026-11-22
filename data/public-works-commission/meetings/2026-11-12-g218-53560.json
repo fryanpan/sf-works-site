@@ -1,0 +1,80 @@
+{
+ "committee": "Public Works Commission",
+ "date": "2026-11-12",
+ "id": "g218-53560",
+ "status": "draft",
+ "sources": {
+  "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53560",
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218"
+ },
+ "fetched": "2026-11-17",
+ "form": "html",
+ "items": [
+  {
+   "no": "1",
+   "title": "Call to Order, Roll Call and Agenda Changes"
+  },
+  {
+   "no": "2",
+   "title": "Announcements by Chair, Commissioners and Secretary"
+  },
+  {
+   "no": "3",
+   "title": "Director’s Report and Communications"
+  },
+  {
+   "no": "4",
+   "title": "General Public Comment"
+  },
+  {
+   "no": "5",
+   "title": "Consent Calendar of Routine Matters"
+  },
+  {
+   "no": "5a",
+   "title": "Minutes from the October 22, 2026 Meeting of the Public Works Commission - Adopt"
+  },
+  {
+   "no": "5b",
+   "title": "Architectural and Engineering Team led by an Executive Architect for a New Fire Training Facility, Contract ID 1000020844 - Contract Modification"
+  },
+  {
+   "no": "5c",
+   "title": "Hall of Justice Elevator Modernization Project, Contract No. 0000006251 - Contract Modification"
+  },
+  {
+   "no": "6",
+   "title": "1660 Mission Health Recovery and Connection Center Project, Contract No. 1000039076 - Contract Modification"
+  },
+  {
+   "no": "7",
+   "title": "Capital Project Update - Street Resurfacing Program"
+  },
+  {
+   "no": "8",
+   "title": "November 3rd Ballot Results Discussion"
+  },
+  {
+   "no": "9",
+   "title": "New Business Initiated by Commissioners"
+  },
+  {
+   "no": "10",
+   "title": "General Public Comment - Continued from Item 4, if necessary Closed Session"
+  },
+  {
+   "no": "11",
+   "title": "Closed Session - Conference with Legal Counsel Regarding Existing Litigation - Rodriguez"
+  },
+  {
+   "no": "12",
+   "title": "Announcements Following Closed Session"
+  },
+  {
+   "no": "13",
+   "title": "Motion regarding whether to disclose the discussion during Closed Session"
+  }
+ ],
+ "parser": 2,
+ "body": "public-works-commission"
+}

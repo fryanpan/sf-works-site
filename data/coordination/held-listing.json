@@ -1043,6 +1043,10 @@
   "listed": true,
   "reason": null
  },
+ "dotmaps:68789": {
+  "listed": true,
+  "reason": null
+ },
  "dotmaps:7976": {
   "listed": true,
   "reason": null
@@ -1444,8 +1448,8 @@
   "reason": null
  },
  "sfmta-page:powell-street-safety-project": {
-  "listed": false,
-  "reason": "finished: its published end, 2026-03-31, has passed, though SFMTA's page still gives its status as Implementation / Construction"
+  "listed": true,
+  "reason": null
  },
  "sfmta-page:safe-school-connections": {
   "listed": true,

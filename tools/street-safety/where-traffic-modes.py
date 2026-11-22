@@ -31,15 +31,24 @@ TIMES AND MILES (MTC's SimpleTimeSkims and SimpleDistanceSkims, AM peak, 6 to 10
   bike     `bike`: shortest path on streets that allow bikes, at 12 mph; no hills, no bike lanes in it. Where the
            model's network has a path one way only (the Golden Gate Bridge out of SF), the other direction's miles.
            The skim has no bike path over 75 miles, so "no path" is no path that short
-  Within the area (`own`) the pairs inside one zone, which have no transit skim, are left out of every figure.
-  The skims are the AM peak's for every trip, whatever hour it leaves.
+  Within the area (`own`) the pairs inside one zone, which have no transit skim, are left out of the medians and
+  no-path shares (the eligibility tests take them; see OUTPUT).
+  The medians use the AM peak's skims for every trip, whatever hour it leaves. The eligibility line's transit test
+  times each trip in its own period.
   Each figure is the median over zone pairs, weighted by the car person trips on the pair, among the pairs the skim
   has a path for; the share of those car trips on a pair with no path is reported beside it.
 
 OUTPUT  site/data/street-safety/where-from/modes-<slug>.json, one per neighborhood and district (lazy-loaded):
   {"own": row, "from": [row per unit], "to": [...], "both": [...]} where a row is
   [unit, car, transit on foot, transit by car, bike, walk, car min, car miles, transit min, % no transit path,
-   drive-to-transit min, bike min, bike miles, % no bike path]; a figure with no trips to rest on is null.
+   drive-to-transit min, bike min, bike miles, % no bike path, transit test, bike test, car trips tested]; a figure
+  with no trips to rest on is null. Each test is [car, transit, bike, walk] person trips on the zone pairs that pass
+  it: walk-to-transit (`wTrnW`) at most TRN_RATIO times the drive (`da`), each trip timed in the MTC period it leaves
+  (EA 3 to 6 am, AM 6 to 10, MD 10 to 3 pm, PM 3 to 7, EV 7 pm to 3 am, from depart_hour), and a bike path of
+  BIKE_MI miles or less, which doesn't change by period (Bryan's eligibility line, 2026-11-20). Pairs within one zone
+  (inside the area, or a zone split between the area and a unit) are tested like any pair: they have a bike distance,
+  and they fail the transit test because the transit skim is empty within a zone. Car trips tested is the row's car
+  trips.
 
 Checks (stop on failure): the trip files' row and trip totals, every mode code in 1 to 21, the regional mode shares
 within a point of MTC's published figure (Plan Bay Area 2050+ Forecasting and Modeling Report, Figures 30 and 31),
@@ -87,6 +96,11 @@ GROUP = {**{m: CAR for m in (1, 2, 3, 4, 5, 6, 19, 20, 21)}, 7: WALK, 8: BIKE, *
 PUBLISHED = [("Drive alone", (1, 2), 46), ("Two occupants", (3, 4), 20), ("Three or more occupants", (5, 6), 13), ("Taxi and ride-hail", (19, 20, 21), 3),
              ("Walk", (7,), 13), ("Bicycle", (8,), 2), ("Walk to transit", tuple(range(9, 14)), 3), ("Drive to transit", tuple(range(14, 19)), 1)]
 BIKE_MPH = 12.0
+# The eligibility line's two tests (Bryan, 2026-11-20): transit door to door at most 1.5 times the car time (Van Exel and Van Hagen
+# 2011's rail planning cut-off) and a bike path at most 3 miles (65% of tracked Denver e-bike voucher rides were shorter).
+TRN_RATIO = 1.5
+BIKE_MI = 3.0
+PERIODS = ("EA", "AM", "MD", "PM", "EV")
 
 
 def check(ok, msg):
@@ -101,6 +115,47 @@ def slug(t):
 
 def dump(obj):
     return json.dumps(obj, separators=(",", ":"), sort_keys=True) + "\n"
+
+
+def period_of_hour(h):
+    """MTC's five time periods (0 EA, 1 AM, 2 MD, 3 PM, 4 EV) from a trip's depart_hour, 0 to 23."""
+    p = np.full(len(h), -1)
+    p[(h >= 3) & (h <= 5)] = 0
+    p[(h >= 6) & (h <= 9)] = 1
+    p[(h >= 10) & (h <= 14)] = 2
+    p[(h >= 15) & (h <= 18)] = 3
+    p[(h >= 19) | ((h >= 0) & (h <= 2))] = 4
+    return p
+
+
+def trips_by_period():
+    """Daily person trips by MTC period, mode group and zone pair, Tp[5, 5, 1454, 1454] in float32 (for the
+    eligibility line's transit test, which times each trip in the period it leaves)."""
+    import pandas as pd
+    f = CACHE / "trips-by-period.npz"
+    src = [MTC / "indivTripData.zip", MTC / "jointTripData.zip"]
+    key = ",".join(str(p.stat().st_size) for p in src)
+    if f.exists():
+        Z = np.load(f)
+        if str(Z["key"]) == key:
+            return Z["Tp"]
+    Tp = np.zeros((len(PERIODS), 5, NZ, NZ), dtype=np.float32)
+    grp = np.full(22, -1)
+    for m, g in GROUP.items():
+        grp[m] = g
+    for name in ("indivTripData", "jointTripData"):
+        cols = ["orig_taz", "dest_taz", "trip_mode", "sampleRate", "depart_hour"] + (["num_participants"] if name == "jointTripData" else [])
+        with zipfile.ZipFile(MTC / f"{name}.zip") as zf, zf.open(f"{name}_3.csv") as fh:
+            for ch in pd.read_csv(fh, usecols=cols, chunksize=2_000_000):
+                p = period_of_hour(ch.depart_hour.values)
+                if (p < 0).any():
+                    sys.exit(f"CHECK FAILED: depart_hour outside 0..23 in {name}")
+                w = (ch.num_participants.values if name == "jointTripData" else 1.0) / ch.sampleRate.values
+                np.add.at(Tp, (p, grp[ch.trip_mode.values], ch.orig_taz.values - 1, ch.dest_taz.values - 1), w.astype(np.float32))
+                print(f"  {name} by period: {len(ch):,} rows", file=sys.stderr)
+    CACHE.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(f, Tp=Tp, key=key)
+    return Tp
 
 
 def trips():
@@ -183,6 +238,49 @@ def skims():
     return out
 
 
+def transit_ok():
+    """The eligibility line's transit test per MTC period, ok[5, 1454, 1454]: the walk-to-transit skim (`wTrnW`) at
+    most TRN_RATIO times the drive-alone skim (`da`) in that period. A pair with no transit path, and every pair within
+    one zone (the transit skim is empty there), fails."""
+    import pandas as pd
+    f = CACHE / f"transit-ok-{TRN_RATIO:g}.npz"
+    src = SKIMS / "SimpleTimeSkims/SimpleTimeSkims.zip"
+    key = str(src.stat().st_size)
+    if f.exists():
+        Z = np.load(f)
+        if str(Z["key"]) == key:
+            return Z["ok"]
+    ok = np.zeros((len(PERIODS), NZ, NZ), dtype=bool)
+    for k, per in enumerate(PERIODS):
+        member = f"TimeSkimsDatabase{per}.csv"
+        with zipfile.ZipFile(src) as zf, zf.open(member) as fh:
+            df = pd.read_csv(io.TextIOWrapper(fh), skipinitialspace=True, usecols=["orig", "dest", "da", "wTrnW"])
+        check(len(df) == NZ * NZ, f"{member}: {NZ} x {NZ} rows")
+        df = df.sort_values(["orig", "dest"])
+        check((df.orig.values == np.repeat(np.arange(1, NZ + 1), NZ)).all() and (df.dest.values == np.tile(np.arange(1, NZ + 1), NZ)).all(), f"{member}: every zone pair once")
+        car = df["da"].values.astype(np.float64).reshape(NZ, NZ)
+        trn = df["wTrnW"].values.astype(np.float64).reshape(NZ, NZ)
+        del df
+        check((car > 0).all(), f"{member} da: a positive drive time for every pair")
+        check(not (trn == 0).any() and ((trn > 0) | (trn == -999)).all(), f"{member} wTrnW: every value positive or -999")
+        check((np.diag(trn) == -999).all(), f"{member}: the transit skim is empty within every zone")
+        ok[k] = (trn > 0) & (trn <= TRN_RATIO * car)
+        print(f"  {per}: {ok[k].sum():,} zone pairs pass the transit test", file=sys.stderr)
+    CACHE.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(f, ok=ok, key=key)
+    return ok
+
+
+def transit_eligible(Tp, ok):
+    """Person trips by mode group and zone pair on the pairs that pass the transit test in the period each trip
+    leaves, E[5, 1454, 1454]."""
+    E = np.zeros((5, NZ, NZ), dtype=np.float64)
+    for k in range(len(PERIODS)):
+        for g in range(5):
+            E[g] += np.where(ok[k], Tp[k, g], 0).astype(np.float64)
+    return E
+
+
 def memberships(units, routing):
     """Each MTC zone's share in each neighborhood and district, hd[zone, 41 + 1, 11 + 1] (the last index of each axis
     is outside SF), and its region index (0 to 5, or -1 in SF)."""
@@ -258,7 +356,7 @@ def row(u, P, pairs, S, with_drive, own=False):
         for k in vals:
             vals[k].append(S[k][np.ix_(io_, id_)].ravel())
     if not ws:
-        return [u] + [0] * 5 + [None] * 8
+        return [u] + [0] * 5 + [None] * 8 + [[0] * 4, [0] * 4, 0]
     w = np.concatenate(ws)
     wt = np.where(np.concatenate(skip), 0.0, w)   # transit: pairs within one zone left out
     # Trips within the area (own): pairs within one zone are left out of every figure, so the car and bike medians
@@ -266,7 +364,40 @@ def row(u, P, pairs, S, with_drive, own=False):
     m = {k: wmedian(np.concatenate(v), wt if own or k in ("trn_min", "dtrn_min") else w) for k, v in vals.items()}
     pc = lambda x: None if x is None else round(100 * x)  # noqa: E731
     return [u] + [int(round(x)) for x in P] + [r1(m["car_min"][0]), r1(m["car_mi"][0]), r1(m["trn_min"][0]), pc(m["trn_min"][1]),
-                                              r1(m["dtrn_min"][0]) if with_drive else None, r1(m["bike_min"][0]), r1(m["bike_mi"][0]), pc(m["bike_min"][1])]
+                                              r1(m["dtrn_min"][0]) if with_drive else None, r1(m["bike_min"][0]), r1(m["bike_mi"][0]), pc(m["bike_min"][1])] + \
+        eligible(pairs, S, P[CAR])
+
+
+def eligible(pairs, S, car_total):
+    """Bryan's eligibility line (2026-11-20): the trips on the zone pairs that pass
+    each test, by mode group, and the car trips the tests are over. Returns
+    [[car, transit, bike, walk] on the pairs where walk-to-transit is at most TRN_RATIO x the drive, in the period
+     each trip leaves (S["E_trn"], from transit_eligible),
+     [car, transit, bike, walk] where the bike path is BIKE_MI miles or less, car trips tested].
+    A pair the skim has no path for fails its test, and a pair within one zone fails the transit test (no transit skim
+    there) and is tested for bike like any other, in every row, so the car trips tested are the row's car trips."""
+    T, E = S["T"], S["E_trn"]
+    acc = np.zeros((2, 4))
+    base = 0.0
+    with np.errstate(invalid="ignore"):
+        for wo, wd in pairs:
+            io_, id_ = np.nonzero(wo)[0], np.nonzero(wd)[0]
+            if not len(io_) or not len(id_):
+                continue
+            ix = np.ix_(io_, id_)
+            ww = np.outer(wo[io_], wd[id_])
+            bike_ok = S["bike_mi"][ix] <= BIKE_MI
+            base += float((T[CAR][ix] * ww).sum())
+            for j, gs in enumerate(((CAR,), (TW, TD), (BIKE,), (WALK,))):
+                acc[0, j] += float(sum((E[g][ix] * ww).sum() for g in gs))
+                acc[1, j] += float(sum((T[g][ix] * ww)[bike_ok].sum() for g in gs))
+    if abs(base - car_total) > 1e-6 * max(1.0, car_total):
+        sys.exit(f"CHECK FAILED: the eligibility tests' car trips {base:,.3f} against the row's {car_total:,.3f}")
+    for k in range(2):
+        if acc[k, 0] > base + 1e-4 * max(1.0, base):
+            sys.exit(f"CHECK FAILED: more eligible car trips ({acc[k, 0]:,.3f}) than car trips tested ({base:,.3f})")
+    b = int(round(base))
+    return [[min(int(round(acc[k, 0])), b)] + [int(round(x)) for x in acc[k, 1:]] for k in range(2)] + [b]
 
 
 def area_parts(hd, region, G, kind, i):
@@ -311,6 +442,15 @@ def build(S, hd, region, units):
             o["both"].append(row(u, P_from[:, u] + P_to[:, u], [(wu, inA), (inA, wu)], S, False))
         for k in ("from", "to", "both"):
             o[k] = [r for r in o[k] if sum(r[1:6]) > 0]
+        # The eligibility line: never more car trips than the row's, and the two directions add to Both.
+        for r in [o["own"]] + o["from"] + o["to"] + o["both"]:
+            if not (r[14][0] <= r[16] <= r[1] + 1 and r[15][0] <= r[16]):
+                sys.exit(f"CHECK FAILED: {name}, unit {r[0]}: eligible car trips {r[14][0]}, {r[15][0]} against {r[16]} tested, {r[1]} in the row")
+        for t in (14, 15):
+            fb = sum(r[t][0] for r in o["from"] + o["to"])
+            bb = sum(r[t][0] for r in o["both"])
+            if abs(fb - bb) > len(o["both"]) + 1:
+                sys.exit(f"CHECK FAILED: {name}: eligible car trips from plus to {fb:,} against both {bb:,}")
         files[f"modes-{sl}.json"] = o
     return files
 
@@ -388,6 +528,11 @@ def main():
         return
     S = skims()
     S["T"] = T
+    Tp = trips_by_period()
+    check(abs(float(Tp.sum(dtype=np.float64)) - T.sum()) < 1e-5 * T.sum(), "the trips by period add to the day's trips")
+    check(np.abs(Tp.sum(axis=0, dtype=np.float64) - T).max() < 0.05, "every zone pair's trips by period add to its day")
+    S["E_trn"] = transit_eligible(Tp, transit_ok())
+    del Tp
     if a.thresholds:
         thresholds(a.thresholds, S, hd, region, units)
         return
@@ -402,6 +547,12 @@ def main():
     for r in sorted(sp["both"], key=lambda r: -sum(r[1:6]))[:12]:
         print("  ", names[r[0]], r[1:], file=sys.stderr)
     print("   own", sp["own"][1:], file=sys.stderr)
+    # The eligibility line's figures for the area as a whole, both directions: the worked example posted on thread
+    # fi45m48imnoh (1,990 and 33,554 car trips) is what --thresholds prints.
+    for t, label in ((14, f"transit at most {TRN_RATIO} x car time"), (15, f"bike path at most {BIKE_MI:g} miles")):
+        e = [sum(r[t][j] for r in sp["both"]) for j in range(4)]
+        car = sum(r[1] for r in sp["both"])
+        print(f"Sunset/Parkside, {label}: {e[0]:,} car trips ({100 * e[0] / car:.1f}%); on them transit {100 * e[1] / sum(e):.0f}%, bike {100 * e[2] / sum(e):.0f}%, car {100 * e[0] / sum(e):.0f}%", file=sys.stderr)
     print(f"wrote {len(files)} files to {OUT} ({n} changed)", file=sys.stderr)
 
 

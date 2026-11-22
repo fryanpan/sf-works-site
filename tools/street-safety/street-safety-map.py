@@ -65,7 +65,7 @@ Area filter: SF's 41 Analysis Neighborhoods (data/extract/neighborhoods/analysis
 Crime view context: Muni's frequent lines, drawn from the Muni dashboard's own site/data/muni-map.json shapes and
 colours, for the lines site/data/muni.json lists as frequent.
 
-Checks: 922 police-report people, every one with a HIN bit set field, each figure the story quotes recomputed and
+Checks: police-report people within street_safety_reads.PEOPLE_BAND of the 922 read, every one with a HIN bit set field, each figure the story quotes recomputed and
 printed, crash cards for every police person with a case number, and no staff e-mail address anywhere in the output.
 """
 import pathlib, sys  # noqa: E401  (the repo root is the nearest folder above that holds lib/paths.py)
@@ -680,7 +680,8 @@ def main():
     data.pop("crashes")   # the scratch map's copy; the site's cards are tools/street-safety/street-safety-cards.py's files
     stats = B["stats"]
     police = [p for p in data["people"] if not p["lg"]]
-    assert len(police) == 922, f"{len(police)} police-report people, expected 922"
+    bad = hpm.street_safety_reads.people_in_band(len(police))
+    assert not bad, f"police-report people: {bad}"
     assert all("hy" in p for p in data["people"]), "a person has no HIN bits"
     cased = {p["cs"] for p in police if p["cs"]}
     carded = set()
@@ -697,8 +698,13 @@ def main():
           file=sys.stderr)
     # The date the people, the crime reports and the Telraam counters were read, from the extracts themselves (Telraam's
     # window ends on the day it was read): the sfdata cache date of a re-read centerline would move it with no new data.
-    read = newest_date(stats["sources"]["people"], data["crimeStats"]["fetched_on"],
-                       json.loads((ROOT / "data/extract/telraam/segments.json").read_text())["window"][1])
+    tel_end = json.loads((ROOT / "data/extract/telraam/segments.json").read_text())["window"][1]
+    # The traffic layer must be built from the counters on disk: a blocks.json from an older Telraam read (a failed or
+    # skipped hin-cut-through) would print one read date and draw another.
+    assert data["traffic"]["rule"]["read"] == tel_end, (
+        f"blocks.json was built from the Telraam read of {data['traffic']['rule']['read']}, segments.json is {tel_end}: "
+        "rerun tools/street-safety/hin-cut-through.py")
+    read = newest_date(stats["sources"]["people"], data["crimeStats"]["fetched_on"], tel_end)
     assert read, "no read date in the sources"
     H = Hoods()
     C = hpm.sfdata.fetch("3psu-pn9h", select="cnn,streetname,street,st_type,f_st,t_st,f_node_cnn,t_node_cnn,classcode,layer,oneway,line",

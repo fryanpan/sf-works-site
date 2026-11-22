@@ -17,7 +17,16 @@ claim on the map. Only pages saying the work is complete or substantially
 complete qualify; "anticipated", "in progress" and "expected" do not.
 
 Geometry is SFMTA's published project line (out/sfmta-projects/projects.geojson).
+A project can carry several features there (node 381, Folsom-Howard, has five),
+and the layer returns them in no fixed order, so every line feature of a node is
+used together. Taking one of them let the 2026-11-21 refresh pick a different
+line for 381 and match none of Folsom Street's blocks.
 Writes site/data/bike-history/reported.json.
+
+Quality check, before anything is written: every reported and planned project
+must match at least one block, and every block must carry a line of at least two
+points. A project that matches nothing fails the step, so the orchestrator keeps
+the last good files rather than shipping a project the site cannot draw.
 
 It also writes site/data/bike-history/planned.json: bikeway work SFMTA's pages
 say is still to come, with the year each page gives for finishing it (Bryan,
@@ -226,14 +235,47 @@ def along(block, lines, tol=25.0):
     if sum(math.hypot(b[0] - a[0], b[1] - a[1]) for a, b in zip(q, q[1:])) < 20:
         return False
     L = [[xy(*c) for c in line] for line in lines]
+    if not L:
+        return False
     near = sum(1 for p in q if min(seg_dist(p, a, b) for l in L for a, b in zip(l, l[1:])) <= tol)
     return near >= 0.9 * len(q)
+
+
+def project_lines(features):
+    """Every line of each node's features, in a fixed order. The layer holds several features for some projects and
+    returns them in no stable order, so keeping only one (the last read) made the matched blocks depend on that
+    order. A polygon counts as its rings, points carry no line and are left out, and a repeated line is kept once."""
+    out = {}
+    for f in features:
+        g = f.get("geometry") or {}
+        if g.get("type") == "LineString":
+            ls = [g["coordinates"]]
+        elif g.get("type") in ("MultiLineString", "Polygon"):
+            ls = g["coordinates"]  # a polygon's rings are its outline
+        elif g.get("type") == "MultiPolygon":
+            ls = [ring for poly in g["coordinates"] for ring in poly]
+        else:
+            continue
+        out.setdefault(str(f["properties"]["node"]), []).extend(l for l in ls if len(l) >= 2)
+    return {n: [json.loads(x) for x in sorted({json.dumps(l) for l in ls})] for n, ls in out.items()}
+
+
+def check_blocks(listname, projects):
+    """Fail the step when a project matched no block or a block has no line: the site labels each project at a point
+    on its blocks, and a project with none breaks the page rather than dropping out of it."""
+    bad = ["%s (%s): %d blocks" % (p["node"], p["name"], len(p["blocks"])) for p in projects if not p["blocks"]]
+    bad += ["%s (%s): block %s has %d points" % (p["node"], p["name"], b["cnn"], len(b["pts"]))
+            for p in projects for b in p["blocks"] if len(b["pts"]) < 2]
+    if bad:
+        raise SystemExit("%s: a project matched no city blocks or a block has no line; check its geometry in %s and "
+                         "its entry in %s:\n  %s" % (listname, os.path.relpath(GEOMETRY, ROOT), listname,
+                                                      "\n  ".join(bad)))
 
 
 def main():
     pages = {p["node"]: p for p in json.load(open(PROJECTS))["projects"]}
     timelines = json.load(open(PAGES))["pages"]
-    geoms = {str(f["properties"]["node"]): f["geometry"] for f in json.load(open(GEOMETRY))["features"]}
+    geoms = project_lines(json.load(open(GEOMETRY))["features"])
     cl = sfdata.fetch("3psu-pn9h", select="cnn,street,st_type,streetname,f_st,t_st,f_node_cnn,t_node_cnn,line,oneway",
                       where="active='true'")
     by_cnn = {r["cnn"]: r for r in cl.rows if r.get("line")}
@@ -247,8 +289,7 @@ def main():
         text = page_text(p, timelines)
         if words not in text:
             raise SystemExit("%s (%s): the page no longer says %r; re-read it and update REPORTED" % (node, p["name"], words))
-        g = geoms[node]
-        lines = [g["coordinates"]] if g["type"] == "LineString" else g["coordinates"]
+        lines = geoms.get(node) or []
         if how == "cnns":
             blocks = [by_cnn[c] for c in which]
         else:
@@ -262,6 +303,7 @@ def main():
                                 "from": r.get("f_st"), "to": r.get("t_st"),
                                 "pts": [[round(x, 6), round(y, 6)] for x, y in r["line"]["coordinates"]]} for r in blocks],
                     "lines": [[[round(x, 6), round(y, 6)] for x, y in line] for line in lines]})
+    check_blocks("REPORTED", out)
     stable.write_json(OUT, {"generated": dt.date.today().isoformat(), "year": YEAR,
                    "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
                    "centerlines": {"dataset": "https://data.sf.gov/d/3psu-pn9h", "queried": cl.fetched_on.isoformat()},
@@ -283,8 +325,7 @@ def main():
         status = tl[0]["status"] if tl else None
         if status not in (None, "Pending") and node not in TIMELINE_CONFLICTS:
             raise SystemExit("%s (%s): the timeline row %r now reads %s; re-read the page" % (node, p["name"], words, status))
-        g = geoms[node]
-        lines = [g["coordinates"]] if g["type"] == "LineString" else g["coordinates"]
+        lines = geoms.get(node) or []
         if how == "cnns":
             blocks = [by_cnn[c] for c in which]
         else:
@@ -322,6 +363,7 @@ def main():
         if words not in text:
             raise SystemExit("%s (%s): the page no longer says %r; re-read it and update PLANNED_UNCOUNTED" % (node, p["name"], words))
         uncounted.append({"node": node, "name": p["name"], "page": p["page"], "year": year, "quote": words, "why": why})
+    check_blocks("PLANNED", planned)
     stable.write_json(PLANNED_OUT, {"generated": dt.date.today().isoformat(),
                    "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
                    "centerlines": {"dataset": "https://data.sf.gov/d/3psu-pn9h", "queried": cl.fetched_on.isoformat()},

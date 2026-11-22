@@ -9,8 +9,8 @@ Bryan, 2026-10-21, on the yearly trend chart: "Can you do a deep dive into why s
 increasing? What's the cause? Come up with ten different hypotheses then see if data confirms or denies."
 
 STATUS UNDER THE INCREMENTAL-UPDATER RULE. A build step like injury-map.py, whose street snapping it reuses: it reads
-cached DataSF queries through lib/sfdata.py (nwes-mmgh victims, 8gtc-pjc6 parties, dau3-4s8f fatalities, and
-3psu-pn9h centerlines through injury-map.Streets) and the tracked HIN extract, and has no --update of its own. It sits
+the crash reads lib/street_safety_reads.py holds and step street-safety-crashes keeps current (nwes-mmgh
+victims, 8gtc-pjc6 parties, dau3-4s8f fatalities), 3psu-pn9h centerlines through injury-map.Streets, and the tracked HIN extract, and has no --update of its own. It sits
 in pipeline/transportation-update.py right after injury-map. Its output dates every figure from the read dates under
 "source", never the wall clock, and is sorted, so a run on unchanged data rewrites nothing.
 
@@ -62,7 +62,7 @@ ROOT = paths.ROOT
 sys.path.insert(0, HERE)
 OUT = os.path.join(ROOT, "site", "data", "injury-severe-why.json")
 import numpy as np
-import sfdata
+from lib import street_safety_reads
 
 IM = paths.load("injury-map.py")
 
@@ -119,12 +119,9 @@ def z(a, b):
 
 
 def load():
-    VSEL = ("case_id_pkey,victim_id,party_number_ckey,collision_datetime,collision_time,victim_degree_of_injury,victim_role,victim_age,"
-            "stwd_vehicle_type,party_type,lighting,vz_pcf_code,tb_latitude,tb_longitude,intersection,primary_rd,secondary_rd")
-    V = sfdata.fetch("nwes-mmgh", select=VSEL, floor=80000)
-    P = sfdata.fetch("8gtc-pjc6", select="case_id_pkey,party_number_ckey,party_type,stwd_vehicle_type,party_sobriety,party_drug_physical,party_age,collision_datetime",
-                     floor=100000)
-    F = sfdata.fetch("dau3-4s8f", select="unique_id,case_id_fkey,collision_year,collision_datetime,deceased", floor=300)
+    V = street_safety_reads.read("severe-why-victims")
+    P = street_safety_reads.read("severe-why-parties")
+    F = street_safety_reads.read("severe-why-deaths")
     return V, P, F
 
 

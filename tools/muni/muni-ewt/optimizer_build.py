@@ -3,9 +3,9 @@
 Bryan's rulings of 2026-11-14 and 15 set it. A resident picks a line and sets three
 targets, expected wait, bus speed and crowded trips, each starting at today's level, and sees the cheapest mix of fixes
 over ten years that meets all three:
-  expected wait  minutes at the stop in the hours buses come every 10 minutes or better ("gap hours"): the
-                 timetable's wait (half the gap between buses, as scheduled) plus the wait past it (excess wait),
-                 frequent stop-hours, as the dashboard counts them, for every line (no all-hours fallback);
+  expected wait  minutes at the stop on a line SFMTA counts frequent, every line but its Connector lines, over every
+                 hour the line runs from 5 am to 11 pm: the timetable's wait (half the gap between buses, as scheduled)
+                 plus the wait past it (excess wait), hours weighted by riders on board, as the dashboard counts them;
   bus speed      miles an hour, the dashboard's line speed;
   crowded trips  share of trips crowded: SFMTA's own published figure by route (sfmta_crowding.py), the mean of its
                  newest CROWD_MONTHS months; a line SFMTA has no figure for in each of them gets none (null).
@@ -18,17 +18,20 @@ every target; ties go to the one that saves riders more time (a minute of waitin
 2026-11-14), then the first in combination order. Where none meets them all, the one with the smallest shortfall in
 steps (0.1 min, 0.1 mph, 1 point) summed, then the same order. choose_targets() here and chooseTargets() on the page.
 
-Hours by how they're run (Bryan, 2026-11-14): an hour with a stop whose timetable runs a bus
-every 10 minutes or better (six or more buses and a timetable wait of 5 minutes or less, ewt_aggregate.py --frequent;
-six departures alone let 11 and 12 minute timetables in, pre-send gate round 4) is a gap hour, judged by excess wait; any other hour is a clock-timetable hour, judged by
-on-time departures in SFMTA's window, 1 minute early to 4 late (Charter 8A.103(c)(1) until Proposition A, November
-2026), with the share that left early under it. A line that switches during the day has each hour judged its own way.
-Each line carries its weekday hours' mode (muni.json schedule.gapHours, site_data.py's rule). The wait goal covers
-gap hours only and says so; no wait figure is made for clock hours (the 2026-11-09 ruling holds the arrival model for
-them).
-On time (Bryan, 2026-11-15: "Should let me set something about on time performance"): a line with
-no gap hour ships "onTime", today's share of timepoint departures in SFMTA's window on weekdays (holidays out) in the
-stop-hours that aren't gap hours, from SFMTA's 29 August 2026 timetable through the window's end (ontime_now(), from
+Lines by how SFMTA runs them (Bryan, 2026-11-17, on SFMTA's line types:
+"'infrequent' is connector and OWL and measured vs timetable and everything else is frequent and measured against
+scheduled gap", and on weighting hours within a line by riders on board). The tool follows the dashboard's rule (freq_rule.py), the lead's
+reading of those two rulings for this page: a frequent line is judged by excess wait in every hour it runs, and a
+Connector line by on-time departures in SFMTA's window, 1 minute early to 4 late (Charter 8A.103(c)(1) until
+Proposition A, November 2026), with no wait figure (the 2026-11-09 ruling holds the arrival model for timetabled
+service). muni.json's "frequent" says which a line is, and its schedule.gapHours the weekday hours a frequent line
+runs ("hours" here, "g" for an hour it runs and "c" for one it doesn't or a Connector line's). This replaces the rule
+the tool was built on, 2026-11-14, which judged each hour by whether a stop had a bus every 10
+minutes or better; within a line each hour now counts by its riders on board, not its scheduled departures
+(monthly_waits(), load_factors()).
+On time (Bryan, 2026-11-15: "Should let me set something about on time performance"): a
+Connector line ships "onTime", today's share of its timepoint departures in SFMTA's window on weekdays (holidays out),
+from SFMTA's 29 August 2026 timetable through the window's end (ontime_now(), from
 ontime_month.py's ontime/<m>-lines.csv), and the page shows it in place of the wait card with no control. It isn't a
 goal, for two reasons. The measure doesn't reproduce SFMTA's: over every line and day, 5 am to 11 pm, each trip's
 first and last stops out (ontime_month.py says why), ours is 50.6% for July 2024 to June 2025 against SFMTA's published
@@ -41,7 +44,7 @@ against the stops between them].
 And of the fixes, only signal priority has a field on-time result (studies.json udot-2024-route850-tsp-ontime, UTA
 Route 850, 86.8% to 88.1%, from a summary); lanes, holding and filling missed trips have none of their own.
 The August 2026 step: the 22's early share went from 32% in August to 50% in September. It isn't a feed artifact:
-weekday, non-gap-hour early share over all lines is flat across 29/30 August (26% to 30% a week from May to October),
+weekday early share on timetabled service over all lines, as counted on 2026-11-15, is flat across 29/30 August (26% to 30% a week from May to October),
 and lines moved both ways. In 511's August bundle, the 22's new timetable gives it 4.5% more scheduled time between the
 same timepoints in the same hours (the 25, 37, 57 and 67 also changed; every other line's is unchanged) while its
 speed held (6.12 mph in August, 6.05 in September), so its buses left early more often [inference — mine; confirmed
@@ -50,17 +53,22 @@ change, the 19, 36, 43 and 44 among them, left early less from the week of 17 Au
 slowed (the 43 from 10.2 mph in July to 9.7 in September) [inference — mine: school-year traffic, unchecked]. So the
 on-time figure counts only days on the current timetable.
 
-Baseline ("today"): the dashboard's newest three months (site/data/muni.json windows["90"].monthList), each line's
-scheduled and actual wait from data/muni-ewt/extract_freq.csv weighted as site_data.py weights them (cells within a
-line by scheduled departures, hours 05 to 22, months kept_share >= 0.6), the parts of excess wait (uneven spacing,
-missing buses, weighting) and speed from muni.json's line trend. A line with under FEW_FREQ frequent-hour scheduled
-departures a month (its gap hours are few) is flagged fewGap, and the page says its wait covers only those hours.
-A line whose weekday gap hours changed with SFMTA's 29 August 2026 timetable (changed_lines: the 1, the 5R, the 9 and
-the N on this rule) takes its wait from daily/<month>.csv's days from that date only, so "Now" isn't built on hours the line
-no longer runs that way; its parts of excess wait keep the months' shares, and "since" says so on the page.
-No gap hours: a line with no hour run every 10 minutes or better in the window (25 of the 45 bus lines, among them the 7, 28, 28R
-and 9R, and the J and M) has no wait figure, as the 2026-11-09 ruling holds for clock-timetable hours: today's wait and every mix's are
-null, it has no wait goal and no holding on its menu, and its other fixes are judged on speed and crowding.
+Baseline ("today"): the dashboard's newest three months (site/data/muni.json windows["90"].monthList), each frequent
+line's scheduled and actual wait from data/muni-ewt/extract_freq.csv weighted as site_data.py weights them (cells
+within a line by riders on board, hours 05 to 22, months kept_share >= 0.6, the months pooled by the same weights),
+the parts of excess wait (uneven spacing, missing buses, weighting) and speed from muni.json's line trend. A line with
+under FEW_FREQ scheduled departures a month is flagged fewGap (the page doesn't use it).
+A line whose weekday timetable changed with SFMTA's 29 August 2026 timetable (changed_lines: its scheduled departures
+by hour moved by over a tenth; the 5R on October 2026's window) takes its wait from the days from that date only
+(since_waits(), daily/hourly-<month>.csv, the same cells and weights), so "Now" isn't built on a timetable the line no
+longer runs; its parts of excess wait keep the months' shares, and "since" says so on the page.
+Holidays, run on a Sunday timetable, count as Sundays, and are read from the 511 summaries' own list
+(holidays_of(), diag/<month>.json), never found again here from departure counts; the build fails when a month with
+Labor Day, Thanksgiving, Christmas Day or New Year's Day on a weekday lists none.
+No wait figure: a Connector line (ten of the 45 bus lines on the picker: the 25, 36, 37, 39, 52, 55, 56, 57, 66 and
+67) has none, as the 2026-11-09 ruling holds for timetabled service: today's wait and every mix's are null, it has no
+wait goal and no holding on its menu, the page shows its on-time share in the wait card's place, and its other fixes
+are judged on speed and crowding.
 Today credits what's already built: speed and wait are measured, so signal priority at the signals that have it
 (486 of the 1,302 signals in SFMTA's layer, signals.json preempt_pr, plus the three SFMTA named as finished by October
 2024 that the layer doesn't flag, lib/muni_signals.py; SFMTA's own deck counts 545 with bus priority) and
@@ -190,7 +198,7 @@ Train Control Upgrade, whose subway phase begins in 2028, not a budget line, so 
 
 Fixes left out: a bus line that can't be priced for a fix keeps the others, and notes.left names each fix it isn't
 offered with the reason (every signal already has priority, no open stretch where a lane fits, no stop meets the
-removal rules or the line already skips stops, no gap hour to hold in, its mode already at SFMTA's delivery target).
+removal rules or the line already skips stops, a Connector line with no gap to even out, its mode already at SFMTA's delivery target).
 Lines: every bus line on the picker (lib/muni_bus_lines.py, 45 lines: the 16 frequent bus lines, the Grid and
 Connector lines and the 15, 8AX and 8BX expresses) and the Metro lines, from the lever model's car_miles_*_all.csv.
 The 21 (not running), the 35 and the 58 (no measured speed) are left off, with their reasons in the same file. A
@@ -210,7 +218,7 @@ stretches (pair_open.json, muni-lines.json speedAlong), bulbs at its busiest dis
 History: built lanes near the line with SFMTA's IMPLEMENT date where it has one; the line's dated projects and service
 changes from data/muni-ewt/interventions.csv; the count of signals with priority (SFMTA's layer has no install dates);
 and month by month since the first usable month after which no gap runs over a year (January 2022), expected wait
-(frequent hours), speed and SFMTA's crowding, a series blanked before a month series_steps.csv names where it isn't
+(frequent lines), speed and SFMTA's crowding, a series blanked before a month series_steps.csv names where it isn't
 measured the same way (the 49's speed before April 2022), and the line's wait range in a year series_steps.csv names
 before a step we haven't explained (the 22 in 2025), which the page sets under the wait card. Beside them (Bryan,
 2026-11-16, on the 44: "update it so that it shows service increases over time ... like if there's changes to the
@@ -256,9 +264,10 @@ input moves; pipeline/transportation-quality.py's muni-optimizer checks run on t
 pipeline/refresh-freshness.py fails when the newest month it covers ended over 40 days back. The timetable is read
 from .cache/muni-gtfs/feed/, which ensure_feed() unpacks from the zip the muni-gtfs step keeps whenever the zip changes.
 The lever model's files under data/muni-ewt/lever/ and the hand-kept ones under data/muni-ewt/optimizer/ are tracked
-inputs. The step is in MANUAL, off the daily schedule, until the wait baseline here follows the dashboard's rule of
-17 November 2026 (SFMTA's line types, hours weighted by riders on board): the dashboard check above fails on today's
-muni.json, so a run keeps the 16 November file.
+inputs. Two inputs arrive monthly through steps of their own, after the stop records the dashboard is built on:
+optimizer/timetable_month.csv (muni-timetable-history, on the VM) and lever/delivered_by_mode.csv
+(muni-delivered-by-mode). Until both carry the dashboard's newest month the build prints WAITING, keeps the last
+month's file and exits 0 (waiting_on()).
 Usage: ~/.venvs/sf-works-geo/bin/python -I tools/muni/muni-ewt/optimizer_build.py
 """
 import pathlib, sys  # noqa: E401  (the repo root is the nearest folder above that holds lib/paths.py)
@@ -281,7 +290,7 @@ SITE = os.path.join(ROOT, "site", "data")
 OUT_DIR = os.path.join(SITE, "muni-optimizer")
 
 MINKEEP = 0.6          # site_data.py's usable-month rule
-FEW_FREQ = 20000       # frequent-hour scheduled departures a month under which a line's gap hours are few (site_data.py SMALL)
+FEW_FREQ = 20000       # scheduled departures a month under which a frequent line is flagged fewGap (site_data.py SMALL)
 CROWD_MONTHS = 3       # SFMTA's newest published months that make today's crowding
 MIN_CROWD_LINES = 20
 STALE_MONTHS = 4       # warn when SFMTA's newest month is more than this many months behind the waits
@@ -438,14 +447,18 @@ def read_csv(path, key=None):
 
 
 GTFS_ZIP = os.path.join(ROOT, ".cache", "muni-gtfs", "muni_gtfs-current.zip")  # tools/muni/muni-gtfs.py --update keeps it
-GTFS_FILES = ("calendar.txt", "trips.txt", "stop_times.txt", "stops.txt")
+GTFS_FILES = ("calendar.txt", "trips.txt", "stop_times.txt", "stops.txt")  # what this build reads
 
 
 def ensure_feed(zip_path=None, feed_dir=None):
-    """Unpack the timetable files this build reads from the zip the muni-gtfs step keeps into .cache/muni-gtfs/feed/,
-    whenever the zip's SHA-256 differs from the one the folder was unpacked from (feed/.sha256) or a file is missing,
-    so the timetable here is always the pipeline's current feed and never a folder somebody unzipped by hand. Without
-    the zip the folder is left as it is and the reads below fail on what's missing. Returns True when it unpacked."""
+    """Unpack the zip the muni-gtfs step keeps into .cache/muni-gtfs/feed/, every file in it, whenever the zip's
+    SHA-256 differs from the one the folder was unpacked from (feed/.sha256) or a file this build reads is missing, so
+    the timetable here and in the lever scripts that read the same folder is the pipeline's current feed, all of it
+    from one zip, and never a folder somebody unzipped by hand. The mark is removed before the first file is written
+    and put back after the last, and each file is written under a name of this process's own and moved into place, so
+    a run that stops part way, or two at once, can't leave a mixed folder marked current. A file in the folder the zip
+    doesn't carry is left alone. Without the zip the folder is left as it is and the reads below fail on what's
+    missing. Returns True when it unpacked."""
     import hashlib, zipfile
     zip_path, feed_dir = zip_path or GTFS_ZIP, feed_dir or GTFS
     if not os.path.exists(zip_path):
@@ -455,18 +468,29 @@ def ensure_feed(zip_path=None, feed_dir=None):
         for chunk in iter(lambda: f.read(1 << 20), b""):
             h.update(chunk)
     mark = os.path.join(feed_dir, ".sha256")
-    held = open(mark).read().strip() if os.path.exists(mark) else None
+    held = None
+    if os.path.exists(mark):
+        with open(mark) as f:
+            held = f.read().strip()
     if held == h.hexdigest() and all(os.path.exists(os.path.join(feed_dir, n)) for n in GTFS_FILES):
         return False
     os.makedirs(feed_dir, exist_ok=True)
+    if os.path.exists(mark):
+        os.remove(mark)
     with zipfile.ZipFile(zip_path) as z:
-        for n in GTFS_FILES:
-            with z.open(n) as src, open(os.path.join(feed_dir, n + ".part"), "wb") as dst:
+        for info in z.infolist():
+            n = info.filename
+            if info.is_dir() or n != os.path.basename(n):  # the feed is flat; nothing is written outside the folder
+                continue
+            part = os.path.join(feed_dir, f".{n}.{os.getpid()}.part")
+            with z.open(info) as src, open(part, "wb") as dst:
                 for chunk in iter(lambda: src.read(1 << 20), b""):
                     dst.write(chunk)
-            os.replace(os.path.join(feed_dir, n + ".part"), os.path.join(feed_dir, n))
-    with open(mark, "w") as f:
+            os.replace(part, os.path.join(feed_dir, n))
+    part = f"{mark}.{os.getpid()}.part"
+    with open(part, "w") as f:
         f.write(h.hexdigest() + "\n")
+    os.replace(part, mark)
     return True
 
 
@@ -537,26 +561,74 @@ def narrow_ok(row):
 
 # ---- baseline -------------------------------------------------------------------------------------------------------
 
+# Riders on board: the weight each hour carries within a line, the dashboard's rule (site_data.py, "Riders on board";
+#   Bryan, 2026-11-17, review item dodklidq3or6: "Use occupancy readings"). Each cell of a frequent line (line, month,
+#   day type, hour) counts by its scheduled departures times the average load on a bus in that line, day type (weekday,
+#   or weekend for Saturday and Sunday) and hour, from SFMTA's occupancy readings (optimizer/crowding_levels_hour.csv).
+#   LOAD and OCC_MINREADS are site_data.py's central map and floor, and build()'s check that every line's month
+#   matches muni.json's keeps the two the same.
+LOAD = {"empty": 0.05, "many_seats": 0.35, "few_seats": 0.75, "standing_room": 1.2, "crushed": 1.6, "full": 1.8, "not_accepting": 1.8}
+OCC_MINREADS = 20
+OCC = os.path.join(E, "optimizer", "crowding_levels_hour.csv")  # crowding_update.py, the muni-crowding step
+SFMTA_CROWD = os.path.join(E, "optimizer", "sfmta_crowding.csv")   # sfmta_crowding.py, the muni-sfmta-crowding step
+
+
+def load_factors():
+    """[(line, "weekday" or "weekend", hour, reads, load)] from SFMTA's occupancy readings, directions pooled by reads,
+    for every line, day type and hour with OCC_MINREADS reads or more; sorted."""
+    occ = {}
+    for row in read_csv(OCC):
+        a = occ.setdefault(("L" if row["line"] == "LBUS" else row["line"], row["day_type"], int(row["hour"])), [0, 0.0])
+        a[0] += int(row["reads"]); a[1] += sum(int(row[k]) * v for k, v in LOAD.items())
+    return [(k[0], k[1], k[2], a[0], a[1] / a[0]) for k, a in sorted(occ.items()) if a[0] >= OCC_MINREADS]
+
+
+def load_lookup(occ):
+    """load(line, day type, hour): the hour's own load, else the line's average for the day type, else for any day,
+    else 1 (a line with no readings pools by departures), as site_data.py's coalesce."""
+    own = {(l_, t, h): lf for l_, t, h, _n, lf in occ}
+    acc_t, acc_l = {}, {}
+    for l_, t, _h, n, lf in occ:
+        a = acc_t.setdefault((l_, t), [0.0, 0]); a[0] += lf * n; a[1] += n
+        b = acc_l.setdefault(l_, [0.0, 0]); b[0] += lf * n; b[1] += n
+    by_t = {k: a[0] / a[1] for k, a in acc_t.items()}
+    by_l = {k: a[0] / a[1] for k, a in acc_l.items()}
+
+    def load(line, daytype, hr):
+        t = "weekday" if daytype == "weekday" else "weekend"
+        return own.get((line, t, hr), by_t.get((line, t), by_l.get(line, 1.0)))
+    return load
+
+
 def monthly_waits(lines, months):
-    """{(line, month): {"swt", "awt", "eb"}} from the frequent-hour extract, as site_data.py weights it."""
+    """{(line, month): {"swt", "awt", "eb", "w"}} from the frequent-line extract (extract_freq.csv: every hour, 5 to 22,
+    of every line but SFMTA's Connector and Owl lines), cells weighted within a line by riders on board as site_data.py
+    weights them. "eb" is the month's scheduled departures and "w" its weight, which pools months as the cells would."""
     con = duckdb.connect()
     con.execute("SET threads=1")
     mk = os.path.join(E, "extract_months.csv")
     con.execute(f"CREATE TABLE mk AS SELECT * FROM read_csv('{mk}', header=true)")
     ren = "CASE route WHEN 'LBUS' THEN 'L' ELSE route END"
+    con.execute("CREATE TABLE occ (route VARCHAR, dt VARCHAR, hr INTEGER, reads BIGINT, lf DOUBLE)")
+    con.executemany("INSERT INTO occ VALUES (?, ?, ?, ?, ?)", load_factors())
     p = os.path.join(E, "extract_freq.csv")
     open(p, "rb").close()  # for the orchestrator's read trace
-    q = f"""SELECT {ren} r, month, sum(swt*eb)/sum(eb) swt, sum(awt*eb)/sum(eb) awt, sum(eb) eb
-      FROM (SELECT route, month, daytype, hr, sum(swt*eb)/sum(eb) swt, sum(awt*ob)/sum(ob) awt, sum(eb) eb, sum(ob) ob
+    q = f"""WITH c AS (SELECT {ren} route, month, daytype, hr, sum(swt*eb)/sum(eb) swt, sum(awt*ob)/sum(ob) awt, sum(eb) eb
             FROM read_csv('{p}', header=true)
             WHERE hr BETWEEN 5 AND 22 AND swt IS NOT NULL AND awt IS NOT NULL
               AND month IN (SELECT month FROM mk WHERE kept_share >= {MINKEEP})
-            GROUP BY ALL)
-      WHERE month IN ({", ".join(f"'{m}'" for m in months)}) GROUP BY 1, 2"""
+            GROUP BY ALL),
+        cw AS (SELECT c.*, c.eb * coalesce(o.lf, ld.lf, la.lf, 1) w FROM c
+            LEFT JOIN occ o ON o.route = c.route AND o.dt = CASE WHEN c.daytype = 'weekday' THEN 'weekday' ELSE 'weekend' END AND o.hr = c.hr
+            LEFT JOIN (SELECT route, dt, sum(lf*reads)/sum(reads) lf FROM occ GROUP BY ALL) ld
+              ON ld.route = c.route AND ld.dt = CASE WHEN c.daytype = 'weekday' THEN 'weekday' ELSE 'weekend' END
+            LEFT JOIN (SELECT route, sum(lf*reads)/sum(reads) lf FROM occ GROUP BY ALL) la ON la.route = c.route)
+      SELECT route, month, sum(swt*w)/sum(w) swt, sum(awt*w)/sum(w) awt, sum(eb) eb, sum(w) w
+      FROM cw WHERE month IN ({", ".join(f"'{m}'" for m in months)}) GROUP BY 1, 2 ORDER BY 1, 2"""
     out = {}
-    for line, month, swt, awt, eb in con.execute(q).fetchall():
+    for line, month, swt, awt, eb, w in con.execute(q).fetchall():
         if line in lines:
-            out[(line, month)] = {"swt": swt, "awt": awt, "eb": eb}
+            out[(line, month)] = {"swt": swt, "awt": awt, "eb": eb, "w": w}
     return out
 
 
@@ -564,7 +636,7 @@ def monthly_waits(lines, months):
 #   to 0.75 min: "More Muni Service Changes Coming June 10" (sfmta.com/blog/more-muni-service-changes-coming-june-10,
 #   interventions.csv), the 44 from every 12 minutes to every 10, weekdays
 SERVICE_CHECK = (("44", "2023-05", 12), ("44", "2023-07", 10))
-TIMETABLE_MONTHS = os.path.join(E, "optimizer", "timetable_month.csv")  # timetable_month.py, run on the VM
+TIMETABLE_MONTHS = os.path.join(E, "optimizer", "timetable_month.csv")  # timetable_month.py --update, the muni-timetable-history step
 RIDERS = os.path.join(E, "ridership.csv")                                # fetch_ridership.py
 RIDERS_PUB = os.path.join(E, "weekday_boardings_published.csv")
 
@@ -600,63 +672,74 @@ def monthly_riders(lines):
 
 
 CHANGE_DAY = "2026-08-29"  # SFMTA's timetable and 511 feed change (docstring, "Baseline")
-CHANGE_SHARE = 0.10        # a line whose weekday gap-hour departures by hour moved by more than this share changed
+CHANGE_SHARE = 0.10        # a line whose weekday scheduled departures by hour moved by more than this share changed
 
 
-def daily_rows(lines, months):
-    """{line: [{"sdate", "eb", "eba", "swt", "awt"}]} from daily/<month>.csv (ewt_daily.py, frequent hours by date)."""
-    out = {}
+def known_holidays(month):
+    """The dates in a month ("YYYY-MM") Muni runs a holiday timetable whatever the year, as YYYYMMDD: New Year's Day,
+    Labor Day (September's first Monday), Thanksgiving (November's fourth Thursday) and Christmas Day, each of which
+    the 511 summaries list in every year they cover (diag/2026-01, 2026-09, 2025-11 and 2025-12.json). One that falls
+    on a Saturday or Sunday is left out: the summaries name a day by its trips falling under its own day type's, and a
+    weekend day already runs close to a holiday's."""
+    y, m = int(month[:4]), int(month[5:7])
+    days = []
+    if m == 1:
+        days.append(dt.date(y, 1, 1))
+    if m == 12:
+        days.append(dt.date(y, 12, 25))
+    if m == 9:
+        days.append(dt.date(y, 9, 1 + (7 - dt.date(y, 9, 1).weekday()) % 7))
+    if m == 11:
+        days.append(dt.date(y, 11, 1 + (3 - dt.date(y, 11, 1).weekday()) % 7 + 21))
+    return [d.strftime("%Y%m%d") for d in days if d.weekday() < 5]
+
+
+def holidays_of(months):
+    """(holidays, errors): the days in these months the dashboard counts as Sundays, from the 511 summaries' own list
+    (diag/<month>.json "holidays", ewt_month.py: a weekday or Saturday whose scheduled Muni trips, every line and hour,
+    are under 90% of that day type's median in the month). Read from the pipeline, not found again here by departure
+    volume: the count this build used to make moved when the frequent rule did, and then found no holiday at all. A
+    month with no summary fails, and so does a month with a holiday known_holidays() names that the summary lacks."""
+    hol, errors = set(), []
     for m in months:
-        for row in read_csv(os.path.join(E, "daily", f"{m}.csv")):
-            ln_ = "L" if row["route"] == "LBUS" else row["route"]
-            if ln_ in lines and row["swt"] not in ("", None) and row["awt"] not in ("", None):
-                out.setdefault(ln_, []).append({"sdate": row["sdate"], "eb": float(row["eb"]), "eba": float(row["eba"]),
-                                                "swt": float(row["swt"]), "awt": float(row["awt"])})
-    return out
+        p = os.path.join(E, "diag", f"{m}.json")
+        if not os.path.exists(p) or "holidays" not in (d := load_json(p)):
+            errors.append(f"holidays: no list of holidays for {m} in {os.path.relpath(p, ROOT)}")
+            continue
+        got = {str(x) for x in d["holidays"]}
+        hol |= got
+        for k in known_holidays(m):
+            if k not in got:
+                errors.append(f"holidays: {m} has a holiday on {k} and the 511 summary lists {sorted(got) or 'none'}")
+    return hol, errors
 
 
-HOLIDAY_SHARE = 0.7  # a weekday whose gap-hour departures, all lines, are under this share of the month's median weekday
-
-
-def hourly_rows(months):
-    """daily/hourly-<m>.csv rows with a day type: weekday, saturday or sunday, a holiday run on a Sunday timetable
-    counting as sunday, as the dashboard counts it (ewt_month.py). A holiday is found by volume: a weekday whose
-    scheduled gap-hour departures over every line fall under HOLIDAY_SHARE of the month's median weekday (Labor Day
-    and 12 October 2026 sit at 0.59; ordinary weekdays at 0.94 or more, one thin feed day at 0.74). Pre-send gate
-    round 5, R5-3: 12 October counted as a weekday made the 9 look changed."""
-    rows, tot = [], {}
+def hourly_rows(months, holidays):
+    """daily/hourly-<m>.csv rows (ewt_daily.py --by-hour: a line's date and clock hour) with a day type: weekday,
+    saturday or sunday, a holiday counting as sunday as the dashboard counts it (holidays_of())."""
+    out = []
     for m in months:
         p = os.path.join(E, "daily", f"hourly-{m}.csv")
         if not os.path.exists(p):
             continue
         for row in read_csv(p):
-            rows.append(row)
-            if row["eb"] not in ("", None):
-                tot[row["sdate"]] = tot.get(row["sdate"], 0.0) + float(row["eb"])
-    day = lambda s_: dt.date(int(s_[:4]), int(s_[4:6]), int(s_[6:]))
-    wk = {}
-    for s_, v in tot.items():
-        if day(s_).weekday() < 5:
-            wk.setdefault(s_[:6], []).append(v)
-    med = {m: float(np.median(v)) for m, v in wk.items()}
-    hol = {s_ for s_, v in tot.items() if day(s_).weekday() < 5 and v < HOLIDAY_SHARE * med[s_[:6]]}
-    out = []
-    for row in rows:
-        d = day(row["sdate"])
-        dtp = "sunday" if row["sdate"] in hol or d.weekday() == 6 else "saturday" if d.weekday() == 5 else "weekday"
-        out.append({**row, "daytype": dtp, "date": d})
-    return out, hol
+            s_ = row["sdate"]
+            d = dt.date(int(s_[:4]), int(s_[4:6]), int(s_[6:]))
+            dtp = "sunday" if s_ in holidays or d.weekday() == 6 else "saturday" if d.weekday() == 5 else "weekday"
+            out.append({**row, "daytype": dtp, "date": d})
+    return out
 
 
 def changed_lines(lines, months, hrows):
-    """Lines whose weekday gap hours changed at CHANGE_DAY, when it falls inside the window: the scheduled departures
-    in gap hours by clock hour, averaged over the weekdays before and from that day (daily/hourly-<m>.csv), differ by
-    more than CHANGE_SHARE of the larger day's total. Holidays, run on a Sunday timetable, are left out."""
+    """Lines whose weekday timetable changed at CHANGE_DAY, when it falls inside the window: the scheduled departures by
+    clock hour, 5 to 22, averaged over the weekdays before and from that day (daily/hourly-<m>.csv), differ by more than
+    CHANGE_SHARE of the larger day's total. Holidays, run on a Sunday timetable, are left out. Such a line's "Now" is
+    read from that day on (since_waits()), so it isn't built on a timetable the line no longer runs."""
     if not (months[0] <= CHANGE_DAY[:7] <= months[-1]):
         return set()
     prof, days = {}, {False: set(), True: set()}
     for row in hrows:
-        if row["daytype"] != "weekday":
+        if row["daytype"] != "weekday" or not 5 <= int(row["hr"]) <= 22:
             continue
         d = row["date"]
         post = d.isoformat() >= CHANGE_DAY
@@ -675,29 +758,50 @@ def changed_lines(lines, months, hrows):
     return out
 
 
-COVER_SHARE = 0.2  # an hour of a day type the wait covers: its gap-hour departures a day at least this share of the line's busiest
+def since_waits(line, hrows, since, load):
+    """(swt, awt) for a line over the days from `since`, pooled as the dashboard pools a window: each day type and
+    clock hour, 5 to 22, is a cell, its timetable wait weighted by scheduled departures and its actual wait by the
+    departures seen (ewt_daily.py's eba), and the cells weighted by riders on board (scheduled departures times
+    load(line, day type, hour)). None where no row since then has both waits."""
+    cells = {}
+    for row in hrows:
+        ln_ = "L" if row["route"] == "LBUS" else row["route"]
+        if ln_ != line or row["date"].isoformat() < since or not 5 <= int(row["hr"]) <= 22:
+            continue
+        if any(row[k] in ("", None) for k in ("eb", "eba", "swt", "awt")):
+            continue
+        a = cells.setdefault((row["daytype"], int(row["hr"])), [0.0, 0.0, 0.0, 0.0])
+        eb, eba = float(row["eb"]), float(row["eba"])
+        a[0] += eb; a[1] += float(row["swt"]) * eb; a[2] += eba; a[3] += float(row["awt"]) * eba
+    num_s = num_a = den = 0.0
+    for (t, h), (eb, s_eb, eba, a_eba) in sorted(cells.items()):
+        if not eb or not eba:
+            continue
+        w = eb * load(line, t, h)
+        num_s += s_eb / eb * w; num_a += a_eba / eba * w; den += w
+    return (num_s / den, num_a / den) if den else None
+
+
+SINCE_TOL = 0.1  # minutes since_waits() over a whole month may sit from the dashboard's month (the page shows 0.1)
 RUSH = (7, 8, 16, 17, 18)  # the weekday rush hours holding is credited in (lib/muni_hold.py)
 
 
 def wait_cover(lines, hrows, since):
-    """{line: {"weekday": [hours], "saturday": [...], "sunday": [...]}}: the clock hours of each day type the wait figure
-    rests on, those whose gap-hour scheduled departures a day reach COVER_SHARE of the line's busiest day-type hour,
-    from the days since `since[line]` where the line's Now starts then. The page names them under the wait, and
-    holding is credited only in the weekday rush hours listed (pre-send gate round 5, R5-3)."""
-    acc, ndays = {}, {}
+    """{line: {"weekday": [hours], "saturday": [...], "sunday": [...]}}: the clock hours, 5 to 22, of each day type the
+    line runs in, so its wait figure rests on them: those with scheduled departures on half or more of that day type's
+    days, from the days since `since[line]` where the line's Now starts then. Holding is credited only in the weekday
+    rush hours listed (pre-send gate round 5, R5-3)."""
+    seen, ndays = {}, {}
     for row in hrows:
         ln_ = "L" if row["route"] == "LBUS" else row["route"]
         if ln_ not in lines or (since.get(ln_) and row["date"].isoformat() < since[ln_]):
             continue
         ndays.setdefault((ln_, row["daytype"]), set()).add(row["date"])
-        if row["eb"] not in ("", None):
-            k = (ln_, row["daytype"], int(row["hr"]))
-            acc[k] = acc.get(k, 0.0) + float(row["eb"])
+        if row["eb"] not in ("", None) and float(row["eb"]) > 0 and 5 <= int(row["hr"]) <= 22:
+            seen.setdefault((ln_, row["daytype"], int(row["hr"])), set()).add(row["date"])
     out = {}
     for ln_ in lines:
-        per = {(t, h): v / len(ndays[(ln_, t)]) for (l_, t, h), v in acc.items() if l_ == ln_}
-        top = max(per.values(), default=0.0)
-        out[ln_] = {t: sorted(h for (t2, h), v in per.items() if t2 == t and top and v >= COVER_SHARE * top)
+        out[ln_] = {t: sorted(h for (l_, t2, h), ds in seen.items() if l_ == ln_ and t2 == t and 2 * len(ds) >= len(ndays[(ln_, t)]))
                     for t in ("weekday", "saturday", "sunday")}
     return out
 
@@ -707,15 +811,15 @@ def usable_months():
 
 
 def hour_modes(gap_hours):
-    """Weekday hours 5 to 22 as a string, "g" for a gap hour and "c" for a clock-timetable hour, from muni.json's
-    schedule.gapHours ([start, end) spans)."""
+    """Weekday hours 5 to 22 as a string, "g" for an hour a frequent line runs and "c" for any other, from muni.json's
+    schedule.gapHours ([start, end) spans; empty for a Connector line)."""
     return "".join("g" if any(a <= h < b for a, b in gap_hours or []) else "c" for h in range(5, 23))
 
 
 def ontime_now(months, holidays, since=CHANGE_DAY):
     """({line: {"onTime", "early", "late", "n"}}, errors): on-time timepoint departures in SFMTA's window, 1 minute early
-    to 4 late, on weekdays (holidays out, as hourly_rows() finds them) in the hours a stop runs less often than the gap
-    hours (ontime/<m>-lines.csv, freq 0), from `since`, SFMTA's 29 August 2026 timetable, through the window's end. A
+    to 4 late, on weekdays (holidays out, holidays_of()) on the lines SFMTA runs to set times, its Connector and Owl
+    lines (ontime/<m>-lines.csv, freq 0, freq_rule.py), from `since`, SFMTA's 29 August 2026 timetable, through the window's end. A
     line with under MIN_ONTIME_N departures a month of those days has none."""
     tot, errors, days = {}, [], set()
     s0 = since.replace("-", "")
@@ -767,12 +871,16 @@ def ontime_check():
     return out, errors
 
 
-def window_delivery(months, lines):
+def window_delivery(months, lines, holidays=frozenset()):
     """SFMTA's delivered share by mode over the page's months (lever/delivered_by_mode.csv, the mean of the months, as
-    lever_car_miles.py takes it over its year), and each bus line's tracked share of weekday frequent-hour departures
-    over the same months (lever/stopper/<m>.csv), so filling missed trips is sized on the window the page's waits come
-    from (pre-send gate round 6, verified 9). A line with under MIN_EB_WINDOW scheduled departures takes the pooled bus
-    share, as the lever model pools. Returns ({mode: delivered}, {line: tracked share}, errors)."""
+    lever_car_miles.py takes it over its year), and each bus line's tracked share of its weekday scheduled departures
+    over the same months (daily/<m>.csv, ewt_daily.py: a frequent line's scheduled and seen departures by date;
+    Saturdays, Sundays and holidays out), so filling missed trips is sized on the window the page's waits come from
+    (pre-send gate round 6, verified 9). The daily files carry the same counts as the lever model's per-stop files
+    (lever_vm.sh) summed over stops: on the 16 November data the two shares agree to 0.002 for every line in
+    September and October 2026 and to 0.012 for every bus line in August. A line with under MIN_EB_WINDOW scheduled
+    departures, a Connector line among them, takes the pooled bus share, as the lever model pools.
+    Returns ({mode: delivered}, {line: tracked share}, errors)."""
     errors = []
     by = {}
     for row in read_csv(os.path.join(LEV, "delivered_by_mode.csv")):
@@ -784,12 +892,14 @@ def window_delivery(months, lines):
             errors.append(f"fill window: SFMTA's {k} delivered share for {months} is {dm.get(k)}")
     acc, pool = {}, [0.0, 0.0]
     for m in months:
-        p_ = os.path.join(LEV, "stopper", f"{m}.csv")
+        p_ = os.path.join(E, "daily", f"{m}.csv")
         if not os.path.exists(p_):
-            errors.append(f"fill window: no stopper file for {m}")
+            errors.append(f"fill window: no daily file for {m}")
             continue
         for row in read_csv(p_):
-            if row["daytype"] != "weekday" or row["eb"] in ("", None):
+            s_ = row["sdate"]
+            if row["eb"] in ("", None) or row["ob"] in ("", None) or s_ in holidays \
+                    or dt.date(int(s_[:4]), int(s_[4:6]), int(s_[6:])).weekday() > 4:
                 continue
             a = acc.setdefault(row["route"], [0.0, 0.0])
             a[0] += float(row["eb"]); a[1] += float(row["ob"])
@@ -1345,7 +1455,7 @@ def line_map(line, mp, detail, signals, lanes_geo, boardings, pairs, no_bulb, op
         cum += ft / 5280 / 2
     # bulb candidates: distinct stops on the line, from its stop order each way (muni-map.json "order", the current
     #   schedule) and the schedule's stop positions, not from the map's stops with a wait figure, so a line with no
-    #   frequent hour still gets them (pre-send gate round 5, R5-2); none built
+    #   wait figure still gets them (pre-send gate round 5, R5-2); none built
     ids = lambda c_: int(c_[1:]) if c_[1:].isdigit() else -1
     # never a bulb at a stop the stop-removal fix takes out (pre-send gate round 3: Van Ness & Bay on the 30 and 49)
     gone = {int(x["stop_code"]) for x in removed}
@@ -1440,7 +1550,7 @@ def build(evals=None):
         BL.setdefault(row["line"], {})[row["lever"]] = row
     base_csv = {row["baseline"]: float(row["value"]) for row in read_csv(os.path.join(O, "roi_baselines.csv"))}
     run_share = 1 / (1 + base_csv["layover share of running time, frequent bus lines"])
-    sf_rows = read_csv(os.path.join(E, "optimizer", "sfmta_crowding.csv"))
+    sf_rows = read_csv(SFMTA_CROWD)
     crowd_months = sorted({c["month"] for c in sf_rows})[-CROWD_MONTHS:]
     sf_crowd, sf_all = {}, {}
     for c in sf_rows:
@@ -1534,7 +1644,9 @@ def build(evals=None):
         errors.append(f"signals.json: {sum(s[2] for s in sig)} signals with priority, the lever model counts {want_tsp}")
     months = muni["windows"]["90"]["monthList"]
     target_dlv = muni["delivered"].get("target") or FILL_TARGET
-    dlv_w, obs_w, e_ = window_delivery(months, list(LN))
+    holidays, e_ = holidays_of(months)
+    errors += e_
+    dlv_w, obs_w, e_ = window_delivery(months, list(LN), holidays)
     errors += e_
     y, mo = int(months[-1][:4]), int(months[-1][5:])
     waits_through = (dt.date(y + mo // 12, mo % 12 + 1, 1) - dt.timedelta(days=1)).isoformat()
@@ -1607,8 +1719,12 @@ def build(evals=None):
     y0, m0 = map(int, trend_months[0].split("-"))
     all_months = [f"{y0 + (m0 - 1 + k) // 12}-{(m0 - 1 + k) % 12 + 1:02d}" for k in range(mi(trend_months[-1]) - mi(trend_months[0]) + 1)]
     riders, riders_pub = monthly_riders(set(lines))
-    hrows, holidays = hourly_rows(months)
-    daily, changed = daily_rows(set(lines), months), changed_lines(set(lines), months, hrows)
+    for m in months:
+        if not os.path.exists(os.path.join(E, "daily", f"hourly-{m}.csv")):
+            errors.append(f"hourly rows: no daily/hourly-{m}.csv, so the hours each line runs and holding can't be read")
+    hrows = hourly_rows(months, holidays)
+    changed = changed_lines(set(lines), months, hrows)
+    load = load_lookup(load_factors())
     cover = wait_cover(set(lines), hrows, {l_: CHANGE_DAY for l_ in changed})
     ontime, e_ = ontime_now(months, holidays)
     ot_check, e2_ = ontime_check()
@@ -1623,28 +1739,41 @@ def build(evals=None):
             errors.append(f"line {line}: muni.json has no trend for it")
             continue
         t = {x["month"]: x for x in muni["lines"][line]["trend"]}
-        # a line with no hour run every 10 minutes or better in the window has no wait figure (docstring, "No gap
-        #   hours"); one with gap hours in some months but not all fails, as any line missing a month does
-        nogap = all((line, m) not in waits for m in months)
+        # a line SFMTA runs to set times, a Connector line, has no wait figure (docstring, "No wait figure"): the
+        #   dashboard marks it (muni.json "frequent", freq_rule.py), and it must have no row in the frequent-line
+        #   extract. Every other line must have a wait in each of the three months, as it must a speed.
+        frequent = muni["lines"][line].get("frequent")
+        if frequent is None:
+            errors.append(f"line {line}: muni.json doesn't say whether SFMTA counts it frequent")
+            continue
+        nogap = not frequent
+        if nogap and any((line, m) in waits for m in trend_months):
+            errors.append(f"line {line}: the dashboard counts it infrequent, and the frequent-line extract has rows for it")
+            continue
         miss = [m for m in months if ((line, m) not in waits and not nogap) or t.get(m, {}).get("mph") is None]
         if miss:
             errors.append(f"three full months: line {line} has no wait or speed in {miss}")
             continue
         wb = [] if nogap else [waits[(line, m)] for m in months]
-        ebs = sum(w["eb"] for w in wb)
-        swt = sum(w["swt"] * w["eb"] for w in wb) / ebs if ebs else 0.0
-        awt = sum(w["awt"] * w["eb"] for w in wb) / ebs if ebs else 0.0
+        ebs = sum(w["w"] for w in wb)  # months pooled by their cells' weight, as the dashboard pools a window
+        swt = sum(w["swt"] * w["w"] for w in wb) / ebs if ebs else 0.0
+        awt = sum(w["awt"] * w["w"] for w in wb) / ebs if ebs else 0.0
         since = None
         if line in changed and not nogap:
-            # its gap hours changed with the 29 August timetable: "Now" from the days since (docstring, "Baseline")
-            dd = [x for x in daily.get(line, []) if x["sdate"] >= CHANGE_DAY.replace("-", "")]
-            e_, ea_ = sum(x["eb"] for x in dd), sum(x["eba"] for x in dd)
-            if not dd or not e_ or not ea_:
-                errors.append(f"line {line}: no daily rows since {CHANGE_DAY}")
+            # its weekday timetable changed on 29 August: "Now" from the days since (docstring, "Baseline")
+            sw_ = since_waits(line, hrows, CHANGE_DAY, load)
+            if sw_ is None:
+                errors.append(f"line {line}: no hourly rows since {CHANGE_DAY}")
                 continue
-            swt = sum(x["swt"] * x["eb"] for x in dd) / e_
-            awt = sum(x["awt"] * x["eba"] for x in dd) / ea_
+            swt, awt = sw_
             since = CHANGE_DAY
+            # the days' rows pooled over a whole month must give the dashboard's month, or "since" is another figure
+            for m in months:
+                rows_m = [row for row in hrows if row["sdate"][:6] == m.replace("-", "")]
+                got = since_waits(line, rows_m, f"{m}-01", load)
+                if got is None or max(abs(got[0] - waits[(line, m)]["swt"]), abs(got[1] - waits[(line, m)]["awt"])) > SINCE_TOL:
+                    errors.append(f"line {line} {m}: the hourly rows give waits {got}, the dashboard's cells "
+                                  f"{waits[(line, m)]['swt']:.3f} and {waits[(line, m)]['awt']:.3f}, over {SINCE_TOL} apart")
         for m in trend_months:
             w, d = waits.get((line, m)), t.get(m, {})
             if w and d.get("ewt") is not None and abs((w["awt"] - w["swt"]) - d["ewt"]) > 0.002:
@@ -1670,7 +1799,7 @@ def build(evals=None):
             errors.append(f"line {line}: muni.json has no speed by hour, so there's no delay ceiling")
             continue
         sc = sf_crowd.get(line, {})
-        crowd = sum(sc.values()) / len(sc) if len(sc) == len(crowd_months) else None
+        crowd = sum(sc.values()) / len(sc) if crowd_months and len(sc) == len(crowd_months) else None
         ts = trolley.get(line, 0.0)
         ride_mi = ts * RIDE_MI["trolley"] + (1 - ts) * RIDE_MI["motor"] if kind == "bus" else RIDE_ALL
         base = {"swt": swt, "ewt": ewt, "wait": swt + ewt, **parts, "mph": mph, "ride_min": ride_mi / mph * 60, "crowd": crowd or 0.0,
@@ -1692,14 +1821,14 @@ def build(evals=None):
         rate = (ts * RATE["trolley"] + (1 - ts) * RATE["motor"]) / LEVER_RATE
         # a fix the line can't be priced for is left off its menu, and the page says why (notes.left): stop removal where
         #   no stop qualifies or the line already skips stops, signal priority where every signal on it has it, holding
-        #   with no gap hour to hold in
+        #   on a Connector line, which has no gap between buses to hold to
         skip = (("stops",) if kind == "bus" and n_removed == 0 else ()) + (("hold",) if nogap else ()) + \
             (("tsp",) if kind == "bus" and counts["tsp"] == 0 else ())
         menu = fix_effects(kind, ln, BL.get(line, {}), lanes_open, stops_on_line, line, errors,
                            bulb_cand=mapd["bulbCand"] if mapd else None, counts=counts, skip=skip, rate=rate,
                            peak=peaks.get(line, (None,))[0], per_hour=busiest_hour(dep[1], line))
-        # holding only in the weekday rush hours this line runs every 10 minutes or better, effect and supervisors both
-        #   (pre-send gate round 5, R5-3): the 9 has none and the 30 two of the five
+        # holding only in the weekday rush hours this line runs, effect and supervisors both (pre-send gate round 5,
+        #   R5-3): the 9R runs in all five
         rush_f = sum(1 for h in RUSH if h in cover.get(line, {}).get("weekday", [])) / len(RUSH)
         # missed trips, sized on the page's own three months (window_delivery): of the trips 511 didn't track, the
         #   share SFMTA's delivered figure for the line's modes says didn't run (fill_true), filled in the middle only
@@ -1748,8 +1877,8 @@ def build(evals=None):
                    "lane": "no open stretch left where one fits",
                    "stops": "the line already skips most stops" if line in SKIPS_STOPS else "no stop meets our rules for removal",
                    "bulb": "no stop left without one",
-                   "hold": "no hour with a bus every 10 minutes or better" if nogap else
-                           "no rush hour with a bus every 10 minutes or better",
+                   "hold": "it runs to a timetable, so there's no gap between buses to even out" if nogap else
+                           "it doesn't run in the weekday rush hours",
                    "fill": f"its buses already run SFMTA's target of {target_dlv:.1%} of scheduled hours",
                    "more": "no count of its buses in SFMTA's timetable"}
             notes["left"] = [[fx["id"], why[fx["id"]]] for fx in FIXES["bus"] if fx["id"] not in have]
@@ -1980,7 +2109,35 @@ def write_month(out_dir, out):
     return path, stable.write_json(path, out, sort_keys=True, separators=(",", ":"))
 
 
+WAIT_TIMETABLE_LINES = 30  # lines with a weekday gap the newest month's timetable needs (build()'s check wants 30 pairs)
+
+
+def waiting_on():
+    """Why the newest month can't be built yet, as a list, empty when it can: the dashboard has moved to a month whose
+    slower inputs haven't arrived. 511's timetable for the month (timetable_month.py --update, the
+    muni-timetable-history step) and SFMTA's delivered share by mode for it (fetch_delivered_by_mode.py --update) each
+    come a few days after the stop records the dashboard is built on. Until both are in, the last month's file stays
+    as it is and the run passes; pipeline/refresh-freshness.py alarms when that file's month ended over 40 days back."""
+    months = load_json(os.path.join(SITE, "muni.json"))["windows"]["90"]["monthList"]
+    m, why = months[-1], []
+    n = sum(1 for row in read_csv(TIMETABLE_MONTHS) if row["month"] == m and row["day"] not in ("", None))
+    if n < WAIT_TIMETABLE_LINES:
+        why.append(f"511's timetable for {m} ({n} lines in {os.path.relpath(TIMETABLE_MONTHS, ROOT)}; muni-timetable-history adds it on the VM)")
+    days = {row["mode"]: int(row["days"]) for row in read_csv(os.path.join(LEV, "delivered_by_mode.csv")) if row["month"] == m}
+    import calendar
+    if min(days.get("motor", 0), days.get("trolley", 0)) < calendar.monthrange(int(m[:4]), int(m[5:7]))[1]:  # every day of it
+        why.append(f"SFMTA's delivered share by mode for {m} (motor {days.get('motor', 0)} days, trolley {days.get('trolley', 0)}; muni-delivered-by-mode fetches it)")
+    return m, why
+
+
 def main():
+    month, why = waiting_on()
+    held = sorted(f[:-5] for f in os.listdir(OUT_DIR) if f.endswith(".json")) if os.path.isdir(OUT_DIR) else []
+    if why and held and held[-1] < month:
+        for w in why:
+            print(f"optimizer_build: WAITING for {w}")
+        print(f"optimizer_build: kept {os.path.relpath(os.path.join(OUT_DIR, held[-1] + '.json'), ROOT)} until {month}'s inputs are in")
+        return 0
     errors, out = build()
     if errors:
         for e in errors:

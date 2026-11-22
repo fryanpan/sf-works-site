@@ -1,19 +1,19 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-21",
  "coordination": "site/data/coordination.json",
- "coordinationGenerated": "2026-11-11",
+ "coordinationGenerated": "2026-11-21",
  "C1": [
   {
    "body": "SFMTA engineering hearings",
    "mirror": "sfmta-hearings",
    "read": true,
    "first": "2019-08-16",
-   "last": "2026-10-30",
-   "daysSinceLast": 12,
-   "held": 147,
+   "last": "2026-11-13",
+   "daysSinceLast": 8,
+   "held": 148,
    "missing": 1,
    "missingShare": 0.0068,
-   "items": 2128,
+   "items": 2143,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -26,12 +26,12 @@
    "mirror": "sfmta-board",
    "read": true,
    "first": "2019-01-15",
-   "last": "2026-10-29",
-   "daysSinceLast": 13,
-   "held": 185,
+   "last": "2026-11-17",
+   "daysSinceLast": 4,
+   "held": 186,
    "missing": 1,
    "missingShare": 0.0054,
-   "items": 3694,
+   "items": 3711,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -44,12 +44,12 @@
    "mirror": "bos-meetings",
    "read": true,
    "first": "2019-01-07",
-   "last": "2026-11-10",
-   "daysSinceLast": 1,
-   "held": 1657,
+   "last": "2026-11-19",
+   "daysSinceLast": 2,
+   "held": 1662,
    "missing": 4,
    "missingShare": 0.0024,
-   "items": 32252,
+   "items": 32356,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -63,11 +63,11 @@
    "read": true,
    "first": "2019-01-22",
    "last": "2026-11-10",
-   "daysSinceLast": 1,
+   "daysSinceLast": 11,
    "held": 182,
    "missing": 1,
    "missingShare": 0.0055,
-   "items": 5054,
+   "items": 5075,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -80,12 +80,12 @@
    "mirror": "public-works-commission",
    "read": true,
    "first": "2022-07-28",
-   "last": "2026-10-22",
-   "daysSinceLast": 20,
-   "held": 79,
+   "last": "2026-11-12",
+   "daysSinceLast": 9,
+   "held": 80,
    "missing": 1,
-   "missingShare": 0.0127,
-   "items": 1172,
+   "missingShare": 0.0125,
+   "items": 1188,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -102,12 +102,12 @@
    "mirror": "sfcta-board",
    "read": true,
    "first": "2019-01-29",
-   "last": "2026-11-10",
-   "daysSinceLast": 1,
-   "held": 172,
+   "last": "2026-11-17",
+   "daysSinceLast": 4,
+   "held": 173,
    "missing": 1,
    "missingShare": 0.0058,
-   "items": 2212,
+   "items": 2224,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -121,12 +121,12 @@
    "mirror": "rec-park-commission",
    "read": true,
    "first": "2019-01-17",
-   "last": "2026-10-15",
-   "daysSinceLast": 27,
-   "held": 96,
+   "last": "2026-11-19",
+   "daysSinceLast": 2,
+   "held": 97,
    "missing": 0,
    "missingShare": 0.0,
-   "items": 2224,
+   "items": 2242,
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
@@ -136,14 +136,14 @@
   }
  ],
  "C2": {
-  "major": 99,
+  "major": 100,
   "threeOrMore": 10,
-  "share": 0.101,
+  "share": 0.1,
   "distribution": {
-   "1": 18,
-   "0": 62,
+   "1": 17,
+   "0": 63,
    "3": 10,
-   "2": 9
+   "2": 10
   },
   "byDepartment": {
    "Public Works": {
@@ -151,7 +151,7 @@
     "threeOrMore": 0
    },
    "SFMTA": {
-    "major": 46,
+    "major": 47,
     "threeOrMore": 9
    },
    "SFPUC": {
@@ -328,6 +328,11 @@
    {
     "name": "Monterey Blvd Pavement Renovation",
     "department": "Public Works",
+    "dates": 0
+   },
+   {
+    "name": "Muni Subway Expansion Project",
+    "department": "SFMTA",
     "dates": 0
    },
    {
@@ -511,11 +516,6 @@
     "dates": 1
    },
    {
-    "name": "PW As Needed Main Sewer Replacement No 10",
-    "department": "Public Works",
-    "dates": 1
-   },
-   {
     "name": "PW Various Locations Sewer Replacement No 17",
     "department": "Public Works",
     "dates": 1
@@ -601,6 +601,11 @@
     "dates": 2
    },
    {
+    "name": "PW As Needed Main Sewer Replacement No 10",
+    "department": "Public Works",
+    "dates": 2
+   },
+   {
     "name": "Page Slow Street",
     "department": "SFMTA",
     "dates": 2
@@ -610,7 +615,7 @@
  },
  "C3": {
   "pageItemsWithCityLabel": 0,
-  "nameMatchesGradedWeaker": 11,
+  "nameMatchesGradedWeaker": 12,
   "examples": [
    {
     "project": "Geary Boulevard Improvement Project",
@@ -649,6 +654,12 @@
     "title": "ESTABLISH – NO STOPPING EXCEPT BICYCLES ESTABLISH – BIKE SHARE STATION Townsend Street, north side, "
    },
    {
+    "project": "Cesar Chavez Bikeway Improvements Project",
+    "date": "2026-11-17",
+    "grade": "ambiguous",
+    "title": "Approving the Cesar Chavez Bikeways Project that improves transportation safety and connectivity, in"
+   },
+   {
     "project": "Parkmerced Project",
     "date": "2022-05-24",
     "grade": "co-located",
@@ -665,28 +676,22 @@
     "date": "2025-07-08",
     "grade": "place",
     "title": "Ordinance amending the Park Code to apply the Park Code to certain parks on Treasure Island and Yerb"
-   },
-   {
-    "project": "Treasure Island and Yerba Buena Island Project",
-    "date": "2025-06-30",
-    "grade": "place",
-    "title": "Ordinance amending the Park Code to apply the Park Code to certain parks on Treasure Island and Yerb"
    }
   ],
   "pass": false
  },
  "C4": {
-  "withStart": 216,
+  "withStart": 218,
   "withPriorRecord": 65,
-  "share": 0.3009,
+  "share": 0.2982,
   "byDepartment": {
    "Public Works": {
-    "withStart": 124,
-    "without": 93
+    "withStart": 125,
+    "without": 94
    },
    "SFMTA": {
-    "withStart": 62,
-    "without": 34
+    "withStart": 63,
+    "without": 35
    },
    "SFPUC": {
     "withStart": 30,
@@ -1055,14 +1060,6 @@
     "shouldDecide": "Public Works Commission (contract award)"
    },
    {
-    "name": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
-    "department": "Public Works",
-    "start": "2027-11-09",
-    "phase": "Planning",
-    "cityRecordsAfterStart": 0,
-    "shouldDecide": "Public Works Commission (contract award)"
-   },
-   {
     "name": "Stormwater Trash Capture Phase 2",
     "department": "Public Works",
     "start": "2027-11-29",
@@ -1079,10 +1076,10 @@
     "shouldDecide": "Public Works Commission (contract award)"
    },
    {
-    "name": "Various Locations Sewer Replacement No 36",
+    "name": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
     "department": "Public Works",
-    "start": "2028-01-30",
-    "phase": "Design",
+    "start": "2028-01-09",
+    "phase": "Planning",
     "cityRecordsAfterStart": 0,
     "shouldDecide": "Public Works Commission (contract award)"
    },
@@ -1098,6 +1095,14 @@
     "name": "Sutter St and Post St Pavement Renovation",
     "department": "Public Works",
     "start": "2028-02-11",
+    "phase": "Design",
+    "cityRecordsAfterStart": 0,
+    "shouldDecide": "Public Works Commission (contract award)"
+   },
+   {
+    "name": "Various Locations Sewer Replacement No 36",
+    "department": "Public Works",
+    "start": "2028-02-12",
     "phase": "Design",
     "cityRecordsAfterStart": 0,
     "shouldDecide": "Public Works Commission (contract award)"
@@ -1219,6 +1224,14 @@
     "department": "Public Works",
     "start": "2028-09-18",
     "phase": "Planning",
+    "cityRecordsAfterStart": 0,
+    "shouldDecide": "Public Works Commission (contract award)"
+   },
+   {
+    "name": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+    "department": "Public Works",
+    "start": "2028-10-02",
+    "phase": "Design",
     "cityRecordsAfterStart": 0,
     "shouldDecide": "Public Works Commission (contract award)"
    },
@@ -1575,6 +1588,14 @@
     "shouldDecide": "SFMTA engineering hearing or SFMTA Board (legislation); SFCTA Board if Prop K/L funds it"
    },
    {
+    "name": "Powell Street Light Safety Project",
+    "department": "SFMTA",
+    "start": "2025-03",
+    "phase": null,
+    "cityRecordsAfterStart": 0,
+    "shouldDecide": "SFMTA engineering hearing or SFMTA Board (legislation); SFCTA Board if Prop K/L funds it"
+   },
+   {
     "name": "Bikeway Hardening",
     "department": "SFMTA",
     "start": "2025-07-01",
@@ -1723,7 +1744,7 @@
     "department": "SFPUC",
     "start": "2024-02-03",
     "phase": "Design",
-    "cityRecordsAfterStart": 0,
+    "cityRecordsAfterStart": 1,
     "shouldDecide": "SFPUC Commission (contract award)"
    },
    {
@@ -1905,12 +1926,12 @@
   ],
   "pass": false,
   "startedByToday": {
-   "withStart": 107,
+   "withStart": 108,
    "withPriorRecord": 53,
-   "share": 0.4953
+   "share": 0.4907
   },
   "notYetStarted": {
-   "withStart": 109,
+   "withStart": 110,
    "withPriorRecord": 12
   }
  }

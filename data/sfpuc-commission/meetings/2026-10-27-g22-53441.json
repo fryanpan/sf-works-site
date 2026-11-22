@@ -2,12 +2,13 @@
  "committee": "SFPUC Commission",
  "date": "2026-10-27",
  "id": "g22-53441",
- "status": "draft",
+ "status": "final",
  "sources": {
   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53441",
-  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/10.27.2026_M.pdf"
  },
- "fetched": "2026-11-10",
+ "fetched": "2026-11-17",
  "form": "html",
  "items": [
   {
@@ -20,7 +21,8 @@
   },
   {
    "no": "3",
-   "title": "Approval of the Minutes of October 13, 2026"
+   "title": "Approval of the Minutes of October 13, 2026",
+   "decision": "approve the Minutes of October 13, 2026"
   },
   {
    "no": "4",
@@ -35,12 +37,48 @@
    "title": "CONSENT CALENDAR"
   },
   {
+   "no": "6a",
+   "title": "Accept work performed by Precision Engineering, Inc., under Contract No. WW- 684, 45th, 46th, 47th Aves, Vicente and Wawona Streets, and Sloat Blvd Sewer Replacement; approve Modification No. 4 (Final), decreasing the contract amount by $18,855, and increasing the contract duration by 177 calendar days, for a total contract amount of $7,539,231 and a total contract duration of 704 calendar days (approximately one year and eleven months), to adjust the final contract amount to the value of actual contract quantities completed and to complete all contract work; and authorize final payment to the contractor",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0178",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Award Contract No. WW-797, Griffith Dry Weather Force Main Rehabilitation, to the responsible bidder that submitted the lowest responsive bid, Corcus Construction, Inc., in the amount of $727,503, and with a duration of 270 consecutive calendar days (approximately 9 months), to rehabilitate portions of the Griffith dry weather force main, install a new connection manhole, inspect the remaining concrete portion of the force main and replace if conditions are deemed poor, within the City and County of San Francisco",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0179",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Award Job Order Contract No. JOC-120, General Engineering (A-License) Construction, San Joaquin, Stanislaus, and Tuolumne Counties, Hetch Hetchy, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of two years, to the responsible bidder that submitted the lowest responsive bid, Big Valley Electric, to perform A- licensed general engineering construction work on San Francisco Public Utilities Commission systems and operations around Hetch Hetchy",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0180",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Award Contract No. WD-2922A, 8-Inch Ductile Iron Water Main Replacement on Lincoln Way and Irving St. from Sunset Blvd. to 19th Ave. and on Various Side Streets, to the responsible bidder that submitted the lowest responsive bid, M Squared Construction, Inc., in the amount of $17,266,695, and with a duration of 765 consecutive calendar days (approximately two years and one month), to replace aging water main pipelines that are over 100 years old at various street locations in the Sunset District of San Francisco. The Planning Department has determined that the Project is exempt from the California Environmental Quality Act (CEQA), and the Commission will rely on that determination to make its decision on this action. This action constitutes the Approval Action for the Project for the purposes of the CEQA pursuant to San Francisco Administrative Code Section 31.04(h)",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0181",
+   "from": "minutes"
+  },
+  {
    "no": "7",
-   "title": "Update on General Manager Selection Process"
+   "title": "Update on General Manager Selection Process",
+   "text": "Update on General Manager Selection Process (Discussion only) Commissioner Arce reported that the process continues, the Commission has Closed Session later in the day, and asked Commission Vice President Stacy if she had more information to add. Commission Vice President Stacy reported the Commission is in the process of reviewing candidates, she met with and summarized comments from the Citizens’ Advisory Council (CAC) and the Bay Area Water Supply & Conservation Agency (BAWSCA), and Commissioner Jamdar also met with some environmental groups and provided their comments which are part of the SFPUC Correspondence Log [for October 27, 2026], and stated that hopefully, people have been able to access the results of the survey"
   },
   {
    "no": "8",
-   "title": "Authorize the General Manager to: (1) execute a First Amendment to the 2021 Memorandum of Agreement with the Turlock Irrigation District and the Modesto Irrigation District"
+   "title": "Authorize the General Manager to: (1) execute a First Amendment to the 2021 Memorandum of Agreement with the Turlock Irrigation District and the Modesto Irrigation District",
+   "decision": "approve Item 8",
+   "resolution": "26-0182",
+   "text": "Authorize the General Manager to: (1) execute a First Amendment to the 2021 Memorandum of Agreement with the Turlock Irrigation District and the Modesto Irrigation District on the management and allocation of shared costs for Tuolumne River fish matters below the Don Pedro Project until the Federal Energy Regulatory Commission issues a license, for an amount not to exceed $9,500,000 and (2) authorize funding habitat improvement projects pursuant to the terms and limitations of the agreement"
   },
   {
    "no": "9",
@@ -48,7 +86,8 @@
   },
   {
    "no": "10",
-   "title": "Items initiated by Commissioners"
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
   },
   {
    "no": "11",
@@ -60,11 +99,15 @@
   },
   {
    "no": "11b",
-   "title": "Discussion and vote in open session pursuant to the Brown Act and the Sunshine Ordinance on whether to convene in closed session"
+   "title": "Discussion and vote in open session pursuant to the Brown Act and the Sunshine Ordinance on whether to convene in closed session",
+   "decision": "whether to convene in closed session",
+   "text": "Discussion and vote in open session pursuant to the Brown Act (California Government Code §54957(b)(1)) and the Sunshine Ordinance (San Francisco Administrative Code §67.10(b)) on whether to convene in closed session. (ACTION ITEM)"
   },
   {
    "no": "11d",
-   "title": "Discussion and vote whether to disclose any or all discussions held in closed session"
+   "title": "Discussion and vote whether to disclose any or all discussions held in closed session",
+   "decision": "not to disclose the discussion during Closed Session",
+   "text": "Discussion and vote whether to disclose any or all discussions held in closed session (San Francisco Administrative Code §67.12(a)). (ACTION ITEM)"
   },
   {
    "no": "12",

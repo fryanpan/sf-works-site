@@ -1,15 +1,15 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-20",
  "mileBasis": "per direction of travel",
  "sources": {
   "pci": {
    "id": "78va-8dhi",
-   "tag": "[DataSF 78va-8dhi \u2014 queried 2026-11-10]",
-   "queried": "2026-11-10",
-   "rows": 307554,
-   "blocks": 18398,
-   "repaveEvents": 24794,
-   "repavedBlocks": 16226,
+   "tag": "[DataSF 78va-8dhi \u2014 queried 2026-11-19]",
+   "queried": "2026-11-19",
+   "rows": 307659,
+   "blocks": 18416,
+   "repaveEvents": 24871,
+   "repavedBlocks": 16249,
    "lightEvents": 3743,
    "undatedTreatments": 70,
    "widenedEventsAdded": 1172,
@@ -38,21 +38,21 @@
    "hasTreatmentTypeColumn": false
   },
   "moratorium": {
-   "tag": "[DataSF 5wbp-dwzt \u2014 queried 2026-11-10]",
-   "queried": "2026-11-10",
-   "rows": 3378,
+   "tag": "[DataSF 5wbp-dwzt \u2014 queried 2026-11-19]",
+   "queried": "2026-11-19",
+   "rows": 3459,
    "window": [
-    "2021-11-02",
-    "2026-10-16"
+    "2021-11-22",
+    "2026-11-11"
    ],
-   "lockedBlocks": 2529,
-   "lockedWithRepaveWithin400Days": 2528,
-   "repavedBlocksInWindow": 2810,
-   "repavedBlocksInWindowLocked": 2522,
+   "lockedBlocks": 2588,
+   "lockedWithRepaveWithin400Days": 2587,
+   "repavedBlocksInWindow": 2881,
+   "repavedBlocksInWindowLocked": 2577,
    "lightTreatedBlocksInWindow": 554,
    "lightTreatedBlocksInWindowLocked": 0,
    "blocksWithTwoLockDates": 0,
-   "unlockedRepavedFirst60Days": 17,
+   "unlockedRepavedFirst60Days": 33,
    "unlockedRepavedStreets": [
     "Valencia St",
     "Fillmore St",
@@ -96,24 +96,24 @@
   },
   "feed": {
    "id": "btxj-k9uh",
-   "tag": "[DataSF btxj-k9uh \u2014 queried 2026-11-11]",
-   "queried": "2026-11-11",
-   "rows": 7541,
+   "tag": "[DataSF btxj-k9uh \u2014 queried 2026-11-20]",
+   "queried": "2026-11-20",
+   "rows": 7596,
    "completedRows": 5
   },
   "centerlines": {
    "id": "3psu-pn9h",
-   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
-   "queried": "2026-11-11",
+   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
+   "queried": "2026-11-19",
    "blocks": {
-    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
-    "queried": "2026-11-11",
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
+    "queried": "2026-11-19",
     "all": 17176,
     "active": 16378,
     "accepted": 13190
    },
-   "pciIdsNotInCenterlines": 4209,
-   "pciIdsNotInCenterlinesNamedIntersection": 4207,
+   "pciIdsNotInCenterlines": 4227,
+   "pciIdsNotInCenterlinesNamedIntersection": 4225,
    "pciIdsInCenterlines": 14189
   }
  },
@@ -137,8 +137,8 @@
    },
    "centerlines": {
     "id": "3psu-pn9h",
-    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
-    "queried": "2026-11-11"
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
+    "queried": "2026-11-19"
    }
   }
  },
@@ -1731,23 +1731,23 @@
   },
   {
    "year": 2026,
-   "blocks": 62,
-   "miles": 7.39,
-   "milesShort": 1.89,
+   "blocks": 74,
+   "miles": 8.44,
+   "milesShort": 2.28,
    "milesReceived": 0.94,
-   "milesAlready": 4.55,
+   "milesAlready": 5.22,
    "milesUndated": 0.0,
    "milesLater": 0.0,
    "blocks_by_grade": {
-    "short": 21,
-    "already": 37,
+    "short": 25,
+    "already": 45,
     "received": 4
    },
    "receivedStreets": [
     "Folsom St",
     "Winston Dr"
    ],
-   "snapshotAgree": 58,
+   "snapshotAgree": 70,
    "snapshotDisagree": 4,
    "snapshotReceived": 0,
    "layerReceivedWhereSnapshotsExist": 4
@@ -1851,7 +1851,7 @@
  "intervals": {
   "recordSpan": [
    "1947-11-01",
-   "2026-10-30"
+   "2026-11-17"
   ],
   "cuts": {
    "plan blocks, accepted streets, 2010\u20132025": {
@@ -1936,37 +1936,37 @@
    }
   },
   "gapAllBlocks": {
-   "gaps": 8319,
+   "gaps": 8373,
    "droppedUnderOneYear": 249,
-   "medianYears": 26.2,
+   "medianYears": 26.1,
    "p25": 19.6,
-   "p75": 34.9
+   "p75": 34.8
   },
   "gapPlanBlocks": {
-   "gaps": 1657,
+   "gaps": 1667,
    "droppedUnderOneYear": 31,
-   "medianYears": 26.1,
+   "medianYears": 26.0,
    "p25": 19.3,
-   "p75": 33.7
+   "p75": 33.6
   },
   "gapPlanBlocksSince1990": {
-   "gaps": 582,
+   "gaps": 592,
    "droppedUnderOneYear": 30,
    "medianYears": 21.1,
    "p25": 14.8,
    "p75": 26.0
   },
   "planBlocks": 3077,
-  "planBlocksEverRepaved": 2434,
-  "planBlocksRepavedSince2000": 1996,
-  "planBlocksRepavedSince2010": 1507,
+  "planBlocksEverRepaved": 2438,
+  "planBlocksRepavedSince2000": 2003,
+  "planBlocksRepavedSince2010": 1515,
   "planBlocksRepavedPerYear2010to2025": 92.1,
   "planBlocksRepavedPerYear2021to2025": 69.4,
   "impliedPlanCycleYears": 33.4,
   "impliedPlanCycleYearsRecent": 44.3,
   "cityBlocks": {
-   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-11]",
-   "queried": "2026-11-11",
+   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
+   "queried": "2026-11-19",
    "all": 17176,
    "active": 16378,
    "accepted": 13190
@@ -2007,7 +2007,7 @@
    "2023": 45,
    "2024": 90,
    "2025": 92,
-   "2026": 77
+   "2026": 91
   },
   "cityBlocksByYear": {
    "2000": 360,
@@ -2036,7 +2036,7 @@
    "2023": 382,
    "2024": 470,
    "2025": 454,
-   "2026": 339
+   "2026": 389
   }
  },
  "openings": [
@@ -2051,9 +2051,9 @@
   {
    "year": 2023,
    "agency": "Public Works",
-   "blocks": 9,
-   "miles": 1.39,
-   "milesShort": 1.39,
+   "blocks": 7,
+   "miles": 0.94,
+   "milesShort": 0.94,
    "blocksAlsoRepavedSameOrNextYear": 0
   },
   {
@@ -2067,10 +2067,10 @@
   {
    "year": 2025,
    "agency": "Public Works",
-   "blocks": 46,
-   "miles": 3.94,
-   "milesShort": 1.89,
-   "blocksAlsoRepavedSameOrNextYear": 4
+   "blocks": 36,
+   "miles": 3.12,
+   "milesShort": 1.1,
+   "blocksAlsoRepavedSameOrNextYear": 14
   },
   {
    "year": 2026,
@@ -2078,13 +2078,13 @@
    "blocks": 98,
    "miles": 14.53,
    "milesShort": 9.85,
-   "blocksAlsoRepavedSameOrNextYear": 1
+   "blocksAlsoRepavedSameOrNextYear": 2
   }
  ],
  "openingAgencies": {
-  "SF DPW IDC - Streets & Highways": 128,
+  "SF DPW IDC - Streets & Highways": 118,
   "SF DPW IDC - Hydraulic": 39,
-  "SF DPW BDC - Architecture": 11,
+  "SF DPW BDC - Architecture": 9,
   "SF DPW BDC - Building Project Management": 1
  },
  "sinceAdoption": {
@@ -3417,6 +3417,118 @@
     "facility": "Shared",
     "miles": 0.0948,
     "grade": "short"
+   },
+   {
+    "cnn": "12759000",
+    "date": "2026-11-02",
+    "street": "Twin Peaks Blvd",
+    "facility": "Shared",
+    "miles": 0.1307,
+    "grade": "short"
+   },
+   {
+    "cnn": "12760000",
+    "date": "2026-11-02",
+    "street": "Twin Peaks Blvd",
+    "facility": "Shared",
+    "miles": 0.1212,
+    "grade": "short"
+   },
+   {
+    "cnn": "12761000",
+    "date": "2026-11-02",
+    "street": "Twin Peaks Blvd",
+    "facility": "Shared",
+    "miles": 0.0859,
+    "grade": "short"
+   },
+   {
+    "cnn": "12762000",
+    "date": "2026-11-02",
+    "street": "Twin Peaks Blvd",
+    "facility": "Shared",
+    "miles": 0.0501,
+    "grade": "short"
+   },
+   {
+    "cnn": "4067000",
+    "date": "2026-11-02",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.3176,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "4068000",
+    "date": "2026-11-02",
+    "street": "Clarendon Ave",
+    "facility": "Undecided",
+    "miles": 0.1818,
+    "grade": "unrated"
+   },
+   {
+    "cnn": "2863000",
+    "date": "2026-11-03",
+    "street": "Beale St",
+    "facility": "Separated",
+    "miles": 0.2437,
+    "grade": "already"
+   },
+   {
+    "cnn": "5773000",
+    "date": "2026-11-06",
+    "street": "Francisco St",
+    "facility": "Shared",
+    "miles": 0.182,
+    "grade": "already"
+   },
+   {
+    "cnn": "406000",
+    "date": "2026-11-16",
+    "street": "8th St",
+    "facility": "Separated",
+    "miles": 0.042,
+    "grade": "already"
+   },
+   {
+    "cnn": "407000",
+    "date": "2026-11-16",
+    "street": "8th St",
+    "facility": "Separated",
+    "miles": 0.0356,
+    "grade": "already"
+   },
+   {
+    "cnn": "408000",
+    "date": "2026-11-16",
+    "street": "8th St",
+    "facility": "Separated",
+    "miles": 0.0428,
+    "grade": "already"
+   },
+   {
+    "cnn": "409000",
+    "date": "2026-11-16",
+    "street": "8th St",
+    "facility": "Separated",
+    "miles": 0.0416,
+    "grade": "already"
+   },
+   {
+    "cnn": "410000",
+    "date": "2026-11-16",
+    "street": "8th St",
+    "facility": "Separated",
+    "miles": 0.0356,
+    "grade": "already"
+   },
+   {
+    "cnn": "411000",
+    "date": "2026-11-16",
+    "street": "8th St",
+    "facility": "Separated",
+    "miles": 0.0425,
+    "grade": "already"
    }
   ]
  }

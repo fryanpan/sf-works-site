@@ -15,9 +15,11 @@ model main street traffic", and "higher gradations of traffic beyond 6 a minute"
 Prior work: research/notes/whitepaper-2026-11/part-1/2026-11-18-cut-through-prior-work.md.
 
 The Street Safety map (sf-works.org/transportation/street-safety) reads its blocks.json through
-tools/street-safety/street-safety-map.py, which is rebuilt by hand (MANUAL in pipeline/transportation-update.py) until the crash
-extract it also reads has an updater. Its Telraam input refreshes weekly (step "telraam"); its other inputs are fixed
-files or cached reads.
+tools/street-safety/street-safety-map.py. Both run daily on the scheduled run (steps hin-cut-through and street-safety-map in
+pipeline/transportation-update.py), and rerun when an input moves: the Telraam counters (step "telraam", weekly) and
+the people hurt (points.geojson, step "hin-injuries", whose crash reads step "street-safety-crashes" keeps current).
+Its other inputs are fixed files (the corridor counts, the Slow Streets evaluation, SF-CHAMP's and SFMTA's model runs,
+ACS 2024) or the centerlines the socrata step refreshes.
 
 INPUTS
   blocks    DataSF 3psu-pn9h active centerlines (the query tools/street-safety/hin-injury-kinds.py makes). A residential block is
@@ -107,7 +109,7 @@ OUTPUTS
 
 Checks (stop on failure): >= 8,000 count rows, >= 9,000 residential blocks, >= 1,000 residential count-days with peak
 columns, K between 0.06 and 0.14, CHAMP >= 8,000 links with geometry, >= 50 blocks with both a count and SF-CHAMP,
-ACS tracts >= 200, one output row per residential block, people file 922 rows, >= 40 count-days per main classcode,
+ACS tracts >= 200, one output row per residential block, people file within street_safety_reads.PEOPLE_BAND of 922 rows, >= 40 count-days per main classcode,
 >= 150 main blocks with a pre-2020 count and SF-CHAMP, >= 15 pairs per model-volume band, >= 4,000 SF-CHAMP 2019 Base links, no main block summing two SF-CHAMP links that
 lie end to end along it (in_series()).
 """
@@ -122,13 +124,14 @@ import math
 import statistics
 import os
 import sys
-import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = Path(paths.ROOT)
 sys.path.insert(0, str(HERE))
 import sfdata  # noqa: E402
+from lib.fetch import read as read_url  # noqa: E402 - a named User-Agent; censusreporter refuses Python's default
+from lib import street_safety_reads  # noqa: E402
 from lib.stable import write_text  # noqa: E402
 
 # Downloads and caches too big to track live in the gitignored scratch/ folder, or wherever $SF_WORKS_SCRATCH names.
@@ -136,6 +139,7 @@ from lib.stable import write_text  # noqa: E402
 # needs a file there opens it, and stops naming the file when it is missing.
 SCR = Path(os.environ.get("SF_WORKS_SCRATCH") or ROOT / "scratch")
 COUNTS = SCR / "runs/citywide-speed/sfmta-corridor-counts.csv"
+COUNTS_URL = "https://www.sfmta.com/media/40635"   # corridor_counts_2014-2022.csv
 RUNS = SCR / "runs/hin-cut-through"
 POINTS = SCR / "runs/hin-injuries/points.geojson"
 SLOW = ROOT / "data/slow-streets/evaluations.csv"
@@ -467,6 +471,9 @@ def count_years(rows):
 
 
 def read_counts(blocks):
+    if not COUNTS.exists():   # a fixed file (2014 to 2022), read once per machine like the SF-CHAMP tables below
+        COUNTS.parent.mkdir(parents=True, exist_ok=True)
+        COUNTS.write_bytes(read_url(COUNTS_URL, timeout=300))
     rows = list(csv.DictReader(open(COUNTS, encoding="latin-1")))
     check(len(rows) >= 8000, "corridor count file has >= 8,000 rows (%d)" % len(rows))
     years, date_fix = count_years(rows)
@@ -829,9 +836,9 @@ def champ_links():
     RUNS.mkdir(parents=True, exist_ok=True)
     fb, fv = RUNS / "hwy_base2020.json", RUNS / "hwynet_DAILY.json"
     if not fb.exists():
-        fb.write_bytes(urllib.request.urlopen(CHAMP_API + "hwy_base2020?select=streetname,ft,a_b,geometry&limit=60000", timeout=300).read())
+        fb.write_bytes(read_url(CHAMP_API + "hwy_base2020?select=streetname,ft,a_b,geometry&limit=60000", timeout=300))
     if not fv.exists():
-        fv.write_bytes(urllib.request.urlopen(CHAMP_API + "hwynet_weekday?time_period=eq.DAILY&select=a,b,ft,v_1&limit=100000", timeout=300).read())
+        fv.write_bytes(read_url(CHAMP_API + "hwynet_weekday?time_period=eq.DAILY&select=a,b,ft,v_1&limit=100000", timeout=300))
     basel, vol = json.load(open(fb)), json.load(open(fv))
     check(len(basel) >= 8000, "SF-CHAMP hwy_base2020 links >= 8,000 (%d)" % len(basel))
     V = {(r["a"], r["b"]): r["v_1"] or 0 for r in vol}
@@ -969,7 +976,7 @@ def modelled_main(mains, items):
 def tract_vehicles():
     f = RUNS / "acs-b25044-tracts.json"
     if not f.exists():
-        f.write_bytes(urllib.request.urlopen(ACS_URL, timeout=120).read())
+        f.write_bytes(read_url(ACS_URL, timeout=120))
     d = json.load(open(f))
     out = {}
     for g, t in d["data"].items():
@@ -1324,7 +1331,7 @@ def main():
     if not dtx_f.exists():
         feats, off = [], 0
         while True:
-            page = json.load(urllib.request.urlopen(DTX_URL + str(off), timeout=120))["features"]
+            page = json.loads(read_url(DTX_URL + str(off), timeout=120))["features"]
             feats += [f["attributes"] for f in page]
             if len(page) < 2000:
                 break
@@ -1337,7 +1344,8 @@ def main():
 
     # People hurt on residential streets, 2022 to 2024: the busiest residential block within NEAR_FT with a figure.
     G = json.load(open(POINTS))
-    check(len(G["features"]) == 922, "people file has 922 rows (%d)" % len(G["features"]))
+    bad = street_safety_reads.people_in_band(len(G["features"]))
+    check(not bad, "people file: %s" % (bad or "%d rows, within the band" % len(G["features"])))
     GR = Grid([(b["P"], c) for c, b in res.items()])
     by_cnn = {r["cnn"]: r for r in rows}
     rank = {k: i for i, k in enumerate(KINDS)}
@@ -1398,7 +1406,7 @@ def main():
     mrows = [r for r in rows if r["kind"] == "measured"]
     summary = {
         "about": "Residential blocks (centerline classcode 5, STREETS layers) and main-street blocks (main_streets) by "
-                 "two-way peak-hour vehicles, by how the volume was found. See scripts/hin-cut-through.py.",
+                 "two-way peak-hour vehicles, by how the volume was found. See tools/street-safety/hin-cut-through.py.",
         "sources": {"centerlines": ctag, "counts": "SFMTA Corridor Counts CSV, https://www.sfmta.com/media/40635",
                     "slow_streets": "data/slow-streets/evaluations.csv", "champ": CHAMP_API + "hwynet_weekday",
                     "housing": "data/extract/census-blocks/2020.json", "vehicles": ACS_URL, "people": G.get("sources")},

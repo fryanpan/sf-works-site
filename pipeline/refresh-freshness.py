@@ -85,8 +85,10 @@ def _month_end(ym):
 #  Upgrade a Bus Line (site/data/muni-optimizer/<month>.json, the newest file; tools/muni/muni-ewt/optimizer_build.py):
 #  its step runs daily, but its "Data updated" date is the older of the dates 511's newest month and SFMTA's crowding
 #  file were read, and both move about monthly, so the date itself has no daily bound (interval None); the newest month
-#  it covers may end up to 40 days back, as the dashboard's. Read only while its step is on the schedule: a sixth
-#  field names the step, and a step in MANUAL is left out here as stale() leaves it out.
+#  it covers may end up to 40 days back, as the dashboard's, which is the alarm for a month its build is still waiting
+#  on (optimizer_build.waiting_on). A sixth field names the step; while a step is in MANUAL its read date isn't held
+#  to an interval, since nothing reruns it, but the newest period's bound still is, so a held tool can't go stale
+#  unseen.
 PUBLISHED = [
     ("site/data/muni.json", 1, lambda d: d.get("read"),
      lambda d: _month_end(d["windows"]["30"]["months"][1]), 40),
@@ -102,7 +104,7 @@ def published_stale(now):
     root = paths.ROOT
     for rel, days, read_of, newest_of, lag, *step in PUBLISHED:
         if step and TU.interval_days(step[0]) is None:
-            continue
+            days = None
         try:
             path = os.path.join(root, rel)
             if rel.endswith("/"):  # one file a month: the newest
@@ -139,7 +141,10 @@ def main():
     if pub:
         print("freshness FAILED: %d published file(s) past their interval:" % len(pub))
     for rel, what, days, age in pub:
-        print("  %-30s %s, %s days ago (allowed %d)" % (rel, what, "?" if age is None else age, 2 * days if what.startswith("data read") else days))
+        if age is None:  # the file is missing or unreadable: no age and maybe no interval to print
+            print("  %-30s %s" % (rel, what))
+            continue
+        print("  %-30s %s, %s days ago (allowed %d)" % (rel, what, age, 2 * days if what.startswith("data read") else days))
     return 1
 
 

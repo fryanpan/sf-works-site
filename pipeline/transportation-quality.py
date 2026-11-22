@@ -12,7 +12,7 @@ path the step can write (SPECS[step].paths); after it, it runs the step's
 checks against the new data, with the snapshot as the previous data for the
 row-count bound. A failing check puts the snapshot back, records the failure
 in data/pipeline-state/sources.json, skips every build step, and exits 1
-naming the check. The checks themselves are the five in scripts/lib/quality.py.
+naming the check. The checks themselves are the five in lib/quality.py.
 
 Each spec also says what the source's change marker is and what an update
 re-reads, so --inventory prints the table docs/product/transportation-pipeline.md
@@ -24,6 +24,7 @@ max_drop bound against the previous data.
 import pathlib, sys  # noqa: E401  (the repo root is the nearest folder above that holds lib/paths.py)
 sys.path.insert(0, str(next(p for p in pathlib.Path(__file__).resolve().parents if (p / "lib" / "paths.py").is_file())))
 from lib import paths  # noqa: E402
+import calendar
 import collections
 import csv
 import glob
@@ -61,17 +62,25 @@ SOCRATA_RULES = {
     "bp3t-bd4t": dict(required=[("cnn", 0.10)]),
     "btxj-k9uh": dict(required=["dotmapsid", "cnn"],
                       dates={"start_date": ("1990-01-01", "2080-01-01"), "end_date": ("1990-01-01", "2080-01-01")}),
-    # SFUSD elementary attendance areas (2024-25), for scripts/school-travel-time.py.
+    # SFUSD elementary attendance areas (2024-25), for lib/school-travel-time.py.
     "e6tr-sxwg": dict(key="objectid_1", required=["the_geom", "sch_lng_na"]),
     "i28k-bkz6": dict(key="objectid"),
     "ygmz-vaxd": dict(key="objectid", required=[("cnn", 0.01)]),
     "hkz3-itiu": dict(required=["cnn"]),
     # The full access map's parks (Rec and Park properties) and commercial districts (Planning's zoning map),
-    # read by scripts/full-map-destinations.py. Measured 2026-10-23: 255 and 10,617 rows.
+    # read by tools/travel/full-map-destinations.py. Measured 2026-10-23: 255 and 10,617 rows.
     "gtr9-ntp6": dict(key="property_id", required=["property_id", "property_name", "propertytype", "acres", "shape"],
                       dates={"last_edited_date": ("2000-01-01", "+2")}),
     "3i4a-hu95": dict(required=["the_geom", "zoning_sim"]),
+    # The Street Safety map's crash reads (tools/street-safety/street-safety-crashes.py, which also checks unique keys, allowing the
+    # identical repeats DataSF carries, and the victims-to-crashes join before a re-read replaces a held copy).
+    "nwes-mmgh": dict(required=["case_id_pkey", "collision_datetime"], dates={"collision_datetime": ("2005-01-01", "+1")}),
+    "8gtc-pjc6": dict(required=["case_id_pkey", "party_number_ckey", "collision_datetime"],
+                      dates={"collision_datetime": ("2005-01-01", "+1")}),
+    "ubvf-ztfx": dict(required=["case_id_pkey", "collision_datetime"], dates={"collision_datetime": ("2005-01-01", "+1")}),
+    "dau3-4s8f": dict(required=["unique_id", "collision_datetime"], dates={"collision_datetime": ("2005-01-01", "+1")}),
 }
+STREET_SAFETY_CRASHES = ("nwes-mmgh", "8gtc-pjc6", "ubvf-ztfx", "dau3-4s8f")   # lib/street_safety_reads.py DATASETS
 
 
 class Spec(object):
@@ -2019,6 +2028,94 @@ def muni_satisfaction_checks(root):
                   required=["year", "good_or_excellent_pct"])]
 
 
+DELIVERED_MODE_MAX_LAG_DAYS = 75  # our bound: SFMTA had October 2026 whole by 20 November, so a month late is two missed
+
+
+def muni_delivered_by_mode_checks(root):
+    """tools/muni/muni-ewt/fetch_delivered_by_mode.py: SFMTA's share of scheduled service delivered, by mode and month
+    (the script checks the table it read before it replaces the file). Here: no mode-month lost, each once, both coach
+    modes in every month from 2022 on, shares in range, and the newest month recent enough."""
+    import datetime as _dt
+    rows = _csv("data/muni-ewt/lever/delivered_by_mode.csv")
+
+    def share(x):
+        try:
+            return None if 0 <= float(x["delivered"]) <= 1 and int(x["days"]) >= 1 else "%s %s: delivered %s over %s days" % (x["month"], x["mode"], x["delivered"], x["days"])
+        except ValueError:
+            return "%s %s: delivered %r, days %r" % (x["month"], x["mode"], x["delivered"], x["days"])
+
+    def months(r):
+        d = rows(r)
+        if d is None:
+            return None
+        by = collections.defaultdict(set)
+        for x in d:
+            by[x["month"]].add(x["mode"])
+        return [{"month": m, "modes": v} for m, v in sorted(by.items())]
+
+    def coaches(x):
+        return None if x["month"] < "2022-01" or {"motor", "trolley"} <= x["modes"] else "%s has %s" % (x["month"], sorted(x["modes"]))
+
+    def newest(r):  # the newest month SFMTA has every day of; the month in progress is written with its days so far
+        d = rows(r)
+        if d is None:
+            return None
+        whole = sorted({x["month"] for x in d if x["mode"] == "motor" and x["days"].isdigit() and
+                        int(x["days"]) >= calendar.monthrange(int(x["month"][:4]), int(x["month"][5:7]))[1]})
+        return [{"month": whole[-1]}] if whole else [{"month": "2014-07"}]
+
+    def fresh(x):
+        y, m = int(x["month"][:4]), int(x["month"][5:7])
+        end = _dt.date(y + (m == 12), m % 12 + 1, 1) - _dt.timedelta(days=1)
+        lag = (_dt.date.fromisoformat(date_today()) - end).days
+        return None if lag <= DELIVERED_MODE_MAX_LAG_DAYS else "newest month %s ended %d days ago" % (x["month"], lag)
+    return [
+        Table("muni/delivered-by-mode", rows, floor=560, max_drop=0.0, key=lambda x: (x["month"], x["mode"]),
+              required=["month", "mode", "delivered", "days"], dates={_month: ("2014-07-01", "+0")}),
+        Each("muni/delivered-by-mode/share", rows, share, "delivered between 0 and 1 over at least one day"),
+        Each("muni/delivered-by-mode/coaches", months, coaches, "motor and trolley coach in every month from 2022"),
+        Each("muni/delivered-by-mode/newest-month", newest, fresh,
+             "newest whole month ended at most %d days before the run" % DELIVERED_MODE_MAX_LAG_DAYS),
+    ]
+
+
+TIMETABLE_MONTH_LINES = 40  # lines with a weekday gap a month's timetable has (timetable_month.py's own floor)
+
+
+def muni_timetable_history_checks(root):
+    """tools/muni/muni-ewt/timetable_month.py: each line's timetable by month from 511's archive. Here: no line-month
+    lost, each once, the newest month with a weekday gap for TIMETABLE_MONTH_LINES lines or more, and gaps in range."""
+    rows = _csv("data/muni-ewt/optimizer/timetable_month.csv")
+
+    def gaps(x):
+        bad = []
+        for k in ("day", "eve", "sat", "sun"):
+            if x.get(k) not in ("", None):
+                try:
+                    if not 1 <= float(x[k]) <= 180:
+                        bad.append("%s %s" % (k, x[k]))
+                except ValueError:
+                    bad.append("%s %r" % (k, x[k]))
+        return "%s %s: %s" % (x["line"], x["month"], ", ".join(bad)) if bad else None
+
+    def newest(r):
+        d = rows(r)
+        if not d:
+            return None
+        m = max(x["month"] for x in d)
+        return [{"month": m, "n": sum(1 for x in d if x["month"] == m and x.get("day") not in ("", None))}]
+
+    def enough(x):
+        return None if x["n"] >= TIMETABLE_MONTH_LINES else "%s has a weekday gap for %d lines" % (x["month"], x["n"])
+    return [
+        Table("muni/timetable-history", rows, floor=3800, max_drop=0.0, key=lambda x: (x["line"], x["month"]),
+              required=["line", "month", "weekdays"], dates={_month: ("2022-01-01", "+0")}),
+        Each("muni/timetable-history/gaps", rows, gaps, "minutes between buses from 1 to 180"),
+        Each("muni/timetable-history/newest-month", newest, enough,
+             "the newest month has a weekday gap for %d lines or more" % TIMETABLE_MONTH_LINES),
+    ]
+
+
 def muni_ridership_checks(root):
     """tools/muni/muni-ewt/fetch_ridership.py: SFMTA's average daily boardings by route, month and day type, and its
     own systemwide weekday figure (the script itself checks the two agree to 1% before writing)."""
@@ -2322,7 +2419,10 @@ def muni_optimizer_checks(root):
         want = (((muni.get("windows") or {}).get("90") or {}).get("monthList") or [None])[-1]
         if h["_file"] != h.get("month", "") + ".json":
             return "%s holds month %s" % (h["_file"], h.get("month"))
-        return None if h.get("month") == want else "results are for %s, the dashboard's newest month is %s" % (h.get("month"), want)
+        # the month before passes too: the build waits there until the new month's timetable and delivered share are
+        #   in (optimizer_build.waiting_on), and the newest-month check below bounds how long
+        prev = None if not want else "%04d-%02d" % ((int(want[:4]), int(want[5:7]) - 1) if want[5:7] != "01" else (int(want[:4]) - 1, 12))
+        return None if h.get("month") in (want, prev) else "results are for %s, the dashboard's newest month is %s" % (h.get("month"), want)
 
     def date_ok(h):
         read = h.get("sourcesRead") or {}
@@ -2342,7 +2442,7 @@ def muni_optimizer_checks(root):
         Each("muni-optimizer/grid", lines, grid_ok, "every grid series has one value per combination of the fixes' units"),
         Each("muni-optimizer/today", lines, today_ok,
              "speed 3 to 20 mph; expected wait absent or 1 to 30 min and the sum of its two parts; crowded share absent or 0 to 1"),
-        Each("muni-optimizer/month", head, month_ok, "the newest file is named for its month, and that month is the dashboard's newest"),
+        Each("muni-optimizer/month", head, month_ok, "the newest file is named for its month, and that month is the dashboard's newest or the one before"),
         Each("muni-optimizer/data-updated", head, date_ok, "dataUpdated is the older of the dates its sources were read, and not after today"),
         Each("muni-optimizer/newest-month", head, fresh, "newest month ended at most %d days before the run" % OPTIMIZER_MAX_LAG_DAYS),
     ]
@@ -2509,6 +2609,15 @@ SPECS = {
                            "SFMTA's Tableau download carries no Last-Modified or ETag, so the bound is the whole file",
                            "the whole CSV (about 110 KB) every run, written only when its rows differ",
                            "tools/muni/muni-ewt/sfmta_crowding.py --update"),
+    "muni-delivered-by-mode": Spec(["data/muni-ewt/lever/delivered_by_mode.csv"], muni_delivered_by_mode_checks,
+                                   "SFMTA's transtat view carries no Last-Modified or ETag, so the bound is the whole table",
+                                   "the whole CSV (about 1 MB) every run, written only when its rows differ",
+                                   "tools/muni/muni-ewt/fetch_delivered_by_mode.py --update"),
+    "muni-timetable-history": Spec(["data/muni-ewt/optimizer/timetable_month.csv"], muni_timetable_history_checks,
+                                   "a DONE file under ~/muni-511/history/regional-<month>-so-sf on the VM, for a month "
+                                   "later than the tracked file's newest",
+                                   "only the months the tracked file lacks; none off the VM",
+                                   "pipeline/venv-step.py tools/muni/muni-ewt/timetable_month.py --update"),
     "muni-optimizer": Spec(["site/data/muni-optimizer/*.json"], muni_optimizer_checks,
                            "none: a build step, run when its inputs change", "nothing fetched",
                            "pipeline/venv-step.py tools/muni/muni-ewt/optimizer_build.py"),
@@ -2522,6 +2631,12 @@ SPECS = {
                                 "on a change, this year's and last year's queries of each table, and an older year's once its "
                                 "copy is 90 days old; then only the card files whose inputs hash differently",
                                 "tools/street-safety/street-safety-cards.py --update"),
+    "street-safety-crashes": Spec(["data/socrata-cache/street-safety/*"],
+                                  socrata_checks(STREET_SAFETY_CRASHES, cache="data/socrata-cache/street-safety"),
+                                  "DataSF rowsUpdatedAt, to the second, for each of nwes-mmgh, 8gtc-pjc6, ubvf-ztfx and dau3-4s8f",
+                                  "every query in lib/street_safety_reads.py QUERIES with no held copy, and on a "
+                                  "change every query of that table",
+                                  "tools/street-safety/street-safety-crashes.py --update"),
     "telraam": Spec(["data/extract/telraam/segments.json"], telraam_checks,
                     "Telraam publishes no change marker, so the bound is time: closed three-month chunks are kept, the open "
                     "one is re-read once per window end, and a snapshot every 14 days finds new segments",
@@ -2677,6 +2792,7 @@ SOURCE_NAMES = {
     "muni-511": "511 SF Bay historic stop observations, Muni, monthly (processed on the VM)",
     "muni-service-delivered": "Controller's scorecard measures, DataSF kc49-udxn, measure 441 (SFMTA service hours delivered)",
     "sfpd-crime": "DataSF wg3w-h783, Police Department Incident Reports: 2018 to Present",
+    "street-safety-crashes": "DataSF nwes-mmgh, 8gtc-pjc6, ubvf-ztfx (Traffic Crashes Resulting in Injury: victims, parties, crashes) and dau3-4s8f (Vision Zero fatality log), the Street Safety map's and the injury pages' queries",
     "street-safety-cards": "DataSF ubvf-ztfx, 8gtc-pjc6 and nwes-mmgh (Traffic Crashes Resulting in Injury: crashes, parties, victims), one query a year from 2005",
     "telraam": "Telraam API v1 (telraam-api.net): residents' window traffic counters in SF, hourly per segment",
     "muni-satisfaction": "SFMTA, Customer rating: Overall customer satisfaction with Muni (transtat.sfmta.com)",

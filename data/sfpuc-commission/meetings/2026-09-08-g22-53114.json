@@ -5,7 +5,8 @@
  "status": "final",
  "sources": {
   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53114",
-  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
+  "minutes": "https://www.sfpuc.gov/sites/default/files/about-us/commission/9.8.2026_M.pdf"
  },
  "fetched": "2026-11-10",
  "form": "html",
@@ -20,7 +21,8 @@
   },
   {
    "no": "3",
-   "title": "Approval of the Minutes of July 28, 2026"
+   "title": "Approval of the Minutes of July 28, 2026",
+   "decision": "approve the Minutes of July 28, 2026"
   },
   {
    "no": "4",
@@ -35,28 +37,148 @@
    "title": "CONSENT CALENDAR"
   },
   {
+   "no": "6a",
+   "title": "Ratify correction of the contract award duration for Contract No. HH-1019, 2023 Storms Remaining Road Repairs, under Resolution No. 26-0095, adopted by the Commission on June 23, 2026, from 365 consecutive calendar days to 360 consecutive calendar days. The agenda item and award resolution incorrectly identified the duration as 365 consecutive calendar days, when the conformed specifications in the contract, identified it correctly as 360 consecutive calendar days",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0095",
+   "from": "minutes"
+  },
+  {
+   "no": "6b",
+   "title": "Award Contract Nos. PRO.0346.A-B, As-Needed Curb Ramp Engineering Design Services, to AGS Inc. (PRO.0346.A) and Water Resources Engineering, Inc. (PRO.0346.B), each for an amount not-to exceed $4,000,000 and with a duration of five years, to provide as-needed curb ramp engineering design and support during construction for the City’s water, wastewater, and power systems",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0134",
+   "from": "minutes"
+  },
+  {
+   "no": "6c",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-112, General Engineering (A-License) Construction, San Joaquin, Stanislaus, and Tuolumne Counties, Hetch Hetchy, with Sinclair General Engineering Construction, Inc., to increase the contract not-to-exceed amount by $2,500,000, for a revised not-to- exceed contract amount of $7,500,000, with no change to the contract duration, to provide additional capacity for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0135",
+   "from": "minutes"
+  },
+  {
+   "no": "6d",
+   "title": "Award Job Order Contract No. JOC-118, Electrical (C-10 License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of two years, to the responsible bidder that submitted the lowest responsive bid, U.S. Electric Technologies, Inc., to perform C-10 licensed electrical construction work on San Francisco Public Utilities Commission systems and operations around the Bay Area",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0136",
+   "from": "minutes"
+  },
+  {
+   "no": "6e",
+   "title": "Award Job Order Contract No. JOC-117, General Building (B-License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of two years, to the sole responsible bidder that submitted a responsive bid, City Building, Inc., to perform B-licensed general building construction work on San Francisco Public Utilities Commission systems and operations around the Bay Area",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0137",
+   "from": "minutes"
+  },
+  {
+   "no": "6f",
+   "title": "Approve Modification No. 1 to Job Order Contract No. JOC-111, General Engineering (A-License) Construction, San Francisco, San Mateo, Santa Clara, and Alameda Counties, with GSW Construction, Inc., to increase the contract not-to-exceed amount by $2,500,000, for a revised not-to-exceed contract amount of $7,500,000, with no change to the contract duration, to provide additional capacity for facility and asset improvements",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0138",
+   "from": "minutes"
+  },
+  {
+   "no": "6g",
+   "title": "Award Job Order Contract No. JOC-114, General Engineering (A-License) Construction, San Francisco, Santa Mateo, Santa Clara, and Alameda Counties, in the amount not-to-exceed $5,000,000, with a guaranteed minimum task order opportunity amount of $50,000, and a duration of two years, to the responsible bidder that submitted the lowest responsive bid, Corcus Construction, Inc., to perform A-licensed general engineering construction work on San Francisco Public Utilities Commission systems and operations around the San Francisco Bay Area",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0139",
+   "from": "minutes"
+  },
+  {
+   "no": "6h",
+   "title": "Approve an increase of 180 calendar days (approximately six months) to the existing duration contingency for Contract No. WD-2901, San Andreas Pipeline 3 – Drainage & Erosion Repair at Junipero Serra Park, with JDB & Sons Construction, Inc., for a revised duration limit of up to 576 consecutive calendar days (approximately one year and seven months), due to unforeseen poor soil conditions that required field modifications to a storm drain pipe, leading to a delay in completion of the contract work, with no change to the contract amount",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0140",
+   "from": "minutes"
+  },
+  {
+   "no": "6i",
+   "title": "Approve Amendment No. 1 to Contract Nos. PRO.0308.A-D, As-Needed Engineering Design Services, with AECOM Technical Services, Inc. and Water Resources Engineering, Joint Venture (AECOM-WRE, JV) (PRO.0308.A); Kennedy/Jenks Consultants and AGS, Joint Venture (KJ-AGS, JV) (PRO.0308.B); Brown and Caldwell and Joe Hill Consulting & Engineering Corporation, Joint Venture (BC-JHCE, JV) (PRO.0308.C); and Stantec Consulting, Inc. and SRT Consultants, Inc., Joint Venture (Stantec-SRT, JV) (PRO.0308.D) increasing each contract amount by $2,400,000, for a total not-to- exceed contract amount of $7,200,000 each contract, with no change to the contract durations, to continue providing as-needed professional engineering design services necessary for the design and construction of improvements to various San Francisco Public Utilities Commission facilities",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0141",
+   "from": "minutes"
+  },
+  {
+   "no": "6j",
+   "title": "Approve Modification No. 1 to Contract No. WW-720, As-Needed Main Sewer Replacement No. 10, with Mitchell Engineering, increasing the contract duration by 365 consecutive calendar days, to allow the San Francisco Public Utilities Commission staff to continue to issue contract service orders and provide time for the contractor to perform construction scope, for a revised contract duration of 1,095 consecutive calendar days (approximately three years), with no change to the contract amount",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0142",
+   "from": "minutes"
+  },
+  {
+   "no": "6k",
+   "title": "Approve an increase of $1,021,000 to the cost contingency and 90 calendar days to the duration contingency for Contract No. HH-1017, Warnerville Substation Rehabilitation – Phase 2, with Big Valley Electric, for a revised contract cost limit of $8,385,500 and a revised contract duration limit of 696 consecutive calendar days (approximately one year and eleven months). This additional contingency is needed to address owner-requested changes, compliance with updated safety and regulatory requirements, hazardous materials abatement, and compatibility with Pacific Gas & Electric Company standards",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0143",
+   "from": "minutes"
+  },
+  {
+   "no": "6l",
+   "title": "Award Contract No. WD-2885, 8-Inch Ductile Iron Water Main Replacement, Sewer Replacement, and Paving Renovation on Fulton Street from Great Highway to 31st Avenue and on Various Side Streets, to the responsible bidder that submitted the lowest responsive bid, KJ Woods Construction, Inc., in the amount of $9,888,000 and with a duration of 630 consecutive calendar days (approximately one year and eight months), to install water mains and sewer lines in the Outer Richmond neighborhood of San Francisco. The Planning Department has determined that the Project is exempt from the California Environmental Quality Act (CEQA), and the Commission will rely on that determination to make its decision on this action. This action constitutes the Approval Action for the Project for the purposes of the CEQA pursuant to San Francisco Administrative Code Section 31.04(h)",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0144",
+   "from": "minutes"
+  },
+  {
+   "no": "6m",
+   "title": "Approve Amendment No. 1 to Contract No. CS-1248, Equipment and Software Maintenance, with Schneider Electric Systems USA, Inc., increasing the contract amount by $5,352,254, and increasing the contract duration by five years, for a total not-to-exceed contract amount of $6,897,586, and a total contract duration of eight years, due to ongoing maintenance that is needed for the existing Wastewater Enterprise distributed control system",
+   "parent": "CONSENT CALENDAR",
+   "decision": "approve the Consent Calendar",
+   "resolution": "26-0145",
+   "from": "minutes"
+  },
+  {
    "no": "7",
-   "title": "Update on General Manager selection process"
+   "title": "Update on General Manager selection process",
+   "text": "Update on General Manager selection process. (Discussion only) President Arce thanked Commissioner Stacy for her role, expertise, and experience representing the Commission to recruit the next SFPUC General Manager (GM) and asked Commissioner Stacy for an update. Commissioner Stacy reported that the San Francisco Department of Human Resources (DHR) selected CPS Human Resources Consulting Services from the City’s list of qualified consultants and the contract was finalized on August 26, 2026. The plan is for CPS to post the job listing within the next few days and Commissioner Stacy thanked Mr. Sherburne (Assistant Director, Employment Services) and Mr. Bito (Human Resources Manager, Employment Services) for their assistance, support, and expertise. Commissioner Stacy stated the Commission seeks as much input as possible from members of the public and employees and explained there will be two separate surveys posted, one on the SFPUC website for the public and a second posted internally for SFPUC employee access. Commissioner Stacy encouraged feedback anytime the GM selection process is agendized to help inform priorities and named the Citizens’ Advisory Committee (CAC) hoping they include the GM selection as a future agenda discussion item and the Commissioner also encouraged feedback from BAWSCA, and other stakeholders. The Commissioner stated the résumé submittal date is October 16 th if everything goes according to plan and the Commissioner review will commence shortly the"
   },
   {
    "no": "8",
-   "title": "Public Hearing - 1) the proposed “Electric"
+   "title": "Public Hearing - 1) the proposed “Electric",
+   "decision": "approve Item 8 as amended to include a report to the Commission in",
+   "resolution": "26-0146",
+   "text": "Public Hearing to consider possible action to approve: 1) the proposed “Electric Schedule NBT-CleanPowerSF, Net Billing Tariff” (CleanPowerSF Net Billing Tariff) and 2) a revised “Electric Schedule NEM-CleanPowerSF, Net Energy Metering” (NEM Tariff) both to be effective the first day of the May 2027 billing period. CleanPowerSF Net Billing Tariff may also be referred to as the “Solar Billing Plan” in customer-facing communications. The Planning Department has determined that the Project is exempt from the California Environmental Quality Act (CEQA), and the Commission will rely on that determination to make its decision on this action. This action constitutes the Approval Action for the Project for the purposes of the CEQA pursuant to San Francisco Administrative Code Section 31.04(h)"
   },
   {
    "no": "9",
-   "title": "Approve the Water Supply Assessment for the proposed Treasure Island Residential Program Modification Project"
+   "title": "Approve the Water Supply Assessment for the proposed Treasure Island Residential Program Modification Project",
+   "decision": "approve Item 9",
+   "resolution": "26-0147",
+   "text": "Approve the Water Supply Assessment for the proposed Treasure Island Residential Program Modification Project, pursuant to California Water Code Section 10910 et seq., California Environmental Quality Act (CEQA) Section 21151.9, and CEQA Guidelines Section 15155"
   },
   {
    "no": "10",
-   "title": "Adopt a refined Mitigation Monitoring and Reporting Program pursuant to the California Environmental Quality Act CEQA and award Contract No. WD-2915"
+   "title": "Adopt a refined Mitigation Monitoring and Reporting Program pursuant to the California Environmental Quality Act CEQA and award Contract No. WD-2915",
+   "decision": "approve Item 10",
+   "resolution": "26-0148",
+   "text": "Adopt a refined Mitigation Monitoring and Reporting Program pursuant to the California Environmental Quality Act (CEQA) and award Contract No. WD-2915, Crystal Springs Pipeline No. 2 Reach 5 Lining Replacement, to the responsible bidder that submitted the lowest responsive bid, Mitchell Engineering, in the amount of $63,102,346 and with a duration of 960 consecutive calendar days (approximately two years and eight months), to rehabilitate 3.8 miles of 60-inch diameter transmission pipeline by replacing its lining, upgrading appurtenances, renewing wholesale customer service connections, and installing large diameter valves"
   },
   {
    "no": "11",
-   "title": "Award Contract No. WW-770, Oceanside Water Pollution Control Plant HVAC Upgrades, to the responsible bidder that submitted the lowest responsive bid, Monterey Mechanical Co., in the amount of $22,309,000"
+   "title": "Award Contract No. WW-770, Oceanside Water Pollution Control Plant HVAC Upgrades, to the responsible bidder that submitted the lowest responsive bid, Monterey Mechanical Co., in the amount of $22,309,000",
+   "decision": "approve Item 11",
+   "resolution": "26-0149",
+   "text": "Award Contract No. WW-770, Oceanside Water Pollution Control Plant HVAC Upgrades, to the responsible bidder that submitted the lowest responsive bid, Monterey Mechanical Co., in the amount of $22,309,000 and with a duration of 790 consecutive calendar days (approximately two years and two months), to upgrade ventilation systems of several structures on site. The work includes selective demolition, installation of structural supports for mechanical and Heating, Ventilation and Air Conditioning equipment and systems; modifications to existing ventilation systems, and all associated electrical work, including conduit, wiring, panels, and devices at various structures in the Oceanside Water Pollution Control Plant"
   },
   {
    "no": "12",
-   "title": "Approve Amendment No. 2 to Contract No. CS-249, Planning and Design Services, Mountain Tunnel Improvements, with Jacobs Associates, Inc., dba Delve Underground, formerly known as McMillen Jacobs Associates, Inc."
+   "title": "Approve Amendment No. 2 to Contract No. CS-249, Planning and Design Services, Mountain Tunnel Improvements, with Jacobs Associates, Inc., dba Delve Underground, formerly known as McMillen Jacobs Associates, Inc.",
+   "decision": "approve Item 12",
+   "resolution": "26-0150",
+   "text": "Approve Amendment No. 2 to Contract No. CS-249, Planning and Design Services, Mountain Tunnel Improvements, with Jacobs Associates, Inc., dba Delve Underground, formerly known as McMillen Jacobs Associates, Inc., increasing the contract amount by $2,000,000, for a total not-to-exceed contract amount of $30,780,000, with no change to the contract duration, to continue providing specialized engineering services for the Mountain Tunnel Improvements Project, subject to Board of Supervisors approval under Charter Section 9.118"
   },
   {
    "no": "13",
@@ -64,7 +186,8 @@
   },
   {
    "no": "14",
-   "title": "Items initiated by Commissioners"
+   "title": "Items initiated by Commissioners",
+   "text": "Items initiated by Commissioners (discussion only) No items were initiated by Commissioners"
   },
   {
    "no": "15",
@@ -76,11 +199,13 @@
   },
   {
    "no": "17",
-   "title": "Report following Closed Session"
+   "title": "Report following Closed Session",
+   "text": "Report following Closed Session President Arce reported that the Commission recommends the Board of Supervisors approve the settlements referenced under Item 16"
   },
   {
    "no": "18",
-   "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a)."
+   "title": "Motion regarding whether to disclose the discussion during Closed Session pursuant to San Francisco Administrative Code Section 67.12(a).",
+   "decision": "not to disclose the discussion during Closed Session"
   },
   {
    "no": "19",

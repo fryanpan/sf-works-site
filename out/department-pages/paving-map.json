@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10",
+ "generated": "2026-11-17",
  "source": "https://maps.sfdpw.org/arcgis/rest/services/Capital_Projects/Paving/MapServer",
  "page": "https://sfpublicworks.org/street-resurfacing",
  "contracts": [
@@ -413,8 +413,8 @@
    "jo": "10042210",
    "phase": "Planning",
    "projectedYear": "FY26-27",
-   "estStart": "Fall 2027",
-   "estEnd": "Winter 2029",
+   "estStart": "Winter 2028",
+   "estEnd": "Spring 2029",
    "blocks": 58
   },
   {
@@ -1927,7 +1927,7 @@
    "projectedYear": "FY26-27",
    "estStart": "Summer 2027",
    "estEnd": "Fall 2028",
-   "blocks": 58
+   "blocks": 60
   },
   {
    "contract": "Mission Street Safety Improvements Project",
@@ -3502,7 +3502,7 @@
    "projectedYear": "FY27-28",
    "estStart": "Fall 2028",
    "estEnd": "Winter 2030",
-   "blocks": 74
+   "blocks": 58
   },
   {
    "contract": "Various Locations Pavement Renovation No 104",
@@ -4015,7 +4015,7 @@
    "projectedYear": "FY32-33",
    "estStart": "Winter 2034",
    "estEnd": "Winter 2035",
-   "blocks": 42
+   "blocks": 49
   },
   {
    "contract": "Various Locations Pavement Renovation with Tracks No 1",

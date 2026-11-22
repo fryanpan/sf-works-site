@@ -6970,7 +6970,7 @@
   },
   "27873": {
    "asked": "2026-10-01",
-   "candidates": 23,
+   "candidates": 24,
    "conflicts": [],
    "constructionStage": "“2024” (Implementation: Quick-build implementation of initial improvements (Pending))",
    "costUsd": 0.032184,
@@ -8365,9 +8365,9 @@
   },
   "30111": {
    "asked": "2026-10-01",
-   "candidates": 7,
+   "candidates": 11,
    "conflicts": [],
-   "constructionStage": "“Early 2027” (Construction (Pending))",
+   "constructionStage": "“2027” (Construction (Pending))",
    "costUsd": 0.014104,
    "fields": {
     "construction_end": {
@@ -8406,8 +8406,8 @@
    },
    "hash": "456c32d55d2a61be0616568e95ee406d18c8f7cde1eef379071c670809c2f708",
    "inputTokens": 2891,
-   "latestDate": "2027-04-30",
-   "latestStageDate": "2027-04-30",
+   "latestDate": "2029-12-31",
+   "latestStageDate": "2029-12-31",
    "model": "claude-opus-5-5",
    "node": "30111",
    "outputTokens": 127,
@@ -13978,7 +13978,7 @@
   },
   "slug:embarcadero-connectivity-plan": {
    "asked": "2026-10-01",
-   "candidates": 12,
+   "candidates": 16,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.015316,
@@ -14199,7 +14199,7 @@
   },
   "slug:fillmore-street-transit-and-safety-project": {
    "asked": "2026-10-01",
-   "candidates": 8,
+   "candidates": 6,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.017732,
@@ -16365,7 +16365,7 @@
   },
   "slug:muni-art-program": {
    "asked": "2026-10-01",
-   "candidates": 4,
+   "candidates": 3,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.010684,
@@ -16385,7 +16385,7 @@
    },
    "hash": "35b68f7489a168816f101829365de393b9a7df7bf0ddcb9589e2bb7f9e10c031",
    "inputTokens": 2051,
-   "latestDate": "2023-12-31",
+   "latestDate": "2027-12-31",
    "latestStageDate": null,
    "model": "claude-opus-5-5",
    "node": "slug:muni-art-program",
@@ -17304,7 +17304,7 @@
   },
   "slug:planning-and-engineering-internship-program": {
    "asked": "2026-10-01",
-   "candidates": 10,
+   "candidates": 8,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.017264,
@@ -17461,22 +17461,29 @@
   },
   "slug:powell-street-safety-project": {
    "asked": "2026-10-01",
-   "candidates": 4,
+   "candidates": 3,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.01508,
    "fields": {
     "construction_end": {
-     "answer": "c4",
-     "confidence": 0.6,
-     "first": "2026-03-01",
-     "inCards": false,
-     "iso": "2026-03-31",
-     "label": "its line: … to …",
-     "last": "2026-03-31",
-     "line": "March 2025 to March 2026",
-     "span": "March 2026",
-     "value": "2026-03"
+     "answer": "predicted",
+     "confidence": 1.0,
+     "first": "2027-10-01",
+     "iso": "2027-11-30",
+     "jev": {
+      "answer": "c4",
+      "confidence": 0.6,
+      "inCards": false,
+      "label": "its line: … to …",
+      "line": "March 2025 to March 2026",
+      "span": "March 2026"
+     },
+     "label": "the page's Predicted Completion field",
+     "last": "2027-11-30",
+     "line": "Predicted Completion: Fall 2027",
+     "span": "Fall 2027",
+     "value": "2027-10"
     },
     "construction_start": {
      "answer": "c1",
@@ -17497,14 +17504,15 @@
    },
    "hash": "c5231345771baeb5f9b02fa03cbafe906e5db113baba60c0f1bdbdcd59484b0a",
    "inputTokens": 2365,
-   "latestDate": "2026-05-31",
-   "latestStageDate": "2026-05-31",
+   "latestDate": "2027-11-30",
+   "latestStageDate": "2027-11-30",
    "model": "claude-opus-5-5",
    "node": "slug:powell-street-safety-project",
    "outputTokens": 281,
-   "predictedCompletion": "March 2025 to March 2026",
+   "predictedCompletion": "Fall 2027",
    "projectStatus": [
-    "Implementation / Construction"
+    "Implementation / Construction",
+    "Current"
    ],
    "status": "answered",
    "title": "Powell Street Light Safety Project",
@@ -17813,7 +17821,7 @@
   },
   "slug:rail-work": {
    "asked": "2026-10-01",
-   "candidates": 8,
+   "candidates": 4,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.024976,
@@ -17849,7 +17857,7 @@
    },
    "hash": "9ad2f122b1e82765c87134819f82014c3d8ecb1091dd18e52bcdc2e4b1af34d7",
    "inputTokens": 4284,
-   "latestDate": "2026-11-30",
+   "latestDate": "2022-08-31",
    "latestStageDate": null,
    "model": "claude-opus-5-5",
    "node": "slug:rail-work",

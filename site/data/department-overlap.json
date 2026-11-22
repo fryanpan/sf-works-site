@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-20",
  "horizon": "2028-12-31",
  "adopted": "2025-03-04",
  "unit": "miles per direction of travel, the plan's unit",
@@ -8,25 +8,25 @@
   "feed": {
    "dataset": "btxj-k9uh",
    "url": "https://data.sf.gov/d/btxj-k9uh",
-   "queried": "2026-11-11",
-   "rows": 7541,
-   "jobs": 383
+   "queried": "2026-11-20",
+   "rows": 7596,
+   "jobs": 382
   },
   "sfmtaLayer": {
    "name": "SFMTA project layer, live from its ArcGIS service",
    "url": "https://www.sfmta.com/projects",
-   "generated": "2026-11-11"
+   "generated": "2026-11-20"
   },
   "plan": "[Biking and Rolling Plan, March 2025, Appendix L and North Star map \u2014 read 2026-09-29]",
   "layer": "[SFMTA ArcGIS Bicycle/bicycle layer 0 \u2014 queried 2026-11-10]",
   "pci": {
    "id": "78va-8dhi",
-   "tag": "[DataSF 78va-8dhi \u2014 queried 2026-11-10]",
-   "queried": "2026-11-10",
-   "rows": 307554,
-   "blocks": 18398,
-   "repaveEvents": 24794,
-   "repavedBlocks": 16226,
+   "tag": "[DataSF 78va-8dhi \u2014 queried 2026-11-19]",
+   "queried": "2026-11-19",
+   "rows": 307659,
+   "blocks": 18416,
+   "repaveEvents": 24871,
+   "repavedBlocks": 16249,
    "lightEvents": 3743,
    "undatedTreatments": 70,
    "widenedEventsAdded": 1172,
@@ -69,8 +69,8 @@
     "in construction": 14.2,
     "date passed, in design": 14.7,
     "2026": 2.1,
-    "2027": 9.1,
-    "2028": 18.3
+    "2027": 7.9,
+    "2028": 19.5
    },
    "laterOrUndated": 18.3,
    "endPassed": 0.0,
@@ -91,7 +91,7 @@
     "2027": 4.1,
     "2028": 2.7
    },
-   "laterOrUndated": 1.8,
+   "laterOrUndated": 3.0,
    "endPassed": 0.0,
    "projects": 28
   },
@@ -127,8 +127,8 @@
     "in construction": 9.7,
     "date passed, in design": 1.9,
     "2026": 1.0,
-    "2027": 5.8,
-    "2028": 8.5
+    "2027": 4.5,
+    "2028": 9.7
    },
    "streetscape and safety": {
     "in construction": 0.5,
@@ -150,15 +150,15 @@
   {
    "stage": "repaved",
    "from": "2025-04-01",
-   "to": "2026-10-29",
-   "could": 8.6,
+   "to": "2026-11-16",
+   "could": 8.9,
    "got": 0.9,
-   "blocks": 77,
+   "blocks": 81,
    "gotStreets": [
     "Folsom St",
     "Winston Dr"
    ],
-   "alreadyMet": 7.5,
+   "alreadyMet": 8.1,
    "undated": 0
   },
   {
@@ -167,16 +167,16 @@
     "in construction",
     "date passed, in design"
    ],
-   "could": 28.7,
+   "could": 28.2,
    "got": 7.2,
-   "blocks": 220,
+   "blocks": 215,
    "byScope": 0.0,
    "bySfmta": 7.2,
    "byCategory": {
-    "already": 13.54,
-    "none": 10.72,
+    "already": 13.05,
+    "none": 10.33,
     "met": 8.02,
-    "short": 11.51
+    "short": 11.33
    },
    "segments": [
     {
@@ -2692,102 +2692,6 @@
      ]
     },
     {
-     "cnn": "12759000",
-     "cat": "none",
-     "street": "TWIN PEAKS BLVD",
-     "wants": "Shared",
-     "has": "",
-     "job": "Various Locations Pavement Renovation No 69",
-     "slug": "429670",
-     "start": "2025-10",
-     "line": [
-      [
-       -122.44643,
-       37.76101
-      ],
-      [
-       -122.44658,
-       37.7609
-      ],
-      [
-       -122.44687,
-       37.76042
-      ],
-      [
-       -122.44695,
-       37.76017
-      ]
-     ]
-    },
-    {
-     "cnn": "12760000",
-     "cat": "none",
-     "street": "TWIN PEAKS BLVD",
-     "wants": "Shared",
-     "has": "",
-     "job": "Various Locations Pavement Renovation No 69",
-     "slug": "429670",
-     "start": "2025-10",
-     "line": [
-      [
-       -122.44695,
-       37.76017
-      ],
-      [
-       -122.44716,
-       37.75966
-      ],
-      [
-       -122.44739,
-       37.75937
-      ]
-     ]
-    },
-    {
-     "cnn": "12761000",
-     "cat": "none",
-     "street": "TWIN PEAKS BLVD",
-     "wants": "Shared",
-     "has": "",
-     "job": "Various Locations Pavement Renovation No 69",
-     "slug": "429670",
-     "start": "2025-10",
-     "line": [
-      [
-       -122.44739,
-       37.75937
-      ],
-      [
-       -122.44768,
-       37.75919
-      ],
-      [
-       -122.44808,
-       37.75909
-      ]
-     ]
-    },
-    {
-     "cnn": "12762000",
-     "cat": "none",
-     "street": "TWIN PEAKS BLVD",
-     "wants": "Shared",
-     "has": "",
-     "job": "Various Locations Pavement Renovation No 69",
-     "slug": "429670",
-     "start": "2025-10",
-     "line": [
-      [
-       -122.44808,
-       37.75909
-      ],
-      [
-       -122.44853,
-       37.75905
-      ]
-     ]
-    },
-    {
      "cnn": "1284000",
      "cat": "short",
      "street": "23RD ST",
@@ -3508,26 +3412,6 @@
      ]
     },
     {
-     "cnn": "2863000",
-     "cat": "already",
-     "street": "BEALE ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "Beale Street Improvement Project",
-     "slug": "9badf2",
-     "start": "2025-07",
-     "line": [
-      [
-       -122.39738,
-       37.79241
-      ],
-      [
-       -122.39581,
-       37.79115
-      ]
-     ]
-    },
-    {
      "cnn": "2864000",
      "cat": "already",
      "street": "BEALE ST",
@@ -3956,126 +3840,6 @@
       [
        -122.41316,
        37.77746
-      ]
-     ]
-    },
-    {
-     "cnn": "406000",
-     "cat": "already",
-     "street": "08TH ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
-     "slug": "ae412c",
-     "start": "2025-02-03",
-     "line": [
-      [
-       -122.41316,
-       37.77746
-      ],
-      [
-       -122.41262,
-       37.77703
-      ]
-     ]
-    },
-    {
-     "cnn": "407000",
-     "cat": "already",
-     "street": "08TH ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
-     "slug": "ae412c",
-     "start": "2025-02-03",
-     "line": [
-      [
-       -122.41262,
-       37.77703
-      ],
-      [
-       -122.41216,
-       37.77666
-      ]
-     ]
-    },
-    {
-     "cnn": "408000",
-     "cat": "already",
-     "street": "08TH ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
-     "slug": "ae412c",
-     "start": "2025-02-03",
-     "line": [
-      [
-       -122.41216,
-       37.77666
-      ],
-      [
-       -122.41161,
-       37.77622
-      ]
-     ]
-    },
-    {
-     "cnn": "409000",
-     "cat": "already",
-     "street": "08TH ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
-     "slug": "ae412c",
-     "start": "2025-02-03",
-     "line": [
-      [
-       -122.41161,
-       37.77622
-      ],
-      [
-       -122.41107,
-       37.77579
-      ]
-     ]
-    },
-    {
-     "cnn": "410000",
-     "cat": "already",
-     "street": "08TH ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
-     "slug": "ae412c",
-     "start": "2025-02-03",
-     "line": [
-      [
-       -122.41107,
-       37.77579
-      ],
-      [
-       -122.41061,
-       37.77543
-      ]
-     ]
-    },
-    {
-     "cnn": "411000",
-     "cat": "already",
-     "street": "08TH ST",
-     "wants": "Separated",
-     "has": "separated lane",
-     "job": "8th St, Clay St and Leavenworth St Pavement Renovation and Sewer Replacement",
-     "slug": "ae412c",
-     "start": "2025-02-03",
-     "line": [
-      [
-       -122.41061,
-       37.77543
-      ],
-      [
-       -122.41006,
-       37.77499
       ]
      ]
     },
@@ -4748,26 +4512,6 @@
       [
        -122.415,
        37.7709
-      ]
-     ]
-    },
-    {
-     "cnn": "5773000",
-     "cat": "short",
-     "street": "FRANCISCO ST",
-     "wants": "Shared",
-     "has": "painted lane",
-     "job": "Various Locations Pavement Renovation No 81 and Sewer Replacement",
-     "slug": "41fa0d",
-     "start": "2026-01-12",
-     "line": [
-      [
-       -122.42821,
-       37.80279
-      ],
-      [
-       -122.42986,
-       37.80258
       ]
      ]
     },
@@ -7782,7 +7526,7 @@
    "byScope": 0.1,
    "bySfmta": 3.6,
    "byCategory": {
-    "already": 13.16,
+    "already": 13.53,
     "none": 13.58,
     "short": 13.99,
     "met": 3.87
@@ -10145,6 +9889,106 @@
      ]
     },
     {
+     "cnn": "12717000",
+     "cat": "already",
+     "street": "TURK ST",
+     "wants": "Separated",
+     "has": "separated lane",
+     "job": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+     "slug": "5eb347",
+     "start": "2028-10-02",
+     "line": [
+      [
+       -122.41076,
+       37.78321
+      ],
+      [
+       -122.41241,
+       37.783
+      ]
+     ]
+    },
+    {
+     "cnn": "12718000",
+     "cat": "already",
+     "street": "TURK ST",
+     "wants": "Separated",
+     "has": "separated lane",
+     "job": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+     "slug": "5eb347",
+     "start": "2028-10-02",
+     "line": [
+      [
+       -122.41241,
+       37.783
+      ],
+      [
+       -122.41405,
+       37.78279
+      ]
+     ]
+    },
+    {
+     "cnn": "12719000",
+     "cat": "already",
+     "street": "TURK ST",
+     "wants": "Separated",
+     "has": "separated lane",
+     "job": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+     "slug": "5eb347",
+     "start": "2028-10-02",
+     "line": [
+      [
+       -122.41405,
+       37.78279
+      ],
+      [
+       -122.41569,
+       37.78259
+      ]
+     ]
+    },
+    {
+     "cnn": "12720000",
+     "cat": "already",
+     "street": "TURK ST",
+     "wants": "Separated",
+     "has": "separated lane",
+     "job": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+     "slug": "5eb347",
+     "start": "2028-10-02",
+     "line": [
+      [
+       -122.41569,
+       37.78259
+      ],
+      [
+       -122.41698,
+       37.78242
+      ]
+     ]
+    },
+    {
+     "cnn": "12721000",
+     "cat": "already",
+     "street": "TURK ST",
+     "wants": "Separated",
+     "has": "separated lane",
+     "job": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+     "slug": "5eb347",
+     "start": "2028-10-02",
+     "line": [
+      [
+       -122.41698,
+       37.78242
+      ],
+      [
+       -122.41734,
+       37.78238
+      ]
+     ]
+    },
+    {
      "cnn": "12829000",
      "cat": "met",
      "street": "UNDERWOOD AVE",
@@ -11176,7 +11020,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.39729,
@@ -11196,7 +11040,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40206,
@@ -11224,7 +11068,7 @@
      "has": "painted lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40206,
@@ -11592,7 +11436,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40524,
@@ -11616,7 +11460,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40558,
@@ -11656,7 +11500,7 @@
      "has": "",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40524,
@@ -11680,7 +11524,7 @@
      "has": "",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40584,
@@ -11720,7 +11564,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40466,
@@ -11740,7 +11584,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40408,
@@ -11764,7 +11608,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.4034,
@@ -11784,7 +11628,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40302,
@@ -11804,7 +11648,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40275,
@@ -11824,7 +11668,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40221,
@@ -11844,7 +11688,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40211,
@@ -11864,7 +11708,7 @@
      "has": "separated lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40182,
@@ -11884,7 +11728,7 @@
      "has": "painted lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40191,
@@ -11908,7 +11752,7 @@
      "has": "",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40246,
@@ -11944,7 +11788,7 @@
      "has": "painted lane",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.40246,
@@ -13168,7 +13012,7 @@
      "has": "",
      "job": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
      "slug": "befd11",
-     "start": "2027-11-09",
+     "start": "2028-01-09",
      "line": [
       [
        -122.3944,
@@ -17232,41 +17076,6 @@
     "none": 0.36
    }
   },
-  "befd11": {
-   "cnns": [
-    "2473000",
-    "2474000",
-    "2475000",
-    "2476000",
-    "2477000",
-    "2478101",
-    "2478201",
-    "2800101",
-    "2800102",
-    "2800201",
-    "2800202",
-    "2805001",
-    "2805002",
-    "2806000",
-    "2807000",
-    "2808000",
-    "2809000",
-    "2810000",
-    "2812000",
-    "2823102",
-    "2824101",
-    "2824201",
-    "5371001"
-   ],
-   "overlapMiles": 1.87,
-   "plannedMiles": 0.25,
-   "byCategory": {
-    "met": 0.25,
-    "already": 1.65,
-    "none": 0.56,
-    "short": 1.06
-   }
-  },
   "af9ade": {
    "cnns": [
     "10177000",
@@ -17304,6 +17113,41 @@
     "met": 0.18,
     "short": 1.77,
     "already": 0.44
+   }
+  },
+  "befd11": {
+   "cnns": [
+    "2473000",
+    "2474000",
+    "2475000",
+    "2476000",
+    "2477000",
+    "2478101",
+    "2478201",
+    "2800101",
+    "2800102",
+    "2800201",
+    "2800202",
+    "2805001",
+    "2805002",
+    "2806000",
+    "2807000",
+    "2808000",
+    "2809000",
+    "2810000",
+    "2812000",
+    "2823102",
+    "2824101",
+    "2824201",
+    "5371001"
+   ],
+   "overlapMiles": 1.87,
+   "plannedMiles": 0.25,
+   "byCategory": {
+    "met": 0.25,
+    "already": 1.65,
+    "none": 0.56,
+    "short": 1.06
    }
   },
   "d1285a": {
@@ -17789,6 +17633,19 @@
    "feedName": null,
    "slug": null
   },
+  "10034888": {
+   "jobOrder": "10034888",
+   "cnns": [
+    "2863000"
+   ],
+   "streets": [
+    "Beale St"
+   ],
+   "from": "2026-11-03",
+   "to": "2026-11-03",
+   "feedName": null,
+   "slug": null
+  },
   "10037256": {
    "jobOrder": "10037256",
    "cnns": [
@@ -17980,6 +17837,10 @@
   "10038032": {
    "jobOrder": "10038032",
    "cnns": [
+    "12759000",
+    "12760000",
+    "12761000",
+    "12762000",
     "4065000",
     "7992101",
     "7992201",
@@ -17993,23 +17854,31 @@
    ],
    "streets": [
     "Claremont Blvd",
-    "Laguna Honda Blvd"
+    "Laguna Honda Blvd",
+    "Twin Peaks Blvd"
    ],
    "from": "2026-08-31",
-   "to": "2026-09-03",
+   "to": "2026-11-02",
    "feedName": "PW Various Locations Sewer Replacement (JV VL PR No 69)",
    "slug": "12e1b0"
   },
   "10038034": {
    "jobOrder": "10038034",
    "cnns": [
+    "406000",
+    "407000",
+    "408000",
+    "409000",
+    "410000",
+    "411000",
     "6259000"
    ],
    "streets": [
+    "8th St",
     "Golden Gate Ave"
    ],
    "from": "2025-05-13",
-   "to": "2025-05-13",
+   "to": "2026-11-16",
    "feedName": "8th, Beale, Clay, Leavenworth and Main Streets Sewer Replacement (JV w 8th St, Clay St and Leavenworth St Pavement Renovation)",
    "slug": "71f118"
   },
@@ -18063,13 +17932,15 @@
   "10040068": {
    "jobOrder": "10040068",
    "cnns": [
-    "2191000"
+    "2191000",
+    "5773000"
    ],
    "streets": [
-    "Alhambra St"
+    "Alhambra St",
+    "Francisco St"
    ],
    "from": "2026-10-29",
-   "to": "2026-10-29",
+   "to": "2026-11-06",
    "feedName": "Various Locations Pavement Renovation No 81 and Sewer Replacement",
    "slug": "41fa0d"
   },
@@ -18484,6 +18355,16 @@
    "slug": "a7e036"
   },
   {
+   "name": "Muni Subway Expansion Project",
+   "department": "SFMTA",
+   "kind": "SFMTA bike and safety",
+   "when": "no date",
+   "bikeScope": true,
+   "start": null,
+   "miles": 1.65,
+   "slug": "791074"
+  },
+  {
    "name": "K Ingleside Rapid Project",
    "department": "SFMTA",
    "kind": "SFMTA bike and safety",
@@ -18557,9 +18438,9 @@
    "name": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
    "department": "Public Works",
    "kind": "repaving",
-   "when": "2027",
+   "when": "2028",
    "bikeScope": null,
-   "start": "2027-11-09",
+   "start": "2028-01-09",
    "miles": 1.29,
    "slug": "befd11"
   },
@@ -18572,16 +18453,6 @@
    "start": "2028-04-28",
    "miles": 1.28,
    "slug": "2d18e5"
-  },
-  {
-   "name": "Various Locations Pavement Renovation No 104",
-   "department": "Public Works",
-   "kind": "repaving",
-   "when": "later",
-   "bikeScope": null,
-   "start": "2033-09-30",
-   "miles": 1.26,
-   "slug": "49124e"
   },
   {
    "name": "Brotherhood Way Pavement Renovation",
@@ -18632,6 +18503,16 @@
    "start": "2021",
    "miles": 1.21,
    "slug": "0ae8e3"
+  },
+  {
+   "name": "Various Locations Pavement Renovation No 104",
+   "department": "Public Works",
+   "kind": "repaving",
+   "when": "later",
+   "bikeScope": null,
+   "start": "2033-09-30",
+   "miles": 1.2,
+   "slug": "49124e"
   },
   {
    "name": "San Bruno Ave Pavement Renovation",
@@ -18789,7 +18670,7 @@
    "kind": "SFMTA bike and safety",
    "when": "in construction",
    "bikeScope": true,
-   "start": "2025-02-03",
+   "start": "2025",
    "miles": 0.97,
    "slug": "dc1b89"
   },
@@ -19182,16 +19063,6 @@
    "start": null,
    "miles": 0.52,
    "slug": "0e8549"
-  },
-  {
-   "name": "Muni Subway Expansion Project",
-   "department": "SFMTA",
-   "kind": "SFMTA bike and safety",
-   "when": "no date",
-   "bikeScope": true,
-   "start": null,
-   "miles": 0.52,
-   "slug": "791074"
   },
   {
    "name": "Front St and Sansome St Pavement Renovation",
@@ -20149,11 +20020,6 @@
    "name": "Westside Pump Station Reliability Improvements Project",
    "department": "SFPUC",
    "miles": 0.79
-  },
-  {
-   "name": "PW MTA New Castro Station Elevator",
-   "department": "Public Works",
-   "miles": 0.45
   },
   {
    "name": "SFFD Division of Training",

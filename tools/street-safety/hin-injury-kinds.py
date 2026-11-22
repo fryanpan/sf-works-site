@@ -4,8 +4,10 @@
     uv run --no-project --with numpy python tools/street-safety/hin-injury-kinds.py
 
 Writes scratch/runs/hin-injuries/summary.json (every count below) and scratch/runs/hin-injuries/points.geojson (one
-point per person, the data prep for the silhouette map). One-off analysis behind a notes page; no page reads it on a
-schedule, so the incremental-updater rule doesn't apply yet.
+point per person, the data prep for the silhouette map). The Street Safety map reads points.geojson (through
+tools/street-safety/hin-people-map.py), so this runs daily as step hin-injuries in pipeline/transportation-update.py and reruns when
+its inputs move. Its DataSF crash reads go through lib/street_safety_reads.py, which step
+street-safety-crashes keeps current.
 
 THE BASE. DataSF nwes-mmgh (police crash reports, one row per injured person), victim_degree_of_injury 'Severe Injury'
 or 'Fatal Injury', collision_datetime in 2022-01-01 to 2024-12-31. One row is one person (research/sources/
@@ -68,7 +70,7 @@ ROOT = paths.ROOT
 sys.path.insert(0, HERE)
 import numpy as np
 import sfdata
-from lib import school_grounds, school_window
+from lib import school_grounds, school_window, street_safety_reads
 
 OUT = os.path.join(ROOT, "scratch", "runs", "hin-injuries")
 ON_FT, NEAR_MAIN_FT, SCHOOL_FT, CELL = 60, 660, 1320, 500
@@ -457,10 +459,8 @@ def write_drill(out, chunks, subs, tags, n, killed):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    V = sfdata.fetch("nwes-mmgh", where="victim_degree_of_injury in ('Severe Injury','Fatal Injury') and "
-                     "collision_datetime between '2022-01-01T00:00:00' and '2024-12-31T23:59:59'", floor=800)
-    F = sfdata.fetch("dau3-4s8f", select="unique_id,case_id_fkey,collision_datetime,on_vz_hin_2022,latitude,longitude",
-                     where="collision_datetime between '2022-01-01T00:00:00' and '2024-12-31T23:59:59'", floor=80)
+    V = street_safety_reads.read("kinds-victims")
+    F = street_safety_reads.read("kinds-deaths")
     C = sfdata.fetch("3psu-pn9h", select="cnn,streetname,street,st_type,f_st,t_st,f_node_cnn,t_node_cnn,classcode,layer,oneway,line",
                      where="active='true'", floor=15000)
     rows = {}
@@ -468,10 +468,11 @@ def main():
         rows[(v["case_id_pkey"], v["victim_id"])] = v
     rows = [rows[k] for k in sorted(rows)]
     ids = sorted({r["case_id_pkey"] for r in rows})
-    P = sfdata.fetch("8gtc-pjc6", select="case_id_pkey,party_number_ckey,party_type,at_fault,street_of_travel,move_pre_acc,"
-                     "stwd_vehicle_type,party_sobriety,party_age", where="case_id_pkey in (%s)" % ",".join("'%s'" % i for i in ids))
+    # Every party of 2022 to 2024 by date (one held, checked read), kept here for the people's cases.
+    P = street_safety_reads.read("kinds-parties")
+    keep = set(ids)
     parties = collections.defaultdict(dict)
-    for p in P.rows:
+    for p in (p for p in P.rows if p["case_id_pkey"] in keep):
         parties[p["case_id_pkey"]][p.get("party_number_ckey")] = p
     tags = {"victims": V.tag, "fatality_log": F.tag, "centerlines": C.tag, "parties": P.tag}
 

@@ -2,18 +2,18 @@
  "body": "public-works-commission",
  "name": "Public Works Commission",
  "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=218",
- "generated": "2026-11-10",
+ "generated": "2026-11-17",
  "since": "2019-01-01",
  "range": [
   "2022-07-28",
-  "2026-10-22"
+  "2026-11-12"
  ],
- "listed": 79,
- "held": 79,
- "mirrored": 78,
+ "listed": 80,
+ "held": 80,
+ "mirrored": 79,
  "missing": 1,
- "missingShare": 0.0127,
- "items": 1172,
+ "missingShare": 0.0125,
+ "items": 1188,
  "notes": [
   "The Commission first met in 2022; there is no earlier record to read.",
   "Items carry titles only. Granicus does not publish the vote.",
@@ -572,6 +572,13 @@
    "id": "g218-53417",
    "committee": "Public Works Commission",
    "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53417",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-12",
+   "id": "g218-53560",
+   "committee": "Public Works Commission",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=53560",
    "outcome": "mirrored"
   }
  ]

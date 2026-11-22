@@ -169,6 +169,15 @@ html:has(.ss) { overflow-x: clip; }
 .ss .ss-layer .ss-layer-opt[hidden] { display: none; }
 .ss .ss-layer .ss-near-ticks { display: flex; justify-content: space-between; font-size: var(--wa-font-size-2xs); color: var(--sm-muted); margin-top: 2px; }
 .ss .ss-layer .ss-toggles { display: block; width: 100%; }
+/* Through only sits beside the three-way toggle on a phone, where a second row would take map, and under it on a
+   wider screen, where the layer card is narrow. */
+.ss .ss-layer .ss-from-opts:not([hidden]) { display: flex; flex-wrap: wrap; gap: var(--wa-space-2xs); align-items: stretch; }
+.ss .ss-layer .ss-from-opts .ss-ends { flex: 1 1 auto; width: auto; min-width: 0; }
+.ss .ss-layer .ss-from-opts .ss-thru { flex: 0 0 auto; display: flex; align-items: center; gap: 6px; font-size: var(--wa-font-size-xs); color: var(--sm-ink); cursor: pointer; white-space: nowrap; min-height: 30px; padding-inline: 2px; }
+.ss .ss-layer .ss-thru input { width: 17px; height: 17px; margin: 0; accent-color: var(--wa-color-brand-fill-loud, #0a7f96); cursor: pointer; }
+.ss .ss-layer .ss-thru.off { color: var(--sm-muted); cursor: not-allowed; }
+.ss .ss-layer .ss-thru.off input { cursor: not-allowed; }
+@media (min-width: 760px) { .ss .ss-layer .ss-from-opts .ss-thru { flex: 1 1 100%; } }
 .ss .ss-layer .ss-toggles::part(base) { display: flex; width: 100%; }
 .ss .ss-layer .ss-toggles wa-button { flex: 1 1 auto; min-width: 0; }
 .ss .ss-layer .ss-toggles wa-button::part(base) { padding-inline: var(--wa-space-2xs); font-size: var(--wa-font-size-xs); }
@@ -398,6 +407,10 @@ const scriptPage = (preset) => `<script>
     $$("[data-layer-opt]").forEach(function (d) { d.hidden = d.dataset.layerOpt !== s.view; });
     $$(".ss-near").forEach(function (c) { c.value = S.NEARS.map(function (n) { return n[0]; }).indexOf(s.near); });
     $$("[data-ends]").forEach(function (b) { var on = b.dataset.ends === s.ends; b.setAttribute("aria-pressed", on ? "true" : "false"); b.appearance = on ? "filled" : "outlined"; b.variant = on ? "brand" : "neutral"; });
+    // Passing through needs an area with a through count: a neighborhood or a district, not a drawn shape.
+    var drawnArea = !!(f.area && f.area.polygon), thruOn = s.thru && !drawnArea;
+    $$("[data-thru]").forEach(function (b) { b.checked = thruOn; b.disabled = drawnArea; b.parentNode.classList.toggle("off", drawnArea);
+      b.parentNode.title = drawnArea ? "A drawn area can't tell which cars pass through" : "Only the cars with neither trip end in the area"; });
     $$(".ss-hin").forEach(function (c) { c.value = ({ groups: "2024", groups22: "2022" })[s.hin[0]] || s.hin[0] || "none"; });
     $$(".ss-user").forEach(function (c) { c.value = f.user.map(u); });
     $$(".ss-other").forEach(function (c) { c.value = f.other.slice(); });
@@ -460,8 +473,9 @@ const scriptPage = (preset) => `<script>
   // The crime view's title follows its Years filter (Bryan, 2026-11-19).
   var span = function (y, all) { y = y || all; return " (" + (y[0] === y[1] ? y[0] : y[0] + "–" + y[1]) + ")"; };
   var ENDS_TITLE = { from: "Where Traffic Comes From", to: "Where Traffic Goes", both: "Where Traffic Comes From and Goes" };
+  var THRU_TITLE = { from: "Where Through Traffic Comes From", to: "Where Through Traffic Goes", both: "Where Through Traffic Comes From and Goes" };
   function mapTitle(s) {
-    if (s.view === "from") { var ar = s.filter.area; return ENDS_TITLE[s.ends] + (ar ? (ar.hood ? " for " + ar.hood : ar.district ? " for District " + ar.district : " for a Drawn Area") : "") + " (2023 Model)"; }
+    if (s.view === "from") { var ar = s.filter.area; return (s.thru && ar && !ar.polygon ? THRU_TITLE : ENDS_TITLE)[s.ends] + (ar ? (ar.hood ? " for " + ar.hood : ar.district ? " for District " + ar.district : " for a Drawn Area") : "") + " (2023 Model)"; }
     if (s.view === "crime") return "Map of Crime in San Francisco" + span(s.filter.crimeYears, [S.CRIME_YEARS[0], S.CRIME_YEARS[S.CRIME_YEARS.length - 1]]);
     if (s.view !== "injuries") return "Map of " + VIEW_TITLE[s.view] + " in San Francisco" + VIEW_SPAN[s.view];
     var y = s.filter.years || [S.YEARS[0], S.YEARS[S.YEARS.length - 1]];
@@ -557,6 +571,7 @@ const scriptPage = (preset) => `<script>
     ctl.setState({ filter: { days: S.WEEK.filter(function (d) { return wd.indexOf(d[2][0]) >= 0; }).map(function (d) { return d[0]; }) } });
   });
   press("[data-ends]", function (b) { ctl.setState({ ends: b.dataset.ends }); });
+  on("[data-thru]", "change", function (b) { ctl.setState({ thru: b.checked, card: null }); });
   press("[data-time]", function (b, f) {
     var t = b.dataset.time;
     ctl.setState({ filter: { time: f.time.indexOf(t) >= 0 ? f.time.filter(function (x) { return x !== t; }) : f.time.concat([t]) } });
@@ -792,7 +807,8 @@ ${ARR_CSS}
   <div class="sm-ov ss-layer" data-layer><wa-select class="ss-view" value="injuries" size="small" label="Layer">${VIEWS.map(([v, l]) => opt(v, l)).join("")}</wa-select>
     <div class="ss-layer-opt" data-layer-opt="through" hidden><wa-slider class="ss-near" size="small" label="Through: neither trip end within" min="0" max="${STATE.NEARS.length - 1}" step="1" value="${STATE.NEARS.findIndex((n) => n[0] === STATE.DEFAULTS.near)}" with-markers with-tooltip></wa-slider>
       <div class="ss-near-ticks" aria-hidden="true">${STATE.NEARS.map((n) => `<span>${n[1]}</span>`).join("")}</div></div>
-    <div class="ss-layer-opt" data-layer-opt="from" hidden><wa-button-group class="ss-toggles ss-ends" label="Which trips">${STATE.ENDS.map((e) => tog("data-ends", e[0], e[1])).join("")}</wa-button-group></div></div>
+    <div class="ss-layer-opt ss-from-opts" data-layer-opt="from" hidden><wa-button-group class="ss-toggles ss-ends" label="Which trips">${STATE.ENDS.map((e) => tog("data-ends", e[0], e[1])).join("")}</wa-button-group>
+      <label class="ss-thru"><input type="checkbox" data-thru> Through only</label></div></div>
   ${panel}
   <div class="sm-ov sm-hint" data-hint hidden>Click the map to add corners; click the first corner or double-click to finish. Esc cancels.</div>
   <div class="sm-ov sm-legend"><div class="sm-key" data-key></div></div>
@@ -847,10 +863,14 @@ function aboutPage() {
 <h2 id="where-traffic-comes-from">Where Traffic Comes From</h2>
 <p>Pick a neighborhood or a Supervisor district and the map draws one circle for each of SF's 41 neighborhoods and each of ${whereFromRegions().length} regions around the bay. A circle's area is the cars a weekday that start or end there and drive on the chosen area's streets, and it prints its share of all the cars on those streets. These are the through-traffic view's routed car trips, keeping every one whose fastest route uses at least one of the area's streets (freeways and their ramps aren't its streets), the method planners call a select-link analysis. A trip end is in the area when the middle of its SF-CHAMP zone is. It's a model's estimate for 2023, not a count.</p>
 <p>Coming from puts every car where it starts and Going to where it ends. Both puts it at both ends, so there a share is a share of trip ends. The ring on the chosen area is its own cars: the ones that start in it, end in it, or both.</p>
+<p>Passing through keeps only the cars with neither trip end in the chosen area. The headline gives them as a share of every car on its streets, and each circle and bar is a share of the through cars (of their trip ends under Both). The time of day chart then shows through cars alone. An outline often runs down the middle of a street, and each block of that street counts for the area its midpoint falls in, so a boundary street such as Lincoln Way is split between the two areas beside it and its traffic is in each one's through share. The cars are the model's car, taxi and ride-hail trips of 90 minutes or less; trucks and commercial vehicles aren't in it. Each trip takes its one fastest route, averaged over ${T.runs} routing runs, so the share is an estimate, and we don't yet have its range.</p>
+<p>Coming from figures for Marin and Sonoma read low on the west and north sides of the city and high near the Bay Bridge. The model's network puts a long delay on the Golden Gate Bridge's southbound toll plaza, up to 35 minutes at midday, so the routing sends many cars from Marin over the Richmond-San Rafael and Bay bridges. Going to figures aren't affected.</p>
 <p>The regions are groups of the <a href="https://github.com/BayAreaMetro/travel-model-one/blob/master/utilities/geographies/superdistrict-county.csv">Metropolitan Transportation Commission's superdistricts</a>: ${whereFromRegions().map((r) => `${r.name} (${r.places.join(", ")})`).join("; ")}. A region's circle sits at the middle of its people, or at the edge of the map toward it when that's off screen.</p>
 <p>The time of day chart is cars an hour coming in from outside the area and going out of it, by each trip's departure hour in the model, in the map's five times of day. Night is 10 pm to midnight and 5 to 6 am, the only night hours the model's trips have.</p>
 <p>Tap a circle and its card says how people travel between that place and the chosen area: every person trip with one end in each, by car, transit, bike and on foot, from <a href="https://github.com/BayAreaMetro/modeling-website/wiki/TravelModes">the same MTC model's trip files</a> for 2023. Car includes taxis and ride-hail. That's trips by their two ends, so a car passing through the area isn't in it. It's the model's estimate. For trips within SF the model has 30% on foot and 18% on transit. The Bay Area Travel Study 2023, which asked adults only, found 41% and 12% (<a href="https://www.sfcta.org/sites/default/files/2025-12/SFCTA_CMP_Report_2025_FINAL_2025-12-16.pdf">SFCTA, Congestion Management Program 2025</a>, Figures 4-40 to 4-42). The model simulates one trip in two, so under 60 trips a weekday the card doesn't split them, and under 60 car trips it gives no times.</p>
 <p>The card's minutes and miles are for the trips people now drive: what the typical (median) one of a weekday's car trips takes door to door by each way at the morning rush, 6 to 10 am, from <a href="https://github.com/BayAreaMetro/modeling-website/wiki/SimpleSkims">MTC's zone-to-zone travel time tables</a> for the same model run. Transit adds the walk to the stop, the wait, the ride, any transfer and the walk from the stop, and from a region the card also gives the trip's time with a drive to the first stop. Bike is the shortest path on streets that allow bikes, ridden at 12 mph, with no hills or bike lanes in it. The model has no bike route longer than 75 miles, and <a href="https://511.org/biking/access/bridges">the Bay Bridge has no bike path all the way across</a>, so from most of the East Bay the card says no bike route. Where over half of the trips have no bike route, or no stop within a walk, the card gives that share and no time. Every trip is timed at the morning rush, whatever hour it leaves, which matters most for trips over the Bay Bridge.</p>
+<p>Below the times, the card counts the trips by car that pass two simple tests. These are the trips that pass the test. It isn't a forecast of how many people would switch. The smaller figure beside each count is its share of the trips by car between the two places, and after it comes the share of all trips between the same places that already go by transit or by bike. Under 20 trips, the card says "Fewer than 20". For the tests, each trip is timed in the period it leaves, using MTC's own door-to-door times, which include walking at both ends and, for driving, parking time.</p>
+<p>Transit passes where the trip with a walk to the stop takes at most 1.5 times as long as the drive. <a href="https://www.cvs-congres.nl/cvspdfdocs/cvs11_038.pdf">A Dutch Railways planning tool</a> assumes a commuter drives once transit takes more than 1.5 times as long (Van Exel and Van Hagen, 2011). That's an assumption, not a measured switch rate, and we apply it to every trip. The test looks only at minutes, so a trip with two transfers passes on the same minutes as one with none. Bike passes where the ride is 3 miles or less. In <a href="https://bicycleretailer.com/sites/default/files/downloads/article/brain_denverebikewhitepaper.pdf">Denver's e-bike rebate program</a>, 65% of rides tracked by app for 70 e-bike riders were less than 3 miles (p. 13). The bike test is distance only. It doesn't measure hills or how comfortable the route is.</p>
 <p>A drawn area can't be worked out ahead of time, so for one the page counts the cars on every street crossing its edge, and on every freeway ramp inside it, inward by where they start and outward by where they end. That cordon count counts a car each time it crosses and can't tell a car passing through from one arriving, so a drawn area has no ring, no time of day chart and no travel figures on a card.</p>
 <h2>Bike Comfort</h2>
 <p>Every street block coloured by <a href="${BCI.source}">SFMTA's Bike Comfort Index</a> (the 2023 draft layer SFMTA built with Toole Design for every street, read ${BCI.fetched_on}), in five classes from 4 to 146, where higher is more comfortable. The colours split at a score over ${BCI.aaa.score}, the line <a href="${BCI.aaa.source}">SFMTA's Biking and Rolling Plan</a> uses for its all ages and abilities network (a painted lane or a calmed bike route counts only "BCI > ${BCI.aaa.score}"); blocks at ${BCI.aaa.score} or under are amber to brown, blocks over it teal. The classes are the ones SFMTA's layer draws, except that a score of 81 moves up a class so none straddles the line. ${n0(M.bci.matched)} street blocks have a score; ${n0(M.bci.unscored)} active blocks have none and aren't drawn. A block takes the layer's combined score, the lower of its two directions. It's a bike measure; we don't have one for walking. The index hasn't been checked against how stressed riders actually feel, and its surveys asked adults only, so read it as SFMTA's own rating rather than a measure of who feels safe riding.</p>

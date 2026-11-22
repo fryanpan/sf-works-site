@@ -1,7 +1,7 @@
 {
  "source": "sfmta-board",
  "key": "since-2019-01-01",
- "fetched_on": "2026-11-10",
+ "fetched_on": "2026-11-19",
  "meta": {
   "site": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
   "since": "2019-01-01"
@@ -9,6 +9,13 @@
  "records": [
   {
    "meetings": [
+    {
+     "date": "2026-11-17",
+     "clipId": "53604",
+     "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53604",
+     "minutes": null,
+     "itemCount": 16
+    },
     {
      "date": "2026-10-29",
      "clipId": "53464",
@@ -2663,6 +2670,13 @@
    ],
    "agendas": [
     {
+     "date": "2026-11-17",
+     "clipId": "53604",
+     "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53604",
+     "minutes": null,
+     "itemCount": 16
+    },
+    {
      "date": "2026-10-29",
      "clipId": "53464",
      "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53464",
@@ -3960,6 +3974,15 @@
    ],
    "matches": [
     {
+     "no": "11",
+     "title": "Approving the Cesar Chavez Bikeways Project that improves transportation safety and connectivity, including the establishment of a new Class IV protected two-way bikeway on the south side of Cesar Chavez Street",
+     "date": "2026-11-17",
+     "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53604",
+     "minutes": null,
+     "disposition": null,
+     "parent": null
+    },
+    {
      "no": "12A",
      "title": "ESTABLISH - DEAD END, EXCEPT BICYCLES",
      "date": "2026-06-16",
@@ -5184,12 +5207,12 @@
      "parent": "Director’s Report (For discussion only) -Special Recognition -Update on Vision Zero -Ongoing Activities Candace Sue, acting Director of Transportation, recognized Janis Yuen, Public Relations Officer, Communications and Marketing. Tom Maguire, Director, Sustainable Streets updated the Board on Vision Zero efforts including work on Valencia, Townsend and Howard streets. Acting Director Sue noted th"
     }
    ],
-   "fetched": 185,
+   "fetched": 186,
    "failed": [],
    "unparsed": [],
    "minutesIndex": {
-    "2026-09-01": "https://www.sfmta.com/node/45884",
-    "2026-08-04": "https://www.sfmta.com/node/45787",
+    "2026-10-20": "https://www.sfmta.com/node/46034",
+    "2026-10-29": "https://www.sfmta.com/node/46035",
     "2018-12-18": "https://www.sfmta.com/node/18171",
     "2019-01-15": "https://www.sfmta.com/node/18300",
     "2019-01-29": "https://www.sfmta.com/node/18301",
@@ -5359,7 +5382,9 @@
     "2026-05-19": "https://www.sfmta.com/node/45450",
     "2026-06-02": "https://www.sfmta.com/node/45511",
     "2026-06-16": "https://www.sfmta.com/node/45642",
-    "2026-07-21": "https://www.sfmta.com/node/45696"
+    "2026-07-21": "https://www.sfmta.com/node/45696",
+    "2026-08-04": "https://www.sfmta.com/node/45787",
+    "2026-09-01": "https://www.sfmta.com/node/45884"
    }
   }
  ]

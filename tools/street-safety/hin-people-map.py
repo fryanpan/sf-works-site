@@ -4,7 +4,8 @@
     python3 tools/street-safety/hin-people-map.py             # writes scratch/embeds/hin-people/index.html, areas.json and screenshots
     python3 tools/street-safety/hin-people-map.py --no-shot   # the embed and areas.json only
 
-One-off prototype; no page reads it on a schedule, so the incremental-updater rule does not apply yet.
+build() is what tools/street-safety/street-safety-map.py publishes, on the daily scheduled run; main() still writes
+the scratch embed by hand.
 
 INPUTS (each read as it stands; nothing here fetches new data except through sfdata's cache):
   people   scratch/runs/hin-injuries/points.geojson from tools/street-safety/hin-injury-kinds.py: 922 of 923 people severely
@@ -22,7 +23,7 @@ INPUTS (each read as it stands; nothing here fetches new data except through sfd
            crimes" are the categories Assault, Robbery, Rape, Weapons Offense and Weapons Carrying Etc. The map's crime
            view draws all-places.json from the same script: every report of any category, counted per report location
            and split into five groups (sfpd-person-crimes.py GROUPS), as a heatmap and, zoomed in, one dot per location.
-  stops    .cache/muni-gtfs/feed/stops.txt, SFMTA's GTFS feed held by scripts/muni-gtfs.py.
+  stops    .cache/muni-gtfs/feed/stops.txt, SFMTA's GTFS feed held by tools/muni/muni-gtfs.py.
   traffic  data/extract/residential-traffic/blocks.json from tools/street-safety/hin-cut-through.py: peak-hour cars on each residential
            and main-street block, measured (SFMTA counts, or residents' Telraam counters from tools/street-safety/telraam-sf.py),
            modelled (SF-CHAMP) or estimated (residential only).
@@ -47,7 +48,8 @@ RULES.
   intersections and most of the city's reports are near a stop. A report with several person crimes takes the most
   serious for its label (SEVERITY).
 
-Checks: 922 people, unique victim ids, every person in at most one neighborhood, LTS found for most people, area
+Checks: the people within street_safety_reads.PEOPLE_BAND of the 922 read, 2022's severe injuries within
+SEVERE_2022_TOLERANCE of SFDPH's published 282, unique victim ids, every person in at most one neighborhood, LTS found for most people, area
 counts summing within the total, and the crime and stop reads non-empty.
 """
 import pathlib, sys  # noqa: E401  (the repo root is the nearest folder above that holds lib/paths.py)
@@ -68,6 +70,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = Path(paths.ROOT)
 sys.path.insert(0, str(HERE))
 import sfdata  # noqa: E402
+from lib import street_safety_reads  # noqa: E402
 
 # The gitignored scratch/ folder, or $SF_WORKS_SCRATCH: hin-injury-kinds.py's points and this prototype's own output.
 SCR = Path(os.environ.get("SF_WORKS_SCRATCH") or ROOT / "scratch")
@@ -297,7 +300,9 @@ def build():
         sys.exit(f"{POINTS} is missing: run tools/street-safety/hin-injury-kinds.py first, which writes it")
     G = json.loads(POINTS.read_text())
     feats = sorted(G["features"], key=lambda f: f["properties"]["victim"])
-    assert len(feats) == 922, f"{len(feats)} people placed, expected 922 (hin-injury-kinds.py's 2022 to 2024 read)"
+    bad = street_safety_reads.people_in_band(len(feats)) or street_safety_reads.severe_2022_matches(
+        sum(1 for f in feats if f["properties"]["severity"] == "Severe" and f["properties"]["date"].startswith("2022")))
+    assert not bad, f"hin-injury-kinds.py's points.geojson: {bad}"
     assert len({f["properties"]["victim"] for f in feats}) == len(feats), "duplicate victim ids"
 
     C = sfdata.fetch("3psu-pn9h", select="cnn,streetname,street,st_type,f_st,t_st,f_node_cnn,t_node_cnn,classcode,layer,oneway,line",
@@ -636,7 +641,7 @@ def load_deaths(people):
     miss) becomes its own figure. Articles come from data/extract/vz-deaths/news.json, each checked by hand on date
     and place; a news-only death without a point is counted but not drawn."""
     import datetime as dt
-    F = sfdata.fetch("dau3-4s8f", where="collision_datetime >= '2022-01-01T00:00:00'", floor=100)
+    F = street_safety_reads.read("people-map-deaths")
     news = json.loads(NEWS.read_text()) if NEWS.exists() else {"matches": [], "news_only": []}
     art = {m["unique_id"]: m for m in news.get("matches", [])}
     by_year = collections.Counter(r["collision_datetime"][:4] for r in F.rows)

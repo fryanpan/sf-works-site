@@ -765,7 +765,7 @@ def plan_map_reference(ctx):
     .cache/north-star-map/ when missing), pulls the network strokes out by
     legend colour and fits the map to today's street centerline (DataSF
     3psu-pn9h, the Socrata cache), with the PDF readers and the fit in
-    scripts/north-star-map-trace.py. The measure is this function's own code:
+    tools/bike-network/north-star-map-trace.py. The measure is this function's own code:
     every drawn point, every 5 m, is projected onto each block it runs along
     within 20 m, and a block's drawn part is the span of those projections,
     snapped to an end within 20 m or where another plan block meets it (About
@@ -2935,7 +2935,7 @@ def c4(ctx, res):
     rows, ok = [], 0
     tally = collections.defaultdict(lambda: [0, 0, 0, 0])  # started, started ok, future, future ok
     for p in withstart:
-        # One rule for "before the start", shared with scripts/record-coverage.py.
+        # One rule for "before the start", shared with tools/projects/record-coverage.py.
         before = record_dates.records_before_start(p)
         started = start_key(p["start"]) <= ctx.today_s
         t = tally[p["department"]]
@@ -3891,7 +3891,7 @@ def f3(ctx, res):
     from lib import pipeline_state
     checks = pipeline_state.load()
 
-    def add(name, kind, date, key=None):
+    def add(name, kind, date, key=None, horizon=None):
         if not date:
             return
         c = checks.get(key or "", {})
@@ -3907,7 +3907,7 @@ def f3(ctx, res):
         else:
             basis = max(date[:10], checked) if checked else date[:10]
         age = (ctx.today - dt.date.fromisoformat(basis)).days
-        horizon = 180 if kind == "document" else 90
+        horizon = horizon or (180 if kind == "document" else 90)
         rows.append((name, kind, date[:10], (checked or "—") + (" (last refresh failed)" if failed else ""),
                      age, horizon, "ok" if age <= horizon else "EXPIRED"))
 
@@ -3930,6 +3930,24 @@ def f3(ctx, res):
             "extract:" + src)
     if ctx.centerline:
         add("Centerline 3psu-pn9h (full pull)", "dataset", ctx.centerline["fetched_on"], "socrata:3psu-pn9h")
+    # The Street Safety map and the injury pages' crash reads (tools/street-safety/street-safety-crashes.py) and the map's own read
+    # date, on the daily interval the scheduled run keeps. A crash
+    # table's date is its last good rowsUpdatedAt check; the map's is its meta.read, aged from the map step's last run,
+    # since a rebuild with no new rows keeps the read date by design.
+    # Only on a host that runs the pipeline (sources.json present); a marker missing there reads as never checked.
+    if checks:
+        for fxf in ("nwes-mmgh", "8gtc-pjc6", "ubvf-ztfx", "dau3-4s8f"):
+            c = checks.get("crashes:" + fxf) or {}
+            add("Street Safety crash reads " + fxf, "dataset", c.get("last_good") or c.get("checked") or "2000-01-01",
+                "crashes:" + fxf, horizon=1)
+        ssm = load("site/data/street-safety/map.json").get("meta", {})
+        # A map build skipped because its inputs were unchanged records nothing of its own; the scheduled run that
+        # skipped it checked it, as pipeline/refresh-freshness.py counts it. A failed map build ages from its last good run.
+        step, run = checks.get("step:street-safety-map") or {}, checks.get("run:scheduled") or {}
+        key = ("run:scheduled" if step.get("status") != "failed" and run.get("checked", "") > step.get("checked", "")
+               else "step:street-safety-map")
+        add("Street Safety map (site/data/street-safety/map.json)", "dataset", ssm.get("read") or "2000-01-01", key,
+            horizon=1)
     expired = [r for r in rows if r[6] != "ok"]
     # Typed "as of" text in the prose the pages render.
     layer_asof = tr.get("bikewayLayerAsOf") or tr.get("validThrough")

@@ -1,7 +1,7 @@
 {
-  "generated": "2026-11-11",
+  "generated": "2026-11-21",
   "sfmtaTag": "[DataSF ygmz-vaxd \u2014 queried 2026-11-10]",
-  "osmDate": "2026-11-11",
+  "osmDate": "2026-11-21",
   "toleranceM": 25.0,
   "blocks": 2828,
   "verdicts": {
@@ -11,7 +11,7 @@
     "osm-higher": 223,
     "unmatchable": 4
   },
-  "osmOnlyWays": 343,
+  "osmOnlyWays": 347,
   "unnamedOsmWays": 556,
   "byStreet": {
     "07TH ST": {

@@ -1544,7 +1544,7 @@
   },
   "https://sfpublicworks.org/VL78": {
    "asked": "2026-10-01",
-   "candidates": 4,
+   "candidates": 12,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.016136,
@@ -3657,7 +3657,7 @@
   },
   "https://sfpublicworks.org/index.php/SunsetMasterPlan": {
    "asked": "2026-10-01",
-   "candidates": 5,
+   "candidates": 7,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.014428,
@@ -3678,8 +3678,8 @@
    },
    "hash": "5f2479caff76bd1371731c46d60c13d5b6a1e9dbb3da847306d168a667040219",
    "inputTokens": 3222,
-   "latestDate": "2025-11-19",
-   "latestStageDate": "2025-11-19",
+   "latestDate": "2026-06-30",
+   "latestStageDate": "2026-06-30",
    "model": "claude-opus-5-5",
    "node": "https://sfpublicworks.org/index.php/SunsetMasterPlan",
    "outputTokens": 77,
@@ -5120,7 +5120,7 @@
   },
   "https://sfpublicworks.org/index.php/VL80": {
    "asked": "2026-10-01",
-   "candidates": 38,
+   "candidates": 42,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.019328,
@@ -5222,7 +5222,7 @@
   },
   "https://sfpublicworks.org/index.php/VL85": {
    "asked": "2026-10-01",
-   "candidates": 47,
+   "candidates": 55,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.030908,
@@ -13771,20 +13771,20 @@
    "title": "PRESS RELEASE: Rockslide Threat Prompts Temporary Closure of O’Shaughnessy Boulevard - 1/18/17",
    "url": "https://sfpublicworks.org/project/press-release-rockslide-threat-prompts-temporary-closure-o%E2%80%99shaughnessy-boulevard-11817"
   },
-  "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%E2%80%99s-day-service-1916": {
-   "candidates": 6,
+  "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%25E2%2580%2599s-day-service-1916": {
+   "candidates": 5,
    "constructionStage": null,
    "department": "Public Works",
    "hash": null,
-   "latestDate": "2016-09-30",
-   "latestStageDate": "2016-09-30",
-   "node": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%E2%80%99s-day-service-1916",
+   "latestDate": "2016-01-23",
+   "latestStageDate": "2016-01-09",
+   "node": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%25E2%2580%2599s-day-service-1916",
    "pageStatus": null,
    "predictedCompletion": null,
    "projectStatus": [],
    "status": "not asked",
    "title": "PRESS RELEASE: Volunteers Clean and Green on Mayor’s Day of Service - 1/9/16",
-   "url": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%E2%80%99s-day-service-1916"
+   "url": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%25E2%2580%2599s-day-service-1916"
   },
   "https://sfpublicworks.org/project/public-works-celebrate-national-public-works-week-may-20-26": {
    "asked": "2026-10-01",
@@ -14221,41 +14221,6 @@
    "status": "answered",
    "title": "Graffiti Abatement Tips",
    "url": "https://sfpublicworks.org/services/graffiti-abatement-tips"
-  },
-  "https://sfpublicworks.org/services/monument-preservation": {
-   "asked": "2026-10-01",
-   "candidates": 1,
-   "conflicts": [],
-   "constructionStage": null,
-   "costUsd": 0.0155,
-   "department": "Public Works",
-   "fields": {
-    "construction_end": {
-     "answer": "none",
-     "confidence": 0.95
-    },
-    "construction_start": {
-     "answer": "none",
-     "confidence": 0.95
-    },
-    "consultation": {
-     "answer": "none",
-     "confidence": 0.95
-    }
-   },
-   "hash": "733fd63ae5bdc4d664091f8a0727f9d0522fa5fac57db311c13aea9bfaaaf891",
-   "inputTokens": 3490,
-   "latestDate": "2024-10-07",
-   "latestStageDate": null,
-   "model": "claude-opus-5-5",
-   "node": "https://sfpublicworks.org/services/monument-preservation",
-   "outputTokens": 77,
-   "pageStatus": null,
-   "predictedCompletion": null,
-   "projectStatus": [],
-   "status": "answered",
-   "title": "Monument Preservation",
-   "url": "https://sfpublicworks.org/services/monument-preservation"
   },
   "https://sfpublicworks.org/services/permits/minor-encroachment-permit": {
    "candidates": 1,
@@ -15858,7 +15823,7 @@
   },
   "https://www.sfpuc.gov/construction-contracts/construction-projects/grandview-ave": {
    "asked": "2026-10-01",
-   "candidates": 11,
+   "candidates": 12,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.016928,
@@ -16348,57 +16313,6 @@
    "status": "answered",
    "title": "Night Work",
    "url": "https://www.sfpuc.gov/construction-contracts/construction-projects/night-work"
-  },
-  "https://www.sfpuc.gov/construction-contracts/construction-projects/north-basin": {
-   "asked": "2026-10-01",
-   "candidates": 2,
-   "conflicts": [],
-   "constructionStage": null,
-   "costUsd": 0.01052,
-   "department": "SFPUC",
-   "fields": {
-    "construction_end": {
-     "answer": "c2",
-     "confidence": 0.97,
-     "first": "2026-11-01",
-     "inCards": false,
-     "iso": "2026-11-30",
-     "label": "line above: Construction End: / line below: Project Phase:",
-     "last": "2026-11-30",
-     "line": "November 2026",
-     "span": "November 2026",
-     "value": "2026-11"
-    },
-    "construction_start": {
-     "answer": "c1",
-     "confidence": 0.97,
-     "first": "2026-06-01",
-     "inCards": false,
-     "iso": "2026-06-01",
-     "label": "line above: Construction Start: / line below: Construction End:",
-     "last": "2026-06-30",
-     "line": "June 2026",
-     "span": "June 2026",
-     "value": "2026-06"
-    },
-    "consultation": {
-     "answer": "none",
-     "confidence": 0.95
-    }
-   },
-   "hash": "865c3719b81d1961e91eb4ddead44fb702337ddabdf09186b86b9a14100507a8",
-   "inputTokens": 2235,
-   "latestDate": "2026-11-30",
-   "latestStageDate": "2026-11-30",
-   "model": "claude-opus-5-5",
-   "node": "https://www.sfpuc.gov/construction-contracts/construction-projects/north-basin",
-   "outputTokens": 79,
-   "pageStatus": null,
-   "predictedCompletion": null,
-   "projectStatus": [],
-   "status": "answered",
-   "title": "University Mound Reservoir North Basin Roof Coating Project",
-   "url": "https://www.sfpuc.gov/construction-contracts/construction-projects/north-basin"
   },
   "https://www.sfpuc.gov/construction-contracts/construction-projects/oceanbeach": {
    "asked": "2026-10-01",
@@ -17051,7 +16965,7 @@
   },
   "https://www.sfpuc.gov/construction-contracts/construction-projects/university-mound": {
    "asked": "2026-10-01",
-   "candidates": 5,
+   "candidates": 6,
    "conflicts": [],
    "constructionStage": null,
    "costUsd": 0.014044,
@@ -17680,21 +17594,21 @@
  "script": "scripts/sfmta-page-dates.py --pages departments",
  "source": "Claude (claude-opus-5-5) reading every Public Works and SFPUC project page in out/department-pages/pages.json",
  "summary": {
-  "answered": 338,
+  "answered": 336,
   "byField": {
-   "construction_end": 200,
-   "construction_start": 191,
+   "construction_end": 199,
+   "construction_start": 190,
    "consultation": 41
   },
   "confirmed": 0,
-  "costUsd": 5.105988,
+  "costUsd": 5.079968,
   "flagged": 25,
-  "inputTokens": 971752,
+  "inputTokens": 966027,
   "noDatesOnPage": 65,
   "notAsked": 20,
   "otherModel": 0,
-  "outputTokens": 60949,
-  "pages": 423,
-  "withAnyDate": 249
+  "outputTokens": 60793,
+  "pages": 421,
+  "withAnyDate": 248
  }
 }

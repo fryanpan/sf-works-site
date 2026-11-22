@@ -13,11 +13,17 @@ never on a laptop. In order:
      (the School Trips model builds) are left out.
   3. pipeline/refresh-freshness.py: every step's last good check inside its update interval.
   4. When tracked files changed: a branch data-refresh/<date>, staged file by file (never `git add -A`), a pull
-     request and its squash merge, which deploys sf-works.org through .github/workflows/deploy.yml. When nothing
+     request, a wait for every check on it (.github/workflows/checks.yml) to finish, and only when every one has
+     passed, its squash merge, which deploys sf-works.org through .github/workflows/deploy.yml. When nothing
      changed, nothing is committed and nothing deploys.
 
+A change merges once its automatic checks pass.
+The refresh of 2026-11-21 merged its pull request before its checks finished and broke main, so the merge now waits: a check
+that fails, no checks appearing, or checks still running after CHECKS_TIMEOUT leaves the pull request open and alerts.
+The next run then refuses to start until somebody merges or closes it (step 1). Never `gh pr merge --auto`.
+
 A failed quality check (transportation-update exits 1), a failed freshness check, a write outside the pipeline's
-output directories, or a failed push or merge opens a GitHub issue labelled data-refresh (or comments on the open
+output directories, a failed or unfinished check on the pull request, or a failed push or merge opens a GitHub issue labelled data-refresh (or comments on the open
 one). The orchestrator has already put the failing
 source's previous data back, and nothing is pushed, so the site keeps the last good data.
 
@@ -35,6 +41,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = paths.ROOT
@@ -48,7 +55,18 @@ LABEL = "data-refresh"
 # the ship rather than reaching main.
 OUTPUTS = ("out/", "site/data/", "data/")
 
+# The PR's checks: how long to wait for them to finish, how often to look, and how long to wait for the first one
+# to appear. main has no required checks, so an empty list must not read as passed. A passing run of PR checks took
+# 21 minutes on 2026-11-21 (#577, "Site checks, tests, import cycles, build"), so the wait allows about three times that.
+CHECKS_TIMEOUT = 60 * 60
+CHECKS_POLL = 30
+CHECKS_APPEAR = 5 * 60
+
 LOG = None
+
+
+class ChecksNotPassed(RuntimeError):
+    """The pull request's checks failed, never appeared, or did not finish in time; the PR stays open."""
 
 
 def say(msg=""):
@@ -179,6 +197,55 @@ def changed_files_between(a, b):
     return [x for x in out.decode("utf-8", "surrogateescape").split("\0") if x]
 
 
+def checks_verdict(checks):
+    """("pass" | "fail" | "pending", names) for the checks `gh pr checks --json name,bucket,state` lists.
+
+    pass: at least one check, and every one passed or was skipped. fail: any failed or was cancelled (names lists
+    them). pending: none yet, or some still running."""
+    if not checks:
+        return "pending", []
+    bad = sorted("%s (%s)" % (c.get("name"), c.get("state")) for c in checks if c.get("bucket") in ("fail", "cancel"))
+    if bad:
+        return "fail", bad
+    waiting = sorted(c.get("name") for c in checks if c.get("bucket") not in ("pass", "skipping"))
+    if waiting:
+        return "pending", waiting
+    return "pass", []
+
+
+def read_checks(url):
+    """The PR's checks as a list, or None when gh could not read them (counted as still pending)."""
+    p = subprocess.run(["gh", "pr", "checks", url, "--json", "name,bucket,state"], cwd=ROOT, capture_output=True,
+                       text=True)
+    # gh exits 8 while checks are pending and 1 when one failed; the JSON is printed either way.
+    try:
+        return json.loads(p.stdout or "null")
+    except ValueError:
+        return None
+
+
+def wait_for_checks(url, read=read_checks, sleep=time.sleep, clock=time.monotonic,
+                    timeout=CHECKS_TIMEOUT, poll=CHECKS_POLL, appear=CHECKS_APPEAR):
+    """Block until every check on the PR has passed. Raises ChecksNotPassed when one fails, when none has appeared
+    after `appear` seconds, or when some are still running after `timeout` seconds."""
+    start = clock()
+    while True:
+        checks = read(url)
+        verdict, names = checks_verdict(checks or [])
+        if verdict == "pass":
+            say("every check passed on %s: %s" % (url, ", ".join(sorted(c.get("name") for c in checks))))
+            return checks
+        if verdict == "fail":
+            raise ChecksNotPassed("checks failed on %s: %s" % (url, ", ".join(names)))
+        waited = clock() - start
+        if not checks and waited >= appear:
+            raise ChecksNotPassed("no checks appeared on %s in %d minutes" % (url, appear // 60))
+        if waited >= timeout:
+            raise ChecksNotPassed("checks still running on %s after %d minutes: %s"
+                                  % (url, timeout // 60, ", ".join(names)))
+        sleep(poll)
+
+
 def ship(files, summary, refresh_failed):
     today = dt.date.today().isoformat()
     branch = "data-refresh/%s" % dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d-%H%M")
@@ -191,8 +258,9 @@ def ship(files, summary, refresh_failed):
     sh("git", "push", "-q", "origin", branch)
     body = ("The scheduled daily refresh on the GCP VM found new data and rebuilt what it feeds.\n\n%s\n\n%s"
             "Every source passed its quality checks and every step is inside its update interval "
-            "(pipeline/refresh-freshness.py). Merged on creation (Bryan, 2026-09-30: everything through a PR, "
-            "automerge); the merge deploys sf-works.org.\n\n"
+            "(pipeline/refresh-freshness.py). Merged by the refresh once every check on this PR has passed "
+            "(a change merges once its automatic checks pass); a failed check leaves it open and alerts. The "
+            "merge deploys sf-works.org.\n\n"
             "Generated with [Claude Code](https://claude.com/claude-code) by pipeline/site-refresh/refresh.py\n" % (
                 "```\n" + summary + "\n```",
                 ("Sources whose publisher did not answer kept their last good copy:\n```\n%s\n```\n\n" % refresh_failed)
@@ -205,7 +273,11 @@ def ship(files, summary, refresh_failed):
     say("opened " + url)
     os.makedirs(STATE, exist_ok=True)
     json.dump({"pr": url.rsplit("/", 1)[-1], "branch": branch, "opened": today}, open(PENDING, "w"))
-    sh("gh", "pr", "merge", url, "--squash", "--delete-branch")
+    _, head = sh("git", "rev-parse", "HEAD", quiet=True)
+    # Raises ChecksNotPassed and leaves the PR open, PENDING in place, so the next run waits for a person.
+    wait_for_checks(url)
+    # --match-head-commit: merge only the commit whose checks just passed.
+    sh("gh", "pr", "merge", url, "--squash", "--delete-branch", "--match-head-commit", head.strip())
     say("merged " + url)
     os.remove(PENDING)
     sh("git", "fetch", "-q", "origin")
@@ -343,6 +415,11 @@ def run(a, lock, killed):
         return 1
     try:
         ship(files, summary, refresh_failed)
+    except ChecksNotPassed as e:
+        alert("the refresh's pull request did not pass its checks and was left open",
+              "%s\n\nNothing merged, so main and sf-works.org keep the last good data. Fix the cause, then merge or "
+              "close the pull request; the next run waits until then." % e)
+        return 1
     except RuntimeError as e:
         # The commit stays on its branch; the next run's sync_to_main carries its files back over main.
         alert("shipping the refresh failed", str(e))

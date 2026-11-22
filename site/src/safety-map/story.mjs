@@ -21,6 +21,10 @@
 // and the dashboard have the map take up more of the overall space"): a column on the left on a wide screen, the
 // bottom of the screen on a phone, with a full screen of map between one card and the next. The key and its headline
 // sit bottom-left on a wide screen, the corner chart bottom-right, and a step may set the chart with `chart: {id}`.
+//
+// A page with several blocks of one map builds that map once. The first block holds the stage and the later blocks
+// an empty frame; as the reader scrolls, the stage moves into the block on screen and shows its step. Five maps on
+// the HIN story held 242 MB in headless Chrome against 61 MB for one (the Street Safety map review, 2026-11-19).
 
 import { marked } from "marked";
 import { esc } from "../html.mjs";
@@ -77,15 +81,19 @@ const STORY = /^<MapStory\s+map="([\w-]+)"\s*>[ \t]*\n([\s\S]*?)^<\/MapStory>[ \
  */
 export function mapStories(text, owner) {
   let n = 0;
+  const staged = new Set();
   const out = text.replace(STORY, (_, name, inner) => {
     const m = MAPS[name];
     if (!m) throw new Error(`${owner}: <MapStory map="${name}"> names no map (known: ${Object.keys(MAPS).join(", ")})`);
     n++;
     const steps = parseSteps(inner, owner).map((s, k) =>
       `<div class="sm-step" data-step="${k}" data-state="${esc(JSON.stringify(s.state))}"><div class="sm-step-card">${marked.parse(s.md)}</div></div>`);
-    return `<div class="sm-story" data-story="${name}" data-data="${m.data}" data-crashes="${m.crashes}"><div class="sm-story-graphic sm-stage"><div class="sm-story-map"></div>` +
+    // The first block of each map carries the stage (the map, its key, chart and card); later blocks an empty frame.
+    const stage = staged.has(name) ? "" : `<div class="sm-story-stage"><div class="sm-story-map"></div>` +
       `<div class="sm-ov sm-legend"><div class="sm-key sm-story-key"></div></div>` +
-      `<div class="sm-ov sm-chart" data-chart hidden><div class="sm-chart-slot"></div></div><div class="sm-ov sm-cardslot sm-story-card"></div></div>` +
+      `<div class="sm-ov sm-chart" data-chart hidden><div class="sm-chart-slot"></div></div><div class="sm-ov sm-cardslot sm-story-card"></div></div>`;
+    staged.add(name);
+    return `<div class="sm-story" data-story="${name}" data-data="${m.data}" data-crashes="${m.crashes}"><div class="sm-story-graphic sm-stage">${stage}</div>` +
       `<div class="sm-story-steps">${steps.join("")}</div></div>`.replace(/\n+/g, " ");
   });
   return { text: out, stories: n };
@@ -95,7 +103,9 @@ const STORY_CSS = `<style>
 html:has(.sm-story) { overflow-x: clip; }
 .sm-story { position: relative; width: 100vw; margin: 24px 0 24px calc(50% - 50vw); }
 .sm-story-graphic { position: sticky; top: 0; height: 100vh; height: 100dvh; z-index: 0; }
-.sm-story-map { position: absolute; inset: 0; }
+/* A block's frame waits in a calm grey until the page's one map moves into it. */
+.sm-story-graphic { background: var(--raised, #f4f6f8); }
+.sm-story-stage, .sm-story-map { position: absolute; inset: 0; }
 .sm-story-map .sm-canvas { height: 100%; border-radius: 0; }
 .sm-story-steps { position: relative; z-index: 5; margin-top: -100vh; margin-top: -100dvh; padding: 20vh 0 60vh; pointer-events: none; }
 .sm-step { min-height: 100vh; display: flex; align-items: center; padding: 0 0 0 max(16px, calc(50vw - 640px)); }
@@ -119,32 +129,78 @@ html:has(.sm-story) { overflow-x: clip; }
   .sm-story .sm-legend .sm-key img { width: 14px; height: 14px; }
   .sm-story .sm-chart { top: 44px; bottom: auto; right: 6px; width: calc(44% - 4px); }
   .sm-story .sm-cardslot { max-height: 45%; }
+  /* On a phone the key and the chart ride in the step's card, under its words, so nothing sits on the map. */
+  .sm-story .sm-step-card > .sm-ov { position: relative; inset: auto; width: auto; max-width: none; margin: 8px 0 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: transparent; }
+  .sm-story .sm-step-card > .sm-chart { max-height: 120px; overflow-y: auto; }
 }
 @media (prefers-reduced-motion: reduce) { .sm-step-card > * { transition: none; } }
 </style>`;
 
 const STORY_SCRIPT = `<script>
 (function () {
-  document.querySelectorAll("[data-story]").forEach(function (box) {
-    var steps = Array.prototype.slice.call(box.querySelectorAll(".sm-step")), key = box.querySelector(".sm-story-key");
+  // One map per page for each map name: every block of that map shares it, and its stage (the map, key, chart and
+  // card) moves into whichever block's frame fills more of the screen. The steps of all the blocks are one list, so
+  // sfStep(i) and the scroll steps count across the whole page.
+  var groups = {};
+  document.querySelectorAll("[data-story]").forEach(function (box) { (groups[box.getAttribute("data-story")] = groups[box.getAttribute("data-story")] || []).push(box); });
+  Object.keys(groups).forEach(function (name) {
+    var boxes = groups[name], stage = boxes[0].querySelector(".sm-story-stage"), steps = [], boxOf = [];
+    if (!stage) return;
+    boxes.forEach(function (b, bi) { b.querySelectorAll(".sm-step").forEach(function (s) { steps.push(s); boxOf.push(bi); }); });
     // On a phone a step's crash card would open under the step cards and hide its own buttons, so a phone leaves the
     // card for the reader to open by tapping a person.
     var phone = window.matchMedia("(max-width: 760px)").matches;
     var stateOf = function (el) { var st = JSON.parse(el.getAttribute("data-state")); if (phone) delete st.crash; return st; };
-    var ctl = SafetyMap.create(box.querySelector(".sm-story-map"), { lib: maplibregl, basemap: sfMap, cards: CrashCards, state: SafetyMapState, routes: window.muniRoutes,
-      dataUrl: box.getAttribute("data-data"), crashesUrl: box.getAttribute("data-crashes"), initial: stateOf(steps[0]), story: true, cooperative: true,
-      cardHost: box.querySelector(".sm-story-card") });
-    SafetyOverlay.attach(ctl, { key: key, chart: box.querySelector("[data-chart]") });
-    box.sfStory = ctl;
+    var ctl = SafetyMap.create(stage.querySelector(".sm-story-map"), { lib: maplibregl, basemap: sfMap, cards: CrashCards, state: SafetyMapState, routes: window.muniRoutes,
+      dataUrl: boxes[0].getAttribute("data-data"), crashesUrl: boxes[0].getAttribute("data-crashes"), initial: stateOf(steps[0]), story: true, cooperative: true,
+      cardHost: stage.querySelector(".sm-story-card") });
+    SafetyOverlay.attach(ctl, { key: stage.querySelector(".sm-story-key"), chart: stage.querySelector("[data-chart]") });
+    // On a phone the key and the corner chart leave the map for the active step's card (the map review's rank 3: the
+    // chart covered the city's densest blocks); on a wider screen they stay on the map.
+    var legend = stage.querySelector(".sm-legend"), chartBox = stage.querySelector("[data-chart]"), active = 0;
+    function dock(i) {
+      var host = window.matchMedia("(max-width: 760px)").matches ? steps[i].querySelector(".sm-step-card") : stage;
+      if (legend.parentNode === host) return;
+      var relay = legend.parentNode === stage || host === stage;
+      host.appendChild(legend); host.appendChild(chartBox);
+      if (relay) window.dispatchEvent(new Event("resize"));   // the chart lays itself out again at its new width
+    }
+    var here = 0;
+    function moveTo(bi) {
+      if (bi === here) return;
+      boxes[bi].querySelector(".sm-story-graphic").appendChild(stage);
+      here = bi;
+      var m = ctl.map && ctl.map();
+      if (m) m.resize();
+    }
     function enter(i) {
+      moveTo(boxOf[i]);
+      active = i;
+      dock(i);
       steps.forEach(function (s, k) { s.classList.toggle("is-active", k === i); });
       ctl.setState(stateOf(steps[i]), { duration: 1400, replace: true });
+      // In a card the chart is short and scrolls, so it opens on the bar the step picked.
+      if (chartBox.parentNode !== stage) setTimeout(function () {
+        var on = chartBox.querySelector(".sm-hit.on");
+        chartBox.scrollTop = on ? Math.max(0, on.getBoundingClientRect().top - chartBox.getBoundingClientRect().top + chartBox.scrollTop - 24) : 0;
+      }, 300);
     }
-    box.sfStep = enter;
+    // Between two blocks both frames can be on screen; the map goes to the one showing more of itself, at that
+    // block's nearest step, so the reader never scrolls into a block whose map shows another block's step.
+    function place() {
+      var best = here, most = -1, H = window.innerHeight;
+      boxes.forEach(function (b, bi) {
+        var r = b.querySelector(".sm-story-graphic").getBoundingClientRect(), v = Math.min(r.bottom, H) - Math.max(r.top, 0);
+        if (v > most) { most = v; best = bi; }
+      });
+      if (best !== here && most > 0) enter(best > here ? boxOf.indexOf(best) : boxOf.lastIndexOf(best));
+    }
+    boxes.forEach(function (b) { b.sfStory = ctl; b.sfStep = enter; });
     if (!window.scrollama) { enter(0); return; }
-    var scroller = scrollama();
+    var scroller = scrollama(), raf = 0;
     scroller.setup({ step: steps, offset: window.innerWidth < 760 ? 0.8 : 0.55 }).onStepEnter(function (r) { enter(r.index); });
-    window.addEventListener("resize", function () { scroller.resize(); });
+    if (boxes.length > 1) window.addEventListener("scroll", function () { if (!raf) raf = requestAnimationFrame(function () { raf = 0; place(); }); }, { passive: true });
+    window.addEventListener("resize", function () { scroller.resize(); dock(active); });
     ctl.ready.then(function () { window.__ready = 2; }, function () { window.__ready = 2; });
   });
 })();

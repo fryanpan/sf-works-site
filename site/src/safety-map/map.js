@@ -69,6 +69,8 @@
   // Fewer person trips a weekday than this between two places and the card doesn't split them by mode: about 30
   // simulated trips at MTC's one-in-two sample.
   var WF_MODE_MIN = 60;
+  // Fewer trips by car than this pass an eligibility test and the card says "Fewer than 20", with no share.
+  var WF_ELIG_MIN = 20;
   // Each police level its own hue (Bryan, 2026-11-19: "use categorical colors where severly
   // injured and killed really stand out saturation or value wise"): killed in Observable 10's deep blue and severe in its
   // saturated amber, the two lower levels in pale, greyed teal and lavender, lighter for the less severe, so lightness
@@ -551,7 +553,8 @@
         // A laptop draws a region off its frame at the frame's edge, so the city fills the frame. A smaller screen
         // draws every bubble at its own place, so once an area is picked the frame is all of them, inside the part
         // of the map the cards leave open.
-        var all = !edgeRegions() && cur.filter.area && WFD.units, pad = (opts.fitPadding && opts.fitPadding(all ? "all" : "")) || 16;
+        // A story frames the city on every screen: on a phone the whole Bay Area left San Francisco too small to read.
+        var all = !opts.story && !edgeRegions() && cur.filter.area && WFD.units, pad = (opts.fitPadding && opts.fitPadding(all ? "all" : "")) || 16;
         if (all) {
           if (typeof pad === "number") pad = { top: pad, bottom: pad, left: pad, right: pad };
           var P = WFD.units.points, bb = P.reduce(function (a, p) { return [Math.min(a[0], p[0]), Math.min(a[1], p[1]), Math.max(a[2], p[0]), Math.max(a[3], p[1])]; }, [180, 90, -180, -90]), rm = narrow() ? 30 : WF_R_NARROW + 26;
@@ -1005,6 +1008,16 @@
       var names = WFD.units.groups, rows = [];
       if (d.sel) {
         var A = d.sel, g = A.g, t = A.tot, users = t.arr + t.dep + t.thr + t.inside;
+        // Passing through (cur.thru): only the cars with neither trip end in the area, at the group they start in,
+        // end in, or both. A share is of the through cars (of their trip ends under Both), so the rows add to 100%,
+        // and the headline's share is the through cars out of every car on the area's streets. No ring: none of
+        // them starts or ends here.
+        if (cur.thru) {
+          names.forEach(function (n, i) { var v = e === "from" ? g.ft[i] : e === "to" ? g.tt[i] : g.ft[i] + g.tt[i]; if (v > 0) rows.push({ g: i, name: n, near: 0, thr: v, value: v }); });
+          var tb = WFD.units.bins.map(function (x, k) { return { id: x[0], hours: x[1].length, thr: A.bins.thr[k] }; });
+          return { ready: true, hood: true, thru: true, rows: rows, total: t.thr, thr: t.thr, inside: t.inside, users: users, own: 0, denom: e === "both" ? 2 * t.thr : t.thr,
+            lead: users ? t.thr / users : 0, bins: tb, ends: e };
+        }
         names.forEach(function (n, i) {
           var near = e === "from" ? g.fa[i] : e === "to" ? g.td[i] : g.fa[i] + g.td[i], thr = e === "from" ? g.ft[i] : e === "to" ? g.tt[i] : g.ft[i] + g.tt[i];
           if (near + thr > 0) rows.push({ g: i, name: n, near: near, thr: thr, value: near + thr });
@@ -1021,8 +1034,12 @@
       return { ready: true, hood: false, rows: rows, total: sum, denom: sum, own: 0, links: c.links, ends: e };
     }
     ctl.fromSummary = fromSummary;
+    // Whether the view is counting through cars only: the state asks for it and the area has a through count (a
+    // neighborhood or a district; a drawn area's cordon count can't tell a car passing through from one arriving).
+    function fromThru() { var a = cur.filter.area; return cur.view === "from" && !!cur.thru && !!a && !!(a.hood || a.district); }
+    ctl.fromThru = fromThru;
     // How people travel between the chosen area and a unit (g, or -1 for trips within the area), for the toggle's
-    // direction: person trips by mode and the typical morning trip by each, from scripts/where-traffic-modes.py.
+    // direction: person trips by mode and the typical morning trip by each, from tools/street-safety/where-traffic-modes.py.
     // Null for a drawn area, while the file loads, and for a pair with no trips. `few` when the model has too few
     // trips to split: under WF_MODE_MIN a weekday, about 30 simulated trips at the model's one-in-two sample.
     function fromModes(g) {
@@ -1035,7 +1052,10 @@
       var car = r[1], transit = r[2] + r[3], bike = r[4], walk = r[5], n = car + transit + bike + walk;
       if (!n) return null;
       return { n: n, few: n < WF_MODE_MIN, share: [["Car", car], ["Transit", transit], ["Bike", bike], ["Walk", walk]],
-        car: { min: r[6], mi: r[7] }, transit: { min: r[8], none: r[9], drive: r[10] }, bike: { min: r[11], mi: r[12], none: r[13] } };
+        car: { min: r[6], mi: r[7] }, transit: { min: r[8], none: r[9], drive: r[10] }, bike: { min: r[11], mi: r[12], none: r[13] },
+        // Bryan's eligibility line (2026-11-20): [car, transit, bike, walk] trips on the pairs passing each test, and the
+        // car trips the tests are over.
+        elig: r.length > 16 ? { transit: r[14], bike: r[15], of: r[16] } : null };
     }
     ctl.fromModes = fromModes;
     // A share as the map and the chart print it: whole percents, one decimal under 10%, "<0.1%" for a sliver.
@@ -1116,7 +1136,7 @@
     ctl.fromPlaced = function () { return fromFeats; };   // for scripts/street-safety-check.mjs
     function applyFrom() {
       if (!map.getSource("from-bubbles")) return;
-      var d = wfData(), key = cur.view + "|" + cur.ends + "|" + JSON.stringify(cur.filter.area) + "|" + !!d + "|" + narrow();
+      var d = wfData(), key = cur.view + "|" + cur.ends + "|" + !!cur.thru + "|" + JSON.stringify(cur.filter.area) + "|" + !!d + "|" + narrow();
       if (key === fromKey) return;
       fromKey = key;
       fromList = cur.view === "from" ? fromBubbles() : [];
@@ -1131,7 +1151,7 @@
     function fromKey_() {
       var sm = fromSummary(), drawn = cur.filter.area && cur.filter.area.polygon;
       var verb = cur.ends === "from" ? "start" : cur.ends === "to" ? "end" : "start or end";
-      var h = '<span class="sm-key-h">A circle\'s area is its cars</span>';
+      var h = '<span class="sm-key-h">A circle\'s area is its ' + (sm.thru ? "through cars" : "cars") + "</span>";
       if (!sm.ready || !fromList.length) return h;
       var big = fromList.reduce(function (a, b) { return !b.own && b.v > a.v ? b : a; }, { v: 0, r: 0 });
       var steps = [50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1], top = 100 * big.v / sm.denom, ref = steps.filter(function (x) { return x <= top; })[0];
@@ -1170,8 +1190,10 @@
       var sm = fromSummary();
       if (!sm.ready) return null;
       if (!sm.bins) return fromChart(id, title);
-      var S2 = ["Coming from", "Going to"], rows = [];
+      // Passing through is one series: a through car comes in and goes out in the same trip.
+      var S2 = sm.thru ? ["Passing through"] : ["Coming from", "Going to"], rows = [];
       sm.bins.forEach(function (b) {
+        if (sm.thru) { rows.push({ t: WF_TIMES[b.id], s: S2[0], v: Math.round(b.thr / b.hours) }); return; }
         rows.push({ t: WF_TIMES[b.id], s: S2[0], v: Math.round(b.from / b.hours) });
         rows.push({ t: WF_TIMES[b.id], s: S2[1], v: Math.round(b.to / b.hours) });
       });
@@ -1183,7 +1205,7 @@
         { mark: "text", data: "rows", options: { fx: "t", x: "s", y: "v", text: "label", dy: -6, fontSize: 11 } },
         { mark: "ruleY", data: [0], options: {} }],
         options: { height: Math.max(200, nrows * 30 + 4 - 44), marginTop: 18, marginBottom: 46, marginLeft: 46, marginRight: 2, fx: { domain: sm.bins.map(function (b) { return WF_TIMES[b.id]; }), label: null, padding: 0.12 },
-          x: { axis: null, domain: S2 }, y: { label: null, grid: true, ticks: 4 }, color: { domain: S2, range: WF_SERIES, legend: true } } };
+          x: { axis: null, domain: S2 }, y: { label: null, grid: true, ticks: 4 }, color: { domain: S2, range: WF_SERIES.slice(0, S2.length), legend: true } } };
     }
     ctl.mixes = function () { return D ? { stress: stressMix(), through: throughMix(), bci: bciMix(), crime: crimeMix(), from: cur.view === "from" ? fromSummary() : null } : null; };
 
@@ -1323,7 +1345,8 @@
     }
     ctl.chart = function () {
       // The chart picker reads its titles from CHART_TITLES, so the where-from one follows the toggle there too.
-      CHART_TITLES["from-groups"] = "Share of cars by where they " + (cur.ends === "from" ? "start" : cur.ends === "to" ? "end" : "start or end");
+      CHART_TITLES["from-time"] = (fromThru() ? "Through cars" : "Cars") + " an hour by time of day";
+      CHART_TITLES["from-groups"] = (fromThru() ? "Through cars" : "Share of cars") + " by where they " + (cur.ends === "from" ? "start" : cur.ends === "to" ? "end" : "start or end");
       var id = S.chartFor(cur);
       if (!D || !id) return null;
       var rows = [], title = CHART_TITLES[id], note = "", sub = "", up = null, B0 = bars(id);
@@ -1928,13 +1951,15 @@
         if (!b || !sm.ready) return "";
         var name = a.hood ? esc(a.hood) : a.district ? "District " + a.district : "the drawn area";
         var verb = cur.ends === "from" ? "start" : cur.ends === "to" ? "end" : "start or end";
-        var of = sm.hood ? (cur.ends === "both" ? "trip ends of the cars on " + name + "'s streets" : "the cars on " + name + "'s streets") : "the cars crossing " + name + "'s edge";
+        var of = sm.thru ? (cur.ends === "both" ? "trip ends of the cars passing through " + name : "the cars passing through " + name) :
+          sm.hood ? (cur.ends === "both" ? "trip ends of the cars on " + name + "'s streets" : "the cars on " + name + "'s streets") : "the cars crossing " + name + "'s edge";
         var reg = b.region ? U.regions[b.g - (U.groups.length - U.regions.length)] : null;
         var h = '<div class="pop"><b>' + (b.own ? "Inside " + name : esc(b.name)) + "</b>" + (reg ? '<br><span class="g">' + esc(reg.places.join(", ")) + "</span>" : "") +
           "";
         // The bubble and its bar already give the share and the count, so the card goes straight to how people
         // travel. Where there is nothing to say on that (a drawn area, or while the file loads) it gives the share.
-        var mh = modesHtml(fromModes(p.g), b.own, name);
+        // A through car's trip isn't between here and the area, so the travel figures for that pair don't apply.
+        var mh = sm.thru ? "" : modesHtml(fromModes(p.g), b.own, name);
         return h + (mh || "<br><b>" + b.t1 + "</b> of " + of + " " + verb + " here") + "</div>";
       }
       // The card's second half: how people make the trip between the unit and the area today, and what the typical
@@ -1961,7 +1986,23 @@
         else if (m.bike.min != null && m.bike.none < 50) rows.push(["Bike", mins(m.bike.min) + ", " + miles(m.bike.mi) + (m.bike.none ? "; no bike route under 75 miles for " + m.bike.none + "% of these trips" : "")]);
         else if (m.bike.none != null) rows.push(["Bike", "no bike route under 75 miles for " + m.bike.none + "% of these trips"]);
         if (rows.length) h += '<div class="wfm-t"><span class="g">For the trips people now drive, the typical trip door to door at the morning rush:</span>' + rows.map(function (r) { return "<div><b>" + r[0] + "</b> " + r[1] + "</div>"; }).join("") + "</div>";
+        if (rows.length) h += eligHtml(m.elig);
         return h + "</div>";
+      }
+      // Bryan's eligibility line (2026-11-20): person trips by car that pass each test,
+      // the count as the main figure, its share of trips by car smaller, and today's share of the tested mode on all
+      // trips between the same places. Under WF_ELIG_MIN a count is "Fewer than 20", with no share. Method on About.
+      function eligHtml(e) {
+        if (!e || !e.of) return "";
+        var line = function (t, test, mode, j, tail) {
+          var today = t[0] + t[1] + t[2] + t[3], q = today ? 100 * t[j] / today : 0, few = t[0] < WF_ELIG_MIN;
+          return "<div><b>" + test + ": " + (few ? "Fewer than " + WF_ELIG_MIN : n2(t[0])) + "</b>" +
+            (few ? "" : '<small class="g">, ' + pct(t[0], e.of) + " of trips by car here." +
+              (today >= WF_MODE_MIN ? " Already by " + mode + ": " + (q < 0.5 ? "<1" : Math.round(q)) + "%" + tail + "." : "") + "</small>") + "</div>";
+        };
+        return '<div class="wfm-t wfm-e"><span class="g">Trips by car a weekday that pass a simple test. Not a forecast.</span>' +
+          line(e.transit, "Transit with a walk to the stop, at most 1.5 times the drive", "transit", 1, " of all trips between these places") +
+          line(e.bike, "Bike ride of 3 miles or less", "bike", 2, "") + "</div>";
       }
       function throughCard(r, j) {
         var X = throughX(), p = TR.p[r], pct = Math.round(X.s[j] / 10);

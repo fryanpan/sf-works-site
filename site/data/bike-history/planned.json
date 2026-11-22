@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-21",
  "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
  "centerlines": {
   "dataset": "https://data.sf.gov/d/3psu-pn9h",
-  "queried": "2026-11-11"
+  "queried": "2026-11-21"
  },
  "projects": [
   {
@@ -239,10 +239,10 @@
    "name": "Cesar Chavez Bikeway Improvements Project",
    "page": "https://www.sfmta.com/node/30111",
    "phase": "Detailed Design",
-   "page_edited": "2026-11-06",
+   "page_edited": "2026-11-20",
    "year": 2027,
-   "quote": "Early 2027 Construction Pending",
-   "timeline_status": "Pending",
+   "quote": "beginning in 2027 with the section of Cesar Chavez Street between Indiana Street and Illinois Street",
+   "timeline_status": null,
    "conflict": null,
    "class": "CLASS IV",
    "directions": 2,
@@ -322,7 +322,7 @@
    "name": "Main Street Streetscape Project",
    "page": "https://www.sfmta.com/node/27339",
    "phase": "Detailed Design",
-   "page_edited": "2024-12-12",
+   "page_edited": "2026-11-13",
    "year": 2027,
    "quote": "Predicted Completion 2027",
    "timeline_status": null,
@@ -422,7 +422,7 @@
    "name": "Oak Street Quick-Build Project",
    "page": "https://www.sfmta.com/node/28565",
    "phase": null,
-   "page_edited": "2026-08-05",
+   "page_edited": "2026-11-13",
    "year": 2027,
    "quote": "Summer 2026 - early 2027 Implementation",
    "timeline_status": null,

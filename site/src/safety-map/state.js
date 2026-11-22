@@ -10,6 +10,8 @@
 //                quarters) or "mile"
 //     ends:      the where-from view's choice of trips: "from" (cars coming in from outside the area, at their start),
 //                "to" (cars going out of it, at their end) or "both"; "from" is the default
+//     thru:      the where-from view counts only the cars passing through the area (neither trip end in it); false
+//                is the default. A drawn area has no through count, so there it changes nothing.
 //     camera:    null (all of San Francisco) or { center: [lon, lat], zoom, bearing }
 //     hin:       High Injury Network editions drawn on the injuries view, any of "2024", "2022", "2017", and "groups":
 //                the 2024 network coloured by 10-mile group, worst first
@@ -126,7 +128,7 @@
     }).map(function (x) { return x[0]; });
   }
   var DEFAULTS = {
-    view: "injuries", camera: null, near: "half", ends: "from", hin: ["2024"], color: "people", rank: "2020-2024", worst: null,
+    view: "injuries", camera: null, near: "half", ends: "from", thru: false, hin: ["2024"], color: "people", rank: "2020-2024", worst: null,
     filter: { user: [], other: [], cause: [], years: [INLINE_FROM, NEWEST_YEAR], severity: "severe", hinGroup: [], hin: "all", at: "all", time: [], days: [], area: null, bci: [], crimeYears: null, crimeKinds: [] }, highlight: null, crash: null, card: null, chart: null,
   };
   // The filters that take one value.
@@ -216,6 +218,7 @@
     if (VIEWS.indexOf(s.view) >= 0) out.view = s.view;
     if (NEARS.some(function (n) { return n[0] === s.near; })) out.near = s.near;
     if (ENDS.some(function (e) { return e[0] === s.ends; })) out.ends = s.ends;
+    out.thru = s.thru === true;
     if (s.camera && Array.isArray(s.camera.center) && s.camera.center.length === 2) {
       out.camera = { center: [round(num(s.camera.center[0], -122.44), 5), round(num(s.camera.center[1], 37.76), 5)],
         zoom: round(Math.max(0, Math.min(19, num(s.camera.zoom, 12))), 2), bearing: round(num(s.camera.bearing, 0), 1) };
@@ -271,6 +274,7 @@
     if (s.view !== DEFAULTS.view) q.push("view=" + s.view);
     if (s.near !== DEFAULTS.near) q.push("near=" + s.near);
     if (s.ends !== DEFAULTS.ends) q.push("ends=" + s.ends);
+    if (s.thru) q.push("thru=1");
     if (s.camera) q.push("at=" + [s.camera.center[0].toFixed(5), s.camera.center[1].toFixed(5), s.camera.zoom.toFixed(2)].concat(s.camera.bearing ? [s.camera.bearing] : []).join(","));
     if (s.hin.join(",") !== DEFAULTS.hin.join(",")) q.push("hin=" + (s.hin.join(",") || "none"));
     if (s.color !== DEFAULTS.color) q.push("color=" + s.color);
@@ -315,6 +319,7 @@
     s.view = kv.view === "people" || kv.view === "kind" || kv.view === "areas" ? "injuries" : kv.view;
     if (kv.near) s.near = kv.near;
     if (kv.ends) s.ends = kv.ends;
+    if (kv.thru === "1") s.thru = true;
     if (kv.at) { var c = kv.at.split(",").map(Number); s.camera = { center: [c[0], c[1]], zoom: c[2], bearing: c[3] || 0 }; }
     if (kv.hin) s.hin = kv.hin === "none" ? [] : kv.hin.split(",");
     if (kv.color) s.color = kv.color;
@@ -384,7 +389,7 @@
       keep: lb.filter(function (l) { return la.indexOf(l) >= 0; }),
       camera: JSON.stringify(a.camera) !== JSON.stringify(b.camera),
       // The through distance or the where-from choice: the same layers, recoloured.
-      params: a.near !== b.near || a.ends !== b.ends || a.view !== b.view,
+      params: a.near !== b.near || a.ends !== b.ends || a.thru !== b.thru || a.view !== b.view,
       filter: JSON.stringify(a.filter) !== JSON.stringify(b.filter),
       highlight: JSON.stringify(a.highlight) !== JSON.stringify(b.highlight),
       crash: a.crash !== b.crash,

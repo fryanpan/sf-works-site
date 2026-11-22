@@ -1,11 +1,14 @@
 # SFPUC Commission decisions on San Francisco streets
 
-Read from the Commission's own minutes on its [agendas, minutes and resolutions log](https://www.sfpuc.gov/about-us/boards-commissions-committees/sfpuc-commission/agendas-minutes-resolutions-log) ([primary — read 2026-11-10]). 115 meetings, 2021-01-26 to 2026-10-13; 1224 items that were not procedure; **79 of them (6%) name a street the city's centreline has.** A further 12 name a street the city has but also name a place outside it — the water system runs from Tuolumne County to the Peninsula, and its Skyline Boulevard is San Mateo's — and are left out. 0 files could not be read and 0 parsed to no items; both are listed at the end.
+Read from the Commission's own minutes on its [agendas, minutes and resolutions log](https://www.sfpuc.gov/about-us/boards-commissions-committees/sfpuc-commission/agendas-minutes-resolutions-log) ([primary — read 2026-11-18]). 117 meetings, 2021-01-26 to 2026-10-27; 1256 items that were not procedure; **82 of them (7%) name a street the city's centreline has.** A further 12 name a street the city has but also name a place outside it — the water system runs from Tuolumne County to the Peninsula, and its Skyline Boulevard is San Mateo's — and are left out. 0 files could not be read and 0 parsed to no items; both are listed at the end.
 
 **What this record is.** The Commission decides SFPUC's contracts and agreements. A water-main or sewer job that opens a street appears here as a contract award naming the streets it runs on; what happens to the surface afterwards is settled in that job's scope, not in any transport body's record. So this is the third leg beside the [SFMTA engineering hearings](../sfmta-hearings/bike-items.md) and the [SFMTA Board](../sfmta-board/bike-items.md).
 
 | Date | Item | Resolution | Decision | Streets | What it says |
 |---|---|---|---|---|---|
+| [2026-10-27](https://www.sfpuc.gov/sites/default/files/about-us/commission/10.27.2026_M.pdf) | 6a | 26-0178 | approve the Consent Calendar | 45th ave, 46th ave, 47th ave, vicente st, wawona st, sloat blvd | Accept work performed by Precision Engineering, Inc., under Contract No. WW- 684, 45th, 46th, 47th Aves, Vicente and Wawona Streets, and Sloat Blvd Sewer Replacement; approve Modification No. 4 (Final), decreasing the contract amount by $18 |
+| [2026-10-27](https://www.sfpuc.gov/sites/default/files/about-us/commission/10.27.2026_M.pdf) | 6d | 26-0181 | approve the Consent Calendar | lincoln way, irving st, sunset blvd, 19th ave | Award Contract No. WD-2922A, 8-Inch Ductile Iron Water Main Replacement on Lincoln Way and Irving St. from Sunset Blvd. to 19th Ave. and on Various Side Streets, to the responsible bidder that submitted the lowest responsive bid, M Squared  |
+| [2026-09-08](https://www.sfpuc.gov/sites/default/files/about-us/commission/9.8.2026_M.pdf) | 6l | 26-0144 | approve the Consent Calendar | fulton st, great hwy, 31st ave | Award Contract No. WD-2885, 8-Inch Ductile Iron Water Main Replacement, Sewer Replacement, and Paving Renovation on Fulton Street from Great Highway to 31st Avenue and on Various Side Streets, to the responsible bidder that submitted the lo |
 | [2026-06-23](https://www.sfpuc.gov/sites/default/files/about-us/commission/6.23.2026_M.pdf) | 7c | 26-0097 | approve the Consent Calendar | 21st st, eureka st, church st, hill st, castro st | Award Contract No. WD-2780, 8-Inch Ductile Iron Water Main Replacement and Sewer Replacement on 21st St. from Eureka St. to Church St. and on Hill St. from Castro St. to Church St. and Various Side Streets, to the responsible bidder that su |
 | [2026-06-09](https://www.sfpuc.gov/sites/default/files/about-us/commission/6.9.2023_M_0.pdf) | 6c | 26-0088 | approve the Consent Calendar | seacliff ave | Approve an increase of 248 calendar days to the existing duration contingency for Contract No. WW-747, Seacliff Avenue Pump Station & Force Main Upgrade and Seacliff 1 Pump Station Demolition, with Minerva Construction, Inc., for a revised  |
 | [2026-05-26](https://www.sfpuc.gov/sites/default/files/about-us/commission/5.26.2026_M.pdf) | 6b | 26-0080 | approve the Consent Calendar | griffith st | Award Contract No. WW-780, Pump Station Security Upgrades (Cesar Chavez, Channel, Griffith, and Merlin Morris), to the responsible bidder that submitted the lowest responsive bid, Cal State Constructors, Inc., in the amount of $3,228,014, a |
@@ -92,11 +95,13 @@ Reported, not matched. Most are places outside the city (Hetch Hetchy, Peninsula
 
 - gate ave (12)
 - southern skyline blvd (7)
+- various st (3)
 - heights blvd (3)
 - take pl (3)
+- storms remaining rd (2)
+- remaining rd (2)
 - mine dr (2)
 - muir dr (2)
-- various st (2)
 - bayview plz (2)
 - 18th upper larkin st (2)
 - lower great hwy (2)
@@ -106,8 +111,6 @@ Reported, not matched. Most are places outside the city (Hetch Hetchy, Peninsula
 - chavez st (2)
 - ness ave (2)
 - different way (2)
-- storms remaining rd (1)
-- remaining rd (1)
 - spruce ave (1)
 - manzano way (1)
 - moccasin switchback rd (1)

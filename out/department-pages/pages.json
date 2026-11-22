@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-17",
  "pages": [
   {
    "department": "Public Works",
@@ -3377,7 +3377,7 @@
   },
   {
    "department": "Public Works",
-   "url": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%E2%80%99s-day-service-1916",
+   "url": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%25E2%2580%2599s-day-service-1916",
    "title": "PRESS RELEASE: Volunteers Clean and Green on Mayor’s Day of Service - 1/9/16",
    "status": null,
    "location": null,
@@ -3496,15 +3496,6 @@
    "department": "Public Works",
    "url": "https://sfpublicworks.org/services/graffiti-abatement-tips",
    "title": "Graffiti Abatement Tips",
-   "status": null,
-   "location": null,
-   "listed": false,
-   "kind": "project"
-  },
-  {
-   "department": "Public Works",
-   "url": "https://sfpublicworks.org/services/monument-preservation",
-   "title": "Monument Preservation",
    "status": null,
    "location": null,
    "listed": false,
@@ -7935,15 +7926,6 @@
    "department": "SFPUC",
    "url": "https://www.sfpuc.gov/construction-contracts/construction-projects/night-work",
    "title": "Night Work",
-   "status": null,
-   "location": null,
-   "listed": true,
-   "kind": "project"
-  },
-  {
-   "department": "SFPUC",
-   "url": "https://www.sfpuc.gov/construction-contracts/construction-projects/north-basin",
-   "title": "University Mound Reservoir North Basin Roof Coating Project",
    "status": null,
    "location": null,
    "listed": true,

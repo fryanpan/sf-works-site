@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-20",
  "mileBasis": "per direction of travel",
  "years": [
   2015,
@@ -50,7 +50,7 @@
    "retired_block_network_miles": 2.3,
    "retired_block_all_ages_miles": 0.6,
    "blocks": 2720,
-   "residents_within_reach": 531918,
+   "residents_within_reach": 531989,
    "residents_total": 840763,
    "resident_share": 0.6327,
    "population_basis": "ACS 2011–2015 block-group totals, spread over 2010 blocks by their 2010 census shares",
@@ -63,7 +63,7 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 531918,
+     "residents_within_reach": 531989,
      "resident_share": 0.6327,
      "schools_within_reach": 84,
      "school_share": 0.4264,
@@ -81,8 +81,8 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 419507,
-     "resident_share": 0.499,
+     "residents_within_reach": 419306,
+     "resident_share": 0.4987,
      "schools_within_reach": 59,
      "school_share": 0.2995,
      "libraries_within_reach": 10,
@@ -90,8 +90,8 @@
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 458366,
-     "resident_share": 0.5452,
+     "residents_within_reach": 458271,
+     "resident_share": 0.5451,
      "schools_within_reach": 65,
      "school_share": 0.3299,
      "libraries_within_reach": 10,
@@ -142,9 +142,9 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.0,
    "blocks": 2749,
-   "residents_within_reach": 563079,
+   "residents_within_reach": 563365,
    "residents_total": 850282,
-   "resident_share": 0.6622,
+   "resident_share": 0.6626,
    "population_basis": "ACS 2012–2016 block-group totals, spread over 2010 blocks by their 2010 census shares",
    "schools_within_reach": 91,
    "schools_total": 197,
@@ -155,8 +155,8 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 563079,
-     "resident_share": 0.6622,
+     "residents_within_reach": 563365,
+     "resident_share": 0.6626,
      "schools_within_reach": 91,
      "school_share": 0.4619,
      "libraries_within_reach": 12,
@@ -173,17 +173,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 448847,
-     "resident_share": 0.5279,
-     "schools_within_reach": 66,
-     "school_share": 0.335,
+     "residents_within_reach": 449195,
+     "resident_share": 0.5283,
+     "schools_within_reach": 67,
+     "school_share": 0.3401,
      "libraries_within_reach": 10,
      "library_share": 0.3571
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 486062,
-     "resident_share": 0.5716,
+     "residents_within_reach": 486153,
+     "resident_share": 0.5718,
      "schools_within_reach": 72,
      "school_share": 0.3655,
      "libraries_within_reach": 10,
@@ -234,9 +234,9 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.0,
    "blocks": 2777,
-   "residents_within_reach": 587283,
+   "residents_within_reach": 587571,
    "residents_total": 864263,
-   "resident_share": 0.6795,
+   "resident_share": 0.6799,
    "population_basis": "ACS 2013–2017 block-group totals, spread over 2010 blocks by their 2010 census shares",
    "schools_within_reach": 103,
    "schools_total": 200,
@@ -247,8 +247,8 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 587283,
-     "resident_share": 0.6795,
+     "residents_within_reach": 587571,
+     "resident_share": 0.6799,
      "schools_within_reach": 103,
      "school_share": 0.515,
      "libraries_within_reach": 13,
@@ -265,17 +265,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 475672,
-     "resident_share": 0.5504,
-     "schools_within_reach": 73,
-     "school_share": 0.365,
+     "residents_within_reach": 475970,
+     "resident_share": 0.5507,
+     "schools_within_reach": 74,
+     "school_share": 0.37,
      "libraries_within_reach": 10,
      "library_share": 0.3571
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 515887,
-     "resident_share": 0.5969,
+     "residents_within_reach": 515952,
+     "resident_share": 0.597,
      "schools_within_reach": 81,
      "school_share": 0.405,
      "libraries_within_reach": 10,
@@ -326,9 +326,9 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.0,
    "blocks": 2783,
-   "residents_within_reach": 605009,
+   "residents_within_reach": 605483,
    "residents_total": 870044,
-   "resident_share": 0.6954,
+   "resident_share": 0.6959,
    "population_basis": "ACS 2014–2018 block-group totals, spread over 2010 blocks by their 2010 census shares",
    "schools_within_reach": 105,
    "schools_total": 203,
@@ -339,8 +339,8 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 605009,
-     "resident_share": 0.6954,
+     "residents_within_reach": 605483,
+     "resident_share": 0.6959,
      "schools_within_reach": 105,
      "school_share": 0.5172,
      "libraries_within_reach": 14,
@@ -357,17 +357,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 498352,
-     "resident_share": 0.5728,
-     "schools_within_reach": 77,
-     "school_share": 0.3793,
+     "residents_within_reach": 498823,
+     "resident_share": 0.5733,
+     "schools_within_reach": 78,
+     "school_share": 0.3842,
      "libraries_within_reach": 11,
      "library_share": 0.3929
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 537452,
-     "resident_share": 0.6177,
+     "residents_within_reach": 537773,
+     "resident_share": 0.6181,
      "schools_within_reach": 84,
      "school_share": 0.4138,
      "libraries_within_reach": 11,
@@ -418,9 +418,9 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2844,
-   "residents_within_reach": 631180,
+   "residents_within_reach": 631361,
    "residents_total": 874961,
-   "resident_share": 0.7214,
+   "resident_share": 0.7216,
    "population_basis": "ACS 2015–2019 block-group totals, spread over 2010 blocks by their 2010 census shares",
    "schools_within_reach": 111,
    "schools_total": 207,
@@ -431,8 +431,8 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 631180,
-     "resident_share": 0.7214,
+     "residents_within_reach": 631361,
+     "resident_share": 0.7216,
      "schools_within_reach": 111,
      "school_share": 0.5362,
      "libraries_within_reach": 15,
@@ -449,17 +449,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 520664,
-     "resident_share": 0.5951,
-     "schools_within_reach": 80,
-     "school_share": 0.3865,
+     "residents_within_reach": 520860,
+     "resident_share": 0.5953,
+     "schools_within_reach": 81,
+     "school_share": 0.3913,
      "libraries_within_reach": 12,
      "library_share": 0.4286
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 565987,
-     "resident_share": 0.6469,
+     "residents_within_reach": 565868,
+     "resident_share": 0.6467,
      "schools_within_reach": 87,
      "school_share": 0.4203,
      "libraries_within_reach": 12,
@@ -510,29 +510,29 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2863,
-   "residents_within_reach": 704102,
+   "residents_within_reach": 704431,
    "residents_total": 873965,
-   "resident_share": 0.8056,
+   "resident_share": 0.806,
    "population_basis": "Census 2020 block counts (PL 94-171)",
-   "schools_within_reach": 147,
+   "schools_within_reach": 146,
    "schools_total": 206,
-   "school_share": 0.7136,
+   "school_share": 0.7087,
    "libraries_within_reach": 20,
    "libraries_total": 27,
    "library_share": 0.7407,
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 704102,
-     "resident_share": 0.8056,
-     "schools_within_reach": 147,
-     "school_share": 0.7136,
+     "residents_within_reach": 704431,
+     "resident_share": 0.806,
+     "schools_within_reach": 146,
+     "school_share": 0.7087,
      "libraries_within_reach": 20,
      "library_share": 0.7407
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 447465,
+     "residents_within_reach": 447487,
      "resident_share": 0.512,
      "schools_within_reach": 61,
      "school_share": 0.2961,
@@ -543,15 +543,15 @@
      "metres": 268.2,
      "residents_within_reach": 616814,
      "resident_share": 0.7058,
-     "schools_within_reach": 111,
-     "school_share": 0.5388,
+     "schools_within_reach": 112,
+     "school_share": 0.5437,
      "libraries_within_reach": 19,
      "library_share": 0.7037
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 651023,
-     "resident_share": 0.7449,
+     "residents_within_reach": 651196,
+     "resident_share": 0.7451,
      "schools_within_reach": 121,
      "school_share": 0.5874,
      "libraries_within_reach": 19,
@@ -561,28 +561,28 @@
    "dropped_slow_street_blocks_in_reach": 211,
    "reach_without_dropped_slow_streets": {
     "quarter": {
-     "residents_within_reach": 667707,
+     "residents_within_reach": 667449,
      "schools_within_reach": 131,
      "libraries_within_reach": 17,
-     "resident_share": 0.764
+     "resident_share": 0.7637
     },
     "block": {
-     "residents_within_reach": 406386,
+     "residents_within_reach": 406408,
      "schools_within_reach": 51,
      "libraries_within_reach": 5,
      "resident_share": 0.465
     },
     "2blocks": {
-     "residents_within_reach": 571025,
-     "schools_within_reach": 99,
+     "residents_within_reach": 570813,
+     "schools_within_reach": 100,
      "libraries_within_reach": 17,
-     "resident_share": 0.6534
+     "resident_share": 0.6531
     },
     "1000ft": {
-     "residents_within_reach": 609187,
+     "residents_within_reach": 609304,
      "schools_within_reach": 110,
      "libraries_within_reach": 17,
-     "resident_share": 0.697
+     "resident_share": 0.6972
     }
    },
    "network_basis": "existence from INSTALL_YR in the 2021-03-25 capture; class from that capture, moved back where UPDATE_YR says the change came later; blocks removed before 2021-03-25 are invisible",
@@ -627,29 +627,29 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2920,
-   "residents_within_reach": 705220,
+   "residents_within_reach": 705549,
    "residents_total": 865933,
-   "resident_share": 0.8144,
+   "resident_share": 0.8148,
    "population_basis": "ACS 2017–2021 block-group totals, spread over 2020 blocks by their 2020 census shares",
-   "schools_within_reach": 150,
+   "schools_within_reach": 149,
    "schools_total": 208,
-   "school_share": 0.7212,
+   "school_share": 0.7163,
    "libraries_within_reach": 21,
    "libraries_total": 27,
    "library_share": 0.7778,
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 705220,
-     "resident_share": 0.8144,
-     "schools_within_reach": 150,
-     "school_share": 0.7212,
+     "residents_within_reach": 705549,
+     "resident_share": 0.8148,
+     "schools_within_reach": 149,
+     "school_share": 0.7163,
      "libraries_within_reach": 21,
      "library_share": 0.7778
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 465050,
+     "residents_within_reach": 465074,
      "resident_share": 0.5371,
      "schools_within_reach": 64,
      "school_share": 0.3077,
@@ -660,15 +660,15 @@
      "metres": 268.2,
      "residents_within_reach": 624160,
      "resident_share": 0.7208,
-     "schools_within_reach": 115,
-     "school_share": 0.5529,
+     "schools_within_reach": 116,
+     "school_share": 0.5577,
      "libraries_within_reach": 20,
      "library_share": 0.7407
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 656566,
-     "resident_share": 0.7582,
+     "residents_within_reach": 656594,
+     "resident_share": 0.7583,
      "schools_within_reach": 125,
      "school_share": 0.601,
      "libraries_within_reach": 20,
@@ -678,28 +678,28 @@
    "dropped_slow_street_blocks_in_reach": 213,
    "reach_without_dropped_slow_streets": {
     "quarter": {
-     "residents_within_reach": 666376,
+     "residents_within_reach": 666082,
      "schools_within_reach": 134,
      "libraries_within_reach": 18,
-     "resident_share": 0.7695
+     "resident_share": 0.7692
     },
     "block": {
-     "residents_within_reach": 420862,
+     "residents_within_reach": 420885,
      "schools_within_reach": 54,
      "libraries_within_reach": 5,
      "resident_share": 0.486
     },
     "2blocks": {
-     "residents_within_reach": 575085,
-     "schools_within_reach": 103,
+     "residents_within_reach": 574857,
+     "schools_within_reach": 104,
      "libraries_within_reach": 18,
-     "resident_share": 0.6641
+     "resident_share": 0.6639
     },
     "1000ft": {
-     "residents_within_reach": 611438,
+     "residents_within_reach": 611506,
      "schools_within_reach": 114,
      "libraries_within_reach": 18,
-     "resident_share": 0.7061
+     "resident_share": 0.7062
     }
    },
    "network_basis": "bracketed by captures 2021-03-25 and 2022-12-09; changes inside the gap dated by UPDATE_YR where present",
@@ -746,9 +746,9 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2917,
-   "residents_within_reach": 659451,
+   "residents_within_reach": 659210,
    "residents_total": 851036,
-   "resident_share": 0.7749,
+   "resident_share": 0.7746,
    "population_basis": "ACS 2018–2022 block-group totals, spread over 2020 blocks by their 2020 census shares",
    "schools_within_reach": 138,
    "schools_total": 209,
@@ -759,8 +759,8 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 659451,
-     "resident_share": 0.7749,
+     "residents_within_reach": 659210,
+     "resident_share": 0.7746,
      "schools_within_reach": 138,
      "school_share": 0.6603,
      "libraries_within_reach": 19,
@@ -768,8 +768,8 @@
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 417801,
-     "resident_share": 0.4909,
+     "residents_within_reach": 417822,
+     "resident_share": 0.491,
      "schools_within_reach": 54,
      "school_share": 0.2584,
      "libraries_within_reach": 6,
@@ -777,17 +777,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 569241,
-     "resident_share": 0.6689,
-     "schools_within_reach": 107,
-     "school_share": 0.512,
+     "residents_within_reach": 568896,
+     "resident_share": 0.6685,
+     "schools_within_reach": 108,
+     "school_share": 0.5167,
      "libraries_within_reach": 19,
      "library_share": 0.7037
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 605602,
-     "resident_share": 0.7116,
+     "residents_within_reach": 605675,
+     "resident_share": 0.7117,
      "schools_within_reach": 118,
      "school_share": 0.5646,
      "libraries_within_reach": 19,
@@ -839,9 +839,9 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2930,
-   "residents_within_reach": 663970,
+   "residents_within_reach": 664037,
    "residents_total": 836321,
-   "resident_share": 0.7939,
+   "resident_share": 0.794,
    "population_basis": "ACS 2019–2023 block-group totals, spread over 2020 blocks by their 2020 census shares",
    "schools_within_reach": 144,
    "schools_total": 209,
@@ -852,8 +852,8 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 663970,
-     "resident_share": 0.7939,
+     "residents_within_reach": 664037,
+     "resident_share": 0.794,
      "schools_within_reach": 144,
      "school_share": 0.689,
      "libraries_within_reach": 19,
@@ -861,7 +861,7 @@
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 432507,
+     "residents_within_reach": 432530,
      "resident_share": 0.5172,
      "schools_within_reach": 59,
      "school_share": 0.2823,
@@ -870,17 +870,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 580774,
-     "resident_share": 0.6944,
-     "schools_within_reach": 112,
-     "school_share": 0.5359,
+     "residents_within_reach": 580442,
+     "resident_share": 0.694,
+     "schools_within_reach": 113,
+     "school_share": 0.5407,
      "libraries_within_reach": 19,
      "library_share": 0.7037
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 613973,
-     "resident_share": 0.7341,
+     "residents_within_reach": 613885,
+     "resident_share": 0.734,
      "schools_within_reach": 122,
      "school_share": 0.5837,
      "libraries_within_reach": 19,
@@ -932,7 +932,7 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2946,
-   "residents_within_reach": 667406,
+   "residents_within_reach": 667445,
    "residents_total": 830235,
    "resident_share": 0.8039,
    "population_basis": "ACS 2020–2024 block-group totals, spread over 2020 blocks by their 2020 census shares",
@@ -945,7 +945,7 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 667406,
+     "residents_within_reach": 667445,
      "resident_share": 0.8039,
      "schools_within_reach": 151,
      "school_share": 0.6927,
@@ -954,7 +954,7 @@
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 434395,
+     "residents_within_reach": 434420,
      "resident_share": 0.5232,
      "schools_within_reach": 63,
      "school_share": 0.289,
@@ -963,17 +963,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 584601,
-     "resident_share": 0.7041,
-     "schools_within_reach": 120,
-     "school_share": 0.5505,
+     "residents_within_reach": 584253,
+     "resident_share": 0.7037,
+     "schools_within_reach": 121,
+     "school_share": 0.555,
      "libraries_within_reach": 20,
      "library_share": 0.7407
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 617448,
-     "resident_share": 0.7437,
+     "residents_within_reach": 617361,
+     "resident_share": 0.7436,
      "schools_within_reach": 130,
      "school_share": 0.5963,
      "libraries_within_reach": 20,
@@ -1026,7 +1026,7 @@
    "retired_block_network_miles": 2.7,
    "retired_block_all_ages_miles": 1.3,
    "blocks": 2937,
-   "residents_within_reach": 666647,
+   "residents_within_reach": 666687,
    "residents_total": 830235,
    "resident_share": 0.803,
    "population_basis": "ACS 2020–2024 block-group totals, spread over 2020 blocks by their 2020 census shares; the 2020–2024 ACS is the latest released, so 2025 is held at it",
@@ -1039,7 +1039,7 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 666647,
+     "residents_within_reach": 666687,
      "resident_share": 0.803,
      "schools_within_reach": 152,
      "school_share": 0.6878,
@@ -1048,7 +1048,7 @@
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 434921,
+     "residents_within_reach": 434947,
      "resident_share": 0.5239,
      "schools_within_reach": 64,
      "school_share": 0.2896,
@@ -1057,17 +1057,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 583999,
-     "resident_share": 0.7034,
-     "schools_within_reach": 121,
-     "school_share": 0.5475,
+     "residents_within_reach": 583651,
+     "resident_share": 0.703,
+     "schools_within_reach": 122,
+     "school_share": 0.552,
      "libraries_within_reach": 19,
      "library_share": 0.7037
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 616894,
-     "resident_share": 0.743,
+     "residents_within_reach": 616807,
+     "resident_share": 0.7429,
      "schools_within_reach": 131,
      "school_share": 0.5928,
      "libraries_within_reach": 19,
@@ -1118,7 +1118,7 @@
    "retired_block_network_miles": 2.9,
    "retired_block_all_ages_miles": 1.5,
    "blocks": 2948,
-   "residents_within_reach": 664340,
+   "residents_within_reach": 664379,
    "residents_total": 830235,
    "resident_share": 0.8002,
    "population_basis": "ACS 2020–2024 block-group totals, spread over 2020 blocks by their 2020 census shares; the 2020–2024 ACS is the latest released, so 2026 is held at it",
@@ -1131,7 +1131,7 @@
    "reach_by_threshold": {
     "quarter": {
      "metres": 402.3,
-     "residents_within_reach": 664340,
+     "residents_within_reach": 664379,
      "resident_share": 0.8002,
      "schools_within_reach": 153,
      "school_share": 0.6923,
@@ -1140,8 +1140,8 @@
     },
     "block": {
      "metres": 134.1,
-     "residents_within_reach": 435984,
-     "resident_share": 0.5251,
+     "residents_within_reach": 436010,
+     "resident_share": 0.5252,
      "schools_within_reach": 65,
      "school_share": 0.2941,
      "libraries_within_reach": 8,
@@ -1149,17 +1149,17 @@
     },
     "2blocks": {
      "metres": 268.2,
-     "residents_within_reach": 582069,
-     "resident_share": 0.7011,
-     "schools_within_reach": 122,
-     "school_share": 0.552,
+     "residents_within_reach": 581721,
+     "resident_share": 0.7007,
+     "schools_within_reach": 123,
+     "school_share": 0.5566,
      "libraries_within_reach": 19,
      "library_share": 0.7037
     },
     "1000ft": {
      "metres": 304.8,
-     "residents_within_reach": 614870,
-     "resident_share": 0.7406,
+     "residents_within_reach": 614783,
+     "resident_share": 0.7405,
      "schools_within_reach": 132,
      "school_share": 0.5973,
      "libraries_within_reach": 19,
@@ -1315,7 +1315,7 @@
    },
    "centerlines": {
     "id": "3psu-pn9h",
-    "queried": "2026-11-11"
+    "queried": "2026-11-19"
    }
   },
   "slow_streets": {
@@ -1433,7 +1433,7 @@
   },
   "reported": {
    "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
-   "generated": "2026-11-11",
+   "generated": "2026-11-19",
    "projects": [
     {
      "node": "45035",
@@ -1520,14 +1520,13 @@
  "reached_earlier_out_latest": {
   "quarter": {
    "year": 2026,
-   "blocks": 242,
-   "residents_2020": 34782,
+   "blocks": 246,
+   "residents_2020": 35369,
    "schools": [
     "Bertrand D Hsu American & Chinese Bicultural Academy",
     "Cleveland Elementary",
     "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
     "Downtown High",
-    "Jewish Community High School of the Bay",
     "King (Thomas Starr) Elementary",
     "Milk (Harvey) Civil Rights Elementary",
     "Monroe Elementary",
@@ -1567,8 +1566,8 @@
   },
   "2blocks": {
    "year": 2026,
-   "blocks": 307,
-   "residents_2020": 44192,
+   "blocks": 310,
+   "residents_2020": 44532,
    "schools": [
     "Bertrand D Hsu American & Chinese Bicultural Academy",
     "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
@@ -1592,7 +1591,7 @@
   "1000ft": {
    "year": 2026,
    "blocks": 272,
-   "residents_2020": 39230,
+   "residents_2020": 39488,
    "schools": [
     "Bertrand D Hsu American & Chinese Bicultural Academy",
     "Convent & Stuart Hall, Schools of the Sacred Heart - San Francisco",
@@ -1758,10 +1757,10 @@
   "The Slow Streets dataset was last loaded 2024-01-18 and carries no removal dates; the pandemic-era Slow Streets that were dropped in 2022 are not in it, and 7 segments (the SoMa streets) carry no install date and are counted from 2022. The dropped corridors are traced from SFMTA's 2020 and 2021 Board reports (scripts/lib/slow_corridors.py) and counted in the all-ages miles and the reach from their install year through 2021: 213 blocks, 21.2 all-ages miles in 2021 that no other all-ages line covered, adding 4.2 points of residents within a quarter mile in 2020. The reports give each corridor's extent as approved; where a corridor went in shorter, these years are high by the difference.",
   "The CDE directory is the 2025-10-05 archive capture, so schools opened or closed after that date are missing. School coordinates are CDE's; most schools closed before 2015 carry none, and the one school open in the window without one (Gateway to College, closed 2016) is left out.",
   "Library closures are entered by hand from SFPL's pages; only the Mission Branch's renovation closure is recorded. The system-wide COVID closure of March 2020 to May 2021 is not treated as a closure.",
-  "The map lights a point in exactly the years it is within reach, so a point reached only through a dropped Slow Street or a removed bikeway goes grey when it went. In 2026, 242 blocks (34,782 residents at the 2020 count) and 3 branches that were within a quarter mile of an all-ages line in an earlier year are not."
+  "The map lights a point in exactly the years it is within reach, so a point reached only through a dropped Slow Street or a removed bikeway goes grey when it went. In 2026, 246 blocks (35,369 residents at the 2020 count) and 3 branches that were within a quarter mile of an all-ages line in an earlier year are not."
  ],
  "planned": {
-  "generated": "2026-11-11",
+  "generated": "2026-11-20",
   "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
   "rows": [
    {
@@ -1774,7 +1773,7 @@
     "reach_by_threshold": {
      "quarter": {
       "metres": 402.3,
-      "residents_within_reach": 664340,
+      "residents_within_reach": 664379,
       "resident_share": 0.8002,
       "schools_within_reach": 153,
       "school_share": 0.6923,
@@ -1783,8 +1782,8 @@
      },
      "block": {
       "metres": 134.1,
-      "residents_within_reach": 435987,
-      "resident_share": 0.5251,
+      "residents_within_reach": 436012,
+      "resident_share": 0.5252,
       "schools_within_reach": 65,
       "school_share": 0.2941,
       "libraries_within_reach": 8,
@@ -1792,17 +1791,17 @@
      },
      "2blocks": {
       "metres": 268.2,
-      "residents_within_reach": 582069,
-      "resident_share": 0.7011,
-      "schools_within_reach": 122,
-      "school_share": 0.552,
+      "residents_within_reach": 581721,
+      "resident_share": 0.7007,
+      "schools_within_reach": 123,
+      "school_share": 0.5566,
       "libraries_within_reach": 19,
       "library_share": 0.7037
      },
      "1000ft": {
       "metres": 304.8,
-      "residents_within_reach": 614870,
-      "resident_share": 0.7406,
+      "residents_within_reach": 614783,
+      "resident_share": 0.7405,
       "schools_within_reach": 132,
       "school_share": 0.5973,
       "libraries_within_reach": 19,
@@ -1834,7 +1833,7 @@
     "reach_by_threshold": {
      "quarter": {
       "metres": 402.3,
-      "residents_within_reach": 664340,
+      "residents_within_reach": 664379,
       "resident_share": 0.8002,
       "schools_within_reach": 153,
       "school_share": 0.6923,
@@ -1843,8 +1842,8 @@
      },
      "block": {
       "metres": 134.1,
-      "residents_within_reach": 435987,
-      "resident_share": 0.5251,
+      "residents_within_reach": 436012,
+      "resident_share": 0.5252,
       "schools_within_reach": 65,
       "school_share": 0.2941,
       "libraries_within_reach": 8,
@@ -1852,17 +1851,17 @@
      },
      "2blocks": {
       "metres": 268.2,
-      "residents_within_reach": 582069,
-      "resident_share": 0.7011,
-      "schools_within_reach": 122,
-      "school_share": 0.552,
+      "residents_within_reach": 581721,
+      "resident_share": 0.7007,
+      "schools_within_reach": 123,
+      "school_share": 0.5566,
       "libraries_within_reach": 19,
       "library_share": 0.7037
      },
      "1000ft": {
       "metres": 304.8,
-      "residents_within_reach": 614870,
-      "resident_share": 0.7406,
+      "residents_within_reach": 614783,
+      "resident_share": 0.7405,
       "schools_within_reach": 132,
       "school_share": 0.5973,
       "libraries_within_reach": 19,
@@ -1874,7 +1873,7 @@
       "node": "30111",
       "name": "Cesar Chavez Bikeway Improvements Project",
       "page": "https://www.sfmta.com/node/30111",
-      "quote": "Early 2027 Construction Pending"
+      "quote": "beginning in 2027 with the section of Cesar Chavez Street between Indiana Street and Illinois Street"
      },
      {
       "node": "27339",
@@ -1900,7 +1899,7 @@
     "reach_by_threshold": {
      "quarter": {
       "metres": 402.3,
-      "residents_within_reach": 664340,
+      "residents_within_reach": 664379,
       "resident_share": 0.8002,
       "schools_within_reach": 153,
       "school_share": 0.6923,
@@ -1909,8 +1908,8 @@
      },
      "block": {
       "metres": 134.1,
-      "residents_within_reach": 435987,
-      "resident_share": 0.5251,
+      "residents_within_reach": 436012,
+      "resident_share": 0.5252,
       "schools_within_reach": 65,
       "school_share": 0.2941,
       "libraries_within_reach": 8,
@@ -1918,17 +1917,17 @@
      },
      "2blocks": {
       "metres": 268.2,
-      "residents_within_reach": 582069,
-      "resident_share": 0.7011,
-      "schools_within_reach": 122,
-      "school_share": 0.552,
+      "residents_within_reach": 581721,
+      "resident_share": 0.7007,
+      "schools_within_reach": 123,
+      "school_share": 0.5566,
       "libraries_within_reach": 19,
       "library_share": 0.7037
      },
      "1000ft": {
       "metres": 304.8,
-      "residents_within_reach": 614870,
-      "resident_share": 0.7406,
+      "residents_within_reach": 614783,
+      "resident_share": 0.7405,
       "schools_within_reach": 132,
       "school_share": 0.5973,
       "libraries_within_reach": 19,
@@ -1960,7 +1959,7 @@
     "reach_by_threshold": {
      "quarter": {
       "metres": 402.3,
-      "residents_within_reach": 664340,
+      "residents_within_reach": 664379,
       "resident_share": 0.8002,
       "schools_within_reach": 153,
       "school_share": 0.6923,
@@ -1969,8 +1968,8 @@
      },
      "block": {
       "metres": 134.1,
-      "residents_within_reach": 435987,
-      "resident_share": 0.5251,
+      "residents_within_reach": 436012,
+      "resident_share": 0.5252,
       "schools_within_reach": 65,
       "school_share": 0.2941,
       "libraries_within_reach": 8,
@@ -1978,17 +1977,17 @@
      },
      "2blocks": {
       "metres": 268.2,
-      "residents_within_reach": 582069,
-      "resident_share": 0.7011,
-      "schools_within_reach": 122,
-      "school_share": 0.552,
+      "residents_within_reach": 581721,
+      "resident_share": 0.7007,
+      "schools_within_reach": 123,
+      "school_share": 0.5566,
       "libraries_within_reach": 19,
       "library_share": 0.7037
      },
      "1000ft": {
       "metres": 304.8,
-      "residents_within_reach": 614870,
-      "resident_share": 0.7406,
+      "residents_within_reach": 614783,
+      "resident_share": 0.7405,
       "schools_within_reach": 132,
       "school_share": 0.5973,
       "libraries_within_reach": 19,

@@ -179,18 +179,18 @@
  },
  "unmatched_dropped_after_cleaning": 46661,
  "hourly_join": {
-  "timepoint_rows": 7289886,
+  "timepoint_rows": 7289891,
   "no_block": 0,
   "excluded_block": 35175,
-  "kept": 7254711
+  "kept": 7254716
  },
  "all_hours_sf": {
-  "n": 7254711,
+  "n": 7254716,
   "early_sf": 2802721,
-  "late_sf": 990521
+  "late_sf": 990525
  },
  "scored_both": {
-  "n": 680544,
+  "n": 680549,
   "s511_differs_share": 0.0,
   "vs_timetable": {
    "on_time": 70.64,
@@ -204,10 +204,10 @@
   }
  },
  "scored": {
-  "n": 680544,
+  "n": 680549,
   "early": 122114,
-  "late": 77660,
+  "late": 77663,
   "early_sf": 207559,
-  "late_sf": 101839
+  "late_sf": 101843
  }
 }

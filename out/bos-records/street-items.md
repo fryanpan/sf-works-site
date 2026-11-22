@@ -1,10 +1,10 @@
 # Board of Supervisors records that name a street
 
-Generated 2026-11-10 by `scripts/bos-street-records.py`. **Do not edit by hand — the next run overwrites it.**
+Generated 2026-11-20 by `scripts/bos-street-records.py`. **Do not edit by hand — the next run overwrites it.**
 
-**61 records, from 1630 files read.** Two filters stand between those numbers, and both are here because the first sample of eight trusted links was eight wrong.
+**61 records, from 1632 files read.** Two filters stand between those numbers, and both are here because the first sample of eight trusted links was eight wrong.
 
-- **1501 files carry the search phrase only in the body.** Legistar searches every attachment, so `encroachment` matches any property matter with an encroachment clause and `Vision Zero` matches anything citing the policy in passing. A file the Board is deciding about a street says so in its title.
+- **1503 files carry the search phrase only in the body.** Legistar searches every attachment, so `encroachment` matches any property matter with an encroachment clause and `Vision Zero` matches anything citing the policy in passing. A file the Board is deciding about a street says so in its title.
 - **2 name a street only as a building's address** — "located at 2245 Post Street". An address is one lot; a project is a corridor.
 
 Years searched: **2019–2026**.
@@ -15,23 +15,23 @@ Years searched: **2019–2026**.
 | --- | ---: |
 | `bikeway` | 96 |
 | `bicycle lane` | 37 |
-| `bike lane` | 99 |
+| `bike lane` | 100 |
 | `bicycle facility` | 18 |
 | `street vacation` | 129 |
 | `traffic calming` | 149 |
-| `Vision Zero` | 288 |
+| `Vision Zero` | 289 |
 | `quick-build` | 48 |
-| `speed limit` | 57 |
+| `speed limit` | 58 |
 | `encroachment` | 441 |
 | `street renaming` | 17 |
 | `sidewalk widening` | 72 |
-| `streetscape` | 581 |
+| `streetscape` | 582 |
 | `Slow Streets` | 87 |
 | `car-free` | 57 |
-| `street closure` | 63 |
+| `street closure` | 64 |
 | `transit-only` | 87 |
 | `road diet` | 5 |
-| `pedestrian safety` | 342 |
+| `pedestrian safety` | 343 |
 | `Better Streets` | 176 |
 | `traffic signal` | 141 |
 | `crosswalk` | 142 |
@@ -52,7 +52,7 @@ Years searched: **2019–2026**.
 
 ## Titles with a street suffix that produced no street
 
-28 of 1630. Each is a parser miss to read, not a file to ignore.
+28 of 1632. Each is a parser miss to read, not a file to ignore.
 
 - [201000](https://sfgov.legistar.com/LegislationDetail.aspx?ID=4630830&GUID=A4507D7C-74A7-4729-9CCB-44B719157E75&FullText=1) — Hearing of persons interested in or objecting to the determination of statutory exemption from environmental review under the California Environmental Quality A
 - [200582](https://sfgov.legistar.com/LegislationDetail.aspx?ID=4553871&GUID=4E70B526-9A85-4641-9CF2-39882548436F&FullText=1) — Resolution authorizing and directing the sale of not to exceed $140,000,000 aggregate principal amount of one or more series of taxable or tax-exempt bonds to b

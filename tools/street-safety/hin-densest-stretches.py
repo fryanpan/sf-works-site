@@ -10,8 +10,10 @@ the same for the 2022 HIN in hin-groups-2022.json and hin-case-segments-2022.jso
 pw5fy849duld: "The 'By 10 miles of HIN' should change depending on which HIN I choose"). The 2017 HIN is left out: its
 only public geometry is SFDPH's ArcGIS layer of 135 whole corridors with no block ids, some drawn on both sides of a
 divided street (tools/street-safety/hin-versions.py), so its miles can't be put on blocks without spreading a corridor's length
-over its drawn feet, which would be a guess. One-off analysis behind a notes page
-(research/notes/whitepaper-2026-11/part-1/2026-11-18-densest-hin-stretches.md); no page reads it on a schedule.
+over its drawn feet, which would be a guess. Notes page:
+research/notes/whitepaper-2026-11/part-1/2026-11-18-densest-hin-stretches.md. The Street Safety map reads hin-groups and
+hin-case-segments, so this runs daily as step hin-densest in pipeline/transportation-update.py; its crash reads go through
+lib/street_safety_reads.py, which step street-safety-crashes keeps current.
 
 WHERE THE FIGURES COME FROM. Supervisors at the 2026-11-17 SFCTA hearing cited "8.8 miles of streets" with "40 plus"
 killed or severely injured (KSI), and Walk SF "30 or more ... per mile on two dozen miles" for 2020 to 2024. Both are
@@ -80,6 +82,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = paths.ROOT
 sys.path.insert(0, HERE)
 import sfdata  # noqa: E402
+from lib import street_safety_reads  # noqa: E402
 from lib.stable import write_json  # noqa: E402
 
 OUT = os.path.join(ROOT, "out", "hin-densest")
@@ -233,9 +236,7 @@ def main():
     ranked_sections = {**sections, **short}
 
     # ---- people
-    V = sfdata.fetch("nwes-mmgh", select="case_id_pkey,victim_id,collision_datetime,victim_degree_of_injury,tb_latitude,tb_longitude,primary_rd,supervisor_district,victim_role,party_number_ckey",
-                     where="victim_degree_of_injury in ('Severe Injury','Fatal Injury') and collision_datetime >= '2015-01-01T00:00:00'",  # through the newest row
-                     floor=3000, refresh=a.refresh)
+    V = street_safety_reads.read("densest-victims")
     ppl = {}
     for v in V.rows:
         ppl[(v["case_id_pkey"], v["victim_id"])] = v
@@ -526,11 +527,9 @@ def main():
         return "Other"
     cases = sorted({people[i]["case"] for i in base})
     parties = collections.defaultdict(dict)
-    for j in range(0, len(cases), 250):
-        chunk = cases[j:j + 250]
-        Pr = sfdata.fetch("8gtc-pjc6", select="case_id_pkey,party_number_ckey,party_type,stwd_vehicle_type",
-                          where="case_id_pkey in (%s)" % ",".join("'%s'" % c for c in chunk), floor=len(chunk), refresh=a.refresh)
-        for pt in Pr.rows:
+    keep = set(cases)
+    for pt in street_safety_reads.read("densest-parties").rows:   # every party since 2015, kept for these cases
+        if pt["case_id_pkey"] in keep:
             parties[pt["case_id_pkey"]][pt["party_number_ckey"]] = pt
     assert all(c in parties for c in cases), "cases with no party rows"
 

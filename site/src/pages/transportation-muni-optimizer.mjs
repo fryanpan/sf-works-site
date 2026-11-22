@@ -283,7 +283,7 @@ function controls() {
 </div>
 </div>`).join("")}</div>
 <button type="button" class="op-reset">Reset to today</button>
-<p class="op-metro" hidden>Trains get no fixes here yet; these are today's figures.</p>
+<p class="op-metro" hidden></p>
 </div>`;
 }
 
@@ -310,7 +310,7 @@ function body() {
   const d = lineData(NOW, DEFAULT_LINE);
   return `${CSS}${PAGE_CSS}
 <div class="op-head"><h1>Upgrade a Bus Line <span class="tag">Draft</span></h1>
-<p class="op-updated">Data updated ${esc(longDate(OPT.dataUpdated))} · <a href="${BASE}/about#optimizer">How we estimate this</a></p>
+<p class="op-updated">Data updated ${esc(longDate(OPT.dataUpdated))}${OPT.crowdMonths ? ` · Crowding is SFMTA's, ${esc(monthSpan(OPT.crowdMonths))}` : ""} · <a href="${BASE}/about#optimizer">How we estimate this</a></p>
 </div>
 <div class="op">
 ${controls()}
@@ -583,7 +583,11 @@ const SCRIPT = `<script>
   // the cards: the figure the mix delivers, today's, and what the next step better adds; trains show today's only
   function cards(x, m) {
     var today = x.mixes[0][9], train = x.kind !== "bus";
-    document.querySelector(".op-metro").hidden = !train;
+    // under the cards: why a train has no fixes, and what a Connector line shows where the others show a wait
+    var noWait = !train && x.onTime != null && !x.mixes[0][2], note = document.querySelector(".op-metro");
+    note.hidden = !train && !noWait;
+    note.textContent = train ? "Trains get no fixes here yet; these are today's figures."
+      : noWait ? "This line runs to a timetable, so we show how often its buses are on time, 1 minute early to 4 late, not a wait." : "";
     document.querySelector(".op-cards").classList.toggle("op-train", train);
     // the blue is SFMTA's transit-only lanes, which a train line shares with buses
     document.querySelector(".op-k-lane").textContent = train ? "Transit lane today" : "Bus lane today";
@@ -592,8 +596,8 @@ const SCRIPT = `<script>
       var m0 = x.mixes[0], v0 = g === 0 ? m0[2] : g === 1 ? m0[3] : m0[4], now = v0 ? v0[1] : null;
       var vals = g === 0 ? m[2] : g === 1 ? m[3] : m[4], after = vals ? vals[1] : null;
       var set = !train && today[g] != null;
-      // a line with no hour every 10 minutes or better has no wait figure; riders go by the timetable, so the card shows
-      //   today's on-time share instead, with no control: our measure isn't sound enough to set a target on (About)
+      // a Connector line has no wait figure (SFMTA runs it to set times, and the dashboard judges it on time), so the card
+      //   shows today's on-time share instead, with no control: our measure isn't sound enough to set a target on (About)
       var ot = g === 0 && now == null && !train && x.onTime != null;
       // 511 stamps a bus's arrival at a stop, not its departure, so the card says on time, not leaves on time
       card.querySelector(".op-card-lab").textContent = g === 1 ? (train ? "Speed" : "Bus speed") : g === 0 ? (ot ? "On time" : "Expected wait") : "Crowded trips";
@@ -604,7 +608,7 @@ const SCRIPT = `<script>
       var nowEl = card.querySelector(".op-card-now"), moved = !ot && now != null && after != null && fmt(fg, after) !== fmt(fg, now);
       nowEl.textContent = now == null && !ot ? "" : moved ? "Today " + fmt(fg, now) : "Today";
       // our on-time count doesn't reproduce SFMTA's published one, so the card's hover says so
-      nowEl.title = ot ? "Weekdays." + (UNDER_SFMTA ? " Our count, under SFMTA's." : "") + " See About This Data."
+      nowEl.title = ot ? "Weekdays, 1 minute early to 4 late." + (UNDER_SFMTA ? " Our count, under SFMTA's." : "") + " See About This Data."
         : g === 0 && !train && x.today && x.today.swt != null ? "If every bus kept to the timetable: " + fmt(fg, x.today.swt) : "";
       var n = set ? nextStep(x, st.t, g) : null, bad = set ? worse(x, st.t, g) : null;
       // beside a link's held mix, the step's added cost is from that mix's own ten-year cost, not the targets' cheapest
@@ -722,7 +726,7 @@ const SCRIPT = `<script>
       words.forEach(function (wd) { if ((ln_ + " " + wd).length > 120) { out += txt(28, fy, ln_, 13, 400, "#59626f"); fy += 18; ln_ = wd; } else ln_ = ln_ ? ln_ + " " + wd : wd; });
       if (ln_) { out += txt(28, fy, ln_, 13, 400, "#59626f"); fy += 20; }
     }
-    out += txt(28, fy, "The wait counts the hours with a bus every 10 minutes or better; crowding is SFMTA's, " + D.crowdSpan + ".", 12, 400, "#59626f"); fy += 18;
+    out += txt(28, fy, (x.mixes[0][2] ? "The wait counts every hour the line runs from 5 am to 11 pm." : x.kind === "bus" ? "This line runs to a timetable, so it has no wait figure." : "") + " Crowding is SFMTA's, " + D.crowdSpan + ".", 12, 400, "#59626f"); fy += 18;
     out += txt(28, fy, "Ranges: weakest to strongest case. How we make these: sf-works.org" + base + "/about#optimizer", 12, 400, "#59626f");
     var kx = 28, ky = fy + 24;
     // a key that would run past the picture's edge starts a new row

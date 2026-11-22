@@ -2,18 +2,18 @@
  "body": "bos-meetings",
  "name": "Board of Supervisors and its committees",
  "source": "https://sfgov.legistar.com/Calendar.aspx",
- "generated": "2026-11-10",
+ "generated": "2026-11-21",
  "since": "2019-01-01",
  "range": [
   "2019-01-07",
-  "2026-11-12"
+  "2026-11-19"
  ],
- "listed": 1658,
- "held": 1657,
- "mirrored": 1653,
- "missing": 5,
- "missingShare": 0.003,
- "items": 32252,
+ "listed": 1662,
+ "held": 1662,
+ "mirrored": 1658,
+ "missing": 4,
+ "missingShare": 0.0024,
+ "items": 32356,
  "notes": [
   "Agenda grids from sfgov.legistar.com MeetingDetail pages; no roll calls. The per-meeting files are gitignored; rebuild with scripts/fetch-bos-meetings.py."
  ],
@@ -9968,8 +9968,31 @@
    "date": "2026-11-12",
    "id": "public-safety-and-neighborhood-services-committee-1461861",
    "committee": "Public Safety and Neighborhood Services Committee",
-   "outcome": "no-agenda",
-   "reason": "not yet held"
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-16",
+   "id": "land-use-and-transportation-committee-1463323",
+   "committee": "Land Use and Transportation Committee",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-17",
+   "id": "board-of-supervisors-1464054",
+   "committee": "Board of Supervisors",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-18",
+   "id": "budget-and-finance-committee-1462300",
+   "committee": "Budget and Finance Committee",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-19",
+   "id": "government-audit-and-oversight-committee-1462992",
+   "committee": "Government Audit and Oversight Committee",
+   "outcome": "mirrored"
   }
  ]
 }

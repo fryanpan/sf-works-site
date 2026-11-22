@@ -2,12 +2,13 @@
  "committee": "SFMTA Board of Directors",
  "date": "2026-10-29",
  "id": "g55-53464",
- "status": "draft",
+ "status": "final",
  "sources": {
   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53464",
-  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55"
+  "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
+  "minutes": "https://www.sfmta.com/node/46035"
  },
- "fetched": "2026-11-10",
+ "fetched": "2026-11-17",
  "form": "html",
  "items": [
   {

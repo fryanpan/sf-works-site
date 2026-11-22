@@ -85,14 +85,13 @@ HERE = Path(__file__).resolve().parent
 ROOT = Path(paths.ROOT)
 sys.path.insert(0, str(HERE))
 import sfdata  # noqa: E402
+from lib import street_safety_reads  # noqa: E402
 
-SINCE = "collision_datetime >= '2022-01-01T00:00:00'"
-CRASH_FIELDS = ("case_id_pkey,collision_datetime,collision_time,primary_rd,secondary_rd,distance,direction,weather_1,"
-                "type_of_collision,mviw,ped_action,road_surface,road_cond_1,road_cond_2,lighting,control_device,intersection,"
-                "vz_pcf_code,vz_pcf_description,party_at_fault")
-PARTY_FIELDS = ("case_id_pkey,party_number_ckey,party_type,at_fault,party_age,party_sobriety,party_drug_physical,dir_of_travel,"
-                "move_pre_acc,stwd_vehicle_type,street_of_travel,sp_info_1,sp_info_2,vehicle_autonomous")
-VICTIM_FIELDS = "case_id_pkey,victim_id,party_number_ckey,victim_role,victim_age,victim_degree_of_injury"
+# The fields and window of the three reads, kept in lib/street_safety_reads.py with the queries themselves.
+SINCE = street_safety_reads.CARDS_SINCE
+CRASH_FIELDS = street_safety_reads.CARD_FIELDS["crashes"]
+PARTY_FIELDS = street_safety_reads.CARD_FIELDS["parties"]
+VICTIM_FIELDS = street_safety_reads.CARD_FIELDS["victims"]
 
 NONE = {None, "", "Not Stated", "Not stated", "Unknown", "Not Collected"}   # street_of_travel is "Not Collected" on every 2005-2012 party
 DIRS = {"North": "N", "South": "S", "East": "E", "West": "W"}
@@ -597,9 +596,9 @@ def build(cases, hin_years, rows=None, net=None):
     has read the tables itself; by default the 2022-on queries above. net: load_network()'s result, likewise.
     Returns ({case: card}, stats). A case missing from the crash table gets no card; the caller decides if that's allowed."""
     if rows is None:
-        X = sfdata.fetch("ubvf-ztfx", select=CRASH_FIELDS, where=SINCE, floor=8000)
-        P = sfdata.fetch("8gtc-pjc6", select=PARTY_FIELDS, where=SINCE, floor=15000)
-        V = sfdata.fetch("nwes-mmgh", select=VICTIM_FIELDS, where=SINCE, floor=10000)
+        X = street_safety_reads.read("cards-crashes")
+        P = street_safety_reads.read("cards-parties")
+        V = street_safety_reads.read("cards-victims")
         (crash, parties, victims), tags = index_rows(X.rows, P.rows, V.rows, cases), {"crashes": X.tag, "parties": P.tag, "victims": V.tag}
     else:
         (crash, parties, victims), tags = rows

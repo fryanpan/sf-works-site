@@ -250,7 +250,7 @@ if (d.schools.length !== SCHOOLS.length || d.schools.some((x, i) => x.cds !== SC
 }
 // A planned project's card takes a cost from COST when its name starts with the same street words.
 function planCost(name) { const k = Object.keys(COST).find((c) => name.toLowerCase().startsWith(c.toLowerCase().replace(/ quick-build$/, ""))); return k ? COST[k] : ""; }
-// "Show fixes" layers (Bryan, thread cxjvmefmvfmu): each layer's lines or points plus one property row per feature.
+// "Show fixes" layers (Bryan): each layer's lines or points plus one property row per feature.
 { const F = d.map.fixes, PL = F.planned.flatMap((pr, i) => pr.paths.map(() => i));
   data.fx = {
     to20: encodeRuns(F.to20.map((r) => r.p)), to20P: F.to20.map((r) => r.date),
@@ -378,7 +378,7 @@ const camP = CAM.pooled, qbP = QB.pooled, tlP = QB.tenderloinPooled;
 const YR = W.yearly, Y5 = ["2021", "2022", "2023", "2024", "2025"], CITY_YR = Y5.reduce((t, y) => t + YR[y].all, 0) / Y5.length;
 const WALK2 = qbP.near.ped, WALK2_YR = (WALK2.after * (1 / WALK2.rr[0] - 1)) / qbP.years;
 const CITE = camP.fromCitations;
-// Bryan, thread tlwgirvawpdt: classes 2, 3 and 4 are one "Main roads" row, beside residential streets.
+// Bryan: classes 2, 3 and 4 are one "Main roads" row, beside residential streets.
 const sumK = (o, ks) => ks.reduce((t, k) => t + (o[k] || 0), 0);
 const byClass = [{ k: "main", name: "Main roads", ks: ["2", "3", "4"] }, { k: "5", name: "Residential streets", ks: ["5"] }]
   .map((r) => ({ ...r, hurt: sumK(A.byClass, r.ks), sev: sumK(SV.byClass, r.ks), mi: sumK(W.milesByClass, r.ks) }));
@@ -459,7 +459,7 @@ function split(o, sort, marks = {}, aria = "", outline = []) {
   return `<div class="legend split-key"><span><i class="sw" style="background:${LIGHT}"></i>People hurt</span><span><i class="sw" style="background:${DARK}"></i>Of whom severely hurt or killed</span>${outline.length ? `<span><i class="sw" style="background:none;border:1.5px solid #15181c;width:16px"></i>A car, truck, motorcycle or Muni was also in the crash</span>` : ""}</div>
 <div class="plotwrap"><div class="pl-wide">${svg([SIDES[0]], 600, 250, 30, 13, 18, "")}${svg([SIDES[1]], 350, 10, 30, 13, 18, "")}</div><div class="pl-phone">${SIDES.map((S) => svg([S], 370, 140, 40, 12, 11, "")).join("")}</div></div>`;
 }
-// Everyone hurt by their own mode, citywide, one panel (Bryan, thread hulpkunggkkx), plus each mode's share of the people
+// Everyone hurt by their own mode, citywide, one panel (Bryan), plus each mode's share of the people
 // severely hurt or killed beside its share of trips in SFMTA's Travel Decision Survey 2021 (p. 5, Estimated Mode Share).
 const TDS = { year: 2021, url: "https://www.sfmta.com/sites/default/files/reports-and-documents/2022/04/sfmta_td2021_rpt_v2.pdf",
   // walk 24, bicycle 3, public transit 10; cars are SFMTA's own "Privately Owned Vehicles" 62: drive alone (which includes motorcycle) 36 + carpool 25 + TNC 2

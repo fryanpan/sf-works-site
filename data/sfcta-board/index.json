@@ -2,18 +2,18 @@
  "body": "sfcta-board",
  "name": "San Francisco County Transportation Authority Board",
  "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=24",
- "generated": "2026-11-11",
+ "generated": "2026-11-18",
  "since": "2019-01-01",
  "range": [
   "2019-01-29",
-  "2026-11-10"
+  "2026-11-17"
  ],
- "listed": 172,
- "held": 172,
- "mirrored": 171,
+ "listed": 173,
+ "held": 173,
+ "mirrored": 172,
  "missing": 1,
  "missingShare": 0.0058,
- "items": 2212,
+ "items": 2224,
  "notes": [
   "sfcta.org sits behind a Cloudflare challenge; agendas are read from SFGovTV's Granicus views 24 and 172.",
   "Items carry titles only. Granicus does not publish the vote."
@@ -1222,6 +1222,13 @@
    "id": "g24-53536",
    "committee": "Transportation Authority Full Board",
    "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=53536",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-17",
+   "id": "g24-53601",
+   "committee": "Transportation Authority Full Board",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=24&clip_id=53601",
    "outcome": "mirrored"
   }
  ]

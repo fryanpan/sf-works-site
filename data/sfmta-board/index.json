@@ -2,18 +2,18 @@
  "body": "sfmta-board",
  "name": "SFMTA Board of Directors",
  "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
- "generated": "2026-11-10",
+ "generated": "2026-11-19",
  "since": "2019-01-01",
  "range": [
   "2019-01-15",
-  "2026-10-29"
+  "2026-11-17"
  ],
- "listed": 185,
- "held": 185,
- "mirrored": 184,
+ "listed": 186,
+ "held": 186,
+ "mirrored": 185,
  "missing": 1,
  "missingShare": 0.0054,
- "items": 3694,
+ "items": 3711,
  "notes": [
   "Agendas from SFGovTV's Granicus view 55; dispositions from the minutes on https://www.sfmta.com/resolutions-legislation, which reach back to the 2018-12-18 meeting; a consent calendar the agenda index lacks, or holds only in part, gets its other items from the minutes."
  ],
@@ -1312,6 +1312,13 @@
    "id": "g55-53464",
    "committee": "SFMTA Board of Directors",
    "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53464",
+   "outcome": "mirrored"
+  },
+  {
+   "date": "2026-11-17",
+   "id": "g55-53604",
+   "committee": "SFMTA Board of Directors",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53604",
    "outcome": "mirrored"
   }
  ]

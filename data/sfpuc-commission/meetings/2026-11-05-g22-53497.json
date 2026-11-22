@@ -7,8 +7,8 @@
   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=22&clip_id=53497",
   "listing": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22"
  },
- "fetched": "2026-11-10",
- "form": "pdf",
+ "fetched": "2026-11-18",
+ "form": "html",
  "items": [
   {
    "no": "1",
@@ -20,7 +20,23 @@
   },
   {
    "no": "3",
-   "title": "CLOSED SESSION: a) Public comment on all matters pertaining to this agenda item."
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "3a",
+   "title": "Public comment on all matters pertaining to this agenda item"
+  },
+  {
+   "no": "3b",
+   "title": "Discussion and vote in open session pursuant to the Brown Act and the Sunshine Ordinance on whether to convene in closed session"
+  },
+  {
+   "no": "3c",
+   "title": "CLOSED SESSION"
+  },
+  {
+   "no": "3d",
+   "title": "Discussion and vote whether to disclose any or all discussions held in closed session"
   },
   {
    "no": "4",

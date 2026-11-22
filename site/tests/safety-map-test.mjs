@@ -330,6 +330,99 @@ test("the story's figures that the map's own data computes match it", () => {
   assert.equal(F.walking, 338);
 });
 
+// The HIN story (story.md): every number in its text is either recomputed here from map.json, counted the way the
+// map counts, or listed below as one the map's data doesn't hold, with where it comes from. A number added to the
+// text fails the test until it is one or the other, so the text and the map can't drift apart again (the review of
+// 2026-11-19, rank 1: the text said 922 people where the map counted 1,700).
+test("every number in the HIN story's text is the map's own figure, or named as from elsewhere", () => {
+  const D = JSON.parse(fs.readFileSync(path.join(ROOT, "site/data/street-safety/map.json"), "utf8"));
+  const pub = fs.readFileSync(path.join(ROOT, "site/content/transportation/street-safety/story.md"), "utf8");
+  // The people as map.js builds them (lightPeople, prepPerson): the carded ones from `people`, the rest from `light`.
+  const L = D.light, d0 = Date.parse(L.d0 + "T00:00:00Z"), np = new Set(L.np || []);
+  const people = D.people.map((p) => ({ ...p }));
+  for (let i = 0; i < L.n; i++) {
+    const hd = L.hood[i];
+    people.push({ c: np.has(i) ? null : [L.x[i] / 1e5, L.y[i] / 1e5], np: np.has(i) ? 1 : 0, d: new Date(d0 + L.dd[i] * 864e5).toISOString().slice(0, 10), h: L.h[i],
+      u: L.users[L.u[i]], ck: L.cks[L.ck[i]], sk: L.sks[L.sk[i]], at: L.at[i], hood: hd >= 0 && D.hoods[hd] ? D.hoods[hd].name : "", hy: L.hy[i], hs: L.hs[i],
+      op: L.ops ? L.ops[L.op[i]] : "", sv: L.sv[i], k: L.sv[i] === 0 ? 1 : 0, mi: 1 });
+  }
+  for (const p of people) {
+    p.wd = new Date(p.d + "T12:00:00Z").getUTCDay();
+    p.yr = +p.d.slice(0, 4);
+    if (p.sv == null) p.sv = p.k ? 0 : 1;
+    D.hinGroups.windows.forEach((w) => { p["hg:" + w] = p.hs >= 0 ? D.hinGroups.g[w][p.hs] : 0; });
+  }
+  // The text's years: "2021 to August 2026", the newest police report's month. Its steps show the same years.
+  const newest = L.newest, month = new Date(newest + "T12:00:00Z").toLocaleString("en-US", { month: "long", timeZone: "UTC" });
+  const YEARS = [2021, +newest.slice(0, 4)], period = `2021 to ${month} ${YEARS[1]}`;
+  assert.ok(pub.includes(period), `the story should give its years as "${period}"`);
+  const steps = [];
+  for (const block of pub.split("<MapStory").slice(1)) {
+    for (const s of parseSteps(block.slice(0, block.indexOf("</MapStory>")), "story.md")) {
+      const a = S.merge(S.DEFAULTS, s.state);
+      if (a.view === "injuries") assert.deepEqual(plain(a.filter.years), YEARS, `a step shows other years than the text: ${JSON.stringify(s.state)}`);
+      steps.push({ a, md: s.md });
+    }
+  }
+  // The people a state's headline, chart and key count (map.js shownFor): the deaths with no police report are drawn
+  // but not counted, and the text stops at the newest police report too.
+  const shown = (st, also = () => true) => { const t = S.shownTest(st); return people.filter((p) => !p.lg && p.d <= newest && t(p) && also(p)).length; };
+  const count = (f, also) => shown({ filter: { years: YEARS, ...f } }, also);
+  // Each figure is counted under the filters of the step that prints it, so a step can't show other people than its
+  // text (the DUI step once drew 16 late-night deaths beside a sentence about 14 at any hour); its base is the same
+  // step with the one filter lifted that the figure is a share of, which is what the step's own chart shows.
+  const step = (words) => { const s = steps.find((x) => x.md.includes(words)); assert.ok(s, `no step says "${words}"`); return s.a; };
+  const lift = (st, f) => S.merge(st, { filter: f });
+  const share = (st, f) => [shown(st), shown(lift(st, f))];
+  const pct = (a, b) => `${Math.round((100 * a) / b)}%`, unit = (a, b) => Math.round(b / a);
+  const cause = (key, severity) => count({ cause: [key], ...(severity ? { severity } : {}) });
+  const byCause = (severity) => D.causes.filter((c) => !/^(other|unknown)/.test(c.key)).map((c) => [c.key, cause(c.key, severity)]).sort((x, y) => y[1] - x[1]).map((x) => x[0]);
+  assert.equal(byCause("pain")[0], "unsafe-speed", "unsafe speed should be the cause with the most injuries");
+  assert.ok(byCause("killed").indexOf("unsafe-speed") < 3, "unsafe speed should be one of the top causes of death");
+  const dui = step("as the main cause of"), speed = step("about 1 in"), ped = step("Pedestrian violations accounted"), red = step("running red lights");
+  const worst = step("only accounted for"), off = step("happen off of the HIN"), night = step("All late-night crashes");
+  const [duiN, duiBase] = share(dui, { cause: [] });
+  assert.equal(dui.filter.severity, "killed", "the DUI step shows deaths");
+  assert.deepEqual(plain(dui.filter.time), [], "the DUI step's figure is at any hour");
+  // Late night in the text is 10 pm to 4 am (its note says the map's Night runs to 6 am).
+  const late = (p) => p.h != null && p.h >= 0 && (p.h >= 22 || p.h < 4);
+  const solo = count({ severity: "killed" }, (p) => late(p) && p.op === "none");
+  const nightKilled = lift(night, { severity: "killed", time: [] }), nightKsi = lift(night, { time: [] });
+  const offAll = lift(off, { severity: "pain" });
+  const computed = [
+    `What about the 1/${unit(...share(offAll, { hin: "all" }))} of people hurt off of the HIN?`,
+    `only accounted for ${pct(...share(worst, { hinGroup: [] }))} of KSI from ${period}`,
+    `unsafe speed accounts for the most injuries, about 1 in ${unit(...share(speed, { cause: [] }))}`,
+    `Pedestrian violations accounted for ${pct(...share(lift(ped, { severity: "killed" }), { cause: [] }))} of deaths and ${pct(...share(ped, { cause: [] }))} of KSI`,
+    `About ${pct(...share(red, { cause: [] }))} of KSI came from vehicles running red lights`,
+    `the main cause of ${pct(duiN, duiBase)} of the deaths on streets from ${period} (${duiN} of ${duiBase}), at any hour`,
+    `of the ${solo} people killed late at night in crashes with only one vehicle`,
+    `more deaths (${shown(nightKilled, late)} to ${shown(lift(worst, { severity: "killed" }))}) and more KSI (${shown(nightKsi, late)} to ${shown(worst)})`,
+    `about 1/${unit(...share(offAll, { hin: "all" }))} of all injuries and 1/${unit(...share(off, { hin: "all" }))} of severe injuries and deaths happen off of the HIN`,
+  ];
+  // Numbers the map's data doesn't hold, each with its source.
+  const elsewhere = [
+    "2024 HIN from March 2026", "the 2024 HIN", "4 AM",                    // DPH's network and its date; an example
+    "November 17, 2026", "8.8 miles", "40 plus", "District 9", "400 plus", "1:20:56 and 2:06:21",   // the SFCTA hearing and its captions
+    "40 or more people killed or severely injured per mile in 2020 to 2024", "2024 network", "worst 10 miles",   // DPH's top tier; the map's groups
+    "cameras at 18 intersections only covers 4% (7 of 165)",                // SFMTA's camera list and DataSF uzmr-g2uc
+    "\"not known\" for 12", "Vision Zero 2024 End of Year Report", "Appendix C",   // the sobriety field (8gtc-pjc6); the city's report
+    "10 pm to 4 am", "10 pm to 6 am",                                       // the text's late night and the map's Night
+    "2024 [Vision Zero report]", "20mph", "1. ", "2. ", "3. ",              // LADOT's report; the Dutch limit; list numbers
+    "puts 74% of severe and fatal injuries on it",                          // SFMTA's own figure
+    "more than 60 ft", "from 2021 to now",                                  // the map's rule and its default years
+  ];
+  let prose = pub.replace(/^---[\s\S]*?\n---\n/, "").replace(/<MapStep state=\{\{[\s\S]*?\}\}>/g, "").replace(/<\/?[A-Za-z][^>]*>/g, "").replace(/\]\([^)]*\)/g, "]");
+  for (const t of computed) {
+    assert.ok(prose.includes(t), `the story should say "${t}", the figure the map counts`);
+    prose = prose.split(t).join(" ");
+  }
+  prose = prose.split(period).join(" ").replace(/\b[a-z0-9]{4}-[a-z0-9]{4}\b/g, " ");   // the checked years; DataSF ids
+  for (const t of elsewhere) prose = prose.split(t).join(" ");
+  const left = prose.split("\n").filter((l) => /\d/.test(l));
+  assert.deepEqual(left, [], "a number in the story is neither recomputed from map.json nor listed as from elsewhere");
+});
+
 test("traffic counts: a counter that passes the override gate colours its block, and one that fails it leaves SFMTA's count", () => {
   // Bryan, 2026-11-21: "Telraam wins" for a working counter (docs/decisions/street-safety.md).
   // The rule and its gate are COUNT_RULE and overrides() in tools/street-safety/hin-cut-through.py; this reads what it wrote into
@@ -348,12 +441,12 @@ test("traffic counts: a counter that passes the override gate colours its block,
   const seg = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extract/telraam/segments.json"), "utf8"));
   // The read date is the extract's own (its window ends the day it was read), never the day of the build.
   assert.equal(T.rule.read, seg.window[1]);
-  const age = (last) => (Date.parse(T.rule.read) - Date.parse(last)) / 864e5;
   const gate = (days) => days >= T.rule.min_season_days;
-  // Source 5 is the counter's figure, source 6 SFMTA's with the counter beside it. Every block with both obeys the gate.
+  // Source 5 is the counter's figure, source 6 SFMTA's with the counter beside it. Every block with both obeys the gate,
+  // whichever side of it each counter is on this read. The gate looks at season days only, never at how long ago the
+  // counter last counted, so an old counter that passes still colours its block.
   const both = T.p.filter((p) => p[7] === 5 && p[15]), beside = T.p.filter((p) => p[7] === 6);
-  assert.ok(both.length >= 10, `only ${both.length} blocks where the counter replaces SFMTA's count`);
-  assert.ok(beside.length >= 2, `only ${beside.length} blocks where the counter failed the gate`);
+  assert.ok(both.length + beside.length >= 10, `only ${both.length + beside.length} blocks with both a counter and SFMTA's count`);
   for (const p of both) {
     assert.ok(gate(p[21]), `${T.names[p[8]]}: the counter colours the block with ${p[21]} season days`);
     assert.ok(p[16] >= 2014 && p[16] <= 2023, `${T.names[p[8]]}: SFMTA's count has no year for the card`);
@@ -364,36 +457,67 @@ test("traffic counts: a counter that passes the override gate colours its block,
     assert.equal(p[0], cls(p[2]), `${T.names[p[8]]}: coloured by a figure other than SFMTA's`);
     assert.ok(p[12] > 0 && p[13] && p[14] && p[15] > 0, `${T.names[p[8]]}: the card has no counter days, dates or figure`);
   }
-  // Lake St, 2nd to 3rd Ave: 78 season days, so the counter's 243 an hour colours it,
-  // with SFMTA's 2023 Slow Streets day count (139 an hour) beside it.
-  const lake = row("Lake St, 02Nd Ave to 03Rd Ave");
-  assert.deepEqual([lake[7], lake[0], lake[15], lake[16], lake[18]], [5, cls(lake[2]), 139, 2023, 1]);
-  assert.ok(lake[2] > 180, "Lake St takes the counter's figure, not SFMTA's 139");
-  // 9th Ave, California to Clement: counter 9000004990 has 6 season days, so SFMTA's 2017 count colours the block.
-  const ninth = row("09Th Ave, California St to Clement St");
-  assert.deepEqual([ninth[7], ninth[2], ninth[4], ninth[11], ninth[15], ninth[19]], [6, 88, 2017, "9000004990", 48, 6]);
-  // 26th St, Church to Sanchez: counter 9000006818 has winter days only, the last on 2026-01-15. SFMTA's count again.
-  const c26 = row("26Th St, Church St to Sanchez St");
-  assert.deepEqual([c26[7], c26[2], c26[11], c26[19], c26[20]], [6, 416, "9000006818", 0, "2026-01-15"]);
-  // Lake St, 7th to 8th Ave: 65 season days, last valid 84 days before the read. The counter's 191 colours it, with
-  // SFMTA's 2021 pandemic count of 24 beside it. The same for 15th Ave, Folsom St and 46th Ave, which stopped earlier too.
-  const lake7 = row("Lake St, 07Th Ave to 08Th Ave");
-  assert.deepEqual([lake7[7], lake7[2], lake7[15], lake7[16], lake7[20], lake7[21]], [5, 191, 24, 2021, 1, 65]);
-  assert.ok(age(lake7[22]) > 80, "Lake St at 7th overrides though its last valid day is over 80 days old");
-  for (const name of ["15Th Ave, Cabrillo St to Fulton St", "Folsom St, Eugenia Ave to Cortland Ave", "46Th Ave, Santiago St to Taraval St"]) {
-    assert.equal(row(name)[7], 5, name);
+  // Known blocks, each with a counter and an SFMTA count that doesn't move (a past count). What the row must say is
+  // recomputed from the counter's own record in segments.json with hin-cut-through.py's rule (telraam_fig, overrides),
+  // so it holds whatever the window: the counter's April to September median where it has one, else its all-year
+  // median; its season days decide the side. A counter that has left the extract or fails its checks leaves SFMTA's
+  // count on the block and no counter on the row.
+  const segById = new Map(seg.segments.map((s) => [s.id, s]));
+  const known = (name, counter, sfmta) => {
+    const p = row(name);
+    assert.ok(p, `${name}: no traffic row`);
+    const s = segById.get(counter);
+    if (!s || !s.kept) {
+      assert.ok(p[7] !== 5 && p[7] !== 6 && p.length === 11, `${name}: counter ${counter} is out of the extract but on the row`);
+      assert.deepEqual([p[2], p[4]], sfmta.slice(0, 2), `${name}: SFMTA's count should colour the block`);
+      return p;
+    }
+    const season = s.daylight_days || 0, fig = s.peak_daylight || s.peak;
+    assert.ok(fig >= 5 && fig <= 3000, `${name}: counter ${counter} reads ${fig} cars an hour, not a plausible street`);
+    const near = (a, b) => Math.abs(a - b) <= 1;   // the extract's half-hour medians, rounded in Python and here
+    if (gate(season)) {
+      assert.deepEqual([p[7], p[11], p[21], p[22]], [5, counter, season, s.last], `${name}: should take the counter's figure`);
+      assert.ok(near(p[2], fig), `${name}: colours with ${p[2]}, the counter reads ${fig}`);
+      assert.deepEqual([p[15], p[16]], sfmta.slice(0, 2), `${name}: SFMTA's count beside it`);
+    } else {
+      assert.deepEqual([p[7], p[11], p[19], p[20]], [6, counter, season, s.last], `${name}: should keep SFMTA's count`);
+      assert.deepEqual([p[2], p[4]], sfmta.slice(0, 2), `${name}: SFMTA's count should colour the block`);
+      assert.ok(near(p[15], fig), `${name}: the card shows ${p[15]}, the counter reads ${fig}`);
+    }
+    if (sfmta[2] !== undefined) assert.equal(p[18], sfmta[2], `${name}: SFMTA's figure is${sfmta[2] ? "" : " not"} the Slow Streets day count`);
+    assert.equal(p[0], cls(p[2]), `${name}: coloured by a figure other than the one it shows`);
+    return p;
+  };
+  // Lake St, 2nd to 3rd Ave, beside SFMTA's 2023 Slow Streets day count (139 an hour).
+  known("Lake St, 02Nd Ave to 03Rd Ave", "9000004855", [139, 2023, 1]);
+  // 9th Ave, California to Clement, and 26th St, Church to Sanchez, beside SFMTA's 2017 counts (88 and 416 an hour).
+  known("09Th Ave, California St to Clement St", "9000004990", [88, 2017]);
+  known("26Th St, Church St to Sanchez St", "9000006818", [416, 2017]);
+  // Lake St, 7th to 8th Ave, beside SFMTA's 2021 pandemic count of 24; 15th Ave, Folsom St and 46th Ave likewise.
+  const lake7 = known("Lake St, 07Th Ave to 08Th Ave", "9000005030", [24, 2021]);
+  if (lake7[7] === 5) assert.equal(lake7[20], 1, "Lake St at 7th: SFMTA's count beside it is from the pandemic");
+  known("15Th Ave, Cabrillo St to Fulton St", "9000009992", [193, 2021]);
+  known("Folsom St, Eugenia Ave to Cortland Ave", "9000009961", [70, 2015]);
+  const m46 = known("46Th Ave, Santiago St to Taraval St", "9000005311", [198, 2015]);
+  // The main-street caveat lists each main-street block with both counts (hin-cut-through.py's summary), with the
+  // counter's figure and SFMTA's as the rows carry them; 46th Ave is a main street, so it is listed while it has both.
+  for (const [name, tel, sf, yr] of T.telMainSfmta) {
+    const p = row(name);
+    assert.ok(p && p[10] === 1 && (p[7] === 5 || p[7] === 6), `${name}: listed as a main street with both counts, and isn't`);
+    assert.deepEqual([tel, sf, yr], p[7] === 5 ? [p[2], p[15], p[16]] : [p[15], p[2], p[4]], `${name}: the caveat's figures differ from the row's`);
   }
-  // The main-street caveat names the one main-street block with both counts (hin-cut-through.py's summary).
-  assert.deepEqual(T.telMainSfmta, [["46Th Ave, Santiago St to Taraval St", 177, 198, 2015]]);
+  if (m46[7] === 5 || m46[7] === 6) assert.ok(T.telMainSfmta.some((t) => t[0].startsWith("46Th Ave, Santiago")), "46th Ave is missing from the main-street caveat");
   const mapJs = fs.readFileSync(path.join(ROOT, "site/src/safety-map/map.js"), "utf8");
   assert.match(mapJs, /!ms\.length \? "No Telraam counter on a main street has been checked/);
   assert.match(mapJs, /One Telraam counter on a main street has an SFMTA count to check it against/);
-  // Minnesota St, 18th to 19th: counter 9000005517 fails telraam-sf.py's checks (it can't see the street), so the
+  // Minnesota St, 18th to 19th: counter 9000005517 can't see the street. While it fails telraam-sf.py's checks the
   // block keeps SFMTA's 2023 Slow Streets figure and no counter is on its row.
-  const blind = seg.segments.find((s) => s.id === "9000005517");
-  assert.ok(blind && !blind.kept && blind.fail.length, "counter 9000005517 should fail the checks");
-  const minn = row("Minnesota St, 18Th St to 19Th St");
-  assert.deepEqual([minn[7], minn[4], minn.length], [1, 2023, 11]);
+  const blind = segById.get("9000005517");
+  if (blind && !blind.kept) {
+    assert.ok(blind.fail.length, "counter 9000005517 is dropped with no failed check named");
+    const minn = row("Minnesota St, 18Th St to 19Th St");
+    assert.deepEqual([minn[7], minn[4], minn.length], [1, 2023, 11]);
+  }
   // The same on every block in the extract: a failed counter is on no row, and a row's figure is the count the gate picks.
   const B = JSON.parse(fs.readFileSync(path.join(ROOT, "data/extract/residential-traffic/blocks.json"), "utf8"));
   assert.equal(B.count_rule.rule, "telraam");
@@ -703,6 +827,20 @@ test("the where-from view: its own layers, an area outlined but nothing dimmed, 
   assert.equal(S.title(s, [], 60), "Where traffic comes from in Bayview Hunters Point");
 });
 
+test("the where-from view's passing-through toggle is in the address and is a parameter change", () => {
+  assert.equal(S.DEFAULTS.thru, false);
+  const s = S.fromHash("#view=from&ends=to&thru=1&hood=Sunset%2FParkside");
+  assert.equal(s.thru, true);
+  assert.equal(S.toHash(s), "#view=from&ends=to&thru=1&hood=Sunset%2FParkside");
+  assert.equal(S.toHash(S.fromHash("#view=from&hood=Mission")), "#view=from&hood=Mission");
+  assert.equal(S.fromHash("#view=from&thru=yes").thru, false);
+  assert.equal(S.normalize({ thru: "1" }).thru, false);
+  const p = S.plan(s, S.merge(s, { thru: false }));
+  assert.equal(p.params, true);
+  assert.deepEqual(plain(p.fadeIn), []);
+  assert.deepEqual(plain(p.fadeOut), []);
+});
+
 test("a camera zoomed out far enough for the Bay Area survives normalising", () => {
   assert.equal(S.normalize({ camera: { center: [-122.2, 37.7], zoom: 8.4 } }).camera.zoom, 8.4);
   // A phone needs about zoom 6.5 for the nine counties; the state has no floor of its own above the map's (Bryan,
@@ -752,6 +890,21 @@ test("where-from bubbles add to the totals the zone-shaded view showed, per dire
   }
 });
 
+test("where-from through cars sum the same by where they start and where they end, for every area", () => {
+  // The passing-through bubbles are g.ft (Coming from) and g.tt (Going to). Each group is rounded on its own, so a
+  // sum can be off by half a car a group. A through car has neither end in the area, so its own group holds none.
+  const U = wfRead("units.json"), tol = U.groups.length / 2 + 1;
+  const names = U.groups.slice(0, 41).concat(Array.from({ length: 11 }, (_, i) => `District ${i + 1}`));
+  for (const name of names) {
+    const A = wfRead(`area-${wfSlug(name)}.json`), g = A.g;
+    assert.ok(Math.abs(sum(g.ft) - A.tot.thr) <= tol, `${name}: through cars by start ${sum(g.ft)} against ${A.tot.thr}`);
+    assert.ok(Math.abs(sum(g.tt) - A.tot.thr) <= tol, `${name}: through cars by end ${sum(g.tt)} against ${A.tot.thr}`);
+    assert.ok(Math.abs(sum(A.bins.thr) - A.tot.thr) <= U.bins.length, `${name}: through cars by time of day`);
+    const own = U.groups.indexOf(name);
+    if (own >= 0) assert.equal(g.ft[own] + g.tt[own], 0, name + ": no through car starts or ends in the area");
+  }
+});
+
 test("where-from times of day add to the day, per direction, for every neighborhood and Supervisor district", () => {
   const U = wfRead("units.json"), names = U.groups.slice(0, 41).concat(Array.from({ length: 11 }, (_, i) => `District ${i + 1}`));
   for (const name of names) {
@@ -767,7 +920,7 @@ test("where-from times of day add to the day, per direction, for every neighborh
 });
 
 test("where-from travel modes: a file for every neighborhood and district, directions adding up, figures in range", () => {
-  // scripts/where-traffic-modes.py. A row is [unit, car, transit on foot, transit by car, bike, walk, car min, car
+  // tools/street-safety/where-traffic-modes.py. A row is [unit, car, transit on foot, transit by car, bike, walk, car min, car
   // miles, transit min, % no transit path, drive-to-transit min, bike min, bike miles, % no bike path].
   const U = wfRead("units.json"), names = U.groups.slice(0, 41).concat(Array.from({ length: 11 }, (_, i) => `District ${i + 1}`));
   const trips = (r) => sum(r.slice(1, 6));
@@ -781,7 +934,7 @@ test("where-from travel modes: a file for every neighborhood and district, direc
     assert.ok(b.size >= 40, name + ": nearly every unit has trips");
     assert.ok(!b.has(own), name + ": its own trips are `own`, not a unit");
     for (const [u, r] of b) {
-      assert.equal(r.length, 14, name);
+      assert.equal(r.length, 17, name);
       assert.ok(u >= 0 && u < U.groups.length, name);
       // Both is the two directions' trips, each mode rounded on its own.
       for (let m = 1; m <= 5; m++) assert.ok(Math.abs(r[m] - ((f.get(u) || [])[m] || 0) - ((t.get(u) || [])[m] || 0)) <= 1, `${name} and ${U.groups[u]}: mode ${m}`);
@@ -804,6 +957,69 @@ test("where-from travel modes: a file for every neighborhood and district, direc
   const src = fs.readFileSync(path.join(ROOT, "site/src/safety-map/map.js"), "utf8"), about = fs.readFileSync(path.join(ROOT, "site/src/pages/transportation-street-safety.mjs"), "utf8");
   assert.match(src, /var WF_MODE_MIN = 60;/);
   assert.match(about, /under 60 trips a weekday the card doesn't split them, and under 60 car trips it gives no times/);
+});
+
+test("where-from eligibility line: two tests per row, never more car trips than the row's, Sunset/Parkside's worked example", () => {
+  // Bryan, 2026-11-20: "Eligibility line". A row's [14] and [15] are [car, transit, bike, walk]
+  // trips on the pairs that pass the transit test (walk to the stop, at most 1.5 x the drive, each trip timed in the
+  // MTC period it leaves) and the bike test (3 miles or less); [16] is the car trips tested, the row's car trips.
+  // Pairs within one zone are tested in every row, `own` included.
+  const U = wfRead("units.json"), names = U.groups.slice(0, 41).concat(Array.from({ length: 11 }, (_, i) => `District ${i + 1}`));
+  let rows = 0, someTransit = 0;
+  for (const name of names) {
+    const M = wfRead(`modes-${wfSlug(name)}.json`);
+    for (const r of [M.own, ...M.from, ...M.to, ...M.both]) {
+      const tag = `${name}, unit ${r[0]}`;
+      for (const t of [r[14], r[15]]) {
+        assert.equal(t.length, 4, tag);
+        assert.ok(t.every((x) => Number.isInteger(x) && x >= 0), tag + ": whole, non-negative trips");
+        assert.ok(t[0] <= r[16], `${tag}: ${t[0]} eligible car trips against ${r[16]} tested`);
+        // Each mode's trips on the passing pairs are a part of the row's trips by that mode.
+        assert.ok(t[1] <= r[2] + r[3] + 1 && t[2] <= r[4] + 1 && t[3] <= r[5] + 1, tag + ": a part of the row's trips");
+      }
+      // The quality check: never more car trips tested than the row's car trips.
+      assert.ok(r[16] <= r[1] + 1, `${tag}: ${r[16]} tested against ${r[1]} car trips`);
+      assert.ok(Math.abs(r[16] - r[1]) <= 1, `${tag}: the tests cover all the row's car trips, as the mode bar counts them`);
+      if (r[14][0] > 0) someTransit++;
+      rows++;
+    }
+  }
+  assert.ok(rows > 52 * 100 && someTransit > 100, `${rows} rows, ${someTransit} with car trips passing the transit test`);
+  // Sunset/Parkside, every trip with one end outside, both directions, timed in each trip's own period. The bike test's
+  // figures are the worked example posted on the thread; the transit test's are the pipeline review's recomputation
+  // (1,990 with the AM skim for every trip).
+  const sp = wfRead("modes-sunset-parkside.json").both, car = sum(sp.map((r) => r[1]));
+  const at = (k) => [0, 1, 2, 3].map((j) => sum(sp.map((r) => r[k][j])));
+  const share = (e, j) => Math.round(100 * e[j] / sum(e));
+  const tr = at(14), bk = at(15);
+  assert.ok(Math.abs(tr[0] - 1662) <= sp.length, `transit test ${tr[0]} car trips`);
+  assert.equal((100 * tr[0] / car).toFixed(1), "1.0");
+  assert.deepEqual([share(tr, 1), share(tr, 2), share(tr, 0)], [36, 12, 46]);
+  assert.ok(Math.abs(bk[0] - 33554) <= sp.length, `bike test ${bk[0]} car trips`);
+  assert.equal((100 * bk[0] / car).toFixed(1), "19.4");
+  assert.deepEqual([share(bk, 1), share(bk, 2), share(bk, 0)], [14, 5, 67]);
+  // The review's other figures: the Mission's transit test, and District 6 with East Bay Inner, where timing each trip
+  // in its own period moves the most between From and To.
+  const mi = wfRead("modes-mission.json").both;
+  assert.ok(Math.abs(sum(mi.map((r) => r[14][0])) - 7828) <= mi.length, "Mission transit test");
+  const d6 = wfRead("modes-district-6.json"), ebi = U.groups.indexOf("East Bay Inner");
+  const d6r = (k) => d6[k].filter((r) => r[0] === ebi)[0][14][0];
+  assert.ok(Math.abs(d6r("from") - 11148) <= 1 && Math.abs(d6r("to") - 460) <= 1, `District 6 and East Bay Inner: from ${d6r("from")}, to ${d6r("to")}`);
+  // The card's words, and the About page's statement of both tests and their limits.
+  const src = fs.readFileSync(path.join(ROOT, "site/src/safety-map/map.js"), "utf8"), about = fs.readFileSync(path.join(ROOT, "site/src/pages/transportation-street-safety.mjs"), "utf8");
+  assert.match(src, /Trips by car a weekday that pass a simple test\. Not a forecast\./);
+  assert.match(src, /Transit with a walk to the stop, at most 1\.5 times the drive/);
+  assert.match(src, /Bike ride of 3 miles or less/);
+  assert.match(src, /of trips by car here\./);
+  assert.match(src, /var WF_ELIG_MIN = 20;/);
+  assert.match(about, /It isn't a forecast of how many people would switch\./);
+  assert.match(about, /The test looks only at minutes, so a trip with two transfers passes on the same minutes as one with none\./);
+  assert.match(about, /The bike test is distance only\. It doesn't measure hills or how comfortable the route is\./);
+  assert.match(about, /timed in the period it leaves/);
+  // The script's thresholds are the card's words.
+  const py = fs.readFileSync(path.join(ROOT, "tools/street-safety/where-traffic-modes.py"), "utf8");
+  assert.match(py, /^TRN_RATIO = 1\.5$/m);
+  assert.match(py, /^BIKE_MI = 3\.0$/m);
 });
 
 test("the other-party filter: its options, the address, the people it keeps, its chart", () => {
@@ -981,6 +1197,56 @@ test("a crash card says how badly each party's people were hurt, above the drawi
     }
   }
   assert.ok(seen > 60000);
+});
+
+// One map per story page (the review of 2026-11-19, rank 2): however many <MapStory> blocks a page has, it builds
+// one map, whose stage moves into the block being read. Run against a stand-in page, since no browser runs here.
+const { mapStories, STORY_SCRIPTS } = await import(path.join(ROOT, "site/src/safety-map/story.mjs"));
+test("a story page with several blocks draws one map, and each block's steps move it into that block", () => {
+  const pub = fs.readFileSync(path.join(ROOT, "site/content/transportation/street-safety/story.md"), "utf8");
+  const { text, stories } = mapStories(pub, "story.md");
+  assert.ok(stories >= 2, `${stories} blocks`);
+  assert.equal(text.split('class="sm-story-map"').length - 1, 1, "one map element on the page");
+  assert.equal(text.split('class="sm-story-stage"').length - 1, 1, "one stage on the page");
+  assert.equal(text.split('class="sm-story-graphic sm-stage"').length - 1, stories, "a frame for every block");
+  // The page's glue script, run over stand-ins for the blocks: one map is created, and a step moves the stage.
+  const glue = [...STORY_SCRIPTS.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]).filter((t) => t.includes("sm-story-stage")).pop();
+  const el = (extra = {}) => ({ children: [], appendChild(c) { if (c.parent) c.parent.children.splice(c.parent.children.indexOf(c), 1); c.parent = this; this.children.push(c); }, ...extra });
+  const parts = {}, stage = el({ querySelector: (q) => (parts[q] = parts[q] || el()) });
+  const boxes = [], stepsAll = [];
+  for (let b = 0; b < stories; b++) {
+    const graphic = el({ getBoundingClientRect: () => ({ top: 0, bottom: 0 }) });
+    if (b === 0) graphic.appendChild(stage);
+    const steps = [0, 1].map((k) => { const card = el(); return { card, querySelector: () => card, state: JSON.stringify({ view: "injuries", worst: 2020 + b, k }), classList: { toggle() {} }, getAttribute() { return this.state; } }; });
+    stepsAll.push(...steps);
+    boxes.push({ graphic, steps, getAttribute: (a) => (a === "data-story" ? "street-safety" : "/x"),
+      querySelector: (q) => (q === ".sm-story-graphic" ? graphic : q === ".sm-story-stage" ? (b === 0 ? stage : null) : null), querySelectorAll: () => steps });
+  }
+  const made = [], states = [];
+  const ctl = { setState: (s) => states.push(s), map: () => ({ resize() {} }), ready: { then() {} } };
+  let narrow = false;
+  const win = { matchMedia: () => ({ matches: narrow }), addEventListener() {}, dispatchEvent() {}, innerHeight: 800, innerWidth: 1366 };
+  const g = { window: win, document: { querySelectorAll: () => boxes }, SafetyMap: { create: (...a) => { made.push(a); return ctl; } }, SafetyOverlay: { attach() {} },
+    maplibregl: {}, sfMap: {}, CrashCards: {}, SafetyMapState: {}, Event: class {}, setTimeout: () => {} };
+  vm.runInNewContext(glue, g);
+  assert.equal(made.length, 1, "one map for every block");
+  const last = stepsAll.length - 1;
+  boxes[0].sfStep(last);
+  assert.equal(stage.parent, boxes[stories - 1].graphic, "the last step's block holds the stage");
+  assert.equal(JSON.parse(stepsAll[last].state).worst, states.at(-1).worst);
+  boxes[0].sfStep(0);
+  assert.equal(stage.parent, boxes[0].graphic);
+  assert.equal(boxes.reduce((a, b) => a + b.graphic.children.length, 0), 1, "the stage is in one frame only");
+  // On a wide screen the key and the chart stay on the map; on a phone they ride in the active step's card.
+  assert.equal(parts[".sm-legend"].parent, stage);
+  assert.equal(parts["[data-chart]"].parent, stage);
+  narrow = true;
+  boxes[0].sfStep(3);
+  assert.equal(parts[".sm-legend"].parent, stepsAll[3].card, "on a phone the key is in the step's card");
+  assert.equal(parts["[data-chart]"].parent, stepsAll[3].card, "on a phone the chart is in the step's card");
+  narrow = false;
+  boxes[0].sfStep(0);
+  assert.equal(parts["[data-chart]"].parent, stage);
 });
 
 console.log(`safety-map-test: ${n} passed`);

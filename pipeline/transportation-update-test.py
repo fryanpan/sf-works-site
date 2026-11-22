@@ -16,6 +16,8 @@ from pipeline/transportation-quality.py:
   good        the same fetch writing the data unchanged passes and keeps it
   pipeline    the whole orchestrator: a source fails, its data and its marker
               go back, the build step after it does not run, exit 1 names the check
+  held        the same failure from a step in MANUAL, in a hand run: exit 1 and
+              its data goes back, but the build after it runs
   refresh     a source whose publisher did not answer keeps its copy and exits
               0: its extract is not recorded as checked, the summary names it,
               and the run exits 2, not 1
@@ -34,6 +36,10 @@ from pipeline/transportation-quality.py:
               the step's 7 days, not the daily default
   opt lines   Upgrade a Bus Line's results file loses ten of its lines
   opt grid    the same file loses one value of one line's grid
+  opt month   the same file two months behind the dashboard's newest month
+  mode rows   SFMTA's delivered share by mode loses its newest month
+  mode share  the same file with a share over 1
+  tt month    the timetable history's newest month keeps a gap for 5 lines
   muni rows   the same step writing a ridership file cut to 100 rows: its row
               check fails, the file goes back, the build is skipped, exit 1
   stale       a build step's output edited after it ran: the next run reruns
@@ -213,6 +219,44 @@ d = json.load(open(p))
 d["lines"]["22"]["grid"]["gain"].pop()
 json.dump(d, open(p, "w"))
 """ % opt, "muni-optimizer/grid.each")
+    # one month behind the dashboard passes (the build waits there for the month's slower inputs); two doesn't
+    case("opt month", "muni-optimizer", opt, """
+p = %r
+d = json.load(open(p))
+y, m = int(d["month"][:4]), int(d["month"][5:7]) - 2
+d["month"] = "%%04d-%%02d" %% ((y, m) if m > 0 else (y - 1, m + 12))
+os.remove(p)
+json.dump(d, open(os.path.join(os.path.dirname(p), d["month"] + ".json"), "w"))
+""" % opt, "muni-optimizer/month.each")
+
+    # The two monthly inputs of Upgrade a Bus Line, each a source step with checks of its own.
+    mode, tt = "data/muni-ewt/lever/delivered_by_mode.csv", "data/muni-ewt/optimizer/timetable_month.csv"
+    copy_in(mode, tt)
+    case("mode rows", "muni-delivered-by-mode", mode, """
+p = %r
+rows = open(p, newline="").read().splitlines(keepends=True)
+last = max(r.split(",")[0] for r in rows[1:])
+open(p, "w", newline="").writelines(r for r in rows if not r.startswith(last + ","))
+""" % mode, "muni/delivered-by-mode.rows")
+    case("mode share", "muni-delivered-by-mode", mode, """
+p = %r
+rows = open(p, newline="").read().splitlines(keepends=True)
+f = rows[-1].split(","); f[2] = "1.20000"; rows[-1] = ",".join(f)
+open(p, "w", newline="").writelines(rows)
+""" % mode, "muni/delivered-by-mode/share.each")
+    case("tt month", "muni-timetable-history", tt, """
+import csv
+p = %r
+rows = list(csv.DictReader(open(p, newline="")))
+last, n = max(r["month"] for r in rows), 0
+for r in rows:
+    if r["month"] == last:
+        n += 1
+        if n > 5:
+            r["day"] = ""
+w = csv.DictWriter(open(p, "w", newline=""), fieldnames=list(rows[0]))
+w.writeheader(); w.writerows(rows)
+""" % tt, "muni/timetable-history/newest-month.each")
 
     # The orchestrator end to end: one source fails its check, the build after
     # it must not run, and the run exits 1 naming the check.
@@ -249,6 +293,19 @@ pipeline_state.record("census:acs1-b08301", "changed", version="2025")
     assert st["step:a-build"]["status"] == "skipped"
     print("  pipeline   exit 1, build skipped, extract and marker restored, failure recorded:")
     print("             " + st["quality:sf-mode-share"]["detail"][:160])
+
+    # The same failure from a held step (in MANUAL) in a hand run: it fails the run and keeps its previous data,
+    # but the build after it runs, as it does every scheduled day on the held step's last good files.
+    tu.MANUAL["sf-mode-share"] = "held for the test"
+    try:
+        code, out = orchestrate()
+    finally:
+        del tu.MANUAL["sf-mode-share"]
+    assert code == 1 and "FAILED: sf-mode-share" in out and "STOPPED" not in out, out
+    assert os.path.exists(built), "the build after a failing held step did not run:\n" + out
+    assert state_of(acs) == before
+    os.remove(built)
+    print("  held       a failing MANUAL step in a hand run: exit 1, its data restored, the build after it still runs")
 
     # A refresh that failed: the publisher did not answer, the script kept its
     # copy, recorded its marker failed and exited 0. Checks pass on the kept

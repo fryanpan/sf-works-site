@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-20",
  "method": "url, contract number, contract series with a shared street, name, the streets a title names, an acronym, or a contract number shared with another feed job; high and medium are linked. pageKind project is the job's own page, contract the department's page for its contract (a bid page), program a programme page listing it; only project and contract count as the job's page, and a job with neither may carry its closest official source",
  "published": {
   "Public Works": {
@@ -104,13 +104,6 @@
    "pageKind": "project"
   },
   {
-   "id": "dotmaps:11876",
-   "name": "PW MTA New Castro Station Elevator",
-   "department": "Public Works",
-   "contracts": [],
-   "series": []
-  },
-  {
    "id": "dotmaps:11878",
    "name": "Ingleside District Police Station Replacement",
    "department": "Public Works",
@@ -155,32 +148,6 @@
    "department": "Public Works",
    "contracts": [],
    "series": []
-  },
-  {
-   "id": "dotmaps:13175",
-   "name": "13th St Safety Improvement Project",
-   "department": "Public Works",
-   "contracts": [],
-   "series": [],
-   "url": "https://sfpublicworks.org/index.php/13thStreetSafety",
-   "title": "13th Street Safety Improvement Project",
-   "pageDepartment": "Public Works",
-   "pageStatus": "In progress",
-   "method": "name",
-   "confidence": "high",
-   "detail": "same name once filler words are dropped",
-   "ownDepartment": true,
-   "pageKind": "project",
-   "pavingMap": {
-    "contract": "13th St Safety Improvement Project",
-    "jo": "10039453",
-    "phase": "Under Construction",
-    "projectedYear": "FY24-25",
-    "estStart": "Winter 2025",
-    "estEnd": "Fall 2026",
-    "blocks": 16,
-    "matchedBy": "PeopleSoft id 10039453, 73% of the job's blocks"
-   }
   },
   {
    "id": "dotmaps:13198",
@@ -710,8 +677,8 @@
     "jo": "10042210",
     "phase": "Planning",
     "projectedYear": "FY26-27",
-    "estStart": "Fall 2027",
-    "estEnd": "Winter 2029",
+    "estStart": "Winter 2028",
+    "estEnd": "Spring 2029",
     "blocks": 58,
     "matchedBy": "PeopleSoft id 10042210, 94% of the job's blocks"
    },
@@ -958,7 +925,7 @@
    "pageStatus": null,
    "method": "series",
    "confidence": "high",
-   "detail": "same contract series pavement No. 78, and the page names 34thave, ashburyst, buchananst",
+   "detail": "same contract series pavement No. 78, and the page names ashburyst, buchananst, colest",
    "ownDepartment": true,
    "pageKind": "project",
    "pavingMap": {
@@ -2163,7 +2130,7 @@
    "pageStatus": null,
    "method": "series",
    "confidence": "high",
-   "detail": "same contract series pavement No. 78, and the page names 34thave, 38thave, ashburyst",
+   "detail": "same contract series pavement No. 78, and the page names ashburyst, bakerst, broderickst",
    "ownDepartment": true,
    "pageKind": "project",
    "pavingMap": {
@@ -2583,8 +2550,8 @@
     "projectedYear": "FY26-27",
     "estStart": "Summer 2027",
     "estEnd": "Fall 2028",
-    "blocks": 58,
-    "matchedBy": "PeopleSoft id 10041177, 97% of the job's blocks"
+    "blocks": 60,
+    "matchedBy": "PeopleSoft id 10041177, 100% of the job's blocks"
    }
   },
   {
@@ -3910,8 +3877,8 @@
     "projectedYear": "FY27-28",
     "estStart": "Fall 2028",
     "estEnd": "Winter 2030",
-    "blocks": 74,
-    "matchedBy": "PeopleSoft id 10043824, 100% of the job's blocks"
+    "blocks": 58,
+    "matchedBy": "PeopleSoft id 10043824, 78% of the job's blocks"
    },
    "closest": {
     "url": "https://sfpublicworks.org/street-resurfacing",
@@ -5146,6 +5113,17 @@
    "series": []
   },
   {
+   "id": "dotmaps:68789",
+   "name": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+   "department": "Public Works",
+   "contracts": [
+    "2748I"
+   ],
+   "series": [
+    "sewer 3"
+   ]
+  },
+  {
    "id": "dotmaps:7980",
    "name": "PW Main St Streetscape Drainage Improvements",
    "department": "Public Works",
@@ -5366,7 +5344,7 @@
     "projectedYear": "FY32-33",
     "estStart": "Winter 2034",
     "estEnd": "Winter 2035",
-    "blocks": 42,
+    "blocks": 49,
     "matchedBy": "same contract name"
    },
    "closest": {

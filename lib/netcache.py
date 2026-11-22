@@ -4,7 +4,7 @@
     G = netcache.graph()                 # walknet's graph, from .cache/walknet/ when current
     G = netcache.graph(use_cache=False)  # rebuild from the source files (--no-cache)
 
-Bryan, 2026-10-01, thread qqbqdaozyvxb on docs/access-model-architecture.md:
+Bryan, 2026-10-01:
 "Yes cache". Building the network parses data/osm-cache/sf-walk.json, finds
 its connected pieces, grids its edges and joins each of the 5,986 census
 blocks along its frontage, all in Python on one core.

@@ -8,8 +8,9 @@ Bryan, 2026-10-21: "please get high injury network page up there as a feature fl
 section", and the same day: "make it possible to look at where injuries happened near a specific school, and share a
 link around for what you're looking at".
 
-STATUS UNDER THE INCREMENTAL-UPDATER RULE. A build step, like school-injury-points.py: it reads the cached DataSF
-queries through lib/sfdata.py and the tracked extracts named below, and has no --update of its own. It is in
+STATUS UNDER THE INCREMENTAL-UPDATER RULE. A build step, like school-injury-points.py: it reads the crash tables
+through lib/street_safety_reads.py (kept current by step street-safety-crashes), other cached DataSF queries
+through lib/sfdata.py and the tracked extracts named below, and has no --update of its own. It is in
 pipeline/transportation-update.py after project-record, whose projects.json it reads. Its output names every source's
 read date under "source" and map.fixes.fetched, so the page dates its figures from the data, not the build.
 
@@ -70,7 +71,7 @@ OUT = os.path.join(ROOT, "site", "data", "injury-map.json")
 QUARTER_FT, ZONE_FT = 1320, 500
 import numpy as np
 import sfdata
-from lib import school_window
+from lib import school_window, street_safety_reads
 
 ON_FT, NODE_FT, SNAP_FT, PAIR_FT, EDGE_FT, CELL, CAM_PAIR_FT = 60, 50, 150, 160, 10, 500, 3000
 WINDOW_YEARS = 3
@@ -162,7 +163,7 @@ def mode(p):
 
 def faults():
     """case_id -> the at-fault parties' modes, one per distinct party (the table repeats two party rows once)."""
-    P = sfdata.fetch("8gtc-pjc6", select="case_id_pkey,party_number_ckey,party_type,at_fault,stwd_vehicle_type", floor=100000)
+    P = street_safety_reads.read("injury-map-parties")
     by, allp = collections.defaultdict(dict), collections.defaultdict(dict)
     for p in P.rows:
         m = (mode(p), p.get("stwd_vehicle_type"), p.get("party_type"))
@@ -431,9 +432,7 @@ class Streets(object):
 
 
 def victims():
-    V = sfdata.fetch("nwes-mmgh", select="case_id_pkey,victim_id,victim_age,victim_degree_of_injury,victim_role,collision_datetime,"
-                     "collision_time,tb_latitude,tb_longitude,primary_rd,secondary_rd,intersection,distance,ped_action,street_of_travel,"
-                     "move_pre_acc,party_type,party_number_ckey,type_of_collision,vz_pcf_code", floor=80000)
+    V = street_safety_reads.read("injury-map-victims")
     out = []
     for v in V.rows:
         if v.get("victim_degree_of_injury") in (None, "No Injury"):
@@ -582,7 +581,7 @@ def main():
     where["mainMiles"] = round(sum(miles[k] for k in MAIN), 1)
     where["yearly"] = victims.yearly
     where["step"] = victims.step
-    # Bryan, thread tlwgirvawpdt: main roads are one group. Its examples are the streets he named, checked here to be
+    # Bryan: main roads are one group. Its examples are the streets he named, checked here to be
     # mostly main road by their own miles. Posted speed limits from SFMTA's speed limit layer, by centerline cnn.
     ex = ["19TH AVE", "GEARY BLVD", "03RD ST"]
     where["mainExamples"] = [n for n in ex if sum(by_street[n][k] for k in MAIN) > 0.5 * sum(by_street[n].values())]
@@ -746,12 +745,10 @@ def main():
     pt["faultCodes"] = {k: dict(c.most_common(12)) for k, c in pcfs.items()}
     # People who hurt themselves (Bryan): the at-fault cyclist or walker is the person hurt.
     # "Solo" is a crash with no other party at all. Road fields come from the crash table (ubvf-ztfx), one row a crash.
-    CR = sfdata.fetch("ubvf-ztfx", select="case_id_pkey,lighting,road_surface,road_cond_1,road_cond_2,weather_1",
-                      where="collision_datetime >= '2021-09-01T00:00:00'", floor=10000)
+    CR = street_safety_reads.read("injury-map-crash-road")
     crash = {r["case_id_pkey"]: r for r in CR.rows}
     DESC = {}
-    for r in sfdata.fetch("ubvf-ztfx", select="case_id_pkey,collision_datetime,vz_pcf_code,vz_pcf_group,vz_pcf_description,type_of_collision,dph_col_grp_description,intersection,distance,number_killed,number_injured",
-                          where="collision_datetime >= '2021-09-01T00:00:00'", floor=10000).rows:
+    for r in street_safety_reads.read("injury-map-crash-causes").rows:
         if r.get("vz_pcf_code") and r.get("vz_pcf_description"):
             DESC.setdefault(r["vz_pcf_code"], r["vz_pcf_description"])
     DEFECT = {"Holes, Deep Rut", "Loose Material on Roadway", "Obstruction on Roadway", "Construction or Repair Zone", "Reduced Roadway Width", "Flooded"}
@@ -1207,7 +1204,7 @@ def main():
                         "site": r5(r["segments"]), "near": r5(set(r["nearSegments"]) - set(r["segments"]))} for r in sites]
     for r in sites:
         r.pop("segments", None); r.pop("nearSegments", None); r.pop("_m", None); r.pop("_compPre", None); r.pop("_area", None)
-    # "Show fixes" map layers (Bryan, thread cxjvmefmvfmu): interventions from the last ten years and planned ones, each
+    # "Show fixes" map layers (Bryan): interventions from the last ten years and planned ones, each
     # drawn on the centerline blocks its row names (cnn), or as a point where the dataset gives one.
     def segpts(c):
         try:

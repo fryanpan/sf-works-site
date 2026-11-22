@@ -4,7 +4,10 @@
     uv run --no-project --with numpy python tools/street-safety/street-safety-light.py
 
 Writes data/extract/street-safety/light-injuries.json, which tools/street-safety/street-safety-map.py folds into the map's people:
-2021 to now inline in map.json, 2005 to 2020 in a file the page loads when the Years slider reaches back.
+2021 to now inline in map.json, 2005 to 2020 in a file the page loads when the Years slider reaches back. Runs daily as
+step street-safety-light in pipeline/transportation-update.py; its DataSF reads go through
+lib/street_safety_reads.py, which step street-safety-crashes keeps current, so a new crash report reaches the
+map the day after DataSF publishes it.
 
 Bryan (2026-11-19): "overall on the dashboard, there should be a filter of what to show, death,
 serious injury, and whatever the term is for less severe injury. Make it a range slider where you can filter to that
@@ -59,23 +62,20 @@ HERE = Path(__file__).resolve().parent
 ROOT = Path(paths.ROOT)
 sys.path.insert(0, str(HERE))
 import sfdata  # noqa: E402
+from lib import street_safety_reads  # noqa: E402
 from lib.stable import write_json  # noqa: E402
 
 hik = paths.load("hin-injury-kinds.py")
 
 OUT = ROOT / "data/extract/street-safety/light-injuries.json"
 LEVELS = {"Fatal Injury": 0, "Severe Injury": 1, "Other Visible Injury": 2, "Complaint of Pain": 3}
-FIRST = "2005-01-01"
 # Per level per complete year. 2005 to 2025 run 20 to 43 deaths, 170 to 307 severe, 790 to 1,082 other visible and
 # 1,944 to 3,194 complaint of pain (nwes-mmgh, queried 2026-11-19).
 FLOOR = {0: 15, 1: 150, 2: 700, 3: 1700}
 # Totals an agency publishes that the rows must reproduce, by (level, year): SFMTA's traffic deaths for 2025, and SFDPH's
 # police-reported severe injuries for 2016 to 2018 (research/sources/datasf-traffic-crashes.md, Published total).
 PUBLISHED = {(0, "2025"): 25, (1, "2016"): 278, (1, "2017"): 261, (1, "2018"): 283}
-SELECT = ("case_id_pkey,victim_id,collision_datetime,collision_time,victim_degree_of_injury,victim_role,"
-          "party_number_ckey,tb_latitude,tb_longitude,vz_pcf_code,intersection")
-CARD_ROWS = ("victim_degree_of_injury in ('Fatal Injury','Severe Injury') and "
-             "collision_datetime between '2022-01-01T00:00:00' and '2024-12-31T23:59:59'")
+# The four reads (light-victims, light-parties, light-cards, light-totals) are in lib/street_safety_reads.py.
 
 
 def point(r):
@@ -229,10 +229,7 @@ def selftest():
 
 def main():
     selftest()
-    V = sfdata.fetch("nwes-mmgh", select=SELECT,
-                     where="victim_degree_of_injury in ('Fatal Injury','Severe Injury','Other Visible Injury','Complaint of Pain') and "
-                     "collision_datetime >= '%sT00:00:00' and not (victim_degree_of_injury in ('Fatal Injury','Severe Injury') and "
-                     "collision_datetime between '2022-01-01T00:00:00' and '2024-12-31T23:59:59')" % FIRST, floor=75000)
+    V = street_safety_reads.read("light-victims")
     rows = {}
     for v in V.rows:
         k = (v["case_id_pkey"], v["victim_id"])
@@ -246,13 +243,11 @@ def main():
                 assert per[(lv, str(y))] == 0, f"level {lv} {y}: the card path's rows leaked in"
                 continue
             assert per[(lv, str(y))] >= fl, f"level {lv} {y}: {per[(lv, str(y))]} rows, floor {fl}"
-    P = sfdata.fetch("8gtc-pjc6", select="case_id_pkey,party_number_ckey,party_type,stwd_vehicle_type,move_pre_acc,collision_datetime,"
-                     "party_number_injured,at_fault,party_age,party_sex",
-                     where="collision_datetime >= '%sT00:00:00'" % FIRST, floor=100000)
+    P = street_safety_reads.read("light-parties")
     parties, twice = party_rows(P.rows)
     # The 2022 to 2024 severe injuries and deaths: one with a point is the card path's (tools/street-safety/hin-people-map.py), one
     # with none is counted here.
-    K = sfdata.fetch("nwes-mmgh", select=SELECT, where=CARD_ROWS, floor=900)
+    K = street_safety_reads.read("light-cards")
     carded = collections.Counter()
     for v in K.rows:
         k = (v["case_id_pkey"], v["victim_id"])
@@ -300,8 +295,7 @@ def main():
         assert card_other.setdefault(v["victim_id"], OTHERS.index(o)) == OTHERS.index(o), f"victim {v['victim_id']} twice"
     counts = collections.Counter((o[4], o[2][:4]) for o in out)
     # A second read of the source, dates and levels only, to count against.
-    T = sfdata.fetch("nwes-mmgh", select="collision_datetime,victim_degree_of_injury",
-                     where="victim_degree_of_injury in ('Fatal Injury','Severe Injury') and collision_datetime >= '%sT00:00:00'" % FIRST, floor=5000)
+    T = street_safety_reads.read("light-totals")
     source = collections.Counter((LEVELS[v["victim_degree_of_injury"]], v["collision_datetime"][:4]) for v in T.rows)
     check_totals(counts + carded, source)
     write_json(str(OUT), {

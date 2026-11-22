@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10",
+ "generated": "2026-11-17",
  "source": "https://www.sfpuc.gov/sitemap.xml (every construction-project page, under /construction-contracts/construction-projects/ or at the site root)",
  "method": "status from each page's Project Phase line (Completed, or in progress); blocks from the corridors between the limits its text names, else from the feed jobs matched to it",
  "records": [
@@ -303,7 +303,7 @@
    ],
    "cnnsBasis": "the corridors between the limits its text names",
    "feedJobs": [],
-   "description": "Critical upgrades to our aging water infrastructure are planned for: San Bruno Avenue between Campbell Avenue and Dwight Street Blanken Avenue between Bayshore Boulevard and Candlestick Cove Way This project will include the installation of 8\" and 16\" ductile iron water mains, construction of new curb ramps, and pavement restoration. To learn more about what to expect during a water main installation project, visit sfpuc.gov/NewWaterMains Construction Look Ahead* Week of November 9 Final paving San Bruno Avenue between Paul and Campbell avenues Week of November 16 Final paving San Bruno Avenue"
+   "description": "Critical upgrades to our aging water infrastructure are planned for: San Bruno Avenue between Campbell Avenue and Dwight Street Blanken Avenue between Bayshore Boulevard and Candlestick Cove Way This project will include the installation of 8\" and 16\" ductile iron water mains, construction of new curb ramps, and pavement restoration. To learn more about what to expect during a water main installation project, visit sfpuc.gov/NewWaterMains Construction Look Ahead* Week of November 16 Final paving - San Bruno Avenue between Paul and Campbell avenues Week of November 23 Final paving - San Bruno A"
   },
   {
    "id": "sfpuc-page:southern-skyline-boulevard-ridge-trail-extension",
@@ -481,7 +481,7 @@
    "cnns": [],
    "cnnsBasis": null,
    "feedJobs": [],
-   "description": "In May 2025, a break on an 8-inch water main near Edgewood Avenue damaged a portion of a hillside near San Francisco Recreation and Parks' Interior Greenbelt Edgewood Trail. As a result of this incident, the Interior Greenbelt Edgewood Trail is closed until further notice for safety reasons. Please obey trail signage. WARNING! As a reminder, the trail is closed to the public. Do not attempt to enter the area, which is extremely dangerous. UPDATE: November 2026 After lengthy supply chain delays, our contractor finally obtained and installed a bypass water line along approximately 100 feet of th"
+   "description": "In May 2025, a break on an 8-inch water main near Edgewood Avenue damaged a portion of a hillside near San Francisco Recreation and Parks' Interior Greenbelt Edgewood Trail. As a result of this incident, the Interior Greenbelt Edgewood Trail is closed until further notice for safety reasons. Please obey trail signage. WARNING! As a reminder, the trail is closed to the public. Do not attempt to enter the area, which is extremely dangerous. UPDATE: November 2026 Due to the inherently unstable nature of the soil along the northern end of Edgewood Trail, slope reconstruction operations will be sus"
   },
   {
    "id": "sfpuc-page:folsom-area-stormwater",
@@ -911,20 +911,6 @@
    "description": "Sewer System Upgrades Built in 1952, the Southeast Treatment Plant is the City’s largest wastewater treatment facility, handling nearly 80% of San Francisco’s combined stormwater and wastewater every year. It is essential to protecting public health and the environment, but many of its facilities were outdated, seismically vulnerable, and at risk of sea level rise before the SFPUC initiated major upgrades. The SFPUC is investing over $5 billion in critical upgrades that are transforming this treatment plant into a resilient, modern resource recovery center. What is the Headworks Facility? The "
   },
   {
-   "id": "sfpuc-page:north-basin",
-   "name": "University Mound Reservoir North Basin Roof Coating Project",
-   "url": "https://www.sfpuc.gov/construction-contracts/construction-projects/north-basin",
-   "phase": "Construction",
-   "status": "In progress",
-   "constructionStart": "June 2026",
-   "constructionEnd": "November 2026",
-   "location": null,
-   "cnns": [],
-   "cnnsBasis": null,
-   "feedJobs": [],
-   "description": "Crews will recoat the exterior roof membrane on the Reservoir's North Basin to restore its protective barrier, which has reached the end of its useful life. This will help ensure that the roof remains watertight, supporting the continued protection and quality of the drinking water supply. These upgrades will help maintain the reservoir’s long-term reliability and support the continued delivery of safe, high-quality drinking water to San Francisco customers. Please Note: Because the coating must be applied to a completely dry surface, crews may occasionally work later in the day and on Saturda"
-  },
-  {
    "id": "sfpuc-page:oceanbeach",
    "name": "Ocean Beach Climate Change Adaptation Project",
    "url": "https://www.sfpuc.gov/construction-contracts/construction-projects/oceanbeach",
@@ -1029,7 +1015,7 @@
    "status": "In progress",
    "constructionStart": "June 2026",
    "constructionEnd": "June 2028",
-   "location": "Palou Avenue between 3rd Street and Griffith; Quesada Avenue between 3rd Street and Griffith; Revere Avenue between 3rd Street and Griffith; Keith Street between Palou and Revere; Jennings Street between Palou and Revere; Ingalls Street between Palou and Revere; Hawes Street between Palou and Revere; Jennings Street from Quesada Avenue to Palou; Keith Street from Quesada Avenue to Palou; Quesada Avenue from Keith Street to Jennings; Revere Avenue between Keith and Ingalls; Keith Street between Revere and Quesada; Jennings Street between Revere and Quesada; Palou Avenue between 3rd and Jennings; Keith Street between Palou and Quesada; Quesada Avenue between 3rd and Jennings",
+   "location": "Palou Avenue between 3rd Street and Griffith; Quesada Avenue between 3rd Street and Griffith; Revere Avenue between 3rd Street and Griffith; Keith Street between Palou and Revere; Jennings Street between Palou and Revere; Ingalls Street between Palou and Revere; Hawes Street between Palou and Revere; Jennings Street from Quesada Avenue to Palou; Keith Street from Quesada Avenue to Palou; Quesada Avenue from Keith Street to Jennings; Keith Street between Revere and Quesada; Jennings Street between Revere and Quesada; Revere Avenue between Keith and Jennings; Palou Avenue between 3rd and Jennings; Keith Street between Palou and Quesada; Revere Avenue between Keith and Ingalls",
    "cnns": [
     "10216000",
     "10217000",
@@ -1176,7 +1162,7 @@
    "status": "In progress",
    "constructionStart": "July 2026",
    "constructionEnd": "October 2027",
-   "location": "Bacon Street between Bowdoin Street and Bayshore; Phelps Street between Egbert Avenue and Vesta; Williams Avenue between Vesta and Neptune; Neptune Street between Williams and Thornton; Thornton Avenue between Neptune and 3rd; Bacon Street between Bowdoin and Goettingen; Phelps Street between Egbert and Donner; Bacon Street between Goettingen Street and Bayshore",
+   "location": "Bacon Street between Bowdoin Street and Bayshore; Phelps Street between Egbert Avenue and Vesta; Williams Avenue between Vesta and Neptune; Neptune Street between Williams and Thornton; Thornton Avenue between Neptune and 3rd; Bacon Street between Goettingen Street and Bayshore; Phelps Street between Egbert and Donner; Bacon Street between Bowdoin and Goettingen; Bacon Street between Bowdoin and Holyoke; Phelps Street between Carroll Avenue and Vesta",
    "cnns": [
     "10408000",
     "10409000",

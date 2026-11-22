@@ -122,6 +122,7 @@ export const CSS = `<style>
 .pop .wfm-key span { white-space: nowrap; }
 .pop .wfm-key i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 3px; vertical-align: baseline; }
 .pop .wfm-t { margin-top: 5px; }
+.pop .wfm-e small { font-size: 0.9em; }
 /* Overlays on the map: the filter panel, the slim key, the corner chart and the crash card. */
 .sm-stage { position: relative; overflow: hidden; }
 .sm-stage > .sm-mapbox { position: absolute; inset: 0; }

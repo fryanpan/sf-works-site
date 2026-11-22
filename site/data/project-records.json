@@ -1,18 +1,18 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-21",
  "since": "2010-01-01",
  "windows": {
   "engineering order": "since 2010-01-01",
   "SFMTA Board": "since 2010-01-01",
   "Board of Supervisors": "2019\u20132026",
-  "SFPUC Commission": "2021-01-26 to 2026-10-13",
-  "SFMTA engineering hearing (every item, by name)": "2019-08-16 to 2026-10-30",
-  "SFMTA Board of Directors (every item, by name)": "2019-01-15 to 2026-10-29",
-  "Board of Supervisors (every item, by name)": "2019-01-07 to 2026-11-12",
+  "SFPUC Commission": "2021-01-26 to 2026-10-27",
+  "SFMTA engineering hearing (every item, by name)": "2019-08-16 to 2026-11-13",
+  "SFMTA Board of Directors (every item, by name)": "2019-01-15 to 2026-11-17",
+  "Board of Supervisors (every item, by name)": "2019-01-07 to 2026-11-19",
   "SFPUC Commission (every item, by name)": "2019-01-22 to 2026-11-10",
-  "Public Works Commission (every item, by name)": "2022-07-28 to 2026-10-22",
-  "SFCTA Board (every item, by name)": "2019-01-29 to 2026-11-10",
-  "Recreation and Park Commission (every item, by name)": "2019-01-17 to 2026-10-15"
+  "Public Works Commission (every item, by name)": "2022-07-28 to 2026-11-12",
+  "SFCTA Board (every item, by name)": "2019-01-29 to 2026-11-17",
+  "Recreation and Park Commission (every item, by name)": "2019-01-17 to 2026-11-19"
  },
  "means": {
   "concerns a street this project will open": "concerns a street this project will open",
@@ -24,27 +24,11 @@
   "probable": "a contract award on the project's streets for its kind of work, in its dates"
  },
  "counts": {
-  "records": 633,
+  "records": 639,
   "unmatched": 124,
   "jobsWithRecord": 79
  },
  "byDotmapsId": {
-  "13175": [
-   {
-    "date": "2024-10-17",
-    "kind": "pwc",
-    "item": "5",
-    "title": "13th Street Safety Improvement Project \u2013 Contract Award Staff Recommendation: Award 13th Street Safety Improvement Project, Sourcing Event ID No. 0000007339, to NTK Construction, Inc in the amount of ",
-    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
-    "decision": null,
-    "grade": "exact",
-    "matchedOn": [
-     "13th St Safety Improvement Project",
-     "named as \u201c13th st safety improvement project\u201d"
-    ],
-    "means": "the Public Works Commission acted on this project by name"
-   }
-  ],
   "8179": [
    {
     "date": "2024-11-12",
@@ -265,6 +249,20 @@
    }
   ],
   "8066": [
+   {
+    "date": "2026-11-19",
+    "kind": "recpark",
+    "item": "9",
+    "title": "BUCHANAN STREET MALL - EQUITY ACTION PLAN AND OPERATIONAL HOURS",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=91&clip_id=53630",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "Buchanan Street Mall",
+     "named as \u201cbuchanan st mall\u201d"
+    ],
+    "means": "the Recreation and Park Commission acted on this project by name"
+   },
    {
     "date": "2026-10-15",
     "kind": "recpark",
@@ -1068,6 +1066,20 @@
   ],
   "31440": [
    {
+    "date": "2026-09-08",
+    "kind": "sfpuc",
+    "item": "6j",
+    "title": "Approve Modification No. 1 to Contract No. WW-720, As-Needed Main Sewer Replacement No. 10, with Mitchell Engineering, increasing the contract duration by 365 consecutive calendar days, to allow the S",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/9.8.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "PW As Needed Main Sewer Replacement No 10",
+     "named as \u201cas needed main sewer replacement no 10\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   },
+   {
     "date": "2024-06-25",
     "kind": "sfpuc",
     "item": "10",
@@ -1824,6 +1836,22 @@
     "matchedOn": [
      "FASIP Harrison/Treat Box Sewer and Connecting Auxiliary Sewers 37\u201d Waterline Relocation",
      "named as \u201charrison treat box sewer\u201d"
+    ],
+    "means": "the SFPUC Commission acted on this project by name"
+   }
+  ],
+  "16936": [
+   {
+    "date": "2026-09-08",
+    "kind": "sfpuc",
+    "item": "6l",
+    "title": "Award Contract No. WD-2885, 8-Inch Ductile Iron Water Main Replacement, Sewer Replacement, and Paving Renovation on Fulton Street from Great Highway to 31st Avenue and on Various Side Streets, to the ",
+    "url": "https://www.sfpuc.gov/sites/default/files/about-us/commission/9.8.2026_M.pdf",
+    "decision": "approve the Consent Calendar",
+    "grade": "exact",
+    "matchedOn": [
+     "WD-2885 8-Inch Ductile Iron Water Main Replacement, Sewer Replacement, and Paving Renovation on Fulton Street from Great Highway to 31st Avenue and Various Locations",
+     "named as \u201cwd2885 8 inch ductile iron water main replacement sewer replacement\u201d"
     ],
     "means": "the SFPUC Commission acted on this project by name"
    }

@@ -101,7 +101,7 @@ STATE = os.path.join(STATE_DIR, "steps.json")
 TRACE_DIR = os.path.join(paths.LIB, "trace_io")
 PY = sys.executable
 
-# DataSF datasets the transportation scripts read through scripts/sfdata.py.
+# DataSF datasets the transportation scripts read through lib/sfdata.py.
 SOCRATA = QUALITY.SOCRATA
 SNAPSHOTS = os.path.join(STATE_DIR, "snapshots")
 
@@ -218,6 +218,12 @@ STEPS = [
     # Interval: daily (Bryan, 2026-11-12: "Daily"); the timer fires at 13:15 UTC,
     # after yesterday's last bus, and the muni-rt/newest-day check fails once the newest day is over 2 days old.
     ("muni-rt-daily", "source", venv("muni-ewt/rt_daily.py", "--update"), ["data/muni-ewt/rt/**"], [], 0),
+    # Each line's timetable by month (buses in service, minutes between buses), for Upgrade a Bus Line's history charts
+    # and its newest month: tools/muni/muni-ewt/timetable_month.py --update adds the rows of any month 511 has posted
+    # (a DONE file under ~/muni-511/history on the VM, which muni-511 above fetches) that the tracked file lacks, and
+    # reads nothing else. Off the VM it says so and exits 0. Interval: daily; a new month arrives about once a month.
+    ("muni-timetable-history", "source", venv("muni-ewt/timetable_month.py", "--update"),
+     ["data/muni-ewt/optimizer/timetable_month.csv"], [], 0),
     # How full Muni buses are, from SFMTA's live occupancy levels in the same archive (tools/muni/muni-ewt/crowding_update.py,
     # which runs crowding_by_hour.py and crowding_levels.py over the newest four weeks of compacted day files, plus
     # today's UTC day decoded from raw snapshots, on the VM only). Interval: daily; the 13:15 UTC run sees yesterday's
@@ -230,6 +236,10 @@ STEPS = [
     # route (no marker; the whole 1 MB CSV re-read) for the Muni pages.
     ("muni-service-delivered", "source", py("muni-ewt/fetch_service_delivered.py", "--update"),
      ["data/muni-ewt/service_delivered.csv", "data/muni-ewt/service_delivered_target.json"], [], 0),
+    # SFMTA's share of scheduled service delivered by mode and month (transtat, no marker; the whole 1 MB table
+    # re-read), which Upgrade a Bus Line's fill-missed-trips fix is sized on. Interval: daily.
+    ("muni-delivered-by-mode", "source", py("muni-ewt/fetch_delivered_by_mode.py", "--update"),
+     ["data/muni-ewt/lever/delivered_by_mode.csv"], [], 0),
     ("muni-ridership", "source", py("muni-ewt/fetch_ridership.py", "--update"),
      ["data/muni-ewt/ridership.csv", "data/muni-ewt/weekday_boardings_published.csv"], [], 0),
     # SFMTA's yearly Muni Rider Survey satisfaction (no marker; a 200-byte CSV re-read).
@@ -256,6 +266,13 @@ STEPS = [
     # street-safety-map, which checks that every person it draws with a case number has a card.
     ("street-safety-cards", "source", py("street-safety-cards.py", "--update"),
      ["site/data/street-safety/cards/**", "data/socrata-cache/street-safety-cards/*"], [], 0),
+    # The crash reads of the Street Safety map and the injury pages (tools/street-safety/street-safety-crashes.py): every DataSF
+    # query of the victims, parties, crashes and fatality log tables that lib/street_safety_reads.py names,
+    # held in data/socrata-cache/street-safety/. Reads a query with no held copy cold; asks rowsUpdatedAt of each
+    # table and on a change re-reads that table's queries; checks every read before it is held and keeps the last good
+    # copy on a failed read. Interval: daily, with the scheduled run. Before hin-injuries, hin-densest,
+    # street-safety-light, injury-map and injury-severe-why, which read them.
+    ("street-safety-crashes", "source", py("street-safety-crashes.py", "--update"), ["data/socrata-cache/street-safety/*"], [], 0),
     # ---- builds --------------------------------------------------------------
     # Appendix L's rows placed on the street centerline by name, from the
     # plan's appendix PDF; the trace reads which blocks the index names.
@@ -399,9 +416,23 @@ STEPS = [
     # for the same 2023 run (scratch/runs/through-traffic/mtc-2023, scratch/runs/mode-skims-prior-work). After
     # where-traffic-comes-from, whose units.json it reads.
     ("where-traffic-modes", "build", venv("where-traffic-modes.py"), ["site/data/street-safety/where-from/modes-*.json"], [], 0),
-    # The Street Safety map's data (site/data/street-safety/), the draft dashboard and its story block, from the HIN
-    # people map's build (tools/street-safety/hin-people-map.py). Manual for now: it reads the crash extract that
-    # tools/street-safety/hin-injury-kinds.py writes, which has no updater yet.
+    # The Street Safety map's chain, daily with the scheduled run. Each build reruns only when a file it read moved:
+    # the crash reads street-safety-crashes keeps, the Telraam counters (weekly), the SFPD reports and the crash cards.
+    # The severe injuries and deaths of 2022 to 2024 placed on the streets (scratch/runs/hin-injuries/points.geojson,
+    # tools/street-safety/hin-injury-kinds.py), which hin-cut-through and street-safety-map read. Needs numpy.
+    ("hin-injuries", "build", venv("hin-injury-kinds.py"), ["scratch/runs/hin-injuries/points.geojson"], [], 0),
+    # The 2024 and 2022 HIN segments ranked worst to best (tools/street-safety/hin-densest-stretches.py), for the map's HIN groups.
+    # After project-record, whose blocks it reads.
+    ("hin-densest", "build", py("hin-densest-stretches.py"), ["out/hin-densest/*"], [], 0),
+    # Every injured person since 2005 without a card (tools/street-safety/street-safety-light.py): the map's dots. Needs numpy.
+    ("street-safety-light", "build", venv("street-safety-light.py"), ["data/extract/street-safety/light-injuries.json"], [], 0),
+    # Cars per minute at rush hour on every block (tools/street-safety/hin-cut-through.py), the map's traffic stress layer, with the
+    # Telraam read date the map's test checks against segments.json. After telraam and hin-injuries.
+    ("hin-cut-through", "build", py("hin-cut-through.py"), ["data/extract/residential-traffic/blocks.json",
+                                                           "out/hin-cut-through/*"], [], 0),
+    # The Street Safety map's data (site/data/street-safety/), from the HIN people map's build
+    # (tools/street-safety/hin-people-map.py) and the four steps above. Last of the chain; its read date is the newest of the
+    # people's, the crime reports' and the Telraam counters' own read dates.
     ("street-safety-map", "build", py("street-safety-map.py"), ["site/data/street-safety/*"], [], 0),
     # The board's school embeds: the four school maps, the top 40 and the $20M bikeway map. After school-sim
     # (index.json) and school-segments (segments.json), which it reads.
@@ -439,7 +470,10 @@ STEPS = [
     # the 511 summaries, SFMTA's crowding file, the timetable zip the muni-gtfs step keeps (unpacked by the script)
     # and the lever model's tracked outputs under data/muni-ewt/lever/. Nothing is fetched; it reruns when an input
     # moves, runs its own checks before it writes (a failure exits 1 and keeps the previous file) and the
-    # muni-optimizer checks after. Interval: daily, with the scheduled run, once it is off MANUAL (below).
+    # muni-optimizer checks after. When the dashboard has moved to a month whose timetable (muni-timetable-history)
+    # or delivered share (muni-delivered-by-mode) isn't in yet, it keeps the last month's file and passes; the
+    # newest-month check and pipeline/refresh-freshness.py fail once that month ended over 40 days back.
+    # Interval: daily, with the scheduled run.
     ("muni-optimizer", "build", venv("muni-ewt/optimizer_build.py"), ["site/data/muni-optimizer/*.json"], [], 0),
     # One daily series from both sources (site/data/muni-daily.json): 511's records for the months it has posted,
     # the archive's rebuilt days after them, each day marked with its source, and the date the data was read.
@@ -471,11 +505,6 @@ MANUAL = {name: "School Trips model build; rerun by hand on the simulation VM" f
     "school-grounds", "school-hour-crashes", "school-speed-levers", "school-kids-hurt", "school-calm-priority",
     "school-segments", "school-overlays", "school-sim", "school-sim-rules", "school-budget-plans",
     "school-injury-points", "school-trip-graph", "school-trip-check", "school-block-inputs"]}
-# The full map's Muni minutes (out/full-map/transit.json) come from a sim-VM run (scripts/full-map-transit-vm.sh) on
-# these origins, and full-map refuses minutes built on other origins. A daily OSM walk edit would rebuild the origins
-# and stop full-map and every step after it until someone reran the sim, so the origins move only with that rerun.
-MANUAL["street-safety-map"] = ("reads scratch/runs/hin-injuries/points.geojson from hin-injury-kinds.py, which has no incremental "
-                               "updater yet; rerun by hand until it does")
 # Through traffic's trip table is MTC's 2023 model run and its network one fixed SF-CHAMP run; neither updates, so
 # there is nothing to fetch on a schedule. A new MTC run means rerunning scripts/through-traffic-vm.sh by hand.
 MANUAL["through-traffic"] = ("its trip table (MTC Travel Model 1.6, 2023) and network (one undated SF-CHAMP run) don't "
@@ -484,6 +513,9 @@ MANUAL["where-traffic-comes-from"] = ("reads the select stage's output from scri
                                       "for the same fixed trip table and network as through-traffic")
 MANUAL["where-traffic-modes"] = ("its trip files and skims are MTC's fixed 2023 run; rerun tools/street-safety/where-traffic-modes.py "
                                  "by hand when MTC publishes a new run")
+# The full map's Muni minutes (out/full-map/transit.json) come from a sim-VM run (scripts/full-map-transit-vm.sh) on
+# these origins, and full-map refuses minutes built on other origins. A daily OSM walk edit would rebuild the origins
+# and stop full-map and every step after it until someone reran the sim, so the origins move only with that rerun.
 MANUAL["full-map-transit-origins"] = "rebuilt by hand with the Muni minutes' sim-VM run (scripts/full-map-transit-vm.sh)"
 # The destinations' points are the Muni minutes' other input, keyed by full_map_dests.points_sha, and they move with
 # OSM too: a park or district edge sample is kept only within EDGE_M of a walk-network street, so a daily walk edit
@@ -493,17 +525,23 @@ MANUAL["full-map-transit-origins"] = "rebuilt by hand with the Muni minutes' sim
 MANUAL["full-map-destinations"] = "rebuilt by hand with the Muni minutes' sim-VM run (scripts/full-map-transit-vm.sh)"
 
 
-# Upgrade a Bus Line was built on 16 November 2026 on the dashboard's per stop-hour rule (a wait figure for the hours
-# with a bus every 10 minutes or better). On 17 November the dashboard moved to SFMTA's line types, every hour of a
-# frequent line, weighted by riders on board (docs/decisions/muni-dashboard.md on the review branch), and the build's
-# own check that each line's excess wait matches muni.json's now fails on every line. Until its wait baseline, its
-# tests and the page's wording are moved to that rule, a scheduled run would exit 1 every day and stop the site's
-# deploy, so the schedule leaves it out and the page keeps the 16 November file. Taking this entry out turns the
-# daily refresh and its freshness check (pipeline/refresh-freshness.py PUBLISHED) on.
-MANUAL["muni-optimizer"] = ("its wait baseline follows the per stop-hour frequent rule the dashboard replaced on 2026-11-17; "
-                            "the build fails its dashboard check until it is moved to SFMTA's line types")
-_named = (set(MANUAL) | set(INTERVAL_DAYS)) - {s[0] for s in STEPS}
-assert not _named, "MANUAL or INTERVAL_DAYS names a step not in STEPS: %s" % ", ".join(sorted(_named))
+# Builds that read another step's output, and the steps they read. When one of those fails (or is itself held back),
+# the build is skipped for that run and keeps its last good files. Unlike a source failing its checks, which stops
+# every build, this holds back only the chain: the Street Safety map never pairs one input's new data with another's
+# failed rebuild (a blocks.json from an older Telraam read beside today's segments.json, say).
+AFTER = {
+    "hin-injuries": ("street-safety-crashes",),
+    "hin-densest": ("street-safety-crashes", "project-record"),
+    "street-safety-light": ("street-safety-crashes",),
+    "hin-cut-through": ("telraam", "hin-injuries"),
+    "street-safety-map": ("street-safety-crashes", "street-safety-cards", "sfpd-crime", "telraam", "hin-injuries",
+                          "hin-densest", "street-safety-light", "hin-cut-through"),
+    "injury-map": ("street-safety-crashes",),
+    "injury-severe-why": ("street-safety-crashes", "injury-map"),
+}
+
+_named = (set(MANUAL) | set(INTERVAL_DAYS) | set(AFTER) | {u for v in AFTER.values() for u in v}) - {s[0] for s in STEPS}
+assert not _named, "MANUAL, INTERVAL_DAYS or AFTER names a step not in STEPS: %s" % ", ".join(sorted(_named))
 
 
 def interval_days(name):
@@ -763,6 +801,7 @@ def main():
     all_changed, failed = [], []
     refresh_failed = {}  # source step -> markers whose refresh failed; last good copy kept
     blocked = None      # (step, check) of the first source that failed its checks
+    held_back = set()   # steps skipped this run because a step in AFTER failed or was itself held back
     past_sources = False
     t_all = time.time()
     for name, kind, cmd, guard, extracts, min_days in STEPS:
@@ -776,6 +815,13 @@ def main():
             # data was put back, and nothing is built until the source passes.
             print(f"  {name:26} skipped: {blocked[0]} failed {blocked[1]}")
             pipeline_state.record("step:" + name, "skipped", detail="upstream %s failed %s" % blocked)
+            continue
+        waits = [u for u in AFTER.get(name, ()) if u in failed or u in held_back]
+        if waits:
+            # Its inputs come from a step that failed this run: build nothing on a half-refreshed chain.
+            held_back.add(name)
+            print(f"  {name:26} skipped: {', '.join(waits)} failed or was held back this run")
+            pipeline_state.record("step:" + name, "skipped", detail="upstream %s failed or was held back" % ", ".join(waits))
             continue
         st = state.get(name, {})
         # The throttle counts only a run whose refresh succeeded ("good"). A run that kept its last copy because the
@@ -836,7 +882,10 @@ def main():
             failed.append(name)
             # A build step with checks stops the run the same way: its
             # previous files are back, and no later step reads the new ones.
-            if spec and not blocked:
+            # A MANUAL step is the exception: the scheduled run never runs it, so a later step already builds on
+            # its last good files every day, and a hand run that includes it (any run without --scheduled) must
+            # not stop every later build because a held step failed. It still fails the run and is named.
+            if spec and not blocked and name not in MANUAL:
                 blocked = (name, bad[0].check if bad else "exit %d" % code)
             what = (f"{len(bad)} of {len(results)} quality checks failed:\n" +
                     "\n".join("      %r" % r for r in bad[:12])) if bad else (

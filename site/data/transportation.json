@@ -1,7 +1,7 @@
 {
  "mileBasis": "per direction of travel",
  "adopted": "2025-03-04",
- "queriedAt": "2026-11-11",
+ "queriedAt": "2026-11-20",
  "validThrough": {
   "date": "2026-10-19",
   "limitedBy": "Bikeway network layer",
@@ -24,7 +24,7 @@
   "statedFrequency": "Quarterly",
   "cadenceDays": 90
  },
- "repavedSinceAdoption": 166,
+ "repavedSinceAdoption": 180,
  "planSegments": 3077,
  "registration": {
   "medianMetres": 6.2,
@@ -35,14 +35,14 @@
   "namedOnMap": 2403
  },
  "totals": {
-  "onPlan": 145,
-  "none": 37,
+  "onPlan": 157,
+  "none": 41,
   "short": 39,
-  "meets": 69,
-  "shortfall": 76,
-  "shortfallMetres": 12996,
+  "meets": 77,
+  "shortfall": 80,
+  "shortfallMetres": 13620,
   "shortfallOnSeparated": 32,
-  "shortfallOnCalmed": 43,
+  "shortfallOnCalmed": 47,
   "separatedGapSegments": 32,
   "separatedGapMetres": 5551,
   "marginalOverlap": 0,
@@ -50,26 +50,26 @@
   "checkable": 144,
   "checkableShortfall": 75,
   "checkableShortfallMetres": 12843,
-  "unverifiable": 1,
-  "unverifiableShortfall": 1
+  "unverifiable": 13,
+  "unverifiableShortfall": 5
  },
  "scopeOfWork": {
-  "includedBikeWork": 10,
+  "includedBikeWork": 11,
   "includedBikeWorkShortfall": 6,
-  "documentedNoBike": 46,
-  "documentedNoBikeShortfall": 18,
-  "unknown": 89,
+  "documentedNoBike": 61,
+  "documentedNoBikeShortfall": 22,
+  "unknown": 85,
   "unknownShortfall": 52,
   "citywide": {
-   "segmentsWithBikeProject": 673,
-   "alsoOnPlan": 293,
-   "alsoRepavedSinceAdoption": 10
+   "segmentsWithBikeProject": 655,
+   "alsoOnPlan": 284,
+   "alsoRepavedSinceAdoption": 11
   }
  },
  "undecided": {
-  "segments": 21,
-  "metres": 4248,
-  "withNothing": 6,
+  "segments": 23,
+  "metres": 5052,
+  "withNothing": 8,
   "onlySharrow": 11,
   "paintedOrBetter": 4,
   "flaggedUpgrade": 8,
@@ -85,25 +85,25 @@
   ]
  },
  "upcoming": {
-  "today": "2026-11-11",
+  "today": "2026-11-20",
   "noticeDays": 120,
-  "totalProjects": 383,
-  "projectRows": 7541,
-  "onPlan": 210,
+  "totalProjects": 382,
+  "projectRows": 7596,
+  "onPlan": 209,
   "ask": 186,
   "onPlanNotChangeable": 0,
-  "onPlanScopeNamed": 24,
-  "soon": 17,
-  "later": 169,
+  "onPlanScopeNamed": 23,
+  "soon": 18,
+  "later": 168,
   "soonPhases": {
-   "Design": 14,
+   "Design": 15,
    "Planning": 2,
    "Construction": 1
   },
   "medianRunDays": 440,
   "scopeCounts": {
-   "bike work named": 11,
    "the record does not say": 186,
+   "bike work named": 10,
    "walking or streetscape named": 9,
    "SFMTA street-design unit": 4
   },
@@ -115,9 +115,9 @@
    {
     "agency": "SF DPW IDC - Streets & Highways",
     "utility": false,
-    "projects": 62,
-    "blocks": 638,
-    "silentBlocks": 628
+    "projects": 61,
+    "blocks": 627,
+    "silentBlocks": 627
    },
    {
     "agency": "SF MTA SS - Livable Streets",
@@ -129,9 +129,9 @@
    {
     "agency": "SF DPW IDC - Hydraulic",
     "utility": true,
-    "projects": 59,
-    "blocks": 249,
-    "silentBlocks": 249
+    "projects": 60,
+    "blocks": 259,
+    "silentBlocks": 259
    },
    {
     "agency": "SF PUC Water",
@@ -185,9 +185,9 @@
    {
     "agency": "SF DPW BDC - Architecture",
     "utility": false,
-    "projects": 4,
-    "blocks": 12,
-    "silentBlocks": 12
+    "projects": 3,
+    "blocks": 10,
+    "silentBlocks": 10
    },
    {
     "agency": "SF DPW IDC - Mechanical",
@@ -226,82 +226,11 @@
    }
   ],
   "utility": {
-   "projects": 92,
-   "blocks": 406,
-   "silentBlocks": 406
+   "projects": 93,
+   "blocks": 416,
+   "silentBlocks": 416
   },
   "projects": [
-   {
-    "id": "13175",
-    "name": "13th St Safety Improvement Project",
-    "agency": "SF DPW IDC - Streets & Highways",
-    "phase": "Construction",
-    "start": "2025-02-03",
-    "end": "2026-11-14",
-    "streets": [
-     "13th St",
-     "Duboce Ave",
-     "South Van Ness Ave"
-    ],
-    "segments": 22,
-    "segmentsWithBikeway": 1,
-    "segmentsLocked": 1,
-    "segmentsOnPlan": 10,
-    "onPlanCnns": [
-     "550101",
-     "550201",
-     "551102",
-     "549203",
-     "551201",
-     "551101",
-     "4978201",
-     "4978101",
-     "4979000",
-     "4978102"
-    ],
-    "plannedFacility": [
-     "Separated"
-    ],
-    "planMatch": "centerline",
-    "planMetres": null,
-    "scope": "bike work named",
-    "changeable": true,
-    "ask": false,
-    "daysToStart": -646,
-    "daysToEnd": 3,
-    "inNoticeWindow": false
-   },
-   {
-    "id": "11876",
-    "name": "PW MTA New Castro Station Elevator",
-    "agency": "SF DPW BDC - Architecture",
-    "phase": "Construction",
-    "start": "2023-06-20",
-    "end": "2026-11-16",
-    "streets": [
-     "Market St"
-    ],
-    "segments": 2,
-    "segmentsWithBikeway": 2,
-    "segmentsLocked": 0,
-    "segmentsOnPlan": 2,
-    "onPlanCnns": [
-     "8767201",
-     "8768101"
-    ],
-    "plannedFacility": [
-     "Separated",
-     "Shared L3"
-    ],
-    "planMatch": "centerline",
-    "planMetres": null,
-    "scope": "the record does not say",
-    "changeable": true,
-    "ask": true,
-    "daysToStart": -1240,
-    "daysToEnd": 5,
-    "inNoticeWindow": false
-   },
    {
     "id": "8179",
     "name": "PW Various Locations Sewer Replacement No 17",
@@ -339,8 +268,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -727,
-    "daysToEnd": 14,
+    "daysToStart": -736,
+    "daysToEnd": 5,
     "inNoticeWindow": false
    },
    {
@@ -368,8 +297,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -3311,
-    "daysToEnd": 19,
+    "daysToStart": -3320,
+    "daysToEnd": 10,
     "inNoticeWindow": false
    },
    {
@@ -404,8 +333,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -828,
-    "daysToEnd": 19,
+    "daysToStart": -837,
+    "daysToEnd": 10,
     "inNoticeWindow": false
    },
    {
@@ -450,8 +379,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -954,
-    "daysToEnd": 20,
+    "daysToStart": -963,
+    "daysToEnd": 11,
     "inNoticeWindow": false
    },
    {
@@ -485,8 +414,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -504,
-    "daysToEnd": 30,
+    "daysToStart": -513,
+    "daysToEnd": 21,
     "inNoticeWindow": false
    },
    {
@@ -517,8 +446,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -258,
-    "daysToEnd": 44,
+    "daysToStart": -267,
+    "daysToEnd": 35,
     "inNoticeWindow": false
    },
    {
@@ -547,8 +476,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -578,8 +507,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -610,8 +539,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -637,8 +566,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -664,8 +593,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -694,8 +623,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -721,8 +650,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -749,8 +678,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -779,8 +708,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -806,8 +735,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -838,8 +767,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -870,8 +799,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -899,8 +828,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -927,8 +856,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -955,8 +884,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -985,8 +914,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1013,8 +942,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1041,8 +970,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1073,8 +1002,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 50,
+    "daysToStart": -323,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1124,8 +1053,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1320,
-    "daysToEnd": 50,
+    "daysToStart": -1329,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1161,8 +1090,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -271,
-    "daysToEnd": 50,
+    "daysToStart": -280,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1200,8 +1129,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -1198,
-    "daysToEnd": 50,
+    "daysToStart": -1207,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1230,8 +1159,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -224,
-    "daysToEnd": 50,
+    "daysToStart": -233,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1259,8 +1188,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -329,
-    "daysToEnd": 50,
+    "daysToStart": -338,
+    "daysToEnd": 41,
     "inNoticeWindow": false
    },
    {
@@ -1305,8 +1234,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1050,
-    "daysToEnd": 51,
+    "daysToStart": -1059,
+    "daysToEnd": 42,
     "inNoticeWindow": false
    },
    {
@@ -1336,8 +1265,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -107,
-    "daysToEnd": 57,
+    "daysToStart": -116,
+    "daysToEnd": 48,
     "inNoticeWindow": false
    },
    {
@@ -1381,8 +1310,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -528,
-    "daysToEnd": 70,
+    "daysToStart": -537,
+    "daysToEnd": 61,
     "inNoticeWindow": false
    },
    {
@@ -1412,8 +1341,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -283,
-    "daysToEnd": 81,
+    "daysToStart": -292,
+    "daysToEnd": 72,
     "inNoticeWindow": false
    },
    {
@@ -1451,8 +1380,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -212,
-    "daysToEnd": 87,
+    "daysToStart": -221,
+    "daysToEnd": 78,
     "inNoticeWindow": false
    },
    {
@@ -1472,7 +1401,7 @@
     ],
     "segments": 58,
     "segmentsWithBikeway": 4,
-    "segmentsLocked": 4,
+    "segmentsLocked": 5,
     "segmentsOnPlan": 1,
     "onPlanCnns": [
      "13066000"
@@ -1485,8 +1414,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -429,
-    "daysToEnd": 90,
+    "daysToStart": -438,
+    "daysToEnd": 81,
     "inNoticeWindow": false
    },
    {
@@ -1522,8 +1451,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -867,
-    "daysToEnd": 104,
+    "daysToStart": -876,
+    "daysToEnd": 95,
     "inNoticeWindow": false
    },
    {
@@ -1560,8 +1489,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -343,
-    "daysToEnd": 106,
+    "daysToStart": -352,
+    "daysToEnd": 97,
     "inNoticeWindow": false
    },
    {
@@ -1587,8 +1516,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -71,
-    "daysToEnd": 109,
+    "daysToStart": -80,
+    "daysToEnd": 100,
     "inNoticeWindow": false
    },
    {
@@ -1607,7 +1536,7 @@
     ],
     "segments": 23,
     "segmentsWithBikeway": 6,
-    "segmentsLocked": 2,
+    "segmentsLocked": 8,
     "segmentsOnPlan": 6,
     "onPlanCnns": [
      "404000",
@@ -1625,8 +1554,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -646,
-    "daysToEnd": 110,
+    "daysToStart": -655,
+    "daysToEnd": 101,
     "inNoticeWindow": false
    },
    {
@@ -1646,7 +1575,7 @@
     ],
     "segments": 27,
     "segmentsWithBikeway": 8,
-    "segmentsLocked": 0,
+    "segmentsLocked": 10,
     "segmentsOnPlan": 7,
     "onPlanCnns": [
      "366001",
@@ -1665,8 +1594,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -646,
-    "daysToEnd": 110,
+    "daysToStart": -655,
+    "daysToEnd": 101,
     "inNoticeWindow": false
    },
    {
@@ -1700,8 +1629,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -993,
-    "daysToEnd": 141,
+    "daysToStart": -1002,
+    "daysToEnd": 132,
     "inNoticeWindow": false
    },
    {
@@ -1729,8 +1658,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -93,
-    "daysToEnd": 148,
+    "daysToStart": -102,
+    "daysToEnd": 139,
     "inNoticeWindow": false
    },
    {
@@ -1765,8 +1694,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -988,
-    "daysToEnd": 153,
+    "daysToStart": -997,
+    "daysToEnd": 144,
     "inNoticeWindow": false
    },
    {
@@ -1786,7 +1715,7 @@
     ],
     "segments": 71,
     "segmentsWithBikeway": 14,
-    "segmentsLocked": 4,
+    "segmentsLocked": 64,
     "segmentsOnPlan": 2,
     "onPlanCnns": [
      "2191000",
@@ -1800,8 +1729,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -303,
-    "daysToEnd": 186,
+    "daysToStart": -312,
+    "daysToEnd": 177,
     "inNoticeWindow": false
    },
    {
@@ -1830,8 +1759,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 68,
-    "daysToEnd": 188,
+    "daysToStart": 59,
+    "daysToEnd": 179,
     "inNoticeWindow": true
    },
    {
@@ -1864,8 +1793,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -128,
-    "daysToEnd": 200,
+    "daysToStart": -137,
+    "daysToEnd": 191,
     "inNoticeWindow": false
    },
    {
@@ -1903,8 +1832,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1359,
-    "daysToEnd": 201,
+    "daysToStart": -1368,
+    "daysToEnd": 192,
     "inNoticeWindow": false
    },
    {
@@ -1940,8 +1869,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -695,
-    "daysToEnd": 202,
+    "daysToStart": -704,
+    "daysToEnd": 193,
     "inNoticeWindow": false
    },
    {
@@ -1974,8 +1903,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -226,
-    "daysToEnd": 213,
+    "daysToStart": -235,
+    "daysToEnd": 204,
     "inNoticeWindow": false
    },
    {
@@ -2022,8 +1951,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -226,
-    "daysToEnd": 213,
+    "daysToStart": -235,
+    "daysToEnd": 204,
     "inNoticeWindow": false
    },
    {
@@ -2073,8 +2002,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -149,
-    "daysToEnd": 215,
+    "daysToStart": -158,
+    "daysToEnd": 206,
     "inNoticeWindow": false
    },
    {
@@ -2109,8 +2038,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -149,
-    "daysToEnd": 215,
+    "daysToStart": -158,
+    "daysToEnd": 206,
     "inNoticeWindow": false
    },
    {
@@ -2130,7 +2059,7 @@
     ],
     "segments": 180,
     "segmentsWithBikeway": 76,
-    "segmentsLocked": 8,
+    "segmentsLocked": 10,
     "segmentsOnPlan": 77,
     "onPlanCnns": [
      "549202",
@@ -2220,8 +2149,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -498,
-    "daysToEnd": 231,
+    "daysToStart": -507,
+    "daysToEnd": 222,
     "inNoticeWindow": false
    },
    {
@@ -2267,8 +2196,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -41,
-    "daysToEnd": 231,
+    "daysToStart": -50,
+    "daysToEnd": 222,
     "inNoticeWindow": false
    },
    {
@@ -2296,8 +2225,8 @@
     "scope": "SFMTA street-design unit",
     "changeable": true,
     "ask": false,
-    "daysToStart": 20,
-    "daysToEnd": 231,
+    "daysToStart": 11,
+    "daysToEnd": 222,
     "inNoticeWindow": true
    },
    {
@@ -2317,7 +2246,7 @@
     ],
     "segments": 162,
     "segmentsWithBikeway": 30,
-    "segmentsLocked": 2,
+    "segmentsLocked": 6,
     "segmentsOnPlan": 28,
     "onPlanCnns": [
      "361000",
@@ -2358,8 +2287,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -133,
-    "daysToEnd": 238,
+    "daysToStart": -142,
+    "daysToEnd": 229,
     "inNoticeWindow": false
    },
    {
@@ -2414,8 +2343,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -133,
-    "daysToEnd": 238,
+    "daysToStart": -142,
+    "daysToEnd": 229,
     "inNoticeWindow": false
    },
    {
@@ -2443,8 +2372,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -777,
-    "daysToEnd": 246,
+    "daysToStart": -786,
+    "daysToEnd": 237,
     "inNoticeWindow": false
    },
    {
@@ -2477,8 +2406,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -93,
-    "daysToEnd": 272,
+    "daysToStart": -102,
+    "daysToEnd": 263,
     "inNoticeWindow": false
    },
    {
@@ -2517,8 +2446,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 141,
-    "daysToEnd": 293,
+    "daysToStart": 132,
+    "daysToEnd": 284,
     "inNoticeWindow": false
    },
    {
@@ -2546,8 +2475,8 @@
     "scope": "SFMTA street-design unit",
     "changeable": true,
     "ask": false,
-    "daysToStart": -63,
-    "daysToEnd": 303,
+    "daysToStart": -72,
+    "daysToEnd": 294,
     "inNoticeWindow": false
    },
    {
@@ -2583,8 +2512,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -772,
-    "daysToEnd": 323,
+    "daysToStart": -781,
+    "daysToEnd": 314,
     "inNoticeWindow": false
    },
    {
@@ -2604,7 +2533,7 @@
     ],
     "segments": 18,
     "segmentsWithBikeway": 2,
-    "segmentsLocked": 12,
+    "segmentsLocked": 14,
     "segmentsOnPlan": 5,
     "onPlanCnns": [
      "4076000",
@@ -2622,8 +2551,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -450,
-    "daysToEnd": 335,
+    "daysToStart": -459,
+    "daysToEnd": 326,
     "inNoticeWindow": false
    },
    {
@@ -2668,8 +2597,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -114,
-    "daysToEnd": 335,
+    "daysToStart": -123,
+    "daysToEnd": 326,
     "inNoticeWindow": false
    },
    {
@@ -2689,7 +2618,7 @@
     ],
     "segments": 24,
     "segmentsWithBikeway": 0,
-    "segmentsLocked": 7,
+    "segmentsLocked": 17,
     "segmentsOnPlan": 7,
     "onPlanCnns": [
      "4067000",
@@ -2709,8 +2638,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -450,
-    "daysToEnd": 335,
+    "daysToStart": -459,
+    "daysToEnd": 326,
     "inNoticeWindow": false
    },
    {
@@ -2746,8 +2675,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -114,
-    "daysToEnd": 335,
+    "daysToStart": -123,
+    "daysToEnd": 326,
     "inNoticeWindow": false
    },
    {
@@ -2782,8 +2711,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -527,
-    "daysToEnd": 352,
+    "daysToStart": -536,
+    "daysToEnd": 343,
     "inNoticeWindow": false
    },
    {
@@ -2816,8 +2745,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 108,
-    "daysToEnd": 358,
+    "daysToStart": 99,
+    "daysToEnd": 349,
     "inNoticeWindow": true
    },
    {
@@ -2851,8 +2780,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -5,
-    "daysToEnd": 360,
+    "daysToStart": -14,
+    "daysToEnd": 351,
     "inNoticeWindow": false
    },
    {
@@ -2888,8 +2817,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -2,
-    "daysToEnd": 362,
+    "daysToStart": -11,
+    "daysToEnd": 353,
     "inNoticeWindow": false
    },
    {
@@ -2909,7 +2838,7 @@
     ],
     "segments": 75,
     "segmentsWithBikeway": 0,
-    "segmentsLocked": 13,
+    "segmentsLocked": 14,
     "segmentsOnPlan": 6,
     "onPlanCnns": [
      "7728000",
@@ -2927,8 +2856,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -212,
-    "daysToEnd": 393,
+    "daysToStart": -221,
+    "daysToEnd": 384,
     "inNoticeWindow": false
    },
    {
@@ -2964,8 +2893,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -588,
-    "daysToEnd": 411,
+    "daysToStart": -597,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -2994,8 +2923,8 @@
     "scope": "SFMTA street-design unit",
     "changeable": true,
     "ask": false,
-    "daysToStart": -1139,
-    "daysToEnd": 415,
+    "daysToStart": -1148,
+    "daysToEnd": 406,
     "inNoticeWindow": false
    },
    {
@@ -3039,7 +2968,7 @@
     "changeable": true,
     "ask": false,
     "daysToStart": null,
-    "daysToEnd": 415,
+    "daysToEnd": 406,
     "inNoticeWindow": false
    },
    {
@@ -3096,8 +3025,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -960,
-    "daysToEnd": 415,
+    "daysToStart": -969,
+    "daysToEnd": 406,
     "inNoticeWindow": false
    },
    {
@@ -3129,8 +3058,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 415,
+    "daysToStart": -323,
+    "daysToEnd": 406,
     "inNoticeWindow": false
    },
    {
@@ -3171,8 +3100,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 415,
+    "daysToStart": -323,
+    "daysToEnd": 406,
     "inNoticeWindow": false
    },
    {
@@ -3203,8 +3132,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 51,
-    "daysToEnd": 415,
+    "daysToStart": 42,
+    "daysToEnd": 406,
     "inNoticeWindow": true
    },
    {
@@ -3239,8 +3168,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 51,
-    "daysToEnd": 415,
+    "daysToStart": 42,
+    "daysToEnd": 406,
     "inNoticeWindow": true
    },
    {
@@ -3272,8 +3201,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -71,
-    "daysToEnd": 415,
+    "daysToStart": -80,
+    "daysToEnd": 406,
     "inNoticeWindow": false
    },
    {
@@ -3305,8 +3234,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 51,
-    "daysToEnd": 416,
+    "daysToStart": 42,
+    "daysToEnd": 407,
     "inNoticeWindow": true
    },
    {
@@ -3339,8 +3268,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 73,
-    "daysToEnd": 437,
+    "daysToStart": 64,
+    "daysToEnd": 428,
     "inNoticeWindow": true
    },
    {
@@ -3375,8 +3304,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 78,
-    "daysToEnd": 443,
+    "daysToStart": 69,
+    "daysToEnd": 434,
     "inNoticeWindow": true
    },
    {
@@ -3409,8 +3338,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -664,
-    "daysToEnd": 443,
+    "daysToStart": -673,
+    "daysToEnd": 434,
     "inNoticeWindow": false
    },
    {
@@ -3441,8 +3370,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1702,
-    "daysToEnd": 447,
+    "daysToStart": -1711,
+    "daysToEnd": 438,
     "inNoticeWindow": false
    },
    {
@@ -3483,8 +3412,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 12,
-    "daysToEnd": 451,
+    "daysToStart": 3,
+    "daysToEnd": 442,
     "inNoticeWindow": true
    },
    {
@@ -3518,8 +3447,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 12,
-    "daysToEnd": 451,
+    "daysToStart": 3,
+    "daysToEnd": 442,
     "inNoticeWindow": true
    },
    {
@@ -3549,8 +3478,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 104,
-    "daysToEnd": 471,
+    "daysToStart": 95,
+    "daysToEnd": 462,
     "inNoticeWindow": true
    },
    {
@@ -3583,8 +3512,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 108,
-    "daysToEnd": 473,
+    "daysToStart": 99,
+    "daysToEnd": 464,
     "inNoticeWindow": true
    },
    {
@@ -3630,8 +3559,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -954,
-    "daysToEnd": 476,
+    "daysToStart": -963,
+    "daysToEnd": 467,
     "inNoticeWindow": false
    },
    {
@@ -3671,8 +3600,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 229,
-    "daysToEnd": 499,
+    "daysToStart": 220,
+    "daysToEnd": 490,
     "inNoticeWindow": false
    },
    {
@@ -3712,8 +3641,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -224,
-    "daysToEnd": 507,
+    "daysToStart": -233,
+    "daysToEnd": 498,
     "inNoticeWindow": false
    },
    {
@@ -3746,8 +3675,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -219,
-    "daysToEnd": 510,
+    "daysToStart": -228,
+    "daysToEnd": 501,
     "inNoticeWindow": false
    },
    {
@@ -3789,8 +3718,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 78,
-    "daysToEnd": 518,
+    "daysToStart": 69,
+    "daysToEnd": 509,
     "inNoticeWindow": true
    },
    {
@@ -3828,8 +3757,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 78,
-    "daysToEnd": 518,
+    "daysToStart": 69,
+    "daysToEnd": 509,
     "inNoticeWindow": true
    },
    {
@@ -3861,8 +3790,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 87,
-    "daysToEnd": 526,
+    "daysToStart": 78,
+    "daysToEnd": 517,
     "inNoticeWindow": true
    },
    {
@@ -3904,8 +3833,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 87,
-    "daysToEnd": 526,
+    "daysToStart": 78,
+    "daysToEnd": 517,
     "inNoticeWindow": true
    },
    {
@@ -3933,8 +3862,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1381,
-    "daysToEnd": 534,
+    "daysToStart": -1390,
+    "daysToEnd": 525,
     "inNoticeWindow": false
    },
    {
@@ -3969,8 +3898,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 185,
-    "daysToEnd": 550,
+    "daysToStart": 176,
+    "daysToEnd": 541,
     "inNoticeWindow": false
    },
    {
@@ -4006,8 +3935,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -163,
-    "daysToEnd": 557,
+    "daysToStart": -172,
+    "daysToEnd": 548,
     "inNoticeWindow": false
    },
    {
@@ -4042,9 +3971,9 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 122,
-    "daysToEnd": 562,
-    "inNoticeWindow": false
+    "daysToStart": 113,
+    "daysToEnd": 553,
+    "inNoticeWindow": true
    },
    {
     "id": "11886",
@@ -4071,8 +4000,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -387,
-    "daysToEnd": 562,
+    "daysToStart": -396,
+    "daysToEnd": 553,
     "inNoticeWindow": false
    },
    {
@@ -4105,8 +4034,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 166,
-    "daysToEnd": 566,
+    "daysToStart": 157,
+    "daysToEnd": 557,
     "inNoticeWindow": false
    },
    {
@@ -4126,7 +4055,7 @@
     ],
     "segments": 46,
     "segmentsWithBikeway": 9,
-    "segmentsLocked": 1,
+    "segmentsLocked": 2,
     "segmentsOnPlan": 7,
     "onPlanCnns": [
      "608000",
@@ -4145,8 +4074,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 208,
-    "daysToEnd": 576,
+    "daysToStart": 199,
+    "daysToEnd": 567,
     "inNoticeWindow": false
    },
    {
@@ -4183,8 +4112,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 138,
-    "daysToEnd": 578,
+    "daysToStart": 129,
+    "daysToEnd": 569,
     "inNoticeWindow": false
    },
    {
@@ -4225,8 +4154,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 189,
-    "daysToEnd": 583,
+    "daysToStart": 180,
+    "daysToEnd": 574,
     "inNoticeWindow": false
    },
    {
@@ -4262,8 +4191,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1237,
-    "daysToEnd": 587,
+    "daysToStart": -1246,
+    "daysToEnd": 578,
     "inNoticeWindow": false
    },
    {
@@ -4291,8 +4220,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1245,
-    "daysToEnd": 597,
+    "daysToStart": -1254,
+    "daysToEnd": 588,
     "inNoticeWindow": false
    },
    {
@@ -4345,8 +4274,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 232,
-    "daysToEnd": 597,
+    "daysToStart": 223,
+    "daysToEnd": 588,
     "inNoticeWindow": false
    },
    {
@@ -4379,8 +4308,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 232,
-    "daysToEnd": 597,
+    "daysToStart": 223,
+    "daysToEnd": 588,
     "inNoticeWindow": false
    },
    {
@@ -4428,8 +4357,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -954,
-    "daysToEnd": 597,
+    "daysToStart": -963,
+    "daysToEnd": 588,
     "inNoticeWindow": false
    },
    {
@@ -4474,8 +4403,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 383,
-    "daysToEnd": 626,
+    "daysToStart": 374,
+    "daysToEnd": 617,
     "inNoticeWindow": false
    },
    {
@@ -4510,8 +4439,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1012,
-    "daysToEnd": 629,
+    "daysToStart": -1021,
+    "daysToEnd": 620,
     "inNoticeWindow": false
    },
    {
@@ -4548,8 +4477,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 204,
-    "daysToEnd": 629,
+    "daysToStart": 195,
+    "daysToEnd": 620,
     "inNoticeWindow": false
    },
    {
@@ -4601,8 +4530,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 206,
-    "daysToEnd": 646,
+    "daysToStart": 197,
+    "daysToEnd": 637,
     "inNoticeWindow": false
    },
    {
@@ -4634,8 +4563,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 206,
-    "daysToEnd": 646,
+    "daysToStart": 197,
+    "daysToEnd": 637,
     "inNoticeWindow": false
    },
    {
@@ -4668,8 +4597,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 281,
-    "daysToEnd": 648,
+    "daysToStart": 272,
+    "daysToEnd": 639,
     "inNoticeWindow": false
    },
    {
@@ -4689,7 +4618,7 @@
     ],
     "segments": 55,
     "segmentsWithBikeway": 1,
-    "segmentsLocked": 1,
+    "segmentsLocked": 0,
     "segmentsOnPlan": 1,
     "onPlanCnns": [
      "6983000"
@@ -4702,8 +4631,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 293,
-    "daysToEnd": 658,
+    "daysToStart": 284,
+    "daysToEnd": 649,
     "inNoticeWindow": false
    },
    {
@@ -4743,8 +4672,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 324,
-    "daysToEnd": 686,
+    "daysToStart": 315,
+    "daysToEnd": 677,
     "inNoticeWindow": false
    },
    {
@@ -4779,8 +4708,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -498,
-    "daysToEnd": 689,
+    "daysToStart": -507,
+    "daysToEnd": 680,
     "inNoticeWindow": false
    },
    {
@@ -4811,8 +4740,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -244,
-    "daysToEnd": 689,
+    "daysToStart": -253,
+    "daysToEnd": 680,
     "inNoticeWindow": false
    },
    {
@@ -4840,8 +4769,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1230,
-    "daysToEnd": 706,
+    "daysToStart": -1239,
+    "daysToEnd": 697,
     "inNoticeWindow": false
    },
    {
@@ -4885,8 +4814,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -392,
-    "daysToEnd": 707,
+    "daysToStart": -401,
+    "daysToEnd": 698,
     "inNoticeWindow": false
    },
    {
@@ -4921,8 +4850,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 245,
-    "daysToEnd": 709,
+    "daysToStart": 236,
+    "daysToEnd": 700,
     "inNoticeWindow": false
    },
    {
@@ -4950,8 +4879,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 47,
-    "daysToEnd": 717,
+    "daysToStart": 38,
+    "daysToEnd": 708,
     "inNoticeWindow": true
    },
    {
@@ -4993,8 +4922,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 297,
-    "daysToEnd": 736,
+    "daysToStart": 288,
+    "daysToEnd": 727,
     "inNoticeWindow": false
    },
    {
@@ -5027,8 +4956,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 213,
-    "daysToEnd": 763,
+    "daysToStart": 204,
+    "daysToEnd": 754,
     "inNoticeWindow": false
    },
    {
@@ -5058,8 +4987,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -648,
-    "daysToEnd": 781,
+    "daysToStart": -657,
+    "daysToEnd": 772,
     "inNoticeWindow": false
    },
    {
@@ -5121,8 +5050,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 416,
-    "daysToEnd": 781,
+    "daysToStart": 407,
+    "daysToEnd": 772,
     "inNoticeWindow": false
    },
    {
@@ -5150,8 +5079,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -1139,
-    "daysToEnd": 781,
+    "daysToStart": -1148,
+    "daysToEnd": 772,
     "inNoticeWindow": false
    },
    {
@@ -5198,8 +5127,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -71,
-    "daysToEnd": 781,
+    "daysToStart": -80,
+    "daysToEnd": 772,
     "inNoticeWindow": false
    },
    {
@@ -5237,8 +5166,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -71,
-    "daysToEnd": 781,
+    "daysToStart": -80,
+    "daysToEnd": 772,
     "inNoticeWindow": false
    },
    {
@@ -5272,8 +5201,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 782,
+    "daysToStart": -323,
+    "daysToEnd": 773,
     "inNoticeWindow": false
    },
    {
@@ -5312,8 +5241,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 245,
-    "daysToEnd": 784,
+    "daysToStart": 236,
+    "daysToEnd": 775,
     "inNoticeWindow": false
    },
    {
@@ -5347,8 +5276,126 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 245,
-    "daysToEnd": 800,
+    "daysToStart": 236,
+    "daysToEnd": 791,
+    "inNoticeWindow": false
+   },
+   {
+    "id": "36573",
+    "name": "WD-2936 8-, 12- & 16-inch Ductile Iron Water Main Replacement on Geary Boulevard from Stanyan Street to Presidio Avenue & on Post Street from Presidio Avenue to Scott Street & on Various Side Streets",
+    "agency": "SF PUC Water",
+    "phase": "Design",
+    "start": "2027-02-04",
+    "end": "2029-02-04",
+    "streets": [
+     "BEAUMONT AVE",
+     "COMMONWEALTH AVE",
+     "EMERSON ST",
+     "EUCLID AVE",
+     "FILLMORE ST",
+     "GEARY BLVD"
+    ],
+    "segments": 68,
+    "segmentsWithBikeway": 14,
+    "segmentsLocked": 10,
+    "segmentsOnPlan": 6,
+    "onPlanCnns": [
+     "5288000",
+     "6046201",
+     "5295000",
+     "5294000",
+     "5296000",
+     "10770000"
+    ],
+    "plannedFacility": [
+     "Separated",
+     "Shared",
+     "Undecided"
+    ],
+    "planMatch": "centerline",
+    "planMetres": null,
+    "scope": "the record does not say",
+    "changeable": true,
+    "ask": true,
+    "daysToStart": 76,
+    "daysToEnd": 807,
+    "inNoticeWindow": true
+   },
+   {
+    "id": "16930",
+    "name": "WD-2918 8-Inch Ductile Iron Water Main Replacement, Sewer Rehabilitation and Sewer Replacement on Harkness Ave., Goettingen St., Girard St., and Various Locations",
+    "agency": "SF PUC Water",
+    "phase": "Design",
+    "start": "2026-07-13",
+    "end": "2029-02-16",
+    "streets": [
+     "ALDER ST",
+     "ANKENY ST",
+     "BISHOP ST",
+     "BRUSSELS ST",
+     "CAMPBELL AVE",
+     "DELTA ST"
+    ],
+    "segments": 101,
+    "segmentsWithBikeway": 4,
+    "segmentsLocked": 15,
+    "segmentsOnPlan": 5,
+    "onPlanCnns": [
+     "6208000",
+     "8667101",
+     "8666101",
+     "8665201",
+     "8668201"
+    ],
+    "plannedFacility": [
+     "Separated",
+     "Shared"
+    ],
+    "planMatch": "centerline",
+    "planMetres": null,
+    "scope": "the record does not say",
+    "changeable": true,
+    "ask": true,
+    "daysToStart": -130,
+    "daysToEnd": 819,
+    "inNoticeWindow": false
+   },
+   {
+    "id": "26427",
+    "name": "Sunset Irrigation Recycled Water",
+    "agency": "SF DPW IDC - Mechanical",
+    "phase": "Design",
+    "start": "2027-06-29",
+    "end": "2029-03-02",
+    "streets": [
+     "36th Ave",
+     "37th Ave",
+     "Irving St",
+     "Judah St",
+     "Lake Merced Blvd",
+     "Lawton St"
+    ],
+    "segments": 40,
+    "segmentsWithBikeway": 3,
+    "segmentsLocked": 3,
+    "segmentsOnPlan": 5,
+    "onPlanCnns": [
+     "11069000",
+     "11070000",
+     "13262000",
+     "13264000",
+     "13263000"
+    ],
+    "plannedFacility": [
+     "Shared"
+    ],
+    "planMatch": "centerline",
+    "planMetres": null,
+    "scope": "the record does not say",
+    "changeable": true,
+    "ask": true,
+    "daysToStart": 221,
+    "daysToEnd": 833,
     "inNoticeWindow": false
    },
    {
@@ -5356,8 +5403,8 @@
     "name": "Bay Shore Blvd and Cesar Chavez Pavement Renovation",
     "agency": "SF DPW IDC - Streets & Highways",
     "phase": "Planning",
-    "start": "2027-11-09",
-    "end": "2029-01-21",
+    "start": "2028-01-09",
+    "end": "2029-03-23",
     "streets": [
      "Arleta Ave",
      "Bacon St",
@@ -5404,126 +5451,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 363,
-    "daysToEnd": 802,
-    "inNoticeWindow": false
-   },
-   {
-    "id": "36573",
-    "name": "WD-2936 8-, 12- & 16-inch Ductile Iron Water Main Replacement on Geary Boulevard from Stanyan Street to Presidio Avenue & on Post Street from Presidio Avenue to Scott Street & on Various Side Streets",
-    "agency": "SF PUC Water",
-    "phase": "Design",
-    "start": "2027-02-04",
-    "end": "2029-02-04",
-    "streets": [
-     "BEAUMONT AVE",
-     "COMMONWEALTH AVE",
-     "EMERSON ST",
-     "EUCLID AVE",
-     "FILLMORE ST",
-     "GEARY BLVD"
-    ],
-    "segments": 68,
-    "segmentsWithBikeway": 14,
-    "segmentsLocked": 3,
-    "segmentsOnPlan": 6,
-    "onPlanCnns": [
-     "5288000",
-     "6046201",
-     "5295000",
-     "5294000",
-     "5296000",
-     "10770000"
-    ],
-    "plannedFacility": [
-     "Separated",
-     "Shared",
-     "Undecided"
-    ],
-    "planMatch": "centerline",
-    "planMetres": null,
-    "scope": "the record does not say",
-    "changeable": true,
-    "ask": true,
-    "daysToStart": 85,
-    "daysToEnd": 816,
-    "inNoticeWindow": true
-   },
-   {
-    "id": "16930",
-    "name": "WD-2918 8-Inch Ductile Iron Water Main Replacement, Sewer Rehabilitation and Sewer Replacement on Harkness Ave., Goettingen St., Girard St., and Various Locations",
-    "agency": "SF PUC Water",
-    "phase": "Design",
-    "start": "2026-07-13",
-    "end": "2029-02-16",
-    "streets": [
-     "ALDER ST",
-     "ANKENY ST",
-     "BISHOP ST",
-     "BRUSSELS ST",
-     "CAMPBELL AVE",
-     "DELTA ST"
-    ],
-    "segments": 101,
-    "segmentsWithBikeway": 4,
-    "segmentsLocked": 15,
-    "segmentsOnPlan": 5,
-    "onPlanCnns": [
-     "6208000",
-     "8667101",
-     "8666101",
-     "8665201",
-     "8668201"
-    ],
-    "plannedFacility": [
-     "Separated",
-     "Shared"
-    ],
-    "planMatch": "centerline",
-    "planMetres": null,
-    "scope": "the record does not say",
-    "changeable": true,
-    "ask": true,
-    "daysToStart": -121,
-    "daysToEnd": 828,
-    "inNoticeWindow": false
-   },
-   {
-    "id": "26427",
-    "name": "Sunset Irrigation Recycled Water",
-    "agency": "SF DPW IDC - Mechanical",
-    "phase": "Design",
-    "start": "2027-06-29",
-    "end": "2029-03-02",
-    "streets": [
-     "36th Ave",
-     "37th Ave",
-     "Irving St",
-     "Judah St",
-     "Lake Merced Blvd",
-     "Lawton St"
-    ],
-    "segments": 40,
-    "segmentsWithBikeway": 3,
-    "segmentsLocked": 3,
-    "segmentsOnPlan": 5,
-    "onPlanCnns": [
-     "11069000",
-     "11070000",
-     "13262000",
-     "13264000",
-     "13263000"
-    ],
-    "plannedFacility": [
-     "Shared"
-    ],
-    "planMatch": "centerline",
-    "planMetres": null,
-    "scope": "the record does not say",
-    "changeable": true,
-    "ask": true,
-    "daysToStart": 230,
-    "daysToEnd": 842,
+    "daysToStart": 415,
+    "daysToEnd": 854,
     "inNoticeWindow": false
    },
    {
@@ -5531,8 +5460,8 @@
     "name": "Various Locations Sewer Replacement No 36",
     "agency": "SF DPW IDC - Hydraulic",
     "phase": "Design",
-    "start": "2028-01-30",
-    "end": "2029-04-01",
+    "start": "2028-02-12",
+    "end": "2029-04-14",
     "streets": [
      "17th St",
      "Alma St",
@@ -5543,7 +5472,7 @@
     ],
     "segments": 27,
     "segmentsWithBikeway": 2,
-    "segmentsLocked": 6,
+    "segmentsLocked": 8,
     "segmentsOnPlan": 1,
     "onPlanCnns": [
      "4067000"
@@ -5556,8 +5485,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 445,
-    "daysToEnd": 872,
+    "daysToStart": 449,
+    "daysToEnd": 876,
     "inNoticeWindow": false
    },
    {
@@ -5587,8 +5516,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 248,
-    "daysToEnd": 890,
+    "daysToStart": 239,
+    "daysToEnd": 881,
     "inNoticeWindow": false
    },
    {
@@ -5621,8 +5550,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 457,
-    "daysToEnd": 896,
+    "daysToStart": 448,
+    "daysToEnd": 887,
     "inNoticeWindow": false
    },
    {
@@ -5673,8 +5602,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 457,
-    "daysToEnd": 896,
+    "daysToStart": 448,
+    "daysToEnd": 887,
     "inNoticeWindow": false
    },
    {
@@ -5719,8 +5648,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 467,
-    "daysToEnd": 906,
+    "daysToStart": 458,
+    "daysToEnd": 897,
     "inNoticeWindow": false
    },
    {
@@ -5780,8 +5709,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 470,
-    "daysToEnd": 910,
+    "daysToStart": 461,
+    "daysToEnd": 901,
     "inNoticeWindow": false
    },
    {
@@ -5809,8 +5738,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 470,
-    "daysToEnd": 910,
+    "daysToStart": 461,
+    "daysToEnd": 901,
     "inNoticeWindow": false
    },
    {
@@ -5851,8 +5780,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 568,
-    "daysToEnd": 932,
+    "daysToStart": 559,
+    "daysToEnd": 923,
     "inNoticeWindow": false
    },
    {
@@ -5889,8 +5818,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 568,
-    "daysToEnd": 932,
+    "daysToStart": 559,
+    "daysToEnd": 923,
     "inNoticeWindow": false
    },
    {
@@ -5926,8 +5855,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 266,
-    "daysToEnd": 997,
+    "daysToStart": 257,
+    "daysToEnd": 988,
     "inNoticeWindow": false
    },
    {
@@ -5961,8 +5890,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 632,
-    "daysToEnd": 997,
+    "daysToStart": 623,
+    "daysToEnd": 988,
     "inNoticeWindow": false
    },
    {
@@ -6010,8 +5939,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 584,
-    "daysToEnd": 1023,
+    "daysToStart": 575,
+    "daysToEnd": 1014,
     "inNoticeWindow": false
    },
    {
@@ -6044,8 +5973,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 1024,
+    "daysToStart": -323,
+    "daysToEnd": 1015,
     "inNoticeWindow": false
    },
    {
@@ -6082,8 +6011,51 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 488,
-    "daysToEnd": 1037,
+    "daysToStart": 479,
+    "daysToEnd": 1028,
+    "inNoticeWindow": false
+   },
+   {
+    "id": "68789",
+    "name": "Various Locations Large Diameter No 3 - 6th, Turk, Beach, Harrison Sewer Rehabilitation",
+    "agency": "SF DPW IDC - Hydraulic",
+    "phase": "Design",
+    "start": "2028-10-02",
+    "end": "2029-10-01",
+    "streets": [
+     "06th St",
+     "Bay St",
+     "Beach St",
+     "Columbia Square St",
+     "Dodge St",
+     "Error"
+    ],
+    "segments": 81,
+    "segmentsWithBikeway": 10,
+    "segmentsLocked": 25,
+    "segmentsOnPlan": 10,
+    "onPlanCnns": [
+     "5667000",
+     "5669000",
+     "5668000",
+     "5670000",
+     "5671000",
+     "12721000",
+     "12720000",
+     "12718000",
+     "12719000",
+     "12717000"
+    ],
+    "plannedFacility": [
+     "Separated"
+    ],
+    "planMatch": "centerline",
+    "planMetres": null,
+    "scope": "the record does not say",
+    "changeable": true,
+    "ask": true,
+    "daysToStart": 682,
+    "daysToEnd": 1046,
     "inNoticeWindow": false
    },
    {
@@ -6128,8 +6100,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 647,
-    "daysToEnd": 1086,
+    "daysToStart": 638,
+    "daysToEnd": 1077,
     "inNoticeWindow": false
    },
    {
@@ -6163,8 +6135,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 539,
-    "daysToEnd": 1087,
+    "daysToStart": 530,
+    "daysToEnd": 1078,
     "inNoticeWindow": false
    },
    {
@@ -6198,8 +6170,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 592,
-    "daysToEnd": 1091,
+    "daysToStart": 583,
+    "daysToEnd": 1082,
     "inNoticeWindow": false
    },
    {
@@ -6235,8 +6207,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 551,
-    "daysToEnd": 1099,
+    "daysToStart": 542,
+    "daysToEnd": 1090,
     "inNoticeWindow": false
    },
    {
@@ -6277,8 +6249,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 534,
-    "daysToEnd": 1115,
+    "daysToStart": 525,
+    "daysToEnd": 1106,
     "inNoticeWindow": false
    },
    {
@@ -6327,8 +6299,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 677,
-    "daysToEnd": 1116,
+    "daysToStart": 668,
+    "daysToEnd": 1107,
     "inNoticeWindow": false
    },
    {
@@ -6368,8 +6340,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -569,
-    "daysToEnd": 1146,
+    "daysToStart": -578,
+    "daysToEnd": 1137,
     "inNoticeWindow": false
    },
    {
@@ -6400,8 +6372,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 782,
-    "daysToEnd": 1146,
+    "daysToStart": 773,
+    "daysToEnd": 1137,
     "inNoticeWindow": false
    },
    {
@@ -6431,8 +6403,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 782,
-    "daysToEnd": 1146,
+    "daysToStart": 773,
+    "daysToEnd": 1137,
     "inNoticeWindow": false
    },
    {
@@ -6472,8 +6444,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -314,
-    "daysToEnd": 1147,
+    "daysToStart": -323,
+    "daysToEnd": 1138,
     "inNoticeWindow": false
    },
    {
@@ -6507,8 +6479,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 416,
-    "daysToEnd": 1147,
+    "daysToStart": 407,
+    "daysToEnd": 1138,
     "inNoticeWindow": false
    },
    {
@@ -6549,8 +6521,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 707,
-    "daysToEnd": 1147,
+    "daysToStart": 698,
+    "daysToEnd": 1138,
     "inNoticeWindow": false
    },
    {
@@ -6605,8 +6577,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 613,
-    "daysToEnd": 1162,
+    "daysToStart": 604,
+    "daysToEnd": 1153,
     "inNoticeWindow": false
    },
    {
@@ -6672,8 +6644,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 746,
-    "daysToEnd": 1185,
+    "daysToStart": 737,
+    "daysToEnd": 1176,
     "inNoticeWindow": false
    },
    {
@@ -6711,8 +6683,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 764,
-    "daysToEnd": 1203,
+    "daysToStart": 755,
+    "daysToEnd": 1194,
     "inNoticeWindow": false
    },
    {
@@ -6759,8 +6731,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 805,
-    "daysToEnd": 1244,
+    "daysToStart": 796,
+    "daysToEnd": 1235,
     "inNoticeWindow": false
    },
    {
@@ -6795,8 +6767,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 751,
-    "daysToEnd": 1327,
+    "daysToStart": 742,
+    "daysToEnd": 1318,
     "inNoticeWindow": false
    },
    {
@@ -6837,8 +6809,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 555,
-    "daysToEnd": 1361,
+    "daysToStart": 546,
+    "daysToEnd": 1352,
     "inNoticeWindow": false
    },
    {
@@ -6872,8 +6844,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 929,
-    "daysToEnd": 1368,
+    "daysToStart": 920,
+    "daysToEnd": 1359,
     "inNoticeWindow": false
    },
    {
@@ -6908,8 +6880,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -96,
-    "daysToEnd": 1418,
+    "daysToStart": -105,
+    "daysToEnd": 1409,
     "inNoticeWindow": false
    },
    {
@@ -6939,8 +6911,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 719,
-    "daysToEnd": 1450,
+    "daysToStart": 710,
+    "daysToEnd": 1441,
     "inNoticeWindow": false
    },
    {
@@ -6982,8 +6954,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 689,
-    "daysToEnd": 1450,
+    "daysToStart": 680,
+    "daysToEnd": 1441,
     "inNoticeWindow": false
    },
    {
@@ -7016,8 +6988,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1025,
-    "daysToEnd": 1464,
+    "daysToStart": 1016,
+    "daysToEnd": 1455,
     "inNoticeWindow": false
    },
    {
@@ -7048,8 +7020,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 994,
-    "daysToEnd": 1509,
+    "daysToStart": 985,
+    "daysToEnd": 1500,
     "inNoticeWindow": false
    },
    {
@@ -7235,8 +7207,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -2393,
-    "daysToEnd": 1511,
+    "daysToStart": -2402,
+    "daysToEnd": 1502,
     "inNoticeWindow": false
    },
    {
@@ -7267,8 +7239,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1147,
-    "daysToEnd": 1511,
+    "daysToStart": 1138,
+    "daysToEnd": 1502,
     "inNoticeWindow": false
    },
    {
@@ -7316,8 +7288,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 902,
-    "daysToEnd": 1514,
+    "daysToStart": 893,
+    "daysToEnd": 1505,
     "inNoticeWindow": false
    },
    {
@@ -7380,8 +7352,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1144,
-    "daysToEnd": 1583,
+    "daysToStart": 1135,
+    "daysToEnd": 1574,
     "inNoticeWindow": false
    },
    {
@@ -7430,8 +7402,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 379,
-    "daysToEnd": 1618,
+    "daysToStart": 370,
+    "daysToEnd": 1609,
     "inNoticeWindow": false
    },
    {
@@ -7462,8 +7434,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 52,
-    "daysToEnd": 1692,
+    "daysToStart": 43,
+    "daysToEnd": 1683,
     "inNoticeWindow": true
    },
    {
@@ -7507,8 +7479,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 110,
-    "daysToEnd": 1847,
+    "daysToStart": 101,
+    "daysToEnd": 1838,
     "inNoticeWindow": true
    },
    {
@@ -7540,8 +7512,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 782,
-    "daysToEnd": 1876,
+    "daysToStart": 773,
+    "daysToEnd": 1867,
     "inNoticeWindow": false
    },
    {
@@ -7575,8 +7547,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -345,
-    "daysToEnd": 1877,
+    "daysToStart": -354,
+    "daysToEnd": 1868,
     "inNoticeWindow": false
    },
    {
@@ -7611,8 +7583,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 690,
-    "daysToEnd": 1877,
+    "daysToStart": 681,
+    "daysToEnd": 1868,
     "inNoticeWindow": false
    },
    {
@@ -7646,8 +7618,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1449,
-    "daysToEnd": 1888,
+    "daysToStart": 1440,
+    "daysToEnd": 1879,
     "inNoticeWindow": false
    },
    {
@@ -7678,8 +7650,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1178,
-    "daysToEnd": 1966,
+    "daysToStart": 1169,
+    "daysToEnd": 1957,
     "inNoticeWindow": false
    },
    {
@@ -7714,8 +7686,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1543,
-    "daysToEnd": 1982,
+    "daysToStart": 1534,
+    "daysToEnd": 1973,
     "inNoticeWindow": false
    },
    {
@@ -7746,8 +7718,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1237,
-    "daysToEnd": 1997,
+    "daysToStart": 1228,
+    "daysToEnd": 1988,
     "inNoticeWindow": false
    },
    {
@@ -7782,8 +7754,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1795,
-    "daysToEnd": 2234,
+    "daysToStart": 1786,
+    "daysToEnd": 2225,
     "inNoticeWindow": false
    },
    {
@@ -7815,8 +7787,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1514,
-    "daysToEnd": 2242,
+    "daysToStart": 1505,
+    "daysToEnd": 2233,
     "inNoticeWindow": false
    },
    {
@@ -7854,8 +7826,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1874,
-    "daysToEnd": 2313,
+    "daysToStart": 1865,
+    "daysToEnd": 2304,
     "inNoticeWindow": false
    },
    {
@@ -7885,8 +7857,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1875,
-    "daysToEnd": 2314,
+    "daysToStart": 1866,
+    "daysToEnd": 2305,
     "inNoticeWindow": false
    },
    {
@@ -7904,7 +7876,7 @@
      "24th Ave",
      "25th Ave"
     ],
-    "segments": 63,
+    "segments": 62,
     "segmentsWithBikeway": 0,
     "segmentsLocked": 0,
     "segmentsOnPlan": 2,
@@ -7920,8 +7892,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2056,
-    "daysToEnd": 2496,
+    "daysToStart": 2047,
+    "daysToEnd": 2487,
     "inNoticeWindow": false
    },
    {
@@ -7983,8 +7955,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2118,
-    "daysToEnd": 2558,
+    "daysToStart": 2109,
+    "daysToEnd": 2549,
     "inNoticeWindow": false
    },
    {
@@ -8017,8 +7989,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2178,
-    "daysToEnd": 2618,
+    "daysToStart": 2169,
+    "daysToEnd": 2609,
     "inNoticeWindow": false
    },
    {
@@ -8065,8 +8037,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2239,
-    "daysToEnd": 2679,
+    "daysToStart": 2230,
+    "daysToEnd": 2670,
     "inNoticeWindow": false
    },
    {
@@ -8110,8 +8082,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2484,
-    "daysToEnd": 2924,
+    "daysToStart": 2475,
+    "daysToEnd": 2915,
     "inNoticeWindow": false
    },
    {
@@ -8129,12 +8101,11 @@
      "Beach St",
      "Broderick St"
     ],
-    "segments": 53,
-    "segmentsWithBikeway": 10,
+    "segments": 52,
+    "segmentsWithBikeway": 9,
     "segmentsLocked": 0,
-    "segmentsOnPlan": 19,
+    "segmentsOnPlan": 18,
     "onPlanCnns": [
-     "3873000",
      "6514000",
      "7987000",
      "8705101",
@@ -8166,8 +8137,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2515,
-    "daysToEnd": 2955,
+    "daysToStart": 2506,
+    "daysToEnd": 2946,
     "inNoticeWindow": false
    },
    {
@@ -8207,8 +8178,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2543,
-    "daysToEnd": 2983,
+    "daysToStart": 2534,
+    "daysToEnd": 2974,
     "inNoticeWindow": false
    },
    {
@@ -8248,8 +8219,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2635,
-    "daysToEnd": 3075,
+    "daysToStart": 2626,
+    "daysToEnd": 3066,
     "inNoticeWindow": false
    },
    {
@@ -8288,8 +8259,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2666,
-    "daysToEnd": 3106,
+    "daysToStart": 2657,
+    "daysToEnd": 3097,
     "inNoticeWindow": false
    },
    {
@@ -8329,8 +8300,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2807,
-    "daysToEnd": 3246,
+    "daysToStart": 2798,
+    "daysToEnd": 3237,
     "inNoticeWindow": false
    },
    {
@@ -8366,8 +8337,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 3005,
-    "daysToEnd": 3444,
+    "daysToStart": 2996,
+    "daysToEnd": 3435,
     "inNoticeWindow": false
    },
    {
@@ -8430,46 +8401,46 @@
  "overlapSensitivity": [
   {
    "minOverlap": 0,
-   "segments": 145,
-   "shortfall": 76,
-   "shortfallPct": 52
+   "segments": 157,
+   "shortfall": 80,
+   "shortfallPct": 51
   },
   {
    "minOverlap": 0.6,
-   "segments": 145,
-   "shortfall": 76,
-   "shortfallPct": 52
+   "segments": 157,
+   "shortfall": 80,
+   "shortfallPct": 51
   },
   {
    "minOverlap": 0.7,
-   "segments": 144,
-   "shortfall": 75,
-   "shortfallPct": 52
+   "segments": 156,
+   "shortfall": 79,
+   "shortfallPct": 51
   },
   {
    "minOverlap": 0.8,
-   "segments": 144,
-   "shortfall": 75,
-   "shortfallPct": 52
+   "segments": 156,
+   "shortfall": 79,
+   "shortfallPct": 51
   },
   {
    "minOverlap": 0.9,
-   "segments": 143,
-   "shortfall": 74,
-   "shortfallPct": 52
+   "segments": 155,
+   "shortfall": 78,
+   "shortfallPct": 50
   },
   {
    "minOverlap": 1,
-   "segments": 143,
-   "shortfall": 74,
-   "shortfallPct": 52
+   "segments": 155,
+   "shortfall": 78,
+   "shortfallPct": 50
   }
  ],
  "byClass": [
   {
    "facility": "Separated",
-   "segments": 76,
-   "metres": 15768,
+   "segments": 83,
+   "metres": 16546,
    "shortfall": 32,
    "states": [
     {
@@ -8489,23 +8460,23 @@
     {
      "state": "meets",
      "label": "Separated lane or path",
-     "segments": 44,
-     "metres": 10217,
+     "segments": 51,
+     "metres": 10995,
      "meets": true
     }
    ]
   },
   {
    "facility": "Shared",
-   "segments": 65,
-   "metres": 10939,
-   "shortfall": 41,
+   "segments": 70,
+   "metres": 11856,
+   "shortfall": 45,
    "states": [
     {
      "state": "none",
      "label": "Nothing",
-     "segments": 28,
-     "metres": 4289,
+     "segments": 32,
+     "metres": 4913,
      "meets": false
     },
     {
@@ -8518,8 +8489,8 @@
     {
      "state": "meets",
      "label": "Painted lane or better",
-     "segments": 24,
-     "metres": 4260,
+     "segments": 25,
+     "metres": 4553,
      "meets": true
     }
    ]
@@ -8555,10 +8526,10 @@
   }
  ],
  "calming": {
-  "sharedSegments": 68,
+  "sharedSegments": 73,
   "onSlowStreet": 6,
   "calmingOnly": 6,
-  "neither": 56,
+  "neither": 61,
   "slowStreetsAsOf": "2023-09-20",
   "calmingAsOf": "2026-05-23"
  },
@@ -8609,6 +8580,157 @@
    "planUpgrade": true,
    "scope": "unknown",
    "agencies": []
+  },
+  {
+   "cnn": "406000",
+   "street": "08TH ST",
+   "limits": "MISSION ST to MINNA ST (100 - 141)",
+   "repaved": "2026-11-16",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    2003
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 68,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "407000",
+   "street": "08TH ST",
+   "limits": "MINNA ST to NATOMA ST (138 - 179)",
+   "repaved": "2026-11-16",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    2003
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 57,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "408000",
+   "street": "08TH ST",
+   "limits": "NATOMA ST to HOWARD ST (172 - 199)",
+   "repaved": "2026-11-16",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    2003
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 69,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways",
+    "SF MTA SS - Livable Streets"
+   ]
+  },
+  {
+   "cnn": "409000",
+   "street": "08TH ST",
+   "limits": "HOWARD ST to TEHAMA ST (200 - 231)",
+   "repaved": "2026-11-16",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    2001
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 67,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "410000",
+   "street": "08TH ST",
+   "limits": "TEHAMA ST to CLEMENTINA ST (230 - 265)",
+   "repaved": "2026-11-16",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    2006
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 57,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "411000",
+   "street": "08TH ST",
+   "limits": "CLEMENTINA ST to FOLSOM ST (262 - 299)",
+   "repaved": "2026-11-16",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    1999
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 68,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
   },
   {
    "cnn": "1629000",
@@ -8758,6 +8880,28 @@
    "grade": "short",
    "planNew": true,
    "planUpgrade": false,
+   "scope": "unknown",
+   "agencies": []
+  },
+  {
+   "cnn": "2863000",
+   "street": "BEALE ST",
+   "limits": "DAVIS ST \\ MARKET ST \\ PINE ST to MISSION ST (1 - 99)",
+   "repaved": "2026-11-03",
+   "wants": "Separated",
+   "has": [
+    "separated lane"
+   ],
+   "installedYears": [
+    2020
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 392,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": true,
    "scope": "unknown",
    "agencies": []
   },
@@ -9087,6 +9231,48 @@
    "reportedBy": null,
    "overlapShare": 1,
    "lengthM": 463,
+   "status": "unrated",
+   "grade": "unrated",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "4067000",
+   "street": "CLARENDON AVE",
+   "limits": "BIGLER AVE \\ TWIN PEAKS BLVD to STANYAN ST (1 - 113)",
+   "repaved": "2026-11-02",
+   "wants": "Undecided",
+   "has": [],
+   "installedYears": [],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 511,
+   "status": "unrated",
+   "grade": "unrated",
+   "planNew": false,
+   "planUpgrade": false,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "4068000",
+   "street": "CLARENDON AVE",
+   "limits": "STANYAN ST to JOHNSTONE DR (100 - 150)",
+   "repaved": "2026-11-02",
+   "wants": "Undecided",
+   "has": [],
+   "installedYears": [],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 293,
    "status": "unrated",
    "grade": "unrated",
    "planNew": false,
@@ -9572,8 +9758,10 @@
    "grade": "received",
    "planNew": false,
    "planUpgrade": true,
-   "scope": "unknown",
-   "agencies": []
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic"
+   ]
   },
   {
    "cnn": "5668000",
@@ -9594,8 +9782,10 @@
    "grade": "received",
    "planNew": false,
    "planUpgrade": true,
-   "scope": "unknown",
-   "agencies": []
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic"
+   ]
   },
   {
    "cnn": "5669000",
@@ -9616,8 +9806,10 @@
    "grade": "already",
    "planNew": false,
    "planUpgrade": true,
-   "scope": "unknown",
-   "agencies": []
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic"
+   ]
   },
   {
    "cnn": "5670000",
@@ -9638,8 +9830,10 @@
    "grade": "already",
    "planNew": false,
    "planUpgrade": true,
-   "scope": "unknown",
-   "agencies": []
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic"
+   ]
   },
   {
    "cnn": "5671000",
@@ -9660,8 +9854,10 @@
    "grade": "already",
    "planNew": false,
    "planUpgrade": true,
-   "scope": "unknown",
-   "agencies": []
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic"
+   ]
   },
   {
    "cnn": "5672000",
@@ -9794,6 +9990,31 @@
    "planUpgrade": true,
    "scope": "unknown",
    "agencies": []
+  },
+  {
+   "cnn": "5773000",
+   "street": "FRANCISCO ST",
+   "limits": "GOUGH ST to OCTAVIA ST (1400 - 1499)",
+   "repaved": "2026-11-06",
+   "wants": "Shared",
+   "has": [
+    "sharrow",
+    "painted lane"
+   ],
+   "installedYears": [
+    2000
+   ],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 293,
+   "status": "meets",
+   "grade": "already",
+   "planNew": false,
+   "planUpgrade": true,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Streets & Highways"
+   ]
   },
   {
    "cnn": "6199000",
@@ -11597,6 +11818,90 @@
    "planUpgrade": true,
    "scope": "unknown",
    "agencies": []
+  },
+  {
+   "cnn": "12759000",
+   "street": "TWIN PEAKS BLVD",
+   "limits": "CARMEL ST \\ CLAYTON ST to VILLA TER (1 - 59)",
+   "repaved": "2026-11-02",
+   "wants": "Shared",
+   "has": [],
+   "installedYears": [],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 210,
+   "status": "none",
+   "grade": "short",
+   "planNew": false,
+   "planUpgrade": true,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "12760000",
+   "street": "TWIN PEAKS BLVD",
+   "limits": "VILLA TER to GRAYSTONE TER (60 - 149)",
+   "repaved": "2026-11-02",
+   "wants": "Shared",
+   "has": [],
+   "installedYears": [],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 195,
+   "status": "none",
+   "grade": "short",
+   "planNew": false,
+   "planUpgrade": true,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "12761000",
+   "street": "TWIN PEAKS BLVD",
+   "limits": "GRAYSTONE TER to CROWN TER (150 - 179)",
+   "repaved": "2026-11-02",
+   "wants": "Shared",
+   "has": [],
+   "installedYears": [],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 138,
+   "status": "none",
+   "grade": "short",
+   "planNew": false,
+   "planUpgrade": true,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
+  },
+  {
+   "cnn": "12762000",
+   "street": "TWIN PEAKS BLVD",
+   "limits": "CROWN TER to BIGLER AVE \\ CLARENDON AVE (180 - 199)",
+   "repaved": "2026-11-02",
+   "wants": "Shared",
+   "has": [],
+   "installedYears": [],
+   "reportedBy": null,
+   "overlapShare": 1,
+   "lengthM": 81,
+   "status": "none",
+   "grade": "short",
+   "planNew": false,
+   "planUpgrade": true,
+   "scope": "documented-no-bike",
+   "agencies": [
+    "SF DPW IDC - Hydraulic",
+    "SF DPW IDC - Streets & Highways"
+   ]
   },
   {
    "cnn": "12881000",

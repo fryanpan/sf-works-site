@@ -20,8 +20,10 @@ keep the point the map draws them at, so their cards are the same bytes tools/st
 
 INCREMENTAL FETCH (--update). For each table the script asks DataSF for rowsUpdatedAt, to the second. When it has not
 moved since the last check (data/pipeline-state/sources.json, "cards:<id>"), nothing is read. When it has, this year's
-and last year's queries are re-read (the crash tables are revised for months after a crash), and an older year's query
-is re-read only when it was last re-read over 90 days ago: that is the bound for revisions to old years. A re-read goes to a
+and last year's queries are re-read (the crash tables are revised for months after a crash), and so is every year from
+2022, the years of the map's carded people (MAP_FROM), so a card moves on the same run as the map's own reads of
+those cases (tools/street-safety/street-safety-crashes.py). An older year's query is re-read only when it was last re-read over
+90 days ago: that is the bound for revisions to old years. A re-read goes to a
 staging folder first; only when the checks below pass does it replace the held copy. A re-read that fails (no answer,
 or fewer rows than the floor) keeps the held copy, records the table as failed and goes on, so the build runs on the
 last good reads. A re-read with the same rows keeps the held copy and its date, so nothing downstream moves.
@@ -112,6 +114,10 @@ MAX_UNJOINED = 0.005
 MIN_PLACED = 0.97
 REREAD_RECENT = 2      # this year and last year are re-read on every change
 OLD_MAX_AGE = 90       # an older year's read is re-read on a change once it is this many days old
+# The years the map's carded people come from (hin_crash_cards.SINCE, 2022 on): re-read on every change, as
+# tools/street-safety/street-safety-crashes.py re-reads the map's own reads of them, so a new or reclassified case reaches the
+# map and its card on the same run.
+MAP_FROM = 2022
 
 
 def where_year(y):
@@ -150,7 +156,8 @@ def read_tables(update, today, checked):
             kw = dict(select=select, where=where_year(y), floor=floor_for(name, y, today))
             held = sfdata.fetch(fxf, cache_dir=CACHE, max_age_days=10 ** 6, **kw) if _held(fxf, kw) else None
             last = dt.date.fromisoformat(checked.get("%s/%d" % (fxf, y)) or (held.fetched_on.isoformat() if held else "2000-01-01"))
-            reread = held is None or (changed and (y > today.year - REREAD_RECENT or (today - last).days > OLD_MAX_AGE))
+            reread = held is None or (changed and (y > today.year - REREAD_RECENT or y >= MAP_FROM
+                                                   or (today - last).days > OLD_MAX_AGE))
             if not reread:
                 out[name][y] = held
                 continue

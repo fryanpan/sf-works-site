@@ -26,19 +26,26 @@ together (tph), and the most of any one route (route_tph). A headway is
 Stops are GTFS stops: one per side of the street, so each direction is its
 own stop, as SFMTA's stop list counts them.
 
-REPRODUCED. SFMTA's route pages list weekday service frequency by Morning,
-Midday and Evening, undated (read 2026-10-23). The `published` block
-recomputes a route's headway at a named stop from the feed, in the more
-frequent direction, against SFMTA's figure. The 1 California's midday, every
-10 minutes west of Presidio Avenue and every 5 east of it
-(sfmta.com/routes/1-california), is the reproduction, and a check fails if
-the feed is more than PUBLISHED_TOL_MIN off. Three more rows are printed and
-kept for comparison only, because they do not match: the 14R's morning (6
-north of Mission & Lowell, 10 south, against the feed's 5 inbound at both, 10
-outbound) and the 22 Fillmore's morning (7, against 5.7). SFMTA's pages are
-undated and may predate the August 2026 signup, and their periods are not
-defined; their Evening is not SFMTA's 2010 8 to 10 p.m. (the 1 is every 5 east
-of Presidio on the page, every 11 to 12 in the feed 8 to 10 p.m.).
+REPRODUCED. The `published` block recomputes a route's headway at a named
+stop from the feed, in the more frequent direction, against a figure SFMTA
+publishes, and a check fails if the feed is more than PUBLISHED_TOL_MIN off.
+The reproduction is the 1 California's midday against SFMTA's notice of the
+29 August 2026 service change, "Project Update: More Frequent 1 California
+Service" (read 2026-11-21): buses "every nine minutes instead of every ten
+minutes", and "Between Presidio Avenue and downtown, buses are expected to
+arrive every four to five minutes", taken as 4.5, so the tolerance accepts 4
+to 5. The notice names no period; the feed runs those headways every hour
+from 7 a.m. to 7 p.m.
+
+SFMTA's route pages list weekday service frequency by Morning, Midday and
+Evening, undated, and are printed for comparison only. The 1's page still
+says 10 west of Presidio and 5 east of it (read 2026-11-21), the pre-August
+schedule the feed ran until 28 August 2026. The 14R's morning (6 north of
+Mission & Lowell, 10 south, against the feed's 5 inbound at both, 10
+outbound) and the 22 Fillmore's morning (7) do not match either. The route
+pages' periods are not defined; their Evening is not SFMTA's 2010 8 to 10
+p.m. (the 1 is every 5 east of Presidio on the page, every 11 to 12 in the
+feed 8 to 10 p.m.).
 
 A STALE FEED WARNS, IT DOES NOT FAIL. SFMTA kept serving the feed whose
 calendar ends 2026-08-28 into October 2026 (Fable review, 2026-10-23), so a
@@ -76,12 +83,22 @@ PERIODS = {"am": (7 * 60, 9 * 60), "midday": (10 * 60, 14 * 60), "evening": (20 
 PERIODS_SOURCE = ("SFMTA, Service Modification Proposals as of Feb. 26, 2010, table notes: \"Time Periods are "
                   "generally: AM - 7 to 9 a.m.; Midday - 10 a.m. to 2 p.m.; PM - 4 to 6 p.m.; Evening - 8 to 10 p.m.\" "
                   "https://archives.sfmta.com/cms/rbudgjan2010/documents/Service_Mod_Details_2-23-2010forpdf.pdf")
-# SFMTA's route pages, read 2026-10-23 (see REPRODUCED). check: the reproduction, which fails the build if off.
+# SFMTA's figures (see REPRODUCED). check: the reproduction, which fails the build if off. The 1's two
+# checked rows are SFMTA's August 2026 service change notice, read 2026-11-21; the rest are route pages,
+# comparison only (the 1's read 2026-11-21, the 14R's and 22's 2026-10-23).
+ONE_CALIFORNIA_2026 = "https://www.sfmta.com/project-updates/project-update-more-frequent-1-california-service"
 PUBLISHED = [
-    {"route": "1", "stopName": "California St & 6th Ave", "period": "midday", "headwayMin": 10, "check": True,
-     "where": "west of Presidio Avenue", "source": "https://www.sfmta.com/routes/1-california"},
-    {"route": "1", "stopName": "Sacramento St & Fillmore St", "period": "midday", "headwayMin": 5, "check": True,
-     "where": "east of Presidio Avenue", "source": "https://www.sfmta.com/routes/1-california"},
+    {"route": "1", "stopName": "California St & 6th Ave", "period": "midday", "headwayMin": 9, "check": True,
+     "where": "whole route, from 29 Aug 2026", "source": ONE_CALIFORNIA_2026},
+    {"route": "1", "stopName": "Sacramento St & Fillmore St", "period": "midday", "headwayMin": 4.5, "check": True,
+     "where": "between Presidio Avenue and downtown, from 29 Aug 2026 (\"every four to five minutes\")",
+     "source": ONE_CALIFORNIA_2026},
+    {"route": "1", "stopName": "California St & 6th Ave", "period": "midday", "headwayMin": 10, "check": False,
+     "where": "west of Presidio Avenue (route page, pre-August schedule)",
+     "source": "https://www.sfmta.com/routes/1-california"},
+    {"route": "1", "stopName": "Sacramento St & Fillmore St", "period": "midday", "headwayMin": 5, "check": False,
+     "where": "east of Presidio Avenue (route page, pre-August schedule)",
+     "source": "https://www.sfmta.com/routes/1-california"},
     {"route": "14R", "stopName": "Mission St & 16th St", "period": "am", "headwayMin": 6, "check": False,
      "where": "north of Mission & Lowell (short route)", "source": "https://www.sfmta.com/routes/14r-mission-rapid"},
     {"route": "14R", "stopName": "Mission St & Geneva Ave", "period": "am", "headwayMin": 10, "check": False,
@@ -207,7 +224,8 @@ def checks(root=ROOT):
         Each("muni-stops/in-sf", stops, in_sf, "every stop inside San Francisco's bounding box"),
         Each("muni-stops/tph", stops, sane, "0 <= busiest route's tph <= the stop's tph <= 200"),
         Each("muni-stops/published", published, matches,
-             "the 1 California's midday headway within %g minute of SFMTA's route page" % PUBLISHED_TOL_MIN),
+             "the 1 California's midday headway within %g minute of SFMTA's August 2026 service change notice"
+             % PUBLISHED_TOL_MIN),
     ]
 
 

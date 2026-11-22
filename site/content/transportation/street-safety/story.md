@@ -39,19 +39,19 @@ These details matter because they guide which solutions to use. A high-speed DUI
 ## Prototyping A Better Street Safety Map
 
 <MapStory map="street-safety">
-<MapStep state={{"view": "injuries", "hin": ["2024"]}}>
+<MapStep state={{"view": "injuries", "hin": ["2024"], "filter": {"years": [2021, 2026]}}}>
 
 To address this problem, we built a prototype street safety map that tries to better answer the questions above. It’s based on public data only.
 
 Here were some of the key design goals while building this map:
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": ["2024"], "camera": {"center": [-122.4135, 37.7838], "zoom": 16.4}}}>
+<MapStep state={{"view": "injuries", "hin": ["2024"], "camera": {"center": [-122.4135, 37.7838], "zoom": 16.4}, "filter": {"years": [2021, 2026]}}}>
 
 1. **Center individual people.** This is a map where every person injured and each person who died on our streets is represented when you zoom in. Key details from the police report and related news articles help understand how they got hurt or died. You always have access to the details.
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": ["2024"], "chart": {"id": "by-cause"}}}>
+<MapStep state={{"view": "injuries", "hin": ["2024"], "chart": {"id": "by-cause"}, "filter": {"years": [2021, 2026]}}}>
 
 2. **Identify top problems from multiple angles.** The map also helps you look at the data from different directions to try and ask the questions above, and see where they help you find types of safety problems that happen often.
 
@@ -76,27 +76,27 @@ So here we go…
 ### HIN Leads to Too Much Focus on (Worst) Segments
 
 <MapStory map="street-safety">
-<MapStep state={{"view": "injuries", "hin": ["groups"], "filter": {"hinGroup": [1]}, "chart": {"id": "by-hin-group"}}}>
+<MapStep state={{"view": "injuries", "hin": ["groups"], "filter": {"hinGroup": [1], "years": [2021, 2026]}, "chart": {"id": "by-hin-group"}}}>
 
 In the SFCTA Board Meeting on November 17, 2026, supervisor Dorsey asked about the "8.8 miles of streets in which 40 plus people have been killed or severely injured (KSI) over the last four years." These are the highest injury segments from the 2024 HIN. Supervisor Fielder wanted to know if any of these 8.8 miles overlapped District 9. SFMTA said "I don't know off the top of my head," but had told Dorsey that of the "400 plus intersections" it has identified on the HIN, "where it's more dangerous is where we're going to go first." ([SFGovTV captions, 1:20:56 and 2:06:21](https://sanfrancisco.granicus.com/MediaPlayer.php?view_id=24&clip_id=53601))
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "worst": 2020, "chart": {"id": "worst-overlap"}}}>
+<MapStep state={{"view": "injuries", "hin": [], "worst": 2020, "chart": {"id": "worst-overlap"}, "filter": {"years": [2021, 2026]}}}>
 
 The worst segments are a moving target.
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "worst": 2024, "chart": {"id": "worst-overlap"}}}>
+<MapStep state={{"view": "injuries", "hin": [], "worst": 2024, "chart": {"id": "worst-overlap"}, "filter": {"years": [2021, 2026]}}}>
 
 They change every year due to reversion to the mean.
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": ["groups"], "chart": {"id": "by-hin-group"}}}>
+<MapStep state={{"view": "injuries", "hin": ["groups"], "chart": {"id": "by-hin-group"}, "filter": {"years": [2021, 2026]}}}>
 
 Many other segments are about as bad over the long term.
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": ["groups"], "filter": {"hinGroup": [1]}, "chart": {"id": "by-hin-group"}}}>
+<MapStep state={{"view": "injuries", "hin": ["groups"], "filter": {"hinGroup": [1], "years": [2021, 2026]}, "chart": {"id": "by-hin-group"}}}>
 
 Plus, the worst 8.8 miles of streets only accounted for 14% of KSI from 2021 to August 2026 ([DataSF nwes-mmgh](https://data.sfgov.org/d/nwes-mmgh)).
 
@@ -114,42 +114,42 @@ When we look at only street segments, we miss why crashes happened. This leads u
 All observations below are based on KSI from 2021 to August 2026.
 
 <MapStory map="street-safety">
-<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["unsafe-speed"], "severity": "pain"}, "chart": {"id": "by-cause", "top": true}}}>
+<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["unsafe-speed"], "severity": "pain", "years": [2021, 2026]}, "chart": {"id": "by-cause", "top": true}}}>
 
 #### Unsafe Speed
 
 Of the top-level police categories, unsafe speed accounts for the most injuries, about 1 in 5, and is one of the top causes of death ([DataSF nwes-mmgh](https://data.sfgov.org/d/nwes-mmgh), 2021 to August 2026).
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["unsafe-speed"]}, "chart": {"id": "by-cause", "top": true}}}>
+<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["unsafe-speed"], "years": [2021, 2026]}, "chart": {"id": "by-cause", "top": true}}}>
 
 Some of the tools we already use are effective at reducing speed (e.g., lower speed limits, speed cameras, road diets).
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["pedestrian-violation"]}, "chart": {"id": "by-cause", "top": true}}}>
+<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["pedestrian-violation"], "years": [2021, 2026]}, "chart": {"id": "by-cause", "top": true}}}>
 
 #### Pedestrian Violations
 
 Pedestrian violations accounted for 22% of deaths and 13% of KSI ([DataSF nwes-mmgh](https://data.sfgov.org/d/nwes-mmgh), 2021 to August 2026). This includes cases such as a pedestrian walking into moving traffic in the mid-block or in a crosswalk while the "no crossing” light was up.
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["red-light"]}, "chart": {"id": "by-cause", "top": true}}}>
+<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["red-light"], "years": [2021, 2026]}, "chart": {"id": "by-cause", "top": true}}}>
 
 #### Running Red Lights
 
 About 12% of KSI came from vehicles running red lights ([DataSF nwes-mmgh](https://data.sfgov.org/d/nwes-mmgh), 2021 to August 2026). Red light cameras help with this, but our current fleet of cameras at 18 intersections only covers 4% (7 of 165) of the intersections with a severe or fatal red light violation injury ([SFMTA](https://www.sfmta.com/RedLight), [DataSF uzmr-g2uc](https://data.sfgov.org/d/uzmr-g2uc)).
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "filter": {"time": ["night"], "other": ["none"], "severity": "killed"}, "chart": {"id": "by-cause"}}}>
+<MapStep state={{"view": "injuries", "hin": [], "filter": {"cause": ["dui"], "severity": "killed", "years": [2021, 2026]}, "chart": {"id": "by-cause", "top": true}}}>
 
-#### Late Night DUI
+#### DUI
 
-8% of the deaths on streets from 2021 to August 2026 (14 of 178) came from late-night crashes with only one vehicle involved. Police recorded drinking or DUI in only 2 of the 14, and marked impairment "not known" in 12 ([DataSF nwes-mmgh](https://data.sfgov.org/d/nwes-mmgh) and [8gtc-pjc6](https://data.sfgov.org/d/8gtc-pjc6)).
+Police named driving under the influence of alcohol or drugs as the main cause of 8% of the deaths on streets from 2021 to August 2026 (14 of 178), at any hour. That's how the city counts it too ([Vision Zero 2024 End of Year Report](https://archivesystemprodsa.blob.core.windows.net/website-archive/visionzerosf-org/wp-content/uploads/2025/08/Vision-Zero-2024-End-of-Year-Traffic-Fatality-Report.pdf), Appendix C). It's likely higher, since police marked impairment "not known" for 12 of the 14 people killed late at night in crashes with only one vehicle ([DataSF nwes-mmgh](https://data.sfgov.org/d/nwes-mmgh) and [8gtc-pjc6](https://data.sfgov.org/d/8gtc-pjc6)).
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": [], "filter": {"time": ["night"]}, "chart": {"id": "by-time"}}}>
+<MapStep state={{"view": "injuries", "hin": [], "filter": {"time": ["night"], "years": [2021, 2026]}, "chart": {"id": "by-time"}}}>
 
-All late-night crashes, 10 pm to 4 am, led to more deaths (57 to 25) and more KSI (372 to 239) than the 8.8 miles of worst segments over the same years.
+All late-night crashes, 10 pm to 4 am, led to more deaths (57 to 24) and more KSI (372 to 239) than the 8.8 miles of worst segments over the same years.
 
 <p><small>The map's Night filter runs 10 pm to 6 am, so it shows more deaths and injuries than the 10 pm to 4 am figures here.</small></p>
 
@@ -193,12 +193,12 @@ I’m not sure yet how to address this with the data I have.
 ### HIN Misses Broader Safety Issues People Care About
 
 <MapStory map="street-safety">
-<MapStep state={{"view": "injuries", "hin": ["2024"], "color": "hin", "chart": {"id": "by-hin"}}}>
+<MapStep state={{"view": "injuries", "hin": ["2024"], "color": "hin", "chart": {"id": "by-hin"}, "filter": {"years": [2021, 2026]}}}>
 
 Looking at only KSI misses all of the places people feel unsafe on the street.
 
 </MapStep>
-<MapStep state={{"view": "injuries", "hin": ["2024"], "filter": {"hin": "off"}, "chart": {"id": "by-hin"}}}>
+<MapStep state={{"view": "injuries", "hin": ["2024"], "filter": {"hin": "off", "years": [2021, 2026]}, "chart": {"id": "by-hin"}}}>
 
 First, about 1/3 of all injuries and 1/4 of severe injuries and deaths happen off of the HIN ([SFMTA](https://www.sfmta.com/blog/new-high-injury-network-map-helps-guide-us-safer-city) puts 74% of severe and fatal injuries on it; [police reports, 2021 to August 2026](https://data.sfgov.org/d/nwes-mmgh)).
 

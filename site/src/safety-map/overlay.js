@@ -72,11 +72,15 @@
       if (!w || !w.ready) return "Loading where the traffic" + where + " comes from…";
       var name = a.hood ? esc(a.hood) : a.district ? "District " + a.district : "this area";
       if (!w.hood) return "<b>" + n0(w.total) + "</b> car crossings a weekday " + (s.ends === "from" ? "into " + name : s.ends === "to" ? "out of " + name : "into or out of " + name) +
-        '. <span class="sm-na">A cordon count over the ' + n0(w.links) + " links onto or off the streets inside the edge you drew: a car counts each time it crosses.</span>";
+        '. <span class="sm-na">A cordon count over the ' + n0(w.links) + " links onto or off the streets inside the edge you drew: a car counts each time it crosses, so it can't show through cars alone.</span>";
       // The share leads (Bryan, 2026-11-20: "I want us to think about fractions"), with the
       // count it is a share of as the one other figure.
       // Both counts each car at both of its ends, so its share is of trip ends, the base the bars and bubbles use.
       // A phone gets one short line.
+      // Passing through: the through cars as a share of every car on the area's streets.
+      // The one other figure is the through cars themselves, the base the bars' and bubbles' shares are of.
+      if (w.thru) return ctl.narrow && ctl.narrow() ? "<b>" + Math.round(100 * w.lead) + "%</b> pass through: " + n2(w.thr) + " cars a weekday" :
+        "<b>" + Math.round(100 * w.lead) + "%</b> of the cars on " + name + "'s streets pass through it: " + n2(w.thr) + " a weekday";
       if (ctl.narrow && ctl.narrow()) return "<b>" + Math.round(100 * w.lead) + "%</b> of " + n2(w.users) + " cars " + (s.ends === "from" ? "start outside" : s.ends === "to" ? "end outside" : "trip ends are outside");
       if (s.ends === "both") return "<b>" + Math.round(100 * w.lead) + "%</b> of the trip ends of the " + n2(w.users) + " cars a weekday on " + name + "'s streets are outside it";
       return "<b>" + Math.round(100 * w.lead) + "%</b> of the " + n2(w.users) + " cars a weekday on " + name + "'s streets " + (s.ends === "from" ? "start outside it" : "end outside it");
@@ -197,6 +201,10 @@
       // A bar's name runs the box's width, then ends in an ellipsis (Plot's lineWidth is in ems of the 11 px text).
       var lab = props.marks && props.marks[1] && props.marks[1].options;
       if (lab && lab.lineWidth) { props = JSON.parse(JSON.stringify(props)); props.marks[1].options.lineWidth = Math.max(10, (box.clientWidth - 30) / 11); }
+      // Margins wider than a narrow box (a phone) would leave the bars a negative width, which the browser refuses
+      // ("<rect> attribute width: A negative value"): shrink both margins so the bars keep at least 40 px.
+      var po = props.options || {}, room = box.querySelector(".sm-chart-slot").clientWidth - 40, ml = po.marginLeft || 0, mr = po.marginRight || 0;
+      if (room > 0 && ml + mr > room) { var k = room / (ml + mr); props = JSON.parse(JSON.stringify(props)); props.options.marginLeft = Math.floor(ml * k); props.options.marginRight = Math.floor(mr * k); }
       var key = JSON.stringify(props);
       if (key === lastChart) return;
       lastChart = key;

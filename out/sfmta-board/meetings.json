@@ -1,8 +1,15 @@
 {
- "generated": "2026-11-10",
+ "generated": "2026-11-19",
  "view": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=55",
  "since": "2019-01-01",
  "meetings": [
+  {
+   "date": "2026-11-17",
+   "clipId": "53604",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53604",
+   "minutes": null,
+   "itemCount": 16
+  },
   {
    "date": "2026-10-29",
    "clipId": "53464",
@@ -2656,6 +2663,15 @@
   }
  ],
  "matches": [
+  {
+   "no": "11",
+   "title": "Approving the Cesar Chavez Bikeways Project that improves transportation safety and connectivity, including the establishment of a new Class IV protected two-way bikeway on the south side of Cesar Chavez Street",
+   "date": "2026-11-17",
+   "agenda": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=55&clip_id=53604",
+   "minutes": null,
+   "disposition": null,
+   "parent": null
+  },
   {
    "no": "12A",
    "title": "ESTABLISH - DEAD END, EXCEPT BICYCLES",

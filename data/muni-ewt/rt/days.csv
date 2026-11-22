@@ -7,4 +7,6 @@ sdate,status,source,read,gtfs,trips_scheduled,trips_with_positions,visits_schedu
 20261115,ok,rt-archive,2026-11-17,20260829,7861,7368,292722,269793,271154,parquet+parquet+parquet+parquet
 20261116,ok,rt-archive,2026-11-18,20260829,9482,8905,341242,314935,314829,parquet+parquet+parquet+parquet
 20261117,ok,rt-archive,2026-11-19,20260829,9482,9091,341242,320755,321070,parquet+parquet+parquet+parquet
-20261118,ok,rt-archive,2026-11-19,20260829,9482,8873,341242,310803,311682,parquet+raw+parquet+raw
+20261118,ok,rt-archive,2026-11-20,20260829,9482,8879,341242,311184,312103,parquet+parquet+parquet+parquet
+20261119,ok,rt-archive,2026-11-21,20260829,9482,9025,341242,316549,317800,parquet+parquet+parquet+parquet
+20261120,ok,rt-archive,2026-11-21,20260829,9482,8902,341242,313553,315635,parquet+raw+parquet+raw

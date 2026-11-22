@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T03:35:22",
+ "generated": "2026-11-20T13:33:25",
  "years": "2019\u20132026",
  "terms": [
   "bikeway",
@@ -30,23 +30,23 @@
  "counts": {
   "bikeway": 96,
   "bicycle lane": 37,
-  "bike lane": 99,
+  "bike lane": 100,
   "bicycle facility": 18,
   "street vacation": 129,
   "traffic calming": 149,
-  "Vision Zero": 288,
+  "Vision Zero": 289,
   "quick-build": 48,
-  "speed limit": 57,
+  "speed limit": 58,
   "encroachment": 441,
   "street renaming": 17,
   "sidewalk widening": 72,
-  "streetscape": 581,
+  "streetscape": 582,
   "Slow Streets": 87,
   "car-free": 57,
-  "street closure": 63,
+  "street closure": 64,
   "transit-only": 87,
   "road diet": 5,
-  "pedestrian safety": 342,
+  "pedestrian safety": 343,
   "Better Streets": 176,
   "traffic signal": 141,
   "crosswalk": 142,
@@ -58,9 +58,9 @@
    "2020: Discussion"
   ]
  },
- "files": 1630,
+ "files": 1632,
  "addressOnly": 2,
- "offTopic": 1501,
+ "offTopic": 1503,
  "unparsed": [
   "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4630830&GUID=A4507D7C-74A7-4729-9CCB-44B719157E75&FullText=1",
   "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4553871&GUID=4E70B526-9A85-4641-9CF2-39882548436F&FullText=1",

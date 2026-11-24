@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-24",
  "coordination": "site/data/coordination.json",
- "coordinationGenerated": "2026-11-21",
+ "coordinationGenerated": "2026-11-24",
  "C1": [
   {
    "body": "SFMTA engineering hearings",
@@ -9,7 +9,7 @@
    "read": true,
    "first": "2019-08-16",
    "last": "2026-11-13",
-   "daysSinceLast": 8,
+   "daysSinceLast": 11,
    "held": 148,
    "missing": 1,
    "missingShare": 0.0068,
@@ -27,7 +27,7 @@
    "read": true,
    "first": "2019-01-15",
    "last": "2026-11-17",
-   "daysSinceLast": 4,
+   "daysSinceLast": 7,
    "held": 186,
    "missing": 1,
    "missingShare": 0.0054,
@@ -45,7 +45,7 @@
    "read": true,
    "first": "2019-01-07",
    "last": "2026-11-19",
-   "daysSinceLast": 2,
+   "daysSinceLast": 5,
    "held": 1662,
    "missing": 4,
    "missingShare": 0.0024,
@@ -63,7 +63,7 @@
    "read": true,
    "first": "2019-01-22",
    "last": "2026-11-10",
-   "daysSinceLast": 11,
+   "daysSinceLast": 14,
    "held": 182,
    "missing": 1,
    "missingShare": 0.0055,
@@ -71,7 +71,7 @@
    "fullTitles": true,
    "startsBy2019": true,
    "notes": [
-    "Agendas from SFGovTV's Granicus view 22; decisions from the minutes on sfpuc.gov (scripts/sfpuc-commission.py), which start 2021-01-26."
+    "Agendas from SFGovTV's Granicus view 22; decisions from the minutes on sfpuc.gov (tools/meetings/sfpuc-commission.py), which start 2021-01-26."
    ],
    "pass": true
   },
@@ -81,7 +81,7 @@
    "read": true,
    "first": "2022-07-28",
    "last": "2026-11-12",
-   "daysSinceLast": 9,
+   "daysSinceLast": 12,
    "held": 80,
    "missing": 1,
    "missingShare": 0.0125,
@@ -103,7 +103,7 @@
    "read": true,
    "first": "2019-01-29",
    "last": "2026-11-17",
-   "daysSinceLast": 4,
+   "daysSinceLast": 7,
    "held": 173,
    "missing": 1,
    "missingShare": 0.0058,
@@ -122,7 +122,7 @@
    "read": true,
    "first": "2019-01-17",
    "last": "2026-11-19",
-   "daysSinceLast": 2,
+   "daysSinceLast": 5,
    "held": 97,
    "missing": 0,
    "missingShare": 0.0,
@@ -682,8 +682,8 @@
  },
  "C4": {
   "withStart": 218,
-  "withPriorRecord": 65,
-  "share": 0.2982,
+  "withPriorRecord": 64,
+  "share": 0.2936,
   "byDepartment": {
    "Public Works": {
     "withStart": 125,
@@ -691,7 +691,7 @@
    },
    "SFMTA": {
     "withStart": 63,
-    "without": 35
+    "without": 36
    },
    "SFPUC": {
     "withStart": 30,
@@ -1636,6 +1636,14 @@
     "shouldDecide": "SFMTA engineering hearing or SFMTA Board (legislation); SFCTA Board if Prop K/L funds it"
    },
    {
+    "name": "Beach Street Quick-Build",
+    "department": "SFMTA",
+    "start": "2026-04-01",
+    "phase": "Construction",
+    "cityRecordsAfterStart": 0,
+    "shouldDecide": "SFMTA engineering hearing or SFMTA Board (legislation); SFCTA Board if Prop K/L funds it"
+   },
+   {
     "name": "Innes Avenue Quick-Build Project",
     "department": "SFMTA",
     "start": "2026-09-01",
@@ -1926,13 +1934,13 @@
   ],
   "pass": false,
   "startedByToday": {
-   "withStart": 108,
-   "withPriorRecord": 53,
-   "share": 0.4907
+   "withStart": 110,
+   "withPriorRecord": 54,
+   "share": 0.4909
   },
   "notYetStarted": {
-   "withStart": 110,
-   "withPriorRecord": 12
+   "withStart": 108,
+   "withPriorRecord": 10
   }
  }
 }

@@ -1,44 +1,44 @@
 # The bike network by year, 2015–2026
 
-Miles of bikeway, the miles that meet the Biking and Rolling Plan's all-ages test, and how many residents, K-12 schools (public and private) and library branches sit within a 0.25-mile walk of an all-ages segment. Generated 2026-11-20 by `scripts/bike-network-history.py`.
+Miles of bikeway, the miles that meet the Biking and Rolling Plan's all-ages test, and how many residents, K-12 schools (public and private) and library branches sit within a 0.25-mile walk of an all-ages segment. Generated 2026-11-24 by `tools/bike-network/bike-network-history.py`.
 
 Every figure uses the [plan](https://www.sfmta.com/media/41810/download)'s definitions. **Miles are counted per direction row**, as SFMTA's bikeway layer holds them and as the plan's 472 miles (printed p. 20) are counted; a two-way street with a lane each way counts twice. **All-ages** is the plan's high-quality test (printed p. 24; [Appendix G](https://www.sfmta.com/media/41946/download)): Class I, Class IV and Slow Streets; Class II with Bike Comfort Index above 80; Class III with traffic calming and BCI above 80. The calming condition is in no published dataset and is not applied, so Class III rows are admitted on BCI alone; the third column is their size.
 
 | Year | Network miles | All-ages miles | of which Class III by BCI alone | Residents within reach | K-12 schools within reach | Library branches within reach | Rests on |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| 2015 | 440.7 | 130.0 | 5.5 | 63% (531,989 of 840,763) | 84 of 197 (43%) | 12 of 28 (43%) | INSTALL_YR only |
-| 2016 | 443.6 | 135.0 | 6.7 | 66% (563,365 of 850,282) | 91 of 197 (46%) | 12 of 28 (43%) | INSTALL_YR only |
-| 2017 | 447.7 | 145.0 | 8.1 | 68% (587,571 of 864,263) | 103 of 200 (52%) | 13 of 28 (46%) | INSTALL_YR only |
-| 2018 | 448.1 | 154.4 | 10.9 | 70% (605,483 of 870,044) | 105 of 203 (52%) | 14 of 28 (50%) | INSTALL_YR only |
-| 2019 | 454.5 | 162.5 | 11.4 | 72% (631,361 of 874,961) | 111 of 207 (54%) | 15 of 28 (54%) | INSTALL_YR only |
-| 2020 | 456.7 | 210.6 | 12.1 | 81% (704,431 of 873,965) | 146 of 206 (71%) | 20 of 27 (74%) | INSTALL_YR only |
-| 2021 | 463.3 | 224.8 | 12.2 | 81% (705,549 of 865,933) | 149 of 208 (72%) | 21 of 27 (78%) | archived snapshots |
-| 2022 | 460.8 | 204.7 | 11.5 | 77% (659,210 of 851,036) | 138 of 209 (66%) | 19 of 27 (70%) | archived snapshots |
-| 2023 | 463.3 | 216.0 | 13.1 | 79% (664,037 of 836,321) | 144 of 209 (69%) | 19 of 27 (70%) | archived snapshots |
-| 2024 | 472.2 | 226.1 | 13.5 | 80% (667,445 of 830,235) | 151 of 218 (69%) | 20 of 27 (74%) | archived snapshots |
-| 2025 | 471.8 | 228.3 | 14.0 | 80% (666,687 of 830,235) | 152 of 221 (69%) | 19 of 27 (70%) | archived snapshots |
-| 2026 | 473.4 | 232.3 | 14.2 | 80% (664,379 of 830,235) | 153 of 221 (69%) | 19 of 27 (70%) | current |
+| 2015 | 440.7 | 130.0 | 5.5 | 63% (530,917 of 840,763) | 84 of 197 (43%) | 12 of 28 (43%) | INSTALL_YR only |
+| 2016 | 443.6 | 135.0 | 6.7 | 66% (562,299 of 850,282) | 91 of 197 (46%) | 12 of 28 (43%) | INSTALL_YR only |
+| 2017 | 447.7 | 145.0 | 8.1 | 68% (586,512 of 864,263) | 103 of 200 (52%) | 13 of 28 (46%) | INSTALL_YR only |
+| 2018 | 448.1 | 154.4 | 10.9 | 70% (604,831 of 870,044) | 105 of 203 (52%) | 14 of 28 (50%) | INSTALL_YR only |
+| 2019 | 454.5 | 162.5 | 11.4 | 72% (630,698 of 874,961) | 111 of 207 (54%) | 15 of 28 (54%) | INSTALL_YR only |
+| 2020 | 456.7 | 210.6 | 12.1 | 81% (704,290 of 873,965) | 146 of 206 (71%) | 20 of 27 (74%) | INSTALL_YR only |
+| 2021 | 463.3 | 224.8 | 12.2 | 81% (705,434 of 865,933) | 149 of 208 (72%) | 21 of 27 (78%) | archived snapshots |
+| 2022 | 460.8 | 204.7 | 11.5 | 77% (659,037 of 851,036) | 138 of 209 (66%) | 19 of 27 (70%) | archived snapshots |
+| 2023 | 463.3 | 216.0 | 13.1 | 79% (663,893 of 836,321) | 144 of 209 (69%) | 20 of 27 (74%) | archived snapshots |
+| 2024 | 472.2 | 226.1 | 13.5 | 80% (667,258 of 830,235) | 151 of 218 (69%) | 21 of 27 (78%) | archived snapshots |
+| 2025 | 471.8 | 228.3 | 14.0 | 80% (666,500 of 830,235) | 152 of 221 (69%) | 20 of 27 (74%) | archived snapshots |
+| 2026 | 473.4 | 232.3 | 14.2 | 80% (664,192 of 830,235) | 153 of 221 (69%) | 20 of 27 (74%) | current |
 
 Denominators: residents are every census block in San Francisco County; schools are K-12 schools, public ones of the counted types and private ones from DataSF, open on 09-01 of the year; libraries are SFPL branches plus the Main Library open that year.
 
 ## Reach at four distances
 
-The table above uses the plan's quarter mile. The population-weighted average San Francisco block is 416 feet, intersection to intersection ([street centerlines](https://data.sfgov.org/d/3psu-pn9h), read 2026-11-10; [census blocks](https://data.sfgov.org/d/p2fw-hsrv); `scripts/sf-block-length.py`), so one block is taken as 440 feet and two as 880, Bryan's figures; the measured typical block is 416 feet.
+The table above uses the plan's quarter mile. The population-weighted average San Francisco block is 416 feet, intersection to intersection ([street centerlines](https://data.sfgov.org/d/3psu-pn9h), read 2026-11-10; [census blocks](https://data.sfgov.org/d/p2fw-hsrv); `pipeline/sources/sf-block-length.py`), so one block is taken as 440 feet and two as 880, Bryan's figures; the measured typical block is 416 feet.
 
 | Year | Residents, Quarter mile | Residents, 1 block | Residents, 2 blocks | Residents, 1,000 feet | Schools, Quarter mile | Schools, 1 block | Schools, 2 blocks | Schools, 1,000 feet | Libraries, Quarter mile | Libraries, 1 block | Libraries, 2 blocks | Libraries, 1,000 feet |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2015 | 63% | 31% | 50% | 55% | 84 of 197 | 29 of 197 | 59 of 197 | 65 of 197 | 12 of 28 | 1 of 28 | 10 of 28 | 10 of 28 |
-| 2016 | 66% | 33% | 53% | 57% | 91 of 197 | 31 of 197 | 67 of 197 | 72 of 197 | 12 of 28 | 1 of 28 | 10 of 28 | 10 of 28 |
-| 2017 | 68% | 36% | 55% | 60% | 103 of 200 | 35 of 200 | 74 of 200 | 81 of 200 | 13 of 28 | 1 of 28 | 10 of 28 | 10 of 28 |
+| 2015 | 63% | 31% | 50% | 54% | 84 of 197 | 29 of 197 | 59 of 197 | 65 of 197 | 12 of 28 | 1 of 28 | 10 of 28 | 10 of 28 |
+| 2016 | 66% | 33% | 53% | 57% | 91 of 197 | 31 of 197 | 66 of 197 | 72 of 197 | 12 of 28 | 1 of 28 | 10 of 28 | 10 of 28 |
+| 2017 | 68% | 36% | 55% | 60% | 103 of 200 | 35 of 200 | 73 of 200 | 81 of 200 | 13 of 28 | 1 of 28 | 10 of 28 | 10 of 28 |
 | 2018 | 70% | 38% | 57% | 62% | 105 of 203 | 40 of 203 | 78 of 203 | 84 of 203 | 14 of 28 | 1 of 28 | 11 of 28 | 11 of 28 |
-| 2019 | 72% | 40% | 60% | 65% | 111 of 207 | 43 of 207 | 81 of 207 | 87 of 207 | 15 of 28 | 1 of 28 | 12 of 28 | 12 of 28 |
-| 2020 | 81% | 51% | 71% | 75% | 146 of 206 | 61 of 206 | 112 of 206 | 121 of 206 | 20 of 27 | 8 of 27 | 19 of 27 | 19 of 27 |
-| 2021 | 81% | 54% | 72% | 76% | 149 of 208 | 64 of 208 | 116 of 208 | 125 of 208 | 21 of 27 | 8 of 27 | 20 of 27 | 20 of 27 |
-| 2022 | 77% | 49% | 67% | 71% | 138 of 209 | 54 of 209 | 108 of 209 | 118 of 209 | 19 of 27 | 6 of 27 | 19 of 27 | 19 of 27 |
-| 2023 | 79% | 52% | 69% | 73% | 144 of 209 | 59 of 209 | 113 of 209 | 122 of 209 | 19 of 27 | 6 of 27 | 19 of 27 | 19 of 27 |
-| 2024 | 80% | 52% | 70% | 74% | 151 of 218 | 63 of 218 | 121 of 218 | 130 of 218 | 20 of 27 | 7 of 27 | 20 of 27 | 20 of 27 |
-| 2025 | 80% | 52% | 70% | 74% | 152 of 221 | 64 of 221 | 122 of 221 | 131 of 221 | 19 of 27 | 8 of 27 | 19 of 27 | 19 of 27 |
-| 2026 | 80% | 53% | 70% | 74% | 153 of 221 | 65 of 221 | 123 of 221 | 132 of 221 | 19 of 27 | 8 of 27 | 19 of 27 | 19 of 27 |
+| 2019 | 72% | 40% | 59% | 65% | 111 of 207 | 43 of 207 | 81 of 207 | 87 of 207 | 15 of 28 | 1 of 28 | 12 of 28 | 12 of 28 |
+| 2020 | 81% | 51% | 70% | 74% | 146 of 206 | 61 of 206 | 112 of 206 | 121 of 206 | 20 of 27 | 8 of 27 | 19 of 27 | 19 of 27 |
+| 2021 | 81% | 54% | 72% | 76% | 149 of 208 | 64 of 208 | 115 of 208 | 124 of 208 | 21 of 27 | 8 of 27 | 20 of 27 | 20 of 27 |
+| 2022 | 77% | 49% | 66% | 71% | 138 of 209 | 54 of 209 | 107 of 209 | 117 of 209 | 19 of 27 | 6 of 27 | 19 of 27 | 19 of 27 |
+| 2023 | 79% | 52% | 69% | 73% | 144 of 209 | 59 of 209 | 113 of 209 | 122 of 209 | 20 of 27 | 6 of 27 | 19 of 27 | 19 of 27 |
+| 2024 | 80% | 52% | 70% | 74% | 151 of 218 | 63 of 218 | 121 of 218 | 130 of 218 | 21 of 27 | 7 of 27 | 20 of 27 | 20 of 27 |
+| 2025 | 80% | 52% | 70% | 74% | 152 of 221 | 64 of 221 | 122 of 221 | 131 of 221 | 20 of 27 | 8 of 27 | 19 of 27 | 19 of 27 |
+| 2026 | 80% | 52% | 70% | 74% | 153 of 221 | 65 of 221 | 123 of 221 | 132 of 221 | 20 of 27 | 8 of 27 | 19 of 27 | 19 of 27 |
 
 ## Check against the plan's printed figures
 
@@ -157,10 +157,10 @@ The step from 2023 to 2024, 216.0 to 226.1 all-ages miles, is -0.2 miles of Slow
 - All-ages miles before 2021 carry an uncertainty band of about ±32 miles in 2015, from two opposite errors. 54.5 miles have an unknown class in 2015 because UPDATE_YR is later and there is no earlier capture, and 31.5 of those are all-ages today, so the figure may be low by up to that much. In the other direction, 9.9 miles of CLASS IV are credited to 2015 by an INSTALL_YR of 2013 or earlier, before Caltrans defined Class IV (2014), so on those rows INSTALL_YR dates the street's first bikeway rather than the separated lane, and the figure may be high by up to that much. [inference — mine]
 - Between captures a change is dated by UPDATE_YR when the row carries one; otherwise it is credited to the year before the later capture. The 2022-12-09 to 2024-03-31 and 2024-03-31 to 2025-12-08 gaps are the widest.
 - Population for years other than 2020 is an ACS 5-year block-group estimate spread across blocks by census shares, so it is a five-year average, not a point count, and block-level shares are held at the nearest census. 2025 and 2026 are held at the 2020–2024 ACS, the latest released.
-- The Slow Streets dataset was last loaded 2024-01-18 and carries no removal dates; the pandemic-era Slow Streets that were dropped in 2022 are not in it, and 7 segments (the SoMa streets) carry no install date and are counted from 2022. The dropped corridors are traced from SFMTA's 2020 and 2021 Board reports (scripts/lib/slow_corridors.py) and counted in the all-ages miles and the reach from their install year through 2021: 213 blocks, 21.2 all-ages miles in 2021 that no other all-ages line covered, adding 4.2 points of residents within a quarter mile in 2020. The reports give each corridor's extent as approved; where a corridor went in shorter, these years are high by the difference.
+- The Slow Streets dataset was last loaded 2024-01-18 and carries no removal dates; the pandemic-era Slow Streets that were dropped in 2022 are not in it, and 7 segments (the SoMa streets) carry no install date and are counted from 2022. The dropped corridors are traced from SFMTA's 2020 and 2021 Board reports (lib/slow_corridors.py) and counted in the all-ages miles and the reach from their install year through 2021: 213 blocks, 21.2 all-ages miles in 2021 that no other all-ages line covered, adding 4.2 points of residents within a quarter mile in 2020. The reports give each corridor's extent as approved; where a corridor went in shorter, these years are high by the difference.
 - The CDE directory is the 2025-10-05 archive capture, so schools opened or closed after that date are missing. School coordinates are CDE's; most schools closed before 2015 carry none, and the one school open in the window without one (Gateway to College, closed 2016) is left out.
 - Library closures are entered by hand from SFPL's pages; only the Mission Branch's renovation closure is recorded. The system-wide COVID closure of March 2020 to May 2021 is not treated as a closure.
-- The map lights a point in exactly the years it is within reach, so a point reached only through a dropped Slow Street or a removed bikeway goes grey when it went. In 2026, 246 blocks (35,369 residents at the 2020 count) and 3 branches that were within a quarter mile of an all-ages line in an earlier year are not.
+- The map lights a point in exactly the years it is within reach, so a point reached only through a dropped Slow Street or a removed bikeway goes grey when it went. In 2026, 247 blocks (35,471 residents at the 2020 count) and 3 branches that were within a quarter mile of an all-ages line in an earlier year are not.
 
 ## Sources
 
@@ -187,8 +187,8 @@ The step from 2023 to 2024, 216.0 to 226.1 all-ages miles, is -0.2 miles of Slow
 - **miles**: Row miles, the plan's unit: every direction row's length, summed, so a two-way street with a lane each way counts twice. A live row is measured from its own line geometry (equirectangular projection about 37.76 N); an archived row on a block still in the layer at the live layer's mean row length for that block, since the archived exports keep no geometry for those; an archived row on a block since dropped from its own geometry. Slow Street blocks outside the bikeway layer count their length 2 times. Centreline miles, one length per block, are written beside every row-mile figure. Off-street paths with no CNN (Presidio trails, Golden Gate Park, Kirkham, SFSU and other paths) are keyed by their endpoints and counted; the Presidio's are also shown separately.
 - **gap_fill**: A block present in an earlier and a later capture but missing from one between is carried through the gap with its earlier record.
 - **timing**: Network state is the end of the year (or the latest capture for the current year); schools and libraries are counted as open on 09-01 of the year.
-- **reach**: Walking distance along OpenStreetMap's walk network (OSMnx's walk filter plus cycle paths; see site/data/bike-history/walk-reach.json for the copy read) from the census block's interior point, the school's CDE coordinate or the branch's City Facilities coordinate to the nearest all-ages line, at most 0.25 miles by default; the point joins the network at the nearest street or path in a straight line, and a line is reached where it passes within 20 m of a walkable way (scripts/walknet.py). reach_thresholds names the shorter distances the overview also offers. The lines reached include the pandemic Slow Street blocks SFMTA dropped in December 2022, from their corridor's install year through 2021, as the miles do (reach_without_dropped_slow_streets on each row gives the figures without them).
-- **reach_thresholds**: Four distances, the plan's quarter mile (402 m) by default, one and two city blocks (440 and 880 feet), and 1000 feet, about the 300 m walk to a protected bikeway the ITDP Atlas of Sustainable City Transport measures. The population-weighted average block, intersection to intersection on the street centerline over 240 tracts, is 416 feet (scripts/sf-block-length.py, https://data.sfgov.org/d/3psu-pn9h, read 2026-11-10), so one block is taken as 440 feet and two as 880, Bryan's figures; the measured typical block is 416 feet. Each row's reach_by_threshold carries the six reach figures at each.
+- **reach**: Walking distance along OpenStreetMap's walk network (OSMnx's walk filter plus cycle paths; see site/data/bike-history/walk-reach.json for the copy read) from the census block's interior point, the school's CDE coordinate or the branch's City Facilities coordinate to the nearest all-ages line, at most 0.25 miles by default; the point joins the network at the nearest street or path in a straight line, and a line is reached where it passes within 20 m of a walkable way (lib/walknet.py). reach_thresholds names the shorter distances the overview also offers. The lines reached include the pandemic Slow Street blocks SFMTA dropped in December 2022, from their corridor's install year through 2021, as the miles do (reach_without_dropped_slow_streets on each row gives the figures without them).
+- **reach_thresholds**: Four distances, the plan's quarter mile (402 m) by default, one and two city blocks (440 and 880 feet), and 1000 feet, about the 300 m walk to a protected bikeway the ITDP Atlas of Sustainable City Transport measures. The population-weighted average block, intersection to intersection on the street centerline over 240 tracts, is 416 feet (pipeline/sources/sf-block-length.py, https://data.sfgov.org/d/3psu-pn9h, read 2026-11-10), so one block is taken as 440 feet and two as 880, Bryan's figures; the measured typical block is 416 feet. Each row's reach_by_threshold carries the six reach figures at each.
 - **population_denominator**: Every block in San Francisco County, including Treasure Island and the Farallones.
 - **school_denominator**: K-12 schools: public schools of the counted types (see sources.schools) open on 09-01 of the year, by CDE OpenDate and ClosedDate, plus DataSF's active private elementary, high and K-12 schools from their open_date (a private school that closed earlier is missing). Charter schools are included (14 of the 221 open in 2026), as is the County Community school run in the county jail (1).
 - **library_denominator**: SFPL branches plus the Main Library in City Facilities, minus branches closed for renovation that year.

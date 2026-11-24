@@ -186,18 +186,18 @@
  },
  "unmatched_dropped_after_cleaning": 73963,
  "hourly_join": {
-  "timepoint_rows": 7591650,
+  "timepoint_rows": 7591651,
   "no_block": 69,
   "excluded_block": 28110,
-  "kept": 7563471
+  "kept": 7563472
  },
  "all_hours_sf": {
-  "n": 7563471,
+  "n": 7563472,
   "early_sf": 3104183,
   "late_sf": 993093
  },
  "scored_both": {
-  "n": 696529,
+  "n": 696530,
   "s511_differs_share": 0.3614,
   "vs_timetable": {
    "on_time": 70.28,
@@ -211,7 +211,7 @@
   }
  },
  "scored": {
-  "n": 696529,
+  "n": 696530,
   "early": 114605,
   "late": 103166,
   "early_sf": 200411,

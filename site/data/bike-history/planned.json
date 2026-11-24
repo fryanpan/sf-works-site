@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-24",
  "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
  "centerlines": {
   "dataset": "https://data.sf.gov/d/3psu-pn9h",
-  "queried": "2026-11-21"
+  "queried": "2026-11-24"
  },
  "projects": [
   {
@@ -239,7 +239,7 @@
    "name": "Cesar Chavez Bikeway Improvements Project",
    "page": "https://www.sfmta.com/node/30111",
    "phase": "Detailed Design",
-   "page_edited": "2026-11-20",
+   "page_edited": "2026-11-23",
    "year": 2027,
    "quote": "beginning in 2027 with the section of Cesar Chavez Street between Indiana Street and Illinois Street",
    "timeline_status": null,

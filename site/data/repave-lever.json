@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-24",
  "mileBasis": "per direction of travel",
  "sources": {
   "pci": {
@@ -38,21 +38,21 @@
    "hasTreatmentTypeColumn": false
   },
   "moratorium": {
-   "tag": "[DataSF 5wbp-dwzt \u2014 queried 2026-11-19]",
-   "queried": "2026-11-19",
-   "rows": 3459,
+   "tag": "[DataSF 5wbp-dwzt \u2014 queried 2026-11-24]",
+   "queried": "2026-11-24",
+   "rows": 3457,
    "window": [
-    "2021-11-22",
+    "2021-11-25",
     "2026-11-11"
    ],
-   "lockedBlocks": 2588,
-   "lockedWithRepaveWithin400Days": 2587,
-   "repavedBlocksInWindow": 2881,
-   "repavedBlocksInWindowLocked": 2577,
+   "lockedBlocks": 2586,
+   "lockedWithRepaveWithin400Days": 2585,
+   "repavedBlocksInWindow": 2854,
+   "repavedBlocksInWindowLocked": 2575,
    "lightTreatedBlocksInWindow": 554,
    "lightTreatedBlocksInWindowLocked": 0,
    "blocksWithTwoLockDates": 0,
-   "unlockedRepavedFirst60Days": 33,
+   "unlockedRepavedFirst60Days": 8,
    "unlockedRepavedStreets": [
     "Valencia St",
     "Fillmore St",
@@ -96,18 +96,18 @@
   },
   "feed": {
    "id": "btxj-k9uh",
-   "tag": "[DataSF btxj-k9uh \u2014 queried 2026-11-20]",
-   "queried": "2026-11-20",
-   "rows": 7596,
+   "tag": "[DataSF btxj-k9uh \u2014 queried 2026-11-24]",
+   "queried": "2026-11-24",
+   "rows": 7618,
    "completedRows": 5
   },
   "centerlines": {
    "id": "3psu-pn9h",
-   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
-   "queried": "2026-11-19",
+   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
+   "queried": "2026-11-24",
    "blocks": {
-    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
-    "queried": "2026-11-19",
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
+    "queried": "2026-11-24",
     "all": 17176,
     "active": 16378,
     "accepted": 13190
@@ -137,8 +137,8 @@
    },
    "centerlines": {
     "id": "3psu-pn9h",
-    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
-    "queried": "2026-11-19"
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
+    "queried": "2026-11-24"
    }
   }
  },
@@ -1965,8 +1965,8 @@
   "impliedPlanCycleYears": 33.4,
   "impliedPlanCycleYearsRecent": 44.3,
   "cityBlocks": {
-   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
-   "queried": "2026-11-19",
+   "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
+   "queried": "2026-11-24",
    "all": 17176,
    "active": 16378,
    "accepted": 13190
@@ -2067,9 +2067,9 @@
   {
    "year": 2025,
    "agency": "Public Works",
-   "blocks": 36,
-   "miles": 3.12,
-   "milesShort": 1.1,
+   "blocks": 46,
+   "miles": 3.94,
+   "milesShort": 1.89,
    "blocksAlsoRepavedSameOrNextYear": 14
   },
   {
@@ -2082,7 +2082,7 @@
   }
  ],
  "openingAgencies": {
-  "SF DPW IDC - Streets & Highways": 118,
+  "SF DPW IDC - Streets & Highways": 128,
   "SF DPW IDC - Hydraulic": 39,
   "SF DPW BDC - Architecture": 9,
   "SF DPW BDC - Building Project Management": 1

@@ -1,6 +1,6 @@
 # Board of Supervisors records that name a street
 
-Generated 2026-11-20 by `scripts/bos-street-records.py`. **Do not edit by hand — the next run overwrites it.**
+Generated 2026-11-24 by `tools/meetings/bos-street-records.py`. **Do not edit by hand — the next run overwrites it.**
 
 **61 records, from 1632 files read.** Two filters stand between those numbers, and both are here because the first sample of eight trusted links was eight wrong.
 

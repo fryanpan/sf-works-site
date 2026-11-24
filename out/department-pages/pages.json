@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17",
+ "generated": "2026-11-24",
  "pages": [
   {
    "department": "Public Works",
@@ -140,6 +140,15 @@
    "department": "Public Works",
    "url": "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2701",
    "title": "887 Potrero Tenant Improvement and Fire Alarm Control Unit Replacement",
+   "status": "Out to bid",
+   "location": null,
+   "listed": false,
+   "kind": "contract"
+  },
+  {
+   "department": "Public Works",
+   "url": "https://bidopportunities.apps.sfdpw.org/CaseLoad/Details/2702",
+   "title": "City Hall Mechanical Renewal - Phase III",
    "status": "Out to bid",
    "location": null,
    "listed": false,
@@ -3377,7 +3386,7 @@
   },
   {
    "department": "Public Works",
-   "url": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%25E2%2580%2599s-day-service-1916",
+   "url": "https://sfpublicworks.org/project/press-release-volunteers-clean-and-green-mayor%E2%80%99s-day-service-1916",
    "title": "PRESS RELEASE: Volunteers Clean and Green on Mayor’s Day of Service - 1/9/16",
    "status": null,
    "location": null,

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-24",
  "rule": "An SFMTA project is listed when SFMTA tags it Bike, Walk, Vision Zero or Quick-Build, or its name or page names bike, slow street, quick-build, pedestrian, crossing, signal, traffic calming, safety or streetscape work, and it is not finished (by the layer's phase or its own page), not station, fleet or parking work, and, if SFMTA does not map it, its page shows something dated this year or last. A mapped project with no phase on the layer or its page whose timeline ends before last year, or one whose only walking or safety scope is in its page's words, is listed while its page dates work in the last year or to come, or the coordination feed carries its job. Any other project SFMTA maps on a plan block (transit, parking or wiring work on the same streets) is listed too, as transit or parking work, while its page dates a milestone, notice or construction date in the last two years or to come, or the coordination feed carries its job, unless it is a study, a plan, a pilot or work inside a station, tunnel, transit center, yard or vehicle.",
  "decisions": [
   {
@@ -1007,10 +1007,10 @@
     "Vision Zero",
     "Walk"
    ],
-   "layerPhase": "Implementation / Construction",
+   "layerPhase": "Completed",
    "pagePhase": null,
-   "listed": true,
-   "reason": "SFMTA tags it Bike, Quick-Build, Vision Zero, Walk"
+   "listed": false,
+   "reason": "finished: the layer's phase is Completed"
   },
   {
    "id": "sfmta:939",

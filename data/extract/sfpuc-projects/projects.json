@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17",
+ "generated": "2026-11-24",
  "source": "https://www.sfpuc.gov/sitemap.xml (every construction-project page, under /construction-contracts/construction-projects/ or at the site root)",
  "method": "status from each page's Project Phase line (Completed, or in progress); blocks from the corridors between the limits its text names, else from the feed jobs matched to it",
  "records": [
@@ -738,7 +738,7 @@
    "phase": "Construction",
    "status": "In progress",
    "constructionStart": "June 2025",
-   "constructionEnd": "Fall 2026",
+   "constructionEnd": "Mid-March 2027",
    "location": "Grand View Avenue between Clipper Street and Romain; 25th Street from Grand View Avenue to Homestead; 24th Street from Grand View Avenue to Hoffman; 23rd Street from Grand View Avenue to Hoffman; 22nd Street from Hoffman Avenue to Worth; Alvarado Street from Grand View Avenue to Douglass; Elizabeth Street from Grand View Avenue to Hoffman; Fountain Street from 25th Street to 24th; Hoffman Avenue from Elizabeth Street to 22nd Street and Romain Street from Market Street to Douglass; Romain Street from Market Street to Douglass; Hoffman Avenue from Elizabeth Street to Alvarado; 25th Street from Fountain Street to Hoffman",
    "cnns": [
     "11130000",
@@ -1162,7 +1162,7 @@
    "status": "In progress",
    "constructionStart": "July 2026",
    "constructionEnd": "October 2027",
-   "location": "Bacon Street between Bowdoin Street and Bayshore; Phelps Street between Egbert Avenue and Vesta; Williams Avenue between Vesta and Neptune; Neptune Street between Williams and Thornton; Thornton Avenue between Neptune and 3rd; Bacon Street between Goettingen Street and Bayshore; Phelps Street between Egbert and Donner; Bacon Street between Bowdoin and Goettingen; Bacon Street between Bowdoin and Holyoke; Phelps Street between Carroll Avenue and Vesta",
+   "location": "Bacon Street between Bowdoin Street and Bayshore; Phelps Street between Egbert Avenue and Vesta; Williams Avenue between Vesta and Neptune; Neptune Street between Williams and Thornton; Thornton Avenue between Neptune and 3rd; Bacon Street between Bowdoin and Goettingen; Bacon Street between Bowdoin and Holyoke; Bacon Street between Goettingen Street and Bayshore; Phelps Street between Egbert and Donner",
    "cnns": [
     "10408000",
     "10409000",

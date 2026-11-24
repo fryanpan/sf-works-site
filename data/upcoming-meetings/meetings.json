@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19",
+ "generated": "2026-11-24",
  "windowDays": 90,
  "sources": [
   {
@@ -7,8 +7,8 @@
    "name": "SFMTA meetings and events",
    "listing": "https://www.sfmta.com/meetings-events",
    "status": "read",
-   "meetings": 11,
-   "withAgenda": 1
+   "meetings": 10,
+   "withAgenda": 0
   },
   {
    "id": "bos",
@@ -50,56 +50,6 @@
   }
  ],
  "meetings": [
-  {
-   "source": "sfmta",
-   "kind": "sfmta-committee",
-   "body": "SFMTA Street Safety Committee",
-   "date": "2026-11-24",
-   "time": "2:00pm",
-   "title": "Street Safety Committee Meeting, November 24, 2026",
-   "url": "https://www.sfmta.com/calendar/street-safety-committee-meeting-november-24-2026",
-   "agenda": "https://www.sfmta.com/media/50529/download?inline",
-   "items": [
-    {
-     "no": "1",
-     "title": "Call to Order",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    },
-    {
-     "no": "2",
-     "title": "Roll Call",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    },
-    {
-     "no": "3",
-     "title": "Announcement of prohibition of sound producing devices during the meeting.",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    },
-    {
-     "no": "4",
-     "title": "Approval of Minutes",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    },
-    {
-     "no": "5",
-     "title": "Public Comment",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    },
-    {
-     "no": "6",
-     "title": "Presentation and discussion regarding an update on the Street Safety Initiative and Updated Residential Traffic Calming Program. (Explanatory documents include a slide presentation.)",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    },
-    {
-     "no": "7",
-     "title": "Committee Member Information and Item Requests. (For discussion only.)",
-     "url": "https://www.sfmta.com/media/50529/download?inline"
-    }
-   ],
-   "projectPages": [],
-   "id": "sfmta:2026-11-24:street-safety-committee-meeting-november-24-2026",
-   "agendaPosted": true
-  },
   {
    "source": "sfmta",
    "kind": "board",

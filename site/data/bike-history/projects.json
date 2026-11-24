@@ -67,7 +67,7 @@
    "page": "https://www.sfmta.com/node/28582"
   }
  ],
- "generated": "2026-11-20",
+ "generated": "2026-11-24",
  "years": [
   2015,
   2016,
@@ -88,7 +88,7 @@
  "baseline": {
   "miles": 134.5,
   "segments": 512,
-  "residents": 552969,
+  "residents": 552532,
   "schools": 100,
   "libraries": 12
  },
@@ -146,9 +146,9 @@
     ]
    ]
   },
-  "residents": 104325,
+  "residents": 104427,
   "schools": 39,
-  "libraries": 6
+  "libraries": 7
  },
  "outside_build_years": {
   "17th Street Bicycle Safety Project": [
@@ -532,7 +532,7 @@
     2020
    ],
    "dated_by": "layer",
-   "residents": 4119,
+   "residents": 3918,
    "schools": [
     "St. Cecilia Elementary"
    ],
@@ -905,7 +905,7 @@
     2020
    ],
    "dated_by": "page",
-   "residents": 9828,
+   "residents": 9866,
    "schools": [
     "Cobb (William L.) Elementary",
     "Drew School",
@@ -1600,7 +1600,7 @@
     2018
    ],
    "dated_by": "page",
-   "residents": 1460,
+   "residents": 1792,
    "schools": [],
    "libraries": [],
    "streets": [
@@ -2857,7 +2857,7 @@
     2020
    ],
    "dated_by": "layer",
-   "residents": 289,
+   "residents": 314,
    "schools": [
     "McKinley Elementary"
    ],
@@ -2986,7 +2986,7 @@
    "node": "28896",
    "name": "Beach Street Quick-Build Project",
    "page": "https://www.sfmta.com/node/28896",
-   "phase": "Implementation / Construction",
+   "phase": "Completed",
    "stand_in": false,
    "teaser": null,
    "image": "https://www.sfmta.com/files/styles/hero_slideshow_small_1x/public/hero-images/2023/09/230828_beachst-before_12.jpg?itok=NGmEVBPo",
@@ -4347,7 +4347,7 @@
  "sources": {
   "project_geometry": {
    "name": "SFMTA project layer, live from its ArcGIS service, matched to blocks by tools/projects/project-blocks.py",
-   "generated": "2026-11-19",
+   "generated": "2026-11-24",
    "tolerances_m": {
     "point": 25.0,
     "line": 15.0,

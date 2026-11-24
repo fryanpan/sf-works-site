@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-24",
  "since": "2010-01-01",
  "windows": {
   "engineering order": "since 2010-01-01",
@@ -26,7 +26,7 @@
  "counts": {
   "records": 639,
   "unmatched": 124,
-  "jobsWithRecord": 79
+  "jobsWithRecord": 80
  },
  "byDotmapsId": {
   "8179": [
@@ -244,6 +244,22 @@
     "matchedOn": [
      "Various Locations Pavement Renovation No 71A",
      "named as \u201cvarious locations pavement renovation no 71a\u201d"
+    ],
+    "means": "the Public Works Commission acted on this project by name"
+   }
+  ],
+  "13175": [
+   {
+    "date": "2024-10-17",
+    "kind": "pwc",
+    "item": "5",
+    "title": "13th Street Safety Improvement Project \u2013 Contract Award Staff Recommendation: Award 13th Street Safety Improvement Project, Sourcing Event ID No. 0000007339, to NTK Construction, Inc in the amount of ",
+    "url": "https://sanfrancisco.granicus.com/AgendaViewer.php?view_id=218&clip_id=47315",
+    "decision": null,
+    "grade": "exact",
+    "matchedOn": [
+     "13th St Safety Improvement Project",
+     "named as \u201c13th st safety improvement project\u201d"
     ],
     "means": "the Public Works Commission acted on this project by name"
    }

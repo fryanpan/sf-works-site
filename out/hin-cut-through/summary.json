@@ -1,5 +1,5 @@
 {
- "about": "Residential blocks (centerline classcode 5, STREETS layers) and main-street blocks (main_streets) by two-way peak-hour vehicles, by how the volume was found. See scripts/hin-cut-through.py.",
+ "about": "Residential blocks (centerline classcode 5, STREETS layers) and main-street blocks (main_streets) by two-way peak-hour vehicles, by how the volume was found. See tools/street-safety/hin-cut-through.py.",
  "calibration": {
   "blocks": 547,
   "class_agree": 154,
@@ -691,15 +691,15 @@
   "Arlington Mateo-Richland"
  ],
  "sources": {
-  "centerlines": "[DataSF 3psu-pn9h \u2014 queried 2026-11-20]",
+  "centerlines": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
   "champ": "https://api.sfcta.org/api/hwynet_weekday",
   "counts": "SFMTA Corridor Counts CSV, https://www.sfmta.com/media/40635",
   "housing": "data/extract/census-blocks/2020.json",
   "people": {
-   "centerlines": "[DataSF 3psu-pn9h \u2014 queried 2026-11-19]",
-   "fatality_log": "[DataSF dau3-4s8f \u2014 queried 2026-11-19]",
-   "parties": "[DataSF 8gtc-pjc6 \u2014 queried 2026-11-19]",
-   "victims": "[DataSF nwes-mmgh \u2014 queried 2026-11-19]"
+   "centerlines": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
+   "fatality_log": "[DataSF dau3-4s8f \u2014 queried 2026-11-22]",
+   "parties": "[DataSF 8gtc-pjc6 \u2014 queried 2026-11-22]",
+   "victims": "[DataSF nwes-mmgh \u2014 queried 2026-11-22]"
   },
   "slow_streets": "data/slow-streets/evaluations.csv",
   "vehicles": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B25044&geo_ids=140|05000US06075"
@@ -860,7 +860,7 @@
     "why": "one season; 8 valid days"
    }
   ],
-  "source": "data/extract/telraam/segments.json (scripts/telraam-sf.py)",
+  "source": "data/extract/telraam/segments.json (tools/street-safety/telraam-sf.py)",
   "vs_sfmta_by_group": {
    "SFMTA count": {
     "blocks": 14,

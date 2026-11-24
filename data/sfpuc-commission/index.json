@@ -2,7 +2,7 @@
  "body": "sfpuc-commission",
  "name": "SFPUC Commission",
  "source": "https://sanfrancisco.granicus.com/ViewPublisher.php?view_id=22",
- "generated": "2026-11-19",
+ "generated": "2026-11-24",
  "since": "2019-01-01",
  "range": [
   "2019-01-22",
@@ -15,7 +15,7 @@
  "missingShare": 0.0055,
  "items": 5075,
  "notes": [
-  "Agendas from SFGovTV's Granicus view 22; decisions from the minutes on sfpuc.gov (scripts/sfpuc-commission.py), which start 2021-01-26."
+  "Agendas from SFGovTV's Granicus view 22; decisions from the minutes on sfpuc.gov (tools/meetings/sfpuc-commission.py), which start 2021-01-26."
  ],
  "meetings": [
   {

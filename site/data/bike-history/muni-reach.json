@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-24",
  "source": {
   "name": "DataSF Muni Stops",
   "id": "i28k-bkz6",
@@ -13,7 +13,7 @@
   "quarter": 99.6,
   "block": 88.7,
   "2blocks": 98.0,
-  "1000ft": 99.0
+  "1000ft": 98.9
  },
  "median_feet": 30,
  "method": "Walking distance along the street network (lib/walknet.py) from each census block's interior point to the nearest stop; any stop counts."

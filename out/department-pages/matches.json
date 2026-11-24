@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-24",
  "method": "url, contract number, contract series with a shared street, name, the streets a title names, an acronym, or a contract number shared with another feed job; high and medium are linked. pageKind project is the job's own page, contract the department's page for its contract (a bid page), program a programme page listing it; only project and contract count as the job's page, and a job with neither may carry its closest official source",
  "published": {
   "Public Works": {
@@ -148,6 +148,32 @@
    "department": "Public Works",
    "contracts": [],
    "series": []
+  },
+  {
+   "id": "dotmaps:13175",
+   "name": "13th St Safety Improvement Project",
+   "department": "Public Works",
+   "contracts": [],
+   "series": [],
+   "url": "https://sfpublicworks.org/index.php/13thStreetSafety",
+   "title": "13th Street Safety Improvement Project",
+   "pageDepartment": "Public Works",
+   "pageStatus": "In progress",
+   "method": "name",
+   "confidence": "high",
+   "detail": "same name once filler words are dropped",
+   "ownDepartment": true,
+   "pageKind": "project",
+   "pavingMap": {
+    "contract": "13th St Safety Improvement Project",
+    "jo": "10039453",
+    "phase": "Under Construction",
+    "projectedYear": "FY24-25",
+    "estStart": "Winter 2025",
+    "estEnd": "Winter 2027",
+    "blocks": 16,
+    "matchedBy": "PeopleSoft id 10039453, 73% of the job's blocks"
+   }
   },
   {
    "id": "dotmaps:13198",
@@ -512,7 +538,23 @@
    "name": "PW VL Cr and Sub-Sdwlk Bsmnt No 3",
    "department": "Public Works",
    "contracts": [],
-   "series": []
+   "series": [],
+   "pavingMap": {
+    "contract": "PW VL Cr and Sub-Sdwlk Bsmnt No 3",
+    "jo": "10040022",
+    "phase": "Under Construction",
+    "projectedYear": "FY25-26",
+    "estStart": "Winter 2028",
+    "estEnd": "Winter 2028",
+    "blocks": 1,
+    "matchedBy": "same contract name"
+   },
+   "closest": {
+    "url": "https://sfpublicworks.org/street-resurfacing",
+    "title": "Public Works paving map",
+    "department": "Public Works",
+    "why": "the map lists this contract as “PW VL Cr and Sub-Sdwlk Bsmnt No 3” (Under Construction, projected for FY25-26)"
+   }
   },
   {
    "id": "dotmaps:23957",
@@ -1755,8 +1797,8 @@
     "projectedYear": "FY27-28",
     "estStart": "Spring 2028",
     "estEnd": "Summer 2030",
-    "blocks": 88,
-    "matchedBy": "PeopleSoft id 10042726, 100% of the job's blocks"
+    "blocks": 84,
+    "matchedBy": "PeopleSoft id 10042726, 95% of the job's blocks"
    },
    "closest": {
     "url": "https://sfpublicworks.org/street-resurfacing",
@@ -5611,8 +5653,8 @@
     "projectedYear": "FY25-26",
     "estStart": "Winter 2026",
     "estEnd": "Spring 2027",
-    "blocks": 53,
-    "matchedBy": "PeopleSoft id 10037894, 100% of the job's blocks"
+    "blocks": 52,
+    "matchedBy": "PeopleSoft id 10037894, 98% of the job's blocks"
    }
   },
   {
@@ -5623,19 +5665,19 @@
    "series": [],
    "pavingMap": {
     "contract": "Mission Street Infrastructure Improvements - Bernal Heights and Crocker Amazon Neighborhoods",
-    "jo": null,
+    "jo": "10044052",
     "phase": "Planning",
-    "projectedYear": "FY30-31",
-    "estStart": "Fall 2031",
-    "estEnd": "Winter 2033",
+    "projectedYear": null,
+    "estStart": "N/A",
+    "estEnd": "N/A",
     "blocks": 56,
-    "matchedBy": "same contract name"
+    "matchedBy": "PeopleSoft id 10044052, 100% of the job's blocks"
    },
    "closest": {
     "url": "https://sfpublicworks.org/street-resurfacing",
     "title": "Public Works paving map",
     "department": "Public Works",
-    "why": "the map lists this contract as “Mission Street Infrastructure Improvements - Bernal Heights and Crocker Amazon Neighborhoods” (Planning, projected for FY30-31)"
+    "why": "the map lists this contract as “Mission Street Infrastructure Improvements - Bernal Heights and Crocker Amazon Neighborhoods” (Planning)"
    }
   },
   {

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20",
+ "generated": "2026-11-24",
  "horizon": "2028-12-31",
  "adopted": "2025-03-04",
  "unit": "miles per direction of travel, the plan's unit",
@@ -8,14 +8,14 @@
   "feed": {
    "dataset": "btxj-k9uh",
    "url": "https://data.sf.gov/d/btxj-k9uh",
-   "queried": "2026-11-20",
-   "rows": 7596,
-   "jobs": 382
+   "queried": "2026-11-24",
+   "rows": 7618,
+   "jobs": 383
   },
   "sfmtaLayer": {
    "name": "SFMTA project layer, live from its ArcGIS service",
    "url": "https://www.sfmta.com/projects",
-   "generated": "2026-11-20"
+   "generated": "2026-11-24"
   },
   "plan": "[Biking and Rolling Plan, March 2025, Appendix L and North Star map \u2014 read 2026-09-29]",
   "layer": "[SFMTA ArcGIS Bicycle/bicycle layer 0 \u2014 queried 2026-11-10]",
@@ -67,8 +67,8 @@
    },
    "byWhen": {
     "in construction": 14.2,
-    "date passed, in design": 14.7,
-    "2026": 2.1,
+    "date passed, in design": 15.7,
+    "2026": 1.1,
     "2027": 7.9,
     "2028": 19.5
    },
@@ -77,18 +77,18 @@
    "projects": 103
   },
   "sfmta": {
-   "miles": 34.8,
-   "blocks": 234,
+   "miles": 34.6,
+   "blocks": 232,
    "byFlag": {
-    "upgrade": 16.5,
+    "upgrade": 16.3,
     "other": 15.5,
     "new": 2.9
    },
    "byWhen": {
-    "in construction": 13.7,
+    "in construction": 13.1,
     "date passed, in design": 14.3,
     "2026": 0.0,
-    "2027": 4.1,
+    "2027": 4.5,
     "2028": 2.7
    },
    "laterOrUndated": 3.0,
@@ -125,8 +125,8 @@
   "grid": {
    "repaving": {
     "in construction": 9.7,
-    "date passed, in design": 1.9,
-    "2026": 1.0,
+    "date passed, in design": 3.0,
+    "2026": 0.0,
     "2027": 4.5,
     "2028": 9.7
    },
@@ -167,16 +167,16 @@
     "in construction",
     "date passed, in design"
    ],
-   "could": 28.2,
-   "got": 7.2,
-   "blocks": 215,
+   "could": 29.3,
+   "got": 7.7,
+   "blocks": 220,
    "byScope": 0.0,
-   "bySfmta": 7.2,
+   "bySfmta": 7.7,
    "byCategory": {
-    "already": 13.05,
-    "none": 10.33,
-    "met": 8.02,
-    "short": 11.33
+    "already": 13.55,
+    "none": 10.51,
+    "met": 8.53,
+    "short": 11.69
    },
    "segments": [
     {
@@ -1280,6 +1280,26 @@
       [
        -122.44861,
        37.7184
+      ]
+     ]
+    },
+    {
+     "cnn": "11534000",
+     "cat": "short",
+     "street": "SANCHEZ ST",
+     "wants": "Shared",
+     "has": "sharrow",
+     "job": "Various Locations Pavement Renovation No 82",
+     "slug": "b29df4",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.42927,
+       37.74756
+      ],
+      [
+       -122.42919,
+       37.74676
       ]
      ]
     },
@@ -3804,6 +3824,46 @@
      ]
     },
     {
+     "cnn": "3736000",
+     "cat": "short",
+     "street": "CARROLL AVE",
+     "wants": "Shared",
+     "has": "sharrow",
+     "job": "PW Various Locations Sewer Replacement (JV VL PR No 82)",
+     "slug": "310750",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.38962,
+       37.72285
+      ],
+      [
+       -122.39149,
+       37.72391
+      ]
+     ]
+    },
+    {
+     "cnn": "3737000",
+     "cat": "met",
+     "street": "CARROLL AVE",
+     "wants": "Shared",
+     "has": "sharrow",
+     "job": "PW Various Locations Sewer Replacement (JV VL PR No 82)",
+     "slug": "310750",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.39149,
+       37.72391
+      ],
+      [
+       -122.39336,
+       37.72497
+      ]
+     ]
+    },
+    {
      "cnn": "404000",
      "cat": "already",
      "street": "08TH ST",
@@ -4648,6 +4708,26 @@
      ]
     },
     {
+     "cnn": "6187000",
+     "cat": "none",
+     "street": "GILMAN AVE",
+     "wants": "Separated",
+     "has": "",
+     "job": "Various Locations Pavement Renovation No 82",
+     "slug": "b29df4",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.38685,
+       37.71751
+      ],
+      [
+       -122.38814,
+       37.71824
+      ]
+     ]
+    },
+    {
      "cnn": "6208000",
      "cat": "none",
      "street": "GIRARD ST",
@@ -5380,6 +5460,26 @@
       [
        -122.3903,
        37.74879
+      ]
+     ]
+    },
+    {
+     "cnn": "7253000",
+     "cat": "met",
+     "street": "INNES AVE",
+     "wants": "Separated",
+     "has": "sharrow",
+     "job": "Various Locations Pavement Renovation No 82",
+     "slug": "b29df4",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.37201,
+       37.72987
+      ],
+      [
+       -122.37389,
+       37.73094
       ]
      ]
     },
@@ -6980,6 +7080,66 @@
      ]
     },
     {
+     "cnn": "9790000",
+     "cat": "already",
+     "street": "OAKDALE AVE",
+     "wants": "Shared",
+     "has": "painted lane",
+     "job": "Various Locations Pavement Renovation No 82",
+     "slug": "b29df4",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.39409,
+       37.73673
+      ],
+      [
+       -122.39512,
+       37.73731
+      ]
+     ]
+    },
+    {
+     "cnn": "9791000",
+     "cat": "already",
+     "street": "OAKDALE AVE",
+     "wants": "Shared",
+     "has": "painted lane",
+     "job": "Various Locations Pavement Renovation No 82",
+     "slug": "b29df4",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.39512,
+       37.73731
+      ],
+      [
+       -122.39594,
+       37.73778
+      ]
+     ]
+    },
+    {
+     "cnn": "9792000",
+     "cat": "already",
+     "street": "OAKDALE AVE",
+     "wants": "Shared",
+     "has": "painted lane",
+     "job": "Various Locations Pavement Renovation No 82",
+     "slug": "b29df4",
+     "start": "2026-11-23",
+     "line": [
+      [
+       -122.39594,
+       37.73778
+      ],
+      [
+       -122.39781,
+       37.73885
+      ]
+     ]
+    },
+    {
      "cnn": "9855000",
      "cat": "already",
      "street": "OCEAN AVE",
@@ -7520,16 +7680,16 @@
     "2027",
     "2028"
    ],
-   "could": 29.0,
-   "got": 3.7,
-   "blocks": 239,
+   "could": 28.0,
+   "got": 3.2,
+   "blocks": 234,
    "byScope": 0.1,
-   "bySfmta": 3.6,
+   "bySfmta": 3.1,
    "byCategory": {
-    "already": 13.53,
-    "none": 13.58,
-    "short": 13.99,
-    "met": 3.87
+    "already": 13.03,
+    "none": 13.41,
+    "short": 13.63,
+    "met": 3.37
    },
    "segments": [
     {
@@ -9193,26 +9353,6 @@
       [
        -122.4295,
        37.74996
-      ]
-     ]
-    },
-    {
-     "cnn": "11534000",
-     "cat": "short",
-     "street": "SANCHEZ ST",
-     "wants": "Shared",
-     "has": "sharrow",
-     "job": "Various Locations Pavement Renovation No 82",
-     "slug": "b29df4",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.42927,
-       37.74756
-      ],
-      [
-       -122.42919,
-       37.74676
       ]
      ]
     },
@@ -12417,46 +12557,6 @@
      ]
     },
     {
-     "cnn": "3736000",
-     "cat": "short",
-     "street": "CARROLL AVE",
-     "wants": "Shared",
-     "has": "sharrow",
-     "job": "PW Various Locations Sewer Replacement (JV VL PR No 82)",
-     "slug": "310750",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.38962,
-       37.72285
-      ],
-      [
-       -122.39149,
-       37.72391
-      ]
-     ]
-    },
-    {
-     "cnn": "3737000",
-     "cat": "met",
-     "street": "CARROLL AVE",
-     "wants": "Shared",
-     "has": "sharrow",
-     "job": "PW Various Locations Sewer Replacement (JV VL PR No 82)",
-     "slug": "310750",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.39149,
-       37.72391
-      ],
-      [
-       -122.39336,
-       37.72497
-      ]
-     ]
-    },
-    {
      "cnn": "375000",
      "cat": "already",
      "street": "07TH ST",
@@ -13501,26 +13601,6 @@
      ]
     },
     {
-     "cnn": "6187000",
-     "cat": "none",
-     "street": "GILMAN AVE",
-     "wants": "Separated",
-     "has": "",
-     "job": "Various Locations Pavement Renovation No 82",
-     "slug": "b29df4",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.38685,
-       37.71751
-      ],
-      [
-       -122.38814,
-       37.71824
-      ]
-     ]
-    },
-    {
      "cnn": "6196000",
      "cat": "none",
      "street": "GIRARD ST",
@@ -13969,26 +14049,6 @@
       [
        -122.38827,
        37.74004
-      ]
-     ]
-    },
-    {
-     "cnn": "7253000",
-     "cat": "met",
-     "street": "INNES AVE",
-     "wants": "Separated",
-     "has": "sharrow",
-     "job": "Various Locations Pavement Renovation No 82",
-     "slug": "b29df4",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.37201,
-       37.72987
-      ],
-      [
-       -122.37389,
-       37.73094
       ]
      ]
     },
@@ -15657,66 +15717,6 @@
      ]
     },
     {
-     "cnn": "9790000",
-     "cat": "already",
-     "street": "OAKDALE AVE",
-     "wants": "Shared",
-     "has": "painted lane",
-     "job": "Various Locations Pavement Renovation No 82",
-     "slug": "b29df4",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.39409,
-       37.73673
-      ],
-      [
-       -122.39512,
-       37.73731
-      ]
-     ]
-    },
-    {
-     "cnn": "9791000",
-     "cat": "already",
-     "street": "OAKDALE AVE",
-     "wants": "Shared",
-     "has": "painted lane",
-     "job": "Various Locations Pavement Renovation No 82",
-     "slug": "b29df4",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.39512,
-       37.73731
-      ],
-      [
-       -122.39594,
-       37.73778
-      ]
-     ]
-    },
-    {
-     "cnn": "9792000",
-     "cat": "already",
-     "street": "OAKDALE AVE",
-     "wants": "Shared",
-     "has": "painted lane",
-     "job": "Various Locations Pavement Renovation No 82",
-     "slug": "b29df4",
-     "start": "2026-11-23",
-     "line": [
-      [
-       -122.39594,
-       37.73778
-      ],
-      [
-       -122.39781,
-       37.73885
-      ]
-     ]
-    },
-    {
      "cnn": "9795000",
      "cat": "already",
      "street": "OAKDALE AVE",
@@ -16482,6 +16482,38 @@
     "met": 0.47
    }
   },
+  "310750": {
+   "cnns": [
+    "3736000",
+    "3737000"
+   ],
+   "overlapMiles": 0.5,
+   "plannedMiles": 0.25,
+   "byCategory": {
+    "short": 0.25,
+    "met": 0.25
+   }
+  },
+  "b29df4": {
+   "cnns": [
+    "11534000",
+    "3736000",
+    "3737000",
+    "6187000",
+    "7253000",
+    "9790000",
+    "9791000",
+    "9792000"
+   ],
+   "overlapMiles": 1.04,
+   "plannedMiles": 0.5,
+   "byCategory": {
+    "short": 0.36,
+    "met": 0.5,
+    "none": 0.17,
+    "already": 0.5
+   }
+  },
   "cfc7b6": {
    "cnns": [
     "1953000",
@@ -16611,38 +16643,6 @@
     "none": 0.19,
     "already": 0.38,
     "short": 0.09
-   }
-  },
-  "310750": {
-   "cnns": [
-    "3736000",
-    "3737000"
-   ],
-   "overlapMiles": 0.5,
-   "plannedMiles": 0.25,
-   "byCategory": {
-    "short": 0.25,
-    "met": 0.25
-   }
-  },
-  "b29df4": {
-   "cnns": [
-    "11534000",
-    "3736000",
-    "3737000",
-    "6187000",
-    "7253000",
-    "9790000",
-    "9791000",
-    "9792000"
-   ],
-   "overlapMiles": 1.04,
-   "plannedMiles": 0.5,
-   "byCategory": {
-    "short": 0.36,
-    "met": 0.5,
-    "none": 0.17,
-    "already": 0.5
    }
   },
   "6986f5": {
@@ -18588,7 +18588,7 @@
    "name": "Various Locations Pavement Renovation No 82",
    "department": "Public Works",
    "kind": "repaving",
-   "when": "2026",
+   "when": "date passed, in design",
    "bikeScope": null,
    "start": "2026-11-23",
    "miles": 1.04,
@@ -18670,7 +18670,7 @@
    "kind": "SFMTA bike and safety",
    "when": "in construction",
    "bikeScope": true,
-   "start": "2025",
+   "start": "2025-02-03",
    "miles": 0.97,
    "slug": "dc1b89"
   },
@@ -18853,16 +18853,6 @@
    "start": "2028-12-14",
    "miles": 0.74,
    "slug": "9cbcf3"
-  },
-  {
-   "name": "Beach Street Quick-Build Project",
-   "department": "SFMTA",
-   "kind": "SFMTA bike and safety",
-   "when": "in construction",
-   "bikeScope": true,
-   "start": "2026-04-01",
-   "miles": 0.73,
-   "slug": "44073a"
   },
   {
    "name": "Folsom-Howard Streetscape Project",
@@ -19098,7 +19088,7 @@
    "name": "PW Various Locations Sewer Replacement (JV VL PR No 82)",
    "department": "Public Works",
    "kind": "sewer, water and power",
-   "when": "2026",
+   "when": "date passed, in design",
    "bikeScope": null,
    "start": "2026-11-23",
    "miles": 0.5,
@@ -19723,6 +19713,16 @@
    "start": "2025-06-25",
    "miles": 0.12,
    "slug": "5ef87e"
+  },
+  {
+   "name": "Beach Street Quick-Build",
+   "department": "SFMTA",
+   "kind": "SFMTA bike and safety",
+   "when": "in construction",
+   "bikeScope": true,
+   "start": "2026-04-01",
+   "miles": 0.12,
+   "slug": "be5f3b"
   },
   {
    "name": "FASIP - Western SOMA and Northern Mission District Sewer System",

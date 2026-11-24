@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10",
+ "generated": "2026-11-24",
  "adopted": "2025-03-04",
  "window": {
   "from": "2025-03",
@@ -27,7 +27,7 @@
    "name": "Beach Street Quick-Build Project",
    "page": "https://www.sfmta.com/node/28896",
    "class": "CLASS IV",
-   "month": "2026-08",
+   "month": "2026-11",
    "rows_upgraded": 0,
    "rows_added": 0
   }
@@ -379,8 +379,8 @@
    },
    "centerlines": {
     "id": "3psu-pn9h",
-    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-10]",
-    "queried": "2026-11-10"
+    "tag": "[DataSF 3psu-pn9h \u2014 queried 2026-11-24]",
+    "queried": "2026-11-24"
    }
   }
  },
@@ -966,7 +966,7 @@
     {
      "name": "Beach Street Quick-Build Project",
      "page": "https://www.sfmta.com/node/28896",
-     "phase": "Implementation / Construction",
+     "phase": "Completed",
      "rows": 4
     }
    ]

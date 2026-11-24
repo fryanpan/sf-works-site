@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17",
+ "generated": "2026-11-24",
  "source": "https://maps.sfdpw.org/arcgis/rest/services/Capital_Projects/Paving/MapServer",
  "page": "https://sfpublicworks.org/street-resurfacing",
  "contracts": [
@@ -27,7 +27,7 @@
    "phase": "Under Construction",
    "projectedYear": "FY24-25",
    "estStart": "Winter 2025",
-   "estEnd": "Fall 2026",
+   "estEnd": "Winter 2027",
    "blocks": 16
   },
   {
@@ -1913,11 +1913,11 @@
   },
   {
    "contract": "Mission Street Infrastructure Improvements - Bernal Heights and Crocker Amazon Neighborhoods",
-   "jo": null,
+   "jo": "10044052",
    "phase": "Planning",
-   "projectedYear": "FY30-31",
-   "estStart": "Fall 2031",
-   "estEnd": "Winter 2033",
+   "projectedYear": null,
+   "estStart": "N/A",
+   "estEnd": "N/A",
    "blocks": 56
   },
   {
@@ -2648,6 +2648,15 @@
    "estStart": "Summer 2016",
    "estEnd": "Summer 2017",
    "blocks": 4
+  },
+  {
+   "contract": "PW VL Cr and Sub-Sdwlk Bsmnt No 3",
+   "jo": "10040022",
+   "phase": "Under Construction",
+   "projectedYear": "FY25-26",
+   "estStart": "Winter 2028",
+   "estEnd": "Winter 2028",
+   "blocks": 1
   },
   {
    "contract": "PW Various Locations No44 Infrastructure Improvements",
@@ -3871,7 +3880,7 @@
    "projectedYear": "FY25-26",
    "estStart": "Winter 2026",
    "estEnd": "Spring 2027",
-   "blocks": 53
+   "blocks": 52
   },
   {
    "contract": "Various Locations Pavement Renovation No 81 and Sewer Replacement",
@@ -3961,7 +3970,7 @@
    "projectedYear": "FY27-28",
    "estStart": "Spring 2028",
    "estEnd": "Summer 2030",
-   "blocks": 88
+   "blocks": 84
   },
   {
    "contract": "Various Locations Pavement Renovation No13 And Sewer Replacement",

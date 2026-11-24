@@ -7339,7 +7339,7 @@
    "asked": "2026-10-01",
    "candidates": 12,
    "conflicts": [],
-   "constructionStage": "“March 2024” (Construction (Pending))",
+   "constructionStage": "“March 2024” (Construction (Completed))",
    "costUsd": 0.01942,
    "fields": {
     "construction_end": {
@@ -7397,9 +7397,9 @@
   },
   "28896": {
    "asked": "2026-10-01",
-   "candidates": 8,
+   "candidates": 9,
    "conflicts": [],
-   "constructionStage": "“Winter 2025” (Construction (Pending))",
+   "constructionStage": "“Summer 2026” (Construction (Completed))",
    "costUsd": 0.024452,
    "fields": {
     "construction_end": {
@@ -7447,14 +7447,14 @@
    },
    "hash": "c56e1b7bb0a23b9b058ea101c90f69c3bca5faa60e5e70ccd8abe3209dcd6028",
    "inputTokens": 3238,
-   "latestDate": "2025-02-28",
-   "latestStageDate": "2025-02-28",
+   "latestDate": "2026-12-31",
+   "latestStageDate": "2026-08-31",
    "model": "claude-opus-5-5",
    "node": "28896",
    "outputTokens": 575,
    "predictedCompletion": null,
    "projectStatus": [
-    "Implementation / Construction"
+    "Completed"
    ],
    "status": "answered",
    "title": "Beach Street Quick-Build Project",
@@ -20408,7 +20408,7 @@
  },
  "pricePerMillionInputTokens": 4.0,
  "pricePerMillionOutputTokens": 20.0,
- "script": "scripts/sfmta-page-dates.py",
+ "script": "tools/projects/sfmta-page-dates.py",
  "source": "Claude (claude-opus-5-5) reading every sfmta.com /projects/ page in data/extract/sfmta-pages/sitemap.json",
  "summary": {
   "answered": 395,

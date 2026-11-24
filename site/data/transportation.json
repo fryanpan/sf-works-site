@@ -1,7 +1,7 @@
 {
  "mileBasis": "per direction of travel",
  "adopted": "2025-03-04",
- "queriedAt": "2026-11-20",
+ "queriedAt": "2026-11-24",
  "validThrough": {
   "date": "2026-10-19",
   "limitedBy": "Bikeway network layer",
@@ -61,8 +61,8 @@
   "unknown": 85,
   "unknownShortfall": 52,
   "citywide": {
-   "segmentsWithBikeProject": 655,
-   "alsoOnPlan": 284,
+   "segmentsWithBikeProject": 673,
+   "alsoOnPlan": 293,
    "alsoRepavedSinceAdoption": 11
   }
  },
@@ -85,25 +85,25 @@
   ]
  },
  "upcoming": {
-  "today": "2026-11-20",
+  "today": "2026-11-24",
   "noticeDays": 120,
-  "totalProjects": 382,
-  "projectRows": 7596,
-  "onPlan": 209,
+  "totalProjects": 383,
+  "projectRows": 7618,
+  "onPlan": 210,
   "ask": 186,
   "onPlanNotChangeable": 0,
-  "onPlanScopeNamed": 23,
-  "soon": 18,
-  "later": 168,
+  "onPlanScopeNamed": 24,
+  "soon": 16,
+  "later": 170,
   "soonPhases": {
-   "Design": 15,
+   "Design": 13,
    "Planning": 2,
    "Construction": 1
   },
   "medianRunDays": 440,
   "scopeCounts": {
    "the record does not say": 186,
-   "bike work named": 10,
+   "bike work named": 11,
    "walking or streetscape named": 9,
    "SFMTA street-design unit": 4
   },
@@ -115,8 +115,8 @@
    {
     "agency": "SF DPW IDC - Streets & Highways",
     "utility": false,
-    "projects": 61,
-    "blocks": 627,
+    "projects": 62,
+    "blocks": 637,
     "silentBlocks": 627
    },
    {
@@ -268,8 +268,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -736,
-    "daysToEnd": 5,
+    "daysToStart": -740,
+    "daysToEnd": 1,
     "inNoticeWindow": false
    },
    {
@@ -297,8 +297,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -3320,
-    "daysToEnd": 10,
+    "daysToStart": -3324,
+    "daysToEnd": 6,
     "inNoticeWindow": false
    },
    {
@@ -333,8 +333,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -837,
-    "daysToEnd": 10,
+    "daysToStart": -841,
+    "daysToEnd": 6,
     "inNoticeWindow": false
    },
    {
@@ -379,8 +379,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -963,
-    "daysToEnd": 11,
+    "daysToStart": -967,
+    "daysToEnd": 7,
     "inNoticeWindow": false
    },
    {
@@ -414,8 +414,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -513,
-    "daysToEnd": 21,
+    "daysToStart": -517,
+    "daysToEnd": 17,
     "inNoticeWindow": false
    },
    {
@@ -446,8 +446,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -267,
-    "daysToEnd": 35,
+    "daysToStart": -271,
+    "daysToEnd": 31,
     "inNoticeWindow": false
    },
    {
@@ -476,8 +476,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -507,8 +507,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -539,8 +539,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -566,8 +566,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -593,8 +593,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -623,8 +623,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -650,8 +650,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -678,8 +678,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -708,8 +708,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -735,8 +735,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -767,8 +767,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -799,8 +799,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -828,8 +828,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -856,8 +856,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -884,8 +884,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -914,8 +914,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -942,8 +942,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -970,8 +970,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1002,8 +1002,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 41,
+    "daysToStart": -327,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1053,8 +1053,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1329,
-    "daysToEnd": 41,
+    "daysToStart": -1333,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1090,8 +1090,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -280,
-    "daysToEnd": 41,
+    "daysToStart": -284,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1129,8 +1129,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -1207,
-    "daysToEnd": 41,
+    "daysToStart": -1211,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1159,8 +1159,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -233,
-    "daysToEnd": 41,
+    "daysToStart": -237,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1188,8 +1188,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -338,
-    "daysToEnd": 41,
+    "daysToStart": -342,
+    "daysToEnd": 37,
     "inNoticeWindow": false
    },
    {
@@ -1234,8 +1234,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1059,
-    "daysToEnd": 42,
+    "daysToStart": -1063,
+    "daysToEnd": 38,
     "inNoticeWindow": false
    },
    {
@@ -1265,8 +1265,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -116,
-    "daysToEnd": 48,
+    "daysToStart": -120,
+    "daysToEnd": 44,
     "inNoticeWindow": false
    },
    {
@@ -1310,8 +1310,48 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -537,
-    "daysToEnd": 61,
+    "daysToStart": -541,
+    "daysToEnd": 57,
+    "inNoticeWindow": false
+   },
+   {
+    "id": "13175",
+    "name": "13th St Safety Improvement Project",
+    "agency": "SF DPW IDC - Streets & Highways",
+    "phase": "Construction",
+    "start": "2025-02-03",
+    "end": "2027-01-29",
+    "streets": [
+     "13th St",
+     "Duboce Ave",
+     "South Van Ness Ave"
+    ],
+    "segments": 22,
+    "segmentsWithBikeway": 1,
+    "segmentsLocked": 1,
+    "segmentsOnPlan": 10,
+    "onPlanCnns": [
+     "550101",
+     "550201",
+     "551102",
+     "549203",
+     "551201",
+     "551101",
+     "4978201",
+     "4978101",
+     "4979000",
+     "4978102"
+    ],
+    "plannedFacility": [
+     "Separated"
+    ],
+    "planMatch": "centerline",
+    "planMetres": null,
+    "scope": "bike work named",
+    "changeable": true,
+    "ask": false,
+    "daysToStart": -659,
+    "daysToEnd": 66,
     "inNoticeWindow": false
    },
    {
@@ -1341,8 +1381,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -292,
-    "daysToEnd": 72,
+    "daysToStart": -296,
+    "daysToEnd": 68,
     "inNoticeWindow": false
    },
    {
@@ -1380,8 +1420,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -221,
-    "daysToEnd": 78,
+    "daysToStart": -225,
+    "daysToEnd": 74,
     "inNoticeWindow": false
    },
    {
@@ -1414,8 +1454,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -438,
-    "daysToEnd": 81,
+    "daysToStart": -442,
+    "daysToEnd": 77,
     "inNoticeWindow": false
    },
    {
@@ -1451,8 +1491,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -876,
-    "daysToEnd": 95,
+    "daysToStart": -880,
+    "daysToEnd": 91,
     "inNoticeWindow": false
    },
    {
@@ -1489,8 +1529,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -352,
-    "daysToEnd": 97,
+    "daysToStart": -356,
+    "daysToEnd": 93,
     "inNoticeWindow": false
    },
    {
@@ -1516,8 +1556,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -80,
-    "daysToEnd": 100,
+    "daysToStart": -84,
+    "daysToEnd": 96,
     "inNoticeWindow": false
    },
    {
@@ -1554,8 +1594,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -655,
-    "daysToEnd": 101,
+    "daysToStart": -659,
+    "daysToEnd": 97,
     "inNoticeWindow": false
    },
    {
@@ -1594,8 +1634,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -655,
-    "daysToEnd": 101,
+    "daysToStart": -659,
+    "daysToEnd": 97,
     "inNoticeWindow": false
    },
    {
@@ -1629,8 +1669,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1002,
-    "daysToEnd": 132,
+    "daysToStart": -1006,
+    "daysToEnd": 128,
     "inNoticeWindow": false
    },
    {
@@ -1658,8 +1698,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -102,
-    "daysToEnd": 139,
+    "daysToStart": -106,
+    "daysToEnd": 135,
     "inNoticeWindow": false
    },
    {
@@ -1694,8 +1734,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -997,
-    "daysToEnd": 144,
+    "daysToStart": -1001,
+    "daysToEnd": 140,
     "inNoticeWindow": false
    },
    {
@@ -1729,8 +1769,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -312,
-    "daysToEnd": 177,
+    "daysToStart": -316,
+    "daysToEnd": 173,
     "inNoticeWindow": false
    },
    {
@@ -1759,8 +1799,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 59,
-    "daysToEnd": 179,
+    "daysToStart": 55,
+    "daysToEnd": 175,
     "inNoticeWindow": true
    },
    {
@@ -1793,8 +1833,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -137,
-    "daysToEnd": 191,
+    "daysToStart": -141,
+    "daysToEnd": 187,
     "inNoticeWindow": false
    },
    {
@@ -1832,8 +1872,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1368,
-    "daysToEnd": 192,
+    "daysToStart": -1372,
+    "daysToEnd": 188,
     "inNoticeWindow": false
    },
    {
@@ -1869,8 +1909,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -704,
-    "daysToEnd": 193,
+    "daysToStart": -708,
+    "daysToEnd": 189,
     "inNoticeWindow": false
    },
    {
@@ -1903,8 +1943,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -235,
-    "daysToEnd": 204,
+    "daysToStart": -239,
+    "daysToEnd": 200,
     "inNoticeWindow": false
    },
    {
@@ -1951,8 +1991,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -235,
-    "daysToEnd": 204,
+    "daysToStart": -239,
+    "daysToEnd": 200,
     "inNoticeWindow": false
    },
    {
@@ -2002,8 +2042,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -158,
-    "daysToEnd": 206,
+    "daysToStart": -162,
+    "daysToEnd": 202,
     "inNoticeWindow": false
    },
    {
@@ -2038,8 +2078,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -158,
-    "daysToEnd": 206,
+    "daysToStart": -162,
+    "daysToEnd": 202,
     "inNoticeWindow": false
    },
    {
@@ -2149,8 +2189,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -507,
-    "daysToEnd": 222,
+    "daysToStart": -511,
+    "daysToEnd": 218,
     "inNoticeWindow": false
    },
    {
@@ -2196,8 +2236,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -50,
-    "daysToEnd": 222,
+    "daysToStart": -54,
+    "daysToEnd": 218,
     "inNoticeWindow": false
    },
    {
@@ -2225,8 +2265,8 @@
     "scope": "SFMTA street-design unit",
     "changeable": true,
     "ask": false,
-    "daysToStart": 11,
-    "daysToEnd": 222,
+    "daysToStart": 7,
+    "daysToEnd": 218,
     "inNoticeWindow": true
    },
    {
@@ -2287,8 +2327,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -142,
-    "daysToEnd": 229,
+    "daysToStart": -146,
+    "daysToEnd": 225,
     "inNoticeWindow": false
    },
    {
@@ -2343,8 +2383,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -142,
-    "daysToEnd": 229,
+    "daysToStart": -146,
+    "daysToEnd": 225,
     "inNoticeWindow": false
    },
    {
@@ -2372,8 +2412,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -786,
-    "daysToEnd": 237,
+    "daysToStart": -790,
+    "daysToEnd": 233,
     "inNoticeWindow": false
    },
    {
@@ -2406,8 +2446,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -102,
-    "daysToEnd": 263,
+    "daysToStart": -106,
+    "daysToEnd": 259,
     "inNoticeWindow": false
    },
    {
@@ -2446,8 +2486,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 132,
-    "daysToEnd": 284,
+    "daysToStart": 128,
+    "daysToEnd": 280,
     "inNoticeWindow": false
    },
    {
@@ -2475,8 +2515,8 @@
     "scope": "SFMTA street-design unit",
     "changeable": true,
     "ask": false,
-    "daysToStart": -72,
-    "daysToEnd": 294,
+    "daysToStart": -76,
+    "daysToEnd": 290,
     "inNoticeWindow": false
    },
    {
@@ -2512,8 +2552,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -781,
-    "daysToEnd": 314,
+    "daysToStart": -785,
+    "daysToEnd": 310,
     "inNoticeWindow": false
    },
    {
@@ -2551,8 +2591,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -459,
-    "daysToEnd": 326,
+    "daysToStart": -463,
+    "daysToEnd": 322,
     "inNoticeWindow": false
    },
    {
@@ -2597,8 +2637,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -123,
-    "daysToEnd": 326,
+    "daysToStart": -127,
+    "daysToEnd": 322,
     "inNoticeWindow": false
    },
    {
@@ -2638,8 +2678,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -459,
-    "daysToEnd": 326,
+    "daysToStart": -463,
+    "daysToEnd": 322,
     "inNoticeWindow": false
    },
    {
@@ -2675,8 +2715,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -123,
-    "daysToEnd": 326,
+    "daysToStart": -127,
+    "daysToEnd": 322,
     "inNoticeWindow": false
    },
    {
@@ -2711,8 +2751,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -536,
-    "daysToEnd": 343,
+    "daysToStart": -540,
+    "daysToEnd": 339,
     "inNoticeWindow": false
    },
    {
@@ -2745,8 +2785,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 99,
-    "daysToEnd": 349,
+    "daysToStart": 95,
+    "daysToEnd": 345,
     "inNoticeWindow": true
    },
    {
@@ -2780,8 +2820,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -14,
-    "daysToEnd": 351,
+    "daysToStart": -18,
+    "daysToEnd": 347,
     "inNoticeWindow": false
    },
    {
@@ -2817,8 +2857,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -11,
-    "daysToEnd": 353,
+    "daysToStart": -15,
+    "daysToEnd": 349,
     "inNoticeWindow": false
    },
    {
@@ -2856,8 +2896,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -221,
-    "daysToEnd": 384,
+    "daysToStart": -225,
+    "daysToEnd": 380,
     "inNoticeWindow": false
    },
    {
@@ -2893,8 +2933,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -597,
-    "daysToEnd": 402,
+    "daysToStart": -601,
+    "daysToEnd": 398,
     "inNoticeWindow": false
    },
    {
@@ -2923,8 +2963,8 @@
     "scope": "SFMTA street-design unit",
     "changeable": true,
     "ask": false,
-    "daysToStart": -1148,
-    "daysToEnd": 406,
+    "daysToStart": -1152,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -2968,7 +3008,7 @@
     "changeable": true,
     "ask": false,
     "daysToStart": null,
-    "daysToEnd": 406,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -3025,8 +3065,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -969,
-    "daysToEnd": 406,
+    "daysToStart": -973,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -3058,8 +3098,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 406,
+    "daysToStart": -327,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -3100,8 +3140,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 406,
+    "daysToStart": -327,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -3132,8 +3172,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 42,
-    "daysToEnd": 406,
+    "daysToStart": 38,
+    "daysToEnd": 402,
     "inNoticeWindow": true
    },
    {
@@ -3168,8 +3208,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 42,
-    "daysToEnd": 406,
+    "daysToStart": 38,
+    "daysToEnd": 402,
     "inNoticeWindow": true
    },
    {
@@ -3201,8 +3241,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -80,
-    "daysToEnd": 406,
+    "daysToStart": -84,
+    "daysToEnd": 402,
     "inNoticeWindow": false
    },
    {
@@ -3234,8 +3274,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 42,
-    "daysToEnd": 407,
+    "daysToStart": 38,
+    "daysToEnd": 403,
     "inNoticeWindow": true
    },
    {
@@ -3268,8 +3308,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 64,
-    "daysToEnd": 428,
+    "daysToStart": 60,
+    "daysToEnd": 424,
     "inNoticeWindow": true
    },
    {
@@ -3304,8 +3344,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 69,
-    "daysToEnd": 434,
+    "daysToStart": 65,
+    "daysToEnd": 430,
     "inNoticeWindow": true
    },
    {
@@ -3338,8 +3378,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -673,
-    "daysToEnd": 434,
+    "daysToStart": -677,
+    "daysToEnd": 430,
     "inNoticeWindow": false
    },
    {
@@ -3370,8 +3410,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1711,
-    "daysToEnd": 438,
+    "daysToStart": -1715,
+    "daysToEnd": 434,
     "inNoticeWindow": false
    },
    {
@@ -3412,9 +3452,9 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 3,
-    "daysToEnd": 442,
-    "inNoticeWindow": true
+    "daysToStart": -1,
+    "daysToEnd": 438,
+    "inNoticeWindow": false
    },
    {
     "id": "26428",
@@ -3447,9 +3487,9 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 3,
-    "daysToEnd": 442,
-    "inNoticeWindow": true
+    "daysToStart": -1,
+    "daysToEnd": 438,
+    "inNoticeWindow": false
    },
    {
     "id": "9107",
@@ -3478,8 +3518,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 95,
-    "daysToEnd": 462,
+    "daysToStart": 91,
+    "daysToEnd": 458,
     "inNoticeWindow": true
    },
    {
@@ -3512,8 +3552,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 99,
-    "daysToEnd": 464,
+    "daysToStart": 95,
+    "daysToEnd": 460,
     "inNoticeWindow": true
    },
    {
@@ -3559,8 +3599,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -963,
-    "daysToEnd": 467,
+    "daysToStart": -967,
+    "daysToEnd": 463,
     "inNoticeWindow": false
    },
    {
@@ -3600,8 +3640,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 220,
-    "daysToEnd": 490,
+    "daysToStart": 216,
+    "daysToEnd": 486,
     "inNoticeWindow": false
    },
    {
@@ -3641,8 +3681,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -233,
-    "daysToEnd": 498,
+    "daysToStart": -237,
+    "daysToEnd": 494,
     "inNoticeWindow": false
    },
    {
@@ -3675,8 +3715,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -228,
-    "daysToEnd": 501,
+    "daysToStart": -232,
+    "daysToEnd": 497,
     "inNoticeWindow": false
    },
    {
@@ -3718,8 +3758,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 69,
-    "daysToEnd": 509,
+    "daysToStart": 65,
+    "daysToEnd": 505,
     "inNoticeWindow": true
    },
    {
@@ -3757,8 +3797,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 69,
-    "daysToEnd": 509,
+    "daysToStart": 65,
+    "daysToEnd": 505,
     "inNoticeWindow": true
    },
    {
@@ -3790,8 +3830,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 78,
-    "daysToEnd": 517,
+    "daysToStart": 74,
+    "daysToEnd": 513,
     "inNoticeWindow": true
    },
    {
@@ -3833,8 +3873,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 78,
-    "daysToEnd": 517,
+    "daysToStart": 74,
+    "daysToEnd": 513,
     "inNoticeWindow": true
    },
    {
@@ -3862,8 +3902,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1390,
-    "daysToEnd": 525,
+    "daysToStart": -1394,
+    "daysToEnd": 521,
     "inNoticeWindow": false
    },
    {
@@ -3898,8 +3938,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 176,
-    "daysToEnd": 541,
+    "daysToStart": 172,
+    "daysToEnd": 537,
     "inNoticeWindow": false
    },
    {
@@ -3935,8 +3975,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -172,
-    "daysToEnd": 548,
+    "daysToStart": -176,
+    "daysToEnd": 544,
     "inNoticeWindow": false
    },
    {
@@ -3971,8 +4011,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 113,
-    "daysToEnd": 553,
+    "daysToStart": 109,
+    "daysToEnd": 549,
     "inNoticeWindow": true
    },
    {
@@ -4000,8 +4040,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -396,
-    "daysToEnd": 553,
+    "daysToStart": -400,
+    "daysToEnd": 549,
     "inNoticeWindow": false
    },
    {
@@ -4034,8 +4074,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 157,
-    "daysToEnd": 557,
+    "daysToStart": 153,
+    "daysToEnd": 553,
     "inNoticeWindow": false
    },
    {
@@ -4074,8 +4114,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 199,
-    "daysToEnd": 567,
+    "daysToStart": 195,
+    "daysToEnd": 563,
     "inNoticeWindow": false
    },
    {
@@ -4112,8 +4152,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 129,
-    "daysToEnd": 569,
+    "daysToStart": 125,
+    "daysToEnd": 565,
     "inNoticeWindow": false
    },
    {
@@ -4154,8 +4194,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 180,
-    "daysToEnd": 574,
+    "daysToStart": 176,
+    "daysToEnd": 570,
     "inNoticeWindow": false
    },
    {
@@ -4191,8 +4231,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1246,
-    "daysToEnd": 578,
+    "daysToStart": -1250,
+    "daysToEnd": 574,
     "inNoticeWindow": false
    },
    {
@@ -4220,8 +4260,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1254,
-    "daysToEnd": 588,
+    "daysToStart": -1258,
+    "daysToEnd": 584,
     "inNoticeWindow": false
    },
    {
@@ -4274,8 +4314,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 223,
-    "daysToEnd": 588,
+    "daysToStart": 219,
+    "daysToEnd": 584,
     "inNoticeWindow": false
    },
    {
@@ -4308,8 +4348,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 223,
-    "daysToEnd": 588,
+    "daysToStart": 219,
+    "daysToEnd": 584,
     "inNoticeWindow": false
    },
    {
@@ -4357,8 +4397,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -963,
-    "daysToEnd": 588,
+    "daysToStart": -967,
+    "daysToEnd": 584,
     "inNoticeWindow": false
    },
    {
@@ -4403,8 +4443,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 374,
-    "daysToEnd": 617,
+    "daysToStart": 370,
+    "daysToEnd": 613,
     "inNoticeWindow": false
    },
    {
@@ -4439,8 +4479,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1021,
-    "daysToEnd": 620,
+    "daysToStart": -1025,
+    "daysToEnd": 616,
     "inNoticeWindow": false
    },
    {
@@ -4477,8 +4517,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 195,
-    "daysToEnd": 620,
+    "daysToStart": 191,
+    "daysToEnd": 616,
     "inNoticeWindow": false
    },
    {
@@ -4530,8 +4570,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 197,
-    "daysToEnd": 637,
+    "daysToStart": 193,
+    "daysToEnd": 633,
     "inNoticeWindow": false
    },
    {
@@ -4563,8 +4603,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 197,
-    "daysToEnd": 637,
+    "daysToStart": 193,
+    "daysToEnd": 633,
     "inNoticeWindow": false
    },
    {
@@ -4597,8 +4637,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 272,
-    "daysToEnd": 639,
+    "daysToStart": 268,
+    "daysToEnd": 635,
     "inNoticeWindow": false
    },
    {
@@ -4631,8 +4671,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 284,
-    "daysToEnd": 649,
+    "daysToStart": 280,
+    "daysToEnd": 645,
     "inNoticeWindow": false
    },
    {
@@ -4672,8 +4712,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 315,
-    "daysToEnd": 677,
+    "daysToStart": 311,
+    "daysToEnd": 673,
     "inNoticeWindow": false
    },
    {
@@ -4708,8 +4748,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -507,
-    "daysToEnd": 680,
+    "daysToStart": -511,
+    "daysToEnd": 676,
     "inNoticeWindow": false
    },
    {
@@ -4740,8 +4780,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -253,
-    "daysToEnd": 680,
+    "daysToStart": -257,
+    "daysToEnd": 676,
     "inNoticeWindow": false
    },
    {
@@ -4769,8 +4809,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -1239,
-    "daysToEnd": 697,
+    "daysToStart": -1243,
+    "daysToEnd": 693,
     "inNoticeWindow": false
    },
    {
@@ -4814,8 +4854,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -401,
-    "daysToEnd": 698,
+    "daysToStart": -405,
+    "daysToEnd": 694,
     "inNoticeWindow": false
    },
    {
@@ -4850,8 +4890,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 236,
-    "daysToEnd": 700,
+    "daysToStart": 232,
+    "daysToEnd": 696,
     "inNoticeWindow": false
    },
    {
@@ -4879,8 +4919,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 38,
-    "daysToEnd": 708,
+    "daysToStart": 34,
+    "daysToEnd": 704,
     "inNoticeWindow": true
    },
    {
@@ -4922,8 +4962,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 288,
-    "daysToEnd": 727,
+    "daysToStart": 284,
+    "daysToEnd": 723,
     "inNoticeWindow": false
    },
    {
@@ -4956,8 +4996,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 204,
-    "daysToEnd": 754,
+    "daysToStart": 200,
+    "daysToEnd": 750,
     "inNoticeWindow": false
    },
    {
@@ -4987,8 +5027,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -657,
-    "daysToEnd": 772,
+    "daysToStart": -661,
+    "daysToEnd": 768,
     "inNoticeWindow": false
    },
    {
@@ -5050,8 +5090,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 407,
-    "daysToEnd": 772,
+    "daysToStart": 403,
+    "daysToEnd": 768,
     "inNoticeWindow": false
    },
    {
@@ -5079,8 +5119,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -1148,
-    "daysToEnd": 772,
+    "daysToStart": -1152,
+    "daysToEnd": 768,
     "inNoticeWindow": false
    },
    {
@@ -5127,8 +5167,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -80,
-    "daysToEnd": 772,
+    "daysToStart": -84,
+    "daysToEnd": 768,
     "inNoticeWindow": false
    },
    {
@@ -5166,8 +5206,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -80,
-    "daysToEnd": 772,
+    "daysToStart": -84,
+    "daysToEnd": 768,
     "inNoticeWindow": false
    },
    {
@@ -5201,8 +5241,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 773,
+    "daysToStart": -327,
+    "daysToEnd": 769,
     "inNoticeWindow": false
    },
    {
@@ -5241,8 +5281,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 236,
-    "daysToEnd": 775,
+    "daysToStart": 232,
+    "daysToEnd": 771,
     "inNoticeWindow": false
    },
    {
@@ -5276,8 +5316,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 236,
-    "daysToEnd": 791,
+    "daysToStart": 232,
+    "daysToEnd": 787,
     "inNoticeWindow": false
    },
    {
@@ -5317,8 +5357,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 76,
-    "daysToEnd": 807,
+    "daysToStart": 72,
+    "daysToEnd": 803,
     "inNoticeWindow": true
    },
    {
@@ -5356,8 +5396,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -130,
-    "daysToEnd": 819,
+    "daysToStart": -134,
+    "daysToEnd": 815,
     "inNoticeWindow": false
    },
    {
@@ -5394,8 +5434,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 221,
-    "daysToEnd": 833,
+    "daysToStart": 217,
+    "daysToEnd": 829,
     "inNoticeWindow": false
    },
    {
@@ -5451,8 +5491,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 415,
-    "daysToEnd": 854,
+    "daysToStart": 411,
+    "daysToEnd": 850,
     "inNoticeWindow": false
    },
    {
@@ -5485,8 +5525,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 449,
-    "daysToEnd": 876,
+    "daysToStart": 445,
+    "daysToEnd": 872,
     "inNoticeWindow": false
    },
    {
@@ -5516,8 +5556,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 239,
-    "daysToEnd": 881,
+    "daysToStart": 235,
+    "daysToEnd": 877,
     "inNoticeWindow": false
    },
    {
@@ -5550,8 +5590,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 448,
-    "daysToEnd": 887,
+    "daysToStart": 444,
+    "daysToEnd": 883,
     "inNoticeWindow": false
    },
    {
@@ -5602,8 +5642,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 448,
-    "daysToEnd": 887,
+    "daysToStart": 444,
+    "daysToEnd": 883,
     "inNoticeWindow": false
    },
    {
@@ -5648,8 +5688,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 458,
-    "daysToEnd": 897,
+    "daysToStart": 454,
+    "daysToEnd": 893,
     "inNoticeWindow": false
    },
    {
@@ -5709,8 +5749,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 461,
-    "daysToEnd": 901,
+    "daysToStart": 457,
+    "daysToEnd": 897,
     "inNoticeWindow": false
    },
    {
@@ -5738,8 +5778,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 461,
-    "daysToEnd": 901,
+    "daysToStart": 457,
+    "daysToEnd": 897,
     "inNoticeWindow": false
    },
    {
@@ -5780,8 +5820,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 559,
-    "daysToEnd": 923,
+    "daysToStart": 555,
+    "daysToEnd": 919,
     "inNoticeWindow": false
    },
    {
@@ -5818,8 +5858,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 559,
-    "daysToEnd": 923,
+    "daysToStart": 555,
+    "daysToEnd": 919,
     "inNoticeWindow": false
    },
    {
@@ -5855,8 +5895,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 257,
-    "daysToEnd": 988,
+    "daysToStart": 253,
+    "daysToEnd": 984,
     "inNoticeWindow": false
    },
    {
@@ -5890,8 +5930,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 623,
-    "daysToEnd": 988,
+    "daysToStart": 619,
+    "daysToEnd": 984,
     "inNoticeWindow": false
    },
    {
@@ -5939,8 +5979,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 575,
-    "daysToEnd": 1014,
+    "daysToStart": 571,
+    "daysToEnd": 1010,
     "inNoticeWindow": false
    },
    {
@@ -5973,8 +6013,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 1015,
+    "daysToStart": -327,
+    "daysToEnd": 1011,
     "inNoticeWindow": false
    },
    {
@@ -6011,8 +6051,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 479,
-    "daysToEnd": 1028,
+    "daysToStart": 475,
+    "daysToEnd": 1024,
     "inNoticeWindow": false
    },
    {
@@ -6054,8 +6094,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 682,
-    "daysToEnd": 1046,
+    "daysToStart": 678,
+    "daysToEnd": 1042,
     "inNoticeWindow": false
    },
    {
@@ -6100,8 +6140,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 638,
-    "daysToEnd": 1077,
+    "daysToStart": 634,
+    "daysToEnd": 1073,
     "inNoticeWindow": false
    },
    {
@@ -6135,8 +6175,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 530,
-    "daysToEnd": 1078,
+    "daysToStart": 526,
+    "daysToEnd": 1074,
     "inNoticeWindow": false
    },
    {
@@ -6170,8 +6210,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 583,
-    "daysToEnd": 1082,
+    "daysToStart": 579,
+    "daysToEnd": 1078,
     "inNoticeWindow": false
    },
    {
@@ -6207,8 +6247,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 542,
-    "daysToEnd": 1090,
+    "daysToStart": 538,
+    "daysToEnd": 1086,
     "inNoticeWindow": false
    },
    {
@@ -6249,8 +6289,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 525,
-    "daysToEnd": 1106,
+    "daysToStart": 521,
+    "daysToEnd": 1102,
     "inNoticeWindow": false
    },
    {
@@ -6299,8 +6339,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 668,
-    "daysToEnd": 1107,
+    "daysToStart": 664,
+    "daysToEnd": 1103,
     "inNoticeWindow": false
    },
    {
@@ -6340,8 +6380,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -578,
-    "daysToEnd": 1137,
+    "daysToStart": -582,
+    "daysToEnd": 1133,
     "inNoticeWindow": false
    },
    {
@@ -6372,8 +6412,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 773,
-    "daysToEnd": 1137,
+    "daysToStart": 769,
+    "daysToEnd": 1133,
     "inNoticeWindow": false
    },
    {
@@ -6403,8 +6443,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 773,
-    "daysToEnd": 1137,
+    "daysToStart": 769,
+    "daysToEnd": 1133,
     "inNoticeWindow": false
    },
    {
@@ -6444,8 +6484,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -323,
-    "daysToEnd": 1138,
+    "daysToStart": -327,
+    "daysToEnd": 1134,
     "inNoticeWindow": false
    },
    {
@@ -6479,8 +6519,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 407,
-    "daysToEnd": 1138,
+    "daysToStart": 403,
+    "daysToEnd": 1134,
     "inNoticeWindow": false
    },
    {
@@ -6521,8 +6561,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 698,
-    "daysToEnd": 1138,
+    "daysToStart": 694,
+    "daysToEnd": 1134,
     "inNoticeWindow": false
    },
    {
@@ -6577,8 +6617,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 604,
-    "daysToEnd": 1153,
+    "daysToStart": 600,
+    "daysToEnd": 1149,
     "inNoticeWindow": false
    },
    {
@@ -6644,8 +6684,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 737,
-    "daysToEnd": 1176,
+    "daysToStart": 733,
+    "daysToEnd": 1172,
     "inNoticeWindow": false
    },
    {
@@ -6683,8 +6723,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 755,
-    "daysToEnd": 1194,
+    "daysToStart": 751,
+    "daysToEnd": 1190,
     "inNoticeWindow": false
    },
    {
@@ -6731,8 +6771,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 796,
-    "daysToEnd": 1235,
+    "daysToStart": 792,
+    "daysToEnd": 1231,
     "inNoticeWindow": false
    },
    {
@@ -6767,8 +6807,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 742,
-    "daysToEnd": 1318,
+    "daysToStart": 738,
+    "daysToEnd": 1314,
     "inNoticeWindow": false
    },
    {
@@ -6809,8 +6849,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 546,
-    "daysToEnd": 1352,
+    "daysToStart": 542,
+    "daysToEnd": 1348,
     "inNoticeWindow": false
    },
    {
@@ -6844,8 +6884,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 920,
-    "daysToEnd": 1359,
+    "daysToStart": 916,
+    "daysToEnd": 1355,
     "inNoticeWindow": false
    },
    {
@@ -6880,8 +6920,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -105,
-    "daysToEnd": 1409,
+    "daysToStart": -109,
+    "daysToEnd": 1405,
     "inNoticeWindow": false
    },
    {
@@ -6911,8 +6951,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 710,
-    "daysToEnd": 1441,
+    "daysToStart": 706,
+    "daysToEnd": 1437,
     "inNoticeWindow": false
    },
    {
@@ -6954,8 +6994,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 680,
-    "daysToEnd": 1441,
+    "daysToStart": 676,
+    "daysToEnd": 1437,
     "inNoticeWindow": false
    },
    {
@@ -6988,8 +7028,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1016,
-    "daysToEnd": 1455,
+    "daysToStart": 1012,
+    "daysToEnd": 1451,
     "inNoticeWindow": false
    },
    {
@@ -7020,8 +7060,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 985,
-    "daysToEnd": 1500,
+    "daysToStart": 981,
+    "daysToEnd": 1496,
     "inNoticeWindow": false
    },
    {
@@ -7207,8 +7247,8 @@
     "scope": "bike work named",
     "changeable": true,
     "ask": false,
-    "daysToStart": -2402,
-    "daysToEnd": 1502,
+    "daysToStart": -2406,
+    "daysToEnd": 1498,
     "inNoticeWindow": false
    },
    {
@@ -7239,8 +7279,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1138,
-    "daysToEnd": 1502,
+    "daysToStart": 1134,
+    "daysToEnd": 1498,
     "inNoticeWindow": false
    },
    {
@@ -7288,8 +7328,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 893,
-    "daysToEnd": 1505,
+    "daysToStart": 889,
+    "daysToEnd": 1501,
     "inNoticeWindow": false
    },
    {
@@ -7352,8 +7392,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1135,
-    "daysToEnd": 1574,
+    "daysToStart": 1131,
+    "daysToEnd": 1570,
     "inNoticeWindow": false
    },
    {
@@ -7402,8 +7442,8 @@
     "scope": "walking or streetscape named",
     "changeable": true,
     "ask": false,
-    "daysToStart": 370,
-    "daysToEnd": 1609,
+    "daysToStart": 366,
+    "daysToEnd": 1605,
     "inNoticeWindow": false
    },
    {
@@ -7434,8 +7474,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 43,
-    "daysToEnd": 1683,
+    "daysToStart": 39,
+    "daysToEnd": 1679,
     "inNoticeWindow": true
    },
    {
@@ -7479,8 +7519,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 101,
-    "daysToEnd": 1838,
+    "daysToStart": 97,
+    "daysToEnd": 1834,
     "inNoticeWindow": true
    },
    {
@@ -7512,8 +7552,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 773,
-    "daysToEnd": 1867,
+    "daysToStart": 769,
+    "daysToEnd": 1863,
     "inNoticeWindow": false
    },
    {
@@ -7547,8 +7587,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": -354,
-    "daysToEnd": 1868,
+    "daysToStart": -358,
+    "daysToEnd": 1864,
     "inNoticeWindow": false
    },
    {
@@ -7583,8 +7623,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 681,
-    "daysToEnd": 1868,
+    "daysToStart": 677,
+    "daysToEnd": 1864,
     "inNoticeWindow": false
    },
    {
@@ -7618,8 +7658,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1440,
-    "daysToEnd": 1879,
+    "daysToStart": 1436,
+    "daysToEnd": 1875,
     "inNoticeWindow": false
    },
    {
@@ -7650,8 +7690,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1169,
-    "daysToEnd": 1957,
+    "daysToStart": 1165,
+    "daysToEnd": 1953,
     "inNoticeWindow": false
    },
    {
@@ -7686,8 +7726,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1534,
-    "daysToEnd": 1973,
+    "daysToStart": 1530,
+    "daysToEnd": 1969,
     "inNoticeWindow": false
    },
    {
@@ -7718,8 +7758,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1228,
-    "daysToEnd": 1988,
+    "daysToStart": 1224,
+    "daysToEnd": 1984,
     "inNoticeWindow": false
    },
    {
@@ -7754,8 +7794,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1786,
-    "daysToEnd": 2225,
+    "daysToStart": 1782,
+    "daysToEnd": 2221,
     "inNoticeWindow": false
    },
    {
@@ -7787,8 +7827,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1505,
-    "daysToEnd": 2233,
+    "daysToStart": 1501,
+    "daysToEnd": 2229,
     "inNoticeWindow": false
    },
    {
@@ -7826,8 +7866,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1865,
-    "daysToEnd": 2304,
+    "daysToStart": 1861,
+    "daysToEnd": 2300,
     "inNoticeWindow": false
    },
    {
@@ -7857,8 +7897,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 1866,
-    "daysToEnd": 2305,
+    "daysToStart": 1862,
+    "daysToEnd": 2301,
     "inNoticeWindow": false
    },
    {
@@ -7892,8 +7932,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2047,
-    "daysToEnd": 2487,
+    "daysToStart": 2043,
+    "daysToEnd": 2483,
     "inNoticeWindow": false
    },
    {
@@ -7955,8 +7995,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2109,
-    "daysToEnd": 2549,
+    "daysToStart": 2105,
+    "daysToEnd": 2545,
     "inNoticeWindow": false
    },
    {
@@ -7989,8 +8029,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2169,
-    "daysToEnd": 2609,
+    "daysToStart": 2165,
+    "daysToEnd": 2605,
     "inNoticeWindow": false
    },
    {
@@ -8037,8 +8077,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2230,
-    "daysToEnd": 2670,
+    "daysToStart": 2226,
+    "daysToEnd": 2666,
     "inNoticeWindow": false
    },
    {
@@ -8082,8 +8122,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2475,
-    "daysToEnd": 2915,
+    "daysToStart": 2471,
+    "daysToEnd": 2911,
     "inNoticeWindow": false
    },
    {
@@ -8137,8 +8177,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2506,
-    "daysToEnd": 2946,
+    "daysToStart": 2502,
+    "daysToEnd": 2942,
     "inNoticeWindow": false
    },
    {
@@ -8178,8 +8218,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2534,
-    "daysToEnd": 2974,
+    "daysToStart": 2530,
+    "daysToEnd": 2970,
     "inNoticeWindow": false
    },
    {
@@ -8219,8 +8259,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2626,
-    "daysToEnd": 3066,
+    "daysToStart": 2622,
+    "daysToEnd": 3062,
     "inNoticeWindow": false
    },
    {
@@ -8259,8 +8299,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2657,
-    "daysToEnd": 3097,
+    "daysToStart": 2653,
+    "daysToEnd": 3093,
     "inNoticeWindow": false
    },
    {
@@ -8300,8 +8340,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2798,
-    "daysToEnd": 3237,
+    "daysToStart": 2794,
+    "daysToEnd": 3233,
     "inNoticeWindow": false
    },
    {
@@ -8337,8 +8377,8 @@
     "scope": "the record does not say",
     "changeable": true,
     "ask": true,
-    "daysToStart": 2996,
-    "daysToEnd": 3435,
+    "daysToStart": 2992,
+    "daysToEnd": 3431,
     "inNoticeWindow": false
    },
    {

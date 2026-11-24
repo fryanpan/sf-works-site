@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-19",
+ "generated": "2026-11-24",
  "year": 2026,
  "source": "SFMTA project pages and project layer, as mirrored in out/sfmta-projects",
  "centerlines": {
   "dataset": "https://data.sf.gov/d/3psu-pn9h",
-  "queried": "2026-11-19"
+  "queried": "2026-11-24"
  },
  "projects": [
   {
@@ -225,8 +225,8 @@
    "node": "28896",
    "name": "Beach Street Quick-Build Project",
    "page": "https://www.sfmta.com/node/28896",
-   "phase": "Implementation / Construction",
-   "page_edited": "2026-08-12",
+   "phase": "Completed",
+   "page_edited": "2026-11-23",
    "year": 2026,
    "quote": "Construction for the Beach Street Quick-Build Project is substantially complete",
    "class": "CLASS IV",

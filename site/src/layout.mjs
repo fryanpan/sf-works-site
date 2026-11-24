@@ -695,6 +695,25 @@ function feedback() {
 </script>`;
 }
 
+// Sentry error tracking, on the PRODUCTION build only (Bryan approved it on the
+// board, 2026-11-24). Emitted when SENTRY_DSN is set, which only the production
+// job in .github/workflows/deploy.yml does. The DSN is public by Sentry's
+// design. The errors-only bundle carries no session replay and no tracing, and
+// sendDefaultPii is off, so Sentry gets the error and the page's address and
+// nothing that names the reader. The hash pins the exact file the CDN served.
+export const SENTRY_BUNDLE = {
+  src: "https://browser.sentry-cdn.com/11.17.0/bundle.min.js",
+  integrity: "sha384-hDIKvXIZjqlgYU4Xw3A4xx3aRaGTz2YtgxtGBBLxy+FJ5H1+w4+X/3NfA9+jsgwx",
+};
+
+export function errorTracking(dsn = process.env.SENTRY_DSN) {
+  if (!dsn) return "";
+  return `<script src="${SENTRY_BUNDLE.src}" integrity="${SENTRY_BUNDLE.integrity}" crossorigin="anonymous"></script>
+<script>
+  if (window.Sentry) Sentry.init({ dsn: ${JSON.stringify(dsn)}, sendDefaultPii: false, environment: "production" });
+</script>`;
+}
+
 function analytics() {
   const src = process.env.PLAUSIBLE_SCRIPT;
   if (!src) return "";
@@ -1066,6 +1085,7 @@ ${about ? `<p class="about-link">How we built this: <a href="${about.href}">${ab
 ${shareScript}
 ${crumbScript}
 ${widget()}
+${errorTracking()}
 ${analytics()}
 ${feedback()}
 </body>

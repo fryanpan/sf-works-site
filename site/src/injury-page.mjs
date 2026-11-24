@@ -1202,9 +1202,12 @@ ${stepTable()}
   // The components map switch (stack plan M7): ?map=components draws this map with @claude-workspaces/components
   // instead of MapLibre, and the MapLibre code below sees no map. Off by default. It draws the MapLibre map's
   // layers from the same data, under the same ids, and the page's layer menu drives them through the package's
-  // setVisible (cwSync below), with the package's own switches hidden. Not drawn yet: the picked school's grounds
-  // and rings, the kids hurt near it, and the zoomed-in crash dots; picking a school does not move the map.
-  var CW = /(?:^|[?&])map=components(?:&|$)/.test(location.search);
+  // setVisible (cwSync below), with the package's own switches hidden. A picked school redraws the map framed on its
+  // quarter mile, with its grounds, both rings and the kids hurt near it (cwSchool, cwFrame). It redraws rather than
+  // writing the map's state, because a state write is held to 256 KB and 8 levels deep, and this map's layers are
+  // megabytes and 9 deep. The basemap is the package's OpenStreetMap default: its Positron (carto-light) now draws
+  // "API KEY REQUIRED" on every tile (checked 2026-11-24), and the MapLibre map's Google roadmap needs a key.
+  var CW = /(?:^|[?&])map=components(?:&|$)/.test(location.search), cwSchool = null, cwFrame = null;
   var map = CW ? null : sfMap.create(el, { bounds: D.bounds, padding: function () { return 16; }, onReset: function () { pickSchool(null, true); } });
   // Its own scope, so its names cannot overwrite the page's: #529 declared var line here, which replaced
   // the school line element and hid the kids' count above the map.
@@ -1215,7 +1218,7 @@ ${stepTable()}
     var cwLines = function (enc, props) { return { type: "FeatureCollection", features: sfMap.decode(enc).map(function (r, i) { return { type: "Feature", properties: props ? props(i) : {}, geometry: { type: "LineString", coordinates: r } }; }) }; };
     var cwPts = function (enc, props) { return { type: "FeatureCollection", features: sfMap.points(enc).map(function (c, i) { return { type: "Feature", properties: props ? props(i) : {}, geometry: { type: "Point", coordinates: c } }; }) }; };
     var only = function (fc, test) { return { type: "FeatureCollection", features: fc.features.filter(function (f) { return test(f.properties); }) }; };
-    var heat = function (k, name) { return { type: "heatmap", id: "heat-" + k, name: name, data: cwPts(D[k]), radius: 14, intensity: 0.6, colors: HEATC, opacity: 0.9, visible: false }; };
+    var heat = function (k) { return { type: "heatmap", id: "heat", name: HEATNAME[k], data: cwPts(D[k]), radius: 14, intensity: 0.6, colors: HEATC, opacity: 0.9, visible: true }; };
     var line = function (id, name, data, color, o) { return Object.assign({ type: "line", id: id, name: name, data: data, color: color, width: 3, opacity: 0.9, visible: false }, o || {}); };
     var dot = function (id, name, data, fill, o) { return Object.assign({ type: "circle", id: id, name: name, data: data, fill: fill, fillOpacity: 1, stroke: "#ffffff", strokeWidth: 1, radius: 5, visible: false }, o || {}); };
     var slow = cwLines(X.slow, function (i) { var r = X.slowP[i]; return { name: r[0], date: r[2] || "date not recorded", planned: r[3] }; });
@@ -1223,7 +1226,10 @@ ${stepTable()}
     var calmPts = cwPts(X.calmPts, function (i) { var r = X.calmPtsP[i]; return { name: r[0], where: r[1], date: r[2] || "date not recorded", planned: r[3], status: r[4] }; });
     var plan = cwLines(X.plan, function (i) { var r = X.planP[X.planI[i]]; return { name: r[0], phase: r[1], kind: r[4] }; });
     var PLAN = [["qb", "Planned quick-builds", "#efb118"], ["safety", "Planned safety and traffic calming", "#a463f2"], ["bike", "Planned bike lanes and Slow Streets", "#6cc5b0"], ["sig", "Planned signal work", "#4269d0"], ["area", "Planned streetscapes and area plans", "#9c6b4e"]];
-    var layers = [heat("all", "All reported injuries"), heat("sev", "Severe and fatal only"), heat("kid", "Kids on school trips"), heat("kidsev", "Kids severely hurt or killed"),
+    // One heat map, of the view the menu shows: the package draws at most 24 layers, and four heat maps plus the
+    // school's four layers would make 26. A change of view redraws the map with that view's heat map (cwSchool).
+    var HEATNAME = { all: "All reported injuries", sev: "Severe and fatal only", kid: "Kids on school trips", kidsev: "Kids severely hurt or killed" };
+    var layers = [
       line("hin", "High Injury Network", cwLines(D.hin), "#4a4f57", { width: 2, opacity: 0.85, visible: true }),
       line("qb", "Quick-build corridors, 2018 to 2024", cwLines(D.qb, function (i) { return { name: D.qbNames[i] }; }), "#efb118", { popup: "{name}" }),
       line("to20", "20 mph streets, 2022 on", cwLines(X.to20, function (i) { return { date: X.to20P[i] }; }), "#4269d0", { popup: "20 mph from {date}" }),
@@ -1246,25 +1252,54 @@ ${stepTable()}
     var cwSync = function () {
       if (!cwMap) return;
       var set = (document.querySelector("input[name=set]:checked") || {}).value || "all";
-      ["all", "sev", "kid", "kidsev"].forEach(function (k) { cwMap.setVisible("heat-" + k, set === k); });
       cwMap.setVisible("sch", set === "kid" || set === "kidsev");
       var on = [];
       document.querySelectorAll("input[name=fx]:checked").forEach(function (x) { (CWFX[x.value] || []).forEach(function (id) { if (on.indexOf(id) < 0) on.push(id); }); });
       cwFxIds.forEach(function (id) { cwMap.setVisible(id, on.indexOf(id) >= 0); });
     };
+    // The picked school, as the MapLibre map's drawSchool draws it: grounds, the 500 ft ring, the quarter-mile ring
+    // dashed, and the kids hurt inside it as dark dots. Always in the list, empty with no school, so ids stay put.
+    var PURPLE = "#5b3fa0", EMPTY = { type: "FeatureCollection", features: [] };
+    var schoolLayers = function () {
+      var s = V.school && D.schools[V.school], fc = function (enc, kind) { return { type: "FeatureCollection", features: sfMap.decode(enc).map(function (r) { return { type: "Feature", properties: {}, geometry: kind === "poly" ? { type: "Polygon", coordinates: [r] } : { type: "LineString", coordinates: r } }; }) }; };
+      var sev = S.set === "kidsev", all = s ? sfMap.points(sev ? D.kidsev : D.kid) : [];
+      var kids = s ? { type: "FeatureCollection", features: (sev ? s.ks : s.k).map(function (i) { return { type: "Feature", properties: {}, geometry: { type: "Point", coordinates: all[i] } }; }) } : EMPTY;
+      return [
+        { type: "polygon", id: "sch-grounds", name: "School grounds", data: s ? fc(s.g, "poly") : EMPTY, fill: "#e8eaf6", fillOpacity: 0.7, outline: PURPLE, outlineWidth: 1, visible: !!s },
+        line("sch-zone", "500 ft from the school grounds", s ? fc(s.z) : EMPTY, PURPLE, { width: 2, opacity: 1, visible: !!s }),
+        line("sch-quarter", "A quarter mile from the grounds", s ? fc(s.q) : EMPTY, PURPLE, { width: 2, opacity: 1, dash: [6, 4], visible: !!s }),
+        dot("kid-near", "Kids hurt near the school", kids, "#15181c", { stroke: "#ffffff", strokeWidth: 1.5, radius: 5, visible: !!s }),
+      ];
+    };
+    var cwMod = null, cwBase = layers, cwDrawn = null;
+    // The view that frames lon/lat bounds [[w, s], [e, n]] in the map's box, as MapLibre's fitBounds does, at a whole
+    // zoom (Leaflet snaps to one). The city view is the opening one: the High Injury Network's bounds, centred, at 12.
+    var CITY = { center: [(D.bounds[0][1] + D.bounds[1][1]) / 2, (D.bounds[0][0] + D.bounds[1][0]) / 2], zoom: 12 };
+    var fit = function (b, pad) {
+      var y = function (lat) { var t = Math.sin(lat * Math.PI / 180); return 0.5 - Math.log((1 + t) / (1 - t)) / (4 * Math.PI); };
+      var W = el.clientWidth || 600, H = el.clientHeight || 600, dx = (b[1][0] - b[0][0]) / 360, dy = Math.abs(y(b[1][1]) - y(b[0][1]));
+      var z = Math.min(Math.log2((W - 2 * pad) / (256 * dx)), Math.log2((H - 2 * pad) / (256 * dy)));
+      return { center: [(b[0][1] + b[1][1]) / 2, (b[0][0] + b[1][0]) / 2], zoom: Math.max(10, Math.min(17, Math.floor(z))) };
+    };
+    var cwView = V.school && D.schools[V.school] ? fit(D.schools[V.school].b, 30) : CITY;
+    // Draw the map, again whenever the school or the menu's view of injuries changes; a change of fixes only
+    // switches layers (cwSync).
+    cwSchool = function () {
+      if (!cwMod) return;
+      var key = (V.school || "") + "|" + S.set;
+      if (key === cwDrawn) return;
+      cwDrawn = key;
+      if (cwMap) cwMap();
+      cwMap = cwMod.mountWithSnapshot(el, { id: "injury-map", layers: [heat(S.set)].concat(cwBase, schoolLayers()), legend: false,
+        center: cwView.center, zoom: cwView.zoom, height: el.clientHeight || 600 });
+      cwSync();
+    };
+    cwFrame = function (b) { if (b !== null) cwView = b ? fit(b, 30) : CITY; };
     document.querySelectorAll("input[name=set], input[name=fx]").forEach(function (x) { x.addEventListener("change", cwSync); });
     el.removeAttribute("role");
     import(cwSrc.href).then(function (cw) {
-      cwMap = cw.mountWithSnapshot(el, {
-        id: "injury-map",
-        layers: layers,
-        legend: false,
-        // The MapLibre map's opening view: the High Injury Network's bounds (D.bounds), centred.
-        center: [(D.bounds[0][1] + D.bounds[1][1]) / 2, (D.bounds[0][0] + D.bounds[1][0]) / 2],
-        zoom: 12,
-        height: el.clientHeight || 600,
-      });
-      cwSync();
+      cwMod = cw;
+      cwSchool();
     }).catch(function (e) { if (window.console) console.warn("components map:", e && e.message); });
   })();
   if (map) {
@@ -1291,6 +1326,7 @@ ${stepTable()}
     line.innerHTML = kidLine(n, sev, s && s.name);
   }
   function drawSchool() {
+    if (cwSchool) cwSchool();
     if (!map || !map.getSource("sch-rings")) return;
     var s = V.school && D.schools[V.school], f = [], k = [];
     if (s) {
@@ -1314,6 +1350,7 @@ ${stepTable()}
     apply(); sumLyr();
     if (map && V.school) map.fitBounds(D.schools[V.school].b, { padding: 30, duration: 600 });
     else if (map && !homed) map.fitBounds(D.bounds, { padding: 16, duration: 400 });
+    if (cwFrame) cwFrame(V.school ? D.schools[V.school].b : homed ? null : undefined);
     drawSchool(); schoolLine(); save();
   }
   pick.addEventListener("change", function () { pickSchool(pick.value); });

@@ -24,7 +24,7 @@ TYPES.
                              the county that isn't mostly inside a Rec and
                              Park property (CPAD_DUPLICATE_SHARE;
                              data/extract/cpad/sf-units.json,
-                             scripts/cpad-sf.py): the Presidio, the GGNRA's
+                             pipeline/sources/cpad-sf.py): the Presidio, the GGNRA's
                              units (Ocean Beach, Lands End and Fort Funston
                              are its "Golden Gate National Recreation Area"
                              unit), Candlestick Point, the Port's parks,

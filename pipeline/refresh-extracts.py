@@ -15,7 +15,7 @@ each live source with one small request first and re-reads only what moved:
   slow-streets, census 2020,   DataSF: the dataset's rowsUpdatedAt
   libraries
   cpad sf-units                ArcGIS: statewide row count plus the release the
-                               layer's description names (scripts/cpad-sf.py)
+                               layer's description names (pipeline/sources/cpad-sf.py)
 
 A re-read that returns the records already on disk leaves the file as it was
 (lib/extract.py), so a run with no new data changes nothing tracked.

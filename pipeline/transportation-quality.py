@@ -202,7 +202,7 @@ def extracts_checks(root):
               max_growth=0.0, key="geoid", required=["geoid", "pop", "lat", "lon"]),
         Table("extract:libraries/branches", records("libraries", "branches"), floor=25, max_drop=0.10,
               key="facility_id", required=["name", "facility_id", "lat", "lon"]),
-        # CPAD's units in San Francisco County (scripts/cpad-sf.py): 274 in the 2025b release.
+        # CPAD's units in San Francisco County (pipeline/sources/cpad-sf.py): 274 in the 2025b release.
         Table("extract:cpad/sf-units", records("cpad", "sf-units"), floor=250, max_drop=0.20, key="unit_id",
               required=["unit_id", "name", "agency", "access", "acres", "geometry"]),
         Each("extract:cpad/presidio", lambda r: None if records("cpad", "sf-units")(r) is None else

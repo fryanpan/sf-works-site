@@ -52,7 +52,7 @@ section recorded, codes held by fewer than 3 people pooled as "Other <cause>" (s
 Alcohol (any party_sobriety starting 'Had Been Drinking') is also reported across all kinds.
 On the 2024 HIN uses the 60 ft rule above; a person with no location is neither on nor off. Outputs for the doc:
 kinds_chart.mdx (summary PlotChart), kinds_drill.json and scratch/embeds/hin-kinds-drill/index.html (the drill-down,
-from the template scripts/hin-kinds-drill.html), and summary.json's kind_details (the levers table).
+from the template tools/street-safety/hin-kinds-drill.html), and summary.json's kind_details (the levers table).
 
 TRIP TYPE (our inference from time and place alone; mutually exclusive, first match wins):
   school_trip lib/school_window.py's one definition: victim_age 5 to 18, a weekday, 6 am up to 6 pm, August 1 to
@@ -435,7 +435,7 @@ def hour(v):
 
 def write_drill(out, chunks, subs, tags, n, killed):
     """The drill-down embed's data (kinds_drill.json) and page (scratch/embeds/hin-kinds-drill/index.html, from the
-    template scripts/hin-kinds-drill.html): one row per person, coded against the five groupings, the chunk list and,
+    template tools/street-safety/hin-kinds-drill.html): one row per person, coded against the five groupings, the chunk list and,
     for the cause grouping, the subcause list (in each cause's order, the pooled rest last)."""
     groupings = [("kind", "Time and place"), ("who", "Who hit whom"), ("cause", "Recorded cause"),
                  ("place_type", "Place"), ("time_window", "Time window")]

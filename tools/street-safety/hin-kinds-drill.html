@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Severe injuries and deaths by kind, 2022 to 2024: click a bar for its detailed groups</title>
+<!-- Template for tools/street-safety/hin-injury-kinds.py, which fills in the data and writes scratch/embeds/hin-kinds-drill/index.html. -->
+<style>
+:root { --on: #2f7d76; --off: #a9cfc9; --ink: #222; --muted: #666; --line: #e3e6e8; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 8px 4px 4px; font: 14px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: #fff; }
+.top { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 10px; }
+.top label { font-weight: 600; }
+select { font: inherit; padding: 4px 6px; border: 1px solid #c9ced2; border-radius: 4px; background: #fff; }
+.key { display: flex; gap: 12px; font-size: 12px; color: var(--muted); }
+.key i { display: inline-block; width: 11px; height: 11px; border-radius: 2px; vertical-align: -1px; margin-right: 4px; }
+.row { display: grid; grid-template-columns: 200px 1fr; gap: 10px; align-items: center; padding: 4px 0; border-top: 1px solid var(--line); cursor: pointer; }
+.row.sub { cursor: default; background: #f6f8f8; padding-left: 0; }
+.row.sub .lab { padding-left: 14px; font-size: 13px; color: #333; }
+.lab { font-size: 13px; }
+.row:not(.sub) .lab::before { content: "\25B8"; display: inline-block; width: 12px; color: var(--muted); }
+.row.open:not(.sub) .lab::before { content: "\25BE"; }
+.barwrap { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.bar { display: flex; height: 16px; flex: none; }
+.bar span { height: 100%; }
+.bar .on { background: var(--on); } .bar .off { background: var(--off); }
+.num { font-size: 12px; white-space: nowrap; color: #333; }
+.cap { margin-top: 10px; font-size: 12px; color: var(--muted); }
+.cap a { color: inherit; }
+.row.sub[data-tip] { cursor: pointer; }
+.row.sub[data-tip] .lab::after { content: " \24D8"; color: var(--muted); font-size: 11px; }
+.tip { display: none; grid-column: 1 / -1; font-size: 12px; color: var(--muted); padding-left: 14px; }
+.row.showtip .tip { display: block; }
+@media (max-width: 520px) {
+  .row { grid-template-columns: 1fr; gap: 2px; }
+  .num { font-size: 11px; }
+}
+</style></head>
+<body>
+<div class="top">
+  <label for="g">Group by</label>
+  <select id="g"></select>
+  <span class="key"><span><i style="background:var(--on)"></i>On the 2024 HIN</span><span><i style="background:var(--off)"></i>Off the HIN</span></span>
+</div>
+<div id="rows"></div>
+<p class="cap">Click a bar to see its detailed groups. Each detailed group is a time-and-place kind split by road user and then crash details until no group is over 60 people; riders' groups are also split by whether a motor vehicle was in the crash. People severely injured or killed in 2022 to 2024 (<span id="tot"></span>), from <a href="https://data.sfgov.org/d/nwes-mmgh" target="_blank" rel="noopener">DataSF nwes-mmgh</a> police reports, one row per person. On the HIN means within 60 ft of the 2024 High Injury Network. Under each recorded cause, the rows are the <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH" target="_blank" rel="noopener">Vehicle Code</a> section the officer wrote down; codes under 3 people are pooled, and tapping a row marked &#9432; lists the codes in it. <span id="nocode"></span> A crash carries one primary cause, so where a driver and a pedestrian both broke a rule, only the officer's main pick shows. Rules: scripts/hin-injury-kinds.py.</p>
+<script>
+(function () {
+  var D = __DATA__;
+  var sel = document.getElementById("g"), box = document.getElementById("rows"), open = {};
+  document.getElementById("tot").textContent = D.n + ", " + D.killed + " killed";
+  document.getElementById("nocode").textContent = D.no_code + " people have no code recorded.";
+  D.groupings.forEach(function (g, i) { var o = document.createElement("option"); o.value = i; o.textContent = g.name; sel.appendChild(o); });
+  function tally(ps) {
+    var t = { n: ps.length, k: 0, on: 0, off: 0 };
+    ps.forEach(function (p) { t.k += p[6]; if (p[7] === 1) t.on++; else if (p[7] === 0) t.off++; });
+    return t;
+  }
+  function label(t) { return t.n + " (" + t.k + " killed), " + t.on + " on HIN" + (t.n - t.on - t.off ? ", " + (t.n - t.on - t.off) + " unplaced" : ""); }
+  function row(text, t, max, sub, tip) {
+    var r = document.createElement("div"); r.className = "row" + (sub ? " sub" : "");
+    var w = function (v) { return (100 * v / max).toFixed(2) + "%"; };
+    r.innerHTML = '<div class="lab"></div><div class="barwrap"><div class="bar" style="width:calc((100% - 215px) * ' + (t.n / max).toFixed(4) + ')">' +
+      '<span class="on" style="width:' + (100 * t.on / t.n).toFixed(2) + '%"></span><span class="off" style="width:' + (100 * t.off / t.n).toFixed(2) + '%"></span></div>' +
+      '<span class="num">' + label(t) + '</span></div>';
+    r.querySelector(".lab").textContent = text;
+    if (tip) {
+      r.title = tip; r.setAttribute("data-tip", "");
+      var d = document.createElement("div"); d.className = "tip"; d.textContent = tip; r.appendChild(d);
+      r.addEventListener("click", function () { r.classList.toggle("showtip"); h(); });
+    }
+    return r;
+  }
+  function draw() {
+    var gi = +sel.value, g = D.groupings[gi], groups = {};
+    D.people.forEach(function (p) { (groups[p[gi]] = groups[p[gi]] || []).push(p); });
+    var keys = Object.keys(groups).sort(function (a, b) { return groups[b].length - groups[a].length || g.values[a].localeCompare(g.values[b]); });
+    var max = 0; keys.forEach(function (k) { max = Math.max(max, groups[k].length); });
+    box.innerHTML = "";
+    keys.forEach(function (k) {
+      var name = g.values[k], r = row(name, tally(groups[k]), max, false), id = gi + ":" + k;
+      if (open[id]) r.classList.add("open");
+      r.addEventListener("click", function () { open[id] = !open[id]; draw(); });
+      box.appendChild(r);
+      if (!open[id]) return;
+      if (g.key === "cause") {   // subcauses: the Vehicle Code section recorded, in the script's order (pooled rest last)
+        var sc = {}; groups[k].forEach(function (p) { (sc[p[8]] = sc[p[8]] || []).push(p); });
+        Object.keys(sc).sort(function (a, b) { return a - b; }).forEach(function (s) {
+          box.appendChild(row(D.subcauses[s].label, tally(sc[s]), max, true, D.subcauses[s].tip));
+        });
+        return;
+      }
+      var sub = {}; groups[k].forEach(function (p) { (sub[p[5]] = sub[p[5]] || []).push(p); });
+      var sk = Object.keys(sub).sort(function (a, b) { return sub[b].length - sub[a].length || D.details[a].localeCompare(D.details[b]); });
+      var small = [];
+      sk.forEach(function (d) {
+        if (sk.length > 8 && sub[d].length < 5) { small = small.concat(sub[d]); return; }
+        var txt = D.details[d];
+        if (gi === 0 && txt.indexOf(name + " · ") === 0) txt = txt.slice(name.length + 3);
+        else if (gi === 0 && txt === name) txt = "Not split further";
+        box.appendChild(row(txt, tally(sub[d]), max, true));
+      });
+      if (small.length) box.appendChild(row("Smaller pieces, under 5 people each", tally(small), max, true));
+    });
+    h();
+  }
+  var last = 0;
+  function h() { var v = Math.ceil(document.body.getBoundingClientRect().bottom + window.scrollY) + 8; if (Math.abs(v - last) < 2) return; last = v;
+    try { parent.postMessage({ type: "sfworks:height", block: "hin-kinds-drill", height: v }, "*"); } catch (e) {} }
+  sel.addEventListener("change", draw); var lw = innerWidth; addEventListener("resize", function () { if (innerWidth !== lw) { lw = innerWidth; h(); } }); addEventListener("load", h);
+  draw();
+})();
+</script>
+</body></html>

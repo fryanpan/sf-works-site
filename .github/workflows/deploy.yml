@@ -51,6 +51,8 @@ jobs:
           GOOGLE_MAPS_KEY: ${{ secrets.GOOGLE_MAPS_KEY }}
           # Plausible pageview script for sf-works.org.
           PLAUSIBLE_SCRIPT: https://plausible.io/js/pa-yweCCEmysrF00BmbHVFie.js
+          # Public by Sentry's design; set as a repo variable, not a secret.
+          SENTRY_DSN: ${{ vars.SENTRY_DSN }}
           # Userback's widget token: public by design, it ships in every page.
           USERBACK_TOKEN: A-iVWefngEVcAkxpvZSIHqDaqI8
       - name: Check the rendered markdown pages

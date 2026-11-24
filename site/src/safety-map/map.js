@@ -642,7 +642,8 @@
       if (!built) return "";
       var g = area();
       if (s.view === "injuries" && s.color === "hin") {
-        var on = 0, off = 0; shownFor(s, g).forEach(function (p) { if (p.hy & 4) on++; else off++; });
+        // The key counts the dots it explains: a person with no location is off no network and not drawn (the chart's own "No location" bar).
+        var on = 0, off = 0; shownFor(s, g).forEach(function (p) { if (p.hy & 4) on++; else if (!p.np) off++; });
         return HINC.map(function (x, i) { return '<span><i class="dot" style="background:' + x[1] + '"></i>' + x[0] + ' <span class="n">' + n0(i ? off : on) + "</span></span>"; }).join("");
       }
       if (s.view === "injuries") {
@@ -1474,7 +1475,9 @@
         { mark: "text", data: "rows", options: { y: "y", text: "label", frameAnchor: "left", textAnchor: "start", dy: -6, fontSize: 10 } },
         { mark: "barX", data: "parts", transform: "stackX", options: { y: "y", x: "value", fill: "fill", order: dom, insetTop: 11 + PAD2, insetBottom: 1 + PAD2 } },
         { mark: "text", data: "rows", options: { y: "y", x: "value", text: "fig", textAnchor: "start", dx: 4, dy: 5, fontSize: 10, fill: "var(--sm-muted, #59626f)" } }],
-        options: { height: rows.length * (24 + 2 * PAD2) + 4, marginTop: 2, marginBottom: 2, marginLeft: 1, marginRight: 122, y: { domain: rows.map(function (r) { return r.y; }), axis: null, padding: 0.08 },
+        options: { height: rows.length * (24 + 2 * PAD2) + 4, marginTop: 2, marginBottom: 2, marginLeft: 1,
+          // Room for the longest figure, so "392 severe, 46 killed (26%)" isn't cut at the frame's edge.
+          marginRight: Math.max(122, 8 + 6.4 * rows.reduce(function (a, r) { return Math.max(a, r.fig.length); }, 0)), y: { domain: rows.map(function (r) { return r.y; }), axis: null, padding: 0.08 },
           x: { axis: null, domain: [0, max] }, color: { domain: dom, range: rng } } };
     }
     // Hovering a bar: everyone outside it dims on the map (the people layers), or the heat map shows only its days.

@@ -59,7 +59,9 @@ SIZE. Every group's count of people hurt, whatever its rate, because a group tha
   SIZE_FLOOR_WITHIN_MODE people hurt or more, pooling the rest into one "rest" row so the list still sums to every person in a stated mode), and size.violation_within_mode mode x
   violation alone. Each list is sorted by people hurt, then KSI people, then the key, and each cell gives its people
   by victim_role. size.cells_to_half says how many of the biggest cells it takes to hold half of everyone hurt and
-  half of the KSI people.
+  half of the KSI people. size.chart is the doc's bar chart: the union of the CHART_TOP biggest mode x movement x
+  violation groups by people hurt and by KSI people, then one "all other groups" row over every other crash (mode not
+  stated included), so the rows add up to the totals.
 
 TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block rule) are looked up in SFMTA's 2023
   draft Bike Comfort Index layer as the repo holds it (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level
@@ -102,6 +104,7 @@ NOT_HURT = {"No Injury", ""}
 BCI_SCORES = os.path.join(ROOT, "data", "extract", "sfmta-bci", "scores.json")
 BCI_AAA = 80  # Biking and Rolling Plan: all ages and abilities network is "BCI > 80" (tools/street-safety/street-safety-map.py)
 HIGH_STRESS = {"3", "4"}
+CHART_TOP = 8  # size.chart: the top groups by people hurt and by KSI people
 SIZE_FLOOR_WITHIN_MODE = 20  # size.cells_within_mode lists cells with this many people hurt; the rest is one row
 
 MOVEMENT = {
@@ -829,12 +832,23 @@ def main():
             g_pair[(r["mode"], r["movement"], r["violation"])].append(r)
             g_viol[(r["mode"], r["violation"])].append(r)
     size_cells = size_list(cells, ("movement", "violation", "time"))
+    pairs_list = size_list(g_pair, ("mode", "movement", "violation"))
+    shown = {(t["mode"], t["movement"], t["violation"]) for t in pairs_list[:CHART_TOP]} | {
+        (t["mode"], t["movement"], t["violation"])
+        for t in sorted(pairs_list, key=lambda t: (-t["ksi_people"], t["mode"], t["movement"], t["violation"]))[:CHART_TOP]}
+    rest_recs = [r for r in recs if (r["mode"], r["movement"], r["violation"]) not in shown]
+    rest_t = tally(rest_recs)
+    chart = [{k: t[k] for k in ("mode", "movement", "violation") + SIZE_KEYS} for t in pairs_list
+             if (t["mode"], t["movement"], t["violation"]) in shown]
+    chart.append(dict({"mode": "all other groups", "movement": "", "violation": "", "groups": len(pairs_list) - len(shown)},
+                      **{k: rest_t[k] for k in SIZE_KEYS}))
     size = {
         "about": "people hurt (any injury) and KSI people by group, sorted by people hurt; no size floor, no test",
         "cells": size_cells,
         "cells_within_mode": size_list(g_mode, ("mode", "movement", "violation", "time"), with_roles=False,
                                        floor=SIZE_FLOOR_WITHIN_MODE),
-        "pairs_within_mode": size_list(g_pair, ("mode", "movement", "violation")),
+        "pairs_within_mode": pairs_list,
+        "chart": chart,
         "violation_within_mode": size_list(g_viol, ("mode", "violation")),
         "cells_to_half": {"people_injured": to_half(size_cells, "people_injured", H),
                           "ksi_people": to_half(size_cells, "ksi_people", P)},
@@ -862,6 +876,7 @@ def main():
             rs = [r for r in recs if r[f] == val]
             t = dict(tally(rs), value=val, surface_street_miles=round(mi.get(val, 0.0), 1),
                      share_of_surface_street_miles=round(mi.get(val, 0.0) / total_mi, 4))
+            t["by_victim_role"] = roles(rs)
             t["by_mode"] = {md: {"people_injured": sum(r["injured"] for r in rs if r["mode"] == md),
                                  "ksi_people": sum(r["people"] for r in rs if r["mode"] == md)}
                             for md in sorted(by_mode)}
@@ -920,7 +935,7 @@ def main():
         "years": [y0, y1],
         "inputs_read_on": json.load(open(os.path.join(TABLES, "summary.json")))["tables"]["crashes"]["input"]["read_on"],
         "totals": {"injury_crashes": N, "ksi_crashes": K, "ksi_people": P, "people_injured": H,
-                   "citywide_ksi_rate": round(p0, 4)},
+                   "citywide_ksi_rate": round(p0, 4), "by_victim_role": roles(recs)},
         "rules": {"min_injury_crashes": MIN_INJURY_CRASHES, "alpha": ALPHA, "cells_possible": len(cells),
                   "cells_tested": m, "within_mode_cells_possible": mode_cells_possible,
                   "level2_tests": tests,

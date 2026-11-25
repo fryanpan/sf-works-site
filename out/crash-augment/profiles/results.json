@@ -10,7 +10,23 @@
   "ksi_crashes": 2219,
   "ksi_people": 2400,
   "people_injured": 30482,
-  "citywide_ksi_rate": 0.0915
+  "citywide_ksi_rate": 0.0915,
+  "by_victim_role": {
+   "people_injured": {
+    "Bicyclist": 3776,
+    "Driver": 13802,
+    "Other": 1171,
+    "Passenger": 5795,
+    "Pedestrian": 5938
+   },
+   "ksi_people": {
+    "Bicyclist": 399,
+    "Driver": 748,
+    "Other": 153,
+    "Passenger": 179,
+    "Pedestrian": 921
+   }
+  }
  },
  "rules": {
   "min_injury_crashes": 100,
@@ -16827,6 +16843,130 @@
     }
    }
   ],
+  "chart": [
+   {
+    "mode": "vehicles only",
+    "movement": "going straight",
+    "violation": "signals and signs",
+    "people_injured": 3656,
+    "share_of_people_injured": 0.1199,
+    "ksi_people": 179,
+    "share_of_ksi_people": 0.0746,
+    "injury_crashes": 2284,
+    "ksi_crashes": 139
+   },
+   {
+    "mode": "vehicles only",
+    "movement": "going straight",
+    "violation": "unsafe speed",
+    "people_injured": 3654,
+    "share_of_people_injured": 0.1199,
+    "ksi_people": 247,
+    "share_of_ksi_people": 0.1029,
+    "injury_crashes": 2671,
+    "ksi_crashes": 219
+   },
+   {
+    "mode": "vehicles only",
+    "movement": "left or U-turn",
+    "violation": "vehicle right of way",
+    "people_injured": 1813,
+    "share_of_people_injured": 0.0595,
+    "ksi_people": 89,
+    "share_of_ksi_people": 0.0371,
+    "injury_crashes": 1251,
+    "ksi_crashes": 85
+   },
+   {
+    "mode": "vehicles only",
+    "movement": "going straight",
+    "violation": "other",
+    "people_injured": 1413,
+    "share_of_people_injured": 0.0464,
+    "ksi_people": 28,
+    "share_of_ksi_people": 0.0117,
+    "injury_crashes": 1079,
+    "ksi_crashes": 25
+   },
+   {
+    "mode": "pedestrian involved",
+    "movement": "left or U-turn",
+    "violation": "failure to yield to pedestrian",
+    "people_injured": 1294,
+    "share_of_people_injured": 0.0425,
+    "ksi_people": 119,
+    "share_of_ksi_people": 0.0496,
+    "injury_crashes": 1225,
+    "ksi_crashes": 117
+   },
+   {
+    "mode": "pedestrian involved",
+    "movement": "going straight",
+    "violation": "pedestrian violation",
+    "people_injured": 1112,
+    "share_of_people_injured": 0.0365,
+    "ksi_people": 248,
+    "share_of_ksi_people": 0.1033,
+    "injury_crashes": 1074,
+    "ksi_crashes": 246
+   },
+   {
+    "mode": "vehicles only",
+    "movement": "going straight",
+    "violation": "unsafe turn or lane use",
+    "people_injured": 1072,
+    "share_of_people_injured": 0.0352,
+    "ksi_people": 72,
+    "share_of_ksi_people": 0.03,
+    "injury_crashes": 850,
+    "ksi_crashes": 65
+   },
+   {
+    "mode": "vehicles only",
+    "movement": "left or U-turn",
+    "violation": "unsafe turn or lane use",
+    "people_injured": 1017,
+    "share_of_people_injured": 0.0334,
+    "ksi_people": 46,
+    "share_of_ksi_people": 0.0192,
+    "injury_crashes": 774,
+    "ksi_crashes": 41
+   },
+   {
+    "mode": "pedestrian involved",
+    "movement": "going straight",
+    "violation": "failure to yield to pedestrian",
+    "people_injured": 639,
+    "share_of_people_injured": 0.021,
+    "ksi_people": 106,
+    "share_of_ksi_people": 0.0442,
+    "injury_crashes": 602,
+    "ksi_crashes": 104
+   },
+   {
+    "mode": "bicycle involved",
+    "movement": "going straight",
+    "violation": "unsafe speed",
+    "people_injured": 465,
+    "share_of_people_injured": 0.0153,
+    "ksi_people": 73,
+    "share_of_ksi_people": 0.0304,
+    "injury_crashes": 443,
+    "ksi_crashes": 71
+   },
+   {
+    "mode": "all other groups",
+    "movement": "",
+    "violation": "",
+    "groups": 228,
+    "people_injured": 14347,
+    "share_of_people_injured": 0.4707,
+    "ksi_people": 1193,
+    "share_of_ksi_people": 0.4971,
+    "injury_crashes": 12008,
+    "ksi_crashes": 1107
+   }
+  ],
   "violation_within_mode": [
    {
     "mode": "vehicles only",
@@ -17678,6 +17818,22 @@
       "value": "1",
       "surface_street_miles": 597.1,
       "share_of_surface_street_miles": 0.5304,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 602,
+        "Driver": 2008,
+        "Other": 161,
+        "Passenger": 794,
+        "Pedestrian": 958
+       },
+       "ksi_people": {
+        "Bicyclist": 73,
+        "Driver": 102,
+        "Other": 15,
+        "Passenger": 21,
+        "Pedestrian": 136
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 614,
@@ -17710,6 +17866,22 @@
       "value": "2",
       "surface_street_miles": 86.3,
       "share_of_surface_street_miles": 0.0767,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 173,
+        "Driver": 410,
+        "Other": 43,
+        "Passenger": 186,
+        "Pedestrian": 284
+       },
+       "ksi_people": {
+        "Bicyclist": 10,
+        "Driver": 27,
+        "Other": 3,
+        "Passenger": 4,
+        "Pedestrian": 31
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 174,
@@ -17742,6 +17914,22 @@
       "value": "3",
       "surface_street_miles": 118.9,
       "share_of_surface_street_miles": 0.1056,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 803,
+        "Driver": 1506,
+        "Other": 209,
+        "Passenger": 651,
+        "Pedestrian": 929
+       },
+       "ksi_people": {
+        "Bicyclist": 66,
+        "Driver": 70,
+        "Other": 29,
+        "Passenger": 15,
+        "Pedestrian": 132
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 815,
@@ -17774,6 +17962,22 @@
       "value": "4",
       "surface_street_miles": 289.1,
       "share_of_surface_street_miles": 0.2568,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 2117,
+        "Driver": 9587,
+        "Other": 734,
+        "Passenger": 4062,
+        "Pedestrian": 3676
+       },
+       "ksi_people": {
+        "Bicyclist": 239,
+        "Driver": 528,
+        "Other": 104,
+        "Passenger": 137,
+        "Pedestrian": 610
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 2149,
@@ -17806,6 +18010,22 @@
       "value": "unknown",
       "surface_street_miles": 34.4,
       "share_of_surface_street_miles": 0.0306,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 81,
+        "Driver": 291,
+        "Other": 24,
+        "Passenger": 102,
+        "Pedestrian": 91
+       },
+       "ksi_people": {
+        "Bicyclist": 11,
+        "Driver": 21,
+        "Other": 2,
+        "Passenger": 2,
+        "Pedestrian": 12
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 82,
@@ -17843,6 +18063,22 @@
       "value": "80 or under",
       "surface_street_miles": 841.3,
       "share_of_surface_street_miles": 0.7473,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 3283,
+        "Driver": 12509,
+        "Other": 1042,
+        "Passenger": 5280,
+        "Pedestrian": 5455
+       },
+       "ksi_people": {
+        "Bicyclist": 344,
+        "Driver": 671,
+        "Other": 140,
+        "Passenger": 159,
+        "Pedestrian": 845
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 3330,
@@ -17875,6 +18111,22 @@
       "value": "over 80 (all ages and abilities)",
       "surface_street_miles": 259.0,
       "share_of_surface_street_miles": 0.2301,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 482,
+        "Driver": 1209,
+        "Other": 122,
+        "Passenger": 486,
+        "Pedestrian": 465
+       },
+       "ksi_people": {
+        "Bicyclist": 53,
+        "Driver": 71,
+        "Other": 12,
+        "Passenger": 18,
+        "Pedestrian": 75
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 493,
@@ -17907,6 +18159,22 @@
       "value": "unknown",
       "surface_street_miles": 25.5,
       "share_of_surface_street_miles": 0.0226,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 11,
+        "Driver": 84,
+        "Other": 7,
+        "Passenger": 29,
+        "Pedestrian": 18
+       },
+       "ksi_people": {
+        "Bicyclist": 2,
+        "Driver": 6,
+        "Other": 1,
+        "Passenger": 2,
+        "Pedestrian": 1
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 11,
@@ -17944,6 +18212,22 @@
       "value": "heavy",
       "surface_street_miles": 22.1,
       "share_of_surface_street_miles": 0.0196,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 181,
+        "Driver": 606,
+        "Other": 79,
+        "Passenger": 280,
+        "Pedestrian": 445
+       },
+       "ksi_people": {
+        "Bicyclist": 16,
+        "Driver": 34,
+        "Other": 11,
+        "Passenger": 7,
+        "Pedestrian": 68
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 183,
@@ -17976,6 +18260,22 @@
       "value": "light",
       "surface_street_miles": 669.6,
       "share_of_surface_street_miles": 0.5948,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 714,
+        "Driver": 2262,
+        "Other": 188,
+        "Passenger": 933,
+        "Pedestrian": 1132
+       },
+       "ksi_people": {
+        "Bicyclist": 78,
+        "Driver": 123,
+        "Other": 15,
+        "Passenger": 25,
+        "Pedestrian": 156
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 727,
@@ -18008,6 +18308,22 @@
       "value": "medium",
       "surface_street_miles": 408.7,
       "share_of_surface_street_miles": 0.363,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 2870,
+        "Driver": 10850,
+        "Other": 897,
+        "Passenger": 4553,
+        "Pedestrian": 4343
+       },
+       "ksi_people": {
+        "Bicyclist": 303,
+        "Driver": 585,
+        "Other": 126,
+        "Passenger": 145,
+        "Pedestrian": 696
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 2913,
@@ -18040,6 +18356,22 @@
       "value": "unknown",
       "surface_street_miles": 25.5,
       "share_of_surface_street_miles": 0.0226,
+      "by_victim_role": {
+       "people_injured": {
+        "Bicyclist": 11,
+        "Driver": 84,
+        "Other": 7,
+        "Passenger": 29,
+        "Pedestrian": 18
+       },
+       "ksi_people": {
+        "Bicyclist": 2,
+        "Driver": 6,
+        "Other": 1,
+        "Passenger": 2,
+        "Pedestrian": 1
+       }
+      },
       "by_mode": {
        "bicycle involved": {
         "people_injured": 11,

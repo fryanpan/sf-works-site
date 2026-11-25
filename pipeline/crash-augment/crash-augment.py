@@ -28,7 +28,7 @@ OUTPUT (the CSVs gitignored):
   out/crash-augment/tables/crashes.csv    66,991 rows on 2026-11-25
   out/crash-augment/tables/parties.csv    140,843 rows
   out/crash-augment/tables/victims.csv    84,943 rows
-  out/crash-augment/tables/summary.json   tracked: row counts, added columns, each input's DataSF marker and read date
+  out/crash-augment/tables/summary.json   tracked: row counts, added columns, each input's content hash and read date
 
 Columns, rules and checks: pipeline/crash-augment/README.md. Interval: daily, with the scheduled refresh
 (pipeline/transportation-update.py step "crash-augment").

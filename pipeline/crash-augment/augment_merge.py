@@ -13,7 +13,7 @@ and writes, in the folder it is given:
   crashes.csv   every ubvf-ztfx column, then the street columns, then the vehicle rollup, one row per crash
   parties.csv   every 8gtc-pjc6 column, then the six vehicle columns, one row per party
   victims.csv   every nwes-mmgh column, then the six vehicle columns, one row per victim
-  summary.json  row counts, the columns each table adds, and the DataSF marker and read date of each input
+  summary.json  row counts, the columns each table adds, and each input's row count, content hash and read date
 
 Rows come out in collision-year order and by key within a year (crash_tables.iter_rows), so a rerun on the same
 inputs writes the same bytes. A lane row is matched by the table's key (case_id_pkey for crashes, unique_id for
@@ -110,7 +110,9 @@ def build_table(name, dest):
         "missing_lane_rows": missing,
         "lane_rows_not_held": {lane: sum(1 for k in rows if k not in seen) for lane, _, rows, _ in loaded},
         "lane_keys_repeated": {lane: len(dup) for lane, _, _, dup in loaded},
-        "input": crash_tables.info(name),
+        # Not rowsUpdatedAt or full_read_on: DataSF re-stamps the first nightly and the second moves on a schedule, and
+        # this summary is tracked, so it names its input by content alone.
+        "input": {k: v for k, v in crash_tables.info(name).items() if k in ("id", "rows", "content_sha", "read_on")},
     }
 
 

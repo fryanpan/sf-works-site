@@ -76,6 +76,8 @@ def fixture():
         "unknown": party(212, 2012, 1, "UNKNOWN/BLACK", body="Not Stated"),
         "pickup": party(213, 2013, 1, "FORD/F150/WHITE", body="Pickup or Panel Truck"),
         "two_digit_year": party(214, 2014, 1, "Honda/Civic/Gray", year="15"),
+        # A parked pickup heavier than the moving Camry in the same crash: the rollup must not credit it.
+        "parked": party(215, 2001, 2, "FORD/F150/WHITE", body="Pickup or Panel Truck", ptype="Parked Vehicle"),
     }
     P += list(special.values())
     V = []
@@ -159,6 +161,9 @@ class Build(unittest.TestCase):
         self.assertEqual(len(crashes), len(self.tables[VF.CRASHES][0]))
         self.assertEqual(crashes["3999"]["motor_vehicle_parties"], "0")
         self.assertEqual(crashes["2013"]["heaviest_vehicle_weight_lb"], "4500")
+        # Crash 2001: a moving Camry and a parked F-150. The parked car is counted apart and is not the heaviest.
+        self.assertEqual((crashes["2001"]["motor_vehicle_parties"], crashes["2001"]["parked_vehicle_parties"]), ("1", "1"))
+        self.assertEqual(crashes["2001"]["heaviest_vehicle_weight_lb"], "3400")
 
     def test_good_build_passes_and_rerun_changes_nothing(self):
         out = self.build()
@@ -188,6 +193,14 @@ class Build(unittest.TestCase):
     def assertFails(self, results, check):
         self.assertIn(check, results, sorted(results))
         self.assertFalse(results[check].ok, "%s should fail: %s" % (check, results[check]))
+
+    def test_body_average_in_kilograms_fails(self):
+        out = self.build()
+        body = json.loads(out["body-type-averages.json"])
+        self.assertTrue(self.results(out)["body_avg[Passenger Car]"].ok)
+        body["Passenger Car"]["weight_lb"] = round(body["Passenger Car"]["weight_lb"] / 2.2046)
+        bad = dict(out, **{"body-type-averages.json": json.dumps(body)})
+        self.assertFails(self.results(bad), "body_avg[Passenger Car]")
 
     def test_duplicate_input_row_fails_and_keeps_previous_build(self):
         self.assertTrue(self.write(self.build()))

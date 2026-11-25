@@ -30,7 +30,7 @@ The tables are written to `out/crash-augment/tables/`. The CSVs are gitignored, 
 | `crashes.csv` | one per crash | ubvf-ztfx's columns, then the street columns, then the vehicle rollup |
 | `parties.csv` | one per party | 8gtc-pjc6's columns, then the six vehicle columns |
 | `victims.csv` | one per victim | nwes-mmgh's columns, then the six vehicle columns. They describe the vehicle the victim was in or on |
-| `summary.json` | | Row counts, the columns each table adds, and each input's DataSF marker and read date |
+| `summary.json` | | Row counts, the columns each table adds, and each input's content hash and read date. It leaves out DataSF's `rowsUpdatedAt`, which DataSF re-stamps at every nightly reload, so the file changes only when a row does |
 
 The DataSF columns come in DataSF's order. Four kinds are dropped because they change every night with nothing changed in the crash, or repeat another column: `data_loaded_at`, `point` (`tb_latitude` and `tb_longitude` hold it), and Socrata's `:@computed_region_*` columns. Rows are in collision-year order, and by key within a year. Join a victim to its party on `case_id_pkey` and `party_number_ckey`, and a party to its crash on `case_id_pkey`.
 
@@ -55,9 +55,10 @@ The weight's basis is its method. `exact_make_model_year` is the model in its ow
 
 | Column | Holds |
 | --- | --- |
-| `motor_vehicle_parties` | The crash's parties that are motor vehicles (not `not_applicable`) |
-| `vehicles_with_weight` | How many of those have a weight |
-| `heaviest_vehicle_weight_lb`, `heaviest_vehicle_make_clean`, `heaviest_vehicle_model_clean` | The heaviest of those, whatever its method |
+| `motor_vehicle_parties` | The crash's moving motor vehicles: parties whose method is not `not_applicable`, leaving out `party_type` `Parked Vehicle` |
+| `parked_vehicle_parties` | The crash's parked motor vehicles (`party_type` `Parked Vehicle`), which none of the other rollup columns count |
+| `vehicles_with_weight` | How many of the moving motor vehicles have a weight |
+| `heaviest_vehicle_weight_lb`, `heaviest_vehicle_make_clean`, `heaviest_vehicle_model_clean` | The heaviest moving motor vehicle with a weight, whatever its method. A parked car is never the heaviest vehicle |
 
 ### Street columns (crashes)
 
@@ -101,12 +102,13 @@ Every stage's checks must pass before the next stage runs, and a failure keeps t
 | fetch | each year holds exactly DataSF's row count | a dropped, repeated or stray row; a held file cut short |
 | fetch | at least the floor, and no more than 2% fewer rows than the last refresh | an empty or truncated read |
 | fetch | keys unique across years; key, `case_id_pkey` and `collision_datetime` present; dates from 2005 to tomorrow | a row that moved year held twice; a malformed read |
-| vehicles | 34 checks ([list](vehicles/README.md#data-quality)): row counts equal to the inputs, joins, weight bounds by body type, match-rate floors, 76 hand-read strings | a parser or vPIC regression; a unit error; a lost or duplicated row |
+| vehicles | 38 checks ([list](vehicles/README.md#data-quality)): row counts equal to the inputs, joins, weight bounds by body type, each common body type's average weight in its range, match-rate floors, 76 hand-read strings | a parser or vPIC regression; a unit error; a lost or duplicated row |
 | street | 64 checks ([list](street/README.md#checks)): one row per crash, coverage floors, allowed basis values, value ranges, no dated 20 mph before 2018 or camera before 2025 | a join that drops crashes; a source read short; a rule that dates a value it can't |
 | merge | rows, key unique, required fields, dates, and at most a 2% fall or 10% rise against the last build, for each table | a truncated or fanned-out table |
 | merge | every party's crash is a crash row; every victim's party is exactly one parties row | an orphan or a fan-out between tables |
 | merge | every held row found its row in each lane, with none left over or repeated; every table equals its held DataSF table | a lane built on a different read |
-| merge | the vehicle lane read the same DataSF update as the tables | lanes mixing two days' data |
+| merge | the vehicle lane read the same held copy as the tables (the copy's content hash) | lanes mixing two days' data |
+| merge | `accident_year` is the year of `collision_datetime` on all but 20 crashes (7 on 2026-11-25, each a year behind) | the year field drifting from the crash date; anything grouping by year reads `collision_datetime` |
 | merge | the header is DataSF's columns and then each lane's, and every added column has a value on some row | a lane column lost or emptied |
 
 `tests/test_crash_augment.py` shows a refresh reading nothing when nothing moved, reading back only a row cut from the held copy, and reading a year again when its file was edited on disk. It also shows a refresh reading only the rows whose `data_updated_at` moved, and moving a row whose year changed. Then it shows each fetch and merge check failing on the bad input it guards against. The lanes have their own tests in `vehicles/tests/` and `street/tests/`.

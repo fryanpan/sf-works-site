@@ -490,6 +490,10 @@ STEPS = [
     ("muni-daily", "build", py("muni-ewt/muni_daily.py"), ["site/data/muni-daily.json"], [], 0),
     ("muni-stop-reach", "build", py("muni-stop-reach.py"), ["site/data/bike-history/muni-reach.json"], [], 0),
     ("parking-reach", "build", py("parking-reach.py"), ["site/data/bike-history/parking-reach.json"], [], 0),
+    # The LADOT-style crash profiles (analysis/crash-profiles/crash-profiles.py), read off the crash-augment tables.
+    # Reruns whenever those tables or the street lane's held copies change, so results.json follows the daily data.
+    ("crash-profiles", "build", [PY, os.path.join("analysis", "crash-profiles", "crash-profiles.py")],
+     ["out/crash-augment/profiles/results.json"], [], 0),
     # The site's own collectors are node and fast; they run every time and
     # write only when their output changes.
     ("collect-transportation", "node", node("collect-transportation.mjs"), ["site/data/transportation.json"], [], 0),

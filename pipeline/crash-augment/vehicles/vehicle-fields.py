@@ -20,8 +20,9 @@ key, with no run stamps:
 
   parties-vehicles.csv   one row per parties row, keyed by unique_id
   victims-vehicles.csv   one row per victims row, keyed by unique_id (victim_id beside it)
-  crashes-vehicles.csv   one row per crash, keyed by case_id_pkey: its motor vehicles and the heaviest
-  inputs.json            each input's row count and DataSF marker, which the checks hold the outputs to
+  crashes-vehicles.csv   one row per crash, keyed by case_id_pkey: its moving and parked motor vehicles and the heaviest
+  inputs.json            each input's row count and the content hash of the held copy it read (crash_tables.info),
+                         which the checks hold the outputs to
 
 and, committed beside this script because they are small and are what a reviewer reads:
 
@@ -88,10 +89,11 @@ SELECT = {PARTIES: ",".join(VEHICLE_COLS), VICTIMS: ",".join(VEHICLE_COLS + ["vi
 
 NEW_COLS = ["vehicle_make_clean", "vehicle_model_clean", "estimated_vehicle_weight_lb", "vehicle_match_method",
             "vehicle_match_reason", "vehicle_body_type_clean"]
+PARKED = "Parked Vehicle"  # the party_type of a parked car, left out of the crash rollup's moving vehicles
 PARTY_OUT = ["unique_id", "case_id_pkey", "party_number_ckey"] + NEW_COLS
 VICTIM_OUT = ["unique_id", "victim_id", "case_id_pkey", "party_number_ckey"] + NEW_COLS
-CRASH_OUT = ["case_id_pkey", "motor_vehicle_parties", "vehicles_with_weight", "heaviest_vehicle_weight_lb",
-             "heaviest_vehicle_make_clean", "heaviest_vehicle_model_clean"]
+CRASH_OUT = ["case_id_pkey", "motor_vehicle_parties", "parked_vehicle_parties", "vehicles_with_weight",
+             "heaviest_vehicle_weight_lb", "heaviest_vehicle_make_clean", "heaviest_vehicle_model_clean"]
 METHODS = ("exact_make_model_year", "model_10yr_avg", "body_type_avg", "unmatched", "not_applicable")
 WEIGHED = METHODS[:3]
 
@@ -127,7 +129,7 @@ THREADS = 1
 # ---- reading DataSF ------------------------------------------------------------------------------------
 
 def read_tables(update):
-    """{fxf: (rows, marker, read_on)} for the three tables, from the held copy that ../crash_tables.py keeps.
+    """{fxf: (rows, content_sha, read_on)} for the three tables, from the held copy that ../crash_tables.py keeps.
 
     With --update the held copy is first brought up to date (crash_tables.refresh), unless CRASH_TABLES_HELD is set,
     which ../crash-augment.py sets after refreshing it once, so every lane builds on the same read."""
@@ -138,8 +140,9 @@ def read_tables(update):
     for name, fxf in (("parties", PARTIES), ("victims", VICTIMS), ("crashes", CRASHES)):
         rows = crash_tables.rows(name, columns=SELECT[fxf].split(","))
         meta = crash_tables.info(name)
-        out[fxf] = (rows, meta["rowsUpdatedAt"], meta["read_on"])
-        print("  %s: %d rows held, read %s (DataSF rowsUpdatedAt %s)" % (fxf, len(rows), meta["read_on"], meta["rowsUpdatedAt"]))
+        out[fxf] = (rows, meta["content_sha"], meta["read_on"])
+        print("  %s: %d rows held, read %s (held copy %s, DataSF rowsUpdatedAt %s)" % (
+            fxf, len(rows), meta["read_on"], meta["content_sha"], meta["rowsUpdatedAt"]))
     return out
 
 
@@ -213,7 +216,7 @@ def ten_years(row, year):
 # ---- the build ------------------------------------------------------------------------------------------
 
 def build(tables, vpic=None, log=print):
-    """Every output, as {name: text}. `tables` is {fxf: (rows, marker, read_on)}; `vpic` a Vpic."""
+    """Every output, as {name: text}. `tables` is {fxf: (rows, content_sha, read_on)}; `vpic` a Vpic."""
     vpic = vpic or Vpic()
     parties, victims, crashes = (tables[f][0] for f in (PARTIES, VICTIMS, CRASHES))
     rows_all = list(parties) + list(victims)
@@ -352,17 +355,20 @@ def build(tables, vpic=None, log=print):
         out_v.append(o)
     assert len(out_p) == len(parties) and len(out_v) == len(victims), "a row was dropped or added"
 
-    # 5. The crash rollup: one row per crash in ubvf-ztfx.
+    # 5. The crash rollup: one row per crash in ubvf-ztfx. A parked car is a motor vehicle party but did not strike
+    # anyone under its own power, so the moving count and the heaviest vehicle leave it out and it is counted apart.
     by_case = collections.defaultdict(list)
-    for o in out_p:
-        by_case[o["case_id_pkey"]].append(o)
+    for r, o in zip(parties, out_p):
+        by_case[o["case_id_pkey"]].append((r.get("party_type") == PARKED, o))
     out_c = []
     for c in crashes:
         cid = c.get("case_id_pkey") or ""
-        motor = [o for o in by_case.get(cid, []) if o["vehicle_match_method"] != "not_applicable"]
-        weighed = [o for o in motor if o["estimated_vehicle_weight_lb"]]
+        motor = [(parked, o) for parked, o in by_case.get(cid, []) if o["vehicle_match_method"] != "not_applicable"]
+        moving = [o for parked, o in motor if not parked]
+        weighed = [o for o in moving if o["estimated_vehicle_weight_lb"]]
         top = max(weighed, key=lambda o: (int(o["estimated_vehicle_weight_lb"]), o["party_number_ckey"]), default=None)
-        out_c.append({"case_id_pkey": cid, "motor_vehicle_parties": str(len(motor)), "vehicles_with_weight": str(len(weighed)),
+        out_c.append({"case_id_pkey": cid, "motor_vehicle_parties": str(len(moving)),
+                      "parked_vehicle_parties": str(len(motor) - len(moving)), "vehicles_with_weight": str(len(weighed)),
                       "heaviest_vehicle_weight_lb": top["estimated_vehicle_weight_lb"] if top else "",
                       "heaviest_vehicle_make_clean": top["vehicle_make_clean"] if top else "",
                       "heaviest_vehicle_model_clean": top["vehicle_model_clean"] if top else ""})
@@ -377,7 +383,7 @@ def build(tables, vpic=None, log=print):
               for k, p in sorted(parsed.items())]
     summary = summarise(out_p, out_v, parties, lookup)
 
-    inputs = {f: {"rows": len(tables[f][0]), "rowsUpdatedAt": tables[f][1]} for f in (PARTIES, VICTIMS, CRASHES)}
+    inputs = {f: {"rows": len(tables[f][0]), "content_sha": tables[f][1]} for f in (PARTIES, VICTIMS, CRASHES)}
     return {
         "parties-vehicles.csv": to_csv(sorted(out_p, key=sort_key), PARTY_OUT),
         "victims-vehicles.csv": to_csv(sorted(out_v, key=sort_key), VICTIM_OUT),

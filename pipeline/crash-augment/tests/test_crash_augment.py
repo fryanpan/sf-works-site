@@ -203,7 +203,7 @@ def write_out(root, crashes, parties, victims, summary_edit=None):
         tables[name] = {"rows": len(rows), "datasf_columns": len(cols) - len(added),
                         "added": [{"lane": "x", "columns": added}], "missing_lane_rows": {"x": 0},
                         "lane_rows_not_held": {"x": 0}, "lane_keys_repeated": {"x": 0},
-                        "input": {"id": name, "rows": len(rows), "rowsUpdatedAt": "1"}}
+                        "input": {"id": name, "rows": len(rows), "content_sha": "1"}}
     s = {"tables": tables, "vehicle_inputs": {}}
     if summary_edit:
         summary_edit(s)
@@ -216,7 +216,8 @@ class AugmentedChecks(unittest.TestCase):
         self.saved = dict(augment_checks.FLOORS)
         augment_checks.FLOORS.update(crashes=2, parties=2, victims=2)
         when = "2024-03-01T08:00:00.000"
-        self.c = [{"case_id_pkey": str(i), "collision_datetime": when, "in_epc": "true"} for i in range(1, 4)]
+        self.c = [{"case_id_pkey": str(i), "collision_datetime": when, "accident_year": "2024", "in_epc": "true"}
+                  for i in range(1, 4)]
         self.p = [{"unique_id": "p%d" % i, "case_id_pkey": str(i), "party_number_ckey": "1", "collision_datetime": when,
                    "vehicle_match_method": "body_type_avg"} for i in range(1, 4)]
         self.v = [{"unique_id": "v%d" % i, "case_id_pkey": str(i), "party_number_ckey": "1", "collision_datetime": when,
@@ -259,8 +260,18 @@ class AugmentedChecks(unittest.TestCase):
 
     def test_lanes_on_different_datasf_updates_fail(self):
         def edit(s):
-            s["vehicle_inputs"] = {"parties": {"rows": 3, "rowsUpdatedAt": "2"}}
+            s["vehicle_inputs"] = {"parties": {"rows": 3, "content_sha": "2"}}
         self.assertIn("crash-augment/summary.json.each", self.failed(edit=edit))
+
+    def test_accident_year_drifting_from_the_crash_date_fails(self):
+        saved = augment_checks.YEAR_MISMATCH_MAX
+        augment_checks.YEAR_MISMATCH_MAX = 1
+        try:
+            self.assertNotIn("crash-augment/accident_year.each", self.failed(c=[dict(self.c[0], accident_year="2023")] + self.c[1:]))
+            c = [dict(r, accident_year="2023") for r in self.c]
+            self.assertIn("crash-augment/accident_year.each", self.failed(c=c))
+        finally:
+            augment_checks.YEAR_MISMATCH_MAX = saved
 
     def test_an_added_column_with_no_value_fails(self):
         c = [dict(r, in_epc="") for r in self.c]

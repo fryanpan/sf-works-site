@@ -15,6 +15,9 @@ previous build when any fails (pipeline/README.md, rule 2). Each check is named 
   each                     per row: a known method; a weight exactly when the method gives one; a reason
                            whenever the row fell back or has no weight; no model without a make; and the
                            weight within the bounds for its body type (WEIGHT_BOUNDS).
+  body_avg[...]            each body type's average curb weight (body-type-averages.json, the mean of every exact
+                           match of that body type) within BODY_AVG_BOUNDS. WEIGHT_BOUNDS is wide enough to hold a
+                           light vehicle's weight in kilograms, so this is the check that catches a unit error.
   rate[...]                match rates no lower than RATE_FLOORS, set a little under the first full build
                            (2026-11-25), so a parser or vPIC regression that loses matches fails loudly.
   golden                   every string in golden.csv, each read by hand, comes out of the lookup as the
@@ -45,8 +48,14 @@ HEAVY = {"Other Bus", "Public Transit Authority", "School Bus", "Tour Bus", "Tru
          "Two Axle Tank Truck", "Three Axle Tank Truck", "Fire Truck", "Truck Tractor", "Paratransit",
          "Motor Home", "Two Axle Tow Truck", "Three Axle Tow Truck"}
 # Curb weight bounds in lb. Passenger vehicles and light trucks run from about 1,800 lb (a Smart Fortwo)
-# to about 8,000 (a dual-rear-wheel pickup); 1,500 to 14,000 leaves room without letting a unit error in.
+# to about 8,000 (a dual-rear-wheel pickup); 1,500 to 14,000 leaves room for both. It would also pass most light
+# vehicles weighed in kilograms (about 1,500 to 2,700), so BODY_AVG_BOUNDS below is the unit check.
 WEIGHT_BOUNDS = {"two_wheel": (150, 1500), "heavy": (3000, 80000), "light": (1500, 14000)}
+# The average curb weight, in lb, each common body type's exact matches must land in. A Passenger Car averaged 3,296
+# and a Sport Utility Vehicle 4,004 in the first full build (2026-11-25); in kilograms they would read about 1,500
+# and 1,800, well under these floors. A body type not listed here is held to WEIGHT_BOUNDS alone.
+BODY_AVG_BOUNDS = {"Passenger Car": (2800, 3800), "Sport Utility Vehicle": (3500, 4800),
+                   "Pickup or Panel Truck": (4000, 5800), "Minivan": (3800, 4900)}
 # Floors, as shares. "motor" is parties rows that are not pedestrians, bicyclists or non-motor body types;
 # "motor_text" those that also have a vehicle_make string. Each floor sits a few points under the first
 # full build (2026-11-25), whose figure is beside it.
@@ -171,6 +180,23 @@ def rates(root, floors=None):
             for k in sorted(floors)]
 
 
+def body_averages(root):
+    """Each listed body type's average weight against BODY_AVG_BOUNDS, from body-type-averages.json."""
+    p = os.path.join(root, "body-type-averages.json")
+    if not os.path.exists(p):
+        return [Result("body_avg.read", False, "no body-type-averages.json on disk")]
+    with open(p, encoding="utf-8") as fh:
+        avg = json.load(fh)
+    out = []
+    for body, (lo, hi) in sorted(BODY_AVG_BOUNDS.items()):
+        if body not in avg:
+            continue
+        w = avg[body]["weight_lb"]
+        out.append(Result("body_avg[%s]" % body, lo <= w <= hi, "%s lb over %s rows, bounds %d-%d" % (
+            w, avg[body].get("rows"), lo, hi)))
+    return out
+
+
 def golden(root, path=GOLDEN):
     lookup = read_csv(root, "make-model-lookup.csv")
     if lookup is None:
@@ -225,7 +251,7 @@ def run(root, prev_root=None, golden_path=GOLDEN, row_floors=None, rate_floors=N
 
     def golden_check(r):
         return golden(r, golden_path)
-    for extra in (exact_rows, victim_consistency, rate_check, golden_check):
+    for extra in (exact_rows, victim_consistency, body_averages, rate_check, golden_check):
         try:
             out += extra(root)
         except Exception as exc:  # noqa: BLE001 - a check that cannot read its data fails
@@ -243,7 +269,8 @@ def main():
         try:
             for name in os.listdir(OUT):
                 shutil.copy(os.path.join(OUT, name), tmp)
-            shutil.copy(os.path.join(HERE, "make-model-lookup.csv"), tmp)
+            for name in ("make-model-lookup.csv", "body-type-averages.json"):
+                shutil.copy(os.path.join(HERE, name), tmp)
             results = run(tmp)
         finally:
             shutil.rmtree(tmp, ignore_errors=True)

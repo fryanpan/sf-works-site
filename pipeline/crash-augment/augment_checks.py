@@ -14,7 +14,12 @@ snapshot it took before the step. Each check is named "crash-augment/<file>.<che
                                   party_number_ckey) is exactly one parties row, so no lane fanned a row out.
   each (summary.json)             every table holds exactly the rows of its held DataSF table; every held row found
                                   its row in every lane, no lane row is left over and none repeats; and the vehicle
-                                  lane read the same DataSF update (rowsUpdatedAt) the tables were built from.
+                                  lane read the same held copy (crash_tables.info's content_sha) the tables were
+                                  built from.
+  each (accident_year)            accident_year is the year of collision_datetime on all but YEAR_MISMATCH_MAX rows.
+                                  DataSF's accident_year runs a year behind on a handful of January to April crashes
+                                  (7 on 2026-11-25, every one with a case number of the later year), so anything that
+                                  groups by year reads collision_datetime; the check catches the field drifting further.
   each (columns)                  the header is DataSF's columns and then each lane's, as summary.json lists them,
                                   and every added column has a value on at least one row.
 """
@@ -32,10 +37,11 @@ OUT_REL = os.path.join("out", "crash-augment", "tables")
 FLOORS = {"crashes": 60000, "parties": 125000, "victims": 75000}
 # The fields each table's checks read; everything else is left unparsed.
 FIELDS = {
-    "crashes": ["case_id_pkey", "collision_datetime"],
+    "crashes": ["case_id_pkey", "collision_datetime", "accident_year"],
     "parties": ["unique_id", "case_id_pkey", "party_number_ckey", "collision_datetime", "vehicle_match_method"],
     "victims": ["unique_id", "case_id_pkey", "party_number_ckey", "collision_datetime", "vehicle_match_method"],
 }
+YEAR_MISMATCH_MAX = 20
 KEYS = {"crashes": "case_id_pkey", "parties": "unique_id", "victims": "unique_id"}
 
 _cache = {}
@@ -92,9 +98,9 @@ def summary_rule(entry):
             why.append("%s %s: %s" % (name, what, bad))
     lane_inputs = entry.get("vehicle_inputs") or {}
     fxf = (t.get("input") or {}).get("id")
-    if fxf in lane_inputs and str(lane_inputs[fxf].get("rowsUpdatedAt")) != str(t["input"].get("rowsUpdatedAt")):
-        why.append("%s: vehicle lane built on DataSF update %s, the table on %s"
-                   % (name, lane_inputs[fxf].get("rowsUpdatedAt"), t["input"].get("rowsUpdatedAt")))
+    if fxf in lane_inputs and str(lane_inputs[fxf].get("content_sha")) != str(t["input"].get("content_sha")):
+        why.append("%s: vehicle lane built on held copy %s, the table on %s"
+                   % (name, lane_inputs[fxf].get("content_sha"), t["input"].get("content_sha")))
     if fxf in lane_inputs and lane_inputs[fxf].get("rows") != t["rows"]:
         why.append("%s: vehicle lane read %s rows, the table holds %s" % (name, lane_inputs[fxf].get("rows"), t["rows"]))
     return "; ".join(why) or None
@@ -106,6 +112,22 @@ def summary_entries(root):
         return None
     vin = s.get("vehicle_inputs") or {}
     return [{"name": n, "table": t, "vehicle_inputs": vin} for n, t in sorted(s["tables"].items())]
+
+
+def year_entries(root):
+    got = scan(root, "crashes")
+    if got is None:
+        return None
+    off = [r["case_id_pkey"] for r in got[0] if r.get("accident_year", "") != r["collision_datetime"][:4]]
+    return [{"off": off, "rows": len(got[0])}]
+
+
+def year_rule(entry):
+    off = entry["off"]
+    if len(off) <= YEAR_MISMATCH_MAX:
+        return None
+    return "%d of %d crashes have an accident_year that is not their collision_datetime year, %d allowed: %s" % (
+        len(off), entry["rows"], YEAR_MISMATCH_MAX, ", ".join(off[:4]))
 
 
 def column_entries(root):
@@ -151,6 +173,8 @@ def checks():
              right=keys_of(P, ["case_id_pkey", "party_number_ckey"]), extra_ok=True),
         Each("crash-augment/summary.json", summary_entries, summary_rule,
              "rows equal the held DataSF table; every lane row found, none left over or repeated; one DataSF update"),
+        Each("crash-augment/accident_year", year_entries, year_rule,
+             "accident_year is the year of collision_datetime, bar a few upstream slips"),
         Each("crash-augment/columns", column_entries, column_rule,
              "header is DataSF's columns then each lane's, and every added column has a value somewhere"),
     ]

@@ -258,6 +258,14 @@ def load_all(update=False):
     return out
 
 
+def held(name):
+    """One DataSF street source (a SOCRATA name) as a Source: the held copy the street lane last read and checked.
+
+    Makes no request when the copy is held. For a reader such as analysis/crash-profiles/, which must use the same
+    copy as the street columns rather than guess a cache file by name."""
+    return _socrata(name, update=False)
+
+
 def markers():
     """The pipeline-state keys this module records, for the orchestrator's set_step()."""
     return sorted([MARKER_PREFIX + "socrata:" + v[0] for v in SOCRATA.values()]

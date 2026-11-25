@@ -5,22 +5,27 @@
     python3 analysis/crash-profiles/crash-profiles.py --years 2018 2024
 
 It reads out/crash-augment/tables/{crashes,parties,victims}.csv (built by pipeline/crash-augment/crash-augment.py)
-and the street centerlines the street lane holds (data/socrata-cache/crash-augment-street/3psu-pn9h-*.json), and
-writes one JSON file of counts. Standard library only.
+and the street lane's held copies of the street centerlines (3psu-pn9h) and signals (ybh5-27n2), taken through
+street_sources.held() so they are the copies the street columns were built from, and writes one JSON file of counts.
+pipeline/transportation-update.py reruns it as the build step "crash-profiles" whenever those inputs change.
+Standard library only.
 
 WHAT IT COUNTS
   An injury crash is a row of ubvf-ztfx. A KSI crash has collision_severity Fatal or Injury (Severe). A KSI person is
-  a victims row (nwes-mmgh) with victim_degree_of_injury Fatal Injury or Severe Injury.
+  a victims row (nwes-mmgh) with victim_degree_of_injury Fatal Injury or Severe Injury. A crash's year is the year
+  of collision_datetime, not accident_year, which runs a year behind on a few crashes (pipeline check accident_year).
 
 LEVEL 1, THE COARSE GRID. Each crash falls in one cell of movement group x violation group x time band.
   movement   the at-fault party's move_pre_acc, grouped by MOVEMENT. The at-fault party is the crash's party_at_fault
              number; when that is blank, the party with at_fault Yes; when none, party 1. When the at-fault party is
-             a pedestrian, the movement is the first vehicle party's instead, since a fix acts on the vehicle.
+             a pedestrian, the movement is the first Driver party's instead (never a bicyclist or a parked car),
+             since a fix acts on the vehicle. The JSON counts how often that happens.
   violation  vz_pcf_group (the primary collision factor), grouped by VIOLATION.
   time       collision_time and day_of_week, grouped by TIME_BANDS.
-  A cell is tested only if it holds at least MIN_KSI_PEOPLE KSI people. A tested cell is a profile when its KSI crash
-  rate (KSI crashes / injury crashes in the cell) is above the citywide rate by a one-sided exact binomial test at
-  ALPHA divided by the number of cells tested (Bonferroni). Rate above the citywide rate is the same statement as
+  A cell is tested only if it holds at least MIN_INJURY_CRASHES injury crashes. The rule reads exposure, never the
+  outcome, so a small cell cannot enter the test by being severe by chance. A tested cell is a profile when its KSI
+  crash rate (KSI crashes / injury crashes in the cell) is above the citywide rate by a one-sided exact binomial
+  test at ALPHA divided by the number of cells tested (Bonferroni). Rate above the citywide rate is the same statement as
   "its share of KSI crashes exceeds its share of injury crashes". Over-representation is reported as the cell's share
   of KSI people divided by its share of injury crashes.
 
@@ -28,14 +33,23 @@ LEVEL 2. Each profile is split by the finer fields in SPLITS. A split is flagged
   categories by a chi-square test of homogeneity at ALPHA / (profiles x splits); the doc decides which flagged splits
   point at a different fix.
 
-CONTEXT PROFILES. For each street-context field, each value's share of KSI people against its share of injury
-  crashes, and for street class and corner type its share of the network (block length; intersections). Each field
-  carries the mix of its _basis column, so a reader can see which are current_state_only.
+YEAR WINDOWS. Each profile's rate is given again for 2017-2019 and 2020-2024 alone, and each mode's crashes by
+  year and severity, because reported minor-injury crashes fell in 2020 while KSI crashes did not, which raises
+  every severity rate after 2020.
 
-VEHICLE WEIGHT. Pedestrians hurt in crashes with exactly one motor vehicle party, by that vehicle's
-  estimated_vehicle_weight_lb band. Reported for every weighted vehicle and for model-matched weights alone
-  (exact_make_model_year, model_10yr_avg), since a body_type_avg weight only restates the body type. A Mantel-Haenszel
-  odds ratio, stratified by street class and light, checks whether the gap survives the obvious confounders.
+CONTEXT PROFILES. For each street-context field, each value's share of KSI people against its share of injury
+  crashes, and for street class and corner type its share of the network (block length; intersections). Street
+  shares are given over every active block and over surface streets alone (no freeway, ramp or class 0). Each field
+  carries the mix of its _basis column, so a reader can see which are current_state_only. The signal share counts
+  only signals at a node the corner count holds.
+
+VEHICLE WEIGHT. Pedestrians hurt in crashes with exactly one moving motor vehicle (motor_vehicle_parties, which
+  leaves out parked cars), by that vehicle's estimated_vehicle_weight_lb band. Reported for every weighted vehicle
+  and for model-matched weights alone (exact_make_model_year, model_10yr_avg), since a body_type_avg weight only
+  restates the body type. A Mantel-Haenszel odds ratio of over 5,000 lb against under 3,500 lb, stratified by street
+  class and light, is given for both, per pedestrian and per crash (a crash is KSI when any pedestrian in it was);
+  the per-crash one is the honest interval, since pedestrians in one crash are not independent. It adjusts for
+  nothing else, and buses, heavy trucks and motorcycles have no weight, so it compares light vehicles only.
 
 Every figure is a correlation in police-reported injury crashes. Nothing here says a field causes severity.
 """
@@ -43,7 +57,6 @@ Every figure is a correlation in police-reported injury crashes. Nothing here sa
 import argparse
 import collections
 import csv
-import glob
 import json
 import math
 import os
@@ -55,9 +68,10 @@ OUT = os.path.join(ROOT, "out", "crash-augment", "profiles", "results.json")
 sys.path.insert(0, os.path.join(ROOT, "pipeline", "crash-augment", "street"))
 from street_fields import ROAD_CLASS, CLASS_RANK, SIGNAL_TYPES, street_key  # noqa: E402
 from street_geo import line_coords  # noqa: E402
+import street_sources  # noqa: E402
 
 csv.field_size_limit(1 << 24)
-MIN_KSI_PEOPLE = 20
+MIN_INJURY_CRASHES = 100
 ALPHA = 0.05
 KSI_CRASH = {"Fatal", "Injury (Severe)"}
 KSI_PERSON = {"Fatal Injury", "Severe Injury"}
@@ -80,7 +94,10 @@ OTHER_MOVE = "not stated or other"  # Not Stated, Other, Ran Off Road, Other Uns
 
 # vz_pcf_group prefixes (California Vehicle Code sections) to a violation group.
 VIOLATION = [
-    ("speeding", ("22350", "22351", "22352", "22356", "23103", "23109")),
+    # Mostly CVC 22350, the basic speed law (too fast for conditions), which officers also code on rear-ends.
+    ("unsafe speed", ("22350", "22351", "22352", "22356", "23103", "23109")),
+    ("dooring", ("22517",)),
+    ("unsafe starting or backing", ("22106",)),
     ("failure to yield to pedestrian", ("21950(a", "21954(b", "21952", "21951")),
     ("vehicle right of way", ("21800", "21801", "21802", "21803", "21804", "21806", "21451")),
     ("signals and signs", ("21453(a", "21453(b", "21453(c", "22450", "21461", "22101", "21457", "21452", "21454")),
@@ -243,7 +260,7 @@ def read(name, keep):
 
 
 def load(y0, y1):
-    in_years = lambda r: y0 <= int(r["accident_year"] or 0) <= y1  # noqa: E731
+    in_years = lambda r: y0 <= int(r["collision_datetime"][:4] or 0) <= y1  # noqa: E731
     crashes = {r["case_id_pkey"]: r for r in read("crashes", in_years)}
     parties = collections.defaultdict(dict)
     for r in read("parties", in_years):
@@ -265,9 +282,10 @@ def at_fault_party(crash, ps):
     return None, "none"
 
 
-def first_vehicle(ps, exclude=None):
+def first_driver(ps, exclude=None):
+    """The lowest-numbered Driver party, never a pedestrian, bicyclist, parked car or "Other" party."""
     for k, p in sorted(ps.items(), key=lambda kv: int(kv[0] or 0)):
-        if p is not exclude and p["party_type"] not in ("Pedestrian",):
+        if p is not exclude and p["party_type"] == "Driver":
             return p
     return None
 
@@ -278,9 +296,11 @@ def move_group(v):
 
 # ---- network denominators ------------------------------------------------------------------------------------
 
-def network(path):
-    """Block length (miles) by street class, and intersections by corner type, from 3psu-pn9h active blocks."""
-    rows = json.load(open(path))["rows"]
+NOT_SURFACE = ("freeway", "ramp", "other")
+
+
+def network(rows):
+    """(miles by street class, intersections by corner type, the corner nodes) from 3psu-pn9h's active blocks."""
     miles = collections.Counter()
     node_streets = collections.defaultdict(dict)
     for r in rows:
@@ -299,13 +319,15 @@ def network(path):
             if n:
                 node_streets[n].setdefault(street_key(r.get("streetname")), []).append(cls)
     corners = collections.Counter()
+    corner_nodes = set()
     for n, streets in node_streets.items():
         best = {s: min(c, key=CLASS_RANK.get) for s, c in streets.items()}
         surface = {s: c for s, c in best.items() if c not in ("freeway", "ramp")} or best
         cl = sorted(surface.values(), key=CLASS_RANK.get)
         if len(cl) > 1:  # a node on one street is a bend or a dead end, not a corner
             corners["%s_x_%s" % (cl[0], cl[1])] += 1
-    return miles, corners
+            corner_nodes.add(n)
+    return miles, corners, corner_nodes
 
 
 # ---- analysis ------------------------------------------------------------------------------------------------
@@ -334,18 +356,20 @@ def main():
         how[method] += 1
         mover = af
         if af is not None and af["party_type"] == "Pedestrian":
-            mover = first_vehicle(ps)
+            mover = first_driver(ps)
             how["pedestrian_at_fault_used_vehicle_movement"] += 1
-        other = first_vehicle(ps, exclude=mover) if mover is not None else None
+        other = first_driver(ps, exclude=mover) if mover is not None else None
         heavy = c["heaviest_vehicle_weight_lb"]
         recs.append({
             "case": cid,
+            "year": int(c["collision_datetime"][:4]),
             "ksi": c["collision_severity"] in KSI_CRASH,
             "people": ksi_people[cid],
             "movement": move_group(mover["move_pre_acc"]) if mover else OTHER_MOVE,
+            "movement substituted": af is not None and af["party_type"] == "Pedestrian",
             "violation": violation_group(c["vz_pcf_group"]),
             "time": time_band(c["collision_time"], c["day_of_week"]),
-            "other party movement": move_group(other["move_pre_acc"]) if other else "no other vehicle party",
+            "other party movement": move_group(other["move_pre_acc"]) if other else "no other driver",
             "pedestrian action": c["ped_action"] or "not stated",
             "collision type": c["type_of_collision"] or "Not Stated",
             "who was involved": c["dph_col_grp_description"] or "not stated",
@@ -385,7 +409,7 @@ def main():
     cells = collections.defaultdict(list)
     for r in recs:
         cells[(r["movement"], r["violation"], r["time"])].append(r)
-    tested = {key: rs for key, rs in cells.items() if sum(r["people"] for r in rs) >= MIN_KSI_PEOPLE}
+    tested = {key: rs for key, rs in cells.items() if len(rs) >= MIN_INJURY_CRASHES}
     m = len(tested)
     level1 = []
     for key, rs in tested.items():
@@ -405,7 +429,8 @@ def main():
     for r in recs:
         by_mode[r["mode"]][(r["movement"], r["violation"], r["time"])].append(r)
     mode_tested = [(md, key, rs) for md, cs in by_mode.items() if md != "not stated" for key, rs in cs.items()
-                   if sum(r["people"] for r in rs) >= MIN_KSI_PEOPLE]
+                   if len(rs) >= MIN_INJURY_CRASHES]
+    mode_cells_possible = sum(len(cs) for md, cs in by_mode.items() if md != "not stated")
     mode_rates = {md: (sum(r["ksi"] for rs in cs.values() for r in rs) / sum(len(rs) for rs in cs.values()))
                   for md, cs in by_mode.items()}
     mode_totals = {md: tally([r for rs in cs.values() for r in rs]) for md, cs in by_mode.items()}
@@ -415,10 +440,55 @@ def main():
         t.update({"mode": md, "movement": key[0], "violation": key[1], "time": key[2],
                   "mode_ksi_rate": round(mode_rates[md], 4),
                   "rate_vs_mode": round(t["ksi_rate"] / mode_rates[md], 2)})
-        t["p_bonferroni"] = min(1.0, binom_sf(t["ksi_crashes"], t["injury_crashes"], mode_rates[md]) * len(mode_tested))
+        t["p_value"] = binom_sf(t["ksi_crashes"], t["injury_crashes"], mode_rates[md])
+        t["p_bonferroni"] = min(1.0, t["p_value"] * len(mode_tested))
         t["profile"] = t["p_bonferroni"] < ALPHA
+        t["movement_substituted_crashes"] = sum(r["movement substituted"] for r in rs)
         within_mode.append(t)
     within_mode.sort(key=lambda t: (t["mode"], not t["profile"], -t["ksi_people"]))
+
+    # Year windows: each profile again in 2017-2019 and 2020-2024 alone, against its mode's rate in that window, with
+    # the uncorrected p and the p corrected over the same number of cells as the pooled test.
+    WINDOWS = [(w0, w1) for w0, w1 in ((2017, 2019), (2020, 2024)) if y0 <= w0 and w1 <= y1]
+
+    def by_window(prof, base_of):
+        out = []
+        for w0, w1 in WINDOWS:
+            rs = [r for r in recs if w0 <= r["year"] <= w1 and (r["movement"], r["violation"], r["time"])
+                  == (prof["movement"], prof["violation"], prof["time"]) and ("mode" not in prof or r["mode"] == prof["mode"])]
+            base = [r for r in recs if w0 <= r["year"] <= w1 and base_of(r)]
+            n, k = len(rs), sum(r["ksi"] for r in rs)
+            b = sum(r["ksi"] for r in base) / len(base) if base else None
+            pv = binom_sf(k, n, b) if n and b else None
+            m_ = len(mode_tested) if "mode" in prof else m
+            out.append({"years": [w0, w1], "injury_crashes": n, "ksi_crashes": k, "ksi_people": sum(r["people"] for r in rs),
+                        "ksi_rate": round(k / n, 4) if n else None, "base_rate": round(b, 4) if b else None,
+                        "rate_vs_base": round((k / n) / b, 2) if n and b else None, "p_value": pv,
+                        "p_bonferroni": min(1.0, pv * m_) if pv is not None else None})
+        return out
+    for t in profiles:
+        t["by_years"] = by_window(t, lambda r: True)
+    for t in within_mode:
+        if t["profile"]:
+            t["by_years"] = by_window(t, lambda r, md=t["mode"]: r["mode"] == md)
+
+    # Each mode's crashes by year and severity, to date any step change in what gets reported.
+    mode_by_year = {}
+    for md in sorted(by_mode):
+        rows = []
+        for yr in range(y0, y1 + 1):
+            rs = [r for r in recs if r["mode"] == md and r["year"] == yr]
+            sev = collections.Counter(crashes[r["case"]]["collision_severity"] for r in rs)
+            rows.append(dict(tally(rs), year=yr, by_severity=dict(sorted(sev.items()))))
+        mode_by_year[md] = rows
+
+    # Every movement x violation pair, pooled over time, so a count story such as left turns that fail to yield can
+    # be read without the time split.
+    pairs = collections.defaultdict(list)
+    for r in recs:
+        pairs[(r["movement"], r["violation"])].append(r)
+    movement_by_violation = [dict(tally(rs), movement=k[0], violation=k[1])
+                             for k, rs in sorted(pairs.items(), key=lambda kv: (-len(kv[1]), kv[0]))]
 
     # Level 1 margins: each dimension alone, so a broad category that pops out shows even if its cells are small
     margins = {}
@@ -462,9 +532,10 @@ def main():
                        "splits": splits})
 
     # Context profiles
-    miles, corners = network(sorted(glob.glob(os.path.join(ROOT, "data", "socrata-cache", "crash-augment-street",
-                                                        "3psu-pn9h-*.json")))[0])
+    streets_src = street_sources.held("streets")
+    miles, corners, corner_nodes = network(streets_src.rows)
     total_miles = sum(miles.values())
+    surface_miles = sum(v for k, v in miles.items() if k not in NOT_SURFACE)
     total_corners = sum(corners.values())
     CONTEXT = {"street class": "street_class", "corner type": "corner_type", "posted limit": "posted_speed_limit_mph",
                "lanes": "lanes", "traffic category (BCI)": "bci_traffic_category", "EPC": "in_epc",
@@ -483,6 +554,8 @@ def main():
             if field == "street class" and val in miles:
                 t["share_of_network_miles"] = round(miles[val] / total_miles, 4)
                 t["network_miles"] = round(miles[val], 1)
+                if val not in NOT_SURFACE:
+                    t["share_of_surface_street_miles"] = round(miles[val] / surface_miles, 4)
             if field == "corner type" and val != "midblock":
                 t["share_of_intersection_ksi_people"] = round(t["ksi_people"] / at_int_people, 4)
             if field == "corner type" and val in corners:
@@ -494,14 +567,16 @@ def main():
 
     # Signals at intersections, LADOT's comparison: intersection crashes only, against the share of intersections
     # with a signal in today's inventory (ybh5-27n2, signal types as the street lane counts them).
-    sig_path = sorted(glob.glob(os.path.join(ROOT, "data", "socrata-cache", "crash-augment-street", "ybh5-27n2-*.json")))
-    signal_nodes = {str(r.get("cnn") or "").split(".")[0] for r in json.load(open(sig_path[0]))["rows"]
-                    if r.get("type") in SIGNAL_TYPES} if sig_path else set()
+    # Only signals at a node the corner count holds, so the share's numerator is a subset of its denominator.
+    signals_src = street_sources.held("signals")
+    all_signal_nodes = {str(r.get("cnn") or "").split(".")[0] for r in signals_src.rows if r.get("type") in SIGNAL_TYPES}
+    signal_nodes = all_signal_nodes & corner_nodes
     at_int = [r for r in recs if r["corner type"] != "midblock"]
     g = collections.defaultdict(list)
     for r in at_int:
         g[r["signal present"]].append(r)
-    signals = {"intersections_with_signal": len(signal_nodes), "intersections": total_corners,
+    signals = {"intersections_with_signal": len(signal_nodes), "signal_nodes_not_a_corner": len(all_signal_nodes - corner_nodes),
+               "intersections": total_corners,
                "share_of_intersections": round(len(signal_nodes) / total_corners, 4) if total_corners else None,
                "values": [dict(tally(rs), value=v,
                                share_of_intersection_ksi_people=round(sum(r["people"] for r in rs) / at_int_people, 4))
@@ -518,65 +593,108 @@ def main():
         t.update({"light": light, "posted limit": lim})
         ped_light_speed.append(t)
 
-    # Vehicle weight: pedestrians struck by a single motor vehicle
+    # Pedestrian crashes by time band and light, so time of night and darkness can be told apart
+    ped_time_light = []
+    g = collections.defaultdict(list)
+    for r in recs:
+        if r["mode"] == "pedestrian involved":
+            g[(r["time"], r["light"])].append(r)
+    for (band, light), rs in sorted(g.items()):
+        t = tally(rs)
+        t.update({"time": band, "light": light})
+        ped_time_light.append(t)
+
+    # Vehicle weight: pedestrians struck by a single moving motor vehicle. motor_vehicle_parties leaves out parked cars,
+    # and so does this filter, so a parked car's weight is never credited to a pedestrian's injury.
     MODEL_METHODS = {"exact_make_model_year", "model_10yr_avg"}
+    BANDS = ("under 3,500 lb", "3,500 to 5,000 lb", "over 5,000 lb", "no weight")
     weight = {"all_weighted": collections.defaultdict(lambda: [0, 0]),
               "model_matched": collections.defaultdict(lambda: [0, 0])}
     coverage = collections.Counter()
-    strata = collections.defaultdict(lambda: {"heavy": [0, 0], "light": [0, 0]})
-    for cid, peds in ped_victims.items():
+    unweighted_body = collections.defaultdict(lambda: [0, 0])
+    # strata[set][unit][(street class, light)][side] = [n, ksi]; side heavy (over 5,000 lb) or light (under 3,500)
+    strata = {st: {u: collections.defaultdict(lambda: {"heavy": [0, 0], "light": [0, 0]}) for u in ("pedestrian", "crash")}
+              for st in ("all_weighted", "model_matched")}
+    for cid, peds in sorted(ped_victims.items()):
         c = crashes.get(cid)
         if c is None or c["motor_vehicle_parties"] != "1":
             continue
-        mv = [p for p in parties.get(cid, {}).values() if p["vehicle_match_method"] != "not_applicable"]
+        mv = [p for p in parties.get(cid, {}).values()
+              if p["vehicle_match_method"] != "not_applicable" and p["party_type"] != "Parked Vehicle"]
         if len(mv) != 1:
             continue
         p = mv[0]
         band = weight_band(p["estimated_vehicle_weight_lb"])
         coverage[p["vehicle_match_method"]] += len(peds)
-        cls = c["street_class"] or "unknown"
-        for v in peds:
-            hurt = v["victim_degree_of_injury"] in KSI_PERSON
-            weight["all_weighted"][band][0] += 1
-            weight["all_weighted"][band][1] += hurt
-            if p["vehicle_match_method"] in MODEL_METHODS:
-                weight["model_matched"][band][0] += 1
-                weight["model_matched"][band][1] += hurt
-            if band != "no weight":
-                side = "heavy" if band == "over 5,000 lb" else ("light" if band == "under 3,500 lb" else None)
-                if side:
-                    strata[(cls, light_band(c["lighting"]))][side][0] += 1
-                    strata[(cls, light_band(c["lighting"]))][side][1] += hurt
-    weight_out = {}
-    for name, d in weight.items():
-        rows = []
-        for band in ("under 3,500 lb", "3,500 to 5,000 lb", "over 5,000 lb", "no weight"):
-            n, k = d.get(band, [0, 0])
-            rows.append({"band": band, "pedestrians_hurt": n, "pedestrians_ksi": k,
-                         "ksi_rate": round(k / n, 4) if n else None})
-        x2, pv = chi2_homogeneity([(r["pedestrians_hurt"], r["pedestrians_ksi"]) for r in rows
-                                   if r["band"] != "no weight"])
-        weight_out[name] = {"bands": rows, "chi2": round(x2, 2) if x2 else None, "p_value": pv}
-    crude_h, crude_l = [0, 0], [0, 0]
-    mh = []
-    for s in strata.values():
-        hn, hk = s["heavy"]
-        ln, lk = s["light"]
-        mh.append((hk, hn - hk, lk, ln - lk))
-        crude_h = [crude_h[0] + hn, crude_h[1] + hk]
-        crude_l = [crude_l[0] + ln, crude_l[1] + lk]
+        stratum = (c["street_class"] or "unknown", light_band(c["lighting"]))
+        side = "heavy" if band == "over 5,000 lb" else ("light" if band == "under 3,500 lb" else None)
+        hurt = [v["victim_degree_of_injury"] in KSI_PERSON for v in peds]
+        sets = ["all_weighted"] + (["model_matched"] if p["vehicle_match_method"] in MODEL_METHODS else [])
+        for st in sets:
+            weight[st][band][0] += len(hurt)
+            weight[st][band][1] += sum(hurt)
+            if side:
+                cell = strata[st]["pedestrian"][stratum][side]
+                cell[0] += len(hurt)
+                cell[1] += sum(hurt)
+                cell = strata[st]["crash"][stratum][side]
+                cell[0] += 1
+                cell[1] += any(hurt)
+        if band == "no weight":
+            body = p["vehicle_body_type_clean"] or "not stated"
+            unweighted_body[body][0] += len(hurt)
+            unweighted_body[body][1] += sum(hurt)
 
     def odds(n, k):
         return k / (n - k) if n > k else None
-    crude_or = (odds(*crude_h) / odds(*crude_l)) if odds(*crude_l) else None
-    est, lo, hi = mantel_haenszel(mh)
-    weight_out["heavy_vs_light_odds_ratio"] = {
-        "compares": "over 5,000 lb vs under 3,500 lb",
-        "crude": round(crude_or, 2) if crude_or else None,
-        "mantel_haenszel_by_street_class_and_light": round(est, 2) if est else None,
-        "ci95": [round(lo, 2), round(hi, 2)] if est else None,
-        "strata": len(mh)}
-    weight_out["coverage_by_method"] = dict(coverage)
+    weight_out = {}
+    for name, d in weight.items():
+        rows = []
+        for band in BANDS:
+            n, k = d.get(band, [0, 0])
+            rows.append({"band": band, "pedestrians_hurt": n, "pedestrians_ksi": k,
+                         "ksi_rate": round(k / n, 4) if n else None})
+        ors = {}
+        for unit, by_stratum in strata[name].items():
+            mh = [(s_["heavy"][1], s_["heavy"][0] - s_["heavy"][1], s_["light"][1], s_["light"][0] - s_["light"][1])
+                  for _, s_ in sorted(by_stratum.items())]
+            hn, hk = sum(s_["heavy"][0] for s_ in by_stratum.values()), sum(s_["heavy"][1] for s_ in by_stratum.values())
+            ln, lk = sum(s_["light"][0] for s_ in by_stratum.values()), sum(s_["light"][1] for s_ in by_stratum.values())
+            crude = odds(hn, hk) / odds(ln, lk) if odds(hn, hk) and odds(ln, lk) else None
+            est, lo, hi = mantel_haenszel(mh)
+            ors[unit] = {"heavy": [hn, hk], "light": [ln, lk], "crude": round(crude, 2) if crude else None,
+                         "mantel_haenszel": round(est, 2) if est else None,
+                         "ci95": [round(lo, 2), round(hi, 2)] if est else None, "strata": len(mh)}
+        weight_out[name] = {"bands": rows, "heavy_vs_light_odds_ratio": ors}
+    weight_out["compares"] = ("over 5,000 lb vs under 3,500 lb, Mantel-Haenszel stratified by street class and light; "
+                              "per pedestrian, and per crash with a crash KSI when any pedestrian in it was")
+    weight_out["coverage_by_method"] = dict(sorted(coverage.items()))
+    weight_out["no_weight_by_body_type"] = [
+        {"body_type": b, "pedestrians_hurt": n, "pedestrians_ksi": k}
+        for b, (n, k) in sorted(unweighted_body.items(), key=lambda kv: (-kv[1][0], kv[0]))]
+
+    # Pedestrian profiles: is it just older or drinking pedestrians? Victim age, and the KSI rate split by whether a
+    # pedestrian party in the crash had been drinking.
+    def ped_profile_facts(rs):
+        ages = sorted(int(v["victim_age"]) for r in rs for v in ped_victims.get(r["case"], [])
+                      if (v["victim_age"] or "").isdigit() and 0 < int(v["victim_age"]) < 110)
+        drank = collections.defaultdict(lambda: [0, 0])
+        for r in rs:
+            sob = [p["party_sobriety"] for p in parties.get(r["case"], {}).values() if p["party_type"] == "Pedestrian"]
+            key = "pedestrian had been drinking" if any(x.startswith("Had Been Drinking") for x in sob) else "no or not stated"
+            drank[key][0] += 1
+            drank[key][1] += r["ksi"]
+        return {"pedestrian_victims_with_age": len(ages),
+                "median_age": ages[len(ages) // 2] if ages else None,
+                "share_65_plus": round(sum(a >= 65 for a in ages) / len(ages), 4) if ages else None,
+                "by_drinking": {k: {"injury_crashes": n, "ksi_crashes": k_, "ksi_rate": round(k_ / n, 4)}
+                                for k, (n, k_) in sorted(drank.items())}}
+    ped_recs = [r for r in recs if r["mode"] == "pedestrian involved"]
+    pedestrian_facts = {"all pedestrian crashes": ped_profile_facts(ped_recs)}
+    for t in within_mode:
+        if t["profile"] and t["mode"] == "pedestrian involved":
+            rs = by_mode[t["mode"]][(t["movement"], t["violation"], t["time"])]
+            pedestrian_facts["%s / %s / %s" % (t["movement"], t["violation"], t["time"])] = ped_profile_facts(rs)
 
     # Data quality facts the doc reports
     ped_parties = [p for ps in parties.values() for p in ps.values()]
@@ -598,22 +716,30 @@ def main():
         "years": [y0, y1],
         "inputs_read_on": json.load(open(os.path.join(TABLES, "summary.json")))["tables"]["crashes"]["input"]["read_on"],
         "totals": {"injury_crashes": N, "ksi_crashes": K, "ksi_people": P, "citywide_ksi_rate": round(p0, 4)},
-        "rules": {"min_ksi_people": MIN_KSI_PEOPLE, "alpha": ALPHA, "cells_possible": len(cells),
-                  "cells_tested": m, "test": "one-sided exact binomial on KSI crashes vs citywide KSI crash rate, "
-                                           "Bonferroni over cells tested"},
+        "rules": {"min_injury_crashes": MIN_INJURY_CRASHES, "alpha": ALPHA, "cells_possible": len(cells),
+                  "cells_tested": m, "within_mode_cells_possible": mode_cells_possible,
+                  "level2_tests": tests,
+                  "test": "one-sided exact binomial on KSI crashes vs citywide (or the mode's) KSI crash rate, "
+                          "Bonferroni over cells tested; a cell is tested when it holds MIN_INJURY_CRASHES injury crashes"},
         "profiles": profiles,
         "level1_tested": level1,
         "level1_margins": margins,
+        "movement_by_violation": movement_by_violation,
         "mode_totals": mode_totals,
         "level1_within_mode": within_mode,
         "level1_within_mode_cells_tested": len(mode_tested),
+        "mode_by_year": mode_by_year,
         "level2": level2,
         "context": context,
+        "street_sources_read_on": {"3psu-pn9h": streets_src.read_on, "ybh5-27n2": signals_src.read_on},
         "network": {"miles_by_street_class": {k: round(v, 1) for k, v in sorted(miles.items())},
+                    "surface_street_miles": round(surface_miles, 1),
                     "intersections_by_corner_type": dict(sorted(corners.items()))},
         "pedestrian_light_by_posted_limit": ped_light_speed,
+        "pedestrian_time_by_light": ped_time_light,
         "signals_at_intersections": signals,
         "vehicle_weight": weight_out,
+        "pedestrian_profile_facts": pedestrian_facts,
         "quality": quality,
     }
     os.makedirs(os.path.dirname(a.out), exist_ok=True)

@@ -52,11 +52,10 @@
    ],
    "datasf_columns": 56,
    "input": {
-    "full_read_on": "2026-11-25",
+    "content_sha": "1f522c2cb80e580d",
     "id": "ubvf-ztfx",
     "read_on": "2026-11-25",
-    "rows": 66991,
-    "rowsUpdatedAt": "1795543935"
+    "rows": 66991
    },
    "key": "case_id_pkey",
    "lane_keys_repeated": {
@@ -90,11 +89,10 @@
    ],
    "datasf_columns": 81,
    "input": {
-    "full_read_on": "2026-11-25",
+    "content_sha": "b17549afb506e3f3",
     "id": "8gtc-pjc6",
     "read_on": "2026-11-25",
-    "rows": 140843,
-    "rowsUpdatedAt": "1795543942"
+    "rows": 140843
    },
    "key": "unique_id",
    "lane_keys_repeated": {
@@ -125,11 +123,10 @@
    ],
    "datasf_columns": 89,
    "input": {
-    "full_read_on": "2026-11-25",
+    "content_sha": "8cff1fb3d27d71b6",
     "id": "nwes-mmgh",
     "read_on": "2026-11-25",
-    "rows": 84943,
-    "rowsUpdatedAt": "1795543945"
+    "rows": 84943
    },
    "key": "unique_id",
    "lane_keys_repeated": {
@@ -146,16 +143,16 @@
  },
  "vehicle_inputs": {
   "8gtc-pjc6": {
-   "rows": 140843,
-   "rowsUpdatedAt": "1795543942"
+   "content_sha": "b17549afb506e3f3",
+   "rows": 140843
   },
   "nwes-mmgh": {
-   "rows": 84943,
-   "rowsUpdatedAt": "1795543945"
+   "content_sha": "8cff1fb3d27d71b6",
+   "rows": 84943
   },
   "ubvf-ztfx": {
-   "rows": 66991,
-   "rowsUpdatedAt": "1795543935"
+   "content_sha": "1f522c2cb80e580d",
+   "rows": 66991
   }
  }
 }

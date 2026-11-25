@@ -44,7 +44,7 @@ Parties and victims rows keep their `unique_id`, `case_id_pkey` and `party_numbe
 | `vehicle_match_reason` | Why a row fell back or has no weight |
 | `vehicle_body_type_clean` | `stwd_vehicle_type` with its typos folded (`Passenge Car` is `Passenger Car`) |
 
-The crash rollup has `motor_vehicle_parties`, `vehicles_with_weight`, and the weight, make and model of the heaviest vehicle with a weight.
+The crash rollup has `motor_vehicle_parties` (moving motor vehicles only), `parked_vehicle_parties`, `vehicles_with_weight`, and the weight, make and model of the heaviest moving vehicle with a weight. Parked cars are counted apart so a parked car's weight is never credited to a crash it did not drive into.
 
 ## Match methods
 
@@ -91,10 +91,11 @@ The checks in `vehicle_checks.py` run after every build, on the new files, befor
 - every victim's party is one parties row, and every party's crash is a crash row
 - a victim's vehicle columns equal its party's
 - per row: a known method, a weight exactly when the method gives one, a reason whenever it fell back, no model without a make, and the weight in bounds: 1,500 to 14,000 lb for light vehicles, 150 to 1,500 for motorcycles and scooters, 3,000 to 80,000 for buses and heavy trucks
+- each common body type's average weight in its range (Passenger Car 2,800 to 3,800 lb, Sport Utility Vehicle 3,500 to 4,800, Pickup or Panel Truck 4,000 to 5,800, Minivan 3,800 to 4,900). The per-row bounds are wide enough to hold a light vehicle's weight in kilograms, so this is the check that catches a unit error
 - match-rate floors a few points under the first full build
 - `golden.csv`: 76 hand-read strings, including every error the self-check found, each of which must read as written
 
-`tests/vehicle-fields-test.py` feeds a made-up table through the build and shows each check failing on the bad input it is for: a duplicated input row, a dropped output row, a short read, a 50,000 lb car, a weight with no method, a victim with no party, a wrong golden row and a missed rate floor.
+`tests/vehicle-fields-test.py` feeds a made-up table through the build and shows each check failing on the bad input it is for: a duplicated input row, a dropped output row, a short read, a 50,000 lb car, a weight with no method, a victim with no party, a wrong golden row, a missed rate floor and a body-type average in kilograms.
 
 ## Sources
 

@@ -416,7 +416,11 @@ def refresh(names=None, update=False, log=print):
 # ---- reading the held copy ------------------------------------------------------------------------------------------
 
 def info(name):
-    """{"id", "rows", "rowsUpdatedAt", "read_on", "full_read_on"} for a held table; read_on is the newest year file's."""
+    """{"id", "rows", "rowsUpdatedAt", "content_sha", "read_on", "full_read_on"} for a held table.
+
+    read_on is the newest year file's. content_sha is a hash of every year file's SHA-256, so it moves only when a held
+    row changed. DataSF re-stamps rowsUpdatedAt at its nightly reload with no row changed, so a tracked file that
+    names which read it was built from carries content_sha, never rowsUpdatedAt or full_read_on."""
     fxf = TABLES[name][0]
     st = load_state().get(fxf) or {}
     read = []
@@ -428,7 +432,10 @@ def info(name):
             i = head.find('"read_on": "')
             if i >= 0:
                 read.append(head[i + 12:i + 22])
+    years_held = st.get("years", {})
+    content = hashlib.sha256("".join("%s:%s;" % (y, years_held[y].get("sha")) for y in sorted(years_held)).encode())
     return {"id": fxf, "rows": st.get("rows"), "rowsUpdatedAt": st.get("rowsUpdatedAt"),
+            "content_sha": content.hexdigest()[:16] if years_held else None,
             "read_on": max(read) if read else None, "full_read_on": st.get("full_read_on")}
 
 

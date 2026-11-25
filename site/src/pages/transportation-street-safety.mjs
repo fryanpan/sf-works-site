@@ -752,9 +752,6 @@ const scriptPage = (preset) => `<script>
     var s = ctl.getState(), map = ctl.map(), D = ctl.data();
     var sum = summary(s), title = mapTitle(s) + (sum ? " · " + sum : "");
     var head = ($("[data-headline]").textContent || "").replace(/\\s+/g, " ").trim();
-    // The line about people with no location is its own sentence in the saved image.
-    var noPlace = $("[data-headline] .sm-unplaced");
-    if (noPlace) head = head.replace(noPlace.textContent, ". " + noPlace.textContent);
     var src = "SF Works street safety map \u00b7 data: " + (SOURCES[s.view] || "") + " \u00b7 data updated " + new Date(UPDATED.slice(0, 10) + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
     var mapShot = new Promise(function (res) { map.once("render", function () { res(map.getCanvas().toDataURL("image/png")); }); map.triggerRepaint(); });
     var svg = root.querySelector("[data-chart]:not([hidden]) .sm-chart-slot svg");

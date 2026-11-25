@@ -63,6 +63,34 @@ SIZE. Every group's count of people hurt, whatever its rate, because a group tha
   violation groups by people hurt and by KSI people, then one "all other groups" row over every other crash (mode not
   stated included), so the rows add up to the totals.
 
+OTHER BREAKDOWN. other_breakdown says what size.chart's last row holds: its groups by size (SIZE_BINS) and by mode,
+  movement and violation, and how many of its people sit in a catch-all value (violation "other" or "not stated",
+  movement OTHER_MOVE, mode "not stated") against named kinds of crash. For each catch-all bucket it lists the RAW_TOP
+  biggest raw values (vz_pcf_group with DataSF's vz_pcf_description; vz_pcf_group and vz_pcf_code; move_pre_acc and
+  the party type) and where the bucket's people land under the finer groups. regroupings compares groupings by the
+  share of people hurt in a catch-all group, the bars it takes to reach 80% of people hurt, and the share a
+  CHART_BARS-bar chart leaves in its remainder row or in catch-all bars (crash type Other and Not Stated count as
+  catch-alls there).
+
+SIZE BY FAMILY. size_families groups crashes by mode x violation family, VIOLATION_FINE: the VIOLATION groups with
+  CVC 21703 (following too closely) named, signals and signs split into red light and stop sign or other sign, bike and
+  scooter rules and phone use named, and 21209 (motor vehicle in a bike lane) and 22108 put with lane use. When
+  vz_pcf_group is blank or Unknown, vz_pcf_code is read if it holds a section number. Each family carries its people
+  by movement (MOVEMENT_FINE, which names Ran Off Road), so the movement that points at a fix stays on the bar.
+  size_families.chart is the union of the FAMILY_TOP biggest families by people hurt and by KSI people, then one row
+  over every other crash; pairs_within_mode is mode x movement x family for the drill-down.
+
+FAMILY STRESS. family_stress splits the FAMILY_STRESS_TOP biggest families by people hurt by the bike level of
+  traffic stress of the crash (crash_stress, as in TRAFFIC STRESS: high is LTS 3 or 4, low 1 or 2) and by street
+  class, with the high-stress share among crashes placed on one block as the check on the intersection lean.
+
+GROUPING ALTERNATIVES. grouping_alternatives scores seven more groupings the way other_breakdown.regroupings does,
+  each with its top CHART_BARS bars and the remainder: victim role x age band and victim role x violation family
+  (counted per person, victims rows with any injury; an age outside 1 to 109 is not stated); traffic stress x street
+  class x intersection or midblock; mode x time band x weekday or weekend (the commute and midday bands are weekday by
+  definition, so the split adds only evening and late night); vehicle-only crashes by crash type beside pedestrian and
+  bike crashes by violation family, alone and with the turn direction; and mode x violation family x traffic stress.
+
 TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block rule) are looked up in SFMTA's 2023
   draft Bike Comfort Index layer as the repo holds it (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level
   of traffic stress (lts_ft, lts_tf, 1 low to 4 high; the most stressful direction and block), the layer's combined
@@ -145,6 +173,53 @@ def violation_group(code):
         return "not stated"
     for name, prefixes in VIOLATION:
         if any(code.startswith(p) for p in prefixes):
+            return name
+    return "other"
+
+
+# The finer violation groups behind size_families. Each name is the vz_pcf_description DataSF prints for its codes;
+# the first match wins, so DUI comes before the bike rules (21200.5 is "Bicyclist riding under the influence").
+VIOLATION_FINE = [
+    ("unsafe speed", ("22350", "22351", "22352", "22356", "23103", "23109")),
+    ("following too closely", ("21703",)),
+    ("dooring", ("22517",)),
+    ("unsafe starting or backing", ("22106",)),
+    ("failure to yield to pedestrian", ("21950(a", "21954(b", "21952", "21951")),
+    ("vehicle right of way", ("21800", "21801", "21802", "21803", "21804", "21806", "21451")),
+    ("red light", ("21453(a", "21453(b", "21453(c")),
+    ("stop sign or other sign", ("22450", "21461", "22101", "21457", "21452", "21454")),
+    ("pedestrian violation", ("21954(a", "21453(d", "21955", "21950(b", "21456", "21956", "21949", "7.2.10")),
+    ("DUI", ("23152", "23153", "21200.5")),
+    # 22107 is "Unsafe turn or lane change", so the code alone can't tell a turn from a lane change; the movement can.
+    ("unsafe turn or lane use", ("22107", "22108", "22100", "22102", "22103", "22105", "21658", "21460", "21650",
+                                 "21651", "21657", "21750", "21751", "21752", "21755", "21760", "21209")),
+    ("bike or scooter rules", ("21200", "21201", "21202", "21203", "21205", "21208", "21230", "21235", "21663",
+                               "7.2.12", "7.2.13")),
+    ("phone use", ("23123", "23124")),
+]
+MOVEMENT_FINE = dict(MOVEMENT, **{"Ran Off Road": "ran off road"})
+CATCH_ALL = {"other", "not stated", OTHER_MOVE, "Other", "Not Stated"}  # values that name no kind of crash
+FAMILY_TOP = 12  # size_families.chart: the top mode x violation families by people hurt and by KSI people
+FAMILY_STRESS_TOP = 10  # family_stress: the biggest families by people hurt
+RAW_TOP = 15  # other_breakdown: raw codes listed per catch-all bucket
+CHART_BARS = 12  # other_breakdown.regroupings: the chart size the remainder is measured at
+SIZE_BINS = ((500, None), (200, 499), (100, 199), (50, 99), (20, 49), (1, 19), (0, 0))
+
+
+def violation_fine(group, code):
+    """vz_pcf_group to a VIOLATION_FINE group. When the group is blank or Unknown, vz_pcf_code is read instead if it
+    holds a section number (a trailing "cvc" or "tc" dropped); a code that names no section stays "not stated"."""
+    g = group
+    if g in UNKNOWN_VIOL:
+        c = (code or "").strip().lower()
+        for suffix in ("cvc", "tc"):
+            c = c[:-len(suffix)] if c.endswith(suffix) else c
+        if not (c and c[0].isdigit()):
+            return "not stated"
+        g = c
+    g = g.lower()
+    for name, prefixes in VIOLATION_FINE:
+        if any(g.startswith(p.lower()) for p in prefixes):
             return name
     return "other"
 
@@ -456,7 +531,11 @@ def main():
             "traffic category (BCI layer)": traffic,
             "movement": move_group(mover["move_pre_acc"]) if mover else OTHER_MOVE,
             "movement substituted": af is not None and af["party_type"] == "Pedestrian",
+            "movement (fine)": MOVEMENT_FINE.get(mover["move_pre_acc"], OTHER_MOVE) if mover else OTHER_MOVE,
+            "_move_raw": ((mover["move_pre_acc"] or "(blank)"), mover["party_type"]) if mover else ("(no party)", ""),
             "violation": violation_group(c["vz_pcf_group"]),
+            "violation (fine)": violation_fine(c["vz_pcf_group"], c["vz_pcf_code"]),
+            "_pcf_raw": (c["vz_pcf_group"], c["vz_pcf_code"], c["vz_pcf_description"]),
             "time": time_band(c["collision_time"], c["day_of_week"]),
             "other party movement": move_group(other["move_pre_acc"]) if other else "no other driver",
             "pedestrian action": c["ped_action"] or "not stated",
@@ -915,6 +994,241 @@ def main():
         "same": sum(n for (a, b), n in agree.items() if a == b),
         "differ": sorted([[a, b, n] for (a, b), n in agree.items() if a != b])}
 
+    # Other breakdown: what size.chart's "all other groups" row and the catch-all values hold, and how much of it each
+    # regrouping leaves in a catch-all or a remainder.
+    def grouped(rs, key):
+        g = collections.defaultdict(list)
+        for r in rs:
+            g[key(r)].append(r)
+        return g
+
+    def catch_kind(r):
+        kinds = [name for name, hit in (("violation other", r["violation"] == "other"),
+                                        ("violation not stated", r["violation"] == "not stated"),
+                                        ("movement not stated or other", r["movement"] == OTHER_MOVE),
+                                        ("mode not stated", r["mode"] == "not stated")) if hit]
+        return (" + ".join(kinds) or "named kinds only",)
+
+    def most_common_desc(rs):
+        return collections.Counter(r["_pcf_raw"][2] for r in rs).most_common(1)[0][0] if rs else ""
+
+    tail_groups = [t for t in pairs_list if (t["mode"], t["movement"], t["violation"]) not in shown]
+    bins = []
+    for lo, hi_ in SIZE_BINS:
+        s = [t for t in tail_groups if t["people_injured"] >= lo and (hi_ is None or t["people_injured"] <= hi_)]
+        bins.append({"people_injured_from": lo, "people_injured_to": hi_, "groups": len(s),
+                     "people_injured": sum(t["people_injured"] for t in s), "ksi_people": sum(t["ksi_people"] for t in s)})
+    buckets = {"violation other": lambda r: r["violation"] == "other",
+               "violation not stated": lambda r: r["violation"] == "not stated",
+               "movement not stated or other": lambda r: r["movement"] == OTHER_MOVE}
+    raw_keys = {"violation other": (lambda r: (r["_pcf_raw"][0],), ("vz_pcf_group",)),
+                "violation not stated": (lambda r: r["_pcf_raw"][:2], ("vz_pcf_group", "vz_pcf_code")),
+                "movement not stated or other": (lambda r: r["_move_raw"], ("move_pre_acc", "party_type"))}
+    raw = {}
+    for name, hit in buckets.items():
+        rs = [r for r in recs if hit(r)]
+        key, names = raw_keys[name]
+        g = grouped(rs, key)
+        top = size_list(g, names, with_roles=False)[:RAW_TOP]
+        if name != "movement not stated or other":
+            for t in top:
+                t["vz_pcf_description"] = most_common_desc(g[tuple(t[n] for n in names)])
+        fine = "movement (fine)" if name.startswith("movement") else "violation (fine)"
+        raw[name] = dict({k: tally(rs)[k] for k in SIZE_KEYS}, distinct_values=len(g), top=top,
+                         under_finer_groups=size_list(grouped(rs, lambda r, f=fine: (r[f],)), (fine,), with_roles=False))
+
+    def regroup(fields):
+        g = collections.Counter()
+        for r in recs:
+            g[tuple(r[f] for f in fields)] += r["injured"]
+        ranked = sorted(g.items(), key=lambda kv: (-kv[1], kv[0]))
+        run, to80 = 0, None
+        for i, (_, h) in enumerate(ranked, 1):
+            run += h
+            if run * 5 >= H * 4:
+                to80 = i
+                break
+        is_catch = lambda k: any(v in CATCH_ALL for v in k)  # noqa: E731
+        top = ranked[:CHART_BARS]
+        remainder = H - sum(h for _, h in top)
+        top_catch = sum(h for k, h in top if is_catch(k))
+        return {"fields": list(fields), "groups": len(g),
+                "share_of_people_injured_in_catch_all_groups": round(sum(h for k, h in ranked if is_catch(k)) / H, 4),
+                "bars_to_80pct_of_people_injured": to80,
+                "share_in_remainder_at_chart_bars": round(remainder / H, 4),
+                "share_in_catch_all_bars_at_chart_bars": round(top_catch / H, 4),
+                "share_left_in_catch_all_or_remainder": round((remainder + top_catch) / H, 4)}
+    REGROUPINGS = [
+        ("now: mode x movement x violation", ("mode", "movement", "violation")),
+        ("finer codes: mode x movement x violation", ("mode", "movement (fine)", "violation (fine)")),
+        ("crash type in place of movement: mode x crash type x violation", ("mode", "collision type", "violation (fine)")),
+        ("crash type beside movement: mode x crash type x movement", ("mode", "collision type", "movement (fine)")),
+        ("family, current violation groups: mode x violation", ("mode", "violation")),
+        ("family: mode x violation (finer codes), chosen for size_families", ("mode", "violation (fine)")),
+        ("family: mode x crash type", ("mode", "collision type")),
+    ]
+    other_breakdown = {
+        "about": "what size.chart's last row and the catch-all values hold. Catch-all values: violation other and not "
+                 "stated, movement not stated or other, mode not stated, and crash type Other and Not Stated",
+        "chart_remainder": dict({k: rest_t[k] for k in SIZE_KEYS}, groups=len(tail_groups),
+                                mode_not_stated_people_injured=sum(r["injured"] for r in rest_recs if r["mode"] == "not stated"),
+                                group_sizes=bins,
+                                by_catch_all=size_list(grouped(rest_recs, catch_kind), ("kind",), with_roles=False),
+                                by_mode=size_list(grouped(rest_recs, lambda r: (r["mode"],)), ("mode",), with_roles=False),
+                                by_movement=size_list(grouped(rest_recs, lambda r: (r["movement"],)), ("movement",), with_roles=False),
+                                by_violation=size_list(grouped(rest_recs, lambda r: (r["violation"],)), ("violation",), with_roles=False)),
+        "all_crashes_by_catch_all": size_list(grouped(recs, catch_kind), ("kind",), with_roles=False),
+        "catch_all_buckets": raw,
+        "chart_bars": CHART_BARS,
+        "regroupings": [dict(regroup(f), name=n) for n, f in REGROUPINGS],
+    }
+
+    # Size by family: mode x finer violation group, each bar carrying its people by movement, so the movement that
+    # points at a fix is still on the bar while the chart needs about a dozen bars.
+    def by_movement(rs):
+        g = grouped(rs, lambda r: r["movement (fine)"])
+        return sorted(({"movement": m, "people_injured": sum(r["injured"] for r in sub),
+                        "ksi_people": sum(r["people"] for r in sub)} for m, sub in g.items()),
+                      key=lambda t: (-t["people_injured"], -t["ksi_people"], t["movement"]))
+    g_fam = grouped([r for r in recs if r["mode"] != "not stated"], lambda r: (r["mode"], r["violation (fine)"]))
+    families = size_list(g_fam, ("mode", "violation"))
+    for t in families:
+        t["catch_all"] = t["violation"] in CATCH_ALL
+        t["by_movement"] = by_movement(g_fam[(t["mode"], t["violation"])])
+    fam_shown = {(t["mode"], t["violation"]) for t in families[:FAMILY_TOP]} | {
+        (t["mode"], t["violation"])
+        for t in sorted(families, key=lambda t: (-t["ksi_people"], t["mode"], t["violation"]))[:FAMILY_TOP]}
+    fam_rest = [r for r in recs if (r["mode"], r["violation (fine)"]) not in fam_shown]
+    fam_chart = [{k: t[k] for k in ("mode", "violation", "catch_all") + SIZE_KEYS + ("by_movement",)}
+                 for t in families if (t["mode"], t["violation"]) in fam_shown]
+    fam_chart.append(dict({"mode": "all other families", "violation": "", "catch_all": False,
+                           "groups": len(families) - len(fam_shown)},
+                          **{k: tally(fam_rest)[k] for k in SIZE_KEYS}, by_movement=by_movement(fam_rest)))
+    g_fine = grouped([r for r in recs if r["mode"] != "not stated"],
+                     lambda r: (r["mode"], r["movement (fine)"], r["violation (fine)"]))
+    size_families = {
+        "about": "people hurt and KSI people by mode x violation family (VIOLATION_FINE), each with its people by "
+                 "movement; chart is the union of the FAMILY_TOP biggest families by people hurt and by KSI people, then "
+                 "one row over every other crash (mode not stated included), so the rows add up to the totals",
+        "violation_groups": {name: list(prefixes) for name, prefixes in VIOLATION_FINE},
+        "violation_code_fallback": "when vz_pcf_group is blank or Unknown, vz_pcf_code is read if it holds a section number",
+        "chart": fam_chart,
+        "families": families,
+        "pairs_within_mode": size_list(g_fine, ("mode", "movement", "violation"), with_roles=False,
+                                       floor=SIZE_FLOOR_WITHIN_MODE),
+    }
+
+    # Family by traffic stress: the biggest families' people hurt and KSI people by the crash's bike level of traffic
+    # stress (crash_stress, the same rule as traffic_stress) and by street class.
+    def stress_band(r):
+        lts = r["bike traffic stress (LTS)"]
+        return "high (LTS 3-4)" if lts in HIGH_STRESS else ("low (LTS 1-2)" if lts in ("1", "2") else "unknown")
+    STRESS_BANDS = ("high (LTS 3-4)", "low (LTS 1-2)", "unknown")
+
+    def stress_split(rs):
+        bands = {b: {"people_injured": sum(r["injured"] for r in rs if stress_band(r) == b),
+                     "ksi_people": sum(r["people"] for r in rs if stress_band(r) == b)} for b in STRESS_BANDS}
+        known = {k: bands[STRESS_BANDS[0]][k] + bands[STRESS_BANDS[1]][k] for k in ("people_injured", "ksi_people")}
+        seg = [r for r in rs if r["block join"] == "segment" and stress_band(r) != "unknown"]
+        classes = []
+        for cls, sub in sorted(grouped(rs, lambda r: r["street class"]).items()):
+            hi_sub = [r for r in sub if stress_band(r) == STRESS_BANDS[0]]
+            classes.append({"street_class": cls, "people_injured": sum(r["injured"] for r in sub),
+                            "ksi_people": sum(r["people"] for r in sub),
+                            "people_injured_high_stress": sum(r["injured"] for r in hi_sub),
+                            "ksi_people_high_stress": sum(r["people"] for r in hi_sub)})
+        return {"people_injured": sum(r["injured"] for r in rs), "ksi_people": sum(r["people"] for r in rs),
+                "by_stress": bands,
+                "share_high_stress_of_known": {k: round(bands[STRESS_BANDS[0]][k] / known[k], 4) if known[k] else None
+                                               for k in known},
+                "segment_crashes_share_high_stress_of_known": round(
+                    sum(r["injured"] for r in seg if stress_band(r) == STRESS_BANDS[0]) / sum(r["injured"] for r in seg), 4)
+                if sum(r["injured"] for r in seg) else None,
+                "by_street_class": classes}
+    family_stress = {
+        "about": "the FAMILY_STRESS_TOP biggest size_families by people hurt, split by the bike level of traffic stress "
+                 "of the crash's most stressful block (high is LTS 3 or 4) and by street class; segment_crashes_share "
+                 "is the high-stress share among crashes placed on one block, which carry no lean toward the "
+                 "intersection's busier street",
+        "surface_street_miles_share_high_stress": stress["high_stress_total"]["share_of_surface_street_miles"],
+        "all_crashes": stress_split(recs),
+        "families": [dict({"mode": t["mode"], "violation": t["violation"], "catch_all": t["catch_all"]},
+                          **stress_split(g_fam[(t["mode"], t["violation"])])) for t in families[:FAMILY_STRESS_TOP]],
+    }
+
+    # Grouping alternatives: other ways to cut everyone hurt, each scored like other_breakdown.regroupings and given
+    # with its top CHART_BARS bars. Crash groupings count a crash's people; the person groupings count victims rows.
+    def compare(items, catch):
+        """items: (key tuple, people hurt, KSI people), one per crash or person; catch: the values that name no kind."""
+        g = collections.defaultdict(lambda: [0, 0])
+        for k, h, p in items:
+            g[k][0] += h
+            g[k][1] += p
+        ranked = sorted(g.items(), key=lambda kv: (-kv[1][0], -kv[1][1], kv[0]))
+        run, to80 = 0, None
+        for i, (_, (h, _p)) in enumerate(ranked, 1):
+            run += h
+            if run * 5 >= H * 4:
+                to80 = i
+                break
+        is_catch = lambda k: any(v in catch for v in k)  # noqa: E731
+        top = ranked[:CHART_BARS]
+        remainder = H - sum(h for _, (h, _p) in top)
+        top_catch = sum(h for k, (h, _p) in top if is_catch(k))
+        return {"groups": len(g),
+                "share_of_people_injured_in_catch_all_groups": round(sum(h for k, (h, _p) in ranked if is_catch(k)) / H, 4),
+                "bars_to_80pct_of_people_injured": to80,
+                "share_in_remainder_at_chart_bars": round(remainder / H, 4),
+                "share_in_catch_all_bars_at_chart_bars": round(top_catch / H, 4),
+                "share_left_in_catch_all_or_remainder": round((remainder + top_catch) / H, 4),
+                "top_bars": [{"group": list(k), "catch_all": is_catch(k), "people_injured": h,
+                              "share_of_people_injured": round(h / H, 4), "ksi_people": p,
+                              "share_of_ksi_people": round(p / P, 4)} for k, (h, p) in top],
+                "remainder": {"people_injured": remainder, "ksi_people": P - sum(p for _, (_h, p) in top)}}
+
+    def age_band(v):
+        a = int(v) if v.lstrip("-").isdigit() else 0
+        return "age not stated" if not 0 < a < 110 else ("child under 18" if a < 18 else
+                                                         ("adult 18 to 64" if a < 65 else "65 and over"))
+    ROLE = {"Pedestrian": "pedestrian", "Bicyclist": "bicyclist", "Driver": "driver", "Passenger": "passenger",
+            "Other": "scooter or other"}
+    rec_of = {r["case"]: r for r in recs}
+    persons = [(v, rec_of[v["case_id_pkey"]]) for v in victims
+               if v["victim_degree_of_injury"] not in NOT_HURT and v["case_id_pkey"] in rec_of]
+    person = lambda key: [(key(v, r), 1, int(v["victim_degree_of_injury"] in KSI_PERSON)) for v, r in persons]  # noqa: E731
+    crash = lambda key: [(key(r), r["injured"], r["people"]) for r in recs]  # noqa: E731
+    family = lambda r: r["violation (fine)"]  # noqa: E731
+    turn = lambda r: {"going straight": "going straight", "left or U-turn": "left or U-turn",  # noqa: E731
+                      "right turn": "right turn"}.get(r["movement (fine)"], "other movement"
+                                                      if r["movement (fine)"] != OTHER_MOVE else OTHER_MOVE)
+    STATED = ("not stated", "unknown", "other", "Other", "Not Stated", OTHER_MOVE, "age not stated", "time not stated",
+              "role not stated")
+    ALTERNATIVES = [
+        ("who was hurt: victim role x age band", "person",
+         person(lambda v, r: (ROLE.get(v["victim_role"], "role not stated"), age_band(v["victim_age"])))),
+        ("place: traffic stress x street class x intersection or midblock", "crash",
+         crash(lambda r: (stress_band(r), r["street class"], r["at intersection"]))),
+        ("time: mode x time band x weekday or weekend", "crash",
+         crash(lambda r: (r["mode"], r["time"], "weekend" if crashes[r["case"]]["day_of_week"] in WEEKEND else "weekday"))),
+        ("hybrid: vehicles only by crash type, pedestrian and bike by violation family", "crash",
+         crash(lambda r: (r["mode"], r["collision type"] if r["mode"] == "vehicles only" else family(r)))),
+        ("who and what: victim role x violation family", "person",
+         person(lambda v, r: (ROLE.get(v["victim_role"], "role not stated"), family(r)))),
+        ("hybrid with movement: vehicles by crash type, pedestrian and bike by violation family x turn", "crash",
+         crash(lambda r: (r["mode"],) + ((r["collision type"],) if r["mode"] == "vehicles only" else (family(r), turn(r))))),
+        ("what and where: mode x violation family x traffic stress", "crash",
+         crash(lambda r: (r["mode"], family(r), stress_band(r)))),
+    ]
+    grouping_alternatives = {
+        "about": "other groupings of everyone hurt, scored as in other_breakdown.regroupings, each with its top "
+                 "CHART_BARS bars. A person grouping counts victims rows with any injury (age outside 1 to 109 is not "
+                 "stated); a crash grouping counts each crash's people. Catch-all values: not stated, unknown, other, "
+                 "Other, Not Stated, the movement and time not-stated values; victim role Other is named as scooter or other",
+        "chart_bars": CHART_BARS,
+        "recommended_for_comparison": regroup(("mode", "violation (fine)")),
+        "groupings": [dict(compare(items, set(STATED)), name=n, unit=u) for n, u, items in ALTERNATIVES],
+    }
+
     # Data quality facts the doc reports
     ped_parties = [p for ps in parties.values() for p in ps.values()]
     drivers = [p for p in ped_parties if p["party_type"] == "Driver"]
@@ -943,6 +1257,10 @@ def main():
                           "Bonferroni over cells tested; a cell is tested when it holds MIN_INJURY_CRASHES injury crashes"},
         "size": size,
         "traffic_stress": stress,
+        "other_breakdown": other_breakdown,
+        "size_families": size_families,
+        "family_stress": family_stress,
+        "grouping_alternatives": grouping_alternatives,
         "profiles": profiles,
         "level1_tested": level1,
         "level1_margins": margins,

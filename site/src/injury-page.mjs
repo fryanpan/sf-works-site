@@ -1149,6 +1149,18 @@ ${stepTable()}
         "<p class=proj-more>" + (p.url ? "<a href='" + esc(p.url) + "' target=_blank rel=noopener>SFMTA's project page</a>" : "No SFMTA page found") + "</p></div>";
     }
     window.projCard = function (label) { var p = PJ.projects.find(function (x) { return x.label === label; }); return p ? card(p, false) : null; };
+    // The same card as text fields, for the components map's card popups (?map=components), which take text only:
+    // a title, four lines and the SFMTA page. Null when the project has no card, as projCard.
+    window.projFields = function (label) {
+      var p = PJ.projects.find(function (x) { return x.label === label; });
+      if (!p) return null;
+      var ln = function (k, c) { return k + ": " + fmt(c.b) + " → " + fmt(c.a) + ", " + (c.ch ? c.ch + (c.clear ? ", clear drop" : ", no clear drop") : "too few to read"); };
+      // The cost may hold a link as markup; the card shows its words.
+      var txt = function (h) { return new DOMParser().parseFromString(String(h), "text/html").body.textContent; };
+      return { t: p.label, a: (p.extent ? p.extent + ". " : "") + "Work: " + p.note + ". Counted from " + p.after + ", " + p.years + " each side." + (p.extra ? " " + p.extra : ""),
+        b: "Cost: " + txt(p.kind === "camera" ? D0.fx.camCost : (p.cost || "No published cost found on SFMTA's project page or its documents.")),
+        c: ln("People hurt at the site", p.site), d: ln("Site plus two blocks", p.near), u: p.url || "" };
+    };
     function showPool(i) {
       dropMap(); pool = PJ.pools[i];
       if (pool.members.length === 1) { showProject(pool.members[0], false); return; }
@@ -1221,30 +1233,46 @@ ${stepTable()}
     var heat = function (k) { return { type: "heatmap", id: "heat", name: HEATNAME[k], data: cwPts(D[k]), radius: 14, intensity: 0.6, colors: HEATC, opacity: 0.9, visible: true }; };
     var line = function (id, name, data, color, o) { return Object.assign({ type: "line", id: id, name: name, data: data, color: color, width: 3, opacity: 0.9, visible: false }, o || {}); };
     var dot = function (id, name, data, fill, o) { return Object.assign({ type: "circle", id: id, name: name, data: data, fill: fill, fillOpacity: 1, stroke: "#ffffff", strokeWidth: 1, radius: 5, visible: false }, o || {}); };
-    var slow = cwLines(X.slow, function (i) { var r = X.slowP[i]; return { name: r[0], date: r[2] || "date not recorded", planned: r[3] }; });
-    var calm = cwLines(X.calm, function (i) { var r = X.calmP[i]; return { name: r[0], where: r[1], date: r[2] || "date not recorded", planned: r[3], status: r[4] }; });
-    var calmPts = cwPts(X.calmPts, function (i) { var r = X.calmPtsP[i]; return { name: r[0], where: r[1], date: r[2] || "date not recorded", planned: r[3], status: r[4] }; });
-    var plan = cwLines(X.plan, function (i) { var r = X.planP[X.planI[i]]; return { name: r[0], phase: r[1], kind: r[4] }; });
-    var PLAN = [["qb", "Planned quick-builds", "#efb118"], ["safety", "Planned safety and traffic calming", "#a463f2"], ["bike", "Planned bike lanes and Slow Streets", "#6cc5b0"], ["sig", "Planned signal work", "#4269d0"], ["area", "Planned streetscapes and area plans", "#9c6b4e"]];
     // One heat map, of the view the menu shows: the package draws at most 24 layers, and four heat maps plus the
     // school's four layers would make 26. A change of view redraws the map with that view's heat map (cwSchool).
     var HEATNAME = { all: "All reported injuries", sev: "Severe and fatal only", kid: "Kids on school trips", kidsev: "Kids severely hurt or killed" };
-    var layers = [
-      line("hin", "High Injury Network", cwLines(D.hin), "#4a4f57", { width: 2, opacity: 0.85, visible: true }),
-      line("qb", "Quick-build corridors, 2018 to 2024", cwLines(D.qb, function (i) { return { name: D.qbNames[i] }; }), "#efb118", { popup: "{name}" }),
-      line("to20", "20 mph streets, 2022 on", cwLines(X.to20, function (i) { return { date: X.to20P[i] }; }), "#4269d0", { popup: "20 mph from {date}" }),
-      line("slow", "Slow Streets", only(slow, function (p) { return !p.planned; }), "#6cc5b0", { popup: "Slow Street: {name}, {date}" }),
-      line("slow-p", "Pending Slow Streets", only(slow, function (p) { return !!p.planned; }), "#6cc5b0", { dash: DASH, popup: "Pending Slow Street: {name}" }),
-      line("calm", "Speed humps and other calming, 2016 on", only(calm, function (p) { return !p.planned; }), "#a463f2", { popup: "{name}, {where}, {date}" }),
-      line("calm-p", "Pending calming", only(calm, function (p) { return !!p.planned; }), "#a463f2", { dash: DASH, popup: "{name}, {where}: {status}" }),
-    ].concat(PLAN.map(function (k) { return line("plan-" + k[0], k[1], only(plan, function (p) { return p.kind === k[0]; }), k[2], { dash: DASH, popup: "{name}: {phase}" }); }), [
-      { type: "polygon", id: "tl", name: "Tenderloin daylighting area", data: { type: "Feature", properties: {}, geometry: { type: "Polygon", coordinates: [D.tl.concat([D.tl[0]])] } }, fill: "#ff8ab7", fillOpacity: 0, outline: "#15181c", outlineWidth: 1.5, visible: false },
-      dot("cam", "Speed cameras, 2025", cwPts(D.cam, function (i) { return { name: D.camNames[i] }; }), "#ffffff", { stroke: "#15181c", strokeWidth: 1.6, popup: "Speed camera: {name}" }),
-      dot("psz", "Painted safety zones", cwPts(X.psz, function (i) { var r = X.pszP[i]; return { where: r[0], date: r[1] || "date not recorded" }; }), "#ff8ab7", { popup: "Painted safety zone: {where}, {date}" }),
-      dot("calmPts", "Calming at a point", only(calmPts, function (p) { return !p.planned; }), "#a463f2", { popup: "{name}, {where}, {date}" }),
-      dot("calmPts-p", "Pending calming at a point", only(calmPts, function (p) { return !!p.planned; }), "#ffffff", { stroke: "#a463f2", strokeWidth: 2, popup: "{name}, {where}: {status}" }),
-      dot("sch", "Schools in the School Trips tool", cwPts(D.sch, function (i) { return { name: D.schNames[i] }; }), "#e8eaf6", { stroke: "#5b3fa0", strokeWidth: 2, radius: 6, popup: "{name}" }),
+    // Card popups, as the MapLibre map's fxCard and projCard draw them, in the package's text-only card: each feature
+    // carries its card's words (t title, a b c d lines, s source, u link), and a layer's popup names those keys.
+    var NOCOST = "Cost: No published cost.";
+    var txt = function (h) { return new DOMParser().parseFromString(String(h), "text/html").body.textContent; };
+    var ds = function (id, d) { return { s: "Source: DataSF " + id + ", read " + d + ".", u: "https://data.sfgov.org/d/" + id, ut: "DataSF " + id }; };
+    var fx = function (t, a, src) { return Object.assign({ t: t, a: a, b: NOCOST }, src); };
+    var FXCARD = { title: "{t}", lines: ["{a}", "{b}", "{s}"], link: { href: "{u}", text: "{ut}" } };
+    var PROJCARD = { title: "{t}", lines: ["{a}", "{b}", "{c}", "{d}"], link: { href: "{u}", text: "SFMTA's project page" } };
+    // A quick-build or camera with no project card keeps the one-line popup the MapLibre map falls back to.
+    var proj = function (name, t) { return window.projFields && window.projFields(name) || { t: t, a: "", b: "", c: "", d: "", u: "" }; };
+    var layers = null;
+    var buildLayers = function () {
+    var slow = cwLines(X.slow, function (i) { var r = X.slowP[i]; return Object.assign({ planned: r[3] }, fx(r[0], r[1] + ". " + (r[3] ? "Planned." : "In place since " + (r[2] || "date not recorded") + "."), ds("hkz3-itiu", X.fetched.slow))); });
+    var calm = cwLines(X.calm, function (i) { var r = X.calmP[i]; return Object.assign({ planned: r[3] }, fx(r[0], r[1] + ". " + (r[3] ? r[4] + "." : "Installed " + (r[2] || "date not recorded") + "."), ds("abhw-ffzx", X.fetched.calm))); });
+    var calmPts = cwPts(X.calmPts, function (i) { var r = X.calmPtsP[i]; return Object.assign({ planned: r[3] }, fx(r[0], r[1] + ". " + (r[3] ? r[4] + "." : "Installed " + (r[2] || "date not recorded") + "."), ds("bp3t-bd4t", X.fetched.calm))); });
+    var plan = cwLines(X.plan, function (i) { var r = X.planP[X.planI[i]];
+      return { kind: r[4], t: r[0], a: "Phase: " + r[1] + (r[3] ? ", expected " + r[3] : "") + ".", b: r[5] ? "Cost: " + txt(r[5]) : NOCOST,
+        s: "Source: SFMTA's project layer and pages, as gathered on " + X.fetched.planned + ".", u: r[2] || "", ut: "SFMTA project page" }; });
+    var PLAN = [["qb", "Planned quick-builds", "#efb118"], ["safety", "Planned safety and traffic calming", "#a463f2"], ["bike", "Planned bike lanes and Slow Streets", "#6cc5b0"], ["sig", "Planned signal work", "#4269d0"], ["area", "Planned streetscapes and area plans", "#9c6b4e"]];
+    return [
+      line("hin", "High Injury Network", cwLines(D.hin), "#4a4f57", { width: 2, opacity: 0.85, visible: true, popup: "High Injury Network" }),
+      line("qb", "Quick-build corridors, 2018 to 2024", cwLines(D.qb, function (i) { return proj(D.qbNames[i], D.qbNames[i]); }), "#efb118", { popup: PROJCARD }),
+      line("to20", "20 mph streets, 2022 on", cwLines(X.to20, function (i) { return fx("Lowered to 20 mph", "Approved by the SFMTA Board on " + X.to20P[i] + " under the 2022 state law that lets cities post 20 mph. The data has no date the signs went up.", ds("3t7b-gebn", X.fetched.to20)); }), "#4269d0", { popup: FXCARD }),
+      line("slow", "Slow Streets", only(slow, function (p) { return !p.planned; }), "#6cc5b0", { popup: FXCARD }),
+      line("slow-p", "Pending Slow Streets", only(slow, function (p) { return !!p.planned; }), "#6cc5b0", { dash: DASH, popup: FXCARD }),
+      line("calm", "Speed humps and other calming, 2016 on", only(calm, function (p) { return !p.planned; }), "#a463f2", { popup: FXCARD }),
+      line("calm-p", "Pending calming", only(calm, function (p) { return !!p.planned; }), "#a463f2", { dash: DASH, popup: FXCARD }),
+    ].concat(PLAN.map(function (k) { return line("plan-" + k[0], k[1], only(plan, function (p) { return p.kind === k[0]; }), k[2], { dash: DASH, popup: FXCARD }); }), [
+      { type: "polygon", id: "tl", name: "Tenderloin daylighting area", data: { type: "Feature", properties: { t: "Tenderloin daylighting", a: "Red zones at about 80 intersections by March 2015.", b: NOCOST }, geometry: { type: "Polygon", coordinates: [D.tl.concat([D.tl[0]])] } }, fill: "#ff8ab7", fillOpacity: 0, outline: "#15181c", outlineWidth: 1.5, visible: false, popup: { title: "{t}", lines: ["{a}", "{b}"] } },
+      dot("cam", "Speed cameras, 2025", cwPts(D.cam, function (i) { return proj(D.camNames[i], "Speed camera: " + D.camNames[i]); }), "#ffffff", { stroke: "#15181c", strokeWidth: 1.6, popup: PROJCARD }),
+      dot("psz", "Painted safety zones", cwPts(X.psz, function (i) { var r = X.pszP[i]; return fx("Painted safety zone", r[0] + (r[1] ? ", installed " + r[1] : "") + ".", ds("vtn2-q8ky", X.fetched.psz)); }), "#ff8ab7", { popup: FXCARD }),
+      dot("calmPts", "Calming at a point", only(calmPts, function (p) { return !p.planned; }), "#a463f2", { popup: FXCARD }),
+      dot("calmPts-p", "Pending calming at a point", only(calmPts, function (p) { return !!p.planned; }), "#ffffff", { stroke: "#a463f2", strokeWidth: 2, popup: FXCARD }),
+      // A school shows its name on hover, and a tap picks it as the picker does (the cw-map-feature-click listener below).
+      dot("sch", "Schools in the School Trips tool", cwPts(D.sch, function (i) { return { name: D.schNames[i], cds: D.schCds[i] }; }), "#e8eaf6", { stroke: "#5b3fa0", strokeWidth: 2, radius: 6, tooltip: "{name}", clickable: true }),
     ]);
+    };
     // The menu's fix boxes, each to the layers it draws: the MapLibre map's FXL, under the same ids.
     var CWFX = { qb: ["qb"], cam: ["cam"], to20: ["to20"], day: ["tl", "psz"], slow: ["slow", "slow-p"], calm: ["calm", "calm-p", "calmPts", "calmPts-p"],
       "plan-qb": ["plan-qb"], "plan-safety": ["plan-safety", "calm-p", "calmPts-p"], "plan-bike": ["plan-bike", "slow-p"], "plan-sig": ["plan-sig"], "plan-area": ["plan-area"] };
@@ -1271,7 +1299,7 @@ ${stepTable()}
         dot("kid-near", "Kids hurt near the school", kids, "#15181c", { stroke: "#ffffff", strokeWidth: 1.5, radius: 5, visible: !!s }),
       ];
     };
-    var cwMod = null, cwBase = layers, cwDrawn = null;
+    var cwMod = null, cwDrawn = null;
     // The view that frames lon/lat bounds [[w, s], [e, n]] in the map's box, as MapLibre's fitBounds does, at a whole
     // zoom (Leaflet snaps to one). The city view is the opening one: the High Injury Network's bounds, centred, at 12.
     var CITY = { center: [(D.bounds[0][1] + D.bounds[1][1]) / 2, (D.bounds[0][0] + D.bounds[1][0]) / 2], zoom: 12 };
@@ -1290,13 +1318,16 @@ ${stepTable()}
       if (key === cwDrawn) return;
       cwDrawn = key;
       if (cwMap) cwMap();
-      cwMap = cwMod.mountWithSnapshot(el, { id: "injury-map", layers: [heat(S.set)].concat(cwBase, schoolLayers()), legend: false,
-        center: cwView.center, zoom: cwView.zoom, height: el.clientHeight || 600 });
+      if (!layers) layers = buildLayers();
+      // Ctrl or Cmd with the wheel zooms, as the MapLibre map's cooperative gestures do; a plain wheel scrolls the page.
+      cwMap = cwMod.mountWithSnapshot(el, { id: "injury-map", layers: [heat(S.set)].concat(layers, schoolLayers()), legend: false,
+        cooperativeGestures: true, center: cwView.center, zoom: cwView.zoom, height: el.clientHeight || 600 });
       cwSync();
     };
     cwFrame = function (b) { if (b !== null) cwView = b ? fit(b, 30) : CITY; };
     document.querySelectorAll("input[name=set], input[name=fx]").forEach(function (x) { x.addEventListener("change", cwSync); });
     el.removeAttribute("role");
+    el.addEventListener("cw-map-feature-click", function (e) { var d = e.detail || {}; if (d.layer === "sch" && d.item && d.item.cds) pickSchool(d.item.cds); });
     import(cwSrc.href).then(function (cw) {
       cwMod = cw;
       cwSchool();

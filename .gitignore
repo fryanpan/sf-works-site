@@ -63,5 +63,10 @@ out/full-map/transit-tthird-sample.json
 out/full-map/transit-sample.failed.json
 out/full-map/transit-tthird-sample.failed.json
 
+# The augmented crash tables (pipeline/crash-augment/), about 360 MB, and the street lane's 19 MB table; each
+# folder's summary.json is tracked.
+out/crash-augment/tables/*.csv
+out/crash-augment/street/crash-street.csv
+
 # The project-detail page carries a Google Maps browser key read at build time. Its generator is tracked.
 out/project-detail/index.html

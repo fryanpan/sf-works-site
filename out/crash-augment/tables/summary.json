@@ -1,0 +1,158 @@
+{
+ "about": "DataSF's three injury-crash tables with the crash-augment columns added; built by pipeline/crash-augment/crash-augment.py. Columns and rules: pipeline/crash-augment/README.md.",
+ "tables": {
+  "crashes": {
+   "added": [
+    {
+     "columns": [
+      "street_block_join",
+      "street_block_cnns",
+      "epc_tract",
+      "in_epc",
+      "in_epc_basis",
+      "posted_speed_limit_mph",
+      "posted_speed_limit_mph_basis",
+      "posted_speed_limit_source",
+      "street_class",
+      "street_class_basis",
+      "corner_type",
+      "corner_type_basis",
+      "lanes",
+      "lanes_basis",
+      "lanes_am",
+      "lanes_pm",
+      "bci_traffic_category",
+      "bci_traffic_category_basis",
+      "painted_safety_zone",
+      "painted_safety_zone_basis",
+      "speed_camera_corridor",
+      "speed_camera_corridor_basis",
+      "traffic_calming",
+      "traffic_calming_basis",
+      "traffic_calming_types",
+      "slow_street",
+      "slow_street_basis",
+      "signal_present",
+      "signal_present_basis"
+     ],
+     "file": "out/crash-augment/street/crash-street.csv",
+     "lane": "street"
+    },
+    {
+     "columns": [
+      "motor_vehicle_parties",
+      "vehicles_with_weight",
+      "heaviest_vehicle_weight_lb",
+      "heaviest_vehicle_make_clean",
+      "heaviest_vehicle_model_clean"
+     ],
+     "file": ".cache/crash-augment/vehicles/crashes-vehicles.csv",
+     "lane": "vehicles"
+    }
+   ],
+   "datasf_columns": 56,
+   "input": {
+    "content_sha": "1f522c2cb80e580d",
+    "id": "ubvf-ztfx",
+    "read_on": "2026-11-25",
+    "rows": 66991
+   },
+   "key": "case_id_pkey",
+   "lane_keys_repeated": {
+    "street": 0,
+    "vehicles": 0
+   },
+   "lane_rows_not_held": {
+    "street": 0,
+    "vehicles": 0
+   },
+   "missing_lane_rows": {
+    "street": 0,
+    "vehicles": 0
+   },
+   "rows": 66991
+  },
+  "parties": {
+   "added": [
+    {
+     "columns": [
+      "vehicle_make_clean",
+      "vehicle_model_clean",
+      "estimated_vehicle_weight_lb",
+      "vehicle_match_method",
+      "vehicle_match_reason",
+      "vehicle_body_type_clean"
+     ],
+     "file": ".cache/crash-augment/vehicles/parties-vehicles.csv",
+     "lane": "vehicles"
+    }
+   ],
+   "datasf_columns": 81,
+   "input": {
+    "content_sha": "b17549afb506e3f3",
+    "id": "8gtc-pjc6",
+    "read_on": "2026-11-25",
+    "rows": 140843
+   },
+   "key": "unique_id",
+   "lane_keys_repeated": {
+    "vehicles": 0
+   },
+   "lane_rows_not_held": {
+    "vehicles": 0
+   },
+   "missing_lane_rows": {
+    "vehicles": 0
+   },
+   "rows": 140843
+  },
+  "victims": {
+   "added": [
+    {
+     "columns": [
+      "vehicle_make_clean",
+      "vehicle_model_clean",
+      "estimated_vehicle_weight_lb",
+      "vehicle_match_method",
+      "vehicle_match_reason",
+      "vehicle_body_type_clean"
+     ],
+     "file": ".cache/crash-augment/vehicles/victims-vehicles.csv",
+     "lane": "vehicles"
+    }
+   ],
+   "datasf_columns": 89,
+   "input": {
+    "content_sha": "8cff1fb3d27d71b6",
+    "id": "nwes-mmgh",
+    "read_on": "2026-11-25",
+    "rows": 84943
+   },
+   "key": "unique_id",
+   "lane_keys_repeated": {
+    "vehicles": 0
+   },
+   "lane_rows_not_held": {
+    "vehicles": 0
+   },
+   "missing_lane_rows": {
+    "vehicles": 0
+   },
+   "rows": 84943
+  }
+ },
+ "vehicle_inputs": {
+  "8gtc-pjc6": {
+   "content_sha": "b17549afb506e3f3",
+   "rows": 140843
+  },
+  "nwes-mmgh": {
+   "content_sha": "8cff1fb3d27d71b6",
+   "rows": 84943
+  },
+  "ubvf-ztfx": {
+   "content_sha": "1f522c2cb80e580d",
+   "rows": 66991
+  }
+ }
+}

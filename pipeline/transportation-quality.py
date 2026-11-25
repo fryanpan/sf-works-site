@@ -1974,6 +1974,11 @@ def sfpd_crime_checks(root):
     ]
 
 
+def crash_augment_checks(root):
+    """The augmented crash tables' checks (pipeline/crash-augment/augment_checks.py), which crash-augment.py also runs."""
+    return _script_module("augment_checks").checks()
+
+
 def street_safety_cards_checks(root):
     """tools/street-safety/street-safety-cards.py: a crash card for every injury crash since 2005, one file per year and map cell.
     The index's years (no year may lose more than 5% of its cards), each complete year's count, and every file it lists
@@ -2637,6 +2642,17 @@ SPECS = {
                                   "every query in lib/street_safety_reads.py QUERIES with no held copy, and on a "
                                   "change every query of that table",
                                   "tools/street-safety/street-safety-crashes.py --update"),
+    "crash-augment": Spec(["data/socrata-cache/crash-augment/**", "data/socrata-cache/crash-augment-street/**",
+                           ".cache/crash-augment/**", "out/crash-augment/**",
+                           "pipeline/crash-augment/vehicles/make-model-lookup.csv",
+                           "pipeline/crash-augment/vehicles/body-type-averages.json",
+                           "pipeline/crash-augment/vehicles/match-summary.json"],
+                          crash_augment_checks,
+                          "DataSF rowsUpdatedAt, to the second, for each of ubvf-ztfx, 8gtc-pjc6 and nwes-mmgh, and each "
+                          "table's row count per collision year; the street lane's own markers for its layers",
+                          "rows whose data_updated_at is on or after the newest held, and the missing keys of any year "
+                          "whose count is off; every row once 90 days have passed since the last whole read",
+                          "pipeline/crash-augment/crash-augment.py --update"),
     "telraam": Spec(["data/extract/telraam/segments.json"], telraam_checks,
                     "Telraam publishes no change marker, so the bound is time: closed three-month chunks are kept, the open "
                     "one is re-read once per window end, and a snapshot every 14 days finds new segments",
@@ -2793,6 +2809,9 @@ SOURCE_NAMES = {
     "muni-service-delivered": "Controller's scorecard measures, DataSF kc49-udxn, measure 441 (SFMTA service hours delivered)",
     "sfpd-crime": "DataSF wg3w-h783, Police Department Incident Reports: 2018 to Present",
     "street-safety-crashes": "DataSF nwes-mmgh, 8gtc-pjc6, ubvf-ztfx (Traffic Crashes Resulting in Injury: victims, parties, crashes) and dau3-4s8f (Vision Zero fatality log), the Street Safety map's and the injury pages' queries",
+    "crash-augment": "DataSF ubvf-ztfx, 8gtc-pjc6 and nwes-mmgh (Traffic Crashes Resulting in Injury: crashes, parties, "
+                     "victims), whole; NHTSA vPIC makes, models and Canadian curb weights; the street layers "
+                     "pipeline/crash-augment/street/ reads",
     "street-safety-cards": "DataSF ubvf-ztfx, 8gtc-pjc6 and nwes-mmgh (Traffic Crashes Resulting in Injury: crashes, parties, victims), one query a year from 2005",
     "telraam": "Telraam API v1 (telraam-api.net): residents' window traffic counters in SF, hourly per segment",
     "muni-satisfaction": "SFMTA, Customer rating: Overall customer satisfaction with Muni (transtat.sfmta.com)",

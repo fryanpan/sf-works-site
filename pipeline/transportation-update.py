@@ -273,6 +273,16 @@ STEPS = [
     # copy on a failed read. Interval: daily, with the scheduled run. Before hin-injuries, hin-densest,
     # street-safety-light, injury-map and injury-severe-why, which read them.
     ("street-safety-crashes", "source", py("street-safety-crashes.py", "--update"), ["data/socrata-cache/street-safety/*"], [], 0),
+    # DataSF's three injury-crash tables with vehicle and street columns added (pipeline/crash-augment/crash-augment.py):
+    # a held copy of every row that reads only rows whose data_updated_at moved, then the vehicle lane (clean make,
+    # model, estimated curb weight from NHTSA vPIC), the street lane (speed limit, street class, lanes, EPC, and dated
+    # safety treatments as of each crash) and the merge, each checked before it replaces the last good build.
+    # Interval: daily, with the scheduled run.
+    ("crash-augment", "source", py("crash-augment.py", "--update"),
+     ["data/socrata-cache/crash-augment/**", "data/socrata-cache/crash-augment-street/**", ".cache/crash-augment/**",
+      "out/crash-augment/**", "pipeline/crash-augment/vehicles/make-model-lookup.csv",
+      "pipeline/crash-augment/vehicles/body-type-averages.json", "pipeline/crash-augment/vehicles/match-summary.json"],
+     [], 0),
     # ---- builds --------------------------------------------------------------
     # Appendix L's rows placed on the street centerline by name, from the
     # plan's appendix PDF; the trace reads which blocks the index names.
@@ -480,6 +490,10 @@ STEPS = [
     ("muni-daily", "build", py("muni-ewt/muni_daily.py"), ["site/data/muni-daily.json"], [], 0),
     ("muni-stop-reach", "build", py("muni-stop-reach.py"), ["site/data/bike-history/muni-reach.json"], [], 0),
     ("parking-reach", "build", py("parking-reach.py"), ["site/data/bike-history/parking-reach.json"], [], 0),
+    # The LADOT-style crash profiles (analysis/crash-profiles/crash-profiles.py), read off the crash-augment tables.
+    # Reruns whenever those tables or the street lane's held copies change, so results.json follows the daily data.
+    ("crash-profiles", "build", [PY, os.path.join("analysis", "crash-profiles", "crash-profiles.py")],
+     ["out/crash-augment/profiles/results.json"], [], 0),
     # The site's own collectors are node and fast; they run every time and
     # write only when their output changes.
     ("collect-transportation", "node", node("collect-transportation.mjs"), ["site/data/transportation.json"], [], 0),

@@ -84,6 +84,13 @@ FAMILY STRESS. family_stress splits the FAMILY_STRESS_TOP biggest families by pe
   traffic stress of the crash (crash_stress, as in TRAFFIC STRESS: high is LTS 3 or 4, low 1 or 2) and by street
   class, with the high-stress share among crashes placed on one block as the check on the intersection lean.
 
+GROUPING ALTERNATIVES. grouping_alternatives scores seven more groupings the way other_breakdown.regroupings does,
+  each with its top CHART_BARS bars and the remainder: victim role x age band and victim role x violation family
+  (counted per person, victims rows with any injury; an age outside 1 to 109 is not stated); traffic stress x street
+  class x intersection or midblock; mode x time band x weekday or weekend (the commute and midday bands are weekday by
+  definition, so the split adds only evening and late night); vehicle-only crashes by crash type beside pedestrian and
+  bike crashes by violation family, alone and with the turn direction; and mode x violation family x traffic stress.
+
 TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block rule) are looked up in SFMTA's 2023
   draft Bike Comfort Index layer as the repo holds it (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level
   of traffic stress (lts_ft, lts_tf, 1 low to 4 high; the most stressful direction and block), the layer's combined
@@ -1149,6 +1156,79 @@ def main():
                           **stress_split(g_fam[(t["mode"], t["violation"])])) for t in families[:FAMILY_STRESS_TOP]],
     }
 
+    # Grouping alternatives: other ways to cut everyone hurt, each scored like other_breakdown.regroupings and given
+    # with its top CHART_BARS bars. Crash groupings count a crash's people; the person groupings count victims rows.
+    def compare(items, catch):
+        """items: (key tuple, people hurt, KSI people), one per crash or person; catch: the values that name no kind."""
+        g = collections.defaultdict(lambda: [0, 0])
+        for k, h, p in items:
+            g[k][0] += h
+            g[k][1] += p
+        ranked = sorted(g.items(), key=lambda kv: (-kv[1][0], -kv[1][1], kv[0]))
+        run, to80 = 0, None
+        for i, (_, (h, _p)) in enumerate(ranked, 1):
+            run += h
+            if run * 5 >= H * 4:
+                to80 = i
+                break
+        is_catch = lambda k: any(v in catch for v in k)  # noqa: E731
+        top = ranked[:CHART_BARS]
+        remainder = H - sum(h for _, (h, _p) in top)
+        top_catch = sum(h for k, (h, _p) in top if is_catch(k))
+        return {"groups": len(g),
+                "share_of_people_injured_in_catch_all_groups": round(sum(h for k, (h, _p) in ranked if is_catch(k)) / H, 4),
+                "bars_to_80pct_of_people_injured": to80,
+                "share_in_remainder_at_chart_bars": round(remainder / H, 4),
+                "share_in_catch_all_bars_at_chart_bars": round(top_catch / H, 4),
+                "share_left_in_catch_all_or_remainder": round((remainder + top_catch) / H, 4),
+                "top_bars": [{"group": list(k), "catch_all": is_catch(k), "people_injured": h,
+                              "share_of_people_injured": round(h / H, 4), "ksi_people": p,
+                              "share_of_ksi_people": round(p / P, 4)} for k, (h, p) in top],
+                "remainder": {"people_injured": remainder, "ksi_people": P - sum(p for _, (_h, p) in top)}}
+
+    def age_band(v):
+        a = int(v) if v.lstrip("-").isdigit() else 0
+        return "age not stated" if not 0 < a < 110 else ("child under 18" if a < 18 else
+                                                         ("adult 18 to 64" if a < 65 else "65 and over"))
+    ROLE = {"Pedestrian": "pedestrian", "Bicyclist": "bicyclist", "Driver": "driver", "Passenger": "passenger",
+            "Other": "scooter or other"}
+    rec_of = {r["case"]: r for r in recs}
+    persons = [(v, rec_of[v["case_id_pkey"]]) for v in victims
+               if v["victim_degree_of_injury"] not in NOT_HURT and v["case_id_pkey"] in rec_of]
+    person = lambda key: [(key(v, r), 1, int(v["victim_degree_of_injury"] in KSI_PERSON)) for v, r in persons]  # noqa: E731
+    crash = lambda key: [(key(r), r["injured"], r["people"]) for r in recs]  # noqa: E731
+    family = lambda r: r["violation (fine)"]  # noqa: E731
+    turn = lambda r: {"going straight": "going straight", "left or U-turn": "left or U-turn",  # noqa: E731
+                      "right turn": "right turn"}.get(r["movement (fine)"], "other movement"
+                                                      if r["movement (fine)"] != OTHER_MOVE else OTHER_MOVE)
+    STATED = ("not stated", "unknown", "other", "Other", "Not Stated", OTHER_MOVE, "age not stated", "time not stated",
+              "role not stated")
+    ALTERNATIVES = [
+        ("who was hurt: victim role x age band", "person",
+         person(lambda v, r: (ROLE.get(v["victim_role"], "role not stated"), age_band(v["victim_age"])))),
+        ("place: traffic stress x street class x intersection or midblock", "crash",
+         crash(lambda r: (stress_band(r), r["street class"], r["at intersection"]))),
+        ("time: mode x time band x weekday or weekend", "crash",
+         crash(lambda r: (r["mode"], r["time"], "weekend" if crashes[r["case"]]["day_of_week"] in WEEKEND else "weekday"))),
+        ("hybrid: vehicles only by crash type, pedestrian and bike by violation family", "crash",
+         crash(lambda r: (r["mode"], r["collision type"] if r["mode"] == "vehicles only" else family(r)))),
+        ("who and what: victim role x violation family", "person",
+         person(lambda v, r: (ROLE.get(v["victim_role"], "role not stated"), family(r)))),
+        ("hybrid with movement: vehicles by crash type, pedestrian and bike by violation family x turn", "crash",
+         crash(lambda r: (r["mode"],) + ((r["collision type"],) if r["mode"] == "vehicles only" else (family(r), turn(r))))),
+        ("what and where: mode x violation family x traffic stress", "crash",
+         crash(lambda r: (r["mode"], family(r), stress_band(r)))),
+    ]
+    grouping_alternatives = {
+        "about": "other groupings of everyone hurt, scored as in other_breakdown.regroupings, each with its top "
+                 "CHART_BARS bars. A person grouping counts victims rows with any injury (age outside 1 to 109 is not "
+                 "stated); a crash grouping counts each crash's people. Catch-all values: not stated, unknown, other, "
+                 "Other, Not Stated, the movement and time not-stated values; victim role Other is named as scooter or other",
+        "chart_bars": CHART_BARS,
+        "recommended_for_comparison": regroup(("mode", "violation (fine)")),
+        "groupings": [dict(compare(items, set(STATED)), name=n, unit=u) for n, u, items in ALTERNATIVES],
+    }
+
     # Data quality facts the doc reports
     ped_parties = [p for ps in parties.values() for p in ps.values()]
     drivers = [p for p in ped_parties if p["party_type"] == "Driver"]
@@ -1180,6 +1260,7 @@ def main():
         "other_breakdown": other_breakdown,
         "size_families": size_families,
         "family_stress": family_stress,
+        "grouping_alternatives": grouping_alternatives,
         "profiles": profiles,
         "level1_tested": level1,
         "level1_margins": margins,

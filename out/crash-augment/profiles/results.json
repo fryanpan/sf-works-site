@@ -25681,6 +25681,1100 @@
    }
   ]
  },
+ "grouping_alternatives": {
+  "about": "other groupings of everyone hurt, scored as in other_breakdown.regroupings, each with its top CHART_BARS bars. A person grouping counts victims rows with any injury (age outside 1 to 109 is not stated); a crash grouping counts each crash's people. Catch-all values: not stated, unknown, other, Other, Not Stated, the movement and time not-stated values; victim role Other is named as scooter or other",
+  "chart_bars": 12,
+  "recommended_for_comparison": {
+   "fields": [
+    "mode",
+    "violation (fine)"
+   ],
+   "groups": 50,
+   "share_of_people_injured_in_catch_all_groups": 0.0713,
+   "bars_to_80pct_of_people_injured": 11,
+   "share_in_remainder_at_chart_bars": 0.1743,
+   "share_in_catch_all_bars_at_chart_bars": 0.0345,
+   "share_left_in_catch_all_or_remainder": 0.2088
+  },
+  "groupings": [
+   {
+    "groups": 20,
+    "share_of_people_injured_in_catch_all_groups": 0.0238,
+    "bars_to_80pct_of_people_injured": 5,
+    "share_in_remainder_at_chart_bars": 0.0257,
+    "share_in_catch_all_bars_at_chart_bars": 0.0142,
+    "share_left_in_catch_all_or_remainder": 0.0399,
+    "top_bars": [
+     {
+      "group": [
+       "driver",
+       "adult 18 to 64"
+      ],
+      "catch_all": false,
+      "people_injured": 12305,
+      "share_of_people_injured": 0.4037,
+      "ksi_people": 677,
+      "share_of_ksi_people": 0.2821
+     },
+     {
+      "group": [
+       "pedestrian",
+       "adult 18 to 64"
+      ],
+      "catch_all": false,
+      "people_injured": 4311,
+      "share_of_people_injured": 0.1414,
+      "ksi_people": 626,
+      "share_of_ksi_people": 0.2608
+     },
+     {
+      "group": [
+       "passenger",
+       "adult 18 to 64"
+      ],
+      "catch_all": false,
+      "people_injured": 4141,
+      "share_of_people_injured": 0.1359,
+      "ksi_people": 144,
+      "share_of_ksi_people": 0.06
+     },
+     {
+      "group": [
+       "bicyclist",
+       "adult 18 to 64"
+      ],
+      "catch_all": false,
+      "people_injured": 3381,
+      "share_of_people_injured": 0.1109,
+      "ksi_people": 347,
+      "share_of_ksi_people": 0.1446
+     },
+     {
+      "group": [
+       "driver",
+       "65 and over"
+      ],
+      "catch_all": false,
+      "people_injured": 1192,
+      "share_of_people_injured": 0.0391,
+      "ksi_people": 49,
+      "share_of_ksi_people": 0.0204
+     },
+     {
+      "group": [
+       "scooter or other",
+       "adult 18 to 64"
+      ],
+      "catch_all": false,
+      "people_injured": 1088,
+      "share_of_people_injured": 0.0357,
+      "ksi_people": 144,
+      "share_of_ksi_people": 0.06
+     },
+     {
+      "group": [
+       "pedestrian",
+       "65 and over"
+      ],
+      "catch_all": false,
+      "people_injured": 1056,
+      "share_of_people_injured": 0.0346,
+      "ksi_people": 215,
+      "share_of_ksi_people": 0.0896
+     },
+     {
+      "group": [
+       "passenger",
+       "child under 18"
+      ],
+      "catch_all": false,
+      "people_injured": 915,
+      "share_of_people_injured": 0.03,
+      "ksi_people": 16,
+      "share_of_ksi_people": 0.0067
+     },
+     {
+      "group": [
+       "passenger",
+       "65 and over"
+      ],
+      "catch_all": false,
+      "people_injured": 493,
+      "share_of_people_injured": 0.0162,
+      "ksi_people": 14,
+      "share_of_ksi_people": 0.0058
+     },
+     {
+      "group": [
+       "pedestrian",
+       "child under 18"
+      ],
+      "catch_all": false,
+      "people_injured": 383,
+      "share_of_people_injured": 0.0126,
+      "ksi_people": 43,
+      "share_of_ksi_people": 0.0179
+     },
+     {
+      "group": [
+       "passenger",
+       "age not stated"
+      ],
+      "catch_all": true,
+      "people_injured": 246,
+      "share_of_people_injured": 0.0081,
+      "ksi_people": 5,
+      "share_of_ksi_people": 0.0021
+     },
+     {
+      "group": [
+       "pedestrian",
+       "age not stated"
+      ],
+      "catch_all": true,
+      "people_injured": 188,
+      "share_of_people_injured": 0.0062,
+      "ksi_people": 37,
+      "share_of_ksi_people": 0.0154
+     }
+    ],
+    "remainder": {
+     "people_injured": 783,
+     "ksi_people": 83
+    },
+    "name": "who was hurt: victim role x age band",
+    "unit": "person"
+   },
+   {
+    "groups": 32,
+    "share_of_people_injured_in_catch_all_groups": 0.0233,
+    "bars_to_80pct_of_people_injured": 6,
+    "share_in_remainder_at_chart_bars": 0.0173,
+    "share_in_catch_all_bars_at_chart_bars": 0.0092,
+    "share_left_in_catch_all_or_remainder": 0.0265,
+    "top_bars": [
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "collector",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 7276,
+      "share_of_people_injured": 0.2387,
+      "ksi_people": 507,
+      "share_of_ksi_people": 0.2112
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "arterial",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 6927,
+      "share_of_people_injured": 0.2272,
+      "ksi_people": 512,
+      "share_of_ksi_people": 0.2133
+     },
+     {
+      "group": [
+       "low (LTS 1-2)",
+       "residential",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 3617,
+      "share_of_people_injured": 0.1187,
+      "ksi_people": 232,
+      "share_of_ksi_people": 0.0967
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "residential",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 3145,
+      "share_of_people_injured": 0.1032,
+      "ksi_people": 227,
+      "share_of_ksi_people": 0.0946
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "collector",
+       "midblock"
+      ],
+      "catch_all": false,
+      "people_injured": 2247,
+      "share_of_people_injured": 0.0737,
+      "ksi_people": 222,
+      "share_of_ksi_people": 0.0925
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "arterial",
+       "midblock"
+      ],
+      "catch_all": false,
+      "people_injured": 1816,
+      "share_of_people_injured": 0.0596,
+      "ksi_people": 199,
+      "share_of_ksi_people": 0.0829
+     },
+     {
+      "group": [
+       "low (LTS 1-2)",
+       "residential",
+       "midblock"
+      ],
+      "catch_all": false,
+      "people_injured": 1598,
+      "share_of_people_injured": 0.0524,
+      "ksi_people": 151,
+      "share_of_ksi_people": 0.0629
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "major",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 1311,
+      "share_of_people_injured": 0.043,
+      "ksi_people": 98,
+      "share_of_ksi_people": 0.0408
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "residential",
+       "midblock"
+      ],
+      "catch_all": false,
+      "people_injured": 1146,
+      "share_of_people_injured": 0.0376,
+      "ksi_people": 116,
+      "share_of_ksi_people": 0.0483
+     },
+     {
+      "group": [
+       "high (LTS 3-4)",
+       "major",
+       "midblock"
+      ],
+      "catch_all": false,
+      "people_injured": 330,
+      "share_of_people_injured": 0.0108,
+      "ksi_people": 36,
+      "share_of_ksi_people": 0.015
+     },
+     {
+      "group": [
+       "unknown",
+       "residential",
+       "intersection"
+      ],
+      "catch_all": true,
+      "people_injured": 280,
+      "share_of_people_injured": 0.0092,
+      "ksi_people": 17,
+      "share_of_ksi_people": 0.0071
+     },
+     {
+      "group": [
+       "low (LTS 1-2)",
+       "collector",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 262,
+      "share_of_people_injured": 0.0086,
+      "ksi_people": 23,
+      "share_of_ksi_people": 0.0096
+     }
+    ],
+    "remainder": {
+     "people_injured": 527,
+     "ksi_people": 60
+    },
+    "name": "place: traffic stress x street class x intersection or midblock",
+    "unit": "crash"
+   },
+   {
+    "groups": 32,
+    "share_of_people_injured_in_catch_all_groups": 0.0014,
+    "bars_to_80pct_of_people_injured": 10,
+    "share_in_remainder_at_chart_bars": 0.1117,
+    "share_in_catch_all_bars_at_chart_bars": 0.0,
+    "share_left_in_catch_all_or_remainder": 0.1117,
+    "top_bars": [
+     {
+      "group": [
+       "vehicles only",
+       "weekday commute (6-10 am, 4-7 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 5290,
+      "share_of_people_injured": 0.1735,
+      "ksi_people": 226,
+      "share_of_ksi_people": 0.0942
+     },
+     {
+      "group": [
+       "vehicles only",
+       "weekday midday (10 am-4 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 4790,
+      "share_of_people_injured": 0.1571,
+      "ksi_people": 190,
+      "share_of_ksi_people": 0.0792
+     },
+     {
+      "group": [
+       "vehicles only",
+       "weekend daytime (6 am-7 pm)",
+       "weekend"
+      ],
+      "catch_all": false,
+      "people_injured": 3469,
+      "share_of_people_injured": 0.1138,
+      "ksi_people": 179,
+      "share_of_ksi_people": 0.0746
+     },
+     {
+      "group": [
+       "vehicles only",
+       "evening (7-11 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 2637,
+      "share_of_people_injured": 0.0865,
+      "ksi_people": 152,
+      "share_of_ksi_people": 0.0633
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "weekday commute (6-10 am, 4-7 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 1921,
+      "share_of_people_injured": 0.063,
+      "ksi_people": 258,
+      "share_of_ksi_people": 0.1075
+     },
+     {
+      "group": [
+       "vehicles only",
+       "late night (11 pm-6 am)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 1557,
+      "share_of_people_injured": 0.0511,
+      "ksi_people": 141,
+      "share_of_ksi_people": 0.0587
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "weekday midday (10 am-4 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 1493,
+      "share_of_people_injured": 0.049,
+      "ksi_people": 177,
+      "share_of_ksi_people": 0.0737
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "weekday commute (6-10 am, 4-7 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 1493,
+      "share_of_people_injured": 0.049,
+      "ksi_people": 144,
+      "share_of_ksi_people": 0.06
+     },
+     {
+      "group": [
+       "vehicles only",
+       "late night (11 pm-6 am)",
+       "weekend"
+      ],
+      "catch_all": false,
+      "people_injured": 1417,
+      "share_of_people_injured": 0.0465,
+      "ksi_people": 99,
+      "share_of_ksi_people": 0.0413
+     },
+     {
+      "group": [
+       "vehicles only",
+       "evening (7-11 pm)",
+       "weekend"
+      ],
+      "catch_all": false,
+      "people_injured": 1207,
+      "share_of_people_injured": 0.0396,
+      "ksi_people": 56,
+      "share_of_ksi_people": 0.0233
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "weekend daytime (6 am-7 pm)",
+       "weekend"
+      ],
+      "catch_all": false,
+      "people_injured": 907,
+      "share_of_people_injured": 0.0298,
+      "ksi_people": 137,
+      "share_of_ksi_people": 0.0571
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "weekday midday (10 am-4 pm)",
+       "weekday"
+      ],
+      "catch_all": false,
+      "people_injured": 895,
+      "share_of_people_injured": 0.0294,
+      "ksi_people": 86,
+      "share_of_ksi_people": 0.0358
+     }
+    ],
+    "remainder": {
+     "people_injured": 3406,
+     "ksi_people": 555
+    },
+    "name": "time: mode x time band x weekday or weekend",
+    "unit": "crash"
+   },
+   {
+    "groups": 44,
+    "share_of_people_injured_in_catch_all_groups": 0.0691,
+    "bars_to_80pct_of_people_injured": 9,
+    "share_in_remainder_at_chart_bars": 0.1388,
+    "share_in_catch_all_bars_at_chart_bars": 0.0411,
+    "share_left_in_catch_all_or_remainder": 0.18,
+    "top_bars": [
+     {
+      "group": [
+       "vehicles only",
+       "Broadside"
+      ],
+      "catch_all": false,
+      "people_injured": 8333,
+      "share_of_people_injured": 0.2734,
+      "ksi_people": 397,
+      "share_of_ksi_people": 0.1654
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Rear End"
+      ],
+      "catch_all": false,
+      "people_injured": 4583,
+      "share_of_people_injured": 0.1504,
+      "ksi_people": 107,
+      "share_of_ksi_people": 0.0446
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Sideswipe"
+      ],
+      "catch_all": false,
+      "people_injured": 3067,
+      "share_of_people_injured": 0.1006,
+      "ksi_people": 124,
+      "share_of_ksi_people": 0.0517
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "failure to yield to pedestrian"
+      ],
+      "catch_all": false,
+      "people_injured": 2491,
+      "share_of_people_injured": 0.0817,
+      "ksi_people": 274,
+      "share_of_ksi_people": 0.1142
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Head-On"
+      ],
+      "catch_all": false,
+      "people_injured": 1725,
+      "share_of_people_injured": 0.0566,
+      "ksi_people": 136,
+      "share_of_ksi_people": 0.0567
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "pedestrian violation"
+      ],
+      "catch_all": false,
+      "people_injured": 1649,
+      "share_of_people_injured": 0.0541,
+      "ksi_people": 330,
+      "share_of_ksi_people": 0.1375
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "unsafe turn or lane use"
+      ],
+      "catch_all": false,
+      "people_injured": 1137,
+      "share_of_people_injured": 0.0373,
+      "ksi_people": 90,
+      "share_of_ksi_people": 0.0375
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Hit Object"
+      ],
+      "catch_all": false,
+      "people_injured": 914,
+      "share_of_people_injured": 0.03,
+      "ksi_people": 130,
+      "share_of_ksi_people": 0.0542
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Other"
+      ],
+      "catch_all": true,
+      "people_injured": 718,
+      "share_of_people_injured": 0.0236,
+      "ksi_people": 77,
+      "share_of_ksi_people": 0.0321
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "unsafe speed"
+      ],
+      "catch_all": false,
+      "people_injured": 581,
+      "share_of_people_injured": 0.0191,
+      "ksi_people": 94,
+      "share_of_ksi_people": 0.0392
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Not Stated"
+      ],
+      "catch_all": true,
+      "people_injured": 536,
+      "share_of_people_injured": 0.0176,
+      "ksi_people": 25,
+      "share_of_ksi_people": 0.0104
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "vehicle right of way"
+      ],
+      "catch_all": false,
+      "people_injured": 516,
+      "share_of_people_injured": 0.0169,
+      "ksi_people": 35,
+      "share_of_ksi_people": 0.0146
+     }
+    ],
+    "remainder": {
+     "people_injured": 4232,
+     "ksi_people": 581
+    },
+    "name": "hybrid: vehicles only by crash type, pedestrian and bike by violation family",
+    "unit": "crash"
+   },
+   {
+    "groups": 75,
+    "share_of_people_injured_in_catch_all_groups": 0.071,
+    "bars_to_80pct_of_people_injured": 20,
+    "share_in_remainder_at_chart_bars": 0.3364,
+    "share_in_catch_all_bars_at_chart_bars": 0.0,
+    "share_left_in_catch_all_or_remainder": 0.3364,
+    "top_bars": [
+     {
+      "group": [
+       "driver",
+       "unsafe speed"
+      ],
+      "catch_all": false,
+      "people_injured": 3117,
+      "share_of_people_injured": 0.1023,
+      "ksi_people": 222,
+      "share_of_ksi_people": 0.0925
+     },
+     {
+      "group": [
+       "driver",
+       "unsafe turn or lane use"
+      ],
+      "catch_all": false,
+      "people_injured": 2753,
+      "share_of_people_injured": 0.0903,
+      "ksi_people": 148,
+      "share_of_ksi_people": 0.0617
+     },
+     {
+      "group": [
+       "pedestrian",
+       "failure to yield to pedestrian"
+      ],
+      "catch_all": false,
+      "people_injured": 2471,
+      "share_of_people_injured": 0.0811,
+      "ksi_people": 274,
+      "share_of_ksi_people": 0.1142
+     },
+     {
+      "group": [
+       "driver",
+       "vehicle right of way"
+      ],
+      "catch_all": false,
+      "people_injured": 2188,
+      "share_of_people_injured": 0.0718,
+      "ksi_people": 99,
+      "share_of_ksi_people": 0.0413
+     },
+     {
+      "group": [
+       "driver",
+       "red light"
+      ],
+      "catch_all": false,
+      "people_injured": 1934,
+      "share_of_people_injured": 0.0634,
+      "ksi_people": 93,
+      "share_of_ksi_people": 0.0387
+     },
+     {
+      "group": [
+       "pedestrian",
+       "pedestrian violation"
+      ],
+      "catch_all": false,
+      "people_injured": 1562,
+      "share_of_people_injured": 0.0512,
+      "ksi_people": 321,
+      "share_of_ksi_people": 0.1338
+     },
+     {
+      "group": [
+       "passenger",
+       "unsafe speed"
+      ],
+      "catch_all": false,
+      "people_injured": 1328,
+      "share_of_people_injured": 0.0436,
+      "ksi_people": 45,
+      "share_of_ksi_people": 0.0187
+     },
+     {
+      "group": [
+       "bicyclist",
+       "unsafe turn or lane use"
+      ],
+      "catch_all": false,
+      "people_injured": 1098,
+      "share_of_people_injured": 0.036,
+      "ksi_people": 87,
+      "share_of_ksi_people": 0.0362
+     },
+     {
+      "group": [
+       "passenger",
+       "red light"
+      ],
+      "catch_all": false,
+      "people_injured": 985,
+      "share_of_people_injured": 0.0323,
+      "ksi_people": 39,
+      "share_of_ksi_people": 0.0163
+     },
+     {
+      "group": [
+       "passenger",
+       "unsafe turn or lane use"
+      ],
+      "catch_all": false,
+      "people_injured": 970,
+      "share_of_people_injured": 0.0318,
+      "ksi_people": 25,
+      "share_of_ksi_people": 0.0104
+     },
+     {
+      "group": [
+       "driver",
+       "following too closely"
+      ],
+      "catch_all": false,
+      "people_injured": 965,
+      "share_of_people_injured": 0.0317,
+      "ksi_people": 17,
+      "share_of_ksi_people": 0.0071
+     },
+     {
+      "group": [
+       "passenger",
+       "vehicle right of way"
+      ],
+      "catch_all": false,
+      "people_injured": 857,
+      "share_of_people_injured": 0.0281,
+      "ksi_people": 17,
+      "share_of_ksi_people": 0.0071
+     }
+    ],
+    "remainder": {
+     "people_injured": 10254,
+     "ksi_people": 1013
+    },
+    "name": "who and what: victim role x violation family",
+    "unit": "person"
+   },
+   {
+    "groups": 146,
+    "share_of_people_injured_in_catch_all_groups": 0.0837,
+    "bars_to_80pct_of_people_injured": 14,
+    "share_in_remainder_at_chart_bars": 0.2175,
+    "share_in_catch_all_bars_at_chart_bars": 0.0411,
+    "share_left_in_catch_all_or_remainder": 0.2587,
+    "top_bars": [
+     {
+      "group": [
+       "vehicles only",
+       "Broadside"
+      ],
+      "catch_all": false,
+      "people_injured": 8333,
+      "share_of_people_injured": 0.2734,
+      "ksi_people": 397,
+      "share_of_ksi_people": 0.1654
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Rear End"
+      ],
+      "catch_all": false,
+      "people_injured": 4583,
+      "share_of_people_injured": 0.1504,
+      "ksi_people": 107,
+      "share_of_ksi_people": 0.0446
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Sideswipe"
+      ],
+      "catch_all": false,
+      "people_injured": 3067,
+      "share_of_people_injured": 0.1006,
+      "ksi_people": 124,
+      "share_of_ksi_people": 0.0517
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Head-On"
+      ],
+      "catch_all": false,
+      "people_injured": 1725,
+      "share_of_people_injured": 0.0566,
+      "ksi_people": 136,
+      "share_of_ksi_people": 0.0567
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "failure to yield to pedestrian",
+       "left or U-turn"
+      ],
+      "catch_all": false,
+      "people_injured": 1294,
+      "share_of_people_injured": 0.0425,
+      "ksi_people": 119,
+      "share_of_ksi_people": 0.0496
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "pedestrian violation",
+       "going straight"
+      ],
+      "catch_all": false,
+      "people_injured": 1139,
+      "share_of_people_injured": 0.0374,
+      "ksi_people": 254,
+      "share_of_ksi_people": 0.1058
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Hit Object"
+      ],
+      "catch_all": false,
+      "people_injured": 914,
+      "share_of_people_injured": 0.03,
+      "ksi_people": 130,
+      "share_of_ksi_people": 0.0542
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Other"
+      ],
+      "catch_all": true,
+      "people_injured": 718,
+      "share_of_people_injured": 0.0236,
+      "ksi_people": 77,
+      "share_of_ksi_people": 0.0321
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "failure to yield to pedestrian",
+       "going straight"
+      ],
+      "catch_all": false,
+      "people_injured": 639,
+      "share_of_people_injured": 0.021,
+      "ksi_people": 106,
+      "share_of_ksi_people": 0.0442
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Not Stated"
+      ],
+      "catch_all": true,
+      "people_injured": 536,
+      "share_of_people_injured": 0.0176,
+      "ksi_people": 25,
+      "share_of_ksi_people": 0.0104
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "unsafe speed",
+       "going straight"
+      ],
+      "catch_all": false,
+      "people_injured": 465,
+      "share_of_people_injured": 0.0153,
+      "ksi_people": 73,
+      "share_of_ksi_people": 0.0304
+     },
+     {
+      "group": [
+       "vehicles only",
+       "Overturned"
+      ],
+      "catch_all": false,
+      "people_injured": 438,
+      "share_of_people_injured": 0.0144,
+      "ksi_people": 43,
+      "share_of_ksi_people": 0.0179
+     }
+    ],
+    "remainder": {
+     "people_injured": 6631,
+     "ksi_people": 809
+    },
+    "name": "hybrid with movement: vehicles by crash type, pedestrian and bike by violation family x turn",
+    "unit": "crash"
+   },
+   {
+    "groups": 125,
+    "share_of_people_injured_in_catch_all_groups": 0.0885,
+    "bars_to_80pct_of_people_injured": 20,
+    "share_in_remainder_at_chart_bars": 0.3186,
+    "share_in_catch_all_bars_at_chart_bars": 0.0276,
+    "share_left_in_catch_all_or_remainder": 0.3462,
+    "top_bars": [
+     {
+      "group": [
+       "vehicles only",
+       "unsafe speed",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 3670,
+      "share_of_people_injured": 0.1204,
+      "ksi_people": 225,
+      "share_of_ksi_people": 0.0938
+     },
+     {
+      "group": [
+       "vehicles only",
+       "unsafe turn or lane use",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 3342,
+      "share_of_people_injured": 0.1096,
+      "ksi_people": 175,
+      "share_of_ksi_people": 0.0729
+     },
+     {
+      "group": [
+       "vehicles only",
+       "red light",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 2741,
+      "share_of_people_injured": 0.0899,
+      "ksi_people": 140,
+      "share_of_ksi_people": 0.0583
+     },
+     {
+      "group": [
+       "vehicles only",
+       "vehicle right of way",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 2398,
+      "share_of_people_injured": 0.0787,
+      "ksi_people": 110,
+      "share_of_ksi_people": 0.0458
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "failure to yield to pedestrian",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 1920,
+      "share_of_people_injured": 0.063,
+      "ksi_people": 216,
+      "share_of_ksi_people": 0.09
+     },
+     {
+      "group": [
+       "pedestrian involved",
+       "pedestrian violation",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 1358,
+      "share_of_people_injured": 0.0446,
+      "ksi_people": 279,
+      "share_of_ksi_people": 0.1163
+     },
+     {
+      "group": [
+       "vehicles only",
+       "following too closely",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 1280,
+      "share_of_people_injured": 0.042,
+      "ksi_people": 19,
+      "share_of_ksi_people": 0.0079
+     },
+     {
+      "group": [
+       "bicycle involved",
+       "unsafe turn or lane use",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 924,
+      "share_of_people_injured": 0.0303,
+      "ksi_people": 71,
+      "share_of_ksi_people": 0.0296
+     },
+     {
+      "group": [
+       "vehicles only",
+       "not stated",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": true,
+      "people_injured": 842,
+      "share_of_people_injured": 0.0276,
+      "ksi_people": 61,
+      "share_of_ksi_people": 0.0254
+     },
+     {
+      "group": [
+       "vehicles only",
+       "unsafe speed",
+       "low (LTS 1-2)"
+      ],
+      "catch_all": false,
+      "people_injured": 836,
+      "share_of_people_injured": 0.0274,
+      "ksi_people": 55,
+      "share_of_ksi_people": 0.0229
+     },
+     {
+      "group": [
+       "vehicles only",
+       "stop sign or other sign",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 789,
+      "share_of_people_injured": 0.0259,
+      "ksi_people": 33,
+      "share_of_ksi_people": 0.0138
+     },
+     {
+      "group": [
+       "vehicles only",
+       "vehicle right of way",
+       "low (LTS 1-2)"
+      ],
+      "catch_all": false,
+      "people_injured": 670,
+      "share_of_people_injured": 0.022,
+      "ksi_people": 10,
+      "share_of_ksi_people": 0.0042
+     }
+    ],
+    "remainder": {
+     "people_injured": 9712,
+     "ksi_people": 1006
+    },
+    "name": "what and where: mode x violation family x traffic stress",
+    "unit": "crash"
+   }
+  ]
+ },
  "profiles": [
   {
    "injury_crashes": 594,

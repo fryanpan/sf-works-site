@@ -9,6 +9,7 @@ The source of [sf-works.org](https://sf-works.org): pages that use San Francisco
 | `site/` | The website. Astro, with charts drawn by Observable Plot at build time, plus its checks and tests. |
 | `pipeline/` | The refresh runner that fetches each source and rebuilds what changed, its quality checks, audit and freshness check, and `pipeline/sources/` for the city base data every tool shares. |
 | `tools/` | One folder per tool on the site (street safety, school trips, bike network, Muni, travel, projects, meetings, toolkit, grand juries): the scripts that write its data. |
+| `analysis/` | Analyses that read the pipeline's outputs and write a results file, one folder each, e.g. [`analysis/crash-profiles/`](analysis/crash-profiles/README.md). |
 | `lib/` | Python modules two or more folders import, and `paths.py`, which finds the repo root and any script by file name. |
 | `data/`, `out/` | Fetched source data and generated outputs, one folder per source or tool. Most come from DataSF, SFMTA and other public sources; each script's docstring names its source. Files of 1 MB or more are in Git LFS. |
 | `research/` | The research notes and source descriptions that published pages cite, one folder per thread. |

@@ -1,6 +1,6 @@
 # crash-profiles
 
-A first-cut crash profile analysis for San Francisco in the style of LADOT's [Los Angeles Vision Zero Safety Study](https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf) (2024). It asks which kinds of crash hurt people badly more often than injury crashes in general, and which street contexts carry more of the people killed or seriously hurt (KSI) than their share of the network.
+A first-cut crash profile analysis for San Francisco in the style of LADOT's [Los Angeles Vision Zero Safety Study](https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf) (2024). It asks which groups of crash hurt the most people, which kinds hurt people badly more often than injury crashes in general, how many people are hurt on high-stress streets, and which street contexts carry more of the people killed or seriously hurt (KSI) than their share of the network.
 
     python3 pipeline/crash-augment/crash-augment.py --update     # build or refresh the augmented tables first
     python3 analysis/crash-profiles/crash-profiles.py            # 2017-2024
@@ -25,6 +25,8 @@ The script's docstring holds every rule. In short:
 | Level 2 | Each profile split by other party movement, pedestrian action, collision type, who was involved, street class, corner type, posted limit, EPC, light and vehicle weight, with a chi-square test, Bonferroni-corrected over every split. |
 | Year windows | Each profile's rate against its mode's again for 2017-2019 and 2020-2024 alone, and each mode's crashes by year and severity. Reported minor pedestrian crashes fell about a third from 2020 and did not come back, while KSI crashes held, so pooled severity rates rise after 2020. |
 | Context | Each street field's share of KSI people against its share of injury crashes, and for street class, corner type and signals against the network (street miles over every active block and over surface streets alone; signals only at nodes the corner count holds). |
+| Size | Every group's people hurt (any injury) and people killed or seriously hurt, whatever its rate: movement x violation x time, the same within each mode, mode x movement x violation, and mode x violation, biggest first, with people by victim role. No size floor and no test. |
+| Traffic stress | Each crash's blocks looked up in SFMTA's 2023 draft Bike Comfort Index layer ([`data/extract/sfmta-bci/scores.json`](../../data/extract/sfmta-bci/scores.json)): bike level of traffic stress (1 to 4, the most stressful direction), the all ages and abilities line (score over 80) and the traffic category, each against its share of surface street miles. Today's layer, so it pools every year. |
 | Weight | Pedestrians hurt by a single moving motor vehicle (parked cars left out), by its curb weight band, with a Mantel-Haenszel odds ratio of over 5,000 lb against under 3,500 lb stratified by street class and light, for every weighted vehicle and for model-matched ones, per pedestrian and per crash. |
 
 ## Limits

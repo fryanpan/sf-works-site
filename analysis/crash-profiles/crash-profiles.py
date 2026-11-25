@@ -51,6 +51,29 @@ VEHICLE WEIGHT. Pedestrians hurt in crashes with exactly one moving motor vehicl
   the per-crash one is the honest interval, since pedestrians in one crash are not independent. It adjusts for
   nothing else, and buses, heavy trucks and motorcycles have no weight, so it compares light vehicles only.
 
+SIZE. Every group's count of people hurt, whatever its rate, because a group that is not more severe than usual can
+  still hold the most people. A person hurt is a victims row with any injury (not No Injury); every tally carries
+  people_injured beside ksi_people. size.cells is every movement x violation x time cell (no size floor, nothing
+  tested), size.cells_within_mode the same within pedestrian, bicycle and vehicle-only crashes, and
+  size.pairs_within_mode mode x movement x violation pooled over time (cells_within_mode lists only cells with
+  SIZE_FLOOR_WITHIN_MODE people hurt or more, pooling the rest into one "rest" row so the list still sums to every person in a stated mode), and size.violation_within_mode mode x
+  violation alone. Each list is sorted by people hurt, then KSI people, then the key, and each cell gives its people
+  by victim_role. size.cells_to_half says how many of the biggest cells it takes to hold half of everyone hurt and
+  half of the KSI people.
+
+TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block rule) are looked up in SFMTA's 2023
+  draft Bike Comfort Index layer as the repo holds it (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level
+  of traffic stress (lts_ft, lts_tf, 1 low to 4 high; the most stressful direction and block), the layer's combined
+  bci field (as the layer gives it, which on about 2,000 blocks is the higher direction; a crash is under the Biking
+  and Rolling Plan's all ages and abilities line, BCI_AAA, when any of its blocks is) and the traffic category (the
+  heaviest). People hurt and KSI people by each, for all crashes and by mode, against each
+  value's share of active surface street miles (3psu-pn9h blocks by CNN; freeways, ramps and class 0 left out).
+  High stress is LTS 3 or 4. The traffic category read here is checked against the crash table's own
+  bci_traffic_category column, which came from the same layer. The layer is today's, so this pools 2017-2024. Miles
+  are the only denominator: there is no residents' or traffic-volume one, and most people are hurt at intersections,
+  so high_stress_by_block_join gives the share among crashes coded to one block, and high_stress_by_street_class the
+  share within each street class, since LTS 4 is nearly every arterial and major block.
+
 Every figure is a correlation in police-reported injury crashes. Nothing here says a field causes severity.
 """
 
@@ -66,7 +89,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 TABLES = os.path.join(ROOT, "out", "crash-augment", "tables")
 OUT = os.path.join(ROOT, "out", "crash-augment", "profiles", "results.json")
 sys.path.insert(0, os.path.join(ROOT, "pipeline", "crash-augment", "street"))
-from street_fields import ROAD_CLASS, CLASS_RANK, SIGNAL_TYPES, street_key  # noqa: E402
+from street_fields import ROAD_CLASS, CLASS_RANK, SIGNAL_TYPES, TRAFFIC, TRAFFIC_RANK, street_key  # noqa: E402
 from street_geo import line_coords  # noqa: E402
 import street_sources  # noqa: E402
 
@@ -75,6 +98,11 @@ MIN_INJURY_CRASHES = 100
 ALPHA = 0.05
 KSI_CRASH = {"Fatal", "Injury (Severe)"}
 KSI_PERSON = {"Fatal Injury", "Severe Injury"}
+NOT_HURT = {"No Injury", ""}
+BCI_SCORES = os.path.join(ROOT, "data", "extract", "sfmta-bci", "scores.json")
+BCI_AAA = 80  # Biking and Rolling Plan: all ages and abilities network is "BCI > 80" (tools/street-safety/street-safety-map.py)
+HIGH_STRESS = {"3", "4"}
+SIZE_FLOOR_WITHIN_MODE = 20  # size.cells_within_mode lists cells with this many people hurt; the rest is one row
 
 MOVEMENT = {
     "Proceeding Straight": "going straight",
@@ -299,6 +327,17 @@ def move_group(v):
 NOT_SURFACE = ("freeway", "ramp", "other")
 
 
+def block_miles(r):
+    """One 3psu-pn9h block's length in miles, from its line."""
+    length = 0.0
+    for line in line_coords(r.get("line")):
+        for (x1, y1), (x2, y2) in zip(line, line[1:]):
+            dx = (x2 - x1) * math.cos(math.radians((y1 + y2) / 2)) * 69.172
+            dy = (y2 - y1) * 69.0
+            length += math.hypot(dx, dy)
+    return length
+
+
 def network(rows):
     """(miles by street class, intersections by corner type, the corner nodes) from 3psu-pn9h's active blocks."""
     miles = collections.Counter()
@@ -307,13 +346,7 @@ def network(rows):
         if r.get("active") not in (True, "True", "true"):
             continue
         cls = ROAD_CLASS.get(r.get("classcode")) or "other"
-        length = 0.0
-        for line in line_coords(r.get("line")):
-            for (x1, y1), (x2, y2) in zip(line, line[1:]):
-                dx = (x2 - x1) * math.cos(math.radians((y1 + y2) / 2)) * 69.172
-                dy = (y2 - y1) * 69.0
-                length += math.hypot(dx, dy)
-        miles[cls] += length
+        miles[cls] += block_miles(r)
         for n in (r.get("f_node_cnn"), r.get("t_node_cnn")):
             n = str(n or "").split(".")[0]
             if n:
@@ -330,6 +363,41 @@ def network(rows):
     return miles, corners, corner_nodes
 
 
+def bci_blocks():
+    """{cnn: (lts, bci band, traffic)} from the held BCI layer, and the layer's fetch date. lts is the higher of the
+    two directions as a string 1 to 4, the band says which side of BCI_AAA the combined score falls on."""
+    with open(BCI_SCORES) as f:
+        d = json.load(f)
+    out = {}
+    for r in d["records"]:
+        c = str(r.get("cnn") or "").split(".")[0]
+        if not c:
+            continue
+        lts = [x for x in (r.get("lts_ft"), r.get("lts_tf")) if x]
+        traffic = [TRAFFIC[x] for x in (r.get("traffic_ft"), r.get("traffic_tf")) if x in TRAFFIC]
+        out[c] = (str(max(lts)) if lts else None, bci_band(r.get("bci")),
+                  max(traffic, key=TRAFFIC_RANK.get) if traffic else None)
+    return out, d["fetched_on"]
+
+
+def bci_band(v):
+    if v is None:
+        return None
+    return "over %d (all ages and abilities)" % BCI_AAA if v > BCI_AAA else "%d or under" % BCI_AAA
+
+
+def crash_stress(blocks, bci):
+    """A crash's (lts, bci band, traffic) over its blocks: the most stressful LTS, the least comfortable score, the
+    heaviest traffic; "unknown" where no block has a value."""
+    vals = [bci[b] for b in blocks if b in bci]
+    lts = [v[0] for v in vals if v[0]]
+    bands = [v[1] for v in vals if v[1]]
+    traffic = [v[2] for v in vals if v[2]]
+    return (max(lts) if lts else "unknown",
+            ("%d or under" % BCI_AAA if "%d or under" % BCI_AAA in bands else bands[0]) if bands else "unknown",
+            max(traffic, key=TRAFFIC_RANK.get) if traffic else "unknown")
+
+
 # ---- analysis ------------------------------------------------------------------------------------------------
 
 def main():
@@ -341,12 +409,22 @@ def main():
     crashes, parties, victims = load(y0, y1)
 
     ksi_people = collections.Counter()
+    hurt_people = collections.Counter()
+    hurt_roles = collections.defaultdict(collections.Counter)
+    ksi_roles = collections.defaultdict(collections.Counter)
     ped_victims = collections.defaultdict(list)
     for v in victims:
+        role = v["victim_role"] or "not stated"
         if v["victim_degree_of_injury"] in KSI_PERSON:
             ksi_people[v["case_id_pkey"]] += 1
+            ksi_roles[v["case_id_pkey"]][role] += 1
+        if v["victim_degree_of_injury"] not in NOT_HURT:
+            hurt_people[v["case_id_pkey"]] += 1
+            hurt_roles[v["case_id_pkey"]][role] += 1
         if v["victim_role"] == "Pedestrian":
             ped_victims[v["case_id_pkey"]].append(v)
+
+    bci, bci_read_on = bci_blocks()
 
     # one record per crash with every field the analysis groups by
     recs, how = [], collections.Counter()
@@ -360,11 +438,19 @@ def main():
             how["pedestrian_at_fault_used_vehicle_movement"] += 1
         other = first_driver(ps, exclude=mover) if mover is not None else None
         heavy = c["heaviest_vehicle_weight_lb"]
+        lts, bci_score, traffic = crash_stress([b for b in c["street_block_cnns"].split(";") if b], bci)
         recs.append({
             "case": cid,
             "year": int(c["collision_datetime"][:4]),
             "ksi": c["collision_severity"] in KSI_CRASH,
             "people": ksi_people[cid],
+            "injured": hurt_people[cid],
+            "injured_roles": hurt_roles[cid],
+            "ksi_roles": ksi_roles[cid],
+            "block join": c["street_block_join"] or "none",
+            "bike traffic stress (LTS)": lts,
+            "bike comfort (BCI)": bci_score,
+            "traffic category (BCI layer)": traffic,
             "movement": move_group(mover["move_pre_acc"]) if mover else OTHER_MOVE,
             "movement substituted": af is not None and af["party_type"] == "Pedestrian",
             "violation": violation_group(c["vz_pcf_group"]),
@@ -394,16 +480,26 @@ def main():
     N = len(recs)
     K = sum(r["ksi"] for r in recs)
     P = sum(r["people"] for r in recs)
+    H = sum(r["injured"] for r in recs)
     p0 = K / N
 
     def tally(rs):
         n = len(rs)
         k = sum(r["ksi"] for r in rs)
         ppl = sum(r["people"] for r in rs)
-        return {"injury_crashes": n, "ksi_crashes": k, "ksi_people": ppl,
+        hurt = sum(r["injured"] for r in rs)
+        return {"injury_crashes": n, "ksi_crashes": k, "ksi_people": ppl, "people_injured": hurt,
                 "ksi_rate": round(k / n, 4) if n else None,
                 "share_of_injury_crashes": round(n / N, 4), "share_of_ksi_people": round(ppl / P, 4),
+                "share_of_people_injured": round(hurt / H, 4),
                 "over_representation": round((ppl / P) / (n / N), 2) if n else None}
+
+    def roles(rs):
+        hurt, ksi = collections.Counter(), collections.Counter()
+        for r in rs:
+            hurt.update(r["injured_roles"])
+            ksi.update(r["ksi_roles"])
+        return {"people_injured": dict(sorted(hurt.items())), "ksi_people": dict(sorted(ksi.items()))}
 
     # Level 1
     cells = collections.defaultdict(list)
@@ -696,6 +792,114 @@ def main():
             rs = by_mode[t["mode"]][(t["movement"], t["violation"], t["time"])]
             pedestrian_facts["%s / %s / %s" % (t["movement"], t["violation"], t["time"])] = ped_profile_facts(rs)
 
+    # Size: every group's people hurt and KSI people, whatever its rate. No size floor and no test.
+    SIZE_KEYS = ("people_injured", "share_of_people_injured", "ksi_people", "share_of_ksi_people", "injury_crashes",
+                 "ksi_crashes")
+
+    def size_list(groups, names, with_roles=True, floor=0):
+        """Groups biggest first. A group under `floor` people hurt is pooled into one "rest" row at the end, so the
+        list still adds up to every person while the file stays small."""
+        out, rest = [], []
+        for key, rs in groups.items():
+            t = dict(zip(names, key))
+            tl = tally(rs)
+            t.update({k: tl[k] for k in SIZE_KEYS})
+            if with_roles:
+                t["by_victim_role"] = roles(rs)
+            (out if t["people_injured"] >= floor else rest).append((t, rs))
+        out.sort(key=lambda tr: (-tr[0]["people_injured"], -tr[0]["ksi_people"], tuple(tr[0][n] for n in names)))
+        out = [t for t, _ in out]
+        if rest:
+            tl = tally([r for _, rs in rest for r in rs])
+            out.append(dict({n: "rest" for n in names}, groups=len(rest), **{k: tl[k] for k in SIZE_KEYS}))
+        return out
+
+    def to_half(lst, field, total):
+        run, i = 0, 0
+        for i, t in enumerate(sorted(lst, key=lambda t: -t[field]), 1):
+            run += t[field]
+            if run * 2 >= total:
+                break
+        return {"cells": i, "of_cells": len(lst)}
+
+    g_mode, g_pair, g_viol = (collections.defaultdict(list) for _ in range(3))
+    for r in recs:
+        if r["mode"] != "not stated":
+            g_mode[(r["mode"], r["movement"], r["violation"], r["time"])].append(r)
+            g_pair[(r["mode"], r["movement"], r["violation"])].append(r)
+            g_viol[(r["mode"], r["violation"])].append(r)
+    size_cells = size_list(cells, ("movement", "violation", "time"))
+    size = {
+        "about": "people hurt (any injury) and KSI people by group, sorted by people hurt; no size floor, no test",
+        "cells": size_cells,
+        "cells_within_mode": size_list(g_mode, ("mode", "movement", "violation", "time"), with_roles=False,
+                                       floor=SIZE_FLOOR_WITHIN_MODE),
+        "pairs_within_mode": size_list(g_pair, ("mode", "movement", "violation")),
+        "violation_within_mode": size_list(g_viol, ("mode", "violation")),
+        "cells_to_half": {"people_injured": to_half(size_cells, "people_injured", H),
+                          "ksi_people": to_half(size_cells, "ksi_people", P)},
+        "by_mode": {md: dict(tally(rs), by_victim_role=roles(rs))
+                    for md, rs in sorted(((md, [r for r in recs if r["mode"] == md]) for md in by_mode))},
+    }
+
+    # Traffic stress: people hurt by the bike level of traffic stress, the BCI all-ages line and the traffic category
+    # of the crash's block, against each value's share of active surface street miles.
+    stress_miles = {f: collections.Counter() for f in ("bike traffic stress (LTS)", "bike comfort (BCI)",
+                                                       "traffic category (BCI layer)")}
+    for r in streets_src.rows:
+        if r.get("active") not in (True, "True", "true") or (ROAD_CLASS.get(r.get("classcode")) or "other") in NOT_SURFACE:
+            continue
+        v = bci.get(str(r.get("cnn") or "").split(".")[0], (None, None, None))
+        length = block_miles(r)
+        for f, val in zip(stress_miles, v):
+            stress_miles[f][val or "unknown"] += length
+    stress = {"source": BCI_SCORES.replace(ROOT + os.sep, ""), "fetched_on": bci_read_on, "bci_aaa": BCI_AAA,
+              "high_stress": "LTS 3 or 4", "fields": []}
+    for f, mi in stress_miles.items():
+        total_mi = sum(mi.values())
+        vals = []
+        for val in sorted({r[f] for r in recs} | set(mi)):
+            rs = [r for r in recs if r[f] == val]
+            t = dict(tally(rs), value=val, surface_street_miles=round(mi.get(val, 0.0), 1),
+                     share_of_surface_street_miles=round(mi.get(val, 0.0) / total_mi, 4))
+            t["by_mode"] = {md: {"people_injured": sum(r["injured"] for r in rs if r["mode"] == md),
+                                 "ksi_people": sum(r["people"] for r in rs if r["mode"] == md)}
+                            for md in sorted(by_mode)}
+            vals.append(t)
+        stress["fields"].append({"field": f, "values": vals})
+    hi = [r for r in recs if r["bike traffic stress (LTS)"] in HIGH_STRESS]
+    hi_mi = sum(v for k, v in stress_miles["bike traffic stress (LTS)"].items() if k in HIGH_STRESS)
+    stress["high_stress_total"] = dict(tally(hi), surface_street_miles=round(hi_mi, 1),
+                                       share_of_surface_street_miles=round(
+                                           hi_mi / sum(stress_miles["bike traffic stress (LTS)"].values()), 4),
+                                       by_victim_role=roles(hi))
+    # A crash at an intersection takes its most stressful block, which leans toward high stress; crashes on their
+    # own block (street_block_join segment) carry no such lean, so their share is the check on it.
+    stress["high_stress_by_block_join"] = {
+        j: {"people_injured": sum(r["injured"] for r in recs if r["block join"] == j),
+            "people_injured_high_stress": sum(r["injured"] for r in hi if r["block join"] == j),
+            "people_injured_stress_known": sum(r["injured"] for r in recs if r["block join"] == j
+                                               and r["bike traffic stress (LTS)"] != "unknown")}
+        for j in sorted({r["block join"] for r in recs})}
+    hi_by_class = collections.defaultdict(lambda: [0.0, 0.0])  # street class -> [high-stress miles, all miles]
+    for r in streets_src.rows:
+        cls = ROAD_CLASS.get(r.get("classcode")) or "other"
+        if r.get("active") not in (True, "True", "true") or cls in NOT_SURFACE:
+            continue
+        length = block_miles(r)
+        hi_by_class[cls][1] += length
+        if (bci.get(str(r.get("cnn") or "").split(".")[0]) or (None,))[0] in HIGH_STRESS:
+            hi_by_class[cls][0] += length
+    stress["high_stress_by_street_class"] = {
+        cls: {"surface_street_miles": round(m_all, 1), "high_stress_miles": round(m_hi, 1),
+              "people_injured": sum(r["injured"] for r in recs if r["street class"] == cls),
+              "people_injured_high_stress": sum(r["injured"] for r in hi if r["street class"] == cls)}
+        for cls, (m_hi, m_all) in sorted(hi_by_class.items())}
+    agree = collections.Counter((r["traffic category (BCI layer)"], r["traffic category (BCI)"]) for r in recs)
+    stress["check_traffic_category_matches_crash_column"] = {
+        "same": sum(n for (a, b), n in agree.items() if a == b),
+        "differ": sorted([[a, b, n] for (a, b), n in agree.items() if a != b])}
+
     # Data quality facts the doc reports
     ped_parties = [p for ps in parties.values() for p in ps.values()]
     drivers = [p for p in ped_parties if p["party_type"] == "Driver"]
@@ -715,12 +919,15 @@ def main():
                  "from out/crash-augment/tables (DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh).",
         "years": [y0, y1],
         "inputs_read_on": json.load(open(os.path.join(TABLES, "summary.json")))["tables"]["crashes"]["input"]["read_on"],
-        "totals": {"injury_crashes": N, "ksi_crashes": K, "ksi_people": P, "citywide_ksi_rate": round(p0, 4)},
+        "totals": {"injury_crashes": N, "ksi_crashes": K, "ksi_people": P, "people_injured": H,
+                   "citywide_ksi_rate": round(p0, 4)},
         "rules": {"min_injury_crashes": MIN_INJURY_CRASHES, "alpha": ALPHA, "cells_possible": len(cells),
                   "cells_tested": m, "within_mode_cells_possible": mode_cells_possible,
                   "level2_tests": tests,
                   "test": "one-sided exact binomial on KSI crashes vs citywide (or the mode's) KSI crash rate, "
                           "Bonferroni over cells tested; a cell is tested when it holds MIN_INJURY_CRASHES injury crashes"},
+        "size": size,
+        "traffic_stress": stress,
         "profiles": profiles,
         "level1_tested": level1,
         "level1_margins": margins,

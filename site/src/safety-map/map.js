@@ -1582,7 +1582,9 @@
       return people.slice(from).map(function (p, j) {
         if (p.np) return null;   // no point to draw; the feature ids stay each person's index
         var i = from + j, st = Math.min(p.si || 0, 4) * 3;
-        var sp = p.mi ? (LIGHT_ICON[p.u] || "dot") + (p.sv === 2 ? "-v" : "-p") : p.i + (p.k ? "-k" : "-s");
+        // A person drawn without a crash card takes its own severity's colour, as its dot does below the icon zoom:
+        // 740 severe or fatal injuries since 2021 have no card, and drew in the complaint-of-pain colour before.
+        var sp = p.mi ? (LIGHT_ICON[p.u] || "dot") + ["-k", "-s", "-v", "-p"][Math.min(Math.max(p.sv, 0), 3)] : p.i + (p.k ? "-k" : "-s");
         return { type: "Feature", id: i, properties: Object.assign({}, p, { ix: i, o: [st, -st], to: [st / 10, -st / 10 + 1.75], sp: sp, h: p.h == null ? -1 : p.h, wd: p.wd }), geometry: { type: "Point", coordinates: p.c } };
       }).filter(Boolean);
     }
@@ -1703,6 +1705,7 @@
     function build() {
       var DARK = col("--sm-outline");
       ICONS.forEach(function (k) { [["s", col("--sm-severe")], ["k", col("--sm-killed")]].forEach(function (v) { SPR[k + "-" + v[0]] = sprite(k, v[1], DARK); }); });
+      [["s", col("--sm-severe")], ["k", col("--sm-killed")]].forEach(function (v) { SPR["dot-" + v[0]] = dotSprite(v[1], DARK); });
       // The lower levels' icons, in their greys with a softer outline; "dot" for a mode with no icon.
       ICONS.concat(["dot"]).forEach(function (k) { [["v", col("--sm-visible")], ["p", col("--sm-pain")]].forEach(function (v) { SPR[k + "-" + v[0]] = k === "dot" ? dotSprite(v[1], "#6b737d") : sprite(k, v[1], "#6b737d"); }); });
       Object.keys(SPR).forEach(function (k) { map.addImage(k, SPR[k].getContext("2d").getImageData(0, 0, 48, 48), { pixelRatio: 2 }); });

@@ -1,18 +1,17 @@
 import { page } from "../layout.mjs";
 import { content } from "../content.mjs";
-import { recentChanges } from "../md-pages.mjs";
+import { RECENT_MARK } from "../md-pages.mjs";
 
 export const path = "/";
 export const file = "index.html";
 
-// The markdown pages that changed most recently (src/md-pages.mjs), above the
-// list of reports, so a returning reader sees what's new first. The prose in
-// content/home.md is bound to a board doc and is left as it is.
+// The pages and dashboards that changed most recently (src/md-pages.mjs
+// recentChanges), above the topics, so a returning reader sees what's new
+// first. The build fills the mark (scripts/site-files.mjs), because only it
+// knows every dashboard and the commits to its code.
 function withRecent(html) {
-  const recent = recentChanges();
-  if (!recent) return html;
   const at = html.search(/<h2[\s>]/);
-  return at === -1 ? html + recent : html.slice(0, at) + recent + "\n" + html.slice(at);
+  return at === -1 ? html + RECENT_MARK : html.slice(0, at) + RECENT_MARK + "\n" + html.slice(at);
 }
 
 export function render() {

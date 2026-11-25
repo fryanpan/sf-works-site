@@ -27,8 +27,8 @@ import { ORIGIN } from "../src/layout.mjs";
 import { pathShown, archivedTo } from "../src/features.mjs";
 import { redirectPage } from "../src/redirect.mjs";
 import { fillDirectory, fillCrumbs } from "../src/directory.mjs";
-import { mdPageFiles } from "../src/md-pages.mjs";
-import { resolveDate, checkDates, fillDates, sourceFiles } from "../src/page-dates.mjs";
+import { mdPageFiles, mdPages, recentChanges, RECENT_MARK } from "../src/md-pages.mjs";
+import { resolveDate, checkDates, fillDates, sourceFiles, gitDate, readFallback } from "../src/page-dates.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PAGES = path.join(ROOT, "src", "pages");
@@ -104,6 +104,39 @@ function listingsOf(mods) {
   checkDates(listed);
   return listed;
 }
+// A page module's code, from site/, for dating its last change of function: the module and the local
+// modules it imports directly, leaving out any that more than SHARED page modules import (layout, the
+// directory, chart helpers), whose edits would date every page at once. Data files are never code, so a
+// data refresh doesn't date a dashboard.
+const SHARED = 3;
+const importsOf = (name) => {
+  const src = fs.readFileSync(path.join(PAGES, name), "utf8");
+  return [...src.matchAll(/from\s+["'](\.\.?\/[^"']+\.m?js)["']/g)]
+    .map((m) => path.relative(ROOT, path.resolve(PAGES, m[1])))
+    .filter((f) => f.startsWith("src" + path.sep) && fs.existsSync(path.join(ROOT, f)));
+};
+function codeFiles(names) {
+  const imports = new Map(names.map((n) => [n, importsOf(n)]));
+  const uses = new Map();
+  for (const list of imports.values()) for (const f of list) uses.set(f, (uses.get(f) || 0) + 1);
+  return (name) => [`src/pages/${name}`, ...imports.get(name).filter((f) => uses.get(f) <= SHARED)];
+}
+// The listed pages Recent Changes shows beside the markdown pages, each dated by its code's last commit.
+// A draft listing stays off the front page, as it stays off every list outside its own section.
+let recentExtra = null;
+function recentOf(mods) {
+  if (recentExtra) return recentExtra;
+  const names = moduleNames();
+  const filesOf = codeFiles(names);
+  const fallback = readFallback();
+  recentExtra = mods
+    .map((m, i) => [m, names[i]])
+    .filter(([m]) => m.listing && !m.listing.draft && !m.redirect && !m.asset && pathShown(m.path))
+    .map(([m, name]) => ({ path: m.path, title: m.listing.title, summary: m.listing.line || "", updated: gitDate(filesOf(name)) || fallback[m.path] || "" }));
+  return recentExtra;
+}
+const withRecentChanges = (html, mods) => (html.includes(RECENT_MARK) ? html.replace(RECENT_MARK, recentChanges(mdPages(), undefined, recentOf(mods))) : html);
+
 async function allModules() {
   const mods = [];
   for (const name of moduleNames()) mods.push(await loadModule(name));
@@ -114,7 +147,8 @@ const archivedPage = (p) => redirectPage(archivedTo(p), "Mobility");
 
 // A page as published: its list of the pages under it, its breadcrumb and the dates of the pages it lists
 // filled in, then the base path.
-const finish = (html, pagePath, listed) => withBase(fillDates(fillCrumbs(fillDirectory(html, pagePath, listed), listed), listed));
+let currentMods = [];
+const finish = (html, pagePath, listed) => withBase(fillDates(fillCrumbs(fillDirectory(withRecentChanges(html, currentMods), pagePath, listed), listed), listed));
 
 // The dev server's one-page render (scripts/dev-render.mjs): the file under
 // dist/ that `file` names, rendered exactly as the build renders it, or null.
@@ -128,6 +162,7 @@ export async function renderFile(file) {
     return (await siteFiles()).find((f) => f.file === file) ?? null;
   }
   const all = await allModules();
+  currentMods = all;
   const listed = listingsOf(all);
   if (file === "404.html") {
     return { file, body: finish((await loadModule("home.mjs")).render(), "/", listed) };
@@ -159,6 +194,7 @@ async function render() {
   const paths = [];
 
   const all = await allModules();
+  currentMods = all;
   const listed = listingsOf(all);
 
   for (const mod of all) {

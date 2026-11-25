@@ -98,7 +98,7 @@ html:has(.ss) { overflow-x: clip; }
 /* On a phone the trail drops its section step, as the site does for a four-step trail, so About the data beside Share
    leaves the breadcrumb on one line and the map its height. */
 @media (max-width: 520px) { body:has(.ss) .crumbs sl-breadcrumb-item:nth-child(2):nth-last-child(n+2) { display: none; } }
-.ss { position: relative; width: 100vw; margin-left: calc(50% - 50vw); height: calc(100dvh - 76px); min-height: 420px; border-top: 1px solid var(--rule); }
+.ss { position: relative; width: 100vw; margin-left: calc(50% - 50vw); height: calc(100dvh - var(--ss-top, 76px)); min-height: 420px; border-top: 1px solid var(--rule); }
 .ss { --ss-panel-w: 300px; }
 .ss-panel { background: #fff; left: 10px; top: 10px; width: var(--ss-panel-w); max-height: calc(100% - 20px); display: flex; flex-direction: column; z-index: 5; font-size: var(--wa-font-size-s); }
 .ss-panel .ss-top { flex: none; display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; padding: var(--wa-space-xs) var(--wa-space-s) var(--wa-space-xs) var(--wa-space-m); }
@@ -123,7 +123,11 @@ html:has(.ss) { overflow-x: clip; }
 .ss .ss-maptitle h1 { margin: 0; font-size: 1.05rem; line-height: 1.25; display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--wa-space-xs); }
 .ss .ss-maptitle wa-badge { font-size: var(--wa-font-size-2xs); font-family: var(--wa-font-family-body); }
 .ss .ss-maptitle .data-updated { margin: 2px 0 0; font-size: var(--wa-font-size-xs); color: var(--sm-muted); }
-.ss .ss-maptitle .ss-only { margin: 2px 0 0; font-size: var(--wa-font-size-s); line-height: 1.3; color: var(--sm-ink); }
+.ss .ss-maptitle .ss-count { margin: 3px 0 0; font-size: 0.92rem; font-weight: 500; line-height: 1.3; color: var(--sm-ink); }
+.ss .ss-maptitle .ss-count:empty { display: none; }
+.ss .ss-maptitle .ss-count b { font: inherit; font-weight: 700; }
+.ss .ss-maptitle .ss-count .sm-na { font-weight: 400; }
+.ss .ss-maptitle .ss-only { margin: 2px 0 0; font-size: var(--wa-font-size-xs); line-height: 1.3; color: var(--sm-ink); }
 .ss-panel .ss-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: var(--wa-space-xs) var(--wa-space-m) var(--wa-space-m); }
 .ss-panel.collapsed .ss-body { display: none; }
 .ss-panel.collapsed { width: auto; max-width: var(--ss-panel-w); }
@@ -242,7 +246,8 @@ html:has(.ss) { overflow-x: clip; }
   .ss .ss-maptitle h1 { font-size: 0.9rem; }
   .ss .ss-maptitle wa-badge { display: none; }
   .ss .ss-maptitle .data-updated { margin: 0; font-size: 0.68rem; }
-  .ss .ss-maptitle .ss-only { margin: 0; font-size: 0.75rem; }
+  .ss .ss-maptitle .ss-count { margin: 1px 0 0; font-size: 0.8rem; }
+  .ss .ss-maptitle .ss-only { margin: 0; font-size: 0.7rem; }
   .ss .ss-layer { left: 6px; width: auto; padding: 2px 8px; }
   .ss .ss-layer wa-select { width: 200px; }
   /* The key and the chart in smaller type, so the overlays a phone opens with leave three quarters of the map clear. */
@@ -376,7 +381,7 @@ const scriptPage = (preset) => `<script>
     dataUrl: ${JSON.stringify(DATA_URL)}, crashesUrl: ${JSON.stringify(CRASHES_URL)}, hash: true,
     cardHost: $("[data-card]"), sheetHost: $("[data-sheet]"), onChange: sync, fitPadding: fitPadding,
     keyBox: function () { var e = root.querySelector(".sm-legend"); return e && !e.hidden && e.offsetWidth ? e.getBoundingClientRect() : null; } });
-  var overlay = SafetyOverlay.attach(ctl, { key: $(".sm-legend [data-key]"), headline: $("[data-headline]"), headlineHome: $("[data-headline-home]"), chart: $("[data-chart]"), picker: true,
+  var overlay = SafetyOverlay.attach(ctl, { key: $(".sm-legend [data-key]"), headline: $("[data-headline]"), chart: $("[data-chart]"), picker: true, chartLabel: "Summary Chart",
     noWhere: function (s) { return !!s.filter.area; } });
   var arr = SafetyArrangements.attach($("[data-arr]"));
   var syncing = false, u = function (v) { return String(v).replace(/ /g, "_"); }, un = function (v) { return String(v).replace(/_/g, " "); };
@@ -514,9 +519,22 @@ const scriptPage = (preset) => `<script>
     return out.length ? "Only showing " + out.join(", ") : "";
   }
   // The subtitle sits between the title and the page's "Data updated" line, which the layout puts right under the h1.
+  // The map fills the window below whatever sits above it (Bryan, 2026-11-24: "have it take up only as much space as
+  // the whole page"): the masthead and the trail, plus the staging band or a banner where one shows, so a fixed
+  // allowance can't be right everywhere. Measured from the page's top, not the scrolled view.
+  (function () {
+    var ss = root.querySelector("[data-ss]") || document.querySelector("[data-ss]");
+    if (!ss) return;
+    function fit() { var top = ss.getBoundingClientRect().top + window.scrollY; document.documentElement.style.setProperty("--ss-top", Math.max(0, Math.round(top)) + "px"); }
+    fit(); window.addEventListener("resize", fit); window.addEventListener("load", fit);
+  })();
   var only = document.createElement("p");
   only.className = "ss-only"; only.setAttribute("data-only", ""); only.setAttribute("aria-live", "polite"); only.hidden = true;
-  (function () { var box = root.querySelector("[data-maptitle]"), h1 = box.querySelector("h1"); box.insertBefore(only, h1.nextSibling); })();
+  // The count of people on the map comes right under the title (Bryan, 2026-11-24: "Between Map of … and Data
+  // updated and in a font that's in between in emphasis, say how many people injured and killed on the map right now"),
+  // then the filters subtitle.
+  (function () { var box = root.querySelector("[data-maptitle]"), h1 = box.querySelector("h1"), count = box.querySelector("[data-headline]");
+    box.insertBefore(count, h1.nextSibling); box.insertBefore(only, count.nextSibling); })();
   function retitle(s) {
     var t = mapTitle(s), sum = summary(s);
     $("[data-title]").textContent = t;
@@ -803,7 +821,7 @@ ${CSS}
 ${ARR_CSS}
 <div class="ss sm-stage" data-ss>
   <div class="ss-map"></div>
-  <div class="sm-ov ss-maptitle" data-maptitle><h1><span data-title>Map of Injuries and Deaths in San Francisco (${STATE.INLINE_FROM}–${Y1})</span> <wa-badge variant="neutral" appearance="outlined">Draft</wa-badge></h1></div>
+  <div class="sm-ov ss-maptitle" data-maptitle><h1><span data-title>Map of Injuries and Deaths in San Francisco (${STATE.INLINE_FROM}–${Y1})</span> <wa-badge variant="neutral" appearance="outlined">Draft</wa-badge></h1><p class="ss-count" data-headline aria-live="polite"></p></div>
   <div class="sm-ov ss-layer" data-layer><wa-select class="ss-view" value="injuries" size="small" label="Layer">${VIEWS.map(([v, l]) => opt(v, l)).join("")}</wa-select>
     <div class="ss-layer-opt" data-layer-opt="through" hidden><wa-slider class="ss-near" size="small" label="Through: neither trip end within" min="0" max="${STATE.NEARS.length - 1}" step="1" value="${STATE.NEARS.findIndex((n) => n[0] === STATE.DEFAULTS.near)}" with-markers with-tooltip></wa-slider>
       <div class="ss-near-ticks" aria-hidden="true">${STATE.NEARS.map((n) => `<span>${n[1]}</span>`).join("")}</div></div>
@@ -812,7 +830,7 @@ ${ARR_CSS}
   ${panel}
   <div class="sm-ov sm-hint" data-hint hidden>Click the map to add corners; click the first corner or double-click to finish. Esc cancels.</div>
   <div class="sm-ov sm-legend"><div class="sm-key" data-key></div></div>
-  <div class="sm-ov sm-chart" data-chart hidden><p class="sm-head" data-headline aria-live="polite"></p><div class="sm-chart-slot"></div></div>
+  <div class="sm-ov sm-chart" data-chart hidden><div class="sm-chart-slot"></div></div>
   ${arrangementsHTML()}
   <div class="sm-ov sm-cardslot" data-card></div>
   <div class="sm-sheet" data-sheet hidden></div>

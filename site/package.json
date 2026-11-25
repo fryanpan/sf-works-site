@@ -16,7 +16,7 @@
     "wrangler": "^4.0.0"
   },
   "dependencies": {
-    "@claude-workspaces/components": "file:vendor/claude-workspaces-components-0.3.0.tgz",
+    "@claude-workspaces/components": "file:vendor/claude-workspaces-components-0.5.0.tgz",
     "@observablehq/plot": "0.6.17",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",

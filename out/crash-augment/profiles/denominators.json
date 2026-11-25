@@ -1,0 +1,741 @@
+{
+ "about": "Feasibility of exposure denominators for SF's police-reported injury crashes (traffic, walking and biking counts, modelled volumes, residents), how many crash blocks each covers, and people hurt per 1,000 residents by analysis neighborhood and by Equity Priority Community.",
+ "years": [
+  2017,
+  2024
+ ],
+ "counting": "people hurt: victims rows with any injury; KSI: Fatal or Severe Injury; by crash location",
+ "per_resident_caveat": "Crash location over residents: neighborhoods and EPC tracts that draw workers and visitors (downtown, SoMa, the Tenderloin) read high. Not a resident's risk and not an exposure rate. A crash on a tract boundary goes to the tract its geocoded point is in.",
+ "feasibility": [
+  {
+   "source": "Census 2020 block population (P1)",
+   "url": "https://data.sfgov.org/d/p2fw-hsrv",
+   "held_as": "data/extract/census-blocks/2020.json",
+   "measures": "residents",
+   "years": "2020 (ACS block groups 2015-2024 also held)",
+   "coverage": {
+    "blocks": 5986,
+    "residents": 873965,
+    "share_crashes_with_a_neighborhood": 0.9973
+   },
+   "supports": "per-neighborhood and per-tract rate (residents, not exposure); not a per-block crash rate, since census blocks and street blocks differ",
+   "built": true
+  },
+  {
+   "source": "SFMTA Corridor Counts (tube counts)",
+   "url": "https://www.sfmta.com/media/40635/download",
+   "read_on": "2026-11-25",
+   "measures": "vehicles, 24-hour and peak, one direction, one day",
+   "years": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "coverage": {
+    "crashes": 24261,
+    "crashes_covered": 3601,
+    "share_crashes": 0.1484,
+    "people_hurt": 30482,
+    "people_hurt_covered": 4491,
+    "ksi_people": 2400,
+    "ksi_people_covered": 352,
+    "counted_blocks": 1291,
+    "counted_blocks_in_window": 797,
+    "rows": 8099,
+    "rows_without_cnn": 2592,
+    "in_window": {
+     "crashes": 24261,
+     "crashes_covered": 1675,
+     "share_crashes": 0.069,
+     "people_hurt": 30482,
+     "people_hurt_covered": 2090,
+     "ksi_people": 2400,
+     "ksi_people_covered": 147
+    }
+   },
+   "supports": "per-block vehicle rate on counted blocks only; counts are one or two days, so a street-class rate needs the class mix of counted blocks",
+   "built": false
+  },
+  {
+   "source": "Residential and main-street peak-hour volumes (hin-cut-through.py)",
+   "url": "tools/street-safety/hin-cut-through.py",
+   "held_as": "data/extract/residential-traffic/blocks.json",
+   "measures": "two-way peak-hour vehicles: SFMTA counts, Telraam, Slow Streets evaluation, SF-CHAMP, and estimates",
+   "years": "counts 2014-2023, SF-CHAMP run of mid-2019 or earlier, Telraam to 2026-11",
+   "coverage": {
+    "any_volume": {
+     "crashes": 24261,
+     "crashes_covered": 21763,
+     "share_crashes": 0.897,
+     "people_hurt": 30482,
+     "people_hurt_covered": 27364,
+     "ksi_people": 2400,
+     "ksi_people_covered": 2146,
+     "blocks": 9709
+    },
+    "any_volume_all_blocks": {
+     "crashes": 24261,
+     "crashes_covered": 21161,
+     "share_crashes": 0.8722,
+     "people_hurt": 30482,
+     "people_hurt_covered": 26593,
+     "ksi_people": 2400,
+     "ksi_people_covered": 2093
+    },
+    "not_estimated": {
+     "crashes": 24261,
+     "crashes_covered": 20434,
+     "share_crashes": 0.8423,
+     "people_hurt": 30482,
+     "people_hurt_covered": 25818,
+     "ksi_people": 2400,
+     "ksi_people_covered": 2001,
+     "blocks": 7172
+    },
+    "not_estimated_all_blocks": {
+     "crashes": 24261,
+     "crashes_covered": 19695,
+     "share_crashes": 0.8118,
+     "people_hurt": 30482,
+     "people_hurt_covered": 24868,
+     "ksi_people": 2400,
+     "ksi_people_covered": 1946
+    },
+    "measured_only": {
+     "crashes": 24261,
+     "crashes_covered": 3917,
+     "share_crashes": 0.1615,
+     "people_hurt": 30482,
+     "people_hurt_covered": 4889,
+     "ksi_people": 2400,
+     "ksi_people_covered": 375,
+     "blocks": 1608
+    },
+    "measured_only_all_blocks": {
+     "crashes": 24261,
+     "crashes_covered": 1644,
+     "share_crashes": 0.0678,
+     "people_hurt": 30482,
+     "people_hurt_covered": 2005,
+     "ksi_people": 2400,
+     "ksi_people_covered": 176
+    }
+   },
+   "supports": "per-block or per-street-class vehicle rate where measured or modelled; the estimated kind is a guess from the parallel street and should not divide a crash count",
+   "built": false
+  },
+  {
+   "source": "MTC Travel Model 1.6 (2023) car trips per block (through-traffic.py)",
+   "url": "tools/street-safety/through-traffic.py",
+   "held_as": "data/extract/through-traffic/blocks.json",
+   "measures": "modelled weekday car trips routed over the block",
+   "years": "2023 model year",
+   "coverage": {
+    "crashes": 24261,
+    "crashes_covered": 18330,
+    "share_crashes": 0.7555,
+    "people_hurt": 30482,
+    "people_hurt_covered": 23279,
+    "ksi_people": 2400,
+    "ksi_people_covered": 1811,
+    "blocks": 5063
+   },
+   "supports": "per-block or per-street-class vehicle-trip rate on the modelled network (arterials and collectors; few residential blocks)",
+   "built": false
+  },
+  {
+   "source": "SFMTA pedestrian intersection volume model (MTA.pedvolumemodel)",
+   "url": "https://services.sfmta.com/arcgis/rest/services/Pedestrian/pedestrian/MapServer/2",
+   "read_on": "2026-11-25",
+   "measures": "modelled pedestrian volume per intersection (MODEL6_VOL)",
+   "years": "2011 transportation data, 2000 Census; never updated",
+   "coverage": {
+    "pedestrian_crashes_coded_at_an_intersection": {
+     "crashes": 4282,
+     "crashes_covered": 4261,
+     "share_crashes": 0.9951,
+     "ped_people_hurt": 4492,
+     "ped_people_hurt_covered": 4470,
+     "ksi_people": 664,
+     "ksi_people_covered": 663,
+     "intersections": 8135
+    }
+   },
+   "supports": "per-intersection pedestrian rate, citywide, but from a model built on 2011 and 2000 data; the layer calls MODEL6_VOL an estimated yearly pedestrian volume, and its method document sits on an SFMTA internal drive",
+   "built": false
+  },
+  {
+   "source": "SFMTA manual bike counts (DataSF v4v2-5x7s)",
+   "url": "https://data.sfgov.org/d/v4v2-5x7s",
+   "read_on": "2026-11-25",
+   "measures": "PM peak bicycles at intersections",
+   "years": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017"
+   ],
+   "coverage": {
+    "bicyclists_at_intersections_within_150_ft": {
+     "crashes": 3741,
+     "crashes_covered": 290,
+     "share_crashes": 0.0775,
+     "bike_people_hurt": 3776,
+     "bike_people_hurt_covered": 293,
+     "ksi_people": 411,
+     "ksi_people_covered": 27,
+     "locations": 89,
+     "note": "the dataset's cnn column holds latitudes, so locations are matched by distance to the crash point"
+    }
+   },
+   "supports": "neither: 89 counted locations, last count 2017, one PM peak a year",
+   "built": false
+  },
+  {
+   "source": "SFMTA bicycle loop counters (DataSF 7j2t-hunp)",
+   "url": "https://data.sfgov.org/d/7j2t-hunp",
+   "measures": "locations of 12 automated counters; DataSF holds no counts",
+   "years": "installed 2009-2016",
+   "coverage": "12 locations; counts not published on DataSF (SFMTA page says email BikeCounters@sfmta.com)",
+   "supports": "neither",
+   "built": false
+  },
+  {
+   "source": "Telraam residents' window counters",
+   "url": "https://telraam-api.net",
+   "held_as": "data/extract/telraam/segments.json",
+   "measures": "cars, bikes, pedestrians per segment",
+   "years": [
+    "2025-11-19",
+    "2026-11-19"
+   ],
+   "coverage": "40 segments kept of 48 found; already folded into residential-traffic where they sit on a block",
+   "supports": "neither on its own",
+   "built": false
+  },
+  {
+   "source": "SFCTA Congestion Management Program counts",
+   "url": "https://www.sfcta.org/reports/congestion-management-program-2025",
+   "measures": "vehicles at 29 mid-block locations; vehicles, bikes and pedestrians at 14 intersections, biennial April-May",
+   "years": "2015-2025",
+   "coverage": "43 locations; not joined",
+   "supports": "trend check, not a rate",
+   "built": false
+  },
+  {
+   "source": "Caltrans Traffic Census AADT",
+   "url": "https://dot.ca.gov/programs/traffic-operations/census",
+   "measures": "AADT, peak hour and truck volumes",
+   "years": "2013-2024",
+   "coverage": "state highway system only (in SF: freeways and the state routes on city streets); not joined",
+   "supports": "per-segment rate on state routes only",
+   "built": false
+  },
+  {
+   "source": "Caltrans PeMS",
+   "url": "https://pems.dot.ca.gov",
+   "measures": "freeway detector volumes",
+   "years": "not checked",
+   "coverage": "not opened this session; freeway detectors only, and DataSF's crash table description says crashes on highways are excluded",
+   "supports": "neither for city streets",
+   "built": false
+  },
+  {
+   "source": "StreetLight",
+   "url": "https://www.streetlightdata.com/",
+   "measures": "modelled vehicle, bike and pedestrian volumes from location data",
+   "years": "not checked",
+   "coverage": "paid licence arranged with the company; no public download found",
+   "supports": "per-block rate if licensed",
+   "built": false
+  }
+ ],
+ "per_1000_residents": {
+  "by_neighborhood": [
+   {
+    "neighborhood": "Golden Gate Park",
+    "residents_2020": 284,
+    "few_residents": true,
+    "injury_crashes": 637,
+    "people_hurt": 823,
+    "ksi_people": 74,
+    "people_hurt_per_1000_residents_per_year": 362.24,
+    "ksi_per_1000_residents_per_year": 32.57
+   },
+   {
+    "neighborhood": "South of Market",
+    "residents_2020": 28506,
+    "few_residents": false,
+    "injury_crashes": 2066,
+    "people_hurt": 2488,
+    "ksi_people": 189,
+    "people_hurt_per_1000_residents_per_year": 10.91,
+    "ksi_per_1000_residents_per_year": 0.829
+   },
+   {
+    "neighborhood": "Financial District/South Beach",
+    "residents_2020": 25732,
+    "few_residents": false,
+    "injury_crashes": 1592,
+    "people_hurt": 1910,
+    "ksi_people": 154,
+    "people_hurt_per_1000_residents_per_year": 9.28,
+    "ksi_per_1000_residents_per_year": 0.748
+   },
+   {
+    "neighborhood": "McLaren Park",
+    "residents_2020": 865,
+    "few_residents": true,
+    "injury_crashes": 39,
+    "people_hurt": 62,
+    "ksi_people": 14,
+    "people_hurt_per_1000_residents_per_year": 8.96,
+    "ksi_per_1000_residents_per_year": 2.023
+   },
+   {
+    "neighborhood": "Lincoln Park",
+    "residents_2020": 186,
+    "few_residents": true,
+    "injury_crashes": 13,
+    "people_hurt": 13,
+    "ksi_people": 1,
+    "people_hurt_per_1000_residents_per_year": 8.74,
+    "ksi_per_1000_residents_per_year": 0.672
+   },
+   {
+    "neighborhood": "Mission",
+    "residents_2020": 57824,
+    "few_residents": false,
+    "injury_crashes": 3137,
+    "people_hurt": 3889,
+    "ksi_people": 293,
+    "people_hurt_per_1000_residents_per_year": 8.41,
+    "ksi_per_1000_residents_per_year": 0.633
+   },
+   {
+    "neighborhood": "Bayview Hunters Point",
+    "residents_2020": 42864,
+    "few_residents": false,
+    "injury_crashes": 1869,
+    "people_hurt": 2555,
+    "ksi_people": 209,
+    "people_hurt_per_1000_residents_per_year": 7.45,
+    "ksi_per_1000_residents_per_year": 0.609
+   },
+   {
+    "neighborhood": "Japantown",
+    "residents_2020": 3899,
+    "few_residents": true,
+    "injury_crashes": 173,
+    "people_hurt": 216,
+    "ksi_people": 17,
+    "people_hurt_per_1000_residents_per_year": 6.92,
+    "ksi_per_1000_residents_per_year": 0.545
+   },
+   {
+    "neighborhood": "Hayes Valley",
+    "residents_2020": 20098,
+    "few_residents": false,
+    "injury_crashes": 866,
+    "people_hurt": 1095,
+    "ksi_people": 83,
+    "people_hurt_per_1000_residents_per_year": 6.81,
+    "ksi_per_1000_residents_per_year": 0.516
+   },
+   {
+    "neighborhood": "Western Addition",
+    "residents_2020": 23348,
+    "few_residents": false,
+    "injury_crashes": 930,
+    "people_hurt": 1210,
+    "ksi_people": 94,
+    "people_hurt_per_1000_residents_per_year": 6.48,
+    "ksi_per_1000_residents_per_year": 0.503
+   },
+   {
+    "neighborhood": "Tenderloin",
+    "residents_2020": 36067,
+    "few_residents": false,
+    "injury_crashes": 1577,
+    "people_hurt": 1839,
+    "ksi_people": 182,
+    "people_hurt_per_1000_residents_per_year": 6.37,
+    "ksi_per_1000_residents_per_year": 0.631
+   },
+   {
+    "neighborhood": "Lakeshore",
+    "residents_2020": 11896,
+    "few_residents": false,
+    "injury_crashes": 394,
+    "people_hurt": 556,
+    "ksi_people": 38,
+    "people_hurt_per_1000_residents_per_year": 5.84,
+    "ksi_per_1000_residents_per_year": 0.399
+   },
+   {
+    "neighborhood": "Outer Mission",
+    "residents_2020": 22347,
+    "few_residents": false,
+    "injury_crashes": 738,
+    "people_hurt": 1015,
+    "ksi_people": 56,
+    "people_hurt_per_1000_residents_per_year": 5.68,
+    "ksi_per_1000_residents_per_year": 0.313
+   },
+   {
+    "neighborhood": "North Beach",
+    "residents_2020": 12251,
+    "few_residents": false,
+    "injury_crashes": 371,
+    "people_hurt": 437,
+    "ksi_people": 48,
+    "people_hurt_per_1000_residents_per_year": 4.46,
+    "ksi_per_1000_residents_per_year": 0.49
+   },
+   {
+    "neighborhood": "Treasure Island",
+    "residents_2020": 2747,
+    "few_residents": true,
+    "injury_crashes": 69,
+    "people_hurt": 92,
+    "ksi_people": 11,
+    "people_hurt_per_1000_residents_per_year": 4.19,
+    "ksi_per_1000_residents_per_year": 0.501
+   },
+   {
+    "neighborhood": "Mission Bay",
+    "residents_2020": 17432,
+    "few_residents": false,
+    "injury_crashes": 481,
+    "people_hurt": 571,
+    "ksi_people": 46,
+    "people_hurt_per_1000_residents_per_year": 4.09,
+    "ksi_per_1000_residents_per_year": 0.33
+   },
+   {
+    "neighborhood": "Bernal Heights",
+    "residents_2020": 23372,
+    "few_residents": false,
+    "injury_crashes": 583,
+    "people_hurt": 763,
+    "ksi_people": 49,
+    "people_hurt_per_1000_residents_per_year": 4.08,
+    "ksi_per_1000_residents_per_year": 0.262
+   },
+   {
+    "neighborhood": "Castro/Upper Market",
+    "residents_2020": 22213,
+    "few_residents": false,
+    "injury_crashes": 574,
+    "people_hurt": 673,
+    "ksi_people": 56,
+    "people_hurt_per_1000_residents_per_year": 3.79,
+    "ksi_per_1000_residents_per_year": 0.315
+   },
+   {
+    "neighborhood": "Marina",
+    "residents_2020": 25116,
+    "few_residents": false,
+    "injury_crashes": 601,
+    "people_hurt": 756,
+    "ksi_people": 69,
+    "people_hurt_per_1000_residents_per_year": 3.76,
+    "ksi_per_1000_residents_per_year": 0.343
+   },
+   {
+    "neighborhood": "Portola",
+    "residents_2020": 15752,
+    "few_residents": false,
+    "injury_crashes": 353,
+    "people_hurt": 451,
+    "ksi_people": 41,
+    "people_hurt_per_1000_residents_per_year": 3.58,
+    "ksi_per_1000_residents_per_year": 0.325
+   },
+   {
+    "neighborhood": "Lone Mountain/USF",
+    "residents_2020": 16547,
+    "few_residents": false,
+    "injury_crashes": 353,
+    "people_hurt": 447,
+    "ksi_people": 33,
+    "people_hurt_per_1000_residents_per_year": 3.38,
+    "ksi_per_1000_residents_per_year": 0.249
+   },
+   {
+    "neighborhood": "Russian Hill",
+    "residents_2020": 18716,
+    "few_residents": false,
+    "injury_crashes": 386,
+    "people_hurt": 483,
+    "ksi_people": 32,
+    "people_hurt_per_1000_residents_per_year": 3.23,
+    "ksi_per_1000_residents_per_year": 0.214
+   },
+   {
+    "neighborhood": "Chinatown",
+    "residents_2020": 14455,
+    "few_residents": false,
+    "injury_crashes": 312,
+    "people_hurt": 365,
+    "ksi_people": 28,
+    "people_hurt_per_1000_residents_per_year": 3.16,
+    "ksi_per_1000_residents_per_year": 0.242
+   },
+   {
+    "neighborhood": "Nob Hill",
+    "residents_2020": 26398,
+    "few_residents": false,
+    "injury_crashes": 533,
+    "people_hurt": 629,
+    "ksi_people": 56,
+    "people_hurt_per_1000_residents_per_year": 2.98,
+    "ksi_per_1000_residents_per_year": 0.265
+   },
+   {
+    "neighborhood": "Excelsior",
+    "residents_2020": 37522,
+    "few_residents": false,
+    "injury_crashes": 647,
+    "people_hurt": 864,
+    "ksi_people": 54,
+    "people_hurt_per_1000_residents_per_year": 2.88,
+    "ksi_per_1000_residents_per_year": 0.18
+   },
+   {
+    "neighborhood": "Pacific Heights",
+    "residents_2020": 24948,
+    "few_residents": false,
+    "injury_crashes": 436,
+    "people_hurt": 536,
+    "ksi_people": 39,
+    "people_hurt_per_1000_residents_per_year": 2.69,
+    "ksi_per_1000_residents_per_year": 0.195
+   },
+   {
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "residents_2020": 25803,
+    "few_residents": false,
+    "injury_crashes": 387,
+    "people_hurt": 533,
+    "ksi_people": 43,
+    "people_hurt_per_1000_residents_per_year": 2.58,
+    "ksi_per_1000_residents_per_year": 0.208
+   },
+   {
+    "neighborhood": "Inner Richmond",
+    "residents_2020": 21777,
+    "few_residents": false,
+    "injury_crashes": 357,
+    "people_hurt": 447,
+    "ksi_people": 35,
+    "people_hurt_per_1000_residents_per_year": 2.57,
+    "ksi_per_1000_residents_per_year": 0.201
+   },
+   {
+    "neighborhood": "Presidio Heights",
+    "residents_2020": 10544,
+    "few_residents": false,
+    "injury_crashes": 180,
+    "people_hurt": 217,
+    "ksi_people": 16,
+    "people_hurt_per_1000_residents_per_year": 2.57,
+    "ksi_per_1000_residents_per_year": 0.19
+   },
+   {
+    "neighborhood": "West of Twin Peaks",
+    "residents_2020": 37573,
+    "few_residents": false,
+    "injury_crashes": 595,
+    "people_hurt": 765,
+    "ksi_people": 64,
+    "people_hurt_per_1000_residents_per_year": 2.55,
+    "ksi_per_1000_residents_per_year": 0.213
+   },
+   {
+    "neighborhood": "Haight Ashbury",
+    "residents_2020": 17882,
+    "few_residents": false,
+    "injury_crashes": 273,
+    "people_hurt": 310,
+    "ksi_people": 32,
+    "people_hurt_per_1000_residents_per_year": 2.17,
+    "ksi_per_1000_residents_per_year": 0.224
+   },
+   {
+    "neighborhood": "Potrero Hill",
+    "residents_2020": 16810,
+    "few_residents": false,
+    "injury_crashes": 257,
+    "people_hurt": 292,
+    "ksi_people": 18,
+    "people_hurt_per_1000_residents_per_year": 2.17,
+    "ksi_per_1000_residents_per_year": 0.134
+   },
+   {
+    "neighborhood": "Inner Sunset",
+    "residents_2020": 28333,
+    "few_residents": false,
+    "injury_crashes": 385,
+    "people_hurt": 486,
+    "ksi_people": 33,
+    "people_hurt_per_1000_residents_per_year": 2.14,
+    "ksi_per_1000_residents_per_year": 0.146
+   },
+   {
+    "neighborhood": "Outer Richmond",
+    "residents_2020": 44760,
+    "few_residents": false,
+    "injury_crashes": 592,
+    "people_hurt": 763,
+    "ksi_people": 58,
+    "people_hurt_per_1000_residents_per_year": 2.13,
+    "ksi_per_1000_residents_per_year": 0.162
+   },
+   {
+    "neighborhood": "Sunset/Parkside",
+    "residents_2020": 75808,
+    "few_residents": false,
+    "injury_crashes": 883,
+    "people_hurt": 1129,
+    "ksi_people": 81,
+    "people_hurt_per_1000_residents_per_year": 1.86,
+    "ksi_per_1000_residents_per_year": 0.134
+   },
+   {
+    "neighborhood": "Glen Park",
+    "residents_2020": 8313,
+    "few_residents": false,
+    "injury_crashes": 91,
+    "people_hurt": 110,
+    "ksi_people": 3,
+    "people_hurt_per_1000_residents_per_year": 1.65,
+    "ksi_per_1000_residents_per_year": 0.045
+   },
+   {
+    "neighborhood": "Noe Valley",
+    "residents_2020": 23020,
+    "few_residents": false,
+    "injury_crashes": 233,
+    "people_hurt": 294,
+    "ksi_people": 25,
+    "people_hurt_per_1000_residents_per_year": 1.6,
+    "ksi_per_1000_residents_per_year": 0.136
+   },
+   {
+    "neighborhood": "Twin Peaks",
+    "residents_2020": 7767,
+    "few_residents": false,
+    "injury_crashes": 74,
+    "people_hurt": 96,
+    "ksi_people": 11,
+    "people_hurt_per_1000_residents_per_year": 1.54,
+    "ksi_per_1000_residents_per_year": 0.177
+   },
+   {
+    "neighborhood": "Visitacion Valley",
+    "residents_2020": 17834,
+    "few_residents": false,
+    "injury_crashes": 129,
+    "people_hurt": 183,
+    "ksi_people": 6,
+    "people_hurt_per_1000_residents_per_year": 1.28,
+    "ksi_per_1000_residents_per_year": 0.042
+   },
+   {
+    "neighborhood": "Seacliff",
+    "residents_2020": 2433,
+    "few_residents": true,
+    "injury_crashes": 17,
+    "people_hurt": 21,
+    "ksi_people": 0,
+    "people_hurt_per_1000_residents_per_year": 1.08,
+    "ksi_per_1000_residents_per_year": 0.0
+   },
+   {
+    "neighborhood": "Presidio",
+    "residents_2020": 3690,
+    "few_residents": true,
+    "injury_crashes": 12,
+    "people_hurt": 13,
+    "ksi_people": 5,
+    "people_hurt_per_1000_residents_per_year": 0.44,
+    "ksi_per_1000_residents_per_year": 0.169
+   },
+   {
+    "neighborhood": "not stated",
+    "residents_2020": 0,
+    "few_residents": true,
+    "injury_crashes": 66,
+    "people_hurt": 85,
+    "ksi_people": 4,
+    "people_hurt_per_1000_residents_per_year": null,
+    "ksi_per_1000_residents_per_year": null
+   }
+  ],
+  "by_epc": [
+   {
+    "area": "not in an EPC tract",
+    "residents_2020": 678719,
+    "injury_crashes": 16498,
+    "people_hurt": 20953,
+    "ksi_people": 1616,
+    "people_hurt_per_1000_residents_per_year": 3.86,
+    "ksi_per_1000_residents_per_year": 0.298
+   },
+   {
+    "area": "no crash in tract",
+    "residents_2020": 0,
+    "injury_crashes": 0,
+    "people_hurt": 0,
+    "ksi_people": 0,
+    "people_hurt_per_1000_residents_per_year": null,
+    "ksi_per_1000_residents_per_year": null
+   },
+   {
+    "area": "no tract",
+    "residents_2020": 0,
+    "injury_crashes": 63,
+    "people_hurt": 78,
+    "ksi_people": 3,
+    "people_hurt_per_1000_residents_per_year": null,
+    "ksi_per_1000_residents_per_year": null
+   },
+   {
+    "area": "in an EPC tract",
+    "residents_2020": 195246,
+    "injury_crashes": 7700,
+    "people_hurt": 9451,
+    "ksi_people": 781,
+    "people_hurt_per_1000_residents_per_year": 6.05,
+    "ksi_per_1000_residents_per_year": 0.5
+   }
+  ]
+ },
+ "checks": {
+  "census_total_matches_2020_county_count": true,
+  "census_total": 873965,
+  "residents_placed_in_a_neighborhood": 873732,
+  "unplaced": {
+   "blocks": 1,
+   "people": 233
+  },
+  "tracts_with_conflicting_epc_flag": [],
+  "people_hurt_by_neighborhood_sum": 30482,
+  "people_hurt_total": 30482
+ }
+}

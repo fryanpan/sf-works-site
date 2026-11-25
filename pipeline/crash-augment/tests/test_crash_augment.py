@@ -137,6 +137,16 @@ class HeldTables(unittest.TestCase):
         self.assertEqual(self.fake.rows_served, 1)
         self.assertEqual(self.files(), before)
 
+    def test_a_held_file_edited_on_disk_is_read_again(self):
+        before = self.files()
+        p = os.path.join(crash_tables.STORE, "ubvf-ztfx", "2025.json")
+        blob = json.load(open(p))
+        blob["rows"][0]["primary_rd"] = "EDITED ST"
+        open(p, "w").write(json.dumps(blob))
+        self.refresh()
+        self.assertEqual(self.fake.rows_served, 10)
+        self.assertEqual(self.files(), before)
+
     def test_only_moved_rows_are_read_on_a_new_update(self):
         self.fake.tables["ubvf-ztfx"][4] = dict(self.fake.tables["ubvf-ztfx"][4], primary_rd="MISSION ST",
                                                 data_updated_at="2026-11-24T00:00:00.000")

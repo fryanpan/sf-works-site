@@ -84,7 +84,7 @@ A dated field is true or valued on a crash only if the thing was in place on or 
 
 ## How each run stays incremental
 
-1. **Fetch** ([`crash_tables.py`](crash_tables.py)). The three tables are held whole in `data/socrata-cache/crash-augment/`, one gitignored file per collision year. DataSF reloads them every night and stamps every row with the load time, so the marker used is each row's own `data_updated_at`, the day SFPD's record last changed. With `--update` the step asks for `rowsUpdatedAt` and the row count per year. When `rowsUpdatedAt` has moved, it reads only the rows whose `data_updated_at` is on or after the newest one held. It reads that newest day again, because the field is a date. A year whose count differs from DataSF's gets its keys read, and then only its missing rows. Every 90 days the whole table is read again. A refresh with nothing new reads no rows and writes no file.
+1. **Fetch** ([`crash_tables.py`](crash_tables.py)). The three tables are held whole in `data/socrata-cache/crash-augment/`, one gitignored file per collision year. DataSF reloads them every night and stamps every row with the load time, so the marker used is each row's own `data_updated_at`, the day SFPD's record last changed. With `--update` the step asks for `rowsUpdatedAt` and the row count per year. When `rowsUpdatedAt` has moved, it reads only the rows whose `data_updated_at` is on or after the newest one held. It reads that newest day again, because the field is a date. A year whose count differs from DataSF's gets its keys read, and then only its missing rows. A held file edited on disk with its count intact is read again whole. Every 90 days the whole table is read again. A refresh with nothing new reads no rows and writes no file.
 2. **Vehicles** ([`vehicles/vehicle-fields.py`](vehicles/vehicle-fields.py)) asks vPIC only for makes and model years it hasn't cached (`.cache/crash-augment/vpic/`).
 3. **Street** ([`street/crash-street-context.py`](street/crash-street-context.py)) asks each street source for its change marker. SFMTA's lane layer has no marker, so it is re-read whole, which takes 16 requests.
 4. **Merge** ([`augment_merge.py`](augment_merge.py)) joins the lanes onto the held rows in a staging folder.
@@ -98,7 +98,7 @@ Every stage's checks must pass before the next stage runs, and a failure keeps t
 
 | Stage | Check | Guards against |
 | --- | --- | --- |
-| fetch | each year holds exactly DataSF's row count | a dropped, repeated or stray row; a held file cut short or edited |
+| fetch | each year holds exactly DataSF's row count | a dropped, repeated or stray row; a held file cut short |
 | fetch | at least the floor, and no more than 2% fewer rows than the last refresh | an empty or truncated read |
 | fetch | keys unique across years; key, `case_id_pkey` and `collision_datetime` present; dates from 2005 to tomorrow | a row that moved year held twice; a malformed read |
 | vehicles | 34 checks ([list](vehicles/README.md#data-quality)): row counts equal to the inputs, joins, weight bounds by body type, match-rate floors, 76 hand-read strings | a parser or vPIC regression; a unit error; a lost or duplicated row |
@@ -109,7 +109,7 @@ Every stage's checks must pass before the next stage runs, and a failure keeps t
 | merge | the vehicle lane read the same DataSF update as the tables | lanes mixing two days' data |
 | merge | the header is DataSF's columns and then each lane's, and every added column has a value on some row | a lane column lost or emptied |
 
-`tests/test_crash_augment.py` shows a refresh reading nothing when nothing moved, and reading back only a row cut from the held copy. It also shows a refresh reading only the rows whose `data_updated_at` moved, and moving a row whose year changed. Then it shows each fetch and merge check failing on the bad input it guards against. The lanes have their own tests in `vehicles/tests/` and `street/tests/`.
+`tests/test_crash_augment.py` shows a refresh reading nothing when nothing moved, reading back only a row cut from the held copy, and reading a year again when its file was edited on disk. It also shows a refresh reading only the rows whose `data_updated_at` moved, and moving a row whose year changed. Then it shows each fetch and merge check failing on the bad input it guards against. The lanes have their own tests in `vehicles/tests/` and `street/tests/`.
 
 ## Known limits
 

@@ -32,8 +32,9 @@ record last changed, and that is the marker. For each table:
      newest one held, and put each in its year in place of the held row with the same key. The newest day is read
      again because the field is a date, not a time.
   3. Any year whose held row count differs from DataSF's (a row added or deleted upstream, a row that moved year,
-     or a held file cut short or edited on disk) is reconciled: its keys are read (one small request), held rows
-     whose key is gone are dropped, and only the missing keys' rows are read, 150 keys a request.
+     or a held file cut short on disk) is reconciled: its keys are read (one small request), held rows whose key is
+     gone are dropped, and only the missing keys' rows are read, 150 keys a request. A held file whose bytes are not
+     the ones the last refresh wrote, with its row count intact, is read again whole.
   4. Once the whole table was last read more than FULL_REREAD_DAYS ago, every year is read again, so an upstream
      edit that did not move `data_updated_at` cannot live in the copy for longer than that.
 
@@ -212,6 +213,7 @@ def _refresh_one(name, update, log, stats):
     st = state.get(fxf) or {}
     held_years = st.get("years") or {}
     pending = {}   # year -> {key: row}, only the years this refresh touches
+    edited = set()  # years whose held file no longer has the bytes the last refresh wrote
     notes = []
 
     def held(year):
@@ -229,6 +231,7 @@ def _refresh_one(name, update, log, stats):
             return 0
         if rec and _sha_file(p) == rec.get("sha"):
             return rec["rows"]
+        edited.add(year)
         return len(held(year))
 
     cold = not held_years or not all(os.path.exists(_year_path(fxf, y)) for y in held_years)
@@ -293,6 +296,12 @@ def _refresh_one(name, update, log, stats):
                 for r in _stream(fxf, where=where, stats=stats):
                     h[r[key]] = clean(r)
             notes.append("%s: reconciled, %d read, %d dropped" % (year, len(missing), len(gone)))
+            edited.discard(year)
+        # A held file edited on disk with its row count intact can't be mended key by key: read that year again whole.
+        for year in sorted(edited):
+            if year in up:
+                pending[year] = {r[key]: clean(r) for r in _stream(fxf, where=_year_where(year), stats=stats)}
+                notes.append("%s: held file changed on disk, read again whole" % year)
 
     # ---- checks, before anything is written ----
     counts = {y: held_count(y) for y in sorted(set(up) | set(held_years) | set(pending))}

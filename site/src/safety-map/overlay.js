@@ -27,17 +27,9 @@
       var W = s.worst && D.worst ? D.worst.summary.filter(function (x) { return x.year === s.worst; })[0] : null;
       if (W) return "<b>" + n0(W.people) + "</b> of the " + n0(W.people_in_year) + " people severely hurt or killed in " + W.year + " were on its worst 10 miles, in teal" +
         (W.complete ? "" : " (" + W.year + " is not yet complete)") + '.<span class="sm-na">' + line.replace(/<\/?b>/g, "") + ".</span>";
-      return line + unplacedNote(f);
+      return line;
     }
     return other(ctl, s, where) + na(s);
-  }
-  // The people the headline counts whom the map can't draw, said once under it and only when there are any: the
-  // police record gives no place in San Francisco for them (map.js `np`), so they count and have no dot.
-  function unplacedNote(f) {
-    var n = f.unplaced || 0, k = f.unplacedKilled || 0;
-    if (!n) return "";
-    var who = k === n ? n0(n) + (n === 1 ? " death has" : " deaths have") : n0(n) + " of these people " + (n === 1 ? "has" : "have");
-    return '<span class="sm-na sm-unplaced">' + who + " no location in the police record and " + (n === 1 ? "isn't" : "aren't") + " on the map</span>";
   }
   // What a view can't take from the day and time choice, said once under its headline. Traffic stress and through
   // traffic have weekday data only (Bryan, 2026-11-19: weekend choices say so on those layers).

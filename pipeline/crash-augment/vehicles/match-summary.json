@@ -1,0 +1,81 @@
+{
+ "distinct_strings": 12648,
+ "distinct_strings_by_make_and_model_how": {
+  "alias/abbrev": 118,
+  "alias/exact": 1185,
+  "alias/fuzzy": 98,
+  "alias/none": 1071,
+  "alias/series": 341,
+  "fuzzy/abbrev": 1,
+  "fuzzy/exact": 67,
+  "fuzzy/fuzzy": 4,
+  "fuzzy/none": 51,
+  "fuzzy/series": 2,
+  "none/none": 4876,
+  "vpic/abbrev": 131,
+  "vpic/exact": 2052,
+  "vpic/fuzzy": 202,
+  "vpic/none": 2274,
+  "vpic/series": 175
+ },
+ "distinct_strings_with_make": 7772,
+ "distinct_strings_with_model": 4376,
+ "parties": {
+  "body_type_avg": {
+   "rows": 57524,
+   "share": 0.4084,
+   "share_of_motor_vehicles": 0.5231
+  },
+  "exact_make_model_year": {
+   "rows": 28675,
+   "share": 0.2036,
+   "share_of_motor_vehicles": 0.2607
+  },
+  "model_10yr_avg": {
+   "rows": 1509,
+   "share": 0.0107,
+   "share_of_motor_vehicles": 0.0137
+  },
+  "not_applicable": {
+   "rows": 30865,
+   "share": 0.2191,
+   "share_of_motor_vehicles": null
+  },
+  "unmatched": {
+   "rows": 22270,
+   "share": 0.1581,
+   "share_of_motor_vehicles": 0.2025
+  }
+ },
+ "parties_motor_vehicle_make_clean": 102378,
+ "parties_motor_vehicle_model_clean": 32279,
+ "parties_motor_vehicle_rows": 109978,
+ "parties_motor_vehicle_rows_with_text": 106684,
+ "victims": {
+  "body_type_avg": {
+   "rows": 26251,
+   "share": 0.309,
+   "share_of_motor_vehicles": 0.4772
+  },
+  "exact_make_model_year": {
+   "rows": 14410,
+   "share": 0.1696,
+   "share_of_motor_vehicles": 0.2619
+  },
+  "model_10yr_avg": {
+   "rows": 458,
+   "share": 0.0054,
+   "share_of_motor_vehicles": 0.0083
+  },
+  "not_applicable": {
+   "rows": 29931,
+   "share": 0.3524,
+   "share_of_motor_vehicles": null
+  },
+  "unmatched": {
+   "rows": 13893,
+   "share": 0.1636,
+   "share_of_motor_vehicles": 0.2525
+  }
+ }
+}

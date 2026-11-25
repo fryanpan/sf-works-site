@@ -1,0 +1,22 @@
+{
+ "Minivan": {
+  "rows": 813,
+  "weight_lb": 4410
+ },
+ "Passenger Car": {
+  "rows": 18947,
+  "weight_lb": 3296
+ },
+ "Pickup or Panel Truck": {
+  "rows": 1462,
+  "weight_lb": 4746
+ },
+ "Police Car": {
+  "rows": 109,
+  "weight_lb": 4446
+ },
+ "Sport Utility Vehicle": {
+  "rows": 6855,
+  "weight_lb": 4004
+ }
+}

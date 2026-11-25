@@ -1,0 +1,77 @@
+raw,expected_make,expected_model,note
+Toyota/Highlander/Silver,TOYOTA,Highlander,make/model/colour
+TOYOTA/PRIUS/SILVER,TOYOTA,Prius,
+HONDA/CRV/GRAY,HONDA,CR-V,hyphen dropped by the officer
+Toyota/Rav4/Silver,TOYOTA,RAV4,
+TOYOTA RAV 4 GRAY,TOYOTA,RAV4,model split over two words
+FORD/F150/WHITE,FORD,F-150,
+FORD/F-250/WHITE,FORD,F-250,
+FORD/E250/WHT,FORD,E-250,
+HONDA ACCORD BLACK,HONDA,Accord,spaces only
+Subaru / Forester / Silver,SUBARU,Forester,spaced slashes
+"Subaru, Forester, Gray",SUBARU,Forester,commas
+TOYT,TOYOTA,,NCIC code
+TOYT/CAMRY/WHI,TOYOTA,Camry,NCIC code with model
+MERZ,MERCEDES-BENZ,,NCIC code for Mercedes-Benz
+MERC,MERCURY,,NCIC code for Mercury (not Mercedes)
+CHEV,CHEVROLET,,
+CHEVY/IMPALA/WHITE,CHEVROLET,Impala,
+VOLK/JETTA/SILVER,VOLKSWAGEN,Jetta,
+VW / JETTA / GREY,VOLKSWAGEN,Jetta,
+LEXS,LEXUS,,
+INTERNATIONAL HARVESTER,INTERNATIONAL,,company name with a second word
+NFLY/Bus/Gray,NEW FLYER,,a bus with no model
+New Flyer/XDE40/RED,NEW FLYER,Xcelsior,Xcelsior model code
+AUTC/GG/White,AUTOCAR,,NCIC code for Autocar
+Auto Car/ Heil/ White,AUTOCAR,,make words that are also generic words
+SUB/OUTBACK./GRY,SUBARU,Outback,
+Mazda/3/Gray,MAZDA,Mazda3,vPIC spells it Mazda3
+MAZDA/MIATA/WHITE,MAZDA,MX-5,Miata is the MX-5
+Tesla/Y/White,TESLA,Model Y,letter alone
+TESLA MODEL-Y,TESLA,Model Y,
+TESLA/MODEL S/BLACK,TESLA,Model S,
+TOYOTA/MATRIX/BLUE,TOYOTA,Corolla Matrix,vPIC's name for the Matrix
+BMW 3Series Black,BMW,3 Series,
+BMW/ 3 series/ Grey,BMW,3 Series,
+BMW/328I/WHITE,BMW,328i,
+BMW/328,BMW,328i,three digits read as the i model
+MERCEDES/C300/Black,MERCEDES-BENZ,C-Class,series code
+MERCEDEZ/GRY/C300,MERCEDES-BENZ,C-Class,misspelt make and colour before the model
+MERZ/ML350,MERCEDES-BENZ,M-Class,Transport Canada files the ML under M CLASS
+MERCEDES/M CLASS,MERCEDES-BENZ,M-Class,make letter M is not dropped as part of MERCEDES
+MERZ/E CLASS,MERCEDES-BENZ,E-Class,
+LEXUS/RX350,LEXUS,RX,
+LEXUS/GS300/WGITE,LEXUS,GS,
+Lexus/NX 200T/White,LEXUS,NX,
+Infiniti/FX 35/Gray,INFINITI,FX35,
+TOYOTA/CAMERY,TOYOTA,Camry,misspelling
+TOYOTA/PRUIS,TOYOTA,Prius,swapped letters
+Toyota Corrolla White,TOYOTA,Corolla,
+NISSAN/ROUGE,NISSAN,Rogue,
+TOY/CAM,TOYOTA,Camry,three-letter abbreviation as the only model word
+TOYOTA/HIGHLAND,TOYOTA,Highlander,truncation
+FORD/CROWN VIC,FORD,Crown Victoria,
+WHITE/HONDA/ACCORD,HONDA,Accord,colour written first
+Silver Nissan Leaf,NISSAN,Leaf,colour written first
+PIAGGO/SCOOTER/BLUE,PIAGGIO,,misspelt make
+KAWK/NINJA/GREEN,KAWASAKI,,Ninja is a family; not Ninja 7
+KAWASAKI/NINJA,KAWASAKI,,
+CHEVROLET/CHEVELLE,CHEVROLET,,Chevelle is not the Chevette
+ISU/N-SERIES,ISUZU,,N-Series is not the H-Series
+SPART/FIRE TRUCK,,,Spartan fire apparatus is not SMART
+TYMCO/INTL,,,Tymco sweeper is not KYMCO
+VESPA/PIAGGIO,VESPA,,Piaggio is Vespa's maker; not the Piaggio Fly
+MERZ/AMG C63,MERCEDES-BENZ,C-Class,AMG is a line; C63 is a C-Class
+TOYOTA/PRE RUNNER,TOYOTA,,PreRunner is a Tacoma trim; not the Previa
+TOYOTA CAM OR COR 4D,TOYOTA,,the officer was unsure; no model
+HARLEY DAVIDSON/BLA,HARLEY-DAVIDSON,,BLA is black; not the Blackline
+YAMAHA/YW125,YAMAHA,,a model code; not the YZ125
+HONDA/CMX500,HONDA,,a model code; not the CX500
+TOYOTA/SCION/BLACK,TOYOTA,,Scion is a brand; no model
+TREK,,,bicycle brand
+SPECIALIZED,,,bicycle brand
+Lime Scooter,,,
+UNKNOWN/BLACK,,,
+-,,,
+OTHER - AUTO,,,
+Titan bike/10-speed/purple,,,TITAN is a vPIC motorcycle maker and a bicycle brand

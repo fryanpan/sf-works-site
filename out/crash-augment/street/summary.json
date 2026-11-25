@@ -1,0 +1,1297 @@
+{
+ "about": "Street context of each crash in DataSF ubvf-ztfx as of its crash date; built by pipeline/crash-augment/street/crash-street-context.py. Rules in that folder's README.",
+ "camera_sites": {
+  "first_day": "2025-04-01",
+  "placed": 56,
+  "sites": {
+   "MTAF001": {
+    "block": "5834000",
+    "corridor_blocks": [
+     "5833000",
+     "5834000",
+     "5835000"
+    ],
+    "snap_ft": 64,
+    "start": "2025-04-01"
+   },
+   "MTAF002": {
+    "block": "4300000",
+    "corridor_blocks": [
+     "4299000",
+     "4300000",
+     "4301000"
+    ],
+    "snap_ft": 55,
+    "start": "2025-04-01"
+   },
+   "MTAF003": {
+    "block": "4300000",
+    "corridor_blocks": [
+     "4299000",
+     "4300000",
+     "4301000"
+    ],
+    "snap_ft": 55,
+    "start": "2025-04-01"
+   },
+   "MTAF004": {
+    "block": "3156000",
+    "corridor_blocks": [
+     "3155002",
+     "3156000",
+     "3157000",
+     "3158000"
+    ],
+    "snap_ft": 12,
+    "start": "2025-04-01"
+   },
+   "MTAF005": {
+    "block": "3155001",
+    "corridor_blocks": [
+     "3154000",
+     "3155001",
+     "3155002"
+    ],
+    "snap_ft": 7,
+    "start": "2025-04-01"
+   },
+   "MTAF006": {
+    "block": "12723000",
+    "corridor_blocks": [
+     "12722000",
+     "12723000",
+     "12724000"
+    ],
+    "snap_ft": 11,
+    "start": "2025-04-01"
+   },
+   "MTAF007": {
+    "block": "373000",
+    "corridor_blocks": [
+     "372000",
+     "373000",
+     "374000"
+    ],
+    "snap_ft": 46,
+    "start": "2025-04-17"
+   },
+   "MTAF008": {
+    "block": "488000",
+    "corridor_blocks": [
+     "487000",
+     "488000",
+     "489000"
+    ],
+    "snap_ft": 78,
+    "start": "2025-04-01"
+   },
+   "MTAF009": {
+    "block": "7834101",
+    "corridor_blocks": [
+     "7833101",
+     "7833201",
+     "7834101",
+     "7834201",
+     "7835001"
+    ],
+    "snap_ft": 69,
+    "start": "2025-04-01"
+   },
+   "MTAF011": {
+    "block": "8772103",
+    "corridor_blocks": [
+     "8772102",
+     "8772103",
+     "8772202",
+     "8773101",
+     "8773201"
+    ],
+    "snap_ft": 9,
+    "start": "2025-04-01"
+   },
+   "MTAF012": {
+    "block": "8772103",
+    "corridor_blocks": [
+     "8772102",
+     "8772103",
+     "8772202",
+     "8773101",
+     "8773201"
+    ],
+    "snap_ft": 9,
+    "start": "2025-04-01"
+   },
+   "MTAF013": {
+    "block": "231101",
+    "corridor_blocks": [
+     "230101",
+     "230202",
+     "231101",
+     "231201",
+     "232101",
+     "232201"
+    ],
+    "snap_ft": 6,
+    "start": "2025-04-01"
+   },
+   "MTAF015": {
+    "block": "11453000",
+    "corridor_blocks": [
+     "11452000",
+     "11453000",
+     "11454000"
+    ],
+    "snap_ft": 92,
+    "start": "2025-05-10"
+   },
+   "MTAF016": {
+    "block": "11453000",
+    "corridor_blocks": [
+     "11452000",
+     "11453000",
+     "11454000"
+    ],
+    "snap_ft": 88,
+    "start": "2025-05-10"
+   },
+   "MTAF017": {
+    "block": "6063201",
+    "corridor_blocks": [
+     "6062101",
+     "6062201",
+     "6063101",
+     "6063201",
+     "6064101",
+     "6064201"
+    ],
+    "snap_ft": 104,
+    "start": "2025-04-01"
+   },
+   "MTAF018": {
+    "block": "6063201",
+    "corridor_blocks": [
+     "6062101",
+     "6062201",
+     "6063101",
+     "6063201",
+     "6064101",
+     "6064201"
+    ],
+    "snap_ft": 104,
+    "start": "2025-05-20"
+   },
+   "MTAF019": {
+    "block": "5949000",
+    "corridor_blocks": [
+     "5948000",
+     "5949000",
+     "5950000"
+    ],
+    "snap_ft": 11,
+    "start": "2025-04-01"
+   },
+   "MTAF020": {
+    "block": "5949000",
+    "corridor_blocks": [
+     "5948000",
+     "5949000",
+     "5950000"
+    ],
+    "snap_ft": 58,
+    "start": "2025-05-24"
+   },
+   "MTAF021": {
+    "block": "5907000",
+    "corridor_blocks": [
+     "5906000",
+     "5907000",
+     "5908000"
+    ],
+    "snap_ft": 107,
+    "start": "2025-04-22"
+   },
+   "MTAF022": {
+    "block": "5907000",
+    "corridor_blocks": [
+     "5906000",
+     "5907000",
+     "5908000"
+    ],
+    "snap_ft": 107,
+    "start": "2025-04-22"
+   },
+   "MTAF023": {
+    "block": "2787000",
+    "corridor_blocks": [
+     "2786000",
+     "2787000",
+     "2788000"
+    ],
+    "snap_ft": 7,
+    "start": "2025-05-22"
+   },
+   "MTAF024": {
+    "block": "2787000",
+    "corridor_blocks": [
+     "2786000",
+     "2787000",
+     "2788000"
+    ],
+    "snap_ft": 7,
+    "start": "2025-05-28"
+   },
+   "MTAF025": {
+    "block": "12561101",
+    "corridor_blocks": [
+     "12560101",
+     "12560201",
+     "12561101",
+     "12561201",
+     "12562101",
+     "12562201"
+    ],
+    "snap_ft": 10,
+    "start": "2025-05-28"
+   },
+   "MTAF026": {
+    "block": "12556202",
+    "corridor_blocks": [
+     "12555102",
+     "12555202",
+     "12556102",
+     "12556202",
+     "12557101",
+     "12557201"
+    ],
+    "snap_ft": 8,
+    "start": "2025-05-28"
+   },
+   "MTAF027": {
+    "block": "8365101",
+    "corridor_blocks": [
+     "8364101",
+     "8364201",
+     "8365101",
+     "8365201",
+     "8366101",
+     "8366201"
+    ],
+    "snap_ft": 8,
+    "start": "2025-05-16"
+   },
+   "MTAF028": {
+    "block": "8365101",
+    "corridor_blocks": [
+     "8364101",
+     "8364201",
+     "8365101",
+     "8365201",
+     "8366101",
+     "8366201"
+    ],
+    "snap_ft": 8,
+    "start": "2025-05-16"
+   },
+   "MTAF029": {
+    "block": "11960101",
+    "corridor_blocks": [
+     "11959105",
+     "11959204",
+     "11960101",
+     "11960201",
+     "11961101",
+     "11961201"
+    ],
+    "snap_ft": 9,
+    "start": "2025-05-15"
+   },
+   "MTAF030": {
+    "block": "11960101",
+    "corridor_blocks": [
+     "11959105",
+     "11959204",
+     "11960101",
+     "11960201",
+     "11961101",
+     "11961201"
+    ],
+    "snap_ft": 9,
+    "start": "2025-05-16"
+   },
+   "MTAF031": {
+    "block": "6040201",
+    "corridor_blocks": [
+     "6039102",
+     "6039201",
+     "6040102",
+     "6040104",
+     "6040201",
+     "6041101",
+     "6041102",
+     "6041201",
+     "6041202"
+    ],
+    "snap_ft": 93,
+    "start": "2025-04-01"
+   },
+   "MTAF032": {
+    "block": "6040201",
+    "corridor_blocks": [
+     "6039102",
+     "6039201",
+     "6040102",
+     "6040104",
+     "6040201",
+     "6041101",
+     "6041102",
+     "6041201",
+     "6041202"
+    ],
+    "snap_ft": 80,
+    "start": "2025-04-01"
+   },
+   "MTAF033": {
+    "block": "9103000",
+    "corridor_blocks": [
+     "9102000",
+     "9103000",
+     "9104000"
+    ],
+    "snap_ft": 15,
+    "start": "2025-05-28"
+   },
+   "MTAF034": {
+    "block": "9103000",
+    "corridor_blocks": [
+     "9102000",
+     "9103000",
+     "9104000"
+    ],
+    "snap_ft": 15,
+    "start": "2025-05-30"
+   },
+   "MTAF035": {
+    "block": "457000",
+    "corridor_blocks": [
+     "456000",
+     "457000",
+     "458000"
+    ],
+    "snap_ft": 93,
+    "start": "2025-05-28"
+   },
+   "MTAF036": {
+    "block": "6719000",
+    "corridor_blocks": [
+     "6718000",
+     "6719000",
+     "6720000"
+    ],
+    "snap_ft": 6,
+    "start": "2025-05-28"
+   },
+   "MTAF037": {
+    "block": "3281000",
+    "corridor_blocks": [
+     "3280000",
+     "3281000",
+     "3282000"
+    ],
+    "snap_ft": 5,
+    "start": "2025-05-17"
+   },
+   "MTAF038": {
+    "block": "9816101",
+    "corridor_blocks": [
+     "9815101",
+     "9815202",
+     "9816101",
+     "9816201",
+     "9817101",
+     "9817201"
+    ],
+    "snap_ft": 70,
+    "start": "2025-05-30"
+   },
+   "MTAF039": {
+    "block": "9816201",
+    "corridor_blocks": [
+     "9815101",
+     "9815202",
+     "9816101",
+     "9816201",
+     "9817101",
+     "9817201"
+    ],
+    "snap_ft": 12,
+    "start": "2025-05-28"
+   },
+   "MTAF040": {
+    "block": "9275102",
+    "corridor_blocks": [
+     "9275101",
+     "9275102",
+     "9275202",
+     "9276101",
+     "9276201"
+    ],
+    "snap_ft": 90,
+    "start": "2025-05-28"
+   },
+   "MTAF041": {
+    "block": "9275201",
+    "corridor_blocks": [
+     "9274101",
+     "9274201",
+     "9275101",
+     "9275201",
+     "9275202"
+    ],
+    "snap_ft": 11,
+    "start": "2025-05-30"
+   },
+   "MTAF042": {
+    "block": "6581101",
+    "corridor_blocks": [
+     "6580101",
+     "6580201",
+     "6581101",
+     "6581201",
+     "6581202",
+     "6582101",
+     "6582201"
+    ],
+    "snap_ft": 67,
+    "start": "2025-05-30"
+   },
+   "MTAF043": {
+    "block": "6581101",
+    "corridor_blocks": [
+     "6580101",
+     "6580201",
+     "6581101",
+     "6581201",
+     "6581202",
+     "6582101",
+     "6582201"
+    ],
+    "snap_ft": 67,
+    "start": "2025-05-30"
+   },
+   "MTAF044": {
+    "block": "11437101",
+    "corridor_blocks": [
+     "11436101",
+     "11436202",
+     "11437101",
+     "11437201",
+     "11437202",
+     "11438101",
+     "11438201"
+    ],
+    "snap_ft": 85,
+    "start": "2025-05-07"
+   },
+   "MTAF045": {
+    "block": "11437101",
+    "corridor_blocks": [
+     "11436101",
+     "11436202",
+     "11437101",
+     "11437201",
+     "11437202",
+     "11438101",
+     "11438201"
+    ],
+    "snap_ft": 85,
+    "start": "2025-05-07"
+   },
+   "MTAF046": {
+    "block": "716000",
+    "corridor_blocks": [
+     "715000",
+     "716000",
+     "717000"
+    ],
+    "snap_ft": 314,
+    "start": "2025-05-31"
+   },
+   "MTAF047": {
+    "block": "716000",
+    "corridor_blocks": [
+     "715000",
+     "716000",
+     "717000"
+    ],
+    "snap_ft": 314,
+    "start": "2025-05-31"
+   },
+   "MTAF048": {
+    "block": "2485101",
+    "corridor_blocks": [
+     "2484101",
+     "2484201",
+     "2485101",
+     "2485201",
+     "2486101",
+     "2486201"
+    ],
+    "snap_ft": 179,
+    "start": "2025-05-22"
+   },
+   "MTAF049": {
+    "block": "2485101",
+    "corridor_blocks": [
+     "2484101",
+     "2484201",
+     "2485101",
+     "2485201",
+     "2486101",
+     "2486201"
+    ],
+    "snap_ft": 179,
+    "start": "2025-05-28"
+   },
+   "MTAF050": {
+    "block": "2470000",
+    "corridor_blocks": [
+     "2469000",
+     "2470000",
+     "2471000"
+    ],
+    "snap_ft": 8,
+    "start": "2025-06-06"
+   },
+   "MTAF051": {
+    "block": "2469000",
+    "corridor_blocks": [
+     "2468000",
+     "2469000",
+     "2470000"
+    ],
+    "snap_ft": 12,
+    "start": "2025-05-29"
+   },
+   "MTAF053": {
+    "block": "2822201",
+    "corridor_blocks": [
+     "2796000",
+     "2820000",
+     "2821000",
+     "2822102",
+     "2822103",
+     "2822201",
+     "2823101",
+     "2823201"
+    ],
+    "snap_ft": 15,
+    "start": "2025-06-03"
+   },
+   "MTAF054": {
+    "block": "6148101",
+    "corridor_blocks": [
+     "6147101",
+     "6147202",
+     "6148101",
+     "6148201",
+     "6148204",
+     "6149101",
+     "6149201"
+    ],
+    "snap_ft": 10,
+    "start": "2025-05-29"
+   },
+   "MTAF055": {
+    "block": "6148101",
+    "corridor_blocks": [
+     "6147101",
+     "6147202",
+     "6148101",
+     "6148201",
+     "6148204",
+     "6149101",
+     "6149201"
+    ],
+    "snap_ft": 10,
+    "start": "2025-05-29"
+   },
+   "MTAF056": {
+    "block": "9184000",
+    "corridor_blocks": [
+     "9183000",
+     "9184000",
+     "9185000"
+    ],
+    "snap_ft": 90,
+    "start": "2025-06-06"
+   },
+   "MTAF057": {
+    "block": "9184000",
+    "corridor_blocks": [
+     "9183000",
+     "9184000",
+     "9185000"
+    ],
+    "snap_ft": 90,
+    "start": "2025-06-06"
+   },
+   "MTAF058": {
+    "block": "2175101",
+    "corridor_blocks": [
+     "2174101",
+     "2174201",
+     "2175101",
+     "2175201",
+     "2175202",
+     "2176101",
+     "2176201"
+    ],
+    "snap_ft": 7,
+    "start": "2025-06-06"
+   },
+   "MTAF059": {
+    "block": "2175101",
+    "corridor_blocks": [
+     "2174101",
+     "2174201",
+     "2175101",
+     "2175201",
+     "2175202",
+     "2176101",
+     "2176201"
+    ],
+    "snap_ft": 7,
+    "start": "2025-05-31"
+   }
+  },
+  "unplaced": []
+ },
+ "coverage": {
+  "bci_traffic_category": {
+   "all": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 66605,
+      "share": 0.9942,
+      "with_value": 66605
+     },
+     "unknown": {
+      "rows": 386,
+      "share": 0.0058,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9942,
+    "values": {
+     "": 386,
+     "heavy": 3861,
+     "light": 11330,
+     "medium": 51414
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 5325,
+      "share": 0.9922,
+      "with_value": 5325
+     },
+     "unknown": {
+      "rows": 42,
+      "share": 0.0078,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9922,
+    "values": {
+     "": 42,
+     "heavy": 289,
+     "light": 876,
+     "medium": 4160
+    }
+   }
+  },
+  "corner_type": {
+   "all": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 48384,
+      "share": 0.7222,
+      "with_value": 48384
+     },
+     "not_applicable": {
+      "rows": 18492,
+      "share": 0.276,
+      "with_value": 0
+     },
+     "unknown": {
+      "rows": 115,
+      "share": 0.0017,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9976,
+    "values": {
+     "": 18607,
+     "arterial_only": 127,
+     "arterial_x_arterial": 4072,
+     "arterial_x_collector": 4406,
+     "arterial_x_other": 104,
+     "arterial_x_residential": 8472,
+     "collector_only": 27,
+     "collector_x_collector": 5662,
+     "collector_x_other": 62,
+     "collector_x_residential": 11808,
+     "freeway_only": 5,
+     "freeway_x_freeway": 4,
+     "freeway_x_ramp": 8,
+     "major_only": 4,
+     "major_x_arterial": 567,
+     "major_x_collector": 912,
+     "major_x_major": 567,
+     "major_x_other": 1,
+     "major_x_residential": 1664,
+     "other_only": 17,
+     "other_x_other": 36,
+     "ramp_only": 5,
+     "ramp_x_ramp": 5,
+     "residential_only": 87,
+     "residential_x_other": 108,
+     "residential_x_residential": 9654
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 3512,
+      "share": 0.6544,
+      "with_value": 3512
+     },
+     "not_applicable": {
+      "rows": 1844,
+      "share": 0.3436,
+      "with_value": 0
+     },
+     "unknown": {
+      "rows": 11,
+      "share": 0.002,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9969,
+    "values": {
+     "": 1855,
+     "arterial_only": 5,
+     "arterial_x_arterial": 319,
+     "arterial_x_collector": 314,
+     "arterial_x_other": 8,
+     "arterial_x_residential": 634,
+     "collector_x_collector": 429,
+     "collector_x_other": 7,
+     "collector_x_residential": 843,
+     "freeway_only": 1,
+     "major_x_arterial": 44,
+     "major_x_collector": 54,
+     "major_x_major": 42,
+     "major_x_residential": 122,
+     "other_only": 1,
+     "other_x_other": 8,
+     "ramp_x_ramp": 1,
+     "residential_only": 10,
+     "residential_x_other": 5,
+     "residential_x_residential": 665
+    }
+   }
+  },
+  "in_epc": {
+   "all": {
+    "by_basis": {
+     "definition_acs2022": {
+      "rows": 66654,
+      "share": 0.995,
+      "with_value": 66654
+     },
+     "unknown": {
+      "rows": 337,
+      "share": 0.005,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.995,
+    "values": {
+     "": 337,
+     "false": 45757,
+     "true": 20897
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "definition_acs2022": {
+      "rows": 5339,
+      "share": 0.9948,
+      "with_value": 5339
+     },
+     "unknown": {
+      "rows": 28,
+      "share": 0.0052,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9948,
+    "values": {
+     "": 28,
+     "false": 3675,
+     "true": 1664
+    }
+   }
+  },
+  "lanes": {
+   "all": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 66568,
+      "share": 0.9937,
+      "with_value": 66568
+     },
+     "unknown": {
+      "rows": 423,
+      "share": 0.0063,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9937,
+    "values": {
+     "": 423,
+     "0": 176,
+     "1": 24449,
+     "2": 23709,
+     "3": 13715,
+     "4": 3815,
+     "5": 704
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 5321,
+      "share": 0.9914,
+      "with_value": 5321
+     },
+     "unknown": {
+      "rows": 46,
+      "share": 0.0086,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9914,
+    "values": {
+     "": 46,
+     "0": 12,
+     "1": 1942,
+     "2": 1954,
+     "3": 1078,
+     "4": 281,
+     "5": 54
+    }
+   }
+  },
+  "painted_safety_zone": {
+   "all": {
+    "by_basis": {
+     "dated": {
+      "rows": 66885,
+      "share": 0.9984,
+      "with_value": 66885
+     },
+     "unknown": {
+      "rows": 106,
+      "share": 0.0016,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9984,
+    "values": {
+     "": 106,
+     "false": 64153,
+     "true": 2732
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "dated": {
+      "rows": 5357,
+      "share": 0.9981,
+      "with_value": 5357
+     },
+     "unknown": {
+      "rows": 10,
+      "share": 0.0019,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9981,
+    "values": {
+     "": 10,
+     "false": 5105,
+     "true": 252
+    }
+   }
+  },
+  "posted_speed_limit_mph": {
+   "all": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 52735,
+      "share": 0.7872,
+      "with_value": 52735
+     },
+     "dated": {
+      "rows": 13084,
+      "share": 0.1953,
+      "with_value": 13084
+     },
+     "unknown": {
+      "rows": 1172,
+      "share": 0.0175,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9825,
+    "values": {
+     "": 1172,
+     "15": 1,
+     "20": 3146,
+     "25": 54367,
+     "30": 5198,
+     "35": 2170,
+     "40": 453,
+     "45": 484
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 4163,
+      "share": 0.7757,
+      "with_value": 4163
+     },
+     "dated": {
+      "rows": 1085,
+      "share": 0.2022,
+      "with_value": 1085
+     },
+     "unknown": {
+      "rows": 119,
+      "share": 0.0222,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9778,
+    "values": {
+     "": 119,
+     "20": 308,
+     "25": 4226,
+     "30": 463,
+     "35": 166,
+     "40": 39,
+     "45": 46
+    }
+   }
+  },
+  "signal_present": {
+   "all": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 566,
+      "share": 0.0084,
+      "with_value": 566
+     },
+     "dated": {
+      "rows": 66150,
+      "share": 0.9874,
+      "with_value": 66150
+     },
+     "unknown": {
+      "rows": 275,
+      "share": 0.0041,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9959,
+    "values": {
+     "": 275,
+     "false": 35127,
+     "true": 31589
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 38,
+      "share": 0.0071,
+      "with_value": 38
+     },
+     "dated": {
+      "rows": 5304,
+      "share": 0.9883,
+      "with_value": 5304
+     },
+     "unknown": {
+      "rows": 25,
+      "share": 0.0047,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9953,
+    "values": {
+     "": 25,
+     "false": 3024,
+     "true": 2318
+    }
+   }
+  },
+  "slow_street": {
+   "all": {
+    "by_basis": {
+     "dated": {
+      "rows": 66843,
+      "share": 0.9978,
+      "with_value": 66843
+     },
+     "unknown": {
+      "rows": 148,
+      "share": 0.0022,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9978,
+    "values": {
+     "": 148,
+     "false": 66761,
+     "true": 82
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "dated": {
+      "rows": 5353,
+      "share": 0.9974,
+      "with_value": 5353
+     },
+     "unknown": {
+      "rows": 14,
+      "share": 0.0026,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9974,
+    "values": {
+     "": 14,
+     "false": 5345,
+     "true": 8
+    }
+   }
+  },
+  "speed_camera_corridor": {
+   "all": {
+    "by_basis": {
+     "dated": {
+      "rows": 66848,
+      "share": 0.9979,
+      "with_value": 66848
+     },
+     "unknown": {
+      "rows": 143,
+      "share": 0.0021,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9979,
+    "values": {
+     "": 143,
+     "false": 66589,
+     "true": 259
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "dated": {
+      "rows": 5354,
+      "share": 0.9976,
+      "with_value": 5354
+     },
+     "unknown": {
+      "rows": 13,
+      "share": 0.0024,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9976,
+    "values": {
+     "": 13,
+     "false": 5323,
+     "true": 31
+    }
+   }
+  },
+  "street_class": {
+   "all": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 66662,
+      "share": 0.9951,
+      "with_value": 66662
+     },
+     "unknown": {
+      "rows": 329,
+      "share": 0.0049,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9951,
+    "values": {
+     "": 329,
+     "arterial": 18340,
+     "collector": 22180,
+     "freeway": 53,
+     "major": 3868,
+     "other": 113,
+     "ramp": 52,
+     "residential": 22056
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "current_state_only": {
+      "rows": 5333,
+      "share": 0.9937,
+      "with_value": 5333
+     },
+     "unknown": {
+      "rows": 34,
+      "share": 0.0063,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9937,
+    "values": {
+     "": 34,
+     "arterial": 1534,
+     "collector": 1735,
+     "freeway": 6,
+     "major": 310,
+     "other": 19,
+     "ramp": 5,
+     "residential": 1724
+    }
+   }
+  },
+  "traffic_calming": {
+   "all": {
+    "by_basis": {
+     "dated": {
+      "rows": 66138,
+      "share": 0.9873,
+      "with_value": 66138
+     },
+     "unknown": {
+      "rows": 853,
+      "share": 0.0127,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9873,
+    "values": {
+     "": 853,
+     "false": 65140,
+     "true": 998
+    }
+   },
+   "ksi": {
+    "by_basis": {
+     "dated": {
+      "rows": 5285,
+      "share": 0.9847,
+      "with_value": 5285
+     },
+     "unknown": {
+      "rows": 82,
+      "share": 0.0153,
+      "with_value": 0
+     }
+    },
+    "non_null": 0.9847,
+    "values": {
+     "": 82,
+     "false": 5197,
+     "true": 88
+    }
+   }
+  }
+ },
+ "ksi_rows": 5367,
+ "rows": 66991,
+ "sources": {
+  "bci": {
+   "id": "https://services6.arcgis.com/bom7L4u7y1k0qkF1/arcgis/rest/services/Bike_Comfort_Index_Score/FeatureServer/4",
+   "read_on": "2026-11-25",
+   "rows": 15280
+  },
+  "cameras": {
+   "id": "d5uh-bk84",
+   "read_on": "2026-11-25",
+   "rows": 27734
+  },
+  "crashes": {
+   "id": "ubvf-ztfx",
+   "read_on": "2026-11-25",
+   "rows": 66991
+  },
+  "epc": {
+   "id": "https://services3.arcgis.com/i2dkYWmb4wHvYPda/arcgis/rest/services/draft_equity_priority_communities_pba2050plus_acs2022a/FeatureServer/0",
+   "read_on": "2026-11-25",
+   "rows": 242
+  },
+  "lanes": {
+   "id": "https://services.sfmta.com/arcgis/rest/services/DataSF/master/MapServer/54",
+   "read_on": "2026-11-25",
+   "rows": 15444
+  },
+  "safety_zones": {
+   "id": "vtn2-q8ky",
+   "read_on": "2026-11-25",
+   "rows": 286
+  },
+  "signals": {
+   "id": "ybh5-27n2",
+   "read_on": "2026-11-25",
+   "rows": 1507
+  },
+  "slow_streets": {
+   "id": "hkz3-itiu",
+   "read_on": "2026-11-25",
+   "rows": 240
+  },
+  "speed_limits": {
+   "id": "3t7b-gebn",
+   "read_on": "2026-11-25",
+   "rows": 16083
+  },
+  "streets": {
+   "id": "3psu-pn9h",
+   "read_on": "2026-11-25",
+   "rows": 17176
+  },
+  "traffic_calming": {
+   "id": "abhw-ffzx",
+   "read_on": "2026-11-25",
+   "rows": 1686
+  }
+ },
+ "street_block_join": {
+  "node_all": 622,
+  "node_primary_rd": 36327,
+  "none": 148,
+  "segment": 29894
+ }
+}

@@ -101,11 +101,13 @@ const md = (front, body = "Body.\n") => `---\n${front}\n---\n\n${body}`;
   assert.match(renderPage(page), /<h1>Dated<\/h1>\n<p class="data-updated">Updated <time datetime="2026-05-06">6 May 2026<\/time><\/p>/);
 }
 
-// Recent Changes: published and teaser pages, newest first, a tie broken by title, drafts left
-// out, at most n entries; nothing at all when there is nothing to list.
+// Recent Changes: published and teaser pages and the listed dashboards passed in, newest first, a tie broken by
+// title, drafts left out, only the 30 days up to the newest change, at most n entries; nothing at all when there is
+// nothing to list.
 {
   const dir = repo({
-    "old.md": md("title: Old\nstatus: published\nupdated: 2026-01-01\nsummary: The oldest."),
+    "old.md": md("title: Old\nstatus: published\nupdated: 2026-01-31\nsummary: The oldest."),
+    "stale.md": md("title: Stale\nstatus: published\nupdated: 2026-01-20"),
     "new.md": md("title: Newest\nstatus: published\nupdated: 2026-03-01"),
     "tie-b.md": md("title: Bravo\nstatus: teaser\nupdated: 2026-02-01"),
     "tie-a.md": md("title: Alpha\nstatus: published\nupdated: 2026-02-01"),
@@ -118,6 +120,9 @@ const md = (front, body = "Body.\n") => `---\n${front}\n---\n\n${body}`;
   assert.match(html, /Bravo<\/a> <span class="tag">coming soon<\/span>/);
   assert.match(html, /<span class="line">The oldest\.<\/span>/);
   assert.deepEqual(order(recentChanges(pages, 2)), ["Newest", "Alpha"]);
+  // A dashboard dated by its code joins the list; one with no date is left out.
+  const extra = [{ path: "/dash", title: "Dashboard", summary: "", updated: "2026-02-15" }, { path: "/undated", title: "Undated", updated: "" }];
+  assert.deepEqual(order(recentChanges(pages, 12, extra)), ["Newest", "Dashboard", "Alpha", "Bravo", "Old"]);
   assert.equal(recentChanges([]), "");
 }
 

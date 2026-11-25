@@ -107,7 +107,8 @@
     if (box && o.picker) {
       head = document.createElement("div");
       head.className = "sm-chart-head";
-      head.innerHTML = '<select class="sm-chart-pick" aria-label="Chart"></select><button type="button" class="sm-chart-up" hidden></button>';
+      head.innerHTML = (o.chartLabel ? '<p class="sm-chart-label">' + esc(o.chartLabel) + "</p>" : "") +
+        '<select class="sm-chart-pick" aria-label="' + esc(o.chartLabel || "Chart") + '"></select><button type="button" class="sm-chart-up" hidden></button>';
       box.insertBefore(head, box.firstChild);
       pick = head.querySelector("select"); upBtn = head.querySelector(".sm-chart-up");
       pick.addEventListener("change", function () { ctl.setState({ chart: { id: pick.value } }); });

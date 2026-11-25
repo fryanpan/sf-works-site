@@ -467,18 +467,37 @@ ${rows.join("\n")}
 }
 
 /**
- * The front page's Recent Changes list: published and teaser pages, newest
- * first by their updated date, then by title. Empty when there are none, so
- * the front page shows no empty heading.
+ * The front page's Recent Changes list: every published or teaser page, and
+ * every listed tool or dashboard page (`extra`, as {path, title, summary,
+ * updated}), changed in the 30 days up to the newest change, newest first by
+ * date and then by title, at most `n`.
+ *
+ * Bryan, 2026-11-24: "in recent changes, please show everything that's been
+ * edited lately, including dashboards. (But don't count data refreshes as an
+ * update — an edit on a dashboard is change in dashboard functionality)". So
+ * a dashboard is dated by the last commit to its code (scripts/site-files.mjs,
+ * codeFiles), never by when its data was read. The window is measured from the
+ * newest change rather than today, so a rebuild with no new commit prints the
+ * same list. Empty when there are no pages, so the front page shows no empty
+ * heading.
  */
-export function recentChanges(pages = mdPages(), n = 5) {
-  const shown = pages
-    .filter((p) => p.status !== "draft" && !p.version)
-    .sort((a, b) => (a.updated === b.updated ? a.front.title.localeCompare(b.front.title) : a.updated < b.updated ? 1 : -1))
+export const RECENT_DAYS = 30;
+/** Where the front page wants its Recent Changes list. */
+export const RECENT_MARK = "<!--recent-changes-->";
+export function recentChanges(pages = mdPages(), n = 12, extra = []) {
+  const all = [
+    ...pages.filter((p) => p.status !== "draft" && !p.version).map((p) => ({ path: p.path, title: p.front.title, summary: p.front.summary, updated: p.updated, teaser: p.status === "teaser" })),
+    ...extra.filter((e) => /^\d{4}-\d{2}-\d{2}/.test(e.updated || "")),
+  ];
+  const newest = all.map((p) => p.updated).sort().pop();
+  const from = newest ? new Date(Date.parse(newest) - RECENT_DAYS * 864e5).toISOString().slice(0, 10) : "";
+  const shown = all
+    .filter((p) => p.updated >= from)
+    .sort((a, b) => (a.updated === b.updated ? a.title.localeCompare(b.title) : a.updated < b.updated ? 1 : -1))
     .slice(0, n);
   if (!shown.length) return "";
   const li = shown.map(
-    (p) => `<li><a href="${p.path}">${esc(p.front.title)}</a>${p.status === "teaser" ? ' <span class="tag">coming soon</span>' : ""}<span class="when">Updated <time datetime="${p.updated}">${shortDate(p.updated)}</time></span>${p.front.summary ? `<span class="line">${esc(p.front.summary)}</span>` : ""}</li>`,
+    (p) => `<li><a href="${p.path}">${esc(p.title)}</a>${p.teaser ? ' <span class="tag">coming soon</span>' : ""}<span class="when">Updated <time datetime="${p.updated}">${shortDate(p.updated)}</time></span>${p.summary ? `<span class="line">${esc(p.summary)}</span>` : ""}</li>`,
   );
   return `<section class="recent-changes" aria-labelledby="recent-h">
 <h2 id="recent-h">Recent Changes</h2>

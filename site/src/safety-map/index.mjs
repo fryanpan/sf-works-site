@@ -130,6 +130,7 @@ export const CSS = `<style>
 .sm-ov[hidden] { display: none; }
 .sm-legend { left: 10px; bottom: 26px; max-width: min(340px, calc(100% - 20px)); padding: 8px 10px; }
 .sm-head { margin: 0 0 4px; font-size: 0.84rem; line-height: 1.35; }
+.sm-chart-label { margin: 0 0 2px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; color: var(--sm-muted); }
 .sm-head b { font-family: Archivo, sans-serif; font-size: 1.05rem; color: var(--sm-ink); }
 .sm-chart { right: 10px; bottom: 26px; width: 290px; padding: 8px 10px 4px; --chart-font: "Public Sans", system-ui, sans-serif; }
 /* A long chart (every year from 2005) scrolls inside its corner, clear of the zoom buttons. */
@@ -141,7 +142,7 @@ export const CSS = `<style>
 .sm-chart svg { font-size: 11px !important; }
 .sm-chart .plot-chart-subtitle { color: var(--sm-muted); font-size: 0.74rem; margin: 0 0 2px; }
 .sm-chart-head { display: flex; align-items: center; gap: 6px; margin: 0 0 2px; }
-.sm-chart-head.one { display: none; }
+.sm-chart-head.one .sm-chart-pick { display: none; }
 .sm-chart-pick { flex: 1; min-width: 0; font: inherit; font-weight: 600; font-size: 0.82rem; color: var(--sm-ink); border: 1px solid transparent; border-radius: 4px; background-color: transparent; padding: 1px 2px; margin-left: -3px; cursor: pointer; text-overflow: ellipsis; }
 .sm-chart-pick:hover, .sm-chart-pick:focus-visible { border-color: var(--rule, #dfe3e9); background-color: #fff; }
 .sm-chart-up { flex: none; font: inherit; font-size: 0.75rem; color: var(--sm-highlight, #2f7d76); background: none; border: 0; padding: 2px 4px; cursor: pointer; }

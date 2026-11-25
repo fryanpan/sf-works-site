@@ -1,0 +1,1698 @@
+{
+ "about": "Does the vehicle-weight effect on pedestrian KSI hold once the posted speed limit and an unsafe-speed primary collision factor are taken into account? Mantel-Haenszel odds ratios, over 5,000 lb against under 3,500 lb, with the n in every stratum.",
+ "years": [
+  2017,
+  2024
+ ],
+ "selection": "pedestrians hurt in crashes with exactly one moving motor vehicle (crash-profiles.py vehicle_weight)",
+ "compares": "over 5,000 lb vs under 3,500 lb; Mantel-Haenszel (Robins, Breslow and Greenland 1986 interval)",
+ "like_for_like": "model_matched (every heavy vehicle is model-matched; about half the light side of all_weighted is a body-type average)",
+ "reproduces_results_json_class_light": {
+  "all_weighted": {
+   "pedestrian": {
+    "results_json": [
+     1.5,
+     [
+      1.04,
+      2.17
+     ],
+     [
+      209,
+      38
+     ],
+     [
+      3243,
+      434
+     ]
+    ],
+    "here": [
+     1.5,
+     [
+      1.04,
+      2.17
+     ],
+     [
+      209,
+      38
+     ],
+     [
+      3243,
+      434
+     ]
+    ],
+    "same": true
+   },
+   "crash": {
+    "results_json": [
+     1.47,
+     [
+      1.01,
+      2.14
+     ],
+     [
+      201,
+      37
+     ],
+     [
+      3103,
+      428
+     ]
+    ],
+    "here": [
+     1.47,
+     [
+      1.01,
+      2.14
+     ],
+     [
+      201,
+      37
+     ],
+     [
+      3103,
+      428
+     ]
+    ],
+    "same": true
+   }
+  },
+  "model_matched": {
+   "pedestrian": {
+    "results_json": [
+     1.49,
+     [
+      1.02,
+      2.18
+     ],
+     [
+      209,
+      38
+     ],
+     [
+      1679,
+      227
+     ]
+    ],
+    "here": [
+     1.49,
+     [
+      1.02,
+      2.18
+     ],
+     [
+      209,
+      38
+     ],
+     [
+      1679,
+      227
+     ]
+    ],
+    "same": true
+   },
+   "crash": {
+    "results_json": [
+     1.44,
+     [
+      0.98,
+      2.13
+     ],
+     [
+      201,
+      37
+     ],
+     [
+      1601,
+      225
+     ]
+    ],
+    "here": [
+     1.44,
+     [
+      0.98,
+      2.13
+     ],
+     [
+      201,
+      37
+     ],
+     [
+      1601,
+      225
+     ]
+    ],
+    "same": true
+   }
+  }
+ },
+ "sets": {
+  "all_weighted": {
+   "bands": [
+    {
+     "band": "under 3,500 lb",
+     "pedestrians_hurt": 3243,
+     "pedestrians_ksi": 434,
+     "ksi_rate": 0.1338
+    },
+    {
+     "band": "3,500 to 5,000 lb",
+     "pedestrians_hurt": 1528,
+     "pedestrians_ksi": 230,
+     "ksi_rate": 0.1505
+    },
+    {
+     "band": "over 5,000 lb",
+     "pedestrians_hurt": 209,
+     "pedestrians_ksi": 38,
+     "ksi_rate": 0.1818
+    },
+    {
+     "band": "no weight",
+     "pedestrians_hurt": 499,
+     "pedestrians_ksi": 116,
+     "ksi_rate": 0.2325
+    }
+   ],
+   "odds_ratios": {
+    "class_light": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       3243,
+       434
+      ],
+      "crude": 1.44,
+      "mantel_haenszel": 1.5,
+      "ci95": [
+       1.04,
+       2.17
+      ],
+      "strata": 21,
+      "strata_with_both_sides": 11,
+      "strata_informative": 11
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       3103,
+       428
+      ],
+      "crude": 1.41,
+      "mantel_haenszel": 1.47,
+      "ci95": [
+       1.01,
+       2.14
+      ],
+      "strata": 21,
+      "strata_with_both_sides": 11,
+      "strata_informative": 11
+     }
+    },
+    "class_light_limit": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       3243,
+       434
+      ],
+      "crude": 1.44,
+      "mantel_haenszel": 1.54,
+      "ci95": [
+       1.06,
+       2.24
+      ],
+      "strata": 63,
+      "strata_with_both_sides": 22,
+      "strata_informative": 21
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       3103,
+       428
+      ],
+      "crude": 1.41,
+      "mantel_haenszel": 1.5,
+      "ci95": [
+       1.03,
+       2.18
+      ],
+      "strata": 63,
+      "strata_with_both_sides": 22,
+      "strata_informative": 21
+     }
+    },
+    "class_light_limit_pcf": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       3243,
+       434
+      ],
+      "crude": 1.44,
+      "mantel_haenszel": 1.53,
+      "ci95": [
+       1.05,
+       2.23
+      ],
+      "strata": 90,
+      "strata_with_both_sides": 27,
+      "strata_informative": 26
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       3103,
+       428
+      ],
+      "crude": 1.41,
+      "mantel_haenszel": 1.5,
+      "ci95": [
+       1.02,
+       2.19
+      ],
+      "strata": 90,
+      "strata_with_both_sides": 27,
+      "strata_informative": 26
+     }
+    },
+    "limit_only": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       3243,
+       434
+      ],
+      "crude": 1.44,
+      "mantel_haenszel": 1.47,
+      "ci95": [
+       1.02,
+       2.12
+      ],
+      "strata": 5,
+      "strata_with_both_sides": 5,
+      "strata_informative": 5
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       3103,
+       428
+      ],
+      "crude": 1.41,
+      "mantel_haenszel": 1.44,
+      "ci95": [
+       0.99,
+       2.09
+      ],
+      "strata": 5,
+      "strata_with_both_sides": 5,
+      "strata_informative": 5
+     }
+    },
+    "class_light_limit_excluding_unsafe_speed_pcf": {
+     "pedestrian": {
+      "heavy": [
+       199,
+       34
+      ],
+      "light": [
+       3049,
+       395
+      ],
+      "crude": 1.38,
+      "mantel_haenszel": 1.45,
+      "ci95": [
+       0.98,
+       2.14
+      ],
+      "strata": 62,
+      "strata_with_both_sides": 22,
+      "strata_informative": 21
+     },
+     "crash": {
+      "heavy": [
+       192,
+       33
+      ],
+      "light": [
+       2922,
+       389
+      ],
+      "crude": 1.35,
+      "mantel_haenszel": 1.4,
+      "ci95": [
+       0.94,
+       2.08
+      ],
+      "strata": 62,
+      "strata_with_both_sides": 22,
+      "strata_informative": 21
+     }
+    }
+   },
+   "by_posted_limit": [
+    {
+     "limit": "20 or under",
+     "pedestrians_hurt": 464,
+     "pedestrians_ksi": 65,
+     "basis_people": {
+      "current_state_only": 50,
+      "dated": 414
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 233,
+       "pedestrians_ksi": 24,
+       "ksi_rate": 0.103
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 155,
+       "pedestrians_ksi": 29,
+       "ksi_rate": 0.1871
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 19,
+       "pedestrians_ksi": 3,
+       "ksi_rate": 0.1579
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 57,
+       "pedestrians_ksi": 9,
+       "ksi_rate": 0.1579
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        19,
+        3
+       ],
+       "light": [
+        233,
+        24
+       ],
+       "crude": 1.63,
+       "mantel_haenszel": 1.96,
+       "ci95": [
+        0.51,
+        7.55
+       ],
+       "strata": 11,
+       "strata_with_both_sides": 6,
+       "strata_informative": 5
+      },
+      "crash": {
+       "heavy": [
+        18,
+        3
+       ],
+       "light": [
+        219,
+        22
+       ],
+       "crude": 1.79,
+       "mantel_haenszel": 1.91,
+       "ci95": [
+        0.5,
+        7.38
+       ],
+       "strata": 11,
+       "strata_with_both_sides": 6,
+       "strata_informative": 5
+      }
+     }
+    },
+    {
+     "limit": "25",
+     "pedestrians_hurt": 4617,
+     "pedestrians_ksi": 662,
+     "basis_people": {
+      "current_state_only": 3586,
+      "dated": 1031
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 2787,
+       "pedestrians_ksi": 359,
+       "ksi_rate": 0.1288
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 1244,
+       "pedestrians_ksi": 172,
+       "ksi_rate": 0.1383
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 179,
+       "pedestrians_ksi": 33,
+       "ksi_rate": 0.1844
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 407,
+       "pedestrians_ksi": 98,
+       "ksi_rate": 0.2408
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        179,
+        33
+       ],
+       "light": [
+        2787,
+        359
+       ],
+       "crude": 1.53,
+       "mantel_haenszel": 1.59,
+       "ci95": [
+        1.07,
+        2.37
+       ],
+       "strata": 20,
+       "strata_with_both_sides": 11,
+       "strata_informative": 11
+      },
+      "crash": {
+       "heavy": [
+        172,
+        32
+       ],
+       "light": [
+        2668,
+        355
+       ],
+       "crude": 1.49,
+       "mantel_haenszel": 1.55,
+       "ci95": [
+        1.04,
+        2.31
+       ],
+       "strata": 20,
+       "strata_with_both_sides": 11,
+       "strata_informative": 11
+      }
+     }
+    },
+    {
+     "limit": "30",
+     "pedestrians_hurt": 245,
+     "pedestrians_ksi": 55,
+     "basis_people": {
+      "current_state_only": 245
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 139,
+       "pedestrians_ksi": 26,
+       "ksi_rate": 0.1871
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 78,
+       "pedestrians_ksi": 20,
+       "ksi_rate": 0.2564
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 7,
+       "pedestrians_ksi": 1,
+       "ksi_rate": 0.1429
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 21,
+       "pedestrians_ksi": 8,
+       "ksi_rate": 0.381
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        7,
+        1
+       ],
+       "light": [
+        139,
+        26
+       ],
+       "crude": 0.72,
+       "mantel_haenszel": 0.82,
+       "ci95": [
+        0.09,
+        7.44
+       ],
+       "strata": 13,
+       "strata_with_both_sides": 3,
+       "strata_informative": 3
+      },
+      "crash": {
+       "heavy": [
+        7,
+        1
+       ],
+       "light": [
+        134,
+        26
+       ],
+       "crude": 0.69,
+       "mantel_haenszel": 0.79,
+       "ci95": [
+        0.09,
+        7.16
+       ],
+       "strata": 13,
+       "strata_with_both_sides": 3,
+       "strata_informative": 3
+      }
+     }
+    },
+    {
+     "limit": "35 or more",
+     "pedestrians_hurt": 107,
+     "pedestrians_ksi": 28,
+     "basis_people": {
+      "current_state_only": 107
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 64,
+       "pedestrians_ksi": 22,
+       "ksi_rate": 0.3438
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 31,
+       "pedestrians_ksi": 4,
+       "ksi_rate": 0.129
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 3,
+       "pedestrians_ksi": 1,
+       "ksi_rate": 0.3333
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 9,
+       "pedestrians_ksi": 1,
+       "ksi_rate": 0.1111
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        3,
+        1
+       ],
+       "light": [
+        64,
+        22
+       ],
+       "crude": 0.95,
+       "mantel_haenszel": 0.29,
+       "ci95": [
+        0.01,
+        10.17
+       ],
+       "strata": 9,
+       "strata_with_both_sides": 2,
+       "strata_informative": 2
+      },
+      "crash": {
+       "heavy": [
+        3,
+        1
+       ],
+       "light": [
+        62,
+        22
+       ],
+       "crude": 0.91,
+       "mantel_haenszel": 0.29,
+       "ci95": [
+        0.01,
+        10.17
+       ],
+       "strata": 9,
+       "strata_with_both_sides": 2,
+       "strata_informative": 2
+      }
+     }
+    },
+    {
+     "limit": "unknown",
+     "pedestrians_hurt": 46,
+     "pedestrians_ksi": 8,
+     "basis_people": {
+      "unknown": 46
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 20,
+       "pedestrians_ksi": 3,
+       "ksi_rate": 0.15
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 20,
+       "pedestrians_ksi": 5,
+       "ksi_rate": 0.25
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 1,
+       "pedestrians_ksi": 0,
+       "ksi_rate": 0.0
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 5,
+       "pedestrians_ksi": 0,
+       "ksi_rate": 0.0
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        1,
+        0
+       ],
+       "light": [
+        20,
+        3
+       ],
+       "crude": null,
+       "mantel_haenszel": null,
+       "ci95": null,
+       "strata": 10,
+       "strata_with_both_sides": 0,
+       "strata_informative": 0
+      },
+      "crash": {
+       "heavy": [
+        1,
+        0
+       ],
+       "light": [
+        20,
+        3
+       ],
+       "crude": null,
+       "mantel_haenszel": null,
+       "ci95": null,
+       "strata": 10,
+       "strata_with_both_sides": 0,
+       "strata_informative": 0
+      }
+     }
+    }
+   ],
+   "by_unsafe_speed_pcf": [
+    {
+     "primary_collision_factor": "unsafe speed",
+     "pedestrians_hurt": 328,
+     "pedestrians_ksi": 70,
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 194,
+       "pedestrians_ksi": 39,
+       "ksi_rate": 0.201
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 76,
+       "pedestrians_ksi": 14,
+       "ksi_rate": 0.1842
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 10,
+       "pedestrians_ksi": 4,
+       "ksi_rate": 0.4
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 48,
+       "pedestrians_ksi": 13,
+       "ksi_rate": 0.2708
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        10,
+        4
+       ],
+       "light": [
+        194,
+        39
+       ],
+       "crude": 2.65,
+       "mantel_haenszel": 3.43,
+       "ci95": [
+        0.81,
+        14.59
+       ],
+       "strata": 28,
+       "strata_with_both_sides": 5,
+       "strata_informative": 5
+      },
+      "crash": {
+       "heavy": [
+        9,
+        4
+       ],
+       "light": [
+        181,
+        39
+       ],
+       "crude": 2.91,
+       "mantel_haenszel": 4.61,
+       "ci95": [
+        0.97,
+        21.85
+       ],
+       "strata": 28,
+       "strata_with_both_sides": 5,
+       "strata_informative": 5
+      }
+     }
+    },
+    {
+     "primary_collision_factor": "any other or not stated",
+     "pedestrians_hurt": 5151,
+     "pedestrians_ksi": 748,
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 3049,
+       "pedestrians_ksi": 395,
+       "ksi_rate": 0.1296
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 1452,
+       "pedestrians_ksi": 216,
+       "ksi_rate": 0.1488
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 199,
+       "pedestrians_ksi": 34,
+       "ksi_rate": 0.1709
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 451,
+       "pedestrians_ksi": 103,
+       "ksi_rate": 0.2284
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        199,
+        34
+       ],
+       "light": [
+        3049,
+        395
+       ],
+       "crude": 1.38,
+       "mantel_haenszel": 1.45,
+       "ci95": [
+        0.98,
+        2.14
+       ],
+       "strata": 62,
+       "strata_with_both_sides": 22,
+       "strata_informative": 21
+      },
+      "crash": {
+       "heavy": [
+        192,
+        33
+       ],
+       "light": [
+        2922,
+        389
+       ],
+       "crude": 1.35,
+       "mantel_haenszel": 1.4,
+       "ci95": [
+        0.94,
+        2.08
+       ],
+       "strata": 62,
+       "strata_with_both_sides": 22,
+       "strata_informative": 21
+      }
+     }
+    }
+   ],
+   "heavy_share_by_posted_limit": [
+    {
+     "limit": "20 or under",
+     "heavy_or_light_pedestrians": 252,
+     "heavy": 19,
+     "heavy_share": 0.0754
+    },
+    {
+     "limit": "25",
+     "heavy_or_light_pedestrians": 2966,
+     "heavy": 179,
+     "heavy_share": 0.0604
+    },
+    {
+     "limit": "30",
+     "heavy_or_light_pedestrians": 146,
+     "heavy": 7,
+     "heavy_share": 0.0479
+    },
+    {
+     "limit": "35 or more",
+     "heavy_or_light_pedestrians": 67,
+     "heavy": 3,
+     "heavy_share": 0.0448
+    },
+    {
+     "limit": "unknown",
+     "heavy_or_light_pedestrians": 21,
+     "heavy": 1,
+     "heavy_share": 0.0476
+    }
+   ]
+  },
+  "model_matched": {
+   "bands": [
+    {
+     "band": "under 3,500 lb",
+     "pedestrians_hurt": 1679,
+     "pedestrians_ksi": 227,
+     "ksi_rate": 0.1352
+    },
+    {
+     "band": "3,500 to 5,000 lb",
+     "pedestrians_hurt": 1136,
+     "pedestrians_ksi": 168,
+     "ksi_rate": 0.1479
+    },
+    {
+     "band": "over 5,000 lb",
+     "pedestrians_hurt": 209,
+     "pedestrians_ksi": 38,
+     "ksi_rate": 0.1818
+    },
+    {
+     "band": "no weight",
+     "pedestrians_hurt": 0,
+     "pedestrians_ksi": 0,
+     "ksi_rate": null
+    }
+   ],
+   "odds_ratios": {
+    "class_light": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       1679,
+       227
+      ],
+      "crude": 1.42,
+      "mantel_haenszel": 1.49,
+      "ci95": [
+       1.02,
+       2.18
+      ],
+      "strata": 19,
+      "strata_with_both_sides": 11,
+      "strata_informative": 10
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       1601,
+       225
+      ],
+      "crude": 1.38,
+      "mantel_haenszel": 1.44,
+      "ci95": [
+       0.98,
+       2.13
+      ],
+      "strata": 19,
+      "strata_with_both_sides": 11,
+      "strata_informative": 10
+     }
+    },
+    "class_light_limit": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       1679,
+       227
+      ],
+      "crude": 1.42,
+      "mantel_haenszel": 1.5,
+      "ci95": [
+       1.02,
+       2.21
+      ],
+      "strata": 56,
+      "strata_with_both_sides": 22,
+      "strata_informative": 19
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       1601,
+       225
+      ],
+      "crude": 1.38,
+      "mantel_haenszel": 1.45,
+      "ci95": [
+       0.98,
+       2.14
+      ],
+      "strata": 56,
+      "strata_with_both_sides": 22,
+      "strata_informative": 19
+     }
+    },
+    "class_light_limit_pcf": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       1679,
+       227
+      ],
+      "crude": 1.42,
+      "mantel_haenszel": 1.49,
+      "ci95": [
+       1.01,
+       2.2
+      ],
+      "strata": 74,
+      "strata_with_both_sides": 26,
+      "strata_informative": 23
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       1601,
+       225
+      ],
+      "crude": 1.38,
+      "mantel_haenszel": 1.44,
+      "ci95": [
+       0.97,
+       2.13
+      ],
+      "strata": 74,
+      "strata_with_both_sides": 26,
+      "strata_informative": 23
+     }
+    },
+    "limit_only": {
+     "pedestrian": {
+      "heavy": [
+       209,
+       38
+      ],
+      "light": [
+       1679,
+       227
+      ],
+      "crude": 1.42,
+      "mantel_haenszel": 1.45,
+      "ci95": [
+       0.99,
+       2.12
+      ],
+      "strata": 5,
+      "strata_with_both_sides": 5,
+      "strata_informative": 5
+     },
+     "crash": {
+      "heavy": [
+       201,
+       37
+      ],
+      "light": [
+       1601,
+       225
+      ],
+      "crude": 1.38,
+      "mantel_haenszel": 1.41,
+      "ci95": [
+       0.96,
+       2.06
+      ],
+      "strata": 5,
+      "strata_with_both_sides": 5,
+      "strata_informative": 5
+     }
+    },
+    "class_light_limit_excluding_unsafe_speed_pcf": {
+     "pedestrian": {
+      "heavy": [
+       199,
+       34
+      ],
+      "light": [
+       1605,
+       213
+      ],
+      "crude": 1.35,
+      "mantel_haenszel": 1.39,
+      "ci95": [
+       0.93,
+       2.09
+      ],
+      "strata": 55,
+      "strata_with_both_sides": 22,
+      "strata_informative": 19
+     },
+     "crash": {
+      "heavy": [
+       192,
+       33
+      ],
+      "light": [
+       1533,
+       211
+      ],
+      "crude": 1.3,
+      "mantel_haenszel": 1.34,
+      "ci95": [
+       0.89,
+       2.01
+      ],
+      "strata": 55,
+      "strata_with_both_sides": 22,
+      "strata_informative": 19
+     }
+    }
+   },
+   "by_posted_limit": [
+    {
+     "limit": "20 or under",
+     "pedestrians_hurt": 276,
+     "pedestrians_ksi": 44,
+     "basis_people": {
+      "current_state_only": 31,
+      "dated": 245
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 143,
+       "pedestrians_ksi": 19,
+       "ksi_rate": 0.1329
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 114,
+       "pedestrians_ksi": 22,
+       "ksi_rate": 0.193
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 19,
+       "pedestrians_ksi": 3,
+       "ksi_rate": 0.1579
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        19,
+        3
+       ],
+       "light": [
+        143,
+        19
+       ],
+       "crude": 1.22,
+       "mantel_haenszel": 1.26,
+       "ci95": [
+        0.32,
+        4.92
+       ],
+       "strata": 10,
+       "strata_with_both_sides": 6,
+       "strata_informative": 5
+      },
+      "crash": {
+       "heavy": [
+        18,
+        3
+       ],
+       "light": [
+        135,
+        19
+       ],
+       "crude": 1.22,
+       "mantel_haenszel": 1.19,
+       "ci95": [
+        0.3,
+        4.65
+       ],
+       "strata": 10,
+       "strata_with_both_sides": 6,
+       "strata_informative": 5
+      }
+     }
+    },
+    {
+     "limit": "25",
+     "pedestrians_hurt": 2504,
+     "pedestrians_ksi": 332,
+     "basis_people": {
+      "current_state_only": 2020,
+      "dated": 484
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 1405,
+       "pedestrians_ksi": 178,
+       "ksi_rate": 0.1267
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 920,
+       "pedestrians_ksi": 121,
+       "ksi_rate": 0.1315
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 179,
+       "pedestrians_ksi": 33,
+       "ksi_rate": 0.1844
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        179,
+        33
+       ],
+       "light": [
+        1405,
+        178
+       ],
+       "crude": 1.56,
+       "mantel_haenszel": 1.61,
+       "ci95": [
+        1.07,
+        2.44
+       ],
+       "strata": 18,
+       "strata_with_both_sides": 11,
+       "strata_informative": 10
+      },
+      "crash": {
+       "heavy": [
+        172,
+        32
+       ],
+       "light": [
+        1339,
+        176
+       ],
+       "crude": 1.51,
+       "mantel_haenszel": 1.57,
+       "ci95": [
+        1.03,
+        2.38
+       ],
+       "strata": 18,
+       "strata_with_both_sides": 11,
+       "strata_informative": 10
+      }
+     }
+    },
+    {
+     "limit": "30",
+     "pedestrians_hurt": 146,
+     "pedestrians_ksi": 35,
+     "basis_people": {
+      "current_state_only": 146
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 79,
+       "pedestrians_ksi": 18,
+       "ksi_rate": 0.2278
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 60,
+       "pedestrians_ksi": 16,
+       "ksi_rate": 0.2667
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 7,
+       "pedestrians_ksi": 1,
+       "ksi_rate": 0.1429
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        7,
+        1
+       ],
+       "light": [
+        79,
+        18
+       ],
+       "crude": 0.56,
+       "mantel_haenszel": 0.59,
+       "ci95": [
+        0.06,
+        5.78
+       ],
+       "strata": 11,
+       "strata_with_both_sides": 3,
+       "strata_informative": 3
+      },
+      "crash": {
+       "heavy": [
+        7,
+        1
+       ],
+       "light": [
+        75,
+        18
+       ],
+       "crude": 0.53,
+       "mantel_haenszel": 0.57,
+       "ci95": [
+        0.06,
+        5.53
+       ],
+       "strata": 11,
+       "strata_with_both_sides": 3,
+       "strata_informative": 3
+      }
+     }
+    },
+    {
+     "limit": "35 or more",
+     "pedestrians_hurt": 62,
+     "pedestrians_ksi": 15,
+     "basis_people": {
+      "current_state_only": 62
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 37,
+       "pedestrians_ksi": 10,
+       "ksi_rate": 0.2703
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 22,
+       "pedestrians_ksi": 4,
+       "ksi_rate": 0.1818
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 3,
+       "pedestrians_ksi": 1,
+       "ksi_rate": 0.3333
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        3,
+        1
+       ],
+       "light": [
+        37,
+        10
+       ],
+       "crude": 1.35,
+       "mantel_haenszel": 0.5,
+       "ci95": [
+        0.01,
+        19.56
+       ],
+       "strata": 8,
+       "strata_with_both_sides": 2,
+       "strata_informative": 1
+      },
+      "crash": {
+       "heavy": [
+        3,
+        1
+       ],
+       "light": [
+        37,
+        10
+       ],
+       "crude": 1.35,
+       "mantel_haenszel": 0.5,
+       "ci95": [
+        0.01,
+        19.56
+       ],
+       "strata": 8,
+       "strata_with_both_sides": 2,
+       "strata_informative": 1
+      }
+     }
+    },
+    {
+     "limit": "unknown",
+     "pedestrians_hurt": 36,
+     "pedestrians_ksi": 7,
+     "basis_people": {
+      "unknown": 36
+     },
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 15,
+       "pedestrians_ksi": 2,
+       "ksi_rate": 0.1333
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 20,
+       "pedestrians_ksi": 5,
+       "ksi_rate": 0.25
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 1,
+       "pedestrians_ksi": 0,
+       "ksi_rate": 0.0
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        1,
+        0
+       ],
+       "light": [
+        15,
+        2
+       ],
+       "crude": null,
+       "mantel_haenszel": null,
+       "ci95": null,
+       "strata": 9,
+       "strata_with_both_sides": 0,
+       "strata_informative": 0
+      },
+      "crash": {
+       "heavy": [
+        1,
+        0
+       ],
+       "light": [
+        15,
+        2
+       ],
+       "crude": null,
+       "mantel_haenszel": null,
+       "ci95": null,
+       "strata": 9,
+       "strata_with_both_sides": 0,
+       "strata_informative": 0
+      }
+     }
+    }
+   ],
+   "by_unsafe_speed_pcf": [
+    {
+     "primary_collision_factor": "unsafe speed",
+     "pedestrians_hurt": 137,
+     "pedestrians_ksi": 28,
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 74,
+       "pedestrians_ksi": 14,
+       "ksi_rate": 0.1892
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 53,
+       "pedestrians_ksi": 10,
+       "ksi_rate": 0.1887
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 10,
+       "pedestrians_ksi": 4,
+       "ksi_rate": 0.4
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        10,
+        4
+       ],
+       "light": [
+        74,
+        14
+       ],
+       "crude": 2.86,
+       "mantel_haenszel": 6.58,
+       "ci95": [
+        1.08,
+        39.95
+       ],
+       "strata": 19,
+       "strata_with_both_sides": 4,
+       "strata_informative": 4
+      },
+      "crash": {
+       "heavy": [
+        9,
+        4
+       ],
+       "light": [
+        68,
+        14
+       ],
+       "crude": 3.09,
+       "mantel_haenszel": 8.87,
+       "ci95": [
+        1.31,
+        60.28
+       ],
+       "strata": 19,
+       "strata_with_both_sides": 4,
+       "strata_informative": 4
+      }
+     }
+    },
+    {
+     "primary_collision_factor": "any other or not stated",
+     "pedestrians_hurt": 2887,
+     "pedestrians_ksi": 405,
+     "bands": [
+      {
+       "band": "under 3,500 lb",
+       "pedestrians_hurt": 1605,
+       "pedestrians_ksi": 213,
+       "ksi_rate": 0.1327
+      },
+      {
+       "band": "3,500 to 5,000 lb",
+       "pedestrians_hurt": 1083,
+       "pedestrians_ksi": 158,
+       "ksi_rate": 0.1459
+      },
+      {
+       "band": "over 5,000 lb",
+       "pedestrians_hurt": 199,
+       "pedestrians_ksi": 34,
+       "ksi_rate": 0.1709
+      },
+      {
+       "band": "no weight",
+       "pedestrians_hurt": 0,
+       "pedestrians_ksi": 0,
+       "ksi_rate": null
+      }
+     ],
+     "heavy_vs_light": {
+      "pedestrian": {
+       "heavy": [
+        199,
+        34
+       ],
+       "light": [
+        1605,
+        213
+       ],
+       "crude": 1.35,
+       "mantel_haenszel": 1.39,
+       "ci95": [
+        0.93,
+        2.09
+       ],
+       "strata": 55,
+       "strata_with_both_sides": 22,
+       "strata_informative": 19
+      },
+      "crash": {
+       "heavy": [
+        192,
+        33
+       ],
+       "light": [
+        1533,
+        211
+       ],
+       "crude": 1.3,
+       "mantel_haenszel": 1.34,
+       "ci95": [
+        0.89,
+        2.01
+       ],
+       "strata": 55,
+       "strata_with_both_sides": 22,
+       "strata_informative": 19
+      }
+     }
+    }
+   ],
+   "heavy_share_by_posted_limit": [
+    {
+     "limit": "20 or under",
+     "heavy_or_light_pedestrians": 162,
+     "heavy": 19,
+     "heavy_share": 0.1173
+    },
+    {
+     "limit": "25",
+     "heavy_or_light_pedestrians": 1584,
+     "heavy": 179,
+     "heavy_share": 0.113
+    },
+    {
+     "limit": "30",
+     "heavy_or_light_pedestrians": 86,
+     "heavy": 7,
+     "heavy_share": 0.0814
+    },
+    {
+     "limit": "35 or more",
+     "heavy_or_light_pedestrians": 40,
+     "heavy": 3,
+     "heavy_share": 0.075
+    },
+    {
+     "limit": "unknown",
+     "heavy_or_light_pedestrians": 16,
+     "heavy": 1,
+     "heavy_share": 0.0625
+    }
+   ]
+  }
+ }
+}

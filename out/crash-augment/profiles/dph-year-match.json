@@ -1,0 +1,901 @@
+{
+ "about": "Year-by-year match of police-reported severe injuries and deaths (DataSF nwes-mmgh) against SFDPH's published hospital counts (ZSFG trauma registry) and OME-verified deaths, 2015-2024, by mode where SFDPH gives it.",
+ "caveats": [
+  "A ratio of two counts, not a linkage rate.",
+  "ZSFG severe includes freeways, the Presidio and off-street rail; police and OME exclude highways, so each ratio understates the police share of the same population, most for 'everyone else'.",
+  "SFDPH counts e-scooter riders as pedestrians; see pedestrian_with_police_scooter_riders.",
+  "ZSFG severe leaves out deaths; dph_ksi_zsfg_plus_ome adds OME deaths to it.",
+  "our_police_ksi_per_linked_total compares police KSI before reclassification with SFDPH's linked total after it."
+ ],
+ "sources": {
+  "zsfg_and_dph_police": "SFDPH, San Francisco Severe Traffic Injury Trends: 2015-2022 (December 2024), https://visionzerosf.org/wp-content/uploads/2024/12/Severe-Injury-Trends_2015-2022.pdf [primary — read 2026-11-25]",
+  "zsfg_earlier_edition": "SFDPH, Severe Injury Trends 2011-2020, Tables 1 and A, https://media.api.sf.gov/documents/Severe-Injury-Trends_2011-2020_final_report.cleaned_GmPU6Ay.pdf [primary — read 2026-11-25]; same 2015-2020 figures as the 2015-2022 report",
+  "linkage": "SFDPH and SFMTA, Vision Zero High Injury Network: 2022 Update, methodology, Tables 3, 4 and 6, https://www.visionzerosf.org/wp-content/uploads/2023/03/2022_Vision_Zero_Network_Update_Methodology.pdf [primary — read 2026-11-25]",
+  "deaths": "DataSF dau3-4s8f, Traffic Crashes Resulting in Fatality, https://data.sfgov.org/d/dau3-4s8f [DataSF dau3-4s8f — queried 2026-11-25]"
+ },
+ "inputs": {
+  "victims": "out/crash-augment/tables/victims.csv (DataSF nwes-mmgh, crash-augment build)"
+ },
+ "reproduces_dph_police_table5": [
+  {
+   "year": 2015,
+   "ours": {
+    "pedestrian": 87,
+    "bicyclist": 51,
+    "everyone else": 92,
+    "total": 230
+   },
+   "dph_table5": {
+    "pedestrian": 87,
+    "bicyclist": 51,
+    "everyone else": 92,
+    "total": 230
+   },
+   "difference": {
+    "pedestrian": 0,
+    "bicyclist": 0,
+    "everyone else": 0,
+    "total": 0
+   }
+  },
+  {
+   "year": 2016,
+   "ours": {
+    "pedestrian": 118,
+    "bicyclist": 40,
+    "everyone else": 120,
+    "total": 278
+   },
+   "dph_table5": {
+    "pedestrian": 118,
+    "bicyclist": 40,
+    "everyone else": 120,
+    "total": 278
+   },
+   "difference": {
+    "pedestrian": 0,
+    "bicyclist": 0,
+    "everyone else": 0,
+    "total": 0
+   }
+  },
+  {
+   "year": 2017,
+   "ours": {
+    "pedestrian": 110,
+    "bicyclist": 46,
+    "everyone else": 105,
+    "total": 261
+   },
+   "dph_table5": {
+    "pedestrian": 112,
+    "bicyclist": 46,
+    "everyone else": 103,
+    "total": 261
+   },
+   "difference": {
+    "pedestrian": -2,
+    "bicyclist": 0,
+    "everyone else": 2,
+    "total": 0
+   }
+  },
+  {
+   "year": 2018,
+   "ours": {
+    "pedestrian": 109,
+    "bicyclist": 55,
+    "everyone else": 119,
+    "total": 283
+   },
+   "dph_table5": {
+    "pedestrian": 110,
+    "bicyclist": 55,
+    "everyone else": 118,
+    "total": 283
+   },
+   "difference": {
+    "pedestrian": -1,
+    "bicyclist": 0,
+    "everyone else": 1,
+    "total": 0
+   }
+  },
+  {
+   "year": 2019,
+   "ours": {
+    "pedestrian": 117,
+    "bicyclist": 53,
+    "everyone else": 137,
+    "total": 307
+   },
+   "dph_table5": {
+    "pedestrian": 117,
+    "bicyclist": 53,
+    "everyone else": 137,
+    "total": 307
+   },
+   "difference": {
+    "pedestrian": 0,
+    "bicyclist": 0,
+    "everyone else": 0,
+    "total": 0
+   }
+  },
+  {
+   "year": 2020,
+   "ours": {
+    "pedestrian": 92,
+    "bicyclist": 34,
+    "everyone else": 100,
+    "total": 226
+   },
+   "dph_table5": {
+    "pedestrian": 92,
+    "bicyclist": 34,
+    "everyone else": 100,
+    "total": 226
+   },
+   "difference": {
+    "pedestrian": 0,
+    "bicyclist": 0,
+    "everyone else": 0,
+    "total": 0
+   }
+  },
+  {
+   "year": 2021,
+   "ours": {
+    "pedestrian": 85,
+    "bicyclist": 49,
+    "everyone else": 137,
+    "total": 271
+   },
+   "dph_table5": {
+    "pedestrian": 85,
+    "bicyclist": 49,
+    "everyone else": 137,
+    "total": 271
+   },
+   "difference": {
+    "pedestrian": 0,
+    "bicyclist": 0,
+    "everyone else": 0,
+    "total": 0
+   }
+  },
+  {
+   "year": 2022,
+   "ours": {
+    "pedestrian": 93,
+    "bicyclist": 54,
+    "everyone else": 135,
+    "total": 282
+   },
+   "dph_table5": {
+    "pedestrian": 93,
+    "bicyclist": 54,
+    "everyone else": 135,
+    "total": 282
+   },
+   "difference": {
+    "pedestrian": 0,
+    "bicyclist": 0,
+    "everyone else": 0,
+    "total": 0
+   }
+  }
+ ],
+ "by_year": [
+  {
+   "year": 2015,
+   "police_severe": {
+    "pedestrian": 87,
+    "bicyclist": 51,
+    "everyone else": 92,
+    "total": 230
+   },
+   "police_severe_scooter_riders": 0,
+   "police_fatal": {
+    "pedestrian": 20,
+    "bicyclist": 4,
+    "everyone else": 7,
+    "total": 31
+   },
+   "police_ksi": {
+    "pedestrian": 107,
+    "bicyclist": 55,
+    "everyone else": 99,
+    "total": 261
+   },
+   "ome_deaths": {
+    "pedestrian": 20,
+    "bicyclist": 4,
+    "everyone else": 7,
+    "total": 31
+   },
+   "zsfg_severe": {
+    "pedestrian": 187,
+    "bicyclist": 110,
+    "everyone else": 281,
+    "total": 578
+   },
+   "zsfg_critical_total": 109,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.465,
+    "bicyclist": 0.464,
+    "everyone else": 0.327,
+    "total": 0.398,
+    "pedestrian_with_police_scooter_riders": 0.465
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 207,
+    "bicyclist": 114,
+    "everyone else": 288,
+    "total": 609
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.517,
+    "bicyclist": 0.482,
+    "everyone else": 0.344,
+    "total": 0.429
+   }
+  },
+  {
+   "year": 2016,
+   "police_severe": {
+    "pedestrian": 118,
+    "bicyclist": 40,
+    "everyone else": 120,
+    "total": 278
+   },
+   "police_severe_scooter_riders": 0,
+   "police_fatal": {
+    "pedestrian": 16,
+    "bicyclist": 4,
+    "everyone else": 9,
+    "total": 29
+   },
+   "police_ksi": {
+    "pedestrian": 134,
+    "bicyclist": 44,
+    "everyone else": 129,
+    "total": 307
+   },
+   "ome_deaths": {
+    "pedestrian": 15,
+    "bicyclist": 3,
+    "everyone else": 11,
+    "total": 29
+   },
+   "zsfg_severe": {
+    "pedestrian": 190,
+    "bicyclist": 114,
+    "everyone else": 266,
+    "total": 570
+   },
+   "zsfg_critical_total": 125,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.621,
+    "bicyclist": 0.351,
+    "everyone else": 0.451,
+    "total": 0.488,
+    "pedestrian_with_police_scooter_riders": 0.621
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 205,
+    "bicyclist": 117,
+    "everyone else": 277,
+    "total": 599
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.654,
+    "bicyclist": 0.376,
+    "everyone else": 0.466,
+    "total": 0.513
+   }
+  },
+  {
+   "year": 2017,
+   "police_severe": {
+    "pedestrian": 110,
+    "bicyclist": 46,
+    "everyone else": 105,
+    "total": 261
+   },
+   "police_severe_scooter_riders": 0,
+   "police_fatal": {
+    "pedestrian": 13,
+    "bicyclist": 2,
+    "everyone else": 5,
+    "total": 20
+   },
+   "police_ksi": {
+    "pedestrian": 123,
+    "bicyclist": 48,
+    "everyone else": 110,
+    "total": 281
+   },
+   "ome_deaths": {
+    "pedestrian": 14,
+    "bicyclist": 2,
+    "everyone else": 4,
+    "total": 20
+   },
+   "zsfg_severe": {
+    "pedestrian": 178,
+    "bicyclist": 102,
+    "everyone else": 294,
+    "total": 574
+   },
+   "zsfg_critical_total": 110,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.618,
+    "bicyclist": 0.451,
+    "everyone else": 0.357,
+    "total": 0.455,
+    "pedestrian_with_police_scooter_riders": 0.618
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 192,
+    "bicyclist": 104,
+    "everyone else": 298,
+    "total": 594
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.641,
+    "bicyclist": 0.462,
+    "everyone else": 0.369,
+    "total": 0.473
+   }
+  },
+  {
+   "year": 2018,
+   "police_severe": {
+    "pedestrian": 109,
+    "bicyclist": 55,
+    "everyone else": 119,
+    "total": 283
+   },
+   "police_severe_scooter_riders": 4,
+   "police_fatal": {
+    "pedestrian": 15,
+    "bicyclist": 3,
+    "everyone else": 5,
+    "total": 23
+   },
+   "police_ksi": {
+    "pedestrian": 124,
+    "bicyclist": 58,
+    "everyone else": 124,
+    "total": 306
+   },
+   "ome_deaths": {
+    "pedestrian": 15,
+    "bicyclist": 3,
+    "everyone else": 5,
+    "total": 23
+   },
+   "zsfg_severe": {
+    "pedestrian": 183,
+    "bicyclist": 116,
+    "everyone else": 293,
+    "total": 592
+   },
+   "zsfg_critical_total": 130,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.596,
+    "bicyclist": 0.474,
+    "everyone else": 0.406,
+    "total": 0.478,
+    "pedestrian_with_police_scooter_riders": 0.617
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 198,
+    "bicyclist": 119,
+    "everyone else": 298,
+    "total": 615
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.626,
+    "bicyclist": 0.487,
+    "everyone else": 0.416,
+    "total": 0.498
+   }
+  },
+  {
+   "year": 2019,
+   "police_severe": {
+    "pedestrian": 117,
+    "bicyclist": 53,
+    "everyone else": 137,
+    "total": 307
+   },
+   "police_severe_scooter_riders": 10,
+   "police_fatal": {
+    "pedestrian": 18,
+    "bicyclist": 1,
+    "everyone else": 10,
+    "total": 29
+   },
+   "police_ksi": {
+    "pedestrian": 135,
+    "bicyclist": 54,
+    "everyone else": 147,
+    "total": 336
+   },
+   "ome_deaths": {
+    "pedestrian": 17,
+    "bicyclist": 1,
+    "everyone else": 11,
+    "total": 29
+   },
+   "zsfg_severe": {
+    "pedestrian": 186,
+    "bicyclist": 76,
+    "everyone else": 271,
+    "total": 533
+   },
+   "zsfg_critical_total": 114,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.629,
+    "bicyclist": 0.697,
+    "everyone else": 0.506,
+    "total": 0.576,
+    "pedestrian_with_police_scooter_riders": 0.683
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 203,
+    "bicyclist": 77,
+    "everyone else": 282,
+    "total": 562
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.665,
+    "bicyclist": 0.701,
+    "everyone else": 0.521,
+    "total": 0.598
+   }
+  },
+  {
+   "year": 2020,
+   "police_severe": {
+    "pedestrian": 92,
+    "bicyclist": 34,
+    "everyone else": 100,
+    "total": 226
+   },
+   "police_severe_scooter_riders": 9,
+   "police_fatal": {
+    "pedestrian": 11,
+    "bicyclist": 2,
+    "everyone else": 17,
+    "total": 30
+   },
+   "police_ksi": {
+    "pedestrian": 103,
+    "bicyclist": 36,
+    "everyone else": 117,
+    "total": 256
+   },
+   "ome_deaths": {
+    "pedestrian": 12,
+    "bicyclist": 2,
+    "everyone else": 16,
+    "total": 30
+   },
+   "zsfg_severe": {
+    "pedestrian": 137,
+    "bicyclist": 115,
+    "everyone else": 260,
+    "total": 512
+   },
+   "zsfg_critical_total": 121,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.672,
+    "bicyclist": 0.296,
+    "everyone else": 0.385,
+    "total": 0.441,
+    "pedestrian_with_police_scooter_riders": 0.737
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 149,
+    "bicyclist": 117,
+    "everyone else": 276,
+    "total": 542
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.691,
+    "bicyclist": 0.308,
+    "everyone else": 0.424,
+    "total": 0.472
+   }
+  },
+  {
+   "year": 2021,
+   "police_severe": {
+    "pedestrian": 85,
+    "bicyclist": 49,
+    "everyone else": 137,
+    "total": 271
+   },
+   "police_severe_scooter_riders": 22,
+   "police_fatal": {
+    "pedestrian": 13,
+    "bicyclist": 2,
+    "everyone else": 12,
+    "total": 27
+   },
+   "police_ksi": {
+    "pedestrian": 98,
+    "bicyclist": 51,
+    "everyone else": 149,
+    "total": 298
+   },
+   "ome_deaths": {
+    "pedestrian": 13,
+    "bicyclist": 2,
+    "everyone else": 12,
+    "total": 27
+   },
+   "zsfg_severe": {
+    "pedestrian": 151,
+    "bicyclist": 102,
+    "everyone else": 324,
+    "total": 577
+   },
+   "zsfg_critical_total": 136,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.563,
+    "bicyclist": 0.48,
+    "everyone else": 0.423,
+    "total": 0.47,
+    "pedestrian_with_police_scooter_riders": 0.709
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 164,
+    "bicyclist": 104,
+    "everyone else": 336,
+    "total": 604
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.598,
+    "bicyclist": 0.49,
+    "everyone else": 0.443,
+    "total": 0.493
+   }
+  },
+  {
+   "year": 2022,
+   "police_severe": {
+    "pedestrian": 93,
+    "bicyclist": 54,
+    "everyone else": 135,
+    "total": 282
+   },
+   "police_severe_scooter_riders": 23,
+   "police_fatal": {
+    "pedestrian": 20,
+    "bicyclist": 1,
+    "everyone else": 18,
+    "total": 39
+   },
+   "police_ksi": {
+    "pedestrian": 113,
+    "bicyclist": 55,
+    "everyone else": 153,
+    "total": 321
+   },
+   "ome_deaths": {
+    "pedestrian": 20,
+    "bicyclist": 1,
+    "everyone else": 18,
+    "total": 39
+   },
+   "zsfg_severe": {
+    "pedestrian": 146,
+    "bicyclist": 89,
+    "everyone else": 300,
+    "total": 535
+   },
+   "zsfg_critical_total": 137,
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.637,
+    "bicyclist": 0.607,
+    "everyone else": 0.45,
+    "total": 0.527,
+    "pedestrian_with_police_scooter_riders": 0.795
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 166,
+    "bicyclist": 90,
+    "everyone else": 318,
+    "total": 574
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.681,
+    "bicyclist": 0.611,
+    "everyone else": 0.481,
+    "total": 0.559
+   }
+  },
+  {
+   "year": 2023,
+   "police_severe": {
+    "pedestrian": 81,
+    "bicyclist": 48,
+    "everyone else": 106,
+    "total": 235
+   },
+   "police_severe_scooter_riders": 20,
+   "police_fatal": {
+    "pedestrian": 17,
+    "bicyclist": 1,
+    "everyone else": 8,
+    "total": 26
+   },
+   "police_ksi": {
+    "pedestrian": 98,
+    "bicyclist": 49,
+    "everyone else": 114,
+    "total": 261
+   },
+   "ome_deaths": {
+    "pedestrian": 18,
+    "bicyclist": 0,
+    "everyone else": 8,
+    "total": 26
+   },
+   "zsfg_severe": null,
+   "police_severe_per_zsfg_severe": null,
+   "dph_ksi_zsfg_plus_ome": null,
+   "police_ksi_per_dph_ksi": null
+  },
+  {
+   "year": 2024,
+   "police_severe": {
+    "pedestrian": 103,
+    "bicyclist": 45,
+    "everyone else": 150,
+    "total": 298
+   },
+   "police_severe_scooter_riders": 36,
+   "police_fatal": {
+    "pedestrian": 24,
+    "bicyclist": 3,
+    "everyone else": 16,
+    "total": 43
+   },
+   "police_ksi": {
+    "pedestrian": 127,
+    "bicyclist": 48,
+    "everyone else": 166,
+    "total": 341
+   },
+   "ome_deaths": {
+    "pedestrian": 24,
+    "bicyclist": 3,
+    "everyone else": 15,
+    "total": 42
+   },
+   "zsfg_severe": null,
+   "police_severe_per_zsfg_severe": null,
+   "dph_ksi_zsfg_plus_ome": null,
+   "police_ksi_per_dph_ksi": null
+  }
+ ],
+ "pooled": [
+  {
+   "years": [
+    2015,
+    2019
+   ],
+   "police_severe": {
+    "pedestrian": 541,
+    "bicyclist": 245,
+    "everyone else": 573,
+    "total": 1359
+   },
+   "zsfg_severe": {
+    "pedestrian": 924,
+    "bicyclist": 518,
+    "everyone else": 1405,
+    "total": 2847
+   },
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.585,
+    "bicyclist": 0.473,
+    "everyone else": 0.408,
+    "total": 0.477
+   },
+   "police_ksi": {
+    "pedestrian": 623,
+    "bicyclist": 259,
+    "everyone else": 609,
+    "total": 1491
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 1005,
+    "bicyclist": 531,
+    "everyone else": 1443,
+    "total": 2979
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.62,
+    "bicyclist": 0.488,
+    "everyone else": 0.422,
+    "total": 0.501
+   }
+  },
+  {
+   "years": [
+    2017,
+    2019
+   ],
+   "police_severe": {
+    "pedestrian": 336,
+    "bicyclist": 154,
+    "everyone else": 361,
+    "total": 851
+   },
+   "zsfg_severe": {
+    "pedestrian": 547,
+    "bicyclist": 294,
+    "everyone else": 858,
+    "total": 1699
+   },
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.614,
+    "bicyclist": 0.524,
+    "everyone else": 0.421,
+    "total": 0.501
+   },
+   "police_ksi": {
+    "pedestrian": 382,
+    "bicyclist": 160,
+    "everyone else": 381,
+    "total": 923
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 593,
+    "bicyclist": 300,
+    "everyone else": 878,
+    "total": 1771
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.644,
+    "bicyclist": 0.533,
+    "everyone else": 0.434,
+    "total": 0.521
+   }
+  },
+  {
+   "years": [
+    2020,
+    2022
+   ],
+   "police_severe": {
+    "pedestrian": 270,
+    "bicyclist": 137,
+    "everyone else": 372,
+    "total": 779
+   },
+   "zsfg_severe": {
+    "pedestrian": 434,
+    "bicyclist": 306,
+    "everyone else": 884,
+    "total": 1624
+   },
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.622,
+    "bicyclist": 0.448,
+    "everyone else": 0.421,
+    "total": 0.48
+   },
+   "police_ksi": {
+    "pedestrian": 314,
+    "bicyclist": 142,
+    "everyone else": 419,
+    "total": 875
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 479,
+    "bicyclist": 311,
+    "everyone else": 930,
+    "total": 1720
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.656,
+    "bicyclist": 0.457,
+    "everyone else": 0.451,
+    "total": 0.509
+   }
+  },
+  {
+   "years": [
+    2017,
+    2021
+   ],
+   "police_severe": {
+    "pedestrian": 513,
+    "bicyclist": 237,
+    "everyone else": 598,
+    "total": 1348
+   },
+   "zsfg_severe": {
+    "pedestrian": 835,
+    "bicyclist": 511,
+    "everyone else": 1442,
+    "total": 2788
+   },
+   "police_severe_per_zsfg_severe": {
+    "pedestrian": 0.614,
+    "bicyclist": 0.464,
+    "everyone else": 0.415,
+    "total": 0.484
+   },
+   "police_ksi": {
+    "pedestrian": 583,
+    "bicyclist": 247,
+    "everyone else": 647,
+    "total": 1477
+   },
+   "dph_ksi_zsfg_plus_ome": {
+    "pedestrian": 906,
+    "bicyclist": 521,
+    "everyone else": 1490,
+    "total": 2917
+   },
+   "police_ksi_per_dph_ksi": {
+    "pedestrian": 0.643,
+    "bicyclist": 0.474,
+    "everyone else": 0.434,
+    "total": 0.506
+   }
+  }
+ ],
+ "hin_2022_linkage_2017_2021": {
+  "table6": {
+   "zsfg_not_matched_to_police": 596,
+   "matched": 1724,
+   "police_not_matched_to_zsfg": 178,
+   "ome_fatalities": 129,
+   "total": 2627,
+   "by_mode_total": {
+    "cyclist": 462,
+    "pedestrian": 913,
+    "vehicle": 1188,
+    "other": 64
+   }
+  },
+  "table3_reclassification": {
+   "police_severe_linked": 1165,
+   "downgraded": 406,
+   "upgraded_other_visible": 469,
+   "upgraded_complaint_of_pain": 504,
+   "severe_after_reclassification": 1732
+  },
+  "our_police_ksi_2017_2021": 1477,
+  "our_police_ksi_per_linked_total": 0.562
+ },
+ "missing": [
+  {
+   "what": "ZSFG severe injuries for 2023 and 2024",
+   "looked_at": [
+    "SFDPH Severe Injury Trends 2015-2022 (Dec 2024), the latest severe injury report found; it covers 2015-2022",
+    "SFDPH Health Commission deck on the 2024 High Injury Network (2026-08-17), https://media.api.sf.gov/documents/PHD-PPT-High_Injury_Network_Health_Commission_v5_2026-08-17_FINAL.pdf: says severe and fatal injuries rose 10% and injuries fell 8% from the 2022 HIN to the 2024 HIN; its counts are in chart images with no extractable figures",
+    "sf.gov 2024 High Injury Network page, https://www.sf.gov/2024-high-injury-network-hin-map: no counts",
+    "DataSF enwt-3u8m (2024 HIN, 2020-2024 linked SFPD, ZSFG and ambulance data): corridors only, no counts",
+    "DataSF 3z93-mft8 (Vision Zero Benchmarking): SWITRS injuries and fatalities, no severe-injury metric",
+    "SFCTA Board 2024-07-23 item 15 presentation (SFDPH): ZSFG and SFPD severe through 2022 only"
+   ]
+  },
+  {
+   "what": "a year-by-year linked (police and ZSFG matched) KSI count",
+   "looked_at": [
+    "HIN 2022 methodology gives linkage pooled over 2017-2021 only (Tables 3-6)",
+    "Severe Injury Trends 2015-2022 says a 2020-2022 linkage was due in 2025; not found published"
+   ]
+  }
+ ]
+}

@@ -68,7 +68,7 @@ The stacks in `fix-map.json`:
 
 ## Counting crash by crash, for any grouping
 
-[`../fix-groups.py`](../fix-groups.py) recounts every fix and every stack step from `fix-map.json`'s `stack_terms` on its own reading of the crashes, and sums them by any grouping of the same crashes (who was hurt, place, time, crash type, speed limit, lanes, light, Equity Priority Community, heaviest vehicle weight, and the rest in `GROUPINGS` in `crash-profiles.py`), so every grouping shows each fix's share:
+[`../fix-groups.py`](../fix-groups.py) recounts every fix and every stack step from `fix-map.json`'s `stack_terms` on its own reading of the crashes, and sums them by any grouping of the same crashes (who was hurt, place, time, crash type, speed limit, lanes, light, Equity Priority Community, heaviest vehicle weight, supervisor district, and the rest in `GROUPINGS` in `crash-profiles.py`), so every grouping shows each fix's share:
 
 - For each term it finds the crashes reached and recomputes rho from the term's share, effect and those crashes. The script stops unless every rho and crash count equals `fix-map.json`'s, and unless the sum over every crash equals each fix's people hurt and KSI people avoided at low, mid and high. Nothing is scaled to make them match, so a counting error on either side stops the run.
 - A person grouping splits a crash's KSI people avoided over its KSI victims and its other people hurt avoided over its other hurt victims.

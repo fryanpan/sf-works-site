@@ -27649,8 +27649,1155 @@
     "id": "weight",
     "name": "vehicle weight: the heaviest vehicle's weight band",
     "unit": "crash"
+   },
+   {
+    "groups": 12,
+    "share_of_people_injured_in_catch_all_groups": 0.0034,
+    "bars_to_80pct_of_people_injured": 8,
+    "share_in_remainder_at_chart_bars": 0.0,
+    "share_in_catch_all_bars_at_chart_bars": 0.0034,
+    "share_left_in_catch_all_or_remainder": 0.0034,
+    "top_bars": [
+     {
+      "group": [
+       "District 6"
+      ],
+      "catch_all": false,
+      "people_injured": 5118,
+      "share_of_people_injured": 0.1717,
+      "ksi_people": 422,
+      "share_of_ksi_people": 0.1763
+     },
+     {
+      "group": [
+       "District 5"
+      ],
+      "catch_all": false,
+      "people_injured": 3859,
+      "share_of_people_injured": 0.1294,
+      "ksi_people": 353,
+      "share_of_ksi_people": 0.1475
+     },
+     {
+      "group": [
+       "District 9"
+      ],
+      "catch_all": false,
+      "people_injured": 3622,
+      "share_of_people_injured": 0.1215,
+      "ksi_people": 261,
+      "share_of_ksi_people": 0.1091
+     },
+     {
+      "group": [
+       "District 10"
+      ],
+      "catch_all": false,
+      "people_injured": 3274,
+      "share_of_people_injured": 0.1098,
+      "ksi_people": 249,
+      "share_of_ksi_people": 0.1041
+     },
+     {
+      "group": [
+       "District 3"
+      ],
+      "catch_all": false,
+      "people_injured": 2954,
+      "share_of_people_injured": 0.0991,
+      "ksi_people": 248,
+      "share_of_ksi_people": 0.1036
+     },
+     {
+      "group": [
+       "District 11"
+      ],
+      "catch_all": false,
+      "people_injured": 2318,
+      "share_of_people_injured": 0.0778,
+      "ksi_people": 155,
+      "share_of_ksi_people": 0.0648
+     },
+     {
+      "group": [
+       "District 2"
+      ],
+      "catch_all": false,
+      "people_injured": 1988,
+      "share_of_people_injured": 0.0667,
+      "ksi_people": 168,
+      "share_of_ksi_people": 0.0702
+     },
+     {
+      "group": [
+       "District 8"
+      ],
+      "catch_all": false,
+      "people_injured": 1962,
+      "share_of_people_injured": 0.0658,
+      "ksi_people": 159,
+      "share_of_ksi_people": 0.0664
+     },
+     {
+      "group": [
+       "District 7"
+      ],
+      "catch_all": false,
+      "people_injured": 1792,
+      "share_of_people_injured": 0.0601,
+      "ksi_people": 150,
+      "share_of_ksi_people": 0.0627
+     },
+     {
+      "group": [
+       "District 1"
+      ],
+      "catch_all": false,
+      "people_injured": 1645,
+      "share_of_people_injured": 0.0552,
+      "ksi_people": 127,
+      "share_of_ksi_people": 0.0531
+     },
+     {
+      "group": [
+       "District 4"
+      ],
+      "catch_all": false,
+      "people_injured": 1178,
+      "share_of_people_injured": 0.0395,
+      "ksi_people": 96,
+      "share_of_ksi_people": 0.0401
+     },
+     {
+      "group": [
+       "District not stated"
+      ],
+      "catch_all": true,
+      "people_injured": 101,
+      "share_of_people_injured": 0.0034,
+      "ksi_people": 5,
+      "share_of_ksi_people": 0.0021
+     }
+    ],
+    "remainder": {
+     "people_injured": 0,
+     "ksi_people": 0
+    },
+    "id": "district",
+    "name": "supervisor district: the ubvf-ztfx supervisor_district (2022 lines for every year)",
+    "unit": "crash"
    }
   ]
+ },
+ "district_mix": {
+  "about": "people hurt by mode x violation family in each supervisor district (ubvf-ztfx supervisor_district, 2022 lines for every year) against the citywide share; distance from the rest of the city by total variation distance over every family and a chi-square over injury crashes with the FAMILY_TOP biggest families named and the rest pooled",
+  "mix_top": 6,
+  "mix_own": 3,
+  "families_shown": [
+   {
+    "mode": "vehicles only",
+    "violation": "unsafe speed",
+    "citywide_share": 0.1531
+   },
+   {
+    "mode": "vehicles only",
+    "violation": "unsafe turn or lane use",
+    "citywide_share": 0.136
+   },
+   {
+    "mode": "vehicles only",
+    "violation": "vehicle right of way",
+    "citywide_share": 0.1003
+   },
+   {
+    "mode": "vehicles only",
+    "violation": "red light",
+    "citywide_share": 0.0965
+   },
+   {
+    "mode": "pedestrian involved",
+    "violation": "failure to yield to pedestrian",
+    "citywide_share": 0.0797
+   },
+   {
+    "mode": "pedestrian involved",
+    "violation": "pedestrian violation",
+    "citywide_share": 0.0523
+   }
+  ],
+  "districts": [
+   {
+    "district": "District 1",
+    "people_injured": 1645,
+    "ksi_people": 127,
+    "injury_crashes": 1284,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 313,
+      "share_of_people_injured": 0.1903,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 156,
+      "share_of_people_injured": 0.0948,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 253,
+      "share_of_people_injured": 0.1538,
+      "citywide_share": 0.1003,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 115,
+      "share_of_people_injured": 0.0699,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 150,
+      "share_of_people_injured": 0.0912,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 64,
+      "share_of_people_injured": 0.0389,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     }
+    ],
+    "total_variation_distance": 0.1561,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "vehicle right of way",
+     "points": 5.4
+    },
+    "chi2_vs_rest_of_city": 97.3,
+    "df": 12,
+    "p_value": 1.8962271156154714e-15
+   },
+   {
+    "district": "District 2",
+    "people_injured": 1988,
+    "ksi_people": 168,
+    "injury_crashes": 1571,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 274,
+      "share_of_people_injured": 0.1378,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 267,
+      "share_of_people_injured": 0.1343,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 220,
+      "share_of_people_injured": 0.1107,
+      "citywide_share": 0.1003,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 250,
+      "share_of_people_injured": 0.1258,
+      "citywide_share": 0.0965,
+      "own_top": true
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 213,
+      "share_of_people_injured": 0.1071,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 93,
+      "share_of_people_injured": 0.0468,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light"
+     }
+    ],
+    "total_variation_distance": 0.0927,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "red light",
+     "points": 2.9
+    },
+    "chi2_vs_rest_of_city": 62.3,
+    "df": 12,
+    "p_value": 8.604440328793663e-09
+   },
+   {
+    "district": "District 3",
+    "people_injured": 2954,
+    "ksi_people": 248,
+    "injury_crashes": 2447,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 381,
+      "share_of_people_injured": 0.129,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 372,
+      "share_of_people_injured": 0.1259,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 142,
+      "share_of_people_injured": 0.0481,
+      "citywide_share": 0.1003,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 413,
+      "share_of_people_injured": 0.1398,
+      "citywide_share": 0.0965,
+      "own_top": true
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 308,
+      "share_of_people_injured": 0.1043,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 198,
+      "share_of_people_injured": 0.067,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "red light"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     }
+    ],
+    "total_variation_distance": 0.1319,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "vehicle right of way",
+     "points": -5.2
+    },
+    "chi2_vs_rest_of_city": 167.0,
+    "df": 12,
+    "p_value": 1.9242917233514022e-29
+   },
+   {
+    "district": "District 4",
+    "people_injured": 1178,
+    "ksi_people": 96,
+    "injury_crashes": 911,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 188,
+      "share_of_people_injured": 0.1596,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 113,
+      "share_of_people_injured": 0.0959,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 241,
+      "share_of_people_injured": 0.2046,
+      "citywide_share": 0.1003,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 67,
+      "share_of_people_injured": 0.0569,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 99,
+      "share_of_people_injured": 0.084,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 44,
+      "share_of_people_injured": 0.0374,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     }
+    ],
+    "total_variation_distance": 0.184,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "vehicle right of way",
+     "points": 10.4
+    },
+    "chi2_vs_rest_of_city": 155.8,
+    "df": 12,
+    "p_value": 3.815109480021679e-27
+   },
+   {
+    "district": "District 5",
+    "people_injured": 3859,
+    "ksi_people": 353,
+    "injury_crashes": 3155,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 415,
+      "share_of_people_injured": 0.1075,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 514,
+      "share_of_people_injured": 0.1332,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 290,
+      "share_of_people_injured": 0.0751,
+      "citywide_share": 0.1003,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 559,
+      "share_of_people_injured": 0.1449,
+      "citywide_share": 0.0965,
+      "own_top": true
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 380,
+      "share_of_people_injured": 0.0985,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 270,
+      "share_of_people_injured": 0.07,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "red light"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     }
+    ],
+    "total_variation_distance": 0.1295,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "red light",
+     "points": 4.8
+    },
+    "chi2_vs_rest_of_city": 239.5,
+    "df": 12,
+    "p_value": 2.0789137078782616e-44
+   },
+   {
+    "district": "District 6",
+    "people_injured": 5118,
+    "ksi_people": 422,
+    "injury_crashes": 4253,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 658,
+      "share_of_people_injured": 0.1286,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 757,
+      "share_of_people_injured": 0.1479,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 317,
+      "share_of_people_injured": 0.0619,
+      "citywide_share": 0.1003,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 509,
+      "share_of_people_injured": 0.0995,
+      "citywide_share": 0.0965,
+      "own_top": true
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 329,
+      "share_of_people_injured": 0.0643,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 331,
+      "share_of_people_injured": 0.0647,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light"
+     }
+    ],
+    "total_variation_distance": 0.1245,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "vehicle right of way",
+     "points": -3.8
+    },
+    "chi2_vs_rest_of_city": 338.8,
+    "df": 12,
+    "p_value": 3.2114611849976293e-65
+   },
+   {
+    "district": "District 7",
+    "people_injured": 1792,
+    "ksi_people": 150,
+    "injury_crashes": 1367,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 398,
+      "share_of_people_injured": 0.2221,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 232,
+      "share_of_people_injured": 0.1295,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 241,
+      "share_of_people_injured": 0.1345,
+      "citywide_share": 0.1003,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 90,
+      "share_of_people_injured": 0.0502,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 135,
+      "share_of_people_injured": 0.0753,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 80,
+      "share_of_people_injured": 0.0446,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     }
+    ],
+    "total_variation_distance": 0.1518,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "unsafe speed",
+     "points": 6.9
+    },
+    "chi2_vs_rest_of_city": 150.8,
+    "df": 12,
+    "p_value": 3.841833726957835e-26
+   },
+   {
+    "district": "District 8",
+    "people_injured": 1962,
+    "ksi_people": 159,
+    "injury_crashes": 1602,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 321,
+      "share_of_people_injured": 0.1636,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 240,
+      "share_of_people_injured": 0.1223,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 304,
+      "share_of_people_injured": 0.1549,
+      "citywide_share": 0.1003,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 125,
+      "share_of_people_injured": 0.0637,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 149,
+      "share_of_people_injured": 0.0759,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 83,
+      "share_of_people_injured": 0.0423,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     }
+    ],
+    "total_variation_distance": 0.0976,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "vehicle right of way",
+     "points": 5.5
+    },
+    "chi2_vs_rest_of_city": 84.9,
+    "df": 12,
+    "p_value": 4.693804363151359e-13
+   },
+   {
+    "district": "District 9",
+    "people_injured": 3622,
+    "ksi_people": 261,
+    "injury_crashes": 2950,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 506,
+      "share_of_people_injured": 0.1397,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 524,
+      "share_of_people_injured": 0.1447,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 338,
+      "share_of_people_injured": 0.0933,
+      "citywide_share": 0.1003,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 277,
+      "share_of_people_injured": 0.0765,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 266,
+      "share_of_people_injured": 0.0734,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 172,
+      "share_of_people_injured": 0.0475,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way"
+     }
+    ],
+    "total_variation_distance": 0.0739,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "red light",
+     "points": -2.0
+    },
+    "chi2_vs_rest_of_city": 63.6,
+    "df": 12,
+    "p_value": 5.043951149953534e-09
+   },
+   {
+    "district": "District 10",
+    "people_injured": 3274,
+    "ksi_people": 249,
+    "injury_crashes": 2448,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 718,
+      "share_of_people_injured": 0.2193,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 503,
+      "share_of_people_injured": 0.1536,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 277,
+      "share_of_people_injured": 0.0846,
+      "citywide_share": 0.1003,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 272,
+      "share_of_people_injured": 0.0831,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 124,
+      "share_of_people_injured": 0.0379,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 109,
+      "share_of_people_injured": 0.0333,
+      "citywide_share": 0.0523,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "stop sign or other sign",
+      "people_injured": 377,
+      "share_of_people_injured": 0.1151,
+      "citywide_share": 0.044,
+      "own_top": true
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "stop sign or other sign"
+     }
+    ],
+    "total_variation_distance": 0.1694,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "stop sign or other sign",
+     "points": 7.1
+    },
+    "chi2_vs_rest_of_city": 457.9,
+    "df": 12,
+    "p_value": 1.9424134752697319e-90
+   },
+   {
+    "district": "District 11",
+    "people_injured": 2318,
+    "ksi_people": 155,
+    "injury_crashes": 1710,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 359,
+      "share_of_people_injured": 0.1549,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 355,
+      "share_of_people_injured": 0.1531,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 364,
+      "share_of_people_injured": 0.157,
+      "citywide_share": 0.1003,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 196,
+      "share_of_people_injured": 0.0846,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 221,
+      "share_of_people_injured": 0.0953,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 113,
+      "share_of_people_injured": 0.0487,
+      "citywide_share": 0.0523,
+      "own_top": false
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     }
+    ],
+    "total_variation_distance": 0.1305,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "vehicle right of way",
+     "points": 5.7
+    },
+    "chi2_vs_rest_of_city": 178.4,
+    "df": 12,
+    "p_value": 9.115793444644903e-32
+   },
+   {
+    "district": "District not stated",
+    "people_injured": 101,
+    "ksi_people": 5,
+    "injury_crashes": 80,
+    "families": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed",
+      "people_injured": 32,
+      "share_of_people_injured": 0.3168,
+      "citywide_share": 0.1531,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use",
+      "people_injured": 22,
+      "share_of_people_injured": 0.2178,
+      "citywide_share": 0.136,
+      "own_top": true
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "vehicle right of way",
+      "people_injured": 3,
+      "share_of_people_injured": 0.0297,
+      "citywide_share": 0.1003,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "red light",
+      "people_injured": 3,
+      "share_of_people_injured": 0.0297,
+      "citywide_share": 0.0965,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "failure to yield to pedestrian",
+      "people_injured": 3,
+      "share_of_people_injured": 0.0297,
+      "citywide_share": 0.0797,
+      "own_top": false
+     },
+     {
+      "mode": "pedestrian involved",
+      "violation": "pedestrian violation",
+      "people_injured": 2,
+      "share_of_people_injured": 0.0198,
+      "citywide_share": 0.0523,
+      "own_top": false
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "not stated",
+      "people_injured": 8,
+      "share_of_people_injured": 0.0792,
+      "citywide_share": 0.0331,
+      "own_top": true
+     }
+    ],
+    "own_top": [
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe speed"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "unsafe turn or lane use"
+     },
+     {
+      "mode": "vehicles only",
+      "violation": "not stated"
+     }
+    ],
+    "total_variation_distance": 0.3602,
+    "largest_difference": {
+     "mode": "vehicles only",
+     "violation": "unsafe speed",
+     "points": 16.4
+    },
+    "chi2_vs_rest_of_city": 40.2,
+    "df": 12,
+    "p_value": 6.643568584299288e-05
+   }
+  ],
+  "all_districts": {
+   "chi2": 1786.9,
+   "df": 120,
+   "p_value": 9.69105866453622e-295,
+   "injury_crashes": 23698,
+   "cramers_v": 0.0868
+  }
  },
  "profiles": [
   {

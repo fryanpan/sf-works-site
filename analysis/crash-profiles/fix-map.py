@@ -1328,11 +1328,21 @@ def main():
     stress = {}
     for row in res["family_stress"].get("families", []) if isinstance(res["family_stress"].get("families"), list) else []:
         stress["%s | %s" % (row.get("mode"), row.get("violation"))] = row
-    cross_totals = {}
+    # Cross-cut group names matched exactly, never by substring (a bare "1" sits inside "11 pm"): "<grouping id> |
+    # <bar>" for every grouping_alternatives bar, the bar alone when no other grouping has the same bar, and "time |
+    # <band>" for each time band's total in level1_margins. Each value is (people hurt, KSI people, the bar's key in
+    # lane-counts.json or None).
+    cross_totals, bare = {}, collections.defaultdict(list)
     for g in res["grouping_alternatives"]["groupings"]:
         for b in g["top_bars"]:
             key = " | ".join(b["group"])
-            cross_totals[key] = (b["people_injured"], b["ksi_people"])
+            cross_totals["%s | %s" % (g["id"], key)] = (b["people_injured"], b["ksi_people"], key)
+            bare[key].append((b["people_injured"], b["ksi_people"], key))
+    for key, vals in bare.items():
+        if len(vals) == 1:
+            cross_totals.setdefault(key, vals[0])
+    for t in res["level1_margins"]["time"]:
+        cross_totals.setdefault("time | " + t["value"], (t["people_injured"], t["ksi_people"], None))
 
     lanes = read_lanes()
     fill = lanes.pop("fill", {"fixes": [], "gaps": []})
@@ -1398,10 +1408,11 @@ def main():
                     lane_counts.get(name))
         if name == "all other families":
             return other_row["people_injured"], other_row["ksi_people"], "all", {}, "remainder", lane_counts.get(name)
-        for key, (h, k) in cross_totals.items():
-            if name.endswith(key) or key in name:
-                mode = "pedestrian" if "pedestrian" in name else ("who" if name.startswith("who") else "cross")
-                return h, k, mode, {}, "cross-cut", lane_counts.get(key)
+        exact = re.sub(r" \(cross-cut[^)]*\)$", "", name)
+        if exact in cross_totals:
+            h, k, key = cross_totals[exact]
+            mode = "pedestrian" if "pedestrian" in name else ("who" if name.startswith("who") else "cross")
+            return h, k, mode, {}, "cross-cut", lane_counts.get(key) if key else None
         m = re.search(NUM + r"\s+(?:people\s+)?hurt\s*/\s*" + NUM + r"\s+KSI", text or "")
         if m:
             mode = "pedestrian" if "pedestrian" in name else "cross"

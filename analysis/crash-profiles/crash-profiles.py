@@ -96,7 +96,20 @@ GROUPING ALTERNATIVES. grouping_alternatives scores the groupings in GROUPINGS t
   definition, so the split adds only evening and late night); vehicle-only crashes by crash type beside pedestrian and
   bike crashes by violation family, alone and with the turn direction; mode x violation family x traffic stress; and
   the crash's posted speed limit, number of lanes, light, Equity Priority Community and heaviest vehicle weight band,
-  each alone. fix-groups.py counts every fix's people avoided over the same groupings.
+  each alone; and the crash's supervisor district. fix-groups.py counts every fix's people avoided over the same
+  groupings.
+
+DISTRICT MIX. district_mix gives each supervisor district's people hurt by mode x violation family (as in SIZE BY
+  FAMILY) against the citywide share. The district is ubvf-ztfx's supervisor_district, which DataSF assigns on the
+  2022 lines for every year (checked 2026-11-26 against the 2022 boundaries, cqbw-m5m3, as site/data/supervisor-
+  districts.json holds them: about 96% of crashes in every year from 2005 to 2026 fall inside their stated district,
+  with no break at 2022, and every 2018 to 2025 crash that falls outside lies within 30 feet of its edge, the file's
+  simplification tolerance); a blank is "District not stated". Each district lists the MIX_TOP citywide biggest
+  families and its own MIX_OWN biggest, with its share and the city's. How far its mix is from the rest of the city:
+  the total variation distance (half the sum over every family of the share difference, people hurt), the family with
+  the largest difference, and a chi-square test of the district against the rest of the city over injury crashes
+  (crashes, not people, since people in one crash are not independent), with the FAMILY_TOP biggest families by people
+  hurt named and the rest pooled. The chi-square over every district together gives Cramer's V.
 
 TRAFFIC STRESS. Each crash's blocks are looked up in SFMTA's 2023 draft Bike Comfort Index layer as the repo holds it
   (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level of traffic stress (lts_ft, lts_tf, 1 low to 4 high;
@@ -213,6 +226,8 @@ MOVEMENT_FINE = dict(MOVEMENT, **{"Ran Off Road": "ran off road"})
 CATCH_ALL = {"other", "not stated", OTHER_MOVE, "Other", "Not Stated"}  # values that name no kind of crash
 FAMILY_TOP = 12  # size_families.chart: the top mode x violation families by people hurt and by KSI people
 FAMILY_STRESS_TOP = 10  # family_stress: the biggest families by people hurt
+MIX_TOP = 6  # district_mix: the citywide top families by people hurt every district shows
+MIX_OWN = 3  # district_mix: and each district's own top families, if not among them
 RAW_TOP = 15  # other_breakdown: raw codes listed per catch-all bucket
 CHART_BARS = 12  # other_breakdown.regroupings: the chart size the remainder is measured at
 SIZE_BINS = ((500, None), (200, 499), (100, 199), (50, 99), (20, 49), (1, 19), (0, 0))
@@ -599,6 +614,8 @@ def crash_records(crashes, parties, victims, bci):
             "light": light_band(c["lighting"]),
             "at intersection": {"Midblock > 20ft": "midblock"}.get(c["intersection"], "intersection"),
             "heaviest vehicle weight": weight_band(heavy),
+            # "District 1", not "1", so the key reads on its own and differs from the lanes grouping's "1"
+            "supervisor district": "District " + (c["supervisor_district"] or "not stated"),
             "_basis": {k: c[k + "_basis"] for k in ("posted_speed_limit_mph", "street_class", "corner_type", "lanes",
                                                    "bci_traffic_category", "in_epc", "signal_present",
                                                    "painted_safety_zone", "traffic_calming")},
@@ -637,7 +654,7 @@ def turn(r):
 
 # Values that name no kind of crash or person, for the catch-all scores.
 STATED = ("not stated", "unknown", "other", "Other", "Not Stated", OTHER_MOVE, "age not stated", "time not stated",
-          "role not stated", "0 (layer gap)")
+          "role not stated", "0 (layer gap)", "District not stated")
 
 # The ways to group everyone hurt, beside size_families' mode x violation family: (id, name, unit, key). A crash
 # grouping's key reads a crash record; a person grouping's key reads a victims row and its crash record. fix-groups.py
@@ -660,6 +677,8 @@ GROUPINGS = [
     ("light", "light: daylight, dusk or dawn, or dark", "crash", lambda r: (r["light"],)),
     ("epc", "equity: in an Equity Priority Community", "crash", lambda r: (r["EPC"],)),
     ("weight", "vehicle weight: the heaviest vehicle's weight band", "crash", lambda r: (r["heaviest vehicle weight"],)),
+    ("district", "supervisor district: the ubvf-ztfx supervisor_district (2022 lines for every year)", "crash",
+     lambda r: (r["supervisor district"],)),
 ]
 
 
@@ -1322,6 +1341,69 @@ def main():
         "groupings": [dict(compare(items_of(u, key), set(STATED)), id=gid, name=n, unit=u) for gid, n, u, key in GROUPINGS],
     }
 
+
+    # District mix: each supervisor district's people hurt by family against the citywide share, and how far it is
+    # from the rest of the city.
+    fam_key = lambda r: (r["mode"], r["violation (fine)"])  # noqa: E731
+    city_h = collections.Counter()
+    for r in recs:
+        city_h[fam_key(r)] += r["injured"]
+    city_top = [f for f, _ in sorted(city_h.items(), key=lambda kv: (-kv[1], kv[0]))]
+    test_fams = set(city_top[:FAMILY_TOP])
+    by_d = grouped(recs, lambda r: r["supervisor district"])
+    named_d = sorted((d for d in by_d if d != "District not stated"), key=lambda d: (len(d), d))
+
+    def crash_counts(rs):
+        c = collections.Counter(fam_key(r) if fam_key(r) in test_fams else ("all other", "") for r in rs)
+        return c
+
+    def chi2_table(table):
+        cols = sorted({k for row in table for k in row})
+        tot = sum(sum(row.values()) for row in table)
+        rs_ = [sum(row.values()) for row in table]
+        cs_ = {k: sum(row.get(k, 0) for row in table) for k in cols}
+        x2 = sum((row.get(k, 0) - rs_[i] * cs_[k] / tot) ** 2 / (rs_[i] * cs_[k] / tot)
+                 for i, row in enumerate(table) for k in cols if cs_[k])
+        df = (len(table) - 1) * (len(cols) - 1)
+        return x2, df, _gammq(df / 2.0, x2 / 2.0), tot, len(cols)
+
+    districts = []
+    for d in named_d + (["District not stated"] if "District not stated" in by_d else []):
+        rs = by_d[d]
+        dh = collections.Counter()
+        for r in rs:
+            dh[fam_key(r)] += r["injured"]
+        hd = sum(dh.values())
+        diff = {f: dh[f] / hd - city_h[f] / H for f in city_h} if hd else {}
+        own = [f for f, _ in sorted(dh.items(), key=lambda kv: (-kv[1], kv[0]))[:MIX_OWN]]
+        shown = sorted(set(city_top[:MIX_TOP]) | set(own), key=lambda f: (-city_h[f], f))
+        rest = [r for r in recs if r["supervisor district"] != d]
+        x2, df, p_, _, _ = chi2_table([crash_counts(rs), crash_counts(rest)])
+        big = max(diff, key=lambda f: (abs(diff[f]), f)) if diff else None
+        districts.append({
+            "district": d, "people_injured": hd, "ksi_people": sum(r["people"] for r in rs), "injury_crashes": len(rs),
+            "families": [{"mode": f[0], "violation": f[1], "people_injured": dh[f],
+                          "share_of_people_injured": round(dh[f] / hd, 4) if hd else None,
+                          "citywide_share": round(city_h[f] / H, 4), "own_top": f in own} for f in shown],
+            "own_top": [{"mode": f[0], "violation": f[1]} for f in own],
+            "total_variation_distance": round(sum(abs(v) for v in diff.values()) / 2, 4) if diff else None,
+            "largest_difference": {"mode": big[0], "violation": big[1], "points": round(100 * diff[big], 1)} if big else None,
+            "chi2_vs_rest_of_city": round(x2, 1), "df": df, "p_value": p_,
+        })
+    x2, df, p_, n_, k_ = chi2_table([crash_counts(by_d[d]) for d in named_d])
+    district_mix = {
+        "about": "people hurt by mode x violation family in each supervisor district (ubvf-ztfx supervisor_district, "
+                 "2022 lines for every year) against the citywide share; distance from the rest of the city by total "
+                 "variation distance over every family and a chi-square over injury crashes with the FAMILY_TOP "
+                 "biggest families named and the rest pooled",
+        "mix_top": MIX_TOP, "mix_own": MIX_OWN,
+        "families_shown": [{"mode": f[0], "violation": f[1], "citywide_share": round(city_h[f] / H, 4)}
+                           for f in city_top[:MIX_TOP]],
+        "districts": districts,
+        "all_districts": {"chi2": round(x2, 1), "df": df, "p_value": p_, "injury_crashes": n_,
+                          "cramers_v": round(math.sqrt(x2 / (n_ * (min(len(named_d), k_) - 1))), 4)},
+    }
+
     # Data quality facts the doc reports
     ped_parties = [p for ps in parties.values() for p in ps.values()]
     drivers = [p for p in ped_parties if p["party_type"] == "Driver"]
@@ -1354,6 +1436,7 @@ def main():
         "size_families": size_families,
         "family_stress": family_stress,
         "grouping_alternatives": grouping_alternatives,
+        "district_mix": district_mix,
         "profiles": profiles,
         "level1_tested": level1,
         "level1_margins": margins,

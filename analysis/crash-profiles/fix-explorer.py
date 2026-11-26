@@ -85,7 +85,6 @@ ACTORS = {"Driver": "Driver", "Pedestrian": "Person walking", "Bicyclist": "Bicy
 ACTOR_LOW = {"Driver": "driver", "Pedestrian": "person walking", "Bicyclist": "bicyclist",
              "Parked Vehicle": "parked car's occupant", "Other": "scooter rider or other"}
 DOMINANT = 0.8  # one at-fault party type holding more than this share of a family's people hurt names the actor
-DRIVER_ALL = 0.97  # at or above this driver share the row carries no at-fault line
 ROLES = {"pedestrian": "Person walking", "bicyclist": "Person biking", "driver": "Driver", "passenger": "Passenger",
          "scooter or other": "Scooter rider or other", "role not stated": "Role not stated"}
 AGES = {"child under 18": "under 18", "adult 18 to 64": "18 to 64", "65 and over": "65 and over", "age not stated": "age not stated"}
@@ -114,9 +113,89 @@ GROUPINGS = [
 ]
 NOTES = {
     "family": ["The violation is the crash's primary collision factor, which police assign to the party at fault."],
-    "place": ["Road class is DataSF 3psu-pn9h's classcode (2 major, 3 arterial, 4 collector, 5 residential); at an intersection, the most major street meeting there.",
-              "High bike traffic stress is SFMTA's Bike Comfort Index LTS 3 or 4 on any block the crash touches. LTS rises with posted speed, lanes and traffic volume, and falls with separated bike lanes."],
+    "place": ["Road class from the city's street map: major and arterial streets carry through traffic, collectors feed them, residential streets serve homes. At a corner, the biggest street meeting there.",
+              "High bike traffic stress: fast, wide or busy streets with no separated bike lane."],
+    "what_where": ["High bike traffic stress: fast, wide or busy streets with no separated bike lane."],
 }
+# The technical definitions behind NOTES, shown in About the Data rather than beside the controls.
+TECH_NOTES = [
+    "Road class is the classcode in DataSF's street centerlines (3psu-pn9h): 2 major, 3 arterial, 4 collector, 5 residential. "
+    "At an intersection it is the most major street meeting there.",
+    "High bike traffic stress is level of traffic stress (LTS) 3 or 4 in SFMTA's Bike Comfort Index on any block the crash touches. "
+    "LTS rises with posted speed, lanes and traffic volume, and falls with separated bike lanes.",
+]
+# Study-design terms in the evidence grades, said in plain words on the page; About the Data defines them.
+PLAIN = [
+    (r"\s*\(CMF \d+\)", ""), (r"the CMF Clearinghouse", "FHWA's crash-effect clearinghouse"),
+    (r"empirical Bayes CMFs", "controlled before-and-after crash effects"), (r"empirical Bayes", "controlled before-and-after"),
+    (r"\bEB study", "controlled before-and-after study"), (r"\bCMFs\b", "crash effects"), (r"\bCMF\b", "crash effect"),
+    (r"\bCRFs\b", "crash effects"), (r"\bTAG\b", "UK appraisal guidance"),
+]
+GLOSSARY = ("A <i>crash effect</i> is the share of crashes a fix removes, which engineers call a crash modification factor (CMF); "
+            "a <i>controlled before-and-after</i> study is one that corrects for the dip after a bad year, called empirical Bayes; "
+            "a <i>meta-analysis</i> pools many studies.")
+
+
+def plain(text):
+    if not text:
+        return text
+    for a, b in PLAIN:
+        text = re.sub(a, b, text)
+    return text
+
+
+# 7. A short display name for each fix: its name up to the first colon or parenthesis, unless this says otherwise.
+DISPLAY = {
+    "bar-hours-outlets-and-server-rules": "Bar closing time, outlet limits and server rules",
+    "blind-spot-and-lane-keeping-assist": "Blind spot and lane departure warning",
+    "citywide-speed-camera-network": "Citywide speed camera network",
+    "civil-red-light-penalty-opt-in": "Civil red-light tickets to fund more cameras",
+    "community-area-safety-plans": "Neighborhood safety plans",
+    "connected-network-plan": "Build the protected bike network as a whole",
+    "fixed-object-removal-breakaway": "Remove or soften fixed objects at the curb",
+    "ignition-interlocks-all-offenders": "Ignition interlocks for every convicted drunk driver",
+    "lift-camera-cap": "Lift the state's 33-camera cap",
+    "micromobility-speed-and-night-limits": "Speed and night limits for shared scooters and e-bikes",
+    "mode-shift-safety-in-numbers": "Traffic reduction and mode shift",
+    "older-driver-signs-and-licensing": "Larger signs and vision checks for older drivers",
+    "passenger-loading-zones": "Loading zones away from the bike lane",
+    "publicized-sobriety-checkpoints": "Publicized sobriety checkpoints and patrols",
+    "rotating-mobile-camera-coverage": "Rotating mobile speed cameras",
+    "seat-belt-enforcement-rear-seat": "Seat belt enforcement",
+    "separated-path-roundabout": "Roundabout with a separate bike path",
+    "shorter-pedestrian-waits": "Shorter signal cycles and pedestrian waits",
+    "usage-based-insurance-telematics": "Usage-based insurance or fleet telematics",
+    "high-visibility-crosswalk": "High-visibility crosswalk markings",
+    "income-scaled-speeding-fines": "Income-scaled speeding fines",
+    "random-breath-testing": "Random breath testing",
+    "slip-lane-removal": "Slip lane removal",
+    "fleet-purchasing-safety-rating-rule": "City purchasing rule for safer vehicles",
+    "circulation-plan-sectors": "Circulation plan with sectors cars can't cross",
+    "street-hierarchy-through-network": "Street hierarchy with access-only side streets",
+    "split-phase-bike-signal": "Fully split bike signal phase",
+    "area-wide-engineered-20mph-zones": "Area-wide traffic calming",
+    "lane-reduction-road-diet": "Road diet",
+    "school-zone-measures": "School zone measures",
+    "setback-stop-line-and-bike-box": "Set-back stop line and bike box",
+    "lower-speed-limits": "Lower posted limits without physical change",
+    "curb-extension-tighter-corner": "Curb extension and tighter corner",
+    "post-crash-care-ems-and-trauma": "Post-crash care",
+    "longer-crossing-time-older-pedestrians": "Longer crossing times where older people walk",
+    "yellow-change-interval-standard": "Yellow lights timed to the engineers' standard formula",
+    "ride-hail-and-safe-ride-home": "Subsidized safe rides home at closing time",
+    "twenty-four-seven-sobriety": "24/7 Sobriety program for DUI offenders",
+    "municipal-fleet-bus-safety-standard": "Safety standard for Muni buses and city trucks",
+}
+DISPLAY_WORDS = 10
+
+
+def display_name(fid, name):
+    """The fix's short name for lists and charts; the full name goes in its detail."""
+    short = DISPLAY.get(fid) or re.split(r"[:(]", name, maxsplit=1)[0].strip().rstrip(",;")
+    short = feet(short)
+    if len(short.split()) > DISPLAY_WORDS:
+        raise SystemExit("fix-explorer: display name for %s is over %d words; add it to DISPLAY" % (fid, DISPLAY_WORDS))
+    return short
 WHERE = [("signalized", "At a signalized corner"), ("hin", "On the High Injury Network"),
          ("ltn_cell", "Inside a residential cell"), ("school_zone", "In a school zone"), ("dark", "After dark")]
 REASONS = [
@@ -176,20 +255,14 @@ class Labels(object):
         if viol not in VERBS or not shares or not actor:
             return noun, None
         top, top_share = max(shares.items(), key=lambda kv: (kv[1], kv[0]))
-        drv = shares.get("Driver", 0.0)
-        others = sorted(((v, k) for k, v in shares.items() if k != "Driver" and v >= 0.02), reverse=True)
         if top_share > DOMINANT and top in ACTORS:
-            label = "%s %s" % (ACTORS[top], VERBS[viol])
-            if drv >= DRIVER_ALL:
-                return label, None
-            parts = ["%s at fault in %d%%" % (ACTORS[top], round(100 * top_share))]
-            parts += ["%s %d%%" % (ACTOR_LOW[k], round(100 * v)) for k, v in sorted(
-                ((k, v) for k, v in shares.items() if k != top and v >= 0.02), key=lambda kv: -kv[1])]
-            return label, ", ".join(parts)
-        label = "%s (driver at fault in %d%%)" % (noun, round(100 * drv))
+            # the label names the party, so no at-fault line repeats it
+            return "%s %s" % (ACTORS[top], VERBS[viol]), None
+        # the label names no party; the shares are said once, in the group's detail panel
+        ranked = sorted(((v, k) for k, v in shares.items() if v >= 0.02), reverse=True)
         line = ", ".join("%s at fault in %d%%" % (ACTORS.get(k, k), round(100 * v)) if i == 0 else "%s %d%%" % (ACTOR_LOW.get(k, k), round(100 * v))
-                         for i, (v, k) in enumerate(others))
-        return label, line or None
+                         for i, (v, k) in enumerate(ranked))
+        return noun, line or None
 
     def mode_sub(self, mode, viol=None):
         if mode == "bicycle involved" and viol is not None:
@@ -264,14 +337,6 @@ def feet(text):
     for a, b in US_WORDS:
         text = re.sub(a, b, text)
     return text
-
-
-def short_name(name):
-    """The fix's name without a trailing list of example cities or programs."""
-    m = re.match(r"^(.*\S)\s*\(([^()]*)\)$", name)
-    if m and re.search(r"[,;\d]", m.group(2)):
-        name = m.group(1)
-    return feet(name)
 
 
 def sig3(x):
@@ -401,7 +466,7 @@ def build(profiles):
             r = fix["groups"][row_i] if row_i is not None else {}
             refs[key] = {"mech": feet(r.get("mechanism") or fix.get("how_it_works")),
                          "eff": effect_text(r.get("effect_fraction")),
-                         "src": feet((r.get("effect") or {}).get("source")),
+                         "src": plain(feet((r.get("effect") or {}).get("source"))),
                          "url": source_link(fix, (r.get("effect") or {}).get("source"))}
         return key
 
@@ -500,8 +565,8 @@ def build(profiles):
                       for r in f["groups"] if r.get("used") and r.get("computable") and r["kind"] == "family"),
                      key=lambda x: -x[1])
         fx[f["id"]] = {
-            "name": short_name(f["name"]), "full": feet(f["name"]), "lever": f["lever"], "area": f["scope"] == "area-wide",
-            "how": feet(f.get("how_it_works")), "grade": feet(f.get("evidence_grade")),
+            "name": display_name(f["id"], f["name"]), "full": feet(f["name"]), "lever": f["lever"], "area": f["scope"] == "area-wide",
+            "how": feet(f.get("how_it_works")), "grade": plain(feet(f.get("evidence_grade"))),
             "cost": q3(f.get("annual_cost")) if f.get("annual_cost") else None,
             "cph": q3(f.get("cost_per_person_hurt_avoided")), "cpk": q3(f.get("cost_per_ksi_avoided")),
             "ah": q3(f.get("hurt_avoided_per_year")) if f["avoided_basis"] == "families" else None,
@@ -521,7 +586,7 @@ def build(profiles):
     sf_by_what = {}
     for fid, evs in sorted(fm["sf_evidence"].items()):
         for e in evs:
-            sf_by_what.setdefault(e["what"], {"what": e["what"], "low": e["low_it_sets"], "fixes": []})["fixes"].append(short_name(fixes[fid]["name"]))
+            sf_by_what.setdefault(e["what"], {"what": e["what"], "low": e["low_it_sets"], "fixes": []})["fixes"].append(display_name(fid, fixes[fid]["name"]))
     sf_rows = sorted(sf_by_what.values(), key=lambda x: x["what"])
     reason_counts = {}
     for n in fm["not_computable"]:
@@ -534,6 +599,7 @@ def build(profiles):
         "gaps": sorted(([k, v] for k, v in reason_counts.items()), key=lambda x: (-x[1], x[0]))[:6],
         "values": [{"t": s["title"], "u": s["url"]} for s in fm["inputs"]["value_sources"]],
         "read": sorted(set(fr["sources"].values()))[-1],
+        "tech": TECH_NOTES, "glossary": GLOSSARY,
     }
     return {"stack_order": [k for k, _, _ in STACKS], "stacks": stacks, "groupings": groupings,
             "grouping_order": [[gid, label] for gid, label in GROUPINGS], "notes": NOTES, "refs": refs,
@@ -568,7 +634,6 @@ h3 { font: 600 13px/1.3 "Public Sans", sans-serif; margin:14px 0 6px; color:var(
 select { font:inherit; width:100%; padding:5px 8px; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); margin:2px 0 8px; }
 label.label { display:block; }
 #groupNote p { color:var(--muted); font-size:12px; margin:0 0 6px; }
-.gb .name small.at { color:#6b4e00; }
 .note { color:var(--muted); font-size:12.5px; margin:6px 0 0; }
 svg text { font-family: inherit; }
 .view { display:none; } .view.on { display:block; }
@@ -620,6 +685,23 @@ details.about p, details.about li { margin:4px 0; }
 details.about ul { padding-left:16px; margin:4px 0; }
 .unr { color:var(--muted); font-size:12.5px; }
 .unr li { margin:3px 0; }
+#aboutPhone { display:none; }
+.share { margin-left:auto; font:inherit; font-size:13px; border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:16px; padding:4px 12px; cursor:pointer; white-space:nowrap; }
+.tag.ns { background:#fff; color:#59626f; border:1px solid var(--line); }
+.legend { color:var(--muted); font-size:12px; margin:8px 0 0; line-height:1.7; }
+.legend .tag { margin-left:0; }
+.full { display:block; color:var(--muted); font-size:12.5px; margin:4px 0 2px; }
+.steps li .more .full { margin:0 0 4px; }
+.gb tr.rest td { border-top:1px solid var(--line); }
+.gb tr.rest .name { color:var(--muted); font-style:italic; }
+.gb tr.rest .bar i { opacity:.45; }
+.gb tr.inl > td, .rk tr.inl > td { padding:6px 10px 12px; background:#fcfcfd; border-bottom:2px solid var(--teal-soft); }
+.rk tr.axis td { vertical-align:bottom; padding-bottom:2px; }
+.axt { font-size:11.5px; color:var(--muted); text-align:center; margin-bottom:1px; }
+.rk td.v .axt { text-align:right; display:none; line-height:1.2; }
+.bigsub { margin:0 0 6px; color:var(--muted); font-size:13px; }
+.fx.sec dl { font-size:12px; }
+.phoneOnly { display:none; }
 @media (max-width: 760px) {
   header { height:auto; flex-wrap:wrap; gap:8px; padding:10px 12px; }
   nav { overflow-x:auto; max-width:100%; }
@@ -634,11 +716,12 @@ details.about ul { padding-left:16px; margin:4px 0; }
   #aboutPhone { display:block; padding:0 12px 20px; }
   .gb .name { width:44%; }
   .rk .name { width:auto; font-size:12.5px; }
-  .rk td:nth-child(2), .wideOnly { display:none; }
-  .rk .v { width:64px; font-size:12.5px; }
+  .wideOnly { display:none !important; }
+  .rk .v { width:84px; font-size:12.5px; }
+  .rk td.v .axt.phoneOnly { display:block !important; }
+  body[data-view=groups] #right, body[data-view=rank] #right { display:none; }
+  header h1 { order:1; } .share { order:2; padding:3px 10px; } nav { order:3; flex-basis:100%; }
 }
-#aboutPhone { display:none; }
-.phoneOnly { display:none; }
 </style>
 </head>
 <body>
@@ -649,6 +732,7 @@ details.about ul { padding-left:16px; margin:4px 0; }
     <button data-view="groups" aria-pressed="false">Crash Groups</button>
     <button data-view="rank" aria-pressed="false">Fixes Ranked</button>
   </nav>
+  <button id="share" class="share" title="Copy a link to this view">Share</button>
 </header>
 <main>
   <section id="left">
@@ -681,15 +765,18 @@ details.about ul { padding-left:16px; margin:4px 0; }
       <p class="note" id="groupFoot"></p>
     </div>
     <div class="view" data-for="rank">
-      <h2>Cost per Person Hurt Avoided</h2>
+      <h2>Fixes Ranked, Cheapest First</h2>
       <table class="rk" id="rankTable"></table>
       <p class="note">Each fix on its own, at every place of its kind in SF.<span class="wideOnly"> Dot: middle estimate; line: low to high.</span></p>
+      <div id="rankLegend"></div>
+      <h3 id="freeTitle"></h3>
+      <table class="rk" id="freeTable"></table>
       <h3 id="unrTitle"></h3>
       <ul class="unr" id="unrList"></ul>
     </div>
   </section>
   <section id="right">
-    <div class="view on" data-for="stack"><h2>Fixes in the Order Added</h2><ol class="steps" id="stepList"></ol></div>
+    <div class="view on" data-for="stack"><h2>Fixes in the Order Added</h2><ol class="steps" id="stepList"></ol><div id="stepLegend"></div></div>
     <div class="view" data-for="groups"><div id="groupDetail"></div></div>
     <div class="view" data-for="rank"><div id="fixDetail"></div></div>
   </section>
@@ -701,6 +788,7 @@ const D = JSON.parse(document.getElementById('data').textContent);
 const F = D.fixes;
 const S = { view:'stack', stack:'both', measure:'h', grouping:'family', group:null, lever:'all', fix:null, step:0 };
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const phone = () => window.innerWidth <= 760;
 function sig(x, n=2) { if (x === 0) return '0'; const a = Math.abs(x); const e = Math.floor(Math.log10(a)) - n + 1; const v = Math.round(x / Math.pow(10, e)) * Math.pow(10, e); return e < 0 ? v.toFixed(-e) : String(Math.round(v)); }
 function num(x) { if (x == null) return ''; const a = Math.abs(x); if (a >= 100) return Number(sig(x)).toLocaleString('en-US'); if (a >= 10) return sig(x); if (a >= 1) return Number(sig(x)).toFixed(a < 10 && Number(sig(x)) % 1 ? 1 : 0); return Number(sig(x)).toString(); }
 function money(x) { if (x == null) return ''; if (x === 0) return '$0'; const a = Math.abs(x);
@@ -708,8 +796,31 @@ function money(x) { if (x == null) return ''; if (x === 0) return '$0'; const a 
 function pct(x) { return (x == null) ? '' : (Math.round(x * 1000) / 10 >= 10 || Math.abs(x) < 0.001 ? Math.round(x * 100) : (Math.round(x * 1000) / 10)) + '%'; }
 function effText(e) { if (!e) return ''; const f = v => v >= 0 ? pct(v) + ' fewer' : pct(-v) + ' more';
   const lo = e.l, hi = e.h; return f(e.m) + ' (' + (lo < 0 ? pct(-lo) + ' more' : pct(lo)) + ' to ' + (hi < 0 ? pct(-hi) + ' more' : pct(hi) + ' fewer') + ')' + (e.ksi_only ? ', killed or seriously hurt only' : ''); }
-const rg = (q, paren) => num(q.low) === num(q.high) ? '' : (paren ? ` (${num(q.low)} to ${num(q.high)})` : `, ${num(q.low)} to ${num(q.high)}`);
-const areaTag = id => (F[id].area ? '<span class="tag" title="Covers whole neighborhoods or the city">Area-wide</span>' : '') + (F[id].lowconf ? '<span class="tag q" title="The city data on where it could go is shaky">Reach uncertain</span>' : '') + (F[id].most ? '<span class="tag q" title="Places already treated are not netted out">At most</span>' : '');
+// a range of people avoided; a low end below zero means the fix could add a few, and says so
+const span = q => q.low < 0 ? `${num(-q.low)} more to ${num(q.high)} fewer` : `${num(q.low)} to ${num(q.high)}`;
+const rg = (q, money_) => { if (!money_) return num(q.low) === num(q.high) ? '' : ` (${span(q)})`;
+  if (q.high == null) return q.low == null ? '' : ` (${money(q.low)} or more)`;
+  return money(q.low) === money(q.high) ? '' : ` (${money(q.low)} to ${money(q.high)})`; };
+
+/* ---------- tags: Area-wide for the kind of fix, and at most one caveat on its reach ---------- */
+const STACKED = new Set(D.stacks.both.steps.map(s => s.id));
+const LEG = {
+  'Area-wide': 'covers whole neighborhoods or the city',
+  'At most': "places already treated aren't netted out, so it's the most the fix could reach",
+  'Reach uncertain': 'the city data on where it could go is rough',
+  'Not stacked': "the stack leaves it out, because a similar fix is already in or it's a citywide law",
+};
+function tagList(id, ns) { const f = F[id], t = [];
+  if (f.area) t.push('Area-wide');
+  if (f.lowconf) t.push('Reach uncertain'); else if (f.most) t.push('At most');
+  if (ns && !STACKED.has(id)) t.push('Not stacked');
+  return t; }
+const tagHtml = k => `<span class="tag${k === 'Area-wide' ? '' : k === 'Not stacked' ? ' ns' : ' q'}">${k}</span>`;
+const tags = (id, ns) => tagList(id, ns).map(tagHtml).join('');
+function legend(ids, ns) { const seen = new Set(); ids.forEach(i => tagList(i, ns).forEach(k => seen.add(k)));
+  const ks = Object.keys(LEG).filter(k => seen.has(k));
+  return ks.length ? `<p class="legend">${ks.map(k => `${tagHtml(k)} ${LEG[k]}`).join('. ')}.</p>` : ''; }
+const fullName = id => F[id].full !== F[id].name ? `<span class="full">${esc(F[id].full)}</span>` : '';
 
 function chips(el, items, key, after) {
   const box = document.getElementById(el);
@@ -721,28 +832,27 @@ function chips(el, items, key, after) {
 /* ---------- view 1: stacked curve ---------- */
 function drawStack() {
   const st = D.stacks[S.stack], m = S.measure, steps = st.steps;
+  if (S.step >= steps.length) S.step = 0;
   const last = steps[steps.length - 1];
   document.getElementById('stackTitle').textContent = (m === 'h' ? 'Share of SF People Hurt Avoided a Year' : 'Share of SF People Killed or Seriously Hurt Avoided a Year');
   const box = document.getElementById('stackChart');
-  const W = Math.max(300, box.clientWidth || 600), phone = W < 520;
-  const H = phone ? 300 : Math.min(470, Math.max(320, window.innerHeight - 56 - 150));
-  const ml = 44, mr = phone ? 74 : 84, mt = 12, mb = 40;
+  const W = Math.max(300, box.clientWidth || 600), ph = W < 520;
+  const H = ph ? 300 : Math.min(470, Math.max(320, window.innerHeight - 56 - 150));
+  const ml = 44, mr = ph ? 74 : 84, mt = 12, mb = 40;
   const iw = W - ml - mr, ih = H - mt - mb;
   let first = 1e9; for (const k of D.stack_order) first = Math.min(first, D.stacks[k].steps[0].cost);
-  const lx0 = Math.floor(Math.log10(first)), x0 = Math.pow(10, lx0), x1 = 1e9;
+  const lx0 = Math.floor(Math.log10(first)), x0 = Math.pow(10, lx0);
   const X = v => ml + (Math.log10(Math.max(v, x0)) - lx0) / (9 - lx0) * iw;
-  let ylo = 0, yhi = 0.4;
-  for (const k of ['area','corner','both']) for (const s of D.stacks[k].steps) { ylo = Math.min(ylo, s.h[0], s.k[0]); yhi = Math.max(yhi, s.h[2], s.k[2]); }
-  ylo = Math.floor(ylo * 10) / 10; yhi = Math.ceil(yhi * 10) / 10;
-  const Y = v => mt + (yhi - v) / (yhi - ylo) * ih;
+  // the axis starts at 0: a fix's low end can be no effect, and the band is clipped there
+  let yhi = 0.4;
+  for (const k of D.stack_order) for (const s of D.stacks[k].steps) yhi = Math.max(yhi, s.h[2], s.k[2]);
+  yhi = Math.ceil(yhi * 10) / 10;
+  const Y = v => mt + (yhi - Math.max(0, v)) / yhi * ih;
   let g = '';
-  for (let v = ylo; v <= yhi + 1e-9; v += 0.1) { const y = Y(v); g += `<line x1="${ml}" x2="${ml + iw}" y1="${y}" y2="${y}" stroke="${Math.abs(v) < 1e-9 ? '#9aa3ad' : '#eceff2'}"/><text x="${ml - 6}" y="${y + 4}" text-anchor="end" font-size="11" fill="#59626f">${Math.round(v * 100)}%</text>`; }
-  [[1e4,'$10,000'],[1e5,'$100,000'],[1e6,'$1M'],[1e7,'$10M'],[1e8,'$100M'],[1e9,'$1B']].filter(([v]) => v >= x0).forEach(([v, t], i, arr) => { if (phone && arr.length > 4 && i % 2) return; const x = X(v); g += `<line x1="${x}" x2="${x}" y1="${mt}" y2="${mt + ih}" stroke="#eceff2"/><text x="${x}" y="${mt + ih + 16}" text-anchor="middle" font-size="11" fill="#59626f">${t}</text>`; });
+  for (let v = 0; v <= yhi + 1e-9; v += 0.1) { const y = Y(v); g += `<line x1="${ml}" x2="${ml + iw}" y1="${y}" y2="${y}" stroke="${v < 1e-9 ? '#9aa3ad' : '#eceff2'}"/><text x="${ml - 6}" y="${y + 4}" text-anchor="end" font-size="11" fill="#59626f">${Math.round(v * 100)}%</text>`; }
+  [[1e4,'$10,000'],[1e5,'$100,000'],[1e6,'$1M'],[1e7,'$10M'],[1e8,'$100M'],[1e9,'$1B']].filter(([v]) => v >= x0).forEach(([v, t], i, arr) => { if (ph && arr.length > 4 && i % 2) return; const x = X(v); g += `<line x1="${x}" x2="${x}" y1="${mt}" y2="${mt + ih}" stroke="#eceff2"/><text x="${x}" y="${mt + ih + 16}" text-anchor="middle" font-size="11" fill="#59626f">${t}</text>`; });
   g += `<text x="${ml + iw / 2}" y="${H - 4}" text-anchor="middle" font-size="12" fill="#15181c">Cost a year, all fixes so far (log scale)</text>`;
-  // step path: start at the first cost with 0, then up at each step
-  const pts = steps.map(s => [X(s.cost), s[m]]);
-  const up = [], dn = [];
-  let px = X(x0);
+  const up = [], dn = [], px = X(x0);
   up.push(`M${px},${Y(0)}`);
   steps.forEach((s, i) => { const x = X(s.cost); up.push(`L${x},${Y(i ? steps[i-1][m][2] : 0)}`, `L${x},${Y(s[m][2])}`); });
   up.push(`L${ml + iw},${Y(last[m][2])}`, `L${ml + iw},${Y(last[m][0])}`);
@@ -753,17 +863,24 @@ function drawStack() {
   steps.forEach((s, i) => { const x = X(s.cost); line += `L${x},${Y(i ? steps[i-1][m][1] : 0)}L${x},${Y(s[m][1])}`; });
   line += `L${ml + iw},${Y(last[m][1])}`;
   g += `<path d="${line}" fill="none" stroke="#2f7d76" stroke-width="2.2"/>`;
-  let lastLab = -1e9;
-  steps.forEach((s, i) => { const x = X(s.cost), y = Y(s[m][1]), sel = i === S.step;
-    const lab = sel || x - lastLab >= 26; if (lab && !sel) lastLab = x;
-    g += `<g class="pt" data-i="${i}" style="cursor:pointer"><circle cx="${x}" cy="${y}" r="12" fill="transparent"/>` + (lab
-      ? `<circle cx="${x}" cy="${y}" r="${sel ? 9 : 7.5}" fill="${sel ? '#15181c' : '#fff'}" stroke="${sel ? '#15181c' : '#2f7d76'}" stroke-width="1.6"/><text x="${x}" y="${y + 3.6}" text-anchor="middle" font-size="${i >= 9 ? 8.5 : 10}" font-weight="700" fill="${sel ? '#fff' : '#2f7d76'}">${i + 1}</text>`
-      : `<circle cx="${x}" cy="${y}" r="3" fill="#2f7d76"/>`) + `</g>`; });
+  // a marker carries its number only where it has room: the selected step first, then in order, none closer than ROOM px
+  const P = steps.map((s, i) => ({ i, x: X(s.cost), y: Y(s[m][1]) })), ROOM = 19, lab = [];
+  const fits = p => lab.every(q => Math.hypot(p.x - q.x, p.y - q.y) >= ROOM);
+  lab.push(P[S.step]); P.forEach(p => { if (p.i !== S.step && fits(p)) lab.push(p); });
+  const on = new Set(lab.map(p => p.i));
+  P.forEach(p => { if (!on.has(p.i)) g += `<circle cx="${p.x}" cy="${p.y}" r="3" fill="#2f7d76"/>`; });
+  lab.slice(1).concat([lab[0]]).forEach(p => { const sel = p.i === S.step;
+    g += `<circle cx="${p.x}" cy="${p.y}" r="${sel ? 9 : 7.5}" fill="${sel ? '#15181c' : '#fff'}" stroke="${sel ? '#15181c' : '#2f7d76'}" stroke-width="1.6"/><text x="${p.x}" y="${p.y + 3.6}" text-anchor="middle" font-size="${p.i >= 9 ? 8.5 : 10}" font-weight="700" fill="${sel ? '#fff' : '#2f7d76'}">${p.i + 1}</text>`; });
   const ey = Y(last[m][1]);
   const cnt = steps.reduce((a, s) => a + (m === 'h' ? s.dh : s.dk), 0);
-  g += `<text x="${ml + iw + 6}" y="${ey - 2}" font-size="${phone ? 15 : 18}" font-weight="700" fill="#2f7d76">${num(cnt)}</text><text x="${ml + iw + 6}" y="${ey + 13}" font-size="10.5" fill="#59626f">fewer, ${pct(last[m][1])}</text>`;
+  g += `<text x="${ml + iw + 6}" y="${ey - 2}" font-size="${ph ? 15 : 18}" font-weight="700" fill="#2f7d76">${num(cnt)}</text><text x="${ml + iw + 6}" y="${ey + 13}" font-size="10.5" fill="#59626f">fewer, ${pct(last[m][1])}</text>`;
+  g += `<rect class="hit" x="${ml}" y="${mt}" width="${iw}" height="${ih}" fill="transparent" style="cursor:pointer"/>`;
   box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="Share avoided against cost a year">${g}</svg>`;
-  box.querySelectorAll('.pt').forEach(p => p.onclick = () => { S.step = +p.dataset.i; drawStack(); drawSteps(true); if (window.innerWidth <= 760) document.querySelector('#stepList .sel').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+  // a tap anywhere on the plot picks the step nearest along x
+  box.querySelector('.hit').onclick = e => { const r = box.querySelector('svg').getBoundingClientRect(), x = e.clientX - r.left;
+    let best = 0; P.forEach(p => { if (Math.abs(p.x - x) < Math.abs(P[best].x - x)) best = p.i; });
+    S.step = best; drawStack(); drawSteps(true); writeHash();
+    if (phone()) document.querySelector('#stepList .sel').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
 }
 function drawSteps(scroll) {
   const st = D.stacks[S.stack], m = S.measure;
@@ -771,26 +888,35 @@ function drawSteps(scroll) {
   ol.innerHTML = st.steps.map((s, i) => { const f = F[s.id];
     const v = m === 'h' ? num(s.dh) + ' fewer hurt' : num(s.dk) + ' fewer';
     const per = m === 'h' ? money(s.add / Math.max(s.dh, 1e-9)) + ' per person hurt avoided' : money(s.add / Math.max(s.dk, 1e-9)) + ' per person killed or seriously hurt avoided';
-    return `<li data-i="${i}" class="${i === S.step ? 'sel' : ''}"><span class="n">${i + 1}</span><span>${esc(f.name)}${areaTag(s.id)}</span><span class="v">${v}</span>
-      <span class="more">${esc(f.how)}<br>About ${per} at this step.</span></li>`; }).join('')
+    return `<li data-i="${i}" class="${i === S.step ? 'sel' : ''}"><span class="n">${i + 1}</span><span>${esc(f.name)}${tags(s.id)}</span><span class="v">${v}</span>
+      <span class="more">${fullName(s.id)}${esc(f.how)}<br>About ${per} at this step.</span></li>`; }).join('')
     + (st.not_added.length ? `<li style="cursor:default;display:block;color:#59626f;font-size:12.5px">Not added, because a version of them is already in or they avoid no one on what is left: ${st.not_added.map(i => esc(F[i].name)).join('; ')}.</li>` : '');
-  ol.onclick = e => { const li = e.target.closest('li[data-i]'); if (!li) return; S.step = +li.dataset.i; drawStack(); drawSteps(false); };
-  if (scroll) { const sel = ol.querySelector('.sel'); if (sel && window.innerWidth > 760) sel.scrollIntoView({ block: 'nearest' }); }
+  document.getElementById('stepLegend').innerHTML = legend(st.steps.map(s => s.id));
+  ol.onclick = e => { const li = e.target.closest('li[data-i]'); if (!li) return; S.step = +li.dataset.i; drawStack(); drawSteps(false); writeHash(); };
+  if (scroll) { const sel = ol.querySelector('.sel'); if (sel && !phone()) sel.scrollIntoView({ block: 'nearest' }); }
 }
 
 /* ---------- view 2: groups ---------- */
+const isRest = r => r.key === 'all other families' || / \| rest$/.test(r.key);
 function drawGroups() {
-  const rows = D.groupings[S.grouping];
+  const all = D.groupings[S.grouping], rows = all.filter(r => !isRest(r)).concat(all.filter(isRest));
   document.getElementById('groupNote').innerHTML = (D.notes[S.grouping] || []).map(t => `<p>${esc(t)}</p>`).join('');
   document.getElementById('groupFoot').textContent = `SF crashes ${D.about.years[0]} to ${D.about.years[1]}, a yearly average. Tap a group to see the fixes that reach it.`;
-  if (!rows.some(r => r.key === S.group)) S.group = rows[0].key;
+  if (S.group && !rows.some(r => r.key === S.group)) S.group = null;
+  if (!S.group && !phone()) S.group = rows[0].key;
   const mh = Math.max(...rows.map(r => r.h)), mk = Math.max(...rows.map(r => r.k));
-  const t = document.getElementById('groupTable');
-  t.innerHTML = `<tr><th></th><th>People hurt</th><th>Killed or seriously hurt</th></tr>` + rows.map(r => `<tr class="row ${r.key === S.group ? 'sel' : ''}" data-k="${esc(r.key)}"><td class="name">${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}${r.at ? `<small class="at">${esc(r.at)}</small>` : ''}</td>
-    <td><div class="bar"><i style="width:${(r.h / mh * 70).toFixed(1)}%"></i><b>${num(r.h)}</b></div></td>
-    <td><div class="bar k"><i style="width:${(r.k / mk * 60).toFixed(1)}%"></i><b>${num(r.k)}</b></div></td></tr>`).join('');
-  t.onclick = e => { const tr = e.target.closest('tr.row'); if (!tr) return; S.group = tr.dataset.k; drawGroups(); if (window.innerWidth <= 760) document.getElementById('right').scrollIntoView({ behavior: 'smooth' }); };
   const g = rows.find(r => r.key === S.group);
+  const t = document.getElementById('groupTable');
+  t.innerHTML = `<tr><th></th><th>People hurt</th><th>Killed or seriously hurt</th></tr>` + rows.map(r => `<tr class="row ${r.key === S.group ? 'sel' : ''} ${isRest(r) ? 'rest' : ''}" data-k="${esc(r.key)}"><td class="name">${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</td>
+    <td><div class="bar"><i style="width:${(r.h / mh * 70).toFixed(1)}%"></i><b>${num(r.h)}</b></div></td>
+    <td><div class="bar k"><i style="width:${(r.k / mk * 60).toFixed(1)}%"></i><b>${num(r.k)}</b></div></td></tr>`
+    + (phone() && r.key === S.group ? `<tr class="inl"><td colspan="3">${groupDetail(r)}</td></tr>` : '')).join('');
+  t.onclick = e => { const tr = e.target.closest('tr.row'); if (!tr) return;
+    S.group = phone() && S.group === tr.dataset.k ? null : tr.dataset.k; drawGroups(); writeHash();
+    if (phone()) { const now = t.querySelector(`tr.row[data-k="${CSS.escape(tr.dataset.k)}"]`); if (now) now.scrollIntoView({ block: 'nearest' }); } };
+  document.getElementById('groupDetail').innerHTML = !phone() && g ? groupDetail(g) : '';
+}
+function groupDetail(g) {
   let h = `<h2>${esc(g.label)}${g.sub ? ` <span style="font-weight:400;color:#59626f">· ${esc(g.sub)}</span>` : ''}</h2>`;
   if (g.at) h += `<p class="note" style="margin:0 0 6px">${esc(g.at)}</p>`;
   const se = g.st[S.stack], sv = S.measure === 'h' ? se[0] : se[1], base = S.measure === 'h' ? g.h : g.k;
@@ -800,19 +926,19 @@ function drawGroups() {
   const on = g.fixes.filter(x => !x.why), off = g.fixes.filter(x => x.why);
   h += `<h3>Fixes That Reach It, Most People First</h3>`;
   if (!g.fixes.length) h += `<p class="note">No fix in the research is mapped to this group yet.</p>`;
-  h += on.map(x => fixRow(x)).join('') + off.map(x => fixRow(x)).join('');
-  document.getElementById('groupDetail').innerHTML = h;
+  h += on.map(x => fixRow(x)).join('') + off.map(x => fixRow(x)).join('') + legend(g.fixes.map(x => x.id));
+  return h;
 }
 function fixRow(x) {
   const f = F[x.id];
   if (!x.why) x = Object.assign({}, D.refs[x.id + ':' + x.r], x, { ah: x.h ? { low: x.h[0], mid: x.h[1], high: x.h[2] } : null,
     ak: { low: x.k[0], mid: x.k[1], high: x.k[2] }, share: x.s });
-  if (x.why) return `<details class="fx off"><summary><span>${esc(f.name)}${areaTag(x.id)}</span><span class="v">Can't count yet</span></summary><dl><dt>Why</dt><dd>${esc(x.why)}</dd><dt>How it works here</dt><dd>${esc(x.mech)}</dd></dl></details>`;
+  if (x.why) return `<details class="fx off"><summary><span>${esc(f.name)}${tags(x.id)}</span><span class="v">Can't count yet</span></summary>${fullName(x.id)}<dl><dt>Why</dt><dd>${esc(x.why)}</dd><dt>How it works here</dt><dd>${esc(x.mech)}</dd></dl></details>`;
   const v = x.ah ? num(x.ah.mid) + ' a year' : num(x.ak.mid) + ' killed or seriously hurt a year';
-  const rng = x.ah ? `${num(x.ah.low)} to ${num(x.ah.high)} people hurt a year` : `${num(x.ak.low)} to ${num(x.ak.high)} killed or seriously hurt a year`;
+  const rng = x.ah ? `${span(x.ah)} people hurt a year` : `${span(x.ak)} killed or seriously hurt a year`;
   const cost = f.cost ? `${money(f.cost.mid)} a year citywide` : 'Not priced';
-  const cph = f.cph ? `${money(f.cph.mid)} (${money(f.cph.low)} to ${money(f.cph.high)}), all groups together` : (f.why ? esc(f.why) : 'Not computed');
-  return `<details class="fx"><summary><span>${esc(f.name)}${areaTag(x.id)}</span><span class="v">${v}</span></summary><dl>
+  const cph = f.cph ? `${money(f.cph.mid)}${rg(f.cph, true)}, all groups together` : (f.why ? esc(f.why) : 'Not computed');
+  return `<details class="fx"><summary><span>${esc(f.name)}${tags(x.id)}</span><span class="v">${v}</span></summary>${fullName(x.id)}<dl>
     <dt>How it works here</dt><dd>${esc(x.mech)}</dd>
     <dt>Reaches</dt><dd>${x.share != null ? pct(x.share) + ' of the group\'s people hurt' : ''}</dd>
     <dt>Effect</dt><dd>${effText(x.eff)}. ${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.src)}</a>` : esc(x.src)}</dd>
@@ -824,25 +950,37 @@ function fixRow(x) {
 /* ---------- view 3: ranking ---------- */
 function drawRank() {
   const ids = D.ranking.filter(i => S.lever === 'all' || F[i].lever === S.lever);
-  if (!ids.includes(S.fix)) S.fix = ids[0] || null;
-  const W = window.innerWidth <= 760 ? 112 : 180, lo = 1e2, hi = 1e8, X = v => 18 + (Math.log10(Math.min(Math.max(v, lo), hi)) - 2) / 6 * (W - 36);
+  const paid = ids.filter(i => F[i].cph.mid !== 0), free = ids.filter(i => F[i].cph.mid === 0);
+  if (S.fix && !ids.includes(S.fix)) S.fix = null;
+  if (!S.fix && !phone()) S.fix = paid[0] || free[0] || null;
+  const W = 230, lo = 1e2, hi = 1e8, X = v => 22 + (Math.log10(Math.min(Math.max(v, lo), hi)) - 2) / 6 * (W - 44);
+  const inl = i => phone() && i === S.fix ? `<tr class="inl"><td colspan="3">${fixDetail(i)}</td></tr>` : '';
+  const axis = `<tr class="axis"><td></td><td class="wideOnly"><div class="axt">Cost per person hurt avoided (log scale)</div><svg width="${W}" height="14">${[[1e2,'$100'],[1e4,'$10,000'],[1e6,'$1M'],[1e8,'$100M']].map(([v,l]) => `<text x="${X(v)}" y="11" text-anchor="middle" font-size="11" fill="#59626f">${l}</text>`).join('')}</svg></td><td class="v"><span class="phoneOnly axt">Per person hurt avoided</span></td></tr>`;
   const t = document.getElementById('rankTable');
-  t.innerHTML = ids.length ? `<tr><td></td><td style="font-size:11px;color:#59626f"><svg width="${W}" height="14">${[[1e2,'$100'],[1e4,'$10,000'],[1e6,'$1M'],[1e8,'$100M']].filter((_, j) => W > 150 || j !== 0).map(([v,l]) => `<text x="${X(v)}" y="11" text-anchor="middle" font-size="10" fill="#59626f">${l}</text>`).join('')}</svg></td><td></td></tr>` + ids.map(i => { const f = F[i], c = f.cph;
-    const zero = c.mid === 0;
-    const svg = `<svg width="${W}" height="16"><line x1="${X(lo)}" x2="${X(hi)}" y1="8" y2="8" stroke="#eceff2"/>${zero ? '' : `<line x1="${X(c.low || lo)}" x2="${X(c.high)}" y1="8" y2="8" stroke="#2f7d76" stroke-width="2.5" opacity="0.6"/><circle cx="${X(c.mid)}" cy="8" r="4.5" fill="#2f7d76"/>`}</svg>`;
-    return `<tr class="row ${i === S.fix ? 'sel' : ''}" data-i="${i}"><td class="name">${esc(f.name)}${areaTag(i)}</td><td>${svg}</td><td class="v">${zero ? 'No public cost' : money(c.mid)}</td></tr>`; }).join('') : '';
-  t.onclick = e => { const tr = e.target.closest('tr.row'); if (!tr) return; S.fix = tr.dataset.i; drawRank(); if (window.innerWidth <= 760) document.getElementById('right').scrollIntoView({ behavior: 'smooth' }); };
+  t.innerHTML = paid.length ? axis + paid.map(i => { const f = F[i], c = f.cph;
+    const svg = `<svg width="${W}" height="16"><line x1="${X(lo)}" x2="${X(hi)}" y1="8" y2="8" stroke="#eceff2"/><line x1="${X(c.low || lo)}" x2="${X(c.high == null ? hi : c.high)}" y1="8" y2="8" stroke="#2f7d76" stroke-width="2.5" opacity="0.6"/><circle cx="${X(c.mid)}" cy="8" r="4.5" fill="#2f7d76"/></svg>`;
+    return `<tr class="row ${i === S.fix ? 'sel' : ''}" data-i="${i}"><td class="name">${esc(f.name)}${tags(i, true)}</td><td class="wideOnly">${svg}</td><td class="v">${money(c.mid)}</td></tr>` + inl(i); }).join('') : '';
+  document.getElementById('freeTitle').textContent = free.length ? 'No Public Cost' : '';
+  document.getElementById('freeTable').innerHTML = free.map(i => `<tr class="row ${i === S.fix ? 'sel' : ''}" data-i="${i}"><td class="name">${esc(F[i].name)}${tags(i, true)}</td><td class="v" colspan="2">${num(F[i].ah.mid)} fewer hurt a year</td></tr>` + inl(i)).join('');
+  document.getElementById('rankLegend').innerHTML = legend(ids, true);
+  const click = e => { const tr = e.target.closest('tr.row'); if (!tr) return;
+    S.fix = phone() && S.fix === tr.dataset.i ? null : tr.dataset.i; drawRank(); writeHash();
+    if (phone()) { const now = document.querySelector(`#mid tr.row[data-i="${CSS.escape(tr.dataset.i)}"]`); if (now) now.scrollIntoView({ block: 'nearest' }); } };
+  t.onclick = click; document.getElementById('freeTable').onclick = click;
   const un = D.unranked.filter(i => S.lever === 'all' || F[i].lever === S.lever);
   document.getElementById('unrTitle').textContent = un.length ? `Not Ranked Yet (${un.length})` : '';
-  document.getElementById('unrList').innerHTML = un.map(i => `<li>${esc(F[i].name)}${areaTag(i)}: ${esc(F[i].why)}</li>`).join('');
+  document.getElementById('unrList').innerHTML = un.map(i => `<li>${esc(F[i].name)}${tags(i)}: ${esc(F[i].why)}</li>`).join('') + (un.length ? `<li style="list-style:none">${legend(un)}</li>` : '');
   const d = document.getElementById('fixDetail');
-  if (!S.fix) { d.innerHTML = '<p class="note">No ranked fix of this kind yet; the list under the chart says why.</p>'; return; }
-  const f = F[S.fix];
-  d.innerHTML = `<p class="note phoneOnly"><a href="#" id="backToList">Back to the list</a></p><h2>${esc(f.full)}${areaTag(S.fix)}</h2><p>${esc(f.how)}</p>
-    <div class="fx" style="border:0"><dl>
-    <dt>People hurt</dt><dd>${num(f.ah.mid)} fewer a year${rg(f.ah, true)}</dd>
-    <dt>Killed or seriously hurt</dt><dd>${num(f.ak.mid)} fewer a year${rg(f.ak, true)}</dd>
-    ${f.cost.mid === 0 ? '' : `<dt>Cost</dt><dd>${money(f.cost.mid)} a year (${money(f.cost.low)} to ${money(f.cost.high)})</dd>`}
+  if (phone()) { d.innerHTML = ''; return; }
+  d.innerHTML = S.fix ? fixDetail(S.fix) : '<p class="note">No ranked fix of this kind yet; the list under the chart says why.</p>';
+}
+function fixDetail(id) {
+  const f = F[id];
+  return `<h2>${esc(f.full)}${tags(id, true)}</h2><p>${esc(f.how)}</p>
+    <div class="big">${num(f.ah.mid)}</div><p class="bigsub">fewer people hurt a year${num(f.ah.low) !== num(f.ah.high) ? `, likely ${span(f.ah)}` : ''}</p>
+    <div class="fx sec" style="border:0"><dl>
+    <dt>Killed or seriously hurt</dt><dd>${num(f.ak.mid)} fewer a year${rg(f.ak)}</dd>
+    ${f.cost.mid === 0 ? '<dt>Cost</dt><dd>No public cost</dd>' : `<dt>Cost</dt><dd>${money(f.cost.mid)} a year${rg(f.cost, true)}</dd><dt>Per person hurt avoided</dt><dd>${money(f.cph.mid)}${rg(f.cph, true)}</dd>`}
     ${f.top.length > 1 ? `<dt>Groups it helps most</dt><dd>${f.top.map(([g]) => esc(g)).join('; ')}</dd>` : f.top.length ? `<dt>Group it helps most</dt><dd>${esc(f.top[0][0])}</dd>` : ''}
     ${f.lowconf ? `<dt>Reach uncertain</dt><dd>${esc(f.lowconf)}</dd>` : ''}
     ${f.sf ? `<dt>SF's own result</dt><dd>${esc(f.sf)}</dd>` : ''}
@@ -851,39 +989,71 @@ function drawRank() {
 }
 
 /* ---------- about ---------- */
-document.addEventListener('click', e => { if (e.target.id !== 'backToList') return; e.preventDefault();
-  const r = document.querySelector('#rankTable tr.sel'); if (r) r.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
 function about() {
   const a = D.about;
   const h = `<p>Crashes are SF's injury crashes ${a.years[0]} to ${a.years[1]} from the Transportation Injury Mapping System and DataSF, about ${a.people_year.toLocaleString('en-US')} people hurt and ${a.ksi_year} killed or seriously hurt a year. Places come from DataSF street, signal, stop sign and High Injury Network data read ${esc(a.read)}.</p>
   <p><b>What is stacked.</b> The stacks hold the fixes that go in places: area-wide fixes and corner or corridor fixes. Citywide laws, fleet rules and programs, such as stop-as-yield for people biking, are ranked on their own but not stacked.</p>
   <p><b>Counting rule.</b> A fix's effect comes from its studies, applied to the share of each crash group it reaches. In a stack, each fix acts only on the people the fixes before it left in each group (TRL PPR844), which assumes the effects are independent. Costs are a year: a build cost is spread over its service life, and a fix is priced at every place of its kind in SF. Dollar years are as each source gives them.</p>
+  <p><b>The shaded band.</b> It runs from the studies' low to high effects. A fix's low end can be no effect, or even a few more crashes, so the band is cut off at zero rather than drawn below it.</p>
   <p><b>What SF's own results did.</b> Where SF has tested a fix on its own streets, its result sets the low end where the studies were more hopeful:</p>
   <ul>${a.sf.map(s => `<li>${esc(s.fixes.join('; '))}: ${esc(s.what)}. Low end set to ${s.low < 0 ? pct(-s.low) + ' more crashes' : s.low === 0 ? 'no effect' : pct(s.low) + ' fewer'}.</li>`).join('')}</ul>
-  <p><b>Markers.</b> <i>Area-wide</i>: the fix covers whole neighborhoods or the city rather than chosen corners or streets. <i>At most</i>: SF has no count of the places already treated, so none are netted out and the figure is the most the fix could reach. <i>Reach uncertain</i>: the city data that decides where the fix could go is shaky, so how much of each group it reaches is a rough figure.</p>
+  <p><b>Markers.</b> <i>Area-wide</i>: the fix covers whole neighborhoods or the city rather than chosen corners or streets. <i>At most</i>: SF has no count of the places already treated, so none are netted out and the figure is the most the fix could reach. <i>Reach uncertain</i>: the city data that decides where the fix could go is shaky, so how much of each group it reaches is a rough figure. A fix carries one of these two at most. <i>Not stacked</i>: the stack leaves the fix out, because a version of it is already in, it avoids no one the fixes before it left, or it is a citywide law.</p>
+  <p><b>Place and bike traffic stress.</b> ${a.tech.map(esc).join(' ')}</p>
+  <p><b>Study terms.</b> ${a.glossary}</p>
   <p><b>Gaps.</b> ${a.computable} of ${a.fixes} fixes can be counted and ${a.ranked} ranked, so the stacks understate what a full package could do. The most common reasons a fix and group can't be counted:</p>
   <ul>${a.gaps.map(([t, n]) => `<li>${esc(t)}: ${n}</li>`).join('')}</ul>
   <p><b>Injury values.</b> ${a.values.map(v => v.u.startsWith('http') ? `<a href="${esc(v.u)}" target="_blank" rel="noopener">${esc(v.t)}</a>` : esc(v.t)).join('; ')}.</p>`;
   document.querySelectorAll('.aboutBody').forEach(b => b.innerHTML = h);
 }
 
+/* ---------- state in the address: tab, stack, count, step, grouping, group, kind of fix, fix ---------- */
+function readHash() {
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (['stack', 'groups', 'rank'].includes(h)) { S.view = h; return; }
+  const q = new URLSearchParams(location.hash.slice(1));
+  if (['stack', 'groups', 'rank'].includes(q.get('v'))) S.view = q.get('v');
+  if (D.stacks[q.get('s')]) S.stack = q.get('s');
+  if (['h', 'k'].includes(q.get('m'))) S.measure = q.get('m');
+  if (q.get('n') && +q.get('n') >= 1) S.step = Math.floor(+q.get('n')) - 1;
+  if (D.groupings[q.get('g')]) S.grouping = q.get('g');
+  if (q.get('r')) S.group = q.get('r');
+  if (D.levers.some(([k]) => k === q.get('l'))) S.lever = q.get('l');
+  if (F[q.get('f')]) S.fix = q.get('f');
+}
+function writeHash() {
+  const q = new URLSearchParams();
+  q.set('v', S.view); q.set('s', S.stack); q.set('m', S.measure); q.set('n', S.step + 1); q.set('g', S.grouping);
+  if (S.group) q.set('r', S.group);
+  if (S.lever !== 'all') q.set('l', S.lever);
+  if (S.fix) q.set('f', S.fix);
+  try { history.replaceState(null, '', '#' + q.toString()); } catch (e) { /* a sandboxed frame may refuse; the page still works */ }
+}
+
 /* ---------- wiring ---------- */
-function setView(v) { S.view = v;
+function setView(v) { S.view = v; document.body.dataset.view = v;
   document.querySelectorAll('nav button').forEach(x => x.setAttribute('aria-pressed', x.dataset.view === S.view));
   document.querySelectorAll('.view, .ctl').forEach(x => x.classList.toggle('on', x.dataset.for === S.view)); }
-document.querySelector('nav').onclick = e => { const b = e.target.closest('button'); if (!b) return; setView(b.dataset.view);
-  history.replaceState(null, '', S.view === 'stack' ? location.pathname : '#' + S.view); render(); };
-if (['groups', 'rank'].includes(location.hash.slice(1))) setView(location.hash.slice(1));
+document.querySelector('nav').onclick = e => { const b = e.target.closest('button'); if (!b) return; setView(b.dataset.view); render(); };
+readHash();
+setView(S.view);
 chips('stackChips', D.stack_order.map(k => [k, D.stacks[k].label]), 'stack', () => { S.step = 0; render(); });
 chips('measureChips', [['h', 'People hurt'], ['k', 'Killed or seriously hurt']], 'measure', render);
 const gsel = document.getElementById('groupSel');
 gsel.innerHTML = D.grouping_order.map(([v, t]) => `<option value="${esc(v)}">${esc(t)}</option>`).join('');
 gsel.value = S.grouping;
 gsel.onchange = () => { S.grouping = gsel.value; S.group = null; render(); };
-chips('leverChips', [['all', 'All']].concat(D.levers.filter(([k]) => D.ranking.some(i => F[i].lever === k))), 'lever', render);
-function render() { if (S.view === 'stack') { drawStack(); drawSteps(false); } else if (S.view === 'groups') drawGroups(); else drawRank(); }
+const leverItems = [['all', 'All']].concat(D.levers.filter(([k]) => D.ranking.some(i => F[i].lever === k)));
+if (!leverItems.some(([k]) => k === S.lever)) S.lever = 'all';
+chips('leverChips', leverItems, 'lever', render);
+const shareBtn = document.getElementById('share');
+shareBtn.onclick = async () => { writeHash(); const u = location.href; let ok = false;
+  try { await navigator.clipboard.writeText(u); ok = true; } catch (e) {
+    const ta = document.createElement('textarea'); ta.value = u; document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand('copy'); } catch (e2) { ok = false; } ta.remove(); }
+  shareBtn.textContent = ok ? 'Link copied' : 'Copy the address bar'; setTimeout(() => { shareBtn.textContent = 'Share'; }, 2000); };
+function render() { if (S.view === 'stack') { drawStack(); drawSteps(false); } else if (S.view === 'groups') drawGroups(); else drawRank(); writeHash(); }
 about(); render();
-let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(render, 120); });
+let rt, lastW = window.innerWidth; window.addEventListener('resize', () => { if (window.innerWidth === lastW) return; lastW = window.innerWidth; clearTimeout(rt); rt = setTimeout(render, 120); });
 </script>
 </body>
 </html>

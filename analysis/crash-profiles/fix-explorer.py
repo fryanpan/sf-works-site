@@ -418,7 +418,14 @@ def build(profiles):
                 "h": [r3(x) for x in h], "k": [r3(x) for x in k],
                 "dh": round(s["marginal_hurt_avoided"], 1), "dk": round(s["marginal_ksi_avoided"], 2),
             })
-        stacks[key] = {"label": label, "steps": steps, "not_added": st["not_added"]}
+        # what each yearly budget buys: fix-map.py fills it with the cheapest fixes per person that fit, skipping one
+        # that doesn't fit what is left and going on, so the spend is the package's own, at or under the budget
+        budgets = [{"b": x["budget"], "spent": x["annual_cost"], "n": x["fixes"],
+                    "h": round(x["hurt_avoided"], 1), "k": round(x["ksi_avoided"], 2)} for x in st["at_budgets"]]
+        for x in budgets:
+            if x["spent"] > x["b"] + 1:
+                raise SystemExit("fix-explorer: %s spends %s at a budget of %s" % (src, x["spent"], x["b"]))
+        stacks[key] = {"label": label, "steps": steps, "not_added": st["not_added"], "budgets": budgets}
 
     # groups: every grouping in fix-groups.json, each row with the fixes that reach its crashes
     def where_of(names):
@@ -562,7 +569,10 @@ def build(profiles):
     for f in fm["fixes"]:
         reasons = f.get("not_computable_reasons") or []
         ranked_reason = None
-        if not (f["computable"] and f["avoided_basis"] == "families" and f.get("cost_per_person_hurt_avoided")):
+        harm = f["avoided_basis"] == "families" and (f.get("hurt_avoided_per_year") or {}).get("mid", 0) < 0
+        if harm:
+            ranked_reason = "At the middle estimate it adds more people hurt than it avoids, so it is not ranked or stacked"
+        elif not (f["computable"] and f["avoided_basis"] == "families" and f.get("cost_per_person_hurt_avoided")):
             ranked_reason = plain_reason(reasons[0]) if reasons else (
                 "Reaches only groups that overlap the crash families, so it is not ranked" if f["avoided_basis"] else "Not counted")
         top = sorted(((r["group"], (r.get("hurt_avoided_per_year") or {}).get("mid") or 0.0)
@@ -694,6 +704,11 @@ details.about { font-size:12.5px; border-top:1px solid var(--line); padding-top:
 details.about p, details.about li { margin:4px 0; }
 details.about ul { padding-left:16px; margin:4px 0; }
 .unr { color:var(--muted); font-size:12.5px; }
+.unr .warn { color:var(--brown); }
+table.bud { border-collapse:collapse; font-size:13px; margin-top:2px; max-width:100%; }
+table.bud th { font-weight:600; color:var(--muted); font-size:12px; text-align:right; padding:2px 8px 4px 0; vertical-align:bottom; }
+table.bud td { text-align:right; padding:3px 8px 3px 0; border-top:1px solid #eceff2; font-variant-numeric:tabular-nums; }
+table.bud th:first-child, table.bud td:first-child { text-align:left; }
 .unr li { margin:3px 0; }
 #aboutPhone { display:none; }
 .share { margin-left:auto; font:inherit; font-size:13px; border:1px solid var(--line); background:#fff; color:var(--ink); border-radius:16px; padding:4px 12px; cursor:pointer; white-space:nowrap; }
@@ -768,6 +783,9 @@ details.about ul { padding-left:16px; margin:4px 0; }
       <h2 id="stackTitle"></h2>
       <div id="stackChart"></div>
       <p class="note">Each fix acts only on the people the fixes before it left in each crash, so no one is counted twice. Shaded band: the studies' low to high effects.</p>
+      <h3>What a Yearly Budget Buys</h3>
+      <table class="bud" id="budTable"></table>
+      <p class="note">The cheapest fixes per person hurt avoided that fit, skipping any that would go over and going on to the next.</p>
     </div>
     <div class="view" data-for="groups">
       <h2>Who Gets Hurt, a Year</h2>
@@ -892,6 +910,13 @@ function drawStack() {
     S.step = best; drawStack(); drawSteps(true); writeHash();
     if (phone()) document.querySelector('#stepList .sel').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
 }
+function drawBudgets() {
+  const st = D.stacks[S.stack], hk = S.measure === 'h';
+  const cols = hk ? [['People hurt avoided', b => num(b.h)], ['Killed or seriously hurt', b => num(b.k)]]
+                  : [['Killed or seriously hurt avoided', b => num(b.k)], ['People hurt', b => num(b.h)]];
+  document.getElementById('budTable').innerHTML = `<tr><th>Budget a year</th><th>Spent</th><th class="wideOnly">Fixes</th>${cols.map(([t]) => `<th>${t}</th>`).join('')}</tr>`
+    + st.budgets.map(b => `<tr><td>${money(b.b)}</td><td>${money(b.spent)}</td><td class="wideOnly">${b.n}</td>${cols.map(([, f]) => `<td>${f(b)}</td>`).join('')}</tr>`).join('');
+}
 function drawSteps(scroll) {
   const st = D.stacks[S.stack], m = S.measure;
   const ol = document.getElementById('stepList');
@@ -985,7 +1010,8 @@ function drawRank() {
   t.onclick = click; document.getElementById('freeTable').onclick = click;
   const un = D.unranked.filter(i => S.lever === 'all' || F[i].lever === S.lever);
   document.getElementById('unrTitle').textContent = un.length ? `Not Ranked Yet (${un.length})` : '';
-  document.getElementById('unrList').innerHTML = un.map(i => `<li>${esc(F[i].name)}${tags(i)}: ${esc(F[i].why)}</li>`).join('') + (un.length ? `<li style="list-style:none">${legend(un)}</li>` : '');
+  const warn = i => F[i].ah && F[i].ah.mid < 0 ? `<b class="warn">Warning: about ${num(-F[i].ah.mid)} more people hurt a year (${span(F[i].ah)}).</b> ` : '';
+  document.getElementById('unrList').innerHTML = un.map(i => `<li>${esc(F[i].name)}${tags(i)}: ${warn(i)}${esc(F[i].why)}</li>`).join('') + (un.length ? `<li style="list-style:none">${legend(un)}</li>` : '');
   const d = document.getElementById('fixDetail');
   if (phone()) { d.innerHTML = ''; return; }
   d.innerHTML = S.fix ? fixDetail(S.fix) : '<p class="note">No ranked fix of this kind yet; the list under the chart says why.</p>';
@@ -1067,7 +1093,7 @@ shareBtn.onclick = async () => { writeHash(); const u = location.href; let ok = 
     const ta = document.createElement('textarea'); ta.value = u; document.body.appendChild(ta); ta.select();
     try { ok = document.execCommand('copy'); } catch (e2) { ok = false; } ta.remove(); }
   shareBtn.textContent = ok ? 'Link copied' : 'Copy the address bar'; setTimeout(() => { shareBtn.textContent = 'Share'; }, 2000); };
-function render() { if (S.view === 'stack') { drawStack(); drawSteps(false); } else if (S.view === 'groups') drawGroups(); else drawRank(); writeHash(); }
+function render() { if (S.view === 'stack') { drawStack(); drawBudgets(); drawSteps(false); } else if (S.view === 'groups') drawGroups(); else drawRank(); writeHash(); }
 about(); render();
 let rt, lastW = window.innerWidth; window.addEventListener('resize', () => { if (window.innerWidth === lastW) return; lastW = window.innerWidth; clearTimeout(rt); rt = setTimeout(render, 120); });
 </script>

@@ -584,11 +584,11 @@
    ],
    "unit": "per intersection",
    "cost": {
-    "low": 12000,
+    "low": 19000,
     "high": 50000,
     "year": 2026,
-    "unit": "per intersection: SF D2 study priced a blank-out No Right Turn sign with warning signs and striping at $12,000 (Laguna and Bay); a median version falls in LADOT's 'Low' band (up to $50,000)",
-    "source": "SFCTA District 2 Safety Study Table 6-1; LADOT 2024 cost bands",
+    "unit": "per intersection, for the median the vehicle effect is measured on (LRSM SI13 and NS17, directional median openings): SF concrete islands at $19,000 to $40,000 an intersection (Sanchez, the curbed-median record) up to LADOT's 'Low' band (up to $50,000). A sign-only ban is cheaper (SF D2 study: $12,000 for a blank-out turn sign with warning signs and striping, Laguna and Bay), but no record measures a sign-only ban's effect on vehicle crashes",
+    "source": "SFCTA CAC memo via calming costs note (curbed-median record); LADOT 2024 cost bands; SFCTA District 2 Safety Study Table 6-1",
     "tag": "[primary — read 2026-11-25]"
    },
    "life_years": 20,
@@ -729,7 +729,7 @@
   },
   {
    "id": "mini-roundabout-traffic-circle",
-   "name": "Mini-roundabout or neighbourhood traffic circle at a stop-controlled corner",
+   "name": "Mini-roundabout or traffic circle where two local streets meet",
    "lever": "speed management",
    "how_it_works": "A mountable central island makes drivers slow and deflect at a residential or collector corner.",
    "groups": [
@@ -754,9 +754,9 @@
      "mechanism": "Same deflection at uncontrolled or yield corners.",
      "target_share": "Going straight 886 of 3,119 people hurt, 20 of 121 KSI; only on local streets",
      "effect": {
-      "low": null,
-      "mid": -47,
-      "high": null,
+      "low": 0.63,
+      "mid": 0.53,
+      "high": 0.44,
       "unit": "RR, car-only injury crashes",
       "applies_to": "Vancouver local-street circles against intersections one block away, RR 0.53 (0.44 to 0.63)",
       "source": "Teschke et al. 2018, via traffic circles note",
@@ -768,7 +768,7 @@
      "mechanism": "Warning: circles raised cyclist injuries in Vancouver.",
      "target_share": "241 people hurt, 20 KSI",
      "effect": {
-      "low": 140,
+      "low": 170,
       "mid": 240,
       "high": 330,
       "unit": "% change (RR minus 1) in cyclist-car injury crashes",

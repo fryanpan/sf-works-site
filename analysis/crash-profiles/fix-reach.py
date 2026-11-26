@@ -44,6 +44,10 @@ PLACE CLASSES (one crash can be in several). A crash is at an intersection when 
                      left out).
   multilane          the crash's blocks carry 2 or more lanes off-peak (the crash table's lanes column; on two-way
                      streets the layer counts one direction).
+  two_lane           the crash's blocks carry exactly 2 lanes off-peak: two a direction on a two-way street, the
+                     four-lane street FHWA's 4-to-3 road diet CMF is for. The layer does not say which streets are
+                     one-way, so a one-way street with two lanes is in too.
+  local_corner       at an intersection where only residential streets meet (corner_type residential_x_residential).
   single_lane        the crash's blocks carry 1 lane off-peak: one lane a direction on a two-way street (2 in all) or
                      one lane on a one-way street. The layer does not say which streets are one-way, so a one-way
                      street with 2 or 3 lanes is left out although it has 3 lanes or fewer.
@@ -128,7 +132,7 @@ FT_PER_DEG_LAT = 364000.0
 SURFACE = ("arterial", "major", "collector", "residential")
 
 BASE = ["intersection", "midblock", "signalized", "unsignalized", "all_way_stop", "stop_controlled", "uncontrolled",
-        "arterial_corner", "arterial", "collector", "residential", "high_stress", "low_stress", "multilane", "single_lane", "limit35_corner", "hin",
+        "arterial_corner", "arterial", "collector", "residential", "high_stress", "low_stress", "multilane", "two_lane", "single_lane", "local_corner", "limit35_corner", "hin",
         "hin2022", "school_zone", "slow_street", "limit20", "unposted", "camera_corridor", "ltn_cell", "dark", "daylight", "dusk",
         "late_night", "evening"]
 # Crash-type tags, not places: fix-map.py spreads a lane's text share ("Driver at fault 692 of 1,137", "Sideswipes
@@ -474,6 +478,7 @@ def compute():
     cameras, cam_unplaced = Context._place_cameras(ctx, cam_src.rows)
     cam_segs = set().union(*[s["segs"] for s in cameras]) if cameras else set()
     cam_nodes = set().union(*[s["nodes"] for s in cameras]) if cameras else set()
+    cam_points = {tuple(r["point"]["coordinates"]) for r in cam_src.rows if (r.get("point") or {}).get("coordinates")}
 
     with open(LANES, encoding="utf-8") as f:
         lanes_layer = json.load(f)
@@ -563,6 +568,8 @@ def compute():
             ct = c["corner_type"] or ""
             if "arterial" in ct or "major" in ct:
                 tags.add("arterial_corner")
+            if ct == "residential_x_residential":
+                tags.add("local_corner")
         sc = c["street_class"]
         if sc in ("arterial", "major"):
             tags.add("arterial")
@@ -576,6 +583,8 @@ def compute():
         try:
             if int(c["lanes"]) >= 2:
                 tags.add("multilane")
+                if int(c["lanes"]) == 2:
+                    tags.add("two_lane")
             elif int(c["lanes"]) == 1:
                 tags.add("single_lane")
         except ValueError:
@@ -693,6 +702,10 @@ def compute():
         raw[net.cls(c)] += net.seg[c]["miles"]
     multilane_ac = sum(once[c] for c in net.surface
                        if net.cls(c) in ("arterial", "collector") and lanes.get(c, 0) >= 2)
+    two_lane_ac = sum(once[c] for c in net.surface
+                      if net.cls(c) in ("arterial", "collector") and lanes.get(c, 0) == 2)
+    local_unsig = {n for n, segs in corners.items()
+                   if segs and all(net.cls(c) == "residential" for c in segs) and node_class(n) != "signalized"}
     pts = node_points(net)
     hin_c = hin24["nodes"] & set(corners)
     hin_c_once = {"all": merge_corners(hin_c, net, pts), "signalized": merge_corners(hin_c & signal_nodes, net, pts),
@@ -741,6 +754,10 @@ def compute():
         "surface_miles": u(sum(miles.values()), "every active surface street mile (no freeway, ramp or class 0), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
         "multilane_arterial_collector_miles": u(multilane_ac, "arterial, major and collector miles with 2 or more off-peak lanes (SFMTA MTA.CTA_trafficlanes LANES_OP), a divided street counted once",
                                                 st_src + "; SFMTA MTA.CTA_trafficlanes read %s" % lanes_layer.get("read_on"), "[primary — read %s] [inference — mine]" % lanes_layer.get("read_on")),
+        "two_lane_arterial_collector_miles": u(two_lane_ac, "arterial, major and collector miles with exactly 2 off-peak lanes (SFMTA MTA.CTA_trafficlanes LANES_OP: two a direction on a two-way street; a one-way street with two lanes is in too, since the layer does not mark one-way streets), a divided street counted once",
+                                               st_src + "; SFMTA MTA.CTA_trafficlanes read %s" % lanes_layer.get("read_on"), "[primary — read %s] [inference — mine]" % lanes_layer.get("read_on")),
+        "local_unsignalized_intersections": u(merge_corners(local_unsig, net, pts), "intersections where only residential streets meet, with no signal, a divided street's two crossings counted once (%d nodes)" % len(local_unsig),
+                                              st_src + "; " + sig_tag, q % ("3psu-pn9h, ybh5-27n2", streets.read_on)),
         "schools": u(len(schools), "active schools, every entity type but Preschool; a 500 ft zone each", "DataSF 7e7j-59qk", schools_r.tag),
         "ltn_cells": u(len(cells), "candidate low-traffic cells of at least %.1f miles of street (this script's rule)" % CELL_MIN_MILES,
                        st_src + "; SFMTA 2023 draft BCI (data/extract/sfmta-bci/scores.json, read %s)" % bci_read_on, "[inference — mine]"),
@@ -752,7 +769,7 @@ def compute():
                                "surface miles with speedlimit 0, the 25 mph default" + ONCE, "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
         "unposted_residential_miles": u(sum(once[c] for c in net.surface if c in unposted and net.cls(c) == "residential"),
                                "residential miles with speedlimit 0, the 25 mph default" + ONCE, "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
-        "speed_camera_sites": u(len(cameras), "speed camera sites placed on a block (the street lane's rule)", "DataSF d5uh-bk84", q % ("d5uh-bk84", cam_src.read_on)),
+        "speed_camera_sites": u(len(cameras), "speed camera site ids placed on a block (the street lane's rule): one id per direction of travel, at %d distinct points; SFMTA counts the same cameras as 33 locations, the count its cost per location is for" % len(cam_points), "DataSF d5uh-bk84", q % ("d5uh-bk84", cam_src.read_on)),
         "speed_camera_corridor_miles": u(sum(once.get(c, 0) for c in cam_segs), "miles of camera corridor blocks" + ONCE, "DataSF d5uh-bk84, 3psu-pn9h", q % ("d5uh-bk84", cam_src.read_on)),
         "slip_lanes": {"value": None, "how": "no city dataset of slip lanes (channelized right turns) was found in the DataSF catalog on 2026-11-25", "source": None, "tag": "[unretrieved — verify]"},
     }

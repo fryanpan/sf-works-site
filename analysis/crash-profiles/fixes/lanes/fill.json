@@ -3813,7 +3813,7 @@
    "sf_now": "36 circles in SFMTA's intersection layer, no costs listed (traffic circles note)",
    "sf_evidence": "None.",
    "who_decides": "SFMTA traffic calming program; Fire Department review of turning paths [model knowledge — verify]",
-   "evidence_grade": "low: studies disagree in sign (Mishra against Avelar on all-way stops), most are on faster US roads, and the cyclist harm is large and consistent in Vancouver",
+   "evidence_grade": "low: the Danish handbook finds urban mini-roundabouts mostly give no substantial reduction, US and Vancouver studies disagree in sign, and the cyclist harm is large and consistent in Vancouver",
    "sources": [
     {
      "title": "FHWA CMF Clearinghouse, CMF 11538: all-way stop to mini roundabout, multi-vehicle KABC 0.5422, 3 stars",
@@ -3865,11 +3865,11 @@
      "mechanism": "All-way stops at residential junctions with sight or volume problems.",
      "target_share": "3,617 hurt / 232 KSI people (grouping_alternatives, place grouping); the effect applies only to the crash type it targets, so multiply by that type's share at these places, not computed per place",
      "effect": {
-      "low": -30,
+      "low": -50,
       "mid": -50,
       "high": -70,
       "unit": "% change in crashes",
-      "applies_to": "All crashes in the influence area (LRSM 50%); injury crashes (CMF 314, 0.30)",
+      "applies_to": "Low and mid: all crashes in the influence area, LRSM NS02 CRF 50% (two-way or yield to all-way stop); high: injury crashes (CMF 314, 0.30)",
       "source": "Caltrans LRSM NS02; CMF 314",
       "tag": "[primary — read 2026-11-25]"
      }
@@ -3888,7 +3888,7 @@
    "sf_now": "All-way stops are common in SF residential grids [model knowledge — verify]; count not retrieved",
    "sf_evidence": "None.",
    "who_decides": "SFMTA City Traffic Engineer and Board after a public hearing; LRSM requires the CA-MUTCD warrant for HSIP funding [primary — read 2026-11-25]",
-   "evidence_grade": "moderate: a 4-star 1986 urban study and a Danish handbook value agree in direction; old data and the MUTCD warrant limit where it applies",
+   "evidence_grade": "moderate: a 4-star 1986 urban study (CMF 310, 314) and Caltrans' adopted value for the same conversion (LRSM NS02) agree in direction; old data and the MUTCD warrant limit where it applies",
    "sources": [
     {
      "title": "FHWA CMF Clearinghouse, CMF 310: convert minor-road stop to all-way stop, angle 0.25, 4 stars",
@@ -3898,11 +3898,6 @@
     {
      "title": "FHWA CMF Clearinghouse, CMF 314: same, injury crashes 0.30, 4 stars",
      "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=314",
-     "tag": "[primary — read 2026-11-25]"
-    },
-    {
-     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
-     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
      "tag": "[primary — read 2026-11-25]"
     },
     {

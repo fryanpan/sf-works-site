@@ -91,6 +91,12 @@
    "share_hurt": 0.5174,
    "share_ksi": 0.5119
   },
+  "hin&single_lane": {
+   "ksi": 403,
+   "people_hurt": 4453,
+   "share_hurt": 0.1494,
+   "share_ksi": 0.1684
+  },
   "hin2022": {
    "ksi": 1601,
    "people_hurt": 18630,
@@ -114,6 +120,12 @@
    "people_hurt": 6090,
    "share_hurt": 0.2043,
    "share_ksi": 0.2215
+  },
+  "limit35_corner": {
+   "ksi": 114,
+   "people_hurt": 1513,
+   "share_hurt": 0.0508,
+   "share_ksi": 0.0476
   },
   "low_stress": {
    "ksi": 315,
@@ -199,11 +211,17 @@
    "share_hurt": 0.4774,
    "share_ksi": 0.4417
   },
-  "signalized|arterial&midblock": {
-   "ksi": 1312,
-   "people_hurt": 16570,
-   "share_hurt": 0.5558,
-   "share_ksi": 0.5483
+  "signalized&limit35_corner": {
+   "ksi": 57,
+   "people_hurt": 947,
+   "share_hurt": 0.0318,
+   "share_ksi": 0.0238
+  },
+  "single_lane": {
+   "ksi": 868,
+   "people_hurt": 10799,
+   "share_hurt": 0.3622,
+   "share_ksi": 0.3627
   },
   "slow_street": {
    "ksi": 11,
@@ -353,6 +371,7 @@
   "arterial|collector",
   "hin&!limit20",
   "hin&intersection",
+  "hin&single_lane",
   "ltn_cell&!slow_street",
   "multilane&arterial&!solo|multilane&collector&!solo",
   "multilane&arterial|multilane&collector",
@@ -360,7 +379,7 @@
   "residential&unposted|collector&unposted",
   "signalized&arterial_corner",
   "signalized&high_stress",
-  "signalized|arterial&midblock",
+  "signalized&limit35_corner",
   "stop_controlled&!all_way_stop",
   "unsignalized&arterial_corner"
  ],
@@ -607,6 +626,18 @@
      "share_hurt": 0.3125,
      "share_ksi": null
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       2,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.125,
+     "share_ksi": null
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -665,6 +696,13 @@
      "ksi": 0,
      "people_hurt": 3,
      "share_hurt": 0.1875,
+     "share_ksi": null
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": null
     },
     "low_stress": {
@@ -879,16 +917,31 @@
      "share_hurt": 0.0625,
      "share_ksi": null
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
+       4,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       0
+      ],
+      "left or U-turn": [
        1,
        0
       ]
      },
      "ksi": 0,
-     "people_hurt": 1,
-     "share_hurt": 0.0625,
+     "people_hurt": 7,
+     "share_hurt": 0.4375,
      "share_ksi": null
     },
     "slow_street": {
@@ -1436,6 +1489,34 @@
      "share_hurt": 0.5146,
      "share_ksi": 0.5455
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       20,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "right turn": [
+       3,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 27,
+     "share_hurt": 0.2621,
+     "share_ksi": 0.1818
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -1550,6 +1631,22 @@
      "ksi": 1,
      "people_hurt": 25,
      "share_hurt": 0.2427,
+     "share_ksi": 0.0909
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 3,
+     "share_hurt": 0.0291,
      "share_ksi": 0.0909
     },
     "low_stress": {
@@ -1960,37 +2057,53 @@
      "share_hurt": 0.4369,
      "share_ksi": 0.5455
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       38,
-       4
-      ],
-      "lane change, merge, pass, entering": [
-       3,
-       0
-      ],
-      "left or U-turn": [
-       2,
-       1
-      ],
-      "not stated or other": [
-       5,
-       1
-      ],
-      "right turn": [
-       2,
-       0
-      ],
-      "stopped or slowing": [
-       4,
+       1,
        0
       ]
      },
-     "ksi": 6,
-     "people_hurt": 54,
-     "share_hurt": 0.5243,
-     "share_ksi": 0.5455
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0097,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       31,
+       3
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       4,
+       1
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "right turn": [
+       3,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       1
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 5,
+     "people_hurt": 44,
+     "share_hurt": 0.4272,
+     "share_ksi": 0.4545
     },
     "slow_street": {
      "by_movement": {
@@ -2542,6 +2655,26 @@
      "share_hurt": 0.1984,
      "share_ksi": 0.2
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "not stated or other": [
+       4,
+       0
+      ],
+      "parked or parking": [
+       28,
+       2
+      ],
+      "stopped or slowing": [
+       16,
+       1
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 48,
+     "share_hurt": 0.1943,
+     "share_ksi": 0.15
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -2649,6 +2782,13 @@
      "people_hurt": 78,
      "share_hurt": 0.3158,
      "share_ksi": 0.2
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -2998,36 +3138,31 @@
      "share_hurt": 0.1822,
      "share_ksi": 0.15
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
-      "going straight": [
-       1,
-       0
-      ],
-      "lane change, merge, pass, entering": [
-       1,
-       0
-      ],
       "not stated or other": [
-       18,
-       3
+       12,
+       1
       ],
       "parked or parking": [
-       28,
-       5
-      ],
-      "ran off road": [
-       1,
-       0
+       62,
+       6
       ],
       "stopped or slowing": [
-       37,
-       1
+       30,
+       2
       ]
      },
      "ksi": 9,
-     "people_hurt": 86,
-     "share_hurt": 0.3482,
+     "people_hurt": 104,
+     "share_hurt": 0.4211,
      "share_ksi": 0.45
     },
     "slow_street": {
@@ -3472,6 +3607,26 @@
      "share_hurt": 0.6857,
      "share_ksi": 1.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       2,
+       1
+      ],
+      "left or U-turn": [
+       3,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 6,
+     "share_hurt": 0.1714,
+     "share_ksi": 1.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -3562,6 +3717,22 @@
      "ksi": 0,
      "people_hurt": 7,
      "share_hurt": 0.2,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.0571,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -3832,29 +4003,37 @@
      "share_hurt": 0.7429,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "going straight": [
-       8,
-       0
-      ],
       "lane change, merge, pass, entering": [
-       2,
-       0
-      ],
-      "left or U-turn": [
-       9,
-       0
-      ],
-      "right turn": [
-       8,
+       1,
        0
       ]
      },
      "ksi": 0,
-     "people_hurt": 27,
-     "share_hurt": 0.7714,
+     "people_hurt": 1,
+     "share_hurt": 0.0286,
      "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       7,
+       1
+      ],
+      "left or U-turn": [
+       3,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 11,
+     "share_hurt": 0.3143,
+     "share_ksi": 1.0
     },
     "slow_street": {
      "by_movement": {},
@@ -4292,6 +4471,26 @@
      "share_hurt": 0.5529,
      "share_ksi": 0.5
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       14,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 16,
+     "share_hurt": 0.1882,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -4399,6 +4598,18 @@
      "people_hurt": 26,
      "share_hurt": 0.3059,
      "share_ksi": 0.5
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       3,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 3,
+     "share_hurt": 0.0353,
+     "share_ksi": 0.1667
     },
     "low_stress": {
      "by_movement": {
@@ -4732,22 +4943,34 @@
      "share_hurt": 0.5647,
      "share_ksi": 0.5
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       42,
-       3
+       3,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 3,
+     "share_hurt": 0.0353,
+     "share_ksi": 0.1667
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       32,
+       2
       ],
       "lane change, merge, pass, entering": [
-       2,
+       1,
        0
       ],
-      "left or U-turn": [
-       2,
+      "not stated or other": [
+       3,
        0
       ],
       "right turn": [
-       2,
+       1,
        0
       ],
       "stopped or slowing": [
@@ -4755,10 +4978,10 @@
        0
       ]
      },
-     "ksi": 3,
-     "people_hurt": 49,
-     "share_hurt": 0.5765,
-     "share_ksi": 0.5
+     "ksi": 2,
+     "people_hurt": 38,
+     "share_hurt": 0.4471,
+     "share_ksi": 0.3333
     },
     "slow_street": {
      "by_movement": {
@@ -5394,6 +5617,38 @@
      "share_hurt": 0.4573,
      "share_ksi": 0.3889
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       54,
+       12
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       1
+      ],
+      "left or U-turn": [
+       6,
+       0
+      ],
+      "not stated or other": [
+       9,
+       2
+      ],
+      "right turn": [
+       4,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       1
+      ]
+     },
+     "ksi": 16,
+     "people_hurt": 77,
+     "share_hurt": 0.2348,
+     "share_ksi": 0.2963
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -5529,6 +5784,22 @@
      "people_hurt": 86,
      "share_hurt": 0.2622,
      "share_ksi": 0.2407
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       3,
+       1
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 4,
+     "share_hurt": 0.0122,
+     "share_ksi": 0.0185
     },
     "low_stress": {
      "by_movement": {
@@ -6066,41 +6337,61 @@
      "share_hurt": 0.3994,
      "share_ksi": 0.3333
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       101,
-       13
-      ],
-      "lane change, merge, pass, entering": [
-       7,
-       0
-      ],
-      "left or U-turn": [
-       16,
-       0
-      ],
-      "not stated or other": [
-       13,
-       5
-      ],
-      "parked or parking": [
        2,
        0
       ],
-      "right turn": [
-       15,
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 3,
+     "share_hurt": 0.0091,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       103,
+       22
+      ],
+      "lane change, merge, pass, entering": [
+       5,
        1
       ],
+      "left or U-turn": [
+       15,
+       0
+      ],
+      "not stated or other": [
+       14,
+       2
+      ],
+      "parked or parking": [
+       4,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       4,
+       0
+      ],
       "stopped or slowing": [
-       8,
+       6,
        1
       ]
      },
-     "ksi": 20,
-     "people_hurt": 162,
-     "share_hurt": 0.4939,
-     "share_ksi": 0.3704
+     "ksi": 26,
+     "people_hurt": 152,
+     "share_hurt": 0.4634,
+     "share_ksi": 0.4815
     },
     "slow_street": {
      "by_movement": {
@@ -6710,6 +7001,26 @@
      "share_hurt": 0.5577,
      "share_ksi": 0.5
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       7,
+       1
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 11,
+     "share_hurt": 0.2115,
+     "share_ksi": 0.25
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -6808,6 +7119,18 @@
      "people_hurt": 14,
      "share_hurt": 0.2692,
      "share_ksi": 0.25
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "right turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0192,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -7169,33 +7492,36 @@
      "share_hurt": 0.4423,
      "share_ksi": 0.5
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
-       11,
-       2
+       7,
+       1
       ],
       "left or U-turn": [
-       9,
-       0
-      ],
-      "parked or parking": [
-       2,
-       0
-      ],
-      "right turn": [
-       6,
+       3,
        0
       ],
       "stopped or slowing": [
+       3,
+       0
+      ],
+      "wrong way or opposing lane": [
        1,
        0
       ]
      },
-     "ksi": 2,
-     "people_hurt": 29,
-     "share_hurt": 0.5577,
-     "share_ksi": 0.5
+     "ksi": 1,
+     "people_hurt": 14,
+     "share_hurt": 0.2692,
+     "share_ksi": 0.25
     },
     "slow_street": {
      "by_movement": {},
@@ -7649,6 +7975,18 @@
      "share_hurt": 0.5185,
      "share_ksi": 0.25
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "not stated or other": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.037,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -7743,6 +8081,13 @@
      "ksi": 0,
      "people_hurt": 10,
      "share_hurt": 0.3704,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -8073,11 +8418,18 @@
      "share_hurt": 0.5556,
      "share_ksi": 0.25
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
-       12,
-       1
+       6,
+       2
       ],
       "lane change, merge, pass, entering": [
        1,
@@ -8087,19 +8439,19 @@
        1,
        0
       ],
-      "right turn": [
+      "not stated or other": [
        1,
        0
       ],
-      "wrong way or opposing lane": [
+      "stopped or slowing": [
        1,
        0
       ]
      },
-     "ksi": 1,
-     "people_hurt": 16,
-     "share_hurt": 0.5926,
-     "share_ksi": 0.25
+     "ksi": 2,
+     "people_hurt": 10,
+     "share_hurt": 0.3704,
+     "share_ksi": 0.5
     },
     "slow_street": {
      "by_movement": {},
@@ -8316,6 +8668,13 @@
      "share_hurt": 0.0,
      "share_ksi": null
     },
+    "hin&single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
     "hin2022": {
      "by_movement": {},
      "ksi": 0,
@@ -8343,6 +8702,13 @@
      "share_ksi": null
     },
     "limit20": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "limit35_corner": {
      "by_movement": {},
      "ksi": 0,
      "people_hurt": 0,
@@ -8462,11 +8828,23 @@
      "share_hurt": 0.0,
      "share_ksi": null
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {},
      "ksi": 0,
      "people_hurt": 0,
      "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 1.0,
      "share_ksi": null
     },
     "slow_street": {
@@ -9055,6 +9433,34 @@
      "share_hurt": 0.8563,
      "share_ksi": 0.8909
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       67,
+       9
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       2
+      ],
+      "left or U-turn": [
+       3,
+       1
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "right turn": [
+       3,
+       1
+      ]
+     },
+     "ksi": 13,
+     "people_hurt": 76,
+     "share_hurt": 0.2141,
+     "share_ksi": 0.2364
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -9190,6 +9596,18 @@
      "people_hurt": 93,
      "share_hurt": 0.262,
      "share_ksi": 0.2727
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       3,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 3,
+     "share_hurt": 0.0085,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -9615,45 +10033,45 @@
      "share_hurt": 0.9014,
      "share_ksi": 0.8909
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       278,
-       43
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0028,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       79,
+       9
       ],
       "lane change, merge, pass, entering": [
-       7,
-       1
+       2,
+       2
       ],
       "left or U-turn": [
-       14,
+       3,
        1
       ],
       "not stated or other": [
-       4,
-       0
-      ],
-      "ran off road": [
        1,
        0
       ],
       "right turn": [
-       18,
-       3
-      ],
-      "stopped or slowing": [
-       4,
-       0
-      ],
-      "wrong way or opposing lane": [
-       4,
+       6,
        1
       ]
      },
-     "ksi": 49,
-     "people_hurt": 330,
-     "share_hurt": 0.9296,
-     "share_ksi": 0.8909
+     "ksi": 13,
+     "people_hurt": 91,
+     "share_hurt": 0.2563,
+     "share_ksi": 0.2364
     },
     "slow_street": {
      "by_movement": {},
@@ -10268,6 +10686,34 @@
      "share_hurt": 0.5083,
      "share_ksi": 0.3478
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       28,
+       2
+      ],
+      "left or U-turn": [
+       25,
+       1
+      ],
+      "ran off road": [
+       1,
+       1
+      ],
+      "right turn": [
+       2,
+       1
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 5,
+     "people_hurt": 57,
+     "share_hurt": 0.2355,
+     "share_ksi": 0.2174
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -10399,6 +10845,22 @@
      "people_hurt": 62,
      "share_hurt": 0.2562,
      "share_ksi": 0.2174
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       4,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 5,
+     "share_hurt": 0.0207,
+     "share_ksi": 0.0435
     },
     "low_stress": {
      "by_movement": {
@@ -10820,37 +11282,44 @@
      "share_hurt": 0.314,
      "share_ksi": 0.1739
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
-      "backing": [
-       1,
-       0
-      ],
       "going straight": [
-       25,
-       2
+       113,
+       12
       ],
       "left or U-turn": [
-       32,
-       2
+       28,
+       3
       ],
       "not stated or other": [
        1,
        0
       ],
+      "ran off road": [
+       1,
+       1
+      ],
       "right turn": [
-       18,
+       4,
        1
       ],
       "stopped or slowing": [
-       1,
+       5,
        0
       ]
      },
-     "ksi": 5,
-     "people_hurt": 78,
-     "share_hurt": 0.3223,
-     "share_ksi": 0.2174
+     "ksi": 17,
+     "people_hurt": 152,
+     "share_hurt": 0.6281,
+     "share_ksi": 0.7391
     },
     "slow_street": {
      "by_movement": {
@@ -11562,6 +12031,38 @@
      "share_hurt": 0.4111,
      "share_ksi": 0.3711
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       90,
+       17
+      ],
+      "lane change, merge, pass, entering": [
+       5,
+       1
+      ],
+      "left or U-turn": [
+       3,
+       1
+      ],
+      "not stated or other": [
+       4,
+       0
+      ],
+      "right turn": [
+       4,
+       1
+      ],
+      "stopped or slowing": [
+       5,
+       1
+      ]
+     },
+     "ksi": 21,
+     "people_hurt": 111,
+     "share_hurt": 0.1917,
+     "share_ksi": 0.2165
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -11693,6 +12194,26 @@
      "people_hurt": 160,
      "share_hurt": 0.2763,
      "share_ksi": 0.2887
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       7,
+       0
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 10,
+     "share_hurt": 0.0173,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -12270,45 +12791,61 @@
      "share_hurt": 0.3713,
      "share_ksi": 0.2784
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       218,
+       6,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 6,
+     "share_hurt": 0.0104,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       213,
        33
       ],
       "lane change, merge, pass, entering": [
-       5,
-       1
+       6,
+       2
       ],
       "left or U-turn": [
        13,
-       1
+       2
       ],
       "not stated or other": [
-       5,
-       1
+       9,
+       0
       ],
       "parked or parking": [
        1,
-       0
+       1
       ],
       "ran off road": [
        1,
-       0
+       1
       ],
       "right turn": [
-       9,
-       4
+       11,
+       3
       ],
       "stopped or slowing": [
-       12,
+       11,
+       2
+      ],
+      "wrong way or opposing lane": [
+       2,
        1
       ]
      },
-     "ksi": 41,
-     "people_hurt": 264,
-     "share_hurt": 0.456,
-     "share_ksi": 0.4227
+     "ksi": 45,
+     "people_hurt": 267,
+     "share_hurt": 0.4611,
+     "share_ksi": 0.4639
     },
     "slow_street": {
      "by_movement": {
@@ -12844,6 +13381,30 @@
      "share_hurt": 0.2143,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       5,
+       0
+      ],
+      "going straight": [
+       1,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       4,
+       1
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 11,
+     "share_hurt": 0.2619,
+     "share_ksi": 1.0
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -12934,6 +13495,13 @@
      "ksi": 0,
      "people_hurt": 7,
      "share_hurt": 0.1667,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -13256,10 +13824,17 @@
      "share_hurt": 0.1905,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "backing": [
-       6,
+       12,
        0
       ],
       "going straight": [
@@ -13267,13 +13842,21 @@
        0
       ],
       "lane change, merge, pass, entering": [
-       4,
+       10,
        1
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
       ]
      },
      "ksi": 1,
-     "people_hurt": 13,
-     "share_hurt": 0.3095,
+     "people_hurt": 27,
+     "share_hurt": 0.6429,
      "share_ksi": 1.0
     },
     "slow_street": {
@@ -14017,6 +14600,46 @@
      "share_hurt": 0.5063,
      "share_ksi": 0.4731
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       62,
+       6
+      ],
+      "lane change, merge, pass, entering": [
+       26,
+       0
+      ],
+      "left or U-turn": [
+       60,
+       3
+      ],
+      "not stated or other": [
+       22,
+       3
+      ],
+      "parked or parking": [
+       7,
+       0
+      ],
+      "right turn": [
+       50,
+       2
+      ],
+      "stopped or slowing": [
+       5,
+       0
+      ],
+      "wrong way or opposing lane": [
+       11,
+       0
+      ]
+     },
+     "ksi": 14,
+     "people_hurt": 243,
+     "share_hurt": 0.2174,
+     "share_ksi": 0.1505
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -14180,6 +14803,38 @@
      "people_hurt": 311,
      "share_hurt": 0.2782,
      "share_ksi": 0.2366
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       8,
+       1
+      ],
+      "lane change, merge, pass, entering": [
+       5,
+       2
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "right turn": [
+       8,
+       1
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 4,
+     "people_hurt": 26,
+     "share_hurt": 0.0233,
+     "share_ksi": 0.043
     },
     "low_stress": {
      "by_movement": {
@@ -14761,49 +15416,77 @@
      "share_hurt": 0.4106,
      "share_ksi": 0.4301
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       143,
-       19
-      ],
-      "lane change, merge, pass, entering": [
-       75,
-       6
-      ],
-      "left or U-turn": [
-       93,
-       7
-      ],
-      "not stated or other": [
-       38,
-       5
-      ],
-      "parked or parking": [
-       5,
+       2,
        1
       ],
-      "ran off road": [
+      "lane change, merge, pass, entering": [
+       2,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
        1,
        0
       ],
       "right turn": [
-       172,
-       12
-      ],
-      "stopped or slowing": [
-       11,
+       6,
        1
       ],
       "wrong way or opposing lane": [
-       33,
-       3
+       1,
+       0
       ]
      },
-     "ksi": 54,
-     "people_hurt": 571,
-     "share_hurt": 0.5107,
-     "share_ksi": 0.5806
+     "ksi": 3,
+     "people_hurt": 13,
+     "share_hurt": 0.0116,
+     "share_ksi": 0.0323
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       120,
+       12
+      ],
+      "lane change, merge, pass, entering": [
+       39,
+       2
+      ],
+      "left or U-turn": [
+       116,
+       9
+      ],
+      "not stated or other": [
+       46,
+       4
+      ],
+      "parked or parking": [
+       11,
+       0
+      ],
+      "right turn": [
+       92,
+       6
+      ],
+      "stopped or slowing": [
+       10,
+       1
+      ],
+      "wrong way or opposing lane": [
+       16,
+       0
+      ]
+     },
+     "ksi": 34,
+     "people_hurt": 450,
+     "share_hurt": 0.4025,
+     "share_ksi": 0.3656
     },
     "slow_street": {
      "by_movement": {
@@ -15547,6 +16230,42 @@
      "share_hurt": 0.4695,
      "share_ksi": 0.4524
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       24,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       8,
+       0
+      ],
+      "left or U-turn": [
+       95,
+       3
+      ],
+      "not stated or other": [
+       2,
+       1
+      ],
+      "right turn": [
+       6,
+       1
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 138,
+     "share_hurt": 0.2711,
+     "share_ksi": 0.1667
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -15686,6 +16405,34 @@
      "people_hurt": 98,
      "share_hurt": 0.1925,
      "share_ksi": 0.1429
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       5,
+       1
+      ],
+      "left or U-turn": [
+       10,
+       0
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "right turn": [
+       3,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 20,
+     "share_hurt": 0.0393,
+     "share_ksi": 0.0238
     },
     "low_stress": {
      "by_movement": {
@@ -16175,41 +16922,65 @@
      "share_hurt": 0.4224,
      "share_ksi": 0.4524
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "going straight": [
-       25,
-       5
-      ],
-      "lane change, merge, pass, entering": [
-       11,
-       2
-      ],
       "left or U-turn": [
-       180,
-       17
+       7,
+       0
       ],
       "not stated or other": [
        1,
        0
       ],
-      "parked or parking": [
-       1,
-       0
-      ],
       "right turn": [
-       12,
-       0
-      ],
-      "stopped or slowing": [
-       4,
+       2,
        0
       ]
      },
-     "ksi": 24,
-     "people_hurt": 234,
-     "share_hurt": 0.4597,
-     "share_ksi": 0.5714
+     "ksi": 0,
+     "people_hurt": 10,
+     "share_hurt": 0.0196,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       55,
+       6
+      ],
+      "lane change, merge, pass, entering": [
+       34,
+       3
+      ],
+      "left or U-turn": [
+       170,
+       8
+      ],
+      "not stated or other": [
+       8,
+       1
+      ],
+      "parked or parking": [
+       2,
+       0
+      ],
+      "right turn": [
+       9,
+       2
+      ],
+      "stopped or slowing": [
+       6,
+       0
+      ]
+     },
+     "ksi": 20,
+     "people_hurt": 285,
+     "share_hurt": 0.5599,
+     "share_ksi": 0.4762
     },
     "slow_street": {
      "by_movement": {
@@ -16550,6 +17321,13 @@
      "share_hurt": 0.0,
      "share_ksi": null
     },
+    "hin&single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
     "hin2022": {
      "by_movement": {
       "not stated or other": [
@@ -16586,6 +17364,13 @@
      "ksi": 0,
      "people_hurt": 1,
      "share_hurt": 1.0,
+     "share_ksi": null
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": null
     },
     "low_stress": {
@@ -16706,7 +17491,14 @@
      "share_hurt": 0.0,
      "share_ksi": null
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "single_lane": {
      "by_movement": {},
      "ksi": 0,
      "people_hurt": 0,
@@ -16950,6 +17742,18 @@
      "share_hurt": 0.4,
      "share_ksi": 0.3333
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "not stated or other": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.2,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -17004,6 +17808,13 @@
      "people_hurt": 4,
      "share_hurt": 0.8,
      "share_ksi": 1.0
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -17169,21 +17980,28 @@
      "share_hurt": 0.2,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
        1,
-       1
+       0
       ],
       "not stated or other": [
-       2,
-       1
+       1,
+       0
       ]
      },
-     "ksi": 2,
-     "people_hurt": 3,
-     "share_hurt": 0.6,
-     "share_ksi": 0.6667
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.4,
+     "share_ksi": 0.0
     },
     "slow_street": {
      "by_movement": {},
@@ -17400,6 +18218,13 @@
      "share_hurt": 1.0,
      "share_ksi": null
     },
+    "hin&single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -17432,6 +18257,13 @@
      "share_ksi": null
     },
     "limit20": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "limit35_corner": {
      "by_movement": {},
      "ksi": 0,
      "people_hurt": 0,
@@ -17561,16 +18393,18 @@
      "share_hurt": 1.0,
      "share_ksi": null
     },
-    "signalized|arterial&midblock": {
-     "by_movement": {
-      "going straight": [
-       1,
-       0
-      ]
-     },
+    "signalized&limit35_corner": {
+     "by_movement": {},
      "ksi": 0,
-     "people_hurt": 1,
-     "share_hurt": 1.0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": null
     },
     "slow_street": {
@@ -17806,6 +18640,13 @@
      "share_hurt": 0.0,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -17846,6 +18687,13 @@
      "ksi": 0,
      "people_hurt": 1,
      "share_hurt": 0.2,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -18021,12 +18869,24 @@
      "share_hurt": 0.0,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {},
      "ksi": 0,
      "people_hurt": 0,
      "share_hurt": 0.0,
      "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       2,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 2,
+     "share_hurt": 0.4,
+     "share_ksi": 0.5
     },
     "slow_street": {
      "by_movement": {},
@@ -18257,6 +19117,13 @@
      "share_hurt": 0.0,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -18303,6 +19170,13 @@
      "people_hurt": 1,
      "share_hurt": 0.5,
      "share_ksi": 0.5
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {},
@@ -18438,21 +19312,19 @@
      "share_hurt": 0.0,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
-     "by_movement": {
-      "going straight": [
-       1,
-       1
-      ],
-      "wrong way or opposing lane": [
-       1,
-       1
-      ]
-     },
-     "ksi": 2,
-     "people_hurt": 2,
-     "share_hurt": 1.0,
-     "share_ksi": 1.0
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "slow_street": {
      "by_movement": {},
@@ -18896,6 +19768,34 @@
      "share_hurt": 0.5517,
      "share_ksi": 0.6923
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       7,
+       1
+      ],
+      "left or U-turn": [
+       2,
+       2
+      ],
+      "not stated or other": [
+       4,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 15,
+     "share_hurt": 0.1724,
+     "share_ksi": 0.1154
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -19019,6 +19919,13 @@
      "people_hurt": 32,
      "share_hurt": 0.3678,
      "share_ksi": 0.3846
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -19372,37 +20279,44 @@
      "share_hurt": 0.4023,
      "share_ksi": 0.5385
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
-       27,
-       10
-      ],
-      "lane change, merge, pass, entering": [
-       1,
-       0
+       21,
+       5
       ],
       "left or U-turn": [
        3,
-       3
+       2
       ],
       "not stated or other": [
-       1,
+       4,
        0
       ],
       "ran off road": [
-       2,
+       1,
        0
       ],
       "right turn": [
-       3,
-       1
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
       ]
      },
-     "ksi": 14,
-     "people_hurt": 37,
-     "share_hurt": 0.4253,
-     "share_ksi": 0.5385
+     "ksi": 7,
+     "people_hurt": 31,
+     "share_hurt": 0.3563,
+     "share_ksi": 0.2692
     },
     "slow_street": {
      "by_movement": {},
@@ -19988,6 +20902,30 @@
      "share_hurt": 0.3962,
      "share_ksi": 0.4615
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       18,
+       4
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ]
+     },
+     "ksi": 4,
+     "people_hurt": 22,
+     "share_hurt": 0.1384,
+     "share_ksi": 0.1538
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -20139,6 +21077,13 @@
      "people_hurt": 58,
      "share_hurt": 0.3648,
      "share_ksi": 0.3846
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -20608,45 +21553,48 @@
      "share_hurt": 0.3522,
      "share_ksi": 0.4231
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "backing": [
        1,
-       1
-      ],
-      "going straight": [
-       62,
-       10
-      ],
-      "lane change, merge, pass, entering": [
-       2,
        0
       ],
+      "going straight": [
+       36,
+       8
+      ],
       "left or U-turn": [
-       1,
+       3,
        0
       ],
       "not stated or other": [
-       11,
+       4,
+       0
+      ],
+      "parked or parking": [
+       1,
        0
       ],
       "ran off road": [
-       2,
-       1
+       7,
+       0
       ],
       "right turn": [
-       4,
-       1
-      ],
-      "wrong way or opposing lane": [
-       1,
+       2,
        0
       ]
      },
-     "ksi": 13,
-     "people_hurt": 84,
-     "share_hurt": 0.5283,
-     "share_ksi": 0.5
+     "ksi": 8,
+     "people_hurt": 54,
+     "share_hurt": 0.3396,
+     "share_ksi": 0.3077
     },
     "slow_street": {
      "by_movement": {},
@@ -20986,6 +21934,18 @@
      "share_hurt": 0.4,
      "share_ksi": null
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.4,
+     "share_ksi": null
+    },
     "hin2022": {
      "by_movement": {
       "stopped or slowing": [
@@ -21031,6 +21991,13 @@
      "ksi": 0,
      "people_hurt": 2,
      "share_hurt": 0.4,
+     "share_ksi": null
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": null
     },
     "low_stress": {
@@ -21183,7 +22150,14 @@
      "share_hurt": 0.4,
      "share_ksi": null
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "single_lane": {
      "by_movement": {
       "stopped or slowing": [
        2,
@@ -21821,6 +22795,46 @@
      "share_hurt": 0.5902,
      "share_ksi": 0.6046
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       2,
+       0
+      ],
+      "going straight": [
+       103,
+       19
+      ],
+      "lane change, merge, pass, entering": [
+       4,
+       0
+      ],
+      "left or U-turn": [
+       229,
+       23
+      ],
+      "not stated or other": [
+       7,
+       2
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "right turn": [
+       99,
+       6
+      ],
+      "stopped or slowing": [
+       6,
+       1
+      ]
+     },
+     "ksi": 51,
+     "people_hurt": 451,
+     "share_hurt": 0.1897,
+     "share_ksi": 0.1939
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -21972,6 +22986,34 @@
      "people_hurt": 626,
      "share_hurt": 0.2634,
      "share_ksi": 0.2357
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       14,
+       6
+      ],
+      "left or U-turn": [
+       29,
+       2
+      ],
+      "not stated or other": [
+       4,
+       0
+      ],
+      "right turn": [
+       8,
+       1
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 9,
+     "people_hurt": 56,
+     "share_hurt": 0.0236,
+     "share_ksi": 0.0342
     },
     "low_stress": {
      "by_movement": {
@@ -22505,45 +23547,77 @@
      "share_hurt": 0.5776,
      "share_ksi": 0.5057
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
-       2,
-       0
-      ],
       "going straight": [
-       158,
-       29
-      ],
-      "lane change, merge, pass, entering": [
-       7,
-       1
-      ],
-      "left or U-turn": [
-       907,
-       82
-      ],
-      "not stated or other": [
-       17,
+       3,
        2
       ],
-      "parked or parking": [
-       2,
+      "left or U-turn": [
+       19,
+       1
+      ],
+      "not stated or other": [
+       4,
        0
       ],
       "right turn": [
-       320,
-       22
+       7,
+       1
       ],
       "stopped or slowing": [
-       15,
-       3
+       1,
+       0
       ]
      },
-     "ksi": 139,
-     "people_hurt": 1428,
-     "share_hurt": 0.6008,
-     "share_ksi": 0.5285
+     "ksi": 4,
+     "people_hurt": 34,
+     "share_hurt": 0.0143,
+     "share_ksi": 0.0152
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       5,
+       2
+      ],
+      "going straight": [
+       377,
+       52
+      ],
+      "lane change, merge, pass, entering": [
+       4,
+       0
+      ],
+      "left or U-turn": [
+       473,
+       44
+      ],
+      "not stated or other": [
+       11,
+       2
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "right turn": [
+       174,
+       11
+      ],
+      "stopped or slowing": [
+       30,
+       1
+      ],
+      "wrong way or opposing lane": [
+       2,
+       2
+      ]
+     },
+     "ksi": 114,
+     "people_hurt": 1077,
+     "share_hurt": 0.4531,
+     "share_ksi": 0.4335
     },
     "slow_street": {
      "by_movement": {
@@ -22953,6 +24027,18 @@
      "share_hurt": 0.3333,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       4,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 4,
+     "share_hurt": 0.4444,
+     "share_ksi": 1.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -23003,6 +24089,13 @@
      "ksi": 0,
      "people_hurt": 3,
      "share_hurt": 0.3333,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -23181,16 +24274,27 @@
      "share_hurt": 0.1111,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
        5,
        1
+      ],
+      "left or U-turn": [
+       1,
+       0
       ]
      },
      "ksi": 1,
-     "people_hurt": 5,
-     "share_hurt": 0.5556,
+     "people_hurt": 6,
+     "share_hurt": 0.6667,
      "share_ksi": 1.0
     },
     "slow_street": {
@@ -23836,6 +24940,38 @@
      "share_hurt": 0.5038,
      "share_ksi": 0.5
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       2,
+       0
+      ],
+      "going straight": [
+       21,
+       2
+      ],
+      "left or U-turn": [
+       7,
+       3
+      ],
+      "not stated or other": [
+       6,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "right turn": [
+       8,
+       0
+      ]
+     },
+     "ksi": 5,
+     "people_hurt": 45,
+     "share_hurt": 0.1692,
+     "share_ksi": 0.1087
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -24003,6 +25139,26 @@
      "people_hurt": 65,
      "share_hurt": 0.2444,
      "share_ksi": 0.2609
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       1,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       3,
+       2
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 5,
+     "share_hurt": 0.0188,
+     "share_ksi": 0.0652
     },
     "low_stress": {
      "by_movement": {
@@ -24564,49 +25720,61 @@
      "share_hurt": 0.4887,
      "share_ksi": 0.4783
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       3,
+       2
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 4,
+     "share_hurt": 0.015,
+     "share_ksi": 0.0435
+    },
+    "single_lane": {
      "by_movement": {
       "backing": [
-       4,
+       7,
        1
       ],
       "going straight": [
-       61,
-       9
+       49,
+       8
       ],
       "lane change, merge, pass, entering": [
-       2,
+       1,
        0
       ],
       "left or U-turn": [
-       29,
-       7
+       17,
+       5
       ],
       "not stated or other": [
-       23,
-       4
+       11,
+       1
       ],
       "parked or parking": [
-       4,
-       1
+       5,
+       0
       ],
       "right turn": [
-       20,
-       1
+       10,
+       0
       ],
       "stopped or slowing": [
        7,
-       3
-      ],
-      "wrong way or opposing lane": [
-       1,
-       0
+       1
       ]
      },
-     "ksi": 26,
-     "people_hurt": 151,
-     "share_hurt": 0.5677,
-     "share_ksi": 0.5652
+     "ksi": 16,
+     "people_hurt": 107,
+     "share_hurt": 0.4023,
+     "share_ksi": 0.3478
     },
     "slow_street": {
      "by_movement": {
@@ -25326,6 +26494,34 @@
      "share_hurt": 0.4344,
      "share_ksi": 0.3846
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       8,
+       1
+      ],
+      "left or U-turn": [
+       5,
+       1
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 16,
+     "share_hurt": 0.1311,
+     "share_ksi": 0.1538
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -25457,6 +26653,18 @@
      "people_hurt": 34,
      "share_hurt": 0.2787,
      "share_ksi": 0.0769
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0082,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -25882,41 +27090,53 @@
      "share_hurt": 0.3852,
      "share_ksi": 0.2308
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
+      "going straight": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0082,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       33,
+       4
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       7,
+       1
+      ],
+      "not stated or other": [
        2,
        0
       ],
-      "going straight": [
-       31,
-       2
-      ],
-      "left or U-turn": [
-       10,
-       2
-      ],
-      "not stated or other": [
-       8,
-       1
-      ],
       "right turn": [
-       2,
+       1,
        0
       ],
       "stopped or slowing": [
-       4,
-       0
+       1,
+       1
       ],
       "wrong way or opposing lane": [
        1,
        0
       ]
      },
-     "ksi": 5,
-     "people_hurt": 58,
-     "share_hurt": 0.4754,
-     "share_ksi": 0.3846
+     "ksi": 6,
+     "people_hurt": 46,
+     "share_hurt": 0.377,
+     "share_ksi": 0.4615
     },
     "slow_street": {
      "by_movement": {},
@@ -26671,6 +27891,50 @@
      "share_hurt": 0.4541,
      "share_ksi": 0.489
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       6,
+       0
+      ],
+      "going straight": [
+       174,
+       26
+      ],
+      "lane change, merge, pass, entering": [
+       6,
+       2
+      ],
+      "left or U-turn": [
+       13,
+       1
+      ],
+      "not stated or other": [
+       33,
+       5
+      ],
+      "parked or parking": [
+       4,
+       0
+      ],
+      "right turn": [
+       14,
+       5
+      ],
+      "stopped or slowing": [
+       10,
+       2
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 41,
+     "people_hurt": 261,
+     "share_hurt": 0.1674,
+     "share_ksi": 0.1285
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -26838,6 +28102,26 @@
      "people_hurt": 512,
      "share_hurt": 0.3284,
      "share_ksi": 0.2665
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       32,
+       12
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "right turn": [
+       5,
+       1
+      ]
+     },
+     "ksi": 13,
+     "people_hurt": 39,
+     "share_hurt": 0.025,
+     "share_ksi": 0.0408
     },
     "low_stress": {
      "by_movement": {
@@ -27439,49 +28723,65 @@
      "share_hurt": 0.4182,
      "share_ksi": 0.4545
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
-       11,
-       0
-      ],
       "going straight": [
-       592,
-       159
-      ],
-      "lane change, merge, pass, entering": [
-       18,
-       4
-      ],
-      "left or U-turn": [
-       61,
+       21,
        8
       ],
+      "right turn": [
+       4,
+       1
+      ]
+     },
+     "ksi": 9,
+     "people_hurt": 25,
+     "share_hurt": 0.016,
+     "share_ksi": 0.0282
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       19,
+       1
+      ],
+      "going straight": [
+       373,
+       58
+      ],
+      "lane change, merge, pass, entering": [
+       10,
+       3
+      ],
+      "left or U-turn": [
+       34,
+       4
+      ],
       "not stated or other": [
-       63,
-       12
+       56,
+       10
       ],
       "parked or parking": [
-       5,
-       0
+       11,
+       1
       ],
       "right turn": [
-       57,
+       26,
        8
       ],
       "stopped or slowing": [
-       19,
-       1
+       16,
+       4
       ],
       "wrong way or opposing lane": [
        1,
        0
       ]
      },
-     "ksi": 192,
-     "people_hurt": 827,
-     "share_hurt": 0.5305,
-     "share_ksi": 0.6019
+     "ksi": 89,
+     "people_hurt": 546,
+     "share_hurt": 0.3502,
+     "share_ksi": 0.279
     },
     "slow_street": {
      "by_movement": {
@@ -27915,6 +29215,13 @@
      "share_hurt": 0.2,
      "share_ksi": null
     },
+    "hin&single_lane": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
     "hin2022": {
      "by_movement": {
       "right turn": [
@@ -27960,6 +29267,13 @@
      "ksi": 0,
      "people_hurt": 1,
      "share_hurt": 0.2,
+     "share_ksi": null
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": null
     },
     "low_stress": {
@@ -28107,16 +29421,23 @@
      "share_hurt": 0.2,
      "share_ksi": null
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
+    "single_lane": {
      "by_movement": {
-      "right turn": [
-       1,
+      "going straight": [
+       2,
        0
       ]
      },
      "ksi": 0,
-     "people_hurt": 1,
-     "share_hurt": 0.2,
+     "people_hurt": 2,
+     "share_hurt": 0.4,
      "share_ksi": null
     },
     "slow_street": {
@@ -28660,6 +29981,34 @@
      "share_hurt": 0.881,
      "share_ksi": 0.9153
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       36,
+       5
+      ],
+      "left or U-turn": [
+       1,
+       1
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "right turn": [
+       2,
+       1
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 41,
+     "share_hurt": 0.1524,
+     "share_ksi": 0.1186
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -28807,6 +30156,22 @@
      "people_hurt": 113,
      "share_hurt": 0.4201,
      "share_ksi": 0.5085
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       12,
+       1
+      ],
+      "right turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 13,
+     "share_hurt": 0.0483,
+     "share_ksi": 0.0169
     },
     "low_stress": {
      "by_movement": {
@@ -29188,45 +30553,53 @@
      "share_hurt": 0.9071,
      "share_ksi": 0.9322
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       203,
-       47
+       7,
+       1
       ],
-      "lane change, merge, pass, entering": [
+      "right turn": [
        1,
        0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 8,
+     "share_hurt": 0.0297,
+     "share_ksi": 0.0169
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       47,
+       7
       ],
       "left or U-turn": [
-       6,
+       1,
        1
       ],
       "not stated or other": [
-       6,
-       2
-      ],
-      "ran off road": [
-       4,
+       1,
        0
       ],
       "right turn": [
-       22,
-       4
+       4,
+       1
       ],
       "stopped or slowing": [
-       3,
-       1
+       1,
+       0
       ],
       "wrong way or opposing lane": [
-       5,
-       1
+       1,
+       0
       ]
      },
-     "ksi": 56,
-     "people_hurt": 250,
-     "share_hurt": 0.9294,
-     "share_ksi": 0.9492
+     "ksi": 9,
+     "people_hurt": 55,
+     "share_hurt": 0.2045,
+     "share_ksi": 0.1525
     },
     "slow_street": {
      "by_movement": {},
@@ -29681,6 +31054,30 @@
      "share_hurt": 0.4262,
      "share_ksi": 0.3333
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       15,
+       2
+      ],
+      "left or U-turn": [
+       4,
+       0
+      ],
+      "right turn": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 22,
+     "share_hurt": 0.1803,
+     "share_ksi": 0.1333
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -29768,6 +31165,18 @@
      "people_hurt": 16,
      "share_hurt": 0.1311,
      "share_ksi": 0.2667
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       2,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.0164,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -30121,29 +31530,45 @@
      "share_hurt": 0.2541,
      "share_ksi": 0.2667
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       7,
-       0
-      ],
-      "left or U-turn": [
-       21,
-       4
-      ],
-      "not stated or other": [
        2,
        0
-      ],
-      "right turn": [
-       2,
-       1
       ]
      },
-     "ksi": 5,
-     "people_hurt": 32,
-     "share_hurt": 0.2623,
-     "share_ksi": 0.3333
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.0164,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       64,
+       4
+      ],
+      "left or U-turn": [
+       8,
+       1
+      ],
+      "not stated or other": [
+       1,
+       1
+      ],
+      "right turn": [
+       7,
+       3
+      ],
+      "stopped or slowing": [
+       3,
+       0
+      ]
+     },
+     "ksi": 9,
+     "people_hurt": 83,
+     "share_hurt": 0.6803,
+     "share_ksi": 0.6
     },
     "slow_street": {
      "by_movement": {
@@ -30891,6 +32316,46 @@
      "share_hurt": 0.3636,
      "share_ksi": 0.4416
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       58,
+       16
+      ],
+      "left or U-turn": [
+       4,
+       2
+      ],
+      "not stated or other": [
+       3,
+       0
+      ],
+      "parked or parking": [
+       2,
+       0
+      ],
+      "ran off road": [
+       2,
+       1
+      ],
+      "right turn": [
+       1,
+       1
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ],
+      "wrong way or opposing lane": [
+       7,
+       1
+      ]
+     },
+     "ksi": 21,
+     "people_hurt": 79,
+     "share_hurt": 0.1841,
+     "share_ksi": 0.2727
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -31058,6 +32523,22 @@
      "people_hurt": 125,
      "share_hurt": 0.2914,
      "share_ksi": 0.2987
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       6,
+       1
+      ],
+      "not stated or other": [
+       3,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 9,
+     "share_hurt": 0.021,
+     "share_ksi": 0.013
     },
     "low_stress": {
      "by_movement": {
@@ -31639,49 +33120,65 @@
      "share_hurt": 0.2914,
      "share_ksi": 0.3117
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       129,
-       21
+       4,
+       0
+      ],
+      "not stated or other": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 5,
+     "share_hurt": 0.0117,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       165,
+       31
       ],
       "lane change, merge, pass, entering": [
-       2,
+       1,
        0
       ],
       "left or U-turn": [
-       13,
+       10,
        3
       ],
       "not stated or other": [
        9,
-       3
+       2
       ],
       "parked or parking": [
-       2,
+       8,
        0
       ],
       "ran off road": [
-       6,
+       3,
        1
       ],
       "right turn": [
-       6,
+       5,
        1
       ],
       "stopped or slowing": [
-       2,
-       1
+       3,
+       0
       ],
       "wrong way or opposing lane": [
-       2,
-       0
+       12,
+       6
       ]
      },
-     "ksi": 30,
-     "people_hurt": 171,
-     "share_hurt": 0.3986,
-     "share_ksi": 0.3896
+     "ksi": 44,
+     "people_hurt": 216,
+     "share_hurt": 0.5035,
+     "share_ksi": 0.5714
     },
     "slow_street": {
      "by_movement": {
@@ -32397,6 +33894,38 @@
      "share_hurt": 0.2812,
      "share_ksi": 0.1852
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       29,
+       4
+      ],
+      "going straight": [
+       4,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "parked or parking": [
+       4,
+       1
+      ],
+      "stopped or slowing": [
+       4,
+       1
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 44,
+     "share_hurt": 0.1719,
+     "share_ksi": 0.2593
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -32544,6 +34073,22 @@
      "people_hurt": 84,
      "share_hurt": 0.3281,
      "share_ksi": 0.2963
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.0078,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -33057,22 +34602,34 @@
      "share_hurt": 0.207,
      "share_ksi": 0.0741
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "backing": [
-       48,
-       3
-      ],
-      "going straight": [
-       10,
-       0
-      ],
-      "lane change, merge, pass, entering": [
        1,
        0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0039,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       99,
+       12
+      ],
+      "going straight": [
+       16,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       8,
+       1
       ],
       "left or U-turn": [
-       3,
+       2,
        0
       ],
       "not stated or other": [
@@ -33080,22 +34637,18 @@
        0
       ],
       "parked or parking": [
-       3,
-       0
-      ],
-      "ran off road": [
-       1,
-       0
+       7,
+       2
       ],
       "stopped or slowing": [
-       2,
-       1
+       7,
+       2
       ]
      },
-     "ksi": 4,
-     "people_hurt": 71,
-     "share_hurt": 0.2773,
-     "share_ksi": 0.1481
+     "ksi": 19,
+     "people_hurt": 142,
+     "share_hurt": 0.5547,
+     "share_ksi": 0.7037
     },
     "slow_street": {
      "by_movement": {},
@@ -33870,6 +35423,54 @@
      "share_hurt": 0.4064,
      "share_ksi": 0.4242
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       12,
+       1
+      ],
+      "lane change, merge, pass, entering": [
+       4,
+       1
+      ],
+      "left or U-turn": [
+       18,
+       3
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "ran off road": [
+       6,
+       0
+      ],
+      "right turn": [
+       10,
+       0
+      ],
+      "stopped or slowing": [
+       3,
+       1
+      ],
+      "wrong way or opposing lane": [
+       3,
+       1
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 60,
+     "share_hurt": 0.239,
+     "share_ksi": 0.2121
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -34021,6 +35622,22 @@
      "people_hurt": 69,
      "share_hurt": 0.2749,
      "share_ksi": 0.303
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.008,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -34542,45 +36159,69 @@
      "share_hurt": 0.3904,
      "share_ksi": 0.5152
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 2,
+     "share_hurt": 0.008,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "backing": [
        1,
        0
       ],
       "going straight": [
-       25,
-       3
+       30,
+       5
       ],
       "lane change, merge, pass, entering": [
-       9,
+       5,
        1
       ],
       "left or U-turn": [
-       48,
-       9
+       38,
+       6
       ],
       "not stated or other": [
-       8,
+       7,
+       0
+      ],
+      "parked or parking": [
+       1,
        0
       ],
       "ran off road": [
-       2,
+       6,
        0
       ],
       "right turn": [
-       28,
-       6
+       18,
+       1
       ],
       "stopped or slowing": [
-       2,
+       5,
+       1
+      ],
+      "wrong way or opposing lane": [
+       6,
        1
       ]
      },
-     "ksi": 20,
-     "people_hurt": 123,
-     "share_hurt": 0.49,
-     "share_ksi": 0.6061
+     "ksi": 15,
+     "people_hurt": 117,
+     "share_hurt": 0.4661,
+     "share_ksi": 0.4545
     },
     "slow_street": {
      "by_movement": {
@@ -35188,6 +36829,22 @@
      "share_hurt": 0.5441,
      "share_ksi": 0.2857
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       12,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 13,
+     "share_hurt": 0.1912,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -35287,6 +36944,18 @@
      "people_hurt": 19,
      "share_hurt": 0.2794,
      "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "left or U-turn": [
+       2,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 2,
+     "share_hurt": 0.0294,
+     "share_ksi": 0.1429
     },
     "low_stress": {
      "by_movement": {
@@ -35628,33 +37297,36 @@
      "share_hurt": 0.5735,
      "share_ksi": 0.5714
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
-       6,
+       9,
        1
       ],
+      "lane change, merge, pass, entering": [
+       2,
+       0
+      ],
       "left or U-turn": [
-       29,
-       3
+       15,
+       0
       ],
       "not stated or other": [
        1,
        0
-      ],
-      "right turn": [
-       3,
-       0
-      ],
-      "stopped or slowing": [
-       1,
-       0
       ]
      },
-     "ksi": 4,
-     "people_hurt": 40,
-     "share_hurt": 0.5882,
-     "share_ksi": 0.5714
+     "ksi": 1,
+     "people_hurt": 27,
+     "share_hurt": 0.3971,
+     "share_ksi": 0.1429
     },
     "slow_street": {
      "by_movement": {},
@@ -36413,6 +38085,42 @@
      "share_hurt": 0.4957,
      "share_ksi": 0.5
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       2,
+       0
+      ],
+      "going straight": [
+       78,
+       10
+      ],
+      "left or U-turn": [
+       4,
+       1
+      ],
+      "not stated or other": [
+       6,
+       0
+      ],
+      "ran off road": [
+       4,
+       1
+      ],
+      "right turn": [
+       3,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 12,
+     "people_hurt": 99,
+     "share_hurt": 0.1224,
+     "share_ksi": 0.1935
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -36604,6 +38312,34 @@
      "people_hurt": 110,
      "share_hurt": 0.136,
      "share_ksi": 0.1613
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       31,
+       5
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       8,
+       2
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       2,
+       0
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 43,
+     "share_hurt": 0.0532,
+     "share_ksi": 0.1129
     },
     "low_stress": {
      "by_movement": {
@@ -37257,53 +38993,81 @@
      "share_hurt": 0.4425,
      "share_ksi": 0.3387
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
+      "going straight": [
+       18,
+       2
+      ],
+      "lane change, merge, pass, entering": [
        1,
        0
       ],
-      "going straight": [
-       335,
-       22
-      ],
-      "lane change, merge, pass, entering": [
-       12,
-       1
-      ],
       "left or U-turn": [
-       33,
-       2
-      ],
-      "not stated or other": [
-       9,
-       1
-      ],
-      "parked or parking": [
-       3,
+       6,
        1
       ],
       "ran off road": [
-       10,
-       1
+       1,
+       0
       ],
       "right turn": [
-       4,
+       2,
+       0
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 28,
+     "share_hurt": 0.0346,
+     "share_ksi": 0.0484
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       6,
+       0
+      ],
+      "going straight": [
+       216,
+       15
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       15,
+       2
+      ],
+      "not stated or other": [
+       21,
+       1
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "ran off road": [
+       14,
+       4
+      ],
+      "right turn": [
+       12,
        0
       ],
       "stopped or slowing": [
-       11,
+       7,
        0
       ],
       "wrong way or opposing lane": [
        10,
-       1
+       0
       ]
      },
-     "ksi": 29,
-     "people_hurt": 428,
-     "share_hurt": 0.529,
-     "share_ksi": 0.4677
+     "ksi": 22,
+     "people_hurt": 305,
+     "share_hurt": 0.377,
+     "share_ksi": 0.3548
     },
     "slow_street": {
      "by_movement": {
@@ -38043,6 +39807,34 @@
      "share_hurt": 0.5,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       18,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 22,
+     "share_hurt": 0.1864,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -38182,6 +39974,26 @@
      "people_hurt": 25,
      "share_hurt": 0.2119,
      "share_ksi": 0.25
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 3,
+     "share_hurt": 0.0254,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -38599,19 +40411,43 @@
      "share_hurt": 0.339,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       44,
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0085,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       30,
+       1
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       2,
        0
       ],
       "not stated or other": [
-       5,
-       2
+       3,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
       ],
       "ran off road": [
-       4,
-       1
+       1,
+       0
       ],
       "right turn": [
        1,
@@ -38622,14 +40458,14 @@
        0
       ],
       "wrong way or opposing lane": [
-       2,
+       1,
        0
       ]
      },
-     "ksi": 3,
-     "people_hurt": 57,
-     "share_hurt": 0.4831,
-     "share_ksi": 0.75
+     "ksi": 1,
+     "people_hurt": 41,
+     "share_hurt": 0.3475,
+     "share_ksi": 0.25
     },
     "slow_street": {
      "by_movement": {},
@@ -39136,6 +40972,26 @@
      "share_hurt": 0.2314,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       2,
+       1
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "parked or parking": [
+       14,
+       1
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 18,
+     "share_hurt": 0.1488,
+     "share_ksi": 1.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -39227,6 +41083,13 @@
      "people_hurt": 42,
      "share_hurt": 0.3471,
      "share_ksi": 0.5
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -39552,29 +41415,40 @@
      "share_hurt": 0.1488,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
        2,
-       0
+       1
       ],
       "not stated or other": [
-       7,
+       3,
        0
       ],
       "parked or parking": [
-       21,
-       0
+       32,
+       1
       ],
       "stopped or slowing": [
-       15,
+       4,
+       0
+      ],
+      "wrong way or opposing lane": [
+       2,
        0
       ]
      },
-     "ksi": 0,
-     "people_hurt": 45,
-     "share_hurt": 0.3719,
-     "share_ksi": 0.0
+     "ksi": 2,
+     "people_hurt": 43,
+     "share_hurt": 0.3554,
+     "share_ksi": 1.0
     },
     "slow_street": {
      "by_movement": {},
@@ -39996,6 +41870,22 @@
      "share_hurt": 0.6,
      "share_ksi": 1.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "right turn": [
+       3,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 4,
+     "share_hurt": 0.16,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -40078,6 +41968,13 @@
      "ksi": 0,
      "people_hurt": 10,
      "share_hurt": 0.4,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -40332,29 +42229,32 @@
      "share_hurt": 0.56,
      "share_ksi": 1.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
      "by_movement": {
       "going straight": [
-       2,
-       1
+       8,
+       0
       ],
       "left or U-turn": [
-       4,
+       1,
        0
       ],
       "right turn": [
-       6,
-       0
-      ],
-      "stopped or slowing": [
-       2,
+       3,
        0
       ]
      },
-     "ksi": 1,
-     "people_hurt": 14,
-     "share_hurt": 0.56,
-     "share_ksi": 1.0
+     "ksi": 0,
+     "people_hurt": 12,
+     "share_hurt": 0.48,
+     "share_ksi": 0.0
     },
     "slow_street": {
      "by_movement": {},
@@ -40936,6 +42836,42 @@
      "share_hurt": 0.671,
      "share_ksi": 0.5
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       154,
+       4
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       4,
+       0
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       4,
+       0
+      ],
+      "stopped or slowing": [
+       16,
+       0
+      ]
+     },
+     "ksi": 4,
+     "people_hurt": 182,
+     "share_hurt": 0.1313,
+     "share_ksi": 0.1818
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -41059,6 +42995,38 @@
      "people_hurt": 212,
      "share_hurt": 0.153,
      "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       114,
+       3
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       7,
+       0
+      ],
+      "not stated or other": [
+       5,
+       0
+      ],
+      "right turn": [
+       3,
+       0
+      ],
+      "stopped or slowing": [
+       11,
+       0
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 143,
+     "share_hurt": 0.1032,
+     "share_ksi": 0.1364
     },
     "low_stress": {
      "by_movement": {
@@ -41496,37 +43464,73 @@
      "share_hurt": 0.601,
      "share_ksi": 0.4545
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       785,
-       10
+       79,
+       2
       ],
       "lane change, merge, pass, entering": [
-       19,
-       1
+       2,
+       0
       ],
       "left or U-turn": [
-       18,
+       5,
        0
       ],
       "not stated or other": [
-       15,
+       5,
        0
       ],
       "right turn": [
-       17,
+       2,
        0
       ],
       "stopped or slowing": [
-       86,
+       9,
        0
       ]
      },
-     "ksi": 11,
-     "people_hurt": 940,
-     "share_hurt": 0.6782,
-     "share_ksi": 0.5
+     "ksi": 2,
+     "people_hurt": 102,
+     "share_hurt": 0.0736,
+     "share_ksi": 0.0909
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       249,
+       7
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       5,
+       0
+      ],
+      "not stated or other": [
+       7,
+       1
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       7,
+       0
+      ],
+      "stopped or slowing": [
+       29,
+       0
+      ]
+     },
+     "ksi": 8,
+     "people_hurt": 301,
+     "share_hurt": 0.2172,
+     "share_ksi": 0.3636
     },
     "slow_street": {
      "by_movement": {},
@@ -42401,6 +44405,50 @@
      "share_hurt": 0.5117,
      "share_ksi": 0.439
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       2,
+       0
+      ],
+      "going straight": [
+       78,
+       9
+      ],
+      "lane change, merge, pass, entering": [
+       8,
+       0
+      ],
+      "left or U-turn": [
+       9,
+       1
+      ],
+      "not stated or other": [
+       12,
+       1
+      ],
+      "parked or parking": [
+       2,
+       0
+      ],
+      "right turn": [
+       5,
+       1
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       1
+      ]
+     },
+     "ksi": 13,
+     "people_hurt": 118,
+     "share_hurt": 0.1196,
+     "share_ksi": 0.1585
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -42584,6 +44632,38 @@
      "people_hurt": 173,
      "share_hurt": 0.1753,
      "share_ksi": 0.122
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       29,
+       2
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       5,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       1
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 40,
+     "share_hurt": 0.0405,
+     "share_ksi": 0.0366
     },
     "low_stress": {
      "by_movement": {
@@ -43229,53 +45309,73 @@
      "share_hurt": 0.4721,
      "share_ksi": 0.3537
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
-       4,
-       0
-      ],
       "going straight": [
-       392,
-       31
-      ],
-      "lane change, merge, pass, entering": [
-       16,
-       2
+       18,
+       1
       ],
       "left or U-turn": [
-       65,
-       2
-      ],
-      "not stated or other": [
-       28,
-       5
-      ],
-      "parked or parking": [
        2,
        0
       ],
-      "ran off road": [
-       7,
-       0
-      ],
-      "right turn": [
-       18,
+      "not stated or other": [
+       2,
        0
       ],
       "stopped or slowing": [
-       18,
+       3,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 25,
+     "share_hurt": 0.0253,
+     "share_ksi": 0.0122
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       13,
+       0
+      ],
+      "going straight": [
+       216,
+       19
+      ],
+      "lane change, merge, pass, entering": [
+       10,
+       0
+      ],
+      "left or U-turn": [
+       24,
+       1
+      ],
+      "not stated or other": [
+       31,
+       5
+      ],
+      "parked or parking": [
+       8,
+       1
+      ],
+      "right turn": [
+       14,
+       1
+      ],
+      "stopped or slowing": [
+       10,
        0
       ],
       "wrong way or opposing lane": [
-       1,
+       3,
        1
       ]
      },
-     "ksi": 41,
-     "people_hurt": 551,
-     "share_hurt": 0.5583,
-     "share_ksi": 0.5
+     "ksi": 28,
+     "people_hurt": 329,
+     "share_hurt": 0.3333,
+     "share_ksi": 0.3415
     },
     "slow_street": {
      "by_movement": {
@@ -44171,6 +46271,50 @@
      "share_hurt": 0.4792,
      "share_ksi": 0.35
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       28,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "not stated or other": [
+       5,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "right turn": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       3,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 44,
+     "share_hurt": 0.166,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -44345,6 +46489,30 @@
      "ksi": 2,
      "people_hurt": 48,
      "share_hurt": 0.1811,
+     "share_ksi": 0.1
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       2
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 8,
+     "share_hurt": 0.0302,
      "share_ksi": 0.1
     },
     "low_stress": {
@@ -44951,52 +47119,72 @@
      "share_hurt": 0.4113,
      "share_ksi": 0.3
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
-       3,
-       0
-      ],
       "going straight": [
-       70,
-       5
-      ],
-      "lane change, merge, pass, entering": [
-       7,
+       1,
        0
       ],
       "left or U-turn": [
-       5,
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 3,
+     "share_hurt": 0.0113,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       10,
        1
       ],
-      "not stated or other": [
-       10,
+      "going straight": [
+       62,
+       4
+      ],
+      "lane change, merge, pass, entering": [
+       1,
        0
       ],
-      "parked or parking": [
-       2,
+      "left or U-turn": [
+       4,
        0
+      ],
+      "not stated or other": [
+       11,
+       1
+      ],
+      "parked or parking": [
+       6,
+       2
       ],
       "ran off road": [
        1,
        0
       ],
       "right turn": [
-       5,
+       2,
        0
       ],
       "stopped or slowing": [
-       24,
-       2
+       11,
+       0
       ],
       "wrong way or opposing lane": [
-       4,
+       2,
        0
       ]
      },
      "ksi": 8,
-     "people_hurt": 131,
-     "share_hurt": 0.4943,
+     "people_hurt": 110,
+     "share_hurt": 0.4151,
      "share_ksi": 0.4
     },
     "slow_street": {
@@ -45483,6 +47671,18 @@
      "share_hurt": 0.5128,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       5,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 5,
+     "share_hurt": 0.1282,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -45566,6 +47766,18 @@
      "people_hurt": 6,
      "share_hurt": 0.1538,
      "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       6,
+       2
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 6,
+     "share_hurt": 0.1538,
+     "share_ksi": 0.6667
     },
     "low_stress": {
      "by_movement": {
@@ -45827,29 +48039,37 @@
      "share_hurt": 0.641,
      "share_ksi": 0.6667
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       23,
+       6,
        2
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 6,
+     "share_hurt": 0.1538,
+     "share_ksi": 0.6667
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       13,
+       1
       ],
       "lane change, merge, pass, entering": [
-       2,
-       0
-      ],
-      "left or U-turn": [
        1,
        0
       ],
       "not stated or other": [
-       2,
-       1
+       1,
+       0
       ]
      },
-     "ksi": 3,
-     "people_hurt": 28,
-     "share_hurt": 0.7179,
-     "share_ksi": 1.0
+     "ksi": 1,
+     "people_hurt": 15,
+     "share_hurt": 0.3846,
+     "share_ksi": 0.3333
     },
     "slow_street": {
      "by_movement": {},
@@ -46226,6 +48446,22 @@
      "share_hurt": 0.4318,
      "share_ksi": 0.0
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       4,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 5,
+     "share_hurt": 0.1136,
+     "share_ksi": 0.0
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -46304,6 +48540,18 @@
      "ksi": 0,
      "people_hurt": 10,
      "share_hurt": 0.2273,
+     "share_ksi": 0.0
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0227,
      "share_ksi": 0.0
     },
     "low_stress": {
@@ -46570,29 +48818,33 @@
      "share_hurt": 0.5227,
      "share_ksi": 0.0
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "going straight": [
-       22,
-       1
-      ],
-      "left or U-turn": [
-       4,
-       0
-      ],
-      "ran off road": [
-       2,
-       0
-      ],
       "stopped or slowing": [
        1,
        0
       ]
      },
-     "ksi": 1,
-     "people_hurt": 29,
-     "share_hurt": 0.6591,
-     "share_ksi": 1.0
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.0227,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       11,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 12,
+     "share_hurt": 0.2727,
+     "share_ksi": 0.0
     },
     "slow_street": {
      "by_movement": {},
@@ -47250,6 +49502,38 @@
      "share_hurt": 0.7924,
      "share_ksi": 0.8176
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       308,
+       14
+      ],
+      "lane change, merge, pass, entering": [
+       8,
+       0
+      ],
+      "left or U-turn": [
+       5,
+       0
+      ],
+      "right turn": [
+       5,
+       1
+      ],
+      "stopped or slowing": [
+       5,
+       0
+      ],
+      "wrong way or opposing lane": [
+       2,
+       1
+      ]
+     },
+     "ksi": 16,
+     "people_hurt": 333,
+     "share_hurt": 0.1158,
+     "share_ksi": 0.1081
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -47417,6 +49701,38 @@
      "people_hurt": 579,
      "share_hurt": 0.2013,
      "share_ksi": 0.1689
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       192,
+       10
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       1
+      ],
+      "left or U-turn": [
+       30,
+       0
+      ],
+      "not stated or other": [
+       4,
+       0
+      ],
+      "right turn": [
+       4,
+       0
+      ],
+      "stopped or slowing": [
+       3,
+       0
+      ]
+     },
+     "ksi": 11,
+     "people_hurt": 236,
+     "share_hurt": 0.0821,
+     "share_ksi": 0.0743
     },
     "low_stress": {
      "by_movement": {
@@ -47886,49 +50202,65 @@
      "share_hurt": 0.9075,
      "share_ksi": 0.8514
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       2403,
-       121
-      ],
-      "lane change, merge, pass, entering": [
-       33,
-       0
+       147,
+       7
       ],
       "left or U-turn": [
-       122,
-       6
+       24,
+       0
       ],
       "not stated or other": [
-       10,
-       0
-      ],
-      "parked or parking": [
-       6,
-       0
-      ],
-      "ran off road": [
-       1,
+       3,
        0
       ],
       "right turn": [
-       59,
+       3,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 179,
+     "share_hurt": 0.0622,
+     "share_ksi": 0.0473
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       436,
+       21
+      ],
+      "lane change, merge, pass, entering": [
+       9,
+       0
+      ],
+      "left or U-turn": [
+       12,
+       0
+      ],
+      "right turn": [
+       11,
        1
       ],
       "stopped or slowing": [
-       36,
-       2
+       5,
+       0
       ],
       "wrong way or opposing lane": [
-       12,
-       2
+       4,
+       1
       ]
      },
-     "ksi": 132,
-     "people_hurt": 2682,
-     "share_hurt": 0.9325,
-     "share_ksi": 0.8919
+     "ksi": 23,
+     "people_hurt": 477,
+     "share_hurt": 0.1659,
+     "share_ksi": 0.1554
     },
     "slow_street": {
      "by_movement": {},
@@ -48647,6 +50979,30 @@
      "share_hurt": 0.4128,
      "share_ksi": 0.5294
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       170,
+       10
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       0
+      ],
+      "left or U-turn": [
+       26,
+       3
+      ],
+      "right turn": [
+       7,
+       1
+      ]
+     },
+     "ksi": 14,
+     "people_hurt": 205,
+     "share_hurt": 0.1561,
+     "share_ksi": 0.2745
+    },
     "hin2022": {
      "by_movement": {
       "going straight": [
@@ -48774,6 +51130,38 @@
      "people_hurt": 137,
      "share_hurt": 0.1043,
      "share_ksi": 0.1569
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       24,
+       2
+      ],
+      "left or U-turn": [
+       21,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       4,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 52,
+     "share_hurt": 0.0396,
+     "share_ksi": 0.0392
     },
     "low_stress": {
      "by_movement": {
@@ -49275,30 +51663,18 @@
      "share_hurt": 0.2133,
      "share_ksi": 0.2745
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       91,
-       3
-      ],
-      "lane change, merge, pass, entering": [
        1,
-       1
+       0
       ],
       "left or U-turn": [
-       167,
-       10
+       8,
+       0
       ],
       "ran off road": [
        1,
-       0
-      ],
-      "right turn": [
-       23,
-       0
-      ],
-      "stopped or slowing": [
-       3,
        0
       ],
       "wrong way or opposing lane": [
@@ -49306,10 +51682,50 @@
        0
       ]
      },
-     "ksi": 14,
-     "people_hurt": 287,
-     "share_hurt": 0.2186,
-     "share_ksi": 0.2745
+     "ksi": 0,
+     "people_hurt": 11,
+     "share_hurt": 0.0084,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "going straight": [
+       728,
+       28
+      ],
+      "lane change, merge, pass, entering": [
+       7,
+       0
+      ],
+      "left or U-turn": [
+       67,
+       6
+      ],
+      "not stated or other": [
+       5,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       18,
+       1
+      ],
+      "stopped or slowing": [
+       10,
+       0
+      ],
+      "wrong way or opposing lane": [
+       5,
+       0
+      ]
+     },
+     "ksi": 35,
+     "people_hurt": 841,
+     "share_hurt": 0.6405,
+     "share_ksi": 0.6863
     },
     "slow_street": {
      "by_movement": {
@@ -50229,6 +52645,50 @@
      "share_hurt": 0.4712,
      "share_ksi": 0.419
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       440,
+       40
+      ],
+      "lane change, merge, pass, entering": [
+       9,
+       1
+      ],
+      "left or U-turn": [
+       30,
+       1
+      ],
+      "not stated or other": [
+       17,
+       2
+      ],
+      "parked or parking": [
+       5,
+       0
+      ],
+      "ran off road": [
+       8,
+       2
+      ],
+      "right turn": [
+       23,
+       1
+      ],
+      "stopped or slowing": [
+       21,
+       2
+      ],
+      "wrong way or opposing lane": [
+       5,
+       0
+      ]
+     },
+     "ksi": 49,
+     "people_hurt": 558,
+     "share_hurt": 0.1223,
+     "share_ksi": 0.1556
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -50416,6 +52876,46 @@
      "people_hurt": 655,
      "share_hurt": 0.1435,
      "share_ksi": 0.1429
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       292,
+       16
+      ],
+      "lane change, merge, pass, entering": [
+       6,
+       0
+      ],
+      "left or U-turn": [
+       15,
+       1
+      ],
+      "not stated or other": [
+       14,
+       1
+      ],
+      "ran off road": [
+       3,
+       0
+      ],
+      "right turn": [
+       13,
+       0
+      ],
+      "stopped or slowing": [
+       27,
+       0
+      ],
+      "wrong way or opposing lane": [
+       9,
+       1
+      ]
+     },
+     "ksi": 19,
+     "people_hurt": 379,
+     "share_hurt": 0.0831,
+     "share_ksi": 0.0603
     },
     "low_stress": {
      "by_movement": {
@@ -51073,49 +53573,93 @@
      "share_hurt": 0.4335,
      "share_ksi": 0.3238
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "going straight": [
-       2064,
-       133
+       187,
+       8
       ],
       "lane change, merge, pass, entering": [
-       72,
-       1
+       4,
+       0
       ],
       "left or U-turn": [
-       99,
-       6
+       14,
+       1
       ],
       "not stated or other": [
-       64,
-       6
-      ],
-      "parked or parking": [
-       6,
+       10,
        0
       ],
       "ran off road": [
-       22,
-       3
+       3,
+       0
       ],
       "right turn": [
-       54,
-       1
+       8,
+       0
       ],
       "stopped or slowing": [
-       95,
-       3
+       18,
+       0
       ],
       "wrong way or opposing lane": [
-       25,
-       3
+       9,
+       1
       ]
      },
-     "ksi": 156,
-     "people_hurt": 2501,
-     "share_hurt": 0.5481,
-     "share_ksi": 0.4952
+     "ksi": 10,
+     "people_hurt": 253,
+     "share_hurt": 0.0554,
+     "share_ksi": 0.0317
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       5,
+       0
+      ],
+      "going straight": [
+       1164,
+       85
+      ],
+      "lane change, merge, pass, entering": [
+       18,
+       2
+      ],
+      "left or U-turn": [
+       82,
+       5
+      ],
+      "not stated or other": [
+       51,
+       6
+      ],
+      "parked or parking": [
+       26,
+       1
+      ],
+      "ran off road": [
+       37,
+       6
+      ],
+      "right turn": [
+       77,
+       4
+      ],
+      "stopped or slowing": [
+       56,
+       4
+      ],
+      "wrong way or opposing lane": [
+       11,
+       0
+      ]
+     },
+     "ksi": 113,
+     "people_hurt": 1527,
+     "share_hurt": 0.3346,
+     "share_ksi": 0.3587
     },
     "slow_street": {
      "by_movement": {
@@ -51995,6 +54539,46 @@
      "share_hurt": 0.2712,
      "share_ksi": 0.0588
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       27,
+       0
+      ],
+      "going straight": [
+       8,
+       1
+      ],
+      "lane change, merge, pass, entering": [
+       11,
+       0
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "parked or parking": [
+       3,
+       0
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 53,
+     "share_hurt": 0.1097,
+     "share_ksi": 0.0588
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -52138,6 +54722,22 @@
      "people_hurt": 72,
      "share_hurt": 0.1491,
      "share_ksi": 0.1176
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "backing": [
+       6,
+       0
+      ],
+      "going straight": [
+       3,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 9,
+     "share_hurt": 0.0186,
+     "share_ksi": 0.0
     },
     "low_stress": {
      "by_movement": {
@@ -52703,45 +55303,65 @@
      "share_hurt": 0.2402,
      "share_ksi": 0.1176
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
       "backing": [
-       66,
-       1
-      ],
-      "going straight": [
-       41,
-       2
-      ],
-      "lane change, merge, pass, entering": [
-       24,
-       1
-      ],
-      "left or U-turn": [
-       5,
-       0
-      ],
-      "not stated or other": [
        4,
        0
       ],
-      "parked or parking": [
-       10,
-       1
-      ],
-      "right turn": [
+      "going straight": [
        3,
-       0
-      ],
-      "stopped or slowing": [
-       9,
        0
       ]
      },
-     "ksi": 5,
-     "people_hurt": 162,
-     "share_hurt": 0.3354,
-     "share_ksi": 0.2941
+     "ksi": 0,
+     "people_hurt": 7,
+     "share_hurt": 0.0145,
+     "share_ksi": 0.0
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       141,
+       3
+      ],
+      "going straight": [
+       41,
+       3
+      ],
+      "lane change, merge, pass, entering": [
+       50,
+       0
+      ],
+      "left or U-turn": [
+       7,
+       1
+      ],
+      "not stated or other": [
+       6,
+       0
+      ],
+      "parked or parking": [
+       15,
+       1
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 8,
+     "people_hurt": 265,
+     "share_hurt": 0.5487,
+     "share_ksi": 0.4706
     },
     "slow_street": {
      "by_movement": {
@@ -53657,6 +56277,50 @@
      "share_hurt": 0.4471,
      "share_ksi": 0.4521
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "going straight": [
+       147,
+       12
+      ],
+      "lane change, merge, pass, entering": [
+       80,
+       3
+      ],
+      "left or U-turn": [
+       141,
+       7
+      ],
+      "not stated or other": [
+       74,
+       7
+      ],
+      "parked or parking": [
+       6,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       55,
+       4
+      ],
+      "stopped or slowing": [
+       11,
+       0
+      ],
+      "wrong way or opposing lane": [
+       28,
+       2
+      ]
+     },
+     "ksi": 35,
+     "people_hurt": 543,
+     "share_hurt": 0.1339,
+     "share_ksi": 0.1598
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -53840,6 +56504,46 @@
      "people_hurt": 879,
      "share_hurt": 0.2168,
      "share_ksi": 0.2055
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       53,
+       6
+      ],
+      "lane change, merge, pass, entering": [
+       33,
+       3
+      ],
+      "left or U-turn": [
+       55,
+       4
+      ],
+      "not stated or other": [
+       7,
+       1
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       19,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       9,
+       0
+      ]
+     },
+     "ksi": 14,
+     "people_hurt": 178,
+     "share_hurt": 0.0439,
+     "share_ksi": 0.0639
     },
     "low_stress": {
      "by_movement": {
@@ -54477,53 +57181,85 @@
      "share_hurt": 0.3803,
      "share_ksi": 0.3562
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
+      "going straight": [
+       27,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       21,
+       1
+      ],
+      "left or U-turn": [
+       31,
+       3
+      ],
+      "not stated or other": [
+       3,
+       1
+      ],
+      "ran off road": [
        1,
        0
       ],
+      "right turn": [
+       11,
+       0
+      ],
+      "wrong way or opposing lane": [
+       3,
+       0
+      ]
+     },
+     "ksi": 5,
+     "people_hurt": 97,
+     "share_hurt": 0.0239,
+     "share_ksi": 0.0228
+    },
+    "single_lane": {
+     "by_movement": {
       "going straight": [
-       539,
-       35
+       379,
+       30
       ],
       "lane change, merge, pass, entering": [
-       504,
-       17
+       134,
+       4
       ],
       "left or U-turn": [
-       583,
-       23
+       284,
+       13
       ],
       "not stated or other": [
-       137,
+       181,
        9
       ],
       "parked or parking": [
-       15,
+       12,
        0
       ],
       "ran off road": [
-       9,
+       11,
        0
       ],
       "right turn": [
-       218,
-       19
+       94,
+       4
       ],
       "stopped or slowing": [
-       18,
-       1
+       25,
+       0
       ],
       "wrong way or opposing lane": [
-       80,
-       11
+       85,
+       9
       ]
      },
-     "ksi": 115,
-     "people_hurt": 2104,
-     "share_hurt": 0.5189,
-     "share_ksi": 0.5251
+     "ksi": 69,
+     "people_hurt": 1205,
+     "share_hurt": 0.2972,
+     "share_ksi": 0.3151
     },
     "slow_street": {
      "by_movement": {
@@ -55443,6 +58179,50 @@
      "share_hurt": 0.4957,
      "share_ksi": 0.6638
     },
+    "hin&single_lane": {
+     "by_movement": {
+      "backing": [
+       4,
+       0
+      ],
+      "going straight": [
+       87,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       25,
+       1
+      ],
+      "left or U-turn": [
+       228,
+       17
+      ],
+      "not stated or other": [
+       4,
+       0
+      ],
+      "parked or parking": [
+       2,
+       0
+      ],
+      "right turn": [
+       6,
+       1
+      ],
+      "stopped or slowing": [
+       4,
+       0
+      ],
+      "wrong way or opposing lane": [
+       4,
+       1
+      ]
+     },
+     "ksi": 22,
+     "people_hurt": 364,
+     "share_hurt": 0.1217,
+     "share_ksi": 0.1897
+    },
     "hin2022": {
      "by_movement": {
       "backing": [
@@ -55602,6 +58382,30 @@
      "people_hurt": 386,
      "share_hurt": 0.1291,
      "share_ksi": 0.2069
+    },
+    "limit35_corner": {
+     "by_movement": {
+      "going straight": [
+       29,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       7,
+       1
+      ],
+      "left or U-turn": [
+       170,
+       10
+      ],
+      "right turn": [
+       1,
+       1
+      ]
+     },
+     "ksi": 14,
+     "people_hurt": 207,
+     "share_hurt": 0.0692,
+     "share_ksi": 0.1207
     },
     "low_stress": {
      "by_movement": {
@@ -56175,38 +58979,58 @@
      "share_hurt": 0.4361,
      "share_ksi": 0.5172
     },
-    "signalized|arterial&midblock": {
+    "signalized&limit35_corner": {
      "by_movement": {
-      "backing": [
-       1,
-       0
-      ],
       "going straight": [
-       202,
-       4
-      ],
-      "lane change, merge, pass, entering": [
-       56,
-       3
-      ],
-      "left or U-turn": [
-       1099,
-       56
-      ],
-      "not stated or other": [
        15,
        0
       ],
-      "ran off road": [
+      "lane change, merge, pass, entering": [
        1,
        0
       ],
+      "left or U-turn": [
+       98,
+       7
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 114,
+     "share_hurt": 0.0381,
+     "share_ksi": 0.0603
+    },
+    "single_lane": {
+     "by_movement": {
+      "backing": [
+       10,
+       0
+      ],
+      "going straight": [
+       498,
+       8
+      ],
+      "lane change, merge, pass, entering": [
+       122,
+       1
+      ],
+      "left or U-turn": [
+       448,
+       24
+      ],
+      "not stated or other": [
+       11,
+       0
+      ],
+      "parked or parking": [
+       3,
+       0
+      ],
       "right turn": [
-       26,
+       14,
        1
       ],
       "stopped or slowing": [
-       7,
+       38,
        0
       ],
       "wrong way or opposing lane": [
@@ -56214,10 +59038,10 @@
        1
       ]
      },
-     "ksi": 65,
-     "people_hurt": 1411,
-     "share_hurt": 0.4719,
-     "share_ksi": 0.5603
+     "ksi": 35,
+     "people_hurt": 1148,
+     "share_hurt": 0.3839,
+     "share_ksi": 0.3017
     },
     "slow_street": {
      "by_movement": {
@@ -56509,6 +59333,8 @@
   "high_stress",
   "low_stress",
   "multilane",
+  "single_lane",
+  "limit35_corner",
   "hin",
   "hin2022",
   "school_zone",
@@ -56591,6 +59417,12 @@
    "tag": "[DataSF enwt-3u8m — queried 2026-11-26]",
    "value": 863
   },
+  "hin_single_lane_miles": {
+   "how": "corrected_length_miles over the 2024 HIN's blocks with 1 off-peak lane (SFMTA MTA.CTA_trafficlanes LANES_OP: one a direction on a two-way street, one on a one-way street); dual-carriageway rows left out",
+   "source": "DataSF enwt-3u8m; SFMTA MTA.CTA_trafficlanes read 2026-11-25",
+   "tag": "[DataSF enwt-3u8m — queried 2026-11-26] [inference — mine]",
+   "value": 34.2
+  },
   "hin_unsignalized_corners": {
    "how": "2024 HIN corners with no signal, counted once (1032 nodes)",
    "source": "DataSF enwt-3u8m, ybh5-27n2",
@@ -56662,6 +59494,12 @@
    "source": "DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25",
    "tag": "[DataSF ybh5-27n2 — queried 2026-11-25]",
    "value": 1228
+  },
+  "signalized_limit35_intersections": {
+   "how": "intersections with a signal where a block posted 35 mph or more meets (3t7b-gebn today, status L left out)",
+   "source": "DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25; DataSF 3t7b-gebn",
+   "tag": "[DataSF ybh5-27n2, 3t7b-gebn — queried 2026-11-25]",
+   "value": 67
   },
   "slip_lanes": {
    "how": "no city dataset of slip lanes (channelized right turns) was found in the DataSF catalog on 2026-11-25",

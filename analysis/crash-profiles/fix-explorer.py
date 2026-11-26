@@ -198,6 +198,8 @@ def display_name(fid, name):
 WHERE = [("signalized", "At a signalized corner"), ("hin", "On the High Injury Network"),
          ("ltn_cell", "Inside a residential cell"), ("school_zone", "In a school zone"), ("dark", "After dark")]
 REASONS = [
+    ("side effect only: per trip", "Its studies measure injury risk per trip, not crashes"),
+    ("side effect only", "Its studies measure the benefit in something other than crashes"),
     ("no effect size", "No study gives its effect on crashes"),
     ("text says the reachable share", "We can't yet count how much of this group it reaches"),
     ("same reach as the entry before", "We can't yet count how much of this group it reaches"),

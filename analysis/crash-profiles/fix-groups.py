@@ -22,16 +22,16 @@ COUNTING
   text names, or its movement, or the whole family, as fix-map.json records). R holds the fraction f of the family's
   people hurt (fk of its KSI people), so on each crash in R the term removes rho = share x r / f of the crash's other
   people hurt (r the effect's all-injury value, effect.hurt; none for a KSI-only effect) and rho = share x r / fk of
-  its KSI people (every value of the effect), each within fix-map.json's counting.rho_bounds. When R holds no KSI
+  its KSI people (every value of the effect), each at most fix-map.json's counting.rho_max, with no floor. When R holds no KSI
   people, the KSI share is spread over the family's crashes with KSI people in the term's movements (all of them, if
-  none). A crash keeps the product over the terms reaching it of (1 - rho) of each pool, within 0 and remain_cap, and
+  none). A crash keeps the product over the terms reaching it of (1 - rho) of each pool, at least 0, and
   a fix's people avoided on it are its KSI people avoided plus its other people hurt avoided. The rho recounted here
   must equal fix-map.json's for every term, and the sum over every crash must equal fix-map.json's
   hurt_avoided_per_year and ksi_avoided_per_year (at its rounding), or the run stops; nothing is scaled to make
   them match. A person grouping (victim role and age, role and violation family) splits a crash's KSI people
   avoided equally over its KSI victims and its other people hurt avoided equally over its other hurt victims. Every grouping's groups must add
   to each fix's total, and no crash or group may have more KSI people or other people hurt avoided than it holds
-  (nor more added than remain_cap allows), or the run stops.
+  (harm added has no ceiling), or the run stops.
 
   Stacks: each stack in STACKS is replayed in fix-map.json's order, crash by crash at mid: a step's people avoided on
   a crash are its people x what the steps before left on it x (1 - the step's factor). Each step's sum must equal
@@ -102,9 +102,8 @@ class Family(object):
         return out
 
 
-def term_rho(fam, t, bounds):
+def term_rho(fam, t, rho_max):
     """(R, KSI crashes, rho other {q}, rho KSI {q}) for one stack term, recounted from this script's crashes."""
-    lo_b, hi_b = bounds
     idx = fam.reached(t["place"], t["movements"])
     H, K = sum(fam.h), sum(fam.k)
     fh = sum(fam.h[i] for i in idx) / H if H else 0.0
@@ -115,14 +114,14 @@ def term_rho(fam, t, bounds):
         kidx = [i for i in range(len(fam.cases)) if fam.k[i] and (not t["movements"] or fam.mv[i] in t["movements"])] \
             or [i for i in range(len(fam.cases)) if fam.k[i]]
         fk = sum(fam.k[i] for i in kidx) / K if K else 0.0
-    ro = {q: max(lo_b, min(hi_b, t["share_hurt"] * eff["hurt"][q] / fh)) if eff["hurt"] and fh else 0.0 for q in Q}
-    rk = {q: max(lo_b, min(hi_b, t["share_ksi"] * eff[q] / fk)) if fk else 0.0 for q in Q}
+    ro = {q: min(rho_max, t["share_hurt"] * eff["hurt"][q] / fh) if eff["hurt"] and fh else 0.0 for q in Q}
+    rk = {q: min(rho_max, t["share_ksi"] * eff[q] / fk) if fk else 0.0 for q in Q}
     return idx, kidx, ro, rk
 
 
-def within(amount, held, cap, what):
-    """Allocation check: an amount avoided is at most what is held, and at most (cap - 1) x held added."""
-    if not -(cap - 1) * held - 1e-6 <= amount <= held + 1e-6:
+def within(amount, held, what):
+    """Allocation check: an amount avoided is at most what is held. Harm added has no ceiling."""
+    if not amount <= held + 1e-6:
         raise SystemExit("fix-groups: %s: %.6f avoided against %s held" % (what, amount, held))
 
 
@@ -158,7 +157,7 @@ def main():
         raise SystemExit("fix-groups: family totals differ from fix-map.json: %s" % sorted(k for k in set(want) | set(got) if want.get(k) != got.get(k))[:5])
     if sum(h for h, _ in got.values()) != fm["inputs"]["people_hurt_total"] or sum(k for _, k in got.values()) != fm["inputs"]["ksi_total"]:
         raise SystemExit("fix-groups: the families do not add to everyone hurt")
-    bounds, cap = tuple(fm["counting"]["rho_bounds"]), fm["counting"]["remain_cap"]
+    rho_max = fm["counting"]["rho_max"]
     held = {}  # case -> (people hurt, KSI people)
     for f in fams.values():
         for i, c in enumerate(f.cases):
@@ -179,7 +178,7 @@ def main():
             fam = fams[gname]
             fk_, fo_ = {q: {} for q in Q}, {q: {} for q in Q}
             for t in terms:
-                idx, kidx, ro, rk = term_rho(fam, t, bounds)
+                idx, kidx, ro, rk = term_rho(fam, t, rho_max)
                 if len(idx) != t["crashes_reached"] or any(abs(ro[q] - t["rho_other"][q]) > 1e-8 or abs(rk[q] - t["rho_ksi"][q]) > 1e-8 for q in Q):
                     raise SystemExit("fix-groups: %s in %s reaches %d crashes with rho %s / %s; fix-map.json has %d, %s / %s"
                                      % (fid, gname, len(idx), ro["mid"], rk["mid"], t["crashes_reached"], t["rho_other"]["mid"], t["rho_ksi"]["mid"]))
@@ -195,14 +194,14 @@ def main():
                         best[c] = (w, t["row"])
             for q in Q:
                 for i in sorted(set(fk_[q]) | set(fo_[q])):
-                    a = max(0.0, min(cap, fk_[q].get(i, 1.0)))
-                    b = max(0.0, min(cap, fo_[q].get(i, 1.0)))
+                    a = max(0.0, fk_[q].get(i, 1.0))
+                    b = max(0.0, fo_[q].get(i, 1.0))
                     c = fam.cases[i]
                     fac[q][c] = (a, b)
                     dk = fam.k[i] * (1 - a) / n_years
                     do = (fam.h[i] - fam.k[i]) * (1 - b) / n_years
-                    within(dk, fam.k[i] / n_years, cap, "%s on crash %s (KSI)" % (fid, c))
-                    within(do, (fam.h[i] - fam.k[i]) / n_years, cap, "%s on crash %s (other hurt)" % (fid, c))
+                    within(dk, fam.k[i] / n_years, "%s on crash %s (KSI)" % (fid, c))
+                    within(do, (fam.h[i] - fam.k[i]) / n_years, "%s on crash %s (other hurt)" % (fid, c))
                     v = alloc.setdefault(c, [0.0] * 6)
                     v[Q.index(q)] += dk + do
                     v[3 + Q.index(q)] += dk
@@ -227,11 +226,11 @@ def main():
             step = {}
             for c, (a, b) in sorted(factors[s["id"]]["mid"].items()):
                 h, k = held[c]
-                x, y = min(cap, remk[c] * a), min(cap, remo[c] * b)
+                x, y = remk[c] * a, remo[c] * b
                 step[c] = [(k * (remk[c] - x) + (h - k) * (remo[c] - y)) / n_years, k * (remk[c] - x) / n_years]
                 remk[c], remo[c] = x, y
-                within(k * (1 - x), k, cap, "%s step %d on crash %s (KSI)" % (sname, s["step"], c))
-                within((h - k) * (1 - y), h - k, cap, "%s step %d on crash %s (other hurt)" % (sname, s["step"], c))
+                within(k * (1 - x), k, "%s step %d on crash %s (KSI)" % (sname, s["step"], c))
+                within((h - k) * (1 - y), h - k, "%s step %d on crash %s (other hurt)" % (sname, s["step"], c))
             sh = sum(v[0] for v in step.values())
             sk = sum(v[1] for v in step.values())
             if round(sh, 2) != s["marginal_hurt_avoided"] or round(sk, 3) != s["marginal_ksi_avoided"]:
@@ -299,8 +298,8 @@ def main():
                 v = e["v"]
                 g = groups[key]
                 for j in range(3):
-                    within(v[3 + j], g["ksi"] / n_years, cap, "%s in %s %s (KSI)" % (fid, gid, key))
-                    within(v[j] - v[3 + j], (g["people_hurt"] - g["ksi"]) / n_years, cap, "%s in %s %s (other hurt)" % (fid, gid, key))
+                    within(v[3 + j], g["ksi"] / n_years, "%s in %s %s (KSI)" % (fid, gid, key))
+                    within(v[j] - v[3 + j], (g["people_hurt"] - g["ksi"]) / n_years, "%s in %s %s (other hurt)" % (fid, gid, key))
                 fx[key][fid] = {"hurt": [round(x, 3) for x in v[:3]], "ksi": [round(x, 4) for x in v[3:]],
                                 "reached_hurt": round(e["reached"], 3) if unit == "person" else int(round(e["reached"])),
                                 "row": min(e["rows"].items(), key=lambda kv: (-kv[1], kv[0]))[0] if e["rows"] else None}
@@ -318,8 +317,8 @@ def main():
                 ch = ck = 0.0
                 for x, y in zip(d["hurt"], d["ksi"]):
                     ch, ck = ch + x, ck + y
-                    within(ck, groups[key]["ksi"] / n_years, cap, "%s in %s %s (KSI)" % (sname, gid, key))
-                    within(ch - ck, (groups[key]["people_hurt"] - groups[key]["ksi"]) / n_years, cap, "%s in %s %s (other hurt)" % (sname, gid, key))
+                    within(ck, groups[key]["ksi"] / n_years, "%s in %s %s (KSI)" % (sname, gid, key))
+                    within(ch - ck, (groups[key]["people_hurt"] - groups[key]["ksi"]) / n_years, "%s in %s %s (other hurt)" % (sname, gid, key))
                 d["hurt"] = [round(x, 3) for x in d["hurt"]]
                 d["ksi"] = [round(x, 4) for x in d["ksi"]]
         rows = []

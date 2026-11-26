@@ -28,7 +28,9 @@ Counting rules (each one is also in the README):
   odds ratio, NOT_A_REDUCTION), its applies_to must not say it is not one to use
   here (an emergency department sample, a rural design, DO_NOT_APPLY), and an
   effect that names one road user (pedestrian, cyclist) is applied only to that
-  mode's groups. EFFECT_FROM_GROUP gives an entry the record's own value where
+  mode's groups. A fix whose rows left after that are all harmful, while a
+  row was dropped for its unit, counts only a side effect of what its studies
+  measured, and is not computable (side_effect_only). EFFECT_FROM_GROUP gives an entry the record's own value where
   its lane value is a manual one that is not about the group.
 - Severity is read per value (value_scope): from the unit, and from the
   applies_to and source where they tie a value to a severity ("Mid: London KSI
@@ -66,7 +68,8 @@ Counting rules (each one is also in the README):
   the at-fault party, the collision type, solo crashes or the street class, else
   the entry's movement, else the whole family, text_reach) and removes rho =
   share x r / f on each, f the fraction of the family's people those crashes
-  hold, rho within RHO_BOUNDS. Each crash's KSI people and other people hurt
+  hold, rho at most RHO_MAX (1, all of them) and with no floor, so a study's
+  rise in crashes is applied in full. Each crash's KSI people and other people hurt
   are kept apart: a fix's people hurt avoided are its KSI people avoided plus
   its other people hurt avoided. A row's own avoided a year is group count a
   year x share x r, for the groups listing.
@@ -92,8 +95,8 @@ Counting rules (each one is also in the README):
   crash keeps the fraction of its KSI people and of its other people hurt that
   the fixes before left, and an added fix removes rho of what is left on every
   crash it reaches, so fixes reaching the same crashes or nested places are
-  never credited with more people than those crashes hold. A crash never
-  carries more than REMAIN_CAP times its people. The families include mode not
+  never credited with more people than those crashes hold. What a crash keeps
+  is never below 0 and has no ceiling, so harm is counted in full. The families include mode not
   stated, so they hold everyone hurt. "all other families" entries are applied
   to each family outside the chart, unless a fix maps that family itself.
   Cross-cut groups ("place |", "who |", "time |", crash types) overlap the
@@ -889,10 +892,26 @@ def parse_share(text, tot_h, tot_k, movement, movements, lane=None):
     return None, None, "target share not parseable from text"
 
 
+# Reasons that drop a row because its unit is not a crash count: the rows a side effect may be left beside.
+NON_CRASH_UNIT = ("effect is not a crash or injury reduction", "effect is not a crash or injury outcome",
+                  "effect unit does not name a crash outcome", "the effect's own applies_to says")
+
+
+def side_effect_only(pairs):
+    """The reason a fix is not computable when every row with a crash effect is harmful and at least one row was
+    dropped for a non-crash unit (the benefit its studies measured some other way), else None."""
+    kept = [r for r in pairs if r["computable"]]
+    dropped = [r for r in pairs if not r["computable"] and (r.get("reason") or "").startswith(NON_CRASH_UNIT)]
+    if not kept or not dropped or any(r["effect_fraction"]["mid"] >= 0 for r in kept):
+        return None
+    if any("per trip" in ((r.get("effect") or {}).get("unit") or "") for r in dropped):
+        return "side effect only: per trip: its studies measure injury risk per trip, not crashes"
+    return "side effect only: its studies measure the benefit in something other than crashes"
+
+
 # ---------------------------------------------------------------- crash by crash
 
-RHO_BOUNDS = (-1.0, 1.0)  # what one entry may do to the people in a crash it reaches: remove them all, or add as many again
-REMAIN_CAP = 2.0          # a crash never carries more than twice its people, however many harmful entries reach it
+RHO_MAX = 1.0  # one entry removes at most all the people in a crash it reaches; a harmful entry (rho < 0) has no floor
 TEXT_FIT = 0.15           # a text share fits a set of crashes holding at least share / (1 + TEXT_FIT) of the family
 # A lane's target_share text that names a kind of crash a crash field records: (start of the text, the crash-type tag
 # fix-reach.py puts on those crashes, the movements it names).
@@ -914,7 +933,7 @@ PLACED = "the places the fix goes (reach.json)"
 
 
 def rho_clamp(x):
-    return max(RHO_BOUNDS[0], min(RHO_BOUNDS[1], x))
+    return min(RHO_MAX, x)
 
 
 class Crashes(object):
@@ -962,7 +981,7 @@ class Crashes(object):
         removes r there and a text share is spread over the crashes it names. KSI people take every value of the effect
         and the others only its all-injury values (effect.hurt), so a KSI-only effect removes KSI people alone. When
         the crashes reached hold no KSI people, the term's KSI share is spread over the family's crashes with KSI
-        people in its movements (all of them, if none). rho is kept within RHO_BOUNDS."""
+        people in its movements (all of them, if none). rho is at most RHO_MAX, with no floor."""
         idx = self.reached(gname, t["place"], t["movements"])
         fh, fk = self.frac(gname, idx)
         eff = t["effect"]
@@ -981,7 +1000,7 @@ class Crashes(object):
 
     def factors(self, term_sets):
         """{q: (crash indexes, KSI factor, other factor)}: on each crash the fix reaches, the fraction of its KSI people
-        and of its other people hurt it leaves, the product over its terms of (1 - rho), within 0 and REMAIN_CAP."""
+        and of its other people hurt it leaves, the product over its terms of (1 - rho), at least 0."""
         out = {}
         for q in Q:
             fk, fo = {}, {}
@@ -992,8 +1011,7 @@ class Crashes(object):
                     for i in t["_kidx"]:
                         fk[i] = fk.get(i, 1.0) * (1 - t["rho_ksi"][q])
             ix = sorted(set(fk) | set(fo))
-            out[q] = (ix, [max(0.0, min(REMAIN_CAP, fk.get(i, 1.0))) for i in ix],
-                      [max(0.0, min(REMAIN_CAP, fo.get(i, 1.0))) for i in ix])
+            out[q] = (ix, [max(0.0, fk.get(i, 1.0)) for i in ix], [max(0.0, fo.get(i, 1.0)) for i in ix])
         return out
 
     def avoided(self, fac):
@@ -1370,6 +1388,14 @@ def main():
                     row["used"] = False
                     row["note"] = (row.get("note", "") + "; " if row.get("note") else "") + "alternate estimate; the first computable entry for this group is used"
             pairs.append(row)
+        # A fix whose benefit rows were all dropped as non-crash units, leaving only a harmful side effect, is not
+        # computable: its count would be the side effect alone.
+        side = side_effect_only(pairs)
+        if side:
+            for row in pairs:
+                if row["computable"]:
+                    row["computable"], row["used"], row["reason"] = False, False, side
+            chosen = {}
         # A fix that maps one group several times with different movements: those add.
         # A group mapped both without movement and with movements: keep the no-movement entry only.
         by_group = {}
@@ -1469,7 +1495,9 @@ def main():
         reasons = []
         if cid in ENABLERS:
             reasons.append("enabler: its benefit comes from building %s, which carries the cost and is ranked instead" % ENABLERS[cid])
-        if not any_pair:
+        if side:
+            reasons.append(side)
+        elif not any_pair:
             reasons.append("no computable fix x group pair")
         if cost is None:
             reasons.append(cost_reason)
@@ -1552,7 +1580,7 @@ def main():
         nk, no = [], []
         for i, a, b in zip(ix, fk, fo):
             rk, ro = remk[i], remo[i]
-            x, y = min(REMAIN_CAP, rk * a), min(REMAIN_CAP, ro * b)
+            x, y = rk * a, ro * b
             dk += K[i] * (rk - x)
             do += O[i] * (ro - y)
             nk.append(x)
@@ -1571,17 +1599,17 @@ def main():
         }
 
     def check_remaining(remk, remo, label):
-        """Allocation check: no crash has more avoided than it holds (remaining within 0 and REMAIN_CAP), and no
-        family has more KSI people or other people hurt avoided than it holds (nor more added than REMAIN_CAP allows)."""
+        """Allocation check: no crash has more avoided than it holds (remaining at least 0), and no family has more
+        KSI people or other people hurt avoided than it holds. Harm added has no ceiling."""
         by = collections.defaultdict(lambda: [0.0, 0.0])
         for i in range(crashes.n):
-            if not (-1e-12 <= remk[i] <= REMAIN_CAP + 1e-12 and -1e-12 <= remo[i] <= REMAIN_CAP + 1e-12):
+            if not (remk[i] >= -1e-12 and remo[i] >= -1e-12):
                 raise SystemExit("fix-map: %s leaves crash %s at %s, %s" % (label, crashes.case[i], remk[i], remo[i]))
             by[crashes.fam[i]][0] += K[i] * (1 - remk[i]) + O[i] * (1 - remo[i])
             by[crashes.fam[i]][1] += K[i] * (1 - remk[i])
         for g, (h, k) in by.items():
             fk_, fo_ = fam[g]["ksi"], fam[g]["people_hurt"] - fam[g]["ksi"]
-            if not (-(REMAIN_CAP - 1) * fk_ - 1e-6 <= k <= fk_ + 1e-6 and -(REMAIN_CAP - 1) * fo_ - 1e-6 <= h - k <= fo_ + 1e-6):
+            if not (k <= fk_ + 1e-6 and h - k <= fo_ + 1e-6):
                 raise SystemExit("fix-map: %s avoids %.3f hurt and %.3f KSI in %s, which holds %s and %s"
                                  % (label, h, k, g, fam[g]["people_hurt"], fam[g]["ksi"]))
 
@@ -1694,13 +1722,13 @@ def main():
         "Sequential counting (TRL PPR844), crash by crash: each added fix acts only on the people the fixes before it "
         "left in each crash it reaches, so fixes that reach the same crashes, or nested places, are never credited "
         "with more people than those crashes hold. A crash keeps the fraction of its KSI people and of its other "
-        "people hurt still there; a fix removes rho of each on every crash it reaches (rho within %s to %s, and a "
-        "crash never above %s times its people). The package total sums over the %d mode x family groups, which hold "
+        "people hurt still there; a fix removes rho of each on every crash it reaches (rho at most %s, so a crash "
+        "never drops below none, and a study's rise in crashes is applied in full). The package total sums over the %d mode x family groups, which hold "
         "everyone hurt. It assumes the fixes' effects are independent. Only fixes with an annual cost and at least one "
         "computable family pair are stacked; CONFLICTS keeps one version of a fix, or one of the alternatives at one "
         "place. Each step also carries the cumulative figures with every effect at its low and at its high. Shares are "
         "of %d people hurt and %d KSI people a year (%d-%d over %d). Annual cost mixes dollar years."
-        % (RHO_BOUNDS[0], RHO_BOUNDS[1], REMAIN_CAP, len(fam), round(year_h), round(year_k), res["years"][0],
+        % (RHO_MAX, len(fam), round(year_h), round(year_k), res["years"][0],
            res["years"][1], YEARS))
 
     # ---------------------------------------------------------------- groups
@@ -1804,7 +1832,7 @@ def main():
         },
         "sf_evidence": {k: [dict(ev, low_it_sets=round(sf_low(ev), 4)) for ev in v] for k, v in sorted(SF_EVIDENCE.items())},
         "counting": {
-            "rho_bounds": list(RHO_BOUNDS), "remain_cap": REMAIN_CAP, "text_fit": TEXT_FIT,
+            "rho_max": RHO_MAX, "text_fit": TEXT_FIT,
             "text_share_reach_about": "entries whose share of a family (under 1) comes from their target_share text, by the crashes it is spread over",
             "text_share_reach": dict(sorted(collections.Counter(x["reach"] for x in spread_log if x["text_share"]).items())),
             "text_share_whole_family": sorted({(x["fix"], x["family"]) for x in spread_log

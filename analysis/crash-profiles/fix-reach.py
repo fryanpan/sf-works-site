@@ -66,8 +66,15 @@ OUTPUT, out/crash-augment/profiles/fix-reach.json
   groups[family]       people hurt and KSI people, then for each place class (and each reach.json expression) its
                        people hurt, KSI people and shares of the group, and by_movement: the same by MOVEMENT_FINE
                        movement (movements with nobody hurt are left out).
-  units                SF's count of each kind of place, with its source and how it was counted.
+  units                SF's count of each kind of place, with its source and how it was counted. Miles count a
+                       divided street once (miles_once, tools/street-safety/hin-densest-stretches.py's rule: 25 ft
+                       pieces, dropped when within 70 degrees of parallel to a kept piece of the same street and
+                       within 160 ft of it), and HIN corners count a divided street's two crossings once (nodes within
+                       CORNER_MERGE_FT, 150 ft, that share two street names). The HIN's own miles stay DPH's
+                       corrected_length_miles.
   checks               family totals against results.json, and how many crashes each class could be read for.
+                       police_control_device_by_node_class cross-checks the signal and stop sign layers against the
+                       police report's control_device at each intersection crash.
 Every figure is a count of police-reported injury crashes and the people in them.
 """
 
@@ -102,6 +109,11 @@ YEARS = (2017, 2024)
 SCHOOL_FT = 500
 CELL_MIN_MILES = 0.5
 HIN_MATCH_FT = 120  # a divided street's two sides sit about 40 to 100 ft from its centerline
+# Counting a divided street once, tools/street-safety/hin-densest-stretches.py's rule: each block is cut into
+# PIECE_FT pieces, and a piece is dropped when it runs within PARALLEL_DEG of parallel to a kept piece of the same
+# street, within DUP_FT sideways and inside that piece's extent.
+PIECE_FT, DUP_FT, GRID_FT, PARALLEL_DEG = 25, 160, 500, 70
+CORNER_MERGE_FT = 150  # two corners of a divided street: same two street names, within this distance
 FT_PER_DEG_LAT = 364000.0
 SURFACE = ("arterial", "major", "collector", "residential")
 
@@ -190,6 +202,105 @@ class Net(object):
     def cls(self, c):
         k = self.seg[c]["cls"]
         return "arterial" if k == "major" else k
+
+
+def _xy(lon, lat):
+    return ((lon + 122.44) * FT_PER_DEG_LAT * math.cos(math.radians(37.76)), (lat - 37.76) * FT_PER_DEG_LAT)
+
+
+def _proj(p, a, b):
+    dx, dy = b[0] - a[0], b[1] - a[1]
+    L = math.hypot(dx, dy)
+    if L == 0:
+        return math.dist(p, a), 0.0, 0.0
+    t = ((p[0] - a[0]) * dx + (p[1] - a[1]) * dy) / L
+    tc = max(0.0, min(L, t))
+    return math.dist(p, (a[0] + dx * tc / L, a[1] + dy * tc / L)), t, L
+
+
+def miles_once(net):
+    """Each surface block's miles with a divided street's second carriageway left out (hin-densest-stretches' rule)."""
+    by_street = collections.defaultdict(list)
+    for c in sorted(net.surface):
+        by_street[net.seg[c]["street"]].append(c)
+    cos_par = math.cos(math.radians(PARALLEL_DEG))
+    out = {}
+    for nm in sorted(by_street, key=str):
+        kept = collections.defaultdict(list)
+        for c in by_street[nm]:
+            ft = 0.0
+            for line in net.seg[c]["lines"]:
+                P = [_xy(x, y) for x, y in line]
+                for a0, b0 in zip(P, P[1:]):
+                    d = math.dist(a0, b0)
+                    if d == 0:
+                        continue
+                    k = max(1, int(math.ceil(d / PIECE_FT)))
+                    u = ((b0[0] - a0[0]) / d, (b0[1] - a0[1]) / d)
+                    for i in range(k):
+                        p1 = (a0[0] + (b0[0] - a0[0]) * i / k, a0[1] + (b0[1] - a0[1]) * i / k)
+                        p2 = (a0[0] + (b0[0] - a0[0]) * (i + 1) / k, a0[1] + (b0[1] - a0[1]) * (i + 1) / k)
+                        m = ((p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2)
+                        cx, cy = int(m[0] // GRID_FT), int(m[1] // GRID_FT)
+                        dup = False
+                        for ddx in (-1, 0, 1):
+                            for ddy in (-1, 0, 1):
+                                for q1, q2, w, owner in kept.get((cx + ddx, cy + ddy), ()):
+                                    if owner == c or abs(u[0] * w[0] + u[1] * w[1]) < cos_par:
+                                        continue
+                                    dist, t, L = _proj(m, q1, q2)
+                                    if 0 <= t <= L and dist <= DUP_FT:
+                                        dup = True
+                                        break
+                                if dup:
+                                    break
+                            if dup:
+                                break
+                        if not dup:
+                            kept[(cx, cy)].append((p1, p2, u, c))
+                            ft += d / k
+            out[c] = ft / 5280
+    return out
+
+
+def node_points(net):
+    pts = {}
+    for c in sorted(net.seg):
+        s = net.seg[c]
+        if not s["lines"]:
+            continue
+        for n, p in ((s["f"], s["lines"][0][0]), (s["t"], s["lines"][-1][-1])):
+            if n and n not in pts:
+                pts[n] = p
+    return pts
+
+
+def merge_corners(nodes, net, pts):
+    """Count corners with a divided street's two crossings as one: nodes within CORNER_MERGE_FT that share two
+    street names are joined."""
+    names = {n: {net.seg[c]["street"] for c in net.node_segs.get(n, ()) if c in net.surface} for n in nodes}
+    xy = {n: _xy(*pts[n]) for n in nodes if n in pts}
+    grid = collections.defaultdict(list)
+    for n in sorted(xy):
+        grid[(int(xy[n][0] // CORNER_MERGE_FT), int(xy[n][1] // CORNER_MERGE_FT))].append(n)
+    parent = {n: n for n in nodes}
+
+    def find(a):
+        while parent[a] != a:
+            parent[a] = parent[parent[a]]
+            a = parent[a]
+        return a
+    for n in sorted(xy):
+        gx, gy = int(xy[n][0] // CORNER_MERGE_FT), int(xy[n][1] // CORNER_MERGE_FT)
+        for dx in (-1, 0, 1):
+            for dy in (-1, 0, 1):
+                for o in grid.get((gx + dx, gy + dy), ()):
+                    if o <= n or len(names[n] & names[o]) < 2 or math.dist(xy[n], xy[o]) > CORNER_MERGE_FT:
+                        continue
+                    ra, rb = find(n), find(o)
+                    if ra != rb:
+                        parent[max(ra, rb)] = min(ra, rb)
+    return len({find(n) for n in nodes})
 
 
 # ---- per crash ---------------------------------------------------------------------------------------------
@@ -461,6 +572,21 @@ def main():
             tags.add("evening")
         r["tags"] = tags
 
+    # Cross-check of the node classes against the police report's control_device (is a signal or sign there).
+    pc = collections.defaultdict(collections.Counter)
+    for r in recs:
+        t = r["tags"]
+        if "intersection" not in t:
+            continue
+        k = next((x for x in ("signalized", "all_way_stop", "stop_controlled", "uncontrolled") if x in t), "unread")
+        pc[k][r["c"].get("control_device") or "(blank)"] += 1
+    police_ctrl = {}
+    for k in sorted(pc):
+        n = sum(pc[k].values())
+        police_ctrl[k] = {"crashes": n, "by_control_device": dict(sorted(pc[k].items())),
+                          "share_functioning": round(pc[k]["Functioning"] / n, 4) if n else None,
+                          "share_none": round(pc[k]["None"] / n, 4) if n else None}
+
     exprs = reach_expressions()
     classes = BASE + exprs
 
@@ -515,14 +641,23 @@ def main():
     corners = net.corners
     ctrl = collections.Counter(node_class(n) for n in corners)
     art_corner = {n for n, segs in corners.items() if any(net.cls(c) == "arterial" for c in segs)}
-    miles = collections.Counter()
+    once = miles_once(net)
+    miles, raw = collections.Counter(), collections.Counter()
     for c in net.surface:
-        miles[net.cls(c)] += net.seg[c]["miles"]
-    multilane_ac = sum(net.seg[c]["miles"] for c in net.surface
+        miles[net.cls(c)] += once[c]
+        raw[net.cls(c)] += net.seg[c]["miles"]
+    multilane_ac = sum(once[c] for c in net.surface
                        if net.cls(c) in ("arterial", "collector") and lanes.get(c, 0) >= 2)
+    pts = node_points(net)
+    hin_c = hin24["nodes"] & set(corners)
+    hin_c_once = {"all": merge_corners(hin_c, net, pts), "signalized": merge_corners(hin_c & signal_nodes, net, pts),
+                  "unsignalized": merge_corners(hin_c - signal_nodes, net, pts)}
+    art_once = merge_corners(art_corner, net, pts)
     st_src = "DataSF 3psu-pn9h, active surface blocks, read %s" % streets.read_on
     sig_tag = "DataSF ybh5-27n2, types %s, read %s" % (", ".join(sorted(SIGNAL_TYPES)), signals_src.read_on)
     stop_tag = "DataSF 4542-gpa3 (stop signs, status L left out), read %s" % stops.fetched_on
+
+    ONCE = ", a divided street counted once"
 
     def u(v, how, src, tag):
         return {"value": round(v, 1) if isinstance(v, float) else v, "how": how, "source": src, "tag": tag}
@@ -536,34 +671,36 @@ def main():
         "signalized_arterial_intersections": u(sum(1 for n in art_corner if node_class(n) == "signalized"),
                                                "intersections an arterial or major street meets, with a signal", st_src + "; " + sig_tag, q % ("3psu-pn9h, ybh5-27n2", streets.read_on)),
         "stop_controlled_intersections": u(ctrl["all_way_stop"] + ctrl["stop_controlled"], "unsignalized intersections with at least one stop sign", stop_tag, q % ("4542-gpa3", stops.fetched_on)),
-        "arterial_intersections": u(len(art_corner), "intersections an arterial or major street meets", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "arterial_intersections": u(len(art_corner), "intersections an arterial or major street meets (nodes; %d with a divided street's two crossings counted once)" % art_once, st_src, q % ("3psu-pn9h", streets.read_on)),
         "all_way_stops": u(ctrl["all_way_stop"], "unsignalized intersections whose stop signs face every block meeting there (a floor: one-way streets miss)", stop_tag, q % ("4542-gpa3", stops.fetched_on)),
         "two_way_or_partial_stops": u(ctrl["stop_controlled"], "unsignalized intersections with some but not all approaches stopped", stop_tag, q % ("4542-gpa3", stops.fetched_on)),
         "uncontrolled_intersections": u(ctrl["uncontrolled"], "intersections with no signal and no stop sign", stop_tag, q % ("4542-gpa3", stops.fetched_on)),
         "hin_miles": u(hin24["miles"], "sum of corrected_length_miles over the 2024 HIN's blocks", "DataSF enwt-3u8m", hin24["tag"]),
-        "hin_corners": u(len(hin24["nodes"] & set(corners)), "intersections at an end of a 2024 HIN block", "DataSF enwt-3u8m, 3psu-pn9h", hin24["tag"]),
-        "hin_signalized_corners": u(len(hin24["nodes"] & set(corners) & signal_nodes), "2024 HIN corners with a signal", "DataSF enwt-3u8m, ybh5-27n2", hin24["tag"]),
-        "hin_unsignalized_corners": u(len((hin24["nodes"] & set(corners)) - signal_nodes), "2024 HIN corners with no signal", "DataSF enwt-3u8m, ybh5-27n2", hin24["tag"]),
+        "hin_corners": u(hin_c_once["all"], "intersections at an end of a 2024 HIN block, a divided street's two crossings counted once (%d nodes)" % len(hin_c), "DataSF enwt-3u8m, 3psu-pn9h", hin24["tag"]),
+        "hin_signalized_corners": u(hin_c_once["signalized"], "2024 HIN corners with a signal, counted once (%d nodes)" % len(hin_c & signal_nodes), "DataSF enwt-3u8m, ybh5-27n2", hin24["tag"]),
+        "hin_unsignalized_corners": u(hin_c_once["unsignalized"], "2024 HIN corners with no signal, counted once (%d nodes)" % len(hin_c - signal_nodes), "DataSF enwt-3u8m, ybh5-27n2", hin24["tag"]),
         "hin2022_miles": u(hin22["miles"], "sum of corrected_length_miles over the 2022 HIN's blocks", "DataSF 8vtn-qytr", hin22["tag"]),
-        "arterial_miles": u(miles["arterial"], "arterial and major street miles (classcode 2, 3)", st_src, q % ("3psu-pn9h", streets.read_on)),
-        "collector_miles": u(miles["collector"], "collector street miles (classcode 4)", st_src, q % ("3psu-pn9h", streets.read_on)),
-        "arterial_collector_miles": u(miles["arterial"] + miles["collector"], "arterial, major and collector miles", st_src, q % ("3psu-pn9h", streets.read_on)),
-        "residential_miles": u(miles["residential"], "residential street miles (classcode 5)", st_src, q % ("3psu-pn9h", streets.read_on)),
-        "residential_collector_miles": u(miles["residential"] + miles["collector"], "residential and collector miles", st_src, q % ("3psu-pn9h", streets.read_on)),
-        "surface_miles": u(sum(miles.values()), "every active surface street mile (no freeway, ramp or class 0)", st_src, q % ("3psu-pn9h", streets.read_on)),
-        "multilane_arterial_collector_miles": u(multilane_ac, "arterial, major and collector miles with 2 or more off-peak lanes (SFMTA MTA.CTA_trafficlanes LANES_OP)",
+        "arterial_miles": u(miles["arterial"], "arterial and major street miles (classcode 2, 3), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "collector_miles": u(miles["collector"], "collector street miles (classcode 4), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "arterial_collector_miles": u(miles["arterial"] + miles["collector"], "arterial, major and collector miles, a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "residential_miles": u(miles["residential"], "residential street miles (classcode 5), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "residential_collector_miles": u(miles["residential"] + miles["collector"], "residential and collector miles, a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "surface_miles": u(sum(miles.values()), "every active surface street mile (no freeway, ramp or class 0), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
+        "multilane_arterial_collector_miles": u(multilane_ac, "arterial, major and collector miles with 2 or more off-peak lanes (SFMTA MTA.CTA_trafficlanes LANES_OP), a divided street counted once",
                                                 st_src + "; SFMTA MTA.CTA_trafficlanes read %s" % lanes_layer.get("read_on"), "[primary — read %s] [inference — mine]" % lanes_layer.get("read_on")),
         "schools": u(len(schools), "active schools, every entity type but Preschool; a 500 ft zone each", "DataSF 7e7j-59qk", schools_r.tag),
         "ltn_cells": u(len(cells), "candidate low-traffic cells of at least %.1f miles of street (this script's rule)" % CELL_MIN_MILES,
                        st_src + "; SFMTA 2023 draft BCI (data/extract/sfmta-bci/scores.json, read %s)" % bci_read_on, "[inference — mine]"),
-        "ltn_cell_miles": u(sum(x["miles"] for x in cells), "street miles inside those cells", st_src, "[inference — mine]"),
-        "ltn_cell_residential_miles": u(sum(x["residential_miles"] for x in cells), "residential street miles inside those cells", st_src, "[inference — mine]"),
-        "slow_street_miles": u(sum(net.seg[c]["miles"] for c in slow if c in net.seg), "miles of Implemented Slow Street blocks (hkz3-itiu, last edited 2024-01-18)", "DataSF hkz3-itiu", q % ("hkz3-itiu", slow_src.read_on)),
-        "limit20_miles": u(sum(net.seg[c]["miles"] for c in limit20 if c in net.seg), "miles posted 20 mph today", "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
-        "unposted_25_miles": u(sum(net.seg[c]["miles"] for c in net.surface if c in unposted),
-                               "surface miles with speedlimit 0, the 25 mph default", "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
+        "ltn_cell_miles": u(sum(once[c] for x in cells for c in x["blocks"]), "street miles inside those cells" + ONCE, st_src, "[inference — mine]"),
+        "ltn_cell_residential_miles": u(sum(once[c] for x in cells for c in x["blocks"] if net.cls(c) == "residential"), "residential street miles inside those cells" + ONCE, st_src, "[inference — mine]"),
+        "slow_street_miles": u(sum(once.get(c, 0) for c in slow), "miles of Implemented Slow Street blocks (hkz3-itiu, last edited 2024-01-18)", "DataSF hkz3-itiu", q % ("hkz3-itiu", slow_src.read_on)),
+        "limit20_miles": u(sum(once.get(c, 0) for c in limit20), "surface miles posted 20 mph today" + ONCE, "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
+        "unposted_25_miles": u(sum(once[c] for c in net.surface if c in unposted),
+                               "surface miles with speedlimit 0, the 25 mph default" + ONCE, "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
+        "unposted_residential_miles": u(sum(once[c] for c in net.surface if c in unposted and net.cls(c) == "residential"),
+                               "residential miles with speedlimit 0, the 25 mph default" + ONCE, "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
         "speed_camera_sites": u(len(cameras), "speed camera sites placed on a block (the street lane's rule)", "DataSF d5uh-bk84", q % ("d5uh-bk84", cam_src.read_on)),
-        "speed_camera_corridor_miles": u(sum(net.seg[c]["miles"] for c in cam_segs if c in net.seg), "miles of camera corridor blocks", "DataSF d5uh-bk84, 3psu-pn9h", q % ("d5uh-bk84", cam_src.read_on)),
+        "speed_camera_corridor_miles": u(sum(once.get(c, 0) for c in cam_segs), "miles of camera corridor blocks" + ONCE, "DataSF d5uh-bk84, 3psu-pn9h", q % ("d5uh-bk84", cam_src.read_on)),
         "slip_lanes": {"value": None, "how": "no city dataset of slip lanes (channelized right turns) was found in the DataSF catalog on 2026-11-25", "source": None, "tag": "[unretrieved — verify]"},
     }
 
@@ -576,6 +713,8 @@ def main():
         "hin2022": {k: hin22[k] for k in ("rows", "unmatched", "dual_matched")},
         "camera_sites_unplaced": sorted(cam_unplaced),
         "ltn_components_before_size_floor": n_components,
+        "miles_drawn_vs_once": {k: [round(raw[k], 1), round(miles[k], 1)] for k in sorted(raw)},
+        "police_control_device_by_node_class": police_ctrl,
         "results_json_signals_at_intersections": res.get("signals_at_intersections", {}).get("intersections_with_signal"),
     }
     out = {

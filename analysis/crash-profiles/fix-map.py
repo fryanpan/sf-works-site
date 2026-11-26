@@ -38,7 +38,12 @@ Counting rules (each one is also in the README):
 - SF's own evidence (SF_EVIDENCE, from the whitepaper's outcomes section and
   methods-by-intervention note, 2026-11-24) sets the low end where a lane's low
   is more hopeful: no effect where SF's 95% range includes 1, else 1 - SF's
-  ratio (20 mph blocks 1.27, so a low of a 27% rise). Each pair records it.
+  ratio (20 mph blocks, corrected for selection, 1.10, so a low of a 10% rise).
+  Each pair records it.
+- reach.json also nets out sites SF has already treated (treated: a fraction of
+  the crashes reached and the units priced, or an exclusion in the place); a
+  placed fix with no count says "most it could reach". Its cost replaces a
+  lane's labour-only signal price, and its upkeep adds a yearly cost per unit.
 - Avoided a year = group count a year x target share x r.
 - Annual cost: a per-year cost is used as is; a one-time cost is divided by
   life_years. A per-unit cost (per corner, mile, signal, camera) is multiplied
@@ -228,7 +233,9 @@ COST_TOTAL_OVER_YEARS = {"pedestrian-education": 5}  # "FY27 to 31 total"
 # 1 - ratio; it is changed only where the lane's own low is more hopeful than that.
 _SF_SRC = ("SF Works whitepaper Part 1, outcomes section and methods-by-intervention note, 2026-11-24, from DataSF "
            "ubvf-ztfx and the treatment datasets named there. [DataSF ubvf-ztfx — queried 2026-11-24] [inference — mine]")
-_TWENTY = {"ratio": 1.27, "lo": 1.20, "hi": 1.34, "modes": None, "what": "821 dated 20 mph blocks: injury crashes 1.27 (1.20 to 1.34); the method leans up 6% to 16% on these blocks (selection), and after either correction crashes still ran 10% to 20% above expected"}
+# The 20 mph result uses the corrected reading: the raw 1.27 (1.20 to 1.34) carries a 6 to 16 point selection lean
+# on these blocks, and after either correction crashes still ran 10% to 20% above expected, unexplained.
+_TWENTY = {"ratio": 1.10, "lo": 1.10, "hi": 1.20, "modes": None, "what": "821 dated 20 mph blocks, corrected reading: injury crashes ran 10% to 20% above expected (1.10 to 1.20), unexplained; the raw 1.27 (1.20 to 1.34) includes 6 to 16 points of selection lean (methods-by-intervention note). The low is the 10% rise"}
 _QUICK = {"ratio": 1.02, "lo": 0.95, "hi": 1.09, "modes": None, "what": "31 quick-build corridors, Empirical Bayes with traffic volumes: 1.02 (0.95 to 1.09), about no change"}
 _HUMPS = {"ratio": 1.04, "lo": 0.51, "hi": None, "modes": None, "what": "818 hump blocks: 0.82 (0.60 to 1.20) against waiting blocks, about no change (1.04, 0.51 with no upper bound) after their pre-trend"}
 _CAMS = [{"ratio": 0.80, "lo": 0.53, "hi": 1.20, "modes": ["pedestrian involved"], "what": "33 camera locations, crashes involving someone walking after the matched-street check: 0.80 (0.53 to 1.20)"},
@@ -334,6 +341,7 @@ class Reach(object):
         if not gh:
             return None, None, "reach: group has nobody hurt"
         scale = self.cfg[cid].get("share_scale", 1.0)
+        left = self.left(cid)
         mode = self.text_mode(cid, gname)
         if mode == "multiply" and text_share is not None:
             th, tk = text_share
@@ -348,7 +356,25 @@ class Reach(object):
         if scale != 1.0:
             sh, sk = sh * scale, sk * scale
             basis += ", x %s (%s)" % (scale, self.cfg[cid].get("scale_basis", ""))
+        if left != 1.0:
+            sh, sk = sh * left, sk * left
+            basis += ", x %s not yet treated" % round(left, 4)
         return sh, sk, basis
+
+    def left(self, cid):
+        """The fraction of sites not yet treated, where reach.json gives SF's count of what is done."""
+        t = (self.cfg.get(cid) or {}).get("treated") or {}
+        return 1.0 - t["fraction"] if "fraction" in t else 1.0
+
+    def net_note(self, cid):
+        t = (self.cfg.get(cid) or {}).get("treated") or {}
+        if t.get("fraction") == 0:
+            return "nothing to net out: " + t["basis"]
+        if "fraction" in t:
+            return "already treated netted out: %s%% of sites (%s)" % (round(100 * t["fraction"]), t["basis"])
+        if "by_place" in t:
+            return "already treated netted out by place: " + t["by_place"]
+        return "most it could reach: SF has no count of the sites already treated, so none are netted out"
 
     def units(self, cid):
         c = self.cfg.get(cid) or {}
@@ -358,12 +384,27 @@ class Reach(object):
         u = self.data["units"].get(key)
         if not u or u.get("value") is None:
             return None
-        n = u["value"] * c.get("units_scale", 1)
+        n = u["value"] * c.get("units_scale", 1) * self.left(cid)
         note = "%s %s (%s; %s)" % (("{:,.1f}" if isinstance(u["value"], float) else "{:,}").format(u["value"]),
                                    key.replace("_", " "), u["how"], u["tag"])
         if c.get("units_scale"):
             note += " x %s (%s)" % (c["units_scale"], c.get("scale_basis", ""))
+        if self.left(cid) != 1.0:
+            note += " x %s not yet treated" % round(self.left(cid), 4)
         return (n, n, note)
+
+    def upkeep(self, cid):
+        """(low, high, basis) a year, or None."""
+        k = (self.cfg.get(cid) or {}).get("upkeep")
+        if not k or self.data is None:
+            return None
+        u = self.data["units"].get(k["units"]) or {}
+        if u.get("value") is None:
+            return None
+        n = u["value"]
+        return (k["low_per_unit"] * n, k["high_per_unit"] * n,
+                "upkeep $%s to $%s a year per %s x %s (%s)" % ("{:,}".format(k["low_per_unit"]), "{:,}".format(k["high_per_unit"]),
+                                                             k["units"].replace("_", " ").rstrip("s"), u["value"], k["basis"]))
 
 # Laws that only allow another fix: the benefit and the cost sit with that fix.
 ENABLERS = {
@@ -786,6 +827,16 @@ def main():
             entry["units"] = u[2]
         elif c.get("units"):
             entry["units_error"] = "unit %r not in fix-reach.json" % c["units"]
+        elif cid in UNITS and reach.left(cid) != 1.0:
+            lo_, hi_, nb = UNITS[cid]
+            UNITS[cid] = (lo_ * reach.left(cid), hi_ * reach.left(cid), nb + " x %s not yet treated" % round(reach.left(cid), 4))
+            entry["units"] = UNITS[cid][2]
+        if c.get("cost"):
+            entry["cost_replaced"] = {"lane": merged[cid].get("cost"), "why": "the lane priced timing labour only"}
+            merged[cid]["cost"] = dict(c["cost"])
+        if c.get("reach_confidence"):
+            entry["reach_confidence"] = c["reach_confidence"]
+        entry["treated"] = reach.net_note(cid)
         if merged[cid].get("life_years") in (None, "") and c.get("life_years"):
             merged[cid]["life_years"] = c["life_years"]
             entry["life_years"] = "%s (%s)" % (c["life_years"], c.get("life_basis", ""))
@@ -816,6 +867,11 @@ def main():
     for cid in sorted(merged):
         rec = merged[cid]
         cost, cost_reason = annual_cost(rec)
+        if cid in reach.cfg:
+            up = reach.upkeep(cid)
+            if cost is not None and up is not None:
+                cost = {"low": cost["low"] + up[0], "mid": cost["mid"] + (up[0] + up[1]) / 2, "high": cost["high"] + up[1],
+                        "basis": cost["basis"] + "; plus " + up[2]}
         pairs = []
         chosen = {}
         last_share = {}
@@ -980,6 +1036,11 @@ def main():
                                           "sf_now", "sf_evidence", "who_decides", "evidence_grade", "sources",
                                           "merged_from", "notes", "displacement")}
         rec_out["scope"] = scope_of(rec)
+        if cid in reach.cfg:
+            rec_out["reach_treated"] = reach.net_note(cid)
+            rec_out["reach_confidence"] = reach.cfg[cid].get("reach_confidence", {"level": "as mapped"})
+            if reach.cfg[cid].get("cost"):
+                rec_out["cost_replaced_by_reach_json"] = True
         rec_out["groups"] = pairs
         rec_out["validation_errors"] = validation.get(cid, [])
         rec_out["avoided_basis"] = basis if any_pair else None
@@ -1048,6 +1109,8 @@ def main():
         "ksi_avoided_per_year_mid": f["ksi_avoided_per_year"]["mid"],
         "annual_cost_mid": f["annual_cost"]["mid"], "evidence_grade": f.get("evidence_grade"),
         "public_cost_zero": bool(f["annual_cost"].get("public_cost_zero")),
+        "reach_confidence": (f.get("reach_confidence") or {}).get("level"),
+        "most_it_could_reach": str(f.get("reach_treated", "")).startswith("most it could reach"),
     } for i, f in enumerate(ranked)]
     ksi_ranked = [f for f in out_fixes if f["computable"] and f["cost_per_ksi_avoided"]
                   and f["cost_per_ksi_avoided"]["mid"] is not None and f["avoided_basis"] == "families"]

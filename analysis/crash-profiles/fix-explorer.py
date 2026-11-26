@@ -40,7 +40,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DEFAULT_PROFILES = os.path.join(ROOT, "out", "crash-augment", "profiles")
 YEARS = None  # the number of collision years in results.json, set in build()
 CATCH = {"not stated", "unknown", "other", "Other", "Not Stated", "not stated or other", "age not stated",
-         "time not stated", "role not stated", "0 (layer gap)"}
+         "time not stated", "role not stated", "0 (layer gap)", "District not stated"}
 GROUP_ROWS = 12  # named groups shown per grouping before the "All other" row
 MIN_SHOWN = (0.05, 0.005)  # a fix is listed on a row when it avoids this many people hurt or KSI people a year there
 
@@ -108,13 +108,14 @@ GROUPINGS = [
     ("place", "Place"), ("what_where", "Violation and bike traffic stress"), ("who", "Who was hurt, by age"),
     ("who_what", "Who was hurt, by violation"), ("time", "Time of day"), ("light", "Light"),
     ("speed_limit", "Speed limit"), ("lanes", "Number of lanes"), ("weight", "Heaviest vehicle's weight"),
-    ("epc", "Equity Priority Community"),
+    ("epc", "Equity Priority Community"), ("district", "Supervisor district"),
 ]
 NOTES = {
     "family": ["The violation is the crash's primary collision factor, which police assign to the party at fault."],
     "place": ["Road class from the city's street map: major and arterial streets carry through traffic, collectors feed them, residential streets serve homes. At a corner, the biggest street meeting there.",
               "High bike traffic stress: fast, wide or busy streets with no separated bike lane."],
     "what_where": ["High bike traffic stress: fast, wide or busy streets with no separated bike lane."],
+    "district": ["Today's district lines, drawn in 2022, for every year."],
 }
 # The technical definitions behind NOTES, shown in About the Data rather than beside the controls.
 TECH_NOTES = [
@@ -316,6 +317,8 @@ class Labels(object):
         if gid == "what_where":
             label, sub, line = self.family("%s | %s" % (key[0], key[1]))
             return label, sub + " · " + STRESS.get(key[2], key[2]), line
+        if gid == "district":
+            return key[0], "", None
         if gid in ONE_FIELD:
             return ONE_FIELD[gid].get(key[0], cap(key[0])), "", None
         return " / ".join(key), "", None
@@ -480,11 +483,23 @@ def build(profiles):
                         round(sum(sum(g["stacks"][src]["ksi"]) for g in members), 2)]
         return out
 
-    def make_row(gid, key, members, label, sub, line, where, mapped_keys):
+    def make_row(gid, key, members, label, sub, line, where, mapped_keys, mix=None):
         h = sum(g["people_hurt"] for g in members)
         k = sum(g["ksi"] for g in members)
-        return {"key": key, "label": label, "sub": sub, "at": line, "h": round(h / YEARS), "k": round(k / YEARS, 1),
-                "where": where, "fixes": fix_list(members, h, mapped_keys), "st": stack_end(members)}
+        row = {"key": key, "label": label, "sub": sub, "at": line, "h": round(h / YEARS), "k": round(k / YEARS, 1),
+               "where": where, "fixes": fix_list(members, h, mapped_keys), "st": stack_end(members)}
+        if mix:
+            row["mix"] = mix
+        return row
+
+    # a district's crash mix: its share of people hurt in the biggest families beside the citywide share
+    mixes = {}
+    for d in res["district_mix"]["districts"]:
+        rows_ = []
+        for f in d["families"]:
+            lab, sub_, _ = labels.family("%s | %s" % (f["mode"], f["violation"]))
+            rows_.append([lab, sub_, r3(f["share_of_people_injured"]), r3(f["citywide_share"])])
+        mixes[d["district"]] = rows_
 
     fg_by = {g["id"]: g for g in fg["groupings"]}
     if sorted(gid for gid, _ in GROUPINGS) != sorted(fg_by):
@@ -517,7 +532,8 @@ def build(profiles):
             label, sub, line = labels.row(gid, g["key"])
             key = " | ".join(g["key"])
             rows.append(make_row(gid, gid + " | " + key, [g], label, sub, line, None,
-                                 [prefixes[gid] + key] if gid in prefixes else []))
+                                 [prefixes[gid] + key] if gid in prefixes else [],
+                                 mixes.get(g["key"][0]) if gid == "district" else None))
         if rest:
             rows.append(make_row(gid, gid + " | rest", rest, "All other %s" % ("people hurt" if fg_by[gid]["unit"] == "person" else "crashes"),
                                  "%d smaller groups%s" % (len(rest), ", and those not stated" if any(any(v in CATCH for v in g["key"]) for g in rest) else ""),
@@ -642,6 +658,13 @@ svg text { font-family: inherit; }
 .fx dt { color:var(--muted); } .fx dd { margin:0; }
 .where { display:grid; grid-template-columns: 1fr 90px; gap:3px 8px; font-size:12.5px; align-items:center; }
 .where .bar i { height:10px; background:var(--teal); }
+.mix { display:grid; grid-template-columns: 1fr 56px 58px; gap:4px 8px; font-size:12.5px; align-items:center; }
+.mix small { display:block; color:var(--muted); font-size:11.5px; }
+.mix .track { position:relative; height:10px; }
+.mix .track i { position:absolute; left:0; top:0; height:10px; background:var(--teal); }
+.mix .track u { position:absolute; top:-3px; width:2px; height:16px; background:var(--ink); }
+.mix .v { font-variant-numeric:tabular-nums; white-space:nowrap; }
+.mix .v span { display:block; color:var(--muted); font-size:11.5px; }
 /* ranking */
 .rk { width:100%; border-collapse:collapse; }
 .rk td { padding:3px 6px 3px 0; vertical-align:middle; }
@@ -894,6 +917,9 @@ function groupDetail(g) {
   const stackWho = { area: 'every area-wide fix', corner: 'every corner and corridor fix', both: 'every area-wide, corner and corridor fix' }[S.stack];
   h += `<p class="note" style="margin:4px 0 0">Stacked, ${stackWho}: ${num(sv)} fewer ${S.measure === 'h' ? 'people hurt' : 'killed or seriously hurt'} a year here${base ? ', ' + pct(sv / base) + ' of this group' : ''}.</p>`;
   if (g.where) h += `<h3>Where These Crashes Happen</h3><p class="note" style="margin:0 0 4px">Places overlap, so the shares add to more than 100%.</p><div class="where">` + g.where.map(([l, v]) => `<span>${esc(l)}</span><div class="bar"><i style="width:${Math.round((v || 0) * 50)}px"></i><b>${pct(v)}</b></div>`).join('') + `</div>`;
+  if (g.mix) { const mx = Math.max(...g.mix.map(m => Math.max(m[2] || 0, m[3]))), w = v => (56 * (v || 0) / mx).toFixed(1);
+    h += `<h3>Crash Mix</h3><p class="note" style="margin:0 0 4px">Share of the district's people hurt in the biggest kinds of crash. The dark line is the citywide share.</p><div class="mix">`
+      + g.mix.map(([l, s, v, c]) => `<span>${esc(l)}${s ? `<small>${esc(s)}</small>` : ''}</span><div class="track"><i style="width:${w(v)}px"></i><u style="left:${w(c)}px"></u></div><span class="v"><b>${pct(v)}</b><span>city ${pct(c)}</span></span>`).join('') + `</div>`; }
   const mv = x => S.measure === 'k' ? x.k[1] : (x.h ? x.h[1] : -1);
   const on = g.fixes.filter(x => !x.why).sort((a, b) => mv(b) - mv(a)), off = g.fixes.filter(x => x.why);
   h += `<h3>Fixes That Reach It, Most ${S.measure === 'k' ? 'Killed or Seriously Hurt' : 'People Hurt'} Avoided First</h3>`;

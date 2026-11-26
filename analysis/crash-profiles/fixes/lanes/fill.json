@@ -3584,6 +3584,7 @@
      "group": "place | high (LTS 3-4) | arterial | midblock",
      "mechanism": "Four-to-three conversions on high-stress segments.",
      "target_share": "1,816 hurt / 199 KSI people (grouping_alternatives, place grouping); the effect applies only to the crash type it targets, so multiply by that type's share at these places, not computed per place",
+     "status": "removed as a separate entry: the record's family entries (vehicle, pedestrian and bicycle) reach these crashes on multi-lane arterials and collectors, and fix-groups.json's place grouping counts the road diet on them crash by crash",
      "effect": {
       "low": 9,
       "mid": -19,
@@ -3598,6 +3599,7 @@
      "group": "place | high (LTS 3-4) | collector | midblock",
      "mechanism": "Four-to-three conversions on high-stress segments.",
      "target_share": "2,247 hurt / 222 KSI people (grouping_alternatives, place grouping); the effect applies only to the crash type it targets, so multiply by that type's share at these places, not computed per place",
+     "status": "removed as a separate entry: the record's family entries (vehicle, pedestrian and bicycle) reach these crashes on multi-lane arterials and collectors, and fix-groups.json's place grouping counts the road diet on them crash by crash",
      "effect": {
       "low": 9,
       "mid": -19,
@@ -3606,6 +3608,66 @@
       "applies_to": "All crashes on the corridor. Mid: FHWA-HRT-10-053 urban sites in California and Washington, CMF 0.81. High: CMF 2841, Persaud 2010, 0.53, 5 stars. Low (worse): SF's own 16 corridors, 1.09 (0.99 to 1.19) and 1.01 (0.92 to 1.09) with traffic volumes",
       "source": "CMF Clearinghouse 2841; FHWA-HRT-10-053 and SF corridors via methods note",
       "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "One lane each way removes the passing lane, so the fastest drivers can't overtake and speeds fall for people biking in the same lanes.",
+     "target_share": "Going straight 465 of 579 people hurt, 75 of 97 KSI (size_families, 2018 to 2025); only on multi-lane arterials and collectors, and not solo falls (reach.json)",
+     "effect": {
+      "low": 9,
+      "mid": -19,
+      "high": -47,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes on the corridor, every crash type and road user, so crashes with someone biking too: FHWA-HRT-10-053 counts total crashes with no crash type split, CMF 2841 is coded crash type All, and SF's 16 corridors count every injury crash. Mid: FHWA-HRT-10-053 urban sites in California and Washington, CMF 0.81. High: CMF 2841, Persaud 2010, 0.53, 5 stars. Low (worse): SF's own 16 corridors, 1.09 (0.99 to 1.19) and 1.01 (0.92 to 1.09) with traffic volumes",
+      "source": "CMF Clearinghouse 2841 (crash type All, severity All); FHWA-HRT-10-053 (total crashes, per road diet evidence note); SF corridors via methods note",
+      "tag": "[primary — read 2026-11-26]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "lane change, merge, pass, entering",
+     "mechanism": "With one through lane each way drivers stop changing lanes across the path of someone biking.",
+     "target_share": "Lane change, merge, pass 137 of 1,118 people hurt, 10 of 93 KSI (size_families, 2018 to 2025); only on multi-lane arterials and collectors, and not solo falls (reach.json)",
+     "effect": {
+      "low": 9,
+      "mid": -19,
+      "high": -47,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes on the corridor, every crash type and road user, so crashes with someone biking too: FHWA-HRT-10-053 counts total crashes with no crash type split, CMF 2841 is coded crash type All, and SF's 16 corridors count every injury crash. Mid: FHWA-HRT-10-053 urban sites in California and Washington, CMF 0.81. High: CMF 2841, Persaud 2010, 0.53, 5 stars. Low (worse): SF's own 16 corridors, 1.09 (0.99 to 1.19) and 1.01 (0.92 to 1.09) with traffic volumes",
+      "source": "CMF Clearinghouse 2841 (crash type All, severity All); FHWA-HRT-10-053 (total crashes, per road diet evidence note); SF corridors via methods note",
+      "tag": "[primary — read 2026-11-26]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "A left-turning driver crosses one oncoming lane, not two, so a bike in the far lane cannot be hidden behind a car in the nearer one.",
+     "target_share": "Left or U-turn 303 of 509 people hurt, 22 of 42 KSI (size_families, 2018 to 2025); only on multi-lane arterials and collectors, and not solo falls (reach.json)",
+     "effect": {
+      "low": 9,
+      "mid": -19,
+      "high": -47,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes on the corridor, every crash type and road user, so crashes with someone biking too: FHWA-HRT-10-053 counts total crashes with no crash type split, CMF 2841 is coded crash type All, and SF's 16 corridors count every injury crash. Mid: FHWA-HRT-10-053 urban sites in California and Washington, CMF 0.81. High: CMF 2841, Persaud 2010, 0.53, 5 stars. Low (worse): SF's own 16 corridors, 1.09 (0.99 to 1.19) and 1.01 (0.92 to 1.09) with traffic volumes",
+      "source": "CMF Clearinghouse 2841 (crash type All, severity All); FHWA-HRT-10-053 (total crashes, per road diet evidence note); SF corridors via methods note",
+      "tag": "[primary — read 2026-11-26]"
+     }
+    },
+    {
+     "group": "bicycle involved | red light",
+     "movement": "going straight",
+     "mechanism": "Lower corridor speeds and fewer lanes to cross reduce red-light broadsides between drivers and people biking.",
+     "target_share": "Going straight 298 of 355 people hurt, 48 of 55 KSI (size_families, 2018 to 2025); only on multi-lane arterials and collectors, and not solo falls (reach.json)",
+     "effect": {
+      "low": 9,
+      "mid": -19,
+      "high": -47,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes on the corridor, every crash type and road user, so crashes with someone biking too: FHWA-HRT-10-053 counts total crashes with no crash type split, CMF 2841 is coded crash type All, and SF's 16 corridors count every injury crash. Mid: FHWA-HRT-10-053 urban sites in California and Washington, CMF 0.81. High: CMF 2841, Persaud 2010, 0.53, 5 stars. Low (worse): SF's own 16 corridors, 1.09 (0.99 to 1.19) and 1.01 (0.92 to 1.09) with traffic volumes",
+      "source": "CMF Clearinghouse 2841 (crash type All, severity All); FHWA-HRT-10-053 (total crashes, per road diet evidence note); SF corridors via methods note",
+      "tag": "[primary — read 2026-11-26]"
      }
     }
    ],

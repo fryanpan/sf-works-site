@@ -17696,242 +17696,242 @@
     "field": "bike traffic stress (LTS)",
     "values": [
      {
-      "injury_crashes": 3698,
-      "ksi_crashes": 324,
-      "ksi_people": 348,
-      "people_injured": 4460,
-      "ksi_rate": 0.0876,
-      "share_of_injury_crashes": 0.1555,
-      "share_of_ksi_people": 0.1454,
-      "share_of_people_injured": 0.1496,
-      "over_representation": 0.94,
+      "injury_crashes": 2625,
+      "ksi_crashes": 228,
+      "ksi_people": 246,
+      "people_injured": 3148,
+      "ksi_rate": 0.0869,
+      "share_of_injury_crashes": 0.1104,
+      "share_of_ksi_people": 0.1028,
+      "share_of_people_injured": 0.1056,
+      "over_representation": 0.93,
       "value": "1",
       "surface_street_miles": 597.1,
       "share_of_surface_street_miles": 0.5304,
       "by_victim_role": {
        "people_injured": {
-        "Bicyclist": 583,
-        "Driver": 1963,
-        "Other": 203,
-        "Passenger": 778,
-        "Pedestrian": 933
+        "Bicyclist": 408,
+        "Driver": 1431,
+        "Other": 146,
+        "Passenger": 561,
+        "Pedestrian": 602
        },
        "ksi_people": {
-        "Bicyclist": 75,
-        "Driver": 106,
-        "Other": 20,
-        "Passenger": 19,
-        "Pedestrian": 128
+        "Bicyclist": 54,
+        "Driver": 78,
+        "Other": 15,
+        "Passenger": 14,
+        "Pedestrian": 85
        }
       },
       "by_mode": {
        "bicycle involved": {
-        "people_injured": 595,
-        "ksi_people": 75
+        "people_injured": 418,
+        "ksi_people": 54
        },
        "not stated": {
         "people_injured": 2,
         "ksi_people": 0
        },
        "pedestrian involved": {
-        "people_injured": 974,
-        "ksi_people": 132
+        "people_injured": 622,
+        "ksi_people": 88
        },
        "vehicles only": {
-        "people_injured": 2889,
-        "ksi_people": 141
+        "people_injured": 2106,
+        "ksi_people": 104
        }
       }
      },
      {
-      "injury_crashes": 919,
-      "ksi_crashes": 73,
-      "ksi_people": 79,
-      "people_injured": 1082,
-      "ksi_rate": 0.0794,
-      "share_of_injury_crashes": 0.0386,
-      "share_of_ksi_people": 0.033,
-      "share_of_people_injured": 0.0363,
-      "over_representation": 0.85,
+      "injury_crashes": 746,
+      "ksi_crashes": 62,
+      "ksi_people": 69,
+      "people_injured": 884,
+      "ksi_rate": 0.0831,
+      "share_of_injury_crashes": 0.0314,
+      "share_of_ksi_people": 0.0288,
+      "share_of_people_injured": 0.0297,
+      "over_representation": 0.92,
       "value": "2",
       "surface_street_miles": 86.3,
       "share_of_surface_street_miles": 0.0767,
       "by_victim_role": {
        "people_injured": {
-        "Bicyclist": 180,
-        "Driver": 399,
-        "Other": 54,
-        "Passenger": 176,
-        "Pedestrian": 273
+        "Bicyclist": 127,
+        "Driver": 348,
+        "Other": 42,
+        "Passenger": 141,
+        "Pedestrian": 226
        },
        "ksi_people": {
-        "Bicyclist": 12,
-        "Driver": 29,
-        "Other": 3,
-        "Passenger": 4,
-        "Pedestrian": 31
+        "Bicyclist": 7,
+        "Driver": 24,
+        "Other": 5,
+        "Passenger": 5,
+        "Pedestrian": 28
        }
       },
       "by_mode": {
        "bicycle involved": {
-        "people_injured": 182,
-        "ksi_people": 12
+        "people_injured": 128,
+        "ksi_people": 7
        },
        "not stated": {
         "people_injured": 0,
         "ksi_people": 0
        },
        "pedestrian involved": {
-        "people_injured": 285,
-        "ksi_people": 33
+        "people_injured": 235,
+        "ksi_people": 30
        },
        "vehicles only": {
-        "people_injured": 615,
-        "ksi_people": 34
+        "people_injured": 521,
+        "ksi_people": 32
        }
       }
      },
      {
-      "injury_crashes": 3352,
-      "ksi_crashes": 291,
-      "ksi_people": 311,
-      "people_injured": 4016,
-      "ksi_rate": 0.0868,
-      "share_of_injury_crashes": 0.141,
-      "share_of_ksi_people": 0.13,
-      "share_of_people_injured": 0.1347,
-      "over_representation": 0.92,
+      "injury_crashes": 3016,
+      "ksi_crashes": 261,
+      "ksi_people": 277,
+      "people_injured": 3582,
+      "ksi_rate": 0.0865,
+      "share_of_injury_crashes": 0.1268,
+      "share_of_ksi_people": 0.1158,
+      "share_of_people_injured": 0.1202,
+      "over_representation": 0.91,
       "value": "3",
       "surface_street_miles": 118.9,
       "share_of_surface_street_miles": 0.1056,
       "by_victim_role": {
        "people_injured": {
-        "Bicyclist": 762,
-        "Driver": 1467,
-        "Other": 268,
-        "Passenger": 628,
-        "Pedestrian": 891
+        "Bicyclist": 688,
+        "Driver": 1318,
+        "Other": 219,
+        "Passenger": 555,
+        "Pedestrian": 802
        },
        "ksi_people": {
-        "Bicyclist": 69,
-        "Driver": 74,
-        "Other": 33,
-        "Passenger": 16,
-        "Pedestrian": 119
+        "Bicyclist": 67,
+        "Driver": 63,
+        "Other": 28,
+        "Passenger": 13,
+        "Pedestrian": 106
        }
       },
       "by_mode": {
        "bicycle involved": {
-        "people_injured": 774,
-        "ksi_people": 69
+        "people_injured": 696,
+        "ksi_people": 67
        },
        "not stated": {
         "people_injured": 1,
         "ksi_people": 1
        },
        "pedestrian involved": {
-        "people_injured": 934,
-        "ksi_people": 123
+        "people_injured": 849,
+        "ksi_people": 111
        },
        "vehicles only": {
-        "people_injured": 2307,
-        "ksi_people": 118
+        "people_injured": 2036,
+        "ksi_people": 98
        }
       }
      },
      {
-      "injury_crashes": 15310,
-      "ksi_crashes": 1476,
-      "ksi_people": 1605,
-      "people_injured": 19653,
-      "ksi_rate": 0.0964,
-      "share_of_injury_crashes": 0.6439,
-      "share_of_ksi_people": 0.6707,
-      "share_of_people_injured": 0.6593,
-      "over_representation": 1.04,
+      "injury_crashes": 17121,
+      "ksi_crashes": 1630,
+      "ksi_people": 1770,
+      "people_injured": 21875,
+      "ksi_rate": 0.0952,
+      "share_of_injury_crashes": 0.72,
+      "share_of_ksi_people": 0.7397,
+      "share_of_people_injured": 0.7338,
+      "over_representation": 1.03,
       "value": "4",
       "surface_street_miles": 289.1,
       "share_of_surface_street_miles": 0.2568,
       "by_victim_role": {
        "people_injured": {
-        "Bicyclist": 2062,
-        "Driver": 9308,
-        "Other": 883,
-        "Passenger": 3894,
-        "Pedestrian": 3506
+        "Bicyclist": 2402,
+        "Driver": 10183,
+        "Other": 1009,
+        "Passenger": 4264,
+        "Pedestrian": 4017
        },
        "ksi_people": {
-        "Bicyclist": 242,
-        "Driver": 518,
-        "Other": 124,
-        "Passenger": 127,
-        "Pedestrian": 594
+        "Bicyclist": 273,
+        "Driver": 570,
+        "Other": 133,
+        "Passenger": 136,
+        "Pedestrian": 658
        }
       },
       "by_mode": {
        "bicycle involved": {
-        "people_injured": 2105,
-        "ksi_people": 244
+        "people_injured": 2451,
+        "ksi_people": 275
        },
        "not stated": {
         "people_injured": 11,
         "ksi_people": 6
        },
        "pedestrian involved": {
-        "people_injured": 3700,
-        "ksi_people": 612
+        "people_injured": 4232,
+        "ksi_people": 676
        },
        "vehicles only": {
-        "people_injured": 13837,
-        "ksi_people": 743
+        "people_injured": 15181,
+        "ksi_people": 813
        }
       }
      },
      {
-      "injury_crashes": 499,
-      "ksi_crashes": 45,
-      "ksi_people": 50,
-      "people_injured": 600,
-      "ksi_rate": 0.0902,
-      "share_of_injury_crashes": 0.021,
-      "share_of_ksi_people": 0.0209,
-      "share_of_people_injured": 0.0201,
-      "over_representation": 1.0,
+      "injury_crashes": 270,
+      "ksi_crashes": 28,
+      "ksi_people": 31,
+      "people_injured": 322,
+      "ksi_rate": 0.1037,
+      "share_of_injury_crashes": 0.0114,
+      "share_of_ksi_people": 0.013,
+      "share_of_people_injured": 0.0108,
+      "over_representation": 1.14,
       "value": "unknown",
       "surface_street_miles": 34.4,
       "share_of_surface_street_miles": 0.0306,
       "by_victim_role": {
        "people_injured": {
-        "Bicyclist": 82,
-        "Driver": 301,
-        "Other": 30,
-        "Passenger": 99,
-        "Pedestrian": 88
+        "Bicyclist": 44,
+        "Driver": 158,
+        "Other": 22,
+        "Passenger": 54,
+        "Pedestrian": 44
        },
        "ksi_people": {
-        "Bicyclist": 11,
-        "Driver": 21,
-        "Other": 2,
-        "Passenger": 4,
-        "Pedestrian": 12
+        "Bicyclist": 8,
+        "Driver": 13,
+        "Other": 1,
+        "Passenger": 2,
+        "Pedestrian": 7
        }
       },
       "by_mode": {
        "bicycle involved": {
-        "people_injured": 83,
-        "ksi_people": 11
+        "people_injured": 46,
+        "ksi_people": 8
        },
        "not stated": {
         "people_injured": 0,
         "ksi_people": 0
        },
        "pedestrian involved": {
-        "people_injured": 91,
-        "ksi_people": 12
+        "people_injured": 46,
+        "ksi_people": 7
        },
        "vehicles only": {
-        "people_injured": 426,
-        "ksi_people": 27
+        "people_injured": 230,
+        "ksi_people": 16
        }
       }
      }
@@ -18285,31 +18285,31 @@
    }
   ],
   "high_stress_total": {
-   "injury_crashes": 18662,
-   "ksi_crashes": 1767,
-   "ksi_people": 1916,
-   "people_injured": 23669,
-   "ksi_rate": 0.0947,
-   "share_of_injury_crashes": 0.7848,
-   "share_of_ksi_people": 0.8007,
-   "share_of_people_injured": 0.794,
-   "over_representation": 1.02,
+   "injury_crashes": 20137,
+   "ksi_crashes": 1891,
+   "ksi_people": 2047,
+   "people_injured": 25457,
+   "ksi_rate": 0.0939,
+   "share_of_injury_crashes": 0.8469,
+   "share_of_ksi_people": 0.8554,
+   "share_of_people_injured": 0.8539,
+   "over_representation": 1.01,
    "surface_street_miles": 408.0,
    "share_of_surface_street_miles": 0.3624,
    "by_victim_role": {
     "people_injured": {
-     "Bicyclist": 2824,
-     "Driver": 10775,
-     "Other": 1151,
-     "Passenger": 4522,
-     "Pedestrian": 4397
+     "Bicyclist": 3090,
+     "Driver": 11501,
+     "Other": 1228,
+     "Passenger": 4819,
+     "Pedestrian": 4819
     },
     "ksi_people": {
-     "Bicyclist": 311,
-     "Driver": 592,
-     "Other": 157,
-     "Passenger": 143,
-     "Pedestrian": 713
+     "Bicyclist": 340,
+     "Driver": 633,
+     "Other": 161,
+     "Passenger": 149,
+     "Pedestrian": 764
     }
    }
   },
@@ -18321,8 +18321,8 @@
    },
    "node_primary_rd": {
     "people_injured": 18070,
-    "people_injured_high_stress": 14710,
-    "people_injured_stress_known": 17853
+    "people_injured_high_stress": 16118,
+    "people_injured_stress_known": 18060
    },
    "none": {
     "people_injured": 51,
@@ -18331,8 +18331,8 @@
    },
    "segment": {
     "people_injured": 11498,
-    "people_injured_high_stress": 8820,
-    "people_injured_stress_known": 11173
+    "people_injured_high_stress": 9200,
+    "people_injured_stress_known": 11244
    }
   },
   "high_stress_by_street_class": {
@@ -18340,13 +18340,13 @@
     "surface_street_miles": 118.7,
     "high_stress_miles": 118.5,
     "people_injured": 8504,
-    "people_injured_high_stress": 8503
+    "people_injured_high_stress": 8504
    },
    "collector": {
     "surface_street_miles": 173.1,
     "high_stress_miles": 151.5,
     "people_injured": 9620,
-    "people_injured_high_stress": 9270
+    "people_injured_high_stress": 9357
    },
    "major": {
     "surface_street_miles": 19.8,
@@ -18358,7 +18358,7 @@
     "surface_street_miles": 814.3,
     "high_stress_miles": 118.1,
     "people_injured": 9822,
-    "people_injured_high_stress": 4200
+    "people_injured_high_stress": 5871
    }
   },
   "check_traffic_category_matches_crash_column": {
@@ -20518,7 +20518,7 @@
     "mode": "all other families",
     "violation": "",
     "catch_all": false,
-    "groups": 31,
+    "groups": 36,
     "people_injured": 4501,
     "share_of_people_injured": 0.151,
     "ksi_people": 470,
@@ -23697,6 +23697,84 @@
     }
    },
    {
+    "mode": "not stated",
+    "violation": "not stated",
+    "people_injured": 5,
+    "share_of_people_injured": 0.0002,
+    "ksi_people": 3,
+    "share_of_ksi_people": 0.0013,
+    "injury_crashes": 5,
+    "ksi_crashes": 3,
+    "by_victim_role": {
+     "people_injured": {
+      "Other": 5
+     },
+     "ksi_people": {
+      "Other": 3
+     }
+    },
+    "catch_all": true,
+    "by_movement": [
+     {
+      "movement": "going straight",
+      "people_injured": 3,
+      "ksi_people": 2
+     },
+     {
+      "movement": "not stated or other",
+      "people_injured": 2,
+      "ksi_people": 1
+     }
+    ],
+    "by_at_fault_party_type": {
+     "people_injured": {
+      "Other": 5
+     },
+     "ksi_people": {
+      "Other": 3
+     }
+    }
+   },
+   {
+    "mode": "not stated",
+    "violation": "unsafe speed",
+    "people_injured": 5,
+    "share_of_people_injured": 0.0002,
+    "ksi_people": 2,
+    "share_of_ksi_people": 0.0008,
+    "injury_crashes": 5,
+    "ksi_crashes": 2,
+    "by_victim_role": {
+     "people_injured": {
+      "Other": 5
+     },
+     "ksi_people": {
+      "Other": 2
+     }
+    },
+    "catch_all": false,
+    "by_movement": [
+     {
+      "movement": "going straight",
+      "people_injured": 4,
+      "ksi_people": 2
+     },
+     {
+      "movement": "left or U-turn",
+      "people_injured": 1,
+      "ksi_people": 0
+     }
+    ],
+    "by_at_fault_party_type": {
+     "people_injured": {
+      "Other": 5
+     },
+     "ksi_people": {
+      "Other": 2
+     }
+    }
+   },
+   {
     "mode": "pedestrian involved",
     "violation": "dooring",
     "people_injured": 5,
@@ -23777,6 +23855,45 @@
     }
    },
    {
+    "mode": "not stated",
+    "violation": "unsafe turn or lane use",
+    "people_injured": 2,
+    "share_of_people_injured": 0.0001,
+    "ksi_people": 2,
+    "share_of_ksi_people": 0.0008,
+    "injury_crashes": 2,
+    "ksi_crashes": 2,
+    "by_victim_role": {
+     "people_injured": {
+      "Other": 2
+     },
+     "ksi_people": {
+      "Other": 2
+     }
+    },
+    "catch_all": false,
+    "by_movement": [
+     {
+      "movement": "going straight",
+      "people_injured": 1,
+      "ksi_people": 1
+     },
+     {
+      "movement": "wrong way or opposing lane",
+      "people_injured": 1,
+      "ksi_people": 1
+     }
+    ],
+    "by_at_fault_party_type": {
+     "people_injured": {
+      "Other": 2
+     },
+     "ksi_people": {
+      "Other": 2
+     }
+    }
+   },
+   {
     "mode": "bicycle involved",
     "violation": "phone use",
     "people_injured": 1,
@@ -23805,6 +23922,70 @@
      },
      "ksi_people": {
       "Bicyclist": 0
+     }
+    }
+   },
+   {
+    "mode": "not stated",
+    "violation": "dooring",
+    "people_injured": 1,
+    "share_of_people_injured": 0.0,
+    "ksi_people": 0,
+    "share_of_ksi_people": 0.0,
+    "injury_crashes": 1,
+    "ksi_crashes": 0,
+    "by_victim_role": {
+     "people_injured": {
+      "Bicyclist": 1
+     },
+     "ksi_people": {}
+    },
+    "catch_all": false,
+    "by_movement": [
+     {
+      "movement": "not stated or other",
+      "people_injured": 1,
+      "ksi_people": 0
+     }
+    ],
+    "by_at_fault_party_type": {
+     "people_injured": {
+      "Other": 1
+     },
+     "ksi_people": {
+      "Other": 0
+     }
+    }
+   },
+   {
+    "mode": "not stated",
+    "violation": "red light",
+    "people_injured": 1,
+    "share_of_people_injured": 0.0,
+    "ksi_people": 0,
+    "share_of_ksi_people": 0.0,
+    "injury_crashes": 1,
+    "ksi_crashes": 0,
+    "by_victim_role": {
+     "people_injured": {
+      "Driver": 1
+     },
+     "ksi_people": {}
+    },
+    "catch_all": false,
+    "by_movement": [
+     {
+      "movement": "going straight",
+      "people_injured": 1,
+      "ksi_people": 0
+     }
+    ],
+    "by_at_fault_party_type": {
+     "people_injured": {
+      "Driver": 1
+     },
+     "ksi_people": {
+      "Driver": 0
      }
     }
    }
@@ -25229,43 +25410,43 @@
    "ksi_people": 2393,
    "by_stress": {
     "high (LTS 3-4)": {
-     "people_injured": 23669,
-     "ksi_people": 1916
+     "people_injured": 25457,
+     "ksi_people": 2047
     },
     "low (LTS 1-2)": {
-     "people_injured": 5542,
-     "ksi_people": 427
+     "people_injured": 4032,
+     "ksi_people": 315
     },
     "unknown": {
-     "people_injured": 600,
-     "ksi_people": 50
+     "people_injured": 322,
+     "ksi_people": 31
     }
    },
    "share_high_stress_of_known": {
-    "people_injured": 0.8103,
-    "ksi_people": 0.8178
+    "people_injured": 0.8633,
+    "ksi_people": 0.8666
    },
-   "segment_crashes_share_high_stress_of_known": 0.7894,
+   "segment_crashes_share_high_stress_of_known": 0.8182,
    "by_street_class": [
     {
      "street_class": "arterial",
      "people_injured": 8504,
      "ksi_people": 709,
-     "people_injured_high_stress": 8503,
+     "people_injured_high_stress": 8504,
      "ksi_people_high_stress": 709
     },
     {
      "street_class": "collector",
      "people_injured": 9620,
      "ksi_people": 734,
-     "people_injured_high_stress": 9270,
-     "ksi_people_high_stress": 701
+     "people_injured_high_stress": 9357,
+     "ksi_people_high_stress": 710
     },
     {
      "street_class": "freeway",
      "people_injured": 11,
      "ksi_people": 2,
-     "people_injured_high_stress": 0,
+     "people_injured_high_stress": 1,
      "ksi_people_high_stress": 0
     },
     {
@@ -25279,28 +25460,28 @@
      "street_class": "other",
      "people_injured": 66,
      "ksi_people": 11,
-     "people_injured_high_stress": 28,
-     "ksi_people_high_stress": 6
+     "people_injured_high_stress": 45,
+     "ksi_people_high_stress": 8
     },
     {
      "street_class": "ramp",
      "people_injured": 36,
      "ksi_people": 4,
-     "people_injured_high_stress": 1,
-     "ksi_people_high_stress": 0
+     "people_injured_high_stress": 11,
+     "ksi_people_high_stress": 3
     },
     {
      "street_class": "residential",
      "people_injured": 9822,
      "ksi_people": 776,
-     "people_injured_high_stress": 4200,
-     "ksi_people_high_stress": 347
+     "people_injured_high_stress": 5871,
+     "ksi_people_high_stress": 464
     },
     {
      "street_class": "unknown",
      "people_injured": 129,
      "ksi_people": 11,
-     "people_injured_high_stress": 44,
+     "people_injured_high_stress": 45,
      "ksi_people_high_stress": 7
     }
    ]
@@ -25314,23 +25495,23 @@
     "ksi_people": 315,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 3618,
-      "ksi_people": 239
+      "people_injured": 3832,
+      "ksi_people": 255
      },
      "low (LTS 1-2)": {
-      "people_injured": 844,
-      "ksi_people": 57
+      "people_injured": 676,
+      "ksi_people": 49
      },
      "unknown": {
-      "people_injured": 101,
-      "ksi_people": 19
+      "people_injured": 55,
+      "ksi_people": 11
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.8108,
-     "ksi_people": 0.8074
+     "people_injured": 0.85,
+     "ksi_people": 0.8388
     },
-    "segment_crashes_share_high_stress_of_known": 0.8019,
+    "segment_crashes_share_high_stress_of_known": 0.8311,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25343,7 +25524,7 @@
       "street_class": "collector",
       "people_injured": 1353,
       "ksi_people": 74,
-      "people_injured_high_stress": 1299,
+      "people_injured_high_stress": 1306,
       "ksi_people_high_stress": 70
      },
      {
@@ -25364,22 +25545,22 @@
       "street_class": "other",
       "people_injured": 10,
       "ksi_people": 3,
-      "people_injured_high_stress": 7,
+      "people_injured_high_stress": 8,
       "ksi_people_high_stress": 3
      },
      {
       "street_class": "ramp",
       "people_injured": 19,
       "ksi_people": 1,
-      "people_injured_high_stress": 1,
-      "ksi_people_high_stress": 0
+      "people_injured_high_stress": 5,
+      "ksi_people_high_stress": 1
      },
      {
       "street_class": "residential",
       "people_injured": 1354,
       "ksi_people": 108,
-      "people_injured_high_stress": 491,
-      "ksi_people_high_stress": 39
+      "people_injured_high_stress": 693,
+      "ksi_people_high_stress": 54
      },
      {
       "street_class": "unknown",
@@ -25398,23 +25579,23 @@
     "ksi_people": 219,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 3419,
-      "ksi_people": 183
+      "people_injured": 3556,
+      "ksi_people": 190
      },
      "low (LTS 1-2)": {
-      "people_injured": 523,
-      "ksi_people": 33
+      "people_injured": 411,
+      "ksi_people": 26
      },
      "unknown": {
-      "people_injured": 113,
+      "people_injured": 88,
       "ksi_people": 3
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.8673,
-     "ksi_people": 0.8472
+     "people_injured": 0.8964,
+     "ksi_people": 0.8796
     },
-    "segment_crashes_share_high_stress_of_known": 0.8261,
+    "segment_crashes_share_high_stress_of_known": 0.8393,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25427,8 +25608,8 @@
       "street_class": "collector",
       "people_injured": 1433,
       "ksi_people": 63,
-      "people_injured_high_stress": 1395,
-      "ksi_people_high_stress": 60
+      "people_injured_high_stress": 1406,
+      "ksi_people_high_stress": 61
      },
      {
       "street_class": "freeway",
@@ -25462,8 +25643,8 @@
       "street_class": "residential",
       "people_injured": 1041,
       "ksi_people": 69,
-      "people_injured_high_stress": 473,
-      "ksi_people_high_stress": 38
+      "people_injured_high_stress": 599,
+      "ksi_people_high_stress": 44
      },
      {
       "street_class": "unknown",
@@ -25482,23 +25663,23 @@
     "ksi_people": 116,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 2285,
-      "ksi_people": 102
+      "people_injured": 2476,
+      "ksi_people": 107
      },
      "low (LTS 1-2)": {
-      "people_injured": 651,
-      "ksi_people": 14
+      "people_injured": 495,
+      "ksi_people": 9
      },
      "unknown": {
-      "people_injured": 54,
+      "people_injured": 19,
       "ksi_people": 0
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.7783,
-     "ksi_people": 0.8793
+     "people_injured": 0.8334,
+     "ksi_people": 0.9224
     },
-    "segment_crashes_share_high_stress_of_known": 0.7011,
+    "segment_crashes_share_high_stress_of_known": 0.7148,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25511,7 +25692,7 @@
       "street_class": "collector",
       "people_injured": 924,
       "ksi_people": 27,
-      "people_injured_high_stress": 890,
+      "people_injured_high_stress": 894,
       "ksi_people_high_stress": 25
      },
      {
@@ -25525,15 +25706,15 @@
       "street_class": "other",
       "people_injured": 9,
       "ksi_people": 0,
-      "people_injured_high_stress": 5,
+      "people_injured_high_stress": 7,
       "ksi_people_high_stress": 0
      },
      {
       "street_class": "residential",
       "people_injured": 1021,
       "ksi_people": 23,
-      "people_injured_high_stress": 358,
-      "ksi_people_high_stress": 11
+      "people_injured_high_stress": 543,
+      "ksi_people_high_stress": 16
      },
      {
       "street_class": "unknown",
@@ -25552,23 +25733,23 @@
     "ksi_people": 148,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 2649,
-      "ksi_people": 136
+      "people_injured": 2831,
+      "ksi_people": 144
      },
      "low (LTS 1-2)": {
-      "people_injured": 181,
-      "ksi_people": 12
+      "people_injured": 36,
+      "ksi_people": 4
      },
      "unknown": {
-      "people_injured": 46,
+      "people_injured": 9,
       "ksi_people": 0
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.936,
-     "ksi_people": 0.9189
+     "people_injured": 0.9874,
+     "ksi_people": 0.973
     },
-    "segment_crashes_share_high_stress_of_known": 0.9266,
+    "segment_crashes_share_high_stress_of_known": 0.9558,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25581,8 +25762,8 @@
       "street_class": "collector",
       "people_injured": 978,
       "ksi_people": 60,
-      "people_injured_high_stress": 960,
-      "ksi_people_high_stress": 58
+      "people_injured_high_stress": 970,
+      "ksi_people_high_stress": 59
      },
      {
       "street_class": "major",
@@ -25595,22 +25776,22 @@
       "street_class": "other",
       "people_injured": 1,
       "ksi_people": 0,
-      "people_injured_high_stress": 0,
+      "people_injured_high_stress": 1,
       "ksi_people_high_stress": 0
      },
      {
       "street_class": "ramp",
       "people_injured": 1,
       "ksi_people": 0,
-      "people_injured_high_stress": 0,
+      "people_injured_high_stress": 1,
       "ksi_people_high_stress": 0
      },
      {
       "street_class": "residential",
       "people_injured": 541,
       "ksi_people": 27,
-      "people_injured_high_stress": 336,
-      "ksi_people_high_stress": 17
+      "people_injured_high_stress": 506,
+      "ksi_people_high_stress": 24
      },
      {
       "street_class": "unknown",
@@ -25629,23 +25810,23 @@
     "ksi_people": 263,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 1814,
-      "ksi_people": 208
+      "people_injured": 2062,
+      "ksi_people": 230
      },
      "low (LTS 1-2)": {
-      "people_injured": 532,
-      "ksi_people": 51
+      "people_injured": 310,
+      "ksi_people": 32
      },
      "unknown": {
-      "people_injured": 31,
-      "ksi_people": 4
+      "people_injured": 5,
+      "ksi_people": 1
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.7732,
-     "ksi_people": 0.8031
+     "people_injured": 0.8693,
+     "ksi_people": 0.8779
     },
-    "segment_crashes_share_high_stress_of_known": 0.75,
+    "segment_crashes_share_high_stress_of_known": 0.854,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25658,14 +25839,14 @@
       "street_class": "collector",
       "people_injured": 767,
       "ksi_people": 88,
-      "people_injured_high_stress": 743,
-      "ksi_people_high_stress": 85
+      "people_injured_high_stress": 756,
+      "ksi_people_high_stress": 87
      },
      {
       "street_class": "freeway",
       "people_injured": 1,
       "ksi_people": 0,
-      "people_injured_high_stress": 0,
+      "people_injured_high_stress": 1,
       "ksi_people_high_stress": 0
      },
      {
@@ -25679,15 +25860,15 @@
       "street_class": "other",
       "people_injured": 11,
       "ksi_people": 3,
-      "people_injured_high_stress": 5,
-      "ksi_people_high_stress": 1
+      "people_injured_high_stress": 10,
+      "ksi_people_high_stress": 2
      },
      {
       "street_class": "residential",
       "people_injured": 984,
       "ksi_people": 95,
-      "people_injured_high_stress": 454,
-      "ksi_people_high_stress": 45
+      "people_injured_high_stress": 683,
+      "ksi_people_high_stress": 64
      },
      {
       "street_class": "unknown",
@@ -25706,23 +25887,23 @@
     "ksi_people": 319,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 1300,
-      "ksi_people": 276
+      "people_injured": 1348,
+      "ksi_people": 287
      },
      "low (LTS 1-2)": {
-      "people_injured": 234,
-      "ksi_people": 38
+      "people_injured": 196,
+      "ksi_people": 29
      },
      "unknown": {
-      "people_injured": 25,
-      "ksi_people": 5
+      "people_injured": 15,
+      "ksi_people": 3
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.8475,
-     "ksi_people": 0.879
+     "people_injured": 0.8731,
+     "ksi_people": 0.9082
     },
-    "segment_crashes_share_high_stress_of_known": 0.8342,
+    "segment_crashes_share_high_stress_of_known": 0.8451,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25735,8 +25916,8 @@
       "street_class": "collector",
       "people_injured": 571,
       "ksi_people": 105,
-      "people_injured_high_stress": 558,
-      "ksi_people_high_stress": 102
+      "people_injured_high_stress": 561,
+      "ksi_people_high_stress": 104
      },
      {
       "street_class": "major",
@@ -25763,8 +25944,8 @@
       "street_class": "residential",
       "people_injured": 500,
       "ksi_people": 80,
-      "people_injured_high_stress": 257,
-      "ksi_people_high_stress": 41
+      "people_injured_high_stress": 302,
+      "ksi_people_high_stress": 50
      },
      {
       "street_class": "unknown",
@@ -25783,23 +25964,23 @@
     "ksi_people": 22,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 1256,
+      "people_injured": 1315,
       "ksi_people": 20
      },
      "low (LTS 1-2)": {
-      "people_injured": 102,
+      "people_injured": 58,
       "ksi_people": 2
      },
      "unknown": {
-      "people_injured": 28,
+      "people_injured": 13,
       "ksi_people": 0
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.9249,
+     "people_injured": 0.9578,
      "ksi_people": 0.9091
     },
-    "segment_crashes_share_high_stress_of_known": 0.9284,
+    "segment_crashes_share_high_stress_of_known": 0.9643,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25812,7 +25993,7 @@
       "street_class": "collector",
       "people_injured": 475,
       "ksi_people": 6,
-      "people_injured_high_stress": 466,
+      "people_injured_high_stress": 469,
       "ksi_people_high_stress": 6
      },
      {
@@ -25840,14 +26021,14 @@
       "street_class": "ramp",
       "people_injured": 3,
       "ksi_people": 0,
-      "people_injured_high_stress": 0,
+      "people_injured_high_stress": 1,
       "ksi_people_high_stress": 0
      },
      {
       "street_class": "residential",
       "people_injured": 253,
       "ksi_people": 6,
-      "people_injured_high_stress": 142,
+      "people_injured_high_stress": 197,
       "ksi_people_high_stress": 4
      },
      {
@@ -25867,23 +26048,23 @@
     "ksi_people": 51,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 760,
-      "ksi_people": 31
+      "people_injured": 889,
+      "ksi_people": 38
      },
      "low (LTS 1-2)": {
-      "people_injured": 542,
-      "ksi_people": 20
+      "people_injured": 424,
+      "ksi_people": 13
      },
      "unknown": {
-      "people_injured": 11,
+      "people_injured": 0,
       "ksi_people": 0
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.5837,
-     "ksi_people": 0.6078
+     "people_injured": 0.6771,
+     "ksi_people": 0.7451
     },
-    "segment_crashes_share_high_stress_of_known": 0.6875,
+    "segment_crashes_share_high_stress_of_known": 0.775,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -25896,7 +26077,7 @@
       "street_class": "collector",
       "people_injured": 363,
       "ksi_people": 16,
-      "people_injured_high_stress": 328,
+      "people_injured_high_stress": 335,
       "ksi_people_high_stress": 13
      },
      {
@@ -25917,8 +26098,8 @@
       "street_class": "residential",
       "people_injured": 697,
       "ksi_people": 25,
-      "people_injured_high_stress": 179,
-      "ksi_people_high_stress": 8
+      "people_injured_high_stress": 301,
+      "ksi_people_high_stress": 15
      }
     ]
    },
@@ -25930,37 +26111,37 @@
     "ksi_people": 93,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 903,
-      "ksi_people": 74
+      "people_injured": 978,
+      "ksi_people": 81
      },
      "low (LTS 1-2)": {
-      "people_injured": 190,
-      "ksi_people": 15
+      "people_injured": 124,
+      "ksi_people": 10
      },
      "unknown": {
-      "people_injured": 25,
-      "ksi_people": 4
+      "people_injured": 16,
+      "ksi_people": 2
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.8262,
-     "ksi_people": 0.8315
+     "people_injured": 0.8875,
+     "ksi_people": 0.8901
     },
-    "segment_crashes_share_high_stress_of_known": 0.8078,
+    "segment_crashes_share_high_stress_of_known": 0.8354,
     "by_street_class": [
      {
       "street_class": "arterial",
       "people_injured": 284,
       "ksi_people": 31,
-      "people_injured_high_stress": 283,
+      "people_injured_high_stress": 284,
       "ksi_people_high_stress": 31
      },
      {
       "street_class": "collector",
       "people_injured": 371,
       "ksi_people": 25,
-      "people_injured_high_stress": 355,
-      "ksi_people_high_stress": 24
+      "people_injured_high_stress": 360,
+      "ksi_people_high_stress": 25
      },
      {
       "street_class": "major",
@@ -25987,8 +26168,8 @@
       "street_class": "residential",
       "people_injured": 429,
       "ksi_people": 33,
-      "people_injured_high_stress": 238,
-      "ksi_people_high_stress": 15
+      "people_injured_high_stress": 307,
+      "ksi_people_high_stress": 21
      },
      {
       "street_class": "unknown",
@@ -26007,23 +26188,23 @@
     "ksi_people": 82,
     "by_stress": {
      "high (LTS 3-4)": {
-      "people_injured": 788,
-      "ksi_people": 68
+      "people_injured": 827,
+      "ksi_people": 71
      },
      "low (LTS 1-2)": {
-      "people_injured": 174,
-      "ksi_people": 11
+      "people_injured": 143,
+      "ksi_people": 10
      },
      "unknown": {
-      "people_injured": 25,
-      "ksi_people": 3
+      "people_injured": 17,
+      "ksi_people": 1
      }
     },
     "share_high_stress_of_known": {
-     "people_injured": 0.8191,
-     "ksi_people": 0.8608
+     "people_injured": 0.8526,
+     "ksi_people": 0.8765
     },
-    "segment_crashes_share_high_stress_of_known": 0.7817,
+    "segment_crashes_share_high_stress_of_known": 0.8,
     "by_street_class": [
      {
       "street_class": "arterial",
@@ -26036,7 +26217,7 @@
       "street_class": "collector",
       "people_injured": 319,
       "ksi_people": 30,
-      "people_injured_high_stress": 309,
+      "people_injured_high_stress": 310,
       "ksi_people_high_stress": 28
      },
      {
@@ -26057,22 +26238,22 @@
       "street_class": "other",
       "people_injured": 5,
       "ksi_people": 1,
-      "people_injured_high_stress": 1,
+      "people_injured_high_stress": 2,
       "ksi_people_high_stress": 0
      },
      {
       "street_class": "ramp",
       "people_injured": 3,
       "ksi_people": 2,
-      "people_injured_high_stress": 0,
-      "ksi_people_high_stress": 0
+      "people_injured_high_stress": 3,
+      "ksi_people_high_stress": 2
      },
      {
       "street_class": "residential",
       "people_injured": 291,
       "ksi_people": 16,
-      "people_injured_high_stress": 118,
-      "ksi_people_high_stress": 7
+      "people_injured_high_stress": 152,
+      "ksi_people_high_stress": 8
      },
      {
       "street_class": "unknown",
@@ -26251,12 +26432,12 @@
     "unit": "person"
    },
    {
-    "groups": 32,
-    "share_of_people_injured_in_catch_all_groups": 0.0243,
+    "groups": 34,
+    "share_of_people_injured_in_catch_all_groups": 0.0151,
     "bars_to_80pct_of_people_injured": 6,
-    "share_in_remainder_at_chart_bars": 0.0183,
-    "share_in_catch_all_bars_at_chart_bars": 0.0092,
-    "share_left_in_catch_all_or_remainder": 0.0275,
+    "share_in_remainder_at_chart_bars": 0.0117,
+    "share_in_catch_all_bars_at_chart_bars": 0.007,
+    "share_left_in_catch_all_or_remainder": 0.0187,
     "top_bars": [
      {
       "group": [
@@ -26265,10 +26446,10 @@
        "intersection"
       ],
       "catch_all": false,
-      "people_injured": 7040,
-      "share_of_people_injured": 0.2362,
-      "ksi_people": 491,
-      "share_of_ksi_people": 0.2052
+      "people_injured": 7127,
+      "share_of_people_injured": 0.2391,
+      "ksi_people": 500,
+      "share_of_ksi_people": 0.2089
      },
      {
       "group": [
@@ -26277,22 +26458,10 @@
        "intersection"
       ],
       "catch_all": false,
-      "people_injured": 6702,
+      "people_injured": 6703,
       "share_of_people_injured": 0.2248,
       "ksi_people": 508,
       "share_of_ksi_people": 0.2123
-     },
-     {
-      "group": [
-       "low (LTS 1-2)",
-       "residential",
-       "intersection"
-      ],
-      "catch_all": false,
-      "people_injured": 3554,
-      "share_of_people_injured": 0.1192,
-      "ksi_people": 236,
-      "share_of_ksi_people": 0.0986
      },
      {
       "group": [
@@ -26301,10 +26470,10 @@
        "intersection"
       ],
       "catch_all": false,
-      "people_injured": 3059,
-      "share_of_people_injured": 0.1026,
-      "ksi_people": 225,
-      "share_of_ksi_people": 0.094
+      "people_injured": 4730,
+      "share_of_people_injured": 0.1587,
+      "ksi_people": 342,
+      "share_of_ksi_people": 0.1429
      },
      {
       "group": [
@@ -26317,6 +26486,18 @@
       "share_of_people_injured": 0.0748,
       "ksi_people": 210,
       "share_of_ksi_people": 0.0878
+     },
+     {
+      "group": [
+       "low (LTS 1-2)",
+       "residential",
+       "intersection"
+      ],
+      "catch_all": false,
+      "people_injured": 2145,
+      "share_of_people_injured": 0.072,
+      "ksi_people": 135,
+      "share_of_ksi_people": 0.0564
      },
      {
       "group": [
@@ -26382,13 +26563,13 @@
       "group": [
        "unknown",
        "residential",
-       "intersection"
+       "midblock"
       ],
       "catch_all": true,
-      "people_injured": 274,
-      "share_of_people_injured": 0.0092,
-      "ksi_people": 16,
-      "share_of_ksi_people": 0.0067
+      "people_injured": 210,
+      "share_of_people_injured": 0.007,
+      "ksi_people": 25,
+      "share_of_ksi_people": 0.0104
      },
      {
       "group": [
@@ -26397,15 +26578,15 @@
        "intersection"
       ],
       "catch_all": false,
-      "people_injured": 256,
-      "share_of_people_injured": 0.0086,
-      "ksi_people": 24,
-      "share_of_ksi_people": 0.01
+      "people_injured": 169,
+      "share_of_people_injured": 0.0057,
+      "ksi_people": 15,
+      "share_of_ksi_people": 0.0063
      }
     ],
     "remainder": {
-     "people_injured": 547,
-     "ksi_people": 62
+     "people_injured": 348,
+     "ksi_people": 37
     },
     "id": "place",
     "name": "place: traffic stress x street class x intersection or midblock",
@@ -27024,12 +27205,12 @@
     "unit": "crash"
    },
    {
-    "groups": 128,
-    "share_of_people_injured_in_catch_all_groups": 0.0862,
-    "bars_to_80pct_of_people_injured": 20,
-    "share_in_remainder_at_chart_bars": 0.3195,
-    "share_in_catch_all_bars_at_chart_bars": 0.0264,
-    "share_left_in_catch_all_or_remainder": 0.3459,
+    "groups": 124,
+    "share_of_people_injured_in_catch_all_groups": 0.0775,
+    "bars_to_80pct_of_people_injured": 18,
+    "share_in_remainder_at_chart_bars": 0.2802,
+    "share_in_catch_all_bars_at_chart_bars": 0.0277,
+    "share_left_in_catch_all_or_remainder": 0.3079,
     "top_bars": [
      {
       "group": [
@@ -27038,10 +27219,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 3618,
-      "share_of_people_injured": 0.1214,
-      "ksi_people": 239,
-      "share_of_ksi_people": 0.0999
+      "people_injured": 3832,
+      "share_of_people_injured": 0.1285,
+      "ksi_people": 255,
+      "share_of_ksi_people": 0.1066
      },
      {
       "group": [
@@ -27050,10 +27231,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 3419,
-      "share_of_people_injured": 0.1147,
-      "ksi_people": 183,
-      "share_of_ksi_people": 0.0765
+      "people_injured": 3556,
+      "share_of_people_injured": 0.1193,
+      "ksi_people": 190,
+      "share_of_ksi_people": 0.0794
      },
      {
       "group": [
@@ -27062,10 +27243,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 2649,
-      "share_of_people_injured": 0.0889,
-      "ksi_people": 136,
-      "share_of_ksi_people": 0.0568
+      "people_injured": 2831,
+      "share_of_people_injured": 0.095,
+      "ksi_people": 144,
+      "share_of_ksi_people": 0.0602
      },
      {
       "group": [
@@ -27074,10 +27255,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 2285,
-      "share_of_people_injured": 0.0766,
-      "ksi_people": 102,
-      "share_of_ksi_people": 0.0426
+      "people_injured": 2476,
+      "share_of_people_injured": 0.0831,
+      "ksi_people": 107,
+      "share_of_ksi_people": 0.0447
      },
      {
       "group": [
@@ -27086,10 +27267,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 1814,
-      "share_of_people_injured": 0.0609,
-      "ksi_people": 208,
-      "share_of_ksi_people": 0.0869
+      "people_injured": 2062,
+      "share_of_people_injured": 0.0692,
+      "ksi_people": 230,
+      "share_of_ksi_people": 0.0961
      },
      {
       "group": [
@@ -27098,10 +27279,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 1300,
-      "share_of_people_injured": 0.0436,
-      "ksi_people": 276,
-      "share_of_ksi_people": 0.1153
+      "people_injured": 1348,
+      "share_of_people_injured": 0.0452,
+      "ksi_people": 287,
+      "share_of_ksi_people": 0.1199
      },
      {
       "group": [
@@ -27110,8 +27291,8 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 1256,
-      "share_of_people_injured": 0.0421,
+      "people_injured": 1315,
+      "share_of_people_injured": 0.0441,
       "ksi_people": 20,
       "share_of_ksi_people": 0.0084
      },
@@ -27122,34 +27303,10 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 903,
-      "share_of_people_injured": 0.0303,
-      "ksi_people": 74,
-      "share_of_ksi_people": 0.0309
-     },
-     {
-      "group": [
-       "vehicles only",
-       "unsafe speed",
-       "low (LTS 1-2)"
-      ],
-      "catch_all": false,
-      "people_injured": 844,
-      "share_of_people_injured": 0.0283,
-      "ksi_people": 57,
-      "share_of_ksi_people": 0.0238
-     },
-     {
-      "group": [
-       "vehicles only",
-       "not stated",
-       "high (LTS 3-4)"
-      ],
-      "catch_all": true,
-      "people_injured": 788,
-      "share_of_people_injured": 0.0264,
-      "ksi_people": 68,
-      "share_of_ksi_people": 0.0284
+      "people_injured": 978,
+      "share_of_people_injured": 0.0328,
+      "ksi_people": 81,
+      "share_of_ksi_people": 0.0338
      },
      {
       "group": [
@@ -27158,27 +27315,51 @@
        "high (LTS 3-4)"
       ],
       "catch_all": false,
-      "people_injured": 760,
-      "share_of_people_injured": 0.0255,
-      "ksi_people": 31,
-      "share_of_ksi_people": 0.013
+      "people_injured": 889,
+      "share_of_people_injured": 0.0298,
+      "ksi_people": 38,
+      "share_of_ksi_people": 0.0159
      },
      {
       "group": [
        "vehicles only",
-       "vehicle right of way",
+       "not stated",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": true,
+      "people_injured": 827,
+      "share_of_people_injured": 0.0277,
+      "ksi_people": 71,
+      "share_of_ksi_people": 0.0297
+     },
+     {
+      "group": [
+       "vehicles only",
+       "unsafe speed",
        "low (LTS 1-2)"
       ],
       "catch_all": false,
-      "people_injured": 651,
-      "share_of_people_injured": 0.0218,
-      "ksi_people": 14,
-      "share_of_ksi_people": 0.0059
+      "people_injured": 676,
+      "share_of_people_injured": 0.0227,
+      "ksi_people": 49,
+      "share_of_ksi_people": 0.0205
+     },
+     {
+      "group": [
+       "vehicles only",
+       "DUI",
+       "high (LTS 3-4)"
+      ],
+      "catch_all": false,
+      "people_injured": 668,
+      "share_of_people_injured": 0.0224,
+      "ksi_people": 51,
+      "share_of_ksi_people": 0.0213
      }
     ],
     "remainder": {
-     "people_injured": 9524,
-     "ksi_people": 985
+     "people_injured": 8353,
+     "ksi_people": 870
     },
     "id": "what_where",
     "name": "what and where: mode x violation family x traffic stress",

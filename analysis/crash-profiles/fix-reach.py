@@ -13,7 +13,7 @@ INPUTS
                      counts (crash-profiles.py's YEARS) by collision_datetime,
                      read and grouped exactly as crash-profiles.py does (its load(), at-fault party, mode,
                      VIOLATION_FINE family and MOVEMENT_FINE movement are imported from it), so every family total
-                     here equals size_families.families in results.json; the run stops if one does not.
+                     here equals size_families.families in results.json (mode not stated included); the run stops if one does not.
   streets, signals, speed limits, Slow Streets, cameras   the street lane's held copies (street_sources.held()) of
                      DataSF 3psu-pn9h, ybh5-27n2, 3t7b-gebn, hkz3-itiu and d5uh-bk84, the copies the crash table's
                      street columns were built from.
@@ -38,7 +38,8 @@ PLACE CLASSES (one crash can be in several). A crash is at an intersection when 
   stop_controlled    unsignalized with at least one stop sign; uncontrolled: unsignalized with none.
   arterial_corner    at an intersection where an arterial or major street meets (corner_type).
   arterial, collector, residential   the crash's street_class (major counts as arterial).
-  high_stress, low_stress   the crash's most stressful block is LTS 3-4, or 1-2 (crash-profiles' crash_stress).
+  high_stress, low_stress   the most stressful block the crash touches is LTS 3-4, or 1-2 (crash-profiles'
+                     crash_stress: at an intersection, every block meeting the node, cross street included).
   multilane          the crash's blocks carry 2 or more lanes off-peak (the crash table's lanes column; on two-way
                      streets the layer counts one direction).
   hin, hin2022       on the 2024 (or 2022) HIN: a midblock crash on a HIN block, or a crash at an intersection whose
@@ -59,6 +60,10 @@ PLACE CLASSES (one crash can be in several). A crash is at an intersection when 
                      major, freeway or high-stress street). Only cells with at least CELL_MIN_MILES of street count.
   dark, daylight, dusk   the crash's lighting (Dark - *, Daylight, Dusk - Dawn).
   late_night, evening    crash-profiles' time bands, 11 pm-6 am and 7-11 pm.
+  Crash types (SUBSET_TAGS, on each crash's tags for fix-map.py and fix-groups.py, not tallied here): the at-fault
+                     party's party_type (driver_at_fault, bicyclist_at_fault, pedestrian_at_fault), type_of_collision
+                     (sideswipe, broadside, rear_end, head_on, hit_object) and solo (dph_col_grp_description Bicycle
+                     Only, or Pedestrian Only or Pedestrian-Parked Car).
   Compound classes: reach.json beside the lanes may name a place as an expression over the classes, "&" for and, "|"
   for or (and binds first), "!" for not, e.g. "signalized&hin" or "residential|collector". Each expression it names is
   computed here too, so after editing reach.json this script runs before fix-map.py.
@@ -121,6 +126,15 @@ BASE = ["intersection", "midblock", "signalized", "unsignalized", "all_way_stop"
         "arterial_corner", "arterial", "collector", "residential", "high_stress", "low_stress", "multilane", "hin",
         "hin2022", "school_zone", "slow_street", "limit20", "unposted", "camera_corridor", "ltn_cell", "dark", "daylight", "dusk",
         "late_night", "evening"]
+# Crash-type tags, not places: fix-map.py spreads a lane's text share ("Driver at fault 692 of 1,137", "Sideswipes
+# 420 of ...", "Solo 227 of 581") over the crashes it describes with them. They are on every crash's tags and in
+# place expressions, but are not tallied into fix-reach.json.
+SUBSET_TAGS = ["driver_at_fault", "bicyclist_at_fault", "pedestrian_at_fault", "sideswipe", "broadside", "rear_end",
+               "head_on", "hit_object", "solo"]
+AT_FAULT_TAG = {"Driver": "driver_at_fault", "Bicyclist": "bicyclist_at_fault", "Pedestrian": "pedestrian_at_fault"}
+COLLISION_TAG = {"Sideswipe": "sideswipe", "Broadside": "broadside", "Rear End": "rear_end", "Head-On": "head_on",
+                 "Hit Object": "hit_object"}
+SOLO = ("Bicycle Only", "Pedestrian Only or Pedestrian-Parked Car")  # dph_col_grp_description with no other road user
 
 
 def cnn(v):
@@ -138,7 +152,7 @@ def evaluate(expr, tags):
             term = term.strip()
             neg = term.startswith("!")
             name = term[1:] if neg else term
-            if name not in BASE:
+            if name not in BASE and name not in SUBSET_TAGS:
                 raise ValueError("unknown place class %r in %r" % (name, expr))
             if (name in tags) == neg:
                 ok = False
@@ -325,6 +339,7 @@ def crash_records(crashes, parties, victims):
             "mode": cp.mode(c["dph_col_grp_description"] or ""),
             "violation": cp.violation_fine(c["vz_pcf_group"], c["vz_pcf_code"]),
             "movement": cp.MOVEMENT_FINE.get(mover["move_pre_acc"], cp.OTHER_MOVE) if mover else cp.OTHER_MOVE,
+            "at_fault": af["party_type"] if af is not None else None,
         })
     return out
 
@@ -532,7 +547,7 @@ def compute():
             tags.add("arterial")
         elif sc in ("collector", "residential"):
             tags.add(sc)
-        s_lts = [lts[b] for b in blocks if b in lts]
+        s_lts = [lts[b] for b in cp.touched_blocks(c) if b in lts]  # crash-profiles' rule: any block the crash touches
         if s_lts:
             tags.add("high_stress" if max(s_lts) in ("3", "4") else "low_stress")
         else:
@@ -573,6 +588,12 @@ def compute():
             tags.add("late_night")
         elif tb == cp.TIME_BANDS[3]:
             tags.add("evening")
+        if r["at_fault"] in AT_FAULT_TAG:
+            tags.add(AT_FAULT_TAG[r["at_fault"]])
+        if c["type_of_collision"] in COLLISION_TAG:
+            tags.add(COLLISION_TAG[c["type_of_collision"]])
+        if c["dph_col_grp_description"] in SOLO:
+            tags.add("solo")
         r["tags"] = tags
 
     # Cross-check of the node classes against the police report's control_device (is a signal or sign there).
@@ -597,8 +618,6 @@ def compute():
     fam = collections.defaultdict(lambda: {"h": 0, "k": 0, "p": collections.defaultdict(lambda: [0, 0]),
                                            "m": collections.defaultdict(lambda: collections.defaultdict(lambda: [0, 0]))})
     for r in recs:
-        if r["mode"] == "not stated":
-            continue
         g = fam["%s | %s" % (r["mode"], r["violation"])]
         g["h"] += r["hurt"]
         g["k"] += r["ksi"]

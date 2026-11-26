@@ -13,12 +13,11 @@ plain SVG and HTML for the charts, so it opens with no network.
 out/crash-augment/profiles), so the page can be rebuilt on revised numbers.
 
 The three stacks come from fix-map.json's stacks (area_wide_only,
-corner_and_corridor_only, area_wide_and_corner_corridor), which carry the mid
-only. The low and high band is recounted here in the same order with the same
-sequential rule (remaining = product of 1 - share x r within each of the 45
-mode x family groups), from each fix's stack_terms in fix-map.json. The recount must reproduce
-fix-map.json's mid at every step to 0.05 people and 0.005 KSI people, or the
-script stops: a band that does not match the line it surrounds would be wrong.
+corner_and_corridor_only, area_wide_and_corner_corridor). Each step carries
+the mid and the low and high band, which fix-map.py counts crash by crash in
+the same order with every effect at its low and at its high. The script stops
+if a step's band does not hold its mid: a band that does not surround its line
+would be wrong.
 
 The Crash Groups view offers every grouping in fix-groups.json. A grouping with
 more than GROUP_ROWS + 1 groups shows its GROUP_ROWS biggest named groups (no
@@ -374,32 +373,6 @@ def source_link(fix, src_text):
     return srcs[0]["url"]
 
 
-# ---------------------------------------------------------------- stack recount
-def stack_terms(fix):
-    """{family: [(share hurt, share KSI, effect)]}, fix-map.json's stack_terms ("all other families" already spread)."""
-    return {g: [(t["share_hurt"], t["share_ksi"], t["effect"]) for t in ts] for g, ts in (fix.get("stack_terms") or {}).items()}
-
-
-def recount(order, fixes, fam, q):
-    rem = {g: [1.0, 1.0] for g in fam}
-    out, ch, ck = [], 0.0, 0.0
-    for fid in order:
-        dh = dk = 0.0
-        for g, ts in stack_terms(fixes[fid]).items():
-            hy, ky = fam[g]["people_hurt"] / YEARS, fam[g]["ksi"] / YEARS
-            nh, nk = rem[g]
-            for sh, sk, e in ts:
-                nh *= 1 - (sh * e[q] if e["scope"] == "all" else 0.0)
-                nk *= 1 - sk * e[q]
-            dh += hy * (rem[g][0] - nh)
-            dk += ky * (rem[g][1] - nk)
-            rem[g] = [nh, nk]
-        ch += dh
-        ck += dk
-        out.append((ch, ck))
-    return out
-
-
 # ---------------------------------------------------------------- build data
 def build(profiles):
     global YEARS
@@ -421,20 +394,16 @@ def build(profiles):
     stacks = {}
     for key, src, label in STACKS:
         st = fm["stacks"][src]
-        order = [s["id"] for s in st["steps"]]
-        mid = recount(order, fixes, fam, "mid")
-        for s, (h, k) in zip(st["steps"], mid):
-            if abs(h - s["cumulative_hurt_avoided"]) > 0.05 or abs(k - s["cumulative_ksi_avoided"]) > 0.005:
-                raise SystemExit("fix-explorer: recount of %s step %d (%s) gives %.2f hurt, fix-map.json %.2f; band not drawn"
-                                 % (src, s["step"], s["id"], h, s["cumulative_hurt_avoided"]))
-        lo = recount(order, fixes, fam, "low")
-        hi = recount(order, fixes, fam, "high")
         steps = []
-        for s, l, h in zip(st["steps"], lo, hi):
+        for s in st["steps"]:
+            h = [s["share_of_people_hurt_avoided_low"], s["share_of_people_hurt_avoided"], s["share_of_people_hurt_avoided_high"]]
+            k = [s["share_of_ksi_avoided_low"], s["share_of_ksi_avoided"], s["share_of_ksi_avoided_high"]]
+            if not (h[0] <= h[1] + 1e-4 and h[1] <= h[2] + 1e-4 and k[0] <= k[1] + 1e-4 and k[1] <= k[2] + 1e-4):
+                raise SystemExit("fix-explorer: %s step %d (%s): the band %s / %s does not hold its mid; band not drawn"
+                                 % (src, s["step"], s["id"], h, k))
             steps.append({
                 "id": s["id"], "cost": s["cumulative_annual_cost"], "add": s["annual_cost"],
-                "h": [r3(l[0] / year_h), s["share_of_people_hurt_avoided"], r3(h[0] / year_h)],
-                "k": [r3(l[1] / year_k), s["share_of_ksi_avoided"], r3(h[1] / year_k)],
+                "h": [r3(x) for x in h], "k": [r3(x) for x in k],
                 "dh": round(s["marginal_hurt_avoided"], 1), "dk": round(s["marginal_ksi_avoided"], 2),
             })
         stacks[key] = {"label": label, "steps": steps, "not_added": st["not_added"]}
@@ -757,7 +726,7 @@ details.about ul { padding-left:16px; margin:4px 0; }
     <div class="view on" data-for="stack">
       <h2 id="stackTitle"></h2>
       <div id="stackChart"></div>
-      <p class="note">Each fix acts only on the people the fixes before it left, within each crash group, so no one is counted twice. Shaded band: the studies' low to high effects.</p>
+      <p class="note">Each fix acts only on the people the fixes before it left in each crash, so no one is counted twice. Shaded band: the studies' low to high effects.</p>
     </div>
     <div class="view" data-for="groups">
       <h2>Who Gets Hurt, a Year</h2>
@@ -996,7 +965,7 @@ function about() {
   const a = D.about;
   const h = `<p>Crashes are SF's injury crashes ${a.years[0]} to ${a.years[1]} from the Transportation Injury Mapping System and DataSF, about ${a.people_year.toLocaleString('en-US')} people hurt and ${a.ksi_year} killed or seriously hurt a year. Places come from DataSF street, signal, stop sign and High Injury Network data read ${esc(a.read)}.</p>
   <p><b>What is stacked.</b> The stacks hold the fixes that go in places: area-wide fixes and corner or corridor fixes. Citywide laws, fleet rules and programs, such as stop-as-yield for people biking, are ranked on their own but not stacked.</p>
-  <p><b>Counting rule.</b> A fix's effect comes from its studies, applied to the share of each crash group it reaches. In a stack, each fix acts only on the people the fixes before it left in each group (TRL PPR844), which assumes the effects are independent. Costs are a year: a build cost is spread over its service life, and a fix is priced at every place of its kind in SF. Dollar years are as each source gives them.</p>
+  <p><b>Counting rule.</b> A fix's effect comes from its studies, applied to the crashes it reaches. In a stack, each fix acts only on the people the fixes before it left in each crash (TRL PPR844), which assumes the effects are independent. An effect measured on deaths and serious injuries only counts those people, who are also people hurt. Where a study's reach is a share of a group that the crash data can't pick out, such as the downtown charging zone, it is spread over the whole group. Costs are a year: a build cost is spread over its service life, and a fix is priced at every place of its kind in SF. Dollar years are as each source gives them.</p>
   <p><b>The shaded band.</b> It runs from the studies' low to high effects. A fix's low end can be no effect, or even a few more crashes, so the band is cut off at zero rather than drawn below it.</p>
   <p><b>What SF's own results did.</b> Where SF has tested a fix on its own streets, its result sets the low end where the studies were more hopeful:</p>
   <ul>${a.sf.map(s => `<li>${esc(s.fixes.join('; '))}: ${esc(s.what)}. Low end set to ${s.low < 0 ? pct(-s.low) + ' more crashes' : s.low === 0 ? 'no effect' : pct(s.low) + ' fewer'}.</li>`).join('')}</ul>

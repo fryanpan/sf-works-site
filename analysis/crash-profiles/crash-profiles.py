@@ -72,7 +72,9 @@ OTHER BREAKDOWN. other_breakdown says what size.chart's last row holds: its grou
   CHART_BARS-bar chart leaves in its remainder row or in catch-all bars (crash type Other and Not Stated count as
   catch-alls there).
 
-SIZE BY FAMILY. size_families groups crashes by mode x violation family, VIOLATION_FINE: the VIOLATION groups with
+SIZE BY FAMILY. size_families groups every crash by mode x violation family (mode "not stated", the crashes whose
+  dph_col_grp_description is Unknown/Not Stated or blank, makes families of its own, so the families add to everyone
+  hurt), VIOLATION_FINE: the VIOLATION groups with
   CVC 21703 (following too closely) named, signals and signs split into red light and stop sign or other sign, bike and
   scooter rules and phone use named, and 21209 (motor vehicle in a bike lane) and 22108 put with lane use. When
   vz_pcf_group is blank or Unknown, vz_pcf_code is read if it holds a section number. Each family carries its people
@@ -96,9 +98,11 @@ GROUPING ALTERNATIVES. grouping_alternatives scores the groupings in GROUPINGS t
   the crash's posted speed limit, number of lanes, light, Equity Priority Community and heaviest vehicle weight band,
   each alone. fix-groups.py counts every fix's people avoided over the same groupings.
 
-TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block rule) are looked up in SFMTA's 2023
-  draft Bike Comfort Index layer as the repo holds it (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level
-  of traffic stress (lts_ft, lts_tf, 1 low to 4 high; the most stressful direction and block), the layer's combined
+TRAFFIC STRESS. Each crash's blocks are looked up in SFMTA's 2023 draft Bike Comfort Index layer as the repo holds it
+  (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level of traffic stress (lts_ft, lts_tf, 1 low to 4 high;
+  the most stressful direction of any block the crash touches: its street_block_cnns, the street lane's block rule,
+  and, for a crash the police code at an intersection, every active surface block meeting its node, cross street
+  included, from the held 3psu-pn9h copy; node_blocks()), the layer's combined
   bci field (as the layer gives it, which on about 2,000 blocks is the higher direction; a crash is under the Biking
   and Rolling Plan's all ages and abilities line, BCI_AAA, when any of its blocks is) and the traffic category (the
   heaviest). People hurt and KSI people by each, for all crashes and by mode, against each
@@ -472,11 +476,48 @@ def bci_band(v):
     return "over %d (all ages and abilities)" % BCI_AAA if v > BCI_AAA else "%d or under" % BCI_AAA
 
 
-def crash_stress(blocks, bci):
-    """A crash's (lts, bci band, traffic) over its blocks: the most stressful LTS, the least comfortable score, the
-    heaviest traffic; "unknown" where no block has a value."""
+_NODE_BLOCKS = []
+
+
+def node_blocks():
+    """{intersection CNN: [block CNNs meeting there]} from the held 3psu-pn9h copy: active blocks (all, if none is
+    active), surface streets only when any meet there, the street lane's at_node() rule."""
+    if not _NODE_BLOCKS:
+        segs = collections.defaultdict(list)
+        for r in street_sources.held("streets").rows:
+            c = str(r.get("cnn") or "").split(".")[0]
+            if not c:
+                continue
+            row = (c, r.get("active") in (True, "True", "true"), ROAD_CLASS.get(r.get("classcode")) or "other")
+            for n in (r.get("f_node_cnn"), r.get("t_node_cnn")):
+                n = str(n or "").split(".")[0]
+                if n:
+                    segs[n].append(row)
+        out = {}
+        for n, rows in segs.items():
+            act = [x for x in rows if x[1]] or rows
+            surf = [x for x in act if x[2] not in ("freeway", "ramp")] or act
+            out[n] = sorted({x[0] for x in surf})
+        _NODE_BLOCKS.append(out)
+    return _NODE_BLOCKS[0]
+
+
+def touched_blocks(c):
+    """The blocks a crash touches: its street_block_cnns and, when the police code it at an intersection, every block
+    meeting its node (cnn_intrsctn_fkey), so the cross street is read too."""
+    blocks = [b for b in c["street_block_cnns"].split(";") if b]
+    if c["intersection"] != "Midblock > 20ft":
+        node = str(c["cnn_intrsctn_fkey"] or "").split(".")[0]
+        blocks = sorted(set(blocks) | set(node_blocks().get(node, ())))
+    return blocks
+
+
+def crash_stress(blocks, bci, touched=None):
+    """A crash's (lts, bci band, traffic): the most stressful LTS over the blocks it touches (touched, else blocks),
+    and the least comfortable score and heaviest traffic over its street_block_cnns blocks, the ones the crash
+    table's bci_traffic_category column reads; "unknown" where no block has a value."""
     vals = [bci[b] for b in blocks if b in bci]
-    lts = [v[0] for v in vals if v[0]]
+    lts = [bci[b][0] for b in (blocks if touched is None else touched) if b in bci and bci[b][0]]
     bands = [v[1] for v in vals if v[1]]
     traffic = [v[2] for v in vals if v[2]]
     return (max(lts) if lts else "unknown",
@@ -517,7 +558,8 @@ def crash_records(crashes, parties, victims, bci):
             how["pedestrian_at_fault_used_vehicle_movement"] += 1
         other = first_driver(ps, exclude=mover) if mover is not None else None
         heavy = c["heaviest_vehicle_weight_lb"]
-        lts, bci_score, traffic = crash_stress([b for b in c["street_block_cnns"].split(";") if b], bci)
+        lts, bci_score, traffic = crash_stress([b for b in c["street_block_cnns"].split(";") if b], bci,
+                                               touched_blocks(c))
         recs.append({
             "case": cid,
             "at-fault party type": (af["party_type"] or "not stated") if af is not None else "no party",
@@ -1163,7 +1205,7 @@ def main():
         return sorted(({"movement": m, "people_injured": sum(r["injured"] for r in sub),
                         "ksi_people": sum(r["people"] for r in sub)} for m, sub in g.items()),
                       key=lambda t: (-t["people_injured"], -t["ksi_people"], t["movement"]))
-    g_fam = grouped([r for r in recs if r["mode"] != "not stated"], lambda r: (r["mode"], r["violation (fine)"]))
+    g_fam = grouped(recs, lambda r: (r["mode"], r["violation (fine)"]))  # mode not stated included, so families add to everyone
     families = size_list(g_fam, ("mode", "violation"))
     def by_at_fault(rs):
         hurt, ksi = collections.Counter(), collections.Counter()

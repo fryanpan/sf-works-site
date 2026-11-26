@@ -1,0 +1,1965 @@
+{
+ "lane": "speed: vehicle-only unsafe speed, following too closely and rear-end, loss of control (hit object, overturned, ran off road), plus pedestrian and bicycle crashes coded unsafe speed or following too closely",
+ "effect_convention": "low, mid, high are % fewer of the crashes or people named in applies_to; low is the least favourable plausible value; null where not retrieved",
+ "groups_note": {
+  "vehicles only | unsafe speed": [
+   4611,
+   298
+  ],
+  "vehicles only | following too closely": [
+   1398,
+   20
+  ],
+  "bicycle involved | unsafe speed": [
+   581,
+   94
+  ],
+  "pedestrian involved | unsafe speed": [
+   434,
+   88
+  ],
+  "bicycle involved | following too closely": [
+   80,
+   6
+  ],
+  "pedestrian involved | following too closely": [
+   13,
+   1
+  ],
+  "vehicles only | crash type Rear End": [
+   4583,
+   107
+  ],
+  "vehicles only | crash type Hit Object": [
+   914,
+   130
+  ],
+  "vehicles only | crash type Overturned": [
+   438,
+   43
+  ],
+  "unit": "[people hurt 2017 to 2024, KSI people]",
+  "source": "out/crash-augment/profiles/results.json"
+ },
+ "methods": {
+  "power_model_for_speed_credit": {
+   "rule": "Share of crashes after = (V_after / V_before) ^ exponent, on mean speed, for a fix that changes mean speed and nothing else about the street.",
+   "urban_exponents": {
+    "killed": 3.8,
+    "seriously_injured": 2.6,
+    "slightly_injured": 1.4,
+    "property_damage": 1.0
+   },
+   "basis": "Trafikverket 2026 Table 42 (tätort column): TØI 1034/2009 exponents levelled to Elvik et al. 2019, which gives 5.5 for killed and 3.9 for seriously injured across all roads; Elvik et al. 2019 exponential model coefficients 0.08 (killed), 0.06 (serious), 0.04 (slight) per km/h.",
+   "tag": "[primary — read 2026-11-25]",
+   "older_urban_values": "Elvik 2009 urban and residential: injury crashes 1.2 (0.7 to 1.7), injured people 1.4 (0.4 to 2.4), serious injuries 2.0 (0.8 to 3.2), deaths 3.0 (-0.5 to 6.5), from Frith and Tate Table 4 [secondary — read 2026-11-25]. Cameron and Elvik 2010: about 1.6 for death and serious injury on urban arterials [secondary — verify, per repo note].",
+   "worked_example": "A mean speed cut from 25 to 22 mph gives (22/25)^2.6 = 0.72, so about 28% fewer seriously injured people, and (22/25)^1.4 = 0.84, 16% fewer slightly injured [inference — mine].",
+   "how_much_mean_speed_moves": "Signs alone: Norway found mean speed falls about 2.5 km/h for a 10 km/h limit cut and 7.5 km/h for 20 km/h (Danish Effekthåndbog 5.4) [primary — read 2026-11-25]; SF's nine corridors showed no change in median speed (SFMTA 2024, per repo note). Humps: 40.8 to 28.0 km/h (Danish 4.5). Feedback signs: about 5 km/h (Danish 4.3). Cameras: SF reports the share 10+ mph over (-84%), not mean speed, so SF's cameras can't be credited through the power model until mean speeds are published.",
+   "caveats": "Apply only to the crashes on the streets whose speed changed. Our SF cross-section could not estimate a speed exponent (-1.6 to +3.4) because residential speeds span only 20 to 29 mph (2026-11-18 note). Elvik et al. 2019's own urban table is unretrieved; the Trafikverket levelling is the read we have."
+  }
+ },
+ "fixes": [
+  {
+   "id": "lower-limit-signs-only",
+   "name": "Lower posted limit street by street, signs only (25 to 20 mph business and safety corridors)",
+   "lever": "speed management",
+   "how_it_works": "A lower posted limit moves mean speed a little, and the power model turns that into fewer and less severe crashes.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Lower mean speed cuts crash energy and stopping distance for the straight-through speeding driver.",
+     "target_share": "only the share on streets SF can lower under AB 43 (business streets of four lanes or fewer, safety corridors); not computed. Ceiling: going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": 0,
+      "mid": 5,
+      "high": 10,
+      "unit": "% fewer injury crashes or casualties on the changed streets",
+      "applies_to": "all injury crashes on the re-signed streets, not the whole group",
+      "source": "Edinburgh signed 20 mph: casualties -10% (0% to 19%) against streets kept at 30 (Kokka 2024); England 12 schemes: no significant change (DfT 2018); SF 20 mph blocks: no drop, crashes ran 10% to 20% above expected after correcting the method's lean; SFMTA's nine corridors: median speed unchanged. Mid is our midpoint.",
+      "tag": "[secondary — verify] [inference — mine]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower impact speed sharply lowers a struck pedestrian's risk of death.",
+     "target_share": "same eligibility screen, not computed. going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 5,
+      "high": 10,
+      "unit": "% fewer injury crashes on the changed streets",
+      "applies_to": "all injury crashes on re-signed streets",
+      "source": "as above; Toronto 40 to 30 km/h: pedestrian collisions -28% against -7% on comparison streets, gap could be chance (Fridman 2020, per repo note)",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Same as for vehicles, where the driver was the one speeding.",
+     "target_share": "going straight 465 of 581 people hurt (73 of 94 KSI); 554 of the 581 hurt are bicyclists. The at-fault party (driver or bicyclist) is not split in results.json, so a driver-speed fix reaches only the driver-at-fault share, unknown",
+     "effect": {
+      "low": 0,
+      "mid": 5,
+      "high": 10,
+      "unit": "% fewer injury crashes on the changed streets",
+      "applies_to": "all injury crashes on re-signed streets",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "corridor of about 0.6 mile",
+   "cost": {
+    "low": 18750,
+    "high": 27000,
+    "year": 2025,
+    "unit": "per corridor of about 0.6 mile, signs and labour",
+    "source": "SFMTA Board item 2025-09-16, Funding Impact, via the Lower Speed Limits What We Know doc",
+    "tag": "[secondary — verify, per repo note read 2026-10-31]"
+   },
+   "life_years": null,
+   "sf_now": "112 corridors lowered with signs (79 business corridors, 48.5 mi; 33 safety corridors, 59.2 mi); 20 mph school zones adopted 2026-07-21 for 230+ schools by 2028. 77% of High Injury Network miles still at 25 mph or more.",
+   "sf_evidence": "SFMTA 2024: median speed unchanged and 85th percentile up 1 mph on nine measured corridors, no comparison streets. Our test on 821 dated 20 mph blocks: injury crashes 1.27 (1.20 to 1.34) raw, still 10% to 20% above expected after correcting for the method's 6% to 16% upward lean; no drop seen. SF BLA 2016: limit cuts on nine arterials did not cut injury collisions.",
+   "who_decides": "SFMTA Board (Charter §8A.102(b)(7)); state law (Vehicle Code §22358.7, §22358.9, AB 43) sets which streets qualify.",
+   "evidence_grade": "low: controlled studies of signs-only limits find 0 to about 10% and SF's own blocks show no drop; mean-speed change is the weak link.",
+   "sources": [
+    {
+     "title": "SF Works, Lower Speed Limits: What We Know (2026-10-31), research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "url": "research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    },
+    {
+     "title": "SF Works, How to Tell Whether Each SF Safety Fix Worked (road diets, 20 mph blocks, quick-builds), research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[DataSF ubvf-ztfx, 3t7b-gebn — queried 2026-11-24, per repo note]"
+    },
+    {
+     "title": "SF Works uncertainty log, data/evidence/studies.json (rows norway-handbook-3-12-humps, grundy-2009-policy-humps, kokka-2024, tilahun-2023-chicago, li-graham-2016-speed-cameras, pa-ucl-2004-uk-cameras, wilson-2010-cochrane-speed-cameras, allsop-2013-gb-fixed-cameras, elvik-2009-speed, wales-20mph-2025, cappellari-weber-2022-nyc-volume, hughes-2020-covid)",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify, graded rows from earlier sessions]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Potensmodellen, Tabell 42: power-model exponents levelled to Elvik et al. 2019 (urban: killed 3.8, seriously injured 2.6, slightly injured 1.4)",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "citywide-default-20mph",
+   "name": "Citywide 20 mph default limit (state law), as in Wales, Bologna and Paris",
+   "lever": "policy and law",
+   "how_it_works": "A default limit on every unposted street resets the norm network-wide, so mean speed drops on many more miles than corridor-by-corridor signs reach.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Lower mean speed on residential and collector streets.",
+     "target_share": "on residential street class 1,357 of 4,611 people hurt (96 of 298 KSI), from family_stress by_street_class; collectors 1,382 (74 KSI) where many are posted, so not all would change",
+     "effect": {
+      "low": 0,
+      "mid": 11,
+      "high": 24,
+      "unit": "% fewer injury crashes or casualties on the roads that changed",
+      "applies_to": "casualties on roads moved to the default; all modes",
+      "source": "Bologna 30 km/h, first year: injuries -11% against Italy +0.5%, crashes -13%, deaths about half (ETSC, city figures); Wales: casualties on 20 and 30 mph roads -23.8% against England -5.2% (Senedd Research, secondary); Toronto: drop not significantly bigger than comparator (low end).",
+      "tag": "[primary — read 2026-11-25] (Bologna); [secondary — verify] (Wales, Toronto)"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower impact speeds, the largest gain in deaths (Bologna: no pedestrian deaths in year one).",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 11,
+      "high": 24,
+      "unit": "% fewer casualties on changed roads",
+      "applies_to": "all casualties on changed roads",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Lower driver speeds where bikes mix with traffic.",
+     "target_share": "going straight 465 of 581 people hurt (73 of 94 KSI); 554 of the 581 hurt are bicyclists. The at-fault party (driver or bicyclist) is not split in results.json, so a driver-speed fix reaches only the driver-at-fault share, unknown",
+     "effect": {
+      "low": 0,
+      "mid": 11,
+      "high": 24,
+      "unit": "% fewer casualties on changed roads",
+      "applies_to": "all casualties on changed roads",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "citywide, unposted street miles",
+   "cost": {
+    "low": 4700000.0,
+    "high": 4700000.0,
+    "year": 2025,
+    "unit": "one-time, about 887 unposted SF miles at Wales's rate of about $5,300 a mile",
+    "source": "Welsh Government explanatory memorandum, converted in the Lower Speed Limits What We Know doc",
+    "tag": "[secondary — verify, per repo note read 2026-10-31]"
+   },
+   "life_years": null,
+   "sf_now": "Not legal: Vehicle Code §22352 fixes the default at 25 mph. Walk SF asks for state legislation by 2028. No bill found pending in 2026.",
+   "sf_evidence": null,
+   "who_decides": "California Legislature and Governor; then SFMTA Board for signing.",
+   "evidence_grade": "low: city- and nation-wide before-after with neighbour comparisons, one or two years, no randomisation; Wales also changed police recording.",
+   "sources": [
+    {
+     "title": "ETSC, Bologna's new 30 km/h speed limits bring positive changes (first year: crashes -13%, injuries -11%, deaths halved, no pedestrian deaths; Italy +0.9%, +0.5%, +7.9%)",
+     "url": "https://etsc.eu/30-km-h-bolognas-new-speed-limits-bring-positive-changes-lower-insurance-costs-in-the-uk-greece-consulting-on-national-rollout/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works, Lower Speed Limits: What We Know (2026-10-31), research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "url": "research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    },
+    {
+     "title": "SF Works uncertainty log, data/evidence/studies.json (rows norway-handbook-3-12-humps, grundy-2009-policy-humps, kokka-2024, tilahun-2023-chicago, li-graham-2016-speed-cameras, pa-ucl-2004-uk-cameras, wilson-2010-cochrane-speed-cameras, allsop-2013-gb-fixed-cameras, elvik-2009-speed, wales-20mph-2025, cappellari-weber-2022-nyc-volume, hughes-2020-covid)",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify, graded rows from earlier sessions]"
+    }
+   ]
+  },
+  {
+   "id": "vertical-calming-residential",
+   "name": "Speed humps, cushions and raised tables on residential streets (engineered 20 mph streets)",
+   "lever": "speed management",
+   "how_it_works": "Vertical deflection every few hundred feet physically caps speed, and drivers also divert off the street.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Caps through-speed on residential blocks where speeding drivers crash.",
+     "target_share": "on residential street class 1,357 of 4,611 people hurt (96 of 298 KSI), from family_stress by_street_class",
+     "effect": {
+      "low": 13,
+      "mid": 23,
+      "high": 32,
+      "unit": "% fewer injury crashes on treated streets",
+      "applies_to": "injury crashes on the treated residential street, mid-block mostly; KSI crashes -31% (-16% to -43%)",
+      "source": "TØI handbook 3.12, meta-analysis of eleven controlled studies: injury crashes -23% (-13% to -32%), KSI crashes -31% (-16% to -43%); Danish Effekthåndbog 4.5: 16 evaluations of humps, injury crashes -30% as mean speed fell 40.8 to 28.0 km/h; London 20 mph zones with devices: KSI -46% (39% to 54%).",
+      "tag": "[primary — read 2026-11-25] (Danish handbook); [secondary — verify] (TØI 3.12 and Grundy, per studies.json)"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower impact speeds; the Danish evaluations found pedestrian crashes fell slightly more (-34%).",
+     "target_share": "residential share of the group not split in results.json; going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 30,
+      "high": 36,
+      "unit": "% fewer pedestrian injury crashes on treated streets",
+      "applies_to": "pedestrian crashes on treated streets",
+      "source": "Danish Effekthåndbog 4.5: pedestrian crashes -34% with humps, -36% at raised crossings; NYC humps (Roberts 2025): pedestrian injuries OR 0.91 (0.80 to 1.02), no clear change, sets the low.",
+      "tag": "[primary — read 2026-11-25] (Danish); [secondary — verify] (NYC, per repo note)"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Slower drivers where bikes share the street; Danish evaluations show a smaller cut for bicycle crashes (-18%).",
+     "target_share": "going straight 465 of 581 people hurt (73 of 94 KSI); 554 of the 581 hurt are bicyclists. The at-fault party (driver or bicyclist) is not split in results.json, so a driver-speed fix reaches only the driver-at-fault share, unknown",
+     "effect": {
+      "low": 0,
+      "mid": 18,
+      "high": 18,
+      "unit": "% fewer bicycle injury crashes on treated streets",
+      "applies_to": "bicycle crashes on treated streets",
+      "source": "Danish Effekthåndbog 4.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "device (about 14.2 a treated mile in SF)",
+   "cost": {
+    "low": 28600,
+    "high": 37200,
+    "year": 2025,
+    "unit": "per device, all phases, SF application program; $406,000 to $528,000 a treated mile at 14.2 devices a mile",
+    "source": "SFCTA Resolution 26-06 FY21 and FY22 request forms",
+    "tag": "[secondary — verify, per repo note read 2026-10-31]"
+   },
+   "life_years": null,
+   "sf_now": "Application-based residential calming program, paused; 1,672 finished units on 118 miles; one proactive pilot in Visitacion Valley and Portola at about $15,500 a device.",
+   "sf_evidence": "818 blocks humped 2013 to 2024 against blocks humped later: mid-block injury crashes 0.82 (0.60 to 1.20); taking out a pre-existing fall gives 1.04, range too wide to use. Pedestrian crashes 1.07 (0.53 to 2.77). 116 crashes after, too few.",
+   "who_decides": "SFMTA (City Traffic Engineer, SFMTA Board for programs); SFFD reviews vertical devices; funded by Prop L and the TNC tax via SFCTA.",
+   "evidence_grade": "moderate: meta-analyses of controlled studies agree on 20% to 30% fewer injury crashes; SF's own result is consistent but within chance.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works uncertainty log, data/evidence/studies.json (rows norway-handbook-3-12-humps, grundy-2009-policy-humps, kokka-2024, tilahun-2023-chicago, li-graham-2016-speed-cameras, pa-ucl-2004-uk-cameras, wilson-2010-cochrane-speed-cameras, allsop-2013-gb-fixed-cameras, elvik-2009-speed, wales-20mph-2025, cappellari-weber-2022-nyc-volume, hughes-2020-covid)",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify, graded rows from earlier sessions]"
+    },
+    {
+     "title": "SF Works, Did SF's street safety projects cut injury crashes? (Empirical Bayes on cameras, humps, corridors), research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[DataSF ubvf-ztfx — queried 2026-11-24, per repo note]"
+    },
+    {
+     "title": "SFCTA Resolution 26-06 (July 2025), FY21 and FY22 application-based traffic calming request forms, $28,592 and $37,169 a device, via research/notes/speed-humps-2026-10/2026-10-31-equity-costs.md",
+     "url": "https://www.sfcta.org/sites/default/files/2025-07/R26-06%20TNC%20Allocations.pdf",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    }
+   ]
+  },
+  {
+   "id": "speed-feedback-signs",
+   "name": "Radar speed feedback signs ('Your speed')",
+   "lever": "speed management",
+   "how_it_works": "A sign showing the driver's own speed prompts a slowdown near the sign.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Cuts mean speed near the sign by about 5 km/h (3 mph) on average.",
+     "target_share": "only crashes within the sign's influence area, a few hundred feet; not computed. going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": 0,
+      "mid": 11,
+      "high": 40,
+      "unit": "% fewer injury crashes on the affected stretch",
+      "applies_to": "injury crashes within the sign's influence area; killed -26%, serious -18% by power model",
+      "source": "Danish Effekthåndbog 4.3: urban mean speed -2 to -10 km/h, about 5 on average; power model gives -11% injury crashes in town; English studies found about -40% injury crashes with no regression-to-the-mean correction (sets the high). Caltrans LRSM R26: 'no nationally accepted CRFs' for regulatory feedback signs.",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower approach speeds near crossings.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 11,
+      "high": 40,
+      "unit": "% fewer injury crashes on the affected stretch",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 4.3",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "sign",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "SFMTA uses some radar signs; count and locations not checked [unretrieved — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (City Traffic Engineer).",
+   "evidence_grade": "low: speed effects well measured, crash effects mostly uncorrected before-after; credited through the power model.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "road-diet-four-to-three",
+   "name": "Road diet: remove a general travel lane (four to three with a centre turn lane, or a lane to bikes, buses or curb)",
+   "lever": "street design",
+   "how_it_works": "One lane each way stops weaving and passing, lets the slowest driver set the pace, and moves left-turners out of the through lane.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Removes the passing lane that lets speeding drivers overtake, lowering high-end speeds.",
+     "target_share": "multi-lane streets only. Ceiling on arterial and major streets 1,823 of 4,611 people hurt (120 of 298 KSI); collectors another 1,382 (74), from family_stress by_street_class; multi-lane share not computed",
+     "effect": {
+      "low": 0,
+      "mid": 19,
+      "high": 35,
+      "unit": "% fewer crashes (all severities) within the restriped section",
+      "applies_to": "crashes within the new striping; intersection crashes only where the diet adds turn lanes (LRSM rule)",
+      "source": "FHWA-HRT-10-053: 0.81 at 30 urban California and Washington sites including SF (per repo note); Caltrans LRSM R14 CRF 35% (Clearinghouse range 26% to 43%); Minnesota injury crashes 'negligible change' (CMF 875, per repo note) and SF's pooled null set the low.",
+      "tag": "[primary — read 2026-11-25] (LRSM); [secondary — verify] (FHWA, per repo note)"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Left-turners wait in the centre lane instead of the through lane, removing a main source of rear-end crashes; LRSM names rear-end as a target.",
+     "target_share": "arterial and major streets 678 of 1,398 people hurt (10 of 20 KSI), collectors 469 (6), from family_stress by_street_class",
+     "effect": {
+      "low": 0,
+      "mid": 19,
+      "high": 35,
+      "unit": "% fewer crashes within the restriped section",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Rear End",
+     "mechanism": "Same as following too closely.",
+     "target_share": "crash type Rear End, vehicles only: 4,583 people hurt, 107 KSI (grouping_alternatives hybrid grouping). Overlaps following too closely (1,398) and part of unsafe speed; the cross-tab is not in results.json",
+     "effect": {
+      "low": 0,
+      "mid": 19,
+      "high": 35,
+      "unit": "% fewer crashes within the restriped section",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "One lane to cross per direction and slower top speeds; removes the multiple-threat crash.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 19,
+      "high": 35,
+      "unit": "% fewer crashes within the restriped section",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "centerline mile",
+   "cost": {
+    "low": 100000,
+    "high": 2390000,
+    "year": 2015,
+    "unit": "per mile: $100,000 paint-only four to three (FHWA example, dollar year not stated on the table, the page uses 2015 dollars) up to $0.89M to $2.39M for an SF quick-build that gives the lane to a protected bike lane (SFMTA budgets)",
+    "source": "FHWA Incorporating On-Road Bicycle Networks into Resurfacing Projects, Table 2; data/school-budget/unit-costs.json",
+    "tag": "[secondary — verify, per repo note read 2026-10-31]"
+   },
+   "life_years": 20,
+   "sf_now": "SFMTA plans 'changing travel lanes (road diets)' on the High Injury Network; California St, South Van Ness, Masonic, Folsom, Hyde done; Franklin's lane cut dropped in 2022; Walk SF asks to redesign wide one-way streets (Harrison, 9th, 10th, Bryant, Gough, Franklin) by 2028.",
+   "sf_evidence": "16 road diet corridors pooled: 1.09 (0.99 to 1.19) for injury crashes, 1.01 (0.92 to 1.09) with traffic volumes; leaving out the 9 with other changes, 0.88 (0.76 to 1.00). California St alone fell about half against the city (61 to 28 injury crashes).",
+   "who_decides": "SFMTA Board (City Traffic Engineer); Caltrans on state highways (19th Ave, Lombard, Van Ness); SFFD review of clear width.",
+   "evidence_grade": "moderate: Empirical Bayes studies find fewer total crashes, injury effects are mixed and SF's pooled result is null.",
+   "sources": [
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works, Road Diets: What We Know and equity-costs lane (2026-10-31), research/notes/road-diets-2026-10/",
+     "url": "research/notes/road-diets-2026-10/2026-10-31-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    },
+    {
+     "title": "SF Works, How to Tell Whether Each SF Safety Fix Worked (road diets, 20 mph blocks, quick-builds), research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[DataSF ubvf-ztfx, 3t7b-gebn — queried 2026-11-24, per repo note]"
+    }
+   ]
+  },
+  {
+   "id": "lane-narrowing-same-lanes",
+   "name": "Narrower travel lanes, same number of lanes",
+   "lever": "street design",
+   "how_it_works": "Narrower lanes are meant to make drivers choose lower speeds; the crash evidence does not show it.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Possible small speed drop from a tighter cross-section.",
+     "target_share": "on high-stress (LTS 3-4) blocks 3,670 of 4,611 people hurt (225 of 298 KSI), from family_stress by_stress",
+     "effect": {
+      "low": -5,
+      "mid": 0,
+      "high": 10,
+      "unit": "% fewer crashes (all severities)",
+      "applies_to": "all crashes on the restriped street",
+      "source": "Norway handbook 1.11, 32 studies: 'no studies show that wider lanes, with total road width unchanged, generally reduce crashes' (per repo note); Danish Effekthåndbog 4.6: lanes 4.0 m or wider have 5% to 10% more crashes than 3.75 m (sets the high for narrowing very wide lanes), while widening a 2.75 to 3.5 m lane by 0.25 m cuts crashes about 5%, mostly rural (sets the low for narrowing an already narrow lane); LRSM R12 credits 25% for widening lanes under 10 ft.",
+      "tag": "[primary — read 2026-11-25] (Danish, LRSM); [secondary — verify] (Norway, per repo note)"
+     }
+    }
+   ],
+   "unit": "mile restriped",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per mile restriped",
+    "source": "About a restripe; no SF figure found.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Not tracked as a separate treatment.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (City Traffic Engineer).",
+   "evidence_grade": "very low: no consistent crash effect; Danish and Caltrans figures come mostly from rural roads.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works, Road Diets: What We Know and equity-costs lane (2026-10-31), research/notes/road-diets-2026-10/",
+     "url": "research/notes/road-diets-2026-10/2026-10-31-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    }
+   ]
+  },
+  {
+   "id": "corridor-traffic-calming-through-roads",
+   "name": "Corridor-wide calming of urban through streets (Danish trafiksanering: islands, narrowings, raised crossings and a lower limit along a whole street)",
+   "lever": "street design",
+   "how_it_works": "A package along the whole corridor lowers speeds everywhere on it, rather than at one spot.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Mean speed falls along the full length, so the speeding crash is cut wherever it happens on the street.",
+     "target_share": "collector and arterial streets with one to three lanes; on arterial and major streets 1,823 of 4,611 people hurt (120 of 298 KSI); collectors another 1,382 (74), from family_stress by_street_class",
+     "effect": {
+      "low": 0,
+      "mid": 29,
+      "high": 38,
+      "unit": "% fewer injury crashes and injuries on the treated corridor",
+      "applies_to": "all injury crashes on treated roads with 1 to 3 lanes and 50 to 70 km/h limits",
+      "source": "Danish Effekthåndbog 4.16: urban through-road calming cuts crashes and injuries 20% to 38%, assumed -29% injury crashes; it notes no well-working concepts yet for roads of four or more lanes. SF's own corridor result sets the low.",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Lower and steadier speeds shorten stopping distance.",
+     "target_share": "arterial and major streets 678 of 1,398 people hurt (10 of 20 KSI), collectors 469 (6), from family_stress by_street_class",
+     "effect": {
+      "low": 0,
+      "mid": 29,
+      "high": 38,
+      "unit": "% fewer injury crashes on treated corridor",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 4.16",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower speeds and shorter crossings.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 29,
+      "high": 38,
+      "unit": "% fewer injury crashes on treated corridor",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 4.16",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Lower driver speeds on mixed streets.",
+     "target_share": "going straight 465 of 581 people hurt (73 of 94 KSI); 554 of the 581 hurt are bicyclists. The at-fault party (driver or bicyclist) is not split in results.json, so a driver-speed fix reaches only the driver-at-fault share, unknown",
+     "effect": {
+      "low": 0,
+      "mid": 29,
+      "high": 38,
+      "unit": "% fewer injury crashes on treated corridor",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 4.16",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Hit Object",
+     "mechanism": "Lower speeds cut loss-of-control; badly placed islands and posts can add objects to hit (the handbook warns of this).",
+     "target_share": "crash type Hit Object, vehicles only: 914 people hurt, 130 KSI; within unsafe speed the ran-off-road movement is 81 hurt, 8 KSI. What object was hit is not in results.json",
+     "effect": {
+      "low": 0,
+      "mid": 29,
+      "high": 38,
+      "unit": "% fewer injury crashes on treated corridor",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 4.16",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "corridor mile",
+   "cost": {
+    "low": 400000,
+    "high": 1700000,
+    "year": 2025,
+    "unit": "per mile, SF quick-build arterial redesign (paint and posts)",
+    "source": "Lower Speed Limits What We Know doc, cost table, from SFMTA quick-build budgets",
+    "tag": "[secondary — verify, per repo note read 2026-10-31]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA quick-build corridors on the High Injury Network (34 projects 2018 to 2024; 20 paint and posts, Townsend hardened).",
+   "sf_evidence": "31 corridors, Empirical Bayes: 1.07 (1.00 to 1.15) for injury crashes, 1.02 (0.88 to 1.16) for pedestrian crashes; after the method's lean, 0.97 to 1.09. Howard and Townsend about 45% fewer under every check. SFMTA's own 2024 report: collisions -2% across 27 projects, no comparison.",
+   "who_decides": "SFMTA Board; Prop L and grants fund it.",
+   "evidence_grade": "low: the Danish figure pools before-after studies of mixed rigour, and SF's paint-and-post corridors show no change yet.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works, Did SF's street safety projects cut injury crashes? (Empirical Bayes on cameras, humps, corridors), research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[DataSF ubvf-ztfx — queried 2026-11-24, per repo note]"
+    },
+    {
+     "title": "SF Works, How to Tell Whether Each SF Safety Fix Worked (road diets, 20 mph blocks, quick-builds), research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[DataSF ubvf-ztfx, 3t7b-gebn — queried 2026-11-24, per repo note]"
+    },
+    {
+     "title": "SF Works, Lower Speed Limits: What We Know (2026-10-31), research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "url": "research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    }
+   ]
+  },
+  {
+   "id": "raised-median-urban",
+   "name": "Raised (curbed) median on wide city streets",
+   "lever": "street design",
+   "how_it_works": "A curbed median separates opposing traffic, narrows each side and blocks mid-block left turns.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "wrong way or opposing lane",
+     "mechanism": "Stops a speeding driver crossing into oncoming traffic.",
+     "target_share": "wrong way or opposing lane 53 of 4,611 people hurt (6 KSI); straight-through share it reaches on multi-lane streets not computed",
+     "effect": {
+      "low": 20,
+      "mid": 40,
+      "high": 40,
+      "unit": "% fewer injury crashes on the street",
+      "applies_to": "injury crashes on urban streets with one or two lanes each way; marked median -20%, curbed -40%",
+      "source": "Danish Effekthåndbog 4.8; Caltrans LRSM SI11 credits 25% on signal approaches and R09 15% for a flush median.",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Hit Object",
+     "mechanism": "Can add an object to hit; the net effect on hit-object crashes is not measured.",
+     "target_share": "crash type Hit Object, vehicles only: 914 people hurt, 130 KSI; within unsafe speed the ran-off-road movement is 81 hurt, 8 KSI. What object was hit is not in results.json",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% fewer hit-object crashes",
+      "applies_to": "not measured",
+      "source": "No source split by crash type.",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "mile",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 20,
+   "sf_now": "Medians exist on many arterials; no program to add them was found.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA and Public Works; SFFD review.",
+   "evidence_grade": "low: handbook value from older before-after studies; target in SF's speed group is small.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "high-friction-surface",
+   "name": "High-friction surface treatment on hills, curves and wet-crash spots",
+   "lever": "street design",
+   "how_it_works": "A rougher surface shortens braking distance, mostly in the wet.",
+   "groups": [
+    {
+     "group": "vehicles only | crash type Hit Object",
+     "mechanism": "Fewer skids into objects on curves and descents.",
+     "target_share": "only wet-road or skid crashes at treated spots; share not in results.json. crash type Hit Object, vehicles only: 914 people hurt, 130 KSI; within unsafe speed the ran-off-road movement is 81 hurt, 8 KSI. What object was hit is not in results.json",
+     "effect": {
+      "low": 16,
+      "mid": 40,
+      "high": 55,
+      "unit": "% fewer crashes at the treated spot",
+      "applies_to": "Danish: wet-road crashes -40%, all crashes -16% when friction rises 0.1 from 0.5 or below (motorways); Caltrans LRSM SI10 / R21 CRF 55% for all crashes at the spot",
+      "source": "Danish Effekthåndbog 4.4; Caltrans LRSM",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Overturned",
+     "mechanism": "Same as hit object.",
+     "target_share": "crash type Overturned, vehicles only: 438 people hurt, 43 KSI (grouping_alternatives hybrid with movement)",
+     "effect": {
+      "low": 16,
+      "mid": 40,
+      "high": 55,
+      "unit": "% fewer crashes at the treated spot",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Shorter stopping distance at signal approaches.",
+     "target_share": "approaches with low friction only; not computed",
+     "effect": {
+      "low": 16,
+      "mid": 40,
+      "high": 55,
+      "unit": "% fewer crashes at the treated spot",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "treated spot or approach",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "Not found in SF programs [unretrieved — verify].",
+   "sf_evidence": null,
+   "who_decides": "Public Works (paving) with SFMTA.",
+   "evidence_grade": "low: evidence from highways and rural curves; SF has no friction survey linking to crashes.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "fixed-object-removal-breakaway",
+   "name": "Remove, move or make breakaway the fixed objects at the curb (poles, posts, cabinets)",
+   "lever": "street design",
+   "how_it_works": "A car that leaves the lane hits nothing rigid, or something that gives way.",
+   "groups": [
+    {
+     "group": "vehicles only | crash type Hit Object",
+     "mechanism": "Fewer rigid objects in the path of a run-off crash.",
+     "target_share": "crash type Hit Object, vehicles only: 914 people hurt, 130 KSI; within unsafe speed the ran-off-road movement is 81 hurt, 8 KSI. What object was hit is not in results.json",
+     "effect": {
+      "low": null,
+      "mid": 30,
+      "high": 35,
+      "unit": "% fewer single-vehicle run-off crashes",
+      "applies_to": "single-vehicle run-off-road crashes; Danish figure is for a 6 m clear zone on rural 80 km/h roads, not urban streets",
+      "source": "Danish Effekthåndbog 4.14: -30% (5.9% per metre of clear zone, rural); Caltrans LRSM R02 CRF 35%. No urban study found; the low is missing.",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "ran off road",
+     "mechanism": "Same.",
+     "target_share": "ran off road 81 of 4,611 people hurt, 8 KSI",
+     "effect": {
+      "low": null,
+      "mid": 30,
+      "high": 35,
+      "unit": "% fewer single-vehicle run-off crashes",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "object or block",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 20,
+   "sf_now": "Not a program in SF; what SF hit-object crashes hit (parked cars, poles, buildings) is not known.",
+   "sf_evidence": null,
+   "who_decides": "Public Works, SFPUC (streetlights), PG&E and utilities, SFMTA (signal poles).",
+   "evidence_grade": "very low for SF: rural evidence, unknown object mix in the city.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, grouping_alternatives, level1_within_mode)",
+     "url": "out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25, per results.json]"
+    }
+   ]
+  },
+  {
+   "id": "street-lighting-upgrade",
+   "name": "Street lighting upgrades at night-crash locations",
+   "lever": "street design",
+   "how_it_works": "Better light helps drivers see edges, objects and people in time.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Helps the late-night speeding driver see the road; the light itself can raise speed about 3%.",
+     "target_share": "only dark-condition crashes on poorly lit blocks; the lighting field is not in results.json. Ceiling: late-night (11 pm-6 am) going straight 664 people hurt, 80 KSI (KSI rate 12.8% against 6.2% for vehicles-only crashes; the one vehicle-only cell that passed the severity test), from level1_within_mode",
+     "effect": {
+      "low": 0,
+      "mid": 25,
+      "high": 30,
+      "unit": "% fewer injury crashes in darkness",
+      "applies_to": "injury crashes in darkness on roads that were unlit before (killed -65%, serious -40%); SF streets are mostly lit, so an upgrade likely gets less",
+      "source": "Danish Effekthåndbog 4.17; Caltrans LRSM R01NT segment lighting CRF 35% for night crashes. Low is ours: no study of upgrading already-lit city streets opened.",
+      "tag": "[primary — read 2026-11-25] [inference — mine]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Hit Object",
+     "mechanism": "Objects visible sooner.",
+     "target_share": "dark share not computed. crash type Hit Object, vehicles only: 914 people hurt, 130 KSI; within unsafe speed the ran-off-road movement is 81 hurt, 8 KSI. What object was hit is not in results.json",
+     "effect": {
+      "low": 0,
+      "mid": 25,
+      "high": 30,
+      "unit": "% fewer injury crashes in darkness",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 4.17",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "block or intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 20,
+   "sf_now": "SFPUC owns most streetlights [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFPUC; PG&E for its poles [model knowledge — verify].",
+   "evidence_grade": "low for SF: strong evidence for lighting unlit roads, none opened for upgrades in a lit city.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "signal-progression-at-safe-speed",
+   "name": "Coordinate signals for a green wave at the target speed (20 to 25 mph), and traffic-actuated timing",
+   "lever": "signals",
+   "how_it_works": "Drivers who go faster than the progression hit reds, so speeding stops paying, and platoons stop less often.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Removes the reward for speeding between signals and cuts red-running at the end of a wave.",
+     "target_share": "crashes on coordinated signal corridors; share not computed. on arterial and major streets 1,823 of 4,611 people hurt (120 of 298 KSI); collectors another 1,382 (74), from family_stress by_street_class",
+     "effect": {
+      "low": 0,
+      "mid": 15,
+      "high": 20,
+      "unit": "% fewer injury crashes at the coordinated intersections",
+      "applies_to": "crashes in the coordinated intersections; Danish: coordination -15%, time-based to actuated -20%; LRSM SI03 CRF 15% (0% to 41%), not to side-street movements",
+      "source": "Danish Effekthåndbog 5.7; Caltrans LRSM SI03",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Fewer stops in a platoon means fewer rear-end conflicts; the Danish handbook names fewer cross and rear-end collisions.",
+     "target_share": "arterial and major streets 678 of 1,398 people hurt (10 of 20 KSI), collectors 469 (6), from family_stress by_street_class",
+     "effect": {
+      "low": 0,
+      "mid": 15,
+      "high": 20,
+      "unit": "% fewer injury crashes at the coordinated intersections",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Rear End",
+     "mechanism": "Same.",
+     "target_share": "crash type Rear End, vehicles only: 4,583 people hurt, 107 KSI (grouping_alternatives hybrid grouping). Overlaps following too closely (1,398) and part of unsafe speed; the cross-tab is not in results.json",
+     "effect": {
+      "low": 0,
+      "mid": 15,
+      "high": 20,
+      "unit": "% fewer injury crashes at coordinated intersections",
+      "applies_to": "as above",
+      "source": "Danish Effekthåndbog 5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection retimed",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per intersection",
+    "source": "LRSM: 'low-cost improvements' usually done by local crews; no SF dollar figure found.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "Which SF corridors are timed at 20 to 25 mph progression is not checked [unretrieved — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA signal shop (City Traffic Engineer).",
+   "evidence_grade": "low: handbook values from older studies; effect depends on how timing is set.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023 (sections 4.3, 4.4, 4.5, 4.6, 4.8, 4.14, 4.16, 4.17, 5.4, 5.7)",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "left-turn-lane-and-phase",
+   "name": "Left-turn lane and protected phase on approaches where left-turners stop the through lane",
+   "lever": "signals",
+   "how_it_works": "Queued left-turners leave the through lane, so the driver behind is not surprised by a stopped car.",
+   "groups": [
+    {
+     "group": "vehicles only | following too closely",
+     "movement": "stopped or slowing",
+     "mechanism": "Removes sudden stops in the through lane.",
+     "target_share": "rear-end crashes behind a left-turner; share not in results.json. Group all 1,398 people hurt (20 KSI); going straight 1,168 (17), stopped or slowing 138 (1); 1,280 (19 KSI) on high-stress blocks, from size_families and family_stress",
+     "effect": {
+      "low": 30,
+      "mid": 55,
+      "high": 55,
+      "unit": "% fewer crashes at the intersection",
+      "applies_to": "all crashes at the intersection; LRSM SI05 (lane and phase where neither existed) 55%, SI06 (protected phase, lane exists) 30%",
+      "source": "Caltrans LRSM Table 1",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Rear End",
+     "mechanism": "Same.",
+     "target_share": "crash type Rear End, vehicles only: 4,583 people hurt, 107 KSI (grouping_alternatives hybrid grouping). Overlaps following too closely (1,398) and part of unsafe speed; the cross-tab is not in results.json",
+     "effect": {
+      "low": 30,
+      "mid": 55,
+      "high": 55,
+      "unit": "% fewer crashes at the intersection",
+      "applies_to": "as above",
+      "source": "Caltrans LRSM Table 1",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 20,
+   "sf_now": "Left-turn treatments are mainly in the turning lanes of this table; this row covers their rear-end side only.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (City Traffic Engineer).",
+   "evidence_grade": "low: US CRF list without a rear-end split; turning-lane lanes hold the stronger evidence.",
+   "sources": [
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "fixed-speed-cameras",
+   "name": "Fixed speed safety cameras (SF's 33 locations under AB 645)",
+   "lever": "automated enforcement",
+   "how_it_works": "A ticket for every driver 11 mph or more over the limit at the site removes the worst speeding there.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Cuts the share going 10+ mph over at the site by about 84% in SF.",
+     "target_share": "crashes within about two blocks of a camera on the camera street; share of the group there not computed. going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": 0,
+      "mid": 12,
+      "high": 20,
+      "unit": "% fewer injury crashes within two blocks on the camera street",
+      "applies_to": "injury crashes near the camera; KSI crashes -15% (1% to 29%) in Chicago, about -4.5% after matching in England",
+      "source": "SF Empirical Bayes 0.88 (0.77 to 1.00), 0.91 (0.77 to 1.08) after the matched-street check; TØI handbook 8.2: other injury crashes -19%, fatal -47% at the site; Høye 2014: total crashes about -20%, fatal -51%, falling with distance; Caltrans LRSM R32 CRF 20%; Tilahun Chicago KSI -15% (1% to 29%); Li and Graham England KSI about -4.5%, n.s.",
+      "tag": "[primary — read 2026-11-25] (Høye abstract, LRSM); [secondary — verify] (TØI 8.2, Chicago, England, SF, per repo notes)"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower speeds at crossings near the camera.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 20,
+      "high": 27,
+      "unit": "% fewer crashes involving someone walking within two blocks",
+      "applies_to": "pedestrian crashes near the camera",
+      "source": "SF: 0.73 (0.50 to 0.95), 0.80 (0.53 to 1.20) after the matched check; NYC school-zone cameras: pedestrians hurt -13% against the same streets farther away.",
+      "tag": "[secondary — verify], per repo note"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Same speed cut for drivers.",
+     "target_share": "going straight 465 of 581 people hurt (73 of 94 KSI); 554 of the 581 hurt are bicyclists. The at-fault party (driver or bicyclist) is not split in results.json, so a driver-speed fix reaches only the driver-at-fault share, unknown",
+     "effect": {
+      "low": 0,
+      "mid": 12,
+      "high": 20,
+      "unit": "% fewer injury crashes near the camera",
+      "applies_to": "as for vehicles",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Not a target; some drivers brake hard at cameras, effect on rear-end crashes not measured for speed cameras.",
+     "target_share": "all 1,398 people hurt (20 KSI); going straight 1,168 (17), stopped or slowing 138 (1); 1,280 (19 KSI) on high-stress blocks, from size_families and family_stress",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% fewer rear-end crashes",
+      "applies_to": "not measured",
+      "source": "No source opened splits speed-camera effects on rear-end crashes.",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "camera location",
+   "cost": {
+    "low": 85000,
+    "high": 130000,
+    "year": 2026,
+    "unit": "per location per year, all-in operating, gross of fine revenue ($2.8M to $4.3M a year for 33)",
+    "source": "SFMTA 18-month report cost components, worked in the school-trips injury goal note",
+    "tag": "[secondary — verify, per repo note read 2026-10-19]"
+   },
+   "life_years": 20,
+   "sf_now": "56 cameras at 33 locations, warnings from March 2025, fines since; 236,506 citations in 330 days; one camera (467 Bryant St) issued a fifth of all notices.",
+   "sf_evidence": "Within two blocks on camera streets, 15 to 17 months after: injury crashes 0.88 (0.77 to 1.00), pedestrian crashes 0.73 (0.50 to 0.95); after the matched-street check 0.91 (0.77 to 1.08) and 0.80 (0.53 to 1.20), within chance. KSI crashes 1.45 (0.95 to 1.94), 36 against about 25. Drivers going 10+ mph over down 84% at the sites.",
+   "who_decides": "SFMTA Board picks sites within AB 645 (Vehicle Code §22425): safety corridors, school zones, speed-contest streets, no state routes, cap of 33 systems.",
+   "evidence_grade": "moderate: many controlled studies agree on fewer injury crashes near cameras; SF's own result points the same way but is within chance and KSI did not fall.",
+   "sources": [
+    {
+     "title": "Høye 2014, Speed cameras, section control, and kangaroo jumps: a meta-analysis, Accident Analysis & Prevention 73:200-208 (abstract)",
+     "url": "https://www.saferresearch.com/node/1299",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works, Did SF's street safety projects cut injury crashes? (Empirical Bayes on cameras, humps, corridors), research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[DataSF ubvf-ztfx — queried 2026-11-24, per repo note]"
+    },
+    {
+     "title": "SF Works, Speed Cameras: What We Know (2026-10-30), research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "url": "research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-30]"
+    },
+    {
+     "title": "SFMTA Speed Safety Camera 18-month report, cost components, worked to $85,000 to $130,000 a location a year in research/notes/school-trips-2026-10/2026-10-19-injury-goal-paths.md",
+     "url": "https://www.sfmta.com/media/50300/download",
+     "tag": "[secondary — verify, per repo note read 2026-10-19]"
+    },
+    {
+     "title": "SF Works uncertainty log, data/evidence/studies.json (rows norway-handbook-3-12-humps, grundy-2009-policy-humps, kokka-2024, tilahun-2023-chicago, li-graham-2016-speed-cameras, pa-ucl-2004-uk-cameras, wilson-2010-cochrane-speed-cameras, allsop-2013-gb-fixed-cameras, elvik-2009-speed, wales-20mph-2025, cappellari-weber-2022-nyc-volume, hughes-2020-covid)",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify, graded rows from earlier sessions]"
+    }
+   ]
+  },
+  {
+   "id": "lift-camera-cap",
+   "name": "Lift AB 645's cap of 33 camera systems and extend eligible streets (state bill)",
+   "lever": "policy and law",
+   "how_it_works": "More cameras on more of the High Injury Network spread the site effect to more crashes.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Same per-site effect as fixed-speed-cameras, at more sites.",
+     "target_share": "share of the group on the High Injury Network beyond today's 33 sites; not computed. on high-stress (LTS 3-4) blocks 3,670 of 4,611 people hurt (225 of 298 KSI), from family_stress by_stress",
+     "effect": {
+      "low": 0,
+      "mid": 12,
+      "high": 20,
+      "unit": "% fewer injury crashes near each new camera",
+      "applies_to": "per site, as fixed-speed-cameras",
+      "source": "see fixed-speed-cameras",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 20,
+      "high": 27,
+      "unit": "% fewer pedestrian crashes near each new camera",
+      "applies_to": "per site",
+      "source": "see fixed-speed-cameras",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "camera location",
+   "cost": {
+    "low": 85000,
+    "high": 130000,
+    "year": 2026,
+    "unit": "per location per year, gross; SF's fines have covered costs so far",
+    "source": "as fixed-speed-cameras",
+    "tag": "[secondary — verify, per repo note read 2026-10-19]"
+   },
+   "life_years": null,
+   "sf_now": "Board of Supervisors Resolution 408-26 (2026-07-14) cites a need for at least 80 more locations (per repo note).",
+   "sf_evidence": null,
+   "who_decides": "California Legislature and Governor (Vehicle Code §22425(b)(2)(B)); then the SFMTA Board.",
+   "evidence_grade": "moderate: rests on the fixed-camera evidence; returns per site may fall as sites move to lower-crash streets.",
+   "sources": [
+    {
+     "title": "SF Works, Speed Cameras: What We Know (2026-10-30), research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "url": "research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-30]"
+    },
+    {
+     "title": "SF Works, Can SF rotate mobile speed cameras (legal check, 2026-11-12), research/notes/speed-cameras-2026-10/2026-11-12-mobile-rotation-legal-check.md",
+     "url": "research/notes/speed-cameras-2026-10/2026-11-12-mobile-rotation-legal-check.md",
+     "tag": "[secondary — verify, per repo note read 2026-11-12]"
+    }
+   ]
+  },
+  {
+   "id": "mobile-speed-cameras",
+   "name": "Mobile speed cameras rotated at random among many approved sites",
+   "lever": "automated enforcement",
+   "how_it_works": "Drivers can't learn where the camera is, so they slow down across the network, not only at fixed spots.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Network-wide deterrence, including the late-night speeder who knows the fixed sites.",
+     "target_share": "late-night (11 pm-6 am) going straight 664 people hurt, 80 KSI (KSI rate 12.8% against 6.2% for vehicles-only crashes; the one vehicle-only cell that passed the severity test), from level1_within_mode",
+     "effect": {
+      "low": 0,
+      "mid": 15,
+      "high": 29,
+      "unit": "% fewer KSI near sites in use",
+      "applies_to": "KSI near enforced sites; the 29% (urban mobile, Great Britain) does not remove regression to the mean",
+      "source": "PA Consulting and UCL 2004: urban mobile sites KSI -29.4%, injury collisions -25.2%, about 0.6 of fixed sites' effect (per studies.json); FHWA: 20% fewer fatal and injury crashes where used (per repo note). Mid is ours.",
+      "tag": "[secondary — verify] [inference — mine]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 0,
+      "mid": 15,
+      "high": 29,
+      "unit": "% fewer KSI near sites in use",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "mobile unit",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Legal from about 2027-03-20 under AB 645, but mobile units count inside the cap of 33 and sites must be on eligible streets (repo legal check, 2026-11-12).",
+   "sf_evidence": null,
+   "who_decides": "SFMTA Board within AB 645; Legislature for more units.",
+   "evidence_grade": "low: mostly uncorrected before-after; Victoria's network-wide result is second-hand.",
+   "sources": [
+    {
+     "title": "SF Works, Can SF rotate mobile speed cameras (legal check, 2026-11-12), research/notes/speed-cameras-2026-10/2026-11-12-mobile-rotation-legal-check.md",
+     "url": "research/notes/speed-cameras-2026-10/2026-11-12-mobile-rotation-legal-check.md",
+     "tag": "[secondary — verify, per repo note read 2026-11-12]"
+    },
+    {
+     "title": "SF Works, Speed Cameras: What We Know (2026-10-30), research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "url": "research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-30]"
+    },
+    {
+     "title": "SF Works uncertainty log, data/evidence/studies.json (rows norway-handbook-3-12-humps, grundy-2009-policy-humps, kokka-2024, tilahun-2023-chicago, li-graham-2016-speed-cameras, pa-ucl-2004-uk-cameras, wilson-2010-cochrane-speed-cameras, allsop-2013-gb-fixed-cameras, elvik-2009-speed, wales-20mph-2025, cappellari-weber-2022-nyc-volume, hughes-2020-covid)",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify, graded rows from earlier sessions]"
+    }
+   ]
+  },
+  {
+   "id": "section-control-corridor-cameras",
+   "name": "Corridor-wide camera enforcement: average-speed (point to point) or cameras in series along a whole street",
+   "lever": "automated enforcement",
+   "how_it_works": "Drivers are timed over a stretch, so slowing only at the camera and speeding up after (the 'kangaroo jump') no longer works.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Lower speeds along the full corridor.",
+     "target_share": "arterial corridors; on arterial and major streets 1,823 of 4,611 people hurt (120 of 298 KSI); collectors another 1,382 (74), from family_stress by_street_class",
+     "effect": {
+      "low": 12,
+      "mid": 30,
+      "high": 56,
+      "unit": "% fewer crashes on the controlled section",
+      "applies_to": "Høye 2014: total crashes -30%, KSI crashes -56% (four studies, mostly rural and motorway); Norway 14 sites: injury crashes -12% n.s., KSI -49%; Sweden cameras in series about 5 km apart: deaths -39%, KSI -19%",
+      "source": "Høye 2014 abstract; Trafikverket 2026 ATK; Norway figures from search",
+      "tag": "[primary — read 2026-11-25] (Høye, Trafikverket); [web search — verify] (Norway sites)"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Slower drivers along the corridor.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% fewer pedestrian crashes",
+      "applies_to": "no urban pedestrian result found",
+      "source": "No urban study opened.",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "corridor",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Not used; whether AB 645 allows point-to-point timing was not checked [model knowledge — verify: it does not appear to].",
+   "sf_evidence": null,
+   "who_decides": "Legislature (AB 645 terms), then SFMTA Board.",
+   "evidence_grade": "low for SF: strong effects but almost all from rural roads and motorways.",
+   "sources": [
+    {
+     "title": "Høye 2014, Speed cameras, section control, and kangaroo jumps: a meta-analysis, Accident Analysis & Prevention 73:200-208 (abstract)",
+     "url": "https://www.saferresearch.com/node/1299",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket 2026, ATK section: cameras in series about 5 km apart, deaths -39%, KSI -19%, serious -15% (n.s.), Vadeby and Howard 2022, VTI 1107, 167 sections 2003-2018, corrected for regression and trend",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 3 and countermeasure sheets SI03, SI05, SI06, SI10, R01NT, R02, R12, R14, R21, R26, R32",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "isa-city-fleet",
+   "name": "Intelligent Speed Assistance on City-owned and contracted fleets",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The vehicle reads the limit from a map and resists or warns when the driver goes over it.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "City drivers can't speed far over the limit.",
+     "target_share": "crashes with a City vehicle driver at fault; not in results.json (gap). going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": null,
+      "mid": 64,
+      "high": 64,
+      "unit": "% fewer speeding incidents (exposure measure, not crashes)",
+      "applies_to": "speeding incidents of equipped vehicles against a control group; no crash outcome",
+      "source": "NYC DCAS and Volpe: speeding incidents -64% against controls, time more than 11 mph over -64%, 500 vehicles, 894,983 miles. Crash effect not measured.",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same, for crashes with a City vehicle.",
+     "target_share": "City-fleet share not known. going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": null,
+      "mid": 64,
+      "high": 64,
+      "unit": "% fewer speeding incidents",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": 1100,
+    "high": 1420,
+    "year": 2023,
+    "unit": "per vehicle retrofit, one-time",
+    "source": "Streetsblog SF 2023 ($1,100 to $1,250) and NYC pilot early figure ($1,420, from search)",
+    "tag": "[web search — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No SF fleet ISA pilot found in search [web search — verify].",
+   "sf_evidence": null,
+   "who_decides": "Mayor and City Administrator (Fleet Management) by policy; SFMTA for its own non-revenue fleet [model knowledge — verify].",
+   "evidence_grade": "low: speed change well measured in NYC with a control group; no crash outcome, and the City's share of crashes is unknown.",
+   "sources": [
+    {
+     "title": "NYC DCAS press release 022-24, DCAS and U.S. DOT Volpe: municipal fleet speeding down 64% with Intelligent Speed Assistance",
+     "url": "https://www.nyc.gov/site/dcas/news/022-24/dcas-u-s-dot-volpe-municipal-speeding-reduction-64-new-report-intelligent",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NYC DCAS and Volpe, NYC Intelligent Speed Assistance Pilot Evaluation (October 2024), full report not opened",
+     "url": "https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/nyc-intelligent-speed-assistance-pilot-evaluation-2024-oct.pdf",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Streetsblog SF, 2023-04-20, How every government in America could stop its own cars from speeding (retrofit about $1,100 to $1,250 a vehicle)",
+     "url": "https://sf.streetsblog.org/2023/04/20/how-every-government-in-america-could-stop-its-own-cars-from-speeding",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "isa-new-vehicle-mandate",
+   "name": "Require ISA in new vehicles sold in California, or in commercial and ride-hail permits",
+   "lever": "policy and law",
+   "how_it_works": "As the fleet turns over, every car warns or limits at the speed limit.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Removes high-end speeding as the fleet turns over.",
+     "target_share": "all of the group in the long run, a few percent a year as new cars arrive. going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": 14,
+      "mid": 30,
+      "high": 59,
+      "unit": "% fewer crashes (mid: collisions; low: advisory, fatal and serious; high: mandatory dynamic, fatal)",
+      "applies_to": "the whole fleet at full adoption, no behavioural adaptation",
+      "source": "ETSC: 'reduce collisions by 30% and deaths by 20%' with mass adoption (no source study named); Carsten-based estimates: advisory fixed ISA -14% fatal and serious, dynamic mandatory -59% fatal.",
+      "tag": "[primary — read 2026-11-25] (ETSC); [web search — verify] (Carsten estimates)"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "going straight 327 of 434 people hurt (61 of 88 KSI); 392 of the 434 hurt are pedestrians, from size_families",
+     "effect": {
+      "low": 14,
+      "mid": 30,
+      "high": 59,
+      "unit": "% fewer crashes at full adoption",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Same, driver-speed share only.",
+     "target_share": "going straight 465 of 581 people hurt (73 of 94 KSI); 554 of the 581 hurt are bicyclists. The at-fault party (driver or bicyclist) is not split in results.json, so a driver-speed fix reaches only the driver-at-fault share, unknown",
+     "effect": {
+      "low": 14,
+      "mid": 30,
+      "high": 59,
+      "unit": "% fewer crashes at full adoption",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "statewide new-vehicle rule",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SB 961 (Wiener, 2024), a passive warning at 10+ mph over in new cars, was vetoed; the EU requires ISA on new vehicles [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "Legislature and Governor; NHTSA nationally; CPUC could set conditions for ride-hail and robotaxi permits [model knowledge — verify].",
+   "evidence_grade": "low: simulation estimates assuming full adoption; field trials measure speed, not crashes.",
+   "sources": [
+    {
+     "title": "ETSC briefing, Intelligent Speed Assistance (ISA), 2017: 'With mass adoption and use, ISA is expected to reduce collisions by 30% and deaths by 20%' (no source study named)",
+     "url": "https://etsc.eu/briefing-intelligent-speed-assistance-isa/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Carsten-based ISA effect estimates as summarised in search results: advisory fixed ISA -14% fatal and serious crashes, dynamic mandatory ISA -59% fatal crashes (Leeds ISA Implementation Scenarios report; fetch failed on an expired certificate)",
+     "url": "https://www.its.leeds.ac.uk/projects/isa/deliverables/Implementation%20Scenarios%20080515.pdf",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Streetsblog California, 2024-09-30: Governor vetoes SB 961, which would have required a speeding alert in new cars",
+     "url": "https://cal.streetsblog.org/2024/09/30/ding-governor-vetos-bill-that-would-have-required-alert-for-speeding-drivers",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "aeb-fleet-and-mandate",
+   "name": "Automatic emergency braking and forward collision warning (fleet purchase rule now, federal mandate later)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The car warns and brakes when it is closing on the vehicle ahead too fast.",
+   "groups": [
+    {
+     "group": "vehicles only | following too closely",
+     "movement": "going straight",
+     "mechanism": "Prevents or slows the striking car in a rear-end crash.",
+     "target_share": "rear-end striking involvements of equipped vehicles; all 1,398 people hurt (20 KSI); going straight 1,168 (17), stopped or slowing 138 (1); 1,280 (19 KSI) on high-stress blocks, from size_families and family_stress",
+     "effect": {
+      "low": 45,
+      "mid": 56,
+      "high": 56,
+      "unit": "% fewer rear-end striking crash involvements with injuries",
+      "applies_to": "rear-end crashes where the equipped car strikes; low-speed AEB -45%, FCW with AEB -56% (third-party injuries -59%)",
+      "source": "Cicchino 2017, police crash data from 22 US states 2010 to 2014",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Rear End",
+     "mechanism": "Same.",
+     "target_share": "crash type Rear End, vehicles only: 4,583 people hurt, 107 KSI (grouping_alternatives hybrid grouping). Overlaps following too closely (1,398) and part of unsafe speed; the cross-tab is not in results.json",
+     "effect": {
+      "low": 45,
+      "mid": 56,
+      "high": 56,
+      "unit": "% fewer rear-end striking crashes with injuries",
+      "applies_to": "as above",
+      "source": "Cicchino 2017",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "NHTSA's FMVSS 127 requires AEB including pedestrian detection on new light vehicles from September 2029 [model knowledge — verify]; City fleet purchase rules not checked.",
+   "sf_evidence": null,
+   "who_decides": "NHTSA for new vehicles; City Administrator for City fleet purchases; CPUC for ride-hail fleets [model knowledge — verify].",
+   "evidence_grade": "high: large controlled comparison of equipped and unequipped vehicles in police data.",
+   "sources": [
+    {
+     "title": "Cicchino 2017, Effectiveness of forward collision warning and autonomous emergency braking systems in reducing front-to-rear crash rates, Accident Analysis & Prevention 99:142-152 (IIHS abstract)",
+     "url": "https://www.iihs.org/topics/bibliography/ref/2111",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "electronic-stability-control",
+   "name": "Electronic stability control (fleet turnover)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The car brakes single wheels to stop a skid or spin.",
+   "groups": [
+    {
+     "group": "vehicles only | crash type Hit Object",
+     "mechanism": "Fewer run-off crashes into objects.",
+     "target_share": "vehicles without ESC only, a small and shrinking share; crash type Hit Object, vehicles only: 914 people hurt, 130 KSI; within unsafe speed the ran-off-road movement is 81 hurt, 8 KSI. What object was hit is not in results.json",
+     "effect": {
+      "low": 25,
+      "mid": 40,
+      "high": 40,
+      "unit": "% fewer crashes for equipped vehicles",
+      "applies_to": "single-vehicle -25%, run-off-road -40% (likely somewhat overestimated, the author says)",
+      "source": "Høye 2011, from search summary",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Overturned",
+     "mechanism": "Fewer rollovers.",
+     "target_share": "crash type Overturned, vehicles only: 438 people hurt, 43 KSI (grouping_alternatives hybrid with movement)",
+     "effect": {
+      "low": 25,
+      "mid": 50,
+      "high": 50,
+      "unit": "% fewer rollover crashes for equipped vehicles",
+      "applies_to": "rollovers -50%",
+      "source": "Høye 2011, from search summary",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Required on new US light vehicles since model year 2012 [model knowledge — verify], so the remaining gain is older cars leaving the fleet.",
+   "sf_evidence": null,
+   "who_decides": "NHTSA; no city lever beyond the City's own fleet.",
+   "evidence_grade": "moderate: meta-analysis of many studies; small remaining target.",
+   "sources": [
+    {
+     "title": "Høye 2011, The effects of Electronic Stability Control (ESC) on crashes: an update, Accident Analysis & Prevention 43 (SWOV listing; figures from search summary)",
+     "url": "https://swov.nl/en/publicatie/effects-electronic-stability-control-esc-crashes-update",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "automated-vehicles",
+   "name": "Driverless ride-hail replacing human-driven trips",
+   "lever": "vehicles and fleets",
+   "how_it_works": "A driverless car obeys the limit and keeps its distance, so speeding and following too closely drop on trips it replaces.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "No speeding on replaced trips.",
+     "target_share": "share of SF vehicle miles in driverless cars; not computed. going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": null,
+      "mid": 90,
+      "high": 94,
+      "unit": "% fewer crashes per mile against a human benchmark (company data)",
+      "applies_to": "SF: any-injury-reported crashes -90%, serious injury or worse -94% per mile for Waymo rider-only miles through June 2026",
+      "source": "Waymo Safety Impact hub",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "No tailgating on replaced trips; being struck from behind by humans is not removed.",
+     "target_share": "all 1,398 people hurt (20 KSI); going straight 1,168 (17), stopped or slowing 138 (1); 1,280 (19 KSI) on high-stress blocks, from size_families and family_stress",
+     "effect": {
+      "low": null,
+      "mid": 90,
+      "high": 94,
+      "unit": "% fewer crashes per mile (company data)",
+      "applies_to": "as above",
+      "source": "Waymo Safety Impact hub",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "vehicle mile replaced",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Waymo operates in SF; 82.4M rider-only Bay Area miles through June 2026.",
+   "sf_evidence": null,
+   "who_decides": "CPUC and California DMV; SF has no permit power [model knowledge — verify].",
+   "evidence_grade": "low: the operator's own analysis; independent replication not opened; may add vehicle miles.",
+   "sources": [
+    {
+     "title": "Waymo Safety Impact hub, rider-only miles through June 2026 (company data): SF any-injury-reported crashes -90%, serious injury or worse -94% against Waymo's human benchmark",
+     "url": "https://waymo.com/safety/impact/",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "fewer-car-miles-volume",
+   "name": "Fewer car miles on main streets (mode shift, transit, land use)",
+   "lever": "transit and land use",
+   "how_it_works": "Crashes between vehicles rise faster than traffic, so taking cars off busy streets cuts vehicle-only crashes more than proportionally.",
+   "groups": [
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Fewer vehicles in queues means fewer rear-end conflicts.",
+     "target_share": "all 1,398 people hurt (20 KSI); going straight 1,168 (17), stopped or slowing 138 (1); 1,280 (19 KSI) on high-stress blocks, from size_families and family_stress",
+     "effect": {
+      "low": 0,
+      "mid": null,
+      "high": null,
+      "unit": "elasticity of crashes to vehicle volume (not a % change)",
+      "applies_to": "multi-vehicle crashes: HSM urban arterial exponents 1.12 to 1.69; New York collisions 1.2 to 1.7 against traffic. Hughes et al.: the speed rise when congestion falls cancels about half the effect on deaths. Low is 0.",
+      "source": "HSM Chapter 12 draft and Cappellari and Weber 2022, Hughes et al. 2020, per repo notes",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Rear End",
+     "mechanism": "Same.",
+     "target_share": "crash type Rear End, vehicles only: 4,583 people hurt, 107 KSI (grouping_alternatives hybrid grouping). Overlaps following too closely (1,398) and part of unsafe speed; the cross-tab is not in results.json",
+     "effect": {
+      "low": 0,
+      "mid": null,
+      "high": null,
+      "unit": "elasticity of crashes to vehicle volume",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Ambiguous: fewer vehicles but freer flow can raise speeds.",
+     "target_share": "going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "elasticity",
+      "applies_to": "no source separates speeding crashes",
+      "source": "Hughes et al. 2020 (deaths rose with speed as traffic fell), per repo note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "vehicle mile removed",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Covered by the transit and pricing lanes.",
+   "sf_evidence": "Our SF block fit: main-street exponent 0.4 to 0.5 for KSI people of all modes under rules that don't favour the busy street (2026-11-18 note).",
+   "who_decides": "SFMTA, SFCTA, Planning, Board of Supervisors.",
+   "evidence_grade": "moderate for the volume relationship; low for the policy translating into fewer crashes, because speeds may rise.",
+   "sources": [
+    {
+     "title": "SF Works, Injuries against traffic volume, speed and vehicle size (2026-11-18), research/notes/whitepaper-2026-11/part-1/2026-11-18-injuries-volume-speed-exponents.md",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-18-injuries-volume-speed-exponents.md",
+     "tag": "[secondary — verify, per repo note read 2026-11-18]"
+    },
+    {
+     "title": "SF Works uncertainty log, data/evidence/studies.json (rows norway-handbook-3-12-humps, grundy-2009-policy-humps, kokka-2024, tilahun-2023-chicago, li-graham-2016-speed-cameras, pa-ucl-2004-uk-cameras, wilson-2010-cochrane-speed-cameras, allsop-2013-gb-fixed-cameras, elvik-2009-speed, wales-20mph-2025, cappellari-weber-2022-nyc-volume, hughes-2020-covid)",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify, graded rows from earlier sessions]"
+    }
+   ]
+  },
+  {
+   "id": "congestion-pricing",
+   "name": "Downtown congestion charge",
+   "lever": "pricing",
+   "how_it_works": "A charge cuts car trips into the zone, and fewer cars means fewer multi-vehicle crashes.",
+   "groups": [
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Fewer queued vehicles downtown.",
+     "target_share": "share of the group inside a charge zone; not computed",
+     "effect": {
+      "low": 0,
+      "mid": 38,
+      "high": 40,
+      "unit": "% fewer accidents in the zone",
+      "applies_to": "all accidents inside the London zone; no displacement found",
+      "source": "Green, Heywood and Navarro 2014 (London: -38% to -40%) against Noland's null result, per prior-work survey",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | crash type Rear End",
+     "mechanism": "Same.",
+     "target_share": "crash type Rear End, vehicles only: 4,583 people hurt, 107 KSI (grouping_alternatives hybrid grouping). Overlaps following too closely (1,398) and part of unsafe speed; the cross-tab is not in results.json",
+     "effect": {
+      "low": 0,
+      "mid": 38,
+      "high": 40,
+      "unit": "% fewer accidents in the zone",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "zone",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Studied by SFCTA (downtown pricing); needs state authority [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "Legislature for authority, then SFCTA and Board of Supervisors.",
+   "evidence_grade": "low: one city, conflicting studies.",
+   "sources": [
+    {
+     "title": "SF Works prior-work survey, Matching SF Crash Types to Fixes (2026-11-25)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md",
+     "tag": "[secondary — verify, per prior-work lane 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "speed-awareness-courses",
+   "name": "Speed awareness course in place of a fine or points",
+   "lever": "behaviour programs",
+   "how_it_works": "Drivers caught speeding take a course meant to change how they choose speed.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Fewer repeat speeding offences.",
+     "target_share": "drivers caught speeding; not linkable in SF data",
+     "effect": {
+      "low": 0,
+      "mid": 0,
+      "high": 0,
+      "unit": "% fewer injury collisions among course takers",
+      "applies_to": "England and Wales 2012 to 2017, 2.2 million drivers: reoffending down up to 23% at six months, no significant effect on injury collisions",
+      "source": "Ipsos MORI for DfT 2018, from search summary",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "course taker",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "California traffic school exists for police citations [model knowledge — verify]; AB 645 camera tickets are civil and carry no points [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "Legislature and courts.",
+   "evidence_grade": "moderate that the crash effect is near zero (large study, null result).",
+   "sources": [
+    {
+     "title": "Ipsos MORI for DfT, National Speed Awareness Course impact evaluation (2018): reoffending down up to 23% at six months, no significant effect on injury collisions (figures from search summary)",
+     "url": "https://assets.publishing.service.gov.uk/media/5af4614fe5274a25de49309d/national-speed-awareness-course-evaluation.pdf",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "police-speed-enforcement",
+   "name": "Targeted police speed enforcement on high-injury corridors",
+   "lever": "behaviour programs",
+   "how_it_works": "Visible officers stopping speeders lower speeds while and shortly after they are present.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Deterrence near patrols.",
+     "target_share": "going straight 3,658 of 4,611 people hurt (247 of 298 KSI), from size_families by_movement",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% fewer injury crashes",
+      "applies_to": "not retrieved",
+      "source": "TØI handbook chapter on police enforcement not opened this session.",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "officer-hour",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFPD made 5,008 speeding stops in 2024 and 2025, 12% of located stops in Equity Priority Communities (per repo note).",
+   "sf_evidence": null,
+   "who_decides": "SFPD and Police Commission.",
+   "evidence_grade": "very low here: no effect opened; equity concerns on the record.",
+   "sources": [
+    {
+     "title": "SF Works, Lower Speed Limits: What We Know (2026-10-31), research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "url": "research/notes/lower-speed-limits-2026-10/2026-10-31-what-we-know.mdx",
+     "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    }
+   ]
+  },
+  {
+   "id": "usage-based-insurance-telematics",
+   "name": "Usage-based insurance or fleet telematics that price or coach speeding and hard braking",
+   "lever": "behaviour programs",
+   "how_it_works": "A driver whose speed and following distance are measured pays or is coached accordingly.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Feedback and price on speeding.",
+     "target_share": "enrolled drivers only; unknown",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% fewer crashes",
+      "applies_to": "not retrieved",
+      "source": "No study opened this session.",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Feedback on hard braking and close following.",
+     "target_share": "all 1,398 people hurt (20 KSI); going straight 1,168 (17), stopped or slowing 138 (1); 1,280 (19 KSI) on high-stress blocks, from size_families and family_stress",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% fewer crashes",
+      "applies_to": "not retrieved",
+      "source": "No study opened this session.",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "enrolled vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "No cost found this session; write as missing.",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Not a City program.",
+   "sf_evidence": null,
+   "who_decides": "California Insurance Commissioner for insurance pricing rules; City Administrator for City fleet telematics [model knowledge — verify].",
+   "evidence_grade": "very low: no evidence opened.",
+   "sources": []
+  }
+ ],
+ "gaps": [
+  "Hit Object (914 hurt, 130 KSI) and Overturned (438, 43) are crash types from grouping_alternatives, not size_families families; results.json has no cross-tab of crash type by violation, by night or by what object was hit, so loss-of-control fixes can't be given a target share.",
+  "Rear End as a crash type (4,583 hurt, 107 KSI) is three times following too closely (1,398, 20); the overlap with unsafe speed and other violations is not in results.json.",
+  "Bicycle-involved unsafe speed (581, 94 KSI): 554 of those hurt are bicyclists, but the at-fault party (driver or bicyclist) is not split, so driver-speed fixes may reach only part of it; fixes for bicyclist speed (downhill design, e-bike speed rules) have no source in this lane.",
+  "No mean-speed figure for SF's cameras, so they can't be credited through the power model; SFMTA publishes only the share 10+ mph over.",
+  "Elvik et al. 2019 full text (urban exponents with intervals) unretrieved: the brage.unit.no host failed and core.ac.uk returned 403. The Trafikverket levelled table stands in.",
+  "TØI handbook online (tshandbok.no) not reachable this session: chapters on speed limits, police enforcement, ISA and section control were taken from repo notes or not at all.",
+  "Leeds ISA Implementation Scenarios report: certificate expired, not opened; ISA crash estimates are from a search summary.",
+  "No SF cost found for: a plain four-to-three restripe, radar feedback signs, signal retiming per intersection, high-friction surfacing, lighting upgrades, fixed-object removal, mobile camera units, AEB or ISA in City purchases.",
+  "City fleet and ride-hail share of SF crashes is unknown (needed to size ISA and AEB fleet rules); the parties table carries vehicle type but not ownership.",
+  "Night-time 'rest in red' signal operation for late-night speeders (the one vehicle-only cell that passed the severity test: 664 hurt, 80 KSI) has no source in this lane.",
+  "No study of upgrading street lighting on already-lit city streets was opened; the Danish figure is for newly lit roads.",
+  "Paris 30 km/h, Spain's 2021 30 km/h urban default and Pontevedra: no crash evaluation opened this session.",
+  "Motorcycle ABS and motorcyclist share of the vehicles-only speed and loss-of-control groups not checked.",
+  "Red-light cameras raise rear-end crashes (FHWA-HRT-05-049: side-impact -25%, rear-end +15%; Danish 5.7: injuries -15% but crashes only -2%); that harm to the following-too-closely group belongs on the red-light lane's records.",
+  "bicycle involved | following too closely (80 hurt, 6 KSI) and pedestrian involved | following too closely (13, 1) get no fix record: Cicchino 2017 measures car-to-car rear-end crashes only, and no source opened gives a rear-end effect for drivers striking bicyclists; lower speeds and separated bike lanes (other lanes) are the candidates.",
+  "DUI is a large share of late-night loss-of-control in most cities; it is the DUI lane's, and the overlap with unsafe speed is not in results.json."
+ ]
+}

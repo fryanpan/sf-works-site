@@ -1,0 +1,1662 @@
+{
+ "lane": "area: area-wide and community-wide programs acting on a whole neighbourhood or the whole city (LTN cells, street hierarchy, circulation plans, superblocks and car-free centres, citywide and zone speed limits, area-wide calming, camera networks, School Streets, citywide daylighting, Slow Streets, area pricing, citywide signal retiming, neighbourhood plans). Effect convention: negative is a cut; low is the smallest cut and high the largest. Place groups are written 'place | <stress> | <street class> | <intersection or midblock>' from grouping_alternatives. SF counts are people hurt / KSI people 2017-2024 from out/crash-augment/profiles/results.json. Built 2026-11-25.",
+ "fixes": [
+  {
+   "id": "ltn-cell-program-citywide",
+   "name": "Low traffic neighbourhood program: filter every residential cell ringed by main streets",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Planters, posts, diverters or one-way pairs close each cell of side streets to through driving, so every home stays reachable but no route crosses the cell, and through traffic stays on the main streets that ring it.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Through drivers, who drive the residential cut-through fastest, are removed, so the drivers left are residents going to and from home.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "mechanism": "Fewer cars crossing side-street junctions inside the cell means fewer right-of-way conflicts.",
+     "target_share": "residential 1,031 / 19 (of which not high-stress 678) = 1,031 of 3,119 hurt and 19 of 121 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "mechanism": "Side-street stop-controlled corners inside the cell lose their cut-through traffic, which is most of who runs those stops.",
+     "target_share": "residential 688 / 26 (of which not high-stress 502) = 688 of 1,323 hurt and 26 of 53 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "mechanism": "Fewer vehicles turning in and out of the cell's streets.",
+     "target_share": "residential 1,015 / 60 (of which not high-stress 565) = 1,015 of 3,974 hurt and 60 of 208 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer and slower cars turn at the cell's corners, so fewer drivers meet a person crossing.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -44,
+      "unit": "% change in injuries inside the cell (Poisson rate ratio against the rest of London)",
+      "applies_to": "Pedestrian casualties on streets inside the LTN: all modes inside -35% (-40% to -29%); pedestrians -44% (-52% to -34%), pedestrian KSI -53% (-66% to -34%). Low and mid come from LTNs of 100,000 m2 or more, the size class SF's cells fall in (median 0.257 km2): -22% (-37% to -4%). Not for streets on the cell's edge",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "People crossing mid-block or against the rules on a side street meet far fewer cars.",
+     "target_share": "residential 542 / 91 (of which not high-stress 271) = 542 of 1,649 hurt and 91 of 330 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -44,
+      "unit": "% change in injuries inside the cell (Poisson rate ratio against the rest of London)",
+      "applies_to": "Pedestrian casualties on streets inside the LTN: all modes inside -35% (-40% to -29%); pedestrians -44% (-52% to -34%), pedestrian KSI -53% (-66% to -34%). Low and mid come from LTNs of 100,000 m2 or more, the size class SF's cells fall in (median 0.257 km2): -22% (-37% to -4%). Not for streets on the cell's edge",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Fewer cars turning across people biking on the cell's streets.",
+     "target_share": "residential 443 / 33 (of which not high-stress 188) = 443 of 1,137 hurt and 33 of 90 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -22,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Cyclist casualties inside the LTN: -22% (-32% to -12%); cyclist KSI -27% (-46% to -2%). Low from the large-LTN stratum's CI",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Through drivers leave; the residents who remain drive shorter distances on these streets.",
+     "target_share": "Group total 434 hurt / 88 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed. SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -44,
+      "unit": "% change in injuries inside the cell (Poisson rate ratio against the rest of London)",
+      "applies_to": "Pedestrian casualties on streets inside the LTN: all modes inside -35% (-40% to -29%); pedestrians -44% (-52% to -34%), pedestrian KSI -53% (-66% to -34%). Low and mid come from LTNs of 100,000 m2 or more, the size class SF's cells fall in (median 0.257 km2): -22% (-37% to -4%). Not for streets on the cell's edge",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | intersection",
+     "mechanism": "Every residential street inside a cell is filtered as a set, so the whole place group inside built cells is in reach.",
+     "target_share": "3,617 hurt / 232 KSI people, 11.9% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | midblock",
+     "mechanism": "Every residential street inside a cell is filtered as a set, so the whole place group inside built cells is in reach.",
+     "target_share": "1,598 hurt / 151 KSI people, 5.2% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | residential | intersection",
+     "mechanism": "Every residential street inside a cell is filtered as a set, so the whole place group inside built cells is in reach.",
+     "target_share": "3,145 hurt / 227 KSI people, 10.3% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | residential | midblock",
+     "mechanism": "Every residential street inside a cell is filtered as a set, so the whole place group inside built cells is in reach.",
+     "target_share": "1,146 hurt / 116 KSI people, 3.8% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -22,
+      "high": -43,
+      "unit": "% change in injuries inside the cell",
+      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | collector | intersection",
+     "mechanism": "Boundary roads: the collectors and arterials ringing each cell take the displaced traffic. This is a separate effect, measured in the same study.",
+     "target_share": "7,276 hurt / 507 KSI people, 23.9% of all people hurt (grouping_alternatives, place grouping). Boundary roads are the edges of each cell; the share of this place group on cell edges is not computed.",
+     "effect": {
+      "low": 2,
+      "mid": -2,
+      "high": -5,
+      "unit": "% change in injuries on boundary roads (95% CI -5% to +2%)",
+      "applies_to": "Boundary roads around London LTNs: all injuries -2% (-5% to +2%); KSI 0% (-7% to +8%); pedestrians +4% (-3% to +11%), cyclists -6% (-12% to -1%). Boundary roads carried seven times the injuries of inside roads before, so a small % is a large count. Low is a 2% rise, the top of the CI",
+      "source": "Furlong et al. 2025, Table 2 and p. 5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "cell (neighbourhood of side streets ringed by arterials, collectors, bus streets and the HIN); SF has 152 candidate cells covering 27.5 sq mi, 677,202 residents, 8,042 side-street blocks and 587 side-street miles (out/low-traffic-cells/candidates.json)",
+   "cost": {
+    "low": 250000,
+    "high": 675000,
+    "year": 2025,
+    "unit": "per cell, build (study $250,000 plus islands at $19,000 to $40,000 and entry bans at $1,000 to $5,000; the four trial cells run $6,600 to $22,000 a side-street block). All 152 cells: $56.0M to $78.3M before bus gates (no SF price for a gate), plus about $5.2M a year upkeep at the middle rate ($2,750 to $3,250 a filter a year)",
+    "source": "research/notes/low-traffic-cells-2026-11/2026-11-15-cell-costs-and-city-counts.md; out/low-traffic-cells/candidates.json; SFCTA memos 2025-02-25 and 2025-09-03",
+    "tag": "[secondary — verify] (repo note citing SFCTA [primary — read 2026-11-09 and 2026-10-22]); totals summed from candidates.json today [inference — mine]"
+   },
+   "life_years": 10,
+   "sf_now": "None built as a cell. Duboce Triangle has an SFCTA-funded study ($250,000, 2025) that stalled on turn-ban objections; Page Street and the Slow Streets are corridor filters. Four trial cells (Duboce, two Bayview, Outer Sunset) are sketched in the repo's LTN designer.",
+   "sf_evidence": "None for a cell. Slow Streets (corridor filters) on 19 streets: injury crashes 0.73 (0.58 to 0.88), 0.88 (0.64 to 1.12) without those with other changes, with traffic at 0.38 of before, so the fall looks like less traffic (2026-11-24-methods-by-intervention.mdx).",
+   "who_decides": "City Traffic Engineer and SFMTA Board (Vehicle Code §21101(f) findings, as for Slow Streets); SFFD reviews every filter; Board of Supervisors through SFCTA Prop L allocations.",
+   "evidence_grade": "moderate: one large controlled before-and-after study (113 London LTNs, 2012-2024, rest of London as control), with injuries returning when LTNs were removed; but nothing tests SF's hills, and SF-size cells did about half as well (-22%).",
+   "displacement": "Boundary roads -2% (-5% to +2%) all injuries and 0% (-7% to +8%) KSI in London (Furlong 2025); traffic inside about halved (-46% mean) and boundary +1% mean, +4% median against background trends (Thomas and Aldred 2024, via circulation note). Single bus boundary roads can fail (Streatham Wells, suspended 2024).",
+   "sources": [
+    {
+     "title": "Furlong, Fevyer, Armstrong, Edwards, Aldred and Goodman, Low Traffic Neighbourhoods in London reduce road traffic injuries: a controlled before-and-after analysis (2012-2024), Injury Prevention 2025",
+     "url": "https://researchonline.lshtm.ac.uk/id/eprint/4676732/1/Furlong-etal-2025-Low-traffic-neighbourhoods.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Laverty, Aldred and Goodman 2021, The impact of introducing low traffic neighbourhoods on road traffic injuries (Waltham Forest)",
+     "url": "https://findingspress.org/article/18330",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Goodman, Laverty and Aldred 2020, LTNs and fire response times in Waltham Forest",
+     "url": "https://findingspress.org/article/18198",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Cell costs and city counts (repo note)",
+     "url": "research/notes/low-traffic-cells-2026-11/2026-11-15-cell-costs-and-city-counts.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "LTN evidence note (repo)",
+     "url": "research/notes/low-traffic-cells-2026-11/2026-11-05-evidence.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "camera-enforced-filters-state-law",
+   "name": "State law allowing camera-enforced filters and bus gates",
+   "lever": "policy and law",
+   "how_it_works": "A sign and a plate camera replace the planter, so fire engines, buses and permit holders pass with no barrier while through drivers are fined.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Same mechanism as a physical filter, without the access cost that stops cells with bus streets inside.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class). Unlocks the 71 merged candidate cells that need 262 bus gates (candidates.json), which hold the larger half of residents in requesting cells [inference — mine]",
+     "effect": {
+      "low": -23,
+      "mid": -40,
+      "high": -47,
+      "unit": "% change in all injuries inside the LTN, by filter type",
+      "applies_to": "Inside LTNs where under 25% of filters were physical (mostly camera): all injuries -40%, KSI -38%; mixed 25% to 75% physical -23%; over 75% physical -35%. Boundary roads about 0 for every type",
+      "source": "Furlong et al. 2025, Table 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer through drivers turning at the cell's corners.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -23,
+      "mid": -40,
+      "high": -47,
+      "unit": "% change in all injuries inside the LTN, by filter type",
+      "applies_to": "As above, all casualty modes pooled; the pedestrian split by filter type is not printed",
+      "source": "Furlong et al. 2025, Table 4",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "citywide law change; SF's candidate cells need 262 bus gates in 71 cells (candidates.json)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per gate: missing for SF. Lambeth about £60,000 a scheme, Oxford about £1.09M a point (via LTN equity note)",
+    "source": "research/notes/low-traffic-cells-2026-11/2026-11-05-equity-costs.md",
+    "tag": "[web search — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Not allowed in California: AB 645 covers speed and AB 917 bus lanes, and Vehicle Code §21101.6 bars selective devices (LTN sf-now note).",
+   "sf_evidence": "None.",
+   "who_decides": "California Legislature; then SFMTA Board.",
+   "evidence_grade": "moderate for the effect (camera filters did as well as planters in 113 London LTNs); the law change has no evidence of its own.",
+   "sources": [
+    {
+     "title": "Furlong et al. 2025, Table 4",
+     "url": "https://researchonline.lshtm.ac.uk/id/eprint/4676732/1/Furlong-etal-2025-Low-traffic-neighbourhoods.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LTN SF-now note (law)",
+     "url": "research/notes/low-traffic-cells-2026-11/2026-11-05-sf-now.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "street-hierarchy-through-network",
+   "name": "Street hierarchy: pick which streets carry through traffic and make every other street access-only (Dutch Sustainable Safety categorisation)",
+   "lever": "policy and law",
+   "how_it_works": "The city classifies every street as through road, distributor or access street, builds each to that one function, and steers through trips onto the through roads with filters, turn rules and signal timing, so residential streets carry only local traffic at 30 km/h.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Access streets carry no through traffic and are built for 30 km/h, so the fast through driver is gone from them.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) + collector 1,382 / 74 (of which not high-stress 51) = 2,739 of 4,611 hurt and 170 of 298 KSI people on these street classes (family_stress.by_street_class). Access streets would be most residential and some collector blocks; which collectors SF would downgrade is not decided",
+     "effect": {
+      "low": null,
+      "mid": -22,
+      "high": -30,
+      "unit": "% change: low unmeasured; mid is injury crashes in Dutch 30 km/h zones without through traffic; high is national fatalities 1998-2007 for the whole programme",
+      "applies_to": "Mid: Vis and Kaal, 150 Dutch 30 km/h zones without through traffic and with speed measures, injury crashes -22% (via SWOV fact page). High: Sustainable Safety's first phase, 1998-2007, about 30% fewer road deaths nationally with benefits about four times costs (ITF Netherlands case study, via search). Neither applies only to the target group",
+      "source": "SWOV fact sheet 30 km/h zones; ITF Safe System case study Netherlands",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "mechanism": "Junctions of access streets carry little traffic, and distributor junctions are rebuilt (roundabouts, raised junctions).",
+     "target_share": "residential 1,031 / 19 (of which not high-stress 678) + collector 986 / 34 (of which not high-stress 36) = 2,017 of 3,119 hurt and 53 of 121 KSI people on these street classes (family_stress.by_street_class). Access streets would be most residential and some collector blocks; which collectors SF would downgrade is not decided",
+     "effect": {
+      "low": null,
+      "mid": -22,
+      "high": -30,
+      "unit": "% change: low unmeasured; mid is injury crashes in Dutch 30 km/h zones without through traffic; high is national fatalities 1998-2007 for the whole programme",
+      "applies_to": "Mid: Vis and Kaal, 150 Dutch 30 km/h zones without through traffic and with speed measures, injury crashes -22% (via SWOV fact page). High: Sustainable Safety's first phase, 1998-2007, about 30% fewer road deaths nationally with benefits about four times costs (ITF Netherlands case study, via search). Neither applies only to the target group",
+      "source": "SWOV fact sheet 30 km/h zones; ITF Safe System case study Netherlands",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Most pedestrian crossings move onto streets with little traffic or onto designed crossings on distributors.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) + collector 828 / 86 (of which not high-stress 25) = 1,838 of 2,491 hurt and 188 of 274 KSI people on these street classes (family_stress.by_street_class). Access streets would be most residential and some collector blocks; which collectors SF would downgrade is not decided",
+     "effect": {
+      "low": null,
+      "mid": -22,
+      "high": -30,
+      "unit": "% change: low unmeasured; mid is injury crashes in Dutch 30 km/h zones without through traffic; high is national fatalities 1998-2007 for the whole programme",
+      "applies_to": "Mid: Vis and Kaal, 150 Dutch 30 km/h zones without through traffic and with speed measures, injury crashes -22% (via SWOV fact page). High: Sustainable Safety's first phase, 1998-2007, about 30% fewer road deaths nationally with benefits about four times costs (ITF Netherlands case study, via search). Neither applies only to the target group",
+      "source": "SWOV fact sheet 30 km/h zones; ITF Safe System case study Netherlands",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | residential | intersection",
+     "mechanism": "High-stress residential blocks are exactly the ones carrying through traffic the hierarchy would push off.",
+     "target_share": "3,145 hurt / 227 KSI people, 10.3% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": null,
+      "mid": -22,
+      "high": -30,
+      "unit": "% change (see first group)",
+      "applies_to": "As above",
+      "source": "SWOV; ITF",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "citywide plan, with SF's 8,295 intersections and about 1,000 street miles to classify (results.json signals_at_intersections; lower-speed-limits equity note table)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per city: missing; the plan is staff time, and the building is the LTN, calming and arterial programs priced in their own records",
+    "source": "missing",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "SF's General Plan classifies streets and the Biking and Rolling Plan picks bikeways, but no plan says which streets may carry through traffic and which may not. The repo's ltc-candidate-cells.py draws the through network as arterials, bus streets and the HIN.",
+   "sf_evidence": "None.",
+   "who_decides": "Planning (General Plan Transportation Element), SFMTA Board, Board of Supervisors.",
+   "evidence_grade": "low: national before-and-after results for a package, figures only through search this session; no city-level controlled study opened.",
+   "sources": [
+    {
+     "title": "SWOV, 30 km/h zones fact sheet",
+     "url": "https://www.swov.nl/en/fact/30-kmh-zones-what-are-road-safety-effects-30-kmh-zones",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "ITF, Safe System case study: Netherlands",
+     "url": "https://itf-oecd.org/sites/default/files/itf-safe-system-case-study-netherlands.pdf",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "circulation-plan-sectors",
+   "name": "Circulation plan: split the centre into sectors cars can't cross (Ghent 2017, Leuven 2016, Groningen 1977, Brussels Pentagon 2022)",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Filters on a few key streets divide a district into sectors; drivers reach any address but must use the ring road to go from one sector to the next, so through traffic leaves the centre.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "mechanism": "Through traffic leaves the centre's streets; turning and crossing conflicts there fall with it.",
+     "target_share": "collector 1,386 / 68 (of which not high-stress 43) + arterial 1,310 / 69 (of which not high-stress 0) = 2,696 of 3,974 hurt and 137 of 208 KSI people on these street classes (family_stress.by_street_class). Only the part in the district treated (for SF, downtown and SoMa); not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% change in injuries: missing",
+      "applies_to": "Ghent's 2019 evaluation has no injury comparison area; traffic into and out of the centre -17%, ring road +14% at the peaks, the N430 +40%; pedestrian casualties on the ring rose in 2018 and the report calls the cause unproven",
+      "source": "Evaluatierapport Circulatieplan Gent 2019, via circulation evidence note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Through traffic leaves the centre's streets; turning and crossing conflicts there fall with it.",
+     "target_share": "collector 828 / 86 (of which not high-stress 25) + arterial 568 / 73 (of which not high-stress 0) = 1,396 of 2,491 hurt and 159 of 274 KSI people on these street classes (family_stress.by_street_class). Only the part in the district treated (for SF, downtown and SoMa); not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% change in injuries: missing",
+      "applies_to": "Ghent's 2019 evaluation has no injury comparison area; traffic into and out of the centre -17%, ring road +14% at the peaks, the N430 +40%; pedestrian casualties on the ring rose in 2018 and the report calls the cause unproven",
+      "source": "Evaluatierapport Circulatieplan Gent 2019, via circulation evidence note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Through traffic leaves the centre's streets; turning and crossing conflicts there fall with it.",
+     "target_share": "collector 375 / 22 (of which not high-stress 16) + arterial 287 / 31 (of which not high-stress 1) = 662 of 1,137 hurt and 53 of 90 KSI people on these street classes (family_stress.by_street_class). Only the part in the district treated (for SF, downtown and SoMa); not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% change in injuries: missing",
+      "applies_to": "Ghent's 2019 evaluation has no injury comparison area; traffic into and out of the centre -17%, ring road +14% at the peaks, the N430 +40%; pedestrian casualties on the ring rose in 2018 and the report calls the cause unproven",
+      "source": "Evaluatierapport Circulatieplan Gent 2019, via circulation evidence note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "district (Ghent's centre inside the R40; for SF a downtown with no single ring)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per district: missing",
+    "source": "missing",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "None. Market Street has been car-free east of 10th since 2020, a single-street version.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA Board; Caltrans for ramps; Board of Supervisors.",
+   "evidence_grade": "very low for injuries: before-and-after traffic counts only, and boundary rises on the ring.",
+   "displacement": "Ghent ring road +14% at peaks, N430 +40%, while the centre fell 17% (circulation evidence note).",
+   "sources": [
+    {
+     "title": "Circulation plans evidence note (repo)",
+     "url": "research/notes/circulation-plans-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Stad Gent, Evaluatierapport Circulatieplan 2019",
+     "url": "https://www.Stad.Gent/sites/default/files/onepager/cta/Evaluatierapport%20Circulatieplan%20Gent%202019%20finaal.pdf",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "superblock-and-car-free-centre-program",
+   "name": "Superblocks and car-free centres (Barcelona, Vitoria-Gasteiz, Pontevedra, Oslo)",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Inside streets of a block of blocks, or a whole old centre, are rebuilt as shared or car-free space with through driving removed and access only for residents, deliveries and emergencies.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Motor traffic is removed from the rebuilt streets, so few cars meet people there.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class). Only treated blocks",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": -25,
+      "unit": "% change in injury crashes, borrowed from area-wide calming (Elvik meta-analysis as cited in the 2025 Barcelona evaluation: about 15% overall, about 25% on residential streets)",
+      "applies_to": "No superblock or car-free-centre injury result was found; this is the nearest mechanism, and the LTN record's Furlong figure is the other proxy",
+      "source": "Elvik meta-analysis via PMC11831821, seen in search",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Motor traffic is removed from the rebuilt streets, so few cars meet people there.",
+     "target_share": "residential 542 / 91 (of which not high-stress 271) = 542 of 1,649 hurt and 91 of 330 KSI people on these street classes (family_stress.by_street_class). Only treated blocks",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": -25,
+      "unit": "% change in injury crashes, borrowed from area-wide calming (Elvik meta-analysis as cited in the 2025 Barcelona evaluation: about 15% overall, about 25% on residential streets)",
+      "applies_to": "No superblock or car-free-centre injury result was found; this is the nearest mechanism, and the LTN record's Furlong figure is the other proxy",
+      "source": "Elvik meta-analysis via PMC11831821, seen in search",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Motor traffic is removed from the rebuilt streets, so few cars meet people there.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class). Only treated blocks",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": -25,
+      "unit": "% change in injury crashes, borrowed from area-wide calming (Elvik meta-analysis as cited in the 2025 Barcelona evaluation: about 15% overall, about 25% on residential streets)",
+      "applies_to": "No superblock or car-free-centre injury result was found; this is the nearest mechanism, and the LTN record's Furlong figure is the other proxy",
+      "source": "Elvik meta-analysis via PMC11831821, seen in search",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "superblock (about 9 blocks) or centre",
+   "cost": {
+    "low": 580000,
+    "high": 980000,
+    "year": 2026,
+    "unit": "per superblock per year, build cost spread over 10 years (Vitoria pilot €5M, Sant Antoni €7M)",
+    "source": "crosscut lane, from the calmer-streets equity note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "None. Car-free JFK Drive and the Great Highway are park roads, not neighbourhoods.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA, Public Works, Planning, Board of Supervisors.",
+   "evidence_grade": "very low: no injury result found; Pontevedra and Oslo figures are secondhand (Oslo found no mode change for visits to the centre, Hagen and Tennøy 2019).",
+   "notes": "The crosscut lane's superblocks record carries the same cost; this record adds the car-free-centre cases.",
+   "sources": [
+    {
+     "title": "Barcelona superblocks evaluation, BMC Public Health 2025",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11831821/",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Street space evidence note (Oslo, Pontevedra)",
+     "url": "research/notes/street-space-2026-11/2026-11-05-evidence.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "citywide-default-20mph",
+   "name": "Citywide default speed limit of 20 mph (Wales 2023, Edinburgh, Paris 30 km/h 2021, Toronto, Seattle, Bristol, Helsinki)",
+   "lever": "policy and law",
+   "how_it_works": "The default limit on every street without a posted limit drops to 20 mph by law, so the whole residential network changes at once without a sign on every block.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Lower limit pulls the speed distribution down, most at the fast end.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) + collector 1,382 / 74 (of which not high-stress 51) = 2,739 of 4,611 hurt and 170 of 298 KSI people on these street classes (family_stress.by_street_class). The default covers SF's 887 unposted miles, mostly residential (lower-speed-limits equity note)",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -25,
+      "unit": "% change in injuries (casualties or collisions) on the streets whose limit fell",
+      "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
+      "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower impact speeds when a driver hits someone walking.",
+     "target_share": "Group total 434 hurt / 88 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed.",
+     "effect": {
+      "low": 0,
+      "mid": -12,
+      "high": -28,
+      "unit": "% change in pedestrian collisions",
+      "applies_to": "Toronto local roads 40 to 30 km/h: pedestrian collisions rate ratio 0.72 (0.58 to 0.89) on changed streets vs 0.93 on comparators, difference p = 0.14; low is SF's null; mid is our midpoint [inference — mine]",
+      "source": "Fridman et al. 2020, via speed-limits evidence note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Slower approach speeds give drivers more time to see and stop for a person in the crosswalk.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) + collector 828 / 86 (of which not high-stress 25) = 1,838 of 2,491 hurt and 188 of 274 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -25,
+      "unit": "% change in injuries (casualties or collisions) on the streets whose limit fell",
+      "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
+      "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Lower car speeds on shared residential streets.",
+     "target_share": "Group total 581 hurt / 94 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed.",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -25,
+      "unit": "% change in injuries (casualties or collisions) on the streets whose limit fell",
+      "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
+      "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | intersection",
+     "mechanism": "Every unposted residential block changes at once.",
+     "target_share": "3,617 hurt / 232 KSI people, 11.9% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -25,
+      "unit": "% change in injuries (casualties or collisions) on the streets whose limit fell",
+      "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
+      "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | midblock",
+     "mechanism": "Same.",
+     "target_share": "1,598 hurt / 151 KSI people, 5.2% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -25,
+      "unit": "% change in injuries (casualties or collisions) on the streets whose limit fell",
+      "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
+      "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | residential | intersection",
+     "mechanism": "Same, on the busier residential blocks.",
+     "target_share": "3,145 hurt / 227 KSI people, 10.3% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -25,
+      "unit": "% change in injuries (casualties or collisions) on the streets whose limit fell",
+      "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
+      "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "citywide; SF has 887 unposted miles (de facto 25 mph) of about 1,000 street miles (lower-speed-limits equity note, DataSF 3t7b-gebn)",
+   "cost": {
+    "low": 4700000,
+    "high": 4700000,
+    "year": 2023,
+    "unit": "once, citywide signs, at Wales's cost of about £4,200 a mile (£32.5M for 12,535 km) times 887 miles at $1.27 a pound; a default may need fewer signs; enforcement not included",
+    "source": "Welsh Government Explanatory Memorandum, via lower-speed-limits equity note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "State law (AB 43, 2021) lets SF cut 5 mph only street by street: 79 business-district corridors (48.5 miles) and 33 safety corridors (59.2 miles), and the Tenderloin's 20 mph zone (2021). A citywide 20 mph default needs a state bill.",
+   "sf_evidence": "On 821 dated 20 mph blocks, injury crashes ran 10% to 20% above expected after correcting for the method's lean; no drop (methods-by-intervention note, [DataSF ubvf-ztfx, 3t7b-gebn — queried 2026-11-24]). SFMTA measured 0 mph median change, +1 mph 85th percentile, on 9 corridors.",
+   "who_decides": "California Legislature (Vehicle Code §22352); then SFMTA Board and City Traffic Engineer.",
+   "evidence_grade": "low to moderate: one strong controlled study (Edinburgh, design level 4) with a modest effect, several nulls (Belfast, Bristol, DfT schemes, Toronto's comparison), Wales before-and-after, and SF's own null.",
+   "displacement": "DfT: most drivers kept their route; Norway's pooled zones: surrounding roads -4% (-8% to -1%) (via speed-limits evidence note).",
+   "sources": [
+    {
+     "title": "Kokka et al., Effect of 20 mph speed limits on traffic injuries in Edinburgh, JECH 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11187370/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Welsh Government, Police recorded road collisions: 2024",
+     "url": "https://www.gov.wales/police-recorded-road-collisions-2024-html",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Fridman et al. 2020, Toronto 30 km/h",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008529/",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Paris 2023 and 2024 mobility reports (accidents 5,071 to 4,759, hospitalised injured 314 to 428, 2022 to 2023)",
+     "url": "https://www.paris.fr/pages/le-bilan-des-deplacements-a-paris-en-2023-27604",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Lower speed limits evidence and equity-costs notes (repo)",
+     "url": "research/notes/lower-speed-limits-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "neighbourhood-signed-20mph-zones",
+   "name": "Neighbourhood-wide signed 20 mph zones (Tenderloin 2021, Japan Zone 30, Edinburgh, London boroughs)",
+   "lever": "speed management",
+   "how_it_works": "A whole neighbourhood gets a lower limit with gateway signs and road markings at its entries, not block-by-block signs.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Lower limit across every street in the zone.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -20,
+      "unit": "% change in casualties in the zone",
+      "applies_to": "Low: SF's Tenderloin 20 mph area, people hurt 1.15 (0.98 to 1.36), no clear change. Mid: Edinburgh, changed streets vs streets kept at 30 mph, -10% (-19% to 0%). High: Edinburgh zones vs Scottish control zones, -20% casualties, -22% (-40% to -2%) collisions. Japan's Zone 30 (mostly signs and road markings; humps in 1.2% of zones) cut the narrow-road/wide-road rate ratio for cyclist and pedestrian KSI by 0.046 to 0.26 by subgroup",
+      "source": "Kokka et al. 2024; Inada et al. 2020 AJPH; SF area-plans-before-after.py via methods note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Slower approach speeds near crossings.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -20,
+      "unit": "% change in casualties in the zone",
+      "applies_to": "Low: SF's Tenderloin 20 mph area, people hurt 1.15 (0.98 to 1.36), no clear change. Mid: Edinburgh, changed streets vs streets kept at 30 mph, -10% (-19% to 0%). High: Edinburgh zones vs Scottish control zones, -20% casualties, -22% (-40% to -2%) collisions. Japan's Zone 30 (mostly signs and road markings; humps in 1.2% of zones) cut the narrow-road/wide-road rate ratio for cyclist and pedestrian KSI by 0.046 to 0.26 by subgroup",
+      "source": "Kokka et al. 2024; Inada et al. 2020 AJPH; SF area-plans-before-after.py via methods note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Slower impact speeds for people crossing outside crosswalks.",
+     "target_share": "residential 542 / 91 (of which not high-stress 271) = 542 of 1,649 hurt and 91 of 330 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -20,
+      "unit": "% change in casualties in the zone",
+      "applies_to": "Low: SF's Tenderloin 20 mph area, people hurt 1.15 (0.98 to 1.36), no clear change. Mid: Edinburgh, changed streets vs streets kept at 30 mph, -10% (-19% to 0%). High: Edinburgh zones vs Scottish control zones, -20% casualties, -22% (-40% to -2%) collisions. Japan's Zone 30 (mostly signs and road markings; humps in 1.2% of zones) cut the narrow-road/wide-road rate ratio for cyclist and pedestrian KSI by 0.046 to 0.26 by subgroup",
+      "source": "Kokka et al. 2024; Inada et al. 2020 AJPH; SF area-plans-before-after.py via methods note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | intersection",
+     "mechanism": "Zone covers the neighbourhood's side streets.",
+     "target_share": "3,617 hurt / 232 KSI people, 11.9% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -20,
+      "unit": "% change in casualties in the zone",
+      "applies_to": "Low: SF's Tenderloin 20 mph area, people hurt 1.15 (0.98 to 1.36), no clear change. Mid: Edinburgh, changed streets vs streets kept at 30 mph, -10% (-19% to 0%). High: Edinburgh zones vs Scottish control zones, -20% casualties, -22% (-40% to -2%) collisions. Japan's Zone 30 (mostly signs and road markings; humps in 1.2% of zones) cut the narrow-road/wide-road rate ratio for cyclist and pedestrian KSI by 0.046 to 0.26 by subgroup",
+      "source": "Kokka et al. 2024; Inada et al. 2020 AJPH; SF area-plans-before-after.py via methods note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "neighbourhood zone; SF has 41 analysis neighbourhoods [model knowledge — verify] and 152 candidate cells as a finer unit",
+   "cost": {
+    "low": 5300,
+    "high": 31000,
+    "year": 2023,
+    "unit": "per mile of signed street: Wales about £4,200 a mile (about $5,300) to SF's AB 43 batches about $31,000 a mile; Tenderloin zone cost not found",
+    "source": "lower-speed-limits equity note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "The Tenderloin is SF's only neighbourhood-wide 20 mph zone (SFMTA Board, 2021-03-16). AB 43 allows business districts and safety corridors, not residential zones.",
+   "sf_evidence": "Tenderloin: injuries 1.15 (0.98 to 1.36), no clear change (area-plans-before-after.py, via methods-by-intervention note).",
+   "who_decides": "SFMTA Board within AB 43; a residential zone needs a state bill.",
+   "evidence_grade": "low: Edinburgh and Japan are controlled and find modest falls; SF's one zone shows none.",
+   "sources": [
+    {
+     "title": "Inada, Tomio, Nakahara and Ichikawa, Area-wide traffic-calming Zone 30 policy of Japan, AJPH 2020",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6951391",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Kokka et al. 2024",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11187370/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Methods by intervention (SF tests)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[inference — mine]"
+    }
+   ]
+  },
+  {
+   "id": "area-wide-engineered-20mph-zones",
+   "name": "Area-wide traffic calming: engineered 20 mph zones with humps, raised junctions and chicanes every block (London 1986-2006, Japan Zone 30 Plus, Dutch 30 zones)",
+   "lever": "speed management",
+   "how_it_works": "Every street in a neighbourhood gets vertical or horizontal devices close enough together that 20 mph is the comfortable speed, planned as one scheme instead of block-by-block resident petitions.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Devices every block physically hold speeds down.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -46,
+      "unit": "% change in injury crashes or casualties in the treated area",
+      "applies_to": "Low: Cochrane review of area-wide calming, injury crashes RR 0.85 (0.75 to 0.96), 18 studies. Mid: Norway handbook pooled 30 km/h zones, injury crashes -29% (-38% to -19%), fatal and serious -40% (-52% to -25%). High: London 20 mph zones with devices about every 100 m, KSI -46.3% (38.6% to 54.1%), all casualties -41.9%, pedestrians -32.4%, cyclists -16.9%. SF's own humps: -18% (-40% to +20%), and about no change after the pre-trend",
+      "source": "Bunn et al. Cochrane CD003110; Grundy et al. 2009 BMJ; Trafikksikkerhetshåndboken 3.12; SF outcomes section",
+      "tag": "[primary — read 2026-11-25] for Cochrane; [secondary — verify] for Grundy and Norway (repo note)"
+     }
+    },
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "mechanism": "Raised junctions slow drivers at side-street corners.",
+     "target_share": "residential 688 / 26 (of which not high-stress 502) = 688 of 1,323 hurt and 26 of 53 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -46,
+      "unit": "% change in injury crashes or casualties in the treated area",
+      "applies_to": "Low: Cochrane review of area-wide calming, injury crashes RR 0.85 (0.75 to 0.96), 18 studies. Mid: Norway handbook pooled 30 km/h zones, injury crashes -29% (-38% to -19%), fatal and serious -40% (-52% to -25%). High: London 20 mph zones with devices about every 100 m, KSI -46.3% (38.6% to 54.1%), all casualties -41.9%, pedestrians -32.4%, cyclists -16.9%. SF's own humps: -18% (-40% to +20%), and about no change after the pre-trend",
+      "source": "Bunn et al. Cochrane CD003110; Grundy et al. 2009 BMJ; Trafikksikkerhetshåndboken 3.12; SF outcomes section",
+      "tag": "[primary — read 2026-11-25] for Cochrane; [secondary — verify] for Grundy and Norway (repo note)"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "mechanism": "Slower approach at uncontrolled corners.",
+     "target_share": "residential 1,031 / 19 (of which not high-stress 678) = 1,031 of 3,119 hurt and 19 of 121 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -46,
+      "unit": "% change in injury crashes or casualties in the treated area",
+      "applies_to": "Low: Cochrane review of area-wide calming, injury crashes RR 0.85 (0.75 to 0.96), 18 studies. Mid: Norway handbook pooled 30 km/h zones, injury crashes -29% (-38% to -19%), fatal and serious -40% (-52% to -25%). High: London 20 mph zones with devices about every 100 m, KSI -46.3% (38.6% to 54.1%), all casualties -41.9%, pedestrians -32.4%, cyclists -16.9%. SF's own humps: -18% (-40% to +20%), and about no change after the pre-trend",
+      "source": "Bunn et al. Cochrane CD003110; Grundy et al. 2009 BMJ; Trafikksikkerhetshåndboken 3.12; SF outcomes section",
+      "tag": "[primary — read 2026-11-25] for Cochrane; [secondary — verify] for Grundy and Norway (repo note)"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Raised crossings and slower turns at corners.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -9,
+      "mid": -32,
+      "high": -32,
+      "unit": "% change in pedestrian injuries or casualties",
+      "applies_to": "Low: NYC speed humps, pedestrian injuries OR 0.91 (0.80 to 1.02) (Roberts et al. 2025, via outcomes section). High and mid: London zones, pedestrian casualties -32.4% (27.1% to 37.7%)",
+      "source": "Grundy et al. 2009; Roberts et al. 2025",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Lower impact speeds mid-block.",
+     "target_share": "residential 542 / 91 (of which not high-stress 271) = 542 of 1,649 hurt and 91 of 330 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -9,
+      "mid": -32,
+      "high": -32,
+      "unit": "% change in pedestrian injuries",
+      "applies_to": "As above",
+      "source": "Grundy et al. 2009; Roberts et al. 2025",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Slower cars on calmed streets.",
+     "target_share": "Group total 581 hurt / 94 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed.",
+     "effect": {
+      "low": -5,
+      "mid": -17,
+      "high": -29,
+      "unit": "% change in cyclist casualties",
+      "applies_to": "London zones, cyclists -16.9% (4.8% to 29.0%)",
+      "source": "Grundy et al. 2009",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | midblock",
+     "mechanism": "Mid-block devices act directly here.",
+     "target_share": "1,598 hurt / 151 KSI people, 5.2% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -46,
+      "unit": "% change in injury crashes or casualties in the treated area",
+      "applies_to": "Low: Cochrane review of area-wide calming, injury crashes RR 0.85 (0.75 to 0.96), 18 studies. Mid: Norway handbook pooled 30 km/h zones, injury crashes -29% (-38% to -19%), fatal and serious -40% (-52% to -25%). High: London 20 mph zones with devices about every 100 m, KSI -46.3% (38.6% to 54.1%), all casualties -41.9%, pedestrians -32.4%, cyclists -16.9%. SF's own humps: -18% (-40% to +20%), and about no change after the pre-trend",
+      "source": "Bunn et al. Cochrane CD003110; Grundy et al. 2009 BMJ; Trafikksikkerhetshåndboken 3.12; SF outcomes section",
+      "tag": "[primary — read 2026-11-25] for Cochrane; [secondary — verify] for Grundy and Norway (repo note)"
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | intersection",
+     "mechanism": "Raised junctions.",
+     "target_share": "3,617 hurt / 232 KSI people, 11.9% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -46,
+      "unit": "% change in injury crashes or casualties in the treated area",
+      "applies_to": "Low: Cochrane review of area-wide calming, injury crashes RR 0.85 (0.75 to 0.96), 18 studies. Mid: Norway handbook pooled 30 km/h zones, injury crashes -29% (-38% to -19%), fatal and serious -40% (-52% to -25%). High: London 20 mph zones with devices about every 100 m, KSI -46.3% (38.6% to 54.1%), all casualties -41.9%, pedestrians -32.4%, cyclists -16.9%. SF's own humps: -18% (-40% to +20%), and about no change after the pre-trend",
+      "source": "Bunn et al. Cochrane CD003110; Grundy et al. 2009 BMJ; Trafikksikkerhetshåndboken 3.12; SF outcomes section",
+      "tag": "[primary — read 2026-11-25] for Cochrane; [secondary — verify] for Grundy and Norway (repo note)"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | residential | midblock",
+     "mechanism": "Busier residential blocks.",
+     "target_share": "1,146 hurt / 116 KSI people, 3.8% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -46,
+      "unit": "% change in injury crashes or casualties in the treated area",
+      "applies_to": "Low: Cochrane review of area-wide calming, injury crashes RR 0.85 (0.75 to 0.96), 18 studies. Mid: Norway handbook pooled 30 km/h zones, injury crashes -29% (-38% to -19%), fatal and serious -40% (-52% to -25%). High: London 20 mph zones with devices about every 100 m, KSI -46.3% (38.6% to 54.1%), all casualties -41.9%, pedestrians -32.4%, cyclists -16.9%. SF's own humps: -18% (-40% to +20%), and about no change after the pre-trend",
+      "source": "Bunn et al. Cochrane CD003110; Grundy et al. 2009 BMJ; Trafikksikkerhetshåndboken 3.12; SF outcomes section",
+      "tag": "[primary — read 2026-11-25] for Cochrane; [secondary — verify] for Grundy and Norway (repo note)"
+     }
+    }
+   ],
+   "unit": "mile of residential street (area scheme); SF has 887 unposted miles and 368 unbuilt resident hump request blocks (candidates.json meta)",
+   "cost": {
+    "low": 164000,
+    "high": 784000,
+    "year": 2023,
+    "unit": "per mile, all phases, from SF devices at $28,592 to $37,169 each (FY21 to FY23) at about 1.6 to 1.7 a block; $47,000 to $61,000 a block. Building the 368 unbuilt requests alone: $17.3M to $22.5M",
+    "source": "SFCTA Resolution 26-06, via lower-speed-limits equity note and candidates.json",
+    "tag": "[secondary — verify] (repo note citing [primary — read 2026-10-22])"
+   },
+   "life_years": 15,
+   "sf_now": "SFMTA built humps by resident application, one block at a time, and closed the application program in 2025 with a backlog; Walk SF asked for neighbourhood-wide, data-driven calming (KQED 2025-06-25, via candidate cells note).",
+   "sf_evidence": "818 hump blocks, 2013-2024: mid-block injury crashes -18% (-40% to +20%) vs waiting blocks; about no change (+4%) after the pre-trend; pedestrians +7% (-47% to +177%) (outcomes section).",
+   "who_decides": "City Traffic Engineer; SFMTA Board; SFFD review; SFCTA Prop L funding.",
+   "evidence_grade": "high for area-wide calming elsewhere (Cochrane, London time series over 119,029 segments) but SF's own hump blocks show a small, uncertain effect.",
+   "displacement": "London: adjacent roads -8.0% (4.4% to 11.5%), 'no evidence of casualty migration'; Norway pooled: surrounding roads -4% (-8% to -1%) (via speed-limits evidence note).",
+   "sources": [
+    {
+     "title": "Bunn et al., Area-wide traffic calming for preventing traffic related injuries, Cochrane CD003110",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8693445",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Grundy et al., Effect of 20 mph traffic speed zones on road injuries in London, BMJ 2009",
+     "url": "https://europepmc.org/article/PMC/PMC2791801",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Trafikksikkerhetshåndboken 3.12 Fartsdempende tiltak",
+     "url": "https://www.tshandbok.no/del-2/3-trafikkregulering/doc661/",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Outcomes section (SF humps)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[inference — mine]"
+    }
+   ]
+  },
+  {
+   "id": "citywide-speed-camera-network",
+   "name": "Citywide speed camera network dense enough that drivers expect one anywhere (NYC 2,200+ cameras in 750 school zones, France, Montgomery County corridors)",
+   "lever": "automated enforcement",
+   "how_it_works": "Hundreds of fixed and mobile cameras across every neighbourhood ticket drivers over the limit, so the deterrent covers the network, not one corner.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Fewer drivers speed anywhere they might meet a camera.",
+     "target_share": "going straight 3,658 / 247: 3,658 of 4,611 hurt and 247 of 298 KSI people (size_families.chart by_movement). Cameras sit on collectors and arterials: arterial 1,435 / 97 (of which not high-stress 0) + collector 1,382 / 74 (of which not high-stress 51) = 2,817 of 4,611 hurt and 171 of 298 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower impact speeds.",
+     "target_share": "Group total 434 hurt / 88 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed.",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Slower straight-through drivers have time to stop for people crossing.",
+     "target_share": "going straight 639 / 106: 639 of 2,491 hurt and 106 of 274 KSI people (size_families.chart by_movement). Turning drivers are not ticketed for speed",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Lower speeds for drivers meeting people crossing mid-block or against the signal.",
+     "target_share": "going straight 1,139 / 254: 1,139 of 1,649 hurt and 254 of 330 KSI people (size_families.chart by_movement).",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Lower car speeds on camera corridors.",
+     "target_share": "Group total 581 hurt / 94 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed.",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Slower drivers on approach are less likely to enter late on red; spillover not measured.",
+     "target_share": "going straight 2,670 / 142: 2,670 of 2,982 hurt and 142 of 153 KSI people (size_families.chart by_movement).",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% change: missing for red-light crashes from speed cameras",
+      "applies_to": "No study read separates red-light crashes",
+      "source": "missing",
+      "tag": null
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | arterial | midblock",
+     "mechanism": "Camera corridors are arterials and collectors.",
+     "target_share": "1,816 hurt / 199 KSI people, 6.0% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | collector | midblock",
+     "mechanism": "Same.",
+     "target_share": "2,247 hurt / 222 KSI people, 7.4% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": -9,
+      "mid": -14,
+      "high": -27,
+      "unit": "% change in injury crashes (or injuries and deaths) near cameras against comparison streets",
+      "applies_to": "Low: SF's 33 locations, injury crashes within two blocks on the camera street -9% (-23% to +8%) after the matched-street check. Mid: NYC locations with 2022 cameras, injuries and fatalities 14% fewer than control corridors, 2021 vs 2023, no range published. High: SF crashes involving someone walking -27% (-50% to -5%) by Empirical Bayes, -20% (-47% to +20%) after the check. France's national network: deaths and injury crashes -19.7% nationwide (Blais and Carnis 2015, via camera note)",
+      "source": "NYC DOT ASE Program 2024 Report p. 1 and pp. 19-20; SF outcomes section",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "camera location; SF runs 33 locations (56 cameras); the Board cites 80 more; a design test needs about 320 to 740 (speed-cameras ambitious-version note); NYC runs 2,277 cameras",
+   "cost": {
+    "low": 85000,
+    "high": 130000,
+    "year": 2025,
+    "unit": "per location per year, all-in operating ($2.8M to $4.3M a year for 33), gross of fine revenue ($6.5M in year one)",
+    "source": "SFMTA 18-month report via lower-speed-limits equity note",
+    "tag": "[secondary — verify] (repo note citing [primary — read 2026-10-31])"
+   },
+   "life_years": 5,
+   "sf_now": "AB 645 pilot: 56 cameras at 33 locations, warnings from March to June 2025; capped at 33 systems, none on state routes, ending about 2030 to 2031.",
+   "sf_evidence": "Camera streets, within two blocks: injury crashes -12% (-23% to 0%), walking -27% (-50% to -5%); after the matched-street check -9% and -20%, both within chance; KSI +45% (-5% to +94%), 36 vs about 25 (outcomes section).",
+   "who_decides": "California Legislature (cap, state routes, sunset; Vehicle Code §22425); SFMTA for siting.",
+   "evidence_grade": "moderate: many before-and-after and some controlled studies show site effects; network-level evidence (France, NYC, Montgomery County) is quasi-experimental, and SF's own result is not yet clear.",
+   "displacement": "Not measured as diversion; NYC compares camera stretches with farther stretches of the same streets.",
+   "sources": [
+    {
+     "title": "NYC DOT, Automated Speed Enforcement Program 2024 Report",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/speed-camera-report.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Speed cameras what-we-know note (France, Montgomery County, Victoria)",
+     "url": "research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Speed cameras ambitious version (sites needed)",
+     "url": "research/notes/speed-cameras-2026-10/2026-11-01-ambitious-version.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Outcomes section (SF cameras)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[inference — mine]"
+    }
+   ]
+  },
+  {
+   "id": "rotating-mobile-camera-coverage",
+   "name": "Rotating mobile cameras that move weekly among signed sites across the whole HIN and every school zone (Victoria, Australia; SF rotation design)",
+   "lever": "automated enforcement",
+   "how_it_works": "A few camera units move every week to a new signed site drawn at random, so within a year every HIN street and school zone has been enforced and drivers cannot learn where cameras are.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Unpredictable enforcement spreads the deterrent network-wide.",
+     "target_share": "arterial 1,435 / 97 (of which not high-stress 0) + collector 1,382 / 74 (of which not high-stress 51) + residential 1,357 / 96 (of which not high-stress 857) = 4,174 of 4,611 hurt and 267 of 298 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": -10,
+      "mid": -20,
+      "high": -25,
+      "unit": "% change in fatal and injury or casualty crashes",
+      "applies_to": "Mid: FHWA Proven Safety Countermeasures, 20% fewer fatal and injury crashes where mobile cameras are used (study unnamed). High: Victoria unmarked mobile cameras, 25% fewer casualty crashes, wider than enforced sites (secondhand). Low is ours [inference — mine]",
+      "source": "FHWA via speed-cameras note; NSW parliamentary submission",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "Group total 434 hurt / 88 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed.",
+     "effect": {
+      "low": -10,
+      "mid": -20,
+      "high": -25,
+      "unit": "% change in fatal and injury crashes",
+      "applies_to": "As above",
+      "source": "FHWA; Victoria",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "camera unit rotated weekly; counts within SF's cap of 33 systems from about March 2027 (speed-cameras legal check note)",
+   "cost": {
+    "low": 85000,
+    "high": 130000,
+    "year": 2025,
+    "unit": "per unit per year, assumed equal to a fixed location; mobile cost not found",
+    "source": "SFMTA 18-month report via repo note",
+    "tag": "[secondary — verify]; equality with fixed cost [inference — mine]"
+   },
+   "life_years": 5,
+   "sf_now": "None; scripts/speed-camera-rotation.py sketches a rotation over the 2022 HIN plus every school zone.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA within AB 645; state law for more units.",
+   "evidence_grade": "low: no controlled urban study opened; figures secondhand.",
+   "notes": "Overlaps the speed lane's mobile-speed-cameras record; this one is the area-coverage design.",
+   "sources": [
+    {
+     "title": "Speed camera mobile rotation legal check (repo)",
+     "url": "research/notes/speed-cameras-2026-10/2026-11-12-mobile-rotation-legal-check.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Speed cameras what-we-know note",
+     "url": "research/notes/speed-cameras-2026-10/2026-10-30-what-we-know.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "school-streets-citywide-program",
+   "name": "School Streets at every school (Paris rues aux écoles, 300+ streets; London and Hampshire programs)",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "The block in front of each school closes to cars at the bell, or for good, as a citywide program rather than one school at a time.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "No turning or drop-off cars at the school gate in school hours.",
+     "target_share": "Children under 18 walking: 383 hurt / 43 KSI across all pedestrian groups (results.json grouping_alternatives, via crosscut lane); the share on school blocks at bell times is not computed",
+     "effect": {
+      "low": null,
+      "mid": -43,
+      "high": -58,
+      "unit": "% change in injury crashes involving child pedestrians within 656 ft of a school in school-day windows (95% CI -23% to -58%)",
+      "applies_to": "Barcelona's school-environment rebuild, not a bell-time closure; no School Street study measured injuries. Low is unmeasured",
+      "source": "Perez et al. 2023 via school-streets note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe starting or backing",
+     "mechanism": "No reversing and pulling out at the gate.",
+     "target_share": "Group total 267 hurt / 27 KSI people (size_families.families); the share on school blocks at bell times is not computed",
+     "effect": {
+      "low": null,
+      "mid": -43,
+      "high": -58,
+      "unit": "As above",
+      "applies_to": "As above",
+      "source": "Perez et al. 2023 via school-streets note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "school; SF's Mayor names more than 230 public and private schools for safety work by 2028 (via lower-speed-limits equity note)",
+   "cost": {
+    "low": 6000,
+    "high": 32000,
+    "year": 2024,
+    "unit": "per school, set-up; staffing up to $60,000 a year where marshals are paid (Hampshire 2024 at $1.27 a pound)",
+    "source": "crosscut lane, via studies.json",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "One daily School Street (Elm Street, Tenderloin Community School, since 2021).",
+   "sf_evidence": "None.",
+   "who_decides": "ISCOTT permits for part-day closures; SFMTA Board beyond that; SFUSD.",
+   "evidence_grade": "low: no injury study of School Streets; Paris counts its streets but publishes no crash evaluation.",
+   "notes": "Paris: 168 rues aux écoles by 2023, over 300 by September 2025, half of nursery and primary schools (city pages, seen in search).",
+   "sources": [
+    {
+     "title": "Ville de Paris, Plus de 300 rues aux écoles",
+     "url": "https://www.paris.fr/pages/57-nouvelles-rues-aux-ecoles-dans-paris-8197",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "School Streets evidence note (repo)",
+     "url": "research/notes/school-streets-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "citywide-daylighting-every-corner",
+   "name": "Citywide daylighting: every corner, with posts where drivers ignore paint (Hoboken; NYC's 200 to 500 a year)",
+   "lever": "street design",
+   "how_it_works": "Paint, posts or bike racks keep the 20 feet before every crosswalk clear across the whole city, done by crews street by street rather than corner by request.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Turning and approaching drivers see a person stepping off the curb sooner.",
+     "target_share": "left or U-turn 1,294 / 119; right turn 433 / 33; going straight 639 / 106: 2,366 of 2,491 hurt and 258 of 274 KSI people (size_families.chart by_movement).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -32,
+      "unit": "% change in pedestrian injuries at treated corners",
+      "applies_to": "Low: SF's 249 painted safety zones, +7% (-14% to +30%), and NYC's sign-only daylighting showed no significant benefit. High: NYC hardened corners, pedestrian injuries -32% against nearby corners. Hoboken (daylit nearly every corner, plus 20 mph and other changes) reports no traffic deaths since January 2017 and injuries -41%, uncontrolled",
+      "source": "NYC DOT 2025 via crosscut and pedestrian lanes; SF outcomes section; Hoboken press",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "mechanism": "Drivers pulling out from a side street see cross traffic sooner.",
+     "target_share": "residential 688 / 26 (of which not high-stress 502) = 688 of 1,323 hurt and 26 of 53 KSI people on these street classes (family_stress.by_street_class).",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% change: missing",
+      "applies_to": "No study read measures vehicle-vehicle crashes after daylighting",
+      "source": "missing",
+      "tag": null
+     }
+    },
+    {
+     "group": "place | low (LTS 1-2) | residential | intersection",
+     "mechanism": "Every residential corner.",
+     "target_share": "3,617 hurt / 232 KSI people, 11.9% of all people hurt (grouping_alternatives, place grouping).",
+     "effect": {
+      "low": 0,
+      "mid": -10,
+      "high": -32,
+      "unit": "% change in pedestrian injuries at treated corners",
+      "applies_to": "As above; pedestrian crashes only",
+      "source": "NYC DOT 2025; SF outcomes",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "intersection; SFMTA counts 8,900 intersections, 3,400 daylit by November 2025 and 57% to 65% by May 2026 (daylighting equity note)",
+   "cost": {
+    "low": 500,
+    "high": 10000,
+    "year": 2025,
+    "unit": "per intersection: painted red curb $500 (SFCTA, 10-year life) to hardened posts about $10,000 (NYC DOT). Paint everywhere $4.45M; the 2,400 to 3,100 left at 65%, $1.2M to $1.6M",
+    "source": "daylighting equity note citing SFCTA Prop L memo and NYC DOT testimony",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "AB 413 bans parking within 20 feet of crosswalks statewide from 2024; SFMTA is painting citywide and reports 57% to 65% of intersections daylit by May 2026.",
+   "sf_evidence": "Painted safety zones: +7% (-14% to +30%) pedestrians hurt (outcomes section).",
+   "who_decides": "SFMTA; state law (AB 413); SFCTA Prop L funding.",
+   "evidence_grade": "low: NYC's controlled study shows an effect for hardened corners only; SF's paint shows none; Hoboken is uncontrolled and bundled.",
+   "sources": [
+    {
+     "title": "NYC DOT, Daylighting and Street Safety, January 2025",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/daylighting-and-street-safety.pdf",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Hoboken coverage (Planetizen, June 2026)",
+     "url": "https://www.planetizen.com/news/2026/06/137774-hobokens-20-vision-zero-fix",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Daylighting equity and costs note (repo)",
+     "url": "research/notes/daylighting-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "slow-streets-network",
+   "name": "Slow Streets network: a connected set of filtered or signed shared residential streets",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Signs, posts and soft diverters at intersections tell through drivers to stay off a network of residential streets meant for walking and biking.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Traffic on the street falls to about a third, so fewer cars meet people there.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class). Only Slow Street blocks; SF's 19 measured streets",
+     "effect": {
+      "low": -12,
+      "mid": -27,
+      "high": -42,
+      "unit": "% change in injury crashes on Slow Street blocks (95% CI)",
+      "applies_to": "SF's own 19 Slow Streets: injury crashes 0.73 (0.58 to 0.88), but 15 opened in 2020-2021 in the traffic collapse; 0.88 (0.64 to 1.12) without the 9 with other changes. Low is 0.88, mid 0.73, high the 0.58 lower bound; traffic on 11 of them was 0.38 of before, so the fall looks like less traffic, not safer trips",
+      "source": "methods-by-intervention note, Slow Streets",
+      "tag": "[inference — mine]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Traffic on the street falls to about a third, so fewer cars meet people there.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class). Only Slow Street blocks; SF's 19 measured streets",
+     "effect": {
+      "low": -12,
+      "mid": -27,
+      "high": -42,
+      "unit": "% change in injury crashes on Slow Street blocks (95% CI)",
+      "applies_to": "SF's own 19 Slow Streets: injury crashes 0.73 (0.58 to 0.88), but 15 opened in 2020-2021 in the traffic collapse; 0.88 (0.64 to 1.12) without the 9 with other changes. Low is 0.88, mid 0.73, high the 0.58 lower bound; traffic on 11 of them was 0.38 of before, so the fall looks like less traffic, not safer trips",
+      "source": "methods-by-intervention note, Slow Streets",
+      "tag": "[inference — mine]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Traffic on the street falls to about a third, so fewer cars meet people there.",
+     "target_share": "residential 443 / 33 (of which not high-stress 188) = 443 of 1,137 hurt and 33 of 90 KSI people on these street classes (family_stress.by_street_class). Only Slow Street blocks; SF's 19 measured streets",
+     "effect": {
+      "low": -12,
+      "mid": -27,
+      "high": -42,
+      "unit": "% change in injury crashes on Slow Street blocks (95% CI)",
+      "applies_to": "SF's own 19 Slow Streets: injury crashes 0.73 (0.58 to 0.88), but 15 opened in 2020-2021 in the traffic collapse; 0.88 (0.64 to 1.12) without the 9 with other changes. Low is 0.88, mid 0.73, high the 0.58 lower bound; traffic on 11 of them was 0.38 of before, so the fall looks like less traffic, not safer trips",
+      "source": "methods-by-intervention note, Slow Streets",
+      "tag": "[inference — mine]"
+     }
+    }
+   ],
+   "unit": "mile; the Biking and Rolling Plan lists 85 miles of Shared streets not yet all-ages; the repo picks a first 30 miles (slow-streets next-30-miles note)",
+   "cost": {
+    "low": 200000,
+    "high": 238000,
+    "year": 2025,
+    "unit": "per mile, signed and posted; hard volume control $409,000 to $807,000 a mile (Sanchez, Page)",
+    "source": "calmer-streets equity note citing SFMTA staff report 2022-12-06 and SFCTA memo 2025",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 5,
+   "sf_now": "About 30 Slow Streets in 2020; 15 removed in 2022; the Biking and Rolling Plan adds Shared streets.",
+   "sf_evidence": "As in the effect: 0.73 or 0.88, with traffic down to 0.38.",
+   "who_decides": "SFMTA Board.",
+   "evidence_grade": "low: SF's own before-and-after, confounded by the 2020 traffic drop; no published crash study of slow or neighbourhood greenway streets found.",
+   "sources": [
+    {
+     "title": "Methods by intervention, Slow Streets",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[inference — mine]"
+    },
+    {
+     "title": "Calmer streets equity-costs note",
+     "url": "research/notes/calmer-streets-2026-11/2026-11-06-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "area-cordon-congestion-charge",
+   "name": "Area cordon or congestion charge (London, Stockholm, New York, Milan Area C)",
+   "lever": "pricing",
+   "how_it_works": "Drivers pay to enter or drive in the core at busy hours, so fewer cars are in the area and conflicts fall with volume.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts of every kind.",
+     "target_share": "SF's modelled downtown zone: about 258 people hurt a year in charging hours against about 3,810 a year citywide, so about 7% of each group at most (crosscut lane, from the pricing equity note) [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | red light",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts of every kind.",
+     "target_share": "SF's modelled downtown zone: about 258 people hurt a year in charging hours against about 3,810 a year citywide, so about 7% of each group at most (crosscut lane, from the pricing equity note) [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts of every kind.",
+     "target_share": "SF's modelled downtown zone: about 258 people hurt a year in charging hours against about 3,810 a year citywide, so about 7% of each group at most (crosscut lane, from the pricing equity note) [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | following too closely",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts of every kind.",
+     "target_share": "SF's modelled downtown zone: about 258 people hurt a year in charging hours against about 3,810 a year citywide, so about 7% of each group at most (crosscut lane, from the pricing equity note) [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "place | high (LTS 3-4) | arterial | intersection",
+     "mechanism": "Downtown arterial corners carry the charge's traffic cut.",
+     "target_share": "6,927 hurt / 512 KSI people, 22.7% of all people hurt (grouping_alternatives, place grouping). Only the zone's share; not computed",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "zone (one downtown cordon)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per zone: see the downtown congestion pricing note; not repeated here",
+    "source": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-equity-costs.md",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFCTA studied a downtown charge (2019-2021); not adopted; needs state authority.",
+   "sf_evidence": "None.",
+   "who_decides": "California Legislature; SFCTA and Board of Supervisors.",
+   "evidence_grade": "moderate for London (several designs), but New York's first year shows no clear injury change.",
+   "notes": "Duplicates the crosscut lane's congestion-pricing-cordon record on purpose, as the area-scale entry.",
+   "sources": [
+    {
+     "title": "Downtown congestion pricing evidence note (repo)",
+     "url": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "citywide-signal-retiming-safe-speed",
+   "name": "Citywide signal retiming to the lower limit (NYC's 25 mph retiming, Franklin Street)",
+   "lever": "signals",
+   "how_it_works": "Every signalized corridor is timed so a driver at the limit catches greens and a faster driver hits reds.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Holds platoons to the progression speed.",
+     "target_share": "arterial 1,435 / 97 (of which not high-stress 0) + collector 1,382 / 74 (of which not high-stress 51) = 2,817 of 4,611 hurt and 171 of 298 KSI people on these street classes (family_stress.by_street_class). Only signalized corridors",
+     "effect": {
+      "low": 1,
+      "mid": -2,
+      "high": -8,
+      "unit": "% change in pedestrian injuries, citywide (rate ratio 0.979, 0.924 to 1.037)",
+      "applies_to": "NYC 25 mph retiming, pedestrian injuries -2.1% (-7.6% to +3.7%), not significant; SF Franklin Street 85th percentile 27 to 25 mph",
+      "source": "NYC Council Vision Zero impact page, via school-trips signal timing note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Slower approaches at signals.",
+     "target_share": "going straight 639 / 106: 639 of 2,491 hurt and 106 of 274 KSI people (size_families.chart by_movement). At signalized corners only",
+     "effect": {
+      "low": 1,
+      "mid": -2,
+      "high": -8,
+      "unit": "% change in pedestrian injuries",
+      "applies_to": "As above",
+      "source": "NYC Council, via repo note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Fewer drivers rushing a light at speed.",
+     "target_share": "going straight 2,670 / 142: 2,670 of 2,982 hurt and 142 of 153 KSI people (size_families.chart by_movement).",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "% change: missing",
+      "applies_to": "No retiming study read measures red-light crashes",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "signal; SF has 1,249 signalized intersections, where 14,670 people were hurt 2017-2024 (results.json signals_at_intersections)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per corridor: staff time where interconnect exists; no SF figure",
+    "source": "junction lane, Caltrans LRSM SI03",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 5,
+   "sf_now": "SFMTA retimed Franklin Street (2024) and some corridors for 20 to 25 mph progressions; no citywide program.",
+   "sf_evidence": "Franklin Street 85th percentile speed 27 to 25 mph; no crash result.",
+   "who_decides": "SFMTA (Traffic Signal Operations).",
+   "evidence_grade": "low: the one citywide evaluation found about no injury effect.",
+   "sources": [
+    {
+     "title": "Signal timing note (repo)",
+     "url": "research/notes/school-trips-2026-10/2026-10-13-signal-timing.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "community-area-safety-plans",
+   "name": "Neighbourhood safety plans that package spot fixes across a whole area (SF Community-Based Transportation Plans, Tenderloin, NYC Safe Routes to School by tract)",
+   "lever": "street design",
+   "how_it_works": "A plan for one neighbourhood puts many corner and block treatments (bulb-outs, signals, signs, calming) in at once, chosen with residents.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Many spot treatments across the area at once.",
+     "target_share": "residential 1,010 / 102 (of which not high-stress 538) + collector 828 / 86 (of which not high-stress 25) = 1,838 of 2,491 hurt and 188 of 274 KSI people on these street classes (family_stress.by_street_class). Only the treated area",
+     "effect": {
+      "low": null,
+      "mid": -38,
+      "high": -44,
+      "unit": "% change in injuries at plan sites (SF) or school-age pedestrian injuries in school-travel hours (NYC)",
+      "applies_to": "SF Western Addition CBTP sites 0.62 (0.34 to 1.11), with as large a drop before work began; Tenderloin area 1.15 (0.98 to 1.36). NYC: school-age pedestrian injuries in school-travel hours -44% in tracts with Safe Routes to School projects (DiMaggio and Li 2013). Low is no effect",
+      "source": "SF before-after scripts via methods note; DiMaggio and Li 2013 via crosscut lane",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Many spot treatments across the area at once.",
+     "target_share": "residential 542 / 91 (of which not high-stress 271) + collector 603 / 112 (of which not high-stress 16) = 1,145 of 1,649 hurt and 203 of 330 KSI people on these street classes (family_stress.by_street_class). Only the treated area",
+     "effect": {
+      "low": null,
+      "mid": -38,
+      "high": -44,
+      "unit": "% change in injuries at plan sites (SF) or school-age pedestrian injuries in school-travel hours (NYC)",
+      "applies_to": "SF Western Addition CBTP sites 0.62 (0.34 to 1.11), with as large a drop before work began; Tenderloin area 1.15 (0.98 to 1.36). NYC: school-age pedestrian injuries in school-travel hours -44% in tracts with Safe Routes to School projects (DiMaggio and Li 2013). Low is no effect",
+      "source": "SF before-after scripts via methods note; DiMaggio and Li 2013 via crosscut lane",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Many spot treatments across the area at once.",
+     "target_share": "residential 1,357 / 96 (of which not high-stress 857) + collector 1,382 / 74 (of which not high-stress 51) = 2,739 of 4,611 hurt and 170 of 298 KSI people on these street classes (family_stress.by_street_class). Only the treated area",
+     "effect": {
+      "low": null,
+      "mid": -38,
+      "high": -44,
+      "unit": "% change in injuries at plan sites (SF) or school-age pedestrian injuries in school-travel hours (NYC)",
+      "applies_to": "SF Western Addition CBTP sites 0.62 (0.34 to 1.11), with as large a drop before work began; Tenderloin area 1.15 (0.98 to 1.36). NYC: school-age pedestrian injuries in school-travel hours -44% in tracts with Safe Routes to School projects (DiMaggio and Li 2013). Low is no effect",
+      "source": "SF before-after scripts via methods note; DiMaggio and Li 2013 via crosscut lane",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "neighbourhood plan",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per plan: missing in this lane",
+    "source": "missing",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "SFCTA and SFMTA run Community-Based Transportation Plans (Western Addition, Bayview, others) and Neighborhood Transportation Improvement Program studies.",
+   "sf_evidence": "Western Addition sites 0.62 (0.34 to 1.11); Tenderloin 1.15 (0.98 to 1.36); no clear change either way.",
+   "who_decides": "SFCTA, SFMTA, Board of Supervisors.",
+   "evidence_grade": "very low for SF's plans; low for NYC's tract-level comparison.",
+   "sources": [
+    {
+     "title": "Methods by intervention, area plans",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[inference — mine]"
+    },
+    {
+     "title": "Western Addition CBTP notes",
+     "url": "research/notes/western-addition-cbtp-2026-11/",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "Cost per person hurt avoided is not computed here. A sketch for the LTN program [inference — mine]: the 152 candidate cells hold about 318 injury crashes a year (1,592 in 2021-2025), about 400 people hurt a year at SF's 1.26 people per crash; at -22% to -35% that is about 90 to 140 fewer a year, against $5.6M to $7.8M a year of build cost over 10 years plus about $5.2M upkeep, so roughly $80,000 to $145,000 per person hurt avoided, before bus gates and boundary effects.",
+  "SF's candidate cells are larger (median 0.257 km2) than most London LTNs; Furlong's largest size class (100,000 m2 and over) did about half as well (-22%, -37% to -4%), so the London headline -35% overstates what SF-size cells would do.",
+  "Each group's share inside built cells is not computed; target_share gives the residential street-class share and the cells' citywide share (11% of injury crashes) separately. A crash-to-cell join by group would fix this.",
+  "Unopened this session (tags say verify): Grundy 2009 (Europe PMC 403), SWOV 30 km/h zone figures and the ITF Netherlands case study (bot wall and 403), Norway handbook 3.12, Ghent's evaluation, Green et al. on London's charge, NYC daylighting study, Toronto Fridman.",
+  "No injury evaluation found for Paris's 2021 30 km/h limit, Paris rues aux écoles, Barcelona superblocks, Pontevedra, Oslo's car-free centre, Helsinki's 30 km/h network, Japan Zone 30 Plus (only a government target of about 30% by 2025), or NYC slow zones.",
+  "Boundary-road displacement was measured only for LTNs (Furlong), engineered zones (Grundy, Norway) and Ghent; none for camera networks, citywide limits or School Streets.",
+  "Costs missing: SF bus gate or camera gate, SF zone signing for a residential 20 mph zone, circulation plan, street hierarchy plan, citywide signal retiming, community plans.",
+  "The street-hierarchy and circulation-plan records carry no measured injury effect at city scale; the Dutch national figures are a package result.",
+  "Speed camera network effect at SF scale: SF's 33 sites cannot yet separate a 13% drop from chance; the ambitious-version note puts the sites needed at 320 to 740.",
+  "Neighbourhood count for zones (41 analysis neighbourhoods) is model knowledge; not checked against DataSF this session.",
+  "Overlaps with sibling lanes: low-traffic-neighbourhoods, superblocks, school-streets, congestion-pricing-cordon (crosscut); mobile-speed-cameras, citywide-default-20mph, vertical-calming-residential (speed); daylighting and school-zone measures (pedestrian). This lane's records are the area-scale versions with SF unit counts; deduplicate by id when merging."
+ ]
+}

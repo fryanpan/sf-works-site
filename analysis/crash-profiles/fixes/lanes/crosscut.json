@@ -1,0 +1,1938 @@
+{
+ "lane": "crosscut: DUI and late night, vehicle size and design, fleet rules, traffic volume and pricing, land use and state law. Effect convention: low is the smallest effect and high the largest, in the unit named; negative is a cut. SF counts are people hurt / KSI people, 2017-2024, from out/crash-augment/profiles/results.json. Built 2026-11-25.",
+ "fixes": [
+  {
+   "id": "publicized-sobriety-checkpoints",
+   "name": "Publicized sobriety checkpoints and saturation patrols, placed by late-night crash data",
+   "lever": "behaviour programs",
+   "how_it_works": "Police stop drivers at announced checkpoints and run saturation patrols on corridors with past DUI crashes, and the publicity raises every drinking driver's expected chance of arrest.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Fewer drivers drive after drinking, so fewer alcohol-impaired crashes happen.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart)",
+     "effect": {
+      "low": -3.5,
+      "mid": -8.9,
+      "high": -16.5,
+      "unit": "% change in alcohol-involved crash deaths (median and interquartile interval of 10 evaluations; low = smallest cut)",
+      "applies_to": "fatal crashes with an alcohol-involved driver; no injury-severity split",
+      "source": "Bergen et al. 2014",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | DUI",
+     "mechanism": "Same deterrence; reaches people walking hit by impaired drivers.",
+     "target_share": "pedestrian involved | DUI: 94 hurt / 30 KSI, all in reach on the same basis (size_families.families)",
+     "effect": {
+      "low": -3.5,
+      "mid": -8.9,
+      "high": -16.5,
+      "unit": "% change in alcohol-involved crash deaths (median and interquartile interval of 10 evaluations; low = smallest cut)",
+      "applies_to": "fatal crashes with an alcohol-involved driver; no injury-severity split",
+      "source": "Bergen et al. 2014",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | DUI",
+     "mechanism": "Same deterrence.",
+     "target_share": "bicycle involved | DUI: 8 hurt / 0 KSI (size_families.families)",
+     "effect": {
+      "low": -3.5,
+      "mid": -8.9,
+      "high": -16.5,
+      "unit": "% change in alcohol-involved crash deaths (median and interquartile interval of 10 evaluations; low = smallest cut)",
+      "applies_to": "fatal crashes with an alcohol-involved driver; no injury-severity split",
+      "source": "Bergen et al. 2014",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight, late night (11 pm-6 am)",
+     "mechanism": "Many late-night single-vehicle and speed crashes involve a drinking driver whose primary factor was coded as speed.",
+     "target_share": "Late-night going-straight unsafe-speed crashes: 781 hurt / 117 KSI across all modes (results.json profiles), of this group's 3,658 / 247 going straight. Only the alcohol-involved part is in reach; that share is not in results.json. Among 2022-24 late-night KSI people whose at-fault driver's sobriety was recorded, 28 of 54 (52%) had a drinking driver (DUI note) [inference — mine that the share carries to 2017-24]",
+     "effect": {
+      "low": -3.5,
+      "mid": -8.9,
+      "high": -16.5,
+      "unit": "% change in alcohol-involved crash deaths (median and interquartile interval of 10 evaluations; low = smallest cut)",
+      "applies_to": "fatal crashes with an alcohol-involved driver; no injury-severity split",
+      "source": "Bergen et al. 2014",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "program (checkpoints and patrols a year, citywide)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": 1993,
+    "unit": "per program; SF cost per checkpoint not found",
+    "source": "missing for SF. A modelled intensive program (156 checkpoints a year per 100,000 licensed drivers) returned more than $6 per $1 (1993 $): Miller, Galbraith and Lawrence 1998, via the DUI note. Bergen 2014: five economic evaluations gave benefit-cost ratios of 2:1 to 57:1",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFPD ran checkpoints from 7 p.m. to 3 a.m. on 2025-09-27 and 2025-12-27, paid by a California Office of Traffic Safety grant and sited by DUI crash and arrest history; a web search listed four checkpoints and two saturation patrols in 2025 (DUI note, SFPD releases read 2026-11-20).",
+   "sf_evidence": "None. SF publishes no drivers screened, arrests or crash result per checkpoint.",
+   "who_decides": "SFPD (Chief, Traffic Company) on OTS grant money; the Board of Supervisors and Police Commission set budget and priorities. SF can act alone.",
+   "evidence_grade": "high: a Community Guide systematic review of US evaluations rates the evidence strong, though the effect is on deaths only and modest.",
+   "sources": [
+    {
+     "title": "Bergen et al., Publicized sobriety checkpoint programs: a Community Guide systematic review, Am J Prev Med 2014 (abstract via Europe PMC)",
+     "url": "https://doi.org/10.1016/j.amepre.2014.01.018",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "DUI cost-effectiveness note (SF problem size 2022-24, SFPD checkpoint releases, Miller 1998)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "mass-media-with-dui-enforcement",
+   "name": "Paid media campaigns run alongside DUI enforcement",
+   "lever": "behaviour programs",
+   "how_it_works": "Well funded advertising tells drivers that checkpoints and patrols are out, which multiplies the deterrence of the enforcement itself.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Raises perceived arrest risk for drinking drivers.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart)",
+     "effect": {
+      "low": -6,
+      "mid": -13,
+      "high": -14,
+      "unit": "% change in alcohol-related crashes (median and interquartile range of 8 studies)",
+      "applies_to": "alcohol-related crashes; campaigns that were well funded and ran alongside enforcement",
+      "source": "Elder et al. 2004",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | DUI",
+     "mechanism": "Same.",
+     "target_share": "pedestrian involved | DUI: 94 hurt / 30 KSI, all in reach on the same basis (size_families.families)",
+     "effect": {
+      "low": -6,
+      "mid": -13,
+      "high": -14,
+      "unit": "% change in alcohol-related crashes (median and interquartile range of 8 studies)",
+      "applies_to": "alcohol-related crashes; campaigns that were well funded and ran alongside enforcement",
+      "source": "Elder et al. 2004",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "campaign a year, citywide",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no campaign cost read for SF or the reviewed studies",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Not found whether SFPD, SFMTA or DPH run paid DUI media beside the 2025 checkpoints.",
+   "sf_evidence": "None.",
+   "who_decides": "SFPD, SFMTA Vision Zero, DPH. SF can act alone.",
+   "evidence_grade": "moderate: strong in the Community Guide only as an add-on to enforcement, so its effect is not additive with checkpoints; insufficient alone.",
+   "notes": "Do not add this effect to the checkpoint effect; the reviewed campaigns ran with enforcement.",
+   "sources": [
+    {
+     "title": "Elder et al., Effectiveness of mass media campaigns for reducing drinking and driving and alcohol-involved crashes, Am J Prev Med 2004 (abstract via Europe PMC)",
+     "url": "https://doi.org/10.1016/j.amepre.2004.03.002",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "ignition-interlocks-all-offenders",
+   "name": "Ignition interlocks for every convicted drink-driver, with a push on take-up",
+   "lever": "policy and law",
+   "how_it_works": "A breath-testing lock on the convicted driver's car stops it starting after drinking for the months it is fitted.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Stops repeat drink-driving by convicted offenders while installed.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart); only crashes by drivers with a prior conviction, or deterred by the law, are in reach, a share not in results.json",
+     "effect": {
+      "low": -2.5,
+      "mid": -7.5,
+      "high": -26,
+      "unit": "% change in drivers at BAC 0.08+ involved in fatal crashes",
+      "applies_to": "alcohol-impaired drivers in fatal crashes. High: all-offender law against no law (Teoh 2021). Mid: SF's gap from California's repeat-and-injury law to all-offender, 20% to 26% (DUI note). Low: CalSTA's statewide effect of SB 1046 on repeat DUIs, held down by 15% take-up",
+      "source": "Teoh et al. 2021; CalSTA SB 1046 evaluation 2024 via DUI note",
+      "tag": "[primary — read 2026-11-25] for Teoh; [secondary — verify] for CalSTA; [inference — mine] for the gap"
+     }
+    },
+    {
+     "group": "pedestrian involved | DUI",
+     "mechanism": "Same.",
+     "target_share": "pedestrian involved | DUI: 94 hurt / 30 KSI, all in reach on the same basis (size_families.families)",
+     "effect": {
+      "low": -2.5,
+      "mid": -7.5,
+      "high": -26,
+      "unit": "% change in drivers at BAC 0.08+ involved in fatal crashes",
+      "applies_to": "alcohol-impaired drivers in fatal crashes. High: all-offender law against no law (Teoh 2021). Mid: SF's gap from California's repeat-and-injury law to all-offender, 20% to 26% (DUI note). Low: CalSTA's statewide effect of SB 1046 on repeat DUIs, held down by 15% take-up",
+      "source": "Teoh et al. 2021; CalSTA SB 1046 evaluation 2024 via DUI note",
+      "tag": "[primary — read 2026-11-25] for Teoh; [secondary — verify] for CalSTA; [inference — mine] for the gap"
+     }
+    }
+   ],
+   "unit": "state law, statewide",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": 2025,
+    "unit": "DMV cost statewide; the offender pays for the device",
+    "source": "AB 366 Senate floor analysis: DMV cost 'likely in the low hundreds of thousands of dollars', via the DUI note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SB 1046 (2016) requires an interlock from 2019 for repeat and injury DUI convictions; for a first offender without injury it is discretionary. AB 366 (2025) extends this to 2033-01-01 and dropped the introduced first-offender mandate (DUI note).",
+   "sf_evidence": "California statewide: installing within two years cut DUI recidivism 16.9% and injury-crash recidivism 17.2%, but only about 15% of arrests led to an installation, so SB 1046 cut repeat DUIs about 2.5% (CalSTA 2024 via DUI note).",
+   "who_decides": "State Legislature and Governor; courts order, DMV administers. SF acts through its state legislative agenda.",
+   "evidence_grade": "moderate: consistent state-panel studies on fatal crashes and a Community Guide finding for re-arrest while installed, but California's remaining gap is small and take-up is low.",
+   "sources": [
+    {
+     "title": "Teoh, Fell, Scherer and Wolfe, State alcohol ignition interlock laws and fatal crashes, Traffic Inj Prev 2021 (abstract via Europe PMC)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34686075/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "McGinty et al., Ignition Interlock Laws: Effects on Fatal Motor Vehicle Crashes, 1982-2013, Am J Prev Med 2017 (all-offender laws: 7% fewer BAC>0.08 fatal crashes)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28065516/",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "CalSTA, Evaluation of SB 1046 ignition interlock expansion, 2024",
+     "url": "https://calsta.ca.gov/-/media/calsta-media/documents/ignition_interlock_evaluation-11-a11y.pdf",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "DUI cost-effectiveness note",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "bac-limit-0-05",
+   "name": "Lower the legal blood-alcohol limit from 0.08 to 0.05",
+   "lever": "policy and law",
+   "how_it_works": "A lower per se limit makes moderate drinking before driving illegal, and drivers who follow it drink less before every trip, heavy drinkers included.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Fewer drivers drive at any BAC above 0.05, and fewer reach high BAC.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart)",
+     "effect": {
+      "low": null,
+      "mid": -11.1,
+      "high": null,
+      "unit": "% change in alcohol-related fatal crashes (meta-analysis)",
+      "applies_to": "alcohol-related fatal crashes. Utah, the one US state at 0.05, saw its all-cause fatal crash rate per VMT fall 19.8% in 2019 against 2016 (5.6% elsewhere) and injury crashes fall 10.8% in time-series models; that is all crashes, not a figure to apply to this group",
+      "source": "Fell and Scherer 2017; NHTSA DOT HS 813 234 via DUI note",
+      "tag": "[primary — read 2026-11-25] for Fell and Scherer; [secondary — verify] for Utah"
+     }
+    },
+    {
+     "group": "pedestrian involved | DUI",
+     "mechanism": "Same.",
+     "target_share": "pedestrian involved | DUI: 94 hurt / 30 KSI, all in reach on the same basis (size_families.families)",
+     "effect": {
+      "low": null,
+      "mid": -11.1,
+      "high": null,
+      "unit": "% change in alcohol-related fatal crashes (meta-analysis)",
+      "applies_to": "alcohol-related fatal crashes. Utah, the one US state at 0.05, saw its all-cause fatal crash rate per VMT fall 19.8% in 2019 against 2016 (5.6% elsewhere) and injury crashes fall 10.8% in time-series models; that is all crashes, not a figure to apply to this group",
+      "source": "Fell and Scherer 2017; NHTSA DOT HS 813 234 via DUI note",
+      "tag": "[primary — read 2026-11-25] for Fell and Scherer; [secondary — verify] for Utah"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "movement": "going straight, late night (11 pm-6 am)",
+     "mechanism": "Reaches the alcohol-involved share of late-night speed crashes.",
+     "target_share": "Late-night going-straight unsafe-speed crashes: 781 hurt / 117 KSI across all modes (results.json profiles), of this group's 3,658 / 247 going straight. Only the alcohol-involved part is in reach; that share is not in results.json. Among 2022-24 late-night KSI people whose at-fault driver's sobriety was recorded, 28 of 54 (52%) had a drinking driver (DUI note) [inference — mine that the share carries to 2017-24]",
+     "effect": {
+      "low": null,
+      "mid": -11.1,
+      "high": null,
+      "unit": "% change in alcohol-related fatal crashes (meta-analysis)",
+      "applies_to": "alcohol-related fatal crashes. Utah, the one US state at 0.05, saw its all-cause fatal crash rate per VMT fall 19.8% in 2019 against 2016 (5.6% elsewhere) and injury crashes fall 10.8% in time-series models; that is all crashes, not a figure to apply to this group",
+      "source": "Fell and Scherer 2017; NHTSA DOT HS 813 234 via DUI note",
+      "tag": "[primary — read 2026-11-25] for Fell and Scherer; [secondary — verify] for Utah"
+     }
+    }
+   ],
+   "unit": "state law, statewide",
+   "cost": {
+    "low": 0,
+    "high": null,
+    "year": 2026,
+    "unit": "public cost beyond enforcement already funded",
+    "source": "DUI note: near zero; no marginal enforcement cost found",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "California's limit is 0.08 [model knowledge — verify]. No bill was checked this session.",
+   "sf_evidence": "None.",
+   "who_decides": "State Legislature and Governor.",
+   "evidence_grade": "moderate: an international meta-analysis plus one US state with a single post year for the fatal figure.",
+   "sources": [
+    {
+     "title": "Fell and Scherer, Estimation of the Potential Effectiveness of Lowering the BAC Limit for Driving from 0.08 to 0.05, Alcohol Clin Exp Res 2017 (abstract via Europe PMC)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/29064571/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NHTSA, Evaluation of Utah's .05 BAC Per Se Law, Traffic Tech DOT HS 813 234, 2022",
+     "url": "https://www.drugsandalcohol.ie/35672/1/Evaluation_of_Utah%E2%80%99s_BAC_Per_Se_Law.pdf",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "DUI cost-effectiveness note",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "alcohol-tax-increase",
+   "name": "Raise alcohol excise taxes",
+   "lever": "pricing",
+   "how_it_works": "Higher prices cut heavy drinking, and with it the number of drinking drivers and walkers on the street at night.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Less drinking overall, so fewer impaired drivers.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart)",
+     "effect": {
+      "low": null,
+      "mid": -11,
+      "high": null,
+      "unit": "% change in traffic crash deaths for a doubling of the alcohol tax (meta-analysis of 50 studies)",
+      "applies_to": "traffic crash deaths; estimated on all traffic deaths in the studies, applied here to the alcohol groups only to avoid crediting sober crashes",
+      "source": "Wagenaar et al. 2010",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | DUI",
+     "mechanism": "Same.",
+     "target_share": "pedestrian involved | DUI: 94 hurt / 30 KSI, all in reach on the same basis (size_families.families)",
+     "effect": {
+      "low": null,
+      "mid": -11,
+      "high": null,
+      "unit": "% change in traffic crash deaths for a doubling of the alcohol tax (meta-analysis of 50 studies)",
+      "applies_to": "traffic crash deaths; estimated on all traffic deaths in the studies, applied here to the alcohol groups only to avoid crediting sober crashes",
+      "source": "Wagenaar et al. 2010",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "state tax, statewide",
+   "cost": {
+    "low": 0,
+    "high": 0,
+    "year": 2026,
+    "unit": "public cost; a tax raises revenue",
+    "source": "DUI note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Not checked whether a California city may levy its own alcohol tax [model knowledge — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "State Legislature; city power unchecked.",
+   "evidence_grade": "moderate: strong evidence that taxes cut drinking harms (Community Guide), but the traffic effect comes from a correlation meta-estimate, not an SF-sized policy change.",
+   "sources": [
+    {
+     "title": "Wagenaar, Tobler and Komro, Effects of alcohol tax and price policies on morbidity and mortality: a systematic review, AJPH 2010 (abstract via Europe PMC)",
+     "url": "https://doi.org/10.2105/ajph.2009.186007",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "DUI cost-effectiveness note",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "bar-hours-outlets-and-server-rules",
+   "name": "Hold the 2 a.m. closing time, limit new outlets in late-night clusters, and enforce server rules",
+   "lever": "policy and law",
+   "how_it_works": "Fewer hours and fewer outlets shrink late-night heavy drinking, and server rules aim to stop serving drunk patrons who then drive.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Less late-night drinking means fewer impaired drivers leaving bars.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart); DUI note: 60% of strict drinking-driver KSI in 2022-24 were 10 p.m. to 4 a.m.",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no crash effect size",
+      "applies_to": "missing: Hahn 2010 finds sufficient evidence that adding 2 or more hours of on-premises sales increases harms, insufficient for under 2 hours, none from the US; Campbell 2009 links outlet density to harms but no study tests limits",
+      "source": "Hahn et al. 2010; Campbell et al. 2009, via DUI note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight, late night (11 pm-6 am)",
+     "mechanism": "Fewer intoxicated people walking home late.",
+     "target_share": "Late-night going-straight pedestrian-violation crashes: 175 hurt / 55 KSI (results.json profiles), of 1,649 / 330. In that cell 32 of 169 injury crashes had a pedestrian who had been drinking (pedestrian_profile_facts)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no crash effect size",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "state hours law; local zoning",
+   "cost": {
+    "low": 0,
+    "high": null,
+    "year": 2026,
+    "unit": "public cost",
+    "source": "near zero to hold the current hours [inference — mine]",
+    "tag": "[inference — mine]"
+   },
+   "life_years": null,
+   "sf_now": "State law sets the 2 a.m. cutoff; SF Planning can limit new outlets through zoning (both [model knowledge — verify]). Whether California's server-training mandate applies to SF bars was not checked [unretrieved — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "State Legislature and ABC for hours and licences; SF Planning and the Board of Supervisors for outlet zoning.",
+   "evidence_grade": "low: Community Guide reviews find sufficient evidence of harm from longer hours but give no crash effect size and no US study.",
+   "notes": "The practical SF use is opposing later closing hours and new clusters, not cutting today's hours.",
+   "sources": [
+    {
+     "title": "Hahn et al., Effectiveness of policies restricting hours of alcohol sales, Am J Prev Med 2010",
+     "url": "https://doi.org/10.1016/j.amepre.2010.09.016",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Campbell et al., The effectiveness of limiting alcohol outlet density, Am J Prev Med 2009",
+     "url": "https://doi.org/10.1016/j.amepre.2009.09.028",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "DUI cost-effectiveness note",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "late-night-transit",
+   "name": "Frequent late-night transit (Owl network) near bar clusters",
+   "lever": "transit and land use",
+   "how_it_works": "A bus or train home at closing time gives drinkers a way home that is not their car.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Some drinkers leave the car at home or take transit home.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart)",
+     "effect": {
+      "low": null,
+      "mid": 0,
+      "high": null,
+      "unit": "% change in alcohol-related fatal traffic crashes",
+      "applies_to": "Washington Metro's longer hours: 'little effect' overall, with fewer DUI arrests where bars were within walking distance of stations",
+      "source": "Jackson and Owens 2011",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight, late night (11 pm-6 am)",
+     "mechanism": "Shorter late-night walks for people who have been drinking; untested.",
+     "target_share": "Late-night going-straight pedestrian-violation crashes: 175 hurt / 55 KSI (results.json profiles), of 1,649 / 330. In that cell 32 of 169 injury crashes had a pedestrian who had been drinking (pedestrian_profile_facts)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no effect size",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[model knowledge — verify]"
+     }
+    }
+   ],
+   "unit": "service hours a year",
+   "cost": {
+    "low": 14,
+    "high": 14,
+    "year": null,
+    "unit": "per boarding on the 90 and 91 Owl, against $5.89 for an average bus boarding",
+    "source": "research/notes/muni-service-frequency-span-redesign-2026-11 equity table (an inference in that note); year not stated there",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Muni runs an Owl network including the 90 and 91 (muni service note); BART does not run all night [model knowledge — verify].",
+   "sf_evidence": "None found; no owl evaluation found any crash or car effect (muni service note).",
+   "who_decides": "SFMTA Board for Muni; BART Board for BART hours.",
+   "evidence_grade": "low: one quasi-experimental US study, null overall, positive only near stations.",
+   "sources": [
+    {
+     "title": "Jackson and Owens, One for the road: public transportation, alcohol consumption, and intoxicated driving, J Public Econ 2011 (abstract)",
+     "url": "https://ideas.repec.org/a/eee/pubeco/v95y2011i1p106-121.html",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Muni service frequency and span notes",
+     "url": "research/notes/muni-service-frequency-span-redesign-2026-11/",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "ride-hail-and-safe-ride-home",
+   "name": "Ride-hail and subsidised safe-ride-home trips at closing time",
+   "lever": "transit and land use",
+   "how_it_works": "A cheap, quick ride home replaces driving after drinking.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Drinkers ride instead of drive.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart)",
+     "effect": {
+      "low": 0,
+      "mid": null,
+      "high": -6.1,
+      "unit": "% change in alcohol-related traffic deaths",
+      "applies_to": "Anderson and Davis 2021 (NBER working paper, Uber trip data): -6.1% alcohol-related deaths; Brazil and Kirk 2016 found no association across 100 metros; Barrios et al. 2020 found about 3% more traffic deaths overall from more driving",
+      "source": "Anderson and Davis 2021; Brazil and Kirk 2016; Barrios et al. 2020, via DUI note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "program",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no voucher program cost read",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Ride-hail and robotaxis are already widespread in SF, so their arrival effect is in the baseline (DUI note) [inference — mine].",
+   "sf_evidence": "None.",
+   "who_decides": "CPUC regulates ride-hail; the city could fund vouchers.",
+   "evidence_grade": "very low: mixed and null studies, and SF's market is already saturated, so the marginal effect is near zero.",
+   "sources": [
+    {
+     "title": "Anderson and Davis, Uber and Alcohol-Related Traffic Fatalities, NBER w29071, 2021",
+     "url": "https://www.nber.org/papers/w29071",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "DUI cost-effectiveness note",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "in-vehicle-impairment-detection",
+   "name": "Impairment detection or interlocks in every new car",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The car detects an impaired driver and will not drive, for every driver, not only convicted ones.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Stops impaired driving in equipped cars.",
+     "target_share": "vehicles only | DUI: 851 hurt / 68 KSI; DUI is the police primary collision factor, so the whole group is in reach, but the family also holds drug-only DUI, which alcohol measures do not reach (results.json size_families.chart); reaches SF only as the fleet turns over",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing: an Australian analysis of interlocks in all new vehicles gave benefit-cost ratios of 0.6:1 to 3.4:1 (Lahausse and Fildes 2009)",
+      "source": "Lahausse and Fildes 2009 via DUI note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "federal standard",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "paid by car buyers",
+    "source": "missing",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "IIJA §24220 directs NHTSA to issue a standard; NHTSA published an advance notice in January 2024 and no proposed rule through 2026-11-20 (DUI note).",
+   "sf_evidence": "None.",
+   "who_decides": "NHTSA.",
+   "evidence_grade": "very low: no measured effect; a single modelled benefit-cost range.",
+   "sources": [
+    {
+     "title": "NHTSA, Advanced Impaired Driving Prevention Technology ANPRM, 89 FR 830",
+     "url": "https://www.federalregister.gov/documents/2024/01/05/2023-27665/advanced-impaired-driving-prevention-technology",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "DUI cost-effectiveness note",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "direct-vision-standard-trucks",
+   "name": "Direct vision standard for heavy trucks (city fleet, refuse franchise, contractors, permits)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Trucks must have cabs the driver can see people through, or fitted cameras, sensors and side guards, before they may work in the city.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn; right turn",
+     "mechanism": "A driver who can see the person in the crosswalk beside or in front of the cab does not turn or pull into them.",
+     "target_share": "Truck share of this group is not in results.json. Across every pedestrian hurt in the vehicle_weight table (2017-24), trucks with no make-and-model weight (two- and three-axle, semi, tractor, tow, tank) hit 82 of 5,479 hurt (1.5%) and 25 of 818 KSI (3.1%); buses, paratransit and Muni add 111 / 27. Trucks matched by model fall in the 'over 5,000 lb' band with large SUVs and pickups (209 / 38), so the truck share is somewhat higher [inference — mine]; turning movements hold 1,727 of 2,491 hurt (left 1,294, right 433) in this group",
+     "effect": {
+      "low": -25,
+      "mid": -62,
+      "high": null,
+      "unit": "% change in fatal collisions involving a heavy truck, London, agency before-and-after with no comparison area",
+      "applies_to": "heavy trucks over 12 tonnes colliding with people walking or cycling, mostly turning and pulling away. Low: vision-cited fatal collisions 6 in 2021 against 8 in 2020 (TfL 2022; 9 in 2019), a pandemic year. Mid: 62% fewer fatal HGV collisions in 2023 than 2017-19 (TfL 2024 release, via the rules note). TfL 2022 also reports serious injuries involving HGVs falling from 48 in 2017 to 17 in 2021",
+      "source": "TfL 2022 board paper; TfL 2024 release via rules note",
+      "tag": "[primary — read 2026-11-25] for the 2022 paper; [secondary — verify] for the 62%"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe starting or backing",
+     "mechanism": "Pulling away from a stop with a person in the front blind spot.",
+     "target_share": "Truck share of this group is not in results.json. Across every pedestrian hurt in the vehicle_weight table (2017-24), trucks with no make-and-model weight (two- and three-axle, semi, tractor, tow, tank) hit 82 of 5,479 hurt (1.5%) and 25 of 818 KSI (3.1%); buses, paratransit and Muni add 111 / 27. Trucks matched by model fall in the 'over 5,000 lb' band with large SUVs and pickups (209 / 38), so the truck share is somewhat higher [inference — mine]; group 267 hurt / 27 KSI",
+     "effect": {
+      "low": -25,
+      "mid": -62,
+      "high": null,
+      "unit": "% change in fatal collisions involving a heavy truck, London, agency before-and-after with no comparison area",
+      "applies_to": "heavy trucks over 12 tonnes colliding with people walking or cycling, mostly turning and pulling away. Low: vision-cited fatal collisions 6 in 2021 against 8 in 2020 (TfL 2022; 9 in 2019), a pandemic year. Mid: 62% fewer fatal HGV collisions in 2023 than 2017-19 (TfL 2024 release, via the rules note). TfL 2022 also reports serious injuries involving HGVs falling from 48 in 2017 to 17 in 2021",
+      "source": "TfL 2022 board paper; TfL 2024 release via rules note",
+      "tag": "[primary — read 2026-11-25] for the 2022 paper; [secondary — verify] for the 62%"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn; lane change, merge, pass, entering",
+     "mechanism": "Right-hook and lane-change crashes into cyclists beside the cab.",
+     "target_share": "Truck share of this group is not in results.json. Across every person walking hurt in the vehicle_weight table (2017-24), trucks with no make-and-model weight (two- and three-axle, semi, tractor, tow, tank) hit 82 of 5,479 hurt (1.5%) and 25 of 818 KSI (3.1%); buses, paratransit and Muni add 111 / 27. Trucks matched by model fall in the 'over 5,000 lb' band with large SUVs and pickups (209 / 38), so the truck share is somewhat higher [inference — mine]; bicycle truck share not computed; right turn 269 / 17 and lane change 148 / 10 of this group's 1,137 / 90",
+     "effect": {
+      "low": -25,
+      "mid": -62,
+      "high": null,
+      "unit": "% change in fatal collisions involving a heavy truck, London, agency before-and-after with no comparison area",
+      "applies_to": "heavy trucks over 12 tonnes colliding with people walking or cycling, mostly turning and pulling away. Low: vision-cited fatal collisions 6 in 2021 against 8 in 2020 (TfL 2022; 9 in 2019), a pandemic year. Mid: 62% fewer fatal HGV collisions in 2023 than 2017-19 (TfL 2024 release, via the rules note). TfL 2022 also reports serious injuries involving HGVs falling from 48 in 2017 to 17 in 2021",
+      "source": "TfL 2022 board paper; TfL 2024 release via rules note",
+      "tag": "[primary — read 2026-11-25] for the 2022 paper; [secondary — verify] for the 62%"
+     }
+    }
+   ],
+   "unit": "permit scheme, citywide; or fleet and contract rule",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: TfL's paper gives no scheme or per-truck cost; penalty up to £550",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No SF direct vision rule found [unretrieved — verify]. The Mayor's Vision Zero directive includes city fleet telematics (street-safety paper trail note, read 2026-10-07).",
+   "sf_evidence": "None.",
+   "who_decides": "City for its own fleet, its refuse franchise and its contracts; a condition on every truck entering SF would likely need state law (rules note) [inference — mine].",
+   "evidence_grade": "low: agency before-and-after counts on small numbers with no comparison area; mechanism strong.",
+   "notes": "TfL 2022: zero-star cabs accounted for 4 of the 6 vision-cited fatal collisions in 2021; 191,769 permits issued in the first enforcement year; London trucks were 63% of cyclist and 25% of pedestrian deaths in 2015-17 while 5% of traffic.",
+   "sources": [
+    {
+     "title": "TfL, Direct Vision Standard and Safety Permit Scheme for HGVs, Safety, Sustainability and HR Panel paper, 2022-11-16",
+     "url": "https://board.tfl.gov.uk/documents/s18961/sshrp-20221116-item08-direct-vision-standard-and-safety-permit%20Scheme%20for%20HGVs.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Rules missing from the US model, section 6",
+     "url": "research/notes/whitepaper-2026-11/2026-11-20-rules-missing-from-us-model.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "truck-side-guards",
+   "name": "Side guards on city, refuse and contractor trucks",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Panels or rails between a truck's axles stop a person who falls against the side from going under the rear wheels.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn; lane change, merge, pass, entering",
+     "mechanism": "Cuts the severity of cyclists caught beside a turning or overtaking truck; does not prevent the crash.",
+     "target_share": "Truck share of this group is not in results.json. Across every person walking hurt in the vehicle_weight table (2017-24), trucks with no make-and-model weight (two- and three-axle, semi, tractor, tow, tank) hit 82 of 5,479 hurt (1.5%) and 25 of 818 KSI (3.1%); buses, paratransit and Muni add 111 / 27. Trucks matched by model fall in the 'over 5,000 lb' band with large SUVs and pickups (209 / 38), so the truck share is somewhat higher [inference — mine]; truck share for cyclists not computed. NTSB in Volpe: side impacts are up to 55% of cyclist deaths with tractor-trailers",
+     "effect": {
+      "low": null,
+      "mid": -61,
+      "high": null,
+      "unit": "% change in the fatality rate of cyclists in side-impact crashes with trucks",
+      "applies_to": "cyclist side impacts with trucks only (UK, 74 crashes 1980-82 against 66 in 1990-92, after the national mandate); a severity effect, not a crash effect",
+      "source": "Volpe 2014 citing TRL 2005",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn; left or U-turn",
+     "mechanism": "Same, for people walking caught by a turning truck's rear wheels.",
+     "target_share": "Truck share of this group is not in results.json. Across every pedestrian hurt in the vehicle_weight table (2017-24), trucks with no make-and-model weight (two- and three-axle, semi, tractor, tow, tank) hit 82 of 5,479 hurt (1.5%) and 25 of 818 KSI (3.1%); buses, paratransit and Muni add 111 / 27. Trucks matched by model fall in the 'over 5,000 lb' band with large SUVs and pickups (209 / 38), so the truck share is somewhat higher [inference — mine]; NTSB in Volpe: side impacts are up to 25% of pedestrian deaths with single-unit trucks",
+     "effect": {
+      "low": null,
+      "mid": -20,
+      "high": null,
+      "unit": "% change in the share of pedestrians killed in side-impact crashes with trucks",
+      "applies_to": "pedestrian side impacts with trucks only; severity effect",
+      "source": "Volpe 2014 citing TRL 2005",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "truck",
+   "cost": {
+    "low": 600,
+    "high": 2500,
+    "year": 2014,
+    "unit": "per single-unit truck, fitted",
+    "source": "Volpe 2014, vendor estimates; Europe average $847; Portland quoted about $4,500 a side for its retrofit",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "Whether SF requires side guards on city-owned or contracted trucks was not confirmed this session; a search found Boston's 2014 ordinance (city-owned and contracted trucks) but no SF ordinance [unretrieved — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "City for its fleet, refuse franchise and contracts (Boston's precedent); federal (NHTSA) for all trucks, which has no side-guard rule for trailers (rules note).",
+   "evidence_grade": "low: one national before-and-after in the UK, with a Canadian review noting the fall may not be due to guards alone; strong mechanism and very low cost.",
+   "sources": [
+    {
+     "title": "Epstein et al., Truck Sideguards for Vision Zero, US DOT Volpe Center for NYC DCAS, DOT-VNTSC-DCAS-14-01, December 2014",
+     "url": "https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/Volpe-Final-Report-on-Truck-Sideguards-for-Vision-Zero.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Rules missing from the US model, section 7 (NHTSA 88 FR 24535)",
+     "url": "research/notes/whitepaper-2026-11/2026-11-20-rules-missing-from-us-model.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "heavy-truck-street-and-time-limits",
+   "name": "Heavy-truck limits by street and time (London Lorry Control style)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Trucks over a weight limit are kept off residential streets at night and weekends, or off named streets entirely.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer heavy trucks on streets where people walk.",
+     "target_share": "Truck share of this group is not in results.json. Across every pedestrian hurt in the vehicle_weight table (2017-24), trucks with no make-and-model weight (two- and three-axle, semi, tractor, tow, tank) hit 82 of 5,479 hurt (1.5%) and 25 of 818 KSI (3.1%); buses, paratransit and Muni add 111 / 27. Trucks matched by model fall in the 'over 5,000 lb' band with large SUVs and pickups (209 / 38), so the truck share is somewhat higher [inference — mine]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing: the London scheme's stated aim is residents' wellbeing, not crashes",
+      "source": "London Councils, via rules note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "citywide rule",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no enforcement cost read",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "California cities restrict trucks by weight on named streets [model knowledge — verify]; SF's list was not read.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA Board and Board of Supervisors (Transportation Code) [model knowledge — verify].",
+   "evidence_grade": "very low: no crash evaluation found.",
+   "sources": [
+    {
+     "title": "Rules missing from the US model, section 11",
+     "url": "research/notes/whitepaper-2026-11/2026-11-20-rules-missing-from-us-model.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "isa-city-fleet",
+   "name": "Intelligent speed assistance (speed limiters) on the city fleet",
+   "lever": "vehicles and fleets",
+   "how_it_works": "A device on each city vehicle stops it exceeding the posted limit, with a short override.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "City drivers cannot speed.",
+     "target_share": "Only crashes with a city-fleet vehicle are in reach; the fleet share of each group is not in results.json (police body type does not mark city ownership beyond 'Public Transit Authority': 42 pedestrians hurt / 11 KSI with no weight)",
+     "effect": {
+      "low": null,
+      "mid": -64,
+      "high": null,
+      "unit": "% change in speeding incidences by ISA-equipped fleet vehicles (behaviour, not crashes)",
+      "applies_to": "only crashes with a city-fleet driver; a crash effect needs the power model (Elvik urban injury-crash exponent about 1.2, exponents note) applied to the measured speed change, which NYC did not publish",
+      "source": "NYC DCAS 2024",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "Only crashes with a city-fleet vehicle are in reach; the fleet share of each group is not in results.json (police body type does not mark city ownership beyond 'Public Transit Authority': 42 pedestrians hurt / 11 KSI with no weight)",
+     "effect": {
+      "low": null,
+      "mid": -64,
+      "high": null,
+      "unit": "% change in speeding incidences by ISA-equipped fleet vehicles (behaviour, not crashes)",
+      "applies_to": "only crashes with a city-fleet driver; a crash effect needs the power model (Elvik urban injury-crash exponent about 1.2, exponents note) applied to the measured speed change, which NYC did not publish",
+      "source": "NYC DCAS 2024",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "Only crashes with a city-fleet vehicle are in reach; the fleet share of each group is not in results.json (police body type does not mark city ownership beyond 'Public Transit Authority': 42 pedestrians hurt / 11 KSI with no weight)",
+     "effect": {
+      "low": null,
+      "mid": -64,
+      "high": null,
+      "unit": "% change in speeding incidences by ISA-equipped fleet vehicles (behaviour, not crashes)",
+      "applies_to": "only crashes with a city-fleet driver; a crash effect needs the power model (Elvik urban injury-crash exponent about 1.2, exponents note) applied to the measured speed change, which NYC did not publish",
+      "source": "NYC DCAS 2024",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": 2024,
+    "unit": "per vehicle not stated",
+    "source": "NYC: a $2.4M US DOT grant funds the expansion from 500 to 2,100 vehicles, about $1,500 a vehicle [inference — mine]",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "The Mayor's Vision Zero directive includes city fleet telematics (street-safety paper trail note, 2026-10-07); no SF ISA pilot found.",
+   "sf_evidence": "None.",
+   "who_decides": "City Administrator (fleet), SFMTA for Muni non-revenue fleet; SF can act alone.",
+   "evidence_grade": "low: a large fleet pilot shows a strong speed change, but no crash outcome and the city fleet is a small share of SF crashes.",
+   "notes": "Its main value may be as proof for a wider mandate; NYC's pilot covered 23 vehicle types, including heavy trucks and school buses.",
+   "sources": [
+    {
+     "title": "NYC DCAS press release, DCAS and US DOT Volpe: municipal speeding reduced 64% with Intelligent Speed Assistance, 2024-10-30",
+     "url": "https://www.nyc.gov/site/dcas/news/022-24/dcas-u-s-dot-volpe-municipal-speeding-reduction-64-new-report-intelligent",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "isa-for-repeat-speeders",
+   "name": "Court- or law-ordered speed limiters for repeat speeding offenders",
+   "lever": "policy and law",
+   "how_it_works": "Drivers with many speeding tickets must fit a limiter to keep driving.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Removes speeding by the drivers most likely to speed again.",
+     "target_share": "Share of the group caused by repeat offenders is not in the crash data; 3,658 / 247 going straight is the ceiling",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing; New York's rule (VTL §1642-b) starts May 2027 after 16 school-zone camera tickets in a year; Virginia HB 2096 from 2026-07-01",
+      "source": "speed-cameras-2026-10/2026-11-01-ambitious-version.mdx",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Same.",
+     "target_share": "434 hurt / 88 KSI ceiling",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "state law",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "offender pays [model knowledge — verify]",
+    "source": "missing",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF's speed cameras (AB 645 pilot) issue tickets but have no limiter consequence (speed camera notes).",
+   "sf_evidence": "None.",
+   "who_decides": "State Legislature.",
+   "evidence_grade": "very low: no results yet anywhere.",
+   "sources": [
+    {
+     "title": "Speed cameras: ambitious version",
+     "url": "research/notes/speed-cameras-2026-10/2026-11-01-ambitious-version.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "isa-new-vehicles-mandate",
+   "name": "Intelligent speed assistance required on new vehicles",
+   "lever": "policy and law",
+   "how_it_works": "Every new car warns or resists when driven over the limit, as in the EU since July 2024.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Speeding falls across the fleet as cars turn over.",
+     "target_share": "4,611 / 298, all in reach as the fleet turns over",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in fatal crashes, modelled for a mandatory system over 60 years (UK)",
+      "applies_to": "fatal crashes from speeding, all road users; a warning-only system meets the EU minimum and would do less",
+      "source": "Lai, Carsten and Tate 2012 via rules note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Speeding falls across the fleet as cars turn over.",
+     "target_share": "434 / 88",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in fatal crashes, modelled for a mandatory system over 60 years (UK)",
+      "applies_to": "fatal crashes from speeding, all road users; a warning-only system meets the EU minimum and would do less",
+      "source": "Lai, Carsten and Tate 2012 via rules note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Speeding falls across the fleet as cars turn over.",
+     "target_share": "581 / 94",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in fatal crashes, modelled for a mandatory system over 60 years (UK)",
+      "applies_to": "fatal crashes from speeding, all road users; a warning-only system meets the EU minimum and would do less",
+      "source": "Lai, Carsten and Tate 2012 via rules note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "federal or state vehicle standard",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "paid by car buyers",
+    "source": "missing",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No federal standard; California SB 961 (warning at 10 mph over) was vetoed in September 2024 (rules note).",
+   "sf_evidence": "None.",
+   "who_decides": "NHTSA; the Legislature for a California rule.",
+   "evidence_grade": "low: modelled, not measured; EU mandate too new for results.",
+   "sources": [
+    {
+     "title": "Regulation (EU) 2019/2144",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R2144",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Rules missing from the US model, section 5",
+     "url": "research/notes/whitepaper-2026-11/2026-11-20-rules-missing-from-us-model.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "delivery-and-ride-hail-fleet-rules",
+   "name": "Safety conditions on delivery and ride-hail fleets (telematics, ISA, direct vision, driver hours)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Commercial fleets that use SF curbs or hold permits must fit speed and vision technology and report crashes.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Commercial drivers drive slower and see more.",
+     "target_share": "Fleet share of the group is not in results.json",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[model knowledge — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Commercial drivers drive slower and see more.",
+     "target_share": "Fleet share of the group is not in results.json",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[model knowledge — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Commercial drivers drive slower and see more.",
+     "target_share": "Fleet share of the group is not in results.json",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[model knowledge — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "Commercial drivers drive slower and see more.",
+     "target_share": "Fleet share of the group is not in results.json",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[model knowledge — verify]"
+     }
+    }
+   ],
+   "unit": "permit or contract condition",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: none read",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No SF condition of this kind found. SF levies a per-trip TNC tax through SFCTA (congestion pricing equity note).",
+   "sf_evidence": "None.",
+   "who_decides": "CPUC regulates ride-hail; the city controls its own contracts, curb and loading permits [inference — mine].",
+   "evidence_grade": "very low: no evaluation found; extrapolates from DVS and ISA.",
+   "sources": [
+    {
+     "title": "Downtown congestion pricing equity and costs (TNC tax)",
+     "url": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "vehicle-weight-pricing",
+   "name": "Parking and registration fees by vehicle weight (Paris SUV parking)",
+   "lever": "pricing",
+   "how_it_works": "Heavier cars pay more to park or register, which nudges the fleet toward lighter, lower-fronted vehicles.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "A lighter fleet hurts the people it hits less badly.",
+     "target_share": "Pedestrians hit by vehicles over 5,000 lb: 209 hurt / 38 KSI; 3,500 to 5,000 lb: 1,528 / 230; of 5,479 / 818 in the vehicle_weight table. SF's own Mantel-Haenszel odds of KSI, over 5,000 lb against under 3,500 lb: 1.50 (1.04 to 2.17) (results.json vehicle_weight)",
+     "effect": {
+      "low": 1.24,
+      "mid": 1.44,
+      "high": 1.82,
+      "unit": "pooled odds ratio of a worse outcome when hit by an SUV or light truck against a car (hazard, not the fee's effect)",
+      "applies_to": "Robinson 2026: KSI vs slight 1.24 (adults); fatal vs non-fatal 1.44 (adults), 1.82 (children). The fee's effect on the fleet mix is unmeasured",
+      "source": "Robinson et al. 2026",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Same; severity only.",
+     "target_share": "Pedestrians hit by vehicles over 5,000 lb: 209 hurt / 38 KSI; 3,500 to 5,000 lb: 1,528 / 230; of 5,479 / 818 in the vehicle_weight table. SF's own Mantel-Haenszel odds of KSI, over 5,000 lb against under 3,500 lb: 1.50 (1.04 to 2.17) (results.json vehicle_weight)",
+     "effect": {
+      "low": 1.24,
+      "mid": 1.44,
+      "high": 1.82,
+      "unit": "pooled odds ratio (hazard)",
+      "applies_to": "as above",
+      "source": "Robinson et al. 2026",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "fee schedule, citywide",
+   "cost": {
+    "low": 0,
+    "high": null,
+    "year": 2026,
+    "unit": "public cost; raises revenue",
+    "source": "Paris: visitor parking €18 an hour in central districts for combustion cars over 1,600 kg (rules note)",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No weight-based fee in SF; whether state law lets a California city price meters or permits by weight was not checked (rules note).",
+   "sf_evidence": "SF's own KSI odds ratio 1.50 for heavy vehicles (results.json); SUV pedestrians killed 3.4% against 1.6% for cars, 2022-24 (exponents note).",
+   "who_decides": "SFMTA Board for meters and permits if state law allows; Legislature for registration.",
+   "evidence_grade": "very low: the hazard is well measured, the fee's effect on what people buy is not.",
+   "sources": [
+    {
+     "title": "Robinson et al., Do SUVs and LTVs cause more severe injuries to pedestrians and cyclists than passenger cars? Systematic review and meta-analysis, Injury Prevention 2026 (abstract via Europe PMC)",
+     "url": "https://doi.org/10.1136/ip-2024-045613",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Rules missing from the US model, section 9",
+     "url": "research/notes/whitepaper-2026-11/2026-11-20-rules-missing-from-us-model.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Injuries against volume, speed and vehicle size",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-18-injuries-volume-speed-exponents.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "pedestrian-protecting-front-ends",
+   "name": "Pedestrian-protection and front-end height standard for new vehicles",
+   "lever": "policy and law",
+   "how_it_works": "New cars must pass head-to-hood impact tests, which favours lower, softer front ends.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Lower, softer fronts cut head and chest injuries.",
+     "target_share": "Pedestrians hit by vehicles over 5,000 lb: 209 hurt / 38 KSI; 3,500 to 5,000 lb: 1,528 / 230; of 5,479 / 818 in the vehicle_weight table. SF's own Mantel-Haenszel odds of KSI, over 5,000 lb against under 3,500 lb: 1.50 (1.04 to 2.17) (results.json vehicle_weight)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect of the rule",
+      "applies_to": "missing; hazard: tall blunt fronts 43.6% higher pedestrian fatality risk (Hu, Monfort and Cicchino 2024, via exponents note)",
+      "source": "Hu et al. 2024",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Same.",
+     "target_share": "Pedestrians hit by vehicles over 5,000 lb: 209 hurt / 38 KSI; 3,500 to 5,000 lb: 1,528 / 230; of 5,479 / 818 in the vehicle_weight table. SF's own Mantel-Haenszel odds of KSI, over 5,000 lb against under 3,500 lb: 1.50 (1.04 to 2.17) (results.json vehicle_weight)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Same, for cyclists.",
+     "target_share": "581 / 94; vehicle mix not computed for cyclists",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no measured effect",
+      "applies_to": "missing",
+      "source": "none",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "federal standard",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "paid by car buyers",
+    "source": "missing",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "NHTSA proposed a head-to-hood standard in September 2024; whether it became final was not checked (rules note).",
+   "sf_evidence": "None.",
+   "who_decides": "NHTSA.",
+   "evidence_grade": "very low: no evaluation of the rule; hazard well measured.",
+   "sources": [
+    {
+     "title": "Rules missing from the US model, section 8",
+     "url": "research/notes/whitepaper-2026-11/2026-11-20-rules-missing-from-us-model.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "automated-vehicle-fleets",
+   "name": "Shift ride-hail miles to automated vehicles with published safety records",
+   "lever": "vehicles and fleets",
+   "how_it_works": "A robotaxi does not drink, speed or fail to yield the way human drivers do, so miles moved to it may carry fewer injury crashes.",
+   "groups": [
+    {
+     "group": "vehicles only | DUI",
+     "mechanism": "Fewer human-error crashes per mile moved.",
+     "target_share": "Only miles moved from human-driven cars are in reach; not in results.json",
+     "effect": {
+      "low": null,
+      "mid": -90,
+      "high": null,
+      "unit": "% change in any-injury crashes per million miles against Waymo's human benchmark, SF Bay Area through June 2026 (company data)",
+      "applies_to": "0.67 against 6.71 any-injury crashes per million miles; serious injury or worse 0.02 against 0.39. Waymo writes there is no perfect comparison",
+      "source": "Waymo Safety Impact via robotaxis note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Fewer human-error crashes per mile moved.",
+     "target_share": "Only miles moved from human-driven cars are in reach; not in results.json",
+     "effect": {
+      "low": null,
+      "mid": -90,
+      "high": null,
+      "unit": "% change in any-injury crashes per million miles against Waymo's human benchmark, SF Bay Area through June 2026 (company data)",
+      "applies_to": "0.67 against 6.71 any-injury crashes per million miles; serious injury or worse 0.02 against 0.39. Waymo writes there is no perfect comparison",
+      "source": "Waymo Safety Impact via robotaxis note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer human-error crashes per mile moved.",
+     "target_share": "Only miles moved from human-driven cars are in reach; not in results.json",
+     "effect": {
+      "low": null,
+      "mid": -90,
+      "high": null,
+      "unit": "% change in any-injury crashes per million miles against Waymo's human benchmark, SF Bay Area through June 2026 (company data)",
+      "applies_to": "0.67 against 6.71 any-injury crashes per million miles; serious injury or worse 0.02 against 0.39. Waymo writes there is no perfect comparison",
+      "source": "Waymo Safety Impact via robotaxis note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "fleet policy",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no public cost",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Waymo operates in SF under CPUC and DMV permits [model knowledge — verify].",
+   "sf_evidence": "Waymo's SF-area figures above (company data).",
+   "who_decides": "CPUC and California DMV; the city has little authority [model knowledge — verify].",
+   "evidence_grade": "low: large exposure but company-published with benchmark choices made by the company.",
+   "sources": [
+    {
+     "title": "Robotaxis, freight, curb and visitors evaluation note",
+     "url": "research/notes/robotaxis-freight-curb-visitors-2026-11/2026-11-06-evaluation.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Waymo Safety Impact",
+     "url": "https://waymo.com/safety/impact/",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "congestion-pricing-cordon",
+   "name": "Downtown congestion charge (London, Stockholm, New York)",
+   "lever": "pricing",
+   "how_it_works": "Drivers pay to enter or drive in the core at busy hours, so fewer cars are there and some trips move to transit.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts.",
+     "target_share": "SF modelled zone: about 258 people hurt a year in charging hours (pricing equity note), against about 3,810 a year citywide (30,482 over 8 years in results.json totals), so about 7% of every group at most [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al., via pricing note). Mid: London killed or seriously injured -12.12% by synthetic control (Li and Gao 2019, via the scoping review). High: London all accidents -38 to -40% in the zone and charged hours (Green et al.), who also estimate 46 fewer serious and fatal accidents and 4.6 fewer deaths a year, and falls in adjacent areas and for uncharged vehicles. Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al. 2026; Li and Gao 2019",
+      "tag": "[primary — read 2026-11-25] for Green; [secondary — verify] for the others"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts.",
+     "target_share": "SF modelled zone: about 258 people hurt a year in charging hours (pricing equity note), against about 3,810 a year citywide (30,482 over 8 years in results.json totals), so about 7% of every group at most [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al., via pricing note). Mid: London killed or seriously injured -12.12% by synthetic control (Li and Gao 2019, via the scoping review). High: London all accidents -38 to -40% in the zone and charged hours (Green et al.), who also estimate 46 fewer serious and fatal accidents and 4.6 fewer deaths a year, and falls in adjacent areas and for uncharged vehicles. Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al. 2026; Li and Gao 2019",
+      "tag": "[primary — read 2026-11-25] for Green; [secondary — verify] for the others"
+     }
+    },
+    {
+     "group": "vehicles only | red light",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts.",
+     "target_share": "SF modelled zone: about 258 people hurt a year in charging hours (pricing equity note), against about 3,810 a year citywide (30,482 over 8 years in results.json totals), so about 7% of every group at most [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al., via pricing note). Mid: London killed or seriously injured -12.12% by synthetic control (Li and Gao 2019, via the scoping review). High: London all accidents -38 to -40% in the zone and charged hours (Green et al.), who also estimate 46 fewer serious and fatal accidents and 4.6 fewer deaths a year, and falls in adjacent areas and for uncharged vehicles. Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al. 2026; Li and Gao 2019",
+      "tag": "[primary — read 2026-11-25] for Green; [secondary — verify] for the others"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts.",
+     "target_share": "SF modelled zone: about 258 people hurt a year in charging hours (pricing equity note), against about 3,810 a year citywide (30,482 over 8 years in results.json totals), so about 7% of every group at most [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al., via pricing note). Mid: London killed or seriously injured -12.12% by synthetic control (Li and Gao 2019, via the scoping review). High: London all accidents -38 to -40% in the zone and charged hours (Green et al.), who also estimate 46 fewer serious and fatal accidents and 4.6 fewer deaths a year, and falls in adjacent areas and for uncharged vehicles. Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al. 2026; Li and Gao 2019",
+      "tag": "[primary — read 2026-11-25] for Green; [secondary — verify] for the others"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts.",
+     "target_share": "SF modelled zone: about 258 people hurt a year in charging hours (pricing equity note), against about 3,810 a year citywide (30,482 over 8 years in results.json totals), so about 7% of every group at most [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al., via pricing note). Mid: London killed or seriously injured -12.12% by synthetic control (Li and Gao 2019, via the scoping review). High: London all accidents -38 to -40% in the zone and charged hours (Green et al.), who also estimate 46 fewer serious and fatal accidents and 4.6 fewer deaths a year, and falls in adjacent areas and for uncharged vehicles. Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al. 2026; Li and Gao 2019",
+      "tag": "[primary — read 2026-11-25] for Green; [secondary — verify] for the others"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Fewer vehicles in the zone mean fewer conflicts.",
+     "target_share": "SF modelled zone: about 258 people hurt a year in charging hours (pricing equity note), against about 3,810 a year citywide (30,482 over 8 years in results.json totals), so about 7% of every group at most [inference — mine]",
+     "effect": {
+      "low": -4,
+      "mid": -12,
+      "high": -40,
+      "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
+      "applies_to": "Low: New York injury or fatal crashes, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al., via pricing note). Mid: London killed or seriously injured -12.12% by synthetic control (Li and Gao 2019, via the scoping review). High: London all accidents -38 to -40% in the zone and charged hours (Green et al.), who also estimate 46 fewer serious and fatal accidents and 4.6 fewer deaths a year, and falls in adjacent areas and for uncharged vehicles. Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Green et al. 2014; Itzkowitz et al. 2026; Li and Gao 2019",
+      "tag": "[primary — read 2026-11-25] for Green; [secondary — verify] for the others"
+     }
+    }
+   ],
+   "unit": "cordon or area charge, downtown",
+   "cost": {
+    "low": 25000000,
+    "high": 75000000,
+    "year": 2026,
+    "unit": "per year to run and pay off the system",
+    "source": "pricing equity note, our estimate; SFCTA's 2010 study put implementation at $60M to $100M (2008 $)",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFCTA studied a downtown charge (2010 MAPS study and a later downtown study); no charge in place (pricing notes).",
+   "sf_evidence": "Model only: SFDPH's 2011 health impact assessment projected about 35 pedestrian and 5 cyclist injury collisions averted a year (via scoping review, unretrieved).",
+   "who_decides": "State authorizing law, then SFCTA and SFMTA boards and the Board of Supervisors [secondary — verify].",
+   "evidence_grade": "moderate: several controlled London studies and New York's comparison-group study, which disagree on injuries; total crashes fall more reliably than injury crashes.",
+   "notes": "Pricing note: safety alone does not pay for a cordon in SF (8% to 12% fewer injuries worth $6M to $9M a year against $25M to $75M to run).",
+   "sources": [
+    {
+     "title": "Green, Heywood and Navarro, Traffic Accidents and the London Congestion Charge, Lancaster working paper 2014/015",
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/lums/economics/working-papers/LondonCongestionCharge.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Downtown congestion pricing evidence note",
+     "url": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Downtown congestion pricing equity and costs",
+     "url": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "low-traffic-neighbourhoods",
+   "name": "Low-traffic neighbourhoods: filters that close residential cells to through traffic",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Planters, posts or camera gates let residents and emergency vehicles in but stop through driving across a cell of residential streets.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 1,357 / 96 of this group; low-stress residential 857 / 65 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 1,031 / 19 of this group; low-stress residential 678 / 9 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 688 / 26 of this group; low-stress residential 502 / 18 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 1,010 / 102 of this group; low-stress residential 538 / 54 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 542 / 91 of this group; low-stress residential 271 / 48 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 443 / 33 of this group; low-stress residential 188 / 18 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "cell (city block counts vary)",
+   "cost": {
+    "low": 6600,
+    "high": 22000,
+    "year": 2025,
+    "unit": "per block of a cell, including a $250,000 study per cell",
+    "source": "low-traffic-cells cost note from SFCTA memos; a concrete mid-block filter $19,000 to $40,000; upkeep $2,750 to $3,250 a filter a year",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF has no LTN program; Slow Streets are signed corridors, and the car-free JFK Drive and Market Street closures are single streets (circulation note).",
+   "sf_evidence": "On 19 Slow Streets, injury crashes came to 0.73 (0.58 to 0.88) of expected, 0.88 (0.64 to 1.12) leaving out those with other changes; most opened in the 2020 traffic collapse, so the drop cannot be separated from less traffic (methods note) [inference — mine].",
+   "who_decides": "SFMTA Board (traffic code changes), Board of Supervisors; SFFD review; camera-enforced filters would need state authority [inference — mine].",
+   "evidence_grade": "moderate: one large controlled before-and-after (113 schemes, 9 years) plus smaller London studies; not randomized; injuries not risk per trip.",
+   "notes": "Furlong found no convincing difference by filter type for serious injuries, so physical filters SF can build did about as well as camera filters (circulation note).",
+   "sources": [
+    {
+     "title": "Furlong et al., Low Traffic Neighbourhoods in London reduce road traffic injuries: a controlled before-and-after analysis (2012-2024), Injury Prevention 2025 (abstract)",
+     "url": "https://researchonline.lshtm.ac.uk/id/eprint/4676732",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Circulation plans evidence note",
+     "url": "research/notes/circulation-plans-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Low-traffic cells costs",
+     "url": "research/notes/low-traffic-cells-2026-11/2026-11-15-cell-costs-and-city-counts.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Methods by intervention",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "superblocks",
+   "name": "Superblocks: rebuilt multi-block cells with through traffic removed and streets given to people",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Through traffic is routed around a block of 3 by 3 streets and the inside streets are rebuilt as slow shared space.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe speed",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 1,357 / 96 of this group; low-stress residential 857 / 65 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Through traffic leaves the cell's residential streets, so fewer and slower cars meet people there.",
+     "target_share": "Residential street class holds 1,010 / 102 of this group; low-stress residential 538 / 54 (results.json family_stress by_street_class). Only blocks inside built cells are in reach",
+     "effect": {
+      "low": -24,
+      "mid": -37,
+      "high": -48,
+      "unit": "% change in people killed or seriously injured inside the LTN (95% CI)",
+      "applies_to": "streets inside the filtered cell only; boundary roads 0% (-7% to +8%); all injuries inside -35% (-29% to -40%); pedestrians -44% inside (circulation note)",
+      "source": "Furlong et al. 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "superblock (about 9 blocks)",
+   "cost": {
+    "low": 580000,
+    "high": 980000,
+    "year": 2026,
+    "unit": "per superblock per year, build cost over 10 years",
+    "source": "calmer-streets equity note from Vitoria (€5M pilot) and Sant Antoni (€7M)",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "None in SF.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA, Public Works, Planning, Board of Supervisors.",
+   "evidence_grade": "very low: no superblock injury result was found; the nearest effect is older area-wide calming (Cochrane: injury crashes 0.89, 0.80 to 1.00).",
+   "notes": "The LTN effect in the groups list is borrowed from London filters and is the nearest mechanism, not a superblock result.",
+   "sources": [
+    {
+     "title": "Calmer streets equity and costs",
+     "url": "research/notes/calmer-streets-2026-11/",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Barcelona superblocks health evaluation (no injury result)",
+     "url": "https://www.aspb.cat/wp-content/uploads/2021/10/English-ASPB_salut-carrers-resultsreport-Superblocks.pdf",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "demand-based-parking-pricing",
+   "name": "Demand-based parking prices (SFpark) to cut circling and double parking",
+   "lever": "pricing",
+   "how_it_works": "Meter prices rise where blocks fill until about one space a block is free, so fewer drivers circle or double park.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "lane change, merge, pass, entering",
+     "mechanism": "Fewer double-parked vehicles forcing cyclists into traffic.",
+     "target_share": "Lane-change movement 148 / 10 of 1,137 / 90 (size_families.chart); double-parking involvement is not coded in results.json",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no crash effect measured",
+      "applies_to": "SFpark: double parking -22% against -5% in control areas; circling 8,134 to 5,721 miles a day; SFMTA 'assumes' fewer collisions",
+      "source": "SFMTA SFpark evaluation 2014 via pricing note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "lane change, merge, pass, entering",
+     "mechanism": "Fewer lane changes around double-parked vehicles and less circling.",
+     "target_share": "Lane change 873 / 31 of 3,974 / 208",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "no crash effect measured",
+      "applies_to": "as above",
+      "source": "SFMTA 2014",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "metered blocks, citywide",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SFpark capital cost not read; meters raise revenue",
+    "tag": "[model knowledge — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA runs demand-responsive meter pricing citywide [secondary — verify].",
+   "sf_evidence": "SFpark pilot evaluation (2014) measured double parking and circling, not crashes.",
+   "who_decides": "SFMTA Board.",
+   "evidence_grade": "very low: no crash evaluation; the CMF Clearinghouse has no pricing entry.",
+   "sources": [
+    {
+     "title": "Downtown congestion pricing evidence note (SFpark section)",
+     "url": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "SFMTA, SFpark Pilot Project Evaluation, 2014",
+     "url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2018/08/sfpark_pilot_project_evaluation.pdf",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "mode-shift-safety-in-numbers",
+   "name": "Traffic reduction and mode shift, credited by the volume and safety-in-numbers exponents",
+   "lever": "transit and land use",
+   "how_it_works": "Any lever that moves trips from cars to walking, cycling or transit cuts injuries less than one for one, because injuries scale with a power of motor traffic below 1 and risk per walker or cyclist falls as their numbers grow.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer cars mean fewer conflicts; more walkers make each safer.",
+     "target_share": "All of the group, scaled by the change in motor volume where it happens",
+     "effect": {
+      "low": 0.4,
+      "mid": 0.5,
+      "high": 0.5,
+      "unit": "exponent b in injuries = a x volume^b",
+      "applies_to": "motor-vehicle volume b 0.50 for pedestrian and cyclist crashes (Elvik and Bjørnskau 2017); walking/cycling volume b about 0.4 (Jacobsen 2003, adopted by TAG: doubling cycling gives 32% more cycling accidents); SF main streets 0.4 to 0.5 (exponents note)",
+      "source": "TAG A4.1; Elvik and Bjørnskau 2017 via exponents note",
+      "tag": "[primary — read 2026-11-25] for TAG; [secondary — verify] for Elvik and Bjørnskau"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Same, for cyclists.",
+     "target_share": "All of the group",
+     "effect": {
+      "low": 0.4,
+      "mid": 0.43,
+      "high": 0.5,
+      "unit": "exponent b",
+      "applies_to": "cycle volume b 0.43 (Elvik and Bjørnskau); 0.4 (TAG)",
+      "source": "TAG A4.1; Elvik and Bjørnskau 2017",
+      "tag": "[primary — read 2026-11-25] / [secondary — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "mechanism": "Car-only crashes fall faster than traffic.",
+     "target_share": "All of the group",
+     "effect": {
+      "low": 1.12,
+      "mid": 1.25,
+      "high": 1.69,
+      "unit": "exponent b on AADT, multiple-vehicle fatal and injury crashes, urban arterial segments",
+      "applies_to": "HSM Chapter 12 draft, by road type (exponents note); unchecked against the 2010 tables",
+      "source": "HSM Ch. 12 draft via exponents note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "crediting rule, not a fix on its own",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "depends on the lever that moves the trips",
+    "source": "n/a",
+    "tag": "[inference — mine]"
+   },
+   "life_years": null,
+   "sf_now": "SF's 80% low-carbon trip goal was repealed in April 2026 and replaced with a 25% per-capita VMT cut by 2030 (street-safety paper trail note).",
+   "sf_evidence": "SF blocks: b about 0.4 to 0.5 on main streets and 0.7 on counted residential blocks, a cross-section, not a change on any street (exponents note).",
+   "who_decides": "Whoever owns the lever (pricing, LTNs, transit); the Board of Supervisors for the VMT target.",
+   "evidence_grade": "moderate: a meta-analysis and national appraisal guidance agree, but it is cross-sectional and TAG says it holds above a critical mass.",
+   "notes": "Use this to credit volume levers (pricing, LTNs, transit, parking) so their injury effect is not taken as one-for-one with traffic. TAG 2.3.27: local design fixes usually matter more than the change in walking and cycling.",
+   "sources": [
+    {
+     "title": "UK DfT, TAG Unit A4.1 Social Impact Appraisal, November 2022, paras 2.3.24-2.3.25",
+     "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1007447/tag-unit-a-4-1.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Injuries against volume, speed and vehicle size",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-18-injuries-volume-speed-exponents.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "school-streets",
+   "name": "School Streets: closing the school block to through traffic at drop-off and pick-up",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "The street outside the school closes to cars for an hour at the bell, so children arrive on foot without cars turning and reversing around them.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "No turning cars at the school gate in school hours.",
+     "target_share": "Children under 18 walking: 383 hurt / 43 KSI across all pedestrian groups (results.json grouping_alternatives); the share in this group and in school hours is not computed",
+     "effect": {
+      "low": -23,
+      "mid": -43,
+      "high": -58,
+      "unit": "% change in injury crashes involving child pedestrians within 656 ft of a school in school-day windows (95% CI)",
+      "applies_to": "children walking near schools in school hours; this is Barcelona's school-environment rebuild, not a bell-time closure, and no School Street study measured injuries",
+      "source": "Perez et al. 2023 via school-streets note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe starting or backing",
+     "mechanism": "No drop-off reversing and pulling out at the gate.",
+     "target_share": "Children under 18 walking: 383 hurt / 43 KSI across all pedestrian groups (results.json grouping_alternatives); the share in this group and in school hours is not computed",
+     "effect": {
+      "low": -23,
+      "mid": -43,
+      "high": -58,
+      "unit": "% change in injury crashes involving child pedestrians within 656 ft of a school in school-day windows (95% CI)",
+      "applies_to": "children walking near schools in school hours; this is Barcelona's school-environment rebuild, not a bell-time closure, and no School Street study measured injuries",
+      "source": "Perez et al. 2023 via school-streets note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "school",
+   "cost": {
+    "low": 6000,
+    "high": 32000,
+    "year": 2024,
+    "unit": "per school, set-up (central $17,000); staffing up to $60,000 a year where volunteers are paid",
+    "source": "Hampshire Cabinet paper 2024 converted at $1.27 a pound, via studies.json",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF runs one daily School Street (Elm Street at Tenderloin Community School, since April 2021); SFMTA's draft plan lists School Streets with no count or budget (school-streets sf-now note).",
+   "sf_evidence": "None.",
+   "who_decides": "ISCOTT permit for closures up to 10 hours a day, four days a week; SFMTA Board beyond that; SFUSD and school communities.",
+   "evidence_grade": "low: controlled mode-share results (about 5 points fewer children driven) but no injury study; the injury figure is borrowed from school-area rebuilds.",
+   "notes": "NYC: school-age pedestrian injuries in school-travel hours fell 44% in tracts with Safe Routes to School projects (DiMaggio and Li 2013, via note).",
+   "sources": [
+    {
+     "title": "School Streets evidence note",
+     "url": "research/notes/school-streets-2026-10/2026-10-31-evidence.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "School Streets SF now",
+     "url": "research/notes/school-streets-2026-10/2026-10-31-sf-now.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "hardened-daylighting",
+   "name": "Hardened daylighting: posts, planters or bike-share docks in the 20 feet before each crosswalk",
+   "lever": "street design",
+   "how_it_works": "Physical objects keep cars out of the corner so drivers and people crossing can see each other, and they tighten turns.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn; right turn",
+     "mechanism": "Drivers turning at the corner see the person stepping off the curb sooner.",
+     "target_share": "Turning movements: left 1,294 / 119 and right 433 / 33 of 2,491 / 274 (size_families.chart); only treated corners are in reach",
+     "effect": {
+      "low": -10,
+      "mid": -32,
+      "high": null,
+      "unit": "% change in pedestrian injuries at treated intersections against nearby untreated ones",
+      "applies_to": "pedestrian injuries at hardened corners (planters, bollards); all-mode injuries showed no significant change. Mid: one pedestrian injury every 3.4 years after against every 2.3 expected. Low: the 10% floor the daylighting note uses because the all-injury change was not significant [inference — mine]",
+      "source": "NYC DOT 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Some people crossing against the signal or mid-corner are seen sooner.",
+     "target_share": "Of 1,649 / 330, only crashes at corners; at-intersection share for this group not in results.json",
+     "effect": {
+      "low": -10,
+      "mid": -32,
+      "high": null,
+      "unit": "% change in pedestrian injuries at treated intersections against nearby untreated ones",
+      "applies_to": "pedestrian injuries at hardened corners (planters, bollards); all-mode injuries showed no significant change. Mid: one pedestrian injury every 3.4 years after against every 2.3 expected. Low: the 10% floor the daylighting note uses because the all-injury change was not significant [inference — mine]",
+      "source": "NYC DOT 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection",
+   "cost": {
+    "low": 8000,
+    "high": 18100,
+    "year": 2026,
+    "unit": "per location, painted safety zone with posts, all in",
+    "source": "daylighting equity note, backed out of SFCTA's 2026 District 5 package; NYC DOT about $10,000 a location",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 5,
+   "sf_now": "SF built 286 painted safety zones in 12 years, about 24 a year; SFMTA targets about 50 a year (daylighting equity note).",
+   "sf_evidence": "At 249 SF painted safety zone corners, pedestrians hurt changed about the same as at nearby corners: +7% (-14% to +30%) (outcomes section, our analysis).",
+   "who_decides": "SFMTA (Livable Streets), funded through SFCTA Prop L allocations.",
+   "evidence_grade": "low: NYC's controlled comparison is significant for pedestrians only, and SF's own posts-and-paint corners show no clear change.",
+   "sources": [
+    {
+     "title": "NYC DOT, Daylighting and Street Safety: An Analysis, January 2025, pp. 1, 39, 43",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/daylighting-and-street-safety.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Daylighting equity and costs",
+     "url": "research/notes/daylighting-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Outcomes section",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "daylighting-state-rule-ab413",
+   "name": "State 20-foot no-parking rule before crosswalks (AB 413), enforced",
+   "lever": "policy and law",
+   "how_it_works": "Parking within 20 feet of a crosswalk is banned by state law, with or without red paint.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn; right turn",
+     "mechanism": "Clearer sight lines at corners where drivers obey the rule.",
+     "target_share": "Same corner turning share as hardened daylighting (1,727 of 2,491 turning)",
+     "effect": {
+      "low": null,
+      "mid": 0,
+      "high": null,
+      "unit": "% change in pedestrian injuries, sign-only daylighting against nearby corners",
+      "applies_to": "NYC: 'daylighting with signs alone was not found to have a statistically significant safety benefit'; NYC's hydrant-zone cross-section suggests universal daylighting 'may have negative effects'",
+      "source": "NYC DOT 2025",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "state rule, citywide",
+   "cost": {
+    "low": 500,
+    "high": 500,
+    "year": 2025,
+    "unit": "per intersection painted red curb, 10-year life",
+    "source": "SFCTA District 5 request via daylighting equity note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "SF has issued the state rule's tickets almost only as $0 warnings: 13,820 of 13,821 (daylighting equity note).",
+   "sf_evidence": "None for the rule itself.",
+   "who_decides": "State law; SFMTA for enforcement and paint.",
+   "evidence_grade": "low: a controlled comparison in one city shows no effect for signs only.",
+   "sources": [
+    {
+     "title": "NYC DOT, Daylighting and Street Safety: An Analysis, January 2025, pp. 1, 39, 43",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/daylighting-and-street-safety.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Daylighting equity and costs",
+     "url": "research/notes/daylighting-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "No group in results.json is split by vehicle type, so truck, bus and fleet shares of each group are missing; only the pedestrian vehicle_weight table gives a citywide truck share (82 of 5,479 hurt, 25 of 818 KSI, unweighted trucks). Bicycle and car-only truck shares are not computed.",
+  "No time-of-day split by mode x violation family; late-night reach uses the all-mode movement x violation x time profiles, and the alcohol share of late-night speed crashes is carried from the 2022-24 DUI note.",
+  "City-fleet involvement is not identifiable in the police data, so ISA and direct-vision rules for the city fleet have no SF target share.",
+  "No SF cost per checkpoint, drivers screened or arrests; checkpoint cost per injury avoided cannot be computed.",
+  "No direct vision standard cost (scheme or per truck) and no independent evaluation; TfL figures are agency before-and-after counts.",
+  "Side guards: whether SF already requires them on city or contracted trucks is unconfirmed; the Volpe effectiveness rests on one UK before-and-after.",
+  "No injury evaluation of superblocks (Barcelona), Paris's school streets or SUV parking fee, School Streets anywhere, parking pricing, heavy-truck time limits, delivery or ride-hail fleet rules, or late-night transit in SF.",
+  "Congestion pricing injury effects disagree: London studies show large falls, New York's comparison-group study shows no significant change in injury crashes; Stockholm and Milan primaries were not opened this session.",
+  "Crediting volume levers needs the TRL sequential method so LTNs, pricing and mode shift are not double-counted with street fixes; not done here.",
+  "Not opened this session (tagged secondary): Elvik and Bjørnskau 2017, Lai et al. 2012 ISA model, Perez et al. 2023 school environments, CalSTA SB 1046 evaluation, Itzkowitz et al. New York, Li and Gao 2019, Waymo's hub, Hu et al. 2024, TØI Handbook chapters (tshandbok.no refused connections in earlier sessions), SWOV and Trafikverket for vehicle and DUI levers.",
+  "Other state law changes in reach of this lane (camera-enforced filters and bus gates, weight-based registration, all-offender interlocks) have no California bill text checked this session."
+ ]
+}

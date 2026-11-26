@@ -1,0 +1,2542 @@
+{
+ "lane": "bicycle and scooter groups",
+ "fixes": [
+  {
+   "id": "curb-protected-bike-lane",
+   "name": "Curb-protected bike lane (raised or concrete-separated cycle track) on high-stress streets",
+   "lever": "street design",
+   "how_it_works": "A continuous curb or raised track keeps people biking out of the moving lane and the door zone along the block, so sideswipes, rear-ends and doorings between junctions mostly cannot happen.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "lane change, merge, pass, entering; going straight",
+     "mechanism": "Removes the shared lane where drivers changing lanes, merging or passing sideswipe a rider, and where riders swerve into traffic.",
+     "target_share": "Midblock share 382 of 1,137 people hurt (30 KSI); sideswipes 420 of 1,137 (16 KSI); driver lane change or merge 84 hurt as at-fault movement. Basis: at-fault party and collision type split computed this session [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -98,
+      "mid": -89,
+      "high": -46,
+      "unit": "% change in injury risk per trip (odds ratio 0.11, 95% CI 0.02 to 0.54)",
+      "applies_to": "Cyclists injured badly enough to visit an emergency department, cycle track against a major street with parked cars and no facility; not crashes at junctions, and rests on 2 injury sites",
+      "source": "Teschke et al. 2012, case-crossover, Toronto and Vancouver",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn; left or U-turn",
+     "mechanism": "Danish before and after studies find urban one-way cycle tracks shift crashes from links to junctions unless the junction is redesigned too.",
+     "target_share": "Intersection share 755 of 1,137 people hurt (60 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": 20,
+      "high": null,
+      "unit": "% change in all crashes at intersections (all severities)",
+      "applies_to": "Intersections along a street where a one-way urban cycle track was added, every road user; the same table gives -10% on links, so about +10% overall",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.3, p. 13 to 14",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Separates riders from drivers who hit them from behind or alongside at speed; does nothing for solo falls.",
+     "target_share": "Driver at fault 127 of 581 people hurt (16 KSI); rear-end collisions 118 (14 KSI). Solo bike crashes, 227 hurt and 54 KSI, are out of reach [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -99,
+      "mid": -90,
+      "high": -5,
+      "unit": "% change in injury risk per trip (odds ratio 0.10, 0.01 to 0.95)",
+      "applies_to": "Emergency department cyclist injuries, heavy separation (tall continuous barrier or grade separation) against a major road with no facility",
+      "source": "Cicchino et al. 2020, case-crossover, Washington DC, New York, Portland",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "A track set behind parked cars with a buffer, or with no parking beside it, puts the rider outside the swing of a driver's door.",
+     "target_share": "Driver or parked vehicle at fault while parked or parking 131 of 286 (12 KSI); midblock 196 of 286 (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings on a block that gets a curb-protected lane",
+      "source": "missing: no crash study of dooring before and after a protected lane was found",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | bike or scooter rules",
+     "mechanism": "Riders on the sidewalk are mostly avoiding the street; a protected lane gives them a legal place to ride.",
+     "target_share": "Bicyclist at fault 111 of 115 people hurt (11 KSI); codes 21663 and 7.2.12 (sidewalk riding) among them [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": -88,
+      "high": null,
+      "unit": "% change in share of riders on the sidewalk (16% to 2%)",
+      "applies_to": "Sidewalk riding on Calgary's pilot cycle track routes, 2014 to 2016; a behaviour change, not a crash count",
+      "source": "City of Calgary, Centre City Cycle Track Network Pilot final report, 2016",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | bike or scooter rules",
+     "mechanism": "Same mechanism: people hurt walking by a bike or scooter rider on the sidewalk fall when the rider has a protected lane to use.",
+     "target_share": "All 153 people hurt (26 KSI) in this group are crashes coded to a bike or scooter rule with a pedestrian involved [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Pedestrians hit by sidewalk riders",
+      "source": "missing: no crash study measured this; only the Calgary sidewalk riding share",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | following too closely",
+     "mechanism": "Removes drivers from the riders' lane, so rear-ends between them need a lane change first.",
+     "target_share": "Driver at fault 44 of 80 people hurt (3 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Rear-end crashes between drivers and riders",
+      "source": "missing: no measured effect for this crash type",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "street mile",
+   "cost": {
+    "low": 16000000,
+    "high": 24000000,
+    "year": 2025,
+    "unit": "per street mile, concrete rebuild (Central Embarcadero), budget at approval",
+    "source": "SF unit costs file",
+    "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF's 2023 crash analysis found Class IV separated lanes had the second-lowest share of crashes ending in a KSI outcome (9.0%), and 11 of 13 KSI crashes on Class IV lanes were at intersections (SFBRP memo, p. 4) [primary — read 2026-11-25]. The SFMTA Board's draft plan to June 2027 lists 3 miles of protected lanes [secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify].",
+   "sf_evidence": "No dated record of when protection was added, so SF can't yet test it (methods-by-intervention note) [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx, verify]. Dixon et al. 2023, which includes SF among its three model cities, gives CMF 0.498 for posts against paint (see quick-build fix).",
+   "who_decides": "SFMTA Board approves the project and the parking and lane changes; the Board of Supervisors can hear a CEQA appeal; Public Works builds concrete.",
+   "evidence_grade": "moderate: two case-crossover studies agree on curb separation, but on few sites, and the Danish handbook finds urban tracks raise junction crashes unless junctions are rebuilt.",
+   "sources": [
+    {
+     "title": "Teschke et al., Route infrastructure and the risk of injuries to bicyclists: a case-crossover study, AJPH 102(12), 2012",
+     "url": "https://doi.org/10.2105/AJPH.2012.300762",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "Cicchino et al., Not all protected bike lanes are the same, Accident Analysis and Prevention 144, 2020",
+     "url": "https://doi.org/10.1016/j.aap.2020.105490",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "City of Calgary, Centre City Cycle Track Network Pilot Project Final Report, 2016-12-08",
+     "url": "https://www.calgary.ca/content/dam/www/transportation/tp/documents/cycling/city-centre-cycle-track/downtown-cycle-track-pilot-project-final-report-dec-2016.pdf",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "Safe Streets Research & Consulting for SFMTA, Biking and Rolling Plan Final Draft Crash Analysis Step II, memo 2023-07-12",
+     "url": "https://sfmta.com/media/36094/download",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works unit costs from SFMTA quick-build budgets at Board approval and the Central Embarcadero rebuild (data/school-budget/unit-costs.json)",
+     "url": "../../../../data/school-budget/unit-costs.json",
+     "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "quick-build-separated-lane",
+   "name": "Quick-build separated bike lane (paint, flexible posts, parking protection, some concrete)",
+   "lever": "street design",
+   "how_it_works": "Posts and a buffer, often with parked cars moved out, separate the bike lane from moving traffic at a fraction of a concrete rebuild.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Posts stop drivers drifting or merging into the bike lane; parked cars between lane and traffic add a buffer.",
+     "target_share": "Driver at fault 692 of 1,137 people hurt (41 KSI); sideswipes 420 (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -50.2,
+      "high": null,
+      "unit": "% change in vehicle-bicycle crashes (CMF 0.498)",
+      "applies_to": "Police-reported vehicle and bicycle crashes on a segment converted from a painted lane to one with flexible posts; Cambridge MA, San Francisco and Seattle models, 4 stars",
+      "source": "Dixon et al. 2023, FHWA-HRT-23-078, CMF 11294",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Against a street with no lane at all, light separation did no better, and two-way light separation did worse.",
+     "target_share": "Same reach as above",
+     "effect": {
+      "low": null,
+      "mid": 19,
+      "high": null,
+      "unit": "% change in injury risk per trip (odds ratio 1.19, one-way light separation; two-way OR 11.38, 1.40 to 92.57)",
+      "applies_to": "Emergency department cyclist injuries, posts, parked cars or low curb against a major road with no facility",
+      "source": "Cicchino et al. 2020",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "A parking-protected layout with a buffer moves the door zone away from the riding line.",
+     "target_share": "Driver or parked vehicle at fault while parked or parking 131 of 286 people hurt (12 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings",
+      "source": "missing: no dooring crash result for parking-protected lanes was found; see the door-buffer fix for rider position",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | dooring",
+     "mechanism": "The same door-zone mechanism for people on scooters and other light vehicles, who police code to vehicles-only crashes.",
+     "target_share": "117 people hurt (4 KSI) in vehicles-only doorings; most doored parties in this mode are not drivers of cars [inference — mine]; 1,171 people hurt (153 KSI) citywide had victim role Other (scooter or other), 36 of them in vehicles-only doorings [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings of scooter riders",
+      "source": "missing: no study found",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe starting or backing",
+     "mechanism": "A lane with posts or parking protection moves riders away from drivers backing or pulling out of parking.",
+     "target_share": "Driver at fault 47 of 50 people hurt (2 KSI): backing 23, entering traffic 16 [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Backing and pull-out crashes",
+      "source": "missing: no measured effect for this crash type",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "street mile",
+   "cost": {
+    "low": 890000,
+    "high": 2390000,
+    "year": 2024,
+    "unit": "per street mile, budget at Board approval (five SFMTA quick-builds: 17th St, Mid-Valencia, Winston, Frida Kahlo Way, Beach St), central $1.5M",
+    "source": "SF unit costs file",
+    "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF's main way of adding separation; the 31 quick-build and corridor projects pooled did no better than the rest of SF on all injury crashes, and the city has no record of paint against posts against concrete per block [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify].",
+   "sf_evidence": "Pooled SF projects: no measurable change once the method's lean is taken out (outcomes section). Howard and Townsend fell 45% and 44% for all injury crashes, but their bike crashes didn't fall [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify].",
+   "who_decides": "SFMTA Board (legislation for parking and lane changes); SFMTA staff design.",
+   "evidence_grade": "moderate: a 4-star FHWA CMF that includes SF, contradicted by a case-crossover study against a no-facility baseline; the two use different baselines.",
+   "sources": [
+    {
+     "title": "Dixon, Avelar-Moran and Seyedeh, Developing Crash Modification Factors for Separated Bicycle Lanes, FHWA-HRT-23-078, 2023 (CMF Clearinghouse 11294)",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=11294",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "Cicchino et al., Not all protected bike lanes are the same, Accident Analysis and Prevention 144, 2020",
+     "url": "https://doi.org/10.1016/j.aap.2020.105490",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "SF Works, Did SF's street safety projects cut injury crashes? (outcomes section, empirical Bayes on DataSF crashes)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify]"
+    },
+    {
+     "title": "SF Works unit costs from SFMTA quick-build budgets at Board approval and the Central Embarcadero rebuild (data/school-budget/unit-costs.json)",
+     "url": "../../../../data/school-budget/unit-costs.json",
+     "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "door-zone-buffer",
+   "name": "Door-zone buffer: stripe or widen the space between parked cars and the bike lane",
+   "lever": "street design",
+   "how_it_works": "A painted buffer on the parking side pulls riders out of the arc of an opening door; a wider lane alone does not.",
+   "groups": [
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "Riders who travel outside the door arc cannot be hit by a door opening.",
+     "target_share": "Driver or parked vehicle at fault while parked or parking 131 of 286 people hurt (12 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "share of riders outside the door zone: under 10% to 40% after a 2-foot buffer (one Chicago street)",
+      "applies_to": "Rider position, not crashes, on Clark St, Chicago",
+      "source": "Streetsblog report of the TRB door-zone study, 2014",
+      "tag": "[web search — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | dooring",
+     "mechanism": "Same mechanism for scooter riders.",
+     "target_share": "117 people hurt (4 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings of scooter riders",
+      "source": "missing: no study found",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "block face",
+   "cost": {
+    "low": 89470,
+    "high": 89470,
+    "year": 2012,
+    "unit": "per mile, median painted bicycle lane (proxy for restriping; buffer-only price not given)",
+    "source": "Bushell et al. 2013, Table 2",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] which SF bike lanes have a parking-side buffer.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (striping); SFMTA Board if parking is removed to make room.",
+   "evidence_grade": "low: one observational study of rider position, read through a news report; no crash outcome.",
+   "sources": [
+    {
+     "title": "Streetsblog report of the Chicago and Cambridge door-zone positioning study (TRB), 2014",
+     "url": "https://sf.streetsblog.org/2014/07/30/study-to-keep-bicyclists-outside-the-door-zone-you-need-a-buffer",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Bushell, Poole, Zegeer and Rodriguez, Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, November 2013 (2012 dollars)",
+     "url": "https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "parking-removal-near-junctions-and-on-bike-routes",
+   "name": "Remove parking at corners and along door-zone bike lanes (daylighting, no-parking on the bike side)",
+   "lever": "street design",
+   "how_it_works": "No parked car means no door to open into a rider and a clear sightline between a turning driver and a rider at the corner.",
+   "groups": [
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "Takes the doors away along the treated curb.",
+     "target_share": "All 286 people hurt (22 KSI) where parking is removed on the riders' side; driver or parked vehicle at fault while parked 131 [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": -10,
+      "high": null,
+      "unit": "% change in injury crashes",
+      "applies_to": "All crashes at intersections and driveways in Danish urban streets after a parking ban near the junction (handbook halves Elvik's -19% from 12 weak studies)",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.1, p. 73 to 74",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | stop sign or other sign",
+     "mechanism": "Clearer sightlines at stop-controlled corners let drivers and riders see each other before the broadside.",
+     "target_share": "Unsignalized intersection crashes 162 of 241 people hurt (15 KSI); broadside 177 (12 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -3,
+      "high": null,
+      "unit": "% change in injury crashes",
+      "applies_to": "All crashes at priority and signalized junctions after sightlines are improved (Høye, 7 studies); handbook sets -3% injury, -16% property damage",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.1, p. 74",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "mechanism": "Same sightline mechanism for drivers turning left across a rider.",
+     "target_share": "Unsignalized intersections: 300 of 516 people hurt had no signal present (18 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -10,
+      "high": null,
+      "unit": "% change in injury crashes",
+      "applies_to": "All crashes at Danish urban junctions and driveways with a parking ban nearby",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.1",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "corner or block face",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SF's per-corner daylighting cost not opened; Bushell gives painted curb at $1.21 median per square foot (2012), not a per-corner price",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "California AB 413 (2024) bars parking within 20 feet of a marked or unmarked crosswalk; SF is daylighting corners [model knowledge — verify].",
+   "sf_evidence": "SF has no dated record of red curb corners, so no before and after test is possible yet [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx, verify].",
+   "who_decides": "State law sets the 20-foot rule; SFMTA paints and enforces; SFMTA Board legislates longer parking removal.",
+   "evidence_grade": "low: the Danish handbook halves a pooled estimate from methodologically weak studies; no dooring-specific crash result.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Bushell, Poole, Zegeer and Rodriguez, Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, November 2013 (2012 dollars)",
+     "url": "https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "passenger-loading-zones",
+   "name": "Loading zones for ride-hail, taxi and delivery stops away from the bike lane",
+   "lever": "street design",
+   "how_it_works": "Gives stopping drivers a legal curb space so passengers don't open doors from a car stopped in or beside the bike lane.",
+   "groups": [
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "Doorings where the vehicle was stopped or slowing, or where a passenger (party type Other) was at fault, are mostly pick-up and drop-off stops [inference — mine].",
+     "target_share": "Stopped or slowing 105 of 286 people hurt (5 KSI); party type Other at fault 56 (8 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Passenger doorings at pick-up and drop-off",
+      "source": "missing: no evaluation found",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "loading zone",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF per-zone cost opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] SFMTA curb management and loading zone program.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (color curb); CPUC regulates ride-hail companies, not the city [model knowledge — verify].",
+   "evidence_grade": "very low: the mechanism is plausible from SF's own coding, and no evaluation exists.",
+   "sources": [
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "truncated-cycle-track",
+   "name": "Truncated cycle track before signalized junctions (Danish afkortet cykelsti)",
+   "lever": "street design",
+   "how_it_works": "The cycle track ends 15 to 25 metres before the stop line and riders merge beside or left of a separate right-turn lane, so right-turning drivers and through riders see each other before the corner.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn",
+     "mechanism": "Right-hook crashes, a driver turning right across a rider going straight, are what the treatment targets.",
+     "target_share": "Driver at fault turning right 243 of 1,137 people hurt (14 KSI); across all bike families driver right turns hurt 329 (20 KSI), 202 (14 KSI) of them where a signal was present [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -80,
+      "high": null,
+      "unit": "% change in right-turn crashes and injuries, every severity",
+      "applies_to": "Right-turn crashes between a motor vehicle and a through cyclist or moped from the treated approach only, at signalized junctions; not where right turns or bikes already have their own phase. Needs a separate right-turn lane",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.1, p. 8 to 9 (Jensen and Sørensen 2020 found -88%)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | all families (cross-cut, not a size_families row): high-stress signalized intersections",
+     "mechanism": "Most bike crashes at signals sit on high-stress blocks, where right-turn lanes exist.",
+     "target_share": "1,493 people hurt and 161 KSI in bike crashes at a signal on a high-stress block, of 3,834 and 400 in all bike crashes [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -80,
+      "high": null,
+      "unit": "% change in right-turn crashes",
+      "applies_to": "Right-hook crashes at the treated approach only",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.1",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection approach",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no price opened; it is mostly paint and a shorter curb",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF uses mixing zones and right-turn pockets on some protected lanes [model knowledge — verify]; no truncated track by this name is known [unretrieved — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (design and striping).",
+   "evidence_grade": "moderate: a large Danish before and after study, reversed when tracks were extended again; riders report feeling less safe, and transfer to US turning volumes is untested.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "protected-intersection",
+   "name": "Protected intersection (corner refuge islands, set-back bike crossing, tight corner radius)",
+   "lever": "street design",
+   "how_it_works": "Corner islands hold riders forward of turning cars and force a slow, square turn, so the driver meets the rider in view and at low speed.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn",
+     "mechanism": "Slows right turns and moves the conflict point to where the driver can see the rider.",
+     "target_share": "Driver at fault turning right 243 of 1,137 people hurt (14 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "share of bicyclist crossings with a yielding vehicle: 38% treated against 34% untreated; about 2.6 mph slower right turns for a 60-ft to 25-ft corner radius",
+      "applies_to": "Behaviour at 30 site periods, not crashes",
+      "source": "FHWA-HRT-23-052, 2023 (landing page summary)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Where NYC replaced a mixing zone with an offset crossing, yielding drivers kept the bike crossing clear far more often.",
+     "target_share": "Same reach",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "share of yielding turning vehicles that keep the bike lane clear: 77% offset crossing against 17% mixing zone",
+      "applies_to": "Observed turns at 2 offset-crossing and 3 mixing-zone sites, Manhattan",
+      "source": "NYC DOT, Cycling at a Crossroads appendix, 2018, turning vehicle table",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Corner islands also slow left turns across the far crosswalk and bike crossing.",
+     "target_share": "Driver at fault turning left 278 of 516 people hurt (18 KSI); across all bike families driver left turns hurt 510 (31 KSI), 251 (21 KSI) where a signal was present [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Left-turn crashes with riders",
+      "source": "missing: no crash CMF for protected intersections was found",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | all families (cross-cut, not a size_families row): high-stress signalized intersections",
+     "mechanism": "The cross-cut where the design is built.",
+     "target_share": "1,493 people hurt (161 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Bike crashes at the treated intersection",
+      "source": "missing: no crash CMF",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | failure to yield to pedestrian",
+     "mechanism": "Riders crossing in or beside the crosswalk are hit by turning drivers; a set-back bike crossing gives them their own path.",
+     "target_share": "Driver at fault 30 of 31 people hurt (3 KSI), 29 at intersections [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Turning drivers hitting riders in the crossing",
+      "source": "missing: no crash CMF",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | pedestrian violation",
+     "mechanism": "Riders coded under pedestrian rules (riding in the crosswalk) get a marked bike crossing instead.",
+     "target_share": "Bicyclist at fault 24 of 27 people hurt (4 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Riders in crosswalks",
+      "source": "missing: no crash CMF",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no US or SF per-intersection cost opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] count of SF protected intersections; SF has at least one, at 9th St and Division [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA design; Public Works for curb work; SFFD reviews turning space.",
+   "evidence_grade": "low: behaviour and conflict studies only, no crash effect; Dutch practice rests on design guidance rather than published crash results that we opened.",
+   "sources": [
+    {
+     "title": "Fitzpatrick, Shirinzad and Whitacre, Safety Evaluations of Innovative Intersection Designs for Pedestrians and Bicyclists, FHWA-HRT-23-052, 2023 (landing page summary read, not the full PDF)",
+     "url": "https://rosap.ntl.bts.gov/view/dot/71848",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NYC DOT, Cycling at a Crossroads, appendix, September 2018",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/cycling-at-a-crossroads-appendix-2018.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "setback-stop-line-and-bike-box",
+   "name": "Set-back car stop line (5 m) and bike box at signals",
+   "lever": "street design",
+   "how_it_works": "Drivers stop 5 metres behind riders, so a rider waiting at red is in the driver's view when the light turns green.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn",
+     "mechanism": "Targets the right hook at the start of green only; riders who arrive on green get no benefit.",
+     "target_share": "Driver at fault turning right 243 of 1,137 (14 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -10,
+      "high": null,
+      "unit": "% change in crashes, every severity",
+      "applies_to": "Danish crash situations 312 and 876: right-turning motor vehicle against a through cyclist or moped at a signal; conflict studies cap the effect at 5% to 15%. Bike boxes alone: no or small effect",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.7, p. 23 to 25",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection approach",
+   "cost": {
+    "low": 77,
+    "high": 570,
+    "year": 2012,
+    "unit": "per advance stop line marking, median $380",
+    "source": "Bushell et al. 2013, pavement marking table",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "SF has green bike boxes at some signals [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (striping and signal detection).",
+   "evidence_grade": "moderate: Danish evaluations agree on a small effect, and a larger Danish study found no significant change.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Bushell, Poole, Zegeer and Rodriguez, Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, November 2013 (2012 dollars)",
+     "url": "https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "single-colored-bike-crossing",
+   "name": "One colored bike crossing through a signalized junction (Danish blue lane)",
+   "lever": "street design",
+   "how_it_works": "Coloured pavement marks the riders' path across the conflict area, so turning drivers notice it.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Marks the right-hook and left-hook conflict area.",
+     "target_share": "Driver at fault turning 398 of 1,137 people hurt (22 KSI: right 243, left 155) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in crashes with cyclists or mopeds, every severity",
+      "applies_to": "Bike crashes at a signalized junction where one coloured crossing is marked; two or more crossings at one junction made safety worse",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.2, p. 11 to 12",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Same, for drivers turning left across the crossing.",
+     "target_share": "Driver at fault turning left 278 of 516 (18 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in crashes with cyclists",
+      "applies_to": "One coloured crossing only",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.2",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no per-crossing price opened; lifetime about 2 to 3 years per the Danish handbook",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 2.5,
+   "sf_now": "SF marks green conflict zones at many crossings [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (striping).",
+   "evidence_grade": "moderate: four Danish studies at 30% to 40%, with the warning that several crossings at one junction backfire.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "raised-side-street-crossing",
+   "name": "Raised, continuous sidewalk and bike crossing at side streets (Danish overkørsel, Dutch raised crossing)",
+   "lever": "street design",
+   "how_it_works": "Drivers turning into or out of a side street climb a ramp across a continuous sidewalk and bike path, which slows them and shows who has priority.",
+   "groups": [
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "mechanism": "Slows drivers turning across a rider who has priority at an unsignalized side street.",
+     "target_share": "No signal present 300 of 516 people hurt (18 KSI); driver at fault 388 (24 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -41,
+      "mid": -20,
+      "high": -13,
+      "unit": "% change in crashes with cyclists or mopeds, every severity",
+      "applies_to": "Unsignalized T and four-way junctions in urban areas where the main street's sidewalk and path run through; -40% for pedestrian crashes",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.6, p. 21 to 22",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | stop sign or other sign",
+     "mechanism": "Same mechanism at stop-controlled corners where drivers roll through.",
+     "target_share": "Unsignalized intersection crashes 162 of 241 people hurt (15 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -51,
+      "high": null,
+      "unit": "% change in cyclist crash risk",
+      "applies_to": "Raised crossings at busy-cycling priority junctions, Dutch study cited by the Danish handbook (Schepers et al. 2011); the CMF Clearinghouse lists a conflicting CMF of 1.43 for a raised crossing from the same study",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.6, p. 22; CMF Clearinghouse study 259",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Turning drivers crossing the bike path at side streets.",
+     "target_share": "Unsignalized intersection crashes within the family are not split here; no signal present 641 of 1,137 (47 KSI), which includes midblock [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -41,
+      "mid": -20,
+      "high": -13,
+      "unit": "% change in crashes with cyclists",
+      "applies_to": "Unsignalized side-street junctions only",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.6",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "side-street crossing",
+   "cost": {
+    "low": 1290,
+    "high": 30880,
+    "year": 2012,
+    "unit": "per raised crosswalk, median $7,110",
+    "source": "Bushell et al. 2013, raised crosswalk",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] SF raised crosswalks and continuous sidewalks.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA design; Public Works builds; SFFD reviews.",
+   "evidence_grade": "moderate: Danish and Swedish studies agree on direction (-13% to -41%), with a conflicting Clearinghouse CMF from the Dutch study.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Schepers et al., Road factors and bicycle-motor vehicle crashes at unsignalized priority intersections, AAP 43(3), 2011 (CMF Clearinghouse study 259)",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/study_detail.php?stid=259",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Bushell, Poole, Zegeer and Rodriguez, Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, November 2013 (2012 dollars)",
+     "url": "https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "two-way-track-crossing-redesign",
+   "name": "Redesign side-street crossings of two-way bike tracks (move the crossing 6 m back, add a second yield line, or give the path a yield)",
+   "lever": "street design",
+   "how_it_works": "Drivers entering the main street look left for cars and miss riders coming from the right on a two-way track; moving the crossing back and adding a yield line splits the two decisions.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "wrong way or opposing lane",
+     "mechanism": "Riders going against the nearest traffic lane on a two-way track are the ones drivers miss.",
+     "target_share": "Bicyclist at fault wrong way or opposing lane 53 of 1,137 people hurt (6 KSI); head-on collisions 110 (18 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -86,
+      "mid": -86,
+      "high": -64,
+      "unit": "% change in injury crashes with a cyclist on the path (-86% for reversing priority, -64% for an extra yield line)",
+      "applies_to": "Crashes at the crossing between a two-way cycle track and an unsignalized side street, one Danish with/without crash model study",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 3.4, p. 16 to 17",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "side-street crossing",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no price opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF has two-way tracks, among them the center-running lane on Valencia [model knowledge — verify]. The handbook says crossings of two-way tracks see about twice the bike crashes of two one-way tracks.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA design.",
+   "evidence_grade": "low: one study with a crash model, no before and after.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "separated-path-roundabout",
+   "name": "Roundabout or traffic circle with the bike path outside the circulating lane",
+   "lever": "street design",
+   "how_it_works": "Converting a junction to a roundabout slows every movement and removes left turns across riders, but only if riders cross the legs on a separate path rather than ride the circle.",
+   "groups": [
+    {
+     "group": "bicycle involved | stop sign or other sign",
+     "mechanism": "Replaces the right-angle broadside at a stop-controlled junction with low-speed merges.",
+     "target_share": "Broadside collisions 177 of 241 people hurt (12 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in all crashes (urban), from a 44-evaluation meta-analysis; -47% injury crashes in all settings",
+      "applies_to": "All road users; the handbook warns roundabouts often make cyclists less safe unless they ride a separate path outside the circle, and advises against painted bike lanes in the circle",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.5, p. 84 to 86",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF roundabout cost opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] SF traffic circles on residential streets.",
+   "sf_evidence": null,
+   "who_decides": "SFMTA; Public Works; SFFD reviews.",
+   "evidence_grade": "low for bicyclists: strong for all crashes, but the bike-specific direction depends on design and no bike-specific number was opened.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "surface-hazard-repair",
+   "name": "Repair surface hazards on bike routes (potholes, cracks, grates, construction plates)",
+   "lever": "street design",
+   "how_it_works": "Fixes the defects that throw riders off their bikes when no other vehicle is involved.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Solo falls coded as unsafe speed include riders who lose control on a defect [inference — mine].",
+     "target_share": "Solo bike crashes 227 of 581 people hurt (54 KSI); collision type Other or Hit Object 183 (45 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": 90,
+      "high": null,
+      "unit": "% change in injury risk on a block with construction (odds ratio 1.9, 1.3 to 2.9), the hazard not the fix",
+      "applies_to": "Emergency department cyclist injuries at construction sites, Toronto and Vancouver",
+      "source": "Teschke et al. 2012",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | not stated",
+     "mechanism": "Same mechanism for solo falls with no violation recorded.",
+     "target_share": "Solo 162 of 352 people hurt (38 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Solo falls",
+      "source": "missing: no evaluation of surface repair on injuries was found",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "street mile",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF cost per mile of targeted bike-route repair opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Police reports miss most solo crashes: SF hospital records put solo crashes at 41% of cyclist injuries in 2017 to 2019 and 49% in 2020 to 2021, 69% and 82% of them never linked to a police report (SFBRP memo, Table 56) [primary — read 2026-11-25].",
+   "sf_evidence": null,
+   "who_decides": "Public Works (paving and street defects); SFMTA (bike network priorities).",
+   "evidence_grade": "very low: the hazard is measured, the fix is not.",
+   "sources": [
+    {
+     "title": "Safe Streets Research & Consulting for SFMTA, Biking and Rolling Plan Final Draft Crash Analysis Step II, memo 2023-07-12",
+     "url": "https://sfmta.com/media/36094/download",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Teschke et al., Route infrastructure and the risk of injuries to bicyclists: a case-crossover study, AJPH 102(12), 2012",
+     "url": "https://doi.org/10.2105/AJPH.2012.300762",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "protected-left-turn-phase",
+   "name": "Protected-only left-turn phase where drivers turn across a bike lane or track",
+   "lever": "signals",
+   "how_it_works": "Drivers turn left only on their own arrow, so they never turn across oncoming riders going straight.",
+   "groups": [
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "The left cross: a driver turning left fails to yield to a rider coming the other way.",
+     "target_share": "Driver at fault turning left 278 of 516 people hurt (18 KSI); across all bike families driver left turns at a signal hurt 251 (21 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -80,
+      "high": null,
+      "unit": "% change in crashes involving left-turners from the treated approach (all junction crashes -36%)",
+      "applies_to": "Crashes with left-turning vehicles from the approach that gets the protected phase, Danish and Belgian studies",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.7, p. 92 to 93",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "left or U-turn",
+     "mechanism": "Left turns coded as unsafe turns at signals.",
+     "target_share": "Driver at fault turning left 155 of 1,137 people hurt (8 KSI), signal share not split within the family [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -80,
+      "high": null,
+      "unit": "% change in left-turn crashes from the treated approach",
+      "applies_to": "Signalized approaches only",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "signalized approach",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: signal change cost not opened; Bushell prices a signal head at $550 average (2012), not a phase change",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] which SF signals run protected-only lefts; SFMTA's left-turn calming program is a separate design fix.",
+   "sf_evidence": "SF's left-turn calming cut left-turn speeds 17% against controls [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify].",
+   "who_decides": "SFMTA signal engineering.",
+   "evidence_grade": "high: large Danish study, matched by a Belgian one and older studies, on the target crash type.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "split-phase-bike-signal",
+   "name": "Fully split phase: a bike signal with its own green, separate from turning drivers",
+   "lever": "signals",
+   "how_it_works": "Riders go straight while turning drivers hold, then drivers turn while riders hold, so the two never share the green.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Removes the right and left hook at signals on protected lanes.",
+     "target_share": "Driver at fault turning 398 of 1,137 people hurt (22 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -54,
+      "high": null,
+      "unit": "% change in bike crashes per million entering cyclists (4.3 to 2.0); crash counts fell 9%",
+      "applies_to": "Bicycle-involved injury crashes at 30 Manhattan intersections with fully split phases on protected lanes, before and after, no control; mixing zones -27% (current design)",
+      "source": "NYC DOT, Cycling at a Crossroads appendix, 2018, crash analysis table",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | all families (cross-cut, not a size_families row): high-stress signalized intersections",
+     "mechanism": "Most bike crashes at signals are on high-stress blocks.",
+     "target_share": "1,493 people hurt (161 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -54,
+      "high": null,
+      "unit": "% change in crashes per million cyclists",
+      "applies_to": "Same",
+      "source": "NYC DOT, Cycling at a Crossroads appendix, 2018",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection",
+   "cost": {
+    "low": 12800,
+    "high": 12800,
+    "year": 2012,
+    "unit": "per bicycle signal, average",
+    "source": "Bushell et al. 2013, signal section",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "SF runs bike signals on some corridors [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA signal engineering.",
+   "evidence_grade": "low: a city before and after with no control, normalized by modelled cyclist counts; total crashes at all treated junctions rose 25% as riding grew.",
+   "sources": [
+    {
+     "title": "NYC DOT, Cycling at a Crossroads, appendix, September 2018",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/cycling-at-a-crossroads-appendix-2018.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Bushell, Poole, Zegeer and Rodriguez, Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, November 2013 (2012 dollars)",
+     "url": "https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "leading-bike-interval",
+   "name": "Leading bike interval (riders get green a few seconds before turning drivers)",
+   "lever": "signals",
+   "how_it_works": "Riders enter the junction first, so turning drivers meet them already in the crossing.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn",
+     "mechanism": "Targets right hooks at the start of green.",
+     "target_share": "Driver at fault turning right 243 of 1,137 (14 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Right hooks at the start of green",
+      "source": "missing: no crash-based estimate found; studies use simulation and conflicts",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "signalized approach",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: retiming staff time not priced",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "SFMTA signal engineering.",
+   "evidence_grade": "very low: no crash outcome; the Danish handbook's set-back line conflict studies suggest start-of-green hooks are a small share.",
+   "sources": [
+    {
+     "title": "CUTR, Understanding Bicycle Signal Operations and Leading Bicycle Interval Implementations, 2024; Kothuri et al., NITC-RR-897, 2018",
+     "url": "https://rosap.ntl.bts.gov/view/dot/37435/dot_37435_DS1.pdf",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "no-turn-on-red",
+   "name": "No turn on red, area-wide",
+   "lever": "signals",
+   "how_it_works": "Drivers wait for green to turn, so they don't creep through a crosswalk or bike crossing while looking the other way for cars.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn",
+     "mechanism": "Right turns on red across riders at signals.",
+     "target_share": "Driver at fault turning right where a signal was present: 202 people hurt (14 KSI) across all bike families; 243 (14 KSI) driver right turns in this family at any control [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "pedestrian close calls 5 to 1; crosswalk blocking on red down more than 70%; 92% compliance; no change in yielding on green",
+      "applies_to": "Observed behaviour at 3 Tenderloin intersections and 1 control, not crashes, not bikes",
+      "source": "SFMTA Tenderloin No Turn on Red Evaluation",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "intersection (sign)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SFMTA calls it low cost; no per-sign price opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Signs at over 50 Tenderloin intersections in Fall 2021; SFMTA says turn on red crashes are under 1% of all injury crashes but 20% of pedestrian or bicycle injury crashes involving turning drivers at signals [primary — read 2026-11-25]. Expansion to Union Square, Financial District, parts of SoMa and Chinatown under a state grant began in 2024 [web search — verify].",
+   "sf_evidence": "The Tenderloin evaluation measured behaviour, not crashes.",
+   "who_decides": "SFMTA (traffic orders); Board of Supervisors could legislate citywide [inference — mine].",
+   "evidence_grade": "low: behaviour only, and for pedestrians.",
+   "sources": [
+    {
+     "title": "SFMTA, Tenderloin No Turn on Red Evaluation (fact sheet, Fall 2021 signs)",
+     "url": "https://sfmta.com/media/31093/download",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SFMTA, Tenderloin Speed Limits and No Turn on Red project page",
+     "url": "https://www.sfmta.com/projects/tenderloin-speed-limits-and-no-turn-red",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "bike-speed-signal-timing",
+   "name": "Signal timing for bikes: green waves at riding speed, bike detection, shorter waits",
+   "lever": "signals",
+   "how_it_works": "When the lights roll at riding speed and detect riders, fewer riders arrive on red and fewer cross it.",
+   "groups": [
+    {
+     "group": "bicycle involved | red light",
+     "movement": "going straight",
+     "mechanism": "Most bike red-light crashes have the rider at fault going straight.",
+     "target_share": "Bicyclist at fault 247 of 352 people hurt (42 KSI), 207 of them going straight (36 KSI); signal present 321 (48 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": null,
+      "unit": "% change in crashes and injuries at coordinated junctions",
+      "applies_to": "Motor-traffic green waves at Danish junctions, every road user; not measured for bike-speed green waves",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.7, p. 92",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | red light",
+     "mechanism": "Traffic-actuated signals that detect demand cut needless red time.",
+     "target_share": "Same reach",
+     "effect": {
+      "low": -35,
+      "mid": -20,
+      "high": -5,
+      "unit": "% change in crashes and injuries",
+      "applies_to": "Switching a junction from fixed-time to traffic-actuated control, all road users",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.7, p. 92",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "corridor",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: retiming and detection costs not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF has timed some corridors for bike speed, Valencia among them [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA signal engineering.",
+   "evidence_grade": "very low for bikes: the effects are for motor traffic and only transfer by mechanism.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "area-traffic-calming",
+   "name": "Area traffic calming on bike routes (speed humps, raised tables, narrowings)",
+   "lever": "speed management",
+   "how_it_works": "Slower drivers hit fewer riders and hurt them less.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Speeding drivers who hit riders.",
+     "target_share": "Driver at fault 127 of 581 people hurt (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -30,
+      "high": null,
+      "unit": "% change in injury crashes (-47% serious, -49% killed)",
+      "applies_to": "All crashes on urban streets with humps and raised tables, computed from the exponential speed model at a 25% speed cut",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 4.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Calmer streets cut the speed of every turning and passing conflict.",
+     "target_share": "All 1,137 people hurt (90 KSI); 443 (33 KSI) on residential streets [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": -38,
+      "mid": -29,
+      "high": -20,
+      "unit": "% change in injuries",
+      "applies_to": "Urban area-wide calming on streets with 1 to 3 lanes and 50 to 70 km/h limits, all road users",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 4.16, p. 68 to 69",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "speed hump",
+   "cost": {
+    "low": 690,
+    "high": 6860,
+    "year": 2012,
+    "unit": "per speed hump, median $2,130",
+    "source": "Bushell et al. 2013, Table 10",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "SF has built speed humps through a resident application program; 618 have no install date [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx, verify].",
+   "sf_evidence": "Blocks with humps had 18% fewer injury crashes than blocks still waiting for them, but may already have been falling [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify].",
+   "who_decides": "SFMTA (resident-initiated program and Board legislation).",
+   "evidence_grade": "moderate: Nordic meta-analyses on all crashes; bike-specific effects inferred from speed.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Bushell, Poole, Zegeer and Rodriguez, Costs for Pedestrian and Bicyclist Infrastructure Improvements, UNC HSRC for FHWA, November 2013 (2012 dollars)",
+     "url": "https://www.pedbikeinfo.org/downloads/Countermeasure%20Costs_Report_Nov2013.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works, Did SF's street safety projects cut injury crashes? (outcomes section, empirical Bayes on DataSF crashes)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "lower-speed-limits",
+   "name": "Lower posted limits on high-stress streets (20 mph default where state law allows)",
+   "lever": "speed management",
+   "how_it_works": "A lower limit lowers speeds somewhat on its own and more with design and cameras, and crash energy falls with speed.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Driver speeding into riders.",
+     "target_share": "Driver at fault 127 of 581 people hurt (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -22.5,
+      "high": null,
+      "unit": "% change in collisions",
+      "applies_to": "All police-recorded collisions after Wales' 20 mph default, against flat elsewhere",
+      "source": "Senedd Research 2025",
+      "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+     }
+    }
+   ],
+   "unit": "corridor",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: signage cost not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF has lowered limits on business corridors under state authority (AB 43) [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify].",
+   "sf_evidence": "SF's 2016 Budget and Legislative Analyst study found posted-limit cuts on nine arterials did not cut injury collisions [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify].",
+   "who_decides": "State law sets the method; SFMTA Board sets limits within it.",
+   "evidence_grade": "low: strong elsewhere with design, and SF's own test of limits alone was null.",
+   "sources": [
+    {
+     "title": "Senedd Research, What impact has 20mph had on road safety in Wales, 2025",
+     "url": "https://research.senedd.wales/research-articles/what-impact-has-20mph-had-on-road-safety-in-wales/",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    },
+    {
+     "title": "SF Budget and Legislative Analyst, Impact of Speed Limit Changes, 2016-11-18",
+     "url": "https://sfbos.archive.sf.gov/sites/default/files/BLA_Speed_Reduction_Report_111816.pdf",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    }
+   ]
+  },
+  {
+   "id": "filtered-bike-routes",
+   "name": "Filtered neighbourhood bike routes (diverters on bike boulevards, Slow Streets with real filters)",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Diverters stop through driving on the bike route, so riders share it with a few local cars.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Fewer cars means fewer turning and passing conflicts on the route.",
+     "target_share": "Residential streets 443 of 1,137 people hurt (33 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": -63,
+      "high": null,
+      "unit": "% change in vehicle-bicycle crashes (CMF 0.37)",
+      "applies_to": "Bike boulevards against parallel arterials in Berkeley, cross-section, 4 stars",
+      "source": "Minikel 2012, CMF 3092",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | stop sign or other sign",
+     "mechanism": "Fewer through drivers at stop-controlled corners on the route.",
+     "target_share": "Unsignalized intersection crashes 162 of 241 people hurt (15 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -69,
+      "mid": -49,
+      "high": -16,
+      "unit": "% change in injury risk per trip (odds ratio 0.51, 0.31 to 0.84, local street; calmed local OR 0.66 not significant)",
+      "applies_to": "Emergency department cyclist injuries on local streets against major streets with parked cars",
+      "source": "Teschke et al. 2012",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    }
+   ],
+   "unit": "route mile",
+   "cost": {
+    "low": 200000,
+    "high": 650000,
+    "year": 2022,
+    "unit": "per mile, SF Slow Street or neighbourhood bikeway (staff report says about $200,000; central $250,000)",
+    "source": "SFMTA Board 2022-12-06 Item 14 via SF unit costs file",
+    "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA's 2023 evaluation found 3 of 16 permanent Slow Streets met the Board's volume and speed targets [secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify].",
+   "sf_evidence": "19 Slow Streets: injury crashes 0.73 (0.58 to 0.88), confounded by the 2020 to 2021 traffic drop [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx, verify].",
+   "who_decides": "SFMTA Board; SFFD reviews diverters.",
+   "evidence_grade": "moderate: a 4-star cross-sectional CMF and case-crossover results, both without before and after.",
+   "sources": [
+    {
+     "title": "Minikel, Cyclist safety on bicycle boulevards and parallel arterial routes in Berkeley, AAP 45, 2012 (CMF 3092)",
+     "url": "https://doi.org/10.1016/j.aap.2011.07.009",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "Teschke et al., Route infrastructure and the risk of injuries to bicyclists: a case-crossover study, AJPH 102(12), 2012",
+     "url": "https://doi.org/10.2105/AJPH.2012.300762",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "SF Works, methods by intervention (road diets, Slow Streets, protected bike lanes)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx, verify]"
+    },
+    {
+     "title": "SF Works unit costs from SFMTA quick-build budgets at Board approval and the Central Embarcadero rebuild (data/school-budget/unit-costs.json)",
+     "url": "../../../../data/school-budget/unit-costs.json",
+     "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "low-traffic-neighbourhood",
+   "name": "Low traffic neighbourhood (area-wide filters with boundary roads carrying through traffic)",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Filters across a whole area remove through traffic from every street inside it.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Fewer drivers inside the area.",
+     "target_share": "Residential streets 443 of 1,137 (33 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": -32,
+      "mid": -22,
+      "high": -12,
+      "unit": "% change in cyclist injuries (cyclist KSI -27%, -46% to -2%)",
+      "applies_to": "Police-recorded cyclist injuries inside 113 London schemes against the rest of London; boundary roads -6%",
+      "source": "Furlong et al. 2025",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Same, for speeding drivers.",
+     "target_share": "Driver at fault 127 of 581 (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -32,
+      "mid": -22,
+      "high": -12,
+      "unit": "% change in cyclist injuries",
+      "applies_to": "Inside the scheme",
+      "source": "Furlong et al. 2025",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    }
+   ],
+   "unit": "neighbourhood",
+   "cost": {
+    "low": 15000,
+    "high": 75000,
+    "year": 2026,
+    "unit": "per concrete diagonal diverter (Bushell's $10,000 to $51,460 raised to 2026 dollars by CPI)",
+    "source": "studies.json bushell-2013-ped-bike-costs row",
+    "tag": "[secondary — repo data/evidence/studies.json, verify]"
+   },
+   "life_years": null,
+   "sf_now": "No SF scheme filters a whole area; Slow Streets use signs and barricades on single streets [secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA Board; SFFD; the district supervisor in practice [inference — mine].",
+   "evidence_grade": "high: a large controlled panel with a reversal when schemes were removed.",
+   "sources": [
+    {
+     "title": "Furlong et al., Low Traffic Neighbourhoods in London reduce road traffic injuries, Injury Prevention 2025",
+     "url": "https://researchonline.lshtm.ac.uk/id/eprint/4676732/1/Furlong-etal-2025-Low-traffic-neighbourhoods.pdf",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "congestion-pricing",
+   "name": "Downtown congestion charge",
+   "lever": "pricing",
+   "how_it_works": "A charge cuts the number of cars downtown, which cuts conflicts with riders.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Fewer drivers turning and changing lanes beside riders downtown.",
+     "target_share": "Share of this family downtown not computed [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": -40,
+      "mid": -39,
+      "high": -38,
+      "unit": "% change in accidents",
+      "applies_to": "All accidents inside London's charging zone; Noland finds no effect",
+      "source": "Green, Heywood and Navarro 2014",
+      "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+     }
+    }
+   ],
+   "unit": "program",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SFCTA's downtown pricing study costs not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFCTA studied downtown pricing; nothing adopted [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "State authorizing legislation, then SFCTA and the Board of Supervisors [model knowledge — verify].",
+   "evidence_grade": "low for bikes: one study, a conflicting null, and no bike-specific result.",
+   "sources": [
+    {
+     "title": "Green, Heywood and Navarro, Traffic accidents and the London congestion charge, Lancaster working paper, 2014",
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/lums/economics/working-papers/LondonCongestionCharge.pdf",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    }
+   ]
+  },
+  {
+   "id": "truck-side-guards",
+   "name": "Side guards on trucks (city fleet, contractors and permitted haulers)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "A panel between a truck's wheels stops a rider who falls against the side from going under the rear wheels.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn; lane change, merge, pass, entering",
+     "mechanism": "Riders hit by trucks turning right or passing.",
+     "target_share": "Heavy-vehicle share not computed for trucks: crashes where the heaviest matched vehicle was over 5,000 lb hurt 127 people (8 KSI) across all bike families, but most trucks carry no make-model weight [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -61,
+      "high": null,
+      "unit": "% change in bicyclist fatality rate in side impacts with trucks (pedestrians -20%)",
+      "applies_to": "Bicyclists in side-impact collisions with trucks, UK before and after a national mandate (74 crashes in 1980 to 82, 66 in 1990 to 92)",
+      "source": "Volpe Center 2014, citing TRL 2005",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "truck",
+   "cost": {
+    "low": 600,
+    "high": 2500,
+    "year": 2014,
+    "unit": "per truck, from vendors; Europe average $847",
+    "source": "Volpe Center 2014",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] SF side guard requirement for city trucks.",
+   "sf_evidence": null,
+   "who_decides": "City Administrator and departments for the city fleet; Board of Supervisors for contractor and permit rules [inference — mine].",
+   "evidence_grade": "low: an uncontrolled national before and after on fatalities, which Volpe itself says may not be due to guards alone.",
+   "sources": [
+    {
+     "title": "Epstein et al., Truck Sideguards for Vision Zero, US DOT Volpe Center for NYC DCAS, DOT-VNTSC-DCAS-14-01, December 2014",
+     "url": "https://www.nyc.gov/assets/dcas/downloads/pdf/fleet/Volpe-Final-Report-on-Truck-Sideguards-for-Vision-Zero.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "direct-vision-large-vehicles",
+   "name": "Direct vision standard or blind-spot systems for large vehicles operating in SF",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Lower cabs, bigger windows, cameras and sensors let truck drivers see riders beside the cab before they turn.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "right turn",
+     "mechanism": "Right hooks by large vehicles.",
+     "target_share": "Not computed: truck share of driver right turns is unknown (see side guards) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Large-vehicle right hooks",
+      "source": "missing: TfL's progress paper has small numbers and no control; no effect size opened",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no per-vehicle cost opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "City for its fleet and contracts; state or federal for vehicle standards.",
+   "evidence_grade": "very low: no controlled result opened.",
+   "sources": [
+    {
+     "title": "TfL, Direct Vision Standard and HGV Safety Permit Scheme progress paper, 2022-11-16",
+     "url": "https://board.tfl.gov.uk/documents/s18961/sshrp-20221116-item08-direct-vision-standard-and-safety-permit%20Scheme%20for%20HGVs.pdf",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    }
+   ]
+  },
+  {
+   "id": "aeb-cyclist-detection-fleet",
+   "name": "Automatic emergency braking with cyclist detection, required in city, contractor and ride-hail fleets",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The car brakes on its own when a rider appears ahead and the driver doesn't react.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Drivers running into riders ahead of them.",
+     "target_share": "Driver at fault 127 of 581 people hurt (16 KSI); rear-end 118 (14 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -38,
+      "mid": -21,
+      "high": -4,
+      "unit": "% change in bicyclist crash risk (21% ±17%)",
+      "applies_to": "Cars with cyclist AEB in Swedish police and hospital data, 2015 to 2020; 23% in daylight and twilight, none in darkness",
+      "source": "Kullgren, Amin and Tingvall 2023",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Drivers sideswiping or passing riders traveling the same way.",
+     "target_share": "Sideswipes 420 of 1,137 people hurt (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": -47,
+      "mid": -29,
+      "high": -4,
+      "unit": "% change in parallel bicycle crash rate (RR 0.71, 0.53 to 0.96)",
+      "applies_to": "Police-reported parallel-direction bike crashes per insured vehicle year, Subaru EyeSight; perpendicular and overall changes not significant",
+      "source": "IIHS (Cicchino) 2023",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no per-vehicle cost opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "City fleet procurement; CPUC for ride-hail; NHTSA for new-car rules [model knowledge — verify].",
+   "evidence_grade": "moderate: two real-world crash studies agree on direction; none in darkness.",
+   "sources": [
+    {
+     "title": "Kullgren, Amin and Tingvall, Effects on crash risk of automatic emergency braking systems for pedestrians and bicyclists, 2023 (abstract)",
+     "url": "https://research.chalmers.se/en/publication/?id=536175",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "IIHS (Cicchino), Effects of a bicyclist detection system on police-reported bicycle crashes, 2023 (abstract)",
+     "url": "https://www.iihs.org/research-areas/bibliography/ref/2267",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "vehicle-exit-warning",
+   "name": "Vehicle exit warning (door opening alert or lock) in ride-hail and fleet vehicles",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Sensors warn or hold the door when a rider is approaching from behind.",
+   "groups": [
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "Doors opened into riders by drivers and passengers.",
+     "target_share": "All 286 people hurt (22 KSI); passengers (party type Other) at fault 56 (8 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings",
+      "source": "missing: no evaluation found",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | dooring",
+     "mechanism": "Same, for scooter riders.",
+     "target_share": "117 people hurt (4 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings of scooter riders",
+      "source": "missing: no evaluation found",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "Fleet owners; CPUC for ride-hail [model knowledge — verify].",
+   "evidence_grade": "very low: no outcome study.",
+   "sources": [
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "micromobility-speed-and-night-limits",
+   "name": "Speed caps and late-night limits for shared scooters and e-bikes, written into the city permit",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The operator caps top speed by software and limits late-night rental, when most scooter injuries happen.",
+   "groups": [
+    {
+     "group": "vehicles only | bike or scooter rules",
+     "mechanism": "Scooter rule violations (CVC 21235) cause these vehicles-only crashes.",
+     "target_share": "97 people hurt (4 KSI); code 21235 hurt 104 people (7 KSI) across modes [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": -53,
+      "high": null,
+      "unit": "% change in shared e-scooter injuries per 100,000 rides (19 to 9)",
+      "applies_to": "Shared e-scooter injuries at three Helsinki trauma hospitals, Jan to Aug 2021 against 2022, after a 25 to 20 km/h daytime cap, a Friday and Saturday midnight to 5 am ban and 15 km/h other nights",
+      "source": "Pakarinen et al. 2023",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | bike or scooter rules",
+     "mechanism": "People walking hit by scooter or bike riders.",
+     "target_share": "153 people hurt (26 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Pedestrians hit by shared scooters",
+      "source": "missing: Helsinki counts riders' injuries only",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Riders at fault for unsafe speed, some on e-bikes or scooters [inference — mine].",
+     "target_share": "Bicyclist at fault 451 of 581 people hurt (78 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": 0,
+      "high": null,
+      "unit": "no association between a night speed limit and injury incidence",
+      "applies_to": "Tampere hospital cohort",
+      "source": "Tampere University Hospital, 2023",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "permit term",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: administrative; not priced",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA permits two scooter share operators at up to 3,250 scooters each and asks for lab proof of sidewalk-riding detection [web search — verify].",
+   "sf_evidence": "Crashes involving scooters rose from July 2025 in the Southern and Northern police districts [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify].",
+   "who_decides": "SFMTA (permit terms); private scooters and e-bikes fall under state vehicle law.",
+   "evidence_grade": "low: one before and after cohort, one null, and the measures were bundled.",
+   "sources": [
+    {
+     "title": "Pakarinen et al., Speed and nighttime usage restrictions and the incidence of shared electric scooter injuries, JAMA Network Open, 2023-11-03 (Helsinki)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10625032",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Tampere University Hospital cohort, nighttime speed limit and e-scooter injuries, 2023 (reported by News-Medical)",
+     "url": "https://www.news-medical.net/news/20230702/Study-finds-nighttime-speed-limits-not-effective-in-reducing-e-scooter-injuries.aspx",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "SFMTA, Powered Scooter Share Permit Program",
+     "url": "https://www.sfmta.com/projects/powered-scooter-share-program-permit",
+     "tag": "[web search — verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "red-light-cameras",
+   "name": "Red-light cameras on approaches with driver red-light crashes",
+   "lever": "automated enforcement",
+   "how_it_works": "A ticket for every red-light run cuts red running, which cuts right-angle crashes.",
+   "groups": [
+    {
+     "group": "bicycle involved | red light",
+     "movement": "going straight",
+     "mechanism": "Drivers running the red into riders.",
+     "target_share": "Driver at fault 99 of 352 people hurt (11 KSI), 84 of them going straight (10 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": null,
+      "unit": "% change in injuries (-20% killed; crashes -2%, rear-ends up)",
+      "applies_to": "All road users at camera junctions, three systematic reviews; nearby junctions get about a third of the effect",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.7, p. 92",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | red light",
+     "mechanism": "Same.",
+     "target_share": "Same reach",
+     "effect": {
+      "low": null,
+      "mid": -25,
+      "high": null,
+      "unit": "% change in side-impact crashes (rear-end +15%)",
+      "applies_to": "Seven US cities",
+      "source": "Council et al. 2005, FHWA-HRT-05-049",
+      "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md, verify]"
+     }
+    }
+   ],
+   "unit": "approach",
+   "cost": {
+    "low": 350000,
+    "high": 350000,
+    "year": 2026,
+    "unit": "per approach to build, plus about $42,000 per approach a year to the vendor",
+    "source": "SFMTA via red-light note",
+    "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md, verify]"
+   },
+   "life_years": null,
+   "sf_now": "25 approaches at 18 intersections [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md, verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA under state law; new sites may need Board of Supervisors surveillance approval [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md, verify].",
+   "evidence_grade": "high for all crashes; bike-specific effect not measured.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Council et al., Safety Evaluation of Red-Light Cameras, FHWA-HRT-05-049, 2005",
+     "url": "https://www.fhwa.dot.gov/publications/research/safety/05049/",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md, verify]"
+    },
+    {
+     "title": "SFMTA, Red Light Camera Program",
+     "url": "https://www.sfmta.com/RedLight",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "speed-cameras",
+   "name": "Speed cameras on high-stress bike corridors",
+   "lever": "automated enforcement",
+   "how_it_works": "Tickets for driving 11 or more mph over cut the fastest drivers, whose crashes hurt riders most.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Speeding drivers hitting riders.",
+     "target_share": "Driver at fault 127 of 581 people hurt (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -84,
+      "high": null,
+      "unit": "% change in drivers going 10+ mph over the limit",
+      "applies_to": "Speeds at SF camera sites at 18 months; no injury outcome",
+      "source": "SFMTA and SafeTREC 18-month report",
+      "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+     }
+    }
+   ],
+   "unit": "camera",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SF per-camera cost not opened in this lane",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "56 cameras at 33 locations, warnings from March to June 2025 [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify].",
+   "sf_evidence": "Crashes involving someone walking ran 27% below expected on camera streets, within chance after the matched-street check; KSI crashes did not fall [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify].",
+   "who_decides": "SFMTA under state pilot law (AB 645) [model knowledge — verify].",
+   "evidence_grade": "moderate for speed, low for bike injuries.",
+   "sources": [
+    {
+     "title": "SFMTA and SafeTREC, Speed Safety Camera 18-month report, 2026",
+     "url": "https://www.sfmta.com/media/50300/download?inline",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    },
+    {
+     "title": "SF Works, Did SF's street safety projects cut injury crashes? (outcomes section, empirical Bayes on DataSF crashes)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx, verify]"
+    },
+    {
+     "title": "ERSO, Promising road safety measures based on cost-benefit analyses (Elvik's Norwegian ratios)",
+     "url": "https://road-safety.transport.ec.europa.eu/statistics-and-analysis/statistics-and-analysis-archive/cost-benefit-analysis-measures/promising-road-safety-measures-based-cost-benefit-analyses_en",
+     "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    }
+   ]
+  },
+  {
+   "id": "bike-lane-parking-cameras",
+   "name": "Camera enforcement of parking and stopping in bike lanes",
+   "lever": "automated enforcement",
+   "how_it_works": "Tickets for drivers who block the bike lane keep riders from swerving into traffic.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "CVC 21209 (motor vehicle in bike lane) sits in this family.",
+     "target_share": "Code 21209(a) hurt 59 people (4 KSI) across modes [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Riders forced into traffic by blocked lanes",
+      "source": "missing: no evaluation found",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "camera",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify] state authority for bike-lane cameras.",
+   "sf_evidence": null,
+   "who_decides": "State legislature for authority; SFMTA to run it.",
+   "evidence_grade": "very low: no outcome study.",
+   "sources": [
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "bike-running-lights",
+   "name": "Free always-on bike lights (giveaway or required on shared bikes)",
+   "lever": "behaviour programs",
+   "how_it_works": "Riders are seen sooner by drivers, day and night.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Multi-party crashes with drivers who didn't see the rider.",
+     "target_share": "Driver at fault 692 of 1,137 (41 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -19,
+      "high": null,
+      "unit": "% change in injury accident rate per rider-month (multiparty accidents fell significantly)",
+      "applies_to": "Self-reported bike accidents with injury, 1,845 riders given permanent running lights against 2,000 without, Odense 2004 to 2005. A 2023 Danish follow-up (Projekt Cykelliv) reportedly found smaller effects [web search — verify]",
+      "source": "Madsen, Andersen and Lahrmann 2013",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "mechanism": "Drivers turning left across a rider they didn't see.",
+     "target_share": "Driver at fault 388 of 516 (24 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -19,
+      "high": null,
+      "unit": "% change in injury accident rate",
+      "applies_to": "Same",
+      "source": "Madsen et al. 2013",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "bike",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: light cost not given in the abstract",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "SFMTA or DPH program; SFMTA bike share contract.",
+   "evidence_grade": "moderate: a controlled trial, but self-reported crashes and a weaker replication.",
+   "sources": [
+    {
+     "title": "Madsen, Andersen and Lahrmann, Safety effects of permanent running lights for bicycles: a controlled experiment, Accident Analysis and Prevention 50, 2013 (author manuscript abstract)",
+     "url": "https://vbn.aau.dk/ws/files/274548813/Safety_effects_of_permanent_running_lights_for_bicycles.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "helmet-promotion",
+   "name": "Helmet promotion and free helmets (not a mandate)",
+   "lever": "behaviour programs",
+   "how_it_works": "A helmet does not prevent the crash; it cuts head injuries when one happens.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Solo falls at speed, where head injuries are common.",
+     "target_share": "Solo 227 of 581 people hurt (54 KSI); bicyclist at fault 451 (78 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -34,
+      "high": null,
+      "unit": "% change in killed or seriously injured cyclists (head injury -48%, serious head -60%)",
+      "applies_to": "Injured cyclists wearing against not wearing a helmet, meta-analysis",
+      "source": "Høye 2018 via TØI",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | not stated",
+     "mechanism": "Same, for solo falls with no violation coded.",
+     "target_share": "Solo 162 of 352 (38 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -34,
+      "high": null,
+      "unit": "% change in KSI cyclists",
+      "applies_to": "Same",
+      "source": "Høye 2018 via TØI",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "helmet",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "DPH and SFMTA programs; a mandate is state law.",
+   "evidence_grade": "high for the injury effect among wearers; the effect of a promotion program on wearing is not measured here.",
+   "sources": [
+    {
+     "title": "TØI, Bicycle helmets: to wear or not to wear (summary of Høye 2018, Accident Analysis and Prevention 117)",
+     "url": "https://www.toi.no/road-safety/bicycle-helmets-to-wear-or-not-to-wear-article34999-831.html",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "door-awareness-education",
+   "name": "Door awareness for drivers and passengers (Dutch reach, ride-hail driver training, window stickers)",
+   "lever": "behaviour programs",
+   "how_it_works": "Opening the door with the far hand turns the body to see a rider coming.",
+   "groups": [
+    {
+     "group": "bicycle involved | dooring",
+     "mechanism": "Doors opened without looking.",
+     "target_share": "All 286 people hurt (22 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Doorings",
+      "source": "missing: no outcome study found",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "campaign",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": null,
+   "who_decides": "SFMTA; DMV for the driver handbook.",
+   "evidence_grade": "very low: no outcome study.",
+   "sources": [
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "rail-track-crossings",
+   "name": "Streetcar track treatments: dedicated rail lanes, square crossings, bike routes off rail streets",
+   "lever": "transit and land use",
+   "how_it_works": "Riders' tires drop into the rail flangeway when they cross at a shallow angle; separating riders from rails or making them cross square prevents the fall.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe speed",
+     "mechanism": "Solo falls coded as unsafe speed include track falls [inference — mine].",
+     "target_share": "Solo 227 of 581 people hurt (54 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -100,
+      "high": null,
+      "unit": "% of track crashes in route sections where streetcars had dedicated rights of way (none found)",
+      "applies_to": "Injured cyclists in Toronto; 32% of injured cyclists' crashes directly involved tracks; 85% caught in the flangeway",
+      "source": "BMC Public Health 2016 streetcar track study",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | not stated",
+     "mechanism": "Solo falls with no violation coded.",
+     "target_share": "Solo 162 of 352 (38 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": 200,
+      "high": null,
+      "unit": "% change in injury risk with streetcar or train tracks present (odds ratio 3.0, 1.8 to 5.1), the hazard not the fix",
+      "applies_to": "Emergency department cyclist injuries",
+      "source": "Teschke et al. 2012",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    }
+   ],
+   "unit": "rail street mile",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "An SFMTA spokesperson said flangeway fillers don't suit a metro streetcar system because traffic wears the rubber out [web search — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA (Muni and streets).",
+   "evidence_grade": "low: the hazard is well measured, the fixes are not.",
+   "sources": [
+    {
+     "title": "Bicycling crashes on streetcar (tram) or train tracks: mixed methods to identify prevention measures, BMC Public Health 2016 (abstract)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4957308",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Teschke et al., Route infrastructure and the risk of injuries to bicyclists: a case-crossover study, AJPH 102(12), 2012",
+     "url": "https://doi.org/10.2105/AJPH.2012.300762",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "bus-stop-boarding-islands",
+   "name": "Floating bus stops (boarding islands with the bike lane behind)",
+   "lever": "transit and land use",
+   "how_it_works": "Buses stop at the island without crossing the bike lane, so riders don't overtake or get squeezed by a bus pulling in.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Bus and rider lane changes at stops.",
+     "target_share": "Driver at fault changing lanes or merging 84 of 1,137 (4 KSI); bus share not computed [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Bus-bike crashes at stops",
+      "source": "missing: no crash evaluation opened",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "bus stop",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not opened",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF has boarding islands on several corridors [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA.",
+   "evidence_grade": "very low: no outcome study opened.",
+   "sources": [
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "stop-as-yield-law",
+   "name": "Stop-as-yield for people biking (Idaho or Delaware stop)",
+   "lever": "policy and law",
+   "how_it_works": "Riders may slow and yield at a stop sign rather than stop, which legalizes common practice and lets riders clear junctions sooner.",
+   "groups": [
+    {
+     "group": "bicycle involved | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Most bike stop-sign crashes have the rider at fault going straight.",
+     "target_share": "Bicyclist at fault 134 of 241 people hurt (14 KSI), 116 going straight (11 KSI); unsignalized 162 (15 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": -23,
+      "high": null,
+      "unit": "% change in bike crashes at stop-controlled intersections (other bike crashes -8%)",
+      "applies_to": "Delaware State Police counts, 30 months after the 2017 law against 30 before, no adjustment",
+      "source": "Bike Delaware",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "state law",
+   "cost": {
+    "low": 0,
+    "high": 0,
+    "year": 2026,
+    "unit": "no capital cost",
+    "source": "[inference — mine]",
+    "tag": "[inference — mine]"
+   },
+   "life_years": null,
+   "sf_now": "California has no stop-as-yield law; a state bill was vetoed in 2022 and SF's 2016 local policy was vetoed by the Mayor [model knowledge — verify].",
+   "sf_evidence": null,
+   "who_decides": "California Legislature and Governor.",
+   "evidence_grade": "low: a simple before and after from an advocacy group's summary of police counts.",
+   "sources": [
+    {
+     "title": "Bike Delaware, Delaware Yield crash data (advocacy group's summary of Delaware State Police counts)",
+     "url": "https://www.bikede.org/delaware-yield-crash-data/",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "safe-passing-enforcement",
+   "name": "Enforce safe passing (California's 3-foot rule) and lane-change violations against riders",
+   "lever": "policy and law",
+   "how_it_works": "Targeted enforcement of passing too close and merging into riders.",
+   "groups": [
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "movement": "lane change, merge, pass, entering",
+     "mechanism": "Drivers passing or merging into riders.",
+     "target_share": "Driver at fault changing lanes, merging or passing 84 of 1,137 (4 KSI); sideswipes 420 (16 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": null,
+      "applies_to": "Sideswipes of riders",
+      "source": "missing: no outcome study of 3-foot law enforcement opened",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "program",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SFPD staff time not priced",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "[unretrieved — verify]",
+   "sf_evidence": "SF's Controller (2017) routed crashes by violation to enforcement or engineering [secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify].",
+   "who_decides": "SFPD; Police Commission.",
+   "evidence_grade": "very low: no outcome study.",
+   "sources": [
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "connected-network-plan",
+   "name": "Build the protected network as a connected whole on a schedule",
+   "lever": "policy and law",
+   "how_it_works": "Riders on a connected network leave high-stress streets entirely; gaps send them back into traffic.",
+   "groups": [
+    {
+     "group": "bicycle involved | all families (cross-cut, not a size_families row): high-stress signalized intersections",
+     "mechanism": "The cross-cut the network removes riders from.",
+     "target_share": "1,493 people hurt (161 KSI) at signals on high-stress blocks; 2,964 (306 KSI) of 3,834 (400) bike crash people on high-stress blocks [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "city-level association: more protected and separated facilities with better safety for all road users",
+      "applies_to": "12 US cities, block groups, 13 years, correlational",
+      "source": "Marshall and Ferenchak 2019",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    },
+    {
+     "group": "bicycle involved | unsafe turn or lane use",
+     "mechanism": "Network spines without separation did not help.",
+     "target_share": "1,137 (90 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
+     "effect": {
+      "low": null,
+      "mid": 0,
+      "high": null,
+      "unit": "no difference in cycle collision rates against 375 control segments; counts +38% with more riders",
+      "applies_to": "London Cycle Superhighways, mostly paint",
+      "source": "Li, Graham and Liu 2017",
+      "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+     }
+    }
+   ],
+   "unit": "program",
+   "cost": {
+    "low": 50000000,
+    "high": 135000000,
+    "year": 2025,
+    "unit": "for the 56.5 unbuilt separated miles of the plan network as quick-build, central $85M",
+    "source": "SF unit costs and repo trace",
+    "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+   },
+   "life_years": null,
+   "sf_now": "231 all-ages miles in about 215 separate pieces; the largest holds 13% [secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify].",
+   "sf_evidence": null,
+   "who_decides": "SFMTA Board and Board of Supervisors (budget).",
+   "evidence_grade": "low: correlational across cities; the only controlled network-scale study, on paint, was null.",
+   "sources": [
+    {
+     "title": "Marshall and Ferenchak, Why cities with high bicycling rates are safer for all road users, Journal of Transport & Health 13, 2019",
+     "url": "https://doi.org/10.1016/j.jth.2019.03.004",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "Li, Graham and Liu, Safety effects of the London cycle superhighways on cycle collisions, AAP 99, 2017",
+     "url": "https://doi.org/10.1016/j.aap.2016.11.016",
+     "tag": "[secondary — repo note research/notes/protected-bike-network-2026-10/2026-10-31-evidence.md, verify]"
+    },
+    {
+     "title": "SF Works unit costs from SFMTA quick-build budgets at Board approval and the Central Embarcadero rebuild (data/school-budget/unit-costs.json)",
+     "url": "../../../../data/school-budget/unit-costs.json",
+     "tag": "[secondary — repo data/school-budget/unit-costs.json via research/notes/protected-bike-network-2026-10/2026-10-31-equity-costs.md, verify]"
+    },
+    {
+     "title": "SF Works crash profiles, out/crash-augment/profiles/results.json (size_families, family_stress, other_breakdown, grouping_alternatives)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "No crash effect at all for protected intersections, leading bike intervals, door-zone treatments, loading zones, vehicle exit warnings, bike-lane cameras, boarding islands or 3-foot enforcement; Dutch and Danish junction design guidance (CROW) was not opened, and swov.nl blocked the fetch.",
+  "Solo bike crashes are the biggest KSI source in this lane (447 hurt, 106 KSI of 400 bike KSI) and SF hospital data says police miss 69% to 82% of them; the only fixes with numbers are helmets (severity) and track separation. Surface repair has no measured effect.",
+  "Bicyclist-at-fault crashes carry most bike KSI (1,824 hurt, 259 KSI against 1,852 and 124 for drivers at fault). Few fixes in any source target rider red-light running (247 hurt, 42 KSI) or rider speed; the signal-timing effects are for motor traffic.",
+  "Scooter riders are mostly coded to the vehicles-only mode: 1,171 people hurt (153 KSI) had victim role Other, against 97 (4 KSI) in the vehicles-only bike-or-scooter-rules family. A scooter group by victim role is needed before scooter fixes can be sized.",
+  "Truck share of bike crashes is unknown (most trucks have no make-model weight), so side guards and direct vision can't be sized; 127 hurt (8 KSI) had a matched vehicle over 5,000 lb.",
+  "Costs missing for protected intersections, truncated tracks, protected left phases, signal retiming, bike-lane cameras, speed cameras per camera, loading zones and pricing. SFCTA and SFMTA per-treatment unit costs were not opened in this lane.",
+  "TØI's Norwegian handbook (tshandbok.no), Trafikverket's effect catalogue, SafetyCube, CROW and Austroads were not opened in this lane; the Danish handbook was the only Nordic source read in full.",
+  "Many targets use the at-fault movement only; the other party's movement (rider going straight) and signal presence are split across all bike families, not within each family.",
+  "Families with no fix mapped: bicycle involved | other (57 hurt, 5 KSI), DUI (8, 0) and phone use (1, 0); DUI fixes sit with the DUI lane.",
+  "The cross-cut group for high-stress signalized intersections is not a size_families row and should not be added to the family totals."
+ ]
+}

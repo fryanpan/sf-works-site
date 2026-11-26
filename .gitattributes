@@ -69,3 +69,4 @@ site/data/street-safety/crime.json filter=lfs diff=lfs merge=lfs -text
 site/data/street-safety/map.json filter=lfs diff=lfs merge=lfs -text
 site/data/street-safety/people-2005-2020.json filter=lfs diff=lfs merge=lfs -text
 site/data/street-safety/where-from/links.json filter=lfs diff=lfs merge=lfs -text
+out/crash-augment/profiles/fix-map.json filter=lfs diff=lfs merge=lfs -text

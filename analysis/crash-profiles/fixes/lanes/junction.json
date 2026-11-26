@@ -1,0 +1,1680 @@
+{
+ "lane": "junction: vehicle-only junction conflicts (red light, stop sign or other sign, vehicle right of way, unsafe turn or lane use; broadside and sideswipe)",
+ "fixes": [
+  {
+   "id": "red-light-cameras",
+   "name": "Red-light cameras",
+   "lever": "automated enforcement",
+   "how_it_works": "A camera photographs vehicles entering on red and the owner or driver is cited, so drivers stop rather than run the late phase.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Deters drivers from entering on red, which removes the broadside crash with cross traffic.",
+     "target_share": "Going-straight red-light share 2,670 of 2,982 people hurt and 142 of 153 KSI (pairs_within_mode); only at camera approaches, and the red-light note found 116 driver-run KSI crashes spread over 109 corners, so a citywide reach needs many sites [inference — mine]",
+     "effect": {
+      "low": -15,
+      "mid": -29,
+      "high": -37,
+      "unit": "% change in crashes",
+      "applies_to": "Low: all injured people at the camera junction (Danish handbook, -15% personskader, -20% killed, -17% serious). Mid: angle crashes, injury severity (Goldenbeld 2019 meta-analysis, CMF 0.71). High: angle crashes of all severities (CMF 0.63). Rear-end crashes 0.98 (Goldenbeld) to +15% (FHWA 2005); Danish all-crash effect -2%.",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7; CMF Clearinghouse 11108 to 11112 (Goldenbeld et al. 2019, 4 stars)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | red light",
+     "mechanism": "Same deterrence, but only where the driver ran the red; a camera cannot cite a bicyclist.",
+     "target_share": "352 people hurt, 53 KSI in the group; the driver-run share is not split at this grain. The red-light note found 64 of 207 red-light KSI (2021 to Aug 2026, all modes) were run by a bike, scooter or pedestrian [primary — read 2026-11-20, per red-light note]",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": null,
+      "unit": "% change in people injured",
+      "applies_to": "Injured people at camera junctions, all road users (Danish handbook); no bicycle-specific estimate found",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | red light",
+     "mechanism": "Same deterrence where the driver ran the red; pedestrian red-runners are out of reach.",
+     "target_share": "267 people hurt, 54 KSI; the red-light note counted 28 of 82 people hit by a red-running driver as pedestrians (KSI, 2021 to Aug 2026) [primary — read 2026-11-20, per red-light note]",
+     "effect": {
+      "low": null,
+      "mid": -15,
+      "high": null,
+      "unit": "% change in people injured",
+      "applies_to": "Injured people at camera junctions, all road users",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per approach (one direction into an intersection)",
+   "cost": {
+    "low": 350000,
+    "high": 350000,
+    "year": 2026,
+    "unit": "per approach to build, plus about $42,000 per approach a year for the vendor; a city presenter gave $0.5M to $1M per camera",
+    "source": "SFMTA Citizens' Advisory Council deck, Automated Speed and Red Light Enforcement, 2026-06-04, via red-light note",
+    "tag": "[primary — read 2026-11-20, per red-light note]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA lists 25 approaches at 18 intersections and switched on 6 new sites on 2026-11-15; citation data shows 13 intersections, so the two SFMTA sources disagree. 10,385 citations in 2025, each a $485 moving violation [primary — read 2026-11-20, per red-light note]",
+   "sf_evidence": "SFMTA credits cameras, engineering and education together with a 70% citywide drop in red-light injury collisions, 1996 to 2025, a naive bundled figure. No camera-only SF evaluation found. A baseline exists for the six new sites (26 injury crashes 2023 to 2025 against 29.2 expected); three years after could show only a drop of 54% or more [primary — read 2026-11-20, per red-light note]",
+   "who_decides": "SFMTA picks sites within the surveillance policy the Board of Supervisors approved by ordinance (Ordinance 111-25); a site outside it needs another ordinance (Admin Code 19B.2(a)); the state sets the fine and liability, and SB 720 (2025) lets a city opt into $100 civil tickets [primary — read 2026-11-20, per red-light note]; SB 720 detail [secondary — verify]",
+   "evidence_grade": "high: several meta-analyses (Cochrane, Høye, Goldenbeld 2019) agree on fewer angle and injury crashes, with a rear-end increase that lowers the all-crash net to near zero",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 11109: install intersection safety devices (red-light cameras), Goldenbeld et al. 2019, all crashes KABC 0.75",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=11109",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 11111: red-light cameras, angle crashes KABC 0.71",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=11111",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 420: red-light cameras, angle crashes 0.75, Persaud et al. 2005",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=420",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 422: red-light cameras, rear-end 1.15",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=422",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, What Cuts Red-Light Crashes in SF? (research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md",
+     "tag": "[primary — read 2026-11-20, per red-light note]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "all-red-clearance",
+   "name": "Longer all-red clearance interval",
+   "lever": "signals",
+   "how_it_works": "Adds a second or two when every approach shows red, so a driver who enters at the end of yellow clears before cross traffic gets green.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Gives late entrants time to clear, removing the broadside with the first cross-traffic vehicle.",
+     "target_share": "Going-straight red-light share 2,670 of 2,982 people hurt (pairs_within_mode); reachable at every signal, not just camera sites",
+     "effect": {
+      "low": -10,
+      "mid": -14,
+      "high": -20,
+      "unit": "% change in crashes",
+      "applies_to": "Low: crashes and injuries at the few Danish junctions where clearance needs adjusting (handbook says most do not). Mid: injury crashes, CMF 0.86 (Srinivasan 2011). High: all crashes, CMF 0.80",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7 (about -10%); CMF Clearinghouse 4211 and 4212 via red-light note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | red light",
+     "mechanism": "Same clearance protects a bicyclist who enters on green against a late car.",
+     "target_share": "352 people hurt, 53 KSI; driver-run share not split at this grain",
+     "effect": {
+      "low": -10,
+      "mid": -10,
+      "high": -14,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes and injuries at adjusted junctions; no bicycle-specific value",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per signalized intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per intersection; staff retiming time only, no SF figure found",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "SF ran 4.0 second yellows at 25 mph against a 3.6 second state minimum in 2019; current all-red times by signal are not published [primary — read 2026-11-20, per red-light note]",
+   "sf_evidence": "None: the signal inventory (DataSF ybh5-27n2) has no timing dates, so no before and after test is possible.",
+   "who_decides": "SFMTA traffic signal engineers [model knowledge — verify]",
+   "evidence_grade": "moderate: US empirical Bayes CMFs rated 3 to 4 stars and a Danish handbook value, but the Danish authors say the gain is limited to junctions with poorly set clearance",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, What Cuts Red-Light Crashes in SF? (research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md",
+     "tag": "[primary — read 2026-11-20, per red-light note]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 4211, increase all-red clearance interval",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=4211",
+     "tag": "[primary — read 2026-11-20, per red-light note]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "signal-head-visibility",
+   "name": "Retroreflective backplates, larger and extra signal heads, mast arms",
+   "lever": "signals",
+   "how_it_works": "Makes the signal easier to see by day and at night so fewer drivers miss the change to red.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Fewer unintended red-light entries by drivers who did not see the signal.",
+     "target_share": "2,670 going straight of 2,982; the unintended share of red-running is unknown [inference — mine]",
+     "effect": {
+      "low": -15,
+      "mid": -15,
+      "high": -30,
+      "unit": "% change in crashes",
+      "applies_to": "Low and mid: all crashes in the influence area, backplates and hardware (LRSM SI02 CRF 15%; CMF 1410). High: converting pedestal-mounted heads to mast arms (LRSM SI07 CRF 30%). The Danish handbook reports significant falls in injury crashes in darkness but gives no number",
+      "source": "Caltrans LRSM v1.8 Table 1, SI02 and SI07",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "mechanism": "Larger or added stop and warning signs at stop-controlled corners cut missed-stop broadsides.",
+     "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI (size_families)",
+     "effect": {
+      "low": -15,
+      "mid": -15,
+      "high": -15,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes in the influence area of a non-signalized intersection (LRSM NS08)",
+      "source": "Caltrans LRSM v1.8 Table 2, NS08",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 1180000,
+    "high": 1180000,
+    "year": 2025,
+    "unit": "per location for a full SF signal upgrade (Contract 35: $20.1M over 17 locations, including mast arms, left-turn signals, countdown and accessible signals, lighting and 97 curb ramps); backplates alone are far cheaper but no SF figure found. Per location is [inference — mine]",
+    "source": "SFCTA, Contract 35 approval, 2025-10-28",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 10,
+   "sf_now": "Which SF signals have retroreflective backplates is not published [primary — read 2026-11-20, per red-light note]; SF is upgrading signals contract by contract (Contract 35, 17 locations, 2025)",
+   "sf_evidence": "None found.",
+   "who_decides": "SFMTA, funded mostly by Prop L sales tax and GO bonds per the SFCTA release [primary — read 2026-11-25]",
+   "evidence_grade": "moderate: FHWA proven countermeasure with a 4-star CMF for backplates; mast-arm and Danish dark-hour results less precise",
+   "sources": [
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SFCTA, Transportation Authority approves $5.3 million for traffic signal upgrades across the city (Contract 35), 2025-10-28",
+     "url": "https://www.sfcta.org/blogs/transportation-authority-approves-53-million-traffic-signal-upgrades-across-city",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 1410, backplates with retroreflective borders",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=1410",
+     "tag": "[primary — read 2026-11-20, per red-light note]"
+    }
+   ]
+  },
+  {
+   "id": "protected-left-turn-phase",
+   "name": "Protected-only left-turn phase",
+   "lever": "signals",
+   "how_it_works": "Left-turning drivers get their own green arrow and are held on red while opposing traffic and the crosswalk they turn across have green.",
+   "groups": [
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Removes the gap-judging left turn across oncoming traffic at signals.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt, 89 of 121 KSI (pairs_within_mode); only the part at signals with permissive lefts, which this data does not split; 66% of intersection KSI citywide were at signals (signals_at_intersections) [inference — mine]",
+     "effect": {
+      "low": -30,
+      "mid": -80,
+      "high": -99,
+      "unit": "% change in crashes",
+      "applies_to": "Mid: crashes with left-turners from the treated approach, every severity (Danish handbook §5.7, from a large Danish study and a Belgian one); the handbook says other crash types do not change. Low: all crashes in the influence area (LRSM SI06 CRF 30%). High: angle crashes, CMF 333 (0.01, 4 stars), whose after count was not reported",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7; Caltrans LRSM SI06; CMF 333",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "left or U-turn",
+     "mechanism": "Same separation for left turns cited as unsafe turns at signals.",
+     "target_share": "Left or U-turn 1,025 of 3,974 people hurt, 46 of 208 KSI (size_families); signal share not split",
+     "effect": {
+      "low": -30,
+      "mid": -80,
+      "high": -80,
+      "unit": "% change in crashes",
+      "applies_to": "Crashes with left-turners from the treated approach (Danish); all crashes in influence area (LRSM)",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7; Caltrans LRSM SI06",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Holds the left-turning driver while an oncoming bicyclist goes straight.",
+     "target_share": "Left or U-turn 308 of 516 people hurt, 19 of 35 KSI (size_families)",
+     "effect": {
+      "low": -33,
+      "mid": -80,
+      "high": -80,
+      "unit": "% change",
+      "applies_to": "Low: left-turn pedestrian and bicyclist injuries after left-turn-only signals, NYC naive before and after at 34 intersections. Mid and high: Danish all left-turner crashes from the treated approach",
+      "source": "NYC DOT left-turn study 2016; Vejdirektoratet Effekthåndbog 2023 §5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per signalized approach",
+   "cost": {
+    "low": null,
+    "high": 1180000,
+    "year": 2025,
+    "unit": "per intersection; low where the controller and heads allow a phase change (LRSM: 'the cost would also be low', in-house work), up to a full SF signal upgrade at about $1.18M a location where new heads and mast arms are needed",
+    "source": "Caltrans LRSM SI06 text; SFCTA Contract 35",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 20,
+   "sf_now": "SF signal upgrade contracts add left-turn signals (Contract 35, 2025); the count of SF approaches with permissive versus protected lefts is not published [unretrieved — verify]",
+   "sf_evidence": "None found at the signal level; SF's signal inventory has no phasing dates.",
+   "who_decides": "SFMTA signal engineering, within CA MUTCD §4D guidance that the LRSM says agencies must document [primary — read 2026-11-25]",
+   "evidence_grade": "high: Danish large-sample before and after and a Belgian replication agree on about -80% for the target crashes; US CMFs agree in direction. Flashing-yellow-arrow permissive phasing is weaker and replacing protected-only with it raised left-turn crashes 3.4 times in Utah (CMF 9401)",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 333: change from permitted or permitted-protected to protected, angle crashes 0.01, 4 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=333",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 7684: permissive to flashing yellow arrow protected/permissive, left-turn crashes 0.598, 3 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=7684",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 9401: protected only to flashing yellow arrow protected/permissive, left-turn crashes 3.428, 3 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=9401",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, 2016",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SFCTA, Transportation Authority approves $5.3 million for traffic signal upgrades across the city (Contract 35), 2025-10-28",
+     "url": "https://www.sfcta.org/blogs/transportation-authority-approves-53-million-traffic-signal-upgrades-across-city",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "left-turn-lane-channelisation",
+   "name": "Left-turn lane with a curbed channelising island",
+   "lever": "street design",
+   "how_it_works": "Gives left-turners a separate, curbed waiting space so they are out of the through lane and their path across the junction is fixed.",
+   "groups": [
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Calmer, better-placed left turns and fewer rear-end and turning-across-oncoming crashes.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt, 89 of 121 KSI (pairs_within_mode); only streets with room for a pocket",
+     "effect": {
+      "low": -10,
+      "mid": -25,
+      "high": -55,
+      "unit": "% change in crashes and injured",
+      "applies_to": "Mid: all crashes and injuries at urban 4-leg junctions with yield control, left-turn channelisation on the main road (Danish §5.9; urban T-junction -20%); the handbook says the effect at signals is 'considerably smaller' but cannot be separated. Low: Trafikverket left-turn pocket at a 4-leg junction, about 10% of crashes, injured and killed. High: new left-turn lane plus a new left-turn phase at a signal with neither (LRSM SI05 CRF 55%)",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.9; Trafikverket 2026 Table 45; Caltrans LRSM SI05",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "left or U-turn",
+     "mechanism": "Fixes the turning path so turns from the wrong lane or across the centerline become harder.",
+     "target_share": "Left or U-turn 1,025 of 3,974 people hurt (size_families)",
+     "effect": {
+      "low": -10,
+      "mid": -25,
+      "high": -35,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes at the junction (Danish, Trafikverket); LRSM NS20 left-turn lane at a non-signalized junction CRF 35%",
+      "source": "Vejdirektoratet §5.9; Trafikverket Table 45; Caltrans LRSM NS20",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection approach",
+   "cost": {
+    "low": 19000,
+    "high": 40000,
+    "year": 2025,
+    "unit": "per intersection for SF concrete islands (Next Generation Sanchez), used here as the nearest SF unit cost for a curbed island; restriping-only pockets cost less, widening far more (LRSM: 'very low to high')",
+    "source": "SFCTA CAC memo Sept 2025, via traffic circles costs note",
+    "tag": "[primary — read 2026-10-22, per calming costs note]"
+   },
+   "life_years": 20,
+   "sf_now": "Many SF arterials have left pockets where width allows; no citywide inventory of curbed versus painted pockets found [unretrieved — verify]",
+   "sf_evidence": "None found.",
+   "who_decides": "SFMTA, with Public Works for curb work [model knowledge — verify]",
+   "evidence_grade": "moderate: Danish and Swedish handbook values rest on two large US studies and Nordic studies; the Danish authors say results vary widely because most studies are small, and the effect at signals is smaller",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, Traffic circles and diverters: equity and costs (2026-10-31-equity-costs.md)",
+     "url": "../../../../research/notes/traffic-circles-diverters-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[primary — read 2026-10-31, per traffic circles note]"
+    }
+   ]
+  },
+  {
+   "id": "hardened-centerline-turn-calming",
+   "name": "Hardened centerline and left-turn calming (posts, rubber bumps, slow-turn wedges)",
+   "lever": "street design",
+   "how_it_works": "Rubber or concrete bumps and posts along the centerline into the crosswalk force a squarer, slower left turn and stop drivers cutting the corner.",
+   "groups": [
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Slower, squarer left turns give the driver longer to see oncoming traffic and cut the impact speed.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt, 89 of 121 KSI (pairs_within_mode)",
+     "effect": {
+      "low": -9.8,
+      "mid": -17,
+      "high": -71,
+      "unit": "% change in left-turn speed or speeding share, not crashes",
+      "applies_to": "Low: mean left-turn speed, Washington D.C. against controls (IIHS). Mid: SF average left-turn speed at 7 sites against 4 controls (1.7 mph slower). High: SF share of left turns over 15 mph. No vehicle-only crash effect found; NYC reports pedestrian severe injuries -33% at turn-calming sites (naive)",
+      "source": "Hu and Cicchino 2020 (IIHS); SFMTA A Turn Toward Safety 2021; NYC DOT Turn Calming page",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "left or U-turn",
+     "mechanism": "Physically stops drivers cutting across the double yellow while turning.",
+     "target_share": "Left or U-turn 1,025 of 3,974 people hurt, 46 of 208 KSI; wrong way or opposing lane another 182 people hurt (size_families)",
+     "effect": {
+      "low": -78.9,
+      "mid": -78.9,
+      "high": -100,
+      "unit": "% change in rate of crossing the double yellow while turning",
+      "applies_to": "NYC sites with treatment to the stop bar (-78.9%) and to the crosswalk (-100%); a behaviour measure, not crashes",
+      "source": "NYC DOT Turn Calming page",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Slower left turns across an oncoming bicyclist.",
+     "target_share": "Left or U-turn 308 of 516 people hurt, 19 of 35 KSI",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "No bicycle crash effect found; missing",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 3000,
+    "high": null,
+    "year": 2024,
+    "unit": "per approach, narrow-island configuration (MassDOT cut sheet, PDF not opened); no SF cost for the 2021 pilot found",
+    "source": "MassDOT Speed Management Cut Sheets, Centerline Hardening, as summarised by search",
+    "tag": "[web search — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "SFMTA piloted left-turn calming at seven high-crash intersections with posts, small rubber bumps and paint (2021); rollout count since is unknown [unretrieved — verify]",
+   "sf_evidence": "Average left-turn speed -17% (1.7 mph) and turns over 15 mph -71% against four control intersections; no crash result [primary — read 2026-11-25]",
+   "who_decides": "SFMTA, as a quick-build [model knowledge — verify]",
+   "evidence_grade": "low: controlled speed and conflict studies in SF, D.C. and NYC, but no controlled crash study for vehicle-only crashes; LADOT's 0.54 CMF it cites is for raised medians, not this device",
+   "sources": [
+    {
+     "title": "Hu and Cicchino, The effects of left-turn traffic-calming treatments on conflicts and speeds in Washington, D.C., J Safety Research 2020",
+     "url": "https://www.iihs.org/topics/bibliography/ref/2202",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SFMTA, SFMTA releases report on success of safer intersections project (A Turn Toward Safety), 2021",
+     "url": "https://www.sfmta.com/reports/sfmta-releases-report-success-safer-intersections-project",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NYC DOT, Turn Calming Program page",
+     "url": "https://www.nyc.gov/html/dot/html/pedestrians/turn-calming.shtml",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, 2024, Chapter 4 toolbox (repo copy data/archive/ladot-vision-zero-safety-study-2024/report.txt)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "MassDOT, Speed management cut sheets: centerline hardening",
+     "url": "https://www.mass.gov/doc/speed-management-cut-sheets-centerline-hardening/download",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "left-turn-restrictions",
+   "name": "Left-turn bans and directional median openings",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Bans the left turn at a crash corner, by sign or by a median that only allows some movements, so the conflict is moved to a safer place or a three-rights loop.",
+   "groups": [
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Removes the left turn across oncoming traffic at the treated corner.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt, 89 of 121 KSI; only at banned corners, and turns may shift to the next corner",
+     "effect": {
+      "low": -25,
+      "mid": -50,
+      "high": -50,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes in the influence area: directional median openings (LRSM SI13 and NS17 CRF 50%); access management 25% to 50% (LADOT citing LRSM 2020). No non-US handbook value found; Trafikverket's 'ögla' loop turn has no study",
+      "source": "Caltrans LRSM v1.8 SI13, NS17; LADOT 2024 toolbox; Trafikverket 2026",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "left or U-turn",
+     "mechanism": "Removes the illegal or awkward left and U-turn where it is banned physically.",
+     "target_share": "Left or U-turn 1,025 of 3,974 people hurt (size_families)",
+     "effect": {
+      "low": -25,
+      "mid": -50,
+      "high": -50,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes in influence area (LRSM)",
+      "source": "Caltrans LRSM v1.8 SI13",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "No left-turning driver to cross the oncoming bicyclist.",
+     "target_share": "Left or U-turn 308 of 516 people hurt",
+     "effect": {
+      "low": -41,
+      "mid": -41,
+      "high": -41,
+      "unit": "% change in left-turn pedestrian and bicyclist injuries",
+      "applies_to": "51 NYC intersections, 113 to 67 injuries, naive 3 years before and after",
+      "source": "NYC DOT left-turn study 2016",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 12000,
+    "high": 50000,
+    "year": 2026,
+    "unit": "per intersection: SF D2 study priced a blank-out No Right Turn sign with warning signs and striping at $12,000 (Laguna and Bay); a median version falls in LADOT's 'Low' band (up to $50,000)",
+    "source": "SFCTA District 2 Safety Study Table 6-1; LADOT 2024 cost bands",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 20,
+   "sf_now": "SF uses posted turn bans, including on Market Street where a red-light camera enforces the right-turn ban at Octavia; no inventory of banned turns found [unretrieved — verify]",
+   "sf_evidence": "None found.",
+   "who_decides": "SFMTA Board, through the traffic engineering public hearing process [model knowledge — verify]",
+   "evidence_grade": "low: US CRFs from manuals and NYC naive before and after; diversion to nearby corners is unmeasured",
+   "sources": [
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, 2024, Chapter 4 toolbox (repo copy data/archive/ladot-vision-zero-safety-study-2024/report.txt)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, 2016",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SFCTA, District 2 Safety Study, Table 6-1",
+     "url": "https://www.sfcta.org/reports/district-2-safety-study",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "roundabout-conversion",
+   "name": "Convert a signal or stop junction to a single-lane roundabout",
+   "lever": "street design",
+   "how_it_works": "Replaces crossing and left-turn conflicts with a slow merge around a central island, so cars meet at low speed and shallow angles.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "With no signal there is no red to run and no high-speed broadside.",
+     "target_share": "Going straight 2,670 of 2,982 people hurt (pairs_within_mode); only at junctions with room for a roundabout, few in SF",
+     "effect": {
+      "low": 0,
+      "mid": -15,
+      "high": -79,
+      "unit": "% change",
+      "applies_to": "Urban 4-leg signal to roundabout, Danish handbook: injury crashes -5%, injured people -15%, killed -40%, all crashes 0; urban 3-leg signal to roundabout raises injured +15%. High: LRSM CRF 79% for fatal and injury crashes, which the Danish urban figures do not support",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.5; Caltrans LRSM SI16RA",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "No left turn across oncoming traffic; everyone turns right into the circle.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt, 89 of 121 KSI",
+     "effect": {
+      "low": -10,
+      "mid": -30,
+      "high": -55,
+      "unit": "% change in injured people (high: killed)",
+      "applies_to": "Urban 4-leg yield-controlled junction to roundabout (Danish): injury crashes -20%, injured -30%, killed -55%; urban 3-leg yield junction: injured 0, killed -25%",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Replaces a stop that drivers run with a yield at low speed.",
+     "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI",
+     "effect": {
+      "low": 0,
+      "mid": -30,
+      "high": -55,
+      "unit": "% change in injured people (high: killed)",
+      "applies_to": "Urban yield-controlled 4-leg to roundabout (Danish); Danish handbook groups stop and yield as vigepligt",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "bicycle involved | vehicle right of way",
+     "mechanism": "Warning: roundabouts often worsen safety for bicyclists unless the bike path is separated outside the circle.",
+     "target_share": "516 people hurt, 35 KSI; all bicycle crashes at a converted junction are exposed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "direction only",
+      "applies_to": "Danish handbook: conversion 'often' worsens safety for cyclists, moped riders and motorcyclists; designs with bike lanes or coloured bike markings in the circle perform badly; it advises urban roundabouts only where few two-wheelers or with separated paths. No number given",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 250000,
+    "high": null,
+    "year": 2024,
+    "unit": "per intersection, LADOT 'High' band ($250,000 or more); LRSM says costs are 'relatively high' and may need right of way; no SF figure found",
+    "source": "LADOT 2024 toolbox; Caltrans LRSM SI16RA",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 20,
+   "sf_now": "SF has small traffic circles (36 in SFMTA's intersection layer) but few or no full roundabouts [primary — read 2026-10-31, per traffic circles note]; full roundabouts [unretrieved — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA and Public Works; Caltrans on state routes [model knowledge — verify]",
+   "evidence_grade": "moderate: TØI meta-analysis of 44 evaluations and two Danish studies, but urban effects are small and one Danish study of 149 urban conversions found injury crashes up 28%; harm to bicyclists is consistent",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, 2024, Chapter 4 toolbox (repo copy data/archive/ladot-vision-zero-safety-study-2024/report.txt)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "mini-roundabout-traffic-circle",
+   "name": "Mini-roundabout or neighbourhood traffic circle at a stop-controlled corner",
+   "lever": "speed management",
+   "how_it_works": "A mountable central island makes drivers slow and deflect at a residential or collector corner.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Drivers who would run the stop must slow to get round the island, so broadsides are rarer and slower.",
+     "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI; 688 of the group's 1,323 people hurt were on residential streets (family_stress)",
+     "effect": {
+      "low": 74,
+      "mid": -46,
+      "high": -61,
+      "unit": "% change in fatal and injury crashes",
+      "applies_to": "Low (worse): all-way stop to mini-roundabout, KABC CMF 1.74 (Mishra 2022, 3 stars, 35 mph+ roads). Mid: multi-vehicle KABC crashes, all-way stop to mini-roundabout, urban and suburban, CMF 0.54 (Avelar 2023, 3 stars). High: two-way stop to mini-roundabout, KABC 0.39 (Mishra). Vancouver local circles: car-only injury crashes RR 0.53 against nearby intersections. The Danish handbook says urban mini-roundabouts 'mostly' bring no substantial reduction",
+      "source": "CMF Clearinghouse 11241, 11244, 11538; Teschke 2018 via traffic circles note; Vejdirektoratet §5.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "going straight",
+     "mechanism": "Same deflection at uncontrolled or yield corners.",
+     "target_share": "Going straight 886 of 3,119 people hurt, 20 of 121 KSI; only on local streets",
+     "effect": {
+      "low": null,
+      "mid": -47,
+      "high": null,
+      "unit": "RR, car-only injury crashes",
+      "applies_to": "Vancouver local-street circles against intersections one block away, RR 0.53 (0.44 to 0.63)",
+      "source": "Teschke et al. 2018, via traffic circles note",
+      "tag": "[primary — read 2026-10-31, per traffic circles note]"
+     }
+    },
+    {
+     "group": "bicycle involved | stop sign or other sign",
+     "mechanism": "Warning: circles raised cyclist injuries in Vancouver.",
+     "target_share": "241 people hurt, 20 KSI",
+     "effect": {
+      "low": 140,
+      "mid": 240,
+      "high": 330,
+      "unit": "% change (RR minus 1) in cyclist-car injury crashes",
+      "applies_to": "Vancouver circles against nearby intersections, RR 3.4 (2.7 to 4.3); pedestrian RR 1.8",
+      "source": "Teschke et al. 2018, via traffic circles note",
+      "tag": "[primary — read 2026-10-31, per traffic circles note]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 40000,
+    "high": 100000,
+    "year": 2026,
+    "unit": "per circle all in, an estimate from Seattle's $20,000 to $25,000 build cost plus SF's design share; no SF circle unit cost found [inference — mine]",
+    "source": "Traffic circles equity and costs note",
+    "tag": "[primary — read 2026-10-31, per traffic circles note]"
+   },
+   "life_years": 25,
+   "sf_now": "36 circles in SFMTA's intersection layer, no costs listed (traffic circles note)",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA traffic calming program; Fire Department review of turning paths [model knowledge — verify]",
+   "evidence_grade": "low: studies disagree in sign (Mishra against Avelar on all-way stops), most are on faster US roads, and the cyclist harm is large and consistent in Vancouver",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 11538: all-way stop to mini roundabout, multi-vehicle KABC 0.5422, 3 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=11538",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 11244: all-way stop to mini roundabout KABC 1.74, Mishra 2022",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=11244",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 11241: two-way stop to mini roundabout KABC 0.39",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=11241",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, Traffic circles and diverters: evidence (research/notes/traffic-circles-diverters-2026-10/2026-10-31-evidence.md)",
+     "url": "../../../../research/notes/traffic-circles-diverters-2026-10/2026-10-31-evidence.md",
+     "tag": "[primary — read 2026-10-31, per traffic circles note]"
+    },
+    {
+     "title": "SF Works note, Traffic circles and diverters: equity and costs (2026-10-31-equity-costs.md)",
+     "url": "../../../../research/notes/traffic-circles-diverters-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[primary — read 2026-10-31, per traffic circles note]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, 2024, Chapter 4 toolbox (repo copy data/archive/ladot-vision-zero-safety-study-2024/report.txt)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "all-way-stop-conversion",
+   "name": "Convert two-way stop or yield control to all-way stop",
+   "lever": "street design",
+   "how_it_works": "Every approach stops, so no driver crosses a through street at speed relying on a gap.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Through drivers on the main street also stop, so a driver who runs or misjudges the side-street stop meets slow traffic.",
+     "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI; only corners now two-way stop",
+     "effect": {
+      "low": -30,
+      "mid": -70,
+      "high": -75,
+      "unit": "% change",
+      "applies_to": "Mid: injury crashes, urban, CMF 0.30 (Lovell and Hauer 1986, 4 stars). High: angle crashes 0.25. Low: Danish handbook -30% crashes and injuries for adding stop (stoppligt) where drivers had only to yield, a related but different change. LRSM NS02 CRF 50%",
+      "source": "CMF Clearinghouse 310, 314; Vejdirektoratet §5.8; Caltrans LRSM NS02",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "going straight",
+     "mechanism": "Removes the uncontrolled or yield crossing where drivers misjudge right of way.",
+     "target_share": "Going straight 886 of 3,119 people hurt; left or U-turn 1,814 at unsignalized corners only",
+     "effect": {
+      "low": -30,
+      "mid": -50,
+      "high": -70,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes in the influence area (LRSM 50%); injury crashes (CMF 314, 0.30)",
+      "source": "Caltrans LRSM NS02; CMF 314",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": 50000,
+    "year": 2024,
+    "unit": "per intersection, LADOT 'Low' band (up to $50,000); LRSM: 'just a change in signing'",
+    "source": "LADOT 2024 toolbox; Caltrans LRSM NS02",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 10,
+   "sf_now": "All-way stops are common in SF residential grids [model knowledge — verify]; count not retrieved",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer and Board after a public hearing; LRSM requires the CA-MUTCD warrant for HSIP funding [primary — read 2026-11-25]",
+   "evidence_grade": "moderate: a 4-star 1986 urban study and a Danish handbook value agree in direction; old data and the MUTCD warrant limit where it applies",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 310: convert minor-road stop to all-way stop, angle 0.25, 4 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=310",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 314: same, injury crashes 0.30, 4 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=314",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, 2024, Chapter 4 toolbox (repo copy data/archive/ladot-vision-zero-safety-study-2024/report.txt)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "new-traffic-signal",
+   "name": "Signalise a stop-controlled junction",
+   "lever": "signals",
+   "how_it_works": "A signal separates crossing streams in time at a busy corner where stops or gaps fail.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Crossing traffic gets its own time, removing the run-the-stop broadside.",
+     "target_share": "Going straight 989 of 1,323 people hurt; only corners that meet a signal warrant",
+     "effect": {
+      "low": -15,
+      "mid": -30,
+      "high": -30,
+      "unit": "% change in injured people",
+      "applies_to": "Danish handbook: 4-leg junction -30% injured and killed, 3-leg -15%, plus -25% and -15% on the 200 m of road either side; it notes rear-end and turning crashes can rise but are included. LRSM NS03 CRF 30%, and no other intersection measure may be stacked with it",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.6; Caltrans LRSM NS03",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "mechanism": "Same separation for failure-to-yield crossings and left turns.",
+     "target_share": "3,119 people hurt, 121 KSI; unsignalized share not split here",
+     "effect": {
+      "low": -15,
+      "mid": -30,
+      "high": -30,
+      "unit": "% change in injured people",
+      "applies_to": "As above",
+      "source": "Vejdirektoratet §5.6",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 300000,
+    "high": 700000,
+    "year": 2021,
+    "unit": "per intersection: SFMTA was quoted at $500,000 to $700,000 (KPIX, undated) and Prop K Contract 66 programmed $3.3M for ten new signals and one RRFB (2021); neither document opened",
+    "source": "Search results summarising KPIX and SFCTA EP 31 5YPP",
+    "tag": "[web search — verify]"
+   },
+   "life_years": 20,
+   "sf_now": "1,249 of 8,295 SF intersections have a signal (signals_at_intersections); SF adds signals under Prop L",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA, within CA-MUTCD warrants (LRSM requires warrants 4, 5 or 7 for HSIP) [primary — read 2026-11-25]",
+   "evidence_grade": "moderate: Danish before and after study plus TØI meta-analysis; Trafikverket warns that red-running at signals has severe consequences and SF's signalized corners already hold 66% of intersection KSI",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "signal-progression-low-speed",
+   "name": "Signal coordination timed for a slow progression",
+   "lever": "signals",
+   "how_it_works": "Coordinates a corridor's signals so a platoon arriving at the target speed meets green, which cuts late-yellow arrivals and rewards not speeding.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Fewer drivers arrive in the dilemma zone or race for a yellow.",
+     "target_share": "Going straight 2,670 of 2,982 people hurt; only on coordinated corridors",
+     "effect": {
+      "low": -15,
+      "mid": -15,
+      "high": -15,
+      "unit": "% change in crashes and injured people",
+      "applies_to": "Coordinated junctions (green wave), Danish handbook; some studies also find falls at unsignalized junctions between",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.7",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per corridor",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per corridor; staff time where interconnect exists, 'moderate to high' where new interconnect is needed (LRSM SI03); no SF figure",
+    "source": "Caltrans LRSM SI03",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 10,
+   "sf_now": "SF times many corridors; SFMTA has retimed some streets for slower progression [model knowledge — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA signal operations [model knowledge — verify]",
+   "evidence_grade": "low: handbook value from foreign studies with no confidence interval; speed of the progression is the design choice that matters and is not separated",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "dilemma-zone-detection",
+   "name": "Traffic-responsive signals with dilemma-zone green extension",
+   "lever": "signals",
+   "how_it_works": "Detectors hold the green for a vehicle that cannot stop in time, and the signal adapts to arrivals instead of a fixed plan.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Fewer drivers are forced to choose between hard braking and entering on red.",
+     "target_share": "Going straight 2,670 of 2,982 people hurt",
+     "effect": {
+      "low": -5,
+      "mid": -20,
+      "high": -35,
+      "unit": "% change in crashes and injured people",
+      "applies_to": "Fixed-time to traffic-responsive control, Danish handbook (range 5% to 35% abroad, 20% expected); Trafikverket: modern control with an accident-reduction function against older signals cut KSI 13% in city centres. Dilemma-zone extension alone has no separate number",
+      "source": "Vejdirektoratet §5.7; Trafikverket 2026 Table 44",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per intersection; missing",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "SF signals are largely fixed-time in a dense grid [model knowledge — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA [model knowledge — verify]",
+   "evidence_grade": "low: wide range across foreign studies; fixed-time grids with many pedestrians may gain less",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "lane-reduction-road-diet",
+   "name": "Lane reduction (road diet), four lanes to two plus turn lane or bike lanes",
+   "lever": "street design",
+   "how_it_works": "Removes through lanes so there is one lane each way, which ends lane-change conflicts, the double-threat left turn across two lanes, and lowers speeds.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "lane change, merge, pass, entering",
+     "mechanism": "With one through lane each way there are no lane changes to sideswipe.",
+     "target_share": "Lane change, merge, pass 873 of 3,974 people hurt, 31 of 208 KSI; going straight 1,090 (size_families); only on multi-lane streets. 3,067 people were hurt in vehicle-only sideswipes citywide (grouping_alternatives, crash type)",
+     "effect": {
+      "low": 9,
+      "mid": -19,
+      "high": -47,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes on the corridor. Mid: FHWA-HRT-10-053 urban sites in California and Washington, CMF 0.81. High: CMF 2841, Persaud 2010, 0.53, 5 stars. Low (worse): SF's own 16 corridors, 1.09 (0.99 to 1.19) and 1.01 (0.92 to 1.09) with traffic volumes",
+      "source": "CMF Clearinghouse 2841; FHWA-HRT-10-053 and SF corridors via methods note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "A left-turner crosses one oncoming lane, not two, so a car in the far lane cannot be hidden behind a nearer one.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt, 89 of 121 KSI; on multi-lane streets only",
+     "effect": {
+      "low": 9,
+      "mid": -19,
+      "high": -47,
+      "unit": "% change in crashes",
+      "applies_to": "All corridor crashes; no left-turn-specific value found",
+      "source": "As above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "Lower corridor speeds reduce the severity of red-light broadsides.",
+     "target_share": "Going straight 2,670 of 2,982; on multi-lane streets only",
+     "effect": {
+      "low": null,
+      "mid": -35,
+      "high": null,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes, LRSM R14 CRF 35% (a manual value, not red-light specific)",
+      "source": "Caltrans LRSM R14",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per mile",
+   "cost": {
+    "low": 100000,
+    "high": 2390000,
+    "year": 2015,
+    "unit": "per mile: FHWA paint-only four-to-three $100,000 (2015 dollars) to SF quick-build protected bike lane $0.89M to $2.39M (SFMTA Board budgets, years vary)",
+    "source": "Road diets equity and costs note",
+    "tag": "[primary — read 2026-10-31, per road diet note]"
+   },
+   "life_years": 20,
+   "sf_now": "SF has done many lane reductions on corridor projects; no dataset marks them (methods note)",
+   "sf_evidence": "16 SF road diet corridors: 1.09 (0.99 to 1.19) for injury crashes, 1.01 (0.92 to 1.09) with volumes, so no change seen; without corridors that had other changes, 0.88 (0.76 to 1.00). California Street fell about half against the city.",
+   "who_decides": "SFMTA Board for lane removal; Caltrans on state highways (Lombard, Van Ness, 19th Ave) [model knowledge — verify]",
+   "evidence_grade": "moderate: strong US empirical Bayes CMFs, but SF's own test found no change, so transfer to SF's grid is in doubt",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 2841: converting four-lane to three-lane with center turn lane, all crashes 0.53, 5 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=2841",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 5554: road diet, urban Iowa, 0.812, 4 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=5554",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24-methods-by-intervention.mdx)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[DataSF ubvf-ztfx — queried 2026-11-24, per methods note]"
+    },
+    {
+     "title": "SF Works note, Road diets: equity and costs (research/notes/road-diets-2026-10/2026-10-31-equity-costs.md)",
+     "url": "../../../../research/notes/road-diets-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[primary — read 2026-10-31, per road diet note]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "curbed-median",
+   "name": "Curbed median on an urban street",
+   "lever": "street design",
+   "how_it_works": "A raised median separates directions, stops mid-block left turns and U-turns, and narrows the lanes.",
+   "groups": [
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "movement": "wrong way or opposing lane",
+     "mechanism": "Drivers cannot drift or pass into the opposing lane or turn left mid-block.",
+     "target_share": "Wrong way or opposing lane 182 and left or U-turn 1,025 of 3,974 people hurt (size_families); only on streets wide enough",
+     "effect": {
+      "low": -20,
+      "mid": -40,
+      "high": -40,
+      "unit": "% change in injury crashes and injured people",
+      "applies_to": "Urban roads: curbed median -40%, painted median -20% injury crashes (all crashes -21% and -1%)",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §4.8",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Ends mid-block and driveway left turns across traffic.",
+     "target_share": "Left or U-turn 1,814 of 3,119; mid-block share not split",
+     "effect": {
+      "low": -25,
+      "mid": -40,
+      "high": -40,
+      "unit": "% change in injury crashes",
+      "applies_to": "Danish urban median (road sections); LRSM R08 raised median CRF 25%",
+      "source": "Vejdirektoratet §4.8; Caltrans LRSM R08",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per mile or per block",
+   "cost": {
+    "low": 19000,
+    "high": 40000,
+    "year": 2025,
+    "unit": "per intersection for SF concrete islands (Sanchez); no SF per-mile median cost found",
+    "source": "SFCTA CAC memo via calming costs note",
+    "tag": "[primary — read 2026-10-22, per calming costs note]"
+   },
+   "life_years": 20,
+   "sf_now": "Medians exist on boulevards such as Sunset and Geary [model knowledge — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA and Public Works [model knowledge — verify]",
+   "evidence_grade": "moderate: Danish handbook urban values; study count not printed",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "corner-sight-lines",
+   "name": "Clear sight lines at corners (no parking near the junction, visibility triangles)",
+   "lever": "street design",
+   "how_it_works": "Removes parked cars and objects at the corner so a driver at a stop or yield can see crossing traffic.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "A driver who stops can see the cross traffic before pulling out.",
+     "target_share": "Going straight 989 of 1,323 people hurt; corners where parking blocks the view",
+     "effect": {
+      "low": -3,
+      "mid": -10,
+      "high": -10,
+      "unit": "% change in injury crashes",
+      "applies_to": "Low: injury crashes after improving sight distance at priority and signal junctions (Høye, 7 studies, -3%; drivers speed up when they see more). Mid: no parking near junctions and driveways in urban areas, injury crashes -10% (half of Elvik's -19%, from weak studies)",
+      "source": "Vejdirektoratet Effekthåndbog 2023 §5.1",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "going straight",
+     "mechanism": "Same visibility for uncontrolled and yield crossings.",
+     "target_share": "Going straight 886 of 3,119 people hurt",
+     "effect": {
+      "low": -3,
+      "mid": -10,
+      "high": -20,
+      "unit": "% change in crashes",
+      "applies_to": "High: LRSM NS13 clear sight triangles, all crashes CRF 20%",
+      "source": "Vejdirektoratet §5.1; Caltrans LRSM NS13",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per corner",
+   "cost": {
+    "low": 60000,
+    "high": 60000,
+    "year": 2026,
+    "unit": "for a neighborhood package: SF D2 study priced daylighting and painted safety zones in Cathedral Hill at $60,000; no per-corner figure",
+    "source": "SFCTA District 2 Safety Study Table 6-1",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": 10,
+   "sf_now": "California law (AB 413, 2024) bars parking within 20 ft of a crosswalk [model knowledge — verify]; SF painted 286 safety-zone corners (methods note)",
+   "sf_evidence": "SF painted safety zones: pedestrians hurt 1.07 (0.86 to 1.30) against nearby corners, no change; no vehicle-only test.",
+   "who_decides": "State law for the 20 ft rule; SFMTA for red curb and enforcement by parking control officers [model knowledge — verify]",
+   "evidence_grade": "low: Danish handbook halves Elvik's value because the studies are weak; sight-line gains are partly offset by faster driving",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SFCTA, District 2 Safety Study, Table 6-1",
+     "url": "https://www.sfcta.org/reports/district-2-safety-study",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24-methods-by-intervention.mdx)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[DataSF ubvf-ztfx — queried 2026-11-24, per methods note]"
+    }
+   ]
+  },
+  {
+   "id": "intersection-lighting",
+   "name": "Intersection lighting where corners are dark",
+   "lever": "street design",
+   "how_it_works": "Lights the conflict area so drivers see crossing vehicles, bikes and the junction itself at night.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "mechanism": "Better visibility of the junction and cross traffic at night.",
+     "target_share": "Night share not split for this family; the red-light note found 35% of driver-run red-light KSI between 10 pm and 6 am (2021 to Aug 2026) [primary — read 2026-11-20, per red-light note]",
+     "effect": {
+      "low": -10,
+      "mid": -28,
+      "high": -40,
+      "unit": "% change in night crashes",
+      "applies_to": "Night injury crashes on newly lit roads, Trafikverket -28%; LRSM SI01NT night crashes CRF 40%; Trafikverket: supplementary lighting about 10%. Only where lighting is poor now; SF streets are mostly lit",
+      "source": "Trafikverket 2026; Caltrans LRSM SI01NT, NS01NT",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per intersection; missing",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 20,
+   "sf_now": "Most SF streets are lit; dark corners not inventoried [model knowledge — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "SFPUC owns most streetlights [model knowledge — verify]",
+   "evidence_grade": "moderate for unlit roads (well documented); very low for adding light where lighting exists",
+   "sources": [
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "raised-intersection",
+   "name": "Raised intersection or speed-securing the junction approaches",
+   "lever": "speed management",
+   "how_it_works": "Lifts the whole junction to sidewalk level, or adds humps or chicanes on the approaches, so every driver crosses it slowly.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Lower entry speed means fewer missed stops and gentler broadsides.",
+     "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI",
+     "effect": {
+      "low": null,
+      "mid": -40,
+      "high": -80,
+      "unit": "% change",
+      "applies_to": "Trafikverket speed-secured (70-säkrad) rural junction: injury crashes about -40%, killed about -80%; a rural design, so for SF the handbook's own advice is to credit urban speed measures through the power model from measured speeds",
+      "source": "Trafikverket 2026, Fysiska åtgärder i korsning",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "going straight",
+     "mechanism": "Same speed control for uncontrolled crossings on local streets.",
+     "target_share": "Going straight 886 of 3,119",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "No urban crash value read; credit via the power model from speeds",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per intersection; missing for SF",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 25,
+   "sf_now": "SF uses raised crosswalks; raised whole intersections are rare [model knowledge — verify]",
+   "sf_evidence": "SF speed humps, cushions and raised crosswalks on 818 blocks: mid-block injury crashes 0.82 (0.60 to 1.20), about no change after the pre-trend (methods note); no junction test.",
+   "who_decides": "SFMTA traffic calming and Public Works; Muni and Fire review on their routes [model knowledge — verify]",
+   "evidence_grade": "very low for SF junctions: the measured value is rural Swedish; urban effect must come from speeds",
+   "sources": [
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF Works note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24-methods-by-intervention.mdx)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[DataSF ubvf-ztfx — queried 2026-11-24, per methods note]"
+    }
+   ]
+  },
+  {
+   "id": "stop-warning-beacons",
+   "name": "Stop-ahead markings and flashing beacons at stop signs",
+   "lever": "street design",
+   "how_it_works": "Warns approaching drivers of a stop they might miss with markings, larger signs or a flashing red beacon.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "movement": "going straight",
+     "mechanism": "Fewer drivers miss the stop.",
+     "target_share": "Going straight 989 of 1,323 people hurt; mainly where the stop is unexpected",
+     "effect": {
+      "low": -15,
+      "mid": -15,
+      "high": -30,
+      "unit": "% change in crashes",
+      "applies_to": "All crashes in the influence area: flashing beacons at stop-controlled junctions 15% (NS10); advance warning beacons 30% (NS11). Danish handbook advance warning of stop or yield (§5.3) not read for its number",
+      "source": "Caltrans LRSM v1.8 NS10, NS11",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per intersection; missing",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": 10,
+   "sf_now": "Unknown [unretrieved — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA [model knowledge — verify]",
+   "evidence_grade": "low: US manual values, mostly from rural roads",
+   "sources": [
+    {
+     "title": "Caltrans, Local Roadway Safety Manual v1.8 (2026), Tables 1 and 2 and Appendix B",
+     "url": "https://dot.ca.gov/-/media/dot-media/programs/local-assistance/documents/hsip/2026/lrsm2026final.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "stop-and-turn-cameras",
+   "name": "Cameras for stop signs, turn bans and blocking the box",
+   "lever": "automated enforcement",
+   "how_it_works": "Cameras cite drivers who roll through a stop sign, make a banned turn or block a junction, extending red-light enforcement to other junction violations.",
+   "groups": [
+    {
+     "group": "vehicles only | stop sign or other sign",
+     "mechanism": "Deters running or rolling the stop.",
+     "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "No crash evaluation of stop-sign cameras read",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | unsafe turn or lane use",
+     "mechanism": "Deters banned turns where a camera watches.",
+     "target_share": "1,323 people hurt in the stop-sign family includes Vehicle Code 22101 turn-ban crashes; the red-light note found 11 KSI from ignored turn bans (2021 to Aug 2026) [primary — read 2026-11-20, per red-light note]",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "Missing",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "per camera",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per camera; missing",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF's Market and Octavia red-light camera enforces a right-turn ban; 2 turn-ban citations in 2025 [primary — read 2026-11-20, per red-light note]",
+   "sf_evidence": "None.",
+   "who_decides": "State law: California has no general authority for stop-sign cameras [model knowledge — verify]; Board of Supervisors surveillance ordinance for sites",
+   "evidence_grade": "very low: no crash study found",
+   "sources": [
+    {
+     "title": "SF Works note, What Cuts Red-Light Crashes in SF? (research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md",
+     "tag": "[primary — read 2026-11-20, per red-light note]"
+    }
+   ]
+  },
+  {
+   "id": "left-turn-safety-campaign",
+   "name": "Left-turn and right-of-way education campaign",
+   "lever": "behaviour programs",
+   "how_it_works": "Targeted messaging, with community groups, tells drivers to slow down and look when turning and yielding.",
+   "groups": [
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Drivers judge gaps more carefully if they believe left turns are risky.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "SF bundled the campaign with engineering at 7 sites, so no separate effect; no crash effect for a stand-alone campaign read",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "per campaign",
+   "cost": {
+    "low": 2000000,
+    "high": 2000000,
+    "year": 2021,
+    "unit": "per campaign (Safety: It's Your Turn, California ATP grant)",
+    "source": "SFMTA A Turn Toward Safety page",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "Safety: It's Your Turn ran with six funded community groups",
+   "sf_evidence": "None separable.",
+   "who_decides": "SFMTA and Vision Zero partners",
+   "evidence_grade": "very low: no evaluation of the campaign alone",
+   "sources": [
+    {
+     "title": "SFMTA, SFMTA releases report on success of safer intersections project (A Turn Toward Safety), 2021",
+     "url": "https://www.sfmta.com/reports/sfmta-releases-report-success-safer-intersections-project",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "junction-aeb-fleet-rules",
+   "name": "Junction-capable automatic emergency braking and intelligent speed assistance in city and contracted fleets",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Vehicles that brake for crossing or turning traffic, and that limit speed, are required in the city fleet, contracted fleets and permitted commercial fleets.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "mechanism": "The vehicle brakes when cross traffic enters its path.",
+     "target_share": "2,982 people hurt; only crashes involving an equipped fleet vehicle",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "No junction AEB effect read this session; TRL PPR844 holds EU estimates but was not opened by this lane",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    },
+    {
+     "group": "vehicles only | vehicle right of way",
+     "movement": "left or U-turn",
+     "mechanism": "Turn-across-path AEB brakes a turning car in front of oncoming traffic.",
+     "target_share": "Left or U-turn 1,814 of 3,119 people hurt",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "Missing",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "per vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "per vehicle; missing",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Unknown [unretrieved — verify]",
+   "sf_evidence": "None.",
+   "who_decides": "City fleet purchasing (Office of Contract Administration) for city vehicles; federal standards for all cars [model knowledge — verify]",
+   "evidence_grade": "very low for this lane: no junction-specific effect opened",
+   "sources": [
+    {
+     "title": "TRL PPR844 for ACEA, effectiveness of EU vehicle safety measures, 2017",
+     "url": "https://www.trl.co.uk/uploads/trl/documents/PPR884%20-%20ACEA%20RQ2%20-%20Effectiveness%20estimates%20for%20proposed%20amendments%20to%20General%20and%20Pedestrian%20Safety%20Regulations.pdf",
+     "tag": "[primary — read 2026-11-25 by the prior-work lane; not opened here]"
+    }
+   ]
+  },
+  {
+   "id": "civil-red-light-penalty-opt-in",
+   "name": "Opt into SB 720 civil red-light tickets to fund more camera sites",
+   "lever": "policy and law",
+   "how_it_works": "A lower civil fine to the owner, under state law, could make more camera approaches politically and financially workable.",
+   "groups": [
+    {
+     "group": "vehicles only | red light",
+     "movement": "going straight",
+     "mechanism": "More approaches covered; per-site deterrence may differ with a lower fine.",
+     "target_share": "Going straight 2,670 of 2,982 people hurt; reach scales with sites added",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "",
+      "applies_to": "No study of civil against criminal red-light penalties read; credit through the camera effect per site added",
+      "source": "missing",
+      "tag": "[unretrieved — verify]"
+     }
+    }
+   ],
+   "unit": "citywide",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": "citywide; missing",
+    "source": "missing",
+    "tag": "[unretrieved — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No sign SF has opted in; a city presenter at SFCTA on 2026-11-17 doubted downgrading red-light running to 'just a ticket' [primary — read 2026-11-20, per red-light note]",
+   "sf_evidence": "None.",
+   "who_decides": "Board of Supervisors and SFMTA, under SB 720 (Chapter 782, 2025) [secondary — verify]",
+   "evidence_grade": "very low: no evidence on the penalty change itself",
+   "sources": [
+    {
+     "title": "SF Works note, What Cuts Red-Light Crashes in SF? (research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md)",
+     "url": "../../../../research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md",
+     "tag": "[primary — read 2026-11-20, per red-light note]"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "No vehicle-only crash effect for hardened centerlines or left-turn calming; SF, D.C. and NYC measured speeds, conflicts or pedestrian injuries only.",
+  "The size_families data does not split each family by signalized against unsignalized corner, so the share of 'left or U-turn' right-of-way crashes reachable by a protected left phase (signals) against a mini-roundabout or all-way stop (unsignalized) is unknown. A cross-tab of family x movement x signal is the next query.",
+  "No SF unit costs found for: protected left-turn phase change alone, all-red retiming, backplates, hardened centerline, mini-roundabout or full roundabout, raised intersection, lighting, beacons. The only SF figures are Contract 35 signal upgrades ($1.18M a location), D2 study packages, and red-light cameras ($350k an approach).",
+  "TØI handbook online (tshandbok.no) refused connection again; Danish handbook figures cite it. SafetyCube synopses for roundabouts and signal measures, Austroads SSAF (AP-R509-16) and TfL/ATE Junction Assessment Tool were not opened by this lane; they are scoring methods, not effects, and would rank junction designs by conflict severity.",
+  "Urban roundabout effects in the Danish handbook are small or negative (signal to roundabout, urban 4-leg: injury crashes -5%), against Caltrans LRSM's 79% for fatal and injury crashes. The two disagree; the record prints both.",
+  "Mini-roundabouts at all-way stops: Mishra 2022 (KABC 1.74) and Avelar 2023 (multi-vehicle KABC 0.54) disagree in sign; SF's many all-way stops make this decisive.",
+  "Bicycle harm from roundabouts and circles (Danish handbook, Vancouver RR 3.4) means any roundabout credit to vehicle groups must net out bicycle and pedestrian groups.",
+  "Following too closely (vehicles only, 1,398 hurt) and rear-end crashes raised by red-light cameras and new signals are outside this lane but must be netted when crediting cameras and signals.",
+  "Red-light camera reach: SFMTA's two lists disagree (18 against 13 intersections), and which years each camera ran is unknown.",
+  "No evidence read for stop-sign cameras, block-the-box cameras, civil red-light penalties, junction AEB or ISA in fleets, or education campaigns alone.",
+  "No study of one-way to two-way conversion, offset (staggered) junctions or banning right turn on red against vehicle-only crashes was read; Trafikverket reports 0% to 40% for staggered junctions on rural roads.",
+  "SF's own road diet test (16 corridors, about no change) conflicts with FHWA's 0.81; corridor lane counts before and after are missing."
+ ]
+}

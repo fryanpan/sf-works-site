@@ -1,0 +1,1696 @@
+{
+ "about": "Completeness critique of the six fix lanes (area, bike, crosscut, junction, pedestrian, speed), built 2026-11-25. 'missing' lists fixes or area-wide mappings world practice would apply that no lane has for the group; groups prefixed 'who |', 'place |' or 'time |' come from grouping_alternatives. Where-to-look sources were not opened in this pass and carry [model knowledge — verify].",
+ "missing": [
+  {
+   "group": "vehicles only | not stated",
+   "fix": "citywide default 20 mph / area speed limits",
+   "lever": "policy and law",
+   "why": "A lower limit moves severity on every crash type on the streets it covers (Nilsson power model on KSI); no lane maps it here, so 1,052 hurt / 72 KSI carries no speed lever.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | not stated",
+   "fix": "citywide speed camera network",
+   "lever": "automated enforcement",
+   "why": "Camera evaluations measure all injury crashes within the treated corridor, not only speed-coded ones; the same effect and target-share rule used for the speed families applies to this group's share on camera streets.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | not stated",
+   "fix": "LTN cell program and through-traffic hierarchy",
+   "lever": "traffic volume and filtering",
+   "why": "The London LTN effect is all-casualty inside the cell; this group's residential-street share is in reach and is not mapped.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | not stated",
+   "fix": "intelligent speed assistance (fleet and new-vehicle mandate)",
+   "lever": "vehicles and fleets",
+   "why": "ISA cuts speed on every trip, so its severity effect is not limited to speed-coded crashes; ETSC/EU GSR estimates are for all crashes.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | not stated",
+   "fix": "congestion pricing and mode shift (exposure)",
+   "lever": "pricing",
+   "why": "Fewer vehicle-miles cuts crashes of every type in the zone; the crosscut and area lanes map pricing to 5-6 named groups only.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | not stated",
+   "fix": "post-crash care (EMS response, trauma triage, crash data to EMS)",
+   "lever": "policy and law",
+   "why": "Safe System pillar five; changes the share of injuries that become deaths in every group. No lane has it.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "all other families",
+   "fix": "citywide default 20 mph / area speed limits",
+   "lever": "policy and law",
+   "why": "A lower limit moves severity on every crash type on the streets it covers (Nilsson power model on KSI); no lane maps it here, so 4,528 hurt / 476 KSI carries no speed lever.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "all other families",
+   "fix": "citywide speed camera network",
+   "lever": "automated enforcement",
+   "why": "Camera evaluations measure all injury crashes within the treated corridor, not only speed-coded ones; the same effect and target-share rule used for the speed families applies to this group's share on camera streets.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "all other families",
+   "fix": "LTN cell program and through-traffic hierarchy",
+   "lever": "traffic volume and filtering",
+   "why": "The London LTN effect is all-casualty inside the cell; this group's residential-street share is in reach and is not mapped.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "all other families",
+   "fix": "intelligent speed assistance (fleet and new-vehicle mandate)",
+   "lever": "vehicles and fleets",
+   "why": "ISA cuts speed on every trip, so its severity effect is not limited to speed-coded crashes; ETSC/EU GSR estimates are for all crashes.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "all other families",
+   "fix": "congestion pricing and mode shift (exposure)",
+   "lever": "pricing",
+   "why": "Fewer vehicle-miles cuts crashes of every type in the zone; the crosscut and area lanes map pricing to 5-6 named groups only.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "all other families",
+   "fix": "post-crash care (EMS response, trauma triage, crash data to EMS)",
+   "lever": "policy and law",
+   "why": "Safe System pillar five; changes the share of injuries that become deaths in every group. No lane has it.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | not stated",
+   "fix": "citywide default 20 mph / area speed limits",
+   "lever": "policy and law",
+   "why": "A lower limit moves severity on every crash type on the streets it covers (Nilsson power model on KSI); no lane maps it here, so 352 hurt / 55 KSI (only 3 fixes, none area-wide) carries no speed lever.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | not stated",
+   "fix": "citywide speed camera network",
+   "lever": "automated enforcement",
+   "why": "Camera evaluations measure all injury crashes within the treated corridor, not only speed-coded ones; the same effect and target-share rule used for the speed families applies to this group's share on camera streets.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | not stated",
+   "fix": "LTN cell program and through-traffic hierarchy",
+   "lever": "traffic volume and filtering",
+   "why": "The London LTN effect is all-casualty inside the cell; this group's residential-street share is in reach and is not mapped.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | not stated",
+   "fix": "intelligent speed assistance (fleet and new-vehicle mandate)",
+   "lever": "vehicles and fleets",
+   "why": "ISA cuts speed on every trip, so its severity effect is not limited to speed-coded crashes; ETSC/EU GSR estimates are for all crashes.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | not stated",
+   "fix": "congestion pricing and mode shift (exposure)",
+   "lever": "pricing",
+   "why": "Fewer vehicle-miles cuts crashes of every type in the zone; the crosscut and area lanes map pricing to 5-6 named groups only.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | not stated",
+   "fix": "post-crash care (EMS response, trauma triage, crash data to EMS)",
+   "lever": "policy and law",
+   "why": "Safe System pillar five; changes the share of injuries that become deaths in every group. No lane has it.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | not stated",
+   "fix": "citywide default 20 mph / area speed limits",
+   "lever": "policy and law",
+   "why": "A lower limit moves severity on every crash type on the streets it covers (Nilsson power model on KSI); no lane maps it here, so 292 hurt / 49 KSI (no fix in any lane) carries no speed lever.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | not stated",
+   "fix": "citywide speed camera network",
+   "lever": "automated enforcement",
+   "why": "Camera evaluations measure all injury crashes within the treated corridor, not only speed-coded ones; the same effect and target-share rule used for the speed families applies to this group's share on camera streets.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | not stated",
+   "fix": "LTN cell program and through-traffic hierarchy",
+   "lever": "traffic volume and filtering",
+   "why": "The London LTN effect is all-casualty inside the cell; this group's residential-street share is in reach and is not mapped.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | not stated",
+   "fix": "intelligent speed assistance (fleet and new-vehicle mandate)",
+   "lever": "vehicles and fleets",
+   "why": "ISA cuts speed on every trip, so its severity effect is not limited to speed-coded crashes; ETSC/EU GSR estimates are for all crashes.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | not stated",
+   "fix": "congestion pricing and mode shift (exposure)",
+   "lever": "pricing",
+   "why": "Fewer vehicle-miles cuts crashes of every type in the zone; the crosscut and area lanes map pricing to 5-6 named groups only.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | not stated",
+   "fix": "post-crash care (EMS response, trauma triage, crash data to EMS)",
+   "lever": "policy and law",
+   "why": "Safe System pillar five; changes the share of injuries that become deaths in every group. No lane has it.",
+   "where_to_look": "area.json and speed.json effects already read; Safe System post-crash pillar: WHO Global Plan 2021-2030, ITF Zero Road Deaths; SF EMS/SFFD response-time data and ZSFG trauma registry. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | pedestrian violation",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | vehicle right of way",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | stop sign or other sign",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe turn or lane use",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | following too closely",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | DUI",
+   "fix": "citywide-default-20mph (area and speed lanes)",
+   "lever": "(area-wide)",
+   "why": "Mapped only to speed-coded groups plus P failure to yield. Pedestrian violation is SF's largest KSI group (330) and a midblock going-straight crash whose severity is set by impact speed; the Edinburgh and Wales effects were measured on all casualties on changed streets, so the same residential/collector target share applies to every group.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe turn or lane use",
+   "fix": "neighbourhood-signed-20mph-zones / area-wide-engineered-20mph-zones",
+   "lever": "(area-wide)",
+   "why": "Area-wide zone effects (London 20 mph zones, all casualties) reach every group on zone streets; engineered zones map 9 groups, signed zones 4.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "neighbourhood-signed-20mph-zones / area-wide-engineered-20mph-zones",
+   "lever": "(area-wide)",
+   "why": "Area-wide zone effects (London 20 mph zones, all casualties) reach every group on zone streets; engineered zones map 9 groups, signed zones 4.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | following too closely",
+   "fix": "neighbourhood-signed-20mph-zones / area-wide-engineered-20mph-zones",
+   "lever": "(area-wide)",
+   "why": "Area-wide zone effects (London 20 mph zones, all casualties) reach every group on zone streets; engineered zones map 9 groups, signed zones 4.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe speed",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | following too closely",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | DUI",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe starting or backing",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | dooring",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | vehicle right of way",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | unsafe starting or backing",
+   "fix": "ltn-cell-program-citywide / low-traffic-neighbourhoods",
+   "lever": "(area-wide)",
+   "why": "The measured effect is all-casualty inside the cell; these groups' residential-street shares are in reach and unmapped. Bike unsafe speed (94 KSI) and bike right of way are the biggest omissions.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "citywide-speed-camera-network / fixed-speed-cameras",
+   "lever": "(area-wide)",
+   "why": "The SF and NYC camera effects are all injury crashes near the camera; mapping only to speed-coded groups under-counts what a network reaches.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | vehicle right of way",
+   "fix": "citywide-speed-camera-network / fixed-speed-cameras",
+   "lever": "(area-wide)",
+   "why": "The SF and NYC camera effects are all injury crashes near the camera; mapping only to speed-coded groups under-counts what a network reaches.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe turn or lane use",
+   "fix": "citywide-speed-camera-network / fixed-speed-cameras",
+   "lever": "(area-wide)",
+   "why": "The SF and NYC camera effects are all injury crashes near the camera; mapping only to speed-coded groups under-counts what a network reaches.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | red light",
+   "fix": "citywide-speed-camera-network / fixed-speed-cameras",
+   "lever": "(area-wide)",
+   "why": "The SF and NYC camera effects are all injury crashes near the camera; mapping only to speed-coded groups under-counts what a network reaches.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "who | pedestrian | child under 18",
+   "fix": "school-streets-citywide-program / school-zone-measures",
+   "lever": "(area-wide)",
+   "why": "Mapped only to P failure to yield and P backing; the program's target is children (383 child pedestrians hurt, 43 KSI) and drop-off backing and door crashes.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe turn or lane use",
+   "fix": "school-streets-citywide-program / school-zone-measures",
+   "lever": "(area-wide)",
+   "why": "Mapped only to P failure to yield and P backing; the program's target is children (383 child pedestrians hurt, 43 KSI) and drop-off backing and door crashes.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe starting or backing",
+   "fix": "school-streets-citywide-program / school-zone-measures",
+   "lever": "(area-wide)",
+   "why": "Mapped only to P failure to yield and P backing; the program's target is children (383 child pedestrians hurt, 43 KSI) and drop-off backing and door crashes.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "who | passenger | child under 18",
+   "fix": "school-streets-citywide-program / school-zone-measures",
+   "lever": "(area-wide)",
+   "why": "Mapped only to P failure to yield and P backing; the program's target is children (383 child pedestrians hurt, 43 KSI) and drop-off backing and door crashes.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "street-hierarchy-through-network",
+   "lever": "(area-wide)",
+   "why": "A through-street hierarchy (Sustainable Safety functionality, Barcelona superblock grid, Ghent circulation plan) moves volume off every access street; mapped to 4 groups only.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | stop sign or other sign",
+   "fix": "street-hierarchy-through-network",
+   "lever": "(area-wide)",
+   "why": "A through-street hierarchy (Sustainable Safety functionality, Barcelona superblock grid, Ghent circulation plan) moves volume off every access street; mapped to 4 groups only.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | pedestrian violation",
+   "fix": "street-hierarchy-through-network",
+   "lever": "(area-wide)",
+   "why": "A through-street hierarchy (Sustainable Safety functionality, Barcelona superblock grid, Ghent circulation plan) moves volume off every access street; mapped to 4 groups only.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe turn or lane use",
+   "fix": "street-hierarchy-through-network",
+   "lever": "(area-wide)",
+   "why": "A through-street hierarchy (Sustainable Safety functionality, Barcelona superblock grid, Ghent circulation plan) moves volume off every access street; mapped to 4 groups only.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "place | low (LTS 1-2) | residential | intersection",
+   "fix": "street-hierarchy-through-network",
+   "lever": "(area-wide)",
+   "why": "A through-street hierarchy (Sustainable Safety functionality, Barcelona superblock grid, Ghent circulation plan) moves volume off every access street; mapped to 4 groups only.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe speed",
+   "fix": "area-cordon-congestion-charge / congestion-pricing-cordon / congestion-pricing (5 records)",
+   "lever": "(area-wide)",
+   "why": "London's effect was measured on all casualties in the zone; also note London motorcyclist and cyclist casualty rises per km in some years, which a stacked total needs as a dis-benefit.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | vehicle right of way",
+   "fix": "area-cordon-congestion-charge / congestion-pricing-cordon / congestion-pricing (5 records)",
+   "lever": "(area-wide)",
+   "why": "London's effect was measured on all casualties in the zone; also note London motorcyclist and cyclist casualty rises per km in some years, which a stacked total needs as a dis-benefit.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe speed",
+   "fix": "area-cordon-congestion-charge / congestion-pricing-cordon / congestion-pricing (5 records)",
+   "lever": "(area-wide)",
+   "why": "London's effect was measured on all casualties in the zone; also note London motorcyclist and cyclist casualty rises per km in some years, which a stacked total needs as a dis-benefit.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | DUI",
+   "fix": "area-cordon-congestion-charge / congestion-pricing-cordon / congestion-pricing (5 records)",
+   "lever": "(area-wide)",
+   "why": "London's effect was measured on all casualties in the zone; also note London motorcyclist and cyclist casualty rises per km in some years, which a stacked total needs as a dis-benefit.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "place | high (LTS 3-4) | collector | intersection",
+   "fix": "area-cordon-congestion-charge / congestion-pricing-cordon / congestion-pricing (5 records)",
+   "lever": "(area-wide)",
+   "why": "London's effect was measured on all casualties in the zone; also note London motorcyclist and cyclist casualty rises per km in some years, which a stacked total needs as a dis-benefit.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | vehicle right of way",
+   "fix": "citywide-daylighting-every-corner",
+   "lever": "(area-wide)",
+   "why": "Sight-line effect at uncontrolled and stop-controlled corners applies to vehicle and bike angle crashes as well as pedestrians.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | vehicle right of way",
+   "fix": "citywide-daylighting-every-corner",
+   "lever": "(area-wide)",
+   "why": "Sight-line effect at uncontrolled and stop-controlled corners applies to vehicle and bike angle crashes as well as pedestrians.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | stop sign or other sign",
+   "fix": "citywide-daylighting-every-corner",
+   "lever": "(area-wide)",
+   "why": "Sight-line effect at uncontrolled and stop-controlled corners applies to vehicle and bike angle crashes as well as pedestrians.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "who | pedestrian | child under 18",
+   "fix": "citywide-daylighting-every-corner",
+   "lever": "(area-wide)",
+   "why": "Sight-line effect at uncontrolled and stop-controlled corners applies to vehicle and bike angle crashes as well as pedestrians.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "isa-new-vehicles-mandate / isa-city-fleet",
+   "lever": "(area-wide)",
+   "why": "ISA lowers speed on all trips; mapped only to speed-coded groups.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | vehicle right of way",
+   "fix": "isa-new-vehicles-mandate / isa-city-fleet",
+   "lever": "(area-wide)",
+   "why": "ISA lowers speed on all trips; mapped only to speed-coded groups.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | pedestrian violation",
+   "fix": "isa-new-vehicles-mandate / isa-city-fleet",
+   "lever": "(area-wide)",
+   "why": "ISA lowers speed on all trips; mapped only to speed-coded groups.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | failure to yield to pedestrian",
+   "fix": "isa-new-vehicles-mandate / isa-city-fleet",
+   "lever": "(area-wide)",
+   "why": "ISA lowers speed on all trips; mapped only to speed-coded groups.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | unsafe turn or lane use",
+   "fix": "isa-new-vehicles-mandate / isa-city-fleet",
+   "lever": "(area-wide)",
+   "why": "ISA lowers speed on all trips; mapped only to speed-coded groups.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | vehicle right of way",
+   "fix": "mode-shift-safety-in-numbers / fewer-car-miles-volume",
+   "lever": "(area-wide)",
+   "why": "The volume exponent applies to all multi-vehicle injury crashes; mapped to 3 groups per lane.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | red light",
+   "fix": "mode-shift-safety-in-numbers / fewer-car-miles-volume",
+   "lever": "(area-wide)",
+   "why": "The volume exponent applies to all multi-vehicle injury crashes; mapped to 3 groups per lane.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | pedestrian violation",
+   "fix": "mode-shift-safety-in-numbers / fewer-car-miles-volume",
+   "lever": "(area-wide)",
+   "why": "The volume exponent applies to all multi-vehicle injury crashes; mapped to 3 groups per lane.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | not stated",
+   "fix": "mode-shift-safety-in-numbers / fewer-car-miles-volume",
+   "lever": "(area-wide)",
+   "why": "The volume exponent applies to all multi-vehicle injury crashes; mapped to 3 groups per lane.",
+   "where_to_look": "The lane's own effect source already read; size_families.chart and family_stress.by_street_class for the share in reach. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | DUI",
+   "fix": "random breath testing (Australia, NZ, Nordic model, distinct from US checkpoints)",
+   "lever": "automated enforcement",
+   "why": "Large, repeated effects on alcohol crashes in Australia/NZ; the crosscut lane has only US-style sobriety checkpoints.",
+   "where_to_look": "Elder et al. / Community Guide on RBT; Austroads; Waka Kotahi; Norway TOI Handbook ch. 8. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | DUI",
+   "fix": "24/7 sobriety program (South Dakota model)",
+   "lever": "policy and law",
+   "why": "Measured cuts in repeat DUI arrests and mortality (Kilmer et al. 2013); state/county program, not in any lane.",
+   "where_to_look": "Kilmer, Nicosia et al., AJPH 2013; RAND. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | DUI",
+   "fix": "random breath testing; 24/7 sobriety",
+   "lever": "automated enforcement",
+   "why": "Same as V DUI; the pedestrian DUI family (94 hurt / 30 KSI) carries only checkpoints and limits.",
+   "where_to_look": "As above. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe speed",
+   "fix": "sideshow and street-racing countermeasures (Botts dots/hardened intersections, impound, AB 3 license suspension)",
+   "lever": "policy and law",
+   "why": "SF and Oakland sideshows concentrate high-speed KSI; Ontario stunt-driving roadside suspension/impound is the world comparator.",
+   "where_to_look": "Oakland DOT sideshow hardening; CA AB 3 (2021); Ontario Highway Traffic Act s.172. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe speed",
+   "fix": "income-scaled (day) fines and graduated speeding penalties",
+   "lever": "policy and law",
+   "why": "Finland/Switzerland practice; no lane covers fine structure beyond camera caps.",
+   "where_to_look": "Kantorowicz-Reznichenko on day fines; ETSC PIN reports; CA AB 645 ticket schedule. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe speed",
+   "fix": "motorcycle measures (ABS mandate, motorcyclist protective gear, lane-splitting rules)",
+   "lever": "vehicles and fleets",
+   "why": "by_victim_role 'Other' holds 35 of 298 KSI in this group (likely motorcyclists [inference — mine]); ABS has strong evidence (IIHS, TOI).",
+   "where_to_look": "results.json by_victim_role; Norway TOI Handbook vehicle chapter; IIHS motorcycle ABS studies. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "blind-spot monitoring and lane-keeping assist (fleet and NCAP)",
+   "lever": "vehicles and fleets",
+   "why": "873 lane-change/merge injuries; IIHS found lane-change crash cuts with BSM.",
+   "where_to_look": "IIHS Cicchino 2017/2018; Euro NCAP ADAS protocol; EU General Safety Regulation 2019/2144. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "double-parking and loading enforcement, curb management (loading zones, transit-lane cameras AB 917)",
+   "lever": "automated enforcement",
+   "why": "Lane changes around double-parked vehicles; bike lane has bike-lane cameras and loading zones only for dooring.",
+   "where_to_look": "SFMTA transit-only lane enforcement program and Red Transit Lane evaluations; AB 917 (2021). [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "red transit lanes and lane-use separation",
+   "lever": "transit and land use",
+   "why": "SFMTA's red-lane evaluations reported collision changes on treated corridors; no lane cites them.",
+   "where_to_look": "SFMTA Red Transit Lane / Muni Forward evaluation reports. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe turn or lane use",
+   "fix": "wrong-way/one-way to two-way conversion and U-turn bans",
+   "lever": "street design",
+   "why": "182 wrong-way and 1,025 left/U-turn injuries; one-way conversions have before/after studies (Louisville, others) with mixed results.",
+   "where_to_look": "Junction lane mentions two-way conversion text but maps no record; Norway TOI Handbook one-way streets. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | failure to yield to pedestrian",
+   "fix": "slip-lane (channelised right-turn) removal",
+   "lever": "street design",
+   "why": "433 right-turn injuries; slip lanes carry high-speed right turns; CROW and TfL design out free-flow turns.",
+   "where_to_look": "CROW Design Manual; TfL Junction Assessment Tool; FHWA/NACTO slip-lane guidance. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | failure to yield to pedestrian",
+   "fix": "city transit and municipal fleet collision-avoidance retrofits (Muni buses, refuse trucks: pedestrian detection, turn alerts)",
+   "lever": "vehicles and fleets",
+   "why": "Muni and refuse trucks make many large-vehicle turns; NYC DCAS and TfL Bus Safety Standard are the comparators.",
+   "where_to_look": "TfL Bus Safety Standard; NYC DCAS fleet safety reports; SFMTA Muni operator collision data. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | failure to yield to pedestrian",
+   "fix": "Euro NCAP-style pedestrian AEB and front-end ratings as a city purchasing rule",
+   "lever": "vehicles and fleets",
+   "why": "Pedestrian lane has pedestrian AEB but no purchasing standard; EU GSR makes AEB-ped mandatory 2024.",
+   "where_to_look": "EU GSR 2019/2144; Euro NCAP VRU protocol. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | red light",
+   "fix": "yellow change interval to ITE/kinematic standard",
+   "lever": "signals",
+   "why": "Junction lane mentions yellow but no record; longer yellow is the most-cited red-light countermeasure.",
+   "where_to_look": "ITE Change and Clearance Interval guidance; 2026-11-20-red-light-countermeasures.md. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | red light",
+   "fix": "LPI, shorter pedestrian waits and countdowns",
+   "lever": "signals",
+   "why": "The pedestrian red-light family (267 hurt / 54 KSI) has only red-light cameras; the pedestrian lane's signal fixes are mapped to failure to yield and pedestrian violation only.",
+   "where_to_look": "pedestrian.json records already read. [model knowledge — verify]"
+  },
+  {
+   "group": "bicycle involved | red light",
+   "fix": "bike green wave / bike-speed progression; stop-as-yield extended to reds (Idaho stop)",
+   "lever": "signals",
+   "why": "352 hurt / 53 KSI; bike lane maps bike-speed timing and RLC only.",
+   "where_to_look": "Copenhagen green wave evaluations; Idaho/Delaware/Oregon stop-as-yield studies. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | unsafe turn or lane use",
+   "fix": "turn calming, protected left phase, LPI",
+   "lever": "street design",
+   "why": "254 hurt / 36 KSI with 1 fix.",
+   "where_to_look": "pedestrian.json and junction.json records. [model knowledge — verify]"
+  },
+  {
+   "group": "pedestrian involved | vehicle right of way",
+   "fix": "daylighting, raised crossings, speed management",
+   "lever": "street design",
+   "why": "65 hurt / 7 KSI with no fix.",
+   "where_to_look": "pedestrian.json records. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | unsafe starting or backing",
+   "fix": "rear AEB/rear-view cameras, back-in angle parking, driveway and parking-lot design",
+   "lever": "vehicles and fleets",
+   "why": "485 hurt / 18 KSI with no fix; pedestrian lane's rear-visibility covers only pedestrians.",
+   "where_to_look": "IIHS rear AEB studies; NHTSA FMVSS 111; back-in angle parking evaluations. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | phone use",
+   "fix": "hand-held phone detection cameras (NSW, Queensland) and phone-blocking driving modes",
+   "lever": "automated enforcement",
+   "why": "43 hurt; distraction is under-coded so the family is a floor; Australia's camera program is world practice.",
+   "where_to_look": "Transport for NSW mobile phone detection camera evaluation; Queensland TMR. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | other",
+   "fix": "general systemic programs (20 mph, cameras, ISA, volume)",
+   "lever": "speed management",
+   "why": "269 hurt / 20 KSI with no fix.",
+   "where_to_look": "As for 'not stated' groups. [model knowledge — verify]"
+  },
+  {
+   "group": "vehicles only | dooring",
+   "fix": "Dutch reach + vehicle exit warning + ride-hail curb pickup zones",
+   "lever": "vehicles and fleets",
+   "why": "Mapped, but passenger-loading-zones is mapped to B dooring only; TNC pickup curbs reach V and P dooring too.",
+   "where_to_look": "bike.json passenger-loading-zones. [model knowledge — verify]"
+  },
+  {
+   "group": "who | passenger | adult 18 to 64",
+   "fix": "seat-belt enforcement and rear-seat belt use in taxis and ride-hail",
+   "lever": "behaviour programs",
+   "why": "4,141 passengers hurt / 144 KSI; occupant protection is a whole missing lever in every lane.",
+   "where_to_look": "CDC Community Guide on primary belt laws and enhanced enforcement; NHTSA Countermeasures That Work ch. 2; Click It or Ticket. [model knowledge — verify]"
+  },
+  {
+   "group": "who | passenger | child under 18",
+   "fix": "child-seat and booster distribution and inspection programs",
+   "lever": "behaviour programs",
+   "why": "915 child passengers hurt / 16 KSI; CDC Community Guide rates distribution plus education as recommended.",
+   "where_to_look": "CDC Community Guide child safety seats; CA booster law (Vehicle Code 27360). [model knowledge — verify]"
+  },
+  {
+   "group": "who | driver | 65 and over",
+   "fix": "older-driver measures: protected lefts, bigger and retroreflective signs, license renewal vision tests",
+   "lever": "signals",
+   "why": "1,192 hurt / 49 KSI; left-turn gap judgement is the known older-driver crash; no lane targets this person group.",
+   "where_to_look": "FHWA Handbook for Designing Roadways for the Aging Population; IIHS on license renewal policy; Norway TOI Handbook. [model knowledge — verify]"
+  },
+  {
+   "group": "who | pedestrian | 65 and over",
+   "fix": "NYC Safe Streets for Seniors, refuges and walking-speed timing at 3.0 ft/s or slower",
+   "lever": "street design",
+   "why": "1,056 hurt / 215 KSI; pedestrian lane maps LPI, longer crossing time and hardened centerline to this group but not refuges, lower speeds or the area program.",
+   "where_to_look": "NYC DOT Safe Streets for Seniors evaluation; MUTCD walking-speed rule. [model knowledge — verify]"
+  },
+  {
+   "group": "who | pedestrian | child under 18",
+   "fix": "school crossing guards and Safe Routes to School programs",
+   "lever": "behaviour programs",
+   "why": "383 hurt / 43 KSI; SF runs a crossing-guard program (SFMTA) but no lane records it or its cost.",
+   "where_to_look": "SFMTA School Crossing Guard Program budget; SRTS evaluations (McDonald et al. 2014). [model knowledge — verify]"
+  },
+  {
+   "group": "who | scooter or other | adult 18 to 64",
+   "fix": "shared-scooter speed caps, sidewalk detection, scooter lane access and parking corrals",
+   "lever": "vehicles and fleets",
+   "why": "1,088 hurt / 144 KSI; micromobility-speed-and-night-limits maps only to 'bike or scooter rules' families.",
+   "where_to_look": "SFMTA Powered Scooter Share permit evaluation; Paris 2023 scooter ban; ITF Safe Micromobility 2020. [model knowledge — verify]"
+  },
+  {
+   "group": "place | high (LTS 3-4) | collector | intersection",
+   "fix": "systemic intersection program on the HIN (LPI, daylighting, turn calming, protected lefts at every qualifying signal)",
+   "lever": "signals",
+   "why": "7,276 hurt / 507 KSI; only the area lane uses place groups, so no junction, signal or pedestrian fix is mapped to the place where 47% of people are hurt.",
+   "where_to_look": "FHWA Systemic Safety Project Selection Tool; SFMTA Vision Zero Quick-Build and LPI rollout records. [model knowledge — verify]"
+  },
+  {
+   "group": "place | high (LTS 3-4) | arterial | intersection",
+   "fix": "systemic intersection program; red-light camera network; protected lefts",
+   "lever": "automated enforcement",
+   "why": "6,927 hurt / 512 KSI; same as above.",
+   "where_to_look": "As above; SFMTA red-light camera program. [model knowledge — verify]"
+  },
+  {
+   "group": "place | high (LTS 3-4) | arterial | midblock",
+   "fix": "raised medians, refuges, midblock signals, road diets on arterial segments",
+   "lever": "street design",
+   "why": "1,816 hurt / 199 KSI; only speed cameras and calming are mapped to midblock places.",
+   "where_to_look": "pedestrian.json and speed.json median and road-diet records. [model knowledge — verify]"
+  },
+  {
+   "group": "place | high (LTS 3-4) | collector | midblock",
+   "fix": "road diet, medians, refuges, speed cameras",
+   "lever": "street design",
+   "why": "2,247 hurt / 222 KSI; same as above.",
+   "where_to_look": "As above. [model knowledge — verify]"
+  },
+  {
+   "group": "place | low (LTS 1-2) | residential | intersection",
+   "fix": "traffic circles, all-way stops, raised intersections",
+   "lever": "speed management",
+   "why": "3,617 hurt / 232 KSI; junction lane's mini-roundabout and raised-intersection records are not mapped to this place.",
+   "where_to_look": "junction.json records. [model knowledge — verify]"
+  },
+  {
+   "group": "time | late night (11 pm-6 am)",
+   "fix": "night-time lighting, night signal operation instead of flash, 24-hour camera operation",
+   "lever": "signals",
+   "why": "Vehicles-only late night 2,974 hurt / 240 KSI across weekday and weekend; only DUI fixes target the hour.",
+   "where_to_look": "grouping_alternatives time grouping; SFMTA signal flash-mode policy; AB 645 camera hours. [model knowledge — verify]"
+  },
+  {
+   "group": "all groups",
+   "fix": "Norway TOI Handbook, iRAP Toolkit, Waka Kotahi and Austroads effect tables",
+   "lever": "(sources)",
+   "why": "The brief names them first; TOI appears once, iRAP, Waka Kotahi, Euro NCAP and GSR not at all. Many 'effect missing' entries (pedestrian 17, bike 27) may be filled from TOI and iRAP.",
+   "where_to_look": "Elvik et al., Handbook of Road Safety Measures (TOI, online edition); iRAP Road Safety Toolkit; Waka Kotahi Crash Estimation Compendium; Austroads AGRS. [model knowledge — verify]"
+  }
+ ],
+ "misfits": [
+  {
+   "lane": "crosscut",
+   "fix": "automated-vehicle-fleets",
+   "group": "vehicles only | DUI",
+   "issue": "effect beyond what was measured",
+   "why": "The -90% is Waymo's any-injury crash rate per mile against a human benchmark; for the DUI group the mechanism is trip substitution by impaired people, which needs the share of impaired trips moved. The mid should not apply to the group's crashes."
+  },
+  {
+   "lane": "bike",
+   "fix": "helmet-promotion",
+   "group": "bicycle involved | unsafe speed; bicycle involved | not stated",
+   "issue": "exposure effect, not program effect",
+   "why": "-34% KSI is helmeted against unhelmeted riders. A promotion program changes wearing rates by some points; the program effect is the change in wearing times this, and no take-up figure is given."
+  },
+  {
+   "lane": "crosscut",
+   "fix": "vehicle-weight-pricing; pedestrian-protecting-front-ends; front-end-and-weight-rules",
+   "group": "pedestrian involved | failure to yield / pedestrian violation",
+   "issue": "exposure effect, not program effect",
+   "why": "The odds ratio (1.44) is heavy vs light vehicle hazard; the policy effect needs the fleet shift it causes. As written it reads as a policy effect and is a ratio greater than 1 in a field others use for cuts."
+  },
+  {
+   "lane": "area",
+   "fix": "ltn-cell-program-citywide",
+   "group": "pedestrian involved | unsafe speed",
+   "issue": "target share beyond the effect's scope",
+   "why": "Effect is inside the cell; target share is the whole group (434) because the street-class split was not available. Use the residential share as for the other groups."
+  },
+  {
+   "lane": "speed",
+   "fix": "fixed-speed-cameras",
+   "group": "vehicles only | following too closely",
+   "issue": "no mechanism; possible dis-benefit",
+   "why": "The mechanism text says 'not a target'; meta-analyses (Høye 2015, SafetyCube) report rear-end crashes can rise near fixed cameras. Either remove or carry as a possible increase."
+  },
+  {
+   "lane": "area",
+   "fix": "citywide-speed-camera-network",
+   "group": "vehicles only | red light",
+   "issue": "mechanism weak, effect missing",
+   "why": "Speed cameras do not enforce red; only combined speed/red-light units (Australia) do. Keep only if the record is a combined camera."
+  },
+  {
+   "lane": "crosscut",
+   "fix": "publicized-sobriety-checkpoints; bac-limit-0-05",
+   "group": "vehicles only | unsafe speed; bicycle involved | DUI",
+   "issue": "target share unknown",
+   "why": "Effect is on alcohol-involved fatal crashes; the alcohol share of the speed group is not in results.json, so the record cannot be stacked until it is (results.json can give the 'had been drinking' share)."
+  },
+  {
+   "lane": "junction",
+   "fix": "roundabout-conversion",
+   "group": "vehicles only | red light",
+   "issue": "high end not supported",
+   "why": "High -79% (LRSM) is for fatal+injury crashes at rural/suburban sites; the Danish urban figures the lane read give -15% injured and +15% for 3-leg. Use the urban range."
+  },
+  {
+   "lane": "bike",
+   "fix": "curb-protected-bike-lane",
+   "group": "bicycle involved | unsafe turn or lane use (intersection)",
+   "issue": "sign must be kept",
+   "why": "Danish +20% all crashes at intersections along new cycle tracks is an increase; a stacking script that treats every effect as a cut will flip it. Pair with protected-intersection or truncated track."
+  },
+  {
+   "lane": "all",
+   "fix": "effect sign and order conventions",
+   "group": "all",
+   "issue": "not stackable as written",
+   "why": "Four conventions: area/crosscut/junction use negative % with low = smallest cut (low > high numerically); bike uses negative % with low = largest cut; speed uses positive '% fewer'; pedestrian uses CMFs. Normalise to one (CMF, low = most protective) before stacking."
+  },
+  {
+   "lane": "all",
+   "fix": "duplicate records across lanes",
+   "group": "all",
+   "issue": "double counting and inconsistent costs",
+   "why": "red-light-cameras (junction, pedestrian, bike; pedestrian has no cost), protected-left-turn-phase (3 lanes, costs differ), congestion pricing (5 records: area-cordon-congestion-charge, congestion-pricing-cordon $25M-$75M, three 'congestion-pricing' with no cost), LTN (area per cell $250k-$675k vs crosscut and bike per block $6.6k-$75k), citywide-default-20mph (2), ISA (2 each), school-streets (2), superblocks (2), truck-side-guards (2), direct vision (3), no-turn-on-red (2), lower-speed-limits (2), raised-side-street-crossing (2). Merge into one record per fix with all its groups, one unit and one cost."
+  },
+  {
+   "lane": "speed, bike, pedestrian",
+   "fix": "group labels that are not size_families rows",
+   "group": "vehicles only | crash type Rear End / Hit Object / Overturned; bicycle involved | all families (cross-cut...); pedestrian | 65 and over; pedestrian involved | in the dark",
+   "issue": "will not join",
+   "why": "These are crash-type, place or who cuts. Use a prefix scheme ('who | ...', 'place | ...', 'crash type | ...') as the area lane does for place, and give the count from grouping_alternatives."
+  },
+  {
+   "lane": "bike, junction, pedestrian, speed, crosscut",
+   "fix": "units without an SF count",
+   "group": "all",
+   "issue": "not stackable",
+   "why": "156 of 173 records name a unit with no number in it (per approach, per corner, per mile) but not how many SF has or how many reach the target group (e.g. SF's signalized intersections, HIN miles, corners on the HIN). The area lane does this (152 cells, 887 unposted miles); the others should."
+  },
+  {
+   "lane": "crosscut",
+   "fix": "bar-hours-outlets-and-server-rules; late-night-transit",
+   "group": "pedestrian involved | pedestrian violation",
+   "issue": "no effect, plausible mechanism",
+   "why": "Keep (filter late) but grade very low; the 32 of 169 drinking-pedestrian crashes is the only basis."
+  }
+ ],
+ "no_cost": [
+  {
+   "lane": "area",
+   "fix": "camera-enforced-filters-state-law",
+   "lever": "policy and law",
+   "unit": "citywide law change; SF's candidate cells need 262 bus gates in 71 cells (candidates.json)",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "area",
+   "fix": "street-hierarchy-through-network",
+   "lever": "policy and law",
+   "unit": "citywide plan, with SF's 8,295 intersections and about 1,000 street miles to classify (results.json signals_at_intersections; lower-speed-limits equity note table)",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "area",
+   "fix": "circulation-plan-sectors",
+   "lever": "traffic volume and filtering",
+   "unit": "district (Ghent's centre inside the R40; for SF a downtown with no single ring)",
+   "why": "no low or high cost",
+   "where_to_look": "out/low-traffic-cells/candidates.json cost basis; SFMTA Slow Streets [model knowledge — verify]"
+  },
+  {
+   "lane": "area",
+   "fix": "area-cordon-congestion-charge",
+   "lever": "pricing",
+   "unit": "zone (one downtown cordon)",
+   "why": "no low or high cost",
+   "where_to_look": "SFCTA Downtown Congestion Pricing Study (2020-22) capital and operating estimates [model knowledge — verify]"
+  },
+  {
+   "lane": "area",
+   "fix": "citywide-signal-retiming-safe-speed",
+   "lever": "signals",
+   "unit": "signal; SF has 1,249 signalized intersections, where 14,670 people were hurt 2017-2024 (results.json signals_at_intersections)",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "area",
+   "fix": "community-area-safety-plans",
+   "lever": "street design",
+   "unit": "neighbourhood plan",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "parking-removal-near-junctions-and-on-bike-routes",
+   "lever": "street design",
+   "unit": "corner or block face",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "passenger-loading-zones",
+   "lever": "street design",
+   "unit": "loading zone",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "truncated-cycle-track",
+   "lever": "street design",
+   "unit": "intersection approach",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "protected-intersection",
+   "lever": "street design",
+   "unit": "intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "single-colored-bike-crossing",
+   "lever": "street design",
+   "unit": "intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "two-way-track-crossing-redesign",
+   "lever": "street design",
+   "unit": "side-street crossing",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "separated-path-roundabout",
+   "lever": "street design",
+   "unit": "intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "surface-hazard-repair",
+   "lever": "street design",
+   "unit": "street mile",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "protected-left-turn-phase",
+   "lever": "signals",
+   "unit": "signalized approach",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "leading-bike-interval",
+   "lever": "signals",
+   "unit": "signalized approach",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "no-turn-on-red",
+   "lever": "signals",
+   "unit": "intersection (sign)",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "bike-speed-signal-timing",
+   "lever": "signals",
+   "unit": "corridor",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "lower-speed-limits",
+   "lever": "speed management",
+   "unit": "corridor",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA traffic calming program unit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "congestion-pricing",
+   "lever": "pricing",
+   "unit": "program",
+   "why": "no low or high cost",
+   "where_to_look": "SFCTA Downtown Congestion Pricing Study (2020-22) capital and operating estimates [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "direct-vision-large-vehicles",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "aeb-cyclist-detection-fleet",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "vehicle-exit-warning",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "micromobility-speed-and-night-limits",
+   "lever": "vehicles and fleets",
+   "unit": "permit term",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "speed-cameras",
+   "lever": "automated enforcement",
+   "unit": "camera",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "bike-lane-parking-cameras",
+   "lever": "automated enforcement",
+   "unit": "camera",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "bike-running-lights",
+   "lever": "behaviour programs",
+   "unit": "bike",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "helmet-promotion",
+   "lever": "behaviour programs",
+   "unit": "helmet",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "door-awareness-education",
+   "lever": "behaviour programs",
+   "unit": "campaign",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "rail-track-crossings",
+   "lever": "transit and land use",
+   "unit": "rail street mile",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA Muni service cost per revenue hour [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "bus-stop-boarding-islands",
+   "lever": "transit and land use",
+   "unit": "bus stop",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA Muni service cost per revenue hour [model knowledge — verify]"
+  },
+  {
+   "lane": "bike",
+   "fix": "safe-passing-enforcement",
+   "lever": "policy and law",
+   "unit": "program",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "publicized-sobriety-checkpoints",
+   "lever": "behaviour programs",
+   "unit": "program (checkpoints and patrols a year, citywide)",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "mass-media-with-dui-enforcement",
+   "lever": "behaviour programs",
+   "unit": "campaign a year, citywide",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "ignition-interlocks-all-offenders",
+   "lever": "policy and law",
+   "unit": "state law, statewide",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "ride-hail-and-safe-ride-home",
+   "lever": "transit and land use",
+   "unit": "program",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA Muni service cost per revenue hour [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "in-vehicle-impairment-detection",
+   "lever": "vehicles and fleets",
+   "unit": "federal standard",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "direct-vision-standard-trucks",
+   "lever": "vehicles and fleets",
+   "unit": "permit scheme, citywide; or fleet and contract rule",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "heavy-truck-street-and-time-limits",
+   "lever": "vehicles and fleets",
+   "unit": "citywide rule",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "isa-city-fleet",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "isa-for-repeat-speeders",
+   "lever": "policy and law",
+   "unit": "state law",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "isa-new-vehicles-mandate",
+   "lever": "policy and law",
+   "unit": "federal or state vehicle standard",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "delivery-and-ride-hail-fleet-rules",
+   "lever": "vehicles and fleets",
+   "unit": "permit or contract condition",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "pedestrian-protecting-front-ends",
+   "lever": "policy and law",
+   "unit": "federal standard",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "automated-vehicle-fleets",
+   "lever": "vehicles and fleets",
+   "unit": "fleet policy",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "demand-based-parking-pricing",
+   "lever": "pricing",
+   "unit": "metered blocks, citywide",
+   "why": "no low or high cost",
+   "where_to_look": "SFCTA Downtown Congestion Pricing Study (2020-22) capital and operating estimates [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "mode-shift-safety-in-numbers",
+   "lever": "transit and land use",
+   "unit": "crediting rule, not a fix on its own",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA Muni service cost per revenue hour [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "all-red-clearance",
+   "lever": "signals",
+   "unit": "per signalized intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "signal-progression-low-speed",
+   "lever": "signals",
+   "unit": "per corridor",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "dilemma-zone-detection",
+   "lever": "signals",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "intersection-lighting",
+   "lever": "street design",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "raised-intersection",
+   "lever": "speed management",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA traffic calming program unit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "stop-warning-beacons",
+   "lever": "street design",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "stop-and-turn-cameras",
+   "lever": "automated enforcement",
+   "unit": "per camera",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "junction-aeb-fleet-rules",
+   "lever": "vehicles and fleets",
+   "unit": "per vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "civil-red-light-penalty-opt-in",
+   "lever": "policy and law",
+   "unit": "citywide",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "protected-left-turn-phase",
+   "lever": "signals",
+   "unit": "per intersection approach",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "no-turn-on-red",
+   "lever": "policy and law",
+   "unit": "per signal (signs) or citywide (ordinance)",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "pedestrian-hybrid-beacon",
+   "lever": "signals",
+   "unit": "per crossing",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "countdown-signals",
+   "lever": "signals",
+   "unit": "per signalized intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "left-turn-ban",
+   "lever": "traffic volume and filtering",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "out/low-traffic-cells/candidates.json cost basis; SFMTA Slow Streets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "raised-crosswalk-or-intersection",
+   "lever": "street design",
+   "unit": "per crossing",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "raised-side-street-crossing",
+   "lever": "street design",
+   "unit": "per side-street mouth",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "median-refuge-island",
+   "lever": "street design",
+   "unit": "per crossing",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "raised-median-corridor",
+   "lever": "street design",
+   "unit": "per mile",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "crossing-guardrail",
+   "lever": "street design",
+   "unit": "per crossing",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "grade-separated-crossing",
+   "lever": "street design",
+   "unit": "per crossing",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "high-visibility-crosswalk",
+   "lever": "street design",
+   "unit": "per crosswalk",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "lower-speed-limits",
+   "lever": "speed management",
+   "unit": "per corridor or citywide",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA traffic calming program unit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "through-traffic-filters",
+   "lever": "traffic volume and filtering",
+   "unit": "per filter",
+   "why": "no low or high cost",
+   "where_to_look": "out/low-traffic-cells/candidates.json cost basis; SFMTA Slow Streets [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "congestion-pricing",
+   "lever": "pricing",
+   "unit": "citywide program",
+   "why": "no low or high cost",
+   "where_to_look": "SFCTA Downtown Congestion Pricing Study (2020-22) capital and operating estimates [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "pedestrian-aeb",
+   "lever": "vehicles and fleets",
+   "unit": "per vehicle (fleet turnover)",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "front-end-and-weight-rules",
+   "lever": "vehicles and fleets",
+   "unit": "citywide policy",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "truck-direct-vision",
+   "lever": "vehicles and fleets",
+   "unit": "per truck (permit rule)",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "rear-visibility",
+   "lever": "vehicles and fleets",
+   "unit": "per vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "red-light-cameras",
+   "lever": "automated enforcement",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "failure-to-yield-cameras",
+   "lever": "automated enforcement",
+   "unit": "per intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "yield-enforcement-and-education",
+   "lever": "behaviour programs",
+   "unit": "per operation",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "dui-checkpoints-and-limits",
+   "lever": "policy and law",
+   "unit": "citywide",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "jaywalking-law-and-crossing-network",
+   "lever": "policy and law",
+   "unit": "policy",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "speed-feedback-signs",
+   "lever": "speed management",
+   "unit": "sign",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA traffic calming program unit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "lane-narrowing-same-lanes",
+   "lever": "street design",
+   "unit": "mile restriped",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "raised-median-urban",
+   "lever": "street design",
+   "unit": "mile",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "high-friction-surface",
+   "lever": "street design",
+   "unit": "treated spot or approach",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "fixed-object-removal-breakaway",
+   "lever": "street design",
+   "unit": "object or block",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "street-lighting-upgrade",
+   "lever": "street design",
+   "unit": "block or intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA quick-build and SFPW unit price lists; SFCTA Prop L/K project sheets [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "signal-progression-at-safe-speed",
+   "lever": "signals",
+   "unit": "intersection retimed",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "left-turn-lane-and-phase",
+   "lever": "signals",
+   "unit": "intersection",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA signal shop unit costs, Contract 35 signal upgrade; Caltrans LRSM cost tables [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "mobile-speed-cameras",
+   "lever": "automated enforcement",
+   "unit": "mobile unit",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "section-control-corridor-cameras",
+   "lever": "automated enforcement",
+   "unit": "corridor",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA camera program budgets and vendor contracts; NYC DOT camera reports [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "isa-new-vehicle-mandate",
+   "lever": "policy and law",
+   "unit": "statewide new-vehicle rule",
+   "why": "no low or high cost",
+   "where_to_look": "BLA fiscal analyses; state bill fiscal notes (Senate/Assembly Appropriations) [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "aeb-fleet-and-mandate",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "electronic-stability-control",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "automated-vehicles",
+   "lever": "vehicles and fleets",
+   "unit": "vehicle mile replaced",
+   "why": "no low or high cost",
+   "where_to_look": "OEM option prices; TfL Direct Vision Standard costs; NYC DCAS fleet retrofit costs [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "fewer-car-miles-volume",
+   "lever": "transit and land use",
+   "unit": "vehicle mile removed",
+   "why": "no low or high cost",
+   "where_to_look": "SFMTA Muni service cost per revenue hour [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "congestion-pricing",
+   "lever": "pricing",
+   "unit": "zone",
+   "why": "no low or high cost",
+   "where_to_look": "SFCTA Downtown Congestion Pricing Study (2020-22) capital and operating estimates [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "speed-awareness-courses",
+   "lever": "behaviour programs",
+   "unit": "course taker",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "police-speed-enforcement",
+   "lever": "behaviour programs",
+   "unit": "officer-hour",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "speed",
+   "fix": "usage-based-insurance-telematics",
+   "lever": "behaviour programs",
+   "unit": "enrolled vehicle",
+   "why": "no low or high cost",
+   "where_to_look": "OTS grant awards to SFPD/SFMTA; NHTSA Countermeasures That Work cost notes [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "hardened-centerline-turn-calming",
+   "why": "cost high bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "roundabout-conversion",
+   "why": "cost high bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "all-way-stop-conversion",
+   "why": "cost low bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "junction",
+   "fix": "protected-left-turn-phase",
+   "why": "cost low bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "bac-limit-0-05",
+   "why": "cost high bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "bar-hours-outlets-and-server-rules",
+   "why": "cost high bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "crosscut",
+   "fix": "vehicle-weight-pricing",
+   "why": "cost high bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  },
+  {
+   "lane": "pedestrian",
+   "fix": "left-turn-calming-hardened-centerline",
+   "why": "cost low bound missing",
+   "where_to_look": "SF unit price lists [model knowledge — verify]"
+  }
+ ]
+}

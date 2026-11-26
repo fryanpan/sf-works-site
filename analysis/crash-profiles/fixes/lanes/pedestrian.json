@@ -1,0 +1,2692 @@
+{
+ "lane": "pedestrian groups",
+ "built": "2026-11-25, task t-ZNyWj2bl9SZK. Every 'pedestrian involved | ...' family in size_families with movement where it matters, plus pedestrians hurt in the dark, 65 and over, and under 18. Effects are in each study's own units and apply only to the target crashes named; CMF below 1 means fewer crashes.",
+ "group_sizes": {
+  "pedestrian involved | failure to yield to pedestrian": {
+   "people_injured": 2491,
+   "ksi_people": 274,
+   "left or U-turn": [
+    1294,
+    119
+   ],
+   "going straight": [
+    639,
+    106
+   ],
+   "right turn": [
+    433,
+    33
+   ]
+  },
+  "pedestrian involved | pedestrian violation": {
+   "people_injured": 1649,
+   "ksi_people": 330,
+   "going straight": [
+    1139,
+    254
+   ],
+   "left or U-turn": [
+    114,
+    13
+   ],
+   "right turn": [
+    72,
+    12
+   ]
+  },
+  "pedestrian involved | unsafe speed": {
+   "people_injured": 434,
+   "ksi_people": 88,
+   "going straight": [
+    327,
+    61
+   ]
+  },
+  "pedestrian involved | not stated": {
+   "people_injured": 292,
+   "ksi_people": 49
+  },
+  "pedestrian involved | red light": {
+   "people_injured": 267,
+   "ksi_people": 54,
+   "going straight": [
+    214,
+    46
+   ]
+  },
+  "pedestrian involved | unsafe starting or backing": {
+   "people_injured": 267,
+   "ksi_people": 27,
+   "backing": [
+    175,
+    18
+   ]
+  },
+  "pedestrian involved | unsafe turn or lane use": {
+   "people_injured": 254,
+   "ksi_people": 36
+  },
+  "pedestrian involved | bike or scooter rules": {
+   "people_injured": 153,
+   "ksi_people": 26
+  },
+  "pedestrian involved | other": {
+   "people_injured": 139,
+   "ksi_people": 14
+  },
+  "pedestrian involved | stop sign or other sign": {
+   "people_injured": 123,
+   "ksi_people": 15
+  },
+  "pedestrian involved | DUI": {
+   "people_injured": 94,
+   "ksi_people": 30
+  },
+  "pedestrian involved | vehicle right of way": {
+   "people_injured": 65,
+   "ksi_people": 7
+  },
+  "pedestrian involved | following too closely": {
+   "people_injured": 13,
+   "ksi_people": 1
+  },
+  "pedestrian involved | dooring": {
+   "people_injured": 9,
+   "ksi_people": 0
+  },
+  "pedestrian involved | phone use": {
+   "people_injured": 5,
+   "ksi_people": 0
+  },
+  "pedestrian involved | in the dark (cross-cut, not a size_families row)": {
+   "people_injured": 2193,
+   "ksi_people": 428,
+   "basis": "everyone hurt in pedestrian crashes in the dark, pedestrian_light_by_posted_limit"
+  },
+  "pedestrian | 65 and over (cross-cut, grouping_alternatives role x age)": {
+   "people_injured": 1056,
+   "ksi_people": 215
+  },
+  "pedestrian | child under 18 (cross-cut, grouping_alternatives role x age)": {
+   "people_injured": 383,
+   "ksi_people": 43
+  }
+ },
+ "fixes": [
+  {
+   "id": "leading-pedestrian-interval",
+   "name": "Leading pedestrian interval (early walk signal)",
+   "lever": "signals",
+   "how_it_works": "The walk signal comes on 3 to 7 seconds before the parallel green so people are already in the crosswalk, and visible, when drivers start to turn.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Turning drivers meet a pedestrian already in the crossing instead of one stepping off the curb at the same moment.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 0.81,
+      "mid": 0.86,
+      "high": 0.91,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the treated signal, all severities",
+      "source": "Goughnour et al. 2018 empirical Bayes, CMF 9903 and 9906 (Chicago, 5 stars, 0.81) and 9912 (New York, 4 stars, 0.91), FHWA export; NYC DOT 2016 found -14% left-turn ped and bike injuries and -56% left-turn ped and bike KSI (41 to 18) at 104 LPI intersections, simple before and after",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Same head start against right-turning drivers.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source",
+     "effect": {
+      "low": 0.81,
+      "mid": 0.86,
+      "high": 0.91,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the treated signal",
+      "source": "Goughnour et al. 2018, CMF 9903/9906/9912",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian | 65 and over (cross-cut, grouping_alternatives role x age)",
+     "mechanism": "Older people start crossing later and walk slower, so the head start covers more of their crossing.",
+     "target_share": "pedestrians 65 and over: 1,056 people hurt, 215 KSI (grouping_alternatives role x age); share at signals not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no age-specific LPI effect read",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per signalized intersection",
+   "cost": {
+    "low": 100,
+    "high": 1200,
+    "year": null,
+    "unit": "per signal retimed (timing labour only; FHWA Signal Timing on a Shoestring, dollar year not recorded in the repo note)",
+    "source": "repo calmer-streets cost note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA adds LPIs through the HIN crossing line ST040 ($5.8M FY27 to 31) and quick-builds; the signal inventory (DataSF ybh5-27n2) has no LPI field, so the count of SF LPIs is unknown.",
+   "sf_evidence": "None testable: no dated list of SF LPIs (methods note).",
+   "who_decides": "SFMTA City Traffic Engineer (signal timing is staff work, no Board vote).",
+   "evidence_grade": "high: several empirical Bayes studies at 4 to 5 stars agree on 9% to 19% fewer pedestrian crashes; does not help a pedestrian crossing against the signal.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, August 2016, pp. 5 to 6",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, calmer streets equity and costs (2026-11-06), from FHWA Signal Timing on a Shoestring: $100 to $1,200 a signal",
+     "url": "research/notes/calmer-streets-2026-11/2026-11-06-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "protected-left-turn-phase",
+   "name": "Protected-only left-turn phase",
+   "lever": "signals",
+   "how_it_works": "Left-turning drivers get their own green arrow while the conflicting crosswalk shows don't walk, so the left turn and the pedestrian never share time.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Removes the permissive left turn across the crosswalk, the single biggest pedestrian movement in SF's data.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 0.67,
+      "mid": 0.72,
+      "high": 1.14,
+      "unit": "CMF",
+      "applies_to": "left-turn pedestrian and bicycle injuries (NYC) or all vehicle-pedestrian crashes (FHWA rows)",
+      "source": "NYC DOT 2016 left-turn-only signals at 34 intersections: 55 to 37 left-turn ped and bike injuries (-33%); Goughnour et al. 2018 CMF 9891 New York 0.718 (4 stars), but 9888 Illinois 1.136 and 9894 Canada 1.106 (5 stars) point the other way for protected or protected-permissive; Danish Effekthåndbog 5.7: separate left phase cut crashes with left-turners from the treated approach 80% and all crashes 36% (motor-vehicle crash types, not pedestrian-specific)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection approach",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: needs a left-turn signal head and often a turn pocket; SFMTA signal contracts (SG060) bundle left-turn signals without a unit price; a new SF signal is about $700,000 to $1.1M (repo notes) as an upper bound",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Signal Contract 35 (SG060, $12.2M) 'will likely include ... implementing left-turn signals'; no citywide count of protected lefts found.",
+   "sf_evidence": "None found.",
+   "who_decides": "SFMTA City Traffic Engineer; capital through SFMTA CIP and Prop L.",
+   "evidence_grade": "moderate: strong for the left-turn conflict in Denmark and New York, but FHWA rows disagree in sign, likely because protected-permissive keeps the conflict.",
+   "sources": [
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, August 2016, pp. 5 to 6",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "exclusive-pedestrian-phase",
+   "name": "Exclusive pedestrian phase (all-walk or scramble)",
+   "lever": "signals",
+   "how_it_works": "All traffic stops while pedestrians cross every leg, so no turning car crosses a moving pedestrian.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "No turning traffic during the walk.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 0.65,
+      "mid": 0.71,
+      "high": 0.92,
+      "unit": "CMF",
+      "applies_to": "pedestrian injuries (Sweden) or vehicle-pedestrian crashes (NYC) at the intersection",
+      "source": "Trafikverket Tabell 48: separate pedestrian phase -29% pedestrian injuries, against +8% for a pedestrian signal in mixed phase; Chen et al. 2013 NYC CMF 5244 0.65 (3 stars); LADOT cites the same 0.65",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Same.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source",
+     "effect": {
+      "low": 0.65,
+      "mid": 0.71,
+      "high": 0.92,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "Trafikverket Tabell 48; CMF 5244",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Longer pedestrian waits raise crossing against the light (Montreal, ped-violation note), so this may move crashes from turning to against-the-signal.",
+     "target_share": "against the signal (21453(d), 21456), 44 of 125 KSI in 2022 to 2024 (ped-violation note); 2017 to 2024 share not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no study measured red-light crossing crashes under a scramble",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per signalized intersection",
+   "cost": {
+    "low": 100,
+    "high": 1200,
+    "year": null,
+    "unit": "per signal retimed, timing only; LADOT rates it 'Low' (under $50,000)",
+    "source": "repo calmer-streets cost note; LADOT toolbox p. 73",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Used at some Chinatown and downtown corners; no list read.",
+   "sf_evidence": "None found.",
+   "who_decides": "SFMTA City Traffic Engineer.",
+   "evidence_grade": "moderate: two independent sources (Sweden, NYC) agree on about 30%, but a longer cycle raises pedestrian wait and red-light crossing.",
+   "sources": [
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, January 2024, Countermeasure Toolbox pp. 64 to 77 (repo archive data/archive/ladot-vision-zero-safety-study-2024/)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "no-turn-on-red",
+   "name": "No turn on red (citywide or at signals with heavy walking)",
+   "lever": "policy and law",
+   "how_it_works": "Drivers may not turn right on red, so they stop scanning left for gaps in traffic while a pedestrian crosses from the right.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Removes the turn-on-red conflict; turns on green remain.",
+     "target_share": "right-turn share 433 of 2,491 people hurt; SFMTA says turns on red were 'nearly 20% of turn-related crashes' at signals, so roughly 85 people hurt over 2017 to 2024 [inference — mine]",
+     "effect": {
+      "low": 0.48,
+      "mid": 0.65,
+      "high": 0.7,
+      "unit": "CMF",
+      "applies_to": "pedestrian crashes involving right-turning vehicles at signals (adoption of RTOR raised them 43% to 107%, so a ban inverts to 0.48 to 0.70)",
+      "source": "Preusser et al. 1982, via a web search summary; not opened",
+      "tag": "[web search — verify]"
+     }
+    }
+   ],
+   "unit": "per signal (signs) or citywide (ordinance)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: sign cost per approach not read; a citywide rule would need state law or signs at each signal",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Pilot at about 54 Tenderloin signals approved February 2021; SFMTA calls it a pilot. California law allows RTOR unless signed.",
+   "sf_evidence": "SFMTA's Tenderloin evaluation summary was linked but not read this session [unretrieved — verify].",
+   "who_decides": "SFMTA City Traffic Engineer for signed bans; a default ban needs the California Legislature (Vehicle Code 21453(b)) [model knowledge — verify].",
+   "evidence_grade": "low: the only crash effect is a 1980s before and after on RTOR adoption, read only via a search summary.",
+   "sources": [
+    {
+     "title": "SFMTA, Tenderloin Speed Limits and No Turn on Red (project page) and blog 'Speed and Turn Limits to Boost Safety on Tenderloin Streets'",
+     "url": "https://www.sfmta.com/blog/speed-and-turn-limits-boost-safety-tenderloin-streets-0",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Preusser et al. 1982, right turn on red and pedestrian and bicycle crashes (NHTSA report), via web search summary",
+     "url": "https://rosap.ntl.bts.gov/view/dot/1322/dot_1322_DS1.pdf",
+     "tag": "[web search — verify]"
+    }
+   ]
+  },
+  {
+   "id": "midblock-pedestrian-signal",
+   "name": "Signal at a midblock crossing",
+   "lever": "signals",
+   "how_it_works": "A full signal gives a legal, controlled crossing where people already cross between intersections.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Turns an illegal 21955 crossing between signals into a legal, signalized one.",
+     "target_share": "21955 crossing between signals, 30 of 125 KSI in 2022 to 2024 (ped-violation note)",
+     "effect": {
+      "low": 0.554,
+      "mid": 0.75,
+      "high": 0.88,
+      "unit": "CMF",
+      "applies_to": "fatal and serious vehicle-pedestrian crashes at the crossing (FHWA) or pedestrian crashes at and up to 150 m from it (Denmark, Sweden)",
+      "source": "Fitzpatrick et al. 2024 CMF 11753, 0.554, 5 stars, cross-section CA/TX/UT; Effekthåndbog 3.5 signalizing an existing crossing -25% all pedestrian crashes and injuries; Trafikverket Tabell 48 -12% pedestrian injuries",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": 700000,
+    "high": 1100000,
+    "year": null,
+    "unit": "per new signal in SF (Fast Forward 'about $700K per intersection'; school note 'about $1.1 million'); dollar years not recorded",
+    "source": "repo beacon and muni lever notes",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "No named midblock-signal line in the FY27 to 31 capital plan; Howard's printed scope copies Folsom's midblock-signal text.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer (warrant), SFMTA Board budget, SFCTA Prop L.",
+   "evidence_grade": "moderate: one 5-star US cross-section plus Danish and Swedish handbook values agree on direction; size ranges 12% to 45%.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, school crossing beacons and signs, SF now (2026-10-31): one RRFB $50,000, a signal about $1.1M",
+     "url": "research/notes/school-crossing-beacons-signs-2026-10/2026-10-31-sf-now.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "pedestrian-hybrid-beacon",
+   "name": "Pedestrian hybrid beacon (HAWK)",
+   "lever": "signals",
+   "how_it_works": "A dark-until-pushed beacon shows drivers a solid red while a pedestrian crosses a multi-lane street.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Gives a controlled crossing where people now cross outside one.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed",
+     "effect": {
+      "low": 0.43,
+      "mid": 0.567,
+      "high": 0.755,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the crossing (0.567 all severities; 0.755 fatal and serious)",
+      "source": "Fitzpatrick et al. 2019 empirical Bayes, Arizona, CMF 10591 (5 stars) and 10592 (KA, 4 stars); Zegeer 2017 meta-analysis with advance markings CMF 9021 0.432",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Drivers going straight must stop for the crossing pedestrian instead of choosing to yield.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source; only the uncontrolled-crossing part, not computed",
+     "effect": {
+      "low": 0.43,
+      "mid": 0.567,
+      "high": 0.755,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the crossing",
+      "source": "CMF 10591, 10592, 9021",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF unit cost for a PHB found; a full SF signal is $700,000 to $1.1M and an RRFB about $50,000, so a PHB sits between [inference — mine]",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "None named in the FY27 to 31 plan; SG115 includes 2 pedestrian-activated flashing beacons.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer.",
+   "evidence_grade": "high: a 5-star empirical Bayes study and a meta-analysis agree on about 45% fewer pedestrian crashes, US only.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "rectangular-rapid-flashing-beacon",
+   "name": "Rectangular rapid flashing beacon (RRFB)",
+   "lever": "signals",
+   "how_it_works": "Push-button amber strobes at an uncontrolled crosswalk raise the share of drivers who yield.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "More drivers going straight yield at uncontrolled marked crossings.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source; uncontrolled-crossing part not computed",
+     "effect": {
+      "low": 0.3,
+      "mid": 0.526,
+      "high": 0.8,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the crossing",
+      "source": "Zegeer et al. 2017 CMF 9024 0.526 (3 stars); a Florida fatal-and-serious CMF 11168 0.30 (4 stars) per the ped-violation note; FHWA 2025 flags possible rear-end increase",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Helps only where it puts a legal crossing on a path people already take.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no study of crashes with pedestrians crossing outside a crosswalk",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": 50000,
+    "high": 50000,
+    "year": null,
+    "unit": "per RRFB installation, SF school note; year not recorded",
+    "source": "repo beacon note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "ST122 flashing beacons $11.3M FY27 to 31, paid mostly by speed camera revenue; about 9 RRFBs within 500 ft of schools in May 2024.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer.",
+   "evidence_grade": "moderate: one 3-star cross-section and one 4-star state study, wide range.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, school crossing beacons and signs, SF now (2026-10-31): one RRFB $50,000, a signal about $1.1M",
+     "url": "research/notes/school-crossing-beacons-signs-2026-10/2026-10-31-sf-now.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo uncertainty log data/evidence/studies.json",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "countdown-signals",
+   "name": "Pedestrian countdown signals",
+   "lever": "signals",
+   "how_it_works": "A countdown shows how long is left to cross, so people time their start and fewer are caught mid-street at the change.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Fewer people start or are still crossing when the signal changes (21456 and 21453(d)).",
+     "target_share": "against the signal (21453(d), 21456), 44 of 125 KSI in 2022 to 2024 (ped-violation note); 2017 to 2024 share not computed",
+     "effect": {
+      "low": 0.75,
+      "mid": 0.912,
+      "high": 1.04,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the signal (FHWA) or serious and minor pedestrian injuries (SF pilot)",
+      "source": "Srinivasan et al. 2019 CMF 10119 0.912 (4 stars, EB); Markowitz et al. 2006, an SF pilot, CMF 1409 0.75 for serious and minor pedestrian injuries (1 star); Toronto Camden et al. 0.94 to 1.04 (2 stars)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per signalized intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: bundled into SF signal rebuild contracts (SG060, SG106, SG115, SG133; $48.7M with mast arms and curb ramps) with no unit split",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Being added through signal rebuild contracts; SF ran one of the earliest large pilots (Markowitz 2006).",
+   "sf_evidence": "Markowitz et al. 2006 SF pilot, CMF 1409 0.75, rated 1 star (simple before and after) [primary — read 2026-11-25, FHWA export row]; the paper itself not opened.",
+   "who_decides": "SFMTA (signal shop, capital program).",
+   "evidence_grade": "moderate: a good EB study gives about 9%; the SF pilot's 25% is weak design.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "shorter-pedestrian-waits",
+   "name": "Shorter signal cycles and pedestrian waits; walk on recall instead of push button",
+   "lever": "signals",
+   "how_it_works": "A shorter red or an automatic walk means fewer people give up and cross against the light.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Less waiting, less red-light crossing (the SF Controller 2017 design framing).",
+     "target_share": "against the signal (21453(d), 21456), 44 of 125 KSI in 2022 to 2024 (ped-violation note); 2017 to 2024 share not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "behaviour odds",
+      "applies_to": "missing for crashes. Behaviour only: each extra second of maximum wait raised the odds of crossing on red by about 11% (Montreal, 13 signals)",
+      "source": "Brosseau et al., via the ped-violation note; Chen 2013 CMF 5252 0.49 for LONGER pedestrian phases (3 stars) points the other way",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per signal",
+   "cost": {
+    "low": 100,
+    "high": 1200,
+    "year": null,
+    "unit": "per signal retimed",
+    "source": "repo calmer-streets cost note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Most SF signals already run about 60-second cycles (SF Planning 2014, per repo note); long cycles remain on state routes and transit-priority corridors.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer; Caltrans on state routes (19th Ave, Lombard).",
+   "evidence_grade": "very low for crashes: behaviour link measured, no crash study found.",
+   "sources": [
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "signal-at-unsignalized-or-all-way-stop",
+   "name": "New signal or all-way stop at an uncontrolled or two-way-stop corner",
+   "lever": "signals",
+   "how_it_works": "Puts every approach under control so drivers must stop before the crosswalk.",
+   "groups": [
+    {
+     "group": "pedestrian involved | stop sign or other sign",
+     "mechanism": "Converts a minor-road stop to all-way stop or a signal.",
+     "target_share": "123 people hurt, 15 KSI (size_families)",
+     "effect": {
+      "low": 0.57,
+      "mid": 0.7,
+      "high": 2.37,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the intersection",
+      "source": "Lovell and Hauer 1986 all-way stop CMF 313 0.57 (4 stars) against Deng 2020 DC CMF 10553 2.37 (3 stars); Jensen 2010 Denmark yield to signal CMF 2673/2679 0.70 to 0.76; Trafikverket says Swedish results show no difference for pedestrians at signals",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Drivers stop at the corner rather than choosing to yield.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source; unsignalized share not computed",
+     "effect": {
+      "low": 0.57,
+      "mid": 0.7,
+      "high": 2.37,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": 700000,
+    "high": 1100000,
+    "year": null,
+    "unit": "per new signal; an all-way stop is signs and paint, unit cost not read",
+    "source": "repo notes",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA adds all-way stops on request through engineering hearings; new signals via SG062 ($5.8M, ten intersections).",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer at the weekly engineering hearing.",
+   "evidence_grade": "low: studies conflict in sign for pedestrians.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "left-turn-calming-hardened-centerline",
+   "name": "Left-turn calming: hardened centerline, median extension, slow-turn wedge",
+   "lever": "street design",
+   "how_it_works": "Rubber or concrete bumps on the centerline force a tighter, slower left turn so the driver sees and can stop for the pedestrian.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Slower, squarer left turns into the crosswalk.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 0.4,
+      "mid": 0.67,
+      "high": 0.82,
+      "unit": "CMF",
+      "applies_to": "pedestrian severe injuries (0.67) and all pedestrian injuries (0.82) at treated intersections against nearby comparable ones; senior pedestrian KSI 0.40",
+      "source": "NYC DOT Turn Calming page, 1,236 intersections; IIHS (Hu and Cicchino 2020) found left-turn/pedestrian conflicts -70.5% and odds of turns over 15 mph -67.1% in DC (conflicts, not crashes)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian | 65 and over (cross-cut, grouping_alternatives role x age)",
+     "mechanism": "Older pedestrians are over-represented in left-turn deaths (NYC: 53% of left-turn ped and bike deaths were 65+).",
+     "target_share": "pedestrians 65 and over: 1,056 hurt, 215 KSI; left-turn share for 65+ not computed",
+     "effect": {
+      "low": 0.4,
+      "mid": 0.4,
+      "high": 0.81,
+      "unit": "CMF",
+      "applies_to": "senior pedestrian KSI (0.40) and senior pedestrian injuries (0.81) at NYC turn-calmed intersections",
+      "source": "NYC DOT Turn Calming page",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": 50000,
+    "year": null,
+    "unit": "per intersection, LADOT band 'Low: typically $50,000 or less' for hardened centerlines; SF's ST272 left-turn calming line is $1.5M for FY27 to 31 with no site count",
+    "source": "LADOT toolbox p. 77; ped-violation note line table",
+    "tag": "[primary — read 2026-11-25]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA left-turn calming (ST272); 'A Turn Toward Safety' (2021) reported left-turn speed -17% and turns over 15 mph -71% against controls (per prior-work note).",
+   "sf_evidence": "Speeds only: -17% left-turn speed, -71% fast turns (SFMTA 2021, per prior-work note) [secondary — verify]; no SF crash result.",
+   "who_decides": "SFMTA City Traffic Engineer (quick-build); Prop L and SFMTA capital.",
+   "evidence_grade": "moderate: NYC's large program reports injury drops against comparison sites (method not published on the page) and DC/SF measured conflict and speed drops; no peer-reviewed crash study read.",
+   "sources": [
+    {
+     "title": "NYC DOT, Turn Calming program page (1,236 intersections to 2025-12-31)",
+     "url": "https://www.nyc.gov/html/dot/html/pedestrians/turn-calming.shtml",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Hu and Cicchino, left-turn calming (hardened centerlines) in Washington, D.C., IIHS 2020, abstract",
+     "url": "https://www.iihs.org/topics/bibliography/ref/2202",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, January 2024, Countermeasure Toolbox pp. 64 to 77 (repo archive data/archive/ladot-vision-zero-safety-study-2024/)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Prior Work: Matching SF Crash Types to Fixes (2026-11-25)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, August 2016, pp. 5 to 6",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "left-turn-ban",
+   "name": "Left-turn restrictions at high-conflict corners",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Signs or a median ban the left turn, so the conflict disappears at that corner (it may move to another).",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Removes the movement.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 0.59,
+      "mid": 0.59,
+      "high": 0.9,
+      "unit": "CMF",
+      "applies_to": "left-turn pedestrian and bicycle injuries at the treated intersection (NYC, 51 intersections, 113 to 67); 0.90 is ITE 2004 'No Left Turn' sign for vehicle-pedestrian crashes (unrated)",
+      "source": "NYC DOT 2016 left-turn study; Gan et al. 2005 CMF 1744 (unrated)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: signs only; unit cost not read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Posted turn bans exist on Market Street and elsewhere; SF aims one red-light camera at a turn ban (red-light note).",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer.",
+   "evidence_grade": "low: simple before and after in NYC, no control for displacement to the next corner.",
+   "sources": [
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, August 2016, pp. 5 to 6",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, What Cuts Red-Light Crashes in SF? (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "curb-extension-tighter-corner",
+   "name": "Curb extension (bulb-out) and tighter corner radius",
+   "lever": "street design",
+   "how_it_works": "Extending the corner shortens the crossing, puts the pedestrian where drivers can see them, and forces slower right turns.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Smaller radius, slower right turns.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source",
+     "effect": {
+      "low": 0.55,
+      "mid": 0.95,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "pedestrian injuries at the treated corner (Sweden -5%; LA concrete curb extensions -45% injury crashes, -41% KSI per LADOT, design not stated)",
+      "source": "Trafikverket Tabell 48 'Utbyggnad av klackar' -5%, and its text: tighter turns 'improvement ... not statistically significant'; LADOT p. 72; Fitzpatrick 2022 CMF 11215 to 11220: larger corner radii 1.18 to 1.59 (3 stars), which a tighter radius inverts",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Shorter crossing means less time in the road for someone crossing against the light.",
+     "target_share": "going-straight share 1,139 of 1,649 people hurt (254 of 330 KSI) from size_families pedestrian violation by_movement",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no study on violation crashes",
+      "source": "missing",
+      "tag": null
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Better sight line between driver and pedestrian at the corner.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.95,
+      "mid": 0.95,
+      "high": 0.95,
+      "unit": "CMF",
+      "applies_to": "pedestrian injuries at the corner",
+      "source": "Trafikverket Tabell 48",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per corner",
+   "cost": {
+    "low": 50000,
+    "high": 300000,
+    "year": null,
+    "unit": "per corner in SF (SFMTA range); a recent SF engineer's estimate is $169,000 construction, about $244,000 with design (2021); Public Works paid about $706,000 an intersection on 4th St (2024)",
+    "source": "repo slower-cars and curb-extension cost notes",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 15,
+   "sf_now": "Built through corridor projects and Prop L requests; staff wrote in 2023 that concrete bulb-outs 'require capital funds not currently available'.",
+   "sf_evidence": "None at the corner level.",
+   "who_decides": "SFMTA and SF Public Works; Prop L via supervisor requests to SFCTA.",
+   "evidence_grade": "low: the best non-US estimate is small and not significant; LA's larger figure has no method.",
+   "sources": [
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, January 2024, Countermeasure Toolbox pp. 64 to 77 (repo archive data/archive/ladot-vision-zero-safety-study-2024/)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, slower-cars article (SFMTA $50,000 to $300,000 a corner; Public Works $706,000 an intersection, 4th St 2024)",
+     "url": "research/notes/policy-articles-2026-11/slower-cars.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, curb extension equity and costs (2026-10-31): SFCTA Buchanan Mall bulbouts allocation request, $169,000 a bulbout, 15-year life",
+     "url": "research/notes/curb-extensions-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "daylighting-hardened",
+   "name": "Daylighting with a hardened corner (no parking within 20 ft, kept clear by a physical object)",
+   "lever": "street design",
+   "how_it_works": "Removing cars from the last 20 ft lets drivers and pedestrians see each other; a physical object keeps the space clear.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Sight lines for drivers going straight through the corner.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.68,
+      "mid": 0.68,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "pedestrian injuries at hardened corners against nearby untreated ones (sign-only daylighting showed no significant effect)",
+      "source": "NYC DOT, Daylighting and Street Safety, January 2025, p. 43, per the ped-violation note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "A pedestrian stepping out from between parked cars is seen sooner.",
+     "target_share": "about 25 to 32 of the 125 pedestrian-violation KSI in 2022 to 2024 were at or within 50 ft of a corner (ped-violation note)",
+     "effect": {
+      "low": 0.68,
+      "mid": 0.68,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "NYC DOT 2025 via note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per corner",
+   "cost": {
+    "low": 10000,
+    "high": 244000,
+    "year": null,
+    "unit": "per corner: paint and posts $10,000 to $25,000 (derived, 5-year life), concrete $169,000 to $244,000",
+    "source": "repo curb-extension cost note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": 5,
+   "sf_now": "California AB 413 bans parking within 20 ft of crosswalks from 2025 [model knowledge — verify]; SF daylighting lines ST185 and STNEW-1 total $3.3M.",
+   "sf_evidence": "SF painted safety zones: pedestrians hurt 1.07 (0.86 to 1.30) against nearby unpainted corners, no clear change (outcomes note).",
+   "who_decides": "SFMTA (curb paint, posts); Public Works for concrete; state law for the 20 ft rule.",
+   "evidence_grade": "low: only the hardened version shows an effect, in one NYC study; SF's painted version shows none.",
+   "sources": [
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, Did SF's street safety projects cut injury crashes? (2026-11-24, Empirical Bayes and DiD on DataSF crashes)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, curb extension equity and costs (2026-10-31): SFCTA Buchanan Mall bulbouts allocation request, $169,000 a bulbout, 15-year life",
+     "url": "research/notes/curb-extensions-2026-10/2026-10-31-equity-costs.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "raised-crosswalk-or-intersection",
+   "name": "Raised crosswalk or raised intersection",
+   "lever": "street design",
+   "how_it_works": "The crossing is lifted to sidewalk height so drivers slow to cross it and pedestrians are more visible.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Drivers arrive at the crossing slowly.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.51,
+      "mid": 0.6,
+      "high": 0.64,
+      "unit": "CMF",
+      "applies_to": "pedestrian crashes and injuries at the crossing and up to 50 m from it",
+      "source": "Effekthåndbog 3.5: raised crossing -40% all pedestrian crashes; Trafikverket Tabell 48: -49% pedestrian injuries; Effekthåndbog 4.5: two studies of raised crossings, pedestrian crashes -36%",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Turning drivers also slow over the ramp.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source",
+     "effect": {
+      "low": 0.51,
+      "mid": 0.6,
+      "high": 0.64,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "A vertical deflection holds speed down where people cross.",
+     "target_share": "going-straight share 327 of 434 people hurt (61 of 88 KSI), pedestrian unsafe speed",
+     "effect": {
+      "low": 0.51,
+      "mid": 0.6,
+      "high": 0.64,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF unit cost read for a raised crosswalk; SF speed humps run $47,000 to $61,000 a block, not the same item",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Included in some corridor rebuilds (5th St: raised crosswalks); part of proactive calming ST043.",
+   "sf_evidence": "Included in SF's hump blocks test (humps, cushions, raised crosswalks): mid-block injury crashes 0.82 (0.60 to 1.20), pedestrians 1.07 (0.53 to 2.77) (outcomes note).",
+   "who_decides": "SFMTA (design), Public Works (build), Fire Department review on emergency routes.",
+   "evidence_grade": "moderate: Danish and Swedish handbooks agree on about 40%; studies older and European.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Did SF's street safety projects cut injury crashes? (2026-11-24, Empirical Bayes and DiD on DataSF crashes)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo uncertainty log data/evidence/studies.json",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "raised-side-street-crossing",
+   "name": "Continuous sidewalk across side streets (raised entry, Danish 'overkørsel')",
+   "lever": "street design",
+   "how_it_works": "The sidewalk runs unbroken across the mouth of a side street so turning drivers climb onto pedestrian space and yield.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Drivers turning into or out of a side street slow and yield at the raised sidewalk.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source; unsignalized side-street share not computed",
+     "effect": {
+      "low": 0.4,
+      "mid": 0.6,
+      "high": 0.6,
+      "unit": "CMF",
+      "applies_to": "crashes between motor vehicles and pedestrians at yield-controlled junctions in urban areas",
+      "source": "Effekthåndbog 3.6: assessed effect -40% (studies -40% to -60%); Swedish study: turning speeds -40%",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Same at unsignalized corners.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement; unsignalized share not computed",
+     "effect": {
+      "low": 0.4,
+      "mid": 0.6,
+      "high": 0.6,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per side-street mouth",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF or Danish unit cost read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Not a standard SF treatment that we found.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA and Public Works; Fire Department review.",
+   "evidence_grade": "moderate: Danish before-after and with/without studies agree; not tested in a US city.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "median-refuge-island",
+   "name": "Pedestrian refuge island or raised median",
+   "lever": "street design",
+   "how_it_works": "A raised island lets people cross one direction at a time and narrows the lanes.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Halves the gap a pedestrian crossing outside a crosswalk must judge on a wide street.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed",
+     "effect": {
+      "low": 0.685,
+      "mid": 0.75,
+      "high": 0.82,
+      "unit": "CMF",
+      "applies_to": "pedestrian crashes at the crossing and up to 50 m (Denmark), pedestrian injuries (Sweden), vehicle-pedestrian crashes at uncontrolled crossings (FHWA)",
+      "source": "Effekthåndbog 3.5 -25%; Trafikverket Tabell 48 -18%; Zegeer et al. 2017 CMF 8799 0.685 (4 stars, meta-analysis)",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Fewer multiple-threat crashes on multi-lane streets.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.685,
+      "mid": 0.75,
+      "high": 0.82,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF unit cost read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "No named line; some islands in quick-builds and corridor projects.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA and Public Works.",
+   "evidence_grade": "high: three independent sources (Denmark, Sweden, US meta-analysis) agree on 18% to 32%.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "raised-median-corridor",
+   "name": "Continuous raised median on wide streets",
+   "lever": "street design",
+   "how_it_works": "A curbed median along the street blocks mid-block left turns and gives crossing pedestrians a place to wait.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Refuge along the whole block for people crossing outside a crosswalk.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed",
+     "effect": {
+      "low": 0.6,
+      "mid": 0.6,
+      "high": 0.8,
+      "unit": "CMF",
+      "applies_to": "all injury crashes on urban streets with one to two lanes each way (curbed -40%, marked -20%); not pedestrian-specific",
+      "source": "Effekthåndbog 4.8",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | unsafe turn or lane use",
+     "mechanism": "Removes mid-block turns and U-turns across the median.",
+     "target_share": "254 people hurt, 36 KSI (size_families)",
+     "effect": {
+      "low": 0.6,
+      "mid": 0.6,
+      "high": 0.8,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "Effekthåndbog 4.8",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per mile",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF unit cost read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Exists on some arterials (e.g. Van Ness BRT); no program.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA, Public Works; Caltrans on state routes.",
+   "evidence_grade": "moderate: Danish handbook value, all crash types.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "road-diet",
+   "name": "Road diet (fewer general lanes)",
+   "lever": "street design",
+   "how_it_works": "Fewer through lanes means fewer lanes to cross, no multiple-threat masking, and slower traffic.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Removes the second lane where one car stops and the next doesn't see the pedestrian.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.53,
+      "mid": 0.81,
+      "high": 1.09,
+      "unit": "CMF",
+      "applies_to": "all crashes on the treated segment (not pedestrian-specific)",
+      "source": "Persaud et al. 2010 CMF 2841 0.53 (5 stars, urban and suburban); FHWA-HRT-10-053 0.81 (per methods note); SF's 16 corridors 1.01 (0.92 to 1.09) with volumes",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Shorter exposure for people crossing outside a crosswalk.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no pedestrian-violation result",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per mile",
+   "cost": {
+    "low": 100000,
+    "high": 2400000,
+    "year": null,
+    "unit": "per mile: paint conversion about $0.1M (FHWA example) to SF quick-build $0.9M to $2.4M",
+    "source": "repo road-diet and bike notes",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Done corridor by corridor in quick-builds and repaving.",
+   "sf_evidence": "SF 16 road diet corridors: 1.09 (0.99 to 1.19), 1.01 (0.92 to 1.09) with traffic volumes, so no change seen (methods note).",
+   "who_decides": "SFMTA Board for lane removals; City Traffic Engineer for quick-builds.",
+   "evidence_grade": "moderate: strong US effect on all crashes; SF's own test finds none.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "crossing-lighting",
+   "name": "Brighter lighting at crossings and intersections",
+   "lever": "street design",
+   "how_it_works": "More light on the crossing lets drivers see pedestrians in time at night.",
+   "groups": [
+    {
+     "group": "pedestrian involved | in the dark (cross-cut, not a size_families row)",
+     "mechanism": "Visibility at night. Most SF dark crashes were already under streetlights, so the relevant effect is more light on lit streets, which is smaller.",
+     "target_share": "pedestrian crashes in the dark: 2,193 people hurt and 428 KSI (sum of the four 'dark' rows of pedestrian_light_by_posted_limit), counting everyone hurt in those crashes",
+     "effect": {
+      "low": 0.58,
+      "mid": 0.92,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "night injury crashes. New lighting on unlit roads: pedestrian night crashes about -50% (Sweden), night injuries -30% (Denmark), night ped injuries 0.58 (Elvik and Vaa). Doubling light on an already lit road: -8%, not significant (Sweden), which fits SF best",
+      "source": "Trafikverket lighting section; Effekthåndbog 4.17; CMF 436",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Same, for the mostly night pedestrian-violation crashes.",
+     "target_share": "74 of 118 pedestrian-violation KSI (63%) in the dark, 70 of them under working streetlights, 2022 to 2024 (ped-violation note)",
+     "effect": {
+      "low": 0.58,
+      "mid": 0.92,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per light",
+   "cost": {
+    "low": 39480,
+    "high": 60960,
+    "year": 2022,
+    "unit": "per light with design, SFCTA Oakdale Lighting Phase 1 (programmed 2022)",
+    "source": "repo VVP lighting cost note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Streetlights are SFPUC's, not SFMTA's; no line in SFMTA's FY27 to 31 safety plan buys lighting.",
+   "sf_evidence": "70 of 74 pedestrian-violation KSI in the dark were under working streetlights (ped-violation note).",
+   "who_decides": "SFPUC (streetlights), SFCTA Prop L for pedestrian-scale lighting.",
+   "evidence_grade": "moderate for new lighting; low for SF's case of brighter lighting on lit streets.",
+   "sources": [
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, VVP lighting cost (2026-11-11): SFCTA Oakdale Lighting Phase 1, $39,480 to $60,960 a light with design",
+     "url": "research/notes/area-scenario-tool-2026-11/2026-11-11-vvp-lighting-cost.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "crossing-guardrail",
+   "name": "Guardrail or planting that leads people to the crossing",
+   "lever": "street design",
+   "how_it_works": "Railings at the curb steer people to the marked crossing instead of across mid-block.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Fewer people cross outside the crosswalk near it.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed; only crossings near an existing crosswalk",
+     "effect": {
+      "low": 0.55,
+      "mid": 0.7,
+      "high": 0.8,
+      "unit": "CMF",
+      "applies_to": "pedestrian injury crashes near existing crossings",
+      "source": "Effekthåndbog 3.5: -20% to -45%, assessed -30%",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no unit cost read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Rare in SF; conflicts with sidewalk access and the city's walkability goals [inference — mine].",
+   "sf_evidence": "None.",
+   "who_decides": "Public Works, SFMTA.",
+   "evidence_grade": "low: Danish handbook range only; effect depends on design.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "grade-separated-crossing",
+   "name": "Pedestrian bridge or tunnel",
+   "lever": "street design",
+   "how_it_works": "Separates crossing pedestrians from traffic in space.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Only works if people use it; Danish text stresses placement on the desire line.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed; only at freeway-like arterials",
+     "effect": {
+      "low": 0.2,
+      "mid": 0.2,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "crashes with crossing pedestrians, 'up to about 80%' on average, conditional on use",
+      "source": "Effekthåndbog 3.5",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crossing",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no unit cost read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "A handful exist (e.g. over freeways); not a city tool on surface streets [model knowledge — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "Public Works, Caltrans.",
+   "evidence_grade": "low: conditional on use, and it lengthens walking.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "high-visibility-crosswalk",
+   "name": "High-visibility (continental) crosswalk markings with advance yield lines",
+   "lever": "street design",
+   "how_it_works": "Bolder markings and a yield line set back from the crosswalk make the crossing conspicuous and reduce multiple-threat masking.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "More drivers see and yield at uncontrolled crossings.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.63,
+      "mid": 0.75,
+      "high": 1.28,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at the crossing",
+      "source": "Feldman et al. 2010, SF yellow school crosswalks, CMF 2697 0.63 (4 stars, EB); Zegeer 2017 advance yield markings CMF 9017 0.75 (3 stars); Trafikverket: marking only, without a refuge, +28% pedestrian injuries",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian | child under 18 (cross-cut, grouping_alternatives role x age)",
+     "mechanism": "School crosswalks; Feldman's SF result is at schools.",
+     "target_share": "pedestrians under 18: 383 hurt, 43 KSI (grouping_alternatives); school-zone share not computed",
+     "effect": {
+      "low": 0.63,
+      "mid": 0.63,
+      "high": 0.63,
+      "unit": "CMF",
+      "applies_to": "vehicle-pedestrian crashes at school crosswalks",
+      "source": "CMF 2697",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per crosswalk",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF restripe unit cost found (school note says none was found)",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Continental yellow is SF's default at schools; 40-plus school crossings restriped in summer 2026.",
+   "sf_evidence": "Feldman et al. 2010 is an SF study: 0.63 at yellow school crosswalks (4 stars) [primary — read 2026-11-25, FHWA export row].",
+   "who_decides": "SFMTA staff.",
+   "evidence_grade": "moderate: a good SF study for school crossings, but Sweden finds marking alone can raise pedestrian risk.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 48 and the lighting and speed sections",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, school crossing beacons and signs, SF now (2026-10-31): one RRFB $50,000, a signal about $1.1M",
+     "url": "research/notes/school-crossing-beacons-signs-2026-10/2026-10-31-sf-now.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "protected-bike-lane-corner",
+   "name": "Protected bike lanes and protected intersections that set back turning cars",
+   "lever": "street design",
+   "how_it_works": "A buffer and corner island push turning drivers to turn wider-angled and slower, and keep bikes and scooters off the sidewalk.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Turn setback on one-way streets.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 0.47,
+      "mid": 0.85,
+      "high": 0.85,
+      "unit": "CMF",
+      "applies_to": "left-turn pedestrian and bicycle injuries (0.85) and KSI (0.47, 32 to 15) at 149 NYC intersections",
+      "source": "NYC DOT 2016 left-turn study",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | bike or scooter rules",
+     "mechanism": "A place for bikes and scooters off the sidewalk.",
+     "target_share": "153 people hurt, 26 KSI where a bike or scooter rule was the primary factor (size_families)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no study of pedestrians hit by bikes or scooters",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per mile",
+   "cost": {
+    "low": 900000,
+    "high": 24000000,
+    "year": null,
+    "unit": "per mile: SF quick-build $0.9M to $2.4M; concrete $16M to $24M (Central Embarcadero)",
+    "source": "repo bike-network notes",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SF Biking and Rolling Plan; bike network capital $37.4M FY27 to 31.",
+   "sf_evidence": "None for pedestrians.",
+   "who_decides": "SFMTA Board.",
+   "evidence_grade": "low for pedestrians: one simple before and after.",
+   "sources": [
+    {
+     "title": "NYC DOT, Don't Cut Corners: Left Turn Pedestrian & Bicycle Crash Study, August 2016, pp. 5 to 6",
+     "url": "https://www.nyc.gov/html/dot/downloads/pdf/left-turn-pedestrian-and-bicycle-crash-study.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "speed-humps-area-calming",
+   "name": "Speed humps, cushions and area-wide traffic calming",
+   "lever": "speed management",
+   "how_it_works": "Vertical deflection holds speed to about 15 to 20 mph, which cuts both how often a driver fails to stop and how hard the impact is.",
+   "groups": [
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Lower speeds directly.",
+     "target_share": "going-straight share 327 of 434 people hurt (61 of 88 KSI)",
+     "effect": {
+      "low": 0.66,
+      "mid": 0.71,
+      "high": 0.91,
+      "unit": "CMF",
+      "applies_to": "pedestrian crashes on humped urban streets (Denmark -34%), all injury crashes in area-wide calming (Denmark -29%); NYC pedestrian injuries OR 0.91 (0.80 to 1.02)",
+      "source": "Effekthåndbog 4.5 and 4.16; Roberts et al. 2025 via outcomes note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "A slower driver can stop for someone stepping out, and hits with less force.",
+     "target_share": "going-straight share 1,139 of 1,649 people hurt (254 of 330 KSI) from size_families pedestrian violation by_movement; only on calmed residential streets (pedestrian violation residential share 542 of 1,649 people hurt, family_stress)",
+     "effect": {
+      "low": 0.66,
+      "mid": 0.71,
+      "high": 0.91,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian | child under 18 (cross-cut, grouping_alternatives role x age)",
+     "mechanism": "Children are hurt near home on residential streets.",
+     "target_share": "pedestrians under 18: 383 hurt, 43 KSI",
+     "effect": {
+      "low": 0.24,
+      "mid": 0.47,
+      "high": 0.95,
+      "unit": "odds ratio",
+      "applies_to": "child pedestrian injury within the neighbourhood (Oakland case-control, aOR 0.47, 0.24 to 0.95)",
+      "source": "Tester et al. 2004, studies.json row tester-2004-oakland-humps",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per block",
+   "cost": {
+    "low": 47000,
+    "high": 61000,
+    "year": null,
+    "unit": "per block with humps on every block (SF derived figure)",
+    "source": "repo low-traffic cell cost note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "1,133 finished devices; proactive calming ST043 $22.5M, school calming ST042 $10.0M.",
+   "sf_evidence": "SF hump blocks: mid-block injury crashes 0.82 (0.60 to 1.20), 1.04 after pre-trend; pedestrians 1.07 (0.53 to 2.77); 26 blocks' 85th-percentile speed fell 26.8 to 20.0 mph (outcomes note, studies.json).",
+   "who_decides": "SFMTA (application-based and proactive programs); Fire Department on emergency routes.",
+   "evidence_grade": "moderate: European meta-analyses agree; SF's own crash test is too small to tell.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Did SF's street safety projects cut injury crashes? (2026-11-24, Empirical Bayes and DiD on DataSF crashes)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo uncertainty log data/evidence/studies.json",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, low-traffic cell costs (2026-11-15): speed humps $47,000 to $61,000 a block",
+     "url": "research/notes/low-traffic-cells-2026-11/2026-11-15-cell-costs-and-city-counts.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "speed-safety-cameras",
+   "name": "Automated speed safety cameras",
+   "lever": "automated enforcement",
+   "how_it_works": "Cameras ticket drivers over the limit, cutting the share driving 10+ mph over.",
+   "groups": [
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "movement": "going straight",
+     "mechanism": "Lower speeds on camera streets.",
+     "target_share": "going-straight share 327 of 434 people hurt (61 of 88 KSI); only camera streets",
+     "effect": {
+      "low": 0.73,
+      "mid": 0.8,
+      "high": 0.874,
+      "unit": "CMF",
+      "applies_to": "crashes involving someone walking within two blocks on the camera street (SF EB 0.73, 0.80 after matched-street check); people walking hurt on NYC camera corridors relative to controls (0.874)",
+      "source": "SF outcomes note; NYC DOT 2024 ASE report via studies.json",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "A slower driver stops for more people who step out, and hits the rest with less force.",
+     "target_share": "going-straight share 1,139 of 1,649 people hurt (254 of 330 KSI) from size_families pedestrian violation by_movement; only camera streets",
+     "effect": {
+      "low": 0.73,
+      "mid": 0.8,
+      "high": 0.874,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Same for drivers going straight past a crossing.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source; only camera streets",
+     "effect": {
+      "low": 0.73,
+      "mid": 0.8,
+      "high": 0.874,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per camera location per year",
+   "cost": {
+    "low": 45000,
+    "high": 82000,
+    "year": 2026,
+    "unit": "per location per year: vendor $3,750 a month ($45,000 a year), and about $2.7M a year for 33 locations with staff (about $82,000 each) [inference — mine]",
+    "source": "repo speed-cameras note, SFMTA contract staff report",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "56 cameras at 33 locations since March to June 2025 under AB 645 (a pilot to 2032).",
+   "sf_evidence": "SF EB: crashes involving someone walking 0.73 (0.50 to 0.95), 0.80 (0.53 to 1.20) after the matched-street check; KSI 1.45 (0.95 to 1.94) (outcomes note).",
+   "who_decides": "SFMTA under state law AB 645; expansion beyond the pilot needs the Legislature.",
+   "evidence_grade": "moderate: consistent direction in SF and NYC, SF result within chance after the check.",
+   "sources": [
+    {
+     "title": "Repo note, Did SF's street safety projects cut injury crashes? (2026-11-24, Empirical Bayes and DiD on DataSF crashes)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-outcomes-section.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo uncertainty log data/evidence/studies.json",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, speed cameras article: SFMTA vendor contract $3,750 per location a month, about $2.7M a year",
+     "url": "research/notes/policy-articles-2026-11/speed-cameras.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "lower-speed-limits",
+   "name": "Lower posted limits (20 mph) without physical change",
+   "lever": "speed management",
+   "how_it_works": "Signs alone ask drivers to slow down.",
+   "groups": [
+    {
+     "group": "pedestrian involved | unsafe speed",
+     "mechanism": "Lower limit, if obeyed.",
+     "target_share": "434 people hurt, 88 KSI",
+     "effect": {
+      "low": 0.775,
+      "mid": 0.86,
+      "high": 1.27,
+      "unit": "CMF",
+      "applies_to": "Wales 20 mph default -22.5% collisions; LADOT cites 0.86 all crashes (Seung-Oh 2022); SF 20 mph blocks 1.27 raw, still 10% to 20% above expected after corrections",
+      "source": "prior-work note (Wales) and LADOT p. 64; SF methods note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per corridor or citywide",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: sign cost per block not read; 20 mph business districts line ST310 is $2.0M",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "975 blocks at 20 mph under AB 43; BLA 2016 found posted cuts alone did not cut injury collisions.",
+   "sf_evidence": "SF 20 mph blocks: no drop seen (methods note).",
+   "who_decides": "SFMTA Board within AB 43's limits; a lower default needs the Legislature.",
+   "evidence_grade": "low: SF's own data and the BLA 2016 study find no effect without enforcement or design.",
+   "sources": [
+    {
+     "title": "Repo note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "LADOT, Los Angeles Vision Zero Safety Study, January 2024, Countermeasure Toolbox pp. 64 to 77 (repo archive data/archive/ladot-vision-zero-safety-study-2024/)",
+     "url": "https://ladot.lacity.gov/sites/default/files/documents/la-vz-safety-study-2024.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, Prior Work: Matching SF Crash Types to Fixes (2026-11-25)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "school-zone-measures",
+   "name": "School zones: 15 mph limits, School Streets, Safe Routes to School",
+   "lever": "speed management",
+   "how_it_works": "Slower limits and closing or calming streets at school times cut traffic and speed where children walk.",
+   "groups": [
+    {
+     "group": "pedestrian | child under 18 (cross-cut, grouping_alternatives role x age)",
+     "mechanism": "Children walking to school.",
+     "target_share": "pedestrians under 18: 383 hurt, 43 KSI; school-trip share not computed",
+     "effect": {
+      "low": 0.56,
+      "mid": 0.57,
+      "high": 0.83,
+      "unit": "rate ratio",
+      "applies_to": "school-age pedestrian injury rate in NYC SRTS census tracts (0.56, 0.35 to 0.83); child pedestrian injury collisions near Barcelona intervention schools (0.57 against 1.05 at matched schools)",
+      "source": "DiMaggio and Li 2013; Perez et al. 2023, both via studies.json",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per school",
+   "cost": {
+    "low": 60000,
+    "high": 120000,
+    "year": null,
+    "unit": "per school audit package (SF school note)",
+    "source": "repo beacon note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "School calming ST042 $10.0M; Safe Routes non-infrastructure $7.2M.",
+   "sf_evidence": "None for crashes.",
+   "who_decides": "SFMTA Board for school speed limits; SFUSD; Prop L.",
+   "evidence_grade": "moderate: two controlled studies on child pedestrian injuries.",
+   "sources": [
+    {
+     "title": "Repo uncertainty log data/evidence/studies.json",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, school crossing beacons and signs, SF now (2026-10-31): one RRFB $50,000, a signal about $1.1M",
+     "url": "research/notes/school-crossing-beacons-signs-2026-10/2026-10-31-sf-now.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "through-traffic-filters",
+   "name": "Modal filters and low-traffic neighbourhoods",
+   "lever": "traffic volume and filtering",
+   "how_it_works": "Bollards or planters stop through driving on residential streets, so fewer cars pass each person walking.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Fewer cars per crossing; pedestrian and cyclist injuries rise with about the square root of car volume.",
+     "target_share": "residential share of pedestrian violation 542 of 1,649 people hurt (family_stress)",
+     "effect": {
+      "low": 0.71,
+      "mid": 0.71,
+      "high": 0.71,
+      "unit": "CMF",
+      "applies_to": "pedestrian and cyclist crashes when car volume halves, from the volume exponent 0.50",
+      "source": "Elvik and Bjørnskau 2017 via exponents note and studies.json",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Same, all failure-to-yield crashes on filtered streets.",
+     "target_share": "residential share of failure to yield 1,010 of 2,491 people hurt (family_stress)",
+     "effect": {
+      "low": 0.71,
+      "mid": 0.71,
+      "high": 0.71,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per filter",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": 2019,
+    "unit": "missing in US dollars: £10,000 to £15,000 a filter installed (Waltham Forest, 2019), not converted; SF Slow Streets about $200,000 a mile as a corridor alternative",
+    "source": "studies.json gasson-2019-ltn-costs; repo notes",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "Slow Streets (ST025 $6.8M).",
+   "sf_evidence": "SF Slow Streets 0.73 (0.58 to 0.88) injury crashes, confounded with 2020 traffic collapse; 0.88 (0.64 to 1.12) without overlaps (methods note).",
+   "who_decides": "SFMTA Board; Fire Department review.",
+   "evidence_grade": "low: exponent is a cross-section; London LTN crash study not opened.",
+   "sources": [
+    {
+     "title": "Repo note, injuries, volume and speed exponents (2026-11-18): Elvik and Bjørnskau 2017, Nilsson 2004, Tefft 2013, Hu et al. 2024",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-18-injuries-volume-speed-exponents.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo uncertainty log data/evidence/studies.json",
+     "url": "data/evidence/studies.json",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "congestion-pricing",
+   "name": "Downtown congestion pricing",
+   "lever": "pricing",
+   "how_it_works": "A charge to drive into the core cuts car volume there.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Fewer cars, fewer conflicts, in the priced area.",
+     "target_share": "share of failure to yield inside a priced zone not computed",
+     "effect": {
+      "low": 0.6,
+      "mid": 0.62,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "all accidents inside London's charging zone (-38% to -40%, no displacement found), against Noland's null result",
+      "source": "Green, Heywood and Navarro 2014 via prior-work note",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Same.",
+     "target_share": "share inside a zone not computed",
+     "effect": {
+      "low": 0.6,
+      "mid": 0.62,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "citywide program",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SFCTA's Downtown Congestion Pricing study costs not read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Studied by SFCTA, not adopted [model knowledge — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "State authorization needed, then SFCTA and the Board of Supervisors [model knowledge — verify].",
+   "evidence_grade": "low: one city, conflicting studies.",
+   "sources": [
+    {
+     "title": "Repo note, Prior Work: Matching SF Crash Types to Fixes (2026-11-25)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "pedestrian-aeb",
+   "name": "Pedestrian automatic emergency braking (fleet procurement, ride-hail and AV permit conditions, federal rule)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "The car detects a pedestrian ahead and brakes if the driver doesn't.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Brakes for a pedestrian stepping out ahead of a car going straight, in daylight or lit night.",
+     "target_share": "going-straight share 1,139 of 1,649 people hurt (254 of 330 KSI) from size_families pedestrian violation by_movement",
+     "effect": {
+      "low": 0.67,
+      "mid": 0.7,
+      "high": 0.73,
+      "unit": "CMF",
+      "applies_to": "police-reported pedestrian crashes (0.73 all; 0.70 injury crashes); daylight 0.68, lit night 0.67, no effect when turning, unlit night or 50 mph+",
+      "source": "Cicchino 2022 via IIHS news release, about 1,500 crashes, 2017 to 2020 models",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "going straight",
+     "mechanism": "Same for drivers going straight.",
+     "target_share": "going-straight share 639 of 2,491 people hurt (106 of 274 KSI), same source",
+     "effect": {
+      "low": 0.67,
+      "mid": 0.7,
+      "high": 0.73,
+      "unit": "CMF",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "IIHS found no reduction when the vehicle was turning.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": 1.0,
+      "mid": 1.0,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "turning crashes: no reduction found",
+      "source": "IIHS release",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    },
+    {
+     "group": "pedestrian involved | in the dark (cross-cut, not a size_families row)",
+     "mechanism": "Works under streetlights, which covers most SF dark crashes.",
+     "target_share": "pedestrian crashes in the dark: 2,193 people hurt and 428 KSI (sum of the four 'dark' rows of pedestrian_light_by_posted_limit), counting everyone hurt in those crashes",
+     "effect": {
+      "low": 0.67,
+      "mid": 0.67,
+      "high": 1.0,
+      "unit": "CMF",
+      "applies_to": "lit night pedestrian crashes 0.67; unlit 1.0",
+      "source": "IIHS release",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per vehicle (fleet turnover)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: per-vehicle cost not read; mandatory on new US light vehicles under NHTSA's 2024 FMVSS 127 by 2029 [model knowledge — verify]",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "City fleet procurement rules not checked.",
+   "sf_evidence": "None.",
+   "who_decides": "NHTSA (federal standard); SF for its own fleet; CPUC for ride-hail.",
+   "evidence_grade": "moderate: one large matched-vehicle study; effect limited to straight-ahead, lit conditions.",
+   "sources": [
+    {
+     "title": "IIHS news release on Cicchino 2022, pedestrian AEB: 'Pedestrian crash avoidance systems cut crashes, but not in the dark'",
+     "url": "https://www.iihs.org/news/detail/pedestrian-crash-avoidance-systems-cut-crashes--but-not-in-the-dark",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "front-end-and-weight-rules",
+   "name": "Rules or fees against tall, blunt, heavy vehicles",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Tall blunt fronts hit a pedestrian's torso and head instead of legs; fees or fleet rules shift the mix to lower fronts.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Severity, not frequency.",
+     "target_share": "going-straight share 1,139 of 1,649 people hurt (254 of 330 KSI) from size_families pedestrian violation by_movement",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "fatality risk",
+      "applies_to": "missing as a policy effect. Risk factor only: tall-and-blunt fronts +43.6% and tall-and-sloped +45.4% pedestrian fatality risk; SF heavy over 5,000 lb vs under 3,500 lb KSI odds 1.47 (1.01 to 2.14)",
+      "source": "Hu, Monfort and Cicchino 2024 via exponents note; results.json vehicle_weight",
+      "tag": "[secondary — verify]"
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Same.",
+     "target_share": "2,491 people hurt",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "fatality risk",
+      "applies_to": "as above",
+      "source": "as above",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "citywide policy",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no SF fee design costed",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "None found.",
+   "sf_evidence": "Odds ratio 1.47 for heaviest band (results.json vehicle_weight).",
+   "who_decides": "State DMV fees; SF for its own fleet; Paris-style parking fees by weight need local authority [model knowledge — verify].",
+   "evidence_grade": "very low as a lever: the risk factor is measured, the policy effect isn't.",
+   "sources": [
+    {
+     "title": "Repo note, injuries, volume and speed exponents (2026-11-18): Elvik and Bjørnskau 2017, Nilsson 2004, Tefft 2013, Hu et al. 2024",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-18-injuries-volume-speed-exponents.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "SF crash profiles, out/crash-augment/profiles/results.json (DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh, 2017 to 2024)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "truck-direct-vision",
+   "name": "Direct vision standard and side guards for large trucks",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Trucks must let the driver see people beside and in front of the cab, or carry cameras, sensors and side guards.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Large-vehicle turns over people in the crosswalk.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source; truck share small (truck body types about 70 pedestrians hurt in vehicle_weight no_weight_by_body_type)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "count",
+      "applies_to": "missing: London HGV vision-cited fatal collisions 9 (2019), 8 (2020), 6 (2021), no control",
+      "source": "TfL DVS paper 2022",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per truck (permit rule)",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SF cost not estimated",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "None found.",
+   "sf_evidence": "None.",
+   "who_decides": "TfL used a traffic regulation order; SF authority unclear [model knowledge — verify].",
+   "evidence_grade": "very low: small counts, no control.",
+   "sources": [
+    {
+     "title": "TfL, Direct Vision Standard and HGV Safety Permit Scheme, SSHRP paper, 16 November 2022",
+     "url": "https://board.tfl.gov.uk/documents/s18961/sshrp-20221116-item08-direct-vision-standard-and-safety-permit%20Scheme%20for%20HGVs.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "rear-visibility",
+   "name": "Rear cameras and rear automatic braking (for backing crashes)",
+   "lever": "vehicles and fleets",
+   "how_it_works": "Drivers see or the car brakes for a pedestrian behind it.",
+   "groups": [
+    {
+     "group": "pedestrian involved | unsafe starting or backing",
+     "movement": "backing",
+     "mechanism": "Backing crashes.",
+     "target_share": "backing share 175 of 267 people hurt (18 of 27 KSI), pedestrian unsafe starting or backing",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no effect read this session",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per vehicle",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: not read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Rear cameras federally required on new light vehicles since May 2018 [model knowledge — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "NHTSA.",
+   "evidence_grade": "very low: no effect read.",
+   "sources": []
+  },
+  {
+   "id": "red-light-cameras",
+   "name": "Red-light cameras",
+   "lever": "automated enforcement",
+   "how_it_works": "Cameras ticket drivers entering on red.",
+   "groups": [
+    {
+     "group": "pedestrian involved | red light",
+     "movement": "going straight",
+     "mechanism": "Fewer drivers run the red into people crossing on the walk.",
+     "target_share": "going-straight share 214 of 267 people hurt (46 of 54 KSI), pedestrian red light",
+     "effect": {
+      "low": 0.8,
+      "mid": 0.85,
+      "high": 0.85,
+      "unit": "CMF",
+      "applies_to": "injuries (0.85) and deaths (0.80) at camera intersections, all road users (Denmark); IIHS: fatal red-light crashes 24% lower in large US camera cities",
+      "source": "Effekthåndbog 5.7; red-light note",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SF per-camera cost not read this session",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "13 to 18 intersections (lists disagree); six new sites from 2026-11-15.",
+   "sf_evidence": "Baseline only for the six new sites (methods note).",
+   "who_decides": "SFMTA and SFPD under Vehicle Code 21455.5.",
+   "evidence_grade": "moderate: meta-analysed, but not pedestrian-specific.",
+   "sources": [
+    {
+     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed., October 2023",
+     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "Repo note, What Cuts Red-Light Crashes in SF? (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-red-light-countermeasures.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, How to Tell Whether Each SF Safety Fix Worked (2026-11-24)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-24-methods-by-intervention.mdx",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "failure-to-yield-cameras",
+   "name": "Camera enforcement of failure to yield in crosswalks",
+   "lever": "automated enforcement",
+   "how_it_works": "Cameras ticket drivers who turn through an occupied crosswalk.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "left or U-turn",
+     "mechanism": "Deterrence at the main conflict.",
+     "target_share": "left-turn share 1,294 of 2,491 people hurt (119 of 274 KSI) from size_families pedestrian involved | failure to yield, by_movement",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no evaluation found",
+      "source": "missing",
+      "tag": null
+     }
+    },
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "movement": "right turn",
+     "mechanism": "Same.",
+     "target_share": "right-turn share 433 of 2,491 people hurt (33 of 274 KSI), same source",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per intersection",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: no program to price",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Not authorized in California [model knowledge — verify].",
+   "sf_evidence": "None.",
+   "who_decides": "California Legislature.",
+   "evidence_grade": "very low: no evaluation.",
+   "sources": []
+  },
+  {
+   "id": "yield-enforcement-and-education",
+   "name": "High-visibility enforcement of yielding, and driver education",
+   "lever": "behaviour programs",
+   "how_it_works": "Police stings at crossings plus publicity raise yielding.",
+   "groups": [
+    {
+     "group": "pedestrian involved | failure to yield to pedestrian",
+     "mechanism": "Drivers yield more.",
+     "target_share": "2,491 people hurt, 274 KSI",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no crash effect read this session",
+      "source": "missing",
+      "tag": null
+     }
+    }
+   ],
+   "unit": "per operation",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: SFPD cost not read",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "Vision Zero education $0.6M FY27 to 31; SFPD 'Focus on the Five' since 2014 [model knowledge — verify].",
+   "sf_evidence": "SF Controller 2017 Focus on Enforcement grouped crashes by violation and routed each to enforcement or engineering (prior-work note).",
+   "who_decides": "SFPD, SFMTA Vision Zero.",
+   "evidence_grade": "very low: no crash effect read.",
+   "sources": [
+    {
+     "title": "Repo note, Prior Work: Matching SF Crash Types to Fixes (2026-11-25)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "pedestrian-education",
+   "name": "Pedestrian education and visibility campaigns",
+   "lever": "behaviour programs",
+   "how_it_works": "Campaigns ask people to cross at crossings and wear light clothing.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "mechanism": "Asks pedestrians to change behaviour.",
+     "target_share": "1,649 people hurt, 330 KSI",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: the CMF Clearinghouse has no CMF for pedestrian education",
+      "source": "ped-violation note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "per campaign",
+   "cost": {
+    "low": 600000,
+    "high": 600000,
+    "year": 2026,
+    "unit": "FY27 to 31 total, Vision Zero education line ST343",
+    "source": "ped-violation note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "ST343 $0.6M; Safe Routes non-infrastructure $7.2M.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA, DPH.",
+   "evidence_grade": "very low: no crash evidence; SF's Controller 2017 treated these crashes as a design question.",
+   "sources": [
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "dui-checkpoints-and-limits",
+   "name": "Sobriety checkpoints, 0.05 BAC, interlocks, late-night transit",
+   "lever": "policy and law",
+   "how_it_works": "Fewer impaired drivers on the street at night.",
+   "groups": [
+    {
+     "group": "pedestrian involved | DUI",
+     "mechanism": "Drink-drivers who hit pedestrians.",
+     "target_share": "94 people hurt, 30 KSI (size_families pedestrian DUI)",
+     "effect": {
+      "low": 0.89,
+      "mid": 0.91,
+      "high": 0.93,
+      "unit": "CMF",
+      "applies_to": "alcohol-related fatal crashes: 0.05 BAC about -11% (meta-analysis); checkpoints about -9% alcohol-involved deaths; interlocks for first offenders at most -7.5% more",
+      "source": "DUI note",
+      "tag": "[secondary — verify]"
+     }
+    }
+   ],
+   "unit": "citywide",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: marginal enforcement cost not found (DUI note)",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "SFPD ran checkpoints on OTS grants (four in 2025 per web search).",
+   "sf_evidence": "None.",
+   "who_decides": "SFPD for checkpoints; Legislature for BAC and interlocks; SFMTA for Owl service.",
+   "evidence_grade": "moderate for checkpoints and BAC; not pedestrian-specific.",
+   "sources": [
+    {
+     "title": "Repo note, Is there a cost-effective way to cut drink-driving deaths in SF? (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-dui-cost-effective.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  },
+  {
+   "id": "longer-crossing-time-older-pedestrians",
+   "name": "Longer crossing times (slower design walking speed) where older people walk",
+   "lever": "signals",
+   "how_it_works": "The flashing don't-walk is timed for slower walkers so they are not caught mid-street when turning traffic starts.",
+   "groups": [
+    {
+     "group": "pedestrian | 65 and over (cross-cut, grouping_alternatives role x age)",
+     "mechanism": "Older pedestrians still in the crosswalk at the change.",
+     "target_share": "pedestrians 65 and over: 1,056 hurt, 215 KSI (20% of pedestrian KSI from 18% of pedestrians hurt with age; pedestrian_profile_facts share_65_plus 0.18)",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing: no crash effect read. Weak contrary evidence: longer pedestrian phases in NYC 0.49 (Chen 2013, CMF 5252, 3 stars)",
+      "source": "CMF export",
+      "tag": "[primary — read 2026-11-25]"
+     }
+    }
+   ],
+   "unit": "per signal",
+   "cost": {
+    "low": 100,
+    "high": 1200,
+    "year": null,
+    "unit": "per signal retimed",
+    "source": "repo calmer-streets cost note",
+    "tag": "[secondary — verify]"
+   },
+   "life_years": null,
+   "sf_now": "SFMTA decks per repo notes: 2.5 ft/s for total crossing time since about 2000 and 3.0 ft/s for the clearance interval, against state values of 3.0 and 3.5; a later SF study calls a 3.0 ft/s walk speed the most common quick-build treatment on the HIN [secondary — verify]. So SF already times many signals slower than the MUTCD default.",
+   "sf_evidence": "None.",
+   "who_decides": "SFMTA City Traffic Engineer.",
+   "evidence_grade": "very low: plausible, untested for crashes.",
+   "sources": [
+    {
+     "title": "FHWA CMF Clearinghouse full export (10,178 CMFs), cached 2026-10-31 at .cache/scratch-archive-2026-10-31/cmf/cmf.csv, queried 2026-11-25",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/cmf_data.php",
+     "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "SF crash profiles, out/crash-augment/profiles/results.json (DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh, 2017 to 2024)",
+     "url": "../../../../out/crash-augment/profiles/results.json",
+     "tag": "[DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]"
+    }
+   ]
+  },
+  {
+   "id": "jaywalking-law-and-crossing-network",
+   "name": "Treat pedestrian-violation crashes as missing crossings: legal crossings at desire lines",
+   "lever": "policy and law",
+   "how_it_works": "Where people cross outside crosswalks, add a marked, controlled crossing instead of citing them, as SF's Controller ruled in 2017.",
+   "groups": [
+    {
+     "group": "pedestrian involved | pedestrian violation",
+     "movement": "going straight",
+     "mechanism": "Turns illegal crossings into designed ones.",
+     "target_share": "crossing outside a crosswalk, 63 of the 118 pedestrian KSI in 2022 to 2024 (21954(a) and 21955), from the ped-violation note; 2017 to 2024 split by section not computed",
+     "effect": {
+      "low": null,
+      "mid": null,
+      "high": null,
+      "unit": "CMF",
+      "applies_to": "missing as a policy; use the crossing treatments (midblock signal, PHB, refuge island) for the effect",
+      "source": "this file",
+      "tag": "[inference — mine]"
+     }
+    }
+   ],
+   "unit": "policy",
+   "cost": {
+    "low": null,
+    "high": null,
+    "year": null,
+    "unit": null,
+    "source": "missing: depends on the crossing treatments chosen",
+    "tag": null
+   },
+   "life_years": null,
+   "sf_now": "California's Freedom to Walk Act (AB 2147, 2022) limits jaywalking citations to immediate danger [model knowledge — verify]; officers still code the violation in crash reports.",
+   "sf_evidence": "SF Controller 2017 routed pedestrian-violation crashes to engineering (prior-work note).",
+   "who_decides": "SFMTA (crossings), Legislature (law).",
+   "evidence_grade": "very low as a policy; the treatments it calls for are graded separately.",
+   "sources": [
+    {
+     "title": "Repo note, Prior Work: Matching SF Crash Types to Fixes (2026-11-25)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md",
+     "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Repo note, Pedestrian-Violation Crashes and What SF's Safety Money Buys (2026-11-20)",
+     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-20-ped-violation-countermeasures.md",
+     "tag": "[secondary — verify]"
+    }
+   ]
+  }
+ ],
+ "gaps": [
+  "TØI Handbook (tshandbok.no) was not reachable, so Norwegian meta-analysed effects with confidence intervals, and ISA, interlock and education values, are missing; SafetyCube DSS synopses and SWOV were not opened this session.",
+  "No SF unit cost was read for a pedestrian hybrid beacon, refuge island, raised crosswalk, raised side-street crossing, protected left-turn phase, all-way stop, crosswalk restripe, red-light camera or no-turn-on-red signs.",
+  "No crash effect was found for failure-to-yield cameras, yield enforcement stings, pedestrian education, longer crossing times for older people, shorter signal waits, rear cameras, truck direct vision or weight-based fees.",
+  "The pedestrian-violation split by Vehicle Code section (outside a crosswalk vs against the signal vs stepping out) exists only for 2022 to 2024 KSI (125 people); a 2017 to 2024 split by section and by movement is not computed.",
+  "Unsignalized vs signalized share of each failure-to-yield movement is not computed, so beacons, all-way stops and raised side-street crossings cannot yet be given a target share.",
+  "Turn-on-red share of right-turn failure-to-yield crashes is SFMTA's 'nearly 20% of turn-related crashes', not a count from our data; the SFMTA Tenderloin NTOR evaluation summary was linked but not read.",
+  "Most SF night crashes were under working streetlights; lighting effects come from lit-vs-unlit studies, and only Sweden's 'doubling light on a lit road, -8%, not significant' fits SF. Lighting levels at SF crash sites are unmeasured.",
+  "The 'not stated' (292 hurt, 49 KSI), 'other' (139, 14), 'vehicle right of way' (65, 7), following too closely, dooring and phone-use pedestrian families have no fix records of their own; they are reached only by area-wide levers (speed, volume, vehicle AEB).",
+  "NYC Turn Calming's page does not describe its comparison method; the 2016 left-turn study is simple 3-year before and after with no control for regression to the mean.",
+  "Several cited figures (DUI, cameras, SF outcomes, school studies, costs) come from repo notes whose primaries were read on earlier dates; they carry [secondary — verify] here."
+ ]
+}

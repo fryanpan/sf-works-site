@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Where SF's injury crashes happen, by the kind of place a fix acts on: each size_families group's people hurt and KSI people at signalized and unsignalized corners, all-way stops, the High Injury Network, each street class and stress level, school zones, Slow Streets, 20 mph blocks, speed camera corridors, candidate low-traffic cells, night and day, by turn movement, and SF's count of each kind of place.
 
-    python3 analysis/crash-profiles/fix-reach.py      # 2017-2024, writes out/crash-augment/profiles/fix-reach.json
+    python3 analysis/crash-profiles/fix-reach.py      # results.json's years, writes out/crash-augment/profiles/fix-reach.json
 
 fix-map.py reads it to give a fix the share of a group that sits where the fix goes, and to multiply a per-unit cost
 by SF's count of those places. Standard library only. A run with every source held makes no request and writes the
@@ -9,7 +9,8 @@ same bytes. One-off analysis behind the fix map; no page reads it on a schedule,
 not apply yet.
 
 INPUTS
-  crashes, parties, victims  out/crash-augment/tables/ (pipeline/crash-augment), 2017-2024 by collision_datetime,
+  crashes, parties, victims  out/crash-augment/tables/ (pipeline/crash-augment), the collision years results.json
+                     counts (crash-profiles.py's YEARS) by collision_datetime,
                      read and grouped exactly as crash-profiles.py does (its load(), at-fault party, mode,
                      VIOLATION_FINE family and MOVEMENT_FINE movement are imported from it), so every family total
                      here equals size_families.families in results.json; the run stops if one does not.
@@ -105,7 +106,6 @@ OUT = os.path.join(ROOT, "out", "crash-augment", "profiles", "fix-reach.json")
 RESULTS = os.path.join(ROOT, "out", "crash-augment", "profiles", "results.json")
 REACH = os.path.join(HERE, "fixes", "reach.json")
 LANES = os.path.join(ROOT, ".cache", "crash-augment", "street", "lanes.json")
-YEARS = (2017, 2024)
 SCHOOL_FT = 500
 CELL_MIN_MILES = 0.5
 HIN_MATCH_FT = 120  # a divided street's two sides sit about 40 to 100 ft from its centerline
@@ -421,9 +421,12 @@ def ltn_cells(net, lts):
     return cells, in_cell, boundary_nodes, len(comp)
 
 
-def main():
+def compute():
+    """(the fix-reach.json object, the crash records with their place tags, the place classes). fix-groups.py calls
+    this to place each crash exactly as the shares here are counted."""
     res = json.load(open(RESULTS, encoding="utf-8"))
-    crashes, parties, victims = cp.load(*YEARS)
+    years = tuple(res["years"])
+    crashes, parties, victims = cp.load(*years)
     recs = crash_records(crashes, parties, victims)
 
     streets = street_sources.held("streets")
@@ -719,7 +722,7 @@ def main():
     }
     out = {
         "about": __doc__.split("\n")[0],
-        "years": list(YEARS),
+        "years": list(years),
         "place_classes": BASE,
         "expressions": exprs,
         "all_groups": coverage | {e: allp[e] for e in exprs},
@@ -733,6 +736,12 @@ def main():
             "bci": bci_read_on, "lanes": lanes_layer.get("read_on"),
         },
     }
+    return out, recs, classes
+
+
+def main():
+    out, recs, classes = compute()
+    groups = out["groups"]
     text = json.dumps(out, indent=1, sort_keys=True, ensure_ascii=False, default=str) + "\n"
     old = open(OUT, encoding="utf-8").read() if os.path.exists(OUT) else None
     if text != old:

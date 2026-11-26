@@ -1,0 +1,482 @@
+{
+ "about": "People hurt and KSI people by group, 2017 to 2024, the counts the lanes' target_share texts quote. Written once by fix-map.py --freeze-lane-counts from crash-profiles.py --years 2017 2024; fix-map.py reads an 'A of B' text whose B is one of these totals as the share A / B.",
+ "groups": {
+  "all other families": [
+   4528,
+   476
+  ],
+  "bicycle involved | DUI": [
+   8,
+   0
+  ],
+  "bicycle involved | bike or scooter rules": [
+   115,
+   11
+  ],
+  "bicycle involved | dooring": [
+   286,
+   22
+  ],
+  "bicycle involved | failure to yield to pedestrian": [
+   31,
+   3
+  ],
+  "bicycle involved | following too closely": [
+   80,
+   6
+  ],
+  "bicycle involved | not stated": [
+   352,
+   55
+  ],
+  "bicycle involved | other": [
+   57,
+   5
+  ],
+  "bicycle involved | pedestrian violation": [
+   27,
+   4
+  ],
+  "bicycle involved | phone use": [
+   1,
+   0
+  ],
+  "bicycle involved | red light": [
+   352,
+   53
+  ],
+  "bicycle involved | stop sign or other sign": [
+   241,
+   20
+  ],
+  "bicycle involved | unsafe speed": [
+   581,
+   94
+  ],
+  "bicycle involved | unsafe speed | going straight": [
+   465,
+   73
+  ],
+  "bicycle involved | unsafe starting or backing": [
+   50,
+   2
+  ],
+  "bicycle involved | unsafe turn or lane use": [
+   1137,
+   90
+  ],
+  "bicycle involved | unsafe turn or lane use | high (LTS 3-4)": [
+   924,
+   71
+  ],
+  "bicycle involved | vehicle right of way": [
+   516,
+   35
+  ],
+  "bicycle involved | weekday commute (6-10 am, 4-7 pm) | weekday": [
+   1493,
+   144
+  ],
+  "bicycle involved | weekday midday (10 am-4 pm) | weekday": [
+   895,
+   86
+  ],
+  "bicyclist | adult 18 to 64": [
+   3381,
+   347
+  ],
+  "bicyclist | unsafe turn or lane use": [
+   1098,
+   87
+  ],
+  "driver | 65 and over": [
+   1192,
+   49
+  ],
+  "driver | adult 18 to 64": [
+   12305,
+   677
+  ],
+  "driver | following too closely": [
+   965,
+   17
+  ],
+  "driver | red light": [
+   1934,
+   93
+  ],
+  "driver | unsafe speed": [
+   3117,
+   222
+  ],
+  "driver | unsafe turn or lane use": [
+   2753,
+   148
+  ],
+  "driver | vehicle right of way": [
+   2188,
+   99
+  ],
+  "high (LTS 3-4) | arterial | intersection": [
+   6927,
+   512
+  ],
+  "high (LTS 3-4) | arterial | midblock": [
+   1816,
+   199
+  ],
+  "high (LTS 3-4) | collector | intersection": [
+   7276,
+   507
+  ],
+  "high (LTS 3-4) | collector | midblock": [
+   2247,
+   222
+  ],
+  "high (LTS 3-4) | major | intersection": [
+   1311,
+   98
+  ],
+  "high (LTS 3-4) | major | midblock": [
+   330,
+   36
+  ],
+  "high (LTS 3-4) | residential | intersection": [
+   3145,
+   227
+  ],
+  "high (LTS 3-4) | residential | midblock": [
+   1146,
+   116
+  ],
+  "low (LTS 1-2) | collector | intersection": [
+   262,
+   23
+  ],
+  "low (LTS 1-2) | residential | intersection": [
+   3617,
+   232
+  ],
+  "low (LTS 1-2) | residential | midblock": [
+   1598,
+   151
+  ],
+  "passenger | 65 and over": [
+   493,
+   14
+  ],
+  "passenger | adult 18 to 64": [
+   4141,
+   144
+  ],
+  "passenger | age not stated": [
+   246,
+   5
+  ],
+  "passenger | child under 18": [
+   915,
+   16
+  ],
+  "passenger | red light": [
+   985,
+   39
+  ],
+  "passenger | unsafe speed": [
+   1328,
+   45
+  ],
+  "passenger | unsafe turn or lane use": [
+   970,
+   25
+  ],
+  "passenger | vehicle right of way": [
+   857,
+   17
+  ],
+  "pedestrian involved | DUI": [
+   94,
+   30
+  ],
+  "pedestrian involved | bike or scooter rules": [
+   153,
+   26
+  ],
+  "pedestrian involved | dooring": [
+   9,
+   0
+  ],
+  "pedestrian involved | failure to yield to pedestrian": [
+   2491,
+   274
+  ],
+  "pedestrian involved | failure to yield to pedestrian | going straight": [
+   639,
+   106
+  ],
+  "pedestrian involved | failure to yield to pedestrian | high (LTS 3-4)": [
+   1920,
+   216
+  ],
+  "pedestrian involved | failure to yield to pedestrian | left or U-turn": [
+   1294,
+   119
+  ],
+  "pedestrian involved | following too closely": [
+   13,
+   1
+  ],
+  "pedestrian involved | not stated": [
+   292,
+   49
+  ],
+  "pedestrian involved | other": [
+   139,
+   14
+  ],
+  "pedestrian involved | pedestrian violation": [
+   1649,
+   330
+  ],
+  "pedestrian involved | pedestrian violation | going straight": [
+   1139,
+   254
+  ],
+  "pedestrian involved | pedestrian violation | high (LTS 3-4)": [
+   1358,
+   279
+  ],
+  "pedestrian involved | phone use": [
+   5,
+   0
+  ],
+  "pedestrian involved | red light": [
+   267,
+   54
+  ],
+  "pedestrian involved | stop sign or other sign": [
+   123,
+   15
+  ],
+  "pedestrian involved | unsafe speed": [
+   434,
+   88
+  ],
+  "pedestrian involved | unsafe starting or backing": [
+   267,
+   27
+  ],
+  "pedestrian involved | unsafe turn or lane use": [
+   254,
+   36
+  ],
+  "pedestrian involved | vehicle right of way": [
+   65,
+   7
+  ],
+  "pedestrian involved | weekday commute (6-10 am, 4-7 pm) | weekday": [
+   1921,
+   258
+  ],
+  "pedestrian involved | weekday midday (10 am-4 pm) | weekday": [
+   1493,
+   177
+  ],
+  "pedestrian involved | weekend daytime (6 am-7 pm) | weekend": [
+   907,
+   137
+  ],
+  "pedestrian | 65 and over": [
+   1056,
+   215
+  ],
+  "pedestrian | adult 18 to 64": [
+   4311,
+   626
+  ],
+  "pedestrian | age not stated": [
+   188,
+   37
+  ],
+  "pedestrian | child under 18": [
+   383,
+   43
+  ],
+  "pedestrian | failure to yield to pedestrian": [
+   2471,
+   274
+  ],
+  "pedestrian | pedestrian violation": [
+   1562,
+   321
+  ],
+  "scooter or other | adult 18 to 64": [
+   1088,
+   144
+  ],
+  "unknown | residential | intersection": [
+   280,
+   17
+  ],
+  "vehicles only | Broadside": [
+   8333,
+   397
+  ],
+  "vehicles only | DUI": [
+   851,
+   68
+  ],
+  "vehicles only | Head-On": [
+   1725,
+   136
+  ],
+  "vehicles only | Hit Object": [
+   914,
+   130
+  ],
+  "vehicles only | Not Stated": [
+   536,
+   25
+  ],
+  "vehicles only | Other": [
+   718,
+   77
+  ],
+  "vehicles only | Overturned": [
+   438,
+   43
+  ],
+  "vehicles only | Rear End": [
+   4583,
+   107
+  ],
+  "vehicles only | Sideswipe": [
+   3067,
+   124
+  ],
+  "vehicles only | bike or scooter rules": [
+   97,
+   4
+  ],
+  "vehicles only | dooring": [
+   117,
+   4
+  ],
+  "vehicles only | evening (7-11 pm) | weekday": [
+   2637,
+   152
+  ],
+  "vehicles only | evening (7-11 pm) | weekend": [
+   1207,
+   56
+  ],
+  "vehicles only | failure to yield to pedestrian": [
+   22,
+   0
+  ],
+  "vehicles only | following too closely": [
+   1398,
+   20
+  ],
+  "vehicles only | following too closely | high (LTS 3-4)": [
+   1280,
+   19
+  ],
+  "vehicles only | late night (11 pm-6 am) | weekday": [
+   1557,
+   141
+  ],
+  "vehicles only | late night (11 pm-6 am) | weekend": [
+   1417,
+   99
+  ],
+  "vehicles only | not stated": [
+   1052,
+   72
+  ],
+  "vehicles only | not stated | high (LTS 3-4)": [
+   842,
+   61
+  ],
+  "vehicles only | other": [
+   269,
+   20
+  ],
+  "vehicles only | pedestrian violation": [
+   38,
+   3
+  ],
+  "vehicles only | phone use": [
+   43,
+   1
+  ],
+  "vehicles only | red light": [
+   2982,
+   153
+  ],
+  "vehicles only | red light | high (LTS 3-4)": [
+   2741,
+   140
+  ],
+  "vehicles only | stop sign or other sign": [
+   1323,
+   53
+  ],
+  "vehicles only | stop sign or other sign | high (LTS 3-4)": [
+   789,
+   33
+  ],
+  "vehicles only | unsafe speed": [
+   4611,
+   298
+  ],
+  "vehicles only | unsafe speed | high (LTS 3-4)": [
+   3670,
+   225
+  ],
+  "vehicles only | unsafe speed | low (LTS 1-2)": [
+   836,
+   55
+  ],
+  "vehicles only | unsafe starting or backing": [
+   485,
+   18
+  ],
+  "vehicles only | unsafe turn or lane use": [
+   3974,
+   208
+  ],
+  "vehicles only | unsafe turn or lane use | high (LTS 3-4)": [
+   3342,
+   175
+  ],
+  "vehicles only | vehicle right of way": [
+   3119,
+   121
+  ],
+  "vehicles only | vehicle right of way | high (LTS 3-4)": [
+   2398,
+   110
+  ],
+  "vehicles only | vehicle right of way | low (LTS 1-2)": [
+   670,
+   10
+  ],
+  "vehicles only | weekday commute (6-10 am, 4-7 pm) | weekday": [
+   5290,
+   226
+  ],
+  "vehicles only | weekday midday (10 am-4 pm) | weekday": [
+   4790,
+   190
+  ],
+  "vehicles only | weekend daytime (6 am-7 pm) | weekend": [
+   3469,
+   179
+  ]
+ },
+ "inputs_read_on": "2026-11-25",
+ "years": [
+  2017,
+  2024
+ ]
+}

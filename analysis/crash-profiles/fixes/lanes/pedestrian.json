@@ -1,6 +1,6 @@
 {
  "lane": "pedestrian groups",
- "built": "2026-11-25, task t-ZNyWj2bl9SZK. Every 'pedestrian involved | ...' family in size_families with movement where it matters, plus pedestrians hurt in the dark, 65 and over, and under 18. Effects are in each study's own units and apply only to the target crashes named; CMF below 1 means fewer crashes.",
+ "built": "2026-11-25. Every 'pedestrian involved | ...' family in size_families with movement where it matters, plus pedestrians hurt in the dark, 65 and over, and under 18. Effects are in each study's own units and apply only to the target crashes named; CMF below 1 means fewer crashes.",
  "group_sizes": {
   "pedestrian involved | failure to yield to pedestrian": {
    "people_injured": 2491,

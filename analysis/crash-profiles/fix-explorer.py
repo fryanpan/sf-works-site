@@ -358,11 +358,17 @@ def q3(d):
     return None if not d else {k: r3(d[k]) for k in ("low", "mid", "high")}
 
 
-def effect_text(eff):
-    """The study's effect as a fraction removed, low to high, from effect_fraction."""
+def effect_text(eff, speed=None):
+    """The study's effect as a fraction removed, low to high, from effect_fraction. An effect from the power model
+    (scope "by severity") also carries its cut in other people hurt and the speed change it came from."""
     if not eff:
         return None
-    return {"l": r3(eff["low"]), "m": r3(eff["mid"]), "h": r3(eff["high"]), "ksi_only": eff.get("scope") == "ksi"}
+    out = {"l": r3(eff["low"]), "m": r3(eff["mid"]), "h": r3(eff["high"]), "ksi_only": eff.get("scope") == "ksi"}
+    if eff.get("scope") == "by severity" and speed:
+        out["hm"] = r3(eff["hurt"]["mid"])
+        out["pm"] = "%s %s%% slower" % (speed["measure"], format(-speed["mid"], "g")) if speed.get("mid") is not None \
+            else "%s %s to %s %s" % (speed["measure"], format(speed["before"], "g"), format(speed["after"], "g"), speed["unit"])
+    return out
 
 
 def source_link(fix, src_text):
@@ -439,8 +445,9 @@ def build(profiles):
             fix = fixes[fid]
             r = fix["groups"][row_i] if row_i is not None else {}
             refs[key] = {"mech": feet(r.get("mechanism") or fix.get("how_it_works")),
-                         "eff": effect_text(r.get("effect_fraction")),
-                         "src": plain(feet((r.get("effect") or {}).get("source"))),
+                         "eff": effect_text(r.get("effect_fraction"), r.get("speed_change")),
+                         "src": plain(feet(((r.get("speed_change") or {}) if (r.get("effect_fraction") or {}).get("scope") == "by severity"
+                                            else (r.get("effect") or {})).get("source"))),
                          "url": source_link(fix, (r.get("effect") or {}).get("source"))}
         return key
 
@@ -788,7 +795,7 @@ function num(x) { if (x == null) return ''; const a = Math.abs(x); if (a >= 100)
 function money(x) { if (x == null) return ''; if (x === 0) return '$0'; const a = Math.abs(x);
   if (a >= 1e9) return '$' + sig(x / 1e9) + 'B'; if (a >= 1e6) return '$' + sig(x / 1e6) + 'M'; if (a >= 1e3) return '$' + Number(sig(x)).toLocaleString('en-US'); return '$' + sig(x); }
 function pct(x) { return (x == null) ? '' : (Math.round(x * 1000) / 10 >= 10 || Math.abs(x) < 0.001 ? Math.round(x * 100) : (Math.round(x * 1000) / 10)) + '%'; }
-function effText(e) { if (!e) return ''; const f = v => v >= 0 ? pct(v) + ' fewer' : pct(-v) + ' more';
+function effText(e) { if (!e) return ''; if (e.pm) return `${pct(e.hm)} fewer people hurt and ${pct(e.m)} fewer killed or seriously hurt, from the power model on a ${e.pm}`; const f = v => v >= 0 ? pct(v) + ' fewer' : pct(-v) + ' more';
   const lo = e.l, hi = e.h; if (pct(lo) === pct(hi)) return f(e.m) + (e.ksi_only ? ', killed or seriously hurt only' : ''); return f(e.m) + ' (' + (lo < 0 ? pct(-lo) + ' more' : pct(lo)) + ' to ' + (hi < 0 ? pct(-hi) + ' more' : pct(hi) + ' fewer') + ')' + (e.ksi_only ? ', killed or seriously hurt only' : ''); }
 // a range of people avoided; a low end below zero means the fix could add a few, and says so
 const span = q => num(q.low) === num(q.high) ? num(q.mid != null ? q.mid : q.low) : q.low < 0 ? `${num(-q.low)} more to ${num(q.high)} fewer` : `${num(q.low)} to ${num(q.high)}`;

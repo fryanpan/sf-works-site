@@ -614,8 +614,7 @@ def crash_records(crashes, parties, victims, bci):
             "light": light_band(c["lighting"]),
             "at intersection": {"Midblock > 20ft": "midblock"}.get(c["intersection"], "intersection"),
             "heaviest vehicle weight": weight_band(heavy),
-            # "District 1", not "1": fix-map.py matches cross-cut group names by substring, and a bare "1" is the
-            # lanes grouping's key and sits inside "11 pm"
+            # "District 1", not "1", so the key reads on its own and differs from the lanes grouping's "1"
             "supervisor district": "District " + (c["supervisor_district"] or "not stated"),
             "_basis": {k: c[k + "_basis"] for k in ("posted_speed_limit_mph", "street_class", "corner_type", "lanes",
                                                    "bci_traffic_category", "in_epc", "signal_present",

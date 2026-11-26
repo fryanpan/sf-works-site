@@ -557,6 +557,15 @@
       "applies_to": "Low: SF's own 20 mph blocks show no drop (821 blocks, 1.27 before correction, still 10% to 20% above expected after it) and SFMTA measured 0 mph median change on 9 corridors. Mid: Edinburgh, streets changed vs streets kept at 30 mph, casualties -10% (-19% to 0%); citywide vs control zones -20%, collisions -22%. High: Wales, casualties on 20 and 30 mph roads 2,344 in 2022 to 1,759 in 2024, -25.0%, before and after only (Senedd's England comparison puts the gap near 19 points)",
       "source": "Kokka et al. 2024 (Edinburgh); Welsh Government, Police recorded road collisions 2024; SF methods-by-intervention note",
       "tag": "[primary — read 2026-11-25]"
+     },
+     "speed_change": {
+      "measure": "median speed (SFMTA 2024, nine re-signed corridors, no comparison streets)",
+      "low": 0,
+      "mid": 0,
+      "high": 0,
+      "use": "check",
+      "source": "SFMTA 2024 via the record's sf_evidence: median speed unchanged on nine measured corridors (85th percentile up 1 mph)",
+      "tag": "[secondary — verify]"
      }
     },
     {
@@ -1528,6 +1537,15 @@
       "unit": "% change in pedestrian injuries",
       "applies_to": "As above",
       "source": "NYC Council, via repo note",
+      "tag": "[secondary — verify]"
+     },
+     "speed_change": {
+      "measure": "85th-percentile speed (no mean published)",
+      "before": 27,
+      "after": 25,
+      "unit": "mph",
+      "use": "check",
+      "source": "SF Franklin Street retiming, 85th-percentile speed 27 to 25 mph (the record's sf_evidence)",
       "tag": "[secondary — verify]"
      }
     },

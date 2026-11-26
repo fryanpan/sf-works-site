@@ -84,12 +84,25 @@ Counting rules (each one is also in the README):
   them and are not converted.
 - Cost per person hurt avoided low = cost low / avoided high, mid = cost mid /
   avoided mid, high = cost high / avoided low.
-- Value of injuries avoided: SF Budget and Legislative Analyst, Economic Costs
-  and Fiscal Impacts of Traffic Collisions (2025), Exhibit 8: $36,949 an injury
-  and $1,604,902 a death in 2019 dollars, $2,135,839,973 to $2,524,990,016
-  from 2019 to 2024 dollars (economic cost only, no quality of life). Also USDOT
-  BCA 2026 comprehensive values, per KSI person and per other person hurt,
-  weighted by SF's 2022-2024 grade mix (2026-11-18 injury-costs note).
+- Value of injuries avoided, per KSI person and per other person hurt, each
+  weighted by SF's 2022-2024 police grade mix (GRADE_MIX, 2026-11-18
+  injury-costs note). SF Budget and Legislative Analyst, Economic Costs and
+  Fiscal Impacts of Traffic Collisions (2025), economic cost only: a death
+  $1,604,902 (Exhibit 8), a severe injury the MAIS 3 to 5 average and any other
+  injury the MAIS 1 and 2 average of Exhibit 5's NHTSA costs per person
+  ($19,344 to $979,328), in 2019 dollars, x $2,524,990,016 / $2,135,839,973 to
+  2024 dollars. Also USDOT BCA 2026 comprehensive values by grade.
+- Power model: an entry's speed_change (a measured or cited change in mean
+  speed, as before and after speeds or a % change at low, mid and high) gives
+  KSI people and other people hurt their own cut, 1 - (v_after / v_before)^p,
+  with Trafikverket's 2026 urban exponents (killed 3.8, seriously injured 2.6,
+  slightly injured 1.4) at mid and high and 1.6 for KSI at the low (Cameron
+  and Elvik 2010, urban arterials), a KSI person weighted killed or seriously
+  injured by GRADE_MIX (POWER_EXPONENTS, power_model). It never adds to a
+  study's crash effect: use "effect" makes it the entry's effect only when its
+  own effect is not a crash outcome; "bounds" keeps the study's mid and widens
+  low and high to the power model's; "check" shows it beside the study effect
+  and applies nothing. counting.power_model lists every entry.
 - Overlap: fixes on the same group are not summed in the ranking; each fix is
   ranked on its own. Stacks count sequentially (TRL PPR844) crash by crash: each
   crash keeps the fraction of its KSI people and of its other people hurt that
@@ -142,20 +155,66 @@ LEVERS = [
 LANE_ORDER = ["area", "junction", "pedestrian", "speed", "bike", "crosscut"]
 BUDGETS = [10e6, 50e6, 100e6, 500e6]
 
-# BLA 2025, Exhibit 8 (read 2026-11-25): 2019 dollars, scaled to 2024 by the
-# exhibit's own totals.
+# SF police grades 2022-2024 (108 killed K, 815 severe A, 2,771 other visible B, 7,465 complaint of pain C), from the
+# 2026-11-18 injury-costs note: the mix every per-person value below is weighted by.
+GRADE_MIX = {"K": 108, "A": 815, "B": 2771, "C": 7465}
+KSI_KILLED_SHARE = GRADE_MIX["K"] / (GRADE_MIX["K"] + GRADE_MIX["A"])
+
+# BLA 2025 (read 2026-11-26), economic cost only, 2019 dollars, scaled to 2024 by Exhibit 8's own totals. A death is
+# Exhibit 8's average, $1,604,902. Injuries take Exhibit 5's NHTSA cost per person by MAIS grade, each band averaged
+# over its national incidence: police severe (A) as MAIS 3 to 5, police other visible and complaint of pain (B, C) as
+# MAIS 1 and 2. Mapping police grades onto MAIS bands is [inference — mine]: the BLA itself used one average injury
+# ($36,949) because SF's grades do not align with MAIS, and NHTSA's KABCO-to-MAIS translator would refine it.
 BLA_TO_2024 = 2524990016 / 2135839973
-BLA_PER_INJURY_2024 = 36949 * BLA_TO_2024
+BLA_MAIS = {  # Exhibit 5: grade -> (national incidents, cost per person, 2019 dollars)
+    1: (3875265, 19344), 2: (427119, 71419), 3: (141167, 280726), 4: (19285, 675727), 5: (7187, 979328)}
+BLA_KILLED = 1604902
+
+
+def _band(grades):
+    n = sum(BLA_MAIS[g][0] for g in grades)
+    return sum(BLA_MAIS[g][0] * BLA_MAIS[g][1] for g in grades) / n
+
+
+BLA_SERIOUS = _band((3, 4, 5))
+BLA_OTHER = _band((1, 2))
+BLA_PER_KSI_2024 = (KSI_KILLED_SHARE * BLA_KILLED + (1 - KSI_KILLED_SHARE) * BLA_SERIOUS) * BLA_TO_2024
+BLA_PER_OTHER_HURT_2024 = BLA_OTHER * BLA_TO_2024
 BLA_SOURCE = {
-    "title": "SF Budget and Legislative Analyst, Economic Costs and Fiscal Impacts of Traffic Collisions, 2025-04-23, Exhibit 8",
+    "title": "SF Budget and Legislative Analyst, Economic Costs and Fiscal Impacts of Traffic Collisions, 2025-04-23, Exhibits 5 and 8",
     "url": "https://sfbos.archive.sf.gov/sites/default/files/BLA.Traffic_Crash_Costs.042325.pdf",
-    "tag": "[primary — read 2026-11-25]",
-    "note": "Economic cost only: $36,949 an injury and $1,604,902 a death (2019 dollars), x %.4f to 2024 dollars from the exhibit's totals. The BLA also scales police counts by 1.47 for unreported injuries; that multiplier is not applied here, so the value is a floor." % BLA_TO_2024,
+    "tag": "[primary — read 2026-11-26]; mapping police grades to MAIS bands is [inference — mine]",
+    "note": ("Economic cost only, 2019 dollars x %.4f to 2024 dollars from Exhibit 8's totals. Killed $1,604,902 (Exhibit 8); "
+             "severe injury (A) $%s, the MAIS 3 to 5 average of Exhibit 5's $280,726, $675,727 and $979,328; other injury "
+             "(B, C) $%s, the MAIS 1 and 2 average of $19,344 and $71,419. A KSI person is %.1f%% killed by SF's 2022-2024 "
+             "grades. The BLA also scales police counts by 1.47 for unreported injuries; that multiplier is not applied "
+             "here, so the value is a floor.") % (BLA_TO_2024, format(round(BLA_SERIOUS), ","), format(round(BLA_OTHER), ","),
+                                                   100 * KSI_KILLED_SHARE),
 }
-# USDOT BCA 2026 Table A-1 (2024 dollars), weighted by SF police grades
-# 2022-2024 (108 K, 815 A, 2,771 B, 7,465 C), from the 2026-11-18 note.
-USDOT_PER_KSI = (108 * 13_700_000 + 815 * 1_302_300) / 923
-USDOT_PER_OTHER_HURT = (2771 * 256_300 + 7465 * 122_400) / 10236
+# USDOT BCA 2026 Table A-1 (2024 dollars), weighted by SF police grades 2022-2024, from the 2026-11-18 note.
+USDOT_PER_KSI = (GRADE_MIX["K"] * 13_700_000 + GRADE_MIX["A"] * 1_302_300) / (GRADE_MIX["K"] + GRADE_MIX["A"])
+USDOT_PER_OTHER_HURT = (GRADE_MIX["B"] * 256_300 + GRADE_MIX["C"] * 122_400) / (GRADE_MIX["B"] + GRADE_MIX["C"])
+
+# Power model (Nilsson): people hurt at a severity after a change in mean speed = before x (v_after / v_before)^p.
+# Mid and high: Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Tabell 42, urban ("Tätort")
+# column, pp. 66-67: killed 3.8, seriously injured 2.6, slightly injured 1.4 [primary — read 2026-11-26].
+# Low: deaths and serious injuries 1.6 on urban arterials (Cameron and Elvik 2010, Accident Analysis & Prevention 42,
+# 1908-1915, cumulative categories), read in Frith and Tate 2024, "Using Speed-Crash Models Appropriately", Table 1
+# [secondary — verify]; the repo's exponents note (2026-11-18) cites the same value. Slight injuries keep 1.4 at the
+# low: no lower urban value was read.
+POWER_EXPONENTS = {
+    "low": {"killed": 1.6, "serious": 1.6, "slight": 1.4},
+    "mid": {"killed": 3.8, "serious": 2.6, "slight": 1.4},
+    "high": {"killed": 3.8, "serious": 2.6, "slight": 1.4},
+}
+POWER_SOURCES = [
+    {"title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet (2026), Potensmodellen, Tabell 42, pp. 66-67",
+     "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
+     "tag": "[primary — read 2026-11-26]"},
+    {"title": "Cameron and Elvik 2010, Nilsson's Power Model connecting speed and road trauma, AAP 42:1908-1915 (urban arterial DSI power 1.6), via Frith and Tate 2024, Table 1",
+     "url": "https://wsp.com/-/media/insights/new-zealand/documents/paper---using-speed-crash-models-appropriately.pdf",
+     "tag": "[secondary — verify]"},
+]
 USDOT_SOURCE = {
     "title": "USDOT Benefit-Cost Analysis Guidance 2026, Table A-1, via research/notes/whitepaper-2026-11/part-1/2026-11-18-injury-costs-and-burden.md",
     "url": "research/notes/whitepaper-2026-11/part-1/2026-11-18-injury-costs-and-burden.md",
@@ -630,6 +689,10 @@ def validate(rec, family_names):
         e = g.get("effect")
         if not isinstance(e, dict) or any(k not in e for k in ("low", "mid", "high", "unit", "applies_to", "source", "tag")):
             errs.append("group %d effect missing keys" % i)
+        sc = g.get("speed_change")
+        if sc is not None and (not isinstance(sc, dict) or any(k not in sc for k in ("measure", "use", "source", "tag"))
+                               or not (("before" in sc and "after" in sc) or all(q in sc for q in Q))):
+            errs.append("group %d speed_change needs measure, use, source, tag and before/after or low/mid/high" % i)
         name = g.get("group") or ""
         if name not in family_names and not name.startswith(CROSS_PREFIXES) and name != "all other families" \
                 and " | crash type " not in name and "(cross-cut" not in name:
@@ -827,6 +890,80 @@ def normalise_effect(e, group_mode, cid=None):
     out["scopes"] = sc
     out["scope"] = "all" if all(s == "all" for s in sc.values()) else ("ksi" if hurt is None else "mixed")
     return out, None
+
+
+SPEED_USES = ("effect", "bounds", "check")
+
+
+def power_model(ratio, q):
+    """(KSI people removed, other people hurt removed), as fractions, when mean speed changes by the ratio v_after /
+    v_before: 1 - ratio^p per severity with POWER_EXPONENTS[q]. A KSI person is killed or seriously injured in SF's
+    grade mix (KSI_KILLED_SHARE), and the other people hurt are slightly injured. A rise in speed gives a negative
+    fraction, more people hurt."""
+    e = POWER_EXPONENTS[q]
+    k = 1 - (KSI_KILLED_SHARE * ratio ** e["killed"] + (1 - KSI_KILLED_SHARE) * ratio ** e["serious"])
+    return k, 1 - ratio ** e["slight"]
+
+
+def speed_effect(sc):
+    """The power model's effect from an entry's speed_change, in normalise_effect's form, or (None, reason).
+    speed_change gives either before and after speeds (one value, used at low, mid and high) or a % change in mean
+    speed at low, mid and high; each is run through power_model() with that quantile's exponents."""
+    if not isinstance(sc, dict):
+        return None, "no speed change"
+    if sc.get("use") not in SPEED_USES:
+        raise SystemExit("speed_change.use must be one of %s, not %r" % (SPEED_USES, sc.get("use")))
+    if sc.get("before") is not None:
+        r = sc["after"] / sc["before"]
+        ratios = {q: r for q in Q}
+    else:
+        ratios = {q: 1 + sc[q] / 100 for q in Q if sc.get(q) is not None}
+        if len(ratios) != 3:
+            return None, "speed change needs low, mid and high, or before and after"
+    k, o = {}, {}
+    for q in Q:
+        k[q], o[q] = power_model(ratios[q], q)
+    # low is the smallest cut: re-sort the pairs by KSI cut, keeping each quantile's KSI and other cut together
+    order = sorted(Q, key=lambda q: (k[q], Q.index(q)))
+    k, o = {q: k[s] for q, s in zip(Q, order)}, {q: o[s] for q, s in zip(Q, order)}
+    out = {q: round(k[q], 6) for q in Q}
+    out["hurt"] = {q: round(o[q], 6) for q in Q}
+    out["scopes"] = {q: "by severity" for q in Q}
+    out["scope"] = "by severity"
+    out["speed_ratio"] = {q: round(ratios[s], 6) for q, s in zip(Q, order)}
+    return out, None
+
+
+def apply_speed_change(sc, eff, ereason):
+    """(effect, reason, note) for an entry with a speed_change. The power model never adds to a study's crash effect:
+    'effect' uses it only when the entry's own effect is not a crash outcome; 'bounds' keeps the study's mid and takes
+    the power model's low and high where they are wider; 'check' computes it beside the study effect and applies
+    nothing. Without a speed_change the effect passes through."""
+    if not sc:
+        return eff, ereason, None
+    pm, why = speed_effect(sc)
+    note = {k: sc[k] for k in sorted(sc)}
+    if pm is None:
+        note["applied"] = "not computed: " + why
+        return eff, ereason, note
+    note["power_model"] = pm
+    if sc["use"] == "effect" and eff is None:
+        note["applied"] = "the power model is this entry's effect; its own effect was dropped (%s)" % ereason
+        return pm, None, note
+    if sc["use"] == "bounds" and eff is not None:
+        if not eff["hurt"]:
+            raise SystemExit("speed_change bounds need an all-injury study effect: %r" % sc)
+        out = dict(eff, low=round(min(eff["low"], pm["low"], eff["mid"]), 6), high=round(max(eff["high"], pm["high"], eff["mid"]), 6))
+        h = eff["hurt"]
+        out["hurt"] = {"low": round(min(h["low"], pm["hurt"]["low"], h["mid"]), 6), "mid": h["mid"],
+                       "high": round(max(h["high"], pm["hurt"]["high"], h["mid"]), 6)}
+        note["applied"] = "the study's mid is kept; low and high widened to the power model's where wider"
+        return out, ereason, note
+    if eff is not None:
+        note["applied"] = "not applied: the entry's study effect on crashes is used, and the power model is shown beside it"
+    else:
+        note["applied"] = "not applied (%s); the entry has no crash effect" % sc["use"]
+    return eff, ereason, note
 
 
 # ---------------------------------------------------------------- target share
@@ -1296,6 +1433,7 @@ def main():
                     raise SystemExit("EFFECT_FROM_GROUP: %s has no group %r" % (cid, borrowed[0]))
                 e = dict(src_g["effect"])
             eff, ereason = normalise_effect(e, mode if mode != "all" else None, cid)
+            eff, ereason, speed_note = apply_speed_change(g.get("speed_change"), eff, ereason)
             sh = sk = None
             sbasis = None
             ts = str(g.get("target_share") or "")
@@ -1353,6 +1491,8 @@ def main():
                 row["_text_share"] = reach_row["text_share"]
             if sf_note:
                 row["sf_evidence"] = sf_note
+            if speed_note:
+                row["speed_change"] = speed_note
             if borrowed:
                 row["effect_from"] = {"group": borrowed[0], "why": borrowed[1]}
             if reason:
@@ -1376,6 +1516,9 @@ def main():
                 if eff["scope"] == "ksi":
                     row["note"] = ("effect measured on killed or seriously injured only: it removes KSI people, who are "
                                    "counted as people hurt avoided too, and no one else")
+                elif eff["scope"] == "by severity":
+                    row["note"] = ("effect from the power model on the measured change in mean speed (speed_change): KSI "
+                                   "people and other people hurt each take their own severity's cut")
                 elif eff["scope"] == "mixed":
                     row["note"] = ("some of the effect's values are on killed or seriously injured only: those apply to "
                                    "KSI people, and people hurt take the nearest smaller all-injury value (effect_fraction.hurt)")
@@ -1519,7 +1662,7 @@ def main():
         rec_out["cost_per_ksi_avoided"] = None if cpk is None else {q: r0(v, 0) for q, v in cpk.items()}
         if any_pair:
             other_h = {q: max(hurt[q] - ksi[q], 0) for q in hurt}
-            v_bla = {q: hurt[q] * BLA_PER_INJURY_2024 for q in hurt}
+            v_bla = {q: ksi[q] * BLA_PER_KSI_2024 + other_h[q] * BLA_PER_OTHER_HURT_2024 for q in hurt}
             v_us = {q: ksi[q] * USDOT_PER_KSI + other_h[q] * USDOT_PER_OTHER_HURT for q in hurt}
             rec_out["value_avoided_per_year"] = {
                 "bla_economic_2024": {q: r0(v, 0) for q, v in v_bla.items()},
@@ -1798,7 +1941,8 @@ def main():
             "lanes": sorted(lanes) + ["fill"], "results": "out/crash-augment/profiles/results.json",
             "years": res["years"], "people_hurt_total": tot_h, "ksi_total": tot_k,
             "value_sources": [BLA_SOURCE, USDOT_SOURCE],
-            "value_per_person_hurt_bla_economic_2024": round(BLA_PER_INJURY_2024),
+            "value_per_ksi_bla_economic_2024": round(BLA_PER_KSI_2024),
+            "value_per_other_hurt_bla_economic_2024": round(BLA_PER_OTHER_HURT_2024),
             "value_per_ksi_usdot_2024": round(USDOT_PER_KSI), "value_per_other_hurt_usdot_2024": round(USDOT_PER_OTHER_HURT),
         },
         "summary": {
@@ -1841,6 +1985,15 @@ def main():
                                               for t in ts if t["rho_clamped"]}),
             "severity_by_value": {k: [{"r": r_, "scope": sc_, "why": w_} for r_, sc_, w_ in v] for k, v in sorted(SEVERITY_BY_VALUE.items())},
             "effect_from_group": {"%s | %s" % k: {"group": v[0], "why": v[1]} for k, v in sorted(EFFECT_FROM_GROUP.items())},
+            "power_model": {
+                "exponents": POWER_EXPONENTS, "ksi_killed_share": round(KSI_KILLED_SHARE, 4), "sources": POWER_SOURCES,
+                "entries": sorted([{"fix": f["id"], "group": r["group"], "movement": r["movement"],
+                                    "applied": r["speed_change"]["applied"],
+                                    "power_model": (r["speed_change"].get("power_model") or {}),
+                                    "study_effect": r.get("effect_fraction") if not r["speed_change"]["applied"].startswith("the power model is") else None}
+                                   for f in out_fixes for r in f["groups"] if r.get("speed_change")],
+                                  key=lambda x: (x["fix"], x["group"], x["movement"] or "")),
+            },
         },
         "gaps": gaps,
     }

@@ -1721,6 +1721,15 @@
       "applies_to": "pedestrian crashes on humped urban streets (Denmark -34%), all injury crashes in area-wide calming (Denmark -29%); NYC pedestrian injuries OR 0.91 (0.80 to 1.02)",
       "source": "Effekthåndbog 4.5 and 4.16; Roberts et al. 2025 via outcomes note",
       "tag": "[primary — read 2026-11-25]"
+     },
+     "speed_change": {
+      "measure": "85th-percentile speed (no mean published)",
+      "before": 26.8,
+      "after": 20.0,
+      "unit": "mph",
+      "use": "check",
+      "source": "SF speed humps, 26 blocks' 85th-percentile speed 26.8 to 20.0 mph (the record's sf_evidence: outcomes note, studies.json)",
+      "tag": "[secondary — verify]"
      }
     },
     {

@@ -446,6 +446,15 @@
       "applies_to": "Low: mean left-turn speed, Washington D.C. against controls (IIHS). Mid: SF average left-turn speed at 7 sites against 4 controls (1.7 mph slower). High: SF share of left turns over 15 mph. No vehicle-only crash effect found; NYC reports pedestrian severe injuries -33% at turn-calming sites (naive)",
       "source": "Hu and Cicchino 2020 (IIHS); SFMTA A Turn Toward Safety 2021; NYC DOT Turn Calming page",
       "tag": "[primary — read 2026-11-25]"
+     },
+     "speed_change": {
+      "measure": "mean left-turn speed",
+      "low": -9.8,
+      "mid": -17,
+      "high": -17,
+      "use": "effect",
+      "source": "Low: Hu and Cicchino 2020 (IIHS), mean left-turn speed at Washington D.C. sites against controls, -9.8%. Mid and high: SFMTA, A Turn Toward Safety (2021), average left-turn speed at 7 SF sites against 4 controls, 1.7 mph slower (-17%). The effect's high, the share of turns over 15 mph (-71%), is not a mean speed and is not used.",
+      "tag": "[primary — read 2026-11-25]"
      }
     },
     {

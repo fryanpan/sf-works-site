@@ -78,6 +78,15 @@
       "applies_to": "all injury crashes on the re-signed streets, not the whole group",
       "source": "Edinburgh signed 20 mph: casualties -10% (0% to 19%) against streets kept at 30 (Kokka 2024); England 12 schemes: no significant change (DfT 2018); SF 20 mph blocks: no drop, crashes ran 10% to 20% above expected after correcting the method's lean; SFMTA's nine corridors: median speed unchanged. Mid is our midpoint.",
       "tag": "[secondary — verify] [inference — mine]"
+     },
+     "speed_change": {
+      "measure": "median speed (SFMTA 2024, nine re-signed corridors, no comparison streets)",
+      "low": 0,
+      "mid": 0,
+      "high": 0,
+      "use": "check",
+      "source": "SFMTA 2024 via the record's sf_evidence: median speed unchanged on nine measured corridors (85th percentile up 1 mph)",
+      "tag": "[secondary — verify]"
      }
     },
     {
@@ -246,6 +255,15 @@
       "applies_to": "injury crashes on the treated residential street, mid-block mostly; KSI crashes -31% (-16% to -43%)",
       "source": "TØI handbook 3.12, meta-analysis of eleven controlled studies: injury crashes -23% (-13% to -32%), KSI crashes -31% (-16% to -43%); Danish Effekthåndbog 4.5: 16 evaluations of humps, injury crashes -30% as mean speed fell 40.8 to 28.0 km/h; London 20 mph zones with devices: KSI -46% (39% to 54%).",
       "tag": "[primary — read 2026-11-25] (Danish handbook); [secondary — verify] (TØI 3.12 and Grundy, per studies.json)"
+     },
+     "speed_change": {
+      "measure": "mean speed",
+      "before": 40.8,
+      "after": 28.0,
+      "unit": "km/h",
+      "use": "check",
+      "source": "Danish Effekthåndbog 4.5: 16 evaluations of humps, mean speed 40.8 to 28.0 km/h, with injury crashes -30%",
+      "tag": "[primary — read 2026-11-25]"
      }
     },
     {
@@ -332,6 +350,15 @@
       "applies_to": "injury crashes within the sign's influence area; killed -26%, serious -18% by power model",
       "source": "Danish Effekthåndbog 4.3: urban mean speed -2 to -10 km/h, about 5 on average; power model gives -11% injury crashes in town; English studies found about -40% injury crashes with no regression-to-the-mean correction (sets the high). Caltrans LRSM R26: 'no nationally accepted CRFs' for regulatory feedback signs.",
       "tag": "[primary — read 2026-11-25]"
+     },
+     "speed_change": {
+      "measure": "mean speed",
+      "low": -3.85,
+      "mid": -9.63,
+      "high": -19.27,
+      "use": "check",
+      "source": "Danish Effekthåndbog 4.3: in town mean speed falls 2 to 10 km/h, about 5 on average, from an urban mean of 51.9 km/h (-3.85%, -9.63%, -19.27%). The effect's mid, -11% injury crashes, is the handbook's own power-model result, and its high is English crash studies.",
+      "tag": "[primary — read 2026-11-26]"
      }
     },
     {
@@ -346,6 +373,15 @@
       "applies_to": "as above",
       "source": "Danish Effekthåndbog 4.3",
       "tag": "[primary — read 2026-11-25]"
+     },
+     "speed_change": {
+      "measure": "mean speed",
+      "low": -3.85,
+      "mid": -9.63,
+      "high": -19.27,
+      "use": "check",
+      "source": "Danish Effekthåndbog 4.3: in town mean speed falls 2 to 10 km/h, about 5 on average, from an urban mean of 51.9 km/h (-3.85%, -9.63%, -19.27%). The effect's mid, -11% injury crashes, is the handbook's own power-model result, and its high is English crash studies.",
+      "tag": "[primary — read 2026-11-26]"
      }
     }
    ],

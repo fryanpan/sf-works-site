@@ -604,12 +604,12 @@
    ],
    "unit": "corridor mile",
    "cost": {
-    "low": 400000,
-    "high": 1700000,
+    "low": 1350000,
+    "high": 4100000,
     "year": 2025,
-    "unit": "per mile, SF quick-build arterial redesign (paint and posts)",
-    "source": "Lower Speed Limits What We Know doc, cost table, from SFMTA quick-build budgets",
-    "tag": "[secondary — verify, per repo note read 2026-10-31]"
+    "unit": "per mile, built package on SF's High Injury Network: SF's quick-build restriping and posts ($400,000 to $1.7M a mile), a concrete refuge island at each of the network's 13.9 intersections a mile ($19,000 to $40,000 each, SF's Sanchez islands), raised crossings at about a quarter of them (3.5 a mile at SF's $28,592 to $37,169 a device, a floor for a raised crosswalk) and concrete curb extensions at 3.5 to 7 corners a mile ($169,000 to $244,000 a corner). The counts of raised crossings and corners per mile are [inference — mine]",
+    "source": "SF quick-build budgets via the Lower Speed Limits What We Know doc; SF island, device and curb-extension costs as priced in fill.json and area.json (curbed-median, area-wide-engineered-20mph-zones, daylighting-hardened); intersections a mile from fix-reach.json units (1,846 HIN corners over 132.9 HIN miles)",
+    "tag": "[secondary — verify, per repo notes read 2026-10-31 to 2026-11-25]"
    },
    "life_years": null,
    "sf_now": "SFMTA quick-build corridors on the High Injury Network (34 projects 2018 to 2024; 20 paint and posts, Townsend hardened).",

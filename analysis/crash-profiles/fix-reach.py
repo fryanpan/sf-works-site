@@ -48,6 +48,7 @@ PLACE CLASSES (one crash can be in several). A crash is at an intersection when 
   school_zone        the crash point (tb_latitude, tb_longitude) within SCHOOL_FT (500 ft) of a school's point.
   slow_street        one of the crash's blocks is an Implemented Slow Street block (hkz3-itiu, any date).
   limit20            one of the crash's blocks is posted 20 mph today (3t7b-gebn speedlimit 20, status not L).
+  unposted           every block the crash is on is unposted today (3t7b-gebn speedlimit 0, the 25 mph default).
   camera_corridor    the crash is in a speed camera corridor, the street lane's rule (the site's block and the next
                      block of the same street each way, and their intersections), any date.
   ltn_cell           inside a candidate low-traffic cell: every block it is on is residential or collector and LTS 1
@@ -106,7 +107,7 @@ SURFACE = ("arterial", "major", "collector", "residential")
 
 BASE = ["intersection", "midblock", "signalized", "unsignalized", "all_way_stop", "stop_controlled", "uncontrolled",
         "arterial_corner", "arterial", "collector", "residential", "high_stress", "low_stress", "multilane", "hin",
-        "hin2022", "school_zone", "slow_street", "limit20", "camera_corridor", "ltn_cell", "dark", "daylight", "dusk",
+        "hin2022", "school_zone", "slow_street", "limit20", "unposted", "camera_corridor", "ltn_cell", "dark", "daylight", "dusk",
         "late_night", "evening"]
 
 
@@ -320,6 +321,7 @@ def main():
     signal_nodes = {cnn(r.get("cnn")) for r in signals_src.rows if r.get("type") in SIGNAL_TYPES} - {None}
     speed_src = street_sources.held("speed_limits")
     limit20 = {cnn(r.get("cnn")) for r in speed_src.rows if r.get("speedlimit") == "20" and r.get("status") != "L"}
+    unposted = {cnn(r.get("cnn")) for r in speed_src.rows if r.get("speedlimit") == "0"}
     slow_src = street_sources.held("slow_streets")
     slow = {cnn(r.get("cnn")) for r in slow_src.rows if r.get("status") == "Implemented"}
     cam_src = street_sources.held("cameras")
@@ -438,6 +440,8 @@ def main():
             tags.add("slow_street")
         if any(b in limit20 for b in blocks):
             tags.add("limit20")
+        if blocks and all(b in unposted for b in blocks):
+            tags.add("unposted")
         seg = cnn(c["cnn_sgmt_fkey"])
         if (seg and seg in cam_segs) or (node and (at_int or not seg) and node in cam_nodes):
             tags.add("camera_corridor")
@@ -556,7 +560,7 @@ def main():
         "ltn_cell_residential_miles": u(sum(x["residential_miles"] for x in cells), "residential street miles inside those cells", st_src, "[inference — mine]"),
         "slow_street_miles": u(sum(net.seg[c]["miles"] for c in slow if c in net.seg), "miles of Implemented Slow Street blocks (hkz3-itiu, last edited 2024-01-18)", "DataSF hkz3-itiu", q % ("hkz3-itiu", slow_src.read_on)),
         "limit20_miles": u(sum(net.seg[c]["miles"] for c in limit20 if c in net.seg), "miles posted 20 mph today", "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
-        "unposted_25_miles": u(sum(net.seg[c]["miles"] for c in net.surface if c in {cnn(r.get("cnn")) for r in speed_src.rows if r.get("speedlimit") == "0"}),
+        "unposted_25_miles": u(sum(net.seg[c]["miles"] for c in net.surface if c in unposted),
                                "surface miles with speedlimit 0, the 25 mph default", "DataSF 3t7b-gebn", q % ("3t7b-gebn", speed_src.read_on)),
         "speed_camera_sites": u(len(cameras), "speed camera sites placed on a block (the street lane's rule)", "DataSF d5uh-bk84", q % ("d5uh-bk84", cam_src.read_on)),
         "speed_camera_corridor_miles": u(sum(net.seg[c]["miles"] for c in cam_segs if c in net.seg), "miles of camera corridor blocks", "DataSF d5uh-bk84, 3psu-pn9h", q % ("d5uh-bk84", cam_src.read_on)),

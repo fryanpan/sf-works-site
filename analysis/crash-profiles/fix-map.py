@@ -119,6 +119,11 @@ Counting rules (each one is also in the README):
   one place (the left-turn treatments at an arterial corner, a raised or a
   high-visibility crosswalk at an unsignalized crossing); a stack takes the
   first of a conflicting set and skips the others.
+- reach.json every_family maps a fix whose study measured every injury in its area to every family in its place,
+  with the study's effect for each family's road users (every_family_groups); not_computable leaves a fix out with
+  its reason.
+- at_budgets: what each of BUDGETS a year buys, the greedy fill skipping a fix that would go over what is left and
+  going on, with its actual spend.
 - Each stack's steps carry the cumulative figures with every effect at its low
   and at its high (same order and costs). The optimistic and pessimistic stacks
   replay greedy_by_people_hurt's fixes in its order with every effect at its
@@ -271,7 +276,10 @@ ALIASES = {
 _CONFLICT_SETS = [
     ["citywide-default-20mph", "neighbourhood-signed-20mph-zones", "lower-speed-limits"],
     ["area-wide-engineered-20mph-zones", "vertical-calming-residential"],
-    ["citywide-speed-camera-network", "fixed-speed-cameras", "lift-camera-cap", "rotating-mobile-camera-coverage"],
+    ["citywide-speed-camera-network", "fixed-speed-cameras", "lift-camera-cap", "rotating-mobile-camera-coverage",
+     "section-control-corridor-cameras"],
+    # Engineered 20 mph zones lower the limit too: with any of the limit changes, the limit would count twice.
+    ["area-wide-engineered-20mph-zones", "citywide-default-20mph", "neighbourhood-signed-20mph-zones", "lower-speed-limits"],
     ["ltn-cell-program-citywide", "street-hierarchy-through-network", "superblock-and-car-free-centre-program", "slow-streets-network"],
     ["citywide-daylighting-every-corner", "daylighting-hardened", "parking-removal-near-junctions-and-on-bike-routes"],
     ["curb-protected-bike-lane", "quick-build-separated-lane", "connected-network-plan"],
@@ -308,7 +316,9 @@ for a, members in _BUNDLES.items():
 
 # SF unit counts for per-unit costs. Each count is quoted from the merged
 # record's own unit or cost text, or from results.json; nothing here is a guess.
-SIGNALS_NOTE = "1,249 signalized intersections (results.json signals_at_intersections); assumes every signal is treated"
+# SF's signal count is fix-reach.json's signalized_intersections (ybh5-27n2 today), set in main(); the lanes' "1,249"
+# is results.json's count of crashes' signal flags, not a count of signals.
+SIGNALS_NOTE = "%s signalized intersections (fix-reach.json units.signalized_intersections, %s); assumes every signal is treated"
 # Counts that are only part of the stock the target_share text describes: for
 # these a pair needs an explicit "N% of the group" share, or it is not computed.
 PARTIAL_UNITS = {"fixed-speed-cameras", "slow-streets-network", "school-crossing-guards"}
@@ -319,13 +329,10 @@ REACH_UNKNOWN = {
 }
 UNITS = {
     "ltn-cell-program-citywide": (152, 152, "SF's 152 candidate cells (record unit, out/low-traffic-cells/candidates.json)"),
-    "area-wide-engineered-20mph-zones": (887, 887, "887 unposted SF street miles (record unit)"),
     "citywide-speed-camera-network": (320, 740, "about 320 to 740 locations for a network design test (record unit)"),
     "fixed-speed-cameras": (33, 33, "SF's 33 camera locations under AB 645 (record name and cost text)"),
     "citywide-daylighting-every-corner": (8900, 8900, "8,900 SF intersections (record unit; 'paint everywhere $4.45M' in the cost text)"),
     "slow-streets-network": (30, 85, "the repo's first 30 miles to the plan's 85 miles of Shared streets (record unit)"),
-    "systemic-hin-intersection-program": (1249, 1249, "1,249 signalized intersections (record unit, results.json)"),
-    "citywide-signal-retiming-safe-speed": (1249, 1249, "1,249 signalized intersections (record unit, results.json)"),
     "school-streets-citywide-program": (230, 230, "more than 230 schools named for safety work by 2028 (record unit)"),
     "school-crossing-guards": (90, 97, "about 90 to 97 schools with guards (record cost text)"),
 }
@@ -334,8 +341,8 @@ SIGNAL_TIMING_IDS = [
     "no-late-night-signal-flash", "exclusive-pedestrian-phase", "leading-bike-interval",
     "longer-crossing-time-older-pedestrians", "shorter-pedestrian-waits",
 ]
-for _i in SIGNAL_TIMING_IDS:
-    UNITS[_i] = (1249, 1249, SIGNALS_NOTE)
+# The signal-count fixes take SF's signal count in main(), from fix-reach.json.
+SIGNAL_COUNT_IDS = SIGNAL_TIMING_IDS + ["systemic-hin-intersection-program"]
 # Cost text that gives a total over several years rather than a unit price.
 COST_TOTAL_OVER_YEARS = {"pedestrian-education": 5}  # "FY27 to 31 total"
 
@@ -616,6 +623,45 @@ def apply_fill(records, fill):
 
 def cost_known(c):
     return isinstance(c, dict) and (c.get("low") is not None or c.get("high") is not None)
+
+
+def every_family_groups(cid, rec, ef, fam):
+    """The groups of a fix whose study measured every injury in the place it covers (reach.json every_family): one
+    entry for every family, whole family, with the effect the study gives that family's mode (effects keyed by mode,
+    "*" for every other mode), so the study is applied to everyone it measured and to no one else. An effect is a
+    reference to one of the record's own entries ({"from_group": name, "movement": m}) or an effect written out. A mode
+    with no effect keeps the record's entries for its families, not computable, with no_effect_why. Cross-cut entries
+    stay as they are; "all other families" entries go, since every family is mapped itself."""
+    old = rec.get("groups") or []
+
+    def effect_for(mode):
+        spec = ef["effects"].get(mode, ef["effects"].get("*"))
+        if spec is None:
+            return None
+        if "from_group" not in spec:
+            return dict(spec)
+        src = next((g for g in old if g.get("group") == spec["from_group"] and (g.get("movement") or None) == spec.get("movement")
+                    and g.get("effect")), None)
+        if src is None:
+            raise SystemExit("every_family: %s has no entry %r" % (cid, spec))
+        return dict(src["effect"])
+
+    new = [dict(g) for g in old if (g.get("group") or "") not in fam and g.get("group") != "all other families"]
+    for name in sorted(fam):
+        mine = [g for g in old if g.get("group") == name]
+        e = effect_for(fam[name]["mode"])
+        if e is None:
+            for g in mine:
+                new.append(dict(g, _no_effect=ef["no_effect_why"]))
+            continue
+        row = {"group": name, "mechanism": (mine[0].get("mechanism") if mine else None) or ef["mechanism"],
+               "target_share": "every crash of the family in the place (reach.json every_family)", "effect": e,
+               "from": "every_family"}
+        sc = next((g["speed_change"] for g in mine if g.get("speed_change")), None)
+        if sc:
+            row["speed_change"] = sc
+        new.append(row)
+    return new
 
 
 def merge(records):
@@ -1248,7 +1294,7 @@ AREA_IDS = {
     "superblock-and-car-free-centre-program", "citywide-default-20mph", "neighbourhood-signed-20mph-zones",
     "area-wide-engineered-20mph-zones", "citywide-speed-camera-network", "rotating-mobile-camera-coverage",
     "school-streets-citywide-program", "citywide-daylighting-every-corner", "slow-streets-network",
-    "citywide-signal-retiming-safe-speed", "area-cordon-congestion-charge", "community-area-safety-plans",
+    "area-cordon-congestion-charge", "community-area-safety-plans",
     "camera-enforced-filters-state-law", "lift-camera-cap", "connected-network-plan",
 }
 SPOT_LEVERS = {"street design", "signals"}
@@ -1356,6 +1402,9 @@ def main():
 
     family_names = set(fam)
     reach = Reach(fam, remainder)
+    sig = reach.data["units"]["signalized_intersections"]
+    for _i in SIGNAL_COUNT_IDS:
+        UNITS[_i] = (sig["value"], sig["value"], SIGNALS_NOTE % ("{:,}".format(sig["value"]), sig["tag"]))
     crashes = Crashes()
     for g in fam:
         if crashes.totals(g) != (fam[g]["people_hurt"], fam[g]["ksi"]):
@@ -1422,6 +1471,8 @@ def main():
     out_fixes, not_computable, pair_rows = [], [], {}
     for cid in sorted(merged):
         rec = merged[cid]
+        if cid in reach.cfg and reach.cfg[cid].get("every_family"):
+            rec = dict(rec, groups=every_family_groups(cid, rec, reach.cfg[cid]["every_family"], fam))
         cost, cost_reason = annual_cost(rec)
         if cid in reach.cfg:
             up = reach.upkeep(cid)
@@ -1444,6 +1495,10 @@ def main():
                     raise SystemExit("EFFECT_FROM_GROUP: %s has no group %r" % (cid, borrowed[0]))
                 e = dict(src_g["effect"])
             eff, ereason = normalise_effect(e, mode if mode != "all" else None, cid)
+            if g.get("_no_effect"):
+                eff, ereason = None, g["_no_effect"]
+            elif cid in reach.cfg and reach.cfg[cid].get("not_computable"):
+                eff, ereason = None, reach.cfg[cid]["not_computable"]
             eff, ereason, speed_note = apply_speed_change(g.get("speed_change"), eff, ereason)
             sh = sk = None
             sbasis = None
@@ -1767,8 +1822,9 @@ def main():
                 raise SystemExit("fix-map: %s avoids %.3f hurt and %.3f KSI in %s, which holds %s and %s"
                                  % (label, h, k, g, fam[g]["people_hurt"], fam[g]["ksi"]))
 
-    def build_stack(cands, metric, q="mid", cq=None):
-        """Greedy: add the fix with the lowest cost per person avoided on what the fixes before it left, crash by crash."""
+    def build_stack(cands, metric, q="mid", cq=None, budget=None):
+        """Greedy: add the fix with the lowest cost per person avoided on what the fixes before it left, crash by crash.
+        With a budget, a fix whose annual cost does not fit in what is left is skipped and the fill goes on."""
         cq = cq or q
         remk, remo = [1.0] * crashes.n, [1.0] * crashes.n
         added, steps = set(), []
@@ -1778,6 +1834,8 @@ def main():
             best = None
             for f in pool:
                 if f["id"] in added or any((f["id"], a) in CONFLICTS for a in added):
+                    continue
+                if budget is not None and cum_cost + f["annual_cost"][cq] > budget + 1e-6:
                     continue
                 dh, dk, new = apply(f, q, remk, remo)
                 gain = dh if metric == "hurt" else dk
@@ -1828,24 +1886,39 @@ def main():
                            "share_of_ksi_avoided"):
                     s_[k_ + "_" + qq] = r_[k_]
 
-    def at_budget(stack, budget):
-        last = None
-        for s in stack["steps"]:
-            if s["cumulative_annual_cost"] <= budget:
-                last = s
-            else:
-                break
+    def budget_row(budget, steps):
+        """What a budget buys: the package's fixes, its actual annual spend and the people it avoids."""
+        last = steps[-1] if steps else None
         if last is None:
-            return {"budget": budget, "fixes": 0, "annual_cost": 0, "hurt_avoided": 0, "ksi_avoided": 0,
+            return {"budget": budget, "fixes": 0, "ids": [], "annual_cost": 0, "hurt_avoided": 0, "ksi_avoided": 0,
                     "share_of_people_hurt_avoided": 0, "share_of_ksi_avoided": 0}
-        return {"budget": budget, "fixes": last["step"], "annual_cost": last["cumulative_annual_cost"],
+        return {"budget": budget, "fixes": len(steps), "ids": [x["id"] for x in steps],
+                "annual_cost": last["cumulative_annual_cost"],
                 "hurt_avoided": last["cumulative_hurt_avoided"], "ksi_avoided": last["cumulative_ksi_avoided"],
                 "share_of_people_hurt_avoided": last["share_of_people_hurt_avoided"],
                 "share_of_ksi_avoided": last["share_of_ksi_avoided"]}
 
-    def summarise(stack):
+    def fill_budgets(cands, metric):
+        """For each budget, the greedy fill that skips a fix that does not fit what is left and goes on."""
+        return [budget_row(b, build_stack(cands, metric, budget=b)["steps"]) for b in BUDGETS]
+
+    def fill_in_order(order, q, cq):
+        """For each budget, the fixes of a fixed order that fit, in that order (a fix that does not fit is skipped and
+        the fill goes on), replayed at effect q and cost cq."""
+        out = []
+        for b in BUDGETS:
+            pick, spent = [], 0.0
+            for fid in order:
+                c = by_id[fid]["annual_cost"][cq]
+                if spent + c <= b + 1e-6:
+                    pick.append(fid)
+                    spent += c
+            out.append(budget_row(b, replay(pick, q, cq)))
+        return out
+
+    def summarise(stack, budgets):
         end = stack["steps"][-1] if stack["steps"] else None
-        return {"at_budgets": [at_budget(stack, b) for b in BUDGETS],
+        return {"at_budgets": budgets,
                 "end": None if end is None else {k: end[k] for k in (
                     "step", "cumulative_annual_cost", "cumulative_hurt_avoided", "cumulative_ksi_avoided",
                     "share_of_people_hurt_avoided", "share_of_ksi_avoided")}}
@@ -1860,14 +1933,14 @@ def main():
     ]:
         st = build_stack(cands, metric)
         add_band(st)
-        st.update(summarise(st))
+        st.update(summarise(st, fill_budgets(cands, metric)))
         st["ranked_by"] = "cost per %s avoided on what remains, mid" % ("person hurt" if metric == "hurt" else "KSI person")
         st["candidates"] = len(cands)
         stacks[name] = st
     order = [x["id"] for x in stacks["greedy_by_people_hurt"]["steps"]]
     for label, eq, cq in (("optimistic", "high", "low"), ("pessimistic", "low", "high")):
         st = {"steps": replay(order, eq, cq)}
-        sm = summarise(st)
+        sm = summarise(st, fill_in_order(order, eq, cq))
         stacks["greedy_by_people_hurt_" + label] = {
             "end": sm["end"], "at_budgets": sm["at_budgets"], "steps": st["steps"],
             "note": "greedy_by_people_hurt's fixes in its order, every effect at its %s value (harmful ones included) "

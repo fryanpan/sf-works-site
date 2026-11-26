@@ -40,8 +40,13 @@ PLACE CLASSES (one crash can be in several). A crash is at an intersection when 
   arterial, collector, residential   the crash's street_class (major counts as arterial).
   high_stress, low_stress   the most stressful block the crash touches is LTS 3-4, or 1-2 (crash-profiles'
                      crash_stress: at an intersection, every block meeting the node, cross street included).
+  limit35_corner     at an intersection where a block posted 35 mph or more today meets (3t7b-gebn, status L
+                     left out).
   multilane          the crash's blocks carry 2 or more lanes off-peak (the crash table's lanes column; on two-way
                      streets the layer counts one direction).
+  single_lane        the crash's blocks carry 1 lane off-peak: one lane a direction on a two-way street (2 in all) or
+                     one lane on a one-way street. The layer does not say which streets are one-way, so a one-way
+                     street with 2 or 3 lanes is left out although it has 3 lanes or fewer.
   hin, hin2022       on the 2024 (or 2022) HIN: a midblock crash on a HIN block, or a crash at an intersection whose
                      node ends a HIN block. Blocks are matched by CNN; the 2024 layer's dual-carriageway rows, whose id
                      is not a centerline CNN and whose street name is blank, take every centerline block whose midpoint
@@ -123,7 +128,7 @@ FT_PER_DEG_LAT = 364000.0
 SURFACE = ("arterial", "major", "collector", "residential")
 
 BASE = ["intersection", "midblock", "signalized", "unsignalized", "all_way_stop", "stop_controlled", "uncontrolled",
-        "arterial_corner", "arterial", "collector", "residential", "high_stress", "low_stress", "multilane", "hin",
+        "arterial_corner", "arterial", "collector", "residential", "high_stress", "low_stress", "multilane", "single_lane", "limit35_corner", "hin",
         "hin2022", "school_zone", "slow_street", "limit20", "unposted", "camera_corridor", "ltn_cell", "dark", "daylight", "dusk",
         "late_night", "evening"]
 # Crash-type tags, not places: fix-map.py spreads a lane's text share ("Driver at fault 692 of 1,137", "Sideswipes
@@ -356,11 +361,13 @@ def hin_layer(fxf, net):
     for x in r.rows:
         by.setdefault(cnn(x["cnn_sgmt_pkey"]), x)
     blocks, nodes, miles = set(), set(), 0.0
+    row_miles = {}  # matched rows only: a dual-carriageway row has no centerline CNN
     unmatched = []
     for c, x in sorted(by.items()):
         miles += float(x["corrected_length_miles"] or 0)
         if c in net.seg:
             blocks.add(c)
+            row_miles[c] = float(x["corrected_length_miles"] or 0)
             for n in (cnn(x.get("f_node_cnn_intrsctn_fkey")), cnn(x.get("t_node_cnn_intrsctn_fkey"))):
                 if n:
                     nodes.add(n)
@@ -389,7 +396,7 @@ def hin_layer(fxf, net):
                     nodes.update(n for n in (net.seg[c]["f"], net.seg[c]["t"]) if n)
                     hit = True
         dual_hit += hit
-    return {"blocks": blocks, "nodes": nodes, "miles": miles, "rows": len(by), "unmatched": len(unmatched),
+    return {"blocks": blocks, "nodes": nodes, "miles": miles, "row_miles": row_miles, "rows": len(by), "unmatched": len(unmatched),
             "dual_matched": dual_hit, "tag": r.tag, "read_on": r.fetched_on}
 
 
@@ -451,6 +458,14 @@ def compute():
     speed_src = street_sources.held("speed_limits")
     limit20 = {cnn(r.get("cnn")) for r in speed_src.rows if r.get("speedlimit") == "20" and r.get("status") != "L"}
     unposted = {cnn(r.get("cnn")) for r in speed_src.rows if r.get("speedlimit") == "0"}
+    limit_now = collections.Counter()
+    for r in speed_src.rows:
+        c = cnn(r.get("cnn"))
+        if c and r.get("status") != "L":
+            try:
+                limit_now[c] = max(limit_now[c], int(float(r.get("speedlimit") or 0)))
+            except ValueError:
+                pass
     slow_src = street_sources.held("slow_streets")
     slow = {cnn(r.get("cnn")) for r in slow_src.rows if r.get("status") == "Implemented"}
     cam_src = street_sources.held("cameras")
@@ -506,6 +521,10 @@ def compute():
             return "uncontrolled"
         return "all_way_stop" if len(f) >= len(segs) else "stop_controlled"
 
+    def limit35_node(n):
+        segs = net.corners.get(n) or [c for c in net.node_segs.get(n, ()) if c in net.surface]
+        return any(limit_now[c] >= 35 for c in segs)
+
     def near_school(lat, lon):
         dlat = SCHOOL_FT / FT_PER_DEG_LAT
         kx = FT_PER_DEG_LAT * math.cos(math.radians(lat))
@@ -539,6 +558,8 @@ def compute():
                 tags.add(k)
                 if k == "all_way_stop":
                     tags.add("stop_controlled")
+            if node and limit35_node(node):
+                tags.add("limit35_corner")
             ct = c["corner_type"] or ""
             if "arterial" in ct or "major" in ct:
                 tags.add("arterial_corner")
@@ -555,6 +576,8 @@ def compute():
         try:
             if int(c["lanes"]) >= 2:
                 tags.add("multilane")
+            elif int(c["lanes"]) == 1:
+                tags.add("single_lane")
         except ValueError:
             unread["lanes"] += 1
         for name, h in (("hin", hin24), ("hin2022", hin22)):
@@ -692,6 +715,10 @@ def compute():
                                                  "intersections an arterial or major street meets, with no signal", st_src + "; " + sig_tag, q % ("3psu-pn9h, ybh5-27n2", streets.read_on)),
         "signalized_arterial_intersections": u(sum(1 for n in art_corner if node_class(n) == "signalized"),
                                                "intersections an arterial or major street meets, with a signal", st_src + "; " + sig_tag, q % ("3psu-pn9h, ybh5-27n2", streets.read_on)),
+        "signalized_limit35_intersections": u(
+            sum(1 for n in corners if node_class(n) == "signalized" and limit35_node(n)),
+            "intersections with a signal where a block posted 35 mph or more meets (3t7b-gebn today, status L left out)",
+            sig_tag + "; DataSF 3t7b-gebn", q % ("ybh5-27n2, 3t7b-gebn", speed_src.read_on)),
         "stop_controlled_intersections": u(ctrl["all_way_stop"] + ctrl["stop_controlled"], "unsignalized intersections with at least one stop sign", stop_tag, q % ("4542-gpa3", stops.fetched_on)),
         "arterial_intersections": u(len(art_corner), "intersections an arterial or major street meets (nodes; %d with a divided street's two crossings counted once)" % art_once, st_src, q % ("3psu-pn9h", streets.read_on)),
         "all_way_stops": u(ctrl["all_way_stop"], "unsignalized intersections whose stop signs face every block meeting there (a floor: one-way streets miss)", stop_tag, q % ("4542-gpa3", stops.fetched_on)),
@@ -701,6 +728,10 @@ def compute():
         "hin_corners": u(hin_c_once["all"], "intersections at an end of a 2024 HIN block, a divided street's two crossings counted once (%d nodes)" % len(hin_c), "DataSF enwt-3u8m, 3psu-pn9h", hin24["tag"]),
         "hin_signalized_corners": u(hin_c_once["signalized"], "2024 HIN corners with a signal, counted once (%d nodes)" % len(hin_c & signal_nodes), "DataSF enwt-3u8m, ybh5-27n2", hin24["tag"]),
         "hin_unsignalized_corners": u(hin_c_once["unsignalized"], "2024 HIN corners with no signal, counted once (%d nodes)" % len(hin_c - signal_nodes), "DataSF enwt-3u8m, ybh5-27n2", hin24["tag"]),
+        "hin_single_lane_miles": u(sum(m for c, m in hin24["row_miles"].items() if lanes.get(c, 0) == 1),
+                                   "corrected_length_miles over the 2024 HIN's blocks with 1 off-peak lane (SFMTA MTA.CTA_trafficlanes LANES_OP: one a direction on a two-way street, one on a one-way street); dual-carriageway rows left out",
+                                   "DataSF enwt-3u8m; SFMTA MTA.CTA_trafficlanes read %s" % lanes_layer.get("read_on"),
+                                   hin24["tag"] + " [inference — mine]"),
         "hin2022_miles": u(hin22["miles"], "sum of corrected_length_miles over the 2022 HIN's blocks", "DataSF 8vtn-qytr", hin22["tag"]),
         "arterial_miles": u(miles["arterial"], "arterial and major street miles (classcode 2, 3), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),
         "collector_miles": u(miles["collector"], "collector street miles (classcode 4), a divided street counted once", st_src, q % ("3psu-pn9h", streets.read_on)),

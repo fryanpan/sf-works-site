@@ -570,7 +570,7 @@
     {
      "group": "vehicles only | unsafe speed",
      "mechanism": "Mean speed falls along the full length, so the speeding crash is cut wherever it happens on the street.",
-     "target_share": "collector and arterial streets with one to three lanes; on arterial and major streets 1,823 of 4,611 people hurt (120 of 298 KSI); collectors another 1,382 (74), from family_stress by_street_class",
+     "target_share": "HIN blocks with one lane a direction or one lane one way, the roads with 1 to 3 lanes §4.16 covers (reach.json); on arterial and major streets 1,823 of 4,611 people hurt (120 of 298 KSI); collectors another 1,382 (74), from family_stress by_street_class",
      "effect": {
       "low": 0,
       "mid": 29,

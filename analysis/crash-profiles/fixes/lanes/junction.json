@@ -113,13 +113,13 @@
      "group": "vehicles only | red light",
      "movement": "going straight",
      "mechanism": "Gives late entrants time to clear, removing the broadside with the first cross-traffic vehicle.",
-     "target_share": "Going-straight red-light share 2,670 of 2,982 people hurt (pairs_within_mode); reachable at every signal, not just camera sites",
+     "target_share": "Going-straight red-light share 2,670 of 2,982 people hurt (pairs_within_mode); placed at signals where a street posted 35 mph or more meets, the few where approach speeds are highest (reach.json)",
      "effect": {
       "low": -10,
       "mid": -14,
       "high": -20,
       "unit": "% change in crashes",
-      "applies_to": "Low: crashes and injuries at the few Danish junctions where clearance needs adjusting (handbook says most do not). Mid: injury crashes, CMF 0.86 (Srinivasan 2011). High: all crashes, CMF 0.80",
+      "applies_to": "Low: crashes and injuries at the few Danish junctions where clearance needs adjusting (the handbook says most do not). Mid: injury crashes, CMF 0.86 (Srinivasan 2011). High: all crashes, CMF 0.80. Applied only at signals where a street posted 35 mph or more meets",
       "source": "Vejdirektoratet Effekthåndbog 2023 §5.7 (about -10%); CMF Clearinghouse 4211 and 4212 via red-light note",
       "tag": "[primary — read 2026-11-25]"
      }
@@ -152,7 +152,7 @@
    "sf_now": "SF ran 4.0 second yellows at 25 mph against a 3.6 second state minimum in 2019; current all-red times by signal are not published [primary — read 2026-11-20, per red-light note]",
    "sf_evidence": "None: the signal inventory (DataSF ybh5-27n2) has no timing dates, so no before and after test is possible.",
    "who_decides": "SFMTA traffic signal engineers [model knowledge — verify]",
-   "evidence_grade": "moderate: US empirical Bayes CMFs rated 3 to 4 stars and a Danish handbook value, but the Danish authors say the gain is limited to junctions with poorly set clearance",
+   "evidence_grade": "moderate: US empirical Bayes CMFs rated 3 to 4 stars and a Danish handbook value, but the Danish authors say the gain is limited to a few junctions, so the tool places it only at signals on streets posted 35 mph or more",
    "sources": [
     {
      "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
@@ -739,13 +739,13 @@
      "mechanism": "Drivers who would run the stop must slow to get round the island, so broadsides are rarer and slower.",
      "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI; 688 of the group's 1,323 people hurt were on residential streets (family_stress)",
      "effect": {
-      "low": 74,
-      "mid": -46,
-      "high": -61,
+      "low": 0,
+      "mid": 0,
+      "high": -46,
       "unit": "% change in fatal and injury crashes",
-      "applies_to": "Low (worse): all-way stop to mini-roundabout, KABC CMF 1.74 (Mishra 2022, 3 stars, 35 mph+ roads). Mid: multi-vehicle KABC crashes, all-way stop to mini-roundabout, urban and suburban, CMF 0.54 (Avelar 2023, 3 stars). High: two-way stop to mini-roundabout, KABC 0.39 (Mishra). Vancouver local circles: car-only injury crashes RR 0.53 against nearby intersections. The Danish handbook says urban mini-roundabouts 'mostly' bring no substantial reduction",
-      "source": "CMF Clearinghouse 11241, 11244, 11538; Teschke 2018 via traffic circles note; Vejdirektoratet §5.5",
-      "tag": "[primary — read 2026-11-25]"
+      "applies_to": "Low and mid: the Danish handbook's urban finding, that rebuilding urban junctions as mini-roundabouts or single-lane roundabouts 'most often' gives no substantial fall in crashes and injuries (§5.5, no number given, read as 0%). High: multi-vehicle KABC crashes, all-way stop to mini-roundabout, urban and suburban, CMF 0.54 (Avelar 2023, 3 stars). Other studies range from KABC CMF 1.74 (Mishra 2022, 3 stars, 35 mph+ roads) to 0.39 (two-way stop to mini-roundabout, Mishra)",
+      "source": "Vejdirektoratet §5.5; CMF Clearinghouse 11538, 11244, 11241",
+      "tag": "[primary — read 2026-11-26]"
      }
     },
     {
@@ -791,7 +791,7 @@
    "sf_now": "36 circles in SFMTA's intersection layer, no costs listed (traffic circles note)",
    "sf_evidence": "None.",
    "who_decides": "SFMTA traffic calming program; Fire Department review of turning paths [model knowledge — verify]",
-   "evidence_grade": "low: studies disagree in sign (Mishra against Avelar on all-way stops), most are on faster US roads, and the cyclist harm is large and consistent in Vancouver",
+   "evidence_grade": "low: the Danish handbook finds urban mini-roundabouts mostly give no substantial reduction, US and Vancouver studies disagree in sign, and the cyclist harm is large and consistent in Vancouver",
    "sources": [
     {
      "title": "FHWA CMF Clearinghouse, CMF 11538: all-way stop to mini roundabout, multi-vehicle KABC 0.5422, 3 stars",
@@ -842,12 +842,12 @@
      "mechanism": "Through drivers on the main street also stop, so a driver who runs or misjudges the side-street stop meets slow traffic.",
      "target_share": "Going straight 989 of 1,323 people hurt, 37 of 53 KSI; only corners now two-way stop",
      "effect": {
-      "low": -30,
+      "low": -50,
       "mid": -70,
       "high": -75,
       "unit": "% change",
-      "applies_to": "Mid: injury crashes, urban, CMF 0.30 (Lovell and Hauer 1986, 4 stars). High: angle crashes 0.25. Low: Danish handbook -30% crashes and injuries for adding stop (stoppligt) where drivers had only to yield, a related but different change. LRSM NS02 CRF 50%",
-      "source": "CMF Clearinghouse 310, 314; Vejdirektoratet §5.8; Caltrans LRSM NS02",
+      "applies_to": "Low: all crashes, Caltrans LRSM NS02 CRF 50% for converting two-way or yield control to all-way stop. Mid: injury crashes, urban, CMF 0.30 (Lovell and Hauer 1986, 4 stars). High: angle crashes 0.25 (CMF 310, 4 stars)",
+      "source": "CMF Clearinghouse 310, 314; Caltrans LRSM NS02",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -857,11 +857,11 @@
      "mechanism": "Removes the uncontrolled or yield crossing where drivers misjudge right of way.",
      "target_share": "Going straight 886 of 3,119 people hurt; left or U-turn 1,814 at unsignalized corners only",
      "effect": {
-      "low": -30,
+      "low": -50,
       "mid": -50,
       "high": -70,
       "unit": "% change in crashes",
-      "applies_to": "All crashes in the influence area (LRSM 50%); injury crashes (CMF 314, 0.30)",
+      "applies_to": "Low and mid: all crashes in the influence area, LRSM NS02 CRF 50% (two-way or yield to all-way stop); high: injury crashes (CMF 314, 0.30)",
       "source": "Caltrans LRSM NS02; CMF 314",
       "tag": "[primary — read 2026-11-25]"
      }
@@ -880,7 +880,7 @@
    "sf_now": "All-way stops are common in SF residential grids [model knowledge — verify]; count not retrieved",
    "sf_evidence": "None.",
    "who_decides": "SFMTA City Traffic Engineer and Board after a public hearing; LRSM requires the CA-MUTCD warrant for HSIP funding [primary — read 2026-11-25]",
-   "evidence_grade": "moderate: a 4-star 1986 urban study and a Danish handbook value agree in direction; old data and the MUTCD warrant limit where it applies",
+   "evidence_grade": "moderate: a 4-star 1986 urban study (CMF 310, 314) and Caltrans' adopted value for the same conversion (LRSM NS02) agree in direction; old data and the MUTCD warrant limit where it applies",
    "sources": [
     {
      "title": "FHWA CMF Clearinghouse, CMF 310: convert minor-road stop to all-way stop, angle 0.25, 4 stars",
@@ -890,11 +890,6 @@
     {
      "title": "FHWA CMF Clearinghouse, CMF 314: same, injury crashes 0.30, 4 stars",
      "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=314",
-     "tag": "[primary — read 2026-11-25]"
-    },
-    {
-     "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
-     "url": "https://albertslund.dk/media/2qud31w3/vejdirektoratet_2023b_effekthaandbog-trafiksikkerhed-og-vejtekniske-virkemidler.pdf",
      "tag": "[primary — read 2026-11-25]"
     },
     {
@@ -1038,13 +1033,13 @@
      "mechanism": "Fewer drivers are forced to choose between hard braking and entering on red.",
      "target_share": "Going straight 2,670 of 2,982 people hurt",
      "effect": {
-      "low": -5,
-      "mid": -20,
-      "high": -35,
-      "unit": "% change in crashes and injured people",
-      "applies_to": "Fixed-time to traffic-responsive control, Danish handbook (range 5% to 35% abroad, 20% expected); Trafikverket: modern control with an accident-reduction function against older signals cut KSI 13% in city centres. Dilemma-zone extension alone has no separate number",
-      "source": "Vejdirektoratet §5.7; Trafikverket 2026 Table 44",
-      "tag": "[primary — read 2026-11-25]"
+      "low": -8,
+      "mid": -13,
+      "high": null,
+      "unit": "% change in killed and seriously injured people",
+      "applies_to": "Modern signal control with the O (accident reduction) function, which holds the green for vehicles in the dilemma zone, against an older signal, in a city-centre setting: killed -8%, seriously injured -13% (Trafikverket Table 44). Measured at isolated signals; SF's arterial signals are mostly coordinated [model knowledge — verify]. The Danish handbook describes detection but gives it no number (§5.7). CMF Clearinghouse values are from approaches posted 55 mph or more (CMF 12096, 12097) and are not used",
+      "source": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, Table 44; Vejdirektoratet §5.7; CMF Clearinghouse 12096, 12097",
+      "tag": "[primary — read 2026-11-26]"
      }
     }
    ],
@@ -1061,7 +1056,7 @@
    "sf_now": "SF signals are largely fixed-time in a dense grid [model knowledge — verify]",
    "sf_evidence": "None.",
    "who_decides": "SFMTA [model knowledge — verify]",
-   "evidence_grade": "low: wide range across foreign studies; fixed-time grids with many pedestrians may gain less",
+   "evidence_grade": "low: one Swedish model value for city-centre signals, on killed and seriously injured people only, from isolated signals; the US crash studies are on high-speed approaches",
    "sources": [
     {
      "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd ed. 2023",
@@ -1072,6 +1067,11 @@
      "title": "Trafikverket, Normalvärden och förbättringsåtgärder trafiksäkerhet, 2026",
      "url": "https://bransch.trafikverket.se/contentassets/6172806b6959485d895374173243047f/2026/normalvarden-och-forbattringsatgarder-trafiksakerhet.pdf",
      "tag": "[primary — read 2026-11-25]"
+    },
+    {
+     "title": "FHWA CMF Clearinghouse, CMF 12096 and 12097: continuous wide-area sensor dilemma zone protection, Alabama, 55 to 65 mph, 4 stars",
+     "url": "https://cmfclearinghouse.fhwa.dot.gov/detail.php?facid=12096",
+     "tag": "[primary — read 2026-11-26]"
     }
    ]
   },

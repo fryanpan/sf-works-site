@@ -912,13 +912,13 @@
      "mechanism": "Replaces the right-angle broadside at a stop-controlled junction with low-speed merges.",
      "target_share": "Broadside collisions 177 of 241 people hurt (12 KSI) [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25] [inference — mine: at-fault party, place and weight splits computed this session with analysis/crash-profiles/crash-profiles.py's own grouping functions]",
      "effect": {
-      "low": null,
-      "mid": -30,
-      "high": null,
-      "unit": "% change in all crashes (urban), from a 44-evaluation meta-analysis; -47% injury crashes in all settings",
-      "applies_to": "All road users; the handbook warns roundabouts often make cyclists less safe unless they ride a separate path outside the circle, and advises against painted bike lanes in the circle",
-      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.5, p. 84 to 86",
-      "tag": "[primary — read 2026-11-25]"
+      "low": 0,
+      "mid": -20,
+      "high": -30,
+      "unit": "% change in people hurt, urban junctions rebuilt as roundabouts",
+      "applies_to": "Mid: people hurt -20% at all urban junctions, the handbook's adopted urban table (all crashes -5%, injury crashes -10%). Low: three-leg yield junctions, people hurt 0%. High: four-leg yield junctions, people hurt -30%. All road users; the handbook says roundabouts often make cyclists less safe unless they ride a separate path outside the circle, and advises against painted bike lanes in the circle",
+      "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.5, urban table p. 85",
+      "tag": "[primary — read 2026-11-26]"
      }
     }
    ],
@@ -935,7 +935,7 @@
    "sf_now": "[unretrieved — verify] SF traffic circles on residential streets.",
    "sf_evidence": null,
    "who_decides": "SFMTA; Public Works; SFFD reviews.",
-   "evidence_grade": "low for bicyclists: strong for all crashes, but the bike-specific direction depends on design and no bike-specific number was opened.",
+   "evidence_grade": "low for bicyclists: the handbook's urban table pools all road users, and the bike-specific direction depends on the separate path, for which no bike-specific number was opened.",
    "sources": [
     {
      "title": "Vejdirektoratet, Effekthåndbog: Trafiksikkerhed og vejtekniske virkemidler, 3rd edition, 2023",
@@ -1276,13 +1276,13 @@
      "mechanism": "Traffic-actuated signals that detect demand cut needless red time.",
      "target_share": "Same reach",
      "effect": {
-      "low": -35,
-      "mid": -20,
-      "high": -5,
+      "low": null,
+      "mid": null,
+      "high": null,
       "unit": "% change in crashes and injuries",
-      "applies_to": "Switching a junction from fixed-time to traffic-actuated control, all road users",
+      "applies_to": "Switching a junction from fixed-time to traffic-actuated control (§5.7, -20%) is a different change from retiming, so it is not applied to this fix",
       "source": "Vejdirektoratet, Effekthåndbog 2023, section 5.7, p. 92",
-      "tag": "[primary — read 2026-11-25]"
+      "tag": "[primary — read 2026-11-26]"
      }
     }
    ],

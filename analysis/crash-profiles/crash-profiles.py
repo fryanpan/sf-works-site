@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """A first-cut LADOT-style crash profile analysis for San Francisco, read off the crash-augment tables.
 
-    python3 analysis/crash-profiles/crash-profiles.py                  # 2017-2024, writes out/crash-augment/profiles/results.json
-    python3 analysis/crash-profiles/crash-profiles.py --years 2018 2024
+    python3 analysis/crash-profiles/crash-profiles.py                  # YEARS (2018-2025), writes out/crash-augment/profiles/results.json
+    python3 analysis/crash-profiles/crash-profiles.py --years 2019 2025
 
 It reads out/crash-augment/tables/{crashes,parties,victims}.csv (built by pipeline/crash-augment/crash-augment.py)
 and the street lane's held copies of the street centerlines (3psu-pn9h) and signals (ybh5-27n2), taken through
@@ -33,7 +33,7 @@ LEVEL 2. Each profile is split by the finer fields in SPLITS. A split is flagged
   categories by a chi-square test of homogeneity at ALPHA / (profiles x splits); the doc decides which flagged splits
   point at a different fix.
 
-YEAR WINDOWS. Each profile's rate is given again for 2017-2019 and 2020-2024 alone, and each mode's crashes by
+YEAR WINDOWS. Each profile's rate is given again for the years before 2020 and for 2020 on, alone, and each mode's crashes by
   year and severity, because reported minor-injury crashes fell in 2020 while KSI crashes did not, which raises
   every severity rate after 2020.
 
@@ -78,18 +78,23 @@ SIZE BY FAMILY. size_families groups crashes by mode x violation family, VIOLATI
   vz_pcf_group is blank or Unknown, vz_pcf_code is read if it holds a section number. Each family carries its people
   by movement (MOVEMENT_FINE, which names Ran Off Road), so the movement that points at a fix stays on the bar.
   size_families.chart is the union of the FAMILY_TOP biggest families by people hurt and by KSI people, then one row
-  over every other crash; pairs_within_mode is mode x movement x family for the drill-down.
+  over every other crash; pairs_within_mode is mode x movement x family for the drill-down. The violation is the
+  crash's primary collision factor, which the police assign to the party at fault, so each family also carries its
+  people by the at-fault party's party_type (by_at_fault_party_type: Driver, Pedestrian, Bicyclist, Parked Vehicle,
+  Other), which says whose violation it was.
 
 FAMILY STRESS. family_stress splits the FAMILY_STRESS_TOP biggest families by people hurt by the bike level of
   traffic stress of the crash (crash_stress, as in TRAFFIC STRESS: high is LTS 3 or 4, low 1 or 2) and by street
   class, with the high-stress share among crashes placed on one block as the check on the intersection lean.
 
-GROUPING ALTERNATIVES. grouping_alternatives scores seven more groupings the way other_breakdown.regroupings does,
-  each with its top CHART_BARS bars and the remainder: victim role x age band and victim role x violation family
+GROUPING ALTERNATIVES. grouping_alternatives scores the groupings in GROUPINGS the way other_breakdown.regroupings
+  does, each with its top CHART_BARS bars and the remainder: victim role x age band and victim role x violation family
   (counted per person, victims rows with any injury; an age outside 1 to 109 is not stated); traffic stress x street
   class x intersection or midblock; mode x time band x weekday or weekend (the commute and midday bands are weekday by
   definition, so the split adds only evening and late night); vehicle-only crashes by crash type beside pedestrian and
-  bike crashes by violation family, alone and with the turn direction; and mode x violation family x traffic stress.
+  bike crashes by violation family, alone and with the turn direction; mode x violation family x traffic stress; and
+  the crash's posted speed limit, number of lanes, light, Equity Priority Community and heaviest vehicle weight band,
+  each alone. fix-groups.py counts every fix's people avoided over the same groupings.
 
 TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block rule) are looked up in SFMTA's 2023
   draft Bike Comfort Index layer as the repo holds it (data/extract/sfmta-bci/scores.json, BCI_SCORES): the bike level
@@ -99,7 +104,7 @@ TRAFFIC STRESS. Each crash's blocks (street_block_cnns, the street lane's block 
   heaviest). People hurt and KSI people by each, for all crashes and by mode, against each
   value's share of active surface street miles (3psu-pn9h blocks by CNN; freeways, ramps and class 0 left out).
   High stress is LTS 3 or 4. The traffic category read here is checked against the crash table's own
-  bci_traffic_category column, which came from the same layer. The layer is today's, so this pools 2017-2024. Miles
+  bci_traffic_category column, which came from the same layer. The layer is today's, so this pools every year. Miles
   are the only denominator: there is no residents' or traffic-volume one, and most people are hurt at intersections,
   so high_stress_by_block_join gives the share among crashes coded to one block, and high_stress_by_street_class the
   share within each street class, since LTS 4 is nearly every arterial and major block.
@@ -124,6 +129,9 @@ from street_geo import line_coords  # noqa: E402
 import street_sources  # noqa: E402
 
 csv.field_size_limit(1 << 24)
+# The collision years every figure counts, first and last. A yearly average is a count over the years in this range;
+# fix-reach.py, fix-map.py, fix-groups.py and fix-explorer.py read the range from results.json, so it is set only here.
+YEARS = (2018, 2025)
 MIN_INJURY_CRASHES = 100
 ALPHA = 0.05
 KSI_CRASH = {"Fatal", "Injury (Severe)"}
@@ -478,14 +486,9 @@ def crash_stress(blocks, bci):
 
 # ---- analysis ------------------------------------------------------------------------------------------------
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--years", nargs=2, type=int, default=[2017, 2024])
-    ap.add_argument("--out", default=OUT)
-    a = ap.parse_args()
-    y0, y1 = a.years
-    crashes, parties, victims = load(y0, y1)
-
+def crash_records(crashes, parties, victims, bci):
+    """One record per crash with every field the analysis groups by: (records, how the at-fault party was found,
+    pedestrian victims by crash). fix-groups.py reads crashes through this too, so its groupings are these."""
     ksi_people = collections.Counter()
     hurt_people = collections.Counter()
     hurt_roles = collections.defaultdict(collections.Counter)
@@ -502,8 +505,6 @@ def main():
         if v["victim_role"] == "Pedestrian":
             ped_victims[v["case_id_pkey"]].append(v)
 
-    bci, bci_read_on = bci_blocks()
-
     # one record per crash with every field the analysis groups by
     recs, how = [], collections.Counter()
     for cid, c in crashes.items():
@@ -519,6 +520,8 @@ def main():
         lts, bci_score, traffic = crash_stress([b for b in c["street_block_cnns"].split(";") if b], bci)
         recs.append({
             "case": cid,
+            "at-fault party type": (af["party_type"] or "not stated") if af is not None else "no party",
+            "weekend": c["day_of_week"] in WEEKEND,
             "year": int(c["collision_datetime"][:4]),
             "ksi": c["collision_severity"] in KSI_CRASH,
             "people": ksi_people[cid],
@@ -558,6 +561,76 @@ def main():
                                                    "bci_traffic_category", "in_epc", "signal_present",
                                                    "painted_safety_zone", "traffic_calming")},
         })
+
+    return recs, how, ped_victims
+
+
+def stress_band(r):
+    lts = r["bike traffic stress (LTS)"]
+    return "high (LTS 3-4)" if lts in HIGH_STRESS else ("low (LTS 1-2)" if lts in ("1", "2") else "unknown")
+
+
+STRESS_BANDS = ("high (LTS 3-4)", "low (LTS 1-2)", "unknown")
+
+
+def age_band(v):
+    a = int(v) if v.lstrip("-").isdigit() else 0
+    return "age not stated" if not 0 < a < 110 else ("child under 18" if a < 18 else
+                                                     ("adult 18 to 64" if a < 65 else "65 and over"))
+
+
+ROLE = {"Pedestrian": "pedestrian", "Bicyclist": "bicyclist", "Driver": "driver", "Passenger": "passenger",
+        "Other": "scooter or other"}
+
+
+def role_of(v):
+    return ROLE.get(v["victim_role"], "role not stated")
+
+
+def turn(r):
+    m = r["movement (fine)"]
+    return {"going straight": "going straight", "left or U-turn": "left or U-turn",
+            "right turn": "right turn"}.get(m, "other movement" if m != OTHER_MOVE else OTHER_MOVE)
+
+
+# Values that name no kind of crash or person, for the catch-all scores.
+STATED = ("not stated", "unknown", "other", "Other", "Not Stated", OTHER_MOVE, "age not stated", "time not stated",
+          "role not stated", "0 (layer gap)")
+
+# The ways to group everyone hurt, beside size_families' mode x violation family: (id, name, unit, key). A crash
+# grouping's key reads a crash record; a person grouping's key reads a victims row and its crash record. fix-groups.py
+# counts every fix's people avoided over each of these, so a new grouping here reaches the fix explorer.
+GROUPINGS = [
+    ("who", "who was hurt: victim role x age band", "person", lambda v, r: (role_of(v), age_band(v["victim_age"]))),
+    ("place", "place: traffic stress x street class x intersection or midblock", "crash",
+     lambda r: (stress_band(r), r["street class"], r["at intersection"])),
+    ("time", "time: mode x time band x weekday or weekend", "crash",
+     lambda r: (r["mode"], r["time"], "weekend" if r["weekend"] else "weekday")),
+    ("hybrid", "hybrid: vehicles only by crash type, pedestrian and bike by violation family", "crash",
+     lambda r: (r["mode"], r["collision type"] if r["mode"] == "vehicles only" else r["violation (fine)"])),
+    ("who_what", "who and what: victim role x violation family", "person", lambda v, r: (role_of(v), r["violation (fine)"])),
+    ("hybrid_turn", "hybrid with movement: vehicles by crash type, pedestrian and bike by violation family x turn", "crash",
+     lambda r: (r["mode"],) + ((r["collision type"],) if r["mode"] == "vehicles only" else (r["violation (fine)"], turn(r)))),
+    ("what_where", "what and where: mode x violation family x traffic stress", "crash",
+     lambda r: (r["mode"], r["violation (fine)"], stress_band(r))),
+    ("speed_limit", "speed limit: posted speed limit of the crash's street", "crash", lambda r: (r["posted limit"],)),
+    ("lanes", "lanes: number of lanes on the crash's street", "crash", lambda r: (r["lanes"],)),
+    ("light", "light: daylight, dusk or dawn, or dark", "crash", lambda r: (r["light"],)),
+    ("epc", "equity: in an Equity Priority Community", "crash", lambda r: (r["EPC"],)),
+    ("weight", "vehicle weight: the heaviest vehicle's weight band", "crash", lambda r: (r["heaviest vehicle weight"],)),
+]
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--years", nargs=2, type=int, default=list(YEARS))
+    ap.add_argument("--out", default=OUT)
+    a = ap.parse_args()
+    y0, y1 = a.years
+    crashes, parties, victims = load(y0, y1)
+
+    bci, bci_read_on = bci_blocks()
+    recs, how, ped_victims = crash_records(crashes, parties, victims, bci)
 
     N = len(recs)
     K = sum(r["ksi"] for r in recs)
@@ -625,9 +698,9 @@ def main():
         within_mode.append(t)
     within_mode.sort(key=lambda t: (t["mode"], not t["profile"], -t["ksi_people"]))
 
-    # Year windows: each profile again in 2017-2019 and 2020-2024 alone, against its mode's rate in that window, with
-    # the uncorrected p and the p corrected over the same number of cells as the pooled test.
-    WINDOWS = [(w0, w1) for w0, w1 in ((2017, 2019), (2020, 2024)) if y0 <= w0 and w1 <= y1]
+    # Year windows: each profile again before 2020 and from 2020 on, alone, against its mode's rate in that window,
+    # with the uncorrected p and the p corrected over the same number of cells as the pooled test.
+    WINDOWS = [(y0, 2019), (2020, y1)] if y0 <= 2019 < y1 else []
 
     def by_window(prof, base_of):
         out = []
@@ -1092,9 +1165,16 @@ def main():
                       key=lambda t: (-t["people_injured"], -t["ksi_people"], t["movement"]))
     g_fam = grouped([r for r in recs if r["mode"] != "not stated"], lambda r: (r["mode"], r["violation (fine)"]))
     families = size_list(g_fam, ("mode", "violation"))
+    def by_at_fault(rs):
+        hurt, ksi = collections.Counter(), collections.Counter()
+        for r in rs:
+            hurt[r["at-fault party type"]] += r["injured"]
+            ksi[r["at-fault party type"]] += r["people"]
+        return {"people_injured": dict(sorted(hurt.items())), "ksi_people": dict(sorted(ksi.items()))}
     for t in families:
         t["catch_all"] = t["violation"] in CATCH_ALL
         t["by_movement"] = by_movement(g_fam[(t["mode"], t["violation"])])
+        t["by_at_fault_party_type"] = by_at_fault(g_fam[(t["mode"], t["violation"])])
     fam_shown = {(t["mode"], t["violation"]) for t in families[:FAMILY_TOP]} | {
         (t["mode"], t["violation"])
         for t in sorted(families, key=lambda t: (-t["ksi_people"], t["mode"], t["violation"]))[:FAMILY_TOP]}
@@ -1120,10 +1200,6 @@ def main():
 
     # Family by traffic stress: the biggest families' people hurt and KSI people by the crash's bike level of traffic
     # stress (crash_stress, the same rule as traffic_stress) and by street class.
-    def stress_band(r):
-        lts = r["bike traffic stress (LTS)"]
-        return "high (LTS 3-4)" if lts in HIGH_STRESS else ("low (LTS 1-2)" if lts in ("1", "2") else "unknown")
-    STRESS_BANDS = ("high (LTS 3-4)", "low (LTS 1-2)", "unknown")
 
     def stress_split(rs):
         bands = {b: {"people_injured": sum(r["injured"] for r in rs if stress_band(r) == b),
@@ -1186,39 +1262,14 @@ def main():
                               "share_of_ksi_people": round(p / P, 4)} for k, (h, p) in top],
                 "remainder": {"people_injured": remainder, "ksi_people": P - sum(p for _, (_h, p) in top)}}
 
-    def age_band(v):
-        a = int(v) if v.lstrip("-").isdigit() else 0
-        return "age not stated" if not 0 < a < 110 else ("child under 18" if a < 18 else
-                                                         ("adult 18 to 64" if a < 65 else "65 and over"))
-    ROLE = {"Pedestrian": "pedestrian", "Bicyclist": "bicyclist", "Driver": "driver", "Passenger": "passenger",
-            "Other": "scooter or other"}
     rec_of = {r["case"]: r for r in recs}
     persons = [(v, rec_of[v["case_id_pkey"]]) for v in victims
                if v["victim_degree_of_injury"] not in NOT_HURT and v["case_id_pkey"] in rec_of]
-    person = lambda key: [(key(v, r), 1, int(v["victim_degree_of_injury"] in KSI_PERSON)) for v, r in persons]  # noqa: E731
-    crash = lambda key: [(key(r), r["injured"], r["people"]) for r in recs]  # noqa: E731
-    family = lambda r: r["violation (fine)"]  # noqa: E731
-    turn = lambda r: {"going straight": "going straight", "left or U-turn": "left or U-turn",  # noqa: E731
-                      "right turn": "right turn"}.get(r["movement (fine)"], "other movement"
-                                                      if r["movement (fine)"] != OTHER_MOVE else OTHER_MOVE)
-    STATED = ("not stated", "unknown", "other", "Other", "Not Stated", OTHER_MOVE, "age not stated", "time not stated",
-              "role not stated")
-    ALTERNATIVES = [
-        ("who was hurt: victim role x age band", "person",
-         person(lambda v, r: (ROLE.get(v["victim_role"], "role not stated"), age_band(v["victim_age"])))),
-        ("place: traffic stress x street class x intersection or midblock", "crash",
-         crash(lambda r: (stress_band(r), r["street class"], r["at intersection"]))),
-        ("time: mode x time band x weekday or weekend", "crash",
-         crash(lambda r: (r["mode"], r["time"], "weekend" if crashes[r["case"]]["day_of_week"] in WEEKEND else "weekday"))),
-        ("hybrid: vehicles only by crash type, pedestrian and bike by violation family", "crash",
-         crash(lambda r: (r["mode"], r["collision type"] if r["mode"] == "vehicles only" else family(r)))),
-        ("who and what: victim role x violation family", "person",
-         person(lambda v, r: (ROLE.get(v["victim_role"], "role not stated"), family(r)))),
-        ("hybrid with movement: vehicles by crash type, pedestrian and bike by violation family x turn", "crash",
-         crash(lambda r: (r["mode"],) + ((r["collision type"],) if r["mode"] == "vehicles only" else (family(r), turn(r))))),
-        ("what and where: mode x violation family x traffic stress", "crash",
-         crash(lambda r: (r["mode"], family(r), stress_band(r)))),
-    ]
+
+    def items_of(unit, key):
+        if unit == "person":
+            return [(key(v, r), 1, int(v["victim_degree_of_injury"] in KSI_PERSON)) for v, r in persons]
+        return [(key(r), r["injured"], r["people"]) for r in recs]
     grouping_alternatives = {
         "about": "other groupings of everyone hurt, scored as in other_breakdown.regroupings, each with its top "
                  "CHART_BARS bars. A person grouping counts victims rows with any injury (age outside 1 to 109 is not "
@@ -1226,7 +1277,7 @@ def main():
                  "Other, Not Stated, the movement and time not-stated values; victim role Other is named as scooter or other",
         "chart_bars": CHART_BARS,
         "recommended_for_comparison": regroup(("mode", "violation (fine)")),
-        "groupings": [dict(compare(items, set(STATED)), name=n, unit=u) for n, u, items in ALTERNATIVES],
+        "groupings": [dict(compare(items_of(u, key), set(STATED)), id=gid, name=n, unit=u) for gid, n, u, key in GROUPINGS],
     }
 
     # Data quality facts the doc reports

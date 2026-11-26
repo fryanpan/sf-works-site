@@ -1,39 +1,49 @@
 #!/usr/bin/env python3
 """Build the crash fix explorer, one self-contained HTML page of SF crash groups, the fixes mapped to them, their cost per person hurt avoided and stacked packages.
 
-Reads out/crash-augment/profiles/fix-map.json, fix-reach.json and results.json
-(written by fix-map.py, fix-reach.py and crash-profiles.py) and writes
+Reads out/crash-augment/profiles/fix-map.json, fix-groups.json, fix-reach.json
+and results.json (written by fix-map.py, fix-groups.py, fix-reach.py and
+crash-profiles.py) and writes
 out/crash-augment/profiles/fix-explorer.html with the data inlined as JSON and
 plain SVG and HTML for the charts, so it opens with no network.
 
     python3 analysis/crash-profiles/fix-explorer.py [--profiles DIR] [--out FILE]
 
---profiles names the folder holding the three inputs (default this repo's
+--profiles names the folder holding the four inputs (default this repo's
 out/crash-augment/profiles), so the page can be rebuilt on revised numbers.
 
 The three stacks come from fix-map.json's stacks (area_wide_only,
 corner_and_corridor_only, area_wide_and_corner_corridor), which carry the mid
 only. The low and high band is recounted here in the same order with the same
 sequential rule (remaining = product of 1 - share x r within each of the 45
-mode x family groups), from each fix's used family pairs, with its "all other
-families" entry spread over the families it does not map itself and placed by
-fix-reach.json where reach.json places the fix. The recount must reproduce
+mode x family groups), from each fix's stack_terms in fix-map.json. The recount must reproduce
 fix-map.json's mid at every step to 0.05 people and 0.005 KSI people, or the
 script stops: a band that does not match the line it surrounds would be wrong.
+
+The Crash Groups view offers every grouping in fix-groups.json. A grouping with
+more than GROUP_ROWS + 1 groups shows its GROUP_ROWS biggest named groups (no
+catch-all value) and one row over the rest, so the rows add to everyone hurt.
+A row's fixes are the people each fix avoids in that row's crashes, as
+fix-groups.py spreads them crash by crash, so a fix's rows in any grouping add
+to its total. The years and the yearly average come from results.json.
 
 Standard library only. A second run on the same inputs writes the same bytes.
 """
 
 import argparse
 import json
+import math
 import os
 import re
 import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DEFAULT_PROFILES = os.path.join(ROOT, "out", "crash-augment", "profiles")
-REACH_CFG = os.path.join(ROOT, "analysis", "crash-profiles", "fixes", "reach.json")
-YEARS = 8
+YEARS = None  # the number of collision years in results.json, set in build()
+CATCH = {"not stated", "unknown", "other", "Other", "Not Stated", "not stated or other", "age not stated",
+         "time not stated", "role not stated", "0 (layer gap)"}
+GROUP_ROWS = 12  # named groups shown per grouping before the "All other" row
+MIN_SHOWN = (0.05, 0.005)  # a fix is listed on a row when it avoids this many people hurt or KSI people a year there
 
 STACKS = [
     ("area", "area_wide_only", "Area-wide only"),
@@ -52,12 +62,60 @@ LEVERS = [
     ("transit and land use", "Transit and Land Use"),
     ("policy and law", "Policy"),
 ]
-MODES = {"vehicles only": "Vehicles only", "pedestrian involved": "Someone walking", "bicycle involved": "Someone biking"}
-VIOLATIONS = {
-    "DUI": "Driving under the influence",
-    "not stated": "Cause not stated",
+MODES = {"vehicles only": "Vehicles only", "pedestrian involved": "Someone walking hit", "bicycle involved": "Crash with someone biking"}
+# A violation is the crash's primary collision factor, which police assign to the party at fault. VERBS says it with
+# the actor in front ("Driver speeding"); NOUNS without one, for a family no one party type dominates.
+VERBS = {
+    "unsafe speed": "speeding", "following too closely": "following too closely",
+    "dooring": "opening a door into traffic", "unsafe starting or backing": "starting or backing unsafely",
+    "failure to yield to pedestrian": "failing to yield to someone walking",
+    "vehicle right of way": "failing to yield right of way", "red light": "running a red light",
+    "stop sign or other sign": "running a stop sign or other sign", "pedestrian violation": "crossing against the rules",
+    "DUI": "under the influence", "unsafe turn or lane use": "turning or changing lanes unsafely",
+    "bike or scooter rules": "breaking a bike or scooter rule", "phone use": "using a phone",
+}
+NOUNS = {
+    "DUI": "Driving under the influence", "not stated": "Cause not stated", "other": "Other violation",
     "failure to yield to pedestrian": "Failure to yield to someone walking",
-    "pedestrian violation": "Violation by the person walking",
+    "pedestrian violation": "Violation by the person walking", "unsafe turn or lane use": "Unsafe turn or lane change",
+    "bike or scooter rules": "Bike or scooter rule broken",
+}
+ACTORS = {"Driver": "Driver", "Pedestrian": "Person walking", "Bicyclist": "Bicyclist",
+          "Parked Vehicle": "Parked car's occupant", "Other": "Scooter rider or other"}
+ACTOR_LOW = {"Driver": "driver", "Pedestrian": "person walking", "Bicyclist": "bicyclist",
+             "Parked Vehicle": "parked car's occupant", "Other": "scooter rider or other"}
+DOMINANT = 0.8  # one at-fault party type holding more than this share of a family's people hurt names the actor
+DRIVER_ALL = 0.97  # at or above this driver share the row carries no at-fault line
+ROLES = {"pedestrian": "Person walking", "bicyclist": "Person biking", "driver": "Driver", "passenger": "Passenger",
+         "scooter or other": "Scooter rider or other", "role not stated": "Role not stated"}
+AGES = {"child under 18": "under 18", "adult 18 to 64": "18 to 64", "65 and over": "65 and over", "age not stated": "age not stated"}
+TURNS = {"going straight": "going straight", "left or U-turn": "turning left or U-turning", "right turn": "turning right",
+         "other movement": "other movement", "not stated or other": "movement not stated"}
+STRESS = {"high (LTS 3-4)": "High bike traffic stress", "low (LTS 1-2)": "Low bike traffic stress",
+          "unknown": "Bike traffic stress not known"}
+ONE_FIELD = {
+    "speed_limit": {"25 or under": "Posted 25 mph or under", "30": "Posted 30 mph", "35 or more": "Posted 35 mph or more",
+                    "unknown": "Speed limit not known"},
+    "lanes": {"1": "1 lane", "2": "2 lanes", "3 or more": "3 or more lanes", "0 (layer gap)": "Not in SFMTA's lanes layer",
+              "unknown": "Lanes not known"},
+    "light": {"daylight": "Daylight", "dusk or dawn": "Dusk or dawn", "dark": "Dark", "not stated": "Light not stated"},
+    "epc": {"in EPC": "In an Equity Priority Community", "outside EPC": "Outside Equity Priority Communities",
+            "unknown": "Not known"},
+    "weight": {"under 3,500 lb": "Heaviest vehicle under 3,500 lb", "3,500 to 5,000 lb": "Heaviest vehicle 3,500 to 5,000 lb",
+               "over 5,000 lb": "Heaviest vehicle over 5,000 lb", "no weight": "No vehicle weight on record"},
+}
+# The Crash Groups select, in this order: fix-groups.json grouping id and its label.
+GROUPINGS = [
+    ("family", "Violation and who was hit"), ("hybrid", "Crash type"), ("hybrid_turn", "Crash type and turn"),
+    ("place", "Place"), ("what_where", "Violation and bike traffic stress"), ("who", "Who was hurt, by age"),
+    ("who_what", "Who was hurt, by violation"), ("time", "Time of day"), ("light", "Light"),
+    ("speed_limit", "Speed limit"), ("lanes", "Number of lanes"), ("weight", "Heaviest vehicle's weight"),
+    ("epc", "Equity Priority Community"),
+]
+NOTES = {
+    "family": ["The violation is the crash's primary collision factor, which police assign to the party at fault."],
+    "place": ["Road class is DataSF 3psu-pn9h's classcode (2 major, 3 arterial, 4 collector, 5 residential); at an intersection, the most major street meeting there.",
+              "High bike traffic stress is SFMTA's Bike Comfort Index LTS 3 or 4 on any block the crash touches. LTS rises with posted speed, lanes and traffic volume, and falls with separated bike lanes."],
 }
 WHERE = [("signalized", "At a signalized corner"), ("hin", "On the High Injury Network"),
          ("ltn_cell", "Inside a residential cell"), ("school_zone", "In a school zone"), ("dark", "After dark")]
@@ -95,12 +153,98 @@ def plain_reason(r):
     return r[0].upper() + r[1:]
 
 
-def family_label(name):
-    if name == "all other families":
-        return "All other crashes", ""
-    mode, _, viol = name.partition(" | ")
-    v = VIOLATIONS.get(viol, viol[:1].upper() + viol[1:])
-    return v, MODES.get(mode, mode)
+def cap(t):
+    return t[:1].upper() + t[1:]
+
+
+class Labels(object):
+    """Row labels. A family's actor comes from results.json's by_at_fault_party_type: the party type holding most of
+    its people hurt names the actor when it holds more than DOMINANT; otherwise the violation is named alone, with the
+    driver's share."""
+
+    def __init__(self, res):
+        self.fault = {}
+        for f in res["size_families"]["families"]:
+            a = f.get("by_at_fault_party_type", {}).get("people_injured") or {}
+            t = sum(a.values())
+            self.fault["%s | %s" % (f["mode"], f["violation"])] = {k: v / t for k, v in a.items()} if t else {}
+
+    def violation(self, mode, viol, actor=True):
+        """(label, at-fault line or None) for a mode x violation family."""
+        shares = self.fault.get("%s | %s" % (mode, viol), {})
+        noun = NOUNS.get(viol, cap(viol))
+        if viol not in VERBS or not shares or not actor:
+            return noun, None
+        top, top_share = max(shares.items(), key=lambda kv: (kv[1], kv[0]))
+        drv = shares.get("Driver", 0.0)
+        others = sorted(((v, k) for k, v in shares.items() if k != "Driver" and v >= 0.02), reverse=True)
+        if top_share > DOMINANT and top in ACTORS:
+            label = "%s %s" % (ACTORS[top], VERBS[viol])
+            if drv >= DRIVER_ALL:
+                return label, None
+            parts = ["%s at fault in %d%%" % (ACTORS[top], round(100 * top_share))]
+            parts += ["%s %d%%" % (ACTOR_LOW[k], round(100 * v)) for k, v in sorted(
+                ((k, v) for k, v in shares.items() if k != top and v >= 0.02), key=lambda kv: -kv[1])]
+            return label, ", ".join(parts)
+        label = "%s (driver at fault in %d%%)" % (noun, round(100 * drv))
+        line = ", ".join("%s at fault in %d%%" % (ACTORS.get(k, k), round(100 * v)) if i == 0 else "%s %d%%" % (ACTOR_LOW.get(k, k), round(100 * v))
+                         for i, (v, k) in enumerate(others))
+        return label, line or None
+
+    def mode_sub(self, mode, viol=None):
+        if mode == "bicycle involved" and viol is not None:
+            shares = self.fault.get("%s | %s" % (mode, viol), {})
+            if shares.get("Driver", 0.0) > DOMINANT:
+                return "Someone biking hit"
+        return MODES.get(mode, cap(mode))
+
+    def family(self, name):
+        """(label, sub, at-fault line) for a family name, or the chart's remainder."""
+        if name == "all other families":
+            return "All other crashes", "", None
+        mode, _, viol = name.partition(" | ")
+        label, line = self.violation(mode, viol)
+        return label, self.mode_sub(mode, viol), line
+
+    def row(self, gid, key):
+        """(label, sub, at-fault line) for a fix-groups.json group key."""
+        if gid == "family":
+            return self.family(" | ".join(key))
+        if gid == "who":
+            return "%s, %s" % (ROLES.get(key[0], cap(key[0])), AGES.get(key[1], key[1])), "", None
+        if gid == "who_what":
+            return self.violation(None, key[1], actor=False)[0], "%s hurt" % ROLES.get(key[0], cap(key[0])), None
+        if gid == "place":
+            stress, cls, where = key
+            if cls in ("unknown", "other", ""):
+                label = "%s, street class not known" % cap(where)
+            else:
+                art = "an" if cls[:1] in "aeiou" else "a"
+                label = "%s on %s %s street" % ("Intersection" if where == "intersection" else "Midblock", art, cls)
+            return label, STRESS.get(stress, stress), None
+        if gid == "time":
+            mode, band, day = key
+            label = cap(band)
+            if not band.startswith(("weekday", "weekend")):
+                label += ", " + day
+            return label, MODES.get(mode, cap(mode)), None
+        if gid in ("hybrid", "hybrid_turn"):
+            mode = key[0]
+            if mode == "vehicles only":
+                return cap(key[1].lower()), MODES[mode], None
+            label, sub, line = self.family("%s | %s" % (mode, key[1]))
+            if gid == "hybrid_turn":
+                # the movement is the at-fault party's, or the first driver's when a person walking was at fault
+                shares = self.fault.get("%s | %s" % (mode, key[1]), {})
+                who = "driver " if shares.get("Pedestrian", 0.0) > DOMINANT else ""
+                label += ", " + who + TURNS.get(key[2], key[2])
+            return label, sub, line
+        if gid == "what_where":
+            label, sub, line = self.family("%s | %s" % (key[0], key[1]))
+            return label, sub + " · " + STRESS.get(key[2], key[2]), line
+        if gid in ONE_FIELD:
+            return ONE_FIELD[gid].get(key[0], cap(key[0])), "", None
+        return " / ".join(key), "", None
 
 
 US_WORDS = [
@@ -128,6 +272,13 @@ def short_name(name):
     if m and re.search(r"[,;\d]", m.group(2)):
         name = m.group(1)
     return feet(name)
+
+
+def sig3(x):
+    """x to three significant figures, enough for the two the page prints."""
+    if not x:
+        return 0
+    return round(x, max(0, 2 - int(math.floor(math.log10(abs(x))))))
 
 
 def r3(x):
@@ -159,41 +310,17 @@ def source_link(fix, src_text):
 
 
 # ---------------------------------------------------------------- stack recount
-def stack_terms(fix, fam_names, remainder, reach_cfg, fr):
-    rows = [r for r in fix["groups"] if r.get("used") and r.get("computable")]
-    direct = {r["group"] for r in rows if r["kind"] == "family"}
-    terms = {}
-    for r in rows:
-        eff = r["effect_fraction"]
-        if r["kind"] == "family":
-            terms.setdefault(r["group"], []).append((r["share_hurt"], r["share_ksi"], eff))
-        elif r["kind"] == "remainder":
-            for m in remainder:
-                if m in direct:
-                    continue
-                if r.get("reach_place"):
-                    c = reach_cfg[fix["id"]]
-                    if r.get("movement") or c.get("text") == "multiply" or ((c.get("by_group") or {}).get(m) or {}).get("text") == "multiply":
-                        raise SystemExit("fix-explorer: %s has a remainder entry this recount does not handle" % fix["id"])
-                    place = ((c.get("by_group") or {}).get(m) or {}).get("place") or c["place"]
-                    g = fr["groups"][m]
-                    p = g["places"][place]
-                    sh = p["people_hurt"] / g["people_hurt"] if g["people_hurt"] else 0.0
-                    sk = p["ksi"] / g["ksi"] if g["ksi"] else sh
-                    sc = c.get("share_scale", 1.0)
-                    sh, sk = sh * sc, sk * sc
-                else:
-                    sh, sk = r["share_hurt"], r["share_ksi"]
-                terms.setdefault(m, []).append((sh, sk, eff))
-    return terms
+def stack_terms(fix):
+    """{family: [(share hurt, share KSI, effect)]}, fix-map.json's stack_terms ("all other families" already spread)."""
+    return {g: [(t["share_hurt"], t["share_ksi"], t["effect"]) for t in ts] for g, ts in (fix.get("stack_terms") or {}).items()}
 
 
-def recount(order, fixes, fam, remainder, reach_cfg, fr, q):
+def recount(order, fixes, fam, q):
     rem = {g: [1.0, 1.0] for g in fam}
     out, ch, ck = [], 0.0, 0.0
     for fid in order:
         dh = dk = 0.0
-        for g, ts in stack_terms(fixes[fid], fam, remainder, reach_cfg, fr).items():
+        for g, ts in stack_terms(fixes[fid]).items():
             hy, ky = fam[g]["people_hurt"] / YEARS, fam[g]["ksi"] / YEARS
             nh, nk = rem[g]
             for sh, sk, e in ts:
@@ -210,10 +337,16 @@ def recount(order, fixes, fam, remainder, reach_cfg, fr, q):
 
 # ---------------------------------------------------------------- build data
 def build(profiles):
+    global YEARS
     fm = load(os.path.join(profiles, "fix-map.json"))
+    fg = load(os.path.join(profiles, "fix-groups.json"))
     fr = load(os.path.join(profiles, "fix-reach.json"))
     res = load(os.path.join(profiles, "results.json"))
-    reach_cfg = load(REACH_CFG)["fixes"]
+    years = res["years"]
+    if fm["inputs"]["years"] != years or fg["years"] != years or fr["years"] != years:
+        raise SystemExit("fix-explorer: inputs are for different years; rerun fix-reach.py, fix-map.py, fix-groups.py")
+    YEARS = years[1] - years[0] + 1
+    labels = Labels(res)
     fixes = {f["id"]: f for f in fm["fixes"]}
     fam = {g["group"]: g for g in fm["groups"]}
     remainder = sorted(g for g, v in fam.items() if not v["in_chart"])
@@ -224,13 +357,13 @@ def build(profiles):
     for key, src, label in STACKS:
         st = fm["stacks"][src]
         order = [s["id"] for s in st["steps"]]
-        mid = recount(order, fixes, fam, remainder, reach_cfg, fr, "mid")
+        mid = recount(order, fixes, fam, "mid")
         for s, (h, k) in zip(st["steps"], mid):
             if abs(h - s["cumulative_hurt_avoided"]) > 0.05 or abs(k - s["cumulative_ksi_avoided"]) > 0.005:
                 raise SystemExit("fix-explorer: recount of %s step %d (%s) gives %.2f hurt, fix-map.json %.2f; band not drawn"
                                  % (src, s["step"], s["id"], h, s["cumulative_hurt_avoided"]))
-        lo = recount(order, fixes, fam, remainder, reach_cfg, fr, "low")
-        hi = recount(order, fixes, fam, remainder, reach_cfg, fr, "high")
+        lo = recount(order, fixes, fam, "low")
+        hi = recount(order, fixes, fam, "high")
         steps = []
         for s, l, h in zip(st["steps"], lo, hi):
             steps.append({
@@ -241,7 +374,7 @@ def build(profiles):
             })
         stacks[key] = {"label": label, "steps": steps, "not_added": st["not_added"]}
 
-    # groups and the fixes mapped to each
+    # groups: every grouping in fix-groups.json, each row with the fixes that reach its crashes
     def where_of(names):
         tot_h = sum(fr["groups"][n]["people_hurt"] for n in names)
         out = []
@@ -250,84 +383,110 @@ def build(profiles):
             out.append([label, r3(ph / tot_h) if tot_h else None])
         return out
 
-    group_rows = {}
-
-    def add_row(gkey, fix, r):
-        group_rows.setdefault(gkey, {}).setdefault(fix["id"], []).append(r)
-
+    mapped = {}  # fix-map.json group name -> {fix id: rows}, for the fixes mapped there that can't be counted
     for f in fm["fixes"]:
         for r in f["groups"]:
             g = r["group"]
-            if g in fam or g == "all other families":
-                add_row(g, f, r)
-            elif g.startswith("place | "):
-                add_row(g, f, r)
-            elif g.startswith("who | "):
-                add_row(g, f, r)
-            elif g.startswith("pedestrian | "):
-                m = re.match(r"pedestrian \| (.*?) \(cross-cut", g)
-                if m:
-                    add_row("who | pedestrian | " + m.group(1), f, r)
+            m = re.match(r"pedestrian \| (.*?) \(cross-cut", g)
+            g = "who | pedestrian | " + m.group(1) if m else g
+            mapped.setdefault(g, {}).setdefault(f["id"], []).append(r)
 
-    def fix_list(gkey):
-        out = []
-        for fid, rows in sorted(group_rows.get(gkey, {}).items()):
+    refs = {}
+
+    def ref(fid, row_i):
+        """The id of the mechanism, effect and source shown for a fix on a row, from its fix-map.json row."""
+        key = "%s:%s" % (fid, -1 if row_i is None else row_i)
+        if key not in refs:
             fix = fixes[fid]
-            used = [r for r in rows if r.get("computable") and r.get("used")]
-            if not used:
-                used = [r for r in rows if r.get("computable")][:1]
-            if used:
-                ah = {q: sum((r.get("hurt_avoided_per_year") or {}).get(q, 0.0) for r in used) for q in ("low", "mid", "high")}
-                ak = {q: sum((r.get("ksi_avoided_per_year") or {}).get(q, 0.0) for r in used) for q in ("low", "mid", "high")}
-                if not any((r.get("hurt_avoided_per_year") or None) for r in used):
-                    ah = None
-                r0 = used[0]
-                out.append({
-                    "id": fid, "ah": q3(ah), "ak": q3(ak),
-                    "share": r3(sum(r.get("share_hurt") or 0.0 for r in used)),
-                    "mech": feet(r0.get("mechanism") or fix.get("how_it_works")),
-                    "eff": effect_text(r0.get("effect_fraction")),
-                    "src": feet((r0.get("effect") or {}).get("source")),
-                    "url": source_link(fix, (r0.get("effect") or {}).get("source")),
-                    "why": None,
-                })
-            else:
-                r0 = rows[0]
-                out.append({"id": fid, "ah": None, "ak": None, "share": None,
-                            "mech": feet(r0.get("mechanism") or fix.get("how_it_works")), "eff": None,
-                            "src": None, "url": None, "why": plain_reason(r0.get("reason"))})
-        out.sort(key=lambda x: (x["why"] is not None, -((x["ah"] or {}).get("mid") or 0.0),
-                                -((x["ak"] or {}).get("mid") or 0.0), x["id"]))
+            r = fix["groups"][row_i] if row_i is not None else {}
+            refs[key] = {"mech": feet(r.get("mechanism") or fix.get("how_it_works")),
+                         "eff": effect_text(r.get("effect_fraction")),
+                         "src": feet((r.get("effect") or {}).get("source")),
+                         "url": source_link(fix, (r.get("effect") or {}).get("source"))}
+        return key
+
+    def fix_list(members, people, mapped_keys):
+        """The counted fixes over fix-groups.json groups `members`, then the mapped fixes that can't be counted."""
+        acc = {}
+        for g in members:
+            for fid, v in g["fixes"].items():
+                a = acc.setdefault(fid, {"h": [0.0] * 3, "k": [0.0] * 3, "reached": 0.0, "best": (-1.0, None)})
+                for j in range(3):
+                    a["h"][j] += v["hurt"][j]
+                    a["k"][j] += v["ksi"][j]
+                a["reached"] += v["reached_hurt"]
+                if v["hurt"][1] > a["best"][0]:
+                    a["best"] = (v["hurt"][1], v["row"])
+        out = []
+        for fid, a in sorted(acc.items()):
+            if abs(a["h"][1]) < MIN_SHOWN[0] and abs(a["k"][1]) < MIN_SHOWN[1]:
+                continue
+            ref(fid, a["best"][1])
+            out.append({"id": fid, "h": [sig3(x) for x in a["h"]] if any(a["h"]) else None, "k": [sig3(x) for x in a["k"]],
+                        "s": r3(a["reached"] / people) if people else None, "r": -1 if a["best"][1] is None else a["best"][1]})
+        shown = {x["id"] for x in out}
+        for mk in mapped_keys:
+            for fid, rows in sorted(mapped.get(mk, {}).items()):
+                if fid in shown or fid in acc:
+                    continue
+                shown.add(fid)
+                r0 = next((r for r in rows if r.get("reason")), rows[0])
+                why = plain_reason(r0.get("reason")) or plain_reason((fixes[fid].get("not_computable_reasons") or [None])[0]) \
+                    or "Not counted"
+                out.append({"id": fid, "why": why, "mech": feet(r0.get("mechanism") or fixes[fid].get("how_it_works"))})
+        out.sort(key=lambda x: ("why" in x, -((x.get("h") or [0, 0])[1]), -((x.get("k") or [0, 0])[1]), x["id"]))
         return out
 
+    def stack_end(members):
+        out = {}
+        for key, src, _ in STACKS:
+            out[key] = [round(sum(sum(g["stacks"][src]["hurt"]) for g in members), 1),
+                        round(sum(sum(g["stacks"][src]["ksi"]) for g in members), 2)]
+        return out
+
+    def make_row(gid, key, members, label, sub, line, where, mapped_keys):
+        h = sum(g["people_hurt"] for g in members)
+        k = sum(g["ksi"] for g in members)
+        return {"key": key, "label": label, "sub": sub, "at": line, "h": round(h / YEARS), "k": round(k / YEARS, 1),
+                "where": where, "fixes": fix_list(members, h, mapped_keys), "st": stack_end(members)}
+
+    fg_by = {g["id"]: g for g in fg["groupings"]}
+    if sorted(gid for gid, _ in GROUPINGS) != sorted(fg_by):
+        raise SystemExit("fix-explorer: GROUPINGS does not name every grouping in fix-groups.json")
     groupings = {}
-    fams = []
+    fam_groups = {" | ".join(g["key"]): g for g in fg_by["family"]["groups"]}
+    rows = []
     for c in res["size_families"]["chart"]:
         name = "all other families" if c["mode"] == "all other families" else "%s | %s" % (c["mode"], c["violation"])
-        label, sub = family_label(name)
         members = remainder if name == "all other families" else [name]
-        fams.append({"key": name, "label": label, "sub": sub,
-                     "h": round(c["people_injured"] / YEARS), "k": round(c["ksi_people"] / YEARS, 1),
-                     "where": where_of(members), "fixes": fix_list(name)})
-    groupings["family"] = fams
-    alts = {g["name"].split(":")[0]: g for g in res["grouping_alternatives"]["groupings"]}
-    for gkey, alt, prefix in (("place", "place", "place | "), ("who", "who was hurt", "who | ")):
+        label, sub, line = labels.family(name)
+        row = make_row("family", name, [fam_groups[m] for m in members], label, sub, line, where_of(members), [name])
+        if name != "all other families" and row["h"] != round(c["people_injured"] / YEARS):
+            raise SystemExit("fix-explorer: family %s differs between results.json and fix-groups.json" % name)
+        rows.append(row)
+    groupings["family"] = rows
+    prefixes = {"place": "place | ", "who": "who | "}
+    for gid, _ in GROUPINGS:
+        if gid == "family":
+            continue
+        gs = fg_by[gid]["groups"]
+        if len(gs) <= GROUP_ROWS + 1:
+            shown, rest = gs, []
+        else:
+            named = [g for g in gs if not any(v in CATCH for v in g["key"])]
+            shown = named[:GROUP_ROWS]
+            rest = [g for g in gs if g not in shown]
         rows = []
-        for b in alts[alt]["top_bars"]:
-            if b.get("catch_all"):
-                continue
-            key = prefix + " | ".join(b["group"])
-            if gkey == "place":
-                stress, cls, where = b["group"]
-                label = "%s %s" % (cls[:1].upper() + cls[1:], where)
-                sub = "High traffic stress" if stress.startswith("high") else "Low traffic stress"
-            else:
-                role, age = b["group"]
-                label = "%s, %s" % (role[:1].upper() + role[1:], age)
-                sub = ""
-            rows.append({"key": key, "label": label, "sub": sub, "h": round(b["people_injured"] / YEARS),
-                         "k": round(b["ksi_people"] / YEARS, 1), "where": None, "fixes": fix_list(key)})
-        groupings[gkey] = rows
+        for g in shown:
+            label, sub, line = labels.row(gid, g["key"])
+            key = " | ".join(g["key"])
+            rows.append(make_row(gid, gid + " | " + key, [g], label, sub, line, None,
+                                 [prefixes[gid] + key] if gid in prefixes else []))
+        if rest:
+            rows.append(make_row(gid, gid + " | rest", rest, "All other %s" % ("people hurt" if fg_by[gid]["unit"] == "person" else "crashes"),
+                                 "%d smaller groups%s" % (len(rest), ", and those not stated" if any(any(v in CATCH for v in g["key"]) for g in rest) else ""),
+                                 None, None, []))
+        groupings[gid] = rows
 
     # fixes
     fx = {}
@@ -348,7 +507,7 @@ def build(profiles):
             "ah": q3(f.get("hurt_avoided_per_year")) if f["avoided_basis"] == "families" else None,
             "ak": q3(f.get("ksi_avoided_per_year")) if f["avoided_basis"] == "families" else None,
             "sf": feet(f.get("sf_evidence")) if f["id"] in fm["sf_evidence"] else None,
-            "top": [[("%s (%s)" % (family_label(g)[0], family_label(g)[1].lower())) if family_label(g)[1] else family_label(g)[0], round(v, 1)] for g, v in top[:3] if v > 0],
+            "top": [["%s (%s)" % (labels.family(g)[0], labels.family(g)[1].lower()), round(v, 1)] for g, v in top[:3] if v > 0],
             "sources": [{"t": s["title"], "u": s["url"]} for s in f.get("sources") or [] if s.get("url", "").startswith("http")][:4],
             "why": ranked_reason,
             "lowconf": feet(((f.get("reach_confidence") or {}).get("why") or "").replace("Low confidence on reach: ", "")) or None
@@ -376,8 +535,9 @@ def build(profiles):
         "values": [{"t": s["title"], "u": s["url"]} for s in fm["inputs"]["value_sources"]],
         "read": sorted(set(fr["sources"].values()))[-1],
     }
-    return {"stack_order": [k for k, _, _ in STACKS], "stacks": stacks, "groupings": groupings, "fixes": fx, "ranking": ranking,
-            "unranked": unranked, "levers": LEVERS, "about": about}
+    return {"stack_order": [k for k, _, _ in STACKS], "stacks": stacks, "groupings": groupings,
+            "grouping_order": [[gid, label] for gid, label in GROUPINGS], "notes": NOTES, "refs": refs,
+            "fixes": fx, "ranking": ranking, "unranked": unranked, "levers": LEVERS, "about": about}
 
 
 PAGE = r"""<!doctype html>
@@ -405,6 +565,10 @@ h2 { font: 700 15px/1.25 Archivo, "Public Sans", sans-serif; margin:0 0 6px; }
 h3 { font: 600 13px/1.3 "Public Sans", sans-serif; margin:14px 0 6px; color:var(--muted); text-transform:none; }
 .label { font-size:12px; color:var(--muted); margin:0 0 6px; }
 .chips { display:flex; flex-direction:column; gap:6px; margin-bottom:16px; align-items:flex-start; }
+select { font:inherit; width:100%; padding:5px 8px; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); margin:2px 0 8px; }
+label.label { display:block; }
+#groupNote p { color:var(--muted); font-size:12px; margin:0 0 6px; }
+.gb .name small.at { color:#6b4e00; }
 .note { color:var(--muted); font-size:12.5px; margin:6px 0 0; }
 svg text { font-family: inherit; }
 .view { display:none; } .view.on { display:block; }
@@ -495,8 +659,9 @@ details.about ul { padding-left:16px; margin:4px 0; }
       <div class="chips" id="measureChips"></div>
     </div>
     <div class="ctl" data-for="groups">
-      <p class="label">Group crashes by</p>
-      <div class="chips" id="groupChips"></div>
+      <label class="label" for="groupSel">Group crashes by</label>
+      <select id="groupSel"></select>
+      <div id="groupNote"></div>
     </div>
     <div class="ctl" data-for="rank">
       <p class="label">Kind of fix</p>
@@ -513,7 +678,7 @@ details.about ul { padding-left:16px; margin:4px 0; }
     <div class="view" data-for="groups">
       <h2>Who Gets Hurt, a Year</h2>
       <table class="gb" id="groupTable"></table>
-      <p class="note">SF crashes 2017 to 2024, a yearly average. Tap a group to see the fixes that reach it.</p>
+      <p class="note" id="groupFoot"></p>
     </div>
     <div class="view" data-for="rank">
       <h2>Cost per Person Hurt Avoided</h2>
@@ -616,15 +781,21 @@ function drawSteps(scroll) {
 /* ---------- view 2: groups ---------- */
 function drawGroups() {
   const rows = D.groupings[S.grouping];
+  document.getElementById('groupNote').innerHTML = (D.notes[S.grouping] || []).map(t => `<p>${esc(t)}</p>`).join('');
+  document.getElementById('groupFoot').textContent = `SF crashes ${D.about.years[0]} to ${D.about.years[1]}, a yearly average. Tap a group to see the fixes that reach it.`;
   if (!rows.some(r => r.key === S.group)) S.group = rows[0].key;
   const mh = Math.max(...rows.map(r => r.h)), mk = Math.max(...rows.map(r => r.k));
   const t = document.getElementById('groupTable');
-  t.innerHTML = `<tr><th></th><th>People hurt</th><th>Killed or seriously hurt</th></tr>` + rows.map(r => `<tr class="row ${r.key === S.group ? 'sel' : ''}" data-k="${esc(r.key)}"><td class="name">${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}</td>
+  t.innerHTML = `<tr><th></th><th>People hurt</th><th>Killed or seriously hurt</th></tr>` + rows.map(r => `<tr class="row ${r.key === S.group ? 'sel' : ''}" data-k="${esc(r.key)}"><td class="name">${esc(r.label)}${r.sub ? `<small>${esc(r.sub)}</small>` : ''}${r.at ? `<small class="at">${esc(r.at)}</small>` : ''}</td>
     <td><div class="bar"><i style="width:${(r.h / mh * 70).toFixed(1)}%"></i><b>${num(r.h)}</b></div></td>
     <td><div class="bar k"><i style="width:${(r.k / mk * 60).toFixed(1)}%"></i><b>${num(r.k)}</b></div></td></tr>`).join('');
   t.onclick = e => { const tr = e.target.closest('tr.row'); if (!tr) return; S.group = tr.dataset.k; drawGroups(); if (window.innerWidth <= 760) document.getElementById('right').scrollIntoView({ behavior: 'smooth' }); };
   const g = rows.find(r => r.key === S.group);
   let h = `<h2>${esc(g.label)}${g.sub ? ` <span style="font-weight:400;color:#59626f">· ${esc(g.sub)}</span>` : ''}</h2>`;
+  if (g.at) h += `<p class="note" style="margin:0 0 6px">${esc(g.at)}</p>`;
+  const se = g.st[S.stack], sv = S.measure === 'h' ? se[0] : se[1], base = S.measure === 'h' ? g.h : g.k;
+  const stackWho = { area: 'every area-wide fix', corner: 'every corner and corridor fix', both: 'every area-wide, corner and corridor fix' }[S.stack];
+  h += `<p class="note" style="margin:4px 0 0">Stacked, ${stackWho}: ${num(sv)} fewer ${S.measure === 'h' ? 'people hurt' : 'killed or seriously hurt'} a year here${base ? ', ' + pct(sv / base) + ' of this group' : ''}.</p>`;
   if (g.where) h += `<h3>Where These Crashes Happen</h3><p class="note" style="margin:0 0 4px">Places overlap, so the shares add to more than 100%.</p><div class="where">` + g.where.map(([l, v]) => `<span>${esc(l)}</span><div class="bar"><i style="width:${Math.round((v || 0) * 50)}px"></i><b>${pct(v)}</b></div>`).join('') + `</div>`;
   const on = g.fixes.filter(x => !x.why), off = g.fixes.filter(x => x.why);
   h += `<h3>Fixes That Reach It, Most People First</h3>`;
@@ -634,6 +805,8 @@ function drawGroups() {
 }
 function fixRow(x) {
   const f = F[x.id];
+  if (!x.why) x = Object.assign({}, D.refs[x.id + ':' + x.r], x, { ah: x.h ? { low: x.h[0], mid: x.h[1], high: x.h[2] } : null,
+    ak: { low: x.k[0], mid: x.k[1], high: x.k[2] }, share: x.s });
   if (x.why) return `<details class="fx off"><summary><span>${esc(f.name)}${areaTag(x.id)}</span><span class="v">Can't count yet</span></summary><dl><dt>Why</dt><dd>${esc(x.why)}</dd><dt>How it works here</dt><dd>${esc(x.mech)}</dd></dl></details>`;
   const v = x.ah ? num(x.ah.mid) + ' a year' : num(x.ak.mid) + ' killed or seriously hurt a year';
   const rng = x.ah ? `${num(x.ah.low)} to ${num(x.ah.high)} people hurt a year` : `${num(x.ak.low)} to ${num(x.ak.high)} killed or seriously hurt a year`;
@@ -703,7 +876,10 @@ document.querySelector('nav').onclick = e => { const b = e.target.closest('butto
 if (['groups', 'rank'].includes(location.hash.slice(1))) setView(location.hash.slice(1));
 chips('stackChips', D.stack_order.map(k => [k, D.stacks[k].label]), 'stack', () => { S.step = 0; render(); });
 chips('measureChips', [['h', 'People hurt'], ['k', 'Killed or seriously hurt']], 'measure', render);
-chips('groupChips', [['family', 'Crash type'], ['place', 'Place'], ['who', 'Who was hurt']], 'grouping', () => { S.group = null; render(); });
+const gsel = document.getElementById('groupSel');
+gsel.innerHTML = D.grouping_order.map(([v, t]) => `<option value="${esc(v)}">${esc(t)}</option>`).join('');
+gsel.value = S.grouping;
+gsel.onchange = () => { S.grouping = gsel.value; S.group = null; render(); };
 chips('leverChips', [['all', 'All']].concat(D.levers.filter(([k]) => D.ranking.some(i => F[i].lever === k))), 'lever', render);
 function render() { if (S.view === 'stack') { drawStack(); drawSteps(false); } else if (S.view === 'groups') drawGroups(); else drawRank(); }
 about(); render();

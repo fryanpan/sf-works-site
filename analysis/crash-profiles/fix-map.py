@@ -10,8 +10,14 @@ out/crash-augment/profiles/fix-map.json.
 
 Counting rules (each one is also in the README):
 
-- People hurt and KSI people are 2017 to 2024, eight years, from
-  size_families.families. A year is the eight-year count over 8.
+- People hurt and KSI people are the collision years results.json counts
+  (crash-profiles.py's YEARS, 2018 to 2025), from size_families.families. A
+  year is the count over the number of years.
+- The lanes' target_share texts quote 2017 to 2024 counts, the window they
+  were researched on. fixes/lane-counts.json holds those counts (written once
+  from the 2017 to 2024 results.json with --freeze-lane-counts), so an "A of
+  B" text whose B is a 2017 to 2024 group total is still read as the share
+  A / B, and that share is applied to the current window's counts.
 - An effect is normalised to a fraction r of the target crashes removed
   (positive is fewer): "% fewer" is r = v/100; "% change" is r = -v/100;
   a CMF, rate ratio, odds ratio or RR is r = 1 - v. Low, mid and high are
@@ -45,6 +51,9 @@ Counting rules (each one is also in the README):
   placed fix with no count says "most it could reach". Its cost replaces a
   lane's labour-only signal price, and its upkeep adds a yearly cost per unit.
 - Avoided a year = group count a year x target share x r.
+- Each fix's stack_terms in fix-map.json give, for every family it reaches,
+  the share, the effect and the crashes it reaches (place and movements), so
+  fix-groups.py can spread its people avoided over the crashes themselves.
 - Annual cost: a per-year cost is used as is; a one-time cost is divided by
   life_years. A per-unit cost (per corner, mile, signal, camera) is multiplied
   by the SF unit count in UNITS, taken from the record's own text or from
@@ -72,6 +81,7 @@ Counting rules (each one is also in the README):
 Standard library only. Deterministic: sorted keys and lists, no wall clock.
 
     python3 analysis/crash-profiles/fix-map.py
+    python3 analysis/crash-profiles/fix-map.py --freeze-lane-counts RESULTS_2017_2024.json   # once, see above
 """
 
 import glob
@@ -85,7 +95,9 @@ LANES = os.path.join(ROOT, "analysis", "crash-profiles", "fixes", "lanes")
 RESULTS = os.path.join(ROOT, "out", "crash-augment", "profiles", "results.json")
 OUT = os.path.join(ROOT, "out", "crash-augment", "profiles", "fix-map.json")
 
-YEARS = 8  # 2017 to 2024
+YEARS = None  # the number of collision years in results.json, set in main()
+LANE_COUNTS = os.path.join(ROOT, "analysis", "crash-profiles", "fixes", "lane-counts.json")
+LANE_YEARS = [2017, 2024]  # the window the lanes' target_share texts were researched on
 LEVERS = [
     "street design", "signals", "speed management", "traffic volume and filtering",
     "pricing", "vehicles and fleets", "automated enforcement", "behaviour programs",
@@ -360,6 +372,14 @@ class Reach(object):
             sh, sk = sh * left, sk * left
             basis += ", x %s not yet treated" % round(left, 4)
         return sh, sk, basis
+
+    def reach_set(self, cid, gname, movement):
+        """(place expression, movements) of the crashes a placed fix reaches in a family, as share() counts them."""
+        place = self.place_of(cid, gname)
+        mvs, extra = parse_movements(movement, self.known)
+        if extra:
+            place = "%s&%s" % (place, extra)
+        return place, mvs
 
     def left(self, cid):
         """The fraction of sites not yet treated, where reach.json gives SF's count of what is done."""
@@ -652,14 +672,23 @@ DISQUALIFY = re.compile(
 WHOLE = re.compile(r"whole group|all in reach|every crash in the group|the whole family|group in reach|\ball\s+" + NUM + r"\s+people hurt", re.I)
 
 
-def parse_share(text, tot_h, tot_k, movement, movements):
+def parse_share(text, tot_h, tot_k, movement, movements, lane=None):
     """Return (share_hurt, share_ksi, basis) or (None, None, reason).
 
     An explicit "N% of the group" wins. Text that says the reachable share is
     not computed, unknown, or limited to some blocks, corridors or sites leaves
     the pair not computable, because the street-class or movement counts beside
-    such a caveat overstate the reach."""
+    such a caveat overstate the reach. lane is the group's (people hurt, KSI
+    people) in LANE_YEARS, the counts the text quotes; a total matches either
+    those or the current window's."""
     t = text or ""
+    lh, lk = lane if lane else (None, None)
+
+    def is_h(b):
+        return any(x and abs(b - x) < 0.5 for x in (lh, tot_h))
+
+    def is_k(b):
+        return any(x is not None and x and abs(b - x) < 0.5 for x in (lk, tot_k))
     m = re.search(r"(\d+(?:\.\d+)?)\s*%\s+of\s+(?:the|each|every)\s+group", t)
     if m:
         s = float(m.group(1)) / 100
@@ -670,15 +699,16 @@ def parse_share(text, tot_h, tot_k, movement, movements):
     sh = sk = None
     for a, b in re.findall(NUM + r"\s+of\s+(?:the\s+)?" + NUM, t):
         a, b = num(a), num(b)
-        if sh is None and tot_h and abs(b - tot_h) < 0.5 and a <= b:
+        if sh is None and is_h(b) and a <= b:
             sh = a / b
-        elif sk is None and tot_k and abs(b - tot_k) < 0.5 and a <= b:
+        elif sk is None and is_k(b) and a <= b:
             sk = a / b
     if sh is not None:
         if sk is None:
             m2 = re.search(r"\(\s*" + NUM + r"\s+(?:of\s+" + NUM + r"\s+)?KSI", t)
-            if m2 and tot_k and num(m2.group(1)) <= tot_k:
-                sk = num(m2.group(1)) / tot_k
+            base_k = lk if lk else tot_k
+            if m2 and base_k and num(m2.group(1)) <= base_k:
+                sk = num(m2.group(1)) / base_k
         if sk is None:
             return sh, sh, "people-hurt share from text; KSI share taken equal"
         return sh, sk, "shares from text"
@@ -686,13 +716,27 @@ def parse_share(text, tot_h, tot_k, movement, movements):
         return 1.0, 1.0, "text says the whole group is in reach"
     if not re.search(r"group total", t, re.I):
         m3 = re.match(r"\s*" + NUM + r"\s*(?:people hurt)?\s*[,/(]\s*" + NUM + r"\s*(?:KSI)?", t)
-        if m3 and tot_h and abs(num(m3.group(1)) - tot_h) < 0.5 and tot_k is not None and abs(num(m3.group(2)) - tot_k) < 0.5:
+        if m3 and any(x and abs(num(m3.group(1)) - x) < 0.5 and y is not None and abs(num(m3.group(2)) - y) < 0.5
+                      for x, y in ((lh, lk), (tot_h, tot_k))):
             return 1.0, 1.0, "text gives the whole group's counts as the reach"
     if movement and movement in movements:
         mh, mk = movements[movement]
         if tot_h:
             return mh / tot_h, (mk / tot_k if tot_k else mh / tot_h), "movement share from size_families"
     return None, None, "target share not parseable from text"
+
+
+def text_movements(movement, share, group_hurt, movements, known):
+    """The movements a text-share entry reaches: the entry's movements when they parse and the share fits inside
+    them, else None (the whole family)."""
+    try:
+        mvs, extra = parse_movements(movement, known)
+    except ValueError:
+        return None
+    if not mvs or extra:
+        return None
+    inside = sum(movements.get(m, (0, 0))[0] for m in mvs)
+    return mvs if group_hurt and share <= inside / group_hurt + 1e-9 else None
 
 
 # ---------------------------------------------------------------- cost
@@ -776,8 +820,44 @@ def r0(x, n=2):
     return None if x is None else round(x, n)
 
 
+def group_counts(res):
+    """{group name: [people hurt, KSI people]} for every family, the chart's "all other families" row and every
+    cross-cut bar in grouping_alternatives, keyed as group_totals() matches them."""
+    out = {}
+    for f in res["size_families"]["families"]:
+        out["%s | %s" % (f["mode"], f["violation"])] = [f["people_injured"], f["ksi_people"]]
+    other = next(c for c in res["size_families"]["chart"] if c["mode"] == "all other families")
+    out["all other families"] = [other["people_injured"], other["ksi_people"]]
+    for g in res["grouping_alternatives"]["groupings"]:
+        for b in g["top_bars"]:
+            out.setdefault(" | ".join(b["group"]), [b["people_injured"], b["ksi_people"]])
+    return dict(sorted(out.items()))
+
+
+def freeze_lane_counts(path):
+    """Write LANE_COUNTS from a results.json counted over LANE_YEARS, the counts the lanes' texts quote."""
+    res = load(path)
+    if res["years"] != LANE_YEARS:
+        raise SystemExit("--freeze-lane-counts needs a results.json for %s, got %s" % (LANE_YEARS, res["years"]))
+    out = {"about": "People hurt and KSI people by group, %d to %d, the counts the lanes' target_share texts quote. "
+                    "Written once by fix-map.py --freeze-lane-counts from crash-profiles.py --years %d %d; fix-map.py "
+                    "reads an 'A of B' text whose B is one of these totals as the share A / B." % tuple(LANE_YEARS * 2),
+           "years": LANE_YEARS, "inputs_read_on": res.get("inputs_read_on"), "groups": group_counts(res)}
+    with open(LANE_COUNTS, "w", encoding="utf-8") as f:
+        f.write(json.dumps(out, indent=1, sort_keys=True, ensure_ascii=False) + "\n")
+    print("wrote %s (%d groups)" % (os.path.relpath(LANE_COUNTS, ROOT), len(out["groups"])), file=sys.stderr)
+
+
 def main():
+    global YEARS
+    if sys.argv[1:2] == ["--freeze-lane-counts"]:
+        return freeze_lane_counts(sys.argv[2])
     res = load(RESULTS)
+    YEARS = res["years"][1] - res["years"][0] + 1
+    lane_counts = load(LANE_COUNTS)
+    if lane_counts["years"] != LANE_YEARS:
+        raise SystemExit("%s is for %s, not %s" % (LANE_COUNTS, lane_counts["years"], LANE_YEARS))
+    lane_counts = lane_counts["groups"]
     fams = res["size_families"]["families"]
     fam = {}
     for f in fams:
@@ -849,19 +929,21 @@ def main():
             validation[cid] = errs
 
     def group_totals(name, text):
+        """(people hurt, KSI people, mode, movements, kind, the LANE_YEARS counts or None)."""
         if name in fam:
-            return fam[name]["people_hurt"], fam[name]["ksi"], fam[name]["mode"], fam[name]["movements"], "family"
+            return (fam[name]["people_hurt"], fam[name]["ksi"], fam[name]["mode"], fam[name]["movements"], "family",
+                    lane_counts.get(name))
         if name == "all other families":
-            return other_row["people_injured"], other_row["ksi_people"], "all", {}, "remainder"
+            return other_row["people_injured"], other_row["ksi_people"], "all", {}, "remainder", lane_counts.get(name)
         for key, (h, k) in cross_totals.items():
             if name.endswith(key) or key in name:
                 mode = "pedestrian" if "pedestrian" in name else ("who" if name.startswith("who") else "cross")
-                return h, k, mode, {}, "cross-cut"
+                return h, k, mode, {}, "cross-cut", lane_counts.get(key)
         m = re.search(NUM + r"\s+(?:people\s+)?hurt\s*/\s*" + NUM + r"\s+KSI", text or "")
         if m:
             mode = "pedestrian" if "pedestrian" in name else "cross"
-            return num(m.group(1)), num(m.group(2)), mode, {}, "cross-cut (count from target_share text)"
-        return None, None, None, {}, "cross-cut, no count found"
+            return num(m.group(1)), num(m.group(2)), mode, {}, "cross-cut (count from target_share text)", None
+        return None, None, None, {}, "cross-cut, no count found", None
 
     out_fixes, not_computable, pair_rows = [], [], {}
     for cid in sorted(merged):
@@ -879,7 +961,7 @@ def main():
             name = g.get("group") or ""
             if "status" in g and "remove" in str(g["status"]).lower():
                 continue
-            h, k, mode, movements, kind = group_totals(name, g.get("target_share"))
+            h, k, mode, movements, kind, lane = group_totals(name, g.get("target_share"))
             e = g.get("effect") or {}
             eff, ereason = normalise_effect(e, mode if mode != "all" else None)
             sh = sk = None
@@ -889,7 +971,7 @@ def main():
             if h is not None and cid in reach.cfg and kind in ("family", "remainder"):
                 tsh = None
                 if reach.text_mode(cid, name) == "multiply":
-                    a, b, _ = parse_share(ts, h, k, g.get("movement"), movements)
+                    a, b, _ = parse_share(ts, h, k, g.get("movement"), movements, lane)
                     tsh = (a, b) if a is not None else None
                 sh, sk, sbasis = reach.share(cid, name, g.get("movement"), tsh)
                 reach_row = {"place": reach.place_of(cid, name), "text_share": tsh}
@@ -899,7 +981,7 @@ def main():
                     sh, sk, sbasis = last_share[(name, g.get("movement") or "")]
                     sbasis = "same reach as the entry before: " + str(sbasis)
                 else:
-                    sh, sk, sbasis = parse_share(ts, h, k, g.get("movement"), movements)
+                    sh, sk, sbasis = parse_share(ts, h, k, g.get("movement"), movements, lane)
                 last_share[(name, g.get("movement") or "")] = (sh, sk, sbasis)
             reason = None
             if sh is not None and cid in REACH_UNKNOWN:
@@ -926,6 +1008,7 @@ def main():
             elif sh is None:
                 reason = sbasis
             row = {
+                "_i": len(pairs),
                 "group": name, "movement": g.get("movement"), "kind": kind, "from": g.get("from"),
                 "mechanism": g.get("mechanism"), "target_share_text": g.get("target_share"),
                 "effect": e, "group_people_hurt": h, "group_ksi": k,
@@ -939,6 +1022,10 @@ def main():
                 row["computable"] = False
                 row["reason"] = reason
             else:
+                if reach_row:
+                    row["_set"] = reach.reach_set(cid, name, g.get("movement"))
+                else:
+                    row["_set"] = (None, text_movements(g.get("movement"), sh, h, movements, reach.known))
                 hy, ky = h / YEARS, k / YEARS
                 rh = eff if eff["scope"] == "all" else None
                 ah = None if rh is None else {q: hy * sh * rh[q] for q in ("low", "mid", "high")}
@@ -998,18 +1085,26 @@ def main():
                             if r.get("reach_place"):
                                 a, b, _ = reach.share(cid, member, r["movement"], r.get("_text_share"))
                                 r2["share_hurt"], r2["share_ksi"] = r0(a or 0.0, 4), r0(b or 0.0, 4)
+                                r2["_set"] = reach.reach_set(cid, member, r["movement"])
+                            else:
+                                r2["_set"] = (None, text_movements(r["movement"], r2["share_hurt"], fam[member]["people_hurt"],
+                                                                   fam[member]["movements"], reach.known))
                             mrows.append(r2)
                         expanded[member] = mrows
             else:
                 expanded[gname] = rows
-        stack_terms = {}
+        stack_terms, term_sets = {}, {}
         for gname, rows in sorted(expanded.items()):
-            terms = []
+            terms, sets = [], []
             for row in rows:
                 eff = row["effect_fraction"]
                 sh, sk = row["share_hurt"], row["share_ksi"]
                 terms.append({q: (sh * eff[q] if eff["scope"] == "all" else 0.0, sk * eff[q]) for q in ("low", "mid", "high")})
+                place, mvs = row["_set"]
+                sets.append({"share_hurt": sh, "share_ksi": sk, "effect": eff, "place": place, "movements": mvs,
+                             "row": row["_i"]})
             stack_terms[gname] = terms
+            term_sets[gname] = sets
         tot = {q: [0.0, 0.0] for q in ("low", "mid", "high")}
         for gname, terms in stack_terms.items():
             hy, ky = fam[gname]["people_hurt"] / YEARS, fam[gname]["ksi"] / YEARS
@@ -1090,6 +1185,7 @@ def main():
             rec_out["note"] = rec_out_note
         rec_out["not_computable_reasons"] = reasons
         rec_out["_stack_terms"] = stack_terms
+        rec_out["stack_terms"] = term_sets if any_pair else None
         out_fixes.append(rec_out)
         for row in pairs:
             if not row["computable"]:
@@ -1219,7 +1315,8 @@ def main():
         "people left after the fixes before it, remaining = product of (1 - share x r); the package total sums over the "
         "groups. It assumes the fixes' effects are independent, the standard conservative rule. Only fixes with an "
         "annual cost and at least one computable family pair are stacked; CONFLICTS keeps one version of a fix. "
-        "Shares are of %d people hurt and %d KSI people a year (2017-2024 over 8). Annual cost mixes dollar years." % (round(year_h), round(year_k)))
+        "Shares are of %d people hurt and %d KSI people a year (%d-%d over %d). Annual cost mixes dollar years."
+        % (round(year_h), round(year_k), res["years"][0], res["years"][1], YEARS))
 
     # ---------------------------------------------------------------- groups
     fix_by_group = {}
@@ -1275,6 +1372,8 @@ def main():
         f.pop("_stack_terms", None)
         for row in f["groups"]:
             row.pop("_text_share", None)
+            row.pop("_set", None)
+            row.pop("_i", None)
     reasons_count = {}
     for n in not_computable:
         key = re.sub(r"\(.*", "", n["reason"]).strip()

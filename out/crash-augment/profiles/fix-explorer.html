@@ -187,9 +187,9 @@ function money(x) { if (x == null) return ''; if (x === 0) return '$0'; const a 
   if (a >= 1e9) return '$' + sig(x / 1e9) + 'B'; if (a >= 1e6) return '$' + sig(x / 1e6) + 'M'; if (a >= 1e3) return '$' + Number(sig(x)).toLocaleString('en-US'); return '$' + sig(x); }
 function pct(x) { return (x == null) ? '' : (Math.round(x * 1000) / 10 >= 10 || Math.abs(x) < 0.001 ? Math.round(x * 100) : (Math.round(x * 1000) / 10)) + '%'; }
 function effText(e) { if (!e) return ''; const f = v => v >= 0 ? pct(v) + ' fewer' : pct(-v) + ' more';
-  const lo = e.l, hi = e.h; return f(e.m) + ' (' + (lo < 0 ? pct(-lo) + ' more' : pct(lo)) + ' to ' + (hi < 0 ? pct(-hi) + ' more' : pct(hi) + ' fewer') + ')' + (e.ksi_only ? ', killed or seriously hurt only' : ''); }
+  const lo = e.l, hi = e.h; if (pct(lo) === pct(hi)) return f(e.m) + (e.ksi_only ? ', killed or seriously hurt only' : ''); return f(e.m) + ' (' + (lo < 0 ? pct(-lo) + ' more' : pct(lo)) + ' to ' + (hi < 0 ? pct(-hi) + ' more' : pct(hi) + ' fewer') + ')' + (e.ksi_only ? ', killed or seriously hurt only' : ''); }
 // a range of people avoided; a low end below zero means the fix could add a few, and says so
-const span = q => q.low < 0 ? `${num(-q.low)} more to ${num(q.high)} fewer` : `${num(q.low)} to ${num(q.high)}`;
+const span = q => num(q.low) === num(q.high) ? num(q.mid != null ? q.mid : q.low) : q.low < 0 ? `${num(-q.low)} more to ${num(q.high)} fewer` : `${num(q.low)} to ${num(q.high)}`;
 const rg = (q, money_) => { if (!money_) return num(q.low) === num(q.high) ? '' : ` (${span(q)})`;
   if (q.high == null) return q.low == null ? '' : ` (${money(q.low)} or more)`;
   return money(q.low) === money(q.high) ? '' : ` (${money(q.low)} to ${money(q.high)})`; };
@@ -315,8 +315,9 @@ function groupDetail(g) {
   const stackWho = { area: 'every area-wide fix', corner: 'every corner and corridor fix', both: 'every area-wide, corner and corridor fix' }[S.stack];
   h += `<p class="note" style="margin:4px 0 0">Stacked, ${stackWho}: ${num(sv)} fewer ${S.measure === 'h' ? 'people hurt' : 'killed or seriously hurt'} a year here${base ? ', ' + pct(sv / base) + ' of this group' : ''}.</p>`;
   if (g.where) h += `<h3>Where These Crashes Happen</h3><p class="note" style="margin:0 0 4px">Places overlap, so the shares add to more than 100%.</p><div class="where">` + g.where.map(([l, v]) => `<span>${esc(l)}</span><div class="bar"><i style="width:${Math.round((v || 0) * 50)}px"></i><b>${pct(v)}</b></div>`).join('') + `</div>`;
-  const on = g.fixes.filter(x => !x.why), off = g.fixes.filter(x => x.why);
-  h += `<h3>Fixes That Reach It, Most People First</h3>`;
+  const mv = x => S.measure === 'k' ? x.k[1] : (x.h ? x.h[1] : -1);
+  const on = g.fixes.filter(x => !x.why).sort((a, b) => mv(b) - mv(a)), off = g.fixes.filter(x => x.why);
+  h += `<h3>Fixes That Reach It, Most ${S.measure === 'k' ? 'Killed or Seriously Hurt' : 'People Hurt'} Avoided First</h3>`;
   if (!g.fixes.length) h += `<p class="note">No fix in the research is mapped to this group yet.</p>`;
   h += on.map(x => fixRow(x)).join('') + off.map(x => fixRow(x)).join('') + legend(g.fixes.map(x => x.id));
   return h;
@@ -326,17 +327,19 @@ function fixRow(x) {
   if (!x.why) x = Object.assign({}, D.refs[x.id + ':' + x.r], x, { ah: x.h ? { low: x.h[0], mid: x.h[1], high: x.h[2] } : null,
     ak: { low: x.k[0], mid: x.k[1], high: x.k[2] }, share: x.s });
   if (x.why) return `<details class="fx off"><summary><span>${esc(f.name)}${tags(x.id)}</span><span class="v">Can't count yet</span></summary>${fullName(x.id)}<dl><dt>Why</dt><dd>${esc(x.why)}</dd><dt>How it works here</dt><dd>${esc(x.mech)}</dd></dl></details>`;
-  const v = x.ah ? num(x.ah.mid) + ' a year' : num(x.ak.mid) + ' killed or seriously hurt a year';
-  const rng = x.ah ? `${span(x.ah)} people hurt a year` : `${span(x.ak)} killed or seriously hurt a year`;
+  const useK = S.measure === 'k' || !x.ah;
+  const v = useK ? num(x.ak.mid) + (S.measure === 'k' ? ' a year' : ' killed or seriously hurt a year') : num(x.ah.mid) + ' a year';
+  const rng = useK ? `${span(x.ak)} killed or seriously hurt a year` : `${span(x.ah)} people hurt a year`;
   const cost = f.cost ? `${money(f.cost.mid)} a year citywide` : 'Not priced';
-  const cph = f.cph ? `${money(f.cph.mid)}${rg(f.cph, true)}, all groups together` : (f.why ? esc(f.why) : 'Not computed');
+  const per = S.measure === 'k' ? f.cpk : f.cph;
+  const cph = per ? `${money(per.mid)}${rg(per, true)}, all groups together` : (f.why ? esc(f.why) : 'Not computed');
   return `<details class="fx"><summary><span>${esc(f.name)}${tags(x.id)}</span><span class="v">${v}</span></summary>${fullName(x.id)}<dl>
     <dt>How it works here</dt><dd>${esc(x.mech)}</dd>
     <dt>Reaches</dt><dd>${x.share != null ? pct(x.share) + ' of the group\'s people hurt' : ''}</dd>
     <dt>Effect</dt><dd>${effText(x.eff)}. ${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.src)}</a>` : esc(x.src)}</dd>
     <dt>Range</dt><dd>${rng}</dd>
     <dt>Cost</dt><dd>${cost}</dd>
-    <dt>Per person hurt avoided</dt><dd>${cph}</dd></dl></details>`;
+    <dt>${S.measure === 'k' ? 'Per person killed or seriously hurt avoided' : 'Per person hurt avoided'}</dt><dd>${cph}</dd></dl></details>`;
 }
 
 /* ---------- view 3: ranking ---------- */

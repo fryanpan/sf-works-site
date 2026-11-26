@@ -30,6 +30,7 @@ Standard library only. A second run on the same inputs writes the same bytes.
 """
 
 import argparse
+import collections
 import json
 import math
 import os
@@ -499,14 +500,23 @@ def build(profiles):
             row["mix"] = mix
         return row
 
-    # a district's crash mix: its share of people hurt in the biggest families beside the citywide share
+    # A district's crash mix: its share of people hurt in the biggest families beside the citywide share, the family
+    # furthest above the city first. The mode is named only where two rows would otherwise share a label. One bar
+    # scale serves every district (mix_max), so the citywide tick stays put from district to district. "District not
+    # stated" has no mix: too few people hurt to read one.
     mixes = {}
     for d in res["district_mix"]["districts"]:
+        if d["district"] == "District not stated":
+            continue
         rows_ = []
         for f in d["families"]:
             lab, sub_, _ = labels.family("%s | %s" % (f["mode"], f["violation"]))
-            rows_.append([lab, sub_, r3(f["share_of_people_injured"]), r3(f["citywide_share"])])
+            rows_.append([lab, sub_.lower(), r3(f["share_of_people_injured"]), r3(f["citywide_share"])])
+        seen = collections.Counter(x[0] for x in rows_)
+        rows_ = [["%s, %s" % (lab, sub_) if seen[lab] > 1 and sub_ else lab, v, c] for lab, sub_, v, c in rows_]
+        rows_.sort(key=lambda x: (-(x[1] - x[2]), x[0]))
         mixes[d["district"]] = rows_
+    mix_max = max((max(v, c) for rows_ in mixes.values() for _, v, c in rows_), default=0)
 
     fg_by = {g["id"]: g for g in fg["groupings"]}
     if sorted(gid for gid, _ in GROUPINGS) != sorted(fg_by):
@@ -596,7 +606,7 @@ def build(profiles):
         "tech": TECH_NOTES, "glossary": GLOSSARY,
     }
     return {"stack_order": [k for k, _, _ in STACKS], "stacks": stacks, "groupings": groupings,
-            "grouping_order": [[gid, label] for gid, label in GROUPINGS], "notes": NOTES, "refs": refs,
+            "grouping_order": [[gid, label] for gid, label in GROUPINGS], "notes": NOTES, "refs": refs, "mix_max": mix_max,
             "fixes": fx, "ranking": ranking, "unranked": unranked, "levers": LEVERS, "about": about}
 
 
@@ -665,8 +675,7 @@ svg text { font-family: inherit; }
 .fx dt { color:var(--muted); } .fx dd { margin:0; }
 .where { display:grid; grid-template-columns: 1fr 90px; gap:3px 8px; font-size:12.5px; align-items:center; }
 .where .bar i { height:10px; background:var(--teal); }
-.mix { display:grid; grid-template-columns: 1fr 56px 58px; gap:4px 8px; font-size:12.5px; align-items:center; }
-.mix small { display:block; color:var(--muted); font-size:11.5px; }
+.mix { display:grid; grid-template-columns: 1fr 100px 50px; gap:4px 8px; font-size:12.5px; align-items:center; }
 .mix .track { position:relative; height:10px; }
 .mix .track i { position:absolute; left:0; top:0; height:10px; background:var(--teal); }
 .mix .track u { position:absolute; top:-3px; width:2px; height:16px; background:var(--ink); }
@@ -924,9 +933,9 @@ function groupDetail(g) {
   const stackWho = { area: 'every area-wide fix', corner: 'every corner and corridor fix', both: 'every area-wide, corner and corridor fix' }[S.stack];
   h += `<p class="note" style="margin:4px 0 0">Stacked, ${stackWho}: ${num(sv)} fewer ${S.measure === 'h' ? 'people hurt' : 'killed or seriously hurt'} a year here${base ? ', ' + pct(sv / base) + ' of this group' : ''}.</p>`;
   if (g.where) h += `<h3>Where These Crashes Happen</h3><p class="note" style="margin:0 0 4px">Places overlap, so the shares add to more than 100%.</p><div class="where">` + g.where.map(([l, v]) => `<span>${esc(l)}</span><div class="bar"><i style="width:${Math.round((v || 0) * 50)}px"></i><b>${pct(v)}</b></div>`).join('') + `</div>`;
-  if (g.mix) { const mx = Math.max(...g.mix.map(m => Math.max(m[2] || 0, m[3]))), w = v => (56 * (v || 0) / mx).toFixed(1);
-    h += `<h3>Crash Mix</h3><p class="note" style="margin:0 0 4px">Share of the district's people hurt in the biggest kinds of crash. The dark line is the citywide share.</p><div class="mix">`
-      + g.mix.map(([l, s, v, c]) => `<span>${esc(l)}${s ? `<small>${esc(s)}</small>` : ''}</span><div class="track"><i style="width:${w(v)}px"></i><u style="left:${w(c)}px"></u></div><span class="v"><b>${pct(v)}</b><span>city ${pct(c)}</span></span>`).join('') + `</div>`; }
+  if (g.mix) { const w = v => (100 * (v || 0) / D.mix_max).toFixed(1), whole = v => Math.round(100 * (v || 0)) + '%';
+    h += `<h3>Crash Mix</h3><p class="note" style="margin:0 0 4px">Share of the district's people hurt in the biggest kinds of crash, furthest above the city first. The dark line is the citywide share.</p><div class="mix">`
+      + g.mix.map(([l, v, c]) => `<span>${esc(l)}</span><div class="track"><i style="width:${w(v)}px"></i><u style="left:${w(c)}px"></u></div><span class="v"><b>${whole(v)}</b><span>city ${whole(c)}</span></span>`).join('') + `</div>`; }
   const mv = x => S.measure === 'k' ? x.k[1] : (x.h ? x.h[1] : -1);
   const on = g.fixes.filter(x => !x.why).sort((a, b) => mv(b) - mv(a)), off = g.fixes.filter(x => x.why);
   h += `<h3>Fixes That Reach It, Most ${S.measure === 'k' ? 'Killed or Seriously Hurt' : 'People Hurt'} Avoided First</h3>`;

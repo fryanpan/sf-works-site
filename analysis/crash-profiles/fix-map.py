@@ -22,11 +22,23 @@ Counting rules (each one is also in the README):
   applied to KSI and not to all people hurt; an effect that names one road user
   (pedestrian, cyclist) is applied only to that mode's groups. An effect on all
   injuries or all crashes is applied to both people hurt and KSI.
-- Target share is read from the record's target_share text: an explicit
+- Reach: a fix listed in analysis/crash-profiles/fixes/reach.json takes each
+  family pair's share from out/crash-augment/profiles/fix-reach.json (written
+  by fix-reach.py): the group's people hurt (and KSI people) in the place the
+  fix goes, within the entry's movement if it names one, over the group's
+  total. reach.json can keep the lane's own share where it names a party or
+  crash type and multiply it by the place's fraction ("text": "multiply"). Its
+  units name SF's count of those places, which replaces UNITS for that fix, and
+  its life_years fills a record that has none (Caltrans LRSM Expected Life).
+- Target share, for every other fix, is read from the record's target_share text: an explicit
   "N% of the group" wins; else "A of B" where B is the group's people hurt (or
   KSI people) total; else the whole group where the text says so; else the
   movement's share from size_families when the entry names a movement. Text
   that matches none of these leaves the pair not computable.
+- SF's own evidence (SF_EVIDENCE, from the whitepaper's outcomes section and
+  methods-by-intervention note, 2026-11-24) sets the low end where a lane's low
+  is more hopeful: no effect where SF's 95% range includes 1, else 1 - SF's
+  ratio (20 mph blocks 1.27, so a low of a 27% rise). Each pair records it.
 - Avoided a year = group count a year x target share x r.
 - Annual cost: a per-year cost is used as is; a one-time cost is divided by
   life_years. A per-unit cost (per corner, mile, signal, camera) is multiplied
@@ -209,6 +221,149 @@ for _i in SIGNAL_TIMING_IDS:
     UNITS[_i] = (1249, 1249, SIGNALS_NOTE)
 # Cost text that gives a total over several years rather than a unit price.
 COST_TOTAL_OVER_YEARS = {"pedestrian-education": 5}  # "FY27 to 31 total"
+
+# SF's own before-and-after results, which set the low end where an outside effect is more hopeful. ratio is the
+# change in injury crashes on treated streets (1 is no change), lo and hi its 95% range (hi None: no upper bound).
+# modes limits a result to the groups of those modes. The low becomes no effect where the range includes 1, else
+# 1 - ratio; it is changed only where the lane's own low is more hopeful than that.
+_SF_SRC = ("SF Works whitepaper Part 1, outcomes section and methods-by-intervention note, 2026-11-24, from DataSF "
+           "ubvf-ztfx and the treatment datasets named there. [DataSF ubvf-ztfx — queried 2026-11-24] [inference — mine]")
+_TWENTY = {"ratio": 1.27, "lo": 1.20, "hi": 1.34, "modes": None, "what": "821 dated 20 mph blocks: injury crashes 1.27 (1.20 to 1.34); the method leans up 6% to 16% on these blocks (selection), and after either correction crashes still ran 10% to 20% above expected"}
+_QUICK = {"ratio": 1.02, "lo": 0.95, "hi": 1.09, "modes": None, "what": "31 quick-build corridors, Empirical Bayes with traffic volumes: 1.02 (0.95 to 1.09), about no change"}
+_HUMPS = {"ratio": 1.04, "lo": 0.51, "hi": None, "modes": None, "what": "818 hump blocks: 0.82 (0.60 to 1.20) against waiting blocks, about no change (1.04, 0.51 with no upper bound) after their pre-trend"}
+_CAMS = [{"ratio": 0.80, "lo": 0.53, "hi": 1.20, "modes": ["pedestrian involved"], "what": "33 camera locations, crashes involving someone walking after the matched-street check: 0.80 (0.53 to 1.20)"},
+         {"ratio": 0.91, "lo": 0.77, "hi": 1.08, "modes": None, "what": "33 camera locations, all injury crashes after the matched-street check: 0.91 (0.77 to 1.08)"}]
+SF_EVIDENCE = {
+    "citywide-default-20mph": [_TWENTY], "neighbourhood-signed-20mph-zones": [_TWENTY], "lower-speed-limits": [_TWENTY],
+    "lane-reduction-road-diet": [{"ratio": 1.01, "lo": 0.92, "hi": 1.09, "modes": None, "what": "16 road diet corridors with traffic volumes in the model: 1.01 (0.92 to 1.09)"}],
+    "corridor-traffic-calming-through-roads": [_QUICK], "quick-build-separated-lane": [_QUICK],
+    "citywide-daylighting-every-corner": [{"ratio": 1.07, "lo": 0.86, "hi": 1.30, "modes": ["pedestrian involved"], "what": "249 painted safety zones: pedestrians hurt 1.07 (0.86 to 1.30) against nearby unpainted corners"}],
+    "vertical-calming-residential": [_HUMPS], "area-wide-engineered-20mph-zones": [_HUMPS],
+    "fixed-speed-cameras": _CAMS, "citywide-speed-camera-network": _CAMS, "rotating-mobile-camera-coverage": _CAMS,
+    "slow-streets-network": [{"ratio": 0.73, "lo": 0.58, "hi": 0.88, "modes": None, "what": "19 Slow Streets: injury crashes 0.73 (0.58 to 0.88); 15 opened in 2020-2021, and SFMTA's counts show traffic at 0.38 of before, so the fall looks like less traffic"}],
+}
+
+
+def sf_low(ev):
+    """The low effect (fraction removed) SF's result sets: none where its range includes 1, else 1 - ratio."""
+    if ev["hi"] is None or ev["lo"] <= 1 <= ev["hi"]:
+        return 0.0
+    return 1 - ev["ratio"]
+
+
+# ---------------------------------------------------------------- reach (fix-reach.json, reach.json)
+
+REACH_FILE = os.path.join(ROOT, "analysis", "crash-profiles", "fixes", "reach.json")
+FIX_REACH = os.path.join(ROOT, "out", "crash-augment", "profiles", "fix-reach.json")
+TIME_SUFFIX = {"late night (11 pm-6 am)": "late_night"}
+
+
+def parse_movements(mv, known):
+    """An entry's movement text as (movements, extra place) or raises ValueError. Pieces are split on ';'."""
+    if not mv:
+        return None, None
+    out, extra = [], None
+    for piece in [p.strip() for p in mv.split(";") if p.strip()]:
+        for suf, tag in TIME_SUFFIX.items():
+            if piece.endswith(", " + suf):
+                piece, extra = piece[: -len(suf) - 2].strip(), tag
+        if piece not in known:
+            raise ValueError("movement %r not in size_families" % piece)
+        out.append(piece)
+    return out, extra
+
+
+class Reach(object):
+    """Shares of a group in a kind of place, from fix-reach.json, for the fixes reach.json maps."""
+
+    def __init__(self, fam, remainder):
+        self.cfg = load(REACH_FILE)["fixes"] if os.path.exists(REACH_FILE) else {}
+        self.data = load(FIX_REACH) if os.path.exists(FIX_REACH) else None
+        self.fam, self.remainder = fam, remainder
+        self.known = sorted({m for f in fam.values() for m in f["movements"]})
+
+    def place_of(self, cid, gname):
+        c = self.cfg[cid]
+        return ((c.get("by_group") or {}).get(gname) or {}).get("place") or c["place"]
+
+    def text_mode(self, cid, gname):
+        return ((self.cfg[cid].get("by_group") or {}).get(gname) or {}).get("text", "replace")
+
+    def counts(self, gname, place, mvs):
+        """(place hurt, place ksi, group hurt, group ksi, movement hurt, movement ksi) for a family or the remainder."""
+        members = self.remainder if gname == "all other families" else [gname]
+        tot = [0, 0, 0, 0, 0, 0]
+        for m in members:
+            g = self.data["groups"].get(m)
+            if g is None:
+                raise KeyError("group %r not in fix-reach.json" % m)
+            P = g["places"].get(place)
+            if P is None:
+                raise KeyError("place %r not in fix-reach.json; run fix-reach.py after editing reach.json" % place)
+            tot[2] += g["people_hurt"]
+            tot[3] += g["ksi"]
+            if mvs:
+                for mv in mvs:
+                    v = P["by_movement"].get(mv, [0, 0])
+                    tot[0] += v[0]
+                    tot[1] += v[1]
+                    fm = self.fam[m]["movements"].get(mv, (0, 0))
+                    tot[4] += fm[0]
+                    tot[5] += fm[1]
+            else:
+                tot[0] += P["people_hurt"]
+                tot[1] += P["ksi"]
+                tot[4] += g["people_hurt"]
+                tot[5] += g["ksi"]
+        return tot
+
+    def share(self, cid, gname, movement, text_share):
+        """(share hurt, share ksi, basis) or (None, None, reason)."""
+        if self.data is None:
+            return None, None, "out/crash-augment/profiles/fix-reach.json missing; run fix-reach.py"
+        place = self.place_of(cid, gname)
+        try:
+            mvs, extra = parse_movements(movement, self.known)
+            if extra:
+                place = "%s&%s" % (place, extra) if "|" not in place else None
+                if place is None:
+                    raise KeyError("an or-place with a time movement is not supported")
+            ph, pk, gh, gk, mh, mk = self.counts(gname, place, mvs)
+        except (KeyError, ValueError) as e:
+            return None, None, "reach: %s" % e.args[0]
+        if not gh:
+            return None, None, "reach: group has nobody hurt"
+        scale = self.cfg[cid].get("share_scale", 1.0)
+        mode = self.text_mode(cid, gname)
+        if mode == "multiply" and text_share is not None:
+            th, tk = text_share
+            fh = ph / mh if mh else 0.0
+            fk = pk / mk if mk else fh
+            sh, sk = th * fh, tk * fk
+            basis = "lane share x %s fraction of %s (fix-reach.json)" % (place, "the movement" if mvs else "the group")
+        else:
+            sh = ph / gh
+            sk = pk / gk if gk else sh
+            basis = "%s share of the group%s (fix-reach.json)" % (place, " within " + "; ".join(mvs) if mvs else "")
+        if scale != 1.0:
+            sh, sk = sh * scale, sk * scale
+            basis += ", x %s (%s)" % (scale, self.cfg[cid].get("scale_basis", ""))
+        return sh, sk, basis
+
+    def units(self, cid):
+        c = self.cfg.get(cid) or {}
+        key = c.get("units")
+        if not key or self.data is None:
+            return None
+        u = self.data["units"].get(key)
+        if not u or u.get("value") is None:
+            return None
+        n = u["value"] * c.get("units_scale", 1)
+        note = "%s %s (%s; %s)" % (("{:,.1f}" if isinstance(u["value"], float) else "{:,}").format(u["value"]),
+                                   key.replace("_", " "), u["how"], u["tag"])
+        if c.get("units_scale"):
+            note += " x %s (%s)" % (c["units_scale"], c.get("scale_basis", ""))
+        return (n, n, note)
 
 # Laws that only allow another fix: the benefit and the cost sit with that fix.
 ENABLERS = {
@@ -559,7 +714,12 @@ AREA_IDS = {
 SPOT_LEVERS = {"street design", "signals"}
 
 
+SCOPE_OVERRIDE = {}  # from reach.json "scope", for street-by-street fixes whose lever is not street design or signals
+
+
 def scope_of(rec):
+    if rec["id"] in SCOPE_OVERRIDE:
+        return SCOPE_OVERRIDE[rec["id"]]
     if rec["id"] in AREA_IDS or any(m.startswith("area:") for m in rec.get("merged_from", [])):
         return "area-wide"
     if rec.get("lever") in SPOT_LEVERS or rec["id"] in ("fixed-speed-cameras", "red-light-cameras",
@@ -609,6 +769,28 @@ def main():
     critique = load(os.path.join(LANES, "critique.json"))
 
     family_names = set(fam)
+    reach = Reach(fam, remainder)
+    reach_log = {}
+    for cid in sorted(reach.cfg):
+        if cid not in merged:
+            reach_log[cid] = {"error": "fix id not in the lanes"}
+            continue
+        c = reach.cfg[cid]
+        entry = {"place": c["place"], "why": c.get("why")}
+        if c.get("scope"):
+            SCOPE_OVERRIDE[cid] = c["scope"]
+            entry["scope"] = c["scope"]
+        u = reach.units(cid)
+        if u is not None:
+            UNITS[cid] = u
+            entry["units"] = u[2]
+        elif c.get("units"):
+            entry["units_error"] = "unit %r not in fix-reach.json" % c["units"]
+        if merged[cid].get("life_years") in (None, "") and c.get("life_years"):
+            merged[cid]["life_years"] = c["life_years"]
+            entry["life_years"] = "%s (%s)" % (c["life_years"], c.get("life_basis", ""))
+        PARTIAL_UNITS.discard(cid)
+        reach_log[cid] = entry
     validation = {}
     for cid in sorted(merged):
         errs = validate(merged[cid], family_names)
@@ -647,7 +829,16 @@ def main():
             sh = sk = None
             sbasis = None
             ts = str(g.get("target_share") or "")
-            if h is not None:
+            reach_row = None
+            if h is not None and cid in reach.cfg and kind in ("family", "remainder"):
+                tsh = None
+                if reach.text_mode(cid, name) == "multiply":
+                    a, b, _ = parse_share(ts, h, k, g.get("movement"), movements)
+                    tsh = (a, b) if a is not None else None
+                sh, sk, sbasis = reach.share(cid, name, g.get("movement"), tsh)
+                reach_row = {"place": reach.place_of(cid, name), "text_share": tsh}
+                last_share[(name, g.get("movement") or "")] = (sh, sk, sbasis)
+            elif h is not None:
                 if re.match(r"\s*same (reach|basis)", ts, re.I) and (name, g.get("movement") or "") in last_share:
                     sh, sk, sbasis = last_share[(name, g.get("movement") or "")]
                     sbasis = "same reach as the entry before: " + str(sbasis)
@@ -661,6 +852,17 @@ def main():
             elif sh is not None and cid in PARTIAL_UNITS and not str(sbasis).startswith("stated"):
                 sh = sk = None
                 sbasis = "the SF unit count covers only part of the reach the text describes (%s)" % UNITS[cid][2]
+            sf_note = None
+            if eff is not None and cid in SF_EVIDENCE:
+                ev = next((x for x in SF_EVIDENCE[cid] if x["modes"] is None or mode in x["modes"]), None)
+                if ev is not None:
+                    lowest = sf_low(ev)
+                    sf_note = {"sf_result": ev["what"], "sf_low": round(lowest, 4), "lane_low": eff["low"], "source": _SF_SRC}
+                    if eff["low"] > lowest + 1e-9:
+                        eff = dict(eff, low=round(lowest, 6))
+                        sf_note["applied"] = "low set to SF's result (lane low was more hopeful)"
+                    else:
+                        sf_note["applied"] = "no change: the lane's low is already at or below SF's result"
             if h is None:
                 reason = "group has no SF count"
             elif eff is None:
@@ -672,6 +874,11 @@ def main():
                 "mechanism": g.get("mechanism"), "target_share_text": g.get("target_share"),
                 "effect": e, "group_people_hurt": h, "group_ksi": k,
             }
+            if reach_row:
+                row["reach_place"] = reach_row["place"]
+                row["_text_share"] = reach_row["text_share"]
+            if sf_note:
+                row["sf_evidence"] = sf_note
             if reason:
                 row["computable"] = False
                 row["reason"] = reason
@@ -729,7 +936,14 @@ def main():
             if gname == "__remainder__":
                 for member in remainder:
                     if member not in fam_effects:
-                        expanded[member] = [dict(r, remainder_applied=True) for r in rows]
+                        mrows = []
+                        for r in rows:
+                            r2 = dict(r, remainder_applied=True)
+                            if r.get("reach_place"):
+                                a, b, _ = reach.share(cid, member, r["movement"], r.get("_text_share"))
+                                r2["share_hurt"], r2["share_ksi"] = r0(a or 0.0, 4), r0(b or 0.0, 4)
+                            mrows.append(r2)
+                        expanded[member] = mrows
             else:
                 expanded[gname] = rows
         stack_terms = {}
@@ -996,6 +1210,8 @@ def main():
 
     for f in out_fixes:
         f.pop("_stack_terms", None)
+        for row in f["groups"]:
+            row.pop("_text_share", None)
     reasons_count = {}
     for n in not_computable:
         key = re.sub(r"\(.*", "", n["reason"]).strip()
@@ -1018,6 +1234,7 @@ def main():
             "families_with_a_computable_fix": sum(1 for g in groups_out if any(x["computable"] for x in g["fixes"])),
             "not_computable_by_reason": dict(sorted(reasons_count.items())),
             "records_with_validation_errors": len(validation),
+            "fixes_placed_by_reach": sum(1 for v in reach_log.values() if "error" not in v),
         },
         "groups": groups_out,
         "cross_cut_groups": cross_out,
@@ -1031,6 +1248,14 @@ def main():
         "aliases": dict(sorted(ALIASES.items())),
         "conflicts": sorted([list(p) for p in CONFLICTS if p[0] < p[1]]),
         "units": {k: {"low": v[0], "high": v[1], "basis": v[2]} for k, v in sorted(UNITS.items())},
+        "reach": {
+            "about": "fixes placed by analysis/crash-profiles/fixes/reach.json: each family pair's share is the group's "
+                     "share in the named place (out/crash-augment/profiles/fix-reach.json), and a per-unit cost is "
+                     "multiplied by SF's count of those places",
+            "fixes": reach_log,
+            "not_placed": (load(REACH_FILE).get("not_placed") if os.path.exists(REACH_FILE) else {}),
+        },
+        "sf_evidence": {k: [dict(ev, low_it_sets=round(sf_low(ev), 4)) for ev in v] for k, v in sorted(SF_EVIDENCE.items())},
         "gaps": gaps,
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

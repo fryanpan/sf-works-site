@@ -1,0 +1,40 @@
+{
+ "about": "Street Roles Map default figures, by tools/street-roles/street-roles.py route.",
+ "data_read": "2026-11-27",
+ "commuters_in_window": 209929,
+ "connected_today": 35271,
+ "connected_network": 126393,
+ "share_today": 0.168,
+ "share_network": 0.6021,
+ "sf_to_sf_jobs": 257933,
+ "miles_by_role": {
+  "through": 128.4,
+  "local": 777.6,
+  "bike": 218.9,
+  "walk": 7.2
+ },
+ "miles_by_rule": {
+  "art": 96.7,
+  "art-brp": 10.0,
+  "art-sep": 31.8,
+  "brp": 208.9,
+  "loc": 777.6,
+  "walk": 7.2
+ },
+ "miles_by_stress": {
+  "today": {
+   "1": 675.0,
+   "2": 81.1,
+   "3": 115.4,
+   "4": 253.5
+  },
+  "network": {
+   "1": 917.2,
+   "2": 19.3,
+   "3": 85.1,
+   "4": 103.4
+  }
+ },
+ "blocks": 15165,
+ "unrated_blocks": 469
+}

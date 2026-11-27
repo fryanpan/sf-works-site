@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
-# Runs the Street Roles Map's route stage (tools/street-roles/street-roles.py route: every commute pair's shortest path, and the connected counts today and with the network) on the GCP VM sf-works-asim-1, then copies its two outputs back.
+# Runs the Street Roles Map's route stage (tools/street-roles/street-roles.py route: every commute pair's shortest path, and the connected counts today and with the network) on a GCP VM, then copies its two outputs back.
 #
 # Usage: tools/street-roles/street-roles-vm.sh
-# Needs gcloud signed in to the project that holds the VM. The VM is started if it is stopped and left running
-# (other jobs share it). prepare runs on the laptop first, since it only reads held copies.
+# The VM's name is the ROUTE_VM setting (environment or local-settings.json, lib/settings.py), and its zone
+# ROUTE_VM_ZONE. Needs gcloud signed in to the project that holds the VM. The VM is started if it is stopped
+# and left running (other jobs share it). prepare runs on the laptop first, since it only reads held copies.
 set -euo pipefail
-VM=${ASIM_VM:-sf-works-asim-1}
-ZONE=${ASIM_ZONE:-us-west1-b}
 REPO=$(cd "$(dirname "$0")/../.." && pwd)
+setting() { python3 -c 'import sys; sys.path.insert(0, sys.argv[1]); from lib import settings; print(settings.get(sys.argv[2]) or "")' "$REPO" "$1"; }
+VM=$(setting ROUTE_VM)
+ZONE=$(setting ROUTE_VM_ZONE)
+[ -n "$VM" ] && [ -n "$ZONE" ] || { echo "street-roles-vm: set ROUTE_VM and ROUTE_VM_ZONE (see lib/settings.py)" >&2; exit 1; }
 DIR=street-roles-run
 ssh_vm() { gcloud compute ssh "$VM" --zone "$ZONE" --command "$1"; }
 

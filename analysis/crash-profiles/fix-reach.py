@@ -328,13 +328,35 @@ def merge_corners(nodes, net, pts):
 
 # ---- per crash ---------------------------------------------------------------------------------------------
 
+MOTORCYCLE_TYPES = {"Motorcycle", "Motor Driven Cycle/Scooter"}
+
+
+def road_user_group(ps, role):
+    """The traffic lever's road-user group of an injured person (analysis/crash-profiles/fixes/traffic-lever.json,
+    from the private repo's modeshift.recount(), whose rule this is): by whether the crash had a moving motor vehicle
+    (a driver party), only a parked one, or none, and the victim's role. A motorcycle-only crash counts as one with a
+    moving motor vehicle."""
+    drivers = [p for p in ps.values() if p.get("party_type") == "Driver"]
+    if drivers:
+        if role in ("Driver", "Passenger"):
+            return "occupant"
+        return {"Pedestrian": "ped_mv", "Bicyclist": "bike_mv"}.get(role, "other_mv")
+    if any(p.get("party_type") == "Parked Vehicle" for p in ps.values()):
+        return "bike_mv" if role == "Bicyclist" else "parked_other"
+    return "bike_nomv" if role in ("Bicyclist", "Pedestrian") else "other_nomv"
+
+
 def crash_records(crashes, parties, victims):
     hurt, ksi = collections.Counter(), collections.Counter()
+    users = collections.defaultdict(lambda: collections.defaultdict(lambda: [0, 0]))
     for v in victims:
         if v["victim_degree_of_injury"] in cp.KSI_PERSON:
             ksi[v["case_id_pkey"]] += 1
         if v["victim_degree_of_injury"] not in cp.NOT_HURT:
             hurt[v["case_id_pkey"]] += 1
+            u = users[v["case_id_pkey"]][road_user_group(parties.get(v["case_id_pkey"], {}), v.get("victim_role"))]
+            u[0] += 1
+            u[1] += v["victim_degree_of_injury"] in cp.KSI_PERSON
     out = []
     for cid in sorted(crashes, key=lambda x: (len(x), x)):
         c = crashes[cid]
@@ -349,6 +371,7 @@ def crash_records(crashes, parties, victims):
             "violation": cp.violation_fine(c["vz_pcf_group"], c["vz_pcf_code"]),
             "movement": cp.MOVEMENT_FINE.get(mover["move_pre_acc"], cp.OTHER_MOVE) if mover else cp.OTHER_MOVE,
             "at_fault": af["party_type"] if af is not None else None,
+            "users": {g: tuple(v) for g, v in sorted(users[cid].items())},
         })
     return out
 

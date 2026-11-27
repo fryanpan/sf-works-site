@@ -68,6 +68,7 @@ The stacks in `fix-map.json`:
 - `greedy_by_ksi`: the same, ranked by cost per KSI person avoided.
 - `area_wide_only`, `corner_and_corridor_only`, `area_wide_and_corner_corridor`: the greedy stack within each kind.
 - Every step of these stacks also carries its cumulative people avoided with every effect at its low and at its high, in the same order.
+- `traffic` on `greedy_by_people_hurt` and the three kind stacks: fewer car trips (30% or 20% of trips by car) after the stack's street fixes, at low, mid and high, with the network built and with no network, and at each budget. [`traffic-lever.json`](traffic-lever.json) carries modeshift.py's factor per road-user group (written by `scripts/crash-fixes/traffic-lever-export.py` in the research repo; there is one model of fewer car trips, and this applies it). Each crash's people take their group's factor from what the street fixes left, and the people hurt on the new transit trips are taken off. The lever adds no city cost and is not ranked. `traffic_lever` at the top of `fix-map.json` holds its sources and each scenario's shares on its own.
 - `greedy_by_people_hurt_optimistic` and `_pessimistic`: `greedy_by_people_hurt`'s fixes in its order with every effect at its high and every cost at its low, and every effect at its low (harmful ones included) and every cost at its high.
 
 ## Counting crash by crash, for any grouping

@@ -1548,9 +1548,10 @@
     "travel_tracker",
     "ecargo_month",
     "curb_restriction",
-    "bike_bus"
+    "bike_bus",
+    "crash-fixes:traffic-lever"
    ],
-   "use": "Fewer school cars cut kids hurt within a quarter mile of a school with the square root of traffic (pooled motor vehicle exponent 0.50), only at bell hours, with school cars taken as 0%, 5% or 25% of bell traffic on residential streets and a tenth of that on main streets.",
+   "use": "Fewer school cars cut kids hurt within a quarter mile of a school with the square root of traffic (pooled motor vehicle exponent 0.50), only at bell hours, with school cars taken as 0%, 5% or 25% of bell traffic on residential streets and a tenth of that on main streets. Crash fix explorer traffic lever: people walking and biking hurt scale with motor traffic at 0.50 and with their own trips at 0.51 (walking) and 0.43 (biking), at mid.",
    "kind": "crash",
    "design": "Meta-analysis of 26 cross-sectional crash prediction models; summary coefficients 0.50 for motor vehicle volume, 0.43 for cycle volume and 0.51 for pedestrian volume, no intervals in the abstract.",
    "quality": {
@@ -1599,6 +1600,61 @@
     "site/src/school-trips-model.mjs"
    ],
    "gaps": "Full text unread (TOI repository did not resolve), so the exponent has no interval and its 2026-10-13 citation is tagged web search. The model runs no low or high on the exponent itself. The header comment in school-trips-model.mjs still says school cars are 25/50/100% of bell traffic while TRAFFIC is [0, 0.05, 0.25]; the constant is what runs, and the 25% high rests on our own DataSF bell-hour check, not this study. MAIN_TRAFFIC 0.1 is our judgment."
+  },
+  {
+   "id": "ewing-kim-2012-vmt",
+   "citation": "Ewing and Kim 2012, Traffic Safety Application, Table 6 (traffic crashes against vehicle miles)",
+   "url": "https://static1.squarespace.com/static/57719e085016e1776170a81c/t/57719e8e890b2719732dad25/1380834196003/20130108Traffic_Safety_Appwithexecutivesummary.pdf",
+   "levers": [
+    "crash-fixes:traffic-lever"
+   ],
+   "use": "Car occupants hurt scale with vehicle miles at an elasticity of 0.66 (people hurt) and 0.89 (KSI) in the traffic lever's low case; the mid takes 1.0.",
+   "kind": "crash",
+   "design": "Cross-sectional regression of county crash counts on vehicle miles and built environment.",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "A cross-sectional elasticity, not a Clearinghouse CMF."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "US counties; SF is one dense county."
+    },
+    "intervention": {
+     "rating": "serious",
+     "why": "Counties with more or fewer vehicle miles, not one city cutting them."
+    },
+    "comparison": {
+     "rating": "serious",
+     "why": "Cross-sectional comparison."
+    },
+    "outcome": {
+     "rating": "none",
+     "why": "Injury and fatal crashes."
+    }
+   },
+   "transfer": {
+    "studyEffect": "Injury crash elasticity to vehicle miles 0.66, fatal 0.89",
+    "ourEffect": "Car occupants hurt fall with vehicle miles at 0.66 (low), 1.0 (mid), 1.25 (high)",
+    "studyExtent": "US counties",
+    "ourExtent": "SF's streets, a citywide cut in car trips",
+    "sizeMatch": "partial",
+    "why": "Used only as the low; the mid of 1.0 is assumed, proportional exposure."
+   },
+   "cost": {
+    "sameProgram": "no cost",
+    "why": "The traffic lever adds no city cost."
+   },
+   "test": {
+    "low": "0.66 people hurt, 0.89 KSI",
+    "high": "1.25 [assumed]"
+   },
+   "gradedFrom": [
+    "scripts/crash-fixes/modeshift.py (research repo)",
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)"
+   ]
   },
   {
    "id": "feldman-2010-sf-school-crosswalks",
@@ -1948,9 +2004,10 @@
    "citation": "Furlong et al. 2025, Low Traffic Neighbourhoods in London reduce road traffic injuries, Injury Prevention",
    "url": "https://researchonline.lshtm.ac.uk/id/eprint/4676732",
    "levers": [
-    "options:circulation-plans"
+    "options:circulation-plans",
+    "crash-fixes:ltn-cell-program-citywide"
    ],
-   "use": "Its 35% (29% to 40%) fall in all injuries inside 113 London schemes sets a cell's 0.58 (0.29 to 0.66) people hurt avoided a year; the low takes half of 35%, and the boundary's -2% (-5% to +2%) is taken as zero in the central.",
+   "use": "Its 35% (29% to 40%) fall in all injuries inside 113 London schemes sets a cell's 0.58 (0.29 to 0.66) people hurt avoided a year; the low takes half of 35%, and the boundary's -2% (-5% to +2%) is taken as zero in the central. Crash fix explorer: all injuries inside the LTN -35% (-40% to -29%) as the mid and high on every group in the cell (KSI -37%, -48% to -24%, within it); the low is the large-LTN stratum's far end, -4% (stratum -22%, -37% to -4%), the size SF's cells fall in [primary, read 2026-11-25].",
    "kind": "crash",
    "design": "113 London low traffic neighbourhood schemes, injuries inside and on boundary roads against comparison areas (design read from the abstract only).",
    "quality": {
@@ -2055,6 +2112,62 @@
     "notes/low-traffic-cells-2026-11/2026-11-05-what-we-know.mdx"
    ],
    "gaps": "Graded from the repo's notes, not from the study opened in this pass. The paper doesn't say how the cells were enforced."
+  },
+  {
+   "id": "green-2014-london-charge",
+   "citation": "Green, Heywood and Navarro 2014, Traffic Accidents and the London Congestion Charge, Lancaster University Economics Working Paper 2014/015",
+   "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/lums/economics/working-papers/LondonCongestionCharge.pdf",
+   "levers": [
+    "crash-fixes:area-cordon-congestion-charge",
+    "crash-fixes:congestion-pricing"
+   ],
+   "use": "The high end of the downtown congestion charge in the crash fix explorer: -40% of the crashes it reaches, every road user.",
+   "kind": "crash",
+   "design": "Difference in differences on police-recorded accidents inside London's charging zone and hours against comparison British cities and hours, 2000 to 2010, regression coefficient -0.403 on accidents involving charged vehicles.",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "Not in the Clearinghouse as far as the KSI check records; a working paper, not peer reviewed at reading."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "Central London's 21 sq km zone in charging hours; SF's downtown at every hour in the explorer."
+    },
+    "intervention": {
+     "rating": "none",
+     "why": "A cordon charge, the treatment the record prices."
+    },
+    "comparison": {
+     "rating": "none",
+     "why": "Other British cities and uncharged hours, a fair comparison for a cordon."
+    },
+    "outcome": {
+     "rating": "serious",
+     "why": "Accidents involving charged vehicles (cars), not people hurt of every road user; its fatal and serious subset fell about 26%, and several London studies found more cyclist and motorcyclist casualties."
+    }
+   },
+   "transfer": {
+    "studyEffect": "Coefficient -0.403, which the paper calls reductions of 38% to 40% in accidents involving charged vehicles; fatal and serious about -26%, 46 a year",
+    "ourEffect": "-40% of people hurt in the crashes the downtown charge reaches, high end only; mid -12% (car occupants) or -4% (people walking and biking)",
+    "studyExtent": "London's central charging zone, weekday charging hours",
+    "ourExtent": "SF's downtown, every hour",
+    "sizeMatch": "partial",
+    "why": "Its outcome is charged-vehicle accidents, so it is used only as the high; TfL's own trend-netted figure is 1% to 2% of injury accidents."
+   },
+   "cost": {
+    "sameProgram": "no cost",
+    "why": "The explorer has no cost for the downtown charge; SFCTA's study costs are not opened."
+   },
+   "test": {
+    "low": "-4% (New York, Itzkowitz et al. 2026, not significant)",
+    "high": "-40% (this study)"
+   },
+   "gradedFrom": [
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)",
+    "analysis/crash-profiles/fixes/lanes/area.json"
+   ]
   },
   {
    "id": "grundy-2009",
@@ -2391,6 +2504,118 @@
    "gaps": "Speed figures by distance were not tabulated in the note; only the report's summary sentence."
   },
   {
+   "id": "itzkowitz-2026-nyc-pricing",
+   "citation": "Itzkowitz et al. 2026, New York congestion pricing and traffic crashes, Table 1",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13537840/",
+   "levers": [
+    "crash-fixes:area-cordon-congestion-charge",
+    "crash-fixes:congestion-pricing",
+    "crash-fixes:congestion-pricing-cordon"
+   ],
+   "use": "The low end of the downtown congestion charge, and the mid for people walking and biking: -4% of the crashes it reaches.",
+   "kind": "crash",
+   "design": "Before and after New York's January 2025 Central Business District toll, injury or fatal crashes in the zone against comparison areas, incidence rate ratio 0.96 (0.88 to 1.06).",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "Not in the Clearinghouse as far as the KSI check records."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "Manhattan below 60th Street, the US's densest downtown; SF's downtown is smaller and less transit-heavy."
+    },
+    "intervention": {
+     "rating": "none",
+     "why": "A cordon toll, the treatment the record prices."
+    },
+    "comparison": {
+     "rating": "none",
+     "why": "Comparison areas over the same months."
+    },
+    "outcome": {
+     "rating": "none",
+     "why": "Injury or fatal crashes, the explorer's people hurt unit up to the crash-to-person step."
+    }
+   },
+   "transfer": {
+    "studyEffect": "IRR 0.96 (0.88 to 1.06), not significant, in the first year",
+    "ourEffect": "-4% of people hurt in the crashes the charge reaches (low; mid for people walking and biking)",
+    "studyExtent": "Manhattan's tolling zone, every hour, one year",
+    "ourExtent": "SF's downtown, every hour",
+    "sizeMatch": "partial",
+    "why": "One year of data and an interval that includes no effect; used as the low."
+   },
+   "cost": {
+    "sameProgram": "no cost",
+    "why": "The explorer has no cost for the downtown charge."
+   },
+   "test": {
+    "low": "-4% (this study's point estimate)",
+    "high": "-40% (Green, Heywood and Navarro 2014)"
+   },
+   "gradedFrom": [
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)",
+    "analysis/crash-profiles/fixes/lanes/area.json"
+   ]
+  },
+  {
+   "id": "jacobsen-2003-safety-in-numbers",
+   "citation": "Jacobsen 2003, Safety in numbers: more walkers and bicyclists, safer walking and bicycling, Injury Prevention 9",
+   "url": "https://nacto.org/wp-content/uploads/2003_Jacobsen_Safety-In-Numbers-More-Walkers-and-Bicyclists-Safer-Walking-and-Bicycling.pdf",
+   "levers": [
+    "crash-fixes:traffic-lever"
+   ],
+   "use": "Safety in numbers in the traffic lever: people walking and biking hurt grow less than their trips (exponent about 0.4), so each trip gets safer as trips grow.",
+   "kind": "crash",
+   "design": "Cross-sectional comparison of injuries against amount of walking and cycling across cities and countries, and time series in a few.",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "Ecological cross-sectional study, not a CMF."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "California cities, Danish towns and European countries; SF is one city."
+    },
+    "intervention": {
+     "rating": "serious",
+     "why": "Places with more walking and cycling, not one city adding them."
+    },
+    "comparison": {
+     "rating": "serious",
+     "why": "Cross-sectional."
+    },
+    "outcome": {
+     "rating": "none",
+     "why": "Pedestrians and cyclists hurt."
+    }
+   },
+   "transfer": {
+    "studyEffect": "Injuries grow with walking or cycling to the power about 0.4",
+    "ourEffect": "Exponents 0.51 (walking) and 0.43 (biking) at mid, from Elvik and Bjornskau 2017, with this as the original finding",
+    "studyExtent": "Whole cities and countries",
+    "ourExtent": "SF citywide",
+    "sizeMatch": "match",
+    "why": "Citywide scale on both sides; causality not shown."
+   },
+   "cost": {
+    "sameProgram": "no cost",
+    "why": "The traffic lever adds no city cost."
+   },
+   "test": {
+    "low": "0.60",
+    "high": "0.40 walking, 0.30 biking"
+   },
+   "gradedFrom": [
+    "scripts/crash-fixes/modeshift.py (research repo)",
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)"
+   ]
+  },
+  {
    "id": "johnson-2024",
    "citation": "Johnson et al. 2024, walking school bus cluster randomized trial, 22 Title I schools in Houston and the Seattle area",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11083767/",
@@ -2510,9 +2735,10 @@
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11187370/",
    "levers": [
     "calm",
-    "bad_district"
+    "bad_district",
+    "crash-fixes:twenty-mph-every-street-state-law"
    ],
-   "use": "Speed limit signs cut kids hurt within 500 ft of the school grounds by 10% (5% to 25%), only in the hours the limit applies (the zone's share of kids hurt on weekdays 7 to 9 am and 2 to 5 pm, August to June). 20 mph Business Districts: kids hurt on the lowered main street blocks, at any hour and every mode, fall 10% (0% to 19%), the study's own estimate and interval.",
+   "use": "Speed limit signs cut kids hurt within 500 ft of the school grounds by 10% (5% to 25%), only in the hours the limit applies (the zone's share of kids hurt on weekdays 7 to 9 am and 2 to 5 pm, August to June). 20 mph Business Districts: kids hurt on the lowered main street blocks, at any hour and every mode, fall 10% (0% to 19%), the study's own estimate and interval. Crash fix explorer: the mid, -10%, of a 20 mph limit on every SF street, posted ones too, under a state law.",
    "kind": "crash",
    "design": "Phased citywide 20 mph limit with signs, education and enforcement and no physical calming; casualties on changed streets against streets kept at 30 mph over three years, plus zones against matched Scottish control zones.",
    "quality": {
@@ -2740,6 +2966,63 @@
     "notes/speed-humps-2026-10/2026-10-31-evidence.md (primary — read 2026-10-31)"
    ],
    "gaps": "Executive summary pages 1 to 2 only, through the evidence note. British cars are narrower, which affects straddling."
+  },
+  {
+   "id": "li-gao-2019-london-ksi",
+   "citation": "Li and Gao 2019, London congestion charge and car occupants killed or seriously injured, synthetic control, as reported in Singichetti et al. 2021, Table 2",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545360/",
+   "levers": [
+    "crash-fixes:area-cordon-congestion-charge",
+    "crash-fixes:congestion-pricing-cordon"
+   ],
+   "use": "The mid of the downtown congestion charge for car occupants: -12% of the crashes it reaches.",
+   "kind": "crash",
+   "design": "Synthetic control on London crashes with a car occupant killed or seriously injured, -12.12%, read through Singichetti et al.'s scoping review; the paper itself is not opened.",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "Not in the Clearinghouse; graded from a scoping review's table, not the paper."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "Car occupants in London; the explorer applies it to car occupants in SF's downtown."
+    },
+    "intervention": {
+     "rating": "none",
+     "why": "A cordon charge."
+    },
+    "comparison": {
+     "rating": "none",
+     "why": "A synthetic control, as the review reports."
+    },
+    "outcome": {
+     "rating": "serious",
+     "why": "Car occupants killed or seriously injured only; the explorer applies it to every person hurt in car-only crashes."
+    }
+   },
+   "transfer": {
+    "studyEffect": "-12.12% car occupant KSI crashes",
+    "ourEffect": "-12% of people hurt in car-only crash groups the charge reaches (mid)",
+    "studyExtent": "London's charging zone",
+    "ourExtent": "SF's downtown",
+    "sizeMatch": "partial",
+    "why": "A KSI value applied to everyone hurt in car-only groups, and read second hand."
+   },
+   "cost": {
+    "sameProgram": "no cost",
+    "why": "The explorer has no cost for the downtown charge."
+   },
+   "test": {
+    "low": "-4% (Itzkowitz et al. 2026)",
+    "high": "-40% (Green, Heywood and Navarro 2014)"
+   },
+   "gradedFrom": [
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)",
+    "analysis/crash-profiles/fixes/lanes/area.json"
+   ],
+   "gaps": "Li and Gao 2019 not opened; the figure and design are as Singichetti et al. 2021 report them."
   },
   {
    "id": "lisbon-bike-trains-2022",
@@ -3643,6 +3926,62 @@
     "scratch/runs/vvp-plans/presend-3/result.txt (pre-send review 3, 2026-11-11): verified item 13, Table 3.12.1 rows read from the Wayback copy"
    ],
    "gaps": "Graded from the notes that read chapter 3.12 on 2026-10-31; the live tshandbok.no refuses connections; Table 3.12.1 was read from the 2026-05-12 Wayback copy on 2026-11-10 and 2026-11-11. Area-wide traffic calming is a different chapter, 3.1 Trafikksanering (whole area -17%, -34% to +6%, injury crashes, Table 3.1.1, per notes/traffic-circles-diverters-2026-10/2026-10-31-evidence.md); the -31% is chapter 3.12's speed hump row, which the brief cites correctly as Table 3.12.1. The eleven studies' traffic volumes, years and hump spacing were not read."
+  },
+  {
+   "id": "nyc-dot-2017-safer-cycling",
+   "citation": "NYC DOT 2017, Safer Cycling: Bicycle Ridership and Safety in New York City, with London's Casualties in Greater London 2019",
+   "url": "https://www.nyc.gov/html/dot/downloads/pdf/bike-safety-study-fullreport2017.pdf",
+   "levers": [
+    "crash-fixes:traffic-lever"
+   ],
+   "use": "The traffic lever's bike exponent with the network built: bike crashes grow with riding at 0.10 (mid), between London's +0.07 and NYC's -0.34 over their network build-outs.",
+   "kind": "crash",
+   "design": "City time series of cyclist KSI against cycling counts while each city built its bike network; no comparison city.",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "Agency trend report, not an evaluation."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "New York and London riders; SF's."
+    },
+    "intervention": {
+     "rating": "serious",
+     "why": "Riding growth together with network building, not riding alone."
+    },
+    "comparison": {
+     "rating": "very serious",
+     "why": "Before and after, no comparison."
+    },
+    "outcome": {
+     "rating": "serious",
+     "why": "Cyclists killed or seriously injured, applied to every bike crash."
+    }
+   },
+   "transfer": {
+    "studyEffect": "NYC: risk fell as riding grew, implied exponent -0.34; London: +0.07",
+    "ourEffect": "Exponent 0.43 (low), 0.10 (mid), -0.30 (high) on bike crashes with the network built; 1.0 with no network",
+    "studyExtent": "Citywide, over about 15 years of network building",
+    "ourExtent": "SF citywide, network built",
+    "sizeMatch": "partial",
+    "why": "The mid of 0.10 is our inference between two cities' records; the network's own effect cannot be separated from riding."
+   },
+   "cost": {
+    "sameProgram": "no cost",
+    "why": "The traffic lever adds no city cost; the network's cost is not in the lever."
+   },
+   "test": {
+    "low": "0.43 (Elvik and Bjornskau 2017)",
+    "high": "-0.30"
+   },
+   "gradedFrom": [
+    "scripts/crash-fixes/modeshift.py (research repo)",
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)"
+   ],
+   "gaps": "London's Casualties in Greater London 2019 figure is as the KSI check reads it; its own url is not in the lever's source list."
   },
   {
    "id": "nycdot-2019-safety-treatments",
@@ -5119,6 +5458,62 @@
     "site/src/school-trips-model.mjs"
    ],
    "gaps": "Read through ETSC's summary of Transport for Wales, tagged secondary in the notes; the Transport for Wales report itself was not opened. No interval is recorded."
+  },
+  {
+   "id": "welsh-gov-2024-collisions",
+   "citation": "Welsh Government, Police recorded road collisions: 2024",
+   "url": "https://www.gov.wales/police-recorded-road-collisions-2024-html",
+   "levers": [
+    "crash-fixes:twenty-mph-every-street-state-law",
+    "crash-fixes:citywide-default-20mph"
+   ],
+   "use": "The high end of the 20 mph limits in the crash fix explorer: -25% of people hurt on the streets the limit covers.",
+   "kind": "crash",
+   "design": "Official before and after counts of police-recorded casualties on 20 and 30 mph roads after Wales's September 2023 default 20 mph limit, no comparison area.",
+   "quality": {
+    "sms": null,
+    "smsWhy": "Not scored: SMS is for behaviour studies; this is a crash effect.",
+    "cmfStars": "unrated",
+    "cmfWhy": "Official statistics, not an evaluation; before and after with no comparison, so regression to the mean and the national trend are not removed."
+   },
+   "indirectness": {
+    "population": {
+     "rating": "serious",
+     "why": "Wales's towns and villages; SF is a dense city with more walking and cycling."
+    },
+    "intervention": {
+     "rating": "serious",
+     "why": "A 30 to 20 mph default; SF's streets go 25 to 20 mph, so the speed change is smaller."
+    },
+    "comparison": {
+     "rating": "very serious",
+     "why": "No comparison area or trend."
+    },
+    "outcome": {
+     "rating": "none",
+     "why": "Casualties, the explorer's people hurt."
+    }
+   },
+   "transfer": {
+    "studyEffect": "Casualties on 20 and 30 mph roads down about 25% the first full year",
+    "ourEffect": "-25% of people hurt on the streets the limit covers (high only); mid -10% (Kokka et al. 2024)",
+    "studyExtent": "Every restricted road in Wales",
+    "ourExtent": "Every SF street without a posted limit (default), or every surface street (state law)",
+    "sizeMatch": "partial",
+    "why": "A smaller speed change in SF and no control, so it is the high, not the mid."
+   },
+   "cost": {
+    "sameProgram": true,
+    "why": "The $5,299 a mile is Wales's own sign cost (about £4,200 a mile) for the same change."
+   },
+   "test": {
+    "low": "0% (SF's own 20 mph blocks show no drop)",
+    "high": "-25% (this source)"
+   },
+   "gradedFrom": [
+    "research/notes/whitepaper-2026-11/part-1/2026-11-26-area-wide-ksi-check.mdx (research repo)",
+    "analysis/crash-profiles/fixes/lanes/fill.json"
+   ]
   },
   {
    "id": "wow-scotland-2023",

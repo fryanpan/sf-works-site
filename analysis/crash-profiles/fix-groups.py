@@ -35,7 +35,10 @@ COUNTING
 
   Stacks: each stack in STACKS is replayed in fix-map.json's order, crash by crash at mid: a step's people avoided on
   a crash are its people x what the steps before left on it x (1 - the step's factor). Each step's sum must equal
-  fix-map.json's marginal at that step, and the same allocation bounds hold for every group at every step.
+  fix-map.json's marginal at that step, and the same allocation bounds hold for every group at every step. After
+  the last step, the traffic lever (fix-map.json's traffic_lever, network built, mid) multiplies what is left on each
+  crash by its road-user group's factor, written as the stack's "|traffic30" and "|traffic20" entries. Their sums, less the
+  people hurt on new transit trips (which have no crash, so are in no group), must equal fix-map.json's traffic marginal.
 
 OUTPUT, out/crash-augment/profiles/fix-groups.json
   groupings[]      id, name, unit and every group: its key, people hurt and KSI people over the years (equal to
@@ -70,6 +73,7 @@ def module(name, file):
 
 cp = module("crash_profiles", "crash-profiles.py")
 fr = module("fix_reach", "fix-reach.py")
+fmap = module("fix_map", "fix-map.py")
 
 
 def load(name):
@@ -125,6 +129,12 @@ def within(amount, held, what):
         raise SystemExit("fix-groups: %s: %.6f avoided against %s held" % (what, amount, held))
 
 
+def near(x, rounded, places):
+    """x matches fix-map.json's figure rounded to places: within half a unit of the last place, so a sum that lands on
+    a rounding tie in floating point (18.3375 to 18.337 or 18.338) still matches."""
+    return abs(x - rounded) <= 0.5 * 10 ** -places + 1e-9
+
+
 def main():
     res = load("results.json")
     fm = load("fix-map.json")
@@ -137,6 +147,8 @@ def main():
     if fr_out["years"] != years:
         raise SystemExit("fix-reach years differ from results.json")
     tags = {r["case"]: r["tags"] for r in fr_recs}
+    users = {r["case"]: r["users"] for r in fr_recs}
+    lever = json.load(open(fmap.TRAFFIC_FILE, encoding="utf-8"))
     crashes, parties, victims = cp.load(*years)
     bci, _ = cp.bci_blocks()
     recs, _, _ = cp.crash_records(crashes, parties, victims, bci)
@@ -209,7 +221,7 @@ def main():
             fh, fk = f["hurt_avoided_per_year"][q], f["ksi_avoided_per_year"][q]
             sh = sum(a[Q.index(q)] for a in alloc.values())
             sk = sum(a[3 + Q.index(q)] for a in alloc.values())
-            if round(sh, 2) != fh or round(sk, 3) != fk:
+            if not (near(sh, fh, 2) and near(sk, fk, 3)):
                 raise SystemExit("fix-groups: %s %s counts %.6f hurt and %.6f KSI crash by crash; fix-map.json has %s and %s"
                                  % (fid, q, sh, sk, fh, fk))
         per_fix[fid], main_row[fid], factors[fid] = alloc, best, fac
@@ -233,11 +245,28 @@ def main():
                 within((h - k) * (1 - y), h - k, "%s step %d on crash %s (other hurt)" % (sname, s["step"], c))
             sh = sum(v[0] for v in step.values())
             sk = sum(v[1] for v in step.values())
-            if round(sh, 2) != s["marginal_hurt_avoided"] or round(sk, 3) != s["marginal_ksi_avoided"]:
+            if not (near(sh, s["marginal_hurt_avoided"], 2) and near(sk, s["marginal_ksi_avoided"], 3)):
                 raise SystemExit("fix-groups: %s step %d (%s) counts %.4f hurt and %.4f KSI; fix-map.json has %s and %s"
                                  % (sname, s["step"], s["id"], sh, sk, s["marginal_hurt_avoided"], s["marginal_ksi_avoided"]))
             steps.append(step)
         stack_alloc[sname] = steps
+        # the traffic lever after the stack's street fixes, network built, mid: "<stack>|traffic<car share>"
+        for scen, cell in sorted((st.get("traffic") or {}).items()):
+            F = lever["scenarios"][scen]["network_built"]["factors"]
+            add = lever["scenarios"][scen]["network_built"]["transit_riders_added_a_year"]
+            step = {}
+            for c in sorted(held):
+                h, k = held[c]
+                a, b = fmap.crash_traffic_factor(users[c], F, "mid")
+                step[c] = [(k * remk[c] * (1 - a) + (h - k) * remo[c] * (1 - b)) / n_years, k * remk[c] * (1 - a) / n_years]
+            sh = sum(v[0] for v in step.values()) - add["hurt"]["mid"]
+            sk = sum(v[1] for v in step.values()) - add["ksi"]["mid"]
+            if not (near(sh, cell["network_built"]["marginal_hurt_avoided"]["mid"], 2) and \
+                    near(sk, cell["network_built"]["marginal_ksi_avoided"]["mid"], 3)):
+                raise SystemExit("fix-groups: %s's traffic step at %s%% counts %.4f hurt and %.4f KSI; fix-map.json has %s and %s"
+                                 % (sname, scen, sh, sk, cell["network_built"]["marginal_hurt_avoided"]["mid"],
+                                    cell["network_built"]["marginal_ksi_avoided"]["mid"]))
+            stack_alloc["%s|traffic%s" % (sname, scen)] = [step]
 
     # ---- sum by grouping
     def crash_key(gid, key):

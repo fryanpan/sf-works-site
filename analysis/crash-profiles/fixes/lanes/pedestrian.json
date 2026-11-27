@@ -2072,7 +2072,7 @@
       "mid": 0.62,
       "high": 1.0,
       "unit": "CMF",
-      "applies_to": "all accidents inside London's charging zone (-38% to -40%, no displacement found), against Noland's null result",
+      "applies_to": "accidents involving charged vehicles inside London's charging zone in charging hours (-38% to -40% in the paper's words; fatal and serious about -26%), against Noland's null result",
       "source": "Green, Heywood and Navarro 2014 via prior-work note",
       "tag": "[secondary — verify]"
      }

@@ -1800,7 +1800,7 @@
       "mid": 38,
       "high": 40,
       "unit": "% fewer accidents in the zone",
-      "applies_to": "all accidents inside the London zone; no displacement found",
+      "applies_to": "accidents involving charged vehicles inside the London zone in charging hours; no displacement found",
       "source": "Green, Heywood and Navarro 2014 (London: -38% to -40%) against Noland's null result, per prior-work survey",
       "tag": "[secondary — verify]"
      }

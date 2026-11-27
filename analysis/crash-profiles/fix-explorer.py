@@ -12,12 +12,20 @@ plain SVG and HTML for the charts, so it opens with no network.
 --profiles names the folder holding the four inputs (default this repo's
 out/crash-augment/profiles), so the page can be rebuilt on revised numbers.
 
-The three stacks come from fix-map.json's stacks (area_wide_only,
-corner_and_corridor_only, area_wide_and_corner_corridor). Each step carries
+The four stacks come from fix-map.json's stacks (area_wide_only,
+corner_and_corridor_only, area_wide_and_corner_corridor, and
+greedy_by_people_hurt, shown as "Both, plus laws"). Each step carries
 the mid and the low and high band, which fix-map.py counts crash by crash in
 the same order with every effect at its low and at its high. The script stops
 if a step's band does not hold its mid: a band that does not surround its line
 would be wrong.
+
+"Trips by car" adds fix-map.json's traffic lever as one last step on each
+stack: the people the street fixes left, cut by fewer car trips (30% or 20% of
+trips by car, from scripts/crash-fixes/modeshift.py in the research repo, via
+fixes/traffic-lever.json), net of the people hurt on the new transit trips. It
+adds no city cost, so it sits at the last street step's cost. CAR_SHARES must
+match fix-map.json's scenarios or the run stops.
 
 The Crash Groups view offers every grouping in fix-groups.json. A grouping with
 more than GROUP_ROWS + 1 groups shows its GROUP_ROWS biggest named groups (no
@@ -49,7 +57,11 @@ STACKS = [
     ("area", "area_wide_only", "Area-wide only"),
     ("corner", "corner_and_corridor_only", "Corner and corridor only"),
     ("both", "area_wide_and_corner_corridor", "Both"),
+    ("all", "greedy_by_people_hurt", "Both, plus laws"),
 ]
+TRAFFIC_STACKS = {src for _, src, _ in STACKS}
+# The Trips by car chips: today's share (no lever) and the two shares fix-map.json's traffic lever carries.
+CAR_SHARES = ["53", "30", "20"]
 LEVERS = [
     ("street design", "Street Design"),
     ("signals", "Signals"),
@@ -425,7 +437,25 @@ def build(profiles):
         for x in budgets:
             if x["spent"] > x["b"] + 1:
                 raise SystemExit("fix-explorer: %s spends %s at a budget of %s" % (src, x["spent"], x["b"]))
-        stacks[key] = {"label": label, "steps": steps, "not_added": st["not_added"], "budgets": budgets}
+        # the car-trip cut, one more step after the street fixes: network built (the step) and before it (its own row)
+        traffic = {}
+        for scen, cell in sorted((st.get("traffic") or {}).items()):
+            nb, nn = cell["network_built"], cell["no_network"]
+            h = [nb["share_of_people_hurt_avoided"][q] for q in ("low", "mid", "high")]
+            k = [nb["share_of_ksi_avoided"][q] for q in ("low", "mid", "high")]
+            if not (h[0] <= h[1] + 1e-4 <= h[2] + 2e-4 and k[0] <= k[1] + 1e-4 <= k[2] + 2e-4):
+                raise SystemExit("fix-explorer: %s traffic %s: the band %s / %s does not hold its mid" % (src, scen, h, k))
+            traffic[scen] = {
+                "h": [r3(x) for x in h], "k": [r3(x) for x in k],
+                "dh": round(nb["marginal_hurt_avoided"]["mid"], 1), "dk": round(nb["marginal_ksi_avoided"]["mid"], 2),
+                "nh": round(nn["marginal_hurt_avoided"]["mid"], 1), "nk": round(nn["marginal_ksi_avoided"]["mid"], 2),
+                "budgets": [{"h": round(b["hurt_avoided"], 1), "k": round(b["ksi_avoided"], 2)} for b in cell["at_budgets"]],
+            }
+            if len(traffic[scen]["budgets"]) != len(budgets):
+                raise SystemExit("fix-explorer: %s traffic %s has %d budget rows, the stack %d" % (src, scen, len(traffic[scen]["budgets"]), len(budgets)))
+        if src in TRAFFIC_STACKS and sorted(traffic) != sorted(CAR_SHARES[1:]):
+            raise SystemExit("fix-explorer: %s has no traffic lever for %s; rerun fix-map.py" % (src, CAR_SHARES[1:]))
+        stacks[key] = {"label": label, "steps": steps, "not_added": st["not_added"], "budgets": budgets, "traffic": traffic}
 
     # groups: every grouping in fix-groups.json, each row with the fixes that reach its crashes
     def where_of(names):
@@ -496,6 +526,11 @@ def build(profiles):
         for key, src, _ in STACKS:
             out[key] = [round(sum(sum(g["stacks"][src]["hurt"]) for g in members), 1),
                         round(sum(sum(g["stacks"][src]["ksi"]) for g in members), 2)]
+            # the car-trip cut's people avoided in these crashes, after the stack (new transit riders aren't on any)
+            for scen in CAR_SHARES[1:]:
+                t = "%s|traffic%s" % (src, scen)
+                out["%s|%s" % (key, scen)] = [round(sum(sum(g["stacks"][t]["hurt"]) for g in members), 1),
+                                              round(sum(sum(g["stacks"][t]["ksi"]) for g in members), 2)]
         return out
 
     def make_row(gid, key, members, label, sub, line, where, mapped_keys, mix=None):
@@ -592,6 +627,7 @@ def build(profiles):
             "lowconf": feet(((f.get("reach_confidence") or {}).get("why") or "").replace("Low confidence on reach: ", "")) or None
             if (f.get("reach_confidence") or {}).get("level") == "low" else None,
             "most": (f.get("reach_treated") or "").startswith("most it could reach"),
+            "phase": feet(f.get("phase_in")) or None,
         }
     ranking = [r["id"] for r in fm["ranking"]]
     unranked = sorted((i for i in fx if i not in set(ranking)), key=lambda i: fx[i]["name"])
@@ -615,7 +651,22 @@ def build(profiles):
         "read": sorted(set(fr["sources"].values()))[-1],
         "tech": TECH_NOTES, "glossary": GLOSSARY,
     }
-    return {"stack_order": [k for k, _, _ in STACKS], "stacks": stacks, "groupings": groupings,
+    tl = fm["traffic_lever"]
+    if CAR_SHARES != [str(tl["car_share_today"])] + sorted(tl["scenarios"], key=lambda s: -int(s)):
+        raise SystemExit("fix-explorer: CAR_SHARES %s do not match fix-map.json's traffic lever" % CAR_SHARES)
+    about["traffic"] = {
+        s: {"shares": v["trip_shares"],
+            "transit": [round(v["network_built"]["transit_riders_added_a_year"]["hurt"]["mid"]),
+                        round(v["network_built"]["transit_riders_added_a_year"]["ksi"]["mid"], 1)],
+            "miles": r3(1 - v["network_built"]["motor_vehicle_miles_factor"]["mid"]),
+            "alone": [r3(v["network_built"]["alone_share_of_people_hurt_avoided"]["mid"]),
+                      r3(v["network_built"]["alone_share_of_ksi_avoided"]["mid"])]}
+        for s, v in tl["scenarios"].items()}
+    about["traffic_sources"] = [{"t": x["what"], "u": x["url"]} for x in tl["sources"]]
+    hier = fixes.get("street-hierarchy-through-network")
+    about["hierarchy"] = [round(hier["hurt_avoided_per_year"]["mid"]), round(hier["ksi_avoided_per_year"]["mid"])] \
+        if hier and not hier["computable"] and hier.get("hurt_avoided_per_year") else None
+    return {"stack_order": [k for k, _, _ in STACKS], "stacks": stacks, "car_shares": CAR_SHARES, "groupings": groupings,
             "grouping_order": [[gid, label] for gid, label in GROUPINGS], "notes": NOTES, "refs": refs, "mix_max": mix_max,
             "fixes": fx, "ranking": ranking, "unranked": unranked, "levers": LEVERS, "about": about}
 
@@ -658,6 +709,7 @@ svg text { font-family: inherit; }
 .steps li .n { font-weight:700; color:var(--teal); }
 .steps li .v { font-variant-numeric: tabular-nums; text-align:right; white-space:nowrap; }
 .steps li.sel { background:var(--teal-soft); }
+.steps li.aside { cursor:default; color:var(--muted); font-size:12.5px; }
 .steps li .more { grid-column: 2 / 4; display:none; color:var(--muted); font-size:12.5px; }
 .steps li.sel .more { display:block; }
 .tag.q { background:#eef0f3; color:#59626f; }
@@ -766,6 +818,8 @@ table.bud th:first-child, table.bud td:first-child { text-align:left; }
       <div class="chips" id="stackChips"></div>
       <p class="label">Count</p>
       <div class="chips" id="measureChips"></div>
+      <p class="label">Share of trips by car</p>
+      <div class="chips" id="carChips"></div>
     </div>
     <div class="ctl" data-for="groups">
       <label class="label" for="groupSel">Group crashes by</label>
@@ -785,7 +839,7 @@ table.bud th:first-child, table.bud td:first-child { text-align:left; }
       <p class="note">Each fix acts only on the people the fixes before it left in each crash, so no one is counted twice. Shaded band: the studies' low to high effects.</p>
       <h3>What a Yearly Budget Buys</h3>
       <table class="bud" id="budTable"></table>
-      <p class="note">The cheapest fixes per person hurt avoided that fit, skipping any that would go over and going on to the next.</p>
+      <p class="note" id="budNote"></p>
     </div>
     <div class="view" data-for="groups">
       <h2>Who Gets Hurt, a Year</h2>
@@ -814,8 +868,17 @@ table.bud th:first-child, table.bud td:first-child { text-align:left; }
 <script>
 const D = JSON.parse(document.getElementById('data').textContent);
 const F = D.fixes;
-const S = { view:'stack', stack:'both', measure:'h', grouping:'family', group:null, lever:'all', fix:null, step:0 };
-const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const S = { view:'stack', stack:'both', measure:'h', car:D.car_shares[0], grouping:'family', group:null, lever:'all', fix:null, step:0 };
+const CAR = '__car';
+// a stack's steps, plus the car-trip cut as one more step when fewer trips go by car: it adds no city cost, so it
+// sits at the last street fix's cost
+function stepsOf(key) { const st = D.stacks[key], tr = st.traffic[S.car];
+  if (!tr) return st.steps;
+  const last = st.steps[st.steps.length - 1];
+  return st.steps.concat([{ id: CAR, cost: last.cost, add: 0, h: tr.h, k: tr.k, dh: tr.dh, dk: tr.dk }]); }
+const more = (v, unit) => v < 0 ? `${num(-v)} more${unit}` : `${num(v)} fewer${unit}`;
+const untag = s => String(s == null ? '' : s).replace(/\s*\[(?:[^\]]*(?:—|verify|inference|queried|read|unretrieved|settled|cite pending))[^\]]*\]/g, '').replace(/,\s*\)/g, ')');
+const esc = s => untag(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const phone = () => window.innerWidth <= 760;
 function sig(x, n=2) { if (x === 0) return '0'; const a = Math.abs(x); const e = Math.floor(Math.log10(a)) - n + 1; const v = Math.round(x / Math.pow(10, e)) * Math.pow(10, e); return e < 0 ? v.toFixed(-e) : String(Math.round(v)); }
 function num(x) { if (x == null) return ''; const a = Math.abs(x); if (a >= 100) return Number(sig(x)).toLocaleString('en-US'); if (a >= 10) return sig(x); if (a >= 1) return Number(sig(x)).toFixed(a < 10 && Number(sig(x)) % 1 ? 1 : 0); return Number(sig(x)).toString(); }
@@ -825,21 +888,24 @@ function pct(x) { return (x == null) ? '' : (Math.round(x * 1000) / 10 >= 10 || 
 function effText(e) { if (!e) return ''; if (e.pm) return `${pct(e.hm)} fewer people hurt and ${pct(e.m)} fewer killed or seriously hurt, from the power model on a ${e.pm}`; const f = v => v >= 0 ? pct(v) + ' fewer' : pct(-v) + ' more';
   const lo = e.l, hi = e.h; if (pct(lo) === pct(hi)) return f(e.m) + (e.ksi_only ? ', killed or seriously hurt only' : ''); return f(e.m) + ' (' + (lo < 0 ? pct(-lo) + ' more' : pct(lo)) + ' to ' + (hi < 0 ? pct(-hi) + ' more' : pct(hi) + ' fewer') + ')' + (e.ksi_only ? ', killed or seriously hurt only' : ''); }
 // a range of people avoided; a low end below zero means the fix could add a few, and says so
-const span = q => num(q.low) === num(q.high) ? num(q.mid != null ? q.mid : q.low) : q.low < 0 ? `${num(-q.low)} more to ${num(q.high)} fewer` : `${num(q.low)} to ${num(q.high)}`;
+const span = q => num(q.low) === num(q.high) ? num(q.mid != null ? q.mid : q.low) : q.low < 0 ? `between ${num(-q.low)} more and ${num(q.high)} fewer` : `${num(q.low)} to ${num(q.high)}`;
 const rg = (q, money_) => { if (!money_) return num(q.low) === num(q.high) ? '' : ` (${span(q)})`;
   if (q.high == null) return q.low == null ? '' : ` (${money(q.low)} or more)`;
   return money(q.low) === money(q.high) ? '' : ` (${money(q.low)} to ${money(q.high)})`; };
 
 /* ---------- tags: Area-wide for the kind of fix, and at most one caveat on its reach ---------- */
-const STACKED = new Set(D.stacks.both.steps.map(s => s.id));
+const STACKED = new Set(D.stacks.all.steps.map(s => s.id).concat(D.stacks.both.steps.map(s => s.id)));
 const LEG = {
   'Area-wide': 'covers whole neighborhoods or the city',
+  'Phases in': 'a rule for new cars, so its full effect comes only once most cars on the road have it, in about 15 to 20 years',
   'At most': "places already treated aren't netted out, so it's the most the fix could reach",
   'Reach uncertain': 'the city data on where it could go is rough',
-  'Not stacked': "the stack leaves it out, because a similar fix is already in or it's a citywide law",
+  'Not stacked': "the stack leaves it out, because a similar fix is already in or it avoids no one the fixes before it left",
 };
 function tagList(id, ns) { const f = F[id], t = [];
+  if (!f) return t;
   if (f.area) t.push('Area-wide');
+  if (f.phase) t.push('Phases in');
   if (f.lowconf) t.push('Reach uncertain'); else if (f.most) t.push('At most');
   if (ns && !STACKED.has(id)) t.push('Not stacked');
   return t; }
@@ -848,7 +914,7 @@ const tags = (id, ns) => tagList(id, ns).map(tagHtml).join('');
 function legend(ids, ns) { const seen = new Set(); ids.forEach(i => tagList(i, ns).forEach(k => seen.add(k)));
   const ks = Object.keys(LEG).filter(k => seen.has(k));
   return ks.length ? `<p class="legend">${ks.map(k => `${tagHtml(k)} ${LEG[k]}`).join('. ')}.</p>` : ''; }
-const fullName = id => F[id].full !== F[id].name ? `<span class="full">${esc(F[id].full)}</span>` : '';
+const fullName = id => '';  // the record's long name lists its study cities, which About and Sources carry
 
 function chips(el, items, key, after) {
   const box = document.getElementById(el);
@@ -859,7 +925,7 @@ function chips(el, items, key, after) {
 
 /* ---------- view 1: stacked curve ---------- */
 function drawStack() {
-  const st = D.stacks[S.stack], m = S.measure, steps = st.steps;
+  const m = S.measure, steps = stepsOf(S.stack);
   if (S.step >= steps.length) S.step = 0;
   const last = steps[steps.length - 1];
   document.getElementById('stackTitle').textContent = (m === 'h' ? 'Share of SF People Hurt Avoided a Year' : 'Share of SF People Killed or Seriously Hurt Avoided a Year');
@@ -868,12 +934,17 @@ function drawStack() {
   const H = ph ? 300 : Math.min(470, Math.max(320, window.innerHeight - 56 - 150));
   const ml = 44, mr = ph ? 74 : 84, mt = 12, mb = 40;
   const iw = W - ml - mr, ih = H - mt - mb;
-  let first = 1e9; for (const k of D.stack_order) first = Math.min(first, D.stacks[k].steps[0].cost);
+  // the cost axis starts at the cheapest priced step; laws with no city cost sit on its left edge
+  let first = 1e9; for (const k of D.stack_order) for (const s of D.stacks[k].steps) if (s.cost > 0) first = Math.min(first, s.cost);
   const lx0 = Math.floor(Math.log10(first)), x0 = Math.pow(10, lx0);
   const X = v => ml + (Math.log10(Math.max(v, x0)) - lx0) / (9 - lx0) * iw;
-  // the axis starts at 0: a fix's low end can be no effect, and the band is clipped there
+  // the axis starts at 0: a fix's low end can be no effect, and the band is clipped there. One scale for every
+  // choice, so the axis never moves when a chip is tapped
   let yhi = 0.4;
-  for (const k of D.stack_order) for (const s of D.stacks[k].steps) yhi = Math.max(yhi, s.h[2], s.k[2]);
+  for (const k of D.stack_order) {
+    for (const s of D.stacks[k].steps) yhi = Math.max(yhi, s.h[2], s.k[2]);
+    for (const t of Object.values(D.stacks[k].traffic)) yhi = Math.max(yhi, t.h[2], t.k[2]);
+  }
   yhi = Math.ceil(yhi * 10) / 10;
   const Y = v => mt + (yhi - Math.max(0, v)) / yhi * ih;
   let g = '';
@@ -902,6 +973,9 @@ function drawStack() {
   const ey = Y(last[m][1]);
   const cnt = steps.reduce((a, s) => a + (m === 'h' ? s.dh : s.dk), 0);
   g += `<text x="${ml + iw + 6}" y="${ey - 2}" font-size="${ph ? 15 : 18}" font-weight="700" fill="#2f7d76">${num(cnt)}</text><text x="${ml + iw + 6}" y="${ey + 13}" font-size="10.5" fill="#59626f">fewer, ${pct(last[m][1])}</text>`;
+  // the band's top edge says what it is: the package with every study at its high
+  const hy = Math.max(mt + 11, Y(last[m][2]) - 5);
+  if (Y(last[m][2]) < ey - 24) g += `<text x="${ml + iw - 4}" y="${hy}" text-anchor="end" font-size="11" fill="#59626f">Every study at its high: ${pct(last[m][2])}</text>`;
   g += `<rect class="hit" x="${ml}" y="${mt}" width="${iw}" height="${ih}" fill="transparent" style="cursor:pointer"/>`;
   box.innerHTML = `<svg width="${W}" height="${H}" role="img" aria-label="Share avoided against cost a year">${g}</svg>`;
   // a tap anywhere on the plot picks the step nearest along x
@@ -911,20 +985,29 @@ function drawStack() {
     if (phone()) document.querySelector('#stepList .sel').scrollIntoView({ behavior: 'smooth', block: 'center' }); };
 }
 function drawBudgets() {
-  const st = D.stacks[S.stack], hk = S.measure === 'h';
-  const cols = hk ? [['People hurt avoided', b => num(b.h)], ['Killed or seriously hurt', b => num(b.k)]]
-                  : [['Killed or seriously hurt avoided', b => num(b.k)], ['People hurt', b => num(b.h)]];
+  const st = D.stacks[S.stack], hk = S.measure === 'h', tr = st.traffic[S.car];
+  // with fewer trips by car, each row's people avoided include the car-trip cut on top of that budget's fixes
+  const row = (b, i) => tr ? Object.assign({}, b, tr.budgets[i]) : b;
+  const all = b => b.n >= st.steps.length;
+  const cols = [[hk ? 'People hurt avoided' : 'Killed or seriously hurt avoided', b => all(b) ? 'Every fix: the end of the line' : num(hk ? b.h : b.k)]];
   document.getElementById('budTable').innerHTML = `<tr><th>Budget a year</th><th>Spent</th><th class="wideOnly">Fixes</th>${cols.map(([t]) => `<th>${t}</th>`).join('')}</tr>`
-    + st.budgets.map(b => `<tr><td>${money(b.b)}</td><td>${money(b.spent)}</td><td class="wideOnly">${b.n}</td>${cols.map(([, f]) => `<td>${f(b)}</td>`).join('')}</tr>`).join('');
+    + st.budgets.map((b, i) => `<tr><td>${money(b.b)}</td><td>${money(b.spent)}</td><td class="wideOnly">${b.n}</td>${cols.map(([, f]) => `<td>${f(row(b, i))}</td>`).join('')}</tr>`).join('');
+  document.getElementById('budNote').textContent = 'The cheapest fixes per person hurt avoided that fit, skipping any that would go over and going on to the next.'
+    + (tr ? ` Each row adds car trips cut to ${S.car}%.` : '');
 }
 function drawSteps(scroll) {
-  const st = D.stacks[S.stack], m = S.measure;
+  const st = D.stacks[S.stack], m = S.measure, steps = stepsOf(S.stack), tr = st.traffic[S.car];
   const ol = document.getElementById('stepList');
-  ol.innerHTML = st.steps.map((s, i) => { const f = F[s.id];
-    const v = m === 'h' ? num(s.dh) + ' fewer hurt' : num(s.dk) + ' fewer';
-    const per = m === 'h' ? money(s.add / Math.max(s.dh, 1e-9)) + ' per person hurt avoided' : money(s.add / Math.max(s.dk, 1e-9)) + ' per person killed or seriously hurt avoided';
+  const unit = m === 'h' ? ' hurt' : '';
+  ol.innerHTML = steps.map((s, i) => {
+    const v = more(m === 'h' ? s.dh : s.dk, unit);
+    if (s.id === CAR) return `<li data-i="${i}" class="${i === S.step ? 'sel' : ''}"><span class="n">${i + 1}</span><span>Car trips cut to ${esc(S.car)}%, bike network built</span><span class="v">${v}</span>
+      <span class="more">Car trips fall from ${esc(D.car_shares[0])}% to ${esc(S.car)}% of trips, and walking, biking and transit take them. Cars on the road are hurt less, more people walking and biking share the streets, and new transit riders add a few injuries. Its cost isn't counted here.</span></li>`;
+    const f = F[s.id];
+    const per = s.add === 0 ? 'No city cost at this step.' : 'About ' + (m === 'h' ? money(s.add / Math.max(s.dh, 1e-9)) + ' per person hurt avoided' : money(s.add / Math.max(s.dk, 1e-9)) + ' per person killed or seriously hurt avoided') + ' at this step.';
     return `<li data-i="${i}" class="${i === S.step ? 'sel' : ''}"><span class="n">${i + 1}</span><span>${esc(f.name)}${tags(s.id)}</span><span class="v">${v}</span>
-      <span class="more">${fullName(s.id)}${esc(f.how)}<br>About ${per} at this step.</span></li>`; }).join('')
+      <span class="more">${fullName(s.id)}${esc(f.how)}<br>${per}</span></li>`; }).join('')
+    + (tr ? `<li class="aside"><span class="n"></span><span>The same cut before the bike network is built</span><span class="v">${more(m === 'h' ? tr.nh : tr.nk, unit)}</span></li>` : '')
     + (st.not_added.length ? `<li style="cursor:default;display:block;color:#59626f;font-size:12.5px">Not added, because a version of them is already in or they avoid no one on what is left: ${st.not_added.map(i => esc(F[i].name)).join('; ')}.</li>` : '');
   document.getElementById('stepLegend').innerHTML = legend(st.steps.map(s => s.id));
   ol.onclick = e => { const li = e.target.closest('li[data-i]'); if (!li) return; S.step = +li.dataset.i; drawStack(); drawSteps(false); writeHash(); };
@@ -954,9 +1037,11 @@ function drawGroups() {
 function groupDetail(g) {
   let h = `<h2>${esc(g.label)}${g.sub ? ` <span style="font-weight:400;color:#59626f">· ${esc(g.sub)}</span>` : ''}</h2>`;
   if (g.at) h += `<p class="note" style="margin:0 0 6px">${esc(g.at)}</p>`;
-  const se = g.st[S.stack], sv = S.measure === 'h' ? se[0] : se[1], base = S.measure === 'h' ? g.h : g.k;
-  const stackWho = { area: 'every area-wide fix', corner: 'every corner and corridor fix', both: 'every area-wide, corner and corridor fix' }[S.stack];
-  h += `<p class="note" style="margin:4px 0 0">Stacked, ${stackWho}: ${num(sv)} fewer ${S.measure === 'h' ? 'people hurt' : 'killed or seriously hurt'} a year here${base ? ', ' + pct(sv / base) + ' of this group' : ''}.</p>`;
+  const j = S.measure === 'h' ? 0 : 1, te = g.st[S.stack + '|' + S.car];
+  const sv = g.st[S.stack][j] + (te ? te[j] : 0), base = S.measure === 'h' ? g.h : g.k;
+  const stackWho = { area: 'every area-wide fix', corner: 'every corner and corridor fix', both: 'every area-wide, corner and corridor fix',
+                     all: 'every fix and law' }[S.stack] + (te ? `, car trips cut to ${S.car}%` : '');
+  h += `<p class="note" style="margin:4px 0 0">Stacked, ${stackWho}: ${more(sv, S.measure === 'h' ? ' people hurt' : ' killed or seriously hurt')} a year here${base ? ', ' + pct(Math.abs(sv) / base) + ' of this group' : ''}.</p>`;
   if (g.where) h += `<h3>Where These Crashes Happen</h3><p class="note" style="margin:0 0 4px">Places overlap, so the shares add to more than 100%.</p><div class="where">` + g.where.map(([l, v]) => `<span>${esc(l)}</span><div class="bar"><i style="width:${Math.round((v || 0) * 50)}px"></i><b>${pct(v)}</b></div>`).join('') + `</div>`;
   if (g.mix) { const w = v => (100 * (v || 0) / D.mix_max).toFixed(1), whole = v => Math.round(100 * (v || 0)) + '%';
     h += `<h3>Crash Mix</h3><p class="note" style="margin:0 0 4px">Share of the district's people hurt in the biggest kinds of crash, furthest above the city first. The dark line is the citywide share.</p><div class="mix">`
@@ -1019,10 +1104,11 @@ function drawRank() {
 function fixDetail(id) {
   const f = F[id];
   return `<h2>${esc(f.full)}${tags(id, true)}</h2><p>${esc(f.how)}</p>
-    <div class="big">${num(f.ah.mid)}</div><p class="bigsub">fewer people hurt a year${num(f.ah.low) !== num(f.ah.high) ? `, likely ${span(f.ah)}` : ''}</p>
+    <div class="big">${num(f.ah.mid)}</div><p class="bigsub">fewer people hurt a year</p>
     <div class="fx sec" style="border:0"><dl>
+    ${num(f.ah.low) !== num(f.ah.high) ? `<dt>Range, people hurt</dt><dd>${span(f.ah)} a year</dd>` : ''}
     <dt>Killed or seriously hurt</dt><dd>${num(f.ak.mid)} fewer a year${rg(f.ak)}</dd>
-    ${f.cost.mid === 0 ? '<dt>Cost</dt><dd>No public cost</dd>' : `<dt>Cost</dt><dd>${money(f.cost.mid)} a year${rg(f.cost, true)}</dd><dt>Per person hurt avoided</dt><dd>${money(f.cph.mid)}${rg(f.cph, true)}</dd>`}
+    ${f.cost.mid === 0 ? '<dt>Cost</dt><dd>No public cost</dd>' : `<dt>Cost</dt><dd>${money(f.cost.mid)} a year${rg(f.cost, true)}</dd>`}
     ${f.top.length > 1 ? `<dt>Groups it helps most</dt><dd>${f.top.map(([g]) => esc(g)).join('; ')}</dd>` : f.top.length ? `<dt>Group it helps most</dt><dd>${esc(f.top[0][0])}</dd>` : ''}
     ${f.lowconf ? `<dt>Reach uncertain</dt><dd>${esc(f.lowconf)}</dd>` : ''}
     ${f.sf ? `<dt>SF's own result</dt><dd>${esc(f.sf)}</dd>` : ''}
@@ -1034,7 +1120,8 @@ function fixDetail(id) {
 function about() {
   const a = D.about;
   const h = `<p>Crashes are SF's injury crashes ${a.years[0]} to ${a.years[1]} from the Transportation Injury Mapping System and DataSF, about ${a.people_year.toLocaleString('en-US')} people hurt and ${a.ksi_year} killed or seriously hurt a year. Places come from DataSF street, signal, stop sign and High Injury Network data read ${esc(a.read)}.</p>
-  <p><b>What is stacked.</b> The stacks hold the fixes that go in places: area-wide fixes and corner or corridor fixes. Citywide laws, fleet rules and programs, such as stop-as-yield for people biking, are ranked on their own but not stacked.</p>
+  <p><b>What is stacked.</b> The first three choices hold the fixes that go in places: area-wide fixes and corner or corridor fixes. <i>Both, plus laws</i> adds citywide laws, vehicle rules and programs, such as stop-as-yield for people biking, a 20 mph limit on every street (which needs a state law) and the federal and state rules for new cars: automatic emergency braking, which federal rules require on new cars, and speed assistance that holds a car to the limit. Those two rules cost the city nothing, and their effect is the one once most cars on the road have them.${a.hierarchy ? ` A street hierarchy that keeps through traffic on main streets would avoid about ${num(a.hierarchy[0])} people hurt a year if its sources hold, but SF has no cost for it, so it isn't stacked.` : ''}</p>
+  <p><b>Fewer trips by car.</b> Today ${esc(D.car_shares[0])}% of trips to, from and within SF go by car (<a href="https://www.sfmta.com/sites/default/files/reports-and-documents/2020/01/sfmta_travel_decision_survey_2019.pdf" target="_blank" rel="noopener">SFMTA Travel Decision Survey 2019</a>). The 30% and 20% choices move those trips to walking, transit and biking (${['30', '20'].map(s => `at ${s}%: walk ${a.traffic[s].shares.walk}%, transit ${a.traffic[s].shares.transit}%, bike ${a.traffic[s].shares.bike}%`).join('; ')}), with the bike network built first. The trips that switch are short, so vehicle miles fall only ${pct(a.traffic['30'].miles)} and ${pct(a.traffic['20'].miles)}. People in cars are hurt in step with vehicle miles. People walking and biking are hurt in step with about the square root of traffic, and per trip they're hurt less as more of them ride and walk, as London's and New York's riders were while their networks grew. New transit riders add about ${a.traffic['30'].transit[0]} and ${a.traffic['20'].transit[0]} people hurt a year. On today's crashes alone, the cut avoids ${pct(a.traffic['30'].alone[0])} and ${pct(a.traffic['20'].alone[0])} of people hurt, and ${pct(a.traffic['30'].alone[1])} and ${pct(a.traffic['20'].alone[1])} of those killed or seriously hurt. It is counted after the street fixes, on the people they leave, so no one is counted twice. Before the network is built, riders face today's risk per trip, and the row under the step shows that case. For scale, congestion charges cut vehicle miles in their zones by 14% in Stockholm (<a href="http://www.probeinternational.org/old_drupal/UrbanNewSite/FinalReportStockholmTrial.pdf" target="_blank" rel="noopener">Facts and Results from the Stockholm Trials</a>, chapter 6) and 7.1% in New York (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13537840/" target="_blank" rel="noopener">Itzkowitz et al. 2026</a>, Table 1). The cut's cost isn't counted. Its sources: ${a.traffic_sources.map(s => `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join('; ')}. New transit riders' injuries are on no crash, so a crash group's figure leaves them out.</p>
   <p><b>Counting rule.</b> A fix's effect comes from its studies, applied to the crashes it reaches. In a stack, each fix acts only on the people the fixes before it left in each crash (TRL PPR844), which assumes the effects are independent. An effect measured on deaths and serious injuries only counts those people, who are also people hurt. Where a study's reach is a share of a group that the crash data can't pick out, such as the downtown charging zone, it is spread over the whole group. Costs are a year: a build cost is spread over its service life, and a fix is priced at every place of its kind in SF. Dollar years are as each source gives them.</p>
   <p><b>The shaded band.</b> It runs from the studies' low to high effects. A fix's low end can be no effect, or even a few more crashes, so the band is cut off at zero rather than drawn below it.</p>
   <p><b>What SF's own results did.</b> Where SF has tested a fix on its own streets, its result sets the low end where the studies were more hopeful:</p>
@@ -1056,6 +1143,7 @@ function readHash() {
   if (['stack', 'groups', 'rank'].includes(q.get('v'))) S.view = q.get('v');
   if (D.stacks[q.get('s')]) S.stack = q.get('s');
   if (['h', 'k'].includes(q.get('m'))) S.measure = q.get('m');
+  if (D.car_shares.includes(q.get('c'))) S.car = q.get('c');
   if (q.get('n') && +q.get('n') >= 1) S.step = Math.floor(+q.get('n')) - 1;
   if (D.groupings[q.get('g')]) S.grouping = q.get('g');
   if (q.get('r')) S.group = q.get('r');
@@ -1064,7 +1152,7 @@ function readHash() {
 }
 function writeHash() {
   const q = new URLSearchParams();
-  q.set('v', S.view); q.set('s', S.stack); q.set('m', S.measure); q.set('n', S.step + 1); q.set('g', S.grouping);
+  q.set('v', S.view); q.set('s', S.stack); q.set('m', S.measure); q.set('c', S.car); q.set('n', S.step + 1); q.set('g', S.grouping);
   if (S.group) q.set('r', S.group);
   if (S.lever !== 'all') q.set('l', S.lever);
   if (S.fix) q.set('f', S.fix);
@@ -1080,6 +1168,9 @@ readHash();
 setView(S.view);
 chips('stackChips', D.stack_order.map(k => [k, D.stacks[k].label]), 'stack', () => { S.step = 0; render(); });
 chips('measureChips', [['h', 'People hurt'], ['k', 'Killed or seriously hurt']], 'measure', render);
+chips('carChips', D.car_shares.map((v, i) => [v, i ? v + '%' : 'Today, ' + v + '%']), 'car', () => {
+  const n = stepsOf(S.stack).length; S.step = Math.min(S.step, n - 1); if (D.stacks[S.stack].traffic[S.car]) S.step = n - 1;
+  render(); const sel = document.querySelector('#stepList .sel'); if (sel) sel.scrollIntoView({ block: 'nearest' }); });
 const gsel = document.getElementById('groupSel');
 gsel.innerHTML = D.grouping_order.map(([v, t]) => `<option value="${esc(v)}">${esc(t)}</option>`).join('');
 gsel.value = S.grouping;

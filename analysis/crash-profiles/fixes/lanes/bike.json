@@ -1584,13 +1584,13 @@
      "mechanism": "Fewer drivers turning and changing lanes beside riders downtown.",
      "target_share": "Share of this family downtown not computed [DataSF ubvf-ztfx, 8gtc-pjc6, nwes-mmgh — queried 2026-11-25]",
      "effect": {
-      "low": -40,
-      "mid": -39,
-      "high": -38,
+      "low": -4,
+      "mid": -4,
+      "high": -40,
       "unit": "% change in accidents",
-      "applies_to": "All accidents inside London's charging zone; Noland finds no effect",
-      "source": "Green, Heywood and Navarro 2014",
-      "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+      "applies_to": "Low: New York injury or fatal crashes in the zone, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al. 2026). Mid: London crashes with a car occupant killed or seriously injured, -12.12% by synthetic control (Li and Gao 2019, read through Singichetti et al. 2021, Table 2), so it counts people in cars only; for people walking and biking the mid is New York's -4%. High: accidents involving charged vehicles, in the zone and in charging hours, a regression coefficient of -0.403 that the paper calls reductions of 38-40% (Green, Heywood and Navarro 2014); its fatal and serious subset fell about 26%, 46 a year. TfL's own trend-netted figure is 40 to 70 injury accidents a year in the zone and Inner Ring Road, 1% to 2% of them (4th Impacts Monitoring Report, section 6). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Itzkowitz et al. 2026; Li and Gao 2019 via Singichetti et al. 2021; Green, Heywood and Navarro 2014",
+      "tag": "[primary — read 2026-11-26] for Green, Itzkowitz and TfL; [secondary — verify] for Li and Gao"
      }
     }
    ],
@@ -1607,12 +1607,27 @@
    "sf_now": "SFCTA studied downtown pricing; nothing adopted [model knowledge — verify].",
    "sf_evidence": null,
    "who_decides": "State authorizing legislation, then SFCTA and the Board of Supervisors [model knowledge — verify].",
-   "evidence_grade": "low for bikes: one study, a conflicting null, and no bike-specific result.",
+   "evidence_grade": "low for bikes: no bike-specific result; New York's not-significant -4% is the low and mid, London's charged-vehicle -40% the high.",
    "sources": [
     {
      "title": "Green, Heywood and Navarro, Traffic accidents and the London congestion charge, Lancaster working paper, 2014",
      "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/lums/economics/working-papers/LondonCongestionCharge.pdf",
      "tag": "[secondary — repo note research/notes/whitepaper-2026-11/part-1/2026-11-25-crash-type-to-fix-prior-work.md, verify]"
+    },
+    {
+     "title": "Singichetti et al. 2021, congestion pricing and road safety scoping review, Table 2 (Li and Gao 2019's -12.12%)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545360/",
+     "tag": "[secondary — read 2026-11-26; Li and Gao unopened]"
+    },
+    {
+     "title": "Transport for London, Central London Congestion Charging Impacts Monitoring, Fourth Annual Report, 2006, section 6",
+     "url": "https://content.tfl.gov.uk/fourthannualreportfinal.pdf",
+     "tag": "[primary — read 2026-11-26]"
+    },
+    {
+     "title": "Itzkowitz et al. 2026, New York congestion pricing and crashes, Table 1",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13537840/",
+     "tag": "[primary — read 2026-11-26]"
     }
    ]
   },

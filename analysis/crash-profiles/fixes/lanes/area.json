@@ -13,11 +13,11 @@
      "target_share": "residential 1,357 / 96 (of which not high-stress 857) = 1,357 of 4,611 hurt and 96 of 298 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -27,11 +27,11 @@
      "target_share": "residential 1,031 / 19 (of which not high-stress 678) = 1,031 of 3,119 hurt and 19 of 121 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -41,11 +41,11 @@
      "target_share": "residential 688 / 26 (of which not high-stress 502) = 688 of 1,323 hurt and 26 of 53 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -55,11 +55,11 @@
      "target_share": "residential 1,015 / 60 (of which not high-stress 565) = 1,015 of 3,974 hurt and 60 of 208 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -69,10 +69,10 @@
      "target_share": "residential 1,010 / 102 (of which not high-stress 538) = 1,010 of 2,491 hurt and 102 of 274 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -44,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell (Poisson rate ratio against the rest of London)",
-      "applies_to": "Pedestrian casualties on streets inside the LTN: all modes inside -35% (-40% to -29%); pedestrians -44% (-52% to -34%), pedestrian KSI -53% (-66% to -34%). Low and mid come from LTNs of 100,000 m2 or more, the size class SF's cells fall in (median 0.257 km2): -22% (-37% to -4%). Not for streets on the cell's edge",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
       "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
@@ -83,10 +83,10 @@
      "target_share": "residential 542 / 91 (of which not high-stress 271) = 542 of 1,649 hurt and 91 of 330 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -44,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell (Poisson rate ratio against the rest of London)",
-      "applies_to": "Pedestrian casualties on streets inside the LTN: all modes inside -35% (-40% to -29%); pedestrians -44% (-52% to -34%), pedestrian KSI -53% (-66% to -34%). Low and mid come from LTNs of 100,000 m2 or more, the size class SF's cells fall in (median 0.257 km2): -22% (-37% to -4%). Not for streets on the cell's edge",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
       "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
@@ -97,11 +97,11 @@
      "target_share": "residential 443 / 33 (of which not high-stress 188) = 443 of 1,137 hurt and 33 of 90 KSI people on these street classes (family_stress.by_street_class). SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -22,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Cyclist casualties inside the LTN: -22% (-32% to -12%); cyclist KSI -27% (-46% to -2%). Low from the large-LTN stratum's CI",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -111,10 +111,10 @@
      "target_share": "Group total 434 hurt / 88 KSI people (size_families.chart); its split by street class is not in family_stress, so the reachable share is not computed. SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -44,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell (Poisson rate ratio against the rest of London)",
-      "applies_to": "Pedestrian casualties on streets inside the LTN: all modes inside -35% (-40% to -29%); pedestrians -44% (-52% to -34%), pedestrian KSI -53% (-66% to -34%). Low and mid come from LTNs of 100,000 m2 or more, the size class SF's cells fall in (median 0.257 km2): -22% (-37% to -4%). Not for streets on the cell's edge",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
       "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
@@ -125,11 +125,11 @@
      "target_share": "3,617 hurt / 232 KSI people, 11.9% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -139,11 +139,11 @@
      "target_share": "1,598 hurt / 151 KSI people, 5.2% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -153,11 +153,11 @@
      "target_share": "3,145 hurt / 227 KSI people, 10.3% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -167,11 +167,11 @@
      "target_share": "1,146 hurt / 116 KSI people, 3.8% of all people hurt (grouping_alternatives, place grouping). Only the part inside built cells: SF's 152 candidate cells (out/low-traffic-cells/candidates.json) hold 1,592 of 14,500 injury crashes in 2021-2025 (11.0%) and 125 KSI crashes, more than 20 m inside their edges, so a full program reaches roughly 11% of the group overall, and more of its residential share; the per-group share inside cells is not computed [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -22,
-      "high": -43,
+      "mid": -35,
+      "high": -40,
       "unit": "% change in injuries inside the cell",
-      "applies_to": "Motor vehicle occupant casualties inside the LTN: car, van and other occupants -43% (-53% to -32%); all modes -35%. Mid and low are the large-LTN stratum, -22% (-37% to -4%), and Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
-      "source": "Furlong et al. 2025, Tables 2 and 4",
+      "applies_to": "All injuries inside the LTN -35% (-40% to -29%), the mid and high (Furlong et al. 2025); KSI -37% (-48% to -24%), within the all-injury value, so one effect serves both. By road user: car, van and other occupants -43%, people walking -44%, people biking -22%. The low is the large-LTN stratum's far end, -4% (that stratum -22%, -37% to -4%), the size class SF's cells fall in; Outer London 2020-2024 LTNs did -18% (-33% to -2%)",
+      "source": "Furlong et al. 2025, Injury Prevention, Tables 2 and 4",
       "tag": "[primary — read 2026-11-25]"
      }
     },
@@ -203,7 +203,7 @@
    "sf_now": "None built as a cell. Duboce Triangle has an SFCTA-funded study ($250,000, 2025) that stalled on turn-ban objections; Page Street and the Slow Streets are corridor filters. Four trial cells (Duboce, two Bayview, Outer Sunset) are sketched in the repo's LTN designer.",
    "sf_evidence": "None for a cell. Slow Streets (corridor filters) on 19 streets: injury crashes 0.73 (0.58 to 0.88), 0.88 (0.64 to 1.12) without those with other changes, with traffic at 0.38 of before, so the fall looks like less traffic (2026-11-24-methods-by-intervention.mdx).",
    "who_decides": "City Traffic Engineer and SFMTA Board (Vehicle Code §21101(f) findings, as for Slow Streets); SFFD reviews every filter; Board of Supervisors through SFCTA Prop L allocations.",
-   "evidence_grade": "moderate: one large controlled before-and-after study (113 London LTNs, 2012-2024, rest of London as control), with injuries returning when LTNs were removed; but nothing tests SF's hills, and SF-size cells did about half as well (-22%).",
+   "evidence_grade": "moderate: one large controlled before-and-after study (113 London LTNs, 2012-2024, rest of London as control), with injuries returning when LTNs were removed; but nothing tests SF's hills, and the large-LTN stratum, the size SF's cells fall in, did -22% (-37% to -4%), so the low is its far end.",
    "displacement": "Boundary roads -2% (-5% to +2%) all injuries and 0% (-7% to +8%) KSI in London (Furlong 2025); traffic inside about halved (-46% mean) and boundary +1% mean, +4% median against background trends (Thomas and Aldred 2024, via circulation note). Single bus boundary roads can fail (Streatham Wells, suspended 2024).",
    "sources": [
     {
@@ -1420,9 +1420,9 @@
       "mid": -12,
       "high": -40,
       "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
-      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
-      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
-      "tag": "[secondary — verify]"
+      "applies_to": "Low: New York injury or fatal crashes in the zone, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al. 2026). Mid: London crashes with a car occupant killed or seriously injured, -12.12% by synthetic control (Li and Gao 2019, read through Singichetti et al. 2021, Table 2), so it counts people in cars only; for people walking and biking the mid is New York's -4%. High: accidents involving charged vehicles, in the zone and in charging hours, a regression coefficient of -0.403 that the paper calls reductions of 38-40% (Green, Heywood and Navarro 2014); its fatal and serious subset fell about 26%, 46 a year. TfL's own trend-netted figure is 40 to 70 injury accidents a year in the zone and Inner Ring Road, 1% to 2% of them (4th Impacts Monitoring Report, section 6). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Itzkowitz et al. 2026; Li and Gao 2019 via Singichetti et al. 2021; Green, Heywood and Navarro 2014",
+      "tag": "[primary — read 2026-11-26] for Green, Itzkowitz and TfL; [secondary — verify] for Li and Gao"
      }
     },
     {
@@ -1434,9 +1434,9 @@
       "mid": -12,
       "high": -40,
       "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
-      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
-      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
-      "tag": "[secondary — verify]"
+      "applies_to": "Low: New York injury or fatal crashes in the zone, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al. 2026). Mid: London crashes with a car occupant killed or seriously injured, -12.12% by synthetic control (Li and Gao 2019, read through Singichetti et al. 2021, Table 2), so it counts people in cars only; for people walking and biking the mid is New York's -4%. High: accidents involving charged vehicles, in the zone and in charging hours, a regression coefficient of -0.403 that the paper calls reductions of 38-40% (Green, Heywood and Navarro 2014); its fatal and serious subset fell about 26%, 46 a year. TfL's own trend-netted figure is 40 to 70 injury accidents a year in the zone and Inner Ring Road, 1% to 2% of them (4th Impacts Monitoring Report, section 6). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Itzkowitz et al. 2026; Li and Gao 2019 via Singichetti et al. 2021; Green, Heywood and Navarro 2014",
+      "tag": "[primary — read 2026-11-26] for Green, Itzkowitz and TfL; [secondary — verify] for Li and Gao"
      }
     },
     {
@@ -1445,12 +1445,12 @@
      "target_share": "SF's modelled downtown zone: about 258 people hurt a year in charging hours against about 3,810 a year citywide, so about 7% of each group at most (crosscut lane, from the pricing equity note) [inference — mine]",
      "effect": {
       "low": -4,
-      "mid": -12,
+      "mid": -4,
       "high": -40,
       "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
-      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
-      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
-      "tag": "[secondary — verify]"
+      "applies_to": "Low: New York injury or fatal crashes in the zone, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al. 2026). Mid: London crashes with a car occupant killed or seriously injured, -12.12% by synthetic control (Li and Gao 2019, read through Singichetti et al. 2021, Table 2), so it counts people in cars only; for people walking and biking the mid is New York's -4%. High: accidents involving charged vehicles, in the zone and in charging hours, a regression coefficient of -0.403 that the paper calls reductions of 38-40% (Green, Heywood and Navarro 2014); its fatal and serious subset fell about 26%, 46 a year. TfL's own trend-netted figure is 40 to 70 injury accidents a year in the zone and Inner Ring Road, 1% to 2% of them (4th Impacts Monitoring Report, section 6). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Itzkowitz et al. 2026; Li and Gao 2019 via Singichetti et al. 2021; Green, Heywood and Navarro 2014",
+      "tag": "[primary — read 2026-11-26] for Green, Itzkowitz and TfL; [secondary — verify] for Li and Gao"
      }
     },
     {
@@ -1462,9 +1462,9 @@
       "mid": -12,
       "high": -40,
       "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
-      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
-      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
-      "tag": "[secondary — verify]"
+      "applies_to": "Low: New York injury or fatal crashes in the zone, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al. 2026). Mid: London crashes with a car occupant killed or seriously injured, -12.12% by synthetic control (Li and Gao 2019, read through Singichetti et al. 2021, Table 2), so it counts people in cars only; for people walking and biking the mid is New York's -4%. High: accidents involving charged vehicles, in the zone and in charging hours, a regression coefficient of -0.403 that the paper calls reductions of 38-40% (Green, Heywood and Navarro 2014); its fatal and serious subset fell about 26%, 46 a year. TfL's own trend-netted figure is 40 to 70 injury accidents a year in the zone and Inner Ring Road, 1% to 2% of them (4th Impacts Monitoring Report, section 6). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Itzkowitz et al. 2026; Li and Gao 2019 via Singichetti et al. 2021; Green, Heywood and Navarro 2014",
+      "tag": "[primary — read 2026-11-26] for Green, Itzkowitz and TfL; [secondary — verify] for Li and Gao"
      }
     },
     {
@@ -1476,9 +1476,9 @@
       "mid": -12,
       "high": -40,
       "unit": "% change in crashes or casualties in the charged zone (rows differ in severity)",
-      "applies_to": "Low: New York injury or fatal crashes IRR 0.96 (0.88 to 1.06). Mid: London KSI -12% by synthetic control. High: London all accidents -38% to -40% in the zone and charged hours (Green et al. 2014). Several London studies found more cyclist and motorcyclist casualties",
-      "source": "Green et al. 2014; Itzkowitz et al.; Li and Gao 2019, via crosscut lane and the downtown pricing note",
-      "tag": "[secondary — verify]"
+      "applies_to": "Low: New York injury or fatal crashes in the zone, IRR 0.96 (0.88 to 1.06), not significant (Itzkowitz et al. 2026). Mid: London crashes with a car occupant killed or seriously injured, -12.12% by synthetic control (Li and Gao 2019, read through Singichetti et al. 2021, Table 2), so it counts people in cars only; for people walking and biking the mid is New York's -4%. High: accidents involving charged vehicles, in the zone and in charging hours, a regression coefficient of -0.403 that the paper calls reductions of 38-40% (Green, Heywood and Navarro 2014); its fatal and serious subset fell about 26%, 46 a year. TfL's own trend-netted figure is 40 to 70 injury accidents a year in the zone and Inner Ring Road, 1% to 2% of them (4th Impacts Monitoring Report, section 6). Several London studies found more cyclist and motorcyclist casualties",
+      "source": "Itzkowitz et al. 2026; Li and Gao 2019 via Singichetti et al. 2021; Green, Heywood and Navarro 2014",
+      "tag": "[primary — read 2026-11-26] for Green, Itzkowitz and TfL; [secondary — verify] for Li and Gao"
      }
     }
    ],
@@ -1502,6 +1502,26 @@
      "title": "Downtown congestion pricing evidence note (repo)",
      "url": "research/notes/downtown-congestion-pricing-2026-10/2026-10-31-evidence.md",
      "tag": "[secondary — verify]"
+    },
+    {
+     "title": "Green, Heywood and Navarro, Traffic Accidents and the London Congestion Charge, Lancaster working paper 2014/015, Tables 1 and 3",
+     "url": "https://www.lancaster.ac.uk/media/lancaster-university/content-assets/documents/lums/economics/working-papers/LondonCongestionCharge.pdf",
+     "tag": "[primary — read 2026-11-26]"
+    },
+    {
+     "title": "Singichetti et al. 2021, congestion pricing and road safety scoping review, Table 2 (Li and Gao 2019's -12.12%)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8545360/",
+     "tag": "[secondary — read 2026-11-26; Li and Gao unopened]"
+    },
+    {
+     "title": "Transport for London, Central London Congestion Charging Impacts Monitoring, Fourth Annual Report, 2006, section 6",
+     "url": "https://content.tfl.gov.uk/fourthannualreportfinal.pdf",
+     "tag": "[primary — read 2026-11-26]"
+    },
+    {
+     "title": "Itzkowitz et al. 2026, New York congestion pricing and crashes, Table 1",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13537840/",
+     "tag": "[primary — read 2026-11-26]"
     }
    ]
   },

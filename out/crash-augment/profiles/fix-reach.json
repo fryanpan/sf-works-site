@@ -1,6 +1,12 @@
 {
  "about": "Where SF's injury crashes happen, by the kind of place a fix acts on: each size_families group's people hurt and KSI people at signalized and unsignalized corners, all-way stops, the High Injury Network, each street class and stress level, school zones, Slow Streets, 20 mph blocks, speed camera corridors, candidate low-traffic cells, night and day, by turn movement, and SF's count of each kind of place.",
  "all_groups": {
+  "!limit20": {
+   "ksi": 1863,
+   "people_hurt": 23721,
+   "share_hurt": 0.7957,
+   "share_ksi": 0.7785
+  },
   "all_way_stop": {
    "ksi": 171,
    "people_hurt": 2513,
@@ -385,6 +391,7 @@
   }
  },
  "expressions": [
+  "!limit20",
   "arterial&!camera_corridor|collector&!camera_corridor",
   "arterial|collector",
   "hin&!limit20",
@@ -407,6 +414,30 @@
    "ksi": 0,
    "people_hurt": 16,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       4,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "wrong way or opposing lane": [
+       5,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 13,
+     "share_hurt": 0.8125,
+     "share_ksi": null
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -1124,6 +1155,42 @@
    "ksi": 11,
    "people_hurt": 103,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       57,
+       6
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       3,
+       2
+      ],
+      "not stated or other": [
+       7,
+       1
+      ],
+      "right turn": [
+       4,
+       0
+      ],
+      "stopped or slowing": [
+       3,
+       1
+      ],
+      "wrong way or opposing lane": [
+       3,
+       0
+      ]
+     },
+     "ksi": 10,
+     "people_hurt": 78,
+     "share_hurt": 0.7573,
+     "share_ksi": 0.9091
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -2402,6 +2469,34 @@
    "ksi": 20,
    "people_hurt": 247,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       28,
+       1
+      ],
+      "parked or parking": [
+       75,
+       11
+      ],
+      "stopped or slowing": [
+       64,
+       4
+      ]
+     },
+     "ksi": 16,
+     "people_hurt": 169,
+     "share_hurt": 0.6842,
+     "share_ksi": 0.8
+    },
     "all_way_stop": {
      "by_movement": {
       "parked or parking": [
@@ -3490,6 +3585,30 @@
    "ksi": 1,
    "people_hurt": 35,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       14,
+       1
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       7,
+       0
+      ],
+      "right turn": [
+       6,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 28,
+     "share_hurt": 0.8,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -4378,6 +4497,34 @@
    "ksi": 6,
    "people_hurt": 85,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       50,
+       3
+      ],
+      "left or U-turn": [
+       2,
+       0
+      ],
+      "not stated or other": [
+       3,
+       0
+      ],
+      "right turn": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 59,
+     "share_hurt": 0.6941,
+     "share_ksi": 0.5
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -5404,6 +5551,50 @@
    "ksi": 54,
    "people_hurt": 328,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       160,
+       32
+      ],
+      "lane change, merge, pass, entering": [
+       8,
+       0
+      ],
+      "left or U-turn": [
+       22,
+       0
+      ],
+      "not stated or other": [
+       26,
+       8
+      ],
+      "parked or parking": [
+       4,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       11,
+       0
+      ],
+      "stopped or slowing": [
+       9,
+       1
+      ]
+     },
+     "ksi": 41,
+     "people_hurt": 242,
+     "share_hurt": 0.7378,
+     "share_ksi": 0.7593
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -7014,6 +7205,42 @@
    "ksi": 4,
    "people_hurt": 52,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       14,
+       3
+      ],
+      "left or U-turn": [
+       7,
+       0
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "right turn": [
+       6,
+       0
+      ],
+      "stopped or slowing": [
+       7,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 38,
+     "share_hurt": 0.7308,
+     "share_ksi": 0.75
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -8127,6 +8354,30 @@
    "ksi": 4,
    "people_hurt": 27,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       13,
+       4
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       0
+      ],
+      "not stated or other": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 4,
+     "people_hurt": 17,
+     "share_hurt": 0.6296,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -9022,6 +9273,18 @@
    "ksi": 0,
    "people_hurt": 1,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 1.0,
+     "share_ksi": null
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -9422,6 +9685,46 @@
    "ksi": 55,
    "people_hurt": 355,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       220,
+       37
+      ],
+      "lane change, merge, pass, entering": [
+       4,
+       0
+      ],
+      "left or U-turn": [
+       10,
+       1
+      ],
+      "not stated or other": [
+       4,
+       0
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       17,
+       2
+      ],
+      "stopped or slowing": [
+       4,
+       0
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 40,
+     "people_hurt": 262,
+     "share_hurt": 0.738,
+     "share_ksi": 0.7273
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -10790,6 +11093,46 @@
    "ksi": 23,
    "people_hurt": 242,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       143,
+       13
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       17,
+       3
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "ran off road": [
+       1,
+       1
+      ],
+      "right turn": [
+       10,
+       1
+      ],
+      "stopped or slowing": [
+       5,
+       0
+      ]
+     },
+     "ksi": 18,
+     "people_hurt": 180,
+     "share_hurt": 0.7438,
+     "share_ksi": 0.7826
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -12155,6 +12498,50 @@
    "ksi": 97,
    "people_hurt": 579,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       337,
+       54
+      ],
+      "lane change, merge, pass, entering": [
+       9,
+       1
+      ],
+      "left or U-turn": [
+       19,
+       3
+      ],
+      "not stated or other": [
+       15,
+       1
+      ],
+      "parked or parking": [
+       2,
+       1
+      ],
+      "ran off road": [
+       2,
+       1
+      ],
+      "right turn": [
+       17,
+       6
+      ],
+      "stopped or slowing": [
+       15,
+       1
+      ],
+      "wrong way or opposing lane": [
+       3,
+       1
+      ]
+     },
+     "ksi": 69,
+     "people_hurt": 419,
+     "share_hurt": 0.7237,
+     "share_ksi": 0.7113
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -13805,6 +14192,34 @@
    "ksi": 1,
    "people_hurt": 42,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       19,
+       0
+      ],
+      "going straight": [
+       5,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       9,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 35,
+     "share_hurt": 0.8333,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -14772,6 +15187,46 @@
    "ksi": 93,
    "people_hurt": 1118,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       210,
+       23
+      ],
+      "lane change, merge, pass, entering": [
+       91,
+       6
+      ],
+      "left or U-turn": [
+       141,
+       11
+      ],
+      "not stated or other": [
+       65,
+       6
+      ],
+      "parked or parking": [
+       16,
+       1
+      ],
+      "right turn": [
+       222,
+       16
+      ],
+      "stopped or slowing": [
+       20,
+       2
+      ],
+      "wrong way or opposing lane": [
+       42,
+       6
+      ]
+     },
+     "ksi": 71,
+     "people_hurt": 807,
+     "share_hurt": 0.7218,
+     "share_ksi": 0.7634
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -16674,6 +17129,42 @@
    "ksi": 42,
    "people_hurt": 509,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       88,
+       9
+      ],
+      "lane change, merge, pass, entering": [
+       48,
+       6
+      ],
+      "left or U-turn": [
+       239,
+       19
+      ],
+      "not stated or other": [
+       9,
+       1
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "right turn": [
+       19,
+       1
+      ],
+      "stopped or slowing": [
+       7,
+       0
+      ]
+     },
+     "ksi": 36,
+     "people_hurt": 411,
+     "share_hurt": 0.8075,
+     "share_ksi": 0.8571
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -18200,6 +18691,13 @@
    "ksi": 0,
    "people_hurt": 1,
    "places": {
+    "!limit20": {
+     "by_movement": {},
+     "ksi": 0,
+     "people_hurt": 0,
+     "share_hurt": 0.0,
+     "share_ksi": null
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -18585,6 +19083,18 @@
    "ksi": 3,
    "people_hurt": 5,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 0.2,
+     "share_ksi": 0.0
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -19128,6 +19638,18 @@
    "ksi": 0,
    "people_hurt": 1,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 1,
+     "share_hurt": 1.0,
+     "share_ksi": null
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -19528,6 +20050,22 @@
    "ksi": 2,
    "people_hurt": 5,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       3,
+       2
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 2,
+     "people_hurt": 4,
+     "share_hurt": 0.8,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -20048,6 +20586,18 @@
    "ksi": 2,
    "people_hurt": 2,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "wrong way or opposing lane": [
+       1,
+       1
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 1,
+     "share_hurt": 0.5,
+     "share_ksi": 0.5
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -20495,6 +21045,38 @@
    "ksi": 26,
    "people_hurt": 87,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       43,
+       13
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       1
+      ],
+      "left or U-turn": [
+       2,
+       1
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "ran off road": [
+       3,
+       0
+      ],
+      "right turn": [
+       3,
+       1
+      ]
+     },
+     "ksi": 16,
+     "people_hurt": 55,
+     "share_hurt": 0.6322,
+     "share_ksi": 0.6154
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -21564,6 +22146,50 @@
    "ksi": 26,
    "people_hurt": 159,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       66,
+       16
+      ],
+      "left or U-turn": [
+       3,
+       0
+      ],
+      "not stated or other": [
+       13,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "ran off road": [
+       6,
+       0
+      ],
+      "right turn": [
+       8,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 16,
+     "people_hurt": 101,
+     "share_hurt": 0.6352,
+     "share_ksi": 0.6154
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -22963,6 +23589,22 @@
    "ksi": 0,
    "people_hurt": 5,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 3,
+     "share_hurt": 0.6,
+     "share_ksi": null
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -23483,6 +24125,50 @@
    "ksi": 263,
    "people_hurt": 2377,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       5,
+       0
+      ],
+      "going straight": [
+       481,
+       83
+      ],
+      "lane change, merge, pass, entering": [
+       13,
+       3
+      ],
+      "left or U-turn": [
+       879,
+       85
+      ],
+      "not stated or other": [
+       25,
+       3
+      ],
+      "parked or parking": [
+       2,
+       0
+      ],
+      "right turn": [
+       305,
+       24
+      ],
+      "stopped or slowing": [
+       39,
+       1
+      ],
+      "wrong way or opposing lane": [
+       2,
+       2
+      ]
+     },
+     "ksi": 201,
+     "people_hurt": 1751,
+     "share_hurt": 0.7366,
+     "share_ksi": 0.7643
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -25197,6 +25883,22 @@
    "ksi": 1,
    "people_hurt": 9,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       5,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 6,
+     "share_hurt": 0.6667,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -25772,6 +26474,50 @@
    "ksi": 46,
    "people_hurt": 266,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       12,
+       1
+      ],
+      "going straight": [
+       86,
+       15
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       30,
+       8
+      ],
+      "not stated or other": [
+       31,
+       7
+      ],
+      "parked or parking": [
+       7,
+       0
+      ],
+      "right turn": [
+       16,
+       0
+      ],
+      "stopped or slowing": [
+       17,
+       3
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 34,
+     "people_hurt": 201,
+     "share_hurt": 0.7556,
+     "share_ksi": 0.7391
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -27490,6 +28236,38 @@
    "ksi": 13,
    "people_hurt": 122,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       60,
+       7
+      ],
+      "lane change, merge, pass, entering": [
+       2,
+       1
+      ],
+      "left or U-turn": [
+       11,
+       2
+      ],
+      "not stated or other": [
+       9,
+       1
+      ],
+      "stopped or slowing": [
+       5,
+       1
+      ],
+      "wrong way or opposing lane": [
+       1,
+       0
+      ]
+     },
+     "ksi": 12,
+     "people_hurt": 88,
+     "share_hurt": 0.7213,
+     "share_ksi": 0.9231
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -28811,6 +29589,50 @@
    "ksi": 319,
    "people_hurt": 1559,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       21,
+       1
+      ],
+      "going straight": [
+       747,
+       190
+      ],
+      "lane change, merge, pass, entering": [
+       23,
+       5
+      ],
+      "left or U-turn": [
+       66,
+       9
+      ],
+      "not stated or other": [
+       96,
+       13
+      ],
+      "parked or parking": [
+       10,
+       1
+      ],
+      "right turn": [
+       56,
+       11
+      ],
+      "stopped or slowing": [
+       26,
+       4
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 234,
+     "people_hurt": 1047,
+     "share_hurt": 0.6716,
+     "share_ksi": 0.7335
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -30701,6 +31523,18 @@
    "ksi": 0,
    "people_hurt": 5,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       4,
+       0
+      ]
+     },
+     "ksi": 0,
+     "people_hurt": 4,
+     "share_hurt": 0.8,
+     "share_ksi": null
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -31192,6 +32026,34 @@
    "ksi": 59,
    "people_hurt": 269,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       136,
+       27
+      ],
+      "left or U-turn": [
+       5,
+       0
+      ],
+      "not stated or other": [
+       4,
+       1
+      ],
+      "right turn": [
+       10,
+       0
+      ],
+      "wrong way or opposing lane": [
+       1,
+       1
+      ]
+     },
+     "ksi": 29,
+     "people_hurt": 156,
+     "share_hurt": 0.5799,
+     "share_ksi": 0.4915
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -32448,6 +33310,34 @@
    "ksi": 15,
    "people_hurt": 122,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       73,
+       6
+      ],
+      "left or U-turn": [
+       19,
+       1
+      ],
+      "not stated or other": [
+       3,
+       1
+      ],
+      "right turn": [
+       8,
+       3
+      ],
+      "stopped or slowing": [
+       3,
+       0
+      ]
+     },
+     "ksi": 11,
+     "people_hurt": 106,
+     "share_hurt": 0.8689,
+     "share_ksi": 0.7333
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -33526,6 +34416,54 @@
    "ksi": 77,
    "people_hurt": 429,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       2,
+       0
+      ],
+      "going straight": [
+       236,
+       35
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       16,
+       4
+      ],
+      "not stated or other": [
+       18,
+       5
+      ],
+      "parked or parking": [
+       3,
+       0
+      ],
+      "ran off road": [
+       5,
+       1
+      ],
+      "right turn": [
+       10,
+       2
+      ],
+      "stopped or slowing": [
+       2,
+       1
+      ],
+      "wrong way or opposing lane": [
+       9,
+       6
+      ]
+     },
+     "ksi": 54,
+     "people_hurt": 304,
+     "share_hurt": 0.7086,
+     "share_ksi": 0.7013
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -35256,6 +36194,46 @@
    "ksi": 27,
    "people_hurt": 256,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       117,
+       14
+      ],
+      "going straight": [
+       24,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       10,
+       0
+      ],
+      "left or U-turn": [
+       3,
+       0
+      ],
+      "not stated or other": [
+       3,
+       0
+      ],
+      "parked or parking": [
+       6,
+       2
+      ],
+      "right turn": [
+       1,
+       0
+      ],
+      "stopped or slowing": [
+       8,
+       1
+      ]
+     },
+     "ksi": 19,
+     "people_hurt": 172,
+     "share_hurt": 0.6719,
+     "share_ksi": 0.7037
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -36801,6 +37779,54 @@
    "ksi": 33,
    "people_hurt": 251,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       1,
+       0
+      ],
+      "going straight": [
+       45,
+       6
+      ],
+      "lane change, merge, pass, entering": [
+       12,
+       1
+      ],
+      "left or U-turn": [
+       59,
+       8
+      ],
+      "not stated or other": [
+       14,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "ran off road": [
+       8,
+       0
+      ],
+      "right turn": [
+       30,
+       5
+      ],
+      "stopped or slowing": [
+       6,
+       1
+      ],
+      "wrong way or opposing lane": [
+       6,
+       2
+      ]
+     },
+     "ksi": 23,
+     "people_hurt": 182,
+     "share_hurt": 0.7251,
+     "share_ksi": 0.697
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -38511,6 +39537,34 @@
    "ksi": 7,
    "people_hurt": 68,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       11,
+       3
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       31,
+       4
+      ],
+      "not stated or other": [
+       2,
+       0
+      ],
+      "right turn": [
+       2,
+       0
+      ]
+     },
+     "ksi": 7,
+     "people_hurt": 49,
+     "share_hurt": 0.7206,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -39535,6 +40589,54 @@
    "ksi": 62,
    "people_hurt": 809,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       6,
+       0
+      ],
+      "going straight": [
+       508,
+       34
+      ],
+      "lane change, merge, pass, entering": [
+       22,
+       3
+      ],
+      "left or U-turn": [
+       41,
+       3
+      ],
+      "not stated or other": [
+       31,
+       2
+      ],
+      "parked or parking": [
+       5,
+       1
+      ],
+      "ran off road": [
+       22,
+       5
+      ],
+      "right turn": [
+       21,
+       0
+      ],
+      "stopped or slowing": [
+       17,
+       0
+      ],
+      "wrong way or opposing lane": [
+       26,
+       4
+      ]
+     },
+     "ksi": 52,
+     "people_hurt": 699,
+     "share_hurt": 0.864,
+     "share_ksi": 0.8387
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -41573,6 +42675,42 @@
    "ksi": 4,
    "people_hurt": 118,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       72,
+       0
+      ],
+      "lane change, merge, pass, entering": [
+       1,
+       0
+      ],
+      "left or U-turn": [
+       3,
+       0
+      ],
+      "not stated or other": [
+       7,
+       2
+      ],
+      "ran off road": [
+       6,
+       1
+      ],
+      "stopped or slowing": [
+       2,
+       0
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 93,
+     "share_hurt": 0.7881,
+     "share_ksi": 0.75
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -42930,6 +44068,34 @@
    "ksi": 2,
    "people_hurt": 121,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       12,
+       0
+      ],
+      "parked or parking": [
+       42,
+       1
+      ],
+      "stopped or slowing": [
+       22,
+       0
+      ],
+      "wrong way or opposing lane": [
+       2,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 79,
+     "share_hurt": 0.6529,
+     "share_ksi": 0.5
+    },
     "all_way_stop": {
      "by_movement": {
       "parked or parking": [
@@ -43953,6 +45119,26 @@
    "ksi": 1,
    "people_hurt": 25,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       8,
+       1
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "right turn": [
+       6,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 15,
+     "share_hurt": 0.6,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -44758,6 +45944,42 @@
    "ksi": 22,
    "people_hurt": 1386,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       973,
+       18
+      ],
+      "lane change, merge, pass, entering": [
+       26,
+       1
+      ],
+      "left or U-turn": [
+       21,
+       0
+      ],
+      "not stated or other": [
+       21,
+       2
+      ],
+      "ran off road": [
+       1,
+       0
+      ],
+      "right turn": [
+       14,
+       0
+      ],
+      "stopped or slowing": [
+       118,
+       1
+      ]
+     },
+     "ksi": 22,
+     "people_hurt": 1174,
+     "share_hurt": 0.847,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -46239,6 +47461,54 @@
    "ksi": 82,
    "people_hurt": 987,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       13,
+       0
+      ],
+      "going straight": [
+       540,
+       50
+      ],
+      "lane change, merge, pass, entering": [
+       30,
+       2
+      ],
+      "left or U-turn": [
+       82,
+       1
+      ],
+      "not stated or other": [
+       55,
+       12
+      ],
+      "parked or parking": [
+       8,
+       1
+      ],
+      "ran off road": [
+       10,
+       0
+      ],
+      "right turn": [
+       36,
+       3
+      ],
+      "stopped or slowing": [
+       36,
+       1
+      ],
+      "wrong way or opposing lane": [
+       4,
+       2
+      ]
+     },
+     "ksi": 72,
+     "people_hurt": 814,
+     "share_hurt": 0.8247,
+     "share_ksi": 0.878
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -48281,6 +49551,54 @@
    "ksi": 20,
    "people_hurt": 265,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       12,
+       1
+      ],
+      "going straight": [
+       110,
+       9
+      ],
+      "lane change, merge, pass, entering": [
+       10,
+       2
+      ],
+      "left or U-turn": [
+       9,
+       0
+      ],
+      "not stated or other": [
+       19,
+       2
+      ],
+      "parked or parking": [
+       12,
+       2
+      ],
+      "ran off road": [
+       2,
+       0
+      ],
+      "right turn": [
+       4,
+       0
+      ],
+      "stopped or slowing": [
+       34,
+       2
+      ],
+      "wrong way or opposing lane": [
+       5,
+       0
+      ]
+     },
+     "ksi": 18,
+     "people_hurt": 217,
+     "share_hurt": 0.8189,
+     "share_ksi": 0.9
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -50127,6 +51445,30 @@
    "ksi": 3,
    "people_hurt": 39,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       26,
+       2
+      ],
+      "lane change, merge, pass, entering": [
+       3,
+       0
+      ],
+      "left or U-turn": [
+       1,
+       0
+      ],
+      "not stated or other": [
+       3,
+       1
+      ]
+     },
+     "ksi": 3,
+     "people_hurt": 33,
+     "share_hurt": 0.8462,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {},
      "ksi": 0,
@@ -50950,6 +52292,30 @@
    "ksi": 1,
    "people_hurt": 44,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       28,
+       1
+      ],
+      "left or U-turn": [
+       3,
+       0
+      ],
+      "ran off road": [
+       2,
+       0
+      ],
+      "stopped or slowing": [
+       1,
+       0
+      ]
+     },
+     "ksi": 1,
+     "people_hurt": 34,
+     "share_hurt": 0.7727,
+     "share_ksi": 1.0
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -51736,6 +53102,46 @@
    "ksi": 148,
    "people_hurt": 2876,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       2049,
+       112
+      ],
+      "lane change, merge, pass, entering": [
+       32,
+       1
+      ],
+      "left or U-turn": [
+       112,
+       5
+      ],
+      "not stated or other": [
+       9,
+       0
+      ],
+      "parked or parking": [
+       6,
+       0
+      ],
+      "right turn": [
+       49,
+       1
+      ],
+      "stopped or slowing": [
+       30,
+       2
+      ],
+      "wrong way or opposing lane": [
+       10,
+       2
+      ]
+     },
+     "ksi": 123,
+     "people_hurt": 2297,
+     "share_hurt": 0.7987,
+     "share_ksi": 0.8311
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -53325,6 +54731,46 @@
    "ksi": 51,
    "people_hurt": 1313,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       905,
+       33
+      ],
+      "lane change, merge, pass, entering": [
+       15,
+       1
+      ],
+      "left or U-turn": [
+       192,
+       8
+      ],
+      "not stated or other": [
+       6,
+       0
+      ],
+      "ran off road": [
+       2,
+       0
+      ],
+      "right turn": [
+       35,
+       1
+      ],
+      "stopped or slowing": [
+       14,
+       0
+      ],
+      "wrong way or opposing lane": [
+       7,
+       0
+      ]
+     },
+     "ksi": 43,
+     "people_hurt": 1176,
+     "share_hurt": 0.8957,
+     "share_ksi": 0.8431
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -54935,6 +56381,54 @@
    "ksi": 315,
    "people_hurt": 4563,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       7,
+       0
+      ],
+      "going straight": [
+       3103,
+       220
+      ],
+      "lane change, merge, pass, entering": [
+       93,
+       3
+      ],
+      "left or U-turn": [
+       157,
+       9
+      ],
+      "not stated or other": [
+       129,
+       9
+      ],
+      "parked or parking": [
+       19,
+       1
+      ],
+      "ran off road": [
+       71,
+       9
+      ],
+      "right turn": [
+       126,
+       4
+      ],
+      "stopped or slowing": [
+       166,
+       9
+      ],
+      "wrong way or opposing lane": [
+       37,
+       6
+      ]
+     },
+     "ksi": 270,
+     "people_hurt": 3908,
+     "share_hurt": 0.8565,
+     "share_ksi": 0.8571
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -57097,6 +58591,46 @@
    "ksi": 17,
    "people_hurt": 483,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       192,
+       5
+      ],
+      "going straight": [
+       85,
+       6
+      ],
+      "lane change, merge, pass, entering": [
+       76,
+       2
+      ],
+      "left or U-turn": [
+       10,
+       1
+      ],
+      "not stated or other": [
+       10,
+       0
+      ],
+      "parked or parking": [
+       23,
+       1
+      ],
+      "stopped or slowing": [
+       11,
+       0
+      ],
+      "wrong way or opposing lane": [
+       4,
+       0
+      ]
+     },
+     "ksi": 15,
+     "people_hurt": 411,
+     "share_hurt": 0.8509,
+     "share_ksi": 0.8824
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -58843,6 +60377,50 @@
    "ksi": 219,
    "people_hurt": 4055,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "going straight": [
+       896,
+       62
+      ],
+      "lane change, merge, pass, entering": [
+       679,
+       27
+      ],
+      "left or U-turn": [
+       763,
+       33
+      ],
+      "not stated or other": [
+       283,
+       14
+      ],
+      "parked or parking": [
+       23,
+       1
+      ],
+      "ran off road": [
+       23,
+       0
+      ],
+      "right turn": [
+       292,
+       17
+      ],
+      "stopped or slowing": [
+       38,
+       3
+      ],
+      "wrong way or opposing lane": [
+       179,
+       17
+      ]
+     },
+     "ksi": 174,
+     "people_hurt": 3176,
+     "share_hurt": 0.7832,
+     "share_ksi": 0.7945
+    },
     "all_way_stop": {
      "by_movement": {
       "going straight": [
@@ -60905,6 +62483,54 @@
    "ksi": 116,
    "people_hurt": 2990,
    "places": {
+    "!limit20": {
+     "by_movement": {
+      "backing": [
+       11,
+       0
+      ],
+      "going straight": [
+       780,
+       17
+      ],
+      "lane change, merge, pass, entering": [
+       214,
+       7
+      ],
+      "left or U-turn": [
+       1432,
+       64
+      ],
+      "not stated or other": [
+       21,
+       0
+      ],
+      "parked or parking": [
+       1,
+       0
+      ],
+      "ran off road": [
+       2,
+       0
+      ],
+      "right turn": [
+       71,
+       2
+      ],
+      "stopped or slowing": [
+       60,
+       0
+      ],
+      "wrong way or opposing lane": [
+       12,
+       2
+      ]
+     },
+     "ksi": 92,
+     "people_hurt": 2604,
+     "share_hurt": 0.8709,
+     "share_ksi": 0.7931
+    },
     "all_way_stop": {
      "by_movement": {
       "backing": [
@@ -62838,161 +64464,161 @@
   "evening"
  ],
  "sources": {
-  "3psu-pn9h": "2026-11-25",
-  "3t7b-gebn": "2026-11-25",
-  "4542-gpa3": "2026-11-26",
-  "7e7j-59qk": "2026-11-26",
-  "8vtn-qytr": "2026-11-26",
+  "3psu-pn9h": "2026-11-27",
+  "3t7b-gebn": "2026-11-27",
+  "4542-gpa3": "2026-11-27",
+  "7e7j-59qk": "2026-11-27",
+  "8vtn-qytr": "2026-11-27",
   "bci": "2026-10-04",
-  "d5uh-bk84": "2026-11-25",
-  "enwt-3u8m": "2026-11-26",
-  "hkz3-itiu": "2026-11-25",
+  "d5uh-bk84": "2026-11-27",
+  "enwt-3u8m": "2026-11-27",
+  "hkz3-itiu": "2026-11-27",
   "lanes": "2026-11-25",
-  "ybh5-27n2": "2026-11-25"
+  "ybh5-27n2": "2026-11-27"
  },
  "units": {
   "all_way_stops": {
    "how": "unsignalized intersections whose stop signs face every block meeting there (a floor: one-way streets miss)",
-   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-26",
-   "tag": "[DataSF 4542-gpa3 — queried 2026-11-26]",
+   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-27",
+   "tag": "[DataSF 4542-gpa3 — queried 2026-11-27]",
    "value": 1799
   },
   "arterial_collector_miles": {
    "how": "arterial, major and collector miles, a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 232.1
   },
   "arterial_intersections": {
    "how": "intersections an arterial or major street meets (nodes; 1092 with a divided street's two crossings counted once)",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 1112
   },
   "arterial_miles": {
    "how": "arterial and major street miles (classcode 2, 3), a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 86.4
   },
   "collector_miles": {
    "how": "collector street miles (classcode 4), a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 145.7
   },
   "hin2022_miles": {
    "how": "sum of corrected_length_miles over the 2022 HIN's blocks",
    "source": "DataSF 8vtn-qytr",
-   "tag": "[DataSF 8vtn-qytr — queried 2026-11-26]",
+   "tag": "[DataSF 8vtn-qytr — queried 2026-11-27]",
    "value": 121.5
   },
   "hin_corners": {
    "how": "intersections at an end of a 2024 HIN block, a divided street's two crossings counted once (1895 nodes)",
    "source": "DataSF enwt-3u8m, 3psu-pn9h",
-   "tag": "[DataSF enwt-3u8m — queried 2026-11-26]",
+   "tag": "[DataSF enwt-3u8m — queried 2026-11-27]",
    "value": 1846
   },
   "hin_miles": {
    "how": "sum of corrected_length_miles over the 2024 HIN's blocks",
    "source": "DataSF enwt-3u8m",
-   "tag": "[DataSF enwt-3u8m — queried 2026-11-26]",
+   "tag": "[DataSF enwt-3u8m — queried 2026-11-27]",
    "value": 132.9
   },
   "hin_signalized_corners": {
    "how": "2024 HIN corners with a signal, counted once (863 nodes)",
    "source": "DataSF enwt-3u8m, ybh5-27n2",
-   "tag": "[DataSF enwt-3u8m — queried 2026-11-26]",
+   "tag": "[DataSF enwt-3u8m — queried 2026-11-27]",
    "value": 863
   },
   "hin_single_lane_miles": {
    "how": "corrected_length_miles over the 2024 HIN's blocks with 1 off-peak lane (SFMTA MTA.CTA_trafficlanes LANES_OP: one a direction on a two-way street, one on a one-way street); dual-carriageway rows left out",
    "source": "DataSF enwt-3u8m; SFMTA MTA.CTA_trafficlanes read 2026-11-25",
-   "tag": "[DataSF enwt-3u8m — queried 2026-11-26] [inference — mine]",
+   "tag": "[DataSF enwt-3u8m — queried 2026-11-27] [inference — mine]",
    "value": 34.2
   },
   "hin_unsignalized_corners": {
    "how": "2024 HIN corners with no signal, counted once (1032 nodes)",
    "source": "DataSF enwt-3u8m, ybh5-27n2",
-   "tag": "[DataSF enwt-3u8m — queried 2026-11-26]",
+   "tag": "[DataSF enwt-3u8m — queried 2026-11-27]",
    "value": 1007
   },
   "intersections": {
    "how": "nodes where two or more named streets meet",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 7431
   },
   "limit20_miles": {
    "how": "surface miles posted 20 mph today, a divided street counted once",
    "source": "DataSF 3t7b-gebn",
-   "tag": "[DataSF 3t7b-gebn — queried 2026-11-25]",
+   "tag": "[DataSF 3t7b-gebn — queried 2026-11-27]",
    "value": 46.3
   },
   "local_unsignalized_intersections": {
    "how": "intersections where only residential streets meet, with no signal, a divided street's two crossings counted once (4398 nodes)",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-27]",
    "value": 4333
   },
   "ltn_cell_miles": {
    "how": "street miles inside those cells, a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
    "tag": "[inference — mine]",
    "value": 561.1
   },
   "ltn_cell_residential_miles": {
    "how": "residential street miles inside those cells, a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
    "tag": "[inference — mine]",
    "value": 544.0
   },
   "ltn_cells": {
    "how": "candidate low-traffic cells of at least 0.5 miles of street (this script's rule)",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; SFMTA 2023 draft BCI (data/extract/sfmta-bci/scores.json, read 2026-10-04)",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; SFMTA 2023 draft BCI (data/extract/sfmta-bci/scores.json, read 2026-10-04)",
    "tag": "[inference — mine]",
    "value": 219
   },
   "multilane_arterial_collector_miles": {
    "how": "arterial, major and collector miles with 2 or more off-peak lanes (SFMTA MTA.CTA_trafficlanes LANES_OP), a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; SFMTA MTA.CTA_trafficlanes read 2026-11-25",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; SFMTA MTA.CTA_trafficlanes read 2026-11-25",
    "tag": "[primary — read 2026-11-25] [inference — mine]",
    "value": 145.5
   },
   "residential_collector_miles": {
    "how": "residential and collector miles, a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 937.8
   },
   "residential_miles": {
    "how": "residential street miles (classcode 5), a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 792.1
   },
   "schools": {
    "how": "active schools, every entity type but Preschool; a 500 ft zone each",
    "source": "DataSF 7e7j-59qk",
-   "tag": "[DataSF 7e7j-59qk — queried 2026-11-26]",
+   "tag": "[DataSF 7e7j-59qk — queried 2026-11-27]",
    "value": 221
   },
   "signalized_arterial_intersections": {
    "how": "intersections an arterial or major street meets, with a signal",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-27]",
    "value": 579
   },
   "signalized_intersections": {
    "how": "intersections with a signal today",
-   "source": "DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25",
-   "tag": "[DataSF ybh5-27n2 — queried 2026-11-25]",
+   "source": "DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-27",
+   "tag": "[DataSF ybh5-27n2 — queried 2026-11-27]",
    "value": 1228
   },
   "signalized_limit35_intersections": {
    "how": "intersections with a signal where a block posted 35 mph or more meets (3t7b-gebn today, status L left out)",
-   "source": "DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25; DataSF 3t7b-gebn",
-   "tag": "[DataSF ybh5-27n2, 3t7b-gebn — queried 2026-11-25]",
+   "source": "DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-27; DataSF 3t7b-gebn",
+   "tag": "[DataSF ybh5-27n2, 3t7b-gebn — queried 2026-11-27]",
    "value": 67
   },
   "slip_lanes": {
@@ -63004,73 +64630,73 @@
   "slow_street_miles": {
    "how": "miles of Implemented Slow Street blocks (hkz3-itiu, last edited 2024-01-18)",
    "source": "DataSF hkz3-itiu",
-   "tag": "[DataSF hkz3-itiu — queried 2026-11-25]",
+   "tag": "[DataSF hkz3-itiu — queried 2026-11-27]",
    "value": 15.6
   },
   "speed_camera_corridor_miles": {
    "how": "miles of camera corridor blocks, a divided street counted once",
    "source": "DataSF d5uh-bk84, 3psu-pn9h",
-   "tag": "[DataSF d5uh-bk84 — queried 2026-11-25]",
+   "tag": "[DataSF d5uh-bk84 — queried 2026-11-27]",
    "value": 9.9
   },
   "speed_camera_sites": {
    "how": "speed camera site ids placed on a block (the street lane's rule): one id per direction of travel, at 41 distinct points; SFMTA counts the same cameras as 33 locations, the count its cost per location is for",
    "source": "DataSF d5uh-bk84",
-   "tag": "[DataSF d5uh-bk84 — queried 2026-11-25]",
+   "tag": "[DataSF d5uh-bk84 — queried 2026-11-27]",
    "value": 56
   },
   "stop_controlled_intersections": {
    "how": "unsignalized intersections with at least one stop sign",
-   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-26",
-   "tag": "[DataSF 4542-gpa3 — queried 2026-11-26]",
+   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-27",
+   "tag": "[DataSF 4542-gpa3 — queried 2026-11-27]",
    "value": 4002
   },
   "surface_miles": {
    "how": "every active surface street mile (no freeway, ramp or class 0), a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h — queried 2026-11-27]",
    "value": 1024.2
   },
   "two_lane_arterial_collector_miles": {
    "how": "arterial, major and collector miles with exactly 2 off-peak lanes (SFMTA MTA.CTA_trafficlanes LANES_OP: two a direction on a two-way street; a one-way street with two lanes is in too, since the layer does not mark one-way streets), a divided street counted once",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; SFMTA MTA.CTA_trafficlanes read 2026-11-25",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; SFMTA MTA.CTA_trafficlanes read 2026-11-25",
    "tag": "[primary — read 2026-11-25] [inference — mine]",
    "value": 88.6
   },
   "two_way_or_partial_stops": {
    "how": "unsignalized intersections with some but not all approaches stopped",
-   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-26",
-   "tag": "[DataSF 4542-gpa3 — queried 2026-11-26]",
+   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-27",
+   "tag": "[DataSF 4542-gpa3 — queried 2026-11-27]",
    "value": 2203
   },
   "uncontrolled_intersections": {
    "how": "intersections with no signal and no stop sign",
-   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-26",
-   "tag": "[DataSF 4542-gpa3 — queried 2026-11-26]",
+   "source": "DataSF 4542-gpa3 (stop signs, status L left out), read 2026-11-27",
+   "tag": "[DataSF 4542-gpa3 — queried 2026-11-27]",
    "value": 2201
   },
   "unposted_25_miles": {
    "how": "surface miles with speedlimit 0, the 25 mph default, a divided street counted once",
    "source": "DataSF 3t7b-gebn",
-   "tag": "[DataSF 3t7b-gebn — queried 2026-11-25]",
+   "tag": "[DataSF 3t7b-gebn — queried 2026-11-27]",
    "value": 767.9
   },
   "unposted_residential_miles": {
    "how": "residential miles with speedlimit 0, the 25 mph default, a divided street counted once",
    "source": "DataSF 3t7b-gebn",
-   "tag": "[DataSF 3t7b-gebn — queried 2026-11-25]",
+   "tag": "[DataSF 3t7b-gebn — queried 2026-11-27]",
    "value": 706.0
   },
   "unsignalized_arterial_intersections": {
    "how": "intersections an arterial or major street meets, with no signal",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-27]",
    "value": 533
   },
   "unsignalized_intersections": {
    "how": "intersections with no signal",
-   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-25; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-25",
-   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-25]",
+   "source": "DataSF 3psu-pn9h, active surface blocks, read 2026-11-27; DataSF ybh5-27n2, types CALTRANS, CALTRANS (BY CONTRACTOR CONSORTIUM GLC), SIGNAL, SIGNAL (CONTRACTOR MAINTAINED), read 2026-11-27",
+   "tag": "[DataSF 3psu-pn9h, ybh5-27n2 — queried 2026-11-27]",
    "value": 6203
   }
  },

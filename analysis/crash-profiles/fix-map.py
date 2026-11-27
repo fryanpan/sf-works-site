@@ -128,6 +128,16 @@ Counting rules (each one is also in the README):
   and at its high (same order and costs). The optimistic and pessimistic stacks
   replay greedy_by_people_hurt's fixes in its order with every effect at its
   high (costs low) and its low (costs high), harmful lows included.
+- Traffic lever: fixes/traffic-lever.json (written by scripts/crash-fixes/traffic-lever-export.py in the research
+  repo from modeshift.py, the one model of fewer car trips) gives a factor per road-user group (car occupant, people
+  walking, biking or other hit by a moving car, and the no-moving-car groups) for 30% and 20% of trips by car, at
+  low, mid and high, with the network built and with no network. Each crash's people hurt carry their groups (from
+  fix-reach.json's users), so after a stack's street fixes the lever multiplies what is left on each crash by its
+  groups' factors, and the people hurt on the new transit trips are taken off. It is reported per stack under
+  "traffic" and at each budget, never ranked, and adds no city cost. Each stack's lever alone (no street fixes) must
+  match modeshift's own result within max(TRAFFIC_TOLERANCE, 10%).
+- phase_in: a fill record's phase_in text (a vehicle rule that takes full effect only once the fleet turns over) is
+  copied to the fix's output row.
 
 Standard library only. Deterministic: sorted keys and lists, no wall clock.
 
@@ -274,12 +284,13 @@ ALIASES = {
 
 # Versions of one another: a stack takes only one of each pair.
 _CONFLICT_SETS = [
-    ["citywide-default-20mph", "neighbourhood-signed-20mph-zones", "lower-speed-limits"],
+    ["citywide-default-20mph", "neighbourhood-signed-20mph-zones", "lower-speed-limits", "twenty-mph-every-street-state-law"],
     ["area-wide-engineered-20mph-zones", "vertical-calming-residential"],
     ["citywide-speed-camera-network", "fixed-speed-cameras", "lift-camera-cap", "rotating-mobile-camera-coverage",
      "section-control-corridor-cameras"],
     # Engineered 20 mph zones lower the limit too: with any of the limit changes, the limit would count twice.
-    ["area-wide-engineered-20mph-zones", "citywide-default-20mph", "neighbourhood-signed-20mph-zones", "lower-speed-limits"],
+    ["area-wide-engineered-20mph-zones", "citywide-default-20mph", "neighbourhood-signed-20mph-zones", "lower-speed-limits",
+     "twenty-mph-every-street-state-law"],
     ["ltn-cell-program-citywide", "street-hierarchy-through-network", "superblock-and-car-free-centre-program", "slow-streets-network"],
     ["citywide-daylighting-every-corner", "daylighting-hardened", "parking-removal-near-junctions-and-on-bike-routes"],
     ["curb-protected-bike-lane", "quick-build-separated-lane", "connected-network-plan"],
@@ -361,6 +372,7 @@ _CAMS = [{"ratio": 0.80, "lo": 0.53, "hi": 1.20, "modes": ["pedestrian involved"
          {"ratio": 0.91, "lo": 0.77, "hi": 1.08, "modes": None, "what": "33 camera locations, all injury crashes after the matched-street check: 0.91 (0.77 to 1.08)"}]
 SF_EVIDENCE = {
     "citywide-default-20mph": [_TWENTY], "neighbourhood-signed-20mph-zones": [_TWENTY], "lower-speed-limits": [_TWENTY],
+    "twenty-mph-every-street-state-law": [_TWENTY],
     "lane-reduction-road-diet": [{"ratio": 1.01, "lo": 0.92, "hi": 1.09, "modes": None, "what": "16 road diet corridors with traffic volumes in the model: 1.01 (0.92 to 1.09)"}],
     "corridor-traffic-calming-through-roads": [_QUICK], "quick-build-separated-lane": [_QUICK],
     "citywide-daylighting-every-corner": [{"ratio": 1.07, "lo": 0.86, "hi": 1.30, "modes": ["pedestrian involved"], "what": "249 painted safety zones: pedestrians hurt 1.07 (0.86 to 1.30) against nearby unpainted corners"}],
@@ -617,6 +629,8 @@ def apply_fill(records, fill):
                 tgt["unit"] = x["unit"]
             if x.get("life_years") is not None:
                 tgt["life_years"] = x["life_years"]
+            if x.get("phase_in"):
+                tgt["phase_in"] = x["phase_in"]
         log.append({"action": act, "id": x["id"], "target": "%s:%s" % key})
     return log
 
@@ -1131,7 +1145,7 @@ class Crashes(object):
         spec.loader.exec_module(fr)
         self.fr = fr
         _out, recs, _ = fr.compute()
-        self.case, self.fam, self.mv, self.tags, self.k, self.o = [], [], [], [], [], []
+        self.case, self.fam, self.mv, self.tags, self.k, self.o, self.users = [], [], [], [], [], [], []
         self.by_fam = collections.defaultdict(list)
         for r in recs:
             i = len(self.case)
@@ -1142,6 +1156,9 @@ class Crashes(object):
             self.tags.append(r["tags"])
             self.k.append(r["ksi"])
             self.o.append(r["hurt"] - r["ksi"])
+            self.users.append(r["users"])
+            if (sum(v[0] for v in r["users"].values()), sum(v[1] for v in r["users"].values())) != (r["hurt"], r["ksi"]):
+                raise SystemExit("fix-map: crash %s's road-user groups do not add to its people hurt and KSI" % r["case"])
             self.by_fam[name].append(i)
         self.n = len(self.case)
         self._fam_tot = {g: (sum(self.k[i] + self.o[i] for i in ix), sum(self.k[i] for i in ix)) for g, ix in self.by_fam.items()}
@@ -1203,6 +1220,46 @@ class Crashes(object):
         dk = sum(self.k[i] * (1 - a) for i, a in zip(ix, fk))
         do = sum(self.o[i] * (1 - b) for i, b in zip(ix, fo))
         return (dk + do) / YEARS, dk / YEARS
+
+
+# ---------------------------------------------------------------- traffic lever (fixes/traffic-lever.json)
+
+TRAFFIC_FILE = os.path.join(ROOT, "analysis", "crash-profiles", "fixes", "traffic-lever.json")
+# The stacks the lever is added to, as one more step after their street fixes.
+TRAFFIC_STACKS = ("greedy_by_people_hurt", "area_wide_only", "corner_and_corridor_only", "area_wide_and_corner_corridor")
+TRAFFIC_CASES = ("network_built", "no_network")
+# How far the lever read crash by crash on this window's crashes may sit from modeshift.py's own citywide result,
+# which counts 2017 to 2024: 2 points, or 10% of modeshift's figure where that is larger. The no-network case nearly
+# doubles KSI on seven times the riding, and 2018 to 2025 holds 192 KSI people in bike crashes with no motor vehicle
+# against 2017 to 2024's 179, which moves it about 4 points. A bigger gap means the road-user groups no longer match.
+TRAFFIC_TOLERANCE = 0.02
+
+
+def crash_traffic_factor(users, F, q):
+    """(KSI factor, other-hurt factor) on one crash: what the car-trip cut leaves of its KSI people and of its other
+    people hurt, each person taking their road-user group's multiplier from modeshift.py (KSI people its KSI one,
+    everyone else its people-hurt one). users is fix-reach.py's {group: (people hurt, KSI people)}. A factor above 1
+    is more people hurt."""
+    K = sum(v[1] for v in users.values())
+    O = sum(v[0] - v[1] for v in users.values())
+    k = sum(v[1] * F[g]["ksi"][q] for g, v in users.items())
+    o = sum((v[0] - v[1]) * F[g]["hurt"][q] for g, v in users.items())
+    return (k / K if K else 1.0), (o / O if O else 1.0)
+
+
+def traffic_factors(lever, crashes, scen, case, q):
+    """crash_traffic_factor on every crash, as two lists (KSI, other hurt)."""
+    F = lever["scenarios"][scen][case]["factors"]
+    pairs = [crash_traffic_factor(u, F, q) for u in crashes.users]
+    return [a for a, _ in pairs], [b for _, b in pairs]
+
+
+def traffic_avoided(crashes, remk, remo, fk, fo, added):
+    """(people hurt, KSI people) a year the car-trip cut avoids on what remk, remo leave, net of the people hurt on the
+    new transit trips (added, a year), who are on no crash in the police data."""
+    dk = sum(K * r * (1 - f) for K, r, f in zip(crashes.k, remk, fk))
+    do = sum(O * r * (1 - f) for O, r, f in zip(crashes.o, remo, fo))
+    return (dk + do) / YEARS - added["hurt"], dk / YEARS - added["ksi"]
 
 
 def text_reach(crashes, gname, text, entry_mvs, share, known):
@@ -1688,7 +1745,7 @@ def main():
         any_pair = bool(stack_terms or cross_effects)
         rec_out = {k: rec.get(k) for k in ("id", "name", "lever", "how_it_works", "unit", "cost", "life_years",
                                           "sf_now", "sf_evidence", "who_decides", "evidence_grade", "sources",
-                                          "merged_from", "notes", "displacement")}
+                                          "merged_from", "notes", "displacement", "phase_in")}
         rec_out["scope"] = scope_of(rec)
         if cid in reach.cfg:
             rec_out["reach_treated"] = reach.net_note(cid)
@@ -1857,12 +1914,13 @@ def main():
             steps.append(step_row(len(steps) + 1, f, f["annual_cost"][cq], dh, dk, cum_cost, cum_h, cum_k))
         check_remaining(remk, remo, "a stack")
         skipped = sorted(f["id"] for f in pool if f["id"] not in added)
-        return {"steps": steps, "not_added": skipped}
+        return {"steps": steps, "not_added": skipped, "_rem": (remk, remo)}
 
     by_id = {f["id"]: f for f in out_fixes}
 
-    def replay(order, q, cq):
-        """The same fixes in the same order with every effect at q and every cost at cq, harmful effects included."""
+    def replay(order, q, cq, with_rem=False):
+        """The same fixes in the same order with every effect at q and every cost at cq, harmful effects included.
+        with_rem also returns what each crash keeps at the end."""
         remk, remo = [1.0] * crashes.n, [1.0] * crashes.n
         steps, cum_cost, cum_h, cum_k = [], 0.0, 0.0, 0.0
         for fid in order:
@@ -1875,7 +1933,7 @@ def main():
             cum_k += dk
             steps.append(step_row(len(steps) + 1, f, f["annual_cost"][cq], dh, dk, cum_cost, cum_h, cum_k))
         check_remaining(remk, remo, "a replay")
-        return steps
+        return (steps, remk, remo) if with_rem else steps
 
     def add_band(st):
         """Each step's cumulative people avoided with every effect at its low and at its high, same order and costs."""
@@ -1900,7 +1958,11 @@ def main():
 
     def fill_budgets(cands, metric):
         """For each budget, the greedy fill that skips a fix that does not fit what is left and goes on."""
-        return [budget_row(b, build_stack(cands, metric, budget=b)["steps"]) for b in BUDGETS]
+        out = []
+        for b in BUDGETS:
+            st_b = build_stack(cands, metric, budget=b)
+            out.append(dict(budget_row(b, st_b["steps"]), _rem=st_b["_rem"]))
+        return out
 
     def fill_in_order(order, q, cq):
         """For each budget, the fixes of a fixed order that fit, in that order (a fix that does not fit is skipped and
@@ -1957,6 +2019,83 @@ def main():
         "of %d people hurt and %d KSI people a year (%d-%d over %d). Annual cost mixes dollar years."
         % (RHO_MAX, len(fam), round(year_h), round(year_k), res["years"][0],
            res["years"][1], YEARS))
+
+    # ---------------------------------------------------------------- traffic lever, after each stack's street fixes
+    lever = load(TRAFFIC_FILE)
+    factors = {(s, c, q): traffic_factors(lever, crashes, s, c, q)
+               for s in lever["scenarios"] for c in TRAFFIC_CASES for q in Q}
+    added = {(s, c, q): {m: lever["scenarios"][s][c]["transit_riders_added_a_year"][m][q] for m in ("hurt", "ksi")}
+             for s in lever["scenarios"] for c in TRAFFIC_CASES for q in Q}
+    ones = [1.0] * crashes.n
+    traffic_out = {"about": (
+        "A citywide cut in car trips, from %d%% of trips today to 30%% or 20%%, added to each stack in TRAFFIC_STACKS as "
+        "one more step after its street fixes. Each injured person on a crash takes the multiplier modeshift.py gives "
+        "their road-user group (fixes/traffic-lever.json, written by the private repo's "
+        "scripts/crash-fixes/traffic-lever-export.py), on what the street fixes left of them, so the two never count the "
+        "same person twice; the people hurt on the new transit trips are added on top. network_built is the shift with "
+        "the bike network built first (the city-record bike exponent), no_network the same shift at today's risk per "
+        "bike trip. Low, mid and high pair with the stack's own low, mid and high." % lever["car_share_today"]),
+        "made_by": lever["made_by"], "groups": lever["groups"], "car_share_today": lever["car_share_today"],
+        "sources": lever["sources"], "scenarios": {}}
+    for s in sorted(lever["scenarios"]):
+        sc = lever["scenarios"][s]
+        row = {"car_share": sc["car_share"], "trip_shares": sc["trip_shares"]}
+        for c in TRAFFIC_CASES:
+            alone = {q: traffic_avoided(crashes, ones, ones, *factors[(s, c, q)], added[(s, c, q)]) for q in Q}
+            row[c] = {
+                "alone_share_of_people_hurt_avoided": {q: r0(alone[q][0] / year_h, 4) for q in Q},
+                "alone_share_of_ksi_avoided": {q: r0(alone[q][1] / year_k, 4) for q in Q},
+                "modeshift_share_avoided": sc[c]["modeshift_share_avoided"],
+                "motor_vehicle_miles_factor": sc[c]["motor_vehicle_miles_factor"],
+                "transit_riders_added_a_year": sc[c]["transit_riders_added_a_year"],
+            }
+            for q in Q:
+                for mine, theirs in ((alone[q][0] / year_h, sc[c]["modeshift_share_avoided"]["hurt"][q]),
+                                     (alone[q][1] / year_k, sc[c]["modeshift_share_avoided"]["ksi"][q])):
+                    if abs(mine - theirs) > max(TRAFFIC_TOLERANCE, 0.1 * abs(theirs)):
+                        raise SystemExit("fix-map: the traffic lever alone avoids %.3f at %s%% %s %s, modeshift.py %.3f"
+                                         % (mine, s, c, q, theirs))
+        traffic_out["scenarios"][s] = row
+    for name in TRAFFIC_STACKS:
+        st = stacks[name]
+        order = [x["id"] for x in st["steps"]]
+        rem = {"mid": st["_rem"]}
+        for qq in ("low", "high"):
+            _, rk_, ro_ = replay(order, qq, "mid", with_rem=True)
+            rem[qq] = (rk_, ro_)
+        end = st["steps"][-1] if st["steps"] else {}
+        st["traffic"] = {}
+        for s in sorted(lever["scenarios"]):
+            out_s = {}
+            for c in TRAFFIC_CASES:
+                cell = {k: {} for k in ("marginal_hurt_avoided", "marginal_ksi_avoided", "cumulative_hurt_avoided",
+                                        "cumulative_ksi_avoided", "share_of_people_hurt_avoided", "share_of_ksi_avoided")}
+                for q in Q:
+                    dh, dk = traffic_avoided(crashes, rem[q][0], rem[q][1], *factors[(s, c, q)], added[(s, c, q)])
+                    sfx = "" if q == "mid" else "_" + q
+                    ch = end.get("cumulative_hurt_avoided" + sfx, 0.0) + dh
+                    ck = end.get("cumulative_ksi_avoided" + sfx, 0.0) + dk
+                    cell["marginal_hurt_avoided"][q] = r0(dh)
+                    cell["marginal_ksi_avoided"][q] = r0(dk, 3)
+                    cell["cumulative_hurt_avoided"][q] = r0(ch)
+                    cell["cumulative_ksi_avoided"][q] = r0(ck, 3)
+                    cell["share_of_people_hurt_avoided"][q] = r0(ch / year_h, 4)
+                    cell["share_of_ksi_avoided"][q] = r0(ck / year_k, 4)
+                out_s[c] = cell
+            budgets = []
+            for b in st["at_budgets"]:
+                dh, dk = traffic_avoided(crashes, b["_rem"][0], b["_rem"][1], *factors[(s, "network_built", "mid")],
+                                         added[(s, "network_built", "mid")])
+                h_, k_ = b["hurt_avoided"] + dh, b["ksi_avoided"] + dk
+                budgets.append({"budget": b["budget"], "hurt_avoided": r0(h_), "ksi_avoided": r0(k_, 3),
+                                "share_of_people_hurt_avoided": r0(h_ / year_h, 4), "share_of_ksi_avoided": r0(k_ / year_k, 4)})
+            out_s["at_budgets"] = budgets
+            st["traffic"][s] = out_s
+    for st in stacks.values():
+        if isinstance(st, dict):
+            st.pop("_rem", None)
+            for b in st.get("at_budgets") or []:
+                b.pop("_rem", None)
 
     # ---------------------------------------------------------------- groups
     fix_by_group = {}
@@ -2045,6 +2184,7 @@ def main():
         "ranking": ranking,
         "ranking_by_ksi": ranking_ksi,
         "stacks": stacks,
+        "traffic_lever": traffic_out,
         "not_computable": sorted(not_computable, key=lambda n: (n["fix"], n["group"], n["movement"] or "")),
         "validation": validation,
         "fill_log": fill_log,

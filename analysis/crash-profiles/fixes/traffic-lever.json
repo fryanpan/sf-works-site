@@ -1,0 +1,648 @@
+{
+ "about": "Write modeshift.py's citywide car-trip cut as road-user multipliers for the crash fix explorer's traffic lever (sf-works-site analysis/crash-profiles/fixes/traffic-lever.json).",
+ "car_share_today": 53,
+ "groups": [
+  "occupant",
+  "ped_mv",
+  "bike_mv",
+  "other_mv",
+  "bike_nomv",
+  "other_nomv",
+  "parked_other"
+ ],
+ "inputs": {
+  "car_occupancy": {
+   "high": 1.41,
+   "low": 1.52,
+   "mid": 1.52
+  },
+  "exponents": {
+   "e_mv_vru": {
+    "high": 0.6,
+    "low": 0.4,
+    "mid": 0.5
+   },
+   "e_occ_h": {
+    "high": 1.25,
+    "low": 0.66,
+    "mid": 1.0
+   },
+   "e_occ_k": {
+    "high": 1.25,
+    "low": 0.89,
+    "mid": 1.0
+   },
+   "s_bike": {
+    "high": -0.3,
+    "low": 0.43,
+    "mid": 0.1
+   },
+   "s_nomv": {
+    "high": -0.3,
+    "low": 0.43,
+    "mid": 0.1
+   },
+   "s_ped": {
+    "high": 0.4,
+    "low": 0.6,
+    "mid": 0.51
+   },
+   "transit_h": {
+    "high": 0.4,
+    "low": 0.73,
+    "mid": 0.73
+   },
+   "transit_k": {
+    "high": 0.02,
+    "low": 0.04,
+    "mid": 0.04
+   }
+  },
+  "shifted_trip_miles": {
+   "bike": {
+    "high": 3.0,
+    "low": 2.0,
+    "mid": 2.5
+   },
+   "transit": {
+    "high": 3.0,
+    "low": 1.86,
+    "mid": 2.5
+   },
+   "walk": {
+    "high": 1.0,
+    "low": 0.5,
+    "mid": 0.75
+   }
+  },
+  "trips_a_weekday": 4457310,
+  "vehicle_miles_a_weekday": {
+   "high": 5334000.0,
+   "low": 8890000.0,
+   "mid": 8890000.0
+  },
+  "weekday_equivalents_a_year": 328.99
+ },
+ "made_by": "sf-works (private repo) scripts/crash-fixes/traffic-lever-export.py, from scripts/crash-fixes/modeshift.py, P_CITY block",
+ "modeshift_base_2017_2024": {
+  "bike_mv": {
+   "hurt": 3128,
+   "ksi": 267
+  },
+  "bike_nomv": {
+   "hurt": 930,
+   "ksi": 178
+  },
+  "occupant": {
+   "hurt": 19583,
+   "ksi": 925
+  },
+  "other_mv": {
+   "hurt": 863,
+   "ksi": 92
+  },
+  "other_nomv": {
+   "hurt": 275,
+   "ksi": 60
+  },
+  "parked_other": {
+   "hurt": 52,
+   "ksi": 6
+  },
+  "ped_mv": {
+   "hurt": 5650,
+   "ksi": 872
+  }
+ },
+ "scenarios": {
+  "20": {
+   "car_share": 20,
+   "network_built": {
+    "factors": {
+     "bike_mv": {
+      "hurt": {
+       "high": 0.371569,
+       "low": 2.140815,
+       "mid": 1.068793
+      },
+      "ksi": {
+       "high": 0.371569,
+       "low": 2.140815,
+       "mid": 1.068793
+      }
+     },
+     "bike_nomv": {
+      "hurt": {
+       "high": 0.55779,
+       "low": 2.308831,
+       "mid": 1.214814
+      },
+      "ksi": {
+       "high": 0.55779,
+       "low": 2.308831,
+       "mid": 1.214814
+      }
+     },
+     "occupant": {
+      "hurt": {
+       "high": 0.428977,
+       "low": 0.882792,
+       "mid": 0.774047
+      },
+      "ksi": {
+       "high": 0.428977,
+       "low": 0.845261,
+       "mid": 0.774047
+      }
+     },
+     "other_mv": {
+      "hurt": {
+       "high": 0.666144,
+       "low": 0.927229,
+       "mid": 0.879799
+      },
+      "ksi": {
+       "high": 0.666144,
+       "low": 0.927229,
+       "mid": 0.879799
+      }
+     },
+     "other_nomv": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "parked_other": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "ped_mv": {
+      "hurt": {
+       "high": 0.754133,
+       "low": 1.116879,
+       "mid": 1.030576
+      },
+      "ksi": {
+       "high": 0.754133,
+       "low": 1.116879,
+       "mid": 1.030576
+      }
+     }
+    },
+    "modeshift_share_avoided": {
+     "hurt": {
+      "high": 0.479859,
+      "low": -0.137832,
+      "mid": 0.092765
+     },
+     "ksi": {
+      "high": 0.412213,
+      "low": -0.229442,
+      "mid": 0.031582
+     }
+    },
+    "motor_vehicle_miles_factor": {
+     "high": 0.508098,
+     "low": 0.82788,
+     "mid": 0.774047
+    },
+    "transit_riders_added_a_year": {
+     "hurt": {
+      "high": 76.253,
+      "low": 139.1618,
+      "mid": 139.1618
+     },
+     "ksi": {
+      "high": 3.8127,
+      "low": 7.6253,
+      "mid": 7.6253
+     }
+    }
+   },
+   "no_network": {
+    "factors": {
+     "bike_mv": {
+      "hurt": {
+       "high": 4.663011,
+       "low": 6.490602,
+       "mid": 6.158596
+      },
+      "ksi": {
+       "high": 4.663011,
+       "low": 6.490602,
+       "mid": 6.158596
+      }
+     },
+     "bike_nomv": {
+      "hurt": {
+       "high": 7.0,
+       "low": 7.0,
+       "mid": 7.0
+      },
+      "ksi": {
+       "high": 7.0,
+       "low": 7.0,
+       "mid": 7.0
+      }
+     },
+     "occupant": {
+      "hurt": {
+       "high": 0.428977,
+       "low": 0.882792,
+       "mid": 0.774047
+      },
+      "ksi": {
+       "high": 0.428977,
+       "low": 0.845261,
+       "mid": 0.774047
+      }
+     },
+     "other_mv": {
+      "hurt": {
+       "high": 0.666144,
+       "low": 0.927229,
+       "mid": 0.879799
+      },
+      "ksi": {
+       "high": 0.666144,
+       "low": 0.927229,
+       "mid": 0.879799
+      }
+     },
+     "other_nomv": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "parked_other": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "ped_mv": {
+      "hurt": {
+       "high": 0.754133,
+       "low": 1.116879,
+       "mid": 1.030576
+      },
+      "ksi": {
+       "high": 0.754133,
+       "low": 1.116879,
+       "mid": 1.030576
+      }
+     }
+    },
+    "modeshift_share_avoided": {
+     "hurt": {
+      "high": -0.157092,
+      "low": -0.727344,
+      "mid": -0.606068
+     },
+     "ksi": {
+      "high": -0.543007,
+      "low": -1.061285,
+      "mid": -0.963727
+     }
+    },
+    "motor_vehicle_miles_factor": {
+     "high": 0.508098,
+     "low": 0.82788,
+     "mid": 0.774047
+    },
+    "transit_riders_added_a_year": {
+     "hurt": {
+      "high": 76.253,
+      "low": 139.1618,
+      "mid": 139.1618
+     },
+     "ksi": {
+      "high": 3.8127,
+      "low": 7.6253,
+      "mid": 7.6253
+     }
+    }
+   },
+   "trip_shares": {
+    "bike": 14,
+    "car": 20,
+    "transit": 35,
+    "walk": 30
+   }
+  },
+  "30": {
+   "car_share": 30,
+   "network_built": {
+    "factors": {
+     "bike_mv": {
+      "hurt": {
+       "high": 0.481834,
+       "low": 1.900054,
+       "mid": 1.079734
+      },
+      "ksi": {
+       "high": 0.481834,
+       "low": 1.900054,
+       "mid": 1.079734
+      }
+     },
+     "bike_nomv": {
+      "hurt": {
+       "high": 0.617034,
+       "low": 1.997823,
+       "mid": 1.174619
+      },
+      "ksi": {
+       "high": 0.617034,
+       "low": 1.997823,
+       "mid": 1.174619
+      }
+     },
+     "occupant": {
+      "hurt": {
+       "high": 0.597346,
+       "low": 0.920544,
+       "mid": 0.844967
+      },
+      "ksi": {
+       "high": 0.597346,
+       "low": 0.894365,
+       "mid": 0.844967
+      }
+     },
+     "other_mv": {
+      "hurt": {
+       "high": 0.780888,
+       "low": 0.951062,
+       "mid": 0.919221
+      },
+      "ksi": {
+       "high": 0.780888,
+       "low": 0.951062,
+       "mid": 0.919221
+      }
+     },
+     "other_nomv": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "parked_other": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "ped_mv": {
+      "hurt": {
+       "high": 0.859969,
+       "low": 1.099132,
+       "mid": 1.039525
+      },
+      "ksi": {
+       "high": 0.859969,
+       "low": 1.099132,
+       "mid": 1.039525
+      }
+     }
+    },
+    "modeshift_share_avoided": {
+     "hurt": {
+      "high": 0.341855,
+      "low": -0.114037,
+      "mid": 0.055768
+     },
+     "ksi": {
+      "high": 0.291717,
+      "low": -0.185162,
+      "mid": 0.00907
+     }
+    },
+    "motor_vehicle_miles_factor": {
+     "high": 0.662188,
+     "low": 0.882109,
+     "mid": 0.844967
+    },
+    "transit_riders_added_a_year": {
+     "hurt": {
+      "high": 52.7906,
+      "low": 96.3428,
+      "mid": 96.3428
+     },
+     "ksi": {
+      "high": 2.6395,
+      "low": 5.2791,
+      "mid": 5.2791
+     }
+    }
+   },
+   "no_network": {
+    "factors": {
+     "bike_mv": {
+      "hurt": {
+       "high": 3.904439,
+       "low": 4.75531,
+       "mid": 4.596103
+      },
+      "ksi": {
+       "high": 3.904439,
+       "low": 4.75531,
+       "mid": 4.596103
+      }
+     },
+     "bike_nomv": {
+      "hurt": {
+       "high": 5.0,
+       "low": 5.0,
+       "mid": 5.0
+      },
+      "ksi": {
+       "high": 5.0,
+       "low": 5.0,
+       "mid": 5.0
+      }
+     },
+     "occupant": {
+      "hurt": {
+       "high": 0.597346,
+       "low": 0.920544,
+       "mid": 0.844967
+      },
+      "ksi": {
+       "high": 0.597346,
+       "low": 0.894365,
+       "mid": 0.844967
+      }
+     },
+     "other_mv": {
+      "hurt": {
+       "high": 0.780888,
+       "low": 0.951062,
+       "mid": 0.919221
+      },
+      "ksi": {
+       "high": 0.780888,
+       "low": 0.951062,
+       "mid": 0.919221
+      }
+     },
+     "other_nomv": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "parked_other": {
+      "hurt": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      },
+      "ksi": {
+       "high": 1.0,
+       "low": 1.0,
+       "mid": 1.0
+      }
+     },
+     "ped_mv": {
+      "hurt": {
+       "high": 0.859969,
+       "low": 1.099132,
+       "mid": 1.039525
+      },
+      "ksi": {
+       "high": 0.859969,
+       "low": 1.099132,
+       "mid": 1.039525
+      }
+     }
+    },
+    "modeshift_share_avoided": {
+     "hurt": {
+      "high": -0.143105,
+      "low": -0.498646,
+      "mid": -0.421802
+     },
+     "ksi": {
+      "high": -0.414117,
+      "low": -0.72547,
+      "mid": -0.665842
+     }
+    },
+    "motor_vehicle_miles_factor": {
+     "high": 0.662188,
+     "low": 0.882109,
+     "mid": 0.844967
+    },
+    "transit_riders_added_a_year": {
+     "hurt": {
+      "high": 52.7906,
+      "low": 96.3428,
+      "mid": 96.3428
+     },
+     "ksi": {
+      "high": 2.6395,
+      "low": 5.2791,
+      "mid": 5.2791
+     }
+    }
+   },
+   "trip_shares": {
+    "bike": 10,
+    "car": 30,
+    "transit": 31,
+    "walk": 28
+   }
+  }
+ },
+ "sources": [
+  {
+   "tag": "[primary — read 2026-10-20]",
+   "url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2020/01/sfmta_travel_decision_survey_2019.pdf",
+   "what": "Trips and today's shares: SFMTA Travel Decision Survey 2019, p. 5"
+  },
+  {
+   "tag": "[primary — read 2026-10-20]",
+   "url": "https://static1.squarespace.com/static/57719e085016e1776170a81c/t/57719e8e890b2719732dad25/1380834196003/20130108Traffic_Safety_Appwithexecutivesummary.pdf",
+   "what": "Occupants against vehicle miles: Ewing and Kim 2012, Table 6 (injury 0.66, fatal 0.89); mid 1.0 [assumed]"
+  },
+  {
+   "tag": "[secondary — verify]",
+   "url": "https://www.saferresearch.com/node/1874",
+   "what": "People walking and biking against motor traffic 0.5, own volume 0.51 and 0.43: Elvik and Bjørnskau 2017"
+  },
+  {
+   "tag": "[primary — read 2026-11-18]",
+   "url": "https://nacto.org/wp-content/uploads/2003_Jacobsen_Safety-In-Numbers-More-Walkers-and-Bicyclists-Safer-Walking-and-Bicycling.pdf",
+   "what": "Safety in numbers: Jacobsen 2003"
+  },
+  {
+   "tag": "[primary — read 2026-11-26]",
+   "url": "https://www.nyc.gov/html/dot/downloads/pdf/bike-safety-study-fullreport2017.pdf",
+   "what": "Bike crashes against riding with the network built: London +0.07 (Casualties in Greater London 2019) and NYC −0.34 (NYC DOT Safer Cycling 2017), mid 0.10 [inference — mine]"
+  },
+  {
+   "tag": "[inference — mine], Litman [primary — read 2026-10-20]",
+   "url": "https://www.vtpi.org/safer.pdf",
+   "what": "People hurt on new transit trips: 0.73 hurt and 0.04 KSI per million trips (0.40 and 0.02 in the high case), taken as 0.27 of an SF car trip's police-reported risk for the ride plus half a walk trip's, so the same police-reported universe as the crashes; Litman puts transit at about a tenth of car travel's casualty rate per mile, so 0.27 a trip is the cautious end"
+  },
+  {
+   "tag": "[secondary — verify]",
+   "url": "https://www.transportation.gov/mission/office-secretary/office-policy/transportation-policy/benefit-cost-analysis-guidance",
+   "what": "Vehicle occupancy: USDOT BCA guidance Table A-3; SF weekday vehicle miles: SFCTA CMP 2025"
+  }
+ ],
+ "trip_shares_today": {
+  "bike": 2,
+  "car": 53,
+  "transit": 22,
+  "walk": 22
+ }
+}

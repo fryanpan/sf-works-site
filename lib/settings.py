@@ -15,6 +15,8 @@ Keys:
                        on a board. The pipeline prints which of them changed.
   SFBIKE_CHECK_DOC     The review-board doc id for out/sfbike-check/check.md.
   ALERT_REPO           The GitHub repo the scheduled jobs open data-refresh issues on (owner/name).
+  ROUTE_VM             The GCP VM that runs heavy routing jobs (tools/street-roles/street-roles-vm.sh).
+  ROUTE_VM_ZONE        That VM's zone.
 """
 
 import json
